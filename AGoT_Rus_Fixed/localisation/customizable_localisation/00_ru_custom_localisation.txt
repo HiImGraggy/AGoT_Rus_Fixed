@@ -1,0 +1,2268 @@
+#Culture.GetName - long version, !WARNING! - very heavy // Речн -ую/-ой
+defined_text = {
+	name = GetCultureAdj
+	use_first_valid = yes
+	text = {
+		trigger = { is_renamed_culture_trigger = yes }
+		localisation_key = CULTURE_ADJ_FALLBACK
+	}
+# Andal
+	text = {
+		trigger = { culture = riverlander }
+		localisation_key = cadj_riverlander
+	}
+	text = {
+		trigger = { culture = westerman }
+		localisation_key = cadj_westerman
+	}
+	text = {
+		trigger = { culture = valeman }
+		localisation_key = cadj_valeman
+	}
+	text = {
+		trigger = { culture = crownlander }
+		localisation_key = cadj_crownlander
+	}
+	text = {
+		trigger = { culture = stormlander }
+		localisation_key = cadj_stormlander
+	}
+	text = {
+		trigger = { culture = reachman }
+		localisation_key = cadj_reachman
+	}
+	text = {
+		trigger = { culture = hedge }
+		localisation_key = cadj_hedge
+	}
+	text = {
+		trigger = { culture = sisterman }
+		localisation_key = cadj_sisterman
+	}
+	text = {
+		trigger = { culture = old_andal }
+		localisation_key = cadj_old_andal
+	}
+	text = {
+		trigger = { culture = dornish_andal }
+		localisation_key = cadj_dornish_andal
+	}
+	text = {
+		trigger = { culture = northman_andal }
+		localisation_key = cadj_northman_andal
+	}
+# Dornish
+	text = {
+		trigger = { culture = stone_dornish }
+		localisation_key = cadj_stone_dornish
+	}
+	text = {
+		trigger = { culture = sand_dornish }
+		localisation_key = cadj_sand_dornish
+	}
+	text = {
+		trigger = { culture = salt_dornish }
+		localisation_key = cadj_salt_dornish
+	}
+	text = {
+		trigger = { culture = rhoynar }
+		localisation_key = cadj_rhoynar
+	}
+# First Men
+	text = {
+		trigger = { culture = northman }
+		localisation_key = cadj_northman
+	}
+	text = {
+		trigger = { culture = hill_clansman }
+		localisation_key = cadj_hill_clansman
+	}
+	text = {
+		trigger = { culture = crannogman }
+		localisation_key = cadj_crannogman
+	}
+	text = {
+		trigger = { culture = half_southron }
+		localisation_key = cadj_half_southron
+	}
+	text = {
+		trigger = { culture = crackclawmen }
+		localisation_key = cadj_crackclawmen
+	}
+	text = {
+		trigger = { culture = moon_clansman }
+		localisation_key = cadj_moon_clansman
+	}
+	text = {
+		trigger = { culture = skagosi }
+		localisation_key = cadj_skagosi
+	}
+# Free Folk
+	text = {
+		trigger = { culture = wildling }
+		localisation_key = cadj_wildling
+	}
+	text = {
+		trigger = { culture = thenn }
+		localisation_key = cadj_thenn
+	}
+	text = {
+		trigger = { culture = frozen_shore }
+		localisation_key = cadj_frozen_shore
+	}
+	text = {
+		trigger = { culture = hornfoot }
+		localisation_key = cadj_hornfoot
+	}
+	text = {
+		trigger = { culture = cannibal_clan }
+		localisation_key = cadj_cannibal_clan
+	}
+	text = {
+		trigger = { culture = nightrunner }
+		localisation_key = cadj_nightrunner
+	}
+# Iron Isles
+	text = {
+		trigger = { culture = ironborn }
+		localisation_key = cadj_ironborn
+	}
+	text = {
+		trigger = { culture = old_ironborn }
+		localisation_key = cadj_old_ironborn
+	}
+# Valyrian
+	text = {
+		trigger = { culture = high_valyrian }
+		localisation_key = cadj_high_valyrian
+	}
+	text = {
+		trigger = { culture = western_valyrian }
+		localisation_key = cadj_western_valyrian
+	}
+	text = {
+		trigger = { culture = eastern_valyrian }
+		localisation_key = cadj_eastern_valyrian
+	}
+	text = {
+		trigger = { culture = mantaryan }
+		localisation_key = cadj_mantaryan
+	}
+	text = {
+		trigger = { culture = tolosi }
+		localisation_key = cadj_tolosi
+	}
+	text = {
+		trigger = { culture = elyrian }
+		localisation_key = cadj_elyrian
+	}
+# Free cities
+	text = {
+		trigger = { culture = pentosi }
+		localisation_key = cadj_pentosi
+	}
+	text = {
+		trigger = { culture = braavosi }
+		localisation_key = cadj_braavosi
+	}
+	text = {
+		trigger = { culture = lysene }
+		localisation_key = cadj_lysene
+	}
+	text = {
+		trigger = { culture = qohorik }
+		localisation_key = cadj_qohorik
+	}
+	text = {
+		trigger = { culture = norvosi }
+		localisation_key = cadj_norvosi
+	}
+	text = {
+		trigger = { culture = myrman }
+		localisation_key = cadj_myrman
+	}
+	text = {
+		trigger = { culture = tyroshi }
+		localisation_key = cadj_tyroshi
+	}
+	text = {
+		trigger = { culture = volantene }
+		localisation_key = cadj_volantene
+	}
+	text = {
+		trigger = { culture = lorathi }
+		localisation_key = cadj_lorathi
+	}
+	text = {
+		trigger = { culture = essarian }
+		localisation_key = cadj_essarian
+	}
+	text = {
+		trigger = { culture = gogossosi }
+		localisation_key = cadj_gogossosi
+	}
+	text = {
+		trigger = { culture = bearded_priest_culture }
+		localisation_key = cadj_bearded_priest_culture
+	}
+# Ghiscari group
+	text = {
+		trigger = { culture = astapori }
+		localisation_key = cadj_astapori
+	}
+	text = {
+		trigger = { culture = yunkaii }
+		localisation_key = cadj_yunkaii
+	}
+	text = {
+		trigger = { culture = meereenese }
+		localisation_key = cadj_meereenese
+	}
+	text = {
+		trigger = { culture = ghiscari }
+		localisation_key = cadj_ghiscari
+	}
+# Dothraki group
+	text = {
+		trigger = { culture = dothraki }
+		localisation_key = cadj_dothraki
+	}
+	text = {
+		trigger = { culture = lhazareen }
+		localisation_key = cadj_lhazareen
+	}
+# Sarnor group
+	text = {
+		trigger = { culture = sarnorian }
+		localisation_key = cadj_sarnorian
+	}
+	text = {
+		trigger = { culture = omberi }
+		localisation_key = cadj_omberi
+	}
+# Hyrkoon group
+	text = {
+		trigger = { culture = hyrkooni }
+		localisation_key = cadj_hyrkooni
+	}
+	text = {
+		trigger = { culture = kayakayanayan }
+		localisation_key = cadj_kayakayanayan
+	}
+	text = {
+		trigger = { culture = samyrianan }
+		localisation_key = cadj_samyrianan
+	}
+	text = {
+		trigger = { culture = bayasabhadi }
+		localisation_key = cadj_bayasabhadi
+	}
+# Moraqi group
+	text = {
+		trigger = { culture = farosi }
+		localisation_key = cadj_farosi
+	}
+	text = {
+		trigger = { culture = moraqi }
+		localisation_key = cadj_moraqi
+	}
+	text = {
+		trigger = { culture = zabhadi }
+		localisation_key = cadj_zabhadi
+	}
+	text = {
+		trigger = { culture = vahari }
+		localisation_key = cadj_vahari
+	}
+# Yi Ti group
+	text = {
+		trigger = { culture = yi_ti }
+		localisation_key = cadj_yi_ti
+	}
+	text = {
+		trigger = { culture = asabhadi }
+		localisation_key = cadj_asabhadi
+	}
+# Jade Islands group
+	text = {
+		trigger = { culture = lengi }
+		localisation_key = cadj_lengi
+	}
+# Asshai group
+	text = {
+		trigger = { culture = asshai }
+		localisation_key = cadj_asshai
+	}
+	text = {
+		trigger = { culture = shadowlander }
+		localisation_key = cadj_shadowlander
+	}
+# Further East
+	text = {
+		trigger = { culture = grey_waste }
+		localisation_key = cadj_grey_waste
+	}
+# Qarth group
+	text = {
+		trigger = { culture = qartheen }
+		localisation_key = cadj_qartheen
+	}
+# Ibbenese group
+	text = {
+		trigger = { culture = ibbenese }
+		localisation_key = cadj_ibbenese
+	}
+# Jogos nhai group
+	text = {
+		trigger = { culture = jogos_nhai }
+		localisation_key = cadj_jogos_nhai
+	}
+# Nghai group
+	text = {
+		trigger = { culture = nghai }
+		localisation_key = cadj_nghai
+	}
+# Islander group
+	text = {
+		trigger = { culture = islander }
+		localisation_key = cadj_islander
+	}
+# Old Races
+	text = {
+		trigger = { culture = giant }
+		localisation_key = cadj_giant
+	}
+	text = {
+		trigger = { culture = children_forest }
+		localisation_key = cadj_children_forest
+	}
+# Winter group
+	text = {
+		trigger = { culture = white_walker }
+		localisation_key = cadj_white_walker
+	}
+	text = {
+		trigger = { culture = winter_wasteland }
+		localisation_key = cadj_winter_wasteland
+	}
+# Summer Islands
+	text = {
+		trigger = { culture = summer_islander }
+		localisation_key = cadj_summer_islander
+	}
+# Sothoryos islands
+	text = {
+		trigger = { culture = basilisk_islander }
+		localisation_key = cadj_basilisk_islander
+	}
+	text = {
+		trigger = { culture = brindlemen }
+		localisation_key = cadj_brindlemen
+	}
+# Naath group
+	text = {
+		trigger = { culture = naathi }
+		localisation_key = cadj_naathi
+	}
+# Unoccupied group
+	text = {
+		trigger = { culture = ruin }
+		localisation_key = cadj_ruin
+	}
+
+	fallback_text = {
+		localisation_key = CULTURE_ADJ_FALLBACK
+	}
+}
+
+#Culture.GetName - short version, !WARNING! - very heavy
+defined_text = {
+	name = GetCultureShortAdj
+	use_first_valid = yes
+	text = {
+		trigger = { is_renamed_culture_trigger = yes }
+		localisation_key = CULTURE_SHORT_ADJ_FALLBACK
+	}
+# Andal
+	text = {
+		trigger = { culture = riverlander }
+		localisation_key = cadjs_riverlander
+	}
+	text = {
+		trigger = { culture = westerman }
+		localisation_key = cadjs_westerman
+	}
+	text = {
+		trigger = { culture = valeman }
+		localisation_key = cadjs_valeman
+	}
+	text = {
+		trigger = { culture = crownlander }
+		localisation_key = cadjs_crownlander
+	}
+	text = {
+		trigger = { culture = stormlander }
+		localisation_key = cadjs_stormlander
+	}
+	text = {
+		trigger = { culture = reachman }
+		localisation_key = cadjs_reachman
+	}
+	text = {
+		trigger = { culture = hedge }
+		localisation_key = cadjs_hedge
+	}
+	text = {
+		trigger = { culture = sisterman }
+		localisation_key = cadjs_sisterman
+	}
+	text = {
+		trigger = { culture = old_andal }
+		localisation_key = cadjs_old_andal
+	}
+	text = {
+		trigger = { culture = dornish_andal }
+		localisation_key = cadjs_dornish_andal
+	}
+	text = {
+		trigger = { culture = northman_andal }
+		localisation_key = cadjs_northman_andal
+	}
+# Dornish
+	text = {
+		trigger = { culture = stone_dornish }
+		localisation_key = cadjs_stone_dornish
+	}
+	text = {
+		trigger = { culture = sand_dornish }
+		localisation_key = cadjs_sand_dornish
+	}
+	text = {
+		trigger = { culture = salt_dornish }
+		localisation_key = cadjs_salt_dornish
+	}
+	text = {
+		trigger = { culture = rhoynar }
+		localisation_key = cadjs_rhoynar
+	}
+# First Men
+	text = {
+		trigger = { culture = northman }
+		localisation_key = cadjs_northman
+	}
+	text = {
+		trigger = { culture = hill_clansman }
+		localisation_key = cadjs_hill_clansman
+	}
+	text = {
+		trigger = { culture = crannogman }
+		localisation_key = cadjs_crannogman
+	}
+	text = {
+		trigger = { culture = half_southron }
+		localisation_key = cadjs_half_southron
+	}
+	text = {
+		trigger = { culture = crackclawmen }
+		localisation_key = cadjs_crackclawmen
+	}
+	text = {
+		trigger = { culture = moon_clansman }
+		localisation_key = cadjs_moon_clansman
+	}
+	text = {
+		trigger = { culture = skagosi }
+		localisation_key = cadjs_skagosi
+	}
+# Free Folk
+	text = {
+		trigger = { culture = wildling }
+		localisation_key = cadjs_wildling
+	}
+	text = {
+		trigger = { culture = thenn }
+		localisation_key = cadjs_thenn
+	}
+	text = {
+		trigger = { culture = frozen_shore }
+		localisation_key = cadjs_frozen_shore
+	}
+	text = {
+		trigger = { culture = hornfoot }
+		localisation_key = cadjs_hornfoot
+	}
+	text = {
+		trigger = { culture = cannibal_clan }
+		localisation_key = cadjs_cannibal_clan
+	}
+	text = {
+		trigger = { culture = nightrunner }
+		localisation_key = cadjs_nightrunner
+	}
+# Iron Isles
+	text = {
+		trigger = { culture = ironborn }
+		localisation_key = cadjs_ironborn
+	}
+	text = {
+		trigger = { culture = old_ironborn }
+		localisation_key = cadjs_old_ironborn
+	}
+# Valyrian
+	text = {
+		trigger = { culture = high_valyrian }
+		localisation_key = cadjs_high_valyrian
+	}
+	text = {
+		trigger = { culture = western_valyrian }
+		localisation_key = cadjs_western_valyrian
+	}
+	text = {
+		trigger = { culture = eastern_valyrian }
+		localisation_key = cadjs_eastern_valyrian
+	}
+	text = {
+		trigger = { culture = mantaryan }
+		localisation_key = cadjs_mantaryan
+	}
+	text = {
+		trigger = { culture = tolosi }
+		localisation_key = cadjs_tolosi
+	}
+	text = {
+		trigger = { culture = elyrian }
+		localisation_key = cadjs_elyrian
+	}
+# Free cities
+	text = {
+		trigger = { culture = pentosi }
+		localisation_key = cadjs_pentosi
+	}
+	text = {
+		trigger = { culture = braavosi }
+		localisation_key = cadjs_braavosi
+	}
+	text = {
+		trigger = { culture = lysene }
+		localisation_key = cadjs_lysene
+	}
+	text = {
+		trigger = { culture = qohorik }
+		localisation_key = cadjs_qohorik
+	}
+	text = {
+		trigger = { culture = norvosi }
+		localisation_key = cadjs_norvosi
+	}
+	text = {
+		trigger = { culture = myrman }
+		localisation_key = cadjs_myrman
+	}
+	text = {
+		trigger = { culture = tyroshi }
+		localisation_key = cadjs_tyroshi
+	}
+	text = {
+		trigger = { culture = volantene }
+		localisation_key = cadjs_volantene
+	}
+	text = {
+		trigger = { culture = lorathi }
+		localisation_key = cadjs_lorathi
+	}
+	text = {
+		trigger = { culture = essarian }
+		localisation_key = cadjs_essarian
+	}
+	text = {
+		trigger = { culture = gogossosi }
+		localisation_key = cadjs_gogossosi
+	}
+	text = {
+		trigger = { culture = bearded_priest_culture }
+		localisation_key = cadjs_bearded_priest_culture
+	}
+# Ghiscari group
+	text = {
+		trigger = { culture = astapori }
+		localisation_key = cadjs_astapori
+	}
+	text = {
+		trigger = { culture = yunkaii }
+		localisation_key = cadjs_yunkaii
+	}
+	text = {
+		trigger = { culture = meereenese }
+		localisation_key = cadjs_meereenese
+	}
+	text = {
+		trigger = { culture = ghiscari }
+		localisation_key = cadjs_ghiscari
+	}
+# Dothraki group
+	text = {
+		trigger = { culture = dothraki }
+		localisation_key = cadjs_dothraki
+	}
+	text = {
+		trigger = { culture = lhazareen }
+		localisation_key = cadjs_lhazareen
+	}
+# Sarnor group
+	text = {
+		trigger = { culture = sarnorian }
+		localisation_key = cadjs_sarnorian
+	}
+	text = {
+		trigger = { culture = omberi }
+		localisation_key = cadjs_omberi
+	}
+# Hyrkoon group
+	text = {
+		trigger = { culture = hyrkooni }
+		localisation_key = cadjs_hyrkooni
+	}
+	text = {
+		trigger = { culture = kayakayanayan }
+		localisation_key = cadjs_kayakayanayan
+	}
+	text = {
+		trigger = { culture = samyrianan }
+		localisation_key = cadjs_samyrianan
+	}
+	text = {
+		trigger = { culture = bayasabhadi }
+		localisation_key = cadjs_bayasabhadi
+	}
+# Moraqi group
+	text = {
+		trigger = { culture = farosi }
+		localisation_key = cadjs_farosi
+	}
+	text = {
+		trigger = { culture = moraqi }
+		localisation_key = cadjs_moraqi
+	}
+	text = {
+		trigger = { culture = zabhadi }
+		localisation_key = cadjs_zabhadi
+	}
+	text = {
+		trigger = { culture = vahari }
+		localisation_key = cadjs_vahari
+	}
+# Yi Ti group
+	text = {
+		trigger = { culture = yi_ti }
+		localisation_key = cadjs_yi_ti
+	}
+	text = {
+		trigger = { culture = asabhadi }
+		localisation_key = cadjs_asabhadi
+	}
+# Jade Islands group
+	text = {
+		trigger = { culture = lengi }
+		localisation_key = cadjs_lengi
+	}
+# Asshai group
+	text = {
+		trigger = { culture = asshai }
+		localisation_key = cadjs_asshai
+	}
+	text = {
+		trigger = { culture = shadowlander }
+		localisation_key = cadjs_shadowlander
+	}
+# Further East
+	text = {
+		trigger = { culture = grey_waste }
+		localisation_key = cadjs_grey_waste
+	}
+# Qarth group
+	text = {
+		trigger = { culture = qartheen }
+		localisation_key = cadjs_qartheen
+	}
+# Ibbenese group
+	text = {
+		trigger = { culture = ibbenese }
+		localisation_key = cadjs_ibbenese
+	}
+# Jogos nhai group
+	text = {
+		trigger = { culture = jogos_nhai }
+		localisation_key = cadjs_jogos_nhai
+	}
+# Nghai group
+	text = {
+		trigger = { culture = nghai }
+		localisation_key = cadjs_nghai
+	}
+# Islander group
+	text = {
+		trigger = { culture = islander }
+		localisation_key = cadjs_islander
+	}
+# Old Races
+	text = {
+		trigger = { culture = giant }
+		localisation_key = cadjs_giant
+	}
+	text = {
+		trigger = { culture = children_forest }
+		localisation_key = cadjs_children_forest
+	}
+# Winter group
+	text = {
+		trigger = { culture = white_walker }
+		localisation_key = cadjs_white_walker
+	}
+	text = {
+		trigger = { culture = winter_wasteland }
+		localisation_key = cadjs_winter_wasteland
+	}
+# Summer Islands
+	text = {
+		trigger = { culture = summer_islander }
+		localisation_key = cadjs_summer_islander
+	}
+# Sothoryos islands
+	text = {
+		trigger = { culture = basilisk_islander }
+		localisation_key = cadjs_basilisk_islander
+	}
+	text = {
+		trigger = { culture = brindlemen }
+		localisation_key = cadjs_brindlemen
+	}
+# Naath group
+	text = {
+		trigger = { culture = naathi }
+		localisation_key = cadjs_naathi
+	}
+# Unoccupied group
+	text = {
+		trigger = { culture = ruin }
+		localisation_key = cadjs_ruin
+	}
+	fallback_text = {
+		localisation_key = CULTURE_SHORT_ADJ_FALLBACK
+	}
+}
+
+defined_text = {
+	name = GetCulturePlural
+	use_first_valid = yes
+	text = {
+		trigger = { is_renamed_culture_trigger = yes }
+		localisation_key = CULTURE_PLU_FALLBACK
+	}
+# Andal
+	text = {
+		trigger = { culture = riverlander }
+		localisation_key = plu_riverlander
+	}
+	text = {
+		trigger = { culture = westerman }
+		localisation_key = plu_westerman
+	}
+	text = {
+		trigger = { culture = valeman }
+		localisation_key = plu_valeman
+	}
+	text = {
+		trigger = { culture = crownlander }
+		localisation_key = plu_crownlander
+	}
+	text = {
+		trigger = { culture = stormlander }
+		localisation_key = plu_stormlander
+	}
+	text = {
+		trigger = { culture = reachman }
+		localisation_key = plu_reachman
+	}
+	text = {
+		trigger = { culture = hedge }
+		localisation_key = plu_hedge
+	}
+	text = {
+		trigger = { culture = sisterman }
+		localisation_key = plu_sisterman
+	}
+	text = {
+		trigger = { culture = old_andal }
+		localisation_key = plu_old_andal
+	}
+	text = {
+		trigger = { culture = dornish_andal }
+		localisation_key = plu_dornish_andal
+	}
+	text = {
+		trigger = { culture = northman_andal }
+		localisation_key = plu_northman_andal
+	}
+# Dornish
+	text = {
+		trigger = { culture = stone_dornish }
+		localisation_key = plu_stone_dornish
+	}
+	text = {
+		trigger = { culture = sand_dornish }
+		localisation_key = plu_sand_dornish
+	}
+	text = {
+		trigger = { culture = salt_dornish }
+		localisation_key = plu_salt_dornish
+	}
+	text = {
+		trigger = { culture = rhoynar }
+		localisation_key = plu_rhoynar
+	}
+# First Men
+	text = {
+		trigger = { culture = northman }
+		localisation_key = plu_northman
+	}
+	text = {
+		trigger = { culture = hill_clansman }
+		localisation_key = plu_hill_clansman
+	}
+	text = {
+		trigger = { culture = crannogman }
+		localisation_key = plu_crannogman
+	}
+	text = {
+		trigger = { culture = half_southron }
+		localisation_key = plu_half_southron
+	}
+	text = {
+		trigger = { culture = crackclawmen }
+		localisation_key = plu_crackclawmen
+	}
+	text = {
+		trigger = { culture = moon_clansman }
+		localisation_key = plu_moon_clansman
+	}
+	text = {
+		trigger = { culture = skagosi }
+		localisation_key = plu_skagosi
+	}
+# Free Folk
+	text = {
+		trigger = { culture = wildling }
+		localisation_key = plu_wildling
+	}
+	text = {
+		trigger = { culture = thenn }
+		localisation_key = plu_thenn
+	}
+	text = {
+		trigger = { culture = frozen_shore }
+		localisation_key = plu_frozen_shore
+	}
+	text = {
+		trigger = { culture = hornfoot }
+		localisation_key = plu_hornfoot
+	}
+	text = {
+		trigger = { culture = cannibal_clan }
+		localisation_key = plu_cannibal_clan
+	}
+	text = {
+		trigger = { culture = nightrunner }
+		localisation_key = plu_nightrunner
+	}
+# Iron Isles
+	text = {
+		trigger = { culture = ironborn }
+		localisation_key = plu_ironborn
+	}
+	text = {
+		trigger = { culture = old_ironborn }
+		localisation_key = plu_old_ironborn
+	}
+# Valyrian
+	text = {
+		trigger = { culture = high_valyrian }
+		localisation_key = plu_high_valyrian
+	}
+	text = {
+		trigger = { culture = western_valyrian }
+		localisation_key = plu_western_valyrian
+	}
+	text = {
+		trigger = { culture = eastern_valyrian }
+		localisation_key = plu_eastern_valyrian
+	}
+	text = {
+		trigger = { culture = mantaryan }
+		localisation_key = plu_mantaryan
+	}
+	text = {
+		trigger = { culture = tolosi }
+		localisation_key = plu_tolosi
+	}
+	text = {
+		trigger = { culture = elyrian }
+		localisation_key = plu_elyrian
+	}
+# Free cities
+	text = {
+		trigger = { culture = pentosi }
+		localisation_key = plu_pentosi
+	}
+	text = {
+		trigger = { culture = braavosi }
+		localisation_key = plu_braavosi
+	}
+	text = {
+		trigger = { culture = lysene }
+		localisation_key = plu_lysene
+	}
+	text = {
+		trigger = { culture = qohorik }
+		localisation_key = plu_qohorik
+	}
+	text = {
+		trigger = { culture = norvosi }
+		localisation_key = plu_norvosi
+	}
+	text = {
+		trigger = { culture = myrman }
+		localisation_key = plu_myrman
+	}
+	text = {
+		trigger = { culture = tyroshi }
+		localisation_key = plu_tyroshi
+	}
+	text = {
+		trigger = { culture = volantene }
+		localisation_key = plu_volantene
+	}
+	text = {
+		trigger = { culture = lorathi }
+		localisation_key = plu_lorathi
+	}
+	text = {
+		trigger = { culture = essarian }
+		localisation_key = plu_essarian
+	}
+	text = {
+		trigger = { culture = gogossosi }
+		localisation_key = plu_gogossosi
+	}
+	text = {
+		trigger = { culture = bearded_priest_culture }
+		localisation_key = plu_bearded_priest_culture
+	}
+# Ghiscari group
+	text = {
+		trigger = { culture = astapori }
+		localisation_key = plu_astapori
+	}
+	text = {
+		trigger = { culture = yunkaii }
+		localisation_key = plu_yunkaii
+	}
+	text = {
+		trigger = { culture = meereenese }
+		localisation_key = plu_meereenese
+	}
+	text = {
+		trigger = { culture = ghiscari }
+		localisation_key = plu_ghiscari
+	}
+# Dothraki group
+	text = {
+		trigger = { culture = dothraki }
+		localisation_key = plu_dothraki
+	}
+	text = {
+		trigger = { culture = lhazareen }
+		localisation_key = plu_lhazareen
+	}
+# Sarnor group
+	text = {
+		trigger = { culture = sarnorian }
+		localisation_key = plu_sarnorian
+	}
+	text = {
+		trigger = { culture = omberi }
+		localisation_key = plu_omberi
+	}
+# Hyrkoon group
+	text = {
+		trigger = { culture = hyrkooni }
+		localisation_key = plu_hyrkooni
+	}
+	text = {
+		trigger = { culture = kayakayanayan }
+		localisation_key = plu_kayakayanayan
+	}
+	text = {
+		trigger = { culture = samyrianan }
+		localisation_key = plu_samyrianan
+	}
+	text = {
+		trigger = { culture = bayasabhadi }
+		localisation_key = plu_bayasabhadi
+	}
+# Moraqi group
+	text = {
+		trigger = { culture = farosi }
+		localisation_key = plu_farosi
+	}
+	text = {
+		trigger = { culture = moraqi }
+		localisation_key = plu_moraqi
+	}
+	text = {
+		trigger = { culture = zabhadi }
+		localisation_key = plu_zabhadi
+	}
+	text = {
+		trigger = { culture = vahari }
+		localisation_key = plu_vahari
+	}
+# Yi Ti group
+	text = {
+		trigger = { culture = yi_ti }
+		localisation_key = plu_yi_ti
+	}
+	text = {
+		trigger = { culture = asabhadi }
+		localisation_key = plu_asabhadi
+	}
+# Jade Islands group
+	text = {
+		trigger = { culture = lengi }
+		localisation_key = plu_lengi
+	}
+# Asshai group
+	text = {
+		trigger = { culture = asshai }
+		localisation_key = plu_asshai
+	}
+	text = {
+		trigger = { culture = shadowlander }
+		localisation_key = plu_shadowlander
+	}
+# Further East
+	text = {
+		trigger = { culture = grey_waste }
+		localisation_key = plu_grey_waste
+	}
+# Qarth group
+	text = {
+		trigger = { culture = qartheen }
+		localisation_key = plu_qartheen
+	}
+# Ibbenese group
+	text = {
+		trigger = { culture = ibbenese }
+		localisation_key = plu_ibbenese
+	}
+# Jogos nhai group
+	text = {
+		trigger = { culture = jogos_nhai }
+		localisation_key = plu_jogos_nhai
+	}
+# Nghai group
+	text = {
+		trigger = { culture = nghai }
+		localisation_key = plu_nghai
+	}
+# Islander group
+	text = {
+		trigger = { culture = islander }
+		localisation_key = plu_islander
+	}
+# Old Races
+	text = {
+		trigger = { culture = giant }
+		localisation_key = plu_giant
+	}
+	text = {
+		trigger = { culture = children_forest }
+		localisation_key = plu_children_forest
+	}
+# Winter group
+	text = {
+		trigger = { culture = white_walker }
+		localisation_key = plu_white_walker
+	}
+	text = {
+		trigger = { culture = winter_wasteland }
+		localisation_key = plu_winter_wasteland
+	}
+# Summer Islands
+	text = {
+		trigger = { culture = summer_islander }
+		localisation_key = plu_summer_islander
+	}
+# Sothoryos islands
+	text = {
+		trigger = { culture = basilisk_islander }
+		localisation_key = plu_basilisk_islander
+	}
+	text = {
+		trigger = { culture = brindlemen }
+		localisation_key = plu_brindlemen
+	}
+# Naath group
+	text = {
+		trigger = { culture = naathi }
+		localisation_key = plu_naathi
+	}
+# Unoccupied group
+	text = {
+		trigger = { culture = ruin }
+		localisation_key = plu_ruin
+	}
+	
+	fallback_text = {
+		localisation_key = CULTURE_PLU_FALLBACK
+	}
+}
+
+#Родительный падеж
+defined_text = {
+	name = GetCulturePluralGEN
+	use_first_valid = yes
+	text = {
+		trigger = { is_renamed_culture_trigger = yes }
+		localisation_key = CULTURE_PLU_FALLBACK_GEN
+	}
+# Andal
+	text = {
+		trigger = { culture = riverlander }
+		localisation_key = plu_riverlanderGEN
+	}
+	text = {
+		trigger = { culture = westerman }
+		localisation_key = plu_westermanGEN
+	}
+	text = {
+		trigger = { culture = valeman }
+		localisation_key = plu_valemanGEN
+	}
+	text = {
+		trigger = { culture = crownlander }
+		localisation_key = plu_crownlanderGEN
+	}
+	text = {
+		trigger = { culture = stormlander }
+		localisation_key = plu_stormlanderGEN
+	}
+	text = {
+		trigger = { culture = reachman }
+		localisation_key = plu_reachmanGEN
+	}
+	text = {
+		trigger = { culture = hedge }
+		localisation_key = plu_hedgeGEN
+	}
+	text = {
+		trigger = { culture = sisterman }
+		localisation_key = plu_sistermanGEN
+	}
+	text = {
+		trigger = { culture = old_andal }
+		localisation_key = plu_old_andalGEN
+	}
+	text = {
+		trigger = { culture = dornish_andal }
+		localisation_key = plu_dornish_andalGEN
+	}
+	text = {
+		trigger = { culture = northman_andal }
+		localisation_key = plu_northman_andalGEN
+	}
+# Dornish
+	text = {
+		trigger = { culture = stone_dornish }
+		localisation_key = plu_stone_dornishGEN
+	}
+	text = {
+		trigger = { culture = sand_dornish }
+		localisation_key = plu_sand_dornishGEN
+	}
+	text = {
+		trigger = { culture = salt_dornish }
+		localisation_key = plu_salt_dornishGEN
+	}
+	text = {
+		trigger = { culture = rhoynar }
+		localisation_key = plu_rhoynarGEN
+	}
+# First Men
+	text = {
+		trigger = { culture = northman }
+		localisation_key = plu_northmanGEN
+	}
+	text = {
+		trigger = { culture = hill_clansman }
+		localisation_key = plu_hill_clansmanGEN
+	}
+	text = {
+		trigger = { culture = crannogman }
+		localisation_key = plu_crannogmanGEN
+	}
+	text = {
+		trigger = { culture = half_southron }
+		localisation_key = plu_half_southronGEN
+	}
+	text = {
+		trigger = { culture = crackclawmen }
+		localisation_key = plu_crackclawmenGEN
+	}
+	text = {
+		trigger = { culture = moon_clansman }
+		localisation_key = plu_moon_clansmanGEN
+	}
+	text = {
+		trigger = { culture = skagosi }
+		localisation_key = plu_skagosiGEN
+	}
+# Free Folk
+	text = {
+		trigger = { culture = wildling }
+		localisation_key = plu_wildlingGEN
+	}
+	text = {
+		trigger = { culture = thenn }
+		localisation_key = plu_thennGEN
+	}
+	text = {
+		trigger = { culture = frozen_shore }
+		localisation_key = plu_frozen_shoreGEN
+	}
+	text = {
+		trigger = { culture = hornfoot }
+		localisation_key = plu_hornfootGEN
+	}
+	text = {
+		trigger = { culture = cannibal_clan }
+		localisation_key = plu_cannibal_clanGEN
+	}
+	text = {
+		trigger = { culture = nightrunner }
+		localisation_key = plu_nightrunnerGEN
+	}
+# Iron Isles
+	text = {
+		trigger = { culture = ironborn }
+		localisation_key = plu_ironbornGEN
+	}
+	text = {
+		trigger = { culture = old_ironborn }
+		localisation_key = plu_old_ironbornGEN
+	}
+# Valyrian
+	text = {
+		trigger = { culture = high_valyrian }
+		localisation_key = plu_high_valyrianGEN
+	}
+	text = {
+		trigger = { culture = western_valyrian }
+		localisation_key = plu_western_valyrianGEN
+	}
+	text = {
+		trigger = { culture = eastern_valyrian }
+		localisation_key = plu_eastern_valyrianGEN
+	}
+	text = {
+		trigger = { culture = mantaryan }
+		localisation_key = plu_mantaryanGEN
+	}
+	text = {
+		trigger = { culture = tolosi }
+		localisation_key = plu_tolosiGEN
+	}
+	text = {
+		trigger = { culture = elyrian }
+		localisation_key = plu_elyrianGEN
+	}
+# Free cities
+	text = {
+		trigger = { culture = pentosi }
+		localisation_key = plu_pentosiGEN
+	}
+	text = {
+		trigger = { culture = braavosi }
+		localisation_key = plu_braavosiGEN
+	}
+	text = {
+		trigger = { culture = lysene }
+		localisation_key = plu_lyseneGEN
+	}
+	text = {
+		trigger = { culture = qohorik }
+		localisation_key = plu_qohorikGEN
+	}
+	text = {
+		trigger = { culture = norvosi }
+		localisation_key = plu_norvosiGEN
+	}
+	text = {
+		trigger = { culture = myrman }
+		localisation_key = plu_myrmanGEN
+	}
+	text = {
+		trigger = { culture = tyroshi }
+		localisation_key = plu_tyroshiGEN
+	}
+	text = {
+		trigger = { culture = volantene }
+		localisation_key = plu_volanteneGEN
+	}
+	text = {
+		trigger = { culture = lorathi }
+		localisation_key = plu_lorathiGEN
+	}
+	text = {
+		trigger = { culture = essarian }
+		localisation_key = plu_essarianGEN
+	}
+	text = {
+		trigger = { culture = gogossosi }
+		localisation_key = plu_gogossosiGEN
+	}
+	text = {
+		trigger = { culture = bearded_priest_culture }
+		localisation_key = plu_bearded_priest_cultureGEN
+	}
+# Ghiscari group
+	text = {
+		trigger = { culture = astapori }
+		localisation_key = plu_astaporiGEN
+	}
+	text = {
+		trigger = { culture = yunkaii }
+		localisation_key = plu_yunkaiiGEN
+	}
+	text = {
+		trigger = { culture = meereenese }
+		localisation_key = plu_meereeneseGEN
+	}
+	text = {
+		trigger = { culture = ghiscari }
+		localisation_key = plu_ghiscariGEN
+	}
+# Dothraki group
+	text = {
+		trigger = { culture = dothraki }
+		localisation_key = plu_dothrakiGEN
+	}
+	text = {
+		trigger = { culture = lhazareen }
+		localisation_key = plu_lhazareenGEN
+	}
+# Sarnor group
+	text = {
+		trigger = { culture = sarnorian }
+		localisation_key = plu_sarnorianGEN
+	}
+	text = {
+		trigger = { culture = omberi }
+		localisation_key = plu_omberiGEN
+	}
+# Hyrkoon group
+	text = {
+		trigger = { culture = hyrkooni }
+		localisation_key = plu_hyrkooniGEN
+	}
+	text = {
+		trigger = { culture = kayakayanayan }
+		localisation_key = plu_kayakayanayanGEN
+	}
+	text = {
+		trigger = { culture = samyrianan }
+		localisation_key = plu_samyriananGEN
+	}
+	text = {
+		trigger = { culture = bayasabhadi }
+		localisation_key = plu_bayasabhadiGEN
+	}
+# Moraqi group
+	text = {
+		trigger = { culture = farosi }
+		localisation_key = plu_farosiGEN
+	}
+	text = {
+		trigger = { culture = moraqi }
+		localisation_key = plu_moraqiGEN
+	}
+	text = {
+		trigger = { culture = zabhadi }
+		localisation_key = plu_zabhadiGEN
+	}
+	text = {
+		trigger = { culture = vahari }
+		localisation_key = plu_vahariGEN
+	}
+# Yi Ti group
+	text = {
+		trigger = { culture = yi_ti }
+		localisation_key = plu_yi_tiGEN
+	}
+	text = {
+		trigger = { culture = asabhadi }
+		localisation_key = plu_asabhadiGEN
+	}
+# Jade Islands group
+	text = {
+		trigger = { culture = lengi }
+		localisation_key = plu_lengiGEN
+	}
+# Asshai group
+	text = {
+		trigger = { culture = asshai }
+		localisation_key = plu_asshaiGEN
+	}
+	text = {
+		trigger = { culture = shadowlander }
+		localisation_key = plu_shadowlanderGEN
+	}
+# Further East
+	text = {
+		trigger = { culture = grey_waste }
+		localisation_key = plu_grey_wasteGEN
+	}
+# Qarth group
+	text = {
+		trigger = { culture = qartheen }
+		localisation_key = plu_qartheenGEN
+	}
+# Ibbenese group
+	text = {
+		trigger = { culture = ibbenese }
+		localisation_key = plu_ibbeneseGEN
+	}
+# Jogos nhai group
+	text = {
+		trigger = { culture = jogos_nhai }
+		localisation_key = plu_jogos_nhaiGEN
+	}
+# Nghai group
+	text = {
+		trigger = { culture = nghai }
+		localisation_key = plu_nghaiGEN
+	}
+# Islander group
+	text = {
+		trigger = { culture = islander }
+		localisation_key = plu_islanderGEN
+	}
+# Old Races
+	text = {
+		trigger = { culture = giant }
+		localisation_key = plu_giantGEN
+	}
+	text = {
+		trigger = { culture = children_forest }
+		localisation_key = plu_children_forestGEN
+	}
+# Winter group
+	text = {
+		trigger = { culture = white_walker }
+		localisation_key = plu_white_walkerGEN
+	}
+	text = {
+		trigger = { culture = winter_wasteland }
+		localisation_key = plu_winter_wastelandGEN
+	}
+# Summer Islands
+	text = {
+		trigger = { culture = summer_islander }
+		localisation_key = plu_summer_islanderGEN
+	}
+# Sothoryos islands
+	text = {
+		trigger = { culture = basilisk_islander }
+		localisation_key = plu_basilisk_islanderGEN
+	}
+	text = {
+		trigger = { culture = brindlemen }
+		localisation_key = plu_brindlemenGEN
+	}
+# Naath group
+	text = {
+		trigger = { culture = naathi }
+		localisation_key = plu_naathiGEN
+	}
+# Unoccupied group
+	text = {
+		trigger = { culture = ruin }
+		localisation_key = plu_ruinGEN
+	}
+	
+	fallback_text = {
+		localisation_key = CULTURE_PLU_FALLBACK_GEN
+	}
+}
+
+#Language from culture name
+defined_text = {
+	name = GetLangAdjective
+	use_first_valid = yes
+	text = {
+		trigger = { is_renamed_culture_trigger = yes }
+		localisation_key = String_GetLangAdjective_Fallback
+	}
+# Andal
+	text = {
+		trigger = { culture = riverlander }
+		localisation_key = String_GetLangAdjective_riverlander
+	}
+	text = {
+		trigger = { culture = westerman }
+		localisation_key = String_GetLangAdjective_westerman
+	}
+	text = {
+		trigger = { culture = valeman }
+		localisation_key = String_GetLangAdjective_valeman
+	}
+	text = {
+		trigger = { culture = crownlander }
+		localisation_key = String_GetLangAdjective_crownlander
+	}
+	text = {
+		trigger = { culture = stormlander }
+		localisation_key = String_GetLangAdjective_stormlander
+	}
+	text = {
+		trigger = { culture = reachman }
+		localisation_key = String_GetLangAdjective_reachman
+	}
+	text = {
+		trigger = { culture = hedge }
+		localisation_key = String_GetLangAdjective_hedge
+	}
+	text = {
+		trigger = { culture = sisterman }
+		localisation_key = String_GetLangAdjective_sisterman
+	}
+	text = {
+		trigger = { culture = old_andal }
+		localisation_key = String_GetLangAdjective_old_andal
+	}
+	text = {
+		trigger = { culture = dornish_andal }
+		localisation_key = String_GetLangAdjective_dornish_andal
+	}
+	text = {
+		trigger = { culture = northman_andal }
+		localisation_key = String_GetLangAdjective_northman_andal
+	}
+# Dornish
+	text = {
+		trigger = { culture = stone_dornish }
+		localisation_key = String_GetLangAdjective_stone_dornish
+	}
+	text = {
+		trigger = { culture = sand_dornish }
+		localisation_key = String_GetLangAdjective_sand_dornish
+	}
+	text = {
+		trigger = { culture = salt_dornish }
+		localisation_key = String_GetLangAdjective_salt_dornish
+	}
+	text = {
+		trigger = { culture = rhoynar }
+		localisation_key = String_GetLangAdjective_rhoynar
+	}
+# First Men
+	text = {
+		trigger = { culture = northman }
+		localisation_key = String_GetLangAdjective_northman
+	}
+	text = {
+		trigger = { culture = hill_clansman }
+		localisation_key = String_GetLangAdjective_hill_clansman
+	}
+	text = {
+		trigger = { culture = crannogman }
+		localisation_key = String_GetLangAdjective_crannogman
+	}
+	text = {
+		trigger = { culture = half_southron }
+		localisation_key = String_GetLangAdjective_half_southron
+	}
+	text = {
+		trigger = { culture = crackclawmen }
+		localisation_key = String_GetLangAdjective_crackclawmen
+	}
+	text = {
+		trigger = { culture = moon_clansman }
+		localisation_key = String_GetLangAdjective_moon_clansman
+	}
+	text = {
+		trigger = { culture = skagosi }
+		localisation_key = String_GetLangAdjective_skagosi
+	}
+# Free Folk
+	text = {
+		trigger = { culture = wildling }
+		localisation_key = String_GetLangAdjective_wildling
+	}
+	text = {
+		trigger = { culture = thenn }
+		localisation_key = String_GetLangAdjective_thenn
+	}
+	text = {
+		trigger = { culture = frozen_shore }
+		localisation_key = String_GetLangAdjective_frozen_shore
+	}
+	text = {
+		trigger = { culture = hornfoot }
+		localisation_key = String_GetLangAdjective_hornfoot
+	}
+	text = {
+		trigger = { culture = cannibal_clan }
+		localisation_key = String_GetLangAdjective_cannibal_clan
+	}
+	text = {
+		trigger = { culture = nightrunner }
+		localisation_key = String_GetLangAdjective_nightrunner
+	}
+# Iron Isles
+	text = {
+		trigger = { culture = ironborn }
+		localisation_key = String_GetLangAdjective_ironborn
+	}
+	text = {
+		trigger = { culture = old_ironborn }
+		localisation_key = String_GetLangAdjective_old_ironborn
+	}
+# Valyrian
+	text = {
+		trigger = { culture = high_valyrian }
+		localisation_key = String_GetLangAdjective_high_valyrian
+	}
+	text = {
+		trigger = { culture = western_valyrian }
+		localisation_key = String_GetLangAdjective_western_valyrian
+	}
+	text = {
+		trigger = { culture = eastern_valyrian }
+		localisation_key = String_GetLangAdjective_eastern_valyrian
+	}
+	text = {
+		trigger = { culture = mantaryan }
+		localisation_key = String_GetLangAdjective_mantaryan
+	}
+	text = {
+		trigger = { culture = tolosi }
+		localisation_key = String_GetLangAdjective_tolosi
+	}
+	text = {
+		trigger = { culture = elyrian }
+		localisation_key = String_GetLangAdjective_elyrian
+	}
+# Free cities
+	text = {
+		trigger = { culture = pentosi }
+		localisation_key = String_GetLangAdjective_pentosi
+	}
+	text = {
+		trigger = { culture = braavosi }
+		localisation_key = String_GetLangAdjective_braavosi
+	}
+	text = {
+		trigger = { culture = lysene }
+		localisation_key = String_GetLangAdjective_lysene
+	}
+	text = {
+		trigger = { culture = qohorik }
+		localisation_key = String_GetLangAdjective_qohorik
+	}
+	text = {
+		trigger = { culture = norvosi }
+		localisation_key = String_GetLangAdjective_norvosi
+	}
+	text = {
+		trigger = { culture = myrman }
+		localisation_key = String_GetLangAdjective_myrman
+	}
+	text = {
+		trigger = { culture = tyroshi }
+		localisation_key = String_GetLangAdjective_tyroshi
+	}
+	text = {
+		trigger = { culture = volantene }
+		localisation_key = String_GetLangAdjective_volantene
+	}
+	text = {
+		trigger = { culture = lorathi }
+		localisation_key = String_GetLangAdjective_lorathi
+	}
+	text = {
+		trigger = { culture = essarian }
+		localisation_key = String_GetLangAdjective_essarian
+	}
+	text = {
+		trigger = { culture = gogossosi }
+		localisation_key = String_GetLangAdjective_gogossosi
+	}
+	text = {
+		trigger = { culture = bearded_priest_culture }
+		localisation_key = String_GetLangAdjective_bearded_priest_culture
+	}
+# Ghiscari group
+	text = {
+		trigger = { culture = astapori }
+		localisation_key = String_GetLangAdjective_astapori
+	}
+	text = {
+		trigger = { culture = yunkaii }
+		localisation_key = String_GetLangAdjective_yunkaii
+	}
+	text = {
+		trigger = { culture = meereenese }
+		localisation_key = String_GetLangAdjective_meereenese
+	}
+	text = {
+		trigger = { culture = ghiscari }
+		localisation_key = String_GetLangAdjective_ghiscari
+	}
+# Dothraki group
+	text = {
+		trigger = { culture = dothraki }
+		localisation_key = String_GetLangAdjective_dothraki
+	}
+	text = {
+		trigger = { culture = lhazareen }
+		localisation_key = String_GetLangAdjective_lhazareen
+	}
+# Sarnor group
+	text = {
+		trigger = { culture = sarnorian }
+		localisation_key = String_GetLangAdjective_sarnorian
+	}
+	text = {
+		trigger = { culture = omberi }
+		localisation_key = String_GetLangAdjective_omberi
+	}
+# Hyrkoon group
+	text = {
+		trigger = { culture = hyrkooni }
+		localisation_key = String_GetLangAdjective_hyrkooni
+	}
+	text = {
+		trigger = { culture = kayakayanayan }
+		localisation_key = String_GetLangAdjective_kayakayanayan
+	}
+	text = {
+		trigger = { culture = samyrianan }
+		localisation_key = String_GetLangAdjective_samyrianan
+	}
+	text = {
+		trigger = { culture = bayasabhadi }
+		localisation_key = String_GetLangAdjective_bayasabhadi
+	}
+# Moraqi group
+	text = {
+		trigger = { culture = farosi }
+		localisation_key = String_GetLangAdjective_farosi
+	}
+	text = {
+		trigger = { culture = moraqi }
+		localisation_key = String_GetLangAdjective_moraqi
+	}
+	text = {
+		trigger = { culture = zabhadi }
+		localisation_key = String_GetLangAdjective_zabhadi
+	}
+	text = {
+		trigger = { culture = vahari }
+		localisation_key = String_GetLangAdjective_vahari
+	}
+# Yi Ti group
+	text = {
+		trigger = { culture = yi_ti }
+		localisation_key = String_GetLangAdjective_yi_ti
+	}
+	text = {
+		trigger = { culture = asabhadi }
+		localisation_key = String_GetLangAdjective_asabhadi
+	}
+# Jade Islands group
+	text = {
+		trigger = { culture = lengi }
+		localisation_key = String_GetLangAdjective_lengi
+	}
+# Asshai group
+	text = {
+		trigger = { culture = asshai }
+		localisation_key = String_GetLangAdjective_asshai
+	}
+	text = {
+		trigger = { culture = shadowlander }
+		localisation_key = String_GetLangAdjective_shadowlander
+	}
+# Further East
+	text = {
+		trigger = { culture = grey_waste }
+		localisation_key = String_GetLangAdjective_grey_waste
+	}
+# Qarth group
+	text = {
+		trigger = { culture = qartheen }
+		localisation_key = String_GetLangAdjective_qartheen
+	}
+# Ibbenese group
+	text = {
+		trigger = { culture = ibbenese }
+		localisation_key = String_GetLangAdjective_ibbenese
+	}
+# Jogos nhai group
+	text = {
+		trigger = { culture = jogos_nhai }
+		localisation_key = String_GetLangAdjective_jogos_nhai
+	}
+# Nghai group
+	text = {
+		trigger = { culture = nghai }
+		localisation_key = String_GetLangAdjective_nghai
+	}
+# Islander group
+	text = {
+		trigger = { culture = islander }
+		localisation_key = String_GetLangAdjective_islander
+	}
+# Old Races
+	text = {
+		trigger = { culture = giant }
+		localisation_key = String_GetLangAdjective_giant
+	}
+	text = {
+		trigger = { culture = children_forest }
+		localisation_key = String_GetLangAdjective_children_forest
+	}
+# Winter group
+	text = {
+		trigger = { culture = white_walker }
+		localisation_key = String_GetLangAdjective_white_walker
+	}
+	text = {
+		trigger = { culture = winter_wasteland }
+		localisation_key = String_GetLangAdjective_winter_wasteland
+	}
+# Summer Islands
+	text = {
+		trigger = { culture = summer_islander }
+		localisation_key = String_GetLangAdjective_summer_islander
+	}
+# Sothoryos islands
+	text = {
+		trigger = { culture = basilisk_islander }
+		localisation_key = String_GetLangAdjective_basilisk_islander
+	}
+	text = {
+		trigger = { culture = brindlemen }
+		localisation_key = String_GetLangAdjective_brindlemen
+	}
+# Naath group
+	text = {
+		trigger = { culture = naathi }
+		localisation_key = String_GetLangAdjective_naathi
+	}
+# Unoccupied group
+	text = {
+		trigger = { culture = ruin }
+		localisation_key = String_GetLangAdjective_ruin
+	}
+	fallback_text = {
+		localisation_key = String_GetLangAdjective_Fallback
+	}
+}
+
+#######################################################
+
+#High God окончание "и/а/<пусто>" (например, пообещали/пообещала/пообещал)
+defined_text = {
+	name = GetHGodEndA
+	text = {
+		trigger = {
+			AND = {
+				NOT = { religion_scope = { has_religion_feature = religion_god_king_head } }
+				OR = {
+					# old_gods / the_seven
+					religion_group = westerosi_religion
+					# beyond_wall_old_gods / mountain_old_gods / thenn_rel
+					religion_group = wildling_religion
+					# pagan / aztec	
+					religion_group = pagan_group
+					# yiti_gods / gods_bone_mountains / shadowbinders / gods_nghai / starry_wisdom / old_ones
+					AND = { religion_group = far_east_group NOR = { religion = lion_nigth religion = stone_cow } }
+					religion = moonsingers
+					religion = weeping_lady
+					religion = gods_lorath
+					religion = cold_gods
+					religion = pirate
+					religion = valyrian_rel
+					religion = dragon_rel
+					religion = corsair			
+					religion = summer_rel
+					religion = fish_gods
+					religion = sothoryos_rel
+					religion = harpy
+					religion = qarth_warlocks
+					religion = gods_ibben
+					religion = gods_sarnor
+					religion = jogos_pagan
+				}
+			}
+		}
+		localisation_key = END_I
+	}
+	text = {
+		trigger = {
+			OR = {
+				religion_scope = { AND = { has_religion_feature = religion_god_king_head has_flag = reformer_is_female } }
+				religion = lady_of_the_waves
+				religion = rhoynar_pagan
+				religion = stone_cow
+				religion = lady_of_spears
+			}
+		}
+		localisation_key = END_A
+	}
+}
+#High God окончание "ли/ла/<пусто>" (например, могли/могла/мог)
+defined_text = {
+	name = GetHGodEndLA
+	text = {
+		trigger = {
+			AND = {
+				NOT = { religion_scope = { has_religion_feature = religion_god_king_head } }
+				OR = {
+					# old_gods / the_seven
+					religion_group = westerosi_religion
+					# beyond_wall_old_gods / mountain_old_gods / thenn_rel
+					religion_group = wildling_religion
+					# pagan / aztec	
+					religion_group = pagan_group
+					# yiti_gods / gods_bone_mountains / shadowbinders / gods_nghai / starry_wisdom / old_ones
+					AND = { religion_group = far_east_group NOR = { religion = lion_nigth religion = stone_cow } }
+					religion = moonsingers
+					religion = weeping_lady
+					religion = gods_lorath
+					religion = cold_gods
+					religion = pirate
+					religion = valyrian_rel
+					religion = dragon_rel
+					religion = corsair			
+					religion = summer_rel
+					religion = fish_gods
+					religion = sothoryos_rel
+					religion = harpy
+					religion = qarth_warlocks
+					religion = gods_ibben
+					religion = gods_sarnor
+					religion = jogos_pagan
+				}
+			}
+		}
+		localisation_key = END_LI
+	}
+	text = {
+		trigger = {
+			OR = {
+				religion_scope = { AND = { has_religion_feature = religion_god_king_head has_flag = reformer_is_female } }
+				religion = lady_of_the_waves
+				religion = rhoynar_pagan
+				religion = stone_cow
+				religion = lady_of_spears
+			}
+		}
+		localisation_key = FEMALE_ENDING_E
+	}
+}
+#High God "они/она/он"
+defined_text = {
+	name = GetHGodSheHe
+	text = {
+		trigger = {
+			AND = {
+				NOT = { religion_scope = { has_religion_feature = religion_god_king_head } }
+				OR = {
+					# old_gods / the_seven
+					religion_group = westerosi_religion
+					# beyond_wall_old_gods / mountain_old_gods / thenn_rel
+					religion_group = wildling_religion
+					# pagan / aztec	
+					religion_group = pagan_group
+					# yiti_gods / gods_bone_mountains / shadowbinders / gods_nghai / starry_wisdom / old_ones
+					AND = { religion_group = far_east_group NOR = { religion = lion_nigth religion = stone_cow } }
+					religion = moonsingers
+					religion = weeping_lady
+					religion = gods_lorath
+					religion = cold_gods
+					religion = pirate
+					religion = valyrian_rel
+					religion = dragon_rel
+					religion = corsair			
+					religion = summer_rel
+					religion = fish_gods
+					religion = sothoryos_rel
+					religion = harpy
+					religion = qarth_warlocks
+					religion = gods_ibben
+					religion = gods_sarnor
+					religion = jogos_pagan
+				}
+			}
+		}
+		localisation_key = EV_THEY
+	}
+	text = {
+		trigger = {
+			OR = {
+				religion_scope = { AND = { has_religion_feature = religion_god_king_head has_flag = reformer_is_female } }
+				religion = lady_of_the_waves
+				religion = rhoynar_pagan
+				religion = stone_cow
+				religion = lady_of_spears
+			}
+		}
+		localisation_key = EV_SHE
+	}
+	fallback_text = {
+		localisation_key = EV_HE
+	}
+}
+#High God окончание "ны/на/ен" (например, милосердны/милосердна/милосерден)
+defined_text = {
+	name = GetHGodNaEn
+	text = {
+		trigger = {
+			AND = {
+				NOT = { religion_scope = { has_religion_feature = religion_god_king_head } }
+				OR = {
+					# old_gods / the_seven
+					religion_group = westerosi_religion
+					# beyond_wall_old_gods / mountain_old_gods / thenn_rel
+					religion_group = wildling_religion
+					# pagan / aztec	
+					religion_group = pagan_group
+					# yiti_gods / gods_bone_mountains / shadowbinders / gods_nghai / starry_wisdom / old_ones
+					AND = { religion_group = far_east_group NOR = { religion = lion_nigth religion = stone_cow } }
+					religion = moonsingers
+					religion = weeping_lady
+					religion = gods_lorath
+					religion = cold_gods
+					religion = pirate
+					religion = valyrian_rel
+					religion = dragon_rel
+					religion = corsair			
+					religion = summer_rel
+					religion = fish_gods
+					religion = sothoryos_rel
+					religion = harpy
+					religion = qarth_warlocks
+					religion = gods_ibben
+					religion = gods_sarnor
+					religion = jogos_pagan
+				}
+			}
+		}
+		localisation_key = END_NI
+	}
+	text = {
+		trigger = {
+			OR = {
+				religion_scope = { AND = { has_religion_feature = religion_god_king_head has_flag = reformer_is_female } }
+				religion = lady_of_the_waves
+				religion = rhoynar_pagan
+				religion = stone_cow
+				religion = lady_of_spears
+			}
+		}
+		localisation_key = END_NA
+	}
+	fallback_text = {
+		localisation_key = END_EN
+	}
+}
+#High God окончание "ие/ая/ой" (например, такие/такая/такой)
+defined_text = {
+	name = GetHGodAyaOy
+	text = {
+		trigger = {
+			AND = {
+				NOT = { religion_scope = { has_religion_feature = religion_god_king_head } }
+				OR = {
+					# old_gods / the_seven
+					religion_group = westerosi_religion
+					# beyond_wall_old_gods / mountain_old_gods / thenn_rel
+					religion_group = wildling_religion
+					# pagan / aztec	
+					religion_group = pagan_group
+					# yiti_gods / gods_bone_mountains / shadowbinders / gods_nghai / starry_wisdom / old_ones
+					AND = { religion_group = far_east_group NOR = { religion = lion_nigth religion = stone_cow } }
+					religion = moonsingers
+					religion = weeping_lady
+					religion = gods_lorath
+					religion = cold_gods
+					religion = pirate
+					religion = valyrian_rel
+					religion = dragon_rel
+					religion = corsair			
+					religion = summer_rel
+					religion = fish_gods
+					religion = sothoryos_rel
+					religion = harpy
+					religion = qarth_warlocks
+					religion = gods_ibben
+					religion = gods_sarnor
+					religion = jogos_pagan
+				}
+			}
+		}
+		localisation_key = END_IE
+	}
+	text = {
+		trigger = {
+			OR = {
+				religion_scope = { AND = { has_religion_feature = religion_god_king_head has_flag = reformer_is_female } }
+				religion = lady_of_the_waves
+				religion = rhoynar_pagan
+				religion = stone_cow
+				religion = lady_of_spears
+			}
+		}
+		localisation_key = AYA_POSTFIX
+	}
+	fallback_text = {
+		localisation_key = END_OY
+	}
+}
+#High God окончание "лись/лась/лся" (например, гордились/гордилась/гордился)
+defined_text = {
+	name = GetHGodLasLsya
+	text = {
+		trigger = {
+			AND = {
+				NOT = { religion_scope = { has_religion_feature = religion_god_king_head } }
+				OR = {
+					# old_gods / the_seven
+					religion_group = westerosi_religion
+					# beyond_wall_old_gods / mountain_old_gods / thenn_rel
+					religion_group = wildling_religion
+					# pagan / aztec	
+					religion_group = pagan_group
+					# yiti_gods / gods_bone_mountains / shadowbinders / gods_nghai / starry_wisdom / old_ones
+					AND = { religion_group = far_east_group NOR = { religion = lion_nigth religion = stone_cow } }
+					religion = moonsingers
+					religion = weeping_lady
+					religion = gods_lorath
+					religion = cold_gods
+					religion = pirate
+					religion = valyrian_rel
+					religion = dragon_rel
+					religion = corsair			
+					religion = summer_rel
+					religion = fish_gods
+					religion = sothoryos_rel
+					religion = harpy
+					religion = qarth_warlocks
+					religion = gods_ibben
+					religion = gods_sarnor
+					religion = jogos_pagan
+				}
+			}
+		}
+		localisation_key = END_LIS
+	}
+	text = {
+		trigger = {
+			OR = {
+				religion_scope = { AND = { has_religion_feature = religion_god_king_head has_flag = reformer_is_female } }
+				religion = lady_of_the_waves
+				religion = rhoynar_pagan
+				religion = stone_cow
+				religion = lady_of_spears
+			}
+		}
+		localisation_key = END_LAS
+	}
+	fallback_text = {
+		localisation_key = END_LSYA
+	}
+}
+#Дательный падеж Высшей Силы
+defined_text = {
+	name = GetReligionHighGodDAT
+	use_first_valid = yes
+	text = {
+		trigger = {
+			AND = {
+				NOT = { religion_scope = { has_religion_feature = religion_god_king_head } }
+				OR = {
+					# old_gods / the_seven
+					religion_group = westerosi_religion
+					# beyond_wall_old_gods / mountain_old_gods / thenn_rel
+					religion_group = wildling_religion
+					# pagan / aztec	
+					religion_group = pagan_group
+					# yiti_gods / gods_bone_mountains / shadowbinders / gods_nghai / starry_wisdom / old_ones
+					AND = { religion_group = far_east_group NOR = { religion = lion_nigth religion = stone_cow } }
+					religion = moonsingers
+					religion = weeping_lady
+					religion = gods_lorath
+					religion = cold_gods
+					religion = pirate
+					religion = valyrian_rel
+					religion = dragon_rel
+					religion = corsair			
+					religion = summer_rel
+					religion = fish_gods
+					religion = sothoryos_rel
+					religion = harpy
+					religion = qarth_warlocks
+					religion = gods_ibben
+					religion = gods_sarnor
+					religion = jogos_pagan
+				}
+			}
+		}
+		localisation_key = GOD_GODS_DAT
+	}
+	text = {
+		trigger = {
+			OR = {
+				religion_scope = { AND = { has_religion_feature = religion_god_king_head has_flag = reformer_is_female } }
+				religion = lady_of_the_waves
+				religion = rhoynar_pagan
+				religion = stone_cow
+				religion = lady_of_spears
+			}
+		}
+		localisation_key = GOD_FEMALE_DAT
+	}
+	fallback_text = {
+		localisation_key = GOD_GOD_DAT
+	}
+}
+
+#######################################################
+
+# "е/ё" (например, убеждена/убеждён)
+defined_text = {
+	name = GetEYo
+	text = {
+		trigger = { is_female = yes }
+		localisation_key = END_E
+	}
+	text = {
+		trigger = { is_female = no }
+		localisation_key = MALE_YO
+	}
+	fallback_text = {
+		localisation_key = MALE_YO
+	}
+}

@@ -1,0 +1,17 @@
+reformation_god_names_root_post_effect = { #Reforming religion with certain Doctrines might result in gods being added/removed/changed.
+	ROOT = { #The Reformer scope
+		if = {
+			limit = { #Reformer becomes the High God.
+				has_dlc = "Holy Fury"
+				has_religion_feature = religion_god_king_head
+			}
+			if = {
+				limit = { is_female = yes }
+				religion_scope = { set_flag = reformer_is_female }
+			}
+			else = {
+				religion_scope = { clr_flag = reformer_is_female }
+			}
+		}
+	}
+}
