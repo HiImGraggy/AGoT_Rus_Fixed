@@ -9084,6 +9084,7 @@ character_event = {
         if = {
             limit = { FROM = { has_character_flag = weapon_sword } }
             add_artifact = sword_tier_2
+			set_character_flag = sword_tier_2
 			new_artifact = {
             	set_name = artifact_name
             	set_description = artifact_description_smith_tier_2
@@ -9092,6 +9093,7 @@ character_event = {
         if = {
             limit = { FROM = { has_character_flag = weapon_scimitar } }
             add_artifact = scimitar_tier_2
+			set_character_flag = scimitar_tier_2
 			new_artifact = {
             	set_name = artifact_name
             	set_description = artifact_description_smith_tier_2
@@ -9100,6 +9102,7 @@ character_event = {
         if = {
             limit = { FROM = { has_character_flag = weapon_lance } }
             add_artifact = lance_tier_2
+			set_character_flag = lance_tier_2
 			new_artifact = {
             	set_name = artifact_name
             	set_description = artifact_description_smith_tier_2
@@ -9115,13 +9118,15 @@ character_event = {
 					}
 				}
 				add_artifact = norvoshi_longaxe
+				set_character_flag = weapon_axe
 				new_artifact = {
 					set_name = artifact_name
-					set_description = artifact_description_smith_tier_2
+					set_description = norvoshi_longaxe_desc
 				}
 			}
 			else = {			
 				add_artifact = axe_tier_2
+				set_character_flag = axe_tier_2
 				new_artifact = {
 					set_name = artifact_name
 					set_description = artifact_description_smith_tier_2
@@ -9131,6 +9136,7 @@ character_event = {
         if = {
             limit = { FROM = { has_character_flag = weapon_mace } }
             add_artifact = mace_tier_2
+			set_character_flag = mace_tier_2
 			new_artifact = {
             	set_name = artifact_name
             	set_description = artifact_description_smith_tier_2
@@ -9139,6 +9145,7 @@ character_event = {
         if = {
             limit = { FROM = { has_character_flag = weapon_bow } }
             add_artifact = bow_tier_2
+			set_character_flag = bow_tier_2
 			new_artifact = {
             	set_name = artifact_name
             	set_description = artifact_description_smith_tier_2
@@ -9147,33 +9154,37 @@ character_event = {
 		if = {
             limit = { FROM = { has_character_flag = weapon_arakh } }
             add_artifact = arakh_tier_2
+			set_character_flag = arakh_tier_2
 			new_artifact = {
             	set_name = artifact_name
-            	set_description = artifact_description_smith_tier_2
+            	set_description = arakh_tier_2_desc
             }
         }
 		if = {
             limit = { FROM = { has_character_flag = weapon_fire_sword } }
             add_artifact = fire_sword
+			set_character_flag = weapon_fire_sword
 			new_artifact = {
             	set_name = artifact_name
-            	set_description = artifact_description_smith_tier_2
+            	set_description = fire_sword_desc
             }
         }
 		if = {
             limit = { FROM = { has_character_flag = weapon_dornish_spear } }
             add_artifact = dornish_spear
+			set_character_flag = weapon_dornish_spear
 			new_artifact = {
             	set_name = artifact_name
-            	set_description = artifact_description_smith_tier_2
+            	set_description = dornish_spear_desc
             }
         }
 		if = {
             limit = { FROM = { has_character_flag = weapon_myrish_stiletto } }
             add_artifact = myrish_stiletto
+			set_character_flag = weapon_myrish_stiletto
 			new_artifact = {
             	set_name = artifact_name
-            	set_description = artifact_description_smith_tier_2
+            	set_description = myrish_stiletto_desc
             }
         }
 		if = {
@@ -9192,9 +9203,20 @@ character_event = {
 		clr_character_flag = weaponsmith
         clr_character_flag = armorsmith
 		clr_character_flag = special_weapon
+
+		clr_character_flag = sword_tier_2
+		clr_character_flag = scimitar_tier_2
+		clr_character_flag = lance_tier_2
+		clr_character_flag = weapon_axe
+		clr_character_flag = axe_tier_2
+		clr_character_flag = mace_tier_2
+		clr_character_flag = bow_tier_2
+		clr_character_flag = arakh_tier_2
+		clr_character_flag = weapon_fire_sword
+		clr_character_flag = weapon_dornish_spear
+		clr_character_flag = weapon_myrish_stiletto
     }
 }
-
 
 #Cheap weapon done
 character_event = {
@@ -9237,6 +9259,7 @@ character_event = {
         if = {
             limit = { FROM = { has_character_flag = weapon_sword } }
             add_artifact = sword_tier_1
+			set_character_flag = sword_tier_1
 			new_artifact = {
             	set_name = artifact_name
             	set_description = artifact_description_smith_tier_1
@@ -9245,6 +9268,7 @@ character_event = {
         if = {
             limit = { FROM = { has_character_flag = weapon_scimitar } }
             add_artifact = scimitar_tier_1
+			set_character_flag = scimitar_tier_1
 			new_artifact = {
             	set_name = artifact_name
             	set_description = artifact_description_smith_tier_1
@@ -9253,6 +9277,7 @@ character_event = {
         if = {
             limit = { FROM = { has_character_flag = weapon_lance } }
             add_artifact = lance_tier_1
+			set_character_flag = lance_tier_1
 			new_artifact = {
             	set_name = artifact_name
             	set_description = artifact_description_smith_tier_1
@@ -9261,6 +9286,7 @@ character_event = {
         if = {
             limit = { FROM = { has_character_flag = weapon_axe } }
             add_artifact = axe_tier_1
+			set_character_flag = axe_tier_1
 			new_artifact = {
             	set_name = artifact_name
             	set_description = artifact_description_smith_tier_1
@@ -9269,6 +9295,7 @@ character_event = {
         if = {
             limit = { FROM = { has_character_flag = weapon_mace } }
             add_artifact = mace_tier_1
+			set_character_flag = mace_tier_1
 			new_artifact = {
             	set_name = artifact_name
             	set_description = artifact_description_smith_tier_1
@@ -9277,6 +9304,7 @@ character_event = {
         if = {
             limit = { FROM = { has_character_flag = weapon_bow } }
             add_artifact = bow_tier_1
+			set_character_flag = bow_tier_1
 			new_artifact = {
             	set_name = artifact_name
             	set_description = artifact_description_smith_tier_1
@@ -9285,9 +9313,10 @@ character_event = {
 		if = {
             limit = { FROM = { has_character_flag = weapon_arakh } }
             add_artifact = arakh_tier_1
+			set_character_flag = arakh_tier_1
 			new_artifact = {
             	set_name = artifact_name
-            	set_description = artifact_description_smith_tier_1
+            	set_description = arakh_tier_1_desc
             }
         }
 		if = {
@@ -9306,6 +9335,14 @@ character_event = {
 		clr_character_flag = weaponsmith
         clr_character_flag = armorsmith
 		clr_character_flag = special_weapon
+
+		clr_character_flag = sword_tier_1
+		clr_character_flag = scimitar_tier_1
+		clr_character_flag = lance_tier_1
+		clr_character_flag = axe_tier_1
+		clr_character_flag = mace_tier_1
+		clr_character_flag = bow_tier_1
+		clr_character_flag = arakh_tier_1
     }
 }
 
