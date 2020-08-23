@@ -1,0 +1,709 @@
+################
+### Corsairs ###
+################
+#Salukho of Talon, house of AFFC Corsair King
+100305000 = {
+	name="Квасдо"	# a lord
+	dynasty=305000
+
+	religion="summer_rel"
+	culture="summer_islander"
+
+	7970.1.1 = {birth="7970.1.1"}
+	7986.1.1 = {add_trait=trained_warrior}
+	8016.1.1 = {death="8016.1.1"}
+}
+101305000 = {
+	name="Макан"	# a lord
+	dynasty=305000
+
+	religion="summer_rel"
+	culture="summer_islander"
+
+	father=100305000
+
+	7998.1.1 = {birth="7998.1.1"}
+	8014.1.1 = {add_trait=trained_warrior}
+	8043.1.1 = {death="8043.1.1"}
+}
+103305000 = {
+	name="Гвалахуру"	# a lord
+	dynasty=305000
+
+	religion="summer_rel"
+	culture="summer_islander"
+
+	father=101305000
+
+	8022.1.1 = {birth="8022.1.1"}
+	8038.1.1 = {add_trait=trained_warrior}
+	8066.1.1 = {
+		religion = "corsair"
+	}
+	8085.1.1 = {death="8085.1.1"}
+}
+106305000 = {
+	name="Ксоан"	# a lord
+	dynasty=305000
+
+	religion="corsair"
+	culture="summer_islander"
+
+	father=103305000
+
+	8057.1.1 = {birth="8057.1.1"}
+	8073.1.1 = {add_trait=trained_warrior}
+	8121.1.1 = {death="8121.1.1"}
+}
+108305000 = {
+	name="Олуджондо"	# a lord
+	dynasty=305000
+
+	religion="corsair"
+	culture="summer_islander"
+
+	father=106305000
+
+	8080.1.1 = {birth="8080.1.1"}
+	8096.1.1 = {add_trait=skilled_warrior}
+	8132.1.1 = {death="8132.1.1"}
+}
+111305000 = {
+	name="Джалабхар"	# a lord
+	dynasty=305000
+
+	religion="corsair"
+	culture="summer_islander"
+
+	father=108305000
+
+	8098.1.1 = {birth="8098.1.1"}
+	8114.1.1 = {add_trait=trained_warrior}
+	8165.1.1 = {death="8165.1.1"}
+}
+114305000 = {
+	name="Кубар"	# a lord
+	dynasty=305000
+
+	religion="corsair"
+	culture="summer_islander"
+
+	father=111305000
+
+	8133.1.1 = {birth="8133.1.1"}
+	8149.1.1 = {add_trait=master_warrior}
+	8190.1.1 = {death="8190.1.1"}
+}
+116305000 = {
+	name="Ксаро"	# a lord
+	dynasty=305000
+
+	religion="corsair"
+	culture="summer_islander"
+
+	father=111305000
+
+	8139.1.1 = {birth="8139.1.1"}
+	8155.1.1 = {add_trait=skilled_warrior}
+	8218.1.1 = {death="8218.1.1"}
+}
+117305000 = {
+	name="Ксажжа"	# a lord
+	female=yes
+	dynasty=305000
+
+	religion="corsair"
+	culture="summer_islander"
+
+	father=116305000
+
+	8159.1.1 = {birth="8159.1.1"}
+	8229.1.1 = {death="8229.1.1"}
+}
+118305000 = {
+	name="Чибундо"	# not a lord
+	dynasty=305000
+
+	religion="corsair"
+	culture="summer_islander"
+
+	father=116305000
+
+	8160.1.1 = {birth="8160.1.1"}
+	8176.1.1 = {add_trait=trained_warrior}
+	8212.1.1 = {death="8212.1.1"}
+}
+123305000 = {
+	name="Мермесбар"	# a lord
+	dynasty=305000
+
+	religion="corsair"
+	culture="summer_islander"
+
+	father=118305000
+
+	8199.1.1 = {birth="8199.1.1"}
+	8215.1.1 = {add_trait=skilled_warrior}
+	8276.1.1 = {death="8276.1.1"}
+}
+126305000 = {
+	name="Адейему"	# a lord
+	dynasty=305000
+
+	religion="corsair"
+	culture="summer_islander"
+
+	father=123305000
+
+	8221.1.1 = {birth="8221.1.1"}
+	8237.1.1 = {add_trait=skilled_warrior}
+	8291.1.1 = {death="8291.1.1"}
+}
+#Corsair King mentioned in AFFC
+6800123 = {
+	name="Макан"	
+	dynasty=305000
+	
+	martial = 8
+	diplomacy = 7
+	intrigue = 6
+	stewardship = 4
+	learning = 2
+
+	religion="corsair"
+	culture = summer_islander
+	
+	father=126305000
+	
+	add_trait = ambitious
+	add_trait = gregarious
+	add_trait = tough_soldier
+
+	8265.1.1 = {birth="8265.1.1"}
+	8282.1.1 = {add_trait=skilled_warrior}
+	8300.1.1 = {
+		effect = {
+			prestige = 250
+			wealth = 100
+		}
+	}
+}
+130305000 = {
+	name="Чакоро"	# not a lord
+	dynasty=305000
+
+	religion="corsair"
+	culture="summer_islander"
+
+	father=6800123
+
+	8289.1.1 = {birth="8289.1.1"}
+}
+
+
+#Brotherhood of Bones
+100305001 = {
+	name="Манахура"	# a lord
+	dynasty=305001
+	
+	martial=2
+	intrigue=4
+	diplomacy=6
+	stewardship=4
+	learning=4
+	
+	religion="summer_rel"
+	culture="summer_islander"
+	
+	add_trait=grey_eminence
+	add_trait=quick
+
+	8040.1.1 = {birth="8040.1.1"}
+	8056.1.1 = {add_trait=skilled_warrior}
+	8066.1.1 = {
+		religion = "corsair"
+	}
+	8095.1.1 = {death="8095.1.1"}
+}
+
+#Xhore of Ax Isle
+100350021 = {
+	name="Ксандарро"	# a lord, canon, The First Corsair
+	dynasty=350021
+	
+	martial=5
+	intrigue=4
+	diplomacy=6
+	stewardship=4
+	learning=4
+
+	religion="qarth_warlocks"
+	culture="qartheen"
+	
+	add_trait=skilled_tactician
+	add_trait=brave
+	add_trait=ambitious
+	
+	8042.1.1 = {birth="8042.1.1"} #he ruled 100 years after fall of Gogossos, not during Conquest
+	8058.1.1 = {add_trait=master_warrior}
+	8066.1.1 = {
+		religion = "corsair"
+	}
+	8094.1.1 = {death="8094.1.1"}
+}
+106350021 = {
+	name="Регон"	# a lord
+	dynasty=350021
+
+	religion="corsair"
+	culture="qartheen"
+
+	father=100350021
+
+	8063.1.1 = {birth="8063.1.1"}
+	8089.1.1 = {add_trait=poor_warrior}
+	8118.1.1 = {death="8118.1.1"}
+}
+110350021 = {
+	name="Венделло"	# a lord
+	dynasty=350021
+
+	religion="corsair"
+	culture="qartheen"
+
+	father=106350021
+
+	8081.1.1 = {birth="8081.1.1"}
+	8097.1.1 = {add_trait=skilled_warrior}
+	8154.1.1 = {death="8154.1.1"}
+}
+112350021 = {
+	name="Матос"	# a lord
+	dynasty=350021
+
+	religion="corsair"
+	culture="qartheen"
+
+	father=110350021
+
+	8108.1.1 = {birth="8108.1.1"}
+	8124.1.1 = {add_trait=skilled_warrior}
+	8165.1.1 = {death="8165.1.1"}
+}
+113350021 = {
+	name="Эгон"	# not a lord
+	dynasty=350021
+
+	religion="corsair"
+	culture="qartheen"
+
+	father=112350021
+
+	8126.1.1 = {birth="8126.1.1"}
+	8142.1.1 = {add_trait=poor_warrior}
+	8164.1.1 = {death = {death_reason = death_murder}}
+}
+117350021 = {
+	name="Орделло"	# a lord
+	dynasty=350021
+
+	religion="corsair"
+	culture="qartheen"
+
+	father=113350021
+
+	8159.1.1 = {birth="8159.1.1"}
+	8175.1.1 = {add_trait=trained_warrior}
+	8213.1.1 = {death="8213.1.1"}
+}
+118350021 = {
+	name="Донифос"	# not a lord
+	dynasty=350021
+
+	religion="corsair"
+	culture="qartheen"
+
+	father=117350021
+
+	8181.1.1 = {birth="8181.1.1"}
+	8197.1.1 = {add_trait=poor_warrior}
+	8249.1.1 = {death="8249.1.1"}
+}
+122350021 = {
+	name="Эгон"	# a lord
+	dynasty=350021
+
+	religion="corsair"
+	culture="qartheen"
+
+	father=117350021
+
+	8190.1.1 = {birth="8190.1.1"}
+	8206.1.1 = {add_trait=skilled_warrior}
+	8263.1.1 = {death="8263.1.1"}
+}
+128350021 = {
+	name="Ниэссос"	# a lord
+	dynasty=350021
+
+	religion="corsair"
+	culture="qartheen"
+
+	father=118350021
+
+	8209.1.1 = {birth="8209.1.1"}
+	8225.1.1 = {add_trait=skilled_warrior}
+	8281.1.1 = {death="8281.1.1"}
+}
+130350021 = {
+	name="Сибассион"	# a lord
+	dynasty=350021
+
+	religion="corsair"
+	culture="qartheen"
+
+	father=128350021
+
+	8246.1.1 = {birth="8246.1.1"}
+	8262.1.1 = {add_trait=trained_warrior}
+	8292.1.1 = {death="8292.1.1"}
+}
+131350021 = {
+	name="Манделло"	# not a lord
+	dynasty=350021
+
+	religion="corsair"
+	culture="qartheen"
+
+	father=130350021
+
+	8279.1.1 = {birth="8279.1.1"}
+	8295.1.1 = {add_trait=trained_warrior}
+}
+
+################
+### Gogossos ###
+################
+### House Paenorhin
+10003350 = {
+	name="Бенерро"	# a lord
+	dynasty=723350
+
+	religion="valyrian_rel"
+	culture="gogossosi"
+
+	7860.1.1 = {birth="7860.1.1"}
+	7876.1.1 = {add_trait=poor_warrior}
+	7914.1.1 = {death="7914.1.1"}
+}
+10013350 = {
+	name="Квохерис"	# a lord
+	dynasty=723350
+
+	religion="valyrian_rel"
+	culture="gogossosi"
+
+	father=10003350
+
+	7895.1.1 = {birth="7895.1.1"}
+	7911.1.1 = {add_trait=poor_warrior}
+	7939.1.1 = {death="7939.1.1"}
+}
+10053350 = {
+	name="Эйнар"	# a lord
+	dynasty=723350
+
+	religion="valyrian_rel"
+	culture="gogossosi"
+
+	father=10013350
+
+	7920.1.1 = {birth="7920.1.1"}
+	7936.1.1 = {add_trait=trained_warrior}
+	7950.1.1 = {
+		add_trait = has_red_death 
+		death = {
+			death_reason = death_trait
+		}
+	}
+}
+10073350 = {
+	name="Алиос"	# a lord
+	dynasty=723350
+
+	religion="valyrian_rel"
+	culture="gogossosi"
+
+	father=10053350
+
+	7945.1.1 = {birth="7945.1.1"}
+	7950.1.1 = {
+		add_trait = has_red_death 
+		death = {
+			death_reason = death_trait
+		}
+	}
+}
+
+### House Emyrion
+100354 = {
+	name="Орис"	# a lord
+	dynasty=723354
+
+	religion="valyrian_rel"
+	culture="gogossosi"
+
+	7847.1.1 = {birth="7847.1.1"}
+	7863.1.1 = {add_trait=poor_warrior}
+	7903.1.1 = {death="7903.1.1"}
+}
+101354 = {
+	name="Вогарро"	# a lord
+	dynasty=723354
+
+	religion="valyrian_rel"
+	culture="gogossosi"
+
+	father=100354
+
+	7868.1.1 = {birth="7868.1.1"}
+	7884.1.1 = {add_trait=poor_warrior}
+	7910.1.1 = {death="7910.1.1"}
+}
+104354 = {
+	name="Орис"	# a lord
+	dynasty=723354
+
+	religion="valyrian_rel"
+	culture="gogossosi"
+
+	father=101354
+
+	7893.1.1 = {birth="7893.1.1"}
+	7909.1.1 = {add_trait=skilled_warrior}
+	7950.1.1 = {
+		add_trait = has_red_death 
+		death = {
+			death_reason = death_trait
+		}
+	}
+}
+108354 = {
+	name="Ниэссос"	# a lord
+	dynasty=723354
+
+	religion="valyrian_rel"
+	culture="gogossosi"
+
+	father=104354
+
+	7917.1.1 = {birth="7917.1.1"}
+	7933.1.1 = {add_trait=poor_warrior}
+	7950.1.1 = {
+		add_trait = has_red_death 
+		death = {
+			death_reason = death_trait
+		}
+	}
+}
+110354 = {
+	name="Алиос"	# a lord
+	dynasty=723354
+
+	religion="valyrian_rel"
+	culture="gogossosi"
+
+	father=108354
+
+	7935.1.1 = {birth="7935.1.1"}
+	7950.1.1 = {
+		add_trait = has_red_death 
+		death = {
+			death_reason = death_trait
+		}
+	}
+}
+
+### House Vhassorlan
+1000353 = {
+	name="Джейкар"	# a lord
+	dynasty=723353
+
+	religion="valyrian_rel"
+	culture="gogossosi"
+
+	7858.1.1 = {birth="7858.1.1"}
+	7874.1.1 = {add_trait=poor_warrior}
+	7914.1.1 = {death="7914.1.1"}
+}
+1003353 = {
+	name="Коллокво"	# a lord
+	dynasty=723353
+
+	religion="valyrian_rel"
+	culture="gogossosi"
+
+	father=1000353
+
+	7888.1.1 = {birth="7888.1.1"}
+	7904.1.1 = {add_trait=poor_warrior}
+	7937.1.1 = {death="7937.1.1"}
+}
+1007353 = {
+	name="Мокорро"	# a lord
+	dynasty=723353
+
+	religion="valyrian_rel"
+	culture="gogossosi"
+
+	father=1003353
+
+	7923.1.1 = {birth="7923.1.1"}
+	7939.1.1 = {add_trait=skilled_warrior}
+	7950.1.1 = {
+		add_trait = has_red_death 
+		death = {
+			death_reason = death_trait
+		}
+	}
+}
+1010353 = {
+	name="Дейгар"	# a lord
+	dynasty=723353
+
+	religion="valyrian_rel"
+	culture="gogossosi"
+
+	father=1007353
+
+	7944.1.1 = {birth="7944.1.1"}
+	7950.1.1 = {
+		add_trait = has_red_death 
+		death = {
+			death_reason = death_trait
+		}
+	}
+}
+
+### House Nahion
+1000352 = {
+	name="Паркелло"	# a lord
+	dynasty=723352
+
+	religion="valyrian_rel"
+	culture="gogossosi"
+
+	7858.1.1 = {birth="7858.1.1"}
+	7874.1.1 = {add_trait=poor_warrior}
+	7915.1.1 = {death="7915.1.1"}
+}
+1001352 = {
+	name="Эйликс"	# a lord
+	dynasty=723352
+
+	religion="valyrian_rel"
+	culture="gogossosi"
+
+	father=1000352
+
+	7882.1.1 = {birth="7882.1.1"}
+	7898.1.1 = {add_trait=poor_warrior}
+	7917.1.1 = {death="7917.1.1"}
+}
+1004352 = {
+	name="Эйликс"	# a lord
+	dynasty=723352
+
+	religion="valyrian_rel"
+	culture="gogossosi"
+
+	father=1001352
+
+	7911.1.1 = {birth="7911.1.1"}
+	7927.1.1 = {add_trait=trained_warrior}
+	7950.1.1 = {
+		add_trait = has_red_death 
+		death = {
+			death_reason = death_trait
+		}
+	}
+}
+1006352 = {
+	name="Джейкар"	# a lord
+	dynasty=723352
+
+	religion="valyrian_rel"
+	culture="gogossosi"
+
+	father=1004352
+
+	7935.1.1 = {birth="7935.1.1"}
+	7950.1.1 = {
+		add_trait = has_red_death 
+		death = {
+			death_reason = death_trait
+		}
+	}
+}
+
+### House Brenaris
+11000351 = {
+	name="Каво"	# a lord
+	dynasty=723351
+
+	religion="valyrian_rel"
+	culture="gogossosi"
+
+	7848.1.1 = {birth="7848.1.1"}
+	7864.1.1 = {add_trait=poor_warrior}
+	7902.1.1 = {death="7902.1.1"}
+}
+11001351 = {
+	name="Вогарро"	# a lord
+	dynasty=723351
+
+	religion="valyrian_rel"
+	culture="gogossosi"
+
+	father=11000351
+
+	7880.1.1 = {birth="7880.1.1"}
+	7896.1.1 = {add_trait=poor_warrior}
+	7938.1.1 = {death="7938.1.1"}
+}
+11007351 = {
+	name="Орис"	# a lord
+	dynasty=723351
+
+	religion="valyrian_rel"
+	culture="gogossosi"
+
+	father=11001351
+
+	7914.1.1 = {birth="7914.1.1"}
+	7930.1.1 = {add_trait=master_warrior}
+	7950.1.1 = {
+		add_trait = has_red_death 
+		death = {
+			death_reason = death_trait
+		}
+	}
+}
+11008351 = {
+	name="Орис"	# a lord
+	dynasty=723351
+
+	religion="valyrian_rel"
+	culture="gogossosi"
+
+	father=11007351
+
+	7932.1.1 = {birth="7932.1.1"}
+	7948.1.1 = {add_trait=poor_warrior}
+	7950.1.1 = {
+		add_trait = has_red_death 
+		death = {
+			death_reason = death_trait
+		}
+	}
+}

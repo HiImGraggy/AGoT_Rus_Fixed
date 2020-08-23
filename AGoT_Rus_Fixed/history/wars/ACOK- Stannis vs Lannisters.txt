@@ -1,0 +1,44 @@
+name = "Война Станниса Баратеона за Железный Трон"
+
+casus_belli={
+	casus_belli=claim_iron_throne_ACOK
+	actor=4317
+	recipient=9316
+	landed_title=e_iron_throne
+	date=8299.3.3
+}
+
+8299.3.3 = {
+	add_defender = 9316 #Joffrey Baratheon
+	add_defender = 190 #Tywin Lannister
+	add_defender = 1253 	# Mace Tyrell
+	add_attacker = 4317		# Stannis Baratheon
+	# add_attacker = 281		# Alester Florent
+	# add_attacker = 2030028	# House Chyterring
+	# add_attacker = 77152	# House Follard
+	# add_attacker = 24 		# House Farring
+	# add_attacker = 77153 	# House Massey
+	# #add_attacker = 3517042 	# House Brune of Brownhollow
+	# #add_attacker = 2029042 	# House Brune of Dyre Den
+}
+8299.6.1 = {
+	
+}
+8299.7.1 = {
+	# add_attacker = 1270		#Meadows
+	# add_attacker = 2031028  #Chyttering
+	# add_defender = 204  	#Phillip Foote
+	# add_defender = 319 		#Ralph Buckler
+	# add_defender = 330 		#Estermont
+	# add_defender = 100310 	#Cafferen
+	# add_defender = 342304	#Trant
+	# add_defender = 200323	#Staedmon
+	# add_defender = 322361 	#Swygert
+	# add_defender = 3316     #Connington
+}
+8300.1.1 = {
+	rem_defender = 190 	#Tywin Lannister
+	rem_defender = 1253 	# Mace Tyrell
+	rem_defender = 9316 	#Joffrey Baratheon
+	rem_attacker = 4317		# Stannis Baratheon
+}

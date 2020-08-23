@@ -1,0 +1,30 @@
+name = "Восстание Железнорожденных"
+
+casus_belli={
+	casus_belli=bid_for_independence_CW
+	actor=18107
+	recipient=77030
+	#landed_title=e_iron_throne
+	date=8211.1.1
+}
+
+# casus_belli={
+	# casus_belli=dejure_kingdom_claim_EMP
+	# actor=77030
+	# recipient=1107
+	# landed_title=e_iron_isles
+	# date=8211.1.1
+# }
+
+8211.1.1 = {
+	add_defender = 77030 #Aerys Targaryen
+	add_attacker = 18107 # Dagon Greyjoy
+}
+
+8216.1.1 = {
+	rem_defender = 77030 #Aerys Targaryen
+	rem_attacker= 18107 # Dagon Greyjoy
+}
+
+
+                                                                                                                                                                                                                                                                                                                                   

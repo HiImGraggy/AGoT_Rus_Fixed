@@ -1,0 +1,1992 @@
+#############################
+### Major Merchant Houses ###
+#############################
+### House Tumitis
+344300544 = {
+	name="Пинто"	# a lord
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+
+	7828.1.1 = {birth="7828.1.1"}
+	7879.1.1 = {death="7879.1.1"}
+}
+343300544 = {
+	name="Дензо"	# a lord
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=344300544
+
+	7851.1.1 = {birth="7851.1.1"}
+	7909.1.1 = {death="7909.1.1"}
+}
+342300544 = {
+	name="Коллио"	# a lord
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=343300544
+
+	7878.1.1 = {birth="7878.1.1"}
+	7930.1.1 = {death="7930.1.1"}
+}
+341300544 = {
+	name="Орделло"	# a lord
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=342300544
+
+	7903.1.1 = {birth="7903.1.1"}
+	7955.1.1 = {death="7955.1.1"}
+}
+340300544 = {
+	name="Роро"	# a lord
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=341300544
+
+	7929.1.1 = {birth="7929.1.1"}
+	7970.1.1 = {death="7970.1.1"}
+}
+155300544 = {
+	name="Дензо"	# a lord
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=340300544
+	
+	7963.1.1 = {birth="7963.1.1"}
+	8024.1.1 = {death="8024.1.1"}
+}
+100300544 = {
+	name="Донифос"	# a lord
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=155300544
+
+	7994.1.1 = {birth="7994.1.1"}
+	8016.1.1 = {add_trait=poor_warrior}
+	8046.1.1 = {death="8046.1.1"}
+}
+101300544 = {
+	name="Якен"	# a lord
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=100300544
+
+	8018.1.1 = {birth="8018.1.1"}
+	8034.1.1 = {add_trait=trained_warrior}
+	8079.1.1 = {death="8079.1.1"}
+}
+106300544 = {
+	name="Орделло"	# a lord
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=101300544
+
+	8045.1.1 = {birth="8045.1.1"}
+	8061.1.1 = {add_trait=skilled_warrior}
+	8111.1.1 = {death="8111.1.1"}
+}
+110300544 = {
+	name="Пинто"	# a lord
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=106300544
+
+	8067.1.1 = {birth="8067.1.1"}
+	8083.1.1 = {add_trait=trained_warrior}
+	8134.1.1 = {death = {death_reason = death_accident}}
+}
+111300544 = {
+	name="Изембаро"	# not a lord
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=106300544
+
+	8068.1.1 = {birth="8068.1.1"}
+	8084.1.1 = {add_trait=poor_warrior}
+	8105.1.1 = {death="8105.1.1"}
+}
+113300544 = {
+	name="Пинто"	# Leader of Three Daughters
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=110300544
+
+	8095.1.1 = {birth="8095.1.1"}
+	8146.1.1 = {death="8146.1.1"}
+}
+114300544 = {
+	name="Тормо"	# a lord
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=110300544
+
+	8094.1.1 = {birth="8094.1.1"}
+	8110.1.1 = {add_trait=poor_warrior}
+	8135.1.1 = {death="8135.1.1"}
+}
+116300544 = {
+	name="Люсерра"	# a lord
+	female=yes
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=111300544
+
+	8090.1.1 = {birth="8090.1.1"}
+	8141.1.1 = {death="8141.1.1"}
+}
+216300544 = {
+	name="Олло"
+
+	religion="trios"
+	culture="tyroshi"
+
+	8090.1.1 = {birth="8090.1.1"}
+	8106.1.1 = {add_trait=poor_warrior}
+	8108.1.1 = {add_spouse=116300544}
+	8141.1.1 = {death="8141.1.1"}
+}
+117300544 = {
+	name="Феррего"	# a lord
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=216300544
+	mother=116300544
+
+	8117.1.1 = {birth="8117.1.1"}
+	8133.1.1 = {add_trait=trained_warrior}
+	8167.1.1 = {death="8167.1.1"}
+}
+118300544 = {
+	name="Аллакво"	# a lord
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=117300544
+
+	8146.1.1 = {birth="8146.1.1"}
+	8162.1.1 = {add_trait=poor_warrior}
+	8179.1.1 = {death="8179.1.1"}
+}
+121300544 = {
+	name="Орделло"	# a lord
+	dynasty=300544
+	
+	martial=8
+	stewardship=8
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=118300544
+	
+	add_trait=ambitious
+
+	8166.1.1 = {birth="8166.1.1"}
+	8182.1.1 = {add_trait=trained_warrior}
+	8234.1.1 = {death="8234.1.1"}
+}
+126300544 = {
+	name="Эззелино"	# a lord
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=121300544
+
+	8189.1.1 = {birth="8189.1.1"}
+	8205.1.1 = {add_trait=skilled_warrior}
+	8250.1.1 = {death="8250.1.1"}
+}
+150300544 = {
+	name="Кира"	# Canon, married Valarr/Дейрон Targaryen
+	female=yes
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=121300544
+	
+	add_trait=fair
+
+	8190.1.1 = {
+		birth="8190.1.1"
+		effect = { 
+			fertility = -0.4
+		}
+	}
+	8250.1.1 = {death="8250.1.1"}
+}
+127300544 = {
+	name="Пинто"	# a lord
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=126300544
+
+	8208.1.1 = {birth="8208.1.1"}
+	8224.1.1 = {add_trait=poor_warrior}
+	8253.1.1 = {death="8253.1.1"}
+}
+128300544 = {
+	name="Моредея"	# not a lord
+	female=yes
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=126300544
+
+	8210.1.1 = {birth="8210.1.1"}
+	8290.1.1 = {death="8290.1.1"}
+}
+129300544 = {
+	name="Тагганаро"	# a lord
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=127300544
+
+	8235.1.1 = {birth="8235.1.1"}
+	8251.1.1 = {add_trait=trained_warrior}
+	8253.1.1 = {add_spouse=229300544}
+	8274.1.1 = {death="8274.1.1"}
+}
+229300544 = {
+	name="Орбела"
+	female=yes
+
+	religion="trios"
+	culture="tyroshi"
+
+	8235.1.1 = {birth="8235.1.1"}
+	8274.1.1 = {death="8274.1.1"}
+}
+125300544 = {
+	name="Морео"	# Canon, shipped Catelyn to Kings Landing, not a lord
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=127300544
+
+	8248.1.1 = {birth="8248.1.1"}
+	8264.1.1 = {
+		add_trait=trained_warrior
+		add_trait=greedy
+	}
+}
+130300544 = {
+	name="Ланна"	# not a lord
+	female=yes
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=129300544
+	mother=229300544
+
+	8256.1.1 = {birth="8256.1.1"}
+}
+131300544 = {
+	name="Морео"	# a lord
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=129300544
+	mother=229300544
+
+	8258.1.1 = {birth="8258.1.1"}
+	8274.1.1 = {add_trait=poor_warrior}
+}
+132300544 = {
+	name="Трегар"	# not a lord
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=129300544
+	mother=229300544
+
+	8260.1.1 = {birth="8260.1.1"}
+	8276.1.1 = {add_trait=skilled_warrior}
+}
+133300544 = {
+	name="Терро"	# not a lord
+	dynasty=300544
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=129300544
+	mother=229300544
+
+	8263.1.1 = {birth="8263.1.1"}
+	8279.1.1 = {add_trait=poor_warrior}
+}
+
+### House Adarys
+345300543 = {
+	name="Кварро"	# a lord
+	dynasty=300543
+
+	religion="trios"
+	culture="tyroshi"
+
+	7811.1.1 = {birth="7811.1.1"}
+	7869.1.1 = {death="7869.1.1"}
+}
+344300543 = {
+	name="Эззелино"	# a lord
+	dynasty=300543
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=345300543
+
+	7830.1.1 = {birth="7830.1.1"}
+	7888.1.1 = {death="7888.1.1"}
+}
+343300543 = {
+	name="Гролео"	# a lord
+	dynasty=300543
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=344300543
+
+	7854.1.1 = {birth="7854.1.1"}
+	7911.1.1 = {death="7911.1.1"}
+}
+342300543 = {
+	name="Оррин"	# a lord
+	dynasty=300543
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=343300543
+
+	7875.1.1 = {birth="7875.1.1"}
+	7933.1.1 = {death="7933.1.1"}
+}
+341300543 = {
+	name="Олло"	# a lord
+	dynasty=300543
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=342300543
+
+	7901.1.1 = {birth="7901.1.1"}
+	7962.1.1 = {death="7962.1.1"}
+}
+340300543 = {
+	name="Бегго"	# a lord
+	dynasty=300543
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=341300543
+
+	7926.1.1 = {birth="7926.1.1"}
+	7974.1.1 = {death="7974.1.1"}
+}
+150300543 = {
+	name="Беличо"	# a lord
+	dynasty=300543
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=340300543
+
+	7960.1.1 = {birth="7960.1.1"}
+	8028.1.1 = {death="8028.1.1"}
+}
+100300543 = {
+	name="Маллакво"	# a lord, Archon of Tyrosh who went to Rogar Baratheon's wedding
+	dynasty=300543
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=150300543
+
+	8012.1.1 = {birth="8012.1.1"}
+	8028.1.1 = {add_trait=poor_warrior}
+	8058.1.1 = {death="8058.1.1"}
+}
+101300543 = {
+	name="Кира"	# Canon, married Оррин Baratheon
+	female=yes
+	dynasty=300543
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=100300543
+
+	add_trait=fair
+	add_trait=gregarious
+	add_trait=lustful
+
+	8034.1.1 = {birth="8034.1.1"}
+	8075.1.1 = {death="8075.1.1"}
+}
+103300543 = {
+	name="Рогго"	# a lord
+	dynasty=300543
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=100300543
+
+	8040.1.1 = {birth="8040.1.1"}
+	8056.1.1 = {add_trait=poor_warrior}
+	8098.1.1 = {death="8098.1.1"}
+}
+108300543 = {
+	name="Меро"	# a lord
+	dynasty=300543
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=103300543
+
+	8066.1.1 = {birth="8066.1.1"}
+	8082.1.1 = {add_trait=poor_warrior}
+	8116.1.1 = {death="8116.1.1"}
+}
+109300543 = {
+	name="Лото"	# a lord
+	dynasty=300543
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=108300543
+
+	8100.1.1 = {birth="8100.1.1"}
+	8116.1.1 = {add_trait=trained_warrior}
+	8154.1.1 = {death="8154.1.1"}
+}
+113300543 = {
+	name="Мералин"	# a lord
+	dynasty=300543
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=109300543
+
+	8126.1.1 = {birth="8126.1.1"}
+	8142.1.1 = {add_trait=trained_warrior}
+	8164.1.1 = {death="8164.1.1"}
+}
+117300543 = {
+	name="Арео"	# a lord
+	dynasty=300543
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=113300543
+
+	8152.1.1 = {birth="8152.1.1"}
+	8168.1.1 = {add_trait=poor_warrior}
+	8203.1.1 = {death="8203.1.1"}
+}
+120300543 = {
+	name="Баян"	# a lord
+	dynasty=300543
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=117300543
+
+	8178.1.1 = {birth="8178.1.1"}
+	8194.1.1 = {add_trait=trained_warrior}
+	8196.1.1 = {add_spouse=220300543}
+	8245.1.1 = {death="8245.1.1"}
+}
+220300543 = {
+	name="Серала"
+	female=yes
+
+	religion="trios"
+	culture="tyroshi"
+
+	8178.1.1 = {birth="8178.1.1"}
+	8245.1.1 = {death="8245.1.1"}
+}
+122300543 = {
+	name="Трегар"	# a lord
+	dynasty=300543
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=120300543
+	mother=220300543
+
+	8205.1.1 = {birth="8205.1.1"}
+	8221.1.1 = {add_trait=poor_warrior}
+	8247.1.1 = {death="8247.1.1"}
+}
+600000059 = {
+	name="Алекво"	# Canon, Ninepenny King
+	dynasty = 300543
+	
+	religion="trios"
+	culture="tyroshi"
+	
+	martial=2
+	diplomacy=7
+	intrigue=5
+	stewardship=5
+	add_trait="scholar"
+	add_trait="ambitious"
+	add_trait="charismatic_negotiator"
+	
+	father=120300543
+	mother=220300543
+	
+	8229.1.1={birth="8229.1.1"}
+	8255.1.1 = {
+		give_nickname = nick_silvertounge
+		add_spouse = 126300533
+		effect = { 
+			set_character_flag = band_of_nine
+			liege = {
+				reverse_opinion = {
+					who = ROOT
+					modifier = opinion_band_of_nine
+					years = 20
+				}
+			}	
+			spouse = {
+				opinion = {
+					who = ROOT
+					modifier = opinion_forced_marriage
+				}
+			}
+		} 
+	}
+	8259.1.1={
+		effect = {
+			if = {
+				limit = { has_landed_title = c_tyrosh }
+				b_tyrosh = { gain_title = ROOT }
+			}	
+		}
+	}
+	8265.6.1 = { 
+		death = {
+			death_reason = death_murder
+			killer = 126300533 #His Queen
+		}
+	}
+}
+123300543 = {
+	name="Йорко"	# not a lord
+	dynasty=300543
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=120300543
+	mother=220300543
+
+	8207.1.1 = {birth="8207.1.1"}
+	8223.1.1 = {add_trait=trained_warrior}
+	8225.1.1 = {add_spouse=223300543}
+	8276.1.1 = {death="8276.1.1"}
+}
+223300543 = {
+	name="Якея"
+	female=yes
+
+	religion="trios"
+	culture="tyroshi"
+
+	8207.1.1 = {birth="8207.1.1"}
+	8276.1.1 = {death="8276.1.1"}
+}
+124300543 = {
+	name="Баян"	# not a lord
+	dynasty=300543
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=123300543
+	mother=223300543
+
+	8234.1.1 = {birth="8234.1.1"}
+	8250.1.1 = {add_trait=skilled_warrior}
+	8276.1.1 = {death = {death_reason = death_murder}}
+}
+125300543 = {
+	name="Луко"	# a lord
+	dynasty=300543
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=123300543
+	mother=223300543
+
+	8236.1.1 = {birth="8236.1.1"}
+	8252.1.1 = {add_trait=trained_warrior}
+	8254.1.1 = {add_spouse=225300543}
+}
+225300543 = {
+	name="Йорка"
+	female=yes
+
+	religion="trios"
+	culture="tyroshi"
+
+	8236.1.1 = {birth="8236.1.1"}
+	8299.1.1 = {death="8299.1.1"}
+}
+126300543 = {
+	name="Брея"	# not a lord
+	female=yes
+	dynasty=300543
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=125300543
+	mother=225300543
+
+	8264.1.1 = {birth="8264.1.1"}
+}
+127300543 = {
+	name="Тихо"	# not a lord
+	dynasty=300543
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=125300543
+	mother=225300543
+
+	8267.1.1 = {birth="8267.1.1"}
+	8283.1.1 = {add_trait=skilled_warrior}
+	8298.1.1 = {death="8298.1.1"}
+}
+128300543 = {
+	name="Мирмеллиос"	# not a lord
+	female=yes
+	dynasty=300543
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=125300543
+	mother=225300543
+
+	8268.1.1 = {birth="8268.1.1"}
+}
+129300543 = {
+	name="Кварро"	# not a lord
+	dynasty=300543
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=125300543
+	mother=225300543
+
+	8270.1.1 = {birth="8270.1.1"}
+	8271.1.1 = {death = {death_reason = death_murder}}
+}
+
+### House Uhoris
+345300542 = {
+	name="Феррего"	# a lord
+	dynasty=300542
+
+	religion="trios"
+	culture="tyroshi"
+
+	7819.1.1 = {birth="7819.1.1"}
+	7878.1.1 = {death="7878.1.1"}
+}
+344300542 = {
+	name="Гилоро"	# a lord
+	dynasty=300542
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=345300542
+
+	7843.1.1 = {birth="7843.1.1"}
+	7903.1.1 = {death="7903.1.1"}
+}
+343300542 = {
+	name="Феррего"	# a lord
+	dynasty=300542
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=344300542
+
+	7868.1.1 = {birth="7868.1.1"}
+	7920.1.1 = {death="7920.1.1"}
+}
+342300542 = {
+	name="Оро"	# a lord
+	dynasty=300542
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=343300542
+
+	7890.1.1 = {birth="7890.1.1"}
+	7942.1.1 = {death="7942.1.1"}
+}
+341300542 = {
+	name="Беличо"	# a lord
+	dynasty=300542
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=342300542
+
+	7908.1.1 = {birth="7908.1.1"}
+	7954.1.1 = {death="7954.1.1"}
+}
+340300542 = {
+	name="Иллирио"	# a lord
+	dynasty=300542
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=341300542
+
+	7931.1.1 = {birth="7931.1.1"}
+	7980.1.1 = {death="7980.1.1"}
+}
+150300542 = {
+	name="Вогарро"	# a lord
+	dynasty=300542
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=340300542
+
+	7958.1.1 = {birth="7958.1.1"}
+	8019.1.1 = {death="8019.1.1"}
+}
+100300542 = {
+	name="Морео"	# a lord
+	dynasty=300542
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=150300542
+
+	7991.1.1 = {birth="7991.1.1"}
+	8017.1.1 = {add_trait=poor_warrior}
+	8052.1.1 = {death="8052.1.1"}
+}
+102300542 = {
+	name="Тихо"	# a lord
+	dynasty=300542
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=100300542
+
+	8025.1.1 = {birth="8025.1.1"}
+	8041.1.1 = {add_trait=poor_warrior}
+	8071.1.1 = {death="8071.1.1"}
+}
+105300542 = {
+	name="Сирио"	# a lord
+	dynasty=300542
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=102300542
+
+	8049.1.1 = {birth="8049.1.1"}
+	8065.1.1 = {add_trait=trained_warrior}
+	8108.1.1 = {death="8108.1.1"}
+}
+106300542 = {
+	name="Гилоро"	# Leader of Three Daughters
+	dynasty=300542
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=102300542
+
+	8050.1.1 = {birth="8050.1.1"}
+	8066.1.1 = {add_trait=poor_warrior}
+	8100.1.1 = {death="8100.1.1"}
+}
+112300542 = {
+	name="Тормо"	# a lord
+	dynasty=300542
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=105300542
+
+	8080.1.1 = {birth="8080.1.1"}
+	8096.1.1 = {add_trait=poor_warrior}
+	8136.1.1 = {death="8136.1.1"}
+}
+113300542 = {
+	name="Бегго"	# a lord
+	dynasty=300542
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=112300542
+
+	8109.1.1 = {birth="8109.1.1"}
+	8125.1.1 = {add_trait=trained_warrior}
+	8165.1.1 = {death="8165.1.1"}
+}
+118300542 = {
+	name="Кварро"	# a lord
+	dynasty=300542
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=113300542
+
+	8133.1.1 = {birth="8133.1.1"}
+	8149.1.1 = {add_trait=trained_warrior}
+	8178.1.1 = {death="8178.1.1"}
+}
+125300542 = {
+	name="Гилено"	# a lord
+	dynasty=300542
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=118300542
+	
+	8164.1.1 = {birth="8164.1.1"}
+	8180.1.1 = {add_trait=poor_warrior}
+	8224.1.1 = {death="8224.1.1"}
+}
+128300542 = {
+	name="Орделло"	# a lord
+	dynasty=300542
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=125300542
+
+	8191.1.1 = {birth="8191.1.1"}
+	8207.1.1 = {add_trait=poor_warrior}
+	8209.1.1 = {add_spouse=228300542}
+	8237.1.1 = {death="8237.1.1"}
+}
+228300542 = {
+	name="Тиха"
+	female=yes
+
+	religion="trios"
+	culture="tyroshi"
+
+	8191.1.1 = {birth="8191.1.1"}
+	8237.1.1 = {death="8237.1.1"}
+}
+129300542 = {
+	name="Кварро"	# a lord
+	dynasty=300542
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=128300542
+	mother=228300542
+
+	8220.1.1 = {birth="8220.1.1"}
+	8236.1.1 = {add_trait=skilled_warrior}
+	8238.1.1 = {add_spouse=229300542}
+	8293.1.1 = {death="8293.1.1"}
+}
+229300542 = {
+	name="Нарба"
+	female=yes
+
+	religion="trios"
+	culture="tyroshi"
+
+	8220.1.1 = {birth="8220.1.1"}
+	8293.1.1 = {death="8293.1.1"}
+}
+130300542 = {
+	name="Уна"	# not a lord
+	female=yes
+	dynasty=300542
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=128300542
+	mother=228300542
+
+	8223.1.1 = {birth="8223.1.1"}
+	8291.1.1 = {death="8291.1.1"}
+}
+175300542 = {
+	name="Роро"	# Canon, a pirate
+	dynasty=300542
+	
+	martial = 3
+	stewardship = 2
+	diplomacy = 4
+	learning = 2
+	intrigue = 4
+
+	religion="trios"
+	culture="tyroshi"
+	
+	add_trait=skilled_tactician
+	add_trait=greedy
+	add_trait=gregarious
+	add_trait=erudite
+	add_trait=brave
+	add_trait=ambitious
+	
+	father=128300542
+	mother=228300542
+	
+	8227.1.1 = {birth="8227.1.1"}
+	8243.1.1 = {add_trait=trained_warrior}
+	8250.1.1 = {
+		add_trait = pirate
+		effect = { 
+			religion = pirate 
+			add_artifact = small_flagship
+			new_artifact = { set_name = Cobblecat }
+		}
+	}
+	8270.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 121404 #Nightswatch
+		}
+	}
+}
+131300542 = {
+	name="Коссома"	# not a lord
+	female=yes
+	dynasty=300542
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=129300542
+	mother=229300542
+
+	8240.1.1 = {birth="8240.1.1"}
+	8298.1.1 = {death="8298.1.1"}
+}
+132300542 = {
+	name="Мирмелло"	# a lord
+	dynasty=300542
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=129300542
+	mother=229300542
+
+	8242.1.1 = {birth="8242.1.1"}
+	8258.1.1 = {add_trait=trained_warrior}
+	8260.1.1 = {add_spouse=232300542}
+	8296.1.1 = {death="8296.1.1"}
+}
+232300542 = {
+	name="Нохия"
+	female=yes
+
+	religion="trios"
+	culture="tyroshi"
+
+	8242.1.1 = {birth="8242.1.1"}
+	8296.1.1 = {death="8296.1.1"}
+}
+133300542 = {
+	name="Гролео"	# not a lord
+	dynasty=300542
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=129300542
+	mother=229300542
+
+	8243.1.1 = {birth="8243.1.1"}
+	8259.1.1 = {add_trait=trained_warrior}
+	8291.1.1 = {death="8291.1.1"}
+}
+134300542 = {
+	name="Орделло"	# not a lord
+	dynasty=300542
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=129300542
+	mother=229300542
+
+	8245.1.1 = {birth="8245.1.1"}
+	8261.1.1 = {add_trait=skilled_warrior}
+	8270.1.1 = {death="8270.1.1"}
+}
+135300542 = {
+	name="Мелларио"	# not a lord
+	female=yes
+	dynasty=300542
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=132300542
+	mother=232300542
+
+	8266.1.1 = {birth="8266.1.1"}
+}
+136300542 = {
+	name="Оро"	# a lord
+	dynasty=300542
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=132300542
+	mother=232300542
+
+	8267.1.1 = {birth="8267.1.1"}
+	8283.1.1 = {add_trait=trained_warrior}
+}
+
+### House Ryndoon
+345300533 = {
+	name="Рогго"	# a lord
+	dynasty=300533
+
+	religion="trios"
+	culture="tyroshi"
+
+	7815.1.1 = {birth="7815.1.1"}
+	7875.1.1 = {death="7875.1.1"}
+}
+344300533 = {
+	name="Луко"	# a lord
+	dynasty=300533
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=345300533
+
+	7832.1.1 = {birth="7832.1.1"}
+	7911.1.1 = {death="7911.1.1"}
+}
+343300533 = {
+	name="Орделло"	# a lord
+	dynasty=300533
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=344300533
+
+	7855.1.1 = {birth="7855.1.1"}
+	7900.1.1 = {death="7900.1.1"}
+}
+342300533 = {
+	name="Тормо"	# a lord
+	dynasty=300533
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=343300533
+
+	7878.1.1 = {birth="7878.1.1"}
+	7929.1.1 = {death="7929.1.1"}
+}
+341300533 = {
+	name="Трегар"	# a lord
+	dynasty=300533
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=342300533
+
+	7899.1.1 = {birth="7899.1.1"}
+	7952.1.1 = {death="7952.1.1"}
+}
+340300533 = {
+	name="Рогго"	# a lord
+	dynasty=300533
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=341300533
+
+	7929.1.1 = {birth="7929.1.1"}
+	7968.1.1 = {death="7968.1.1"}
+}
+150300533 = {
+	name="Иллирио"	# a lord
+	dynasty=300533
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=340300533
+
+	7961.1.1 = {birth="7961.1.1"}
+	8015.1.1 = {death="8015.1.1"}
+}
+100300533 = {
+	name="Гролео"	# a lord
+	dynasty=300533
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=150300533
+
+	7985.1.1 = {birth="7985.1.1"}
+	8021.1.1 = {add_trait=poor_warrior}
+	8041.1.1 = {death="8041.1.1"}
+}
+102300533 = {
+	name="Феррего"	# a lord
+	dynasty=300533
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=100300533
+
+	8025.1.1 = {birth="8025.1.1"}
+	8041.1.1 = {add_trait=poor_warrior}
+	8062.1.1 = {death = {death_reason = death_battle}}
+}
+103300533 = {
+	name="Тиха"	# a lord
+	female=yes
+	dynasty=300533
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=102300533
+
+	8054.1.1 = {birth="8054.1.1"}
+	8097.1.1 = {death="8097.1.1"}
+}
+104300533 = {
+	name="Мералин"	# a lord
+	dynasty=300533
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=102300533
+
+	8055.1.1 = {birth="8055.1.1"}
+	8071.1.1 = {add_trait=skilled_warrior}
+	8096.1.1 = {add_trait=widowed}
+	8106.1.1 = {death="8106.1.1"}
+}
+108300533 = {
+	name="Кварро"	# a lord
+	dynasty=300533
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=104300533
+	
+	8076.1.1 = {birth="8076.1.1"}
+	8094.1.1 = {add_trait=trained_warrior}
+	8134.1.1 = {death="8134.1.1"}
+}
+105030533 = {
+	name="Ракаллио"	# Canon, a lord, Admiral and Later Pirate King
+	dynasty=300533
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=104300533
+	
+	add_trait = skilled_tactician
+	add_trait = tall
+	add_trait = groomed
+	add_trait = gluttonous
+	add_trait = gregarious
+	add_trait = ambitious
+	add_trait = rude
+	add_trait = deceitful
+	add_trait = charitable
+	add_trait = drunkard
+	add_trait = lunatic
+
+	8079.1.1 = {birth="8079.1.1"}
+	8095.1.1 = {add_trait=skilled_warrior}
+	8132.1.1 = { #Goes Pirate
+		effect = { religion = pirate }
+		add_trait = pirate
+	}
+	8140.1.1 = {
+		death="8140.1.1"
+		religion = pirate
+	}
+}
+107300533 = {
+	name="Беллонара"	# Sister of Archon that went to Maiden's Day Cattle Show in King's Landing, not a lord
+	female=yes
+	dynasty=300533
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=104300533
+
+	8105.1.1 = {birth="8105.1.1"} #Needs to be under 30 in 133 AC
+	8156.1.1 = {death="8156.1.1"}
+}
+109300533 = {
+	name="Арео"	# a lord
+	dynasty=300533
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=108300533
+
+	8098.1.1 = {birth="8098.1.1"}
+	8114.1.1 = {add_trait=poor_warrior}
+	8154.1.1 = {death="8154.1.1"}
+}
+114300533 = {
+	name="Денио"	# a lord
+	dynasty=300533
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=109300533
+
+	8125.1.1 = {birth="8125.1.1"}
+	8141.1.1 = {add_trait=trained_warrior}
+	8159.1.1 = {death="8159.1.1"}
+}
+118300533 = {
+	name="Баян"	# a lord
+	dynasty=300533
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=114300533
+
+	8147.1.1 = {birth="8147.1.1"}
+	8163.1.1 = {add_trait=skilled_warrior}
+	8218.1.1 = {death="8218.1.1"}
+}
+122300533 = {
+	name="Иллирио"	# a lord
+	dynasty=300533
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=118300533
+
+	8176.1.1 = { birth="8176.1.1" }
+	8192.1.1 = {add_trait=skilled_warrior}
+	8228.1.1 = {death="8228.1.1"}
+}
+123300533 = {
+	name="Рогго"	# a lord
+	dynasty=300533
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=122300533
+
+	8198.1.1 = {birth="8198.1.1"}
+	8214.1.1 = {add_trait=skilled_warrior}
+	8277.1.1 = {death="8277.1.1"}
+}
+125300533 = {
+	name="Лото"	# not a lord
+	dynasty=300533
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=122300533
+
+	8202.1.1 = {birth="8202.1.1"}
+	8218.1.1 = {add_trait=poor_warrior}
+	8220.1.1 = {add_spouse=225300533}
+	8256.1.1 = {death="8256.1.1"}
+}
+225300533 = {
+	name="Дорея"
+	female=yes
+
+	religion="trios"
+	culture="tyroshi"
+
+	8202.1.1 = {birth="8202.1.1"}
+	8256.1.1 = {death="8256.1.1"}
+}
+126300533 = {
+	name="Нарба"	# not a lord, Queen of Алекво Goldentongue
+	female=yes
+	dynasty=300533
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=125300533
+	mother=225300533
+	
+	add_trait = proud
+	add_trait = fair
+	add_trait = ruthless
+	add_trait = intricate_webweaver
+	
+	8233.1.1 = {birth="8233.1.1"}
+	8265.6.1 = { #Kills her husband
+		#add_trait=dishonorable1
+		effect = {		
+			set_variable = { which = "dishonorable" value = 10 }
+			hidden_tooltip = { character_event = { id = maintenance.3 } }#dishonour trait
+		}
+	}
+	8296.1.1 = {death="8296.1.1"}
+}
+127300533 = {
+	name="Олло"	# a lord
+	dynasty=300533
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=125300533
+	mother=225300533
+
+	8236.1.1 = {birth="8236.1.1"}
+	8252.1.1 = {add_trait=skilled_warrior}
+}
+128300533 = {
+	name="Моредея"	# not a lord
+	female=yes
+	dynasty=300533
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=125300533
+	mother=225300533
+
+	8238.1.1 = {birth="8238.1.1"}
+}
+
+### House Zokan
+344300024 = {
+	name="Сирио"	# a lord
+	dynasty=300024
+
+	religion="trios"
+	culture="tyroshi"
+
+	7811.1.1 = {birth="7811.1.1"}
+	7898.1.1 = {death="7898.1.1"} #dov
+}
+343300024 = {
+	name="Изембаро"	# a lord
+	dynasty=300024
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=344300024
+
+	7833.1.1 = {birth="7833.1.1"}
+	7919.1.1 = {death="7919.1.1"}
+}
+342300024 = {
+	name="Гролео"	# a lord
+	dynasty=300024
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=343300024
+
+	7860.1.1 = {birth="7860.1.1"}
+	7935.1.1 = {death="7935.1.1"}
+}
+341300024 = {
+	name="Роро"	# a lord
+	dynasty=300024
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=342300024
+
+	7886.1.1 = {birth="7886.1.1"}
+	7944.1.1 = {death="7944.1.1"}
+}
+340300024 = {
+	name="Луко"	# a lord
+	dynasty=300024
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=341300024
+
+	7910.1.1 = {birth="7910.1.1"}
+	7961.1.1 = {death="7961.1.1"}
+}
+250300024 = {
+	name="Лото"	# a lord
+	dynasty=300024
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=340300024
+
+	7932.1.1 = {birth="7932.1.1"}
+	7985.1.1 = {death="7985.1.1"}
+}
+150300024 = {
+	name="Мирмелло"	# a lord
+	dynasty=300024
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father = 250300024
+
+	7962.1.1 = {birth="7962.1.1"}
+	7993.1.1 = {add_spouse=101300012} #Тиха Arsenys
+	7999.1.1 = {
+		effect = {
+			if = {
+				limit = {
+					NOT = { year = 8000 }				
+				}
+				character_event = { id = bleeding_years.1 days = 50 }
+			}
+		}
+	}
+	8028.1.1 = {death="8028.1.1"}
+}
+251300024 = {
+	name="Пинто"	# Not a lord
+	dynasty=300024
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father = 250300024
+
+	7964.1.1 = {birth="7964.1.1"}
+	#7982.1.1 = {add_spouse=2501544} #Durrandon Maid
+	8025.1.1 = {death="8025.1.1"}
+}
+100300024 = {
+	name="Иллирио"	# a lord
+	dynasty=300024
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=150300024
+	mother=101300012
+
+	7994.1.1 = {birth="7994.1.1"}
+	8016.1.1 = {add_trait=poor_warrior}
+	8053.1.1 = {death="8053.1.1"}
+}
+102300024 = {
+	name="Тихо"	# a lord
+	dynasty=300024
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=100300024
+
+	8025.1.1 = {birth="8025.1.1"}
+	8041.1.1 = {add_trait=trained_warrior}
+	8065.1.1 = {death="8065.1.1"}
+}
+105300024 = {
+	name="Коллио"	# a lord
+	dynasty=300024
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=102300024
+
+	8053.1.1 = {birth="8053.1.1"}
+	8069.1.1 = {add_trait=trained_warrior}
+	8111.1.1 = {death="8111.1.1"}
+}
+109300024 = {
+	name="Орделло"	# a lord
+	dynasty=300024
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=105300024
+
+	8079.1.1 = {birth="8079.1.1"}
+	8095.1.1 = {add_trait=poor_warrior}
+	8146.1.1 = {death="8146.1.1"}
+}
+110300024 = {
+	name="Олло"	# not a lord
+	dynasty=300024
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=105300024
+
+	8082.1.1 = {birth="8082.1.1"}
+	8098.1.1 = {add_trait=trained_warrior}
+	8146.1.1 = {death="8146.1.1"}
+}
+113300024 = {
+	name="Коссома"	# a lord
+	female=yes
+	dynasty=300024
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=110300024
+
+	8117.1.1 = {birth="8117.1.1"}
+	8185.1.1 = {death="8185.1.1"}
+}
+213300024 = {
+	name="Бегго"
+
+	religion="trios"
+	culture="tyroshi"
+
+	8117.1.1 = {birth="8117.1.1"}
+	8133.1.1 = {add_trait=poor_warrior}
+	8135.1.1 = {add_spouse=113300024}
+	8185.1.1 = {death="8185.1.1"}
+}
+122300024 = {
+	name="Оро"	# a lord
+	dynasty=300024
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=213300024
+	mother=113300024
+
+	8151.1.1 = {birth="8151.1.1"}
+	8167.1.1 = {add_trait=poor_warrior}
+	8203.1.1 = {death="8203.1.1"}
+}
+123300024 = {
+	name="Морео"	# a lord
+	dynasty=300024
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=122300024
+	
+	add_trait = twin
+
+	8170.1.1 = {birth="8170.1.1"}
+	8186.1.1 = {add_trait=poor_warrior}
+	8225.1.1 = {death="8225.1.1"}
+}
+77024496 = {
+	name="Роанна" # Canon, Lady of Tyrosh, married Деймон Blackfyre
+	dynasty=300024
+	female=yes
+
+	religion="trios"
+	culture="tyroshi"
+	
+	father=122300024
+	
+	add_trait = twin
+	
+	8170.1.1={ 
+		birth="8170.1.1" 
+		effect = { fertility = 0.4 } #had many children
+	} 
+	8220.1.1={
+		death="8220.1.1"
+	}
+}
+128300024 = {
+	name="Тихо"	# a lord
+	dynasty=300024
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=123300024
+
+	8196.1.1 = {birth="8196.1.1"}
+	8212.1.1 = {add_trait=master_warrior}
+	8270.1.1 = {death="8270.1.1"}
+}
+130300024 = {
+	name="Гилоро"	# a lord
+	dynasty=300024
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=128300024
+
+	8225.1.1 = {birth="8225.1.1"}
+	8241.1.1 = {add_trait=trained_warrior}
+	8243.1.1 = {add_spouse=230300024}
+	8278.1.1 = {death="8278.1.1"}
+}
+230300024 = {
+	name="Бетариос"
+	female=yes
+
+	religion="trios"
+	culture="tyroshi"
+
+	8225.1.1 = {birth="8225.1.1"}
+	8278.1.1 = {death="8278.1.1"}
+}
+131300024 = {
+	name="Сирио"	# a lord
+	dynasty=300024
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=130300024
+	mother=230300024
+
+	8253.1.1 = {birth="8253.1.1"}
+	8269.1.1 = {add_trait=poor_warrior}
+	8275.1.1 = {
+		add_spouse = 43130024
+	}
+}
+43130024 = {
+	name="Гилора"
+	female=yes
+
+	religion="trios"
+	culture="tyroshi"
+
+	8253.1.1 = {birth="8253.1.1"}
+}
+132300024 = {
+	name="Беллегера"	# not a lord
+	female=yes
+	dynasty=300024
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=130300024
+	mother=230300024
+
+	8256.1.1 = {birth="8256.1.1"}
+}
+133300024 = {
+	name="Пинта"	# not a lord
+	female=yes
+	dynasty=300024
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=130300024
+	mother=230300024
+
+	8259.1.1 = {birth="8259.1.1"}
+	8278.1.1 = {death="8278.1.1"}
+}
+134300024 = {
+	name="Гилоро"	# Brother of Archon of Tyrosh, present at Daenerys-Drogo wedding
+	dynasty=300024
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=130300024
+	mother=230300024
+
+	8260.1.1 = {birth="8260.1.1"}
+	8276.1.1 = {
+		add_trait=poor_warrior
+	}
+}
+105030024 = {	# Daughter of Archon of Tyrosh, fostered by Doran Martell
+	name="Тиша"
+	female = yes
+	dynasty=300024
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=131300024
+	mother=43130024
+
+	8276.1.1 = {birth="8276.1.1"}
+	8286.1.1 = {
+		guardian = 1 #Martell
+	}
+}
+105130024 = {
+	name="Маллакво"
+	dynasty=300024
+
+	religion="trios"
+	culture="tyroshi"
+
+	father=131300024
+	mother=43130024
+
+	8280.1.1 = {birth="8280.1.1"}
+	8296.1.1 = {
+		add_trait=poor_warrior
+	}
+}
+
+########################
+###Tyroshi Dragonlord###
+########################
+###House Urnebar
+100570282 = {
+	name="Джейкар"	# not a lord
+	dynasty=496025
+
+	religion="valyrian_rel"
+	culture="high_valyrian"
+	
+	add_trait = valyrian_steel
+
+	7820.1.1 = {birth="7820.1.1"}
+	7836.1.1 = {add_trait=trained_warrior add_trait=dragon_rider }
+	7878.1.1 = {death="7878.1.1"}
+}
+101570282 = {
+	name="Сиэйлла"	# not a lord
+	female=yes
+	dynasty=496025
+
+	religion="valyrian_rel"
+	culture="high_valyrian"
+
+	father=100570282
+
+	7840.1.1 = {birth="7840.1.1"}
+	7898.1.1 = { #dov
+		death = { 
+			death_reason = death_missing 
+		}
+	}
+}
+600000071 = { # Dragonrider who was in Tyrosh during Doom of Valyria
+	name="Рогар"
+	dynasty=496025
+	
+	religion = valyrian_rel
+	culture="high_valyrian"
+	
+	father=100570282
+	
+	add_trait = "dragon_rider"
+	add_trait = tough_soldier
+	add_trait = skilled_warrior
+	add_trait = wroth
+	add_trait = cruel
+	add_trait = selfish
+	add_trait = valyrian_steel
+	
+	7842.1.1 = {birth="7842.1.1"}
+	7858.1.1 = {add_spouse=101570282}
+	7898.1.1 = {
+		employer=343300024 # Изембаро Zokan
+	}
+	7898.6.1 = { 
+		death = { 
+			death_reason = death_murder
+			killer = 343300024 # Archon Изембаро Zokan
+		}
+	}
+}
+103570282 = {
+	name="Эйгор"	# not a lord
+	dynasty=496025
+
+	religion="valyrian_rel"
+	culture="high_valyrian"
+
+	father=100570282
+
+	7848.1.1 = {birth="7848.1.1"}
+	7864.1.1 = {add_trait=skilled_warrior add_trait=dragon_rider }
+	7898.1.1 = { #dov
+		death = { 
+			death_reason = death_missing 
+		}
+	}
+}
+108570282 = {
+	name="Хейрис"	# not a lord
+	dynasty=496025
+
+	religion="valyrian_rel"
+	culture="high_valyrian"
+
+	father=600000071
+	mother=101570282
+
+	7860.1.1 = {birth="7860.1.1"}
+	7876.1.1 = {
+		add_trait=trained_warrior
+		add_spouse=107570282
+	}
+	7898.1.1 = { #dov
+		death = { 
+			death_reason = death_missing 
+		}
+	}
+}
+107570282 = {
+	name="Висенья"	# not a lord
+	female=yes
+	dynasty=496025
+
+	religion="valyrian_rel"
+	culture="high_valyrian"
+
+	father=600000071
+	mother=101570282
+
+	7864.1.1 = {birth="7864.1.1"}
+	7898.1.1 = { #dov
+		death = { 
+			death_reason = death_missing 
+		}
+	}
+}

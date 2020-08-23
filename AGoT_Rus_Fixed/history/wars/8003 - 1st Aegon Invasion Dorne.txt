@@ -1,0 +1,19 @@
+name = "Вторжение в Дорн"
+
+casus_belli={
+	casus_belli=dejure_kingdom_claim_EMP
+	actor=77000
+	recipient=22001
+	landed_title=e_dorne
+	date=8003.1.1
+}
+
+8003.1.1 = {
+	add_defender = 22001 #Meria Martell
+	add_attacker = 77000 #Aegon I 'the Conqueror'
+}
+
+8013.6.1 = {
+	rem_defender = 22001 #Meria Martell
+	rem_attacker = 77000 #Aegon I 'the Conqueror'
+}                                                                                                                                                                                                                                                                                                                

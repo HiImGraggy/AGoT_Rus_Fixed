@@ -1,0 +1,19 @@
+name = "Завоевание Харвином Жёсткая Рука Речных земель"
+
+casus_belli={
+	casus_belli=invasion_ironborn
+	actor=11366 # Harwyn Hoare
+	recipient=31544 # Arrec Durrandon
+	landed_title=k_riverlands
+	date=7932.6.6
+}
+
+7932.6.6 = {
+	add_defender = 31544 # Arrec Durrandon
+	add_attacker = 11366 # Harwyn Hoare
+}
+
+7933.1.1 = {
+	rem_defender = 31544 # Arrec Durrandon
+	rem_attacker = 11366 # Harwyn Hoare
+}                                                                                                                                                                                                                                                                                                                

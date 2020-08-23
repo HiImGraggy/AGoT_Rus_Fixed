@@ -1,0 +1,28 @@
+name = "Война за независимость Севера"
+
+casus_belli={
+	casus_belli=bid_for_independence_ACOK
+	actor=2059
+	recipient=9316
+	#landed_title=e_iron_throne
+	date=8298.12.20
+}
+
+8298.12.20 = {
+	add_defender = 9316 #Joffrey Baratheon
+	add_defender = 190 #Tywin Lannister
+	add_attacker = 2059 #Robb Stark
+	#add_attacker = 159 #Hoster Tully
+}
+
+8299.3.3 = {
+	add_defender = 1253 	# Mace Tyrell
+}
+
+8299.11.4 = {
+	#rem_defender = 1253 	# Mace Tyrell
+	#rem_defender = 190 #Tywin Lannister
+	#rem_defender = 9316 #Joffrey Baratheon
+	#rem_attacker = 159 #Hoster Tully
+	rem_attacker = 2059 #Robb Stark
+}                                                                                                                                                                                                                                                                                                                                  

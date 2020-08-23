@@ -1,0 +1,215 @@
+#CODE;ENGLISH;x;;;
+obj_become_regent_title;Стать регентом;x;;;
+obj_become_regent_desc;[This.GetTitledFirstName] желает стать регентом [This.GetPossPronoun].;x;;;
+plot_replace_regent_title;Заменить персонажа [Root.GetTitledFirstName] на посту регента.;x;;;
+plot_replace_regent_desc;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] считает, что [From.GetSheHe] был[From.GetEndA] бы лучшим правителем, чем [Root.PlotTarget.GetTitledFirstNameWithDynastyAndTitleNoRegnal], и поэтому долж[From.GetNaEn] стать Регентом правителя, известного как [From.GetTitle] [From.Liege.PrimaryTitle.GetName];x;;;
+plot_replace_regent_decision;Требование стать Регентом;x;;;
+plot_replace_regent_decision_desc;Пришло время потребовать, чтобы [Root.Liege.GetTitle] [Root.Liege.GetFirstName] назвал[Root.Liege.GetEndA] вас своим назначенным регентом, место которого сейчас занимает [Root.PlotTarget.GetTitledFirstName].;x;;;
+ambition_nominate_regent_decision;Просьба сделать Регентом;x;;;
+ambition_nominate_regent_decision_desc;[Root.Liege.GetTitle] [Root.Liege.GetFirstName] в настоящее время не имеет назначенного регента, вы можете отправить [Root.Liege.GetHerHim] прошение, чтобы быть назначенным на эту должность.;x;;;
+EVTTOOLTIPregency.17;Рассмотрит вашу просьбу о назначении регента;x;;;
+plot_replace_regent_duel;Дуэль за регентство в земле [Root.PlotTarget.GetTitledFirstName];x;;;
+plot_replace_regent_duel_desc;[Root.PlotTarget.GetTitledFirstName] по-прежнему регент персонажа [Root.Liege.GetTitle] [Root.Liege.GetFirstName], я должен бросить вызов [Root.PlotTarget.GetHerHim] на дуэль, чтобы решить, кто более достоин этой должности.;x;;;
+plot_replace_regent_plead_case;Просит Ретентство;x;;;
+plot_replace_regent_plead_case_desc;[Root.PlotTarget.GetTitledFirstName] явно недостойный регент для нашего правителя, известного как [Root.Liege.GetTitle] [Root.Liege.GetFirstName]. При достаточной поддержке вы сможете предоставить аргументы в пользу того, чтобы вас сделали регентом при [Root.PlotTarget.GetHerHis] дворе.;x;;;
+plot_replace_regent_ultimatum;Послать ультиматум персонажу [Root.PlotTarget.GetTitledFirstName];x;;;
+plot_replace_regent_ultimatum_desc;Военные действия всегда являются верным способом положить конец неудобному регенту, вы можете отправить ультиматум персонажу [Root.PlotTarget.GetTitledFirstName], для сложения полномочий Регента правителя [Root.Liege.GetTitle] [Root.Liege.GetFirstName], или столкнется с последствиями.;x;;;
+EVTTOOLTIPregency.20;Ультиматум, требующий от персонажа [Root.PlotTarget.GetTitledFirstName] сложить полномочия регента;x;;;
+EVTDESCregency.2;Могущественн[From.GetAyaYy] [From.GetFirstName] - великолепный выбор для регентства в случае моего конца. Все будут подчиняться [From.GetHerHis] приказам, и кто будет противостоять [From.GetHerHim], склонятся перед [From.GetHerHis] драконьим огнём!;x;;;
+EVTOPTAregency.2;Я иногда удивляюсь своим идеям;x;;;
+TOOLTIPregency.2;Страна узнает о вашем решении;x;;;
+EVTDESCregency.3;Всем моим знаменосцам, последние месяцы я размышлял[From.GetEndA], кто займет мое место, если понадобится защищать мой дом, и я решил[From.GetEndA], что самым подходящим выбором будет дракон [FromFrom.GetFirstName]. В случае регентства я приказываю вам всем подчиняться [FromFrom.GetHerHis] желаниям, а также купаться в [FromFrom.GetHerHis] драконьем огне.\nПодпись\n[From.GetTitledFirstName] из Дома [From.GetOnlyDynastyName];x;;;
+EVTOPTAregency.3;Эээ... Что?;x;;;
+EVTDESCregency.4;В то время как [From.GetFirstName] может стать хорошим регентом, многие будут возмущены тем, что находятся под управлением раба;x;;;
+EVTDESCregency.8;[Root.PrimaryTitle.GetFOA], я обеспокоен[From.GetEndA] тем, что [From.PlotTarget.GetTitledFirstName] был[From.PlotTarget.GetEndA] назначен[From.PlotTarget.GetEndA] регентом, я встревожен[From.GetEndA] тем, что [From.PlotTarget.GetSheHe] не подходит и расколет государство. Мои сторонники и я просят лишить [From.PlotTarget.GetHerHis] этой чести, и назначить меня регентом.\nПодпись,\n[From.GetTitledFirstNameoftheHouse];x;;;
+EVTOPTAregency.8;Вы правильно указали, я соглас[GetNaEn];x;;;
+opinion_removed_designated_regent;Лишил[_] меня поста назначенного регента;x;;;
+EVTOPTBregency.8;Нет, [From.PlotTarget.GetTitledFirstName] будет прекрасным регентом;x;;;
+opinion_refused_regent;Отказа[__лся] назначить меня регентом;x;;;
+EVTDESCregency.9;[Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal],\nВаши требования справедливы. Я называю вас регентом земли [From.PrimaryTitle.GetName].\nПодпись,\n[From.GetFirstNameoftheHouse], [From.GetRegnalOrdinal] [From.GetHerHis] имени, [From.GetTitle] [From.PrimaryTitle.GetName];x;;;
+EVTDESCregency.10;С вашей поддержкой [FromFrom.GetTitledFirstNameWithDynastyAndTitleNoRegnal] убедил[FromFrom.GetEndA] персонажа  [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] назначить [FromFrom.GetHerHis] регентом земли [From.PrimaryTitle.GetName].;x;;;
+EVTDESCregency.11;[Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal],\nВозможно, вы и выбраны протектором государства, я опасаюсь, что найдутся другие, готовые оспорить вашу должность регента. Настоящим, я указываю, что [FromFrom.GetTitledFirstNameWithDynastyAndTitleNoRegnal] - мой новый назначенный регент.\nПодпись,\n[From.GetFirstName] из Дома [From.GetOnlyDynastyName], [From.GetRegnalOrdinal] [From.GetHerHis] имени, [From.GetTitle] [From.PrimaryTitle.GetName];x;;;
+EVTDESCregency.12;Благодаря заговору во главе с персоной [FromFrom.GetTitledFirstNameWithDynastyAndTitleNoRegnal], [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] предал[From.GetEndA] ваше доверие и удалил[From.GetEndA] персонажа [FromFrom.PlotTarget.GetTitledFirstNameWithDynastyAndTitleNoRegnal] с [From.GetHerHis] поста назначенного регента!;x;;;
+EVTDESCregency.13;[Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal],\nБоюсь, я долж[From.GetNaEn] отклонить ваше требование. [Root.PlotTarget.GetTitledFirstNameWithDynastyAndTitleNoRegnal] служит стране хорошо и достойно и станет великолепным регентом. Больше не подходите ко мне с этим требованием.\nПодпись,\n[From.GetFirstName] из Дома [From.GetOnlyDynastyName], [From.GetRegnalOrdinal] [From.GetHerHis] имени [From.GetTitle] [From.PrimaryTitle.GetName];x;;;
+EVTDESCregency.14;Несмотря на ваши советы, [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] отказа[From.GetLasLsya] следовать гласу разума. [FromFrom.GetTitledFirstNameWithDynastyAndTitleNoRegnal] не будет назначен[FromFrom.GetEndA] в качестве регента!;x;;;
+EVTDESCregency.15;[Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal],\nКак вы, наверное, слышали, [FromFrom.GetTitledFirstNameWithDynastyAndTitleNoRegnal] сговори[FromFrom.GetLasLsya] с другими лордами королевства, пытаясь отнять ваше законное место назначенного регента. Я, конечно же, отклонил[From.GetEndA] [FromFrom.GetHerHis] абсурдные требования.\nПодпись,\n[From.GetFirstName] из Дома [From.GetOnlyDynastyName], [From.GetRegnalOrdinal] [From.GetHerHis] имени, [From.GetTitle] [From.PrimaryTitle.GetName];x;;;
+EVTDESCregency.16;Предательство! [FromFrom.GetTitledFirstNameWithDynastyAndTitleNoRegnal] вместе с заговорщиками попытались удалить персонажа [FromFrom.PlotTarget.GetTitledFirstNameWithDynastyAndTitleNoRegnal] с [From.GetHerHis] законной должности назначенного регента.  К счастью, [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] оказа[From.GetLasLsya] умнее их и не пове[From.GetLasLsya] на сладкие слова, [FromFrom.PlotTarget.GetSheHe] остается при своем месте.;x;;;
+EVTDESCregency.17;[Root.PrimaryTitle.GetFOA], прошу обратить внимание, что никто не был назначен регентом земли [Root.PrimaryTitle.GetName], в котором нуждается страна. Излишне говорить, что это не самой удобный пост, вокруг котого крутятся соперничество и ссоры, еслм его занимает слабый человек. Я смиренно прошу вас назвать меня назначенным регентом, чтобы избежать такого рода неприятностей.\nПодпись,\n[From.GetTitledFirstName] из Дома [From.GetOnlyDynastyName];x;;;
+EVTOPTAregency.17;Прекрасное предложение, я рассмотрю его;x;;;
+EVTOPTBregency.17;Абсурдное предложение;x;;;
+EVTDESCregency.18;[Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal],\nЯ нахожу ваши проблемы обоснованными и соглашусь, что регент должен быть назван. Поэтому я назачаю вас как Регента.\n\nПодпись,\n[From.GetFirstNameoftheHouse], [From.GetRegnalOrdinal] [From.GetHerHis] имени, [From.GetTitle] [From.PrimaryTitle.GetName];x;;;
+EVTOPTAregency.18;Благодарю вас, [From.PrimaryTitle.GetFOA];x;;;
+EVTDESCregency.19;[Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal],\nЯ не вижу необходимости назначать регента для королевства в это время, я уверен[From.GetEndA], что Дом [From.GetOnlyDynastyName] будет править еще долгое время. Не походите с этим предложением снова.\nПодпись,\n[From.GetFirstNameoftheHouse], [From.GetRegnalOrdinal] [From.GetHerHis] имени, [From.GetTitle] [From.PrimaryTitle.GetName];x;;;
+EVTOPTAregency.19;В таком случае, смута неизбежна;x;;;
+EVTDESCregency.20;[Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal],\nВаше беспорядочное правление в земле [Root.Liege.PrimaryTitle.GetName] подходит к концу. Я требую, чтобы вы мирно отошли в сторону и позволили мне взять на себя роль регента, иначе пострадаете от моих действий и действий моих сторонников.\nПодпись,\n[From.GetFirstNameoftheHouse], [From.GetTitle] [From.PrimaryTitle.GetName];x;;;
+EVTOPTAregency.20;У меня нет выбора, кроме как отступить;x;;;
+EVTOPTBregency.20;Я никогда не отдам им своё право!;x;;;
+EVTTOOLTIPregency.21;[This.GetTitledFirstName] возьмет на себя регентство;x;;;
+EVTTOOLTIPregency.24; [This.GetTitledFirstName] и [From.GetTitledFirstName] начнут войну вместе со своими союзниками;x;;;
+plot_replace_regent_cb;Война за Регентство;x;;;
+plot_replace_regent_cb_desc;$CLAIMANT$ считает, что текущий регент $TARGET$ не подходит, и вместо этого они должны быть регентами.;x;;;
+CB_NAME_REPLACE_REGENT;Война за Регентство;x;;;
+WAR_NAME_REPLACE_REGENT;$CLAIMANT$ $ORDER$ Война за регентство над $DEFENDER$;x;;;
+replace_regent_ultimatum_PLOTBACKERS;Минимум 4 лорда поддержат заговор\n;x;;;
+replace_regent_plead_case_LOCATION;В настоящее время находится в земле [Root.Liege.Capital.GetName]\n;x;;;
+EVTDESCregency.21;[Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal],\nХоть я и не склон[From.GetNaEn] давать власть в землях [Root.Liege.PrimaryTitle.GetName] и [Root.Liege.GetTitle] [Root.Liege.GetFirstName], таким людям как вы, вы не оставляете мне выбора. Настоящим я передаю вам регентство.\nПодпись,\n[From.GetTitledFirstName];x;;;
+EVTOPTAregency.21;Разумный шаг;x;;;
+EVTDESCregency.22;Придворные интриги часто кажутся запутанными, и вы получили сообщение, что государство стоит на грани войны. Очевидно, [FromFrom.GetTitledFirstNameWithDynasty] предъявил[FromFrom.GetEndA] ультиматум под угрозой силы моему регенту, известному как [From.GetTitledFirstName], потребовав, чтобы [From.GetSheHe] передал[From.GetEndA] регентство. [From.GetSheHeCap] отступил[From.GetEndA], и теперь у меня новый регент.;x;;;
+EVTOPTAregency.22;[Root.GetTitle] ценит меня;x;;;
+EVTDESCregency.23;Всем знаменосцам правителя, известного как [From.Liege.GetTitle] [From.Liege.GetFirstName], коррумпированное регентство персонажа [From.GetTitledFirstName] над землёй [From.Liege.PrimaryTitle.GetName] закончилось. [From.GetSheHeCap] согласи[From.GetLasLsya] передать власть мне, и отныне все будут подчиняться моей воле, пока уважаем[From.Liege.GetAyaYy] [From.Liege.GetTitle] [From.Liege.GetFirstName] не сможет управлять свмостоятельно.\n\nПодпись\n[FromFrom.GetFirstName] из Дома [FromFrom.GetOnlyDynastyName], [FromFrom.GetTitle] Регент [From.Liege.PrimaryTitle.GetName];x;;;
+EVTOPTAregency.23;Хорошо исполненный план;x;;;
+EVTOPTBregency.23;Я уверен[GetEndA], что были применены угрозы и принуждение;x;;;
+EVTDESCregency.24;Придворные интриги часто кажутся запутанными, и вы получили сообщение, что государство стоит на грани войны. Очевидно [FromFrom.GetTitledFirstNameWithDynasty] предъявил[FromFrom.GetEndA] ультиматум под угрозой силы моему регенту, известному как [From.GetTitledFirstName], потребовав, чтобы [From.GetSheHe] передал[From.GetEndA] регентство. [From.GetSheHeCap] отказа[From.GetLasLsya], и теперь кровь обязательно прольется.;x;;;
+EVTOPTAregency.24;Почему мы не можем делиться властью?;x;;;
+EVTDESCregency.25;[Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal],\nЯ никогда не сдамся такому как вы, так как вы и ваши сторонники разрушите это королевство. Знайте, что силы государства [Root.Liege.PrimaryTitle.GetName] готовы противостоять вашим угрозам.\nПодпись,\n[FromFrom.GetTitledFirstName];x;;;
+EVTOPTAregency.25;Тогда война!;x;;;
+EVTDESCregency.26;[From.Liege.PrimaryTitle.GetName] в беспорядке, регентство персонажа [From.Liege.GetTitle] [From.Liege.GetFirstName] оспорено. [FromFrom.GetTitledFirstNameWithDynasty] предъявил[FromFrom.GetEndA] текущему регенту, известному как [From.GetTitledFirstName] ультиматум, чтобы передать регентство [FromFrom.GetHerHim]. [From.GetTitledFirstName] отказа[From.GetLasLsya], и теперь война пришла к нам.;x;;;
+EVTOPTAregency.26;Мы победим;x;;;
+EVTOPTBregency.26;Это не может быть хорошо;x;;;
+EVTOPTA61002;Я буду следить;x;;;
+EVTOPTB61002;Немного растраты никому не причинит вреда;x;;;
+EVTOPTC61002;Возможно, мы можем работать вместе над этим;x;;;
+TOOLTIPregency.61002;Вы сообщаете персонажу [From.GetTitledFirstName] что подозреваете растраты, и требуете долю;x;;;
+EVTOPTA61004;Страна узнает об этом предательстве;x;;;
+TOOLTIPregency.61004;Вы отправляете письма лордам земли [From.Liege.PrimaryTitle.GetName], сообщая им о коррупции персоны [From.GetTitledFirstName], отправлении его в отставку и его отъезда из столицы [Root.Liege.Capital.GetName].\n\n;x;;;
+TOOLTIPregency.61005;Вы информируете персонажу [From.GetTitledFirstName], что знаете о хищениях и требуете долю;x;;;
+EVTDESCregency.61001;Несмотря на все мои усилия по сокрытию растраты, совет заметил, что казна была неожиданно истощена. [From.GetTitle] [From.GetFirstName] подозревает мою причастность.;x;;;
+EVTOPTAregency.61001;Они ничего не могут с этим поделать;x;;;
+EVTDESCregency.61002;После заседания совета, [Root.Liege.GetMyTreasurerName] [From.GetTitledFirstName] подходит ко мне. [From.GetSheHeCap] говорит, что [From.GetSheHe] внимательно следит за казной и успел[From.GetEndA] заметить недостаток золота и средств. [From.GetSheHeCap] говорит, что [From.GetSheHe] считает меня виновником, но говорит, что будет молчать, если получит долю.;x;;;
+EVTOPTAregency.61002;Признаюсь, возьмите свое золото и молчите;x;;;
+EVTOPTBregency.61002;Безосновательная ложь! Уходи!;x;;;
+EVTDESCregency.61003;Несмотря на все мои усилия по сокрытию моей растраты, появилось доказательство того, что я беру деньги из казны! Совет, несомненно, был проинформирован шпионами, следящими ща мной;x;;;
+EVTOPTAregency.61003;Мне все равно, [Root.Liege.Capital.GetName], по-прежнему, под моей властью;x;;;
+EVTDESCregency.61004;Совет явно недоволен моими действиями, [Root.Liege.GetMyTreasurerName] [From.GetTitledFirstName] даже уш[From.GetLaYol] в отставку. Однако, прежде чем [From.GetSheHe] покинул[From.GetEndA] город [Root.Liege.Capital.GetName], [From.GetSheHe] отправил[From.GetEndA] воронов всем лордам земли [Root.Liege.PrimaryTitle.GetName], обвинив меня в коррупции и измене.;x;;;
+EVTOPTAregency.61004;[From.GetSheHeCap] - настоящий предатель!;x;;;
+EVTDESCregency.61005;На заседании Совета многие присутствующие обвинили меня в измене и коррупции, после чего [Root.Liege.GetMyTreasurerName] [From.GetTitledFirstName] подош[From.GetLaYol] ко мне. [From.GetSheHeCap] говорит, что [From.GetSheHe] закроет глаза на казну, и сообщил[From.GetEndA], что обладает властью и влиянием, чтобы опровергнуть мою причастность в растрате. [From.GetSheHeCap] требует доли, в противном случае угрожает, что [From.GetSheHe] посоветует Совету разослать новость по всему государству.;x;;;
+EVTOPTAregency.61005;Хорошо, возьмите свое золото и очистите мое имя;x;;;
+EVTOPTBregency.61005;Я не поддамся шантажу!;x;;;
+EVTDESCregency.61006;После заседания совета вы обратились к персонажу [From.GetTitledFirstName] и успешно подвергли [From.GetHerHis] шантажу. [From.GetSheHeCap] признал[From.GetEndA] свою коррупцию и согласи[From.GetLasLsya] дать вам долю в обмен на ваше молчание.;x;;;
+EVTOPTAregency.61006;Хорошо, теперь мы вместе погрязли в коррупции!;x;;;
+EVTDESCregency.61007;После заседания совета вы обратились к персонажу [From.GetTitledFirstName] и эффекто шантажировали [From.GetHerHis]. [From.GetSheHeCap] сердито отреагировал[From.GetEndA] на это, яростно отрицая коррупцию и заверяя в верности правителю.;x;;;
+EVTOPTAregency.61007;Я удержу доказательства у себя;x;;;
+EVTOPTCregency.61007;[From.GetSheHeCap] будет сожалеть об этом решении;x;;;
+EVTOPTBregency.61007;Хорошо, государство узнает о вашем предательстве!;x;;;
+EVTDESCregency.61008;[Root.GetTitledFirstName], на моем посту как [From.Liege.GetTitledFirstName] [From.Liege.GetMyTreasurerName] я получил[From.GetEndA] доказательство самого злодейского предательства. Регент [From.Liege.GetTitledFirstName], [FromFrom.GetTitledFirstNameWithDynasty], растратил[FromFrom.GetEndA] золото и серебро из казны государства [From.Liege.PrimaryTitle.GetName], показав себя как коррумпированного предателя. Я предлагаю всем верным дворянам объединиться, чтобы сбросить [FromFrom.GetHerHis] с его должности.\n\nПодпись,\n[From.GetTitledFirstName] из Дома [From.GetOnlyDynastyName];x;;;
+EVTOPTAregency.61008;Нельзя это терпеть!;x;;;
+EVTOPTBregency.61008;Немного растраты никому не причиняли вреда;x;;;
+EVTOPTCregency.61008;[From.GetSheHeCap] пожалеет о своей клевете;x;;;
+EVTOPTDregency.61008A;У меня есть регент?;x;;;
+EVTOPTDregency.61008B;Я все улажу, когда получу власть;x;;;
+regent_grant_self_title;Даровать себе титул;x;;;
+regent_grant_self_title_desc;Используя полномочия регента, вы смогли предоставить себе один из титулов персонажа [Root.Liege.GetTitledFirstName];x;;;
+TOOLTIPgrant_self_titleTITLE;[Root.Liege.GetTitledFirstName] имеет свободное владение, которое можно передать\n;x;;;
+TOOLTIPgrant_self_titleGENDER; [Root.GetTitledFirstName] подходит для владения землями государства [Root.Liege.PrimaryTitle.GetName]\n;x;;;
+regent_lower_crown_authority;Понизить власть государства;x;;;
+regent_lower_crown_authority_desc;Используя полномочия регента, вы можете снизить власть государства [Root.Liege.GetTitledFirstName].;x;;;
+TOOLTIPregent_lower_crown_authorityFLAG;[Root.Liege.GetTitledFirstName] не снижалл[From.GetEndA] власть государства, будучи регентом\n;x;;;
+TOOLTIPregent_lower_crown_authorityTITLE;[Root.Liege.GetTitledFirstName] владеет титулом где может быть снижена власть государства И является де-юре титулом государства [Root.PrimaryTitle.GetName]\n;x;;;
+TOOLTIPregent_lower_crown_authorityPLEASED;Лордам и дворянам страны [This.GetName] понравится это действие\n;x;;;
+plot_declare_liege_incapable;Объявить сюзерена неспособным;x;;;
+plot_declare_liege_incapable_desc;Текущие способности персонажа [Root.Liege.GetTitledFirstName] править сомнительны и поэтому, при достаточной поддержке, можно было бы объявить [Root.Liege.GetHerHis] недееспособным и стать [Root.Liege.GetHerHis] Регентом.;x;;;
+TOOLTIPplot_declare_liege_incapableCOUNCIL;По крайней мере, 2 советника правителя [Root.Liege.GetTitledFirstName] участвуют в заговоре\n;x;;;
+EVTTOOLTIPregency.27;Вы объявляете, что [Root.Liege.GetTitledFirstName] недееспособ[Root.Liege.GetNaEn] и принимаете на себя регентство;x;;;
+EVTDESCregency.27;При вашем состоянии уже трудно править, но, тем не менее, вы правите самостоятельно. Но сегодня, когда вы находились в большом зале, [From.GetTitledFirstName] вломи[From.GetLasLsya] к вам вместе со своими сторонниками. [From.GetSheHeCap] объявил[From.GetEndA], что вы неспособны эффективно управлять, и принял[From.GetEndA] на себя регентство без чьего-либо сопротивления.;x;;;
+EVTOPTAregency.27;Никто не поддержал меня;x;;;
+EVTDESCregency.28;Время дурного правления персонажа [From.GetTitledFirstName] подошло к концу. Когда [From.GetSheHe] был[From.GetEndA] при дворе, вы вместе со сторонниками ворвались в покои. Вы объявили, что [From.GetTitle] неспособ[Frome.GetNaEn] эффективно управлять и принимаете регентство без чьего-либо сопротивления.;x;;;
+EVTOPTAregency.28;Это принесет пользу стране;x;;;
+declared_me_insane;Объявил[_] меня недееспособным;x;;;
+EVTDESCregency.29;Время дурного правления персонажа [From.GetTitledFirstName] подошло к концу. Когда [From.GetSheHe] был[From.GetEndA] при дворе, [FromFrom.GetTitledFirstName] ворвался к правителю вместе со своими сторонниками. [FromFrom.GetSheHeCap] объявил[From.GetEndA], что [From.GetTitle] неспособ[Frome.GetNaEn] эффективно управлять и принимаете регентство без чьего-либо сопротивления..;x;;;
+EVTOPTAregency.29;[FromFrom.GetTitledFirstName] принесет стабильность;x;;;
+EVTDESCregency.30;[Root.GetTitledFirstName], из-за невозможности [From.GetHerHis] эффективного управления, Совет правителя  [From.GetTitledFirstName] счел нужным назначить регента, чтобы он правил на [From.GetHerHis] месте. Совет назначил меня регентом и предлагает вам следовать моему правлению.\n\nПодпись,\n[FromFrom.GetTitledFirstName], [FromFrom.GetLordLady]-Регент и [FromFrom.Liege.PrimaryTitle.GetName];x;;;
+regent_fire_councillor;Удалить из совета сюзерена;x;;;
+regent_fire_councillor_desc;Испоьзуя полномочия регента персонажа [Root.Liege.GetTitledFirstName], вы можете удалить советника [Root.GetTitledFirstName] из [Root.Liege.GetHerHis] совета.;x;;;
+fired_from_council_by_regent;Увольнение из Совета регентом;x;;;
+EVTDESCregency.50;[Root.GetTitledFirstName], от имени правителя [From.Liege.GetTitledFirstName], я удаляю вас из совета и лишаю должности. Я прдлагаю вам покинуть город [From.Liege.Capital.GetName] как можно скорее.\n\nПодпись,\n[FromFrom.GetTitledFirstName], [FromFrom.GetLordLady]-Регент и [FromFrom.Liege.PrimaryTitle.GetName];x;;;
+EVTOPTAregency.50;Это произвол!;x;;;
+EVTDESCregency.51;[FromFrom.GetTitledFirstName], используя свои полномочия регента, решил[FromFrom.GetEndA] удалить советника [From.GetTitledFirstName] с [From.GetHerHis] должности в совете. Очевидно, [FromFrom.GetSheHe] посчитал[FromFrom.GetEndA], что [From.GetTitledFirstName] непригод[From.GetNaEn] для службы.;x;;;
+EVTOPTAregency.51;Я уверен[GetEndA], [FromFrom.GetSheHe] знает что делает...;x;;;
+EVTDESCregency.52;[Root.GetTitledFirstName], от имени правителя [From.Liege.GetTitledFirstName], я предлагаю вам присоединиться к Совету в городе [From.Liege.Capital.GetName]. Я надеюсь, вы будете верно служить здесь.\n\nПодпись,\n[FromFrom.GetTitledFirstName], [FromFrom.GetLordLady] Регент [FromFrom.Liege.PrimaryTitle.GetName];x;;;
+EVTOPTAregency.52;[FromFrom.PrimaryTitle.GetFOA], вы оказываете мне большую честь;x;;;
+EVTDESCregency.53;[FromFrom.GetTitledFirstName], испоьзуя свои полномочия как регента, назначил[FromFrom.GetEndA] нового человека, известного как [From.GetTitledFirstName] в Совет. [FromFrom.GetSheHeCap] утверждает, что [From.GetTitledFirstName] лучше всего подходит для этой задачи.;x;;;
+EVTOPTAregency.53;Это и впрямь [FromFrom.GetHerHis] Совет;x;;;
+opinion_appointed_to_council;Назначил[_] меня в совет сюзерена;x;;;
+regent_appoint_councillor;Назначить в совет сюзерена;x;;;
+regent_appoint_councillor_desc;Используя ваши полномочия как регента правителя [Root.Liege.GetTitledFirstName], вы можете назначить персонажа [Root.GetTitledFirstName] в [Root.Liege.GetHerHis] Совет.;x;;;
+TOOLTIPregent_appoint_councillorSPARE;Свободная должность, которую может занять [Root.GetTitledFirstName] доступна в Совете правителя [Root.Liege.GetTitledFirstName]\n;x;;;
+EVTDESCregent.700;Всем благородным подданным нашего правитнля [From.GetTitledFirstName], я посчитал[FromFrom.GetEndA], что полномочия и привилегии верховной власти над знатью в государстве [FromFrom.Liege.PrimaryTitle.GetName] слишком велики. Используя мои полномочия регента, я решил[FromFrom.GetEndA] ограничить эти полномочия и принять ряд законов, понижающих власть в королевстве.\n\nПодпись,\n[FromFrom.GetTitledFirstName], [FromFrom.GetLordLady]-Регент и [FromFrom.Liege.PrimaryTitle.GetName];x;;;
+EVTOPTAregent.700;Наши цели выполнены;x;;;
+TOOLTIPWINREGENCYWAR;[Root.GetTitledFirstName] принял[Root.GetEndA] регентство над персонажем [From.GetTitledFirstName]\n;x;;;
+EVTDESCregency.54;Во время своего прямого правления [From.GetTitledFirstName] постановил[From.GetEndA], что вы должны быть регентом государства [Root.Liege.GetTitledFirstNameWithDynastyNoRegnal] если [From.GetHerHis] правление окончится раньше, чем [Root.Liege.GetFirstName] сможет управлять. Сейчас настало это время, и вы принимаете регентство и титул [Root.GetLordLady]-Регент и Протектор государства [Root.Liege.PrimaryTitle.GetName].;x;;;
+EVTOPTAregency.54;[Root.Liege.GetTitle] вместе со мной пройдёт через эту смуту;x;;;
+EVTDESCregency.55;Благодаря вам [Root.Liege.GetTitledFirstNameWithDynastyNoRegnal] сейчас правит как законн[Root.Liege.GetAyaYy] [Root.Liege.GetTitle] [Root.Liege.PrimaryTitle.GetName].  [Root.Liege.GetTitle] в настоящее время не может править  своей собственной волей, и поэтому вы принимаете регентство и титул [Root.GetLordLady]-Регент и Протектор государства [Root.Liege.PrimaryTitle.GetName].;x;;;
+EVTOPTAregency.55;[Root.Liege.GetTitle] направляется мною;x;;;
+EVTDESCregency.61;После ряда собраний, совет государства [FromFrom.GetTitledFirstNameNoRegnal] согласился вести войну со страной  [From.PrimaryTitle.GetFullName], и последнее - [FromFrom.GetTitle] долж[FromFrom.GetNaEn] дать разрешение.;x;;;
+EVTOPTAregency.61;Да, здравый план;x;;;
+EVTOPTBregency.61;Нет, я наложу вето на эту глупую войну;x;;;
+EVTDESCregency.62;Совет государства [FromFromFrom.GetTitledFirstNameWithDynasty] согласился вести войну со страной [Root.PrimaryTitle.GetFullName], но [From.GetLordLady]-Регент, [From.GetFirstNameWithDynasty], наложил[From.GetEndA] вето на это решение.;x;;;
+EVTOPTAregency.62;Они должны быть благодарны за такую мудрость;x;;;
+EVTDESCregency.63;Регент государства [From.GetFirstNameWithDynasty] наложил[From.GetEndA] вето на войну с государством [FromFrom.PrimaryTitle.GetFullName]!;x;;;
+EVTOPTAregency.63;Я думаю, это [From.GetHerHis] решение;x;;;
+regent_declare_war;Объявть войну по претензии;x;;;
+regent_declare_war_desc;Используя свои полномочия как [From.GetLordLady][GetEndAOpp]-Регента, [From.GetTitledFirstNameNoRegnal] может объявить войну государству [Root.Holder.PrimaryTitle.GetName] от имени правителя [From.Liege.GetTitledFirstNameNoRegnal], использовав [From.GetHerHis] претензии на землю [Root.GetFullName];x;;;
+regent_declare_war_named;Объявить войну за землю [Root.GetName];x;;;
+TOOLTIPCBENFORCEDTRUCE_REGENT;[From.Liege.GetTitledFirstNameNoRegnal] и [Root.Holder.GetTitledFirstNameNoRegnal] - в настоящее время НЕТ принужденного перемирия\n;x;;;
+TOOLTIPregent_declare_warCOUNCIL;По крайней мере, §Y4§! советника правителя [From.Liege.GetTitledFirstNameNoRegnal] проголосовали за объявление войны с государством [Root.Holder.GetTitledFirstNameNoRegnal] по пртетензии персонажа [From.GetTitledFirstNameNoRegnal]\n(У кого-то должно быть мнение о персонаже [From.GetTitledFirstNameNoRegnal] равное §Y25§!, или должен услугу. Совет голосует за это решение)\n;x;;;
+TOOLTIPregent_declare_war;[From.Liege.PrimaryTitle.GetFullName] объявил[From.Liege.GetEndA] войну государству [Root.Holder.PrimaryTitle.GetName], используя претензии персонажа [From.GetTitledFirstNameNoRegnal] на землю [Root.GetFullName]\n;x;;;
+EVTDESCregency.64;[FromFrom.GetLordLady]-Регент [FromFrom.GetTitledFirstNameWithDynasty] при поддержке Совета, объявил[FromFromGetEndA] войну государству [regent_war_title.Holder.PrimaryTitle.GetName], используя [FromFrom.GetHerHis] претензии на землю [regent_war_title.GetFullName]!;x;;;
+EVTOPTAregency.64;Я надеюсь, что [FromFrom.GetSheHe] знает, что делает;x;;;
+EVTDESCregency.71;Во благо государства, [From.GetHerHis] [From.GetHonorific] [From.GetTitledFirstNameNoRegnal] необходимо вступить в брак как можно скорее. Как [From.GetLordLady]-Регент,  выбор авпы ложится на мои плечи. М[regent_marriage_target.GetOyaOy] [regent_marriage_target.GetRootRelation] [regent_marriage_target.GetTitledFirstNameNoRegnal] - идеальный выбор, происходя из одного из самых благородных домов страны.;;;;;;;;;;;;;x
+EVTDESCregency.71B;Во благо государства, [From.GetHerHis] [From.GetHonorific] [From.GetTitledFirstNameNoRegnal] необходимо вступить в брак как можно скорее. Как [From.GetLordLady]-Регент,  выбор авпы ложится на мои плечи. Я могу быть идеальным выбором, происходя из одного из самых благородных домов страны.;;;;;;;;;;;;;x
+EVTOPTAregency.71;Да, я прикажу ;;;;;;;;;;;;;x
+TOOLTIPregency.71;[From.GetTitledFirstNameNoRegnal] получает ваш приказ о вступлении в брак с персонажем [regent_marriage_target.GetTitledFirstNameNoRegnal];;;;;;;;;;;;;x
+EVTOPTBregency.71;Нет, это не в моей власти;;;;;;;;;;;;;x
+EVTDESCregency.72;Ваш[From.GetEndA] [From.GetLordLady]-Регент, [From.GetTitledFirstNameWithDynastyNoRegnal], просит аудиенции. [From.GetSheHeCap] говорит, что во благо государства, вы должны вступить в брак как можно скорее. [From.GetSheHeCap] уже сделал[From.GetEndA] выбор и это  [regent_marriage_target.GetTitledFirstNameWithDynastyNoRegnal].;;;;;;;;;;;;;x
+EVTDESCregency.72B;Ваш[From.GetEndA] [From.GetLordLady]-Регент, [From.GetTitledFirstNameWithDynastyNoRegnal], просит аудиенции. [From.GetSheHeCap] говорит, что во благо государства, вы должны вступить в брак как можно скорее. [From.GetSheHeCap] уже сделал[From.GetEndA] выбор, и это... [From.GetSheHeCap]!.;;;;;;;;;;;;;x
+EVTOPTAregency.72;Как прикажет [From.GetLordLady];;;;;;;;;;;;;x
+TOOLTIPregency.72A;Вы соглашаетесь вступить в брак с персонажем  [regent_marriage_target.GetTitledFirstNameWithDynastyNoRegnal] без возражений. Это повышает вероятность того, что государствопримет решение Регента. ;;;;;;;;;;;;;x
+EVTOPTBregency.72;А что если я не хочу?!;;;;;;;;;;;;;x
+TOOLTIPregency.72B;Вы протестуете против брака с  персонажем [regent_marriage_target.GetTitledFirstNameWithDynastyNoRegnal]. Это повышает вероятность того, что государство НЕ примет решение Регента.;;;;;;;;;;;;;x
+opinion_agreed_regent_marriage;Согласие на брак;;;;;;;;;;;;;x
+opinion_refused_regent_marriage;Отказ от брака;;;;;;;;;;;;;x
+EVTOPTCregency.72;Я не подчинюсь 'приказу'!;;;;;;;;;;;;;x
+tooltip_info_regent_mwedding_refuse;§YЭта опция доступна из-за вашей высокой характеристики§! ;;;;;;;;;;;;;x
+EVTDESCregency.73;[From.GetAgeAdjective] [From.GetTitle] не возражает, когда вы сообщили [From.GetHerHim] о своем намерении заключить  брак с персонажем [regent_marriage_target.GetRootRelation]. [From.GetSheHeCap], похоже, соглашается, что это будет хорошим выбором.;;;;;;;;;;;;;x
+EVTDESCregency.73B;[From.GetAgeAdjective] [From.GetTitle] не возражает, когда вы сообщили [From.GetHerHim] о своем намерении заключить  брак с вами. [From.GetSheHeCap], похоже, соглашается, что это будет хорошим выбором.;;;;;;;;;;;;;x
+EVTOPTAregency.73;Отлично, теперь мы можем сообщить совету;;;;;;;;;;;;;x
+TOOLTIPregency.73;Регентский совет и государство проинформированы о вашем намерении заключить брак между [From.GetTitledFirstNameNoRegnal] и [regent_marriage_target.GetTitledFirstNameNoRegnal];;;;;;;;;;;;;x
+EVTDESCregency.74;[From.GetAgeAdjective] [From.GetGirlWomanBoyMan] не кажется счастлив[From.GetOyYm], когда вы сообщили [From.GetHerHim] о своем намерении заключить [From.GetHerHis] брак с персонажем [regent_marriage_target.GetRootRelation]. [From.GetSheHeCap] протестовал[From.GetEndA] и не хотел[From.GetEndA], но когда вы надавили на н[From.GetHerHis], [From.GetSheHe] угрюмо кивнул[From.GetEndA].;;;;;;;;;;;;;x
+EVTDESCregency.74B;[From.GetAgeAdjective] [From.GetGirlWomanBoyMan] не кажется счастлив[[From.GetOyYm], когда вы сообщили [From.GetHerHim] о своем намерении заключить [From.GetHerHis] брак с вами. [From.GetSheHeCap] протестовал[From.GetEndA] и не хотел[From.GetEndA], но когда вы надавили на н[From.GetHerHis], [From.GetSheHe] угрюмо кивнул[From.GetEndA].;;;;;;;;;;;;;x
+EVTOPTAregency.74;Я здесь у власти, я проинформирую совет;;;;;;;;;;;;;x
+EVTDESCregency.75;[From.GetAgeAdjective] [From.GetGirlWomanBoyMan] гневно возмути[From.GetLasLsya], когда вы сообщили [From.GetHerHim] о своем намерении выдать [From.GetHerHis] за вашу родню. [From.GetSheHeCap] категорически отказывается согласиться на брак, и пока я [From.GetLordLady]-Регент,  [From.GetTitle] обладает достаточными полномочия, чтобы сделать мой план невозможным.;;;;;;;;;;;;;x
+EVTDESCregency.75B;[From.GetAgeAdjective] [From.GetGirlWomanBoyMan] гневно возмути[From.GetLasLsya], когда вы сообщили [From.GetHerHim] о своем намерении выдать [From.GetHerHis] за вас. [From.GetSheHeCap] категорически отказывается согласиться на брак, и пока я [From.GetLordLady]-Регент,  [From.GetTitle] обладает достаточными полномочия, чтобы сделать мой план невозможным.;;;;;;;;;;;;;x
+EVTOPTAregency.75;Меня это не устраивает;;;;;;;;;;;;;x
+opinion_resents_regent_marriage;Негодует от схемы брака;;;;;;;;;;;;;x
+TOOLTIPregency.75;[From.GetTitledFirstNameNoRegnal] обладает высокими характеристиками и имеет авторитет в совете, брак не состоится;;;;;;;;;;;;;x
+EVTDESCregency.76;[FromFrom.GetLordLady]-Регент правителя [From.GetTitledFirstNameNoRegnal], [FromFrom.GetTitledFirstNameWithDynastyNoRegnal], отправил[FromFrom.GetEndA] сообщения о том, что [From.GetTitle] вступает в брак с персонажем [regent_marriage_target.GetTitledFirstNameWithDynastyNoRegnal], [FromFrom.GetHerHis] собственной роднёй. По-видимому, [From.GetAgeAdjective] [From.GetTitle] добровольно согласи[From.GetLasLsya] на этот брак.;;;;;;;;;;;;;x
+EVTDESCregency.76B;[FromFrom.GetLordLady]-Регент правителя [From.GetTitledFirstNameNoRegnal], [FromFrom.GetTitledFirstNameWithDynastyNoRegnal], отправил[FromFrom.GetEndA] сообщения о том, что [FromFrom.GetSheHe] и [From.GetTitle] должны быть объединены браком. По-видимому, [From.GetAgeAdjective] [From.GetTitle] добровольно согласи[From.GetLasLsya] на этот брак.;;;;;;;;;;;;;x
+EVTDESCregency.76C;[FromFrom.GetLordLady]-Регент правителя [From.GetTitledFirstNameNoRegnal], [FromFrom.GetTitledFirstNameWithDynastyNoRegnal], отправил[FromFrom.GetEndA] сообщения о том, что [FromFrom.GetSheHe] и [From.GetTitle] должны быть объединены браком. По-видимому, [From.GetAgeAdjective] [From.GetTitle] протестовал[From.GetEndA] против этого брака.;;;;;;;;;;;;;x
+EVTDESCregency.76D;[FromFrom.GetLordLady]-Регент правителя [From.GetTitledFirstNameNoRegnal], [FromFrom.GetTitledFirstNameWithDynastyNoRegnal], отправил[FromFrom.GetEndA] сообщения о том, что [FromFrom.GetSheHe] и [From.GetTitle] должны быть объединены браком. По-видимому, [From.GetAgeAdjective] [From.GetTitle] протестовал[From.GetEndA] против этого брака.;;;;;;;;;;;;;x
+EVTOPTAregency.76;Идеальный выбор;;;;;;;;;;;;;x
+EVTOPTBregency.76;[FromFrom.GetFirstNameWithDynasty] перехитрил[FromFrom.GetEndA] себя!;;;;;;;;;;;;;x
+TOOLTIPregency.76;Вы отправляете сообщение в город [From.Capital.GetName], выражая протест;;;;;;;;;;;;;x
+EVTDESCregency.77;Регентский совет был проинформирован о вашем решении, чтобы [FromFrom.GetTitle] ваш[regent_marriage_target.GetEndA] [regent_marriage_target.GetRootRelation] вступили в брак. Некоторые лорды поддерживают ваше предложение, но многие другие считают это самонадеянным и прислали краткие сообщения о своем несогласии. Некоторые считают, что сначала нужно проконсультироваться с регентским и государственным советами;;;;;;;;;;;;;x
+EVTDESCregency.77B;Регентский совет был проинформирован о вашем решении, чтобы [FromFrom.GetTitle] и вы вступили в брак. Некоторые лорды поддерживают ваше предложение, но многие другие считают это самонадеянным и прислали краткие сообщения о своем несогласии. Некоторые считают, что сначала нужно проконсультироваться с регентским и государственным советами.;;;;;;;;;;;;;x
+EVTDESCregency.77C;Регентский совет был проинформирован о вашем решении, чтобы [FromFrom.GetTitle] и [regent_marriage_target.GetRootRelation] вступили в брак. Большинство поддерживают ваше предложение и лишь некоторые лорды и советники возражают.;;;;;;;;;;;;;x
+EVTDESCregency.77D;Регентский совет был проинформирован о вашем решении, чтобы [FromFrom.GetTitle] и вы вступили в брак. Большинство поддерживают ваше предложение и лишь некоторые лорды и советники возражают. .;;;;;;;;;;;;;x
+EVTOPTAregency.77;Я продолжу свой план;;;;;;;;;;;;;x
+TOOLTIPregency.77PROTEST;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] протестует и изменит ваше мнение на §R-40§! если вы продолжите;;;;;;;;;;;;;x
+TOOLTIPregency.78PROTEST;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] протестует;;;;;;;;;;;;;x
+EVTOPTBregency.77;Возможно, мне стоит еще раз подумать об этом...;;;;;;;;;;;;;x
+EVTDESCregency.78;После окончательных переговоров с регентским и государственным советами, несмотря на протесты и противодействие многих вассалов, [From.GetLordLady]-Регент [From.GetFirstNameWithDynasty] приступает к плану, вы и [regent_marriage_target.GetTitledFirstNameWithDynastyNoRegnal]  так или иначе вступаете в брак;;;;;;;;;;;;;x
+EVTDESCregency.78B;После окончательных переговоров с регентским и государственным советами, несмотря на протесты и противодействие многих вассалов, [From.GetLordLady]-Регент [From.GetFirstNameWithDynasty] приступает к плану, вы так или иначе вступили в брак друг с другом;;;;;;;;;;;;;x
+EVTOPTAregency.78;Я этого не забуду!;;;;;;;;;;;;;x
+EVTOPTAregency.78B;думаю, мы будем счастливы вместе;;;;;;;;;;;;;x
+EVTDESCregency.79;После окончательных переговоров с регентским и государственным советами, несмотря на протесты и противодействие многих вассалов, [FromFrom.GetLordLady]-Регент [FromFrom.GetFirstNameWithDynasty] приступает к плану, чтобы [From.GetTitledFirstNameNoRegnal] и [regent_marriage_target.GetTitledFirstNameWithDynastyNoRegnal] вступили в брак.;;;;;;;;;;;;;x
+EVTDESCregency.79B;После окончательных переговоров с регентским и государственным советами, несмотря на протесты и противодействие многих вассалов, [FromFrom.GetLordLady]-Регент [FromFrom.GetFirstNameWithDynasty] приступает к плану, чтобы [From.GetTitledFirstNameNoRegnal] и вы вступили в брак.;;;;;;;;;;;;;x
+EVTOPTAregency.79;Это возмутительно и самонадеянно!;;;;;;;;;;;;;x
+EVTOPTAregency.79B;Прекрасная пара;;;;;;;;;;;;;x
+EVTDESCregency.80;Перед лицом большого недовольства и несогласия со стороны как Регентского совета, так и знати, [From.GetLordLady]-Регент [From.GetFirstNameWithDynasty] откладывает предлагаемый брак с персонажем [regent_marriage_target.GetTitledFirstNameWithDynastyNoRegnal].;;;;;;;;;;;;;x
+EVTDESCregency.80B;еред лицом большого недовольства и несогласия со стороны как Регентского совета, так и знати, [From.GetLordLady]-Регент [From.GetFirstNameWithDynasty] откладывает предлагаемый брак с собой.;;;;;;;;;;;;;x
+EVTOPTAregency.80;Я рад[GetEndA], что [From.GetSheHe] понимает;;;;;;;;;;;;;x
+EVTOPTAregency.80B;Ну, я не знаю, почему мы не должны пожениться;;;;;;;;;;;;;x
+EVTDESCregency.81;Перед лицом большого недовольства и несогласия со стороны как Регентского совета, так и знати, [FromFrom.GetLordLady]-Регент [FromFrom.GetFirstNameWithDynasty] откладывает предлагаемый брак с персонажем [regent_marriage_target.GetTitledFirstNameWithDynastyNoRegnal].;;;;;;;;;;;;;x
+EVTDESCregency.81B;Перед лицом большого недовольства и несогласия со стороны как Регентского совета, так и знати, [FromFrom.GetLordLady]-Регент [FromFrom.GetFirstNameWithDynasty] откладывает предлагаемый брак с собой.;;;;;;;;;;;;;x
+EVTOPTAregency.81;Я довол[GetSoftNaEn] этим результатом;;;;;;;;;;;;;x
+EVTOPTAregency.81B;Я думаю, это был бы хороший брак;;;;;;;;;;;;;x

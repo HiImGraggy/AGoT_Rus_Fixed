@@ -1,0 +1,267 @@
+dornish = {
+	graphical_cultures = { dornishgfx } # units
+	
+	stone_dornish = {
+		graphical_cultures = { stonedornishgfx westerngfx } # units
+		
+		color = { 0.95 0.6 0 }
+		
+		alternate_start = { 
+			year >= 7600 
+			NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } }
+		}
+		
+		male_names = {
+			Аддам Эйрон Эйтан Эйдан Аларик Альбин Алекин Аллард Алин Амброз Андерс Эндрю Антон Арчибальд Арнольф Арран Аррант Эртур Арьярд
+			Байлон Бенедикт Берик Бранден
+			Кейл Казимир Каспер Кассель Касвин Седрик Клариен Клеос Клетус Коннор Конран Коран Корбин Корентин Кугель Каллен
+			Дагос Дариен Давен Давос Дикон Домерик Доминик
+			Эдгар Эдмунд Эдмин Эдрик
+			Фариен Фаррелл Феррис Финниан Франклин
+			Гальвин Гармонд Гаррисон Джендри Геральд Гуэрин Джайлс
+			Халберт Хью
+			Джармонд Джаррет Джаспер Джером Джоффри Джордан Джорис
+			Ламберт Ланселин Ландон Лоррент Люцимор Лионель
+			Микаэль Морган Моррис Морс Морис Майлс
+			Оливер Оливар Оривел Ормонд
+			Перрин Перрос
+			Рейнальд Робин Рорин
+			Квентин Квинки
+			Сэмвелл
+			Ульрик Уррос
+			Вориан
+			Уолтер Уоррин Уильям Виланд
+			Йорен Йорик Йорвин
+		}
+		female_names = {
+			Аделина Эйлис Аланна Элейс Алия Элиенор Аллирия Алма Алина Арабелла Аренна Арианна Арлетта Эшара Эслия Эвелин Эзалайс
+			Барбри Брианна
+			Кейтрин Кларисса Корделия Сирисса
+			Делисия Дениза Дина Донселла Дианна
+			Элианна Элисия Элиза Эрин
+			Фалиса Фионалла
+			Галенна Гизелла Гвинет
+			Хелен
+			Инис Ивалла Иванна
+			Джариса Джасмилла Дженналин Дженнелин Джесса Джейн Джиалла Джинесса
+			Катрин
+			Ланея Ларра Лейна Лиера Линнет Лореза Лоринда Лиарра Лира
+			Марсия Марелла Маргейд Мариетта Мариса Мерия Мартина Марисса Меланна Морисса
+			Николетта
+			Райна Рона Робина Розария Россалин
+			Серена
+			Тамара Тавия Тереза
+			Урсула
+			Валерия
+			Вилла
+			Инесса Инис
+		}
+		
+		from_dynasty_prefix = "из "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 15
+		mat_grf_name_chance = 10
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 15
+		mat_grm_name_chance = 10
+		mother_name_chance = 0
+
+		feminist = yes
+		
+		modifier = default_culture_modifier
+	}
+	
+	sand_dornish = {
+		graphical_cultures = { sanddornishgfx } # units
+		
+		color = { 0.75 0.4 0 }
+		
+		alternate_start = { 
+			year >= 7600 
+			NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } }
+		}
+		
+		male_names = {
+			Аддам Адерин Эймери Арнальд Аррон Аррос Обри
+			Бейлан Баллард Байард
+			Кастон Кастор Касвальд Клэйтон Конери Конлан Куллиан Кайрус
+			Деймон Дейрон Дариен Дариус Давид Деррин Дилан
+			Эдмор
+			Галейн Галберт Ганлос Гарин Гаскойн Гавин Гелион Годрик Джулиан
+			Хармен Хармон
+			Джарвис Джеффори Джорет Джосланд Джоссарт Джастин
+			Кедри
+			Левин Лирон
+			Мейл Манфрид Матан Маврос
+			Ориэл Оррелл
+			Квентин Квинлан
+			Рэйлон Рион
+			Саргон Себастон Сельвин Серион
+			Тарион Теодан
+			Утерин Утор Ульвик Ульвин
+			Уоррин Уильям
+		}
+		female_names = {
+			Аленея Алеона Алерра Алис Алланис Аллирия Аликс Амрия Арабелла Арбелла Азилия
+			Касселла Чарисса Сирена
+			Дамария Данси Данелла Дарси Делонна Диана
+			Элинора Эллария Эммелина Энора Эвайн Эвелина
+			Гавелла Гелерия Гизела Гвенлин
+			Халлина Хелена
+			Излена Измерия
+			Джарианна Жехана Джейнора Джезарра Джиллиан Джинни Джозиана Джослена
+			Керенза
+			Ларисса Леонелла Лиана Лиралла
+			Мадина Маргарета Маргери Мариса Мерра Мория Морвен
+			Нимерия
+			Рачелла Рикасса Розилла
+			Сабия Самара Сарианна Серена Серра
+			Талия
+			Верона
+			Изилла
+		}
+		from_dynasty_prefix = "из "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 15
+		mat_grf_name_chance = 10
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 15
+		mat_grm_name_chance = 10
+		mother_name_chance = 0
+
+		feminist = yes
+		
+		modifier = default_culture_modifier
+	}
+	
+	salt_dornish = {
+		graphical_cultures = { saltdornishgfx } # units
+		
+		color = { 0.85 0.5 0 }
+		
+		alternate_start = { 
+			year >= 7600 
+			NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } }
+		}
+		
+		male_names = {
+			Адемар Алрик Эндрю Ангран Арден Арманд Арон
+			Бадуин Барретт Бастиан Бедард Блейз Браснстон Брайс
+			Кадан Конейн Коррент
+			Дантон Денилл Даррен Давит Дерретт Деррик Дерри Десмонд Девин Девлин Девон Дэзиель Дигори Диниас Доран Дюран Дилан
+			Эдгар Элфред Элрик Элиас Эмерик Эмрис
+			Галеран Галвелл Гарет Гарин Гавин Геррис Герис Десмунд Гетан Гидеон Гилберт Годри Гориан Грейсон Гриффин Гриффит Гирен
+			Джаран Джаспин Джошуа
+			Ландон Ларин Ллорент Леоран Левин
+			Мадин Малор Манфри Марден Маренс Мариус Марон Матрим Мерибальд Меррик Мило Морган Морибальд Морион Морс Майрон
+			Нейлин Нигел Нимор
+			Оберин Олимер Оливар Орлин Оррис Оуэн
+			Кворен Квентин Кайл
+			Раймун Рейнольд Родри Рикард Ронан Ронин Ройс Руфус Расселл Растин
+			Саргон Шерман Саймон Силас 
+			Тальфрин Тамлин Томас Торин Требор Тремонд Тристан
+			Уолдон Уоррин Вендел Уильям
+		}
+		female_names = {
+			Адриенна Адрия Алара Альба Алеона Алесия Алианда Алиса Амария Амелина Ариана Арианна Арлена
+			Белесса
+			Клайра Корианна
+			Даселла Дейси Далерия Данелла Дарсия Дерия Деридра Дора Дорея
+			Элда Элерия Элия Элоиза Элиса Эмилия Эмфирия Эзелла Эссилт Эвелин
+			Джемма Гилда Гилета Глинис Гвин
+			Халера Хелия
+			Иделла Иона Изабелла Изабель
+			Джейн Дженна Иокаста Джолена Джолета Джулианна Джиалла
+			Леднетта Лейла Лила Лилиана Лилия Линетта Лисетта Лореза Люсинда Линетта Лирелла
+			Мейрра Майя Майрона Малия Мара Мариона Мариса Мерия Милона Мириелис Мониэлла Морна Муриэль Милена Мирия
+			Нелла Нера нерисса Никола Нимерия Нирена
+			Обара Обелла Оливия Ормана
+			Равенна Риальта Ричелла Рослин Роксана
+			Сарелла Сарилла Сарра Селара Сенара Серена Шарин Сильва Сибелла Синелла Сильвенна
+			Тамсин Танит Тара Теора Тристана Тиена Тисса
+			Валена Ванора
+			Вилла
+		}
+		
+		from_dynasty_prefix = "из "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 15
+		mat_grf_name_chance = 10
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 15
+		mat_grm_name_chance = 10
+		mother_name_chance = 0
+
+		feminist = yes
+		
+		modifier = default_culture_modifier
+	}	
+	
+	rhoynar = {
+		graphical_cultures = { saltdornishgfx } # units
+		
+		color = { 0.8 0.25 0.0 }
+		
+		alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+		
+		male_names = {
+			Аллар Андерс Ариен Арон Аллерас
+			Белайар Борс
+			Калейен Касиос
+			Деймин Дейрон Дайгос Дэзиель Доран
+			Гарайн Газойн Геррис Джулиан
+			Ливен
+			Маллор Манфри Малон Морс
+			Нимор
+			Оберин
+			Пейос
+			Квентин Кворен
+			Рикас Рион
+			Саймон
+			Тимион Требор Тристан
+			Яндри
+		}
+		female_names = {
+			Аллирия Алисанна Алис Амари Арианна Эшара Алиандра
+			Бейандра
+			Кароли Касселла Седра Серения Коренна Сиренна
+			Делонна Дониса Дорея Дианна
+			Элеанора Элия Эллария Элиана Эмберлия
+			Джинесса
+			Лария Лейла Лореза Линесса
+			Марея Мерия Мария Мелесса Мелли Морра Мирия
+			Нимелла Нимерия Несторика
+			Обара Обелла
+			Сарелия Сенелла Сильва
+			Танселия
+			Тиена
+			Вилья
+			Изилла
+		}
+		
+		from_dynasty_prefix = "из "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 15
+		mat_grf_name_chance = 10
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 15
+		mat_grm_name_chance = 10
+		mother_name_chance = 0
+
+		feminist = yes
+		
+		modifier = default_culture_modifier
+	}
+}

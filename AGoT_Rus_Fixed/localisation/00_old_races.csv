@@ -1,0 +1,62 @@
+#CODE;ENGLISH;x
+EVTDESCwildling.55;Мне кажется, что я краем глаза видел[GetEndA] странные белые тени, движущиеся в лесу.;x
+EVTOPTAwildling.55;Это плохое предзнаменование.;x
+EVTDESCold_races.2;В моих землях была замечена группа гигантов.;x
+EVTOPTAold_races.2;Они могут оказаться полезными, Я поговорю с ними.;x
+EVTOPTBold_races.2;Нельзя допускать их присутствия, Я изгоню их с моих земель.;x
+EVTOPTCold_races.2;Оставить их в покое.;x
+giant_desc;Этот персонаж - гигант.;x
+cotf;Дети Леса;x
+cotf_desc;Этот персонаж - один из Детей Леса;x
+EVTDESCold_races.3;С тех пор у меня начались зеленые сны я чувствую себя неловко. Такое чувство, что у деревьев есть глаза.;x
+EVTDESCold_races.4;Один из Детей леса пришел ко мне и предложил учить моего ребенка читать зеленые сны.;x
+EVTOPTAold_races.4;Я не позволю этому существу находится рядом с моим ребенком, они не вызывают доверия.;x
+EVTOPTBold_races.4;Это редкая возможность, Я воспользуюсь их услугами.;x
+EVTDESCold_races.5;Я очень огорчен[GetEndA] этим, мой опекун отказался позволить Детям Леса учить меня.;x
+EVTDESCold_races.6;Я так счастлив[GetEndA]! Мой опекун согласился разрешить Детям Леса учить меня!;x
+d_giants;Гиганты;x
+employ_giants;Попробовать нанять гигантов к себе на службу.;x
+employ_giants_desc;Отправить Мастера над Законами искать последних оставшихся гигантов и попытаться завербовать их. Гиганты, как известно, используют ездовых мамонтов в бою.;x
+TOOLTIPold_races.200;[Root.job_chancellor.GetTitledFirstNameWithDynastyAndTitleNoRegnal] попытается нанять гигантов к вам на службу.;x
+EVTDESCold_races.200;[From.GetFirstNameWithDynasty] хочет нанять гигантов.;x
+EVTOPTAold_races.200;Пока мы принимаем нашу долю;x
+EVTOPTBold_races.200;Да;x
+EVTOPTCold_races.200;Нет;x
+EVTDESCold_races.300;[Root.GetTitle] [Root.GetFirstNameWithDynasty], Ваше предложение о союзе кажется разумным. Если вы согласитесь платить мне достойное жалование, мы с удовольствием просоеденимся к вашим силам. \n\n С Уважением,\n[From.GetFirstNameWithDynasty];x
+TOOLTIPGIANTS500;[From.GetFirstNameWithDynasty] будет дано §Y50§! золотых с вашей сокровищницы\n;x
+TOOLTIPGIANTS400;[From.GetFirstNameWithDynasty] будет дано §Y40§! золотых с вашей сокровищницы\n;x
+TOOLTIPGIANTS300;[From.GetFirstNameWithDynasty] будет дано §Y30§! золотых с вашей сокровищницы\n;x
+TOOLTIPGIANTS200;[From.GetFirstNameWithDynasty] будет дано §Y20§! золотых с вашей сокровищницы\n;x
+TOOLTIPGIANTS100;[From.GetFirstNameWithDynasty] будет дано §Y10§! золотых с вашей сокровищницы\n;x
+TOOLTIPCANHIREGIANTS;Вы сможете нанять гигантов за 90¤\n;x
+EVTOPTAold_races.300;Я долж[GetNaEn] заплатить ему;x
+EVTOPTBold_races.300;Жадный ублюдок! Я отказываюсь;x
+EVTDESCold_races.400;[Root.GetTitle] [Root.GetFirstNameWithDynasty], Ваше предложение о сотрудничистве кажется разумным. Мои воины просоеденяться к вам. \n\n С уважением,\n[From.GetFirstNameWithDynasty];x
+EVTOPTAold_races.400;Это должно повлиять на ход войны;x
+EVTOPTBold_races.400;На самом деле я передумал[GetEndA];x
+EVTDESCold_races.500;[Root.GetTitle] [Root.GetFirstNameWithDynasty], нас не тревожат проблемы людей. \n\n С увжением,\n[From.GetFirstNameWithDynasty];x
+EVTOPTBold_races.500;Они потеряны;x
+EVTDESCold_races.600;Гиганты более не служат нам, нужно начать переговоры, чтобы заполучить их снова.;x
+EVTDESCold_races.700;[Root.GetTitle] [Root.GetFirstNameWithDynasty], нас не тревожат проблемы людей.\n\n С уважением,\n[From.GetFirstNameWithDynasty];x
+c_giants;Гиганты;x
+mammoths;Мамонты;x
+job_castellan_giant;Надзиратель;x
+job_marshal_giant;Первый Всадник;x
+job_chancellor_giant;Страж традиций;x
+job_treasurer_giant;Первый торговец;x
+job_spymaster_giant;Мастер Шпионов;x
+EVTDESCold_races.9;Во время прогулки по холмам ваш отряд нашел единорога. Большой лохматый зверь бездельничает, едя траву поблизости на скалистом выступе. При должном количестве времени мы сможем захватитть его.;x
+EVTOPTAold_races.9;Я буду ездить на этом существе;x
+EVTOPTBold_races.9;Я не могу ездить на этом!!!;x
+EVTDESCold_races.10;После ожесточенной борьбы, вы победили и сумели сломить единорога.;x
+EVTOPTAold_races.10;Я наездник на единороге;x
+EVTDESCold_races.11;Борьба была жестокой, и, в конце концов, единорог вырвался на свободу и убежал.;x
+EVTOPTAold_races.11;Я потерпел[GetEndA] неудачу.;x
+EVTDESCold_races.12;После многих дней поиска вы отыскали единорога. Однако великий лохматый зверь знает о вашей группе и не очень доволен;x
+EVTOPTAold_races.12;Убить зверя!;x
+EVTOPTBold_races.12;Это опасно, лучше уйти.;x
+EVTOPTCold_races.12;Попытаться успокоить существо.;x
+TOOLTIPold_races.10;Вам удалось приручить единорога;x
+TOOLTIPold_races.11;Вы не смогли приручить единорога и получили травму в процессе.;x
+unicorn_rider;Наездник единорога;x
+unicorn_rider_desc;Этот персонаж скачет в бой на единороге.;x

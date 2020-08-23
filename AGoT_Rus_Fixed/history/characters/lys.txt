@@ -1,0 +1,2279 @@
+#############################
+### Major Merchant Houses ###
+#############################
+### House Erosenes
+34555925 = {
+	name="Дензо"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	7819.1.1 = {birth="7819.1.1"}
+	7875.1.1 = {death="7875.1.1"}
+}
+34455925 = {
+	name="Самарро"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=34555925
+
+	7842.1.1 = {birth="7842.1.1"}
+	7901.1.1 = {death="7901.1.1"}
+}
+34355925 = {
+	name="Фредо"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=34455925
+
+	7866.1.1 = {birth="7866.1.1"}
+	7920.1.1 = {death="7920.1.1"}
+}
+34255925 = {
+	name="Гилено"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=34355925
+
+	7890.1.1 = {birth="7890.1.1"}
+	7943.1.1 = {death="7943.1.1"}
+}
+34155925 = {
+	name="Лото"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=34255925
+
+	7915.1.1 = {birth="7915.1.1"}
+	7966.1.1 = {death="7966.1.1"}
+}
+34055925 = {
+	name="Моредо"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=34155925
+
+	7939.1.1 = {birth="7939.1.1"}
+	7980.1.1 = {death="7980.1.1"}
+}
+150300540 = {
+	name="Гролео"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=34055925
+
+	7964.1.1 = {birth="7964.1.1"}
+	8025.1.1 = {death="8025.1.1"}
+}
+100300540 = {
+	name="Аллекво"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=150300540
+
+	7983.1.1 = {birth="7983.1.1"}
+	8018.1.1 = {add_trait=poor_warrior}
+	8056.1.1 = {death="8056.1.1"}
+}
+101300540 = {
+	name="Коллио"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=100300540
+
+	8021.1.1 = {birth="8021.1.1"}
+	8037.1.1 = {add_trait=poor_warrior}
+	8061.1.1 = {death="8061.1.1"}
+}
+107300540 = {
+	name="Сирио"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=101300540
+
+	8048.1.1 = {birth="8048.1.1"}
+	8064.1.1 = {add_trait=trained_warrior}
+	8098.1.1 = {death="8098.1.1"}
+}
+110300540 = {
+	name="Пинто"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=107300540
+
+	8068.1.1 = {birth="8068.1.1"}
+	8084.1.1 = {add_trait=trained_warrior}
+	8119.1.1 = {death="8119.1.1"}
+}
+111300540 = {
+	name="Коран"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=107300540
+
+	8082.1.1 = {birth="8082.1.1"}
+	8098.1.1 = {add_trait=trained_warrior}
+	8123.1.1 = {death="8123.1.1"}
+}
+113300540 = {
+	name="Дореллан"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=111300540
+
+	8107.1.1 = {birth="8107.1.1"}
+	8123.1.1 = {add_trait=trained_warrior}
+	8175.1.1 = {death="8175.1.1"}
+}
+117300540 = {
+	name="Перено"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=113300540
+
+	8130.1.1 = {birth="8130.1.1"}
+	8146.1.1 = {add_trait=skilled_warrior}
+	8208.1.1 = {death="8208.1.1"}
+}
+116300540 = {
+	name="Маттено"	# not a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=113300540
+
+	8134.1.1 = {birth="8134.1.1"}
+	8150.1.1 = {add_trait=trained_warrior}
+	8185.1.1 = {death="8185.1.1"}
+}
+118300540 = {
+	name="Тибио"	# not a lord, from MUSH
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=113300540
+
+	add_trait=underhanded_rogue
+	add_trait=fair
+	add_trait=groomed
+	add_trait=gregarious
+
+	8136.1.1 = {birth="8136.1.1"}
+	8165.1.1 = {
+		death = {
+			death_reason = death_murder_poison
+		}
+	}
+}
+121300540 = {
+	name="Тагганаро"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=117300540
+
+	8162.1.1 = {birth="8162.1.1"}
+	8178.1.1 = {add_trait=poor_warrior}
+	8239.1.1 = {death="8239.1.1"}
+}
+124300540 = {
+	name="Бруско"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=121300540
+
+	8190.1.1 = {birth="8190.1.1"}
+	8206.1.1 = {add_trait=poor_warrior}
+	8254.1.1 = {death="8254.1.1"}
+}
+127300540 = {
+	name="Тернесио"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=124300540
+
+	8218.1.1 = {birth="8218.1.1"}
+	8234.1.1 = {add_trait=trained_warrior}
+	8270.1.1 = {death = {death_reason = death_accident}}
+}
+2003994 = {
+	name="Орбелло"
+	dynasty=55925 
+
+	culture="lysene"
+	religion="weeping_lady"
+
+	father=127300540
+
+	8259.1.1 = {birth="8259.1.1"}
+}
+2013994 = {
+	name="Трегар"
+	dynasty=55925 
+
+	culture="lysene"
+	religion="weeping_lady"
+
+	father=2003994
+
+	8284.1.1 = {birth="8284.1.1"}
+}
+2023994 = {
+	name="Шарако"
+	dynasty=55925 
+
+	culture="lysene"
+	religion="weeping_lady"
+
+	father=2003994
+
+	8288.1.1 = {birth="8288.1.1"}
+}
+
+### House Ormollen
+3441386 = {
+	name="Тиберо"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	7830.1.1 = {birth="7830.1.1"}
+	7898.1.1 = {death="7898.1.1"} #dov
+}
+3431386 = {
+	name="Таландор"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=3441386
+
+	7858.1.1 = {birth="7858.1.1"}
+	7909.1.1 = {death="7909.1.1"}
+}
+3421386 = {
+	name="Паркелло"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=3431386
+
+	7880.1.1 = {birth="7880.1.1"}
+	7932.1.1 = {death="7932.1.1"}
+}
+3411386 = {
+	name="Лисандро"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=3421386
+
+	7907.1.1 = {birth="7907.1.1"}
+	7956.1.1 = {death="7956.1.1"}
+}
+3401386 = {
+	name="Трегар"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=3411386
+
+	7931.1.1 = {birth="7931.1.1"}
+	7990.1.1 = {death="7990.1.1"}
+}
+11001386 = {
+	name="Донифос"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=3401386
+	
+	7959.1.1 = {birth="7959.1.1"}
+	8027.1.1 = {death="8027.1.1"}
+}
+10001386 = {
+	name="Суллим"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=11001386
+
+	7984.1.1 = {birth="7984.1.1"}
+	8016.1.1 = {add_trait=poor_warrior}
+	8063.1.1 = {death="8063.1.1"}
+}
+10021386 = {
+	name="Тагганаро"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10001386
+
+	8024.1.1 = {birth="8024.1.1"}
+	8040.1.1 = {add_trait=poor_warrior}
+	8066.1.1 = {death="8066.1.1"}
+}
+10061386 = {
+	name="Кварро"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10021386
+
+	8052.1.1 = {birth="8052.1.1"}
+	8068.1.1 = {add_trait=poor_warrior}
+	8112.1.1 = {death="8112.1.1"}
+}
+10081386 = {
+	name="Джосс"	# Leader of Three Daughters
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10021386
+
+	8055.1.1 = {birth="8055.1.1"}
+	8071.1.1 = {add_trait=poor_warrior}
+	8104.1.1 = {death="8104.1.1"}
+}
+10101386 = {
+	name="Лисоно"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10061386
+
+	8071.1.1 = {birth="8071.1.1"}
+	8087.1.1 = {add_trait=trained_warrior}
+	8128.1.1 = {death="8128.1.1"}
+}
+10131386 = {
+	name="Рогго"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10101386
+
+	8104.1.1 = {birth="8104.1.1"}
+	8120.1.1 = {add_trait=trained_warrior}
+	8162.1.1 = {death="8162.1.1"}
+}
+10171386 = {
+	name="Гилено"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10131386
+
+	8137.1.1 = {birth="8137.1.1"}
+	8153.1.1 = {add_trait=trained_warrior}
+	8197.1.1 = {death="8197.1.1"}
+}
+10231386 = {
+	name="Коллио"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10171386
+	8170.1.1 = {birth="8170.1.1"}
+	8186.1.1 = {add_trait=skilled_warrior}
+	8221.1.1 = {death="8221.1.1"}
+}
+10271386 = {
+	name="Роро"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10231386
+
+	8197.1.1 = {birth="8197.1.1"}
+	8213.1.1 = {add_trait=poor_warrior}
+	8234.1.1 = {death = {death_reason = death_battle}}
+}
+10311386 = {
+	name="Сирио"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10271386
+
+	8220.1.1 = {birth="8220.1.1"}
+	8241.1.1 = {add_trait=skilled_warrior}
+	8274.1.1 = {death="8274.1.1"}
+}
+88108 = {
+	name="Трегар"
+	dynasty=1386 #Ormollen
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10311386
+
+	add_trait="fortune_builder"
+	add_trait="lustful"
+	add_trait=ruthless
+
+	8250.1.1={
+		birth="8250.1.1"
+	}
+	8272.1.1={
+		add_spouse=488108
+	}
+	8295.1.1={
+		effect = {
+			random_character = {
+				limit = { character = 3284 } #Lynesse Hightower
+				add_consort = ROOT
+				add_lover = ROOT
+				move_character = ROOT
+			}
+		}		
+	}
+} 
+488108 = {
+	name="Мелисса"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	add_trait=craven
+
+	8250.1.1 = {birth="8250.1.1"}
+}
+881108 = {
+	name="Сирио"
+	dynasty=1386 #Ormollen
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=88108
+	mother=488108
+
+	8274.1.1={
+		birth="8274.1.1"
+	}
+} 
+882108 = {
+	name="Мелларио"
+	dynasty=1386 #Ormollen
+	female=yes
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=88108
+	mother=488108
+
+	8277.1.1={
+		birth="8277.1.1"
+	}
+} 
+883108 = {
+	name="Паркелло"
+	dynasty=1386 #Ormollen
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=88108
+	mother=488108
+
+	8281.1.1={
+		birth="8281.1.1"
+	}
+}
+
+### House Rogare
+34455999 = {
+	name="Лиронис"	# a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	7811.1.1 = {birth="7811.1.1"}
+	7845.1.1 = {add_trait="truth"}
+	7877.1.1 = {death="7877.1.1"}
+}
+34355999 = {
+	name="Лисодос"	# a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=34455999
+
+	7845.1.1 = {birth="7845.1.1"}
+	7877.1.1 = {add_trait="truth"}
+	7903.1.1 = {death="7903.1.1"}
+}
+34255999 = {
+	name="Крегар"	# a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=34355999
+
+	7873.1.1 = {birth="7873.1.1"}
+	7903.1.1 = {add_trait="truth"}
+	7927.1.1 = {death="7927.1.1"}
+}
+34155999 = {
+	name="Дааро"	# a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=34255999
+
+	7900.1.1 = {birth="7900.1.1"}
+	7927.1.1 = {add_trait="truth"}
+	7954.1.1 = {death="7954.1.1"}
+}
+34055999 = {
+	name="Сильварио"	# a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=34155999
+
+	7928.1.1 = {birth="7928.1.1"}
+	7954.1.1 = {add_trait="truth"}
+	7970.1.1 = {death="7970.1.1"}
+}
+150300539 = {
+	name="Ниэссос"	# a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=34055999
+
+	7960.1.1 = {birth="7960.1.1"}
+	7970.1.1 = {add_trait="truth"}
+	8029.1.1 = {death="8029.1.1"}
+}
+100300539 = {
+	name="Донифос"	# a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=150300539
+
+	7990.1.1 = {birth="7990.1.1"}
+	8022.1.1 = {add_trait=poor_warrior}
+	8029.1.1 = {add_trait="truth"}
+	8075.1.1 = {death="8075.1.1"}
+}
+104300539 = {
+	name="Орбело"	# a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=100300539
+
+	8034.1.1 = {birth="8034.1.1"}
+	8050.1.1 = {add_trait=skilled_warrior}
+	8075.1.1 = {add_trait="truth"}
+	8077.1.1 = {death="8077.1.1"}
+}
+106300539 = {
+	name="Оро"	# a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=104300539
+
+	8055.1.1 = {birth="8055.1.1"}
+	8071.1.1 = {add_trait=skilled_warrior}
+	8077.1.1 = { add_trait="truth" }
+	8115.1.1 = {death="8115.1.1"}
+}
+107300539 = {
+	name="Гилено"	# a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=106300539
+
+	8076.1.1 = {birth="8076.1.1"}
+	8092.1.1 = {add_trait=poor_warrior}
+	8095.1.1 = {add_spouse=207300539}
+	8115.1.1 = { add_trait="truth" }
+	8125.1.1 = {death="8125.1.1"}
+}
+207300539 = {
+	name="Мирмеллиос"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8076.1.1 = {birth="8076.1.1"}
+	8125.1.1 = {death="8125.1.1"}
+}
+108300539 = {
+	name="Лисандро"	# a lord
+	dynasty=55999
+	
+	stewardship=8
+	martial=2
+	diplomacy=7
+	intrigue=3
+	learning=3
+
+	religion="weeping_lady"
+	culture="high_valyrian"
+
+	father=107300539
+	mother=207300539
+	
+	add_trait=ambitious
+	add_trait=ruthless
+	add_trait=gregarious
+	add_trait=lustful
+	add_trait=midas_touched
+	add_trait=quick
+
+	8092.1.1 = {
+		birth="8092.1.1"
+		effect = { culture = lysene }
+	}
+	8108.1.1 = {add_trait=trained_warrior add_spouse=208300539}
+	8125.1.1 = { add_trait="truth" }
+	8130.1.1 = { 
+		give_nickname=nick_the_magnificent
+	}
+	8135.12.2 = { #day after his brother
+		culture = lysene
+		death = {
+			death_reason = death_murder_unknown # the Iron Bank will have its due
+			killer=500515
+		}
+	}
+}
+208300539 = {
+	name="Лотея"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8095.1.1 = {birth="8095.1.1"}
+	8140.1.1 = {death="8140.1.1"}
+}
+109300539 = {
+	name="Дразенко"	# Prince Consort of Dorne
+	dynasty=55999
+	
+	diplomacy=8
+
+	religion="weeping_lady"
+	culture="high_valyrian"
+
+	father=107300539
+	mother=207300539
+	
+	add_trait=ambitious
+	add_trait=grey_eminence
+
+	8095.1.1 = {
+		birth="8095.1.1"
+		effect = { culture = lysene }
+	}
+	8111.1.1 = {add_trait=skilled_warrior}
+	8135.12.1 = {
+		culture = lysene
+		death = {
+			death_reason = death_murder_unknown # the Iron Bank will have its due
+			killer=500515
+		}
+	}
+}
+110300539 = {
+	name="Лисаро"	# A Lord
+	dynasty=55999
+	
+	stewardship=4
+	diplomacy=1
+	intrigue=3
+	martial=3
+	learning=4
+
+	religion="weeping_lady"
+	culture="high_valyrian"
+
+	father=108300539
+	mother=208300539
+	
+	add_trait=indulgent_wastrel
+	add_trait=greedy
+	add_trait=proud
+	add_trait=ambitious
+	add_trait=wroth
+	add_trait=rude
+	add_trait=lustful
+
+	8108.1.1 = {
+		birth="8108.1.1"
+		effect = { culture = lysene }
+	}
+	8124.1.1={add_spouse=88000814}
+	8136.1.1 = {
+		culture = lysene
+		death = {
+			death_reason = death_execution #scourged to death
+		}
+	}
+}
+88000814 = {
+	name="Лисара"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8105.1.1 = {birth="8105.1.1"}
+	8147.1.1 = {death="8147.1.1"}
+}
+##Лисаро's daughters##
+88000815 = {
+	name="Ларра"	# not a lord
+	dynasty=55999
+	female=yes
+
+	religion="weeping_lady"
+	culture="high_valyrian"
+
+	father=110300539
+	mother=88000814
+
+	8125.1.1 = {
+		birth="8125.1.1"
+		effect = { culture = lysene }
+	}
+	8189.1.1 = {
+		culture = lysene
+		death="8189.1.1"
+	}
+}
+88000816 = {
+	name="Марра"	# not a lord
+	dynasty=55999
+	female=yes
+
+	religion="weeping_lady"
+	culture="high_valyrian"
+
+	father=110300539
+	mother=88000814
+
+	8126.1.1 = {
+		birth="8126.1.1"
+		effect = { culture = lysene }
+	}
+	8160.1.1 = {
+		culture = lysene
+		death="8160.1.1"
+	}
+}
+####
+88000808 = {
+	name="Лисара"	# not a lord
+	dynasty=55999
+	female=yes
+
+	religion="weeping_lady"
+	culture="high_valyrian"
+
+	father=108300539
+	mother=208300539
+
+	8109.1.1 = {
+		birth="8109.1.1"
+		effect = { culture = lysene }
+	}
+	8138.1.1 = {
+		culture = lysene
+		death="8138.1.1"
+	}
+}
+88000809 = {
+	name="Драко"	# not a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="high_valyrian"
+
+	father=108300539
+	mother=208300539
+
+	8110.1.1 = {
+		birth="8110.1.1"
+		effect = { culture = lysene }
+	}
+	8170.1.1 = {
+		culture = lysene
+		death="8170.1.1"
+	}
+}
+88000810 = {
+	name="Фредо"	# not a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="high_valyrian"
+
+	father=108300539
+	mother=208300539
+
+	8111.1.1 = {
+		birth="8111.1.1"
+		effect = { culture = lysene }
+	}
+	8155.1.1 = {
+		culture = lysene
+		death="8155.1.1"
+	}
+}
+88000811 = {
+	name="Марра"	# not a lord
+	dynasty=55999
+	female=yes
+
+	religion="weeping_lady"
+	culture="high_valyrian"
+
+	father=108300539
+	mother=208300539
+
+	8112.1.1 = {
+		birth="8112.1.1"
+		effect = { culture = lysene }
+	}
+	8139.1.1 = {
+		culture = lysene
+		death="8139.1.1"
+	}
+}
+159300539 = {
+	name="Ларра"	# Married Визерис II Targaryen
+	female=yes
+	dynasty=55999
+	dna="akaiangicdp"
+	properties="0e00"
+
+	religion="weeping_lady"
+	culture="high_valyrian"
+	
+	add_trait=fair
+	add_trait=shy
+	add_trait=proud
+	add_trait=familyperson
+	add_trait=zealous #refused to convert
+
+	father=108300539
+	mother=208300539
+
+	8115.1.1 = {
+		birth="8115.1.1"
+		effect = { culture = lysene }
+	}
+	8139.6.1 = {
+		effect = {
+			b_rogare = { holder_scope = { ROOT = { move_character = PREV } } }
+		}
+	}
+	8145.1.1 = {
+		culture = lysene
+		death="8145.1.1"
+	}
+}
+112300539 = {
+	name="Моредо"	# not a lord
+	dynasty=55999
+	
+	martial=7
+
+	religion="weeping_lady"
+	culture="high_valyrian"
+
+	father=108300539
+	mother=208300539
+	
+	add_trait=skilled_tactician
+	add_trait=diligent
+	add_trait=ambitious
+	add_trait=brave
+	add_trait=ruthless
+
+	8116.1.1 = {
+		birth="8116.1.1"
+		effect = { culture = lysene }
+	}
+	8132.1.1={add_trait=skilled_warrior}
+	8134.6.1 = {
+		effect = {
+			if = {
+				limit = { 
+					is_ruler = no 
+					NOT = { year = 8136 }
+				}
+				e_iron_throne = { holder_scope = { ROOT = { move_character = PREV } } }
+			}
+		}
+	}
+	8135.12.2 = { add_trait="truth" }
+	8165.1.1 = {
+		culture = lysene
+		death="8165.1.1"
+	}
+}
+88000812 = {
+	name="Лото"	# not a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="high_valyrian"
+
+	father=108300539
+	mother=208300539
+	
+	add_trait=fortune_builder
+	add_trait=diligent
+	add_trait=proud
+	add_trait=ambitious
+	add_trait=greedy
+
+	8117.1.1 = {
+		birth="8117.1.1"
+		effect = { culture = lysene }
+	}
+	8134.6.1 = {
+		effect = {
+			if = {
+				limit = { 
+					is_ruler = no 
+					NOT = { year = 8136 }
+				}
+				e_iron_throne = { holder_scope = { ROOT = { move_character = PREV } } }
+			}
+		}
+	}
+	8136.1.1={
+		effect = {
+			if = {
+				limit = { has_dlc = "Reapers" }
+				add_trait = one_handed
+			}
+			if = {
+				limit = { NOT = { has_dlc = "Reapers" } }
+				add_trait = "disfigured_AGOT"
+			}
+		}
+	}
+	8156.1.1 = {
+		culture = lysene
+		death="8156.1.1"
+	}
+}
+88000813 = {
+	name="Роджерио"	# not a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="high_valyrian"
+
+	father=108300539
+	mother=208300539
+	
+	add_trait=flamboyant_schemer
+	add_trait=diligent
+	add_trait=gregarious
+	add_trait=ambitious
+	add_trait=lustful
+
+	8118.1.1 = {
+		birth="8118.1.1"
+		effect = { culture = lysene }
+	}
+	8134.6.1 = {
+		effect = {
+			if = {
+				limit = { 
+					is_ruler = no 
+					NOT = { year = 8136 }
+				}
+				e_iron_throne = { holder_scope = { ROOT = { move_character = PREV } } }
+			}
+		}
+	}
+	8178.1.1 = {
+		culture = lysene
+		death="8178.1.1"
+	}
+}
+##Лисандро's bastards##
+88000817= {
+	name="Серенея"	# not a lord
+	female=yes
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=108300539
+
+	add_trait=bastard
+
+	8108.1.1 = {birth="8108.1.1"}
+	8187.1.1 = {death="8187.1.1"}
+}
+88000818= {
+	name="Мисария"	# not a lord
+	female=yes
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=108300539
+
+	add_trait=bastard
+
+	8109.1.1 = {birth="8109.1.1"}
+	8174.1.1 = {death="8174.1.1"}
+}
+88000819= {
+	name="Торрео"	# not a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=108300539
+
+	add_trait=bastard
+
+	8110.1.1 = {birth="8110.1.1"}
+	8160.1.1 = {death="8160.1.1"}
+}
+88000820= {
+	name="Маттено"	# not a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=108300539
+
+	add_trait=bastard
+
+	8111.1.1 = {birth="8111.1.1"}
+	8159.1.1 = {death="8159.1.1"}
+}
+88000821= {
+	name="Тигаро"	# not a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=108300539
+
+	add_trait=bastard
+
+	8112.1.1 = {birth="8112.1.1"}
+	8150.1.1 = {death="8150.1.1"}
+}
+88000822= {
+	name="Моррео"	# not a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=108300539
+
+	add_trait=bastard
+
+	8113.1.1 = {birth="8113.1.1"}
+	8161.1.1 = {death="8161.1.1"}
+}
+88000823= {
+	name="Лисоно"	# not a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=108300539
+
+	add_trait=bastard
+
+	8114.1.1 = {birth="8114.1.1"}
+	8138.1.1 = {death="8138.1.1"}
+}
+88000824= {
+	name="Мирмадора"	# not a lord
+	dynasty=55999
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=108300539
+
+	add_trait=bastard
+
+	8115.1.1 = {birth="8115.1.1"}
+	8176.1.1 = {death="8176.1.1"}
+}
+88000825= {
+	name="Самарро"	# not a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=108300539
+
+	add_trait=bastard
+
+	8116.1.1 = {birth="8116.1.1"}
+	8158.1.1 = {death="8158.1.1"}
+}
+88000826= {
+	name="Саргосо"	# not a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=108300539
+
+	add_trait=bastard
+
+	8117.1.1 = {birth="8117.1.1"}
+	8143.1.1 = {death="8143.1.1"}
+}
+88000827= {
+	name="Сильварио"	# not a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=108300539
+
+	add_trait=bastard
+
+	8118.1.1 = {birth="8118.1.1"}
+	8170.1.1 = {death="8170.1.1"}
+}
+88000828= {
+	name="Перено"	# not a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=108300539
+
+	add_trait=bastard
+
+	8119.1.1 = {birth="8119.1.1"}
+	8162.1.1 = {death="8162.1.1"}
+}
+88000829= {
+	name="Бамбарро"	# not a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=108300539
+
+	add_trait=bastard
+
+	8120.1.1 = {birth="8120.1.1"}
+	8155.1.1 = {death="8155.1.1"}
+}
+88000830= {
+	name="Салладор"	# not a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=108300539
+
+	add_trait=bastard
+
+	8121.1.1 = {birth="8121.1.1"}
+	8190.1.1 = {death="8190.1.1"}
+}
+88000831= {
+	name="Саатос"	# not a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=108300539
+
+	add_trait=bastard
+
+	8122.1.1 = {birth="8122.1.1"}
+	8182.1.1 = {death="8182.1.1"}
+}
+88000832= {
+	name="Трегар"	# not a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=108300539
+
+	add_trait=bastard
+
+	8123.1.1 = {birth="8123.1.1"}
+	8158.1.1 = {death="8158.1.1"}
+}
+####
+114300539 = {
+	name="Орбело"	# a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=112300539
+
+	8148.1.1 = {birth="8148.1.1"}
+	8160.1.1 = { add_trait="truth" }
+	8164.1.1 = {add_trait=skilled_warrior}
+	8209.1.1 = {death="8209.1.1"}
+}
+119300539 = {
+	name="Морео"	# a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=114300539
+
+	8171.1.1 = {birth="8171.1.1"}
+	8187.1.1 = {add_trait=trained_warrior}
+	8209.1.1 = { add_trait="truth" }
+	8233.1.1 = {death="8233.1.1"}
+}
+120300539 = {
+	name="Гилено"	# a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=119300539
+
+	8191.1.1 = {birth="8191.1.1"}
+	8207.1.1 = {add_trait=poor_warrior}
+	8233.1.1 = { add_trait="truth" }
+	8252.1.1 = {death="8252.1.1"}
+}
+123300539 = {
+	name="Орбело"	# a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=120300539
+
+	8218.1.1 = {birth="8218.1.1"}
+	8234.1.1 = {add_trait=trained_warrior}
+	8252.1.1 = { add_trait="truth" }
+	8260.1.1 = {death="8260.1.1"}
+}
+125300539 = {
+	name="Баян"	# a lord
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=123300539
+
+	8253.1.1 = {birth="8253.1.1"}
+	8260.1.1 = { add_trait="truth" }
+	8269.1.1 = {add_trait=trained_warrior}
+	8275.1.1 = {add_spouse=225300539}
+}
+225300539 = {
+	name="Серра"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8253.1.1 = {birth="8253.1.1"}
+}
+151300539 = {
+	name="Гилено"
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=125300539
+	mother=225300539
+
+	8278.1.1 = {birth="8278.1.1"}
+}
+152300539 = {
+	name="Мелларио"	
+	female=yes
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=125300539
+	mother=225300539
+
+	8281.1.1 = {birth="8281.1.1"}
+}
+153300539 = {
+	name="Тибаро"
+	dynasty=55999
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=125300539
+	mother=225300539
+
+	8284.1.1 = {birth="8284.1.1"}
+}
+
+### House Lohar
+345300523 = {
+	name="Лисандро"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	7806.1.1 = {birth="7806.1.1"}
+	7886.1.1 = {death="7886.1.1"}
+}
+344300523 = {
+	name="Мелио"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=345300523
+
+	7830.1.1 = {birth="7830.1.1"}
+	7901.1.1 = {death="7901.1.1"}
+}
+343300523 = {
+	name="Саллелло"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=344300523
+
+	7855.1.1 = {birth="7855.1.1"}
+	7912.1.1 = {death="7912.1.1"}
+}
+342300523 = {
+	name="Тихирос"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=343300523
+
+	7878.1.1 = {birth="7878.1.1"}
+	7935.1.1 = {death="7935.1.1"}
+}
+341300523 = {
+	name="Коссокво"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=342300523
+
+	7905.1.1 = {birth="7905.1.1"}
+	7966.1.1 = {death="7966.1.1"}
+}
+340300523 = {
+	name="Эззо"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=341300523
+
+	7929.1.1 = {birth="7929.1.1"}
+	7970.1.1 = {death="7970.1.1"}
+}
+150300523 = {
+	name="Мейлис"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=340300523
+
+	7960.1.1 = {birth="7960.1.1"}
+	8018.1.1 = {death="8018.1.1"}
+}
+100300523 = {
+	name="Бегго"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=150300523
+
+	7993.1.1 = {birth="7993.1.1"}
+	8028.1.1 = {add_trait=poor_warrior}
+	8080.1.1 = {death="8080.1.1"}
+}
+102300523 = {
+	name="Аллакво"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=100300523
+
+	8033.1.1 = {birth="8033.1.1"}
+	8049.1.1 = {add_trait=trained_warrior}
+	8086.1.1 = {death="8086.1.1"}
+}
+103300523 = {
+	name="Пинто"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=102300523
+
+	8053.1.1 = {birth="8053.1.1"}
+	8069.1.1 = {add_trait=trained_warrior}
+	8115.1.1 = {death = {death_reason = death_murder}}
+}
+106300523 = {
+	name="Шарако"	# a lord, canon
+	dynasty=300523
+	
+	martial = 9
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=103300523
+	
+	add_trait = skilled_tactician
+	add_trait = ambitious
+	add_trait = lustful
+
+	8079.1.1 = {birth="8079.1.1"}
+	8095.1.1 = {add_trait=skilled_warrior}
+	8131.9.1 = { death = { death_reason = death_murder } } #murdered by rival
+}
+111300523 = {
+	name="Трегар"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=106300523
+
+	8105.1.1 = {birth="8105.1.1"}
+	8121.1.1 = {add_trait=trained_warrior}
+	8160.1.1 = {death="8160.1.1"}
+}
+110300523 = {
+	name="Мелларио"	# a lord
+	female=yes
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=111300523
+
+	8129.1.1 = {birth="8129.1.1"}
+	8166.1.1 = { death = { death_reason = death_murder } }
+}
+112300523 = {
+	name="Иллирио"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	mother=110300523
+
+	8148.1.1 = {birth="8148.1.1"}
+	8168.1.1 = {add_trait=poor_warrior}
+	8208.1.1 = {death="8208.1.1"}
+}
+114300523 = {
+	name="Тихо"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=112300523
+
+	8170.1.1 = {birth="8170.1.1"}
+	8186.1.1 = {add_trait=skilled_warrior}
+	8232.1.1 = {death="8232.1.1"}
+}
+118300523 = {
+	name="Трегар"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=114300523
+
+	8204.1.1 = {birth="8204.1.1"}
+	8220.1.1 = {add_trait=poor_warrior}
+	8244.1.1 = {death="8244.1.1"}
+}
+121300523 = {
+	name="Гилено"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=118300523
+
+	8226.1.1 = {birth="8226.1.1"}
+	8242.1.1 = {add_trait=poor_warrior}
+	8277.1.1 = {death="8277.1.1"}
+}
+122300523 = {
+	name="Иллирио"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=121300523
+
+	8260.1.1 = {birth="8260.1.1"}
+	8276.1.1 = {add_trait=skilled_warrior}
+	8281.1.1 = {add_spouse=222300523}
+}
+222300523 = {
+	name="Беллагера"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8260.1.1 = {birth="8260.1.1"}
+}
+127300523 = {
+	name="Тернесио"
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=122300523
+	mother=222300523
+
+	8283.1.1 = {birth="8283.1.1"}
+}
+
+### House Haen
+344300263 = {
+	name="Тиберо"	# a lord
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	7827.1.1 = {birth="7827.1.1"}
+	7878.1.1 = {death="7878.1.1"}
+}
+343300263 = {
+	name="Мирмеллиос"	# a lord
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=344300263
+
+	7850.1.1 = {birth="7850.1.1"}
+	7906.1.1 = {death="7906.1.1"}
+}
+342300263 = {
+	name="Динерро"	# a lord
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=343300263
+
+	7882.1.1 = {birth="7882.1.1"}
+	7944.1.1 = {death="7944.1.1"}
+}
+341300263 = {
+	name="Дрегар"	# a lord
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=342300263
+
+	7910.1.1 = {birth="7910.1.1"}
+	7961.1.1 = {death="7961.1.1"}
+}
+340300263 = {
+	name="Салладан"	# a lord
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=341300263
+
+	7931.1.1 = {birth="7931.1.1"}
+	7970.1.1 = {death="7970.1.1"}
+}
+1300263 = {
+	name="Тибио"	# a lord
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=340300263
+
+	7956.1.1 = {birth="7956.1.1"}
+	8016.1.1 = {death="8016.1.1"}
+}
+3300263 = {
+	name="Трегар"	# a lord
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=1300263
+
+	7978.1.1 = {birth="7978.1.1"}
+	8045.1.1 = {death="8045.1.1"}
+}
+6300263 = {
+	name="Драко"	# a lord
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=3300263
+
+	8005.1.1 = {birth="8005.1.1"}
+	8067.1.1 = {death="8067.1.1"}
+}
+11300263 = {
+	name="Лисоно"	# a lord
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=6300263
+
+	8036.1.1 = {birth="8036.1.1"}
+	8103.1.1 = {death="8103.1.1"}
+}
+13300263 = {
+	name="Тигаро"	# a lord
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=11300263
+
+	8057.1.1 = {birth="8057.1.1"}
+	8115.1.1 = {death="8115.1.1"}
+}
+16300263 = {
+	name="Моредо"	# not a lord
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=13300263
+
+	8075.1.1 = {birth="8075.1.1"}
+	8122.1.1 = {death="8122.1.1"}
+}
+18300263 = {
+	name="Торрео"	# Canon
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=16300263
+
+	add_trait=fortune_builder
+	add_trait=diligent
+	add_trait=gregarious
+	add_trait=ambitious
+	add_trait=lustful
+
+	8093.1.1 = {
+		birth="8093.1.1"
+	}
+	8109.1.1 = {add_spouse=19300263}
+	8135.12.3 = {
+		death = {
+			death_reason = death_murder_poison
+		}
+	}
+}
+19300263 = {
+	name="Амалия"	
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8093.1.1 = {
+		birth="8093.1.1"
+	}
+	8135.12.3 = {
+		death = {
+			death_reason = death_murder_poison
+		}
+	}
+}
+20300263 = {
+	name="Мирио"	# not a lord
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=16300263
+
+	8095.1.1 = {
+		birth="8095.1.1"
+	}
+	8135.12.3 = {
+		death = {
+			death_reason = death_murder_poison
+		}
+	}
+}
+22300263 = {
+	name="Аллия"	# not a lord
+	dynasty=300263
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=16300263
+
+	8102.1.1 = {
+		birth="8102.1.1"
+	}
+	8135.12.3 = {
+		death = {
+			death_reason = death_murder_poison
+		}
+	}
+}
+23300263 = {
+	name="Тиберо"	# not a lord
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=16300263
+
+	8104.1.1 = {
+		birth="8104.1.1"
+	}
+	8135.12.3 = {
+		death = {
+			death_reason = death_murder_poison
+		}
+	}
+}
+
+24300263 = {
+	name="Соранна"	# not a lord
+	female=yes
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=16300263
+
+	8111.1.1 = {
+		birth="8111.1.1"
+	}
+	8135.12.3 = {
+		death = {
+			death_reason = death_murder_poison
+		}
+	}
+}
+25300263 = {
+	name="Мирмадора"	# Canon, hoped to wed a king
+	female=yes
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=18300263
+	mother=19300263
+
+	add_trait=fair
+	add_trait=ambitious
+	add_trait=lustful
+
+	8117.1.1 = {
+		birth="8117.1.1"
+	}
+	8135.12.3 = {
+		death = {
+			death_reason = death_murder_poison
+		}
+	}
+}
+26300263 = {
+	name="Норессия"	# not a lord
+	female=yes
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=18300263
+	mother=19300263
+
+	8119.1.1 = {
+		birth="8119.1.1"
+	}
+	8135.12.3 = {
+		death = {
+			death_reason = death_murder_poison
+		}
+	}
+}
+27300263 = {
+	name="Серала"	# not a lord
+	female=yes
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=18300263
+	mother=19300263
+
+	8123.1.1 = {
+		birth="8123.1.1"
+	}
+	8135.12.3 = {
+		death = {
+			death_reason = death_murder_poison
+		}
+	}
+}
+28300263 = {
+	name="Гило"	# a lord
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=20300263
+
+	8120.1.1 = {
+		birth="8120.1.1"
+	}
+	8183.1.1 = {death="8183.1.1"}
+}
+30300263 = {
+	name="Дензо"	# a lord
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=28300263
+
+	8149.1.1 = {
+		birth="8149.1.1"
+	}
+	8215.1.1 = {death="8215.1.1"}
+}
+34300263 = {
+	name="Хараян"	# a lord
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=30300263
+
+	8174.1.1 = {
+		birth="8174.1.1"
+	}
+	8241.1.1 = {death="8241.1.1"}
+}
+36300263 = {
+	name="Ормаллос"	# a lord
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=34300263
+
+	8201.1.1 = {
+		birth="8201.1.1"
+	}
+	8260.1.1 = {death="8260.1.1"}
+}
+38300263 = {
+	name="Таландор"	# a lord
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=36300263
+
+	8230.1.1 = {
+		birth="8230.1.1"
+	}
+	8296.1.1 = {death="8296.1.1"}
+}
+40300263 = {
+	name="Маноло"	# a lord
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=38300263
+
+	8257.1.1 = {
+		birth="8257.1.1"
+	}
+	8273.1.1 = {add_spouse=41300263}
+}
+41300263 = {
+	name="Роанна"	# not a lord
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	8257.1.1 = {
+		birth="8257.1.1"
+	}
+}
+43300263 = {
+	name="Мирио"	# not a lord
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=40300263
+	mother=41300263
+
+	8279.1.1 = {
+		birth="8279.1.1"
+	}
+}
+44300263 = {
+	name="Мерио"	# not a lord
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=40300263
+	mother=41300263
+
+	8282.1.1 = {
+		birth="8282.1.1"
+	}
+}
+45300263 = {
+	name="Морио"	# not a lord
+	dynasty=300263
+
+	religion="weeping_lady"
+	culture="lysene"
+	
+	father=40300263
+	mother=41300263
+
+	8285.1.1 = {
+		birth="8285.1.1"
+	}
+}
+
+
+### Other Canon Characters
+600000047 = { #mistress of Aegon IV
+	name="Серенея"
+	dynasty=300505
+	female=yes
+	
+	religion="rhllor"
+	culture="lysene"
+	
+	martial=2
+	diplomacy=7
+	intrigue=5
+	stewardship=5
+	add_trait="fair"
+	add_trait="lustful"
+	add_trait="proud"
+	add_trait="rude"
+	add_trait="scholar"
+	add_trait="charismatic_negotiator"
+	
+	8139.1.1={
+		birth="8139.1.1" 
+		effect = { set_immune_to_pruning = yes }
+	}
+	8180.1.1={
+		employer=77020
+	} 
+	8181.1.1 = {death = {death_reason = death_childbirth}} # Childbirth
+}
+
+#######################
+###Lysene Dragonlord###
+#######################
+### House Sonaryen
+100570255 = {
+	name="Орис"	# not a lord
+	dynasty=496026
+
+	religion="valyrian_rel"
+	culture="high_valyrian"
+
+	7835.1.1 = {birth="7835.1.1"}
+	7851.1.1 = {add_trait=trained_warrior add_trait=dragon_rider}
+	7898.1.1 = { #dov
+		death = { 
+			death_reason = death_missing 
+		}
+	}
+}
+101570255 = {
+	name="Визерис"	# not a lord
+	dynasty=496026
+
+	religion="valyrian_rel"
+	culture="high_valyrian"
+
+	father=100570255
+
+	7857.1.1 = {birth="7857.1.1"}
+	7873.1.1 = {add_trait=skilled_warrior add_trait=dragon_rider}
+	7898.1.1 = { #dov
+		death = { 
+			death_reason = death_missing 
+		}
+	}
+}
+102570255 = {
+	name="Эйлинор"	# not a lord
+	female=yes
+	dynasty=496026
+
+	religion="valyrian_rel"
+	culture="high_valyrian"
+
+	father=100570255
+
+	7859.1.1 = {birth="7859.1.1"}
+	7875.1.1 = {add_spouse=101570255}
+	7898.1.1 = { #dov
+		death = { 
+			death_reason = death_missing 
+		}
+	} 
+}
+600000070 = { # Dragonrider who was in Lys during Doom of Valyria
+	name="Джейнарис"
+	dynasty=496026
+	
+	religion = valyrian_rel
+	culture="high_valyrian"
+	
+	father=100570255
+	
+	add_trait = dragon_rider
+	add_trait = lustful
+	add_trait = hedonist
+	add_trait = slothful
+	add_trait = valyrian_steel
+	
+	7860.1.1 = {
+		birth="7860.1.1"
+		effect = {
+			set_dynasty_flag = high_valyrian
+			set_character_flag = high_valyrian
+			create_bloodline = {
+				type = blood_of_the_dragon
+			}
+		}
+	}
+	7880.1.1 = {
+		employer=34455925 # Самарро Erosenes
+	}
+	7898.6.1 = { #dov
+		death = { 
+			death_reason = death_murder
+			killer = 34455925 # Magister Самарро Erosenes
+		}
+	}
+}

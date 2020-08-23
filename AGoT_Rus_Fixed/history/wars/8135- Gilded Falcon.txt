@@ -1,0 +1,29 @@
+name = "Гражданская война в Долине"
+
+casus_belli={
+	casus_belli=other_claim 
+	actor=88000840 #Isembard Arryn
+	thirdparty=3011186 #Illifer Grafton
+	recipient=5050178 #Joffrey Arryn
+	landed_title=k_vale
+	date=8135.6.1
+}
+
+8135.6.1 = {
+	add_defender = 5050178 #Joffrey Arryn
+	add_attacker = 3011186 #Illifer Grafton
+	start_war = yes
+	vassal_liege = {
+		vassal = 3011186 #Illifer Grafton
+		liege = 5050178 #Joffrey Arryn
+	}
+}
+
+8136.2.1 = {
+	end_war = yes
+	rem_attacker = 3011186 #Illifer Grafton
+	rem_defender = 5050178 #Joffrey Arryn
+}
+
+
+                                                                                                                                                                                                                                                                                                                                   

@@ -1,0 +1,424 @@
+######################
+###Written by Rodri###
+######################
+
+character_event = {
+	id = 250601
+	desc = "EVTDESC250601"
+
+	picture = "GFX_davos"
+	border = "GFX_event_normal_frame_war"
+	
+	only_playable = yes
+	war = yes
+	
+	trigger = {
+		NOT = { has_global_flag = davos_appeared }
+		year = 8270
+		NOT = { year = 8300 }
+		house_seaworth = {
+			is_adult = yes
+			is_alive = yes
+			NOT = { trait = incapable }
+			trait = quick
+			is_ruler = no
+		}
+		has_landed_title = k_stormlands
+		has_landed_title = c_storms_end
+		siege = {
+			is_attacker = no
+			location = { province_id = 304 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA250601"
+		set_global_flag = davos_appeared
+		house_seaworth = {
+			limit = {
+				is_alive = yes
+				NOT = { trait = incapable }
+				trait = quick
+			}
+			hidden_tooltip = {
+				any_spouse = {
+					limit = { is_alive = yes is_ruler = no }
+					move_character = ROOT
+				}	
+				any_child = {
+					if = {
+						limit = { is_ruler = no }						
+						move_character = ROOT
+					}	
+					if = {
+						limit = { 
+							OR = {
+								dynasty = 0
+								dynasty = ROOT
+							}
+						}	
+						dynasty = 9110
+					}	
+				}	
+			}	
+			move_character = ROOT
+			knight_character_effect = yes
+			dynasty = 9110			
+			opinion = {
+				who = ROOT
+				modifier = opinion_loyal_servant
+			}
+			hidden_tooltip = {
+				reverse_opinion = {
+					who = ROOT
+					modifier = opinion_loyal_servant
+				}
+				give_nickname = nick_the_onion_knight
+				remove_trait = house_seaworth
+				ROOT = {
+					if = {
+						limit = { ai = no }
+						chronicle = {
+							entry = CHRONICLE_DAVOS_APPEARS
+							portrait = [Prev.GetID]
+						}
+					}
+				}
+				set_dynasty_flag = has_dynamic_coa
+				character_event = { id = dynamic_coa.1 }
+			}	
+		}
+		# some stuff alleviating siege? morale up?
+		siege = {
+			morale = 0.10
+		}
+	}
+}
+
+# character_event = {
+	# id = 250602
+	# desc = "EVTDESC250602"
+	# is_triggered_only = yes
+	# option = {
+		# name = "you shouldnt be seeing this"
+		# give_nickname = nick_the_onion_knight
+		# if = {
+			# limit = {
+				# NOT = { year = 8286 }
+			# }
+			# create_character = {
+				# name = "Мария"
+				# random_traits = yes
+				# age = 20
+				# female = yes
+			# }
+			# new_character = {
+				# add_spouse = ROOT
+				
+				# create_character = {
+					# name = "Дейл"
+					# age = 3
+					# random_traits = yes
+					# dynasty = 9110
+					# female = no
+				# }
+				# new_character = {
+					# set_father = ROOT
+					# set_mother = PREV
+				# }
+				# create_character = {
+					# name = "Аллард"
+					# age = 2
+					# random_traits = yes
+					# dynasty = 9110
+					# female = no
+				# }
+				# new_character = {
+					# set_father = ROOT
+					# set_mother = PREV
+				# }
+				# create_character = {
+					# name = "Маттос"
+					# age = 1
+					# random_traits = yes
+					# dynasty = 9110
+					# female = no
+				# }
+				# new_character = {
+					# set_father = ROOT
+					# set_mother = PREV
+				# }
+			# }
+			
+		# }
+		# if = {
+			# limit = {
+				# year = 8286
+				# NOT = { year = 8290 }
+			# }
+			# create_character = {
+				# name = "Мария"
+				# age = 25
+				# female = yes
+			# }
+			# new_character = {
+				# add_spouse = ROOT
+				
+				# create_character = {
+					# name = "Дейл"
+					# age = 8
+					# random_traits = yes
+					# dynasty = 9110
+					# female = no
+				# }
+				# new_character = {
+					# set_father = ROOT
+					# set_mother = PREV
+				# }
+				# create_character = {
+					# name = "Аллард"
+					# age = 7
+					# random_traits = yes
+					# dynasty = 9110
+					# female = no
+				# }
+				# new_character = {
+					# set_father = ROOT
+					# set_mother = PREV
+				# }
+				# create_character = {
+					# name = "Маттос"
+					# age = 6
+					# random_traits = yes
+					# dynasty = 9110
+					# female = no
+				# }
+				# new_character = {
+					# set_father = ROOT
+					# set_mother = PREV
+				# }
+				# create_character = {
+					# name = "Марик"
+					# age = 4
+					# random_traits = yes
+					# dynasty = 9110
+					# female = no
+				# }
+				# new_character = {
+					# set_father = ROOT
+					# set_mother = PREV
+				# }
+				# create_character = {
+					# name = "Деван"
+					# age = 3
+					# random_traits = yes
+					# dynasty = 9110
+					# female = no
+				# }
+				# new_character = {
+					# set_father = ROOT
+					# set_mother = PREV
+				# }
+				# create_character = {
+					# name = "Станнис"
+					# age = 1
+					# random_traits = yes
+					# dynasty = 9110
+					# female = no
+				# }
+				# new_character = {
+					# set_father = ROOT
+					# set_mother = PREV
+				# }
+			# }
+		# }
+		# if = {
+			# limit = {
+				# year = 8290
+				# NOT = { year = 8295 }
+			# }
+			# create_character = {
+				# name = "Мария"
+				# age = 30
+				# female = yes
+			# }
+			# new_character = {
+				# add_spouse = ROOT
+				
+				# create_character = {
+					# name = "Дейл"
+					# age = 13
+					# random_traits = yes
+					# dynasty = 9110
+					# female = no
+				# }
+				# new_character = {
+					# set_father = ROOT
+					# set_mother = PREV
+				# }
+				# create_character = {
+					# name = "Аллард"
+					# age = 12
+					# random_traits = yes
+					# dynasty = 9110
+					# female = no
+				# }
+				# new_character = {
+					# set_father = ROOT
+					# set_mother = PREV
+				# }
+				# create_character = {
+					# name = "Маттос"
+					# age = 11
+					# random_traits = yes
+					# dynasty = 9110
+					# female = no
+				# }
+				# new_character = {
+					# set_father = ROOT
+					# set_mother = PREV
+				# }
+				# create_character = {
+					# name = "Марик"
+					# age = 9
+					# random_traits = yes
+					# dynasty = 9110
+					# female = no
+				# }
+				# new_character = {
+					# set_father = ROOT
+					# set_mother = PREV
+				# }
+				# create_character = {
+					# name = "Деван"
+					# age = 8
+					# random_traits = yes
+					# dynasty = 9110
+					# female = no
+				# }
+				# new_character = {
+					# set_father = ROOT
+					# set_mother = PREV
+				# }
+				# create_character = {
+					# name = "Станнис"
+					# age = 6
+					# random_traits = yes
+					# dynasty = 9110
+					# female = no
+				# }
+				# new_character = {
+					# set_father = ROOT
+					# set_mother = PREV
+				# }
+				# create_character = {
+					# name = "Стеффон"
+					# age = 2
+					# random_traits = yes
+					# dynasty = 9110
+					# female = no
+				# }
+				# new_character = {
+					# set_father = ROOT
+					# set_mother = PREV
+				# }
+			# }
+		# }
+		# if = {
+			# limit = {
+				# year = 8295
+			# }
+			# create_character = {
+				# name = "Мария"
+				# age = 35
+				# female = yes
+			# }
+			# new_character = {
+				# add_spouse = ROOT
+				
+				# create_character = {
+					# name = "Дейл"
+					# age = 18
+					# random_traits = yes
+					# dynasty = 9110
+					# female = no
+				# }
+				# new_character = {
+					# set_father = ROOT
+					# set_mother = PREV
+				# }
+				# create_character = {
+					# name = "Аллард"
+					# age = 17
+					# random_traits = yes
+					# dynasty = 9110
+					# female = no
+				# }
+				# new_character = {
+					# set_father = ROOT
+					# set_mother = PREV
+				# }
+				# create_character = {
+					# name = "Маттос"
+					# age = 16
+					# random_traits = yes
+					# dynasty = 9110
+					# female = no
+				# }
+				# new_character = {
+					# set_father = ROOT
+					# set_mother = PREV
+				# }
+				# create_character = {
+					# name = "Марик"
+					# age = 14
+					# random_traits = yes
+					# dynasty = 9110
+					# female = no
+				# }
+				# new_character = {
+					# set_father = ROOT
+					# set_mother = PREV
+				# }
+				# create_character = {
+					# name = "Деван"
+					# age = 13
+					# random_traits = yes
+					# dynasty = 9110
+					# female = no
+				# }
+				# new_character = {
+					# set_father = ROOT
+					# set_mother = PREV
+				# }
+				# create_character = {
+					# name = "Станнис"
+					# age = 11
+					# random_traits = yes
+					# dynasty = 9110
+					# female = no
+				# }
+				# new_character = {
+					# set_father = ROOT
+					# set_mother = PREV
+				# }
+				# create_character = {
+					# name = "Стеффон"
+					# age = 7
+					# random_traits = yes
+					# dynasty = 9110
+					# female = no
+				# }
+				# new_character = {
+					# set_father = ROOT
+					# set_mother = PREV
+				# }
+			# }
+		# }
+		# recalc_succession = yes
+	# }
+# }

@@ -1,0 +1,79 @@
+title_knight;Рацырь;x
+title_knight_desc;Помазать в рыцари Королевства;x
+EVTDESCknight.1;В знак признания вашей доблести и чести, септон предлагает помазать вас в рыцари.;x
+EVTOPTAknight.1;Наконец, признаны мои способности, я буду прославленным рыцарем!;x
+EVTOPTBknight.1;В пекло ваше 'сир'!;x
+EVTOPTCknight.1;Пусть воин направит мой путь!;x
+EVTDESCknight.2;Вы обращаете внимание на приехавшего рыцаря и оруженосца с ним. Вы думаете, попросить вашего опекуна сделать вас своим оруженосцем...;x
+EVTDESCknight.3;Ваш подопечный предлагает свои услуги в качестве оруженосца...;x
+EVTOPTAknight.3;Почему бы и нет, оруженосец - это не больно.;x
+EVTOPTBknight.3;Не гуди, малыш!;x
+EVTDESCknight.4;Я старею... Я слышу как другие издеваются надо мной за моей спиной. Я слишком стар, чтобы быть оруженосцем...;x
+EVTOPTAknight.4;Плевать на них, плевать на их мнение!;x
+EVTDESCknight.5;Лагерь был атакован вчера вечером, кажется, осажденные совсем отчаялись. Большинство людей были застигнуты врасплох, но не Вы... Вы были не только готовы к борьбе, но и некоторые мужи сплотились вокруг вас, и преуспели во время битвы. Один из рыцарей тут же посвятил вас в рыцари!;x
+EVTDESCknight.6;Враги на флангах! Вы сплотили несколько людей вокруг вас и отличились во время сражения. Один из рыцарей посвятил вас в рыцари здесь же!;x
+knight;Рыцарь;x
+knight_desc;Рыцарь. Помазанный и благословенный септоном, закаленный в битвах и тренировках;x
+squire;Оруженосец;x
+squire_desc;На службе у рыцаря;x
+squiering_refused;Отказано быть оруженосцем;x
+squiering_refused_desc;Рыцарь не позволил этому персонажу стать его оруженосцем.;x
+EVTDESCknight.7;Мой опекун отказался от моего предложения стать его оруженосцем. Я покраснел от злости и стыда. Я уже слышу, как люди подсмеиваются за моей спиной.;x
+EVTDESCknight.8;Я тренируюсьь день и ночь. Быть оруженосцем не легко, но это плата за славу!;x
+knight_son_bribe_septon;Купить рыцарство для персонажа [This.GetTitledFirstNameWithDynastyAndTitleNoRegnal];x
+knight_son_bribe_septon_desc;Дать взятку септону для помазания персонажа [This.GetTitledFirstNameWithDynastyAndTitleNoRegnal].;x
+knight_son;Рыцарь [This.GetTitledFirstNameWithDynastyAndTitleNoRegnal];x
+knight_son_desc;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] зарекомендовал себя прекрасным воином. Возможно, мы должны официально признать его мастерство.;x
+knight_daughter;Рыцарь [This.GetTitledFirstNameWithDynastyAndTitleNoRegnal];x
+knight_daughter_desc;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] показала себя прекрасным воином, равному любому рыцарю Королевской гвардии. Хотя это идет вразрез с традицией, возможно, мы должны официально признать её мастерство.;x
+buy_knighthood;Купить Рыцарство;x
+buy_knighthood_desc;Дать взятку септону за помазание персонажа [Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal];x
+EVTDESCknight.9;После краткого дознания септон готов помазать в рыцари вашего сына... за скромные пожертвования.;x
+EVTDESCknight.10;Ваш отец договорился с септоном, чтобы он помазал вас в рыцари!;x
+EVTDESCknight.11;Ваш [From.GetRootRelation] [From.GetFirstName] доказал всему своему окружению, что может быть прекрасным воином. Вы приказали [From.GetHerHim] встать на колени, и положили на [From.GetHerHis] плечо свой меч.\n\n'[From.GetFirstName] из Дома [From.GetOnlyDynastyName], во имя Воина, я призываю вас быть храбрым. Во имя Отца, я призываю вас быть справедливым. Во имя Матери, я призываю вас защищать юных и невинных. Во имя Девы, я призываю защищать всех женщин. Во имя Семерых, я призываю вас быть справедливым и честным.';x
+EVTOPTAknight.11;Встаньте, сир [From.GetFirstName];x
+EVTDESCknight.11B;Ваша [From.GetRootRelation] [From.GetFirstName] доказала всему своему окружению, что может быть прекрасным воином. Хоть это и против традиции, вы приказали ей встать на колени, и положили на её плечо свой меч.\n\n'[From.GetFirstName] из Дома [From.GetOnlyDynastyName], во имя Воина, я призываю вас быть храброй. Во имя Отца, я призываю вас быть справедливой. Во имя Матери, я призываю вас защищать юных и невинных. Во имя Девы, я призываю защищать всех женщин. Во имя Семерых, я призываю вас быть справедливой и честной.';x
+EVTOPTAknight.11B;Встаньте, леди [From.GetFirstName];x
+EVTDESCknight.11C;Ваш [From.GetRootRelation] [From.GetFirstName] доказал всему своему окружению, что может быть прекрасным воином. Вы приказали [From.GetHerHim] встать на колени, и положили на [From.GetHerHis] плечо свой меч.\n\n'[From.GetFirstName] из города [From.Liege.Capital.GetName], во имя Воина, я призываю вас быть храбрым. Во имя Отца, я призываю вас быть справедливым. Во имя Матери, я призываю вас защищать юных и невинных. Во имя Девы, я призываю защищать всех женщин. Во имя Семерых, я призываю вас быть справедливым и честным.';x
+EVTDESCknight.11D;Ваша [From.GetRootRelation] [From.GetFirstName] доказала всему своему окружению, что может быть прекрасным воином. Хоть это идет вразрез с традициями, вы приказали ей встать на колени, и положили на её плечо свой меч.\n\n'[From.GetFirstName] из города [From.Liege.Capital.GetName], во имя Воина, я призываю вас быть храброй. Во имя Отца, я призываю вас быть справедливой. Во имя Матери, я призываю вас защищать юных и невинных. Во имя Девы, я призываю защищать всех женщин. Во имя Семерых, я призываю вас быть справедливой и честной.';x
+EVTTITLEknight.12;Рыцарство;x
+EVTDESCknight.12;Ваш [FromFrom.GetRootRelation] [FromFrom.GetTitle] [FromFrom.GetFirstNameWithDynasty] решил, что вы достойны рыцарского звания. Вы преклоняете колени и [FromFrom.GetRootRelation] подносит меч к плечу.\n\n '[Root.GetFirstName] из Дома [Root.GetOnlyDynastyName], во имя Воина, я призываю вас быть храбрым. Во имя Отца, я призываю вас быть справедливым. Во имя Матери, я призываю вас защищать юных и невинных. Во имя Девы, я призываю защищать всех женщин. Во имя Семерых, я призываю вас быть справедливым и честным.';x
+EVTOPTAknight.12;Благодарю вас, [FromFrom.PrimaryTitle.GetFOA];x
+EVTDESCknight.13;Ваша дочь показала себя прекрасным воином, равному любому рыцарю Королевской гвардии. Хотя это идет вразрез с традицией, возможно, мы должны официально признать ее мастерство.;x
+EVTDESCknight.15;После краткого дознания, септон готов посвятить вас в рыцари... за хорошее пожертвование.;x
+EVTDESCknight.16;Мой опекун принял меня, как своего оруженосца!;x
+title_ser;Сир;x
+title_lady;Леди;x
+EVTDESCknight.17;Андальские легенды полны рассказов о великих рыцарях, но не все они настоящие рыцари, и не все настоящие рыцари рождаются дворянами. Рыцарь - святой воин Семерых, и только верующие могут взять на себя его роль. Вы были помазаны в рыцари и теперь можете использовать 'Сир' в своем титуле. ;x
+take_ward_squire;Взять оруженосца;x
+take_ward_squire_desc;Взять вашего подопечного [Root.GetTitledFirstName] в оруженосцы.;x
+take_ward_squire_named;[Root.GetTitledFirstName] - взять в оруженосцы;x
+EVTDESCknight.19;Ваш оруженосец [From.GetFirstNameWithDynasty] наконец-то стал взрослым мужчиной, [From.GetHerHis] тренировки под вашим надзором закончены. [From.GetFirstName] может быть посвящён Вами в рыцари, если конечно сочтете [From.GetHerHis] достойным;x
+OPTAknight.19;Да, [From.GetSheHe] достоин;x
+OPTBknight.19;[From.GetSheHeCap] не готов;x
+EVTDESCknight.20;Ваше обучение под опекой рыцаря, известного как [From.GetTitle] [From.GetFirstNameWithDynasty] близко к завершению. Вы были обучены обращению и уходом за оружием и доспехами, верховой езде и основам рыцарства, и теперь [From.GetTitle] [From.GetFirstName]  считает, что вы достойны быть посвященным в Рыцари.;x
+OPTAknight.20;Я буду смелым и праведным;x
+OPTBknight.20;Нет, [Root.Religion.GetRandomGodName] против;x
+opinion_knighted_me;Посвятил меня в рыцари;x
+title_knight_of_the_greenhand;Рыцать Ордена Зеленой Руки;x
+title_knight_of_the_greenhand_desc;Орден Зеленой Руки был самым престижным рыцарским орденом в Просторе, введенный Гарденерами, Королями Простора. В него входили победители турниров Простора, главные чемпионы, люди, столь же чистые, честные и добродетельные, как и искусные с оружием.;x
+title_knight_of_the_greenhand_manderly;Рыцать Ордена Зеленой Руки;x
+title_knight_of_the_greenhand_manderly_desc;Орден Зеленой Руки был самым престижным рыцарским орденом в Просторе, введенный Гарденерами, Королями Простора. В него входили победители турниров Простора, главные чемпионы, люди, столь же чистые, честные и добродетельные, как и искусные с оружием.;x
+EVTDESCknight.30;Может ли [From.GetTitle] [From.GetFirstNameWithDynasty] быть приглашен в Орден Зеленой Руки? Рыцари этого ордена, как правило, считаются наиболее достойными и благочестивыми в королевстве.;x
+EVTOPTAknight.30;Да, [From.GetSheHe] доказал, что может считаться достойным рыцарем;x
+EVTOPTCknight.30;[From.GetSheHeCap] - сомнительный рыцарь, но может быть приглашен в Орден;x
+EVTOPTBknight.30;Нет, [From.GetSheHe] не достоин;x
+opinion_knight_of_the_greenhand;Принял меня в Орден Зеленой Руки;x
+EVTDESCknight.31;[Root.GetTitle] [Root.GetFirstName], в знак признания вашей чести и добродетили, с сего дня, вы - Рыцарь Ордена Зеленой Руки.\n\nПодпись\n[From.GetTitledFirstNameNoRegnal] из Дома [From.GetOnlyDynastyName], [From.GetRegnalOrdinal] [From.GetHerHis] имени, Лорд владения [From.Capital.GetName] и Повелитель Зеленой Руки;x
+OPTAknight.31;Благодарю, [From.PrimaryTitle.GetFOA];x
+EVTDESCknight.32;[FromFrom.GetTitle] [FromFrom.GetFirstNameWithDynasty] проявил своё мастерство, победив на турнире в городе [From.Capital.GetName]. Возможно [FromFrom.GetSheHe] должен быть приглашен в Орден Зеленой Руки? Если конечно [FromFrom.GetSheHe] покажет достаточно добродетили и благородства.;x
+EVTOPTAknight.32;Да, [FromFrom.GetSheHe] доказал своё рыцарство;x
+EVTOPTBknight.32;Нет, [FromFrom.GetSheHe] не достоин;x
+opinion_knight_of_the_greenhand_refused;Не принял меня в Орден Зеленой Руки;x
+EVTDESCknight.33;[Root.GetTitle] [Root.GetFirstName], в знак признания вашей победы на турнире в городе [FromFrom.Capital.GetName], а также за проявления благородства и чести, я посвящаю вас в рыцари Ордена Зеленой Руки.\n\nПодпись\n[From.GetTitledFirstNameNoRegnal] из Дома [From.GetOnlyDynastyName], [From.GetRegnalOrdinal] [From.GetHerHis] имени, Лорд владения [From.Capital.GetName] и Повелитель Зеленой Руки;x
+EVTDESCknight.34;Несмотря на победу на турнире в городе [FromFrom.Capital.GetName], [From.GetTitle] [From.GetFirstName] решил не посвящать меня в рыцари Ордена Зеленой руки. [From.GetSheHeCap] видимо не считает меня достойным рыцарем.;x
+OPTAknight.34;Это оскорбление;x
+EVTDESCknight.36;[From.GetRootRelation] [From.GetTitle] [From.GetFirstName] заслужил большую честь. [FromFrom.GetTitle] [FromFrom.GetFirstName] посчитал нужным посвятить [From.GetHerHis] в рыцари Орден Зеленой Руки, самого престижного и древнего рыцарского ордена Простора.;x
+OPTAknight.36;Молодец;x
+EVTDESCknight.21;Юный [From.GetFirstName] отклонил ваше предложение о рыцарстве, несмотря на то, что вы все эти годы сражались за вас. [From.GetSheHeCap] утверждает, что как последователь веры [From.Religion.GetName], [From.GetSheHe] не может принять почести, связанные с поклонением Семерым;x
+OPTAknight.21;Я разочарован;x

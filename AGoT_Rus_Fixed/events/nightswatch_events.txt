@@ -1,0 +1,9259 @@
+##Nightswatch events
+
+namespace = nightswatch
+
+#nightswatch.1  -I want to go to take the black
+#nightswatch.2	 -Someone wants to take the black
+
+###Banishments###
+#nightswatch.3  -Send banished to Nightswatch?
+#nightswatch.20  -Inform character they have been banished
+
+###Maintenance###
+#nightswatch.999 -Night's Watch Initialisation
+#nightswatch.4  -LC surrenders additional titles
+#nightswatch.5  -Give title back to the watch
+#nightswatch.6  -Black brother maintenance
+#nightswatch.7  -NW government check
+#nightswatch.11  -No women or children in the NW
+#nightswatch.12 -NW must be independent
+
+###Mechanics###
+#nightswatch.2900-30 -Lord Commander Elections
+#nightswatch.31  -Apppint Black Brother to a Castle
+#nightswatch.51		-Human breaks vows by raiding/looting
+#nightswatch.52-53		-Human breaks vows by accepting a call to arms
+
+###Flavour###
+#nightswatch.8  -Become Ranger
+#nightswatch.9  -Become Steward
+#nightswatch.10  -Become Builder
+
+#nightswatch.13  -NW calls for aid
+#nightswatch.14-15  -Brother has a chance to desert
+#nightswatch.16-19  -Ranger finds wildling babe
+#nightswatch.21   -Restored LC gets lands back
+#nightswatch.22-23  -Notch Draw Loose
+#nightswatch.24  -AI decides what to do with bastard
+#nightswatch.25-28   -First Ranger has taken an arrow wound
+#nightswatch.40-45	-The recruiter gains an audience with a local lord
+#nightswatch.46-50	-Castle is falling into disrepair
+#nightswatch.70-80	-The Wildling Queen
+#nightswatch.90		-Young Common Lad shows potential
+#nightswatch.91		-Men unhappy with common personal steward
+
+# nightswatch.999 -Night's Watch Initialisation
+
+character_event = {
+	id = nightswatch.999
+	
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		add_trait = nightswatch
+		set_character_flag = no_court_invites
+		set_government_type = NW_government
+		any_spouse = {
+			limit = { is_alive = yes }
+			remove_spouse = PREV
+		}
+		# #Give The Gift to randoms to stop republics
+		# if = {
+			# limit = { has_landed_title = c_brandons_gift }	
+			# create_random_soldier = {
+				# random_traits = yes
+				# female = no
+				# dynasty = none
+			# }
+			# new_character = {
+				# add_trait = nightswatch
+				# c_brandons_gift = { gain_title = PREV }
+				# set_defacto_liege = PREV
+			# }	
+		# }
+		# if = {
+			# limit = { has_landed_title = c_new_gift }	
+			# create_random_soldier = {
+				# random_traits = yes
+				# female = no
+				# dynasty = none
+			# }
+			# new_character = {
+				# add_trait = nightswatch
+				# c_new_gift = { gain_title = PREV }
+				# set_defacto_liege = PREV
+			# }	
+		# }	
+		prestige = 300 #prestige boost
+		character_event = { id = nightswatch.2901 days = 2 } #destroy dummy title	
+		any_character = { #Move all black brothers to the wall
+			limit = {
+				trait = nightswatch
+				is_ruler = no
+				is_alive = yes
+				NOT = { 
+					liege = {
+						OR = {
+							trait = nightswatch
+							character = ROOT
+						}
+					}
+				}	
+			}
+			move_character = ROOT
+		}
+		#Make all randoms black brothers
+		any_realm_character = {
+			limit = {
+				is_female = no
+				age = 16
+				NOT = { trait = nightswatch }
+				NOT = { wildling_culture_trigger = yes }
+				is_republic = no
+				NOT = { liege = { is_republic = yes } }
+				NOT = { father_even_if_dead = { always = yes } }
+				NOT = { mother_even_if_dead = { always = yes } }
+			}
+			add_trait = nightswatch
+			set_character_flag = no_court_invites
+		}
+		any_realm_lord = {
+			limit = { 
+				trait = nightswatch
+				is_republic = no
+			}
+			set_government_type = NW_government
+			primary_title = { succession = appointment }
+			recalc_succession = yes
+		}
+		if = {
+			limit = { 
+				NOT = { year = 8260 } 
+				is_alternate_start = no
+			}
+			any_realm_lord = {
+				limit = { 
+					NOT = { culture_group = first_men }
+					NOT = { culture_group = andal }
+					NOT = { culture_group = dornish }
+					NOT = { father_even_if_dead = { always = yes } }
+				}
+				culture = northman
+				set_graphical_culture = northman
+				religion = old_gods
+			}
+		}	
+		any_realm_character = {
+			limit = {
+				trait = nightswatch
+			}
+			set_character_flag = no_court_invites
+		}
+		#Assign roles
+		any_realm_character = {
+			limit = {
+				is_female = no
+				age = 16
+				trait = nightswatch
+				NOR = {
+					trait = maester
+					trait = archmaester
+					has_priest_trait_trigger = yes
+				}
+			}
+			character_event = { id = nightswatch.899 }
+		}
+		#Organise council
+		job_castellan = {
+			if = {
+				limit = { trait = nightswatch }
+				give_minor_title = title_first_steward
+			}	
+		}
+		# job_chancellor = {
+			# if = {
+				# limit = { trait = nightswatch }
+				# give_minor_title = title_recruiter
+			# }	
+		# }
+		job_marshal = {
+			if = {
+				limit = { trait = nightswatch }
+				give_minor_title = title_first_ranger
+			}	
+		}
+		job_treasurer = {
+			if = {
+				limit = { trait = nightswatch }
+				give_minor_title = title_first_builder
+			}	
+		}
+		character_event = { id = nightswatch.6 days = 1 } #maintenance
+		if = {
+			limit = { 
+				NOT = { d_nightswatch = { has_title_flag = first_initialisation } } 
+			}
+			#Add historical men
+			if = {
+				limit = { NOT = { year = 8075 } }
+				spawn_unit = {
+					province = 17
+					home = 17
+					owner = THIS
+					troops = {
+						light_infantry = { 115 115 }
+						heavy_infantry = { 189 189 }
+						light_cavalry = { 89 89 }
+						knights = { 12 12 }
+						archers = { 95 95 }
+					}
+					attrition = 1.0
+				}
+				spawn_unit = {
+					province = 17
+					home = 17
+					owner = THIS
+					troops = {
+						light_infantry = { 115 115 }
+						heavy_infantry = { 189 189 }
+						light_cavalry = { 89 89 }
+						knights = { 12 12 }
+						archers = { 95 95 }
+					}
+					attrition = 1.0
+				}
+			}
+			if = {
+				limit = { NOT = { year = 8150 } }
+				spawn_unit = {
+					province = 17
+					home = 17
+					owner = THIS
+					troops = {
+						light_infantry = { 115 115 }
+						heavy_infantry = { 189 189 }
+						light_cavalry = { 89 89 }
+						knights = { 12 12 }
+						archers = { 95 95 }
+					}
+					attrition = 1.0
+				}
+				spawn_unit = {
+					province = 17
+					home = 17
+					owner = THIS
+					troops = {
+						light_infantry = { 115 115 }
+						heavy_infantry = { 189 189 }
+						light_cavalry = { 89 89 }
+						knights = { 12 12 }
+						archers = { 95 95 }
+					}
+					attrition = 1.0
+				}
+			}
+			if = {
+				limit = { NOT = { year = 8025 } }
+				spawn_unit = {
+					province = 17
+					home = 17
+					owner = THIS
+					troops = {
+						light_infantry = { 115 115 }
+						heavy_infantry = { 189 189 }
+						light_cavalry = { 89 89 }
+						knights = { 12 12 }
+						archers = { 95 95 }
+					}
+					attrition = 1.0
+				}
+				spawn_unit = {
+					province = 17
+					home = 17
+					owner = THIS
+					troops = {
+						light_infantry = { 115 115 }
+						heavy_infantry = { 189 189 }
+						light_cavalry = { 89 89 }
+						knights = { 12 12 }
+						archers = { 95 95 }
+					}
+					attrition = 1.0
+				}
+			}
+			#Create some random Black Brothers
+			if = {
+				limit = { NOT = { year = 8270 } }		
+				while = {
+					limit = { always = yes }
+					count = 15
+					clear_event_target = NW_mother
+					random_playable_ruler = {
+						limit = {
+							is_female = no
+							have_canon_family_trigger = yes
+							nightswatch_culture_trigger = yes
+							can_press_claims_trigger = yes
+							wildling_culture_trigger = no
+							NOT = { culture = high_valyrian }
+							NOT = { dynasty = 496 } # Targaryen
+							NOT = { dynasty = 57 } # Blackfyre
+							NOT = { dynasty = 59 } # Stark
+							NOT = { dynasty = 66 } # Hoare
+							NOT = { dynasty = 190 } # Lannister
+							NOT = { character = 1544 } # Argilac Durrandon
+							# NOT = { character = 8888175 }
+							NOT = { c_8888175 = { character = PREV } } # Mern IX Gardener
+							age = 45
+							num_of_children = 2
+						}
+						random_list = {
+							1 = {
+								create_character = {
+									random_traits = yes
+									female = no
+									age = 17
+									trait = nightswatch
+								}
+							}
+							1 = {
+								create_character = {
+									random_traits = yes
+									female = no
+									age = 18
+									trait = nightswatch
+								}
+							}
+							1 = {
+								create_character = {
+									random_traits = yes
+									female = no
+									age = 19
+									trait = nightswatch
+								}
+							}
+							1 = {
+								create_character = {
+									random_traits = yes
+									female = no
+									age = 20
+									trait = nightswatch
+								}
+							}
+							1 = {
+								create_character = {
+									random_traits = yes
+									female = no
+									age = 21
+									trait = nightswatch
+								}
+							}	
+							1 = {
+								create_character = {
+									random_traits = yes
+									female = no
+									age = 22
+									trait = nightswatch
+								}
+							}
+							1 = {
+								create_character = {
+									random_traits = yes
+									female = no
+									age = 23
+									trait = nightswatch
+								}
+							}
+							1 = {
+								create_character = {
+									random_traits = yes
+									female = no
+									age = 24
+									trait = nightswatch
+								}
+							}
+							1 = {
+								create_character = {
+									random_traits = yes
+									female = no
+									age = 25
+									trait = nightswatch
+								}
+							}
+							1 = {
+								create_character = {
+									random_traits = yes
+									female = no
+									age = 27
+									trait = nightswatch
+								}
+							}
+							1 = {
+								create_character = {
+									random_traits = yes
+									female = no
+									age = 29
+									trait = nightswatch
+								}
+							}
+						}	
+						new_character = {
+							dynasty = PREV
+							set_father = PREV
+							father = { 
+								spouse_even_if_dead = {
+									if = {
+										limit = { could_be_parent_of = PREVPREV }
+										save_event_target_as = NW_mother
+									}
+								}
+							}
+							set_mother = event_target:NW_mother
+							move_character = ROOT
+							set_character_flag = no_court_invites
+							random_list = {
+								20 = {  }
+								30 = { add_trait = poor_warrior }
+								40 = { add_trait = trained_warrior }
+								10 = { add_trait = skilled_warrior }
+							}
+							if = {
+								limit = { religion = the_seven }
+								random_list = {
+									50 = { knight_character_effect = yes }
+									50 = { }
+								}
+							}
+						}
+					}
+				}	
+			}	
+			d_nightswatch = { set_title_flag = first_initialisation }
+		}
+		any_demesne_title = { succession = open_elective }
+		any_demesne_title = {
+			add_law = {
+				law = succ_open_elective
+				cooldown = no
+				opinion_effect = no
+			}		
+		}
+		d_nightswatch = {
+			add_law = {
+				law = nightswatch_elective
+				cooldown = no
+				opinion_effect = no
+			}	
+		}
+		recalc_succession = yes
+		character_event = { id = nightswatch.7 days = 1 } #succession
+	}
+	
+	option = {
+		name = OK
+	}
+	
+}	
+# nightswatch.1 -I want to go to take the black
+character_event = {
+	id = nightswatch.1
+	desc = "EVTDESCnightswatch.1"
+	picture = GFX_evt_the_wall
+	
+	min_age = 14
+	capable_only = yes
+	prisoner = no
+	only_men = yes
+	war = no
+	is_sick = no
+	
+	trigger = {
+		OR = {
+			AND = {
+				is_ruler = no
+				liege = { demesne_size = 1 }
+				father_even_if_dead = { always = yes }
+				NOT = { liege = { primary_title = { title = k_the_most_devout } } }
+			}	
+			AND = {
+				is_ruler = yes
+				age = 40
+				NOT = { trait = ambitious }
+			}	
+		}	
+		is_married = no
+		OR = {	
+			NOT = { num_of_children = 1 }
+			age = 40
+		}		
+		OR = {
+			nightswatch_culture_trigger = yes
+			liege = { capital_scope = { region = world_westeros } }
+		}	
+		NOT = { trait = wildling }
+		can_press_claims_trigger = yes
+		NOT = { has_minor_title = title_triarch }
+		NOT = { has_character_flag = wikid_companion }
+		d_nightswatch = { holder_scope = { demesne_size = 1 } }
+		NOT = { has_character_modifier = maester_education }
+		NOT = { society_member_of = alchemists_guild }
+		NOT = { has_character_flag = asked_nightswatch }
+		NOT = { has_character_flag = is_child_of_destiny }
+	}
+	
+	mean_time_to_happen = {
+		months = 1750
+		
+		modifier = {
+			factor = 0.1
+			liege = {
+				trait = nightswatch
+				OR = {
+					is_parent_of = ROOT
+					ROOT = { has_character_flag = raised_on_the_wall }
+				}	
+			}
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				trait = familyperson
+				trait = content
+			}
+			NOT = { trait = greedy }
+			NOT = { trait = ambitious }
+			NOT = { trait = selfish }
+			NOT = { trait = envious }
+			liege = {
+				sibling = ROOT
+				is_older_than = ROOT
+				reverse_opinion = { who = ROOT value = 25 }
+			}				
+		}
+		modifier = {
+			factor = 0.8
+			northman_culture_trigger = yes
+		}
+		modifier = {
+			factor = 1.2
+			age = 25
+		}
+		modifier = {
+			factor = 0.75
+			d_nightswatch = { holder_scope = { job_chancellor = { at_location = ROOT } } }
+		}
+		modifier = {
+			factor = 1.2
+			age = 35
+		}
+		modifier = {
+			factor = 1.2
+			age = 45
+		}
+		modifier = {
+			factor = 0.9
+			martial = 13
+		}
+		modifier = {
+			factor = 0.9
+			martial  = 15
+		}
+		modifier = {
+			factor = 0.9
+			martial  = 17
+		}
+		modifier = {
+			factor = 0.9
+			martial  = 19
+		}
+		modifier = {
+			factor = 1.2
+			OR = { 	
+				trait = detached_priest
+				trait = martial_cleric
+				trait = scholarly_theologian
+				trait = mastermind_theologian
+			}
+		}
+		modifier = {
+			factor = 0.9
+			OR = { 	
+				trait = misguided_warrior
+				trait = tough_soldier
+				trait = skilled_tactician
+				trait = brilliant_strategist
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = { 
+				trait = stressed
+				trait = depressed
+			}
+		}
+		modifier = {
+			factor = 0.75
+			trait = widowed
+		}
+		modifier = {
+			factor = 0.8
+			trait = bastard
+		}
+		
+		modifier = {
+			factor = 1.5
+			trait = scholar
+		}
+		modifier = {
+			factor = 0.9
+			trait = duelist
+		}
+		modifier = {
+			factor = 0.9
+			trait = hunter
+		}
+		modifier = {
+			factor = 0.8
+			trait = zealous
+		}
+		modifier = {
+			factor = 1.5
+			trait = cynical
+		}
+		modifier = {
+			factor = 0.8
+			trait = celibate
+		}
+		modifier = {
+			factor = 0.8
+			trait = chaste
+		}
+		modifier = {
+			factor = 2
+			trait = hedonist
+		}
+		modifier = {
+			factor = 2
+			trait = lustful
+		}		
+		modifier = {
+			factor = 1.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 0.8
+			trait = diligent
+		}
+		modifier = {
+			factor = 1.25
+			trait = proud
+		}
+		modifier = {
+			factor = 0.8
+			trait = humble
+		}
+		modifier = {
+			factor = 0.8
+			trait = brave
+		}
+		modifier = {
+			factor = 2
+			trait = craven
+		}		
+		modifier = {
+			factor = 2
+			trait = content
+		}
+		
+		modifier = { #conflicting ambition
+			factor = 20
+			trait = ambitious
+			OR = {
+				any_heir_title = { always = yes }
+				any_pretender_title = { always = yes }
+				num_of_claims = 1
+				trait = dragon_rider
+				is_councillor = yes
+				is_voter = yes
+				is_ruler = yes
+				has_minor_title = title_regent
+				has_ambition = obj_get_married
+				has_ambition = obj_find_lover
+				has_ambition = obj_wants_landed_title
+				has_ambition = obj_become_heir
+			}
+		}
+		modifier = { #seeking ambition
+			factor = 0.7
+			trait = ambitious
+			NOR = {
+				any_heir_title = { always = yes }
+				any_pretender_title = { always = yes }
+				num_of_claims = 1
+				trait = dragon_rider
+				is_councillor = yes
+				is_voter = yes
+				is_ruler = yes
+				has_minor_title = title_regent
+				has_ambition = obj_get_married
+				has_ambition = obj_find_lover
+				has_ambition = obj_wants_landed_title
+				has_ambition = obj_become_heir
+			}
+		}
+		
+		modifier = {
+			factor = 4
+			is_ruler = yes
+		}
+		modifier = {
+			factor = 2.0
+			any_heir_title = { always = yes }
+		}
+		modifier = {
+			factor = 1.75
+			is_pretender = yes 
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				is_councillor = yes
+				is_voter = yes
+				has_minor_title = title_regent
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ambition = obj_get_married
+				has_ambition = obj_find_lover
+				has_ambition = obj_wants_landed_title
+				has_ambition = obj_become_heir
+			}
+		}
+	}
+	immediate = {
+		set_character_flag = asked_nightswatch
+	}
+
+	option = {
+		name = "EVTOPTAnightswatch.1" 
+		trigger = { is_ruler = no }
+		liege = { letter_event = { id = nightswatch.2 days = 5 tooltip = EVTTOOLTIP73241 } } 
+	}
+	
+	option = {
+		name = "EVTOPTBnightswatch.1" 
+		trigger = { is_ruler = yes }
+		hidden_tooltip = { 
+			any_realm_lord = {
+				limit = { ai = no }
+				letter_event = { id = nightswatch.299 }
+			}
+			liege = {
+				if = {
+					limit = { 
+						ai = no 
+						NOT = { character = ROOT }
+					}
+					letter_event = { id = nightswatch.299 }
+					any_vassal = {
+						limit = { 
+							ai = no 
+							NOT = { character = ROOT }
+						}
+						letter_event = { id = nightswatch.299 }
+					}
+				}	
+			}
+		}
+		prestige = 50
+		scaled_wealth = { value = -0.05 min = -10 max = -75 }
+		piety = 15
+		clr_character_flag = asked_nightswatch
+		set_character_flag = NW_volunteer
+		custom_tooltip = { 
+			text = TOOLTIPBANISHTONW 
+			hidden_tooltip = { character_event = { id = nightswatch.2098 } } #set banisher as FROMFROM
+		}
+	}
+	
+	option = {
+		name = "EVTOPTCnightswatch.1" 
+		trigger = { ai = no }
+	}
+}
+#Someone wants to take the black
+letter_event = {
+	id = nightswatch.2
+	desc = "EVTDESCnightswatch.2"
+	picture = GFX_evt_the_wall
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAmaester.4" #Yes
+		ai_chance = {
+			factor = 60
+			
+			modifier = {
+				factor = 0.25
+				FROM = { is_betrothed = yes }
+			}
+			modifier = {
+				factor = 5
+				dynasty = 59
+			}
+			modifier = {
+				factor = 20
+				dynasty = 59
+				AND = { trait = bastard }
+			}
+			modifier = {
+				factor = 0
+				AND = { current_heir = { character = FROM }
+					NOT = { num_of_children = 2 }
+				}
+			}
+			modifier = {
+				factor = 0.5
+				AND = { current_heir = { character = FROM }
+					NOT = { num_of_children = 3 }
+				}
+			}
+			modifier = {
+				factor = 0.5
+				AND = { current_heir = { character = FROM }
+					NOT = { num_of_children = 4 }
+				}
+			}
+			modifier = {
+				factor = 0.04
+				current_heir = { character = FROM }
+			}
+			modifier = {
+				factor = 2
+				AND = { 	current_heir = { character = FROM }
+							FROM = { 	OR = { 	NOT = { martial = 8 } 
+												trait = craven
+												is_weak_trigger = yes
+										}
+							}
+				}
+			}
+			modifier = {
+				factor = 0.75
+				is_parent_of = FROM
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { martial = 12 }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { martial = 16 }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { stewardship = 16 }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { diplomacy = 16 }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { intrigue = 16 }
+			}
+			modifier = {
+				factor = 1.2
+				trait = kind
+			}
+			modifier = {
+				factor = 0.8
+				trait = cruel
+			}
+			modifier = {
+				factor = 0.8
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 1.2
+				trait = scholar
+			}
+			modifier = {
+				factor = 1.2
+				learning = 12
+			}
+		}
+		if = {
+			limit = {
+				NOT = { is_parent_of = FROM }
+				NOT = { current_heir = { character = FROM } }
+			}
+			prestige = 10
+		}
+		if = {
+			limit = {
+				is_parent_of = FROM
+				NOT = { current_heir = { character = FROM } }
+			}
+			prestige = 20
+		}
+		if = {
+			limit = {
+				current_heir = { character = FROM } 
+			}
+			prestige = 40
+		}
+		scaled_wealth = { value = -0.05 min = -10 max = -75 }
+		piety = 15
+		FROM = {
+			prestige = 10
+			clr_character_flag = asked_nightswatch
+			set_character_flag = NW_volunteer
+			if = {
+				limit = { is_betrothed = yes }
+				betrothed = {
+					if = {
+						limit = { 
+							is_ruler = yes 
+							NOT = { character = ROOT }
+						}
+						opinion = {
+							who = ROOT
+							modifier = opinion_betrothal_broken
+						}
+						opinion = {
+							who = PREV
+							modifier = opinion_betrothal_broken
+						}
+					}
+					if = {
+						limit = { 
+							is_ruler = no 
+							liege = { 
+								is_close_relative = PREV 
+								NOT = { character = ROOT }
+							}
+						}
+						opinion = {
+							who = ROOT
+							modifier = opinion_betrothal_broken
+						}
+						liege = {
+							opinion = {
+								who = ROOT
+								modifier = opinion_betrothal_broken
+							}
+							opinion = {
+								who = PREVPREV
+								modifier = opinion_betrothal_broken
+							}
+						}	
+					}
+					break_betrothal = PREV
+				}	
+			}
+			custom_tooltip = { 
+				text = TOOLTIPBANISHTONW 
+				hidden_tooltip = { character_event = { id = nightswatch.2098 } } #set banisher as FROMFROM
+			}
+		}			
+	}
+	option = {
+		name = "EVTOPTBmaester.4" #No
+		trigger = { 
+			NOT = { current_heir = { character = FROM } }
+			NOT = { is_parent_of = FROM }
+		}
+		ai_chance = {
+			factor = 20
+		}
+		from = {
+			prestige = -5
+		}
+		from = {
+			opinion = {
+				who = root
+				modifier = opinion_refused_nightswatch
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTDmaester.4" #No son of mine
+		trigger = { 
+			NOT = { current_heir = { character = FROM } }
+			is_parent_of = FROM
+		}
+		ai_chance = {
+			factor = 80
+		}
+		from = {
+			prestige = -5
+		}
+		from = {
+			opinion = {
+				who = root
+				modifier = opinion_refused_nightswatch
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTCmaester.4" #You're my heir!
+		trigger = { 
+			current_heir = { character = FROM } 	    
+		}
+		ai_chance = {
+			factor = 50
+		}
+		from = {
+			prestige = -10
+		}
+		from = {
+			opinion = {
+				who = root
+				modifier = opinion_refused_nightswatch
+			}
+		}
+	}
+
+}
+#Inform realm liege joins Night's Watch
+letter_event = {
+	id = nightswatch.299
+	desc = "EVTDESCnightswatch.299"
+	
+	is_triggered_only = yes
+
+	option = {
+		name =OK
+	}
+}	
+#Send banished to Night's Watch?
+character_event = {
+	id = nightswatch.3
+	desc = "EVTDESCnightswatch.3"
+	picture = GFX_evt_the_wall
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		d_nightswatch = {
+			holder_scope = {
+				demesne_size = 1
+				trait = nightswatch
+			}
+		}
+		nightswatch_culture_trigger = yes
+	}
+
+	option = {
+		name = "EVTOPTAnightswatch.3" #Yes
+		FROM = { 
+			custom_tooltip = { 
+				text = TOOLTIPBANISHTONW 
+				hidden_tooltip = { character_event = { id = nightswatch.2098 } } #set banisher as FROMFROM
+			}
+		}	
+		wealth = -15
+		piety = 20
+	}
+	option = {
+		name = "EVTOPTBnightswatch.3" #No
+		prestige = -10
+		piety = -10
+	}
+}
+#Lord Commanders surrender additional titles
+character_event = {
+	id = nightswatch.4
+	desc = "EVTDESCnightswatch.4"
+	picture = GFX_evt_the_wall
+	
+	is_triggered_only = yes	
+	only_rulers = yes
+	
+	trigger = {
+		trait = nightswatch
+		any_demesne_title = {
+			NOR = { 
+				title = k_nightswatch 
+				title = d_nightswatch 
+				title = d_the_wall
+				location = { duchy = { title = d_the_wall } }
+			}
+		}			
+	}
+
+	option = {
+		name = "EVTOPTAnightswatch.4" 
+		#Lands north of wall go to random wildlings
+		any_demesne_title = {
+			limit = { 	
+				higher_tier_than = COUNT
+				is_landless_type_title = no
+				controls_religion = no
+				OR = {
+					title = k_beyond_wall
+					kingdom = { title = k_beyond_wall }
+					location = { region = world_beyond_the_wall }
+					capital_scope = { region = world_beyond_the_wall }
+				}
+				NOR = { 
+					title = k_nightswatch 
+					title = d_nightswatch 
+					title = d_the_wall
+					location = { duchy = { title = d_the_wall } }
+				}
+			}	
+			destroy_landed_title = THIS		
+		}
+		any_demesne_title = {
+			limit = { 	
+				lower_tier_than = DUKE
+				OR = {
+					kingdom = { title = k_beyond_wall }
+					location = { region = world_beyond_the_wall }
+				}
+				NOR = { 
+					title = k_nightswatch 
+					title = d_nightswatch 
+					title = d_the_wall
+					location = { duchy = { title = d_the_wall } }
+				}
+			}	
+			location = {
+				ROOT = {
+					create_character = {
+						random_traits = yes	
+						female = no
+						culture = PREV
+						religion = PREV
+						dynasty = actually_culture
+					}
+					new_character = {
+						gain_title = PREVPREVPREV
+						random_list = {
+							40 = { add_trait = poor_warrior }
+							40 = { add_trait = trained_warrior }
+							20 = { add_trait = skilled_warrior }
+						}
+						set_defacto_liege = THIS
+					}
+				}
+			}			
+		}
+		#All other titles go to family
+		random_dynasty_member = {
+			limit = {
+				demesne_size = 1
+				NOT = { any_liege = { trait = nightswatch } }
+				NOT = { trait = nightswatch }
+				NOT = { trait = kingsguard }
+				is_theocracy = no
+			}
+			ROOT = {
+				any_demesne_title = {
+					limit = { 	
+						NOR = { 
+							title = k_nightswatch 
+							title = d_nightswatch 
+							title = d_the_wall
+							location = { duchy = { title = d_the_wall } }
+						}
+					}	
+					grant_title = PREVPREV		
+				}
+				break = yes
+			}
+		}
+		ROOT = {
+			any_demesne_title = { 
+				limit = { 					
+					NOR = { 
+						title = k_nightswatch 
+						title = d_nightswatch 
+						title = d_the_wall
+						location = { duchy = { title = d_the_wall } }
+					}
+				}
+				if = { #higher titles get destroyed
+					limit = {
+						higher_tier_than = COUNT
+						is_landless_type_title = no
+						controls_religion = no
+					}
+					destroy_landed_title = THIS	
+				}
+				if = { #Other titles go to closest Lord
+					limit = { NOT = { higher_tier_than = COUNT } }
+					location = { province_event = { id = nightswatch.499 } }
+				}					
+			}
+		}
+	}
+	#could include rogue commander option in the future
+}
+province_event = {
+	id = nightswatch.499
+	
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		FROM = {
+			random_demesne_title = {
+				limit = {
+					location = { province_id = ROOT }
+					NOR = { 
+						title = k_nightswatch 
+						title = d_nightswatch 
+						title = d_the_wall
+						location = { duchy = { title = d_the_wall } }
+					}
+				}
+				if = {
+					limit = {
+						tier = BARON
+						county = { holder_scope = { NOT = { character = FROM } } }
+					}
+					county = { holder_scope = { gain_title = PREVPREV } }
+					break = yes
+				}
+				if = {
+					limit = { duchy = { has_holder = yes } }
+					duchy = { holder_scope = { gain_title = PREVPREV } }
+					break = yes
+				}
+				if = {
+					limit = { kingdom = { has_holder = yes } }
+					kingdom = { holder_scope = { gain_title = PREVPREV } }
+					break = yes
+				}
+				if = {
+					limit = { empire = { has_holder = yes } }
+					empire = { holder_scope = { gain_title = PREVPREV } }
+					break = yes
+				}
+				if = {
+					limit = {
+						location = {
+							region = world_westeros
+							NOT = { region = world_beyond_the_wall }
+						}
+						e_iron_throne = { has_holder = yes }
+					}
+					e_iron_throne = { holder_scope = { gain_title = PREVPREV } }
+					break = yes
+				}
+				location = {
+					ROOT = {
+						create_character = {
+							random_traits = yes	
+							female = no
+							culture = PREV
+							religion = PREV
+							dynasty = actually_culture
+						}
+						new_character = {
+							gain_title = PREVPREVPREV
+							random_list = {
+								40 = { add_trait = poor_warrior }
+								40 = { add_trait = trained_warrior }
+								20 = { add_trait = skilled_warrior }
+							}
+							set_defacto_liege = THIS
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+#Give title to the watch
+character_event = {
+	id = nightswatch.5
+	desc = "EVTDESCnightswatch.5"
+	picture = GFX_evt_the_wall
+	
+	is_triggered_only = yes
+	war = no
+	only_rulers = yes
+	
+	trigger = {
+		NOT = { trait = wildling }
+		NOT = { any_liege = { trait = wildling } }
+		NOT = { liege_before_war = { trait = wildling } }
+		NOT = { any_liege = { liege_before_war = { trait = wildling } } }
+		NOT = { trait = nightswatch }
+		NOT = { trait = white_walker }
+		NOT = { trait = winter_wasteland }
+		NOT = { culture = ruin }
+		any_demesne_title = {
+			OR = { 			
+				title = d_the_wall
+				location = { duchy = { title = d_the_wall } }
+			}
+		}
+		NOT = { any_liege = { trait = nightswatch } }
+		NOT = { liege_before_war = { trait = nightswatch } }
+		d_nightswatch = {
+			holder_scope = {
+				trait = nightswatch
+				NOT = { character = ROOT } 	
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAnightswatch.5" 
+		#trigger = { NOT = { trait = nightswatch } }
+		d_nightswatch = { 
+			holder_scope = {		
+				ROOT = {
+					any_demesne_title = {
+						limit = { 
+							OR = { 			
+								title = d_the_wall
+								location = { duchy = { title = d_the_wall } }
+							}
+						}
+						grant_title = PREVPREV
+					}	
+				}
+				random_courtier = {
+					limit = {
+						trait = nightswatch
+						is_ruler = no
+						NOT = { trait = maester }
+					}
+					PREV = {
+						random_demesne_title = {
+							limit = { 
+								NOT = { tier = DUKE }
+								NOT = {
+									AND = {
+										tier = count
+										location = {
+											is_capital = yes
+										}						
+									}
+								}
+							}
+							grant_title = PREVPREV
+						}
+					}
+				}	
+			}
+		}
+	}
+	# option = {
+		# name = "EVTOPTAnightswatch.5" 
+		# trigger = { trait = nightswatch } 
+		# d_nightswatch = { 
+			# holder_scope = {		
+				# ROOT = { set_defacto_liege = PREV }	
+			# }
+		# }
+	# }
+	#could add refusal option
+}	
+
+#Black brother maintenance
+character_event = {
+	id = nightswatch.6
+	desc = "EVTDESCnightswatch.6"
+	picture = GFX_evt_the_wall
+	
+	min_age = 14
+	only_men = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			trait = nightswatch
+			primary_title = { title = d_nightswatch }
+		}	
+		NOT = { trait = wildling }
+		NOT = { culture_group = winter_group }
+		OR = {	
+			AND = { #Lord Commander checks
+				has_landed_title = d_nightswatch
+				trait = nightswatch	
+				OR = {
+					AND = { #Check Lord Commander raiding ability
+						ai = yes
+						is_allowed_to_loot = yes				
+					}
+					AND = { #Has become landless
+						trait = nightswatch	
+						NOT = { demesne_size = 1 }				
+					}
+					AND = { #land restored
+						d_nightswatch = { has_title_flag = has_temporary_home }
+						demesne_size = 1					
+					}
+				}	
+			}			
+			AND = { #Check commanders
+				demesne_size = 1
+				OR = {
+					trait = maester
+					#Must have black brother trait
+					NOT = { trait = nightswatch }
+				}					
+			}
+			AND = { #Must usually be at the Wall
+				NOT = { liege = { trait = nightswatch NOT = { character = ROOT } } }
+				NOT = { liege = { has_landed_title = k_nightswatch } }
+				NOT = { has_character_modifier = maester_education }
+				NOT = { has_landed_title = d_nightswatch } 
+				NOT = { has_landed_title = k_nightswatch }
+				NOT = { trait = slave }
+				war = no
+				#d_nightswatch = { holder_scope = { demesne_size = 1 } }
+			}
+			AND = {
+				any_claim = { NOT = { holder_scope = { trait = nightswatch } } } #Remove claims
+				NOT = { has_character_flag = revealed_parentage } #R+L=
+			}	
+			is_patrician = yes #If Night's watch becomes merchant republic fix it
+			trait = kingsguard #remove from kingsguard
+			any_heir_title = { #Has somehow become heir to a non-nightswatch title
+				holder_scope = { 
+					NOT = { trait = nightswatch } 
+					is_parent_of = ROOT
+				}
+				NOT = {
+					OR = { 			
+						title = d_the_wall
+						title = d_nightswatch						
+						location = { duchy = { title = d_the_wall } }
+					}
+				}	
+			}
+		}	
+	}
+	
+	# weight_multiplier = {
+		# days = 1
+	# }
+		
+	option = { #Remove claims
+		name = "EVTOPTAnightswatch.6" 
+		trigger = {
+			any_claim = { NOT = { holder_scope = { trait = nightswatch } } }
+			NOT = { has_character_flag = revealed_parentage }
+		}
+		any_claim = {
+			limit = { NOT = { holder_scope = { trait = nightswatch } } }
+			remove_claim = PREV
+		}
+	}
+
+	option = {
+		name = "EVTOPTBnightswatch.6" #I am a Maester, I cannot be in command
+		trigger = {
+			AND = {
+				trait = maester
+				demesne_size = 1
+			}
+			NOT = { has_landed_title = d_nightswatch }
+		}
+		hidden_tooltip = { #Universal on death/abdication event
+			if = {
+				limit = { any_artifact = { has_artifact_flag = valyrian_steel } }
+				set_character_flag = do_not_inherit_sword
+			}
+			set_character_flag = abdication
+			character_event = { id = 45341 } 
+			clr_character_flag = abdication
+			clr_character_flag = do_not_inherit_sword
+			current_heir = { save_event_target_as = wealth_heir }
+			transfer_scaled_wealth = { to = event_target:wealth_heir value = all }
+		}
+		abdicate = yes
+	}
+	
+	option = {
+		name = "EVTOPTCnightswatch.6" #I am a Maester, I cannot be Lord Commander
+		trigger = {
+			AND = {
+				trait = maester
+				demesne_size = 1
+			}
+			has_landed_title = d_nightswatch
+			NOT = { has_global_flag = new_NW_LC_needed }
+		}
+		abdicate = yes
+		# set_global_flag = new_NW_LC_needed
+		# d_nightswatch_dummy = { copy_title_history = d_nightswatch }
+		# character_event = { id = nightswatch.2900 }
+	}
+	
+	option = {
+		name = "EVTOPTDnightswatch.6"  #Back to watch for me
+		trigger = {
+			NOT = { liege = { trait = nightswatch NOT = { character = ROOT } } }
+			NOT = { liege = { has_landed_title = k_nightswatch } }
+			NOT = { has_character_modifier = maester_education }
+			NOT = { has_landed_title = d_nightswatch } 
+			NOT = { has_landed_title = k_nightswatch } 
+			NOT = { trait = slave }
+			war = no
+			#d_nightswatch = { holder_scope = { demesne_size = 1 } }
+		}
+		set_character_flag = no_court_invites
+		if = {
+			limit = { is_ruler = yes }
+			if = {
+				limit = { 
+					OR = {
+						higher_tier_than = COUNT
+						NOT = { any_demesne_title = { location = { duchy = { title = d_the_wall } } } } 
+					}	
+				}
+				hidden_tooltip = { #Universal on death/abdication event
+					if = {
+						limit = { any_artifact = { has_artifact_flag = valyrian_steel } }
+						set_character_flag = do_not_inherit_sword
+					}
+					set_character_flag = abdication
+					character_event = { id = 45341 } 
+					clr_character_flag = abdication
+					clr_character_flag = do_not_inherit_sword
+					current_heir = { save_event_target_as = wealth_heir }
+					transfer_scaled_wealth = { to = event_target:wealth_heir value = all }
+				}
+				abdicate = yes
+			}	
+			if = {
+				limit = { 
+					lower_tier_than = DUKE
+					any_demesne_title = { location = { duchy = { title = d_the_wall } } } 
+				}
+				d_nightswatch = {
+					holder_scope = { ROOT = { set_defacto_liege = PREV } }
+				}
+			}
+		}
+		if = {
+			limit = { is_ruler = no }		
+			d_nightswatch = {
+				holder_scope = { ROOT = { move_character = PREV } }
+			}
+		}	
+		# any_claim = {
+			# remove_claim = PREV
+		# }
+	}
+	
+	option = {
+		name = "EVTOPTEnightswatch.6" #The Nightswatch is not a merchant republic!
+		trigger = {
+			primary_title = { title = d_nightswatch }
+			is_patrician = yes
+			c_castle_black = {	
+				holder_scope = { 
+					OR = {
+						character = ROOT
+						NOT = { trait = wildling } 
+					}	
+				} 
+			}
+		}
+		if = {
+			limit = { NOT = { has_landed_title = c_castle_black } }
+			c_castle_black = { gain_title = ROOT }			
+		}
+		if = {
+			limit = { NOT = { has_landed_title = b_castle_black }	}
+			b_castle_black = { gain_title = ROOT }			
+		}			
+		if = {
+			limit = { has_landed_title = c_brandons_gift }	
+			random_courtier = {
+				limit = {
+					NOT = { demesne_size = 1 }
+					NOT = { trait = maester }
+					NOT = { has_priest_trait_trigger = yes }
+				}
+				c_brandons_gift = { gain_title = PREV }
+			}	
+		}
+		if = {
+			limit = { has_landed_title = c_new_gift }	
+			random_courtier = {
+				limit = {
+					NOT = { demesne_size = 1 }
+					NOT = { trait = maester }
+					NOT = { has_priest_trait_trigger = yes }
+				}
+				c_new_gift = { gain_title = PREV }
+			}	
+		}
+		b_castle_black = { ROOT = { capital = PREV } }	
+	}
+	
+	option = {
+		name = "EVTOPTFnightswatch.6" #I must abandon my old ways
+		trigger = {	
+			has_landed_title = d_nightswatch
+			is_allowed_to_loot = yes	
+			trait = nightswatch	
+			ai = yes #player should know not to do this			
+		}
+		if = {
+			limit = { culture_group = iron_isles_culture }
+			capital_scope = { reverse_culture = ROOT }
+		}
+		if = {
+			limit = { is_allowed_to_loot = yes	}
+			if = {
+				limit = { NOT = { trait = zealous } }
+				add_sympathy_trait_effect = yes
+			}	
+			if = {
+				limit = { is_devil_worshiper_trigger = yes }
+				leave_society = yes
+			}
+			religion = old_gods
+		}
+	}
+	
+	option = {
+		name = "EVTOPTGnightswatch.6" #I will hold no land or titles
+		trigger = { #Could make it AI only to give player the choice to be bad commander
+			any_heir_title = {
+				holder_scope = { 
+					NOT = { trait = nightswatch } 
+					is_parent_of = ROOT
+				}
+				NOT = {
+					OR = { 			
+						title = d_the_wall
+						title = d_nightswatch						
+						location = { duchy = { title = d_the_wall } }
+					}
+				}	
+			}
+		}
+		father = {
+			if = {
+				limit = { NOT = { trait = nightswatch } }
+				any_demesne_title = {
+					succession = primogeniture				
+				}
+				recalc_succession = yes
+			}
+		}
+		mother = {
+			if = {
+				limit = { NOT = { trait = nightswatch } }
+				any_demesne_title = {
+					succession = primogeniture				
+				}
+				recalc_succession = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTHnightswatch.6" #I am no longer a kingsguard
+		trigger = {
+			trait = kingsguard
+		}
+		remove_trait = kingsguard
+	}
+	
+	option = { #will be triggered by holding d_nightswatch without the trait. Uses 'I am a sworn brother loc'
+		name = "EVTOPTAnightswatch.6" 
+		trigger = {
+			NOT = { trait = nightswatch }
+			is_female = no
+		}
+		add_trait = nightswatch
+		remove_trait = wildling
+		set_character_flag = no_court_invites
+	}
+	
+	option = {
+		name = "EVTOPTInightswatch.6" #Has become landless
+		trigger = {
+			has_landed_title = d_nightswatch
+			trait = nightswatch	
+			NOT = { demesne_size = 1 }	
+			d_nightswatch = { 
+				OR = {
+					NOT = { has_title_flag = has_temporary_home } 
+					capital_scope = {
+						owner = {
+							OR = {
+								NOT_mythical_creature_trigger = no
+								trait = wildling
+							}	
+						}
+					}
+				}	
+			}
+		}
+		random_vassal = {
+			limit = {
+				trait = nightswatch	
+				demesne_size = 1
+				tier = COUNT
+			}
+			random_demesne_title = {
+				limit = { tier = COUNT }
+				gain_title = ROOT
+				break = yes
+			}
+		}
+		#Find exile location
+		d_nightswatch = { set_title_flag = has_temporary_home }
+		c_winterfell = {		
+			if = {
+				limit = { 
+					holder_scope = {
+						NOT_mythical_creature_trigger = yes
+						NOT = { trait = wildling }
+					}	
+				}	
+				location = { d_nightswatch = { set_preferred_capital = PREV } }
+				break = yes
+			}
+		}
+		random_province = {
+			limit = {
+				region = world_north
+				is_capital = yes
+				owner = {
+					NOT_mythical_creature_trigger = yes
+					NOT = { trait = wildling }
+					higher_tier_than = DUKE
+				}
+			}
+			d_nightswatch = { set_preferred_capital = PREV }
+			break = yes
+		}
+		random_province = {
+			limit = {
+				region = world_north
+				is_capital = yes
+				owner = {
+					NOT_mythical_creature_trigger = yes
+					NOT = { trait = wildling }
+					higher_tier_than = COUNT
+				}
+			}
+			d_nightswatch = { set_preferred_capital = PREV }
+			break = yes
+		}
+		random_province = {
+			limit = {
+				region = world_westeros
+				is_capital = yes
+				owner = {
+					NOT_mythical_creature_trigger = yes
+					NOT = { trait = wildling }
+					higher_tier_than = DUKE
+				}
+			}
+			d_nightswatch = { set_preferred_capital = PREV }
+			break = yes
+		}
+		random_province = {
+			limit = {
+				region = world_westeros
+				is_capital = yes
+				owner = {
+					NOT_mythical_creature_trigger = yes
+					NOT = { trait = wildling }
+					higher_tier_than = COUNT
+				}
+			}
+			d_nightswatch = { set_preferred_capital = PREV }
+			break = yes
+		}
+		random_province = {
+			limit = {
+				region = world_free_cities
+				is_capital = yes
+				owner = {
+					NOT_mythical_creature_trigger = yes
+					NOT = { trait = wildling }
+					is_nomadic = no
+					higher_tier_than = DUKE
+				}
+			}
+			d_nightswatch = { set_preferred_capital = PREV }
+			break = yes
+		}
+	}
+	option = {
+		name = "EVTOPTJnightswatch.6" #Wall has been restored
+		trigger = {
+			has_landed_title = d_nightswatch
+			trait = nightswatch	
+			demesne_size = 1
+			d_nightswatch = { has_title_flag = has_temporary_home }
+		}
+		d_nightswatch = { 
+			set_preferred_capital = 17 #Castle Black
+			clr_title_flag = has_temporary_home
+		} 
+	}	
+}	
+#Nightswatch government check
+character_event = {
+	id = nightswatch.7
+	desc = "EVTDESCnightswatch.7"
+	picture = GFX_evt_the_wall
+	
+	only_rulers = yes	
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		OR = {
+			primary_title = { title = d_nightswatch }
+			trait = nightswatch	
+		}
+		is_feudal = yes
+		#NOT = { government = NW_government }	
+	}
+	
+	weight_multiplier = {
+		days = 1
+	}
+		
+	option = {
+		name = "EVTOPTAnightswatch.7" 
+		if = { #check for female holder/nights watch trait
+			limit = {
+				NOT = { trait = nightswatch }			
+			}
+			if = {
+				limit = {
+					is_female = no
+					NOT = { trait = wildling }
+					father_even_if_dead = { always = yes } #not some rando
+				}
+				add_trait = nightswatch
+				character_event = { id = nightswatch.6 }
+			}
+			else = {
+				random_character = {
+					limit = {
+						is_female = no
+						age = 16
+						nightswatch_culture_trigger = yes
+						is_primary_heir = no
+						is_ruler = no
+						is_married = no
+						NOT = { num_of_children = 1 }
+						can_press_claims_trigger = yes
+						father_even_if_dead = {
+							always = yes
+						}
+						NOT = { liege = { ai = no } }
+						NOT = { any_close_relative = { ai = no } }
+						NOT = { any_heir_title = { always = yes } }
+						
+					}
+					preferred_limit = {
+						martial = 8
+						OR = {
+							trait = honorable
+							trait = chaste
+							trait = brave
+							trait = just
+						}
+						NOT = { trait = ambitious }
+						NOT = { trait = greedy }
+						NOT = { trait = lustful }
+						NOT = { trait = ruthless }
+						NOT = { trait = craven }
+					}
+					add_trait = nightswatch
+					set_character_flag = no_court_invites				
+					ROOT = { abdicate_to = PREV }
+					set_government_type = NW_government
+				}	
+				break = yes
+			}
+		}
+		if = {
+			limit = { NOT = { government = NW_government } }
+			set_government_type = NW_government
+		}
+		if = {
+			limit = { has_landed_title = d_nightswatch }
+			any_demesne_title = { succession = open_elective }
+			any_demesne_title = {
+				add_law = {
+					law = succ_open_elective
+					cooldown = no
+					opinion_effect = no
+				}		
+			}
+			d_nightswatch = {
+				add_law = {
+					law = nightswatch_elective
+					cooldown = no
+					opinion_effect = no
+				}	
+			}	
+		}
+		else = {
+			any_demesne_title = {
+				add_law = {
+					law = succ_appointment
+					cooldown = no
+					opinion_effect = no
+				}
+			}
+		}
+		recalc_succession = yes
+	}
+}	
+# Black brother assigned role
+character_event = {
+	id = nightswatch.899
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	only_men = yes
+	hide_window = yes
+	
+	trigger = {
+		trait = nightswatch
+		NOR = {
+			trait = maester
+			trait = archmaester
+			has_priest_trait_trigger = yes
+		}
+		any_liege = { trait = nightswatch }
+		NOT = {
+			OR = {
+				has_character_modifier = nw_ranger
+				has_character_modifier = nw_steward
+				has_character_modifier = nw_builder
+			}
+		}
+	}
+	
+	immediate = {
+		random_list = {
+			33 = { #Ranger
+				modifier = {
+					factor = 0
+					OR = { 
+						trait = infirm
+						trait = blinded
+						trait = blinded_age
+					}					
+				}
+				modifier = {
+					factor = 2
+					is_ruler = yes					
+				}
+				modifier = {
+					factor = 1.5
+					father_even_if_dead = { higher_tier_than = COUNT }				
+				}
+				
+				modifier = {
+					factor = 0.5
+					NOT = { martial = 2 }
+				}
+				modifier = {
+					factor = 0.5
+					NOT = { martial = 5 }
+				}
+				modifier = {
+					factor = 0.66
+					NOT = { martial = 8 }
+				}	
+				modifier = {
+					factor = 2.5
+					martial = 10
+				}
+				modifier = {
+					factor = 1.5
+					martial = 14
+				}
+				modifier = {
+					factor = 2
+					martial = 17
+				}
+				modifier = {
+					factor = 2
+					martial = 20
+				}
+				modifier = {
+					factor = 2
+					martial = 23
+				}
+				modifier = {
+					factor = 1.5
+					OR = { 	
+						trait = misguided_warrior
+						trait = tough_soldier
+						trait = skilled_tactician
+						trait = brilliant_strategist
+					}
+				}
+				modifier = {
+					factor = 2
+					OR = { 	
+						trait = skilled_warrior
+						trait = master_warrior
+					}
+				}
+				modifier = {
+					factor = 2
+					trait = master_warrior
+				}
+				modifier = {
+					factor = 2
+					trait = brilliant_strategist
+				}
+				modifier = {
+					factor = 1.5
+					trait = hunter
+				}
+				modifier = {
+					factor = 1.5
+					trait = brave
+				}
+				modifier = {
+					factor = 1.5
+					trait = knight
+				}
+				modifier = {
+					factor = 1.5
+					is_strong_trigger = yes
+				}
+				modifier = {
+					factor = 0.5
+					is_weak_trigger = yes
+				}
+				modifier = {
+					factor = 0.5
+					trait = dwarf
+				}
+				modifier = {
+					factor = 0.5
+					trait = clubfooted
+				}
+				modifier = {
+					factor = 0.5
+					trait = hunchback
+				}
+				modifier = {
+					factor = 0.5
+					trait = infirm
+				}
+				modifier = {
+					factor = 0.5
+					trait = blinded
+				}
+				modifier = {
+					factor = 0.5
+					trait = blinded_age
+				}
+				modifier = {
+					factor = 0.66
+					trait = craven
+				}
+				narrative_event = { id = nightswatch.8 } 
+			}
+			33 = { #Steward
+				modifier = {
+					factor = 0
+					NOT = { stewardship = 5 }
+				}
+				modifier = {
+					factor = 0.5
+					NOT = { stewardship = 8 }
+				}	
+				modifier = {
+					factor = 2.5
+					stewardship = 10
+				}
+				modifier = {
+					factor = 1.5
+					stewardship = 14
+				}
+				modifier = {
+					factor = 1.5
+					stewardship = 17
+				}
+				modifier = {
+					factor = 2
+					stewardship = 20
+				}
+				modifier = {
+					factor = 2
+					stewardship = 23
+				}	
+				modifier = {
+					factor = 1.5
+					OR = { 	
+						trait = indulgent_wastrel
+						trait = thrifty_clerk
+						trait = fortune_builder
+						trait = midas_touched
+					}
+				}
+				modifier = {
+					factor = 2
+					OR = { 
+						trait = fortune_builder
+						trait = midas_touched
+					}
+				}
+				narrative_event = { id = nightswatch.9 } 
+			}
+			25 = { #Builder
+				modifier = {
+					factor = 0
+					OR = { 
+						trait = skilled_tactician
+						trait = brilliant_strategist
+						martial = 15
+						trait = master_warrior
+						
+						trait = infirm
+						trait = blinded
+						trait = blinded_age
+						is_weak_trigger = yes
+						trait = clubfooted
+					}					
+				}
+				modifier = {
+					factor = 0.75
+					OR = { 		
+						trait = fortune_builder
+						trait = midas_touched
+					}
+				}				
+				modifier = {
+					factor = 1.75
+					stewardship = 10
+				}
+				modifier = {
+					factor = 1.25
+					stewardship = 14
+				}
+				modifier = {
+					factor = 1.5
+					stewardship = 17
+				}
+				modifier = {
+					factor = 1.5
+					stewardship = 20
+				}
+				modifier = {
+					factor = 1.5
+					stewardship = 23
+				}	
+				
+				modifier = {
+					factor = 1.5
+					is_strong_trigger = yes
+				}
+				modifier = {
+					factor = 0.5
+					trait = disfigured_AGOT
+				}
+				modifier = {
+					factor = 0.5
+					trait = dwarf
+				}
+				modifier = {
+					factor = 0.5
+					trait = hunchback
+				}
+				modifier = {
+					factor = 0.5
+					is_maimed_trigger = yes
+				}
+				narrative_event = { id = nightswatch.10 } 
+			}
+		}
+		if = {
+			limit = {	
+				is_ruler = no
+				liege = { primary_title = { title = d_nightswatch } }
+				total_years_played = 2
+			}
+			random_list = {
+				70 = { }
+				30 = {
+					liege = {
+						random_realm_lord = {
+							limit = { is_feudal = yes trait = nightswatch }
+							ROOT = { move_character = PREV }
+						}
+					}
+				}
+			}
+		}
+	}
+		
+	option = {
+		name = OK
+	}
+}	
+#Become Ranger
+narrative_event = {
+	id = nightswatch.8
+	title = "EVTTITLEnightswatch.8"
+	desc = "EVTDESCnightswatch.8"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+		
+	option = {
+		name = "EVTOPTAnightswatch.8" 
+		add_character_modifier = { 
+			name = nw_ranger
+			duration = -1
+		}
+	}
+}	
+
+#Become Steward
+narrative_event = {
+	id = nightswatch.9
+	title = "EVTTITLEnightswatch.8"
+	desc = "EVTDESCnightswatch.8"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAnightswatch.9" 
+		add_character_modifier = { 
+			name = nw_steward
+			duration = -1
+		}
+	}
+}	
+
+#Become Builder
+narrative_event = {
+	id = nightswatch.10
+	title = "EVTTITLEnightswatch.8"
+	desc = "EVTDESCnightswatch.8"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAnightswatch.10" 
+		add_character_modifier = { 
+			name = nw_builder
+			duration = -1
+		}
+	}
+}
+
+# On-action: No women/children in the watch
+character_event = {
+	id = nightswatch.11
+	desc = "No women or children in the Watch!"
+	picture = GFX_evt_the_wall
+	
+	is_triggered_only = yes
+	
+	trigger = {	
+		liege = { 
+			trait = nightswatch 
+			OR = { #Player keeps own children
+				ai = yes
+				NOT = { is_parent_of = ROOT }
+			}
+		}
+		NOT = { trait = nightswatch }
+		NOT = { trait = wildling }
+		is_ruler = no
+		NOT = { has_character_flag = raised_on_the_wall }
+		NOT = { has_character_flag = the_wildling_queen }
+		NOT = { trait = dragon }
+		NOT = { culture_group = winter_group }
+		NOT = { trait = slave }
+	}
+	
+	option = {
+		name = "EVTOPTAnightswatch.11"
+		any_spouse = {
+			limit = { trait = nightswatch }
+			remove_spouse = PREV
+		}	
+		if = { #try and move to a relative first
+			limit = { is_ruler = no }
+			random_spouse = {
+				limit = {
+					is_alive = yes
+					can_press_claims_trigger = yes
+				}
+				if = { 	
+					limit = { is_ruler = yes }
+					ROOT = { move_character = PREV }
+				}
+				if = { 
+					limit = { is_ruler = no }
+					liege = { ROOT = { move_character = PREV } }
+				}
+				break = yes
+			}
+			father = {
+				if = {
+					limit = {
+						is_alive = yes
+						can_press_claims_trigger = yes
+					}
+					if = { 	
+						limit = { is_ruler = yes }
+						ROOT = { move_character = PREV }
+					}
+					if = { 
+						limit = { is_ruler = no }
+						liege = { ROOT = { move_character = PREV } }
+					}
+					break = yes
+				}	
+			}
+			mother = {
+				if = {
+					limit = {
+						is_alive = yes
+						can_press_claims_trigger = yes
+					}
+					if = { 	
+						limit = { is_ruler = yes }
+						ROOT = { move_character = PREV }
+					}
+					if = { 
+						limit = { is_ruler = no }
+						liege = { ROOT = { move_character = PREV } }
+					}
+					break = yes
+				}	
+			}
+			if = {
+				limit = { NOT = { dynasty = 0 } }
+				if = {
+					limit = {
+						dynasty_head = {
+							NOT = { character = ROOT }
+							can_press_claims_trigger = yes
+						}
+					}
+					dynasty_head = {
+						if = {
+							limit = { is_ruler = yes }
+							ROOT = { move_character = PREV }
+						}
+						if = {
+							limit = { NOT = { is_ruler = yes } }
+							liege = { ROOT = { move_character = PREV } }
+						}
+					}
+					break = yes
+				}
+				random_dynasty_member = {
+					limit = {
+						is_alive = yes
+						is_ruler = yes
+						can_press_claims_trigger = yes
+					}
+					ROOT = { move_character = PREV }
+					break = yes
+				}
+				random_spouse = {
+					random_dynasty_member = {
+						limit = {
+							is_alive = yes
+							is_ruler = yes
+							can_press_claims_trigger = yes
+						}
+						ROOT = { move_character = PREV }
+						break = yes
+					}	
+				}
+				random_dynasty_member = {
+					limit = {
+						is_alive = yes
+						can_press_claims_trigger = yes
+					}
+					if = { 	
+						limit = { is_ruler = yes }
+						ROOT = { move_character = PREV }
+					}
+					if = { 
+						limit = { is_ruler = no }
+						liege = { ROOT = { move_character = PREV } }
+					}
+					break = yes
+				}	
+			}	
+			random_friend = {
+				limit = {
+					is_alive = yes
+					can_press_claims_trigger = yes
+				}
+				if = { 	
+					limit = { is_ruler = yes }
+					ROOT = { move_character = PREV }
+				}
+				if = { 
+					limit = { is_ruler = no }
+					liege = { ROOT = { move_character = PREV } }
+				}
+				break = yes
+			}
+			if = {
+				limit = {
+					OR = {
+						num_of_claims = 1
+						father_even_if_dead = { always = yes }
+						mother_even_if_dead = { always = yes }
+						NOT = { age = 14 }
+					}
+				}
+				random_playable_ruler = {
+					limit = {
+						valid_exile_destination_ROOT_trigger = yes		
+					}
+					ROOT = { move_character = PREV }
+					break = yes
+				}
+			}
+		}
+		if = {
+			limit = { NOT = { age = 14 } }
+			banish = yes
+			break = yes
+		}		
+		#If not moved, then join the nights' watch
+		if = {
+			limit = { 
+				age = 14 
+				is_female = yes 
+			}
+			add_trait = silent_sister
+			set_character_flag = no_court_invites
+			recalc_succession = yes
+		}	
+		if = {
+			limit = { 
+				age = 14 
+				is_female = no 
+			}
+			add_trait = nightswatch
+			remove_trait = wildling
+			set_character_flag = no_court_invites
+			recalc_succession = yes
+		}
+	}
+}
+
+
+# On-action: Night's Watch must be independent
+character_event = {
+	id = nightswatch.12
+	desc = "The Night's Watch takes no part in the feuds of the realm"
+	picture = GFX_evt_the_wall
+	is_triggered_only = yes
+	
+	only_playable = yes
+	
+	trigger = {
+		primary_title = { title = d_nightswatch } 
+		trait = nightswatch
+		independent = no
+		NOT = { liege = { trait = wildling } }
+	}
+	
+	option = {
+		name = "Ok"
+		set_defacto_liege = ROOT
+	}
+}
+
+
+# Night's Watch Calls for Aid
+character_event = {
+	id = nightswatch.13
+	desc = "EVTDESCnightswatch.13"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+	
+	portrait = event_target:NW_lord_commander
+	
+	trigger = {
+		event_target:NW_lord_commander = { 
+			is_alive = yes
+			is_primary_war_defender = yes 
+			has_landed_title = d_nightswatch
+		}
+		NOT = { any_liege = { war_with = event_target:NW_lord_commander } }
+		NOT = { any_liege = { event_target:NW_lord_commander = { any_current_enemy = { war_with = PREVPREV } } } }
+	}
+	
+	option = {
+		name = "EVTOPTAnightswatch.13"
+		ai_chance = {
+			factor = 10
+		}
+		join_defender_wars = event_target:NW_lord_commander
+	}
+	
+	option = {
+		name = "EVTOPTBnightswatch.13"
+		ai_chance = {
+			factor = 100	
+			modifier = {
+				factor = 25
+				OR = {
+					war = yes
+					any_liege = { war = yes }
+				}	
+			}
+			# Northerners support the Night's Watch
+			modifier = {
+				factor = 0.5
+				OR = {
+					AND = {
+						has_regent = no
+						culture_group = first_men
+					}
+					regent = {
+						culture_group = first_men
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				OR = {
+					AND = {
+						has_regent = no
+						OR = {
+							religion = old_gods_reformed
+							religion = old_gods
+						}	
+					}
+					regent = {
+						OR = {
+							religion = old_gods_reformed
+							religion = old_gods
+						}	
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					trait = wildling
+					trait = deserter
+				}
+			}
+			modifier = {
+				factor = 0.5
+				any_demesne_province = { region = world_north }
+			}
+			modifier = {
+				factor = 0.5
+				dynasty = 59
+			}
+			# Personality Effects
+			modifier = {
+				factor = 2
+				OR = {
+					AND = {
+						has_regent = no
+						trait = slothful
+					}
+					regent = {
+						trait = slothful
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					AND = {
+						has_regent = no
+						trait = cynical
+					}
+					regent = {
+						trait = cynical
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					AND = {
+						has_regent = no
+						trait = craven
+					}
+					regent = {
+						trait = craven
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					AND = {
+						has_regent = no
+						trait = selfish
+					}
+					regent = {
+						trait = selfish
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					AND = {
+						has_regent = no
+						trait = arbitrary
+					}
+					regent = {
+						trait = arbitrary
+					}
+				}
+			}
+			modifier = {
+				factor = 0.75
+				OR = {
+					AND = {
+						has_regent = no
+						trait = diligent
+					}
+					regent = {
+						trait = diligent
+					}
+				}
+			}
+			modifier = {
+				factor = 0.75
+				OR = {
+					AND = {
+						has_regent = no
+						trait = just
+					}
+					regent = {
+						trait = just
+					}
+				}
+			}
+			modifier = {
+				factor = 0.75
+				OR = {
+					AND = {
+						has_regent = no
+						trait = honorable
+					}
+					regent = {
+						trait = honorable
+					}
+				}
+			}
+			modifier = {
+				factor = 0.75
+				OR = {
+					AND = {
+						has_regent = no
+						trait = zealous
+					}
+					regent = {
+						trait = zealous
+					}
+				}
+			}
+			modifier = {
+				factor = 0.75
+				OR = {
+					AND = {
+						has_regent = no
+						trait = brave
+					}
+					regent = {
+						trait = brave
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				OR = {
+					AND = {
+						has_regent = no
+						trait = mystic
+					}
+					regent = {
+						trait = mystic
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				OR = {
+					AND = {
+						has_regent = no
+						trait = greensight
+					}
+					regent = {
+						trait = greensight
+					}
+				}
+			}
+		}
+		hidden_tooltip = { add_character_modifier = { name = ignored_NW_call duration = 1095 hidden = yes } }
+		if = {
+			limit = { NOT = { culture_group = first_men } }
+			if = {
+				limit = { higher_tier_than = DUKE }
+				prestige = -25
+			}
+			if = {
+				limit = { NOT = { higher_tier_than = DUKE } }
+				prestige = -10
+			}
+		}	
+		if = {
+			limit = { culture_group = first_men }
+			if = {
+				limit = { higher_tier_than = DUKE }
+				prestige = -50
+			}
+			if = {
+				limit = { NOT = { higher_tier_than = DUKE } }
+				prestige = -25
+			}
+		}
+		if = {
+			limit = { 
+				OR = {
+					religion = old_gods_reformed
+					religion = old_gods
+				}	 
+			}
+			if = {
+				limit = { higher_tier_than = DUKE }
+				piety = -50
+			}
+			if = {
+				limit = { NOT = { higher_tier_than = DUKE } }
+				piety = -25
+			}
+		}
+		any_vassal = {
+			limit = {
+				OR = {
+					AND = {
+						culture_group = first_men
+						OR = {
+							trait = honorable
+							trait = just
+							trait = zealous
+							trait = diligent
+						}
+						NOR = {
+							trait = arbitrary
+							trait = cynical
+							trait = selfish
+						}
+					}	
+					any_war = { 
+						defender = { has_landed_title = d_nightswatch }
+					}
+				}
+			}
+			opinion = { who = ROOT modifier = opinion_ignored_NW_call months = 60 }
+		}
+	}
+}
+
+# character_event = {
+	# id = 999900043
+	# desc = "EVTDESC999900043"
+	# picture = GFX_evt_the_wall
+	
+	# trigger = {
+		# has_character_flag = flag_nights_watch_called_for_aid
+		# war = no
+	# }
+	
+	# option = {
+		# name = "EVTOPTA999900043"
+		# clr_character_flag = flag_nights_watch_called_for_aid
+	# }
+# }
+
+# Brother has a chance to desert
+character_event = {
+	id = nightswatch.14
+	desc = "EVTDESCnightswatch.14"
+	picture = GFX_evt_the_wall
+	
+	only_men = yes
+	min_age = 16
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		trait = nightswatch
+		NOT = { has_landed_title = d_nightswatch }
+		in_command = no
+		location = {
+			owner = { trait = nightswatch }
+			any_neighbor_province = {
+				wildling_culture_trigger = yes
+				owner = {
+					NOT = { culture_group = unoccupied_group }
+					NOT = { culture_group = winter_group }
+					NOT = { trait = nightswatch }
+				}	
+			}
+		}
+		NOT = { trait = honorable }
+		NOT = { trait = just }
+		NOT = { trait = honest }
+		NOT = { trait = craven }
+		NOT = { trait = content }
+	}
+	
+	mean_time_to_happen = {
+		years = 300
+			
+		modifier = {
+			factor = 0.8
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.8
+			trait = greedy
+		}
+		modifier = {
+			factor = 0.8
+			trait = hedonist
+		}
+		modifier = {
+			factor = 0.8
+			trait = lustful
+		}
+		modifier = {
+			factor = 0.8
+			trait = ruthless
+		}
+		modifier = {
+			factor = 0.8
+			trait = deceitful
+		}
+		modifier = {
+			factor = 0.8
+			trait = arbitrary
+		}	
+		modifier = {
+			factor = 0.8
+			trait = brave
+		}
+		
+		modifier = {
+			factor = 2
+			trait = chaste
+		}
+		modifier = {
+			factor = 2
+			trait = charitable
+		}
+		
+		modifier = {
+			factor = 0.5
+			top_liege = { has_character_flag = yes_women_on_wall }
+		}
+		modifier = {
+			factor = 2
+			top_liege = { has_character_flag = no_women_on_wall }
+		}	
+	}
+	
+	option = { # Desert
+		name = "EVTOPTAnightswatch.14"
+		ai_chance = {
+			factor = 25
+			
+			modifier = {
+				factor = 1.66
+				trait = ambitious
+			}
+			modifier = {
+				factor = 1.66
+				trait = greedy
+			}
+			modifier = {
+				factor = 1.66
+				trait = hedonist
+			}
+			modifier = {
+				factor = 1.66
+				trait = lustful
+			}
+			modifier = {
+				factor = 1.66
+				trait = ruthless
+			}
+			modifier = {
+				factor = 1.66
+				trait = deceitful
+			}
+			modifier = {
+				factor = 1.66
+				trait = arbitrary
+			}	
+			modifier = {
+				factor = 1.66
+				trait = brave
+			}
+			
+			modifier = {
+				factor = 0.5
+				trait = chaste
+			}
+			modifier = {
+				factor = 0.5
+				trait = charitable
+			}
+			
+			modifier = {
+				factor = 0.33
+				is_ruler = yes
+			}
+			modifier = {
+				factor = 0.33
+				OR = {
+					is_voter = yes
+					is_councillor = yes
+				}
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { d_nightswatch = { holder_scope = { reverse_opinion = { who = ROOT value = -99 } } } }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { d_nightswatch = { holder_scope = { reverse_opinion = { who = ROOT value = -79 } } } }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { d_nightswatch = { holder_scope = { reverse_opinion = { who = ROOT value = -59 } } } }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { d_nightswatch = { holder_scope = { reverse_opinion = { who = ROOT value = -39 } } } }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { d_nightswatch = { holder_scope = { reverse_opinion = { who = ROOT value = -19 } } } }
+			}
+			modifier = {
+				factor = 0.8
+				d_nightswatch = { holder_scope = { reverse_opinion = { who = ROOT value = 20 } } }
+			}
+			modifier = {
+				factor = 0.8
+				d_nightswatch = { holder_scope = { reverse_opinion = { who = ROOT value = 40 } } }
+			}
+			modifier = {
+				factor = 0.8
+				d_nightswatch = { holder_scope = { reverse_opinion = { who = ROOT value = 60 } } }
+			}
+			modifier = {
+				factor = 0.8
+				d_nightswatch = { holder_scope = { reverse_opinion = { who = ROOT value = 80 } } }
+			}
+			modifier = {
+				factor = 0.8
+				d_nightswatch = { holder_scope = { reverse_opinion = { who = ROOT value = 100 } } }
+			}
+		}			
+		location = {
+			random_neighbor_province = {
+				limit = {
+					wildling_culture_trigger = yes
+					owner = {
+						NOT = { culture_group = unoccupied_group }
+						NOT = { culture_group = winter_group }
+						NOT = { trait = nightswatch }
+					}	
+				}
+				ROOT = {
+					remove_trait = nightswatch
+					clr_character_flag = no_court_invites
+					remove_character_modifier = nw_ranger
+					remove_character_modifier = nw_steward
+					remove_character_modifier = nw_builder
+					add_trait = wildling	
+					add_trait = deserter	
+					add_trait = disinherited
+					abdicate = yes
+					create_title = {
+						tier = DUKE
+						landless = yes
+						temporary = yes
+						rebel = yes
+						culture = ROOT
+						name = "NW_DESERTER"
+						holder = THIS
+					}
+					primary_title = { succession = turkish_succession }
+					recalc_succession = yes
+					spawn_unit = {
+						province = PREV
+						home = PREVPREV
+						scaled_by_biggest_garrison = 1.25
+						troops = {
+							heavy_infantry = { 4 4 }
+							light_infantry = { 7 7 }
+							archers = { 5 5 }
+							light_cavalry = { 4 4 }
+						}
+					}
+				}
+				county = {
+					reverse_war = {
+						target = ROOT
+						casus_belli = invasion
+					}
+				}
+				hidden_tooltip = { d_nightswatch = { holder_scope = { character_event = { id = nightswatch.15 } } } }
+			}
+		}		
+	}
+	
+	option = { # Don't Desert
+		name = "EVTOPTBnightswatch.14"
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+# Inform Lord Commander of rogue brother
+character_event = {
+	id = nightswatch.15
+	desc = "EVTDESCnightswatch.15"
+	picture = GFX_evt_the_wall
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAnightswatch.15"
+	}
+}
+
+# Ranger finds abandoned wildling child
+character_event = {
+	id = nightswatch.16
+	desc = "EVTDESCnightswatch.16"
+	picture = GFX_evt_the_wall
+	
+	is_triggered_only = yes
+	
+	only_men = yes
+	min_age = 16
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		trait = nightswatch
+		has_character_modifier = nw_ranger		
+		in_command = no
+	}
+	
+	weight_multiplier = {
+		days = 1
+	}	
+	
+	option = {
+		name = "EVTOPTAnightswatch.16"
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.5
+				trait = cruel
+			}
+			modifier = {
+				factor = 1.25
+				trait = diligent
+			}
+			modifier = {
+				factor = 0.8
+				trait = slothful
+			}
+		}
+		create_character = {
+			age = 0
+			female = no
+			dynasty = none
+			culture = wildling
+			religion = ROOT
+			employer = d_nightswatch
+			random_traits = yes
+		}
+		new_character = {
+			set_character_flag = wildling_foundling
+			add_friend = ROOT
+		}
+		if = {
+			limit = { NOT = { trait = sympathy_wildling_religion } }
+			if = {
+				limit = { trait = cynical }
+				add_trait = sympathy_wildling_religion
+			}
+			if = {
+				limit = { 
+					NOT = { trait = cynical }
+					NOT = { trait = zealous }
+				}
+				random = {
+					chance = 50
+					add_trait = sympathy_wildling_religion
+				}	
+			}
+		}	
+		hidden_tooltip = { d_nightswatch = { holder_scope = { character_event = { id = nightswatch.17 } } } }	
+	}
+	
+	option = {
+		name = "EVTOPTBnightswatch.16"
+		trigger = { NOT = { trait = kind } }
+		ai_chance = {
+			factor = 50
+		}
+		if = {
+			limit = { 
+				NOT = { trait = cruel } 
+				NOT = { personality_traits = 6 }
+			}
+			add_trait = cruel
+		}
+		piety = -100	
+	}
+}
+
+character_event = {
+	id = nightswatch.17
+	desc = "EVTDESCnightswatch.17"
+	picture = GFX_evt_the_wall
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAnightswatch.17"
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				trait = patient
+			}
+			modifier = {
+				factor = 2
+				trait = honorable
+			}
+			modifier = {
+				factor = 2
+				trait = trusting
+			}
+			modifier = {
+				factor = 1.25
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 0.5
+				trait = cruel
+			}	
+			modifier = {
+				factor = 0.5
+				trait = zealous
+			}			
+			modifier = {
+				factor = 0.8
+				trait = wroth
+			}	
+			modifier = {
+				factor = 0.8
+				trait = ruthless
+			}			
+			modifier = {
+				factor = 0.8
+				trait = just
+			}
+		}
+		random_courtier = {
+			limit = { has_character_flag = wildling_foundling }
+			clr_character_flag = wildling_foundling
+			add_trait = nightswatch
+			remove_trait = wildling
+			set_character_flag = no_court_invites
+		}
+		if = {
+			limit = { NOT = { trait = sympathy_wildling_religion } }
+			if = {
+				limit = { trait = cynical }
+				random = {
+					chance = 40
+					add_trait = sympathy_wildling_religion
+				}
+			}
+			if = {
+				limit = { 
+					NOT = { trait = cynical }
+					NOT = { trait = zealous }
+				}
+				random = {
+					chance = 20
+					add_trait = sympathy_wildling_religion
+				}	
+			}
+		}	
+		hidden_tooltip = { FROM = { character_event = { id = nightswatch.18 } } }		
+	}
+	option = {
+		name = "EVTOPTBnightswatch.17"
+		trigger = { NOT = { trait = kind } }
+		ai_chance = {
+			factor = 50
+		}
+		random_courtier = {
+			limit = { has_character_flag = wildling_foundling }
+			death = {
+				death_reason = death_execution
+				killer = ROOT
+			}
+		}
+		if = {
+			limit = { 
+				NOT = { trait = cruel } 
+				NOT = { personality_traits = 6 }
+			}
+			add_trait = cruel
+		}
+		hidden_tooltip = { FROM = { character_event = { id = nightswatch.19 } } }
+		piety = -100
+		change_variable = { which = "tyrant" value = 5 } 
+		hidden_tooltip = { character_event = { id = maintenance.1 } }#tyrant trait	
+	}
+}
+
+character_event = {
+	id = nightswatch.18
+	desc = "EVTDESCnightswatch.18"
+	picture = GFX_evt_the_wall
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAnightswatch.18"
+	}
+}
+
+character_event = {
+	id = nightswatch.19
+	desc = "EVTDESCnightswatch.19"
+	picture = GFX_evt_the_wall
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAnightswatch.19"
+	}
+}
+#inform character they have been banished
+character_event = { #make sure banisher is FROMFROM scope
+	id = nightswatch.2098
+	
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = { character_event = { id = nightswatch.20 } }
+	
+	option = {
+		name = OK
+	}
+}	
+long_character_event = {
+	id = nightswatch.20
+	picture = GFX_evt_the_wall
+	
+	is_triggered_only = yes
+	show_from_from = yes
+	
+	desc = {
+		text = EVTDESCnightswatch.20
+		trigger = { NOT = { has_character_flag = NW_volunteer } }
+	}
+	desc = {
+		text = EVTDESCnightswatch.20B
+		trigger = { has_character_flag = NW_volunteer }
+	}
+	
+	immediate = {
+		#find heir
+		if = { 
+			limit = { is_ruler = yes }
+			if = {
+				limit = { is_patrician = yes }
+				family_palace = { current_heir = { save_event_target_as = wealth_heir } }
+				break = yes
+			}
+			current_heir = { save_event_target_as = wealth_heir }
+			break = yes
+		}
+		if = { 
+			limit = { is_ruler = no }
+			random_child = {
+				limit = { 
+					is_alive = yes 
+					is_female = no
+					can_inherit_titles_trigger = yes				
+					NOT = {
+						ROOT = {
+							any_child = {
+								is_alive = yes 
+								is_female = no
+								NOT = { character = PREVPREV }
+								is_older_than = PREVPREV
+								NOT = { lower_tier_than = PREVPREV }
+								can_inherit_titles_trigger = yes
+							}
+						}
+					}
+				}
+				save_event_target_as = wealth_heir
+				break = yes
+			}
+			random_child = {
+				limit = { 
+					is_alive = yes 
+					is_female = no
+					can_inherit_titles_trigger = yes
+				}
+				save_event_target_as = wealth_heir
+				break = yes
+			}
+			random_child = {
+				limit = { 
+					is_alive = yes
+					can_inherit_titles_trigger = yes
+				}
+				save_event_target_as = wealth_heir
+				break = yes
+			}				
+			if = {
+				limit = { NOT = { dynasty = 0 } }
+				random_dynasty_member = {
+					limit = { 
+						is_alive = yes 
+						is_close_relative = ROOT
+					}
+					save_event_target_as = wealth_heir
+					break = yes
+				}
+				random_dynasty_member = {
+					limit = { 
+						is_alive = yes 
+					}
+					save_event_target_as = wealth_heir
+					break = yes
+				}
+			}	
+			if = {
+				limit = { 
+					spouse = { is_alive = yes }		
+				}
+				spouse = { save_event_target_as = wealth_heir }
+				break = yes
+			}			
+			liege = {
+				save_event_target_as = wealth_heir
+				break = yes
+			}
+		}
+	}
+	
+	option = {
+		name = {
+			text = "EVTOPTAnightswatch.20"
+			trigger = { NOT = { has_character_flag = NW_volunteer } }
+		}
+		name = {
+			text = "EVTOPTAnightswatch.20B"
+			trigger = { has_character_flag = NW_volunteer }
+		}
+		if = { #just in case they somehow get the event
+			limit = { 
+				culture_group = winter_group 
+				NOR = {
+					has_alternate_start_parameter = { key = special_culture value = mythological } 
+					has_alternate_start_parameter = { key = special_culture value = all } 
+				}
+			}
+			remove_trait = nightswatch
+			character_event = { id = cold_winds.203 } #check for culling
+			break = yes
+		}
+		if = {
+			limit = { prisoner = yes }
+			prisoner = no
+		}	
+		if = {
+			limit = { trait = kingsguard }
+			character_event = { id = kingsguard.1 } #remove from kingsguard
+		}	
+		add_trait = nightswatch		
+		set_character_flag = no_court_invites
+		if = { 
+			limit = {
+				is_ruler = yes
+			}
+			abdicate_effect = yes
+		}	
+		hidden_tooltip = { 
+			remove_trait = rebel_leader 
+			clr_character_flag = serving_varangian	#merc company	
+			if = {	
+				limit = { trait = archmaester }
+				remove_trait = archmaester
+				add_trait = maester
+				set_special_character_title = title_maester
+				clr_character_flag = grandmaester
+				if = {
+					limit = { 
+						society_member_of = hermetics 
+						society_rank = 4
+					}
+					society_rank_down = 1
+				}
+			}
+		}
+		###Debt Inheritance
+		if = {
+			limit = { 				
+				is_ruler = no			
+				has_character_flag = given_personal_loan
+			}
+			random_sibling = {
+				limit = {
+					is_alive = yes	
+					can_press_claims_trigger = yes
+				}
+				save_event_target_as = debt_inheritor
+			}
+			random_spouse = {
+				limit = {
+					is_alive = yes	
+					can_press_claims_trigger = yes
+				}
+				save_event_target_as = debt_inheritor
+			}
+			random_child_even_if_dead = {
+				limit = {
+					any_child = {
+						is_alive = yes	
+						can_press_claims_trigger = yes
+					}	
+				}
+				random_child = {
+					limit = {
+						is_alive = yes	
+						can_press_claims_trigger = yes
+					}
+					save_event_target_as = debt_inheritor
+				}
+			}
+			random_child = {
+				limit = {
+					is_alive = yes	
+					can_press_claims_trigger = yes
+				}
+				save_event_target_as = debt_inheritor
+			}
+			random_child = {
+				limit = {
+					is_female = no
+					is_alive = yes	
+					can_press_claims_trigger = yes
+					NOT = {
+						any_sibling = {
+							is_older_than = PREV
+							is_female = no
+							is_alive = yes
+							can_press_claims_trigger = yes					
+						}
+					}
+				}
+				save_event_target_as = debt_inheritor
+			}
+			inherit_debt_effect = yes
+		}
+		#chance of escaping on the journey north
+		if = {
+			limit = {
+				NOT = { has_character_flag = NW_volunteer }
+				NOT = { trait = honorable }
+				OR = {
+					intrigue = 14
+					wealth = 400
+					prestige = 500
+				}
+			}
+			random = {
+				chance = 1
+				modifier = {
+					factor = 0.25
+					trait = maester
+				}
+				modifier = {
+					factor = 0.25
+					trait = content
+				}
+				modifier = {
+					factor = 0.25
+					trait = just
+				}
+				modifier = {
+					factor = 0.25
+					trait = honest
+				}
+				modifier = {
+					factor = 0.25
+					trait = humble
+				}
+				modifier = {
+					factor = 1.5
+					trait = ruthless
+				}
+				modifier = {
+					factor = 1.5
+					trait = ambitious
+				}
+				modifier = {
+					factor = 1.5
+					trait = arbitrary
+				}
+				modifier = {
+					factor = 1.5
+					trait = deceitful
+				}
+				modifier = {
+					factor = 1.5
+					trait = proud
+				}
+				
+				modifier = {
+					factor = 2
+					intrigue = 14
+				}
+				modifier = {
+					factor = 2
+					intrigue = 16
+				}
+				modifier = {
+					factor = 2
+					intrigue = 18
+				}
+				modifier = {
+					factor = 2
+					intrigue = 20
+				}
+				modifier = {
+					factor = 1.5
+					wealth = 500
+				}
+				modifier = {
+					factor = 1.5
+					wealth = 600
+				}
+				modifier = {
+					factor = 1.5
+					wealth = 750
+				}
+				modifier = {
+					factor = 1.5
+					prestige = 700
+				}
+				modifier = {
+					factor = 2
+					prestige = 1000
+				}
+				modifier = {
+					factor = 2
+					prestige = 1500
+				}
+				custom_tooltip = {
+					text = TOOLTIPnightswatch.20ESCAPE
+					hidden_tooltip = {
+						remove_trait = nightswatch
+						clr_character_flag = no_court_invites
+						set_character_flag = escaped_nightswatch
+						random_playable_ruler = {
+							limit = {
+								valid_exile_destination_ROOT_trigger = yes	
+								NOT = { nightswatch_culture_trigger = yes }
+								NOT = { character = FROMFROM }
+								NOT = { is_liege_or_above = FROMFROM }
+								NOT = { has_opinion_modifier = { who = FROMFROM modifier = opinion_de_facto_liege } }
+								NOT = { any_liege = { has_opinion_modifier = { who = FROMFROM modifier = opinion_de_facto_liege } } }
+							}
+							ROOT = { move_character = PREV }
+						}
+						FROMFROM = { character_event = { id = nightswatch.2099 } }
+						break = yes
+					}
+				}	
+			}
+		}	
+		if = { #transfer wealth of unlanded only if they dont escape
+			limit = { is_ruler = no }
+			transfer_scaled_wealth = { to = event_target:wealth_heir value = all }
+		}
+		if = {
+			limit = {
+				trait = excommunicated
+			}
+			remove_trait = excommunicated
+		}		
+		if = {
+			limit = {
+				trait = wildling
+			}
+			remove_trait = wildling
+		}
+		if = {
+			limit = { society_member_of = alchemists_guild }
+			leave_society = yes
+		}
+		any_spouse = { remove_spouse = PREV }	
+		any_consort = { remove_consort = PREV }			
+		d_nightswatch = {
+			holder_scope = {
+				ROOT = { move_character = PREV }
+			}
+		}	
+		recalc_succession = yes
+		clr_character_flag = NW_volunteer
+		if = {
+			limit = { dynasty = 59 }
+			set_character_flag = stark_wall
+			if = {
+				limit = { has_global_flag = cold_winds }
+				add_claim = d_nightswatch
+			}
+		}
+		hidden_tooltip = { 
+			#Pass on claims to descendents
+			any_claim = {
+				#Legit Children
+				if = {
+					limit = { ROOT = { has_strong_claim = PREV } }
+					ROOT = {
+						any_child = {
+							limit = {
+								NOT = { trait = nightswatch }
+								NOT = { trait = kingsguard }
+								NOT = { trait = maester }
+								NOT = { trait = archmaester }
+								NOT = { trait = bastard }
+								NOT = { has_strong_claim = PREVPREV }
+							}
+							add_claim = PREVPREV
+						}
+					}
+				}
+				if = {
+					limit = { ROOT = { has_weak_claim = PREV } }
+					ROOT = {
+						any_child = {
+							limit = {
+								NOT = { trait = nightswatch }
+								NOT = { trait = kingsguard }
+								NOT = { trait = maester }
+								NOT = { trait = archmaester }
+								NOT = { trait = bastard }
+								NOT = { has_claim = PREVPREV }
+							}
+							add_weak_claim = PREVPREV
+						}
+					}
+				}
+				#Grandchildren
+				ROOT = {
+					any_dynasty_member = {
+						limit = {
+							NOT = { is_child_of = ROOT }
+							OR = {
+								father_even_if_dead = { is_child_of = ROOT is_alive = no }
+								mother_even_if_dead = { is_child_of = ROOT is_alive = no }
+							}
+							NOT = { trait = nightswatch }
+							NOT = { trait = kingsguard }
+							NOT = { trait = maester }
+							NOT = { trait = archmaester }
+							NOT = { trait = bastard }
+							NOT = { has_claim = PREVPREV }
+						}
+						add_weak_claim = PREVPREV
+					}
+				}
+				#Bastards
+				ROOT = {
+					any_child = {
+						limit = {
+							NOT = { trait = nightswatch }
+							NOT = { trait = kingsguard }
+							NOT = { trait = maester }
+							NOT = { trait = archmaester }
+							trait = bastard
+							NOT = { has_claim = PREVPREV }
+						}
+						add_weak_claim = PREVPREV
+					}
+				}
+			}
+		}
+	}
+}
+#inform FROM escaped
+character_event = {
+	id = nightswatch.2099
+	desc = "EVTDESCnightswatch.2099"
+	picture = GFX_evt_the_wall
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAnightswatch.2099"	
+		opinion = {
+			who = FROM
+			modifier = opinion_traitor
+		}
+	}
+}	
+#Restored Lord Commander gets lands back
+character_event = {
+	id = nightswatch.21
+	desc = "EVTDESCnightswatch.21"
+	picture = GFX_evt_the_wall
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAnightswatch.21"
+		if = {
+			limit = { NOT = { demesne_size = 1 } }
+			c_castle_black = { grant_title = ROOT }
+		}
+		set_government_type = NW_government
+		d_the_wall = {
+			usurp_title = ROOT			
+			any_de_jure_vassal_title = {
+				limit = { tier = COUNT }
+				#location = { culture = northman }
+				if = {
+					limit = { holder_scope = { trait = wildling } }
+					usurp_title = { target = ROOT type = claim }
+				}
+				holder_scope = { 
+					if = {
+						limit = { 
+							NOT = { trait = wildling }
+							tier = COUNT
+						} 
+						set_defacto_liege = ROOT
+						add_trait = nightswatch
+						set_character_flag = no_court_invites
+					}				
+				}
+			}
+		}
+		any_realm_lord = {
+			limit = {
+				tier = BARON
+				trait = wildling
+			}
+			any_demesne_title = { usurp_title = { target = ROOT type = claim } }
+		}
+		hidden_tooltip = {
+			any_character = {
+				limit = {
+					trait = nightswatch
+					NOT = { character = ROOT }
+					is_ruler = no
+					NOT = { liege = { trait = nightswatch } }
+				}
+				move_character = ROOT
+			}
+			#Refill holding levies
+			character_event = { id = maintenance.34 days = 1 }
+			any_realm_lord = {
+				character_event = { id = maintenance.34 days = 1 }
+			}
+		}	
+		d_nightswatch = { 
+			set_preferred_capital = 17 #Castle Black
+			clr_title_flag = has_temporary_home
+		}
+	}
+}
+
+##banishing random women does not help as the game will just generate more, 
+#event nightswatch.11 already sorts women
+# character_event = {
+	# id = 999900099
+	# desc = "EVTDESC999900099"
+	# picture = GFX_evt_the_wall
+	
+	# trigger = {
+		# NOT = { has_character_flag = no_women_on_wall }
+		# NOT = { has_character_flag = yes_women_on_wall }
+		# has_landed_title = d_nightswatch
+		# NOT = { trait = wildling }
+		# trait = nightswatch
+		# any_courtier = {
+			# is_female = yes
+		# }
+		# b_moles_town = {
+			# controller = {
+				# NOT = { character = root }
+			# }
+		# }
+	# }
+
+	# mean_time_to_happen = { years = 1 }
+
+
+	# option = {
+		# name = "EVTOPTA999900099" #The wall is no place for women, send them to Moles town.
+		# set_character_flag = no_women_on_wall
+		# piety = 50
+	# }
+
+	# option = {
+		# name = "EVTOPTB999900099" #Women on the wall is ok, the men will hold their vowes
+		# set_character_flag = yes_women_on_wall
+		# piety = -100
+	# }
+# }
+
+# character_event = {
+	# id = 999900098
+	# desc = "EVTDESC999900098"
+	# picture = GFX_evt_the_wall
+	
+	# trigger = {
+		# is_female = yes
+		# NOT = { location = { province_id = 19 } }
+		# top_liege = { 
+			# has_landed_title = d_nightswatch 
+			# trait = nightswatch
+		# }
+		# d_nightswatch = {
+			# holder_scope = {
+				# has_character_flag = no_women_on_wall
+			# }
+		# }
+		# b_moles_town = {
+			# controller = {
+				# NOT = { character = root }
+			# }
+		# }
+	# }
+	
+	# immediate = { 
+		# b_moles_town = {
+			# controller = {
+				# reverse_banish = ROOT
+			# }
+		# }
+	# }
+	
+	# option = {
+		# name = "EVTOPTA999900098" #I will become a hard working respectable member of this community.
+	# }
+# }
+	
+##on_combat_pulse events = { nightswatch.22 }
+character_event = {
+	id = nightswatch.22
+	desc = "EVTDESCnightswatch.22"
+	picture = GFX_evt_the_wall
+	
+	is_triggered_only = yes
+	
+	trigger = {	
+		location = { 
+			OR = {
+				province_id = 16
+				province_id = 17
+				province_id = 18
+			}
+			owner = { 
+				capital_holding = { is_occupied = no } 
+				OR = {
+					character = ROOT
+					same_realm = ROOT					
+				}
+				NOT = { war_with = ROOT }
+				NOT = { any_current_enemy = { is_liege_of = ROOT } }
+			} 			
+		}
+		# OR = {
+			# AND = {
+				any_current_enemy = {
+					capital_scope = { region = world_beyond_the_wall }
+					NOT = { any_realm_province = { NOT = { region = world_beyond_the_wall } } }
+					OR = {
+						AND = {
+							in_battle = yes	
+							at_location = ROOT
+						}
+						any_realm_character = {
+							in_battle = yes	
+							at_location = ROOT
+						}
+					}	
+				}
+			# }	
+			# liege = {
+				# NOT = { character = ROOT }
+				# any_current_enemy = {
+					# capital_scope = { region = world_beyond_the_wall }
+					# any_realm_character = {
+						# in_battle = yes	
+						# at_location = ROOT
+					# }
+				# }
+			# }
+		# }	
+		NOT = { has_global_flag = winterhorn_used }
+	}
+
+	weight_multiplier = {
+		days = 2
+	}
+
+	
+	option = { 
+		name = "EVTOPTAnightswatch.22" #LOOSE!
+		random_current_enemy = {
+			limit = { 
+				capital_scope = { region = world_beyond_the_wall }
+				NOT = { any_realm_province = { NOT = { region = world_beyond_the_wall } } }
+				any_realm_character = {
+					in_battle = yes	
+					at_location = ROOT
+				}
+			}
+			if = {
+				limit = {
+					in_battle = yes	
+					at_location = ROOT
+				}
+				tooltip = {
+					troops = -0.1
+					morale = -0.1
+				}	
+			}
+			any_realm_character = {
+				limit = {
+					in_battle = yes	
+					at_location = ROOT
+				}
+				tooltip = {
+					troops = -0.1
+					morale = -0.1
+				}	
+			}
+			character_event = { id = nightswatch.23 }
+		}	
+	}
+}
+
+#We, the wildlings, got owned
+character_event = {
+	id = nightswatch.23
+	desc = "EVTDESCnightswatch.23"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAnightswatch.23" #I wont try to assault the wall directly while it is defended again. derp
+		if = {
+			limit = {
+				in_battle = yes	
+				at_location = FROM
+			}
+			troops = -0.1
+			morale = -0.1
+		}
+		any_realm_character = {
+			limit = {
+				in_battle = yes	
+				at_location = FROM
+			}
+			troops = -0.1
+			morale = -0.1	
+		}
+	}
+}	
+#999900095 used by wildlings
+#AI decides what to do with bastard
+character_event = {
+	id = nightswatch.24
+	desc = "AI Event nightswatch.24"
+	picture = GFX_evt_the_wall
+	
+	is_triggered_only = yes
+	
+	# trigger = {
+		# ai = yes
+		# trait = nightswatch
+		# any_child = {
+			# NOT = { age = 16 }
+			# NOT = { trait = nightswatch }
+			# any_liege = { trait = nightswatch }
+			# NOT = { has_character_flag = raised_on_the_wall }
+		# }	
+		# any_dynasty_member = {
+			# is_alive = yes
+			# NOT = { trait = nightswatch }
+			# NOT = { trait = kingsguard }
+			# NOT = { trait = maester }
+			# NOT = { trait = archmaester }
+		# }				
+	# }
+	
+	# immediate = {
+		# random_child = {
+			# limit = {
+				# NOT = { age = 16 }
+				# NOT = { trait = nightswatch }
+				# any_liege = { trait = nightswatch }
+				# NOT = { has_character_flag = raised_on_the_wall }
+			# }
+			# set_character_flag = nw_child_target		
+		# }
+	# }
+	
+	option = {
+		name = "Send away"
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 4
+				FROM = { is_female = yes }
+			}
+			modifier = {
+				factor = 3
+				FROM = { NOT = { trait = bastard } }
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				trait = honorable
+			}
+			modifier = {
+				factor = 2
+				trait = familyperson
+			}
+			modifier = {
+				factor = 2
+				trait = just
+			}
+			modifier = {
+				factor = 2
+				trait = content
+			}
+		}
+		wealth = -20
+		ROOT = {
+			random_dynasty_member = {
+				limit = {
+					is_alive = yes
+					NOT = { trait = nightswatch }
+					NOT = { trait = kingsguard }
+					NOT = { trait = maester }
+					NOT = { trait = archmaester }
+					demesne_size = 1
+					is_close_relative = ROOT
+				}
+				FROM = { move_character = PREV }
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_dynasty_member = {
+							is_alive = yes
+							NOT = { trait = nightswatch }
+							NOT = { trait = kingsguard }
+							NOT = { trait = maester }
+							NOT = { trait = archmaester }
+							demesne_size = 1
+							is_close_relative = ROOT
+						}
+					}
+				}
+				random_dynasty_member = {
+					limit = {
+						is_alive = yes
+						NOT = { trait = nightswatch }
+						NOT = { trait = kingsguard }
+						NOT = { trait = maester }
+						NOT = { trait = archmaester }
+						NOT = { demesne_size = 1 }
+						is_close_relative = ROOT
+					}
+					FROM = { move_character = PREV }
+				}
+			}	
+			if = {
+				limit = {
+					NOT = {
+						any_dynasty_member = {
+							is_alive = yes
+							NOT = { trait = nightswatch }
+							NOT = { trait = kingsguard }
+							NOT = { trait = maester }
+							NOT = { trait = archmaester }
+							is_close_relative = ROOT
+						}
+					}
+				}
+				random_dynasty_member = {
+					limit = {
+						is_alive = yes
+						NOT = { trait = nightswatch }
+						NOT = { trait = kingsguard }
+						NOT = { trait = maester }
+						NOT = { trait = archmaester }
+					}
+					if = {
+						limit = { demesne_size = 1 }
+						FROM = { move_character = PREV }
+					}
+					if = {
+						limit = { NOT = { demesne_size = 1 } }
+						liege = { FROM = { move_character = PREV } }
+					}								
+				}
+			}
+		}	
+	}
+	option = {
+		name = "Keep at the Wall"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				demesne_size = 1
+			}
+			modifier = {
+				factor = 2
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = ruthless
+			}
+			modifier = {
+				factor = 2
+				trait = slothful
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2
+				trait = ambitious
+			}
+		}
+		FROM = { 
+			set_character_flag = raised_on_the_wall
+		}	
+	}
+}
+# First Ranger has taken an arrow wound
+character_event = {
+	id = nightswatch.25
+	desc = "EVTDESCnightswatch.25"
+	picture = GFX_evt_death
+	
+	only_men = yes
+	min_age = 16
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		primary_title = { title = d_nightswatch }
+		trait = nightswatch
+		job_marshal = { trait = nightswatch }
+	}
+	
+	mean_time_to_happen = {
+		years = 150
+	}	
+	
+	immediate = {
+		job_marshal = { add_trait_silently_wounded_effect = yes }
+	}
+	
+	option = {
+		name = "EVTOPTAnightswatch.25" #We will save him!
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 0.5
+				trait = cruel
+			}
+			modifier = {
+				factor = 1.25
+				trait = charitable
+			}
+			modifier = {
+				factor = 0.75
+				trait = greedy
+			}
+			modifier = {
+				factor = 1.25
+				trait = diligent
+			}
+			modifier = {
+				factor = 0.8
+				trait = slothful
+			}
+		}
+		scaled_wealth = { value = -0.5 min = -10 max = -75 }
+		if = {
+			limit = {
+				NOT = { trait = kind }
+				NOT = { trait = cruel }
+				NOT = { personality_traits = 6 }
+			}
+			random = {
+				chance = 15
+				add_trait = kind
+				hidden_tooltip = {
+					character_event = {
+						id = 38268 #Notify kind
+					}
+				}
+			}
+		}	
+		job_marshal = {
+			random_list = {
+				20 = {
+					red_god_resurrect_effect = yes #check for rhllor resurrection
+					death = {
+						death_reason = death_trait
+					}
+					hidden_tooltip = { ROOT = { character_event = { id = nightswatch.26 days = 3 } } }
+				}
+				60 = {
+					remove_trait = wounded
+					hidden_tooltip = { ROOT = { character_event = { id = nightswatch.27 days = 3 } } }
+				}
+				20 = {
+					hidden_tooltip = { remove_trait = wounded }
+					add_crippled_trait_effect = yes
+					hidden_tooltip = { ROOT = { character_event = { id = nightswatch.27 days = 3 } } }
+				}
+			}
+		}
+		custom_tooltip = { text = TOOLTIPEVTOPTAnightswatch.25 }
+		hidden_tooltip = {
+			any_realm_character = {
+				limit = { 
+					trait = nightswatch 
+					has_character_modifier = nw_ranger
+				}
+				opinion = {
+					who = ROOT
+					modifier = opinion_helped_first_ranger
+					years = 3
+				}
+			}
+		}	
+	}
+	option = {
+		name = "EVTOPTBnightswatch.25" #Cannot afford it
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0
+				trait = honorable
+			}
+			modifier = {
+				factor = 1.25
+				trait = just
+			}
+			modifier = {
+				factor = 0.75
+				trait = charitable
+			}
+			modifier = {
+				factor = 1.25
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.75
+				trait = diligent
+			}			
+			modifier = {
+				factor = 2
+				trait = ruthless
+			}
+		}
+		if = {
+			limit = {
+				NOT = { trait = ruthless }
+				NOT = { trait = honorable }
+				NOT = { personality_traits = 6 }
+			}
+			random = {
+				chance = 15
+				add_trait = ruthless
+				hidden_tooltip = { character_event = { id = trait_notification.18 } }
+			}
+		}	
+		job_marshal = {
+			random_list = {
+				60 = {
+					red_god_resurrect_effect = yes #check for rhllor resurrection
+					death = {
+						death_reason = death_trait
+					}
+					hidden_tooltip = { ROOT = { character_event = { id = nightswatch.26 days = 3 } } }
+				}
+				20 = {
+					remove_trait = wounded
+					hidden_tooltip = { ROOT = { character_event = { id = nightswatch.27 days = 3 } } }
+				}
+				20 = {
+					hidden_tooltip = { remove_trait = wounded }
+					add_crippled_trait_effect = yes
+					hidden_tooltip = { ROOT = { character_event = { id = nightswatch.27 days = 3 } } }
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTCnightswatch.25" #Have him killed!
+		trigger = {
+			OR = {
+				trait = paranoid
+				trait = lunatic
+				AND = {
+					job_marshal = { 
+						NOT = { reverse_opinion = { who = ROOT value = 0 } }
+					}
+					NOT = { trait = honorable }
+					NOT = { trait = just }			
+				}
+			}
+		}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				trait = honest
+			}
+			modifier = {
+				factor = 0
+				trait = honorable
+			}
+			modifier = {
+				factor = 0
+				trait = kind
+			}
+			
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.5
+				trait = patient
+			}
+			modifier = {
+				factor = 2
+				trait = cruel
+			}			
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2
+				trait = ruthless
+			}
+		}		
+		if = {
+			limit = {
+				NOT = { trait = deceitful }
+				NOT = { trait = honorable }
+				NOT = { trait = honest }
+				NOT = { personality_traits = 6 }
+			}
+			random = {
+				chance = 15
+				add_trait = deceitful
+				hidden_tooltip = {
+					character_event = {
+						id = 38255 #Notify Deceitful
+					}
+				}
+			}
+		}	
+		random_list = {
+			80 = {
+				job_marshal = {
+					red_god_resurrect_effect = yes #check for rhllor resurrection
+					death = {
+						death_reason = death_trait
+					}
+				}
+			}	
+			20 = {
+				character_event = { id = nightswatch.28 tooltip = TOOLTIPnightswatch.28 } 
+			}
+		}	
+	}
+}
+#Inform first ranger dies
+character_event = {
+	id = nightswatch.26
+	desc = "EVTDESCnightswatch.26"
+	picture = GFX_evt_death
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAnightswatch.26" 
+	}
+}	
+#Inform first ranger survives
+character_event = {
+	id = nightswatch.27
+	desc = "EVTDESCnightswatch.27"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAnightswatch.27" 
+	}
+}	
+#Inform first ranger murder discovered
+character_event = {
+	id = nightswatch.28
+	desc = "EVTDESCnightswatch.28"
+	picture = GFX_evt_death
+
+	is_triggered_only = yes
+	
+	immediate = {
+		job_marshal = {
+			hidden_tooltip = {
+				save_event_target_as = target_victim
+				ROOT = { 
+					set_character_flag = murder_event_override
+					character_event = { id = 10 } # Consequences of discovery
+				} 
+				clear_event_target = target_victim
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTAnightswatch.28" 
+		job_marshal = {
+			ROOT_murder_red_god_resurrect_effect = yes #check for rhllor resurrection
+			death = {
+				death_reason = death_murder
+				killer = ROOT
+			}
+		}
+		piety = -100
+		if = {
+			limit = {
+				NOT = { trait = deceitful }
+				NOT = { trait = honest }
+				NOT = { trait = honorable }
+			}
+			random = {
+				chance = 33
+				add_trait = deceitful
+				hidden_tooltip = {
+					character_event = {
+						id = 38255 #Notify Deceitful
+					}
+				}				
+			}	
+		}		
+		if = {
+			limit = {
+				trait = honest
+			}
+			remove_trait = honest
+		}
+		if = {
+			limit = { trait = honorable }
+			remove_trait = honorable
+		}
+		if = {
+			limit = { NOT = { has_cutthroat_religion_trigger = yes } }
+			tooltip = { change_variable = { which = "dishonorable" value = 10 } }
+		}
+		any_realm_character = {
+			limit = { 
+				trait = nightswatch 
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_murdered_first_ranger
+			}
+		}
+	}
+}	
+# ###Lord Commander Election### #Now has special succession law
+# #Vote for preferred candidate
+# character_event = {
+	# id = nightswatch.2900
+	# desc = "EVTDESCnightswatch.2900"
+	# picture = GFX_evt_the_wall
+
+	# is_triggered_only = yes
+	
+	# trigger = {
+		# NOT = { has_landed_title = k_nightswatch }
+	# }
+	
+	# immediate = {
+		# if = {
+			# limit = {
+				# trait = nightswatch
+				# prisoner = no
+				# is_incapable = no
+				# NOR = {
+					# trait = maester
+					# trait = archmaester
+					# has_priest_trait_trigger = yes
+				# }
+			# }
+			# set_character_flag = NW_candidate
+			# save_event_target_as = NW_candidate_1
+		# }
+		# random_realm_character = {
+			# limit = {
+				# trait = nightswatch
+				# prisoner = no
+				# is_incapable = no
+				# NOR = {
+					# trait = maester
+					# trait = archmaester
+					# has_priest_trait_trigger = yes
+				# }
+				# OR = {
+					# has_landed_title = c_castle_black
+					# has_landed_title = c_shadow_tower
+					# has_landed_title = c_eastwatch
+					# has_minor_title = title_first_ranger
+					# has_minor_title = title_first_steward
+					# prestige = 500
+					# martial = 16
+					# stewardship = 16
+					# diplomacy = 16
+					# trait = dragon_rider
+					# father_even_if_dead = { higher_tier_than = DUKE }
+					# dynasty = 59
+				# }
+				# NOT = { has_character_flag = NW_candidate }
+			# }
+			# set_character_flag = NW_candidate
+			# save_event_target_as = NW_candidate_2
+		# }
+		# random_realm_character = {
+			# limit = {
+				# trait = nightswatch
+				# prisoner = no
+				# is_incapable = no
+				# NOR = {
+					# trait = maester
+					# trait = archmaester
+					# has_priest_trait_trigger = yes
+				# }
+				# OR = {
+					# has_landed_title = c_castle_black
+					# has_landed_title = c_shadow_tower
+					# has_landed_title = c_eastwatch
+					# has_minor_title = title_first_ranger
+					# has_minor_title = title_first_steward
+					# prestige = 500
+					# martial = 16
+					# stewardship = 16
+					# diplomacy = 16
+					# trait = dragon_rider
+					# father_even_if_dead = { higher_tier_than = DUKE }
+					# dynasty = 59
+				# }
+				# NOT = { has_character_flag = NW_candidate }
+			# }
+			# set_character_flag = NW_candidate
+			# save_event_target_as = NW_candidate_3
+		# }
+		# random_realm_character = {
+			# limit = {
+				# trait = nightswatch
+				# prisoner = no
+				# is_incapable = no
+				# NOR = {
+					# trait = maester
+					# trait = archmaester
+					# has_priest_trait_trigger = yes
+				# }
+				# OR = {
+					# has_landed_title = c_castle_black
+					# has_landed_title = c_shadow_tower
+					# has_landed_title = c_eastwatch
+					# has_minor_title = title_first_ranger
+					# has_minor_title = title_first_steward
+					# prestige = 500
+					# martial = 16
+					# stewardship = 16
+					# diplomacy = 16
+					# trait = dragon_rider
+					# father_even_if_dead = { higher_tier_than = DUKE }
+					# dynasty = 59
+				# }
+				# NOT = { has_character_flag = NW_candidate }
+			# }
+			# set_character_flag = NW_candidate
+			# save_event_target_as = NW_candidate_4
+		# }
+		# if = {
+			# limit = { NOT = { has_character_flag = NW_candidate } }
+			# random_realm_character = {
+				# limit = {
+					# trait = nightswatch
+					# prisoner = no
+					# is_incapable = no
+					# NOR = {
+						# trait = maester
+						# trait = archmaester
+						# has_priest_trait_trigger = yes
+					# }
+					# OR = {
+						# has_landed_title = c_castle_black
+						# has_landed_title = c_shadow_tower
+						# has_landed_title = c_eastwatch
+						# has_minor_title = title_first_ranger
+						# has_minor_title = title_first_steward
+						# prestige = 500
+						# martial = 16
+						# stewardship = 16
+						# diplomacy = 16
+						# trait = dragon_rider
+						# father_even_if_dead = { higher_tier_than = DUKE }
+						# dynasty = 59
+					# }
+					# NOT = { has_character_flag = NW_candidate }
+				# }
+				# set_character_flag = NW_candidate
+				# save_event_target_as = NW_candidate_1
+			# }
+		# }
+	# }
+	
+	# option = {
+		# name = "EVTOPTAnightswatch.2900"
+		# trigger = { event_target:NW_candidate_1 = { character = ROOT } }
+		# custom_tooltip = { text = TOOLTIPnightswatch.2900 }
+		# clr_character_flag = NW_candidate
+		# set_character_flag = preferred_NW_commander
+		# hidden_tooltip = {
+			# event_target:NW_candidate_2 = { clr_character_flag = NW_candidate }
+			# event_target:NW_candidate_3 = { clr_character_flag = NW_candidate }
+			# event_target:NW_candidate_4 = { clr_character_flag = NW_candidate }
+		# }
+	# }
+	
+	# option = {
+		# name = "EVTOPTBnightswatch.2900"
+		# trigger = { NOT = { event_target:NW_candidate_1 = { character = ROOT } } }
+		# event_target:NW_candidate_1 = {
+			# custom_tooltip = { text = TOOLTIPnightswatch.2900 }
+			# clr_character_flag = NW_candidate
+			# set_character_flag = preferred_NW_commander
+		# }	
+		# hidden_tooltip = {
+			# event_target:NW_candidate_2 = { clr_character_flag = NW_candidate }
+			# event_target:NW_candidate_3 = { clr_character_flag = NW_candidate }
+			# event_target:NW_candidate_4 = { clr_character_flag = NW_candidate }
+		# }
+	# }
+	
+	# option = {
+		# name = "EVTOPTCnightswatch.2900"
+		# trigger = { event_target:NW_candidate_2 = { always = yes } }
+		# event_target:NW_candidate_2 = {
+			# custom_tooltip = { text = TOOLTIPnightswatch.2900 }
+			# clr_character_flag = NW_candidate
+			# set_character_flag = preferred_NW_commander
+		# }	
+		# hidden_tooltip = {
+			# event_target:NW_candidate_1 = { clr_character_flag = NW_candidate }
+			# event_target:NW_candidate_3 = { clr_character_flag = NW_candidate }
+			# event_target:NW_candidate_4 = { clr_character_flag = NW_candidate }
+		# }
+	# }
+	
+	# option = {
+		# name = "EVTOPTDnightswatch.2900"
+		# trigger = { event_target:NW_candidate_3 = { always = yes } }
+		# event_target:NW_candidate_3 = {
+			# custom_tooltip = { text = TOOLTIPnightswatch.2900 }
+			# clr_character_flag = NW_candidate
+			# set_character_flag = preferred_NW_commander
+		# }	
+		# hidden_tooltip = {
+			# event_target:NW_candidate_1 = { clr_character_flag = NW_candidate }
+			# event_target:NW_candidate_2 = { clr_character_flag = NW_candidate }
+			# event_target:NW_candidate_4 = { clr_character_flag = NW_candidate }
+		# }
+	# }
+	
+	# option = {
+		# name = "EVTOPTEnightswatch.2900"
+		# trigger = { event_target:NW_candidate_4 = { always = yes } }
+		# event_target:NW_candidate_4 = {
+			# custom_tooltip = { text = TOOLTIPnightswatch.2900 }
+			# clr_character_flag = NW_candidate
+			# set_character_flag = preferred_NW_commander
+		# }	
+		# hidden_tooltip = {
+			# event_target:NW_candidate_1 = { clr_character_flag = NW_candidate }
+			# event_target:NW_candidate_2 = { clr_character_flag = NW_candidate }
+			# event_target:NW_candidate_3 = { clr_character_flag = NW_candidate }
+		# }
+	# }
+# }
+#Win the election
+character_event = {
+	id = nightswatch.29
+	desc = "EVTDESCnightswatch.29"
+	picture = GFX_evt_the_wall
+	
+	is_triggered_only = yes
+	
+	# has_global_flag = new_NW_LC_needed
+	# only_men = yes
+	# min_age = 14
+	# capable_only = yes
+	# prisoner = no
+	
+	trigger = {
+		trait = nightswatch	
+		has_landed_title = d_nightswatch
+		# NOR = {
+			# trait = maester
+			# trait = archmaester
+			# has_priest_trait_trigger = yes
+		# }
+	}
+	
+	# mean_time_to_happen = {
+		# months = 145
+		
+		# modifier = {
+			# factor = 0.5
+			# had_global_flag = { flag = new_NW_LC_needed days = 50 }
+		# }
+		# modifier = {
+			# factor = 0.5
+			# had_global_flag = { flag = new_NW_LC_needed days = 100 }
+		# }
+		# modifier = {
+			# factor = 0.5
+			# had_global_flag = { flag = new_NW_LC_needed days = 200 }
+		# }
+		# modifier = {
+			# factor = 0.5
+			# had_global_flag = { flag = new_NW_LC_needed days = 250 }
+		# }
+		# modifier = {
+			# factor = 0.5
+			# had_global_flag = { flag = new_NW_LC_needed days = 350 }
+		# }
+		
+		# #Misc Positive
+		# modifier = {
+			# factor = 0.5
+			# has_character_flag = preferred_NW_commander
+		# }
+		# modifier = {
+			# factor = 0.5
+			# tier = BARON
+		# }
+		# modifier = {
+			# factor = 0.25
+			# tier = COUNT
+			# is_feudal = yes
+		# }
+		# modifier = {
+			# factor = 0.25
+			# OR = {
+				# has_minor_title = title_first_ranger
+				# has_minor_title = title_first_steward
+			# }
+		# }
+		# modifier = {
+			# factor = 0.5
+			# has_character_modifier = nw_ranger
+		# }
+		# modifier = {
+			# factor = 0.5
+			# trait = dragon_rider
+		# }
+		# modifier = {
+			# factor = 0.75
+			# has_character_flag = NW_personal_steward
+		# }		
+		# modifier = {
+			# factor = 0.75
+			# father_even_if_dead = { tier = DUKE }
+		# }
+		# modifier = {
+			# factor = 0.5
+			# father_even_if_dead = { higher_tier_than = DUKE }
+		# }
+		# modifier = {
+			# factor = 0.75
+			# dynasty = 59
+		# }
+		# modifier = {
+			# factor = 0.25
+			# character = 1002059
+		# }
+		
+		# #Misc Negative
+		# modifier = {
+			# factor = 5
+			# has_character_modifier = NW_broken_vows
+		# }
+		# modifier = {
+			# factor = 2
+			# OR = {		
+				# dynasty = 0
+				# NOT = { father_even_if_dead = { always = yes } }
+			# }	
+		# }
+		# modifier = {
+			# factor = 2
+			# NOT = { religion_group = westerosi_religion }
+		# }
+		# modifier = {
+			# factor = 2
+			# NOT = { culture_group = andal }
+			# NOT = { culture_group = dornish }
+			# NOT = { culture_group = first_men }
+			# NOT = { culture_group = iron_isles_culture }
+		# }
+		# modifier = {
+			# factor = 1.5
+			# has_character_modifier = nw_builder
+		# }
+		# modifier = {
+			# factor = 5
+			# wildling_culture_trigger = yes
+		# }
+		# modifier = {
+			# factor = 3
+			# has_nickname = nick_crowkiller 
+		# }	
+		# modifier = {
+			# factor = 1.5
+			# trait = sympathy_wildling_religion
+		# }
+		# modifier = {
+			# factor = 2
+			# NOT = { age = 21 }
+		# }
+		# modifier = {
+			# factor = 1.5
+			# NOT = { age = 30 }
+		# }
+		
+		# #traits
+		# modifier = {
+			# factor = 2
+			# trait = depressed
+		# }
+		# modifier = {
+			# factor = 2
+			# trait = lunatic
+		# }
+		# modifier = {
+			# factor = 2
+			# trait = possessed
+		# }
+		# modifier = {
+			# factor = 2
+			# is_maimed_trigger = yes
+		# }
+		# modifier = {
+			# factor = 2
+			# trait = infirm
+		# }
+		# modifier = {
+			# factor = 2
+			# is_crippled_trigger = yes
+		# }
+		# modifier = {
+			# factor = 2
+			# trait = blinded
+		# }
+		# modifier = {
+			# factor = 2
+			# trait = blinded_age
+		# }
+		# modifier = {
+			# factor = 2
+			# trait = excommunicated
+		# }
+		# modifier = {
+			# factor = 2
+			# is_any_kinslayer_trigger = yes
+		# }
+		# modifier = {
+			# factor = 2
+			# has_epidemic = yes
+		# }
+		# modifier = {
+			# factor = 1.5
+			# is_ill = yes
+		# }
+		# modifier = {
+			# factor = 1.5
+			# trait = bastard
+		# }
+		
+		# #Personality
+		# modifier = {
+			# factor = 2
+			# trait = content
+		# }
+		# modifier = {
+			# factor = 2
+			# trait = slothful
+		# }
+		# modifier = {
+			# factor = 2
+			# trait = humble
+		# }
+		# modifier = {
+			# factor = 2
+			# trait = craven
+		# }
+		# modifier = {
+			# factor = 0.75
+			# trait = ruthless
+		# }
+		# modifier = {
+			# factor = 0.75
+			# trait = brave
+		# }
+		# modifier = {
+			# factor = 0.75
+			# trait = proud
+		# }
+		# modifier = {
+			# factor = 0.75
+			# trait = greedy
+		# }
+		# modifier = {
+			# factor = 0.75
+			# trait = envious
+		# }
+		# modifier = {
+			# factor = 0.5
+			# trait = ambitious
+		# }
+		
+		# #Prestige
+		# modifier = {
+			# factor = 1.33
+			# NOT = { prestige = 0 }
+		# }
+		# modifier = {
+			# factor = 1.33
+			# NOT = { prestige = 40 }
+		# }
+		# modifier = {
+			# factor = 0.75
+			# prestige = 200
+		# }
+		# modifier = {
+			# factor = 0.75
+			# prestige = 300
+		# }
+		# modifier = {
+			# factor = 0.75
+			# prestige = 400
+		# }
+		# modifier = {
+			# factor = 0.75
+			# prestige = 500
+		# }
+		
+		# #Martial
+		# modifier = {
+			# factor = 1.33
+			# NOT = { martial = 1 }
+		# }
+		# modifier = {
+			# factor = 1.33
+			# NOT = { martial = 4 }
+		# }
+		# modifier = {
+			# factor = 1.33
+			# NOT = { martial = 7 }
+		# }
+		# modifier = {
+			# factor = 0.75
+			# martial = 12
+		# }
+		# modifier = {
+			# factor = 0.75
+			# martial = 14
+		# }
+		# modifier = {
+			# factor = 0.75
+			# martial = 16
+		# }
+		# modifier = {
+			# factor = 0.75
+			# martial = 18
+		# }
+		
+		# #Stewardship
+		# modifier = {
+			# factor = 1.33
+			# NOT = { stewardship = 1 }
+		# }
+		# modifier = {
+			# factor = 1.33
+			# NOT = { stewardship = 4 }
+		# }
+		# modifier = {
+			# factor = 1.33
+			# NOT = { stewardship = 7 }
+		# }
+		# modifier = {
+			# factor = 0.75
+			# stewardship = 12
+		# }
+		# modifier = {
+			# factor = 0.75
+			# stewardship = 14
+		# }
+		# modifier = {
+			# factor = 0.75
+			# stewardship = 16
+		# }
+		# modifier = {
+			# factor = 0.75
+			# stewardship = 18
+		# }
+		
+		# #Diplomacy
+		# modifier = {
+			# factor = 1.33
+			# NOT = { diplomacy = 1 }
+		# }
+		# modifier = {
+			# factor = 1.33
+			# NOT = { diplomacy = 4 }
+		# }
+		# modifier = {
+			# factor = 1.33
+			# NOT = { diplomacy = 7 }
+		# }
+		# modifier = {
+			# factor = 0.75
+			# diplomacy = 12
+		# }
+		# modifier = {
+			# factor = 0.75
+			# diplomacy = 14
+		# }
+		# modifier = {
+			# factor = 0.75
+			# diplomacy = 16
+		# }
+		# modifier = {
+			# factor = 0.75
+			# diplomacy = 18
+		# }
+		
+		# #intrigue
+		# modifier = {
+			# factor = 1.33
+			# NOT = { intrigue = 1 }
+		# }
+		# modifier = {
+			# factor = 1.33
+			# NOT = { intrigue = 4 }
+		# }
+		# modifier = {
+			# factor = 1.33
+			# NOT = { intrigue = 7 }
+		# }
+		# modifier = {
+			# factor = 0.75
+			# intrigue = 12
+		# }
+		# modifier = {
+			# factor = 0.75
+			# intrigue = 14
+		# }
+		# modifier = {
+			# factor = 0.75
+			# intrigue = 16
+		# }
+		# modifier = {
+			# factor = 0.75
+			# intrigue = 18
+		# }
+	# }
+	
+	immediate = {
+		#clr_global_flag = new_NW_LC_needed
+		#clr_character_flag = preferred_NW_commander
+		any_player = {
+			limit = { 
+				NOT = { character = ROOT }
+				NOT = { has_landed_title = d_nightswatch }
+			}
+			narrative_event = { id = nightswatch.30 }
+		}
+		# d_nightswatch = {
+			# holder_scope = {
+				# any_realm_character = {
+					# limit = { has_character_flag = preferred_NW_commander }
+					# clr_character_flag = preferred_NW_commander
+				# }
+			# }
+		# }	
+	}
+	
+	option = {
+		name = "EVTOPTAnightswatch.29"
+		prestige = 200
+		# save_event_target_as = debt_inheritor
+		# if = {
+			# limit = {
+				# NOT = { has_landed_title = d_nightswatch }
+			# }
+			# d_nightswatch = {
+				# holder_scope = {
+					# inherit_debt_effect = yes
+					# transfer_scaled_wealth = { to = ROOT value = all }
+					# abdicate_to = ROOT
+				# }	
+			# }
+			# hidden_tooltip = {
+				# d_nightswatch_dummy = { gain_title = PREV }
+				# d_nightswatch = { copy_title_history = d_nightswatch_dummy }
+				# character_event = { id = nightswatch.2901 days = 2 } #destroy dummy title			
+			# }	
+		# }
+		hidden_tooltip = {
+			set_government_type = NW_government	
+			any_demesne_title = { succession = open_elective }
+			any_demesne_title = {
+				add_law = {
+					law = succ_open_elective
+					cooldown = no
+					opinion_effect = no
+				}		
+			}
+			d_nightswatch = {
+				add_law = {
+					law = nightswatch_elective
+					cooldown = no
+					opinion_effect = no
+				}	
+			}	
+			recalc_succession = yes
+			any_spouse = { remove_spouse = ROOT }
+			character_event = { id = nightswatch.6 days = 2 }	 #Maintenance event
+			character_event = { id = nightswatch.7 days = 1 } #succession
+		}
+	}
+}
+#new lc : inform realm
+narrative_event = {
+	id = nightswatch.30
+	title = "EVTNAMEnightswatch.30"
+	desc = "EVTDESCnightswatch.30"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			nightswatch_culture_trigger = yes
+			trait = wildling
+		}
+	}
+	
+	option = {
+		name = "OK"	#ok
+	}
+}
+#Destroy nightswatch  history altering title
+character_event = {
+	id = nightswatch.2901
+	
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = { 
+		has_landed_title = d_nightswatch_dummy 
+		NOT = { has_global_flag = new_NW_LC_needed }
+	}
+	
+	immediate = { d_nightswatch_dummy = { destroy_landed_title = THIS } }
+	
+	option = {
+		name = OK
+	}
+}
+character_event = { #move courtiers back
+	id = nightswatch.2902
+	
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		event_target:NW_heir = { 
+			if = {
+				limit = { is_ruler = yes }
+				ROOT = { move_character = PREV }
+			}	
+			if = {
+				limit = { is_ruler = no }
+				liege = { ROOT = { move_character = PREV } }
+			}
+		}
+	}
+
+	option = {
+		name = OK
+	}
+}
+# #Apppint Black Brother to a Castle
+# character_event = {
+	# id = nightswatch.31
+
+	# is_triggered_only = yes
+	# hide_window = yes
+	
+	# immediate = {
+		# if = { #If choice is obvious grant it immediately
+			# limit = { NOT = { demesne_size = 3 } }
+			# random_demesne_title = {
+				# limit = {
+					# tier = BARON
+					# holding_type = castle
+					# NOT = { ROOT = { capital_holding = { title = PREVPREV } } }
+				# }	
+				# dejure_liege_title = {
+					# if = {
+						# limit = {
+							# holder_scope = { character = ROOT }
+							# location = { is_capital = no }
+						# }
+						# grant_title = FROM
+					# }	
+					# succession = appointment
+				# }
+				# grant_title = FROM
+				# succession = appointment
+			# }
+		# }
+		# if = { #If choice is not obvious trigger event
+			# limit = { demesne_size = 3 }
+			# set_character_flag = granting_command
+			# character_event = { id = nightswatch.32 }
+		# }
+	# }
+	
+	# option = {
+		# name = "OK"
+	# }
+# }
+character_event = {
+	id = nightswatch.32
+	desc = "EVTDESCnightswatch.32"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+	
+	show_from_from = yes
+	
+	immediate = {
+		if = {
+			limit = { has_character_flag = reset }
+			any_demesne_title = { clr_title_flag = nightswatch_grant_reject }
+			clr_character_flag = reset
+		}
+		random_demesne_title = {
+			limit = {
+				tier = BARON
+				holding_type = castle
+				NOT = { ROOT = { capital_holding = { title = PREVPREV } } }
+				NOT = { has_title_flag = nightswatch_grant_reject }
+			}	
+			save_event_target_as = nightswatch_grant
+		}
+	}
+	
+	option = {
+		name = OPTAnightswatch.32
+		event_target:NW_granting_command = {
+			ROOT = {
+				event_target:nightswatch_grant = {	
+					dejure_liege_title = {
+						if = {
+							limit = {
+								holder_scope = { character = ROOT }
+								location = { is_capital = no }
+							}
+							grant_title = PREVPREVPREV
+							hidden_tooltip = { succession = appointment }
+						}	
+					}
+					grant_title = PREVPREV
+					hidden_tooltip = { succession = appointment }
+				}
+			}
+			set_defacto_liege = ROOT	
+		}
+		clr_character_flag = granting_command	
+		any_demesne_title = { clr_title_flag = nightswatch_grant_reject }
+	}
+	option = {
+		name = OPTBnightswatch.32						
+		event_target:nightswatch_grant = {		
+			set_title_flag = nightswatch_grant_reject
+		}	
+		if = {
+			limit = {
+				NOT = {
+					any_demesne_title = {
+						tier = BARON
+						holding_type = castle
+						NOT = { ROOT = { capital_holding = { title = PREVPREV } } }
+						NOT = { has_title_flag = nightswatch_grant_reject }
+					}
+				}
+			}
+			set_character_flag = reset
+		}	
+		character_event = { id = nightswatch.32 days = 1 }		
+	}
+	option = {
+		name = OPTCnightswatch.32	#cancel			
+		clr_character_flag = granting_command	
+		any_demesne_title = { clr_title_flag = nightswatch_grant_reject }	
+	}
+}
+# The recruiter gains an audience with a local lord
+character_event = {
+	id = 499977 #nightswatch.40
+	title = "EVTNAMEnightswatch.40"
+	desc = "EVTDESCnightswatch.40"
+	picture = GFX_evt_council
+	border = GFX_event_normal_frame_diplomacy
+
+	#only_men = yes
+	capable_only = yes
+	prisoner = no
+	has_job_title = yes
+	
+	trigger = {
+		has_job_title = job_chancellor
+		liege = { 
+			has_landed_title = d_nightswatch 
+			demesne_size = 1
+			OR = {
+				trait = nightswatch
+				has_landed_title = k_nightswatch 
+			}
+		}
+		OR = {
+			liege = { ai = yes }
+			has_job_action = action_NW_recruit	
+		}			
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		
+		modifier = {
+			factor = 1.25
+			liege = { has_landed_title = k_nightswatch }
+		}
+		modifier = {
+			factor = 1.25
+			liege = { has_character_modifier = NW_broken_vows }
+		}
+		modifier = {
+			factor = 1.5
+			e_iron_throne = {
+				has_holder = yes
+				holder_scope = { war = no }
+			}
+		}
+		modifier = {
+			factor = 0.75
+			has_global_flag = cold_winds
+		}
+		modifier = {
+			factor = 0.5
+			has_global_flag = affc_jon_snow
+		}
+		modifier = {
+			factor = 0.8
+			k_beyond_wall = { has_holder = yes }
+		}
+		modifier = {
+			factor = 0.75
+			liege = { is_primary_war_defender = yes }
+		}
+		
+		modifier = {
+			factor = 1.25
+			NOT = { diplomacy = 2 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { diplomacy = 3 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { diplomacy = 4 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { diplomacy = 5 }
+		}
+		modifier = {
+			factor = 0.75
+			diplomacy = 10
+		}
+		modifier = {
+			factor = 0.75
+			diplomacy = 11
+		}
+		modifier = {
+			factor = 0.75
+			diplomacy = 12
+		}
+		modifier = {
+			factor = 0.75
+			diplomacy = 13
+		}
+		modifier = {
+			factor = 0.75
+			diplomacy = 14
+		}
+		modifier = {
+			factor = 0.95
+			diplomacy = 15
+		}
+		modifier = {
+			factor = 0.95
+			diplomacy = 16
+		}
+		modifier = {
+			factor = 0.95
+			diplomacy = 17
+		}
+		modifier = {
+			factor = 0.95
+			diplomacy = 18
+		}
+		modifier = {
+			factor = 0.95
+			diplomacy = 19
+		}
+		modifier = {
+			factor = 0.95
+			diplomacy = 20
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAnightswatch.40"
+		random = { #more chance of northmen
+			chance = 25
+			random_playable_ruler = {
+				limit = {
+					OR = {
+						culture_group = first_men
+						capital_scope = { region = world_north }
+					}
+					NOT = { trait = wildling }
+					NOT = { trait = nightswatch }
+					demesne_size = 1				
+					OR = {
+						NOT = { has_character_flag = NW_recruiter }
+						had_character_flag = { flag = NW_recruiter days = 1825 }
+					}				
+				}
+				character_event = { id = nightswatch.41 }
+				break = yes
+			}
+		}
+		random_playable_ruler = {
+			limit = {
+				nightswatch_culture_trigger = yes
+				NOT = { trait = nightswatch }
+				demesne_size = 1				
+				OR = {
+					NOT = { has_character_flag = NW_recruiter }
+					had_character_flag = { flag = NW_recruiter days = 1825 }
+				}				
+			}
+			character_event = { id = nightswatch.41 }
+		}
+	}
+}	
+#Lord receives request
+character_event = {
+	id = nightswatch.41
+	desc = "EVTDESCnightswatch.41"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+	
+	immediate = { set_character_flag = NW_recruiter }
+	
+	option = {
+		name = "EVTOPTAnightswatch.41" #small gift and prisoners
+		ai_chance = {
+			factor = 40
+		}
+		tooltip = {
+			d_nightswatch = {
+				holder_scope = {
+					ROOT = {
+						transfer_scaled_wealth = {
+							to = PREV
+							value = 0.2
+							min = 20
+							max = 100
+						}
+					}
+				}
+			}
+		}	
+		d_nightswatch = { holder_scope = { letter_event  = { id = nightswatch.42 tooltip = TOOLTIPnightswatch.42 } } }
+	}
+	
+	option = {
+		name = "EVTOPTBnightswatch.41" #Gold
+		trigger = {
+			OR = {
+				AND = {
+					yearly_income = 100
+					scaled_wealth = 0.4
+				}
+				AND = {
+					NOT = { yearly_income = 100 }
+					wealth = 40
+				}
+			}
+		}
+		ai_chance = {
+			factor = 40
+		}
+		tooltip = {
+			d_nightswatch = {
+				holder_scope = {
+					ROOT = {
+						transfer_scaled_wealth = {
+							to = PREV
+							value = 0.4
+							min = 40
+							max = 200
+						}
+					}
+				}
+			}
+		}	
+		d_nightswatch = { holder_scope = { letter_event  = { id = nightswatch.43 tooltip = TOOLTIPnightswatch.43 } } }
+		piety = 25
+		prestige = 25
+	}
+	
+	option = {
+		name = "EVTOPTCnightswatch.41" #Large Gold & men
+		trigger = {
+			OR = {
+				AND = {
+					yearly_income = 100
+					scaled_wealth = 1
+				}
+				AND = {
+					NOT = { yearly_income = 100 }
+					wealth = 100
+				}
+			}
+		}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 2
+				trait = charitable
+			}
+		}
+		tooltip = {
+			d_nightswatch = {
+				holder_scope = {
+					ROOT = {
+						transfer_scaled_wealth = {
+							to = PREV
+							value = 0.50
+							min = 100
+							max = 400
+						}
+					}
+				}
+			}
+		}	
+		hidden_tooltip = { #Create noble soldier to send to watch
+			capital_scope = {
+				ROOT = {
+					create_random_soldier = {
+						random_traits = yes
+						dynasty = random
+						trait = nightswatch
+						religion = PREV
+						culture = PREV
+						female = no
+					}
+					new_character = {
+						if = {
+							limit = { religion = the_seven }
+							knight_character_effect = yes
+						}	
+						random_list = {
+							40 = { add_trait = poor_warrior }
+							40 = { add_trait = trained_warrior }
+							20 = { add_trait = skilled_warrior }
+						}
+					}
+				}	
+			}
+		}
+		d_nightswatch = { holder_scope = { letter_event  = { id = nightswatch.44 tooltip = TOOLTIPnightswatch.44 } } }
+		piety = 60
+		prestige = 60
+	}
+	
+	option = {
+		name = "EVTOPTDnightswatch.41" #No
+		ai_chance = {
+			factor = 100
+			modifier = {			
+				factor = 5
+				d_nightswatch = { holder_scope = { has_landed_title = k_nightswatch } }
+			}
+			modifier = {
+				factor = 2.5
+				d_nightswatch = { holder_scope = { has_character_modifier = NW_broken_vows } }
+			}
+			modifier = {
+				factor = 2
+				top_liege = {
+					has_landed_title = e_iron_throne
+					war = no
+				}
+			}
+			modifier = {
+				factor = 0.5
+				has_global_flag = cold_winds
+			}
+			modifier = {
+				factor = 0.5
+				has_global_flag = affc_jon_snow
+			}
+			modifier = {
+				factor = 0.66
+				k_beyond_wall = { has_holder = yes }
+			}
+			modifier = {
+				factor = 0.5
+				d_nightswatch = { holder_scope = { is_primary_war_defender = yes } }
+			}
+			
+			modifier = {
+				factor = 0.75
+				culture_group = first_men
+			}
+			modifier = {
+				factor = 0.75
+				dynasty = 59
+			}
+			##Traits
+			modifier = {
+				factor = 0.5
+				trait = charitable
+			}
+			modifier = {
+				factor = 0.5
+				trait = honorable
+			}
+			modifier = {
+				factor = 0.8
+				trait = zealous
+			}
+			modifier = {
+				factor = 0.8
+				trait = just
+			}
+			modifier = {
+				factor = 0.8
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+			modifier = {
+				factor = 2
+				trait = ruthless
+			}
+			modifier = {
+				factor = 1.5
+				trait = cynical
+			}
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 1.5
+				trait = cruel
+			}
+			##Opinion
+			modifier = {
+				factor = 0.9
+				opinion = { who = FROM value = 100 }
+			}
+			modifier = {
+				factor = 0.9
+				opinion = { who = FROM value = 80 }
+			}
+			modifier = {
+				factor = 0.9
+				opinion = { who = FROM value = 60 }
+			}
+			modifier = {
+				factor = 0.9
+				opinion = { who = FROM value = 40 }
+			}
+			modifier = {
+				factor = 0.9
+				opinion = { who = FROM value = 20 }
+			}
+			modifier = {
+				factor = 1.1
+				NOT = { opinion = { who = FROM value = -19 } }
+			}
+			modifier = {
+				factor = 1.1
+				NOT = { opinion = { who = FROM value = -39 } }
+			}
+			modifier = {
+				factor = 1.1
+				NOT = { opinion = { who = FROM value = -59 } }
+			}
+			modifier = {
+				factor = 1.1
+				NOT = { opinion = { who = FROM value = -79 } }
+			}
+			modifier = {
+				factor = 1.1
+				NOT = { opinion = { who = FROM value = -99 } }
+			}
+		}
+		piety = -25
+		prestige = -25
+		d_nightswatch = { holder_scope = { letter_event = { id = nightswatch.45 tooltip = TOOLTIPnightswatch.45 } } }
+	}
+}	
+#Inform LC small gift and prisoners
+letter_event = {
+	id = nightswatch.42
+	desc = "EVTDESCnightswatch.42"
+
+	is_triggered_only = yes
+	show_from_from = yes
+	
+	option = {
+		name = "EVTOPTAnightswatch.42" 
+		FROM = {
+			transfer_scaled_wealth = {
+				to = ROOT
+				value = 0.2
+				min = 10
+				max = 100
+			}			
+		}
+		capital_scope = {
+			ROOT = {
+				spawn_unit = {
+					province = PREV
+					home = PREV
+					owner = ROOT
+					troops = {
+						light_infantry = { 50 50 }
+						heavy_infantry = { 27 27 }
+						archers = { 23 23 }
+					}
+					attrition = 1.0
+				}
+			}	
+		}
+		FROM = { #create random peasant black brother
+			capital_scope = {
+				ROOT = {
+					create_character = {
+						random_traits = yes
+						dynasty = none
+						trait = nightswatch
+						religion = PREV
+						culture = PREV
+						female = no
+					}
+					new_character = {
+						random_list = {
+							40 = { }
+							40 = { add_trait = poor_warrior }
+							20 = { add_trait = trained_warrior }
+						}
+					}
+				}	
+			}
+		}	
+	}
+}	
+#Inform LC Gold
+letter_event = {
+	id = nightswatch.43
+	desc = "EVTDESCnightswatch.43"
+
+	is_triggered_only = yes
+	show_from_from = yes
+	
+	option = {
+		name = "EVTOPTAnightswatch.43" 
+		FROM = {
+			transfer_scaled_wealth = {
+				to = ROOT
+				value = 0.4
+				min = 40
+				max = 200
+			}			
+		}
+	}
+}
+#Inform LC Large Gold & men
+letter_event = {
+	id = nightswatch.44
+	desc = "EVTDESCnightswatch.44"
+
+	is_triggered_only = yes
+	show_from_from = yes
+	
+	option = {
+		name = "EVTOPTAnightswatch.44" 
+		FROM = {
+			transfer_scaled_wealth = {
+				to = ROOT
+				value = 0.5
+				min = 100
+				max = 400
+			}	
+		}
+		if = { #Quantity of troops depends on FROM's tier
+			limit = { FROM = { higher_tier_than = DUKE } }
+			capital_scope = {
+				ROOT = {
+					spawn_unit = {
+						province = PREV
+						home = PREV
+						owner = ROOT
+						troops = {
+							light_infantry = { 115 115 }
+							heavy_infantry = { 189 189 }
+							light_cavalry = { 89 89 }
+							knights = { 12 12 }
+							archers = { 95 95 }
+						}
+						attrition = 1.0
+					}
+				}	
+			}
+		}
+		if = {
+			limit = { FROM = { tier = DUKE } }
+			capital_scope = {
+				ROOT = {
+					spawn_unit = {
+						province = PREV
+						home = PREV
+						owner = ROOT
+						troops = {
+							light_infantry = { 58 58 }
+							heavy_infantry = { 94 94 }
+							light_cavalry = { 45 45 }
+							knights = { 6 6 }
+							archers = { 47 47 }
+						}
+						attrition = 1.0
+					}
+				}	
+			}
+		}	
+		if = {
+			limit = { FROM = { tier = COUNT } }
+			capital_scope = {
+				ROOT = {
+					spawn_unit = {
+						province = PREV
+						home = PREV
+						owner = ROOT
+						troops = {
+							light_infantry = { 34 34 }
+							heavy_infantry = { 57 57 }
+							light_cavalry = { 27 27 }
+							knights = { 4 4 }
+							archers = { 28 28 }
+						}
+						attrition = 1.0
+					}
+				}	
+			}
+		}
+		FROM = { #Move created noble to the watch
+			any_courtier = {
+				limit = {
+					is_ruler = no
+					trait = nightswatch
+				}
+				move_character = ROOT
+			}
+		}	
+	}
+}		
+#Inform LC No
+letter_event = {
+	id = nightswatch.45
+	desc = "EVTDESCnightswatch.45"
+
+	is_triggered_only = yes
+	show_from_from = yes
+	
+	option = {
+		name = "EVTOPTAnightswatch.45" 
+	}
+}	
+# Castle is falling into disrepair
+character_event = {
+	id = nightswatch.46
+	desc = "EVTDESCnightswatch.46"
+	picture = GFX_evt_the_wall
+
+	only_playable = yes
+	
+	trigger = {
+		has_landed_title = d_the_wall
+		any_realm_title = {
+			tier = BARON
+			is_capital = no
+			holding_type = castle
+			capital_scope = {
+				OR = {
+					province_id = 16
+					province_id = 17
+					province_id = 18
+				}
+			}
+		}	
+		NOT = { has_character_flag = rebuilding_NW_castle }
+	}
+	
+	mean_time_to_happen = {
+		months = 140
+		
+		modifier = {
+			factor = 0.8
+			any_realm_title = {
+				count = 15
+				tier = BARON
+				is_capital = no
+				holding_type = castle
+				capital_scope = {
+					OR = {
+						province_id = 16
+						province_id = 17
+						province_id = 18
+					}
+				}
+			}	
+		}
+		modifier = {
+			factor = 0.8
+			any_realm_title = {
+				count = 12
+				tier = BARON
+				is_capital = no
+				holding_type = castle
+				capital_scope = {
+					OR = {
+						province_id = 16
+						province_id = 17
+						province_id = 18
+					}
+				}
+			}		
+		}
+		modifier = {
+			factor = 0.8
+			any_realm_title = {
+				count = 9
+				tier = BARON
+				is_capital = no
+				holding_type = castle
+				capital_scope = {
+					OR = {
+						province_id = 16
+						province_id = 17
+						province_id = 18
+					}
+				}
+			}	
+		}
+		modifier = {
+			factor = 0.8
+			any_realm_title = {
+				count = 6
+				tier = BARON
+				is_capital = no
+				holding_type = castle
+				capital_scope = {
+					OR = {
+						province_id = 16
+						province_id = 17
+						province_id = 18
+					}
+				}
+			}		
+		}
+		modifier = {
+			factor = 0.8
+			any_realm_title = {
+				count = 3
+				tier = BARON
+				is_capital = no
+				holding_type = castle
+				capital_scope = {
+					OR = {
+						province_id = 16
+						province_id = 17
+						province_id = 18
+					}
+				}
+			}		
+		}
+		modifier = {
+			factor = 0.9
+			has_global_flag = asoiaf_mild_winter
+		}
+		modifier = {
+			factor = 0.75
+			has_global_flag = asoiaf_normal_winter
+		}
+		modifier = {
+			factor = 0.6
+			has_global_flag = asoiaf_harsh_winter
+		}	
+		modifier = {
+			factor = 0.5
+			has_global_flag = cold_winds
+		}
+		modifier = {
+			factor = 0.75
+			job_treasurer = { NOT = { stewardship = 2 } }
+		}
+		modifier = {
+			factor = 0.75
+			job_treasurer = { NOT = { stewardship = 4 } }
+		}
+		modifier = {
+			factor = 0.75
+			job_treasurer = { NOT = { stewardship = 6 } }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { job_treasurer = { always = yes } }
+		}
+		modifier = {
+			factor = 1.1
+			job_treasurer = { stewardship = 10 } 
+		}
+		modifier = {
+			factor = 1.1
+			job_treasurer = { stewardship = 11 } 
+		}
+		modifier = {
+			factor = 1.1
+			job_treasurer = { stewardship = 12 } 
+		}
+		modifier = {
+			factor = 1.1
+			job_treasurer = { stewardship = 13 } 
+		}
+		modifier = {
+			factor = 1.2
+			job_treasurer = { stewardship = 14 } 
+		}
+		modifier = {
+			factor = 1.2
+			job_treasurer = { stewardship = 15 } 
+		}
+		modifier = {
+			factor = 1.2
+			job_treasurer = { stewardship = 16 } 
+		}
+		modifier = {
+			factor = 1.2
+			job_treasurer = { stewardship = 17 } 
+		}
+		modifier = {
+			factor = 1.2
+			job_treasurer = { stewardship = 18 } 
+		}
+		modifier = {
+			factor = 1.2
+			job_treasurer = { stewardship = 19 } 
+		}
+		modifier = {
+			factor = 1.2
+			job_treasurer = { stewardship = 20 } 
+		}
+	}
+	
+	immediate = {
+		random_realm_title = {
+			limit = {
+				tier = BARON
+				is_capital = no
+				holding_type = castle
+				capital_scope = {
+					OR = {
+						province_id = 16
+						province_id = 17
+						province_id = 18
+					}
+				}
+			}			
+			save_event_target_as = rebuilding_NW_castle
+		}	
+	}
+	
+	option = { 
+		name = "EVTOPTAnightswatch.46"	#start rebuilding project
+		trigger = { 
+			OR = {
+				wealth = 100
+				AND = {
+					NOT = { has_character_flag = offended_moneylenders }
+					NOT = { has_character_flag = loan_taken }
+					NOT = { has_character_modifier = loan_timer }
+				}
+			}	
+		}
+		ai_chance = {
+			factor = 100
+		}
+		wealth = -100
+		job_treasurer = { tooltip = { show_portrait = yes } }
+		custom_tooltip = { 
+			text = TOOLTIPnightswatch.46A 
+			hidden_tooltip = {
+				set_character_flag = rebuilding_NW_castle
+				if = {
+					limit = { NOT = { job_treasurer = { stewardship = 10 } } }
+					random_list = {
+						50 = { character_event = { id = nightswatch.49 days = 75 random = 30 } } #success
+						50 = { character_event = { id = nightswatch.50 days = 75 random = 30 } } #need more men/supplies
+					}
+				}	
+				if = {
+					limit = { 
+						job_treasurer = { 
+							stewardship = 10
+							NOT = { stewardship = 18 } 
+						} 
+					}
+					random_list = {
+						70 = { character_event = { id = nightswatch.49 days = 75 random = 30 } } #success
+						30 = { character_event = { id = nightswatch.50 days = 75 random = 30 } } #need more men/supplies
+					}
+				}
+				if = {
+					limit = { 
+						job_treasurer = { stewardship = 18 } 
+					}
+					random_list = {
+						90 = { character_event = { id = nightswatch.49 days = 75 random = 30 } } #success
+						10 = { character_event = { id = nightswatch.50 days = 75 random = 30 } } #need more men/supplies
+					}
+				}
+			}
+		}
+	}
+	
+	option = { 
+		name = "EVTOPTBnightswatch.46"	#Cannot afford
+		ai_chance = {
+			factor = 1
+		}
+		random = {
+			chance = 50
+			event_target:rebuilding_NW_castle = {
+				custom_tooltip = { text = TOOLTIPnightswatch.46B }
+				hidden_tooltip = { holder_scope = { character_event = { id = nightswatch.47 } } }
+			}
+		}
+		job_treasurer = {
+			opinion = {
+				who = ROOT
+				modifier = opinion_disapprove
+				years = 5
+			}
+		}		
+	}
+}
+character_event = { #castle ruined
+	id = nightswatch.47
+	desc = "EVTDESCnightswatch.47"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+	
+	immediate = { FROM = { character_event = { id = nightswatch.48 } } }
+	
+	option = {
+		name = OK 		
+		create_character = {
+			name = ""
+			religion="ruin_rel"
+			culture="ruin"	
+			dynasty=none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = ruin
+		}
+		new_character = {
+			event_target:rebuilding_NW_castle = {
+				add_building = ca_sub_barony_ruin 
+				set_title_flag = sub_barony_ruin
+				gain_title = PREV
+			}
+			add_trait = ruin
+			set_defacto_liege = THIS		
+		}	
+	}
+}	
+character_event = { #inform castle ruined
+	id = nightswatch.48
+	desc = "EVTDESCnightswatch.48"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAnightswatch.48" 		
+		prestige = -150	
+		job_treasurer = { tooltip = { show_portrait = yes } }
+		clr_character_flag = rebuilding_NW_castle
+		event_target:rebuilding_NW_castle = { clear_event_target = rebuilding_NW_castle }
+	}
+}
+character_event = { #inform success
+	id = nightswatch.49
+	desc = "EVTDESCnightswatch.49"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAnightswatch.49" 		
+		prestige = 30
+		job_treasurer = { tooltip = { show_portrait = yes } }
+		clr_character_flag = rebuilding_NW_castle
+		event_target:rebuilding_NW_castle = { clear_event_target = rebuilding_NW_castle }
+	}
+}
+character_event = { #inform need more men/supplies
+	id = nightswatch.50
+	desc = "EVTDESCnightswatch.50"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAnightswatch.50" 	#fine	
+		job_treasurer = { tooltip = { show_portrait = yes } }
+		wealth = -35
+		hidden_tooltip = { character_event = { id = nightswatch.49 days = 20 random = 10 } }
+	}
+	
+	option = {
+		name = "EVTOPTBnightswatch.50" 	#no
+		random_list = {
+			10 = {
+				event_target:rebuilding_NW_castle = {
+					custom_tooltip = { text = TOOLTIPnightswatch.46B }
+					hidden_tooltip = { holder_scope = { character_event = { id = nightswatch.47 } } }
+				}
+			}
+			90 = { character_event = { id = nightswatch.49 tooltip = TOOLTIPnightswatch.49 days = 20 random = 10 } }
+		}
+		job_treasurer = {
+			opinion = {
+				who = ROOT
+				modifier = opinion_disapprove
+				years = 5
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTCnightswatch.50" 	#new first builder	
+		trigger = {
+			any_courtier = {
+				OR = {
+					ROOT = { NOT = { trait = nightswatch } }
+					has_character_modifier = nw_builder
+				}	
+				OR = {
+					stewardship = 8
+					stewardship = ROOT
+				}	
+				is_councillor = no
+				NOT = { is_voter = yes }
+				is_adult = yes
+				prisoner = no
+				NOT = { character = ROOT }
+				NOT = { trait = incapable }
+				NOT = { trait = salt_wife }
+				NOT = { trait = dragon }
+			}
+		}
+		job_treasurer = {
+			opinion = {
+				who = ROOT
+				modifier = opinion_fired_from_council
+			}		
+		}
+		random_courtier = {
+			limit = {
+				OR = {
+					ROOT = { NOT = { trait = nightswatch } }
+					has_character_modifier = nw_builder
+				}	
+				OR = {
+					stewardship = 8
+					stewardship = ROOT
+				}	
+				is_councillor = no
+				NOT = { is_voter = yes }
+				is_adult = yes
+				prisoner = no
+				NOT = { character = ROOT }
+				NOT = { trait = incapable }
+				NOT = { trait = salt_wife }
+				NOT = { trait = dragon }
+			}
+			hidden_tooltip = { ROOT = { job_treasurer = { remove_title = job_treasurer } } }
+			give_job_title = job_treasurer
+		}
+		hidden_tooltip = { 
+			random_list = {
+				70 = { character_event = { id = nightswatch.49 days = 20 random = 10 } } #success
+				30 = { character_event = { id = nightswatch.50 days = 20 random = 10 } } #need more men/supplies
+			}
+		}
+	}
+}
+#Human breaks vows by raiding/looting
+character_event = {
+	id = nightswatch.51
+	desc = "EVTDESCnightswatch.51"
+	picture = "GFX_evt_reavingvillageraid"
+
+	is_triggered_only = yes
+	ai = no
+	
+	trigger = {
+		trait = nightswatch
+		any_playable_ruler = { has_opinion_modifier = { who = ROOT modifier = opinion_looted } }
+		OR = {
+			NOT = { has_character_flag = broke_vows_by_looting }
+			had_character_flag = { flag = broke_vows_by_looting days = 1900 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAnightswatch.51"
+		piety = -250
+		add_character_modifier = {
+			name = NW_broken_vows
+			duration = -1
+		}
+		clr_character_flag = broke_vows_by_looting
+		set_character_flag = broke_vows_by_looting
+		if = {
+			limit = { NOT = { personality_traits = 6 } }
+			if = {
+				limit = { 
+					NOT = { trait = honorable } 
+					NOT = { trait = ruthless } 
+				}
+				random = {
+					chance = 33
+					add_trait = ruthless
+					hidden_tooltip = { character_event = { id = trait_notification.18 } }
+				}	
+			}
+			if = {
+				limit = { 
+					NOT = { trait = just } 
+					NOT = { trait = arbitrary } 
+				}
+				random = {
+					chance = 33
+					add_trait = arbitrary
+					hidden_tooltip = { character_event = { id = 38266 } }
+				}	
+			}
+		}	
+		if = {
+			limit = { trait = honorable }
+			remove_trait = honorable
+		}
+		if = {
+			limit = { trait = just }
+			remove_trait = just
+		}
+		hidden_tooltip = { #abort all nightswatch plots to give a chance of targeting ROOT
+			any_realm_character = {
+				limit = {
+					plot_target_char = { always = yes }
+					trait = nightswatch
+					ai = yes
+					NAND = {
+						has_plot = plot_kill_character
+						plot_target_char = { character = ROOT }
+					}					
+				}
+				set_character_flag = abort_plot
+			}
+		}
+	}
+}
+#Human breaks vows by accepting a call to arms
+character_event = {
+	id = nightswatch.52
+
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		NOT = { trait = nightswatch }
+		FROM = { 
+			ai = no
+			trait = nightswatch 
+		}
+	}
+	
+	immediate = {
+		FROM = { character_event = { id = nightswatch.53 } }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+character_event = {
+	id = nightswatch.53
+	desc = "EVTDESCnightswatch.53"
+	picture = GFX_evt_battle
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAnightswatch.53"
+		piety = -250
+		add_character_modifier = {
+			name = NW_broken_vows
+			duration = -1
+		}
+		if = {
+			limit = { NOT = { personality_traits = 6 } }
+			if = {
+				limit = { 
+					NOT = { trait = honorable } 
+					NOT = { trait = ruthless } 
+				}
+				random = {
+					chance = 33
+					add_trait = ruthless
+					hidden_tooltip = { character_event = { id = trait_notification.18 } }
+				}	
+			}
+			if = {
+				limit = { 
+					NOT = { trait = just } 
+					NOT = { trait = arbitrary } 
+				}
+				random = {
+					chance = 33
+					add_trait = arbitrary
+					hidden_tooltip = { character_event = { id = 38266 } }
+				}	
+			}
+		}	
+		if = {
+			limit = { trait = honorable }
+			remove_trait = honorable
+		}
+		if = {
+			limit = { trait = just }
+			remove_trait = just
+		}
+		hidden_tooltip = { #abort all nightswatch plots to give a chance of targeting ROOT
+			any_realm_character = {
+				limit = {
+					plot_target_char = { always = yes }
+					trait = nightswatch
+					ai = yes
+					NAND = {
+						has_plot = plot_kill_character
+						plot_target_char = { character = ROOT }
+					}					
+				}
+				set_character_flag = abort_plot
+			}
+		}
+	}
+}
+###The Wildling Queen###
+#Encounter beautiful wildling woman whilst ranging
+narrative_event = { 
+	id = nightswatch.70
+	title = "EVTTITLEnightswatch.70"
+	desc = "EVTDESCnightswatch.70"
+	picture = GFX_evt_the_wall
+
+	only_playable = yes
+	only_men = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		primary_title = { title = d_nightswatch }
+		trait = nightswatch
+		demesne_size = 1
+		OR = {
+			trait = lustful
+			trait = arbitrary
+			trait = ambitious
+		}
+		has_lover = no
+		is_married = no
+		NOT = { trait = chaste }
+		NOT = { trait = celibate }
+		NOT = { trait = honorable }
+		NOT = { trait = eunuch }
+		NOT = { trait = homosexual }
+		NOT = { is_weak_trigger = yes }
+		NOT = { trait = craven }
+		
+		NOT = { has_severe_disability_trigger = yes }
+		has_epidemic = no
+						
+		OR = {
+			martial = 16
+			is_strong_trigger = yes
+			trait = skilled_warrior
+			trait = master_warrior
+		}
+		k_beyond_wall = { has_holder = no }
+		NOT = { has_character_flag = the_wildling_queen }
+	}
+	
+	mean_time_to_happen = {
+		years = 250
+		modifier = {
+			factor = 0.05
+			ai = no
+		}
+	}
+	
+	immediate = {
+		set_character_flag = the_wildling_queen
+		create_character = {
+			age = 21
+			female = yes
+			dynasty = none
+			culture = wildling
+			religion = beyond_wall_old_gods
+			random_traits = yes
+			attributes = {
+				martial = 4
+				diplomacy = 2
+				stewardship = 1
+				intrigue = 5
+				learning = 1
+			}
+			trait = wildling
+			trait = fair
+			trait = genius
+			trait = ambitious
+			trait = strong
+			trait = skilled_warrior
+			trait = skilled_tactician
+			historical = yes
+		}
+		new_character = {
+			set_character_flag = wildling_queen
+			remove_trait = content
+			remove_trait = ugly
+			remove_trait = weak
+			remove_trait = quick
+			remove_trait = slow
+			remove_trait = imbecile
+			add_character_modifier = { #To stop premature marriage (reduces fertility)
+				name = child
+				duration = 365
+				hidden = yes
+			}
+			random = { # Is actually an other
+				chance = 5
+				set_character_flag = wildling_queen_other
+				religion = cold_gods
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAnightswatch.70" #Take her back to the wall
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 10
+				trait = lustful
+			}
+		}
+		random_courtier = {
+			limit = { has_character_flag = wildling_queen }
+			move_character = ROOT
+			add_lover = ROOT
+			religion = ROOT
+			hidden_tooltip = { remove_character_modifier = child }
+		}
+		piety = -50
+		if = {
+			limit = { NOT = { trait = sympathy_wildling_religion } }
+			if = {
+				limit = { trait = cynical }
+				add_trait = sympathy_wildling_religion
+			}
+			if = {
+				limit = { 
+					NOT = { trait = cynical }
+					NOT = { trait = zealous }
+				}
+				random = {
+					chance = 50
+					add_trait = sympathy_wildling_religion
+				}	
+			}
+		}	
+		hidden_tooltip = { character_event = { id = nightswatch.71 days = 200 random = 100 } }		
+	}
+	
+	option = {
+		name = "EVTOPTBnightswatch.70" #Let her go
+		ai_chance = {
+			factor = 1
+		}
+		random_playable_ruler = {
+			limit = {
+				ai = yes
+				tier = COUNT
+				trait = wildling
+			}
+			ROOT = {
+				random_courtier = {
+					limit = { has_character_flag = wildling_queen }
+					move_character = PREVPREV
+					hidden_tooltip = { character_event = { id = nightswatch.72 days = 200 random = 100 } }
+				}
+			}	
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTCnightswatch.70" #Have her killed
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				trait = kind
+			}
+		}
+		random_courtier = {
+			limit = { has_character_flag = wildling_queen }
+			character_event = { id = nightswatch.75 tooltip = TOOLTIPnightswatch.75 } 
+		}
+		if = {
+			limit = { trait = kind }
+			remove_trait = kind
+		}
+	}
+}
+#Wildling woman wants to be spear wife
+character_event = {
+	id = nightswatch.71
+	desc = "EVTDESCnightswatch.71"
+	picture = GFX_evt_lovers
+
+	is_triggered_only = yes
+	
+	trigger = {
+		primary_title = { title = d_nightswatch }
+		trait = nightswatch
+		is_married = no
+		any_courtier = {
+			has_character_flag = wildling_queen
+			is_married = no
+			is_lover = ROOT
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAnightswatch.71" 
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 10
+				trait = lustful
+			}
+			modifier = {
+				factor = 0
+				trait = honorable
+			}
+		}
+		random_courtier = {
+			limit = { has_character_flag = wildling_queen }
+			add_spouse = ROOT
+			religion = beyond_wall_old_gods
+		}
+		piety = -250
+		religion = beyond_wall_old_gods
+		add_character_modifier = {
+			name = NW_broken_vows
+			duration = -1
+		}
+		if = {
+			limit = { trait = honorable }
+			remove_trait = honorable
+		}
+		if = {
+			limit = { NOT = { trait = sympathy_wildling_religion } }
+			if = {
+				limit = { trait = cynical }
+				add_trait = sympathy_wildling_religion
+			}
+			if = {
+				limit = { 
+					NOT = { trait = cynical }
+					NOT = { trait = zealous }
+				}
+				random = {
+					chance = 50
+					add_trait = sympathy_wildling_religion
+				}	
+			}
+		}
+		any_courtier = {
+			limit = {
+				trait = nightswatch
+				NOT = { trait = proud }
+				NOT = { trait = just }
+				NOT = { trait = honorable }
+				NOT = { trait = zealous }
+				opinion = { who = ROOT value = 20 }
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_spear_wifes_men
+			}
+			hidden_tooltip = {
+				ROOT = {
+					spouse = {
+						reverse_opinion = {
+							who = PREVPREV
+							modifier = opinion_spear_wifes_men
+						}
+					}
+				}
+			}
+		}
+		hidden_tooltip = { character_event = { id = nightswatch.74 days = 50 random = 25 } }
+		hidden_tooltip = { #abort all nightswatch plots to give a chance of targeting ROOT
+			any_realm_character = {
+				limit = {
+					plot_target_char = { always = yes }
+					trait = nightswatch
+					ai = yes
+					NAND = {
+						has_plot = plot_kill_character
+						plot_target_char = { character = ROOT }
+					}					
+				}
+				set_character_flag = abort_plot
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBnightswatch.71" 
+		ai_chance = {
+			factor = 1
+		}
+		random_courtier = {
+			limit = { has_character_flag = wildling_queen }
+			remove_lover = ROOT
+			opinion = {
+				who = ROOT
+				modifier = opinion_angry
+				years = 15
+			}
+		}
+		hidden_tooltip = {
+			random_playable_ruler = {
+				limit = {
+					ai = yes
+					tier = COUNT
+					trait = wildling
+				}
+				ROOT = {
+					random_courtier = {
+						limit = { has_character_flag = wildling_queen }
+						move_character = PREVPREV
+						hidden_tooltip = { character_event = { id = nightswatch.72 days = 200 random = 100 } }
+					}
+				}	
+			}
+		}
+	}
+}
+#Wildling woman becomes the Wildling Queen
+character_event = {
+	id = nightswatch.72
+	desc = "EVTDESCnightswatch.72"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = wildling_queen
+		liege = {
+			trait = wildling
+			ai = yes
+		}
+		k_beyond_wall = { has_holder = no }		
+	}
+	
+	option = {
+		name = "EVTOPTAnightswatch.72" 
+		liege = { 
+			transfer_scaled_wealth = { to = ROOT value = all }
+			abdicate_to = ROOT 
+		}
+		k_beyond_wall = { gain_title = ROOT }
+		prestige = 500
+		wealth = 200
+		any_playable_ruler = {
+			limit = {
+				ai = yes
+				tier = COUNT
+				trait = wildling
+			}
+			set_defacto_liege = ROOT
+		}
+		FROM = { character_event = { id = nightswatch.73 } }
+	}
+}
+character_event = { #Inform LC
+	id = nightswatch.73
+	desc = "EVTDESCnightswatch.73"
+	picture = GFX_evt_wildlings
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAnightswatch.73" 
+	}
+}
+#Become The Night's King
+character_event = {
+	id = nightswatch.74
+	desc = "EVTDESCnightswatch.74"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+	
+	trigger = {
+		primary_title = { title = d_nightswatch }
+		trait = nightswatch
+		any_spouse = { has_character_flag = wildling_queen }
+	}
+	
+	option = {
+		name = "EVTOPTAnightswatch.74" 
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 10
+				trait = lustful
+			}
+			modifier = {
+				factor = 0
+				trait = honorable
+			}
+		}
+		remove_trait = nightswatch
+		set_government_type = feudal_government
+		k_nightswatch = { 
+			gain_title = ROOT 
+			succession = primogeniture
+			gender_succ = agnatic
+			hidden_tooltip = { add_law = feudal_contract_2 }
+		}		
+		hidden_tooltip = {
+			d_nightswatch = { 
+				succession = primogeniture
+				gender_succ = agnatic
+				add_law = feudal_contract_2
+			}
+			any_playable_ruler = { #inform realm
+				limit = { 
+					ai = no 
+				}	
+				character_event = { id = nightswatch.79 }
+			}
+			recalc_succession = yes
+		}	
+		prestige = 500
+		piety = -500
+		if = {
+			limit = { trait = honorable }
+			remove_trait = honorable
+		}
+		if = {
+			limit = {
+				spouse = { has_character_flag = wildling_queen_other }
+			}
+			narrative_event = { id = nightswatch.80 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBnightswatch.74" 
+		ai_chance = {
+			factor = 1
+		}
+		random_courtier = {
+			limit = { has_character_flag = wildling_queen }
+			remove_lover = ROOT
+			opinion = {
+				who = ROOT
+				modifier = opinion_angry
+				years = 15
+			}
+		}
+	}
+}
+#Wildling woman seduces executioner
+character_event = {
+	id = nightswatch.75
+
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = { has_character_flag = wildling_queen }
+	
+	immediate = {
+		random_playable_ruler = {
+			limit = {
+				ai = yes
+				tier = COUNT
+				trait = wildling
+			}
+			ROOT = { move_character = PREV }	
+			FROM = {
+				random_courtier = {
+					limit = {
+						is_female = no
+						age = 16
+						NOT = { age = 40 }
+						is_ruler = no
+						trait = nightswatch
+						has_lover = no
+						NOT = { trait = chaste }
+						NOT = { trait = celibate }
+						NOT = { trait = honorable }
+						NOT = { trait = eunuch }
+						NOT = { trait = homosexual }
+						NOT = { is_weak_trigger = yes }
+						NOT = { trait = craven }
+						NOT = { trait = just }
+						NOT = { trait = content }
+						
+						NOT = { has_severe_disability_trigger = yes }
+						has_epidemic = no
+						
+						OR = {
+							martial = 16
+							is_strong_trigger = yes
+							trait = skilled_warrior
+							trait = master_warrior
+						}
+						k_beyond_wall = { has_holder = no }
+					}
+					add_lover = ROOT
+					add_spouse = ROOT
+					move_character = PREVPREV
+					remove_trait = nightswatch
+					add_trait = deserter
+					add_trait = disinherited
+					add_trait = wildling
+					set_character_flag = wildling_queens_king
+					if = {
+						limit = { trait = depressed }
+						remove_trait = depressed
+					}
+					ROOT = { 
+						character_event = { id = nightswatch.77 days = 200 random = 100 }
+					}
+					FROM = { character_event = { id = nightswatch.76 } }
+					break = yes
+				}
+			}
+		}
+		#if deserter not found, execute
+		death = {
+			death_reason = death_execution
+			killer = FROM
+		}
+	}
+	
+	option = {
+		name = OK	
+	}
+}
+character_event = { #Inform LC
+	id = nightswatch.76
+	desc = "EVTDESCnightswatch.76"
+	picture = GFX_evt_wildlings
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAnightswatch.76" 
+		FROM = { random_lover = { tooltip = { show_portrait = yes } } }
+	}
+}
+#Wildling woman raises husband to King Beyond The Wall
+character_event = {
+	id = nightswatch.77
+	desc = "EVTDESCnightswatch.77"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = wildling_queen
+		liege = {
+			trait = wildling
+			ai = yes
+		}
+		k_beyond_wall = { has_holder = no }	
+		spouse = { has_character_flag = wildling_queens_king }
+	}
+	
+	option = {
+		name = OK
+		prestige = 500
+		spouse = {
+			ROOT = { liege = { abdicate_to = PREVPREV } }
+			k_beyond_wall = { gain_title = PREV }
+			religion = beyond_wall_old_gods
+			prestige = 500
+			wealth = 200
+			any_playable_ruler = {
+				limit = {
+					ai = yes
+					tier = COUNT
+					trait = wildling
+				}
+				set_defacto_liege = PREV
+			}
+			d_nightswatch = { holder_scope = { character_event = { id = nightswatch.78 } } }
+		}	
+	}
+}
+character_event = { #Inform LC
+	id = nightswatch.78
+	desc = "EVTDESCnightswatch.78"
+	picture = GFX_evt_wildlings
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAnightswatch.78" 
+		FROM = { spouse = { tooltip = { show_portrait = yes } } }
+	}
+}
+#Inform realm of Night's King
+character_event = {
+	id = nightswatch.79
+	desc = "EVTDESCnightswatch.79"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+		
+	option = {
+		name = "EVTOPTAnightswatch.79" 
+	}
+}
+# Night's King discovers the "Widling's" true identity
+narrative_event = {
+	id = nightswatch.80
+	title = "EVTTITLEnightswatch.80"
+	desc = "EVTDESCnightswatch.80"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+	
+	immediate = { 
+		spouse = {
+			set_graphical_culture = white_walker
+			culture = white_walker
+			religion = cold_gods
+			add_trait = white_walker
+			remove_trait = wildling
+			fertility = 50.0
+			set_name = " "
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAnightswatch.80"
+		spouse = { tooltip = { show_portrait = yes } }
+		add_trait = possessed
+		add_trait = lunatic
+		religion = cold_gods
+	}
+}
+###Young Common Lad shows potential###
+character_event = { 
+	id = nightswatch.90
+	desc = "EVTDESCnightswatch.90"
+	picture = "GFX_evt_child_play"
+
+	only_playable = yes
+	only_men = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		primary_title = { title = d_nightswatch }
+		trait = nightswatch
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+	}
+	
+	option = {
+		name = "EVTOPTAnightswatch.90" #Personal Steward
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 5
+				trait = humble
+			}
+			modifier = {
+				factor = 2
+				trait = patient
+			}
+			modifier = {
+				factor = 2
+				trait = honorable
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				dynasty = 0
+			}
+		}
+		random_courtier = {
+			limit = { has_minor_title = title_personal_steward }
+			remove_title = title_personal_steward
+			opinion = {
+				modifier = opinion_revoked_honorary_title
+				who = ROOT
+				multiplier = 2
+			}
+		}
+		custom_tooltip = {
+			text = TOOLTIPnightswatch.90
+			hidden_tooltip = {
+				random_list = {
+					95 = {
+						create_character = {
+							age = 14
+							dynasty = none
+							female = no
+							culture = northman
+							religion = old_gods
+							trait = diligent
+							trait = brave
+							trait = nightswatch
+							attributes = {
+								martial = 4
+								diplomacy = 5
+								intrigue = 3
+								stewardship = 4
+								learning = 2
+							}
+						}
+					}
+					5 = {
+						create_character = {
+							age = 14
+							name = Олли
+							dynasty = none
+							female = no
+							culture = northman
+							religion = old_gods
+							trait = deceitful
+							trait = ruthless
+							trait = selfish
+							trait = wroth
+							trait = nightswatch
+							attributes = {
+								martial = 4
+								diplomacy = 5
+								intrigue = 3
+								stewardship = 4
+								learning = 2
+							}
+							historical = yes
+						}
+					}	
+				}	
+				new_character = {
+					move_character = ROOT
+					give_minor_title = title_personal_steward
+					set_guardian = ROOT
+					remove_trait = slothful
+					remove_trait = craven
+					random_list = {
+						20 = { add_trait = poor_warrior }
+						20 = { add_trait = trained_warrior }
+					}	
+					random_list = {
+						20 = { add_trait = gregarious remove_trait = shy }
+						20 = { add_trait = ambitious remove_trait = content }
+						20 = { add_trait = patient remove_trait = wroth }
+					}
+					random_list = {
+						20 = { add_trait = kind remove_trait = cruel }
+						20 = { add_trait = honorable remove_trait = ruthless }
+						20 = { add_trait = proud remove_trait = humble }
+					}
+					if = {
+						limit = { NOT = { trait = genius } }
+						random = {
+							chance = 3
+							add_trait = quick
+						}
+					}	
+					opinion = {
+						modifier = opinion_glad
+						who = ROOT
+						years = 5
+						multiplier = 2
+					}
+					remove_trait = imbecile
+					remove_trait = inbred
+					remove_trait = slow
+					remove_trait = infirm
+					remove_trait = incapable
+					remove_trait = leper
+					remove_trait = possessed
+					remove_trait = ill
+					remove_trait = pneumonic
+					remove_trait = maimed
+				}
+			}	
+		}
+		prestige = -50
+	}
+	
+	option = {
+		name = "EVTOPTBnightswatch.90" #No
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 5
+				trait = proud
+			}
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 2
+				trait = just
+			}
+			modifier = {
+				factor = 2
+				trait = envious
+			}
+		}
+	}
+}
+###Men unhappy with common personal steward###
+character_event = { 
+	id = nightswatch.91
+	desc = "EVTDESCnightswatch.91"
+	picture = GFX_evt_council
+
+	is_triggered_only = yes
+	only_playable = yes
+	
+	trigger = {
+		primary_title = { title = d_nightswatch }
+		trait = nightswatch
+		any_courtier = {
+			has_minor_title = title_personal_steward
+			dynasty = 0
+			NOT = { has_character_flag = common_steward }
+		}
+	}
+
+	option = {
+		name = "EVTOPTAnightswatch.91" #Agree to remove
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 5
+				trait = humble
+			}
+			modifier = {
+				factor = 2
+				trait = patient
+			}
+			modifier = {
+				factor = 2
+				trait = content
+			}
+			modifier = {
+				factor = 2
+				trait = just
+			}
+			modifier = {
+				factor = 2
+				trait = craven
+			}
+		}
+		random_courtier = {
+			limit = { has_minor_title = title_personal_steward }
+			remove_title = title_personal_steward
+			opinion = {
+				modifier = opinion_revoked_honorary_title
+				who = ROOT
+				multiplier = 2
+			}
+		}
+		prestige = -50
+	}
+	
+	option = {
+		name = "EVTOPTBnightswatch.91" #No
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 5
+				trait = proud
+			}
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 5
+				trait = stubborn
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2
+				trait = authoritative
+			}
+		}
+		random_courtier = {
+			limit = { has_minor_title = title_personal_steward }
+			set_character_flag = common_steward
+		}
+		any_courtier = {
+			limit = {
+				trait = nightswatch
+				NOT = { has_minor_title = title_personal_steward }
+				NOT = { character = ROOT }
+				NOT = { dynasty = 0 }
+				OR = {
+					trait = proud
+					trait = just
+					trait = wroth
+					trait = envious
+				}
+				NOT = { trait = humble }
+			}
+			opinion = {
+				modifier = opinion_common_personal_steward
+				who = ROOT
+			}
+		}
+	}
+}
+### New recruit causing trouble ###
+character_event = {
+	id = nightswatch.92
+	desc = "EVTDESCnightswatch.92"
+	picture = GFX_evt_the_wall
+	
+	only_men = yes
+	min_age = 16
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		primary_title = { title = d_nightswatch }
+		trait = nightswatch
+		demesne_size = 1
+	}
+	
+	mean_time_to_happen = {
+		years = 200
+	}	
+	
+	immediate = {
+		random_courtier = {
+			limit = {
+				trait = nightswatch
+				NOT = { culture_group = valyrian }
+				religion_group = westerosi_religion
+			}
+			ROOT = {
+				create_character = {
+					random_traits = yes
+					dynasty = none
+					trait = nightswatch
+					religion = PREV
+					culture = PREV
+					female = no
+					trait = cruel
+					trait = ruthless
+					trait = wroth
+				}
+				new_character = {
+					change_learning = -5
+					remove_trait = kind
+					remove_trait = honorable
+					remove_trait = patient
+					remove_trait = humble
+					remove_trait = just
+					random_list = {
+						40 = { }
+						40 = { add_trait = poor_warrior }
+					}
+					set_character_flag = NW_problem_recruit
+				}
+			}	
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTAnightswatch.92" #Try to murder
+		trigger = {
+			is_summer_trigger = yes
+			NOT = { trait = honorable }
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				OR = {
+					trait = just
+					trait = kind
+					trait = honest
+				}	
+			}
+			modifier = {
+				factor = 3
+				trait = ruthless	
+			}
+			modifier = {
+				factor = 3
+				trait = cruel	
+			}
+			modifier = {
+				factor = 3
+				trait = deceitful	
+			}
+			modifier = {
+				factor = 3
+				trait = arbitrary	
+			}
+			modifier = {
+				factor = 1.5
+				trait = wroth	
+			}
+			modifier = {
+				factor = 1.5
+				trait = paranoid
+			}
+			modifier = {
+				factor = 0.66
+				trait = patient
+			}
+			modifier = {
+				factor = 0.66
+				trait = trusting
+			}
+			modifier = {
+				factor = 0.66
+				NOT = { intrigue = 8 }
+			}
+		}
+		random_courtier = {
+			limit = { has_character_flag = NW_problem_recruit }
+			if = {
+				limit = {
+					ROOT = { NOT = { intrigue = 8 } }
+				}
+				random_list = {
+					66 = {
+						custom_tooltip = {
+							text = TOOLTIPnightswatch.93
+							hidden_tooltip = { 
+								ROOT = { character_event = { id = nightswatch.93 } } 
+								death = {
+									death_reason = death_murder_unknown
+									killer = ROOT
+								}
+							}
+						}						
+					}
+					34 = {
+						custom_tooltip = {
+							text = TOOLTIPnightswatch.94
+							hidden_tooltip = { 
+								ROOT = { character_event = { id = nightswatch.94 } } 
+								death = {
+									death_reason = death_murder
+									killer = ROOT
+								}
+							}
+						}	
+					}					
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { 
+						intrigue = 8
+						NOT = { intrigue = 14 } 
+					}
+				}
+				random_list = {
+					80 = {
+						custom_tooltip = {
+							text = TOOLTIPnightswatch.93
+							hidden_tooltip = { 
+								ROOT = { character_event = { id = nightswatch.93 } } 
+								death = {
+									death_reason = death_murder_unknown
+									killer = ROOT
+								}
+							}
+						}	
+					}
+					20 = {
+						custom_tooltip = {
+							text = TOOLTIPnightswatch.94
+							hidden_tooltip = { 
+								ROOT = { character_event = { id = nightswatch.94 } } 
+								death = {
+									death_reason = death_murder
+									killer = ROOT
+								}
+							}
+						}	
+					}					
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { intrigue = 14 }
+				}
+				random_list = {
+					95 = {
+						custom_tooltip = {
+							text = TOOLTIPnightswatch.93
+							hidden_tooltip = { 
+								ROOT = { character_event = { id = nightswatch.93 } } 
+								death = {
+									death_reason = death_murder_unknown
+									killer = ROOT
+								}
+							}
+						}
+					}
+					5 = {
+						custom_tooltip = {
+							text = TOOLTIPnightswatch.94
+							hidden_tooltip = { 
+								ROOT = { character_event = { id = nightswatch.94 } } 
+								death = {
+									death_reason = death_murder
+									killer = ROOT
+								}
+							}
+						}	
+					}					
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTBnightswatch.92" #Talk with him
+		ai_chance = {
+			factor = 75
+
+			modifier = {
+				factor = 3
+				trait = patient
+			}
+			modifier = {
+				factor = 3
+				trait = diligent
+			}
+			modifier = {
+				factor = 3
+				trait = trusting
+			}
+			modifier = {
+				factor = 0.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.5
+				trait = slothful
+			}
+			modifier = {
+				factor = 0.5
+				trait = paranoid
+			}
+			modifier = {
+				factor = 0.66
+				NOT = { diplomacy = 8 }
+			}
+			modifier = {
+				factor = 2
+				diplomacy = 14
+			}
+		}
+		random_courtier = {
+			limit = { has_character_flag = NW_problem_recruit }
+			if = {
+				limit = {
+					ROOT = { NOT = { diplomacy = 8 } }
+				}
+				random_list = {
+					40 = {
+						custom_tooltip = {
+							text = TOOLTIPnightswatch.95
+							hidden_tooltip = { 
+								ROOT = { character_event = { id = nightswatch.95 } } 
+							}
+						}
+					}
+					60 = {
+						custom_tooltip = {
+							text = TOOLTIPnightswatch.96
+							hidden_tooltip = { 
+								ROOT = { character_event = { id = nightswatch.96 } } 
+							}
+						}
+					}					
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { 
+						diplomacy = 8
+						NOT = { diplomacy = 14 } 
+					}
+				}
+				random_list = {
+					60 = {
+						custom_tooltip = {
+							text = TOOLTIPnightswatch.95
+							hidden_tooltip = { 
+								ROOT = { character_event = { id = nightswatch.95 } } 
+							}
+						}
+					}
+					40 = {
+						custom_tooltip = {
+							text = TOOLTIPnightswatch.96
+							hidden_tooltip = { 
+								ROOT = { character_event = { id = nightswatch.96 } } 
+							}
+						}
+					}					
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { diplomacy = 14 }
+				}
+				random_list = {
+					80 = {
+						custom_tooltip = {
+							text = TOOLTIPnightswatch.95
+							hidden_tooltip = { 
+								ROOT = { character_event = { id = nightswatch.95 } } 
+							}
+						}
+					}
+					20 = {
+						custom_tooltip = {
+							text = TOOLTIPnightswatch.96
+							hidden_tooltip = { 
+								ROOT = { character_event = { id = nightswatch.96 } } 
+							}
+						}
+					}					
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTCnightswatch.92" #Send on a dangerous ranging
+		ai_chance = {
+			factor = 75
+			
+			modifier = {
+				factor = 3
+				trait = ruthless
+			}
+			modifier = {
+				factor = 3
+				trait = cruel
+			}
+			modifier = {
+				factor = 3
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.5
+				trait = honorable
+			}
+			modifier = {
+				factor = 0.5
+				trait = kind
+			}
+			modifier = {
+				factor = 0.5
+				trait = patient
+			}
+		}		
+		random_courtier = {
+			limit = { has_character_flag = NW_problem_recruit }
+			random_list = {
+				50 = { add_rival = ROOT }
+				50 = { 
+					remove_trait = wroth
+					add_trait = humble
+					ROOT = { prestige = 50 }
+				}	
+			}
+			random_list = {
+				80 = {
+				}	
+				15 = {
+					add_trait_silently_wounded_effect = yes
+				}
+				5 = {
+					death = {
+						death_reason = death_battle
+					}
+				}
+			}
+		}	
+	}
+}
+#Inform recruit dies, not discovered
+character_event = {
+	id = nightswatch.93
+	desc = "EVTDESCnightswatch.93"
+	picture = GFX_evt_death
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAnightswatch.93" 
+	}
+}	
+#Inform recruit dies, discovered
+character_event = {
+	id = nightswatch.94
+	desc = "EVTDESCnightswatch.94"
+	picture = GFX_evt_death
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAnightswatch.94" 
+		piety = -100		
+		if = {
+			limit = {
+				trait = honest
+			}
+			remove_trait = honest
+		}	
+		if = {
+			limit = { NOT = { has_cutthroat_religion_trigger = yes } }
+			change_variable = { which = "dishonorable" value = 10 } 
+			hidden_tooltip = { character_event = { id = maintenance.3 } } #dishonour trait
+		}		
+	}
+}	
+#Inform recruit sees error of ways
+character_event = {
+	id = nightswatch.95
+	desc = "EVTDESCnightswatch.95"
+	picture = GFX_evt_death
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAnightswatch.95" 
+		FROM = {
+			remove_trait = wroth
+			add_trait = humble
+		}
+		prestige = 50
+		change_diplomacy = 1
+	}
+}	
+#Inform recruit ignores talk
+character_event = {
+	id = nightswatch.96
+	desc = "EVTDESCnightswatch.96"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAnightswatch.96" 
+		prestige = -100
+	}
+}	
+### Deserter comes back ###
+character_event = {
+	id = nightswatch.97
+	desc = "EVTDESCnightswatch.97"
+	picture = GFX_evt_the_wall
+	
+	only_men = yes
+	min_age = 16
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		primary_title = { title = d_nightswatch }
+		trait = nightswatch
+		demesne_size = 1
+	}
+	
+	mean_time_to_happen = {
+		years = 150
+	}	
+	
+	immediate = {
+		random_courtier = {
+			limit = {
+				trait = nightswatch
+				NOT = { culture_group = valyrian }
+				religion_group = westerosi_religion
+			}
+			ROOT = {
+				create_character = {
+					random_traits = yes
+					dynasty = none
+					trait = nightswatch
+					religion = PREV
+					culture = PREV
+					female = no
+					trait = craven
+					trait = deserter
+				}
+				new_character = {
+					change_learning = -5
+					remove_trait = just
+					remove_trait = honorable
+					remove_trait = brave
+					remove_trait = strong
+					random_list = {
+						40 = { }
+						40 = { add_trait = poor_warrior }
+					}
+					set_character_flag = NW_deserter
+					if = {
+						limit = { NOT = { trait = zealous } }
+						random = {
+							chance = 20
+							add_trait = sympathy_wildling_religion
+						}	
+					}
+				}
+			}	
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTAnightswatch.97" #Forgive
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				trait = just
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				trait = patient
+			}
+			modifier = {
+				factor = 2
+				trait = trusting
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2
+				trait = slothful
+			}
+		}
+		random_courtier = {
+			limit = { has_character_flag = NW_deserter }
+			remove_trait = deserter
+			opinion = {
+				who = ROOT
+				modifier = opinion_merciful
+				multiplier = 2
+				months = 240
+			}
+		}
+		prestige = -50
+		if = {
+			limit = {
+				NOT = { trait = kind }
+				NOT = { trait = cruel }
+				NOT = { personality_traits = 6 }
+			}
+			random = {
+				chance = 33
+				add_trait = kind
+				hidden_tooltip = {
+					character_event = {
+						id = 38268 #Notify kind
+					}
+				}
+			}
+		}
+		if = {
+			limit = { trait = just }
+			remove_trait = just
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBnightswatch.97" #Punish
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 2
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 2
+				trait = impaler
+			}
+			modifier = {
+				factor = 2
+				trait = honorable
+			}
+		}
+		random_courtier = {
+			limit = { has_character_flag = NW_deserter }
+			remove_trait = deserter
+			random_list = {
+				75 = { add_trait_silently_wounded_effect = yes }
+				25 = { add_maimed_trait_effect = yes }
+			}
+		}
+		if = {
+			limit = {
+				NOT = { trait = just }
+				NOT = { trait = arbitrary }
+				NOT = { personality_traits = 6 }
+			}
+			random = {
+				chance = 33
+				add_trait = arbitrary
+				hidden_tooltip = {
+					character_event = {
+						id = 38266 #Notify
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTCnightswatch.97" #Execute
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 2
+				trait = zealous
+			}
+			modifier = {
+				factor = 2
+				trait = just
+			}
+			modifier = {
+				factor = 2
+				trait = diligent
+			}
+			modifier = {
+				factor = 2
+				trait = ruthless
+			}
+		}
+		random_courtier = {
+			limit = { has_character_flag = NW_deserter }
+			hidden_tooltip = { character_event = { id = 154 } } #on_executed event
+			death = {
+				death_reason = death_execution
+				killer = ROOT
+			}
+		}
+		prestige = 30
+		if = {
+			limit = {
+				NOT = { trait = honorable }
+				NOT = { trait = ruthless }
+				NOT = { personality_traits = 6 }
+			}
+			random = {
+				chance = 33
+				add_trait = ruthless
+			}
+		}
+	}
+}
+### Ranger is missing ###
+character_event = {
+	id = nightswatch.98
+	desc = "EVTDESCnightswatch.98"
+	picture = GFX_evt_the_wall
+	
+	only_men = yes
+	min_age = 16
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		primary_title = { title = d_nightswatch }
+		trait = nightswatch
+		demesne_size = 1
+	}
+	
+	mean_time_to_happen = {
+		years = 150
+	}	
+	
+	immediate = {
+		random_courtier = {
+			limit = {
+				trait = nightswatch
+				is_councillor = no
+				NOT = { is_voter = yes }
+				NOT = { higher_tier_than = BARON }
+				has_character_modifier = nw_ranger
+				prisoner = no
+				NOT = { has_severe_disability_trigger = yes }
+				is_ill = no
+				has_epidemic = no
+			}
+			add_trait = has_missing
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTAnightswatch.98" #Lead rescue party
+		trigger = {
+			prisoner = no
+			NOT = { has_severe_disability_trigger = yes }
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 3
+				trait = brave
+			}
+			modifier = {
+				factor = 0
+				trait = craven
+			}
+			modifier = {
+				factor = 2
+				martial = 14
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { martial = 8 }
+			}
+			modifier = {
+				factor = 0.5
+				trait = ruthless
+			}
+		}
+		random_courtier = {
+			limit = { trait = has_missing }
+			tooltip = { show_portrait = yes }
+		}
+		if = {
+			limit = {
+				NOT = { martial = 8 }
+			}
+			random_list = {
+				60 = {
+					character_event = { id = nightswatch.980 days = 3 tooltip = TOOLTIPnightswatch.980 }	
+				}
+				40 = {
+					character_event = { id = nightswatch.99 days = 3 tooltip = TOOLTIPnightswatch.99 }	
+				}					
+			}
+		}
+		if = {
+			limit = {
+				martial = 8
+				NOT = { martial = 14 } 
+			}
+			random_list = {
+				75 = {
+					character_event = { id = nightswatch.980 days = 3 tooltip = TOOLTIPnightswatch.980 }	
+				}
+				25 = {
+					character_event = { id = nightswatch.99 days = 3 tooltip = TOOLTIPnightswatch.99 }	
+				}					
+			}
+		}
+		if = {
+			limit = {
+				martial = 14
+			}
+			random_list = {
+				90 = {
+					character_event = { id = nightswatch.980 days = 3 tooltip = TOOLTIPnightswatch.980 }	
+				}
+				10 = {
+					character_event = { id = nightswatch.99 days = 3 tooltip = TOOLTIPnightswatch.99 }	
+				}					
+			}
+		}
+		if = {
+			limit = {
+				NOT = { trait = brave }
+				NOT = { trait = craven }
+				NOT = { personality_traits = 6 }
+			}
+			random = {
+				chance = 33
+				add_trait = brave
+				hidden_tooltip = {
+					character_event = {
+						id = 38270 #Notify
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBnightswatch.98" #Send First Ranger
+		trigger = {
+			job_marshal = {
+				prisoner = no
+				NOT = { has_severe_disability_trigger = yes }
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				trait = proud
+			}
+			modifier = {
+				factor = 2
+				trait = humble
+			}
+			modifier = {
+				factor = 2
+				job_marshal = { martial = 14 }
+			}
+			modifier = {
+				factor = 0.5
+				job_marshal = { NOT = { martial = 8 } }
+			}
+		}
+		random_courtier = {
+			limit = { trait = has_missing }
+			tooltip = { show_portrait = yes }
+		}
+		job_marshal = {
+			if = {
+				limit = {
+					NOT = { martial = 8 }
+				}
+				random_list = {
+					60 = {
+						character_event = { id = nightswatch.980 days = 3 tooltip = TOOLTIPnightswatch.980 }	
+					}
+					40 = {
+						character_event = { id = nightswatch.99 days = 3 tooltip = TOOLTIPnightswatch.99 }	
+					}					
+				}
+			}
+			if = {
+				limit = {
+					martial = 8
+					NOT = { martial = 14 } 
+				}
+				random_list = {
+					75 = {
+						character_event = { id = nightswatch.980 days = 3 tooltip = TOOLTIPnightswatch.980 }	
+					}
+					25 = {
+						character_event = { id = nightswatch.99 days = 3 tooltip = TOOLTIPnightswatch.99 }	
+					}					
+				}
+			}
+			if = {
+				limit = {
+					martial = 14
+				}
+				random_list = {
+					90 = {
+						character_event = { id = nightswatch.980 days = 3 tooltip = TOOLTIPnightswatch.980 }	
+					}
+					10 = {
+						character_event = { id = nightswatch.99 days = 3 tooltip = TOOLTIPnightswatch.99 }	
+					}					
+				}
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTCnightswatch.98" #Wait
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0.5
+				trait = just
+			}
+			modifier = {
+				factor = 0.5
+				trait = honorable
+			}
+			modifier = {
+				factor = 0.5
+				trait = diligent
+			}
+			modifier = {
+				factor = 0.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.5
+				trait = kind
+			}
+			
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2
+				trait = slothful
+			}
+			modifier = {
+				factor = 2
+				trait = selfish
+			}
+			modifier = {
+				factor = 2
+				trait = patient
+			}
+			modifier = {
+				factor = 2
+				trait = paranoid
+			}
+			modifier = {
+				factor = 2
+				trait = cruel
+			}		
+		}
+		random_courtier = {
+			limit = { trait = has_missing }
+			random_list = {
+				50 = {
+					remove_trait = has_missing
+				}
+				50 = {
+					death = { death_reason = death_trait }
+				}					
+			}
+		}
+		prestige = -50
+		add_character_modifier = {
+			name = NW_neglected_ranger
+			duration = 1825
+		}
+	}
+}
+#Ranger rescued
+character_event = {
+	id = nightswatch.980
+	desc = "EVTDESCnightswatch.980"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAnightswatch.980" 
+		prestige = 100
+		if = {
+			limit = { has_landed_title = d_nightswatch }
+			random_realm_character = {
+				limit = { trait = has_missing }
+				remove_trait = has_missing
+				opinion = {
+					who = ROOT
+					modifier = rescued_my_sorry_ass
+				}
+			}
+		}
+		if = {
+			limit = { NOT = { has_landed_title = d_nightswatch } }
+			d_nightswatch = { 
+				holder_scope = { 
+					character_event = { id = nightswatch.100 } 
+					random_realm_character = {
+						limit = { trait = has_missing }
+						opinion = {
+							who = ROOT
+							modifier = rescued_my_sorry_ass
+						}
+					}
+				} 
+			}
+		}
+	}
+}	
+#Ranger not rescued
+character_event = {
+	id = nightswatch.99
+	desc = "EVTDESCnightswatch.99"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAnightswatch.99" 
+		if = {
+			limit = { NOT = { has_landed_title = d_nightswatch } }
+			d_nightswatch = { 
+				holder_scope = { 
+					character_event = { id = nightswatch.101 } 
+				} 
+			}
+		}
+		if = {
+			limit = { has_landed_title = d_nightswatch }
+			random_realm_character = {
+				limit = { trait = has_missing }
+				death = { death_reason = death_trait }
+			}
+		}
+		prestige = -50		
+		random_list = {
+			78 = { }
+			15 = {
+				add_trait_silently_wounded_effect = yes
+				hidden_tooltip = { character_event = { id = 38280 } }
+			}
+			5 = {
+				add_maimed_trait_effect = yes
+				hidden_tooltip = { 
+					remove_trait = wounded
+				}
+			}
+			2 = {
+				death = { death_reason = death_battle }
+			}
+		}
+	}
+}	
+#Inform ranger rescued
+character_event = {
+	id = nightswatch.100
+	desc = "EVTDESCnightswatch.100"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAnightswatch.980" 
+		random_realm_character = {
+			limit = { trait = has_missing }
+			remove_trait = has_missing
+		}
+	}
+}	
+#Inform ranger not rescued
+character_event = {
+	id = nightswatch.101
+	desc = "EVTDESCnightswatch.101"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAnightswatch.99" 
+		prestige = -50
+		random_realm_character = {
+			limit = { trait = has_missing }
+			death = { death_reason = death_trait }
+		}
+	}
+}	
+#Black Brother is exiled beyond the wall
+character_event = {
+	id = nightswatch.102
+	desc = "EVTDESCnightswatch.102"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAnightswatch.102" 
+	}
+}	
+#Manage deserters
+character_event = {
+	id = nightswatch.103
+	desc = "EVTDESCnightswatch.103"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+	prisoner = no
+	
+	trigger = {
+		trait = deserter
+		liege = { 
+			NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_merciful } }
+			NOT = { character = ROOT }
+			nightswatch_culture_trigger = yes
+			NOT = { trait = deserter }
+		}
+	}
+
+	option = {
+		name = "EVTOPTAnightswatch.103" 
+		liege = { 
+			ROOT = { imprison = PREV }
+			character_event = { id = nightswatch.104 tooltip = TOOLTIPnightswatch.104 } 
+		}
+	}
+}	
+character_event = {
+	id = nightswatch.104
+	desc = "EVTDESCnightswatch.104"
+	picture = GFX_evt_the_wall
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAnightswatch.104" #Execute
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 4
+				trait = honorable
+			}
+			modifier = {
+				factor = 2
+				trait = diligent
+			}
+			modifier = {
+				factor = 2
+				trait = zealous
+			}
+			modifier = {
+				factor = 2
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { opinion = { who = FROM value = -24 } }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { opinion = { who = FROM value = -49 } }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { opinion = { who = FROM value = -74 } }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { opinion = { who = FROM value = -99 } }
+			}
+		}
+		add_fear_execution_effect = yes
+		if = {
+			limit = { pacifist = yes }
+			piety = -100
+			custom_tooltip = { text = nath_pagan_ahimsa_tooltip }
+		}
+		FROM = { 
+			hidden_tooltip = { 
+				add_character_modifier = { #prevents the execution decision being used 
+					name = getting_justice
+					duration = 60
+				}
+			}
+			character_event = { id = nightswatch.105 tooltip = TOOLTIPnightswatch.105 } 
+		}
+	}
+	option = {
+		name = "EVTOPTBnightswatch.104" #Mercy
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				trait = just
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					is_close_relative = FROM					
+					AND = {
+						NOT = { dynasty = 0 }
+						dynasty = FROM
+					}
+					is_friend = FROM			
+					is_allied_with = FROM
+					has_non_aggression_pact_with = FROM
+					opinion = { who = FROM value = 30 }
+					trait = cynical
+					trait = arbitrary
+				}
+			}
+			modifier = {
+				factor = 4
+				OR = {
+					is_close_relative = FROM					
+					AND = {
+						NOT = { dynasty = 0 }
+						dynasty = FROM
+					}
+				}	
+			}
+			modifier = {
+				factor = 3
+				is_friend = FROM
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2
+				trait = slothful
+			}
+			modifier = {
+				factor = 2
+				trait = cynical
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				trait = patient
+			}
+			modifier = {
+				factor = 2
+				opinion = { who = FROM value = 25 }
+			}
+			modifier = {
+				factor = 2
+				opinion = { who = FROM value = 50 }
+			}
+			modifier = {
+				factor = 2
+				opinion = { who = FROM value = 75 }
+			}
+			modifier = {
+				factor = 2
+				opinion = { who = FROM value = 100 }
+			}
+		}
+		FROM = { 
+			hidden_tooltip = { character_event = { id = nightswatch.106 } }
+			prisoner = no
+			opinion = { who = ROOT modifier = opinion_merciful }
+		}
+		piety = -50
+		prestige = -50
+	}
+}	
+character_event = { #Executed
+	id = nightswatch.105
+	desc = "EVTDESCnightswatch.105"
+	picture = "GFX_evt_beheading"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAnightswatch.105"
+		tooltip = {
+			death = {
+				death_reason = death_execution
+				killer = FROM
+			}
+		}	
+		hidden_tooltip = { FROM = { character_event = { id = imprisoned.10 } } } #Select execution method		
+	}
+}		
+character_event = { #Mercy
+	id = nightswatch.106
+	desc = "EVTDESCnightswatch.106"
+
+	is_triggered_only = yes
+	ai = no
+
+	option = {
+		name = "EVTOPTAnightswatch.106"
+		tooltip = { prisoner = no }
+	}
+}	
+#Landless Night's Watch, check black  brothers exist on LC death
+character_event = { 
+	id = nightswatch.110
+
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		d_nightswatch = {
+			holder_scope = {
+				any_independent_ruler = {
+					limit = { NOT = { character = PREV } }
+					if = {
+						limit = { 
+							trait = nightswatch 
+							lower_tier_than = PREV
+						}
+						set_defacto_liege = PREV
+					}
+					any_realm_character = {
+						limit = { 
+							trait = nightswatch 
+							is_ruler = no
+							NOT = { liege = { trait = nightswatch } }
+						}
+						move_character = PREVPREV
+					}
+				}
+				#If no black brothers available, destroy the title
+				if = {
+					limit = {
+						NOT = { trait = nightswatch }
+						NOT = { any_realm_character = { trait = nightswatch } }
+					}
+					clr_global_flag = new_NW_LC_needed
+					activate_title = { status = no title = d_nightswatch }
+					d_nightswatch = { 
+						destroy_landed_title = THIS
+						copy_title_history = d_nightswatch_dummy 
+					}
+					any_playable_ruler = {
+						limit = { ai = no }
+						character_event = { id = nightswatch.111 }
+					}
+				}			
+			}
+		}	
+	}
+
+	option = {
+		name = OK		
+	}
+}
+# Inform Night's Watch disbanded
+character_event = {
+	id = nightswatch.111
+	desc = "EVTDESCnightswatch.111"
+	picture = GFX_evt_the_wall
+	
+	is_triggered_only = yes
+	show_from_from = yes
+	
+	option = {
+		name = "EVTOPTAnightswatch.111"
+	}
+}
+# player restores Night's watch
+character_event = {
+	id = nightswatch.112
+	desc = "EVTDESCnightswatch.112"
+	picture = GFX_evt_the_wall
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAnightswatch.112"
+		trigger = { NOT = { has_landed_title = d_nightswatch } }
+		d_nightswatch = {
+			holder_scope = {				
+				d_the_wall = {
+					if = {
+						limit = { 
+							holder_scope = { 
+								OR = {
+									same_realm = ROOT 
+									culture_group = winter_group
+								}	
+							} 
+						}
+						gain_title = PREV
+					}
+					hidden_tooltip = {
+						any_de_jure_vassal_title = {
+							limit = { 
+								holder_scope = { 
+									OR = {
+										same_realm = ROOT 
+										culture_group = winter_group
+									}	
+								} 
+							}
+							gain_title = PREVPREV
+						}
+					}	
+				}
+				add_trait = nightswatch
+				set_character_flag = no_court_invites
+				set_defacto_liege = THIS
+				opinion = {
+					who = ROOT
+					modifier = opinion_very_grateful
+					years = 10
+				}	
+				hidden_tooltip = {
+					any_vassal = {
+						limit = { NOT = { trait = nightswatch } }
+						set_defacto_liege = THIS
+					}
+					#Refill holding levies
+					character_event = { id = maintenance.34 days = 1 }
+					any_realm_lord = {
+						character_event = { id = maintenance.34 days = 1 }
+					}
+				}
+			}
+		}		
+	}
+	option = {
+		name = "EVTOPTAnightswatch.112"
+		trigger = { has_landed_title = d_nightswatch }
+		random_realm_character = {
+			limit = {
+				is_female = no
+				age = 16
+				is_primary_heir = no
+				NOT = { any_pretender_title = { always = yes } }
+				NOT = { any_heir_title = { always = yes } }
+				is_ruler = no
+				is_married = no
+				OR = {
+					trait = widowed
+					NOT = { num_of_children = 1 }
+				}	
+				NOT = { trait = maester }
+				NOT = { trait = kingsguard }
+				NOT = { trait = archmaester }
+				NOT = { trait = wildling }
+				is_priest = no
+				prisoner = no
+				NOT = { trait = incapable }
+				religion = PREV
+				reverse_opinion = { who = PREV value = 20 }	
+				opinion = { who = PREV value = 20 }							
+			}
+			add_trait = nightswatch
+			set_character_flag = no_court_invites
+			d_nightswatch = { gain_title = PREV }
+			set_government_type = NW_government
+		}
+		if = {
+			limit = { has_landed_title = d_nightswatch }
+			custom_tooltip = { text = TOOLTIPRESTORENWRANDOM }
+			hidden_tooltip = {
+				capital_scope = {
+					ROOT = {
+						create_random_steward = {
+							random_traits = yes
+							dynasty = random
+							female = no
+							culture = PREV
+							religion = PREV
+						}
+						new_character = {
+							add_trait = nightswatch
+							set_character_flag = no_court_invites
+							d_nightswatch = { gain_title = PREV }
+							set_government_type = NW_government
+						}
+					}
+				}	
+			}
+		}
+		hidden_tooltip = {
+			d_nightswatch = {
+				holder_scope = {					
+					d_the_wall = {
+						if = {
+							limit = { 
+								holder_scope = { 
+									OR = {
+										same_realm = ROOT 
+										culture_group = winter_group
+									}	
+								} 
+							}
+							gain_title = PREV
+						}
+						hidden_tooltip = {
+							any_de_jure_vassal_title = {
+								limit = { 
+									holder_scope = { 
+										OR = {
+											same_realm = ROOT 
+											culture_group = winter_group
+										}	
+									} 
+								}
+								gain_title = PREVPREV
+							}
+						}	
+					}
+					add_trait = nightswatch
+					set_character_flag = no_court_invites
+					set_defacto_liege = THIS
+					opinion = {
+						who = ROOT
+						modifier = opinion_very_grateful
+						years = 10
+					}	
+					hidden_tooltip = {
+						any_vassal = {
+							limit = { NOT = { trait = nightswatch } }
+							set_defacto_liege = THIS
+						}
+						#Refill holding levies
+						character_event = { id = maintenance.34 days = 1 }
+						any_realm_lord = {
+							character_event = { id = maintenance.34 days = 1 }
+						}
+					}					
+				}
+			}
+		}	
+	}
+}
+# Donate New Gift to Night's Watch?
+character_event = {
+	id = nightswatch.120
+	desc = "EVTDESCnightswatch.120"
+	picture = GFX_evt_the_wall
+	
+	is_triggered_only = yes
+	only_independent = yes
+	
+	trigger = {
+		c_new_gift = {
+			holder_scope = { 
+				top_liege = { character = ROOT } 
+				war = no
+				NOT = { any_liege = { war = yes } }
+			}
+			NOT = { dejure_liege_title = { title = d_the_wall } }
+		}
+		NOT = { capital_scope = { province_id = 20 } } #capital is not actually the new gift
+		OR = {
+			tier = EMPEROR
+			primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+		}
+		d_nightswatch = {
+			holder_scope = {
+				war = no
+				trait = nightswatch
+				demesne_size = 1
+			}
+		}
+		NOT = { trait = nightswatch }
+		NOT = { trait = wildling }
+		war = no		
+		NOT = { has_character_flag = rejected_new_gift }
+	}
+	
+	weight_multiplier = {
+		factor = 1
+		modifier = {
+			factor = 4
+			has_landed_title = c_new_gift
+		}
+		modifier = {
+			factor = 4
+			trait = charitable
+		}
+		modifier = {
+			factor = 0.25
+			trait = greedy
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			NOR = {
+				culture_group = first_men
+				culture_group = andal
+				culture_group = dornish
+				culture = high_valyrian
+				culture = western_valyrian
+			}	
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTAnightswatch.120" #Yes
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 0
+				trait = greedy
+			}
+			modifier = {
+				factor = 4
+				trait = charitable
+			}
+			modifier = {
+				factor = 2
+				trait = honorable
+			}
+			modifier = {
+				factor = 2
+				trait = zealous
+			}
+			modifier = {
+				factor = 2
+				trait = humble
+			}
+			modifier = {
+				factor = 2
+				culture_group = first_men
+			}
+		}
+		d_nightswatch = {
+			holder_scope = {
+				d_the_wall = {
+					c_new_gift = { 
+						holder_scope = {
+							any_liege = {
+								limit = { NOT = { character = ROOT } }
+								opinion = { who = ROOT modifier = opinion_unhappy years = 10 }
+								ROOT = { wealth = -50 }
+								hidden_tooltip = { wealth = 50 }
+							}
+						}
+						if = {
+							limit = { holder_scope = { tier = COUNT } }
+							holder_scope = { set_defacto_liege = PREVPREVPREV }
+						}
+						if = {
+							limit = { holder_scope = { higher_tier_than = COUNT } }
+							holder_scope = { 
+								if = {
+									limit = { NOT = { character = ROOT } }
+									opinion = { who = ROOT modifier = opinion_unhappy years = 10 } 
+									ROOT = { wealth = -50 }
+									hidden_tooltip = { wealth = 50 }
+								}	
+							}
+							gain_title = PREVPREV
+						}				
+						de_jure_liege = PREV	
+						set_name = c_new_gift				
+						hidden_tooltip = {
+							location = { set_name = c_new_gift }
+						}
+					}
+				}	
+				opinion = {
+					who = ROOT
+					modifier = opinion_granted_duchy
+				}	
+			}
+		}
+		prestige = 300
+		piety = 150
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					ai = no
+					NOT = { character = ROOT }
+					OR = {
+						nightswatch_culture_trigger = yes
+						trait = nightswatch
+					}	
+				}
+				letter_event = { id = nightswatch.121 }
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTBnightswatch.112"
+		ai_chance = {
+			factor = 50
+
+			modifier = {
+				factor = 2
+				trait = ruthless
+			}
+			modifier = {
+				factor = 2
+				trait = cynical
+			}
+			modifier = {
+				factor = 2
+				trait = proud
+			}
+			modifier = {
+				factor = 2
+				NOR = {
+					culture_group = first_men
+					culture_group = andal
+					culture_group = dornish
+					culture = high_valyrian
+					culture = western_valyrian
+				}	
+			}			
+		}
+		set_character_flag = rejected_new_gift
+	}
+}
+letter_event = { #Inform Realm
+	id = nightswatch.121
+	desc = "EVTDESCnightswatch.121"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAnightswatch.121" 
+		d_nightswatch = {
+			holder_scope = {
+				show_portrait = THIS
+			}
+		}	
+	}
+	option = {
+		name = "EVTOPTBnightswatch.121" 
+		trigger = { NOT = { trait = nightswatch } }
+	}
+}	
+
+#Wildlings Take The Wall
+character_event = { #on_new_holder_usurpation
+	id = nightswatch.125
+	desc = EVTDESCnightswatch.125
+	
+	picture = GFX_evt_the_wall
+	border = GFX_event_normal_frame_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { title = d_the_wall }
+		trait = wildling
+		FROMFROM = { trait = nightswatch }	
+	}
+	
+	major_trigger = {
+		ai = no
+	}	
+		
+	option = {
+		name = EVTOPTAnightswatch.125
+		show_portrait = FROMFROM
+		d_nightswatch = {
+			holder_scope = {
+				show_portrait = THIS
+			}
+		}	
+	}
+}

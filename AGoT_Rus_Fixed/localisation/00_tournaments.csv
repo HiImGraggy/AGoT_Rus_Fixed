@@ -1,0 +1,457 @@
+#CODE;ENGLISH;x
+EVTDESCtourney.1;Мы готовы послать воронов уведомить рыцарей и лордов о турнире в поселении [Root.Capital.GetName]. Насколько большим он должен быть?;x
+EVTOPTAtourney.1;Небольшой местный турнир;x
+TOOLTIPtourney.1LOCAL;Рыцари и лорды, проживающие рядом с городом [Root.Capital.GetName] будут приглашены\n;x
+EVTOPTBtourney.1;Крупный провинциальный турнир;x
+TOOLTIPtourney.1REGIONAL;Все рыцари и Лорды земли [This.GetName] будут приглашены\n;x
+EVTOPTCtourney.1;Большой королевский турнир;x
+TOOLTIPtourney.1GRAND;Все рыцари и Лорды наших земель будут приглашены\n;x
+EVTOPTDtourney.1;Я не хочу проводить турнир для всех;x
+EVTDESCtourney.2A;[Root.GetTitledFirstNameWithDynasty], я приглашаю вас принять участие в турнире, который пройдет в столице [From.Capital.GetName], где рыцари испытают свою храбрость.\n\nС уважением,\n[From.GetFirstName] [From.GetOnlyDynastyName], [From.GetTitle] земли [From.PrimaryTitle.GetName];x
+EVTDESCtourney.2B;[Root.GetTitledFirstNameWithDynasty], я приглашаю вас принять участие в турнире, который пройдет в столице [From.Capital.GetName], где рыцари и лорды земли [tourney_kingdom.GetName] испытают свою храбрость.\n\nС уважением,\n[From.GetFirstName] [From.GetOnlyDynastyName], [From.GetTitle] земли [From.PrimaryTitle.GetName];x
+EVTDESCtourney.2C;[Root.GetTitledFirstNameWithDynasty], я приглашаю вас принять участие в Великом турнире, который пройдет в столице [From.Capital.GetName], где лучшие рыцари и лорды всего королевства будут выяснять, кто же из них самый доблестный и умелый рыцарь в стране.\n\nС уважением,\n[From.GetFirstName] [From.GetOnlyDynastyName], [From.GetTitle] земли [From.PrimaryTitle.GetName];x
+EVTOPTC70000;Это слишком низко для моего статуса;x
+TOURNAMENTTITLE2;Турнир в столице [From.Capital.GetName];x
+TOURNAMENTTITLE3;Турнир в столице [Root.Capital.GetName];x
+hold_a_epic_tournament_LP;Провести Великий турнир в столице [Root.Capital.GetName];x
+hold_a_epic_tournament_LP_desc;Давайте проведём грандиозный турнир, сравнится с величием которого смогут лишь сказания и легенды. Рыцари и лорды всего королевства соберутся в столице [Root.Capital.GetName];x
+hold_a_epic_tournament_high_lord;Проведение малого турнира;x
+hold_a_epic_tournament_high_lord_desc;Организуем турнир для рыцарей и лордов с нашей округи в столице [Root.Capital.GetName];x
+tournament_invite_1;Все рыцари и лорды округи будут приглашены;x
+hold_a_epic_tournament_lord;Проведение большого турнира;x
+hold_a_epic_tournament_lord_desc;Организуем турнир для рыцарей и лордов области [Root.Capital.GetName];x
+tournament_invite_2;Пригласим всех рыцарей и лордов наших земель;x
+grand_tourny_1st;Победа в Великом турнире;x
+grand_tourny_2nd;Второе место в Великом турнире;x
+grand_tourny_3rd;Третье место в Великом турнире;x
+normal_tourny_1st;Победа в большом турнире;x
+normal_tourny_2nd;Второе место в большом турнире;x
+normal_tourny_3rd;Третье место в большом турнире;x
+small_tourny_1st;Победа в малом турнире;x
+small_tourny_2nd;Второе место в малом турнире;x
+small_tourny_3rd;Третье место в малом турнире;x
+EVTDESC70052;[FromFrom.GetTitledFirstNameWithDynasty] был[FromFrom.GetEndA] объявлен[FromFrom.GetEndA] победителем турнира, который провел[From.GetEndA] [From.GetTitle] [From.GetFirstNameWithDynasty].;x
+EVTDESC70054;Ранее неизвестный странствующий рыцарь стал победителем моего турнира, может стоит взять его на службу?;x
+EVTDESC70055;Ранее неизвестный странствующий рыцарь занял второе место в моём турнире, может стоит взять его на службу?;x
+EVTDESC70056;Ранее неизвестный странствующий рыцарь занял третье место в моём турнире, может стоит взять его на службу?;x
+EVTOPTA70054;Странствующим рыцарям тут не место.;x
+EVTOPTB70054;Поприветствуем его при дворе;x
+opinion_queen_love_beauty;Королева любви и красоты;x
+opinion_queen_love_beauty_chosen;Выбранная королева любви и красоты;x
+EVTTOOLTIP70057;Это приведёт её в восторг;x
+EVTDESC70053;Как победитель турнира в столице [From.Capital.GetName], имею честь выбрать королеву любви и красоты.;x
+EVTOPT70053SPOUSE;Конечно, моя прекрасная [Root.Spouse.GetFirstName] и есть моя королева;x
+EVTOPT70053BETROTHED;Моя возлюбленная невеста удостоится этой чести;x
+EVTOPT70053LOVER;Моя любовь - истинная королева;x
+EVTOPT70053QUEENCONSORT;[From.Spouse.GetTitledFirstName] - истинная королева;x
+EVTOPT70053QUEEN;[From.PrimaryTitle.GetFOA], вы настоящая королева;x
+EVTOPTA70053;Она действительно красива.;x
+EVTOPTB70053;Она - часть великой семьи;x
+EVTOPTC70053;Она - моя любовь;x
+EVTOPTD70053;Хмм, вот пусть будет она;x
+EVTDESC70057;С великой честью я, [From.GetTitledFirstNameWithDynasty], принимаю титул Королевы любви и красоты на турнире в столице [FromFrom.Capital.GetName]!;x
+EVTOPTA70057;Как замечательно!;x
+EVTDESC70058;Как победитель моего турнира, [FromFrom.GetTitledFirstNameWithDynasty] получил честь выбрать Королеву Любви и Красоты. Так [From.GetTitledFirstNameWithDynastyNoRegnal] была выбрана [FromFrom.GetHerHis] Королевой.;x
+EVTDESC70058B;Как победитель моего турнира, [FromFrom.GetTitledFirstNameWithDynasty] получил честь выбрать Королеву Любви и Красоты. Так [From.GetTitledFirstNameWithDynastyNoRegnal] была выбрана [FromFrom.GetHerHis] Королевой, что несомненно вызовет гнев её родни.;x
+EVTDESC70058C;Как победитель моего турнира, [FromFrom.GetTitledFirstNameWithDynasty] получил честь выбрать Королеву Любви и Красоты. Так [From.GetTitledFirstNameWithDynastyNoRegnal], [FromFrom.GetHerHis] жена, была выбрана [FromFrom.GetHerHis] Королевой.;x
+EVTDESC70058D;Как победитель моего турнира, [FromFrom.GetTitledFirstNameWithDynasty] получил честь выбрать Королеву Любви и Красоты. Так [FromFrom.GetHerHis] невеста, [From.GetTitledFirstNameWithDynastyNoRegnal], была выбрана [FromFrom.GetHerHis] Королевой.;x
+EVTDESC70058F;Как победитель моего турнира, [FromFrom.GetTitledFirstNameWithDynasty] получил честь выбрать Королеву Любви и Красоты. Так [FromFrom.GetSheHe] почтил за честь короновать мою жену, известную как [From.GetTitledFirstNameWithDynastyNoRegnal], как Королеву турнира.;x
+EVTOPTA70058;Хороший выбор;x
+EVTOPTA70058B;Это может привести к беде;x
+EVTDESC70050;Соперник, оценив вашу храбрость в бою предложил посвятить меня в рыцари.;x
+EVTOPTA70050;Я заслужил это;x
+EVTOPTB70050;Нет, спасибо.;x
+EVTDESC70051;За свою храбрость и мастерство в поединке [From.GetTitledFirstNameWithDynasty] был посвящён в рыцари своим соперником.;x
+EVTOPTA70051;Он действительно молодец;x
+EVTDESC70060;К сожалению, моя смерть означает, что турнир должен быть отменен;x
+EVTOPTA70060;Мне действительно не до этого.;x
+EVTDESC70059;Победитель турнира в столице [FromFromFrom.Capital.GetName], [FromFrom.GetTitledFirstNameWithDynasty] получил честь выбрать Королеву Любви и Красоты. Так  [From.GetTitledFirstNameWithDynastyNoRegnal] была выбрана [FromFrom.GetHerHis] Королевой;x
+EVTDESC70059B;Победитель турнира в столице [FromFromFrom.Capital.GetName], [FromFrom.GetTitledFirstNameWithDynasty] получил честь выбрать Королеву Любви и Красоты. Так  [From.GetTitledFirstNameWithDynastyNoRegnal] была выбрана [FromFrom.GetHerHis] Королевой, что несомненно вызовет гнев её родни.;x
+EVTDESC70059C;Победитель турнира в столице [FromFromFrom.Capital.GetName], [FromFrom.GetTitledFirstNameWithDynasty] получил честь выбрать Королеву Любви и Красоты. Так [FromFrom.GetSheHe] короновал своюю жену по имени [From.GetTitledFirstNameWithDynastyNoRegnal], как свою Королеву.;x
+EVTDESC70059D;Победитель турнира в столице [FromFromFrom.Capital.GetName], [FromFrom.GetTitledFirstNameWithDynasty] получил честь выбрать Королеву Любви и Красоты. Так [FromFrom.GetSheHe] короновал свою невесту по имени [From.GetTitledFirstNameWithDynastyNoRegnal], как свою Королеву.;x
+EVTDESC70059E;Победитель турнира в столице [FromFromFrom.Capital.GetName], [FromFrom.GetTitledFirstNameWithDynasty] получил честь выбрать Королеву Любви и Красоты. Так [FromFrom.GetSheHe] решил почтить нашу хозяйку по имени [FromFromFrom.GetTitledFirstNameNoRegnal], короновав её как Королеву турнира.;x
+EVTDESC70059F;Победитель турнира в столице [FromFromFrom.Capital.GetName], [FromFrom.GetTitledFirstNameWithDynasty] получил честь выбрать Королеву Любви и Красоты. Так [FromFrom.GetSheHe] решил почтить нашего сюзерена, известного как [FromFromFrom.GetTitledFirstNameNoRegnal], короновав его жену по имени [From.GetTitledFirstNameWithDynastyNoRegnal] как Королеву турнира.;x
+opinion_potential_tourny_rival;Потенциальный соперник на турнире;x
+EVTOPTD70000;Нет, прекратите мне напоминать турнирах!;x
+EVTOPTA70052;[FromFrom.GetSheHeCap] действительно заслуживает это!;x
+EVTDESC70061;"Во время праздника на турнире было слышно, как [From.GetTitledFirstNameWithDynasty] начал[From.GetEndA] хвастататься тем, что выиграл[From.GetEndA] в большем числе турниров, чем вы, а потом и вовсе начал[From.GetEndA] описывать ""предстоящую"" победу над вами, насмехаясь над вашим мастерством. Стоит ли осадить выскочку?";x
+EVTDESC70061B;Во время праздника на турнире было слышно, как [From.GetTitledFirstNameWithDynasty] начал[From.GetEndA] хвастается тем, что выиграл[From.GetEndA] в большем числе турниров, чем вы, а потом открыто заявил[From.GetEndA], что Дом [Root.GetOnlyDynastyName] не конкурент. Стоит ли осадить выскочку?;x
+EVTOPTA70061;[From.GetSheHeCap] просто шутит;x
+EVTOPTB70061;[From.GetHerHimCap] стоит ответить за свои слова;x
+EVTOPTC70061;Вот и все! Я вызываю тебя на поединок!;x
+EVTTOOLTIP70062;Будет вашим соперником;x
+EVTTOOLTIP70063;вызов на дуэль;x
+EVTDESC70062;Во время празднования я подшучивал[GetEndA] над своими соперниками, особенно над тем, кто побеждал очень мало, [From.GetTitledFirstNameWithDynasty] тоже попал[From.GetEndA] под раздачу. Но, кажется, [From.GetSheHeCap] услышал[From.GetEndA] меня, и очень сильно оскорби[From.GetLasLsya]...;x
+EVTDESC70062B;Во время празднования я подшучивал[GetEndA] над своими соперниками, особенно над тем, кто побеждал очень мало, Дом [From.GetOnlyDynastyName] и [From.GetTitledFirstNameNoRegnal] тоже попал[From.GetEndA] под раздачу. Но, кажется [From.GetSheHeCap] очень сильно оскорби[From.GetLasLsya], и теперь, похоже, ненавидит меня даже больше, чем любого другого из Дома [Root.GetOnlyDynastyName]...;x
+EVTOPTA70062;Я одержу победу;x
+EVTDESC70063;Во время праздника на турнире я отпускал[GetEndA] шутки о том, как я бы побеждал[GetEndA] моих соперников, в частности про человека, известного как [From.GetTitledFirstNameWithDynasty]. После этой провокации [From.GetSheHe] невозмутимо прош[From.GetLaYol] ко мне через весь зал, и бросил[From.GetEndA] свою перчатку мне в лицо, вызвав на поединок!;x
+EVTDESC70063B;Во время праздника на турнире я отпускал[GetEndA] шутки о том, как я бы побеждал[GetEndA] моих соперников, в частности про человека из Дома [From.GetOnlyDynastyName], известного как [From.GetTitledFirstNameNoRegnal]. После этой провокации [From.GetShe] невозмутимо прош[From.GetLaYol] ко мне через весь зал, и бросил[From.GetEndA] свою перчатку мне в лицо, оскорбив Дом [Root.GetOnlyDynastyName] и бросив вызов на поединок!;x
+EVTOPTA70063;Я извинюсь.;x
+EVTOPTB70063;Я принимаю вызов!;x
+EVTTOOLTIP70069;Дуэль завершилась безрезультатно;x
+EVTDESC70064;Все умолкли после того как вы бросили перчатку в лицо человеку по имени [From.GetTitledFirstNameWithDynasty]. [From.GetSheHeCap] запаниковал[From.GetEndA], отступил[From.GetEndA] и стыдливо извини[From.GetLasLsya] за бесчестные слова.;x
+EVTDESC70064B;Все умолкли после того как вы бросили перчатку в лицо человеку по имени [From.GetTitledFirstNameWithDynasty]. [From.GetSheHeCap] запаниковал[From.GetEndA], отступил[From.GetEndA] и стыдливо извини[From.GetLasLsya] за бесчестные слова. Победа Дома [Root.GetOnlyDynastyName] над Домом [From.GetOnlyDynastyName].;x
+EVTOPTA70064;Хорошо;x
+EVTDESC70065;[FromFrom.GetTitledFirstNameWithDynasty] принял[FromFrom.GetEndA] мой вызов, но я легко победил[GetEndA] [FromFrom.GetHerHis]. Теперь никто не посмеет издеваться надо мной.;x
+EVTDESC70066;[From.GetTitledFirstNameWithDynasty] принял[From.GetEndA] мой вызов, но вот победить друг друга мы не смогли. Люди никогда не забудут это.;x
+EVTDESC70067;[From.GetTitledFirstNameWithDynasty] принял[From.GetEndA] мой вызов, но вот ничего хорошего это не принесло, я проиграл[GetEndA]. Возможно мне стоило промолчать...;x
+EVTOPTA70065;Моя честь восстановлена;x
+EVTOPTA70066;До следующего раза...;x
+EVTOPTA70067;Я опозорен[GetEndA]...;x
+EVTDESC70068;[From.GetTitledFirstNameWithDynasty] победил[From.GetEndA] меня на дуэли, [From.GetSheHe] утверждает, что [From.GetHerHis] честь восстановлена, что делать?;x
+EVTOPTA70068;Смириться с моим позором.;x
+EVTDESC70069;Поединок с персонажем [FromFrom.GetTitledFirstNameWithDynasty] закончился безрезультатно, люди этого не забудут.;x
+EVTDESC70070;Поединок с персонажем [FromFrom.GetTitledFirstNameWithDynasty] завершился моей победой, и моё мастерство не подлежит сомнению. Это хорошее предзнаменование для турнира!;x
+EVTDESC70071;Зал утих после того как [From.GetTitledFirstNameWithDynasty] бросил[From.GetEndA] перчатку прямо в лицо персонажу [FromFrom.GetTitledFirstNameWithDynasty]. Люди говорят, что это произошло от того, что [FromFrom.GetFirstName] неудачно пошутил[FromFrom.GetEndA]. В результате их конфликт разрешила дуэль, в ходе которой победилFromFrom [From.GetFirstNameWithDynasty].;x
+EVTDESC70071B;Зал утих после того как [From.GetTitledFirstNameWithDynasty] бросил[From.GetEndA] перчатку прямо в лицо персонажу [FromFrom.GetTitledFirstNameWithDynasty]. Люди говорят, что это произошло из-за кровной вражды между Домами [From.GetOnlyDynastyName] и [FromFrom.GetOnlyDynastyName], В результате их конфликт разрешила дуэль, в ходе которой победил[From.GetEndA] [From.GetFirstNameWithDynasty].;x
+EVTOPTA70071;Как интересно!;x
+EVTDESC70072;Зал утих после того как [From.GetFirstNameWithDynasty] бросил[From.GetEndA] перчатку прямо в лицо персонажу [FromFrom.GetFirstNameWithDynasty]. Люди говорят, что это произошло из-за того, что [FromFrom.GetFirstName] неудачно пошутил[FromFrom.GetEndA]. В результате их конфликт не решила даже дуэль, так как бойцы продемонстрировали равные навыки фехтования.;x
+EVTDESC70072B;Зал утих после того как [From.GetFirstNameWithDynasty] бросил[From.GetEndA] перчатку прямо в лицо персонажу [FromFrom.GetFirstNameWithDynasty]. Люди говорят, что это произошло из-за кровной вражды между Домами [From.GetOnlyDynastyName] и [FromFrom.GetOnlyDynastyName]. В результате их конфликт не решила даже дуэль, так как бойцы продемонстрировали равные навыки фехтования.;x
+EVTDESC70073;Зал утих после того как [From.GetTitledFirstNameWithDynasty] бросил[From.GetEndA] перчатку прямо в лицо персонажу [FromFrom.GetTitledFirstNameWithDynasty]. Люди говорят, что это произошло из-за того, что [FromFrom.GetFirstName] неудачно пошутил[FromFrom.GetEndA], В результате их конфликт разрешила дуэль, в ходе которой [FromFrom.GetFirstNameWithDynasty] победил[FromFrom.GetEndA].;x
+EVTDESC70073B;Зал утих после того как [From.GetTitledFirstNameWithDynasty] бросил[From.GetEndA] перчатку прямо в лицо персонажу [FromFrom.GetTitledFirstNameWithDynasty]. Люди говорят, что это произошло из-за кровной вражды между Домами [From.GetOnlyDynastyName] и [FromFrom.GetOnlyDynastyName]. В результате их конфликт разрешила дуэль, в ходе которой [FromFrom.GetFirstNameWithDynasty] победил[FromFrom.GetEndA].;x
+EVTDESC70074;Во время торжества на турнире я поймал взгляд Королевы любви и красоты, интересно, что же она хочет?;x
+EVTOPTA70074;Я буду ухаживать за ней;x
+EVTTOOLTIP70075;ответит на мой флирт;x
+EVTOPTB70074;Она не для меня;x
+EVTDESC70075;[From.GetTitledFirstNameWithDynasty], победитель турнира и мой чемпион, сделавший меня королевой любви и красоты всю ночь пытался соблазнить меня. Стоит ли ответить ему взаимностью?;x
+EVTOPTA70075;Объятья страсти;x
+EVTTOOLTIP70076;будет в восторге;x
+EVTOPTB70075;Нет, спасибо.;x
+EVTTOOLTIP70077;Огорчится;x
+EVTDESC70076;После небольшого флирта [From.GetFirstNameWithDynasty], моя Королева любви и красоты, соблазнена. Мой турнир закончился успешно!;x
+EVTOPTA70076;Великолепно!;x
+EVTDESC70077;Несмотря на все ухаживания, [From.GetFirstNameWithDynasty], моя Королева любви и красоты отвергла моё общество..;x
+EVTOPTA70077;Найду другую.;x
+show_me_the_medal_winners;Покажите победителей турниров;x
+show_me_the_medal_winners_desc;Покажите мне всех победителей турниров.;x
+EVTDESC70078;Милорд, а победителей каких турниров Вы бы хотели увидеть?;x
+EVTOPTA70078;Великих;x
+EVTOPTB70078;Больших;x
+EVTOPTC70078;Малых;x
+EVTDESC70079;Здесь перечислены все победители Великого турнира Вестероса.;x
+EVTOPTA70079;Только победители;x
+EVTOPTB70079;Меня интересуют вторые места;x
+EVTOPTC70079;Покажи мне занявших третье место;x
+EVTDESC70080;Здесь перечислены все победившие в большом турнире.;x
+EVTDESC70081;Здесь перечислены все победившие в малом турнире.;x
+EVTOPTE70000;Не говорите мне больше о мелких турнирах!;x
+EVTOPTF70000;не говорите мне больше об этих турнирах!;x
+EVTDESC70082;Во время подготовки к турниру вы чуточку переборщили с выпивкой [FromFrom.GetAlcoholicDrink], и сейчас, протрезвев после неудачной попытки взобраться на лошадь, вы понимаете, что забыли надеть свой доспех.;x
+EVTOPTA70082;О боги, надо меньше пить...;x
+EVTDESC70083;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] выступает следующ[From.GetEyIm], но зрители несколько шокированы - хоть и запоздало, [From.GetSheHe] появляется на поле, пьяно шатаясь. К удовольствию толпы, [From.GetSheHe] наверну[From.GetLasLsya] с лошади и только сейчас осознал[From.GetEndA], что забыл[From.GetEndA] надеть броню.;x
+EVTOPTA70083;Хе, [From.GetManWoman]а знает толк в отдыхе!;x
+EVTOPTB70083;[From.GetSheHeCap] опозорен[From.GetEndA], удалить [From.GetHerHis] из участников;x
+EVTOPTC70083;Это возмутительно! Задержать [From.GetHerHis]!;x
+EVTDESC70084;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] разозли[From.GetLasLsya] на ваше неуважение и требует, чтобы вы покинули турнир!;x
+EVTOPTA70084;Я не получу свою долю славы в этом году.;x
+EVTDESC70085;К счастью, [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] посчитал[From.GetEndA] вашу выходку скорее смешной, чем обидной. Тем не менее, вам пришлось покинуть турнир, хоть [From.GetHerHis] суждение немного смягчило позор.;x
+EVTOPTA70085;Я не получу свою долю славы в этом году.;x
+EVTDESCtourney.786;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] был[From.GetEndA] в ярости из-за вашего неуважения, приказав немедленно арестовать вас и заточить в темницу!;x
+EVTOPTAtourney.786;Но...почему?;x
+EVTDESCtourney.787A;[FromFrom.GetTitledNoRegnal] сражается следующ[FromFrom.GetEyIm], но зрители растерянно переглядываются - [FromFrom.GetSheHe], шатаясь, появи[FromFrom.GetLasLsya] на турнирном поле, явно пьян[FromFrom.GetAyaYy] и без брони. [FromFrom.GetSheHeCap] пытается оседлать свою лошадь, но смешно падает на землю, неспособн[FromFrom.GetAyaYy] даже сидеть верхом. Многие осмеяли [FromFrom.GetHerHis], и [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], казалось, тоже наш[From.GetLaYol] это вес`лым.;x
+EVTDESCtourney.787B;[FromFrom.GetTitledNoRegnal] сражается следующ[FromFrom.GetEyIm], но зрители растерянно переглядываются - [FromFrom.GetSheHe], шатаясь, появи[FromFrom.GetLasLsya] на турнирном поле, явно пьян[FromFrom.GetAyaYy] и без брони. [FromFrom.GetSheHeCap] пытается оседлать свою лошадь , но смешно падает на землю, неспособн[FromFrom.GetAyaYy] даже сидеть верхом. [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] был[From.GetEndA] крайне недовол[From.GetSoftNaEn], публично осудив и отстранив [FromFrom.GetHerHis] от турнира.;x
+EVTDESCtourney.787C;[FromFrom.GetTitledNoRegnal] сражается следующ[FromFrom.GetEyIm], но зрители растерянно переглядываются - [FromFrom.GetSheHe], шатаясь, появи[FromFrom.GetLasLsya] на турнирном поле, явно пьян[FromFrom.GetAyaYy] и без брони. [FromFrom.GetSheHeCap] пытается оседлать свою лошадь, но смешно падает на землю, неспособн[FromFrom.GetAyaYy] даже сидеть верхом. [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] был[From.GetEndA] возмущен[From.GetEndA] этим неуважением, приказав арестовать [FromFrom.GetHerHis].;x
+EVTOPTAtourney.787;Как неловко;x
+drunken_tournament;Наглая пьянь;x
+drunken_tournament_desc;Однажды вы пришли на турнир в пьяном состоянии и так опозорились, что люди будут помнить это всю вашу жизнь.;x
+opinion_spectating_tournament;Зритель на турнире;x
+EVTDESC70086A;[Root.GetTitledFirstNameWithDynasty], я приглашаю вас принять участие на турнире в столице [From.Capital.GetName], где рыцари земли [From.Capital.GetName] будут испытывать свою храбрость.\n\nС уважением,\n[From.GetFirstNameWithDynasty], [From.GetTitle] земли [From.PrimaryTitle.GetName];x
+EVTDESC70086B;[Root.GetTitledFirstNameWithDynasty], я приглашаю вас принять участие на турнире в столице [From.Capital.GetName], где рыцари и лорды земли [tourney_kingdom.GetName] будут испытывать свою храбрость.\n\nС уважением,\n[From.GetFirstNameWithDynasty], [From.GetTitle] земли [From.PrimaryTitle.GetName];x
+EVTDESC70086C;[Root.GetTitledFirstNameWithDynasty], я приглашаю вас принять участие на Великом турнире в столице [From.Capital.GetName], где лучшие рыцари и лорды всего королевства будут выяснять, кто же из них самый доблестный и умелый рыцарь в стране.\n\nС уважением,\n[From.GetFirstNameWithDynasty], [From.GetTitle] земли [From.PrimaryTitle.GetName];x
+EVTOPTA70086;Я буду присутствовать, это наверняка интересно!;x
+EVTOPTB70086;У меня есть дела поважнее, чем рыцарские забавы.;x
+EVTDESC70087;[FromFrom.GetTitledFirstNameWithDynasty] занял[FromFrom.GetEndA] второе место на турнире, который устроил[From.GetEndA] [From.GetTitle] [From.GetFirstNameWithDynasty].;x
+EVTOPTA70087;Достойное второе место;x
+EVTOPTBtourney.35;Почетное третье место для Дома [Root.GetOnlyDynastyName];x
+EVTOPTB70087;М[FromFrom.GetOyaOy] [FromFrom.GetRootRelation] занимает второе место, [FromFrom.GetSheHe] добивается того, что Дом [Root.GetOnlyDynastyName] гордится;x
+EVTOPTC70087;М[From.GetOyaOy] [From.GetRootRelation] - победитель[From.GetEndNitsa], слава Дому [Root.GetOnlyDynastyName]!;x
+EVTDESC70088;[FromFrom.GetTitledFirstNameWithDynasty] занял[FromFrom.GetEndA] третье место на турнире, который устроил[From.GetEndA] [From.GetTitle] [From.GetFirstNameWithDynasty].;x
+EVTOPTA70088;[FromFrom.GetSheHeCap] хорошо сража[FromFrom.GetLasLsya].;x
+EVTDESC70089;[FromFrom.GetTitledFirstNameWithDynasty] трагически погиб[FromFrom.GetNoneE] на турнире, который устроил[From.GetEndA] [From.GetTitle] [From.GetFirstNameWithDynasty].;x
+EVTOPTA70089;Как жаль.;x
+EVTDESC70090;[FromFrom.GetTitledFirstNameWithDynasty] был[FromFrom.GetEndA] ужасно искалечен[FromFrom.GetEndA] на турнире, который устроил[From.GetEndA] [From.GetTitle] [From.GetFirstNameWithDynasty].;x
+EVTDESC70091;[FromFrom.GetTitledFirstNameWithDynasty] был[FromFrom.GetEndA] тяжело ранен[FromFrom.GetEndA] на турнире, который устроил[From.GetEndA] [From.GetTitle] [From.GetFirstNameWithDynasty].;x
+opinion_tournament_spectator;Присутствие на турнире.;x
+EVTDESC70092;После многих часов гулянки, пьянки и веселья, турнир, который проводил[From.GetEndA] [From.GetTitle] [From.GetFirstNameWithDynasty], наконец, закончился.;x
+EVTOPTB70003;Мой оруженосец заслуживает награду;x
+EVTOPTB70005;Я обвиняю своего оруженосца;x
+opinion_squire_honoured;Награждённый оруженосец;x
+opinion_squire_humiliated;Униженный оруженосец;x
+TOURNAMENTTITLE4;Турнир в городе [FromFrom.Capital.GetName];x
+EVTOPTA70092;Это был прекрасный спектакль!;x
+EVTDESC70095;М[From.GetOyaOy] [From.GetRootRelation] [From.GetTitledFirstName] показал[From.GetEndA] мастерское владение оружием. И несмотря на поражение, [From.GetSheHe] одолел[From.GetEndA] многих рыцарей, покрыв себя славой.;x
+EVTOPTC70095;Это наилучшим образом говорит обо мне и Доме [Root.GetOnlyDynastyName];x
+EVTDESC70096;М[From.GetOyaOy] [From.GetRootRelation] [From.GetTitledFirstName] пош[From.GetLaYol] вместе с человеком по имени [FromFrom.GetTitledFirstNameWithDynasty] на следующий поединок. После множества сломанных копий, [FromFrom.GetTitledFirstName] был[FromFrom.GetEndA] сбит[FromFrom.GetEndA] с лошади. [From.GetTitledFirstName] празднует победу.;x
+EVTOPTC70096;Дом [Root.GetOnlyDynastyName] празднует;x
+EVTDESC70097;М[FromFrom.GetOyaOy] [FromFrom.GetRootRelation] [FromFrom.GetTitledFirstName] не сумел[FromFrom.GetEndA] показать свою доблесть на турнире. [FromFrom.GetSheHeCap] одержал[FromFrom.GetEndA] несколько незначительных побед, но позже был[FromFrom.GetEndA] выбит[FromFrom.GetEndA] из седла малоизвестным рыцарем в одном из первых раундов.;x
+EVTOPTC70097;Небольшая находка для Дома [Root.GetOnlyDynastyName];x
+EVTDESC70098;М[FromFrom.GetOyaOy] [FromFrom.GetRootRelation] [FromFrom.GetTitledFirstName] пош[FromFrom.GetLaYol] вместе с человеком по имени [From.GetTitledFirstNameWithDynasty] на следующий поединок. После множества сломанных копий, [FromFrom.GetTitledFirstName] был[FromFrom.GetEndA] сбит[FromFrom.GetEndA] с лошади. [From.GetTitledFirstName] празднует победу. Ваш[FromFrom.GetEndA] [GetFromFromRelation] был[FromFrom.GetEndA] исключен[FromFrom.GetEndA] из турнира по результатам боев.;x
+EVTOPTC70098;М[FromFrom.GetOyaOy] непутёв[FromFrom.GetAyaYy] [FromFrom.GetRootRelation];x
+EVTOPTB70059;Это великая честь для нашего Дома;x
+EVTOPTC70059;Это большой позор нашего рода!;x
+EVTDESCtourney.8;Первый день турнира начался всерьез. Тем не менее, вы не смогли пройти его непобежденным и [From.GetTitledFirstNameWithDynasty] сбросил[From.GetEndA] вас с лошади, чья доблесть явно была больше. Вы были исключены из турнира.;x
+EVTTOOLTIPtourney.8;Вас победил [This.GetTitledFirstNameWithDynasty]\n;x
+EVTOPTAtourney.8;В следующий раз я одержу победу;x
+EVTDESCtourney.9;Первые дни рыцарских поединков закончились, и многие уже были исключены из соревнований. Теперь в ближайшие дни оставшиеся воины будут соревноваться по финальным спискам участников, пока не останется только один чемпион.;x
+EVTOPTAtourney.9;Все они славные рыцари;x
+TOOLTIPtourney.9;Следующие участники прошли в финальные списки:\n;x
+TOOLTIPtourney.10;[This.GetTitledFirstNameWithDynasty];x
+EVTDESCtourney.10;После прибытия в город [From.Capital.GetName], первый день турнира начался серьезно. На протяжении дня вы сразились со многими мелкими рыцарями, большинство из которых вы с легкостью смогли выбить из седла. В ближайшие дни начнется финал турнира, и противостояние, несомненно, будет более жестоким.;x
+EVTOPTAtourney.10;Я буду готовить своего коня;x
+EVTDESCtourney.13;Глашатай турнира объявляет участников следующего поединка, ваш противник - [From.GetTitledFirstNameWithDynasty]. Вы седлаете коня, берёте копьё у вашего оруженосца и едете в конец ристалища. [From.GetTitledFirstName] поступает точно также. Затем, поочерёдно, лошади переходят на галоп...;x
+EVTOPTAtourney.13;Спокойно...;x
+TOOLTIPtourney.14;Начинается первая схватка...;x
+EVTDESCtourney.16;Приближаясь к противнику вам выдается удобный случай для нанесения удара. Вы начинаете атаку своим копьём, при этом стараясь уклониться от атаки противника...;x
+EVTOPTAtourney.16;Удар!;x
+EVTDESCtourney.17;Ваш оппонент одолел вас, когда вы встретились сним в центре поля. Ваше копьё лишь скользнуло по его броне, в то время как его достигло своей цели...;x
+EVTOPTAtourney.17;О, Боги;x
+EVTDESCtourney.18;К сожалению, ваш противник больше не может учавствовать в соревновании.;x
+EVTOPTAtourney.18;Хорошо, тогда другой!;x
+EVTDESCtourney.20;[From.GetTitledFirstNameWithDynasty] попадает по вас копьём и вы едва не падаете со своего коня. Толпа охнула, ожидая вашего падения. Однако вы остаётесь в седле, благополучно прибыв на противоположную сторону поля, готовые к следующей атаке.;x
+EVTOPTAtourney.20;На этот раз я ударю первым[GetOyYm];x
+TOOLTIPtourney.21;Начинается новая схватка...;x
+EVTDESCtourney.21;[From.GetTitledFirstNameWithDynasty] получил[From.GetEndA] удар вашим копьём, таким образом потеряв равновесие. [From.GetSheHeCap] почти упал[From.GetEndA], но сумел[From.GetEndA] восстановить свое равновесие и прибыть на противоположную сторону поля для начала следующей атаки.;x
+EVTOPTAtourney.21;В этот раз я собью [From.GetHerHis].;x
+EVTDESCtourney.22;[From.GetTitledFirstNameWithDynasty] попадает копьём в середину вашего нагрудника, расколовшись на части во время удара. Сила удара сбивает вас с лошади, и вы падаете оземь. Вы остаетесь лежащим в грязи, когда толпа радостно апплодирует противнику.;x
+EVTOPTAtourney.22;Ай;x
+EVTDESCtourney.23;[From.GetTitledFirstName] получает удар копьём в центр своего нагрудника, но ваше копье при этом разбивается на части, в то время как [From.GetSheHe] вылетает из седла. Толпа ликует от вашей победы и с облегчением видит то, что [From.GetTitledFirstName] невредим[From.GetEndA].;x
+EVTOPTAtourney.23;Однако, хороший удар;x
+EVTDESCtourney.25;Вы и [From.GetTitledFirstNameWithDynasty] с яростью сталкиваетесь друг с другом, оба копья разбиваются на осколки. Вы, оба все еще в седле, отправляетесь на противоположные стороны турнирного поля, чтобы взять новые копья у оруженосцев. Вы замечаете, что [From.GetTitledFirstName] получает рану, но [From.GetSheHe] направляет свою лошадь несмотря ни на что и готовится к следующей схватке.;x
+EVTOPTAtourney.25;Это даст мне преимущество;x
+EVTDESCtourney.24;Вы и [From.GetTitledFirstName] сталкиваетесь в поединке, оба наносите неплохие удары друг другу, оба копья рассыпаются от удара, и вс так же оба остаётесь в седле. Вас охватывает приступ боли, и вы обнаруживаете, что у вас обильное кровотечение. Так или иначе, вы берёте новое копьё у оруженосца и готовитесь к следующей схватке.;x
+EVTOPTAtourney.24;Это меня не остановит;x
+EVTDESCtourney.26;Вы беспомощны, так как [From.GetTitledFirstNameWithDynasty] выбивает вас из седла и отправляет вас в полет. Вы приземляетесь с болезненным хрустом в грязь, боль невыносима, вы уверены, что что-то сломали…;x
+EVTOPTAtourney.26;Аррргггххх!!!;x
+EVTDESCtourney.27;Несчастн[From.GetAyaYy] [From.GetTitledFirstNameWithDynasty] не имел[From.GetEndA] никаких шансов против вашего копья. [From.GetSheHeCap] падает в грязь с тошнотворным хрустом под неудобным углом, и, когда оруженосец подбегает к н[From.GetHerHim] толпа затихает, осознавая серьезность [From.GetHerHis] травм.;x
+EVTOPTAtourney.27;Значит, я победил[GetEndA]?;x
+EVTDESCtourney.28;Вы знаете, что это неправильно, [From.GetTitledFirstNameWithDynasty] вне досягаемости вашего копья, в то время как наконечник [From.GetHerHis] копья направлен на вас. Во время удара, последнее, что вы чувствуете - это копье проскальзывающее через прореху в ваших доспехах...;x
+EVTOPTAtourney.28;Аррргггххх!!!;x
+EVTDESCtourney.29;Сначала вам было приятно нанести удар, однако [From.GetTitledFirstNameWithDynasty] получил[From.GetEndA] удар вашим копьём в зазор брони, ужасно пронзив [From.GetHerHis]. Когда люди спешат на помощь к н[From.GetHerHim], становится очевидным, что уже ничего нельзя сделать для н[From.GetHerHis], поскольку [From.GetHerHis] бездыханное тело упало оземь.;x
+EVTOPTAtourney.29;Как жаль.;x
+EVTDESCtourney.31;Вы были объявлены победителем, [From.GetTitledFirstNameWithDynasty] проиграл[From.GetEndA] в славном поединке.;x
+EVTOPTAtourney.31;Никто не может победить меня;x
+EVTDESCtourney.32;[From.GetTitledFirstNameWithDynasty] был[From.GetEndA] объявлен[From.GetEndA] победителем, одержав над вами победу и исключив вас из турнира.;x
+EVTOPTAtourney.32;Всегда есть следующий раз;x
+EVTDESCtourney.33;[From.GetTitledFirstNameWithDynasty] и [FromFromFrom.GetTitledFirstNameWithDynasty] шли следующие по списку турнира. После большого количества схваток и сломанных копий, [FromFromFrom.GetTitledFirstName] в итоге был[FromFromFrom.GetEndA] выбит[FromFromFrom.GetEndA]из седла, [From.GetTitledFirstName] - победитель.;x
+EVTOPTAtourney.33;Молодец, прекрасный бой!;x
+EVTDESCtourney.34;После многих схваток в течение нескольких дней, только двое рыцарей остались непобежденными. [From.GetTitledFirstNameWithDynasty] и [FromFromFrom.GetTitledFirstNameWithDynasty] встретились друг с другом в последнем поединке, и после многих схваток, [FromFromFrom.GetTitledFirstName] был[FromFromFrom.GetEndA] выбит[FromFromFrom.GetEndA] из седла, [From.GetTitledFirstNameWithDynasty] - победитель турнира.;x
+EVTOPTAtourney.34;Достойный чемпион;x
+TOOLTIPtourney.29;Турнир подходит к концу.;x
+EVTOPTBtourney.9;Я буду следить за каждой схваткой!;x
+EVTOPTBtourney.13;Может быть, немного золота убедит [From.GetHerHis] упасть?;x
+TOOLTIPtourney.40;[From.GetTitledFirstName] - будет предложена взятка, чтобы проиграть в турнире;x
+EVTDESCtourney.40;[From.GetTitledFirstNameWithDynasty] - ваш следующий противник, и, кажется, [From.GetSheHe] отчаянно настроен[From.GetEndA] на победу. [From.GetSheHeCap] предложил[From.GetEndA] вам хорошую сумму, чтобы уступить в этой схватке и дать [From.GetHerHim] победить.;x
+EVTOPTAtourney.40;Справедливая сделка, я упаду при первой же схватке;x
+EVTOPTBtourney.40;Это бесчестный подкуп!;x
+TOOLTIPtourney.41;[From.GetTitledFirstName] побеждает, поскольку Вы намеренно проигрываете схватку.;x
+TOOLTIPtourney.42;Схватка проходит справедливо;x
+EVTDESCtourney.41;Когда [From.GetSheHe] узнаёт о вашей взятке, [From.GetTitledFirstName] притворяется, испытав отвращение и неприятие, но это явно был акт сохранения своей чести. [From.GetSheHeCap] в итоге принял[From.GetEndA] ваши деньги, и теперь намеренно уступит в первой же схватке.;x
+EVTOPTAtourney.41;Все в выигрыше;x
+EVTDESCtourney.42;[From.GetTitledFirstName] был[From.GetEndA] возмущен[From.GetEndA] попыткой вашей взятки, [From.GetSheHe] назвал[From.GetEndA] это оскорблением чести и сразу же отказавается. [From.GetSheHeCap] клянется побить вас в честном турнирном поединке.;x
+EVTOPTAtourney.42;[From.GetSheHeCap] слишком высоко ценит честь;x
+EVTDESCtourney.43;[From.GetTitledFirstNameWithDynasty] недостаточно точнопопадает копьём, но вы намерено поворачиваете свое тело так, чтобы его оружие слегка задело вас. Вы падаете с лошади, добавляя некоторой театральности, чтобы это выглядело убедительно, и тем самым проигрываете в схватке.;x
+EVTOPTAtourney.43;Заслуженно заработанные деньги;x
+EVTDESCtourney.44;Вы намеренно направляете копье в сторону чвоего противника поп имени [From.GetTitledFirstNameWithDynasty], уверенные в ударе при любом раскладе. [From.GetTitledFirstName] должным образом поворачивается и принимает мягкий удар, театрально упав со своей лошади  чтобы создать убедительное впечатление.;x
+EVTOPTAtourney.44;Победа есть победа;x
+EVTDESCtourney.45;Во время подготовки к турниру, молодой крестьянский мальчик решил помочь вам в подготовке вашей лошади и брони. Вы не совсем уверены, откуда и как он пришел, чтобы помочь вам, но он, кажется, славный малый и очень хочет помочь. Может быть, из него выйдет хороший оруженосец?;x
+EVTOPTAtourney.45;Да, я возьму его;x
+EVTOPTBtourney.45;Я не позволю помогать мне какому-то обычному мальчишке, проваливай!;x
+EVTDESCtourney.46;Я помогал[GetEndA] человеку по имени [Root.Guardian.GetTitledFirstName] на турнире в качестве [Root.Guardian.GetHerHis] оруженосца, и после окончания турнирного дня я и несколько других оруженосцев нашли много вина! Мы поделились им с несколькими служанками и отлично провели время, но наступило следующее утро, и теперь я чувствую себя ужасно.;x
+EVTOPTAtourney.46;Я надеюсь, [Root.Guardian.GetTitledFirstName] не сильно рассердится;x
+TOOLTIPtourney.47;[Root.Guardian.GetTitledFirstName] реагирует на ваше похмельное состояние;x
+EVTDESCtourney.47;Турнирные дни вот-вот начнутся, и вы обнаруживаете, что ваш оруженосец [From.GetTitledFirstName] в ужасном похмелье. Вы узнали, что [From.GetSheHe] и некоторые другие оруженосцы нашли вино и поделились им со служанками и сильно напились. Оруженосец, несомненно, не сможет оказать нужную поддержку.;x
+EVTOPTAtourney.47;Ха! Малой-то растет!;x
+EVTOPTBtourney.47;Я расскажу ему о его обязанностях в качестве оруженосца;x
+EVTOPTCtourney.47;Хорошо, он заслужил хорошую взбучку!;x
+EVTDESCtourney.48;Готовясь к турниру, вы и ваш оруженосец усердно тренировались. Вы обучали его искусству владения копьем и верховой езды. Также были интенсивные тренировочные бои, и он был осведомлен о своих обязанностях во время турнира.;x
+EVTOPTAtourney.48;Кажется, он готов помогать мне;x
+EVTDESCtourney.49;Готовясь к турниру, [From.GetTitledFirstName] наш[From.GetLaYol] время, чтобы потренировать вас. [From.GetSheHeCap] обучал[From.GetEndA] вас искусству владения копьем и верховой езды, а также провел[From.GetEndA] вам интенсивные тренировочные бои. Также вы узнали о своих обязанностях во время проведения турнира.;x
+EVTOPTAtourney.49;Я - хороший оруженосец!;x
+hold_a_northern_melee;Провести Схватку;x
+hold_a_northern_melee_desc;Поскольку рыцарство на Севере - явление довольно нечастое, рыцарские турниры, их зрелищность и рыцарство редки. Северяне сражаются верхом с боевыми копьями, но редко склонны к турнирным боям, предпочитая пешие схватки.;x
+MELEETITLE;Схватка [GetYear];x
+MELEETITLE4;Схватка [GetYear];x
+MELEETITLE3;Схватка в столице [Root.Capital.GetName] [GetYear];x
+EVTDESCnorthern_melee.1;Вы решили провести схватку по северной традиции, с участием воинов со всей округи [Root.PrimaryTitle.GetName]. Несомненно, многие из них будут сильно искалечены до окончания дня.;x
+EVTOPTAnorthern_melee.1;Это буде та еще битва!;x
+MELEETITLE2;Схватка в столице [From.Capital.GetName] [GetYear];x
+EVTDESCnorthern_melee.2;[Root.GetTitledFirstNameNoRegnal], великая схватка по северной традиции должна состояться в столице [From.Capital.GetName]. Я призываю вас приехать и принять участие, чтобы проявить свою доблесть в битве.\n\nВаш[From.GetEndA],\n[From.GetTitledFirstNameWithDynastyNoRegnal];x
+EVTOPTAnorthern_melee.2;Я отправлюсь и покажу свою силу!;x
+EVTOPTBnorthern_melee.2;Нет, это опасно для жизни;x
+EVTOPTCnorthern_melee.2;Это ниже меня;x
+EVTOPTEnorthern_melee.2;Не сообщайте мне о малых схватках;x
+EVTOPTFnorthern_melee.2;Не сообщайте мне о схватках;x
+EVTOPTDnorthern_melee.2;Я никогда не буду биться в схватке;x
+EVTDESCnorthern_melee.3;Воины земли [Root.PrimaryTitle.GetName], которые согласились принять участие в схватке, прибыли в столицу [Root.Capital.GetName]. Сначала будет проведен большой пир, а затем все войдут в поля для боев, чтобы начать сечу.;x
+EVTOPTAnorthern_melee.3;Да начнется битва!;x
+EVTOPTBnorthern_melee.3;Война должна остановить эту потешную битву;x
+EVTDESCnorthern_melee.4;Схватка, к сожалению, была отменена;x
+EVTOPTAnorthern_melee.4;Я бы победил[GetEndA], я уверен[GetEndA];x
+EVTDESCnorthern_melee.10;Схватка наконец началась, и все все воины собрались на полях для боев, чтобы начать битву. Сначала вы прекрасно справляетесь, но в конечно итоге вынуждены уступить одному из соперников. Вы исключены из схватки, покидая битву в ушибах и побежденным.;x
+EVTOPTAnorthern_melee.10;Я прославлюсь в следующий раз;x
+EVTDESCnorthern_melee.11;На раннем этапе схватка началась яростно и хаотично, оставив растоптанные поля и полуразрушенные деревни. Многие воины были вынуждены покинуть поле битвы из-за травмы или поражения, оставив последних воинов сражаться за титул чемпиона.;x
+TOOLTIPnorthern_melee.12;[This.GetTitledFirstNameWithDynastyNoRegnal] соревнуется;x
+EVTOPTAnorthern_melee.11;Это очень интересно!;x
+EVTOPTBnorthern_melee.11;Я буду следить за каждой схваткой!;x
+TOOLTIPEVTOPTBmelee.2;Вам будут сообщать о всех схватках.;x
+EVTDESCnorthern_melee.12;На раннем этапе схватка началась яростно и хаотично, оставив растоптанные поля и полуразрушенные деревни. Многие воины были вынуждены покинуть поле битвы из-за травмы или поражения, многие от вашей руки. Теперь вы стоите среди оставшихся воинов, чтобы начать последнюю схватку.;x
+EVTOPTAnorthern_melee.12;В атаку!;x
+EVTDESCnorthern_melee.14;Вы и [From.GetTitledFirstNameWithDynastyNoRegnal] замечаете друг друга посреди битвы, и готовитесь к бою…;x
+EVTOPTAnorthern_melee.14;Я одержу победу!;x
+TOOLTIPnorthern_melee.15;Вы и [From.GetTitledFirstNameWithDynastyNoRegnal] начинаете поединок...\n;x
+EVTDESCnorthern_melee.16;После жестокого поединка [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] вынужден[FromFrom.GetEndA] признать поражение. [FromFrom.GetSheHeCap] уходит с поля залечивать свои раны, а вы ищете нового противника.;x
+EVTDESCnorthern_melee.16B;Поединок с персонажем по имени [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] был жестоким, возможно слишком жестоким, так как [FromFrom.GetSheHe] случайно был[FromFrom.GetEndA] убит[FromFrom.GetEndA] от вашей руки. [FromFrom.GetHerHis] безжизненное тело убирают с поля, а вы ищете нового противника.;x
+EVTDESCnorthern_melee.16C;После жестокого поединка [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] вынужден[FromFrom.GetEndA] признать поражение. Зрители шокированы, когда вы отвергаете это желание сдаться и убиваете [FromFrom.GetHerHis], что, конечно же, считается бесчестным поступком.;x
+EVTOPTAnorthern_melee.16;[FromFrom.GetSheHeCap] знал[FromFrom.GetEndA] на что идёт;x
+EVTDESCnorthern_melee.17;[From.GetTitledFirstNameWithDynastyNoRegnal] атакует вас в яростном поединке, но вы в конечном итоге вынуждены сдаться. Вы уходите с поля битвы, залечивая свои раны и исключаетесь из турнира.;x
+EVTOPTAnorthern_melee.17;Поражение болезненно;x
+EVTDESCnorthern_melee.18;[From.GetTitledFirstNameWithDynastyNoRegnal] и [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] встретились друг с другом в поединке. После жестокого поединка, [From.GetTitledFirstNameNoRegnal] одержал[From.GetEndA] верх, а [FromFromFrom.GetTitledFirstNameNoRegnal] сдаётся.;x
+EVTDESCnorthern_melee.18B;[From.GetTitledFirstNameWithDynastyNoRegnal] и [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] встретились друг с другом в поединке. Поединок был жестоким, возможно слишком жестоким, так как [FromFromFrom.GetTitledFirstNameNoRegnal] случайно был[FromFromFrom.GetEndA] убит[FromFromFrom.GetEndA] от руки противника. [FromFromFrom.GetHerHis] безжизненное тело убирают с поля, а [From.GetTitledFirstNameNoRegnal] ищет нового противника.;x
+EVTDESCnorthern_melee.18C;[From.GetTitledFirstNameWithDynastyNoRegnal] и [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] встретились друг с другом в поединке. После жестокого поединка [From.GetTitledFirstNameNoRegnal] одержал[From.GetEndA] верх, а [FromFromFrom.GetTitledFirstNameNoRegnal] сдаётся. Однако все остаются в шоке, когда [From.GetTitledFirstNameNoRegnal] отвергает желание противника сдаться и убивает [FromFrom.GetHerHis], что, конечно же, считается бесчестным поступком.;x
+EVTOPTAnorthern_melee.18;Славное сражение;x
+EVTDESCnorthern_melee.19;После множества часов битвы, на поле остались только [From.GetTitledFirstNameWithDynastyNoRegnal] и [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal]. Они сразились в последнем поединке, в котором [From.GetTitledFirstNameNoRegnal] победил[From.GetEndA], а [FromFromFrom.GetTitledFirstNameNoRegnal] сдаётся. Таким образом, [From.GetTitledFirstNameNoRegnal] объявляется победителем Схватки!;x
+EVTDESCnorthern_melee.19B;После множества часов битвы, на поле остались только [From.GetTitledFirstNameWithDynastyNoRegnal] и [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal]. Они сразились в последнем поединке, в котором [From.GetTitledFirstNameNoRegnal] победил[From.GetEndA], так как [FromFromFrom.GetTitledFirstNameNoRegnal] случайно погиб от [From.GetHerHis] руки. Таким образом, [From.GetTitledFirstNameNoRegnal] объявляется победителем схватки!;x
+EVTDESCnorthern_melee.19C;После множества часов битвы, на поле остались только [From.GetTitledFirstNameWithDynastyNoRegnal] и [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal]. Они сразились в последнем поединке, в котором [From.GetTitledFirstNameNoRegnal] одержал[From.GetEndA] победу, а [FromFromFrom.GetTitledFirstNameNoRegnal] сдаётся. Однако все были шокированы, когда желание сдаться было отклонено и [From.GetTitledFirstNameNoRegnal] зарубил[From.GetEndA] противника, бесчестно добившись победы.;x
+EVTOPTAnorthern_melee.19;Достойный победитель;x
+TOOLTIPnorthern_melee.25;Схватка завершилась;x
+EVTOPTAnorthern_melee.20;[From.GetSheHeCap] сража[From.GetLasLsya] храбро;x
+EVTOPTBnorthern_melee.20;[FromFromFrom.GetOnlyDynastyName] доблестно проявил[FromFromFrom.GetEndA] себя;x
+EVTOPTAnorthern_melee.21;[From.GetSheHeCap] - настоящий воин;x
+EVTOPTCnorthern_melee.21;Победа и слава Дома [From.GetOnlyDynastyName]!;x
+EVTOPTBnorthern_melee.21;[FromFromFrom.GetOnlyDynastyName] достоин второго места;x
+EVTDESCnorthern_melee.22;После множества часов напряженного боя вы остались одни. Вы победили всех, кто стоял перед вами, и были объявлены победителями схватки!;x
+EVTOPTAnorthern_melee.22;Слава мне!;x
+EVTDESCnorthern_melee.23;Схватка длилась много часов, десятки бойцов были ранены или побеждены, прежде чем вы пали в финальной битве. Вы заслужили большое уважение и честь за то, что сумели дойти до финального поединка.;x
+EVTOPTAnorthern_melee.23;Я одержу победу в следующий раз;x
+EVTDESCnorthern_melee.24;Последняя группа бойцов сражалась яростно, многие из них были повержены вами. Вы дошли до финальных четырех бойцов, но в конечном итоге проиграли другому воину.;x
+EVTOPTAnorthern_melee.24;Победа была так близка;x
+EVTDESCnorthern_melee.25;После множества часов напряженного боя, схватка наконец завершилась. Последняя группа бойцов обеспечила прекрасное зрелище для всех присутствующих. Славные песни будут петься о Великой Схватке в столице [Root.Capital.GetName] [GetYear]!;x
+EVTOPTAnorthern_melee.25;Спасибо всем, что прибыли!;x
+opinion_melee_spectator;Наблюдение за Схваткой;x
+EVTDESCnorthern_melee.26;После множества часов напряженного боя, схватка, которую объявил[From.GetEndA] [From.GetTitledFirstNameNoRegnal] наконец завершилась. Последняя группа бойцов обеспечила прекрасное зрелище для всех присутствующих, и многие одобрили проведенную вами схватку.;x
+EVTOPTAnorthern_melee.26;Какая славная битва!;x
+EVTDESCnorthern_melee.27;[Root.GetTitledFirstNameNoRegnal], великая рукопашная схватка в Северной традиции должна состояться в столице [From.Capital.GetName]. Я приглашаю вас на нее, чтобы вы смогли узреть боевое мастерство из первых рук.\n\nВаш[From.GetEndA],\n[From.GetTitledFirstNameWithDynastyNoRegnal];x
+EVTOPTAnorthern_melee.27;Я отправлюсь в столицу [From.Capital.GetName]!;x
+EVTOPTBnorthern_melee.27;У меня нет времени смотреть на эти бессмысленные бои;x
+EVTDESCnorthern_melee.28;После множества часов напряженного боя, схватка, котоую провидил[From.GetEndA] [From.GetTitledFirstNameNoRegnal], наконец, завершилась. Последняя группа бойцов обеспечила прекрасное зрелище для всех присутствующих.;x
+EVTOPTAnorthern_melee.28;Я люблю наблюдать за хорошими боями;x
+EVTDESCnorthern_melee.30;Ваш[From.GetEndA] [GetFromRelation] [From.GetTitledFirstNameNoRegnal] увидел[From.GetEndA] бойца, известного как [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] и атаковал[From.GetEndA] [FromFromFrom.GetHerHis] в ближнем бою. После жестокого поединка, [From.GetTitledFirstNameNoRegnal] одержал[From.GetEndA] верх, [FromFromFrom.GetTitledFirstNameNoRegnal] вынужден[FromFromFrom.GetEndA] сдаться.;x
+EVTDESCnorthern_melee.30B;Ваш[From.GetEndA] [GetFromRelation] [From.GetTitledFirstNameNoRegnal] увидел[From.GetEndA] бойца, известного как [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] и атаковал[From.GetEndA] [FromFromFrom.GetHerHis] в ближнем бою. Поединок был жестоким, возможно слишком жестоким, так как [FromFromFrom.GetTitledFirstNameNoRegnal] случайно погиб[FromFromFrom.GetEndA] от руки противника. [FromFromFrom.GetHerHis] безжизненное тело уносят с поля, а [From.GetTitledFirstNameNoRegnal] ищет нового противника.;x
+EVTDESCnorthern_melee.30C;Ваш[From.GetEndA] [GetFromRelation] [From.GetTitledFirstNameNoRegnal] увидел[From.GetEndA] бойца, известного как [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] и атаковал[From.GetEndA] [FromFromFrom.GetHerHis] в ближнем бою. После жестокого поединка, [From.GetTitledFirstNameNoRegnal] одержал[From.GetEndA] верх, а [FromFromFrom.GetTitledFirstNameNoRegnal] сдаётся. Однако все были шокированы, когда сдача была отклонена и [From.GetTitledFirstNameNoRegnal] зарубил[From.GetEndA] [FromFrom.GetHerHis], что, конечно же, считается бесчестным поступком.;x
+EVTOPTCnorthern_melee.30;Давай, [GetFromRelation]! Победи их всех!;x
+EVTDESCnorthern_melee.31;Схватка наконец началась, ваш[From.GetEndA] [From.GetRootRelation] [From.GetTitledFirstNameNoRegnal] присоединяется к воинам на поле, чтобы начать бой. Сначала [From.GetSheHe] держался хорошо, но в итоге уступвет одному из бойцов.;x
+EVTOPTCnorthern_melee.31;Слишком плохо для Дома [From.GetOnlyDynastyName];x
+EVTDESCnorthern_melee.32;Ваш[FromFromFrom.GetEndA] [FromFromFrom.GetRootRelation] [FromFromFrom.GetTitledFirstNameNoRegnal] был[FromFromFrom.GetEndA] замечен[FromFromFrom.GetEndA] бойцом, известным как [From.GetTitledFirstNameWithDynastyNoRegnal], который атаковал [FromFromFrom.GetHerHis] в ближнем бою. После жестокого поединка, [From.GetTitledFirstNameNoRegnal] одерживает верх, и ваш[FromFromFrom.GetEndA] [FromFromFrom.GetRootRelation] сдаётся.;x
+EVTDESCnorthern_melee.32B;Ваш[FromFromFrom.GetEndA] [FromFromFrom.GetRootRelation] [FromFromFrom.GetTitledFirstNameNoRegnal] был[FromFromFrom.GetEndA] замечен[FromFromFrom.GetEndA] бойцом, известным как [From.GetTitledFirstNameWithDynastyNoRegnal], который атаковал [FromFromFrom.GetHerHis] в ближнем бою. Поединок был жестоким, возможно слишком жестоким, так как [FromFromFrom.GetRootRelation] случайно погибает от руки противника. [FromFromFrom.GetHerHis] безжизненное тело уносят с поля, а [From.GetTitledFirstNameNoRegnal] ищет нового противника.;x
+EVTDESCnorthern_melee.32C;Ваш[FromFromFrom.GetEndA] [FromFromFrom.GetRootRelation] [FromFromFrom.GetTitledFirstNameNoRegnal] был[FromFromFrom.GetEndA] замечен[FromFromFrom.GetEndA] бойцом, известным как [From.GetTitledFirstNameWithDynastyNoRegnal], который атаковал [FromFromFrom.GetHerHis] в ближнем бою. После жестокого поединка [From.GetTitledFirstNameNoRegnal] одерживает верх, а [FromFromFrom.GetRootRelation] сдаётся. Однако все были шокированы, когда сдача была отклонена и [From.GetTitledFirstNameNoRegnal] зарубил[From.GetEndA] [FromFrom.GetHerHis], что, конечно же, считается бесчестным поступком.;x
+EVTOPTCnorthern_melee.32;О боги…;x
+TOOLTIPMEDALWINNER;[This.GetTitledFirstNameWithDynasty]\n;x
+TOOLTIPMEDALWINNERbastard;[This.GetTitledFirstNameWithNick]\n;x
+hold_a_epic_tournamentREALMTOURNEY;На данный момент нигде в государстве не проводится турниров\n;x
+hold_a_epic_tournamentCOOLDOWN;НЕ проводился турнир в последние 10 лет\n;x
+hold_a_epic_tournamentATTENDING;В данный момент НЕ посещает другой турнир\n;x
+place_tourney_bet;Сделать ставку на Турнире;x
+place_tourney_bet_desc;Сделать ставку, что [Root.GetTitledFirstNameWithDynasty] победит в турнире;x
+TOOLTIPplace_tourney_bet;Ставка на турнире ещё НЕ сделана;x
+TOOLTIPtourney.55;Вы готовы заключить пари…;x
+EVTDESCtourney.55;Вы желаете сделать ставку, что на турнире победит [From.GetTitledFirstNameWithDynasty], и нашли человека, принимающего ставки. Он оценил шансы бойца [Root.tourney_bet_odds_displayed.GetValue] - [Root.denominator.GetValue], что [From.GetTitledFirstNameWithDynasty] будет преобладать среди оставшихся конкурентов [Root.remaining_competitors.GetValue].;x
+EVTDESCtourney.55B;Вы желаете сделать ставку , что на турнире победит [From.GetTitledFirstNameWithDynasty], и нашли человека, принимающего ставки. Он оценивает шансы бойца [From.GetTitledFirstNameWithDynasty] выше остальных конкурентов [Root.remaining_competitors.GetValue].;x
+EVTOPTAtourney.55;Я сделаю небольшую ставку;x
+EVTOPTBtourney.55;Я сделаю среднюю ставку;x
+EVTOPTCtourney.55;Я сделаю большую ставку;x
+EVTOPTDtourney.55;Это смешная разница!;x
+EVTDESCtourney.56;[From.GetTitledFirstNameWithDynasty] выигрывает турнир, ваша ставка победила!;x
+EVTOPTAtourney.56;Хитрая авантюра!;x
+EVTOPTDtourney.35;Моя ставка потеряна!;x
+EVTOPTBtourney.909;Возможно, я могу сделать ставку?;x
+TOOLTIPtourney.909;Вы можете сделать ставку на участника в любое время во время турнира через дипломатическое взаимодействие;x
+EVTDESCtourney.909;Первые дни турнира турнира, который оргпнизовал[From.GetEndA] [From.GetTitledFirstNameNoRegnal], завершены, многие участники уже были исключены из состязания. В ближайшие дни оставшиеся люди будут соревноваться в финальных боях, пока не останется только один победитель.;x
+EVTOPTAtourney.909;Это должно быть интересно;x
+EVTOPTBtourney.31;Не могли бы вы присоединиться ко мне, чтобы выпить?;x
+TOOLTIPtourney.60;[This.GetTitledFirstNameNoRegnal] приглашается вами присоединиться к распитию напитка;x
+EVTDESCtourney.60;После боя, в котором [From.GetSheHe] побеждает вас, [From.GetTitledFirstNameNoRegnal] обращается к вам и спрашивает, не хотите ли вы присоединиться к н[From.GetHerHim] чтобы выпить [From.GetAlcoholicDrink]. [From.GetSheHeCap], похоже, хочет обсудить бой и другие вопросы.;x
+EVTOPTAtourney.60;Конечно, я принимаю это щедрое приглашение!;x
+EVTOPTBtourney.60;Нет, я не буду этого делать с моим победителем;x
+EVTDESCtourney.61;[From.GetTitledFirstNameNoRegnal] кажется польщённ[From.GetOyYm] вашим приглашением присоединиться к вам за распитием. Вы оба вернулись в ваш шатер, где вы обсуждали рыцарство и другие вопросы, выпивая [Root.GetAlcoholicDrink].;x
+EVTOPTAtourney.61;Мы, кажется, ладим!;x
+EVTDESCtourney.62;[From.GetTitledFirstNameNoRegnal] не принял[From.GetEndA] ваше приглашение выпить. [From.GetSheHeCap] объясняет причины, почему [From.GetSheHe] не может присоединиться к вам, но, очевидно, [From.GetSheHe] не хотел беседовать со своим победителем.;x
+EVTOPTAtourney.62;Ну, что ж.;x
+EVTDESCtourney.70;Турнир, проводимый в городе [Root.Capital.GetName], привлек много гостей в этот район. Окружающие дороги, гостиницы и деревни, как сообщается, переполнены, а [Root.Capital.GetName] забит торговцами разных мастей.;x
+EVTOPTAtourney.70;Это приветствуется;x
+tourney_prosperity;Процветает из-за Турнира;x
+EVTOPTCtourney.13;Возможно, [From.GetHerHis] оруженосец будет падок на взятку?;x
+TOOLTIPtourney_bet_winnings;Победа [Root.tourney_bet_winnings.GetValue]¤;x
+TOOLTIPtourney.75;Вы пытаетесь подкупить персонажа [This.GetTitledFirstNameNoRegnal], испортив лошадей и снаряжение;x
+EVTDESCtourney.75;Вы готовили лошадь и броню персонажа [FromFrom.GetTitledFirstNameNoRegnal] для [FromFrom.GetHerHis] следующего соревнования на турнире, когда к вам подош[From.GetLaYol] [From.GetTitledFirstNameWithDynasty], [FromFrom.GetHerHis] следующий противник. [From.GetSheHeCap] предлагает вам мешочек с монетами в обмен на то, что вы испортите снаряжение вашего сира!;x
+EVTOPTAtourney.75;Я сделаю это, [FromFrom.GetSheHe] мне все равно не нравится.;x
+TOOLTIPtourney.76 ;Вы портите снаряжение персонажа по имени [FromFrom.GetTitledFirstNameNoRegnal], что делает [FromFrom.GetHerHis] поражение более вероятным;x
+EVTOPTBtourney.75;Нет!;x
+TOOLTIPtourney.77;[This.GetTitledFirstNameWithDynasty] призывает уйти;x
+EVTDESCtourney.76;Юный [GetAyaYyGetTitledFirstNameNoRegnal] принимает ваши деньги и берётся испортить снаряжение и броню персонажа [FromFromFrom.GetTitledFirstNameWithDynasty].;x
+EVTOPTAtourney.76;Хорош[From.GetAyaIy] [From.GetLadLass];x
+TOOLTIPtourney.77;[From.GetTitledFirstNameNoRegnal] портит снаряжение бойца, известного как [FromFromFrom.GetTitledFirstNameNoRegnal], что значительно повысит вероятность победы;x
+EVTDESCtourney.77;[From.GetTitledFirstNameNoRegnal], похоже, был[From.GetEndA] шокирован[From.GetEndA] попыткой подкупа, [From.GetSheHe] отказывается и быстро уходит.;x
+EVTOPTAtourney.77;Сопляк;x
+EVTDESCtourney.78;Во время подготовки поединка с противником, известным как [FromFrom.GetTitledFirstNameWithDynasty] что-то было не так. Ваш доспех плохо подготовлен, лошадь взволнована. Очевидно, что ваш оруженосец, [bribed_squire.GetTitledFirstNameNoRegnal], не исполнил свои обязанности, и когда вы столкнулись, [bribed_squire.GetSheHe] признаётся, что [FromFrom.GetTitledFirstNameNoRegnal] заплатил[FromFrom.GetEndA], чтобы саботировать вас!;x
+EVTOPTAtourney.78;Это безобразие, я не буду молчать;x
+TOOLTIPtourney.79;Вы лично обвиняете человека, известного как [This.GetTitledFirstNameNoRegnal] в бесчестье;x
+EVTOPTBtourney.78;Я обращусь к хозяину турнира!;x
+TOOLTIPtourney.81;Вы публично обратились к человеку, известному как [This.GetTitledFirstNameWithDynasty];x
+EVTDESCtourney.299A;Ваш сир, [From.GetTitledFirstNameWithDynasty], явиляется на предстоящий Турнир города [FromFrom.Capital.GetName], который организовывает [FromFrom.GetTitledFirstNameWithDynasty]. Рыцари, живущие около города [FromFrom.Capital.GetName], будут соревноваться, и как [From.GetHerHis] оруженосец, вы будете сопровождать и помогать [From.GetHerHim].;x
+EVTDESCtourney.299B;Ваш сир, [From.GetTitledFirstNameWithDynasty], явиляется на предстоящий Турнир города [FromFrom.Capital.GetName] который организовывает [FromFrom.GetTitledFirstNameWithDynasty]. Лучшие рыцари и лорды области [tourney_kingdom.GetName] будут соревноваться, и как [From.GetHerHis] оруженосец, вы будете сопровождать и помогать [From.GetHerHim].;x
+EVTDESCtourney.299A;Ваш сир, [From.GetTitledFirstNameWithDynasty], явиляется на предстоящий Великий Турнир города [FromFrom.Capital.GetName], который организовывает [FromFrom.GetTitledFirstNameWithDynasty]. Лучшие рыцари и лорды всего государства будут учавствовать, и как [From.GetHerHis] оруженосец, вы будете сопровождать и помогать [From.GetHerHim].;x
+EVTOPTAtourney.299;Я в восторге!;x
+EVTDESCtourney.79;Похоже, что оруженосец человека по имени [From.GetTitledFirstNameWithDynasty], [bribed_squire.GetTitledFirstNameNoRegnal], недостаточно скрыл свои следы. [From.GetTitledFirstNameNoRegnal] обнаружвает саботаж лошадей и своего оружия, и напрямую обращается к вам в этом вопросе, поклявшись отомстить и называя вас плохими словами.;x
+EVTOPTAtourney.79;Удачи, [GetRootFromInsult]!;x
+EVTDESCtourney.80;Мой сир, [From.GetTitledFirstNameNoRegnal], казалось, что-то подозревает, увидев своё плохо подготовленное снаряжение, и когда [From.GetSheHe] сталкивается с явными признаками вашишего саботажа, вы признались, что [FromFromFrom.GetTitledFirstNameWithDynasty] дал[FromFromFrom.GetEndA] вам взятку!;x
+EVTOPTAtourney.80;Как вы узнали?!;x
+EVTDESCtourney.81;[From.GetTitledFirstNameWithDynasty] приходит к вашему шатру с шокирующим утверждением. [From.GetSheHeCap] утверждает, что [FromFromFrom.GetTitledFirstNameWithDynasty] подкупил[FromFromFrom.GetEndA] [From.GetHerHis] оруженосца, преднамеренно испортив [From.GetHerHis] лошадь и оружие. [From.GetSheHeCap] требует, чтобы [FromFromFrom.GetTitledFirstNameNoRegnal] был[FromFromFrom.GetEndA] дисквалифицирован[FromFromFrom.GetEndA], а [From.GetHerHis] имя было восстановлено на турнире.;x
+EVTOPTAtourney.81;Боюсь, недостаточно доказательств;x
+EVTOPTBtourney.81;Да, [FromFromFrom.GetTitledFirstNameNoRegnal] будет вышвырнут[FromFromFrom.GetEndA] с турнира;x
+TOOLTIPtourneyDISQUALIFIED;[This.GetTitledFirstNameWithDynasty] дискалифицируется;x
+TOOLTIPtourneyREINSTATED;[This.GetTitledFirstNameWithDynasty] восстанавливается на турнире;x
+EVTOPTCtourney.81;Стража, схватить этого бесчестного мошенника!;x
+EVTDESCtourney.82;Кажется, что оруженосец человека по имени [FromFrom.GetTitledFirstNameWithDynasty], [bribed_squire.GetTitledFirstNameNoRegnal], не слишком хорошо стирает свои следы. [FromFrom.GetTitledFirstNameNoRegnal] обнаруживает саботаж своей лошади и оружия, и обращается к персонажу, известному как[From.GetTitledFirstNameWithDynasty], чтобы вас дисквалифицировали. К счастью, хозяин поддержал вас, сославшись на отсутствие доказательств.;x
+EVTOPTAtourney.82;[GetRootFromInsult], придется стараться лучше;x
+EVTDESCtourney.83;Мой сир, [FromFrom.GetTitledFirstNameNoRegnal]  казалось, что-то подозревет, увидев своё плохо подготовленное снаряжение, и когда [FromFrom.GetSheHe] сталкивается с явными признаками вашего саботажа, вы признались, что [FromFromFromFrom.GetTitledFirstNameWithDynasty] дал[FromFromFrom.GetEndA] вам взятку! Однако хозяин турнира, [From.GetTitledFirstNameWithDynasty], очищает ваше имя от таких действий.;x
+EVTOPTAtourney.83;Да, да, я не вру!;x
+EVTDESCtourney.84;[From.GetTitledFirstNameWithDynasty] не верит вашим обвинениям, заявляя, что нет достаточных доказательств. [FromFromFromFrom.GetTitledFirstNameWithDynasty], как победитель этапа, остаётся на турнире;x
+EVTOPTAtourney.84;Это возмутительно!;x
+EVTDESCtourney.85;Кажется, оруженосец человека, известного как [FromFrom.GetTitledFirstNameWithDynasty], [bribed_squire.GetTitledFirstNameNoRegnal], не достаточно хорошо подчистил свои следы. [FromFrom.GetTitledFirstNameNoRegnal] обнаруживает саботаж своей лошади и оружия, и обращается к пнрсонажу, известному как к [From.GetTitledFirstNameWithDynasty], чтобы дисквалифицировать вас. [From.GetSheHeCap] соглашается, и вы были удалены из списков с позором!;x
+EVTOPTAtourney.85;Все это ложь!;x
+EVTDESCtourney.86;Мой сир, [FromFrom.GetTitledFirstNameNoRegnal], казалось, что-то подозревет, увидев своё плохо подготовленное снаряжение, и когда [FromFrom.GetSheHe] сталкивается со свидетельсвом вашего саботажа, вы признались, что [FromFromFromFrom.GetTitledFirstNameWithDynasty] дал[FromFromFrom.GetEndA] вам взятку! [From.GetTitledFirstNameWithDynasty] дисквалифицируется хозяином турнира, и вы были пристыжены перед всем турниром.;x
+EVTOPTAtourney.86;Это пятно на моей репутации;x
+EVTDESCtourney.87;[From.GetTitledFirstNameWithDynasty], казалось, был[From.GetEndA] шокирован[From.GetEndA] вашими обвинениями и был[From.GetEndA] убежден[From.GetEndA] в вероломстве  персонажа, известного как [FromFromFromFrom.GetTitledFirstNameWithDynasty]. Ваш противник был снят с турнира с позором, и вы заняли [FromFromFromFrom.GetHerHis] место.;x
+EVTOPTAtourney.87;Справедливость восторжествовала;x
+EVTDESCtourney.88;Произошел скандал вокруг боя персонажей [FromFrom.GetTitledFirstNameWithDynasty] и [FromFromFromFrom.GetTitledFirstNameWithDynasty]. [FromFrom.GetTitledFirstNameNoRegnal] проиграл[FromFrom.GetEndA] и заявил[FromFrom.GetEndA], что [FromFromFromFrom.GetTitledFirstNameNoRegnal] подкупил[FromFromFromFrom.GetEndA] [FromFrom.GetHerHis] оруженосца, чтобы умышленно использовать этот саботаж. Наш хозяин, [From.GetTitledFirstNameWithDynasty], проигнорировал это, ссылаясь на отсутствие доказательств.;x
+EVTOPTAtourney.88;Как возмутительно;x
+EVTDESCtourney.89;Произошел скандал вокруг боя персонажей [FromFrom.GetTitledFirstNameWithDynasty] и [FromFromFromFrom.GetTitledFirstNameWithDynasty]. [FromFrom.GetTitledFirstNameNoRegnal] проиграл[FromFrom.GetEndA] и заявил[FromFrom.GetEndA], что [FromFromFromFrom.GetTitledFirstNameNoRegnal] подкупил[FromFromFromFrom.GetEndA] [FromFrom.GetHerHis] оруженосца, чтобы умышленно использовать этот саботаж. Наш хозяин, [From.GetTitledFirstNameWithDynasty], соглашается с жалобой, [FromFromFromFrom.GetTitledFirstNameNoRegnal] был[FromFromFromFrom.GetEndA] с позором удален[FromFromFromFrom.GetEndA] из туреира.;x
+EVTOPTAtourney.89;Это большой позор;x
+EVTDESCtourney.95;Во время турнира в городе [tourney_lover.Liege.Capital.GetName], вы провели много времени в своем шатре вместе с красивой местной девушкой простого происхождения. Она просит вернуться домой с вами в город [Root.Capital.GetName]...;x
+EVTOPTAtourney.95;Я бы хотел, но я не могу этого позволить;x
+EVTOPTBtourney.95;Нет, я не забочусь о тебе;x
+EVTOPTCtourney.95;Конечно, моя любовь!;x
+EVTOPTDtourney.95;У меня на вас… другие планы;x
+EVTOPTEtourney.95;Как тебя зовут?;x
+EVTDESCtourney.350;[From.GetTitledFirstNameWithDynasty], выбранная вами как Королева Любви и Красоты, оказалась противоречивым выбором из-за того, что она уже принадлежит другому. Её родственники очень оскорблены;x
+EVTOPTAtourney.350;Мне все равно!;x
+opinion_qolb_scandal;Выбрал мою родственницу как Королеву Любви и Красоты;x
+TOOLTIPtourneyOPINION;Все участники и зрители турнира получают §G+5§! мнения с персонажем [Root.GetTitledFirstNameWithDynasty];x
+hold_a_epic_tournament;Провести турнир в столице [Root.Capital.GetName];x
+hold_a_epic_tournament_desc;Давайте проведем турнир, о котором будут ходить легенды. Все рыцари и лорды области соберутся в столицу [Root.Capital.GetName];x
+tournament_invite;Все рыцари и лорды области будут приглашены;x
+EVTDESC70000;[Root.GetTitledFirstNameWithDynasty], настоящим приглашаю Вас принять участие в турнире в столице [From.Capital.GetName], где рыцари и лорды покажут свою храбрость.\n\n С уважением,\n[From.GetFirstNameWithDynasty], [From.GetTitle] земли [From.PrimaryTitle.GetName];x
+TOURNAMENTTITLE;Рыцарский турнир;x
+EVTDESC70038;Все наслаждались прекрасным поединком, когда вышли [FromFrom.GetTitledFirstNameWithDynasty] и [From.GetTitledFirstNameWithDynasty]. В последнем столкновении [FromFrom.GetTitledFirstName] ошибается, и копьё бойца по имени [From.GetTitledFirstName] нашло разрыв в доспехах, жестоко пронзая [FromFrom.GetHerHis]. Лёжа в луже крови, ясно, что [FromFrom.GetSheHe] умрёт.;x
+EVTDESC70039;[FromFrom.GetTitledFirstNameWithDynasty] и [From.GetTitledFirstNameWithDynasty] бились следующими, и [From.GetTitledFirstName] победил[From.GetEndA]. В последнем столкновении [FromFrom.GetTitledFirstName] был[FromFrom.GetEndA] сброшен[FromFrom.GetEndA] с коня с градом осколков копья. [FromFrom.GetSheHeCap] падает с отвратительным хрустом, явно травмируясь.;x
+EVTDESC70040;Мой господин! Ваш гость, [From.GetTitledFirstNameWithDynasty], получает ранение во время турнира!;x
+EVTDESC70034;Победив в финальном турнире, [From.GetTitledFirstNameWithDynasty] объявляется победителем моего грандиозного турнира. Получив награду, [From.GetSheHe] восхваляет и благодарит меня, а теперь пора приступать к праздничному застолью!;x
+EVTDESC70035;[From.GetTitledFirstNameWithDynasty] берёт второе место на моём турнире.;x
+EVTDESC70036;[From.GetTitledFirstNameWithDynasty] берёт третье место на моём турнире.;x
+EVTDESC70033;Вороны были посланы, уведомляя рыцарей и лордов о турнире в столице [Root.Capital.GetName];x
+EVTDESC1058;Меня слишком много раз предавали. Почему я продолжаю доверять людям, которые ничего не сделали, чтобы заслужить это?;x
+EVTOPTA1058;Я больше никогда не позволю им причинить мне боль.;x
+EVTDESC3385;Я довол[GetSoftNaEn] своей жизнью и своими землями, и из-за этого люди не видят во мне угрозы. Все они с удовольствием посещают мои праздники, доверяя мне отстаивать права своих гостей, а также оставлять свои земли без присмотра.;x
+EVTOPTA3385;Мы все должны ладить!;x
+EVTDESC3325;Я был[GetEndA] одн[GetOyIm] из первых, кто оседлал свою лошадь и преследовал бандитов, которые украли одну из ценных статуй нашей местной септы. Когда я верну[GetLasLsya], измученн[GetAyaYy] и с грязной одеждой, мне сказали, что старый септон просто потерял статую.;x
+TOOLTIPnorthern_melee.11;Следующие бойцы провели финальный рукопашный бой:;x

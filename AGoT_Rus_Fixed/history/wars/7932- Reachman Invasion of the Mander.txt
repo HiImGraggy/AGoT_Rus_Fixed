@@ -1,0 +1,19 @@
+name = "Возвращение Простором устья Мандера"
+
+casus_belli={
+	casus_belli=dejure_duchy_claim
+	actor=88173 # Garth XII Gardener
+	recipient=31544 # Arrec Durrandon
+	landed_title=d_tumbleton
+	date=7932.6.6
+}
+
+7932.6.6 = {
+	add_defender = 31544 # Arrec Durrandon
+	add_attacker = 88173 # Garth XII Gardener
+}
+
+7933.1.1 = {
+	rem_defender = 31544 # Arrec Durrandon
+	rem_attacker = 88173 # Garth XII Gardener
+}                                                                                                                                                                                                                                                                                                                

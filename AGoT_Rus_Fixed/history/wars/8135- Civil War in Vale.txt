@@ -1,0 +1,65 @@
+name = "Гражданская война в Долине"
+
+casus_belli={
+	casus_belli=other_claim_on_liege
+	actor=88000348 #Arnold Arryn
+	thirdparty=3016187 #Gunthor Royce
+	recipient=5050178 #Joffrey Arryn
+	landed_title=k_vale
+	date=8135.6.1
+}
+
+8135.6.1 = {
+	add_defender = 5050178 #Joffrey Arryn
+	add_attacker = 3016187 #Gunthor Royce
+	add_attacker = 3012363 #House Sunderland
+	add_attacker = 3010172 #House Templeton
+	add_attacker = 3010180 #House Wydman
+	add_attacker = 3018173 #House Donniger
+	add_attacker = 3011168 #House Elesham
+	add_attacker = 3015167 #House Pryor
+	start_war = yes
+	vassal_liege = {
+		vassal = 3016187 #Gunthor Royce
+		liege = 5050178 #Joffrey Arryn
+	}
+	vassal_liege = {
+		vassal = 3012363 #Sunderland
+		liege = 5050178 #Joffrey Arryn
+	}
+	vassal_liege = {
+		vassal = 3010172 #Templeton
+		liege = 5050178 #Joffrey Arryn
+	}
+	vassal_liege = {
+		vassal = 3010180 #Wydman
+		liege = 5050178 #Joffrey Arryn
+	}
+	vassal_liege = {
+		vassal = 3018173 #Donniger
+		liege = 5050178 #Joffrey Arryn
+	}
+	vassal_liege = {
+		vassal = 3011168 #Elesham
+		liege = 5050178 #Joffrey Arryn
+	}
+	vassal_liege = {
+		vassal = 3015167 #Pryor
+		liege = 5050178 #Joffrey Arryn
+	}
+}
+
+8136.2.1 = {
+	end_war = yes
+	rem_attacker = 3012363 #House Sunderland
+	rem_attacker = 3010172 #House Templeton
+	rem_attacker = 3010180 #House Wydman
+	rem_attacker = 3018173 #House Donniger
+	rem_attacker = 3011168 #House Elesham
+	rem_attacker = 3015167 #House Pryor
+	rem_attacker = 3016187 #Gunthor Royce
+	rem_defender = 5050178 #Joffrey Arryn
+}
+
+
+                                                                                                                                                                                                                                                                                                                                   

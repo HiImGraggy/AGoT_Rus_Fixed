@@ -1,0 +1,24 @@
+name = "Торговая война Тироша и Волантиса"
+
+casus_belli={
+	casus_belli=embargo_cb
+	actor=130300024
+	recipient=147174371
+	landed_title=k_volantis
+	date=8276.1.1
+}
+
+8276.1.1 = {
+	add_defender = 147174371 #Volantis
+	add_attacker = 130300024 #Tyrosh
+	add_attacker = 120300525 #Myr
+}
+
+8282.1.1 = {
+	rem_defender = 147174371 #Volantis
+	rem_attacker= 130300024 #Tyrosh
+	rem_attacker = 120300525 #Myr
+}
+
+
+                                                                                                                                                                                                                                                                                                                                   

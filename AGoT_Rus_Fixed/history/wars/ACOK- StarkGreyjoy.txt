@@ -1,0 +1,20 @@
+name = "Вторжение железнорожденных на Север"
+
+casus_belli={
+	casus_belli=invasion_ironborn
+	actor=1107
+	recipient=2059
+	landed_title=e_north
+	date=8299.3.4
+}
+
+8299.3.4 = {
+	add_defender = 2059 #Robb Stark
+	add_attacker = 1107 # Balon Greyjoy	
+}
+
+8299.11.3 = {
+	rem_defender = 2059 #Robb Stark
+	rem_attacker = 1107 # Balon Greyjoy
+}
+

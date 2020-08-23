@@ -1,0 +1,25 @@
+name = "Вторжение дотракийцев в Сарнор"
+
+casus_belli={
+	casus_belli=invasion
+	actor=600221 # Khal Loso
+	recipient=10056800 # Mazor Alexi
+	landed_title=k_sarnor
+	date=7974.1.1
+}
+
+7974.1.1 = {
+	add_defender = 10056800 # Mazor Alexi
+	add_attacker = 600221 # Khal Loso
+	add_attacker = 600222 # Khal Zhako
+	add_attacker = 600223 # Khal Qano
+	add_attacker = 600224 # Khal Haro
+}
+
+7975.1.1 = {
+	rem_defender = 10056800 # Mazor Alexi
+	rem_attacker = 600221 # Khal Loso
+	rem_attacker = 600222 # Khal Zhako
+	rem_attacker = 600223 # Khal Qano
+	rem_attacker = 600224 # Khal Haro
+}                                                                                                                                                                                                                                                                                                                

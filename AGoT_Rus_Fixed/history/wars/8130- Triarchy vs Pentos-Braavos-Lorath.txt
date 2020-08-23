@@ -1,0 +1,23 @@
+name = "Первая война-эмбарго против Трех Дочерей "
+
+casus_belli={
+	casus_belli=embargo_cb
+	actor=119300526 #Pentos
+	recipient=113300544 #The Three Daughters
+	landed_title=e_three_daughters
+	date=8130.1.1
+}
+
+8130.1.1 = {
+	add_defender = 113300544 #The Three Daughters
+	add_attacker = 119300526 #Pentos
+	add_attacker = 600511 #Braavos
+	add_attacker = 112300548 #Lorath
+}
+
+8131.1.1 = {
+	rem_defender = 113300544 #The Three Daughters
+	rem_attacker = 119300526 #Pentos
+	rem_attacker = 600511 #Braavos
+	rem_attacker = 112300548 #Lorath
+}

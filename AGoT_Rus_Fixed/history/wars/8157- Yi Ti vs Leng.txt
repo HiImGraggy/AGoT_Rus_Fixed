@@ -1,0 +1,20 @@
+name = "Вторжение И-Ти в Лэнг"
+
+casus_belli={
+	casus_belli=invasion
+	actor=11955954
+	recipient=11655963
+	landed_title=k_leng
+	date=8157.1.1
+}
+
+8157.1.1 = {
+	add_defender = 11655963 # Leng
+	add_attacker = 11955954 # Yi Ti
+	
+}
+
+8158.1.1 = {
+	rem_defender = 11655963
+	rem_attacker = 11955954
+}

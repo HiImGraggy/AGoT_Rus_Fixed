@@ -1,0 +1,2817 @@
+############################
+### Yunkish major houses ###
+############################
+### House Yunzak
+345360024 = {
+	name="Мархаз"	# a lord
+	dynasty=360024
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	7820.1.1 = {birth="7820.1.1"}
+	7883.1.1 = {death="7883.1.1"}
+}
+344360024 = {
+	name="Юзнак"	# a lord
+	dynasty=360024
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=345360024
+	
+	7842.1.1 = {birth="7842.1.1"}
+	7907.1.1 = {death="7907.1.1"}
+}
+343360024 = {
+	name="Юрхаз"	# a lord
+	dynasty=360024
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=344360024
+	
+	7868.1.1 = {birth="7868.1.1"}
+	7922.1.1 = {death="7922.1.1"}
+}
+342360024 = {
+	name="Пецар"	# a lord
+	dynasty=360024
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=343360024
+	
+	7893.1.1 = {birth="7893.1.1"}
+	7949.1.1 = {death="7949.1.1"}
+}
+341360024 = {
+	name="Лазхак"	# a lord
+	dynasty=360024
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=342360024
+	
+	7918.1.1 = {birth="7918.1.1"}
+	7977.1.1 = {death="7977.1.1"}
+}
+340360024 = {
+	name="Еззан"	# a lord
+	dynasty=360024
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=341360024
+	
+	7941.1.1 = {birth="7941.1.1"}
+	7995.1.1 = {death="7995.1.1"}
+}
+150360024 = {
+	name="Юрхаз"	# not a lord
+	dynasty=360024
+
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=340360024
+
+	7962.1.1 = {birth="7962.1.1"}
+	8017.1.1 = {death="8017.1.1"}
+}
+100360024 = {
+	name="Еззан"	# a lord
+	dynasty=360024
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=150360024
+
+	7988.1.1 = {birth="7988.1.1"}
+	8016.1.1 = {add_trait=poor_warrior}
+	8028.1.1 = {death="8028.1.1"}
+}
+103360024 = {
+	name="Гозрак"	# a lord
+	dynasty=360024
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=100360024
+
+	8006.1.1 = {birth="8006.1.1"}
+	8040.1.1 = {add_trait=skilled_warrior}
+	8073.1.1 = {death="8073.1.1"}
+}
+104360024 = {
+	name="Граздан"	# a lord
+	dynasty=360024
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=103360024
+
+	8049.1.1 = {birth="8049.1.1"}
+	8065.1.1 = {add_trait=trained_warrior}
+	8087.1.1 = {death="8087.1.1"}
+}
+106360024 = {
+	name="Схарказ"	# a lord
+	dynasty=360024
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=104360024
+
+	8069.1.1 = {birth="8069.1.1"}
+	8087.1.1 = {}
+	8093.1.1 = {add_trait=skilled_warrior}
+	8135.1.1 = {death="8135.1.1"}
+}
+109360024 = {
+	name="Граздан"	# a lord
+	dynasty=360024
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=106360024
+
+	8112.1.1 = {birth="8112.1.1"}
+	8128.1.1 = {add_trait=poor_warrior}
+	8166.1.1 = {death="8166.1.1"}
+}
+112360024 = {
+	name="Газдор"	# a lord
+	dynasty=360024
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=109360024
+
+	8136.1.1 = {birth="8136.1.1"}
+	8152.1.1 = {add_trait=trained_warrior}
+	8187.1.1 = {death="8187.1.1"}
+}
+113360024 = {
+	name="Скахаз"	# a lord
+	dynasty=360024
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=112360024
+
+	8165.1.1 = {birth="8165.1.1"}
+	8181.1.1 = {add_trait=trained_warrior}
+	8224.1.1 = {death="8224.1.1"}
+}
+118360024 = {
+	name="Хиздаро"	# a lord
+	dynasty=360024
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=113360024
+
+	8187.1.1 = {birth="8187.1.1"}
+	8203.1.1 = {add_trait=trained_warrior}
+	8205.1.1 = {add_spouse=218360024}
+	8245.1.1 = {death="8245.1.1"}
+}
+218360024 = {
+	name="Феззара"
+	female=yes
+
+	religion="harpy"
+	culture="yunkaii"
+
+	8187.1.1 = {birth="8187.1.1"}
+	8245.1.1 = {death="8245.1.1"}
+}
+123360024 = {
+	name="Хазнак"	# a lord
+	dynasty=360024
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=118360024
+	mother=218360024
+
+	8218.1.1 = {birth="8218.1.1"}
+	8234.1.1 = {add_trait=poor_warrior}
+	8236.1.1 = {add_spouse=223360024}
+	8245.1.1 = {}
+	8275.1.1 = {death="8275.1.1"}
+}
+223360024 = {
+	name="Галацца"
+	female=yes
+
+	religion="harpy"
+	culture="yunkaii"
+
+	8218.1.1 = {birth="8218.1.1"}
+	8275.1.1 = {death="8275.1.1"}
+}
+124360024 = {
+	name="Граздан"	# not a lord
+	dynasty=360024
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=118360024
+	mother=218360024
+
+	8219.1.1 = {birth="8219.1.1"}
+	8235.1.1 = {add_trait=trained_warrior}
+	8285.1.1 = {death = {death_reason = death_accident}}
+}
+125360024 = {
+	name="Мелецца"	# not a lord
+	female=yes
+	dynasty=360024
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=118360024
+	mother=218360024
+
+	8222.1.1 = {birth="8222.1.1"}
+	8273.1.1 = {death="8273.1.1"}
+}
+126360024 = {
+	name="Кразнис"	# not a lord
+	dynasty=360024
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=118360024
+	mother=218360024
+
+	8223.1.1 = {birth="8223.1.1"}
+	8239.1.1 = {add_trait=trained_warrior}
+	8293.1.1 = {death="8293.1.1"}
+}
+127360024 = {
+	name="Бархаз"	# not a lord
+	dynasty=360024
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=126360024
+
+	8250.1.1 = {birth="8250.1.1"}
+	8266.1.1 = {add_trait=trained_warrior}
+}
+
+6571003 = {
+	name="Юрхаз"  # Canon, commander of Yunkish forces.
+	dynasty = 360024 
+
+	martial = 5 #1	
+	diplomacy = 5
+	intrigue = 10
+	stewardship = 10
+	learning = 5
+
+	culture = yunkaii
+	religion = harpy 
+
+	father=118360024
+	mother=218360024	
+	
+	add_trait="proud"
+	add_trait="brave"
+	add_trait="patient"
+	add_trait="authoritative"
+	add_trait="ruthless"
+	
+	8221.1.1 = {
+		birth="8221.1.1"
+	}
+	8237.1.1 = {
+		add_trait=skilled_tactician
+		add_trait=skilled_warrior
+	}
+	8250.1.1 = {
+		effect = { prestige = 500 }	# A war hero
+	}
+	8300.1.1 = {
+		effect = {
+			remove_all_commanders = yes
+			c_6571005 = { give_minor_title = title_commander } #Little Pidgeon
+			c_6571008 = { give_minor_title = title_commander } #Pudding Face
+			c_6571006 = { give_minor_title = title_commander } #Drunken Conqueror
+			c_6571011 = { give_minor_title = title_commander } #Eldest of Clanker Lords
+			c_360018 = { give_minor_title = title_commander } #The Rabbit
+			c_360150 = { give_minor_title = title_commander } #Girl General
+		}
+	}
+	8300.7.3 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+
+### House Qaggaz
+345360023 = {
+	name="Ознак"	# a lord
+	dynasty=360023
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	7815.1.1 = {birth="7815.1.1"}
+	7878.1.1 = {death="7878.1.1"}
+}
+344360023 = {
+	name="Резнак"	# a lord
+	dynasty=360023
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=345360023
+	
+	7838.1.1 = {birth="7838.1.1"}
+	7900.1.1 = {death="7900.1.1"}
+}
+343360023 = {
+	name="Прендаль"	# a lord
+	dynasty=360023
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=344360023
+	
+	7862.1.1 = {birth="7862.1.1"}
+	7928.1.1 = {death="7928.1.1"}
+}
+342360023 = {
+	name="Еззан"	# a lord
+	dynasty=360023
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=343360023
+	
+	7886.1.1 = {birth="7886.1.1"}
+	7939.1.1 = {death="7939.1.1"}
+}
+341360023 = {
+	name="Царрак"	# a lord
+	dynasty=360023
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=342360023
+	
+	7910.1.1 = {birth="7910.1.1"}
+	7969.1.1 = {death="7969.1.1"}
+}
+340360023 = {
+	name="Бархаз"	# a lord
+	dynasty=360023
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=341360023
+	
+	7931.1.1 = {birth="7931.1.1"}
+	7987.1.1 = {death="7987.1.1"}
+}
+150360023 = {
+	name="Граздан"	# a lord
+	dynasty=360023
+
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=340360023
+
+	7957.1.1 = {birth="7957.1.1"}
+	8012.1.1 = {death="8012.1.1"}
+}
+100360023 = {
+	name="Граздан"	# a lord
+	dynasty=360023
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=150360023
+
+	7984.1.1 = {birth="7984.1.1"}
+	8016.1.1 = {add_trait=poor_warrior}
+	8036.1.1 = {death="8036.1.1"}
+}
+102360023 = {
+	name="Мархаз"	# a lord
+	dynasty=360023
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=100360023
+
+	8017.1.1 = {birth="8017.1.1"}
+	8035.1.1 = {add_trait=trained_warrior}
+	8070.1.1 = {death = {death_reason = death_accident}}
+}
+106360023 = {
+	name="Мезон"	# a lord
+	dynasty=360023
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=102360023
+
+	8049.1.1 = {birth="8049.1.1"}
+	8065.1.1 = {add_trait=trained_warrior}
+	8113.1.1 = {death="8113.1.1"}
+}
+110360023 = {
+	name="Гацор"	# a lord
+	dynasty=360023
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=106360023
+
+	8083.1.1 = {birth="8083.1.1"}
+	8099.1.1 = {add_trait=trained_warrior}
+	8146.1.1 = {death="8146.1.1"}
+}
+112360023 = {
+	name="Морхаз"	# a lord
+	dynasty=360023
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=110360023
+
+	8103.1.1 = {birth="8103.1.1"}
+	8119.1.1 = {add_trait=skilled_warrior}
+	8158.1.1 = {death="8158.1.1"}
+}
+116360023 = {
+	name="Юрхаз"	# a lord
+	dynasty=360023
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=112360023
+
+	8126.1.1 = {birth="8126.1.1"}
+	8142.1.1 = {add_trait=poor_warrior}
+	8200.1.1 = {death="8200.1.1"}
+}
+121360023 = {
+	name="Прендаль"	# a lord
+	dynasty=360023
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=116360023
+
+	8154.1.1 = {birth="8154.1.1"}
+	8170.1.1 = {add_trait=trained_warrior}
+	8203.1.1 = {death="8203.1.1"}
+}
+122360023 = {
+	name="Аззак"	# a lord
+	dynasty=360023
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=121360023
+
+	8181.1.1 = {birth="8181.1.1"}
+	8197.1.1 = {add_trait=skilled_warrior}
+	8221.1.1 = {death = {death_reason = death_accident}}
+}
+125360023 = {
+	name="Кразнис"	# a lord
+	dynasty=360023
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=122360023
+
+	8200.1.1 = {birth="8200.1.1"}
+	8224.1.1 = {add_trait=poor_warrior}
+	8226.1.1 = {add_spouse=225360023}
+	8264.1.1 = {death="8264.1.1"}
+}
+225360023 = {
+	name="Нелецца"
+	female=yes
+
+	religion="harpy"
+	culture="yunkaii"
+
+	8208.1.1 = {birth="8208.1.1"}
+	8264.1.1 = {death="8264.1.1"}
+}
+126360023 = {
+	name="Граздар"	# a lord
+	dynasty=360023
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=125360023
+	mother=225360023
+
+	8237.1.1 = {birth="8237.1.1"}
+	8253.1.1 = {add_trait=poor_warrior}
+	8255.1.1 = {add_spouse=226360023}
+	8289.1.1 = {death="8289.1.1"}
+}
+226360023 = {
+	name="Илецца"
+	female=yes
+
+	religion="harpy"
+	culture="yunkaii"
+
+	8237.1.1 = {birth="8237.1.1"}
+	8289.1.1 = {death="8289.1.1"}
+}
+128360023 = {
+	name="Теззара"	# not a lord
+	female=yes
+	dynasty=360023
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=125360023
+	mother=225360023
+
+	8240.1.1 = {birth="8240.1.1"}
+	8299.1.1 = {death="8299.1.1"}
+}
+
+6571004 = {
+	name="Еззан"  # The Yellow Whale
+	dynasty = 360023 
+
+	martial = 2
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 14
+	learning = 5
+
+	culture = yunkaii
+	religion = harpy 
+
+	father=126360023
+	mother=226360023		
+	
+	add_trait="gluttonous"
+	add_trait="proud"
+	add_trait="honorable" #Wanted to keep peace with Meereen
+	add_trait="authoritative"
+	add_trait="quick"
+	
+	8256.1.1 = {
+		birth="8256.1.1"
+	}
+	8272.1.1 = {
+		add_trait = midas_touched
+	}
+	8286.1.1 = {
+		add_trait = is_fat
+		effect = {
+			set_variable = { which = physique_variable value = 35 }		
+			add_character_modifier = { name = obese_modifier duration = -1 }
+			wealth = 500
+		}
+	}
+	8290.1.1 = {
+		add_trait=infirm
+	}
+	8300.7.9 = {
+		add_trait=has_bloody_flux #Pale Mare
+	}
+	8300.7.14 = {
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+#Lines of Еззан's nephews
+129360023 = {
+	name="Граздан"	# not a lord
+	dynasty=360023
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=126360023
+	mother=226360023	
+
+	8260.1.1 = {birth="8260.1.1"}
+	8280.1.1 = {add_spouse=229360023}
+	8298.1.1 = {death="8298.1.1"}
+}
+229360023 = {
+	name="Квецца"
+	female=yes
+
+	religion="harpy"
+	culture="yunkaii"
+
+	8260.1.1 = {birth="8260.1.1"}
+}
+130360023 = {
+	name="Кразнис"	# a lord
+	dynasty=360023
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=129360023
+	mother=229360023
+
+	8281.1.1 = {birth="8281.1.1"}
+	8297.1.1 = {add_trait=trained_warrior}
+}
+131360023 = {
+	name="Прендаль"	# not a lord
+	dynasty=360023
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=129360023
+	mother=229360023
+
+	8283.1.1 = {birth="8283.1.1"}
+	8299.1.1 = {add_trait=trained_warrior}
+	8300.5.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 16892322 # Daario
+		}
+	}
+}
+132360023 = {
+	name="Газдор"	# not a lord
+	dynasty=360023
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=126360023
+	mother=226360023	
+
+	8263.1.1 = {birth="8263.1.1"}
+	8281.1.1 = {add_spouse=232360023}
+	8298.1.1 = {death="8298.1.1"}
+}
+232360023 = {
+	name="Олецца"
+	female=yes
+
+	religion="harpy"
+	culture="yunkaii"
+
+	8264.1.1 = {birth="8264.1.1"}
+}
+133360023 = {
+	name="Юрхазро"	# not a lord
+	dynasty=360023
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=132360023
+	mother=232360023
+
+	8282.1.1 = {birth="8282.1.1"}
+	8297.1.1 = {add_trait=trained_warrior}
+}
+134360023 = {
+	name="Дхаццар"	# not a lord
+	dynasty=360023
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=132360023
+	mother=232360023
+
+	8284.1.1 = {birth="8284.1.1"}
+	8300.1.1 = {add_trait=trained_warrior}
+}
+
+### House Myraq
+345360022 = {
+	name="Мархаз"	# a lord
+	dynasty=360022
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	7819.1.1 = {birth="7819.1.1"}
+	7874.1.1 = {death="7874.1.1"}
+}
+344360022 = {
+	name="Миклаз"	# a lord
+	dynasty=360022
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=345360022
+	
+	7841.1.1 = {birth="7841.1.1"}
+	7898.1.1 = {death="7898.1.1"}
+}
+343360022 = {
+	name="Еззан"	# a lord
+	dynasty=360022
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=344360022
+	
+	7864.1.1 = {birth="7864.1.1"}
+	7920.1.1 = {death="7920.1.1"}
+}
+342360022 = {
+	name="Граздан"	# a lord
+	dynasty=360022
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=343360022
+	
+	7889.1.1 = {birth="7889.1.1"}
+	7947.1.1 = {death="7947.1.1"}
+}
+341360022 = {
+	name="Аззак"	# a lord
+	dynasty=360022
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=342360022
+	
+	7913.1.1 = {birth="7913.1.1"}
+	7969.1.1 = {death="7969.1.1"}
+}
+340360022 = {
+	name="Граздан"	# a lord
+	dynasty=360022
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=341360022
+	
+	7938.1.1 = {birth="7938.1.1"}
+	7988.1.1 = {death="7988.1.1"}
+}
+150360022 = {
+	name="Рездар"	# a lord
+	dynasty=360022
+
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=340360022
+
+	7963.1.1 = {birth="7963.1.1"}
+	8025.1.1 = {death="8025.1.1"}
+}
+100360022 = {
+	name="Мезон"	# a lord
+	dynasty=360022
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=150360022
+
+	7985.1.1 = {birth="7985.1.1"}
+	8016.1.1 = {add_trait=poor_warrior}
+	8050.1.1 = {death="8050.1.1"}
+}
+102360022 = {
+	name="Граздан"	# a lord
+	dynasty=360022
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=100360022
+
+	8036.1.1 = {birth="8036.1.1"}
+	8052.1.1 = {add_trait=poor_warrior}
+	8100.1.1 = {death="8100.1.1"}
+}
+106360022 = {
+	name="Морхаз"	# a lord
+	dynasty=360022
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=102360022
+
+	8060.1.1 = {birth="8060.1.1"}
+	8076.1.1 = {add_trait=trained_warrior}
+	8105.1.1 = {death="8105.1.1"}
+}
+109360022 = {
+	name="Мизлак"	# a lord
+	dynasty=360022
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=106360022
+
+	8085.1.1 = {birth="8085.1.1"}
+	8101.1.1 = {add_trait=skilled_warrior}
+	8142.1.1 = {death="8142.1.1"}
+}
+112360022 = {
+	name="Скахаз"	# a lord
+	dynasty=360022
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=109360022
+
+	8108.1.1 = {birth="8108.1.1"}
+	8124.1.1 = {add_trait=skilled_warrior}
+	8159.1.1 = {death="8159.1.1"}
+}
+113360022 = {
+	name="Царак"	# a lord
+	dynasty=360022
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=112360022
+
+	8136.1.1 = {birth="8136.1.1"}
+	8152.1.1 = {add_trait=trained_warrior}
+	8198.1.1 = {death="8198.1.1"}
+}
+117360022 = {
+	name="Лазхак"	# a lord
+	dynasty=360022
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=113360022
+
+	8159.1.1 = {birth="8159.1.1"}
+	8175.1.1 = {add_trait=poor_warrior}
+	8218.1.1 = {death="8218.1.1"}
+}
+121360022 = {
+	name="Граздан"	# a lord
+	dynasty=360022
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=117360022
+
+	8194.1.1 = {birth="8194.1.1"}
+	8210.1.1 = {add_trait=poor_warrior}
+	8212.1.1 = {add_spouse=221360022}
+	8243.1.1 = {death = {death_reason = death_accident}}
+}
+221360022 = {
+	name="Эззара"
+	female=yes
+
+	religion="harpy"
+	culture="yunkaii"
+
+	8194.1.1 = {birth="8194.1.1"}
+	8243.1.1 = {death="8243.1.1"}
+}
+124360022 = {
+	name="Аззак"	# a lord
+	dynasty=360022
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=121360022
+	mother=221360022
+
+	8216.1.1 = {birth="8216.1.1"}
+	8232.1.1 = {add_trait=poor_warrior}
+	8233.1.1 = {add_spouse=224360022}
+	8243.1.1 = {}
+	8257.1.1 = {death = {death_reason = death_accident}}
+}
+224360022 = {
+	name="Деззала"
+	female=yes
+
+	religion="harpy"
+	culture="yunkaii"
+
+	8216.1.1 = {birth="8216.1.1"}
+	8257.1.1 = {death="8257.1.1"}
+}
+128360022 = {
+	name="Джалецца"	# not a lord
+	female=yes
+	dynasty=360022
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=121360022
+	mother=221360022
+
+	8225.1.1 = {birth="8225.1.1"}
+	8295.1.1 = {death="8295.1.1"}
+}
+129360022 = {
+	name="Галацца"	# not a lord
+	female=yes
+	dynasty=360022
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=124360022
+	mother=224360022
+
+	8234.1.1 = {birth="8234.1.1"}
+	8275.1.1 = {death="8275.1.1"}
+}
+130360022 = {
+	name="Эззара"	# not a lord
+	female=yes
+	dynasty=360022
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=124360022
+	mother=224360022
+
+	8236.1.1 = {birth="8236.1.1"}
+	8294.1.1 = {death="8294.1.1"}
+}
+131360022 = {
+	name="Мезон"	# a lord
+	dynasty=360022
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=124360022
+	mother=224360022
+
+	8237.1.1 = {birth="8237.1.1"}
+	8264.1.1 = {add_trait=poor_warrior}
+	8266.1.1 = {add_spouse=231360022}
+	8282.1.1 = {death = {death_reason = death_murder}}
+}
+231360022 = {
+	name="Джецан"
+	female=yes
+
+	religion="harpy"
+	culture="yunkaii"
+
+	8248.1.1 = {birth="8248.1.1"}
+	8282.1.1 = {death="8282.1.1"}
+}
+132360022 = {
+	name="Гозрак"	# not a lord
+	dynasty=360022
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=124360022
+	mother=224360022
+
+	8249.1.1 = {birth="8249.1.1"}
+	8265.1.1 = {add_trait=skilled_warrior}
+}
+6571005 = {
+	name="Пецар" # Canon, Little Pidgeon
+	dynasty = 360022 
+
+	martial = 1
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 5
+	learning = 5
+
+	culture = yunkaii
+	religion = harpy 
+
+	father=131360022
+	mother=231360022		
+	
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="deceitful"
+	add_trait="ruthless"
+	
+	8267.1.1 = {
+		birth="8267.1.1"
+	}
+	8283.1.1 = {
+		add_trait=misguided_warrior
+	}
+	8300.7.19 = {
+		death = {
+			death_reason = death_battle
+			killer = 12400104 #Red Lamb
+		}
+	}
+}
+
+### House Eraz
+344360020 = {
+	name="Кразнис"	# a lord
+	dynasty=360020
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	7820.1.1 = {birth="7820.1.1"}
+	7881.1.1 = {death="7881.1.1"}
+}
+343360020 = {
+	name="Юзнак"	# a lord
+	dynasty=360020
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=344360020
+	
+	7852.1.1 = {birth="7852.1.1"}
+	7910.1.1 = {death="7910.1.1"}
+}
+342360020 = {
+	name="Ухзак"	# a lord
+	dynasty=360020
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=343360020
+	
+	7879.1.1 = {birth="7879.1.1"}
+	7939.1.1 = {death="7939.1.1"}
+}
+341360020 = {
+	name="Бархаз"	# a lord
+	dynasty=360020
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=342360020
+	
+	7901.1.1 = {birth="7901.1.1"}
+	7966.1.1 = {death="7966.1.1"}
+}
+340360020 = {
+	name="Дхаццар"	# a lord
+	dynasty=360020
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=341360020
+	
+	7924.1.1 = {birth="7924.1.1"}
+	7979.1.1 = {death="7979.1.1"}
+}
+150360020 = {
+	name="Граздан"	# a lord
+	dynasty=360020
+
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=340360020
+
+	7955.1.1 = {birth="7955.1.1"}
+	8008.1.1 = {death="8008.1.1"}
+}
+100360020 = {
+	name="Мархаз"	# a lord
+	dynasty=360020
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=150360020
+
+	7984.1.1 = {birth="7984.1.1"}
+	8002.1.1 = {add_spouse=200360020}
+	8016.1.1 = {add_trait=poor_warrior}
+	8031.1.1 = {death="8031.1.1"}
+}
+200360020 = {
+	name="Теллецца"
+	female=yes
+
+	religion="harpy"
+	culture="yunkaii"
+	
+	# In memory of a very amusing bug
+	add_trait = genius
+	add_trait = ambitious
+
+	7984.1.1 = {birth="7984.1.1"}
+	8031.1.1 = {death="8031.1.1"}
+}
+101360020 = {
+	name="Хиздар"	# a lord
+	dynasty=360020
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=100360020
+	mother=200360020
+
+	8003.1.1 = {birth="8003.1.1"}
+	8034.1.1 = {add_trait=skilled_warrior}
+	8072.1.1 = {death="8072.1.1"}
+}
+105360020 = {
+	name="Граздан"	# a lord
+	dynasty=360020
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=101360020
+
+	8038.1.1 = {birth="8038.1.1"}
+	8054.1.1 = {add_trait=skilled_warrior}
+	8088.1.1 = {death="8088.1.1"}
+}
+106360020 = {
+	name="Скахазо"	# not a lord
+	dynasty=360020
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=101360020
+
+	8041.1.1 = {birth="8041.1.1"}
+	8059.1.1 = {
+		add_spouse=206360020
+		effect = { spouse = { add_lover = ROOT } }
+	}
+	8073.1.1 = {add_trait = has_bloody_flux}
+	8074.1.1 = {death = { death_reason = death_trait } }
+}
+206360020 = {
+	name="Хаззея"
+	female=yes
+
+	religion="harpy"
+	culture="yunkaii"
+
+	8041.1.1 = {birth="8041.1.1"}
+	8074.1.1 = {
+		add_trait = widowed
+		add_trait = depressed
+	}
+	8075.1.1 = {
+		death = { death_reason = death_suicide }
+	}
+}
+111360020 = {
+	name="Бархаз"	# a lord
+	dynasty=360020
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=105360020
+
+	8065.1.1 = {birth="8065.1.1"}
+	8081.1.1 = {add_trait=trained_warrior}
+	8122.1.1 = {death="8122.1.1"}
+}
+112360020 = {
+	name="Азлак"	# a lord
+	dynasty=360020
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=111360020
+
+	8092.1.1 = {birth="8092.1.1"}
+	8108.1.1 = {add_trait=trained_warrior}
+	8137.1.1 = {death="8137.1.1"}
+}
+116360020 = {
+	name="Граздан"	# a lord
+	dynasty=360020
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=112360020
+
+	8115.1.1 = {birth="8115.1.1"}
+	8131.1.1 = {add_trait=poor_warrior}
+	8170.1.1 = {death="8170.1.1"}
+}
+119360020 = {
+	name="Хиздар"	# a lord
+	dynasty=360020
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=116360020
+
+	8145.1.1 = {birth="8145.1.1"}
+	8161.1.1 = {add_trait=trained_warrior}
+	8188.1.1 = {death="8188.1.1"}
+}
+120360020 = {
+	name="Юрхаз"	# a lord
+	dynasty=360020
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=119360020
+
+	8164.1.1 = {birth="8164.1.1"}
+	8180.1.1 = {add_trait=poor_warrior}
+	8225.1.1 = {death="8225.1.1"}
+}
+122360020 = {
+	name="Граздан"	# a lord
+	dynasty=360020
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=120360020
+
+	8192.1.1 = {birth="8192.1.1"}
+	8208.1.1 = {add_trait=trained_warrior}
+	8239.1.1 = {death="8239.1.1"}
+}
+126360020 = {
+	name="Пецдар"	# a lord
+	dynasty=360020
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=122360020
+
+	8212.1.1 = {birth="8212.1.1"}
+	8228.1.1 = {add_trait=poor_warrior}
+	8230.1.1 = {add_spouse=226360020}
+	8255.1.1 = {death="8255.1.1"}
+}
+226360020 = {
+	name="Хаззея"
+	female=yes
+
+	religion="harpy"
+	culture="yunkaii"
+
+	8212.1.1 = {birth="8212.1.1"}
+	8255.1.1 = {death="8255.1.1"}
+}
+#Main branch
+130360020 = {
+	name="Гацор"	# a lord
+	dynasty=360020
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=126360020
+	mother=226360020
+
+	8236.1.1 = {birth="8236.1.1"}
+	8252.1.1 = {add_trait=trained_warrior}
+	8254.1.1 = {add_spouse=133360017} #Джецан zo Rhaezn
+	8280.1.1 = {death="8280.1.1"}
+}
+6571007 = {
+	name="Граздан"  # Canon  Lead envoys to Dany in SoS and recruited the Windblown in Volantis in aDwD.
+	dynasty = 360020 
+
+	martial = 3
+	diplomacy = 10
+	intrigue = 7
+	stewardship = 10
+	learning = 5
+
+	culture = yunkaii
+	religion = harpy 
+
+	father=130360020
+	mother=133360017 #Джецан zo Rhaezn	
+	
+	add_trait="underhanded_rogue"
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="deceitful"
+	add_trait="ruthless"
+	add_trait="craven"
+	add_trait="authoritative"
+	
+	8260.1.1 = {
+		birth="8260.1.1"
+	}
+}
+
+6571008 = {
+	name="Гозрак"  # Canon, Pudding Face
+	dynasty = 360020 
+
+	martial = 2
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 3
+	learning = 2
+
+	culture = yunkaii
+	religion = harpy 
+
+	father=130360020
+	mother=133360017 #Джецан zo Rhaezn			
+	
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="deceitful"
+	add_trait="ruthless"
+	add_trait="ugly"
+	
+	8279.1.1 = {
+		birth="8279.1.1"
+	}
+	8280.1.1={
+		employer=6571003 # Юрхаз zo Юзнак
+	}
+	8300.7.3 = {
+		employer=6571004 # Еззан zo Qaggaz
+	}
+	8300.7.14 = {
+		employer=6571006 # Морхаз zo Zhaerzyn
+	}
+	8300.7.19 = {
+		death = {
+			death_reason=death_murder
+			killer=1684230 #Tattered Prince
+		}
+	}
+}
+#Side branch (uncanon)
+128360020 = {
+	name="Пренхель"	# not a lord
+	dynasty=360020
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=126360020
+	mother=226360020
+
+	8245.1.1 = {birth="8245.1.1"}
+	8266.1.1 = {add_spouse=228360020}
+	8280.1.1 = {death="8280.1.1"}
+}
+228360020 = {
+	name="Галацца"
+	female=yes
+
+	religion="harpy"
+	culture="yunkaii"
+
+	8248.1.1 = {birth="8248.1.1"}
+}
+129360020 = {
+	name="Раздал"	# not a lord
+	dynasty=360020
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=128360020
+	mother=228360020
+
+	8268.1.1 = {birth="8268.1.1"}
+}
+
+### House Rhaezn
+344360017 = {
+	name="Хиздар"	# a lord
+	dynasty=360017
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	7828.1.1 = {birth="7828.1.1"}
+	7885.1.1 = {death="7885.1.1"}
+}
+343360017 = {
+	name="Резнак"	# a lord
+	dynasty=360017
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=344360017
+	
+	7852.1.1 = {birth="7852.1.1"}
+	7929.1.1 = {death="7929.1.1"}
+}
+342360017 = {
+	name="Фезар"	# a lord
+	dynasty=360017
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=343360017
+	
+	7877.1.1 = {birth="7877.1.1"}
+	7941.1.1 = {death="7941.1.1"}
+}
+341360017 = {
+	name="Аззак"	# a lord
+	dynasty=360017
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=342360017
+	
+	7904.1.1 = {birth="7904.1.1"}
+	7963.1.1 = {death="7963.1.1"}
+}
+340360017 = {
+	name="Ухцак"	# a lord
+	dynasty=360017
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=341360017
+	
+	7930.1.1 = {birth="7930.1.1"}
+	7989.1.1 = {death="7989.1.1"}
+}
+150360017 = {
+	name="Царрак"	# a lord
+	dynasty=360017
+
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=340360017
+
+	7954.1.1 = {birth="7954.1.1"}
+	8024.1.1 = {death="8024.1.1"}
+}
+100360017 = {
+	name="Юрхаз"	# a lord
+	dynasty=360017
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=150360017
+
+	7987.1.1 = {birth="7987.1.1"}
+	8016.1.1 = {add_trait=poor_warrior}
+	8046.1.1 = {death="8046.1.1"}
+}
+101360017 = {
+	name="Пецдар"	# a lord
+	dynasty=360017
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=100360017
+
+	8026.1.1 = {birth="8026.1.1"}
+	8042.1.1 = {add_trait=poor_warrior}
+	8087.1.1 = {death = {death_reason = death_murder}}
+}
+105360017 = {
+	name="Мезон"	# a lord
+	dynasty=360017
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=101360017
+
+	8048.1.1 = {birth="8048.1.1"}
+	8064.1.1 = {add_trait=trained_warrior}
+	8118.1.1 = {death="8118.1.1"}
+}
+109360017 = {
+	name="Гацор"	# a lord
+	dynasty=360017
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=105360017
+
+	8079.1.1 = {birth="8079.1.1"}
+	8095.1.1 = {add_trait=skilled_warrior}
+	8144.1.1 = {death="8144.1.1"}
+}
+111360017 = {
+	name="Граздан"	# a lord
+	dynasty=360017
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=109360017
+
+	8108.1.1 = {birth="8108.1.1"}
+	8124.1.1 = {add_trait=trained_warrior}
+	8150.1.1 = {death="8150.1.1"}
+}
+114360017 = {
+	name="Шархаз"	# a lord
+	dynasty=360017
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=111360017
+
+	8130.1.1 = {birth="8130.1.1"}
+	8146.1.1 = {add_trait=poor_warrior}
+	8186.1.1 = {death="8186.1.1"}
+}
+118360017 = {
+	name="Граздан"	# a lord
+	dynasty=360017
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=114360017
+
+	8164.1.1 = {birth="8164.1.1"}
+	8180.1.1 = {add_trait=poor_warrior}
+	8200.1.1 = {death="8200.1.1"}
+}
+122360017 = {
+	name="Пецдар"	# a lord
+	dynasty=360017
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=118360017
+
+	8185.1.1 = {birth="8185.1.1"}
+	8201.1.1 = {add_trait=master_warrior}
+	8230.1.1 = {death="8230.1.1"}
+}
+128360017 = {
+	name="Граздан"	# a lord
+	dynasty=360017
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=122360017
+
+	8212.1.1 = {birth="8212.1.1"}
+	8228.1.1 = {add_trait=poor_warrior}
+	8230.1.1 = { add_spouse=228360017 }
+	8250.1.1 = {death="8250.1.1"}
+}
+228360017 = {
+	name="Хаззея"
+	female=yes
+
+	religion="harpy"
+	culture="yunkaii"
+
+	8212.1.1 = {birth="8212.1.1"}
+	8245.1.1 = {death="8245.1.1"}
+}
+130360017 = {
+	name="Олецца"	# not a lord
+	female=yes
+	dynasty=360017
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=128360017
+	mother=228360017
+
+	8231.1.1 = {birth="8231.1.1"}
+	8282.1.1 = {death="8282.1.1"}
+}
+131360017 = {
+	name="Теллезара"	# not a lord
+	female=yes
+	dynasty=360017
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=128360017
+	mother=228360017
+
+	8232.1.1 = {birth="8232.1.1"}
+}
+132360017 = {
+	name="Скахаз"	# a lord
+	dynasty=360017
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=128360017
+	mother=228360017
+
+	8233.1.1 = {birth="8233.1.1"}
+	8249.1.1 = {add_trait=poor_warrior}
+	8251.1.1 = {add_spouse=232360017}
+	8258.1.1 = {death="8258.1.1"}
+}
+232360017 = {
+	name="Галацца"
+	female=yes
+
+	religion="harpy"
+	culture="yunkaii"
+
+	8233.1.1 = {birth="8233.1.1"}
+	8258.1.1 = {death="8258.1.1"}
+}
+133360017 = {
+	name="Джецан"	# not a lord
+	female=yes
+	dynasty=360017
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=128360017
+	mother=228360017
+
+	8235.1.1 = {birth="8235.1.1"}
+	8254.1.1 = {add_spouse=130360020} #Гацор mo Eraz
+}
+134360017 = {
+	name="Феллеззара"	# not a lord
+	female=yes
+	dynasty=360017
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=128360017
+	mother=228360017
+
+	8236.1.1 = {birth="8236.1.1"}
+	8279.1.1 = {death="8279.1.1"}
+}
+135360017 = {
+	name="Сецка"	# not a lord
+	female=yes
+	dynasty=360017
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=132360017
+	mother=232360017
+
+	8253.1.1 = {birth="8253.1.1"}
+	8295.1.1 = {death="8295.1.1"}
+}
+136360017 = {
+	name="Хиздар"	# a lord
+	dynasty=360017
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=128360017
+	mother=228360017
+
+	8235.1.1 = {birth="8235.1.1"}
+	8251.1.1 = {add_trait=master_warrior}
+	8253.1.1 = {add_spouse=236360017}
+	8258.1.1 = {}
+	8291.1.1 = {death="8291.1.1"}
+}
+236360017 = {
+	name="Беллецца"
+	female=yes
+
+	religion="harpy"
+	culture="yunkaii"
+
+	8235.1.1 = {birth="8235.1.1"}
+	8291.1.1 = {death="8291.1.1"}
+}
+137360017 = {
+	name="Резнак"	# not a lord
+	dynasty=360017
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=132360017
+	mother=232360017
+
+	8256.1.1 = {birth="8256.1.1"}
+	8272.1.1 = {add_trait=skilled_warrior}
+}
+
+
+###  The Clanker Lords
+6571011 = {
+	name="Мезон"  ## Canon
+	dynasty = 360017 
+
+	martial = 3
+	diplomacy = 3
+	intrigue = 7
+	stewardship = 4
+	learning = 5
+
+	culture = yunkaii
+	religion = harpy 
+
+	father=136360017
+	mother=236360017		
+	
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="deceitful"
+	add_trait="ruthless"
+	
+	8254.1.1 = {
+		birth="8254.1.1"
+	}
+	8270.1.1 = { 
+		add_trait=misguided_warrior
+	}
+}
+
+6571012 = {
+	name="Чездар"  ## Canon
+	dynasty = 360017 
+
+	martial = 3
+	diplomacy = 3
+	intrigue = 7
+	stewardship = 4
+	learning = 5
+
+	culture = yunkaii
+	religion = harpy 
+
+	father=136360017
+	mother=236360017		
+	
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="deceitful"
+	add_trait="ruthless"
+	
+	8256.1.1 = {
+		birth="8256.1.1"
+	}
+	8272.1.1 = { 
+		add_trait=misguided_warrior
+	}
+}
+
+6571013 = {
+	name="Граздан"  ## Canon
+	dynasty = 360017 
+
+	martial = 3
+	diplomacy = 3
+	intrigue = 7
+	stewardship = 4
+	learning = 5
+
+	culture = yunkaii
+	religion = harpy 
+
+	father=136360017
+	mother=236360017		
+	
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="deceitful"
+	add_trait="ruthless"
+	
+	8258.1.1 = {
+		birth="8258.1.1"
+	}
+	8274.1.1 = { 
+		add_trait=misguided_warrior
+	}
+}
+
+
+############################
+### Yunkish minor houses ###
+############################
+### House Zherzyn
+345360021 = {
+	name="Газдор"	# a lord
+	dynasty=360021
+	
+	religion="harpy"
+	culture="yunkaii"
+		
+	7830.1.1 = {birth="7830.1.1"}
+	7879.1.1 = {death="7879.1.1"}
+}
+344360021 = {
+	name="Хиздар"	# a lord
+	dynasty=360021
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=345360021
+	
+	7848.1.1 = {birth="7848.1.1"}
+	7909.1.1 = {death="7909.1.1"}
+}
+343360021 = {
+	name="Граздан"	# a lord
+	dynasty=360021
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=344360021
+	
+	7866.1.1 = {birth="7866.1.1"}
+	7920.1.1 = {death="7920.1.1"}
+}
+342360021 = {
+	name="Задрак"	# a lord
+	dynasty=360021
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=343360021
+	
+	7887.1.1 = {birth="7887.1.1"}
+	7944.1.1 = {death="7944.1.1"}
+}
+341360021 = {
+	name="Ухзак"	# a lord
+	dynasty=360021
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=342360021
+	
+	7912.1.1 = {birth="7912.1.1"}
+	7976.1.1 = {death="7976.1.1"}
+}
+340360021 = {
+	name="Морхаз"	# a lord
+	dynasty=360021
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=341360021
+	
+	7937.1.1 = {birth="7937.1.1"}
+	7980.1.1 = {death="7980.1.1"}
+}
+150360021 = {
+	name="Хиздар"	# a lord
+	dynasty=360021
+
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=340360021
+
+	7960.1.1 = {birth="7960.1.1"}
+	8014.1.1 = {death="8014.1.1"}
+}
+100360021 = {
+	name="Граздан"	# a lord
+	dynasty=360021
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=150360021
+
+	7982.1.1 = {birth="7982.1.1"}
+	8016.1.1 = {add_trait=poor_warrior}
+	8025.1.1 = {death="8025.1.1"}
+}
+101360021 = {
+	name="Мархазво"	# a lord
+	dynasty=360021
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=100360021
+
+	8006.1.1 = {birth="8006.1.1"}
+	8034.1.1 = {add_trait=trained_warrior}
+	8060.1.1 = {death="8060.1.1"}
+}
+103360021 = {
+	name="Схарказ"	# a lord
+	dynasty=360021
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=101360021
+
+	8037.1.1 = {birth="8037.1.1"}
+	8065.1.1 = {add_trait=trained_warrior}
+	8095.1.1 = {death = {death_reason = death_accident}}
+}
+106360021 = {
+	name="Скахаз"	# a lord
+	dynasty=360021
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=103360021
+
+	8078.1.1 = {birth="8078.1.1"}
+	8094.1.1 = {add_trait=trained_warrior}
+	8134.1.1 = {death="8134.1.1"}
+}
+111360021 = {
+	name="Мезон"	# a lord
+	dynasty=360021
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=106360021
+
+	8106.1.1 = {birth="8106.1.1"}
+	8122.1.1 = {add_trait=skilled_warrior}
+	8165.1.1 = {death="8165.1.1"}
+}
+114360021 = {
+	name="Пецдар"	# a lord
+	dynasty=360021
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=111360021
+
+	8131.1.1 = {birth="8131.1.1"}
+	8147.1.1 = {add_trait=trained_warrior}
+	8171.1.1 = {death="8171.1.1"}
+}
+115360021 = {
+	name="Граздан"	# a lord
+	dynasty=360021
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=114360021
+
+	8152.1.1 = {birth="8152.1.1"}
+	8171.1.1 = {}
+	8173.1.1 = {add_trait=poor_warrior}
+	8225.1.1 = {death="8225.1.1"}
+}
+121360021 = {
+	name="Резнак"	# a lord
+	dynasty=360021
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=115360021
+
+	8180.1.1 = {birth="8180.1.1"}
+	8196.1.1 = {add_trait=poor_warrior}
+	8198.1.1 = {add_spouse=221360021}
+	8255.1.1 = {death="8255.1.1"}
+}
+221360021 = {
+	name="Эззара"
+	female=yes
+
+	religion="harpy"
+	culture="yunkaii"
+
+	8180.1.1 = {birth="8180.1.1"}
+	8255.1.1 = {death="8255.1.1"}
+}
+123360021 = {
+	name="Ецца"	# not a lord
+	female=yes
+	dynasty=360021
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=121360021
+	mother=221360021
+
+	8213.1.1 = {birth="8213.1.1"}
+	8229.1.1 = {death="8229.1.1"}
+}
+124360021 = {
+	name="Мархаз"	# a lord
+	dynasty=360021
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=121360021
+	mother=221360021
+
+	8215.1.1 = {birth="8215.1.1"}
+	8231.1.1 = {add_trait=poor_warrior}
+	8233.1.1 = {add_spouse=224360021}
+	8286.1.1 = {death="8286.1.1"}
+}
+224360021 = {
+	name="Мелеззара"
+	female=yes
+
+	religion="harpy"
+	culture="yunkaii"
+
+	8215.1.1 = {birth="8215.1.1"}
+	8286.1.1 = {death="8286.1.1"}
+}
+125360021 = {
+	name="Сецца"	# not a lord
+	female=yes
+	dynasty=360021
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=121360021
+	mother=221360021
+
+	8218.1.1 = {birth="8218.1.1"}
+	8254.1.1 = {death="8254.1.1"}
+}
+126360021 = {
+	name="Беллара"	# not a lord
+	female=yes
+	dynasty=360021
+
+	religion="harpy"
+	culture="yunkaii"
+
+	father=121360021
+	mother=221360021
+
+	8221.1.1 = {birth="8221.1.1"}
+	8250.1.1 = {death="8250.1.1"}
+}
+
+6571006 = {
+	name="Морхаз"  # Canon, the Drunken Conqueror
+	dynasty = 360021 
+
+	martial = 1
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 5
+	learning = 5
+
+	culture = yunkaii
+	religion = harpy
+
+	father=124360021
+	mother=224360021 		
+	
+	add_trait="drunkard"
+	add_trait="wroth"
+	add_trait="proud"
+	add_trait="deceitful"
+	
+	8251.1.1 = {
+		birth="8251.1.1"
+	}
+	8267.1.1 = {
+		add_trait=misguided_warrior
+	}
+}
+
+#House Ahlaq
+357360019 = {
+	name="Граздан"	# a lord
+	dynasty=360019
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	7815.1.1 = {birth="7815.1.1"}
+	7869.1.1 = {death="7869.1.1"}
+}
+356360019 = {
+	name="Пецар"	# a lord
+	dynasty=360019
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=357360019
+	
+	7838.1.1 = {birth="7838.1.1"}
+	7892.1.1 = {death="7892.1.1"}
+}
+355360019 = {
+	name="Газхак"	# a lord
+	dynasty=360019
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=356360019
+	
+	7862.1.1 = {birth="7862.1.1"}
+	7917.1.1 = {death="7917.1.1"}
+}
+354360019 = {
+	name="Аццхак"	# a lord
+	dynasty=360019
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=355360019
+	
+	7885.1.1 = {birth="7885.1.1"}
+	7934.1.1 = {death="7934.1.1"}
+}
+353360019 = {
+	name="Гигхак"	# a lord
+	dynasty=360019
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=354360019
+	
+	7909.1.1 = {birth="7909.1.1"}
+	7961.1.1 = {death="7961.1.1"}
+}
+352360019 = {
+	name="Граздан"	# a lord
+	dynasty=360019
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=353360019
+	
+	7930.1.1 = {birth="7930.1.1"}
+	7986.1.1 = {death="7986.1.1"}
+}
+351360019 = {
+	name="Зеццан"	# a lord
+	dynasty=360019
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=352360019
+	
+	7955.1.1 = {birth="7955.1.1"}
+	8013.1.1 = {death="8013.1.1"}
+}
+350360019 = {
+	name="Кендаль"	# a lord
+	dynasty=360019
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=351360019
+	
+	7978.1.1 = {birth="7978.1.1"}
+	8026.1.1 = {death="8026.1.1"}
+}
+349360019 = {
+	name="Граздан"	# a lord
+	dynasty=360019
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=350360019
+	
+	8000.1.1 = {birth="8000.1.1"}
+	8048.1.1 = {death="8048.1.1"}
+}
+348360019 = {
+	name="Задрак"	# a lord
+	dynasty=360019
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=349360019
+	
+	8022.1.1 = {birth="8022.1.1"}
+	8073.1.1 = {death="8073.1.1"}
+}
+347360019 = {
+	name="Яццак"	# a lord
+	dynasty=360019
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=348360019
+	
+	8045.1.1 = {birth="8045.1.1"}
+	8099.1.1 = {death="8099.1.1"}
+}
+346360019 = {
+	name="Мезон"	# a lord
+	dynasty=360019
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=347360019
+	
+	8068.1.1 = {birth="8068.1.1"}
+	8121.1.1 = {death="8121.1.1"}
+}
+345360019 = {
+	name="Граздан"	# a lord
+	dynasty=360019
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=346360019
+	
+	8090.1.1 = {birth="8090.1.1"}
+	8144.1.1 = {death="8144.1.1"}
+}
+344360019 = {
+	name="Баргаз"	# a lord
+	dynasty=360019
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=345360019
+	
+	8116.1.1 = {birth="8116.1.1"}
+	8189.1.1 = {death="8189.1.1"}
+}
+343360019 = {
+	name="Аззак"	# a lord
+	dynasty=360019
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=344360019
+	
+	8140.1.1 = {birth="8140.1.1"}
+	8211.1.1 = {death="8211.1.1"}
+}
+342360019 = {
+	name="Хазрак"	# a lord
+	dynasty=360019
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=343360019
+	
+	8163.1.1 = {birth="8163.1.1"}
+	8224.1.1 = {death="8224.1.1"}
+}
+341360019 = {
+	name="Гразхар"	# a lord
+	dynasty=360019
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=342360019
+	
+	8189.1.1 = {birth="8189.1.1"}
+	8240.1.1 = {death="8240.1.1"}
+}
+340360019 = {
+	name="Граздан"	# a lord
+	dynasty=360019
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=341360019
+	
+	8215.1.1 = {birth="8215.1.1"}
+	8258.1.1 = {death="8258.1.1"}
+}
+12360019 = {
+	name="Граздар"
+	dynasty=360019 
+	
+	culture = yunkaii
+	religion = harpy 
+	
+	father=340360019
+	
+	8238.1.1 = {
+		birth="8238.1.1"
+		employer=6571003 #Юрхаз zo Юзнак
+	}
+	8257.1.1 = {add_spouse=13360019}
+	8290.1.1 = {death="8290.1.1"}
+}
+13360019 = {
+	name="Галацца"
+	female=yes 
+	
+	culture = yunkaii
+	religion = harpy 
+	
+	8238.1.1 = {birth="8238.1.1"}
+	8290.1.1 = {death="8290.1.1"}
+}
+360019 = {
+	name="Газдор"	## Canon, Lord Wobblecheeks
+	dynasty=360019 
+	
+	culture = yunkaii
+	religion = harpy 
+	
+	father=12360019
+	mother=13360019
+	
+	add_trait="kind"
+	add_trait="charitable"
+	add_trait="slow"
+	
+	8258.1.1 = {
+		birth="8258.1.1"
+		employer=6571003 #Юрхаз zo Юзнак
+	}
+}
+#his brothers
+10360019 = {
+	name="Граздан"
+	dynasty=360019 
+	
+	culture = yunkaii
+	religion = harpy 
+	
+	father=12360019
+	mother=13360019
+	
+	add_trait="slow"
+	
+	8262.1.1 = {
+		birth="8262.1.1"
+		employer=6571003 #Юрхаз zo Юзнак
+	}
+}
+11360019 = {
+	name="Гозрак"
+	dynasty=360019 
+	
+	culture = yunkaii
+	religion = harpy 
+	
+	father=12360019
+	mother=13360019
+	
+	add_trait="slow"
+	
+	8265.1.1 = {
+		birth="8265.1.1"
+		employer=6571003 #Юрхаз zo Юзнак
+	}
+}
+
+#House Faez
+358360018 = {
+	name="Граздан"	# a lord
+	dynasty=360018
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	7826.1.1 = {birth="7826.1.1"}
+	7882.1.1 = {death="7882.1.1"}
+}
+357360018 = {
+	name="Гозрак"	# a lord
+	dynasty=360018
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=358360018
+	
+	7849.1.1 = {birth="7849.1.1"}
+	7914.1.1 = {death="7914.1.1"}
+}
+356360018 = {
+	name="Миклаз"	# a lord
+	dynasty=360018
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=357360018
+	
+	7870.1.1 = {birth="7870.1.1"}
+	7925.1.1 = {death="7925.1.1"}
+}
+355360018 = {
+	name="Граздар"	# a lord
+	dynasty=360018
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=356360018
+	
+	7892.1.1 = {birth="7892.1.1"}
+	7939.1.1 = {death="7939.1.1"}
+}
+354360018 = {
+	name="Хиздар"	# a lord
+	dynasty=360018
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=355360018
+	
+	7915.1.1 = {birth="7915.1.1"}
+	7964.1.1 = {death="7964.1.1"}
+}
+353360018 = {
+	name="Аззак"	# a lord
+	dynasty=360018
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=354360018
+	
+	7937.1.1 = {birth="7937.1.1"}
+	7999.1.1 = {death="7999.1.1"}
+}
+352360018 = {
+	name="Ознак"	# a lord
+	dynasty=360018
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=353360018
+	
+	7958.1.1 = {birth="7958.1.1"}
+	8009.1.1 = {death="8009.1.1"}
+}
+351360018 = {
+	name="Пецар"	# a lord
+	dynasty=360018
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=352360018
+	
+	7979.1.1 = {birth="7979.1.1"}
+	8023.1.1 = {death="8023.1.1"}
+}
+350360018 = {
+	name="Зеццан"	# a lord
+	dynasty=360018
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=351360018
+	
+	8002.1.1 = {birth="8002.1.1"}
+	8049.1.1 = {death="8049.1.1"}
+}
+349360018 = {
+	name="Морхаз"	# a lord
+	dynasty=360018
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=350360018
+	
+	8020.1.1 = {birth="8020.1.1"}
+	8094.1.1 = {death="8094.1.1"}
+}
+348360018 = {
+	name="Раздал"	# a lord
+	dynasty=360018
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=349360018
+	
+	8047.1.1 = {birth="8047.1.1"}
+	8105.1.1 = {death="8105.1.1"}
+}
+347360018 = {
+	name="Резнак"	# a lord
+	dynasty=360018
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=348360018
+	
+	8075.1.1 = {birth="8075.1.1"}
+	8123.1.1 = {death="8123.1.1"}
+}
+346360018 = {
+	name="Лизнук"	# a lord
+	dynasty=360018
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=347360018
+	
+	8097.1.1 = {birth="8097.1.1"}
+	8141.1.1 = {death="8141.1.1"}
+}
+345360018 = {
+	name="Юрхаз"	# a lord
+	dynasty=360018
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=346360018
+	
+	8119.1.1 = {birth="8119.1.1"}
+	8177.1.1 = {death="8177.1.1"}
+}
+344360018 = {
+	name="Скахаз"	# a lord
+	dynasty=360018
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=345360018
+	
+	8138.1.1 = {birth="8138.1.1"}
+	8205.1.1 = {death="8205.1.1"}
+}
+343360018 = {
+	name="Оззан"	# a lord
+	dynasty=360018
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=344360018
+	
+	8159.1.1 = {birth="8159.1.1"}
+	8220.1.1 = {death="8220.1.1"}
+}
+342360018 = {
+	name="Граздан"	# a lord
+	dynasty=360018
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=343360018
+	
+	8182.1.1 = {birth="8182.1.1"}
+	8236.1.1 = {death="8236.1.1"}
+}
+341360018 = {
+	name="Хагдон"	# a lord
+	dynasty=360018
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=342360018
+	
+	8205.1.1 = {birth="8205.1.1"}
+	8266.1.1 = {death="8266.1.1"}
+}
+340360018 = {
+	name="Схизар"	# a lord
+	dynasty=360018
+	
+	religion="harpy"
+	culture="yunkaii"
+	
+	father=341360018
+	
+	8238.1.1 = {birth="8238.1.1"}
+	8275.1.1 = {death="8275.1.1"}
+}
+360018 = {
+	name="Фезар"	## Canon, the Rabbit
+	dynasty=360018
+	
+	culture = yunkaii
+	religion = harpy
+	
+	father=340360018
+	
+	add_trait=ugly
+	
+	8265.1.1 = {birth="8265.1.1"}
+	8280.1.1={ employer=6571003 }
+	8300.7.3 = { employer=6571004 }
+	8300.7.14 = { employer=6571006 }
+}
+
+###
+###Minor Wise Masters:
+###
+360150 = {
+	name="Малацца"	## Canon, Girl General
+	female=yes
+	dynasty=360150 #Uncanon, to ensure she isn't lowborn
+	
+	culture = yunkaii
+	religion = harpy 
+	
+	add_trait=lustful
+	add_trait=proud
+	
+	8283.1.1 = {
+		birth="8283.1.1"
+		employer=6571003 #Юрхаз zo Юзнак
+	}
+	8299.1.1 = {
+		add_trait=misguided_warrior
+	}
+	8300.7.3 = { employer=6571004 }
+	8300.7.14 = { employer=6571006 }
+}
+360151 = {
+	name="Цахрина"	## Canon, tried to buy Jorah
+	female=yes
+	dynasty=360151 #Uncanon, to ensure she isn't lowborn
+	
+	culture = yunkaii
+	religion = harpy 
+	
+	add_trait=lustful
+	add_trait=proud
+	
+	8228.1.1 = {birth="8228.1.1"}
+	8244.1.1 = { add_trait=fortune_builder }
+	8280.1.1 = { employer=6571003 }
+	8300.7.3 = { employer=6571004 }
+	8300.7.14 = { employer=6571006 }
+}
+
+######### We have too little information about these three and we chose to not include their nicknames:
+### Charioteer
+### Beastmaster
+### Perfumed Hero
+
+
+ 
+################
+### Freedmen ###
+################
+179360028 = {
+	name="Рилона" #Canon, Rylona Rhee
+	female=yes
+
+	culture = yunkaii
+	religion = harpy 
+	
+	add_trait=patient
+	add_trait=quick
+	add_trait=authoritative
+	
+	8260.1.1 = { 
+		birth="8260.1.1"
+		add_trait=slave
+		effect = {
+			if = {
+				limit = { NOT = { start_date=8300.1.1 } }
+				b_yunzak = {
+					holder_scope = {
+						ROOT = { move_character = PREV }
+						reverse_opinion = { who = ROOT modifier = opinion_my_owner }
+						reverse_opinion = { who = ROOT modifier = opinion_loyal_servant }
+						opinion = { who = ROOT modifier = opinion_my_slave }
+					}
+				}
+			}
+		}
+	}
+	8276.1.1 = {
+		add_trait=poet
+	}
+	8300.1.1 = {
+		employer=77041
+		remove_trait=slave
+		add_trait = former_slave
+	}
+	8300.1.20 = {
+		death = {
+			death_reason=death_murder
+		}
+	}
+}

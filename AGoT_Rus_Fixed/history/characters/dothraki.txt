@@ -1,0 +1,5536 @@
+###Dothraki
+
+####Dothraki Domains
+# 999000113 = {
+	# name=""
+	# religion="dothraki_domain_rel"
+	# culture="dothraki_domain_culture"	
+	# dynasty=314001
+	
+	# martial = 0
+	# diplomacy = 0
+	# intrigue = 0
+	# stewardship = 10
+	# learning = 0
+	
+	# 7900.1.1 = { 
+		# birth="7900.1.1" 
+		# effect = {
+			# change_stewardship = 90
+			# wealth = -1000
+			# add_trait=dothraki_domain
+			# any_realm_province = { 
+				# add_province_modifier = {
+					# name = dothraki_domain
+					# duration = -1
+				# }
+			# }	
+		# }
+	# }
+# }
+###
+
+######################
+### Historic Khals ###
+######################
+
+###Line of Менго###
+100600207 = {
+	name ="Менго" # First to unite the Dothraki after the doom
+	dynasty = 600207
+	dna = adcajslfbbr
+	properties = kg0adk
+	
+	martial = 9
+	diplomacy = 10
+	stewardship = 4
+	intrigue = 7
+	learning = 4
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	add_trait = brilliant_strategist
+	add_trait = strong
+	add_trait = authoritative
+	add_trait = ruthless
+	add_trait = ambitious
+	add_trait = deceitful
+
+	add_trait = cavalry_leader
+	add_trait = aggressive_leader
+
+	mother = 101600207
+	
+	7860.1.1 = { 
+		birth="7860.1.1" 
+	}
+	7876.1.1 = {
+		add_trait="skilled_warrior"
+		effect = { set_character_flag = flag_dothraki_dynasty_founded }
+	}
+	7898.1.1 = {
+		effect = {
+			prestige = 2000
+			wealth = 300
+			add_character_modifier = {
+				name = greatest_of_khans
+				duration = -1
+			}
+			health = 2.5
+			capital_scope = {
+				ROOT = {
+					spawn_unit = {
+						province = PREV
+						troops = {
+							horse_archers = { 500 500 }
+							light_cavalry = { 2000 2000 }
+						}
+						attrition = 0.5
+						earmark = dummy #needed for CTD
+					}
+					spawn_unit = {
+						province = PREV
+						troops = {
+							horse_archers = { 500 500 }
+							light_cavalry = { 2000 2000 }
+						}
+						attrition = 0.5
+						earmark = dummy #needed for CTD
+					}
+					spawn_unit = {
+						province = PREV
+						troops = {
+							horse_archers = { 500 500 }
+							light_cavalry = { 2000 2000 }
+						}
+						attrition = 0.5
+						earmark = dummy #needed for CTD
+					}
+					spawn_unit = {
+						province = PREV
+						troops = {
+							horse_archers = { 500 500 }
+							light_cavalry = { 2000 2000 }
+						}
+						attrition = 0.5
+						earmark = dummy #needed for CTD
+					}
+				}
+			}
+		}
+	}
+	7928.1.1 = {death="7928.1.1"}
+}
+101600207 = {
+	name ="Доши" # Менго's mother
+	female = yes
+	
+	martial = 4
+	diplomacy = 10
+	stewardship = 6
+	intrigue = 8
+	learning = 7
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	add_trait = elusive_shadow
+	add_trait = quick
+	add_trait = authoritative
+	add_trait = ambitious
+	add_trait = mystic
+
+	7840.1.1 = { 
+		birth="7840.1.1" 
+	}
+	7886.1.1 = {
+		add_trait = dosh_khaleen
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				c_dosh_khaleen = { holder_scope = { ROOT = { move_character = PREV } } }
+			}	
+		}
+	}
+	7911.1.1 = {death="7911.1.1"}
+}
+102600207 = {
+	name = "Моро" # Менго's succesor
+	dynasty = 600207
+	
+	martial = 6
+	diplomacy = 2
+	stewardship = 2
+	intrigue = 2
+	learning = 2
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	add_trait = skilled_tactician
+	add_trait = authoritative
+	add_trait = ruthless
+	add_trait = ambitious
+	add_trait = cavalry_leader
+
+	father = 100600207
+	
+	7892.1.1 = { 
+		birth="7892.1.1" 
+	}
+	7908.1.1 = {
+		add_trait="skilled_warrior"
+	}
+	7946.1.1 = {
+		death={
+			death_reason = death_duel
+			killer = 100600208 #Khal Хорро
+		}
+	}
+}
+103600207 = {
+	name = "Ирри" # Unnamed daughter of Моро
+	dynasty = 600207
+	female=yes
+	
+	martial = 3
+	diplomacy = 5
+	stewardship = 3
+	intrigue = 8
+	learning = 2
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	add_trait = intricate_webweaver
+	add_trait = wroth
+	add_trait = ruthless
+	add_trait = proud
+
+	father = 102600207
+	
+	7918.1.1 = { 
+		birth="7918.1.1" 
+	}
+	7951.1.1 = {
+		add_trait=dosh_khaleen
+	}
+	7998.1.1 = {death="7998.1.1"}
+}
+100600208 = {
+	name = "Хорро" # last of the great khals
+	dynasty = 600208
+	
+	martial = 7
+	diplomacy = 5
+	stewardship = 4
+	intrigue = 3
+	learning = 1
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	add_trait = tough_soldier
+	add_trait = strong
+	add_trait = cruel
+	add_trait = ambitious
+	add_trait = greedy
+	add_trait = cavalry_leader
+
+	7920.1.1 = { 
+		birth="7920.1.1" 
+	}
+	7936.1.1 = {
+		add_trait="skilled_warrior"
+	}
+	7948.1.1 = {add_spouse=103600207} #Daughter of Mero
+	7951.1.1 = {
+		death={
+			death_reason = death_duel
+			killer=600222 #Khal Зхако? I made him next ruler of vaes dothrak
+		}
+	}
+}
+###Line of Онко###
+100600209 = {
+	name = "Онко" #Died attacking Ibben
+	dynasty = 600209
+	
+	martial = 6
+	diplomacy = 4
+	stewardship = 2
+	intrigue = 4
+	learning = 2
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	add_trait = tough_soldier
+	add_trait = authoritative
+	add_trait = wroth
+	add_trait = ambitious
+	add_trait = cavalry_leader
+
+	7910.1.1 = { 
+		birth="7910.1.1" 
+	}
+	7926.1.1 = {
+		add_trait="skilled_warrior"
+	}
+	7959.1.1 = {
+		death={
+			death_reason = death_battle
+		}
+	}
+}
+101600209 = {
+	name = "Дрого" #Unnamed son
+	dynasty = 600209
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	father = 100600209
+
+	7930.1.1 = { 
+		birth="7930.1.1" 
+	}
+	7946.1.1 = {
+		add_trait="skilled_warrior"
+	}
+	7959.1.1 = {
+		death={
+			death_reason = death_battle
+		}
+	}
+}
+102600209 = {
+	name = "Дхако" #The Dragon of the North
+	dynasty = 600209
+	
+	martial = 7
+	diplomacy = 3
+	stewardship = 3
+	intrigue = 3
+	learning = 1
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	add_trait = tough_soldier
+	add_trait = cruel
+	add_trait = wroth
+	add_trait = ruthless
+	add_trait = ambitious
+	add_trait = cavalry_leader
+
+	father = 101600209
+
+	7946.1.1 = { 
+		birth="7946.1.1" 
+	}
+	7962.1.1 = {
+		add_trait="skilled_warrior"	
+	}
+	7970.1.1 = {
+		give_nickname = nick_the_dragon_of_the_north
+		add_spouse = 103600209
+	}
+	7998.1.1 = {
+		add_trait = eunuch
+		add_trait = disfigured_AGOT
+		death = {
+			death_reason = death_execution_dothraki_mutilation
+			killer = 100600210
+		}
+	}
+}
+103600209 = {
+	name = "Чхику" #wife
+	female = yes
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	7946.1.1 = { 
+		birth="7946.1.1" 
+		effect = {  
+			dynasty = none
+		}
+	}
+	7998.1.1 = {
+		add_trait = disfigured_AGOT
+		death = {
+			death_reason = death_execution_dothraki_mutilation
+			killer = 100600210
+		}
+	}
+}
+104600209 = {
+	name = "Роммо"
+	dynasty = 600209
+		
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	add_trait = tough_soldier
+
+	father = 102600209
+	mother = 103600209
+
+	7970.1.1 = { 
+		birth="7970.1.1" 
+	}
+	7986.1.1 = {
+		add_trait="skilled_warrior"
+	}
+	7998.1.1 = {
+		add_trait = eunuch
+		add_trait = disfigured_AGOT
+		death = {
+			death_reason = death_execution_dothraki_mutilation
+			killer = 100600210
+		}
+	}
+}
+105600209 = {
+	name = "Коварро"
+	dynasty = 600209
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	add_trait = tough_soldier
+
+	father = 102600209
+	mother = 103600209
+
+	7972.1.1 = { 
+		birth="7972.1.1" 
+	}
+	7988.1.1 = {
+		add_trait="trained_warrior"
+	}
+	7998.1.1 = {
+		add_trait = eunuch
+		add_trait = disfigured_AGOT
+		death = {
+			death_reason = death_execution_dothraki_mutilation
+			killer = 100600210
+		}
+	}
+}
+106600209 = {
+	name = "Квото"
+	dynasty = 600209
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	add_trait = tough_soldier
+
+	father = 102600209
+	mother = 103600209
+
+	7978.1.1 = { 
+		birth="7978.1.1" 
+	}
+	7994.1.1 = {
+		add_trait="trained_warrior"
+	}
+	7998.1.1 = {
+		add_trait = eunuch
+		add_trait = disfigured_AGOT
+		death = {
+			death_reason = death_execution_dothraki_mutilation
+			killer = 100600210
+		}
+	}
+}
+107600209 = {
+	name = "Чассо"
+	dynasty = 600209
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	add_trait = tough_soldier
+
+	father = 102600209
+	mother = 103600209
+
+	7981.1.1 = { 
+		birth="7981.1.1" 
+	}
+	7997.1.1 = {
+		add_trait="skilled_warrior"
+	}
+	7998.1.1 = {
+		add_trait = eunuch
+		add_trait = disfigured_AGOT
+		death = {
+			death_reason = death_execution_dothraki_mutilation
+			killer = 100600210
+		}
+	}
+}
+108600209 = {
+	name = "Золло"
+	dynasty = 600209
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	father = 102600209
+	mother = 103600209
+
+	7983.1.1 = { 
+		birth="7983.1.1" 
+	}
+	7998.1.1 = {
+		add_trait = eunuch
+		add_trait = disfigured_AGOT
+		death = {
+			death_reason = death_execution_dothraki_mutilation
+			killer = 100600210
+		}
+	}
+}
+###
+100600210 = {
+	name = "Теммо" #Died attacking Qohor
+	dynasty = 600210
+	
+	martial = 4
+	diplomacy = 5
+	stewardship = 2
+	intrigue = 6
+	learning = 2
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	add_trait = skilled_tactician
+	add_trait = greedy
+	add_trait = cruel
+	add_trait = impaler
+	add_trait = ruthless
+	add_trait = ambitious
+	add_trait = cavalry_leader
+
+	7960.1.1 = { 
+		birth="7960.1.1" 
+	}
+	7976.1.1 = {
+		add_trait="master_warrior"	
+	}
+	7999.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 100300567
+		}
+	}
+}
+#His sons
+101600210 = {
+	name = "Саво" #Died attacking Qohor
+	dynasty = 600210
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	father=100600210
+
+	7979.1.1 = { 
+		birth="7979.1.1" 
+	}
+	7995.1.1 = {
+		add_trait="trained_warrior"	
+	}
+	7999.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 100300567
+		}
+	}
+}
+102600210 = {
+	name = "Фого" #Died attacking Qohor
+	dynasty = 600210
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	father=100600210
+
+	7981.1.1 = { 
+		birth="7981.1.1" 
+	}
+	7997.1.1 = {
+		add_trait="trained_warrior"	
+	}
+	7999.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 100300567
+		}
+	}
+}
+103600210 = {
+	name = "Рого" #Died attacking Qohor
+	dynasty = 600210
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	father=100600210
+
+	7983.1.1 = { 
+		birth="7983.1.1" 
+	}
+	7999.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 100300567
+		}
+	}
+}
+
+## Ibbish Attackers
+100600226 = {
+	name = "Скоро" # Canon, took Ibbish for the first time
+	dynasty = 600226
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	add_trait = skilled_tactician
+	add_trait = greedy
+	add_trait = ambitious
+	add_trait = zealous
+	
+	7917.1.1 = { 
+		birth="7917.1.1" # 45 during his conquest of Ibbish
+	}
+	7933.1.1 = {
+		add_trait="skilled_warrior"
+	}
+	7966.1.1 = { 
+		death = { death_reason = death_murder }
+	}
+}
+100600227 = {
+	name = "Рого" # Canon, took Ibbish for the second time
+	dynasty = 600227
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	add_trait = skilled_tactician
+	add_trait = greedy
+	add_trait = ambitious
+	add_trait = zealous
+	
+	7940.1.1 = { 
+		birth="7940.1.1" # 32 during his conquest of Ibbish
+	}
+	7956.1.1 = {
+		add_trait="skilled_warrior"
+	}
+	7973.1.1 = { 
+		death = { death_reason = death_duel }
+	}
+}
+
+## Field of Crows Khals ##
+600221 = {
+	name = "Лосо" # Canon, Лосо the Lame, sacked Sarnath
+	dynasty = 600221
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	add_trait = skilled_tactician
+	add_trait = greedy
+	add_trait = cruel
+	add_trait = ruthless
+	add_trait = ambitious
+	add_trait = cavalry_leader
+
+	7934.1.1 = { 
+		birth="7934.1.1" # 41 during Field of Crows
+	}
+	7950.1.1 = {
+		add_trait="skilled_warrior"	
+		add_trait=trickster
+		give_nickname = nick_the_lame
+	}
+	7995.1.1 = { 
+		death = { death_reason = death_duel }
+	}
+}
+600222 = {
+	name = "Зхако" # Canon
+	dynasty = 600222
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	add_trait = skilled_tactician
+	add_trait = greedy
+	add_trait = ambitious
+	add_trait = cavalry_leader
+
+	7930.1.1 = { 
+		birth="7930.1.1" # 45 during Field of Crows
+	}
+	7946.1.1 = {
+		add_trait="skilled_warrior"	
+		add_trait=trickster
+	}
+	7978.1.1 = { 
+		death = { death_reason = death_battle }
+	}
+}
+600223 = {
+	name = "Квано" # Canon
+	dynasty = 600223
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	add_trait = skilled_tactician
+	add_trait = greedy
+	add_trait = ambitious
+	add_trait = cavalry_leader
+
+	7946.1.1 = { 
+		birth="7946.1.1" # 29 during Field of Crows
+	}
+	7964.1.1 = {
+		add_trait="skilled_warrior"	
+		add_trait=trickster
+	}
+	7985.1.1 = { 
+		death = { death_reason = death_battle }
+	}
+}
+600224 = {
+	name = "Харо" # Canon
+	dynasty = 600224
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	add_trait = tough_soldier
+	add_trait = greedy
+	add_trait = ambitious
+
+	7919.1.1 = { 
+		birth="7919.1.1" # 56 during Field of Crows
+	}
+	7935.1.1 = {
+		add_trait="skilled_warrior"	
+		add_trait=defensive_leader 
+	}
+	7975.1.1 = {
+		death = { 
+			death_reason = death_battle 
+			killer = 10056800  #Mazor Alexi
+		}
+	}
+}
+#Sacked Sarys, last Sarnori city
+600225 = {
+	name = "Зегго" # Canon
+	dynasty = 600225
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	add_trait = tough_soldier
+	add_trait = greedy
+	add_trait = ambitious
+
+	7951.1.1 = { 
+		birth="7951.1.1" #24 when he became Khal
+	}
+	7967.1.1 = {
+		add_trait="trained_warrior"	
+	}
+	7986.1.1 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+################################
+### Khal Дрого and his court ###
+################################
+300100 = {
+	name ="Дрого" # Khal Дрого
+	religion="dothraki_pagan"
+	culture="dothraki"
+	#dna="didlmobeaac"
+	#properties="0i00e"
+	dna="ckcmewlbbdl"
+	properties="0i00k"
+	
+	diplomacy = 7
+	martial = 5
+	stewardship = 5
+	intrigue = 8
+	learning = 5
+
+	add_trait = brilliant_strategist
+	add_trait = strong
+	add_trait = authoritative
+	add_trait = wroth
+	add_trait = brave
+	add_trait = ruthless
+	add_trait = cavalry_leader
+	add_trait = aggressive_leader
+	#add_trait = dothraki
+	
+	father = 1300100
+	
+	8268.1.1 = { 
+		birth="8268.1.1" 
+	}
+	8273.1.1 = { dynasty = 600200 }
+	8277.1.1 = { add_trait="poor_warrior" }
+	8279.1.1 = {
+		remove_trait="poor_warrior"
+		add_trait="trained_warrior"
+	}
+	8282.1.1 = {
+		remove_trait="trained_warrior"
+		add_trait="skilled_warrior"
+	}
+	8285.1.1 = {
+		remove_trait="skilled_warrior"
+		add_trait="master_warrior"
+	}
+	8287.1.1 = { 
+		dynasty = 600201 
+		effect = { set_character_flag = flag_dothraki_dynasty_founded }
+	}
+	
+	8290.1.1 = {	#Дрого's allies according to AFFC Appendix
+		effect = {
+			c_126600215 = { add_alliance = { who = ROOT years = 10 } }	#Khal Чоммо
+			c_137600213 = { add_alliance = { who = ROOT years = 10 } }	#Khal Моро
+		}
+	}
+	
+	8298.1.1 = {
+		add_spouse = 77041
+	}
+	8298.9.10 = { add_trait = wounded }
+	8298.10.10 = {
+		remove_trait = wounded
+		add_trait = incapable
+		death = { death_reason = death_trait }
+	}
+}
+
+1300100 = {
+	name = "Бхарбо" # Дрого's father
+	religion = "dothraki_pagan"
+	culture = "dothraki"
+	
+	add_trait=tough_soldier
+	add_trait=skilled_warrior
+	#add_trait = dothraki
+	
+	8243.1.1 = { 
+		birth = "8243.1.1" 
+	}
+	8273.1.1 = { 
+		dynasty = 600200 
+		effect = { set_character_flag = flag_dothraki_dynasty_founded }
+	}
+	8287.1.1 = { death = "8287.1.1" }
+}
+
+2300100 = {
+	name = "Рейго"
+	dynasty = 600201
+	religion = "dothraki_pagan"
+	culture = "dothraki"
+	
+	father = 300100
+	mother = 77041
+	
+	#add_trait = dothraki
+	
+	8298.10.9 = {
+		birth="8298.10.9" 
+		effect = { death = { death_reason = death_stillborn } } #make sure they are not alive
+	}
+	8298.10.10 = {
+		death = { death_reason = death_stillborn }
+	}
+}
+
+# Дрого's Bloodriders
+3300100 = {
+	name = "Кохолло"
+	religion = "dothraki_pagan"
+	culture = "dothraki"
+	
+	dynasty = 600220
+	employer = 1300100
+	
+	add_trait = tough_soldier
+	add_trait = trained_warrior
+	add_trait = ugly
+	add_trait = kind
+	add_trait = zealous
+	#add_trait = dothraki
+	
+	8245.1.1 = { 
+		birth = "8245.1.1" 
+		effect = { set_immune_to_pruning = yes }
+	}
+	8287.1.1 = { 
+		#employer = 300100
+		effect = { 
+			liege = { 
+				opinion = { who = ROOT modifier = opinion_bloodrider } 
+				clan_title = {
+					ROOT = {
+						clan_title = { create_oath = PREVPREV }
+					}	
+				}
+			}
+			give_minor_title = title_bloodrider 
+		}
+	}
+	8298.10.10 = {
+		death = {
+			death_reason = death_duel
+			killer = 7300100
+		}
+	}
+}
+
+4300100 = {
+	name = "Квото"
+	religion = "dothraki_pagan"
+	culture = "dothraki"
+	employer = 1300100
+	
+	add_trait = tough_soldier
+	add_trait = trained_warrior
+	add_trait = cruel
+	add_trait = wroth
+	add_trait = zealous
+	#add_trait = dothraki
+	
+	8261.1.1 = { 
+		birth = "8261.1.1" 
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8287.1.1 = { 
+		employer = 300100
+		effect = { 
+			liege = { opinion = { who = ROOT modifier = opinion_bloodrider } }
+			give_minor_title = title_bloodrider 
+		}
+	}
+	8298.10.10 = {
+		death = {
+			death_reason = death_duel
+			killer = 102
+		}
+	}
+}
+
+5300100 = {
+	name = "Хагго"
+	religion = "dothraki_pagan"
+	culture = "dothraki"
+	employer = 1300100
+	
+	add_trait = tough_soldier
+	add_trait = trained_warrior
+	add_trait = zealous
+	#add_trait = dothraki
+	
+	8264.1.1 = { 
+		birth = 8264.1.1 
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8287.1.1 = { 
+		employer = 300100
+		effect = { 
+			liege = { opinion = { who = ROOT modifier = opinion_bloodrider } }
+			give_minor_title = title_bloodrider 
+		}
+	}
+	8298.1.1 = {
+		death = {
+			death_reason = death_duel
+			killer = 8300100
+		}
+	}
+}
+# Дрого's Kos
+3300101 = {
+	name = "Поно"
+	dynasty = 600204
+	religion = "dothraki_pagan"
+	culture = "dothraki"
+	employer = 1300100
+	
+	add_trait = skilled_tactician
+	add_trait = ambitious
+	add_trait = wroth
+	#add_trait = dothraki
+	
+	8260.1.1 = { 
+		birth = "8260.1.1" 
+		effect = {
+			set_character_flag = flag_dothraki_dynasty_founded 
+			set_immune_to_pruning = yes
+		}
+	}
+	8276.1.1 = { add_trait = skilled_warrior }
+	8287.1.1 = { employer = 0 }
+}
+3300102 = {
+	name = "Чхако"
+	dynasty = 600205
+	religion = "dothraki_pagan"
+	culture = "dothraki"
+	employer = 1300100
+	
+	martial = 6
+	
+	add_trait = tough_soldier
+	add_trait = cruel
+	add_trait = ruthless
+	#add_trait = dothraki
+	
+	8266.1.1 = { 
+		birth = "8266.1.1" 
+		effect = { 
+			set_character_flag = flag_dothraki_dynasty_founded 
+			set_immune_to_pruning = yes
+		}
+	}
+	8282.1.1 = { add_trait = trained_warrior }
+	8287.1.1 = { employer = 0 }
+}
+3300103 = {
+	name = "Маго"
+	religion = "dothraki_pagan"
+	culture = "dothraki"
+	employer = 1300100
+	
+	martial = 4
+	
+	add_trait = tough_soldier
+	add_trait = cruel
+	add_trait = impaler
+	add_trait = proud
+	add_trait = wroth
+	#add_trait = dothraki
+	
+	8267.1.1 = { 
+		birth = "8267.1.1" 
+		effect = { set_immune_to_pruning = yes }
+	}
+	8283.1.1 = { add_trait = trained_warrior }
+	8287.1.1 = { 
+		employer = 3300102
+	}
+}
+# Daenerys's Bloodriders
+6300100 = {
+	name = "Чхого"
+	religion = "dothraki_pagan"
+	culture = "dothraki"
+	dna="c0kej0dbad0"
+	properties="qa0j0k"
+	
+	employer = 1300100
+	
+	add_trait = tough_soldier
+	
+	8282.1.1 = { 
+		birth = "8282.1.1" 
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8287.1.1 = { 
+		employer = 300100
+	}
+	8298.1.1 = { 
+		add_trait = trained_warrior
+	}
+	8298.10.10 = { employer = 3300101 }
+	8298.10.10 = {  # Дрого's death
+		employer = 77041 #Dany
+		effect = {
+			liege = {
+				opinion = {
+					modifier = opinion_bloodrider
+					who = ROOT
+					years = 100
+				}
+			}	
+		}
+	}
+}
+7300100 = {
+	name = "Арро"
+	religion = "dothraki_pagan"
+	culture = "dothraki"
+	dna="aejhd0kg0a0"
+	properties="ke0gg00b"
+
+	employer = 1300100
+	
+	add_trait = tough_soldier
+	
+	8278.1.1 = { 
+		birth = "8278.1.1" 
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8287.1.1 = { 
+		employer = 300100
+	}
+	8294.1.1 = { 
+		add_trait = trained_warrior
+	}
+	8298.10.10 = { employer = 3300101 }
+	8298.10.10 = {  # Дрого's death
+		employer = 77041 #Dany
+		effect = {
+			liege = {
+				opinion = {
+					modifier = opinion_bloodrider
+					who = ROOT
+					years = 100
+				}
+			}	
+		}
+	}
+}
+8300100 = {
+	name = "Ракхаро"
+	religion = "dothraki_pagan"
+	culture = "dothraki"
+	dna="chffe0kb0d0"
+	properties="pg0idk"
+
+	employer = 1300100
+	
+	add_trait = tough_soldier
+	add_trait = trained_warrior
+	add_trait = fair
+	add_trait = strong
+	
+	8276.1.1 = { 
+		birth = "8276.1.1" 
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8287.1.1 = { 
+		employer = 300100
+	}
+	8292.1.1 = { 
+		add_trait = trained_warrior
+	}
+	8298.10.10 = { employer = 3300101 }
+	8298.10.10 = {  # Дрого's death
+		employer = 77041 #Dany
+		effect = {
+			liege = {
+				opinion = {
+					modifier = opinion_bloodrider
+					who = ROOT
+					years = 100
+				}
+			}	
+		}
+	}
+}
+
+14300100 = { # Represents Daenerys' Khalasar in the absence of her bloodriders.
+	name="Роммо"
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	add_trait="brave"
+	add_trait="proud"
+	add_trait="diligent"
+	add_trait="robust"
+	add_trait="wroth"
+
+	8236.1.1 = {
+		birth = yes
+		effect = { set_immune_to_pruning = yes }
+	}
+	8262.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="trained_warrior"
+	}
+	8290.1.1 = {
+		employer = 300100
+	}
+	8298.10.10 = {
+		employer = 77041
+	}
+}
+# Daenerys's Handmaidens
+9300100 = {
+	name = "Ирри"
+	religion = "dothraki_pagan"
+	culture = "dothraki"
+	female = yes
+	employer = 1300100
+	
+	8284.1.1 = { 
+		birth = "8284.1.1" 
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8287.1.1 = { 
+		employer = 300100
+	}
+	8298.10.10 = { employer = 3300101 }
+	8298.10.10 = {  # Дрого's death
+		employer = 77041 #Dany
+	}
+}
+10300100 = {
+	name = "Чхику"
+	religion = "dothraki_pagan"
+	culture = "dothraki"
+	female = yes
+	employer = 1300100
+	
+	8284.1.1 = {
+		birth = "8284.1.1" 
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8287.1.1 = { 
+		employer = 300100
+	}
+	8298.10.10 = { employer = 3300101 }
+	8298.10.10 = {  # Дрого's death
+		employer = 77041 #Dany
+	}
+}
+11300100 = {
+	name = "Дорея"
+	religion = "rhllor"
+	culture = "lysene"
+	female = yes
+	
+	add_trait="fair"
+	add_trait="lustful"
+	add_trait="ambitious"
+	#add_trait = dothraki
+	
+	8283.1.1 = { 
+		birth = "8283.1.1" 
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8298.1.1 = { employer = 300100 }
+	8298.10.10 = { employer = 3300101 }
+	8298.10.10 = {  # Дрого's death
+		employer = 77041 #Dany
+	}
+	8299.1.1 = { add_trait = ill }
+	8299.3.1 = { death = { death_reason = death_trait } }
+}
+#Other Dany Courtiers
+12400101 = {
+	name = "Гролео"  #made an admiral by Daenerys
+	religion = "rhllor"
+	culture = "pentosi"
+	
+	martial = 4
+	stewardship = 3
+	diplomacy = 3
+	intrigue = 4
+	learning = 1
+	
+	add_trait="diligent"
+	add_trait="brilliant_strategist"
+	
+	8242.1.1 = { 
+		birth = "8242.1.1" 
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8258.1.1 = { 
+		add_trait="trained_warrior"
+	}
+	8284.1.1 = {
+		employer = 600000040 #Illyrio
+	}	
+	8299.6.1={ #Dany
+		employer = 77041
+	}
+	8300.5.1={
+		death = { #Executed as hostage
+			death_reason = death_execution
+			#killer = Bloodbeard
+		}
+	}
+}
+
+#########################################
+### Canon Khals in timespan of ASOIAF ###
+#########################################
+#Khal Зекко, roaming around Qohor
+101600206 = {
+	name = "Зекко" # Canon
+	dynasty=600206
+	religion = "dothraki_pagan"
+	culture = "dothraki"
+	
+	add_trait=tough_soldier
+	add_trait=patient
+	add_trait=diligent
+	
+	8268.1.1 = { 
+		birth = "8268.1.1" 
+		effect = { set_character_flag = flag_dothraki_dynasty_founded }
+	}
+	8284.1.1 = { 
+		add_trait = trained_warrior		
+	}
+}
+
+#Khal Моро, ally of Khal Дрого, came for his wedding in Pentos
+137600213 = { 
+	name="Моро"	# Canon
+	dynasty=600228
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8246.1.1 = {
+		birth="8246.1.1"
+		effect = { set_character_flag = flag_dothraki_dynasty_founded }
+	}
+	8262.1.1 = {add_trait=trained_warrior}
+	8264.1.1 = {add_spouse=437600213}
+}
+437600213 = {
+	name="Чхакки"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8246.1.1 = {birth="8246.1.1"}
+}
+138600213 = {
+	name="Рхогоро"	# Canon, not a lord
+	dynasty=600228
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=137600213
+	mother=437600213
+
+	8274.1.1 = {birth="8274.1.1"}
+	8290.1.1 = {add_trait=poor_warrior}
+}
+139600213 = {
+	name="Марро"	# not a lord
+	dynasty=600228
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=137600213
+	mother=437600213
+
+	8276.1.1 = {birth="8276.1.1"}
+	8292.1.1 = {add_trait=trained_warrior}
+}
+140600213 = {
+	name="Харро"	# not a lord
+	dynasty=600228
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=137600213
+	mother=437600213
+
+	8277.1.1 = {birth="8277.1.1"}
+	8293.1.1 = {add_trait=poor_warrior}
+}
+141600213 = {
+	name="Зхаки"	# not a lord
+	female=yes
+	dynasty=600228
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=137600213
+	mother=437600213
+
+	8280.1.1 = {birth="8280.1.1"}
+}
+
+#Khal Чоммо, Дрого's ally, came to observe stallion prophecy to Vaes Dothrak
+126600215 = {
+	name="Чоммо"	# Canon
+	dynasty=600229
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8267.1.1 = {
+		birth="8267.1.1"
+		effect = { set_character_flag = flag_dothraki_dynasty_founded }
+	}
+	8283.1.1 = {add_trait=poor_warrior}
+	8285.1.1 = {add_spouse=426600215}
+	8294.1.1 = { effect = { add_consort=425600215 } }
+	8296.1.1 = { 
+		effect = { 
+			add_consort=428600215
+			add_consort=429600215 
+		} 
+	}
+}
+#Four wives of Khal Чоммо
+426600215 = {
+	name="Зикки"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8267.1.1 = {birth="8267.1.1"}
+}
+425600215 = {
+	name="Чхики"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8278.1.1 = {birth="8278.1.1"}
+}
+428600215 = {
+	name="Тхирри"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8280.1.1 = {birth="8280.1.1"}
+}
+429600215 = {
+	name="Хавви"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8272.1.1 = {birth="8272.1.1"}
+}
+128600215 = {
+	name="Коварро"	# not a lord
+	dynasty=600229
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=126600215
+	mother=426600215
+
+	8290.1.1 = {birth="8290.1.1"}
+}
+129600215 = {
+	name="Лавакхи"	# not a lord
+	female=yes
+	dynasty=600229
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=126600215
+	mother=426600215
+
+	8293.1.1 = {birth="8293.1.1"}
+}
+
+#Khal Ого, present in Vaes Dothrak, killed by Дрого some time later
+125600216 = {
+	name="Ого"	# Canon
+	dynasty=600230
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8247.1.1 = {
+		birth="8247.1.1"
+		effect = { set_character_flag = flag_dothraki_dynasty_founded }
+	}
+	8263.1.1 = {add_trait=trained_warrior}
+	8265.1.1 = {add_spouse=425600216}
+	8298.9.10 = {
+		death={
+			death_reason = death_duel
+			killer = 300100 #Khal Дрого
+		}
+	}
+}
+425600216 = {
+	name="Кендри"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8247.1.1 = {birth="8247.1.1"}
+}
+127600216 = {
+	name="Фого"	# Canon, not a lord	 #changed from Тиххо
+	dynasty=600230
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=125600216
+	mother=425600216
+
+	8265.1.1 = {birth="8265.1.1"}
+	8281.1.1 = {add_trait=poor_warrior}
+	
+	8298.9.10 = {
+		death={
+			death_reason = death_duel
+			killer = 300100 #Khal Дрого
+		}
+	}
+}
+128600216 = {
+	name="Арро"	# not a lord
+	dynasty=600230
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=125600216
+	mother=425600216
+
+	8267.1.1 = {birth="8267.1.1"}
+	8283.1.1 = {add_trait=skilled_warrior}
+	8285.1.1 = {add_spouse=428600216}
+}
+428600216 = {
+	name="Квоти"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8267.1.1 = {birth="8267.1.1"}
+}
+129600216 = {
+	name="Хорро"	# not a lord
+	dynasty=600230
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=128600216
+	mother=428600216
+
+	8290.1.1 = {birth="8290.1.1"}
+}
+130600216 = {
+	name="Поно"	# not a lord
+	dynasty=600230
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=128600216
+	mother=428600216
+
+	8293.1.1 = {birth="8293.1.1"}
+}
+131600216 = {
+	name="Хеззо"	# not a lord
+	dynasty=600230
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=128600216
+	mother=428600216
+
+	8295.1.1 = {birth="8295.1.1"}
+}
+
+#Khal Мотхо, very old Khal roaming near Volantis
+140600219 = {
+	name="Мотхо"	# Canon, a lord #Changed from Малакхо
+	dynasty=600231
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8244.1.1 = {
+		birth="8244.1.1"
+		effect = { set_character_flag = flag_dothraki_dynasty_founded }
+	}
+	8260.1.1 = {add_trait=skilled_warrior}
+	8262.1.1 = {add_spouse=440600219}
+}
+440600219 = {
+	name="Коватти"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8244.1.1 = {birth="8244.1.1"}
+}
+141600219 = {
+	name="Чхого"	# not a lord
+	dynasty=600231
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=140600219
+	mother=440600219
+
+	8277.1.1 = {birth="8277.1.1"}
+	8293.1.1 = {add_trait=trained_warrior}
+}
+142600219 = {
+	name="Рхогоро"	# not a lord
+	dynasty=600231
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=140600219
+	mother=440600219
+
+	8279.1.1 = {birth="8279.1.1"}
+	8295.1.1 = {add_trait=trained_warrior}
+}
+
+###Dosh Kaleen###
+34110305 = {
+	name="Скори"	# a lord
+	female=yes
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	7862.1.1 = {birth="7862.1.1"}
+	7886.1.1 = {
+		add_trait = dosh_khaleen
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				c_dosh_khaleen = { holder_scope = { ROOT = { move_character = PREV } } }
+			}	
+		}
+	}
+	7940.1.1 = {death="7940.1.1"}
+}
+34010305 = {
+	name="Мири"	# a lord
+	female=yes
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	7899.1.1 = {birth="7899.1.1"}
+	7930.1.1 = {
+		add_trait = dosh_khaleen
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				c_dosh_khaleen = { holder_scope = { ROOT = { move_character = PREV } } }
+			}	
+		}
+	}
+	7960.1.1 = {death="7960.1.1"}
+}
+100010305 = {
+	name="Квири"	# a lord
+	female=yes
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	#add_trait = dothraki
+
+	7940.1.1 = {birth="7940.1.1"}
+	7980.1.1 = {
+		add_trait = dosh_khaleen
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				c_dosh_khaleen = { holder_scope = { ROOT = { move_character = PREV } } }
+			}	
+		}
+	}
+	8005.1.1 = {death="8005.1.1"}
+}
+101010305 = {
+	name="Ирри"	# a lord
+	female=yes
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	#add_trait = dothraki
+
+	7959.1.1 = {birth="7959.1.1"}
+	7999.1.1 = {
+		add_trait = dosh_khaleen
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				c_dosh_khaleen = { holder_scope = { ROOT = { move_character = PREV } } }
+			}	
+		}
+	}
+	8009.1.1 = {death="8009.1.1"}
+}
+102010305 = {
+	name="Мотхи"	# a lord
+	female=yes
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	#add_trait = dothraki
+
+	7985.1.1 = {birth="7985.1.1"}
+	8008.1.1 = {
+		add_trait = dosh_khaleen
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				c_dosh_khaleen = { holder_scope = { ROOT = { move_character = PREV } } }
+			}	
+		}
+	}
+	8050.1.1 = {death="8050.1.1"}
+}
+103010305 = {
+	name="Квири"	# a lord
+	female=yes
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	#add_trait = dothraki
+
+	8011.1.1 = {birth="8011.1.1"}
+	8045.1.1 = {
+		add_trait = dosh_khaleen
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				c_dosh_khaleen = { holder_scope = { ROOT = { move_character = PREV } } }
+			}	
+		}
+	}
+	8064.1.1 = {death="8064.1.1"}
+}
+104010305 = {
+	name="Рхогири"	# a lord
+	female=yes
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	#add_trait = dothraki
+
+	8040.1.1 = {birth="8040.1.1"}
+	8063.1.1 = {
+		add_trait = dosh_khaleen
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				c_dosh_khaleen = { holder_scope = { ROOT = { move_character = PREV } } }
+			}	
+		}
+	}
+	8098.1.1 = {death="8098.1.1"}
+}
+105010305 = {
+	name="Золли"	# a lord
+	female=yes
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	#add_trait = dothraki
+
+	8069.1.1 = {birth="8069.1.1"}
+	8095.1.1 = {
+		add_trait = dosh_khaleen
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				c_dosh_khaleen = { holder_scope = { ROOT = { move_character = PREV } } }
+			}	
+		}
+	}
+	8125.1.1 = {death="8125.1.1"}
+}
+106010305 = {
+	name="Кохолли"	# a lord
+	female=yes
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	#add_trait = dothraki
+
+	8088.1.1 = {birth="8088.1.1"}
+	8120.1.1 = {
+		add_trait = dosh_khaleen
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				c_dosh_khaleen = { holder_scope = { ROOT = { move_character = PREV } } }
+			}	
+		}
+	}
+	8142.1.1 = {death="8142.1.1"}
+}
+107010305 = {
+	name="Агги"	# a lord
+	female=yes
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	#add_trait = dothraki
+
+	8112.1.1 = {birth="8112.1.1"}
+	8140.1.1 = {
+		add_trait = dosh_khaleen
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				c_dosh_khaleen = { holder_scope = { ROOT = { move_character = PREV } } }
+			}	
+		}
+	}
+	8167.1.1 = {death="8167.1.1"}
+}
+108010305 = {
+	name="Чхику"	# a lord
+	female=yes
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	#add_trait = dothraki
+
+	8136.1.1 = {birth="8136.1.1"}
+	8165.1.1 = {
+		add_trait = dosh_khaleen
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				c_dosh_khaleen = { holder_scope = { ROOT = { move_character = PREV } } }
+			}	
+		}
+	}
+	8193.1.1 = {death="8193.1.1"}
+}
+109010305 = {
+	name="Мотхи"	# a lord
+	female=yes
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	#add_trait = dothraki
+
+	8165.1.1 = {birth="8165.1.1"}
+	8190.1.1 = {
+		add_trait = dosh_khaleen
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				c_dosh_khaleen = { holder_scope = { ROOT = { move_character = PREV } } }
+			}	
+		}
+	}
+	8225.1.1 = {death="8225.1.1"}
+}
+110010305 = {
+	name="Зикки"	# a lord
+	female=yes
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	#add_trait = dothraki
+
+	8192.1.1 = {birth="8192.1.1"}
+	8220.1.1 = {
+		add_trait = dosh_khaleen
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				c_dosh_khaleen = { holder_scope = { ROOT = { move_character = PREV } } }
+			}	
+		}
+	}
+	8241.1.1 = {death="8241.1.1"}
+}
+111010305 = {
+	name="Коварри"	# a lord
+	female=yes
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	#add_trait = dothraki
+
+	8211.1.1 = {birth="8211.1.1"}
+	8240.1.1 = {
+		add_trait = dosh_khaleen
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				c_dosh_khaleen = { holder_scope = { ROOT = { move_character = PREV } } }
+			}	
+		}
+	}
+	8268.1.1 = {death="8268.1.1"}
+}
+112010305 = {
+	name="Римми"	# a lord
+	female=yes
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	#add_trait = dothraki
+
+	8231.1.1 = {birth="8231.1.1"}
+	8260.1.1 = {
+		add_trait = dosh_khaleen
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				c_dosh_khaleen = { holder_scope = { ROOT = { move_character = PREV } } }
+			}	
+		}
+	}
+}
+### Khals of Rhaesh Jano
+100600202 = {
+	name="Чхако"	# a lord
+	dynasty=600202
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	#add_trait = dothraki
+
+	7966.1.1 = {birth="7966.1.1" effect = { set_character_flag = flag_dothraki_dynasty_founded } }
+	7982.1.1 = {add_trait=skilled_warrior}
+	8014.1.1 = {death="8014.1.1"}
+}
+102600202 = {
+	name="Чхако"	# a lord
+	dynasty=600202
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=100600202
+	
+	#add_trait = dothraki
+
+	7987.1.1 = {birth="7987.1.1"}
+	8003.1.1 = {add_trait=trained_warrior}
+	8055.1.1 = {death="8055.1.1"}
+}
+104600202 = {
+	name="Квото"	# a lord
+	dynasty=600202
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=102600202
+	
+	#add_trait = dothraki
+
+	8007.1.1 = {birth="8007.1.1"}
+	8023.1.1 = {add_trait=skilled_warrior}
+	8073.1.1 = {death="8073.1.1"}
+}
+107600202 = {
+	name="Маго"	# a lord
+	dynasty=600202
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=104600202
+	
+	#add_trait = dothraki
+
+	8026.1.1 = {birth="8026.1.1"}
+	8042.1.1 = {add_trait=trained_warrior}
+	8102.1.1 = {death="8102.1.1"}
+}
+109600202 = {
+	name="Рхогоро"	# not a lord
+	dynasty=600202
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=104600202
+
+	8030.1.1 = {birth="8030.1.1"}
+	8046.1.1 = {add_trait=poor_warrior}
+	8083.1.1 = {death="8083.1.1"}
+}
+111600202 = {
+	name="Бхарбо"	# a lord
+	dynasty=600202
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=109600202
+	
+	#add_trait = dothraki
+
+	8051.1.1 = {birth="8051.1.1"}
+	8067.1.1 = {add_trait=skilled_warrior}
+	8104.1.1 = {death="8104.1.1"}
+}
+112600202 = {
+	name="Моро"	# not a lord
+	dynasty=600202
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=109600202
+
+	8054.1.1 = {birth="8054.1.1"}
+	8070.1.1 = {add_trait=poor_warrior}
+	8097.1.1 = {death="8097.1.1"}
+}
+114600202 = {
+	name="Бхарбо"	# a lord
+	dynasty=600202
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=112600202
+	
+	#add_trait = dothraki
+
+	8082.1.1 = {birth="8082.1.1"}
+	8098.1.1 = {add_trait=trained_warrior}
+	8140.1.1 = {death="8140.1.1"}
+}
+117600202 = {
+	name="Фого"	# a lord
+	dynasty=600202
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=114600202
+	
+	#add_trait = dothraki
+
+	8106.1.1 = {birth="8106.1.1"}
+	8122.1.1 = {add_trait=skilled_warrior}
+	8144.1.1 = {death="8144.1.1"}
+}
+118600202 = {
+	name="Квото"	# a lord
+	dynasty=600202
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=117600202
+	
+	#add_trait = dothraki
+
+	8128.1.1 = {birth="8128.1.1"}
+	8144.1.1 = {add_trait=trained_warrior}
+	8180.1.1 = {death="8180.1.1"}
+}
+119600202 = {
+	name="Арро"	# a lord
+	dynasty=600202
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=118600202
+	
+	#add_trait = dothraki
+
+	8151.1.1 = {birth="8151.1.1"}
+	8167.1.1 = {add_trait=skilled_warrior}
+	8193.1.1 = {death="8193.1.1"}
+}
+120600202 = {
+	name="Бхарбо"	# a lord
+	dynasty=600202
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=118600202
+	
+	#add_trait = dothraki
+
+	8152.1.1 = {birth="8152.1.1"}
+	8168.1.1 = {add_trait=trained_warrior}
+	8202.1.1 = {death="8202.1.1"}
+}
+122600202 = {
+	name="Теммо"	# a lord
+	dynasty=600202
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=120600202
+	
+	#add_trait = dothraki
+
+	8183.1.1 = {birth="8183.1.1"}
+	8199.1.1 = {add_trait=trained_warrior}
+	8243.1.1 = {death="8243.1.1"}
+}
+127600202 = {
+	name="Дрого"	# a lord
+	dynasty=600202
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=122600202
+	
+	#add_trait = dothraki
+
+	8208.1.1 = {birth="8208.1.1"}
+	8224.1.1 = {add_trait=skilled_warrior}
+	8226.1.1 = {add_spouse=427600202}
+	8260.1.1 = {death="8260.1.1"}
+}
+427600202 = {
+	name="Хирри"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8208.1.1 = {birth="8208.1.1"}
+	8260.1.1 = {death="8260.1.1"}
+}
+128600202 = {
+	name="Малакхи"	# not a lord
+	female=yes
+	dynasty=600202
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=127600202
+	mother=427600202
+
+	8239.1.1 = {birth="8239.1.1"}
+	8297.1.1 = {death="8297.1.1"}
+}
+129600202 = {
+	name="Римми"	# not a lord
+	female=yes
+	dynasty=600202
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=127600202
+	mother=427600202
+
+	8242.1.1 = {birth="8242.1.1"}
+}
+130600202 = {
+	name="Золло"	# a lord
+	dynasty=600202
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=127600202
+	mother=427600202
+	
+	#add_trait = dothraki
+
+	8245.1.1 = {birth="8245.1.1"}
+	8261.1.1 = {add_trait=skilled_warrior}
+	8263.1.1 = {add_spouse=430600202}
+	8292.1.1 = {death="8292.1.1"}
+}
+430600202 = {
+	name="Чхику"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8245.1.1 = {birth="8245.1.1"}
+	8292.1.1 = {death="8292.1.1"}
+}
+131600202 = {
+	name="Квоти"	# not a lord
+	female=yes
+	dynasty=600202
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=130600202
+	mother=430600202
+
+	8272.1.1 = {birth="8272.1.1"}
+}
+132600202 = {
+	name="Золло"	# a lord
+	dynasty=600202
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=130600202
+	mother=430600202
+	
+	#add_trait = dothraki
+
+	8274.1.1 = {birth="8274.1.1"}
+	8290.1.1 = {add_trait=trained_warrior}
+}
+133600202 = {
+	name="Хирри"	# not a lord
+	female=yes
+	dynasty=600202
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=130600202
+	mother=430600202
+
+	8277.1.1 = {birth="8277.1.1"}
+}
+
+
+### Khals of Vaes Dothrak
+100600203 = {
+	name="Теммо"	# a lord
+	dynasty=600203
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	#add_trait = dothraki
+
+	7958.1.1 = {birth="7958.1.1" effect = { set_character_flag = flag_dothraki_dynasty_founded } }
+	7974.1.1 = {add_trait=skilled_warrior}
+	8018.1.1 = {death="8018.1.1"}
+}
+101600203 = {
+	name="Кохолло"	# a lord
+	dynasty=600203
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=100600203
+	
+	#add_trait = dothraki
+
+	7989.1.1 = {birth="7989.1.1"}
+	8005.1.1 = {add_trait=trained_warrior}
+	8049.1.1 = {death="8049.1.1"}
+}
+102600203 = {
+	name="Малакхо"	# not a lord
+	dynasty=600203
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=100600203
+
+	7990.1.1 = {birth="7990.1.1"}
+	8006.1.1 = {add_trait=trained_warrior}
+	8036.1.1 = {death="8036.1.1"}
+}
+104600203 = {
+	name="Чхако"	# a lord
+	dynasty=600203
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=102600203
+	
+	#add_trait = dothraki
+
+	8024.1.1 = {birth="8024.1.1"}
+	8040.1.1 = {add_trait=master_warrior}
+	8067.1.1 = {death="8067.1.1"}
+}
+105600203 = {
+	name="Роммо"	# a lord
+	dynasty=600203
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=104600203
+	
+	#add_trait = dothraki
+
+	8053.1.1 = {birth="8053.1.1"}
+	8069.1.1 = {add_trait=trained_warrior}
+	8108.1.1 = {death="8108.1.1"}
+}
+108600203 = {
+	name="Роммо"	# a lord
+	dynasty=600203
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=105600203
+	
+	#add_trait = dothraki
+
+	8087.1.1 = {birth="8087.1.1"}
+	8103.1.1 = {add_trait=skilled_warrior}
+	8126.1.1 = {death="8126.1.1"}
+}
+111600203 = {
+	name="Дрого"	# a lord
+	dynasty=600203
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=108600203
+	
+	#add_trait = dothraki
+
+	8115.1.1 = {birth="8115.1.1"}
+	8131.1.1 = {add_trait=trained_warrior}
+	8161.1.1 = {death="8161.1.1"}
+}
+114600203 = {
+	name="Арро"	# a lord
+	dynasty=600203
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=111600203
+	
+	#add_trait = dothraki
+
+	8144.1.1 = {birth="8144.1.1"}
+	8160.1.1 = {add_trait=trained_warrior}
+	8223.1.1 = {death = {death_reason = death_accident}}
+}
+116600203 = {
+	name="Дрого"	# a lord
+	dynasty=600203
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=114600203
+	
+	#add_trait = dothraki
+
+	8173.1.1 = {birth="8173.1.1"}
+	8189.1.1 = {add_trait=master_warrior}
+	8228.1.1 = {death="8228.1.1"}
+}
+117600203 = {
+	name="Чоммо"	# a lord
+	dynasty=600203
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=114600203
+	
+	#add_trait = dothraki
+
+	8176.1.1 = {birth="8176.1.1"}
+	8192.1.1 = {add_trait=trained_warrior}
+	8194.1.1 = {add_spouse=417600203}
+	8244.1.1 = {death="8244.1.1"}
+}
+417600203 = {
+	name="Ракхири"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8176.1.1 = {birth="8176.1.1"}
+	8244.1.1 = {death="8244.1.1"}
+}
+119600203 = {
+	name="Рхогири"	# not a lord
+	female=yes
+	dynasty=600203
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=116600203
+
+	8196.1.1 = {birth="8196.1.1"}
+	8263.1.1 = {death="8263.1.1"}
+}
+121600203 = {
+	name="Рхогири"	# not a lord
+	female=yes
+	dynasty=600203
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=117600203
+	mother=417600203
+
+	8208.1.1 = {birth="8208.1.1"}
+	8262.1.1 = {death="8262.1.1"}
+}
+122600203 = {
+	name="Кваро"	# a lord
+	dynasty=600203
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=117600203
+	mother=417600203
+	
+	#add_trait = dothraki
+
+	8209.1.1 = {birth="8209.1.1"}
+	8225.1.1 = {add_trait=poor_warrior}
+	8227.1.1 = {add_spouse=422600203}
+	8261.1.1 = {death="8261.1.1"}
+}
+422600203 = {
+	name="Игги"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8209.1.1 = {birth="8209.1.1"}
+	8261.1.1 = {death="8261.1.1"}
+}
+123600203 = {
+	name="Коварро"	# a lord
+	dynasty=600203
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=122600203
+	mother=422600203
+	
+	#add_trait = dothraki
+
+	8241.1.1 = {birth="8241.1.1"}
+	8257.1.1 = {add_trait=skilled_warrior}
+	8273.1.1 = {death = {death_reason = death_battle}}
+}
+
+
+### Khals of Krazzaj Zasque
+100600211 = {
+	name="Зирко"	# a lord
+	dynasty=600211
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	7965.1.1 = {birth="7965.1.1"}
+	7981.1.1 = {add_trait=skilled_warrior}
+	8022.1.1 = {death="8022.1.1"}
+}
+101600211 = {
+	name="Фого"	# a lord
+	dynasty=600211
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=100600211
+
+	7983.1.1 = {birth="7983.1.1"}
+	7999.1.1 = {add_trait=trained_warrior}
+	8058.1.1 = {death="8058.1.1"}
+}
+102600211 = {
+	name="Хеззо"	# a lord
+	dynasty=600211
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=101600211
+
+	8011.1.1 = {birth="8011.1.1"}
+	8027.1.1 = {add_trait=poor_warrior}
+	8066.1.1 = {death = {death_reason = death_accident}}
+}
+104600211 = {
+	name="Чарбо"	# a lord
+	dynasty=600211
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=101600211
+
+	8015.1.1 = {birth="8015.1.1"}
+	8031.1.1 = {add_trait=trained_warrior}
+	8067.1.1 = {death="8067.1.1"}
+}
+106600211 = {
+	name="Зирко"	# a lord
+	dynasty=600211
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=104600211
+
+	8038.1.1 = {birth="8038.1.1"}
+	8054.1.1 = {add_trait=poor_warrior}
+	8098.1.1 = {death="8098.1.1"}
+}
+111600211 = {
+	name="Скоро"	# a lord
+	dynasty=600211
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=106600211
+
+	8063.1.1 = {birth="8063.1.1"}
+	8079.1.1 = {add_trait=trained_warrior}
+	8113.1.1 = {death="8113.1.1"}
+}
+112600211 = {
+	name="Золло"	# a lord
+	dynasty=600211
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=106600211
+
+	8064.1.1 = {birth="8064.1.1"}
+	8080.1.1 = {add_trait=master_warrior}
+	8122.1.1 = {death="8122.1.1"}
+}
+115600211 = {
+	name="Тиххо"	# a lord
+	dynasty=600211
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=112600211
+
+	8091.1.1 = {birth="8091.1.1"}
+	8107.1.1 = {add_trait=trained_warrior}
+	8169.1.1 = {death="8169.1.1"}
+}
+118600211 = {
+	name="Ланно"	# a lord
+	dynasty=600211
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=115600211
+
+	8116.1.1 = {birth="8116.1.1"}
+	8132.1.1 = {add_trait=trained_warrior}
+	8193.1.1 = {death="8193.1.1"}
+}
+121600211 = {
+	name="Марро"	# a lord
+	dynasty=600211
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=118600211
+
+	8138.1.1 = {birth="8138.1.1"}
+	8154.1.1 = {add_trait=skilled_warrior}
+	8203.1.1 = {death = {death_reason = death_murder}}
+}
+123600211 = {
+	name="Моско"	# a lord
+	dynasty=600211
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=121600211
+
+	8156.1.1 = {birth="8156.1.1"}
+	8172.1.1 = {add_trait=trained_warrior}
+	8214.1.1 = {death="8214.1.1"}
+}
+126600211 = {
+	name="Аракхо"	# a lord
+	dynasty=600211
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=123600211
+
+	8191.1.1 = {birth="8191.1.1"}
+	8207.1.1 = {add_trait=poor_warrior}
+	8209.1.1 = {add_spouse=426600211}
+	8247.1.1 = {death="8247.1.1"}
+}
+426600211 = {
+	name="Чхику"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8191.1.1 = {birth="8191.1.1"}
+	8247.1.1 = {death="8247.1.1"}
+}
+127600211 = {
+	name="Золли"	# not a lord
+	female=yes
+	dynasty=600211
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=126600211
+	mother=426600211
+
+	8215.1.1 = {birth="8215.1.1"}
+	8294.1.1 = {death="8294.1.1"}
+}
+128600211 = {
+	name="Чассо"	# a lord
+	dynasty=600211
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=126600211
+	mother=426600211
+
+	8218.1.1 = {birth="8218.1.1"}
+	8234.1.1 = {add_trait=poor_warrior}
+	8236.1.1 = {add_spouse=428600211}
+	8256.1.1 = {death="8256.1.1"}
+}
+428600211 = {
+	name="Фитти"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8218.1.1 = {birth="8218.1.1"}
+	8256.1.1 = {death="8256.1.1"}
+}
+129600211 = {
+	name="Чолинни"	# not a lord
+	female=yes
+	dynasty=600211
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=128600211
+	mother=428600211
+
+	8246.1.1 = {birth="8246.1.1"}
+}
+130600211 = {
+	name="Брозхо"	# a lord
+	dynasty=600211
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=128600211
+	mother=428600211
+
+	8249.1.1 = {birth="8249.1.1"}
+	8265.1.1 = {add_trait=trained_warrior}
+	8267.1.1 = {add_spouse=430600211}
+}
+430600211 = {
+	name="Лекси"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8249.1.1 = {birth="8249.1.1"}
+}
+131600211 = {
+	name="Чхику"	# not a lord
+	female=yes
+	dynasty=600211
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=128600211
+	mother=428600211
+
+	8252.1.1 = {birth="8252.1.1"}
+}
+132600211 = {
+	name="Золло"	# not a lord
+	dynasty=600211
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=128600211
+	mother=428600211
+
+	8253.1.1 = {birth="8253.1.1"}
+	8269.1.1 = {add_trait=poor_warrior}
+	8271.1.1 = {add_spouse=432600211}
+}
+432600211 = {
+	name="Чхоги"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8253.1.1 = {birth="8253.1.1"}
+}
+133600211 = {
+	name="Хирри"	# not a lord
+	female=yes
+	dynasty=600211
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=130600211
+	mother=430600211
+
+	8280.1.1 = {birth="8280.1.1"}
+}
+134600211 = {
+	name="Токко"	# not a lord
+	dynasty=600211
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=132600211
+	mother=432600211
+
+	8274.1.1 = {birth="8274.1.1"}
+	8290.1.1 = {add_trait=poor_warrior}
+}
+135600211 = {
+	name="Коварри"	# not a lord
+	female=yes
+	dynasty=600211
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=132600211
+	mother=432600211
+
+	8277.1.1 = {birth="8277.1.1"}
+}
+136600211 = {
+	name="Теммо"	# not a lord
+	dynasty=600211
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=132600211
+	mother=432600211
+
+	8280.1.1 = {birth="8280.1.1"}
+	8296.1.1 = {add_trait=skilled_warrior}
+}
+137600211 = {
+	name="Роммо"	# not a lord
+	dynasty=600211
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=132600211
+	mother=432600211
+
+	8283.1.1 = {birth="8283.1.1"}
+	8299.1.1 = {add_trait=poor_warrior}
+}
+
+
+### Khals of Adakhakaleki
+100600212 = {
+	name="Онко"	# a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	7954.1.1 = {birth="7954.1.1"}
+	7970.1.1 = {add_trait=trained_warrior}
+	8004.1.1 = {death="8004.1.1"}
+}
+101600212 = {
+	name="Арро"	# not a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=100600212
+
+	7973.1.1 = {birth="7973.1.1"}
+	7989.1.1 = {add_trait=poor_warrior}
+	8003.1.1 = {death="8003.1.1"}
+}
+102600212 = {
+	name="Ремекко"	# a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=101600212
+
+	7996.1.1 = {birth="7996.1.1"}
+	8012.1.1 = {add_trait=skilled_warrior}
+	8058.1.1 = {death="8058.1.1"}
+}
+104600212 = {
+	name="Игго"	# a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=101600212
+
+	8001.1.1 = {birth="8001.1.1"}
+	8017.1.1 = {add_trait=skilled_warrior}
+	8059.1.1 = {death="8059.1.1"}
+}
+106600212 = {
+	name="Чхого"	# a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=104600212
+
+	8026.1.1 = {birth="8026.1.1"}
+	8042.1.1 = {add_trait=trained_warrior}
+	8078.1.1 = {death="8078.1.1"}
+}
+108600212 = {
+	name="Малакхо"	# a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=104600212
+
+	8031.1.1 = {birth="8031.1.1"}
+	8047.1.1 = {add_trait=trained_warrior}
+	8083.1.1 = {death="8083.1.1"}
+}
+109600212 = {
+	name="Маго"	# a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=106600212
+
+	8046.1.1 = {birth="8046.1.1"}
+	8062.1.1 = {add_trait=poor_warrior}
+	8082.1.1 = {death="8082.1.1"}
+}
+112600212 = {
+	name="Зегго"	# a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=108600212
+
+	8067.1.1 = {birth="8067.1.1"}
+	8083.1.1 = {add_trait=trained_warrior}
+	8134.1.1 = {death="8134.1.1"}
+}
+113600212 = {
+	name="Марро"	# not a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=112600212
+
+	8088.1.1 = {birth="8088.1.1"}
+	8104.1.1 = {add_trait=poor_warrior}
+	8115.1.1 = {death="8115.1.1"}
+}
+114600212 = {
+	name="Хорро"	# a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=112600212
+
+	8090.1.1 = {birth="8090.1.1"}
+	8106.1.1 = {add_trait=trained_warrior}
+	8140.1.1 = {death="8140.1.1"}
+}
+116600212 = {
+	name="Онко"	# a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=113600212
+
+	8112.1.1 = {birth="8112.1.1"}
+	8128.1.1 = {add_trait=skilled_warrior}
+	8168.1.1 = {death="8168.1.1"}
+}
+117600212 = {
+	name="Чхого"	# a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=114600212
+
+	8112.1.1 = {birth="8112.1.1"}
+	8128.1.1 = {add_trait=trained_warrior}
+	8164.1.1 = {death = {death_reason = death_accident}}
+}
+118600212 = {
+	name="Игго"	# a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=114600212
+
+	8115.1.1 = {birth="8115.1.1"}
+	8131.1.1 = {add_trait=skilled_warrior}
+	8167.1.1 = {death="8167.1.1"}
+}
+122600212 = {
+	name="Скоро"	# a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=118600212
+
+	8137.1.1 = {birth="8137.1.1"}
+	8153.1.1 = {add_trait=trained_warrior}
+	8199.1.1 = {death="8199.1.1"}
+}
+123600212 = {
+	name="Хеззо"	# a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=122600212
+
+	8172.1.1 = {birth="8172.1.1"}
+	8188.1.1 = {add_trait=trained_warrior}
+	8219.1.1 = {death="8219.1.1"}
+}
+125600212 = {
+	name="Бхарбо"	# not a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=122600212
+
+	8175.1.1 = {birth="8175.1.1"}
+	8191.1.1 = {add_trait=trained_warrior}
+	8222.1.1 = {death="8222.1.1"}
+}
+126600212 = {
+	name="Аракхо"	# a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=122600212
+
+	8178.1.1 = {birth="8178.1.1"}
+	8194.1.1 = {add_trait=skilled_warrior}
+	8234.1.1 = {death="8234.1.1"}
+}
+127600212 = {
+	name="Теммо"	# a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=123600212
+
+	8201.1.1 = {birth="8201.1.1"}
+	8217.1.1 = {add_trait=poor_warrior}
+	8251.1.1 = {death = {death_reason = death_murder}}
+}
+128600212 = {
+	name="Мотхо"	# not a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=126600212
+
+	8203.1.1 = {birth="8203.1.1"}
+	8219.1.1 = {add_trait=skilled_warrior}
+	8221.1.1 = {add_spouse=428600212}
+	8230.1.1 = {death="8230.1.1"}
+}
+428600212 = {
+	name="Зхаки"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8203.1.1 = {birth="8203.1.1"}
+	8230.1.1 = {death="8230.1.1"}
+}
+129600212 = {
+	name="Скори"	# not a lord
+	female=yes
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=128600212
+	mother=428600212
+
+	8225.1.1 = {birth="8225.1.1"}
+	8297.1.1 = {death="8297.1.1"}
+}
+130600212 = {
+	name="Чхого"	# not a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=128600212
+	mother=428600212
+
+	8226.1.1 = {birth="8226.1.1"}
+	8242.1.1 = {add_trait=skilled_warrior}
+	8244.1.1 = {add_spouse=430600212}
+	8290.1.1 = {death="8290.1.1"}
+}
+430600212 = {
+	name="Чхакки"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8226.1.1 = {birth="8226.1.1"}
+	8290.1.1 = {death="8290.1.1"}
+}
+133600212 = {
+	name="Кохолло"	# a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=125600212
+
+	8200.1.1 = {birth="8200.1.1"}
+	8216.1.1 = {add_trait=trained_warrior}
+	8218.1.1 = {add_spouse=433600212}
+	8257.1.1 = {death="8257.1.1"}
+}
+433600212 = {
+	name="Фитти"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8200.1.1 = {birth="8200.1.1"}
+	8257.1.1 = {death="8257.1.1"}
+}
+136600212 = {
+	name="Онко"	# a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=133600212
+	mother=433600212
+
+	8231.1.1 = {birth="8231.1.1"}
+	8247.1.1 = {add_trait=poor_warrior}
+	8249.1.1 = {add_spouse=436600212}
+	8269.1.1 = {death="8269.1.1"}
+}
+436600212 = {
+	name="Мири"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8231.1.1 = {birth="8231.1.1"}
+	8269.1.1 = {death="8269.1.1"}
+}
+137600212 = {
+	name="Зиганни"	# not a lord
+	female=yes
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=133600212
+	mother=433600212
+
+	8232.1.1 = {birth="8232.1.1"}
+	8291.1.1 = {death="8291.1.1"}
+}
+138600212 = {
+	name="Поно"	# not a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=133600212
+	mother=433600212
+
+	8235.1.1 = {birth="8235.1.1"}
+	8251.1.1 = {add_trait=poor_warrior}
+	8268.1.1 = {death="8268.1.1"}
+}
+139600212 = {
+	name="Мотхо"	# not a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=133600212
+	mother=433600212
+
+	8236.1.1 = {birth="8236.1.1"}
+	8252.1.1 = {add_trait=trained_warrior}
+	8290.1.1 = {death="8290.1.1"}
+}
+140600212 = {
+	name="Моро"	# a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=136600212
+	mother=436600212
+
+	8264.1.1 = {birth="8264.1.1"}
+	8280.1.1 = {add_trait=poor_warrior}
+	8282.1.1 = {add_spouse=440600212}
+}
+440600212 = {
+	name="Накки"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8264.1.1 = {birth="8264.1.1"}
+}
+141600212 = {
+	name="Хавви"	# not a lord
+	female=yes
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=140600212
+	mother=440600212
+
+	8282.1.1 = {birth="8282.1.1"}
+}
+142600212 = {
+	name="Малакхи"	# not a lord
+	female=yes
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=140600212
+	mother=440600212
+
+	8284.1.1 = {birth="8284.1.1"}
+}
+143600212 = {
+	name="Чолинни"	# not a lord
+	female=yes
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=130600212
+	mother=430600212
+
+	8258.1.1 = {birth="8258.1.1"}
+}
+144600212 = {
+	name="Кохолло"	# not a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=130600212
+	mother=430600212
+
+	8259.1.1 = {birth="8259.1.1"}
+	8275.1.1 = {add_trait=skilled_warrior}
+	8277.1.1 = {add_spouse=444600212}
+}
+444600212 = {
+	name="Накки"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8259.1.1 = {birth="8259.1.1"}
+}
+145600212 = {
+	name="Ланно"	# not a lord
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=144600212
+	mother=444600212
+
+	8293.1.1 = {birth="8293.1.1"}
+}
+146600212 = {
+	name="Лоси"	# not a lord
+	female=yes
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=144600212
+	mother=444600212
+
+	8294.1.1 = {birth="8294.1.1"}
+}
+147600212 = {
+	name="Чхоги"	# not a lord
+	female=yes
+	dynasty=600212
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=144600212
+	mother=444600212
+
+	8297.1.1 = {birth="8297.1.1"}
+}
+
+
+############################
+#### Northern Khalasars ####
+############################
+
+### Khals of West Ifeqevron
+100600213 = {
+	name="Ремекко"	# a lord
+	dynasty=600213
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	7925.1.1 = {birth="7925.1.1"}
+	7941.1.1 = {add_trait=skilled_warrior}
+	7977.1.1 = {death="7977.1.1"}
+}
+101600213 = {
+	name="Дрого"	# a lord
+	dynasty=600213
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=100600213
+
+	7950.1.1 = {birth="7950.1.1"}
+	7966.1.1 = {add_trait=trained_warrior}
+	7998.1.1 = {death = {death_reason = death_accident}}
+}
+102600213 = {
+	name="Лосо"	# a lord
+	dynasty=600213
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=100600213
+
+	7953.1.1 = {birth="7953.1.1"}
+	7969.1.1 = {add_trait=trained_warrior}
+	8012.1.1 = {death="8012.1.1"}
+}
+103600213 = {
+	name="Моро"	# a lord
+	dynasty=600213
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=102600213
+
+	7974.1.1 = {birth="7974.1.1"}
+	7990.1.1 = {add_trait=trained_warrior}
+	8028.1.1 = {death="8028.1.1"}
+}
+108600213 = {
+	name="Чхако"	# a lord
+	dynasty=600213
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=103600213
+
+	8003.1.1 = {birth="8003.1.1"}
+	8019.1.1 = {add_trait=trained_warrior}
+	8046.1.1 = {death="8046.1.1"}
+}
+112600213 = {
+	name="Коварро"	# a lord
+	dynasty=600213
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=108600213
+
+	8027.1.1 = {birth="8027.1.1"}
+	8043.1.1 = {add_trait=skilled_warrior}
+	8102.1.1 = {death="8102.1.1"}
+}
+114600213 = {
+	name="Моро"	# a lord
+	dynasty=600213
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=112600213
+
+	8058.1.1 = {birth="8058.1.1"}
+	8074.1.1 = {add_trait=trained_warrior}
+	8109.1.1 = {death="8109.1.1"}
+}
+115600213 = {
+	name="Зхако"	# not a lord
+	dynasty=600213
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=112600213
+
+	8060.1.1 = {birth="8060.1.1"}
+	8076.1.1 = {add_trait=trained_warrior}
+	8124.1.1 = {death="8124.1.1"}
+}
+117600213 = {
+	name="Азхо"	# a lord
+	dynasty=600213
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=114600213
+
+	8089.1.1 = {birth="8089.1.1"}
+	8105.1.1 = {add_trait=master_warrior}
+	8136.1.1 = {death="8136.1.1"}
+}
+121600213 = {
+	name="Бхарбо"	# a lord
+	dynasty=600213
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=115600213
+
+	8089.1.1 = {birth="8089.1.1"}
+	8105.1.1 = {add_trait=trained_warrior}
+	8145.1.1 = {death="8145.1.1"}
+}
+123600213 = {
+	name="Рово"	# a lord
+	dynasty=600213
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=121600213
+
+	8117.1.1 = {birth="8117.1.1"}
+	8133.1.1 = {add_trait=poor_warrior}
+	8159.1.1 = {death="8159.1.1"}
+}
+125600213 = {
+	name="Ракхаро"	# a lord
+	dynasty=600213
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=123600213
+
+	8151.1.1 = {birth="8151.1.1"}
+	8167.1.1 = {add_trait=skilled_warrior}
+	8195.1.1 = {death="8195.1.1"}
+}
+129600213 = {
+	name="Коварро"	# a lord
+	dynasty=600213
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=125600213
+
+	8177.1.1 = {birth="8177.1.1"}
+	8193.1.1 = {add_trait=trained_warrior}
+	8255.1.1 = {death = {death_reason = death_accident}}
+}
+130600213 = {
+	name="Кохолло"	# not a lord
+	dynasty=600213
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=129600213
+
+	8199.1.1 = {birth="8199.1.1"}
+	8215.1.1 = {add_trait=trained_warrior}
+	8217.1.1 = {add_spouse=430600213}
+	8254.1.1 = {death = {death_reason = death_murder}}
+}
+430600213 = {
+	name="Хавви"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8199.1.1 = {birth="8199.1.1"}
+	8254.1.1 = {death="8254.1.1"}
+}
+132600213 = {
+	name="Хеззо"	# a lord
+	dynasty=600213
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=130600213
+	mother=430600213
+
+	8219.1.1 = {birth="8219.1.1"}
+	8235.1.1 = {add_trait=trained_warrior}
+	8266.1.1 = {death="8266.1.1"}
+}
+134600213 = {
+	name="Квано"	# a lord
+	dynasty=600213
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=130600213
+	mother=430600213
+
+	8223.1.1 = {birth="8223.1.1"}
+	8239.1.1 = {add_trait=trained_warrior}
+	8241.1.1 = {add_spouse=434600213}
+	8274.1.1 = {death="8274.1.1"}
+}
+434600213 = {
+	name="Зхаки"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8223.1.1 = {birth="8223.1.1"}
+	8274.1.1 = {death="8274.1.1"}
+}
+135600213 = {
+	name="Чхого"	# not a lord
+	dynasty=600213
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=130600213
+	mother=430600213
+
+	8226.1.1 = {birth="8226.1.1"}
+	8242.1.1 = {add_trait=trained_warrior}
+	8298.1.1 = {death="8298.1.1"}
+}
+136600213 = {
+	name="Темми"	# not a lord
+	female=yes
+	dynasty=600213
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=134600213
+	mother=434600213
+
+	8243.1.1 = {birth="8243.1.1"}
+	8299.1.1 = {death="8299.1.1"}
+}
+
+
+### Khals of Northern Steppe
+100600214 = {
+	name="Хагго"	# a lord
+	dynasty=600214
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	7970.1.1 = {birth="7970.1.1"}
+	7986.1.1 = {add_trait=trained_warrior}
+	8017.1.1 = {death="8017.1.1"}
+}
+101600214 = {
+	name="Игго"	# a lord
+	dynasty=600214
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=100600214
+
+	7989.1.1 = {birth="7989.1.1"}
+	8005.1.1 = {add_trait=trained_warrior}
+	8043.1.1 = {death="8043.1.1"}
+}
+104600214 = {
+	name="Харо"	# a lord
+	dynasty=600214
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=101600214
+
+	8021.1.1 = {birth="8021.1.1"}
+	8037.1.1 = {add_trait=trained_warrior}
+	8050.1.1 = {death="8050.1.1"}
+}
+108600214 = {
+	name="Чоммо"	# a lord
+	dynasty=600214
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=104600214
+
+	8049.1.1 = {birth="8049.1.1"}
+	8065.1.1 = {add_trait=skilled_warrior}
+	8105.1.1 = {death="8105.1.1"}
+}
+110600214 = {
+	name="Коварро"	# a lord
+	dynasty=600214
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=108600214
+
+	8069.1.1 = {birth="8069.1.1"}
+	8085.1.1 = {add_trait=skilled_warrior}
+	8119.1.1 = {death="8119.1.1"}
+}
+114600214 = {
+	name="Зекко"	# a lord
+	dynasty=600214
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=110600214
+
+	8091.1.1 = {birth="8091.1.1"}
+	8107.1.1 = {add_trait=skilled_warrior}
+	8136.1.1 = {death="8136.1.1"}
+}
+115600214 = {
+	name="Фого"	# a lord
+	dynasty=600214
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=110600214
+
+	8092.1.1 = {birth="8092.1.1"}
+	8108.1.1 = {add_trait=trained_warrior}
+	8147.1.1 = {death="8147.1.1"}
+}
+118600214 = {
+	name="Кваро"	# not a lord
+	dynasty=600214
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=114600214
+
+	8109.1.1 = {birth="8109.1.1"}
+	8125.1.1 = {add_trait=poor_warrior}
+	8164.1.1 = {death="8164.1.1"}
+}
+123600214 = {
+	name="Зерколло"	# a lord
+	dynasty=600214
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=115600214
+
+	8129.1.1 = {birth="8129.1.1"}
+	8145.1.1 = {add_trait=poor_warrior}
+	8189.1.1 = {death="8189.1.1"}
+}
+125600214 = {
+	name="Чарбо"	# a lord
+	dynasty=600214
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=118600214
+
+	8130.1.1 = {birth="8130.1.1"}
+	8146.1.1 = {add_trait=skilled_warrior}
+	8190.1.1 = {death="8190.1.1"}
+}
+131600214 = {
+	name="Чоммо"	# a lord
+	dynasty=600214
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=125600214
+
+	8154.1.1 = {birth="8154.1.1"}
+	8170.1.1 = {add_trait=skilled_warrior}
+	8191.1.1 = {death="8191.1.1"}
+}
+134600214 = {
+	name="Харо"	# a lord
+	dynasty=600214
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=131600214
+
+	8182.1.1 = {birth="8182.1.1"}
+	8198.1.1 = {add_trait=poor_warrior}
+	8251.1.1 = {death="8251.1.1"}
+}
+135600214 = {
+	name="Рово"	# a lord
+	dynasty=600214
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=134600214
+
+	8210.1.1 = {birth="8210.1.1"}
+	8226.1.1 = {add_trait=poor_warrior}
+	8228.1.1 = {add_spouse=435600214}
+	8272.1.1 = {death="8272.1.1"}
+}
+435600214 = {
+	name="Зикки"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8210.1.1 = {birth="8210.1.1"}
+	8272.1.1 = {death="8272.1.1"}
+}
+136600214 = {
+	name="Зирко"	# not a lord
+	dynasty=600214
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=135600214
+	mother=435600214
+
+	8228.1.1 = {birth="8228.1.1"}
+	8244.1.1 = {add_trait=poor_warrior}
+	8246.1.1 = {add_spouse=436600214}
+	8265.1.1 = {death="8265.1.1"}
+}
+436600214 = {
+	name="Чхакки"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8228.1.1 = {birth="8228.1.1"}
+	8265.1.1 = {death="8265.1.1"}
+}
+137600214 = {
+	name="Dalli"	# not a lord
+	female=yes
+	dynasty=600214
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=135600214
+	mother=435600214
+
+	8230.1.1 = {birth="8230.1.1"}
+	8291.1.1 = {death="8291.1.1"}
+}
+138600214 = {
+	name="Форхо"	# a lord
+	dynasty=600214
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=136600214
+	mother=436600214
+
+	8256.1.1 = {birth="8256.1.1"}
+	8272.1.1 = {add_trait=skilled_warrior}
+	8274.1.1 = {add_spouse=438600214}
+}
+438600214 = {
+	name="Чолинни"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8256.1.1 = {birth="8256.1.1"}
+}
+139600214 = {
+	name="Зикки"	# not a lord
+	female=yes
+	dynasty=600214
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=136600214
+	mother=436600214
+
+	8257.1.1 = {birth="8257.1.1"}
+	8291.1.1 = {death="8291.1.1"}
+}
+140600214 = {
+	name="Моско"	# not a lord
+	dynasty=600214
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=136600214
+	mother=436600214
+
+	8258.1.1 = {birth="8258.1.1"}
+	8274.1.1 = {add_trait=trained_warrior}
+}
+141600214 = {
+	name="Лекси"	# not a lord
+	female=yes
+	dynasty=600214
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=138600214
+	mother=438600214
+
+	8274.1.1 = {birth="8274.1.1"}
+}
+142600214 = {
+	name="Зекко"	# not a lord
+	dynasty=600214
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=138600214
+	mother=438600214
+
+	8277.1.1 = {birth="8277.1.1"}
+	8293.1.1 = {add_trait=skilled_warrior}
+}
+143600214 = {
+	name="Вирзалло"	# not a lord
+	dynasty=600214
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=138600214
+	mother=438600214
+
+	8280.1.1 = {birth="8280.1.1"}
+	8296.1.1 = {add_trait=trained_warrior}
+}
+
+#######################################
+#### Post Sarnor/Essaria Khalasars ####
+#######################################
+
+### Khals of Sathar
+340600215 = {
+	name="Моско"	# a lord
+	dynasty=600215
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	7948.1.1 = {birth="7948.1.1"}
+	7964.1.1 = {add_trait=skilled_warrior}
+	7986.1.1 = {death="7986.1.1"}
+}
+100600215 = {
+	name="Коварро"	# a lord
+	dynasty=600215
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	father=340600215
+
+	7966.1.1 = {birth="7966.1.1"}
+	7982.1.1 = {add_trait=trained_warrior}
+	8009.1.1 = {death="8009.1.1"}
+}
+101600215 = {
+	name="Дрого"	# a lord
+	dynasty=600215
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=100600215
+
+	7987.1.1 = {birth="7987.1.1"}
+	8003.1.1 = {add_trait=trained_warrior}
+	8011.1.1 = {death="8011.1.1"}
+}
+102600215 = {
+	name="Чоммо"	# a lord
+	dynasty=600215
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=100600215
+
+	7990.1.1 = {birth="7990.1.1"}
+	8006.1.1 = {add_trait=poor_warrior}
+	8035.1.1 = {death="8035.1.1"}
+}
+104600215 = {
+	name="Маго"	# a lord
+	dynasty=600215
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=102600215
+
+	8012.1.1 = {birth="8012.1.1"}
+	8028.1.1 = {add_trait=poor_warrior}
+	8070.1.1 = {death="8070.1.1"}
+}
+107600215 = {
+	name="Чоммо"	# a lord
+	dynasty=600215
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=102600215
+
+	8016.1.1 = {birth="8016.1.1"}
+	8032.1.1 = {add_trait=skilled_warrior}
+	8074.1.1 = {death = {death_reason = death_accident}}
+}
+109600215 = {
+	name="Дхако"	# a lord
+	dynasty=600215
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=107600215
+
+	8051.1.1 = {birth="8051.1.1"}
+	8067.1.1 = {add_trait=trained_warrior}
+	8102.1.1 = {death="8102.1.1"}
+}
+113600215 = {
+	name="Бхарбо"	# a lord
+	dynasty=600215
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=109600215
+
+	8069.1.1 = {birth="8069.1.1"}
+	8085.1.1 = {add_trait=master_warrior}
+	8128.1.1 = {death="8128.1.1"}
+}
+114600215 = {
+	name="Маго"	# a lord
+	dynasty=600215
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=113600215
+
+	8098.1.1 = {birth="8098.1.1"}
+	8114.1.1 = {add_trait=trained_warrior}
+	8147.1.1 = {death="8147.1.1"}
+}
+116600215 = {
+	name="Лосо"	# a lord
+	dynasty=600215
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=114600215
+
+	8131.1.1 = {birth="8131.1.1"}
+	8147.1.1 = {add_trait=poor_warrior}
+	8175.1.1 = {death = {death_reason = death_murder}}
+}
+117600215 = {
+	name="Азхо"	# a lord
+	dynasty=600215
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=116600215
+
+	8152.1.1 = {birth="8152.1.1"}
+	8168.1.1 = {add_trait=trained_warrior}
+	8197.1.1 = {death="8197.1.1"}
+}
+120600215 = {
+	name="Чхако"	# a lord
+	dynasty=600215
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=117600215
+
+	8176.1.1 = {birth="8176.1.1"}
+	8192.1.1 = {add_trait=skilled_warrior}
+	8224.1.1 = {death="8224.1.1"}
+}
+122600215 = {
+	name="Зхако"	# a lord
+	dynasty=600215
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=120600215
+
+	8197.1.1 = {birth="8197.1.1"}
+	8213.1.1 = {add_trait=poor_warrior}
+	8269.1.1 = {death="8269.1.1"}
+}
+123600215 = {
+	name="Рхогоро"	# a lord
+	dynasty=600215
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=122600215
+
+	8215.1.1 = {birth="8215.1.1"}
+	8231.1.1 = {add_trait=master_warrior}
+	8233.1.1 = {add_spouse=423600215}
+	8283.1.1 = {death="8283.1.1"}
+}
+423600215 = {
+	name="Чолинни"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8215.1.1 = {birth="8215.1.1"}
+	8283.1.1 = {death="8283.1.1"}
+}
+124600215 = {
+	name="Тиххо"	# a lord
+	dynasty=600215
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=123600215
+	mother=423600215
+
+	8235.1.1 = {birth="8235.1.1"}
+	8251.1.1 = {add_trait=poor_warrior}
+	8253.1.1 = {add_spouse=424600215}
+	8287.1.1 = {death="8287.1.1"}
+}
+424600215 = {
+	name="Дхаки"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8235.1.1 = {birth="8235.1.1"}
+	8287.1.1 = {death="8287.1.1"}
+}
+125600215 = {
+	name="Окетти"	# not a lord
+	female=yes
+	dynasty=600215
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=123600215
+	mother=423600215
+
+	8238.1.1 = {birth="8238.1.1"}
+	8294.1.1 = {death="8294.1.1"}
+}
+127600215 = {
+	name="Зегго"	# not a lord
+	dynasty=600215
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=124600215
+	mother=424600215
+
+	8269.1.1 = {birth="8269.1.1"}
+	8285.1.1 = {add_trait=poor_warrior}
+	8287.1.1 = {add_spouse=427600215}
+}
+427600215 = {
+	name="Лекси"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8269.1.1 = {birth="8269.1.1"}
+}
+130600215 = {
+	name="Чхику"	# not a lord
+	female=yes
+	dynasty=600215
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=127600215
+	mother=427600215
+
+	8296.1.1 = {birth="8296.1.1"}
+}
+
+### Khals of Sarnath
+100600216 = {
+	name="Марро"	# a lord
+	dynasty=600216
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	7950.1.1 = {birth="7950.1.1"}
+	7966.1.1 = {add_trait=trained_warrior}
+	8007.1.1 = {death="8007.1.1"}
+}
+101600216 = {
+	name="Фоно"	# a lord
+	dynasty=600216
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=100600216
+
+	7968.1.1 = {birth="7968.1.1"}
+	7984.1.1 = {add_trait=trained_warrior}
+	8026.1.1 = {death="8026.1.1"}
+}
+103600216 = {
+	name="Фого"	# a lord
+	dynasty=600216
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=101600216
+
+	7990.1.1 = {birth="7990.1.1"}
+	8006.1.1 = {add_trait=master_warrior}
+	8051.1.1 = {death="8051.1.1"}
+}
+105600216 = {
+	name="Зекко"	# a lord
+	dynasty=600216
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=103600216
+
+	8015.1.1 = {birth="8015.1.1"}
+	8031.1.1 = {add_trait=skilled_warrior}
+	8072.1.1 = {death="8072.1.1"}
+}
+106600216 = {
+	name="Тиххо"	# a lord
+	dynasty=600216
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=105600216
+
+	8041.1.1 = {birth="8041.1.1"}
+	8057.1.1 = {add_trait=trained_warrior}
+	8112.1.1 = {death="8112.1.1"}
+}
+110600216 = {
+	name="Квано"	# a lord
+	dynasty=600216
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=106600216
+
+	8063.1.1 = {birth="8063.1.1"}
+	8079.1.1 = {add_trait=skilled_warrior}
+	8121.1.1 = {death="8121.1.1"}
+}
+114600216 = {
+	name="Кваро"	# a lord
+	dynasty=600216
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=110600216
+
+	8102.1.1 = {birth="8102.1.1"}
+	8118.1.1 = {add_trait=poor_warrior}
+	8177.1.1 = {death="8177.1.1"}
+}
+115600216 = {
+	name="Маго"	# a lord
+	dynasty=600216
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=114600216
+
+	8135.1.1 = {birth="8135.1.1"}
+	8151.1.1 = {add_trait=poor_warrior}
+	8186.1.1 = {death="8186.1.1"}
+}
+118600216 = {
+	name="Токко"	# a lord
+	dynasty=600216
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=115600216
+
+	8159.1.1 = {birth="8159.1.1"}
+	8175.1.1 = {add_trait=skilled_warrior}
+	8203.1.1 = {death="8203.1.1"}
+}
+120600216 = {
+	name="Токко"	# a lord
+	dynasty=600216
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=118600216
+
+	8182.1.1 = {birth="8182.1.1"}
+	8198.1.1 = {add_trait=poor_warrior}
+	8252.1.1 = {death = {death_reason = death_accident}}
+}
+123600216 = {
+	name="Тиххо"	# a lord
+	dynasty=600216
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=120600216
+
+	8204.1.1 = {birth="8204.1.1"}
+	8220.1.1 = {add_trait=poor_warrior}
+	8260.1.1 = {death="8260.1.1"}
+}
+124600216 = {
+	name="Теммо"	# a lord
+	dynasty=600216
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=123600216
+
+	8229.1.1 = {birth="8229.1.1"}
+	8245.1.1 = {add_trait=poor_warrior}
+	8247.1.1 = {add_spouse=424600216}
+	8289.1.1 = {death="8289.1.1"}
+}
+424600216 = {
+	name="Онки"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8229.1.1 = {birth="8229.1.1"}
+	8289.1.1 = {death="8289.1.1"}
+}
+126600216 = {
+	name="Кохолло"	# not a lord
+	dynasty=600216
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=124600216
+	mother=424600216
+
+	8248.1.1 = {birth="8248.1.1"}
+	8264.1.1 = {add_trait=trained_warrior}
+}
+
+
+### Khals of Mardosh
+100600217 = {
+	name="Рого"	# a lord
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	7956.1.1 = {birth="7956.1.1"}
+	7972.1.1 = {add_trait=trained_warrior}
+	8010.1.1 = {death="8010.1.1"}
+}
+102600217 = {
+	name="Ого"	# a lord
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=100600217
+
+	7983.1.1 = {birth="7983.1.1"}
+	7999.1.1 = {add_trait=trained_warrior}
+	8033.1.1 = {death="8033.1.1"}
+}
+107600217 = {
+	name="Рхогоро"	# a lord
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=102600217
+
+	8012.1.1 = {birth="8012.1.1"}
+	8028.1.1 = {add_trait=poor_warrior}
+	8070.1.1 = {death="8070.1.1"}
+}
+111600217 = {
+	name="Моско"	# a lord
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=107600217
+
+	8041.1.1 = {birth="8041.1.1"}
+	8057.1.1 = {add_trait=skilled_warrior}
+	8089.1.1 = {death="8089.1.1"}
+}
+112600217 = {
+	name="Теммо"	# a lord
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=107600217
+
+	8042.1.1 = {birth="8042.1.1"}
+	8058.1.1 = {add_trait=poor_warrior}
+	8093.1.1 = {death="8093.1.1"}
+}
+116600217 = {
+	name="Кохолло"	# a lord
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=112600217
+
+	8064.1.1 = {birth="8064.1.1"}
+	8080.1.1 = {add_trait=trained_warrior}
+	8121.1.1 = {death="8121.1.1"}
+}
+117600217 = {
+	name="Моро"	# not a lord
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=112600217
+
+	8066.1.1 = {birth="8066.1.1"}
+	8082.1.1 = {add_trait=poor_warrior}
+	8117.1.1 = {death="8117.1.1"}
+}
+121600217 = {
+	name="Поно"	# a lord
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=117600217
+
+	8090.1.1 = {birth="8090.1.1"}
+	8106.1.1 = {add_trait=trained_warrior}
+	8125.1.1 = {death="8125.1.1"}
+}
+123600217 = {
+	name="Зерколло"	# a lord
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=117600217
+
+	8094.1.1 = {birth="8094.1.1"}
+	8110.1.1 = {add_trait=trained_warrior}
+	8164.1.1 = {death="8164.1.1"}
+}
+127600217 = {
+	name="Хеззо"	# a lord
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=123600217
+
+	8119.1.1 = {birth="8119.1.1"}
+	8135.1.1 = {add_trait=skilled_warrior}
+	8166.1.1 = {death="8166.1.1"}
+}
+131600217 = {
+	name="Моро"	# a lord
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=127600217
+
+	8137.1.1 = {birth="8137.1.1"}
+	8153.1.1 = {add_trait=trained_warrior}
+	8187.1.1 = {death="8187.1.1"}
+}
+135600217 = {
+	name="Ремекко"	# a lord
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=131600217
+
+	8162.1.1 = {birth="8162.1.1"}
+	8178.1.1 = {add_trait=trained_warrior}
+	8237.1.1 = {death="8237.1.1"}
+}
+136600217 = {
+	name="Зегго"	# not a lord
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=131600217
+
+	8165.1.1 = {birth="8165.1.1"}
+	8181.1.1 = {add_trait=poor_warrior}
+	8207.1.1 = {death="8207.1.1"}
+}
+139600217 = {
+	name="Рхогоро"	# a lord
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=136600217
+
+	8189.1.1 = {birth="8189.1.1"}
+	8205.1.1 = {add_trait=trained_warrior}
+	8207.1.1 = {add_spouse=439600217}
+	8265.1.1 = {death="8265.1.1"}
+}
+439600217 = {
+	name="Ракхири"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8189.1.1 = {birth="8189.1.1"}
+	8265.1.1 = {death="8265.1.1"}
+}
+142600217 = {
+	name="Чассо"	# a lord
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=139600217
+	mother=439600217
+
+	8217.1.1 = {birth="8217.1.1"}
+	8233.1.1 = {add_trait=poor_warrior}
+	8235.1.1 = {add_spouse=442600217}
+	8294.1.1 = {death="8294.1.1"}
+}
+442600217 = {
+	name="Кохолли"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8217.1.1 = {birth="8217.1.1"}
+	8294.1.1 = {death="8294.1.1"}
+}
+144600217 = {
+	name="Лекси"	# not a lord
+	female=yes
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=139600217
+	mother=439600217
+
+	8221.1.1 = {birth="8221.1.1"}
+	8267.1.1 = {death="8267.1.1"}
+}
+146600217 = {
+	name="Зерколло"	# not a lord
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=139600217
+	mother=439600217
+
+	8224.1.1 = {birth="8224.1.1"}
+	8240.1.1 = {add_trait=poor_warrior}
+	8272.1.1 = {death="8272.1.1"}
+}
+147600217 = {
+	name="Ремекко"	# a lord
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=142600217
+	mother=442600217
+
+	8246.1.1 = {birth="8246.1.1"}
+	8262.1.1 = {add_trait=skilled_warrior}
+	8264.1.1 = {add_spouse=447600217}
+}
+447600217 = {
+	name="Скори"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8246.1.1 = {birth="8246.1.1"}
+}
+148600217 = {
+	name="Харо"	# not a lord
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=142600217
+	mother=442600217
+
+	8247.1.1 = {birth="8247.1.1"}
+	8263.1.1 = {add_trait=poor_warrior}
+}
+149600217 = {
+	name="Азхо"	# not a lord
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=142600217
+	mother=442600217
+
+	8249.1.1 = {birth="8249.1.1"}
+	8265.1.1 = {add_trait=poor_warrior}
+}
+150600217 = {
+	name="Кохолло"	# not a lord
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=142600217
+	mother=442600217
+
+	8252.1.1 = {birth="8252.1.1"}
+	8268.1.1 = {add_trait=poor_warrior}
+}
+151600217 = {
+	name="Скоро"	# not a lord
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=147600217
+	mother=447600217
+
+	8272.1.1 = {birth="8272.1.1"}
+	8288.1.1 = {add_trait=trained_warrior}
+}
+152600217 = {
+	name="Теммо"	# not a lord
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=147600217
+	mother=447600217
+
+	8275.1.1 = {birth="8275.1.1"}
+	8291.1.1 = {add_trait=skilled_warrior}
+}
+153600217 = {
+	name="Ланно"	# not a lord
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=147600217
+	mother=447600217
+
+	8277.1.1 = {birth="8277.1.1"}
+	8293.1.1 = {add_trait=trained_warrior}
+}
+154600217 = {
+	name="Агги"	# not a lord
+	female=yes
+	dynasty=600217
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=147600217
+	mother=447600217
+
+	8278.1.1 = {birth="8278.1.1"}
+}
+
+
+### Khals of Hills of Essaria
+100600218 = {
+	name="Рово"	# a lord
+	dynasty=600218
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	7912.1.1 = {birth="7912.1.1"}
+	7928.1.1 = {add_trait=skilled_warrior}
+	7970.1.1 = {death="7970.1.1"}
+}
+101600218 = {
+	name="Золло"	# a lord
+	dynasty=600218
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=100600218
+
+	7947.1.1 = {birth="7947.1.1"}
+	7963.1.1 = {add_trait=trained_warrior}
+	8001.1.1 = {death="8001.1.1"}
+}
+104600218 = {
+	name="Чхого"	# a lord
+	dynasty=600218
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=100600218
+
+	7952.1.1 = {birth="7952.1.1"}
+	7968.1.1 = {add_trait=trained_warrior}
+	8002.1.1 = {death = {death_reason = death_murder}}
+}
+108600218 = {
+	name="Менго"	# a lord
+	dynasty=600218
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=104600218
+
+	7977.1.1 = {birth="7977.1.1"}
+	7993.1.1 = {add_trait=skilled_warrior}
+	8032.1.1 = {death="8032.1.1"}
+}
+113600218 = {
+	name="Аракхо"	# a lord
+	dynasty=600218
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=108600218
+
+	8009.1.1 = {birth="8009.1.1"}
+	8025.1.1 = {add_trait=skilled_warrior}
+	8061.1.1 = {death="8061.1.1"}
+}
+114600218 = {
+	name="Фого"	# a lord
+	dynasty=600218
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=113600218
+
+	8042.1.1 = {birth="8042.1.1"}
+	8058.1.1 = {add_trait=trained_warrior}
+	8083.1.1 = {death="8083.1.1"}
+}
+116600218 = {
+	name="Лосо"	# a lord
+	dynasty=600218
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=113600218
+
+	8047.1.1 = {birth="8047.1.1"}
+	8063.1.1 = {add_trait=master_warrior}
+	8094.1.1 = {death="8094.1.1"}
+}
+123600218 = {
+	name="Чассо"	# a lord
+	dynasty=600218
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=116600218
+
+	8082.1.1 = {birth="8082.1.1"}
+	8098.1.1 = {add_trait=trained_warrior}
+	8113.1.1 = {death="8113.1.1"}
+}
+126600218 = {
+	name="Вирзалло"	# a lord
+	dynasty=600218
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=123600218
+
+	8110.1.1 = {birth="8110.1.1"}
+	8126.1.1 = {add_trait=skilled_warrior}
+	8145.1.1 = {death="8145.1.1"}
+}
+127600218 = {
+	name="Дхако"	# a lord
+	dynasty=600218
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=126600218
+
+	8136.1.1 = {birth="8136.1.1"}
+	8152.1.1 = {add_trait=skilled_warrior}
+	8191.1.1 = {death="8191.1.1"}
+}
+132600218 = {
+	name="Фого"	# a lord
+	dynasty=600218
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=127600218
+
+	8168.1.1 = {birth="8168.1.1"}
+	8184.1.1 = {add_trait=poor_warrior}
+	8211.1.1 = {death="8211.1.1"}
+}
+135600218 = {
+	name="Чарбо"	# a lord
+	dynasty=600218
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=132600218
+
+	8191.1.1 = {birth="8191.1.1"}
+	8207.1.1 = {add_trait=trained_warrior}
+	8209.1.1 = {add_spouse=435600218}
+	8234.1.1 = {death="8234.1.1"}
+}
+435600218 = {
+	name="Дхаки"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8191.1.1 = {birth="8191.1.1"}
+	8234.1.1 = {death="8234.1.1"}
+}
+138600218 = {
+	name="Кохолли"	# not a lord
+	female=yes
+	dynasty=600218
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=135600218
+	mother=435600218
+
+	8220.1.1 = {birth="8220.1.1"}
+	8280.1.1 = {death="8280.1.1"}
+}
+139600218 = {
+	name="Фитти"	# not a lord
+	female=yes
+	dynasty=600218
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=135600218
+	mother=435600218
+
+	8222.1.1 = {birth="8222.1.1"}
+	8283.1.1 = {death="8283.1.1"}
+}
+140600218 = {
+	name="Зхако"	# a lord
+	dynasty=600218
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=135600218
+	mother=435600218
+
+	8223.1.1 = {birth="8223.1.1"}
+	8239.1.1 = {add_trait=trained_warrior}
+	8241.1.1 = {add_spouse=440600218}
+	8273.1.1 = {death="8273.1.1"}
+}
+440600218 = {
+	name="Коватти"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8223.1.1 = {birth="8223.1.1"}
+	8273.1.1 = {death="8273.1.1"}
+}
+142600218 = {
+	name="Бхарбо"	# a lord
+	dynasty=600218
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=140600218
+	mother=440600218
+
+	8245.1.1 = {birth="8245.1.1"}
+	8261.1.1 = {add_trait=trained_warrior}
+	8263.1.1 = {add_spouse=442600218}
+}
+442600218 = {
+	name="Ирри"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8245.1.1 = {birth="8245.1.1"}
+}
+143600218 = {
+	name="Золло"	# not a lord
+	dynasty=600218
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=140600218
+	mother=440600218
+
+	8248.1.1 = {birth="8248.1.1"}
+	8264.1.1 = {add_trait=poor_warrior}
+	8266.1.1 = {add_spouse=443600218}
+}
+443600218 = {
+	name="Скори"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8248.1.1 = {birth="8248.1.1"}
+}
+144600218 = {
+	name="Лекси"	# not a lord
+	female=yes
+	dynasty=600218
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=142600218
+	mother=442600218
+
+	8270.1.1 = {birth="8270.1.1"}
+}
+145600218 = {
+	name="Хавви"	# not a lord
+	female=yes
+	dynasty=600218
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=142600218
+	mother=442600218
+
+	8273.1.1 = {birth="8273.1.1"}
+}
+146600218 = {
+	name="Моро"	# not a lord
+	dynasty=600218
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=142600218
+	mother=442600218
+
+	8274.1.1 = {birth="8274.1.1"}
+	8290.1.1 = {add_trait=trained_warrior}
+}
+147600218 = {
+	name="Накки"	# not a lord
+	female=yes
+	dynasty=600218
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=142600218
+	mother=442600218
+
+	8276.1.1 = {birth="8276.1.1"}
+}
+148600218 = {
+	name="Ланно"	# not a lord
+	dynasty=600218
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=143600218
+	mother=443600218
+
+	8280.1.1 = {birth="8280.1.1"}
+	8296.1.1 = {add_trait=trained_warrior}
+}
+149600218 = {
+	name="Зхаки"	# not a lord
+	female=yes
+	dynasty=600218
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=143600218
+	mother=443600218
+
+	8283.1.1 = {birth="8283.1.1"}
+}
+
+
+### Khals of Painted Mountains
+340600219 = {
+	name="Хагго"	# a lord
+	dynasty=600219
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	7948.1.1 = {birth="7948.1.1"}
+	7964.1.1 = {add_trait=trained_warrior}
+	7986.1.1 = {death="7986.1.1"}
+}
+100600219 = {
+	name="Харро"	# a lord
+	dynasty=600219
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	father=340600219
+
+	7966.1.1 = {birth="7966.1.1"}
+	7982.1.1 = {add_trait=trained_warrior}
+	8023.1.1 = {death="8023.1.1"}
+}
+103600219 = {
+	name="Харро"	# a lord
+	dynasty=600219
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=100600219
+
+	7994.1.1 = {birth="7994.1.1"}
+	8010.1.1 = {add_trait=trained_warrior}
+	8045.1.1 = {death="8045.1.1"}
+}
+105600219 = {
+	name="Менго"	# a lord
+	dynasty=600219
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=103600219
+
+	8023.1.1 = {birth="8023.1.1"}
+	8039.1.1 = {add_trait=skilled_warrior}
+	8060.1.1 = {death = {death_reason = death_battle}}
+}
+108600219 = {
+	name="Моско"	# a lord
+	dynasty=600219
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=105600219
+
+	8044.1.1 = {birth="8044.1.1"}
+	8060.1.1 = {add_trait=skilled_warrior}
+	8112.1.1 = {death="8112.1.1"}
+}
+109600219 = {
+	name="Роммо"	# not a lord
+	dynasty=600219
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=105600219
+
+	8046.1.1 = {birth="8046.1.1"}
+	8062.1.1 = {add_trait=trained_warrior}
+	8080.1.1 = {death="8080.1.1"}
+}
+114600219 = {
+	name="Зхако"	# a lord
+	dynasty=600219
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=109600219
+
+	8066.1.1 = {birth="8066.1.1"}
+	8082.1.1 = {add_trait=skilled_warrior}
+	8146.1.1 = {death="8146.1.1"}
+}
+116600219 = {
+	name="Вирзалло"	# a lord
+	dynasty=600219
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=114600219
+
+	8093.1.1 = {birth="8093.1.1"}
+	8109.1.1 = {add_trait=trained_warrior}
+	8154.1.1 = {death="8154.1.1"}
+}
+119600219 = {
+	name="Марро"	# a lord
+	dynasty=600219
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=116600219
+
+	8112.1.1 = {birth="8112.1.1"}
+	8128.1.1 = {add_trait=master_warrior}
+	8166.1.1 = {death="8166.1.1"}
+}
+122600219 = {
+	name="Игго"	# not a lord
+	dynasty=600219
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=116600219
+
+	8119.1.1 = {birth="8119.1.1"}
+	8135.1.1 = {add_trait=trained_warrior}
+	8154.1.1 = {death="8154.1.1"}
+}
+124600219 = {
+	name="Рого"	# a lord
+	dynasty=600219
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=119600219
+
+	8136.1.1 = {birth="8136.1.1"}
+	8152.1.1 = {add_trait=trained_warrior}
+	8194.1.1 = {death="8194.1.1"}
+}
+128600219 = {
+	name="Начахо"	# a lord
+	dynasty=600219
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=122600219
+
+	8144.1.1 = {birth="8144.1.1"}
+	8160.1.1 = {add_trait=master_warrior}
+	8199.1.1 = {death="8199.1.1"}
+}
+131600219 = {
+	name="Харро"	# a lord
+	dynasty=600219
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=128600219
+
+	8172.1.1 = {birth="8172.1.1"}
+	8188.1.1 = {add_trait=poor_warrior}
+	8190.1.1 = {add_spouse=431600219}
+	8231.1.1 = {death="8231.1.1"}
+}
+431600219 = {
+	name="Ирри"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8172.1.1 = {birth="8172.1.1"}
+	8231.1.1 = {death="8231.1.1"}
+}
+133600219 = {
+	name="Хагго"	# a lord
+	dynasty=600219
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=131600219
+	mother=431600219
+
+	8206.1.1 = {birth="8206.1.1"}
+	8222.1.1 = {add_trait=trained_warrior}
+	8224.1.1 = {add_spouse=433600219}
+	8262.1.1 = {death="8262.1.1"}
+}
+433600219 = {
+	name="Зикки"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8206.1.1 = {birth="8206.1.1"}
+	8262.1.1 = {death="8262.1.1"}
+}
+136600219 = {
+	name="Чхиги"	# not a lord
+	female=yes
+	dynasty=600219
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=131600219
+	mother=431600219
+
+	8211.1.1 = {birth="8211.1.1"}
+	8267.1.1 = {death = {death_reason = death_murder}}
+}
+137600219 = {
+	name="Кендри"	# not a lord
+	female=yes
+	dynasty=600219
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=133600219
+	mother=433600219
+
+	8237.1.1 = {birth="8237.1.1"}
+}
+138600219 = {
+	name="Дхако"	# not a lord
+	dynasty=600219
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=133600219
+	mother=433600219
+
+	8240.1.1 = {birth="8240.1.1"}
+	8256.1.1 = {add_trait=trained_warrior}
+	8258.1.1 = {add_spouse=438600219}
+	8263.1.1 = {death = {death_reason = death_execution}}
+}
+438600219 = {
+	name="Коватти"
+	female=yes
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	8240.1.1 = {birth="8240.1.1"}
+	8263.1.1 = {death="8263.1.1"}
+}
+139600219 = {
+	name="Мотхи"	# not a lord
+	female=yes
+	dynasty=600219
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=133600219
+	mother=433600219
+
+	8243.1.1 = {birth="8243.1.1"}
+}
+143600219 = {
+	name="Игго"	# not a lord
+	dynasty=600219
+
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=138600219
+	mother=438600219
+
+	8260.1.1 = {birth="8260.1.1"}
+	8276.1.1 = {add_trait=skilled_warrior}
+}
+
+###############################
+### Placeholder Менго's Kos ###
+###############################
+#Krazzaj Zasque
+342600226 = {
+	name = "Рово" # a lord
+	dynasty = 600232 
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+		
+	7850.1.1 = {birth="7850.1.1"}
+	7866.1.1 = {add_trait="skilled_warrior"}
+	7892.1.1 = { 
+		death = { death_reason = death_murder }
+	}
+}
+341600226 = {
+	name = "Начахо" # a lord
+	dynasty = 600232 
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	father=342600226
+		
+	7873.1.1 = {birth="7873.1.1"}
+	7889.1.1 = {add_trait="trained_warrior"}
+	7908.1.1 = { 
+		add_trait=wounded
+		death = { death_reason = death_trait }
+	}
+}
+340600226 = {
+	name = "Коварро" # a lord
+	dynasty = 600232 
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	father=341600226
+		
+	7899.1.1 = {birth="7899.1.1"}
+	7915.1.1 = {add_trait="skilled_warrior"}
+	7936.1.1 = { 
+		death = { 
+			death_reason = death_battle 
+			killer = 100600226 # Khal Скоро
+		}
+	}
+}
+
+#Vaes Leisi
+341600209 = {
+	name = "Ремекко" # a lord
+	dynasty = 600233
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	7865.1.1 = {birth="7865.1.1"}
+	7881.1.1 = {add_trait="skilled_warrior"}
+	7913.1.1 = {
+		death={
+			death_reason = death_battle
+		}
+	}
+}
+340600209 = {
+	name = "Доско" # a lord
+	dynasty = 600233
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=341600209
+	
+	7890.1.1 = {birth="7890.1.1"}
+	7906.1.1 = {add_trait="skilled_warrior"}
+	7935.1.1 = {
+		death={
+			death_reason = death_duel
+			killer=100600209 # Khal Онко
+		}
+	}
+}
+
+#Yinishar
+341600234 = {
+	name = "Доско" # a lord
+	dynasty = 600234
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	7880.1.1 = {birth="7880.1.1"}
+	7896.1.1 = {add_trait="skilled_warrior"}
+	7923.1.1 = {
+		add_trait=wounded
+		death = { death_reason = death_trait }
+	}
+}
+340600234 = {
+	name = "Хеззо" # a lord
+	dynasty = 600234
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=341600234
+	
+	7900.1.1 = {birth="7900.1.1"}
+	7916.1.1 = {add_trait="trained_warrior"}
+	7938.1.1 = {
+		death={
+			death_reason = death_murder
+			killer=100600208 # Khal Хорро
+		}
+	}
+}
+
+#Rhaesh Jim
+341600235 = {
+	name = "Вирго" # a lord
+	dynasty = 600235 
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+	
+	7896.1.1 = {birth="7896.1.1"}
+	7912.1.1 = {add_trait="trained_warrior"}
+	7933.1.1 = {
+		death={
+			death_reason = death_accident
+		}
+	}
+}
+340600235 = {
+	name = "Кохолло" # a lord
+	dynasty = 600235 
+	
+	religion="dothraki_pagan"
+	culture="dothraki"
+
+	father=341600235
+	
+	7919.1.1 = {birth="7919.1.1"}
+	7935.1.1 = {add_trait="trained_warrior"}
+	7951.1.1 = {
+		death={
+			death_reason = death_duel
+			killer=600222 # Khal Зхако 
+		}
+	}
+}

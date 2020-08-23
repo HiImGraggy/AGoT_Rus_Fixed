@@ -1,0 +1,54 @@
+EVTDESCreeducation.1;Пришло время для получения надлежащего образования. Жизнь настолько полна возможностей. Что я выберу?;x
+EVTTOOLTIPreeducation.2;Они решат мою судьбу...;x
+EVTDESCreeducation.2;М[From.GetOyaOy] [From.GetRootRelation] [From.GetTitledFirstNameWithDynasty] вступил[From.GetEndA] в необходимый возраст, необходимо выбрать хорошего опекуна для н[From.GetHerHis].;x
+EVTOPTAreeducation.2;[From.GetSheHeCap] будет получать образование при дворе.;x
+EVTTOOLTIPreeducation.3;Оплатить проживание в септе.;x
+EVTOPTBreeducation.2;Я хочу чтобы [From.GetSheHeCap] хорошо разбира[From.GetLasLsya] в цифрах.;x
+EVTTOOLTIPreeducation.4;Купить необходимое снаряжение и книги.;x
+EVTOPTCreeducation.2;[From.GetSheHeCap] будут готовиться к командованию;x
+EVTTOOLTIPreeducation.5;[From.GetFirstName] получит лошадь и набор брони, подготовить его к будущему статусу.;x
+EVTOPTDreeducation.2;У меня нет ни времени ни денег, чтобы тратить их на этого ребенка.;x
+EVTTOOLTIPreeducation.6;[From.GetFirstName] не получит личного репетитора;x
+EVTDESCreeducation.3;Я буду получать образование, живя при дворе.;x
+EVTDESCreeducation.4;Я буду изучать цифры? Зачем?!;x
+EVTDESCreeducation.5;Я буду готовиться командовать!;x
+EVTDESCreeducation.6;Кажется, я не буду заниматься у репетитора…;x
+EVTDESCreeducation.7;За последние десять лет я получил[GetEndA] образование, необходимое для жизни при дворе. Мои манеры утонченны, мои знания обширны, я хорошо разбираюсь в геральдике.;x
+EVTDESCreeducation.8;За последние десять лет мне открылась магия чисел, на все вещи в мире я теперь смотрю по другому.;x
+EVTDESCreeducation.9;Последние десять лет меня готовили командовать! Я стремлюсь вести свои войска к славе!;x
+EVTDESCreeducation.10;Не получив должного образования, я научи[GetLasLsya] чему смог[GetNoneE].;x
+court_education;Образование при дворе;x
+court_education_desc;Этот персонаж получил образование при дворе.;x
+martial_education;Военное образование;x
+martial_education_desc;Этот персонаж получил военное образование.;x
+steward_education;Образование управителя;x
+steward_education_desc;Этот персонаж разбирается в цифрах.;x
+maester_education;Образование мейстера.;x
+maester_education_desc;Этот персонаж получил образование в Цитадели.;x
+no_education;Не имеет образования.;x
+no_education_desc;Этот персонаж не имеет образования.;x
+opinion_grew_up_together;Росли вместе;x
+EVTDESCreeducation.11;Это те люди с которыми я вырос[GetNoneE]. Я чувствую, что мы связаны на протяжении многих лет;x
+EVTDESCreeducation.12;Я и[From.GetTitledFirstName] выросли месте, я чувствую, что хорошо знаю [From.GetHerHis].;x
+CHAR_EDUCATED_LOG;§Y$NAME$§! Достигает совершеннолетия.;x
+EVTOPTEreeducation.2;[From.GetSheHeCap] может учиться с женщинами;x
+EVTTOOLTIPreeducation.3DOTH;Будет учиться с женщинами Кхаласара;x
+EVTOPTFreeducation.2;Я оплачу [From.GetHerHim] обучение в дальних странах;x
+EVTTOOLTIPreeducation.4DOTH;Получит образование управляющего в дальних странах;x
+EVTOPTGreeducation.2;[From.GetSheHeCap] будет тренироваться с воинами;x
+EVTTOOLTIPreeducation.5DOTH;Будет тренироваться с дотракийскими воинами в клане;x
+education_high;Исключительное образование;x
+education_high_desc;Этот персонаж получает исключительное качество образования;x
+education_medium;Хорошее образование;x
+education_medium_desc;Этот персонаж получает хорошее качество образования;x
+education_low;Плохое образование;x
+education_low_desc;Этот персонаж получает плохое качество образования;x
+education_almost_nothing;Малообразованный;x
+education_almost_nothing_desc;Этот персонаж едва получил образование;x
+TOOLTIPreeducation_cost;Выберите уровень образования персонажа [From.GetTitledFirstName];x
+EVTDESCreeducation.15;Какое качество образования получит [FromFrom.GetRootRelation] [FromFrom.GetTitledFirstNameWithDynasty]?;x
+EVTOPTAreeducation.15;Я много заплачу, чтобы [FromFrom.GetTitledFirstName] получил[FromFrom.GetEndA] наилучшее оборудование;x
+EVTOPTBreeducation.15;[FromFrom.GetTitledFirstName] получит хорошего репетитора, это поможет [FromFrom.GetHerHim] стать успешнее;x
+EVTOPTCreeducation.15;[FromFrom.GetTitledFirstName] получит базовые знания, этого будет достаточно для обучения торговле;x
+EVTOPTDreeducation.15;Только самое необходимое - это то, чему научится от меня;x
+TOOLTIPreeducation.15A;Детские навыки §Yобучения§! являются основными атрибутами, влияющим на результат обучения.;x

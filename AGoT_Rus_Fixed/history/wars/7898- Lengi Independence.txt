@@ -1,0 +1,22 @@
+name = "Восстание Лэнга"
+
+casus_belli={
+	casus_belli=bid_for_independence
+	actor=15055963
+	recipient=34255954
+	landed_title=e_yi_ti
+	date=7898.1.1
+}
+
+7898.1.1 = {
+	add_defender = 34255954 # Yi Ti
+	add_attacker = 15055963 # Leng 
+}
+
+7899.1.1 = {
+	rem_defender = 34255954 # Yi Ti
+	rem_attacker = 15055963 # Leng
+}
+
+
+                                                                                                                                                                                                                                                                                                                                   

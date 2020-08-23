@@ -1,0 +1,21 @@
+name = "Вторжение Триархии на Ступени"
+
+casus_belli={
+	casus_belli=invasion
+	actor=112300516 # Three Daughters
+	recipient=779496 # Daemon Targaryen
+	landed_title=k_stepstones
+	date=8110.1.1
+}
+
+8110.1.1 = {
+	add_defender = 779496 #Daemon Targaryen
+	add_attacker = 14001 #Dorne
+	add_attacker = 112300516 # Three Daughters
+}
+
+8115.1.1 = {
+	rem_defender = 779496 #Daemon Targaryen
+	rem_attacker = 14001 #Dorne
+	rem_attacker = 112300516 # Three Daughters
+}                                                                                                                                                                                                                                                                                                                

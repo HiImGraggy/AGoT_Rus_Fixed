@@ -1,0 +1,36 @@
+ransom_all;Выкупите всех заключенных;x
+ransom_all_desc;Предложить выкупить всех заключенных.;x
+ransom_all_tooltip;Персонажа просят заплатить выкуп.;x
+ransom.0.desc;[Root.Host.GetTitledFirstName] предложил[Root.Host.GetEndA] выпустить меня из тюрьмы, если я заплачу выкуп.;x
+ransom.0.a;Я заплачу за свою свободу, если я могу себе это позволить;x
+ransom.0.b;Я не буду платить.;x
+ransom.0.w;Вы получили запрос выкупа за одного из Ваших придворных. Это очень выгодная сделка.;x
+ransom.0.w1;Я заплачу, чтобы вернуть их.;x
+ransom.0.w2;Я не буду платить, чтобы вернуть их.;x
+ransom.0.ww;Они отказались принять выкуп!;x
+ransom.0.ww1;Ну, позвольте им гнить...;x
+EVTDESCransom.3;Ваш узник, [From.GetTitledFirstNameWithDynastyNoRegnal], просит встречи с вами. [From.GetSheHe] предлагает сам внести за себя выкуп;x
+EVTDESCransom.3B;Представители персонажа [From.GetTitledFirstNameWithDynastyNoRegnal] запросили у вас аудиенции. Они предлагают заплатить выкуп за освобождение, использовав [From.GetHerHis] личное богатство.;x
+EVTOPTAransom.3;Нет, пусть остается в темнице;x
+EVTOPTAransom.3B;Нет, [From.GetSheHe] останется под моей охраной;x
+EVTOPTBransom.3;Я принимаю предложение;x
+EVTDESCransom.4;Ваш[From.GetEndA] [From.GetRootRelation] [From.GetTitledFirstName] в настоящее время находится в темнице персонажа [From.Host.GetTitledFirstName]. Возможно вы пожелаете заплатить за [From.GetHerHis] освобождение?;x
+EVTDESCransom.4B;Ваш[From.GetEndA] [From.GetRootRelation] [From.GetTitledFirstNameWithDynasty] в настоящее время томится в тюрьме персонажа [From.Host.GetTitledFirstNameWithDynasty]. [From.Host.GetTitledFirstNameNoRegnal] сообщил[From.Host.GetEndA], что [From.Host.GetSheHe] согласится на справедливый выкуп, чтобы освободить заключённого, возможно, я долж[GetNaEn] заплатить?;x
+EVTOPTAransom.4;Да, я сделаю предложение;x
+TOOLTIPransom.4ransom_10;Предложить персонажу [From.GetTitledFirstName] выкуп в 10¤\n;x
+TOOLTIPransom.4ransom_25;Предложить персонажу [From.GetTitledFirstName] выкуп в 25¤\n;x
+TOOLTIPransom.4ransom_46;Предложить персонажу [From.GetTitledFirstName] выкуп в 46¤\n;x
+TOOLTIPransom.4ransom_70;Предложить персонажу [From.GetTitledFirstName] выкуп в 70¤\n;x
+TOOLTIPransom.4ransom_75;Предложить персонажу [From.GetTitledFirstName] выкуп в 75¤\n;x
+TOOLTIPransom.4ransom_110;Предложить персонажу [From.GetTitledFirstName] выкуп в 110¤\n;x
+TOOLTIPransom.4ransom_145;Предложить персонажу [From.GetTitledFirstName] выкуп в 145¤\n;x
+TOOLTIPransom.4ransom_250;Предложить персонажу [From.GetTitledFirstName] выкуп в 250¤\n;x
+TOOLTIPransom.4ransom_385;Предложить персонажу [From.GetTitledFirstName] выкуп в 385¤\n;x
+EVTOPTBransom.4;Не думаю, что я долж[GetNaEn] платить;x
+EVTDESCransom.5;[Root.PrimaryTitle.GetFOA], Я считаю, что [FromFrom.GetTitledFirstNameWithDynasty] уже довольно долго находиться у вас в плену. Я предлагаю заплатить выкуп за [FromFrom.GetHerHis] освобождение. Надеюсь на ваше мудрое решение.\n\n С уважением,\n[From.GetTitledFirstNameWithDynasty];x
+EVTOPTAransom.5;Нет, [FromFrom.GetSheHe] останется в темнице;x
+EVTDESCransom.6;[Root.PrimaryTitle.GetFOA], боюсь, что я не могу принять ваше предложение.\n\n С уважением,\n[From.GetTitledFirstNameWithDynasty];x
+EVTOPTAransom.6;Возможно, мне нужно попробовать другой способ освобождения;x
+EVTDESCransom.7;[Root.PrimaryTitle.GetFOA], как только я получу предлагаемое золото, ваша просьба будет удовлетворена.\n\n С уважением,\n[From.GetTitledFirstNameWithDynasty];x
+EVTOPTAransom.7;Хорошо;x
+TOOLTIPransom.5;ваша просьба о выкупе рассмотрена;x

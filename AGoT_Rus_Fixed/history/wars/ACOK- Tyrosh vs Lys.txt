@@ -1,0 +1,20 @@
+name = "Торговая война Тироша и Лиса"
+
+casus_belli={
+	casus_belli=embargo_cb
+	actor=131300024
+	recipient=88108
+	landed_title=k_lys
+	date=8299.2.11
+}
+
+8299.2.11 = {
+	add_defender = 88108 # Lys
+	add_attacker = 131300024 # Tyrosh
+	
+}
+
+8300.1.1 = {
+	rem_defender = 88108
+	rem_attacker = 131300024
+}

@@ -1,0 +1,20 @@
+name = "Торговая война Пентоса и Лиса"
+
+casus_belli={
+	casus_belli=embargo_cb
+	actor=114174366
+	recipient=111300523
+	landed_title=k_lys
+	date=8157.1.1
+}
+
+8157.1.1 = {
+	add_defender = 111300523 # Lys
+	add_attacker = 114174366 # Pentos
+	
+}
+
+8158.1.1 = {
+	rem_defender = 111300523
+	rem_attacker = 114174366
+}

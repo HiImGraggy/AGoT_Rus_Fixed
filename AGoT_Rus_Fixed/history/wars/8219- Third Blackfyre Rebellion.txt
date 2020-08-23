@@ -1,0 +1,25 @@
+name = "Третье Восстание Блэкфайра"
+
+casus_belli={
+	casus_belli=claim_iron_throne_ACOK
+	actor=10357 #Haegon
+	recipient=77030	#Aerys I
+	landed_title=e_iron_throne
+	date=8219.1.1
+}
+
+8219.1.1 = {
+	add_defender = 77030	#Aerys I
+	add_attacker = 10357 #Haegon
+	#add_attacker = 77025 #Bittsersteel	
+}
+
+8220.1.1 = {
+	rem_defender = 77030	#Aerys I
+	rem_attacker= 10357 #Haegon
+	#rem_attacker= 77025 # Bittsersteel
+}
+
+
+
+                                                                                                                                                                                                                                                                                                                                   

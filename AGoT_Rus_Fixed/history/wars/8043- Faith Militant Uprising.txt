@@ -1,0 +1,21 @@
+name = "Восстание Святого Воинства"
+
+casus_belli={
+	casus_belli=overthrow_ruler_no_calls
+	actor=1001777
+	recipient=77005
+	landed_title=e_iron_throne
+	date=8043.1.1
+}
+
+8043.1.1 = {
+	add_defender = 77005 #Maegor Targaryen
+	add_attacker = 1001777 # High Septon
+}
+8043.5.10 = {
+	rem_defender = 77005 #Maegor Targaryen
+	rem_attacker= 1001777 # High Septon	
+}
+
+
+                                                                                                                                                                                                                                                                                                                                   

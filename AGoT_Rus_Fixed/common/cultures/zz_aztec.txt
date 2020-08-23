@@ -1,0 +1,49 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or cultures, make sure they are unique.
+
+mesoamerican = {
+	graphical_cultures = { mesoamericangfx muslimgfx }
+
+	nahuatl = {
+		graphical_cultures = { mesoamericangfx }
+		color = { 1.0 0.5 0.0 }
+		alternate_start = { 
+			has_alternate_start_parameter = { key = culture value = full_random } 
+			NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } }
+		}
+		
+		horde = yes
+		
+		used_for_random = no
+		
+		male_names = {
+			Акалан Акакитли Акамапичтли Аколмистли Акулнауакатль Ауилистли Ауицотль Атль Ашайакатль Какамацин Чимали Чимальпили Чимальпопока Кипак Коанакоч Коатль Косатли Каутемок Каутль Кетлачтли Кецпали Киштли Китлауак
+			Уицилин Уицилиуитль Уицитль Уицтэколь Икеуакацин Ицкоатль Ицли Ицкинтли Иштлильшочитль Мачимале Матлаль Масатль Матлалиуитль Матлацинкацин Маштла Мистли Моктэсума Мокиуиш Нэкаметль Нэсауалькойотль Нэсауальпили Ночеуатль
+			Окиль Оли Опочтли Осоматли Каутли Тапайаши Тэкокольцин Тэколотль Тэтлепанкецальцин Тэсосомок Тисок Тисокик Тлакэлель Тлакэлельцин Тлали Тлалок Точтли Тототль Цомпанцин Тлильпотонки Топильцин Тотокиуастли
+			Уэман Яотль Яйауки Йолотли Йольяманицин Шикотэнкатль Шиупили Шиуитль Шипиль Шипили Шочитль Шочипэпе Шочипили Сипактональ Солин
+		}
+		female_names = {
+			Ачкаутли Акшоквеитль Авилистли Амоштли Атль Атотостли Айавкиватль Аскальшочицин Сэнтэуа Сиуатон Чальчиуитль Чикауа Чичимекакивацин Чипауа Чикомекоатль Чимальма Сиуатон Ситлали Ситлали Ситлальмина Коашоч Коскатль
+			Косамалотль Квикатль Элевия Элошочитль Этальпали Эстли Уэуэ-Сака Итотия Ивитль Ишкацин Исэль Малинальшочитль Манавия Матлалацин Мекатль Местли Миавашивитль Мияоашочитль Мискишаваль Момостли Науатль Нэкауаль Нэли Отли Папа Патли
+			Киаушочитль Сакнитэ Тэчичпоцин Тэсосомок Цикецальпостэкцин Тэюк Тэикви Тэйякапан Тэпин Тэскатлан Тлакотль Тлако Тлакоэуа Тольтекатль Тональнан Тласосомиски
+			Йольцин Шилонэн Шилошоч Шиутомияуцин Шочитль Шоко Шокойотль Ярэци Сэльцин Сянья
+		}
+		
+		#from_dynasty_prefix = "из "
+		founder_named_dynasties = yes
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 25
+		mat_grm_name_chance = 25
+		mother_name_chance = 0
+
+		allow_looting = yes
+
+		modifier = default_culture_modifier
+	}
+}

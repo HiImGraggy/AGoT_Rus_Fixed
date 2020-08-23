@@ -1,0 +1,26 @@
+name = "Осада Древорона"
+
+casus_belli={
+	casus_belli=AFFC_siege
+	actor=7316
+	recipient=150
+	#landed_title=e_iron_throne
+	date=8300.1.1
+}
+
+8300.1.1 = {
+	add_defender = 150	# Blackwood
+	add_attacker = 7316 #Tommen 
+	add_attacker = 127 #Walder Frey
+	add_attacker = 157 #Piper
+	add_attacker = 1154 #Vance
+	add_attacker = 149 #Bracken
+}
+8300.4.15 = {
+	rem_defender = 150	# Blackwood
+	rem_attacker = 149 #Bracken
+	rem_attacker = 157 #Piper
+	rem_attacker = 1154 #Vance
+	rem_attacker = 127 #Walder Frey
+	rem_attacker = 7316 #Tommen 
+}

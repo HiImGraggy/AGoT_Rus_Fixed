@@ -1,0 +1,56 @@
+name = "Восстание Блэкфайра"
+
+casus_belli={
+	casus_belli=claim_iron_throne_ACOK
+	actor=77024
+	recipient=77023
+	landed_title=e_iron_throne
+	date=8195.3.7
+}
+
+8195.3.7 = {
+	add_defender = 77023 #Daeron II Taragryen
+	#add_defender = 77029 #Baelor Targaryen
+	#add_defender = 11001 #Maron Martell
+	#add_defender = 99190 #Damon Lannister
+	#add_defender = 88067 #Leo Tyrell
+	#add_defender = 202178 #Lord Arryn
+	#add_defender = 1159 #Lord Tully
+	add_attacker = 77024 #Daemon Blackfyre
+	#add_attacker = 11149 #Lord Bracken
+	#add_attacker = 6197 #Lord Reyne
+	#add_attacker = 32212 #Ormond Yronwood
+	#add_attacker = 3022298 #Gormon Peake
+	#add_attacker = 3019363 #Lord Sunderland
+	#add_attacker = 202226 #Viserys Plumm
+	#add_attacker = 3355 #Manfred Lothston
+	#add_attacker = 10285 #Lord Hightower
+	#add_attacker = 30241428 #Lord Strickland
+	#add_attacker = 88184 #Lord Ball
+	#add_attacker = 22227 #Lord Crakehall
+}
+
+8196.12.31 = {
+	#rem_defender = 1159 #Lord Tully
+	#rem_defender = 202178 #Lord Arryn
+	#rem_defender = 88067 #Leo Tyrell
+	#rem_defender = 99190 #Damon Lannister
+	#rem_defender = 11001 #Maron Martell
+	#rem_defender = 77029 #Baelor Targaryen
+	rem_defender = 77023 #Daeron II Taragryen
+	rem_attacker = 77024 #Daemon Blackfyre
+	#rem_attacker = 11149 #Lord Bracken
+	#rem_attacker = 6197 #Lord Reyne
+	#rem_attacker = 32212 #Ormond Yronwood
+	#rem_attacker = 3022298 #Gormon Peake
+	#rem_attacker = 3019363 #Lord Sunderland
+	#rem_attacker = 202226 #Viserys Plumm
+	#rem_attacker = 3355 #Manfred Lothston
+	#rem_attacker = 10285 #Lord Hightower
+	#rem_attacker = 30241428 #Lord Stickland
+	#rem_attacker = 88184 #Lord Ball
+	#rem_attacker = 22227 #Lord Crakehall
+}
+
+
+                                                                                                                                                                                                                                                                                                                                   

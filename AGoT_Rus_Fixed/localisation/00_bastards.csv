@@ -1,0 +1,123 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x;;;
+nick_snow;Сноу;;;;;;;;;;;;;;;;x
+nick_rivers;Риверс;;;;;;;;;;;;;;;;x
+nick_stone;Стоун;;;;;;;;;;;;;;;;x
+nick_hill;Хилл;;;;;;;;;;;;;;;;x
+nick_flowers;Флауэрс;;;;;;;;;;;;;;;;x
+nick_storm;Шторм;;;;;;;;;;;;;;;;x
+nick_waters;Уотерс;;;;;;;;;;;;;;;;x
+nick_sand;Сэнд;;;;;;;;;;;;;;;;x
+nick_pyke;Пайк;;;;;;;;;;;;;;;;x
+EVTDESC76100;Это могло произойти во время долгой военной кампании, так кто же обвинит мужчину, за то, что какая-нибудь девка грела его постель по ночам? Несмотря на это, одна из таких девок родила ребёнка и утверждает, что он мой!;;;;;;;;;;;;;;;;x
+EVTOPTA76100;Дать ей золота, чтобы мой ребёнок ни в чём не нуждался;;;;;;;;;;;;;;;;x
+EVTOPTB76100;Обвинить её во лжи!;;;;;;;;;;;;;;;;x
+EVTOPTC76100;И что с того? Да она гордиться должна!;;;;;;;;;;;;;;;;x
+EVTOPTD76100;Я должен принять ребёнка в свою семью;;;;;;;;;;;;;;;;x
+EVTOPTE76100;Я оставлю ребёнка с его отцом;;;;;;;;;;;;;;;;x
+EVTDESC76102;При поездке по лесу я наткнулся на крестьянскую девку. Мне вспомнилось запрещенное теперь право первой ночи с простолюдинами. Хмм...;;;;;;;;;;;;;;;;x
+EVTOPTA76102;Нет, это нарушение закона;;;;;;;;;;;;;;;;x
+EVTOPTD76102;Нет, это вызовет волнения среди черни;;;;;;;;;;;;;;;;x
+EVTOPTB76102;Я конфискую имущество ее мужа за то, что они не известили о браке меня;;;;;;;;;;;;;;;;x
+EVTOPTC76102;Я использую свое право;;;;;;;;;;;;;;;;x
+EVTTOOLTIP76103;узнает о вашем проступке;;;;;;;;;;;;;;;;x
+EVTDESC76103;Ваш Знаменосец, [From.GetFirstNameWithDynasty], был замечен в использовании запрещенного права первой ночи. Что бы с ним сделать?;;;;;;;;;;;;;;;;x
+EVTOPTA76103;Оштрафовать и выругать его;;;;;;;;;;;;;;;;x
+EVTOPTB76103;Ха! Прекрасный старый обычай!;;;;;;;;;;;;;;;;x
+EVTOPTC76103;Это возмутительно. Арестовать его немедленно;;;;;;;;;;;;;;;;x
+EVTTOOLTIP76105;Выругать его;;;;;;;;;;;;;;;;x
+EVTDESC76104;Девка, которой я давненько воспользовался по праву первой ночи, пришла к воротам моего замка с ребёнком и утверждает, что он мой. Глаза у него, похоже, мои...;;;;;;;;;;;;;;;;x
+EVTOPTB76104;Повесить лживую девку!;;;;;;;;;;;;;;;;x
+EVTDESC76105;[Root.GetFirstNameWithDynasty], я был[From.GetEndA] уведомлен о вашем незаконном использовании права первой ночи в моих землях. Я приказываю вам выдать крестьянам компенсацию и предупреждаю вас на будущее.\n\n С уважением,,\n[From.GetFirstNameWithDynasty];;;;;;;;;;;;;;;;x
+EVTOPTA76105;Оно того стоило;;;;;;;;;;;;;;;;x
+EVTDESC76106;[Root.GetFirstNameWithDynasty], я был[From.GetEndA] уведомлен о вашем незаконном использовании права первой ночи в моих землях. Я помещаю вас под арест до решения мной вашей участи.\n\n С уважением,\n[From.GetFirstNameWithDynasty];;;;;;;;;;;;;;;;x
+EVTOPTA76106;*вздох*;;;;;;;;;;;;;;;;x
+took_illegal_first_night;Незаконно воспользовался правой первой ночи;;;;;;;;;;;;;;;;x
+ask_legitimize_bastard;Запрос на легитимизацию бастарда по имени [This.GetTitledFirstNameWithDynastyAndTitleNoRegnal];;;;;;;;;;;;;;;;x
+ask_legitimize_bastard_desc;Просить Короля признать бастарда по имени §Y[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal]§! как моего законного ребёнка...;;;;;;;;;;;;;;;;x
+EVTTOOLTIP76107;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] рассмотрит вашу просьбу;;;;;;;;;;;;;;;;x
+EVTDESC76107;[Root.PrimaryTitle.GetFOA], я покорнейше прошу признать меня как [FromFromFrom.GetSonDaughterACC] человека, известного как [bastard_father.GetTitledFirstName] [bastard_father.GetOnlyDynastyName], и законным членом Дома [bastard_father.GetOnlyDynastyName]. Я желаю подтверждения законного права на правление владением [FromFromFrom.PrimaryTitle.GetName].\n\n  С уважением,\n[FromFromFrom.GetTitledFirstNameWithNick];;;;;;;;;;;;;;;;x
+EVTDESC76107B;[Root.PrimaryTitle.GetFOA],я покорнейше прошу использовать ваши полномочия Регента, чтобы узаконить меня как [FromFromFrom.GetSonDaughterACC] человека, известного как [bastard_father.GetTitledFirstName] [bastard_father.GetOnlyDynastyName]. Я желаю стать полноправным членом Дома [bastard_father.GetOnlyDynastyName], для подтверждения своих прав на владение титулом [FromFromFrom.PrimaryTitle.GetName].\n\n С уважением,\n[FromFromFrom.GetTitledFirstNameWithNick];;;;;;;;;;;;;;;;x
+EVTDESC76107C;[Root.PrimaryTitle.GetFOA], я смиренно прошу, чтобы мой бастард, [FromFrom.GetTitledFirstNameWithNick], был узаконен и стал полноправным членом Дома [FromFromFrom.GetOnlyDynastyName]. Я был[FromFromFrom.GetEndA] бы очень благодар[FromFromFrom.GetNaEn] за согласие.\n\n Ваш[FromFromFrom.GetEndA],\n[FromFromFrom.GetTitledFirstNameWithDynastyAndTitleNoRegnal];;;;;;;;;;;;;;;;x
+EVTDESC76107D;[Root.PrimaryTitle.GetFOA], я смиренно прошу вас использовать ваши полномочия Регента, чтобы мой бастард [FromFrom.GetTitledFirstNameWithNick] был узаконен и стал полноправным членом Дома [FromFromFrom.GetOnlyDynastyName]. Я был[FromFromFrom.GetEndA] бы очень благодар[FromFromFrom.GetNaEn] за согласие.\n\n Ваш[FromFromFrom.GetEndA],\n[FromFromFrom.GetTitledFirstNameWithDynastyAndTitleNoRegnal];;;;;;;;;;;;;;;;x
+EVTOPTA76107;Ваша просьба удовлетворена;;;;;;;;;;;;;;;;x
+EVTOPTB76107;Я так не думаю;;;;;;;;;;;;;;;;x
+TOOLTIP76108;[This.GetTitledFirstNameWithNick] будет узаконен[This.GetEndA];;;;;;;;;;;;;;;;x
+EVTDESC76108;[Root.GetTitledFirstNameNoRegnal], я решил[From.GetEndA] исполнить вашу просьбу. Я постановляю, что Вы с этого момента законный член Дома [Root.GetOnlyDynastyName].\n\nПодпись,\n[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal];;;;;;;;;;;;;;;;x
+EVTOPTA76108;Премного благодарю;;;;;;;;;;;;;;;;x
+EVTDESCbastard.602;[Root.GetTitledFirstNameNoRegnal], я решил[From.GetEndA] принять вашу просьбу. Постановляю, что [FromFromFrom.GetTitledFirstNameWithNick] впредь будет извест[FromFromFrom.GetNaEn] как ваш[FromFromFrom.GetEndA] законн[FromFromFrom.GetAyaYy] [FromFromFrom.GetSonDaughter] и полноправный член Дома [Root.GetOnlyDynastyName].\n\n Подпись,\n[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal];;;;;;;;;;;;;;;;x
+EVTOPTAbastard.602;Благодарю вас, [From.PrimaryTitle.GetFOA];;;;;;;;;;;;;;;;x
+EVTDESC76109;[Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal], рассмотрев ваше прошение, я отказываю вам. Это не так просто как Вам кажется.\n\nС уважением,\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName], [From.GetRegnalOrdinal] [From.GetHerHis] имени;;;;;;;;;;;;;;;;x
+EVTOPTA76109;Но это мое право!;;;;;;;;;;;;;;;;x
+EVTDESCbastard.499;Ваш[FromFromFromFrom.GetEndA] [FromFromFromFrom.GetRootRelation] [FromFromFromFrom.GetTitledFirstNameWithNick] сделал[FromFromFromFrom.GetEndA] запрос на легитимизацию, и, будучи регентом, [From.GetTitledFirstName]  имеет право принимать подобного рода решения. [From.GetSheHeCap]  решил[From.GetEndA] отклонить запрос.;;;;;;;;;;;;;;;;x
+EVTOPTAbastard.499;Я уверен[GetEndA], [From.GetTitledFirstName] знает, что делает;;;;;;;;;;;;;;;;x
+EVTDESCbastard.500;Ваш[FromFromFromFrom.GetEndA] [FromFromFromFrom.GetRootRelation] [FromFromFromFrom.GetTitledFirstNameWithNick] сделал[FromFromFromFrom.GetEndA] запрос на легимитизацию, и, будучи регентом, [From.GetTitledFirstName] имеет право принимать подобного рода решения. [From.GetSheHeCap] решил[From.GetEndA]  удовлетворить просьбу, отныне [FromFromFrom.GetTitledFirstName] полноправный член Дома [FromFromFromFrom.GetOnlyDynastyName].;;;;;;;;;;;;;;;;x
+EVTOPTAbastard.500;[FromFrom.GetTitledFirstName] будет рад[FromFrom.GetEndA] ;;;;;;;;;;;;;;;;x
+EVTDESCbastard.501;[Root.GetTitledFirstName], я решил[FromFrom.GetEndA], что Ваш[From.GetEndA] [GetFromRelation] [From.GetTitledFirstName] получит право на о легимитизации. Повелеваю, что отныне [From.GetSheHe] будет являться законным представителем Дома [From.GetOnlyDynastyName].\n\n С уважением,\n[FromFrom.GetTitle] [FromFrom.GetFirstName] из Дома [FromFrom.GetOnlyDynastyName], [FromFrom.GetRegnalOrdinal]  [FromFrom.GetHerHis] имени;;;;;;;;;;;;;;;;x
+EVTOPTAbastard.501;Прекрасное пополнение Дома [From.GetOnlyDynastyName];;;;;;;;;;;;;;;;x
+EVTOPTBbastard.501;Почему меня не спросили?!;;;;;;;;;;;;;;;;x
+opinion_legitimised_kin_angry;Недовольство легитимизацией родственника;;;;;;;;;;;;;;;;x
+#EVTDESC76110;[Root.PrimaryTitle.GetFOA], я покорнейше прошу признать бастарда моим ребёнком и узаконить его права как члена моего дома [From.GetOnlyDynastyName].\n\nС уважением,\n[From.GetFirstNameWithDynasty];;;;;;;;;;;;;;;;x
+#EVTDESC76111;[Root.GetFirstNameWithDynasty], я решил[From.GetEndA] исполнить вашу просьбу. Я постановляю, что с этого момента ваш бастард  является законным членом Дома [Root.GetOnlyDynastyName].\n\n С уважением,\n[From.GetTitledFirstNameoftheHouseNoRegnal], [From.GetRegnalOrdinal]  [From.GetHerHis] имени;;;;;;;;;;;;;;;;x
+EVTDESC76112;[Root.GetFirstNameWithDynasty], рассмотрев ваше прошение, я решил[From.GetEndA], что ваш бастард не будет узаконен.\n\n С Уважением,\n[From.GetTitle] [From.GetFirstNameWithDynasty];;;;;;;;;;;;;;;;x
+EVTOPTD76015;Я попрошу короля;;;;;;;;;;;;;;;;x
+EVTOPTC76021;Возможно, я попрошу короля;;;;;;;;;;;;;;;;x
+EVTOPTC76022;Я попробовал[GetEndA], но король отказал;;;;;;;;;;;;;;;;x
+EVTTOOLTIP76022C;узнает об отказе короля;;;;;;;;;;;;;;;;x
+EVTTOOLTIP76022B;узнает о королевском согласии;;;;;;;;;;;;;;;;x
+opinion_accepted_legit;Согласие узаконить;;;;;;;;;;;;;;;;x
+opinion_refused_legit;Отказаз узаконить;;;;;;;;;;;;;;;;x
+EVTOPTA76109;Почему мне отказали?;;;;;;;;;;;;;;;;x
+legitimize_self;Легитимизировать себя;;;;;;;;;;;;;;;;x
+legitimize_self_desc;Так как вы - [Root.GetTitle], у вас есть право объявить себя законным членом вашего дома и наследником титула [Root.PrimaryTitle.GetName];;;;;;;;;;;;;;;;x
+ask_liege_for_legitimisation;Запрос легитимизации;;;;;;;;;;;;;;;;x
+ask_liege_for_legitimisation_desc;Попросите своего господина объявить вас членом вашего дома и законным наследником титула [Root.PrimaryTitle.GetName];;;;;;;;;;;;;;;;x
+#EVTDESC76107;[Root.PrimaryTitle.GetFOA], я покорнейше прошу признать бастарда по имени [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] моим ребёнком и узаконить его права как члена моего Дома [From.GetOnlyDynastyName].\n\n С уважением,\n[FromFrom.GetFirstNameWithDynasty];;;;;;;;;;;;;;;;x
+#EVTDESC76108;[Root.GetFirstNameWithDynasty], я решил[From.GetEndA] исполнить вашу просьбу. Я постановляю, что с этого момента [FromFrom.GetTitledFirstNameWithDynastyAndTitleNoRegnal] является законным членом Дома [Root.GetOnlyDynastyName].\n\n С Уважением,\n[From.GetTitledFirstNameoftheHouseNoRegnal], [From.GetRegnalOrdinal] [From.GetHerHis] имени;;;;;;;;;;;;;;;;x
+#EVTDESC76109;[Root.GetFirstNameWithDynasty], рассмотрев ваше прошение, я решил[From.GetEndA], что [FromFrom.GetTitledFirstNameWithDynastyAndTitleNoRegnal] не будет узаконен[From.GetEndA].\n\n C уважением,\n[From.GetTitle] [From.GetFirstNameWithDynasty];;;;;;;;;;;;;;;;x
+first_night;Право первой ночи;;;;;;;;;;;;;;;;x
+first_night_desc;Право Первой ночи - это традиция, практикуемая в Вестеросе и Валирии. Когда женились простолюдины или крестьяне, их лорд имел право первым возлечь с невестой в брачную ночь. Эта традиция иногда позволяла и королям требовать подобного от своих лордов, но на практике такое применялось редко. Заставив знать отдавать невест на первую брачную ночь сюзерену, можно нажить немало врагов.;;;;;;;;;;;;;;;;x
+first_night_0;Право первой ночи упразднено;;;;;;;;;;;;;;;;x
+first_night_0_option;незаконно;;;;;;;;;;;;;;;;x
+first_night_0_desc;Право первой ночи незаконно. Лорд, замеченный за осуществлением права первой ночи может быть наказан.;;;;;;;;;;;;;;;;x
+first_night_1;Первая ночь утверждена;;;;;;;;;;;;;;;;x
+first_night_1_option;утверждена;;;;;;;;;;;;;;;;x
+first_night_1_desc;Право первой ночи утверждено законом. Лорды могут требовать себе в постель крестьянских невест из своих владений.;;;;;;;;;;;;;;;;x
+EVTDESC76110;Право первой ночи законно в земле [Root.PrimaryTitle.GetName], и, время от времени, вы затаскиваете к себе в постель красивых невест-крестьянок. Вы заметили одну из таких простолюдинок с ребёнком, который очень похож на вас…;;;;;;;;;;;;;;;;x
+EVTOPTA76110;Это не мой ребёнок;;;;;;;;;;;;;;;;x
+EVTOPTB76110;Да, я признаю его как своего;;;;;;;;;;;;;;;;x
+EVTOPTC76110;Я узаконю его;;;;;;;;;;;;;;;;x
+EVTDESC76111;Кажется ваш [From.GetRootRelation] [From.GetTitledFirstName] охотно использовал право первой ночи со многими крестьянскими невестами в городе [Root.Capital.GetName] и минимум одну из них наградил ребёнком. Сейчас он пришёл с этим ребёнком в замок и утверждает, что это его дитя.;;;;;;;;;;;;;;;;x
+abolished_first_night;Отменил[_] право первой ночи;;;;;;;;;;;;;;;;x
+opinion_abolished_first_night_bad;Отменил[_] право первой ночи;;;;;;;;;;;;;;;;x
+opinion_abolished_first_night_good;Отменил[_] право первой ночи;;;;;;;;;;;;;;;;x
+legalised_first_night;Узаконил[_] право первой ночи;;;;;;;;;;;;;;;;x
+opinion_legalised_first_night_good;Узаконил[_] право первой ночи;;;;;;;;;;;;;;;;x
+opinion_legalised_first_night_bad;Узаконил[_] право первой ночи;;;;;;;;;;;;;;;;x
+claimed_first_night;Право Первой Ночи;;;;;;;;;;;;;;;;x
+EVTOPT76111;Еще одно семя Дома [From.GetOnlyDynastyName];;;;;;;;;;;;;;;;x
+TOOLTIPEVTOPTA76110;От ребёнка по имени [This.GetFirstName] отказываются, [This.GetSheHe] становится безотцовщиной\n;;;;;;;;;;;;;;;;x
+opinion_confirmed_first_night;Принудить лордов принять Право первой ночи;;;;;;;;;;;;;;;;x
+opinion_restricted_first_night;Запретить Право первой ночи;;;;;;;;;;;;;;;;x
+EVTDESCbastard.1;Мой муж [From.GetFirstName] умер, оставив мо[Root.Liege.GetYuEgo] [Root.Liege.GetSonDaughterACC], известн[Root.Liege.GetYuEgo] как [Root.Liege.GetFirstName] править в качестве владельца титула [Root.Liege.GetTitle]. [From.GetFirstName] был известным прелюбодеем, оставив множество своих бастардов от крестьянских девок. Эти бастарды могут представлять угрозу для законного наследника.;;;;;;;;;;;;;;;;x
+EVTOPTAbastard.1;Уничтожить их всех!;;;;;;;;;;;;;;;;x
+TOOLTIPbastard.1;Цель - [This.GetFirstNameWithNick]\n;;;;;;;;;;;;;;;;x
+TOOLTIPbastard.2;Убийства не раскрыты;;;;;;;;;;;;;;;;x
+TOOLTIPbastard.3;Убийство раскрыто;;;;;;;;;;;;;;;;x
+EVTOPTBbastard.1;Оставить их;;;;;;;;;;;;;;;;x
+EVTDESCbastard.2;Убийства шли как по маслу. Ваши самые доверенные люди рыскали около борделей и домов в городе [Root.Liege.Capital.GetName], стараясь незаметно убивать любого ребёнка, подозревая в них тайных бастардов бывшего властителя по имени [FromFrom.GetTitledFirstNameNoRegnal], и их матерей. Были вырезаны самые приметные и известные бастарды, а Ваше участие в этом осталось в тени.;;;;;;;;;;;;;;;;x
+EVTOPTAbastard.2;Это необходимо, чтобы обеспечить безопасность наследника!;;;;;;;;;;;;;;;;x
+EVTDESCbastard.3;Некоторые из ваших доверенных людей тайно бродили рядом с борделями и домами в городе [Root.Liege.Capital.GetName], убивая любого ребёнка, подозревая что он бастард человека, известного как [FromFrom.GetTitledFirstNameNoRegnal], и их матерей. Тем не менее, стало известно, что Вы стоите за этим!;;;;;;;;;;;;;;;;x
+EVTOPTAbastard.3;Глупцы и предатели!;;;;;;;;;;;;;;;;x
+EVTDESCbastard.5;[From.GetFirstNameWithNick] смог[From.GetNoneE] вырваться из цепких рук Ваших людей и бежать в город [From.Liege.Capital.GetName]!;;;;;;;;;;;;;;;;x
+EVTOPTAbastard.5;Так или иначе, я устраню изгнанника!;;;;;;;;;;;;;;;;x
+EVTDESCbastard.6;Одному из ранее неизвестных бастардов человека, известного как [FromFromFrom.GetTitledFirstNameNoRegnal] удалось сбежать из города [Root.Liege.Capital.GetName] от [escaped_bastard.GetHerHis] убийц. Этот предатель по имени [escaped_bastard.GetFirstNameWitchNick] бежал в [escaped_bastard.Liege.Capital.GetName] и теперь претендует на титул [FromFromFrom.PrimaryTitle.GetName].;;;;;;;;;;;;;;;;x
+EVTOPTAbastard.6;Это недопустимо!;;;;;;;;;;;;;;;;x
+EVTDESCbastard.7;"Мои люди действовали безжалостно, 'защищая' наследника после смерти отца, известного как [FromFromFrom.GetTitledFirstNameNoRegnal]. Они убивали всех детей подряд, которых могли найти, подозревая что они бастарды, вместе с матерями. Жители города [From.Liege.Capital.GetName] в ужасе от такой серии убийств.;;;;;;;;;;;;;;;;x
+EVTOPTAbastard.7;Это шокирует!;;;;;;;;;;;;;;;;x
+TOOLTIPbastard.501B;После смерти человека, известного как [Root.GetTitledFirstNameNoRegnal], наследник из Дома [Root.GetOnlyDynastyName] определен для наследования титула [Root.PrimaryTitle.GetName]\n;;;;;;;;;;;;;;;;x
+legitimize_bastard;Получение легитимизации;;;;;;;;;;;;;;;;xx
+legitimize_bastard_desc;Ваш[Root.GetEndA] [Root.GetSonDaughter]-бастард [Root.GetTitledFirstNameNoRegnal] объявил[Root.GetEndA] о признании  законности.  Обычно только король может узаконить бастарда.;;;;;;;;;;;;;;;;x
+TOOLTIPlegitimize_bastardONGOING;Легитимизация НЕ запрошена;;;;;;;;;;;;;;;;x
+TOOLTIP301LEGITREQUEST;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] рассмотрит ваш запрос на легитимацию;;;;;;;;;;;;;;;;x
+EVTOPTA301B;Просить о легитимизации;;;;;;;;;;;;;;;;x
+TOOLTIPlegit_bastard_fail;§RВ настоящее время над вами нет лорда, которого вы можете попросить о легитимизации§!;;;;;;;;;;;;;;;;x

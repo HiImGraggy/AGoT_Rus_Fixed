@@ -1,0 +1,21 @@
+name = "Вторжение Волантиса"
+
+casus_belli={
+	casus_belli=dejure_kingdom_claim
+	actor=342174371 # Volantis
+	recipient=342300525 # Myr
+	landed_title=k_myr
+	date=7932.1.1
+}
+
+7932.1.1 = {
+	add_defender = 342300525 # Myr
+	add_defender = 342300263 # Lys
+	add_attacker = 342174371 # Volantis
+}
+
+7933.1.1 = {
+	rem_defender = 342300525 # Myr
+	rem_defender = 342300263 # Lys
+	rem_attacker = 342174371 # Volantis
+}                                                                                                                                                                                                                                                                                                                

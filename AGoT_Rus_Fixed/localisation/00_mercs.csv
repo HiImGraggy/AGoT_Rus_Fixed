@@ -1,0 +1,104 @@
+#CODE;ENGLISH;x
+d_merc_inf_1;Пехота наемников;x
+d_merc_inf_2;Пехота наемников;x
+d_merc_inf_3;Пехота наемников;x
+d_merc_inf_4;Пехота наемников;x
+d_merc_inf_5;Пехота наемников;x
+d_merc_inf_6;Пехота наемников;x
+d_merc_inf_7;Пехота наемников;x
+d_merc_inf_8;Пехота наемников;x
+d_merc_inf_9;Пехота наемников;x
+d_merc_inf_10;Пехота наемников;x
+d_merc_inf_11;Пехота наемников;x
+d_merc_inf_12;Пехота наемников;x
+d_merc_inf_13;Рейдеры железнорожденных;x
+d_merc_dornishspears_1;Дорнийские копейщики;x
+d_merc_dornishspears_2;Дорнийские копейщики;x
+d_merc_dornishspears_3;Дорнийские копейщики;x
+d_merc_dornishspears_4;Дорнийские копейщики;x
+d_merc_dornishspears_5;Дорнийские копейщики;x
+d_merc_dornishspears_6;Дорнийские копейщики;x
+d_merc_hedgeknight_1;Межевые рыцари;x
+d_merc_hedgeknight_2;Межевые рыцари;x
+d_merc_hedgeknight_3;Межевые рыцари;x
+d_merc_hedgeknight_4;Межевые рыцари;x
+d_merc_hedgeknight_5;Межевые рыцари;x
+d_merc_hedgeknight_6;Межевые рыцари;x
+d_merc_hedgeknight_7;Межевые рыцари;x
+d_merc_hedgeknight_8;Межевые рыцари;x
+d_merc_hedgeknight_9;Межевые рыцари;x
+d_merc_hedgeknight_10;Межевые рыцари;x
+d_merc_fleet_1;Флот Наемников;x
+d_merc_fleet_2;Флот Наемников;x
+d_merc_fleet_3;Флот Наемников;x
+d_merc_fleet_4;Флот Наемников;x
+d_merc_fleet_5;Флот Наемников;x
+d_merc_fleet_6;Флот Наемников;x
+d_merc_fleet_7;Флот Наемников;x
+d_merc_fleet_8;Флот Наемников;x
+d_merc_fleet_9;Флот Наемников;x
+d_merc_fleet_10;Флот Наемников;x
+CAPTAINGENERAL;Капитан-Генерал;x
+d_golden_company;Золотые Мечи;x
+employ_golden_company;Попытаться нанять на службу Золотых Мечей;x
+employ_golden_company_desc;Отправить Мастера над Законом за Узкое море, чтобы он попытался нанять Золотых Мечей. Как известно, в их отряде §Y10000§! мужей и найм их стоит более §Y900§! Драконов;x
+TOOLTIPfree_cities.2;[Root.job_chancellor.GetTitledFirstNameWithDynastyAndTitleNoRegnal] попытается нанять Золотых Мечей за Узким морем;x
+EVTDESCfree_cities.2;[From.GetFirstNameWithDynasty] желает нанять Золотых Мечей.;x
+EVTOPTAfree_cities.2;При условиичто я получу достойную награду.;x
+EVTOPTBfree_cities.2;Да, это может выгодно.;x
+EVTOPTCfree_cities.2;Я так не думаю;x
+EVTDESCfree_cities.3;[Root.GetTitle] [Root.GetFirstNameWithDynasty], Ваше предложение, чтобы мы сражались за вас, очень заманчиво. Если вы предложите мне личное вознаграждение, думаю, мы согласимся. \n\n С уважением,\n[From.GetFirstNameWithDynasty];x
+TOOLTIPGOLDENCOMPANY500;[From.GetFirstNameWithDynasty] получит §Y500§! драконов из вашей казны.\n;x
+TOOLTIPGOLDENCOMPANY400;[From.GetFirstNameWithDynasty] получит §Y400§! драконов из вашей казны\n;x
+TOOLTIPGOLDENCOMPANY300;[From.GetFirstNameWithDynasty] получит §Y300§! драконов из вашей казны\n;x
+TOOLTIPGOLDENCOMPANY200;[From.GetFirstNameWithDynasty] получит §Y200§! драконов из вашей казны\n;x
+TOOLTIPGOLDENCOMPANY100;[From.GetFirstNameWithDynasty] получит §Y100§! драконов из вашей казны\n;x
+TOOLTIPCANHIREGOLDENCOMPANY;Вы можете нанять Золотые Мечи в полном обмундировании за 900¤\n;x
+EVTOPTAfree_cities.3;Я должен заплатить им.;x
+EVTOPTBfree_cities.3;Жалкий Ублюдок! Я отказываюсь.;x
+EVTDESCfree_cities.4;[Root.GetTitle] [Root.GetFirstNameWithDynasty], Ваше предложение по поводу нашего найма мы сочли приемлимым. Мы будем сражаться за вас.\n\nС Уважением,\n[From.GetFirstNameWithDynasty];x
+EVTOPTAfree_cities.4;Это должно повлиять на ход войны.;x
+EVTOPTBfree_cities.4;на самом деле, я изменил[GetEndA] свое мнение;x
+EVTDESCfree_cities.5;[Root.GetTitle] [Root.GetFirstNameWithDynasty], боюсь что я не вижу смысла участвовать в войне на вашей стороне. Мы подождем лучшего предложения. \n\n С уважением,\n[From.GetFirstNameWithDynasty];x
+EVTOPTBfree_cities.5;Они утрачены;x
+EVTDESCfree_cities.6;Золотые Мечи больше не сражаются за нас, нам нужно обратится к ним, чтобы снова получить их мечи.;x
+EVTDESCfree_cities.7;[Root.GetTitle] [Root.GetFirstNameWithDynasty], к сожалению мы не можем присоединиться к вашей борьбе, возможно мы сможем добиться соглашения в будущем.\n\n С уважением,\n[From.GetFirstNameWithDynasty];x
+k_golden_company;Золотые Мечи;x
+d_brave_companions;Бравые Ребята;x
+d_bright_banners;Сияющие Знамена;x
+d_company_of_the_cat;Рота Кошки;x
+d_gallant_men;Славные Кавалеры;x
+d_iron_shields;Железные Щиты;x
+d_long_lances;Длинные Копья;x
+d_maidens_men;Воины Девы;x
+d_ragged_standard;Рваное Знамя;x
+d_second_sons;Младшие Сыны;x
+d_stormcrows;Вороны-Буревестники;x
+d_windblown;Гонимые Ветром;x
+d_e_merc_inf_1;Наемная пехота;x
+d_e_merc_inf_2;Наемная пехота;x
+d_e_merc_inf_3;Наемная пехота;x
+d_e_merc_inf_4;Наемная пехота;x
+d_e_merc_inf_5;Наемная пехота;x
+d_e_merc_inf_6;Наемная пехота;x
+d_e_merc_inf_7;Наемная пехота;x
+d_e_merc_inf_8;Наемная пехота;x
+d_e_merc_inf_9;Наемная пехота;x
+d_e_merc_inf_10;Наемная пехота;x
+d_e_merc_inf_11;Наемная пехота;x
+d_e_merc_inf_12;Наемная пехота;x
+d_e_merc_inf_13;Наемная пехота;x
+d_merc_hyrkoonispears_1;Гиркунские копьеносцы;x
+d_merc_hyrkoonispears_2;Гиркунские копьеносцы;x
+d_merc_hyrkoonispears_3;Гиркунские копьеносцы;x
+d_merc_hyrkoonispears_4;Гиркунские копьеносцы;x
+d_merc_hyrkoonispears_5;Гиркунские копьеносцы;x
+d_merc_hyrkoonispears_6;Гиркунские копьеносцы;x
+d_stormbreakers;Штормовые Нарушители;x
+d_company_of_the_rose;Отряд Розы;x
+d_lost_legion;Потерянный Легион;x
+d_wolf_pack;Волчья стая;x
+d_jolly_fellows;Весельчаки;x
+d_free_company;Вольная Компания;x
+d_adventurers;Авантюристы;x
+d_men_of_valor;Доблестные;x

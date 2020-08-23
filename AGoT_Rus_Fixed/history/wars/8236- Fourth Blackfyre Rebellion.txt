@@ -1,0 +1,25 @@
+name = "Четвертое Восстание Блэкфайра"
+
+casus_belli={
+	casus_belli=claim_iron_throne_ACOK
+	actor=60000057 #Daemon III
+	recipient=77034
+	landed_title=e_iron_throne
+	date=8236.1.1
+}
+
+8236.1.1 = {
+	add_defender = 77034 #Aegon V
+	add_attacker = 60000057 #Daemon III
+	#add_attacker = 77025 #Bittsersteel	
+}
+
+8236.3.2 = {
+	rem_defender = 77034 #Aegon V
+	rem_attacker= 60000057 # Daemon III
+	#rem_attacker= 77025 # Bittsersteel
+}
+
+
+
+                                                                                                                                                                                                                                                                                                                                   

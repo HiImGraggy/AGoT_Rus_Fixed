@@ -1,0 +1,267 @@
+#c_toqolarth
+123456 = {
+	name = " "
+	
+	religion="ruin_rel"
+	culture="ruin"	
+	
+	7900.1.1 = {
+		birth="7900.1.1"
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				death = yes
+			}	
+			if = {
+				limit = { is_ruler = yes }
+				add_trait = ruin
+				set_defacto_liege = THIS
+				c_toqolarth = { 
+					location = { 
+						set_province_flag = ca_colony_3 
+						set_province_flag = ruined_province
+					}
+				}
+				character_event = { id = unoccupied.101 }	
+				create_character = {
+					name = ""
+					religion="ruin_rel"
+					culture="ruin"	
+					dynasty=none
+					attributes = {
+						martial = 0
+						diplomacy = 0
+						intrigue = 0
+						stewardship = 0
+						learning = 0
+					}
+					trait = ruin
+				}
+				new_character = {
+					b_toqolarth = { gain_title = PREV }
+				}
+				create_character = {
+					name = ""
+					religion="ruin_rel"
+					culture="ruin"	
+					dynasty=none
+					attributes = {
+						martial = 0
+						diplomacy = 0
+						intrigue = 0
+						stewardship = 0
+						learning = 0
+					}
+					trait = ruin
+				}
+				new_character = {
+					b_toqolarth_temple = { gain_title = PREV }
+				}
+			}	
+		}
+	}
+}
+#c_ny_sar
+123457 = {
+	name = " "
+	
+	religion="ruin_rel"
+	culture="ruin"	
+	
+	7300.1.1 = {
+		birth="7300.1.1"
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				death = yes
+			}	
+			if = {
+				limit = { is_ruler = yes }
+				add_trait = ruin
+				set_defacto_liege = THIS
+				c_ny_sar = { 
+					location = { 
+						set_province_flag = ca_colony_6
+						set_province_flag = ruined_province
+					}
+				}
+				character_event = { id = unoccupied.101 }	
+				
+				create_character = {
+					name = ""
+					religion="ruin_rel"
+					culture="ruin"	
+					dynasty=none
+					attributes = {
+						martial = 0
+						diplomacy = 0
+						intrigue = 0
+						stewardship = 0
+						learning = 0
+					}
+					trait = ruin
+				}
+				new_character = {
+					b_ny_sar = { gain_title = PREV }
+				}
+				create_character = {
+					name = ""
+					religion="ruin_rel"
+					culture="ruin"	
+					dynasty=none
+					attributes = {
+						martial = 0
+						diplomacy = 0
+						intrigue = 0
+						stewardship = 0
+						learning = 0
+					}
+					trait = ruin
+				}
+				new_character = {
+					b_ny_sartemple = { gain_title = PREV }
+				}
+			}	
+		}
+	}
+}
+#c_summerhall
+123458 = {
+	name = " "
+	
+	religion="ruin_rel"
+	culture="ruin"	
+	
+	8240.1.1 = {
+		birth="8240.1.1"
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				death = yes
+			}	
+			if = {
+				limit = { is_ruler = yes }
+				add_trait = ruin
+				set_defacto_liege = THIS
+				c_summerhall = { 
+					location = { 
+						set_province_flag = ca_colony_3 
+						set_province_flag = ruined_province
+					}
+				}
+				character_event = { id = unoccupied.101 }	
+			}	
+		}
+	}
+}
+#c_oldstones
+123459 = {
+	name = " "
+	
+	religion="ruin_rel"
+	culture="ruin"	
+	
+	6670.1.1 = {
+		birth="6670.1.1"
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				death = yes
+			}	
+			if = {
+				limit = { is_ruler = yes }
+				add_trait = ruin
+				set_defacto_liege = THIS
+				c_oldstones = { 
+					location = { 
+						set_province_flag = ca_colony_5
+						set_province_flag = ruined_province
+					}
+				}
+				character_event = { id = unoccupied.101 }	
+				
+				create_character = {
+					name = ""
+					religion="ruin_rel"
+					culture="ruin"	
+					dynasty=none
+					attributes = {
+						martial = 0
+						diplomacy = 0
+						intrigue = 0
+						stewardship = 0
+						learning = 0
+					}
+					trait = ruin
+				}
+				new_character = {
+					b_pitford = { gain_title = PREV }
+				}
+			}	
+		}
+	}
+}
+#c_oldghis
+123460 = {
+	name = " "
+	
+	religion="ruin_rel"
+	culture="ruin"	
+	
+	6670.1.1 = {
+		birth="6670.1.1"
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				death = yes
+			}	
+			if = {
+				limit = { is_ruler = yes }
+				add_trait = ruin
+				set_defacto_liege = THIS
+				c_oldghis = { 
+					location = { 
+						set_province_flag = ca_colony_6
+						set_province_flag = ruined_province
+					}
+				}
+				character_event = { id = unoccupied.101 }	
+				
+				create_character = {
+					name = ""
+					religion="ruin_rel"
+					culture="ruin"	
+					dynasty=none
+					attributes = {
+						martial = 0
+						diplomacy = 0
+						intrigue = 0
+						stewardship = 0
+						learning = 0
+					}
+					trait = ruin			
+				}
+				new_character = {
+					b_oldghis = { gain_title = PREV }
+				}
+				create_character = {
+					name = ""
+					religion="ruin_rel"
+					culture="ruin"	
+					dynasty=none
+					attributes = {
+						martial = 0
+						diplomacy = 0
+						intrigue = 0
+						stewardship = 0
+						learning = 0
+					}
+					trait = ruin			
+				}
+				new_character = {
+					b_oldghistemple = { gain_title = PREV }
+				}
+			}	
+		}
+	}
+}

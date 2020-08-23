@@ -1,0 +1,3992 @@
+###
+###Broken Arm
+###
+###################
+###House Martell### # Updated \Chrisjm89/
+###################
+2001 = {
+	name="Лореза" #Доран's Mother. Оберин probably named one his daughters after her.
+	female=yes
+	dynasty=1
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	father=24001 
+
+	add_trait=grey_eminence
+	add_trait=kind
+	add_trait=just
+	
+	8230.1.1 = {birth="8230.1.1" }
+	8244.1.1 = {
+		add_matrilineal_spouse = 175010 #Левин Jordayne
+	}
+	8259.1.1 = { #Ninepenny Kings
+		effect = {
+			if = {
+				limit = { NOT = { start_date = 8260.12.31 } }
+				# if = {
+					# limit = { NOT = { year = 8259 } }
+					# character_event = { id = 999990206 }
+				# }
+				any_vassal = { set_character_flag = supporting_king  }
+				set_character_flag = supporting_king
+				e_iron_throne = {
+					holder_scope = { 
+						ROOT = {
+							opinion = {
+								who = PREV
+								modifier = opinion_with_king
+								years = 100
+							}	
+						}
+						ROOT = {
+							join_defender_wars = PREV
+						}
+					}
+				}
+			}
+		}
+	}
+	8275.1.1 = { add_trait = widowed }
+	8280.1.1 = {death="8280.1.1"} #after betrothing Элия to Rhaegar
+}
+4056 = {
+	name="Левин" #Dorans uncle from Kingsguard
+	dynasty=1
+	dna="aeidfxdgaaa"
+	properties="aj0bhk0000"
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	martial = 12
+	diplomacy = 8
+	intrigue = 8
+	stewardship = 4
+	learning = 5
+	
+	father=24001
+	
+	add_trait="lustful"
+	add_trait="proud"
+	add_trait="brave"
+	add_trait="kind"
+	add_trait="familyperson"
+	
+	8233.1.1 = {
+		birth="8233.1.1"
+	} 
+	8249.1.1 = {
+		add_trait="knight"
+		add_trait="master_warrior"
+		add_trait="tough_soldier"
+	}
+	8264.1.1 = { 	#Joined the kingsguard.
+		employer=77039 #Rhaegar
+		add_trait="kingsguard"
+		effect = { 
+			d_dragonstone = {
+				holder_scope = {
+					reverse_opinion = { who = ROOT modifier = loan_kingsguard years = 100 }
+				}
+			}
+		}
+	}
+	8283.1.1={
+		#Died on the trident. By Lyn Corbay, was mortally injured b4 final battle.
+		add_trait=wounded
+		death = {
+			death_reason = death_battle
+			killer = 94050
+		}
+	}
+}
+##Issue of Обера##
+1 = {
+	name="Доран" #THE Доран.
+	dynasty=1
+	dna="aefdfiegaal"
+	properties="ac0bfk0000"
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	martial = 6
+	diplomacy = 12
+	intrigue = 14
+	stewardship = 10
+	learning = 12
+	
+	add_trait="quick"
+	#add_trait="weak"
+	
+	mother=2001
+	father=175010
+	
+	8248.1.1 = {
+		birth="8248.1.1"  
+		effect = { health = 3 }
+	}
+	8257.1.1 = {add_trait="squire"} # He squired for Lord Тремонд Gargalen from age nine. It was here that he learned Элия was born.
+	8264.1.1 = {add_trait="elusive_shadow" add_trait="deceitful" add_trait="kind"}
+	8264.8.4 = {remove_trait="squire" add_trait="knight"}
+	8268.1.1 = {
+		add_trait="temperate"
+	    add_trait="diligent"
+	    add_trait="humble"
+	    add_trait="just"
+	}
+	8270.1.1 = {add_spouse=8001}
+	8271.1.1 = {
+		effect = {
+			add_friend = 3001 #Оберин
+		}
+	}
+	8282.8.2 = {add_trait="patient"}
+	8282.9.15 = { #RR
+		effect = {
+			if = {
+				limit = { NOT = { start_date = 8283.6.1 } }
+				character_event = { id = roberts_rebellion.9 }
+				set_defacto_liege = ROOT
+				e_iron_throne = {
+					holder_scope = { 
+						ROOT = {
+							join_defender_wars = PREV
+						}
+					}
+				}
+				any_vassal = { set_character_flag = supporting_king  }
+				set_character_flag = supporting_king
+				c_77037 = { 
+					reverse_opinion = {
+						modifier = opinion_dynasty_loyalist
+						who = ROOT
+					}
+					opinion = {
+						modifier = opinion_my_loyalist
+						who = ROOT
+					}
+				}
+			}	
+		}
+	}	
+	8284.1.1 = { #CS
+		effect = {
+			if = {
+				limit = { NOT = { year = 8299 } }
+				character_event = { id = roberts_rebellion.17 }
+			}	
+		}
+	}
+	8295.1.1 = {
+		effect = {
+			if = {
+				limit = { has_dlc = "Reapers" }
+				set_character_flag = manifest_gout
+				add_trait="gout"
+				add_character_modifier = { name = successful_treatment_3 duration = -1 }
+			}
+			if = {
+				limit = { NOT = { has_dlc = "Reapers" } }
+				add_trait="infirm"
+			}
+		}
+	}
+	8299.2.11 = { #ACoK
+		effect = {
+			character_event = { id = clash_of_kings.504 }
+			set_character_flag = neutral
+			clr_character_flag = supporting_king
+			clr_character_flag = against_king
+			any_vassal = { 
+				set_character_flag = neutral
+				clr_character_flag = supporting_king
+				clr_character_flag = against_king
+			}
+			e_iron_throne = {
+				holder_scope = {
+					opinion = {
+						who = ROOT
+						modifier = opinion_dithered
+						years = 5
+					}
+				}
+			}	
+			c_14 = { give_minor_title = title_commander } #Lord Fowler
+			c_12 = { give_minor_title = title_commander } #Андерс Yronwood
+		}
+		raise_levies = {		#Armies ready in the passes
+			location = 333 #Skyreach
+			force_mult = 1
+		}	
+	}	
+	8300.3.1 = { #AFFC
+		effect = {
+			character_event = { id = feast_for_crows.14 days = 50 random = 30 }
+			add_artifact = mountain_skull
+		}
+	}	
+	
+}
+3001300 = {
+	name="Морс " #Infant brother that died
+	dynasty=1
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	mother = 2001
+	father=175010
+	
+	8249.1.1 = {effect={add_trait=sickly} birth="8249.1.1"}
+	8250.1.1 = {death = { death_reason = death_sickly }}
+}
+3002300 = {
+	name="Оливар " #Infant brother that died
+	dynasty=1
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	mother = 2001
+	father=175010
+	
+	8250.1.1 = {effect={add_trait=sickly} birth="8250.1.1"}
+	8251.1.1 = {death = { death_reason = death_sickly }}
+}
+1001 = {
+	name="Элия"
+	female=yes
+	dynasty=1
+	dna="amejciffacu"
+	properties="0e0cfk"
+	
+	diplomacy = 3
+	martial = 1
+	stewardship = 3
+	intrigue = 2
+	learning = 4
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	add_trait="fair"
+	add_trait="quick"
+	add_trait="weak"
+	add_trait="humble"
+	add_trait="kind"
+	add_trait="chaste"
+	add_trait="gregarious"
+	add_trait="grey_eminence"
+	
+	mother = 2001
+	father=175010
+	
+	8257.1.1 = {birth="8257.1.1"}
+	8271.1.1 = {
+		effect = {
+			add_friend = 3001 #Оберин
+		}
+	}
+	8282.1.1 = {
+		effect = { fertility = -1 } # Complications from Эйгон's birth
+	}
+	8283.6.1 = {
+		# Killed (and rapped?) by Ser Gregor (Gregor confirmed to be the best rapper in Westeros?)
+		death = {
+			death_reason = death_murder
+			killer = 1230
+		}
+	}
+}
+3001 = {
+	name="Оберин"
+	dynasty=1
+	
+	dna="cmkgikgfdee"
+	properties="0s0dek00000"
+	
+	martial = 9
+	diplomacy = 4
+	intrigue = 14
+	stewardship = 9
+	learning = 10
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	
+	add_trait="fair"
+	
+	#add_trait="expert_scientist"
+	#add_trait="scholar"
+	#add_trait="duelist"
+	#add_trait="cynical"
+
+	mother = 2001
+	father=175010
+	
+	8258.1.1 = {birth="8258.1.1"}
+	8269.3.7 = {
+		add_trait="diligent" 
+	    add_trait="proud" 
+		add_trait="deceitful"
+		add_trait="squire"
+	}
+	8271.1.1 = {
+		effect = {
+			any_sibling = {
+				add_friend = ROOT
+			}	
+		}
+	}
+	8274.1.1 = {
+		add_trait="master_warrior" 
+	    add_trait="authoritative" 
+		add_trait="brave" 
+		add_trait="elusive_shadow"
+	}
+	8274.1.9 = {
+		remove_trait="squire"
+		add_trait="knight"
+	}	
+	8275.5.1 = {
+	  	add_trait="gregarious" 
+		add_trait="just"
+	}
+	8276.1.23 = {add_trait="hedonist" add_trait="lustful"} # When he's caught with Yronwood's Paramour.
+	8276.2.6 = {give_nickname = nick_the_red_viper} # The day Ормонд died. Was originally when he was three years old.
+	#8281.1.1 = {add_lover = 1013} # Elaria Sand, scipted in her entry
+	8299.12.3 = {
+		employer = 9316	#Джоффри
+	}
+	8300.1.1 = {
+		employer = 7316 #Tommen
+	}
+	8300.1.16 = {add_trait="wroth"}
+	8300.1.17= {
+		# Gregor smashed his face during a duel.
+		death = {
+			death_reason = death_duel_trial_by_combat
+			killer = 1230
+		}
+	}
+}
+###Dorans Children###
+4001 = {
+	name="Арианна" #seduces oaskheart.
+	female=yes
+	dna="bjmebefbaao"
+	properties="ai00ak0000"
+	dynasty=1
+	
+	martial = 5
+	diplomacy = 9
+	intrigue = 8
+	stewardship = 7
+	learning = 6
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	add_trait="fair"
+	add_trait="proud"
+	add_trait="brave"
+	add_trait="deceitful"
+	add_trait="intricate_webweaver"
+	
+	father=1
+	mother=8001
+	
+	8276.6.1 = {birth="8276.6.1"}
+	8284.1.1 = {
+		effect = { 
+			add_friend = 690213 #Тиена Sand
+			add_friend = 1002 #Сильва santagar
+		} 
+	}
+	8292.1.1 = {add_trait="lustful"} # Деймон Sand took her maidenhead.
+	# 8293.1.1 = {add_lover= 1237} # Arys Oakheart scipted in Arys' entry			 
+	8294.4.1 = {
+		add_trait="seductress"
+	}
+	8298.11.7 = {add_trait="ambitious"}			 
+}
+5001 = {
+	name="Квентин" #goes for dani.
+	dynasty=1
+	properties="0n00c0"
+	
+	martial = 5
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 10
+	learning = 8
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	father=1
+	mother=8001
+	
+	8281.3.1 = {birth="8281.3.1"}
+	8288.1.1 = {
+		guardian=12
+	}
+	8291.1.1 = {
+		add_trait=squire
+		add_trait=poor_warrior
+	}
+	8294.1.1 = {add_trait="temperate"
+	            add_trait="scholar"
+	            add_trait="diligent"}
+	8295.2.9 = {add_trait="patient"
+	            add_trait="proud"
+	            add_trait="shy"
+	            add_trait="just"}
+	8295.6.4 = {
+		add_trait="patient"
+		effect = {
+			add_friend = 2012
+			add_friend = 1012
+			add_friend = 1003
+		}
+	}			
+	8297.3.1 = {
+		add_trait="knight" 
+		remove_trait=squire
+		remove_trait=poor_warrior
+		add_trait=trained_warrior
+		add_trait="charismatic_negotiator" 
+		add_trait="brave"
+		effect = { set_character_flag = flag_later_title }
+	} 
+	8300.1.1 = {
+		add_trait = wikid
+		add_trait = forbid_marriage
+		effect = {
+			c_volantis = {
+				holder_scope = {
+					ROOT = { move_character = PREV }
+				}
+			}
+			character_event = { id = feast_for_crows.65 days = 1000 } #Failsafe
+		}
+	}
+	8300.3.28 = {remove_trait="patient" add_trait="ambitious"}
+	8300.4.2 ={
+		remove_trait = forbid_marriage
+		# Dragon BBQ.
+		death = {
+			death_reason = death_dragon
+			killer = 77990027
+		}
+	}
+}
+9001 = {
+	name="Тристан" #unborn, the one myrcella beat at cyvasse.
+	dynasty=1
+	properties="0h0000"
+	
+	martial = 9
+	diplomacy = 8
+	intrigue = 12
+	stewardship = 8
+	learning = 7
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	father=1
+	mother=8001
+	
+	8287.1.1 = {birth="8287.1.1"}
+}
+###The sand Snakes###
+690013 = {
+	name="Обара"
+	female=yes
+	dna="cfigfvkfceh"
+	properties="ad00sk"
+	dynasty=1
+	
+	martial = 4
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 3
+	learning = 4
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	add_trait="bastard"
+	#add_trait="strong"
+	
+	father=3001
+	
+	8272.1.1 = {
+		birth="8272.1.1"
+		give_nickname = nick_sand
+	}
+	8282.1.1 = {
+		add_trait="poor_warrior"
+		add_trait="proud"
+		add_trait="wroth"
+	}
+	8285.1.1 = {
+		add_trait="brave"
+		add_trait="ambitious"
+		add_trait="deceitful"
+	}
+	8288.1.1 = {
+		remove_trait="poor_warrior"
+		add_trait="trained_warrior"
+		add_trait="duelist"
+		add_trait="authoritative"
+		add_trait="tough_soldier"	
+	}
+}
+690113 = {
+	name="Нимерия"
+	female=yes
+	dna="dmhkhjhegab"
+	properties="an0a0k"
+	dynasty=1
+	
+	martial = 4
+	diplomacy = 3
+	intrigue = 5
+	stewardship = 4
+	learning = 5
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	add_trait="bastard"
+	add_trait="fair"
+	add_trait="quick"
+	
+	father=3001
+	mother=146174397 #Random Volantene noble
+	
+	8275.1.1 = {
+		birth="8275.1.1"
+		give_nickname = nick_sand
+		add_trait = strong_seed_block
+		effect = {
+			culture = salt_dornish 
+		}
+	}
+	8282.1.1 = {
+		add_trait="brave"
+		add_trait="lustful"
+	}
+	8286.1.1 = {
+		add_trait="wroth"
+		add_trait="deceitful"
+	}
+	8291.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="ambitious"
+		add_trait="proud"
+	    add_trait="elusive_shadow"
+	}
+	8295.1.1 = {
+		effect = {
+			c_skyreach = {
+				holder_scope = {
+					any_child = {
+						add_lover = ROOT #Fowler twins
+					}
+				}
+			}
+		}
+	}
+}
+690213 = {
+	name="Тиена"
+	female=yes
+	dna="bgjbdwjafcx"
+	properties="ag00lk"
+	dynasty=1
+	
+	martial = 3
+	diplomacy = 7
+	intrigue = 6
+	stewardship = 3
+	learning = 9
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	add_trait="bastard"
+	add_trait="fair"
+
+	father=3001
+	
+	8277.1.1 = {
+		birth="8277.1.1"
+		give_nickname = nick_sand
+		add_trait = strong_seed_block
+		effect = {
+			culture = salt_dornish 
+		}
+	}
+	8282.1.1 = {add_trait="zealous" add_trait="gregarious"}
+	8287.1.1 = {add_trait="deceitful"
+	            add_trait="brave"
+	            add_trait="ambitious"}
+	8288.1.1 = {add_trait="proud"}
+	8293.1.1 = {add_trait="grey_eminence"}
+}
+690313 = {
+	name="Сарелла"
+	female=yes
+	dynasty=1
+	
+	martial = 3
+	intrigue = 4
+	learning = 6
+	diplomacy = 3
+	stewardship = 4
+	
+	religion="the_seven"
+	culture="summer_islander"
+	
+	add_trait="bastard"
+	add_trait="fair"
+	add_trait="elusive_shadow"
+	add_trait="deceitful"
+	add_trait="ambitious"
+	add_trait="quick"
+	
+	father=3001
+	
+	8281.1.1 = {
+		birth="8281.1.1"
+		give_nickname = nick_sand
+		add_trait = strong_seed_block
+		effect = { culture = salt_dornish }
+	}
+	8297.1.1 = { add_trait="scholar" }
+}
+###Oberyns Lover### with House Uller.
+###Oberyns children by her
+8013 = {
+	name="Элия"
+	female=yes
+	dynasty=1
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	add_trait="bastard"
+	give_nickname = nick_sand
+	
+	father=3001
+	mother=1013
+
+	add_trait=stubborn
+	add_trait=brave
+	
+	8286.1.1 = {birth="8286.1.1"}
+	8298.1.1 = {add_trait=trained_warrior}
+}
+6013 = {
+	name="Дорея"
+	female=yes
+	dynasty=1
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	add_trait="bastard"
+	give_nickname = nick_sand
+	
+	father=3001
+	mother=1013
+	
+	8292.1.1 = {birth="8292.1.1"}
+}
+7013 = {
+	name="Обелла"
+	female=yes
+	dynasty=1
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	add_trait="bastard"
+	give_nickname = nick_sand
+	
+	father=3001
+	mother=1013
+	
+	8288.1.1 = {birth="8288.1.1"}
+}
+5013 = {
+	name="Лореза"
+	female=yes
+	dynasty=1
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	add_trait="bastard"
+	give_nickname = nick_sand
+	
+	father=3001
+	mother=1013
+	
+	8294.1.1 = {birth="8294.1.1"}
+}
+###Linking family to Dorans cousin the castellan###
+102001 = {
+	name="Марон" #Доран non-canon uncle so Манфри can be linked to dynasty tree.
+	dynasty=1
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	father=24001
+	
+	8231.1.1 = {birth="8231.1.1"}
+	8247.1.1 = {add_trait="knight" add_trait="trained_warrior"}
+	8255.1.1 = {add_spouse=53613} # House Uller maid.
+	8272.1.1 = {death="8272.1.1"}
+}
+6001 = {
+	name="Манфри" #the Castellan of Sunspear.
+	dynasty=1
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	martial = 4
+	diplomacy = 5
+	intrigue = 4
+	stewardship = 8
+	learning = 5
+	
+	father=102001
+	mother=53613
+	
+	add_trait="tough_soldier"
+	add_trait="diligent"
+	
+	8258.1.1 = {birth="8258.1.1"}
+	8274.1.1 = {
+		add_trait=knight
+		add_trait=trained_warrior
+		effect = { 
+			remove_all_job_titles = yes
+			give_job_title = job_castellan 
+		}
+	}
+	8279.1.1 = {
+		employer = 1 #Доран Martell
+	}
+	8284.1.1 = {
+		add_spouse=4506001
+	}
+}
+4506001 = {
+	name="Аллирия"
+	female=yes
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	8264.1.1 = {birth="8264.1.1"}
+}
+#Household
+5001001 = {
+	name="Калеотт" #a Maester of The Martells
+	
+	dna="bbeiksbfaal"
+	properties="ag0ahk"
+
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	add_trait="scholarly_theologian"
+	add_trait="proud"
+	add_trait="greedy"
+	
+	learning = 7
+
+	8235.1.1 = {
+		birth="8235.1.1"
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8262.1.1 = {
+		employer=2001
+		add_trait=maester
+		add_trait = is_fat
+		effect = { 
+			set_variable = { which = physique_variable value = 15 }	
+			set_character_flag = serving_with_lord 
+		}
+	}
+	8272.1.1 = {
+		employer=1
+	}
+}
+5002001 = {
+	name="Рикассо" #Seneschal of Sunspear.
+	
+	martial = 1
+	diplomacy = 6
+	intrigue = 7
+	stewardship = 11
+	learning = 7
+
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	add_trait="fortune_builder"
+	add_trait="content"
+	
+	8232.1.1 = {
+		birth="8232.1.1"
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8262.1.1 = {
+		employer=2001
+		effect = { 
+			remove_all_job_titles = yes
+			give_job_title = job_chancellor 
+		}
+	}
+	8272.1.1 = {
+		employer=1
+	}
+	8290.1.1 = {
+		add_trait=blinded_age
+	}
+}
+5003001 = {
+	name="Майлс" #the Maester of Sunspear.
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	add_trait="scholarly_theologian"
+	add_trait="gluttonous"
+	
+	learning = 10
+
+	8268.1.1 = {
+		birth="8268.1.1"
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8288.1.1 = {
+		employer=1
+		add_trait=maester
+		effect = { set_character_flag = serving_with_lord }
+	}
+}
+5004001 = {
+	name="Гаскойн" #Тристан sworn shield
+	dynasty = 806041 #of the greenblood
+	
+	martial = 3
+	diplomacy = 2
+	intrigue = 3
+	stewardship = 1
+	learning = 1
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	add_trait="tough_soldier"
+	add_trait="diligent"
+	add_trait="brave"
+	
+	8275.1.1 = {
+		birth="8275.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8279.1.1 = { employer = 1 }
+	8291.1.1 = {
+		add_trait = knight
+		add_trait = trained_warrior
+	}
+}
+5005001 = {
+	name="Гарин" #orphan of the greenblood, Арианна's friend
+	
+	martial = 2
+	diplomacy = 4
+	intrigue = 3
+	stewardship = 2
+	learning = 2
+	
+	religion="rhoynar_pagan"
+	culture="rhoynar"
+	
+	add_trait="flamboyant_schemer"
+	add_trait="deceitful"
+	add_trait="just"
+	
+	mother = 5006001
+	
+	8276.6.1 = {
+		birth="8276.6.1"
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8279.1.1 = { employer = 1 }
+	8284.1.1 = { effect = { add_friend = 4001 } }
+	8292.6.1 = {
+		add_trait = poor_warrior
+	}
+}
+5006001 = {
+	name="Сиранна" #random mother
+	female = yes
+	
+	martial = 2
+	diplomacy = 2
+	intrigue = 1
+	stewardship = 2
+	learning = 1
+	
+	religion="rhoynar_pagan"
+	culture="rhoynar"
+	
+	add_trait="flamboyant_schemer"
+	
+	8256.6.1 = {
+		birth="8256.6.1"
+		effect = {  
+			dynasty = none
+		}
+	}
+	8279.1.1 = { employer = 1 }
+	8292.6.1 = {
+		death = yes
+	}
+}
+5007001 = {
+	name="Джосс" #Арианна sworn shield
+	dynasty = 806042 #Hood
+	
+	martial = 2
+	diplomacy = 4
+	intrigue = 1
+	stewardship = 2
+	learning = 2
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	add_trait="tough_soldier"
+	add_trait="brave"
+	add_trait="honest"
+	add_trait="wroth"
+	
+	8276.1.1 = {
+		birth="8276.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8279.1.1 = { employer = 1 }
+	8292.1.1 = {
+		add_trait = knight
+		add_trait = trained_warrior
+	}
+}
+5009001 = {
+	name="Кедри" #maester
+	
+	martial = 2
+	diplomacy = 8
+	intrigue = 6
+	stewardship = 6
+	learning = 8
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	add_trait="mastermind_theologian"
+	add_trait="diligent"
+	add_trait="ambitious"
+	
+	8259.1.1 = {
+		birth="8259.1.1"
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8279.1.1 = {
+		add_trait = maester	
+	}
+	8298.1.1 = { employer = 1 }
+	8300.2.15={
+		# Killed by pirates while with Квентин on his way to Danny
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+#####################
+###House Santagar#### # Updated \Chrisjm89/
+#####################
+3002 = {
+	name="Сильва" #all mother
+	female=yes
+	dynasty=2
+	
+	father=324002
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	8218.1.1 = {birth="8218.1.1"}
+	8280.1.1 = {death="8280.1.1"}
+}
+6002 = {
+	name="Рикард"
+
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	8218.1.1 = {birth="8218.1.1"}
+	8234.1.1 = {add_matrilineal_spouse = 3002}
+	8280.1.1 = {death="8280.1.1"}
+}
+2 = {
+	name="Саймон" #Lord
+	dynasty=2
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	mother=3002
+	father=6002
+	
+	8258.1.1 = {birth="8258.1.1"}
+	8274.1.1 = {add_spouse = 5002}
+	8274.1.5 = {
+	    add_trait="poor_warrior"
+	    add_trait="knight"
+	}		
+}
+5002 = {
+	name="Люсинда"
+	female=yes
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	8258.1.1 = {birth="8258.1.1"}
+	8274.1.1 = {add_trait="naive_appeaser"}
+}
+1002 = {
+	name="Сильва" #heiress # Married to Eldon Estermont by Доран Martell
+	female=yes
+	dynasty=2
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	father=2
+	mother=5002
+	
+	8277.1.1 = {birth="8277.1.1"}
+	8287.1.1 = { give_nickname = nick_the_spotted }
+}
+#other random children
+150002 = {
+	name="Сенара"
+	female=yes
+	dynasty=2
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	father=2
+	mother=5002
+	
+	8280.1.1 = {birth="8280.1.1"}
+}
+151002 = {
+	name="Риальта"
+	female=yes
+	dynasty=2
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	father=2
+	mother=5002
+	
+	8282.1.1 = {birth="8282.1.1"}
+}
+
+2002 = {
+	name="Арон" #man at arms in the red keep, Vain but honest. (Acording to rodrick cassel)
+	dynasty=2
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	martial = 7
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	learning = 5
+
+	add_trait = honorable
+	add_trait = proud
+	add_trait = honest
+	add_trait = groomed
+	
+	mother=3002
+	father=6002
+	
+	8262.1.1 = {birth="8262.1.1"}
+	8278.1.1 = {
+		add_trait="tough_soldier"
+	    	add_trait="skilled_warrior"
+		add_trait="knight"
+		employer=77037
+	}
+	8284.1.1={
+		employer = 317		#Robert I Baratheon
+	}
+	8298.10.28 = {
+		employer = 9316 #Джоффри I "Baratheon"
+	}
+	8299.5.1={
+		death = { death_reason = death_rabble } # Killed in the King's Landing riots
+	}
+}
+152002 = { #random brother
+	name="Ульрик"
+	dynasty=2
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	mother=3002
+	father=6002
+	
+	8265.1.1 = {birth="8265.1.1"}
+	8281.1.1 = {
+	    add_trait="trained_warrior"
+		add_trait="knight"
+	}
+}
+################
+###Lemonwood####
+################ # Updated \Chrisjm89/
+###House Dalt### 
+################
+2006 = {
+	name="Сибелла" #The lady
+	female=yes
+	dynasty=6
+	
+	father=35286
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	8245.1.1 = {birth="8245.1.1"}
+	8291.4.5 = {death= {death_reason = death_accident}} # Дэзиель is Lord at the time of aSoIaF.
+}
+3006 = {
+	name="Лорент"
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	8245.1.1 = {birth="8245.1.1"}
+	8261.1.3 = {add_trait=knight add_trait=trained_warrior}
+	8261.2.1 = {add_matrilineal_spouse = 2006}
+}
+6 = {
+	name="Дэзиель" # Was with the viper when he went to kings landing. Current Ser of Lemonwood in 298 AL.
+	dynasty=6
+	
+	religion="the_seven"
+	culture="salt_dornish"
+
+	martial=7
+	
+	mother=2006
+	father=3006
+	
+	8272.3.12 = {birth="8272.3.12"} # Adjusted DOB so he's closer to Арианна's age.
+	8283.3.9 = {add_trait=squire}
+	8288.2.11 = {remove_trait=squire add_trait=tough_soldier add_trait=trained_warrior add_trait=knight}
+	8294.5.9 = {add_spouse=63020} # Manwoody maid. No children from union as Эндрю is still heir.
+}
+1006 = {
+	name="Эндрю" #Joined Арианна in her plot. Дэзиель's heir.
+	dynasty=6
+	
+	martial=8
+	diplomacy=6
+	intrigue=8
+	stewardship=4
+	learning=4
+	
+	religion="the_seven"
+	culture="salt_dornish"	
+	
+	mother=2006
+	father=3006
+	
+	8275.1.15 = {birth="8275.1.15"} # Adjusted DOB (as per elder brother) so he's closer to Арианна's age.
+	8285.2.9 = {
+		add_trait=squire
+		effect = { add_friend = 4001 } #Арианна
+	}
+	8291.7.15 = {remove_trait=squire add_trait=tough_soldier add_trait=trained_warrior add_trait=knight}
+	8291.9.2 = {add_trait=deceitful}
+	8299.2.12 = {add_trait=ambitious}
+}
+###Distant Cousin###
+35316 = {
+	name="Гарин"	# Canon. Dalt boy that Доран mentions is in the Water Gardens.
+	dynasty=6
+
+	religion="the_seven"
+	culture="salt_dornish"
+
+	father=35306
+	mother=45306
+
+	8293.3.5 = {birth="8293.3.5"}
+}
+####################
+###House Allyrion### # Updated \Chrisjm89/
+####################
+9 = {
+	name="Делонна"
+	female=yes
+	dynasty=9
+
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	mother=60189
+	father=50189
+		
+	8240.1.1 = {birth="8240.1.1"}
+}
+3009 = {
+	name="Леслин" #
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	add_trait="bastard"
+	give_nickname = nick_sand
+	
+	8242.1.1 = {birth="8242.1.1"}
+	8258.1.1 = {add_matrilineal_spouse=9}
+	8258.1.2 = {add_trait=knight add_trait=poor_warrior}
+}
+##Issue of Делонна##
+1009 = {
+	name="Рион" #acompanied the Viper. Married to Инис Yronwood.
+	dynasty=9
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	
+	mother=9
+	father=3009
+	
+	8262.1.13 = {birth="8262.1.13"}
+	8272.4.3 = {add_trait="squire"}
+	8278.9.13 = {remove_trait="squire" 
+	             add_trait="tough_soldier"
+	             add_trait="trained_warrior"
+	             add_trait="knight"}
+	8295.7.8 = {add_spouse=3012}
+}
+7009 = {
+	name="Левин"
+	dynasty=9
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	mother=9
+	father=3009
+	
+	8269.1.8 = {birth="8269.1.8"}
+	8279.3.12 = {add_trait=squire}
+	8285.5.28 = {remove_trait=squire add_trait=knight add_trait=poor_warrior}
+	8293.2.19 = {add_spouse=63120}
+}
+4009 = {
+	name="Альмодис" # Married to Wyl scion.
+	dynasty=9
+	female=yes
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	mother=9
+	father=3009
+	
+	8270.2.9 = {birth="8270.2.9"}
+}
+6009 = {
+	name="Делонна" # Married to Роннел Dayne.
+	dynasty=9
+	female=yes
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	mother=9
+	father=3009
+	
+	8273.11.8 = {birth="8273.11.8"}
+}
+###Issue of Рион###
+2009 = {
+	name="Деймон" # Деймон Sand, Рион's bastard son.
+	dynasty=9
+	
+	martial = 8
+	diplomacy = 5
+	intrigue = 8
+	stewardship = 5
+	learning = 5
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	add_trait="bastard"
+	give_nickname = nick_sand
+		
+	father=1009
+	
+	add_trait=fair
+	add_trait="lustful" # Popped Арианна's cherry.
+	add_trait="proud"
+	add_trait="tough_soldier"
+	
+	8276.1.1 = {
+		birth="8276.1.1"	
+	}
+	8288.1.1 = {
+		add_trait="squire"
+		guardian=3001 #Оберин
+		add_trait="trained_warrior"
+	}
+	8292.1.1 = {
+		effect = { 
+			add_friend = 3001 
+			random_friend = { add_lover = ROOT } #rumoured
+		}
+		remove_trait="trained_warrior"
+		add_trait="skilled_warrior"
+		remove_trait="squire"
+	    add_trait="knight" # He /was/ a knight at the time of Tyrion's trial. He just happened to squire for his old warden the Viper. \Chrisjm89/
+	}  
+}
+150009 = {
+	name="Тимеон" 
+	dynasty=9
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	father=1009
+	mother=3012 #Инис Ywonwood
+	
+	8297.1.1 = {birth="8297.1.1"}
+}
+151009 = {
+	name="Элия" 
+	female=yes
+	dynasty=9
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	father=1009
+	mother=3012 #Инис Ywonwood
+	
+	8298.6.1 = {birth="8298.6.1"}
+}
+
+###Issueof Левин### So House doesn't die out quickly
+62809 = {
+	name="Эндрин"
+	dynasty=9
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	mother=63120
+	father=7009
+	
+	8294.1.8 = {birth="8294.1.8"}
+}
+62909 = {
+	name="Давон"
+	dynasty=9
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	mother=63120
+	father=7009
+	
+	8295.5.2 = {birth="8295.5.2"}
+}
+63009 = {
+	name="Делонна"
+	dynasty=9
+	female=yes
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	mother=63120
+	father=7009
+	
+	8297.3.23 = {birth="8297.3.23"}
+}
+####################
+###House Gargalen### # Updated \Chrisjm89/
+####################
+7 = {
+	name="Тремонд" #Only he is mentioned.
+	dynasty=7
+	
+	
+	father=35257
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	add_trait = proud
+	add_trait = brave
+	
+	8237.1.1 = {birth="8237.1.1"} # Made older so he is able to have Доран squire for him.
+	8248.1.1 = {add_trait=squire}
+	8253.1.1 = {remove_trait=squire add_trait=knight add_trait=trained_warrior}
+	8258.1.1 = {add_spouse=4007}
+}
+4007 = {
+	name="Дансия"
+	female=yes
+	
+	add_trait="naive_appeaser"
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	8239.1.1 = {birth="8239.1.1"}
+}
+###Children###
+1007 = {
+	name="Первин" #
+	dynasty=7
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	
+	
+	father=7
+	mother=4007
+	
+	8261.4.6 = {birth="8261.4.6"}
+	8270.5.1 = {add_trait=squire}
+	8277.8.21 = {remove_trait=squire add_trait=knight add_trait=poor_warrior}
+	8278.6.19 = {add_spouse=35336} # Dalt maid.
+}
+2007 = {
+	name="Раймунд"
+	dynasty=7
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	
+	
+	father=7
+	mother=4007
+	
+	8266.1.9 = {birth="8266.1.9"}
+	8276.2.3 = {add_trait=squire}
+	8282.2.19 = {remove_trait=squire add_trait=knight add_trait=trained_warrior}
+}
+3007 = {
+	name="Адела" # Married to heir of House Vaith.
+	female=yes
+	dynasty=7
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	
+	
+	father=7
+	mother=4007
+	
+	8268.11.3 = {birth="8268.11.3"}
+}
+###Children of Первин###
+5007 = {
+	name="Тремонд"
+	dynasty=7
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	
+	
+	father=1007
+	mother=35336
+	
+	8279.5.7 = {birth="8279.5.7"}
+	8289.6.1 = {add_trait=squire}
+	8295.6.23 = {remove_trait=squire add_trait=knight add_trait=poor_warrior}
+}
+6007 = {
+	name="Диниса"
+	female=yes
+	dynasty=7
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	
+	
+	father=1007
+	mother=35336
+	
+	8281.8.19 = {birth="8281.8.19"}
+}
+#################
+###House Vaith### # Updated \Chrisjm89/
+#################
+8 = {
+	name="Тоберт"
+	dynasty=8
+	
+	
+	father=35168
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	8237.1.1 = {birth="8237.1.1"}
+	8253.1.1 = {add_spouse = 4015} # Qorgyle maid.
+	8253.1.5 = {add_trait=knight add_trait=poor_warrior}
+	8292.3.5 = {death="8292.3.5"} # Дейрон is Lord at the time of aSoIaF.
+}
+###Children###
+1008 = {
+	name="Ариэлла"
+	female=yes
+	dynasty=8
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	father=8
+	mother=4015
+	
+	8267.4.5 = {birth="8267.4.5"}
+}
+2008 = {
+	name="Дейрон" # Canon. Lord at the time of aSoIaF.
+	dynasty=8
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	
+	
+	father=8
+	mother=4015
+	
+	8265.2.6 = {birth="8265.2.6"}
+	8276.1.2 = {add_trait=squire}
+	8281.7.14 = {remove_trait=squire add_trait=knight add_trait=poor_warrior}
+	8284.2.7 = {add_spouse=3007} # Gargalen maid.
+}
+###Children of Дейрон### # So their line doesn't die out.
+4008 = {
+	name="Доран"
+	dynasty=8
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	father=2008
+	mother=3007
+	
+	8284.12.2 = {birth="8284.12.2"}
+	8295.1.5 = {add_trait=squire}
+	8301.1.2 = {remove_trait=squire add_trait=knight add_trait=poor_warrior}
+}
+5008 = {
+	name="Одри"
+	dynasty=8
+	
+	add_trait="twin"
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	father=2008
+	mother=3007
+	
+	8289.6.12 = {birth="8289.6.12"}
+	8299.7.1 = {add_trait=squire}
+}
+6008 = {
+	name="Ариэль"
+	female=yes
+	dynasty=8
+	
+	add_trait="twin"
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	father=2008
+	mother=3007
+	
+	8289.6.12 = {birth="8289.6.12"}
+}
+######################
+###House Ladybright### # Updated \Chrisjm89/
+######################
+5 = {
+	name="Мирия" #Lady
+	female=yes
+	dynasty=5
+	
+	
+	father=35275
+	mother=45275
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	8247.1.1 = {birth="8247.1.1"}
+	8263.1.1 = {
+		add_matrilineal_spouse = 4005
+	}
+}
+4005 = {
+	name="Уинстен"
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	8247.1.1 = {birth="8247.1.1"}
+	8263.1.9 = {add_trait=knight add_trait=trained_warrior}
+}
+###Children###
+1005 = {
+	name="Алиса" # Canon. Lord (Lady) treasurer of Dorne.
+	female=yes
+	dynasty=5
+	
+	stewardship=10 
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	father=4005
+	mother=5
+	
+	
+	8264.1.2 = {birth="8264.1.2"}
+	8278.1.9 = {add_trait=just add_trait=content}
+	8280.2.11 = {add_trait=midas_touched}
+	8281.1.4 = {
+		add_matrilineal_spouse = 4005005
+		employer = 1
+		effect = {		
+			k_dorne = {
+				holder_scope = {
+					ROOT = { move_character = PREV }
+					job_treasurer = { remove_title = job_treasurer }
+				}
+			}
+			remove_all_job_titles = yes
+			give_job_title = job_treasurer
+		}
+	}	
+}
+4005005 = {
+	name="Харман" # Husband of Алиса.
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	8263.1.8 = {birth="8263.1.8"}
+	8274.1.7 = {add_trait=squire}
+	8279.2.12 = {remove_trait=squire add_trait=knight add_trait=poor_warrior}
+}
+2005 = {
+	name="Лианна"
+	female=yes
+	dynasty=5
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	father=4005
+	mother=5
+	
+	8265.12.7 = {birth="8265.12.7"}
+}
+3005 = {
+	name="Теодан"
+	dynasty=5
+
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	father=4005
+	mother=5	
+	
+	8273.2.9 = {birth="8273.2.9"}
+	8283.4.1 = {add_trait=squire}
+	8289.6.19 = {remove_trait=squire add_trait=knight add_trait=poor_warrior}
+}
+###Children of Алиса###
+5005 = {
+	name="Квентин"
+	dynasty=5
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	father=4005005
+	mother=1005
+	
+	8282.2.19 = {birth="8282.2.19"}
+	8290.3.18 = {guardian=5}
+	8292.8.4 = {add_trait=squire}
+	8296.9.7 = {remove_trait=squire add_trait=knight add_trait=poor_warrior}
+}
+6005 = {
+	name="Джейн" #Canon
+	dynasty=5
+	female=yes
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	add_trait=fair
+	
+	father=4005005
+	mother=1005
+	
+	8283.2.19 = {birth="8283.2.19"}
+	8293.3.18 = {guardian=1}
+}
+7005 = {
+	name="Аррон"
+	dynasty=5
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	father=4005005
+	mother=1005
+	
+	8289.1.14 = {birth="8289.1.14"}
+	8295.2.9 = {guardian=5}
+	8299.2.3 = {add_trait=squire}
+}
+##################
+####Ghosthills####
+################## # Updated \Chrisjm89/
+###House Toland###
+##################
+1004 = {
+   name="Нимелла" # Canon. Lady of Ghosthill.
+   female=yes
+   dynasty=4
+   
+   mother=3002203
+   father=35334
+   
+   add_trait=gregarious
+   
+   religion="the_seven"
+   culture="stone_dornish"
+   
+   8256.1.1 = {birth="8256.1.1"}
+   8279.1.1 = {
+      add_matrilineal_spouse = 3004
+   }
+}
+3004 = {
+   name="Кристон"
+   
+   religion="the_seven"
+   culture="stone_dornish"
+   
+   8256.1.1 = {birth="8256.1.1"}
+   8273.1.1 = {add_trait=knight add_trait=trained_warrior}
+}
+###Children###
+9004 = {
+   name="Валена" 
+   female=yes
+   dynasty=4
+   
+   dna="azoukvjidhm"
+    
+   religion="the_seven"
+   culture="stone_dornish"
+   
+   add_trait=fair
+   add_trait=proud
+   add_trait=tall
+   
+   mother=1004
+   father=3004
+   
+   8280.1.1 = {birth="8280.1.1"}
+}
+8004 = {
+   name="Теора"
+   female=yes
+   dynasty=4
+   
+   dna="ahaqhrnfdhp"
+   
+   religion="the_seven"
+   culture="stone_dornish"
+   
+   add_trait=shy
+   add_trait=gluttonous
+   add_trait=mystic
+   
+   mother=1004
+   father=3004
+   
+   8289.1.1 = {birth="8289.1.1"}
+}
+#Siblings
+4 = {
+   name="Нимериос" 
+   dynasty=4
+   
+   religion="the_seven"
+   culture="stone_dornish"
+   
+   mother=3002203
+   father=35334
+   
+   8258.2.7 = {birth="8258.2.7"}
+   8268.6.1 = {add_trait=squire}
+   8274.9.9 = {remove_trait=squire add_trait=knight add_trait=trained_warrior}
+   8278.11.6 = {add_spouse=4011} # Wells Maid.
+}
+2004 = {
+   name="Кристон"
+   dynasty=4
+   
+   religion="the_seven"
+   culture="stone_dornish"
+   
+   mother=3002203
+   father=35334
+   
+   8260.9.17 = {birth="8260.9.17"}
+   8270.11.8 = {add_trait=squire}
+   8276.10.2 = {remove_trait=squire add_trait=knight add_trait=poor_warrior}
+}
+###Future Grandchildren### Added so family doesn't die out or get inherit by another House to quickly.
+4004 = {
+   name="Марон"
+   dynasty=4
+   
+   religion="the_seven"
+   culture="stone_dornish"
+   
+   mother=4011
+   father=4
+   
+   8280.3.12 = {birth="8280.3.12"}
+}
+5004 = {
+   name="Нимерия"
+   female=yes
+   dynasty=4
+   
+   religion="the_seven"
+   culture="stone_dornish"
+   
+   mother=4011
+   father=4
+   
+   8284.7.3 = {birth="8284.7.3"}
+}
+#Maester
+150004 = {
+   name="Томан"
+   
+   martial = 2
+   stewardship = 5
+   diplomacy = 4
+   intrigue = 3
+   learning = 6
+   
+   religion="the_seven"
+   culture="salt_dornish"
+   
+   add_trait = scholarly_theologian
+   add_trait = cynical
+   
+   8260.1.1 = {
+      birth="8260.1.1"
+      effect = {  
+         dynasty = none
+		 set_immune_to_pruning = yes
+      }
+   }
+   8276.1.1 = {
+      add_trait = maester
+      effect = {
+         c_ghosthills = { holder_scope = { ROOT = { move_character = PREV } } }
+      }
+   }
+}
+######################
+####House Jordayne#### # Updated \Chrisjm89/
+######################
+10 = {
+	name="Требор"
+	dynasty=10
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	father=61001710
+	mother=51001710
+	
+	8258.1.1 = {birth="8258.1.1"}
+	8274.1.1 = {add_spouse = 3010}
+	8274.1.2 = {add_trait=lustful}
+	8274.1.9 = {add_trait=knight add_trait=poor_warrior}
+}
+3010 = {
+	name="Аннара"
+	female=yes
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	add_trait="lustful"
+	add_trait="naive_appeaser"
+	
+	8258.1.1 = {birth="8258.1.1"}
+}
+1010 = {
+	name="Мирия" #only she appears, she is with the viper in kings landing
+	female=yes
+	dynasty=10
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	father=10
+	mother=3010
+	
+	8278.1.1 = {birth="8278.1.1"}
+}
+#################
+####Brimstone####
+################# # Updated \Chrisjm89/
+###House Uller### 
+#################
+9013 = {
+	name="Боран" #dead lord.
+	dynasty=13
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	father=63613
+	mother=32712
+	
+	8226.12.23 = {birth="8226.12.23"}
+	8237.1.4 = {add_trait=squire}
+	8240.6.3 = {add_trait=wroth}
+	8243.1.7 = {remove_trait=squire add_trait=knight add_trait=trained_warrior}
+	8243.2.9 = {add_spouse = 3013}
+	8276.2.12 = {death="8276.2.12"}
+}
+3013 = {
+	name="Эллария"
+	female=yes
+
+	add_trait="naive_appeaser"
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	8227.1.7 = {birth="8227.1.7"}
+	8281.4.2 = {death="8281.4.2"}
+}
+53613 = {
+	name="Мелли"
+	dynasty=13
+	female=yes
+
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	father=63613
+	mother=32712
+
+	8228.1.1 = {birth="8228.1.1"}
+	8272.1.1 = {death="8272.1.1"}
+}
+###Current Lord###
+13 = {
+	name="Хармен" # Lord of Hellholt. Went with the red viper in K-L, father to the Vipers Lover.
+	dynasty=13
+	
+	martial = 7
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	
+	father=9013
+	mother=3013
+	
+	8246.1.17 = {birth="8246.1.17"}
+	8256.3.9 = {add_trait=squire}
+	8259.2.10 = {add_trait=brave add_trait=wroth}
+	8262.1.24 = {remove_trait=squire add_trait=knight add_trait=trained_warrior add_trait=tough_soldier}
+	8265.7.14 = {add_trait=lustful}
+}
+2013 = {
+	name="Ульвик" # A knight with the red viper in K-L. Хармен's brother.
+	dynasty=13
+	
+	martial = 7
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	father=9013
+	mother=3013
+	
+	
+	8266.8.3 = {birth="8266.8.3"}
+	8276.12.5 = {add_trait=squire}
+	8279.2.9 = {add_trait=wroth}
+	8282.8.18 = {remove_trait=squire add_trait=knight add_trait=tough_soldier add_trait=trained_warrior}
+	8282.8.23 = {add_spouse=63011} # Wells maid.
+}
+###Bastard of Hellholt, natural daughter of Хармен###
+1013 = {
+	name="Эллария"
+	female=yes
+	dynasty=13 #Bastard of uller.
+	properties="0b0000"
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	add_trait="bastard"
+	add_trait="fair"
+	add_trait="groomed"
+	add_trait="patient"
+	add_trait="brave"
+	add_trait="kind"
+	give_nickname = nick_sand
+	
+	father=13
+	
+	8267.1.1 = {birth="8267.1.1"}
+	8281.1.1 = {
+		effect = {
+			k_dorne = {
+				holder_scope = {
+					random_sibling = {
+						limit = {
+							is_female = no
+						}
+						add_lover = ROOT #Оберин
+					}
+				}
+			}
+		}
+		employer=1
+	}
+	8281.3.1 = {add_trait="lustful"
+	            add_trait="hedonist" 
+	            add_trait="homosexual"}
+}
+###Wife and children of Ульвик### # So House Uller doesn't die out.
+10013 = {
+	name="Борос"
+	dynasty=13
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	father=2013
+	mother=63011
+	
+	8283.7.7 = {birth="8283.7.7"}
+	8293.8.15 = {add_trait=squire}
+	8298.7.21 = {remove_trait=squire add_trait=knight add_trait=trained_warrior}
+}
+11013 = {
+	name="Хармен"
+	dynasty=13
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	father=2013
+	mother=63011
+	
+	8286.3.19 = {birth="8286.3.19"}
+	8296.4.11 = {add_trait=squire}
+}
+12013 = {
+	name="Эллария"
+	dynasty=13
+	female=yes
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	father=2013
+	mother=63011
+	
+	8287.10.2 = {birth="8287.10.2"}
+}
+###Extended family### # Added for the same reason as the above. So the family doesn't die out.
+63713 = {
+	name="Ормонд"	# not a lord, brother of Боран. Uncle of Харман and Ульвик.
+	dynasty=13
+
+	religion="the_seven"
+	culture="sand_dornish"
+
+	father=63613
+	mother=32712
+
+	8229.1.27 = {birth="8229.1.27"}
+	8245.2.11 = {add_trait=knight add_trait=skilled_warrior}
+	8247.3.2 = {add_spouse=35285} # Ladybright maid.
+	8297.4.9 = {death="8297.4.9"}
+}
+64013 = {
+	name="Алиса"	# not a lord
+	female=yes
+	dynasty=13
+
+	religion="the_seven"
+	culture="sand_dornish"
+
+	father=63713
+	mother=35285
+
+	8254.3.17 = {birth="8254.3.17"}
+}
+64113 = {
+	name="Бедвик"	# not a lord
+	dynasty=13
+
+	religion="the_seven"
+	culture="sand_dornish"
+
+	father=63713
+	mother=35285
+
+	8257.2.1 = {birth="8257.2.1"}
+	8273.3.9 = {add_trait=knight add_trait=trained_warrior}
+}
+#################
+###House Wells### # Updated \Chrisjm89/
+#################
+11 = {
+	name="Яссмена"
+	female=yes
+	dynasty=11
+	
+	father=62511
+	mother=52511
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	8233.1.1 = {birth="8233.1.1"}
+}
+5011 = {
+	name="Виллам"
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	8233.1.1 = {birth="8233.1.1"}
+	8249.1.1 = {add_matrilineal_spouse = 11}
+	8250.1.1 = {add_trait=knight add_trait=trained_warrior}
+}
+1011 = {
+	name="Виллам" # Companion of Квентин.
+	dynasty=11
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	mother=11
+	father=5011
+	
+	8258.1.1 = {birth="8258.1.1"}
+	8279.1.1 = {add_trait=squire}
+	8284.1.1 = {remove_trait=squire add_trait=knight add_trait=trained_warrior}
+	8288.6.2 = {add_spouse=61002410} # Distaff maid of Jordayne.
+	8300.2.15={
+		# Killed by pirates while with Квентин on his way to Danny
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+4011 = {
+	name="Жаена" # Married to Toland heir.
+	female=yes
+	dynasty=11
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	mother=11
+	father=5011
+	
+	8260.1.1 = {birth="8260.1.1"}
+}
+3011 = {
+	name="Родри" # Joined the Warrior's sons. # Wrong House Wells
+	dynasty=11
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	mother=11
+	father=5011
+	
+	8262.1.1 = {birth="8262.1.1"}
+	8272.1.1 = {add_trait=squire}
+	8278.1.1 = {remove_trait=squire add_trait=knight add_trait=skilled_warrior}
+	8280.1.1 = {add_spouse=2005} # Maid of Ladybright.
+	8293.1.1 = {add_trait=just}
+}
+###Grandchildren from Willem###
+6011 = {
+	name="Левин"
+	dynasty=11
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	mother=61002410
+	father=1011
+	
+	8290.2.6 = {birth="8290.2.6"}
+}
+7011 = {
+	name="Яссмена"
+	female=yes
+	dynasty=11
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	mother=61002410
+	father=1011
+	
+	8293.12.27 = {birth="8293.12.27"}
+}
+###Grandchildren from Родри###
+8011 = {
+	name="Джианна"
+	female=yes
+	dynasty=11
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	mother=2005
+	father=3011
+	
+	8282.2.13 = {birth="8282.2.13"}
+}
+9011 = {
+	name="Морс"
+	dynasty=11
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	mother=2005
+	father=3011
+	
+	8286.9.1 = {birth="8286.9.1"}
+	8296.11.3 = {add_trait=squire}
+}
+
+###################
+###House Qorgyle### # Updated \Chrisjm89/
+###################
+15 = {
+	name="Квентин"
+	dynasty=15
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	father=5015
+	mother=35324
+	
+	8248.1.2 = {birth="8248.1.2"}
+	8264.1.12 = {add_trait=knight add_trait=trained_warrior}
+	8264.2.7 = {add_spouse = 62711} # Wells maid.
+}
+3015 = {
+	name="Саймон"
+	dynasty=15
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	father=5015
+	mother=35324
+	
+	8253.6.11 = {birth="8253.6.11"}
+	8270.1.12 = {add_trait=knight add_trait=trained_warrior}
+}
+###Father of Квентин###
+5015 = {
+	name="Киморс" # Brother to 996th Lord Commander of the Nightswatch.
+	dynasty=15
+	
+	father=62815
+	mother=52815
+	
+	
+		
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	8230.1.26 = {birth="8230.1.26"}
+	8246.2.17 = {add_trait=knight add_trait=skilled_warrior}
+	8247.10.3 = {add_spouse=35324} # Toland maid.
+	8259.2.9 = {death = {death_reason = death_battle}}
+}
+###Aunt of Квентин###
+4015 = {
+	name="Бонна"
+	dynasty=15
+	female=yes
+
+	father=62815
+	mother=52815
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	8231.9.16 = {birth="8231.9.16"}
+	8268.10.9 = {death="8268.10.9"}
+}
+###Children of Квентин###
+1015 = {
+	name="Джулиан" # Heir to House Qorgyle
+	dynasty=15
+	
+	
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	father=15
+	mother=62711
+	
+	8264.1.27 = {birth="8264.1.27"}
+	8274.2.1 = {add_trait=squire}
+	8280.2.7 = {remove_trait=squire add_trait=knight add_trait=trained_warrior add_trait=tough_soldier}
+	8281.3.19 = {add_spouse=5003} # Drinkwater maid.
+}
+2015 = {
+	name="Аррон" # A knight with the red viper in K-L
+	dynasty=15
+	
+	
+	
+	religion="the_seven"
+	culture="sand_dornish"
+
+	martial = 7
+	
+
+	
+	father=15
+	mother=62711
+	
+	8265.4.2 = {birth="8265.4.2"}
+	8276.2.23 = {add_trait=squire}
+	8281.7.7 = {remove_trait=squire add_trait=trained_warrior add_trait=tough_soldier add_trait=knight}
+}
+###Children of Джулиан###
+6015 = {
+	name="Джантос"
+	dynasty=15
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	
+	
+	father=1015
+	mother=5003
+	
+	8284.2.11 = {birth="8284.2.11"}
+}
+7015 = {
+	name="Эллария"
+	female=yes
+	dynasty=15
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	
+	
+	father=1015
+	mother=5003
+	
+	8287.3.18 = {birth="8287.3.18"}
+}
+###Cadet Qorgyle cousins### # So the House doesn't die out easily.
+63215 = {
+	name="Сиренна"	# not a lord, married to scion of House Wyl.
+	female=yes
+	dynasty=15
+	
+	add_trait="twin"
+
+	religion="the_seven"
+	culture="sand_dornish"
+
+	father=63115
+	mother=53115
+
+	8262.1.1 = {birth="8262.1.1"}
+}
+63315 = {
+	name="Тимеон"	# not a lord
+	dynasty=15
+
+	add_trait="twin"
+	
+	religion="the_seven"
+	culture="sand_dornish"
+
+	father=63115
+	mother=53115
+
+	8262.1.1 = {birth="8262.1.1"}
+	8278.1.1 = {add_trait=knight add_trait=skilled_warrior}
+}
+63415 = {
+	name="Деймон"	# not a lord
+	dynasty=15
+
+	religion="the_seven"
+	culture="sand_dornish"
+
+	father=63115
+	mother=53115
+
+	8265.1.1 = {birth="8265.1.1"}
+	8281.1.1 = {add_trait=knight add_trait=poor_warrior}
+}
+####################
+##### Stoneway #####
+#################### # Updated \Chrisjm89/
+###Hosue Yronwood### 
+####################
+###Father of Андерс###
+6969112 = {
+	name="Ормонд" #Father, killed by the red viper.
+	dynasty=12
+	
+	father=32612
+	mother=42612
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	8242.1.1 = {birth="8242.1.1"}
+	8258.2.3 = {add_trait="knight" add_trait="trained_warrior" }
+	8260.1.9 = {add_spouse = 300263} # Drinkwater maid.
+	8292.1.1 = {death="8292.1.1"}
+}
+#7969112 = {
+#	name="Барбри" # Wife of Ормонд. Mother of Андерс.
+#	female=yes
+#
+#	add_trait="naive_appeaser"
+#
+#	religion="the_seven"
+#	culture="stone_dornish"
+#	
+#	8222.1.1 = {birth="8222.1.1"}
+#}
+
+##issue of Ормонд##
+12 = {
+	name="Андерс" #Current Lord, ward of Квентин. The Bloodroyal. Warden of the Stoneway
+	dynasty=12
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	father=6969112
+	mother=300263
+	
+	8262.1.1 = {birth="8262.1.1"}
+	8278.4.8 = {add_trait="knight" add_trait="skilled_warrior"}
+	8279.1.1 = {add_spouse = 10012}
+}
+10012 = {
+	name="Бальдера"
+	female=yes
+
+	add_trait="naive_appeaser"
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	8259.1.1 = {birth="8259.1.1"}
+}
+696912 = {
+	name="Аларик" #Brother # Father of Арчибальд the bigman.
+	dynasty=12
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	father=6969112
+	mother=300263
+	
+	8264.1.1 = {birth="8264.1.1"}
+	8280.1.1 = {add_spouse = 86912}
+	8280.2.4 = {add_trait="knight"}
+}
+86912 = {
+	name="Мэбил" # Арчибальд's mother.
+	female=yes
+
+	add_trait="naive_appeaser"
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	8260.1.1 = {birth="8260.1.1"}
+}
+##Issue of Андерс##
+3012 = {
+	name="Инис" # Canon. Андерс eldest daughter. Married to Рион Allyrion.
+	female=yes	
+	dynasty=12
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	father=12
+	mother=10012
+	
+	8280.1.1 = {birth="8280.1.1"}
+}
+1012 = {
+	name="Клетус" #his son and heir.
+	dynasty=12
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	martial = 6
+	
+	father=12
+	mother=10012
+	
+	add_trait=fair
+	add_trait=lustful
+	add_trait=gregarious
+	
+	8283.1.1 = {birth="8283.1.1"}
+	8293.1.1 = {add_trait="squire"}
+	8299.1.1 = {remove_trait="squire" add_trait="knight" add_trait="trained_warrior"}
+	8300.2.15={
+		# Killed by pirates while with Квентин on his way to Danny
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+4012 = {
+	name="Гвинет" # Canon. Youngest daughter.
+	female=yes	
+	dynasty=12
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	father=12
+	mother=10012
+	
+	add_trait=quick
+	
+	8288.1.1 = {birth="8288.1.1"}
+}
+##issue of Аларик#####Арчибальд's line###
+2012 = {
+	name="Арчибальд"
+	dynasty=12
+	dna="alfdhdicaak"
+	properties="cl0ehk0000"
+	
+	martial = 9
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 4
+	learning = 2
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	father=696912
+	mother=86912
+	
+	add_trait="strong"
+	add_trait="tall"
+
+	8281.1.1 = {birth="8281.1.1"}
+	8291.1.1 = {add_trait="squire" add_trait="proud"}
+	8293.1.1 = {add_trait="kind"
+	            add_trait="honest"
+				add_trait="just"}
+	8297.1.1 = {remove_trait="squire"
+	            add_trait="trained_warrior"
+	            add_trait="misguided_warrior"
+				add_trait="knight"
+				add_trait="brave"}
+	8297.6.4 = {
+		effect = {
+			add_friend = 5001 #Квентин
+			add_friend = 1012
+			add_friend = 1003
+		}
+	}	
+	8298.1.1 = {give_nickname = nick_the_big_man} 	
+	8300.1.1 = {
+		add_trait = wikid
+		effect = { character_event = { id = feast_for_crows.65 days = 1000 } } #Failsafe
+	}		
+}
+####################
+###House Manwoody###
+####################
+20 = {
+	name="Дагос"
+	dynasty=20
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	martial=8
+	
+	
+	father=104020
+	mother=105020
+	
+	8253.1.1 = {birth="8253.1.1"}
+	8269.1.1 = {add_spouse = 10620}
+	8270.1.1 = {add_trait=trained_warrior add_trait=tough_soldier add_trait=knight}
+}
+10620 = {
+	name="Аррианна"
+	female=yes
+
+	add_trait="naive_appeaser"
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	8253.1.1 = {birth="8253.1.1"}
+}
+1020 = {
+	name="Морс"
+	dynasty=20
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	father=20
+	mother=10620
+	
+	8273.1.9 = {birth="8273.1.9"}
+	8283.1.11 = {add_trait=squire}
+	8289.2.7 = {remove_trait=squire add_trait=knight add_trait=trained_warrior}
+}
+2020 = {
+	name="Дикон"
+	dynasty=20
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	father=20
+	mother=10620
+	
+	8277.3.12 = {birth="8277.3.12"}
+	8289.1.29 = {add_trait=squire}
+	8293.4.10 = {remove_trait=squire add_trait=knight add_trait=trained_warrior}
+}
+###Brother and his children### # The children for Майлс are so the House doesn't die out quickly.
+3020 = {
+	name="Майлс" #Brother, was with Viper in K-L
+	dynasty=20
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	martial=7
+	
+	
+	father=104020
+	mother=105020
+	
+	8255.6.8 = {birth="8255.6.8"}
+	8271.9.12 = {add_trait=trained_warrior add_trait=tough_soldier add_trait=knight}
+	8271.11.3 = {add_spouse=63214} # Fowler maid.
+}
+63020 = {
+	name="Джейн" # married to Дэзиель Dalt, no children.
+	dynasty=20
+	female=yes
+	
+	father=3020
+	mother=63214
+	
+	add_trait="twin"
+	
+	religion="the_seven"
+	culture="stone_dornish"
+
+	8276.1.3 = {birth="8276.1.3"}	
+}
+63120 = {
+	name="Урзила" # Married to Scion of House Allyrion.
+	dynasty=20
+	female=yes
+	
+	father=3020
+	mother=63214
+	
+	add_trait="twin"
+	add_trait="lustful"
+
+	religion="the_seven"
+	culture="stone_dornish"
+
+	8276.1.3 = {birth="8276.1.3"}
+}
+63220 = {
+	name="Диморс"
+	dynasty=20
+
+	father=3020
+	mother=63214
+	
+	religion="the_seven"
+	culture="stone_dornish"
+
+	8280.6.14 = {birth="8280.6.14"}
+	8291.5.13 = {add_trait=squire}
+	8296.7.1 = {remove_trait=squire add_trait=knight add_trait=trained_warrior}
+}
+###Father and mother###
+104020 = {
+	name="Диморс"
+	dynasty=20
+	
+	father=62920
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	8233.1.1 = {birth="8233.1.1"}
+	8249.1.1 = {add_spouse=105020}
+	8250.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8270.1.1 = {death="8270.1.1"}
+}
+105020 = {
+	name="Урсила"
+	female=yes
+
+	add_trait="naive_appeaser"
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	8233.1.1 = {birth="8233.1.1"}
+	8273.1.1 = {death="8273.1.1"}
+}
+######################
+###House Drinkwater### #Updated \Chrisjm89/
+######################
+3 = {
+	name="Дерин" # a Lord, Геррис' sire.
+	dynasty=3
+	
+	father=3002103
+	mother=4002103
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	8257.1.1 = {birth="8257.1.1"}
+	8274.6.12 = {add_trait=knight add_trait=trained_warrior}
+	8275.7.7 = {add_spouse = 63414} # Disaff Fowler maid.
+}
+###Sister of Дерин, aunt of Геррис and the twins###
+5003 = {
+	name="Нейла"
+	dynasty=3
+    female=yes
+	
+	father=3002103
+	mother=4002103
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	8262.2.19 = {birth="8262.2.19"}
+}
+###Children###
+4003 = {
+	name="Кила" # Геррис' twin sister.
+	female=yes
+	dynasty=3
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	add_trait="twin"
+	
+	father=3
+	mother=63414
+	
+	8280.3.7 = {birth="8280.3.7"}
+}
+3003 = {
+	name="Вила" # Геррис' twin sister.
+	female=yes
+	dynasty=3
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	add_trait="twin"
+	
+	father=3
+	mother=63414
+	
+	8280.3.7 = {birth="8280.3.7"}
+}
+1003 = {
+	name="Геррис" # Companion of Квентин
+	dynasty=3
+	
+	martial = 8
+	diplomacy = 10
+	intrigue = 4
+	stewardship = 2
+	learning = 2
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	add_trait="fair"
+
+	father=3
+	mother=63414
+	
+	8276.9.27 = {birth="8276.9.27"} # Born in 276. Changed from 274.
+	8287.1.12 = {add_trait=squire}
+	8289.3.14 = {add_trait=honest}
+	8293.12.2 = {remove_trait=squire add_trait=knight add_trait=skilled_warrior add_trait=tough_soldier}
+	8294.1.4 = {add_trait=brave add_trait=proud}
+	8297.6.4 = {
+		effect = {
+			add_friend = 5001 #Квентин
+			add_friend = 2012
+		}
+	}
+	8300.1.1 = {
+		add_trait = wikid
+		effect = { character_event = { id = feast_for_crows.65 days = 1000 } } #Failsafe
+	}	
+}
+###############
+###House Wyl###
+###############
+19 = {
+	name="Эдмунд"
+	dynasty=19
+	
+	father=652519
+	mother=552519
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	8224.1.3 = {birth="8224.1.3"}
+	8240.1.19 = {add_trait=knight add_trait=trained_warrior}
+	8245.2.1 = {add_spouse = 62017} # Dayne maid.
+}
+###Children and in-laws of Edymynd###
+1019 = {
+	name="Джейн"
+	female=yes
+	dynasty=19
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	father=19
+	mother=62017
+	
+	8246.1.1 = {birth="8246.1.1"}
+}
+8019 = {
+	name="Эртур"
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	8246.1.1 = {birth="8246.1.1"}
+	8262.1.1 = {add_matrilineal_spouse = 1019}
+	8275.1.1 = {death = {death_reason = death_accident}}
+}
+3019 = {
+	name="Керил"
+	dynasty=19
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	father=19
+	mother=62017
+	
+	8249.1.1 = {birth="8249.1.1"}
+	8265.1.1 = {add_spouse = 9019}
+}
+9019 = {
+	name="Перриана"
+	female=yes
+
+	add_trait="naive_appeaser"
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	8249.1.1 = {birth="8249.1.1"}
+}
+6019 = {
+	name="Колин"
+	dynasty=19
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	father=19
+	mother=62017
+	
+	8253.1.1 = {birth="8253.1.1"}
+}
+###Issue of Lena###
+2019 = {
+	name="Арион"
+	dynasty=19
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	mother=1019
+	father=8019
+	
+	8271.1.3 = {birth="8271.1.3"}
+	8281.1.18 = {add_trait=squire}
+	8287.3.4 = {remove_trait=squire add_trait=knight add_trait=trained_warrior}
+	8290.4.12 = {add_spouse=4009} # Allyrion maid.
+}
+###Issue of Керил###
+4019 = {
+	name="Джастин"
+	dynasty=19
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	father=3019
+	mother=9019
+	
+	8267.2.8 = {birth="8267.2.8"}
+	8278.9.13 = {add_trait=squire}
+	8283.3.22 = {remove_trait=squire add_trait=knight add_trait=poor_warrior}
+	8283.3.27 = {add_spouse=63215} # Qorgyle maid.
+}
+5019 = {
+	name="Алис" # Married to House Blackmont scion.
+	female=yes
+	dynasty=19
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	father=3019
+	mother=9019
+	
+	8273.1.1 = {birth="8273.1.1"}
+}
+7019 = {
+	name="Обера" # Married to House Fowler cousin.
+	dynasty=19
+	female=yes
+	
+	father=3019
+	mother=9019
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	8275.1.1 = {birth="8275.1.1"}
+}
+###Issue of Арион###
+13019 = {
+	name="Делонна"
+	dynasty=19
+	female=yes
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	father=2019
+	mother=4009
+	
+	8291.3.2 = {birth="8291.3.2"}
+}
+14019 = {
+	name="Эдминд"
+	dynasty=19
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	father=2019
+	mother=4009
+	
+	8294.5.21 = {birth="8294.5.21"}
+}
+###Issue of Джастин###
+10019 = {
+	name="Эдерин"
+	dynasty=19
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	father=4019
+	mother=63215
+	
+	8283.4.9 = {birth="8283.4.9"}
+	8294.10.7 = {add_trait=squire}
+	8298.2.14 = {remove_trait=squire add_trait=knight add_trait=trained_warrior}
+}
+11019 = {
+	name="Ренвиль"
+	dynasty=19
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	father=4019
+	mother=63215
+	
+	8286.5.19 = {birth="8286.5.19"}
+	8296.11.6 = {add_trait=squire}
+}
+12019 = {
+	name="Перриана"
+	dynasty=19
+	female=yes
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	father=4019
+	mother=63215
+	
+	8288.2.1 = {birth="8288.2.1"}
+}
+##################
+###Princes Pass###
+################## # Updated \Chrisjm89/
+###House Fowler###
+##################
+14 = {
+	name="Франклин"
+	dynasty=14
+	
+	martial=8
+	
+	
+	father=63014
+	mother=53014
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	
+	8243.3.24 = {birth="8243.3.24"}
+	8253.4.17 = {add_trait=squire}
+	8259.2.8 = {add_trait=brave}
+	8259.4.2 = {remove_trait=squire add_trait=knight add_trait=skilled_tactician add_trait=skilled_warrior}
+	8259.5.2 = {add_spouse = 3014}
+	8280.3.24 = {give_nickname = nick_old_hawk}
+}
+3014 = {
+	name="Малесса"
+	female=yes
+
+	add_trait="naive_appeaser"
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	8243.1.1 = {birth="8243.1.1"}
+}
+###the twins
+1014 = {
+	name="Джейн"
+	female=yes
+	dynasty=14
+	dna="ahkbjtkbfhn"
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	add_trait="twin"
+	add_trait="lustful"
+	add_trait="proud"
+	add_trait="gregarious"
+	
+	father=14
+	mother=3014
+	
+	8272.1.1 = {birth="8272.1.1"}
+	8288.1.1 = {
+		add_trait = trained_warrior
+		add_trait = falconer
+	}
+}
+2014 = {
+	name="Дженнелин"
+	female=yes
+	dynasty=14
+	dna="ahkbjtkbfhn"
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	add_trait="twin"
+	add_trait="lustful"
+	add_trait="proud"
+	add_trait="gregarious"
+	
+	father=14
+	mother=3014
+	
+	8272.1.2 = {birth="8272.1.2"}
+	8288.1.1 = {
+		add_trait = trained_warrior
+		add_trait = hunter
+	}
+}
+###Distaff cousins### # So they don't die out easily.
+63414 = {
+	name="Дорея"	# not a lord, cousin. Married to Head of Drinkwater.
+	female=yes
+	dynasty=14
+
+	religion="the_seven"
+	culture="stone_dornish"
+
+	father=63114
+	mother=53114
+
+	8254.8.11 = {birth="8254.8.11"}
+}
+63514 = {
+	name="Арон"	# not a lord, cousin.
+	dynasty=14
+
+	religion="the_seven"
+	culture="stone_dornish"
+
+	father=63314
+	mother=53314
+
+	8271.12.3 = {birth="8271.12.3"}
+	8282.1.9 = {add_trait=squire}
+	8288.1.15 = {remove_trait=squire add_trait=knight add_trait=trained_warrior}
+	8293.3.16 = {add_spouse=7019} # Wyl maid.
+}
+63614 = {
+	name="Аллар"	# not a lord, cousin.
+	dynasty=14
+
+	religion="the_seven"
+	culture="stone_dornish"
+
+	father=63314
+	mother=53314
+
+	8273.1.7 = {birth="8273.1.7"}
+	8283.2.3 = {add_trait=squire}
+	8289.1.17 = {remove_trait=squire add_trait=knight add_trait=skilled_warrior}
+}
+###Children of Арон###
+63714 = {
+	name="Алин"
+	dynasty=14
+
+	religion="the_seven"
+	culture="stone_dornish"
+
+	father=63514
+	mother=7019
+
+	8294.12.27 = {birth="8294.12.27"}
+}
+63814 = {
+	name="Дорея"
+	dynasty=14
+	female=yes
+
+	religion="the_seven"
+	culture="stone_dornish"
+
+	father=63514
+	mother=7019
+
+	8296.4.7 = {birth="8296.4.7"}
+}
+###################
+###Red Mountains###
+################### # Updated \Chrisjm89/
+###House Dayne#####
+###################
+#issue of Aegyr
+1016 = {
+	name="Берик" #unknown Lord of Starfall. Named Берик in the show. Paxter Redwyne
+	dynasty=16
+	
+	religion="the_seven"
+	culture="western_valyrian"
+	
+	father=1017
+	mother=10017
+	
+	8243.1.1 = {birth="8243.1.1" effect = { culture=stone_dornish } }
+	8258.1.1 = {add_spouse = 91016}
+	8259.1.7 = {add_trait=knight add_trait=skilled_warrior}
+	8284.1.1 = {death = {death_reason = death_accident} culture=stone_dornish }
+}
+91016 = {
+	name="Наррелла"
+	female=yes
+
+	add_trait="naive_appeaser"
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	8241.1.1 = {birth="8241.1.1"}
+	8287.1.1 = {death="8287.1.1"}
+}
+17 = {
+	name="Алестер"
+	dynasty=16
+	
+	religion="the_seven"
+	culture="western_valyrian"
+	
+	father=1017
+	mother=10017
+	
+	8245.1.1 = {birth="8245.1.1" effect = { culture=stone_dornish } }
+	8261.1.1 = {add_spouse = 100917}
+	8262.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8292.1.1 = {death="8292.1.1" culture=stone_dornish }
+}
+100917 = {
+	name="Ариэла"
+	female=yes
+
+	add_trait="naive_appeaser"
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	8237.1.1 = {birth="8237.1.1"}
+}
+#Issue of Ульрик
+6016 = {
+	name="Ульрик" # a Lord of Starfall. Эдрик's father.
+	dynasty=16
+	
+	religion="the_seven"
+	culture="western_valyrian"
+	
+	father=1016
+	mother=91016
+	
+	8257.1.5 = {birth="8257.1.5" effect = { culture=stone_dornish } }
+	8267.7.13 = {add_trait=squire add_trait=brave}
+	8273.2.4 = {remove_trait=squire add_trait=knight add_trait=trained_warrior}
+	8285.1.9 = {add_spouse=92016}
+	8296.1.1 = {death = {death_reason = death_accident} culture=stone_dornish }
+}
+92016 = {
+	name="Элия"
+	female=yes
+
+	add_trait="naive_appeaser"
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	8266.9.11 = {birth="8266.9.11"}
+}
+2016 = {
+	name="Эшара" # Suspicious death *cough* Lemore *cough*
+	female=yes
+	dynasty=16
+	
+	dna="adhgdoegkdc"
+	properties="0c0cnk"
+	
+	diplomacy = 12
+
+	religion="the_seven"
+	culture="western_valyrian"
+	
+	add_trait="fair"
+	add_trait="groomed"
+	add_trait="gregarious"
+	
+	father=1016
+	mother=91016
+	
+	8262.1.1 = {birth="8262.1.1" effect = { culture=stone_dornish } }
+	8276.1.1 = {add_trait=proud}
+	8278.1.1 = {add_trait=elusive_shadow}
+	8284.1.1 = {add_trait=depressed}
+	8284.1.1 = {
+		# Selmy said she killed herself giving birth to a stillborn.
+		death = {
+			death_reason = death_suicide
+			killer = 2016
+		}
+		culture=stone_dornish 
+	}
+}
+16 = {
+	name="Эртур" #kingsguard
+	dynasty=16
+	dna="beamhmkhgdr"
+	properties="0e0cik"
+	
+	martial = 12
+	diplomacy = 7
+	intrigue = 6
+	stewardship = 8
+	learning = 5
+	
+	religion="the_seven"
+	culture="western_valyrian"
+		
+	father=1016
+	mother=91016
+	
+	8258.12.25 = {birth="8258.12.25" effect = { culture=stone_dornish } }
+	8270.3.3 = {add_trait=squire add_trait=temperate add_trait=brave}
+	8274.9.3 = {add_trait=diligent add_trait=patient add_trait=proud}
+	8275.1.1 = {
+		remove_trait=squire 
+		add_trait=skilled_tactician 
+		add_trait=master_warrior 
+		add_trait=knight
+		effect = {
+			add_friend = 77039 #Rhaegar
+		}
+	}
+	8275.2.7 = {add_trait=duelist add_trait=just}
+	8276.1.1 = {
+		add_trait="dawn" 
+	    give_nickname = nick_the_sword_of_the_morning
+		effect = { set_character_flag = nick_the_sword_of_the_morning }
+	}
+	8278.1.1 = { 	#Joined the kingsguard.
+		employer=56
+		add_trait="kingsguard"
+	}
+	8282.5.2 = {add_trait=cynical}
+	8282.9.15 = { #RR
+		effect = {
+			set_character_flag = TOJ_kingsguard
+			add_trait = wikid
+			character_event = { id = tower_of_joy.3 days = 2 }
+		}
+	}
+	8284.1.1 = {
+		# Ned said he would have dies if not for Howland Reed
+		death = {
+			death_reason = death_duel
+			killer = 126
+		}
+		culture=stone_dornish 
+		remove_trait = wikid
+	}
+}
+3016 = { 
+	name="Аллирия" # married to Берик Dondarrion
+	female=yes
+	dynasty=16
+	
+	religion="the_seven"
+	culture="western_valyrian"
+	
+	father=1016
+	mother=91016
+	
+	8282.1.1 = {birth="8282.1.1" effect = { culture=stone_dornish } }
+	8298.10.28 = { 
+		effect = {
+			c_blackhaven = {
+				holder_scope = { ROOT = { move_character = PREV } }
+			}
+		}
+	}
+}
+#Issue of Аррон
+9016 = {
+	name="Эдрик" #Lord of Starfall
+	dynasty=16
+	
+	dna="amfjjubbgdj"
+	properties="0b0cik"
+	
+	religion="the_seven"
+	culture="western_valyrian"
+	
+	father=6016
+	mother=92016
+	
+	
+	8287.1.1 = {birth="8287.1.1" effect = { culture=stone_dornish } }
+	8294.1.1 = {guardian=1303} #Берик Dondarrion
+	8294.2.9 = {add_trait=just}
+	8297.1.1 = {add_trait=squire add_trait=trained_warrior add_trait=brave add_trait=honorable}
+	8298.10.29 = {add_trait=diligent}
+	8300.6.4 = {remove_trait=trained_warrior add_trait=skilled_warrior}
+	8301.9.11 = {remove_trait=skilled_warrior add_trait=master_warrior}
+}
+
+#issue of Alyster
+8016 = {
+	name="Герольд" #cuts myrcella
+	dynasty=16
+	
+	dna="dkbfasiaaaw"
+	properties="0n0cik"
+	
+	martial = 9
+	diplomacy = 4
+	intrigue = 9
+	stewardship = 2
+	learning = 5
+	
+	religion="the_seven"
+	culture="high_valyrian"
+	
+	add_trait=tough_soldier
+	add_trait=fair
+	add_trait=wroth
+	add_trait=cruel
+	add_trait=brave
+	add_trait=ruthless
+	
+	father=17
+	mother=100917
+	
+	8273.1.1 = {birth="8273.1.1" effect = { culture=stone_dornish } }
+	8282.1.1 = {give_nickname = nick_darkstar }
+	8284.1.1 = {add_trait=squire }			
+	8289.1.1 = { add_trait=skilled_warrior add_trait=knight remove_trait=squire }
+}
+7016 = {
+	name="Роннел"
+	dynasty=16
+	
+	religion="the_seven"
+	culture="western_valyrian"
+	
+	father=17
+	mother=100917
+	
+	8275.11.16 = {birth="8275.11.16" effect = { culture=stone_dornish } }
+	8286.3.4 = {add_trait=squire}
+	8291.12.5 = {remove_trait=squire add_trait=knight add_trait=trained_warrior}
+	8294.2.8 = {add_spouse=6009} # Allyrion maid.
+}
+9017 = {
+	name="Алиса"
+	female=yes
+	dynasty=16
+	
+	add_trait="fair"
+	
+	religion="the_seven"
+	culture="western_valyrian"
+	
+	father=17
+	mother=100917
+	
+	8278.1.1 = {birth="8278.1.1" effect = { culture=stone_dornish } }
+}
+10017 = {
+	name="Аннара" # High Hermitage cadet.
+	dynasty=16
+	female=yes
+		
+	father=61617
+	mother=51617
+	
+	add_trait="fair"
+
+	religion="the_seven"
+	culture="western_valyrian"
+	
+	8222.1.1 = {birth="8222.1.1" effect = { culture=stone_dornish } }
+	8285.1.1 = {death="8285.1.1" culture=stone_dornish }
+}
+###Children of Роннел### # So the Dayne's don't die out quickly.
+93017 = {
+	name="Эйгон"
+	dynasty=16
+	
+	add_trait="fair"
+	
+	religion="the_seven"
+	culture="western_valyrian"
+	
+	father=7016
+	mother=6009
+	
+	8294.12.8 = {birth="8294.12.8" effect = { culture=stone_dornish } }
+}
+63017 = {
+	name="Алисанна"
+	female=yes
+	dynasty=16
+	
+	add_trait="fair"
+	
+	religion="the_seven"
+	culture="western_valyrian"
+	
+	father=7016
+	mother=6009
+	
+	8295.11.5 = {birth="8295.11.5" effect = { culture=stone_dornish } }
+}
+95017 = {
+	name="Дейрон"
+	dynasty=16
+	
+	religion="the_seven"
+	culture="western_valyrian"
+	
+	father=7016
+	mother=6009
+	
+	8297.2.27 = {birth="8297.2.27" effect = { culture=stone_dornish } }
+}
+
+190016 = { #wetnurse, rumoured mother of jon
+	name="Вилла" 
+	female = yes
+	
+	learning = 2
+	diplomacy = 2
+	martial = 1
+	stewardship = 1
+	intrigue = 2
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	add_trait = fair
+	add_trait = naive_appeaser
+	
+	8260.1.1 = {
+		birth="8260.1.1"
+		effect = {
+			c_starfall = { holder_scope = { ROOT = { move_character = PREV } } }
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+}
+#####################
+###House Blackmont### # Updated \Chrisjm89/
+#####################
+18 = {
+	name="Ларра"
+	female=yes
+	dynasty=18
+	
+	father=63018
+	mother=53018
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	
+	
+	8259.1.1 = {birth="8259.1.1"}
+}
+3018 = {
+	name="Туприн"
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	8259.1.1 = {birth="8259.1.1"}
+	8275.1.1 = {add_matrilineal_spouse=18}
+	8277.1.1 = {add_trait=knight add_trait=trained_warrior}
+}
+###Children###
+1018 = {
+	name="Джинесса" # Heir of House Blackmont.
+	female=yes
+	dynasty=18
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	
+	
+	mother=18
+	father=3018
+	
+	8280.4.11 = {birth="8280.4.11"}
+}
+2018 = {
+	name="Перрос" # A squire.
+	dynasty=18
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	
+	
+	mother=18
+	father=3018
+	
+	8285.7.9 = {birth="8285.7.9"}
+	8296.3.21 = {add_trait=squire}
+}
+###Brother of Ларра### # So the House doesn't die out quickly.
+63118 = {
+	name="Марон"	# a lord
+	dynasty=18
+
+	religion="the_seven"
+	culture="stone_dornish"
+
+	father=63018
+	mother=53018
+
+	8261.4.1 = {birth="8261.4.1"}
+	8277.5.27 = {add_trait=knight add_trait=poor_warrior}
+	8277.7.7 = {add_spouse=53118}
+}
+53118 = {
+	name="Тализа"
+	female=yes
+	
+	religion="the_seven"
+	culture="stone_dornish"
+	
+	8260.1.1 = {birth="8260.1.1"}
+}
+###Nieces and Nephews###
+63218 = {
+	name="Джулиан"
+	dynasty=18
+
+	religion="the_seven"
+	culture="stone_dornish"
+
+	father=63118
+	mother=53118
+
+	8278.3.9 = {birth="8278.3.9"}
+	8288.7.14 = {add_trait=squire}
+	8294.4.7 = {remove_trait=squire add_trait=knight add_trait=trained_warrior}
+	8294.10.14 = {add_spouse=5019} # Wyl maid.
+}
+63318 = {
+	name="Ланесса"
+	dynasty=18
+	female=yes
+
+	religion="the_seven"
+	culture="stone_dornish"
+
+	father=63118
+	mother=53118
+
+	8280.12.4 = {birth="8280.12.4"}
+}
+63418 = {
+	name="Эдрин"
+	dynasty=18
+
+	religion="the_seven"
+	culture="stone_dornish"
+
+	father=63118
+	mother=53118
+
+	8286.9.1 = {birth="8286.9.1"}
+	8297.3.26 = {add_trait=squire}
+}
+63518 = {
+	name="Аделла"
+	dynasty=18
+	female=yes
+
+	religion="the_seven"
+	culture="stone_dornish"
+
+	father=63118
+	mother=53118
+
+	8289.2.10 = {birth="8289.2.10"}
+}
+###Child of Джулиан###
+63618 = {
+	name="Доран"
+	dynasty=18
+
+	religion="the_seven"
+	culture="stone_dornish"
+
+	father=63218
+	mother=5019
+
+	8296.2.10 = {birth="8296.2.10"}
+}
+###House Shells###
+118806043 = {
+	name="Эндрю"	# a lord
+	dynasty=806043
+
+	religion="the_seven"
+	culture="sand_dornish"
+
+	father=417806043
+	mother=117806043
+
+	8225.1.1 = {birth="8225.1.1"}
+	8241.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8243.1.1 = {add_spouse=418806043}
+	8288.1.1 = {death="8288.1.1"}
+}
+418806043 = {
+	name="Сенелла"
+	female=yes
+
+	religion="the_seven"
+	culture="sand_dornish"
+
+	8225.1.1 = {birth="8225.1.1"}
+	8288.1.1 = {death="8288.1.1"}
+}
+119806043 = {
+	name="Квентин"	# not a lord
+	dynasty=806043
+
+	religion="the_seven"
+	culture="sand_dornish"
+
+	father=118806043
+	mother=418806043
+
+	8253.1.1 = {birth="8253.1.1"}
+	8269.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8271.1.1 = {add_spouse=419806043}
+	8280.1.1 = {death="8280.1.1"}
+}
+419806043 = {
+	name="Вилла"
+	female=yes
+
+	religion="the_seven"
+	culture="sand_dornish"
+
+	8253.1.1 = {birth="8253.1.1"}
+	8280.1.1 = {death="8280.1.1"}
+}
+120806043 = {
+	name="Бельдекар"	# not a lord
+	dynasty=806043
+
+	religion="the_seven"
+	culture="sand_dornish"
+
+	father=118806043
+	mother=418806043
+
+	8256.1.1 = {birth="8256.1.1"}
+	8272.1.1 = {add_trait=knight add_trait=skilled_warrior}
+}
+123806043 = {
+	name="Дейрон"	# a lord
+	dynasty=806043
+
+	religion="the_seven"
+	culture="sand_dornish"
+
+	father=119806043
+	mother=419806043
+
+	8277.1.1 = {birth="8277.1.1"}
+	8293.1.1 = {add_trait=knight add_trait=trained_warrior}
+}
+5008001 = {
+	name="Гарибальд" #Арианна sworn shield
+	dynasty = 806043 #Shells
+	
+	martial = 3
+	diplomacy = 3
+	intrigue = 2
+	stewardship = 1
+	learning = 5
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	add_trait="misguided_warrior"
+	add_trait="authoritative"
+	add_trait="proud"
+	add_trait="shy"
+	add_trait="honorable"
+	
+	father=119806043
+	mother=419806043
+	
+	8279.1.1 = {
+		birth="8279.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8279.1.1 = { employer = 1 }
+	8295.1.1 = {
+		add_trait = knight
+		add_trait = trained_warrior
+	}
+}
+############
+###Lowborn##
+############
+###9109 "Хотах"
+99001 = {
+	name="Арео"
+	dynasty=9109
+	
+	martial = 3
+	diplomacy = 3
+	intrigue = 3
+	stewardship = 1
+	learning = 2
+	
+	religion="bearded_priests"
+	culture="norvosi"
+	
+	add_trait="misguided_warrior"
+	add_trait="strong"
+	
+	#add_trait="humble"
+	add_trait="content"		
+	add_trait="diligent"
+	add_trait="patient"
+	add_trait="honorable"
+	add_trait="brave"
+	#add_trait="just"
+	
+	8251.1.1 = {birth="8251.1.1"}
+	8267.1.1 = {
+		add_trait="bearded_priest"
+		add_trait="skilled_warrior" #Killed Arys Oakheart
+	}
+	8270.1.1 = {
+		employer = 1
+		effect = { give_minor_title = title_bodyguard }
+	}
+}

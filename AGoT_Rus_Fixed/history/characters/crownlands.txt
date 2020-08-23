@@ -1,0 +1,8706 @@
+### The Crownlands, by the_hdk
+### New Characters use ids 77000-79999 - OBSOLETE
+### For new characters, use ids "character_number"+"dynasty_number" (3 digits at least for dynasty)
+### Example : House Xhdue with number 200 -> Member blahblah, id = 1200, Member Ifzuh, id = 2200
+### Example : House XCbud with number 18 -> Membre blahblah, id 1018, Membre Hufhe, id = 2018
+
+#### A "##" indicates additional information to be inputed
+#### #TITLE# indicates progress of title history
+
+###
+### HOUSE TARGARYEN (id = 496)
+###
+###
+
+###
+###THE KING !
+###
+77037  = {
+	name="Эйрис" # AKA: Эйрис II the Mad
+	dynasty=496
+	dna="cjjehgmdaaf"
+	properties="aj0af0"
+	
+	martial = 3
+	diplomacy = 5
+	intrigue = 9
+	stewardship = 10
+	learning = 7
+	
+	religion="the_seven"
+	culture="high_valyrian"
+	
+	#add_trait=quick #whose idea was this?
+	add_trait=fair #handsome
+	
+	father=77036
+	mother=77036496
+	
+	disallow_random_traits = yes
+	
+	8243.6.1 = {
+		birth="8243.6.1" #18 on ascension
+		effect = {
+			set_character_flag = potential_targ_lunatic 
+			add_character_modifier = {
+				name = "abomination_of_incest"
+				duration = -1
+			}
+		}
+	}
+	8250.1.1={
+		add_trait=slothful
+	}
+	8252.1.1 = {
+		add_trait=gregarious 
+		add_trait=proud #vain and proud
+		add_trait = squire
+		effect = {
+			if = {
+				limit = { NOT = { start_date = 8272.1.1 } }
+				add_friend = 190 #Tywin
+			}
+			add_friend = 3317 #Стеффон
+		}
+	}
+	8253.1.1 = { # Beginning Эйрис showed promise (not really)
+		add_trait=arbitrary #changeable
+		add_trait=charitable #generous
+	} 
+	8254.1.1={
+		add_trait=lustful # had many lovers
+	}
+	8258.1.1 = {add_spouse=77038} # Рейла Targaryen
+	8259.6.1 = {
+		remove_trait = squire
+		add_trait=knight
+		add_trait=flamboyant_schemer
+		add_trait=back_seat_leader
+		add_trait=stubborn # Trying to rule his own way, the case of Duskendale proves his stubborness
+		effect = {
+			k_westerlands = {
+				holder_scope = {
+					random_dynasty_member = {
+						limit = { character = 2190 } #Tywin's wife (maybe)
+						add_lover = ROOT
+					}
+				}
+			}	
+		}
+	}
+	8262.1.1={
+		add_trait=dead_aegon_IV_crown
+		effect = {  
+			add_artifact = aegon_IV_crown	
+			add_artifact = maekars_crown
+			add_artifact = aegon_III_crown						
+			add_artifact = aenys_crown
+			add_artifact = crown_of_winter
+			add_artifact = durrandon_crown
+			#add_artifact = gardener_crown	
+			add_artifact = lannister_crown	
+			add_artifact = falcon_crown	
+			remove_trait=dead_aegon_IV_crown
+			set_character_flag = crowned_by_high_septon
+			
+			any_vassal = {	#Vanilla bug workaround
+				remove_title = title_councilmember_king
+				remove_title = title_councilmember_emperor
+				remove_title = title_high_admiral
+			}
+			any_courtier = {
+				remove_title = title_councilmember_king
+				remove_title = title_councilmember_emperor
+				remove_title = title_high_admiral
+			}
+			c_190 = { #Tywin
+				remove_all_job_titles = yes
+				give_job_title = job_castellan
+			}
+		}
+	}
+	8263.1.1={
+		effect = {  
+			random_lover = {
+				limit = { character = 2190 } #Tywin's wife (maybe)
+				remove_lover = ROOT
+			}
+		}
+	}
+	8270.1.1 = {add_trait = paranoid} # suspects wife is cheating
+	8273.1.1 = {add_trait = wroth} # becoming erratic and violent
+	8274.1.1 = { 
+		#add_trait = tyrant1 # Ilyn Payne
+		effect = { 
+			set_variable = { which = "tyrant" value = 5 }
+			hidden_tooltip = { character_event = { id = maintenance.1 days = 2 } }#tyrant trait
+			random_courtier = {
+				limit = { character = 2137 } #Willem darry
+				remove_all_job_titles = yes
+				give_job_title = job_marshal
+			}
+		}
+	} 
+	8274.5.1 = {  #infant son dies, tortures wet nurse and kin to death, vows chastity
+		add_trait = cruel 
+		remove_trait = lustful
+	} 
+	8276.1.1 = {	#refusal of Рейгар-Cersei marriage - rivalry starts
+		effect = {
+			c_190 = { add_rival = ROOT } #Tywin
+		}
+	}
+	8277.1.1 = { # Defiance of Duskendale
+		effect = { 
+			if = {
+				limit = { 
+					NOT = { year = 8278 }
+					NOT = { month = 9 }
+				}	
+				d_duskendale = {
+					holder_scope = {
+						ROOT = { 
+							imprison = PREV 
+							set_character_flag = captured_in_battle
+						}
+					}
+				}
+			}	
+			set_character_flag = has_dynasty_loyalist
+			c_2029025 = { #Кварлтон Chelsted
+				remove_all_job_titles = yes
+				give_job_title = job_treasurer
+				opinion = {
+					modifier = opinion_dynasty_loyalist
+					who = ROOT
+				}
+				reverse_opinion = {
+					modifier = opinion_my_loyalist
+					who = ROOT
+				}
+			}
+			c_6002741 = { #Саймонд Staunton
+				remove_all_job_titles = yes
+				give_job_title = job_chancellor
+				opinion = {
+					modifier = opinion_dynasty_loyalist
+					who = ROOT
+				}
+				reverse_opinion = {
+					modifier = opinion_my_loyalist
+					who = ROOT
+				}
+			}
+			c_20052 = { #Люцерис Velaryon
+				set_defacto_liege = ROOT
+				remove_all_job_titles = yes
+				if = {
+					limit = { has_dlc = "Zeus" }
+					give_minor_title = title_high_admiral
+				}	
+				if = {
+					limit = { NOT = { has_dlc = "Zeus" } }
+					give_minor_title = title_high_admiral_B
+				}
+				opinion = {
+					modifier = opinion_dynasty_loyalist
+					who = ROOT
+				}
+				reverse_opinion = {
+					modifier = opinion_my_loyalist
+					who = ROOT
+				}
+			}
+		}
+	}
+	8277.7.1 = {
+		remove_trait=gregarious
+		remove_trait=charitable
+		effect = {		
+			set_variable = { which = physique_variable value = -15 }	#Severly malnourished
+		}
+	}
+	8277.10.1 = { 
+		effect = {
+			prisoner = no
+			set_variable = { which = "tyrant" value = 10 }
+		}		
+		#remove_trait = tyrant1
+		#add_trait = tyrant2
+		add_trait = lunatic
+		add_trait="is_malnourished"
+		add_trait=uncouth 
+		#remove_trait=quick	
+		give_nickname = nick_the_mad # Madness begins, many of his good qualities go in the wake of Duskendale
+	}
+	8278.1.1 = { # Madness continues and grows worse
+		add_trait = fire_obsessed 
+		effect = {
+			join_society = alchemists_guild
+			c_696969103 = { #Россарт
+				if = {
+					limit = { has_dlc = "Zeus" }
+					give_minor_title = title_councilmember_king
+				}	
+				else = {
+					give_minor_title = title_small_council_advisor 
+				}
+				opinion = {
+					modifier = opinion_dynasty_loyalist
+					who = ROOT
+				}
+				reverse_opinion = {
+					modifier = opinion_my_loyalist
+					who = ROOT
+				}
+			}
+		}		
+	} 
+	8279.1.1 = {	
+		effect = {
+			c_696969101 = { #Варис
+				remove_all_job_titles = yes
+				give_job_title = job_spymaster		
+			}
+		}
+	}
+	8281.1.1 = {
+		piety = 200
+		effect = { #appoint jaime to kingsguard, tywin resigns
+			c_190 = { #Tywin
+				remove_title = job_castellan
+				opinion = {
+					modifier = opinion_angry
+					who = ROOT
+					years = 15
+				}
+			}
+		}
+	}
+	8282.9.1 = { # Killed Starks in throne room
+		#remove_trait = tyrant2
+		#add_trait = tyrant5
+		effect = { set_variable = { which = "tyrant" value = 25 } }
+	}
+	8282.9.15 = {
+		effect = {
+			character_event = { id = roberts_rebellion.4 }		
+			any_vassal = {
+				limit = { 	
+					NOT = { war_with = PREV } 
+					OR = {
+						NOT = { tier = KING }
+						has_landed_title = k_the_most_devout
+					}	
+					NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_targaryen_loyalist } }
+				}
+				opinion = {
+					modifier = opinion_loyal
+					who = PREV
+					months = 60
+				}
+				set_character_flag = supporting_king
+			}
+			add_trait = civil_war
+			set_global_flag = roberts_rebellion
+			spawn_unit = { #make sure Рейгар is leading an army
+				province = 226 
+				owner = ROOT
+				leader = 77039
+				troops = {
+					archers = { 33 33 }
+					heavy_infantry = { 900 900 }
+					light_infantry = { 400 400 }	
+					light_cavalry = { 200 200 }		
+					knights = { 25 25 }			
+				}
+				attrition = 1.0
+				disband_on_peace = yes
+			}
+			random_child = {
+				limit = { character = 77040 } #Визерис
+				add_trait = lunatic
+			}	
+			k_north = {
+				holder_scope = { 
+					opinion = {
+						modifier = opinion_vengeance
+						who = ROOT
+					}
+					any_sibling = {
+						limit = { is_female = no }
+						opinion = {
+							modifier = opinion_vengeance
+							who = ROOT
+						}
+					}
+				}
+			}
+			k_vale = {
+				holder_scope = { 
+					opinion = {
+						modifier = opinion_vengeance
+						who = ROOT
+					}
+					any_dynasty_member = {
+						limit = { 
+							is_alive = yes
+							NOT = { character = PREV }
+						}
+						opinion = {
+							modifier = opinion_vengeance
+							who = ROOT
+						}
+					}
+				}
+			}
+			c_runestone = {
+				holder_scope = { 
+					opinion = {
+						modifier = opinion_vengeance
+						who = ROOT
+					}
+					any_dynasty_member = {
+						limit = { 
+							is_alive = yes 
+							NOT = { character = PREV }
+						}
+						opinion = {
+							modifier = opinion_vengeance
+							who = ROOT
+						}
+					}
+				}
+			}
+			c_seagard = {
+				holder_scope = { 
+					opinion = {
+						modifier = opinion_vengeance
+						who = ROOT
+					}
+					any_dynasty_member = {
+						limit = { 
+							is_alive = yes
+							NOT = { character = PREV }
+						}
+						opinion = {
+							modifier = opinion_vengeance
+							who = ROOT
+						}
+					}
+				}
+			}
+			k_stormlands = {
+				holder_scope = { 
+					opinion = {
+						modifier = opinion_vengeance
+						who = ROOT
+					}
+				}
+			}
+			if = {
+				limit = { ai = no }
+				spouse = { impregnate = ROOT } #Дейнерис
+			}	
+		}	
+	}
+	8283.1.1 = {
+		effect = {
+			c_2029025 = { #Кварлтон Chelsted
+				remove_all_job_titles = yes
+				give_job_title = job_castellan
+			}		
+		}
+	}
+	8283.5.1 = {
+		effect = {
+			c_696969103 = { #Россарт
+				remove_all_job_titles = yes
+				remove_title = title_small_council_advisor
+				give_job_title = job_castellan
+			}
+		}
+	}
+	8283.6.1={
+		#remove_trait = tyrant5
+		add_trait=tyrant5 #for history's sake
+		remove_trait = civil_war
+		death = {
+			death_reason = death_duel_vs_rogue_kg
+			killer = 3190 # Killed by Jaime, of course
+		}
+	}
+}
+77038 = {
+	name="Рейла"
+	female=yes
+	dynasty=496	
+	
+	religion="the_seven"
+	culture="high_valyrian"
+	
+	father=77036
+	mother=77036496
+
+	disallow_random_traits = yes
+	
+	8245.1.1 = {
+		birth="8245.1.1"
+		effect = {
+			add_character_modifier = {
+				name = "abomination_of_incest"
+				duration = -1
+			}
+		}
+	}
+	8251.1.1 = {
+		add_trait=humble
+	}
+	8253.1.1 = {
+		add_trait=shy
+	}
+	8255.1.1 = {
+		add_trait=honorable #mindful of her duty
+	}
+	8257.1.1 = {
+		add_trait=chaste
+	}
+	8261.1.1 = {
+		add_trait=naive_appeaser
+	}
+	8269.1.1 = {
+		add_trait=depressed
+	}
+	8282.1.1 = {
+		effect = { 
+			add_trait = in_hiding
+			set_character_flag = hidden_from_siege
+			#lore children
+			character_event = { id = lore_children.2 days = 750 }
+		}
+	}
+	8284.1.1 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+##Issue of Эйрис II
+77039  = {
+	name="Рейгар" # Рейгар the Bard			
+	dynasty=496
+	dna="cfffgoceaac"
+	properties="cn0c0k"
+	
+	martial = 9
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 9
+	learning = 8
+	
+	religion="the_seven"
+	culture="high_valyrian"
+	
+	add_trait=quick
+	add_trait=fair
+	
+	father=77037
+	mother=77038
+	
+	disallow_random_traits = yes
+	
+	8259.6.1 = {
+		birth="8259.6.1"
+		effect = {
+			add_character_modifier = {
+				name = "abomination_of_incest"
+				duration = -1
+			}
+			set_character_flag = potential_targ_lunatic
+		}
+	}
+	8262.6.1={
+		add_claim = e_iron_throne
+		add_claim = d_kings_landing
+		add_claim = c_kings_landing
+	}
+	8265.8.1={
+		add_trait=kind
+	}
+	8269.6.1 = {
+		add_trait=poet
+		add_trait=scholar
+		effect = { add_artifact = rhaegar_harp }
+	}
+	8275.6.1 = {
+		add_trait=brilliant_strategist
+		add_trait=inspiring_leader
+		add_trait=cavalry_leader
+		add_trait=experimenter
+		
+		add_trait=brave
+		effect = { #Джон connington firendship
+			add_friend = 316
+			add_artifact = rhaegar_armor
+		}
+	}
+	8277.6.1={
+		add_trait=skilled_warrior
+		add_trait=knight
+		add_trait=ambitious
+		effect = { add_friend = 200305 }# Ричард Lonmouth
+	}
+	8279.1.1={
+		add_spouse=1001 # Elia Martel
+	}
+	8282.9.15 = {
+		add_trait=assign_mission_target #for use in ToJ chain
+		effect = {			
+			character_event = { id = roberts_rebellion.3 }
+			set_character_flag = supporting_king
+			set_character_flag = former_royal_courtier
+			e_iron_throne = {
+				holder_scope = {
+					ROOT = {
+						join_defender_wars = PREV
+						opinion = {
+							who = PREV
+							modifier = opinion_with_king
+							years = 100
+						}
+					}
+				}
+			}
+			k_north = {
+				holder_scope = {
+					opinion = {
+						modifier = opinion_vengeance
+						who = ROOT
+					}
+					any_sibling = {
+						limit = { is_female = no }
+						opinion = {
+							modifier = opinion_vengeance
+							who = ROOT
+						}
+					}
+				}
+			}
+			k_stormlands = {
+				holder_scope = {
+					add_rival = ROOT
+					opinion = {
+						modifier = opinion_vengeance
+						who = ROOT
+					}
+				}
+			}
+			any_child = { set_character_flag = child_of_rhaegar }
+		}
+	}	
+	8283.3.1={
+		death = {
+			death_reason = death_duel_battle
+			killer = 317 # Smote by Роберт on the Trident
+		}
+	}
+}
+180496 = {
+	name="Шейна"
+	female=yes
+	dynasty=496
+
+	religion="the_seven"
+	culture="high_valyrian"
+	
+	add_trait=fair
+	
+	father=77037
+	mother=77038
+		
+	8267.6.1 = {
+		birth="8267.6.1" 
+		effect = { death = { death_reason = death_stillborn } } #make sure they are not alive
+	}
+	8267.6.2 = {
+		death = { death_reason = death_stillborn }
+	}
+}
+181496 = {
+	name="Дейрон"
+	dynasty=496
+
+	religion="the_seven"
+	culture="high_valyrian"
+	
+	add_trait=fair
+	
+	father=77037
+	mother=77038
+		
+	8269.1.1 = {
+		birth="8269.1.1" 
+		effect = {
+			add_character_modifier = {
+				name = "abomination_of_incest"
+				duration = -1
+			}
+		}
+	}
+	8269.6.1 = {
+		add_trait = sickly
+		death = { death_reason = death_sickly }
+	}
+}
+182496 = {
+	name="Эйгон"
+	dynasty=496
+
+	religion="the_seven"
+	culture="high_valyrian"
+	
+	add_trait=quick
+	
+	father=77037
+	mother=77038
+		
+	8272.1.1 = {
+		birth="8272.1.1" 
+		add_trait=sickly #premature
+		effect = {
+			add_character_modifier = {
+				name = "abomination_of_incest"
+				duration = -1
+			}
+		}
+	}
+	8273.1.1 = {
+		death = { death_reason = death_sickly }
+	}
+}
+183496 = {
+	name="Джейхейрис"
+	dynasty=496
+
+	religion="the_seven"
+	culture="high_valyrian"
+	
+	father=77037
+	mother=77038
+		
+	8274.1.1 = {
+		birth="8274.1.1" 
+		add_trait=sickly 
+		effect = {
+			add_character_modifier = {
+				name = "abomination_of_incest"
+				duration = -1
+			}
+		}
+	}
+	8274.5.1 = {
+		death = { death_reason = death_sickly }
+	}
+}
+77040  = {
+	name="Визерис" # Визерис the Beggar King		
+	dynasty=496
+	dna="befiepjcaab"
+	properties="0t000"
+	
+	martial = 2
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 4
+	learning = 5
+	
+	religion="the_seven"
+	culture="high_valyrian"
+	
+	add_trait=lunatic
+	
+	father=77037
+	mother=77038
+	
+	8276.1.1 = {
+		birth="8276.1.1"
+		effect = {
+			add_character_modifier = {
+				name = "abomination_of_incest"
+				duration = -1
+			}
+		}
+	}
+	8282.1.1 = {
+		add_trait=cruel
+		add_trait=wroth
+		effect = { 
+			add_trait = in_hiding
+			set_character_flag = hidden_from_siege
+		}	
+	}
+	8284.1.1 = {
+		add_trait = ambitious
+		employer = 600000041 #Braavos
+		effect = {
+			set_character_flag = exiled_pretender
+			set_character_flag = exiled_royal_family
+			set_character_flag = targaryen
+			add_trait = lunatic
+			remove_trait = in_hiding
+			clr_character_flag = hidden_from_siege
+			e_iron_throne = {
+				holder_scope = {
+					if = {
+						limit = { character = 317 } #Роберт
+						reverse_opinion = {
+							modifier = opinion_vengeance
+							who = ROOT
+						}
+					}
+					reverse_opinion = {
+						modifier = opinion_usurped_title
+						who = ROOT
+					}			
+				}
+			}
+			d_dragonstone = {
+				holder_scope = {
+					reverse_opinion = {
+						modifier = opinion_usurped_title
+						who = ROOT
+					}			
+				}
+			}
+			k_westerlands = {
+				holder_scope = {
+					if = {
+						limit = { character = 190 } #Tywin
+						reverse_opinion = {
+							modifier = opinion_vengeance
+							who = ROOT
+						}
+						reverse_opinion = {
+							modifier = opinion_usurped_title
+							who = ROOT
+						}
+					}
+					random_dynasty_member = {
+						limit = { character = 3190 } #Jaime
+						reverse_opinion = {
+							modifier = opinion_vengeance
+							who = ROOT
+						}
+					}
+					random_realm_character = {
+						limit = { character = 1230 } #Грегор Clegane
+						reverse_opinion = {
+							modifier = opinion_vengeance
+							who = ROOT
+						}
+					}
+					random_realm_character = {
+						limit = { character = 207 } #Amory Lorch
+						reverse_opinion = {
+							modifier = opinion_vengeance
+							who = ROOT
+						}
+					}
+				}
+			}
+			k_north = {
+				holder_scope = {
+					if = {
+						limit = { character = 59 } #Ned
+						reverse_opinion = {
+							modifier = opinion_usurped_title
+							who = ROOT
+						}	
+					}	
+				}
+			}
+			k_vale = {
+				holder_scope = {
+					if = {
+						limit = { character = 94002 } #Джон Arryn
+						reverse_opinion = {
+							modifier = opinion_usurped_title
+							who = ROOT
+						}	
+					}	
+				}
+			}
+			k_riverlands = {
+				holder_scope = {
+					if = {
+						limit = { character = 159 } #Хостер Tully
+						reverse_opinion = {
+							modifier = opinion_usurped_title
+							who = ROOT
+						}	
+					}	
+				}
+			}
+		}
+	}
+	8288.1.1 = { give_nickname = nick_the_beggar_king }
+	8291.1.1 = {
+		add_trait=proud
+		add_trait=charismatic_negotiator
+	}
+	8295.1.1 = {
+		employer = 600000040 #Illyrio
+	}
+	8298.1.1 = {
+		employer = 300100 #Drogo
+	}
+	8298.8.1={	
+		death = {
+			death_reason = death_execution
+			killer = 300100 # Killed by Khal Drogo
+		}
+	}
+}
+77041 = {
+	name="Дейнерис" # The Дейнерис Stormborn
+	female=yes
+	dynasty=496		
+	dna="aghgitljaac"
+	properties="0p00d"
+	
+	martial = 4
+	diplomacy = 3
+	intrigue = 2
+	stewardship = 3
+	learning = 5
+	
+	religion="the_seven"
+	culture="high_valyrian"
+	
+	add_trait = quick
+	add_trait = fair
+	give_nickname = "nick_stormborn"
+
+	father=77037
+	mother=77038
+	
+	8284.1.1 = {
+		birth="8284.1.1"
+		employer = 600000041 #Braavos
+		effect = {
+			add_friend = 2137 #Willem Darry
+			clr_dynasty_flag = prefers_agnatic
+			set_character_flag = daenerys_targaryen
+			#set_character_flag = targaryen
+			set_character_flag = exiled_royal_family
+			set_character_flag = potential_targ_lunatic
+			add_character_modifier = {
+				name = "abomination_of_incest"
+				duration = -1
+			}
+			e_iron_throne = { add_claim = ROOT }
+			d_kings_landing = { add_claim = ROOT }
+			c_kings_landing = { add_claim = ROOT }
+			e_iron_throne = {
+				holder_scope = {
+					if = {
+						limit = { character = 317 } #Роберт
+						reverse_opinion = {
+							modifier = opinion_vengeance
+							who = ROOT
+						}
+					}
+					reverse_opinion = {
+						modifier = opinion_usurped_title
+						who = ROOT
+					}			
+				}
+			}
+			d_dragonstone = {
+				holder_scope = {
+					reverse_opinion = {
+						modifier = opinion_usurped_title
+						who = ROOT
+					}			
+				}
+			}
+			k_westerlands = {
+				holder_scope = {
+					if = {
+						limit = { character = 190 } #Tywin
+						reverse_opinion = {
+							modifier = opinion_vengeance
+							who = ROOT
+						}
+						reverse_opinion = {
+							modifier = opinion_usurped_title
+							who = ROOT
+						}
+					}
+					random_dynasty_member = {
+						limit = { character = 3190 } #Jaime
+						reverse_opinion = {
+							modifier = opinion_vengeance
+							who = ROOT
+						}
+					}
+					random_realm_character = {
+						limit = { character = 1230 } #Грегор Clegane
+						reverse_opinion = {
+							modifier = opinion_vengeance
+							who = ROOT
+						}
+					}
+					random_realm_character = {
+						limit = { character = 207 } #Amory Lorch
+						reverse_opinion = {
+							modifier = opinion_vengeance
+							who = ROOT
+						}
+					}
+				}
+			}
+			k_north = {
+				holder_scope = {
+					if = {
+						limit = { character = 59 } #Ned
+						reverse_opinion = {
+							modifier = opinion_usurped_title
+							who = ROOT
+						}	
+					}	
+				}
+			}
+			k_vale = {
+				holder_scope = {
+					if = {
+						limit = { character = 94002 } #Джон Arryn
+						reverse_opinion = {
+							modifier = opinion_usurped_title
+							who = ROOT
+						}	
+					}	
+				}
+			}
+			k_riverlands = {
+				holder_scope = {
+					if = {
+						limit = { character = 159 } #Хостер Tully
+						reverse_opinion = {
+							modifier = opinion_usurped_title
+							who = ROOT
+						}	
+					}	
+				}
+			}
+		}
+	}
+	8292.1.1 = {
+		guardian = 77040 #Визерис
+	}
+	8294.1.1 = {
+		add_trait = depressed
+		add_trait = trusting
+		add_trait = shy
+		add_trait = temperate
+	}
+	8295.1.1 = {
+		employer = 600000040 #Illyrio
+		guardian = 77040 #Визерис
+	}
+	8298.1.1 = {
+		add_spouse = 300100 # Khal Drogo
+		guardian = 102 #Jorah
+		#add_trait = just
+		effect = { 
+			if = {
+				limit = { NOT = { start_date = 8298.10.10 } }
+				add_artifact = dragon_egg
+				new_artifact = {
+					set_artifact_flag = dany_dragon_eggs #special flag so she gets three canon dragons
+					set_name = [Root.GetDanyDragonEggsName]
+				}
+			}	
+		} 
+	}
+	8298.4.1 = { # Character development among the Dothraki
+		remove_trait = depressed
+		remove_trait = shy
+		add_trait = authoritative
+		add_trait = proud
+	}	
+	8298.8.1 = { # Визерис's death
+		add_trait= ambitious
+	} 
+	8298.10.10 = {  # Drogo's death
+		#add_trait = child_dragon
+		#add_trait = ruthless
+		add_trait = widowed
+		add_trait = dead_daenerys_crown
+		effect = {
+			remove_trait = dead_daenerys_crown
+			# set_character_flag = viserion
+			# set_character_flag = rhaegal
+			fertility = -0.2
+			character_event = { id = traditional_claims.199 days = 2 }
+			if = {
+				limit = { has_game_rule = { name = shattered_realms value = off } }
+				set_character_flag = dany_no_tame_dragon #Stop dany taming dragon before correct event 	
+				set_global_flag = aegon_invasion #prohibit young griff invasion until possible tangent is passed
+				set_character_flag = danys_eastern_quest
+				character_event = { id = clash_of_kings.5099 days = 50 } #check quest every 50 days
+				if = {
+					limit = { NOT = { has_landed_title = k_meereen } }
+					narrative_event = { id = clash_of_kings.50 }
+				}
+			}
+			else = {
+				if = {
+					limit = { has_landed_title = d_great_grass_sea }
+					activate_title = { status = no title = d_great_grass_sea }
+					d_great_grass_sea = { destroy_landed_title = THIS }
+				}	
+				if = {
+					limit = { has_landed_title = k_great_grass_sea }
+					activate_title = { status = no title = k_great_grass_sea }
+					k_great_grass_sea = { destroy_landed_title = THIS }
+				}
+			}
+			#employer = 13635000 #Xaro Xhoan Daxos	
+			c_102 = {
+				opinion = {
+					modifier = opinion_infatuated
+					who = ROOT
+					years = 100
+					multiplier = 2
+				}
+			}
+			any_courtier = {
+				limit = { 
+					NOT = { character = 102 }
+					culture = dothraki				
+				}
+				opinion = {
+					modifier = opinion_loyal_servant
+					who = ROOT
+				}		
+			}
+			any_courtier = {
+				limit = { 
+					culture = high_valyrian	
+					is_ruler = no
+					NOT = { father_even_if_dead = { always = yes } }
+				}
+				death = yes	
+			}
+			639 = { set_province_flag = dragon_intel_rebirth } # Lhazosh roughly where she hatched them
+			set_character_flag = dragon_intel_rebirth
+		}
+	}	
+	8300.1.1 = {
+		#guardian=0
+		effect = { 
+			if = {
+				limit = { has_game_rule = { name = shattered_realms value = off } }
+				606 = { #Spawn unsullied
+					ROOT = {
+						spawn_unit = {
+							province = PREV
+							home = PREV
+							owner = ROOT
+							troops = {
+								unsullied = { 3334 3334 }
+							}
+							attrition = 0.5
+						}
+						spawn_unit = {
+							province = PREV
+							home = PREV
+							owner = ROOT
+							troops = {
+								unsullied = { 3333 3333 }
+							}
+							attrition = 0.5
+						}
+						spawn_unit = {
+							province = PREV
+							home = PREV
+							owner = ROOT
+							troops = {
+								unsullied = { 3333 3333 }
+							}
+							attrition = 0.5
+						}
+					}
+					add_province_modifier = {
+						name = sacked
+						duration = 3650
+					}
+				}
+				set_character_flag = affc_scenario
+				wealth = 1000
+				prestige = 800			
+				narrative_event = { id = feast_for_crows.50 days = 1 }
+				613 = {
+					add_province_modifier = {
+						name = sacked
+						duration = 3650
+					}
+				}
+				612 = {
+					add_province_modifier = {
+						name = sacked
+						duration = 3650
+					}
+				}
+				616 = {
+					add_province_modifier = {
+						name = sacked
+						duration = 3650
+					}
+				}
+			}	
+			add_artifact = daenerys_crown
+			any_courtier = {
+				limit = {
+					trait = former_slave
+				}
+				opinion = { who = ROOT modifier = opinion_abolished_slavery_former_slave months = 2400 }
+			}
+			
+			#set_character_flag = enacted_seniority
+			c_16571013 = { #give hizdhar meereen city holding
+				if = {
+					limit = { is_alive = yes is_ruler = yes }
+					b_meereen = { 
+						gain_title = PREV 
+						c_16571013 = { capital = PREV }
+					} 
+				}	
+			}
+			any_vassal = {
+				limit = {
+					tier = BARON
+					culture = high_valyrian
+					is_theocracy = no
+				}
+				set_character_flag = cull_me_check
+				character_event = { id = high_valyrian.2 }
+			}
+		}
+		#remove_trait = child_dragon
+		#add_trait = wild_dragon
+		add_trait = liberator
+		add_trait = charismatic_negotiator
+	}
+}
+##Issue of Рейгар
+77042 = {
+	name="Рейнис" # daughter of Рейгар
+	female=yes
+	dynasty=496	
+	
+	religion="the_seven"
+	culture="salt_dornish"
+	
+	father=77039
+	mother=1001
+	
+	8280.8.1 = {
+		birth="8280.8.1"
+		effect = { 
+			culture = high_valyrian
+			add_character_modifier = {
+				name = "grandchild_of_incest"
+				duration = -1
+			}		
+			character_event = { id = high_valyrian.3 days = 2000 }
+		}
+	}
+	8282.1.1 = {
+		employer=77037
+	}
+	8283.6.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 207 # Ser Amory Lorch
+		}
+		culture = high_valyrian 
+	}
+}
+
+77043 = {
+	name="Эйгон" # aka Эйгон, son of Рейгар. Later claimaint Эйгон VI
+	dynasty=496		
+	dna="alafkzgfaav"
+	properties="0e000"
+
+	martial = 9
+	diplomacy = 7
+	intrigue = 4
+	stewardship = 5
+	
+	religion="the_seven"
+	culture="high_valyrian"
+
+	father=77039
+	mother=1001
+	
+	8282.1.1 = {
+		birth="8282.1.1"
+		effect = {
+			add_character_modifier = {
+				name = "grandchild_of_incest"
+				duration = -1
+			}
+			character_event = { id = high_valyrian.3 days = 2000 }
+		}
+		employer=77037
+	}
+	8283.6.1 = {
+		add_trait=has_missing
+		death = {
+			death_reason = death_execution
+			killer = 1230
+		}
+	}
+}
+###
+### HOUSE BAR EMMON (id = 49)
+### ID (for new character only) : 2000+ for canon character / 3000+ for non-canon character / 4000+ for wives
+###
+### Nacodaco
+
+3027049 = {
+	name="Робин"	# a lord
+	dynasty=49
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=3023049
+	mother=4023049
+
+	8259.1.1 = {birth="8259.1.1"}
+	8275.1.1 = {add_trait=knight add_trait=skilled_warrior}
+	8277.1.1 = {death="8277.1.1"}
+}
+3028049 = {
+	name="Ролланд"	# a lord
+	dynasty=49
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=3023049
+	mother=4023049
+
+	8262.1.1 = {birth="8262.1.1"}
+	8278.1.1 = {
+		add_trait=poor_warrior
+		effect = {
+			add_artifact = regular_flagship
+			new_artifact = { set_name = Swordfish }
+		}
+	}
+	8280.1.1 = {add_spouse=4028049}
+	8296.1.1 = {death="8296.1.1"}
+}
+4028049 = {
+	name="Джейн"
+	female=yes
+
+	religion="the_seven"
+	culture="stormlander"
+
+	8262.1.1 = {birth="8262.1.1"}
+}
+3029049 = {
+	name="Дюрам"	# canon, a lord
+	dynasty=49
+
+	martial = 2
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	learning = 5
+	
+	religion="the_seven"
+	culture="stormlander"
+	
+	add_trait=underhanded_rogue
+	add_trait=gluttonous
+	add_trait=slothful
+	add_trait=slow
+
+	father=3028049
+	mother=4028049
+
+	8284.1.1 = {birth="8284.1.1"}
+	8295.1.1 = {		
+		effect = {
+			set_variable = { which = physique_variable value = 10 }		
+		}
+	}
+	8296.1.1 = {
+		effect = {
+			add_artifact = regular_flagship
+			new_artifact = { set_name = Swordfish }
+		}
+	}
+	8298.10.28 = {
+		effect = { religion="rhllor" }
+	}
+	8299.7.1 = {
+		effect = { destroy_artifact = regular_flagship }	# Destroyed in Blackwater
+	}
+}
+3030049 = {
+	name="Джон"	# not a lord
+	dynasty=49
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=3028049
+	mother=4028049
+
+	8286.1.1 = {birth="8286.1.1"}
+	8298.10.28 = {
+		effect = { religion="rhllor" }
+	}
+}
+
+###
+### HOUSE BLOUNT (id = 22)
+### ID (for new character only) : 2000+ for canon character / 3000+ for non-canon character / 4000+ for wives
+###
+### Nacodaco
+3023022 = {
+	name="Джайлс"	# a lord
+	dynasty=22
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=4020022
+	mother=3020022
+
+	8251.1.1 = {birth="8251.1.1"}
+	8267.1.1 = {add_spouse=3022022}
+	8288.1.1 = {death = {death_reason = death_accident}}
+}
+
+3022022 = {
+	name="Сиренна"	# not a lord
+	female=yes
+
+	religion="the_seven"
+	culture="stormlander"
+
+	8249.1.1 = {birth="8249.1.1"}
+	8295.1.1 = {death="8295.1.1"}
+}
+2024022 = {
+	name="Борос"	# CANON, not a lord
+	dynasty=22
+
+	dna="cihbj0fleg0"
+	properties="kk0pikbebcb"
+
+	martial = 7
+	diplomacy = 5
+	intrigue = 4
+	stewardship = 5
+	learning = 5
+	
+	religion="the_seven"
+	culture="stormlander"
+
+	father=4020022
+	mother=3020022
+	
+	add_trait=ugly
+	add_trait=wroth
+	add_trait=craven
+	add_trait=gluttonous
+	add_trait=cruel
+
+	8253.1.1 = {birth="8253.1.1"}
+	8269.1.1 = {
+		add_trait=knight
+		add_trait=misguided_warrior
+		add_trait=trained_warrior
+	}
+	8284.1.1 = {
+		add_trait=kingsguard
+		employer=201302 # Barristan Selmy
+	}
+	8290.1.1 = {
+		give_nickname = nick_the_belly
+		add_trait = is_fat
+		add_trait=hedonist # According to Arys Oakheart, he frequently visited Street of Silk
+		add_trait=drunkard
+		effect = {
+			set_variable = { which = physique_variable value = 20 }		
+		}
+	}
+	8299.1.1 = { employer = 3190}		# Jaime Lannister
+	8299.4.1 = {
+		remove_trait=kingsguard
+		employer=9316 # Джоффри Baratheon
+	}
+	8299.7.1 = { 
+		add_trait=kingsguard
+		employer=3190 # Jaime Lannister
+	}
+}
+2025022 = {
+	name="Клэйтон"	# a lord
+	dynasty=22
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=3023022
+	mother=3022022
+
+	8273.1.1 = {birth="8273.1.1"}
+	8289.1.1 = {add_trait=knight add_trait=skilled_warrior}
+	8291.1.1 = {add_spouse=4025022}
+}
+4025022 = {
+	name="Мелисента"
+	female=yes
+
+	religion="the_seven"
+	culture="stormlander"
+
+	8273.1.1 = {birth="8273.1.1"}
+}
+2026022 = {
+	name="Лейла"	# not a lord
+	female=yes
+	dynasty=22
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=3023022
+	mother=3022022
+
+	8275.1.1 = {birth="8275.1.1"}
+	8289.1.1 = {death="8289.1.1"}
+}
+2027022 = {
+	name="Юстас"	# not a lord
+	dynasty=22
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=3023022
+	mother=3022022
+
+	8277.1.1 = {birth="8277.1.1"}
+	8293.1.1 = {add_trait=knight add_trait=poor_warrior}
+}
+2028022 = {
+	name="Моррос"	# not a lord
+	dynasty=22
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=3023022
+	mother=3022022
+
+	8280.1.1 = {birth="8280.1.1"}
+	8296.1.1 = {add_trait=skilled_warrior}
+}
+2029022 = {
+	name="Гилберт"	# not a lord
+	dynasty=22
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=2025022
+	mother=4025022
+
+	8293.1.1 = {birth="8293.1.1"}
+	8309.1.1 = {add_trait=poor_warrior}
+}
+2030022 = {
+	name="Моэлла"	# not a lord
+	female=yes
+	dynasty=22
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=2025022
+	mother=4025022
+
+	8296.1.1 = {birth="8296.1.1"}
+}
+
+###
+### HOUSE BRUNE (id = 42)
+### ID (for new character only) : 2000+ for canon character / 3000+ for non-canon character / 4000+ for wives
+###
+### Nacodaco
+
+2029042 = {
+	name="Юстас"	# canon, a lord
+	dynasty=42
+
+	religion="the_seven"
+	culture="crackclawmen"
+
+	father=3028042
+
+	8223.1.1 = {birth="8223.1.1"}
+	8239.1.1 = {add_trait=knight add_trait=skilled_warrior}
+	8241.1.1 = {add_spouse=4029042}
+}
+4029042 = {
+	name="Элла"
+	female=yes
+
+	religion="the_seven"
+	culture="crackclawmen"
+
+	8223.1.1 = {birth="8223.1.1"}
+	8290.1.1 = {death="8290.1.1"}
+}
+3032042 = {
+	name="Осмунд"	# not a lord
+	dynasty=42
+
+	religion="the_seven"
+	culture="crackclawmen"
+
+	father=2029042
+	mother=4029042
+
+	8260.1.1 = {birth="8260.1.1"}
+	8276.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8278.1.1 = {add_spouse=4032042}
+}
+4032042 = {
+	name="Элла"
+	female=yes
+
+	religion="the_seven"
+	culture="crackclawmen"
+
+	8260.1.1 = {birth="8260.1.1"}
+}
+3033042 = {
+	name="Пейт"	# not a lord
+	dynasty=42
+
+	religion="the_seven"
+	culture="crackclawmen"
+
+	father=2029042
+	mother=4029042
+
+	8264.1.1 = {birth="8264.1.1"}
+	8280.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8282.1.1 = {add_spouse=4033042}
+}
+4033042 = {
+	name="Алисанна"
+	female=yes
+
+	religion="the_seven"
+	culture="crackclawmen"
+
+	8264.1.1 = {birth="8264.1.1"}
+}
+3034042 = {
+	name="Барри"	# not a lord
+	dynasty=42
+
+	religion="the_seven"
+	culture="crackclawmen"
+
+	father=3032042
+	mother=4032042
+
+	8281.1.1 = {birth="8281.1.1"}
+	8297.1.1 = {add_trait=knight add_trait=trained_warrior}
+}
+3035042 = {
+	name="Уоллес"	# not a lord
+	dynasty=42
+
+	religion="the_seven"
+	culture="crackclawmen"
+
+	father=3033042
+	mother=4033042
+
+	8282.1.1 = {birth="8282.1.1"}
+	8298.1.1 = {add_trait=knight add_trait=poor_warrior}
+}
+
+###
+### HOUSE BRUNE (CADET BRANCH) (id = 42)
+### ID (for new character only) : 2000+ for canon character / 3000+ for non-canon character / 4000+ for wives
+###
+### Nacodaco
+
+3517042 = {
+	name="Беннард"	# canon, a lord
+	dynasty=42
+
+	religion="the_seven"
+	culture="crackclawmen"
+
+	mother=4514042
+	father=3514042
+
+	8272.1.1 = {birth="8272.1.1"}
+	8288.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8295.1.1 = {
+		add_claim = d_rosby
+		add_claim = c_rosby
+	}
+}
+3518042 = {
+	name="Мелисента"	# not a lord
+	female=yes
+	dynasty=42
+
+	religion="the_seven"
+	culture="crackclawmen"
+
+	mother=4514042
+	father=3514042
+
+	8275.1.1 = {birth="8275.1.1"}
+}
+3519042 = {
+	name="Рорж"	# not a lord
+	dynasty=42
+
+	religion="the_seven"
+	culture="crackclawmen"
+
+	father=3512042
+	mother=4512042
+
+	8252.1.1 = {birth="8252.1.1"}
+	8268.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8270.1.1 = {add_spouse=4519042}
+	8293.1.1 = {death="8293.1.1"}
+}
+4519042 = {
+	name="Кассана"
+	female=yes
+
+	religion="the_seven"
+	culture="crackclawmen"
+
+	8252.1.1 = {birth="8252.1.1"}
+	8293.1.1 = {death="8293.1.1"}
+}
+3520042 = {
+	name="Лотор"	# canon, not a lord
+	dynasty=42
+
+	dna="cgfbj0clab0"
+	properties="kj0eikbebcb"
+	
+	martial = 5
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 2
+	learning = 5
+
+	religion="the_seven"
+	culture="crackclawmen"
+
+	father=3519042
+	mother=4519042
+
+	add_trait=strong
+	
+	8270.1.1 = {birth="8270.1.1"}
+	8286.1.1 = {
+		add_trait=skilled_warrior
+		add_trait=tough_soldier
+		add_trait=shy
+		add_trait=brave
+		add_trait=kind
+		add_trait=content
+	}
+	8293.1.1 = {
+		employer=94043 #Littlefinger
+	}
+	8297.5.5={
+		employer=317 #Роберт I Baratheon
+	}
+	8298.10.28 = {
+		employer=9316 #Джоффри I "Baratheon"
+	}
+	8299.7.7 = {
+		add_trait=knight
+		give_nickname=nick_apple_eater
+	}
+	8299.11.5 = {
+		employer=94043 #Littlefinger
+		effect = {
+			k_vale = {
+				holder_scope = {
+					random_courtier = {
+						limit = {
+							is_female = yes
+							has_nickname = nick_stone
+							trait = fair
+						}
+						add_lover = ROOT #Mya Stone
+					}
+				}
+			}
+		}	
+	}
+}
+###
+### HOUSE BUCKWELL (id = 34)
+### ID (for new character only) : 2000+ for canon character / 3000+ for non-canon character / 4000+ for wives
+###
+### Nacodaco
+
+3030034 = {
+	name="Морган"	# a lord
+	dynasty=34
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=3026034
+	mother=4026034
+
+	8261.1.1 = {birth="8261.1.1"}
+	8277.1.1 = {add_trait=poor_warrior}
+	8279.1.1 = {add_spouse=4030034}
+}
+4030034 = {
+	name="Миленда"
+	female=yes
+
+	religion="the_seven"
+	culture="riverlander"
+
+	8261.1.1 = {birth="8261.1.1"}
+}
+2031034 = {
+	name="Джармен"	# CANON, not a lord
+	dynasty=34
+
+	martial = 5
+	
+	religion="the_seven"
+	culture="riverlander"
+
+	father=3026034
+	mother=4026034
+	
+	add_trait=patient
+	add_trait=gregarious
+
+	8263.1.1 = {birth="8263.1.1"}
+	8279.1.1 = {
+		add_trait=tough_soldier
+		add_trait=trained_warrior	
+		add_trait=knight
+	}
+	8280.1.1 = {
+		add_trait=nightswatch
+		effect = {
+			add_character_modifier = {
+				name = nw_ranger
+				duration = -1
+			}
+		}
+	}
+	8299.12.1 = {death = {death_reason = death_battle}}	# bridge of skulls
+}
+3032034 = {
+	name="Малесса"	# not a lord
+	female=yes
+	dynasty=34
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=3026034
+	mother=4026034
+
+	8266.1.1 = {birth="8266.1.1"}
+}
+3035034 = {
+	name="Элла"	# not a lord
+	female=yes
+	dynasty=34
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=3030034
+	mother=4030034
+
+	8279.1.1 = {birth="8279.1.1"}
+	8326.1.1 = {death="8326.1.1"}
+}
+3036034 = {
+	name="Флориан"	# not a lord
+	dynasty=34
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=3030034
+	mother=4030034
+
+	8280.1.1 = {birth="8280.1.1"}
+	8296.1.1 = {add_trait=knight add_trait=skilled_warrior}
+}
+3037034 = {
+	name="Кварлтон"	# not a lord
+	dynasty=34
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=3030034
+	mother=4030034
+
+	8282.1.1 = {birth="8282.1.1"}
+	8298.1.1 = {add_trait=knight add_trait=trained_warrior}
+}
+3038034 = {
+	name="Миленда"	# not a lord
+	female=yes
+	dynasty=34
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=3030034
+	mother=4030034
+
+	8285.1.1 = {birth="8285.1.1"}
+}
+
+###
+### HOUSE BYRCH (id = 39)
+### ID (for new character only) : 2000+ for canon character / 3000+ for non-canon character / 4000+ for wives
+###
+### Nacodaco
+3027039 = {
+	name="Клэйтон"	# a lord
+	dynasty=39
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=3023039
+
+	8255.1.1 = {birth="8255.1.1"}
+	8271.1.1 = {add_trait=knight add_trait=skilled_warrior}
+	8273.1.1 = {add_spouse=4027039}
+	8287.1.1 = {death="8287.1.1"}
+}
+4027039 = {
+	name="Джейн"
+	female=yes
+
+	religion="the_seven"
+	culture="riverlander"
+
+	8255.1.1 = {birth="8255.1.1"}
+	8287.1.1 = {death="8287.1.1"}
+}
+2029039 = {
+	name="Бальман"	# CANON, not a lord
+	dynasty=39
+	dna=afjgbcfjfbb #blond
+	properties=vd0cek #moustache and receding hair
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=3023039
+	
+	add_trait=fair #once handsome
+	add_trait=tough_soldier
+	add_trait=honest
+	add_trait=trusting
+	add_trait=proud
+	add_trait=gluttonous
+	add_trait=chaste #shuns his wife's bed
+	
+	8261.1.1 = {birth="8261.1.1"}
+	8277.1.1 = {
+		add_trait=knight	
+		add_trait=skilled_warrior
+		add_trait=duelist #renowned jouster once		
+	}
+	8291.1.1={
+		add_trait = is_fat
+		effect = {
+			set_variable = { which = physique_variable value = 15 }	#has pot belly
+		}
+	}
+	8300.3.1 = {
+		death = {
+			death_reason = death_duel
+			killer = 200035 # Бронн
+		}
+	}
+}
+3032039 = {
+	name="Деван"	# a lord
+	dynasty=39
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=3027039
+	mother=4027039
+
+	8282.1.1 = {birth="8282.1.1"}
+	8298.1.1 = {add_trait=knight add_trait=skilled_warrior}
+}
+3033039 = {
+	name="Талла"	# not a lord
+	female=yes
+	dynasty=39
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=3027039
+	mother=4027039
+
+	8284.1.1 = {birth="8284.1.1"}
+}
+3034039 = {
+	name="Меррел"	# not a lord
+	dynasty=39
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=3027039
+	mother=4027039
+
+	8285.1.1 = {birth="8285.1.1"}
+	8301.1.1 = {add_trait=knight add_trait=master_warrior}
+}
+3035039 = {
+	name="Саймон"	# not a lord
+	dynasty=39
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=3027039
+	mother=4027039
+
+	8286.1.1 = {birth="8286.1.1"}
+	8302.1.1 = {add_trait=trained_warrior}
+}
+
+###
+### HOUSE BYWATER (id = 45)
+### ID (for new character only) : 2000+ for canon character / 3000+ for non-canon character / 4000+ for wives
+###
+### Nacodaco
+3027045 = {
+	name="Донтос"	# a lord
+	dynasty=45
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=3023045
+	mother=4023045
+
+	8255.1.1 = {birth="8255.1.1"}
+	8271.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8273.1.1 = {add_spouse=4027045}
+	8295.1.1 = {death="8295.1.1"}
+}
+4027045 = {
+	name="Малора"
+	female=yes
+
+	religion="the_seven"
+	culture="stormlander"
+
+	8255.1.1 = {birth="8255.1.1"}
+	8295.1.1 = {death="8295.1.1"}
+}
+3028045 = {
+	name="Монфорд"	# not a lord
+	dynasty=45
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=3023045
+	mother=4023045
+
+	8256.1.1 = {birth="8256.1.1"}
+	8272.1.1 = {add_trait=knight add_trait=trained_warrior}
+}
+3029045 = {
+	name="Гилберт"	# a lord
+	dynasty=45
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=3027045
+	mother=4027045
+
+	8288.1.1 = {birth="8288.1.1"}
+	8304.1.1 = {add_trait=knight add_trait=skilled_warrior}
+}
+3030045 = {
+	name="Арианна"	# not a lord
+	female=yes
+	dynasty=45
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=3027045
+	mother=4027045
+
+	8289.1.1 = {birth="8289.1.1"}
+}
+2033045 = {
+	name="Джаселин"	# CANON
+	dynasty=45
+
+	#dna="bcbgi0glab0"
+	#properties="kb0eikbebcb"
+	dna="agehdjhbgec"
+	properties="xm0d0k00000000ea"
+	
+	
+	martial = 7 # 16
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 4
+	learning = 5
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=3024045
+
+	8255.1.1 = {birth="8255.1.1"}
+	8271.1.1 = {
+		add_trait=tough_soldier
+		add_trait=skilled_warrior
+		add_trait=brave
+		add_trait=honest
+		add_trait=temperate
+		employer=77037 # Эйрис II Targaryen
+	}
+	8284.1.1 = {employer = 317} # Роберт Baratheon
+	8289.6.1 = { # Greyjoy's Rebellion
+		add_trait=knight
+		effect = {
+			if = {
+				limit = { has_dlc = "Reapers" }
+				add_trait = one_handed
+				add_artifact=prosthetic_hand_metal 
+			}
+			if = {
+				limit = { NOT = { has_dlc = "Reapers" } }
+				add_trait = "disfigured_AGOT"
+			}
+		}
+		give_nickname = nick_ironhand
+	} 
+	8298.10.28 = {
+		employer = 9316 #Джоффри I "Baratheon"
+	}
+	8299.2.1={
+		employer = 0 #Gold Cloak Commander
+	}
+	8299.7.1 = {
+		add_trait = one_handed
+		death = {
+			death_reason = death_battle # Died at the Battle of the Blackwater
+			killer = 4317 # Stannis Baratheon
+		}
+	}
+}
+
+###
+### HOUSE CELTIGAR (id = 50)
+### ID (for new character only) : 2000+ for canon character / 3000+ for non-canon character / 4000+ for wives
+###
+### Nacodaco
+
+3032050 = {
+	name="Алисанна"	# not a lord
+	female=yes
+	dynasty=50
+
+	religion="the_seven"
+	culture="western_valyrian"
+
+	father=3031050
+	mother=4031050
+
+	8245.1.1 = {birth="8245.1.1"}
+	8291.1.1 = {death="8291.1.1"}
+}
+2033050 = {
+	name="Ардриан"	# canon, a lord
+	dynasty=50
+	
+	stewardship = 9
+
+	religion="the_seven"
+	culture="western_valyrian"
+
+	father=3031050
+	mother=4031050
+
+	8243.1.1 = {
+		birth="8243.1.1"
+	}
+	8259.1.1 = {
+		add_trait = knight
+		add_trait = trained_warrior
+		add_trait = proud
+		add_trait = greedy
+		add_trait = cynical
+		add_trait = charismatic_negotiator
+		give_nickname = nick_the_red_crab
+	}
+	8261.1.1 = {add_spouse=4033050}
+	8280.1.1 = {
+		wealth = 400
+		add_trait=crabspincer
+		effect = {
+			add_artifact = regular_flagship
+			new_artifact = { set_name = Red_Claw }
+		}
+	}
+	8299.7.1 = {
+		effect = {
+			e_iron_throne = { #Imprisoned
+				holder_scope = {
+					ROOT = {
+						imprison = PREV
+						remove_character_modifier = the_dungeon
+						set_character_flag = captured_in_battle
+						add_character_modifier = { 
+							name = house_arrest
+							duration = -1
+						}
+					}
+				}
+			}	
+			set_character_flag = neutral
+			clr_character_flag = supporting_king
+			clr_character_flag = against_king
+			any_demesne_title = {
+				limit = { 
+					OR = {
+						tier = COUNT
+						tier = DUKE
+					}
+				}				
+				set_variable = { which = "de_facto_kingdom" value = 8 } #stormlands
+			}
+			destroy_artifact = regular_flagship	# Destroyed in Blackwater
+		}
+	}
+}
+4033050 = {
+	name="Моэлла"
+	female=yes
+
+	religion="the_seven"
+	culture="western_valyrian"
+
+	8243.1.1 = {birth="8243.1.1"}
+}
+
+##Issue of Адриан
+3036050 = {
+	name="Марик"	# not a lord
+	dynasty=50
+
+	religion="the_seven"
+	culture="western_valyrian"
+
+	father=2033050
+	mother=4033050
+
+	8270.1.1 = {birth="8270.1.1"}
+	8286.1.1 = {add_trait=knight add_trait=poor_warrior}
+}
+3034050 = {
+	name="Миленда"	# not a lord
+	female=yes
+	dynasty=50
+
+	religion="the_seven"
+	culture="western_valyrian"
+
+	father=2033050
+	mother=4033050
+
+	8272.1.1 = {birth="8272.1.1"}
+}
+3038050 = {
+	name="Гаррольд"	# Gold Cloak
+	dynasty=50
+	
+	martial = 6
+
+	religion="the_seven"
+	culture="western_valyrian"
+
+	father=2033050
+	mother=4033050
+	
+	add_trait = tough_soldier
+
+	8277.1.1 = {birth="8277.1.1"}
+	8293.1.1 = {
+		add_trait=knight 
+		add_trait=trained_warrior
+		effect = {
+			b_kings_landing = {
+				holder_scope = {
+					ROOT = { move_character = PREV }
+				}
+			}
+		}
+	}
+	8298.11.2 = { #killed on day of ned's execution
+		death = { 
+			death_reason = death_duel
+			killer = 12158 #Mors Westford
+		}
+	}
+}
+3035050 = {
+	name="Малора"	# not a lord
+	female=yes
+	dynasty=50
+
+	religion="the_seven"
+	culture="western_valyrian"
+
+	father=2033050
+	mother=4033050
+
+	8276.1.1 = {birth="8276.1.1"}
+}
+
+3037050 = {
+	name="Терренс"	# not a lord
+	dynasty=50
+
+	religion="the_seven"
+	culture="western_valyrian"
+
+	father=2033050
+	mother=4033050
+	
+	add_trait = proud
+	
+	8277.1.1 = {birth="8277.1.1"}
+	8291.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8297.1.1={
+		add_trait = nightswatch
+		death = { death_reason = death_battle }
+	}
+}
+###
+### HOUSE CHELSTED (id = 25)
+### ID (for new character only) : 2000+ for canon character / 3000+ for non-canon character / 4000+ for wives
+###
+### Nacodaco
+
+2029025 = {
+	name="Кварлтон"	# canon, a lord (Hand of the King of Эйрис II)
+	dynasty=25
+
+	martial = 5
+	diplomacy = 5
+	intrigue = 4
+	stewardship = 10
+	learning = 5
+	
+	religion="the_seven"
+	culture="crownlander"
+
+	father=3027025
+	mother=4027025
+
+	8250.1.1 = {birth="8250.1.1"}
+	8266.1.1 = {
+		add_trait = knight
+		add_trait = proud
+		add_trait = craven
+		add_trait = paranoid
+		add_trait = just
+		add_trait = fortune_builder
+		add_trait = skilled_warrior
+	}
+	8268.1.1 = {add_spouse=4029025}
+	8283.5.1 = {
+		death = {
+			death_reason = death_execution_burning
+			killer = 77037 # Эйрис II Targaryen
+		}
+	}
+}
+4029025 = {
+	name="Мэри"
+	female=yes
+
+	religion="the_seven"
+	culture="crownlander"
+
+	8250.1.1 = {birth="8250.1.1"}
+	8284.1.1 = {death="8284.1.1"}
+}
+3030025 = {
+	name="Аллисер"	# not a lord
+	dynasty=25
+
+	religion="the_seven"
+	culture="crownlander"
+
+	father=3027025
+	mother=4027025
+
+	8252.1.1 = {birth="8252.1.1"}
+	8268.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8281.1.1 = {death="8281.1.1"}
+}
+3031025 = {
+	name="Дениза"	# not a lord
+	female=yes
+	dynasty=25
+
+	religion="the_seven"
+	culture="crownlander"
+
+	father=3027025
+	mother=4027025
+
+	8253.1.1 = {birth="8253.1.1"}
+	8274.1.1 = {death="8274.1.1"}
+}
+3032025 = {
+	name="Донтос"	# not a lord
+	dynasty=25
+
+	religion="the_seven"
+	culture="crownlander"
+
+	father=3027025
+	mother=4027025
+
+	8254.1.1 = {birth="8254.1.1"}
+	8270.1.1 = {add_trait=trained_warrior}
+	8296.1.1 = {death="8296.1.1"}
+}
+3033025 = {
+	name="Сиренна"	# not a lord
+	female=yes
+	dynasty=25
+
+	religion="the_seven"
+	culture="crownlander"
+
+	father=2029025
+	mother=4029025
+
+	8277.1.1 = {birth="8277.1.1"}
+}
+3034025 = {
+	name="Маллиард"	# a lord
+	dynasty=25
+
+	religion="the_seven"
+	culture="crownlander"
+
+	father=2029025
+	mother=4029025
+
+	8278.1.1 = {birth="8278.1.1"}
+	8294.1.1 = {add_trait=knight add_trait=trained_warrior}
+}
+3035025 = {
+	name="Уоллес"	# not a lord
+	dynasty=25
+
+	religion="the_seven"
+	culture="crownlander"
+
+	father=2029025
+	mother=4029025
+
+	8281.1.1 = {birth="8281.1.1"}
+	8297.1.1 = {add_trait=knight add_trait=trained_warrior}
+}
+
+###
+### HOUSE CHYTTERING (id = 28)
+### ID (for new character only) : 2000+ for canon character / 3000+ for non-canon character / 4000+ for wives
+###
+### Nacodaco
+
+2030028 = {
+	name="Джареми"	# canon, a lord
+	dynasty=28
+	
+	martial = 1
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 2
+	learning = 5
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=3028028
+	mother=4028028
+
+	8255.1.1 = {birth="8255.1.1"}
+	8271.1.1 = {
+		add_trait=knight
+		add_trait=trained_warrior
+		add_trait=cynical
+		add_trait=charismatic_negotiator
+	}
+	8273.1.1 = {add_spouse=4030028}
+	8299.2.11 = {
+		raise_levies = {
+			location = 304 #Storms End
+			force_mult = 1
+		}
+		effect = {
+			set_character_flag = neutral
+			clr_character_flag = supporting_king
+			clr_character_flag = against_king
+			d_dragonstone = {
+				holder_scope = {
+					ROOT = { join_attacker_wars = PREV }
+				}
+			}
+		}
+	}
+	8299.7.1 = {
+		raise_levies = {
+			location = 304 #Storms End
+			dismiss = yes
+			force_mult = 1
+		}
+		death = {
+			death_reason = death_battle # Died at the Battle of the Blackwater
+			killer = 5190
+		}
+	}
+}
+4030028 = {
+	name="Марея"
+	female=yes
+
+	religion="the_seven"
+	culture="stormlander"
+
+	8255.1.1 = {birth="8255.1.1"}
+	8299.1.1 = {death="8299.1.1"}
+}
+2031028 = {
+	name="Люкос"	# canon, a lord
+	dynasty=28
+	
+	martial = 8
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 7
+	learning = 7
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=2030028
+	mother=4030028
+
+	8284.1.1 = {birth="8284.1.1"}
+	8299.1.1 = {
+		add_trait=knight
+		add_trait=trained_warrior
+		add_trait=kind
+		add_trait=honest
+		add_trait=tough_soldier
+	}
+	8299.7.1 = {
+		raise_levies = {
+			location = 221 #Dragonstone
+			force_mult = 1
+		}
+		effect = {
+			set_character_flag = against_king
+			set_character_flag = against_loyal_liege
+			opinion = {
+				modifier = opinion_loyal_servant
+				who = 4317
+			}			
+			k_stormlands = {
+				holder_scope = { 
+					reverse_opinion = {
+						modifier = opinion_with_rebel_leader
+						who = ROOT
+						years = 100
+					}
+					ROOT = { join_attacker_wars = PREV }
+				}
+			}
+		}
+	}
+	8299.7.5 = {
+		raise_levies = {
+			dismiss = yes
+			location = 221 #Dragonstone
+			force_mult = 1
+		}
+	}
+	8300.3.1 = {
+		raise_levies = {
+			location = 17 #Castle Black
+			force_mult = 1
+		}
+	}
+}
+3032028 = {
+	name="Алисанна"	# not a lord
+	female=yes
+	dynasty=28
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=2030028
+	mother=4030028
+
+	8287.1.1 = {birth="8287.1.1"}
+}
+3033028 = {
+	name="Мэри"	# not a lord
+	female=yes
+	dynasty=28
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=2030028
+	mother=4030028
+
+	8290.1.1 = {birth="8290.1.1"}
+}
+3034028 = {
+	name="Джонквиль"	# not a lord
+	female=yes
+	dynasty=28
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=2030028
+	mother=4030028
+
+	8291.1.1 = {birth="8291.1.1"}
+}
+3035028 = {
+	name="Джотос"	# not a lord
+	dynasty=28
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=2030028
+	mother=4030028
+
+	8293.1.1 = {birth="8293.1.1"}
+	8309.1.1 = {add_trait=knight add_trait=skilled_warrior}
+}
+
+###
+### HOUSE CRESSEY (id = 27)
+### ID (for new character only) : 2000+ for canon character / 3000+ for non-canon character / 4000+ for wives
+###
+###
+
+27 = {
+	name="Рейнор"
+	dynasty=27
+	
+	martial = 5
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 7
+	learning = 5
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=6003927
+	mother=5003927
+	
+	add_trait="flamboyant_schemer"
+		
+	8262.1.1 = {
+		birth="8262.1.1"
+	}
+	8278.1.1 = {
+		add_trait="poor_warrior"
+		add_trait="knight"
+	}
+}
+
+6004027 = {
+	name="Гаррольд"
+	dynasty=27
+
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=6003927
+	mother=5003927
+		
+	8264.1.1 = {
+		birth="8264.1.1"
+	}
+	8278.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}
+}
+
+### *House without land*
+### HOUSE RAMBTON (id = 331)
+### ID (for new character only) : 200+ for canon character / 300+ for non-canon character / 400+ for wives
+###
+
+200331 = {		
+	name="Хьюбард"
+	dynasty=331
+	
+	religion="the_seven"
+	culture="western_valyrian"
+	
+	add_trait="zealous"
+	add_trait="brave"
+	add_trait="proud"
+
+	father=300331
+	
+	8247.1.1 = {birth="8247.1.1"}
+	8263.1.1 = {
+		add_spouse = 4200331
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}
+	8299.1.1 = { death = {death_reason = death_battle} }
+}
+4200331 = {		
+	name="Алис"
+	female=yes
+
+	religion="the_seven"
+	culture="crownlander"
+
+	8247.1.1 = {birth="8247.1.1"}
+}
+201331 = {		
+	name="Халет"	
+	dynasty=331
+	
+	religion="the_seven"
+	culture="western_valyrian"
+
+	father=200331
+	mother=4200331
+
+	8265.1.1 = {birth="8265.1.1"}
+	8281.1.1 = {
+		add_trait="poor_warrior"
+		add_trait="knight"
+	}
+	8299.1.1 = { death = {death_reason = death_battle}}
+}
+202331 = {		
+	name="Престир"	
+	dynasty=331
+	
+	religion="the_seven"
+	culture="western_valyrian"
+
+	father=200331
+	mother=4200331
+
+	8268.1.1 = {birth="8268.1.1"}
+	8284.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}
+	8299.1.1 = {
+		effect = {
+			c_dragonstone = {
+				holder_scope = {
+					ROOT = { imprison = PREV }
+					opinion = {
+						modifier = opinion_traitor
+						who = ROOT
+					}
+					reverse_opinion = {
+						modifier = opinion_vengeance
+						who = ROOT
+					}
+				}
+			}
+		}
+	}
+	8299.7.1 = {
+		death = {
+			death_reason = death_sacrificed_rhllor
+			killer = 4317 # burned by mellisandre
+		}
+	}
+}
+203331 = {		
+	name="Маренс"	
+	dynasty=331
+	
+	religion="the_seven"
+	culture="western_valyrian"
+
+	father=200331
+	mother=4200331
+
+	8271.1.1 = {birth="8271.1.1"}
+	8287.1.1 = {
+		add_trait="poor_warrior"
+		add_trait="knight"
+	}
+	8299.1.1 = {
+		effect = {
+			c_dragonstone = {
+				holder_scope = {
+					ROOT = { imprison = PREV }
+					opinion = {
+						modifier = opinion_traitor
+						who = ROOT
+					}
+					reverse_opinion = {
+						modifier = opinion_vengeance
+						who = ROOT
+					}
+				}
+			}
+		}
+	}
+	8299.7.1 = {
+		death = {
+			death_reason = death_sacrificed_rhllor
+			killer = 4317 # burned by mellisandre
+		}
+	}
+}
+
+### *House without land*
+### HOUSE KETTLEBLACK (id = 352)
+### ID (for new character only) : 200+ for canon character / 300+ for non-canon character
+###
+### Nacodaco
+
+200352 = {
+	name="Освелл"	# canon, founder
+	dynasty=352
+
+	religion="the_seven"
+	culture="crownlander"
+	
+	intrigue = 7 # friend of Littlefinger
+	
+	add_trait="quick"
+	
+	employer=94042
+	
+	8247.1.1 = {birth="8247.1.1"}
+	8263.1.1 = {add_trait="knight"}
+	8278.1.1 = {
+		employer=94043 #Petyr Baelish
+	}
+}
+201352 = {
+	name="Осмунд"	# canon, Освелл's first son
+	dynasty=352
+
+	dna="ambkg0klga0"
+	properties="kr0pdkbebcb"
+
+	religion="the_seven"
+	culture="crownlander"
+	
+	father=200352
+	
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="deceitful"
+	add_trait="envious"
+	add_trait="lustful"
+	add_trait="arbitrary"
+	add_trait="strong"
+	
+	employer=94042
+	
+	8270.1.1 = {birth="8270.1.1"}
+	8278.1.1 = {
+		employer=94043 #Petyr Baelish
+	}
+	8286.1.1 = {
+		add_trait="knight"
+		add_trait="charismatic_negotiator"
+		# add_trait="misguided_warrior"
+		add_trait="poor_warrior"
+	}
+	8292.1.1 = {
+	    remove_trait="poor_warrior" 
+		add_trait="trained_warrior"
+	}
+	8298.10.28={employer=9316} # Джоффри Baratheon
+	8299.4.1 = {	# Joined the kingsguard.
+		add_trait="kingsguard"
+		employer = 3190
+	}
+	8300.5.17 = { 
+		effect = {
+			e_iron_throne = {
+				holder_scope = { 
+					ROOT = { imprison = PREV } 
+				}
+			}
+		}
+	}
+}
+202352 = {
+	name="Осфрид"	# canon, Освелл's second son
+	dynasty=352
+
+	religion="the_seven"
+	culture="crownlander"
+
+	dna="akjkg0klga0"
+	properties="ke0elkbebcb"
+	
+	father=200352
+	
+	add_trait="cruel"
+	add_trait="wroth"
+	add_trait="cynical"
+	add_trait="rude"
+	add_trait="lustful"
+	add_trait="arbitrary"
+	
+	employer=94042
+	
+	8272.1.1 = {birth="8272.1.1"}
+	8278.1.1 = {
+		employer=94043 #Petyr Baelish
+	}
+	8288.1.1 = {
+		add_trait="charismatic_negotiator"
+		# add_trait="misguided_warrior"
+		add_trait="poor_warrior"
+	}
+	8298.10.28 = { employer=9316 } # Джоффри Baratheon
+	8300.1.1 ={
+		add_trait="knight"
+		employer = 0 #Gold Cloak Commander
+	}
+	8300.5.17 = { 
+		employer = 7316 #Томмен I "Baratheon"
+		effect = {
+			e_iron_throne = {
+				holder_scope = { 
+					ROOT = { imprison = PREV } 
+				}
+			}
+		}
+	}
+}
+203352 = {
+	name="Осни"	# canon, Освелл's third son
+	dynasty=352
+
+	dna="akakg0kjga0"
+	properties="kb0i0kbebcb"
+
+	religion="the_seven"
+	culture="crownlander"
+	
+	father=200352
+	
+	add_trait="cruel"
+	add_trait="ruthless"
+	add_trait="trusting"
+	add_trait="lustful"
+	add_trait="arbitrary"
+	
+	employer=94042
+	
+	8275.1.1 = {birth="8275.1.1"}
+	8278.1.1 = {
+		employer=94043 #Petyr Baelish
+	}
+	8291.1.1 = {add_trait="amateurish_plotter" add_trait="poor_warrior"}
+	8298.10.28={employer=9316} # Джоффри Baratheon
+	8300.1.1 = {add_trait="knight"}
+	8300.1.2 = { employer = 7316 } #Томмен I "Baratheon"
+	8300.5.17 = { 
+		effect = {
+			k_the_most_devout = {
+				holder_scope = { 
+					ROOT = { imprison = PREV } 
+				}
+			}
+		}
+	}
+}
+
+###
+### HOUSE SLYNT (id = 353)
+### ID (for new character only) : 200+ for canon character / 300+ for non-canon character / 400+ for wives
+###
+### Nacodaco
+
+200353 = {
+	name="Янос"	# Founder, canon
+	dynasty=353
+
+	dna="dicjg0hlba0"
+	properties="kk0q0kbebcb"
+
+	religion="the_seven"
+	culture="crownlander"
+		
+	add_trait="indulgent_wastrel"
+
+	add_trait="gluttonous"
+	add_trait="greedy"
+	add_trait="wroth"
+	add_trait="deceitful"
+	add_trait="ambitious"
+	add_trait="arbitrary"
+	add_trait="ruthless"
+	employer = 77036
+	8260.1.1 = { birth="8260.1.1" }
+	8262.1.1={
+		employer = 77037		
+	}
+	8276.1.1 = { 
+		add_spouse=400353 
+		add_trait="trained_warrior"
+	}
+	8283.6.1={
+		employer = 0 #Gold Cloak Commander
+		add_trait=knight
+	}	
+	8290.1.1 = {
+		add_trait = is_fat
+		effect = {
+			set_variable = { which = physique_variable value = 15 }		
+		}
+	}
+	8299.1.4={
+		add_trait="nightswatch"
+		remove_spouse=400353 
+		add_claim=d_harrenhal
+		add_claim=c_harrenhal
+	}
+	# 8299.7.8 = { #Lord Commander Election
+		# effect = {
+			# if = {
+				# limit = { has_landed_title = d_nightswatch }
+				# set_global_flag = new_NW_LC_needed
+				# character_event = { id = nightswatch.2900 days = 1 }
+			# }
+		# }	
+	# }
+	8300.4.1 = {
+		death = {
+			death_reason = death_execution_beheading
+			killer=1002059 # Джон Snow
+		}
+	}
+}
+400353 = {
+	name="Эленда"
+	female=yes
+
+	religion="the_seven"
+	culture="crownlander"
+	
+	8260.1.1 = { birth="8260.1.1"}
+	8298.10.28 = {
+		employer = 9316 
+	}
+	8300.1.2 = {
+		employer = 7316 
+	}
+}
+201353 = {
+	name="Моррос"	# canon, Янос's first son
+	dynasty=353
+
+	religion="the_seven"
+	culture="crownlander"
+	
+	father=200353
+	mother=400353
+	employer = 77037		
+	
+	add_trait="ugly"
+	
+	8282.1.1 = {birth="8282.1.1"}
+	8283.1.1 = { employer=317 } #Роберт Baratheon
+	8298.10.28 = {
+		employer=200353
+		add_trait=squire
+		add_trait=poor_warrior
+	}
+	8299.1.4 = {
+		add_claim=d_harrenhal
+		add_claim=c_harrenhal
+		employer = 9316 
+	}
+	8300.1.2 = {
+		employer = 7316 
+	}
+}
+202353 = {
+	name="Джотос"	# canon, Янос's second son
+	dynasty=353
+
+	religion="the_seven"
+	culture="crownlander"
+	
+	father=200353
+	mother=400353
+	
+	8284.1.1 = {birth="8284.1.1"}
+	8284.1.1 = { employer=317} #Роберт Baratheon
+	8298.10.28 = {
+		employer=200353
+		add_trait=squire
+	}
+	8299.1.4 = {
+		employer = 9316 
+	}
+	8300.1.2 = {
+		employer = 7316 
+	}
+}
+203353 = {
+	name="Данос"	# canon, Янос's third son
+	dynasty=353
+
+	religion="the_seven"
+	culture="crownlander"
+	
+	father=200353
+	mother=400353
+	employer=317
+	
+	8286.1.1 = { birth="8286.1.1"}
+	8298.10.28 = {
+		employer=200353
+	}
+	8299.1.4 = {
+		employer = 9316 
+	}
+	8300.1.2 = {
+		employer = 7316 
+	}
+}
+204353 = {
+	name="Джейн"	# canon, Янос's daughter
+	female=yes
+	dynasty=353
+
+	religion="the_seven"
+	culture="crownlander"
+	
+	father=200353
+	mother=400353
+	employer=317
+	
+	8288.1.1 = {birth="8288.1.1"}
+	8298.10.28 = {
+		employer=200353
+	}
+	8299.1.4 = {
+		employer = 9316 
+	}
+	8300.1.2 = {
+		employer = 7316 
+	}
+}
+
+###Mallery
+1026 = {
+	name="Лотар"
+	dynasty=26
+	
+	martial = 5
+	diplomacy = 5
+	intrigue = 2
+	stewardship = 5
+	learning = 5
+	religion="the_seven"
+	culture="riverlander"
+	add_trait="shy"
+	add_trait="tough_soldier"
+	
+	father=6004426
+	mother=5004426
+
+	8256.1.1 = {
+		birth="8256.1.1"
+	}
+	8272.1.1 = {
+		add_spouse = 10026
+		add_trait="poor_warrior"
+		add_trait="knight"
+	}
+	8298.10.28 = {
+		# Killed at the Battle of the Mummer's Ford
+		death = {
+			death_reason = death_battle
+			killer = 1230
+		}
+	}
+}
+10026 = {
+	name="Элана"
+	female=yes
+	add_trait="naive_appeaser"
+	religion="the_seven"
+	culture="riverlander"
+	
+	8256.1.1 = {
+		birth="8256.1.1"
+	}
+}
+10126 = {
+	name="Тристифер"
+	dynasty=26
+
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=1026
+	mother=10026
+	
+	8276.1.1 = {
+		birth="8276.1.1"
+	}
+	8292.1.1 = {
+		add_trait="poor_warrior"
+		add_trait="knight"
+	}
+}
+
+###Thorne
+9030 = {
+	name="Джоффри"	
+	dynasty=30
+	
+	martial = 5
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	learning = 5
+	religion="the_seven"
+	culture="riverlander"
+	add_trait="paranoid"
+	
+	father=6002930
+	
+	8237.1.1 = {
+		birth="8237.1.1"
+	}
+	8254.1.1={
+		add_spouse=77101
+		add_trait="poor_warrior"
+		add_trait="knight"
+	}
+	8276.1.1 = {
+		death="8276.1.1"
+	}
+}
+77101 = {
+	name="Мелиан"			# random wife
+	female=yes
+	
+	martial=4
+	diplomacy=3
+	intrigue=2
+	stewardship=3
+	religion="the_seven"
+	culture="riverlander"
+	8238.1.1={
+		birth="8238.1.1"
+	}
+	8300.1.1={
+		death="8300.1.1"
+	}
+}
+30 = {
+	name="Денли"
+	dynasty=30
+	
+	martial = 3
+	diplomacy = 5
+	intrigue = 3
+	stewardship = 4
+	learning = 5
+	religion="the_seven"
+	culture="riverlander"
+	add_trait="deceitful"
+	add_trait="charismatic_negotiator"
+	add_trait="trained_warrior"
+	father=9030
+	mother=77101
+	8256.1.1 = {
+		birth="8256.1.1"
+	}
+	8272.1.1={
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}
+	8320.1.1={
+		death="8320.1.1"
+	}
+}
+1030 = {
+	name="Аллисер"	
+	dynasty=30
+
+	dna="dhbdg0kmgg0"
+	properties="kj0qikbebcb"
+	
+	martial = 5
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 1
+	learning = 5
+	religion="the_seven"
+	culture="riverlander"
+	add_trait="cruel"
+	add_trait="rude"
+	add_trait="arbitrary"
+	add_trait="proud"
+	add_trait="skilled_tactician"
+	father=9030
+	mother=77101
+	8257.1.1 = {
+		birth="8257.1.1"
+	}
+	8273.1.1 = {
+		add_trait="skilled_warrior"
+		add_trait="knight"
+	}
+	8285.1.1={
+		add_trait="nightswatch"
+		effect = { 
+			add_character_modifier = {
+				name = nw_ranger
+				duration = -1
+			}
+		}
+	}
+	8290.1.1 = {
+		effect = { add_friend = 8278 } #Glendon Hewett
+	}
+	8320.1.1={
+		death="8320.1.1"
+	}
+}
+###Hogg
+31 = {
+	name="Роджер"
+	dynasty=31
+	
+	martial = 4
+	diplomacy = 5
+	intrigue = 1
+	stewardship = 5
+	learning = 5
+	religion="the_seven"
+	culture="riverlander"
+	
+	add_trait="tough_soldier"
+	add_trait="strong"
+	
+	father=6002831
+	mother=5002831
+	
+	8245.1.1 = {
+		birth="8245.1.1"
+	}
+	8261.1.1 = {
+		add_spouse = 10031
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}
+}
+10031 = {
+	name="Джейн"
+	female=yes
+	
+	add_trait="naive_appeaser"
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	8245.1.1 = {
+		birth="8245.1.1"
+	}
+	8310.1.1={
+		death="8310.1.1"
+	}
+}
+10131 = {
+	name="Ричард"
+	dynasty=31
+	
+	add_trait="naive_appeaser"
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=31
+	mother=10031
+	
+	add_trait=twin
+	
+	8265.1.1 = {birth="8265.1.1"}
+	8281.1.1 = {
+		add_trait="poor_warrior"
+		add_trait="knight"
+	}
+}
+10231 = {
+	name="Рослин"
+	dynasty=31
+	female=yes
+	
+	add_trait="naive_appeaser"
+	add_trait=twin
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=31
+	mother=10031
+	
+	8265.1.1 = {birth="8265.1.1"}
+}
+###Stokeworth
+10035 = {
+	name="Сэмвелл"			
+	dynasty=35			
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	father=6001835
+	mother=5001835
+
+	8218.1.1={
+		birth="8218.1.1"
+	}
+	8234.1.1={
+		add_spouse=12035
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}
+	8285.1.1={ death="8285.1.1" }
+}
+77103 = {
+	name="Мэнли"			
+	dynasty=35			
+	martial=8
+	diplomacy=3
+	intrigue=2
+	stewardship=3
+	religion="the_seven"
+	culture="crownlander"
+	add_trait="tough_soldier"	
+	father=6001835
+	mother=5001835
+	8220.1.1={
+		birth="8220.1.1"
+	}
+	8236.1.1={
+		add_trait="trained_warrior"
+		add_trait="knight"
+		employer=77034
+	}
+	8259.6.1={
+		employer= 77036		
+	}
+	8262.1.1={
+		employer= 77037		
+	}
+	8275.1.1={
+		employer= 0
+	}
+	8283.6.1={
+		# Circumstances unknown, may have died in the Sack of King's Landing
+		death = {
+			death_reason = death_battle
+			killer = 190
+		}
+	}
+}
+77102 = {
+	name="Танда"			
+	female=yes
+	dynasty=35			
+	
+	martial=4
+	diplomacy=3
+	intrigue=2
+	stewardship=3
+	religion="the_seven"
+	culture="crownlander"
+
+	father = 10035
+	mother = 12035
+
+	add_trait=naive_appeaser
+	add_trait=kind
+	add_trait=trusting
+	add_trait=familyperson
+	add_trait=charitable
+	
+	8238.1.1={
+		birth="8238.1.1"
+	}
+	8295.1.1 = {
+		add_claim = d_rosby
+		add_claim = c_rosby
+	}
+	8300.3.1={
+		add_trait="maimed"
+		death = { death_reason = death_trait }
+	}
+}
+402838 = { #Unnamed sister of Танда and mother of Джайлс Rosby second wife
+	name="Саманта"
+	female=yes
+	dynasty=35
+
+	religion="the_seven"
+	culture="crownlander"
+	father = 10035
+	mother = 12035
+
+	8240.1.1 = {birth="8240.1.1"}
+	8269.1.1 = {death="8269.1.1"}
+}
+11035 = {
+	name="Алин"				
+	martial=7
+	diplomacy=3
+	intrigue=2
+	stewardship=3
+	religion="the_seven"
+	culture="crownlander"
+	add_trait="tough_soldier"
+	8236.1.1={
+		birth="8236.1.1"
+	}
+	8255.1.1={
+		add_matrilineal_spouse=77102
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}
+	8294.1.1={ death="8294.1.1" }
+}
+77104 = {
+	name="Фалиса"			
+	female=yes
+	dynasty=35
+
+	dna="ddjce0hhbb0"
+	properties="kq0edkbebcb"
+	
+	martial=2
+	diplomacy=3
+	intrigue=2
+	stewardship=3
+	religion="the_seven"
+	culture="crownlander"
+
+	add_trait=amateurish_plotter
+	add_trait=ambitious
+	add_trait=envious
+	add_trait=proud
+	add_trait=rude
+
+	father=11035 
+	mother=77102
+
+	8264.1.1={
+		birth="8264.1.1"
+		effect = {
+			fertility = -0.4
+			d_stokeworth = {
+				holder_scope = {
+					ROOT = {
+						move_character = PREV
+					}
+				}
+			}
+		}
+	}
+	8289.1.1 = {
+		add_matrilineal_spouse = 2029039
+	}
+	8300.1.1 = {
+		add_claim = d_rosby
+		add_claim = c_rosby
+	}
+	8300.3.1={
+		# Died in the Black Cells
+		death = {
+			death_reason = death_dungeon
+			killer = 7316 # On Cersei's orders, but technically Томмен's dungeon at the time
+		}
+	}
+}
+
+77105 = {
+	name="Лоллис"			
+	female=yes
+	dynasty=35
+
+	dna="dbfbe0jhbb0"
+	properties="mt0edkbebcb"
+	
+	martial=4
+	diplomacy=1
+	intrigue=2
+	stewardship=1
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	add_trait="imbecile"
+	add_trait="naive_appeaser"
+	
+	disallow_random_traits = yes
+	
+	father=11035 
+	mother=77102
+	
+	8265.3.1={ 
+		birth="8265.3.1" 
+		effect = {
+			d_stokeworth = {
+				holder_scope = {
+					ROOT = {
+						move_character = PREV
+					}
+				}
+			}
+		}
+	}
+	8273.8.1={
+		add_trait=craven
+	}
+	8275.8.1={
+		add_trait=gluttonous
+	}
+	8277.8.1={
+		add_trait=content
+	}
+	8279.8.1={
+		add_trait=humble
+	}
+	8290.1.1 = {
+		add_trait = is_fat
+		effect = {
+			set_variable = { which = physique_variable value = 35 }		
+			add_character_modifier = { name = obese_modifier duration = -1 }
+		}
+	}
+	8300.1.1= {
+		add_claim = d_rosby
+		add_claim = c_rosby
+	}
+	8300.3.1={ 
+		effect = { c_stokeworth = { add_pressed_claim = ROOT } }
+	}
+}
+
+200035 = {
+	name="Бронн"
+	dna="dhgialcheaz"
+	properties="0s0dik"
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	martial = 5
+	diplomacy = 2	
+	intrigue = 7
+	stewardship = 2	
+	learning = 1
+	
+	add_trait="tough_soldier"
+	add_trait="duelist"
+	add_trait="lustful"
+	#add_trait="gluttonous"
+	add_trait="greedy"
+	add_trait="brave"
+	add_trait="ambitious"
+	add_trait="cynical"
+	add_trait="rude"
+	
+	8266.1.1 = {
+		birth="8266.1.1"
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8282.1.1 = {
+		add_trait="skilled_warrior"
+	}
+	8298.11.2={employer=9316} # Джоффри Baratheon
+	8299.7.2 = {
+		effect = {  
+			dynasty = 1440
+		}
+		add_trait="knight" 
+		dynasty=1440 
+		culture="crownlander"
+	}
+	8299.12.1 = {
+		add_spouse=77105
+	}
+}
+
+201035 = {
+	name="Френкен"
+
+	religion="the_seven"
+	culture="crownlander"
+	
+	martial = 3
+	diplomacy = 6	
+	intrigue = 7
+	stewardship = 8
+	learning = 12
+	
+	employer = 10035 #Беннард stokeworth
+	
+	8262.1.1 = {
+		birth="8262.1.1"
+		effect = {  
+			dynasty = none
+		}
+	}
+	8282.1.1 = {
+		add_trait="maester"
+		add_trait="martial_cleric"
+		effect = {
+			set_character_flag = serving_with_lord
+			d_stokeworth = {
+				holder_scope = {
+					ROOT = {
+						move_character = PREV
+					}
+				}
+			}
+		}
+	}
+}
+
+202035 = {
+	name="Тирион"			
+	dynasty=35
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	mother=77105
+	
+	add_trait=bastard
+	give_nickname=nick_tanner
+	employer=200035
+	
+	8300.3.1={ birth="8300.3.1" }
+}
+
+###Hayford
+32 = {
+	name="Алин"
+	dynasty=32
+	
+	martial = 5
+	diplomacy = 5
+	intrigue = 2
+	stewardship = 6
+	learning = 5
+	religion="the_seven"
+	culture="crownlander"
+	
+	father=6002432
+	mother=5002432
+	
+	add_trait="fortune_builder"
+
+	8252.1.1 = {
+		birth="8252.1.1"
+	}
+	8270.1.1={
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}
+	8290.1.1={
+		add_spouse=77106
+	}
+	8299.1.1 = {
+		death="8299.1.1"
+	}
+}
+77106 = {
+	name="Алис" #random wife
+	female=yes
+	
+	martial=4
+	diplomacy=7
+	intrigue=3
+	stewardship=5
+	religion="the_seven"
+	culture="crownlander"
+	8271.1.1={
+		birth="8271.1.1"
+	}
+	8310.1.1={
+		death="8310.1.1"
+	}
+}
+###Tyreks Wife a Hayford the last of her line###
+932 = {
+	name="Эрмесанда"
+	female=yes	
+	dynasty=32	
+	
+	religion="the_seven"	
+	culture="crownlander"
+
+	mother=77106
+	father=32	
+	
+	8298.6.1 = {
+		birth="8298.6.1"
+		effect = {
+			child_fertility_debuff = yes #To stop impregnation
+		}
+	}	
+}
+###Rosby
+12035 = { #mother of Танда
+	name="Алисанна"
+	dynasty=38			
+	female=yes		
+	
+	religion="the_seven"
+	culture="crownlander"
+
+	father=302638
+
+	8219.1.1={
+		birth="8219.1.1"
+	}
+	8288.1.1={ death="8288.1.1" }
+}
+38 = {
+	name="Джайлс"
+	dynasty=38
+	
+	martial = 5
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	learning = 5
+	religion="the_seven"
+	culture="crownlander"
+	add_trait="weak"
+	add_trait="proud"
+	add_trait="charismatic_negotiator"
+	
+	father=2039
+	
+	8246.1.1 = {
+		birth="8246.1.1"
+		effect = { health = -1 fertility = -0.4 } # The Rosbies are notoriously sickly
+	}
+	8262.1.1 = {
+		add_spouse = 11038
+		add_trait="poor_warrior"
+		add_trait="knight"
+	}
+	8282.1.1 = {
+		add_spouse = 302938
+	}
+	8295.1.1 = {add_trait=widowed}
+	8299.1.1 = {
+		add_trait="ill"
+	}
+	8300.1.1 = {
+		add_trait="pneumonic"
+	}
+	8301.1.1 = {
+		death = { death_reason = death_trait }
+	}
+}
+11038 = {
+	name="Танда"
+	female=yes
+	add_trait="naive_appeaser"
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	8246.1.1 = {
+		birth="8246.1.1"
+	}
+	8278.1.1 = {
+		add_trait=ill
+		death = { death_reason = death_trait }
+	}
+}
+10038 = {
+	name="Мередит"
+	female=yes
+	add_trait="naive_appeaser"
+	religion="the_seven"
+	culture="crownlander"
+	
+	8216.1.1 = {
+		birth="8216.1.1"
+	}
+	8276.1.1 = {
+		death="8276.1.1"
+	}
+}
+2038 = {
+	name="Бетани"
+	female=yes
+	dynasty=38
+	
+	martial = 5
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 7
+	learning = 5
+
+	religion="the_seven"
+	culture="crownlander"
+
+	father=302738
+
+	8245.1.1 = {
+		birth="8245.1.1"
+		effect = { health = -1 } # The Rosbies are notoriously sickly
+	}
+	8283.8.1 = {
+		death="8283.8.1"
+	}
+}
+2039 = {
+	name="Роберт"
+	dynasty=38
+	
+	martial = 5
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 7
+	learning = 5
+
+	religion="the_seven"
+	culture="crownlander"
+
+	add_trait="weak"
+	add_trait="tough_soldier"
+
+	father=302238
+	
+	8216.1.1 = {
+		birth="8216.1.1"
+	}
+	8232.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+		add_spouse=10038
+	}
+	8266.1.1 = {
+		death="8266.1.1"
+	}
+}
+
+###Harte
+33 = {
+	name="Гаррольд"
+	dynasty=33
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=6002733
+	mother=5002733
+	
+	8263.1.1 = {
+		birth="8263.1.1"
+	}
+	8279.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+		add_spouse=5012733
+	}
+}
+5012733 = {
+	name="Джейн"
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	
+	8256.1.1 = {
+		birth="8256.1.1"
+	}
+}
+6012733 = {
+	name="Элвуд"
+	dynasty=33
+	
+	martial = 6
+	diplomacy = 5
+	intrigue = 3
+	stewardship = 7
+	learning = 5
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=33
+	mother=5012733
+	
+	add_trait="gregarious"
+	
+	8280.1.1 = {
+		birth="8280.1.1"
+	}
+	8296.1.1 = {
+		add_trait="charismatic_negotiator"
+		add_trait="knight"
+		add_trait="skilled_warrior"
+	}
+}
+###Rykker
+36 = {
+	name="Дилан"
+	dynasty=36
+	
+	martial = 5
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 5
+	learning = 5
+	religion="the_seven"
+	culture="riverlander"
+	add_trait="deceitful"
+	add_trait="skilled_tactician"	
+	
+	father=128036
+	mother=428036
+	
+	8234.1.1 = {
+		birth="8234.1.1"
+	}
+	8250.1.1 = {
+		add_spouse = 10036
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}
+	8262.1.1={
+		employer = 77037		
+	}
+	8280.1.1={
+		death="8280.1.1"
+	}
+}
+10036 = {
+	name="Лина"
+	female=yes
+	add_trait="naive_appeaser"
+	religion="the_seven"
+	culture="riverlander"
+	
+	8234.1.1 = {
+		birth="8234.1.1"
+	}
+	8280.1.1={
+		death="8280.1.1"
+	}
+}
+2036 = {
+	name="Ренфред"
+	dynasty=36
+	
+	martial = 5
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 7
+	learning = 5
+	religion="the_seven"
+	culture="riverlander"
+	add_trait="slothful"	
+	father=36
+	mother=10036
+	8262.1.1 = {
+		birth="8262.1.1"
+	}
+	8278.1.1 = {
+		add_trait="knight"
+		add_trait="poor_warrior"
+	}
+	8284.1.1 = {
+		add_spouse=420036
+	}
+}
+420036 = {
+	name="Аннара"
+	female=yes
+	add_trait="naive_appeaser"
+	religion="the_seven"
+	culture="riverlander"
+	
+	8262.1.1 = {
+		birth="8262.1.1"
+	}
+}
+2336 = {
+	name="Джареми"
+	dynasty=36
+	
+	martial = 7
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 5
+	learning = 5
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=36
+	mother=10036
+
+	add_trait="tough_soldier"
+	add_trait="proud"
+	add_trait="wroth"
+	add_trait="cynical"
+	add_trait="brave"
+
+	8263.1.1 = {
+		birth="8263.1.1"
+	}
+	8279.1.1 = {
+		add_trait="skilled_warrior"
+		add_trait="knight"	
+	}
+	8284.1.1 = {	
+		add_trait="nightswatch"
+		effect = {
+			add_character_modifier = {
+				name = nw_ranger
+				duration = -1
+			}
+		}
+	}
+	8298.10.29={
+		death = { death_reason = death_duel } # Slain by a Wight
+	}
+}
+#Ренфред's unnamed children
+175036 = {
+	name="Роберт"
+	dynasty=36
+	
+	religion="the_seven"
+	culture="riverlander"
+	add_trait="slothful"	
+	
+	father=2036
+	mother=420036
+	
+	8285.1.1 = {
+		birth="8285.1.1"
+	}
+	8295.1.1 = {
+		add_trait=poor_warrior
+	}
+	8300.1.1 = {
+		remove_trait=poor_warrior
+		add_trait=trained_warrior
+	}
+}
+176036 = {
+	name="Миленда"
+	female = yes
+	dynasty=36
+	
+	religion="the_seven"
+	culture="riverlander"
+	add_trait="slothful"	
+	
+	father=2036
+	mother=420036
+	
+	8286.1.1 = {
+		birth="8286.1.1"
+	}
+}
+177036 = {
+	name="Морган"
+	dynasty=36
+	
+	religion="the_seven"
+	culture="riverlander"
+	add_trait="slothful"	
+	
+	father=2036
+	mother=420036
+	
+	8290.1.1 = {
+		birth="8290.1.1"
+	}
+	8300.1.1 = {
+		add_trait=poor_warrior
+	}
+}
+#Courtiers
+1501519 = { #Castellan
+	name="Руфус"
+	dynasty=1519 #Leek
+	
+	learning=1
+	martial=6
+	stewardship=6
+	diplomacy=2
+	intrigue=3
+	
+	religion="the_seven"
+	culture="riverlander"
+		
+	add_trait="honorable"	
+	add_trait="tough_soldier"
+	add_trait="proud"
+	
+	8253.1.1 = {
+		birth="8253.1.1"
+		effect = {
+			c_duskendale = {
+				holder_scope = {
+					ROOT = {
+						move_character = PREV
+					}
+				}
+			}
+		}
+	}
+	8269.1.1 = {
+		add_trait=trained_warrior
+		add_trait=knight
+	}
+	8284.1.1 = {
+		effect = { 
+			remove_all_job_titles = yes
+			give_job_title = job_castellan 
+		}
+	}
+	8290.1.1 = {
+		effect = {
+			if = {
+				limit = { has_dlc = "Reapers" }
+				add_trait = one_legged
+			}
+			else = {
+				add_trait = crippled
+			}
+		}
+	}
+}
+###Hollard
+77140 = {
+	name="Монфорд"
+	dynasty=37
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=6002337
+	
+	8180.1.1 = {
+		birth="8180.1.1"
+	}
+	8196.1.1 = {
+		add_trait="knight"
+	}
+	8241.1.1={
+		death="8241.1.1"
+	}
+}
+##Issue of Монфорд##
+77143 = {
+	name="Осмунд"
+	dynasty=37
+	religion="the_seven"
+	culture="riverlander"
+	father=77140
+	8208.1.1 = {
+		birth="8208.1.1"
+	}
+	8225.1.1 = {
+		add_trait="knight"
+	}
+	8270.1.1={
+		death="8270.1.1"
+	}
+}
+77139 = {
+	name="Хамфри"
+	dynasty=37
+	religion="the_seven"
+	culture="riverlander"
+	father=77140
+	8210.1.1 = {
+		birth="8210.1.1"
+	}
+	8231.1.1 = {
+		add_trait="knight"
+		add_spouse=77144
+	}
+	8260.1.1={
+		death="8260.1.1"
+	}
+}
+77144 = {
+	name="Мелара"
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	8212.1.1 = {
+		birth="8212.1.1"
+	}
+	8274.1.1={
+		death="8274.1.1"
+	}
+}
+77147 = {
+	name="Белис"
+	dynasty=37
+	religion="the_seven"
+	culture="riverlander"
+	father=77140
+	8217.1.1 = {
+		birth="8217.1.1"
+	}
+	8235.1.1 = {
+		add_trait="knight"
+	}
+	8269.1.1={
+		death="8269.1.1"
+	}
+}
+##Issue of Осмунд##
+77145 = { #Lord during the defiance
+	name="Джон"
+	dynasty=37
+	religion="the_seven"
+	culture="riverlander"
+	stewardship=12
+	add_trait="fortune_builder"
+	father=77143
+	8232.1.1 = {
+		birth="8232.1.1"
+	}
+	8248.1.1 = {
+		add_trait="knight"
+	}
+	8266.1.1 = {
+		add_spouse=6048364
+	}
+	8277.10.1={
+		death = {
+			death_reason = death_execution
+			killer = 77037 #defiance of duskendale
+		}
+	}
+}
+##Issue of Хамфри##
+77108 = {
+	name="Стеффон"
+	dynasty=37
+	religion="the_seven"
+	culture="riverlander"
+	father=77139
+	mother=77144
+	add_trait="twin"
+	8240.1.1 = {
+		birth="8240.1.1"
+	}
+	8256.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}
+	8273.1.1={
+		add_trait=ill
+		death = {
+			death_reason = death_trait
+		}
+	}
+}
+77141 = {
+	name="Саймон"
+	dynasty=37
+	religion="the_seven"
+	culture="riverlander"
+	martial=8
+	father=77139
+	mother=77144
+	add_trait="twin"
+	add_trait="skilled_tactician"
+	8240.1.1 = {
+		birth="8240.1.1"
+	}
+	8256.1.1 = {
+		add_trait="knight"
+		add_trait="skilled_warrior"
+	}
+	8277.10.1={
+		death = {
+			death_reason = death_duel
+			killer=201302 # Barristan Selmy
+		}
+	}
+}
+##Issue of Белис##
+77148 = {
+	name="Бальман"
+	dynasty=37
+	religion="the_seven"
+	culture="riverlander"
+	father=77147
+	8240.1.1 = {
+		birth="8240.1.1"
+	}
+	8263.1.1 = {
+		add_trait="knight"
+	}
+	8277.10.1={
+		death = {
+			death_reason = death_execution
+			killer = 77037 #defiance of duskendale
+		}
+	}
+}
+##Issue of Джон##
+77146 = {
+	name="Денис"
+	dynasty=37
+	religion="the_seven"
+	culture="riverlander"
+	father=77145
+	mother=6048364
+	8267.1.1 = {
+		birth="8267.1.1"
+	}
+	8277.10.1={
+		death = {
+			death_reason = death_execution
+			killer = 77037 #defiance of duskendale
+		}
+	}
+}
+##Issue of Стеффон##
+37 = {
+	name="Донтос"
+	dynasty=37
+	
+	martial = 3
+	diplomacy = 2
+	intrigue = 5
+	stewardship = 3
+	learning = 3
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=77108
+	
+	add_trait=trusting
+	add_trait=greedy
+	
+	8263.1.1 = {
+		birth="8263.1.1"
+	}
+	8277.10.1 = {
+		employer=77037
+		effect = { c_hollard_hall = { add_pressed_claim = ROOT } }
+	}
+	8279.1.1 = {
+		add_trait="squire"
+		add_trait="poor_warrior"
+		add_trait="flamboyant_schemer"
+		add_trait="drunkard"
+	}
+	8280.1.1 = {
+		remove_trait="squire"
+		add_trait="knight"
+		give_nickname = nick_the_red
+	}
+	8284.1.1={
+		employer = 317	#Роберт I Baratheon
+	}
+	8298.10.28 = {
+		employer = 9316 #Джоффри I "Baratheon"
+	}
+	8299.1.1 = {
+		remove_trait="knight"		
+	}
+	8300.1.1={
+		# DO. NOT. TRUST. LITTLEFINGER. What is WRONG with people?
+		death = {
+			death_reason = death_murder_unknown
+			killer = 94043
+		}
+	}
+}
+##Issue of Бальман##
+77149 = {
+	name="Робин"
+	dynasty=37
+	religion="the_seven"
+	culture="riverlander"
+	father=77148
+	8262.1.1 = {
+		birth="8262.1.1"
+	}
+	8272.1.1 = {
+		add_trait="squire"
+	}
+	8277.10.1={
+		add_trait="mangled"
+		death = {
+			death_reason = death_execution_torture
+			killer = 77037 #defiance of duskendale
+		}
+	}
+}
+
+###Staunton
+6002741 = {
+	name="Саймонд"	# a lord, Эйрис' master of laws
+	dynasty=41
+	
+	martial = 4
+	diplomacy = 10
+	intrigue = 5
+	stewardship = 4
+	learning = 2
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=6002341
+	
+	add_trait=charismatic_negotiator
+	add_trait=greedy
+	add_trait=ambitious
+	add_trait=deceitful
+	add_trait=proud
+	
+	8233.1.1 = {birth="8233.1.1"}
+	8249.1.1 = {add_trait=poor_warrior add_trait=knight}
+	8251.1.1 = {add_spouse=5002741}
+	8290.1.1 = {death="8290.1.1"}
+}
+5002741 = {
+	name="Эглантина"
+	female=yes
+
+	religion="the_seven"
+	culture="riverlander"
+
+	8233.1.1 = {birth="8233.1.1"}
+	8290.1.1 = {death="8290.1.1"}
+}
+41 = {
+	name="Лотор"
+	dynasty=41
+	
+	martial = 3
+	diplomacy = 3
+	intrigue = 5
+	stewardship = 5
+	learning = 5
+	religion="the_seven"
+	culture="riverlander"
+	
+	add_trait="lustful"
+	add_trait="fortune_builder"
+	
+	father=6002741
+	mother=5002741
+	
+	8252.1.1 = {
+		birth="8252.1.1"
+	}
+	8268.1.1 = {
+		add_spouse = 10041
+		add_trait="knight"
+		add_trait="trained_warrior"	
+	}
+	8310.1.1={
+		death="8310.1.1"
+	}
+}
+10041 = {
+	name="Нейла"
+	female=yes
+	add_trait="naive_appeaser"
+	religion="the_seven"
+	culture="riverlander"
+	8252.1.1 = {
+		birth="8252.1.1"
+	}
+	8310.1.1={
+		death="8310.1.1"
+	}
+}
+20141 = {
+	name="Ричард"
+	dynasty=41
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=41
+	mother=10041
+	
+	8270.1.1 = {birth="8270.1.1"}
+}
+###Crabb
+77110 = {
+	name="Аларик"
+	dynasty=1197
+	religion="the_seven"
+	culture="crackclawmen"
+	
+	father=60361197
+	mother=50361197
+	
+	8270.1.1 = {
+		birth="8270.1.1"
+	}
+	8286.1.1 = {
+		add_trait=trained_warrior
+		add_trait=knight
+	}
+}
+1501197 = {
+	name="Дик" #Nimble Дик? Had a sister who became a whore in kings landing... Not so sure they were landed... Made him a cousin
+	dynasty=1197
+
+	dna="dmihh0hhba0"
+	properties="ke0ehkbebcb"
+	
+	martial = 2
+	diplomacy = 2
+	intrigue = 2
+	stewardship = 1
+	learning = 1
+	
+	religion="the_seven"
+	culture="crackclawmen"
+	
+	father=1561197
+	
+	add_trait=greedy
+	add_trait=proud
+	add_trait=honorable
+	
+	8268.1.1 = {
+		birth="8268.1.1"
+	}
+	8284.1.1 = {
+		add_trait=poor_warrior
+		give_nickname = nick_the_nimble
+	}
+	8300.3.25 = {
+		death = { 
+			death_reason = death_duel 
+			killer = 80012563 # Shaggwell
+		}
+	}
+}
+1511197 = {
+	name="Моэлла" #Nimble Дик? Had a sister who became a whore in kings landing... Not so sure they were landed... Made him a cousin
+	female=yes
+	dynasty=1197
+
+	religion="the_seven"
+	culture="crackclawmen"
+	
+	father=1561197
+		
+	8270.1.1 = {
+		birth="8270.1.1"
+	}
+}
+
+1521197 = {
+	name="Джек"
+	dynasty=1197
+	
+	martial = 2
+	stewardship = 2
+	diplomacy = 2
+	intrigue = 2
+	learning = 3
+	
+	religion="the_seven"
+	culture="crackclawmen"
+	
+	father=60361197
+	mother=50361197
+	
+	add_trait = content
+	add_trait = honest
+	add_trait = tough_soldier
+	add_trait = strong
+	
+	8272.1.1 = {
+		birth="8272.1.1"
+	}
+	8288.1.1 = {
+		add_trait=trained_warrior
+		add_trait=nightswatch	
+		give_nickname = nick_the_red
+		effect = { 
+			add_character_modifier = {
+				name = nw_ranger
+				duration = -1
+			}
+		}
+	}
+}
+###Sunglass
+2051 = {
+	name="Тристон"
+	dynasty=51
+	
+	martial = 5
+	diplomacy = 5
+	intrigue = 2
+	stewardship = 5
+	learning = 5
+	religion="the_seven"
+	culture="stormlander"
+
+	add_trait="tough_soldier"
+	
+	father=32251
+	
+	8232.1.1 = {
+		birth="8232.1.1"
+	}
+	8248.1.1 = {
+		add_spouse = 10051
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}
+	8276.1.1 = {
+		death="8276.1.1"
+	}
+}
+10051 = {
+	name="Несса"
+	female=yes
+	add_trait="naive_appeaser"
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	8232.1.1 = {
+		birth="8232.1.1"
+	}
+	8276.1.1 = {
+		death="8276.1.1"
+	}
+}
+51 = {
+	name="Гансер"
+	dynasty=51
+	
+	martial = 5
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	learning = 5
+	religion="the_seven"
+	culture="stormlander"
+	add_trait="zealous"
+	add_trait="skilled_tactician"
+	add_trait="honest"
+	add_trait="just"
+	father=2051
+	mother=10051
+	8257.1.1 = {
+		birth="8257.1.1"
+	}
+	8273.1.1 = {
+		add_trait="skilled_warrior"
+		add_trait="knight"
+		effect = {
+			add_artifact = regular_flagship
+			new_artifact = { set_name = Prayer_Ship }	# He had also Devotion and Piety
+		}
+	}
+	8299.1.1 = {
+		effect = {
+			set_character_flag = neutral
+			clr_character_flag = supporting_king
+			clr_character_flag = against_king
+			any_demesne_title = {
+				limit = { 
+					OR = {
+						tier = COUNT
+						tier = DUKE
+					}
+				}				
+				set_variable = { which = "de_facto_kingdom" value = 8 } #stormlands
+			}
+			c_dragonstone = {
+				holder_scope = {
+					ROOT = { imprison = PREV }
+					opinion = {
+						modifier = opinion_traitor
+						who = ROOT
+					}
+					reverse_opinion = {
+						modifier = opinion_vengeance
+						who = ROOT
+					}
+				}
+			}
+		}
+	}
+	8299.7.1 = {
+		death = {
+			death_reason = death_sacrificed_rhllor
+			killer = 4317 # Technically Селиса's orders, but that's not how the game mechanics see it
+		}
+	}
+}
+1051 = {
+	name="Валтрис"
+	dynasty=51
+	
+	martial = 4
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 6
+	learning = 5
+	religion="the_seven"
+	culture="stormlander"
+	add_trait="brave"
+	add_trait="tough_soldier"	
+	father=2051
+	mother=10051	
+	8260.1.1 = {
+		birth="8260.1.1"
+	}
+	8276.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}
+	8289.1.1 = {
+		add_spouse=45051
+	}
+	8299.7.2 = {
+		effect = {
+			set_character_flag = neutral
+			clr_character_flag = supporting_king
+			clr_character_flag = against_king
+			any_demesne_title = {
+				limit = { 
+					OR = {
+						tier = COUNT
+						tier = DUKE
+					}
+				}				
+				set_variable = { which = "de_facto_kingdom" value = 8 } #stormlands
+			}
+		}
+	}	
+}
+45051 = {
+	name="Селиса"
+	female=yes
+	add_trait="naive_appeaser"
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	8260.1.1 = {
+		birth="8260.1.1"
+	}
+}
+3051 = {
+	name="Гюнтор"
+	dynasty=51
+	
+	religion="the_seven"
+	culture="stormlander"
+	father=1051
+	mother=45051	
+	8292.1.1 = {
+		birth="8292.1.1"
+	}
+}
+4051 = {
+	name="Серенея"
+	dynasty=51
+	female=yes
+	
+	religion="the_seven"
+	culture="stormlander"
+	father=1051
+	mother=45051	
+	8295.1.1 = {
+		birth="8295.1.1"
+	}
+}
+#knight in service
+300051 = {
+	name="Тристон"
+	dynasty=1442 #of Tally Hill
+	
+	martial = 5
+	diplomacy = 2
+	intrigue = 6
+	stewardship = 2
+	learning = 2
+	religion="the_seven"
+	culture="crownlander"
+	add_trait="kind"
+	add_trait="diligent"
+	add_trait="tough_soldier"
+	add_trait="honorable"
+	add_trait="honest"
+	employer=51
+	8262.1.1 = {
+		birth="8262.1.1"
+	}
+	8282.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}
+	8299.2.11 = {		#Changed to 2.11, so he isnt in Sweetport Sound during ACOK
+		employer=4317
+	}
+	8299.12.1 = { 
+		effect = {
+			k_lys = {
+				holder_scope = {
+					reverse_banish = PREVPREV #Went with Edric Storm
+				}
+			}
+		}
+	}
+}
+####################
+###House Velaryon###
+####################
+20052 = {
+	name="Люцерис" # Монфорд's father. Эйрис' Master of Ships
+	dynasty=52
+
+	religion="the_seven"
+	culture="high_valyrian"
+
+	father=21052
+	
+	8230.1.1 = {birth="8230.1.1"}
+	8252.1.1 = {	
+	add_spouse = 77161
+	add_trait="trained_warrior"
+	add_trait="tough_soldier"
+	add_trait="knight"}
+	
+	8285.1.1 = {death="8285.1.1"}
+}
+77161 = {
+	name="Элинор"
+	female=yes
+	add_trait="naive_appeaser"
+	religion="the_seven"
+	culture="western_valyrian"
+
+	8236.1.1 = {birth="8236.1.1"}
+	8281.1.1 = {death="8281.1.1"}
+}
+52 = {
+	name="Монфорд"
+	dynasty=52
+	dna="bkkkgtaagbo"
+	properties="cq0dik"
+	martial = 5
+	diplomacy = 5
+	intrigue = 1
+	stewardship = 5
+	learning = 5
+
+	religion="the_seven"
+	culture="high_valyrian"
+	
+	father=20052
+	mother=77161
+	
+	#add_trait="forgiving"
+	add_trait="skilled_tactician"
+	add_trait="brave"
+	add_trait="wroth"
+	add_trait="fair"
+	add_trait="proud"
+	
+	8268.1.1 = {
+		birth="8268.1.1"
+	}
+	8284.1.1 = {
+		add_spouse = 10052
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}	
+	8285.1.1 = {
+		effect = {
+			add_artifact = regular_flagship
+			new_artifact = { set_name = Pride_of_Driftmark }	# he has also Bold Laughter, Seahorse and Harridan
+		}
+	}
+	8298.10.28 = {
+		effect = { religion="rhllor" }
+	}
+	8299.7.1 = {
+		# Died at the Battle of the Blackwater
+		death = {
+			death_reason = death_battle
+			killer = 5190
+		}
+	}
+}
+10052 = {
+	name="Лианна"
+	female=yes
+	add_trait="naive_appeaser"
+	religion="the_seven"
+	culture="high_valyrian"
+
+	8268.1.1 = {birth="8268.1.1"}
+	8298.10.28 = { effect = { religion="rhllor" } }
+}
+4052 = {
+	name="Монтерис"
+	dynasty=52
+	dna="bkkkftaagbo"
+	properties="ce0d0k"
+
+	religion="the_seven"
+	culture="high_valyrian"
+	
+	add_trait="fair"
+
+	father=52
+	mother=10052
+
+	8293.1.1 = {
+		birth="8293.1.1" #six years old
+	}
+	8298.10.28 = { effect = { religion="rhllor" } }
+}
+77160 = {
+	name="Джекейрис" #non-canon brother of Монтерис to ensure Velaryons don't die out
+	dynasty=52
+	dna="ccjdkjaagbf"
+	properties="cf0dik"
+
+	religion="the_seven"
+	culture="high_valyrian"
+	
+	father=52
+	mother=10052
+	
+	8295.1.1 = {birth="8295.1.1"}
+	8298.10.28 = { effect = { religion="rhllor" } }
+	8299.7.1 = {
+		employer = 4052
+	}
+}
+15052 = {
+	name="Ауран" # Монфорд's half-brother
+	dynasty=52
+	dna="ddjekjaagbg"
+	properties="cj0dmk"
+	
+	martial = 5
+	diplomacy = 8
+	intrigue = 8
+	stewardship = 3
+	learning = 4
+	
+	religion="the_seven"
+	culture="western_valyrian" #he needs it for green eyes
+
+	add_trait="bastard"
+	add_trait="fair"
+	add_trait="quick"
+	add_trait="tough_soldier"
+	
+	disallow_random_traits = yes
+	
+	father=20052 # Aegor Velaryon
+	
+	8278.1.1 = {
+		birth="8278.1.1"
+		give_nickname = nick_waters
+	}
+	8284.8.1={
+		add_trait="brave"
+	}
+	8286.8.1={
+		add_trait="deceitful"
+		add_trait="gregarious"
+	}
+	8288.8.1={
+		add_trait="ruthless"
+	}
+	8292.1.1={
+		add_trait="ambitious"
+	}
+	8294.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8299.7.1 = {
+		employer=9316
+	}
+	8300.1.1 = {
+		employer=7316
+	}
+	8300.2.1 = { 
+		employer=0
+		religion = pirate
+		effect = { #Becomes a Pirate		
+			character_event = { id = pirate.1 days = 1 }
+			add_artifact = enormous_flagship
+			new_artifact = { 
+				set_name = Lord_Tywin
+				set_artifact_flag = heirloom_@PREV
+				set_artifact_flag = heirloom_@e_iron_throne
+			}
+			#Create some Pirate companions that came from King's Landing
+			create_character = {
+				random_traits = yes
+				dynasty = none
+				religion = THIS
+				culture = crownlander
+				female = no
+				age = 35
+				trait = pirate
+				trait = tough_soldier
+			}
+			new_character = {
+				random_list = {
+					10 = { add_trait = skilled_warrior }
+					30 = { add_trait = trained_warrior }
+					60 = { add_trait = poor_warrior }
+				}
+				add_artifact = regular_flagship
+				new_artifact = { 
+					set_name = Sweet_Cersei
+					set_artifact_flag = heirloom_@PREV
+					set_artifact_flag = heirloom_@e_iron_throne
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = none
+				religion = THIS
+				culture = crownlander
+				female = no
+				age = 27
+				trait = pirate
+				trait = misguided_warrior
+			}
+			new_character = {
+				random_list = {
+					10 = { add_trait = skilled_warrior }
+					30 = { add_trait = trained_warrior }
+					60 = { add_trait = poor_warrior }
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = none
+				religion = THIS
+				culture = crownlander
+				female = no
+				age = 29
+				trait = pirate
+				trait = tough_soldier
+			}
+			new_character = {
+				random_list = {
+					10 = { add_trait = skilled_warrior }
+					30 = { add_trait = trained_warrior }
+					60 = { add_trait = poor_warrior }
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = none
+				religion = THIS
+				culture = crownlander
+				female = no
+				age = 21
+				trait = pirate
+				trait = misguided_warrior
+			}
+			new_character = {
+				random_list = {
+					10 = { add_trait = skilled_warrior }
+					30 = { add_trait = trained_warrior }
+					60 = { add_trait = poor_warrior }
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = none
+				religion = THIS
+				culture = crownlander
+				female = no
+				age = 24
+				trait = pirate
+				trait = tough_soldier
+			}
+			new_character = {
+				random_list = {
+					10 = { add_trait = skilled_warrior }
+					30 = { add_trait = trained_warrior }
+					60 = { add_trait = poor_warrior }
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = none
+				religion = THIS
+				culture = crownlander
+				female = no
+				age = 26
+				trait = pirate
+				trait = misguided_warrior
+			}
+			new_character = {
+				random_list = {
+					10 = { add_trait = skilled_warrior }
+					30 = { add_trait = trained_warrior }
+					60 = { add_trait = poor_warrior }
+				}
+			}
+		} 
+	}
+}
+
+###Pyle
+55 = {
+	name="Говард"
+	dynasty=55
+	
+	martial = 5
+	diplomacy = 5
+	intrigue = 4
+	stewardship = 5
+	learning = 5
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=6002355
+	
+	add_trait="deceitful"
+	
+	8252.1.1 = {
+		birth="8252.1.1"
+	}
+	8268.1.1 = {
+		add_spouse = 10055
+		add_trait="trained_warrior"
+		add_trait="knight"
+		add_trait="skilled_tactician"
+	}
+	8310.1.1 = {
+		death="8310.1.1"
+	}
+}
+10055 = {
+	name="Делия" #Wife
+	female=yes
+	religion="the_seven"
+	culture="stormlander"
+	
+	8252.1.1 = {birth="8252.1.1"}
+}
+20155 = {
+	name="Олимер" #Son 1
+	dynasty=55
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=55
+	mother=10055
+	
+	8276.1.1 = {birth="8276.1.1"}
+	8292.1.1 = {
+		add_trait="poor_warrior"
+		add_trait="knight"
+	}
+}
+10255 = {
+	name="Оливар" #Son 2
+	dynasty=55
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=55
+	mother=10055
+	
+	8279.1.1 = {birth="8279.1.1"}
+	8295.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}
+}
+###Follard
+77150 = {
+	name="Кларенс"
+	dynasty=21
+	religion="the_seven"
+	culture="stormlander"
+
+	father=6001921
+	
+	8222.1.1 = {
+		birth="8222.1.1"
+	}
+	8238.1.1 = {
+		add_spouse = 77151
+		add_trait="knight"
+	}
+	8290.1.1 = {
+		death="8290.1.1"
+	}
+}
+77151 = {
+	name="Делена"
+	female=yes
+	add_trait="naive_appeaser"
+	religion="the_seven"
+	culture="stormlander"	
+	8223.1.1 = {
+		birth="8223.1.1"
+	}
+	8290.1.1 = {
+		death="8290.1.1"
+	}
+}
+1021 = {
+	name="Дик"
+	dynasty=21
+	
+	martial = 6
+	diplomacy = 5
+	intrigue = 3
+	stewardship = 7
+	learning = 5
+	religion="the_seven"
+	culture="stormlander"
+	add_trait="tough_soldier"
+	father=77150
+	mother=77151
+	8247.1.1 = {
+		birth="8247.1.1"
+	}
+	8263.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}
+	8267.1.1 = {
+		add_trait="nightswatch"
+		effect = { 
+			add_character_modifier = {
+				name = nw_ranger
+				duration = -1
+			}
+		}
+	}
+	8299.7.7 = {
+		death = {
+			death_reason = death_battle #castle black
+		}
+	}
+}
+77152 = {
+	name="Клэйтон"
+	dynasty=21
+	
+	religion="the_seven"
+	culture="stormlander"
+	father=77150
+	mother=77151
+	8245.1.1 = {
+		birth="8245.1.1"
+	}
+	# 8299.2.11 = {
+		# effect = {
+			# set_character_flag = neutral
+			# clr_character_flag = supporting_king
+			# clr_character_flag = against_king
+			# d_dragonstone = {
+				# holder_scope = {
+					# ROOT = { join_attacker_wars = PREV }
+				# }
+			# }
+		# }
+	# }
+	# 8299.3.3 = {
+		# raise_levies = {
+			# location = 304 #Storms End
+			# force_mult = 1
+		# }
+		# effect = {
+			# clr_character_flag = neutral
+			# set_character_flag = against_king
+			# set_character_flag = against_loyal_liege
+			
+			# k_stormlands = {
+				# holder_scope = { 
+					# reverse_opinion = {
+						# modifier = opinion_with_rebel_leader
+						# who = ROOT
+						# years = 100
+					# }
+					# ROOT = { join_attacker_wars = PREV }
+				# }
+			# }
+		# }
+	# }
+	# 8299.7.2 = {
+		# raise_levies = {
+			# dismiss = yes
+			# location = 304 #Storms End
+			# force_mult = 1
+		# }
+		# raise_levies = {
+			# dismiss = yes
+			# location = 221 #Dragonstone
+			# force_mult = 1
+		# }
+	# }
+	# 8300.3.1 = {
+		# raise_levies = {
+			# location = 17 #Castle Black
+			# force_mult = 1
+		# }
+	# }	
+	8310.1.1 = {
+		death="8310.1.1"
+	}
+}
+21 = {
+	name="Перкин"
+	dynasty=21
+	martial = 4
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	learning = 5
+	religion="the_seven"
+	culture="stormlander"
+	add_trait="cynical"
+	add_trait="skilled_tactician"
+	father=77152
+	8272.1.1 = {
+		birth="8272.1.1"
+	}
+	8288.1.1 = {
+		add_spouse = 10021
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}
+	8288.1.1 = {
+		add_spouse = 10021
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}
+	8298.10.28 = {
+		effect = { religion="rhllor" }
+		employer=4317
+	}
+	8310.1.1 = {
+		death="8310.1.1"
+	}
+}
+10021 = {
+	name="Гориана"
+	female=yes
+	add_trait="naive_appeaser"
+	religion="the_seven"
+	culture="stormlander"	
+	8274.1.1 = {
+		birth="8274.1.1"
+	}
+	8330.1.1 = {
+		death="8330.1.1"
+	}
+}
+
+###Wendwater
+44 = {
+	name="Пиерс"
+	dynasty=44
+	
+	martial = 6
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 3
+	learning = 5
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=6003244
+	mother=5003244
+	
+	add_trait="brave"
+	add_trait="tough_soldier"
+
+	8261.1.1 = {
+		birth="8261.1.1"
+	}
+	8277.1.1 = {
+		add_spouse = 10044
+		add_trait="knight"
+	}
+	8310.1.1 = {
+		death="8310.1.1"
+	}
+}
+10044 = {
+	name="Аннара" #Wife
+	female=yes
+	religion="the_seven"
+	culture="stormlander"
+	
+	8261.1.1 = {birth="8261.1.1"}
+}
+10144 = {
+	name="Лотар" #Son 1
+	dynasty=44
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=44
+	mother=10044
+	
+	8276.1.1 = {birth="8276.1.1"}
+	8292.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}
+}
+10244 = {
+	name="Манфред" #Son 2
+	dynasty=44
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=44
+	mother=10044
+	
+	8279.1.1 = {birth="8279.1.1"}
+	8295.1.1 = {
+		add_trait="poor_warrior"
+		add_trait="knight"
+	}
+}
+###Massey
+77153 = {
+	name="Марик"
+	dynasty=46
+	religion="the_seven"
+	culture="stormlander"	
+	
+	father=6004046
+	
+	8242.1.1 = {
+		birth="8242.1.1"
+	}
+	8258.1.1 = {
+		add_trait="knight"
+		add_spouse=77154
+	}
+	8299.2.11 = {
+		raise_levies = {
+			location = 304 #Storms End
+			force_mult = 1
+		}
+		effect = {
+			set_character_flag = neutral
+			clr_character_flag = supporting_king
+			clr_character_flag = against_king
+			d_dragonstone = {
+				holder_scope = {
+					ROOT = { join_attacker_wars = PREV }
+				}
+			}
+		}
+	}
+	# 8299.2.21 = {		#Why they were dismissed only to be raised again?
+		# raise_levies = {
+			# dismiss = yes
+			# location = 304 #Storms End
+			# force_mult = 1
+		# }
+	# }
+	8299.3.3 = {
+		# raise_levies = {
+			# location = 304 #Storms End
+			# force_mult = 1
+		# }
+		effect = {
+			clr_character_flag = neutral
+			set_character_flag = against_king
+			set_character_flag = against_loyal_liege
+			
+			k_stormlands = {
+				holder_scope = { 
+					reverse_opinion = {
+						modifier = opinion_with_rebel_leader
+						who = ROOT
+						years = 100
+					}
+					ROOT = { join_attacker_wars = PREV }
+				}
+			}
+		}
+	}
+	8299.7.1 = {
+		raise_levies = {
+			dismiss = yes
+			location = 304 #Storms End
+			force_mult = 1
+		}
+	}
+	8299.7.2 = {
+		raise_levies = {
+			location = 221 #Dragonstone
+			force_mult = 1
+		}
+	}
+	8299.7.5 = {
+		raise_levies = {
+			dismiss = yes
+			location = 221 #Dragonstone
+			force_mult = 1
+		}
+	}
+	8300.3.1 = {
+		raise_levies = {
+			location = 17 #Castle Black
+			force_mult = 1
+		}
+	}	
+	8310.1.1 = {
+		death="8310.1.1"
+	}
+}
+77154 = {
+	name="Малора"
+	female=yes
+	religion="the_seven"
+	culture="stormlander"	
+	8243.1.1 = {
+		birth="8243.1.1"
+	}
+	8310.1.1 = {
+		death="8310.1.1"
+	}
+}
+46 = {
+	name="Джастин"
+	dynasty=46
+	dna="bgaleqjfjfn"
+	properties="0i0cmk"
+	martial = 5
+	diplomacy = 10
+	intrigue = 5
+	stewardship = 5
+	learning = 5
+	religion="the_seven"
+	culture="western_valyrian"
+	add_trait="paranoid"
+	add_trait="tough_soldier"	
+	add_trait="honest"		
+	add_trait="kind"	
+	add_trait="gregarious"	
+	add_trait="diligent"	
+	father=77153
+	mother=77154
+	8270.1.1 = {
+		birth="8270.1.1"
+		effect = { culture="stormlander" }
+	}
+	8282.1.1 = {
+		add_trait="squire" #Роберт baratheon
+		employer=317
+		guardian=317		
+		add_trait="poor_warrior"
+	}
+	8284.1.1 = {
+		remove_trait="poor_warrior"		
+		add_trait="trained_warrior"
+	}
+	8286.1.1 = {
+		remove_trait="squire" 
+		add_trait="knight"
+		employer=4317
+		add_trait="lustful"	
+	}
+	8298.10.28 = {
+		effect = { religion="rhllor" }
+	}
+}
+8061046 = {
+	name="Джоселин"	# not a lord
+	female=yes
+	dynasty=46
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=77153
+	mother=77154
+
+	8262.1.1 = {birth="8262.1.1"}
+}
+8062046 = {
+	name="Джон"	# not a lord
+	dynasty=46
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=77153
+	mother=77154
+
+	8263.1.1 = {birth="8263.1.1"}
+	8279.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8281.1.1 = {add_spouse=4062046}
+}
+4062046 = {
+	name="Бетани"
+	female=yes
+
+	religion="the_seven"
+	culture="stormlander"
+
+	8263.1.1 = {birth="8263.1.1"}
+}
+77155 = {
+	name="Уоллес"
+	dynasty=46
+	religion="the_seven"
+	culture="stormlander"
+	father=77153
+	mother=77154
+	8275.1.1 = {
+		birth="8275.1.1"
+	}
+	8291.1.1 = {
+		add_trait="poor_warrior"
+	}
+	8296.1.1 = {
+		add_trait="squire" 
+		add_trait="nightswatch"
+		effect = { 
+			add_character_modifier = {
+				name = nw_steward
+				duration = -1
+			}
+		}
+	}
+}
+8066046 = {
+	name="Элинор"	# not a lord
+	female=yes
+	dynasty=46
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=8062046
+	mother=4062046
+
+	8286.1.1 = {birth="8286.1.1"}
+}
+8067046 = {
+	name="Альбин"	# not a lord
+	dynasty=46
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=8062046
+	mother=4062046
+
+	8288.1.1 = {birth="8288.1.1"}
+	8304.1.1 = {add_trait=poor_warrior}
+}
+8068046 = {
+	name="Давос"	# not a lord
+	dynasty=46
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=8062046
+	mother=4062046
+
+	8289.1.1 = {birth="8289.1.1"}
+	8305.1.1 = {add_trait=poor_warrior}
+}
+8069046 = {
+	name="Руперт"	# not a lord
+	dynasty=46
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=8062046
+	mother=4062046
+
+	8292.1.1 = {birth="8292.1.1"}
+	8308.1.1 = {add_trait=trained_warrior}
+}
+
+###
+###House Langward
+###
+48 = {		
+	name="Годрик"	
+	dynasty=48
+	
+	religion="the_seven"	
+	culture="crownlander"
+	
+	father=6003948
+	mother=5003948
+	
+	8256.1.1 = {birth="8256.1.1"}	
+	8272.1.1 = {
+		add_spouse = 10048
+		add_trait="poor_warrior"
+		add_trait="knight"
+	}
+}
+10048 = {		
+	name="Деийна"
+	female=yes
+
+	add_trait="naive_appeaser"
+	
+	religion="the_seven"	
+	culture="crownlander"
+	
+	8256.1.1 = {birth="8256.1.1"}	
+}
+910148 = {	
+	name="Джайлс"	#guy from the RPG
+	dynasty=48
+	
+	religion="the_seven"	
+	culture="crownlander"
+	
+	mother=10048
+	father=48
+
+	add_trait=lustful
+	
+	8274.1.1 = {birth="8274.1.1"}	
+	8290.1.1 = {
+		add_trait="poor_warrior"
+		add_trait="knight"
+	}
+}
+10248 = {		
+	name="Альмена"	
+	dynasty=48
+	female=yes
+	
+	religion="the_seven"	
+	culture="crownlander"
+	
+	mother=10048
+	father=48
+	
+	8277.1.1 = {birth="8277.1.1"}	
+}
+10348 = {		
+	name="Грегор"	
+	dynasty=48
+	
+	religion="the_seven"	
+	culture="crownlander"
+	
+	mother=10048
+	father=48
+	
+	8280.1.1 = {birth="8280.1.1"}	
+}
+
+###Farring
+#Issue of Dobber
+77111 = {
+	name="Джосмин" # random father
+	dynasty=24
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	father=6002824
+
+	8230.1.1 = {
+		birth="8230.1.1"
+	}
+	8246.1.1 = {
+		add_spouse = 10024
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}
+	8270.1.1={
+		death="8270.1.1"
+	}
+}
+10024 = {
+	name="Лерра"
+	female=yes
+	add_trait="naive_appeaser"
+	religion="the_seven"
+	culture="crownlander"
+	8230.1.1 = {
+		birth="8230.1.1"
+	}
+	8270.1.1={
+		death="8270.1.1"
+	}
+}
+175024 = {
+	name="Джендри"
+	dynasty=24
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	father=6002824
+	
+	8233.1.1 = {
+		birth="8233.1.1"
+	}
+	8269.1.1 = {
+		add_spouse = 475024
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}
+	8289.1.1={
+		death="8289.1.1"
+	}
+}
+475024 = {
+	name="Мэйген"
+	female=yes
+	add_trait="naive_appeaser"
+	religion="the_seven"
+	culture="crownlander"
+	8249.1.1 = {
+		birth="8249.1.1"
+	}
+}
+#Issue of Джосмин
+24 = {
+	name="Гилберт"
+	dynasty=24
+	
+	martial = 7
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 10
+	learning = 5
+	religion="the_seven"
+	culture="crownlander"
+	add_trait="skilled_tactician"
+	father=77111
+	mother=10024
+	
+	8260.1.1 = {
+		birth="8260.1.1"
+	}
+	8276.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}
+	8298.10.28 = { effect = { religion="rhllor" } }
+	8299.2.11 = {
+		raise_levies = {
+			location = 304 #Storms End
+			force_mult = 1
+		}
+		effect = {
+			set_character_flag = neutral
+			clr_character_flag = supporting_king
+			clr_character_flag = against_king
+			d_dragonstone = {
+				holder_scope = {
+					ROOT = { join_attacker_wars = PREV }
+				}
+			}
+		}
+	}
+	8299.3.3 = {
+		effect = {
+			clr_character_flag = neutral
+			set_character_flag = against_king
+			set_character_flag = against_loyal_liege
+			
+			k_stormlands = {
+				holder_scope = { 
+					reverse_opinion = {
+						modifier = opinion_with_rebel_leader
+						who = ROOT
+						years = 100
+					}
+					ROOT = { join_attacker_wars = PREV }
+				}
+			}
+		}
+	}
+	8299.7.1 = {
+		raise_levies = {
+			dismiss = yes
+			location = 304 #Storms End
+			force_mult = 1
+		}
+	}
+	8299.7.2 = {
+		raise_levies = {
+			location = 221 #Dragonstone
+			force_mult = 1
+		}
+	}
+	8299.7.5 = {
+		raise_levies = {
+			dismiss = yes
+			location = 221 #Dragonstone
+			force_mult = 1
+		}
+	}
+	8300.3.1 = {
+		raise_levies = {
+			location = 17 #Castle Black
+			force_mult = 1
+		}
+	}	
+}
+
+2024 = {
+	name="Аннара"
+	female=yes
+	dynasty=24
+	
+	martial = 5
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	learning = 5
+	religion="the_seven"
+	culture="crownlander"
+	add_trait="proud"
+	father=77111
+	mother=10024
+	8264.1.1 = {
+		birth="8264.1.1"
+	}
+	8294.1.1 = {
+		death="8294.1.1"
+	}
+}
+#Issue of Джендри
+77112 = {
+	name="Годри"
+	# Godgry the Giantsslayer
+	dynasty=24
+	martial = 5
+	diplomacy = 4
+	intrigue = 3
+	stewardship = 4
+	learning = 5
+	religion="the_seven"
+	culture="crownlander"	
+	father=175024
+	mother=475024
+	add_trait="strong"
+	add_trait="zealous"
+	add_trait="ambitious"
+	add_trait="brave"
+	add_trait="rude"
+	add_trait="proud"
+	8270.1.1 = {
+		birth="8270.1.1"
+	}
+	8282.1.1 = {
+		add_trait="skilled_warrior" 
+	}
+	8286.1.1 = {
+		add_trait="knight"
+		add_trait="tough_soldier"
+		employer=4317
+	}
+	8298.10.28 = { effect = { religion="rhllor" } }
+	8299.12.1 = { give_nickname = nick_the_giantsslayer }
+	8320.1.1={
+		death="8320.1.1"
+	}
+}
+#Issue of Гилберт
+1024 = {
+	name="Брайен"
+	dynasty=24
+	religion="the_seven"
+	culture="crownlander"
+	add_trait="just"
+	father=24
+	8285.1.1 = {
+		birth="8285.1.1"
+	}
+	8295.1.1 = {
+		add_trait="squire"
+		add_trait=poor_warrior	
+		effect = {
+			if = {
+				limit = { is_adult = no }
+				c_dragonstone = { holder_scope = { ROOT = { set_guardian = PREV } } }
+			}	
+		}		
+		guardian=4317
+	}
+	8298.10.28 = { 
+		religion="rhllor"
+	}
+	8300.5.1 = {
+		add_trait = ill
+		death = { death_reason = death_trait }
+	}
+}
+###Rollingford
+29 = {
+	name="Байль"
+	dynasty=29
+	
+	martial = 8
+	diplomacy = 5
+	intrigue = 2
+	stewardship = 3
+	learning = 5
+	religion="the_seven"
+	culture="riverlander"
+
+	father=6002129
+	mother=5002129
+
+	add_trait="wroth"
+
+	8260.1.1 = {
+		birth="8260.1.1"
+	}
+	8276.1.1 = {
+		add_spouse = 10029
+		add_trait="knight"
+		add_trait="trained_warrior"
+		add_trait="tough_soldier"
+	}
+	8320.1.1={
+		death="8320.1.1"
+	}
+}
+10029 = {
+	name="Деана" #Wife
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	
+	8260.1.1 = {birth="8260.1.1"}
+}
+10129 = {
+	name="Томмен" #Son 1
+	dynasty=29
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=29
+	mother=10029
+	
+	8279.1.1 = {birth="8279.1.1"}
+	8295.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}
+}
+10229 = {
+	name="Торбин" #Son 2
+	dynasty=29
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=29
+	mother=10029
+	
+	8280.1.1 = {birth="8280.1.1"}
+}
+###Edgerton
+40 = {
+	name="Седирик"
+	dynasty=40
+	
+	martial = 2
+	diplomacy = 2
+	intrigue = 5
+	stewardship = 5
+	learning = 5
+	religion="the_seven"
+	culture="riverlander"
+	add_trait="proud"
+	
+	father=6003540
+	mother=5003540
+
+	8260.1.1 = {
+		birth="8260.1.1"
+	}
+	8276.1.1 = {
+		add_trait="tough_soldier"
+		add_spouse = 10040
+		add_trait="knight"
+	}
+	8320.1.1={
+		death="8320.1.1"
+	}
+}
+10040 = {
+	name="Бринда" #Wife
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	
+	8260.1.1 = {birth="8260.1.1"}
+}
+10140 = {
+	name="Эддисон" #Son 1
+	dynasty=40
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=40
+	mother=10040
+	
+	8279.1.1 = {birth="8279.1.1"}
+	8295.1.1 = {
+		add_trait="knight"
+	}
+}
+10240 = {
+	name="Пармен" #Son 2
+	dynasty=40
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=40
+	mother=10040
+	
+	8280.1.1 = {birth="8280.1.1"}
+	8296.1.1 = {
+		add_trait="knight"
+	}
+}
+###Gaunt
+77156 = {
+	name="Саймон" #named in the show
+	dynasty=23
+	religion="the_seven"
+	culture="crownlander"
+	
+	father=6002323
+	
+	8217.1.1 = {
+		birth="8217.1.1"
+	}
+	8235.1.1 = {
+		add_spouse = 77157
+		add_trait="knight"
+	}
+	8275.1.1 = {
+		death="8275.1.1"
+	}
+}
+77157 = {
+	name="Джейн" #Wife
+	female=yes
+	religion="the_seven"
+	culture="crownlander"
+	
+	8217.1.1 = {birth="8217.1.1"}
+}
+77158 = {
+	name="Маттос"
+	dynasty=23
+	religion="the_seven"
+	culture="crownlander"
+	father=77156
+	mother=77157
+	8235.1.1 = {
+		birth="8235.1.1"
+	}
+	8251.1.1 = {
+		add_spouse = 77159
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}
+}
+77159 = {
+	name="Янна" #Wife
+	female=yes
+	religion="the_seven"
+	culture="crownlander"
+	
+	8236.1.1 = {birth="8236.1.1"}
+}
+11023 = {
+	name="Джон"
+	dynasty=23
+	religion="the_seven"
+	culture="crownlander"
+	father=77156
+	mother=77157
+	8236.1.1 = {
+		birth="8236.1.1"
+	}
+	8251.1.1 = {
+		add_trait="knight"
+		add_trait="poor_warrior"
+	}
+	8283.3.1={
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+1023 = {
+	name="Гвейн"
+	dynasty=23	
+	martial = 6
+	diplomacy = 2
+	intrigue = 2
+	stewardship = 7
+	learning = 5
+	religion="the_seven"
+	culture="crownlander"
+	add_trait="wroth"
+	add_trait="misguided_warrior"
+	father=77156
+	mother=77157
+	8238.1.1 = {
+		birth="8238.1.1"
+	}
+	8254.1.1 = {
+		add_trait="knight"
+		add_trait="skilled_warrior"
+	}
+	8259.6.1 = { #perhaps after death of Duncan the Tall
+		employer=56
+		add_trait="kingsguard"
+	}
+	8277.1.1 = {
+		death = { 
+			death_reason = death_duel 
+			killer=77141
+		} # Slain by Ser Саймон Hollard, 
+	}
+}
+23 = {
+	name="Конрал"
+	dynasty=23
+	
+	martial = 6
+	diplomacy = 2
+	intrigue = 2
+	stewardship = 7
+	learning = 5
+	religion="the_seven"
+	culture="crownlander"
+	add_trait="harelip"
+	add_trait="amateurish_plotter"
+	father=77158
+	mother=77159
+	8257.1.1 = {
+		birth="8257.1.1"
+	}
+	8273.1.1 = {
+		add_spouse = 10023
+		add_trait="knight"
+		add_trait="poor_warrior"
+	}
+	8310.1.1 = {
+		death="8310.1.1"
+	}
+}
+10023 = {
+	name="Эфросина" #Wife
+	female=yes
+	religion="the_seven"
+	culture="crownlander"
+	
+	8257.1.1 = {birth="8257.1.1"}
+}
+10123 = {
+	name="Норрин" #Son 1
+	dynasty=23
+	religion="the_seven"
+	culture="crownlander"
+	
+	father=23
+	mother=10023
+	
+	8276.1.1 = {birth="8276.1.1"}
+	8291.1.1 = {
+		add_trait="knight"
+		add_trait="poor_warrior"
+	}
+}
+10223 = {
+	name="Норберт" #Son 2
+	dynasty=23
+	religion="the_seven"
+	culture="crownlander"
+	
+	father=23
+	mother=10023
+	
+	8279.1.1 = {birth="8279.1.1"}
+	8295.1.1 = {
+		add_trait="knight"
+		add_trait="poor_warrior"
+	}
+}
+
+### Low Born
+202081092 = {
+	name="Квиберн"
+	dna="cgahjwljgch"
+	properties="kk0h0"
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	martial = 2
+	stewardship = 4
+	intrigue = 3
+	diplomacy = 5
+	learning = 8
+	
+	add_trait="quick"
+	add_trait="impaler"
+	add_trait="cruel"
+	add_trait="ambitious"
+	add_trait="cynical"
+	add_trait="deceitful"
+	
+	8239.1.1 = {
+		birth="8239.1.1"
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8255.1.1 = {
+		add_trait="mastermind_theologian"
+		add_trait="poor_warrior"
+		add_trait="maester"
+		effect = { set_character_flag = serving_with_lord }
+	}
+	8278.1.1={
+		employer=88129
+	}
+	8284.1.1 = {
+		remove_trait="maester" #expelled from order
+		remove_trait="mastermind_theologian"
+		add_trait=elusive_shadow
+		effect = { #Brave Companions
+			if = {
+				limit = { NOT = { year = 8286 } }
+				k_pentos = {
+					holder_scope = {
+						reverse_banish = ROOT
+					}
+				}
+			}	
+		}	
+	}
+	8286.1.1 = { employer=80012560} # Vargo Hoat
+	8299.10.1 = { employer = 9316 } #Джоффри I "Baratheon"
+	8300.1.2 = { employer = 7316 } #Томмен I "Baratheon"
+
+}
+203081092 = {
+	name="Шая"
+	female=yes
+
+	dna="aaaha0cdea0"
+	properties="kc0hikbebcb"
+	
+	religion="gods_lorath"
+	culture="lorathi"
+	
+	add_trait="naive_appeaser"
+	add_trait="deceitful"
+	add_trait="fair"
+	add_trait="craven"
+	add_trait="hedonist"
+	add_trait="proud"
+	add_trait="ambitious"
+	
+	8280.1.1 = {
+		birth="8280.1.1"
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8298.11.2={
+		employer=9316 # Джоффри Baratheon
+		effect = { fertility = -0.95 }
+	}
+	8300.2.1 = {
+		death = {
+			death_reason = death_murder
+			killer=5190 # Тирион Lannister
+		}
+	}
+}
+200300507 = {
+	name="Торос"
+	dynasty=300507 # of Myr
+
+	dna="dbfkf0edaa0"
+	properties="kl0fjkbebcb"
+
+	religion="rhllor"
+	culture="myrman"
+	
+	martial = 10
+	diplomacy = 10
+	
+	add_trait="detached_priest"
+	add_trait="drunkard"
+	add_trait="hedonist"
+	add_trait="gluttonous"
+	add_trait="proud"
+	add_trait="cynical"
+	
+	8256.1.1 = {
+		birth="8256.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8272.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8276.1.1 = {
+		add_trait="red_priest"
+		add_trait = is_fat
+		effect = {
+			set_variable = { which = physique_variable value = 15 }		
+			add_artifact = fire_sword
+		}
+	}
+	8280.1.1 = {employer=77037}	# Эйрис II Targaryen
+	8284.1.1 = {employer=317}	# Роберт Baratheon
+	8298.5.1 = {
+		effect = { 
+			wealth = 40
+			add_character_modifier = { 
+				name = normal_tourny_1st
+				duration = -1
+			} 
+		}
+	}
+	8298.10.28={
+		remove_trait="drunkard"
+		remove_trait="hedonist"
+		remove_trait="gluttonous"
+		remove_trait="proud"
+		remove_trait="cynical"
+		add_trait="mystic"
+		add_trait="charitable"
+		add_trait="brave"
+		employer = 1303 #Beric
+		effect = {
+			remove_all_job_titles = yes
+			give_job_title = job_spiritual
+		}
+	}
+	8299.11.5 = {
+		employer = 250159 #Stoneheart
+	}
+}
+204081092 = {		
+	name="Роберт"	
+	dynasty=1510 #Strong
+	
+	dna="bibea0h0000"
+	properties="0k00i0"
+
+	martial = 10 #9	
+	diplomacy = 2	
+	intrigue = 2	
+	stewardship = 2	
+	learning = 2
+	
+	religion="the_seven"	
+	culture="crownlander"
+
+	add_trait="tall"
+	add_trait="strong"
+	add_trait="slow" #dim, brutal, effective
+
+	#add_trait="impaler" #dedicated torture is too much effort?
+	#add_trait="paranoid"
+	#add_trait="possessed"
+	
+	8265.1.1 = {
+		birth="8265.1.1"
+		effect = { 
+			set_immune_to_pruning = yes
+			if = {
+				limit = {
+					OR = {
+						NOT = { year = 8300 }
+						AND = {
+							NOT = { year = 8301 }
+							NOT = { month = 2 }
+						}
+					}	
+				}
+				death = yes
+			}
+		}
+	}
+	8300.3.1 = { 
+		employer = 7316  #Томмен I "Baratheon"
+		add_trait="undead"
+		add_trait="master_warrior"
+		add_trait="knight"
+		add_trait="misguided_warrior"
+		add_trait="brave"
+		add_trait="cruel"
+		add_trait="wroth"
+	} 
+	8300.7.1 = { 
+		add_trait="kingsguard"	
+		employer=3190
+	} 
+}
+
+###High Septon
+77113 = {
+	name=" " # The Fat One
+	# High Septon
+	dynasty = 777777
+	properties="0g0000"
+	
+	martial = 2
+	diplomacy = 4
+	intrigue = 3
+	stewardship = 4
+	learning = 9
+	religion="the_seven"
+	culture="crownlander"
+	add_trait="gluttonous"
+	add_trait="greedy"
+	add_trait="craven"
+	add_trait="septon"
+	add_trait="scholarly_theologian"
+	8230.1.1 = {
+		birth="8230.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8260.1.1={ 
+		give_nickname = nick_the_fat_one 
+		add_trait = is_fat
+		effect = {
+			set_variable = { which = physique_variable value = 20 }		
+		}
+	}
+	8294.1.1 = { #Lends Iron Throne gold
+		effect = {
+			set_character_flag = liege_loan_500
+			set_character_flag = given_personal_loan
+			add_character_modifier = {
+				name = "liege_loan"
+				duration = "1825"
+			}
+			e_iron_throne = {
+				ROOT = { save_persistent_event_target = { name = loan_title scope = PREV } }
+				holder_scope = {
+					reverse_opinion = {
+						who = ROOT
+						modifier = opinion_liege_loan
+						years = 100
+					}
+				}
+			}
+		}
+	}	
+	8299.5.1={
+		death = { death_reason = death_rabble } # Killed in the King's Landing riots
+	}
+}
+77903 = {
+	name=" " # The 2nd One
+	dynasty = 777777
+	properties="0k00h0"
+	
+	# High Septon
+	martial = 0
+	diplomacy = 2
+	intrigue = 0
+	stewardship = 3
+	learning = 9
+	religion="the_seven"
+	culture="crownlander"
+	add_trait="honest"
+	add_trait="celibate"
+	add_trait="content"
+	add_trait="craven"
+	add_trait="septon"
+	add_trait="scholarly_theologian"
+	8223.1.1 = {
+		birth="8223.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8299.4.1={ #Lends Iron Throne gold
+		effect = {
+			set_character_flag = liege_loan_500
+			set_character_flag = given_personal_loan
+			add_character_modifier = {
+				name = "liege_loan"
+				duration = "1825"
+			}
+			e_iron_throne = {
+				ROOT = { save_persistent_event_target = { name = loan_title scope = PREV } }
+				holder_scope = {
+					reverse_opinion = {
+						who = ROOT
+						modifier = opinion_liege_loan
+						years = 100
+					}
+				}
+			}
+		}
+	}	
+	8300.3.1={
+		death = { 
+			death_reason = death_murder_unknown
+			killer = 203352
+		} # Killed by Осни Kettleback
+	}
+}
+77904 = {
+	name=" " # High Sparrow
+	dynasty = 777777
+	properties="0a0000"
+	# High Septon
+	martial = 5
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 7
+	learning = 9
+	religion="the_seven"
+	culture="crownlander"
+	add_trait="zealous"
+	add_trait="ambitious"
+	add_trait="diligent"
+	add_trait="authoritative"
+	add_trait="septon"
+	add_trait="scholarly_theologian"
+	8243.1.1 = {
+		birth="8243.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8300.3.1 = {
+		give_nickname = nick_the_sparrow
+		effect = {
+			set_character_flag = high_sparrow
+			set_character_flag = nickname_event
+		}
+	}
+}
+#The Most Devout
+77900 = {
+	name="Оллидор" 
+	learning = 9
+	religion="the_seven"
+	culture="crownlander"
+	add_trait="lustful"
+	add_trait="scholarly_theologian"
+	8240.1.1 = {
+		birth="8240.1.1"
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8275.1.1 = {
+		add_trait="septon"
+		employer=77113
+		effect = { set_character_flag = themost_devout }
+	}
+}
+77901 = {
+	name="Рейнард" 
+	learning = 8
+	religion="the_seven"
+	culture="crownlander"
+	add_trait="lustful"
+	add_trait="scholarly_theologian"
+	8242.1.1 = {
+		birth="8242.1.1"
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8278.1.1 = {
+		add_trait="septon"
+		employer=77113
+		effect = { set_character_flag = themost_devout }
+	}
+}
+77902 = {
+	name="Торбет" 
+	learning = 8
+	religion="the_seven"
+	culture="crownlander"
+	add_trait="gluttonous"
+	add_trait="humble"
+	add_trait="scholarly_theologian"
+	8236.1.1 = {
+		birth="8236.1.1"
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8278.1.1 = {
+		add_trait="septon"
+		employer=77113
+		effect = { set_character_flag = themost_devout }
+	}
+}
+
+###Grandmaester Пицель###
+696969100 = {
+	name="Пицель"
+	dna="afildmlbeec"
+	properties="ca0dfk0000"
+	dynasty = 0
+	
+	martial = 4
+	diplomacy = 5
+	intrigue = 8
+	stewardship = 5
+	learning = 5
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	add_trait="mastermind_theologian"	
+	add_trait="quick"
+	add_trait="deceitful"
+	add_trait="craven"
+	add_trait="ambitious"
+	add_trait="arbitrary"
+	add_trait="lustful"
+	
+	8216.9.1 = {
+		birth="8216.9.1"
+		effect = { 
+			health = 6 
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8232.9.1 = {
+		add_trait = maester
+	}
+	8245.1.1 = {
+		remove_trait = maester
+		add_trait = archmaester
+		employer = 88765003 #Hake
+	}
+	8249.1.1 = {
+		employer = 88765004 #Harmune
+	}
+	8259.2.1={ #becomes grand maester		
+		employer = 77034		#Эйгон V the Unlikley
+		effect = {
+			set_character_flag = grandmaester
+			give_minor_title = title_grandmaester
+			give_job_title = job_physician
+			if = {
+				limit = { has_dlc = "Zeus" }
+				give_minor_title = title_teacher
+			}	
+		}
+	}
+	8259.6.1={
+		employer = 77036		#Джейхейрис II
+	}
+	8262.1.1={
+		employer = 77037		#Эйрис II the Mad
+	}
+	8265.1.1 = {
+		effect = {
+			set_character_flag = loyalty_bought
+			opinion = {
+				modifier = opinion_loyalty_bought
+				who = 190 #Tywin
+				years = 100
+			}
+		}
+	}
+	8284.1.1 = { employer = 317 } #Роберт becomes King
+	8298.10.28 = { employer = 9316 } #Beloved joff
+	8300.1.2 = { employer = 7316 } #Томмен I "Baratheon"
+	8300.2.9={
+		effect = {
+			clr_character_flag = loyalty_bought
+		}
+	}
+	8300.5.1={
+		death = {
+			# Killed by The spider
+			death_reason = death_murder_unknown
+			killer = 696969101
+		}
+	}
+}
+###Варис###
+696969101 = {
+	name="Варис"
+	religion="rhllor"
+	culture="lysene"	
+	#dna="cblckdaggaq"#non-valyrian dna
+	#properties="cn0eik0000"
+	dna="abfhbfddaap"
+	properties="a0000a"
+	
+	martial = 3
+	diplomacy = 12
+	intrigue = 17
+	stewardship = 6
+	learning = 7
+	
+	add_trait="elusive_shadow"
+	add_trait="genius"
+	#add_trait="gluttonous"
+	#add_trait="diligent"
+	add_trait="patient"
+	#add_trait="craven" #takes gumption to do what he does
+	add_trait="gregarious"
+	add_trait="cynical"	
+	#add_trait="arbitrary"
+	
+	8257.1.1 = {
+		birth="8257.1.1"
+		effect = { 
+			health = 2
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8267.1.1 = {
+		add_trait="eunuch"
+		add_trait="ambitious"
+		add_trait="deceitful"
+		effect = {
+			if = {
+				limit = { NOT = { year = 8279 } }
+				b_pentosharbor = {
+					holder_scope = {
+						ROOT = { move_character = PREV }
+					}
+				}
+			}	
+		}
+	}
+	8269.1.1 = {
+		add_trait="groomed"
+		effect = {
+			add_friend = 600000040 #Illyrio
+		}	
+	}
+	8279.1.1 = { 
+		employer =  77037 #Эйрис
+		effect = { religion = the_seven }
+	} 
+	8284.1.1 = { employer =  317 } #Роберт becomes King
+	8298.10.28={ employer = 9316 } #Beloved Joff
+	8300.3.1 = { 
+		employer = 125009	#Эйгон
+		effect = {
+			add_friend = 125009
+		} 
+	}
+}
+##Moon Boy##
+
+696969102 = {
+	name="Лунатик"
+	
+	religion="the_seven"
+	culture="crownlander"
+
+	dna="bbeaf0aiag0"
+	properties="kn0eikbebcb"
+	
+	add_trait="slow"
+	
+	employer = 77037
+	
+	8280.1.1 = {
+		birth="8280.1.1"
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8284.1.1 = {employer="317"}
+	8295.1.1 = {
+		add_trait="intricate_webweaver"
+		add_trait="poet"
+		add_trait="gregarious"
+		effect = {
+			give_minor_title = title_court_jester 
+		}
+	}
+	8298.10.28 = {employer=9316}
+	8300.1.2 = { employer = 7316 } #Томмен I "Baratheon"
+}
+696969103 = { #Эйрис' pyromancer
+	name="Россарт"
+	
+	intrigue = 5
+	stewardship = 5
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	add_trait="cruel"
+	add_trait="ambitious"
+	add_trait="mystic"
+	add_trait="intricate_webweaver"
+	add_trait="fire_obsessed" 
+	
+	8249.1.1 = {
+		birth="8249.1.1"
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8269.1.1 = {
+		effect = {
+			add_character_modifier = { 
+				name = pyromancer
+				duration = -1
+			}
+			join_society = alchemists_guild
+			society_rank_up = 3
+		}
+	}
+	8278.1.1 = { 
+		employer = 77037 
+		# effect = {
+			# liege = {
+				# opinion = {
+					# modifier = opinion_pyromancer
+					# who = ROOT
+					# years = 100
+					# multiplier = 2
+				# }
+			# }
+		# }
+	}
+	8283.1.1={
+		death = {
+			death_reason = death_execution
+			killer = 3190 # Jaime
+		}
+	}
+}
+696969104 = { #A Knight in King's Landing
+	name="Таллад"
+	
+	intrigue = 3
+	stewardship = 1
+	diplomacy = 2
+	martial = 2
+	learning = 1
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	add_trait="ambitious"
+	add_trait="tall"
+	add_trait="brave"
+	add_trait="gregarious"
+	add_trait="misguided_warrior"
+	
+	8279.1.1 = {
+		birth="8279.1.1"
+		# effect = {  
+			# dynasty = none
+			# set_immune_to_pruning = yes
+		# }
+	}
+	8284.1.1 = { employer =  317 } #Роберт becomes King	
+	8295.1.1 = {
+		add_trait=knight
+		add_trait=trained_warrior
+		give_nickname=nick_the_tall
+		dynasty=1524
+	}
+	8298.10.28={ employer = 9316 } #Beloved Joff
+	8300.1.1 = { employer = 7316 } #Томмен I "Baratheon"
+	8300.5.17 = {	#Imprisoned by Квиберн
+		effect = {
+			e_iron_throne = {
+				holder_scope = {
+					ROOT = { imprison = PREV }
+				}
+			}
+		}
+	}
+}
+696969105 = { #member of the City Watch of King's Landing
+	name="Аллар"
+	dynasty = 1520 #Deem
+	
+	intrigue = 3
+	stewardship = 2
+	diplomacy = 1
+	martial = 3
+	learning = 1
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	add_trait="ambitious"
+	add_trait="arbitrary"
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="misguided_warrior"
+	
+	8263.1.1 = {
+		birth="8263.1.1"
+		effect = { 
+			set_immune_to_pruning = yes
+			b_kings_landing = {
+				holder_scope = { ROOT = { move_character = PREV } }
+			}
+		}
+	}
+	8279.1.1 = {
+		add_trait=trained_warrior
+	}
+	8299.2.1 = {
+		death = {
+			death_reason = death_murder_unknown
+			killer = 5190 #Тирион
+		}
+	}
+}
+696969106 = { #member of the City Watch of King's Landing
+	name="Хамфри"
+	# dynasty = 0 #Unknown
+	
+	martial = 4	#Competent enough to become commander of Dragon Gate
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	add_trait="bastard"
+	
+	8260.1.1 = {
+		birth="8260.1.1"
+		effect = { 
+			dynasty = none
+			set_immune_to_pruning = yes
+			b_kings_landing = {
+				holder_scope = { ROOT = { move_character = PREV } }
+			}
+		}
+		give_nickname = nick_waters
+	}
+	8276.1.1 = {
+		add_trait=trained_warrior
+		add_trait="tough_soldier"	#Military education
+	}
+}
+
+1031875 = {
+	name = "Реннифер" # Guy who brags about having dragon blood
+	dynasty = 1875 #Longwaters
+	
+	religion="the_seven"
+	culture="western_valyrian"
+	
+	father = 1001875
+	mother = 1021875
+
+	add_trait=thrifty_clerk
+	add_trait=proud
+	
+	8224.1.1 = { 
+		birth="8224.1.1" 
+		effect = {
+			e_iron_throne = {
+				holder_scope = {
+					ROOT = { move_character = PREV }
+				}
+			}
+		}	
+	}
+}
+### Blackberry
+1522 = {
+	name="Джейт"
+	dynasty=1522 #Blackberry
+
+	martial = 4	#Competent enough to become captain of Dragonstone gates
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	8252.1.1 = { birth="8252.1.1" }
+	8268.1.1 = {
+		employer=77039	#Рейгар Targaryen
+		add_trait=tough_soldier	#Military education
+		add_trait=trained_warrior
+	}
+	8284.1.1 = {
+		employer=4317	#Stannis Baratheon
+	}
+	8299.6.1 = {
+		death = { 								#Died before Давос reached Dragonstone in ASOS. Given credit to Blackwater Battle
+			death_reason = death_battle 
+			killer = 190
+		}
+	}
+}
+101522 = {
+	name="Омер"
+	dynasty=1522 #Blackberry
+
+	religion="the_seven"
+	culture="crownlander"
+	
+	father=1522	#Made him son of Джейт
+	
+	8274.1.1 = { birth="8274.1.1" }
+	8290.1.1 = {
+		add_trait=trained_warrior
+		employer=4317
+	}
+	8299.12.1 = { 
+		effect = {
+			k_lys = {
+				holder_scope = {
+					reverse_banish = PREVPREV #Went with Edric Storm
+				}
+			}
+		}
+	}
+}
+
+### Manning
+300043 = {
+	name="Саймон"	# not a lord
+	dynasty=43
+	
+	religion="the_seven"
+	culture="crownlander"
+
+	father=116043
+
+	8260.1.1 = {birth="8260.1.1"}
+	8276.1.1 = {
+		add_trait=knight 
+		add_trait=trained_warrior
+	}
+	8278.1.1 = {add_spouse=400043}
+}
+400043 = {
+	name="Фалена"
+	female=yes
+	employer=2039
+
+	religion="the_seven"
+	culture="crownlander"
+
+	8260.1.1 = {birth="8260.1.1"}
+}
+300143 = {
+	name="Мередит"	# not a lord
+	female=yes
+	dynasty=43
+
+	religion="the_seven"
+	culture="crownlander"
+
+	father=300043
+	mother=400043
+
+	8282.1.1 = {birth="8282.1.1"}
+}
+300243 = {
+	name="Саймон"	# not a lord
+	dynasty=43
+
+	religion="the_seven"
+	culture="crownlander"
+
+	father=300043
+	mother=400043
+
+	8286.1.1 = {birth="8286.1.1"}
+	8300.1.1 = {add_trait=poor_warrior}
+}
+###House Hardy
+11247 = {
+	name="Люсифер"
+	dynasty=47
+	
+	religion="the_seven"
+	culture="crackclawmen"
+
+	father=111047
+	
+	8226.1.1 = {birth="8226.1.1"}
+	8244.1.1 = {add_trait="knight"}
+	8263.1.1 = {death="8263.1.1"}
+}
+11347 = {
+	name="Лукас"
+	dynasty=47
+	
+	religion="the_seven"
+	culture="crackclawmen"
+
+	father=11247
+	
+	8250.1.1 = {birth="8250.1.1"}
+	8266.1.1 = {add_trait="knight"}
+}
+11467 = {
+	name="Гаррольд"
+	dynasty=47
+	
+	religion="the_seven"
+	culture="crackclawmen"
+
+	father=11347
+	
+	8270.1.1 = {birth="8270.1.1"}
+	8286.1.1 = {add_trait="knight"}
+}
+###House Cave (174411)
+300174411 = {
+	name="Марик"
+	dynasty=174411
+	
+	religion="the_seven"
+	culture="crackclawmen"
+
+	father=302174411
+	
+	8227.1.1 = {birth="8227.1.1"}
+	8245.1.1 = {add_trait="knight"}
+	8265.1.1 = {death="8265.1.1"}
+}
+301174411 = {
+	name="Алин"
+	dynasty=174411
+	
+	religion="the_seven"
+	culture="crackclawmen"
+
+	father=300174411
+	
+	8245.1.1 = {birth="8245.1.1"}
+	8265.1.1 = {add_trait="knight"}
+}
+319174411 = {
+	name="Клэйтон"
+	dynasty=174411
+	
+	religion="the_seven"
+	culture="crackclawmen"
+
+	father=301174411
+	
+	8270.1.1 = {birth="8270.1.1"}
+	8286.1.1 = {add_trait="knight"}
+}
+
+
+###House Boggs (174410)
+300174410 = {
+	name="Юстас"
+	dynasty=174410
+	
+	religion="the_seven"
+	culture="crackclawmen"
+
+	father=302174410
+	
+	8220.1.1 = {birth="8220.1.1"}
+	8244.1.1 = {add_trait="knight"}
+	8260.1.1 = {death="8260.1.1"}
+}
+301174410 = {
+	name="Перкин"
+	dynasty=174410
+	
+	religion="the_seven"
+	culture="crackclawmen"
+
+	father=300174410
+	
+	8248.1.1 = {birth="8248.1.1"}
+	8268.1.1 = {add_trait="knight"}
+}
+309174410 = {
+	name="Беннард"
+	dynasty=174410
+	
+	religion="the_seven"
+	culture="crackclawmen"
+
+	father=301174410
+	
+	8268.1.1 = {birth="8268.1.1"}
+	8288.1.1 = {add_trait="knight"}
+}
+
+###House Pyne (174412)
+
+300174412 = {
+	name="Робин"
+	dynasty=174412
+	
+	religion="the_seven"
+	culture="crackclawmen"
+
+	father=302174412
+	
+	8227.1.1 = {birth="8227.1.1"}
+	8244.1.1 = {add_trait="knight"}
+	8258.1.1 = {death="8258.1.1"}
+}
+301174412 = {
+	name="Адриан"
+	dynasty=174412
+	
+	religion="the_seven"
+	culture="crackclawmen"
+
+	father=300174412
+	
+	8242.1.1 = {birth="8242.1.1"}
+	8260.1.1 = {add_trait="knight"}
+}
+
+###House Sweet (1470)
+
+1001470 = {
+	name="Саймон"		# semi-canon, a lord. Sails with Stannis, calls Джон Snow a craven. Name unknown.
+	dynasty=1470
+	
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=101470
+	
+	8260.1.1 = {birth="8260.1.1"}
+	8276.1.1 = {
+		add_trait="knight" 
+		add_trait="trained_warrior" 
+		add_trait="envious"
+		add_trait=brave
+		add_trait=proud
+	}
+	8282.1.1 = {
+		add_spouse = 131479 #Бетани Scales
+	}
+	8298.10.28 = {
+		effect = { religion="rhllor" }
+	}
+}
+101470 = {
+	name="Джон"		# a lord
+	dynasty=1470
+	
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=111470
+	
+	8231.1.1 = {birth="8231.1.1"}
+	8247.1.1 = {
+		add_trait="knight" 
+		add_trait="poor_warrior"
+	}
+	8292.1.1 = {
+		death="8292.1.1"
+	}
+}
+111470 = {
+	name="Стеффон"		# a lord
+	dynasty=1470
+	
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=301470
+	
+	8203.1.1 = {birth="8203.1.1"}
+	8219.1.1 = {
+		add_trait="knight" 
+		add_trait="poor_warrior"
+	}
+	8250.1.1 = {
+		death="8250.1.1"
+	}
+}
+#Uncles, cousins and brothers
+121470 = {
+	name="Робин"		# not a lord
+	dynasty=1470
+	
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=111470
+	
+	8235.1.1 = {birth="8235.1.1"}
+	8251.1.1 = {
+		add_trait="knight" 
+		add_trait="poor_warrior"
+	}
+	8283.1.1 = {
+		death="8283.1.1"
+	}
+}
+131470 = {
+	name="Донтос"		# not a lord
+	dynasty=1470
+	
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=121470
+	
+	8264.1.1 = {birth="8264.1.1"}
+	8280.1.1 = {
+		add_trait="knight" 
+		add_trait="poor_warrior"
+	}
+}
+141470 = {
+	name="Денис"		# not a lord
+	dynasty=1470
+	
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=121470
+	
+	8269.1.1 = {birth="8269.1.1"}
+	8285.1.1 = {
+		add_trait="knight" 
+		add_trait="poor_warrior"
+	}
+}
+151470 = {
+	name="Лоллис"		# not a lord
+	female=yes
+	dynasty=1470
+	
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=121470
+	
+	8271.1.1 = {birth="8271.1.1"}
+}
+161470 = {
+	name="Борос"		# not a lord
+	dynasty=1470
+	
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=111470
+	
+	8242.1.1 = {birth="8242.1.1"}
+	8258.1.1 = {
+		add_trait="knight" 
+		add_trait="poor_warrior"
+	}
+}
+171470 = {
+	name="Логейн"		# not a lord
+	dynasty=1470
+	
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=101470
+	
+	8264.1.1 = {birth="8264.1.1"}
+	8280.1.1 = {
+		add_trait="knight" 
+		add_trait="poor_warrior"
+	}
+}
+181470 = {
+	name="Ренфред"		# not a lord
+	dynasty=1470
+	
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=1001470	#Саймон Sweet
+	mother=131479	#Бетани Scales
+	
+	8283.1.1 = {birth="8283.1.1"}
+	8299.1.1 = {
+		add_trait="knight" 
+		add_trait="poor_warrior"
+	}
+}
+191470 = {
+	name="Роэлла"		# not a lord
+	female=yes
+	dynasty=1470
+	
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=1001470	#Саймон Sweet
+	mother=131479	#Бетани Scales
+	
+	8286.1.1 = {birth="8286.1.1"}
+}
+
+
+
+###House Scales (1479)
+
+1479 = {
+	name="Бенетон"		# canon, queens man
+	dynasty=1479
+	
+	religion="the_seven"
+	culture="western_valyrian"
+	
+	father=101479
+	
+	8266.1.1 = {birth="8266.1.1"}
+	8282.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}
+	8284.1.1 = {
+		employer=4317 #temporary, until barony is found	
+	}
+	8298.10.28 = {
+		effect = { religion="rhllor" }
+	}
+}
+131479 = {
+	name="Бетани"		# not a lord
+	female=yes
+	dynasty=1479
+	
+	religion="the_seven"
+	culture="western_valyrian"
+	
+	father=101479
+	
+	8266.1.1 = {birth="8266.1.1"}
+	8282.1.1 = {
+		add_spouse = 1001470 #Саймон Sweet
+	}
+}
+101479 = {
+	name="Рассел"		# a lord
+	dynasty=1479
+	
+	religion="the_seven"
+	culture="western_valyrian"
+	
+	father=111479
+	
+	8233.1.1 = {birth="8233.1.1"}
+	8249.1.1 = {
+		add_trait="knight"
+		add_trait="poor_warrior"
+	}
+	8283.1.1 = {death="8283.1.1"}
+}
+111479 = {
+	name="Манфред"		# a lord
+	dynasty=1479
+	
+	religion="the_seven"
+	culture="western_valyrian"
+	
+	father=281479
+	
+	8201.1.1 = {birth="8201.1.1"}
+	8217.1.1 = {
+		add_trait="knight"
+		add_trait="poor_warrior"
+	}
+	8243.1.1 = {death="8243.1.1"}
+}
+121479 = {
+	name="Элена"		# not a lord
+	female=yes
+	dynasty=1479
+	
+	religion="the_seven"
+	culture="western_valyrian"
+	
+	father=111479
+	
+	8227.1.1 = {birth="8227.1.1"}
+	8243.1.1 = {
+		add_trait="knight"
+		add_trait="poor_warrior"
+	}
+	8246.1.1 = {
+		add_spouse = 1535 #Кларенс Belgrave
+	}
+	8283.1.1 = {death="8283.1.1"}
+}
+
+###House Bourney (1472)
+
+1472 = {
+	name="Овейн"			# a lord
+	dynasty=1472 #Bourney
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=101472	#Бальман Bourney
+	mother=311475	#Kiera Yore
+	
+	8220.1.1 = {birth="8220.1.1"}
+	8236.1.1 = {
+		add_trait="knight"
+		add_trait="poor_warrior"
+	}
+}
+101472 = {
+	name="Бальман"			# a lord
+	dynasty=1472 #Bourney
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=441472
+	mother=331535 #Десмера Belgrave
+	
+	8195.1.1 = {birth="8195.1.1"}
+	8211.1.1 = {
+		add_trait="knight"
+		add_trait="poor_warrior"
+	}
+	8218.1.1 = {
+		add_spouse=311475	#Kiera Yore
+	}
+	8262.1.1 = {death="8262.1.1"}
+}
+#Side Branch
+111472 = {
+	name="Юстас"			# not a lord
+	dynasty=1472 #Bourney
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=101472	#Бальман
+	
+	8229.1.1 = {birth="8229.1.1"}
+	8245.1.1 = {
+		add_trait="knight"
+		add_trait="poor_warrior"
+	}
+	8285.1.1 = {death="8285.1.1"}
+}
+121472 = {
+	name="Освелл"			# not a lord
+	dynasty=1472 #Bourney
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=111472	#Юстас
+	
+	8255.1.1 = {birth="8255.1.1"}
+	8271.1.1 = {
+		add_trait="knight"
+		add_trait="poor_warrior"
+	}
+	8284.1.1 = {
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+131472 = {
+	name="Перкин"			# not a lord
+	dynasty=1472 #Bourney
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=111472	#Юстас
+	
+	8258.1.1 = {birth="8258.1.1"}
+	8274.1.1 = {
+		add_trait="knight"
+		add_trait="poor_warrior"
+	}
+	8284.1.1 = {
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+141472 = {
+	name="Хостер"			# not a lord
+	dynasty=1472 #Bourney
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=111472	#Юстас
+	
+	8264.1.1 = {birth="8264.1.1"}
+	8280.1.1 = {
+		add_trait="knight"
+		add_trait="poor_warrior"
+	}
+}
+151472 = {
+	name="Логейн"			# not a lord
+	dynasty=1472 #Bourney
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=121472	#Освелл
+	
+	8274.1.1 = {birth="8274.1.1"}
+	8290.1.1 = {
+		add_trait="knight"
+		add_trait="poor_warrior"
+	}
+}
+161472 = {
+	name="Грегор"			# not a lord
+	dynasty=1472 #Bourney
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=141472	#Хостер
+	
+	8286.1.1 = {birth="8286.1.1"}
+}
+171472 = {
+	name="Уоллес"			# not a lord
+	dynasty=1472 #Bourney
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=151472	#Логейн
+	
+	8295.1.1 = {birth="8295.1.1"}
+}
+181472 = {
+	name="Руперт"			# not a lord
+	dynasty=1472 #Bourney
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=121472	#Освелл
+	
+	8279.1.1 = {birth="8279.1.1"}
+	8295.1.1 = {
+		add_trait="knight"
+		add_trait="poor_warrior"
+	}
+	8296.1.1 = {
+		add_spouse=141475 #Гориана Yore
+	}
+}
+
+#Main Branch 
+191472 = {
+	name="Ренфред"			# not a lord
+	dynasty=1472 #Bourney
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=1472		#Овейн
+	
+	8241.1.1 = {birth="8241.1.1"}
+	8257.1.1 = {
+		add_trait="knight"
+		add_trait="poor_warrior"
+	}
+	8260.1.1 = { add_spouse=171473 }	#Хелен Corne
+	8284.1.1 = {
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+201472 = {
+	name="Пармен"			# not a lord
+	dynasty=1472 #Bourney
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=1472		#Овейн
+	
+	8246.1.1 = {birth="8246.1.1"}
+	8262.1.1 = {
+		add_trait="knight"
+		add_trait="poor_warrior"
+	}
+	8284.1.1 = {
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+211472 = {
+	name="Лотор"			# not a lord
+	dynasty=1472 #Bourney
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=191472	#Ренфред
+	mother=171473	#Хелен Corne
+	
+	8263.1.1 = {birth="8263.1.1"}
+	8279.1.1 = {
+		add_trait="knight"
+		add_trait="poor_warrior"
+	}
+	8284.1.1 = {
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+221472 = {
+	name="Хьюбард"			# not a lord
+	dynasty=1472 #Bourney
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=191472	#Ренфред
+	mother=171473	#Хелен Corne
+	
+	8266.1.1 = {birth="8266.1.1"}
+	8282.1.1 = {
+		add_trait="knight"
+		add_trait="poor_warrior"
+	}
+	8284.1.1 = {
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+231472 = {
+	name="Люсифер"			# not a lord
+	dynasty=1472 #Bourney
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=201472	#Пармен
+	
+	8265.1.1 = {birth="8265.1.1"}
+	8281.1.1 = {
+		add_trait="knight"
+		add_trait="poor_warrior"
+	}
+	8284.1.1 = {
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+# 3rd child of Бальман
+
+241472 = {
+	name="Элинор"			# not a lord
+	female=yes
+	dynasty=1472 #Bourney
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=101472	#Бальман
+	
+	8235.1.1 = {birth="8235.1.1"}
+	8282.1.1 = {death="8282.1.1"}
+}
+# Овейн's daughters
+251472 = {
+	name="Клейра"			# not a lord
+	female=yes
+	dynasty=1472 #Bourney
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=1472	#Овейн
+	
+	8240.1.1 = {birth="8240.1.1"}
+	8288.1.1 = {death="8288.1.1"}
+}
+261472 = {
+	name="Сиренна"			# not a lord
+	female=yes
+	dynasty=1472 #Bourney
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=1472	#Овейн
+	
+	8252.1.1 = {birth="8252.1.1"}
+	8292.1.1 = {death="8292.1.1"}
+}
+#Renfreds daughter
+271472 = {
+	name="Моэлла"			# not a lord
+	female=yes
+	dynasty=1472 #Bourney
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=191472	#Ренфред
+	mother=171473	#Хелен Corne
+	
+	8268.1.1 = {birth="8268.1.1"}
+}
+#Parmens daughters
+281472 = {
+	name="Малора"			# not a lord
+	female=yes
+	dynasty=1472 #Bourney
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=201472	#Пармен
+	
+	8264.1.1 = {birth="8264.1.1"}
+	8283.1.1 = {
+		add_spouse=1474 #Борос Hall
+	}
+}
+291472 = {
+	name="Алис"			# not a lord
+	female=yes
+	dynasty=1472 #Bourney
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=201472	#Пармен
+	
+	8269.1.1 = {birth="8269.1.1"}
+}
+
+###House Corne (1473)
+
+1473 = {
+	name="Адриан"		# a lord
+	dynasty=1473 #Corne
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=101473
+	
+	8269.1.1 = {birth="8269.1.1"}
+	8285.1.1 = {
+		add_trait=knight
+		add_trait=poor_warrior
+	}
+}
+101473 = {
+	name="Рейнард"		# a lord
+	dynasty=1473 #Corne
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=111473
+	
+	8247.1.1 = {birth="8247.1.1"}
+	8263.1.1 = {
+		add_trait=knight
+		add_trait=poor_warrior
+	}
+	8296.1.1 = {death="8296.1.1"}
+}
+111473 = {
+	name="Люкос"		# a lord
+	dynasty=1473 #Corne
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=181473
+	
+	8213.1.1 = {birth="8213.1.1"}
+	8229.1.1 = {
+		add_trait=knight
+		add_trait=poor_warrior
+	}
+	8270.1.1 = {death="8270.1.1"}	
+}
+#Brothers
+
+121473 = {
+	name="Джареми"		# not a lord
+	dynasty=1473 #Corne
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=101473
+	
+	8272.1.1 = {birth="8272.1.1"}
+	8288.1.1 = {
+		add_trait=knight
+		add_trait=poor_warrior
+	}
+}
+131473 = {
+	name="Престир"		# not a lord
+	dynasty=1473 #Corne
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=101473
+	
+	8277.1.1 = {birth="8277.1.1"}
+	8293.1.1 = {
+		add_trait=knight
+		add_trait=poor_warrior
+	}
+}
+#Children
+
+141473 = {
+	name="Саймон"		# not a lord
+	dynasty=1473 #Corne
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=1473
+	
+	8289.1.1 = {birth="8289.1.1"}
+}
+
+#Uncles
+161473 = {
+	name="Гилберт"		# not a lord
+	dynasty=1473 #Corne
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=111473
+	
+	8249.1.1 = {birth="8249.1.1"}
+	8265.1.1 = {
+		add_trait=knight
+		add_trait=poor_warrior
+	}
+}
+171473 = {
+	name="Хелен"		# not a lord
+	female=yes
+	dynasty=1473 #Corne
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=111473
+	
+	8242.1.1 = {birth="8242.1.1"}
+	8260.1.1 = { add_spouse=191472 }	#Ренфред Bourney
+}
+
+### House Hall (1474) 
+1474 = {
+	name="Борос"		# a lord
+	dynasty=1474 #Hall
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=361474
+	
+	8261.1.1 = {birth="8261.1.1"}
+	8277.1.1 = {
+		add_trait=knight
+		add_trait=poor_warrior
+	}
+	8283.1.1 = {
+		add_spouse=281472	#Малора Bourney
+	}
+}
+101474 = {
+	name="Донтос"		# a lord
+	dynasty=1474 #Hall
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=1474		#Борос Hall
+	mother=281472	#Малора Bourney
+	
+	8285.1.1 = {birth="8285.1.1"}
+}
+111474 = {
+	name="Десмера"		# a lord
+	female=yes
+	dynasty=1474 #Hall
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=1474		#Борос Hall
+	mother=281472	#Малора Bourney
+	
+	8287.1.1 = {birth="8287.1.1"}
+}
+
+### House Yore (1475)
+
+1475 = {
+	name="Бальман"		# a lord
+	dynasty=1475 #Yore
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=321475
+	
+	8256.1.1 = {birth="8256.1.1"}
+	8272.1.1 = {
+		add_trait=knight
+		add_trait=poor_warrior
+	}
+}
+101475 = {
+	name="Годрик"		# a lord
+	dynasty=1475 #Yore
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=1475
+	
+	8279.1.1 = {birth="8279.1.1"}
+	8295.1.1 = {
+		add_trait=knight
+		add_trait=poor_warrior
+	}
+}
+141475 = {
+	name="Гориана"		# not a lord
+	female=yes
+	dynasty=1475 #Yore
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=1475
+	
+	8277.1.1 = {birth="8277.1.1"}
+	8296.1.1 = {
+		add_spouse=181472 #Руперт Bourney
+	}
+}
+
+### House Belgrave 
+
+1535 = {			# a lord
+	name="Кларенс"
+	dynasty=1535	
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	father=341535
+	
+	8227.1.1 = {birth="8227.1.1"}
+	8243.1.1 = {
+		add_trait=knight
+		add_trait=poor_warrior
+	}
+	8246.1.1 = {
+		add_spouse = 121479 #Элена Scales
+	}
+	8283.1.1 = {death="8283.1.1"}	
+}
+101535 = {			# not a lord
+	name="Тристон"
+	dynasty=1535	
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	father=1535 #Кларенс Belgrave
+	mother=121479 #Элена Scales
+	
+	8251.1.1 = {birth="8251.1.1"}
+	8267.1.1 = {
+		add_trait=knight
+		add_trait=poor_warrior
+	}
+}
+111535 = {			# not a lord
+	name="Джон"
+	dynasty=1535	
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	father=1535 #Кларенс Belgrave
+	mother=121479 #Элена Scales
+	
+	8257.1.1 = {birth="8257.1.1"}
+	8273.1.1 = {
+		add_trait=knight
+		add_trait=poor_warrior
+	}
+}
+121535 = {			# not a lord
+	name="Бетани"
+	female=yes
+	dynasty=1535	
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	father=111535
+	
+	8277.1.1 = {birth="8277.1.1"}
+}
+131535 = {			# not a lord
+	name="Джайлс"
+	dynasty=1535	
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	father=101535
+	
+	8270.1.1 = {birth="8270.1.1"}
+	8286.1.1 = {
+		add_trait=knight
+		add_trait=poor_warrior
+	}
+}
+
+###################
+### House Darke ###
+###################
+1101528 = {
+	name="Ригер"	# a lord
+	dynasty=1528
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=1091528
+	mother=4091528
+
+	8230.1.1 = {birth="8230.1.1"}
+	8246.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8248.1.1 = {add_spouse=4101528}
+	8286.1.1 = {death="8286.1.1"}
+}
+4101528 = {
+	name="Лиза"
+	female=yes
+
+	religion="the_seven"
+	culture="riverlander"
+
+	8230.1.1 = {birth="8230.1.1"}
+	8286.1.1 = {death="8286.1.1"}
+}
+1111528 = {
+	name="Уиллис"	# a lord
+	dynasty=1528
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=1101528
+	mother=4101528
+
+	8250.1.1 = {birth="8250.1.1"}
+	8266.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8268.1.1 = {add_spouse=4111528}
+}
+4111528 = {
+	name="Алисса"
+	female=yes
+
+	religion="the_seven"
+	culture="riverlander"
+
+	8250.1.1 = {birth="8250.1.1"}
+}
+1121528 = {
+	name="Ото"	# not a lord
+	dynasty=1528
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=1111528
+	mother=4111528
+
+	8281.1.1 = {birth="8281.1.1"}
+	8297.1.1 = {add_trait=knight add_trait=trained_warrior}
+}
+
+### House Dargood ###
+
+181530 = {
+	name="Лютор"
+	dynasty=1530
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=171530
+
+	8225.1.1 = {birth="8225.1.1"}
+	8241.1.1 = {
+		add_trait=poor_warrior
+		add_trait=knight
+	}
+	8273.1.1 = {death="8273.1.1"}
+}
+191530 = {
+	name="Реймен"
+	dynasty=1530
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=181530
+
+	8251.1.1 = {birth="8251.1.1"}
+	8267.1.1 = {
+		add_trait=poor_warrior
+		add_trait=knight
+	}
+	8277.1.1 = { employer=2036 }
+	8292.1.1 = {death="8292.1.1"}
+}
+201530 = {
+	name="Дамон"
+	dynasty=1530
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=191530
+
+	8273.1.1 = {birth="8273.1.1"}
+	8277.1.1 = { employer=2036 }
+	8289.1.1 = {
+		add_trait=poor_warrior
+		add_trait=knight
+	}
+}
+211530 = {
+	name="Гарет"
+	dynasty=1530
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=201530
+
+	8291.1.1 = {birth="8291.1.1"}
+}
+221530 = {
+	name="Бет"
+	female=yes
+	dynasty=1530
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=201530
+
+	8293.1.1 = {birth="8293.1.1"}
+}
+231530 = {
+	name="Фалиса"
+	female=yes
+	dynasty=1530
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=201530
+
+	8295.1.1 = {birth="8295.1.1"}
+}
+241530 = {
+	name="Стеффон"
+	dynasty=1530
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=191530
+
+	8275.1.1 = {birth="8275.1.1"}
+	8277.1.1 = { employer=2036 }
+	8291.1.1 = {
+		add_trait=poor_warrior
+		add_trait=knight
+	}
+}
+251530 = {
+	name="Кристон"
+	dynasty=1530
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=181530
+
+	8256.1.1 = {birth="8256.1.1"}
+	8272.1.1 = {
+		add_trait=poor_warrior
+		add_trait=knight
+	}
+	8277.1.1 = { employer=2036 }
+}
+261530 = {
+	name="Леонетта"
+	female=yes
+	dynasty=1530
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=181530
+
+	8261.1.1 = {birth="8261.1.1"}
+}
+
+### House Darkwood ###
+
+181529 = {
+	name="Ото"
+	dynasty=1529
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=171529
+
+	8227.1.1 = {birth="8227.1.1"}
+	8243.1.1 = {
+		add_trait=knight add_trait=poor_warrior
+	}
+	8277.1.1 = { employer=2036 }
+}
+231529 = {
+	name="Фалена"
+	female=yes
+	dynasty=1529
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=171529
+
+	8235.1.1 = {birth="8235.1.1"}
+	8280.1.1 = {death="8280.1.1"}
+}
+191529 = {
+	name="Робин"
+	dynasty=1529
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=181529
+
+	8252.1.1 = {birth="8252.1.1"}
+	8268.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8277.1.1 = { employer=2036 }
+	8283.1.1 = {death="8283.1.1"}
+}
+201529 = {
+	name="Гарет"
+	dynasty=1529
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=191529
+
+	8273.1.1 = {birth="8273.1.1"}
+	8277.1.1 = { employer=2036 }
+	8289.1.1 = {add_trait=knight add_trait=poor_warrior}
+}
+211529 = {
+	name="Бальман"
+	dynasty=1529
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=181529
+
+	8258.1.1 = {birth="8258.1.1"}
+	8274.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8277.1.1 = { employer=2036 }
+}
+221529 = {
+	name="Денис"
+	dynasty=1529
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=211529
+	
+	employer=2036
+
+	8284.1.1 = {birth="8284.1.1"}
+	8300.1.1 = {add_trait=knight add_trait=poor_warrior}
+}

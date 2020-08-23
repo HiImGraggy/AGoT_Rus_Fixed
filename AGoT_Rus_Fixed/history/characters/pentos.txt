@@ -1,0 +1,7039 @@
+#############################
+### Major Merchant Houses ###
+#############################
+### House Mopatis
+600000040 = {
+	name="Иллирио"	
+	religion="rhllor"
+	culture="pentosi"	
+	dna="chbfh0b0fe0" 
+	properties="0d00b0"
+	
+	martial = 4
+	diplomacy = 12
+	intrigue = 16
+	stewardship = 10
+	learning = 8
+	
+	add_trait="elusive_shadow"
+	add_trait="genius"
+	add_trait="patient"
+	add_trait="deceitful"
+	add_trait="gregarious"
+	add_trait="cynical"
+	#add_trait="ambitious" #its not for himself
+	#add_trait="arbitrary"
+	
+	8243.1.1 = {birth="8243.1.1"}
+	8259.1.1 = {
+		add_trait=skilled_warrior
+	}
+	8269.1.1 = {
+		dynasty = 300519 #grew respectable and married cousin of Prince of Pentos
+		add_spouse = 131174356 #D'han		
+	}
+	8280.1.1 = {
+		add_trait="gluttonous" #Becomes Fat
+		add_trait = is_fat
+		effect = {
+			set_variable = { which = physique_variable value = 20 }		
+		}
+	}
+	8290.1.1 = {
+		add_spouse=400300519
+		effect = {
+			set_variable = { which = physique_variable value = 35 }
+			add_character_modifier = {
+				name = obese_modifier
+				duration = -1
+			}
+		}
+	}
+	8295.1.1 = {
+		effect = { set_character_flag = has_dany_dragon_eggs }
+	}
+	8295.1.1= { add_trait = widowed }
+	8298.1.1 = {
+		effect = { clr_character_flag = has_dany_dragon_eggs }
+	}
+}
+400300519 = {
+	name="Серра"	
+	female=yes
+	religion="rhllor"
+	culture="lysene"	
+
+	add_trait="fair"
+
+	8264.1.1 = {birth="8264.1.1"}
+	8290.1.1 = {
+		add_trait = former_slave
+	}
+	8295.1.1={
+		# Died of plague
+		add_trait="has_bubonic_plague"
+		death = { death_reason = death_trait }
+	}
+}
+100300519 = {
+	name="Пинто"	
+	dynasty = 300519
+	religion="rhllor"
+	culture="pentosi"	
+	father=600000040
+	mother=131174356
+	8275.1.1 = {birth="8275.1.1"}
+	8291.1.1 = {
+		add_trait=trained_warrior
+	}
+}
+101300519 = {
+	name="Брея"	
+	female=yes
+	dynasty = 300519
+	religion="rhllor"
+	culture="pentosi"	
+	father=600000040
+	mother=131174356
+	8279.1.1 = {birth="8279.1.1"}
+}
+102300519 = {
+	name="Люсерра"	
+	female=yes
+	dynasty = 300519
+	religion="rhllor"
+	culture="pentosi"	
+	father=600000040
+	mother=400300519
+	8291.1.1 = {birth="8291.1.1"}
+}
+103300519 = {
+	name="Лото"	
+	dynasty = 300519
+	religion="rhllor"
+	culture="pentosi"	
+	father=600000040
+	mother=400300519
+	8293.1.1 = {birth="8293.1.1"}
+}
+
+### House Theltis
+344300526 = {
+	name="Пинто"	# a lord
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	7830.1.1 = {birth="7830.1.1"}
+	7885.1.1 = {death="7885.1.1"}
+}
+343300526 = {
+	name="Изембаро"	# a lord
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=344300526
+
+	7851.1.1 = {birth="7851.1.1"}
+	7908.1.1 = {death="7908.1.1"}
+}
+342300526 = {
+	name="Денио"	# a lord
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=343300526
+
+	7878.1.1 = {birth="7878.1.1"}
+	7939.1.1 = {death="7939.1.1"}
+}
+341300526 = {
+	name="Гилоро"	# a lord
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=342300526
+
+	7905.1.1 = {birth="7905.1.1"}
+	7966.1.1 = {death="7966.1.1"}
+}
+340300526 = {
+	name="Рогго"	# a lord
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=341300526
+
+	7929.1.1 = {birth="7929.1.1"}
+	7975.1.1 = {death="7975.1.1"}
+}
+100300526 = {
+	name="Гилено"	# a lord
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=340300526
+
+	7955.1.1 = {birth="7955.1.1"}
+	7971.1.1 = {add_trait=poor_warrior}
+	8015.1.1 = {death="8015.1.1"}
+}
+101300526 = {
+	name="Якен"	# a lord
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100300526
+
+	7975.1.1 = {birth="7975.1.1"}
+	7991.1.1 = {add_trait=trained_warrior}
+	8054.1.1 = {death="8054.1.1"}
+}
+108300526 = {
+	name="Трегар"	# a lord
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101300526
+
+	8001.1.1 = {birth="8001.1.1"}
+	8060.1.1 = {death="8060.1.1"}
+}
+114300526 = {
+	name="Нарбо"	# a lord
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=108300526
+
+	8027.1.1 = {birth="8027.1.1"}
+	8085.1.1 = {death = {death_reason = death_accident}}
+}
+115300526 = {
+	name="Гилоро"	# a lord
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=114300526
+
+	8052.1.1 = {birth="8052.1.1"}
+	8068.1.1 = {add_trait=poor_warrior}
+	8087.1.1 = {death = {death_reason = death_battle}}
+}
+116300526 = {
+	name="Орбело"	# a lord
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=114300526
+
+	8054.1.1 = {birth="8054.1.1"}
+	8070.1.1 = {add_trait=trained_warrior}
+	8108.1.1 = {death = {death_reason = death_accident}}
+}
+119300526 = {
+	name="Изембаро"	# a lord
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=115300526
+
+	8076.1.1 = {birth="8076.1.1"}
+	8092.1.1 = {add_trait=poor_warrior}
+	8143.1.1 = {death = {death_reason = death_murder}}
+}
+123300526 = {
+	name="Тернесио"	# a lord
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=119300526
+
+	8109.1.1 = {birth="8109.1.1"}
+	8125.1.1 = {add_trait=trained_warrior}
+	8165.1.1 = {death="8165.1.1"}
+}
+125300526 = {
+	name="Гилено"	# a lord
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=123300526
+
+	8134.1.1 = {birth="8134.1.1"}
+	8150.1.1 = {add_trait=trained_warrior}
+	8187.1.1 = {death = {death_reason = death_accident}}
+}
+126300526 = {
+	name="Орделло"	# Prince of Pentos
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=123300526
+
+	8141.1.1 = {birth="8141.1.1"}
+	8157.1.1 = {add_trait=poor_warrior}
+	8186.1.1 = {death="8186.1.1"}
+}
+128300526 = {
+	name="Даарио"	# a lord
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=125300526
+
+	8158.1.1 = {birth="8158.1.1"}
+	8174.1.1 = {add_trait=poor_warrior}
+	8211.1.1 = {death="8211.1.1"}
+}
+129300526 = {
+	name="Денио"	# Prince of Pentos
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=125300526
+
+	8160.1.1 = {birth="8160.1.1"}
+	8176.1.1 = {add_trait=poor_warrior}
+	8195.4.1 = {death = {death_reason = death_execution} } 
+}
+130300526 = {
+	name="Орделло"	# a lord
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=125300526
+
+	8162.1.1 = {birth="8162.1.1"}
+	8178.1.1 = {add_trait=poor_warrior}
+	8220.1.1 = {death="8220.1.1"}
+}
+131300526 = {
+	name="Луко"	# a lord
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=125300526
+
+	8165.1.1 = {birth="8165.1.1"}
+	8181.1.1 = {add_trait=poor_warrior}
+	8228.1.1 = {death="8228.1.1"}
+}
+132300526 = {
+	name="Меро"	# Prince of Pentos
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=125300526
+
+	8167.1.1 = {birth="8167.1.1"}
+	8183.1.1 = {add_trait=poor_warrior}
+	8196.1.1 = {death = {death_reason = death_execution}}
+}
+134300526 = {
+	name="Терро"	# a lord
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=130300526
+
+	8181.1.1 = {birth="8181.1.1"}
+	8237.1.1 = {death="8237.1.1"}
+}
+136300526 = {
+	name="Сирио"	# a lord
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=131300526
+
+	8192.1.1 = {birth="8192.1.1"}
+	8208.1.1 = {add_trait=trained_warrior}
+	8210.1.1 = {add_spouse=436300526}
+	8250.1.1 = {death="8250.1.1"}
+}
+436300526 = {
+	name="Сфрона"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8192.1.1 = {birth="8192.1.1"}
+	8250.1.1 = {death="8250.1.1"}
+}
+137300526 = {
+	name="Феррего"	# Prince of Pentos
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=131300526
+
+	8194.1.1 = {birth="8194.1.1"}
+	8210.1.1 = {add_trait=poor_warrior}
+	8249.1.1 = {death = {death_reason = death_accident}}
+}
+140300526 = {
+	name="Тернесио"	# a lord
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=136300526
+	mother=436300526
+
+	8214.1.1 = {birth="8214.1.1"}
+	8230.1.1 = {add_trait=trained_warrior}
+	8232.1.1 = {add_spouse=440300526}
+	8276.1.1 = {death="8276.1.1"}
+}
+440300526 = {
+	name="Кваррия"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8214.1.1 = {birth="8214.1.1"}
+	8276.1.1 = {death="8276.1.1"}
+}
+141300526 = {
+	name="Бруско"	# a lord
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=136300526
+	mother=436300526
+
+	8217.1.1 = {birth="8217.1.1"}
+	8233.1.1 = {add_trait=trained_warrior}
+	8235.1.1 = {add_spouse=441300526}
+	8277.1.1 = {death="8277.1.1"}
+}
+441300526 = {
+	name="Тейна"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8217.1.1 = {birth="8217.1.1"}
+	8277.1.1 = {death="8277.1.1"}
+}
+181300526 = {
+	name="Луко"	# Prince of Pentos
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=136300526
+	mother=436300526
+
+	8220.1.1 = {birth="8220.1.1"}
+	8236.1.1 = {add_trait=trained_warrior}
+	8277.1.1 = {death="8277.1.1"}
+}
+143300526 = {
+	name="Орделло"	# a lord
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=140300526
+	mother=440300526
+
+	8244.1.1 = {birth="8244.1.1"}
+	8260.1.1 = {add_trait=trained_warrior}
+	8262.1.1 = {add_spouse=443300526}
+	8281.1.1 = {death = {death_reason = death_battle}}
+}
+443300526 = {
+	name="Якея"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8244.1.1 = {birth="8244.1.1"}
+	8281.1.1 = {death="8281.1.1"}
+}
+145300526 = {
+	name="Орделло"	# a lord, canon, poisoned by mushroom
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=141300526
+	mother=441300526
+
+	8244.1.1 = {birth="8244.1.1"}
+	8260.1.1 = {add_trait=poor_warrior}
+	8262.1.1 = {add_spouse=445300526}
+	8299.6.1 = {
+		add_trait = ill		
+		death = {
+			death_reason = death_murder_unknown_poison
+		}
+	}
+}
+445300526 = {
+	name="Торма"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8244.1.1 = {birth="8244.1.1"}
+}
+147300526 = {
+	name="Торма"	# not a lord
+	female=yes
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=143300526
+	mother=443300526
+
+	8272.1.1 = {birth="8272.1.1"}
+}
+148300526 = {
+	name="Мелларио"	# not a lord
+	female=yes
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=145300526
+	mother=445300526
+
+	8271.1.1 = {birth="8271.1.1"}
+}
+149300526 = {
+	name="Тихо"	# a lord
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=145300526
+	mother=445300526
+
+	8274.1.1 = {birth="8274.1.1"}
+	8290.1.1 = {add_trait=poor_warrior}
+}
+150300526 = {
+	name="Тейна"	# not a lord
+	female=yes
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=145300526
+	mother=445300526
+
+	8275.1.1 = {birth="8275.1.1"}
+}
+151300526 = {
+	name="Лото"	# not a lord
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=145300526
+	mother=445300526
+
+	8277.1.1 = {birth="8277.1.1"}
+	8293.1.1 = {add_trait=trained_warrior}
+	8319.1.1 = {death = {death_reason = death_accident}}
+}
+
+### House D'han
+345174356 = {
+	name="Арилло"	# a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	7812.1.1 = {birth="7812.1.1"}
+	7873.1.1 = {death="7873.1.1"}
+}
+344174356 = {
+	name="Гилло"	# a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=345174356
+
+	7835.1.1 = {birth="7835.1.1"}
+	7899.1.1 = {death="7899.1.1"}
+}
+343174356 = {
+	name="Накаро"	# a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=344174356
+
+	7860.1.1 = {birth="7860.1.1"}
+	7924.1.1 = {death="7924.1.1"}
+}
+342174356 = {
+	name="Гиллирио"	# a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=343174356
+
+	7889.1.1 = {birth="7889.1.1"}
+	7940.1.1 = {death="7940.1.1"}
+}
+341174356 = {
+	name="Лазирос"	# a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=342174356
+
+	7907.1.1 = {birth="7907.1.1"}
+	7959.1.1 = {death="7959.1.1"}
+}
+340174356 = {
+	name="Норафос"	# a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=341174356
+
+	7933.1.1 = {birth="7933.1.1"}
+	7985.1.1 = {death="7985.1.1"}
+}
+100174356 = {
+	name="Орделло"	# a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=340174356
+
+	7965.1.1 = {birth="7965.1.1"}
+	7981.1.1 = {add_trait=trained_warrior}
+	8037.1.1 = {death="8037.1.1"}
+}
+104174356 = {
+	name="Трегар"	# a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100174356
+
+	7991.1.1 = {birth="7991.1.1"}
+	8007.1.1 = {add_trait=trained_warrior}
+	8050.1.1 = {death="8050.1.1"}
+}
+105174356 = {
+	name="Пинто"	# a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=104174356
+
+	8017.1.1 = {birth="8017.1.1"}
+	8033.1.1 = {add_trait=poor_warrior}
+	8072.1.1 = {death="8072.1.1"}
+}
+107174356 = {
+	name="Роро"	# a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=104174356
+
+	8020.1.1 = {birth="8020.1.1"}
+	8036.1.1 = {add_trait=trained_warrior}
+	8076.1.1 = {death="8076.1.1"}
+}
+108174356 = {
+	name="Трегар"	# a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=105174356
+
+	8048.1.1 = {birth="8048.1.1"}
+	8104.1.1 = {death="8104.1.1"}
+}
+110174356 = {
+	name="Роро"	# a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=105174356
+
+	8052.1.1 = {birth="8052.1.1"}
+	8068.1.1 = {add_trait=poor_warrior}
+	8114.1.1 = {death="8114.1.1"}
+}
+112174356 = {
+	name="Лото"	# a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=107174356
+
+	8048.1.1 = {birth="8048.1.1"}
+	8064.1.1 = {add_trait=trained_warrior}
+	8081.1.1 = {death="8081.1.1"}
+}
+113174356 = {
+	name="Арео"	# a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=112174356
+
+	8069.1.1 = {birth="8069.1.1"}
+	8085.1.1 = {add_trait=poor_warrior}
+	8128.1.1 = {death="8128.1.1"}
+}
+115174356 = {
+	name="Мирмелло"	# a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=110174356
+
+	8073.1.1 = {birth="8073.1.1"}
+	8143.1.1 = {death="8143.1.1"}
+}
+119174356 = {
+	name="Тормо"	# Prince of Pentos
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=113174356
+
+	8089.1.1 = {birth="8089.1.1"}
+	8105.1.1 = {add_trait=poor_warrior}
+	8139.1.1 = {death="8139.1.1"}
+}
+120174356 = {
+	name="Мианна"	# Daughter of prince of Pentos, possible bride of Aegon III
+	dynasty=174356
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=119174356
+
+	8112.1.1 = {birth="8112.1.1"}
+	8155.1.1 = {death="8155.1.1"}
+}
+122174356 = {
+	name="Джосс"	# a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=119174356
+
+	8123.1.1 = {birth="8123.1.1"}
+	8139.1.1 = {add_trait=trained_warrior}
+	8157.1.1 = {death="8157.1.1"}
+}
+123174356 = {
+	name="Тагганаро"	# a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=119174356
+
+	8125.1.1 = {birth="8125.1.1"}
+	8141.1.1 = {add_trait=poor_warrior}
+	8185.1.1 = {death = {death_reason = death_execution}}
+}
+126174356 = {
+	name="Даарио"	# a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=123174356
+
+	8151.1.1 = {birth="8151.1.1"}
+	8167.1.1 = {add_trait=trained_warrior}
+	8212.1.1 = {death="8212.1.1"}
+}
+127174356 = {
+	name="Кварро"	# Prince of Pentos
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=126174356
+
+	8177.1.1 = {birth="8177.1.1"}
+	8193.1.1 = {add_trait=poor_warrior}
+	8213.1.1 = {death = {death_reason = death_execution}}
+}
+128174356 = {
+	name="Нохо"	# a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=126174356
+
+	8176.1.1 = {birth="8176.1.1"}
+	8192.1.1 = {add_trait=trained_warrior}
+	8217.1.1 = {death="8217.1.1"}
+}
+129174356 = {
+	name="Иллирио"	# a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=128174356
+
+	8207.1.1 = {birth="8207.1.1"}
+	8223.1.1 = {add_trait=trained_warrior}
+	8238.1.1 = {death="8238.1.1"}
+}
+130174356 = {
+	name="Гилено"	# a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=128174356
+
+	8210.1.1 = {birth="8210.1.1"}
+	8226.1.1 = {add_trait=poor_warrior}
+	8228.1.1 = {add_spouse=430174356}
+	8278.1.1 = {death="8278.1.1"}
+}
+430174356 = {
+	name="Лотея"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8210.1.1 = {birth="8210.1.1"}
+	8278.1.1 = {death="8278.1.1"}
+}
+132174356 = {
+	name="Трегар"	# Prince of Pentos
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=130174356
+	mother=430174356
+
+	8233.1.1 = {birth="8233.1.1"}
+	8290.1.1 = {death = {death_reason = death_execution}}
+}
+133174356 = {
+	name="Арео"	# a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=130174356
+	mother=430174356
+
+	8236.1.1 = {birth="8236.1.1"}
+	8252.1.1 = {add_trait=poor_warrior}
+	8254.1.1 = {add_spouse=433174356}
+	8281.1.1 = {death="8281.1.1"}
+}
+433174356 = {
+	name="Ланна"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8236.1.1 = {birth="8236.1.1"}
+	8281.1.1 = {death="8281.1.1"}
+}
+134174356 = {
+	name="Маноло"	# Canon, guy after whom ship Magister Маноло was named
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=130174356
+	mother=430174356
+
+	8239.1.1 = {birth="8239.1.1"}
+	8255.1.1 = {add_trait=trained_warrior}
+	8257.1.1 = {add_spouse=434174356}
+	8290.1.1 = {death="8290.1.1"}
+}
+434174356 = {
+	name="Дения"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8239.1.1 = {birth="8239.1.1"}
+	8292.1.1 = {death="8292.1.1"}
+}
+131174356 = {
+	name="Торма"	# Иллирио's first wife
+	female=yes
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=129174356
+
+	8232.1.1 = {birth="8232.1.1"}
+	8285.1.1 = {death="8285.1.1"}
+}
+135174356 = {
+	name="Беллегера"	# not a lord
+	female=yes
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=133174356
+	mother=433174356
+
+	8265.1.1 = {birth="8265.1.1"}
+}
+136174356 = {
+	name="Моредо"	# a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=133174356
+	mother=433174356
+
+	8268.1.1 = {birth="8268.1.1"}
+	8284.1.1 = {add_trait=skilled_warrior}
+	8286.1.1 = {add_spouse=436174356}
+}
+436174356 = {
+	name="Феррега"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8268.1.1 = {birth="8268.1.1"}
+}
+137174356 = {
+	name="Коссомо"	# not a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=134174356
+	mother=434174356
+
+	8274.1.1 = {birth="8274.1.1"}
+	8290.1.1 = {add_trait=trained_warrior}
+}
+138174356 = {
+	name="Олло"	# not a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=134174356
+	mother=434174356
+
+	8275.1.1 = {birth="8275.1.1"}
+	8291.1.1 = {add_trait=poor_warrior}
+}
+139174356 = {
+	name="Терро"	# not a lord
+	dynasty=174356
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=136174356
+	mother=436174356
+
+	8286.1.1 = {birth="8286.1.1"}
+	8302.1.1 = {add_trait=poor_warrior}
+}
+
+### House Narratys
+345300012 = {
+	name="Дааро"	# a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	7805.1.1 = {birth="7805.1.1"}
+	7876.1.1 = {death="7876.1.1"}
+}
+344300012 = {
+	name="Йорор"	# a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=345300012
+	
+	7822.1.1 = {birth="7822.1.1"}
+	7889.1.1 = {death="7889.1.1"}
+}
+343300012 = {
+	name="Кейзар"	# a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=344300012
+	
+	7846.1.1 = {birth="7846.1.1"}
+	7911.1.1 = {death="7911.1.1"}
+}
+342300012 = {
+	name="Белидос"	# a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=343300012
+	
+	7869.1.1 = {birth="7869.1.1"}
+	7925.1.1 = {death="7925.1.1"}
+}
+341300012 = {
+	name="Кирио"	# a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=342300012
+	
+	7895.1.1 = {birth="7895.1.1"}
+	7951.1.1 = {death="7951.1.1"}
+}
+346300012 = {
+	name="Эззело"	# Prince of Pentos
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=342300012
+	
+	7899.1.1 = {birth="7899.1.1"}
+	7937.1.1 = {death="7937.1.1"}
+}
+340300012 = {
+	name="Холло"	# a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=341300012
+	
+	7919.1.1 = {birth="7919.1.1"}
+	7964.1.1 = {death="7964.1.1"}
+}
+100300012 = {
+	name="Йорко"	# a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=340300012
+
+	7944.1.1 = {birth="7944.1.1"}
+	7960.1.1 = {add_trait=poor_warrior}
+	8006.1.1 = {death="8006.1.1"}
+}
+102300012 = {
+	name="Нарбо"	# a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100300012
+
+	7972.1.1 = {birth="7972.1.1"}
+	7988.1.1 = {add_trait=trained_warrior}
+	8032.1.1 = {death="8032.1.1"}
+}
+101300012 = {
+	name="Тиха"	# not a lord
+	female=yes
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100300012
+
+	7971.1.1 = {birth="7971.1.1"}
+	8026.1.1 = {death="8026.1.1"}
+}
+103300012 = {
+	name="Оро"	# a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102300012
+
+	7995.1.1 = {birth="7995.1.1"}
+	8011.1.1 = {add_trait=poor_warrior}
+	8045.1.1 = {death = {death_reason = death_accident}}
+}
+105300012 = {
+	name="Луко"	# a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102300012
+
+	8000.1.1 = {birth="8000.1.1"}
+	8016.1.1 = {add_trait=trained_warrior}
+	8078.1.1 = {death="8078.1.1"}
+}
+108300012 = {
+	name="Кварро"	# a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=105300012
+
+	8032.1.1 = {birth="8032.1.1"}
+	8048.1.1 = {add_trait=trained_warrior}
+	8085.1.1 = {death="8085.1.1"}
+}
+111300012 = {
+	name="Денио"	# Prince of Pentos
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=105300012
+
+	8037.1.1 = {birth="8037.1.1"}
+	8053.1.1 = {add_trait=poor_warrior}
+	8078.1.1 = {death = {death_reason = death_murder}}
+}
+112300012 = {
+	name="Изембаро"	# a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=108300012
+
+	8066.1.1 = {birth="8066.1.1"}
+	8082.1.1 = {add_trait=trained_warrior}
+	8128.1.1 = {death="8128.1.1"}
+}
+114300012 = {
+	name="Денио"	# a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=108300012
+
+	8071.1.1 = {birth="8071.1.1"}
+	8087.1.1 = {add_trait=poor_warrior}
+	8130.1.1 = {death = {death_reason = death_murder}}
+}
+118300012 = {
+	name="Аллакво"	# a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=114300012
+
+	8091.1.1 = {birth="8091.1.1"}
+	8107.1.1 = {add_trait=poor_warrior}
+	8148.1.1 = {death="8148.1.1"}
+}
+123300012 = {
+	name="Гилоро"	# a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=118300012
+
+	8120.1.1 = {birth="8120.1.1"}
+	8136.1.1 = {add_trait=trained_warrior}
+	8156.1.1 = {death="8156.1.1"}
+}
+128300012 = {
+	name="Рогго"	# a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=123300012
+
+	8147.1.1 = {birth="8147.1.1"}
+	8163.1.1 = {add_trait=skilled_warrior}
+	8198.1.1 = {death="8198.1.1"}
+}
+130300012 = {
+	name="Орделло"	# a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=128300012
+
+	8176.1.1 = {birth="8176.1.1"}
+	8192.1.1 = {add_trait=trained_warrior}
+	8231.1.1 = {death="8231.1.1"}
+}
+131300012 = {
+	name="Невио"	# canon, Prince of Pentos
+	dynasty=300012
+	
+	diplomacy=8
+	intrigue=8
+	stewardship=5
+	martial=4
+	learning=5
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=128300012
+	
+	add_trait=charismatic_negotiator
+	add_trait=patient
+	add_trait=deceitful
+	add_trait=ruthless
+	add_trait=authoritative
+
+	8177.1.1 = {birth="8177.1.1"}
+	8193.1.1 = {add_trait=poor_warrior}
+	8208.1.1 = {death="8208.1.1"}
+}
+132300012 = {
+	name="Мералин"	# a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=130300012
+
+	8196.1.1 = {birth="8196.1.1"}
+	8212.1.1 = {add_trait=trained_warrior}
+	8240.1.1 = {death="8240.1.1"}
+}
+133300012 = {
+	name="Меро"	# not a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=130300012
+
+	8197.1.1 = {birth="8197.1.1"}
+	8213.1.1 = {add_trait=master_warrior}
+	8215.1.1 = {add_spouse=433300012}
+	8238.1.1 = {death="8238.1.1"}
+}
+433300012 = {
+	name="Пинта"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8197.1.1 = {birth="8197.1.1"}
+	8238.1.1 = {death="8238.1.1"}
+}
+135300012 = {
+	name="Орделло"	# a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=132300012
+
+	8220.1.1 = {birth="8220.1.1"}
+	8236.1.1 = {add_trait=poor_warrior}
+	8238.1.1 = {add_spouse=435300012}
+	8281.1.1 = {death="8281.1.1"}
+}
+435300012 = {
+	name="Моредея"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8220.1.1 = {birth="8220.1.1"}
+	8281.1.1 = {death="8281.1.1"}
+}
+138300012 = {
+	name="Кварро"	# not a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=133300012
+	mother=433300012
+
+	8225.1.1 = {birth="8225.1.1"}
+	8241.1.1 = {add_trait=trained_warrior}
+	8243.1.1 = {add_spouse=438300012}
+	8278.1.1 = {death="8278.1.1"}
+}
+438300012 = {
+	name="Моредея"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8225.1.1 = {birth="8225.1.1"}
+	8278.1.1 = {death="8278.1.1"}
+}
+139300012 = {
+	name="Бегго"	# not a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=133300012
+	mother=433300012
+
+	8227.1.1 = {birth="8227.1.1"}
+	8243.1.1 = {add_trait=master_warrior}
+	8275.1.1 = {death="8275.1.1"}
+}
+140300012 = {
+	name="Тиха"	# not a lord
+	female=yes
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=133300012
+	mother=433300012
+
+	8229.1.1 = {birth="8229.1.1"}
+	8296.1.1 = {death="8296.1.1"}
+}
+141300012 = {
+	name="Мирмелло"	# not a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	add_trait = ruthless
+	add_trait = diligent
+
+	father=133300012
+	mother=433300012
+
+	8232.1.1 = {birth="8232.1.1"}
+	8248.1.1 = {add_trait=skilled_warrior}
+	8259.1.1 = {add_claim = k_pentos }
+	8264.1.1 = {death="8264.1.1"}
+}
+142300012 = {
+	name="Трегар"	# a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=138300012
+	mother=438300012
+
+	8244.1.1 = {birth="8244.1.1"}
+	8260.1.1 = {add_trait=poor_warrior}
+	8262.1.1 = {add_spouse=442300012}
+}
+442300012 = {
+	name="Нарба"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8244.1.1 = {birth="8244.1.1"}
+}
+143300012 = {
+	name="Коссомо"	# not a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=138300012
+	mother=438300012
+
+	8245.1.1 = {birth="8245.1.1"}
+	8261.1.1 = {add_trait=trained_warrior}
+	8263.1.1 = {add_spouse=443300012}
+}
+443300012 = {
+	name="Гилениос"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8245.1.1 = {birth="8245.1.1"}
+}
+145300012 = {
+	name="Терриос"	# not a lord
+	female=yes
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=138300012
+	mother=438300012
+
+	8251.1.1 = {birth="8251.1.1"}
+}
+146300012 = {
+	name="Джосс"	# not a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=142300012
+	mother=442300012
+
+	8266.1.1 = {birth="8266.1.1"}
+	8282.1.1 = {add_trait=skilled_warrior}
+}
+147300012 = {
+	name="Брея"	# not a lord
+	female=yes
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=142300012
+	mother=442300012
+
+	8269.1.1 = {birth="8269.1.1"}
+}
+148300012 = {
+	name="Уна"	# not a lord
+	female=yes
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=142300012
+	mother=442300012
+
+	8270.1.1 = {birth="8270.1.1"}
+}
+149300012 = {
+	name="Тернесио"	# Prince of Pentos
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=142300012
+	mother=442300012
+
+	8271.1.1 = {birth="8271.1.1"}
+	8287.1.1 = {add_trait=poor_warrior}
+}
+150300012 = {
+	name="Алия"	# not a lord
+	female=yes
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=142300012
+	mother=442300012
+
+	8274.1.1 = {birth="8274.1.1"}
+}
+151300012 = {
+	name="Коссомо"	# not a lord
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=143300012
+	mother=443300012
+
+	8274.1.1 = {birth="8274.1.1"}
+	8290.1.1 = {add_trait=master_warrior}
+}
+152300012 = {
+	name="Брея"	# not a lord
+	female=yes
+	dynasty=300012
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=143300012
+	mother=443300012
+
+	8277.1.1 = {birth="8277.1.1"}
+}
+
+### House Myrakis
+345174366 = {
+	name="Пито"	# a lord
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	7810.1.1 = {birth="7810.1.1"}
+	7871.1.1 = {death="7871.1.1"}
+}
+344174366 = {
+	name="Эззало"	# a lord
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=345174366
+
+	7834.1.1 = {birth="7834.1.1"}
+	7890.1.1 = {death="7890.1.1"}
+}
+343174366 = {
+	name="Мирмелло"	# a lord
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=344174366
+
+	7859.1.1 = {birth="7859.1.1"}
+	7910.1.1 = {death="7910.1.1"}
+}
+342174366 = {
+	name="Норо"	# a lord
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=343174366
+
+	7881.1.1 = {birth="7881.1.1"}
+	7937.1.1 = {death="7937.1.1"}
+}
+341174366 = {
+	name="Доничо"	# a lord
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=342174366
+
+	7906.1.1 = {birth="7906.1.1"}
+	7958.1.1 = {death="7958.1.1"}
+}
+340174366 = {
+	name="Накорно"	# a lord
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=341174366
+
+	7931.1.1 = {birth="7931.1.1"}
+	7980.1.1 = {death="7980.1.1"}
+}
+100174366 = {
+	name="Рогго"	# a lord
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=340174366
+	
+	7960.1.1 = {birth="7960.1.1"}
+	7976.1.1 = {add_trait=poor_warrior}
+	8019.1.1 = {death="8019.1.1"}
+}
+102174366 = {
+	name="Моредо"	# a lord
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100174366
+
+	7987.1.1 = {birth="7987.1.1"}
+	8003.1.1 = {add_trait=trained_warrior}
+	8027.1.1 = {death="8027.1.1"}
+}
+104174366 = {
+	name="Денио"	# a lord
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102174366
+
+	8014.1.1 = {birth="8014.1.1"}
+	8030.1.1 = {add_trait=poor_warrior}
+	8089.1.1 = {death="8089.1.1"}
+}
+105174366 = {
+	name="Якен"	# Prince of Pentos, killed after returning to Pentos from peace negotiations with Tyrosh
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102174366
+
+	8017.1.1 = {birth="8017.1.1"}
+	8033.1.1 = {add_trait=poor_warrior}
+	8058.7.1 = {death = {death_reason = death_execution }}
+}
+108174366 = {
+	name="Бруско"	# a lord
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=104174366
+
+	8043.1.1 = {birth="8043.1.1"}
+	8059.1.1 = {add_trait=trained_warrior}
+	8098.1.1 = {death="8098.1.1"}
+}
+110174366 = {
+	name="Аллакво"	# a lord
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=108174366
+
+	8068.1.1 = {birth="8068.1.1"}
+	8084.1.1 = {add_trait=skilled_warrior}
+	8122.1.1 = {death="8122.1.1"}
+}
+114174366 = {
+	name="Лото"	# a lord
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=110174366
+
+	8093.1.1 = {birth="8093.1.1"}
+	8109.1.1 = {add_trait=trained_warrior}
+	8171.1.1 = {death="8171.1.1"}
+}
+116174366 = {
+	name="Гилоро"	# a lord
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=110174366
+
+	8097.1.1 = {birth="8097.1.1"}
+	8113.1.1 = {add_trait=poor_warrior}
+	8175.1.1 = {death="8175.1.1"}
+}
+120174366 = {
+	name="Терро"	# a lord
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=116174366
+
+	8125.1.1 = {birth="8125.1.1"}
+	8141.1.1 = {add_trait=poor_warrior}
+	8182.1.1 = {death="8182.1.1"}
+}
+125174366 = {
+	name="Бруско"	# a lord
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=120174366
+
+	8160.1.1 = {birth="8160.1.1"}
+	8176.1.1 = {add_trait=trained_warrior}
+	8200.1.1 = {death="8200.1.1"}
+}
+126174366 = {
+	name="Тернесио"	# a lord
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=125174366
+
+	8188.1.1 = {birth="8188.1.1"}
+	8204.1.1 = {add_trait=poor_warrior}
+	8258.1.1 = {death="8258.1.1"}
+}
+129174366 = {
+	name="Терро"	# a lord
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=126174366
+
+	8222.1.1 = {birth="8222.1.1"}
+	8238.1.1 = {add_trait=poor_warrior}
+	8240.1.1 = {add_spouse=429174366}
+	8285.1.1 = {death="8285.1.1"}
+}
+429174366 = {
+	name="Ориос"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8222.1.1 = {birth="8222.1.1"}
+	8285.1.1 = {death="8285.1.1"}
+}
+130174366 = {
+	name="Морео"	# a lord
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=126174366
+
+	8224.1.1 = {birth="8224.1.1"}
+	8240.1.1 = {add_trait=poor_warrior}
+	8242.1.1 = {add_spouse=430174366}
+	8290.1.1 = {death="8290.1.1"}
+}
+430174366 = {
+	name="Беллегера"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8224.1.1 = {birth="8224.1.1"}
+	8290.1.1 = {death="8290.1.1"}
+}
+131174366 = {
+	name="Серала"	# not a lord
+	female=yes
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=129174366
+	mother=429174366
+
+	8249.1.1 = {birth="8249.1.1"}
+}
+132174366 = {
+	name="Джосс"	# a lord
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=130174366
+	mother=430174366
+
+	8258.1.1 = {birth="8258.1.1"}
+	8274.1.1 = {add_trait=trained_warrior}
+	8276.1.1 = {add_spouse=432174366}
+}
+432174366 = {
+	name="Мера"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8258.1.1 = {birth="8258.1.1"}
+}
+133174366 = {
+	name="Орбело"	# not a lord
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=130174366
+	mother=430174366
+
+	8260.1.1 = {birth="8260.1.1"}
+	8276.1.1 = {add_trait=trained_warrior}
+	8278.1.1 = {add_spouse=433174366}
+}
+433174366 = {
+	name="Алия"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8260.1.1 = {birth="8260.1.1"}
+}
+134174366 = {
+	name="Тиха"	# not a lord
+	female=yes
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=130174366
+	mother=430174366
+
+	8263.1.1 = {birth="8263.1.1"}
+}
+135174366 = {
+	name="Эззера"	# not a lord
+	female=yes
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=130174366
+	mother=430174366
+
+	8266.1.1 = {birth="8266.1.1"}
+}
+136174366 = {
+	name="Тернесио"	# not a lord
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=132174366
+	mother=432174366
+
+	8290.1.1 = {birth="8290.1.1"}
+	8306.1.1 = {add_trait=poor_warrior}
+}
+137174366 = {
+	name="Гролео"	# not a lord
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=132174366
+	mother=432174366
+
+	8292.1.1 = {birth="8292.1.1"}
+	8308.1.1 = {add_trait=poor_warrior}
+}
+138174366 = {
+	name="Кварро"	# not a lord
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=133174366
+	mother=433174366
+
+	8288.1.1 = {birth="8288.1.1"}
+}
+139174366 = {
+	name="Луко"	# not a lord
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=133174366
+	mother=433174366
+
+	8291.1.1 = {birth="8291.1.1"}
+}
+142174366 = {
+	name="Мирмеллиос"	# not a lord
+	female=yes
+	dynasty=174366
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=133174366
+	mother=433174366
+
+	8298.1.1 = {birth="8298.1.1"}
+}
+
+### House Estatis
+344174360 = {
+	name="Данило"	# a lord
+	dynasty=55926
+
+	religion="rhllor"
+	culture="pentosi"
+
+	7842.1.1 = {birth="7842.1.1"}
+	7884.1.1 = {death="7884.1.1"}
+}
+343174360 = {
+	name="Сиран"	# a lord
+	dynasty=55926
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=344174360
+
+	7864.1.1 = {birth="7864.1.1"}
+	7915.1.1 = {death="7915.1.1"}
+}
+345174360 = {
+	name="Релирио"	# Prince of Pentos
+	dynasty=55926
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=344174360
+
+	7872.1.1 = {birth="7872.1.1"}
+	7920.1.1 = {death="7920.1.1"}
+}
+342174360 = {
+	name="Луко"	# a lord
+	dynasty=55926
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=343174360
+
+	7888.1.1 = {birth="7888.1.1"}
+	7949.1.1 = {death="7949.1.1"}
+}
+341174360 = {
+	name="Бисано"	# a lord
+	dynasty=55926
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=342174360
+
+	7912.1.1 = {birth="7912.1.1"}
+	7970.1.1 = {death="7970.1.1"}
+}
+346174360 = {
+	name="Марео"	# Prince of Pentos
+	dynasty=55926
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=342174360
+
+	7915.1.1 = {birth="7915.1.1"}
+	7951.1.1 = {death="7951.1.1"}
+}
+340174360 = {
+	name="Хазаро"	# a lord
+	dynasty=55926
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=341174360
+
+	7939.1.1 = {birth="7939.1.1"}
+	7986.1.1 = {death="7986.1.1"}
+}
+100174360 = {
+	name="Луко"	# a lord
+	dynasty=55926
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=340174360
+
+	7966.1.1 = {birth="7966.1.1"}
+	7982.1.1 = {add_trait=trained_warrior}
+	8025.1.1 = {death="8025.1.1"}
+}
+102174360 = {
+	name="Нарбо"	# a lord
+	dynasty=55926
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100174360
+
+	7992.1.1 = {birth="7992.1.1"}
+	8008.1.1 = {add_trait=poor_warrior}
+	8057.1.1 = {death="8057.1.1"}
+}
+103174360 = {
+	name="Меро"	# Prince of Pentos
+	dynasty=55926
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100174360
+
+	7994.1.1 = {birth="7994.1.1"}
+	8010.1.1 = {add_trait=trained_warrior}
+	8043.1.1 = {death="8043.1.1"}
+}
+108174360 = {
+	name="Тианна"	# of Pentos, married Meagor. Was his spouse at the same time as Alys Harroway
+	female=yes
+	dynasty=300526
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	intrigue=9
+	learning=10
+
+	father=101300526
+
+	add_trait=bastard
+
+	8023.1.1 = {birth="8023.1.1"}
+	8039.1.1 = {add_trait=lustful add_trait=proud add_trait=envious add_trait=deceitful add_trait=cruel add_trait=elusive_shadow add_trait=mystic add_trait=impaler}
+	8048.1.1 = {death={death_reason = death_execution
+	killer=77005}}
+}
+109174360 = {
+	name="Изембаро"	# a lord
+	dynasty=55926
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=103174360
+
+	8024.1.1 = {birth="8024.1.1"}
+	8040.1.1 = {add_trait=poor_warrior}
+	8094.1.1 = {death="8094.1.1"}
+}
+110174360 = {
+	name="Эззелино"	# a lord
+	dynasty=55926
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=109174360
+
+	8049.1.1 = {birth="8049.1.1"}
+	8065.1.1 = {add_trait=poor_warrior}
+	8109.1.1 = {death="8109.1.1"}
+}
+111174360 = {
+	name="Нарбо"	# a lord
+	dynasty=55926
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=109174360
+
+	8051.1.1 = {birth="8051.1.1"}
+	8067.1.1 = {add_trait=poor_warrior}
+	8126.1.1 = {death="8126.1.1"}
+}
+171174360 = {
+	name="Баян"	# Prince of Pentos
+	dynasty=55926
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=109174360
+
+	8053.1.1 = {birth="8053.1.1"}
+	8067.1.1 = {add_trait=poor_warrior}
+	8122.1.1 = {death="8122.1.1"}
+}
+113174360 = {
+	name="Коллио"	# a lord
+	dynasty=55926
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=110174360
+
+	8084.1.1 = {birth="8084.1.1"}
+	8100.1.1 = {add_trait=skilled_warrior}
+	8137.1.1 = {death="8137.1.1"}
+}
+115174360 = {
+	name="Йорко"	# a lord
+	dynasty=55926
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=110174360
+
+	8089.1.1 = {birth="8089.1.1"}
+	8105.1.1 = {add_trait=poor_warrior}
+	8143.1.1 = {death = {death_reason = death_murder}}
+}
+121174360 = {
+	name="Йолло"	# a lord, from MUSH
+	dynasty=55926
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=115174360
+
+	add_trait=grey_eminence
+	add_trait=zealous
+	add_trait=ruthless
+
+	8117.1.1 = {birth="8117.1.1"}
+	8133.1.1 = {add_trait=trained_warrior}
+	8198.1.1 = {death="8198.1.1"}
+}
+124174360 = {
+	name="Феррего"	# Prince of Pentos
+	dynasty=55926
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=115174360
+
+	8130.1.1 = {birth="8130.1.1"}
+	8146.1.1 = {add_trait=skilled_warrior}
+	8155.1.1 = {death = {death_reason = death_execution } }
+}
+127174360 = {
+	name="Гролео"	# a lord
+	dynasty=55926
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=121174360
+
+	8159.1.1 = {birth="8159.1.1"}
+	8175.1.1 = {add_trait=trained_warrior}
+	8223.1.1 = {death="8223.1.1"}
+}
+129174360 = {
+	name="Коллио"	# a lord
+	dynasty=55926
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=127174360
+
+	8178.1.1 = {birth="8178.1.1"}
+	8194.1.1 = {add_trait=skilled_warrior}
+	8248.1.1 = {death="8248.1.1"}
+}
+133174360 = {
+	name="Меро"	# a lord
+	dynasty=55926
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=129174360
+
+	8215.1.1 = {birth="8215.1.1"}
+	8231.1.1 = {add_trait=trained_warrior}
+	8269.1.1 = {death="8269.1.1"}
+}
+
+###########################
+### Noble Feudal Houses ###
+########################### 
+### House Kaporys
+34569127 = {
+	name="Кассан"	# a lord
+	dynasty=69127
+
+	religion="rhllor"
+	culture="pentosi"
+
+	7821.1.1 = {birth="7821.1.1"}
+	7879.1.1 = {death="7879.1.1"}
+}
+34469127 = {
+	name="Илларо"	# a lord
+	dynasty=69127
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34569127
+
+	7843.1.1 = {birth="7843.1.1"}
+	7901.1.1 = {death="7901.1.1"}
+}
+34369127 = {
+	name="Белио"	# a lord
+	dynasty=69127
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34469127
+
+	7866.1.1 = {birth="7866.1.1"}
+	7920.1.1 = {death="7920.1.1"}
+}
+34269127 = {
+	name="Адарено"	# a lord
+	dynasty=69127
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34369127
+
+	7887.1.1 = {birth="7887.1.1"}
+	7949.1.1 = {death="7949.1.1"}
+}
+34169127 = {
+	name="Нерео"	# a lord
+	dynasty=69127
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34269127
+
+	7915.1.1 = {birth="7915.1.1"}
+	7971.1.1 = {death="7971.1.1"}
+}
+34069127 = {
+	name="Зоро"	# a lord
+	dynasty=69127
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34169127
+
+	7936.1.1 = {birth="7936.1.1"}
+	7995.1.1 = {death="7995.1.1"}
+}
+100069127 = {
+	name="Коллио"	# a lord
+	dynasty=69127
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34069127
+
+	7958.1.1 = {birth="7958.1.1"}
+	7974.1.1 = {add_trait=poor_warrior}
+	8036.1.1 = {death="8036.1.1"}
+}
+100369127 = {
+	name="Сирио"	# a lord
+	dynasty=69127
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100069127
+
+	7983.1.1 = {birth="7983.1.1"}
+	7999.1.1 = {add_trait=trained_warrior}
+	8039.1.1 = {death="8039.1.1"}
+}
+100869127 = {
+	name="Кварро"	# a lord
+	dynasty=69127
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100369127
+
+	8016.1.1 = {birth="8016.1.1"}
+	8032.1.1 = {add_trait=skilled_warrior}
+	8086.1.1 = {death="8086.1.1"}
+}
+100969127 = {
+	name="Аллакво"	# a lord
+	dynasty=69127
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100869127
+
+	8051.1.1 = {birth="8051.1.1"}
+	8067.1.1 = {add_trait=skilled_warrior}
+	8107.1.1 = {death="8107.1.1"}
+}
+101069127 = {
+	name="Кварро"	# a lord
+	dynasty=69127
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100969127
+
+	8078.1.1 = {birth="8078.1.1"}
+	8094.1.1 = {add_trait=poor_warrior}
+	8141.1.1 = {death="8141.1.1"}
+}
+101569127 = {
+	name="Коллио"	# a lord
+	dynasty=69127
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101069127
+
+	8099.1.1 = {birth="8099.1.1"}
+	8115.1.1 = {add_trait=trained_warrior}
+	8153.1.1 = {death="8153.1.1"}
+}
+101869127 = {
+	name="Феррего"	# a lord
+	dynasty=69127
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101569127
+
+	8124.1.1 = {birth="8124.1.1"}
+	8140.1.1 = {add_trait=poor_warrior}
+	8166.1.1 = {death = {death_reason = death_accident}}
+}
+102569127 = {
+	name="Бруско"	# a lord
+	dynasty=69127
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101869127
+
+	8147.1.1 = {birth="8147.1.1"}
+	8163.1.1 = {add_trait=trained_warrior}
+	8179.1.1 = {death="8179.1.1"}
+}
+102669127 = {
+	name="Орделло"	# a lord
+	dynasty=69127
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102569127
+
+	8174.1.1 = {birth="8174.1.1"}
+	8190.1.1 = {add_trait=poor_warrior}
+	8248.1.1 = {death="8248.1.1"}
+}
+102869127 = {
+	name="Олло"	# a lord
+	dynasty=69127
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102669127
+
+	8195.1.1 = {birth="8195.1.1"}
+	8211.1.1 = {add_trait=poor_warrior}
+	8253.1.1 = {death="8253.1.1"}
+}
+103369127 = {
+	name="Тернесио"	# a lord
+	dynasty=69127
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102869127
+
+	8219.1.1 = {birth="8219.1.1"}
+	8235.1.1 = {add_trait=poor_warrior}
+	8237.1.1 = {add_spouse=403369127}
+	8273.1.1 = {death="8273.1.1"}
+}
+403369127 = {
+	name="Тиха"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8219.1.1 = {birth="8219.1.1"}
+	8273.1.1 = {death="8273.1.1"}
+}
+103569127 = {
+	name="Йорко"	# a lord
+	dynasty=69127
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=103369127
+	mother=403369127
+
+	8250.1.1 = {birth="8250.1.1"}
+	8266.1.1 = {add_trait=trained_warrior}
+	8268.1.1 = {add_spouse=403569127}
+	8283.1.1 = {death="8283.1.1"}
+}
+403569127 = {
+	name="Беллонара"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8250.1.1 = {birth="8250.1.1"}
+	8283.1.1 = {death="8283.1.1"}
+}
+103769127 = {
+	name="Морео"	# a lord
+	dynasty=69127
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=103569127
+	mother=403569127
+
+	8275.1.1 = {birth="8275.1.1"}
+	8291.1.1 = {add_trait=poor_warrior}
+	8293.1.1 = {add_spouse=403769127}
+}
+403769127 = {
+	name="Тагганария"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8275.1.1 = {birth="8275.1.1"}
+}
+103869127 = {
+	name="Уна"	# not a lord
+	female=yes
+	dynasty=69127
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=103569127
+	mother=403569127
+
+	8278.1.1 = {birth="8278.1.1"}
+}
+103969127 = {
+	name="Феррего"	# not a lord
+	dynasty=69127
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=103569127
+	mother=403569127
+
+	8281.1.1 = {birth="8281.1.1"}
+	8297.1.1 = {add_trait=skilled_warrior}
+}
+
+### House Lumitits
+34469126 = {
+	name="Ниэссонар"	# a lord
+	dynasty=69126
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	7835.1.1 = {birth="7835.1.1"}
+	7881.1.1 = {death="7881.1.1"}
+}
+34369126 = {
+	name="Дракорос"	# a lord
+	dynasty=69126
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=34469126
+	
+	7857.1.1 = {birth="7857.1.1"}
+	7913.1.1 = {death="7913.1.1"}
+}
+34269126 = {
+	name="Ролло"	# a lord
+	dynasty=69126
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=34369126
+	
+	7880.1.1 = {birth="7880.1.1"}
+	7939.1.1 = {death="7939.1.1"}
+}
+34169126 = {
+	name="Гарридо"	# a lord
+	dynasty=69126
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=34269126
+	
+	7904.1.1 = {birth="7904.1.1"}
+	7962.1.1 = {death="7962.1.1"}
+}
+34069126 = {
+	name="Динерро"	# a lord
+	dynasty=69126
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=34169126
+	
+	7929.1.1 = {birth="7929.1.1"}
+	7991.1.1 = {death="7991.1.1"}
+}
+100069126 = {
+	name="Денио"	# a lord
+	dynasty=69126
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34069126
+
+	7955.1.1 = {birth="7955.1.1"}
+	7971.1.1 = {add_trait=poor_warrior}
+	8032.1.1 = {death="8032.1.1"}
+}
+100169126 = {
+	name="Орбело"	# a lord
+	dynasty=69126
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100069126
+
+	7978.1.1 = {birth="7978.1.1"}
+	7994.1.1 = {add_trait=trained_warrior}
+	8037.1.1 = {death="8037.1.1"}
+}
+100369126 = {
+	name="Эззелино"	# a lord
+	dynasty=69126
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100169126
+
+	8007.1.1 = {birth="8007.1.1"}
+	8023.1.1 = {add_trait=trained_warrior}
+	8043.1.1 = {death="8043.1.1"}
+}
+100869126 = {
+	name="Морео"	# a lord
+	dynasty=69126
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100369126
+
+	8029.1.1 = {birth="8029.1.1"}
+	8045.1.1 = {add_trait=poor_warrior}
+	8061.1.1 = {death="8061.1.1"}
+}
+100969126 = {
+	name="Бегго"	# a lord
+	dynasty=69126
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100869126
+
+	8048.1.1 = {birth="8048.1.1"}
+	8064.1.1 = {add_trait=poor_warrior}
+	8080.1.1 = {death="8080.1.1"}
+}
+101069126 = {
+	name="Гилоро"	# a lord
+	dynasty=69126
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100969126
+
+	8067.1.1 = {birth="8067.1.1"}
+	8083.1.1 = {add_trait=trained_warrior}
+	8104.1.1 = {death="8104.1.1"}
+}
+101469126 = {
+	name="Терро"	# a lord
+	dynasty=69126
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101069126
+
+	8093.1.1 = {birth="8093.1.1"}
+	8109.1.1 = {add_trait=poor_warrior}
+	8144.1.1 = {death="8144.1.1"}
+}
+101669126 = {
+	name="Рогго"	# a lord
+	dynasty=69126
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101469126
+
+	8120.1.1 = {birth="8120.1.1"}
+	8136.1.1 = {add_trait=skilled_warrior}
+	8173.1.1 = {death="8173.1.1"}
+}
+101969126 = {
+	name="Моредо"	# a lord
+	dynasty=69126
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101669126
+
+	8142.1.1 = {birth="8142.1.1"}
+	8158.1.1 = {add_trait=poor_warrior}
+	8174.1.1 = {death="8174.1.1"}
+}
+102069126 = {
+	name="Джосс"	# a lord
+	dynasty=69126
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101969126
+
+	8160.1.1 = {birth="8160.1.1"}
+	8176.1.1 = {add_trait=trained_warrior}
+	8235.1.1 = {death="8235.1.1"}
+}
+102169126 = {
+	name="Терро"	# a lord
+	dynasty=69126
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102069126
+
+	8193.1.1 = {birth="8193.1.1"}
+	8240.1.1 = {death="8240.1.1"}
+}
+102569126 = {
+	name="Тагганаро"	# a lord
+	dynasty=69126
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102169126
+
+	8215.1.1 = {birth="8215.1.1"}
+	8231.1.1 = {add_trait=trained_warrior}
+	8266.1.1 = {death="8266.1.1"}
+}
+102669126 = {
+	name="Аллакво"	# a lord
+	dynasty=69126
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102569126
+
+	8235.1.1 = {birth="8235.1.1"}
+	8251.1.1 = {add_trait=poor_warrior}
+	8253.1.1 = {add_spouse=402669126}
+	8290.1.1 = {death="8290.1.1"}
+}
+402669126 = {
+	name="Мелларио"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8235.1.1 = {birth="8235.1.1"}
+	8290.1.1 = {death="8290.1.1"}
+}
+102769126 = {
+	name="Даарио"	# a lord
+	dynasty=69126
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102669126
+	mother=402669126
+
+	8254.1.1 = {birth="8254.1.1"}
+	8270.1.1 = {add_trait=master_warrior}
+	8272.1.1 = {add_spouse=402769126}
+}
+402769126 = {
+	name="Торма"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8254.1.1 = {birth="8254.1.1"}
+}
+102869126 = {
+	name="Денио"	# not a lord
+	dynasty=69126
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102669126
+	mother=402669126
+
+	8257.1.1 = {birth="8257.1.1"}
+	8273.1.1 = {add_trait=poor_warrior}
+	8298.1.1 = {death="8298.1.1"}
+}
+103169126 = {
+	name="Мирмеллиос"	# not a lord
+	female=yes
+	dynasty=69126
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102769126
+	mother=402769126
+
+	8288.1.1 = {birth="8288.1.1"}
+}
+103269126 = {
+	name="Люсерра"	# not a lord
+	female=yes
+	dynasty=69126
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102769126
+	mother=402769126
+
+	8289.1.1 = {birth="8289.1.1"}
+}
+
+### House Lysandys
+34569125 = {
+	name="Эсодо"	# a lord
+	dynasty=69125
+
+	religion="rhllor"
+	culture="pentosi"
+
+	7809.1.1 = {birth="7809.1.1"}
+	7867.1.1 = {death="7867.1.1"}
+}
+34469125 = {
+	name="Йорис"	# a lord
+	dynasty=69125
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34569125
+
+	7836.1.1 = {birth="7836.1.1"}
+	7890.1.1 = {death="7890.1.1"}
+}
+34369125 = {
+	name="Сиричо"	# a lord
+	dynasty=69125
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34469125
+
+	7859.1.1 = {birth="7859.1.1"}
+	7916.1.1 = {death="7916.1.1"}
+}
+34269125 = {
+	name="Адарос"	# a lord
+	dynasty=69125
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34369125
+
+	7883.1.1 = {birth="7883.1.1"}
+	7936.1.1 = {death="7936.1.1"}
+}
+34169125 = {
+	name="Кисар"	# a lord
+	dynasty=69125
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34269125
+
+	7904.1.1 = {birth="7904.1.1"}
+	7959.1.1 = {death="7959.1.1"}
+}
+34069125 = {
+	name="Хирио"	# a lord
+	dynasty=69125
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34169125
+
+	7927.1.1 = {birth="7927.1.1"}
+	7980.1.1 = {death="7980.1.1"}
+}
+100069125 = {
+	name="Трегар"	# a lord
+	dynasty=69125
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34069125
+
+	7959.1.1 = {birth="7959.1.1"}
+	7975.1.1 = {add_trait=poor_warrior}
+	8027.1.1 = {death="8027.1.1"}
+}
+34669125 = {
+	name="Падарос"	# Prince of Pentos
+	dynasty=69125
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34069125
+
+	7966.1.1 = {birth="7966.1.1"}
+	7995.1.1 = {death="7995.1.1"}
+}
+100269125 = {
+	name="Нарбо"	# a lord
+	dynasty=69125
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100069125
+
+	7988.1.1 = {birth="7988.1.1"}
+	8004.1.1 = {add_trait=trained_warrior}
+	8029.1.1 = {death="8029.1.1"}
+}
+100569125 = {
+	name="Гилено"	# a lord
+	dynasty=69125
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100269125
+
+	8006.1.1 = {birth="8006.1.1"}
+	8022.1.1 = {add_trait=poor_warrior}
+	8045.1.1 = {death="8045.1.1"}
+}
+100769125 = {
+	name="Денио"	# a lord
+	dynasty=69125
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100569125
+
+	8040.1.1 = {birth="8040.1.1"}
+	8056.1.1 = {add_trait=poor_warrior}
+	8082.1.1 = {death="8082.1.1"}
+}
+100969125 = {
+	name="Йорко"	# a lord
+	dynasty=69125
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100769125
+
+	8066.1.1 = {birth="8066.1.1"}
+	8082.1.1 = {add_trait=poor_warrior}
+	8097.1.1 = {death="8097.1.1"}
+}
+101369125 = {
+	name="Гролео"	# a lord
+	dynasty=69125
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100969125
+
+	8088.1.1 = {birth="8088.1.1"}
+	8104.1.1 = {add_trait=trained_warrior}
+	8157.1.1 = {death="8157.1.1"}
+}
+101869125 = {
+	name="Йорко"	# a lord
+	dynasty=69125
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101369125
+
+	8120.1.1 = {birth="8120.1.1"}
+	8136.1.1 = {add_trait=trained_warrior}
+	8179.1.1 = {death="8179.1.1"}
+}
+101969125 = {
+	name="Трегар"	# a lord
+	dynasty=69125
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101869125
+
+	8144.1.1 = {birth="8144.1.1"}
+	8160.1.1 = {add_trait=poor_warrior}
+	8192.1.1 = {death="8192.1.1"}
+}
+102269125 = {
+	name="Арео"	# a lord
+	dynasty=69125
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101969125
+
+	8164.1.1 = {birth="8164.1.1"}
+	8180.1.1 = {add_trait=poor_warrior}
+	8214.1.1 = {death="8214.1.1"}
+}
+102469125 = {
+	name="Роро"	# a lord
+	dynasty=69125
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102269125
+
+	8187.1.1 = {birth="8187.1.1"}
+	8203.1.1 = {add_trait=poor_warrior}
+	8237.1.1 = {death="8237.1.1"}
+}
+102869125 = {
+	name="Пинто"	# a lord
+	dynasty=69125
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102469125
+
+	8223.1.1 = {birth="8223.1.1"}
+	8239.1.1 = {add_trait=skilled_warrior}
+	8282.1.1 = {death="8282.1.1"}
+}
+103169125 = {
+	name="Мирмелло"	# a lord
+	dynasty=69125
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102869125
+
+	8249.1.1 = {birth="8249.1.1"}
+	8265.1.1 = {add_trait=skilled_warrior}
+	8267.1.1 = {add_spouse=403169125}
+}
+403169125 = {
+	name="Ланна"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8249.1.1 = {birth="8249.1.1"}
+}
+103669125 = {
+	name="Нохо"	# not a lord
+	dynasty=69125
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=103169125
+	mother=403169125
+
+	8267.1.1 = {birth="8267.1.1"}
+	8283.1.1 = {add_trait=trained_warrior}
+}
+103769125 = {
+	name="Баян"	# not a lord
+	dynasty=69125
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=103169125
+	mother=403169125
+
+	8269.1.1 = {birth="8269.1.1"}
+	8285.1.1 = {add_trait=skilled_warrior}
+}
+
+### House Thelius
+34469124 = {
+	name="Арано"	# a lord
+	dynasty=69124
+
+	religion="rhllor"
+	culture="pentosi"
+
+	7824.1.1 = {birth="7824.1.1"}
+	7879.1.1 = {death="7879.1.1"}
+}
+34369124 = {
+	name="Харлано"	# a lord
+	dynasty=69124
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34469124
+
+	7853.1.1 = {birth="7853.1.1"}
+	7904.1.1 = {death="7904.1.1"}
+}
+34269124 = {
+	name="Белекор"	# a lord
+	dynasty=69124
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34369124
+
+	7875.1.1 = {birth="7875.1.1"}
+	7931.1.1 = {death="7931.1.1"}
+}
+34169124 = {
+	name="Руфо"	# a lord
+	dynasty=69124
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34269124
+
+	7902.1.1 = {birth="7902.1.1"}
+	7955.1.1 = {death="7955.1.1"}
+}
+34069124 = {
+	name="Нерео"	# a lord
+	dynasty=69124
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34169124
+
+	7929.1.1 = {birth="7929.1.1"}
+	7988.1.1 = {death="7988.1.1"}
+}
+100069124 = {
+	name="Даарио"	# a lord
+	dynasty=69124
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34069124
+
+	7952.1.1 = {birth="7952.1.1"}
+	7968.1.1 = {add_trait=poor_warrior}
+	8024.1.1 = {death="8024.1.1"}
+}
+100169124 = {
+	name="Тихо"	# a lord
+	dynasty=69124
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100069124
+
+	7971.1.1 = {birth="7971.1.1"}
+	7987.1.1 = {add_trait=poor_warrior}
+	8030.1.1 = {death="8030.1.1"}
+}
+100369124 = {
+	name="Олло"	# a lord
+	dynasty=69124
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100169124
+
+	7991.1.1 = {birth="7991.1.1"}
+	8007.1.1 = {add_trait=poor_warrior}
+	8048.1.1 = {death = {death_reason = death_accident}}
+}
+100669124 = {
+	name="Терро"	# a lord
+	dynasty=69124
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100369124
+
+	8017.1.1 = {birth="8017.1.1"}
+	8033.1.1 = {add_trait=trained_warrior}
+	8071.1.1 = {death="8071.1.1"}
+}
+101069124 = {
+	name="Бегго"	# a lord
+	dynasty=69124
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100669124
+
+	8040.1.1 = {birth="8040.1.1"}
+	8056.1.1 = {add_trait=trained_warrior}
+	8096.1.1 = {death="8096.1.1"}
+}
+101469124 = {
+	name="Феррего"	# a lord
+	dynasty=69124
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101069124
+
+	8070.1.1 = {birth="8070.1.1"}
+	8086.1.1 = {add_trait=master_warrior}
+	8129.1.1 = {death="8129.1.1"}
+}
+101669124 = {
+	name="Коллио"	# a lord
+	dynasty=69124
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101469124
+
+	8096.1.1 = {birth="8096.1.1"}
+	8112.1.1 = {add_trait=poor_warrior}
+	8150.1.1 = {death="8150.1.1"}
+}
+101869124 = {
+	name="Мералин"	# a lord
+	dynasty=69124
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101669124
+
+	8117.1.1 = {birth="8117.1.1"}
+	8133.1.1 = {add_trait=skilled_warrior}
+	8153.1.1 = {death="8153.1.1"}
+}
+102069124 = {
+	name="Баян"	# a lord
+	dynasty=69124
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101869124
+
+	8136.1.1 = {birth="8136.1.1"}
+	8152.1.1 = {add_trait=poor_warrior}
+	8176.1.1 = {death="8176.1.1"}
+}
+102269124 = {
+	name="Морео"	# a lord
+	dynasty=69124
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102069124
+
+	8155.1.1 = {birth="8155.1.1"}
+	8171.1.1 = {add_trait=skilled_warrior}
+	8215.1.1 = {death="8215.1.1"}
+}
+102769124 = {
+	name="Мералин"	# a lord
+	dynasty=69124
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102269124
+
+	8179.1.1 = {birth="8179.1.1"}
+	8195.1.1 = {add_trait=skilled_warrior}
+	8197.1.1 = {add_spouse=402769124}
+	8224.1.1 = {death="8224.1.1"}
+}
+402769124 = {
+	name="Беллегера"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8179.1.1 = {birth="8179.1.1"}
+	8224.1.1 = {death="8224.1.1"}
+}
+102969124 = {
+	name="Аллакво"	# a lord
+	dynasty=69124
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102769124
+	mother=402769124
+
+	8200.1.1 = {birth="8200.1.1"}
+	8216.1.1 = {add_trait=master_warrior}
+	8218.1.1 = {add_spouse=402969124}
+	8275.1.1 = {death="8275.1.1"}
+}
+402969124 = {
+	name="Якея"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8200.1.1 = {birth="8200.1.1"}
+	8275.1.1 = {death="8275.1.1"}
+}
+103069124 = {
+	name="Рогга"	# not a lord
+	female=yes
+	dynasty=69124
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102769124
+	mother=402769124
+
+	8202.1.1 = {birth="8202.1.1"}
+	8263.1.1 = {death="8263.1.1"}
+}
+103169124 = {
+	name="Мирмеллиос"	# not a lord
+	female=yes
+	dynasty=69124
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102969124
+	mother=402969124
+
+	8228.1.1 = {birth="8228.1.1"}
+	8280.1.1 = {death="8280.1.1"}
+}
+103269124 = {
+	name="Гилора"	# not a lord
+	female=yes
+	dynasty=69124
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102969124
+	mother=402969124
+
+	8229.1.1 = {birth="8229.1.1"}
+	8289.1.1 = {death="8289.1.1"}
+}
+103369124 = {
+	name="Тагганаро"	# a lord
+	dynasty=69124
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102969124
+	mother=402969124
+
+	8232.1.1 = {birth="8232.1.1"}
+	8248.1.1 = {add_trait=skilled_warrior}
+	8250.1.1 = {add_spouse=403369124}
+}
+403369124 = {
+	name="Серала"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8232.1.1 = {birth="8232.1.1"}
+}
+103469124 = {
+	name="Тиха"	# not a lord
+	female=yes
+	dynasty=69124
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=103369124
+	mother=403369124
+
+	8265.1.1 = {birth="8265.1.1"}
+}
+103569124 = {
+	name="Беллонара"	# not a lord
+	female=yes
+	dynasty=69124
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=103369124
+	mother=403369124
+
+	8268.1.1 = {birth="8268.1.1"}
+}
+103669124 = {
+	name="Гилоро"	# not a lord
+	dynasty=69124
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=103369124
+	mother=403369124
+
+	8271.1.1 = {birth="8271.1.1"}
+	8287.1.1 = {add_trait=trained_warrior}
+}
+
+### House Myrenolys
+34569123 = {
+	name="Аралдо"	# a lord
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+
+	7814.1.1 = {birth="7814.1.1"}
+	7869.1.1 = {death="7869.1.1"}
+}
+34469123 = {
+	name="Зарафо"	# a lord
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34569123
+
+	7836.1.1 = {birth="7836.1.1"}
+	7893.1.1 = {death="7893.1.1"}
+}
+34369123 = {
+	name="Риос"	# a lord
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34469123
+
+	7855.1.1 = {birth="7855.1.1"}
+	7917.1.1 = {death="7917.1.1"}
+}
+34669123 = {
+	name="Варифос"	# Prince of Pentos
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34469123
+
+	7863.1.1 = {birth="7863.1.1"}
+	7902.1.1 = {death="7902.1.1"}
+}
+34269123 = {
+	name="Кварро"	# a lord
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34369123
+
+	7876.1.1 = {birth="7876.1.1"}
+	7942.1.1 = {death="7942.1.1"}
+}
+34169123 = {
+	name="Тиберо"	# a lord
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34269123
+
+	7910.1.1 = {birth="7910.1.1"}
+	7990.1.1 = {death="7990.1.1"}
+}
+34769123 = {
+	name="Бисирос"	# Prince of Pentos
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34169123
+
+	7930.1.1 = {birth="7930.1.1"}
+	7962.1.1 = {death="7962.1.1"}
+}
+34069123 = {
+	name="Яаро"	# a lord
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34169123
+
+	7931.1.1 = {birth="7931.1.1"}
+	7983.1.1 = {death="7983.1.1"}
+}
+100069123 = {
+	name="Орделло"	# a lord
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34069123
+
+	7957.1.1 = {birth="7957.1.1"}
+	7973.1.1 = {add_trait=poor_warrior}
+	8032.1.1 = {death="8032.1.1"}
+}
+100169123 = {
+	name="Лото"	# a lord
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100069123
+
+	7986.1.1 = {birth="7986.1.1"}
+	8002.1.1 = {add_trait=poor_warrior}
+	8042.1.1 = {death="8042.1.1"}
+}
+100269123 = {
+	name="Тормо"	# a lord
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100169123
+
+	8004.1.1 = {birth="8004.1.1"}
+	8020.1.1 = {add_trait=poor_warrior}
+	8063.1.1 = {death="8063.1.1"}
+}
+100469123 = {
+	name="Гролео"	# a lord
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100269123
+
+	8026.1.1 = {birth="8026.1.1"}
+	8042.1.1 = {add_trait=poor_warrior}
+	8069.1.1 = {death="8069.1.1"}
+}
+100769123 = {
+	name="Моредо"	# a lord
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100469123
+
+	8059.1.1 = {birth="8059.1.1"}
+	8075.1.1 = {add_trait=poor_warrior}
+	8103.1.1 = {death="8103.1.1"}
+}
+100969123 = {
+	name="Джосс"	# a lord
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100769123
+
+	8087.1.1 = {birth="8087.1.1"}
+	8103.1.1 = {add_trait=skilled_warrior}
+	8146.1.1 = {death = {death_reason = death_accident}}
+}
+101069123 = {
+	name="Баян"	# a lord
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100969123
+
+	8113.1.1 = {birth="8113.1.1"}
+	8129.1.1 = {add_trait=poor_warrior}
+	8172.1.1 = {death="8172.1.1"}
+}
+101169123 = {
+	name="Терро"	# a lord
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101069123
+
+	8146.1.1 = {birth="8146.1.1"}
+	8162.1.1 = {add_trait=poor_warrior}
+	8194.1.1 = {death="8194.1.1"}
+}
+101569123 = {
+	name="Оро"	# a lord
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101169123
+
+	8174.1.1 = {birth="8174.1.1"}
+	8190.1.1 = {add_trait=trained_warrior}
+	8226.1.1 = {death="8226.1.1"}
+}
+101669123 = {
+	name="Даарио"	# Prince of Pentos
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101169123
+
+	8175.1.1 = {birth="8175.1.1"}
+	8191.1.1 = {add_trait=poor_warrior}
+	8195.6.1 = {death = {death_reason = death_execution} } 
+}
+101969123 = {
+	name="Коллио"	# a lord
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101569123
+
+	8196.1.1 = {birth="8196.1.1"}
+	8212.1.1 = {add_trait=poor_warrior}
+	8214.1.1 = {add_spouse=401969123}
+	8246.1.1 = {death="8246.1.1"}
+}
+401969123 = {
+	name="Дорея"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8196.1.1 = {birth="8196.1.1"}
+	8246.1.1 = {death="8246.1.1"}
+}
+102069123 = {
+	name="Беллонара"	# not a lord
+	female=yes
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101969123
+	mother=401969123
+
+	8228.1.1 = {birth="8228.1.1"}
+	8268.1.1 = {death="8268.1.1"}
+}
+102169123 = {
+	name="Тернесио"	# a lord
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101969123
+	mother=401969123
+
+	8231.1.1 = {birth="8231.1.1"}
+	8247.1.1 = {add_trait=poor_warrior}
+	8249.1.1 = {add_spouse=402169123}
+}
+402169123 = {
+	name="Гилора"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8231.1.1 = {birth="8231.1.1"}
+}
+102269123 = {
+	name="Тернесия"	# not a lord
+	female=yes
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101969123
+	mother=401969123
+
+	8233.1.1 = {birth="8233.1.1"}
+}
+102369123 = {
+	name="Феррега"	# not a lord
+	female=yes
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101969123
+	mother=401969123
+
+	8236.1.1 = {birth="8236.1.1"}
+}
+102469123 = {
+	name="Орбело"	# not a lord
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101969123
+	mother=401969123
+
+	8238.1.1 = {birth="8238.1.1"}
+	8254.1.1 = {add_trait=trained_warrior}
+	8299.1.1 = {death="8299.1.1"}
+}
+102569123 = {
+	name="Мирмелло"	# not a lord
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102169123
+	mother=402169123
+
+	8259.1.1 = {birth="8259.1.1"}
+	8275.1.1 = {add_trait=poor_warrior}
+	8277.1.1 = {add_spouse=402569123}
+}
+402569123 = {
+	name="Беллонара"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8259.1.1 = {birth="8259.1.1"}
+}
+102669123 = {
+	name="Орбела"	# not a lord
+	female=yes
+	dynasty=69123
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102569123
+	mother=402569123
+
+	8281.1.1 = {birth="8281.1.1"}
+}
+
+### House Torgodorio
+344300015 = {
+	name="Трегар"	# a lord
+	dynasty=300015
+
+	religion="rhllor"
+	culture="pentosi"
+
+	7840.1.1 = {birth="7840.1.1"}
+	7898.1.1 = {death="7898.1.1"} #dov
+}
+343300015 = {
+	name="Алиос"	# a lord
+	dynasty=300015
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=344300015
+
+	7862.1.1 = {birth="7862.1.1"}
+	7919.1.1 = {death="7919.1.1"}
+}
+342300015 = {
+	name="Лисар"	# a lord
+	dynasty=300015
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=343300015
+
+	7888.1.1 = {birth="7888.1.1"}
+	7938.1.1 = {death="7938.1.1"}
+}
+341300015 = {
+	name="Паллос"	# a lord
+	dynasty=300015
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=342300015
+
+	7909.1.1 = {birth="7909.1.1"}
+	7960.1.1 = {death="7960.1.1"}
+}
+340300015 = {
+	name="Кариос"	# a lord
+	dynasty=300015
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=341300015
+
+	7932.1.1 = {birth="7932.1.1"}
+	7993.1.1 = {death="7993.1.1"}
+}
+346300015 = {
+	name="Колло"	# Prince of Pentos
+	dynasty=300015
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=341300015
+
+	7939.1.1 = {birth="7939.1.1"}
+	7975.1.1 = {death="7975.1.1"}
+}
+100300015 = {
+	name="Аллакво"	# a lord
+	dynasty=300015
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=340300015
+
+	7958.1.1 = {birth="7958.1.1"}
+	7974.1.1 = {add_trait=poor_warrior}
+	8036.1.1 = {death="8036.1.1"}
+}
+104300015 = {
+	name="Моредо"	# a lord
+	dynasty=300015
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100300015
+
+	7988.1.1 = {birth="7988.1.1"}
+	8004.1.1 = {add_trait=trained_warrior}
+	8040.1.1 = {death="8040.1.1"}
+}
+107300015 = {
+	name="Йорко"	# a lord
+	dynasty=300015
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=104300015
+
+	8019.1.1 = {birth="8019.1.1"}
+	8035.1.1 = {add_trait=skilled_warrior}
+	8054.1.1 = {death="8054.1.1"}
+}
+109300015 = {
+	name="Джосс"	# a lord
+	dynasty=300015
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=107300015
+
+	8048.1.1 = {birth="8048.1.1"}
+	8064.1.1 = {add_trait=trained_warrior}
+	8106.1.1 = {death="8106.1.1"}
+}
+111300015 = {
+	name="Арео"	# a lord
+	dynasty=300015
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=109300015
+
+	8083.1.1 = {birth="8083.1.1"}
+	8099.1.1 = {add_trait=poor_warrior}
+	8117.1.1 = {death="8117.1.1"}
+}
+114300015 = {
+	name="Орделло"	# a lord
+	dynasty=300015
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=111300015
+
+	8109.1.1 = {birth="8109.1.1"}
+	8125.1.1 = {add_trait=poor_warrior}
+	8179.1.1 = {death="8179.1.1"}
+}
+115300015 = {
+	name="Якен"	# a lord
+	dynasty=300015
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=114300015
+
+	8135.1.1 = {birth="8135.1.1"}
+	8151.1.1 = {add_trait=poor_warrior}
+	8202.1.1 = {death="8202.1.1"}
+}
+116300015 = {
+	name="Баян"	# a lord
+	dynasty=300015
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=115300015
+
+	8161.1.1 = {birth="8161.1.1"}
+	8177.1.1 = {add_trait=trained_warrior}
+	8219.1.1 = {death="8219.1.1"}
+}
+118300015 = {
+	name="Морео"	# a lord
+	dynasty=300015
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=116300015
+
+	8183.1.1 = {birth="8183.1.1"}
+	8199.1.1 = {add_trait=poor_warrior}
+	8241.1.1 = {death="8241.1.1"}
+}
+120300015 = {
+	name="Роро"	# a lord
+	dynasty=300015
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=118300015
+
+	8211.1.1 = {birth="8211.1.1"}
+	8227.1.1 = {add_trait=poor_warrior}
+	8229.1.1 = {add_spouse=220300015}
+	8254.1.1 = {death="8254.1.1"}
+}
+220300015 = {
+	name="Тейна"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8211.1.1 = {birth="8211.1.1"}
+	8254.1.1 = {death="8254.1.1"}
+}
+122300015 = {
+	name="Гилено"	# a lord
+	dynasty=300015
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=120300015
+	mother=220300015
+
+	8233.1.1 = {birth="8233.1.1"}
+	8249.1.1 = {add_trait=trained_warrior}
+	8251.1.1 = {add_spouse=222300015}
+}
+222300015 = {
+	name="Лотея"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8233.1.1 = {birth="8233.1.1"}
+}
+123300015 = {
+	name="Тихо"	# not a lord
+	dynasty=300015
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=120300015
+	mother=220300015
+
+	8234.1.1 = {birth="8234.1.1"}
+	8250.1.1 = {add_trait=poor_warrior}
+	8278.1.1 = {death="8278.1.1"}
+}
+124300015 = {
+	name="Олло"	# not a lord
+	dynasty=300015
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=120300015
+	mother=220300015
+
+	8235.1.1 = {birth="8235.1.1"}
+	8251.1.1 = {add_trait=poor_warrior}
+	8291.1.1 = {death = {death_reason = death_murder}}
+}
+125300015 = {
+	name="Гилоро"	# not a lord
+	dynasty=300015
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=120300015
+	mother=220300015
+
+	8237.1.1 = {birth="8237.1.1"}
+	8253.1.1 = {add_trait=skilled_warrior}
+}
+126300015 = {
+	name="Роро"	# not a lord
+	dynasty=300015
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=122300015
+	mother=222300015
+
+	8262.1.1 = {birth="8262.1.1"}
+	8278.1.1 = {add_trait=trained_warrior}
+	8280.1.1 = {add_spouse=226300015}
+}
+226300015 = {
+	name="Моредея"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8262.1.1 = {birth="8262.1.1"}
+}
+127300015 = {
+	name="Тихо"	# not a lord
+	dynasty=300015
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=122300015
+	mother=222300015
+
+	8264.1.1 = {birth="8264.1.1"}
+	8280.1.1 = {add_trait=trained_warrior}
+}
+128300015 = {
+	name="Нарба"	# not a lord
+	female=yes
+	dynasty=300015
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=122300015
+	mother=222300015
+
+	8267.1.1 = {birth="8267.1.1"}
+}
+
+### House Obizos
+345300013 = {
+	name="Лоторио"	# a lord
+	dynasty=300013
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	7827.1.1 = {birth="7827.1.1"}
+	7898.1.1 = {death="7898.1.1"} #dov
+}
+344300013 = {
+	name="Эсирно"	# a lord
+	dynasty=300013
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=345300013
+	
+	7849.1.1 = {birth="7849.1.1"}
+	7900.1.1 = {death="7900.1.1"}
+}
+346300013 = {
+	name="Кисар"	# Prince of Pentos
+	dynasty=300013
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=345300013
+	
+	7855.1.1 = {birth="7855.1.1"}
+	7886.1.1 = {death="7886.1.1"}
+}
+343300013 = {
+	name="Эйрано"	# a lord
+	dynasty=300013
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=344300013
+	
+	7870.1.1 = {birth="7870.1.1"}
+	7921.1.1 = {death="7921.1.1"}
+}
+342300013 = {
+	name="Лоторио"	# a lord
+	dynasty=300013
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=343300013
+	
+	7892.1.1 = {birth="7892.1.1"}
+	7944.1.1 = {death="7944.1.1"}
+}
+341300013 = {
+	name="Релизо"	# a lord
+	dynasty=300013
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=342300013
+	
+	7917.1.1 = {birth="7917.1.1"}
+	7966.1.1 = {death="7966.1.1"}
+}
+340300013 = {
+	name="Накео"	# a lord
+	dynasty=300013
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=341300013
+	
+	7940.1.1 = {birth="7940.1.1"}
+	7991.1.1 = {death="7991.1.1"}
+}
+100300013 = {
+	name="Гилоро"	# a lord
+	dynasty=300013
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=340300013
+
+	7962.1.1 = {birth="7962.1.1"}
+	7978.1.1 = {add_trait=poor_warrior}
+	8042.1.1 = {death="8042.1.1"}
+}
+102300013 = {
+	name="Коссомо"	# a lord
+	dynasty=300013
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100300013
+
+	7990.1.1 = {birth="7990.1.1"}
+	8006.1.1 = {add_trait=trained_warrior}
+	8060.1.1 = {death="8060.1.1"}
+}
+103300013 = {
+	name="Орделло"	# a lord
+	dynasty=300013
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102300013
+
+	8010.1.1 = {birth="8010.1.1"}
+	8026.1.1 = {add_trait=poor_warrior}
+	8085.1.1 = {death="8085.1.1"}
+}
+108300013 = {
+	name="Мирмелло"	# a lord
+	dynasty=300013
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=103300013
+
+	8037.1.1 = {birth="8037.1.1"}
+	8053.1.1 = {add_trait=trained_warrior}
+	8094.1.1 = {death="8094.1.1"}
+}
+109300013 = {
+	name="Сирио"	# a lord
+	dynasty=300013
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=108300013
+
+	8057.1.1 = {birth="8057.1.1"}
+	8073.1.1 = {add_trait=skilled_warrior}
+	8115.1.1 = {death="8115.1.1"}
+}
+113300013 = {
+	name="Кварро"	# a lord
+	dynasty=300013
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=109300013
+
+	8080.1.1 = {birth="8080.1.1"}
+	8096.1.1 = {add_trait=poor_warrior}
+	8123.1.1 = {death="8123.1.1"}
+}
+118300013 = {
+	name="Иллирио"	# a lord
+	dynasty=300013
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=113300013
+
+	8108.1.1 = {birth="8108.1.1"}
+	8124.1.1 = {add_trait=trained_warrior}
+	8165.1.1 = {death="8165.1.1"}
+}
+119300013 = {
+	name="Моредо"	# a lord
+	dynasty=300013
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=118300013
+
+	8135.1.1 = {birth="8135.1.1"}
+	8151.1.1 = {add_trait=poor_warrior}
+	8200.1.1 = {death="8200.1.1"}
+}
+122300013 = {
+	name="Морео"	# a lord
+	dynasty=300013
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=119300013
+
+	8161.1.1 = {birth="8161.1.1"}
+	8177.1.1 = {add_trait=poor_warrior}
+	8226.1.1 = {death="8226.1.1"}
+}
+127300013 = {
+	name="Пинто"	# a lord
+	dynasty=300013
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=122300013
+
+	8193.1.1 = {birth="8193.1.1"}
+	8209.1.1 = {add_trait=trained_warrior}
+	8211.1.1 = {add_spouse=227300013}
+	8258.1.1 = {death = {death_reason = death_accident}}
+}
+227300013 = {
+	name="Сфрона"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8193.1.1 = {birth="8193.1.1"}
+	8258.1.1 = {death="8258.1.1"}
+}
+130300013 = {
+	name="Баян"	# a lord
+	dynasty=300013
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=127300013
+	mother=227300013
+
+	8219.1.1 = {birth="8219.1.1"}
+	8235.1.1 = {add_trait=trained_warrior}
+	8237.1.1 = {add_spouse=230300013}
+	8271.1.1 = {death="8271.1.1"}
+}
+230300013 = {
+	name="Беллегера"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8219.1.1 = {birth="8219.1.1"}
+	8271.1.1 = {death="8271.1.1"}
+}
+131300013 = {
+	name="Оро"	# not a lord
+	dynasty=300013
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=127300013
+	mother=227300013
+
+	8220.1.1 = {birth="8220.1.1"}
+	8236.1.1 = {add_trait=poor_warrior}
+	8262.1.1 = {death="8262.1.1"}
+}
+133300013 = {
+	name="Пинто"	# a lord
+	dynasty=300013
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=130300013
+	mother=230300013
+
+	8246.1.1 = {birth="8246.1.1"}
+	8262.1.1 = {add_trait=skilled_warrior}
+	8264.1.1 = {add_spouse=233300013}
+	8277.1.1 = {death="8277.1.1"}
+}
+233300013 = {
+	name="Йорка"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8246.1.1 = {birth="8246.1.1"}
+	8277.1.1 = {death="8277.1.1"}
+}
+134300013 = {
+	name="Дения"	# not a lord
+	female=yes
+	dynasty=300013
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=130300013
+	mother=230300013
+
+	8249.1.1 = {birth="8249.1.1"}
+}
+135300013 = {
+	name="Даарио"	# a lord
+	dynasty=300013
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=133300013
+	mother=233300013
+
+	8269.1.1 = {birth="8269.1.1"}
+	8285.1.1 = {add_trait=poor_warrior}
+	8287.1.1 = {add_spouse=235300013}
+}
+235300013 = {
+	name="Уна"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8269.1.1 = {birth="8269.1.1"}
+}
+136300013 = {
+	name="Серала"	# not a lord
+	female=yes
+	dynasty=300013
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=135300013
+	mother=235300013
+
+	8295.1.1 = {birth="8295.1.1"}
+}
+137300013 = {
+	name="Лотея"	# not a lord
+	female=yes
+	dynasty=300013
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=135300013
+	mother=235300013
+
+	8298.1.1 = {birth="8298.1.1"}
+}
+
+### House Virginion
+345300014 = {
+	name="Вирио"	# a lord
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	7810.1.1 = {birth="7810.1.1"}
+	7868.1.1 = {death="7868.1.1"}
+}
+344300014 = {
+	name="Иллонаро"	# a lord
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=345300014
+	
+	7837.1.1 = {birth="7837.1.1"}
+	7892.1.1 = {death="7892.1.1"}
+}
+343300014 = {
+	name="Каллен"	# a lord
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=344300014
+	
+	7859.1.1 = {birth="7859.1.1"}
+	7919.1.1 = {death="7919.1.1"}
+}
+342300014 = {
+	name="Дирио"	# a lord
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=343300014
+	
+	7886.1.1 = {birth="7886.1.1"}
+	7940.1.1 = {death="7940.1.1"}
+}
+341300014 = {
+	name="Эссорио"	# a lord
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=342300014
+	
+	7912.1.1 = {birth="7912.1.1"}
+	7963.1.1 = {death="7963.1.1"}
+}
+340300014 = {
+	name="Норо"	# a lord
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=341300014
+	
+	7931.1.1 = {birth="7931.1.1"}
+	7995.1.1 = {death="7995.1.1"}
+}
+346300014 = {
+	name="Нирио"	# Prince of Pentos
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=340300014
+
+	7954.1.1 = {birth="7954.1.1"}
+	7988.1.1 = {death="7988.1.1"}
+}
+100300014 = {
+	name="Роро"	# a lord
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=340300014
+
+	7958.1.1 = {birth="7958.1.1"}
+	7974.1.1 = {add_trait=poor_warrior}
+	8034.1.1 = {death="8034.1.1"}
+}
+101300014 = {
+	name="Луко"	# a lord
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100300014
+
+	7983.1.1 = {birth="7983.1.1"}
+	7999.1.1 = {add_trait=master_warrior}
+	8037.1.1 = {death="8037.1.1"}
+}
+103300014 = {
+	name="Денио"	# a lord
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101300014
+
+	8007.1.1 = {birth="8007.1.1"}
+	8023.1.1 = {add_trait=skilled_warrior}
+	8042.1.1 = {death="8042.1.1"}
+}
+104300014 = {
+	name="Эззелино"	# a lord
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=103300014
+
+	8039.1.1 = {birth="8039.1.1"}
+	8055.1.1 = {add_trait=poor_warrior}
+	8079.1.1 = {death="8079.1.1"}
+}
+106300014 = {
+	name="Тихо"	# a lord
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=104300014
+
+	8062.1.1 = {birth="8062.1.1"}
+	8078.1.1 = {add_trait=poor_warrior}
+	8109.1.1 = {death="8109.1.1"}
+}
+108300014 = {
+	name="Йорко"	# not a lord
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=104300014
+
+	8065.1.1 = {birth="8065.1.1"}
+	8081.1.1 = {add_trait=trained_warrior}
+	8096.1.1 = {death = {death_reason = death_battle}}
+}
+112300014 = {
+	name="Эззелино"	# a lord
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=106300014
+
+	8085.1.1 = {birth="8085.1.1"}
+	8101.1.1 = {add_trait=trained_warrior}
+	8149.1.1 = {death="8149.1.1"}
+}
+114300014 = {
+	name="Гилоро"	# a lord
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=112300014
+
+	8103.1.1 = {birth="8103.1.1"}
+	8119.1.1 = {add_trait=poor_warrior}
+	8163.1.1 = {death="8163.1.1"}
+}
+118300014 = {
+	name="Денио"	# a lord
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=114300014
+
+	8131.1.1 = {birth="8131.1.1"}
+	8147.1.1 = {add_trait=trained_warrior}
+	8181.1.1 = {death="8181.1.1"}
+}
+120300014 = {
+	name="Орделло"	# a lord
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=118300014
+
+	8159.1.1 = {birth="8159.1.1"}
+	8175.1.1 = {add_trait=poor_warrior}
+	8190.1.1 = {death="8190.1.1"}
+}
+124300014 = {
+	name="Иллирио"	# a lord
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=120300014
+
+	8179.1.1 = {birth="8179.1.1"}
+	8195.1.1 = {add_trait=poor_warrior}
+	8232.1.1 = {death="8232.1.1"}
+}
+125300014 = {
+	name="Луко"	# a lord
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=124300014
+
+	8197.1.1 = {birth="8197.1.1"}
+	8213.1.1 = {add_trait=skilled_warrior}
+	8215.1.1 = {add_spouse=225300014}
+	8255.1.1 = {death="8255.1.1"}
+}
+225300014 = {
+	name="Торма"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8197.1.1 = {birth="8197.1.1"}
+	8255.1.1 = {death="8255.1.1"}
+}
+128300014 = {
+	name="Трегар"	# not a lord
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=124300014
+
+	8204.1.1 = {birth="8204.1.1"}
+	8220.1.1 = {add_trait=master_warrior}
+	8283.1.1 = {death="8283.1.1"}
+}
+129300014 = {
+	name="Лото"	# a lord
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=125300014
+	mother=225300014
+
+	8221.1.1 = {birth="8221.1.1"}
+	8237.1.1 = {add_trait=skilled_warrior}
+	8239.1.1 = {add_spouse=229300014}
+	8295.1.1 = {death="8295.1.1"}
+}
+229300014 = {
+	name="Торма"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8221.1.1 = {birth="8221.1.1"}
+	8295.1.1 = {death="8295.1.1"}
+}
+130300014 = {
+	name="Мералия"	# not a lord
+	female=yes
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=125300014
+	mother=225300014
+
+	8223.1.1 = {birth="8223.1.1"}
+	8282.1.1 = {death = {death_reason = death_murder}}
+}
+131300014 = {
+	name="Мелларио"	# not a lord
+	female=yes
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=125300014
+	mother=225300014
+
+	8225.1.1 = {birth="8225.1.1"}
+	8285.1.1 = {death="8285.1.1"}
+}
+132300014 = {
+	name="Талея"	# not a lord
+	female=yes
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=125300014
+	mother=225300014
+
+	8226.1.1 = {birth="8226.1.1"}
+	8297.1.1 = {death = {death_reason = death_murder}}
+}
+133300014 = {
+	name="Баян"	# a lord
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=129300014
+	mother=229300014
+
+	8254.1.1 = {birth="8254.1.1"}
+	8270.1.1 = {add_trait=poor_warrior}
+	8311.1.1 = {death="8311.1.1"}
+}
+233300014 = {
+	name="Мера"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8254.1.1 = {birth="8254.1.1"}
+	8272.1.1 = {add_spouse=133300014}
+	8311.1.1 = {death="8311.1.1"}
+}
+134300014 = {
+	name="Талея"	# not a lord
+	female=yes
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=133300014
+	mother=233300014
+
+	8276.1.1 = {birth="8276.1.1"}
+}
+135300014 = {
+	name="Моредо"	# not a lord
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=133300014
+	mother=233300014
+
+	8274.1.1 = {birth="8274.1.1"}
+	8290.1.1 = {add_trait=poor_warrior}
+	8292.1.1 = {add_spouse=235300014}
+}
+235300014 = {
+	name="Изембара"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8274.1.1 = {birth="8274.1.1"}
+}
+136300014 = {
+	name="Серра"	# not a lord
+	female=yes
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=133300014
+	mother=233300014
+
+	8280.1.1 = {birth="8280.1.1"}
+}
+137300014 = {
+	name="Дения"	# not a lord
+	female=yes
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=135300014
+	mother=235300014
+
+	8297.1.1 = {birth="8297.1.1"}
+}
+138300014 = {
+	name="Якея"	# not a lord
+	female=yes
+	dynasty=300014
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=135300014
+	mother=235300014
+
+	8299.1.1 = {birth="8299.1.1"}
+}
+
+### House Denorys
+34469157 = {
+	name="Донело"	# a lord
+	dynasty=69157
+
+	religion="rhllor"
+	culture="pentosi"
+
+	7828.1.1 = {birth="7828.1.1"}
+	7898.1.1 = {death="7898.1.1"} #dov
+}
+34369157 = {
+	name="Даарилло"	# a lord
+	dynasty=69157
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34469157
+
+	7853.1.1 = {birth="7853.1.1"}
+	7908.1.1 = {death="7908.1.1"}
+}
+34269157 = {
+	name="Лазан"	# a lord
+	dynasty=69157
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34369157
+
+	7880.1.1 = {birth="7880.1.1"}
+	7938.1.1 = {death="7938.1.1"}
+}
+34169157 = {
+	name="Варифос"	# a lord
+	dynasty=69157
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34269157
+
+	7911.1.1 = {birth="7911.1.1"}
+	7972.1.1 = {death="7972.1.1"}
+}
+34069157 = {
+	name="Гиллено"	# a lord
+	dynasty=69157
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34169157
+
+	7934.1.1 = {birth="7934.1.1"}
+	7995.1.1 = {death="7995.1.1"}
+}
+100069157 = {
+	name="Терро"	# a lord
+	dynasty=69157
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=34069157
+
+	7960.1.1 = {birth="7960.1.1"}
+	7976.1.1 = {add_trait=poor_warrior}
+	8036.1.1 = {death="8036.1.1"}
+}
+100169157 = {
+	name="Баян"	# a lord
+	dynasty=69157
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100069157
+
+	7979.1.1 = {birth="7979.1.1"}
+	7995.1.1 = {add_trait=skilled_warrior}
+	8043.1.1 = {death="8043.1.1"}
+}
+100369157 = {
+	name="Якен"	# a lord
+	dynasty=69157
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100169157
+
+	8005.1.1 = {birth="8005.1.1"}
+	8021.1.1 = {add_trait=poor_warrior}
+	8082.1.1 = {death="8082.1.1"}
+}
+100469157 = {
+	name="Денио"	# a lord
+	dynasty=69157
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100369157
+
+	8030.1.1 = {birth="8030.1.1"}
+	8046.1.1 = {add_trait=trained_warrior}
+	8088.1.1 = {death="8088.1.1"}
+}
+100769157 = {
+	name="Морео"	# a lord
+	dynasty=69157
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100469157
+
+	8055.1.1 = {birth="8055.1.1"}
+	8071.1.1 = {add_trait=poor_warrior}
+	8111.1.1 = {death="8111.1.1"}
+}
+100969157 = {
+	name="Бруско"	# a lord
+	dynasty=69157
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100769157
+
+	8078.1.1 = {birth="8078.1.1"}
+	8094.1.1 = {add_trait=poor_warrior}
+	8117.1.1 = {death="8117.1.1"}
+}
+101169157 = {
+	name="Мирмелло"	# a lord
+	dynasty=69157
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100969157
+
+	8097.1.1 = {birth="8097.1.1"}
+	8113.1.1 = {add_trait=poor_warrior}
+	8134.1.1 = {death="8134.1.1"}
+}
+101369157 = {
+	name="Моредо"	# a lord
+	dynasty=69157
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101169157
+
+	8122.1.1 = {birth="8122.1.1"}
+	8138.1.1 = {add_trait=poor_warrior}
+	8182.1.1 = {death="8182.1.1"}
+}
+101669157 = {
+	name="Коссомо"	# a lord
+	dynasty=69157
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101369157
+
+	8155.1.1 = {birth="8155.1.1"}
+	8171.1.1 = {add_trait=trained_warrior}
+	8199.1.1 = {death="8199.1.1"}
+}
+101769157 = {
+	name="Арео"	# a lord
+	dynasty=69157
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101669157
+
+	8176.1.1 = {birth="8176.1.1"}
+	8192.1.1 = {add_trait=trained_warrior}
+	8232.1.1 = {death="8232.1.1"}
+}
+105069157 = {
+	name="Коллио"	#Prince of Pentos
+	dynasty=69157
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101669157
+
+	8178.1.1 = {birth="8178.1.1"}
+	8194.1.1 = {add_trait=trained_warrior}
+	8195.10.1 = {death = {death_reason = death_execution} } 
+}
+101869157 = {
+	name="Орбело"	# a lord
+	dynasty=69157
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101769157
+
+	8201.1.1 = {birth="8201.1.1"}
+	8217.1.1 = {add_trait=poor_warrior}
+	8241.1.1 = {death="8241.1.1"}
+}
+102069157 = {
+	name="Йорко"	# a lord
+	dynasty=69157
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101869157
+
+	8221.1.1 = {birth="8221.1.1"}
+	8237.1.1 = {add_trait=skilled_warrior}
+	8239.1.1 = {add_spouse=402069157}
+	8277.1.1 = {death="8277.1.1"}
+}
+402069157 = {
+	name="Пинта"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8221.1.1 = {birth="8221.1.1"}
+	8277.1.1 = {death="8277.1.1"}
+}
+102169157 = {
+	name="Лотея"	# not a lord
+	female=yes
+	dynasty=69157
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102069157
+	mother=402069157
+
+	8246.1.1 = {birth="8246.1.1"}
+	8291.1.1 = {death="8291.1.1"}
+}
+102269157 = {
+	name="Роро"	# not a lord
+	dynasty=69157
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102069157
+	mother=402069157
+
+	8247.1.1 = {birth="8247.1.1"}
+	8263.1.1 = {add_trait=poor_warrior}
+	8268.1.1 = {death="8268.1.1"}
+}
+102369157 = {
+	name="Сирио"	# a lord
+	dynasty=69157
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102069157
+	mother=402069157
+
+	8250.1.1 = {birth="8250.1.1"}
+	8266.1.1 = {add_trait=trained_warrior}
+	8268.1.1 = {add_spouse=402369157}
+	8281.1.1 = {death="8281.1.1"}
+}
+402369157 = {
+	name="Якея"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8250.1.1 = {birth="8250.1.1"}
+	8281.1.1 = {death="8281.1.1"}
+}
+102469157 = {
+	name="Ориос"	# not a lord
+	female=yes
+	dynasty=69157
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102069157
+	mother=402069157
+
+	8253.1.1 = {birth="8253.1.1"}
+	8280.1.1 = {death="8280.1.1"}
+}
+102569157 = {
+	name="Якен"	# a lord
+	dynasty=69157
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102369157
+	mother=402369157
+
+	8274.1.1 = {birth="8274.1.1"}
+	8290.1.1 = {add_trait=poor_warrior}
+	8292.1.1 = {add_spouse=402569157}
+}
+402569157 = {
+	name="Беллонара"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8274.1.1 = {birth="8274.1.1"}
+}
+102669157 = {
+	name="Мирмеллиос"	# not a lord
+	female=yes
+	dynasty=69157
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102369157
+	mother=402369157
+
+	8276.1.1 = {birth="8276.1.1"}
+}
+
+#############
+###Andalos###
+#############
+
+### House Flaerys
+345300900 = {
+	name="Бисирос"	# a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	7826.1.1 = {birth="7826.1.1"}
+	7882.1.1 = {death="7882.1.1"}
+}
+344300900 = {
+	name="Нерео"	# a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=345300900
+
+	7849.1.1 = {birth="7849.1.1"}
+	7900.1.1 = {death="7900.1.1"}
+}
+343300900 = {
+	name="Риос"	# a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=344300900
+
+	7872.1.1 = {birth="7872.1.1"}
+	7929.1.1 = {death="7929.1.1"}
+}
+342300900 = {
+	name="Накорно"	# a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=343300900
+
+	7895.1.1 = {birth="7895.1.1"}
+	7952.1.1 = {death="7952.1.1"}
+}
+341300900 = {
+	name="Кирио"	# a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=342300900
+
+	7913.1.1 = {birth="7913.1.1"}
+	7971.1.1 = {death="7971.1.1"}
+}
+340300900 = {
+	name="Сталлено"	# a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=341300900
+
+	7938.1.1 = {birth="7938.1.1"}
+	7985.1.1 = {death="7985.1.1"}
+}
+100300900 = {
+	name="Кирио"	# a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=340300900
+
+	7965.1.1 = {birth="7965.1.1"}
+	7981.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8023.1.1 = {death="8023.1.1"}
+}
+101300900 = {
+	name="Гарридо"	# a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100300900
+
+	7993.1.1 = {birth="7993.1.1"}
+	8009.1.1 = {add_trait=knight add_trait=skilled_warrior}
+	8065.1.1 = {death="8065.1.1"}
+}
+102300900 = {
+	name="Дирио"	# not a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100300900
+
+	7994.1.1 = {birth="7994.1.1"}
+	8010.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8050.1.1 = {death="8050.1.1"}
+}
+105300900 = {
+	name="Белафо"	# a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102300900
+
+	8015.1.1 = {birth="8015.1.1"}
+	8031.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8076.1.1 = {death="8076.1.1"}
+}
+107300900 = {
+	name="Сиран"	# a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=105300900
+
+	8044.1.1 = {birth="8044.1.1"}
+	8060.1.1 = {add_trait=poor_warrior}
+	8097.1.1 = {death="8097.1.1"}
+}
+108300900 = {
+	name="Эйрадор"	# a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=107300900
+
+	8067.1.1 = {birth="8067.1.1"}
+	8083.1.1 = {add_trait=poor_warrior}
+	8101.1.1 = {death = {death_reason = death_murder}}
+}
+109300900 = {
+	name="Лирио"	# a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=107300900
+
+	8070.1.1 = {birth="8070.1.1"}
+	8086.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8118.1.1 = {death="8118.1.1"}
+}
+110300900 = {
+	name="Алло"	# a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=109300900
+
+	8103.1.1 = {birth="8103.1.1"}
+	8119.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8126.1.1 = {death="8126.1.1"}
+}
+111300900 = {
+	name="Варгио"	# a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=109300900
+
+	8106.1.1 = {birth="8106.1.1"}
+	8122.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8172.1.1 = {death="8172.1.1"}
+}
+119300900 = {
+	name="Вирано"	# a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=111300900
+
+	8142.1.1 = {birth="8142.1.1"}
+	8158.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8194.1.1 = {death="8194.1.1"}
+}
+120300900 = {
+	name="Ларазис"	# a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=119300900
+
+	8163.1.1 = {birth="8163.1.1"}
+	8179.1.1 = {add_trait=poor_warrior}
+	8217.1.1 = {death="8217.1.1"}
+}
+123300900 = {
+	name="Конос"	# a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=120300900
+
+	8189.1.1 = {birth="8189.1.1"}
+	8205.1.1 = {add_trait=poor_warrior}
+	8207.1.1 = {add_spouse=423300900}
+	8241.1.1 = {death="8241.1.1"}
+}
+423300900 = {
+	name="Минала"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8189.1.1 = {birth="8189.1.1"}
+	8241.1.1 = {death="8241.1.1"}
+}
+124300900 = {
+	name="Зоро"	# a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=123300900
+	mother=423300900
+
+	8209.1.1 = {birth="8209.1.1"}
+	8225.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8227.1.1 = {add_spouse=424300900}
+	8289.1.1 = {death="8289.1.1"}
+}
+424300900 = {
+	name="Лареша"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8209.1.1 = {birth="8209.1.1"}
+	8289.1.1 = {death="8289.1.1"}
+}
+125300900 = {
+	name="Варгио"	# not a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=123300900
+	mother=423300900
+
+	8211.1.1 = {birth="8211.1.1"}
+	8227.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8268.1.1 = {death="8268.1.1"}
+}
+126300900 = {
+	name="Тирина"	# not a lord
+	female=yes
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=124300900
+	mother=424300900
+
+	8232.1.1 = {birth="8232.1.1"}
+	8270.1.1 = {death="8270.1.1"}
+}
+127300900 = {
+	name="Трегонос"	# not a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=124300900
+	mother=424300900
+
+	8233.1.1 = {birth="8233.1.1"}
+	8249.1.1 = {add_trait=knight add_trait=master_warrior}
+	8251.1.1 = {add_spouse=427300900}
+	8289.1.1 = {death="8289.1.1"}
+}
+427300900 = {
+	name="Фирелла"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8233.1.1 = {birth="8233.1.1"}
+	8289.1.1 = {death="8289.1.1"}
+}
+128300900 = {
+	name="Фенолана"	# not a lord
+	female=yes
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=124300900
+	mother=424300900
+
+	8236.1.1 = {birth="8236.1.1"}
+	8283.1.1 = {death="8283.1.1"}
+}
+129300900 = {
+	name="Тихан"	# not a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=124300900
+	mother=424300900
+
+	8238.1.1 = {birth="8238.1.1"}
+	8254.1.1 = {add_trait=poor_warrior}
+	8292.1.1 = {death="8292.1.1"}
+}
+130300900 = {
+	name="Дорианна"	# not a lord
+	female=yes
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=127300900
+	mother=427300900
+
+	8258.1.1 = {birth="8258.1.1"}
+}
+131300900 = {
+	name="Ниэссафо"	# a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=127300900
+	mother=427300900
+
+	8261.1.1 = {birth="8261.1.1"}
+	8277.1.1 = {add_trait=poor_warrior}
+	8279.1.1 = {add_spouse=431300900}
+}
+431300900 = {
+	name="Пизария"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8261.1.1 = {birth="8261.1.1"}
+}
+132300900 = {
+	name="Зоро"	# not a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=127300900
+	mother=427300900
+
+	8264.1.1 = {birth="8264.1.1"}
+	8280.1.1 = {add_trait=poor_warrior}
+}
+133300900 = {
+	name="Дааро"	# not a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=127300900
+	mother=427300900
+
+	8265.1.1 = {birth="8265.1.1"}
+	8281.1.1 = {add_trait=trained_warrior}
+}
+134300900 = {
+	name="Ларазо"	# not a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=131300900
+	mother=431300900
+
+	8279.1.1 = {birth="8279.1.1"}
+	8295.1.1 = {add_trait=knight add_trait=trained_warrior}
+}
+135300900 = {
+	name="Лукрецция"	# not a lord
+	female=yes
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=131300900
+	mother=431300900
+
+	8280.1.1 = {birth="8280.1.1"}
+}
+136300900 = {
+	name="Виронос"	# not a lord
+	dynasty=300900
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=131300900
+	mother=431300900
+
+	8281.1.1 = {birth="8281.1.1"}
+	8297.1.1 = {add_trait=knight add_trait=poor_warrior}
+}
+
+### House Phassios
+344300901 = {
+	name="Ярридо"	# a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	7815.1.1 = {birth="7815.1.1"}
+	7878.1.1 = {death="7878.1.1"}
+}
+343300901 = {
+	name="Аричо"	# a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=344300901
+
+	7843.1.1 = {birth="7843.1.1"}
+	7902.1.1 = {death="7902.1.1"}
+}
+342300901 = {
+	name="Риос"	# a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=343300901
+
+	7872.1.1 = {birth="7872.1.1"}
+	7935.1.1 = {death="7935.1.1"}
+}
+341300901 = {
+	name="Даавино"	# a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=342300901
+
+	7897.1.1 = {birth="7897.1.1"}
+	7951.1.1 = {death="7951.1.1"}
+}
+340300901 = {
+	name="Роро"	# a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=341300901
+
+	7918.1.1 = {birth="7918.1.1"}
+	7964.1.1 = {death="7964.1.1"}
+}
+100300901 = {
+	name="Оро"	# a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=340300901
+
+	7944.1.1 = {birth="7944.1.1"}
+	7960.1.1 = {add_trait=poor_warrior}
+	8009.1.1 = {death="8009.1.1"}
+}
+101300901 = {
+	name="Кадаро"	# not a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100300901
+
+	7966.1.1 = {birth="7966.1.1"}
+	7982.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8001.1.1 = {death="8001.1.1"}
+}
+106300901 = {
+	name="Пидос"	# a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=101300901
+
+	7998.1.1 = {birth="7998.1.1"}
+	8014.1.1 = {add_trait=knight add_trait=master_warrior}
+	8054.1.1 = {death="8054.1.1"}
+}
+107300901 = {
+	name="Саллоро"	# a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=106300901
+
+	8026.1.1 = {birth="8026.1.1"}
+	8042.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8096.1.1 = {death="8096.1.1"}
+}
+109300901 = {
+	name="Трегирос"	# not a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=107300901
+
+	8044.1.1 = {birth="8044.1.1"}
+	8060.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8084.1.1 = {death="8084.1.1"}
+}
+112300901 = {
+	name="Эззало"	# a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=109300901
+
+	8072.1.1 = {birth="8072.1.1"}
+	8088.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8130.1.1 = {death="8130.1.1"}
+}
+115300901 = {
+	name="Дракорос"	# a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=112300901
+
+	8097.1.1 = {birth="8097.1.1"}
+	8113.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8140.1.1 = {death="8140.1.1"}
+}
+117300901 = {
+	name="Малеро"	# a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=115300901
+
+	8122.1.1 = {birth="8122.1.1"}
+	8138.1.1 = {add_trait=knight add_trait=skilled_warrior}
+	8165.1.1 = {death="8165.1.1"}
+}
+121300901 = {
+	name="Бириос"	# a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=117300901
+
+	8144.1.1 = {birth="8144.1.1"}
+	8160.1.1 = {add_trait=poor_warrior}
+	8195.1.1 = {death="8195.1.1"}
+}
+122300901 = {
+	name="Лоторио"	# a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=117300901
+
+	8147.1.1 = {birth="8147.1.1"}
+	8163.1.1 = {add_trait=trained_warrior}
+	8216.1.1 = {death="8216.1.1"}
+}
+126300901 = {
+	name="Нарафо"	# a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=122300901
+
+	8167.1.1 = {birth="8167.1.1"}
+	8183.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8237.1.1 = {death="8237.1.1"}
+}
+127300901 = {
+	name="Гарро"	# not a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=122300901
+
+	8170.1.1 = {birth="8170.1.1"}
+	8186.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8234.1.1 = {death="8234.1.1"}
+}
+129300901 = {
+	name="Эйрано"	# a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=126300901
+
+	8190.1.1 = {birth="8190.1.1"}
+	8206.1.1 = {add_trait=poor_warrior}
+	8253.1.1 = {death="8253.1.1"}
+}
+130300901 = {
+	name="Айрио"	# a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=127300901
+
+	8203.1.1 = {birth="8203.1.1"}
+	8219.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8221.1.1 = {add_spouse=430300901}
+	8279.1.1 = {death="8279.1.1"}
+}
+430300901 = {
+	name="Ворария"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8203.1.1 = {birth="8203.1.1"}
+	8279.1.1 = {death="8279.1.1"}
+}
+131300901 = {
+	name="Норо"	# not a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=130300901
+	mother=430300901
+
+	8230.1.1 = {birth="8230.1.1"}
+	8246.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8248.1.1 = {add_spouse=431300901}
+	8267.1.1 = {death="8267.1.1"}
+}
+431300901 = {
+	name="Йорафия"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8230.1.1 = {birth="8230.1.1"}
+	8267.1.1 = {death="8267.1.1"}
+}
+132300901 = {
+	name="Фиранира"	# not a lord
+	female=yes
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=130300901
+	mother=430300901
+
+	8231.1.1 = {birth="8231.1.1"}
+	8280.1.1 = {death = {death_reason = death_accident}}
+}
+133300901 = {
+	name="Харонно"	# a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=131300901
+	mother=431300901
+
+	8257.1.1 = {birth="8257.1.1"}
+	8273.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8275.1.1 = {add_spouse=433300901}
+}
+433300901 = {
+	name="Ахрейна"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8257.1.1 = {birth="8257.1.1"}
+}
+134300901 = {
+	name="Адарено"	# not a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=131300901
+	mother=431300901
+
+	8258.1.1 = {birth="8258.1.1"}
+	8274.1.1 = {add_trait=poor_warrior}
+	8276.1.1 = {add_spouse=434300901}
+}
+434300901 = {
+	name="Нисария"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8258.1.1 = {birth="8258.1.1"}
+}
+135300901 = {
+	name="Сирона"	# not a lord
+	female=yes
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=131300901
+	mother=431300901
+
+	8261.1.1 = {birth="8261.1.1"}
+}
+136300901 = {
+	name="Беллона"	# not a lord
+	female=yes
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=133300901
+	mother=433300901
+
+	8286.1.1 = {birth="8286.1.1"}
+}
+137300901 = {
+	name="Вогис"	# not a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=133300901
+	mother=433300901
+
+	8287.1.1 = {birth="8287.1.1"}
+	8303.1.1 = {add_trait=trained_warrior}
+}
+138300901 = {
+	name="Фирона"	# not a lord
+	female=yes
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=133300901
+	mother=433300901
+
+	8288.1.1 = {birth="8288.1.1"}
+}
+139300901 = {
+	name="Лисано"	# not a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=133300901
+	mother=433300901
+
+	8290.1.1 = {birth="8290.1.1"}
+}
+140300901 = {
+	name="Лазирос"	# not a lord
+	dynasty=300901
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=134300901
+	mother=434300901
+
+	8287.1.1 = {birth="8287.1.1"}
+}
+
+### House Baharis
+344300902 = {
+	name="Бирессо"	# a lord
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+
+	7829.1.1 = {birth="7829.1.1"}
+	7898.1.1 = {death="7898.1.1"} #dov
+}
+343300902 = {
+	name="Аронос"	# a lord
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=344300902
+
+	7855.1.1 = {birth="7855.1.1"}
+	7911.1.1 = {death="7911.1.1"}
+}
+342300902 = {
+	name="Лирио"	# a lord
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=343300902
+
+	7878.1.1 = {birth="7878.1.1"}
+	7931.1.1 = {death="7931.1.1"}
+}
+341300902 = {
+	name="Эззо"	# a lord
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=342300902
+
+	7908.1.1 = {birth="7908.1.1"}
+	7966.1.1 = {death="7966.1.1"}
+}
+340300902 = {
+	name="Кессио"	# a lord
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=341300902
+
+	7934.1.1 = {birth="7934.1.1"}
+	7980.1.1 = {death="7980.1.1"}
+}
+100300902 = {
+	name="Ларазо"	# a lord
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=340300902
+
+	7960.1.1 = {birth="7960.1.1"}
+	7976.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8021.1.1 = {death="8021.1.1"}
+}
+102300902 = {
+	name="Нарафо"	# a lord
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100300902
+
+	7993.1.1 = {birth="7993.1.1"}
+	8009.1.1 = {add_trait=poor_warrior}
+	8038.1.1 = {death="8038.1.1"}
+}
+104300902 = {
+	name="Холло"	# a lord
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100300902
+
+	7996.1.1 = {birth="7996.1.1"}
+	8013.1.1 = {add_trait=knight add_trait=skilled_warrior}
+	8069.1.1 = {death="8069.1.1"}
+}
+106300902 = {
+	name="Киллирио"	# a lord
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=104300902
+
+	8022.1.1 = {birth="8022.1.1"}
+	8038.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8077.1.1 = {death="8077.1.1"}
+}
+107300902 = {
+	name="Айрио"	# a lord
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=104300902
+
+	8023.1.1 = {birth="8023.1.1"}
+	8039.1.1 = {add_trait=knight add_trait=skilled_warrior}
+	8093.1.1 = {death="8093.1.1"}
+}
+112300902 = {
+	name="Пидос"	# a lord
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=107300902
+
+	8051.1.1 = {birth="8051.1.1"}
+	8067.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8115.1.1 = {death="8115.1.1"}
+}
+114300902 = {
+	name="Зелегор"	# a lord
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=112300902
+
+	8077.1.1 = {birth="8077.1.1"}
+	8093.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8128.1.1 = {death="8128.1.1"}
+}
+116300902 = {
+	name="Каспорио"	# a lord
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=114300902
+
+	8097.1.1 = {birth="8097.1.1"}
+	8113.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8130.1.1 = {death = {death_reason = death_murder}}
+}
+119300902 = {
+	name="Накео"	# a lord
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=116300902
+
+	8129.1.1 = {birth="8129.1.1"}
+	8145.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8187.1.1 = {death="8187.1.1"}
+}
+120300902 = {
+	name="Тихорос"	# not a lord
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=119300902
+
+	8152.1.1 = {birth="8152.1.1"}
+	8168.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8185.1.1 = {death = {death_reason = death_murder}}
+}
+123300902 = {
+	name="Волло"	# a lord
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=120300902
+
+	8181.1.1 = {birth="8181.1.1"}
+	8197.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8199.1.1 = {add_spouse=423300902}
+	8245.1.1 = {death="8245.1.1"}
+}
+423300902 = {
+	name="Калосса"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8181.1.1 = {birth="8181.1.1"}
+	8245.1.1 = {death="8245.1.1"}
+}
+126300902 = {
+	name="Заргано"	# a lord
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=123300902
+	mother=423300902
+
+	8209.1.1 = {birth="8209.1.1"}
+	8225.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8227.1.1 = {add_spouse=426300902}
+	8263.1.1 = {death="8263.1.1"}
+}
+426300902 = {
+	name="Роана"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8209.1.1 = {birth="8209.1.1"}
+	8263.1.1 = {death="8263.1.1"}
+}
+127300902 = {
+	name="Генезио"	# not a lord
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=123300902
+	mother=423300902
+
+	8211.1.1 = {birth="8211.1.1"}
+	8227.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8280.1.1 = {death="8280.1.1"}
+}
+128300902 = {
+	name="Падарос"	# a lord
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=126300902
+	mother=426300902
+
+	8236.1.1 = {birth="8236.1.1"}
+	8252.1.1 = {add_trait=knight add_trait=skilled_warrior}
+	8254.1.1 = {add_spouse=428300902}
+	8289.1.1 = {death="8289.1.1"}
+}
+428300902 = {
+	name="Вейрана"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8236.1.1 = {birth="8236.1.1"}
+	8289.1.1 = {death="8289.1.1"}
+}
+129300902 = {
+	name="Гиллено"	# not a lord
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=126300902
+	mother=426300902
+
+	8237.1.1 = {birth="8237.1.1"}
+	8253.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8265.1.1 = {death="8265.1.1"}
+}
+130300902 = {
+	name="Белафо"	# not a lord
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=126300902
+	mother=426300902
+
+	8239.1.1 = {birth="8239.1.1"}
+	8255.1.1 = {add_trait=knight add_trait=poor_warrior}
+}
+131300902 = {
+	name="Норелли"	# not a lord
+	female=yes
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=128300902
+	mother=428300902
+
+	8261.1.1 = {birth="8261.1.1"}
+}
+132300902 = {
+	name="Фенорея"	# not a lord
+	female=yes
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=128300902
+	mother=428300902
+
+	8263.1.1 = {birth="8263.1.1"}
+}
+133300902 = {
+	name="Бирессо"	# a lord
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=128300902
+	mother=428300902
+
+	8265.1.1 = {birth="8265.1.1"}
+	8281.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8283.1.1 = {add_spouse=433300902}
+}
+433300902 = {
+	name="Сирани"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8265.1.1 = {birth="8265.1.1"}
+}
+134300902 = {
+	name="Доналло"	# not a lord
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=128300902
+	mother=428300902
+
+	8266.1.1 = {birth="8266.1.1"}
+	8282.1.1 = {add_trait=knight add_trait=skilled_warrior}
+}
+135300902 = {
+	name="Фиранела"	# not a lord
+	female=yes
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=128300902
+	mother=428300902
+
+	8269.1.1 = {birth="8269.1.1"}
+}
+136300902 = {
+	name="Тора"	# not a lord
+	female=yes
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=133300902
+	mother=433300902
+
+	8287.1.1 = {birth="8287.1.1"}
+}
+137300902 = {
+	name="Белекор"	# not a lord
+	dynasty=300902
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=133300902
+	mother=433300902
+
+	8288.1.1 = {birth="8288.1.1"}
+}
+
+### House Paenaar
+345300903 = {
+	name="Луко"	# a lord
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+
+	7813.1.1 = {birth="7813.1.1"}
+	7864.1.1 = {death="7864.1.1"}
+}
+344300903 = {
+	name="Иррио"	# a lord
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=345300903
+
+	7836.1.1 = {birth="7836.1.1"}
+	7894.1.1 = {death="7894.1.1"}
+}
+343300903 = {
+	name="Мессио"	# a lord
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=344300903
+
+	7860.1.1 = {birth="7860.1.1"}
+	7912.1.1 = {death="7912.1.1"}
+}
+342300903 = {
+	name="Араро"	# a lord
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=343300903
+
+	7883.1.1 = {birth="7883.1.1"}
+	7924.1.1 = {death="7924.1.1"}
+}
+341300903 = {
+	name="Паллос"	# a lord
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=342300903
+
+	7906.1.1 = {birth="7906.1.1"}
+	7954.1.1 = {death="7954.1.1"}
+}
+340300903 = {
+	name="Донано"	# a lord
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=341300903
+
+	7929.1.1 = {birth="7929.1.1"}
+	7977.1.1 = {death="7977.1.1"}
+}
+100300903 = {
+	name="Лисано"	# a lord
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+	
+	father=340300903
+
+	7957.1.1 = {birth="7957.1.1"}
+	7973.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8015.1.1 = {death="8015.1.1"}
+}
+101300903 = {
+	name="Сиричо"	# a lord
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100300903
+
+	7979.1.1 = {birth="7979.1.1"}
+	7995.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8035.1.1 = {death="8035.1.1"}
+}
+102300903 = {
+	name="Боро"	# not a lord
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=100300903
+
+	7981.1.1 = {birth="7981.1.1"}
+	7996.1.1 = {add_trait=poor_warrior}
+	8034.1.1 = {death="8034.1.1"}
+}
+105300903 = {
+	name="Зирио"	# a lord
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=102300903
+
+	8008.1.1 = {birth="8008.1.1"}
+	8024.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8060.1.1 = {death="8060.1.1"}
+}
+112300903 = {
+	name="Заракво"	# a lord
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=105300903
+
+	8041.1.1 = {birth="8041.1.1"}
+	8057.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8118.1.1 = {death="8118.1.1"}
+}
+117300903 = {
+	name="Эсодо"	# a lord
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=112300903
+
+	8062.1.1 = {birth="8062.1.1"}
+	8078.1.1 = {add_trait=knight add_trait=skilled_warrior}
+	8127.1.1 = {death="8127.1.1"}
+}
+120300903 = {
+	name="Иллос"	# a lord
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=117300903
+
+	8085.1.1 = {birth="8085.1.1"}
+	8101.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8134.1.1 = {death="8134.1.1"}
+}
+127300903 = {
+	name="Хориро"	# a lord
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=120300903
+
+	8121.1.1 = {birth="8121.1.1"}
+	8137.1.1 = {add_trait=trained_warrior}
+	8167.1.1 = {death="8167.1.1"}
+}
+128300903 = {
+	name="Пириос"	# a lord
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=127300903
+
+	8141.1.1 = {birth="8141.1.1"}
+	8157.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8199.1.1 = {death="8199.1.1"}
+}
+131300903 = {
+	name="Эйрадор"	# not a lord
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=128300903
+
+	8173.1.1 = {birth="8173.1.1"}
+	8189.1.1 = {add_trait=poor_warrior}
+	8198.1.1 = {death = {death_reason = death_battle}}
+}
+133300903 = {
+	name="Даавино"	# a lord
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=131300903
+
+	8194.1.1 = {birth="8194.1.1"}
+	8210.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8212.1.1 = {add_spouse=433300903}
+	8268.1.1 = {death="8268.1.1"}
+}
+433300903 = {
+	name="Торена"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8194.1.1 = {birth="8194.1.1"}
+	8268.1.1 = {death="8268.1.1"}
+}
+135300903 = {
+	name="Вирана"	# not a lord
+	female=yes
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=131300903
+
+	8198.1.1 = {birth="8198.1.1"}
+	8270.1.1 = {death="8270.1.1"}
+}
+136300903 = {
+	name="Тихорос"	# a lord
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=133300903
+	mother=433300903
+
+	8220.1.1 = {birth="8220.1.1"}
+	8236.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8238.1.1 = {add_spouse=436300903}
+	8282.1.1 = {death="8282.1.1"}
+}
+436300903 = {
+	name="Йорилла"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8220.1.1 = {birth="8220.1.1"}
+	8282.1.1 = {death="8282.1.1"}
+}
+137300903 = {
+	name="Рано"	# not a lord
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=133300903
+	mother=433300903
+
+	8221.1.1 = {birth="8221.1.1"}
+	8237.1.1 = {add_trait=knight add_trait=skilled_warrior}
+	8252.1.1 = {death="8252.1.1"}
+}
+138300903 = {
+	name="Норафос"	# a lord
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=136300903
+	mother=436300903
+
+	8247.1.1 = {birth="8247.1.1"}
+	8263.1.1 = {add_trait=knight add_trait=skilled_warrior}
+	8265.1.1 = {add_spouse=438300903}
+}
+438300903 = {
+	name="Алея"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8247.1.1 = {birth="8247.1.1"}
+}
+139300903 = {
+	name="Араро"	# not a lord
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=136300903
+	mother=436300903
+
+	8248.1.1 = {birth="8248.1.1"}
+	8264.1.1 = {add_trait=poor_warrior}
+	8266.1.1 = {add_spouse=439300903}
+}
+439300903 = {
+	name="Нерея"
+	female=yes
+
+	religion="rhllor"
+	culture="pentosi"
+
+	8248.1.1 = {birth="8248.1.1"}
+}
+140300903 = {
+	name="Несора"	# not a lord
+	female=yes
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=136300903
+	mother=436300903
+
+	8250.1.1 = {birth="8250.1.1"}
+}
+141300903 = {
+	name="Эйрадор"	# not a lord
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=138300903
+	mother=438300903
+
+	8270.1.1 = {birth="8270.1.1"}
+	8286.1.1 = {add_trait=poor_warrior}
+}
+142300903 = {
+	name="Трианнолла"	# not a lord
+	female=yes
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=138300903
+	mother=438300903
+
+	8272.1.1 = {birth="8272.1.1"}
+}
+143300903 = {
+	name="Лирио"	# not a lord
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=138300903
+	mother=438300903
+
+	8274.1.1 = {birth="8274.1.1"}
+	8290.1.1 = {add_trait=knight add_trait=trained_warrior}
+}
+144300903 = {
+	name="Сирани"	# not a lord
+	female=yes
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=139300903
+	mother=439300903
+
+	8275.1.1 = {birth="8275.1.1"}
+}
+145300903 = {
+	name="Трегар"	# not a lord
+	dynasty=300903
+
+	religion="rhllor"
+	culture="pentosi"
+
+	father=139300903
+	mother=439300903
+
+	8276.1.1 = {birth="8276.1.1"}
+	8292.1.1 = {add_trait=knight add_trait=poor_warrior}
+}

@@ -1,0 +1,19 @@
+name = "Дорнийское завоевание Штормовых земель"
+
+casus_belli={
+	casus_belli=invasion
+	actor=22001 # Mariya Martell
+	recipient=1544 # Argilac Durrandon
+	landed_title=e_stormlands
+	date=7960.1.1
+}
+
+7960.1.1 = {
+	add_defender = 1544 # Argilac Durrandon
+	add_attacker = 22001 # Mariya Martell
+}
+
+7961.1.1 = {
+	rem_defender = 1544 # Argilac Durrandon 
+	rem_attacker = 22001 # Mariya Martell
+}                                                                                                                                                                                                                                                                                                                

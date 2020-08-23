@@ -1,0 +1,2793 @@
+#####################
+###Kings of Sarnor###
+#####################
+10056822 = {
+	name="Хужор"	# Хужор Amai (the Amazing), Legendary Hero King
+	dynasty=56822
+	
+	martial=8
+	stewardship=6
+	diplomacy=9
+	intrigue=5
+	learning=4
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+	
+	add_trait=strong
+	add_trait=ambitious
+	add_trait=brilliant_strategist
+	add_trait=proud
+	add_trait=ruthless
+	
+	give_nickname = nick_the_amazing
+	
+	4000.1.1 = {birth="4000.1.1"}
+	4016.1.1 = {add_trait=master_warrior}
+	4068.1.1 = {death="4068.1.1"}
+}
+
+###############
+### Sarnath ###
+###############
+### House Alexi
+110056800 = {
+	name="Онкар"	# a lord
+	dynasty=56800
+	dna = btllapemshz
+	properties = aku0ja
+			
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	7868.1.1 = {birth="7868.1.1"}
+	7884.1.1 = {add_trait=poor_warrior}
+	7921.1.1 = {death="7921.1.1"}
+}
+10156800 = {
+	name="Багеш"	# a lord
+	dynasty=56800
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=110056800
+
+	7894.1.1 = {birth="7894.1.1"}
+	7910.1.1 = {add_trait=poor_warrior}
+	7953.1.1 = {death="7953.1.1"}
+}
+10656800 = {
+	name="Харит"	# a lord
+	dynasty=56800
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10156800
+
+	7918.1.1 = {birth="7918.1.1"}
+	7934.1.1 = {add_trait=poor_warrior}
+	7965.1.1 = {death="7965.1.1"}
+}
+
+10056800 = {
+	name="Мазор"	# The Last High King
+	dynasty=56800 #Alexi
+	
+	martial=4
+	stewardship=5
+	diplomacy=5
+	intrigue=4
+	learning=6
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10656800
+	
+	add_trait=authoritative
+	add_trait=charismatic_negotiator
+	add_trait=proud
+	add_trait=brave
+	
+	7938.1.1 = {birth="7938.1.1"}
+	7954.1.1 = {add_trait=trained_warrior}
+	7975.1.1 = {
+		add_trait = dead_target #so government can be changed for history
+		death={
+			death_reason=death_battle
+		}
+	}
+}
+11056800 = {
+	name="Даршан"	# not a lord
+	dynasty=56800
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10056800
+
+	7968.1.1 = {birth="7968.1.1"}
+	7984.1.1 = {add_trait=master_warrior}
+	8036.1.1 = {death="8036.1.1"}
+}
+
+#############
+### Saath ###
+#############
+### House Dhalokia
+34356802 = {
+	name="Уткарш"	# a lord
+	dynasty=56802
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+	
+	7816.1.1 = {birth="7816.1.1"}
+	7832.1.1 = {add_trait=trained_warrior}
+	7869.1.1 = {death="7869.1.1"}
+}
+34256802 = {
+	name="Сахасрад"	# a lord
+	dynasty=56802
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=34356802
+	
+	7838.1.1 = {birth="7838.1.1"}
+	7854.1.1 = {add_trait=trained_warrior}
+	7890.1.1 = {death="7890.1.1"}
+}
+34156802 = {
+	name="Дахак"	# a lord
+	dynasty=56802
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=34256802
+	
+	7864.1.1 = {birth="7864.1.1"}
+	7880.1.1 = {add_trait=trained_warrior}
+	7910.1.1 = {death="7910.1.1"}
+}
+34056802 = {
+	name="Экавир"	# a lord
+	dynasty=56802
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=34156802
+	
+	7888.1.1 = {birth="7888.1.1"}
+	7904.1.1 = {add_trait=trained_warrior}
+	7935.1.1 = {death="7935.1.1"}
+}
+10056802 = {
+	name="Вишрут"	# a lord
+	dynasty=56802
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+	
+	father=34056802
+
+	7915.1.1 = {birth="7915.1.1"}
+	7931.1.1 = {add_trait=trained_warrior}
+	7975.1.1 = {death="7975.1.1"}
+}
+10256802 = {
+	name="Наян"	# a lord
+	dynasty=56802
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10056802
+
+	7940.1.1 = {birth="7940.1.1"}
+	7956.1.1 = {add_trait=trained_warrior}
+	8008.1.1 = {death="8008.1.1"}
+}
+10456802 = {
+	name="Уттамеш"	# a lord
+	dynasty=56802
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10256802
+
+	7971.1.1 = {birth="7971.1.1"}
+	7987.1.1 = {add_trait=trained_warrior}
+	8034.1.1 = {death="8034.1.1"}
+}
+10956802 = {
+	name="Вишрут"	# a lord
+	dynasty=56802
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10456802
+
+	7998.1.1 = {birth="7998.1.1"}
+	8014.1.1 = {add_trait=poor_warrior}
+	8042.1.1 = {death="8042.1.1"}
+}
+11356802 = {
+	name="Джаафар"	# a lord
+	dynasty=56802
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10956802
+
+	8027.1.1 = {birth="8027.1.1"}
+	8043.1.1 = {add_trait=skilled_warrior}
+	8075.1.1 = {death="8075.1.1"}
+}
+11556802 = {
+	name="Кедаар"	# a lord
+	dynasty=56802
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10956802
+
+	8032.1.1 = {birth="8032.1.1"}
+	8048.1.1 = {add_trait=poor_warrior}
+	8083.1.1 = {death="8083.1.1"}
+}
+11956802 = {
+	name="Онкар"	# a lord
+	dynasty=56802
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11556802
+
+	8056.1.1 = {birth="8056.1.1"}
+	8072.1.1 = {add_trait=poor_warrior}
+	8121.1.1 = {death="8121.1.1"}
+}
+12156802 = {
+	name="Манаар"	# a lord
+	dynasty=56802
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11956802
+
+	8088.1.1 = {birth="8088.1.1"}
+	8104.1.1 = {add_trait=poor_warrior}
+	8159.1.1 = {death="8159.1.1"}
+}
+12356802 = {
+	name="Паарт"	# a lord
+	dynasty=56802
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=12156802
+
+	8113.1.1 = {birth="8113.1.1"}
+	8129.1.1 = {add_trait=poor_warrior}
+	8169.1.1 = {death="8169.1.1"}
+}
+12456802 = {
+	name="Джаафар"	# not a lord
+	dynasty=56802
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=12156802
+
+	8116.1.1 = {birth="8116.1.1"}
+	8132.1.1 = {add_trait=poor_warrior}
+	8177.1.1 = {death="8177.1.1"}
+}
+12756802 = {
+	name="Харшил"	# a lord
+	dynasty=56802
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=12356802
+
+	8138.1.1 = {birth="8138.1.1"}
+	8154.1.1 = {add_trait=skilled_warrior}
+	8188.1.1 = {death="8188.1.1"}
+}
+12856802 = {
+	name="Балавант"	# a lord
+	dynasty=56802
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=12356802
+
+	8141.1.1 = {birth="8141.1.1"}
+	8157.1.1 = {add_trait=poor_warrior}
+	8205.1.1 = {death="8205.1.1"}
+}
+13256802 = {
+	name="Ишан"	# not a lord
+	dynasty=56802
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=12456802
+
+	8138.1.1 = {birth="8138.1.1"}
+	8154.1.1 = {add_trait=trained_warrior}
+	8192.1.1 = {death="8192.1.1"}
+}
+13456802 = {
+	name="Наян"	# a lord
+	dynasty=56802
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=13256802
+
+	8156.1.1 = {birth="8156.1.1"}
+	8172.1.1 = {add_trait=trained_warrior}
+	8228.1.1 = {death="8228.1.1"}
+}
+13556802 = {
+	name="Лакшан"	# not a lord
+	dynasty=56802
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=13456802
+
+	8174.1.1 = {birth="8174.1.1"}
+	8190.1.1 = {add_trait=trained_warrior}
+	8223.1.1 = {death = {death_reason = death_accident}}
+}
+14056802 = {
+	name="Дахак"	# a lord
+	dynasty=56802
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=13556802
+
+	8205.1.1 = {birth="8205.1.1"}
+	8221.1.1 = {add_trait=poor_warrior}
+	8266.1.1 = {death = {death_reason = death_accident}}
+}
+14356802 = {
+	name="Динеш"	# a lord
+	dynasty=56802
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=14056802
+
+	8233.1.1 = {birth="8233.1.1"}
+	8249.1.1 = {add_trait=skilled_warrior}
+	8281.1.1 = {death="8281.1.1"}
+}
+14456802 = {
+	name="Ратин"	# a lord
+	dynasty=56802
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=14356802
+
+	8261.1.1 = {birth="8261.1.1"}
+	8277.1.1 = {add_trait=trained_warrior}
+}
+14856802 = {
+	name="Чанак"	# not a lord
+	dynasty=56802
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=14456802
+
+	8292.1.1 = {birth="8292.1.1"}
+	8308.1.1 = {add_trait=skilled_warrior}
+}
+
+### House Kotak
+34456808 = {
+	name="Уттамеш"	# a lord
+	dynasty=56808
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	7828.1.1 = {birth="7828.1.1"}
+	7844.1.1 = {add_trait=poor_warrior}
+	7884.1.1 = {death="7884.1.1"}
+}
+34356808 = {
+	name="Джаш"	# a lord
+	dynasty=56808
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+	
+	father=34456808
+
+	7851.1.1 = {birth="7851.1.1"}
+	7867.1.1 = {add_trait=poor_warrior}
+	7900.1.1 = {death="7900.1.1"}
+}
+34256808 = {
+	name="Даршан"	# a lord
+	dynasty=56808
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+	
+	father=34356808
+
+	7882.1.1 = {birth="7882.1.1"}
+	7898.1.1 = {add_trait=trained_warrior}
+	7936.1.1 = {death="7936.1.1"}
+}
+34156808 = {
+	name="Гиривар"	# a lord
+	dynasty=56808
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+	
+	father=34256808
+
+	7907.1.1 = {birth="7907.1.1"}
+	7923.1.1 = {add_trait=poor_warrior}
+	7960.1.1 = {death="7960.1.1"}
+}
+34056808 = {
+	name="Чанак"	# a lord
+	dynasty=56808
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+	
+	father=34156808
+
+	7931.1.1 = {birth="7931.1.1"}
+	7947.1.1 = {add_trait=poor_warrior}
+	7995.1.1 = {death="7995.1.1"}
+}
+100056808 = {
+	name="Таракеш"	# a lord
+	dynasty=56808
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+	
+	father=34056808
+
+	7954.1.1 = {birth="7954.1.1"}
+	7970.1.1 = {add_trait=poor_warrior}
+	8017.1.1 = {death="8017.1.1"}
+}
+100156808 = {
+	name="Фаниш"	# a lord
+	dynasty=56808
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=100056808
+
+	7987.1.1 = {birth="7987.1.1"}
+	8003.1.1 = {add_trait=poor_warrior}
+	8053.1.1 = {death="8053.1.1"}
+}
+100256808 = {
+	name="Манаар"	# a lord
+	dynasty=56808
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=100156808
+
+	8020.1.1 = {birth="8020.1.1"}
+	8036.1.1 = {add_trait=poor_warrior}
+	8077.1.1 = {death="8077.1.1"}
+}
+100756808 = {
+	name="Ритеш"	# a lord
+	dynasty=56808
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=100256808
+
+	8050.1.1 = {birth="8050.1.1"}
+	8066.1.1 = {add_trait=skilled_warrior}
+	8081.1.1 = {death="8081.1.1"}
+}
+100856808 = {
+	name="Маниш"	# a lord
+	dynasty=56808
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=100756808
+
+	8075.1.1 = {birth="8075.1.1"}
+	8091.1.1 = {add_trait=poor_warrior}
+	8155.1.1 = {death="8155.1.1"}
+}
+101056808 = {
+	name="Харшил"	# a lord
+	dynasty=56808
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=100856808
+
+	8113.1.1 = {birth="8113.1.1"}
+	8129.1.1 = {add_trait=poor_warrior}
+	8178.1.1 = {death="8178.1.1"}
+}
+101556808 = {
+	name="Онкар"	# a lord
+	dynasty=56808
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=101056808
+
+	8134.1.1 = {birth="8134.1.1"}
+	8150.1.1 = {add_trait=trained_warrior}
+	8180.1.1 = {death="8180.1.1"}
+}
+101956808 = {
+	name="Манаар"	# a lord
+	dynasty=56808
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=101556808
+
+	8153.1.1 = {birth="8153.1.1"}
+	8169.1.1 = {add_trait=skilled_warrior}
+	8223.1.1 = {death="8223.1.1"}
+}
+102156808 = {
+	name="Ишвар"	# a lord
+	dynasty=56808
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=101956808
+
+	8172.1.1 = {birth="8172.1.1"}
+	8188.1.1 = {add_trait=poor_warrior}
+	8227.1.1 = {death = {death_reason = death_murder}}
+}
+102356808 = {
+	name="Шаям"	# a lord
+	dynasty=56808
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=102156808
+
+	8195.1.1 = {birth="8195.1.1"}
+	8211.1.1 = {add_trait=skilled_warrior}
+	8253.1.1 = {death="8253.1.1"}
+}
+102556808 = {
+	name="Гаян"	# a lord
+	dynasty=56808
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=102356808
+
+	8213.1.1 = {birth="8213.1.1"}
+	8229.1.1 = {add_trait=poor_warrior}
+	8254.1.1 = {death="8254.1.1"}
+}
+103156808 = {
+	name="Ратин"	# a lord
+	dynasty=56808
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=102556808
+
+	8243.1.1 = {birth="8243.1.1"}
+	8259.1.1 = {add_trait=skilled_warrior}
+}
+103356808 = {
+	name="Тареш"	# not a lord
+	dynasty=56808
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=103156808
+
+	8277.1.1 = {birth="8277.1.1"}
+	8293.1.1 = {add_trait=skilled_warrior}
+	8295.1.1 = {add_spouse=403356808}
+}
+403356808 = {
+	name="Амина"
+	female=yes
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	8277.1.1 = {birth="8277.1.1"}
+}
+
+### House Kamdar
+34556807 = {
+	name="Шаям"	# a lord
+	dynasty=56807
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	7808.1.1 = {birth="7808.1.1"}
+	7824.1.1 = {add_trait=skilled_warrior}
+	7870.1.1 = {death="7870.1.1"}
+}
+34456807 = {
+	name="Виомеш"	# a lord
+	dynasty=56807
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+	
+	father=34556807
+
+	7830.1.1 = {birth="7830.1.1"}
+	7846.1.1 = {add_trait=poor_warrior}
+	7894.1.1 = {death="7894.1.1"}
+}
+34356807 = {
+	name="Фаниш"	# a lord
+	dynasty=56807
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+	
+	father=34456807
+
+	7852.1.1 = {birth="7852.1.1"}
+	7868.1.1 = {add_trait=poor_warrior}
+	7913.1.1 = {death="7913.1.1"}
+}
+34256807 = {
+	name="Даршан"	# a lord
+	dynasty=56807
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+	
+	father=34356807
+
+	7876.1.1 = {birth="7876.1.1"}
+	7892.1.1 = {add_trait=trained_warrior}
+	7940.1.1 = {death="7940.1.1"}
+}
+34156807 = {
+	name="Нишад"	# a lord
+	dynasty=56807
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+	
+	father=34256807
+
+	7902.1.1 = {birth="7902.1.1"}
+	7918.1.1 = {add_trait=trained_warrior}
+	7951.1.1 = {death="7951.1.1"}
+}
+34056807 = {
+	name="Гаян"	# a lord
+	dynasty=56807
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+	
+	father=34156807
+
+	7928.1.1 = {birth="7928.1.1"}
+	7944.1.1 = {add_trait=poor_warrior}
+	7993.1.1 = {death="7993.1.1"}
+}
+100056807 = {
+	name="Манаар"	# a lord
+	dynasty=56807
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+	
+	father=34056807
+
+	7953.1.1 = {birth="7953.1.1"}
+	7969.1.1 = {add_trait=poor_warrior}
+	8024.1.1 = {death="8024.1.1"}
+}
+100156807 = {
+	name="Харит"	# a lord
+	dynasty=56807
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=100056807
+
+	7981.1.1 = {birth="7981.1.1"}
+	7996.1.1 = {add_trait=poor_warrior}
+	8037.1.1 = {death="8037.1.1"}
+}
+100556807 = {
+	name="Кушал"	# a lord
+	dynasty=56807
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=100156807
+
+	8009.1.1 = {birth="8009.1.1"}
+	8025.1.1 = {add_trait=poor_warrior}
+	8045.1.1 = {death="8045.1.1"}
+}
+100656807 = {
+	name="Джаафар"	# a lord
+	dynasty=56807
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=100556807
+
+	8028.1.1 = {birth="8028.1.1"}
+	8044.1.1 = {add_trait=skilled_warrior}
+	8064.1.1 = {death="8064.1.1"}
+}
+100956807 = {
+	name="Даршан"	# a lord
+	dynasty=56807
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=100656807
+
+	8049.1.1 = {birth="8049.1.1"}
+	8065.1.1 = {add_trait=trained_warrior}
+	8104.1.1 = {death="8104.1.1"}
+}
+101256807 = {
+	name="Эташ"	# a lord
+	dynasty=56807
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=100956807
+
+	8074.1.1 = {birth="8074.1.1"}
+	8090.1.1 = {add_trait=trained_warrior}
+	8124.1.1 = {death="8124.1.1"}
+}
+101556807 = {
+	name="Экавир"	# a lord
+	dynasty=56807
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=101256807
+
+	8096.1.1 = {birth="8096.1.1"}
+	8112.1.1 = {add_trait=poor_warrior}
+	8145.1.1 = {death = {death_reason = death_accident}}
+}
+101656807 = {
+	name="Кедаар"	# a lord
+	dynasty=56807
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=101556807
+
+	8123.1.1 = {birth="8123.1.1"}
+	8139.1.1 = {add_trait=poor_warrior}
+	8176.1.1 = {death = {death_reason = death_murder}}
+}
+101956807 = {
+	name="Уттамеш"	# a lord
+	dynasty=56807
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=101656807
+
+	8142.1.1 = {birth="8142.1.1"}
+	8158.1.1 = {add_trait=trained_warrior}
+	8193.1.1 = {death="8193.1.1"}
+}
+102456807 = {
+	name="Уттамеш"	# a lord
+	dynasty=56807
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=101956807
+
+	8181.1.1 = {birth="8181.1.1"}
+	8197.1.1 = {add_trait=master_warrior}
+	8257.1.1 = {death="8257.1.1"}
+}
+102656807 = {
+	name="Балавант"	# a lord
+	dynasty=56807
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=102456807
+
+	8203.1.1 = {birth="8203.1.1"}
+	8219.1.1 = {add_trait=poor_warrior}
+	8279.1.1 = {death="8279.1.1"}
+}
+103056807 = {
+	name="Ритеш"	# a lord
+	dynasty=56807
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=102656807
+
+	8226.1.1 = {birth="8226.1.1"}
+	8242.1.1 = {add_trait=trained_warrior}
+	8281.1.1 = {death="8281.1.1"}
+}
+103556807 = {
+	name="Таракеш"	# a lord
+	dynasty=56807
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=103056807
+
+	8253.1.1 = {birth="8253.1.1"}
+	8269.1.1 = {add_trait=poor_warrior}
+	8285.1.1 = {death = {death_reason = death_accident}}
+}
+103956807 = {
+	name="Мукеш"	# a lord
+	dynasty=56807
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=103556807
+
+	8279.1.1 = {birth="8279.1.1"}
+	8295.1.1 = {add_trait=skilled_warrior}
+	8297.1.1 = {add_spouse=403956807}
+}
+403956807 = {
+	name="Рашми"
+	female=yes
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	8279.1.1 = {birth="8279.1.1"}
+}
+104056807 = {
+	name="Гаян"	# not a lord
+	dynasty=56807
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=103556807
+
+	8281.1.1 = {birth="8281.1.1"}
+	8297.1.1 = {add_trait=trained_warrior}
+}
+
+#############
+### Omber ###
+#############
+### Daevan of Omber
+34451800 = {
+	name="Харихар"	# a lord
+	dynasty=51800
+
+	religion="gods_sarnor"
+	culture="omberi"
+
+	7837.1.1 = {birth="7837.1.1"}
+	7853.1.1 = {add_trait=trained_warrior}
+	7884.1.1 = {death="7884.1.1"}
+}
+34351800 = {
+	name="Мукеш"	# a lord
+	dynasty=51800
+
+	religion="gods_sarnor"
+	culture="omberi"
+	
+	father=34451800
+
+	7861.1.1 = {birth="7861.1.1"}
+	7877.1.1 = {add_trait=trained_warrior}
+	7919.1.1 = {death="7919.1.1"}
+}
+34251800 = {
+	name="Сахасрад"	# a lord
+	dynasty=51800
+
+	religion="gods_sarnor"
+	culture="omberi"
+	
+	father=34351800
+
+	7889.1.1 = {birth="7889.1.1"}
+	7905.1.1 = {add_trait=trained_warrior}
+	7940.1.1 = {death="7940.1.1"}
+}
+34151800 = {
+	name="Паарт"	# a lord
+	dynasty=51800
+
+	religion="gods_sarnor"
+	culture="omberi"
+	
+	father=34251800
+
+	7915.1.1 = {birth="7915.1.1"}
+	7931.1.1 = {add_trait=trained_warrior}
+	7964.1.1 = {death="7964.1.1"}
+}
+34051800 = {
+	name="Лакшан"	# a lord
+	dynasty=51800
+
+	religion="gods_sarnor"
+	culture="omberi"
+	
+	father=34151800
+
+	7941.1.1 = {birth="7941.1.1"}
+	7957.1.1 = {add_trait=trained_warrior}
+	7986.1.1 = {death="7986.1.1"}
+}
+10051800 = {
+	name="Балавант"	# a lord
+	dynasty=51800
+
+	religion="gods_sarnor"
+	culture="omberi"
+	
+	father=34051800
+
+	7966.1.1 = {birth="7966.1.1"}
+	7982.1.1 = {add_trait=trained_warrior}
+	8019.1.1 = {death="8019.1.1"}
+}
+10151800 = {
+	name="Йогеш"	# a lord
+	dynasty=51800
+
+	religion="gods_sarnor"
+	culture="omberi"
+
+	father=10051800
+
+	7986.1.1 = {birth="7986.1.1"}
+	8002.1.1 = {add_trait=skilled_warrior}
+	8022.1.1 = {death="8022.1.1"}
+}
+10451800 = {
+	name="Тареш"	# a lord
+	dynasty=51800
+
+	religion="gods_sarnor"
+	culture="omberi"
+
+	father=10151800
+
+	8013.1.1 = {birth="8013.1.1"}
+	8029.1.1 = {add_trait=poor_warrior}
+	8063.1.1 = {death="8063.1.1"}
+}
+10851800 = {
+	name="Эташ"	# a lord
+	dynasty=51800
+
+	religion="gods_sarnor"
+	culture="omberi"
+
+	father=10451800
+
+	8045.1.1 = {birth="8045.1.1"}
+	8061.1.1 = {add_trait=poor_warrior}
+	8110.1.1 = {death="8110.1.1"}
+}
+11351800 = {
+	name="Харит"	# a lord
+	dynasty=51800
+
+	religion="gods_sarnor"
+	culture="omberi"
+
+	father=10851800
+
+	8082.1.1 = {birth="8082.1.1"}
+	8098.1.1 = {add_trait=skilled_warrior}
+	8126.1.1 = {death="8126.1.1"}
+}
+11551800 = {
+	name="Экавир"	# a lord
+	dynasty=51800
+
+	religion="gods_sarnor"
+	culture="omberi"
+
+	father=11351800
+
+	8109.1.1 = {birth="8109.1.1"}
+	8125.1.1 = {add_trait=trained_warrior}
+	8164.1.1 = {death="8164.1.1"}
+}
+11651800 = {
+	name="Харихар"	# a lord
+	dynasty=51800
+
+	religion="gods_sarnor"
+	culture="omberi"
+
+	father=11551800
+
+	8129.1.1 = {birth="8129.1.1"}
+	8145.1.1 = {add_trait=trained_warrior}
+	8198.1.1 = {death="8198.1.1"}
+}
+11751800 = {
+	name="Паарт"	# not a lord
+	dynasty=51800
+
+	religion="gods_sarnor"
+	culture="omberi"
+
+	father=11551800
+
+	8132.1.1 = {birth="8132.1.1"}
+	8148.1.1 = {add_trait=trained_warrior}
+	8180.1.1 = {death="8180.1.1"}
+}
+41851800 = {
+	name="Вишва"
+	female=yes
+
+	religion="gods_sarnor"
+	culture="omberi"
+
+	8133.1.1 = {birth="8133.1.1"}
+	8181.1.1 = {death="8181.1.1"}
+}
+12351800 = {
+	name="Маниш"	# a lord
+	dynasty=51800
+
+	religion="gods_sarnor"
+	culture="omberi"
+
+	father=11751800
+
+	8161.1.1 = {birth="8161.1.1"}
+	8177.1.1 = {add_trait=skilled_warrior}
+	8213.1.1 = {death="8213.1.1"}
+}
+12751800 = {
+	name="Ишвар"	# a lord
+	dynasty=51800
+
+	religion="gods_sarnor"
+	culture="omberi"
+
+	father=12351800
+
+	8201.1.1 = {birth="8201.1.1"}
+	8217.1.1 = {add_trait=poor_warrior}
+	8259.1.1 = {death="8259.1.1"}
+}
+12951800 = {
+	name="Авилаш"	# a lord
+	dynasty=51800
+
+	religion="gods_sarnor"
+	culture="omberi"
+
+	father=12751800
+
+	8236.1.1 = {birth="8236.1.1"}
+	8252.1.1 = {add_trait=trained_warrior}
+	8275.1.1 = {death="8275.1.1"}
+}
+13151800 = {
+	name="Ганеш"	# a lord
+	dynasty=51800
+
+	religion="gods_sarnor"
+	culture="omberi"
+
+	father=12951800
+
+	8261.1.1 = {birth="8261.1.1"}
+	8277.1.1 = {add_trait=poor_warrior}
+}
+13751800 = {
+	name="Шаям"	# not a lord
+	dynasty=51800
+
+	religion="gods_sarnor"
+	culture="omberi"
+
+	father=13151800
+
+	8284.1.1 = {birth="8284.1.1"}
+	8300.1.1 = {add_trait=poor_warrior}
+}
+
+###############
+### Sallosh ###
+###############
+### House Chinwalla
+10056801 = {
+	name="Тареш"	# a lord
+	dynasty=56801
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	7792.1.1 = {birth="7792.1.1"}
+	7808.1.1 = {add_trait=poor_warrior}
+	7849.1.1 = {death="7849.1.1"}
+}
+10156801 = {
+	name="Харшил"	# a lord
+	dynasty=56801
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10056801
+
+	7818.1.1 = {birth="7818.1.1"}
+	7834.1.1 = {add_trait=poor_warrior}
+	7887.1.1 = {death="7887.1.1"}
+}
+10456801 = {
+	name="Багеш"	# a lord
+	dynasty=56801
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10156801
+
+	7853.1.1 = {birth="7853.1.1"}
+	7869.1.1 = {add_trait=poor_warrior}
+	7918.1.1 = {death="7918.1.1"}
+}
+10656801 = {
+	name="Таракеш"	# a lord
+	dynasty=56801
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10456801
+
+	7884.1.1 = {birth="7884.1.1"}
+	7900.1.1 = {add_trait=poor_warrior}
+	7949.1.1 = {death="7949.1.1"}
+}
+10856801 = {
+	name="Манаар"	# a lord
+	dynasty=56801
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10656801
+
+	7907.1.1 = {birth="7907.1.1"}
+	7923.1.1 = {add_trait=skilled_warrior}
+	7956.1.1 = {death="7956.1.1"}
+}
+11056801 = {
+	name="Виомеш"	# not a lord
+	dynasty=56801
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10856801
+
+	7931.1.1 = {birth="7931.1.1"}
+	7947.1.1 = {add_trait=skilled_warrior}
+	8009.1.1 = {death="8009.1.1"}
+}
+
+##############
+### Kasath ###
+##############
+### House Tripathi
+10056815 = {
+	name="Нитиш"	# a lord
+	dynasty=56815
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	7791.1.1 = {birth="7791.1.1"}
+	7807.1.1 = {add_trait=poor_warrior}
+	7840.1.1 = {death="7840.1.1"}
+}
+10156815 = {
+	name="Паарт"	# a lord
+	dynasty=56815
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10056815
+
+	7824.1.1 = {birth="7824.1.1"}
+	7840.1.1 = {add_trait=poor_warrior}
+	7860.1.1 = {death="7860.1.1"}
+}
+10456815 = {
+	name="Онкар"	# a lord
+	dynasty=56815
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10156815
+
+	7851.1.1 = {birth="7851.1.1"}
+	7867.1.1 = {add_trait=trained_warrior}
+	7900.1.1 = {death="7900.1.1"}
+}
+10756815 = {
+	name="Кушал"	# a lord
+	dynasty=56815
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10456815
+
+	7879.1.1 = {birth="7879.1.1"}
+	7895.1.1 = {add_trait=poor_warrior}
+	7926.1.1 = {death = {death_reason = death_murder}}
+}
+11056815 = {
+	name="Читреш"	# a lord
+	dynasty=56815
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10756815
+
+	7898.1.1 = {birth="7898.1.1"}
+	7914.1.1 = {add_trait=poor_warrior}
+	7967.1.1 = {death="7967.1.1"}
+}
+
+### House Ghodania
+10056804 = {
+	name="Сахасрад"	# a lord
+	dynasty=56804
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	7783.1.1 = {birth="7783.1.1"}
+	7799.1.1 = {add_trait=poor_warrior}
+	7851.1.1 = {death="7851.1.1"}
+}
+10156804 = {
+	name="Наян"	# a lord
+	dynasty=56804
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10056804
+
+	7808.1.1 = {birth="7808.1.1"}
+	7824.1.1 = {add_trait=trained_warrior}
+	7861.1.1 = {death = {death_reason = death_accident}}
+}
+10656804 = {
+	name="Манаар"	# a lord
+	dynasty=56804
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10156804
+
+	7828.1.1 = {birth="7828.1.1"}
+	7844.1.1 = {add_trait=skilled_warrior}
+	7869.1.1 = {death="7869.1.1"}
+}
+10956804 = {
+	name="Авилаш"	# a lord
+	dynasty=56804
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10656804
+
+	7853.1.1 = {birth="7853.1.1"}
+	7869.1.1 = {add_trait=trained_warrior}
+	7876.1.1 = {death="7876.1.1"}
+}
+11056804 = {
+	name="Калпеш"	# a lord
+	dynasty=56804
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10656804
+
+	7854.1.1 = {birth="7854.1.1"}
+	7870.1.1 = {add_trait=poor_warrior}
+	7895.1.1 = {death="7895.1.1"}
+}
+11156804 = {
+	name="Бурхан"	# a lord
+	dynasty=56804
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11056804
+
+	7877.1.1 = {birth="7877.1.1"}
+	7893.1.1 = {add_trait=poor_warrior}
+	7935.1.1 = {death="7935.1.1"}
+}
+11656804 = {
+	name="Вишрут"	# a lord
+	dynasty=56804
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11156804
+
+	7910.1.1 = {birth="7910.1.1"}
+	7926.1.1 = {add_trait=poor_warrior}
+	7967.1.1 = {death="7967.1.1"}
+}
+11756804 = {
+	name="Чанак"	# a lord
+	dynasty=56804
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11656804
+
+	7942.1.1 = {birth="7942.1.1"}
+	7958.1.1 = {add_trait=poor_warrior}
+	7995.1.1 = {death="7995.1.1"}
+}
+
+### House Oedarra
+10056820 = {
+	name="Джаш"	# a lord
+	dynasty=56820
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	7780.1.1 = {birth="7780.1.1"}
+	7796.1.1 = {add_trait=poor_warrior}
+	7840.1.1 = {death="7840.1.1"}
+}
+10156820 = {
+	name="Нитиш"	# a lord
+	dynasty=56820
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10056820
+
+	7800.1.1 = {birth="7800.1.1"}
+	7816.1.1 = {add_trait=poor_warrior}
+	7851.1.1 = {death="7851.1.1"}
+}
+10356820 = {
+	name="Малашри"	# a lord
+	female=yes
+	dynasty=56820
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10156820
+
+	7833.1.1 = {birth="7833.1.1"}
+	7866.1.1 = {death="7866.1.1"}
+}
+40356820 = {
+	name="Лакшан"
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	7833.1.1 = {birth="7833.1.1"}
+	7849.1.1 = {add_trait=poor_warrior}
+	7851.1.1 = {add_spouse=10356820}
+	7866.1.1 = {death="7866.1.1"}
+}
+10656820 = {
+	name="Харшил"	# a lord
+	dynasty=56820
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=40356820
+	mother=10356820
+
+	7855.1.1 = {birth="7855.1.1"}
+	7871.1.1 = {add_trait=poor_warrior}
+	7886.1.1 = {death="7886.1.1"}
+}
+10756820 = {
+	name="Ишвар"	# a lord
+	dynasty=56820
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10656820
+
+	7883.1.1 = {birth="7883.1.1"}
+	7899.1.1 = {add_trait=poor_warrior}
+	7940.1.1 = {death="7940.1.1"}
+}
+10956820 = {
+	name="Экавир"	# a lord
+	dynasty=56820
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10756820
+
+	7904.1.1 = {birth="7904.1.1"}
+	7920.1.1 = {add_trait=trained_warrior}
+	7945.1.1 = {death="7945.1.1"}
+}
+11356820 = {
+	name="Ятаван"	# a lord
+	dynasty=56820
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10956820
+
+	7933.1.1 = {birth="7933.1.1"}
+	7949.1.1 = {add_trait=poor_warrior}
+	7972.1.1 = {death="7972.1.1"}
+}
+11556820 = {
+	name="Гаян"	# not a lord
+	dynasty=56820
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11356820
+
+	7970.1.1 = {birth="7970.1.1"}
+	7986.1.1 = {add_trait=poor_warrior}
+	8025.1.1 = {death="8025.1.1"}
+}
+
+###############
+### Gornath ###
+###############
+### House Pathak
+10056811 = {
+	name="Ишвар"	# a lord
+	dynasty=56811
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	7784.1.1 = {birth="7784.1.1"}
+	7800.1.1 = {add_trait=poor_warrior}
+	7831.1.1 = {death="7831.1.1"}
+}
+10156811 = {
+	name="Наян"	# a lord
+	dynasty=56811
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10056811
+
+	7804.1.1 = {birth="7804.1.1"}
+	7820.1.1 = {add_trait=poor_warrior}
+	7836.1.1 = {death="7836.1.1"}
+}
+10356811 = {
+	name="Авилаш"	# a lord
+	dynasty=56811
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10156811
+
+	7833.1.1 = {birth="7833.1.1"}
+	7849.1.1 = {add_trait=trained_warrior}
+	7874.1.1 = {death="7874.1.1"}
+}
+10556811 = {
+	name="Ганеш"	# a lord
+	dynasty=56811
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10356811
+
+	7860.1.1 = {birth="7860.1.1"}
+	7876.1.1 = {add_trait=trained_warrior}
+	7911.1.1 = {death="7911.1.1"}
+}
+11056811 = {
+	name="Ратин"	# a lord
+	dynasty=56811
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10556811
+
+	7891.1.1 = {birth="7891.1.1"}
+	7907.1.1 = {add_trait=skilled_warrior}
+	7933.1.1 = {death="7933.1.1"}
+}
+10156822 = {
+	name="Вишрут"	# Unnamed King of Gornath
+	dynasty=56811
+	
+	martial=1
+	stewardship=6
+	diplomacy=8
+	intrigue=3
+	learning=5
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+	
+	father=11056811
+	
+	add_trait=craven
+	add_trait=underhanded_rogue
+	add_trait=ruthless
+	add_trait=deceitful
+	
+	7905.1.1 = {birth="7905.1.1"}
+	7921.1.1 = {add_trait=poor_warrior}
+	7936.1.1 = {add_spouse=103600207} #dothraki
+	7948.1.1 = {
+		add_trait = dead_target #so government can be changed for history
+		death={
+			death_reason=death_murder
+			killer=103600207
+		}
+	}
+}
+
+### House Gajjar
+10056805 = {
+	name="Харит"	# a lord
+	dynasty=56805
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	7781.1.1 = {birth="7781.1.1"}
+	7797.1.1 = {add_trait=poor_warrior}
+	7842.1.1 = {death="7842.1.1"}
+}
+10356805 = {
+	name="Кедаар"	# a lord
+	dynasty=56805
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10056805
+
+	7810.1.1 = {birth="7810.1.1"}
+	7826.1.1 = {add_trait=trained_warrior}
+	7853.1.1 = {death="7853.1.1"}
+}
+10456805 = {
+	name="Ратин"	# a lord
+	dynasty=56805
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10356805
+
+	7839.1.1 = {birth="7839.1.1"}
+	7855.1.1 = {add_trait=trained_warrior}
+	7879.1.1 = {death="7879.1.1"}
+}
+10656805 = {
+	name="Читреш"	# a lord
+	dynasty=56805
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10456805
+
+	7864.1.1 = {birth="7864.1.1"}
+	7880.1.1 = {add_trait=trained_warrior}
+	7926.1.1 = {death="7926.1.1"}
+}
+10756805 = {
+	name="Джаш"	# a lord
+	dynasty=56805
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10656805
+
+	7892.1.1 = {birth="7892.1.1"}
+	7908.1.1 = {add_trait=poor_warrior}
+	7940.1.1 = {death="7940.1.1"}
+}
+10856805 = {
+	name="Калпеш"	# a lord
+	dynasty=56805
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10756805
+
+	7911.1.1 = {birth="7911.1.1"}
+	7927.1.1 = {add_trait=skilled_warrior}
+	7979.1.1 = {death="7979.1.1"}
+}
+10956805 = {
+	name="Шаям"	# not a lord
+	dynasty=56805
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10856805
+
+	7930.1.1 = {birth="7930.1.1"}
+	7946.1.1 = {add_trait=poor_warrior}
+	7988.1.1 = {death="7988.1.1"}
+}
+
+### House Doshi
+10056803 = {
+	name="Бурхан"	# a lord
+	dynasty=56803
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	7774.1.1 = {birth="7774.1.1"}
+	7790.1.1 = {add_trait=poor_warrior}
+	7835.1.1 = {death="7835.1.1"}
+}
+10156803 = {
+	name="Сахат"	# a lord
+	dynasty=56803
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10056803
+
+	7809.1.1 = {birth="7809.1.1"}
+	7825.1.1 = {add_trait=skilled_warrior}
+	7870.1.1 = {death="7870.1.1"}
+}
+10556803 = {
+	name="Экавир"	# a lord
+	dynasty=56803
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10156803
+
+	7835.1.1 = {birth="7835.1.1"}
+	7851.1.1 = {add_trait=poor_warrior}
+	7907.1.1 = {death = {death_reason = death_murder}}
+}
+10656803 = {
+	name="Шаям"	# a lord
+	dynasty=56803
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10556803
+
+	7858.1.1 = {birth="7858.1.1"}
+	7874.1.1 = {add_trait=skilled_warrior}
+	7918.1.1 = {death="7918.1.1"}
+}
+11256803 = {
+	name="Тареш"	# a lord
+	dynasty=56803
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10656803
+
+	7881.1.1 = {birth="7881.1.1"}
+	7897.1.1 = {add_trait=poor_warrior}
+	7947.1.1 = {death="7947.1.1"}
+}
+11756803 = {
+	name="Тареш"	# a lord
+	dynasty=56803
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11256803
+
+	7910.1.1 = {birth="7910.1.1"}
+	7926.1.1 = {add_trait=skilled_warrior}
+	7967.1.1 = {death="7967.1.1"}
+}
+11956803 = {
+	name="Джаафар"	# not a lord
+	dynasty=56803
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11756803
+
+	7943.1.1 = {birth="7943.1.1"}
+	7959.1.1 = {add_trait=poor_warrior}
+	7978.1.1 = {death = {death_reason = death_murder}}
+}
+
+#############
+### Sarys ###
+#############
+### House Juthani
+10056819 = {
+	name="Эташ"	# a lord
+	dynasty=56819
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	7782.1.1 = {birth="7782.1.1"}
+	7798.1.1 = {add_trait=poor_warrior}
+	7834.1.1 = {death="7834.1.1"}
+}
+10156819 = {
+	name="Балавант"	# a lord
+	dynasty=56819
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10056819
+
+	7813.1.1 = {birth="7813.1.1"}
+	7829.1.1 = {add_trait=trained_warrior}
+	7851.1.1 = {death="7851.1.1"}
+}
+10356819 = {
+	name="Маниш"	# a lord
+	dynasty=56819
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10156819
+
+	7841.1.1 = {birth="7841.1.1"}
+	7857.1.1 = {add_trait=poor_warrior}
+	7876.1.1 = {death="7876.1.1"}
+}
+10856819 = {
+	name="Балавант"	# a lord
+	dynasty=56819
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10356819
+
+	7863.1.1 = {birth="7863.1.1"}
+	7879.1.1 = {add_trait=trained_warrior}
+	7909.1.1 = {death="7909.1.1"}
+}
+11256819 = {
+	name="Нитиш"	# a lord
+	dynasty=56819
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10856819
+
+	7887.1.1 = {birth="7887.1.1"}
+	7903.1.1 = {add_trait=poor_warrior}
+	7945.1.1 = {death="7945.1.1"}
+}
+11656819 = {
+	name="Лакшан"	# a lord
+	dynasty=56819
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11256819
+
+	7913.1.1 = {birth="7913.1.1"}
+	7929.1.1 = {add_trait=poor_warrior}
+	7969.1.1 = {death="7969.1.1"}
+}
+12056819 = {
+	name="Ранак"	# a lord
+	dynasty=56819
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11656819
+
+	7946.1.1 = {birth="7946.1.1"}
+	7962.1.1 = {add_trait=poor_warrior}
+	7995.1.1 = {death="7995.1.1"}
+}
+
+##############
+### Sathar ###
+##############
+### House Visaraia
+10056817 = {
+	name="Джаш"	# a lord
+	dynasty=56817
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	7786.1.1 = {birth="7786.1.1"}
+	7802.1.1 = {add_trait=poor_warrior}
+	7833.1.1 = {death="7833.1.1"}
+}
+10156817 = {
+	name="Чанак"	# a lord
+	dynasty=56817
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10056817
+
+	7818.1.1 = {birth="7818.1.1"}
+	7834.1.1 = {add_trait=trained_warrior}
+	7875.1.1 = {death="7875.1.1"}
+}
+10656817 = {
+	name="Шаям"	# a lord
+	dynasty=56817
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10156817
+
+	7846.1.1 = {birth="7846.1.1"}
+	7862.1.1 = {add_trait=trained_warrior}
+	7879.1.1 = {death = {death_reason = death_battle}}
+}
+10856817 = {
+	name="Кедаар"	# a lord
+	dynasty=56817
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10656817
+
+	7879.1.1 = {birth="7879.1.1"}
+	7895.1.1 = {add_trait=poor_warrior}
+	7899.1.1 = {add_spouse=40856817}
+	7914.1.1 = {death="7914.1.1"}
+}
+40856817 = {
+	name="Ашна"
+	female=yes
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	7881.1.1 = {birth="7881.1.1"}
+	7914.1.1 = {death="7914.1.1"}
+}
+10956817 = {
+	name="Харит"	# a lord
+	dynasty=56817
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10856817
+	mother=40856817
+
+	7907.1.1 = {birth="7907.1.1"}
+	7923.1.1 = {add_trait=poor_warrior}
+	7925.1.1 = {add_spouse=40956817}
+	7967.1.1 = {death="7967.1.1"}
+}
+40956817 = {
+	name="Малашри"
+	female=yes
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	7907.1.1 = {birth="7907.1.1"}
+	7967.1.1 = {death="7967.1.1"}
+}
+11256817 = {
+	name="Локеш"	# a lord
+	dynasty=56817
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10956817
+	mother=40956817
+
+	7931.1.1 = {birth="7931.1.1"}
+	7947.1.1 = {add_trait=poor_warrior}
+	7976.1.1 = {death="7976.1.1"}
+}
+11756817 = {
+	name="Йогеш"	# a lord
+	dynasty=56817
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11256817
+
+	7963.1.1 = {birth="7963.1.1"}
+	7979.1.1 = {add_trait=trained_warrior}
+	8014.1.1 = {death="8014.1.1"}
+}
+
+####################
+### Minor Houses ###
+####################
+### House Jaiwalla 			#Unlanded?
+10056806 = {
+	name="Уттамеш"	# a lord
+	dynasty=56806
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	7791.1.1 = {birth="7791.1.1"}
+	7807.1.1 = {add_trait=poor_warrior}
+	7860.1.1 = {death="7860.1.1"}
+}
+10156806 = {
+	name="Наян"	# a lord
+	dynasty=56806
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10056806
+
+	7815.1.1 = {birth="7815.1.1"}
+	7831.1.1 = {add_trait=poor_warrior}
+	7870.1.1 = {death="7870.1.1"}
+}
+10756806 = {
+	name="Палаш"	# a lord
+	dynasty=56806
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10156806
+
+	7851.1.1 = {birth="7851.1.1"}
+	7867.1.1 = {add_trait=trained_warrior}
+	7891.1.1 = {death="7891.1.1"}
+}
+11056806 = {
+	name="Джаш"	# a lord
+	dynasty=56806
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10756806
+
+	7874.1.1 = {birth="7874.1.1"}
+	7890.1.1 = {add_trait=trained_warrior}
+	7906.1.1 = {death="7906.1.1"}
+}
+11256806 = {
+	name="Авилаш"	# a lord
+	dynasty=56806
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11056806
+
+	7892.1.1 = {birth="7892.1.1"}
+	7908.1.1 = {add_trait=master_warrior}
+	7950.1.1 = {death="7950.1.1"}
+}
+11456806 = {
+	name="Сахасрад"	# a lord
+	dynasty=56806
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11256806
+
+	7914.1.1 = {birth="7914.1.1"}
+	7930.1.1 = {add_trait=trained_warrior}
+	7962.1.1 = {death="7962.1.1"}
+}
+11556806 = {
+	name="Даршан"	# a lord
+	dynasty=56806
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11456806
+
+	7940.1.1 = {birth="7940.1.1"}
+	7956.1.1 = {add_trait=skilled_warrior}
+	7995.1.1 = {death="7995.1.1"}
+}
+11756806 = {
+	name="Ритеш"	# a lord
+	dynasty=56806
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11556806
+
+	7965.1.1 = {birth="7965.1.1"}
+	7981.1.1 = {add_trait=poor_warrior}
+	8014.1.1 = {death="8014.1.1"}
+}
+
+### House Macwan
+10056809 = {
+	name="Ранак"	# a lord
+	dynasty=56809
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	7784.1.1 = {birth="7784.1.1"}
+	7800.1.1 = {add_trait=poor_warrior}
+	7851.1.1 = {death="7851.1.1"}
+}
+10356809 = {
+	name="Экавир"	# a lord
+	dynasty=56809
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10056809
+
+	7807.1.1 = {birth="7807.1.1"}
+	7823.1.1 = {add_trait=poor_warrior}
+	7873.1.1 = {death="7873.1.1"}
+}
+10556809 = {
+	name="Сагар"	# a lord
+	dynasty=56809
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10356809
+
+	7842.1.1 = {birth="7842.1.1"}
+	7858.1.1 = {add_trait=trained_warrior}
+	7900.1.1 = {death="7900.1.1"}
+}
+10856809 = {
+	name="Уттамеш"	# a lord
+	dynasty=56809
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10556809
+
+	7872.1.1 = {birth="7872.1.1"}
+	7888.1.1 = {add_trait=trained_warrior}
+	7943.1.1 = {death="7943.1.1"}
+}
+11056809 = {
+	name="Сахат"	# a lord
+	dynasty=56809
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10856809
+
+	7894.1.1 = {birth="7894.1.1"}
+	7910.1.1 = {add_trait=poor_warrior}
+	7967.1.1 = {death="7967.1.1"}
+}
+11456809 = {
+	name="Маниш"	# a lord
+	dynasty=56809
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11056809
+
+	7934.1.1 = {birth="7934.1.1"}
+	7950.1.1 = {add_trait=trained_warrior}
+	7992.1.1 = {death="7992.1.1"}
+}
+11656809 = {
+	name="Ишвар"	# not a lord
+	dynasty=56809
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11456809
+
+	7966.1.1 = {birth="7966.1.1"}
+	7982.1.1 = {add_trait=poor_warrior}
+	8024.1.1 = {death="8024.1.1"}
+}
+
+### House Rathod
+10056812 = {
+	name="Сахат"	# a lord
+	dynasty=56812
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	7787.1.1 = {birth="7787.1.1"}
+	7803.1.1 = {add_trait=poor_warrior}
+	7845.1.1 = {death="7845.1.1"}
+}
+10256812 = {
+	name="Амритлал"	# a lord
+	dynasty=56812
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10056812
+
+	7809.1.1 = {birth="7809.1.1"}
+	7825.1.1 = {add_trait=poor_warrior}
+	7864.1.1 = {death="7864.1.1"}
+}
+10456812 = {
+	name="Нишад"	# a lord
+	dynasty=56812
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10256812
+
+	7838.1.1 = {birth="7838.1.1"}
+	7854.1.1 = {add_trait=poor_warrior}
+	7892.1.1 = {death="7892.1.1"}
+}
+10956812 = {
+	name="Вишрут"	# a lord
+	dynasty=56812
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10456812
+
+	7857.1.1 = {birth="7857.1.1"}
+	7873.1.1 = {add_trait=poor_warrior}
+	7904.1.1 = {death="7904.1.1"}
+}
+11056812 = {
+	name="Ишан"	# a lord
+	dynasty=56812
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10956812
+
+	7888.1.1 = {birth="7888.1.1"}
+	7904.1.1 = {add_trait=trained_warrior}
+	7947.1.1 = {death="7947.1.1"}
+}
+11356812 = {
+	name="Бурхан"	# not a lord
+	dynasty=56812
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11056812
+
+	7908.1.1 = {birth="7908.1.1"}
+	7924.1.1 = {add_trait=poor_warrior}
+	7940.1.1 = {death = {death_reason = death_murder}}
+}
+11456812 = {
+	name="Онкар"	# a lord
+	dynasty=56812
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11356812
+
+	7930.1.1 = {birth="7930.1.1"}
+	7946.1.1 = {add_trait=trained_warrior}
+	7989.1.1 = {death="7989.1.1"}
+}
+11556812 = {
+	name="Нитиш"	# not a lord
+	dynasty=56812
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11456812
+
+	7950.1.1 = {birth="7950.1.1"}
+	7966.1.1 = {add_trait=poor_warrior}
+	7991.1.1 = {death="7991.1.1"}
+}
+
+### House Suthar
+10056813 = {
+	name="Локеш"	# a lord
+	dynasty=56813
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	7780.1.1 = {birth="7780.1.1"}
+	7796.1.1 = {add_trait=poor_warrior}
+	7837.1.1 = {death="7837.1.1"}
+}
+10256813 = {
+	name="Уткарш"	# a lord
+	dynasty=56813
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10056813
+
+	7801.1.1 = {birth="7801.1.1"}
+	7817.1.1 = {add_trait=poor_warrior}
+	7872.1.1 = {death="7872.1.1"}
+}
+10556813 = {
+	name="Лакшан"	# a lord
+	dynasty=56813
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10256813
+
+	7834.1.1 = {birth="7834.1.1"}
+	7850.1.1 = {add_trait=poor_warrior}
+	7884.1.1 = {death="7884.1.1"}
+}
+11056813 = {
+	name="Харихар"	# a lord
+	dynasty=56813
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10556813
+
+	7855.1.1 = {birth="7855.1.1"}
+	7871.1.1 = {add_trait=poor_warrior}
+	7924.1.1 = {death="7924.1.1"}
+}
+11356813 = {
+	name="Атарван"	# a lord
+	dynasty=56813
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11056813
+
+	7884.1.1 = {birth="7884.1.1"}
+	7900.1.1 = {add_trait=poor_warrior}
+	7933.1.1 = {death="7933.1.1"}
+}
+11756813 = {
+	name="Манаар"	# a lord
+	dynasty=56813
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11356813
+
+	7908.1.1 = {birth="7908.1.1"}
+	7924.1.1 = {add_trait=poor_warrior}
+	7966.1.1 = {death="7966.1.1"}
+}
+12156813 = {
+	name="Палаш"	# a lord
+	dynasty=56813
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11756813
+
+	7931.1.1 = {birth="7931.1.1"}
+	7947.1.1 = {add_trait=trained_warrior}
+	7984.1.1 = {death="7984.1.1"}
+}
+12456813 = {
+	name="Экавир"	# not a lord
+	dynasty=56813
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=12156813
+
+	7954.1.1 = {birth="7954.1.1"}
+	7970.1.1 = {add_trait=skilled_warrior}
+	8006.1.1 = {death="8006.1.1"}
+}
+
+### House Sheladia
+10056814 = {
+	name="Лакшан"	# a lord
+	dynasty=56814
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	7784.1.1 = {birth="7784.1.1"}
+	7800.1.1 = {add_trait=poor_warrior}
+	7852.1.1 = {death="7852.1.1"}
+}
+10156814 = {
+	name="Читреш"	# a lord
+	dynasty=56814
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10056814
+
+	7815.1.1 = {birth="7815.1.1"}
+	7831.1.1 = {add_trait=poor_warrior}
+	7893.1.1 = {death = {death_reason = death_accident}}
+}
+10756814 = {
+	name="Ишан"	# a lord
+	dynasty=56814
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10156814
+
+	7841.1.1 = {birth="7841.1.1"}
+	7857.1.1 = {add_trait=trained_warrior}
+	7918.1.1 = {death="7918.1.1"}
+}
+10856814 = {
+	name="Атарван"	# a lord
+	dynasty=56814
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10756814
+
+	7864.1.1 = {birth="7864.1.1"}
+	7880.1.1 = {add_trait=poor_warrior}
+	7925.1.1 = {death="7925.1.1"}
+}
+10956814 = {
+	name="Чанак"	# a lord
+	dynasty=56814
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10856814
+
+	7882.1.1 = {birth="7882.1.1"}
+	7898.1.1 = {add_trait=poor_warrior}
+	7930.1.1 = {death="7930.1.1"}
+}
+11156814 = {
+	name="Ишвар"	# a lord
+	dynasty=56814
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10956814
+
+	7918.1.1 = {birth="7918.1.1"}
+	7934.1.1 = {add_trait=trained_warrior}
+	7964.1.1 = {death = {death_reason = death_murder}}
+}
+11356814 = {
+	name="Парвеш"	# a lord
+	dynasty=56814
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11156814
+
+	7941.1.1 = {birth="7941.1.1"}
+	7957.1.1 = {add_trait=poor_warrior}
+	7993.1.1 = {death="7993.1.1"}
+}
+11656814 = {
+	name="Калпеш"	# a lord
+	dynasty=56814
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11356814
+
+	7961.1.1 = {birth="7961.1.1"}
+	7977.1.1 = {add_trait=poor_warrior}
+	8013.1.1 = {death="8013.1.1"}
+}
+
+
+### House Asher
+10056823 = {
+	name="Виомеш"	# a lord
+	dynasty=56823
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	7778.1.1 = {birth="7778.1.1"}
+	7794.1.1 = {add_trait=poor_warrior}
+	7848.1.1 = {death="7848.1.1"}
+}
+10256823 = {
+	name="Наян"	# a lord
+	dynasty=56823
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10056823
+
+	7808.1.1 = {birth="7808.1.1"}
+	7824.1.1 = {add_trait=trained_warrior}
+	7850.1.1 = {death="7850.1.1"}
+}
+10656823 = {
+	name="Ишвар"	# a lord
+	dynasty=56823
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10256823
+
+	7842.1.1 = {birth="7842.1.1"}
+	7858.1.1 = {add_trait=poor_warrior}
+	7895.1.1 = {death="7895.1.1"}
+}
+10756823 = {
+	name="Бурхан"	# a lord
+	dynasty=56823
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10656823
+
+	7863.1.1 = {birth="7863.1.1"}
+	7879.1.1 = {add_trait=poor_warrior}
+	7905.1.1 = {death = {death_reason = death_accident}}
+}
+11056823 = {
+	name="Ишан"	# a lord
+	dynasty=56823
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10756823
+
+	7899.1.1 = {birth="7899.1.1"}
+	7915.1.1 = {add_trait=trained_warrior}
+	7937.1.1 = {death="7937.1.1"}
+}
+11256823 = {
+	name="Парвеш"	# a lord
+	dynasty=56823
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11056823
+
+	7922.1.1 = {birth="7922.1.1"}
+	7938.1.1 = {add_trait=trained_warrior}
+	7990.1.1 = {death="7990.1.1"}
+}
+11456823 = {
+	name="Мукеш"	# not a lord
+	dynasty=56823
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11256823
+
+	7946.1.1 = {birth="7946.1.1"}
+	7962.1.1 = {add_trait=skilled_warrior}
+	8005.1.1 = {death="8005.1.1"}
+}
+11656823 = {
+	name="Динеш"	# not a lord
+	dynasty=56823
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11456823
+
+	7969.1.1 = {birth="7969.1.1"}
+	7985.1.1 = {add_trait=poor_warrior}
+	8019.1.1 = {death = {death_reason = death_accident}}
+}
+
+### House Thakar
+10056816 = {
+	name="Уттамеш"	# a lord
+	dynasty=56816
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	7782.1.1 = {birth="7782.1.1"}
+	7798.1.1 = {add_trait=poor_warrior}
+	7834.1.1 = {death="7834.1.1"}
+}
+10156816 = {
+	name="Нишад"	# a lord
+	dynasty=56816
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10056816
+
+	7802.1.1 = {birth="7802.1.1"}
+	7818.1.1 = {add_trait=poor_warrior}
+	7866.1.1 = {death="7866.1.1"}
+}
+10456816 = {
+	name="Вишрут"	# a lord
+	dynasty=56816
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10156816
+
+	7823.1.1 = {birth="7823.1.1"}
+	7839.1.1 = {add_trait=poor_warrior}
+	7898.1.1 = {death="7898.1.1"}
+}
+10756816 = {
+	name="Чанак"	# a lord
+	dynasty=56816
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10456816
+
+	7842.1.1 = {birth="7842.1.1"}
+	7858.1.1 = {add_trait=poor_warrior}
+	7916.1.1 = {death="7916.1.1"}
+}
+10956816 = {
+	name="Парвеш"	# a lord
+	dynasty=56816
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10756816
+
+	7876.1.1 = {birth="7876.1.1"}
+	7892.1.1 = {add_trait=skilled_warrior}
+	7934.1.1 = {death="7934.1.1"}
+}
+11056816 = {
+	name="Уттамеш"	# a lord
+	dynasty=56816
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10956816
+
+	7898.1.1 = {birth="7898.1.1"}
+	7914.1.1 = {add_trait=skilled_warrior}
+	7953.1.1 = {death="7953.1.1"}
+}
+11256816 = {
+	name="Харихар"	# a lord
+	dynasty=56816
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11056816
+
+	7916.1.1 = {birth="7916.1.1"}
+	7932.1.1 = {add_trait=poor_warrior}
+	7991.1.1 = {death="7991.1.1"}
+}
+11556816 = {
+	name="Гиривар"	# a lord
+	dynasty=56816
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=11256816
+
+	7950.1.1 = {birth="7950.1.1"}
+	7966.1.1 = {add_trait=poor_warrior}
+	8030.1.1 = {death="8030.1.1"}
+}
+
+##############
+### Morosh ###
+##############
+### House Nayak
+10056810 = {
+	name="Нитиш"	# a lord
+	dynasty=56810
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	7831.1.1 = {birth="7831.1.1"}
+	7847.1.1 = {add_trait=trained_warrior}
+	7909.1.1 = {death="7909.1.1"}
+}
+10156810 = {
+	name="Экавир"	# a lord
+	dynasty=56810
+
+	religion="gods_sarnor"
+	culture="sarnorian"
+
+	father=10056810
+
+	7855.1.1 = {birth="7855.1.1"}
+	7871.1.1 = {add_trait=poor_warrior}
+	7928.1.1 = {death="7928.1.1"}
+}

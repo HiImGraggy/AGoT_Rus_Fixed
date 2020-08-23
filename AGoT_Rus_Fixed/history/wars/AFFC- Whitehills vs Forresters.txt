@@ -1,0 +1,20 @@
+name = "Блокада Уайтхиллами Железного Холма"
+
+casus_belli={
+	casus_belli = bloody_vengeance
+	actor = 70 # Ludd
+	recipient = 321443 # Rodrik
+	landed_title = c_blackgrove
+	date = 8300.1.1
+}
+
+8300.1.1 = {
+	add_attacker = 70	# Ludd
+	add_defender = 321443 # Rodrik
+	add_defender = 10271874 # Glenmores
+}
+8300.2.28 = {
+	rem_attacker = 70
+	rem_defender = 321443
+	rem_defender = 10271874 # Glenmores
+}

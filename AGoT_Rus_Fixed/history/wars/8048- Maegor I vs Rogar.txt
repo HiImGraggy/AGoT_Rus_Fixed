@@ -1,0 +1,20 @@
+name = "Война Принца Джейхейриса за Железный трон"
+
+casus_belli={
+	casus_belli=depose_liege
+	actor=12317 
+	recipient=77005
+	landed_title=e_iron_throne
+	date=8048.3.1 
+}
+
+8048.3.1 = {
+	add_defender = 77005 #Maegor
+	add_attacker = 12317 #Rogar Baratheon
+	
+}
+
+8048.3.7 = {
+	rem_defender = 77005 #Maegor
+	rem_attacker = 12317 #Rogar Baratheon
+} 

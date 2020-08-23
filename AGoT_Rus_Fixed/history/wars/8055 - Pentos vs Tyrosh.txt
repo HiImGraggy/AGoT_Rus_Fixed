@@ -1,0 +1,20 @@
+name = "Торговая война Пентоса и Тироша"
+
+casus_belli={
+	casus_belli=embargo_cb
+	actor=102174360
+	recipient=100300543
+	landed_title=k_tyrosh
+	date=8055.1.1
+}
+
+8055.1.1 = {
+	add_defender = 100300543 # Tyrosh
+	add_attacker = 102174360 # Pentos
+	
+}
+
+8058.7.1 = {
+	rem_defender = 100300543
+	rem_attacker = 102174360
+}

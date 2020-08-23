@@ -1,0 +1,4556 @@
+namespace = cold_winds
+
+##  Cold Winds Rising by Toccs  ###########
+# additional stuff by knuckey
+#
+# cold_winds.1 - Far northern provinces first encounter Others
+# cold_winds.2 - Wights spawn
+# cold_winds.3 - Nights Watch informed
+# cold_winds.4 - Overrun province become winter wasteland
+# cold_winds.5 - Provinces bordering winter wasteland encounter Others 
+# cold_winds.6 - White Walkers's automatically gain trait
+# cold_winds.7 - Successful War for the Dawn, winter wasteland revert to Wildlings
+# cold_winds.8 - Inform call to arms answered
+# cold_winds.9 - Nights Watch calls for aid in War for the Dawn
+# cold_winds.10 - Wildling/Thenn option to convert to cold_gods
+# cold_winds.11 - Cold Gods follower sacrifice son (on birth event)
+# cold_winds.12 - Character leading troops in winter wasteland encounters White Walker
+# cold_winds.13 - Character duels White Walker
+# cold_winds.14 - Others attack the Wall
+# cold_winds.15 - Stark in Winterfell option to call War for the Dawn
+# cold_winds.16 - REMOVED
+# cold_winds.17 - Character insta-kills White Walker with Valyrian Steel
+# cold_winds.18 - Lord Commander option to call War for the Dawn
+# cold_winds.19 - Stark on the Wall - Father 
+# cold_winds.20 - Stark on the Wall - son
+# cold_winds.21 - Stark on the Wall cold winds, claim NW
+# cold_winds.22 - Stark on the Wall by normal means gains character flag #REMOVED
+
+######  Maintainence/cleanup events
+# cold_winds.201/cold_winds.202 - White Walker/Winter wasteland maintainence (borrowed from unoccupied)
+# cold_winds.203 - Cull randomly spawned White Walker courtiers
+
+# cold_winds.60 - 63 - Ice Spiders battle events
+# cold_winds.64 - 67 - Undead Bear battle events
+# cold_winds.600 - Ice Dragons in the Shivering Sea
+# cold_winds.700 - 702 Others Invade The Five Forts
+# cold_winds.703 - 704 Others kill everyone in a siege
+# cold_winds.705 - AI repels invasion, declare war for the dawn?
+# cold_winds.710 - 729 #Others Take important location
+
+#####  Far northern provinces in harsh winter encounter Others
+
+character_event = {
+	id = cold_winds.199
+	
+	hide_window = yes
+	only_independent = yes
+	has_character_flag = white_walker
+	culture = white_walker
+	
+	trigger = {
+		has_landed_title = d_winter
+		NOT = { has_global_flag = cold_winds }
+		OR = {
+			NOT = { has_global_flag = others_defeated }
+			had_global_flag = { flag = others_defeated days = 36500 } #100 year cooldown between invasions
+		}
+		OR = {
+			NOT = { has_global_flag = westeros_others_subdued }
+			had_global_flag = { flag = westeros_others_subdued days = 7300 } #20 year cooldown if east is still fighting
+		}
+		NOT = {
+			has_game_rule = {
+				name = white_walkers
+				value = off
+			}
+		}
+		NAND = {
+			has_game_rule = {
+				name = white_walkers
+				value = canon
+			}
+			NOT = { year = 8290 }
+		}
+		NOR = {
+			has_alternate_start_parameter = { key = special_culture value = mythological } 
+			has_alternate_start_parameter = { key = special_culture value = all } 
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+		modifier = {
+			factor = 0.001
+			has_game_rule = {
+				name = white_walkers
+				value = canon
+			}
+			year = 8290
+			NOT = { year = 8330 }
+			2 = { has_province_modifier = asoiaf_harsh_winter }
+		}
+	}
+	
+	immediate = {
+		random_province = {
+			limit = {
+				OR = {
+					province_id = 6
+					province_id = 1030
+				}
+				has_province_modifier = asoiaf_harsh_winter
+				NOT = { has_province_modifier = winter_wasteland }
+			}
+			province_event = { id = cold_winds.1 }
+		}
+	}
+
+	option = {
+		name = "Ok"		
+	}
+}
+
+province_event = {
+	id = cold_winds.1
+	desc = "EVTDESCcold_winds.1"
+	picture = "GFX_evt_white_shadows"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = cold_winds
+		clr_global_flag = others_defeated
+		clr_global_flag = westeros_others_subdued
+		e_rebels = {
+			persistent_event_target:chronicle_player = {
+				if = {
+					limit = {
+						capital_scope = {
+							OR = {
+								region = world_westeros
+								region = world_free_cities
+							}
+						}
+					}
+					chronicle = {
+						entry = CHRONICLE_OTHERS_SPAWN
+						picture = GFX_evt_white_shadows
+					}
+				}
+			}
+		}	
+	}
+
+	option = {
+		name = "Ok"	
+		#Starting stack
+		FROM = {			
+			if = {
+				limit = { NOT = { has_game_rule = { name = white_walkers value = hard } } }
+				spawn_unit = {
+					province = ROOT
+					home = ROOT
+					owner = THIS
+					scaled_by_biggest_garrison = 6
+					troops = {
+						heavy_infantry = { 40 40 }
+						light_infantry = { 60 60 }
+					}
+					match_min = 3000
+					match_max = 20000
+					attrition = 0.1
+				}
+			}
+			if = {
+				limit = { has_game_rule = { name = white_walkers value = hard } }
+				spawn_unit = {
+					province = ROOT
+					home = ROOT
+					owner = THIS
+					scaled_by_biggest_garrison = 6
+					troops = {
+						heavy_infantry = { 80 80 }
+						light_infantry = { 120 120 }
+					}
+					match_min = 6000
+					match_max = 40000
+					attrition = 0.05
+				}
+			}	
+		}	
+		
+		if = { #try and target province's kingdom title first, if province is in same realm as holder
+			limit = {
+				kingdom = {
+					holder_scope = {
+						any_realm_province = { province_id = ROOT }
+					}
+				}
+			}
+			kingdom = {
+				reverse_war = {
+					target = FROM
+					casus_belli = others_invasion
+				}
+			}
+		}
+		if = { #Else just target primary title
+			limit = {
+				NOT = {
+					kingdom = {
+						holder_scope = {
+							any_realm_province = { province_id = ROOT }
+						}
+					}
+				}	
+			}
+			owner = {
+				top_liege = {
+					primary_title = {
+						reverse_war = {
+							target = FROM
+							casus_belli = others_invasion
+						}
+					}	
+				}
+			}
+		}	
+		hidden_tooltip = {
+			d_nightswatch = {
+				holder_scope = {
+					character_event = { id = cold_winds.3 }
+				}
+			}		
+		}		
+	}
+}
+
+### Wights appear
+character_event = {
+	id = cold_winds.2
+	desc = "Arrgh!"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ok."
+		if = {
+			limit = { #hard cap
+				OR = {
+					NOT = { realm_levies = 250000 }
+					any_independent_ruler = { 
+						NOT = { culture_group = winter_group }
+						relative_power = { who = ROOT power = 1 }
+					}	
+				}	
+			}
+			if = {
+				limit = { has_landed_title = d_winter_essos } #eastern walkers get reduced troops
+				if = {
+					limit = { NOT = { has_game_rule = { name = white_walkers value = hard } } }
+					spawn_unit = {
+						province = ROOT
+						home = ROOT
+						owner = THIS
+						scaled_by_biggest_garrison = 3
+						troops = {
+							heavy_infantry = { 40 40 }
+							light_infantry = { 60 60 }
+						}
+						match_min = 3000
+						match_max = 20000
+						attrition = 0.1
+					}
+				}
+				if = {
+					limit = { has_game_rule = { name = white_walkers value = hard } }
+					spawn_unit = {
+						province = ROOT
+						home = ROOT
+						owner = THIS
+						scaled_by_biggest_garrison = 3
+						troops = {
+							heavy_infantry = { 80 80 }
+							light_infantry = { 120 120 }
+						}
+						match_min = 6000
+						match_max = 40000
+						attrition = 0.05
+					}
+				}
+			}	
+			else = {
+				if = {
+					limit = { NOT = { has_game_rule = { name = white_walkers value = hard } } }
+					spawn_unit = {
+						province = ROOT
+						home = ROOT
+						owner = THIS
+						scaled_by_biggest_garrison = 6
+						troops = {
+							heavy_infantry = { 40 40 }
+							light_infantry = { 60 60 }
+						}
+						match_min = 3000
+						match_max = 20000
+						attrition = 0.1
+					}
+				}
+				if = {
+					limit = { has_game_rule = { name = white_walkers value = hard } }
+					spawn_unit = {
+						province = ROOT
+						home = ROOT
+						owner = THIS
+						scaled_by_biggest_garrison = 6
+						troops = {
+							heavy_infantry = { 80 80 }
+							light_infantry = { 120 120 }
+						}
+						match_min = 6000
+						match_max = 40000
+						attrition = 0.05
+					}
+				}
+			}
+		}
+	}
+}
+
+###  Notification to Nightswatch.
+character_event = {
+	id = cold_winds.3
+	desc = "EVTDESCcold_winds.3"
+	picture = "GFX_evt_white_shadows"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			any_realm_character = {
+				limit = {
+					trait = nightswatch
+					dynasty = 59
+				}
+				character_event = { id = cold_winds.21 } #stark claim on nightswatch
+			}
+		}
+	}
+	
+	option = {
+		name = "Ok"
+	}
+}
+
+
+###########  Overrun land becomes winter wasteland
+
+province_event = {
+	id = cold_winds.4
+	picture = "GFX_evt_siege"
+	
+	trigger = {
+		owner = { 
+			top_liege = { 
+				trait = white_walker  
+			} 
+			NOT = { culture = winter_wasteland }		
+		}
+		NAND = {
+			is_capital = yes
+			owner = {
+				independent = yes
+				trait = white_walker 
+			}
+		}
+		NOR = {
+			has_alternate_start_parameter = { key = special_culture value = mythological } 
+			has_alternate_start_parameter = { key = special_culture value = all } 
+		}
+	}
+	
+	mean_time_to_happen = { days = 6 }
+	
+	immediate = {
+		add_province_modifier = {
+			name = winter_wasteland
+			duration = -1
+		}
+		set_variable = { which = prosperity_value value = 0 }
+		remove_province_modifier = depopulated_1
+		remove_province_modifier = depopulated_2
+		remove_province_modifier = depopulated_3
+		remove_province_modifier = prosperity_modifier_1
+		remove_province_modifier = prosperity_modifier_2
+		remove_province_modifier = prosperity_modifier_3
+		# add_province_modifier = {
+			# name = depopulated_3
+			# duration = -1
+		# }
+		clr_province_flag = recent_depopulation_1
+		clr_province_flag = recent_depopulation_2
+		clr_province_flag = recent_depopulation_3
+		destroy_hospital = THIS
+		destroy_fort = THIS
+		destroy_tradepost = THIS
+		any_province_holding = {
+			if = {
+				limit = { has_holding_modifier = recently_conquered }
+				remove_holding_modifier = recently_conquered
+			}
+			if = {
+				limit = { has_holding_modifier = new_administration }
+				remove_holding_modifier = new_administration
+			}
+		}		
+		set_province_flag = winter_wasteland
+		hidden_tooltip = {
+			create_character = {
+				name = ""
+				religion="cold_gods"
+				culture="winter_wasteland"	
+				dynasty=none
+				attributes = {
+					martial = 0
+					diplomacy = 0
+					intrigue = 0
+					stewardship = 0
+					learning = 0
+				}
+				trait = winter_wasteland
+			}
+			new_character = {
+				ROOT = { 
+					county = { 
+						gain_title = PREVPREV 
+					} 
+				}				
+				set_character_flag = winter_wasteland
+				character_event = { id = maintenance.34 days = 1 } #refil levy
+				if = {
+					limit = { ROOT = { region = world_westeros } }
+					set_defacto_liege = d_winter
+					break = yes
+				}
+				set_defacto_liege = d_winter_essos				
+			}
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+
+#####  Provinces bordering winter wasteland encounter Others
+
+province_event = {
+	id = cold_winds.5
+	desc = "EVTDESCcold_winds.5"
+	picture = "GFX_evt_white_shadows"
+	
+	has_global_flag = cold_winds
+	
+	trigger = {	
+		NOR = { # Wall must be conquered
+			province_id = 16
+			province_id = 17
+			province_id = 18
+		}
+		NOT = {
+			has_game_rule = {
+				name = white_walkers
+				value = off
+			}
+		}
+		OR = {
+			province_id = 6
+			province_id = 1030
+			province_id = 1031
+			province_id = 1097
+			any_neighbor_province = {
+				OR = {
+					owner = {
+						culture_group = winter_group
+						top_liege = { culture_group = winter_group }
+					}
+					AND = { #Cross the frozen seas...
+						is_land = no					
+						any_neighbor_province = {
+							owner = {
+								culture_group = winter_group
+								top_liege = { culture_group = winter_group }
+							}
+						}
+						NOR = { #cannot circumvent wall
+							province_id = 919
+							province_id = 960
+							province_id = 954
+						}
+					}
+				}	
+			}	
+		}	
+		NOT = { has_province_modifier = winter_wasteland }
+		owner = {
+			NOT = { religion = cold_gods } # Others won't attack Craster or his ilk
+			NOT = { culture_group = winter_group }
+			#Not already an ongoing others invasion
+			NOR = {
+				d_winter = { holder_scope = { war_with = PREVPREV } }
+				d_winter_essos = { holder_scope = { war_with = PREVPREV } }
+				any_current_enemy = { culture = white_walker }
+			}
+			NOT = { 
+				top_liege = {
+					OR = {
+						d_winter = { holder_scope = { war_with = PREVPREV } }
+						d_winter_essos = { holder_scope = { war_with = PREVPREV } }
+						any_current_enemy = { culture = white_walker }
+					}	
+				}
+			}
+		} 	
+		OR = { #20 year cooldown if east is still fighting
+			NOT = { has_global_flag = westeros_others_subdued }
+			had_global_flag = { flag = westeros_others_subdued days = 7300 } 
+			NOT = { region = world_westeros }
+		}
+		OR = { #20 year cooldown if west is still fighting
+			NOT = { has_global_flag = eastern_others_subdued }
+			had_global_flag = { flag = eastern_others_subdued days = 7300 } 
+			region = world_westeros
+		}
+		NOR = {
+			has_alternate_start_parameter = { key = special_culture value = mythological } 
+			has_alternate_start_parameter = { key = special_culture value = all } 
+		}		
+	}
+	
+	mean_time_to_happen = {
+		years = 3  # Not so rare, Others already around
+		
+		#Target weaker realms first
+		modifier = {
+			factor = 0.25
+			region = world_westeros
+			owner = { 
+				top_liege = { 
+					d_winter = { 
+						holder_scope = { 
+							war = no
+							relative_power = { who = PREVPREV power = 0.9 }
+						}
+					}
+				}
+			}	
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { region = world_westeros }
+			owner = { 
+				top_liege = { 
+					d_winter_essos = {
+						holder_scope = { 
+							war = no
+							relative_power = { who = PREVPREV power = 0.9 }
+						}
+					}
+				}
+			}	
+		}
+	}
+	
+	immediate = {
+		random_neighbor_province = {
+			limit = {
+				owner = {
+					culture_group = winter_group
+					top_liege = { 
+						culture_group = winter_group 
+						OR = {
+							has_landed_title = d_winter
+							has_landed_title = d_winter_essos
+						}
+					}
+				}
+			}
+			owner = { top_liege = { save_event_target_as = others_target } }
+			break = yes
+		}
+		random_neighbor_province = {
+			limit = {
+				is_land = no
+				any_neighbor_province = {
+					owner = {
+						culture_group = winter_group
+						top_liege = { 
+							culture_group = winter_group 
+							OR = {
+								has_landed_title = d_winter
+								has_landed_title = d_winter_essos
+							}
+						}
+					}
+				}
+				NOR = { #cannot circumvent wall
+					province_id = 919
+					province_id = 960
+					province_id = 954
+				}
+			}
+			random_neighbor_province = {
+				limit = {
+					owner = {
+						culture_group = winter_group
+						top_liege = { 
+							culture_group = winter_group 
+							OR = {
+								has_landed_title = d_winter
+								has_landed_title = d_winter_essos
+							}
+						}
+					}
+				}
+				owner = { top_liege = { save_event_target_as = others_target } }
+				break = yes
+			}
+		}
+		if = {
+			limit = { region = world_westeros }
+			d_winter = { holder_scope = { save_event_target_as = others_target } }
+			break = yes
+		}	
+		if = {
+			limit = { NOT = { region = world_westeros } }
+			d_winter_essos = { holder_scope = { save_event_target_as = others_target } }
+		}
+	}
+
+	option = {
+		name = "Ok"
+		hidden_tooltip = {
+			event_target:others_target = { character_event = { id = cold_winds.2 days = 2  } }				
+		}
+		if = { #try and target province's kingdom title first, if province is in same realm as holder
+			limit = {
+				kingdom = {
+					holder_scope = {
+						any_realm_province = { province_id = ROOT }
+					}
+				}
+			}
+			kingdom = {
+				reverse_war = {
+					target = event_target:others_target
+					casus_belli = others_invasion
+				}
+			}	
+			break = yes
+		}
+		#Else just target primary title
+		owner = {
+			top_liege = {
+				primary_title = {
+					reverse_war = {
+						target = event_target:others_target
+						casus_belli = others_invasion
+					}
+				}	
+			}
+		}	
+	}
+}
+
+
+#######  Others gain White Walker trait
+
+character_event = {
+	id = cold_winds.6
+
+	hide_window = yes
+	only_rulers = yes
+	culture = white_walker
+
+	trigger = {	
+		NOT = { trait = white_walker }
+	}
+	
+	immediate = {
+		add_trait = white_walker
+		add_trait = back_seat_leader
+		set_character_flag = white_walker
+		if = {
+			limit = { 
+				NOT = { father_even_if_dead = { always = yes } } 
+				NOR = {
+					trait = poor_warrior
+					trait = trained_warrior
+					trait = skilled_warrior
+					trait = master_warrior
+				}
+			}
+			random_list = {
+				30 = { add_trait = trained_warrior }
+				55 = { add_trait = skilled_warrior }
+				15 = { add_trait = master_warrior }
+			}
+		}
+	}
+
+	option = {
+		name = "OK"	
+	}
+}
+
+
+#######   Winter Wasteland revert to humans after sucessful War for the dawn
+character_event = { #white walkers defeated
+	id = cold_winds.799
+
+	is_triggered_only = yes
+	hide_window = yes
+	only_rulers = yes
+	culture = white_walker
+
+	immediate = {	
+		#destroy higher titles
+		any_vassal = { 
+			limit = { 
+				higher_tier_than = COUNT 			
+			}
+			any_demesne_title = { 
+				limit = { 
+					higher_tier_than = COUNT 
+					is_landless_type_title = no
+				}
+				destroy_landed_title = THIS	
+			}
+			set_defacto_liege = ROOT
+		}
+		any_demesne_title = { 
+			limit = {
+				higher_tier_than = COUNT 
+				is_landless_type_title = no
+			}
+			destroy_landed_title = THIS	
+		}
+		
+		#Winter Wastelands revert to humans
+		any_province = { 
+			limit = {
+				owner = {
+					culture_group = winter_group
+					OR = {
+						character = ROOT
+						is_liege_or_above = ROOT
+						liege_before_war = { character = ROOT }
+					}
+				}
+			}
+			province_event = { id = cold_winds.7 } 
+		}
+		any_realm_lord = { #set free human vassals
+			limit = { NOT = { culture_group = winter_group } }
+			set_defacto_liege = THIS
+		}
+		any_demesne_title = { #any titles left over are given to randoms
+			limit = { tier = COUNT }
+			capital_scope = {
+				create_character = {
+					random_traits = yes	
+					female = no
+					culture = THIS
+					religion = THIS
+					dynasty = none
+				}
+				new_character = {
+					gain_title = PREVPREV 
+					set_defacto_liege = THIS	
+					if = {
+						limit = {
+							NOT = { wildling_culture_trigger = yes }
+						}
+						opinion = {
+							who = event_target:white_walker_victor
+							modifier = opinion_very_grateful
+							years = 10
+						}
+					}
+				}
+			}	
+		}
+		any_demesne_title = {
+			limit = { tier = COUNT }
+			location = {
+				create_character = {
+					random_traits = yes	
+					female = no
+					culture = THIS
+					religion = THIS
+					dynasty = none
+				}
+				new_character = {
+					gain_title = PREVPREV 
+					set_defacto_liege = THIS	
+					if = {
+						limit = {
+							NOT = { wildling_culture_trigger = yes }
+						}
+						opinion = {
+							who = event_target:white_walker_victor
+							modifier = opinion_very_grateful
+							years = 10
+						}
+					}
+				}
+			}	
+		}
+		if = { #check other provinces in region
+			limit = { has_landed_title = d_winter }					
+			any_province = {	
+				limit = {
+					region = world_westeros 
+					owner = { 
+						culture_group = winter_group 
+						NOT = { same_realm = ROOT }
+						NOT = { any_liege = { has_landed_title = d_winter_essos } } 
+					}							
+				}	
+				province_event = { id = cold_winds.7 }
+			}
+			e_rebels = {
+				persistent_event_target:chronicle_player = {
+					if = {
+						limit = {
+							OR = {
+								character = event_target:white_walker_victor
+								is_liege_or_above = event_target:white_walker_victor
+								capital_scope = {
+									OR = {
+										region = world_westeros
+										region = world_free_cities
+									}
+								}
+							}	
+						}
+						chronicle = {
+							entry = CHRONICLE_OTHERS_DEFEATED
+							portrait = [white_walker_victor.GetID]
+							picture = GFX_evt_white_shadows
+						}
+					}
+				}
+			}	
+		}	
+		if = {
+			limit = { has_landed_title = d_winter_essos }
+			any_province = {	
+				limit = {
+					NOT = { region = world_westeros }
+					owner = { 
+						culture_group = winter_group 
+						NOT = { same_realm = ROOT }
+						NOT = { any_liege = { has_landed_title = d_winter } } 
+					}							
+				}	
+				province_event = { id = cold_winds.7 }
+			}
+			e_rebels = {
+				persistent_event_target:chronicle_player = {
+					if = {
+						limit = {
+							OR = {
+								character = event_target:white_walker_victor
+								is_liege_or_above = event_target:white_walker_victor
+								capital_scope = {
+									OR = {
+										region = world_westeros
+										region = world_free_cities
+									}
+								}
+							}	
+						}
+						chronicle = {
+							entry = CHRONICLE_OTHERS_DEFEATED_ESSOS
+							portrait = [white_walker_victor.GetID]
+							picture = GFX_evt_white_shadows
+						}
+					}
+				}
+			}	
+		}
+		
+		disband_event_forces = yes 
+		
+		any_war = { #end all wars
+			limit = {
+				OR = {
+					attacker = { character = ROOT }
+					defender = { character = ROOT }
+				}
+				attacker = { NOT = { character = event_target:white_walker_victor } }
+				defender = { NOT = { character = event_target:white_walker_victor } }
+			}
+			end_war = invalid
+		}
+		
+		#Bran is moved to The Wall
+		random_courtier = {
+			limit = { 
+				has_character_flag = brandon_stark
+				has_character_flag = missing_stark_child
+			}
+			d_the_wall = {
+				holder_scope = {
+					reverse_banish = PREVPREV
+				}
+			}
+			character_event = { id = clash_of_kings.11 days = 10 } #perhaps reveal?
+		}
+		
+		any_playable_ruler = { #Inform world
+			limit = { ai = no }
+			character_event = { id = cold_winds.798 }
+		}
+		prisoner = no
+	}
+
+	option = {
+		name = "OK"	
+	}
+}
+character_event = { #inform world of others defeat
+	id = cold_winds.798
+	
+	desc = {
+		text = EVTDESCcold_winds.798 #Westeros, full victory
+		trigger = { 
+			FROM = { has_landed_title = d_winter } 
+			d_winter_essos = {
+				holder_scope = {
+					OR = {
+						NOT = { num_of_count_titles = 1 } 
+						NOT = { demesne_size = 1 }
+					}	
+					war = no
+				}	
+			}
+		}
+	}	
+	desc = {
+		text = EVTDESCcold_winds.798B #Essos, full victory
+		trigger = { 
+			FROM = { has_landed_title = d_winter_essos } 
+			d_winter = {
+				holder_scope = {
+					OR = {
+						NOT = { num_of_count_titles = 1 } 
+						NOT = { demesne_size = 1 }
+					}	
+					war = no
+				}	
+			}
+		}
+	}
+	desc = {
+		text = EVTDESCcold_winds.798C #Westeros, threat still on other continent
+		trigger = { 
+			FROM = { has_landed_title = d_winter } 
+			NOT = {
+				d_winter_essos = {
+					holder_scope = {
+						OR = {
+							NOT = { num_of_count_titles = 1 } 
+							NOT = { demesne_size = 1 }
+						}	
+						war = no
+					}	
+				}
+			}	
+		}
+	}	
+	desc = {
+		text = EVTDESCcold_winds.798D #Essos, threat still on other continent
+		trigger = { 
+			FROM = { has_landed_title = d_winter_essos } 
+			NOT = {
+				d_winter = {
+					holder_scope = {
+						OR = {
+							NOT = { num_of_count_titles = 1 } 
+							NOT = { demesne_size = 1 }
+						}	
+						war = no
+					}	
+				}
+			}	
+		}
+	}
+	
+	picture = "GFX_evt_white_shadows"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	show_from_from = yes
+	
+	option = {
+		name = {
+			text = EVTOPTAcold_winds.798
+			trigger = { 
+				d_winter_essos = {
+					holder_scope = {
+						OR = {
+							NOT = { num_of_count_titles = 1 } 
+							NOT = { demesne_size = 1 }
+						}	
+						war = no
+					}	
+				}
+				d_winter = {
+					holder_scope = {
+						OR = {
+							NOT = { num_of_count_titles = 1 } 
+							NOT = { demesne_size = 1 }
+						}	
+						war = no
+					}	
+				}
+			}
+		}	
+		name = {
+			text = EVTOPTAcold_winds.798B
+			trigger = { 
+				NAND = {
+					d_winter_essos = {
+						holder_scope = {
+							OR = {
+								NOT = { num_of_count_titles = 1 } 
+								NOT = { demesne_size = 1 }
+							}	
+							war = no
+						}	
+					}
+					d_winter = {
+						holder_scope = {
+							OR = {
+								NOT = { num_of_count_titles = 1 } 
+								NOT = { demesne_size = 1 }
+							}	
+							war = no
+						}	
+					}
+				}	
+			}
+		}
+		FROM = { show_portrait = yes }
+	}
+}
+province_event = {
+	id = cold_winds.7
+	desc = "EVTDESCcold_winds.7"
+	picture = GFX_evt_the_wall
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		owner = { culture_group = winter_group }
+	}
+
+	immediate = {
+		remove_province_modifier = winter_wasteland
+		clr_province_flag = winter_wasteland
+		if = {
+			limit = { has_dlc = "Reapers" }
+			add_province_modifier = {
+				name = depopulated_3
+				duration = -1
+			}
+			set_province_flag = recent_depopulation_3
+		}	
+		if = {
+			limit = { 
+				region = world_the_wall
+				d_nightswatch = { holder_scope = { trait = nightswatch } }
+			}
+			d_nightswatch = {
+				holder_scope = {
+					ROOT = { 
+						county = { 
+							any_de_jure_vassal_title = {
+								limit = {
+									is_capital = no
+									tier = BARON
+									holder_scope = { culture_group = winter_group }
+								}
+								gain_title = PREVPREVPREV
+							}
+							gain_title = PREVPREV 
+							if = { #change capital to castle black
+								limit = { title = c_castle_black }
+								any_de_jure_vassal_title = {
+									limit = {
+										is_capital = yes
+										tier = BARON
+									}
+									d_nightswatch = { holder_scope = { capital = PREVPREV } }
+								}
+							}
+						} 
+					}
+					opinion = {
+						who = FROM
+						modifier = opinion_very_grateful
+						years = 10
+					}
+				}
+			}	
+			break = yes
+		}	
+		if = { #chance of becoming a ruin
+			limit = { 
+				OR = { #only large settlements
+					num_of_settlements = 5
+					county = { any_de_jure_vassal_title = { yearly_income = 22 } }
+				}
+				NOT = { region = world_beyond_the_wall }
+			}
+			random = {
+				chance = 33
+				make_province_ruin_effect = yes
+				break = yes
+			}	
+		}	
+		if = { #Revert to controller/occupier if possible
+			limit = {
+				NOT = { region = world_beyond_the_wall }
+				any_province_lord = {
+					any_demesne_title = {
+						tier = BARON
+						is_capital = yes
+						location = { province_id = ROOT }
+						controller = { NOT = { culture_group = winter_group } }
+					}
+				}
+			}
+			county = {
+				any_de_jure_vassal_title = {
+					limit = {
+						is_capital = yes
+						controller = { NOT = { culture_group = winter_group } }
+					}
+					controller = { 
+						ROOT = { 
+							county = { 
+								any_de_jure_vassal_title = {
+									limit = {
+										is_capital = no
+										tier = BARON
+										holder_scope = { culture_group = winter_group }
+									}
+									gain_title = PREVPREVPREV
+								}
+								gain_title = PREVPREV 
+								break = yes
+							} 
+						}
+					}					
+				}
+			}			
+		}
+		if = { #Thenn may go to Thenn in exile
+			limit = { 
+				province_id = 2 
+				c_thenn_rel = {
+					holder_scope = { culture = thenn }
+				}
+			} 
+			c_thenn_rel = {
+				holder_scope = {
+					ROOT = { 
+						county = { 
+							any_de_jure_vassal_title = {
+								limit = {
+									is_capital = no
+									tier = BARON
+									holder_scope = { culture_group = winter_group }
+								}
+								gain_title = PREVPREVPREV
+							}
+							gain_title = PREVPREV 
+						}
+					}
+					opinion = {
+						who = FROM
+						modifier = opinion_very_grateful
+						years = 10
+					}
+					break = yes
+				}
+			}
+		}
+		duchy = {
+			holder_scope = { 
+				if = {
+					limit = { NOT = { culture_group = winter_group } }
+					ROOT = { 
+						county = { 
+							any_de_jure_vassal_title = {
+								limit = {
+									is_capital = no
+									tier = BARON
+									holder_scope = { culture_group = winter_group }
+								}
+								gain_title = PREVPREVPREV
+							}
+							gain_title = PREVPREV 
+						}
+					}
+					opinion = {
+						who = FROM
+						modifier = opinion_very_grateful
+						years = 10
+					}
+					break = yes
+				}	
+			}	
+		}	
+		kingdom = {
+			holder_scope = { 
+				if = {
+					limit = { NOT = { culture_group = winter_group } }
+					ROOT = { 
+						county = { 
+							any_de_jure_vassal_title = {
+								limit = {
+									is_capital = no
+									tier = BARON
+									holder_scope = { culture_group = winter_group }
+								}
+								gain_title = PREVPREVPREV
+							}
+							gain_title = PREVPREV 
+						} 
+					}
+					opinion = {
+						who = FROM
+						modifier = opinion_very_grateful
+						years = 10
+					}
+					break = yes
+				}	
+			}	
+		}	
+		empire = {
+			holder_scope = { 
+				if = {
+					limit = { NOT = { culture_group = winter_group } }
+					ROOT = { 
+						county = { 
+							any_de_jure_vassal_title = {
+								limit = {
+									is_capital = no
+									tier = BARON
+									holder_scope = { culture_group = winter_group }
+								}
+								gain_title = PREVPREVPREV
+							}
+							gain_title = PREVPREV 
+						} 
+					}
+					opinion = {
+						who = FROM
+						modifier = opinion_very_grateful
+						years = 10
+					}
+					break = yes
+				}	
+			}	
+		}	
+		create_character = {
+			random_traits = yes	
+			female = no
+			culture = ROOT
+			dynasty = none
+		}
+		new_character = {
+			ROOT = { 
+				county = { 
+					any_de_jure_vassal_title = {
+						limit = {
+							is_capital = no
+							tier = BARON
+							holder_scope = { culture_group = winter_group }
+						}
+						gain_title = PREVPREVPREV
+					}
+					gain_title = PREVPREV 
+				}
+			}
+			set_defacto_liege = THIS
+			if = {
+				limit = { 
+					ROOT = { region = world_the_wall }
+				}	
+				character_event = { id = nightswatch.5 days = 5 } #give titles back to the watch
+			}
+			if = {
+				limit = { 
+					government = nomadic_government
+					NOT = { culture = dothraki }
+					NOT = { culture = jogos_nhai }
+				}	
+				if = {
+					limit = { NOT = { is_government_potential = wildling_feudal_government } }
+					set_government_type = feudal_government
+				}
+				if = {
+					limit = { is_government_potential = wildling_feudal_government }
+					set_government_type = wildling_feudal_government
+				}
+			}	
+			if = {
+				limit = {
+					NOT = { wildling_culture_trigger = yes }
+				}
+				opinion = {
+					who = FROM
+					modifier = opinion_very_grateful
+					years = 10
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+
+####### Call for Aid, (War for the Dawn)
+letter_event = {
+	id = cold_winds.8
+	is_triggered_only = yes
+	
+	desc = {
+		text = "EVTDESCcold_winds.8" #Ride North
+		trigger = {
+			FROM = { capital_scope = { region = world_westeros } }
+			ROOT = { capital_scope = { region = world_westeros } }
+		}
+	}	
+	desc = {
+		text = "EVTDESCcold_winds.8B" #Ride East
+		trigger = {
+			FROM = { capital_scope = { NOT = { region = world_westeros } } }
+			ROOT = { capital_scope = { NOT = { region = world_westeros } } }
+		}
+	}
+	desc = {
+		text = "EVTDESCcold_winds.8C" #Sail West
+		trigger = {
+			ROOT = { capital_scope = { region = world_westeros } }
+			FROM = { capital_scope = { NOT = { region = world_westeros } } }
+		}
+	}
+	desc = {
+		text = "EVTDESCcold_winds.8D" #Sail East
+		trigger = {
+			ROOT = { capital_scope = { NOT = { region = world_westeros } } }
+			FROM = { capital_scope = { region = world_westeros } }
+		}
+	}
+	option = {		
+		name = OK
+	}	
+}	
+character_event = {
+	id = cold_winds.9	
+	picture = GFX_evt_the_wall
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = {
+			is_alive = yes
+			any_current_enemy = { trait = white_walker }
+		}
+		NOR = { 
+			d_winter = { holder_scope = { war_with = PREVPREV } }
+			d_winter_essos = { holder_scope = { war_with = PREVPREV } } 
+			is_liege_or_above = FROM
+			any_liege = {
+				OR = {
+					d_winter = { holder_scope = { war_with = PREVPREV } }
+					d_winter_essos = { holder_scope = { war_with = PREVPREV } } 
+				}
+			}
+		}
+		NOT = { war_with = FROM }
+		NOT = { any_liege = { war_with = FROM } }
+	}
+	
+	desc = {
+		text = "EVTDESCcold_winds.9"
+		trigger = { FROM = { trait = nightswatch } }
+	}
+	desc = {
+		text = "EVTDESCcold_winds.91"
+		trigger = { 
+			FROM = { 
+				NOT = { trait = nightswatch }
+				OR = {
+					AND = {
+						capital_scope = { region = world_westeros }	
+						ROOT = { capital_scope = { region = world_westeros } }	
+					}
+					AND = {
+						capital_scope = { NOT = { region = world_westeros }	}
+						ROOT = { capital_scope = { NOT = { region = world_westeros } } }	
+					}
+				}	
+			} 
+		}
+	}
+	desc = {
+		text = "EVTDESCcold_winds.92" #Call from Westeros
+		trigger = { 
+			FROM = { 
+				NOT = { trait = nightswatch }
+				capital_scope = { region = world_westeros }	
+				ROOT = { capital_scope = { NOT = { region = world_westeros } } }	
+			} 
+		}
+	}
+	desc = {
+		text = "EVTDESCcold_winds.92B" #Call from Essos
+		trigger = { 
+			FROM = { 
+				NOT = { trait = nightswatch }
+				capital_scope = { NOT = { region = world_westeros }	}
+				ROOT = { capital_scope = { region = world_westeros } }
+			} 
+		}
+	}
+	
+	option = {		
+		name = {
+			text = "EVTOPTAcold_winds.9" #Ride North
+			trigger = {
+				FROM = { capital_scope = { region = world_westeros } }
+				ROOT = { capital_scope = { region = world_westeros } }
+			}
+		}	
+		name = {
+			text = "EVTOPTAcold_winds.9B" #Ride East
+			trigger = {
+				FROM = { capital_scope = { NOT = { region = world_westeros } } }
+				ROOT = { capital_scope = { NOT = { region = world_westeros } } }
+			}
+		}
+		name = {
+			text = "EVTOPTAcold_winds.92" #Sail West
+			trigger = {
+				FROM = { capital_scope = { region = world_westeros } }
+				ROOT = { capital_scope = { NOT = { region = world_westeros } } }
+			}
+		}
+		name = {
+			text = "EVTOPTAcold_winds.9D" #Sail East
+			trigger = {
+				FROM = { capital_scope = { NOT = { region = world_westeros } } }
+				ROOT = { capital_scope = { region = world_westeros } }
+			}
+		}
+		ai_chance = {
+			factor = 10
+		}
+		if = {
+			limit = {
+				FROM = {
+					any_war = {
+						defender = { character = ROOT_FROM }
+						attacker = {
+							OR = {
+								has_landed_title = d_winter 
+								has_landed_title = d_winter_essos
+							}
+						}
+					}
+				}
+			}
+			join_defender_wars = FROM
+		}
+		if = {
+			limit = {
+				FROM = {
+					any_war = {
+						attacker = { character = ROOT_FROM }
+						defender = {
+							OR = {
+								has_landed_title = d_winter 
+								has_landed_title = d_winter_essos
+							}
+						}
+					}
+				}
+			}
+			join_attacker_wars = FROM
+		}
+		hidden_tooltip = { #fail safe
+			join_defender_wars = FROM
+			join_attacker_wars = FROM
+		}
+		FROM = {
+			hidden_tooltip = { letter_event = { id = cold_winds.8 } }
+		}	
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_JOINED_WAR_FOR_DAWN
+				portrait = [From.GetID]
+				picture = GFX_evt_white_shadows
+			}
+		}
+	}
+	
+	option = {
+		name = {
+			text = "EVTOPTBcold_winds.9"
+			trigger = {
+				OR = {
+					culture_group = FROM
+					religion_group = FROM
+				}	
+			}
+		}
+		name = {
+			text = "EVTOPTBcold_winds.92"
+			trigger = {
+				NOR = {
+					culture_group = FROM
+					religion_group = FROM
+				}	
+			}
+		}
+		ai_chance = {
+			factor = 100	
+			
+			modifier = {
+				factor = 25
+				OR = {
+					war = yes
+					any_liege = { war = yes }
+				}	
+			}
+			modifier = {
+				factor = 0.05
+				trait = nightswatch
+			}
+			
+			# Alliance Effects
+			modifier = {
+				factor = 0
+				trait = honorable
+				OR = {
+					is_allied_with = FROM		
+					has_non_aggression_pact_with = FROM						
+				}
+			}
+			modifier = {
+				factor = 0.33
+				OR = {
+					is_allied_with = FROM		
+					has_non_aggression_pact_with = FROM						
+				}
+			}
+			modifier = {
+				factor = 0.25
+				OR = {
+					dynasty = FROM		
+					is_close_relative = FROM	
+					is_married = FROM
+				}
+			}
+			# Threat
+			modifier = {
+				factor = 0.1
+				any_realm_province = { 
+					any_neighbor_province = { owner = { culture_group = winter_group } }	
+				}
+			}
+			modifier = {
+				factor = 0.75
+				FROM = {
+					any_current_enemy = { 
+						OR = {
+							has_landed_title = d_winter 
+							has_landed_title = d_winter_essos
+						}
+						trait = white_walker
+						realm_size = 10
+					}
+				}
+			}
+			modifier = {
+				factor = 0.75
+				FROM = {
+					any_current_enemy = { 
+						OR = {
+							has_landed_title = d_winter 
+							has_landed_title = d_winter_essos
+						}
+						trait = white_walker
+						realm_size = 15
+					}
+				}
+			}
+			modifier = {
+				factor = 0.75
+				FROM = {
+					any_current_enemy = { 
+						OR = {
+							has_landed_title = d_winter 
+							has_landed_title = d_winter_essos
+						}
+						trait = white_walker
+						realm_size = 25
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					any_current_enemy = { 
+						OR = {
+							has_landed_title = d_winter 
+							has_landed_title = d_winter_essos
+						}
+						trait = white_walker
+						realm_size = 50
+					}
+				}
+			}
+			modifier = {
+				factor = 0.1
+				FROM = {
+					any_current_enemy = { 
+						OR = {
+							has_landed_title = d_winter 
+							has_landed_title = d_winter_essos
+						}
+						trait = white_walker
+						realm_size = 100
+					}
+				}
+			}
+			# Northerners support the Night's Watch
+			modifier = {
+				factor = 0.4
+				culture_group = first_men
+			}
+			modifier = {
+				factor = 0.5
+				any_demesne_province = { region = world_north }
+			}
+			modifier = {
+				factor = 0.5
+				dynasty = 59
+			}
+			# Wildlings support the Night's Watch (want their land back)
+			modifier = {
+				factor = 0.4
+				wildling_culture_trigger = yes
+			}
+			modifier = {
+				factor = 0.5
+				any_demesne_province = { region = world_beyond_the_wall }
+			}
+			# Personality Effects
+			modifier = {
+				factor = 2
+				trait = slothful
+			}
+			modifier = {
+				factor = 2
+				trait = cynical
+			}
+			modifier = {
+				factor = 2
+				trait = ruthless
+			}
+			modifier = {
+				factor = 2
+				trait = selfish
+			}
+			modifier = {
+				factor = 2
+				trait = proud
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 0.75
+				trait = diligent
+			}
+			modifier = {
+				factor = 0.75
+				trait = honorable
+			}
+			modifier = {
+				factor = 0.75
+				trait = just
+			}
+			modifier = {
+				factor = 0.75
+				trait = humble
+			}
+			modifier = {
+				factor = 0.5
+				trait = greensight
+			}
+			#Opinion
+			modifier = {
+				factor = 0.8
+				opinion = { who = FROM value = 100 }
+			}
+			modifier = {
+				factor = 0.8
+				opinion = { who = FROM value = 80 }
+			}
+			modifier = {
+				factor = 0.8
+				opinion = { who = FROM value = 60 }
+			}
+			modifier = {
+				factor = 0.8
+				opinion = { who = FROM value = 40 }
+			}
+			modifier = {
+				factor = 0.8
+				opinion = { who = FROM value = 20 }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { opinion = { who = FROM value = -19 } }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { opinion = { who = FROM value = -39 } }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { opinion = { who = FROM value = -59 } }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { opinion = { who = FROM value = -79 } }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { opinion = { who = FROM value = -99 } }
+			}
+		}
+		hidden_tooltip = { add_character_modifier = { name = ignored_cold_winds_call duration = 1095 hidden = yes } }
+		if = {
+			limit = { FROM = { NOT = { trait = nightswatch } } }
+			prestige = -25
+		}	
+		if = {
+			limit = { FROM = { trait = nightswatch } }
+			if = {
+				limit = { NOT = { culture_group = first_men } }
+				prestige = -25
+			}	
+			if = {
+				limit = { culture_group = first_men }
+				prestige = -50
+			}
+			if = {
+				limit = { 
+					OR = {
+						religion = old_gods 
+						religion = old_gods_reformed 
+					}	
+				}
+				piety = -50
+			}
+			any_vassal = {
+				limit = {
+					OR = {
+						AND = {
+							culture_group = first_men
+							OR = {
+								trait = honorable
+								trait = just
+								trait = zealous
+								trait = diligent
+							}
+							NOR = {
+								trait = arbitrary
+								trait = cynical
+								trait = selfish
+							}
+						}	
+						any_war = { 
+							defender = { has_landed_title = d_nightswatch }
+						}
+					}
+				}
+				opinion = { who = ROOT modifier = opinion_ignored_NW_call months = 60 }
+			}
+		}	
+	}
+}
+
+######  Wildlings/Thenn choice to swap to Cold Gods worship
+character_event = {
+	id = cold_winds.10
+	desc = "EVTDESCcold_winds.10"
+	picture = GFX_evt_white_shadows
+	
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	war = no
+	
+	trigger = {	
+		wildling_culture_trigger = yes
+		calc_true_if = {
+			amount = 2
+			trait = ruthless
+			trait = lunatic
+			trait = cynical
+		}	
+		NOT = { religion = cold_gods }
+		NOT = { trait = zealous }
+		NOT = { trait = just }
+		NOT = { trait = liberator }
+		NOT = { has_character_flag = no_others }
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+	}
+	
+	option = {
+		name = "EVTOPTAcold_winds.10" #YES
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 4
+				trait = cynical
+			}
+			modifier = {
+				factor = 4
+				trait = lunatic
+			}
+			modifier = {
+				factor = 4
+				trait = ruthless
+			}
+			modifier = {
+				factor = 4
+				trait = cruel
+			}
+		}
+		religion = cold_gods
+	}
+	
+	option = {
+		name = "EVTOPTBcold_winds.10" #NO
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 4
+				trait = honorable
+			}
+			modifier = {
+				factor = 4
+				trait = kind
+			}
+			modifier = {
+				factor = 3
+				trait = charitable
+			}
+			modifier = {
+				factor = 4
+				trait = content
+			}
+			modifier = {
+				factor = 3
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 3
+				trait = craven
+			}
+		}
+		set_character_flag = no_others
+	}
+}
+
+###### Cold Gods followers sacrifice son.
+# character_event = {
+	# id = cold_winds.11 #MERGED WITH BIRTH.990
+	# desc = "EVTDESCcold_winds.11"
+
+	# is_triggered_only = yes
+	
+	# trigger = {		
+		# religion = cold_gods
+		# is_female = no
+	# }
+
+	# immediate = {
+		# death = {death_reason = death_sacrificed}
+	# }
+
+	# option = {
+		# name = OK
+	# }
+# }
+
+###### Character in winter wasteland province encounter Others
+character_event = {
+	id = cold_winds.12
+	desc = EVTDESCcold_winds.12
+	picture = "GFX_evt_white_shadows"
+	
+	is_triggered_only = yes
+	capable_only = yes
+	prisoner = no
+	in_command = yes
+	min_age = 16
+	
+	trigger = {	
+		location = {  
+			has_province_modifier = winter_wasteland
+		}
+		NOT = { culture = white_walker }
+		NOT = { culture = winter_wasteland }
+		NOT = { has_character_flag = white_walker_duel }
+	}
+	
+	weight_multiplier = {
+		factor = 1
+	}
+	
+	immediate = {
+		if = { #find sword for loc
+			limit = { ai = no }
+			random_artifact = {
+				limit = {
+					OR = {
+						has_artifact_flag = valyrian_steel
+						artifact_type = lightbringer
+					}	
+					is_artifact_equipped = yes
+				}
+				save_event_target_as = valyrian_steel_sword
+			}
+		}
+		#chance of fighting pre-existing white walker
+		random = {
+			chance = 66
+			location = {
+				owner = {
+					top_liege = {
+						random_courtier = {
+							limit = {
+								trait = white_walker
+								combat_rating = 40
+								prisoner = no
+								NOT = { has_character_flag = white_walker_duel_target }
+								in_command = no
+								is_ruler = no
+							}
+							save_event_target_as = duel_white_walker
+							break = yes
+						}
+					}
+				}
+			}
+		}	
+		create_random_soldier = {
+			attributes = {
+				martial = 9
+				diplomacy = 4
+				learning = 2
+			}
+			name = "Белый Ходок"
+			dynasty = none
+			female = no
+			religion = cold_gods
+			culture = white_walker
+			trait = white_walker
+			trait = hunter
+			trait = back_seat_leader
+			trait = skilled_tactician
+			historical = yes
+		}
+		new_character = {
+			if = {
+				limit = { ROOT = { location = { region = world_westeros } } }
+				d_winter = { holder_scope = { reverse_banish = PREVPREV } }
+			}	
+			if = {
+				limit = { NOT = { ROOT = { location = { region = world_westeros } } } }
+				d_winter_essos = { holder_scope = { reverse_banish = PREVPREV } }
+			}
+			set_character_flag = white_walker
+			random_list = {
+				75 = { add_trait = skilled_warrior }
+				25 = { add_trait = master_warrior }
+			}
+			save_event_target_as = duel_white_walker
+		}
+	}
+		
+	option = {
+		name = "EVTOPTAcold_winds.12"
+		trigger = {
+			NOT = {
+				any_artifact = {
+					OR = {
+						has_artifact_flag = valyrian_steel
+						artifact_type = lightbringer
+					}	
+					is_artifact_equipped = yes
+				}
+			}	
+		}
+		set_character_flag = white_walker_duel
+		set_character_flag = flag_duel_to_the_death
+		event_target:duel_white_walker = {
+			set_character_flag = white_walker_duel_target
+			set_character_flag = flag_duel_to_the_death
+			character_event = { id = cold_winds.13 tooltip = TOOLTIPcold_winds.13 }
+		}	
+	}	
+
+	option = {
+		name = "EVTOPTBcold_winds.12"
+		trigger = {
+			any_artifact = {
+				OR = {
+					has_artifact_flag = valyrian_steel
+					artifact_type = lightbringer
+				}	
+				is_artifact_equipped = yes
+			}
+		}
+		tooltip_info_modifier = owns_valyrian_steel_sword
+		random_list = {
+			85 = { #killed it
+				character_event = { id = cold_winds.17 tooltip = TOOLTIPcold_winds.17 }					
+			}
+			15 = { #duel
+				set_character_flag = white_walker_duel
+				set_character_flag = flag_duel_to_the_death
+				event_target:duel_white_walker = {
+					set_character_flag = white_walker_duel_target
+					set_character_flag = flag_duel_to_the_death
+					character_event = { id = cold_winds.13 tooltip = TOOLTIPcold_winds.13 }
+				}
+			}
+		}	
+	}	
+	
+	option = {
+		name = "EVTOPTCcold_winds.12" #Dracarys!
+		trigger = {
+			trait = dragon_rider
+			any_friend = {
+				trait = dragon
+				age = 2
+				NOT = { trait = maimed_dragon }
+			}
+		}
+		tooltip_info = dragon_rider
+		event_target:duel_white_walker = { 
+			set_character_flag = dragon_white_walker_duel
+			character_event = { id = cold_winds.1397 tooltip = TOOLTIPcold_winds.1397 } 
+		}
+	}
+}
+
+character_event = {
+	id = cold_winds.13
+	desc = "EVTDESCcold_winds.13"
+	picture = GFX_evt_white_shadows
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAcold_winds.13"
+		e_rebels = { holder_scope = { character_event = { id = duel.0 } } }	
+	}
+}
+character_event = { #white walker duels dragon
+	id = cold_winds.1397
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	option = {
+		name = OK
+		FROM = {
+			random_friend = {
+				limit = {
+					trait = dragon
+					age = 2
+					NOT = { trait = maimed_dragon }
+				}
+				character_event = { id = dragon.2799 tooltip = TOOLTIPdragon.2799 }
+			}
+		}
+	}
+}
+character_event = { #dragon kills white walker
+	id = cold_winds.1398
+	desc = "EVTDESCcold_winds.1398"
+	picture = "GFX_dracarys"
+
+	is_triggered_only = yes
+	show_from_from_from = yes
+
+	option = {
+		name = "EVTOPTAcold_winds.1398"
+		prestige = 50
+		FROMFROMFROM = {
+			death = {
+				death_reason = death_battle_dragon_fire
+				killer = ROOT
+			}
+		}
+		FROMFROM = {
+			prestige = 50
+			show_portrait = yes
+		}
+	}
+}
+character_event = { #white walker kills dragon
+	id = cold_winds.1399
+	desc = "EVTDESCcold_winds.1399"
+	picture = "GFX_evt_dragon_death_battle"
+
+	is_triggered_only = yes
+	show_from_from_from = yes
+	
+	immediate = {
+		FROMFROMFROM = { clr_character_flag = dragon_white_walker_duel }
+	}
+
+	option = {
+		name = "EVTOPTAcold_winds.1399"
+		FROMFROM = {
+			death = {
+				death_reason = death_battle
+				killer = ROOT_FROMFROMFROM
+			}
+		}
+		set_character_flag = white_walker_duel
+		set_character_flag = flag_duel_to_the_death
+		event_target:duel_white_walker = {
+			set_character_flag = white_walker_duel_target
+			set_character_flag = flag_duel_to_the_death
+			character_event = { id = cold_winds.13 tooltip = TOOLTIPcold_winds.13 }
+		}		
+	}
+}
+###  Character notified they killed White Walker
+character_event = {
+	id = cold_winds.17
+	desc = "EVTDESCcold_winds.17"
+	picture = "GFX_evt_white_shadows"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		if = { #find sword for loc
+			limit = { ai = no }
+			random_artifact = {
+				limit = {
+					OR = {
+						has_artifact_flag = valyrian_steel
+						artifact_type = lightbringer
+					}	
+					is_artifact_equipped = yes
+				}
+				save_event_target_as = valyrian_steel_sword
+			}
+		}
+	}
+	
+	option = {
+		name = "Ok"		
+		event_target:duel_white_walker = {
+			death = {
+				death_reason = death_duel
+				killer = ROOT
+			}
+		}
+		prestige = 75
+	}
+}
+
+###### Others attack Wall
+province_event = {
+	id = cold_winds.14
+	desc = "EVTDESCcold_winds.14"
+	picture = "GFX_evt_white_shadows"
+	
+	trigger = {
+		duchy = { title = d_the_wall }
+		any_neighbor_province = {
+			owner = {
+				culture = winter_wasteland
+				religion = cold_gods
+			}
+		}
+		NOR = {
+			has_alternate_start_parameter = { key = special_culture value = mythological } 
+			has_alternate_start_parameter = { key = special_culture value = all } 
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 5
+		modifier = {
+			factor = 1.5
+			d_nightswatch = { 
+				holder_scope = { 
+					#has_character_flag = stark_wall
+					dynasty = 59	
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			d_winter = { holder_scope = { realm_size = 7 } }
+		}
+		modifier = {
+			factor = 0.5
+			d_winter = { holder_scope = { realm_size = 12 } }
+		}
+		modifier = {
+			factor = 0.1
+			d_winter = { holder_scope = { completely_controls = k_beyond_wall } }
+		}
+	}
+
+	option = {
+		name = "Ok"
+		if = { #try and target province's kingdom title first, if province is in same realm as holder
+			limit = {
+				duchy = {
+					holder_scope = {
+						any_realm_province = { province_id = ROOT }
+					}
+				}
+			}
+			duchy = {
+				reverse_war = {
+					target = d_winter
+					casus_belli = others_invasion
+				}
+			}
+		}
+		if = { #Else just target primary title
+			limit = {
+				NOT = {
+					duchy = {
+						holder_scope = {
+							any_realm_province = { province_id = ROOT }
+						}
+					}
+				}	
+			}
+			owner = {
+				top_liege = {
+					primary_title = {
+						reverse_war = {
+							target = d_winter
+							casus_belli = others_invasion
+						}
+					}	
+				}
+			}
+		}
+	}
+}
+
+######  Stark in Winterfell calls War for the Dawn
+character_event = {
+	id = cold_winds.15
+	desc = "EVTDESCcold_winds.15"
+	picture = GFX_evt_winterfell
+	
+	only_playable = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	has_global_flag = cold_winds
+	
+	trigger = {
+		dynasty = 59
+		AND = {
+			OR = {
+				has_landed_title = k_north
+				has_landed_title = e_north
+			}	
+			has_landed_title = c_winterfell
+		}		
+		d_winter = { 
+			holder_scope = {
+				culture = white_walker
+				independent = yes
+				demesne_size = 1
+				NOT = { war_with = ROOT }
+				NOT = { same_realm = ROOT }
+			}
+		}	
+		NOR = {
+			has_alternate_start_parameter = { key = special_culture value = mythological } 
+			has_alternate_start_parameter = { key = special_culture value = all } 
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 50
+		modifier = { #if others stall, do this quickly
+			factor = 0.05
+			had_global_flag = { flag = cold_winds days = 730 }
+			d_winter = { 
+				holder_scope = {
+					NOT = { realm_size = 10 }
+				}
+			}			
+		}
+	}
+
+	immediate = {
+		set_character_flag = stark_winterfell
+	}
+	
+	option = {
+		name = "EVTOPTAcold_winds.15" #YES
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 4
+				trait = honorable
+			}
+			modifier = {
+				factor = 4
+				trait = kind
+			}
+			modifier = {
+				factor = 3
+				trait = charitable
+			}
+			modifier = {
+				factor = 4
+				trait = content
+			}
+		}
+		d_winter = {
+			holder_scope = {
+				reverse_war = {
+					target = ROOT
+					casus_belli = war_dawn
+				}
+			}	
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBcold_winds.15" #NO
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 4
+				trait = cynical
+			}
+			modifier = {
+				factor = 4
+				trait = lunatic
+			}
+			modifier = {
+				factor = 4
+				trait = ruthless
+			}
+			modifier = {
+				factor = 4
+				trait = cruel
+			}
+			modifier = {
+				factor = 3
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 3
+				trait = craven
+			}
+		}
+	}
+}
+
+######  Lord Commander calls War for the Dawn
+character_event = {
+	id = cold_winds.18
+	desc = "EVTDESCcold_winds.18"
+	picture = GFX_evt_the_wall
+	
+	only_playable = yes
+	capable_only = yes
+	prisoner = no
+	has_global_flag = cold_winds
+	
+	trigger = {
+		has_landed_title = d_nightswatch	
+		demesne_size = 1
+		d_winter = { 
+			holder_scope = {
+				culture = white_walker
+				independent = yes
+				demesne_size = 1
+				NOT = { war_with = ROOT }
+				NOT = { same_realm = ROOT }
+			}
+		}
+		NOR = {
+			has_alternate_start_parameter = { key = special_culture value = mythological } 
+			has_alternate_start_parameter = { key = special_culture value = all } 
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 10
+		modifier = { #if others stall, do this quickly
+			factor = 0.05
+			had_global_flag = { flag = cold_winds days = 730 }
+			d_winter = { 
+				holder_scope = {
+					NOT = { realm_size = 10 }
+				}
+			}			
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAcold_winds.18" #YES
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 4
+				trait = honorable
+			}
+			modifier = {
+				factor = 4
+				trait = kind
+			}
+			modifier = {
+				factor = 3
+				trait = charitable
+			}
+			modifier = {
+				factor = 4
+				trait = brave
+			}
+			modifier = {
+				factor = 4
+				trait = just
+			}
+			modifier = {
+				factor = 4
+				trait = content
+			}
+		}
+		d_winter = {
+			holder_scope = {
+				reverse_war = {
+					target = ROOT
+					casus_belli = war_dawn
+				}
+			}	
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBcold_winds.18" #NO
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 4
+				trait = cynical
+			}
+			modifier = {
+				factor = 4
+				trait = lunatic
+			}
+			modifier = {
+				factor = 4
+				trait = ruthless
+			}
+			modifier = {
+				factor = 4
+				trait = cruel
+			}
+			modifier = {
+				factor = 3
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 4
+				trait = craven
+			}
+			modifier = {
+				factor = 4
+				trait = proud
+			}
+			modifier = {
+				factor = 4
+				trait = deceitful
+			}
+		}
+		any_vassal = {
+			limit = {
+				trait = nightswatch
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_disappointed
+				years = 2
+			}
+		}
+		any_courtier = {
+			limit = {
+				trait = nightswatch
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_disappointed
+				years = 2
+			}
+		}
+	}
+}
+
+####  Father Notification (Stark on the Wall)
+character_event = {
+	id = cold_winds.19
+	desc = "EVTDESCcold_winds.19"
+	picture = GFX_evt_the_wall
+	is_triggered_only = yes
+	option = { name = "Ok" }
+}
+
+# #### Son Notification (Stark on the Wall)
+# character_event = {
+	# id = cold_winds.20
+	# desc = "EVTDESCcold_winds.20"
+	# picture = GFX_evt_the_wall
+	# is_triggered_only = yes
+	# option = { name = "Ok" }
+# }
+
+######  Stark on the Wall
+character_event = {
+	id = cold_winds.21
+	desc = "EVTDESCcold_winds.21"
+	picture = GFX_evt_the_wall
+	
+	is_triggered_only = yes
+	min_age = 10
+	capable_only = yes
+	prisoner = no
+	has_global_flag = cold_winds
+	
+	trigger = {
+		trait = nightswatch
+		dynasty = 59			
+		NOT = { has_claim = d_nightswatch }
+		NOT = { primary_title = { title = d_nightswatch } }
+	}
+
+	option = {
+		name = "EVTOPTAcold_winds.21"
+		add_claim = d_nightswatch
+	}
+	
+}
+
+#####  Stark on Wall by normal means gets flag
+
+# character_event = {
+	# id = cold_winds.22
+	# desc = "EVTDESCcold_winds.22"
+	# picture = GFX_evt_the_wall
+
+	# is_triggered_only = yes
+
+	# trigger = {
+		# dynasty = 59
+		# trait = nightswatch
+		# NOT = { has_character_flag = stark_wall }
+	# }
+	
+	# immediate = {
+		# set_character_flag = stark_wall
+	# }
+
+	# option = {
+		# name = "OK"	
+	# }
+# }
+
+
+########   Maintenance Events
+
+#White Walker/Winter Wasteland maintenance
+character_event = {
+	id = cold_winds.201
+	
+	only_independent = yes
+	is_triggered_only = yes
+	culture_group = winter_group
+	hide_window = yes
+	
+	
+	immediate = { #Check if the long night should end
+		if = {
+			limit = { 
+				has_global_flag = cold_winds
+				d_winter_essos = { 
+					holder_scope = { 
+						OR = {
+							NOT = { num_of_count_titles = 1 } 
+							NOT = { demesne_size = 1 }
+						}	
+						war = no
+					} 
+				}
+				d_winter = { 
+					holder_scope = { 
+						OR = {
+							NOT = { num_of_count_titles = 1 } 
+							NOT = { demesne_size = 1 }
+						}	
+						war = no
+					} 
+				}
+				NOR = {
+					has_alternate_start_parameter = { key = special_culture value = mythological } 
+					has_alternate_start_parameter = { key = special_culture value = all } 
+				}
+			}
+			d_winter_essos = { 
+				holder_scope = { 
+					disband_event_forces = yes
+				} 
+			}
+			d_winter = { 
+				holder_scope = { 
+					disband_event_forces = yes
+				} 
+			}
+			set_global_flag = others_defeated
+			clr_global_flag = cold_winds				
+			clr_global_flag = asoiaf_mild_winter
+			clr_global_flag = asoiaf_normal_winter
+			clr_global_flag = asoiaf_harsh_winter
+			random_list = {
+				20 = {
+					set_global_flag = short_summer
+				}
+				60 = {		
+					set_global_flag = normal_summer
+				}
+				20 = {
+					set_global_flag = long_summer
+				}
+			}
+		}
+		else_if = { #Westeros others defeated, but not east
+			limit = {
+				has_landed_title = d_winter
+				has_global_flag = cold_winds
+				OR = {
+					NOT = { num_of_count_titles = 1 } 
+					NOT = { demesne_size = 1 }
+				}	
+				war = no
+				NOT = {
+					d_winter_essos = { 
+						holder_scope = { 
+							OR = {
+								NOT = { num_of_count_titles = 1 } 
+								NOT = { demesne_size = 1 }
+							}	
+							war = no
+						} 
+					}
+				}	
+				NOR = {
+					has_alternate_start_parameter = { key = special_culture value = mythological } 
+					has_alternate_start_parameter = { key = special_culture value = all } 
+				}
+			}
+			set_global_flag = westeros_others_subdued
+			any_province = {
+				limit = { 
+					region = world_westeros 
+					owner = { always = yes } 
+					OR = {
+						has_province_modifier = asoiaf_normal_winter
+						has_province_modifier = asoiaf_harsh_winter
+					}
+				}
+				remove_province_modifier = asoiaf_normal_winter
+				remove_province_modifier = asoiaf_harsh_winter
+				add_province_modifier = {
+					name = asoiaf_mild_winter
+					duration = -1
+				}
+			}
+		}
+		else_if = { #Westeros others defeated, but not east
+			limit = {
+				has_landed_title = d_winter_essos
+				has_global_flag = cold_winds
+				OR = {
+					NOT = { num_of_count_titles = 1 } 
+					NOT = { demesne_size = 1 }
+				}	
+				war = no
+				NOT = {
+					d_winter = { 
+						holder_scope = { 
+							OR = {
+								NOT = { num_of_count_titles = 1 } 
+								NOT = { demesne_size = 1 }
+							}	
+							war = no
+						} 
+					}
+				}	
+				NOR = {
+					has_alternate_start_parameter = { key = special_culture value = mythological } 
+					has_alternate_start_parameter = { key = special_culture value = all } 
+				}
+			}
+			set_global_flag = eastern_others_subdued
+			any_province = {
+				limit = { 
+					NOT = { region = world_westeros }
+					owner = { always = yes } 
+					OR = {
+						has_province_modifier = asoiaf_normal_winter
+						has_province_modifier = asoiaf_harsh_winter
+					}
+				}
+				remove_province_modifier = asoiaf_normal_winter
+				remove_province_modifier = asoiaf_harsh_winter
+				add_province_modifier = {
+					name = asoiaf_mild_winter
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAcold_winds.201" #Yes
+		if = {
+			limit = {
+				NOR = {
+					has_alternate_start_parameter = { key = special_culture value = mythological } 
+					has_alternate_start_parameter = { key = special_culture value = all } 
+				}
+			}
+			if = { #wasteland somehow becoming others leader
+				limit = { 
+					culture = winter_wasteland 
+					OR = {
+						has_landed_title = d_winter
+						has_landed_title = d_winter_essos
+					}
+				}
+				random_realm_character = {
+					limit = {
+						trait = white_walker
+						culture = white_walker
+						is_adult = yes
+					}
+					preferred_limit = {
+						age = 1000
+					}
+					ROOT = { abdicate_to = PREV }
+					character_event = { id = cold_winds.201 days = 2 }
+				}
+				if = { #none found, create a white walker
+					limit = { is_ruler = yes }
+					create_character = {
+						name = "Иной"
+						random_traits = yes
+						culture = white_walker
+						religion = cold_gods
+						dynasty = none
+						female = 25
+						trait = white_walker
+					}
+					new_character = {
+						remove_trait = imbecile
+						remove_trait = inbred
+						remove_trait = slow		
+						random_list = {
+							50 = { add_trait = trained_warrior }
+							50 = { add_trait = skilled_warrior }
+						}	
+						add_artifact = crystal_sword
+						ROOT = { abdicate_to = PREV }
+						character_event = { id = cold_winds.201 days = 2 }
+					}
+				}	
+				death = yes
+				break = yes
+			}
+			if = { #White walkers splinter
+				limit = {
+					culture = white_walker
+					independent = yes
+					NOR = {
+						has_landed_title = d_winter
+						has_landed_title = d_winter_essos
+					}
+				}
+				if = {
+					limit = { capital_scope = { region = world_westeros } }
+					d_winter = {
+						holder_scope = {
+							if = {
+								limit = {
+									demesne_size = 1
+									has_global_flag = cold_winds
+								}
+								ROOT = { abdicate_to = PREV }
+								character_event = { id = cold_winds.201 days = 2 }
+							}
+							else = {
+								any_province = { 
+									limit = {
+										owner = {
+											culture_group = winter_group
+											OR = {
+												character = ROOT
+												is_liege_or_above = ROOT
+												liege_before_war = { character = ROOT }
+											}
+										}
+									}
+									province_event = { id = cold_winds.7 } 
+								}
+							}
+						}	
+					}
+				}
+				else = {
+					d_winter_essos = {
+						holder_scope = {
+							if = {
+								limit = {
+									demesne_size = 1
+									has_global_flag = cold_winds
+								}
+								ROOT = { abdicate_to = PREV }
+								character_event = { id = cold_winds.201 days = 2 }
+							}
+							else = {
+								any_province = { 
+									limit = {
+										owner = {
+											culture_group = winter_group
+											OR = {
+												character = ROOT
+												is_liege_or_above = ROOT
+												liege_before_war = { character = ROOT }
+											}
+										}
+									}
+									province_event = { id = cold_winds.7 } 
+								}
+							}
+						}	
+					}
+				}
+			}
+			remove_nickname = yes
+			#If Long Night Has Ended, remove lands
+			if = {
+				limit = { 
+					NOT = { has_global_flag = cold_winds }
+					OR = {
+						num_of_count_titles = 1 
+						demesne_size = 1
+					}
+					war = no
+				}
+				any_realm_province = { 
+					province_event = { id = cold_winds.7 } 
+				}
+			}	
+			any_spouse = { remove_spouse = PREV }
+			any_lover = { remove_lover = PREV }
+			any_realm_lord = {
+				limit = { culture = winter_wasteland }
+				any_spouse = { remove_spouse = PREV }
+				any_lover = { remove_lover = PREV }
+			}
+			any_realm_character = {
+				limit = { culture = white_walker }
+				religion = cold_gods
+				any_spouse = { remove_spouse = PREV }
+				any_lover = { remove_lover = PREV }
+			}
+			#Human prisoners are killed
+			any_realm_character = {
+				limit = {
+					NOR = {
+						trait = white_walker
+						trait = winter_wasteland
+						culture_group = winter_group
+					}
+					host = { culture_group = winter_group }
+					c_9268059 = { NOT = { character = PREV } } #Hidden Bran
+					NOT = { trait = dragon }
+				}
+				death = {
+					death_reason = death_murder_slayed
+					killer = ROOT
+				}
+			}
+			if = {
+				limit = { war = no }
+				any_realm_province = {
+					limit = { has_province_flag = winter_wasteland }
+					add_province_modifier = {
+						name = winter_wasteland
+						duration = -1
+					}
+				}
+			}
+			#White walkers retain only capital
+			if = {
+				limit = { culture = white_walker }
+				any_demesne_title = { 
+					limit = {
+						tier = COUNT
+						location = {
+							has_province_flag = winter_wasteland
+							is_capital = no
+						}
+					}
+					ROOT = {
+						create_character = {
+							name = ""
+							religion="cold_gods"
+							culture="winter_wasteland"	
+							dynasty=none
+							attributes = {
+								martial = 0
+								diplomacy = 0
+								intrigue = 0
+								stewardship = 0
+								learning = 0
+							}
+							trait = winter_wasteland
+						}
+						new_character = {
+							gain_title = PREVPREV	
+							set_defacto_liege = ROOT
+						}
+					}	
+				}
+				any_demesne_title = { 
+					limit = {
+						tier = COUNT
+						OR = {
+							controls_religion = yes
+							is_titular = yes
+							holy_order = yes
+							mercenary = yes
+						}
+					}
+					ROOT = {
+						create_character = {
+							random_traits = yes	
+							female = no
+							culture = PREV
+							religion = PREV
+							dynasty = none
+						}
+						new_character = {
+							gain_title = PREVPREV	
+							set_defacto_liege = THIS
+						}
+					}	
+				}
+				#destroy kingdoms
+				if = {
+					limit = { higher_tier_than = DUKE }
+					any_vassal = {
+						character_event = { id = cold_winds.201 days = 1 } #check independent
+					}
+					any_vassal = { 
+						limit = { higher_tier_than = COUNT }
+						any_demesne_title = { 
+							limit = { higher_tier_than = COUNT }
+							destroy_landed_title = THIS	
+						}
+						set_defacto_liege = ROOT
+					}
+					any_demesne_title = { 
+						limit = {
+							higher_tier_than = DUKE
+						}
+						destroy_landed_title = THIS	
+					}
+				}	
+			}	
+		}	
+		#Relgion and trait maintenance
+		if = {
+			limit = { culture = winter_wasteland }
+			remove_trait = winter_wasteland #This ensures immortailty
+			add_trait = winter_wasteland
+		}	
+		if = {
+			limit = { culture = white_walker }
+			remove_trait = white_walker #This ensures immortailty
+			add_trait = white_walker
+		}			
+		any_realm_lord = {
+			limit = { culture = winter_wasteland }
+			remove_trait = winter_wasteland #This ensures immortailty
+			add_trait = winter_wasteland
+		}
+		any_realm_character = {
+			limit = { culture = white_walker }
+			remove_trait = white_walker #This ensures immortailty
+			add_trait = white_walker
+		}	
+		#Cull winter wasteland courtiers
+		any_realm_character = {
+			limit = {
+				OR = {
+					trait = winter_wasteland
+					culture = winter_wasteland
+					#graphical_culture = winter_wasteland
+				}
+				is_ruler = no
+			}
+			if = {
+				limit = { is_female = yes }
+				liege = {
+					create_character = {
+						name = "Иной"
+						random_traits = yes
+						culture = white_walker
+						religion = cold_gods
+						dynasty = none
+						female = yes
+						trait = white_walker
+					}
+					new_character = {
+						remove_trait = imbecile
+						remove_trait = inbred
+						remove_trait = slow		
+						random_list = {
+							50 = { add_trait = trained_warrior }
+							50 = { add_trait = skilled_warrior }
+						}	
+						random = {
+							chance = 50
+							add_artifact = crystal_sword
+						}
+					}
+				}		
+			}
+			if = {
+				limit = { is_female = no }
+				liege = {
+					create_character = {
+						name = "Иной"
+						random_traits = yes
+						culture = white_walker
+						religion = cold_gods
+						dynasty = none
+						female = no
+						trait = white_walker
+					}
+					new_character = {
+						remove_trait = imbecile
+						remove_trait = inbred
+						remove_trait = slow	
+						random_list = {
+							50 = { add_trait = trained_warrior }
+							50 = { add_trait = skilled_warrior }
+						}	
+						random = {
+							chance = 50
+							add_artifact = crystal_sword
+						}						
+					}
+				}		
+			}
+			death = yes
+		}
+		
+		#Wasteland somehow becoming independent
+		if = {
+			limit = { culture = winter_wasteland }
+			if = {
+				limit = { 
+					capital_scope = { region = world_westeros } 
+					d_winter = { holder_scope = { demesne_size = 1 } }
+				}
+				d_winter = { holder_scope = { ROOT = { set_defacto_liege = PREV } } }
+			}
+			if = {
+				limit = { 
+					NOT = { capital_scope = { region = world_westeros } }
+					d_winter_essos = { holder_scope = { demesne_size = 1 } }
+				}
+				d_winter_essos = { holder_scope = { ROOT = { set_defacto_liege = PREV } } }
+			}
+		}	
+		if = { #check for courtier overflow
+			limit = { 
+				any_courtier = {
+					is_ruler = no
+					count = 100
+				}
+			}
+			any_courtier = {
+				limit = {
+					is_ruler = no
+					in_command = no
+					has_job_title = no
+					has_minor_title = no
+					NOT = { age = 100 }
+					NOT = { father_even_if_dead = { always = yes } }
+					NOT = { num_of_claims = 1 }
+					NOT = { trait = dragon_rider }
+					NOT = { trait = master_warrior }
+				}	
+				death = { death_reason = death_missing }
+			}
+		}		
+	}
+}
+
+#Make sure the Winter Wasteland never becomes human
+character_event = {
+	id = cold_winds.202
+	desc = "I have an invalid title"
+	
+	only_independent = yes
+
+	trigger = {
+		NOT = { culture_group = winter_group }
+		OR = {
+			has_landed_title = d_winter
+			has_landed_title = d_winter_essos
+			any_demesne_province = {
+				has_province_flag = winter_wasteland
+				county = { 
+					holder_scope = { character = ROOT } 
+				}							
+			}
+		}	
+	}
+
+	option = {
+		name = OK		
+		if = {
+			limit = {
+				OR = {
+					has_landed_title = d_winter
+					has_landed_title = d_winter_essos
+				}	
+			}
+			create_character = {
+				name = "Иной"
+				random_traits = yes
+				culture = white_walker
+				religion = cold_gods
+				dynasty = none
+				trait = white_walker
+			}
+			new_character = {
+				remove_trait = imbecile
+				remove_trait = inbred
+				remove_trait = slow	
+				ROOT = {
+					abdicate_to = PREV					
+				}	
+				random_list = {
+					75 = { add_trait = skilled_warrior }
+					25 = { add_trait = master_warrior }
+				}
+				random = {
+					chance = 50
+					add_artifact = crystal_sword
+				}
+			}
+			break = yes
+		}
+		create_character = {
+			name = ""
+			religion="cold_gods"
+			culture="winter_wasteland"	
+			dynasty=none
+			attributes = {
+				martial = 0
+				diplomacy = 0
+				intrigue = 0
+				stewardship = 0
+				learning = 0
+			}
+			trait = winter_wasteland
+		}
+		new_character = {
+			ROOT = {
+				random_demesne_title = { 
+					limit = {
+						tier = COUNT
+						location = {
+							has_province_flag = winter_wasteland
+							OR = {
+								ROOT = { NOT = { culture = white_walker } }
+								is_capital = no
+							}
+						}
+					}
+					gain_title = PREVPREV 
+				}					
+			}	
+			set_defacto_liege = d_winter
+		}	
+	}
+}
+
+#Cull excess White Walkers/Winter Wastelands
+character_event = {
+	id = cold_winds.203
+	
+	is_triggered_only = yes
+	hide_window = yes
+	culture_group = winter_group
+	
+	trigger = {		
+		liege = { NOT = { culture_group = winter_group } }
+		is_ruler = no
+		NOT = { has_character_flag = wildling_queen_other }
+		NOR = {
+			has_alternate_start_parameter = { key = special_culture value = mythological } 
+			has_alternate_start_parameter = { key = special_culture value = all } 
+		}
+	}
+
+	immediate = {
+		death = yes
+	}
+
+	option = {
+		name = OK
+	}
+}
+
+########  Ice Spiders battle events
+
+# #On-action combat event: Ice Spider attacks
+# character_event = {
+	# id = cold_winds.60
+	# desc = EVTDESCcold_winds.60	
+	# picture = "GFX_ice_spider"
+	# border = GFX_event_normal_frame_war
+	
+	# is_triggered_only = yes
+	
+	# trigger = { trait = white_walker }
+	
+	# immediate = {
+		# FROMFROM = {
+			# character_event = { id = cold_winds.61 }
+			# set_character_flag = temp_direwolf_battle
+		# }
+		# FROM = {
+			# if = {
+				# limit = { NOT = { has_character_flag = temp_ice_spider_battle } }
+				# character_event = { id = cold_winds.61 }
+			# }
+		# }
+		# FROMFROM = {
+			# clr_character_flag = temp_ice_spider_battle
+		# }
+	# }
+	
+	# option = {
+		# name = EXCELLENT
+	# }
+# }
+# #Inform opponent
+# character_event = {
+	# id = cold_winds.61
+	# desc = EVTDESCcold_winds.61	
+	# picture = "GFX_ice_spider"
+	# border = GFX_event_normal_frame_war
+	
+	# is_triggered_only = yes
+	
+	# option = {
+		# name = EVTOPTCcold_winds.61
+		# morale = -0.95
+	# }
+# }
+# #On-action combat event: Ice Spider slain
+# character_event = {
+	# id = cold_winds.62
+	# desc = EVTDESCCcold_winds.62
+	# picture = "GFX_ice_spider"
+	# border = GFX_event_normal_frame_war
+	
+	# is_triggered_only = yes
+	# culture = white_walker
+	
+	# trigger = { trait = white_walker }
+
+	# immediate = {
+		# FROMFROM = {
+			# character_event = { id = cold_winds.63 }
+			# set_character_flag = temp_ice_spider_battle
+		# }
+		# FROM = {
+			# if = {
+				# limit = { NOT = { has_character_flag = temp_ice_spider_battle } }
+				# character_event = { id = cold_winds.63 }
+			# }
+		# }
+		# FROMFROM = {
+			# clr_character_flag = temp_ice_spider_battle
+		# }
+	# }
+	
+	# option = {
+		# name = ALAS
+	# }
+# }
+# #Inform opponent
+# character_event = {
+	# id = cold_winds.63
+	# desc = EVTDESCCcold_winds.63	
+	# picture = "GFX_ice_spider"
+	# border = GFX_event_normal_frame_war
+	
+	# is_triggered_only = yes
+	
+	# option = {
+		# name = EVTOPTCcold_winds.63
+		# morale = 0.1
+	# }
+# }
+
+# ########  Undead Bear battle events
+
+# #On-action combat event: Undead Bear attacks
+# character_event = {
+	# id = cold_winds.64
+	# desc = EVTDESCcold_winds.64	
+	# picture = "GFX_wight_bear"
+	# border = GFX_event_normal_frame_war
+	
+	# is_triggered_only = yes
+	
+	# trigger = { trait = white_walker }
+	
+	# immediate = {
+		# FROMFROM = {
+			# character_event = { id = cold_winds.65 }
+			# set_character_flag = temp_direwolf_battle
+		# }
+		# FROM = {
+			# if = {
+				# limit = { NOT = { has_character_flag = temp_ice_spider_battle } }
+				# character_event = { id = cold_winds.61 }
+			# }
+		# }
+		# FROMFROM = {
+			# clr_character_flag = temp_ice_spider_battle
+		# }
+	# }
+	
+	# option = {
+		# name = EXCELLENT
+	# }
+# }
+# #Inform opponent
+# character_event = {
+	# id = cold_winds.65
+	# desc = EVTDESCcold_winds.65	
+	# picture = "GFX_wight_bear"
+	# border = GFX_event_normal_frame_war
+	
+	# is_triggered_only = yes
+	
+	# option = {
+		# name = EVTOPTCcold_winds.65
+		# morale = -0.95
+	# }
+# }
+# #On-action combat event: Undead Bear slain
+# character_event = {
+	# id = cold_winds.66
+	# desc = EVTDESCCcold_winds.66
+	# picture = "GFX_wight_bear"
+	# border = GFX_event_normal_frame_war
+	
+	# is_triggered_only = yes
+	# culture = white_walker
+	
+	# trigger = { trait = white_walker }
+
+	# immediate = {
+		# FROMFROM = {
+			# character_event = { id = cold_winds.67 }
+			# set_character_flag = temp_ice_spider_battle
+		# }
+		# FROM = {
+			# if = {
+				# limit = { NOT = { has_character_flag = temp_ice_spider_battle } }
+				# character_event = { id = cold_winds.63 }
+			# }
+		# }
+		# FROMFROM = {
+			# clr_character_flag = temp_ice_spider_battle
+		# }
+	# }
+	
+	# option = {
+		# name = ALAS
+	# }
+# }
+# #Inform opponent
+# character_event = {
+	# id = cold_winds.67
+	# desc = EVTDESCCcold_winds.67	
+	# picture = "GFX_wight_bear"
+	# border = GFX_event_normal_frame_war
+	
+	# is_triggered_only = yes
+	
+	# option = {
+		# name = EVTOPTCcold_winds.63
+		# morale = 0.1
+	# }
+# }
+
+
+#######   Ice Dragons in the Shivering Sea
+
+character_event = {
+	id = cold_winds.600
+	desc = "EVTDESCcold_winds.600"
+	picture = "GFX_ice_dragon"
+
+	ai = no
+		
+	trigger = {
+		location = { 
+			OR = {
+				province_id = 1126
+				province_id = 1125
+				province_id = 1000 
+				province_id = 999
+				province_id = 998 
+				province_id = 997 
+				province_id = 879 
+				province_id = 957 
+				province_id = 921 
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 300		
+	}
+		
+	option = {
+		name = "EVTOPTAcold_winds.600"
+	}		
+}
+
+##Others Invade The Five Forts (triggered when other invade the wall in westeros)
+character_event = {
+	id = cold_winds.700
+	
+	is_triggered_only = yes
+	hide_window = yes
+	only_independent = yes
+	culture = white_walker
+	
+	trigger = {
+		has_landed_title = d_winter_essos
+		820 = {
+			#has_province_modifier = asoiaf_harsh_winter
+			NOT = { has_province_modifier = winter_wasteland }
+		}
+		OR = { #20 year cooldown if west is still fighting
+			NOT = { has_global_flag = eastern_others_subdued }
+			had_global_flag = { flag = eastern_others_subdued days = 7300 } 
+		}
+	}
+	
+	immediate = {
+		clr_global_flag = eastern_others_subdued
+		820 = { 
+			add_province_modifier = {
+				name = asoiaf_harsh_winter
+				duration = -1
+			}
+			remove_province_modifier = asoiaf_normal_winter
+			remove_province_modifier = asoiaf_mild_winter
+			province_event = { id = cold_winds.701 } 
+		}
+	}
+
+	option = {
+		name = "Ok"		
+	}
+}
+province_event = {
+	id = cold_winds.701
+	desc = "EVTDESCcold_winds.701"
+	picture = "GFX_evt_white_shadows"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		e_rebels = {
+			persistent_event_target:chronicle_player = {
+				if = {
+					limit = {
+						capital_scope = {
+							NOT = { region = world_westeros }
+						}
+					}
+					chronicle = {
+						entry = CHRONICLE_OTHERS_SPAWN_ESSOS
+						picture = GFX_evt_white_shadows
+					}
+				}
+			}
+		}	
+	}
+	
+	option = {
+		name = "Ok"	
+		#Starting stack
+		FROM = {
+			if = {
+				limit = { NOT = { has_game_rule = { name = white_walkers value = hard } } }
+				spawn_unit = {
+					province = ROOT
+					home = ROOT
+					owner = THIS
+					scaled_by_biggest_garrison = 6
+					troops = {
+						heavy_infantry = { 40 40 }
+						light_infantry = { 60 60 }
+					}
+					match_min = 3000
+					match_max = 20000
+					attrition = 0.1
+				}
+			}
+			if = {
+				limit = { has_game_rule = { name = white_walkers value = hard } }
+				spawn_unit = {
+					province = ROOT
+					home = ROOT
+					owner = THIS
+					scaled_by_biggest_garrison = 6
+					troops = {
+						heavy_infantry = { 80 80 }
+						light_infantry = { 120 120 }
+					}
+					match_min = 6000
+					match_max = 40000
+					attrition = 0.05
+				}
+			}
+		}			
+		if = { #try and target province's kingdom title first, if province is in same realm as holder
+			limit = {
+				kingdom = {
+					holder_scope = {
+						any_realm_province = { province_id = ROOT }
+					}
+				}
+			}
+			kingdom = {
+				reverse_war = {
+					target = FROM
+					casus_belli = others_invasion
+				}
+			}
+		}
+		if = { #Else just target primary title
+			limit = {
+				NOT = {
+					kingdom = {
+						holder_scope = {
+							any_realm_province = { province_id = ROOT }
+						}
+					}
+				}	
+			}
+			owner = {
+				top_liege = {
+					primary_title = {
+						reverse_war = {
+							target = FROM
+							casus_belli = others_invasion
+						}
+					}	
+				}
+			}
+		}
+		hidden_tooltip = {
+			owner = {
+				character_event = { id = cold_winds.702 }
+			}	
+		}		
+	}
+}
+
+###  Notification to Essos
+character_event = {
+	id = cold_winds.702
+	desc = "EVTDESCcold_winds.702"
+	picture = "GFX_evt_white_shadows"
+	
+	is_triggered_only = yes
+	major = yes
+	
+	major_trigger = {
+		capital_scope = {
+			region = world_essos
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAcold_winds.702"
+	}
+}
+###  Others kill everyone in a siege
+character_event = {
+	id = cold_winds.703
+	desc = "EVTDESCcold_winds.703"
+	picture = "GFX_evt_white_shadows"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = white_walker
+		FROM = {
+			OR = {
+				is_capital = yes 
+				holder_scope = { tier = BARON }
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAcold_winds.703"
+		FROM = { 
+			holder_scope = { 
+				any_courtier = {  
+					limit = {
+						NOT = { trait = dragon }
+						NOT = { is_liege_or_above = ROOT }
+						NOT = { character = ROOT }
+						NOT = { character = PREV }
+					}		
+					character_event = { id = cold_winds.704 } #Inform
+				}
+				if = {  
+					limit = {
+						NOT = { trait = dragon }
+						NOT = { is_liege_or_above = ROOT }
+						NOT = { character = ROOT }
+					}		
+					character_event = { id = cold_winds.704 } #Inform
+				}			
+			}	
+			location = {
+				if = {
+					limit = { 
+						NOT = { has_province_modifier = sieged_by_others }
+						ROOT = { #hard cap
+							OR = {
+								NOT = { realm_levies = 250000 }
+								any_independent_ruler = { 
+									NOT = { culture_group = winter_group }
+									relative_power = { who = ROOT power = 1 }
+								}	
+							}	
+						}	
+					}
+					if = {
+						limit = { NOT = { has_game_rule = { name = white_walkers value = hard } } }
+						ROOT = {
+							#bonus troops
+							spawn_unit = {
+								province = PREV
+								home = PREV
+								owner = THIS
+								scaled_by_biggest_garrison = 2
+								troops = {
+									heavy_infantry = { 40 40 }
+									light_infantry = { 60 60 }
+								}
+								#match_min = 100
+								match_max = 2000
+								attrition = 0.1
+							}
+						}
+					}
+					if = {
+						limit = { has_game_rule = { name = white_walkers value = hard } }
+						ROOT = {
+							#bonus troops
+							spawn_unit = {
+								province = PREV
+								home = PREV
+								owner = THIS
+								scaled_by_biggest_garrison = 2
+								troops = {
+									heavy_infantry = { 80 80 }
+									light_infantry = { 120 120 }
+								}
+								#match_min = 100
+								match_max = 4000
+								attrition = 0.05
+							}
+						}
+					}
+					add_province_modifier = { #stop this happening repeatedly
+						name = sieged_by_others
+						duration = 3650
+						hidden = yes
+					}	
+				}	
+			}
+		}		
+	}
+}
+character_event = {
+	id = cold_winds.704
+	desc = "EVTDESCcold_winds.704"
+	picture = "GFX_evt_white_shadows"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcold_winds.704"
+		if = {  
+			limit = {
+				OR = {
+					NOT = { in_command = yes }
+					siege = { is_attacker = no }
+				}	
+				NOT = { trait = dragon }
+				NOT = { character = FROM }
+				FROMFROM = { location = { ROOT = { at_location = PREV } } }
+				NOT = { is_inaccessible_trigger = yes }
+				NOT = { trait = wikid }
+			}		
+			hidden_tooltip = { #chance of becoming white walker
+				if = {
+					limit = {
+						age = 15
+						NOT = { trait = dragon_rider }
+						NOT = { trait = incapable }
+						OR = {
+							higher_tier_than = COUNT
+							trait = master_warrior
+							trait = greensight
+							martial = 15
+							any_claim = { higher_tier_than = DUKE }
+							any_artifact = {
+								OR = {
+									has_artifact_flag = valyrian_steel
+									artifact_type = lightbringer
+								}	
+							}
+						}
+					}
+					random = {
+						chance = 1
+						culture = white_walker
+						religion = cold_gods
+						set_graphical_culture = white_walker
+						add_trait = white_walker
+						set_character_flag = white_walker	
+						set_character_flag = no_court_invites						
+						any_spouse = { remove_spouse = ROOT }
+						any_consort = { remove_consort = ROOT }
+						betrothed = { break_betrothal = ROOT }
+						any_friend = { remove_friend = ROOT }
+						any_lover = { remove_lover = ROOT }
+						prisoner = no
+						remove_trait = nightswatch						
+						remove_trait = kingsguard
+						remove_trait = immortal
+						remove_trait = resurrected_by_rhllor
+						remove_trait = chosen_by_rhllor
+						remove_trait = favored_by_rhllor
+						remove_trait = deserter
+						remove_trait = wildling
+						if = {
+							limit = { trait = archmaester }
+							remove_trait = archmaester
+							add_trait = maester
+							leave_society = yes
+						}
+						random = {
+							chance = 50
+							add_artifact = crystal_sword
+						}
+						if = {
+							limit = { is_ruler = yes }
+							hidden_tooltip = { #Universal on death/abdication event
+								if = {
+									limit = { any_artifact = { has_artifact_flag = valyrian_steel } }
+									set_character_flag = do_not_inherit_sword
+								}
+								set_character_flag = abdication
+								character_event = { id = 45341 } 
+								clr_character_flag = abdication
+								clr_character_flag = do_not_inherit_sword
+								if = {
+									limit = { is_merchant_republic = no }
+									current_heir = { save_event_target_as = wealth_heir }
+								}
+								if = {
+									limit = { is_merchant_republic = yes }
+									family_palace = { current_heir = { save_event_target_as = wealth_heir } }
+								}
+								transfer_scaled_wealth = { to = event_target:wealth_heir value = all }
+							}
+							abdicate = yes
+						}
+						any_claim = { remove_claim = ROOT }
+						add_trait = disinherited
+						recalc_succession = yes
+						FROM = {
+							if = {
+								limit = { is_ruler = yes }
+								ROOT = { move_character = PREV }
+								break = yes
+							}
+							liege = { ROOT = { move_character = PREV } }
+						}
+						break = yes
+					}
+				}
+			}
+			death = {
+				death_reason = death_murder_slayed
+				killer = FROM
+			}
+		}
+	}
+}
+#Ai repels invasion, declare war for the dawn?
+character_event = {
+	id = cold_winds.705
+
+	is_triggered_only = yes
+	only_independent = yes
+	ai = yes
+	
+	trigger = {
+		has_global_flag = cold_winds
+		OR = {
+			higher_tier_than = DUKE
+			trait = nightswatch
+			has_character_flag = stark_winterfell
+		}
+	}
+	
+	option = {
+		name = "WAR"
+		ai_chance = {
+			factor = 10000
+			modifier = {
+				factor = 0
+				OR = {
+					any_war = {
+						defender = { character = ROOT }
+						attacker = { relative_power = { who = ROOT power = 0.75 } }
+					}
+					FROM = { relative_power = { who = ROOT power = 4 } }
+				}	
+			}
+		}
+		FROM = {
+			reverse_war = {
+				target = ROOT
+				casus_belli = war_dawn
+			}
+		}
+	}
+	option = {
+		name = "NO"
+		ai_chance = {
+			factor = 0.1
+		}
+	}
+}
+#Others Take The Wall
+character_event = {
+	id = cold_winds.710
+	desc = EVTDESCcold_winds.710
+	
+	picture = "GFX_evt_white_shadows"
+	border = GFX_event_normal_frame_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = white_walker
+		OR = {
+			completely_controls = d_the_wall
+			d_the_wall = {
+				NOT = { 
+					any_direct_de_jure_vassal_title = {
+						holder_scope = {
+							NOT = { same_realm = ROOT }
+							NOT = { culture_group = unoccupied_group }
+						}
+					}
+				}
+			}
+		}	
+		d_winter = { NOT = { has_title_flag = others_the_wall } }
+	}
+	
+	major_trigger = {
+		ai = no
+	}	
+		
+	immediate = {
+		d_winter = { 
+			set_title_flag = others_the_wall 
+			holder_scope = { #give extra men
+				if = {
+					limit = { NOT = { has_game_rule = { name = white_walkers value = hard } } }
+					spawn_unit = {
+						province =17 #Castle Black
+						owner = THIS
+						troops = {
+							heavy_infantry = { 500 500 }
+							light_infantry = { 9500 9500 }							
+						}
+						attrition = 0.1
+					} 
+				}
+				if = {
+					limit = { has_game_rule = { name = white_walkers value = hard } }
+					spawn_unit = {
+						province =17 #Castle Black
+						owner = THIS
+						troops = {
+							heavy_infantry = { 1000 1000 }
+							light_infantry = { 19000 19000 }							
+						}
+						attrition = 0.05
+					} 
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTAcold_winds.710
+	}
+}
+#Others Take Winterfell
+character_event = {
+	id = cold_winds.711
+	desc = EVTDESCcold_winds.711
+	
+	picture = "GFX_evt_white_shadows"
+	border = GFX_event_normal_frame_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = white_walker
+		completely_controls = c_winterfell
+		d_winter = { NOT = { has_title_flag = others_c_winterfell } }
+	}
+	
+	major_trigger = {
+		ai = no
+	}	
+		
+	immediate = {
+		d_winter = { set_title_flag = others_c_winterfell }
+	}
+	
+	option = {
+		name = EVTOPTAcold_winds.711
+	}
+}
+#Others Take The Eyrie
+character_event = {
+	id = cold_winds.712
+	desc = EVTDESCcold_winds.712
+	
+	picture = "GFX_evt_white_shadows"
+	border = GFX_event_normal_frame_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = white_walker
+		completely_controls = c_the_eyrie
+		d_winter = { NOT = { has_title_flag = others_c_the_eyrie } }
+	}
+	
+	major_trigger = {
+		ai = no
+	}	
+		
+	immediate = {
+		d_winter = { set_title_flag = others_c_the_eyrie }
+	}
+	
+	option = {
+		name = EVTOPTAcold_winds.712
+	}
+}
+#Others Take Casterly Rock
+character_event = {
+	id = cold_winds.713
+	desc = EVTDESCcold_winds.713
+	
+	picture = "GFX_evt_white_shadows"
+	border = GFX_event_normal_frame_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = white_walker
+		completely_controls = c_casterly_rock
+		d_winter = { NOT = { has_title_flag = others_c_casterly_rock } }
+	}
+	
+	major_trigger = {
+		ai = no
+	}	
+		
+	immediate = {
+		d_winter = { set_title_flag = others_c_casterly_rock }
+	}
+	
+	option = {
+		name = EVTOPTAcold_winds.713
+	}
+}
+#Others Take Harrenhal
+character_event = {
+	id = cold_winds.714
+	desc = EVTDESCcold_winds.714
+	
+	picture = "GFX_evt_white_shadows"
+	border = GFX_event_normal_frame_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = white_walker
+		completely_controls = c_harrenhal
+		d_winter = { NOT = { has_title_flag = others_c_harrenhal } }
+	}
+	
+	major_trigger = {
+		ai = no
+	}	
+		
+	immediate = {
+		d_winter = { set_title_flag = others_c_harrenhal }
+	}
+	
+	option = {
+		name = EVTOPTAcold_winds.714
+	}
+}
+#Others Take King's Landing
+character_event = {
+	id = cold_winds.715
+	desc = EVTDESCcold_winds.715
+	
+	picture = "GFX_evt_white_shadows"
+	border = GFX_event_normal_frame_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = white_walker
+		completely_controls = c_kings_landing
+		226 = { has_province_flag = kings_landing_established }
+		d_winter = { NOT = { has_title_flag = others_c_kings_landing } }
+	}
+	
+	major_trigger = {
+		ai = no
+	}	
+		
+	immediate = {
+		d_winter = { set_title_flag = others_c_kings_landing }
+	}
+	
+	option = {
+		name = EVTOPTAcold_winds.715
+	}
+}
+#Others Take Oldtown
+character_event = {
+	id = cold_winds.716
+	desc = EVTDESCcold_winds.716
+	
+	picture = "GFX_evt_white_shadows"
+	border = GFX_event_normal_frame_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = white_walker
+		completely_controls = c_oldtown
+		d_winter = { NOT = { has_title_flag = others_c_oldtown } }
+	}
+	
+	major_trigger = {
+		ai = no
+	}	
+		
+	immediate = {
+		d_winter = { set_title_flag = others_c_oldtown }
+	}
+	
+	option = {
+		name = EVTOPTAcold_winds.716
+	}
+}
+#Others Take Storm's End
+character_event = {
+	id = cold_winds.717
+	desc = EVTDESCcold_winds.717
+	
+	picture = "GFX_evt_white_shadows"
+	border = GFX_event_normal_frame_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = white_walker
+		completely_controls = c_storms_end
+		d_winter = { NOT = { has_title_flag = others_c_storms_end } }
+	}
+	
+	major_trigger = {
+		ai = no
+	}	
+		
+	immediate = {
+		d_winter = { set_title_flag = others_c_storms_end }
+	}
+	
+	option = {
+		name = EVTOPTAcold_winds.717
+	}
+}
+#Others Take Sunspear
+character_event = {
+	id = cold_winds.718
+	desc = EVTDESCcold_winds.718
+	
+	picture = "GFX_evt_white_shadows"
+	border = GFX_event_normal_frame_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = white_walker
+		completely_controls = c_sunspear
+		d_winter = { NOT = { has_title_flag = others_c_sunspear } }
+	}
+	
+	major_trigger = {
+		ai = no
+	}	
+		
+	immediate = {
+		d_winter = { set_title_flag = others_c_sunspear }
+	}
+	
+	option = {
+		name = EVTOPTAcold_winds.718
+	}
+}
+#Others Take Five Forts
+character_event = {
+	id = cold_winds.719
+	desc = EVTDESCcold_winds.719
+	
+	picture = "GFX_evt_white_shadows"
+	border = GFX_event_normal_frame_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = white_walker
+		completely_controls = c_the_five_forts
+		d_winter = { NOT = { has_title_flag = others_c_the_five_forts } }
+	}
+	
+	major_trigger = {
+		ai = no
+	}	
+		
+	immediate = {
+		d_winter = { set_title_flag = others_c_the_five_forts }
+	}
+	
+	option = {
+		name = EVTOPTAcold_winds.719
+	}
+}
+#Others Take Yin
+character_event = {
+	id = cold_winds.720
+	desc = EVTDESCcold_winds.720
+	
+	picture = "GFX_evt_white_shadows"
+	border = GFX_event_normal_frame_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = white_walker
+		completely_controls = c_yin
+		d_winter = { NOT = { has_title_flag = others_c_yin } }
+	}
+	
+	major_trigger = {
+		ai = no
+	}	
+		
+	immediate = {
+		d_winter = { set_title_flag = others_c_the_five_forts }
+	}
+	
+	option = {
+		name = EVTOPTAcold_winds.720
+	}
+}
+#Others Take Qarth
+character_event = {
+	id = cold_winds.721
+	desc = EVTDESCcold_winds.721
+	
+	picture = "GFX_evt_white_shadows"
+	border = GFX_event_normal_frame_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = white_walker
+		completely_controls = c_qarth
+		d_winter = { NOT = { has_title_flag = others_c_qarth } }
+	}
+	
+	major_trigger = {
+		ai = no
+	}	
+		
+	immediate = {
+		d_winter = { set_title_flag = others_c_qarth }
+	}
+	
+	option = {
+		name = EVTOPTAcold_winds.721
+	}
+}
+#Others Take Asshai
+character_event = {
+	id = cold_winds.722
+	desc = EVTDESCcold_winds.722
+	
+	picture = "GFX_evt_white_shadows"
+	border = GFX_event_normal_frame_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = white_walker
+		completely_controls = c_asshai
+		d_winter = { NOT = { has_title_flag = others_c_asshai } }
+	}
+	
+	major_trigger = {
+		ai = no
+	}	
+		
+	immediate = {
+		d_winter = { set_title_flag = others_c_asshai }
+	}
+	
+	option = {
+		name = EVTOPTAcold_winds.722
+	}
+}
+#Others Take Ghiscar
+character_event = {
+	id = cold_winds.723
+	desc = EVTDESCcold_winds.723
+	
+	picture = "GFX_evt_white_shadows"
+	border = GFX_event_normal_frame_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = white_walker
+		completely_controls = c_meereen
+		completely_controls = c_yunkai
+		completely_controls = c_astapor
+		d_winter = { NOT = { has_title_flag = others_ghiscar } }
+	}
+	
+	major_trigger = {
+		ai = no
+	}	
+		
+	immediate = {
+		d_winter = { set_title_flag = others_ghiscar }
+	}
+	
+	option = {
+		name = EVTOPTAcold_winds.723
+	}
+}
+#Others Take Vaes Dothrak
+character_event = {
+	id = cold_winds.724
+	desc = EVTDESCcold_winds.724
+	
+	picture = "GFX_evt_white_shadows"
+	border = GFX_event_normal_frame_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = white_walker
+		completely_controls = c_vaes_dothrak
+		d_winter = { NOT = { has_title_flag = others_c_vaes_dothrak } }
+	}
+	
+	major_trigger = {
+		ai = no
+	}	
+		
+	immediate = {
+		d_winter = { set_title_flag = others_c_vaes_dothrak }
+	}
+	
+	option = {
+		name = EVTOPTAcold_winds.724
+	}
+}
+#Others Take Volantis
+character_event = {
+	id = cold_winds.725
+	desc = EVTDESCcold_winds.725
+	
+	picture = "GFX_evt_white_shadows"
+	border = GFX_event_normal_frame_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = white_walker
+		completely_controls = d_volantis
+		d_winter = { NOT = { has_title_flag = others_d_volantis } }
+	}
+	
+	major_trigger = {
+		ai = no
+	}	
+		
+	immediate = {
+		d_winter = { set_title_flag = others_d_volantis }
+	}
+	
+	option = {
+		name = EVTOPTAcold_winds.725
+	}
+}
+#Others Take Three Daughters
+character_event = {
+	id = cold_winds.726
+	desc = EVTDESCcold_winds.726
+	
+	picture = "GFX_evt_white_shadows"
+	border = GFX_event_normal_frame_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = white_walker
+		completely_controls = c_lys
+		completely_controls = c_tyrosh
+		completely_controls = c_myr
+		d_winter = { NOT = { has_title_flag = others_three_daughters } }
+	}
+	
+	major_trigger = {
+		ai = no
+	}	
+		
+	immediate = {
+		d_winter = { set_title_flag = others_three_daughters }
+	}
+	
+	option = {
+		name = EVTOPTAcold_winds.726
+	}
+}
+#Others Take Pentos
+character_event = {
+	id = cold_winds.727
+	desc = EVTDESCcold_winds.727
+	
+	picture = "GFX_evt_white_shadows"
+	border = GFX_event_normal_frame_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = white_walker
+		completely_controls = c_pentos
+		d_winter = { NOT = { has_title_flag = others_c_pentos } }
+	}
+	
+	major_trigger = {
+		ai = no
+	}	
+		
+	immediate = {
+		d_winter = { set_title_flag = others_c_pentos }
+	}
+	
+	option = {
+		name = EVTOPTAcold_winds.727
+	}
+}
+#Others Take Northern Free Cities
+character_event = {
+	id = cold_winds.728
+	desc = EVTDESCcold_winds.728
+	
+	picture = "GFX_evt_white_shadows"
+	border = GFX_event_normal_frame_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = white_walker
+		completely_controls = c_qohor
+		completely_controls = c_norvos
+		completely_controls = c_lorath
+		d_winter = { NOT = { has_title_flag = others_north_free_cities } }
+	}
+	
+	major_trigger = {
+		ai = no
+	}	
+		
+	immediate = {
+		d_winter = { set_title_flag = others_north_free_cities }
+	}
+	
+	option = {
+		name = EVTOPTAcold_winds.728
+	}
+}
+#Others Take Braavos
+character_event = {
+	id = cold_winds.729
+	desc = EVTDESCcold_winds.729
+	
+	picture = "GFX_evt_white_shadows"
+	border = GFX_event_normal_frame_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		trait = white_walker
+		completely_controls = c_braavos
+		d_winter = { NOT = { has_title_flag = others_c_braavos } }
+	}
+	
+	major_trigger = {
+		ai = no
+	}	
+		
+	immediate = {
+		d_winter = { set_title_flag = others_c_braavos }
+	}
+	
+	option = {
+		name = EVTOPTAcold_winds.729
+	}
+}

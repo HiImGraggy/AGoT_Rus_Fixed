@@ -1,0 +1,380 @@
+######  White Walkers (six seen in prologue)
+
+999000666 = {
+	name="Белый Ходок"
+	dynasty=66000666
+	religion="cold_gods"
+	culture="white_walker"
+	
+	dna = "bafdjbmbaab"
+	properties = "00000"	#0j0d0
+	
+	martial = 4
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 4
+	learning = 4
+
+	trait = white_walker
+	trait = hunter
+	trait = back_seat_leader
+	trait = skilled_tactician
+	trait = master_warrior
+	trait = light_foot_leader
+	
+	disallow_random_traits = yes
+	
+	1.1.1 = { 
+		birth="1.1.1" 
+		effect = {
+			set_character_flag = white_walker
+			add_artifact = crystal_sword
+		}
+	}
+
+	8298.1.1 = {  
+		effect = {	
+			6 = {
+				add_province_modifier = {
+					name = asoiaf_harsh_winter
+					duration = 3650
+				}
+			}
+			1030 = {
+				add_province_modifier = {
+					name = asoiaf_harsh_winter
+					duration = 3650
+				}
+			}
+			1031 = {
+				add_province_modifier = {
+					name = asoiaf_harsh_winter
+					duration = 3650
+				}
+			}
+			1097 = {
+				add_province_modifier = {
+					name = asoiaf_harsh_winter
+					duration = 3650
+				}
+			}
+		}
+	}
+
+	8299.2.11 = {  
+		effect = {	
+			if = {
+				limit = {
+					NOT = {
+						has_game_rule = {
+							name = white_walkers
+							value = off
+						}
+					}
+				}
+				character_event = { id = cold_winds.199 days = 1 }
+				if = {
+					limit = { NOT = { has_game_rule = { name = white_walkers value = hard } } }
+					spawn_unit = {
+						province = 1030 #Free Vale
+						scaled_by_biggest_garrison = 6
+						owner = ROOT
+						troops = {
+							heavy_infantry = { 40 40 }
+							light_infantry = { 60 60 }							
+						}
+						match_min = 3000
+						match_max = 25000
+						attrition = 0
+					} 
+				}
+				if = {
+					limit = { has_game_rule = { name = white_walkers value = hard } }
+					spawn_unit = {
+						province = 1030 #Free Vale
+						scaled_by_biggest_garrison = 6
+						owner = ROOT
+						troops = {
+							heavy_infantry = { 80 80 }
+							light_infantry = { 120 120 }							
+						}
+						match_min = 6000
+						match_max = 50000
+						attrition = 0
+					} 
+				}
+			}	
+		}
+	}
+
+	8300.1.1 = {  
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_game_rule = {
+							name = white_walkers
+							value = off
+						}
+					}
+				}
+				set_global_flag = cold_winds		
+				if = {
+					limit = { NOT = { has_game_rule = { name = white_walkers value = hard } } }
+					spawn_unit = {
+						province = 6 #Shivering Forest
+						scaled_by_biggest_garrison = 40
+						owner = ROOT
+						troops = {
+							heavy_infantry = { 40 40 }
+							light_infantry = { 60 60 }							
+						}
+						match_min = 3000
+						match_max = 25000
+						attrition = 0
+					} 
+				}	
+				if = {
+					limit = { NOT = { has_game_rule = { name = white_walkers value = hard } } }
+					spawn_unit = {
+						province = 6 #Shivering Forest
+						scaled_by_biggest_garrison = 40
+						owner = ROOT
+						troops = {
+							heavy_infantry = { 80 80 }
+							light_infantry = { 120 120 }							
+						}
+						match_min = 6000
+						match_max = 50000
+						attrition = 0
+					} 
+				}
+			}	
+			if = { #remove white walkers
+				limit = {
+					has_game_rule = {
+						name = white_walkers
+						value = off
+					}
+				}
+				any_realm_province = { 
+					limit = {
+						owner = {
+							culture_group = winter_group
+						}
+					}
+					province_event = { id = cold_winds.7 } 
+				}
+				any_realm_lord = {
+					limit = { NOT = { culture_group = winter_group } }
+					set_defacto_liege = THIS
+				}
+			}	
+			any_province = {
+				limit = { region = world_beyond_the_wall }
+				add_province_modifier = {
+					name = asoiaf_harsh_winter
+					duration = 3650
+				}
+			}
+		}
+	}
+}
+
+999001666 = {
+	name="Белый Ходок"
+	dynasty=66000666
+	religion="cold_gods"
+	culture="white_walker"
+	
+	martial = 4
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 4
+	learning = 4
+
+	trait = white_walker
+	trait = hunter
+	trait = back_seat_leader
+	trait = skilled_tactician
+	trait = skilled_warrior
+	trait = light_foot_leader
+	
+	disallow_random_traits = yes
+	
+	10.1.1 = { 
+		birth="10.1.1" 
+		employer=999000666 
+		effect = {
+			set_character_flag = white_walker
+			add_artifact = crystal_sword
+		}
+	}
+}
+
+999002666 = {
+	name="Белый Ходок"
+	dynasty=66000666
+	religion="cold_gods"
+	culture="white_walker"
+	
+	martial = 4
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 4
+	learning = 4
+
+	trait = white_walker
+	trait = hunter
+	trait = back_seat_leader
+	trait = skilled_tactician
+	trait = skilled_warrior
+	trait = light_foot_leader
+	
+	disallow_random_traits = yes
+	
+	82.1.1 = { 
+		birth="82.1.1" 
+		employer=999000666 
+		effect = {
+			set_character_flag = white_walker
+			add_artifact = crystal_sword
+		}
+	}
+}
+
+999003666 = {
+	name="Белый Ходок"
+	dynasty=66000666
+	religion="cold_gods"
+	culture="white_walker"
+	
+	martial = 4
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 4
+	learning = 4
+
+	trait = white_walker
+	trait = hunter
+	trait = back_seat_leader
+	trait = skilled_tactician
+	trait = skilled_warrior
+	trait = light_foot_leader
+	
+	disallow_random_traits = yes
+	
+	10.1.1 = { 
+		birth="10.1.1" 
+		employer=999000666 
+		effect = {
+			set_character_flag = white_walker
+			add_artifact = crystal_sword
+		}
+	}
+}
+
+999004666 = {
+	name="Белый Ходок"
+	dynasty=66000666
+	religion="cold_gods"
+	culture="white_walker"
+	
+	martial = 4
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 4
+	learning = 4
+
+	trait = white_walker
+	trait = hunter
+	trait = back_seat_leader
+	trait = skilled_tactician
+	trait = skilled_warrior
+	trait = light_foot_leader
+	
+	disallow_random_traits = yes
+	
+	48.1.1 = { 
+		birth="48.1.1" 
+		employer=999000666 
+		effect = {
+			set_character_flag = white_walker
+			add_artifact = crystal_sword
+		}
+	}
+}
+
+999005666 = {
+	name="Белый Ходок"
+	dynasty=66000666
+	religion="cold_gods"
+	culture="white_walker"
+	
+	martial = 4
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 4
+	learning = 4
+
+	trait = white_walker
+	trait = hunter
+	trait = back_seat_leader
+	trait = skilled_tactician
+	trait = skilled_warrior
+	trait = light_foot_leader
+	
+	disallow_random_traits = yes
+	
+	114.1.1 = { 
+		birth="114.1.1" 
+		employer=999000666 
+		effect = {
+			set_character_flag = white_walker
+			add_artifact = crystal_sword
+		}
+
+	}
+}
+
+#Белый Ходок of the East
+999006666 = {
+	name="Белый Ходок"
+	dynasty=66000666
+	religion="cold_gods"
+	culture="white_walker"
+	
+	martial = 4
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 4
+	learning = 4
+
+	trait = white_walker
+	trait = hunter
+	trait = back_seat_leader
+	trait = skilled_tactician
+	trait = master_warrior
+	trait = light_foot_leader
+	
+	disallow_random_traits = yes
+	
+	7900.1.1 = { 
+		birth="7900.1.1" 
+		effect = {
+			set_character_flag = white_walker
+			add_artifact = crystal_sword
+		}
+	}
+
+	8298.1.1 = {  
+		effect = {	
+			820 = {
+				add_province_modifier = {
+					name = asoiaf_harsh_winter
+					duration = 3650
+				}
+			}
+		}
+	}
+}

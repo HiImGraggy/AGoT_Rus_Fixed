@@ -1,0 +1,30 @@
+name = "Осада Риверрана"
+
+casus_belli={
+	casus_belli=AFFC_siege
+	actor=7316
+	recipient=4159
+	#landed_title=e_iron_throne
+	date=8300.1.1 #Purple Wedding date. Formerly 8299.3.3
+}
+
+8300.1.1 = {
+	add_defender = 4159 # Edmure Tully
+	add_attacker = 7316 #Tommen 
+	add_attacker = 127 #Walder Frey
+	add_attacker = 157 #Piper
+	add_attacker = 1154 #Vance of Wayfarer's Rest
+	add_attacker = 149 #Bracken
+	add_attacker = 153 #Vance of Atranta
+	add_attacker = 145 #Roote
+}
+8300.4.15 = {
+	rem_defender = 4159		# Edmure Tully
+	rem_attacker = 145 #Roote
+	rem_attacker = 153 #Vance of Atranta
+	rem_attacker = 149 #Bracken
+	rem_attacker = 157 #Piper
+	rem_attacker = 1154 #vance
+	rem_attacker = 127 #Walder Frey
+	rem_attacker = 7316 #Tommen 
+}

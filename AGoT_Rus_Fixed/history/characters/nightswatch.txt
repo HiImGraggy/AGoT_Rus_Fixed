@@ -1,0 +1,1812 @@
+##Nightswatch characters
+##ids 121000-121499
+
+121000 = {
+	name="Джантос" #996th Lord Commander	
+	dynasty=15 #Qorgyle
+	dna="afbeaycaaar"
+	properties="cj0eck0000"
+	
+	martial = 12
+	stewardship = 12
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	father=62815
+	mother=52815	
+	
+	8232.1.1 = {birth="8232.1.1"}
+	8248.1.1 = {add_trait=knight add_trait=skilled_warrior add_trait=tough_soldier}
+	8251.1.1 = {add_trait=diligent}
+	8262.1.1 = { add_trait=nightswatch}
+	8288.1.1 = {death="8288.1.1"}
+}
+121001 = {
+	name="Блейн" #	
+	martial = 8
+	religion="the_seven"
+	culture="valeman"
+	8255.1.1 = {
+		birth="8255.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8275.1.1 = {	
+		add_trait="nightswatch"
+		effect = { 
+			add_character_modifier = {
+				name = nw_ranger
+				duration = -1
+			}
+			c_shadow_tower = { holder_scope = { ROOT = { move_character = PREV } } }
+		}
+	}
+}
+121002 = {
+	name="Коттер" #	
+	martial = 6
+	stewardship = 10 
+	religion="drowned_god"	
+	culture="ironborn"
+	add_trait="tough_soldier"
+	add_trait="strong"
+	add_trait="bastard"
+	give_nickname = nick_pyke
+	8256.1.1 = {
+		birth="8256.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8275.1.1 = {	
+		add_trait="nightswatch"
+	}
+}
+88000513 = { 
+	name="Хармун"
+	
+	learning = 5
+	
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	add_trait="martial_cleric"
+	add_trait=drunkard
+
+	8260.1.1 = {
+		birth="8260.1.1"
+		effect = {
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	} 
+	8280.1.1 = {
+		add_trait = "maester"
+		add_trait="nightswatch"
+		employer=121002
+		effect = { 
+			set_character_flag = serving_with_lord
+		}
+	}
+}
+88000520 = { 
+	name="Маллин"
+	
+	learning = 5
+	
+	religion=the_seven
+	culture="reachman"
+	
+	add_trait="martial_cleric"
+
+	8255.1.1 = {
+		birth="8255.1.1"
+		effect = {
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	} 
+	8275.1.1={
+		add_trait = "maester"
+		add_trait="nightswatch"
+		add_trait=trained_warrior #more of a fighter than a true maester
+		employer=2128
+		effect = { 
+			set_character_flag = serving_with_lord
+		}
+	}
+}
+121003 = {
+	name="Донал"
+	dynasty=174844	
+	martial = 4
+	religion="the_seven"	
+	culture="stormlander"
+	add_trait="tough_soldier"
+	add_trait="strong"
+	add_trait="honest"
+	add_trait="trusting"
+	
+	8258.1.1 = {
+		birth="8258.1.1"
+		effect = {
+			set_immune_to_pruning = yes
+		}
+	}
+	8282.1.1 = {
+		employer=317
+		add_trait=skilled_warrior
+	}
+	8290.1.1 = {	
+		add_trait="nightswatch"
+		effect = { 
+			if = {
+				limit = { has_dlc = "Reapers" }
+				add_trait = one_handed
+			}
+			else = {
+				add_trait = "disfigured_AGOT"
+			}
+			add_character_modifier = {
+				name = nw_steward
+				duration = -1
+			}
+		}
+	}
+	8299.11.11 = {
+		death = {
+			death_reason = death_duel
+			killer = 157013
+		}
+	}
+
+}
+121005 = {
+	name="Куорен" #	Halfhand
+	martial = 8
+	religion="the_seven"	
+	culture="westerman"
+	
+	add_trait="skilled_tactician"	
+	add_trait="just"
+	add_trait="brave"
+	add_trait="patient"
+	8252.1.1 = {
+		birth="8252.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8268.1.1 = {
+		add_trait="master_warrior"
+	}
+	8272.1.1 = {	
+		add_trait="nightswatch"
+		effect = {
+			add_character_modifier = {
+				name = nw_ranger
+				duration = -1
+			}
+		}
+	}
+	8278.1.1 = {
+		effect = {
+			if = {
+				limit = { has_dlc = "Reapers" }
+				add_trait = one_handed
+			}
+			else = {
+				add_trait = "disfigured_AGOT"
+			}
+		}
+		give_nickname = nick_half_hand
+	}
+	8279.1.1 = {
+		effect = {
+			if = {
+				limit = { has_dlc = "Reapers" }
+				add_character_modifier = {		#Learned how to fight his left hand. Only in Reapers Due DLC to avoid overpowering
+					name = martially_ambidextrous
+					duration = -1
+				}
+			}
+		}
+	}
+	8299.7.1 = {
+		death = {
+			death_reason = death_duel
+			killer = 1002059
+		}
+	}
+	
+}
+
+121006 = {
+	name="Паул" 
+	
+	martial = 3
+	learning = 1
+	diplomacy = 4
+	intrigue = 2
+	stewardship = 3
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	add_trait="strong"
+	add_trait="tall"
+	add_trait="misguided_warrior"
+	add_trait="slow"
+	
+	disallow_random_traits = yes
+	
+	8277.1.1 = {
+		birth="8277.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8283.8.1 = {
+		add_trait="kind"
+	}
+	8285.8.1 = {
+		add_trait="brave"
+	}
+	8287.8.1 = {
+		add_trait="honorable"
+	}
+	8293.1.1 = {
+		add_trait="poor_warrior"
+	}
+	8295.1.1 = {	
+		add_trait="nightswatch"
+		give_nickname = nick_the_small
+		effect = { 
+			add_character_modifier = {
+				name = nw_steward
+				duration = -1
+			}
+		}
+	}
+	8299.7.14 = {
+		death={ death_reason = death_battle }
+	}
+}
+121007 = {
+	name="Йорен" 
+	
+	religion="old_gods"	
+	culture="northman"
+	
+	diplomacy = 10
+		
+	add_trait="brave"
+	add_trait="ugly"
+	add_trait="wroth"
+	add_trait="honorable"
+	add_trait="rude"
+	add_trait="diligent"
+	
+	8248.1.1 = {
+		birth="8248.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8264.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="skilled_warrior"
+	}
+	8268.1.1 = { #ranger for thirty years
+		add_trait="nightswatch"
+		add_trait=hunchback #closer to shoulder injury than one_handed
+		remove_trait="skilled_warrior"
+		add_trait="trained_warrior"
+		effect = {
+			add_character_modifier = {
+				name = nw_ranger
+				duration = -1
+			}
+			d_nightswatch = {
+				holder_scope = {
+					ROOT = { move_character = PREV }
+				}
+			}
+			remove_all_job_titles = yes
+			give_job_title = job_chancellor
+		}
+	}
+	8299.2.3= { # killed in attack at the Gods Eye town
+		death = {
+			death_reason = death_battle
+			killer = 207
+		}
+	}
+}
+121008 = {
+	name="Четт"
+	
+	martial = 3
+	stewardship = 2
+	intrigue = 4
+	diplomacy = 2
+	learning = 1
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	add_trait="indulgent_wastrel"
+	add_trait="ugly"
+	
+	disallow_random_traits = yes
+	
+	8270.1.1 = {
+		birth="8270.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8276.8.1 = {
+		add_trait="craven"
+		add_trait="wroth"
+	}
+	8278.8.1 = {
+		add_trait="deceitful"
+	}
+	8280.8.1 = {
+		add_trait="ruthless"
+	}
+	8289.1.1 = {	
+		add_trait="nightswatch"
+		effect = { 
+			add_character_modifier = {
+				name = nw_steward
+				duration = -1
+			}
+		}
+	}
+	8299.7.1 = {
+		death={ death_reason = death_battle }
+	}
+}
+121009 = {
+	name="Олло" 
+	dna="bhagnhpnblj"
+	properties="cd0ddk"
+	
+	martial = 2
+	stewardship = 1
+	intrigue = 2
+	diplomacy = 4
+	learning = 2
+	
+	religion="trios"	
+	culture="tyroshi"	
+	
+	add_trait="tough_soldier"
+	
+	disallow_random_traits = yes
+	
+	8261.1.1 = {
+		birth="8261.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8267.8.1 = {
+		add_trait="deceitful"
+	}
+	8269.8.1 = {
+		add_trait="proud"
+	}
+	8271.8.1 = {
+		add_trait="gregarious"
+	}
+	8274.1.1 = {
+		add_trait="lustful"
+	}
+	8277.1.1 = {
+		add_trait = trained_warrior
+	}
+	8282.1.1={
+		add_trait="nightswatch"
+		give_nickname = nick_lophand	
+		effect = {
+			if = {
+				limit = { has_dlc = "Reapers" }
+				add_trait = one_handed
+			}
+			else = {
+				add_trait = scarred # Not life-threatening
+			}
+			add_character_modifier = {
+				name = nw_ranger
+				duration = -1
+			}
+		}
+	}
+	8299.5.5 = {	
+		employer=121411
+		add_trait = "deserter"
+	}
+	8300.6.1 = {
+		death = { death_reason = death_battle }
+	}
+}
+121010 = {
+	name="Селладор" 
+	
+	religion="the_seven"
+	culture="valeman"
+	
+	add_trait="martial_cleric"
+	
+	disallow_random_traits = yes
+	
+	8250.1.1 = {
+		birth="8250.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8256.8.1 = {
+		add_trait="proud"
+	}
+	8258.8.1 = {
+		add_trait="rude"
+	}
+	8260.8.1 = {
+		add_trait="zealous"
+	}
+	8282.1.1={
+		add_trait="nightswatch"
+		add_trait="septon"
+		add_trait="drunkard"
+	}
+}
+121410 = {
+	name="Клидас"	
+	
+	stewardship = 7
+	learning = 8
+	martial = 1
+	intrigue = 2
+	diplomacy = 4
+	
+	religion="the_seven"
+	culture="stormlander"
+	
+	add_trait="thrifty_clerk"
+	
+	disallow_random_traits = yes
+	
+	8240.1.1 = {
+		birth="8240.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8246.8.1 = {
+		add_trait="shy"
+	}
+	8248.8.1 = {
+		add_trait="diligent"
+		add_trait="erudite"
+	}
+	8250.8.1 = {
+		add_trait="content"
+		add_trait="scholar"
+	}
+	8270.1.1 = { 
+		add_trait="nightswatch" 
+		effect = { 
+			add_character_modifier = {
+				name = nw_steward
+				duration = -1
+			}
+		}
+	}
+}
+121420 = {
+	name="Пип"	
+	
+	martial = 2
+	intrigue = 2
+	diplomacy = 2
+	stewardship = 1
+	learning = 1
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	disallow_random_traits = yes
+	
+	8283.1.1 = {
+		birth="8283.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8289.8.1 = {
+		add_trait=kind
+	}
+	8291.8.1 = {
+		add_trait=gregarious
+		add_trait=honest
+		add_trait=poet
+	}
+	8293.8.1 = {
+		add_trait=cynical
+	}
+	8298.1.1 = {
+		add_trait="nightswatch"
+		effect = {
+			add_friend = 1002059 #Jon
+			add_friend = 121421 #Гренн
+			add_friend = 1296 #Sam
+			add_friend = 121419 #Toad
+			add_character_modifier = {
+				name = nw_ranger
+				duration = -1
+			}
+		}
+	}
+	8299.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="misguided_warrior"
+	}
+}
+121421 = {
+	name="Гренн"	
+	
+	martial = 4
+	intrigue = 1
+	diplomacy = 3
+	stewardship = 1
+	learning = 1
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	add_trait=strong
+	
+	disallow_random_traits = yes
+	
+	8282.1.1 = {
+		birth="8282.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8288.8.1 = {
+		add_trait=proud
+	}
+	8290.8.1 = {
+		add_trait=honorable
+	}
+	8292.8.1 = {
+		add_trait=lustful
+	}
+	8298.1.1 = {
+		add_trait="nightswatch"
+		effect = {
+			add_friend = 1002059 #Jon
+			add_friend = 121420 #Пип
+			add_friend = 1296 #Sam
+			add_friend = 121419 #Toad
+			add_character_modifier = {
+				name = nw_ranger
+				duration = -1
+			}
+		}
+	}
+	8298.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="misguided_warrior"
+	}
+}
+121423 = {
+	name="Финн"
+	religion="old_gods"
+	culture="northman"
+	
+	dna="cgflhibdabu"
+	properties="0j0chk00000000"
+	
+	martial = 4
+	diplomacy = 1
+	learning = 1
+	
+	add_trait=strong
+	
+	disallow_random_traits = yes
+	
+	8283.1.1 = {
+		birth="8283.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8289.8.1 = {
+		add_trait=wroth
+	}
+	8291.8.1 = {
+		add_trait=proud
+	}
+	8293.8.1 = {
+		add_trait=rude
+	}
+	8300.1.1 = {
+		add_trait="nightswatch"
+		add_trait="trained_warrior"
+		add_trait="misguided_warrior"
+		effect = {
+			add_friend = 511443 #Гаред
+		}
+	}
+}
+121424 = {
+	name="Коттер"	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	dna="amgchmlbabf"
+	properties="gb0ihi00000000"
+	
+	martial = 1
+	intrigue = 5
+	diplomacy = 1
+	
+	mother = 121430
+	
+	add_trait=quick
+	add_trait=wildling
+	
+	disallow_random_traits = yes
+	
+	8281.1.1 = {
+		birth="8281.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8287.8.1 = {
+		add_trait=deceitful
+	}
+	8289.8.1 = {
+		add_trait=greedy
+		add_trait=ambitious
+	}
+	8291.8.1 = {
+		add_trait=patient
+	}
+	8300.1.1 = { 
+		add_trait="nightswatch"
+		add_trait="intricate_webweaver"
+		effect = {
+			add_friend = 511443 #Гаред
+		}
+	}
+}
+121429 = {
+	name="Сильви"	
+	female=yes
+	religion="beyond_wall_old_gods"
+	culture="western_valyrian"
+	
+	dna="agkbfzeaifh"
+	properties="gl0eck00000000"
+	
+	martial = 3
+	intrigue = 2
+	
+	mother = 121430
+	
+	add_trait=quick
+	
+	disallow_random_traits = yes
+	
+	8284.1.1 = {
+		birth="8284.1.1"
+		effect = { 
+			culture = wildling #for white hair
+			dynasty = none
+		} 
+	}
+	8290.8.1 = {
+		add_trait=familyperson
+	}
+	8292.8.1 = {
+		add_trait=patient
+	}
+	8294.8.1 = {
+		add_trait=rude
+		add_trait=ambitious
+	}
+	8300.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="trained_warrior"
+	}
+}
+121430 = {
+	name="Мунда"	
+	female = yes
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	martial = 3
+	intrigue = 2
+	
+	add_trait=quick
+	
+	disallow_random_traits = yes
+	
+	8260.1.1 = {
+		birth="8260.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8266.8.1 = {
+		add_trait=rude
+	}
+	8268.8.1 = {
+		add_trait=patient
+		add_trait=ambitious
+	}
+	8270.8.1 = {
+		add_trait=familyperson
+	}
+	8276.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="trained_warrior"
+	}
+}
+121431 = {
+	name="Деннер"	
+	
+	religion="old_gods"
+	culture="northman"
+	
+	martial = 4
+	
+	add_trait=quick
+	add_trait=rude
+	add_trait=wroth
+	add_trait=stubborn
+	add_trait=cynical
+	
+	8246.1.1 = {
+		birth="8246.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8262.1.1 = {add_trait=trained_warrior}
+	8275.1.1 = {	
+		add_trait="nightswatch"
+	}
+	8280.1.1 = {
+		effect = {
+			if = {
+				limit = { has_dlc = "Reapers" }
+				add_trait = one_handed
+			}
+			if = {
+				limit = { NOT = { has_dlc = "Reapers" } }
+				add_trait = disfigured_AGOT
+			}
+		}	
+		give_nickname = nick_frostfinger
+	}
+}
+
+
+########
+#####Historic Lord Commanders#####
+########
+121400 = {
+	name="Тристан"	# Canon, one of the worst Lord Commander's in history
+	dynasty=174399 # Mudd
+	
+	martial = 12
+	stewardship = 12
+	
+	religion="old_gods"
+	culture="old_first_man"
+	
+	father=617174399
+	
+	
+	6173.1.1 = {birth="6173.1.1"}
+	6195.1.1 = { add_trait=nightswatch}
+	6218.1.1 = {death=yes}
+}
+
+121406 = {
+	name="Марк" #Canon, one of the worst Lord Commanders.	
+	dynasty=174415 #Rankenfell
+	
+	martial = 12
+	stewardship = 12
+	
+	religion="old_gods"
+	culture="old_first_man"
+		
+	6324.1.1 = {birth="6324.1.1"}
+	6340.1.1 = {add_trait=skilled_warrior add_trait=tough_soldier}
+	6361.1.1 = { add_trait=nightswatch}
+	6377.1.1 = { give_nickname = nick_the_mad}
+	6378.1.1 = {death="6378.1.1"}
+}
+121404 = {
+	name="Робин"	
+	
+	martial = 12
+	stewardship = 12
+	
+	religion="old_gods"
+	culture="old_first_man"
+
+	#father=60200197
+
+	add_trait="bastard"
+	give_nickname = nick_hill
+		
+	6384.1.1 = {birth="6384.1.1"}
+	6400.1.1 = {add_trait=skilled_warrior add_trait=tough_soldier}
+	6405.6.1={ add_trait=nightswatch}
+	6428.1.1 = {death="6428.1.1"}
+}
+
+
+
+121401 = {
+	name="Рансель" # Canon, tried to pass Castle Black and the Watch to his bastard son.	
+	dynasty=285 #Hightower
+	
+	martial = 12
+	stewardship = 12
+	
+	religion="the_seven"
+	culture="reachman"
+	
+	father = 62300285
+		
+	7749.1.1 = {birth="7749.1.1"}
+	7765.1.1 = {add_trait=knight}
+	7780.1.1 = { add_trait=nightswatch}
+	7808.1.1 = {death = {death_reason = death_execution}}
+}
+121402 = {
+	name="Мартин" #Canon, Рансель's bastard son.	
+	dynasty=285 #Hightower
+	
+	martial = 12
+	stewardship = 12
+	
+	religion="the_seven"
+	culture="reachman"
+
+	father=121401
+
+	add_trait="bastard"
+	give_nickname = nick_flowers
+	
+	7779.1.1 = {birth="7779.1.1"}
+	7780.1.1 = { add_trait=nightswatch}
+	7808.1.1 = {death = {death_reason = death_execution}}
+}
+1011868 = {
+	name="Уолтон"	# a lord
+	dynasty=80 #Manderly
+
+	religion="the_seven"
+	culture="half_southron"
+
+	father=660080
+
+	7860.6.1 = {birth="7860.6.1"}
+	7877.1.1 = {add_trait=knight add_trait=fortune_builder add_trait=just add_trait=content}
+	7880.1.1 = {add_trait=nightswatch}
+	7924.1.1 = {death="7924.1.1"}
+}
+1012868 = {
+	name="Дюрран"
+	dynasty=1544 #Durrandon
+
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=3011544
+	mother=334318
+
+	7867.1.1 = {birth="7867.1.1"}
+	7883.1.1 = {add_trait=knight add_trait=trained_warrior add_trait=skilled_tactician add_trait=proud add_trait=honorable}
+	7886.1.1 = {add_trait=nightswatch}
+	7936.1.1 = {death="7936.1.1"}
+}
+1014868 = {
+	name="Теон"
+	dynasty=107 #Greyjoy
+	
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=342107
+
+	7875.1.1 = {birth="7875.1.1"  }
+	7891.1.1 = {add_trait=trained_warrior add_trait=skilled_tactician add_trait="content" add_trait="humble"}
+	7894.1.1 = {add_trait=nightswatch}
+	7943.1.1 = {death="7943.1.1"}
+}
+1015868 = {
+	name="Джейме"
+	dynasty=190 #Lannister
+
+	religion="the_seven"
+	culture="westerman"
+
+	father=8013190
+	mother=158217
+
+	7900.1.1 = {birth="7900.1.1"}
+	7916.1.1 = {add_trait=knight add_trait=trained_warrior add_trait=skilled_tactician add_trait=content add_trait=humble}
+	7919.1.1 = {add_trait=nightswatch}
+	7960.1.1 = {death="7960.1.1"}
+}
+1000868 = {
+	name="Морс"
+	dynasty=1 #Martell
+	
+	religion="the_seven"
+	culture="salt_dornish"
+
+	father=6082001
+	
+	7907.1.1 = {birth="7907.1.1"}
+	7923.1.1 = {add_trait=knight add_trait=poor_warrior add_trait=fortune_builder add_trait=diligent add_trait=humble}
+	7926.1.1 = {add_trait=nightswatch}
+	7980.1.1 = {death="7980.1.1"}
+}
+1001868 = {
+	name="Рамси"	# a lord
+	dynasty=87 # Bolton
+	
+	religion="old_gods"
+	culture="northman"
+	
+	father=60587
+
+	7972.1.1 = {birth="7972.1.1"}
+	7992.1.1 = {add_trait=nightswatch add_trait=poor_warrior}
+	8028.1.1 = {death="8028.1.1"}
+}
+1003868 = {
+	name="Тео"	# a lord
+	dynasty=99 # Wull
+
+	religion="old_gods"
+	culture="hill_clansman"
+	
+	father=42099
+
+	7998.1.1 = {birth="7998.1.1"}
+	8021.1.1 = {add_trait=nightswatch add_trait=poor_warrior}
+	8049.1.1 = {death="8049.1.1"}
+}
+1004868 = {
+	name="Лотор"	#Canon, welcomed Queen Alysanne during her visit on the Wall
+	dynasty=92 # Burley
+	
+	religion="old_gods"
+	culture="hill_clansman"
+	
+	father=13092
+
+	add_trait=humble
+	add_trait=honest
+
+	8014.1.1 = {birth="8014.1.1"}
+	8030.1.1 = {add_trait=tough_soldier add_trait=nightswatch add_trait=trained_warrior}
+	8062.1.1 = {death="8062.1.1"}
+}
+1005868 = {
+	name="Реймунд"	# a lord
+	dynasty=253 # Tyrell
+
+	religion="the_seven"
+	culture="reachman"
+
+	father=15253
+	mother=45253
+
+	8027.1.1 = {birth="8027.1.1"}
+	8043.1.1 = {add_trait=nightswatch add_trait=poor_warrior}
+	8081.1.1 = {death="8081.1.1"}
+}
+1006868 = {
+	name="Клей"	# a lord
+	dynasty=61 # Cerwyn
+	
+	religion="old_gods"
+	culture="northman"
+
+	father=12061
+
+	8059.1.1 = {birth="8059.1.1"}
+	8075.1.1 = {add_trait=nightswatch add_trait=poor_warrior}
+	8108.1.1 = {death="8108.1.1"}
+}
+1007868 = {
+	name="Брандон"	# a lord
+	dynasty=101 # Tallhart
+	
+	religion="old_gods"
+	culture="northman"
+	
+	father=15101
+
+	8072.1.1 = {birth="8072.1.1"}
+	8090.1.1 = {add_trait=nightswatch add_trait=poor_warrior}
+	8137.1.1 = {death="8137.1.1"}
+}
+1008868 = {
+	name="Саймонд"	# a lord
+	dynasty=172 # Templeton
+
+	religion="the_seven"
+	culture="valeman"
+
+	father=3009172
+
+	8103.1.1 = {birth="8103.1.1"}
+	8119.1.1 = {add_trait=nightswatch add_trait=poor_warrior}
+	8161.1.1 = {death="8161.1.1"}
+}
+1009868 = {
+	name="Сельмонд"	# a lord
+	dynasty=202 # Stackspear
+	
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=10202
+
+	8127.1.1 = {birth="8127.1.1"}
+	8149.1.1 = {add_trait=nightswatch add_trait=poor_warrior}
+	8192.1.1 = {death="8192.1.1"}
+}
+1010868 = {
+	name="Ормонд"	# a lord
+	dynasty=256 # Orme
+
+	religion="the_seven"
+	culture="reachman"
+
+	father=6025256
+
+	8168.1.1 = {birth="8168.1.1"}
+	8190.1.1 = {add_trait=nightswatch add_trait=poor_warrior}
+	8217.1.1 = {death="8217.1.1"}
+}
+1013868 = {
+	name="Кайл"	# a lord
+	dynasty=319 #Buckler
+	
+	religion="the_seven"	
+	culture="stormlander"
+	
+	father=3009319
+
+	8205.1.1 = {birth="8205.1.1"}
+	8221.1.1 = {add_trait=nightswatch add_trait=poor_warrior}
+	8276.1.1 = {death="8276.1.1"}
+}
+#####  Mutineers
+
+121411 = {
+	name="Нож"	
+	
+	martial = 3
+	stewardship = 2
+	intrigue = 2
+	diplomacy = 1
+	learning = 1
+	
+	religion="the_seven"
+	culture="stormlander"
+	
+	add_trait="misguided_warrior"
+	
+	disallow_random_traits = yes
+	
+	8267.1.1 = {
+		birth="8267.1.1"
+		effect = {	
+			if = {
+				limit = { is_ruler = no }
+				dynasty = none
+			}	
+			set_immune_to_pruning = yes
+		}
+	}
+	8273.8.1 = {
+		add_trait="wroth"
+	}
+	8275.8.1 = {
+		add_trait="rude"
+	}
+	8277.8.1 = {
+		add_trait="cruel"
+		add_trait="arbitrary"
+	}
+	8283.1.1 = {
+		add_trait = poor_warrior
+	}
+	8295.1.1 = { 
+		add_trait="nightswatch"
+		effect = { 
+			add_character_modifier = {
+				name = nw_ranger
+				duration = -1
+			}
+		}
+	}
+	8299.5.5 = { 
+		add_trait="deserter"
+		remove_trait="nightswatch"
+		dynasty = 559241 #of the Keep, to make him playable
+	}
+}
+121412 = {
+	name="Гарт"	
+	
+	martial = 2
+	stewardship = 3
+	intrigue = 2
+	diplomacy = 1
+	learning = 1
+	
+	religion="the_seven"
+	culture="reachman"
+	
+	add_trait="misguided_warrior"
+	
+	disallow_random_traits = yes
+	
+	8273.1.1 = {
+		birth="8273.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8279.8.1 = {
+		add_trait="deceitful"
+	}
+	8281.8.1 = {
+		add_trait="envious"
+	}
+	8283.8.1 = {
+		add_trait="arbitrary"
+		add_trait="proud"
+	}
+	8289.1.1 = {
+		add_trait = poor_warrior
+	}
+	8291.1.1 = { 
+		add_trait="nightswatch"
+		effect = {
+			add_character_modifier = {
+				name = nw_ranger
+				duration = -1
+			}
+		}	
+	}
+	8299.5.5 = {	
+		employer=121411
+		add_trait="deserter"
+		remove_trait="nightswatch"
+	}
+}
+121413 = {
+	name="Алан"	
+	
+	martial = 2
+	stewardship = 1
+	intrigue = 1
+	diplomacy = 3
+	learning = 2
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	add_trait="misguided_warrior"
+	
+	disallow_random_traits = yes
+		
+	8274.1.1 = {
+		birth="8274.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8280.8.1 = {
+		add_trait="kind"
+	}
+	8282.8.1 = {
+		add_trait="proud"
+	}
+	8284.8.1 = {
+		add_trait="arbitrary"
+		add_trait="greedy"
+	}
+	8290.1.1 = {
+		add_trait = trained_warrior
+	}
+	8295.1.1 = {
+		add_trait="nightswatch"
+		effect = { 
+			add_character_modifier = {
+				name = nw_ranger
+				duration = -1
+			}
+		}
+	}
+	8299.5.5 = {	
+		employer=121411
+		add_trait="deserter"
+		remove_trait="nightswatch"
+	}
+}
+121414 = {
+	name="Ролли"	
+	
+	martial = 1
+	stewardship = 3
+	intrigue = 2
+	diplomacy = 1
+	learning = 2
+	
+	religion="the_seven"
+	culture="sisterman"
+	
+	add_trait="indulgent_wastrel"
+	
+	disallow_random_traits = yes
+	
+	8270.1.1 = {
+		birth="8270.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8276.8.1 = {
+		add_trait="craven"
+	}
+	8278.8.1 = {
+		add_trait="deceitful"
+	}
+	8280.8.1 = {
+		add_trait="greedy"
+	}
+	8282.1.1 = {
+		add_trait="lustful"
+	}
+	8291.1.1 = { 
+		add_trait="nightswatch"
+		effect = {
+			add_character_modifier = {
+				name = nw_steward
+				duration = -1
+			}
+		}	
+	}
+	8299.5.5 = {	
+		employer=121411
+		add_trait="deserter"
+		remove_trait="nightswatch"
+	}
+}
+121415 = {
+	name="Карл"	
+	
+	martial = 1
+	stewardship = 3
+	intrigue = 2
+	diplomacy = 1
+	learning = 2
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	add_trait="indulgent_wastrel"
+	add_trait="clubfooted"
+	
+	disallow_random_traits = yes
+	
+	8276.1.1 = {
+		birth="8276.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8282.8.1 = {
+		add_trait="rude"
+	}
+	8284.8.1 = {
+		add_trait="proud"
+		add_trait="envious"
+	}
+	8286.8.1 = {
+		add_trait="ruthless"
+	}
+	8292.1.1 = {
+		add_trait = poor_warrior
+	}
+	8294.1.1 = { 
+		add_trait="nightswatch"
+		effect = { 
+			add_character_modifier = {
+				name = nw_steward
+				duration = -1
+			}
+		}
+	}
+	8299.5.5 = {	
+		employer=121411
+		add_trait="deserter"
+		remove_trait="nightswatch"
+	}
+}
+121416 = {
+	name="Мауни"	
+	
+	martial = 1
+	stewardship = 2
+	intrigue = 3
+	diplomacy = 2
+	learning = 1
+	
+	religion="the_seven"
+	culture="valeman"
+	
+	add_trait="misguided_warrior"
+	
+	disallow_random_traits = yes
+	
+	8272.1.1 = {
+		birth="8272.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8278.8.1 = {
+		add_trait="greedy"
+	}
+	8280.8.1 = {
+		add_trait="craven"
+	}
+	8282.8.1 = {
+		add_trait="deceitful"
+		add_trait="cynical"
+	}
+	8288.1.1 = {
+		add_trait = trained_warrior
+	}
+	8295.1.1 = { 
+		add_trait="nightswatch"
+		effect = {
+			add_character_modifier = {
+				name = nw_ranger
+				duration = -1
+			}
+		}
+	}
+	8299.5.5 = {	
+		employer=121411
+		add_trait="deserter"
+		remove_trait="nightswatch"
+	}
+}
+
+#####
+
+121417 = {
+	name="Тим" # canon
+	
+	martial = 5
+	stewardship = 3
+	diplomacy = 2
+	intrigue = 3
+	learning = 1
+	
+	religion="the_seven"
+	culture="valeman"
+
+	add_trait=honorable
+	add_trait=diligent
+	add_trait=tough_soldier
+	add_trait=bastard
+	give_nickname=nick_stone
+		
+	8269.1.1 = {
+		birth="8269.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8285.1.1 = {
+		add_trait=nightswatch
+		add_trait=trained_warrior
+		effect = { 
+			add_character_modifier = {
+				name = nw_steward
+				duration = -1
+			}
+		}
+	}
+}
+
+121418 = {
+	name="Эммет"
+	
+	martial = 4
+	stewardship = 2
+	diplomacy = 2
+	intrigue = 3
+	learning = 2
+	
+	religion="old_gods"
+	culture="northman"
+	
+	add_trait=gregarious
+	add_trait=patient
+	add_trait=diligent
+	add_trait=tough_soldier
+	add_trait=just
+	add_trait=strong
+	
+	8275.1.1 = {
+		birth="8275.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8290.1.1 = {
+		employer=121002 #eastwatch
+		add_trait=nightswatch
+		add_trait=master_warrior
+		effect = { 
+			add_character_modifier = {
+				name = nw_ranger
+				duration = -1
+			}
+		}
+		give_nickname = nick_the_iron
+	}
+	8300.3.1 = {	
+		employer=1002059 
+	}
+}
+
+121419 = {
+	name="Жаба"
+	
+	martial = 2
+	stewardship = 1
+	diplomacy = 1
+	intrigue = 2
+	learning = 1
+	
+	religion="the_seven"
+	culture="reachman"
+	
+	add_trait=ugly
+	add_trait=rude
+	add_trait=gregarious
+	add_trait=honest
+	
+	8284.1.1 = {
+		birth="8284.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8298.1.1 = {
+		add_trait=nightswatch
+		add_trait=poor_warrior
+		effect = { 
+			add_character_modifier = {
+				name = nw_ranger
+				duration = -1
+			}
+		}
+		give_nickname = nick_toad
+	}
+}
+
+121474 = {
+	name="Джерен"
+	
+	martial = 1
+	stewardship = 2
+	diplomacy = 2
+	intrigue = 1
+	learning = 3
+	
+	religion="the_seven"
+	culture="valeman"
+	
+	add_trait=weak
+	add_trait=bastard
+	
+	8284.1.1 = {
+		birth="8284.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8298.1.1 = {
+		add_trait=nightswatch
+		effect = { 
+			add_character_modifier = {
+				name = nw_steward
+				duration = -1
+			}
+		}
+	}
+}
+
+121475 = {
+	name="Ульмер"
+	
+	martial = 3
+	stewardship = 1
+	diplomacy = 2
+	intrigue = 3
+	learning = 1
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	add_trait=greedy
+	add_trait=tough_soldier
+	add_trait=ruthless
+	add_trait=just
+	add_trait=gregarious
+	add_trait=brave
+	
+	8248.1.1 = {
+		birth="8248.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8264.1.1 = {
+		add_trait=skilled_warrior
+	}
+	8281.6.1 = {
+		add_trait=nightswatch		
+		effect = { 
+			add_character_modifier = {
+				name = nw_ranger
+				duration = -1
+			}
+		}
+	}
+}
+121476 = {
+	name="Бернарр" #Black Бернарр
+	
+	martial = 3
+	stewardship = 3
+	diplomacy = 2
+	intrigue = 1
+	learning = 1
+	
+	religion="old_gods"
+	culture="northman"
+	
+	add_trait=tough_soldier
+	add_trait=honorable
+	add_trait=cynical
+	
+	8270.1.1 = {
+		birth="8270.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8286.1.1 = {
+		add_trait=trained_warrior
+		add_trait=nightswatch	
+		give_nickname = nick_the_black_prefix 
+		effect = { 
+			add_character_modifier = {
+				name = nw_ranger
+				duration = -1
+			}
+		}
+	}
+}
+121477 = {
+	name="Бернарр" #Brown Бернарр
+	
+	martial = 2
+	stewardship = 3
+	diplomacy = 3
+	intrigue = 2
+	learning = 8
+	
+	religion="old_gods"
+	culture="northman"
+	
+	add_trait=thrifty_clerk
+	add_trait=honorable
+	add_trait=cynical
+	
+	8273.1.1 = {
+		birth="8273.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8289.1.1 = {
+		add_trait=nightswatch	
+		give_nickname = nick_the_brown
+		effect = { 
+			add_character_modifier = {
+				name = nw_steward
+				duration = -1
+			}
+		}
+	}
+	8299.7.7={
+		death = { death_reason = death_battle } ##fist of first men
+	}
+}
+121478 = {
+	name="Гаред" #AGOT Prologue
+	
+	martial = 8
+	
+	religion="old_gods"
+	culture="northman"
+	
+	
+	8243.1.1 = {
+		birth="8243.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8251.1.1 = {
+		add_trait=nightswatch	
+		effect = { 
+			add_character_modifier = {
+				name = nw_ranger
+				duration = -1
+			}
+		}
+	}
+	8259.1.1 = {
+		add_trait = trained_warrior
+		add_trait = tough_soldier
+	}
+	8288.1.1 = {	
+		employer = 336 #Old Bear
+	}
+	8297.6.3 = {	#Sees White Walkers, deserts Night's Watch
+		remove_trait = nightswatch
+		add_trait = deserter
+		employer = 59 #Cought near Winterfell
+	}
+	8298.3.1 = {
+		death = { 
+			death_reason = death_execution 
+			killer = 59 #Ned Stark
+		} 
+	}
+}
+121480 = {
+	name = "Уилл" #AGOT Prologue
+	
+	religion="the_seven"
+	culture="riverlander"
+
+	8268.1.1 = {
+		birth="8268.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8272.1.1 = {
+		employer = 128 #Jason Mallister
+	}
+	8284.1.1 = {
+		add_trait = trained_warrior
+		add_trait = misguided_warrior
+		add_trait = hunter
+	}
+	8293.1.1 = {
+		add_trait=nightswatch
+		employer = 336 #Old Bear	
+		effect = { 
+			add_character_modifier = {
+				name = nw_ranger
+				duration = -1
+			}
+		}
+	}
+	8297.6.3 = {	
+		# Others took him.
+		death = {
+			death_reason = death_missing
+		}
+	}
+}
+121481 = {
+	name="Конви" 
+	
+	religion="the_seven"	
+	culture="westerman"
+	
+	diplomacy = 10
+	
+	8262.1.1 = {
+		birth="8262.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8278.1.1 = {
+		add_trait="underhanded_rogue"
+	}
+	8290.1.1 = {
+		add_trait="nightswatch"
+		effect = {
+			d_nightswatch = {
+				holder_scope = {
+					ROOT = { move_character = PREV }
+				}
+			}
+		}
+	}
+	8299.2.3={
+		effect = {
+			remove_all_job_titles = yes
+			give_job_title = job_chancellor
+		}
+	}
+}

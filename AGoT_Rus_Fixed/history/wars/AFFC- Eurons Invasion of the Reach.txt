@@ -1,0 +1,15 @@
+name = "Вторжение железнорожденных в Простор"
+
+casus_belli={
+	casus_belli=invasion_ironborn
+	actor=2107
+	recipient=1253
+	landed_title=k_reach
+	date=8300.1.1
+}
+
+8300.1.1 = {
+	add_defender = 1253 # Mace Tyrell
+	add_attacker = 2107 # Euron Greyjoy
+}
+

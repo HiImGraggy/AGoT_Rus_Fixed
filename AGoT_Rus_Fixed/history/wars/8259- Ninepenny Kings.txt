@@ -1,0 +1,28 @@
+name = "Война Девятигрошовых королей"
+
+casus_belli={
+	casus_belli=claim_iron_throne_ACOK
+	actor=10757
+	recipient=77036
+	landed_title=e_iron_throne
+	date=8259.11.1
+}
+
+8259.11.1 = {
+	add_defender = 77036 #Jaehaerys II Taragryen
+	add_defender = 128300024 #Tyrosh
+	add_attacker = 10757 #Maelys Blackfyre
+	add_attacker = 600000059 #Alequo Adarys	
+	add_attacker = 72621 #Derrick Fossoway
+}
+
+8260.12.31={
+	rem_defender = 128300024 #Tyrosh
+	rem_defender = 77036 #Jaehaerys II Taragryen
+	rem_attacker = 10757 #Maelys Blackfyre
+	rem_attacker = 600000059 #Alequo Adarys
+	rem_attacker = 72621 #Derrick Fossoway
+}
+
+
+                                                                                                                                                                                                                                                                                                                                   

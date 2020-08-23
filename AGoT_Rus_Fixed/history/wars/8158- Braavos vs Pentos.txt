@@ -1,0 +1,24 @@
+name = "Освободительная война Браавоса"
+
+casus_belli={
+	casus_belli=war_of_emancipation
+	actor=400515
+	recipient=114174366
+	landed_title=k_pentos
+	date=8157.1.1
+}
+
+8157.1.1 = {
+	add_defender = 114174366
+	add_defender = 111300523 #Lys
+	add_attacker = 400515
+}
+
+8159.1.1 = {
+	rem_defender = 114174366
+	rem_defender = 111300523 #Lys
+	rem_attacker = 400515
+}
+
+
+                                                                                                                                                                                                                                                                                                                                   

@@ -1,0 +1,2223 @@
+###
+### Thenns
+###
+174344 = {
+	name="Стир"
+	dynasty=174344
+	properties="g00e0k"
+
+	martial = 8
+	
+	religion="thenn_rel"
+	culture="thenn"
+
+	father=112344
+	
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	
+	8252.1.1 = {birth="8252.1.1"}
+	8261.1.1 = {
+		effect = { add_artifact = weirwood_spear }
+	}
+	8266.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8299.11.11 = {death="8299.11.11"}
+}
+
+274344 = {
+	name="Сигорн"
+	dynasty=174344
+	properties="gs0e0k"
+	
+	religion="thenn_rel"
+	culture="thenn"
+
+	martial = 6
+	
+	add_trait="patient"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	
+	father=174344
+	
+	8272.1.1 = {birth="8272.1.1"}
+	8286.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8300.2.10 = {
+		employer=1002059 #jon
+		dynasty=1174344 # House Thenn
+		add_spouse=5089 #Alys Karstark
+		effect = { 
+			character_event = { id = feast_for_crows.31 days = 1 } #Thenn choice event
+		}
+	}
+}
+
+###
+### Tormund Giantsbane
+###
+174345 = {
+	name="Тормунд"
+	dynasty=174345
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+  	dna="ailgi0dag00"
+ 	properties="djajbk00000"
+
+	martial = 8
+	
+	add_trait="strong"
+	add_trait="drunkard"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	
+	8252.1.1 = {birth="8252.1.1"}
+	8266.1.1 = {
+		add_trait="skilled_warrior"
+		effect = {
+			if = { 
+				limit = { NOT = { start_date = 8300.8.17 } }
+				add_artifact = golden_bracelets 
+			}
+		}
+	}
+	8279.1.1 = {give_nickname = nick_giantsbane}
+	8300.2.10 = { 
+		effect = { 
+			add_claim=d_lower_frostfangs
+			add_claim=c_the_gorge
+		}
+	}
+}
+274345 = {
+	name="Торегг"
+	dynasty=174345
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="patient"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="tall"
+	
+	father=174345
+	
+	8272.1.1 = {birth="8272.1.1"}
+	8286.1.1 = {
+		add_trait="trained_warrior"
+		give_nickname = nick_the_tall
+	}
+}
+374345 = {
+	name="Торвинд"
+	dynasty=174345
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="patient"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	
+	father=174345
+	
+	8274.1.1 = {birth="8274.1.1"}
+	8288.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8300.2.10 = {
+		death="8300.2.10"
+	}
+}
+474345 = {
+	name="Дрин"
+	dynasty=174345
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="patient"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	
+	father=174345
+	
+	8292.1.1 = {birth="8292.1.1"}
+	8298.1.1 = {
+		effect = {
+			if = {
+				limit = { has_dlc = Conclave }
+				add_trait = rowdy
+			}
+			else = {
+				add_trait = rude
+			}
+		}
+	}
+	8300.1.1 = {
+		add_trait="poor_warrior"
+	}
+	8300.8.17 = {employer=1002059}	#Jon's hostage
+}
+574345 = {
+	name="Дормунд"
+	dynasty=174345
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="patient"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	
+	father=174345
+	
+	8277.1.1 = {birth="8277.1.1"}
+	8291.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8300.2.10 = {
+		death = {
+			death_reason = death_battle
+			killer = 2000311 #Richard Horpe
+		}
+	}
+}
+574346 = {
+	name="Мунда"
+	dynasty=174345
+	female = yes
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="patient"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	
+	father=174345
+	
+	8278.1.1 = {birth="8278.1.1"}
+	8292.1.1 = {
+		add_trait="trained_warrior"
+	}
+}
+
+###
+### Lord of Bones
+###
+574347 = {		#Canon, Lord of Bones
+	name="Халгор"
+	dynasty=174346
+
+	martial=6
+
+	dna="blaak0kjg00"
+ 	properties="djjkg00000"
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+		
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="deceitful"
+	
+	8259.1.1 = {birth="8259.1.1"}
+	8263.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8279.1.1 = {
+		give_nickname = nick_rattleshirt
+		effect = { add_artifact = bone_armor }
+	}
+	8300.2.10 = {
+		employer = 1002059 #Jon Snow
+	}
+}
+###
+###	Gerrick Kingsblood
+###
+574800 = {		#Canon
+ 	name="Геррик"
+	dynasty = 174348	
+	dna="cakefzeedaz"
+	properties="ce0dck"
+
+	martial = 8
+	diplomacy = 5
+	intrigue = 9
+	stewardship = 4
+	learning = 5
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+		
+	add_trait="tough_soldier"
+	add_trait="brave"
+	add_trait="envious"
+	add_trait="wroth"
+	add_trait="proud"
+	add_trait="ambitious"
+	add_trait="authoritative"
+
+	father=521359
+
+	8256.1.1 = { birth="8256.1.1"}	
+	8272.1.1 = { 
+		add_trait=trained_warrior
+	}
+	8300.2.10 = {
+		employer=174345	#Tormund Giantsbane
+		effect = { add_claim = c_haunted_forest }
+	}
+	8300.8.17 = {
+		dynasty=1174345 # House Redbeard
+		employer=4317 #Actually Selyse
+	}
+}
+574801 = {
+	name="Геррис"
+	dynasty=174348
+	female = yes
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="tough_soldier"
+	
+	father=574800
+	
+	8274.1.1 = {birth="8274.1.1"}
+	8290.1.1 = { 
+		add_trait=trained_warrior
+	}
+	8300.8.17 = {
+		dynasty=1174345 # House Redbeard
+		employer=4317 #Actually Selyse
+	}
+}
+574802 = {
+	name="Геррек"
+	dynasty=174348
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="tough_soldier"
+	add_trait="fair"
+	add_trait="humble"
+	
+	father=574800
+	
+	8286.1.1 = {birth="8286.1.1"}
+	8296.1.1 = { 
+		add_trait=poor_warrior
+	}
+	8300.8.17 = {
+		dynasty=1174345 # House Redbeard
+		employer=1002059 #Jon's hostage
+	}
+}
+574803 = {
+	name="Герра"
+	dynasty=174348
+	female = yes
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="humble"
+	add_trait="patient"
+	
+	father=574800
+	
+	8283.1.1 = {birth="8283.1.1"}
+	8300.8.17 = {
+		dynasty=1174345 # House Redbeard
+		employer=4317 #Actually Selyse
+	}
+}
+5748030 = {
+	name="Гризела"
+	dynasty=174348
+	female = yes
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=574800
+	
+	add_trait="fair"
+	add_trait="content"
+
+	8286.1.1 = {birth="8286.1.1"}
+	8300.8.17 = {
+		dynasty=1174345 # House Redbeard
+		employer=4317 #Actually Selyse
+	}
+}
+
+###
+### Mance Rayder
+###
+174347 = {			#THE Mance
+	name = "Манс"
+	dynasty = 174347
+	dna="amcihogjeaw"
+	properties="0n00h"
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	martial = 10
+	diplomacy = 4
+	stewardship = 3
+	intrigue = 7
+	learning = 4
+	
+	add_trait="grey_eminence"
+	add_trait="quick"
+	add_trait="strong"
+	add_trait="poet"
+	add_trait="gregarious"
+	add_trait="proud"
+	add_trait="ambitious"
+	add_trait="inspiring_leader"
+	add_trait="trickster"
+	
+	8256.1.1 = {
+		birth = "8256.1.1"	
+		effect = {
+			if = {
+				limit = { 
+					NOT = { trait = wildling } 
+					is_ruler = no
+				}
+				d_nightswatch = { holder_scope = { ROOT = { move_character = PREV } } }
+			}
+		}
+	}
+	
+	8267.1.1 = {
+		add_trait = "poor_warrior"
+	}
+	
+	8273.1.1 = {
+		remove_trait = "poor_warrior"
+		add_trait = "trained_warrior"
+	}
+	8282.1.1 = {
+		remove_trait="trained_warrior"
+		add_trait="skilled_warrior"
+		add_trait = "nightswatch"	
+		effect = {
+			add_character_modifier = {
+				name = nw_ranger
+				duration = -1
+			}
+		}
+	}
+	8288.1.1 = {
+		remove_trait="skilled_warrior"
+		add_trait="master_warrior"
+	}
+	8292.1.1 = {
+		remove_trait = "nightswatch"
+		add_trait = "deserter"
+		add_trait = "wildling"
+		employer=0
+		effect = {
+			remove_character_modifier = nw_ranger
+		}
+	}
+
+	8295.1.1 = {add_spouse=57000} #Далла
+	
+	8299.2.1 = {
+		raise_levies = {
+			location = 3 #Northern Frostfangs
+			force_mult = 1
+		}
+		effect = {
+			if = {	
+				limit = {
+					NOT = { year = 8300 }
+					NOT = { month = 10 }		
+				}
+				set_character_flag = giants_hired
+				spawn_unit = {
+					province = 3 #Northern Frostfangs
+					scaled_by_biggest_garrison = 2
+					owner = ROOT
+					leader = 174347 #Тормунд Giantsbane
+					troops = {
+						archers = { 5 5 }
+						heavy_infantry = { 15 15 }
+						light_infantry = { 45 45 }	
+						light_cavalry = { 2 2 }							
+					}
+					attrition = 1.0
+				}
+			}	
+		}
+	}
+	8299.11.12 = {
+		raise_levies = {
+			location = 17 #Castle Black
+			force_mult = 1
+		}
+	}
+	8300.2.10 = {
+		employer=4317
+		add_claim=k_beyond_wall
+		raise_levies = {
+			dismiss = yes
+			location = 17 #Northern Frostfangs
+			force_mult = 1
+		}
+		effect = {
+			clr_character_flag = giants_hired
+			k_beyond_wall = { add_claim = ROOT }
+			set_character_flag = captured_in_battle
+			k_stormlands = {
+				holder_scope = {
+					ROOT = { imprison = PREV }
+					opinion = { who = ROOT modifier = opinion_traitor }
+				}
+			}
+		}
+	}
+}
+57000 = {
+	name="Далла"
+	female=yes
+	father=57002
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	dna="adbgc0igab0"
+	properties="eo0egkbebcb"
+	
+	diplomacy = 17
+	
+	add_trait="fair"
+	add_trait="brave"
+	
+	8279.1.1 = {birth="8279.1.1"}
+	8300.2.10 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+57001 = {
+	name="Вель"
+	female=yes
+	father=57002
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling" 
+		
+	dna="ajkfdyjefbi"
+	properties="at0bq"
+	
+	diplomacy = 9
+	martial = 6
+	stewardship = 9
+	intrigue = 7
+	learning = 6
+	
+	add_trait="fair"
+	add_trait="brave"
+	add_trait="wildling"
+	add_trait="diligent"
+	add_trait="proud"
+	add_trait="honest"
+	add_trait="lustful"
+	
+	8279.1.1 = {
+		birth="8279.1.1"
+		effect = { 
+			set_graphical_culture="valeman" #to get the right portrait
+		}
+		employer = 119559122 # Get her out of the Vale
+	}
+	8292.1.1 = {
+		add_trait=skilled_warrior
+		add_trait="charismatic_negotiator"
+		effect = { add_artifact = weirwood_brooch }
+	}
+	8300.2.10 = {
+		employer=4317
+		effect = {
+			set_character_flag = captured_in_battle
+			set_character_flag = val_wildling
+			k_stormlands = {
+				holder_scope = {
+					ROOT = { imprison = PREV }
+				}
+			}
+		}
+	}
+}
+57050 = {
+	name="Эймон"
+	dynasty = 174347
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=174347
+	mother=57000
+	employer=4317
+	
+	add_trait = "wildling"
+	add_trait = "strong"
+
+	8300.2.10 = {
+		birth="8300.2.10"
+		add_claim=k_beyond_wall
+		effect = {
+			set_character_flag = captured_in_battle
+			k_stormlands = {
+				holder_scope = {
+					ROOT = { imprison = PREV }
+				}
+			}
+		}
+	}
+}
+57002 = {
+	name="Ярл" #non cannon
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	8256.1.1 = {birth="8256.1.1"}
+	8295.3.11 = {death="8295.3.11"}
+}
+
+574348 = {		#Canon, Val's lover
+	name="Ярл"
+	
+	dna="behhf0dhg00"
+ 	properties="ch0qck0000"
+
+	martial=7
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	employer=157004
+	
+	add_trait="brave"
+	add_trait="diligent"
+	add_trait="tough_soldier"
+	
+	8273.1.1 = {
+		birth="8273.1.1"
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8286.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8299.11.11 = {death="8299.11.11"}
+}
+###
+###Harma Dogshead
+###
+57003 = {
+	name="Харма"
+	female=yes
+	father=570003
+	
+	martial=7
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="deceitful"
+	
+	employer=157001
+		
+	8270.1.1 = {birth="8270.1.1"}
+	8286.1.1 = {
+		add_trait="trained_warrior"
+		give_nickname = nick_the_dogshead
+	}
+	8299.11.11 = {employer=174347}
+	8300.2.10 = {
+		death = {
+			death_reason = death_battle
+			killer = 4317 #Stannis
+		}
+	}
+}
+57004 = {
+	name="Хеллек"
+	father=570003
+	
+	martial=7
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="deceitful"
+
+	employer=157001
+	
+	8272.1.1 = {birth="8272.1.1"}
+	8288.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8299.11.11 = {employer=174347}
+	8300.2.10 = {employer=1002059 }
+}
+570003 = {
+	name="Халлис"
+	
+	martial=7
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"	
+	
+	8252.1.1 = {birth="8252.1.1"}
+	8274.11.11 = {death="8274.11.11"}
+}
+###
+###Varamyr Sixskins
+###
+157000 = {
+	name = "Варамир"
+	
+	dna="bkbhfwjhegx"
+	properties="cn0eik"
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	martial=1
+		
+	add_trait="proud"
+	add_trait = "wildling"
+	add_trait="ambitious"
+	add_trait="sickly"
+	
+	mother = 103174349
+	father = 102174349
+	
+	8256.1.1 = {
+		birth = "8256.1.1"	
+		effect = {
+			if = {
+				limit = { NOT = { age = 10 } }
+				set_name = Lump
+			}
+		}
+	}
+	8260.1.1 = {
+		remove_trait="sickly"
+	}
+	8272.1.1 = {
+		give_nickname = nick_sixskins
+		dynasty = 174349
+		add_trait="trained_warrior"
+		add_trait="tough_soldier"
+		add_trait="shadowcat"
+		add_trait="snowbear"
+		add_trait="wolf"
+		effect = { add_artifact = shadowskin_cloak } 
+	}
+	8299.10.10 = {
+		add_trait = eagle #takes Орелл's eagle
+	}
+	8300.2.10 = {
+		remove_trait = eagle #burned by mellisandre
+		effect = { add_claim = c_hardhome }
+	}
+	8300.2.13 = {
+		death = {
+			death_reason = death_missing
+		}
+	}
+}
+101174349 = {
+	name = "Вейон"
+	dynasty = 174349
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	add_trait = "wildling"
+	
+	father = 157000
+	
+	8289.1.1 = {
+		birth = "8289.1.1"	
+	}
+	8300.8.17 = {
+		effect = {
+			d_nightswatch = { holder_scope = { ROOT = { move_character = PREV } } }
+		}
+	}
+}
+#father and siblings
+102174349 = {
+	name = "Кайлег"
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait = wroth
+	add_trait = proud
+	add_trait = familyperson
+	add_trait = wildling
+	
+	8232.1.1 = {
+		birth = "8232.1.1"	
+	}
+	8248.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="tough_soldier"
+		add_spouse = 103174349
+	}
+	8284.1.1 = {
+		death = yes
+	}
+}
+103174349 = {
+	name="Мунда"
+	female = yes
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	8232.1.1 = {
+		birth = "8232.1.1"	
+	}
+	8284.1.1 = {
+		death = yes
+	}
+}
+104174349 = {
+	name = "Желвак"
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	add_trait = "wildling"
+	add_trait = "strong"
+	
+	mother = 103174349
+	father = 102174349
+	
+	8260.1.1 = {
+		birth = "8260.1.1"	
+	}
+	8262.1.1 = {
+		death = {
+			death_reason = death_murder_unknown
+			killer = 157000 #Варамир
+		}
+	}
+}
+105174349 = {
+	name = "Миха"
+	female = yes
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	add_trait = "wildling"
+	
+	mother = 103174349
+	father = 102174349
+	
+	8251.1.1 = {
+		birth = "8251.1.1"	
+	}
+	8298.1.1 = {
+		death = yes
+	}
+}
+###
+### The Weeper
+###
+157001 = {
+	name="Гендел"	#Canon, The Weeping Man
+	dynasty=559103 #Random, some Warriormane
+
+	martial=6
+
+	dna="chaf00b0fe0" 
+	properties="0e0000"
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="skilled_tactician"
+	add_trait="deceitful"
+	add_trait="ruthless"
+	
+	8259.1.1 = {birth="8259.1.1"}
+	8275.1.1 = {
+		add_trait="skilled_warrior"
+	}
+	8279.1.1 = {give_nickname = nick_the_weeper}
+	8300.2.10 = {
+		effect = {
+			spawn_unit = {
+				province = 15 #The Gorge
+				scaled_by_biggest_garrison = 2
+				owner = ROOT
+				leader = 157001 #The Weeping Man
+				troops = {
+					archers = { 5 5 }
+					heavy_infantry = { 15 15 }
+					light_infantry = { 45 45 }	
+					light_cavalry = { 2 2 }							
+				}
+				attrition = 1.0
+			}
+		}
+	}
+}
+
+###
+###	Devyn Sealskinner
+###
+157002 = {	
+ 	name="Девин"
+	dynasty = 174352	
+
+	martial = 8
+	diplomacy = 5
+	intrigue = 9
+	stewardship = 4
+	learning = 5
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+		
+	add_trait="tough_soldier"
+	add_trait="brave"
+	add_trait="diligent"
+	add_trait="proud"
+
+	8256.1.1 = {birth="8256.1.1"}
+	8271.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8279.1.1 = {give_nickname = nick_sealskinner}
+	8300.2.10 = {
+		employer=174345	#Tormund Giantsbane
+		effect = { add_claim = c_ice_bay_shore }
+	}
+}
+1570021 = {	
+ 	name="Рори"
+	dynasty = 174352	
+
+	martial = 8
+	diplomacy = 8
+	intrigue = 4
+	stewardship = 6
+	learning = 6
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+		
+	father=157002
+	
+	add_trait="twin"
+	add_trait="brave"
+	
+	8285.1.1 = {birth="8285.1.1"}
+	8299.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8300.2.10 = {employer=174345}	
+}
+1570022 = {	
+ 	name="Кори"
+	dynasty = 174352	
+
+	martial = 8
+	diplomacy = 8
+	intrigue = 4
+	stewardship = 6
+	learning = 6
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+		
+	father=157002
+	
+	add_trait="twin"
+	add_trait="brave"
+	
+	8289.1.1 = {birth="8289.1.1"}
+	8300.2.10 = {employer=174345}
+	8300.8.17 = {employer=1002059}	#Jon's hostage
+}
+
+###
+### Morna White-Mask
+###
+157003 = {	
+ 	name="Морна"
+	dynasty = 174350
+	female = yes
+	dna="clfddfgbgaz"
+	properties="cl0ddk"	
+
+	martial = 8
+	diplomacy = 5
+	intrigue = 9
+	stewardship = 4
+	learning = 5
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+		
+	add_trait="mystic"
+	add_trait="tough_soldier"
+	add_trait="authoritative"
+	add_trait="proud"
+	
+	8256.1.1 = { birth="8256.1.1"}
+	8272.1.1 = { add_trait = skilled_warrior }
+	8279.1.1 = {give_nickname = nick_white_mask}	
+}
+157153 = {	
+ 	name="Сорен"
+	dynasty = 174350
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+		
+	add_trait="tough_soldier"
+	
+	mother = 157003
+	
+	8289.1.1 = { birth="8289.1.1"}
+	8300.8.17 = {employer=1002059}	#Jon's hostage
+}
+
+###
+### Alfyn Crowkiller
+###
+157004 = {
+	name="Альфин"
+	dynasty = 174351
+
+	martial=6
+
+	dna="bljkejkagau"
+	properties="cj0dcd"
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+		
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="deceitful"
+
+	8259.1.1 = {birth="8259.1.1"}
+	8275.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8279.1.1 = {give_nickname = nick_crowkiller}
+	8299.6.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 121005 #Qhorin Halfhand
+		}
+	}
+}
+1570041 = {
+	name="Гарисс"
+	dynasty = 174351
+
+	martial=6
+
+	dna="ifjkejoagau"
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=157004
+	
+	add_trait="is_malnourished"
+	add_trait="proud"
+
+	8287.1.1 = {birth="8287.1.1"}
+	8299.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8300.2.10 = {employer=174345}
+	8300.8.17 = {employer=1002059}	#Three of Alfyn's son became hostages
+}
+1570042 = {
+	name="Бран"
+	dynasty = 174351
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=157004
+	
+	8290.1.1 = {birth="8290.1.1"}
+	8300.2.10 = {employer=174345}
+	8300.8.17 = {employer=1002059}	#Three of Alfyn's son became hostages
+}
+1570043 = {
+	name="Даркунд"
+	dynasty = 174351
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=157004
+	
+	8292.1.1 = {birth="8292.1.1"}
+	8300.2.10 = {employer=174345}
+	8300.8.17 = {employer=1002059}	#Three of Alfyn's son became hostages
+}
+1570044 = {
+	name="Джосет"
+	dynasty = 174351
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=157004
+	
+	8295.1.1 = {birth="8295.1.1"}
+	8300.2.10 = {employer=174345}
+}
+
+###
+### Minor Wildlings
+###
+574349 = {		#Canon of course
+	name="Игритт"
+	female=yes
+
+	dna="babba0fad00"
+ 	properties="cc0a0k0000"
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	employer=157004
+	
+	add_trait="underhanded_rogue"
+	#add_trait="fair"
+	add_trait="diligent"
+	add_trait="lustful"
+	add_trait="brave"
+	add_trait="zealous"
+	
+	8280.1.1 = {
+		birth="8280.1.1"
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8294.1.1 = {
+		add_trait="trained_warrior"
+		effect = { add_artifact = weirwood_bow }
+	}
+	8299.1.1 = {
+		effect = { c_1002059 = { add_lover = ROOT } }
+	} 
+	8299.11.11 = {death="8299.11.11"}
+}
+157005 = {
+	name="Рик"
+
+	dna="behhf0dhg00"
+ 	properties="ch0qck"
+
+	martial=7
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="brave"
+	add_trait="diligent"
+	add_trait="tough_soldier"
+	
+	8273.1.1 = {
+		birth="8273.1.1"
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8280.11.11 = {employer=174345}
+	8282.1.1 = {give_nickname = nick_longspear}
+	8289.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8299.6.1 = {add_spouse=574346 }
+	8300.2.10 = {employer=174345}
+}
+157006 = {
+	name="Боррок"
+
+	martial=3
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="brave"
+	add_trait="tough_soldier"
+	add_trait="boar"
+	
+	8260.1.1 = {
+		birth="8260.1.1"
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8280.11.11 = {employer=174345}
+	8300.8.17 = { 
+		employer=157009 #Soren Shieldbreaker
+	}
+}
+157007 = {
+	name="Орелл"
+
+	martial=4
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="brave"
+	add_trait="tough_soldier"
+	add_trait="eagle"
+	
+	8265.1.1 = {
+		birth="8265.1.1"
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8280.11.11 = {employer=574347}
+	8299.10.10 = {
+		death = {
+			death_reason = death_duel
+			killer = 1002059
+		}
+	}
+}
+
+###
+### Kyleg of the Wooden Ear
+### 
+157008 = {
+	name="Кайлег"
+	dynasty=174402
+
+	martial=6
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	add_trait="proud"
+	add_trait="tough_soldier"
+
+	8259.1.1 = {birth="8259.1.1"}
+	8275.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8288.1.1 = {add_spouse=40559143}
+	8300.2.10 = {
+		employer=174345	#Tormund Giantsbane
+	}
+}
+157018 = {
+	name="Лорн"
+	dynasty=174402
+
+	martial=6
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	add_trait="fair"
+	
+	father=157008
+	mother=40559143
+
+	8289.1.1 = {birth="8289.1.1"}
+	8300.2.10 = {employer=174345}
+	8300.8.17 = {employer=1002059}	#Jon's hostage 
+}
+###
+### Soren Shieldbreaker
+###
+157009 = {
+	name="Сорен"
+	dynasty=174403
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	martial = 8
+
+	add_trait="proud"
+	add_trait="tough_soldier"
+	
+	8252.1.1 = {birth="8252.1.1"}
+	8278.1.1 = {add_trait="skilled_warrior"}
+	8279.1.1 = {give_nickname = nick_shieldbreaker}
+	8300.2.10 = {
+		employer=174345	#Tormund Giantsbane
+		effect = { add_claim = c_shivering_forest }
+	}
+}
+157059 = {
+	name="Стив"
+	dynasty=174403
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father = 157009
+
+	add_trait="proud"
+	add_trait="tough_soldier"
+	
+	8275.1.1 = {birth="8275.1.1"}
+	8291.1.1 = {add_trait="trained_warrior"}
+	8300.2.10 = {employer=174345}
+}
+
+###
+###Harle the Huntsman and Harle the Handsome
+###
+#Parents to connect brothers
+157100 = {
+	name="Харль"
+	martial=4
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="tough_soldier"
+	
+	8240.1.1 = {
+		birth="8240.1.1"
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8256.1.1 = {
+		add_trait = trained_warrior
+		add_spouse = 157101
+	}
+	8295.1.1 = {
+		death = yes
+	}
+}
+157101 = {
+	name="Игритт"
+	female = yes
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	8240.1.1 = {
+		birth="8240.1.1"
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8295.1.1 = {
+		death = yes
+	}
+}
+
+157010 = {
+	name="Харль"
+
+	martial=4
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="brave"
+	add_trait="tough_soldier"
+	add_trait="fair"
+	add_trait = selfish
+	add_trait = wroth
+	
+	father = 157100
+	mother = 157101
+	
+	8265.1.1 = {
+		birth="8265.1.1"
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8279.1.1 = {give_nickname = nick_the_handsome}
+	8280.11.11 = {
+		employer=157009
+		add_trait = trained_warrior
+	}
+	8286.1.1 = {
+		effect = {
+			add_rival = 157011 #his brother
+		}
+	}
+	8300.2.10 = {employer=174345}
+}
+157011 = {
+	name="Харль"
+
+	martial=4
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="brave"
+	add_trait = proud
+	add_trait = envious
+	add_trait="tough_soldier"
+	
+	father = 157100
+	mother = 157101
+	
+	8266.1.1 = {
+		birth="8266.1.1"
+		effect = {  
+			dynasty = none
+		}
+	}
+	8279.1.1 = {give_nickname = nick_the_huntsman}
+	8280.11.11 = {
+		employer=157009
+		add_trait = trained_warrior
+		add_trait = hunter
+	}
+	8300.2.10 = {employer=174345}
+}
+157102 = { #women they both had a son by
+	name="Холли"
+	female = yes
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait = lustful
+	add_trait = fair
+	add_trait = proud
+	add_trait = authoritative
+	
+	8267.1.1 = {
+		birth="8267.1.1"
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}	
+	8280.11.11 = {
+		employer=157009
+	}
+	8283.1.1 = {
+		add_trait = trained_warrior
+	}
+	8300.2.10 = {employer=174345}
+}
+#sons
+157103 = {
+	name="Харлон"
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father = 157010
+	mother = 157102
+	
+	employer=157009
+	
+	add_trait = fair
+	
+	8285.1.1 = {
+		birth="8285.1.1"
+		effect = {  
+			dynasty = none
+		}
+	}
+	8299.1.1 = {
+		add_trait = trained_warrior
+	}
+	8300.2.10 = {employer=174345}
+	8300.8.17 = {employer=1002059}	#Jon's hostage 
+}
+157104 = {
+	name="Харлег"
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father = 157011
+	mother = 157102
+	
+	employer=157009
+	
+	8286.1.1 = {
+		birth="8286.1.1"
+		effect = {  
+			dynasty = none
+		}
+	}
+	8299.1.1 = {
+		add_trait = trained_warrior
+	}
+	8300.2.10 = {employer=174345}
+	8300.8.17 = {employer=1002059}	#Jon's hostage 
+}
+###
+### Great Walrus
+###
+174404 = {
+	name="Морж"
+	dynasty=174404
+	
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	martial = 8
+
+	add_trait="proud"
+	add_trait="tough_soldier"
+	
+	8252.1.1 = {birth="8252.1.1"}
+	8268.1.1 = {add_trait="skilled_warrior"}
+	8279.1.1 = {give_nickname = nick_the_great}
+	8300.2.10 = {
+		employer=174345	#Tormund Giantsbane
+		effect = { add_claim = c_frozen_shore }
+	}
+}
+1744041 = {
+	name="Гордая Сука"
+	female=yes
+	
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	intrigue = 8
+
+	add_trait="proud"
+	add_trait="misguided_warrior"
+	
+	8268.1.1 = {birth="8268.1.1"}
+	8284.1.1 = {add_trait="trained_warrior"}
+	8300.2.10 = {employer=174345}
+}
+1744042 = {
+	name="Молодой Морж"
+	dynasty=174404
+	
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=174404
+	mother=1744041
+	
+	martial = 8
+
+	add_trait="brave"
+	add_trait="skilled_tactician"
+	
+	8284.1.1 = {birth="8284.1.1"}
+	8299.1.1 = {add_trait="skilled_warrior"}
+	8300.2.10 = {employer=174345}
+}
+1744043 = {
+	name="Снежный Кот"
+	female=yes
+	dynasty=174404
+	
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=174404
+	mother=1744041
+	
+	martial = 6
+
+	add_trait="diligent"
+	
+	8285.1.1 = {birth="8285.1.1"}
+	8299.1.1 = {add_trait="trained_warrior"}
+	8300.2.10 = {employer=174345}
+}
+1744044 = {
+	name="Маленький Морж"
+	dynasty=174404
+	
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=174404
+	mother=1744041
+	
+	martial = 4
+
+	add_trait="trusting"
+	add_trait="affectionate"
+	add_trait="idolizer"
+	add_trait="timid"
+	
+	8294.1.1 = {birth="8294.1.1"}
+	8300.2.10 = {employer=174345}
+	8300.8.17 = {employer=1002059}	#One or more of Walrus' sons became hostages
+}
+###
+### Mother Mole
+###
+157015 = {	
+ 	name="Матушка Кротиха"	#Canon
+	dynasty = 4500016
+	female = yes	
+
+	diplomacy = 5
+	intrigue = 9
+	stewardship = 4
+	learning = 5
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+		
+	add_trait="greensight"
+	add_trait="mystic"
+	add_trait="authoritative"
+	add_trait="proud"
+
+	8243.1.1 = { birth="8243.1.1"}	
+}
+###
+###	Tormund minor chieftains
+###
+157024 = {
+	name="Брогг"	#Canon, Brogg
+	dynasty=559107
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="proud"
+	add_trait="honest"
+	add_trait="honorable"
+
+	8263.1.1 = { birth="8263.1.1"}	
+	8279.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="trained_warrior"
+	}
+	8300.2.10 = {
+		employer=174345	#Tormund Giantsbane
+		effect = { add_claim = c_skirling_pass }
+	}
+}
+157023 = {
+	name="Боррок"	
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=157024
+	
+	8288.1.1 = { birth="8288.1.1"}	
+	8300.2.10 = {
+		employer=174345	#Tormund Giantsbane
+	}
+	8300.8.17 = {employer=1002059}	#Jon's hostage 
+}
+
+157019 = {
+	name="Хауд"		#Canon, Howd the Wanderer
+	dynasty=559108 
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="proud"
+	add_trait="shy"
+	add_trait="honorable"
+
+	8259.1.1 = { birth="8259.1.1"}	
+	8275.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="trained_warrior"
+		give_nickname=nick_the_wanderer 
+	}
+	8300.2.10 = {
+		employer=174345	#Tormund Giantsbane
+		effect = { add_claim = c_n_frostfangs }
+	}
+}
+157022 = {
+	name="Хоаг"	
+	dynasty=559108 
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=157019
+	
+	8290.1.1 = { birth="8290.1.1"}	
+	8300.2.10 = {
+		employer=174345	#Tormund Giantsbane
+	}
+	8300.8.17 = {employer=1002059}	#Jon's hostage 
+}
+
+157020 = {
+	name="Досс"		#Canon, Blind Doss
+	dynasty=559109
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="proud"
+
+	8251.1.1 = { birth="8251.1.1"}	
+	8267.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="trained_warrior"
+		give_nickname=nick_the_blind  
+	}
+	8300.2.10 = {
+		employer=174345	#Tormund Giantsbane
+		effect = { add_claim = c_the_giants_stairs }
+	}
+	8300.8.17 = {employer=1002059}	#Jon Snow
+}
+157021 = {
+	name="Гавен"		#Canon, Gavin the Trader
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="proud"
+
+	8265.1.1 = { birth="8265.1.1"}	
+	8281.1.1 = {
+		add_trait="thrifty_clerk"
+		add_trait="trained_warrior"
+		give_nickname=nick_the_trader   
+	}
+	8300.2.10 = {
+		employer=174345	#Tormund Giantsbane
+		effect = { add_claim = c_fot_first_men }
+	}
+	8300.8.17 = {employer=1002059}	#Jon Snow
+}
+
+###
+### Craster have really big family - he is in btw_craster.txt
+###
+
+###
+### Ygon Oldfather, Jon remarks about his 18 wives and how most of his men are his sons and grandsons
+###
+157017 = {
+	name="Игон"	#Canon, Ygon Oldfather
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="lustful"
+	add_trait="proud"
+	add_trait="tough_soldier"
+
+	8225.1.1 = { birth="8225.1.1" }
+	8285.1.1 = { give_nickname=nick_the_oldfather }
+	8300.2.10 = {
+		employer=174345	#Tormund Giantsbane
+		effect = { 
+			add_claim = c_free_vale 
+			c_174345 = {
+				ROOT = {
+					any_dynasty_member = { move_character = PREVPREV }
+				}
+			}
+		}
+	}
+	8300.8.17 = {employer=1002059}	#Jon Snow
+}
+#First son branch
+10559102 = {
+	name="Орелл"	#Random son
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=157017
+
+	8246.1.1 = { birth="8246.1.1" }
+}
+20559102 = {
+	name="Дормунд"	#Random grandson
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=10559102
+
+	8269.1.1 = { birth="8269.1.1" }
+}
+21559102 = {
+	name="Стив"	#Random great grandson
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=20559102
+
+	8289.1.1 = { birth="8289.1.1" }
+}
+22559102 = {
+	name="Бьёрмир"	#Random great grandson
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=20559102
+
+	8293.1.1 = { birth="8293.1.1" }
+}
+23559102 = {
+	name="Мунда"	#Random great granddaughter
+	dynasty=559102
+	female=yes
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=20559102
+
+	8294.1.1 = { birth="8294.1.1" }
+}
+
+11559102 = {
+	name="Халгор"	#Random grandson
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=10559102
+
+	8273.1.1 = { birth="8273.1.1" }
+}
+12559102 = {
+	name="Дрин"	#Random great grandson
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=11559102
+
+	8292.1.1 = { birth="8292.1.1" }
+}
+13559102 = {
+	name="Лилли"	#Random great granddaughter
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=11559102
+
+	8294.1.1 = { birth="8294.1.1" }
+}
+14559102 = {
+	name="Оша"	#Random granddaughter
+	dynasty=559102
+	female=yes
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=10559102
+
+	8273.1.1 = { birth="8273.1.1" }
+}
+15559102 = {
+	name="Мейл"	#Random grandson
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=10559102
+
+	8277.1.1 = { birth="8277.1.1" }
+}
+16559102 = {
+	name="Игон"	#Random great grandson
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=15559102
+
+	8298.1.1 = { birth="8298.1.1" }
+}
+#Second son branch
+30559102 = {
+	name="Игон"	#Random son
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=157017
+
+	8253.1.1 = { birth="8253.1.1" }
+}
+31559102 = {
+	name="Кайлиг"	#Random grandson
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=30559102
+
+	8278.1.1 = { birth="8278.1.1" }
+}
+33559102 = {
+	name="Тормун"	#Random great grandson
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=31559102
+
+	8298.1.1 = { birth="8298.1.1" }
+}
+32559102 = {
+	name="Сигорн"	#Random grandson
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=30559102
+
+	8281.1.1 = { birth="8281.1.1" }
+}
+34559102 = {
+	name="Кира"	#Random great granddaughter
+	dynasty=559102
+	female=yes
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=32559102
+
+	8297.1.1 = { birth="8297.1.1" }
+}
+35559102 = {
+	name="Изилла"	#Random granddaughter
+	dynasty=559102
+	female=yes
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=30559102
+
+	8284.1.1 = { birth="8284.1.1" }
+}
+36559102 = {
+	name="Куорт"	#Random grandson
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=30559102
+
+	8290.1.1 = { birth="8290.1.1" }
+}
+#Third son branch
+40559102 = {
+	name="Горн"	#Random son
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=157017
+
+	8260.1.1 = { birth="8260.1.1" }
+}
+41559102 = {
+	name="Игритт"	#Random granddaughter
+	dynasty=559102
+	female=yes
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=40559102
+
+	8279.1.1 = { birth="8279.1.1" }
+}
+42559102 = {
+	name="Орелл"	#Random grandson
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=40559102
+
+	8282.1.1 = { birth="8282.1.1" }
+}
+43559102 = {
+	name="Эсгред"	#Random granddaughter
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=40559102
+
+	8285.1.1 = { birth="8285.1.1" }
+}
+#Fourth son branch
+50559102 = {
+	name="Сорен"	#Random son
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=157017
+
+	8264.1.1 = { birth="8264.1.1" }
+}
+51559102 = {
+	name="Игон"	#Random grandson
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=50559102
+
+	8283.1.1 = { birth="8283.1.1" }
+}
+52559102 = {
+	name="Брогг"	#Random great grandson
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=51559102
+
+	8299.1.1 = { birth="8299.1.1" }
+}
+53559102 = {
+	name="Фринна"	#Random granddaughter
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=50559102
+
+	8286.1.1 = { birth="8286.1.1" }
+}
+54559102 = {
+	name="Ива"	#Random granddaughter
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=50559102
+
+	8291.1.1 = { birth="8291.1.1" }
+}
+#Fifth son branch
+60559102 = {
+	name="Горм"	#Random son
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=157017
+
+	8269.1.1 = { birth="8269.1.1" }
+}
+61559102 = {
+	name="Вейон"	#Random grandson
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=60559102
+
+	8290.1.1 = { birth="8290.1.1" }
+}
+62559102 = {
+	name="Игон"	#Random grandson
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=60559102
+
+	8293.1.1 = { birth="8293.1.1" }
+}
+#Younger children
+70559102 = {
+	name="Горн"	#Random son
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=157017
+
+	8273.1.1 = { birth="8273.1.1" }
+}
+71559102 = {
+	name="Хаггон"	#Random son
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=157017
+
+	8278.1.1 = { birth="8278.1.1" }
+}
+72559102 = {
+	name="Френья"	#Random daughter
+	dynasty=559102
+	female=yes
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=157017
+
+	8280.1.1 = { birth="8280.1.1" }
+}
+73559102 = {
+	name="Григг"	#Random son
+	dynasty=559102
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=157017
+
+	8285.1.1 = { birth="8285.1.1" }
+}
+74559102 = {
+	name="Гризела"	#Random daughter
+	dynasty=559102
+	female=yes
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=157017
+
+	8291.1.1 = { birth="8291.1.1" }
+}
+
+###
+### Giants
+###
+157013 = {
+	name="Мег"
+	dynasty=6660010
+	
+	religion="beyond_wall_old_gods"
+	culture="giant"
+
+	martial = 8
+
+	add_trait="giant"
+	add_trait="strong"
+	add_trait="tall"
+	
+	8247.1.1 = {birth="8247.1.1"}
+	8279.1.1 = {give_nickname = nick_the_mighty}
+	8299.11.11 = {
+		death = {
+			death_reason = death_duel
+			killer = 121003
+		}
+	}
+}
+157014 = {
+	name="Вун"
+	dynasty=6660011
+	
+	religion="beyond_wall_old_gods"
+	culture="giant"
+
+	martial = 8
+
+	add_trait="giant"
+	add_trait="strong"
+	add_trait="tall"
+	
+	8264.1.1 = {birth="8264.1.1"}
+	8298.11.11 = {employer=174347}
+	8300.2.10 = {employer=174345} #Tormund Giantsbane
+	8300.4.29 = {employer=1002059}	#Jon Snow
+}

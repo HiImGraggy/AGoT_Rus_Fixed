@@ -1,0 +1,3057 @@
+199360025 = { #Граздан the Great
+	name="Граздан"	
+	
+	martial = 6
+	diplomacy = 8
+	intrigue = 7
+	stewardship = 9
+	learning = 8
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	add_trait = grey_eminence
+	add_trait = ambitious
+	add_trait = diligent
+	add_trait = authoritative
+	add_trait = quick
+	
+	give_nickname = nick_the_great
+	
+	disallow_random_traits = yes
+
+	3000.1.1 = {birth="3000.1.1"}
+	3016.1.1 = {
+		add_trait = skilled_warrior
+	}
+	3068.1.1 = {death="3068.1.1"}
+}
+
+### House Граздан
+### Descended from Граздан the Great founder of Old Ghis.
+345360025 = {
+	name="Граздан"	# a lord
+	dynasty=360025
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	7818.1.1 = {birth="7818.1.1"}
+	7872.1.1 = {death="7872.1.1"}
+}
+344360025 = {
+	name="Зхарак"	# a lord
+	dynasty=360025
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=345360025
+	
+	7843.1.1 = {birth="7843.1.1"}
+	7892.1.1 = {death="7892.1.1"}
+}
+343360025 = {
+	name="Граздан"	# a lord
+	dynasty=360025
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=344360025
+	
+	7862.1.1 = {birth="7862.1.1"}
+	7915.1.1 = {death="7915.1.1"}
+}
+342360025 = {
+	name="Кхарказ"	# a lord
+	dynasty=360025
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=343360025
+	
+	7888.1.1 = {birth="7888.1.1"}
+	7940.1.1 = {death="7940.1.1"}
+}
+341360025 = {
+	name="Газхак"	# a lord
+	dynasty=360025
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=342360025
+	
+	7911.1.1 = {birth="7911.1.1"}
+	7969.1.1 = {death="7969.1.1"}
+}
+340360025 = {
+	name="Маклан"	# a lord
+	dynasty=360025
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=341360025
+	
+	7932.1.1 = {birth="7932.1.1"}
+	7980.1.1 = {death="7980.1.1"}
+}
+150360025 = {
+	name="Граздан"	# a lord
+	dynasty=360025
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=340360025
+
+	7959.1.1 = {birth="7959.1.1"}
+	8023.1.1 = {death="8023.1.1"}
+}
+100360025 = {
+	name="Граздан"	# a lord
+	dynasty=360025
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=150360025
+
+	7987.1.1 = {birth="7987.1.1"}
+	8016.1.1 = {add_trait=poor_warrior}
+	8041.1.1 = {death="8041.1.1"}
+}
+101360025 = {
+	name="Скахаз"	# a lord
+	dynasty=360025
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100360025
+
+	8028.1.1 = {birth="8028.1.1"}
+	8044.1.1 = {add_trait=trained_warrior}
+	8097.1.1 = {death="8097.1.1"}
+}
+104360025 = {
+	name="Бархаз"	# a lord
+	dynasty=360025
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101360025
+
+	8047.1.1 = {birth="8047.1.1"}
+	8063.1.1 = {add_trait=trained_warrior}
+	8112.1.1 = {death="8112.1.1"}
+}
+108360025 = {
+	name="Мархаз"	# a lord
+	dynasty=360025
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=104360025
+
+	8074.1.1 = {birth="8074.1.1"}
+	8090.1.1 = {add_trait=poor_warrior}
+	8120.1.1 = {death="8120.1.1"}
+}
+112360025 = {
+	name="Граздан"	# a lord
+	dynasty=360025
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=108360025
+
+	8095.1.1 = {birth="8095.1.1"}
+	8111.1.1 = {add_trait=poor_warrior}
+	8141.1.1 = {death = {death_reason = death_accident}}
+}
+114360025 = {
+	name="Еццан"	# a lord
+	dynasty=360025
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=112360025
+
+	8120.1.1 = {birth="8120.1.1"}
+	8136.1.1 = {add_trait=trained_warrior}
+	8164.1.1 = {death="8164.1.1"}
+}
+117360025 = {
+	name="Газдор"	# a lord
+	dynasty=360025
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=114360025
+
+	8143.1.1 = {birth="8143.1.1"}
+	8159.1.1 = {add_trait=skilled_warrior}
+	8179.1.1 = {death = {death_reason = death_battle}}
+}
+122360025 = {
+	name="Мархаз"	# a lord
+	dynasty=360025
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=117360025
+
+	8172.1.1 = {birth="8172.1.1"}
+	8188.1.1 = {add_trait=skilled_warrior}
+	8231.1.1 = {death="8231.1.1"}
+}
+124360025 = {
+	name="Граздан"	# a lord
+	dynasty=360025
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=122360025
+
+	8207.1.1 = {birth="8207.1.1"}
+	8223.1.1 = {add_trait=trained_warrior}
+	8225.1.1 = {add_spouse=224360025}
+	8251.1.1 = {death="8251.1.1"}
+}
+224360025 = {
+	name="Меззара"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+
+	8207.1.1 = {birth="8207.1.1"}
+	8251.1.1 = {death="8251.1.1"}
+}
+126360025 = {
+	name="Мезон"	# a lord
+	dynasty=360025
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=124360025
+	mother=224360025
+
+	8233.1.1 = {birth="8233.1.1"}
+	8249.1.1 = {add_trait=poor_warrior}
+	8251.1.1 = {add_spouse=226360025}
+	8277.1.1 = {death = {death_reason = death_accident}}
+}
+226360025 = {
+	name="Меллезара"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+
+	8233.1.1 = {birth="8233.1.1"}
+	8277.1.1 = {death="8277.1.1"}
+}
+127360025 = {
+	name="Эззара"	# not a lord
+	female=yes
+	dynasty=360025
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=124360025
+	mother=224360025
+
+	8234.1.1 = {birth="8234.1.1"}
+	8273.1.1 = {death="8273.1.1"}
+}
+128360025 = {
+	name="Квецца"	# not a lord
+	female=yes
+	dynasty=360025
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=124360025
+	mother=224360025
+
+	8236.1.1 = {birth="8236.1.1"}
+	8295.1.1 = {death="8295.1.1"}
+}
+129360025 = {
+	name="Граздан"	# not a lord
+	dynasty=360025
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=124360025
+	mother=224360025
+
+	8237.1.1 = {birth="8237.1.1"}
+	8253.1.1 = {add_trait=poor_warrior}
+}
+130360025 = {
+	name="Граздан"	# a lord
+	dynasty=360025
+	
+	diplomacy = 5
+	martial = 8
+	stewardship = 3
+	intrigue = 3
+	learning = 7
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=126360025
+	mother=226360025
+	
+	add_trait = charismatic_negotiator
+	add_trait = paranoid
+	add_trait = craven
+	add_trait = honest
+	add_trait = proud
+	add_trait = erudite
+
+	8259.1.1 = {
+		birth="8259.1.1"
+	}
+	8275.1.1 = {
+		add_trait = poor_warrior
+	}
+}
+131360025 = {
+	name="Аззара"	# not a lord
+	female=yes
+	dynasty=360025
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=126360025
+	mother=226360025
+
+	8262.1.1 = {birth="8262.1.1"}
+}
+
+### House Jaghaz
+34469148 = {
+	name="Граздан"	# a lord
+	dynasty=69148
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	7833.1.1 = {birth="7833.1.1"}
+	7885.1.1 = {death="7885.1.1"}
+}
+34369148 = {
+	name="Ознак"	# a lord
+	dynasty=69148
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34469148
+	
+	7860.1.1 = {birth="7860.1.1"}
+	7907.1.1 = {death="7907.1.1"}
+}
+34269148 = {
+	name="Омказ"	# a lord
+	dynasty=69148
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34369148
+	
+	7883.1.1 = {birth="7883.1.1"}
+	7925.1.1 = {death="7925.1.1"}
+}
+34169148 = {
+	name="Оззак"	# a lord
+	dynasty=69148
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34269148
+	
+	7912.1.1 = {birth="7912.1.1"}
+	7966.1.1 = {death="7966.1.1"}
+}
+34069148 = {
+	name="Гадхаз"	# a lord
+	dynasty=69148
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34169148
+	
+	7934.1.1 = {birth="7934.1.1"}
+	7995.1.1 = {death="7995.1.1"}
+}
+100069148 = {
+	name="Фездар"	# a lord
+	dynasty=69148
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34069148
+
+	7958.1.1 = {birth="7958.1.1"}
+	7974.1.1 = {add_trait=poor_warrior}
+	8033.1.1 = {death="8033.1.1"}
+}
+100169148 = {
+	name="Еццан"	# a lord
+	dynasty=69148
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100069148
+
+	7991.1.1 = {birth="7991.1.1"}
+	8007.1.1 = {add_trait=skilled_warrior}
+	8046.1.1 = {death="8046.1.1"}
+}
+100669148 = {
+	name="Фездар"	# a lord
+	dynasty=69148
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100169148
+
+	8025.1.1 = {birth="8025.1.1"}
+	8041.1.1 = {add_trait=poor_warrior}
+	8072.1.1 = {death="8072.1.1"}
+}
+100969148 = {
+	name="Прендаль"	# a lord
+	dynasty=69148
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100669148
+
+	8053.1.1 = {birth="8053.1.1"}
+	8069.1.1 = {add_trait=trained_warrior}
+	8099.1.1 = {death="8099.1.1"}
+}
+101269148 = {
+	name="Фездар"	# a lord
+	dynasty=69148
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100969148
+
+	8073.1.1 = {birth="8073.1.1"}
+	8089.1.1 = {add_trait=poor_warrior}
+	8123.1.1 = {death="8123.1.1"}
+}
+101469148 = {
+	name="Бархаз"	# a lord
+	dynasty=69148
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101269148
+
+	8109.1.1 = {birth="8109.1.1"}
+	8125.1.1 = {add_trait=trained_warrior}
+	8142.1.1 = {death = {death_reason = death_battle}}
+}
+101569148 = {
+	name="Граздан"	# a lord
+	dynasty=69148
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101469148
+
+	8129.1.1 = {birth="8129.1.1"}
+	8145.1.1 = {add_trait=poor_warrior}
+	8201.1.1 = {death="8201.1.1"}
+}
+101869148 = {
+	name="Маздан"	# a lord
+	dynasty=69148
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101569148
+
+	8150.1.1 = {birth="8150.1.1"}
+	8166.1.1 = {add_trait=poor_warrior}
+	8225.1.1 = {death="8225.1.1"}
+}
+101969148 = {
+	name="Фендаль"	# a lord
+	dynasty=69148
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101869148
+
+	8185.1.1 = {birth="8185.1.1"}
+	8201.1.1 = {add_trait=poor_warrior}
+	8203.1.1 = {add_spouse=401969148}
+	8245.1.1 = {death="8245.1.1"}
+}
+401969148 = {
+	name="Сецка"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+
+	8185.1.1 = {birth="8185.1.1"}
+	8245.1.1 = {death="8245.1.1"}
+}
+102069148 = {
+	name="Газдор"	# a lord
+	dynasty=69148
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101969148
+	mother=401969148
+
+	8207.1.1 = {birth="8207.1.1"}
+	8223.1.1 = {add_trait=poor_warrior}
+	8225.1.1 = {add_spouse=402069148}
+	8267.1.1 = {death="8267.1.1"}
+}
+402069148 = {
+	name="Ецца"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+
+	8207.1.1 = {birth="8207.1.1"}
+	8267.1.1 = {death="8267.1.1"}
+}
+102169148 = {
+	name="Миклаз"	# not a lord
+	dynasty=69148
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101969148
+	mother=401969148
+
+	8209.1.1 = {birth="8209.1.1"}
+	8225.1.1 = {add_trait=poor_warrior}
+	8261.1.1 = {death="8261.1.1"}
+}
+102269148 = {
+	name="Кразнис"	# not a lord
+	dynasty=69148
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101969148
+	mother=401969148
+
+	8212.1.1 = {birth="8212.1.1"}
+	8228.1.1 = {add_trait=skilled_warrior}
+	8270.1.1 = {death="8270.1.1"}
+}
+102369148 = {
+	name="Бархаз"	# a lord
+	dynasty=69148
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102069148
+	mother=402069148
+
+	8226.1.1 = {birth="8226.1.1"}
+	8242.1.1 = {add_trait=poor_warrior}
+	8244.1.1 = {add_spouse=402369148}
+	8295.1.1 = {death="8295.1.1"}
+}
+402369148 = {
+	name="Галацца"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+
+	8226.1.1 = {birth="8226.1.1"}
+	8295.1.1 = {death="8295.1.1"}
+}
+102469148 = {
+	name="Горзак"	# a lord
+	dynasty=69148
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102369148
+	mother=402369148
+
+	8251.1.1 = {birth="8251.1.1"}
+	8267.1.1 = {add_trait=skilled_warrior}
+	8269.1.1 = {add_spouse=402469148}
+}
+402469148 = {
+	name="Аззара"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+
+	8251.1.1 = {birth="8251.1.1"}
+}
+102569148 = {
+	name="Бархаз"	# not a lord
+	dynasty=69148
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102369148
+	mother=402369148
+
+	8252.1.1 = {birth="8252.1.1"}
+	8268.1.1 = {add_trait=skilled_warrior}
+	8295.1.1 = {death="8295.1.1"}
+}
+102669148 = {
+	name="Бархаз"	# not a lord
+	dynasty=69148
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102469148
+	mother=402469148
+
+	8280.1.1 = {birth="8280.1.1"}
+	8296.1.1 = {add_trait=trained_warrior}
+}
+102769148 = {
+	name="Аццея"	# not a lord
+	female=yes
+	dynasty=69148
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102469148
+	mother=402469148
+
+	8282.1.1 = {birth="8282.1.1"}
+}
+102869148 = {
+	name="Газдор"	# not a lord
+	dynasty=69148
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102469148
+	mother=402469148
+
+	8283.1.1 = {birth="8283.1.1"}
+	8299.1.1 = {add_trait=trained_warrior}
+}
+102969148 = {
+	name="Мелеззара"	# not a lord
+	female=yes
+	dynasty=69148
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102469148
+	mother=402469148
+
+	8284.1.1 = {birth="8284.1.1"}
+}
+
+### House Qarghiz
+34569149 = {
+	name="Урхаз"	# a lord
+	dynasty=69149
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	7814.1.1 = {birth="7814.1.1"}
+	7869.1.1 = {death="7869.1.1"}
+}
+34469149 = {
+	name="Гразхар"	# a lord
+	dynasty=69149
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34569149
+	
+	7837.1.1 = {birth="7837.1.1"}
+	7893.1.1 = {death="7893.1.1"}
+}
+34369149 = {
+	name="Зеццан"	# a lord
+	dynasty=69149
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34469149
+	
+	7861.1.1 = {birth="7861.1.1"}
+	7916.1.1 = {death="7916.1.1"}
+}
+34269149 = {
+	name="Скахаз"	# a lord
+	dynasty=69149
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34369149
+	
+	7887.1.1 = {birth="7887.1.1"}
+	7960.1.1 = {death="7960.1.1"}
+}
+34169149 = {
+	name="Моргаз"	# a lord
+	dynasty=69149
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34269149
+	
+	7912.1.1 = {birth="7912.1.1"}
+	7959.1.1 = {death="7959.1.1"}
+}
+34069149 = {
+	name="Ярхаз"	# a lord
+	dynasty=69149
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34169149
+	
+	7936.1.1 = {birth="7936.1.1"}
+	7992.1.1 = {death="7992.1.1"}
+}
+100069149 = {
+	name="Скахаз"	# a lord
+	dynasty=69149
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34069149
+
+	7960.1.1 = {birth="7960.1.1"}
+	7976.1.1 = {add_trait=poor_warrior}
+	8038.1.1 = {death="8038.1.1"}
+}
+100269149 = {
+	name="Прендаль"	# a lord
+	dynasty=69149
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100069149
+
+	7985.1.1 = {birth="7985.1.1"}
+	8001.1.1 = {add_trait=poor_warrior}
+	8053.1.1 = {death="8053.1.1"}
+}
+100469149 = {
+	name="Газдор"	# a lord
+	dynasty=69149
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100269149
+
+	8011.1.1 = {birth="8011.1.1"}
+	8027.1.1 = {add_trait=poor_warrior}
+	8076.1.1 = {death="8076.1.1"}
+}
+100569149 = {
+	name="Юрхаз"	# a lord
+	dynasty=69149
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100469149
+
+	8032.1.1 = {birth="8032.1.1"}
+	8048.1.1 = {add_trait=skilled_warrior}
+	8085.1.1 = {death="8085.1.1"}
+}
+100969149 = {
+	name="Фендаль"	# a lord
+	dynasty=69149
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100569149
+
+	8058.1.1 = {birth="8058.1.1"}
+	8074.1.1 = {add_trait=skilled_warrior}
+	8107.1.1 = {death="8107.1.1"}
+}
+101069149 = {
+	name="Моргаз"	# a lord
+	dynasty=69149
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100969149
+
+	8089.1.1 = {birth="8089.1.1"}
+	8105.1.1 = {add_trait=poor_warrior}
+	8144.1.1 = {death="8144.1.1"}
+}
+101269149 = {
+	name="Моргаз"	# a lord
+	dynasty=69149
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101069149
+
+	8118.1.1 = {birth="8118.1.1"}
+	8134.1.1 = {add_trait=poor_warrior}
+	8153.1.1 = {death="8153.1.1"}
+}
+101369149 = {
+	name="Фендаль"	# a lord
+	dynasty=69149
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101269149
+
+	8136.1.1 = {birth="8136.1.1"}
+	8152.1.1 = {add_trait=poor_warrior}
+	8181.1.1 = {death="8181.1.1"}
+}
+101769149 = {
+	name="Резнак"	# a lord
+	dynasty=69149
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101369149
+
+	8157.1.1 = {birth="8157.1.1"}
+	8173.1.1 = {add_trait=poor_warrior}
+	8201.1.1 = {death="8201.1.1"}
+}
+101969149 = {
+	name="Фендаль"	# a lord
+	dynasty=69149
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101769149
+
+	8178.1.1 = {birth="8178.1.1"}
+	8194.1.1 = {add_trait=poor_warrior}
+	8220.1.1 = {death="8220.1.1"}
+}
+102069149 = {
+	name="Еццан"	# a lord
+	dynasty=69149
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101969149
+
+	8197.1.1 = {birth="8197.1.1"}
+	8213.1.1 = {add_trait=master_warrior}
+	8215.1.1 = {add_spouse=402069149}
+	8237.1.1 = {death="8237.1.1"}
+}
+402069149 = {
+	name="Тезза"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+
+	8197.1.1 = {birth="8197.1.1"}
+	8237.1.1 = {death="8237.1.1"}
+}
+102469149 = {
+	name="Аззак"	# a lord
+	dynasty=69149
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102069149
+	mother=402069149
+
+	8217.1.1 = {birth="8217.1.1"}
+	8233.1.1 = {add_trait=trained_warrior}
+	8235.1.1 = {add_spouse=402469149}
+	8286.1.1 = {death="8286.1.1"}
+}
+402469149 = {
+	name="Хаззаара"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+
+	8217.1.1 = {birth="8217.1.1"}
+	8286.1.1 = {death="8286.1.1"}
+}
+102569149 = {
+	name="Джецана"	# not a lord
+	female=yes
+	dynasty=69149
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102069149
+	mother=402069149
+
+	8218.1.1 = {birth="8218.1.1"}
+	8283.1.1 = {death="8283.1.1"}
+}
+102669149 = {
+	name="Граздан"	# a lord
+	dynasty=69149
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102469149
+	mother=402469149
+
+	8250.1.1 = {birth="8250.1.1"}
+	8266.1.1 = {add_trait=poor_warrior}
+	8268.1.1 = {add_spouse=402669149}
+}
+402669149 = {
+	name="Тезза"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+
+	8250.1.1 = {birth="8250.1.1"}
+}
+102769149 = {
+	name="Барказ"	# not a lord
+	dynasty=69149
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102469149
+	mother=402469149
+
+	8241.1.1 = {birth="8241.1.1"}
+	8257.1.1 = {add_trait=poor_warrior}
+}
+102869149 = {
+	name="Кразнис"	# not a lord
+	dynasty=69149
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102469149
+	mother=402469149
+
+	8243.1.1 = {birth="8243.1.1"}
+	8259.1.1 = {add_trait=skilled_warrior}
+	8277.1.1 = {death="8277.1.1"}
+}
+102969149 = {
+	name="Фендаль"	# not a lord
+	dynasty=69149
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102669149
+	mother=402669149
+
+	8271.1.1 = {birth="8271.1.1"}
+	8287.1.1 = {add_trait=poor_warrior}
+}
+103069149 = {
+	name="Сецка"	# not a lord
+	female=yes
+	dynasty=69149
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102669149
+	mother=402669149
+
+	8273.1.1 = {birth="8273.1.1"}
+}
+103169149 = {
+	name="Дхаццар"	# not a lord
+	female=yes
+	dynasty=69149
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102669149
+	mother=402669149
+
+	8276.1.1 = {birth="8276.1.1"}
+}
+103269149 = {
+	name="Фездар"	# not a lord
+	dynasty=69149
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102669149
+	mother=402669149
+
+	8279.1.1 = {birth="8279.1.1"}
+	8295.1.1 = {add_trait=skilled_warrior}
+}
+
+### House Zarghaz
+34569150 = {
+	name="Маздан"	# a lord
+	dynasty=69150
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	7812.1.1 = {birth="7812.1.1"}
+	7875.1.1 = {death="7875.1.1"}
+}
+34469150 = {
+	name="Ракнак"	# a lord
+	dynasty=69150
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34569150
+	
+	7840.1.1 = {birth="7840.1.1"}
+	7899.1.1 = {death="7899.1.1"}
+}
+34369150 = {
+	name="Аззхак"	# a lord
+	dynasty=69150
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34469150
+	
+	7865.1.1 = {birth="7865.1.1"}
+	7920.1.1 = {death="7920.1.1"}
+}
+34269150 = {
+	name="Пецар"	# a lord
+	dynasty=69150
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34369150
+	
+	7889.1.1 = {birth="7889.1.1"}
+	7943.1.1 = {death="7943.1.1"}
+}
+34169150 = {
+	name="Граздан"	# a lord
+	dynasty=69150
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34269150
+	
+	7907.1.1 = {birth="7907.1.1"}
+	7972.1.1 = {death="7972.1.1"}
+}
+34069150 = {
+	name="Ознак"	# a lord
+	dynasty=69150
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34169150
+	
+	7931.1.1 = {birth="7931.1.1"}
+	7997.1.1 = {death="7997.1.1"}
+}
+100069150 = {
+	name="Моргаз"	# a lord
+	dynasty=69150
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34069150
+
+	7955.1.1 = {birth="7955.1.1"}
+	7971.1.1 = {add_trait=poor_warrior}
+	8032.1.1 = {death="8032.1.1"}
+}
+100169150 = {
+	name="Ярхаз"	# a lord
+	dynasty=69150
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100069150
+
+	7980.1.1 = {birth="7980.1.1"}
+	7996.1.1 = {add_trait=trained_warrior}
+	8043.1.1 = {death="8043.1.1"}
+}
+100469150 = {
+	name="Мезон"	# a lord
+	dynasty=69150
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100169150
+
+	8008.1.1 = {birth="8008.1.1"}
+	8024.1.1 = {add_trait=poor_warrior}
+	8051.1.1 = {death="8051.1.1"}
+}
+100769150 = {
+	name="Резнак"	# a lord
+	dynasty=69150
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100469150
+
+	8040.1.1 = {birth="8040.1.1"}
+	8056.1.1 = {add_trait=trained_warrior}
+	8106.1.1 = {death="8106.1.1"}
+}
+101069150 = {
+	name="Прендаль"	# a lord
+	dynasty=69150
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100769150
+
+	8075.1.1 = {birth="8075.1.1"}
+	8091.1.1 = {add_trait=poor_warrior}
+	8124.1.1 = {death="8124.1.1"}
+}
+101269150 = {
+	name="Хиздар"	# a lord
+	dynasty=69150
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101069150
+
+	8102.1.1 = {birth="8102.1.1"}
+	8118.1.1 = {add_trait=trained_warrior}
+	8136.1.1 = {death = {death_reason = death_battle}}
+}
+101369150 = {
+	name="Царак"	# a lord
+	dynasty=69150
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101269150
+
+	8129.1.1 = {birth="8129.1.1"}
+	8145.1.1 = {add_trait=poor_warrior}
+	8175.1.1 = {death="8175.1.1"}
+}
+102069150 = {
+	name="Прендаль"	# a lord
+	dynasty=69150
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101369150
+
+	8158.1.1 = {birth="8158.1.1"}
+	8174.1.1 = {add_trait=poor_warrior}
+	8219.1.1 = {death="8219.1.1"}
+}
+102169150 = {
+	name="Фездар"	# a lord
+	dynasty=69150
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102069150
+
+	8180.1.1 = {birth="8180.1.1"}
+	8196.1.1 = {add_trait=poor_warrior}
+	8222.1.1 = {death="8222.1.1"}
+}
+102469150 = {
+	name="Резнак"	# a lord
+	dynasty=69150
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102169150
+
+	8215.1.1 = {birth="8215.1.1"}
+	8231.1.1 = {add_trait=skilled_warrior}
+	8233.1.1 = {add_spouse=402469150}
+	8274.1.1 = {death="8274.1.1"}
+}
+402469150 = {
+	name="Галацца"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+
+	8215.1.1 = {birth="8215.1.1"}
+	8274.1.1 = {death="8274.1.1"}
+}
+102769150 = {
+	name="Пецар"	# a lord
+	dynasty=69150
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102469150
+	mother=402469150
+
+	8240.1.1 = {birth="8240.1.1"}
+	8256.1.1 = {add_trait=skilled_warrior}
+	8258.1.1 = {add_spouse=402769150}
+	8284.1.1 = {death="8284.1.1"}
+}
+402769150 = {
+	name="Селеззка"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+
+	8240.1.1 = {birth="8240.1.1"}
+	8284.1.1 = {death="8284.1.1"}
+}
+102869150 = {
+	name="Геззелла"	# not a lord
+	female=yes
+	dynasty=69150
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102769150
+	mother=402769150
+
+	8267.1.1 = {birth="8267.1.1"}
+}
+102969150 = {
+	name="Фендаль"	# a lord
+	dynasty=69150
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102769150
+	mother=402769150
+
+	8268.1.1 = {birth="8268.1.1"}
+	8284.1.1 = {add_trait=poor_warrior}
+	8286.1.1 = {add_spouse=402969150}
+}
+402969150 = {
+	name="Ецца"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+
+	8268.1.1 = {birth="8268.1.1"}
+}
+103069150 = {
+	name="Резнак"	# not a lord
+	dynasty=69150
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102969150
+	mother=402969150
+
+	8287.1.1 = {birth="8287.1.1"}
+	8303.1.1 = {add_trait=poor_warrior}
+}
+103169150 = {
+	name="Маздан"	# not a lord
+	dynasty=69150
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102969150
+	mother=402969150
+
+	8290.1.1 = {birth="8290.1.1"}
+	8306.1.1 = {add_trait=poor_warrior}
+}
+103269150 = {
+	name="Фездар"	# not a lord
+	dynasty=69150
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102969150
+	mother=402969150
+
+	8293.1.1 = {birth="8293.1.1"}
+	8309.1.1 = {add_trait=trained_warrior}
+}
+103369150 = {
+	name="Юрхаз"	# not a lord
+	dynasty=69150
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102969150
+	mother=402969150
+
+	8295.1.1 = {birth="8295.1.1"}
+	8311.1.1 = {add_trait=poor_warrior}
+}
+103469150 = {
+	name="Тезза"	# not a lord
+	female=yes
+	dynasty=69150
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102969150
+	mother=402969150
+
+	8298.1.1 = {birth="8298.1.1"}
+}
+
+### House Bezzlar
+34469151 = {
+	name="Драказ"	# a lord
+	dynasty=69151
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	7822.1.1 = {birth="7822.1.1"}
+	7883.1.1 = {death="7883.1.1"}
+}
+34369151 = {
+	name="Граздан"	# a lord
+	dynasty=69151
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34469151
+	
+	7855.1.1 = {birth="7855.1.1"}
+	7910.1.1 = {death="7910.1.1"}
+}
+34269151 = {
+	name="Аззак"	# a lord
+	dynasty=69151
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34369151
+	
+	7878.1.1 = {birth="7878.1.1"}
+	7929.1.1 = {death="7929.1.1"}
+}
+34169151 = {
+	name="Фендаль"	# a lord
+	dynasty=69151
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34269151
+	
+	7901.1.1 = {birth="7901.1.1"}
+	7953.1.1 = {death="7953.1.1"}
+}
+34069151 = {
+	name="Зазхан"	# a lord
+	dynasty=69151
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34169151
+	
+	7926.1.1 = {birth="7926.1.1"}
+	7987.1.1 = {death="7987.1.1"}
+}
+100069151 = {
+	name="Кразнис"	# a lord
+	dynasty=69151
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34069151
+
+	7958.1.1 = {birth="7958.1.1"}
+	7974.1.1 = {add_trait=poor_warrior}
+	8039.1.1 = {death="8039.1.1"}
+}
+100169151 = {
+	name="Барказ"	# a lord
+	dynasty=69151
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100069151
+
+	7987.1.1 = {birth="7987.1.1"}
+	8003.1.1 = {add_trait=trained_warrior}
+	8064.1.1 = {death="8064.1.1"}
+}
+100769151 = {
+	name="Мархаз"	# a lord
+	dynasty=69151
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100169151
+
+	8018.1.1 = {birth="8018.1.1"}
+	8034.1.1 = {add_trait=poor_warrior}
+	8076.1.1 = {death="8076.1.1"}
+}
+101169151 = {
+	name="Кразнис"	# a lord
+	dynasty=69151
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100769151
+
+	8059.1.1 = {birth="8059.1.1"}
+	8075.1.1 = {add_trait=trained_warrior}
+	8107.1.1 = {death="8107.1.1"}
+}
+101269151 = {
+	name="Пецар"	# a lord
+	dynasty=69151
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101169151
+
+	8083.1.1 = {birth="8083.1.1"}
+	8099.1.1 = {add_trait=poor_warrior}
+	8160.1.1 = {death="8160.1.1"}
+}
+101669151 = {
+	name="Миклаз"	# a lord
+	dynasty=69151
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101269151
+
+	8121.1.1 = {birth="8121.1.1"}
+	8137.1.1 = {add_trait=poor_warrior}
+	8164.1.1 = {death="8164.1.1"}
+}
+101769151 = {
+	name="Мезон"	# a lord
+	dynasty=69151
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101669151
+
+	8149.1.1 = {birth="8149.1.1"}
+	8165.1.1 = {add_trait=master_warrior}
+	8225.1.1 = {death="8225.1.1"}
+}
+102169151 = {
+	name="Маздан"	# a lord
+	dynasty=69151
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101769151
+
+	8186.1.1 = {birth="8186.1.1"}
+	8202.1.1 = {add_trait=skilled_warrior}
+	8233.1.1 = {death="8233.1.1"}
+}
+102369151 = {
+	name="Гразхар"	# a lord
+	dynasty=69151
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102169151
+
+	8206.1.1 = {birth="8206.1.1"}
+	8222.1.1 = {add_trait=poor_warrior}
+	8224.1.1 = {add_spouse=402369151}
+	8265.1.1 = {death="8265.1.1"}
+}
+402369151 = {
+	name="Эззара"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+
+	8206.1.1 = {birth="8206.1.1"}
+	8265.1.1 = {death="8265.1.1"}
+}
+102669151 = {
+	name="Хиздар"	# a lord
+	dynasty=69151
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102369151
+	mother=402369151
+
+	8232.1.1 = {birth="8232.1.1"}
+	8248.1.1 = {add_trait=poor_warrior}
+	8250.1.1 = {add_spouse=402669151}
+}
+402669151 = {
+	name="Геззелла"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+
+	8232.1.1 = {birth="8232.1.1"}
+}
+102769151 = {
+	name="Юрхаз"	# not a lord
+	dynasty=69151
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102669151
+	mother=402669151
+
+	8253.1.1 = {birth="8253.1.1"}
+	8269.1.1 = {add_trait=poor_warrior}
+}
+102869151 = {
+	name="Геззелла"	# not a lord
+	female=yes
+	dynasty=69151
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102669151
+	mother=402669151
+
+	8256.1.1 = {birth="8256.1.1"}
+}
+102969151 = {
+	name="Тезза"	# not a lord
+	female=yes
+	dynasty=69151
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102669151
+	mother=402669151
+
+	8259.1.1 = {birth="8259.1.1"}
+}
+
+### House Riznahz
+34469152 = {
+	name="Горган"	# a lord
+	dynasty=69152
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	7834.1.1 = {birth="7834.1.1"}
+	7879.1.1 = {death="7879.1.1"}
+}
+34369152 = {
+	name="Зеццан"	# a lord
+	dynasty=69152
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34469152
+	
+	7859.1.1 = {birth="7859.1.1"}
+	7905.1.1 = {death="7905.1.1"}
+}
+34269152 = {
+	name="Скахаз"	# a lord
+	dynasty=69152
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34369152
+	
+	7886.1.1 = {birth="7886.1.1"}
+	7959.1.1 = {death="7959.1.1"}
+}
+34169152 = {
+	name="Разлар"	# a lord
+	dynasty=69152
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34269152
+	
+	7913.1.1 = {birth="7913.1.1"}
+	7981.1.1 = {death="7981.1.1"}
+}
+34069152 = {
+	name="Гадхаз"	# a lord
+	dynasty=69152
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34169152
+	
+	7936.1.1 = {birth="7936.1.1"}
+	7995.1.1 = {death="7995.1.1"}
+}
+100069152 = {
+	name="Аззак"	# a lord
+	dynasty=69152
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34069152
+
+	7959.1.1 = {birth="7959.1.1"}
+	7975.1.1 = {add_trait=poor_warrior}
+	8036.1.1 = {death="8036.1.1"}
+}
+100269152 = {
+	name="Фездар"	# a lord
+	dynasty=69152
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100069152
+
+	7990.1.1 = {birth="7990.1.1"}
+	8006.1.1 = {add_trait=skilled_warrior}
+	8058.1.1 = {death="8058.1.1"}
+}
+100669152 = {
+	name="Горзак"	# a lord
+	dynasty=69152
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100269152
+
+	8013.1.1 = {birth="8013.1.1"}
+	8029.1.1 = {add_trait=poor_warrior}
+	8073.1.1 = {death="8073.1.1"}
+}
+100869152 = {
+	name="Резнак"	# a lord
+	dynasty=69152
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100669152
+
+	8046.1.1 = {birth="8046.1.1"}
+	8062.1.1 = {add_trait=trained_warrior}
+	8100.1.1 = {death="8100.1.1"}
+}
+101069152 = {
+	name="Царак"	# a lord
+	dynasty=69152
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100869152
+
+	8081.1.1 = {birth="8081.1.1"}
+	8097.1.1 = {add_trait=trained_warrior}
+	8135.1.1 = {death="8135.1.1"}
+}
+101269152 = {
+	name="Моргаз"	# a lord
+	dynasty=69152
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101069152
+
+	8114.1.1 = {birth="8114.1.1"}
+	8130.1.1 = {add_trait=poor_warrior}
+	8166.1.1 = {death="8166.1.1"}
+}
+101669152 = {
+	name="Харгаз"	# a lord
+	dynasty=69152
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101269152
+
+	8138.1.1 = {birth="8138.1.1"}
+	8154.1.1 = {add_trait=skilled_warrior}
+	8179.1.1 = {death="8179.1.1"}
+}
+102169152 = {
+	name="Гразхан"	# a lord
+	dynasty=69152
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101669152
+
+	8166.1.1 = {birth="8166.1.1"}
+	8182.1.1 = {add_trait=poor_warrior}
+	8233.1.1 = {death="8233.1.1"}
+}
+102369152 = {
+	name="Юрхаз"	# a lord
+	dynasty=69152
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102169152
+
+	8191.1.1 = {birth="8191.1.1"}
+	8207.1.1 = {add_trait=poor_warrior}
+	8255.1.1 = {death = {death_reason = death_accident}}
+}
+102469152 = {
+	name="Моргаз"	# a lord
+	dynasty=69152
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102369152
+
+	8209.1.1 = {birth="8209.1.1"}
+	8225.1.1 = {add_trait=trained_warrior}
+	8227.1.1 = {add_spouse=402469152}
+	8268.1.1 = {death="8268.1.1"}
+}
+402469152 = {
+	name="Зеллазара"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+
+	8209.1.1 = {birth="8209.1.1"}
+	8268.1.1 = {death="8268.1.1"}
+}
+102869152 = {
+	name="Маздан"	# a lord
+	dynasty=69152
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102469152
+	mother=402469152
+
+	8231.1.1 = {birth="8231.1.1"}
+	8247.1.1 = {add_trait=skilled_warrior}
+	8249.1.1 = {add_spouse=402869152}
+	8298.1.1 = {death="8298.1.1"}
+}
+402869152 = {
+	name="Аззара"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+
+	8231.1.1 = {birth="8231.1.1"}
+	8298.1.1 = {death="8298.1.1"}
+}
+102969152 = {
+	name="Юрхаз"	# not a lord
+	dynasty=69152
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102469152
+	mother=402469152
+
+	8233.1.1 = {birth="8233.1.1"}
+	8249.1.1 = {add_trait=trained_warrior}
+	8289.1.1 = {death="8289.1.1"}
+}
+103069152 = {
+	name="Царак"	# not a lord
+	dynasty=69152
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102469152
+	mother=402469152
+
+	8234.1.1 = {birth="8234.1.1"}
+	8250.1.1 = {add_trait=skilled_warrior}
+	8294.1.1 = {death="8294.1.1"}
+}
+103169152 = {
+	name="Бархаз"	# a lord
+	dynasty=69152
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102869152
+	mother=402869152
+
+	8259.1.1 = {birth="8259.1.1"}
+	8275.1.1 = {add_trait=poor_warrior}
+	8277.1.1 = {add_spouse=403169152}
+}
+403169152 = {
+	name="Ецца"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+
+	8259.1.1 = {birth="8259.1.1"}
+}
+103269152 = {
+	name="Дхаццар"	# not a lord
+	female=yes
+	dynasty=69152
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=103169152
+	mother=403169152
+
+	8282.1.1 = {birth="8282.1.1"}
+}
+103369152 = {
+	name="Мезон"	# not a lord
+	dynasty=69152
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=103169152
+	mother=403169152
+
+	8283.1.1 = {birth="8283.1.1"}
+	8299.1.1 = {add_trait=poor_warrior}
+}
+103469152 = {
+	name="Эззара"	# not a lord
+	female=yes
+	dynasty=69152
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=103169152
+	mother=403169152
+
+	8284.1.1 = {birth="8284.1.1"}
+}
+103569152 = {
+	name="Хаззаара"	# not a lord
+	female=yes
+	dynasty=69152
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=103169152
+	mother=403169152
+
+	8287.1.1 = {birth="8287.1.1"}
+}
+
+### House Лархак
+34469153 = {
+	name="Ярхаз"	# a lord
+	dynasty=69153
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	7823.1.1 = {birth="7823.1.1"}
+	7875.1.1 = {death="7875.1.1"}
+}
+34369153 = {
+	name="Граздан"	# a lord
+	dynasty=69153
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34469153
+	
+	7848.1.1 = {birth="7848.1.1"}
+	7899.1.1 = {death="7899.1.1"}
+}
+34269153 = {
+	name="Ухзак"	# a lord
+	dynasty=69153
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34369153
+	
+	7871.1.1 = {birth="7871.1.1"}
+	7919.1.1 = {death="7919.1.1"}
+}
+34169153 = {
+	name="Озрак"	# a lord
+	dynasty=69153
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34269153
+	
+	7902.1.1 = {birth="7902.1.1"}
+	7949.1.1 = {death="7949.1.1"}
+}
+34069153 = {
+	name="Ярдар"	# a lord
+	dynasty=69153
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34169153
+	
+	7925.1.1 = {birth="7925.1.1"}
+	7991.1.1 = {death="7991.1.1"}
+}
+100069153 = {
+	name="Маздан"	# a lord
+	dynasty=69153
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=34069153
+	
+	7958.1.1 = {birth="7958.1.1"}
+	7974.1.1 = {add_trait=poor_warrior}
+	8037.1.1 = {death="8037.1.1"}
+}
+100169153 = {
+	name="Гразхан"	# a lord
+	dynasty=69153
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100069153
+
+	7982.1.1 = {birth="7982.1.1"}
+	7998.1.1 = {add_trait=poor_warrior}
+	8062.1.1 = {death="8062.1.1"}
+}
+100769153 = {
+	name="Скахаз"	# a lord
+	dynasty=69153
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100169153
+
+	8004.1.1 = {birth="8004.1.1"}
+	8020.1.1 = {add_trait=poor_warrior}
+	8080.1.1 = {death="8080.1.1"}
+}
+101069153 = {
+	name="Гразхан"	# a lord
+	dynasty=69153
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100769153
+
+	8028.1.1 = {birth="8028.1.1"}
+	8044.1.1 = {add_trait=poor_warrior}
+	8087.1.1 = {death="8087.1.1"}
+}
+101169153 = {
+	name="Скахаз"	# a lord
+	dynasty=69153
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101069153
+
+	8053.1.1 = {birth="8053.1.1"}
+	8069.1.1 = {add_trait=poor_warrior}
+	8106.1.1 = {death="8106.1.1"}
+}
+101469153 = {
+	name="Фездар"	# a lord
+	dynasty=69153
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101169153
+
+	8071.1.1 = {birth="8071.1.1"}
+	8087.1.1 = {add_trait=trained_warrior}
+	8117.1.1 = {death="8117.1.1"}
+}
+102269153 = {
+	name="Газдор"	# a lord
+	dynasty=69153
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101469153
+
+	8103.1.1 = {birth="8103.1.1"}
+	8119.1.1 = {add_trait=poor_warrior}
+	8136.1.1 = {death="8136.1.1"}
+}
+102369153 = {
+	name="Хазнак"	# a lord
+	dynasty=69153
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102269153
+
+	8129.1.1 = {birth="8129.1.1"}
+	8145.1.1 = {add_trait=trained_warrior}
+	8199.1.1 = {death="8199.1.1"}
+}
+102769153 = {
+	name="Миклаз"	# a lord
+	dynasty=69153
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102369153
+
+	8155.1.1 = {birth="8155.1.1"}
+	8171.1.1 = {add_trait=trained_warrior}
+	8221.1.1 = {death="8221.1.1"}
+}
+102969153 = {
+	name="Газдор"	# a lord
+	dynasty=69153
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102769153
+
+	8177.1.1 = {birth="8177.1.1"}
+	8193.1.1 = {add_trait=poor_warrior}
+	8236.1.1 = {death="8236.1.1"}
+}
+103269153 = {
+	name="Бархаз"	# a lord
+	dynasty=69153
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102969153
+
+	8202.1.1 = {birth="8202.1.1"}
+	8218.1.1 = {add_trait=poor_warrior}
+	8251.1.1 = {death="8251.1.1"}
+}
+103469153 = {
+	name="Хиздар"	# a lord
+	dynasty=69153
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=103269153
+
+	8230.1.1 = {birth="8230.1.1"}
+	8246.1.1 = {add_trait=skilled_warrior}
+	8248.1.1 = {add_spouse=403469153}
+	8277.1.1 = {death="8277.1.1"}
+}
+403469153 = {
+	name="Меззала"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+
+	8230.1.1 = {birth="8230.1.1"}
+	8277.1.1 = {death="8277.1.1"}
+}
+103769153 = {
+	name="Аццея"	# not a lord
+	female=yes
+	dynasty=69153
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=103469153
+	mother=403469153
+
+	8249.1.1 = {birth="8249.1.1"}
+}
+103869153 = {
+	name="Барказ"	# a lord
+	dynasty=69153
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=103469153
+	mother=403469153
+
+	8251.1.1 = {birth="8251.1.1"}
+	8267.1.1 = {add_trait=skilled_warrior}
+	8269.1.1 = {add_spouse=403869153}
+}
+403869153 = {
+	name="Хаззаара"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+
+	8251.1.1 = {birth="8251.1.1"}
+}
+103969153 = {
+	name="Ярхаз"	# not a lord
+	dynasty=69153
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=103469153
+	mother=403469153
+
+	8252.1.1 = {birth="8252.1.1"}
+	8268.1.1 = {add_trait=poor_warrior}
+}
+104069153 = {
+	name="Кразнис"	# not a lord
+	dynasty=69153
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=103469153
+	mother=403469153
+
+	8254.1.1 = {birth="8254.1.1"}
+	8270.1.1 = {add_trait=skilled_warrior}
+	8285.1.1 = {death="8285.1.1"}
+}
+104169153 = {
+	name="Эззара"	# not a lord
+	female=yes
+	dynasty=69153
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=103469153
+	mother=403469153
+
+	8256.1.1 = {birth="8256.1.1"}
+}
+104269153 = {
+	name="Галацца"	# not a lord
+	female=yes
+	dynasty=69153
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=103869153
+	mother=403869153
+
+	8284.1.1 = {birth="8284.1.1"}
+}
+104369153 = {
+	name="Зеллазара"	# not a lord
+	female=yes
+	dynasty=69153
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=103869153
+	mother=403869153
+
+	8287.1.1 = {birth="8287.1.1"}
+}
+104469153 = {
+	name="Горзак"	# not a lord
+	dynasty=69153
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=103869153
+	mother=403869153
+
+	8290.1.1 = {birth="8290.1.1"}
+	8306.1.1 = {add_trait=poor_warrior}
+}
+104569153 = {
+	name="Тезза"	# not a lord
+	female=yes
+	dynasty=69153
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=103869153
+	mother=403869153
+
+	8291.1.1 = {birth="8291.1.1"}
+}
+
+### House Taraq
+34569154 = {
+	name="Лархак"	# a lord
+	dynasty=69154
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	7813.1.1 = {birth="7813.1.1"}
+	7874.1.1 = {death="7874.1.1"}
+}
+34469154 = {
+	name="Оззак"	# a lord
+	dynasty=69154
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34569154
+	
+	7840.1.1 = {birth="7840.1.1"}
+	7902.1.1 = {death="7902.1.1"}
+}
+34369154 = {
+	name="Прендаль"	# a lord
+	dynasty=69154
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34469154
+	
+	7858.1.1 = {birth="7858.1.1"}
+	7912.1.1 = {death="7912.1.1"}
+}
+34269154 = {
+	name="Граздан"	# a lord
+	dynasty=69154
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34369154
+	
+	7881.1.1 = {birth="7881.1.1"}
+	7935.1.1 = {death="7935.1.1"}
+}
+34169154 = {
+	name="Хиздар"	# a lord
+	dynasty=69154
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34269154
+	
+	7906.1.1 = {birth="7906.1.1"}
+	7959.1.1 = {death="7959.1.1"}
+}
+34069154 = {
+	name="Газдор"	# a lord
+	dynasty=69154
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34169154
+	
+	7929.1.1 = {birth="7929.1.1"}
+	7986.1.1 = {death="7986.1.1"}
+}
+100069154 = {
+	name="Граздан"	# a lord
+	dynasty=69154
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34069154
+
+	7957.1.1 = {birth="7957.1.1"}
+	7973.1.1 = {add_trait=poor_warrior}
+	8026.1.1 = {death="8026.1.1"}
+}
+100169154 = {
+	name="Мархаз"	# a lord
+	dynasty=69154
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100069154
+
+	7975.1.1 = {birth="7975.1.1"}
+	7991.1.1 = {add_trait=trained_warrior}
+	8036.1.1 = {death="8036.1.1"}
+}
+100469154 = {
+	name="Кразнис"	# a lord
+	dynasty=69154
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100169154
+
+	8002.1.1 = {birth="8002.1.1"}
+	8018.1.1 = {add_trait=poor_warrior}
+	8066.1.1 = {death="8066.1.1"}
+}
+100969154 = {
+	name="Прендаль"	# a lord
+	dynasty=69154
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100469154
+
+	8024.1.1 = {birth="8024.1.1"}
+	8040.1.1 = {add_trait=poor_warrior}
+	8091.1.1 = {death="8091.1.1"}
+}
+101169154 = {
+	name="Бархаз"	# a lord
+	dynasty=69154
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100969154
+
+	8050.1.1 = {birth="8050.1.1"}
+	8066.1.1 = {add_trait=trained_warrior}
+	8127.1.1 = {death="8127.1.1"}
+}
+101669154 = {
+	name="Мезон"	# a lord
+	dynasty=69154
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101169154
+
+	8077.1.1 = {birth="8077.1.1"}
+	8093.1.1 = {add_trait=trained_warrior}
+	8137.1.1 = {death="8137.1.1"}
+}
+101769154 = {
+	name="Гразхан"	# a lord
+	dynasty=69154
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101669154
+
+	8102.1.1 = {birth="8102.1.1"}
+	8118.1.1 = {add_trait=poor_warrior}
+	8148.1.1 = {death="8148.1.1"}
+}
+101869154 = {
+	name="Горзак"	# a lord
+	dynasty=69154
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101769154
+
+	8127.1.1 = {birth="8127.1.1"}
+	8143.1.1 = {add_trait=skilled_warrior}
+	8203.1.1 = {death="8203.1.1"}
+}
+102169154 = {
+	name="Резнак"	# a lord
+	dynasty=69154
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101869154
+
+	8156.1.1 = {birth="8156.1.1"}
+	8172.1.1 = {add_trait=poor_warrior}
+	8213.1.1 = {death="8213.1.1"}
+}
+102269154 = {
+	name="Фездар"	# a lord
+	dynasty=69154
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101869154
+
+	8158.1.1 = {birth="8158.1.1"}
+	8174.1.1 = {add_trait=trained_warrior}
+	8214.1.1 = {death="8214.1.1"}
+}
+102469154 = {
+	name="Царак"	# a lord
+	dynasty=69154
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102269154
+
+	8180.1.1 = {birth="8180.1.1"}
+	8196.1.1 = {add_trait=poor_warrior}
+	8222.1.1 = {death="8222.1.1"}
+}
+102969154 = {
+	name="Ярхаз"	# a lord
+	dynasty=69154
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102469154
+
+	8198.1.1 = {birth="8198.1.1"}
+	8214.1.1 = {add_trait=poor_warrior}
+	8216.1.1 = {add_spouse=402969154}
+	8231.1.1 = {death = {death_reason = death_battle}}
+}
+402969154 = {
+	name="Эззара"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+
+	8198.1.1 = {birth="8198.1.1"}
+	8231.1.1 = {death="8231.1.1"}
+}
+103269154 = {
+	name="Мархаз"	# a lord
+	dynasty=69154
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102969154
+	mother=402969154
+
+	8221.1.1 = {birth="8221.1.1"}
+	8237.1.1 = {add_trait=trained_warrior}
+	8239.1.1 = {add_spouse=403269154}
+	8288.1.1 = {death="8288.1.1"}
+}
+403269154 = {
+	name="Галацца"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+
+	8221.1.1 = {birth="8221.1.1"}
+	8288.1.1 = {death="8288.1.1"}
+}
+103369154 = {
+	name="Харгаз"	# not a lord
+	dynasty=69154
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102969154
+	mother=402969154
+
+	8223.1.1 = {birth="8223.1.1"}
+	8239.1.1 = {add_trait=trained_warrior}
+	8279.1.1 = {death="8279.1.1"}
+}
+103469154 = {
+	name="Юрхаз"	# not a lord
+	dynasty=69154
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102969154
+	mother=402969154
+
+	8226.1.1 = {birth="8226.1.1"}
+	8242.1.1 = {add_trait=trained_warrior}
+}
+103569154 = {
+	name="Зеллазара"	# not a lord
+	female=yes
+	dynasty=69154
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102969154
+	mother=402969154
+
+	8229.1.1 = {birth="8229.1.1"}
+	8298.1.1 = {death="8298.1.1"}
+}
+103669154 = {
+	name="Барказ"	# a lord
+	dynasty=69154
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=103269154
+	mother=403269154
+
+	8239.1.1 = {birth="8239.1.1"}
+	8255.1.1 = {add_trait=poor_warrior}
+	8257.1.1 = {add_spouse=403669154}
+}
+403669154 = {
+	name="Квецца"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+
+	8239.1.1 = {birth="8239.1.1"}
+}
+103769154 = {
+	name="Квазелла"	# not a lord
+	female=yes
+	dynasty=69154
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=103269154
+	mother=403269154
+
+	8242.1.1 = {birth="8242.1.1"}
+	8295.1.1 = {death="8295.1.1"}
+}
+103869154 = {
+	name="Газдор"	# not a lord
+	dynasty=69154
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=103269154
+	mother=403269154
+
+	8245.1.1 = {birth="8245.1.1"}
+	8261.1.1 = {add_trait=poor_warrior}
+}
+103969154 = {
+	name="Резнак"	# not a lord
+	dynasty=69154
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=103669154
+	mother=403669154
+
+	8266.1.1 = {birth="8266.1.1"}
+	8282.1.1 = {add_trait=trained_warrior}
+}
+104069154 = {
+	name="Тезза"	# not a lord
+	female=yes
+	dynasty=69154
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=103669154
+	mother=403669154
+
+	8267.1.1 = {birth="8267.1.1"}
+}
+104169154 = {
+	name="Горзак"	# not a lord
+	dynasty=69154
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=103669154
+	mother=403669154
+
+	8268.1.1 = {birth="8268.1.1"}
+	8284.1.1 = {add_trait=trained_warrior}
+}
+104269154 = {
+	name="Сецца"	# not a lord
+	female=yes
+	dynasty=69154
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=103669154
+	mother=403669154
+
+	8271.1.1 = {birth="8271.1.1"}
+}
+104369154 = {
+	name="Сецца"	# not a lord
+	female=yes
+	dynasty=69154
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=103669154
+	mother=403669154
+
+	8274.1.1 = {birth="8274.1.1"}
+}
+
+### House Marlaq
+34569155 = {
+	name="Разлар"	# a lord
+	dynasty=69155
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	7818.1.1 = {birth="7818.1.1"}
+	7869.1.1 = {death="7869.1.1"}
+}
+34469155 = {
+	name="Граздан"	# a lord
+	dynasty=69155
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34569155
+	
+	7844.1.1 = {birth="7844.1.1"}
+	7895.1.1 = {death="7895.1.1"}
+}
+34369155 = {
+	name="Бархаз"	# a lord
+	dynasty=69155
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34469155
+	
+	7869.1.1 = {birth="7869.1.1"}
+	7920.1.1 = {death="7920.1.1"}
+}
+34269155 = {
+	name="Кразнис"	# a lord
+	dynasty=69155
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34369155
+	
+	7892.1.1 = {birth="7892.1.1"}
+	7945.1.1 = {death="7945.1.1"}
+}
+34169155 = {
+	name="Пецар"	# a lord
+	dynasty=69155
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34269155
+	
+	7915.1.1 = {birth="7915.1.1"}
+	7963.1.1 = {death="7963.1.1"}
+}
+34069155 = {
+	name="Разлар"	# a lord
+	dynasty=69155
+	
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34169155
+	
+	7941.1.1 = {birth="7941.1.1"}
+	7993.1.1 = {death="7993.1.1"}
+}
+100069155 = {
+	name="Аззак"	# a lord
+	dynasty=69155
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34069155
+
+	7959.1.1 = {birth="7959.1.1"}
+	7975.1.1 = {add_trait=poor_warrior}
+	8035.1.1 = {death="8035.1.1"}
+}
+100369155 = {
+	name="Мезон"	# a lord
+	dynasty=69155
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100069155
+
+	7995.1.1 = {birth="7995.1.1"}
+	8011.1.1 = {add_trait=trained_warrior}
+	8051.1.1 = {death="8051.1.1"}
+}
+100569155 = {
+	name="Резнак"	# a lord
+	dynasty=69155
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100369155
+
+	8028.1.1 = {birth="8028.1.1"}
+	8044.1.1 = {add_trait=master_warrior}
+	8071.1.1 = {death="8071.1.1"}
+}
+100969155 = {
+	name="Граздан"	# a lord
+	dynasty=69155
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100569155
+
+	8059.1.1 = {birth="8059.1.1"}
+	8075.1.1 = {add_trait=skilled_warrior}
+	8119.1.1 = {death="8119.1.1"}
+}
+101469155 = {
+	name="Граздан"	# a lord
+	dynasty=69155
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100969155
+
+	8082.1.1 = {birth="8082.1.1"}
+	8098.1.1 = {add_trait=poor_warrior}
+	8123.1.1 = {death="8123.1.1"}
+}
+101769155 = {
+	name="Еццан"	# a lord
+	dynasty=69155
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101469155
+
+	8109.1.1 = {birth="8109.1.1"}
+	8125.1.1 = {add_trait=skilled_warrior}
+	8147.1.1 = {death="8147.1.1"}
+}
+101969155 = {
+	name="Фендаль"	# a lord
+	dynasty=69155
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101769155
+
+	8136.1.1 = {birth="8136.1.1"}
+	8152.1.1 = {add_trait=master_warrior}
+	8209.1.1 = {death="8209.1.1"}
+}
+102169155 = {
+	name="Горзак"	# a lord
+	dynasty=69155
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101969155
+
+	8167.1.1 = {birth="8167.1.1"}
+	8183.1.1 = {add_trait=skilled_warrior}
+	8238.1.1 = {death="8238.1.1"}
+}
+102369155 = {
+	name="Хазнак"	# a lord
+	dynasty=69155
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102169155
+
+	8192.1.1 = {birth="8192.1.1"}
+	8208.1.1 = {add_trait=poor_warrior}
+	8269.1.1 = {death="8269.1.1"}
+}
+102969155 = {
+	name="Резнак"	# a lord
+	dynasty=69155
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102369155
+
+	8222.1.1 = {birth="8222.1.1"}
+	8238.1.1 = {add_trait=trained_warrior}
+	8240.1.1 = {add_spouse=402969155}
+	8281.1.1 = {death="8281.1.1"}
+}
+402969155 = {
+	name="Дхаццар"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+
+	8222.1.1 = {birth="8222.1.1"}
+	8281.1.1 = {death="8281.1.1"}
+}
+103169155 = {
+	name="Теллеззара"	# not a lord
+	female=yes
+	dynasty=69155
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102969155
+	mother=402969155
+
+	8254.1.1 = {birth="8254.1.1"}
+}
+103269155 = {
+	name="Скахаз"	# a lord
+	dynasty=69155
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102969155
+	mother=402969155
+
+	8255.1.1 = {birth="8255.1.1"}
+	8271.1.1 = {add_trait=skilled_warrior}
+	8273.1.1 = {add_spouse=403269155}
+}
+403269155 = {
+	name="Сецца"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+
+	8255.1.1 = {birth="8255.1.1"}
+}
+103369155 = {
+	name="Ярхаз"	# not a lord
+	dynasty=69155
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102969155
+	mother=402969155
+
+	8256.1.1 = {birth="8256.1.1"}
+	8272.1.1 = {add_trait=poor_warrior}
+	8290.1.1 = {death="8290.1.1"}
+}
+103469155 = {
+	name="Аззара"	# not a lord
+	female=yes
+	dynasty=69155
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=102969155
+	mother=402969155
+
+	8257.1.1 = {birth="8257.1.1"}
+	8299.1.1 = {death="8299.1.1"}
+}
+103569155 = {
+	name="Хиздар"	# not a lord
+	dynasty=69155
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=103269155
+	mother=403269155
+
+	8282.1.1 = {birth="8282.1.1"}
+	8298.1.1 = {add_trait=master_warrior}
+}
+
+

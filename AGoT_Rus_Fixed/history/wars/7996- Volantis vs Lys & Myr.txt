@@ -1,0 +1,24 @@
+name = "Восстание Лисенийцев и Мирийцев"
+
+casus_belli={
+	casus_belli=cb_faction_independence
+	actor=1300263
+	recipient=100174396
+	landed_title=e_new_valyria
+	date=7996.1.1
+}
+
+7996.1.1 = {
+	add_defender = 100174396
+	add_attacker = 1300263
+	add_attacker = 150300516
+}
+
+7996.12.31 = {
+	rem_defender = 100174396
+	rem_attacker = 150300516
+	rem_attacker = 1300263
+}
+
+
+                                                                                                                                                                                                                                                                                                                                   

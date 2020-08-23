@@ -1,0 +1,24 @@
+name = "Нападение Одичалых на Стену"
+
+casus_belli={
+	casus_belli=AGOT_invasion
+	actor=174347
+	recipient=336
+	landed_title=d_the_wall
+	date=8299.1.4
+}
+
+8299.1.4 = {
+	add_defender = 336 # Jeor Mormont
+	add_attacker = 174347 #Mance
+	
+}
+8299.7.15 = {
+	add_defender = 4317 #Stannis
+}
+
+8299.11.12 = {
+	rem_defender = 4317
+	rem_defender = 336
+	rem_attacker = 174347
+}

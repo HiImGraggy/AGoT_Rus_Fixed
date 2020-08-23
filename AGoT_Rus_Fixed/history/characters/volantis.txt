@@ -1,0 +1,9014 @@
+#Historic Characters
+100367823 = {
+	name="Вхаласо"	# Triarch, ordered construction of the Long Bridge
+	
+	diplomacy=8
+	stewardship=9
+	intrigue=5
+	martial=4
+	learning=9
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	add_trait=triarch_statue
+	add_trait=diligent
+	add_trait=just
+	add_trait=charitable
+	add_trait=midas_touched
+	
+	give_nickname=nick_the_munificent
+
+	7400.1.1 = {birth="7400.1.1"}
+	7416.1.1 = {add_trait=trained_warrior}
+	7468.1.1 = {
+		effect_even_if_dead = { set_government_type = triarch_merchant_republic_government }
+		death="7468.1.1"
+	}
+}
+100467823 = {
+	name="Беличо"	# Triarch, renowned Volantene patriot
+	
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	martial=7
+	learning=3
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	add_trait = triarch_statue
+	add_trait = tiger
+	add_trait = ambitious
+	add_trait = proud
+	add_trait = authoritative
+	add_trait = brilliant_strategist
+	
+	7810.1.1 = {birth="7810.1.1"}
+	7826.1.1 = {add_trait=skilled_warrior}
+	7873.1.1 = {
+		effect_even_if_dead = { set_government_type = triarch_merchant_republic_government }
+		death = { death_reason = death_accident } #Eaten by giants
+	}
+}
+
+#############################
+### Major Merchant Houses ###
+#############################
+### House Maegyr
+344174371 = {
+	name="Матарис"	# a lord
+	dynasty=174371
+	
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	7830.1.1 = {birth="7830.1.1"}
+	7883.1.1 = {death="7883.1.1"}
+}
+343174371 = {
+	name="Каво"	# a lord
+	dynasty=174371
+	
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	father=344174371
+
+	7854.1.1 = {birth="7854.1.1"}
+	7910.1.1 = {death="7910.1.1"}
+}
+342174371 = {
+	name="Вогарро"	# a lord
+	dynasty=174371
+	
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	father=343174371
+
+	7878.1.1 = {birth="7878.1.1"}
+	7933.1.1 = {death="7933.1.1"}
+}
+341174371 = {
+	name="Бенерро"	# a lord
+	dynasty=174371
+	
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	father=342174371
+
+	7905.1.1 = {birth="7905.1.1"}
+	7956.1.1 = {death="7956.1.1"}
+}
+340174371 = {
+	name="Ориос"	# a lord
+	dynasty=174371
+	
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	father=341174371
+
+	7929.1.1 = {birth="7929.1.1"}
+	7975.1.1 = {death="7975.1.1"}
+}
+100174371 = {
+	name="Квохерис"	# a lord
+	dynasty=174371
+	
+	martial = 7
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	father=340174371
+	
+	add_trait=tough_soldier
+	add_trait=ambitious
+
+	7955.1.1 = {birth="7955.1.1"}
+	7971.1.1 = {add_trait=trained_warrior}
+	7975.1.1 = {
+		add_trait=tiger
+		effect = {
+			set_character_flag = triarch
+			give_minor_title = title_triarch
+		}	
+	}
+	7996.12.12 = { death= { death_reason = death_battle } }
+}
+101174371 = {
+	name="Матарис"	# a lord
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=100174371
+
+	7975.1.1 = {birth="7975.1.1"}
+	7991.1.1 = {add_trait=trained_warrior}
+	8011.1.1 = {death="8011.1.1"}
+}
+103174371 = {
+	name="Вогарро"	# a lord
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=101174371
+
+	7994.1.1 = {birth="7994.1.1"}
+	8010.1.1 = {add_trait=skilled_warrior}
+	8036.1.1 = {death="8036.1.1"}
+}
+104174371 = {
+	name="Матарис"	# a lord
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=101174371
+
+	7995.1.1 = {birth="7995.1.1"}
+	8011.1.1 = {add_trait=poor_warrior}
+	8052.1.1 = {death="8052.1.1"}
+}
+106174371 = {
+	name="Паркелло"	# a lord
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=103174371
+
+	8018.1.1 = {birth="8018.1.1"}
+	8034.1.1 = {add_trait=poor_warrior}
+	8065.1.1 = {death="8065.1.1"}
+}
+111174371 = {
+	name="Беличо"	# a lord
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=104174371
+
+	8030.1.1 = {birth="8030.1.1"}
+	8046.1.1 = {add_trait=trained_warrior}
+	8086.1.1 = {death="8086.1.1"}
+}
+115174371 = {
+	name="Бенерро"	# a lord
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=111174371
+
+	8057.1.1 = {birth="8057.1.1"}
+	8073.1.1 = {add_trait=trained_warrior}
+	8109.1.1 = {
+		death="8109.1.1"
+		add_trait=triarch_statue
+	}
+}
+116174371 = {
+	name="Эйнар"	# a lord
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=111174371
+
+	8058.1.1 = {birth="8058.1.1"}
+	8074.1.1 = {add_trait=trained_warrior}
+	8123.1.1 = {death="8123.1.1"}
+}
+119174371 = {
+	name="Мокорро"	# a lord
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=116174371
+
+	8078.1.1 = {birth="8078.1.1"}
+	8094.1.1 = {add_trait=trained_warrior}
+	8130.1.1 = {death="8130.1.1"}
+}
+120174371 = {
+	name="Джейкар"	# a lord
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=116174371
+
+	8081.1.1 = {birth="8081.1.1"}
+	8097.1.1 = {add_trait=trained_warrior}
+	8148.1.1 = {death="8148.1.1"}
+}
+122174371 = {
+	name="Донифос"	# a lord
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=119174371
+
+	8104.1.1 = {birth="8104.1.1"}
+	8120.1.1 = {add_trait=trained_warrior}
+	8170.1.1 = {death="8170.1.1"}
+}
+128174371 = {
+	name="Вогарро"	# a lord
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=120174371
+
+	8104.1.1 = {birth="8104.1.1"}
+	8120.1.1 = {add_trait=trained_warrior}
+	8152.1.1 = {death="8152.1.1"}
+}
+130174371 = {
+	name="Хоронно"	# a lord
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=128174371
+
+	8124.1.1 = {birth="8124.1.1"}
+	8140.1.1 = {add_trait=skilled_warrior}
+	8187.1.1 = {death="8187.1.1"}
+}
+131174371 = {
+	name="Квохерис"	# not a lord
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=128174371
+
+	8126.1.1 = {birth="8126.1.1"}
+	8142.1.1 = {add_trait=poor_warrior}
+	8177.1.1 = {death="8177.1.1"}
+}
+134174371 = {
+	name="Кава"	# a lord
+	female=yes
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=130174371
+
+	8150.1.1 = {birth="8150.1.1"}
+	8203.1.1 = {death="8203.1.1"}
+}
+136174371 = {
+	name="Бенерро"	# a lord
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=131174371
+
+	8148.1.1 = {birth="8148.1.1"}
+	8164.1.1 = {add_trait=trained_warrior}
+	8221.1.1 = {death="8221.1.1"}
+}
+139174371 = {
+	name="Орис"	# a lord
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=136174371
+
+	8178.1.1 = {birth="8178.1.1"}
+	8194.1.1 = {add_trait=trained_warrior}
+	8241.1.1 = {death = {death_reason = death_accident}}
+}
+141174371 = {
+	name="Квохерис"	# not a lord
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=136174371
+
+	8182.1.1 = {birth="8182.1.1"}
+	8198.1.1 = {add_trait=poor_warrior}
+	8237.1.1 = {death="8237.1.1"}
+}
+146174371 = {
+	name="Квохерис"	# a lord
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=141174371
+
+	8214.1.1 = {birth="8214.1.1"}
+	8230.1.1 = {add_trait=poor_warrior}
+	8232.1.1 = {add_spouse=446174371}
+	8267.1.1 = {death="8267.1.1"}
+}
+446174371 = {
+	name="Донифа"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8214.1.1 = {birth="8214.1.1"}
+	8267.1.1 = {death="8267.1.1"}
+}
+147174371 = {
+	name="Малакво"	# Canon, Малакво Maegyr, a Triarch
+	dynasty=174371
+	
+	martial = 8 #Tiger
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 8
+	learning = 4
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	add_trait="diligent"
+	add_trait="proud"
+	add_trait="deceitful"
+	add_trait="gregarious"
+	add_trait="ambitious"
+	add_trait="skilled_tactician"
+
+	father=146174371
+	mother=446174371
+
+	8235.1.1 = {
+		birth="8235.1.1" 
+		effect = { health = 2 } 
+	}
+	8251.1.1 = {add_trait=trained_warrior}
+	8253.1.1 = {add_spouse=447174371}
+	8257.1.1 = {add_trait=tiger}
+}
+447174371 = {
+	name="Трианна"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8235.1.1 = {birth="8235.1.1"}
+}
+148174371 = {
+	name="Сиена"	# not a lord
+	female=yes
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=146174371
+	mother=446174371
+
+	8238.1.1 = {birth="8238.1.1"}
+	8295.1.1 = {death="8295.1.1"}
+}
+150174371 = {
+	name="Мокорра"	# not a lord
+	female=yes
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=147174371
+	mother=447174371
+
+	8255.1.1 = {birth="8255.1.1"}
+}
+151174371 = {
+	name="Вейрон"	# not a lord
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=147174371
+	mother=447174371
+
+	8258.1.1 = {birth="8258.1.1"}
+	8274.1.1 = {add_trait=trained_warrior}
+	8276.1.1 = {add_spouse=451174371}
+}
+451174371 = {
+	name="Талиса"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8258.1.1 = {birth="8258.1.1"}
+}
+152174371 = {
+	name="Малакво"	# not a lord
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=147174371
+	mother=447174371
+
+	8259.1.1 = {birth="8259.1.1"}
+	8275.1.1 = {add_trait=poor_warrior}
+	8277.1.1 = {add_spouse=452174371}
+}
+452174371 = {
+	name="Рейль"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8259.1.1 = {birth="8259.1.1"}
+}
+153174371 = {
+	name="Вейкар"	# not a lord
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=151174371
+	mother=451174371
+
+	8291.1.1 = {birth="8291.1.1"}
+}
+154174371 = {
+	name="Рейис"	# not a lord
+	female=yes
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=151174371
+	mother=451174371
+
+	8293.1.1 = {birth="8293.1.1"}
+}
+155174371 = {
+	name="Талиса"	# not a lord
+	female=yes
+	dynasty=174371
+	
+	learning=12
+	intrigue=9
+	martial=1
+	stewardship=4
+	diplomacy=8
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	add_trait=fair
+	add_trait=kind
+	add_trait=just
+	add_trait=diligent
+	add_trait=intricate_webweaver
+
+	father=152174371
+	mother=452174371
+
+	8279.1.1 = {birth="8279.1.1"}
+}
+156174371 = {
+	name="Каво"	# not a lord
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=152174371
+	mother=452174371
+
+	8281.1.1 = {birth="8281.1.1"}
+	8297.1.1 = {add_trait=skilled_warrior}
+}
+157174371 = {
+	name="Рейлинор"	# not a lord
+	female=yes
+	dynasty=174371
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=152174371
+	mother=452174371
+
+	8284.1.1 = {birth="8284.1.1"}
+}
+
+### House Vhassar
+344174373 = {
+	name="Хоронно"	# a lord
+	dynasty=174373
+	
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	7820.1.1 = {birth="7820.1.1"}
+	7878.1.1 = {death="7878.1.1"}
+}
+343174373 = {
+	name="Джейкар"	# a lord
+	dynasty=174373
+	
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=344174373
+	
+	7842.1.1 = {birth="7842.1.1"}
+	7899.1.1 = {death="7899.1.1"}
+}
+342174373 = {
+	name="Болкелло"	# a lord
+	dynasty=174373
+	
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=343174373
+	
+	7869.1.1 = {birth="7869.1.1"}
+	7922.1.1 = {death="7922.1.1"}
+}
+341174373 = {
+	name="Донифос"	# a lord
+	dynasty=174373
+	
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=342174373
+	
+	7895.1.1 = {birth="7895.1.1"}
+	7948.1.1 = {death="7948.1.1"}
+}
+340174373 = {
+	name="Беличо"	# a lord
+	dynasty=174373
+	
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=341174373
+	
+	7919.1.1 = {birth="7919.1.1"}
+	7964.1.1 = {death="7964.1.1"}
+}
+100174373 = {
+	name="Трианна"	# a lord
+	female = yes
+	dynasty=174373
+	
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=340174373
+	
+	martial = 1
+	stewardship = 4
+	diplomacy = 6
+	intrigue = 7
+	learning = 4
+	
+	add_trait = elusive_shadow
+	add_trait = ambitious
+	add_trait = authoritative
+	add_trait = proud
+	add_trait = gregarious
+	add_trait = patient
+
+	7944.1.1 = {birth="7944.1.1"}
+	7964.1.1 = {add_trait=elephant}
+	8010.1.1 = {
+		death="8010.1.1"
+		add_trait=triarch_statue
+	}
+}
+101174373 = {
+	name="Хейрис"	# a lord
+	
+	dynasty=174373
+	
+	stewardship = 7
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	mother=100174373
+	
+	add_trait=fortune_builder
+	add_trait=patient
+	
+	7966.1.1 = {birth="7966.1.1"}
+	7984.1.1 = {
+		add_trait=elephant
+	}
+	8040.1.1 = {
+		death="8040.1.1"
+	}
+}
+102174373 = {
+	name="Беличо"	# a lord
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=101174373
+
+	7995.1.1 = {birth="7995.1.1"}
+	8011.1.1 = {add_trait=skilled_warrior}
+	8068.1.1 = {death="8068.1.1"}
+}
+107174373 = {
+	name="Донифос"	# not a lord
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=102174373
+
+	8025.1.1 = {birth="8025.1.1"}
+	8041.1.1 = {add_trait=poor_warrior}
+	8068.1.1 = {death="8068.1.1"}
+}
+108174373 = {
+	name="Донифос"	# a lord
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=102174373
+
+	8028.1.1 = {birth="8028.1.1"}
+	8044.1.1 = {add_trait=trained_warrior}
+	8073.1.1 = {death="8073.1.1"}
+}
+111174373 = {
+	name="Коллокво"	# a lord
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=107174373
+
+	8056.1.1 = {birth="8056.1.1"}
+	8072.1.1 = {add_trait=skilled_warrior}
+	8114.1.1 = {death="8114.1.1"}
+}
+115174373 = {
+	name="Вейрон"	# a lord
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=111174373
+
+	8093.1.1 = {birth="8093.1.1"}
+	8109.1.1 = {add_trait=poor_warrior}
+	8138.1.1 = {
+		death="8138.1.1"
+		add_trait=triarch_statue
+	}
+}
+116174373 = {
+	name="Каво"	# a lord
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=111174373
+
+	8096.1.1 = {birth="8096.1.1"}
+	8112.1.1 = {add_trait=trained_warrior}
+	8160.1.1 = {death="8160.1.1"}
+}
+118174373 = {
+	name="Вейкар"	# a lord
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=115174373
+
+	8114.1.1 = {birth="8114.1.1"}
+	8130.1.1 = {add_trait=poor_warrior}
+	8191.1.1 = {death="8191.1.1"}
+}
+119174373 = {
+	name="Мокорро"	# not a lord
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=115174373
+
+	8116.1.1 = {birth="8116.1.1"}
+	8132.1.1 = {add_trait=trained_warrior}
+	8157.1.1 = {death="8157.1.1"}
+}
+123174373 = {
+	name="Орис"	# a lord
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=119174373
+
+	8136.1.1 = {birth="8136.1.1"}
+	8152.1.1 = {add_trait=poor_warrior}
+	8195.1.1 = {death="8195.1.1"}
+}
+126174373 = {
+	name="Горис"	# a lord
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=123174373
+
+	8170.1.1 = {birth="8170.1.1"}
+	8186.1.1 = {add_trait=skilled_warrior}
+	8235.1.1 = {death="8235.1.1"}
+}
+130174373 = {
+	name="Алиос"	# a lord
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=126174373
+
+	8188.1.1 = {birth="8188.1.1"}
+	8204.1.1 = {add_trait=poor_warrior}
+	8206.1.1 = {add_spouse=430174373}
+	8245.1.1 = {death="8245.1.1"}
+}
+430174373 = {
+	name="Сиена"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8188.1.1 = {birth="8188.1.1"}
+	8245.1.1 = {death="8245.1.1"}
+}
+135174373 = {
+	name="Элейна"	# not a lord
+	female=yes
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=130174373
+	mother=430174373
+
+	8214.1.1 = {birth="8214.1.1"}
+	8291.1.1 = {death = {death_reason = death_accident}}
+}
+136174373 = {
+	name="Эйнар"	# a lord
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=130174373
+	mother=430174373
+
+	8215.1.1 = {birth="8215.1.1"}
+	8231.1.1 = {add_trait=master_warrior}
+	8233.1.1 = {add_spouse=436174373}
+	8268.1.1 = {death="8268.1.1"}
+}
+436174373 = {
+	name="Кава"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8215.1.1 = {birth="8215.1.1"}
+	8268.1.1 = {death="8268.1.1"}
+}
+137174373 = {
+	name="Хоронна"	# not a lord
+	female=yes
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=136174373
+	mother=436174373
+
+	8236.1.1 = {birth="8236.1.1"}
+	8267.1.1 = {death="8267.1.1"}
+}
+138174373 = {
+	name="Вейкар"	# a lord
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=136174373
+	mother=436174373
+
+	8238.1.1 = {birth="8238.1.1"}
+	8254.1.1 = {add_trait=skilled_warrior}
+	8256.1.1 = {add_spouse=438174373}
+	8280.1.1 = {death="8280.1.1"}
+}
+438174373 = {
+	name="Сиэйлла"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8238.1.1 = {birth="8238.1.1"}
+	8280.1.1 = {death="8280.1.1"}
+}
+139174373 = {
+	name="Дейорилл"	# not a lord
+	female=yes
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=136174373
+	mother=436174373
+
+	8239.1.1 = {birth="8239.1.1"}
+	8280.1.1 = {death="8280.1.1"}
+}
+140174373 = {
+	name="Ниэссос"	# Canon, Ниэссос Vhassar, a Triarch
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	stewardship=10
+
+	father=136174373
+	mother=436174373
+	
+	add_trait=greedy
+	add_trait=deceitful
+	add_trait=fortune_builder
+
+	8241.1.1 = {birth="8241.1.1"}
+	8257.1.1 = {add_trait=poor_warrior}
+	8259.1.1 = {add_spouse=440174373}
+	8263.1.1 = {add_trait=elephant}
+}
+440174373 = {
+	name="Хоронна"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8241.1.1 = {birth="8241.1.1"}
+}
+141174373 = {
+	name="Вейрмон"	# not a lord
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=138174373
+	mother=438174373
+
+	8260.1.1 = {birth="8260.1.1"}
+	8276.1.1 = {add_trait=poor_warrior}
+	8278.1.1 = {add_spouse=441174373}
+}
+441174373 = {
+	name="Нейрис"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8260.1.1 = {birth="8260.1.1"}
+}
+142174373 = {
+	name="Лиайса"	# not a lord
+	female=yes
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=138174373
+	mother=438174373
+
+	8262.1.1 = {birth="8262.1.1"}
+}
+143174373 = {
+	name="Матарис"	# not a lord
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=138174373
+	mother=438174373
+
+	8265.1.1 = {birth="8265.1.1"}
+	8281.1.1 = {add_trait=poor_warrior}
+}
+144174373 = {
+	name="Беличо"	# not a lord
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=138174373
+	mother=438174373
+
+	8268.1.1 = {birth="8268.1.1"}
+	8284.1.1 = {add_trait=trained_warrior}
+}
+145174373 = {
+	name="Мокорро"	# not a lord
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=140174373
+	mother=440174373
+
+	8274.1.1 = {birth="8274.1.1"}
+	8290.1.1 = {add_trait=trained_warrior}
+}
+146174373 = {
+	name="Лиайса"	# not a lord
+	female=yes
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=140174373
+	mother=440174373
+
+	8278.1.1 = {birth="8278.1.1"}
+}
+147174373 = {
+	name="Джейкар"	# not a lord
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=141174373
+	mother=441174373
+
+	8288.1.1 = {birth="8288.1.1"}
+	8304.1.1 = {add_trait=skilled_warrior}
+}
+148174373 = {
+	name="Дейла"	# not a lord
+	female=yes
+	dynasty=174373
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=141174373
+	mother=441174373
+
+	8291.1.1 = {birth="8291.1.1"}
+}
+
+### House Paenymion
+344174372 = {
+	name="Релафо"	# not a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	7835.1.1 = {birth="7835.1.1"}
+	7884.1.1 = {death="7884.1.1"}
+}
+343174372 = {
+	name="Паранис"	# not a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=344174372
+
+	7861.1.1 = {birth="7861.1.1"}
+	7915.1.1 = {death="7915.1.1"}
+}
+342174372 = {
+	name="Коронно"	# not a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=343174372
+
+	7888.1.1 = {birth="7888.1.1"}
+	7940.1.1 = {death="7940.1.1"}
+}
+341174372 = {
+	name="Тиберо"	# not a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=342174372
+
+	7917.1.1 = {birth="7917.1.1"}
+	7966.1.1 = {death="7966.1.1"}
+}
+340174372 = {
+	name="Визарро"	# not a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=341174372
+
+	7939.1.1 = {birth="7939.1.1"}
+	7983.1.1 = {death="7983.1.1"}
+}
+100174372 = {
+	name="Эйнар"	# a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	stewardship=7
+	
+	father=340174372
+	
+	add_trait=midas_touched
+
+	7963.1.1 = {birth="7963.1.1"}
+	7979.1.1 = {add_trait=trained_warrior}
+	7981.1.1 = {
+		add_trait=elephant
+		effect = {
+			if = {
+				limit = { is_merchant_republic = no }
+				set_character_flag = triarch
+				give_minor_title = title_triarch
+			}	
+		}	
+	}
+	8045.1.1 = {
+		death="8045.1.1"
+		add_trait=triarch_statue
+	}
+}
+101174372 = {
+	name="Матарис"	# not a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=100174372
+
+	7987.1.1 = {birth="7987.1.1"}
+	8003.1.1 = {add_trait=poor_warrior}
+	8022.1.1 = {death="8022.1.1"}
+}
+102174372 = {
+	name="Хоронно"	# a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=100174372
+	
+	7989.1.1 = {birth="7989.1.1"}
+	8005.1.1 = {add_trait=poor_warrior}
+	8049.1.1 = {death="8049.1.1"}
+}
+105174372 = {
+	name="Вейкар"	# a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=101174372
+
+	8008.1.1 = {birth="8008.1.1"}
+	8024.1.1 = {add_trait=poor_warrior}
+	8076.1.1 = {
+		death="8076.1.1"
+		add_trait=triarch_statue
+	}
+}
+107174372 = {
+	name="Беличо"	# a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=105174372
+
+	8035.1.1 = {birth="8035.1.1"}
+	8051.1.1 = {add_trait=poor_warrior}
+	8079.1.1 = {death="8079.1.1"}
+}
+110174372 = {
+	name="Донифос"	# a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=107174372
+
+	8055.1.1 = {birth="8055.1.1"}
+	8071.1.1 = {add_trait=poor_warrior}
+	8094.1.1 = {death="8094.1.1"}
+}
+111174372 = {
+	name="Орис"	# a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=107174372
+
+	8056.1.1 = {birth="8056.1.1"}
+	8072.1.1 = {add_trait=master_warrior}
+	8121.1.1 = {death="8121.1.1"}
+}
+112174372 = {
+	name="Каво"	# a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=110174372
+
+	8086.1.1 = {birth="8086.1.1"}
+	8102.1.1 = {add_trait=skilled_warrior}
+	8159.1.1 = {death="8159.1.1"}
+}
+115174372 = {
+	name="Джейкар"	# not a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=111174372
+
+	8092.1.1 = {birth="8092.1.1"}
+	8108.1.1 = {add_trait=trained_warrior}
+	8141.1.1 = {death="8141.1.1"}
+}
+123174372 = {
+	name="Матарис"	# a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=112174372
+
+	8107.1.1 = {birth="8107.1.1"}
+	8123.1.1 = {add_trait=poor_warrior}
+	8167.1.1 = {death="8167.1.1"}
+}
+125174372 = {
+	name="Ниэссос"	# a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=123174372
+
+	8136.1.1 = {birth="8136.1.1"}
+	8152.1.1 = {add_trait=skilled_warrior}
+	8170.1.1 = {death="8170.1.1"}
+}
+127174372 = {
+	name="Бенерро"	# a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=123174372
+
+	8139.1.1 = {birth="8139.1.1"}
+	8155.1.1 = {add_trait=poor_warrior}
+	8198.1.1 = {death="8198.1.1"}
+}
+132174372 = {
+	name="Метисо"	# not a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=127174372
+
+	8163.1.1 = {birth="8163.1.1"}
+	8179.1.1 = {add_trait=trained_warrior}
+	8198.1.1 = {death="8198.1.1"}
+}
+133174372 = {
+	name="Каво"	# a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=127174372
+
+	8165.1.1 = {birth="8165.1.1"}
+	8181.1.1 = {add_trait=poor_warrior}
+	8231.1.1 = {death="8231.1.1"}
+}
+135174372 = {
+	name="Эйнар"	# a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=132174372
+
+	8194.1.1 = {birth="8194.1.1"}
+	8210.1.1 = {add_trait=skilled_warrior}
+	8212.1.1 = {add_spouse=435174372}
+	8260.1.1 = {death="8260.1.1"}
+}
+435174372 = {
+	name="Рейль"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8194.1.1 = {birth="8194.1.1"}
+	8260.1.1 = {death="8260.1.1"}
+}
+137174372 = {
+	name="Мокорро"	# a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=135174372
+	mother=435174372
+
+	8223.1.1 = {birth="8223.1.1"}
+	8239.1.1 = {add_trait=poor_warrior}
+	8241.1.1 = {add_spouse=437174372}
+	8276.1.1 = {death="8276.1.1"}
+}
+437174372 = {
+	name="Рейис"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8223.1.1 = {birth="8223.1.1"}
+	8276.1.1 = {death="8276.1.1"}
+}
+138174372 = {
+	name="Беличо"	# a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=135174372
+	mother=435174372
+
+	8226.1.1 = {birth="8226.1.1"}
+	8242.1.1 = {add_trait=poor_warrior}
+	8244.1.1 = {add_spouse=438174372}
+	8278.1.1 = {death = {death_reason = death_accident}}
+}
+438174372 = {
+	name="Алия"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8226.1.1 = {birth="8226.1.1"}
+	8278.1.1 = {death="8278.1.1"}
+}
+139174372 = {
+	name="Элейна"	# not a lord
+	female=yes
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=135174372
+	mother=435174372
+
+	8228.1.1 = {birth="8228.1.1"}
+	8295.1.1 = {death="8295.1.1"}
+}
+140174372 = {
+	name="Белича"	# not a lord
+	female=yes
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=135174372
+	mother=435174372
+
+	8229.1.1 = {birth="8229.1.1"}
+	8282.1.1 = {death="8282.1.1"}
+}
+142174372 = {
+	name="Донифос"	# Canon, Донифос Paenymion, a Triarch
+	dynasty=174372
+	
+	martial = 2
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 10
+	learning = 8
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	add_trait="patient"
+	add_trait="craven"
+	add_trait="kind"
+	add_trait="fortune_builder"
+
+	father=137174372
+	mother=437174372
+
+	8243.1.1 = {birth="8243.1.1"}
+	8259.1.1 = {add_trait=poor_warrior}
+	8261.1.1 = {add_spouse=442174372}
+	8265.1.1 = {add_trait=elephant}
+}
+442174372 = {
+	name="Алирис"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8243.1.1 = {birth="8243.1.1"}
+}
+143174372 = {
+	name="Беличо"	# not a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=137174372
+	mother=437174372
+
+	8246.1.1 = {birth="8246.1.1"}
+	8262.1.1 = {add_trait=trained_warrior}
+}
+144174372 = {
+	name="Дейгар"	# not a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=137174372
+	mother=437174372
+
+	8248.1.1 = {birth="8248.1.1"}
+	8264.1.1 = {add_trait=skilled_warrior}
+	8266.1.1 = {add_spouse=444174372}
+}
+444174372 = {
+	name="Рей"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8248.1.1 = {birth="8248.1.1"}
+}
+145174372 = {
+	name="Орис"	# not a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=138174372
+	mother=438174372
+
+	8260.1.1 = {birth="8260.1.1"}
+	8276.1.1 = {add_trait=trained_warrior}
+}
+146174372 = {
+	name="Ниэсса"	# not a lord
+	female=yes
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=138174372
+	mother=438174372
+
+	8262.1.1 = {birth="8262.1.1"}
+}
+147174372 = {
+	name="Рейль"	# not a lord
+	female=yes
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=138174372
+	mother=438174372
+
+	8265.1.1 = {birth="8265.1.1"}
+}
+148174372 = {
+	name="Каво"	# not a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=142174372
+	mother=442174372
+
+	8269.1.1 = {birth="8269.1.1"}
+	8285.1.1 = {add_trait=trained_warrior}
+}
+149174372 = {
+	name="Дейорилл"	# not a lord
+	female=yes
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=144174372
+	mother=444174372
+
+	8272.1.1 = {birth="8272.1.1"}
+}
+150174372 = {
+	name="Хоронна"	# not a lord
+	female=yes
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=144174372
+	mother=444174372
+
+	8275.1.1 = {birth="8275.1.1"}
+}
+151174372 = {
+	name="Бенерро"	# not a lord
+	dynasty=174372
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=144174372
+	mother=444174372
+
+	8277.1.1 = {birth="8277.1.1"}
+	8293.1.1 = {add_trait=trained_warrior}
+}
+
+### House Vaelaros
+344174397 = {
+	name="Лоронно"	# a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	7846.1.1 = {birth="7846.1.1"}
+	7898.1.1 = {death="7898.1.1"} #dov
+}
+343174397 = {
+	name="Ариос"	# a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=344174397
+
+	7869.1.1 = {birth="7869.1.1"}
+	7926.1.1 = {death="7926.1.1"}
+}
+342174397 = {
+	name="Саллорос"	# a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=343174397
+
+	7892.1.1 = {birth="7892.1.1"}
+	7946.1.1 = {death="7946.1.1"}
+}
+341174397 = {
+	name="Лисенно"	# a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=342174397
+
+	7914.1.1 = {birth="7914.1.1"}
+	7959.1.1 = {death="7959.1.1"}
+}
+340174397 = {
+	name="Гаспорио"	# a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=341174397
+
+	7938.1.1 = {birth="7938.1.1"}
+	7980.1.1 = {death="7980.1.1"}
+}
+
+100174397 = {
+	name="Беличо"	# a lord
+	dynasty=174397
+	
+	stewardship=8
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=340174397
+	
+	add_trait=fortune_builder
+
+	7960.1.1 = {birth="7960.1.1"}
+	7976.1.1 = {add_trait=poor_warrior}
+	7977.1.1 = {add_trait=elephant}
+	7996.12.12 = {
+		effect = {
+			set_character_flag = triarch
+			give_minor_title = title_triarch
+		}	
+	}
+	8022.1.1 = {death="8022.1.1"}
+}
+103174397 = {
+	name="Эйликс"	# a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=100174397
+
+	7991.1.1 = {birth="7991.1.1"}
+	8007.1.1 = {add_trait=trained_warrior}
+	8056.1.1 = {
+		death="8056.1.1"
+		add_trait=triarch_statue
+	}
+}
+104174397 = {
+	name="Алиос"	# a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=103174397
+
+	8017.1.1 = {birth="8017.1.1"}
+	8033.1.1 = {add_trait=skilled_warrior}
+	8071.1.1 = {death="8071.1.1"}
+}
+108174397 = {
+	name="Малакво"	# a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=104174397
+
+	8042.1.1 = {birth="8042.1.1"}
+	8058.1.1 = {add_trait=poor_warrior}
+	8085.1.1 = {death="8085.1.1"}
+}
+110174397 = {
+	name="Каво"	# a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=104174397
+
+	8045.1.1 = {birth="8045.1.1"}
+	8061.1.1 = {add_trait=poor_warrior}
+	8112.1.1 = {death="8112.1.1"}
+}
+113174397 = {
+	name="Эйликс"	# a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=110174397
+
+	8072.1.1 = {birth="8072.1.1"}
+	8088.1.1 = {add_trait=trained_warrior}
+	8117.1.1 = {death="8117.1.1"}
+}
+119174397 = {
+	name="Метисо"	# a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=113174397
+
+	8093.1.1 = {birth="8093.1.1"}
+	8109.1.1 = {add_trait=trained_warrior}
+	8170.1.1 = {
+		death="8170.1.1"
+		add_trait=triarch_statue
+	}
+}
+122174397 = {
+	name="Бенерро"	# not a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=113174397
+
+	8101.1.1 = {birth="8101.1.1"}
+	8117.1.1 = {add_trait=poor_warrior}
+	8166.1.1 = {death="8166.1.1"}
+}
+125174397 = {
+	name="Паркелло"	# a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=122174397
+
+	8129.1.1 = {birth="8129.1.1"}
+	8145.1.1 = {add_trait=trained_warrior}
+	8203.1.1 = {
+		death="8203.1.1"
+		add_trait=triarch_statue
+	}
+}
+131174397 = {
+	name="Вейрон"	# a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=125174397
+
+	8160.1.1 = {birth="8160.1.1"}
+	8176.1.1 = {add_trait=poor_warrior}
+	8214.1.1 = {death="8214.1.1"}
+}
+133174397 = {
+	name="Каво"	# a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=131174397
+
+	8180.1.1 = {birth="8180.1.1"}
+	8196.1.1 = {add_trait=trained_warrior}
+	8198.1.1 = {add_spouse=433174397}
+	8260.1.1 = {death="8260.1.1"}
+}
+433174397 = {
+	name="Симелла"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8180.1.1 = {birth="8180.1.1"}
+	8260.1.1 = {death="8260.1.1"}
+}
+137174397 = {
+	name="Матарис"	# not a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=133174397
+	mother=433174397
+
+	8208.1.1 = {birth="8208.1.1"}
+	8224.1.1 = {add_trait=trained_warrior}
+	8226.1.1 = {add_spouse=437174397}
+	8234.1.1 = {death="8234.1.1"}
+}
+437174397 = {
+	name="Аллирия"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8208.1.1 = {birth="8208.1.1"}
+	8234.1.1 = {death="8234.1.1"}
+}
+139174397 = {
+	name="Вогарро"	# Canon, a lord, Merchant who married a slave
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=133174397
+	mother=433174397
+	
+	add_trait = kind
+	add_trait = humble
+	add_trait = familyperson
+	add_trait = diligent
+	add_trait = elephant
+	add_trait = midas_touched
+	
+	8210.1.1 = {birth="8210.1.1"}
+	8226.1.1 = {add_trait=trained_warrior}
+	8232.1.1 = {
+		add_spouse=439174397
+		effect = { 
+			prestige = -400 
+			wealth = 300
+		}
+	}
+	8268.1.1 = {death="8268.1.1"}
+}
+439174397 = {
+	name="Эззара" # Canon, Widow of the waterfront
+	female=yes
+
+	religion = valyrian_rel
+	culture="yunkaii"
+	
+	add_trait = fair
+	add_trait = familyperson
+	add_trait = diligent
+	add_trait = kind
+	
+	8215.1.1 = {
+		birth="8215.1.1"
+		add_trait = slave
+		effect = {
+			health = 5
+			if = {
+				limit = { trait = slave }
+				b_vaelaros = {
+					holder_scope = { 
+						opinion = { who = ROOT modifier = opinion_my_slave }
+						reverse_opinion = { who = ROOT modifier = opinion_my_owner }
+						ROOT = { move_character = PREV } 
+					}
+				}
+			}
+		}
+	}
+	8232.1.1 = { 
+		add_trait = seductress 
+		remove_trait = slave
+		add_trait = former_slave
+	}
+	8268.1.1 = { 
+		add_trait = widowed 
+		give_nickname = nick_the_widow_of_the_waterfront
+		effect = { wealth = 350 }
+	}
+}
+141174397 = {
+	name="Каво"	# a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=139174397
+	mother=439174397
+
+	8233.1.1 = {birth="8233.1.1"}
+	8249.1.1 = {add_trait=trained_warrior}
+	8251.1.1 = {add_spouse=441174397}
+	8272.1.1 = {
+		death="8272.1.1"
+		add_trait=triarch_statue
+	}
+}
+441174397 = {
+	name="Бенерра"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8233.1.1 = {birth="8233.1.1"}
+	8272.1.1 = {death="8272.1.1"}
+}
+142174397 = {
+	name="Сейнрис"	# not a lord
+	female=yes
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=137174397
+	mother=437174397
+
+	8230.1.1 = {birth="8230.1.1"}
+	8273.1.1 = {death="8273.1.1"}
+}
+143174397 = {
+	name="Паркелло"	# a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=137174397
+	mother=437174397
+
+	8233.1.1 = {birth="8233.1.1"}
+	8249.1.1 = {add_trait=poor_warrior}
+	8251.1.1 = {add_spouse=443174397}
+	8277.1.1 = {death="8277.1.1"}
+}
+443174397 = {
+	name="Мокорра"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8233.1.1 = {birth="8233.1.1"}
+	8277.1.1 = {death="8277.1.1"}
+}
+144174397 = {
+	name="Хоронно"	# a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=137174397
+	mother=437174397
+
+	8234.1.1 = {birth="8234.1.1"}
+	8252.1.1 = {add_trait=skilled_warrior}
+	8254.1.1 = {add_spouse=444174397}
+	8285.1.1 = {death="8285.1.1"}
+}
+444174397 = {
+	name="Хоронна"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8236.1.1 = {birth="8236.1.1"}
+	8285.1.1 = {death="8285.1.1"}
+}
+145174397 = {
+	name="Паркелло"	# Canon, Паркелло Vaelaros, candidate for Triarch, a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=141174397
+	mother=441174397
+	
+	add_trait=brave
+	add_trait=ambitious
+
+	8252.1.1 = {birth="8252.1.1"}
+	8268.1.1 = {add_trait=trained_warrior}
+	8270.1.1 = {add_spouse=445174397}
+}
+445174397 = {
+	name="Алирис"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8252.1.1 = {birth="8252.1.1"}
+}
+146174397 = {
+	name="Аллирия"	# not a lord, made her Oberyn's lover
+	female=yes
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=141174397
+	mother=441174397
+	
+	add_trait = lustful
+	add_trait = fair
+
+	8254.1.1 = {birth="8254.1.1"}
+	8287.1.1 = {death="8287.1.1"}
+}
+147174397 = {
+	name="Сиэйлла"	# not a lord
+	female=yes
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=144174397
+	mother=444174397
+
+	8259.1.1 = {birth="8259.1.1"}
+}
+148174397 = {
+	name="Хоронно"	# not a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=145174397
+	mother=445174397
+
+	8285.1.1 = {birth="8285.1.1"}
+}
+149174397 = {
+	name="Нейрис"	# not a lord
+	female=yes
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=145174397
+	mother=445174397
+
+	8288.1.1 = {birth="8288.1.1"}
+}
+150174397 = {
+	name="Коллокво"	# not a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=143174397
+	mother=443174397
+
+	8252.1.1 = {birth="8252.1.1"}
+	8268.1.1 = {add_trait=trained_warrior}
+	8296.1.1 = {death="8296.1.1"}
+}
+151174397 = {
+	name="Донифос"	# not a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=143174397
+	mother=443174397
+
+	8253.1.1 = {birth="8253.1.1"}
+	8269.1.1 = {add_trait=poor_warrior}
+	8271.1.1 = {add_spouse=451174397}
+}
+451174397 = {
+	name="Сиэйлла"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8253.1.1 = {birth="8253.1.1"}
+}
+152174397 = {
+	name="Горис"	# not a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=143174397
+	mother=443174397
+
+	8254.1.1 = {birth="8254.1.1"}
+	8270.1.1 = {add_trait=poor_warrior}
+}
+153174397 = {
+	name="Паркелла"	# not a lord
+	female=yes
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=143174397
+	mother=443174397
+
+	8255.1.1 = {birth="8255.1.1"}
+}
+154174397 = {
+	name="Рей"	# not a lord
+	female=yes
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=151174397
+	mother=451174397
+
+	8280.1.1 = {birth="8280.1.1"}
+}
+155174397 = {
+	name="Метисо"	# not a lord
+	dynasty=174397
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=151174397
+	mother=451174397
+
+	8281.1.1 = {birth="8281.1.1"}
+	8297.1.1 = {add_trait=trained_warrior}
+}
+
+### House Qhaedar
+344174396 = {
+	name="Хорио"	# a lord
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	7808.1.1 = {birth="7808.1.1"}
+	7824.1.1 = {add_trait=skilled_warrior}
+	7861.1.1 = {death="7861.1.1"}
+}
+343174396 = {
+	name="Ариос"	# a lord
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=344174396
+
+	7833.1.1 = {birth="7833.1.1"}
+	7849.1.1 = {add_trait=skilled_warrior}
+	7890.1.1 = {death="7890.1.1"}
+}
+342174396 = {
+	name="Рогар"	# a lord
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=343174396
+
+	7861.1.1 = {birth="7861.1.1"}
+	7877.1.1 = {add_trait=skilled_warrior}
+	7915.1.1 = {death="7915.1.1"}
+}
+341174396 = {
+	name="Варгелло"	# a lord
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=342174396
+
+	7885.1.1 = {birth="7885.1.1"}
+	7901.1.1 = {add_trait=skilled_warrior}
+	7934.1.1 = {death="7934.1.1"}
+}
+340174396 = {
+	name="Зирио"	# a lord
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=341174396
+
+	7912.1.1 = {birth="7912.1.1"}
+	7932.1.1 = {add_trait=skilled_warrior}
+	7960.1.1 = {death="7960.1.1"}
+}
+100174396 = {
+	name="Хоронно"	# a lord
+	dynasty=174396
+	
+	martial = 10
+	diplomacy=6
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	father=340174396
+	
+	add_trait=ambitious
+	add_trait=skilled_tactician
+	add_trait=proud
+	add_trait=brave
+	add_trait=temperate
+	add_trait=gregarious
+
+	7940.1.1 = {birth="7940.1.1"}
+	7956.1.1 = {add_trait=trained_warrior}
+	7962.1.1 = {add_trait=tiger}
+	7990.1.1 = {give_nickname=nick_triarch_life}
+	7996.1.1 = {
+		effect = {
+			prestige = 500
+			wealth = 400
+			set_global_flag = bleeding_years
+			set_global_flag = e_new_valyria_ambition
+			if = {
+				limit = { 
+					NOT = { year = 7998 } 
+					NOT = { month = 1 }
+				}
+				if = {
+					limit = { ai = no }
+					character_event = { id = bleeding_years.1 } 
+				}	
+				if = {
+					limit = { ai = yes }
+					character_event = { id = bleeding_years.1 days = 1 } 
+				}
+			}
+		}
+		raise_levies = {
+			location = 417 
+			force_mult = 1
+		}
+	}
+	# 7996.12.15 = {
+		# raise_levies = {
+			# dismiss = yes
+			# location = 417 
+			# force_mult = 1
+		# }
+		# effect = {
+			# clr_global_flag = bleeding_years
+			# clr_global_flag = e_new_valyria_ambition
+		# }
+	# }
+	7996.12.12 = { death= { death_reason = death_execution_elephants } }
+}
+103174396 = {
+	name="Эйнар"	# a lord
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=100174396
+
+	7971.1.1 = {birth="7971.1.1"}
+	7987.1.1 = {add_trait=skilled_warrior}
+	8043.1.1 = {death="8043.1.1"}
+}
+105174396 = {
+	name="Беличо"	# a lord
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=103174396
+
+	7993.1.1 = {birth="7993.1.1"}
+	8009.1.1 = {add_trait=trained_warrior}
+	8050.1.1 = {
+		death="8050.1.1"
+		add_trait=triarch_statue
+	}
+}
+108174396 = {
+	name="Беличо"	# a lord
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=105174396
+
+	8018.1.1 = {birth="8018.1.1"}
+	8034.1.1 = {add_trait=poor_warrior}
+	8068.1.1 = {death="8068.1.1"}
+}
+109174396 = {
+	name="Алиос"	# a lord
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=105174396
+
+	8019.1.1 = {birth="8019.1.1"}
+	8035.1.1 = {add_trait=poor_warrior}
+	8083.1.1 = {death="8083.1.1"}
+}
+110174396 = {
+	name="Эйнар"	# a lord
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=108174396
+
+	8042.1.1 = {birth="8042.1.1"}
+	8058.1.1 = {add_trait=poor_warrior}
+	8110.1.1 = {death="8110.1.1"}
+}
+113174396 = {
+	name="Метисо"	# a lord
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=110174396
+
+	8076.1.1 = {birth="8076.1.1"}
+	8092.1.1 = {add_trait=poor_warrior}
+	8148.1.1 = {death="8148.1.1"}
+}
+115174396 = {
+	name="Горис"	# a lord
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=113174396
+
+	8096.1.1 = {birth="8096.1.1"}
+	8112.1.1 = {add_trait=poor_warrior}
+	8167.1.1 = {death="8167.1.1"}
+}
+118174396 = {
+	name="Беличо"	# not a lord
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=113174396
+
+	8103.1.1 = {birth="8103.1.1"}
+	8119.1.1 = {add_trait=poor_warrior}
+	8145.1.1 = {death="8145.1.1"}
+}
+120174396 = {
+	name="Коллокво"	# a lord
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=118174396
+
+	8136.1.1 = {birth="8136.1.1"}
+	8152.1.1 = {add_trait=trained_warrior}
+	8169.1.1 = {death="8169.1.1"}
+}
+122174396 = {
+	name="Вейрон"	# a lord
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=118174396
+
+	8140.1.1 = {birth="8140.1.1"}
+	8156.1.1 = {add_trait=poor_warrior}
+	8188.1.1 = {death="8188.1.1"}
+}
+127174396 = {
+	name="Матарис"	# a lord
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=122174396
+
+	8176.1.1 = {birth="8176.1.1"}
+	8192.1.1 = {add_trait=trained_warrior}
+	8250.1.1 = {death="8250.1.1"}
+}
+130174396 = {
+	name="Симелла"	# not a lord
+	female=yes
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=127174396
+
+	8198.1.1 = {birth="8198.1.1"}
+	8262.1.1 = {death="8262.1.1"}
+}
+131174396 = {
+	name="Бенерро"	# a lord
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=127174396
+
+	8201.1.1 = {birth="8201.1.1"}
+	8217.1.1 = {add_trait=poor_warrior}
+	8256.1.1 = {
+		death="8256.1.1"
+		add_trait=triarch_statue
+	}
+}
+135174396 = {
+	name="Бенерро"	# a lord
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=131174396
+
+	8222.1.1 = {birth="8222.1.1"}
+	8238.1.1 = {add_trait=trained_warrior}
+	8240.1.1 = {add_spouse=435174396}
+	8261.1.1 = {death = {death_reason = death_battle}}
+}
+435174396 = {
+	name="Сейнрис"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8222.1.1 = {birth="8222.1.1"}
+	8261.1.1 = {death="8261.1.1"}
+}
+136174396 = {
+	name="Коллокво"	# a lord
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=135174396
+	mother=435174396
+
+	8248.1.1 = {birth="8248.1.1"}
+	8264.1.1 = {add_trait=skilled_warrior}
+	8266.1.1 = {add_spouse=436174396}
+	8295.1.1 = {death="8295.1.1"}
+}
+436174396 = {
+	name="Паркелла"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8248.1.1 = {birth="8248.1.1"}
+	8295.1.1 = {death="8295.1.1"}
+}
+137174396 = {
+	name="Трианна"	# not a lord
+	female=yes
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=135174396
+	mother=435174396
+
+	8250.1.1 = {birth="8250.1.1"}
+	8300.1.1 = {death="8300.1.1"}
+}
+138174396 = {
+	name="Алиос"	# Canon, Алиос Qhaedar, candidate for Triarch, a lord
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	father=135174396
+	mother=435174396
+	
+	add_trait=lustful
+	add_trait=ambitious
+
+	8252.1.1 = {birth="8252.1.1"}
+	8268.1.1 = {add_trait=skilled_warrior}
+	8270.1.1 = {add_spouse=438174396}
+}
+438174396 = {
+	name="Донифа"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8252.1.1 = {birth="8252.1.1"}
+}
+139174396 = {
+	name="Алия"	# not a lord
+	female=yes
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=136174396
+	mother=436174396
+
+	8281.1.1 = {birth="8281.1.1"}
+}
+140174396 = {
+	name="Беличо"	# not a lord
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=136174396
+	mother=436174396
+
+	8284.1.1 = {birth="8284.1.1"}
+	8300.1.1 = {add_trait=poor_warrior}
+}
+141174396 = {
+	name="Вогарро"	# not a lord
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=138174396
+	mother=438174396
+
+	8278.1.1 = {birth="8278.1.1"}
+	8294.1.1 = {add_trait=skilled_warrior}
+	8296.1.1 = {add_spouse=441174396}
+}
+441174396 = {
+	name="Донифа"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8278.1.1 = {birth="8278.1.1"}
+}
+142174396 = {
+	name="Бенерра"	# not a lord
+	female=yes
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=138174396
+	mother=438174396
+
+	8279.1.1 = {birth="8279.1.1"}
+}
+143174396 = {
+	name="Вейрон"	# not a lord
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=141174396
+	mother=441174396
+
+	8296.1.1 = {birth="8296.1.1"}
+	8312.1.1 = {add_trait=skilled_warrior}
+}
+144174396 = {
+	name="Мокорро"	# not a lord
+	dynasty=174396
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=141174396
+	mother=441174396
+
+	8298.1.1 = {birth="8298.1.1"}
+	8314.1.1 = {add_trait=poor_warrior}
+}
+
+#############################
+### Duke-Tier City Houses ###
+#############################
+###House Volnyros of Selhorys###
+344305618 = {
+	name="Трегонос"	# a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+
+	7813.1.1 = {birth="7813.1.1"}
+	7867.1.1 = {death="7867.1.1"}
+}
+343305618 = {
+	name="Тирос"	# a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=344305618
+
+	7839.1.1 = {birth="7839.1.1"}
+	7901.1.1 = {death="7901.1.1"}
+}
+342305618 = {
+	name="Пилан"	# a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=343305618
+
+	7863.1.1 = {birth="7863.1.1"}
+	7921.1.1 = {death="7921.1.1"}
+}
+341305618 = {
+	name="Релекор"	# a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=342305618
+
+	7887.1.1 = {birth="7887.1.1"}
+	7949.1.1 = {death="7949.1.1"}
+}
+340305618 = {
+	name="Хазаро"	# a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=341305618
+
+	7912.1.1 = {birth="7912.1.1"}
+	7958.1.1 = {death="7958.1.1"}
+}
+100305618 = {
+	name="Бегго"	# a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=340305618
+
+	7938.1.1 = {birth="7938.1.1"}
+	7954.1.1 = {add_trait=poor_warrior}
+	8003.1.1 = {death="8003.1.1"}
+}
+101305618 = {
+	name="Орбело"	# a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100305618
+
+	7971.1.1 = {birth="7971.1.1"}
+	7987.1.1 = {add_trait=skilled_warrior}
+	8031.1.1 = {death="8031.1.1"}
+}
+104305618 = {
+	name="Орделло"	# a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101305618
+
+	7993.1.1 = {birth="7993.1.1"}
+	8009.1.1 = {add_trait=poor_warrior}
+	8062.1.1 = {death="8062.1.1"}
+}
+108305618 = {
+	name="Орделло"	# a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=104305618
+
+	8021.1.1 = {birth="8021.1.1"}
+	8037.1.1 = {add_trait=poor_warrior}
+	8075.1.1 = {death="8075.1.1"}
+}
+111305618 = {
+	name="Лото"	# a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=108305618
+
+	8053.1.1 = {birth="8053.1.1"}
+	8069.1.1 = {add_trait=poor_warrior}
+	8127.1.1 = {death="8127.1.1"}
+}
+116305618 = {
+	name="Йорко"	# a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=111305618
+
+	8081.1.1 = {birth="8081.1.1"}
+	8097.1.1 = {add_trait=trained_warrior}
+	8129.1.1 = {death="8129.1.1"}
+}
+117305618 = {
+	name="Коллокво"	# a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=116305618
+
+	8104.1.1 = {birth="8104.1.1"}
+	8120.1.1 = {add_trait=poor_warrior}
+	8159.1.1 = {death="8159.1.1"}
+}
+119305618 = {
+	name="Болкелло"	# a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=116305618
+
+	8108.1.1 = {birth="8108.1.1"}
+	8124.1.1 = {add_trait=trained_warrior}
+	8166.1.1 = {death="8166.1.1"}
+}
+120305618 = {
+	name="Бегго"	# not a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=116305618
+
+	8111.1.1 = {birth="8111.1.1"}
+	8127.1.1 = {add_trait=poor_warrior}
+	8158.1.1 = {death="8158.1.1"}
+}
+121305618 = {
+	name="Орделло"	# a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=119305618
+
+	8127.1.1 = {birth="8127.1.1"}
+	8143.1.1 = {add_trait=poor_warrior}
+	8168.1.1 = {death = {death_reason = death_accident}}
+}
+122305618 = {
+	name="Паркелло"	# a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=120305618
+
+	8138.1.1 = {birth="8138.1.1"}
+	8154.1.1 = {add_trait=trained_warrior}
+	8190.1.1 = {death="8190.1.1"}
+}
+124305618 = {
+	name="Болкелло"	# a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=122305618
+
+	8169.1.1 = {birth="8169.1.1"}
+	8185.1.1 = {add_trait=trained_warrior}
+	8228.1.1 = {death="8228.1.1"}
+}
+127305618 = {
+	name="Коллокво"	# a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=124305618
+
+	8190.1.1 = {birth="8190.1.1"}
+	8206.1.1 = {add_trait=poor_warrior}
+	8208.1.1 = {add_spouse=427305618}
+	8249.1.1 = {death="8249.1.1"}
+}
+427305618 = {
+	name="Беллонара"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8190.1.1 = {birth="8190.1.1"}
+	8249.1.1 = {death="8249.1.1"}
+}
+131305618 = {
+	name="Паркелло"	# a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=127305618
+	mother=427305618
+
+	8213.1.1 = {birth="8213.1.1"}
+	8229.1.1 = {add_trait=poor_warrior}
+	8231.1.1 = {add_spouse=431305618}
+	8285.1.1 = {death="8285.1.1"}
+}
+431305618 = {
+	name="Якея"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8213.1.1 = {birth="8213.1.1"}
+	8285.1.1 = {death="8285.1.1"}
+}
+132305618 = {
+	name="Навафос"	# not a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=127305618
+	mother=427305618
+
+	8215.1.1 = {birth="8215.1.1"}
+	8231.1.1 = {add_trait=poor_warrior}
+	8233.1.1 = {add_spouse=432305618}
+	8265.1.1 = {death="8265.1.1"}
+}
+432305618 = {
+	name="Нарба"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8215.1.1 = {birth="8215.1.1"}
+	8265.1.1 = {death="8265.1.1"}
+}
+133305618 = {
+	name="Вогарро"	# a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=132305618
+	mother=432305618
+
+	8241.1.1 = {birth="8241.1.1"}
+	8257.1.1 = {add_trait=trained_warrior}
+	8259.1.1 = {add_spouse=433305618}
+	8292.1.1 = {death="8292.1.1"}
+}
+433305618 = {
+	name="Пинта"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8241.1.1 = {birth="8241.1.1"}
+	8292.1.1 = {death="8292.1.1"}
+}
+134305618 = {
+	name="Мокорро"	# not a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=132305618
+	mother=432305618
+
+	8243.1.1 = {birth="8243.1.1"}
+	8259.1.1 = {add_trait=poor_warrior}
+	8261.1.1 = {add_spouse=434305618}
+}
+434305618 = {
+	name="Лотея"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8243.1.1 = {birth="8243.1.1"}
+}
+135305618 = {
+	name="Донифос"	# a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=133305618
+	mother=433305618
+
+	8270.1.1 = {birth="8270.1.1"}
+	8286.1.1 = {add_trait=poor_warrior}
+}
+137305618 = {
+	name="Мералия"	# not a lord
+	female=yes
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=133305618
+	mother=433305618
+
+	8276.1.1 = {birth="8276.1.1"}
+}
+139305618 = {
+	name="Орделло"	# not a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=133305618
+	mother=433305618
+
+	8281.1.1 = {birth="8281.1.1"}
+	8297.1.1 = {add_trait=skilled_warrior}
+}
+140305618 = {
+	name="Торма"	# not a lord
+	female=yes
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=134305618
+	mother=434305618
+
+	8261.1.1 = {birth="8261.1.1"}
+}
+141305618 = {
+	name="Метисо"	# not a lord
+	dynasty=305618
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=134305618
+	mother=434305618
+
+	8262.1.1 = {birth="8262.1.1"}
+	8278.1.1 = {add_trait=poor_warrior}
+}
+
+###House Rulloros of Valysar###
+344305613 = {
+	name="Ларазис"	# a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	7831.1.1 = {birth="7831.1.1"}
+	7884.1.1 = {death="7884.1.1"}
+}
+343305613 = {
+	name="Хорио"	# a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=344305613
+
+	7855.1.1 = {birth="7855.1.1"}
+	7903.1.1 = {death="7903.1.1"}
+}
+342305613 = {
+	name="Кейзар"	# a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=343305613
+
+	7881.1.1 = {birth="7881.1.1"}
+	7933.1.1 = {death="7933.1.1"}
+}
+341305613 = {
+	name="Зорафо"	# a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=342305613
+
+	7905.1.1 = {birth="7905.1.1"}
+	7958.1.1 = {death="7958.1.1"}
+}
+340305613 = {
+	name="Яспорио"	# a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=341305613
+
+	7929.1.1 = {birth="7929.1.1"}
+	7975.1.1 = {death="7975.1.1"}
+}
+100305613 = {
+	name="Коллокво"	# a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=340305613
+
+	7955.1.1 = {birth="7955.1.1"}
+	8007.1.1 = {death="8007.1.1"}
+}
+101305613 = {
+	name="Мокорро"	# a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100305613
+
+	7982.1.1 = {birth="7982.1.1"}
+	7998.1.1 = {add_trait=skilled_warrior}
+	8043.1.1 = {death="8043.1.1"}
+}
+103305613 = {
+	name="Бегго"	# not a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100305613
+
+	7986.1.1 = {birth="7986.1.1"}
+	8002.1.1 = {add_trait=poor_warrior}
+	8021.1.1 = {death="8021.1.1"}
+}
+104305613 = {
+	name="Кварро"	# a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=103305613
+
+	8011.1.1 = {birth="8011.1.1"}
+	8027.1.1 = {add_trait=trained_warrior}
+	8065.1.1 = {death="8065.1.1"}
+}
+106305613 = {
+	name="Вогарро"	# a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=104305613
+
+	8037.1.1 = {birth="8037.1.1"}
+	8053.1.1 = {add_trait=poor_warrior}
+	8081.1.1 = {death="8081.1.1"}
+}
+111305613 = {
+	name="Алиос"	# a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=106305613
+
+	8057.1.1 = {birth="8057.1.1"}
+	8073.1.1 = {add_trait=skilled_warrior}
+	8099.1.1 = {death="8099.1.1"}
+}
+112305613 = {
+	name="Беличо"	# a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=111305613
+
+	8080.1.1 = {birth="8080.1.1"}
+	8096.1.1 = {add_trait=trained_warrior}
+	8110.1.1 = {death = {death_reason = death_murder}}
+}
+113305613 = {
+	name="Мералин"	# a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=111305613
+
+	8081.1.1 = {birth="8081.1.1"}
+	8097.1.1 = {add_trait=trained_warrior}
+	8145.1.1 = {death="8145.1.1"}
+}
+114305613 = {
+	name="Лото"	# not a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=111305613
+
+	8082.1.1 = {birth="8082.1.1"}
+	8098.1.1 = {add_trait=poor_warrior}
+	8130.1.1 = {death="8130.1.1"}
+}
+117305613 = {
+	name="Беличо"	# a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=114305613
+
+	8103.1.1 = {birth="8103.1.1"}
+	8119.1.1 = {add_trait=poor_warrior}
+	8147.1.1 = {death="8147.1.1"}
+}
+119305613 = {
+	name="Болкелло"	# a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=117305613
+
+	8138.1.1 = {birth="8138.1.1"}
+	8154.1.1 = {add_trait=skilled_warrior}
+	8179.1.1 = {death="8179.1.1"}
+}
+121305613 = {
+	name="Роллокво"	# a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=119305613
+
+	8160.1.1 = {birth="8160.1.1"}
+	8176.1.1 = {add_trait=trained_warrior}
+	8215.1.1 = {death="8215.1.1"}
+}
+122305613 = {
+	name="Алиос"	# not a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=119305613
+
+	8161.1.1 = {birth="8161.1.1"}
+	8177.1.1 = {add_trait=master_warrior}
+	8210.1.1 = {death="8210.1.1"}
+}
+124305613 = {
+	name="Мералин"	# a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=122305613
+
+	8180.1.1 = {birth="8180.1.1"}
+	8196.1.1 = {add_trait=poor_warrior}
+	8198.1.1 = {add_spouse=424305613}
+	8239.1.1 = {death="8239.1.1"}
+}
+424305613 = {
+	name="Гилора"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8180.1.1 = {birth="8180.1.1"}
+	8239.1.1 = {death="8239.1.1"}
+}
+127305613 = {
+	name="Метисо"	# a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=124305613
+	mother=424305613
+
+	8214.1.1 = {birth="8214.1.1"}
+	8230.1.1 = {add_trait=poor_warrior}
+	8232.1.1 = {add_spouse=427305613}
+	8266.1.1 = {death="8266.1.1"}
+}
+427305613 = {
+	name="Рогга"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8214.1.1 = {birth="8214.1.1"}
+	8266.1.1 = {death="8266.1.1"}
+}
+128305613 = {
+	name="Брея"	# not a lord
+	female=yes
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=124305613
+	mother=424305613
+
+	8216.1.1 = {birth="8216.1.1"}
+	8280.1.1 = {death="8280.1.1"}
+}
+130305613 = {
+	name="Гилениос"	# not a lord
+	female=yes
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=124305613
+	mother=424305613
+
+	8220.1.1 = {birth="8220.1.1"}
+	8285.1.1 = {death="8285.1.1"}
+}
+131305613 = {
+	name="Навафос"	# not a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=127305613
+	mother=427305613
+
+	8233.1.1 = {birth="8233.1.1"}
+	8249.1.1 = {add_trait=trained_warrior}
+	8261.1.1 = {death="8261.1.1"}
+}
+132305613 = {
+	name="Орбело"	# a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=127305613
+	mother=427305613
+
+	8235.1.1 = {birth="8235.1.1"}
+	8251.1.1 = {add_trait=skilled_warrior}
+	8253.1.1 = {add_spouse=432305613}
+}
+432305613 = {
+	name="Бетариос"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8235.1.1 = {birth="8235.1.1"}
+}
+133305613 = {
+	name="Изембара"	# not a lord
+	female=yes
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=127305613
+	mother=427305613
+
+	8237.1.1 = {birth="8237.1.1"}
+	8264.1.1 = {death="8264.1.1"}
+}
+134305613 = {
+	name="Брея"	# not a lord
+	female=yes
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=127305613
+	mother=427305613
+
+	8239.1.1 = {birth="8239.1.1"}
+	8297.1.1 = {death="8297.1.1"}
+}
+135305613 = {
+	name="Мелларио"	# not a lord
+	female=yes
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=132305613
+	mother=432305613
+
+	8255.1.1 = {birth="8255.1.1"}
+}
+136305613 = {
+	name="Аллакво"	# not a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=132305613
+	mother=432305613
+
+	8258.1.1 = {birth="8258.1.1"}
+	8274.1.1 = {add_trait=poor_warrior}
+	8276.1.1 = {add_spouse=436305613}
+}
+436305613 = {
+	name="Беллонара"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8258.1.1 = {birth="8258.1.1"}
+}
+137305613 = {
+	name="Аллакво"	# not a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=132305613
+	mother=432305613
+
+	8261.1.1 = {birth="8261.1.1"}
+	8277.1.1 = {add_trait=poor_warrior}
+	8279.1.1 = {add_spouse=437305613}
+}
+437305613 = {
+	name="Гилениос"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8261.1.1 = {birth="8261.1.1"}
+}
+138305613 = {
+	name="Люсерра"	# not a lord
+	female=yes
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=132305613
+	mother=432305613
+
+	8264.1.1 = {birth="8264.1.1"}
+}
+139305613 = {
+	name="Мелларио"	# not a lord
+	female=yes
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=136305613
+	mother=436305613
+
+	8278.1.1 = {birth="8278.1.1"}
+}
+140305613 = {
+	name="Аллакво"	# not a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=136305613
+	mother=436305613
+
+	8281.1.1 = {birth="8281.1.1"}
+	8297.1.1 = {add_trait=poor_warrior}
+}
+141305613 = {
+	name="Сфрона"	# not a lord
+	female=yes
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=136305613
+	mother=436305613
+
+	8282.1.1 = {birth="8282.1.1"}
+}
+142305613 = {
+	name="Лотея"	# not a lord
+	female=yes
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=137305613
+	mother=437305613
+
+	8285.1.1 = {birth="8285.1.1"}
+}
+143305613 = {
+	name="Паркелло"	# not a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=137305613
+	mother=437305613
+
+	8287.1.1 = {birth="8287.1.1"}
+}
+144305613 = {
+	name="Навафос"	# not a lord
+	dynasty=305613
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=137305613
+	mother=437305613
+
+	8289.1.1 = {birth="8289.1.1"}
+}
+
+###House Kirines of Volon Therys###
+344305605 = {
+	name="Сиродо"	# a lord
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+
+	7815.1.1 = {birth="7815.1.1"}
+	7869.1.1 = {death="7869.1.1"}
+}
+343305605 = {
+	name="Виронос"	# a lord
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=344305605
+
+	7838.1.1 = {birth="7838.1.1"}
+	7899.1.1 = {death="7899.1.1"}
+}
+342305605 = {
+	name="Эссорио"	# a lord
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=343305605
+
+	7865.1.1 = {birth="7865.1.1"}
+	7919.1.1 = {death="7919.1.1"}
+}
+341305605 = {
+	name="Марилло"	# a lord
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=342305605
+
+	7892.1.1 = {birth="7892.1.1"}
+	7949.1.1 = {death="7949.1.1"}
+}
+340305605 = {
+	name="Марафос"	# a lord
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=341305605
+
+	7918.1.1 = {birth="7918.1.1"}
+	7970.1.1 = {death="7970.1.1"}
+}
+100305605 = {
+	name="Орделло"	# a lord
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=340305605
+
+	7950.1.1 = {birth="7950.1.1"}
+	7966.1.1 = {add_trait=trained_warrior}
+	8011.1.1 = {death="8011.1.1"}
+}
+101305605 = {
+	name="Болкелло"	# a lord
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100305605
+
+	7981.1.1 = {birth="7981.1.1"}
+	7996.1.1 = {add_trait=trained_warrior}
+	8025.1.1 = {death = {death_reason = death_accident}}
+}
+107305605 = {
+	name="Болкелло"	# a lord
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101305605
+
+	8017.1.1 = {birth="8017.1.1"}
+	8033.1.1 = {add_trait=poor_warrior}
+	8062.1.1 = {death="8062.1.1"}
+}
+110305605 = {
+	name="Коллокво"	# a lord
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=107305605
+
+	8055.1.1 = {birth="8055.1.1"}
+	8071.1.1 = {add_trait=trained_warrior}
+	8109.1.1 = {death="8109.1.1"}
+}
+112305605 = {
+	name="Горис"	# a lord
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=107305605
+
+	8057.1.1 = {birth="8057.1.1"}
+	8073.1.1 = {add_trait=skilled_warrior}
+	8120.1.1 = {death="8120.1.1"}
+}
+114305605 = {
+	name="Хоронно"	# a lord
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=112305605
+
+	8090.1.1 = {birth="8090.1.1"}
+	8106.1.1 = {add_trait=poor_warrior}
+	8144.1.1 = {death="8144.1.1"}
+}
+115305605 = {
+	name="Аллакво"	# a lord
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=114305605
+
+	8114.1.1 = {birth="8114.1.1"}
+	8130.1.1 = {add_trait=trained_warrior}
+	8159.1.1 = {death="8159.1.1"}
+}
+116305605 = {
+	name="Лото"	# a lord
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=114305605
+
+	8117.1.1 = {birth="8117.1.1"}
+	8133.1.1 = {add_trait=skilled_warrior}
+	8172.1.1 = {death="8172.1.1"}
+}
+117305605 = {
+	name="Кварро"	# a lord
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=116305605
+
+	8145.1.1 = {birth="8145.1.1"}
+	8161.1.1 = {add_trait=trained_warrior}
+	8175.1.1 = {death="8175.1.1"}
+}
+119305605 = {
+	name="Болкелло"	# a lord
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=116305605
+
+	8150.1.1 = {birth="8150.1.1"}
+	8166.1.1 = {add_trait=trained_warrior}
+	8210.1.1 = {death="8210.1.1"}
+}
+122305605 = {
+	name="Алиос"	# a lord
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=117305605
+
+	8173.1.1 = {birth="8173.1.1"}
+	8190.1.1 = {add_trait=trained_warrior}
+	8232.1.1 = {death="8232.1.1"}
+}
+124305605 = {
+	name="Горис"	# a lord
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=122305605
+
+	8207.1.1 = {birth="8207.1.1"}
+	8223.1.1 = {add_trait=poor_warrior}
+	8225.1.1 = {add_spouse=424305605}
+	8266.1.1 = {death="8266.1.1"}
+}
+424305605 = {
+	name="Гилениос"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8207.1.1 = {birth="8207.1.1"}
+	8266.1.1 = {death="8266.1.1"}
+}
+127305605 = {
+	name="Горис"	# a lord
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=124305605
+	mother=424305605
+
+	8234.1.1 = {birth="8234.1.1"}
+	8250.1.1 = {add_trait=poor_warrior}
+	8252.1.1 = {add_spouse=427305605}
+	8282.1.1 = {death="8282.1.1"}
+}
+427305605 = {
+	name="Гилора"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8234.1.1 = {birth="8234.1.1"}
+	8282.1.1 = {death="8282.1.1"}
+}
+128305605 = {
+	name="Мера"	# not a lord
+	female=yes
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=124305605
+	mother=424305605
+
+	8236.1.1 = {birth="8236.1.1"}
+	8294.1.1 = {death="8294.1.1"}
+}
+129305605 = {
+	name="Хоронно"	# a lord
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=127305605
+	mother=427305605
+
+	8256.1.1 = {birth="8256.1.1"}
+	8272.1.1 = {add_trait=trained_warrior}
+	8274.1.1 = {add_spouse=429305605}
+}
+429305605 = {
+	name="Мера"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8256.1.1 = {birth="8256.1.1"}
+}
+130305605 = {
+	name="Паркелло"	# not a lord
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=127305605
+	mother=427305605
+
+	8258.1.1 = {birth="8258.1.1"}
+	8274.1.1 = {add_trait=poor_warrior}
+	8276.1.1 = {add_spouse=430305605}
+}
+430305605 = {
+	name="Ориос"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8258.1.1 = {birth="8258.1.1"}
+}
+131305605 = {
+	name="Мералин"	# not a lord
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=127305605
+	mother=427305605
+
+	8260.1.1 = {birth="8260.1.1"}
+	8276.1.1 = {add_trait=trained_warrior}
+}
+132305605 = {
+	name="Роллокво"	# not a lord
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=127305605
+	mother=427305605
+
+	8261.1.1 = {birth="8261.1.1"}
+	8277.1.1 = {add_trait=poor_warrior}
+}
+133305605 = {
+	name="Моредея"	# not a lord
+	female=yes
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=129305605
+	mother=429305605
+
+	8282.1.1 = {birth="8282.1.1"}
+}
+134305605 = {
+	name="Орбело"	# not a lord
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=129305605
+	mother=429305605
+
+	8283.1.1 = {birth="8283.1.1"}
+	8299.1.1 = {add_trait=trained_warrior}
+}
+135305605 = {
+	name="Мералия"	# not a lord
+	female=yes
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=130305605
+	mother=430305605
+
+	8277.1.1 = {birth="8277.1.1"}
+}
+136305605 = {
+	name="Алиос"	# not a lord
+	dynasty=305605
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=130305605
+	mother=430305605
+
+	8279.1.1 = {birth="8279.1.1"}
+	8295.1.1 = {add_trait=trained_warrior}
+}
+
+###House Tagaros of Volaena###
+342174603 = {
+	name="Паркелло"
+	dynasty = 174603 
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	7822.1.1 = {birth="7822.1.1"}
+	7838.1.1 = {add_trait=trained_warrior}
+	7870.1.1 = {death="7870.1.1"}
+}
+100174603 = {
+	name="Маркело"	# Маркело Tagaros, a Triarch during Doom of Valyria
+	dynasty = 174603
+	
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	father=342174603
+	
+	add_trait = tiger
+	add_trait = diligent
+	add_trait = proud
+	add_trait = tough_soldier
+	
+	7848.1.1 = {birth="7848.1.1"}
+	7864.1.1 = {add_trait=trained_warrior}
+	7906.1.1 = {
+		add_trait = triarch_statue
+		effect_even_if_dead = { set_government_type = triarch_merchant_republic_government }
+		death = yes
+	}
+}
+341174603 = {
+	name="Роллокво"
+	dynasty = 174603 
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	father=100174603
+
+	7869.1.1 = {birth="7869.1.1"}
+	7885.1.1 = {add_trait=trained_warrior}
+	7921.1.1 = {death="7921.1.1"}
+}
+340174603 = {
+	name="Вейкар"
+	dynasty = 174603 
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	father=341174603
+
+	7892.1.1 = {birth="7892.1.1"}
+	7908.1.1 = {add_trait=trained_warrior}
+	7934.1.1 = {death="7934.1.1"}
+}
+101174603 = {
+	name="Орделло"
+	dynasty = 174603 
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	father=340174603
+
+	7915.1.1 = {birth="7915.1.1"}
+	7931.1.1 = {add_trait=trained_warrior}
+	7966.1.1 = {death="7966.1.1"}
+}
+102174603 = {
+	name="Беличо"
+	dynasty = 174603 
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	father=101174603
+
+	7938.1.1 = {birth="7938.1.1"}
+	7998.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 100600219 #Harro, the Dothraki. Later ruler of Volaena
+		}
+	}
+}
+103174603 = {
+	name="Маркело"
+	dynasty = 174603 
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	father=102174603
+	
+	7969.1.1 = {birth="7969.1.1"}
+	7985.1.1 = {add_trait=trained_warrior}
+	7998.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 100600219 #Harro, the Dothraki. Later ruler of Volaena
+		}
+	}
+}
+
+###########################
+### Noble Feudal Houses ###
+########################### 
+### House Staegone
+343174600 = {
+	name="Трегирос"	# a lord
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	7842.1.1 = {birth="7842.1.1"}
+	7883.1.1 = {death="7883.1.1"}
+}
+342174600 = {
+	name="Вогис"	# a lord
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=343174600
+
+	7868.1.1 = {birth="7868.1.1"}
+	7911.1.1 = {death="7911.1.1"}
+}
+341174600 = {
+	name="Накодос"	# a lord
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=342174600
+
+	7893.1.1 = {birth="7893.1.1"}
+	7961.1.1 = {death="7961.1.1"}
+}
+340174600 = {
+	name="Лисирос"	# a lord
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=341174600
+
+	7921.1.1 = {birth="7921.1.1"}
+	7975.1.1 = {death="7975.1.1"}
+}
+108174600 = {
+	name="Коллокво"	# a lord
+	dynasty=174600
+	
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	father=340174600
+		
+	martial = 7
+
+	add_trait=content
+	add_trait=skilled_tactician
+
+	7955.1.1 = {birth="7955.1.1"}
+	7971.1.1 = {add_trait=trained_warrior}
+	7973.1.1 = {add_trait=tiger}
+	8023.1.1 = {death="8023.1.1"}
+}
+110174600 = {
+	name="Беличо"	# a lord
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=108174600
+
+	7987.1.1 = {birth="7987.1.1"}
+	8003.1.1 = {add_trait=trained_warrior}
+	8050.1.1 = {
+		death="8050.1.1"
+		add_trait=triarch_statue
+	}
+}
+115174600 = {
+	name="Коллокво"	# a lord
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=110174600
+
+	8009.1.1 = {birth="8009.1.1"}
+	8025.1.1 = {add_trait=trained_warrior}
+	8053.1.1 = {death="8053.1.1"}
+}
+117174600 = {
+	name="Малакво"	# a lord
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=110174600
+
+	8014.1.1 = {birth="8014.1.1"}
+	8030.1.1 = {add_trait=poor_warrior}
+	8057.1.1 = {death="8057.1.1"}
+}
+119174600 = {
+	name="Ниэссос"	# a lord
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=117174600
+
+	8033.1.1 = {birth="8033.1.1"}
+	8049.1.1 = {add_trait=poor_warrior}
+	8092.1.1 = {death="8092.1.1"}
+}
+120174600 = {
+	name="Ниэссос"	# a lord
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=119174600
+
+	8061.1.1 = {birth="8061.1.1"}
+	8077.1.1 = {add_trait=skilled_warrior}
+	8115.1.1 = {death="8115.1.1"}
+}
+125174600 = {
+	name="Эйликс"	# a lord
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=120174600
+
+	8085.1.1 = {birth="8085.1.1"}
+	8101.1.1 = {add_trait=poor_warrior}
+	8137.1.1 = {death="8137.1.1"}
+}
+128174600 = {
+	name="Джейкар"	# a lord
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=125174600
+
+	8109.1.1 = {birth="8109.1.1"}
+	8125.1.1 = {add_trait=poor_warrior}
+	8187.1.1 = {
+		death="8187.1.1"
+		add_trait=triarch_statue
+	}
+}
+132174600 = {
+	name="Паркелло"	# not a lord
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=128174600
+
+	8138.1.1 = {birth="8138.1.1"}
+	8154.1.1 = {add_trait=poor_warrior}
+	8166.1.1 = {death="8166.1.1"}
+}
+136174600 = {
+	name="Метисо"	# a lord
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=132174600
+
+	8159.1.1 = {birth="8159.1.1"}
+	8175.1.1 = {add_trait=skilled_warrior}
+	8228.1.1 = {death="8228.1.1"}
+}
+142174600 = {
+	name="Хейрис"	# a lord
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=136174600
+
+	8182.1.1 = {birth="8182.1.1"}
+	8198.1.1 = {add_trait=trained_warrior}
+	8230.1.1 = {death="8230.1.1"}
+}
+145174600 = {
+	name="Джейкар"	# a lord
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=142174600
+
+	8212.1.1 = {birth="8212.1.1"}
+	8228.1.1 = {add_trait=skilled_warrior}
+	8230.1.1 = {add_spouse=445174600}
+	8279.1.1 = {death="8279.1.1"}
+}
+445174600 = {
+	name="Сиэйлла"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8212.1.1 = {birth="8212.1.1"}
+	8279.1.1 = {death="8279.1.1"}
+}
+146174600 = {
+	name="Алирис"	# not a lord
+	female=yes
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=145174600
+	mother=445174600
+
+	8240.1.1 = {birth="8240.1.1"}
+}
+147174600 = {
+	name="Симелла"	# not a lord
+	female=yes
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=145174600
+	mother=445174600
+
+	8242.1.1 = {birth="8242.1.1"}
+}
+148174600 = {
+	name="Донифос"	# not a lord
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=145174600
+	mother=445174600
+
+	8247.1.1 = {birth="8247.1.1"}
+	8263.1.1 = {add_trait=poor_warrior}
+}
+
+100174398 = {
+	name="Беличо"	# Canon, Беличо Staegone, candidate for Triarch, a lord
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	father=145174600
+	mother=445174600
+
+	8245.1.1 = {birth="8245.1.1"}
+	8261.1.1 = {
+		add_trait=trained_warrior
+		add_trait=tough_soldier
+		add_trait=tiger
+	}
+	8263.1.1 = {add_spouse=400174398}
+}
+400174398 = {
+	name="Элейна"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8245.1.1 = {birth="8245.1.1"}
+}
+101174398 = {
+	name="Беличо"	# not a lord
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=100174398
+	mother=400174398
+
+	8269.1.1 = {birth="8269.1.1"}
+	8285.1.1 = {add_trait=poor_warrior}
+	8287.1.1 = {add_spouse=401174398}
+}
+401174398 = {
+	name="Рейис"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8269.1.1 = {birth="8269.1.1"}
+}
+102174398 = {
+	name="Горис"	# not a lord
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=100174398
+	mother=400174398
+
+	8270.1.1 = {birth="8270.1.1"}
+	8286.1.1 = {add_trait=poor_warrior}
+}
+103174398 = {
+	name="Рейис"	# not a lord
+	female=yes
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=100174398
+	mother=400174398
+
+	8272.1.1 = {birth="8272.1.1"}
+}
+104174398 = {
+	name="Хейрис"	# not a lord
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=100174398
+	mother=400174398
+
+	8274.1.1 = {birth="8274.1.1"}
+	8290.1.1 = {add_trait=skilled_warrior}
+}
+105174398 = {
+	name="Алирис"	# not a lord
+	female=yes
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=101174398
+	mother=401174398
+
+	8295.1.1 = {birth="8295.1.1"}
+}
+106174398 = {
+	name="Талиса"	# not a lord
+	female=yes
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=101174398
+	mother=401174398
+
+	8296.1.1 = {birth="8296.1.1"}
+}
+107174398 = {
+	name="Дейгар"	# not a lord
+	dynasty=174600
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=101174398
+	mother=401174398
+
+	8298.1.1 = {birth="8298.1.1"}
+}
+
+#Hosue Nogarys
+344174601 = {
+	name="Эйриро"	# a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	7835.1.1 = {birth="7835.1.1"}
+	7881.1.1 = {death="7881.1.1"}
+}
+343174601 = {
+	name="Кокорро"	# a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=344174601
+
+	7857.1.1 = {birth="7857.1.1"}
+	7921.1.1 = {death="7921.1.1"}
+}
+342174601 = {
+	name="Лоторио"	# a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=343174601
+
+	7886.1.1 = {birth="7886.1.1"}
+	7944.1.1 = {death="7944.1.1"}
+}
+341174601 = {
+	name="Риберо"	# a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=342174601
+
+	7913.1.1 = {birth="7913.1.1"}
+	7965.1.1 = {death="7965.1.1"}
+}
+340174601 = {
+	name="Варан"	# a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=341174601
+
+	7939.1.1 = {birth="7939.1.1"}
+	7987.1.1 = {death="7987.1.1"}
+}
+100174601 = {
+	name="Беличо"	# a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	father=340174601
+	
+	martial = 5
+	
+	add_trait=tough_soldier
+
+	7967.1.1 = {birth="7967.1.1"}
+	7983.1.1 = {add_trait=trained_warrior}
+	7984.1.1 = {add_trait=tiger}
+	8035.1.1 = {death="8035.1.1"}
+}
+101174601 = {
+	name="Ниэссос"	# a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=100174601
+
+	7993.1.1 = {birth="7993.1.1"}
+	8009.1.1 = {add_trait=poor_warrior}
+	8058.1.1 = {death="8058.1.1"}
+}
+104174601 = {
+	name="Эйликс"	# a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=101174601
+
+	8024.1.1 = {birth="8024.1.1"}
+	8040.1.1 = {add_trait=skilled_warrior}
+	8074.1.1 = {death="8074.1.1"}
+}
+105174601 = {
+	name="Джейкар"	# a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=104174601
+
+	8044.1.1 = {birth="8044.1.1"}
+	8060.1.1 = {add_trait=skilled_warrior}
+	8104.1.1 = {
+		death="8104.1.1"
+		add_trait=triarch_statue
+	}
+}
+107174601 = {
+	name="Вейкар"	# not a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=104174601
+
+	8046.1.1 = {birth="8046.1.1"}
+	8062.1.1 = {add_trait=poor_warrior}
+	8093.1.1 = {death="8093.1.1"}
+}
+110174601 = {
+	name="Малакво"	# a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=107174601
+
+	8078.1.1 = {birth="8078.1.1"}
+	8094.1.1 = {add_trait=trained_warrior}
+	8142.1.1 = {death="8142.1.1"}
+}
+111174601 = {
+	name="Бенерро"	# a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=110174601
+
+	8102.1.1 = {birth="8102.1.1"}
+	8118.1.1 = {add_trait=trained_warrior}
+	8167.1.1 = {death="8167.1.1"}
+}
+114174601 = {
+	name="Хоронно"	# a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=111174601
+
+	8126.1.1 = {birth="8126.1.1"}
+	8142.1.1 = {add_trait=trained_warrior}
+	8195.1.1 = {death="8195.1.1"}
+}
+116174601 = {
+	name="Хейрис"	# a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=114174601
+
+	8151.1.1 = {birth="8151.1.1"}
+	8167.1.1 = {add_trait=trained_warrior}
+	8219.1.1 = {death="8219.1.1"}
+}
+118174601 = {
+	name="Эйнар"	# a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=114174601
+
+	8156.1.1 = {birth="8156.1.1"}
+	8172.1.1 = {add_trait=trained_warrior}
+	8232.1.1 = {death="8232.1.1"}
+}
+121174601 = {
+	name="Каво"	# a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=118174601
+
+	8183.1.1 = {birth="8183.1.1"}
+	8199.1.1 = {add_trait=poor_warrior}
+	8201.1.1 = {add_spouse=421174601}
+	8236.1.1 = {
+		death="8236.1.1"
+		add_trait=triarch_statue
+	}
+}
+421174601 = {
+	name="Паркелла"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8183.1.1 = {birth="8183.1.1"}
+	8236.1.1 = {death="8236.1.1"}
+}
+124174601 = {
+	name="Матарис"	# a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=121174601
+	mother=421174601
+
+	8208.1.1 = {birth="8208.1.1"}
+	8224.1.1 = {add_trait=skilled_warrior}
+	8226.1.1 = {add_spouse=424174601}
+	8253.1.1 = {death="8253.1.1"}
+}
+424174601 = {
+	name="Элейна"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8208.1.1 = {birth="8208.1.1"}
+	8253.1.1 = {death="8253.1.1"}
+}
+126174601 = {
+	name="Ниэссос"	# not a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=121174601
+	mother=421174601
+
+	8212.1.1 = {birth="8212.1.1"}
+	8228.1.1 = {add_trait=poor_warrior}
+	8281.1.1 = {death="8281.1.1"}
+}
+127174601 = {
+	name="Эйнар"	# not a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=121174601
+	mother=421174601
+
+	8213.1.1 = {birth="8213.1.1"}
+	8229.1.1 = {add_trait=trained_warrior}
+	8291.1.1 = {death="8291.1.1"}
+}
+128174601 = {
+	name="Алирис"	# not a lord
+	female=yes
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=124174601
+	mother=424174601
+
+	8232.1.1 = {birth="8232.1.1"}
+}
+129174601 = {
+	name="Мокорро"	# a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=124174601
+	mother=424174601
+
+	8233.1.1 = {birth="8233.1.1"}
+	8249.1.1 = {add_trait=trained_warrior}
+	8251.1.1 = {add_spouse=429174601}
+	8291.1.1 = {death="8291.1.1"}
+}
+429174601 = {
+	name="Дейла"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8233.1.1 = {birth="8233.1.1"}
+	8291.1.1 = {death="8291.1.1"}
+}
+130174601 = {
+	name="Элейна"	# not a lord
+	female=yes
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=124174601
+	mother=424174601
+
+	8236.1.1 = {birth="8236.1.1"}
+	8285.1.1 = {death="8285.1.1"}
+}
+131174601 = {
+	name="Вогарро"	# not a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=124174601
+	mother=424174601
+
+	8237.1.1 = {birth="8237.1.1"}
+	8253.1.1 = {add_trait=skilled_warrior}
+}
+132174601 = {
+	name="Квохерис"	# not a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=124174601
+	mother=424174601
+
+	8240.1.1 = {birth="8240.1.1"}
+	8256.1.1 = {add_trait=trained_warrior}
+	8287.1.1 = {death="8287.1.1"}
+}
+133174601 = {
+	name="Коллокво"	# a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=129174601
+	mother=429174601
+
+	8265.1.1 = {birth="8265.1.1"}
+	8281.1.1 = {add_trait=trained_warrior}
+	8283.1.1 = {add_spouse=433174601}
+}
+433174601 = {
+	name="Ниэсса"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8265.1.1 = {birth="8265.1.1"}
+}
+134174601 = {
+	name="Сиэйлла"	# not a lord
+	female=yes
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=129174601
+	mother=429174601
+
+	8268.1.1 = {birth="8268.1.1"}
+}
+135174601 = {
+	name="Каво"	# Canon, not a lord, customs officer
+	dynasty=174601
+	
+	stewardship = 5
+	intrigue = 4
+	diplomacy = 5
+	martial = 2
+	learning = 4
+	
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=129174601
+	mother=429174601
+	
+	add_trait = gregarious
+	add_trait = thrifty_clerk
+
+	8269.1.1 = {birth="8269.1.1"}
+	8285.1.1 = {add_trait=trained_warrior}
+	8287.1.1 = {add_spouse=435174601}
+}
+435174601 = {
+	name="Паркелла"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8269.1.1 = {birth="8269.1.1"}
+}
+136174601 = {
+	name="Дейорилл"	# not a lord
+	female=yes
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=129174601
+	mother=429174601
+
+	8271.1.1 = {birth="8271.1.1"}
+}
+137174601 = {
+	name="Ниэссос"	# not a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=133174601
+	mother=433174601
+
+	8291.1.1 = {birth="8291.1.1"}
+	8307.1.1 = {add_trait=poor_warrior}
+}
+138174601 = {
+	name="Сейнрис"	# not a lord
+	female=yes
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=133174601
+	mother=433174601
+
+	8294.1.1 = {birth="8294.1.1"}
+}
+139174601 = {
+	name="Нейрис"	# not a lord
+	female=yes
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=135174601
+	mother=435174601
+
+	8296.1.1 = {birth="8296.1.1"}
+}
+140174601 = {
+	name="Хейрис"	# not a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=135174601
+	mother=435174601
+
+	8298.1.1 = {birth="8298.1.1"}
+	8314.1.1 = {add_trait=trained_warrior}
+}
+141174601 = {
+	name="Донифа"	# not a lord
+	female=yes
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=135174601
+	mother=435174601
+
+	8299.1.1 = {birth="8299.1.1"}
+}
+142174601 = {
+	name="Беличо"	# not a lord
+	dynasty=174601
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=135174601
+	mother=435174601
+
+	8300.1.1 = {birth="8300.1.1"}
+	8316.1.1 = {add_trait=trained_warrior}
+}
+
+### House Votar
+344174602 = {
+	name="Локорро"	# a lord
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	7820.1.1 = {birth="7820.1.1"}
+	7874.1.1 = {death="7874.1.1"}
+}
+343174602 = {
+	name="Варгелло"	# a lord
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	father=344174602
+
+	7842.1.1 = {birth="7842.1.1"}
+	7899.1.1 = {death="7899.1.1"}
+}
+342174602 = {
+	name="Торис"	# a lord
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	father=343174602
+
+	7867.1.1 = {birth="7867.1.1"}
+	7929.1.1 = {death="7929.1.1"}
+}
+341174602 = {
+	name="Киберо"	# a lord
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	father=342174602
+
+	7896.1.1 = {birth="7896.1.1"}
+	7951.1.1 = {death="7951.1.1"}
+}
+340174602 = {
+	name="Нарофос"	# a lord
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	father=341174602
+
+	7918.1.1 = {birth="7918.1.1"}
+	7966.1.1 = {death="7966.1.1"}
+}
+100174602 = {
+	name="Донифос"	# a lord
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+	
+	father=340174602
+	
+	add_trait=honorable
+
+	7946.1.1 = {birth="7946.1.1"}
+	7962.1.1 = {add_trait=poor_warrior}
+	8008.1.1 = {death="8008.1.1"}
+}
+104174602 = {
+	name="Хоронно"	# a lord
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=100174602
+
+	7977.1.1 = {birth="7977.1.1"}
+	7993.1.1 = {add_trait=poor_warrior}
+	8044.1.1 = {
+		death="8044.1.1"
+		add_trait=triarch_statue
+	}
+}
+105174602 = {
+	name="Коллокво"	# Canon, a lord, wrote the Jade Compendium
+	dynasty=174602
+	
+	martial=5
+	diplomacy=8
+	intrigue=5
+	stewardship=4
+	learning=10
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=104174602
+	
+	add_trait=quick
+	add_trait=scholar
+	add_trait=ambitious
+	add_trait=brave
+	
+	7996.1.1 = {birth="7996.1.1"}
+	8012.1.1 = {add_trait=trained_warrior}
+	8064.1.1 = {death="8064.1.1"}
+}
+107174602 = {
+	name="Ниэссос"	# a lord
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=105174602
+
+	8023.1.1 = {birth="8023.1.1"}
+	8039.1.1 = {add_trait=skilled_warrior}
+	8071.1.1 = {
+		death="8071.1.1"
+		add_trait=triarch_statue
+	}
+}
+111174602 = {
+	name="Каво"	# a lord
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=107174602
+
+	8048.1.1 = {birth="8048.1.1"}
+	8064.1.1 = {add_trait=poor_warrior}
+	8097.1.1 = {death="8097.1.1"}
+}
+112174602 = {
+	name="Дейгар"	# a lord
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=107174602
+
+	8051.1.1 = {birth="8051.1.1"}
+	8067.1.1 = {add_trait=poor_warrior}
+	8118.1.1 = {death="8118.1.1"}
+}
+114174602 = {
+	name="Алиос"	# a lord
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=112174602
+
+	8074.1.1 = {birth="8074.1.1"}
+	8090.1.1 = {add_trait=master_warrior}
+	8149.1.1 = {death="8149.1.1"}
+}
+118174602 = {
+	name="Бенерро"	# a lord
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=114174602
+
+	8095.1.1 = {birth="8095.1.1"}
+	8111.1.1 = {add_trait=trained_warrior}
+	8160.1.1 = {
+		death="8160.1.1"
+		add_trait=triarch_statue
+	}
+}
+124174602 = {
+	name="Горис"	# a lord
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=118174602
+
+	8118.1.1 = {birth="8118.1.1"}
+	8134.1.1 = {add_trait=skilled_warrior}
+	8165.1.1 = {
+		death = {death_reason = death_murder}
+		add_trait=triarch_statue
+	}
+}
+125174602 = {
+	name="Матарис"	# a lord
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=124174602
+
+	8153.1.1 = {birth="8153.1.1"}
+	8169.1.1 = {add_trait=trained_warrior}
+	8203.1.1 = {death="8203.1.1"}
+}
+129174602 = {
+	name="Беличо"	# a lord
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=125174602
+
+	8180.1.1 = {birth="8180.1.1"}
+	8196.1.1 = {add_trait=poor_warrior}
+	8232.1.1 = {death="8232.1.1"}
+}
+133174602 = {
+	name="Вейкар"	# a lord
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=129174602
+
+	8199.1.1 = {birth="8199.1.1"}
+	8215.1.1 = {add_trait=trained_warrior}
+	8217.1.1 = {add_spouse=433174602}
+	8244.1.1 = {
+		death="8244.1.1"
+		add_trait=triarch_statue
+	}
+}
+433174602 = {
+	name="Симелла"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8199.1.1 = {birth="8199.1.1"}
+	8244.1.1 = {death="8244.1.1"}
+}
+134174602 = {
+	name="Мокорро"	# a lord
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=133174602
+	mother=433174602
+
+	8227.1.1 = {birth="8227.1.1"}
+	8243.1.1 = {add_trait=trained_warrior}
+	8245.1.1 = {add_spouse=434174602}
+	8263.1.1 = {death="8263.1.1"}
+}
+434174602 = {
+	name="Лиайса"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8227.1.1 = {birth="8227.1.1"}
+	8263.1.1 = {death="8263.1.1"}
+}
+135174602 = {
+	name="Бенерра"	# not a lord
+	female=yes
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=133174602
+	mother=433174602
+
+	8229.1.1 = {birth="8229.1.1"}
+	8284.1.1 = {death="8284.1.1"}
+}
+136174602 = {
+	name="Беличо"	# not a lord
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=133174602
+	mother=433174602
+
+	8232.1.1 = {birth="8232.1.1"}
+	8248.1.1 = {add_trait=poor_warrior}
+	8250.1.1 = {add_spouse=436174602}
+	8297.1.1 = {death="8297.1.1"}
+}
+436174602 = {
+	name="Ниэсса"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8232.1.1 = {birth="8232.1.1"}
+	8297.1.1 = {death="8297.1.1"}
+}
+137174602 = {
+	name="Мокорро"	# a lord
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=134174602
+	mother=434174602
+
+	8253.1.1 = {birth="8253.1.1"}
+	8269.1.1 = {add_trait=trained_warrior}
+	8271.1.1 = {add_spouse=437174602}
+}
+437174602 = {
+	name="Рей"
+	female=yes
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8253.1.1 = {birth="8253.1.1"}
+}
+138174602 = {
+	name="Элейна"	# a lord
+	female=yes
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=134174602
+	mother=434174602
+
+	8254.1.1 = {birth="8254.1.1"}
+}
+139174602 = {
+	name="Малакво"	# not a lord
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=137174602
+	mother=437174602
+
+	8276.1.1 = {birth="8276.1.1"}
+	8292.1.1 = {add_trait=poor_warrior}
+}
+140174602 = {
+	name="Хоронно"	# not a lord
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=137174602
+	mother=437174602
+
+	8277.1.1 = {birth="8277.1.1"}
+	8293.1.1 = {add_trait=skilled_warrior}
+}
+141174602 = {
+	name="Мокорра"	# not a lord
+	female=yes
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=137174602
+	mother=437174602
+
+	8280.1.1 = {birth="8280.1.1"}
+}
+142174602 = {
+	name="Эйликс"	# not a lord
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=136174602
+	mother=436174602
+
+	8255.1.1 = {birth="8255.1.1"}
+	8271.1.1 = {add_trait=skilled_warrior}
+}
+143174602 = {
+	name="Джейкар"	# not a lord
+	dynasty=174602
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	father=136174602
+	mother=436174602
+
+	8257.1.1 = {birth="8257.1.1"}
+	8273.1.1 = {add_trait=skilled_warrior}
+}
+
+### House Marsiglio
+34469141 = {
+	name="Хибарио"	# a lord
+	dynasty=69141
+
+	religion="rhllor"
+	culture="volantene"
+
+	7832.1.1 = {birth="7832.1.1"}
+	7883.1.1 = {death="7883.1.1"}
+}
+34369141 = {
+	name="Кокорро"	# a lord
+	dynasty=69141
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34469141
+
+	7857.1.1 = {birth="7857.1.1"}
+	7899.1.1 = {death="7899.1.1"}
+}
+34269141 = {
+	name="Таласо"	# a lord
+	dynasty=69141
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34369141
+
+	7882.1.1 = {birth="7882.1.1"}
+	7930.1.1 = {death="7930.1.1"}
+}
+34169141 = {
+	name="Накаро"	# a lord
+	dynasty=69141
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34269141
+
+	7909.1.1 = {birth="7909.1.1"}
+	7958.1.1 = {death="7958.1.1"}
+}
+34069141 = {
+	name="Дракано"	# a lord
+	dynasty=69141
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34169141
+
+	7937.1.1 = {birth="7937.1.1"}
+	7995.1.1 = {death="7995.1.1"}
+}
+100069141 = {
+	name="Йорко"	# a lord
+	dynasty=69141
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=34069141
+	
+	7959.1.1 = {birth="7959.1.1"}
+	7975.1.1 = {add_trait=poor_warrior}
+	8034.1.1 = {death="8034.1.1"}
+}
+100269141 = {
+	name="Метисо"	# a lord
+	dynasty=69141
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100069141
+
+	7996.1.1 = {birth="7996.1.1"}
+	8012.1.1 = {add_trait=poor_warrior}
+	8035.1.1 = {death="8035.1.1"}
+}
+100369141 = {
+	name="Орделло"	# a lord
+	dynasty=69141
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100269141
+
+	8015.1.1 = {birth="8015.1.1"}
+	8031.1.1 = {add_trait=poor_warrior}
+	8090.1.1 = {death="8090.1.1"}
+}
+100669141 = {
+	name="Мералин"	# a lord
+	dynasty=69141
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100369141
+
+	8047.1.1 = {birth="8047.1.1"}
+	8063.1.1 = {add_trait=trained_warrior}
+	8094.1.1 = {death="8094.1.1"}
+}
+100769141 = {
+	name="Ниэссос"	# a lord
+	dynasty=69141
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100669141
+
+	8067.1.1 = {birth="8067.1.1"}
+	8083.1.1 = {add_trait=trained_warrior}
+	8145.1.1 = {death="8145.1.1"}
+}
+101269141 = {
+	name="Мералин"	# a lord
+	dynasty=69141
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100769141
+
+	8098.1.1 = {birth="8098.1.1"}
+	8114.1.1 = {add_trait=poor_warrior}
+	8158.1.1 = {death="8158.1.1"}
+}
+101369141 = {
+	name="Орделло"	# a lord
+	dynasty=69141
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101269141
+
+	8130.1.1 = {birth="8130.1.1"}
+	8146.1.1 = {add_trait=trained_warrior}
+	8196.1.1 = {death="8196.1.1"}
+}
+101869141 = {
+	name="Аллакво"	# a lord
+	dynasty=69141
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101369141
+
+	8148.1.1 = {birth="8148.1.1"}
+	8164.1.1 = {add_trait=poor_warrior}
+	8206.1.1 = {death="8206.1.1"}
+}
+101969141 = {
+	name="Бегго"	# a lord
+	dynasty=69141
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101869141
+
+	8181.1.1 = {birth="8181.1.1"}
+	8197.1.1 = {add_trait=poor_warrior}
+	8199.1.1 = {add_spouse=401969141}
+	8256.1.1 = {death="8256.1.1"}
+}
+401969141 = {
+	name="Тейна"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8181.1.1 = {birth="8181.1.1"}
+	8256.1.1 = {death="8256.1.1"}
+}
+102169141 = {
+	name="Малакво"	# a lord
+	dynasty=69141
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101969141
+	mother=401969141
+
+	8215.1.1 = {birth="8215.1.1"}
+	8231.1.1 = {add_trait=poor_warrior}
+	8233.1.1 = {add_spouse=402169141}
+	8273.1.1 = {death="8273.1.1"}
+}
+402169141 = {
+	name="Изембара"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8215.1.1 = {birth="8215.1.1"}
+	8273.1.1 = {death="8273.1.1"}
+}
+102269141 = {
+	name="Мера"	# not a lord
+	female=yes
+	dynasty=69141
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101969141
+	mother=401969141
+
+	8217.1.1 = {birth="8217.1.1"}
+	8268.1.1 = {death="8268.1.1"}
+}
+102369141 = {
+	name="Коллокво"	# a lord
+	dynasty=69141
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102169141
+	mother=402169141
+
+	8238.1.1 = {birth="8238.1.1"}
+	8254.1.1 = {add_trait=trained_warrior}
+	8256.1.1 = {add_spouse=402369141}
+	8279.1.1 = {death="8279.1.1"}
+}
+402369141 = {
+	name="Нохия"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8238.1.1 = {birth="8238.1.1"}
+	8279.1.1 = {death="8279.1.1"}
+}
+102469141 = {
+	name="Аллакво"	# a lord
+	dynasty=69141
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102369141
+	mother=402369141
+
+	8260.1.1 = {birth="8260.1.1"}
+	8276.1.1 = {add_trait=trained_warrior}
+	8278.1.1 = {add_spouse=402469141}
+	8295.1.1 = {death="8295.1.1"}
+}
+402469141 = {
+	name="Алия"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8260.1.1 = {birth="8260.1.1"}
+	8295.1.1 = {death="8295.1.1"}
+}
+102569141 = {
+	name="Бенерро"	# not a lord
+	dynasty=69141
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102369141
+	mother=402369141
+
+	8261.1.1 = {birth="8261.1.1"}
+	8277.1.1 = {add_trait=poor_warrior}
+}
+102669141 = {
+	name="Кваррия"	# not a lord
+	female=yes
+	dynasty=69141
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102369141
+	mother=402369141
+
+	8263.1.1 = {birth="8263.1.1"}
+}
+102769141 = {
+	name="Метисо"	# a lord, there was some Метисо trying to be triarch, placed him here because why not
+	dynasty=69141
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102469141
+	mother=402469141
+
+	8280.1.1 = {birth="8280.1.1"}
+	8296.1.1 = {add_trait=poor_warrior}
+	8298.1.1 = {add_spouse=402769141}
+}
+402769141 = {
+	name="Ланна"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8280.1.1 = {birth="8280.1.1"}
+}
+102869141 = {
+	name="Якея"	# not a lord
+	female=yes
+	dynasty=69141
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102469141
+	mother=402469141
+
+	8281.1.1 = {birth="8281.1.1"}
+}
+102969141 = {
+	name="Метисо"	# not a lord
+	dynasty=69141
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102469141
+	mother=402469141
+
+	8282.1.1 = {birth="8282.1.1"}
+	8298.1.1 = {add_trait=trained_warrior}
+}
+
+### House Isnardo
+34469142 = {
+	name="Риберо"	# a lord
+	dynasty=69142
+
+	religion="rhllor"
+	culture="volantene"
+
+	7839.1.1 = {birth="7839.1.1"}
+	7879.1.1 = {death="7879.1.1"}
+}
+34369142 = {
+	name="Заргано"	# a lord
+	dynasty=69142
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34469142
+
+	7864.1.1 = {birth="7864.1.1"}
+	7919.1.1 = {death="7919.1.1"}
+}
+34269142 = {
+	name="Дорис"	# a lord
+	dynasty=69142
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34369142
+
+	7890.1.1 = {birth="7890.1.1"}
+	7944.1.1 = {death="7944.1.1"}
+}
+34169142 = {
+	name="Нарофос"	# a lord
+	dynasty=69142
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34269142
+
+	7912.1.1 = {birth="7912.1.1"}
+	7971.1.1 = {death="7971.1.1"}
+}
+34069142 = {
+	name="Риберо"	# a lord
+	dynasty=69142
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34169142
+
+	7934.1.1 = {birth="7934.1.1"}
+	7995.1.1 = {death="7995.1.1"}
+}
+100069142 = {
+	name="Лото"	# a lord
+	dynasty=69142
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34069142
+
+	7960.1.1 = {birth="7960.1.1"}
+	7976.1.1 = {add_trait=poor_warrior}
+	8032.1.1 = {death="8032.1.1"}
+}
+100369142 = {
+	name="Бенерро"	# a lord
+	dynasty=69142
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100069142
+
+	7986.1.1 = {birth="7986.1.1"}
+	8002.1.1 = {add_trait=poor_warrior}
+	8047.1.1 = {death="8047.1.1"}
+}
+100469142 = {
+	name="Коллокво"	# a lord
+	dynasty=69142
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100369142
+
+	8010.1.1 = {birth="8010.1.1"}
+	8026.1.1 = {add_trait=poor_warrior}
+	8066.1.1 = {death="8066.1.1"}
+}
+100669142 = {
+	name="Мокорро"	# a lord
+	dynasty=69142
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100469142
+
+	8043.1.1 = {birth="8043.1.1"}
+	8059.1.1 = {add_trait=poor_warrior}
+	8109.1.1 = {death="8109.1.1"}
+}
+100769142 = {
+	name="Визарро"	# a lord
+	dynasty=69142
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100669142
+
+	8076.1.1 = {birth="8076.1.1"}
+	8092.1.1 = {add_trait=poor_warrior}
+	8117.1.1 = {death="8117.1.1"}
+}
+100969142 = {
+	name="Роллокво"	# a lord
+	dynasty=69142
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100769142
+
+	8099.1.1 = {birth="8099.1.1"}
+	8115.1.1 = {add_trait=trained_warrior}
+	8134.1.1 = {death="8134.1.1"}
+}
+101469142 = {
+	name="Малакво"	# a lord
+	dynasty=69142
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100969142
+
+	8122.1.1 = {birth="8122.1.1"}
+	8138.1.1 = {add_trait=skilled_warrior}
+	8168.1.1 = {death="8168.1.1"}
+}
+101769142 = {
+	name="Коллокво"	# a lord
+	dynasty=69142
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101469142
+
+	8153.1.1 = {birth="8153.1.1"}
+	8169.1.1 = {add_trait=skilled_warrior}
+	8190.1.1 = {death="8190.1.1"}
+}
+101869142 = {
+	name="Малакво"	# a lord
+	dynasty=69142
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101769142
+
+	8177.1.1 = {birth="8177.1.1"}
+	8193.1.1 = {add_trait=poor_warrior}
+	8246.1.1 = {death="8246.1.1"}
+}
+101969142 = {
+	name="Паркелло"	# a lord
+	dynasty=69142
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101869142
+
+	8196.1.1 = {birth="8196.1.1"}
+	8212.1.1 = {add_trait=poor_warrior}
+	8214.1.1 = {add_spouse=401969142}
+	8263.1.1 = {death="8263.1.1"}
+}
+401969142 = {
+	name="Нарба"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8196.1.1 = {birth="8196.1.1"}
+	8263.1.1 = {death="8263.1.1"}
+}
+102369142 = {
+	name="Изембара"	# not a lord
+	female=yes
+	dynasty=69142
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101969142
+	mother=401969142
+
+	8214.1.1 = {birth="8214.1.1"}
+	8268.1.1 = {death="8268.1.1"}
+}
+102569142 = {
+	name="Алиос"	# a lord
+	dynasty=69142
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101969142
+	mother=401969142
+
+	8218.1.1 = {birth="8218.1.1"}
+	8234.1.1 = {add_trait=poor_warrior}
+	8236.1.1 = {add_spouse=402569142}
+	8277.1.1 = {death="8277.1.1"}
+}
+402569142 = {
+	name="Торма"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8218.1.1 = {birth="8218.1.1"}
+	8277.1.1 = {death="8277.1.1"}
+}
+102669142 = {
+	name="Умма"	# not a lord
+	female=yes
+	dynasty=69142
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101969142
+	mother=401969142
+
+	8219.1.1 = {birth="8219.1.1"}
+	8282.1.1 = {death="8282.1.1"}
+}
+102769142 = {
+	name="Бегго"	# a lord
+	dynasty=69142
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102569142
+	mother=402569142
+
+	8237.1.1 = {birth="8237.1.1"}
+	8253.1.1 = {add_trait=poor_warrior}
+	8255.1.1 = {add_spouse=402769142}
+	8297.1.1 = {death="8297.1.1"}
+}
+402769142 = {
+	name="Дения"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8237.1.1 = {birth="8237.1.1"}
+	8297.1.1 = {death="8297.1.1"}
+}
+102869142 = {
+	name="Сирея"	# not a lord
+	female=yes
+	dynasty=69142
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102569142
+	mother=402569142
+
+	8238.1.1 = {birth="8238.1.1"}
+	8275.1.1 = {death="8275.1.1"}
+}
+102969142 = {
+	name="Паркелло"	# a lord
+	dynasty=69142
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102769142
+	mother=402769142
+
+	8266.1.1 = {birth="8266.1.1"}
+	8282.1.1 = {add_trait=poor_warrior}
+	8284.1.1 = {add_spouse=402969142}
+}
+402969142 = {
+	name="Эззера"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8266.1.1 = {birth="8266.1.1"}
+}
+103069142 = {
+	name="Сирея"	# not a lord
+	female=yes
+	dynasty=69142
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102969142
+	mother=402969142
+
+	8284.1.1 = {birth="8284.1.1"}
+}
+103169142 = {
+	name="Лото"	# not a lord
+	dynasty=69142
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102969142
+	mother=402969142
+
+	8285.1.1 = {birth="8285.1.1"}
+	8301.1.1 = {add_trait=trained_warrior}
+}
+103269142 = {
+	name="Йорко"	# not a lord
+	dynasty=69142
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102969142
+	mother=402969142
+
+	8286.1.1 = {birth="8286.1.1"}
+	8302.1.1 = {add_trait=master_warrior}
+}
+
+### House Rannovar
+34469143 = {
+	name="Дариос"	# a lord
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+
+	7826.1.1 = {birth="7826.1.1"}
+	7898.1.1 = {death="7898.1.1"}
+}
+34369143 = {
+	name="Дариос"	# a lord
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34469143
+
+	7858.1.1 = {birth="7858.1.1"}
+	7910.1.1 = {death="7910.1.1"}
+}
+34269143 = {
+	name="Хокорро"	# a lord
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34369143
+
+	7883.1.1 = {birth="7883.1.1"}
+	7934.1.1 = {death="7934.1.1"}
+}
+34169143 = {
+	name="Кариос"	# a lord
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34269143
+
+	7908.1.1 = {birth="7908.1.1"}
+	7992.1.1 = {death="7992.1.1"}
+}
+34069143 = {
+	name="Лисар"	# a lord
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34169143
+
+	7931.1.1 = {birth="7931.1.1"}
+	7995.1.1 = {death="7995.1.1"}
+}
+100069143 = {
+	name="Роллокво"	# a lord
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34069143
+
+	7957.1.1 = {birth="7957.1.1"}
+	7973.1.1 = {add_trait=poor_warrior}
+	8031.1.1 = {death="8031.1.1"}
+}
+100169143 = {
+	name="Йорко"	# a lord
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100069143
+
+	7983.1.1 = {birth="7983.1.1"}
+	7999.1.1 = {add_trait=trained_warrior}
+	8032.1.1 = {death="8032.1.1"}
+}
+100369143 = {
+	name="Коллокво"	# a lord
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100169143
+
+	8010.1.1 = {birth="8010.1.1"}
+	8026.1.1 = {add_trait=skilled_warrior}
+	8077.1.1 = {death="8077.1.1"}
+}
+100569143 = {
+	name="Малакво"	# a lord
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100369143
+
+	8038.1.1 = {birth="8038.1.1"}
+	8054.1.1 = {add_trait=trained_warrior}
+	8094.1.1 = {death="8094.1.1"}
+}
+100969143 = {
+	name="Донифос"	# a lord
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100569143
+
+	8057.1.1 = {birth="8057.1.1"}
+	8073.1.1 = {add_trait=poor_warrior}
+	8099.1.1 = {death="8099.1.1"}
+}
+101169143 = {
+	name="Вогарро"	# a lord
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100969143
+
+	8082.1.1 = {birth="8082.1.1"}
+	8098.1.1 = {add_trait=poor_warrior}
+	8135.1.1 = {death="8135.1.1"}
+}
+101269143 = {
+	name="Орделло"	# a lord
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101169143
+
+	8104.1.1 = {birth="8104.1.1"}
+	8120.1.1 = {add_trait=trained_warrior}
+	8184.1.1 = {death="8184.1.1"}
+}
+101969143 = {
+	name="Метисо"	# a lord
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101269143
+
+	8129.1.1 = {birth="8129.1.1"}
+	8145.1.1 = {add_trait=poor_warrior}
+	8203.1.1 = {death="8203.1.1"}
+}
+102169143 = {
+	name="Бенерро"	# a lord
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101969143
+
+	8152.1.1 = {birth="8152.1.1"}
+	8168.1.1 = {add_trait=poor_warrior}
+	8214.1.1 = {death="8214.1.1"}
+}
+102369143 = {
+	name="Мералин"	# a lord
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102169143
+
+	8171.1.1 = {birth="8171.1.1"}
+	8187.1.1 = {add_trait=skilled_warrior}
+	8228.1.1 = {death="8228.1.1"}
+}
+102469143 = {
+	name="Аллакво"	# a lord
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102369143
+
+	8190.1.1 = {birth="8190.1.1"}
+	8206.1.1 = {add_trait=poor_warrior}
+	8208.1.1 = {add_spouse=402469143}
+	8244.1.1 = {death="8244.1.1"}
+}
+402469143 = {
+	name="Брея"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8190.1.1 = {birth="8190.1.1"}
+	8244.1.1 = {death="8244.1.1"}
+}
+102769143 = {
+	name="Бенерро"	# a lord
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102469143
+	mother=402469143
+
+	8218.1.1 = {birth="8218.1.1"}
+	8234.1.1 = {add_trait=poor_warrior}
+	8236.1.1 = {add_spouse=402769143}
+	8287.1.1 = {death="8287.1.1"}
+}
+402769143 = {
+	name="Нарба"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8218.1.1 = {birth="8218.1.1"}
+	8287.1.1 = {death="8287.1.1"}
+}
+102869143 = {
+	name="Люсерра"	# not a lord
+	female=yes
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102469143
+	mother=402469143
+
+	8219.1.1 = {birth="8219.1.1"}
+	8277.1.1 = {death="8277.1.1"}
+}
+102969143 = {
+	name="Роллокво"	# not a lord
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102469143
+	mother=402469143
+
+	8220.1.1 = {birth="8220.1.1"}
+	8236.1.1 = {add_trait=skilled_warrior}
+	8283.1.1 = {death="8283.1.1"}
+}
+103069143 = {
+	name="Мералия"	# not a lord
+	female=yes
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102769143
+	mother=402769143
+
+	8251.1.1 = {birth="8251.1.1"}
+}
+103169143 = {
+	name="Мералия"	# not a lord
+	female=yes
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102769143
+	mother=402769143
+
+	8253.1.1 = {birth="8253.1.1"}
+}
+103269143 = {
+	name="Рогга"	# not a lord
+	female=yes
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102769143
+	mother=402769143
+
+	8256.1.1 = {birth="8256.1.1"}
+}
+103369143 = {
+	name="Визарро"	# a lord
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102769143
+	mother=402769143
+
+	8258.1.1 = {birth="8258.1.1"}
+	8274.1.1 = {add_trait=trained_warrior}
+	8276.1.1 = {add_spouse=403369143}
+}
+403369143 = {
+	name="Тиха"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8258.1.1 = {birth="8258.1.1"}
+}
+103469143 = {
+	name="Паркелло"	# not a lord
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=103369143
+	mother=403369143
+
+	8276.1.1 = {birth="8276.1.1"}
+	8292.1.1 = {add_trait=trained_warrior}
+}
+103569143 = {
+	name="Визарро"	# not a lord
+	dynasty=69143
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=103369143
+	mother=403369143
+
+	8279.1.1 = {birth="8279.1.1"}
+	8295.1.1 = {add_trait=skilled_warrior}
+}
+
+### House Olivirana
+34469144 = {
+	name="Кварро"	# a lord
+	dynasty=69144
+
+	religion="rhllor"
+	culture="volantene"
+
+	7831.1.1 = {birth="7831.1.1"}
+	7875.1.1 = {death="7875.1.1"}
+}
+34369144 = {
+	name="Воронно"	# a lord
+	dynasty=69144
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34469144
+
+	7850.1.1 = {birth="7850.1.1"}
+	7903.1.1 = {death="7903.1.1"}
+}
+34269144 = {
+	name="Вогорно"	# a lord
+	dynasty=69144
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34369144
+
+	7881.1.1 = {birth="7881.1.1"}
+	7935.1.1 = {death="7935.1.1"}
+}
+34169144 = {
+	name="Тарио"	# a lord
+	dynasty=69144
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34269144
+
+	7905.1.1 = {birth="7905.1.1"}
+	7979.1.1 = {death="7979.1.1"}
+}
+34069144 = {
+	name="Фаласо"	# a lord
+	dynasty=69144
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34169144
+
+	7929.1.1 = {birth="7929.1.1"}
+	7995.1.1 = {death="7995.1.1"}
+}
+100069144 = {
+	name="Навафос"	# a lord
+	dynasty=69144
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34069144
+
+	7955.1.1 = {birth="7955.1.1"}
+	7971.1.1 = {add_trait=poor_warrior}
+	8033.1.1 = {death="8033.1.1"}
+}
+100169144 = {
+	name="Вогарро"	# a lord
+	dynasty=69144
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100069144
+
+	7984.1.1 = {birth="7984.1.1"}
+	8000.1.1 = {add_trait=poor_warrior}
+	8048.1.1 = {death = {death_reason = death_murder}}
+}
+100569144 = {
+	name="Алиос"	# a lord
+	dynasty=69144
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100169144
+
+	8002.1.1 = {birth="8002.1.1"}
+	8018.1.1 = {add_trait=poor_warrior}
+	8070.1.1 = {death="8070.1.1"}
+}
+100669144 = {
+	name="Горис"	# a lord
+	dynasty=69144
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100569144
+
+	8037.1.1 = {birth="8037.1.1"}
+	8053.1.1 = {add_trait=poor_warrior}
+	8078.1.1 = {death="8078.1.1"}
+}
+100869144 = {
+	name="Роллокво"	# a lord
+	dynasty=69144
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100669144
+
+	8063.1.1 = {birth="8063.1.1"}
+	8079.1.1 = {add_trait=poor_warrior}
+	8118.1.1 = {death="8118.1.1"}
+}
+101169144 = {
+	name="Лото"	# a lord
+	dynasty=69144
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100869144
+
+	8087.1.1 = {birth="8087.1.1"}
+	8103.1.1 = {add_trait=skilled_warrior}
+	8126.1.1 = {death="8126.1.1"}
+}
+101569144 = {
+	name="Ниэссос"	# a lord
+	dynasty=69144
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101169144
+
+	8111.1.1 = {birth="8111.1.1"}
+	8127.1.1 = {add_trait=poor_warrior}
+	8157.1.1 = {death = {death_reason = death_accident}}
+}
+101669144 = {
+	name="Ниэссос"	# a lord
+	dynasty=69144
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101569144
+
+	8138.1.1 = {birth="8138.1.1"}
+	8154.1.1 = {add_trait=poor_warrior}
+	8187.1.1 = {death="8187.1.1"}
+}
+102169144 = {
+	name="Каво"	# a lord
+	dynasty=69144
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101669144
+
+	8158.1.1 = {birth="8158.1.1"}
+	8174.1.1 = {add_trait=skilled_warrior}
+	8201.1.1 = {death="8201.1.1"}
+}
+102369144 = {
+	name="Паркелло"	# a lord
+	dynasty=69144
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102169144
+
+	8187.1.1 = {birth="8187.1.1"}
+	8203.1.1 = {add_trait=skilled_warrior}
+	8220.1.1 = {death = {death_reason = death_accident}}
+}
+102569144 = {
+	name="Роллокво"	# a lord
+	dynasty=69144
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102369144
+
+	8216.1.1 = {birth="8216.1.1"}
+	8232.1.1 = {add_trait=master_warrior}
+	8234.1.1 = {add_spouse=402569144}
+	8268.1.1 = {death="8268.1.1"}
+}
+402569144 = {
+	name="Ориос"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8216.1.1 = {birth="8216.1.1"}
+	8268.1.1 = {death="8268.1.1"}
+}
+102669144 = {
+	name="Тагганария"	# not a lord
+	female=yes
+	dynasty=69144
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102569144
+	mother=402569144
+
+	8234.1.1 = {birth="8234.1.1"}
+	8285.1.1 = {death="8285.1.1"}
+}
+102769144 = {
+	name="Аллакво"	# a lord
+	dynasty=69144
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102569144
+	mother=402569144
+
+	8236.1.1 = {birth="8236.1.1"}
+	8252.1.1 = {add_trait=poor_warrior}
+	8254.1.1 = {add_spouse=402769144}
+	8285.1.1 = {death="8285.1.1"}
+}
+402769144 = {
+	name="Йорка"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8236.1.1 = {birth="8236.1.1"}
+	8285.1.1 = {death="8285.1.1"}
+}
+102869144 = {
+	name="Метисо"	# not a lord
+	dynasty=69144
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102569144
+	mother=402569144
+
+	8237.1.1 = {birth="8237.1.1"}
+	8253.1.1 = {add_trait=trained_warrior}
+	8289.1.1 = {death = {death_reason = death_murder}}
+}
+102969144 = {
+	name="Орделло"	# a lord
+	dynasty=69144
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102769144
+	mother=402769144
+
+	8270.1.1 = {birth="8270.1.1"}
+	8286.1.1 = {add_trait=poor_warrior}
+	8288.1.1 = {add_spouse=402969144}
+}
+402969144 = {
+	name="Беллонара"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8270.1.1 = {birth="8270.1.1"}
+}
+103069144 = {
+	name="Мералин"	# not a lord
+	dynasty=69144
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102969144
+	mother=402969144
+
+	8297.1.1 = {birth="8297.1.1"}
+	8313.1.1 = {add_trait=poor_warrior}
+}
+103169144 = {
+	name="Уна"	# not a lord
+	female=yes
+	dynasty=69144
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102969144
+	mother=402969144
+
+	8298.1.1 = {birth="8298.1.1"}
+}
+
+### House Dhogarys
+34469145 = {
+	name="Пирио"	# a lord
+	dynasty=69145
+
+	religion="rhllor"
+	culture="volantene"
+	
+	7828.1.1 = {birth="7828.1.1"}
+	7879.1.1 = {death="7879.1.1"}
+}
+34369145 = {
+	name="Сталлакво"	# a lord
+	dynasty=69145
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=34469145
+	
+	7852.1.1 = {birth="7852.1.1"}
+	7901.1.1 = {death="7901.1.1"}
+}
+34269145 = {
+	name="Нерео"	# a lord
+	dynasty=69145
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=34369145
+	
+	7880.1.1 = {birth="7880.1.1"}
+	7929.1.1 = {death="7929.1.1"}
+}
+34169145 = {
+	name="Норокво"	# a lord
+	dynasty=69145
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=34269145
+	
+	7906.1.1 = {birth="7906.1.1"}
+	7966.1.1 = {death="7966.1.1"}
+}
+34069145 = {
+	name="Трегис"	# a lord
+	dynasty=69145
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=34169145
+	
+	7931.1.1 = {birth="7931.1.1"}
+	7995.1.1 = {death="7995.1.1"}
+}
+100069145 = {
+	name="Ниэссос"	# a lord
+	dynasty=69145
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=34069145
+
+	7959.1.1 = {birth="7959.1.1"}
+	7975.1.1 = {add_trait=poor_warrior}
+	8030.1.1 = {death="8030.1.1"}
+}
+100169145 = {
+	name="Болкелло"	# not a lord
+	dynasty=69145
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100069145
+
+	7982.1.1 = {birth="7982.1.1"}
+	7998.1.1 = {add_trait=trained_warrior}
+	8027.1.1 = {death="8027.1.1"}
+}
+100269145 = {
+	name="Роллокво"	# a lord
+	dynasty=69145
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100069145
+
+	7983.1.1 = {birth="7983.1.1"}
+	7999.1.1 = {add_trait=poor_warrior}
+	8053.1.1 = {death="8053.1.1"}
+}
+100569145 = {
+	name="Малакво"	# a lord
+	dynasty=69145
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100269145
+
+	8016.1.1 = {birth="8016.1.1"}
+	8032.1.1 = {add_trait=poor_warrior}
+	8075.1.1 = {death="8075.1.1"}
+}
+100869145 = {
+	name="Навафос"	# a lord
+	dynasty=69145
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100569145
+
+	8045.1.1 = {birth="8045.1.1"}
+	8061.1.1 = {add_trait=trained_warrior}
+	8088.1.1 = {death="8088.1.1"}
+}
+100969145 = {
+	name="Хоронно"	# a lord
+	dynasty=69145
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100869145
+
+	8080.1.1 = {birth="8080.1.1"}
+	8096.1.1 = {add_trait=trained_warrior}
+	8156.1.1 = {death="8156.1.1"}
+}
+101069145 = {
+	name="Йорко"	# a lord
+	dynasty=69145
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100969145
+
+	8114.1.1 = {birth="8114.1.1"}
+	8130.1.1 = {add_trait=trained_warrior}
+	8179.1.1 = {death="8179.1.1"}
+}
+101369145 = {
+	name="Болкелло"	# a lord
+	dynasty=69145
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101069145
+
+	8148.1.1 = {birth="8148.1.1"}
+	8164.1.1 = {add_trait=trained_warrior}
+	8197.1.1 = {death="8197.1.1"}
+}
+101469145 = {
+	name="Орбело"	# a lord
+	dynasty=69145
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101369145
+
+	8176.1.1 = {birth="8176.1.1"}
+	8192.1.1 = {add_trait=skilled_warrior}
+	8229.1.1 = {death="8229.1.1"}
+}
+101669145 = {
+	name="Орбела"	# not a lord
+	female=yes
+	dynasty=69145
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101469145
+
+	8204.1.1 = {birth="8204.1.1"}
+	8271.1.1 = {death="8271.1.1"}
+}
+101769145 = {
+	name="Мокорро"	# a lord
+	dynasty=69145
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101469145
+
+	8206.1.1 = {birth="8206.1.1"}
+	8222.1.1 = {add_trait=poor_warrior}
+	8224.1.1 = {add_spouse=401769145}
+	8264.1.1 = {death = {death_reason = death_accident}}
+}
+401769145 = {
+	name="Эззера"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8206.1.1 = {birth="8206.1.1"}
+	8264.1.1 = {death="8264.1.1"}
+}
+101969145 = {
+	name="Орбела"	# not a lord
+	female=yes
+	dynasty=69145
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101769145
+	mother=401769145
+
+	8234.1.1 = {birth="8234.1.1"}
+	8285.1.1 = {death="8285.1.1"}
+}
+102069145 = {
+	name="Уна"	# not a lord
+	female=yes
+	dynasty=69145
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101769145
+	mother=401769145
+
+	8237.1.1 = {birth="8237.1.1"}
+	8286.1.1 = {death="8286.1.1"}
+}
+102169145 = {
+	name="Навафос"	# a lord
+	dynasty=69145
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101769145
+	mother=401769145
+
+	8240.1.1 = {birth="8240.1.1"}
+	8256.1.1 = {add_trait=trained_warrior}
+	8258.1.1 = {add_spouse=402169145}
+	8270.1.1 = {death = {death_reason = death_battle}}
+}
+402169145 = {
+	name="Тернесия"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8240.1.1 = {birth="8240.1.1"}
+	8270.1.1 = {death="8270.1.1"}
+}
+102269145 = {
+	name="Люсерра"	# not a lord
+	female=yes
+	dynasty=69145
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101769145
+	mother=401769145
+
+	8243.1.1 = {birth="8243.1.1"}
+}
+102369145 = {
+	name="Донифос"	# a lord
+	dynasty=69145
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102169145
+	mother=402169145
+
+	8268.1.1 = {birth="8268.1.1"}
+	8284.1.1 = {add_trait=trained_warrior}
+	8286.1.1 = {add_spouse=402369145}
+}
+402369145 = {
+	name="Йорка"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8268.1.1 = {birth="8268.1.1"}
+}
+102469145 = {
+	name="Нохия"	# not a lord
+	female=yes
+	dynasty=69145
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102169145
+	mother=402169145
+
+	8269.1.1 = {birth="8269.1.1"}
+}
+102569145 = {
+	name="Люсерра"	# not a lord
+	female=yes
+	dynasty=69145
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102369145
+	mother=402369145
+
+	8291.1.1 = {birth="8291.1.1"}
+}
+102669145 = {
+	name="Хоронно"	# not a lord
+	dynasty=69145
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102369145
+	mother=402369145
+
+	8293.1.1 = {birth="8293.1.1"}
+	8309.1.1 = {add_trait=poor_warrior}
+}
+
+### House Lomberys
+34469146 = {
+	name="Коронно"	# a lord
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+
+	7833.1.1 = {birth="7833.1.1"}
+	7898.1.1 = {death="7898.1.1"} #dov
+}
+34369146 = {
+	name="Эззо"	# a lord
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34469146
+
+	7860.1.1 = {birth="7860.1.1"}
+	7921.1.1 = {death="7921.1.1"}
+}
+34269146 = {
+	name="Сенерро"	# a lord
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34369146
+
+	7889.1.1 = {birth="7889.1.1"}
+	7942.1.1 = {death="7942.1.1"}
+}
+34169146 = {
+	name="Харларо"	# a lord
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34269146
+
+	7915.1.1 = {birth="7915.1.1"}
+	7966.1.1 = {death="7966.1.1"}
+}
+34069146 = {
+	name="Рогар"	# a lord
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34169146
+
+	7940.1.1 = {birth="7940.1.1"}
+	7995.1.1 = {death="7995.1.1"}
+}
+100069146 = {
+	name="Алиос"	# a lord
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34069146
+
+	7958.1.1 = {birth="7958.1.1"}
+	7974.1.1 = {add_trait=poor_warrior}
+	8036.1.1 = {death="8036.1.1"}
+}
+100169146 = {
+	name="Болкелло"	# a lord
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100069146
+
+	7984.1.1 = {birth="7984.1.1"}
+	8000.1.1 = {add_trait=poor_warrior}
+	8037.1.1 = {death="8037.1.1"}
+}
+100569146 = {
+	name="Роллокво"	# a lord
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100169146
+
+	8002.1.1 = {birth="8002.1.1"}
+	8018.1.1 = {add_trait=poor_warrior}
+	8047.1.1 = {death="8047.1.1"}
+}
+101069146 = {
+	name="Бегго"	# a lord
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=100569146
+
+	8027.1.1 = {birth="8027.1.1"}
+	8043.1.1 = {add_trait=poor_warrior}
+	8061.1.1 = {death="8061.1.1"}
+}
+101169146 = {
+	name="Лото"	# a lord
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101069146
+
+	8053.1.1 = {birth="8053.1.1"}
+	8069.1.1 = {add_trait=trained_warrior}
+	8105.1.1 = {death = {death_reason = death_accident}}
+}
+101369146 = {
+	name="Беличо"	# a lord
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101169146
+
+	8077.1.1 = {birth="8077.1.1"}
+	8093.1.1 = {add_trait=poor_warrior}
+	8125.1.1 = {death="8125.1.1"}
+}
+101469146 = {
+	name="Йорко"	# a lord
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101369146
+
+	8103.1.1 = {birth="8103.1.1"}
+	8119.1.1 = {add_trait=trained_warrior}
+	8143.1.1 = {death="8143.1.1"}
+}
+101569146 = {
+	name="Малакво"	# a lord
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101469146
+
+	8124.1.1 = {birth="8124.1.1"}
+	8140.1.1 = {add_trait=trained_warrior}
+	8198.1.1 = {death="8198.1.1"}
+}
+101769146 = {
+	name="Алиос"	# a lord
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101569146
+
+	8152.1.1 = {birth="8152.1.1"}
+	8168.1.1 = {add_trait=poor_warrior}
+	8202.1.1 = {death="8202.1.1"}
+}
+102369146 = {
+	name="Малакво"	# a lord
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=101769146
+
+	8178.1.1 = {birth="8178.1.1"}
+	8194.1.1 = {add_trait=trained_warrior}
+	8209.1.1 = {death="8209.1.1"}
+}
+102569146 = {
+	name="Болкелло"	# a lord
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102369146
+
+	8200.1.1 = {birth="8200.1.1"}
+	8216.1.1 = {add_trait=poor_warrior}
+	8218.1.1 = {add_spouse=402569146}
+	8237.1.1 = {death="8237.1.1"}
+}
+402569146 = {
+	name="Тагганария"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8200.1.1 = {birth="8200.1.1"}
+	8237.1.1 = {death="8237.1.1"}
+}
+102869146 = {
+	name="Терриос"	# not a lord
+	female=yes
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102569146
+	mother=402569146
+
+	8227.1.1 = {birth="8227.1.1"}
+	8273.1.1 = {death="8273.1.1"}
+}
+102969146 = {
+	name="Паркелло"	# a lord
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102569146
+	mother=402569146
+
+	8229.1.1 = {birth="8229.1.1"}
+	8245.1.1 = {add_trait=poor_warrior}
+	8247.1.1 = {add_spouse=402969146}
+	8271.1.1 = {death="8271.1.1"}
+}
+402969146 = {
+	name="Мелларио"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8229.1.1 = {birth="8229.1.1"}
+	8271.1.1 = {death="8271.1.1"}
+}
+103069146 = {
+	name="Бетариос"	# not a lord
+	female=yes
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102969146
+	mother=402969146
+
+	8253.1.1 = {birth="8253.1.1"}
+	8291.1.1 = {death="8291.1.1"}
+}
+103169146 = {
+	name="Навафос"	# a lord
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102969146
+	mother=402969146
+
+	8256.1.1 = {birth="8256.1.1"}
+	8272.1.1 = {add_trait=poor_warrior}
+	8274.1.1 = {add_spouse=403169146}
+}
+403169146 = {
+	name="Алия"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8256.1.1 = {birth="8256.1.1"}
+}
+103269146 = {
+	name="Мералия"	# not a lord
+	female=yes
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102969146
+	mother=402969146
+
+	8257.1.1 = {birth="8257.1.1"}
+	8297.1.1 = {death="8297.1.1"}
+}
+103369146 = {
+	name="Йорко"	# not a lord
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=102969146
+	mother=402969146
+
+	8258.1.1 = {birth="8258.1.1"}
+	8274.1.1 = {add_trait=trained_warrior}
+}
+103469146 = {
+	name="Мелларио"	# not a lord
+	female=yes
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=103169146
+	mother=403169146
+
+	8284.1.1 = {birth="8284.1.1"}
+}
+103569146 = {
+	name="Бетариос"	# not a lord
+	female=yes
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=103169146
+	mother=403169146
+
+	8285.1.1 = {birth="8285.1.1"}
+}
+103669146 = {
+	name="Алия"	# not a lord
+	female=yes
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=103169146
+	mother=403169146
+
+	8286.1.1 = {birth="8286.1.1"}
+}
+103769146 = {
+	name="Коссома"	# not a lord
+	female=yes
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=103169146
+	mother=403169146
+
+	8289.1.1 = {birth="8289.1.1"}
+}
+103869146 = {
+	name="Лотея"	# not a lord
+	female=yes
+	dynasty=69146
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=103169146
+	mother=403169146
+
+	8290.1.1 = {birth="8290.1.1"}
+}
+
+### House Stogarys
+34569203 = {
+	name="Риберо"	# a lord
+	dynasty=69203
+
+	religion="rhllor"
+	culture="volantene"
+
+	7814.1.1 = {birth="7814.1.1"}
+	7877.1.1 = {death="7877.1.1"}
+}
+34469203 = {
+	name="Илларо"	# a lord
+	dynasty=69203
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34569203
+
+	7840.1.1 = {birth="7840.1.1"}
+	7899.1.1 = {death="7899.1.1"}
+}
+34369203 = {
+	name="Мелио"	# a lord
+	dynasty=69203
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34469203
+
+	7866.1.1 = {birth="7866.1.1"}
+	7915.1.1 = {death="7915.1.1"}
+}
+34269203 = {
+	name="Лоронно"	# a lord
+	dynasty=69203
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34369203
+
+	7899.1.1 = {birth="7899.1.1"}
+	7940.1.1 = {death="7940.1.1"}
+}
+34169203 = {
+	name="Гарро"	# a lord
+	dynasty=69203
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34269203
+
+	7918.1.1 = {birth="7918.1.1"}
+	7967.1.1 = {death="7967.1.1"}
+}
+34069203 = {
+	name="Кхаласо"	# a lord
+	dynasty=69203
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34169203
+
+	7939.1.1 = {birth="7939.1.1"}
+	7995.1.1 = {death="7995.1.1"}
+}
+10069203 = {
+	name="Алиос"	# a lord
+	dynasty=69203
+
+	religion="rhllor"
+	culture="volantene"
+	
+	father=34069203
+
+	7965.1.1 = {birth="7965.1.1"}
+	7981.1.1 = {add_trait=poor_warrior}
+	8023.1.1 = {death="8023.1.1"}
+}
+10169203 = {
+	name="Вогарро"	# a lord
+	dynasty=69203
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=10069203
+
+	7989.1.1 = {birth="7989.1.1"}
+	8005.1.1 = {add_trait=trained_warrior}
+	8044.1.1 = {death="8044.1.1"}
+}
+10669203 = {
+	name="Орделло"	# a lord
+	dynasty=69203
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=10169203
+
+	8010.1.1 = {birth="8010.1.1"}
+	8026.1.1 = {add_trait=poor_warrior}
+	8067.1.1 = {death="8067.1.1"}
+}
+10869203 = {
+	name="Мокорро"	# a lord
+	dynasty=69203
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=10669203
+
+	8040.1.1 = {birth="8040.1.1"}
+	8056.1.1 = {add_trait=poor_warrior}
+	8091.1.1 = {death="8091.1.1"}
+}
+10969203 = {
+	name="Беличо"	# a lord
+	dynasty=69203
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=10869203
+
+	8062.1.1 = {birth="8062.1.1"}
+	8078.1.1 = {add_trait=poor_warrior}
+	8126.1.1 = {death="8126.1.1"}
+}
+11369203 = {
+	name="Орделло"	# a lord
+	dynasty=69203
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=10969203
+
+	8088.1.1 = {birth="8088.1.1"}
+	8104.1.1 = {add_trait=skilled_warrior}
+	8139.1.1 = {death="8139.1.1"}
+}
+11669203 = {
+	name="Визарро"	# a lord
+	dynasty=69203
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=11369203
+
+	8114.1.1 = {birth="8114.1.1"}
+	8130.1.1 = {add_trait=trained_warrior}
+	8160.1.1 = {death = {death_reason = death_accident}}
+}
+11769203 = {
+	name="Паркелло"	# a lord
+	dynasty=69203
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=11669203
+
+	8138.1.1 = {birth="8138.1.1"}
+	8154.1.1 = {add_trait=poor_warrior}
+	8192.1.1 = {death="8192.1.1"}
+}
+12069203 = {
+	name="Паркелло"	# a lord
+	dynasty=69203
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=11769203
+
+	8159.1.1 = {birth="8159.1.1"}
+	8175.1.1 = {add_trait=poor_warrior}
+	8227.1.1 = {death="8227.1.1"}
+}
+12569203 = {
+	name="Метисо"	# a lord
+	dynasty=69203
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=12069203
+
+	8182.1.1 = {birth="8182.1.1"}
+	8198.1.1 = {add_trait=poor_warrior}
+	8200.1.1 = {add_spouse=42569203}
+	8241.1.1 = {death="8241.1.1"}
+}
+42569203 = {
+	name="Ориос"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8182.1.1 = {birth="8182.1.1"}
+	8241.1.1 = {death="8241.1.1"}
+}
+12669203 = {
+	name="Тейна"	# not a lord
+	female=yes
+	dynasty=69203
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=12569203
+	mother=42569203
+
+	8217.1.1 = {birth="8217.1.1"}
+	8272.1.1 = {death="8272.1.1"}
+}
+12769203 = {
+	name="Донифос"	# a lord
+	dynasty=69203
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=12569203
+	mother=42569203
+
+	8220.1.1 = {birth="8220.1.1"}
+	8236.1.1 = {add_trait=poor_warrior}
+	8238.1.1 = {add_spouse=42769203}
+	8265.1.1 = {death="8265.1.1"}
+}
+42769203 = {
+	name="Беллегера"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8220.1.1 = {birth="8220.1.1"}
+	8265.1.1 = {death="8265.1.1"}
+}
+12969203 = {
+	name="Лото"	# a lord
+	dynasty=69203
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=12769203
+	mother=42769203
+
+	8249.1.1 = {birth="8249.1.1"}
+	8265.1.1 = {add_trait=trained_warrior}
+	8267.1.1 = {add_spouse=42969203}
+	8279.1.1 = {death = {death_reason = death_murder}}
+}
+42969203 = {
+	name="Моредея"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8249.1.1 = {birth="8249.1.1"}
+	8279.1.1 = {death="8279.1.1"}
+}
+13069203 = {
+	name="Беллонара"	# not a lord
+	female=yes
+	dynasty=69203
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=12769203
+	mother=42769203
+
+	8251.1.1 = {birth="8251.1.1"}
+}
+13169203 = {
+	name="Орделло"	# not a lord
+	dynasty=69203
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=12769203
+	mother=42769203
+
+	8254.1.1 = {birth="8254.1.1"}
+	8270.1.1 = {add_trait=poor_warrior}
+	8298.1.1 = {death = {death_reason = death_murder}}
+}
+13269203 = {
+	name="Навафос"	# not a lord
+	dynasty=69203
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=12769203
+	mother=42769203
+
+	8257.1.1 = {birth="8257.1.1"}
+	8273.1.1 = {add_trait=skilled_warrior}
+}
+13369203 = {
+	name="Мокорро"	# a lord
+	dynasty=69203
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=12969203
+	mother=42969203
+
+	8277.1.1 = {birth="8277.1.1"}
+	8293.1.1 = {add_trait=master_warrior}
+	8295.1.1 = {add_spouse=43369203}
+}
+43369203 = {
+	name="Уна"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8277.1.1 = {birth="8277.1.1"}
+}
+13469203 = {
+	name="Серра"	# not a lord
+	female=yes
+	dynasty=69203
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=12969203
+	mother=42969203
+
+	8278.1.1 = {birth="8278.1.1"}
+}
+
+### House Nefatis
+34469117 = {
+	name="Трего"	# a lord
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+	
+	7836.1.1 = {birth="7836.1.1"}
+	7898.1.1 = {death="7898.1.1"} #dov
+}
+34369117 = {
+	name="Хорио"	# a lord
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=34469117
+	
+	7860.1.1 = {birth="7860.1.1"}
+	7922.1.1 = {death="7922.1.1"}
+}
+34269117 = {
+	name="Саво"	# a lord
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=34369117
+	
+	7887.1.1 = {birth="7887.1.1"}
+	7949.1.1 = {death="7949.1.1"}
+}
+34169117 = {
+	name="Харларо"	# a lord
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=34269117
+	
+	7912.1.1 = {birth="7912.1.1"}
+	7973.1.1 = {death="7973.1.1"}
+}
+34069117 = {
+	name="Донано"	# a lord
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=34169117
+	
+	7938.1.1 = {birth="7938.1.1"}
+	7995.1.1 = {death="7995.1.1"}
+}
+10069117 = {
+	name="Горис"	# a lord
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=34069117
+
+	7963.1.1 = {birth="7963.1.1"}
+	7979.1.1 = {add_trait=poor_warrior}
+	8026.1.1 = {death="8026.1.1"}
+}
+10269117 = {
+	name="Донифос"	# a lord
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=10069117
+
+	7995.1.1 = {birth="7995.1.1"}
+	8011.1.1 = {add_trait=poor_warrior}
+	8048.1.1 = {death="8048.1.1"}
+}
+10869117 = {
+	name="Навафос"	# a lord
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=10269117
+
+	8026.1.1 = {birth="8026.1.1"}
+	8042.1.1 = {add_trait=trained_warrior}
+	8071.1.1 = {death="8071.1.1"}
+}
+10969117 = {
+	name="Коллокво"	# a lord
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=10869117
+
+	8052.1.1 = {birth="8052.1.1"}
+	8068.1.1 = {add_trait=skilled_warrior}
+	8093.1.1 = {death="8093.1.1"}
+}
+11369117 = {
+	name="Хоронно"	# a lord
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=10969117
+
+	8077.1.1 = {birth="8077.1.1"}
+	8093.1.1 = {add_trait=poor_warrior}
+	8112.1.1 = {death = {death_reason = death_accident}}
+}
+11669117 = {
+	name="Беличо"	# a lord
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=11369117
+
+	8106.1.1 = {birth="8106.1.1"}
+	8122.1.1 = {add_trait=skilled_warrior}
+	8173.1.1 = {death="8173.1.1"}
+}
+11869117 = {
+	name="Метисо"	# a lord
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=11669117
+
+	8139.1.1 = {birth="8139.1.1"}
+	8155.1.1 = {add_trait=skilled_warrior}
+	8190.1.1 = {death="8190.1.1"}
+}
+11969117 = {
+	name="Малакво"	# a lord
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=11869117
+
+	8159.1.1 = {birth="8159.1.1"}
+	8175.1.1 = {add_trait=trained_warrior}
+	8199.1.1 = {death="8199.1.1"}
+}
+12269117 = {
+	name="Йорко"	# a lord
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=11969117
+
+	8187.1.1 = {birth="8187.1.1"}
+	8203.1.1 = {add_trait=skilled_warrior}
+	8241.1.1 = {death = {death_reason = death_accident}}
+}
+12569117 = {
+	name="Ниэссос"	# a lord
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=12269117
+
+	8216.1.1 = {birth="8216.1.1"}
+	8232.1.1 = {add_trait=poor_warrior}
+	8234.1.1 = {add_spouse=42569117}
+	8285.1.1 = {death="8285.1.1"}
+}
+42569117 = {
+	name="Талея"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8216.1.1 = {birth="8216.1.1"}
+	8285.1.1 = {death="8285.1.1"}
+}
+12669117 = {
+	name="Беличо"	# not a lord
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=12269117
+
+	8217.1.1 = {birth="8217.1.1"}
+	8233.1.1 = {add_trait=poor_warrior}
+	8271.1.1 = {death="8271.1.1"}
+}
+12769117 = {
+	name="Тиха"	# not a lord
+	female=yes
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=12569117
+	mother=42569117
+
+	8235.1.1 = {birth="8235.1.1"}
+}
+12869117 = {
+	name="Эззера"	# not a lord
+	female=yes
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=12569117
+	mother=42569117
+
+	8236.1.1 = {birth="8236.1.1"}
+	8280.1.1 = {death="8280.1.1"}
+}
+12969117 = {
+	name="Метисо"	# not a lord
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=12569117
+	mother=42569117
+
+	8239.1.1 = {birth="8239.1.1"}
+	8255.1.1 = {add_trait=trained_warrior}
+	8273.1.1 = {death = {death_reason = death_battle}}
+}
+13069117 = {
+	name="Тернесия"	# not a lord
+	female=yes
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=12569117
+	mother=42569117
+
+	8241.1.1 = {birth="8241.1.1"}
+}
+13169117 = {
+	name="Аллакво"	# a lord
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=12569117
+	mother=42569117
+
+	8244.1.1 = {birth="8244.1.1"}
+	8260.1.1 = {add_trait=trained_warrior}
+	8262.1.1 = {add_spouse=43169117}
+}
+43169117 = {
+	name="Алия"
+	female=yes
+
+	religion="rhllor"
+	culture="volantene"
+
+	8244.1.1 = {birth="8244.1.1"}
+}
+13269117 = {
+	name="Мера"	# not a lord
+	female=yes
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=13169117
+	mother=43169117
+
+	8275.1.1 = {birth="8275.1.1"}
+}
+13369117 = {
+	name="Аллакво"	# not a lord
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=13169117
+	mother=43169117
+
+	8278.1.1 = {birth="8278.1.1"}
+	8294.1.1 = {add_trait=poor_warrior}
+}
+13469117 = {
+	name="Рогга"	# not a lord
+	female=yes
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=13169117
+	mother=43169117
+
+	8279.1.1 = {birth="8279.1.1"}
+}
+13569117 = {
+	name="Серала"	# not a lord
+	female=yes
+	dynasty=69204
+
+	religion="rhllor"
+	culture="volantene"
+
+	father=13169117
+	mother=43169117
+
+	8280.1.1 = {birth="8280.1.1"}
+}
+
+###################
+### Red Priests ###
+###################
+88000715 = {
+	name="Риберо"	# a lord
+	
+	religion="rhllor"
+	culture="volantene"
+
+	7842.1.1 = {birth="7842.1.1"}
+	7858.1.1 = {
+		add_trait=red_priest
+		add_trait=fire_obsessed
+	}
+	7920.1.1 = {death="7920.1.1"}
+}
+88000714 = {
+	name="Ариос"	# a lord
+	
+	religion="rhllor"
+	culture="volantene"
+
+	7881.1.1 = {birth="7881.1.1"}
+	7897.1.1 = {
+		add_trait=red_priest
+		add_trait=fire_obsessed
+	}
+	7961.1.1 = {death="7961.1.1"}
+}
+88000713 = {
+	name="Гаспорио"	# a lord
+	
+	religion="rhllor"
+	culture="volantene"
+
+	7911.1.1 = {birth="7911.1.1"}
+	7927.1.1 = {
+		add_trait=red_priest
+		add_trait=fire_obsessed
+	}
+	7995.1.1 = {death="7995.1.1"}
+}
+88000700 = {
+	name="Метисо"	# a lord
+	
+	religion="rhllor"
+	culture="volantene"
+
+	7942.1.1 = {birth="7942.1.1"}
+	7963.1.1 = {
+		add_trait=red_priest
+		add_trait=fire_obsessed
+	}
+	8037.1.1 = {death="8037.1.1"}
+}
+88000701 = {
+	name="Лото"	# a lord
+
+	religion="rhllor"
+	culture="volantene"
+
+	7981.1.1 = {birth="7981.1.1"}
+	8004.1.1 = {
+		add_trait=red_priest
+		add_trait=fire_obsessed
+	}
+	8049.1.1 = {death="8049.1.1"}
+}
+88000702 = {
+	name="Ниэссос"	# a lord
+	
+	religion="rhllor"
+	culture="volantene"
+
+	8006.1.1 = {birth="8006.1.1"}
+	8023.1.1 = {
+		add_trait=red_priest
+		add_trait=fire_obsessed
+	}
+	8068.1.1 = {death="8068.1.1"}
+}
+88000703 = {
+	name="Кварро"	# a lord
+	
+	religion="rhllor"
+	culture="volantene"
+
+	8031.1.1 = {birth="8031.1.1"}
+	8056.1.1 = {
+		add_trait=red_priest
+		add_trait=fire_obsessed
+	}
+	8109.1.1 = {death="8109.1.1"}
+}
+88000704 = {
+	name="Орделло"	# a lord
+	
+	religion="rhllor"
+	culture="volantene"
+
+	8076.1.1 = {birth="8076.1.1"}
+	8092.1.1 = {
+		add_trait=red_priest
+		add_trait=fire_obsessed
+	}
+	8134.1.1 = {death="8134.1.1"}
+}
+88000705 = {
+	name="Вогарро"	# a lord
+	
+	religion="rhllor"
+	culture="volantene"
+
+	8106.1.1 = {birth="8106.1.1"}
+	8127.1.1 = {
+		add_trait=red_priest
+		add_trait=fire_obsessed
+	}
+	8169.1.1 = {death="8169.1.1"}
+}
+88000706 = {
+	name="Паркелло"	# a lord
+	
+	religion="rhllor"
+	culture="volantene"
+
+	8137.1.1 = {birth="8137.1.1"}
+	8153.1.1 = {
+		add_trait=red_priest
+		add_trait=fire_obsessed
+	}
+	8201.1.1 = {death="8201.1.1"}
+}
+88000707 = {
+	name="Коллокво"	# a lord
+	
+	religion="rhllor"
+	culture="volantene"
+
+	8167.1.1 = {birth="8167.1.1"}
+	8183.1.1 = {
+		add_trait=red_priest
+		add_trait=fire_obsessed
+	}
+	8242.1.1 = {death="8242.1.1"}
+}
+88000708 = {
+	name="Метисо"	# a lord
+	
+	religion="rhllor"
+	culture="volantene"
+
+	8195.1.1 = {birth="8195.1.1"}
+	8217.1.1 = {
+		add_trait=red_priest
+		add_trait=fire_obsessed
+	}
+	8261.1.1 = {death="8261.1.1"}
+}
+88000709 = {
+	name="Визарро"	# a lord
+	
+	religion="rhllor"
+	culture="volantene"
+
+	8223.1.1 = {birth="8223.1.1"}
+	8246.1.1 = {
+		add_trait=red_priest
+		add_trait=fire_obsessed
+	}
+	8287.1.1 = {death="8287.1.1"}
+}
+600000056 = {
+	name="Бенерро"	# Canon
+	
+	religion="rhllor"
+	culture="volantene"
+	
+	martial=2
+	diplomacy=9
+	intrigue=5
+	stewardship=5
+		
+	add_trait="fire_obsessed"
+	add_trait="elusive_shadow"	
+	add_trait="zealous"
+	add_trait="authoritative"
+
+	8243.1.1={
+		birth="8243.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8259.1.1={
+		add_trait="red_priest"
+		add_trait="scholar"
+		add_trait="mystic"
+	}
+}
+600000057 = {
+	name="Мокорро"	# Canon
+	
+	religion="rhllor"
+	culture="summer_islander"
+	
+	martial=2
+	diplomacy=8
+	intrigue=5
+	stewardship=5
+	learning = 8
+	
+	add_trait="strong"
+	
+	8250.1.1 = {
+		birth="8250.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8266.1.1 = {
+		employer = 88000709 # Визарро 
+		add_trait="mystic"
+		add_trait="red_priest"
+		add_trait="fire_obsessed"
+		add_trait="scholar"
+		add_trait="mastermind_theologian"
+		add_trait="brave"
+		add_trait="authoritative"
+		add_trait="zealous"
+	}
+	8287.1.1 = {
+		employer = 600000056 #Бенерро
+	}
+	8300.3.1 = {
+		employer = 3107 #Victarion
+	}
+}
+
+###############
+### Pirates ###
+###############
+### House Dynion
+345305620 = {
+	name="Парридо"	# a lord
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+
+	7829.1.1 = {birth="7829.1.1"}
+	7845.1.1 = {add_trait=trained_warrior}
+	7880.1.1 = {death="7880.1.1"}
+}
+344305620 = {
+	name="Золло"	# a lord
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+	
+	father=345305620
+
+	7853.1.1 = {birth="7853.1.1"}
+	7869.1.1 = {add_trait=trained_warrior}
+	7905.1.1 = {death="7905.1.1"}
+}
+343305620 = {
+	name="Дариос"	# a lord
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+	
+	father=344305620
+
+	7878.1.1 = {birth="7878.1.1"}
+	7894.1.1 = {add_trait=trained_warrior}
+	7930.1.1 = {death="7930.1.1"}
+}
+342305620 = {
+	name="Сариос"	# a lord
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+	
+	father=343305620
+
+	7900.1.1 = {birth="7900.1.1"}
+	7916.1.1 = {add_trait=trained_warrior}
+	7951.1.1 = {death="7951.1.1"}
+}
+341305620 = {
+	name="Саллорос"	# a lord
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+	
+	father=342305620
+
+	7920.1.1 = {birth="7920.1.1"}
+	7936.1.1 = {add_trait=trained_warrior}
+	7962.1.1 = {death="7962.1.1"}
+}
+340305620 = {
+	name="Киберо"	# a lord
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+	
+	father=341305620
+
+	7939.1.1 = {birth="7939.1.1"}
+	7955.1.1 = {add_trait=trained_warrior}
+	7984.1.1 = {death="7984.1.1"}
+}
+100305620 = {
+	name="Аллакво"	# a lord
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+	
+	father=340305620
+
+	7964.1.1 = {birth="7964.1.1"}
+	7980.1.1 = {add_trait=trained_warrior}
+	8018.1.1 = {death="8018.1.1"}
+}
+102305620 = {
+	name="Метисо"	# a lord
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+
+	father=100305620
+
+	7988.1.1 = {birth="7988.1.1"}
+	8004.1.1 = {add_trait=poor_warrior}
+	8045.1.1 = {death="8045.1.1"}
+}
+104305620 = {
+	name="Тейна"	# a lord
+	female=yes
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+
+	father=102305620
+
+	8019.1.1 = {birth="8019.1.1"}
+	8035.1.1 = {add_trait=trained_warrior}
+	8073.1.1 = {death="8073.1.1"}
+}
+404305620 = {
+	name="Паркелло"
+
+	religion="pirate"
+	culture="volantene"
+
+	8019.1.1 = {birth="8019.1.1"}
+	8035.1.1 = {add_trait=poor_warrior}
+	8037.1.1 = {add_spouse=104305620}
+	8073.1.1 = {death="8073.1.1"}
+}
+105305620 = {
+	name="Мокорро"	# a lord
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+
+	father=404305620
+	mother=104305620
+
+	8046.1.1 = {birth="8046.1.1"}
+	8062.1.1 = {add_trait=skilled_warrior}
+	8105.1.1 = {death="8105.1.1"}
+}
+107305620 = {
+	name="Серенея"	# a lord
+	female=yes
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+
+	father=105305620
+
+	8075.1.1 = {birth="8075.1.1"}
+	8091.1.1 = {add_trait=trained_warrior}
+	8142.1.1 = {death="8142.1.1"}
+}
+407305620 = {
+	name="Ниэссос"
+
+	religion="pirate"
+	culture="volantene"
+
+	8075.1.1 = {birth="8075.1.1"}
+	8091.1.1 = {add_trait=poor_warrior}
+	8093.1.1 = {add_spouse=107305620}
+	8142.1.1 = {death="8142.1.1"}
+}
+108305620 = {
+	name="Роллокво"	# a lord
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+
+	father=407305620
+	mother=107305620
+
+	8097.1.1 = {birth="8097.1.1"}
+	8113.1.1 = {add_trait=trained_warrior}
+	8157.1.1 = {death="8157.1.1"}
+}
+111305620 = {
+	name="Мокорро"	# a lord
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+
+	father=108305620
+
+	8122.1.1 = {birth="8122.1.1"}
+	8138.1.1 = {add_trait=skilled_warrior}
+	8184.1.1 = {death="8184.1.1"}
+}
+113305620 = {
+	name="Бенерро"	# a lord
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+
+	father=111305620
+
+	8141.1.1 = {birth="8141.1.1"}
+	8157.1.1 = {add_trait=poor_warrior}
+	8192.1.1 = {death="8192.1.1"}
+}
+116305620 = {
+	name="Роллокво"	# a lord
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+
+	father=113305620
+
+	8165.1.1 = {birth="8165.1.1"}
+	8181.1.1 = {add_trait=skilled_warrior}
+	8231.1.1 = {death="8231.1.1"}
+}
+118305620 = {
+	name="Беличо"	# a lord
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+
+	father=116305620
+
+	8194.1.1 = {birth="8194.1.1"}
+	8210.1.1 = {add_trait=poor_warrior}
+	8212.1.1 = {add_spouse=418305620}
+	8245.1.1 = {death="8245.1.1"}
+}
+418305620 = {
+	name="Люсерра"
+	female=yes
+
+	religion="pirate"
+	culture="volantene"
+
+	8194.1.1 = {birth="8194.1.1"}
+	8245.1.1 = {death="8245.1.1"}
+}
+119305620 = {
+	name="Визарро"	# a lord
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+
+	father=118305620
+	mother=418305620
+
+	8220.1.1 = {birth="8220.1.1"}
+	8236.1.1 = {add_trait=trained_warrior}
+	8238.1.1 = {add_spouse=419305620}
+	8279.1.1 = {death="8279.1.1"}
+}
+419305620 = {
+	name="Нарба"
+	female=yes
+
+	religion="pirate"
+	culture="volantene"
+
+	8220.1.1 = {birth="8220.1.1"}
+	8279.1.1 = {death="8279.1.1"}
+}
+121305620 = {
+	name="Беличо"	# not a lord
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+
+	father=118305620
+	mother=418305620
+
+	8226.1.1 = {birth="8226.1.1"}
+	8242.1.1 = {add_trait=trained_warrior}
+	8270.1.1 = {death = {death_reason = death_accident}}
+}
+122305620 = {
+	name="Хоронно"	# not a lord
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+
+	father=118305620
+	mother=418305620
+
+	8229.1.1 = {birth="8229.1.1"}
+	8245.1.1 = {add_trait=skilled_warrior}
+	8290.1.1 = {death="8290.1.1"}
+}
+123305620 = {
+	name="Тернесия"	# not a lord
+	female=yes
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+
+	father=119305620
+	mother=419305620
+
+	8240.1.1 = {birth="8240.1.1"}
+	8290.1.1 = {death="8290.1.1"}
+}
+124305620 = {
+	name="Кварро"	# a lord
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+
+	father=119305620
+	mother=419305620
+
+	8241.1.1 = {birth="8241.1.1"}
+	8257.1.1 = {add_trait=trained_warrior}
+	8259.1.1 = {add_spouse=424305620}
+	8295.1.1 = {death="8295.1.1"}
+}
+424305620 = {
+	name="Лотея"
+	female=yes
+
+	religion="pirate"
+	culture="volantene"
+
+	8241.1.1 = {birth="8241.1.1"}
+	8295.1.1 = {death="8295.1.1"}
+}
+125305620 = {
+	name="Эззера"	# not a lord
+	female=yes
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+
+	father=119305620
+	mother=419305620
+
+	8242.1.1 = {birth="8242.1.1"}
+}
+126305620 = {
+	name="Бегго"	# not a lord
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+
+	father=119305620
+	mother=419305620
+
+	8244.1.1 = {birth="8244.1.1"}
+	8260.1.1 = {add_trait=trained_warrior}
+	8262.1.1 = {add_spouse=426305620}
+	8291.1.1 = {death="8291.1.1"}
+}
+426305620 = {
+	name="Талея"
+	female=yes
+
+	religion="pirate"
+	culture="volantene"
+
+	8244.1.1 = {birth="8244.1.1"}
+	8291.1.1 = {death="8291.1.1"}
+}
+127305620 = {
+	name="Корра"	# The Cruel a lord
+	female=yes
+	dynasty=305620
+	
+	diplomacy = 2
+	intrigue = 7
+	martial = 4
+	stewardship = 3
+	learning = 3
+
+	religion="pirate"
+	culture="volantene"
+
+	father=124305620
+	mother=424305620
+	
+	add_trait = cruel
+	add_trait = impaler
+	add_trait = ruthless
+	add_trait = authoritative
+	add_trait = tough_soldier
+
+	8272.1.1 = {birth="8272.1.1"}
+	8288.1.1 = {
+		add_trait=trained_warrior
+		give_nickname = nick_the_cruel
+	}
+	8295.1.1 = {
+		effect = { #supposedly crewed by beautiful young maids who geld every man they capture
+			any_courtier = {
+				limit = {
+					NOT = { father_even_if_dead = { always = yes } }
+					is_female = yes
+					NOT = { age = 30 }
+					religion = pirate
+				}
+				add_trait = trained_warrior
+				add_trait = cruel
+				remove_trait = kind
+				add_trait = fair
+				remove_trait = ugly
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = none
+				female = yes
+				culture = random
+				religion = pirate
+				trait = cruel
+				trait = fair
+			}
+			new_character = {
+				add_trait = pirate
+				add_trait = skilled_warrior
+				remove_trait = kind
+				remove_trait = honorable
+				remove_trait = ugly
+			}		
+			create_character = {
+				random_traits = yes
+				dynasty = none
+				female = yes
+				culture = random
+				religion = pirate
+				trait = cruel
+				trait = fair
+			}
+			new_character = {
+				add_trait = pirate
+				add_trait = trained_warrior
+				remove_trait = kind
+				remove_trait = honorable
+				remove_trait = ugly
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = none
+				female = yes
+				culture = random
+				religion = pirate
+				trait = cruel
+				trait = fair
+			}
+			new_character = {
+				add_trait = pirate
+				add_trait = trained_warrior
+				remove_trait = kind
+				remove_trait = honorable
+				remove_trait = ugly
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = none
+				female = yes
+				culture = random
+				religion = pirate
+				trait = cruel
+				trait = fair
+			}
+			new_character = {
+				add_trait = pirate
+				add_trait = trained_warrior
+				remove_trait = kind
+				remove_trait = honorable
+				remove_trait = ugly
+			}
+		}
+	}
+}
+128305620 = {
+	name="Пинта"	# not a lord
+	female=yes
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+
+	father=124305620
+	mother=424305620
+
+	8275.1.1 = {birth="8275.1.1"}
+}
+129305620 = {
+	name="Мералия"	# not a lord
+	female=yes
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+
+	father=126305620
+	mother=426305620
+
+	8279.1.1 = {birth="8279.1.1"}
+}
+130305620 = {
+	name="Визарро"	# not a lord
+	dynasty=305620
+
+	religion="pirate"
+	culture="volantene"
+
+	father=126305620
+	mother=426305620
+
+	8280.1.1 = {birth="8280.1.1"}
+	8296.1.1 = {add_trait=trained_warrior}
+}
+131305620 = {
+	name="Уро"	# the unwashed, another pirate
+
+	religion="pirate"
+	culture="volantene"
+	
+	add_trait = proud
+	add_trait = wroth
+	add_trait = greedy
+	add_trait = ambitious
+	add_trait = ugly
+	
+	8268.1.1 = {birth="8268.1.1"}
+	8284.1.1 = {
+		add_trait=trained_warrior
+		give_nickname = nick_the_unwashed
+	}
+}

@@ -1,0 +1,5400 @@
+#############################
+### Major Merchant Houses ###
+#############################
+### House Antaryon
+345300511 = {
+	name="Антерро"  # a lord
+	dynasty=300511
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	7807.1.1 = {birth="7807.1.1"}
+	7871.1.1 = {death="7871.1.1"}
+}
+344300511 = {
+	name="Ариллос"  # a lord
+	dynasty=300511
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=345300511
+	
+	7828.1.1 = {birth="7828.1.1"}
+	7896.1.1 = {death="7896.1.1"}
+}
+343300511 = {
+	name="Сирио"  # a lord
+	dynasty=300511
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=344300511
+	
+	7853.1.1 = {birth="7853.1.1"}
+	7899.1.1 = {death="7899.1.1"}
+}
+342300511 = {
+	name="Томарро"  # a lord
+	dynasty=300511
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=343300511
+	
+	7876.1.1 = {birth="7876.1.1"}
+	7929.1.1 = {death="7929.1.1"}
+}
+341300511 = {
+	name="Ферро"  # a lord
+	dynasty=300511
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=342300511
+	
+	7900.1.1 = {birth="7900.1.1"}
+	7962.1.1 = {death="7962.1.1"}
+}
+340300511 = {
+	name="Фарио"  # a lord
+	dynasty=300511
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=341300511
+	
+	7922.1.1 = {birth="7922.1.1"}
+	7994.1.1 = {death="7994.1.1"}
+}
+1100511 = {
+	name="Кволло"  # a lord
+	dynasty=300511
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=340300511
+	
+	7945.1.1 = {birth="7945.1.1"}
+	8012.1.1 = {death="8012.1.1"}
+}
+1000511 = {
+	name="Тормо"  # a lord
+	dynasty=300511
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=1100511
+	
+	7986.1.1 = {birth="7986.1.1"}
+	8023.1.1 = {death="8023.1.1"}
+}
+900511 = {
+	name="Мирмелло"  # a lord
+	dynasty=300511
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=1000511
+	
+	8005.1.1 = {birth="8005.1.1"}
+	8058.1.1 = {death="8058.1.1"}
+}
+800511 = {
+	name="Якен"  # a lord
+	dynasty=300511
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=900511
+	
+	8027.1.1 = {birth="8027.1.1"}
+	8091.1.1 = {death="8091.1.1"}
+}
+700511 = {
+	name="Денио"  # a lord, son betrothed to Laena Velaryon
+	dynasty=300511
+	
+	diplomacy = 7
+	stewardship = 8
+	martial = 2
+	intrigue = 3
+	learning = 3
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=800511
+	
+	add_trait = ambitious
+	add_trait = grey_eminence
+	
+	8060.1.1 = {birth="8060.1.1"}
+	8076.1.1 = {add_trait = trained_warrior}
+	8114.1.1 = {death="8114.1.1"}
+}
+600511 = {
+	name="Сирио"  # a lord, betrothed to Laena Velaryon
+	dynasty=300511
+	
+	stewardship = 3
+	diplomacy = 3
+	martial = 3
+	intrigue = 2
+	learning = 2
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=700511
+	
+	add_trait = indulgent_wastrel
+	add_trait = gluttonous
+	add_trait = wroth
+	add_trait = proud
+	add_trait = slothful
+	
+	8094.1.1 = {birth="8094.1.1"}
+	8105.1.1 = {
+		# effect = {
+			# random_character = {
+				# limit = { character = 28052 } #Laena Velaryon
+				# add_betrothal = ROOT
+				# ROOT = { add_betrothal = PREV }
+			# }
+		# }
+	}
+	8110.1.1 = {add_trait = trained_warrior}
+	8115.1.1 = {
+		death={
+			death_reason = death_duel
+			killer = 779496 #Daemon Targaryen
+		}
+	}
+}
+15030511 = {
+	name="Ориос"  # a lord
+	dynasty=300511
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=700511
+	
+	8096.1.1 = {birth="8096.1.1"}
+	8156.1.1 = {death="8156.1.1"}
+}
+1300511 = {
+	name="Ферро"  # Semi-Canon, a lord, betrothed to Rhaena Targaryen
+	dynasty=300511
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=15030511
+
+	add_trait=skilled_tactician
+	add_trait=quick
+	add_trait=diligent
+	add_trait=ambitious
+	
+	8126.1.1 = {birth="8126.1.1"}
+	8140.1.1 = {add_trait=skilled_warrior}
+	8156.1.1 = {give_nickname="nick_lion_braavos"}
+	8161.1.1 = {death="8161.1.1"}
+}
+500511 = {
+	name="Лото"  # a lord
+	dynasty=300511
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=15030511
+	
+	8127.1.1 = {birth="8127.1.1"}
+	8194.1.1 = {death="8194.1.1"}
+}
+400511 = {
+	name="Кварро"  # a lord
+	dynasty=300511
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=500511
+
+	8148.1.1 = {birth="8148.1.1"}
+	8202.1.1 = {death="8202.1.1"}
+}
+300511 = {
+	name="Тихо"  # a lord
+	dynasty=300511
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=400511
+	
+	8168.1.1 = {birth="8168.1.1"}
+	8223.1.1 = {death="8223.1.1"}
+}
+200511 = {
+	name="Коссомо"  # a lord
+	dynasty=300511
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=300511
+	
+	8199.1.1 = {birth="8199.1.1"}
+	8255.1.1 = {death="8255.1.1"}
+}
+100511 = {
+	name="Оро"  # a lord
+	dynasty=300511
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=200511
+	
+	8230.1.1 = {birth="8230.1.1"}
+	8281.1.1 = {death="8281.1.1"}
+}
+600000041 = {
+	name="Феррего"  # a lord, canon Sealord at time of the books.
+	dynasty = 300511
+
+	religion="moonsingers"
+	culture="braavosi"	
+	
+	martial = 2
+	diplomacy = 6
+	intrigue = 7
+	stewardship = 10
+	learning = 8
+
+	father=100511
+	
+	8255.1.1 = {birth="8255.1.1"}
+	8271.1.1 = {add_trait=trained_warrior}
+	8280.1.1 = {add_spouse=602000041}
+	8299.1.1 = {
+		add_trait = ill
+		add_trait = pneumonic
+	}
+}
+602000041 = {
+	name="Тернесия"
+	female=yes
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	8255.1.1 = {birth="8255.1.1"}
+}
+610000041 = {
+	name="Лото"
+	dynasty = 300511
+
+	religion="moonsingers"
+	culture="braavosi"	
+
+	father=600000041
+	mother=602000041
+	
+	8284.1.1 = {birth="8284.1.1"}
+}
+620000041 = {
+	name="Иллирио"
+	dynasty = 300511
+
+	religion="moonsingers"
+	culture="braavosi"	
+
+	father=600000041
+	mother=602000041
+	
+	8286.1.1 = {birth="8286.1.1"}
+}
+630000041 = {
+	name="Кварро"
+	dynasty = 300511
+
+	religion="moonsingers"
+	culture="braavosi"	
+
+	father=600000041
+	mother=602000041
+	
+	8289.1.1 = {birth="8289.1.1"}
+}
+
+### House Prestayn
+344300515 = {
+	name="Фарио"  # a lord
+	dynasty=300515
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	7812.1.1 = {birth="7812.1.1"}
+	7873.1.1 = {death="7873.1.1"}
+}
+343300515 = {
+	name="Коссокво"  # a lord
+	dynasty=300515
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=344300515
+	
+	7837.1.1 = {birth="7837.1.1"}
+	7900.1.1 = {death="7900.1.1"}
+}
+342300515 = {
+	name="Кихо"  # a lord
+	dynasty=300515
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=343300515
+	
+	7861.1.1 = {birth="7861.1.1"}
+	7919.1.1 = {death="7919.1.1"}
+}
+341300515 = {
+	name="Террио"  # a lord
+	dynasty=300515
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=342300515
+	
+	7886.1.1 = {birth="7886.1.1"}
+	7941.1.1 = {death="7941.1.1"}
+}
+340300515 = {
+	name="Тихо"  # a lord
+	dynasty=300515
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=341300515
+	
+	7910.1.1 = {birth="7910.1.1"}
+	7994.1.1 = {death="7994.1.1"}
+}
+1100515 = {
+	name="Обаро"  # a lord
+	dynasty=300515
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=340300515
+	
+	7932.1.1 = {birth="7932.1.1"}
+	8003.1.1 = {death="8003.1.1"}
+}
+1000515 = {
+	name="Луко"  # a lord
+	dynasty=300515
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=1100515
+	
+	7956.1.1 = {birth="7956.1.1"}
+	8021.1.1 = {death="8021.1.1"}
+}
+900515 = {
+	name="Сирио"  # a lord
+	dynasty=300515
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=1000515
+	
+	7983.1.1 = {birth="7983.1.1"}
+	8045.1.1 = {death="8045.1.1"}
+}
+800515 = {
+	name="Бадир"  # a lord
+	dynasty=300515
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=900515
+	
+	8013.1.1 = {birth="8013.1.1"}
+	8063.1.1 = {death="8063.1.1"}
+}
+700515 = {
+	name="Лото"  # a lord
+	dynasty=300515
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=800515
+	
+	8040.1.1 = {birth="8040.1.1"}
+	8106.1.1 = {death="8106.1.1"}
+}
+600515 = {
+	name="Даарио"  # a lord
+	dynasty=300515
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=700515
+	
+	8069.1.1 = {birth="8069.1.1"}
+	8117.1.1 = {death="8117.1.1"}
+}
+500515 = {
+	name="Пинто"  # a lord
+	dynasty=300515
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=600515
+	
+	8098.1.1 = {birth="8098.1.1"}
+	8156.1.1 = {death="8156.1.1"}
+}
+400515 = {
+	name="Донало"  # a lord, semi canon MUSH
+	dynasty=300515
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=500515
+	
+	8126.1.1 = {birth="8126.1.1"}
+	8194.1.1 = {death="8194.1.1"}
+}
+300515 = {
+	name="Оро"  # a lord
+	dynasty=300515
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=400515
+	
+	8149.1.1 = {birth="8149.1.1"}
+	8210.1.1 = {death="8210.1.1"}
+}
+200515 = {
+	name="Нохо"  # a lord
+	dynasty=300515
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=300515
+	
+	8172.1.1 = {birth="8172.1.1"}
+	8230.1.1 = {death="8230.1.1"}
+}
+100515 = {
+	name="Гилено"  # a lord, old Prestayn
+	dynasty=300515
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=200515
+	
+	8210.1.1 = {birth="8210.1.1"}
+	8231.1.1 = {add_spouse=120515}
+}
+120515 = {
+	name="Нарба"
+	female=yes
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	8210.1.1 = {birth="8210.1.1"}
+	8275.1.1 = {death="8275.1.1"}
+}
+600000050 = {
+	name="Моредо"  # a lord, canon
+	dynasty=300515
+	
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=100515
+	mother=120515
+
+	martial = 2
+	diplomacy = 6
+	intrigue = 7
+	stewardship = 10
+	learning = 8
+	
+	8256.1.1 = {birth="8256.1.1"}
+	8278.1.1 = {add_spouse=602000050}
+}
+602000050 = {
+	name="Эззера"
+	female=yes
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	add_trait=lustful # cheating on Моредо
+	
+	8256.1.1 = {birth="8256.1.1"}
+}
+600000150 = {
+	name="Луко"  # canon
+	dynasty=300515
+	
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=100515
+	mother=120515
+
+	martial = 2
+	diplomacy = 6
+	intrigue = 7
+	stewardship = 10
+	learning = 8
+	
+	8261.1.1 = {birth="8261.1.1"}
+	8278.1.1 = {add_spouse=602000150}
+}
+602000150 = {
+	name="Беллонда"
+	female=yes
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	8261.1.1 = {birth="8261.1.1"}
+}
+610000050 = {
+	name="Орделло"
+	dynasty=300515
+	
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=600000050
+	mother=602000050
+	
+	8282.1.1 = {birth="8282.1.1"}
+}
+620000050 = {
+	name="Сирио"
+	dynasty=300515
+	
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=600000050
+	mother=602000050
+	
+	8285.1.1 = {birth="8285.1.1"}
+}
+630000050 = {
+	name="Моредея"
+	dynasty=300515
+	female=yes
+	
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=600000050
+	mother=602000050
+	
+	8288.1.1 = {birth="8288.1.1"}
+}
+
+### House Фрегар
+344300547 = {
+	name="Йорио"  # a lord
+	dynasty=300547
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	7839.1.1 = {birth="7839.1.1"}
+	7884.1.1 = {death="7884.1.1"}
+}
+343300547 = {
+	name="Варро"  # a lord
+	dynasty=300547
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=344300547
+	
+	7864.1.1 = {birth="7864.1.1"}
+	7925.1.1 = {death="7925.1.1"}
+}
+342300547 = {
+	name="Луко"  # a lord
+	dynasty=300547
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=343300547
+	
+	7895.1.1 = {birth="7895.1.1"}
+	7947.1.1 = {death="7947.1.1"}
+}
+341300547 = {
+	name="Орбело"  # a lord
+	dynasty=300547
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=342300547
+	
+	7922.1.1 = {birth="7922.1.1"}
+	7969.1.1 = {death="7969.1.1"}
+}
+340300547 = {
+	name="Варро"  # a lord
+	dynasty=300547
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=341300547
+	
+	7949.1.1 = {birth="7949.1.1"}
+	7994.1.1 = {death="7994.1.1"}
+}
+1100547 = {
+	name="Изембаро"  # a lord
+	dynasty=300547
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=340300547
+	
+	7973.1.1 = {birth="7973.1.1"}
+	8026.1.1 = {death="8026.1.1"}
+}
+1000547 = {
+	name="Зафир"  # a lord
+	dynasty=300547
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=1100547
+	
+	7998.1.1 = {birth="7998.1.1"}
+	8045.1.1 = {death="8045.1.1"}
+}
+900547 = {
+	name="Моредо"  # a lord
+	dynasty=300547
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=1000547
+	
+	8027.1.1 = {birth="8027.1.1"}
+	8089.1.1 = {death="8089.1.1"}
+}
+800547 = {
+	name="Роро"  # a lord
+	dynasty=300547
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=900547
+	
+	8051.1.1 = {birth="8051.1.1"}
+	8102.1.1 = {death="8102.1.1"}
+}
+700547 = {
+	name="Луко"  # a lord
+	dynasty=300547
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=800547
+	
+	8074.1.1 = {birth="8074.1.1"}
+	8114.1.1 = {death="8114.1.1"}
+}
+600547 = {
+	name="Бегго"  # a lord
+	dynasty=300547
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=700547
+	
+	8096.1.1 = {birth="8096.1.1"}
+	8148.1.1 = {death="8148.1.1"}
+}
+500547 = {
+	name="Сирио"  # a lord
+	dynasty=300547
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=600547
+	
+	8120.1.1 = {birth="8120.1.1"}
+	8183.1.1 = {death="8183.1.1"}
+}
+400547 = {
+	name="Кварро"  # a lord
+	dynasty=300547
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=500547
+	
+	8141.1.1 = {birth="8141.1.1"}
+	8196.1.1 = {death="8196.1.1"}
+}
+300547 = {
+	name="Бруско"  # a lord
+	dynasty=300547
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=400547
+	
+	8164.1.1 = {birth="8164.1.1"}
+	8213.1.1 = {death="8213.1.1"}
+}
+200547 = {
+	name="Тихо"  # a lord
+	dynasty=300547
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=300547
+	
+	8185.1.1 = {birth="8185.1.1"}
+	8233.1.1 = {death="8233.1.1"}
+}
+100547 = {
+	name="Меро"  # a lord
+	dynasty=300547
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=200547
+	
+	8205.1.1 = {birth="8205.1.1"}
+	8247.1.1 = {add_spouse=120547}
+	8271.1.1 = {death="8271.1.1"}
+}
+120547 = {
+	name="Феррега"
+	female=yes
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	8205.1.1 = {birth="8205.1.1"}
+	8271.1.1 = {death="8271.1.1"}
+}
+600000051 = {
+	name="Тормо"  # a lord, canon
+	dynasty=300547
+	
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=100547
+	mother=120547
+
+	martial = 2
+	diplomacy = 6
+	intrigue = 7
+	stewardship = 10
+	learning = 8
+	
+	8253.1.1 = {birth="8253.1.1"}
+	8280.1.1 = {add_spouse=602000051}
+}
+602000051 = {
+	name="Бетариос"
+	female=yes
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	8253.1.1 = {birth="8253.1.1"}
+}
+610000051 = {
+	name="Терро"
+	dynasty=300547
+	
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=600000051
+	mother=602000051
+	
+	8282.1.1 = {birth="8282.1.1"}
+}
+620000051 = {
+	name="Алия"
+	dynasty=300547
+	female=yes
+	
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=600000051
+	mother=602000051
+	
+	8285.1.1 = {birth="8285.1.1"}
+}
+
+### House Reyaan
+345300512 = {
+	name="Эланзо"  # a lord
+	dynasty=300512
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	7806.1.1 = {birth="7806.1.1"}
+	7871.1.1 = {death="7871.1.1"}
+}
+344300512 = {
+	name="Рогго"  # a lord
+	dynasty=300512
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=345300512
+	
+	7833.1.1 = {birth="7833.1.1"}
+	7889.1.1 = {death="7889.1.1"}
+}
+343300512 = {
+	name="Кварро"  # a lord
+	dynasty=300512
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=344300512
+	
+	7862.1.1 = {birth="7862.1.1"}
+	7925.1.1 = {death="7925.1.1"}
+}
+342300512 = {
+	name="Морогго"  # a lord
+	dynasty=300512
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=343300512
+	
+	7887.1.1 = {birth="7887.1.1"}
+	7944.1.1 = {death="7944.1.1"}
+}
+341300512 = {
+	name="Десперо"  # a lord
+	dynasty=300512
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=342300512
+	
+	7918.1.1 = {birth="7918.1.1"}
+	7966.1.1 = {death="7966.1.1"}
+}
+340300512 = {
+	name="Деллоно"  # a lord
+	dynasty=300512
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=341300512
+	
+	7941.1.1 = {birth="7941.1.1"}
+	7994.1.1 = {death="7994.1.1"}
+}
+1100512 = {
+	name="Сирио"  # a lord
+	dynasty=300512
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=340300512
+	
+	7964.1.1 = {birth="7964.1.1"}
+	8003.1.1 = {death="8003.1.1"}
+}
+1000512 = {
+	name="Коссомо"  # a lord
+	dynasty=300512
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=1100512
+	
+	7986.1.1 = {birth="7986.1.1"}
+	8042.1.1 = {death="8042.1.1"}
+}
+900512 = {
+	name="Оро"  # a lord
+	dynasty=300512
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=1000512
+	
+	8005.1.1 = {birth="8005.1.1"}
+	8057.1.1 = {death="8057.1.1"}
+}
+800512 = {
+	name="Обело"  # a lord
+	dynasty=300512
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=900512
+	
+	8029.1.1 = {birth="8029.1.1"}
+	8082.1.1 = {death="8082.1.1"}
+}
+700512 = {
+	name="Терро"  # a lord
+	dynasty=300512
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=800512
+	
+	8051.1.1 = {birth="8051.1.1"}
+	8099.1.1 = {death="8099.1.1"}
+}
+600512 = {
+	name="Беллакво"  # a lord
+	dynasty=300512
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=700512
+	
+	8071.1.1 = {birth="8071.1.1"}
+	8132.1.1 = {death="8132.1.1"}
+}
+500512 = {
+	name="Тагганаро"  # a lord
+	dynasty=300512
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=600512
+	
+	8096.1.1 = {birth="8096.1.1"}
+	8157.1.1 = {death="8157.1.1"}
+}
+400512 = {
+	name="Кохолло"  # a lord
+	dynasty=300512
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=500512
+	
+	8123.1.1 = {birth="8123.1.1"}
+	8168.1.1 = {death="8168.1.1"}
+}
+300512 = {
+	name="Йорко"  # a lord
+	dynasty=300512
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=400512
+	
+	8149.1.1 = {birth="8149.1.1"}
+	8205.1.1 = {death="8205.1.1"}
+}
+200512 = {
+	name="Денио"  # a lord
+	dynasty=300512
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=300512
+	
+	add_trait = gluttonous
+	
+	8176.1.1 = {birth="8176.1.1"}
+	8239.1.1 = {death="8239.1.1"}
+}
+100512 = {
+	name="Тернесио"  # a lord
+	dynasty=300512
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=200512
+	
+	add_trait = gluttonous
+	
+	8209.1.1 = {birth="8209.1.1"}
+	8279.1.1 = {death="8279.1.1"}
+}
+600000049 = {
+	name="Тихо"  # a lord
+	dynasty=300512
+	
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=100512
+
+	martial = 1
+	diplomacy = 6
+	intrigue = 3
+	stewardship = 8
+	learning = 4
+	
+	add_trait = gluttonous
+	add_trait = midas_touched
+	
+	8239.1.1 = {birth="8239.1.1"}
+	8259.1.1 = {add_spouse=602000049}
+	8269.1.1 = {
+		add_trait = is_fat
+		effect = {
+			set_variable = { which = physique_variable value = 25 }		
+		}
+	}
+	8289.1.1 = {
+		effect = {
+			set_variable = { which = physique_variable value = 35 }
+			add_character_modifier = {
+				name = obese_modifier
+				duration = -1
+			}
+		}
+	}
+}
+602000049 = {
+	name="Лотея"
+	female=yes
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	8239.1.1 = {birth="8239.1.1"}
+}
+610000049 = {
+	name="Бессаро" #canon
+	dynasty=300512
+	
+	martial = 1
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 11
+	learning = 5
+	
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=600000049
+	mother=602000049
+	
+	add_trait = gluttonous
+	add_trait = midas_touched
+	
+	8268.1.1 = {birth="8268.1.1"}
+	8298.1.1 = {
+		add_trait = is_fat
+		effect = {
+			set_variable = { which = physique_variable value = 25 }		
+		}
+	}
+}
+
+### House Tendyris
+344300541 = {
+	name="Даарио"  # a lord
+	dynasty=300541
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	7799.1.1 = {birth="7799.1.1"}
+	7855.1.1 = {death="7855.1.1"}
+}
+343300541 = {
+	name="Феррего"  # a lord
+	dynasty=300541
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=344300541
+	
+	7824.1.1 = {birth="7824.1.1"}
+	7887.1.1 = {death="7887.1.1"}
+}
+342300541 = {
+	name="Лото"  # a lord
+	dynasty=300541
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=343300541
+	
+	7850.1.1 = {birth="7850.1.1"}
+	7906.1.1 = {death="7906.1.1"}
+}
+341300541 = {
+	name="Накодос"  # a lord
+	dynasty=300541
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=342300541
+	
+	7883.1.1 = {birth="7883.1.1"}
+	7937.1.1 = {death="7937.1.1"}
+}
+340300541 = {
+	name="Беллакво"  # a lord
+	dynasty=300541
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=341300541
+	
+	7914.1.1 = {birth="7914.1.1"}
+	7994.1.1 = {death="7994.1.1"}
+}
+1100541 = {
+	name="Роро"  # a lord
+	dynasty=300541
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=340300541
+	
+	7939.1.1 = {birth="7939.1.1"}
+	7996.1.1 = { #Bleeding Years
+		effect = {
+			if = {
+				limit = { NOT = { month = 4 } }
+				character_event = { id = bleeding_years.6 days = 2 }
+			}	
+		}
+	}
+	8006.1.1 = {death="8006.1.1"}
+}
+1000541 = {
+	name="Коллокво"  # a lord
+	dynasty=300541
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=1100541
+	
+	7962.1.1 = {birth="7962.1.1"}
+	8015.1.1 = {death="8015.1.1"}
+}
+900541 = {
+	name="Моредо"  # a lord
+	dynasty=300541
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=1000541
+	
+	7983.1.1 = {birth="7983.1.1"}
+	8025.1.1 = {death="8025.1.1"}
+}
+800541 = {
+	name="Тернесио"  # a lord
+	dynasty=300541
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=900541
+	
+	8005.1.1 = {birth="8005.1.1"}
+	8059.1.1 = {death="8059.1.1"}
+}
+700541 = {
+	name="Кварро"  # a lord
+	dynasty=300541
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=800541
+	
+	8042.1.1 = {birth="8042.1.1"}
+	8102.1.1 = {death="8102.1.1"}
+}
+600541 = {
+	name="Йеппо"  # a lord
+	dynasty=300541
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=700541
+	
+	8076.1.1 = {birth="8076.1.1"}
+	8111.1.1 = {death="8111.1.1"}
+}
+500541 = {
+	name="Йорко"  # a lord
+	dynasty=300541
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=600541
+	
+	8099.1.1 = {birth="8099.1.1"}
+	8161.1.1 = {death="8161.1.1"}
+}
+400541 = {
+	name="Бегго"  # a lord
+	dynasty=300541
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=500541
+	
+	8133.1.1 = {birth="8133.1.1"}
+	8194.1.1 = {death="8194.1.1"}
+}
+300541 = {
+	name="Феррего"  # a lord
+	dynasty=300541
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=400541
+	
+	8155.1.1 = {birth="8155.1.1"}
+	8205.1.1 = {death="8205.1.1"}
+}
+200541 = {
+	name="Сирио"  # a lord
+	dynasty=300541
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=300541
+	
+	8188.1.1 = {birth="8188.1.1"}
+	8239.1.1 = {death="8239.1.1"}
+}
+100541 = {
+	name="Луко"  # a lord
+	dynasty=300541
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=200541
+	
+	8223.1.1 = {birth="8223.1.1"}
+	8282.1.1 = {death="8282.1.1"}
+}
+600000048 = {
+	name="Оро"  # a lord, canon
+	dynasty=300541
+	
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=100541
+
+	martial = 2
+	diplomacy = 6
+	intrigue = 7
+	stewardship = 10
+	learning = 8
+	
+	add_trait="diligent"
+	add_trait="patient"
+	add_trait="gregarious"
+	add_trait="cynical"
+	#add_trait="ambitious"
+	#add_trait="arbitrary"
+
+	
+	8253.1.1 = {birth="8253.1.1"}
+	8280.1.1 = {add_spouse=602000048}
+}
+602000048 = {
+	name="Тернесия"
+	female=yes
+	
+	religion="moonsingers"
+	culture="braavosi"
+
+	8253.1.1 = {birth="8253.1.1"}
+}
+630000048 = {
+	name="Аллакво"
+	dynasty=300541
+	
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=600000048
+	mother=602000048
+	
+	8288.1.1 = {birth="8288.1.1"}
+}
+620000048 = {
+	name="Бегго"
+	dynasty=300541
+	
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=600000048
+	mother=602000048
+	
+	8284.1.1 = {birth="8284.1.1"}
+}
+610000048 = {
+	name="Нарба"
+	dynasty=300541
+	female=yes
+	
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=600000048
+	mother=602000048
+	
+	8282.1.1 = {birth="8282.1.1"}
+}
+
+###########################
+### Noble Feudal Houses ###
+########################### 
+### House Volentin
+345300005 = {
+	name="Трелло"	# a lord
+	dynasty=300005
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	7802.1.1 = {birth="7802.1.1"}
+	7864.1.1 = {death="7864.1.1"}
+}
+344300005 = {
+	name="Сирано"	# a lord
+	dynasty=300005
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=345300005
+	
+	7826.1.1 = {birth="7826.1.1"}
+	7889.1.1 = {death="7889.1.1"}
+}
+343300005 = {
+	name="Тернесио"	# a lord
+	dynasty=300005
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=344300005
+	
+	7852.1.1 = {birth="7852.1.1"}
+	7907.1.1 = {death="7907.1.1"}
+}
+342300005 = {
+	name="Олло"	# a lord
+	dynasty=300005
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=343300005
+	
+	7878.1.1 = {birth="7878.1.1"}
+	7925.1.1 = {death="7925.1.1"}
+}
+341300005 = {
+	name="Галео"	# a lord
+	dynasty=300005
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=342300005
+	
+	7903.1.1 = {birth="7903.1.1"}
+	7955.1.1 = {death="7955.1.1"}
+}
+340300005 = {
+	name="Тормо"	# a lord
+	dynasty=300005
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=341300005
+	
+	7929.1.1 = {birth="7929.1.1"}
+	7995.1.1 = {death="7995.1.1"}
+}
+100300005 = {
+	name="Терро"	# a lord
+	dynasty=300005
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=340300005
+
+	7954.1.1 = {birth="7954.1.1"}
+	7970.1.1 = {add_trait=poor_warrior}
+	8028.1.1 = {death="8028.1.1"}
+}
+101300005 = {
+	name="Аллакво"	# a lord
+	dynasty=300005
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=100300005
+
+	7982.1.1 = {birth="7982.1.1"}
+	7998.1.1 = {add_trait=poor_warrior}
+	8056.1.1 = {death="8056.1.1"}
+}
+106300005 = {
+	name="Гилено"	# a lord
+	dynasty=300005
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=101300005
+
+	8008.1.1 = {birth="8008.1.1"}
+	8024.1.1 = {add_trait=trained_warrior}
+	8084.1.1 = {death="8084.1.1"}
+}
+113300005 = {
+	name="Тихо"	# a lord
+	dynasty=300005
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=106300005
+
+	8041.1.1 = {birth="8041.1.1"}
+	8057.1.1 = {add_trait=trained_warrior}
+	8107.1.1 = {death="8107.1.1"}
+}
+117300005 = {
+	name="Рогго"	# a lord
+	dynasty=300005
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=113300005
+
+	8066.1.1 = {birth="8066.1.1"}
+	8082.1.1 = {add_trait=poor_warrior}
+	8131.1.1 = {death="8131.1.1"}
+}
+119300005 = {
+	name="Эззелино"	# a lord
+	dynasty=300005
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=117300005
+
+	8096.1.1 = {birth="8096.1.1"}
+	8112.1.1 = {add_trait=skilled_warrior}
+	8147.1.1 = {death="8147.1.1"}
+}
+126300005 = {
+	name="Мералин"	# a lord
+	dynasty=300005
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=119300005
+
+	8123.1.1 = {birth="8123.1.1"}
+	8139.1.1 = {add_trait=trained_warrior}
+	8158.1.1 = {death = {death_reason = death_murder}}
+}
+127300005 = {
+	name="Терро"	# a lord
+	dynasty=300005
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=126300005
+	8150.1.1 = {birth="8150.1.1"}
+	8166.1.1 = {add_trait=poor_warrior}
+	8224.1.1 = {death="8224.1.1"}
+}
+130300005 = {
+	name="Моредо"	# a lord
+	dynasty=300005
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=127300005
+
+	8175.1.1 = {birth="8175.1.1"}
+	8191.1.1 = {add_trait=poor_warrior}
+	8250.1.1 = {death="8250.1.1"}
+}
+134300005 = {
+	name="Эззелино"	# a lord
+	dynasty=300005
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=130300005
+
+	8197.1.1 = {birth="8197.1.1"}
+	8213.1.1 = {add_trait=trained_warrior}
+	8266.1.1 = {death="8266.1.1"}
+}
+135300005 = {
+	name="Рогго"	# a lord
+	dynasty=300005
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=134300005
+
+	8221.1.1 = {birth="8221.1.1"}
+	8237.1.1 = {add_trait=poor_warrior}
+	8239.1.1 = {add_spouse=235300005}
+	8297.1.1 = {death="8297.1.1"}
+}
+235300005 = {
+	name="Люсерра"
+	female=yes
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	8221.1.1 = {birth="8221.1.1"}
+	8297.1.1 = {death="8297.1.1"}
+}
+138300005 = {
+	name="Тагганаро"	# a lord
+	dynasty=300005
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=135300005
+	mother=235300005
+
+	8256.1.1 = {birth="8256.1.1"}
+	8272.1.1 = {add_trait=trained_warrior}
+	8274.1.1 = {add_spouse=238300005}
+}
+238300005 = {
+	name="Йорка"
+	female=yes
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	8256.1.1 = {birth="8256.1.1"}
+}
+139300005 = {
+	name="Кварро"	# canon, first sword of braavos
+	dynasty=300005
+	
+	martial = 8
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 4
+	learning = 4
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=135300005
+	mother=235300005
+
+	8257.1.1 = {birth="8257.1.1"}
+	8273.1.1 = {
+		add_trait = skilled_warrior
+		add_trait = duelist
+		add_trait = tough_soldier
+	}
+	8281.1.1={
+		employer=600000041 # Феррего
+		effect = {
+			give_job_title = job_marshal
+		}
+	}
+}
+141300005 = {
+	name="Сирея"	# not a lord
+	female=yes
+	dynasty=300005
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=138300005
+	mother=238300005
+
+	8289.1.1 = {birth="8289.1.1"}
+}
+142300005 = {
+	name="Талея"	# not a lord
+	female=yes
+	dynasty=300005
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=138300005
+	mother=238300005
+
+	8290.1.1 = {birth="8290.1.1"}
+}
+143300005 = {
+	name="Гилениос"	# not a lord
+	female=yes
+	dynasty=300005
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=138300005
+	mother=238300005
+
+	8292.1.1 = {birth="8292.1.1"}
+}
+144300005 = {
+	name="Коссомо"	# not a lord
+	dynasty=300005
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=138300005
+	mother=238300005
+
+	8294.1.1 = {birth="8294.1.1"}
+	8310.1.1 = {add_trait=master_warrior}
+}
+
+
+### House Zalyne
+150300004 = {
+	name="Утеро"	# Sealord who uncloaked Braavos
+	dynasty=300004
+	
+	diplomacy=8
+	stewardship=9
+	martial=6
+	intrigue=5
+	learning=5
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	add_trait=grey_eminence
+	add_trait=brave
+	add_trait=proud
+	add_trait=just
+	add_trait=diligent
+	
+	7652.1.1 = {birth="7652.1.1"}
+	7668.1.1 = {add_trait=trained_warrior}
+	7708.1.1 = {death="7708.1.1"}
+}
+151300004 = {
+	name="Потомки Утеро"	
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	occluded = yes
+	
+	father = 150300004
+	
+	7708.1.1 = {birth="7708.1.1"}
+	7777.1.1 = {death="7777.1.1"}
+}
+344300004 = {
+	name="Оро"	# a lord
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father = 151300004
+
+	7777.1.1 = {birth="7777.1.1"}
+	7830.1.1 = {death="7830.1.1"}
+}
+343300004 = {
+	name="Тихо"	# a lord
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father = 344300004
+
+	7799.1.1 = {birth="7799.1.1"}
+	7854.1.1 = {death="7854.1.1"}
+}
+342300004 = {
+	name="Ферро"	# a lord
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father = 343300004
+
+	7822.1.1 = {birth="7822.1.1"}
+	7888.1.1 = {death="7888.1.1"}
+}
+341300004 = {
+	name="Бруско"	# a lord
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father = 342300004
+
+	7848.1.1 = {birth="7848.1.1"}
+	7905.1.1 = {death="7905.1.1"}
+}
+340300004 = {
+	name="Десперо"	# a lord
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father = 341300004
+
+	7871.1.1 = {birth="7871.1.1"}
+	7926.1.1 = {death="7926.1.1"}
+}
+152300004 = {
+	name="Гилоро"	# a lord
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father = 340300004
+
+	7910.1.1 = {birth="7910.1.1"}
+	7926.1.1 = {add_trait=poor_warrior}
+	7970.1.1 = {death="7970.1.1"}
+}
+153300004 = {
+	name="Утеро"	# a lord
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father = 152300004
+
+	7937.1.1 = {birth="7937.1.1"}
+	7953.1.1 = {add_trait=poor_warrior}
+	7989.1.1 = {death="7989.1.1"}
+}
+100300004 = {
+	name="Тернесио"	# a lord
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father = 153300004
+
+	7957.1.1 = {birth="7957.1.1"}
+	7973.1.1 = {add_trait=poor_warrior}
+	8032.1.1 = {death="8032.1.1"}
+}
+101300004 = {
+	name="Денио"	# a lord
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=100300004
+
+	7983.1.1 = {birth="7983.1.1"}
+	7999.1.1 = {add_trait=poor_warrior}
+	8043.1.1 = {death="8043.1.1"}
+}
+104300004 = {
+	name="Тагганаро"	# a lord
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=101300004
+
+	8011.1.1 = {birth="8011.1.1"}
+	8027.1.1 = {add_trait=poor_warrior}
+	8061.1.1 = {death="8061.1.1"}
+}
+105300004 = {
+	name="Феррего"	# a lord
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=104300004
+
+	8029.1.1 = {birth="8029.1.1"}
+	8045.1.1 = {add_trait=poor_warrior}
+	8079.1.1 = {death="8079.1.1"}
+}
+108300004 = {
+	name="Денио"	# a lord
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=105300004
+
+	8048.1.1 = {birth="8048.1.1"}
+	8064.1.1 = {add_trait=poor_warrior}
+	8103.1.1 = {death="8103.1.1"}
+}
+112300004 = {
+	name="Рогго"	# a lord
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=108300004
+
+	8070.1.1 = {birth="8070.1.1"}
+	8086.1.1 = {add_trait=trained_warrior}
+	8140.1.1 = {death="8140.1.1"}
+}
+115300004 = {
+	name="Терро"	# a lord
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=112300004
+
+	8093.1.1 = {birth="8093.1.1"}
+	8109.1.1 = {add_trait=poor_warrior}
+	8156.1.1 = {death="8156.1.1"}
+}
+118300004 = {
+	name="Лотаро"	# a lord
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=115300004
+
+	8127.1.1 = {birth="8127.1.1"}
+	8143.1.1 = {add_trait=poor_warrior}
+	8170.1.1 = {death="8170.1.1"}
+}
+120300004 = {
+	name="Тормо"	# a lord
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=118300004
+
+	8146.1.1 = {birth="8146.1.1"}
+	8207.1.1 = {death="8207.1.1"}
+}
+123300004 = {
+	name="Коссомо"	# a lord
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=120300004
+
+	8168.1.1 = {birth="8168.1.1"}
+	8184.1.1 = {add_trait=poor_warrior}
+	8221.1.1 = {death="8221.1.1"}
+}
+127300004 = {
+	name="Гилено"	# a lord
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=123300004
+
+	8197.1.1 = {birth="8197.1.1"}
+	8213.1.1 = {add_trait=poor_warrior}
+	8236.1.1 = {death="8236.1.1"}
+}
+130300004 = {
+	name="Нарбо"	# a lord
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=127300004
+
+	8221.1.1 = {birth="8221.1.1"}
+	8237.1.1 = {add_trait=poor_warrior}
+	8254.1.1 = {death="8254.1.1"}
+}
+134300004 = {
+	name="Коссомо"	# a lord
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=130300004
+
+	8251.1.1 = {birth="8251.1.1"}
+	8267.1.1 = {add_trait=poor_warrior}
+	8276.1.1 = {add_spouse=234300004}
+}
+234300004 = {
+	name="Сирея"
+	female=yes
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	8258.1.1 = {birth="8258.1.1"}
+}
+135300004 = {
+	name="Нарбо"	# not a lord
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=134300004
+	mother=234300004
+
+	8276.1.1 = {birth="8276.1.1"}
+	8292.1.1 = {add_trait=poor_warrior}
+}
+136300004 = {
+	name="Коссомо"	# not a lord
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=134300004
+	mother=234300004
+
+	8278.1.1 = {birth="8278.1.1"}
+	8294.1.1 = {add_trait=poor_warrior}
+}
+137300004 = {
+	name="Джосс"	# not a lord
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=134300004
+	mother=234300004
+
+	8281.1.1 = {birth="8281.1.1"}
+	8297.1.1 = {add_trait=skilled_warrior}
+}
+138300004 = {
+	name="Талея"	# not a lord
+	female=yes
+	dynasty=300004
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=134300004
+	mother=234300004
+
+	8284.1.1 = {birth="8284.1.1"}
+}
+
+### House Forel
+345300527 = {
+	name="Сиродос"	# a lord
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	7810.1.1 = {birth="7810.1.1"}
+	7871.1.1 = {death="7871.1.1"}
+}
+344300527 = {
+	name="Эссанос"	# a lord
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=345300527
+
+	7839.1.1 = {birth="7839.1.1"}
+	7900.1.1 = {death="7900.1.1"}
+}
+343300527 = {
+	name="Ариллос"	# a lord
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=344300527
+
+	7862.1.1 = {birth="7862.1.1"}
+	7915.1.1 = {death="7915.1.1"}
+}
+342300527 = {
+	name="Морео"	# a lord
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=343300527
+
+	7885.1.1 = {birth="7885.1.1"}
+	7938.1.1 = {death="7938.1.1"}
+}
+341300527 = {
+	name="Томарро"	# a lord
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=342300527
+
+	7912.1.1 = {birth="7912.1.1"}
+	7975.1.1 = {death="7975.1.1"}
+}
+340300527 = {
+	name="Фрегар"	# a lord
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=341300527
+
+	7931.1.1 = {birth="7931.1.1"}
+	7990.1.1 = {death="7990.1.1"}
+}
+100300527 = {
+	name="Тернесио"	# a lord
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=340300527
+	
+	7957.1.1 = {birth="7957.1.1"}
+	7973.1.1 = {add_trait=poor_warrior}
+	8035.1.1 = {death="8035.1.1"}
+}
+101300527 = {
+	name="Мирмелло"	# a lord
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=100300527
+
+	7984.1.1 = {birth="7984.1.1"}
+	8000.1.1 = {add_trait=poor_warrior}
+	8053.1.1 = {death="8053.1.1"}
+}
+103300527 = {
+	name="Лото"	# a lord
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=101300527
+
+	8006.1.1 = {birth="8006.1.1"}
+	8022.1.1 = {add_trait=poor_warrior}
+	8074.1.1 = {death="8074.1.1"}
+}
+106300527 = {
+	name="Сирио"	# a lord
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=103300527
+
+	8033.1.1 = {birth="8033.1.1"}
+	8049.1.1 = {add_trait=poor_warrior}
+	8083.1.1 = {death="8083.1.1"}
+}
+108300527 = {
+	name="Рогго"	# a lord
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=106300527
+
+	8063.1.1 = {birth="8063.1.1"}
+	8079.1.1 = {add_trait=skilled_warrior}
+	8121.1.1 = {death="8121.1.1"}
+}
+113300527 = {
+	name="Гилоро"	# a lord
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=108300527
+
+	8086.1.1 = {birth="8086.1.1"}
+	8102.1.1 = {add_trait=poor_warrior}
+	8137.1.1 = {death="8137.1.1"}
+}
+115300527 = {
+	name="Гилено"	# a lord
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=113300527
+
+	8112.1.1 = {birth="8112.1.1"}
+	8128.1.1 = {add_trait=skilled_warrior}
+	8166.1.1 = {death="8166.1.1"}
+}
+117300527 = {
+	name="Мирмелло"	# a lord
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=115300527
+
+	8137.1.1 = {birth="8137.1.1"}
+	8153.1.1 = {add_trait=poor_warrior}
+	8198.1.1 = {death="8198.1.1"}
+}
+119300527 = {
+	name="Моредо"	# a lord
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=117300527
+
+	8163.1.1 = {birth="8163.1.1"}
+	8179.1.1 = {add_trait=poor_warrior}
+	8216.1.1 = {death="8216.1.1"}
+}
+120300527 = {
+	name="Тормо"	# a lord
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=119300527
+
+	8182.1.1 = {birth="8182.1.1"}
+	8198.1.1 = {add_trait=trained_warrior}
+	8221.1.1 = {death="8221.1.1"}
+}
+125300527 = {
+	name="Меро"	# a lord
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=120300527
+
+	8209.1.1 = {birth="8209.1.1"}
+	8225.1.1 = {add_trait=skilled_warrior}
+	8270.1.1 = {death="8270.1.1"}
+}
+129300527 = {
+	name="Гилено"	# a lord
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=125300527
+
+	8237.1.1 = {birth="8237.1.1"}
+	8253.1.1 = {add_trait=skilled_warrior}
+	8255.1.1 = {add_spouse=229300527}
+	8276.1.1 = {death = {death_reason = death_accident}}
+}
+229300527 = {
+	name="Брея"
+	female=yes
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	8237.1.1 = {birth="8237.1.1"}
+	8276.1.1 = {death="8276.1.1"}
+}
+##Сирио##
+126009 = {
+	name="Сирио"
+	dynasty=300527
+
+	dna="djbehsgabaz"
+	properties="g00eik"
+
+	father=129300527
+	mother=229300527
+	
+	martial = 9
+	intrigue = 5
+	diplomacy = 4
+	stewardship = 2
+	learning = 4
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	add_trait="brave"
+	add_trait="honest"
+	add_trait="elusive_shadow"
+	
+	8260.1.1 = {birth="8260.1.1"}#
+	8276.1.1 = {
+		add_trait="master_warrior"
+		add_trait="duelist"
+	}
+	8298.1.1 ={
+		employer=59
+		effect = {
+			wealth = 50 
+			add_character_modifier = {
+				name = foreign_trainer
+				duration = 10
+			}	
+		}
+	}
+	8298.10.28 = {
+		death = {
+			death_reason = death_duel
+			killer = 200304 #Meryn Trant
+		}
+	}
+}
+132300527 = {
+	name="Бруско"	# a lord
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=129300527
+	mother=229300527
+
+	8263.1.1 = {birth="8263.1.1"}
+	8279.1.1 = {add_trait=poor_warrior}
+	8281.1.1 = {add_spouse=232300527}
+}
+232300527 = {
+	name="Феррега"
+	female=yes
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	8263.1.1 = {birth="8263.1.1"}
+}
+133300527 = {
+	name="Йорко"	# not a lord
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=129300527
+	mother=229300527
+
+	8266.1.1 = {birth="8266.1.1"}
+	8282.1.1 = {add_trait=trained_warrior}
+}
+134300527 = {
+	name="Фарио"	# a playwright
+	dynasty=300527
+	
+	martial = 1
+	stewardship = 4
+	intrigue = 5
+	diplomacy = 8
+	learning = 7
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=129300527
+	mother=229300527
+	
+	add_trait = scholarly_theologian
+	add_trait = brave
+	add_trait = rude
+
+	8269.1.1 = {birth="8269.1.1"}
+	8284.1.1 = {
+		add_trait = poet
+	}
+}
+135300527 = {
+	name="Моредея"	# not a lord
+	female=yes
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=129300527
+	mother=229300527
+
+	8270.1.1 = {birth="8270.1.1"}
+}
+136300527 = {
+	name="Тагганаро"	# not a lord
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=132300527
+	mother=232300527
+
+	8283.1.1 = {birth="8283.1.1"}
+	8299.1.1 = {add_trait=poor_warrior}
+}
+137300527 = {
+	name="Гилениос"	# not a lord
+	female=yes
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=132300527
+	mother=232300527
+
+	8284.1.1 = {birth="8284.1.1"}
+}
+138300527 = {
+	name="Тормо"	# not a lord
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=132300527
+	mother=232300527
+
+	8286.1.1 = {birth="8286.1.1"}
+	8302.1.1 = {add_trait=poor_warrior}
+}
+139300527 = {
+	name="Тернесия"	# not a lord
+	female=yes
+	dynasty=300527
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=132300527
+	mother=232300527
+
+	8287.1.1 = {birth="8287.1.1"}
+}
+
+### House Dimittis
+344300003 = {
+	name="Морогго"	# a lord
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	7833.1.1 = {birth="7833.1.1"}
+	7886.1.1 = {death="7886.1.1"}
+}
+343300003 = {
+	name="Нохо"	# a lord
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=344300003
+	
+	7854.1.1 = {birth="7854.1.1"}
+	7911.1.1 = {death="7911.1.1"}
+}
+342300003 = {
+	name="Орбело"	# a lord
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=343300003
+	
+	7880.1.1 = {birth="7880.1.1"}
+	7928.1.1 = {death="7928.1.1"}
+}
+341300003 = {
+	name="Каспорио"	# a lord
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=342300003
+	
+	7907.1.1 = {birth="7907.1.1"}
+	7959.1.1 = {death="7959.1.1"}
+}
+340300003 = {
+	name="Морогго"	# a lord
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=341300003
+	
+	7931.1.1 = {birth="7931.1.1"}
+	7995.1.1 = {death="7995.1.1"}
+}
+100300003 = {
+	name="Пинто"	# a lord
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=340300003
+
+	7960.1.1 = {birth="7960.1.1"}
+	7976.1.1 = {add_trait=poor_warrior}
+	8038.1.1 = {death="8038.1.1"}
+}
+103300003 = {
+	name="Бегго"	# a lord
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=100300003
+
+	7981.1.1 = {birth="7981.1.1"}
+	7996.1.1 = {add_trait=poor_warrior}
+	8057.1.1 = {death="8057.1.1"}
+}
+104300003 = {
+	name="Терро"	# a lord
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=103300003
+
+	8000.1.1 = {birth="8000.1.1"}
+	8016.1.1 = {add_trait=poor_warrior}
+	8068.1.1 = {death="8068.1.1"}
+}
+108300003 = {
+	name="Мирмелло"	# a lord
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=104300003
+
+	8028.1.1 = {birth="8028.1.1"}
+	8044.1.1 = {add_trait=poor_warrior}
+	8075.1.1 = {death="8075.1.1"}
+}
+110300003 = {
+	name="Лото"	# a lord
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=108300003
+
+	8055.1.1 = {birth="8055.1.1"}
+	8071.1.1 = {add_trait=trained_warrior}
+	8106.1.1 = {death="8106.1.1"}
+}
+111300003 = {
+	name="Нохо"	# a lord
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=110300003
+
+	8077.1.1 = {birth="8077.1.1"}
+	8093.1.1 = {add_trait=trained_warrior}
+	8109.1.1 = {death="8109.1.1"}
+}
+118300003 = {
+	name="Коссомо"	# a lord
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=111300003
+
+	8107.1.1 = {birth="8107.1.1"}
+	8123.1.1 = {add_trait=trained_warrior}
+	8125.1.1 = {add_spouse=218300003}
+	8156.1.1 = {death="8156.1.1"}
+}
+218300003 = {
+	name="Феррега"
+	female=yes
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	8107.1.1 = {birth="8107.1.1"}
+	8156.1.1 = {death="8156.1.1"}
+}
+119300003 = {
+	name="Торло"	# semi-canon, a lord
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=118300003
+	mother=218300003
+
+	8125.1.1 = {birth="8125.1.1"}
+	8141.1.1 = {add_trait=skilled_warrior}
+	8194.1.1 = {death="8194.1.1"}
+}
+117300003 = {
+	name="Йорио"	# semi-canon, not a lord
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=118300003
+	mother=218300003
+
+	8126.1.1 = {birth="8126.1.1"}
+	8142.1.1 = {add_trait=skilled_warrior}
+	8169.1.1 = {death="8169.1.1"}
+}
+120300003 = {
+	name="Денио"	# semi-canon, not a lord
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=118300003
+	mother=218300003
+
+	add_trait=scholar
+	add_trait=patient
+	add_trait=just
+
+	8127.1.1 = {birth="8127.1.1"}
+	8183.1.1 = {death="8183.1.1"}
+}
+121300003 = {
+	name="Тернесио"	# a lord
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=119300003
+
+	8158.1.1 = {birth="8158.1.1"}
+	8174.1.1 = {add_trait=trained_warrior}
+	8215.1.1 = {death="8215.1.1"}
+}
+122300003 = {
+	name="Оро"	# a lord
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=121300003
+
+	8184.1.1 = {birth="8184.1.1"}
+	8200.1.1 = {add_trait=skilled_warrior}
+	8216.1.1 = {death = {death_reason = death_battle}}
+}
+127300003 = {
+	name="Орделло"	# a lord
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=122300003
+
+	8206.1.1 = {birth="8206.1.1"}
+	8222.1.1 = {add_trait=skilled_warrior}
+	8249.1.1 = {death="8249.1.1"}
+}
+130300003 = {
+	name="Оро"	# a lord
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=127300003
+
+	8237.1.1 = {birth="8237.1.1"}
+	8253.1.1 = {add_trait=skilled_warrior}
+	8255.1.1 = {add_spouse=230300003}
+	8277.1.1 = {death="8277.1.1"}
+}
+230300003 = {
+	name="Тейна"
+	female=yes
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	8237.1.1 = {birth="8237.1.1"}
+	8277.1.1 = {death="8277.1.1"}
+}
+131300003 = {
+	name="Терро"	# a lord
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=130300003
+	mother=230300003
+
+	8257.1.1 = {birth="8257.1.1"}
+	8273.1.1 = {add_trait=poor_warrior}
+	8275.1.1 = {add_spouse=231300003}
+	8291.1.1 = {death = {death_reason = death_murder}}
+}
+231300003 = {
+	name="Коссома"
+	female=yes
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	8257.1.1 = {birth="8257.1.1"}
+	8291.1.1 = {death="8291.1.1"}
+}
+132300003 = {
+	name="Гилено"	# not a lord
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=130300003
+	mother=230300003
+
+	8258.1.1 = {birth="8258.1.1"}
+	8274.1.1 = {add_trait=skilled_warrior}
+	8286.1.1 = {death = {death_reason = death_battle}}
+}
+133300003 = {
+	name="Нохо"	# not a lord, canon banker
+	dynasty=300003
+	
+	martial = 2
+	stewardship = 7
+	intrigue = 5
+	diplomacy = 6
+	learning = 5
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=130300003
+	mother=230300003
+	
+	add_trait = fortune_builder
+	add_trait = gregarious
+	add_trait = proud
+
+	8261.1.1 = {birth="8261.1.1"}
+	8277.1.1 = {add_trait=poor_warrior}
+}
+134300003 = {
+	name="Лото"	# not a lord
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=130300003
+	mother=230300003
+
+	8262.1.1 = {birth="8262.1.1"}
+	8278.1.1 = {add_trait=poor_warrior}
+}
+135300003 = {
+	name="Беллегера"	# not a lord
+	female=yes
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=131300003
+	mother=231300003
+
+	8277.1.1 = {birth="8277.1.1"}
+}
+136300003 = {
+	name="Феррега"	# not a lord
+	female=yes
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=131300003
+	mother=231300003
+
+	8279.1.1 = {birth="8279.1.1"}
+}
+137300003 = {
+	name="Гилено"	# a lord
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=131300003
+	mother=231300003
+
+	8282.1.1 = {birth="8282.1.1"}
+	8298.1.1 = {add_trait=trained_warrior}
+	8300.1.1 = {add_spouse=237300003}
+}
+237300003 = {
+	name="Моредея"
+	female=yes
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	8282.1.1 = {birth="8282.1.1"}
+}
+138300003 = {
+	name="Тернесия"	# not a lord
+	female=yes
+	dynasty=300003
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=131300003
+	mother=231300003
+
+	8285.1.1 = {birth="8285.1.1"}
+}
+
+### House Nestoris
+345300001 = {
+	name="Морио"	# a lord
+	dynasty=300001
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	7810.1.1 = {birth="7810.1.1"}
+	7866.1.1 = {death="7866.1.1"}
+}
+344300001 = {
+	name="Терро"	# a lord
+	dynasty=300001
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=345300001
+
+	7835.1.1 = {birth="7835.1.1"}
+	7899.1.1 = {death="7899.1.1"}
+}
+343300001 = {
+	name="Йорко"	# a lord
+	dynasty=300001
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=344300001
+
+	7859.1.1 = {birth="7859.1.1"}
+	7921.1.1 = {death="7921.1.1"}
+}
+342300001 = {
+	name="Бессаро"	# a lord
+	dynasty=300001
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=343300001
+
+	7884.1.1 = {birth="7884.1.1"}
+	7933.1.1 = {death="7933.1.1"}
+}
+341300001 = {
+	name="Флорио"	# a lord
+	dynasty=300001
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=342300001
+
+	7903.1.1 = {birth="7903.1.1"}
+	7955.1.1 = {death="7955.1.1"}
+}
+340300001 = {
+	name="Бобоно"	# a lord
+	dynasty=300001
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=341300001
+
+	7929.1.1 = {birth="7929.1.1"}
+	7993.1.1 = {death="7993.1.1"}
+}
+100300001 = {
+	name="Денио"	# a lord
+	dynasty=300001
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father=340300001
+
+	7958.1.1 = {birth="7958.1.1"}
+	7974.1.1 = {add_trait=poor_warrior}
+	8036.1.1 = {death="8036.1.1"}
+}
+101300001 = {
+	name="Гилоро"	# a lord
+	dynasty=300001
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=100300001
+
+	7976.1.1 = {birth="7976.1.1"}
+	7992.1.1 = {add_trait=trained_warrior}
+	8045.1.1 = {death="8045.1.1"}
+}
+103300001 = {
+	name="Терро"	# a lord
+	dynasty=300001
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=101300001
+
+	7996.1.1 = {birth="7996.1.1"}
+	8012.1.1 = {add_trait=poor_warrior}
+	8052.1.1 = {death="8052.1.1"}
+}
+106300001 = {
+	name="Кварро"	# a lord
+	dynasty=300001
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=103300001
+
+	8023.1.1 = {birth="8023.1.1"}
+	8039.1.1 = {add_trait=trained_warrior}
+	8089.1.1 = {death="8089.1.1"}
+}
+108300001 = {
+	name="Тагганаро"	# a lord
+	dynasty=300001
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=106300001
+
+	8055.1.1 = {birth="8055.1.1"}
+	8071.1.1 = {add_trait=poor_warrior}
+	8104.1.1 = {death = {death_reason = death_accident}}
+}
+113300001 = {
+	name="Пинто"	# a lord
+	dynasty=300001
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=108300001
+
+	8097.1.1 = {birth="8097.1.1"}
+	8113.1.1 = {add_trait=trained_warrior}
+	8141.1.1 = {death="8141.1.1"}
+}
+114300001 = {
+	name="Меро"	# a lord
+	dynasty=300001
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=113300001
+
+	8118.1.1 = {birth="8118.1.1"}
+	8134.1.1 = {add_trait=trained_warrior}
+	8154.1.1 = {death="8154.1.1"}
+}
+119300001 = {
+	name="Идарио"	# a lord
+	dynasty=300001
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=114300001
+
+	8137.1.1 = {birth="8137.1.1"}
+	8153.1.1 = {add_trait=poor_warrior}
+	8179.1.1 = {death = {death_reason = death_battle}}
+}
+121300001 = {
+	name="Денио"	# a lord
+	dynasty=300001
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=119300001
+
+	8170.1.1 = {birth="8170.1.1"}
+	8186.1.1 = {add_trait=trained_warrior}
+	8207.1.1 = {death="8207.1.1"}
+}
+123300001 = {
+	name="Терро"	# a lord
+	dynasty=300001
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=121300001
+
+	8191.1.1 = {birth="8191.1.1"}
+	8260.1.1 = {death="8260.1.1"}
+}
+127300001 = {
+	name="Орделло"	# a lord
+	dynasty=300001
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=123300001
+
+	8222.1.1 = {birth="8222.1.1"}
+	8238.1.1 = {add_trait=poor_warrior}
+	8240.1.1 = {add_spouse=227300001}
+	8282.1.1 = {death="8282.1.1"}
+}
+227300001 = {
+	name="Лотея"
+	female=yes
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	8222.1.1 = {birth="8222.1.1"}
+	8282.1.1 = {death="8282.1.1"}
+}
+128300001 = {
+	name="Бегго"	# a lord
+	dynasty=300001
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=127300001
+	mother=227300001
+
+	8255.1.1 = {birth="8255.1.1"}
+	8271.1.1 = {add_trait=trained_warrior}
+	8273.1.1 = {add_spouse=228300001}
+}
+228300001 = {
+	name="Тейна"
+	female=yes
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	8255.1.1 = {birth="8255.1.1"}
+}
+129300001 = {
+	name="Гилоро"	# not a lord
+	dynasty=300001
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=127300001
+	mother=227300001
+
+	8258.1.1 = {birth="8258.1.1"}
+	8274.1.1 = {add_trait=skilled_warrior}
+}
+130300001 = {
+	name="Тихо"	# not a lord , canon banker
+	dynasty=300001
+	
+	martial = 1
+	stewardship = 9
+	intrigue = 8
+	diplomacy = 7
+	learning = 5
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=127300001
+	mother=227300001
+	
+	add_trait = midas_touched
+	add_trait = gregarious
+	add_trait = groomed
+
+	8260.1.1 = {birth="8260.1.1"}
+	8276.1.1 = {add_trait=poor_warrior}
+}
+133300001 = {
+	name="Уна"	# not a lord
+	female=yes
+	dynasty=300001
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=128300001
+	mother=228300001
+
+	8275.1.1 = {birth="8275.1.1"}
+}
+134300001 = {
+	name="Оро"	# not a lord
+	dynasty=300001
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	father=128300001
+	mother=228300001
+
+	8277.1.1 = {birth="8277.1.1"}
+	8293.1.1 = {add_trait=trained_warrior}
+}
+
+
+#################################  Courtesans
+
+###  Mistress of Swords
+100700010 = {
+	name="Тейна"	# not a lord
+	female=yes
+	dynasty=700010
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	7968.1.1 = {birth="7968.1.1"}
+	7984.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_mistress_swords
+	}
+	8017.1.1 = {death="8017.1.1"}
+}
+101700010 = {
+	name="Тиха"	# not a lord
+	female=yes
+	dynasty=700010
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=100700010
+
+	8005.1.1 = {birth="8005.1.1"}
+	8021.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_mistress_swords
+	}
+	8046.1.1 = {death="8046.1.1"}
+}
+102700010 = {
+	name="Нарба"	# not a lord
+	female=yes
+	dynasty=700010
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=101700010
+
+	8032.1.1 = {birth="8032.1.1"}
+	8048.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_mistress_swords
+	}
+	8064.1.1 = {death = {death_reason = death_accident}}
+}
+103700010 = {
+	name="Серала"	# not a lord
+	female=yes
+	dynasty=700010
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=102700010
+
+	8059.1.1 = {birth="8059.1.1"}
+	8075.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_mistress_swords
+	}
+	8130.1.1 = {death="8130.1.1"}
+}
+104700010 = {
+	name="Торма"	# not a lord
+	female=yes
+	dynasty=700010
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=103700010
+
+	8086.1.1 = {birth="8086.1.1"}
+	8102.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_mistress_swords
+	}
+	8129.1.1 = {effect = { remove_nickname = yes }}
+	8155.1.1 = {death="8155.1.1"}
+}
+105700010 = {
+	name="Изембара"	# not a lord
+	female=yes
+	dynasty=700010
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=104700010
+
+	8113.1.1 = {birth="8113.1.1"}
+	8129.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_mistress_swords
+	}
+	8156.1.1 = {effect = { remove_nickname = yes }}
+	8193.1.1 = {death="8193.1.1"}
+}
+106700010 = {
+	name="Йорка"	# not a lord
+	female=yes
+	dynasty=700010
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=105700010
+
+	8140.1.1 = {birth="8140.1.1"}
+	8156.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_mistress_swords
+	}
+	8183.1.1 = {effect = { remove_nickname = yes }}
+	8202.1.1 = {death="8202.1.1"}
+}
+107700010 = {
+	name="Орбела"	# not a lord
+	female=yes
+	dynasty=700010
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=106700010
+
+	8167.1.1 = {birth="8167.1.1"}
+	8183.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_mistress_swords
+	}
+	8220.1.1 = {death="8220.1.1"}
+}
+108700010 = {
+	name="Сирея"	# not a lord
+	female=yes
+	dynasty=700010
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=107700010
+
+	8194.1.1 = {birth="8194.1.1"}
+	8210.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_mistress_swords
+	}
+	8237.1.1 = {effect = { remove_nickname = yes }}
+	8245.1.1 = {death="8245.1.1"}
+}
+109700010 = {
+	name="Брея"	# not a lord
+	female=yes
+	dynasty=700010
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=108700010
+
+	8221.1.1 = {birth="8221.1.1"}
+	8237.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_mistress_swords
+	}
+	8264.1.1 = {effect = { remove_nickname = yes }}
+	8270.1.1 = {death="8270.1.1"}
+}
+110700010 = {
+	name="Якея"	# not a lord
+	female=yes
+	dynasty=700010
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=109700010
+
+	8248.1.1 = {birth="8248.1.1"}
+	8264.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_mistress_swords
+	}
+	8291.1.1 = {effect = { remove_nickname = yes }}
+	8292.1.1 = {death="8292.1.1"}
+}
+111700010 = {
+	name="Гилениос"	# not a lord
+	female=yes
+	dynasty=700010
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=110700010
+
+	8275.1.1 = {birth="8275.1.1"}
+	8291.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_mistress_swords
+	}
+}
+
+
+###  Wild Flower
+100700011 = {
+	name="Ланна"	# not a lord
+	female=yes
+	dynasty=700011
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	7968.1.1 = {birth="7968.1.1"}
+	7984.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_wild_flower
+	}
+	8017.1.1 = {death="8017.1.1"}
+}
+101700011 = {
+	name="Гилениос"	# not a lord
+	female=yes
+	dynasty=700011
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=100700011
+
+	8005.1.1 = {birth="8005.1.1"}
+	8021.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_wild_flower
+	}
+	8046.1.1 = {death="8046.1.1"}
+}
+102700011 = {
+	name="Нохия"	# not a lord
+	female=yes
+	dynasty=700011
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=101700011
+
+	8032.1.1 = {birth="8032.1.1"}
+	8048.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_wild_flower
+	}
+	8064.1.1 = {death = {death_reason = death_accident}}
+}
+103700011 = {
+	name="Беллонара"	# not a lord
+	female=yes
+	dynasty=700011
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=102700011
+
+	8059.1.1 = {birth="8059.1.1"}
+	8075.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_wild_flower
+	}
+	8130.1.1 = {death="8130.1.1"}
+}
+104700011 = {
+	name="Орбела"	# not a lord
+	female=yes
+	dynasty=700011
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=103700011
+
+	8086.1.1 = {birth="8086.1.1"}
+	8102.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_wild_flower
+	}
+	8129.1.1 = {effect = { remove_nickname = yes }}
+	8155.1.1 = {death="8155.1.1"}
+}
+105700011 = {
+	name="Тернесия"	# not a lord
+	female=yes
+	dynasty=700011
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=104700011
+
+	8113.1.1 = {birth="8113.1.1"}
+	8129.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_wild_flower
+	}
+	8156.1.1 = {effect = { remove_nickname = yes }}
+	8193.1.1 = {death="8193.1.1"}
+}
+106700011 = {
+	name="Умма"	# not a lord
+	female=yes
+	dynasty=700011
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=105700011
+
+	8140.1.1 = {birth="8140.1.1"}
+	8156.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_wild_flower
+	}
+	8183.1.1 = {effect = { remove_nickname = yes }}
+	8202.1.1 = {death="8202.1.1"}
+}
+107700011 = {
+	name="Кваррия"	# not a lord
+	female=yes
+	dynasty=700011
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=106700011
+
+	8167.1.1 = {birth="8167.1.1"}
+	8183.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_wild_flower
+	}
+	8220.1.1 = {death="8220.1.1"}
+}
+108700011 = {
+	name="Беллонара"	# not a lord
+	female=yes
+	dynasty=700011
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=107700011
+
+	8194.1.1 = {birth="8194.1.1"}
+	8210.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_wild_flower
+	}
+	8237.1.1 = {effect = { remove_nickname = yes }}
+	8245.1.1 = {death="8245.1.1"}
+}
+109700011 = {
+	name="Тейна"	# not a lord
+	female=yes
+	dynasty=700011
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=108700011
+
+	8221.1.1 = {birth="8221.1.1"}
+	8237.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_wild_flower
+	}
+	8264.1.1 = {effect = { remove_nickname = yes }}
+	8270.1.1 = {death="8270.1.1"}
+}
+110700011 = {
+	name="Гилениос"	# not a lord
+	female=yes
+	dynasty=700011
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=109700011
+
+	8248.1.1 = {birth="8248.1.1"}
+	8264.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_wild_flower
+	}
+	8291.1.1 = {effect = { remove_nickname = yes }}
+	8292.1.1 = {death="8292.1.1"}
+}
+111700011 = {
+	name="Дения"	# not a lord
+	female=yes
+	dynasty=700011
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=110700011
+
+	8275.1.1 = {birth="8275.1.1"}
+	8291.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_wild_flower
+	}
+}
+
+
+###  Vieled Lady
+100700012 = {
+	name="Мера"	# not a lord
+	female=yes
+	dynasty=700012
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	7968.1.1 = {birth="7968.1.1"}
+	7984.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_vieled_lady
+	}
+	8017.1.1 = {death="8017.1.1"}
+}
+101700012 = {
+	name="Алия"	# not a lord
+	female=yes
+	dynasty=700012
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=100700012
+
+	8005.1.1 = {birth="8005.1.1"}
+	8021.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_vieled_lady
+	}
+	8046.1.1 = {death="8046.1.1"}
+}
+102700012 = {
+	name="Тагганария"	# not a lord
+	female=yes
+	dynasty=700012
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=101700012
+
+	8032.1.1 = {birth="8032.1.1"}
+	8048.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_vieled_lady
+	}
+	8064.1.1 = {death = {death_reason = death_accident}}
+}
+103700012 = {
+	name="Талея"	# not a lord
+	female=yes
+	dynasty=700012
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=102700012
+
+	8059.1.1 = {birth="8059.1.1"}
+	8075.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_vieled_lady
+	}
+	8130.1.1 = {death="8130.1.1"}
+}
+104700012 = {
+	name="Эззера"	# not a lord
+	female=yes
+	dynasty=700012
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=103700012
+
+	8086.1.1 = {birth="8086.1.1"}
+	8102.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_vieled_lady
+	}
+	8129.1.1 = {effect = { remove_nickname = yes }}
+	8155.1.1 = {death="8155.1.1"}
+}
+105700012 = {
+	name="Умма"	# not a lord
+	female=yes
+	dynasty=700012
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=104700012
+
+	8113.1.1 = {birth="8113.1.1"}
+	8129.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_vieled_lady
+	}
+	8156.1.1 = {effect = { remove_nickname = yes }}
+	8193.1.1 = {death="8193.1.1"}
+}
+106700012 = {
+	name="Брея"	# not a lord
+	female=yes
+	dynasty=700012
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=105700012
+
+	8140.1.1 = {birth="8140.1.1"}
+	8156.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_vieled_lady
+	}
+	8183.1.1 = {effect = { remove_nickname = yes }}
+	8202.1.1 = {death="8202.1.1"}
+}
+107700012 = {
+	name="Серала"	# not a lord
+	female=yes
+	dynasty=700012
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=106700012
+
+	8167.1.1 = {birth="8167.1.1"}
+	8183.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_vieled_lady
+	}
+	8220.1.1 = {death="8220.1.1"}
+}
+108700012 = {
+	name="Рогга"	# not a lord
+	female=yes
+	dynasty=700012
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=107700012
+
+	8194.1.1 = {birth="8194.1.1"}
+	8210.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_vieled_lady
+	}
+	8237.1.1 = {effect = { remove_nickname = yes }}
+	8245.1.1 = {death="8245.1.1"}
+}
+109700012 = {
+	name="Терриос"	# not a lord
+	female=yes
+	dynasty=700012
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=108700012
+
+	8221.1.1 = {birth="8221.1.1"}
+	8237.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_vieled_lady
+	}
+	8264.1.1 = {effect = { remove_nickname = yes }}
+	8270.1.1 = {death="8270.1.1"}
+}
+110700012 = {
+	name="Изембара"	# not a lord
+	female=yes
+	dynasty=700012
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=109700012
+
+	8248.1.1 = {birth="8248.1.1"}
+	8264.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_vieled_lady
+	}
+	8291.1.1 = {effect = { remove_nickname = yes }}
+	8292.1.1 = {death="8292.1.1"}
+}
+111700012 = {
+	name="Брея"	# not a lord
+	female=yes
+	dynasty=700012
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=110700012
+
+	8275.1.1 = {birth="8275.1.1"}
+	8291.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_vieled_lady
+	}
+}
+
+
+###  Merling Queen
+100700013 = {
+	name="Лотея"	# not a lord
+	female=yes
+	dynasty=700013
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	7968.1.1 = {birth="7968.1.1"}
+	7984.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_merling_queen
+	}
+	8017.1.1 = {death="8017.1.1"}
+}
+101700013 = {
+	name="Люсерра"	# not a lord
+	female=yes
+	dynasty=700013
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=100700013
+
+	8005.1.1 = {birth="8005.1.1"}
+	8021.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_merling_queen
+	}
+	8046.1.1 = {death="8046.1.1"}
+}
+102700013 = {
+	name="Сирея"	# not a lord
+	female=yes
+	dynasty=700013
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=101700013
+
+	8032.1.1 = {birth="8032.1.1"}
+	8048.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_merling_queen
+	}
+	8064.1.1 = {death = {death_reason = death_accident}}
+}
+103700013 = {
+	name="Талея"	# not a lord
+	female=yes
+	dynasty=700013
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=102700013
+
+	8059.1.1 = {birth="8059.1.1"}
+	8075.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_merling_queen
+	}
+	8130.1.1 = {death="8130.1.1"}
+}
+104700013 = {
+	name="Терриос"	# not a lord
+	female=yes
+	dynasty=700013
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=103700013
+
+	8086.1.1 = {birth="8086.1.1"}
+	8102.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_merling_queen
+	}
+	8129.1.1 = {effect = { remove_nickname = yes }}
+	8155.1.1 = {death="8155.1.1"}
+}
+105700013 = {
+	name="Брея"	# not a lord
+	female=yes
+	dynasty=700013
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=104700013
+
+	8113.1.1 = {birth="8113.1.1"}
+	8129.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_merling_queen
+	}
+	8156.1.1 = {effect = { remove_nickname = yes }}
+	8193.1.1 = {death="8193.1.1"}
+}
+106700013 = {
+	name="Орбела"	# not a lord
+	female=yes
+	dynasty=700013
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=105700013
+
+	8140.1.1 = {birth="8140.1.1"}
+	8156.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_merling_queen
+	}
+	8183.1.1 = {effect = { remove_nickname = yes }}
+	8202.1.1 = {death="8202.1.1"}
+}
+107700013 = {
+	name="Люсерра"	# not a lord
+	female=yes
+	dynasty=700013
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=106700013
+
+	8167.1.1 = {birth="8167.1.1"}
+	8183.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_merling_queen
+	}
+	8220.1.1 = {death="8220.1.1"}
+}
+108700013 = {
+	name="Ланна"	# not a lord
+	female=yes
+	dynasty=700013
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=107700013
+
+	8194.1.1 = {birth="8194.1.1"}
+	8210.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_merling_queen
+	}
+	8237.1.1 = {effect = { remove_nickname = yes }}
+	8245.1.1 = {death="8245.1.1"}
+}
+109700013 = {
+	name="Ланна"	# not a lord
+	female=yes
+	dynasty=700013
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=108700013
+
+	8221.1.1 = {birth="8221.1.1"}
+	8237.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_merling_queen
+	}
+	8264.1.1 = {effect = { remove_nickname = yes }}
+	8270.1.1 = {death="8270.1.1"}
+}
+110700013 = {
+	name="Беллонара"	# not a lord
+	female=yes
+	dynasty=700013
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=109700013
+
+	8248.1.1 = {birth="8248.1.1"}
+	8264.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_merling_queen
+	}
+	8291.1.1 = {effect = { remove_nickname = yes }}
+	8292.1.1 = {death="8292.1.1"}
+}
+111700013 = {
+	name="Умма"	# not a lord
+	female=yes
+	dynasty=700013
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=110700013
+
+	8275.1.1 = {birth="8275.1.1"}
+	8291.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_merling_queen
+	}
+}
+
+
+###  Moonshadow
+100700014 = {
+	name="Коссома"	# not a lord
+	female=yes
+	dynasty=700014
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+	
+	add_trait = kind
+
+	7968.1.1 = {birth="7968.1.1"}
+	7984.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_moonshadow
+	}
+	8017.1.1 = {death="8017.1.1"}
+}
+101700014 = {
+	name="Умма"	# not a lord
+	female=yes
+	dynasty=700014
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=100700014
+
+	8005.1.1 = {birth="8005.1.1"}
+	8021.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_moonshadow
+	}
+	8046.1.1 = {death="8046.1.1"}
+}
+102700014 = {
+	name="Лотея"	# not a lord
+	female=yes
+	dynasty=700014
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=101700014
+
+	8032.1.1 = {birth="8032.1.1"}
+	8048.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_moonshadow
+	}
+	8064.1.1 = {death = {death_reason = death_accident}}
+}
+103700014 = {
+	name="Алия"	# not a lord
+	female=yes
+	dynasty=700014
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=102700014
+
+	8059.1.1 = {birth="8059.1.1"}
+	8075.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_moonshadow
+	}
+	8130.1.1 = {death="8130.1.1"}
+}
+104700014 = {
+	name="Нохия"	# not a lord
+	female=yes
+	dynasty=700014
+	
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=103700014
+
+	add_trait="fair"
+
+	8086.1.1 = {birth="8086.1.1"}
+	8102.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_moonshadow
+	}
+	8129.1.1 = {effect = { remove_nickname = yes }}
+	8155.1.1 = {death="8155.1.1"}
+}
+105700014 = {
+	name="Торма"	# not a lord
+	female=yes
+	dynasty=700014
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=104700014
+
+	8113.1.1 = {birth="8113.1.1"}
+	8129.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_moonshadow
+	}
+	8156.1.1 = {effect = { remove_nickname = yes }}
+	8193.1.1 = {death="8193.1.1"}
+}
+106700014 = {
+	name="Коссома"	# not a lord
+	female=yes
+	dynasty=700014
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=105700014
+
+	8140.1.1 = {birth="8140.1.1"}
+	8156.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_moonshadow
+	}
+	8183.1.1 = {effect = { remove_nickname = yes }}
+	8202.1.1 = {death="8202.1.1"}
+}
+107700014 = {
+	name="Изембара"	# not a lord
+	female=yes
+	dynasty=700014
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=106700014
+
+	8167.1.1 = {birth="8167.1.1"}
+	8183.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_moonshadow
+	}
+	8220.1.1 = {death="8220.1.1"}
+}
+108700014 = {
+	name="Эззера"	# not a lord
+	female=yes
+	dynasty=700014
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=107700014
+
+	8194.1.1 = {birth="8194.1.1"}
+	8210.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_moonshadow
+	}
+	8237.1.1 = {effect = { remove_nickname = yes }}
+	8245.1.1 = {death="8245.1.1"}
+}
+109700014 = {
+	name="Беллегера"	# not a lord
+	female=yes
+	dynasty=700014
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=108700014
+
+	8221.1.1 = {birth="8221.1.1"}
+	8237.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_moonshadow
+	}
+	8264.1.1 = {effect = { remove_nickname = yes }}
+	8270.1.1 = {death="8270.1.1"}
+}
+110700014 = {
+	name="Ориос"	# not a lord
+	female=yes
+	dynasty=700014
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=109700014
+
+	8248.1.1 = {birth="8248.1.1"}
+	8264.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_moonshadow
+	}
+	8291.1.1 = {effect = { remove_nickname = yes }}
+	8292.1.1 = {death="8292.1.1"}
+}
+111700014 = {
+	name="Феррега"	# not a lord
+	female=yes
+	dynasty=700014
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=110700014
+
+	8275.1.1 = {birth="8275.1.1"}
+	8291.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_moonshadow
+	}
+}
+
+
+
+###  Daughter of the Dusk
+100700015 = {
+	name="Торма"	# not a lord
+	female=yes
+	dynasty=700015
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	7968.1.1 = {birth="7968.1.1"}
+	7984.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_daughter_dusk
+	}
+	8017.1.1 = {death="8017.1.1"}
+}
+101700015 = {
+	name="Йорка"	# not a lord
+	female=yes
+	dynasty=700015
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=100700015
+
+	8005.1.1 = {birth="8005.1.1"}
+	8021.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_daughter_dusk
+	}
+	8046.1.1 = {death="8046.1.1"}
+}
+102700015 = {
+	name="Дения"	# not a lord
+	female=yes
+	dynasty=700015
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=101700015
+
+	8032.1.1 = {birth="8032.1.1"}
+	8048.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_daughter_dusk
+	}
+	8064.1.1 = {death = {death_reason = death_accident}}
+}
+103700015 = {
+	name="Мера"	# not a lord
+	female=yes
+	dynasty=700015
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=102700015
+
+	8059.1.1 = {birth="8059.1.1"}
+	8075.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_daughter_dusk
+	}
+	8130.1.1 = {death="8130.1.1"}
+}
+104700015 = {
+	name="Алия"	# not a lord
+	female=yes
+	dynasty=700015
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=103700015
+
+	8086.1.1 = {birth="8086.1.1"}
+	8102.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_daughter_dusk
+	}
+	8129.1.1 = {effect = { remove_nickname = yes }}
+	8155.1.1 = {death="8155.1.1"}
+}
+105700015 = {
+	name="Тиха"	# not a lord
+	female=yes
+	dynasty=700015
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=104700015
+
+	8113.1.1 = {birth="8113.1.1"}
+	8129.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_daughter_dusk
+	}
+	8156.1.1 = {effect = { remove_nickname = yes }}
+	8193.1.1 = {death="8193.1.1"}
+}
+106700015 = {
+	name="Тернесия"	# not a lord
+	female=yes
+	dynasty=700015
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=105700015
+
+	8140.1.1 = {birth="8140.1.1"}
+	8156.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_daughter_dusk
+	}
+	8183.1.1 = {effect = { remove_nickname = yes }}
+	8202.1.1 = {death="8202.1.1"}
+}
+107700015 = {
+	name="Ланна"	# not a lord
+	female=yes
+	dynasty=700015
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=106700015
+
+	8167.1.1 = {birth="8167.1.1"}
+	8183.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_daughter_dusk
+	}
+	8220.1.1 = {death="8220.1.1"}
+}
+108700015 = {
+	name="Сфрона"	# not a lord
+	female=yes
+	dynasty=700015
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=107700015
+
+	8194.1.1 = {birth="8194.1.1"}
+	8210.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_daughter_dusk
+	}
+	8237.1.1 = {effect = { remove_nickname = yes }}
+	8245.1.1 = {death="8245.1.1"}
+}
+109700015 = {
+	name="Бетариос"	# not a lord
+	female=yes
+	dynasty=700015
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=108700015
+
+	8221.1.1 = {birth="8221.1.1"}
+	8237.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_daughter_dusk
+	}
+	8264.1.1 = {effect = { remove_nickname = yes }}
+	8270.1.1 = {death="8270.1.1"}
+}
+110700015 = {
+	name="Алия"	# not a lord
+	female=yes
+	dynasty=700015
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=109700015
+
+	8248.1.1 = {birth="8248.1.1"}
+	8264.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_daughter_dusk
+	}
+	8291.1.1 = {effect = { remove_nickname = yes }}
+	8292.1.1 = {death="8292.1.1"}
+}
+111700015 = {
+	name="Гилора"	# not a lord
+	female=yes
+	dynasty=700015
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=110700015
+
+	8275.1.1 = {birth="8275.1.1"}
+	8291.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_daughter_dusk
+	}
+}
+
+
+###  Nightingale
+100700016 = {
+	name="Мера"	# not a lord
+	female=yes
+	dynasty=700016
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	7968.1.1 = {birth="7968.1.1"}
+	7984.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_nightingale
+	}
+	8017.1.1 = {death="8017.1.1"}
+}
+101700016 = {
+	name="Ланна"	# not a lord
+	female=yes
+	dynasty=700016
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=100700016
+
+	8005.1.1 = {birth="8005.1.1"}
+	8021.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_nightingale
+	}
+	8046.1.1 = {death="8046.1.1"}
+}
+102700016 = {
+	name="Якея"	# not a lord
+	female=yes
+	dynasty=700016
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=101700016
+
+	8032.1.1 = {birth="8032.1.1"}
+	8048.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_nightingale
+	}
+	8064.1.1 = {death = {death_reason = death_accident}}
+}
+103700016 = {
+	name="Беллегера"	# not a lord
+	female=yes
+	dynasty=700016
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=102700016
+
+	8059.1.1 = {birth="8059.1.1"}
+	8075.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_nightingale
+	}
+	8130.1.1 = {death="8130.1.1"}
+}
+104700016 = {
+	name="Серала"	# not a lord
+	female=yes
+	dynasty=700016
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=103700016
+
+	8086.1.1 = {birth="8086.1.1"}
+	8102.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_nightingale
+	}
+	8129.1.1 = {effect = { remove_nickname = yes }}
+	8155.1.1 = {death="8155.1.1"}
+}
+105700016 = {
+	name="Бетариос"	# not a lord
+	female=yes
+	dynasty=700016
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=104700016
+
+	8113.1.1 = {birth="8113.1.1"}
+	8129.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_nightingale
+	}
+	8156.1.1 = {effect = { remove_nickname = yes }}
+	8193.1.1 = {death="8193.1.1"}
+}
+106700016 = {
+	name="Кваррия"	# not a lord
+	female=yes
+	dynasty=700016
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=105700016
+
+	8140.1.1 = {birth="8140.1.1"}
+	8156.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_nightingale
+	}
+	8183.1.1 = {effect = { remove_nickname = yes }}
+	8202.1.1 = {death="8202.1.1"}
+}
+107700016 = {
+	name="Кваррия"	# not a lord
+	female=yes
+	dynasty=700016
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=106700016
+
+	8167.1.1 = {birth="8167.1.1"}
+	8183.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_nightingale
+	}
+	8220.1.1 = {death="8220.1.1"}
+}
+108700016 = {
+	name="Мералия"	# not a lord
+	female=yes
+	dynasty=700016
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=107700016
+
+	8194.1.1 = {birth="8194.1.1"}
+	8210.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_nightingale
+	}
+	8237.1.1 = {effect = { remove_nickname = yes }}
+	8245.1.1 = {death="8245.1.1"}
+}
+109700016 = {
+	name="Гилора"	# not a lord
+	female=yes
+	dynasty=700016
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=108700016
+
+	8221.1.1 = {birth="8221.1.1"}
+	8237.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_nightingale
+	}
+	8264.1.1 = {effect = { remove_nickname = yes }}
+	8270.1.1 = {death="8270.1.1"}
+}
+110700016 = {
+	name="Торма"	# not a lord
+	female=yes
+	dynasty=700016
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=109700016
+
+	8248.1.1 = {birth="8248.1.1"}
+	8264.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_nightingale
+	}
+	8291.1.1 = {effect = { remove_nickname = yes }}
+	8292.1.1 = {death="8292.1.1"}
+}
+111700016 = {
+	name="Тейна"	# not a lord
+	female=yes
+	dynasty=700016
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=110700016
+
+	8275.1.1 = {birth="8275.1.1"}
+	8291.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_nightingale
+	}
+}
+
+
+###  Poetess
+100700017 = {
+	name="Ланна"	# not a lord
+	female=yes
+	dynasty=700017
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	7968.1.1 = {birth="7968.1.1"}
+	7984.1.1 = {
+		add_trait="courtesan"
+		add_trait="poet"
+		add_trait="scholar"
+		give_nickname = nick_poetess
+	}
+	8017.1.1 = {death="8017.1.1"}
+}
+101700017 = {
+	name="Ориос"	# not a lord
+	female=yes
+	dynasty=700017
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=100700017
+
+	8005.1.1 = {birth="8005.1.1"}
+	8021.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_poetess
+	}
+	8046.1.1 = {death="8046.1.1"}
+}
+102700017 = {
+	name="Терриос"	# not a lord
+	female=yes
+	dynasty=700017
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=101700017
+
+	8032.1.1 = {birth="8032.1.1"}
+	8048.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_poetess
+	}
+	8064.1.1 = {death = {death_reason = death_accident}}
+}
+103700017 = {
+	name="Лотея"	# not a lord
+	female=yes
+	dynasty=700017
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=102700017
+
+	8059.1.1 = {birth="8059.1.1"}
+	8075.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_poetess
+	}
+	8130.1.1 = {death="8130.1.1"}
+}
+104700017 = {
+	name="Бетариос"	# not a lord
+	female=yes
+	dynasty=700017
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=103700017
+
+	8086.1.1 = {birth="8086.1.1"}
+	8102.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_poetess
+	}
+	8129.1.1 = {effect = { remove_nickname = yes }}
+	8155.1.1 = {death="8155.1.1"}
+}
+105700017 = {
+	name="Рогга"	# not a lord
+	female=yes
+	dynasty=700017
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=104700017
+
+	8113.1.1 = {birth="8113.1.1"}
+	8129.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_poetess
+	}
+	8156.1.1 = {effect = { remove_nickname = yes }}
+	8193.1.1 = {death="8193.1.1"}
+}
+106700017 = {
+	name="Гилора"	# not a lord
+	female=yes
+	dynasty=700017
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=105700017
+
+	8140.1.1 = {birth="8140.1.1"}
+	8156.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_poetess
+	}
+	8183.1.1 = {effect = { remove_nickname = yes }}
+	8202.1.1 = {death="8202.1.1"}
+}
+107700017 = {
+	name="Терриос"	# not a lord
+	female=yes
+	dynasty=700017
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=106700017
+
+	8167.1.1 = {birth="8167.1.1"}
+	8183.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_poetess
+	}
+	8220.1.1 = {death="8220.1.1"}
+}
+108700017 = {
+	name="Сфрона"	# not a lord
+	female=yes
+	dynasty=700017
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=107700017
+
+	8194.1.1 = {birth="8194.1.1"}
+	8210.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_poetess
+	}
+	8237.1.1 = {effect = { remove_nickname = yes }}
+	8245.1.1 = {death="8245.1.1"}
+}
+109700017 = {
+	name="Беллонара"	# not a lord
+	female=yes
+	dynasty=700017
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=108700017
+
+	8221.1.1 = {birth="8221.1.1"}
+	8237.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_poetess
+	}
+	8264.1.1 = {effect = { remove_nickname = yes }}
+	8270.1.1 = {death="8270.1.1"}
+}
+110700017 = {
+	name="Беллегера"	# not a lord
+	female=yes
+	dynasty=700017
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=109700017
+
+	8248.1.1 = {birth="8248.1.1"}
+	8264.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_poetess
+	}
+	8291.1.1 = {effect = { remove_nickname = yes }}
+	8292.1.1 = {death="8292.1.1"}
+}
+111700017 = {
+	name="Тагганария"	# not a lord
+	female=yes
+	dynasty=700017
+
+	add_trait="fair"
+
+	religion="moonsingers"
+	culture="braavosi"
+
+	mother=110700017
+
+	8275.1.1 = {birth="8275.1.1"}
+	8291.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_poetess
+	}
+}
+#Random courtiers 
+8760001 = {
+	name="Терро"	# A bravo
+	
+	religion="moonsingers"
+	culture="braavosi"
+
+	add_trait = wroth
+	add_trait = proud
+	
+	8275.1.1 = {
+		birth="8275.1.1"
+	}
+	8291.1.1 = {
+		add_trait = trained_warrior
+		add_trait = duelist
+	}
+}
+8760002 = {
+	name="Орбело"	# A bravo
+	
+	religion="moonsingers"
+	culture="braavosi"
+
+	add_trait = wroth
+	add_trait = proud
+	
+	8274.1.1 = {
+		birth="8274.1.1"
+	}
+	8292.1.1 = {
+		add_trait = trained_warrior
+		add_trait = duelist
+	}
+}
+8760003 = {
+	name="Мералин"	# Brothel owner
+	female = yes
+	
+	martial = 1
+	stewardship = 5
+	diplomacy = 3
+	intrigue = 5
+	learning = 2
+	
+	religion="moonsingers"
+	culture="braavosi"
+
+	add_trait = charitable
+	add_trait = thrifty_clerk
+	
+	8263.1.1 = {
+		birth="8263.1.1"
+		effect = { b_ragmansharbor = { holder_scope = { ROOT = { move_character = PREV } } } }
+	}
+}
+8760004 = {
+	name="Гилениос"
+	dynasty = 700026 #Dothare
+	
+	religion="moonsingers"
+	culture="braavosi"
+
+	8250.1.1 = {
+		birth="8250.1.1"
+	}
+	8271.1.1 = {
+		add_spouse = 8760005
+	}
+}
+8760005 = {
+	name="Серала"
+	female = yes
+	
+	religion="moonsingers"
+	culture="braavosi"
+
+	8255.1.1 = {
+		birth="8255.1.1"
+	}
+}
+8760006 = {
+	name="Гилено"
+	dynasty = 700026 #Dothare
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father = 8760004
+	mother = 8760005
+	
+	add_trait = gregarious
+	add_trait = lustful
+
+	8271.1.1 = {
+		birth="8271.1.1"
+	}
+	8287.1.1 = {
+		add_trait = poor_warrior
+	}
+}
+8760007 = {
+	name="Гилоро"
+	dynasty = 700026 #Dothare
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	father = 8760004
+	mother = 8760005
+	
+	add_trait = gregarious
+	add_trait = lustful
+
+	8273.1.1 = {
+		birth="8273.1.1"
+	}
+	8289.1.1 = {
+		add_trait = poor_warrior
+	}
+}
+8760008 = {
+	name="Изембаро"	# Mummer
+
+	martial = 1
+	stewardship = 4
+	diplomacy = 4
+	intrigue = 6
+	learning = 3
+	
+	religion="moonsingers"
+	culture="braavosi"
+
+	add_trait = intricate_webweaver
+	add_trait = proud
+	add_trait = gregarious
+	add_trait = gluttonous
+	add_trait = deceitful
+	
+	8261.1.1 = {
+		birth="8261.1.1"
+		effect = { b_ragmansharbor = { holder_scope = { ROOT = { move_character = PREV } } } }
+	}
+	8295.1.1 = {
+		give_nickname = nick_the_great
+		add_trait = is_fat
+		effect = {
+			set_variable = { which = physique_variable value = 15 }		
+		}
+	}
+}
+
+##################
+### Courtesans ###
+##################
+### House Otherys
+100513 = {
+	name="Беллегера" #mistress of Aegon IV
+	dynasty=300513
+	female=yes
+	
+	martial=6
+	stewardship=5
+	intrigue=8
+	learning=3
+	diplomacy=6
+
+	add_trait="fair"
+	add_trait="tough_soldier"
+	add_trait="ambitious"
+	add_trait="lustful"
+	add_trait="authoritative"
+	add_trait="bastard"
+	
+	religion="moonsingers"
+	culture="summer_islander"
+	
+	father=15030511 #Sealord of Braavos
+	mother=116304034 #Summer Isle Princess
+	
+	8131.1.1={
+		birth="8131.1.1"
+		effect = {
+			culture=braavosi
+		}
+	}
+	8147.1.1={
+		add_trait=trained_warrior
+		give_nickname = nick_black_pearl
+	}
+	8155.1.1 = { 
+		religion = pirate
+		add_trait = pirate
+	}
+	8163.1.1 = { 
+		religion = moonsingers
+		remove_trait = pirate
+	}
+	8185.1.1 = {effect = { remove_nickname = yes }}
+	8187.1.1={ death="8187.1.1" culture=braavosi }
+}
+#daughter move to crownlander_ancestors
+300513 = {
+	name="Беллонара"
+	dynasty=300513
+	female=yes
+
+	add_trait="fair"
+	
+	religion="moonsingers"
+	culture="summer_islander"
+
+	mother=10577020
+	
+	8203.1.1={birth="8203.1.1"  effect = { culture=braavosi }} 
+	8219.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_black_pearl
+	}
+	8254.1.1={death="8254.1.1" culture=braavosi}
+}
+400513 = {
+	name="Беллонара"
+	dynasty=300513
+	female=yes
+
+	add_trait="fair"
+	
+	religion="moonsingers"
+	culture="summer_islander"
+
+	mother=300513
+	
+	8245.1.1={birth="8245.1.1"  effect = { culture=braavosi }} 
+	8261.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_black_pearl
+	}
+	8288.1.1={death="8288.1.1" culture=braavosi}
+}
+500513 = {
+	name="Беллегера"
+	dynasty=300513
+	female=yes
+
+	add_trait="fair"
+	add_trait="charitable"
+	
+	religion="moonsingers"
+	culture="summer_islander"
+
+	mother=400513
+	
+	8272.1.1={birth="8272.1.1"  effect = { culture=braavosi }} 
+	8288.1.1 = {
+		add_trait="courtesan"
+		give_nickname = nick_black_pearl
+	}
+}

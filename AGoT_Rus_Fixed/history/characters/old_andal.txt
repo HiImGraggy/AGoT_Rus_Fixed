@@ -1,0 +1,59 @@
+#First King of the Andals
+900174999 = {
+	name="Хугор"
+	dynasty = 174999 #of the Hill
+	
+	religion="the_seven"
+	culture="old_andal"
+	
+	martial=10
+	diplomacy=7
+	intrigue=5
+	stewardship=10
+	
+	add_trait="knight"
+	add_trait="quick"
+	add_trait="master_warrior"
+	add_trait="diligent"
+	add_trait="zealous"
+	add_trait="brave"
+	add_trait="authoritative"
+
+	10.1.1={birth="10.1.1"}
+	88.1.1={death="88.1.1"}
+}
+#King of Lorath
+901174999 = {
+	name="Кварлон"
+	dynasty = 174917
+	
+	religion="the_seven"
+	culture="old_andal"
+	
+	martial=7
+	diplomacy=6
+	intrigue=5
+	stewardship=5
+	
+	add_trait="quick"
+	add_trait="ambitious"
+	add_trait="brilliant_strategist"
+	add_trait="ruthless"
+	add_trait="brave"
+	add_trait="wroth"
+	add_trait="zealous"
+	
+	6425.1.1={birth="6425.1.1"}
+	6431.1.1={
+		add_trait="skilled_warrior"
+		add_trait="knight"
+	}
+	6459.1.1={
+		give_nickname=nick_the_great
+	}
+	6479.1.1={
+		death={
+			death_reason=death_battle
+		}
+	}
+}

@@ -1,0 +1,11287 @@
+##Fire and Blood Update and later maintenance by Paxter Redwyne and Alex "Kuczaja" Kwiatek##
+###Ancestral Iron Islanders###
+
+###################
+###House Greyjoy###
+###We do not Sow###
+###################
+750069 = {
+	name="Хросгар с Пайка"
+	dynasty = 1836582
+
+	add_trait=brilliant_strategist
+	add_trait=master_warrior
+	add_trait=ambitious
+	add_trait=viking
+	add_trait=brave
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=750066
+
+	87.1.1 = {birth="87.1.1"}
+	137.1.1 = {death="137.1.1"}
+}
+751069 = {
+	name="Потомки Хросгара с Пайка"
+	dynasty = 1836582
+	
+	religion="drowned_god"
+	culture="ironborn"
+	
+	occluded = yes
+	
+	father = 750069
+
+	137.1.1 = {birth="137.1.1"}
+	3543.1.1 = {death="3543.1.1"}
+}
+500107 = {
+	name = Лорон #King Лорон 
+	dynasty = 107 #Greyjoy
+	
+	martial=12
+	diplomacy=10
+	intrigue=10
+	stewardship=8
+	learning=6
+
+	religion=drowned_god
+	culture=ironborn
+
+	father=751069
+
+	add_trait=brilliant_strategist
+	add_trait=ambitious
+
+	3543.1.1 = {
+		birth=3543.1.1
+	}
+	3559.1.1 = {
+		add_trait=trained_warrior		
+	}
+	3608.1.1 = {
+		give_nickname=nick_the_old_kraken
+	}
+	3632.1.1 = {
+		death=3632.1.1
+	}
+}
+501107 = {
+	name = Теон #King Теон II (Non-canon)
+	dynasty = 107 #Greyjoy
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 500107
+
+	3577.1.1 = {
+		birth=3577.1.1
+	}
+	3593.1.1 = {
+		add_trait=trained_warrior
+	}
+	3638.1.1 = {
+		death=3638.1.1
+	}
+}
+502107 = {
+	name = Бейлон #King Бейлон II (Non-canon)
+	dynasty = 107 #Greyjoy
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 501107
+
+	3611.1.1 = {
+		birth=3611.1.1
+	}
+	3627.1.1 = {
+		add_trait=trained_warrior
+	}
+	3670.1.1 = {
+		death=3670.1.1
+	}
+}
+520107 = {
+	name = "Потомки Бейлона"
+	dynasty = 107 #Greyjoy
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 502107
+	occluded=yes
+
+	3670.1.1 = {
+		birth=yes
+	}
+	4206.1.1 = {
+		death=yes
+	}
+}
+503107 = {
+	name = Теон #King Теон III
+	dynasty = 107 #Greyjoy
+	
+	martial=3
+	diplomacy=1
+	intrigue=2
+	stewardship=2
+	learning=2
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 520107
+	
+	add_trait=tough_soldier
+	add_trait=slothful
+	add_trait=proud
+	add_trait=wroth
+
+	4206.1.1 = {
+		birth=4206.1.1
+	}
+	4222.1.1 = {
+		add_trait=trained_warrior
+	}
+	4238.1.1 = {
+		death={
+			death_reason=death_duel
+			#killer= Lymond Hightower
+		}
+	}
+}
+521107 = {
+	name = "Потомки Теона"
+	dynasty = 107 #Greyjoy
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 503107
+	occluded=yes
+
+	4238.1.1 = {
+		birth=yes
+	}
+	4259.1.1 = {
+		death=yes
+	}
+}
+504107 = {
+	name = Бейлон #King Бейлон IV (Non-canon)
+	dynasty = 107 #Greyjoy
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 521107
+
+	4259.1.1 = {
+		birth=4259.1.1
+	}
+	4275.1.1 = {
+		add_trait=trained_warrior
+	}
+	4303.1.1 = {
+		death=4303.1.1
+	}
+}
+505107 = {
+	name = Бейлон #King Бейлон V
+	dynasty = 107 #Greyjoy
+	
+	martial=8
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 504107
+	
+	add_trait=skilled_tactician
+	add_trait=diligent
+	add_trait=authoritative
+
+	4278.1.1 = {
+		birth=4278.1.1
+	}
+	4294.1.1 = {
+		add_trait=master_warrior
+		give_nickname=nick_coldwind
+	}
+	4337.1.1 = {
+		death=4337.1.1
+	}
+}
+522107 = {
+	name = "Потомки Бейлона"
+	dynasty = 107 #Greyjoy
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 505107
+	occluded=yes
+
+	4337.1.1 = {
+		birth=yes
+	}
+	4952.1.1 = {
+		death=yes
+	}
+}
+506107 = {
+	name = Бейлон #King Бейлон VI (Non-canon)
+	dynasty = 107 #Greyjoy
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 522107
+
+	4952.1.1 = {
+		birth=4952.1.1
+	}
+	4968.1.1 = {
+		add_trait=trained_warrior
+	}
+	5014.1.1 = {
+		death=5014.1.1
+	}
+}
+523107 = {
+	name = "Потомки Бейлона"
+	dynasty = 107 #Greyjoy
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 506107
+	occluded=yes
+
+	5014.1.1 = {
+		birth=yes
+	}
+	7822.1.1 = {
+		death=yes
+	}
+}
+###Ancestors of Викон### So the "Потомки Бейлон" character doesn't start a name chain.
+343107 = {
+	name="Квеллон" 	# a lord 
+	dynasty=107 #Greyjoy
+	
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=523107
+	
+	7822.1.1 = {birth="7822.1.1"}
+	7838.1.1 = {add_trait=trained_warrior}
+	7875.1.1 = {death="7875.1.1"}
+}
+342107 = {
+	name="Куоред" 	# a lord 
+	dynasty=107 #Greyjoy
+	
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=343107
+	
+	7851.1.1 = {birth="7851.1.1"}
+	7867.1.1 = {add_trait=trained_warrior}
+	7914.1.1 = {death="7914.1.1"}
+}
+341107 = {
+	name="Робин" 	# a lord 
+	dynasty=107 #Greyjoy
+	
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=342107
+	
+	7874.1.1 = {birth="7874.1.1"}
+	7890.1.1 = {add_trait=trained_warrior}
+	7932.1.1 = {death="7932.1.1"}
+}
+340107 = {
+	name="Родрик" 	# a lord 
+	dynasty=107 #Greyjoy
+	
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=341107
+	
+	7899.1.1 = {birth="7899.1.1"}
+	7915.1.1 = {add_trait=trained_warrior}
+	7944.1.1 = {death="7944.1.1"}
+}
+66000107 = {
+	name="Донел" 	# a lord 
+	dynasty=107 #Greyjoy
+	
+	martial=12
+	diplomacy=10
+	intrigue=10
+
+	father=340107
+	
+	religion="drowned_god"
+	culture="ironborn"
+	
+	7930.1.1 = {birth="7930.1.1"}
+	7946.1.1 = {add_trait=master_warrior}
+	7988.9.1 = {death= {death_reason =death_battle}}
+}
+66100107 = {
+	name="Марон" 	# a lord
+	dynasty=107 #Greyjoy
+	
+	martial=12
+	diplomacy=10
+	intrigue=10
+
+	father=66000107
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	
+	7947.1.1 = {birth="7947.1.1"}
+	7963.1.1 = {add_trait=skilled_warrior}
+	7993.9.1 = {death= {death_reason =death_battle}}
+}
+41566 = {
+	name="Гвинесса"
+	female=yes
+	dynasty=107 #Greyjoy
+
+	father=66000107
+
+	religion="drowned_god"
+	culture="ironborn"
+	7950.1.1 = {birth="7950.1.1"}
+	7998.2.1 = {
+		death = {
+			death_reason = death_battle_dragon_fire
+			killer=77000 #roasted by Aegon
+		}
+	}
+}
+26107 = {
+	name="Викон"	# Made Lord of the Iron Isles after the War of Conquest.
+	dynasty=107
+	
+	martial = 6
+	diplomacy = 9
+	intrigue = 6
+	stewardship = 6	
+	learning = 4
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=66100107
+	
+	add_trait="brave"
+	add_trait="proud"
+	add_trait="cruel"
+	add_trait="quick"
+	add_trait="patient"
+	add_trait="grey_eminence"
+
+	7967.1.1 = {birth="7967.1.1"  }
+	7983.1.1 = {add_trait=skilled_warrior}
+	7985.1.1 = {add_spouse=46107}
+	8033.1.1 = {death="8033.1.1"}
+}
+46107 = {
+	name="Винафрид"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7967.1.1 = {birth="7967.1.1"}
+	8024.1.1 = {death="8024.1.1"}
+}
+25107 = {
+	name="Горен"	# Son of Викон.
+	dynasty=107
+	
+	martial = 4
+	diplomacy = 6
+	intrigue = 4
+	stewardship = 5	
+	learning = 2
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=26107
+	mother=46107
+	
+	add_trait="content"
+	add_trait="proud"
+	add_trait="ruthless"
+	add_trait="quick"
+	add_trait="patient"
+	add_trait="charismatic_negotiator"
+
+	7995.1.1 = {birth="7995.1.1"  }
+	8011.1.1 = {add_trait=skilled_warrior}
+	8013.1.1 = {add_spouse=45107}
+	8043.1.1 = { #Faith Militant Uprising
+		effect = {
+			if = {
+				limit = { NOT = { start_date = 8043.5.10 } }
+				any_vassal = { 
+					set_character_flag = neutral
+					clr_character_flag = supporting_king
+					clr_character_flag = against_king
+				}
+				set_character_flag = neutral
+				clr_character_flag = supporting_king
+				clr_character_flag = against_king
+			}
+		}
+	}
+	8048.3.1 = { #Rogar Baratheon Rebellion
+		effect = {
+			if = {
+				limit = { NOT = { start_date = 8048.3.7 } }
+				set_defacto_liege = ROOT
+				any_vassal = { 
+					set_character_flag = neutral
+					clr_character_flag = supporting_king
+					clr_character_flag = against_king
+				}
+				set_character_flag = neutral
+				clr_character_flag = supporting_king
+				clr_character_flag = against_king
+			}
+		}
+	}	
+	8052.1.1 = {death="8052.1.1"}
+}
+45107 = {
+	name="Фалиса"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7995.1.1 = {birth="7995.1.1"}
+	8052.1.1 = {death="8052.1.1"}
+}
+24107 = {
+	name="Марон"	# Дагон's great great great grandfather.  Grandson of Викон.
+	dynasty=107
+	
+	add_trait="content"
+	add_trait="honorable"
+	add_trait="patient"
+	add_trait="thrifty_clerk"
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=25107
+	mother=45107
+
+	8017.1.1 = {birth="8017.1.1"  }
+	8033.1.1 = {add_trait=skilled_warrior}
+	8035.1.1 = {add_spouse=44107}
+	8070.1.1 = {death="8070.1.1"}
+}
+44107 = {
+	name="Эсгред"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8017.1.1 = {birth="8017.1.1"}
+	8070.1.1 = {death="8070.1.1"}
+}
+23107 = {
+	name="Бейлон"	# Дагон's great great great grandfather.
+	dynasty=107
+	
+	add_trait="content"
+	add_trait="honorable"
+	add_trait="charismatic_negotiator"
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=24107
+	mother=44107
+
+	8039.1.1 = {birth="8039.1.1"  }
+	8055.1.1 = {add_trait=trained_warrior}
+	8057.1.1 = {add_spouse=43107}
+	8102.1.1 = {death="8102.1.1"}
+}
+43107 = {
+	name="Хелья"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8039.1.1 = {birth="8039.1.1"}
+	8102.1.1 = {death="8102.1.1"}
+}
+22107 = {
+	name="Эйрон" # Дагон's great great grandfather. The Red Kraken's grandfather.
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=23107
+	mother=43107
+	
+	add_trait="proud"
+	add_trait="honorable"
+	add_trait="patient"
+
+	8068.1.1 = {birth="8068.1.1"  }
+	8084.1.1 = {add_trait=trained_warrior}
+	8086.1.1 = {add_spouse=42107}
+	8124.3.7 = {death = {death_reason = death_battle}} 
+}
+42107 = {
+	name="Гвинесса"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8068.1.1 = {birth="8068.1.1"}
+	8130.1.1 = {death="8130.1.1"}
+}
+30107 = {
+	name="Марон"	# not a lord
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=23107
+	mother=43107
+
+	8070.1.1 = {birth="8070.1.1"  }
+	8086.1.1 = {add_trait=trained_warrior add_spouse=31107}
+	8125.1.1 = {death = {death_reason = death_murder}}
+}
+31107 = {
+	name="Яра"	# not a lord
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8065.1.1 = {birth="8065.1.1"}
+	8127.1.1 = {death="8127.1.1"}
+}
+27107 = {
+	name="Горен"	#Дальтон's cousin
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=30107
+	mother=31107
+
+	add_trait=ambitious
+	add_trait=cruel
+
+	8086.1.1 = {birth="8086.1.1"}
+	8102.1.1 = {add_trait=trained_warrior}
+	8134.1.1 = {
+		effect = {
+			d_harlaw = {
+				holder_scope = { ROOT = { move_character = PREV } }
+			}
+		}
+	}
+	8134.5.1 = {
+		death = {
+			death_reason=death_execution
+			killer=23199
+		}
+	}
+}
+28107 = {
+	name="Лорон"	#Дальтон's cousin
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=30107
+	mother=31107
+
+	add_trait=ambitious
+	add_trait=cruel
+
+	8087.1.1 = {birth="8087.1.1"}
+	8103.1.1 = {add_trait=trained_warrior}
+	8134.1.1 = {
+		effect = {
+			d_harlaw = {
+				holder_scope = { ROOT = { move_character = PREV } }
+			}
+		}
+	}
+	8134.5.1 = {
+		death = {
+			death_reason=death_execution
+			killer=23199
+		}
+	}
+}
+29107 = {
+	name="Алтон"	#Дальтон's cousin
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=30107
+	mother=31107
+
+	add_trait=ambitious
+	add_trait=cruel
+
+	8088.1.1 = {birth="8088.1.1"}
+	8104.1.1 = {add_trait=trained_warrior}
+	8134.1.1 = {
+		effect = {
+			d_harlaw = {
+				holder_scope = { ROOT = { move_character = PREV } }
+			}
+		}
+	}
+	8134.5.1 = {
+		death = {
+			death_reason=death_execution
+			killer=23199
+		}
+	}
+}
+57107 = {
+	name="Харлон"	#Дальтон's cousin
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=30107
+	mother=31107
+
+	add_trait=ambitious
+	add_trait=cruel
+
+	8089.1.1 = {birth="8089.1.1"}
+	8105.1.1 = {add_trait=trained_warrior}
+	8134.1.1 = {
+		effect = {
+			d_harlaw = {
+				holder_scope = { ROOT = { move_character = PREV } }
+			}
+		}
+	}
+	8134.5.1 = {
+		death = {
+			death_reason=death_execution
+			killer=23199
+		}
+	}
+}
+34107 = {
+	name="Диса"	# not a lord, married Ewan Prester.
+	female=yes
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=22107
+	mother=42107
+
+	8095.1.1 = {birth="8095.1.1"}
+	8152.1.1 = {death="8152.1.1"}
+}
+21107 = {
+	name="Викон"	# Дагон's great grandfather. Father of the Red Kraken.
+	dynasty=107
+	
+	add_trait="content"
+	add_trait="just"
+	
+	martial = 8
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=22107
+	mother=42107
+	
+	8097.1.1 = {birth="8097.1.1"  }
+	8112.1.1 = {add_spouse=41107}
+	8113.1.1 = {add_trait="trained_warrior" add_trait="proud" add_trait="cruel"}
+	8128.8.2 = {death="8128.8.2"}
+}
+41107 = {
+	name="Джейн"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8097.1.1 = {birth="8097.1.1"}
+	8145.1.1 = {death="8145.1.1"}
+}
+189107 = {
+	name="Эурон"	# Uncle and friend of Дальтон
+	dynasty=107
+	
+	martial = 5
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=22107
+	mother=42107
+	
+	add_trait="proud"
+	add_trait="cruel"
+	add_trait="ambitious"
+	add_trait=brave
+	add_trait=tough_soldier
+	
+	8099.1.1 = {birth="8099.1.1"  }
+	8113.1.1 = {
+		add_trait="trained_warrior" 
+		add_spouse=38107 
+	}
+	8123.1.1 = { add_trait=viking }
+	8128.8.2 = {
+		add_trait=on_reaving
+		death = {
+			death_reason=death_battle_raiding
+		}
+	}
+}
+38107 = {
+	name="Аша"	# not a lord
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8092.1.1 = {birth="8092.1.1"}
+	8151.1.1 = {death = {death_reason = death_murder}}
+}
+39107 = {
+	name="Виктарион"	#Дальтон's cousin
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=189107
+	mother=38107
+
+	add_trait=ambitious
+	add_trait=cruel
+
+	8115.1.1 = {birth="8115.1.1"}
+	8131.1.1 = {add_trait=trained_warrior}
+	8134.1.1 = {
+		effect = {
+			d_harlaw = {
+				holder_scope = { ROOT = { move_character = PREV } }
+			}
+		}
+	}
+	8134.5.1 = {
+		death = {
+			death_reason=death_execution
+			killer=23199
+		}
+	}
+}
+195107 = {
+	name="Квентон"	#Дальтон's cousin
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=189107
+	mother=38107
+
+	add_trait=ambitious
+	add_trait=cruel
+
+	8116.1.1 = {birth="8116.1.1"}
+	8132.1.1 = {add_trait=trained_warrior}
+	8134.1.1 = {
+		effect = {
+			d_harlaw = {
+				holder_scope = { ROOT = { move_character = PREV } }
+			}
+		}
+	}
+	8134.5.1 = {
+		death = {
+			death_reason=death_execution
+			killer=23199
+		}
+	}
+}
+50107 = {
+	name="Квеллон"	#Дальтон's cousin
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=189107
+	mother=38107
+
+	add_trait=ambitious
+	add_trait=cruel
+
+	8117.1.1 = {birth="8117.1.1"}
+	8133.1.1 = {add_trait=trained_warrior}
+	8134.1.1 = {
+		effect = {
+			d_harlaw = {
+				holder_scope = { ROOT = { move_character = PREV } }
+			}
+		}
+	}
+	8134.5.1 = {
+		death = {
+			death_reason=death_execution
+			killer=23199
+		}
+	}
+}
+192107 = {
+	name="Бейлон"	# favorite uncle of Дальтон
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=22107
+	mother=42107
+
+	add_trait="gregarious"
+	add_trait="gluttonous"
+	add_trait=tough_soldier
+	add_trait=drunkard
+
+	8100.1.1 = {birth="8100.1.1"}
+	8116.1.1 = {
+		add_trait="trained_warrior"  
+		add_spouse=52107
+	}
+	8133.1.1 = {
+		death = {
+			death_reason=death_battle
+			killer=23199
+		}
+	}
+}
+52107 = {
+	name="Аланнис"	# not a lord
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8100.1.1 = {birth="8100.1.1"}
+	8155.1.1 = {death = {death_reason = death_accident}}
+}
+51107 = {
+	name="Дагон"	#Дальтон's cousin
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=192107
+	mother=52107
+
+	add_trait=ambitious
+	add_trait=cruel
+
+	8116.1.1 = {birth="8116.1.1"}
+	8132.1.1 = {add_trait=trained_warrior}
+	8134.1.1 = {
+		effect = {
+			d_harlaw = {
+				holder_scope = { ROOT = { move_character = PREV } }
+			}
+		}
+	}
+	8134.5.1 = {
+		death = {
+			death_reason=death_execution
+			killer=23199
+		}
+	}
+}
+32107 = {
+	name="Теон"	#Дальтон's cousin
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=192107
+	mother=52107
+
+	add_trait=ambitious
+	add_trait=cruel
+
+	8117.1.1 = {birth="8117.1.1"}
+	8133.1.1 = {add_trait=trained_warrior}
+	8134.1.1 = {
+		effect = {
+			d_harlaw = {
+				holder_scope = { ROOT = { move_character = PREV } }
+			}
+		}
+	}
+	8134.5.1 = {
+		death = {
+			death_reason=death_execution
+			killer=23199
+		}
+	}
+}
+20107 = {
+	name="Дальтон"	# The Red Kraken.
+	dynasty=107
+	
+	dna = wkyjyadlsrn
+	properties = difb0k0b0000
+	
+	martial = 9
+	diplomacy=7
+	intrigue=9
+	stewardship=4
+	learning=3
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=21107 # Викон Greyjoy
+	mother=41107
+		
+	#add_trait=proud
+	add_trait=quick
+	
+	disallow_random_traits = yes
+	
+	8113.1.1 = {birth="8113.1.1"  }
+	8116.1.1={
+		add_trait=brave
+	}
+	8119.8.1={
+		add_trait=wroth
+		add_trait=stubborn
+	}
+	8121.8.1={
+		add_trait=ruthless
+	}
+	8123.1.1 = { #already reaving
+		add_trait=trained_warrior  
+		effect = {
+			add_friend=195107 #his uncle
+			add_friend=192107 #his other uncle
+		}
+	}
+	8123.8.1={
+		add_trait=ambitious
+		add_trait=lustful
+	}
+	8127.1.1 = { #stole sword from a corsair and took many salt wives
+		add_trait=nightfall
+		remove_trait=trained_warrior  
+		add_trait=skilled_warrior
+		add_trait=viking
+		effect = { 
+			prestige = 150 
+			piety = 75
+			wealth = 100
+		}
+	}
+	8128.3.2 = { #avenged uncle's death
+		add_trait=scarred
+		give_nickname = nick_the_red_kraken
+		effect = { 
+			prestige = 300
+			piety = 150
+			wealth = 100
+		}
+	}
+	8129.1.1={
+		add_trait=skilled_tactician
+		add_trait=inspiring_leader
+		add_trait=aggressive_leader
+	}
+	8129.4.1 = { #Dance of the Dragons
+		effect = {
+			character_event = { id = dance_of_dragons.17 }
+		}
+	}
+	8129.6.8 = {
+		effect = {
+			k_westerlands = {
+				holder_scope = {
+					opinion = {
+						modifier = opinion_looted
+						who = ROOT
+						years = 100
+					}
+				}
+			}
+		}
+	}
+	8133.12.1 = {
+		death={
+			death_reason=death_murder
+			killer=395194
+		}
+	}
+}
+#Salt wives
+490107 = {
+	name="Кобиджа"
+	female=yes
+
+	religion="corsair"
+	culture = summer_islander
+	
+	add_trait=fair
+	add_trait=amateurish_plotter
+
+	8113.1.1 = {
+		birth="8113.1.1"
+		effect = {
+			dynasty = none
+		}
+	}
+	8127.1.1 = {
+		effect = {
+			add_trait = salt_wife
+			c_pyke = {
+				holder_scope = {
+					ROOT = { move_character = PREV }
+				}
+			}
+			random_courtier = {
+				limit = { character = 20107 }
+				if = {
+					limit = { NOT = { has_dlc = "The Old Gods" } }#Uses new DLC system instead if owned
+					reverse_opinion = {
+						modifier = opinion_salt_wife
+						who = ROOT
+						years = 100
+					}
+				}
+				else = {
+					add_consort = ROOT
+					reverse_opinion = {
+						modifier = opinion_forced_consort
+						who = PREV
+					}
+				}	
+			}
+		}
+	}
+	8134.1.1 = {
+		death={
+			death_reason=death_execution
+		}
+	}
+}
+491107 = {
+	name="Гвахура"
+	female=yes
+
+	religion="summer_rel"
+	culture="summer_islander"
+	
+	add_trait=strong
+	add_trait=flamboyant_schemer
+
+	8112.1.1 = {
+		birth="8112.1.1"
+		effect = {
+			dynasty = none
+		}
+	}
+	8127.1.1 = {
+		effect = {
+			add_trait = salt_wife
+			c_pyke = {
+				holder_scope = {
+					ROOT = { move_character = PREV }
+				}
+			}
+			random_courtier = {
+				limit = { character = 20107 }
+				if = {
+					limit = { NOT = { has_dlc = "The Old Gods" } }#Uses new DLC system instead if owned
+					reverse_opinion = {
+						modifier = opinion_salt_wife
+						who = ROOT
+						years = 100
+					}
+				}
+				else = {
+					add_consort = ROOT
+					reverse_opinion = {
+						modifier = opinion_forced_consort
+						who = PREV
+					}
+				}
+			}
+		}
+	}
+	8163.1.1 = {death="8163.1.1"}
+}
+492107 = {
+	name="Аззея"
+	female=yes
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	add_trait=fair
+	add_trait=naive_appeaser
+
+	8114.1.1 = {
+		birth="8114.1.1"
+		effect = {
+			dynasty = none
+		}
+	}
+	8127.1.1 = {
+		effect = {
+			add_trait = salt_wife
+			c_pyke = {
+				holder_scope = {
+					ROOT = { move_character = PREV }
+				}
+			}
+			random_courtier = {
+				limit = { character = 20107 }
+				if = {
+					limit = { NOT = { has_dlc = "The Old Gods" } }#Uses new DLC system instead if owned
+					reverse_opinion = {
+						modifier = opinion_salt_wife
+						who = ROOT
+						years = 100
+					}
+				}
+				else = {
+					add_consort = ROOT
+					reverse_opinion = {
+						modifier = opinion_forced_consort
+						who = PREV
+					}
+				}	
+			}
+		}
+	}
+	8151.1.1 = {death="8151.1.1"}
+}
+493107 = {
+	name="Йорка"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+	
+	add_trait=fair
+	add_trait=underhanded_rogue
+
+	8109.1.1 = {
+		birth="8109.1.1"
+		effect = {
+			dynasty = none
+		}
+	}
+	8127.1.1 = {
+		effect = {
+			add_trait = salt_wife
+			c_pyke = {
+				holder_scope = {
+					ROOT = { move_character = PREV }
+				}
+			}
+			random_courtier = {
+				limit = { character = 20107 }
+				if = {
+					limit = { NOT = { has_dlc = "The Old Gods" } }#Uses new DLC system instead if owned
+					reverse_opinion = {
+						modifier = opinion_salt_wife
+						who = ROOT
+						years = 100
+					}
+				}
+				else = {
+					add_consort = ROOT
+					reverse_opinion = {
+						modifier = opinion_forced_consort
+						who = PREV
+					}
+				}	
+			}
+		}
+	}
+	8148.1.1 = {death="8148.1.1"}
+}
+##Дальтон's siblings
+190107= {
+	name="Верон"	# Дальтон's brother
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=21107 # Викон Greyjoy
+	mother=41107
+	
+	add_trait=tough_soldier
+
+	8114.1.1 = {birth="8114.1.1"}
+	8127.1.1 = {add_trait="trained_warrior" add_trait="proud" add_trait="cruel"}
+	8132.1.1 = {
+		death = {
+			death_reason=death_battle # died somewhere before his brother as Дальтон's only heirs were his sons and three sisters
+		}
+	}
+}
+193107 = {
+	name="Гвин"	# sister of Дальтон executed by Johanna
+	dynasty=107
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=21107
+	mother=41107
+	
+	add_trait=ambitious
+	add_trait=cruel
+
+	8115.1.1 = {
+		birth="8115.1.1"
+		effect = {
+			k_iron_isles = {
+				holder_scope = { ROOT = { move_character = PREV } }
+			}
+		}
+	}
+	8134.5.1 = {
+		death = {
+			death_reason=death_execution
+			killer=23199
+		}
+	}
+}
+194107 = {
+	name="Гизелла"	# sister of Дальтон executed by Johanna
+	dynasty=107
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=21107
+	mother=41107
+	
+	add_trait=ambitious
+	add_trait=cruel
+
+	8116.1.1 = {
+		birth="8116.1.1"
+		effect = {
+			k_iron_isles = {
+				holder_scope = { ROOT = { move_character = PREV } }
+			}
+		}
+	}
+	8134.5.1 = {
+		death = {
+			death_reason=death_execution
+			killer=23199
+		}
+	}
+}
+37107 = {
+	name="Гудрун"	# not a lord, married Гармон Blacktyde, her second husband being Тормунд Stonetree.
+	female=yes
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=21107 # Викон Greyjoy
+	mother=41107
+
+	8120.1.1 = {birth="8120.1.1"}
+	8192.1.1 = {death="8192.1.1"}
+}
+###issue of Дальтон###
+36107 = {
+	name="Торон"	# Canon, a lord
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=20107
+	mother=490107
+	
+	add_trait=child_of_consort
+	
+	8128.1.1 = {birth="8128.1.1"}
+	8133.12.1 = { 
+		add_trait="nightfall" 
+		effect = {
+			k_westerlands = {
+				holder_scope = {
+					opinion = {
+						modifier = opinion_looted
+						who = ROOT
+						years = 1
+					}
+				}
+			}
+		}
+	}
+	8142.1.1 = {
+		add_spouse=412112 # Гвинесса Goodbrother
+	}
+	8144.1.1 = {
+		add_trait=trained_warrior
+	}
+	8172.1.1 = {death="8172.1.1"}
+}
+191107 = {
+	name="Родрик"	# not a lord
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=20107
+	mother=493107
+	
+	add_trait=child_of_consort
+
+	8129.1.1 = {birth="8129.1.1"}
+	8133.12.1 = {
+		effect = {
+			if = { 
+				limit = { NOT = { start_date = 8134.5.1 } }
+				d_harlaw = {
+					holder_scope = { 
+						ROOT = { move_character = PREV } 
+						start_faction = {
+							faction = faction_claimant 
+							title = k_iron_isles
+							thirdparty = ROOT
+						}
+						c_3008118 = { join_faction = { faction = faction_claimant faction_leader = PREV } }
+						faction_claimant = { # The target (title) of the faction
+							reverse_unsafe_war = {
+								target = PREV
+								casus_belli = other_claim_on_liege
+								faction = faction_claimant
+							}
+						}
+					}
+				}		
+			}
+		}
+	}
+	8134.5.1 = { #half year after death of Дальтон
+		add_trait=eunuch
+		effect = {
+			k_westerlands = {
+				holder_scope = { ROOT = { move_character = PREV } }
+			}
+		}
+	}
+	8179.1.1 = {death="8179.1.1"}
+}	
+###issue of Торон###
+4019276 = {
+	name="Катла"
+	female=yes
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=36107
+	mother=412112
+
+	8142.1.1 = {birth="8142.1.1"}
+	8193.1.1 = {death="8193.1.1"}
+}
+19107 = {
+	name="Алтон"	# Дагон's father. wanted to conquer lands beyond the lonely light
+	dynasty=107
+	
+	martial = 1
+	diplomacy = 2
+	intrigue = 3
+	stewardship = 2	
+	learning = 4
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	add_trait="brave"
+	add_trait="ambitious"
+	add_trait="zealous"
+	add_trait="tough_soldier"
+	add_trait="lunatic"
+
+	father=36107
+	mother=412112
+
+	8151.1.1 = {birth="8151.1.1"  }
+	8167.1.1 = {add_trait=trained_warrior}
+	8168.1.1 = {add_spouse=49107}
+	8172.1.1 = { add_trait="nightfall" }
+	8195.3.7 = { #BR
+		give_nickname = nick_the_holy_fool
+		effect = {
+			if = {
+				limit = { NOT = { start_date = 8196.6.1 } }
+				any_vassal = { 
+					set_character_flag = neutral
+					clr_character_flag = supporting_king
+					clr_character_flag = against_king  
+				}
+				set_character_flag = neutral
+				clr_character_flag = supporting_king
+				clr_character_flag = against_king
+				set_character_flag = victarion_greyjoy
+			}
+		}
+	}
+	8196.6.6 = { remove_trait="nightfall" }
+	8206.1.1 = {death="8206.1.1"}
+}
+49107 = {
+	name="Гвинет"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8150.1.1 = {birth="8150.1.1"}
+	8206.1.1 = {death="8206.1.1"}
+}
+40107 = {
+	name="Сиглинда"
+	female=yes
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=36107
+	mother=412112
+
+	8154.1.1 = {birth="8154.1.1"}
+	8156.1.1 = {death="8156.1.1"}
+}
+53107 = {
+	name="Сиглинда"	# not a lord
+	female=yes
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=36107
+	mother=412112
+
+	8157.1.1 = {birth="8157.1.1"}
+	8198.1.1 = {death="8198.1.1"}
+}
+64107 = {
+	name="Марлон"	# not a lord
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=36107
+
+	add_trait=bastard
+	give_nickname=nick_pyke
+
+	8145.1.1 = {birth="8145.1.1"}
+	8214.1.1 = {death="8214.1.1"}
+}
+65107 = {
+	name="Тарл"	# not a lord
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=36107
+
+	add_trait=bastard
+	give_nickname=nick_pyke
+
+	8156.1.1 = {birth="8156.1.1"}
+	8226.1.1 = {death="8226.1.1"}
+}
+##
+18107 = {
+	name="Дагон"	# Lord who penned the Lion, tied the Wolf but broke against the Dragon.
+	dynasty=107
+	dna="ddgjhhibgdc"
+	properties="0e00c"
+
+	martial = 9
+	diplomacy = 1 # he attacked other lords in the same kingdon, of course its awful.
+	intrigue = 4	
+	stewardship = 4	
+	learning = 3 # You can't beat a Dragon. Only another dragon can do that
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=19107
+	mother=49107
+	
+	add_trait="brave"
+	add_trait="zealous"
+	add_trait="ambitious"
+	add_trait="proud"
+	add_trait="authoritative"
+	add_trait="skilled_tactician"
+
+	8178.1.1 = {birth="8178.1.1"  }
+	8194.1.1 = {add_trait=master_warrior}
+	8196.1.1 = {add_spouse=150112} #Random Goodbrother
+	8211.1.1 = {add_trait="viking"
+		effect = {
+			wealth = 200
+			prestige = 350
+		}
+	}
+	8216.1.1 = {
+		give_nickname=nick_the_last_reaver
+		death = {death_reason = death_execution} #he'd have been put down by Royal forces after his raids with the Lions/Wolves and Roses helping.
+	} 
+}
+54107 = {
+	name="Гвин"	# not a lord
+	female=yes
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=19107
+	mother=49107
+
+	8182.1.1 = {birth="8182.1.1"}
+	8244.1.1 = {death="8244.1.1"}
+}
+##Issue of Дагон##
+299107 = {
+	name="Лорон"	# The Bard
+	dynasty=107 
+	
+	martial = 2	
+	diplomacy = 4 #
+	intrigue = 2
+	stewardship = 3
+	learning = 10
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=18107
+	mother=150112
+	
+	add_trait="flamboyant_schemer"
+	add_trait="gregarious"
+	add_trait="poet"
+	add_trait="cynical"
+	add_trait="slothful"
+	add_trait="arbitrary"
+
+	8196.1.1 = {birth="8196.1.1"  }
+	8211.1.1 = {
+		add_trait=poor_warrior
+		give_nickname=the_bard
+		effect = {
+			add_friend = 175128 #Desmond Mallister
+		}
+	}
+	8225.1.1 = {death="8225.1.1"}
+}
+55107 = {
+	name="Гизелла"	# not a lord
+	female=yes
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=18107
+	mother=150112
+
+	8197.1.1 = {birth="8197.1.1"}
+	8222.1.1 = {death="8222.1.1"}
+}
+17107 = {
+	name="Торвин"	# betrayed bittersteel
+	dynasty=107 
+	
+	martial = 6	
+	diplomacy = 10 # going have to be good after Дагон's raids.
+	intrigue = 6	
+	stewardship = 7	
+	learning = 8
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=18107
+	mother=150112
+	
+	add_trait="charismatic_negotiator"
+	add_trait="brave"
+	add_trait="proud"
+	add_trait="deceitful"
+	add_trait="ruthless"
+	add_trait="patient"
+
+	8198.1.1 = {birth="8198.1.1"  }
+	8211.1.1 = {add_trait=poor_warrior}
+	8214.1.1 = {remove_trait=poor_warrior add_trait=trained_warrior}
+	8216.1.1 = {add_spouse=47107}
+	8250.1.1 = {death="8250.1.1"}
+}
+47107 = {
+	name="Джейн"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8198.1.1 = {birth="8198.1.1"}
+	8250.1.1 = {death="8250.1.1"}
+}
+##Line for Квентон
+56107 = {
+	name="Торон"	# not a lord
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=18107
+	mother=150112
+
+	8205.1.1 = {birth="8205.1.1"}
+	8221.1.1 = {add_trait=poor_warrior}
+	8223.1.1 = {add_spouse=46000107}
+	8265.1.1 = {death="8265.1.1"}
+}
+46000107 = {
+	name="Яра"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8205.1.1 = {birth="8205.1.1"}
+	8265.1.1 = {death="8265.1.1"}
+}
+
+58107 = {
+	name="Родрик"	# not a lord
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=56107
+	mother=46000107 
+
+	8227.1.1 = {birth="8227.1.1"}
+	8243.1.1 = {add_trait=poor_warrior}
+	8245.1.1 = {add_spouse=48107}
+	8290.1.1 = {death="8290.1.1"}
+}
+48107 = {
+	name="Эсгред"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8227.1.1 = {birth="8227.1.1"}
+	8290.1.1 = {death="8290.1.1"}
+}
+#Line for Дагон
+60107 = {
+	name="Донел"	# not a lord
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=19107
+	mother=49107
+
+	8180.1.1 = {birth="8180.1.1"}
+	8196.1.1 = {add_trait=poor_warrior}
+	8210.1.1 = {add_spouse=130116} #random orkwood
+	8235.1.1 = {death="8235.1.1"}
+}
+61107 = {
+	name="Дальтон"	# not a lord
+	dynasty=107
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=60107
+	mother=130116
+
+	8216.1.1 = {birth="8216.1.1"}
+	8232.1.1 = {add_trait=trained_warrior}
+	8234.1.1 = {add_spouse=4001107}
+	8254.1.1 = {death="8254.1.1"}
+}
+4001107 = {
+	name="Фалиса"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8216.1.1 = {birth="8216.1.1"}
+	8254.1.1 = {death="8254.1.1"}
+}
+###House Greyiron###
+750064 = {
+	name=""	# Серый Король's father
+	
+	martial=10
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	dynasty = 1836582
+	
+	add_trait=genius
+	add_trait=mystic
+	add_trait=just
+	add_trait=brave
+
+	1.1.1 = {birth="1.1.1"}
+	17.1.1 = {add_trait=master_warrior}
+	1001.1.1 = {death="1001.1.1"}
+}
+750066 = {
+	name="Серый Король"	# Серый Король, don't leave his name blank again, it messes up the numeration of all ironborn kings
+	dynasty = 1836582	
+	martial=10
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=750064
+
+	#give_nickname = nick_the_grey_king
+	
+	add_trait=brilliant_strategist
+	add_trait=genius
+	add_trait=tall
+	add_trait=mystic
+	add_trait=brave
+	add_trait=ambitious
+
+	1.1.2 = {birth="1.1.2"}
+	17.1.2 = {add_trait=master_warrior}
+	1008.1.1 = {death="1008.1.1"}
+}
+750067 = {
+	name="Грейайрон"
+	dynasty = 1836582
+
+	add_trait=brilliant_strategist
+	add_trait=strong
+	add_trait=tall
+	add_trait=master_warrior
+	add_trait=brave
+	add_trait=diligent
+	add_trait=viking
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=750066
+
+	85.1.1 = {birth="85.1.1"}
+	130.1.1 = {death="130.1.1"}
+}
+751067 = {
+	name="Потомки Грейайрона"
+	dynasty = 1836582
+	
+	religion="drowned_god"
+	culture="ironborn"
+	
+	occluded = yes
+	
+	father = 750067
+
+	130.1.1 = {birth="130.1.1"}
+	2894.1.1 = {death="2894.1.1"}
+}
+5001508 = {
+	name = Уррас #King Уррас 
+	dynasty = 1508 #Greyiron
+	
+	martial=8
+	learning=1
+	diplomacy=6
+	intrigue=5
+	stewardship=3
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 751067
+	
+	add_trait=strong
+	add_trait=brilliant_strategist 
+	add_trait="authoritative"
+	add_trait="brave"
+	add_trait="ambitious"
+	
+	2894.1.1 = {
+		birth=2894.1.1
+	}
+	2910.1.1 = {
+		add_trait=master_warrior
+		give_nickname=nick_ironfoot
+	}
+	2942.1.1 = {
+		add_trait=wounded
+		death = { death_reason = death_trait }
+	}
+}
+5011508 = {
+	name = Эрих #King Эрих I
+	dynasty = 1508 #Greyiron
+	
+	martial=4
+	learning=2
+	diplomacy=1
+	intrigue=1
+	stewardship=5
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5001508
+	
+	add_trait="ambitious"
+	add_trait="tough_soldier"
+	add_trait="ruthless"
+	add_trait="humble"
+	add_trait="cynical"
+	add_trait="deceitful"
+	add_trait="ugly"
+
+	2913.1.1 = {
+		birth=2913.1.1
+	}
+	2929.1.1 = {
+		add_trait=trained_warrior
+		give_nickname=nick_the_ugly
+	}
+	2965.1.1 = {
+		death=2965.1.1
+	}
+}
+5021508 = {
+	name = Теон #King Теон I (Non-canon)
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5011508
+
+	2936.1.1 = {
+		birth=2936.1.1
+	}
+	2952.1.1 = {
+		add_trait=trained_warrior
+	}
+	2993.1.1 = {
+		death=2993.1.1
+	}
+}
+354066 = {
+	name = Силас #King Силас 
+	dynasty = 1508 #Greyiron
+
+	martial=12
+	diplomacy=7
+	intrigue=5
+	stewardship=6
+	learning=0
+
+	religion=drowned_god
+	culture=ironborn
+
+	add_trait=strong
+	add_trait="authoritative"
+	add_trait="brave"
+	add_trait="ambitious"
+	add_trait="proud"
+	add_trait="wroth"
+
+	father = 5021508
+
+	2958.1.1 = {
+		birth=2958.1.1
+	}
+	2974.1.1 = {
+		add_trait=master_warrior
+		give_nickname=nick_flatnose
+		add_trait=disfigured
+	}
+	3009.1.1 = {
+		death=3009.1.1
+	}
+}
+5031508 = {
+	name = Бейлон #King Бейлон I (Non-canon)
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 354066
+
+	2983.1.1 = {
+		birth=2983.1.1
+	}
+	2999.1.1 = {
+		add_trait=skilled_warrior
+	}
+	3034.1.1 = {
+		death=3034.1.1
+	}
+}
+5501508 = {
+	name = "Потомки Бейлона" 
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5031508
+	
+	occluded = yes
+
+	3034.1.1 = {
+		birth = yes
+	}
+	3511.1.1 = {
+		death = yes
+	}
+}
+5041508 = {
+	name = Урратон #King Урратон I (Non-canon)
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5501508
+
+	3511.1.1 = {
+		birth=3511.1.1
+	}
+	3527.1.1 = {
+		add_trait=trained_warrior
+	}
+	3556.1.1 = {
+		death=3556.1.1
+	}
+}
+5051508 = {
+	name = Урратон #King Урратон II (Non-canon)
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5041508
+
+	3540.1.1 = {
+		birth=3540.1.1
+	}
+	3556.1.1 = {
+		add_trait=trained_warrior
+	}
+	3578.1.1 = {
+		death=3578.1.1
+	}
+}
+5511508 = {
+	name = "Потомки Урратона" 
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5051508
+	
+	occluded = yes
+
+	3578.1.1 = {
+		birth = yes
+	}
+	3612.1.1 = {
+		death = yes
+	}
+}
+5061508 = {
+	name = Уррагон #King Уррагон I (Non-canon)
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5511508
+
+	3612.1.1 = {
+		birth=3612.1.1
+	}
+	3628.1.1 = {
+		add_trait=skilled_warrior
+	}
+	3658.1.1 = {
+		death=3658.1.1
+	}
+}
+5521508 = {
+	name = "Потомки Уррагона"
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5061508
+	
+	occluded = yes
+
+	3658.1.1 = {
+		birth = yes
+	}
+	4129.1.1 = {
+		death = yes
+	}
+}
+5071508 = {
+	name = Бейлон #King Бейлон III (Non-canon)
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5521508
+
+	4129.1.1 = {
+		birth=4129.1.1
+	}
+	4145.1.1 = {
+		add_trait=trained_warrior
+	}
+	4177.1.1 = {
+		death=4177.1.1
+	}
+}
+5081508 = {
+	name = Эрих #King Эрих III (Non-canon)
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5071508
+
+	4158.1.1 = {
+		birth=4158.1.1
+	}
+	4174.1.1 = {
+		add_trait=poor_warrior
+	}
+	4216.1.1 = {
+		death=4216.1.1
+	}
+}
+5091508 = {
+	name = Рогнар #King Рогнар I (Non-canon)
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5081508
+
+	4181.1.1 = {
+		birth=4181.1.1
+	}
+	4197.1.1 = {
+		add_trait=trained_warrior
+	}
+	4230.1.1 = {
+		death=4230.1.1
+	}
+}
+
+5101508 = {
+	name = Эрих #King Эрих IV (Non-canon)
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5091508
+
+	4217.1.1 = {
+		birth=4217.1.1
+	}
+	4233.1.1 = {
+		add_trait=skilled_warrior
+	}
+	4278.1.1 = {
+		death=4278.1.1
+	}
+}
+5111508 = {
+	name = Урратон #King Урратон III (Non-canon)
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5101508
+
+	4238.1.1 = {
+		birth=4238.1.1
+	}
+	4254.1.1 = {
+		add_trait=trained_warrior
+	}
+	4287.1.1 = {
+		death=4287.1.1
+	}
+}
+5531508 = {
+	name = "Потомки Урратона"
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5111508
+	
+	occluded = yes
+
+	4287.1.1 = {
+		birth = yes
+	}
+	4992.1.1 = {
+		death = yes
+	}
+}
+5241508 = {
+	name = Уррагон #King Уррагон II (Non-canon)
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5531508
+
+	4992.1.1 = {
+		birth=4992.1.1
+	}
+	5008.1.1 = {
+		add_trait=trained_warrior
+	}
+	5043.1.1 = {
+		death=5043.1.1
+	}
+}
+5121508 = {
+	name = Уррагон #King Уррагон III
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5241508
+
+	5023.1.1 = {
+		birth=5023.1.1
+	}
+	5039.1.1 = {
+		add_trait=trained_warrior
+		give_nickname=nick_the_bald
+	}
+	5087.1.1 = {
+		death=5087.1.1
+	}
+}
+5131508 = {
+	name = Торгон #King Торгон 
+	dynasty = 1508 #Greyiron
+	
+	martial=3
+	diplomacy=7
+	intrigue=7
+	stewardship=6
+	learning=3
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5121508
+	
+	add_trait=just
+	add_trait=patient
+	add_trait=ambitious
+	add_trait=proud
+	add_trait=diligent
+	add_trait=tough_soldier
+
+	5060.1.1 = {
+		birth=5060.1.1
+	}
+	5076.1.1 = {
+		add_trait=trained_warrior
+	}
+	5089.1.1 = {
+		give_nickname = nick_the_latecomer
+	}
+	5129.1.1 = {
+		death=5129.1.1
+	}
+}
+5141508 = {
+	name = Эрих
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5121508
+
+	add_trait=ambitious
+	add_trait=greedy
+
+	5061.1.1 = {
+		birth=5061.1.1
+	}
+	5077.1.1 = {
+		add_trait=trained_warrior
+	}
+	5087.1.1 = {
+		death = {
+			death_reason = death_murder
+			killer = 550112 #Badbrother
+		}
+	}
+}
+5151508 = {
+	name = Уррон
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5121508
+
+	add_trait=ambitious
+	add_trait=greedy
+
+	5063.1.1 = {
+		birth=5063.1.1
+	}
+	5079.1.1 = {
+		add_trait=trained_warrior
+	}
+	5087.1.1 = {
+		death = {
+			death_reason = death_murder
+			killer = 550112#Badbrother
+		}
+	}
+}
+5161508 = {
+	name = Рогнар
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5121508
+
+	add_trait=ambitious
+	add_trait=greedy
+
+	5065.1.1 = {
+		birth=5065.1.1
+	}
+	5081.1.1 = {
+		add_trait=trained_warrior
+	}
+	5087.1.1 = {
+		death = {
+			death_reason = death_murder
+			killer = 550112 #Badbrother
+		}
+	}
+}
+5171508 = {
+	name = Уррагон #King Уррагон IV
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5131508
+
+	5104.1.1 = {
+		birth=5104.1.1
+	}
+	5120.1.1 = {
+		add_trait=trained_warrior
+	}
+	5181.1.1 = {
+		death=5181.1.1
+	}
+}
+5181508 = {
+	name = Харрен
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5131508
+
+	5116.1.1 = {
+		birth=5116.1.1
+	}
+	5132.1.1 = {
+		add_trait=poor_warrior
+	}
+	5169.1.1 = {
+		death=5169.1.1
+	}
+}
+5191508 = {
+	name = Урратон
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5181508
+
+	5138.1.1 = {
+		birth=5138.1.1
+	}
+	5154.1.1 = {
+		add_trait=trained_warrior
+	}
+	5178.1.1 = {
+		death=5178.1.1
+	}
+}
+5201508 = {
+	name = Уррон #King Уррон 
+	dynasty = 1508 #Greyiron
+	
+	martial=8
+	diplomacy=5
+	intrigue=11
+	stewardship=6
+	learning=1
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5191508
+	
+	add_trait=ruthless
+	add_trait=ambitious
+	add_trait=cruel
+	add_trait=arbitrary
+	add_trait=wroth
+	add_trait=quick
+
+	5159.1.1 = {
+		birth=5159.1.1
+	}
+	5175.1.1 = {
+		add_trait=skilled_warrior
+	}
+	5181.1.1 = {
+		give_nickname=nick_redhand
+	}
+	5203.1.1 = {
+		death=5203.1.1
+	}
+}
+
+5541508 = {
+	name = "Потомки Уррона"
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5201508
+	
+	occluded = yes
+
+	5203.1.1 = {
+		birth = yes
+		give_nickname=nick_redhand
+	}
+	6457.1.1 = {
+		death = yes
+	}
+}
+
+5251508 = {
+	name = Джорон #King Джорон II (Non-canon)
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5541508
+
+	6457.1.1 = {
+		birth=6457.1.1
+	}
+	6484.1.1 = {
+		add_trait=trained_warrior
+	}
+	6521.1.1 = {
+		death=6521.1.1
+	}
+}
+5211508 = {
+	name = Эурон #King Эурон I (Non-canon)
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5251508
+
+	6495.1.1 = {
+		birth=6495.1.1
+	}
+	6511.1.1 = {
+		add_trait=skilled_warrior
+	}
+	6540.1.1 = {
+		death=6540.1.1
+	}
+}
+5221508 = {
+	name = Бейлон #King Бейлон VII (Non-canon)
+	dynasty = 1508 #Greyiron
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5211508
+
+	6518.1.1 = {
+		birth=6518.1.1
+	}
+	6535.1.1 = {
+		add_trait=trained_warrior
+	}
+	6563.1.1 = {
+		death=6563.1.1
+	}
+}
+5231508 = {
+	name = Рогнар #King Рогнар II
+	dynasty = 1508 #Greyiron
+	
+	martial=3
+	diplomacy=1
+	intrigue=2
+	learning=4
+	stewardship=5
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5221508
+	
+	add_trait=craven
+	add_trait=misguided_warrior
+	add_trait=slothful
+	add_trait=arbitrary
+	add_trait=cynical
+
+	6542.1.1 = {
+		birth=6542.1.1
+	}
+	6558.1.1 = {
+		add_trait=poor_warrior
+	}
+	6584.1.1 = {
+		add_trait=assign_mission_target #for house customiser linking
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+
+#################
+###House Hoare###
+#################
+750068 = {
+	name="Торгон Ужасный"
+	dynasty = 1836582
+
+	add_trait=brilliant_strategist
+	add_trait=quick
+	add_trait=skilled_warrior
+	add_trait=viking
+	add_trait=impaler
+	add_trait=cruel
+	add_trait=brave
+	add_trait=ruthless
+	
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=750066
+
+	86.1.1 = {birth="86.1.1"}
+	156.1.1 = {death="156.1.1"}
+}
+751068 = {
+	name="Потомки Торгона Ужасного"
+	dynasty = 1836582
+	
+	religion="drowned_god"
+	culture="ironborn"
+	
+	occluded = yes
+	
+	father = 750068
+
+	156.1.1 = {birth="156.1.1"}
+	3453.1.1 = {death="3453.1.1"}
+}
+355066 = {
+	name = Харраг #King Харраг 
+	dynasty = 66 #Hoare
+	
+	martial=9
+	diplomacy=8
+	intrigue=7
+	stewardship=3
+	learning=3
+
+	religion=drowned_god
+	culture=ironborn
+	
+	father=751068
+
+	add_trait=skilled_tactician
+	add_trait=zealous
+	add_trait=cruel
+	add_trait=ruthless
+	add_trait=diligent
+
+	3453.1.1 = {
+		birth=3453.1.1
+	}
+	3469.1.1 = {
+		add_trait=skilled_warrior
+	}
+	3519.1.1 = {
+		death=3519.1.1
+	}
+}
+356066 = {
+	name = Равос #Ruled bear Island
+	dynasty = 66 #Hoare
+	
+	martial=6
+	intrigue=3
+	diplomacy=2
+	learning=1
+	stewardship=3
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 355066
+	
+	add_trait=cruel
+	add_trait=ruthless
+	add_trait=wroth
+	add_trait=ambitious
+	add_trait=lustful
+	add_trait=tough_soldier
+
+	3472.1.1 = {
+		birth=3472.1.1
+	}
+	3488.1.1 = {
+		add_trait=skilled_warrior
+	}
+	3492.1.1 = {
+		give_nickname=nick_the_raper
+	}
+	3498.1.1 = {
+		death = {
+			death_reason = death_duel
+			killer = 820059 #Теон Stark
+		}
+	}
+}
+
+357066 = {
+	name = Эрих #King Эрих II
+	dynasty = 66 #Hoare
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 356066
+
+	3496.1.1 = {
+		birth=3496.1.1
+	}
+	3512.1.1 = {
+		add_trait=skilled_warrior
+		give_nickname=nick_the_eagle
+	}
+	3545.1.1 = {
+		death=3545.1.1
+	}
+}
+550066 = {
+	name = "Потомки Эриха"
+	dynasty = 66 #Hoare
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 357066
+	
+	occluded = yes
+
+	3545.1.1 = {
+		birth = yes
+		give_nickname=nick_the_eagle
+	}
+	3655.1.1 = {
+		death = yes
+	}
+}
+358066 = {
+	name = Куоред #King Куоред 
+	dynasty = 66 #Hoare
+	
+	martial=7
+	diplomacy=10
+	intrigue=7
+	stewardship=7
+	learning=4
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 550066
+	
+	add_trait=strong
+	add_trait=quick
+	add_trait=ambitious
+	add_trait=brilliant_strategist
+	add_trait=wroth
+	add_trait=authoritative
+	add_trait=zealous
+	add_trait=cruel
+
+	3655.1.1 = {
+		birth=3655.1.1
+	}
+	3671.1.1 = {
+		add_trait=skilled_warrior
+		give_nickname=nick_the_cruel
+	}
+	3745.1.1 = {
+		death=3745.1.1
+	}
+}
+551066 = {
+	name = "Потомки Куореда"
+	dynasty = 66 #Hoare
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 358066
+	
+	occluded = yes
+
+	3745.1.1 = {
+		birth = yes
+	}
+	6562.1.1 = {
+		death = yes
+	}
+}
+
+359066 = {
+	name = Харрас #King Харрас 
+	dynasty = 66 #Hoare
+
+	religion=drowned_god
+	culture=ironborn
+
+	add_trait=ambitious
+	add_trait=brave
+	
+	father=551066
+
+	6562.1.1 = {
+		birth=yes
+	}
+	6578.1.1 = {
+		add_trait=master_warrior
+	}
+	6584.1.1 = {
+		give_nickname=nick_stumphand
+		add_trait=one_handed
+	}
+	6605.1.1 = {
+		death=yes
+	}
+}
+360066 = {
+	name = Вулфгар #King Вулфгар 
+	dynasty = 66 #Hoare
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 359066
+	
+	add_trait=sympathy_westerosi
+	add_trait=cynical
+	add_trait=wroth
+	add_trait=ruthless
+	add_trait=thrifty_clerk
+
+	6585.1.1 = {
+		birth=6585.1.1
+	}
+	6601.1.1 = {
+		add_trait=trained_warrior
+	}
+	6606.1.1 = {
+		give_nickname=nick_widowmaker
+	}
+	6639.1.1 = {
+		death=6639.1.1
+	}
+}
+361066 = {
+	name = Харраг  ####  Fight Hungry Wolf. Makes no timeline sense for it to be the old King Харраг
+	dynasty = 66 #Hoare
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 360066
+
+	6602.1.1 = {
+		birth=6602.1.1
+	}
+	6618.1.1 = {
+		add_trait=trained_warrior
+	}
+	6648.1.1 = {
+		death=6648.1.1
+	}
+}
+362066 = {
+	name = Эурон #King Эурон II (Non-canon)
+	dynasty = 66 #Hoare
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 361066
+
+	6621.1.1 = {
+		birth=6621.1.1
+	}
+	6637.1.1 = {
+		add_trait=skilled_warrior
+	}
+	6671.1.1 = {
+		death=6671.1.1
+	}
+}
+363066 = {
+	name = Хорган #King Хорган 
+	dynasty = 66 #Hoare
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 362066
+	
+	add_trait=sympathy_westerosi
+	add_trait=cynical
+	add_trait=wroth
+	add_trait=cruel
+	add_trait=fortune_builder
+
+	6640.1.1 = {
+		birth=6640.1.1
+	}
+	6657.1.1 = {
+		add_trait=trained_warrior
+	}
+	6673.1.1 = {
+		give_nickname=nick_priestkiller
+	}
+	6692.1.1 = {
+		death=6692.1.1
+	}
+}
+3163066 = {
+	name = Бейлон #King Бейлон VIII (Non-canon) 
+	dynasty = 66 #Hoare
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 363066
+
+
+	6669.1.1 = {
+		birth=6669.1.1
+	}
+	6688.1.1 = {
+		add_trait=trained_warrior
+	}
+	6734.1.1 = {
+		death=6734.1.1
+	}
+}
+
+31163066 = {
+	name = "Потомки Бейлона" # 
+	dynasty = 66 #Hoare
+
+	religion=drowned_god
+	culture=ironborn
+
+	occluded =  yes
+	father = 3163066
+
+
+	6734.1.1 = {
+		birth=6734.1.1
+	}
+	7429.1.1 = {
+		death=7429.1.1
+	}
+}
+364066 = {
+	name = Фергон #King Фергон 
+	dynasty = 66 #Hoare
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 31163066
+	
+	add_trait=sympathy_westerosi
+	add_trait=cynical
+	add_trait=wroth
+	add_trait=ruthless
+	add_trait=proud
+	add_trait=underhanded_rogue
+
+	7429.1.1 = {
+		birth=7429.1.1
+	}
+	7445.1.1 = {
+		add_trait=skilled_warrior
+	}
+	7458.1.1 = {
+		give_nickname=nick_the_fierce
+	}
+	7470.1.1 = {
+		death=7470.1.1
+	}
+}
+365066 = {
+	name = Отгар #King Отгар I
+	dynasty = 66 #Hoare
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 364066
+	
+	add_trait=sympathy_westerosi
+	add_trait=cynical
+	add_trait=kind
+	add_trait=wroth
+	add_trait=slothful
+	add_trait=fortune_builder
+
+	7455.1.1 = {
+		birth=7455.1.1
+	}
+	7470.1.1 = {
+		give_nickname=nick_the_soulless
+	}
+	7471.1.1 = {
+		add_trait=trained_warrior
+	}	
+	7518.1.1 = {
+		death=7518.1.1
+	}
+}
+366066 = {
+	name = Отгар #King Отгар II
+	dynasty = 66 #Hoare
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 365066
+	
+	add_trait=sympathy_westerosi
+	add_trait=cynical
+	add_trait=ruthless
+	add_trait=diligent
+	add_trait=midas_touched
+
+	7486.1.1 = {
+		birth=7486.1.1
+	}
+	7502.1.1 = {
+		add_trait=trained_warrior
+	}
+	7518.1.1 = {
+		give_nickname=nick_demonlover
+	}
+	7539.1.1 = {
+		death=7539.1.1
+	}
+}
+367066 = {
+	name = Крегорн #King Крегорн 
+	dynasty = 66 #Hoare
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 366066
+	
+	add_trait=sympathy_westerosi
+	add_trait=cynical
+	add_trait=cruel
+	add_trait=gregarious
+	add_trait=wroth
+	add_trait=indulgent_wastrel
+
+	7508.1.1 = {
+		birth=7508.1.1
+	}
+	7524.1.1 = {
+		add_trait=poor_warrior
+	}
+	7539.1.1 = {
+		give_nickname=nick_the_red_smile
+	}
+	7547.1.1 = {
+		death=7547.1.1
+	}
+}
+368066 = {
+	name = Хармунд #King Хармунд I
+	dynasty = 66 #Hoare
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 367066
+	
+	add_trait=sympathy_westerosi
+	add_trait=kind
+	add_trait=gregarious
+	add_trait=trusting
+	add_trait=charismatic_negotiator
+	add_trait=scholar
+
+	7535.1.1 = {
+		birth=7535.1.1
+	}
+	7551.1.1 = {
+		add_trait=poor_warrior
+		give_nickname=nick_the_host
+	}
+	7598.1.1 = {
+		death=7598.1.1
+	}
+}
+369066 = {
+	name = Хармунд #King Хармунд II
+	dynasty = 66 #Hoare
+
+	religion=the_seven
+	culture=ironborn
+
+	father = 368066
+	
+	add_trait=sympathy_drowned_god
+	add_trait=ambitious
+	add_trait=gregarious
+	add_trait=underhanded_rogue
+	add_trait=diligent
+	add_trait=proud
+
+	7560.1.1 = {
+		birth=7560.1.1
+	}
+	7576.1.1 = {
+		add_trait=trained_warrior
+		give_nickname=nick_the_haggler
+		add_spouse=469066 #Lelia lannister
+	}
+	7612.1.1 = {
+		death=7612.1.1
+	}
+}
+370066 = {
+	name = Хармунд #King Хармунд III
+	dynasty = 66 #Hoare
+
+	religion=the_seven
+	culture=ironborn
+
+	father = 369066
+	mother = 469066 #Lelia lannister
+	
+	add_trait=zealous
+	add_trait=honorable
+	add_trait=kind
+	add_trait=proud
+	add_trait=underhanded_rogue
+	add_trait=diligent
+	add_trait=fair
+
+	7588.1.1 = {
+		birth=7588.1.1
+	}
+	7604.1.1 = {
+		add_trait=trained_warrior
+		give_nickname=nick_the_handsome
+	}
+	7615.1.1 = {
+		add_trait=blinded
+		add_trait=disfigured
+	}
+	7622.1.1 = {
+		death={
+			death_reason=death_murder
+			killer=150227 #Aubrey Crakehall
+		}
+	}
+}
+371066 = {
+	name = Хагон #King Хагон 
+	dynasty = 66 #Hoare
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 369066
+	mother = 469066
+	
+	add_trait=selfish
+	add_trait=ruthless
+	add_trait=ambitious
+	add_trait=proud
+
+	7590.1.1 = {
+		birth=7590.1.1
+	}
+	7606.1.1 = {
+		add_trait=skilled_warrior
+	}
+	7615.1.1 = {
+		give_nickname=nick_the_heartless
+	}
+	7622.1.1 = {
+		add_trait=blinded
+		add_trait=disfigured
+		death={
+			death_reason=death_execution
+			killer=150227 #Aubrey Crakehall
+		}
+	}
+}
+250066 = {
+	name = Сорокопут #Priest of the Drowned God
+	
+	religion=drowned_god
+	culture=ironborn
+
+	add_trait=zealous
+	add_trait=proud
+	add_trait=ambitious
+	add_trait=cruel
+	add_trait=authoritative
+	add_trait=scholarly_theologian
+
+	7570.1.1 = {
+		birth=7570.1.1
+	}
+	7630.1.1 = {
+		death=7630.1.1
+	}
+}
+552066 = {
+	name = "Потомки Хагона"
+	dynasty = 66 #Hoare
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 371066
+	
+	occluded = yes
+
+	7622.1.1 = {
+		birth = yes
+		give_nickname=nick_the_heartless
+	}
+	7764.1.1 = {
+		death = yes
+	}
+}
+193066 = {
+	name="Харральд" #the half drowned, killed by Lancel V Lannister
+	dynasty=66
+	
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=552066
+	
+	7764.1.1 = {birth="7764.1.1"}
+	7780.1.1 = {
+		add_trait=skilled_warrior
+	}
+	7800.1.1 = {
+		add_trait=drowned
+		give_nickname=nick_the_half_drowned
+	}
+	7815.1.1 = {
+		death= {
+			death_reason=death_duel #died in battle of Lann's point
+			killer=8003190 #Lancel IV
+		}
+	}
+}
+192066 = {
+	name="Харрен"
+	dynasty=66
+	
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=193066
+	
+	7784.1.1 = {birth="7784.1.1"}
+	7800.1.1 = {
+		add_trait=trained_warrior
+	}
+	7815.1.1 = {
+		death= {
+			death_reason=death_duel #died in battle of Lann's point
+			killer=8003190 #Lancel IV
+		}
+	}
+}
+191066 = {
+	name="Харральд" #King, (NC)
+	dynasty=66
+	
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=192066
+	
+	7805.1.1 = {birth="7805.1.1"}
+	7821.1.1 = {
+		add_trait=trained_warrior
+	}
+	7880.1.1 = {death="7880.1.1"}
+}
+190066 = {
+	name="Хагон"
+	dynasty=66
+	
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=191066
+	
+	7832.1.1 = {birth="7832.1.1"}
+	7848.1.1 = {
+		add_trait=trained_warrior
+	}
+	7869.1.1 = {death="7869.1.1"}
+}
+11066 = {
+	name="Куорвин"
+	dynasty=66
+	
+	martial=2
+	stewardship=7
+	intrigue=5
+	learning=4
+	diplomacy=3
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=190066
+	
+	add_trait=quick
+	add_trait=greedy
+	add_trait=patient
+	add_trait=diligent
+	add_trait=midas_touched
+	add_trait=authoritative
+
+	7862.1.1 = {birth="7862.1.1"}
+	7878.1.1 = {
+		add_trait=poor_warrior
+		give_nickname=nick_the_cunning
+	}
+	7885.1.1 = {add_spouse=345067} #random spouse to make his sons full siblings
+	7922.1.1 = {add_trait=infirm add_trait=ill}
+	7923.1.1 = {death= {death_reason=death_trait}}
+}
+11166 = {
+	name="Хармунд"	# Not a lord
+	dynasty=66
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=11066
+	mother=345067
+
+	7888.1.1 = {birth="7888.1.1"}
+	7904.1.1 = {add_trait=trained_warrior}
+	7921.1.1 = {
+		add_trait=has_greyscale
+		death = { death_reason = death_trait }
+	}
+}
+11266 = {
+	name="Харлан"	# Not a lord
+	dynasty=66
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=11066
+	mother=345067
+
+	7890.1.1 = {birth="7890.1.1 "}
+	7906.1.1 = {add_trait=skilled_warrior}
+	7922.12.26 = {
+		death = {
+			death_reason = death_murder_unknown
+			killer = 11366
+		}
+	}
+}
+11366 = {
+	name="Харвин" #  Conquerer of the Riverlands
+	dynasty=66
+
+	martial = 9
+	diplomacy = 7
+	intrigue = 6
+	stewardship = 3	
+	learning = 3
+
+	religion="drowned_god"	
+	culture="ironborn"
+			 
+	add_trait="lustful"
+	add_trait="proud"
+	add_trait="cruel"
+	add_trait="quick"
+	add_trait="ruthless"
+	add_trait="ambitious"
+	add_trait="brilliant_strategist"
+
+	father=11066
+	mother=345067
+
+	7892.1.1 = {birth="7892.1.1"}
+	7908.1.1 = {add_trait=skilled_warrior}
+	7917.1.1 = {add_spouse=344112}
+	7922.12.26 = { 
+		give_nickname="nick_hardhand" 
+		add_trait = suspected_kinslayer 
+	}
+	7956.1.1 = {death="7956.1.1"} #died age 64
+}
+12266 = {
+	name="Аша"	# not a lord
+	female=yes
+	dynasty=66
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=11066
+	mother=345067
+
+	7900.1.1 = {birth="7900.1.1"}
+	7952.1.1 = {death="7952.1.1"}
+}
+#Salt wives of Харвин
+32125 = {
+	name="Уолда" #daughter of Lord Charlton
+	dynasty=125
+	female=yes
+	
+	religion="the_seven"
+	culture="riverlander"
+
+	father=27125
+
+	add_trait=fair
+
+	7922.1.1 = {birth="7922.1.1"}
+	7940.1.1 = {
+		effect = {
+			add_trait = salt_wife
+			c_harrenhal = {
+				holder_scope = {
+					ROOT = { move_character = PREV }
+				}
+			}
+			random_courtier = {
+				limit = { character = 11366 }
+				if = {
+					limit = { NOT = { has_dlc = "The Old Gods" } }#Uses new DLC system instead if owned
+					reverse_opinion = {
+						modifier = opinion_salt_wife
+						who = ROOT
+						years = 100
+					}
+				}
+				else = {
+					add_consort = ROOT
+					reverse_opinion = {
+						modifier = opinion_forced_consort
+						who = PREV
+					}
+				}
+			}
+		}
+	}
+	7958.1.1 = {death="7958.1.1"} 	
+}
+34134 = {
+	name="Сильва" #daughter of Lord Paege
+	dynasty=134
+	female=yes
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=30134
+	
+	7927.1.1 = {birth="7927.1.1"}
+	7945.1.1 = {
+		effect = {
+			add_trait = salt_wife
+			c_harrenhal = {
+				holder_scope = {
+					ROOT = { move_character = PREV }
+				}
+			}
+			random_courtier = {
+				limit = { character = 11366 }
+				if = {
+					limit = { NOT = { has_dlc = "The Old Gods" } }#Uses new DLC system instead if owned
+					reverse_opinion = {
+						modifier = opinion_salt_wife
+						who = ROOT
+						years = 100
+					}
+				}
+				else = {
+					add_consort = ROOT
+					reverse_opinion = {
+						modifier = opinion_forced_consort
+						who = PREV
+					}
+				}
+			}
+		}
+	}
+	7960.1.1 = {death="7960.1.1"}
+}
+29148 = {
+	name="Джейн" #daughter of Lord Goodbrook
+	dynasty=148
+	female=yes
+	
+	religion="the_seven"
+	culture="riverlander"
+
+	father=30148
+
+	add_trait=fair
+	
+	7932.1.1 = {birth="7932.1.1"}
+	7950.1.1 = {
+		effect = {
+			add_trait = salt_wife
+			c_harrenhal = {
+				holder_scope = {
+					ROOT = { move_character = PREV }
+				}
+			}
+			random_courtier = {
+				limit = { character = 11366 }
+				if = {
+					limit = { NOT = { has_dlc = "The Old Gods" } }#Uses new DLC system instead if owned
+					reverse_opinion = {
+						modifier = opinion_salt_wife
+						who = ROOT
+						years = 100
+					}
+				}
+				else = {
+					add_consort = ROOT
+					reverse_opinion = {
+						modifier = opinion_forced_consort
+						who = PREV
+					}
+				}
+			}
+		}
+	}
+	7964.1.1 = {death="7964.1.1"}
+}
+#
+11466 = {
+	name="Халлек"	# a lord, continued brutal domination
+	dynasty=66
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=11366
+	mother=344112
+	
+	add_trait="authoritative"
+	add_trait="wroth"
+	add_trait="cruel"
+	add_trait="impaler"
+	add_trait="zealous"
+	add_trait="skilled_tactician"
+
+	7918.1.1 = {birth="7918.1.1"}
+	7934.1.1 = {add_trait=trained_warrior}
+	7942.1.1 = {add_spouse=152219} #random spouse to make his sons full siblings
+	7960.1.1 = {death="7960.1.1"}
+}
+11566 = {
+	name="Харрен"	# canon, a lord
+	dynasty=66
+	
+	dna = svbrmsvlkae
+	properties = fl0j00000000
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	martial = 10
+	diplomacy = 3
+	intrigue = 13
+	stewardship = 13	
+	learning = 5
+
+	father=11466
+	mother=152219
+	
+	add_trait="proud"
+	add_trait="cruel"
+	add_trait="arbitrary"
+	add_trait="ambitious"
+		   
+	7944.1.1 = {
+		birth="7944.1.1"
+		effect = {
+			107 = { 
+				add_province_modifier = { name = completeharren3 duration = -1 }
+			}	
+		}
+	}
+	7960.1.1 = {add_trait="fortune_builder"}
+	7960.1.1 = {add_trait=trained_warrior}
+	7970.1.1 = {add_spouse=41566}
+	7980.1.1 = {
+		#add_trait="tyrant8" 
+		give_nickname="nick_the_black"
+		add_trait=slave_owner
+		capital=e_iron_isles
+		effect = {
+			set_variable = { which = "tyrant" value = 40 }
+			hidden_tooltip = { character_event = { id = maintenance.1 } }#tyrant trait
+			b_harrenhal = { 
+				ROOT = { capital = PREV }
+			}
+			if = { #If Ai, get rid of Hoare Castle so they dont move capital there
+				limit = { ai = yes }		
+				b_pebbleton = {
+					holder_scope = {
+						c_pebbleton = { grant_title = PREV }
+					}
+					make_capital_holding = yes
+				}
+				b_fishbourne = { gain_title = ROOT }
+			}
+			if = {
+				limit = { has_dlc = "Way of Life" }
+				add_trait = architect
+			}
+		}	
+	}
+	7996.1.1 = {
+		effect = {
+			prestige = 750
+			if = {
+				limit = { NOT = { year = 7998 } }
+				any_vassal = {
+					opinion = {
+						who = ROOT
+						modifier = opinion_defeated_major_revolt
+						multiplier = 2
+					}
+				}
+			}
+		}	
+	}
+	7998.2.1 = {
+		death = {
+			death_reason = death_battle_dragon_fire
+			killer=77000 #roasted by Aegon
+		}
+	}
+}
+11966 = {
+	name="Харрас"	# brother NW commander
+	dynasty=66
+	
+	martial=12
+	stewardship=11
+
+	religion="old_gods" #this is so auto generated vassals aren't ironborn when he becomes lord commander
+	culture="northman"
+
+	father=11466
+	mother=152219
+
+	add_trait=tough_soldier
+	add_trait=honorable
+	add_trait=just
+		   
+	7947.1.1 = {
+		birth="7947.1.1"
+		effect = {
+			religion = drowned_god
+			culture = ironborn
+			set_graphical_culture = ironborn
+		}
+	}
+	7963.1.1 = {add_trait=trained_warrior}
+	7969.1.1 = {
+		add_trait=nightswatch	
+	}
+	7980.1.1 = {
+		effect = {
+			if = {
+				limit = { ai = yes }
+				religion = old_gods
+				culture = northman
+			}
+		}
+	}
+	8009.1.1 = {
+		death="8009.1.1"
+		religion="drowned_god"
+		culture="ironborn"
+	}
+}
+11666 = {
+	name="Харвин"	# not a lord
+	dynasty=66
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	martial = 8
+	diplomacy = 5
+	intrigue = 8
+	stewardship = 10	
+	learning = 4
+
+	father=11566
+	mother=41566
+	
+	add_trait="fortune_builder"
+	add_trait="ambitious"
+	add_trait="proud"
+	add_trait="cruel"
+
+	7974.1.1 = {birth="7974.1.1"}
+	7990.1.1 = {add_trait=trained_warrior}
+	7998.2.1 = {
+		add_trait=assign_mission_target #for house customiser linking
+		death = {
+			death_reason = death_battle_dragon_fire
+			killer=77000 #roasted by Aegon
+		}
+	}
+}
+11766 = {
+	name="Харлан"	# not a lord
+	dynasty=66
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=11566
+	mother=41566
+
+	7976.1.1 = {birth="7976.1.1"}
+	7992.1.1 = {add_trait=poor_warrior}
+	7998.2.1 = {
+		death = {
+			death_reason = death_battle_dragon_fire
+			killer=77000 #roasted by Aegon
+		}
+	}
+}
+11866 = {
+	name="Отгар"	# not a lord
+	dynasty=66
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=11566
+	mother=41566
+
+	7978.1.1 = {birth="7978.1.1"}
+	7994.1.1 = {add_trait=trained_warrior}
+	7998.1.25 = {
+		death = {
+			death_reason = death_battle_dragon_fire
+			killer=77000 #roasted by Aegon after Wailing Willows
+		}
+	}
+}
+12066 = {
+	name="Куорвин"	# not a lord
+	dynasty=66
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=11566
+	mother=41566
+
+	7979.1.1 = {birth="7979.1.1"}
+	7995.1.1 = {add_trait=trained_warrior}
+	7998.2.1 = {
+		death = {
+			death_reason = death_battle_dragon_fire
+			killer=77000  #roasted by Aegon
+		}
+	}
+}
+12166 = {
+	name="Харраг"	# not a lord
+	dynasty=66
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=11566
+	mother=41566
+
+	7980.1.1 = {birth="7980.1.1"}
+	7996.1.1 = {add_trait=trained_warrior}
+	7998.1.25 = {
+		death = {
+			death_reason = death_battle_dragon_fire
+			killer=77000 #roasted by Aegon after Wailing Willows
+		}
+	}
+}
+#Priest who claim the driftwood crown on Харрен's death
+199066 = {
+	name="Лодос"	# not a lord
+	
+	learning=10
+	diplomacy=6
+	martial=5
+	stewardship=4
+	intrigue=4
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	add_trait=zealous
+	add_trait=ambitious
+	add_trait=proud
+	add_trait=quick
+	add_trait=authoritative
+	add_trait=grey_eminence
+
+	7971.1.1 = {
+		birth="7971.1.1"
+		effect = {
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	7987.1.1 = {
+		add_trait=trained_warrior
+		add_trait=drowned
+	}
+	7998.2.1={
+		effect = { character_event = { id = aegons_landing.14 days = 1 } }
+	}
+	8001.1.1 = {
+		death = {
+			death_reason = death_suicide
+		}
+	}
+}
+#Лодос 2: Drowned God's Revenge
+198066 = {
+	name="Лодос"	# not a lord
+	
+	learning=10
+	diplomacy=6
+	martial=5
+	stewardship=4
+	intrigue=4
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	add_trait=zealous
+	add_trait=ambitious
+	add_trait=proud
+	add_trait=quick
+	add_trait=authoritative
+	add_trait=grey_eminence
+
+	7971.1.1 = {
+		birth="7971.1.1"
+		effect = {
+			dynasty = none
+			set_immune_to_pruning = yes
+			if = {
+				limit = { NOT = { start_date = 8037.9.9 } }
+				death = yes
+			}
+		}
+	}
+	7987.1.1 = {
+		add_trait=trained_warrior
+		add_trait=drowned
+	}
+	8037.9.9={
+		effect = { character_event = { id = aegons_landing.14 days = 1 } }
+	}
+	8038.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 25107 #Горен Greyjoy
+		}
+	}
+}
+
+#######################
+###House Goodbrother###
+#######################
+### Hammerhorn
+750065 = {
+	name="Добрый Брат"	# Серый Король's brother
+	dynasty = 1836582
+	martial=10
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=750064
+	
+	add_trait=skilled_tactician
+	add_trait=strong
+	add_trait=quick
+	add_trait=mystic
+	add_trait=familyperson
+	add_trait=brave
+	add_trait=content
+
+	2.1.1 = {birth="2.1.1"}
+	18.1.1 = {add_trait=master_warrior}
+	600.1.1 = {death="600.1.1"}
+}
+550111 = {
+	name="Потомки Доброго Брата"
+	dynasty = 1836582
+	
+	religion="drowned_god"
+	culture="ironborn"
+	
+	occluded = yes
+	
+	father = 750065
+
+	600.1.1 = {birth="600.1.1"}
+	5058.1.1 = {death="5058.1.1"}
+}
+550112 = {
+	name = Урратон #King Урратон IV
+	dynasty = 112 #Goodbrother
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 550111 
+	
+	add_trait=ambitious
+	add_trait=cruel
+	add_trait=arbitrary
+	add_trait=authoritative
+	add_trait=ruthless
+	add_trait=skilled_tactician
+	add_trait=cynical
+	add_trait=proud
+
+	5058.1.1 = {
+		birth=5058.1.1
+	}
+	5074.1.1 = {
+		add_trait=trained_warrior
+	}
+	5087.1.1 = {
+		give_nickname = nick_badbrother
+	}
+	5089.1.1 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+551112 = {
+	name = "Потомки Урратона"
+	dynasty = 112 #Goodbrother
+
+	religion=drowned_god
+	culture=ironborn
+	
+	occluded = yes
+
+	father = 550112
+
+	5089.1.1 = {
+		birth=yes
+		give_nickname = nick_badbrother
+	}
+	7943.1.1 = {
+		death = yes
+	}
+}
+343112 = {		
+	name="Харлон"	
+	dynasty=112	
+	
+	father=551112 # Потомки Урратон
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	7841.1.1 = { birth="7841.1.1"}
+	7883.1.1 = { death="7883.1.1"}
+}
+342112 = {		
+	name="Гелмарр"	
+	dynasty=112	
+	
+	father=343112
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	7869.1.1 = { birth="7869.1.1"}
+	7903.1.1 = { death="7903.1.1"}
+}
+341112 = {		
+	name="Фергон"	
+	dynasty=112	
+	
+	father=342112
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	7895.1.1 = { birth="7895.1.1"}
+	7933.1.1 = { death="7933.1.1"}
+}
+344112 = {		
+	name="Гизелла"	
+	dynasty=112
+	female=yes	
+	
+	father=342112
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	7897.1.1 = { birth="7897.1.1"}
+	7945.1.1 = { death="7945.1.1"}
+}
+340112 = {		
+	name="Отгар"	
+	dynasty=112	
+	
+	father=341112
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	7918.1.1 = { birth="7918.1.1"}
+	7960.1.1 = { death="7960.1.1"}
+}
+110112 = {		
+	name="Крегорн"	
+	dynasty=112	
+	
+	father=340112 
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	7940.1.1 = { birth="7940.1.1"}
+	7972.1.1 = { death="7972.1.1"}
+}
+108112 = {		
+	name="Дейл"	
+	dynasty=112	
+	
+	father=110112
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	7962.1.1 = { birth="7962.1.1"}
+	7991.1.1 = { death="7991.1.1"}
+}
+107112 = {		
+	name="Торвольд"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=108112
+	
+	add_trait=strong
+	
+	7975.1.1 = { birth="7975.1.1"}
+	7991.1.1 = {add_trait=skilled_warrior add_trait=content add_trait=brave}
+	7998.2.1 = {
+		death = {
+			death_reason = death_battle #maybe killed in chaos after Харрен's death
+		}
+	}
+}
+6500112 = {		
+	name="Квеллон"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=108112
+	
+	add_trait=strong
+	
+	7980.1.1 = {birth="7980.1.1"}
+	7990.1.1 = {add_trait=content}
+	7996.1.1 = {add_trait=skilled_warrior add_trait=brave employer=11566 }
+	7998.2.1 = {
+		death = {
+			death_reason = death_battle #maybe killed in chaos after Харрен's death
+		}
+	}
+}
+106112 = {		
+	name="Джосеран"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=107112
+	
+	7996.1.1 = { birth="7996.1.1"}
+	8055.1.1 = { death="8055.1.1"}
+}
+105112 = {		
+	name="Джосеран"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=106112
+	
+	8032.1.1 = { birth="8032.1.1"}
+	8104.1.1 = { death="8104.1.1"}
+}
+104112 = {		
+	name="Родрик"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=105112
+	
+	8067.1.1 = { birth="8067.1.1"}
+	8134.5.1 = {
+		death = {
+			death_reason=death_execution
+			killer=23199
+		}
+	}
+}
+88000807 = {		
+	name="Гюнтор"	#Canon, slayed Алестер Wynch
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=104112
+
+	add_trait=tough_soldier
+	add_trait=skilled_warrior
+	add_trait=strong
+	add_trait=wroth
+	add_trait=lustful
+	
+	8100.1.1 = { birth="8100.1.1"}
+	8134.5.1 = {
+		death = {
+			death_reason=death_battle
+		}
+	}
+}
+103112 = {		
+	name="Артур"	#Canon, slayed Leo Costayne
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=104112
+
+	add_trait=tough_soldier
+	add_trait=skilled_warrior
+	add_trait=wroth
+	add_trait=brave
+	
+	8106.1.1 = { birth="8106.1.1"}
+	8165.1.1 = { death="8165.1.1"}
+}
+102112 = {		
+	name="Рорин"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=103112
+	
+	8132.1.1 = { birth="8132.1.1"}
+	8197.1.1 = { death="8197.1.1"}
+}
+412112 = {		
+	name="Гвинесса"	
+	female=yes
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=103112
+	
+	8125.1.1 = { birth="8125.1.1"}
+	8201.1.1 = { death="8201.1.1"}
+}
+101112 = {		
+	name="Дукк"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=102112
+	
+	8183.1.1 = {birth="8183.1.1"}
+	8242.1.1 = {death="8242.1.1"}
+}
+150112 = {		
+	name="Ширли"	
+	female=yes
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=102112
+	
+	8180.1.1 = {birth="8180.1.1"}
+	8242.1.1 = {death="8242.1.1"}
+}
+100112 = {		
+	name="Горен"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=101112
+	
+	8220.1.1 = { birth="8220.1.1"}
+	8245.1.1 = { add_spouse=901112 }
+	8276.1.1 = { death="8276.1.1"}
+}
+901112 = {		
+	name="Гизелла"	
+	female=yes
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	8220.1.1 = {birth="8220.1.1"}
+	8276.1.1 = {death="8276.1.1"}
+}
+
+### Shatterstone
+214112 = {		
+	name="Гормонд"	
+	dynasty=112	
+	
+	father=343112
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	7871.1.1 = { birth="7871.1.1"}
+	7920.1.1 = { death="7920.1.1"}
+}
+215112 = {		
+	name="Грен"	
+	dynasty=112	
+	
+	father=214112
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	7895.1.1 = { birth="7895.1.1"}
+	7945.1.1 = { death="7945.1.1"}
+}
+216112 = {		
+	name="Гермунд"	
+	dynasty=112	
+	
+	father=215112
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	7920.1.1 = { birth="7920.1.1"}
+	7970.1.1 = { death="7970.1.1"}
+}
+217112 = {		
+	name="Горен"	
+	dynasty=112	
+	
+	father=216112
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	7945.1.1 = { birth="7945.1.1"}
+	7995.1.1 = { death="7995.1.1"}
+}
+218112 = {		
+	name="Джайлс"	
+	dynasty=112	
+	
+	father=217112
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	7970.1.1 = { birth="7970.1.1"}
+	8020.1.1 = { death="8020.1.1"}
+}
+212112 = {		
+	name="Уолдон"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=218112
+
+	7989.1.1 = { birth="7989.1.1"}	
+	8043.1.1 = { death="8043.1.1"}	
+}
+211112 = {		
+	name="Куоред"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=212112
+
+	8012.1.1 = { birth="8012.1.1"}	
+	8081.1.1 = { death="8081.1.1"}	
+}
+210112 = {		
+	name="Дагон"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=211112
+
+	8041.1.1 = { birth="8041.1.1"}	
+	8123.1.1 = { death="8123.1.1"}	
+}
+209112 = {		
+	name="Хильмар"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=210112
+
+	8076.1.1 = { birth="8076.1.1"}	
+	8139.1.1 = { death="8139.1.1"}	
+}
+208112 = {		
+	name="Тарл"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=209112
+
+	8101.1.1 = { birth="8101.1.1"}	
+	8167.1.1 = { death="8167.1.1"}	
+}
+207112 = {		
+	name="Гинир"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=208112
+
+	8132.1.1 = { birth="8132.1.1"}	
+	8188.1.1 = { death="8188.1.1"}	
+}
+206112 = {		
+	name="Гинир"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=207112
+
+	8168.1.1 = { birth="8168.1.1"}	
+	8207.1.1 = { death="8207.1.1"}	
+}
+205112 = {		
+	name="Дукк"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=206112
+
+	8198.1.1 = { birth="8198.1.1"}	
+	8254.1.1 = { death="8254.1.1"}	
+}
+204112 = {		
+	name="Фралегг"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=205112
+
+	8226.1.1 = { birth="8226.1.1"}	
+	8279.1.1 = { death="8279.1.1"}	
+}
+
+### Crow Spike Keep
+516112 = {		
+	name="Норн"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=340112
+
+	7950.1.1 = { birth="7950.1.1"}
+	8000.1.1 = { death="8000.1.1"}
+}
+515112 = {		
+	name="Харрен"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=516112
+
+	7975.1.1 = { birth="7975.1.1"}
+	8025.1.1 = { death="8025.1.1"}
+}
+514112 = {		
+	name="Квеллон"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=515112
+
+	8000.1.1 = { birth="8000.1.1"}
+	8050.1.1 = { death="8050.1.1"}
+}
+513112 = {		
+	name="Гормонд"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=514112
+
+	8025.1.1 = { birth="8025.1.1"}
+	8075.1.1 = { death="8075.1.1"}
+}
+512112 = {		
+	name="Гюнтор"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=513112
+
+	8050.1.1 = { birth="8050.1.1"}
+	8100.1.1 = { death="8100.1.1"}
+}
+511112 = {		
+	name="Адрак"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=512112
+
+	8075.1.1 = { birth="8075.1.1"}
+	8125.1.1 = { death="8125.1.1"}
+}
+510112 = {		
+	name="Алестер"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=511112
+
+	8100.1.1 = { birth="8100.1.1"}
+	8150.1.1 = { death="8150.1.1"}
+}
+509112 = {		
+	name="Артур"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=510112
+
+	8125.1.1 = { birth="8125.1.1"}
+	8175.1.1 = { death="8175.1.1"}
+}
+508112 = {		
+	name="Урратон"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=509112
+
+	8150.1.1 = { birth="8150.1.1"}
+	8200.1.1 = { death="8200.1.1"}
+}
+507112 = {		
+	name="Дальтон"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=508112
+
+	8175.1.1 = { birth="8175.1.1"}
+	8225.1.1 = { death="8225.1.1"}
+}
+506112 = {		
+	name="Дунстан"	
+	dynasty=112	
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=507112
+
+	8200.1.1 = { birth="8200.1.1"}
+	8250.1.1 = { death="8250.1.1"}
+}
+
+### Orkmont
+111112 = {		
+	name="Горен"	
+	dynasty=112	
+	
+	father=110112
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	7968.1.1 = { birth="7968.1.1"}
+	8013.1.1 = { death="8013.1.1"}
+}
+112112 = {		
+	name="Родрик"	
+	dynasty=112	
+	
+	father=111112
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	7992.1.1 = { birth="7992.1.1"}
+	8057.1.1 = { death="8057.1.1"}
+}
+113112 = {		
+	name="Гормонд"	
+	dynasty=112	
+	
+	father=112112
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	8020.1.1 = { birth="8020.1.1"}
+	8065.1.1 = { death="8065.1.1"}
+}
+114112 = {		
+	name="Теон"	
+	dynasty=112	
+	
+	father=113112
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	8047.1.1 = { birth="8047.1.1"}
+	8102.1.1 = { death="8102.1.1"}
+}
+115112 = {		
+	name="Ленвуд"	
+	dynasty=112	
+	
+	father=114112
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	8080.1.1 = { birth="8080.1.1"}
+	8126.1.1 = { death="8126.1.1"}
+}
+116112 = {		
+	name="Верлаг"	
+	dynasty=112	
+	
+	father=115112
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	8108.1.1 = { birth="8108.1.1"}
+	8151.1.1 = { death="8151.1.1"}
+}
+117112 = {		
+	name="Кеннед"	
+	dynasty=112	
+	
+	father=116112
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	8132.1.1 = { birth="8132.1.1"}
+	8183.1.1 = { death="8183.1.1"}
+}
+118112 = {		
+	name="Лорон"	
+	dynasty=112	
+	
+	father=117112
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	8164.1.1 = { birth="8164.1.1"}
+	8210.1.1 = { death="8210.1.1"}
+}
+119112 = {		
+	name="Отгар"	
+	dynasty=112	
+	
+	father=118112
+
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	8190.1.1 = { birth="8190.1.1"}
+	8245.1.1 = { death="8245.1.1"}
+}
+
+###################
+###House Farwynd###
+###################
+### Lonely Light 
+344114 = {
+	name="Лоррен"	# a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7823.1.1 = {birth="7823.1.1"}
+	7875.1.1 = {death="7875.1.1"}
+}
+343114 = {
+	name="Гилберт"	# a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=344114
+
+	7847.1.1 = {birth="7847.1.1"}
+	7888.1.1 = {death="7888.1.1"}
+}
+342114 = {
+	name="Урригон"	# a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=343114
+
+	7870.1.1 = {birth="7870.1.1"}
+	7915.1.1 = {death="7915.1.1"}
+}
+341114 = {
+	name="Фралегг"	# a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=342114
+
+	7897.1.1 = {birth="7897.1.1"}
+	7942.1.1 = {death="7942.1.1"}
+}
+340114 = {
+	name="Гилберт"	# a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=341114
+
+	7919.1.1 = {birth="7919.1.1"}
+	7966.1.1 = {death="7966.1.1"}
+}
+3001114 = {
+	name="Фергон"	# a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=340114
+
+	7946.1.1 = {birth="7946.1.1"}
+	8009.1.1 = {death="8009.1.1"}
+}
+3002114 = {
+	name="Эурон"	# a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3001114
+
+	7966.1.1 = {birth="7966.1.1"}
+	8024.1.1 = {death="8024.1.1"}
+}
+3005114 = {
+	name="Родрик"	# a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3002114
+
+	7995.1.1 = {birth="7995.1.1"}
+	8011.1.1 = {add_trait=poor_warrior}
+	8038.1.1 = {death="8038.1.1"}
+}
+40018114 = {
+	name="Грейдон" # Родрик's son, a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=3005114
+
+	8015.1.1 = {birth="8015.1.1"}
+	8068.1.1 = {death="8068.1.1"}
+}
+30038114 = {
+	name="Квеллон"	# Грейдон's son, a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=40018114
+
+	8044.1.1 = {birth="8044.1.1"}
+	8060.1.1 = { add_trait=trained_warrior}
+	8092.1.1 = {death="8092.1.1"}
+}
+30048114 = {
+	name="Ширли"	# Квеллон's daughter, a lord
+	female=yes
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=30038114
+
+	8067.1.1 = {birth="8067.1.1"}
+	8106.1.1 = {death="8106.1.1"}
+}
+40048114 = {
+	name="Квален"
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8067.1.1 = {birth="8067.1.1"}
+	8085.1.1 = {add_matrilineal_spouse=30048114}
+	8106.1.1 = {death="8106.1.1"}
+}
+30068114 = {
+	name="Дунстан"	# Ширли's son, a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=40048114
+	mother=30048114
+
+	8089.1.1 = {birth="8089.1.1"}
+	8105.1.1 = { add_trait=skilled_warrior}
+	8138.1.1 = {death="8138.1.1"}
+}
+30098114 = {
+	name="Виктарион"	# Дунстан's son, a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=30068114
+
+	8109.1.1 = {birth="8109.1.1"}
+	8125.1.1 = { add_trait=trained_warrior}
+	8160.1.1 = {death="8160.1.1"}
+}
+30138114 = {
+	name="Эрик"	# Эрик Longknife
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=30068114
+
+	8121.1.1 = {birth="8121.1.1"}
+	8137.1.1 = {add_trait=skilled_warrior}
+	8180.1.1 = {death="8180.1.1"}
+}
+30148114 = {
+	name="Родрик"	# Виктарион's son, a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=30098114
+
+	8133.1.1 = {birth="8133.1.1"}
+	8149.1.1 = { add_trait=poor_warrior}
+	8203.1.1 = {death="8203.1.1"}
+}
+30158114 = {
+	name="Малора"	# Родрик's daughter, a lord
+	female=yes
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=30148114
+
+	8162.1.1 = {birth="8162.1.1"}
+	8218.1.1 = {death="8218.1.1"}
+}
+40158114 = {
+	name="Артур"
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8162.1.1 = {birth="8162.1.1"}
+	8180.1.1 = {add_matrilineal_spouse=30158114}
+	8218.1.1 = {death="8218.1.1"}
+}
+30188114 = {
+	name="Кеннед"	# Малора's son, a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=40158114
+	mother=30158114
+
+	8191.1.1 = {birth="8191.1.1"}
+	8207.1.1 = {add_trait=trained_warrior}
+	8239.1.1 = {death="8239.1.1"}
+}
+30218114 = {
+	name="Ульф"	# Кеннед's son, a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=30188114
+
+	8219.1.1 = {birth="8219.1.1"}
+	8235.1.1 = {add_trait=skilled_warrior}
+	8237.1.1 = {add_spouse=40218114}
+	8270.1.1 = {death="8270.1.1"}
+}
+40218114 = {
+	name="Мэйган"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8219.1.1 = {birth="8219.1.1"}
+	8270.1.1 = {death="8270.1.1"}
+}
+### Sealskin Point
+3019114 = {
+	name="Ульф"	# a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=344114
+
+	7850.1.1 = {birth="7850.1.1"}
+	7900.1.1 = {death="7900.1.1"}
+}
+3018114 = {
+	name="Кеннед"	# a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3019114
+
+	7870.1.1 = {birth="7870.1.1"}
+	7917.1.1 = {death="7917.1.1"}
+}
+3020114 = {
+	name="Эрик"	# a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3018114
+
+	7896.1.1 = {birth="7896.1.1"}
+	7940.1.1 = {death="7940.1.1"}
+}
+3021114 = {
+	name="Дагмер"	# a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3020114
+
+	7920.1.1 = {birth="7920.1.1"}
+	7969.1.1 = {death="7969.1.1"}
+}
+3015114 = {
+	name="Дейл"	# a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3021114
+
+	7941.1.1 = {birth="7941.1.1"}
+	8000.1.1 = {death="8000.1.1"}
+}
+3000114 = {
+	name="Андрик"	# a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3015114
+
+	7968.1.1 = {birth="7968.1.1"}
+	7983.1.1 = { add_trait=poor_warrior}
+	8016.1.1 = {death="8016.1.1"}
+}
+3003114 = {
+	name="Дреннан"	# Рагнор's son, a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3000114
+
+	7990.1.1 = {birth="7990.1.1"}
+	8006.1.1 = { add_trait=poor_warrior}
+	8032.1.1 = {death="8032.1.1"}
+}
+3006114 = {
+	name="Фалия"	# Дреннан's daughter, a lord
+	female=yes
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3003114
+
+	8022.1.1 = {birth="8022.1.1"}
+	8070.1.1 = {death="8070.1.1"}
+}
+4006114 = {
+	name="Квентон"
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8022.1.1 = {birth="8022.1.1"}
+	8040.1.1 = {add_matrilineal_spouse=3006114}
+	8070.1.1 = {death="8070.1.1"}
+}
+3007114 = {
+	name="Беннарион"	# Фалия's son, a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=4006114
+	mother=3006114
+
+	8049.1.1 = {birth="8049.1.1"}
+	8065.1.1 = {add_trait=poor_warrior}
+	8080.1.1 = {death="8080.1.1"}
+}
+3011114 = {
+	name="Брелла"	# Беннарион's daughter, a lord
+	female=yes
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3007114
+
+	8079.1.1 = {birth="8079.1.1"}
+	8135.1.1 = {death="8135.1.1"}
+}
+4011114 = {
+	name="Торвольд"
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8079.1.1 = {birth="8079.1.1"}
+	8097.1.1 = {add_matrilineal_spouse=3011114}
+	8135.1.1 = {death="8135.1.1"}
+}
+3012114 = {
+	name="Эйрон"	# Брелла's son, a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=4011114
+	mother=3011114
+
+	8111.1.1 = {birth="8111.1.1"}
+	8127.1.1 = {add_trait=trained_warrior}
+	8148.1.1 = {death="8148.1.1"}
+}
+3014114 = {
+	name="Тристифер"	# Эйрон's son, a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3012114
+
+	8134.1.1 = {birth="8134.1.1"}
+	8150.1.1 = {add_trait=poor_warrior}
+	8189.1.1 = {death="8189.1.1"}
+}
+3016114 = {
+	name="Денис"	# Тристифер's son, a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3014114
+
+	8161.1.1 = {birth="8161.1.1"}
+	8177.1.1 = { add_trait=trained_warrior}
+	8211.1.1 = {death="8211.1.1"}
+}
+3017114 = {
+	name="Квентон"	# Денис's son, a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3016114
+
+	8180.1.1 = {birth="8180.1.1"}
+	8196.1.1 = { add_trait=poor_warrior}
+	8239.1.1 = {death="8239.1.1"}
+}
+3024114 = {
+	name="Харл"	# Квентон's son, a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3017114
+
+	8210.1.1 = {birth="8210.1.1"}
+	8226.1.1 = { add_trait=poor_warrior}
+	8257.1.1 = {death="8257.1.1"}
+}
+3025114 = {
+	name="Эрл"	# Харл's son, a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3024114
+
+	8237.1.1 = {birth="8237.1.1"}
+	8253.1.1 = { add_trait=poor_warrior}
+	8255.1.1 = {add_spouse=4025114}
+	8273.1.1 = {death="8273.1.1"}
+}
+4025114 = {
+	name="Френья"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8237.1.1 = {birth="8237.1.1"}
+	8273.1.1 = {death="8273.1.1"}
+}
+3030114 = {
+	name="Эурон"	# Эрл's son, not a lord
+	dynasty=114
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3025114
+	mother=4025114
+
+	8256.1.1 = {birth="8256.1.1"}
+	8272.1.1 = { add_trait=skilled_warrior}
+	8307.1.1 = {death="8307.1.1"}
+}
+
+##################
+###House Harlaw###
+##################
+503122 = {
+	name="Харлоу"
+	dynasty = 1836582
+
+	add_trait=brilliant_strategist
+	add_trait=strong
+	add_trait=tall
+	add_trait=master_warrior
+	add_trait=brave
+	add_trait=diligent
+	add_trait=viking
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=750066
+
+	92.1.1 = {birth="92.1.1"}
+	137.1.1 = {death="137.1.1"}
+}
+504122 = {
+	name="Потомки Харлоу"
+	dynasty = 1836582
+	
+	religion="drowned_god"
+	culture="ironborn"
+	
+	occluded = yes
+	
+	father = 503122
+
+	137.1.1 = {birth="137.1.1"}
+	4313.1.1 = {death="4313.1.1"}
+}
+500122 = {
+	name = Эрих #King Эрих V
+	dynasty = 122 #Harlaw
+	
+	martial=8
+
+	religion=drowned_god
+	culture=ironborn
+
+	father=504122
+
+	add_trait=ambitious
+	add_trait=authoritative
+	add_trait=skilled_tactician
+
+	4313.1.1 = {
+		birth=4313.1.1
+	}
+	4329.1.1 = {
+		add_trait=skilled_warrior
+	}
+	4376.1.1 = {
+		death=4376.1.1
+	}
+}
+501122 = {
+	name = Харрон #King Харрон 
+	dynasty = 122 #Harlaw
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 500122
+	
+	add_trait=tough_soldier 
+	add_trait=strong
+	add_trait=brave
+
+	4347.1.1 = {
+		birth=4347.1.1
+	}
+	4363.1.1 = {
+		add_trait=skilled_warrior
+	}
+	4393.1.1 = {
+		death=4393.1.1
+	}
+}
+
+502122 = {
+	name = "Потомки Харрона"
+	dynasty = 122 #Harlaw
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 501122
+	
+	occluded = yes
+
+	4393.1.1 = {
+		birth=yes
+	}
+	7823.1.1 = {
+		death=yes
+	}
+}
+341122 = {
+	name="Харл"	# a lord
+	dynasty=122
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=502122
+
+	7823.1.1 = {birth="7823.1.1"}
+	7839.1.1 = {add_trait=trained_warrior}
+	7874.1.1 = {death="7874.1.1"}
+}
+340122 = {
+	name="Харрас"	# a lord
+	dynasty=122
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=341122
+
+	7852.1.1 = {birth="7852.1.1"}
+	7868.1.1 = {add_trait=skilled_warrior}
+	7901.1.1 = {death="7901.1.1"}
+}
+3100122 = {
+	name="Горольд"	# a lord
+	dynasty=122
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=340122
+
+	7878.1.1 = {birth="7878.1.1"}
+	7894.1.1 = {add_trait=skilled_warrior}
+	7940.1.1 = {death="7940.1.1"}
+}
+3201122 = {
+	name="Ленвуд"	# a lord
+	dynasty=122
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3100122
+
+	7906.1.1 = {birth="7906.1.1"}
+	7922.1.1 = {add_trait=skilled_warrior}
+	7924.1.1 = {add_spouse=4201122}
+	7996.1.1 = {death="7996.1.1"}
+}
+4201122 = {
+	name="Гвин"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7906.1.1 = {birth="7906.1.1"}
+	7996.1.1 = {death="7996.1.1"}
+}
+300122 = {
+	name="Амброд"	# a lord
+	dynasty=122
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father = 3201122
+	mother = 4201122
+
+	7955.1.1 = {birth="7955.1.1"}
+	7971.1.1 = {add_trait=trained_warrior}
+	7973.1.1 = {add_spouse=400122}
+	7998.2.1 = {
+		death = {
+			death_reason = death_battle #maybe killed in chaos after Харрен's death
+		}
+	}
+}
+400122 = {
+	name="Харра"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7955.1.1 = {birth="7955.1.1"}
+	8026.1.1 = {death="8026.1.1"}
+}
+302122 = {
+	name="Сигрин"	# a lord
+	dynasty=122
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=300122
+	mother=400122
+
+	7977.1.1 = {birth="7977.1.1"}
+	7993.1.1 = {add_trait=trained_warrior}
+	8032.1.1 = {death="8032.1.1"}
+}
+308122 = {
+	name="Харлан"	# a lord
+	dynasty=122
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=302122
+
+	8007.1.1 = {birth="8007.1.1"}
+	8023.1.1 = {add_trait=trained_warrior}
+	8025.1.1 = {add_spouse=304054} #one of Tarth triplets
+	8060.1.1 = {death="8060.1.1"}
+}
+310122 = {
+	name="Эрик"	# a lord
+	dynasty=122
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=308122
+	mother=304054
+
+	8031.1.1 = {birth="8031.1.1"}
+	8047.1.1 = {add_trait=poor_warrior}
+	8090.1.1 = {death="8090.1.1"}
+}
+312122 = {
+	name="Гормонд"	# a lord
+	dynasty=122
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=310122
+
+	8059.1.1 = {birth="8059.1.1"}
+	8075.1.1 = {add_trait=skilled_warrior}
+	8115.1.1 = {death="8115.1.1"}
+}
+313122 = {
+	name="Марон"	# a lord
+	dynasty=122
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=312122
+
+	8083.1.1 = {birth="8083.1.1"}
+	8099.1.1 = {add_trait=trained_warrior}
+	8134.5.1 = {
+		death = {
+			death_reason=death_execution
+			killer=23199
+		}
+	}
+}
+316122 = {
+	name="Эурон"	# a lord
+	dynasty=122
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=313122
+
+	8105.1.1 = {birth="8105.1.1"}
+	8121.1.1 = {add_trait=skilled_warrior}
+	8163.1.1 = {death="8163.1.1"}
+}
+16122 = {
+	name="Теомор"	#built ten towers
+	dynasty=122	
+	
+	stewardship=10
+	
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	add_trait="proud"
+	add_trait="wroth"
+	add_trait="diligent"
+	add_trait="midas_touched"
+	
+	father=316122
+
+	8132.1.1 = {birth="8132.1.1"}	
+	8148.1.1 = { add_trait="trained_warrior" add_spouse = 111122 }	
+	8153.1.1 = {add_spouse = 112122}	
+	8165.1.1 = {add_spouse = 113122}
+	8179.1.1 = {add_spouse = 110122}	
+	8182.1.1 = {add_spouse = 114122}	
+	8192.1.1 = {add_spouse = 115122}	
+	8201.1.1 = {death="8201.1.1"}
+}
+315122 = {
+	name="Боремунд"	# not a lord
+	dynasty=122
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=316122
+
+	8140.1.1 = {birth="8140.1.1"}
+	8156.1.1 = {add_trait=poor_warrior add_spouse=3007109}
+	8192.1.1 = {death="8192.1.1"}
+}
+#6 wives
+111122 = {	
+	name="Джейн"	
+	female=yes
+
+	add_trait="naive_appeaser"
+	
+	religion="drowned_god"	
+	culture="ironborn"
+
+	8115.1.1 = {birth="8115.1.1"}	
+	8152.1.1 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+112122 = {	
+	name="Яра"	
+	female=yes
+
+	add_trait="naive_appeaser"
+	
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	8131.1.1 = {birth="8131.1.1"}	
+	8162.1.1 = {
+		add_trait= ill
+		death = {
+			death_reason = death_trait
+		}
+	}
+}
+113122 = {	
+	name="Вилла"	
+	female=yes
+
+	add_trait="naive_appeaser"
+	
+	religion="drowned_god"	
+	culture="ironborn"
+
+	8127.1.1 = {birth="8127.1.1"}	
+	8178.1.1 = {death="8178.1.1"}
+}
+110122 = {	
+	name="Танда"	
+	female=yes
+
+	add_trait="naive_appeaser"
+	
+	religion="drowned_god"	
+	culture="ironborn"
+
+	8153.1.1 = {birth="8153.1.1"}	
+	8180.1.1 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+114122 = {	
+	name="Аланнис"	
+	female=yes
+
+	add_trait="naive_appeaser"
+	
+	religion="drowned_god"	
+	culture="ironborn"
+
+	8150.1.1 = {birth="8150.1.1"}	
+	8190.1.1 = {death="8190.1.1"}
+}
+115122 = {	
+	name="Стеффария"	
+	female=yes
+
+	add_trait="naive_appeaser"
+	
+	religion="drowned_god"	
+	culture="ironborn"
+
+	8135.1.1 = {birth="8135.1.1"}	
+	8208.1.1 = {death="8208.1.1"}
+}
+##Issue of Теомор
+17122 = {
+	name="Боремунд"	#unknown
+	dynasty=122	
+	
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=16122
+	mother=113122
+
+	8166.1.1 = {birth="8166.1.1"}	
+	8167.1.1 = {death="8167.1.1"}
+}
+18122 = {
+	name="Зигфрид"	#unknown
+	dynasty=122	
+	
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=16122
+	mother=113122
+
+	8169.1.1 = {birth="8169.1.1"}	
+	8169.5.1 = {death="8169.5.1"}
+}
+19122 = {
+	name="Родрик"	#unknown
+	dynasty=122	
+	
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	father=16122
+	mother=113122
+
+	8175.1.1 = {birth="8175.1.1"}	
+	8175.4.1 = {death="8175.4.1"}
+}
+14122 = {
+	name="Теон"	#unknown
+	dynasty=122	
+	
+	religion="drowned_god"	
+	culture="ironborn"
+	
+	add_trait="proud"
+	add_trait="tough_soldier"
+	
+	father=16122
+	mother=110122
+
+	8180.1.1 = {birth="8180.1.1"}	
+	8196.1.1 = {add_trait="skilled_warrior"}
+	8196.6.6 = {add_trait="nightfall"}
+	8208.1.1 = {add_spouse = 54107}	 #random greyjoy
+	8234.1.1 = {death="8234.1.1"}
+}
+
+###################
+###House Volmark###
+###################
+101119 = {
+	name="Йорл Кит"
+	dynasty = 1836582
+
+	add_trait=brilliant_strategist
+	add_trait=is_fat
+	add_trait=master_warrior
+	add_trait=gluttonous
+	add_trait=brave
+	add_trait=viking
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=750066
+
+	90.1.1 = {birth="90.1.1"}
+	105.1.1 = {
+		effect = {
+			set_variable = { which = physique_variable value = 35 }		
+			add_character_modifier = { name = obese_modifier duration = -1 }
+		}
+	}
+	131.1.1 = {death="131.1.1"}
+}
+102119 = {
+	name="Потомки Йорла Кита"
+	dynasty = 1836582
+	
+	religion="drowned_god"
+	culture="ironborn"
+	
+	occluded = yes
+	
+	father = 101119
+
+	131.1.1 = {birth="131.1.1"}
+	7834.1.1 = {death="7834.1.1"}
+}
+342119 = {
+	name="Виктарион"	# a lord
+	dynasty=119
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=102119
+
+	7834.1.1 = {birth="7834.1.1"}
+	7850.1.1 = {add_trait=trained_warrior}
+	7879.1.1 = {death="7879.1.1"}
+}
+341119 = {
+	name="Ленвуд"	# a lord
+	dynasty=119
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=342119
+
+	7859.1.1 = {birth="7859.1.1"}
+	7875.1.1 = {add_trait=trained_warrior}
+	7903.1.1 = {death="7903.1.1"}
+}
+340119 = {
+	name="Викон"	# a lord
+	dynasty=119
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=341119
+
+	7881.1.1 = {birth="7881.1.1"}
+	7897.1.1 = {add_trait=trained_warrior}
+	7925.1.1 = {death="7925.1.1"}
+}
+150119 = {
+	name="Марон"	# a lord, married into House Hoare
+	dynasty=119
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=340119
+
+	7905.1.1 = {birth="7905.1.1"}
+	7921.1.1 = {add_trait=trained_warrior}
+	7925.1.1 = {add_spouse=12266} #Hoare
+	7970.1.1 = {death="7970.1.1"}
+}
+152219 = {
+	name="Аланнис"
+	dynasty=119
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=150119
+	mother=12266
+
+	7928.1.1 = {birth="7928.1.1"}
+	7952.1.1 = { effect = { e_iron_isles = { add_weak_claim = ROOT } } }
+	7980.1.1 = {death="7980.1.1"}
+}
+151119 = {
+	name="Родрик"	# a lord
+	dynasty=119
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=150119
+	mother=12266
+
+	7931.1.1 = {birth="7931.1.1"}
+	7947.1.1 = {add_trait=poor_warrior}
+	7949.1.1 = {add_spouse=451119}
+	7952.1.1 = { effect = { e_iron_isles = { add_weak_claim = ROOT } } }
+	7990.1.1 = {death="7990.1.1"}
+}
+451119 = {
+	name="Инис"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7931.1.1 = {birth="7931.1.1"}
+	7990.1.1 = {death="7990.1.1"}
+}
+3000119 = {
+	name="Куорен"	# a lord, canon, claimed kingship
+	dynasty=119
+	
+	martial=7
+	diplomacy=5
+	intrigue=4
+	stewardship=4
+	learning=2
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=151119
+	mother=451119
+	
+	add_trait=ambitious
+	add_trait=proud
+	add_trait=tough_soldier
+
+	7970.1.1 = {birth="7970.1.1"}
+	7986.1.1 = {add_trait=trained_warrior}
+	7990.1.1 = { effect = { e_iron_isles = { add_weak_claim = ROOT } } }
+	7993.1.1 = {
+		add_spouse =453119
+	}
+	7998.2.1={ 
+		effect = { 
+			character_event = { id = aegons_landing.15 days = 1 } #rebellion
+		} 
+	}
+	8001.1.1 = {
+		death = {
+			death_reason = death_battle_dragon_fire
+			killer=77000
+		}
+	}
+}
+453119 = {
+	name="Шера"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7970.1.1 = {birth="7970.1.1"}
+	8029.1.1 = {death="8029.1.1"}
+}
+3001119 = {
+	name="Гудрун"	# not a lord
+	female=yes
+	dynasty=119
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3000119
+	mother=453119
+
+	7994.1.1 = {birth="7994.1.1"}
+	8027.1.1 = {death="8027.1.1"}
+}
+3002119 = {
+	name="Гизелла"	# not a lord
+	female=yes
+	dynasty=119
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3000119
+	mother=453119
+
+	7996.1.1 = {birth="7996.1.1"}
+	8017.1.1 = {death="8017.1.1"}
+}
+3003119 = {
+	name="Харрен"	# a lord
+	dynasty=119
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3000119
+	mother=453119
+
+	8000.1.1 = {birth="8000.1.1"} #newly born at the time of his father's death
+	8016.1.1 = {add_trait=poor_warrior}
+	8033.1.1 = {
+		death = { #rebelled against Greyjoys
+			death_reason = death_execution
+			killer=25107
+		}
+	}
+}
+3004119 = {
+	name="Урригон"	# a lord
+	dynasty=119
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3003119
+
+	8030.1.1 = {birth="8030.1.1"}
+	8046.1.1 = {add_trait=trained_warrior}
+	8084.1.1 = {death="8084.1.1"}
+}
+3005119 = {
+	name="Альвин"	# a lord
+	dynasty=119
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3004119
+
+	8056.1.1 = {birth="8056.1.1"}
+	8072.1.1 = {add_trait=poor_warrior}
+	8112.1.1 = {death="8112.1.1"}
+}
+3010119 = {
+	name="Лорон"	# a lord
+	dynasty=119
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3005119
+
+	8080.1.1 = {birth="8080.1.1"}
+	8096.1.1 = {add_trait=poor_warrior}
+	8134.5.1 = {
+		death = {
+			death_reason=death_execution
+			killer=23199
+		}
+	}
+}
+3014119 = {
+	name="Доннел"	# a lord
+	dynasty=119
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3010119
+
+	8098.1.1 = {birth="8098.1.1"}
+	8114.1.1 = {add_trait=trained_warrior}
+	8161.1.1 = {death="8161.1.1"}
+}
+3017119 = {
+	name="Вилла"	# not a lord, from MUSH
+	female=yes
+	dynasty=119
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3014119
+
+	8123.1.1 = {birth="8123.1.1"}
+	8175.1.1 = {death="8175.1.1"}
+}
+3016119 = {
+	name="Квеллон"	# a lord
+	dynasty=119
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3014119
+
+	8130.1.1 = {birth="8130.1.1"}
+	8146.1.1 = {add_trait=poor_warrior}
+	8181.1.1 = {death="8181.1.1"}
+}
+3018119 = {
+	name="Кемметт"	# not a lord, from MUSH
+	dynasty=119
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3014119
+
+	8132.1.1 = {birth="8132.1.1"}
+	8148.1.1 = {add_trait=trained_warrior}
+	8150.1.1 = {add_spouse=301564}
+	8181.1.1 = {death = {death_reason = death_battle}}
+}
+3020119 = {
+	name="Ральф"	# a lord
+	dynasty=119
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3016119
+
+	8163.1.1 = {birth="8163.1.1"}
+	8179.1.1 = {add_trait=poor_warrior}
+	8235.1.1 = {death="8235.1.1"}
+}
+3022119 = {
+	name="Зигфрид"	# a lord
+	dynasty=119
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3020119
+
+	8194.1.1 = {birth="8194.1.1"}
+	8210.1.1 = {add_trait=skilled_warrior}
+	8238.1.1 = {death="8238.1.1"}
+}
+3023119 = {
+	name="Квален"	# a lord
+	dynasty=119
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3020119
+
+	8196.1.1 = {birth="8196.1.1"}
+	8212.1.1 = {add_trait=trained_warrior}
+	8214.1.1 = {add_spouse=4023119}
+	8264.1.1 = {death="8264.1.1"}
+}
+4023119 = {
+	name="Эсгред"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8196.1.1 = {birth="8196.1.1"}
+	8264.1.1 = {death="8264.1.1"}
+}
+3025119 = {
+	name="Силас"	# a lord
+	dynasty=119
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3023119
+	mother=4023119
+
+	8230.1.1 = {birth="8230.1.1"}
+	8246.1.1 = {add_trait=trained_warrior}
+	8248.1.1 = {add_spouse=4025119}
+	8277.1.1 = {death="8277.1.1"}
+}
+4025119 = {
+	name="Гретчель"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8230.1.1 = {birth="8230.1.1"}
+	8277.1.1 = {death="8277.1.1"}
+}
+3028119 = {
+	name="Люцимор"	# not a lord
+	dynasty=119
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3025119
+	mother=4025119
+
+	8259.1.1 = {birth="8259.1.1"}
+	8275.1.1 = {add_trait=skilled_warrior}
+}
+3029119 = {
+	name="Аланнис"	# not a lord
+	female=yes
+	dynasty=119
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3025119
+	mother=4025119
+
+	8262.1.1 = {birth="8262.1.1"}
+}
+
+#################
+###House Wynch###
+#################
+300167 = {
+	name="Винч"
+	dynasty = 1836582
+
+	add_trait=brilliant_strategist
+	add_trait=strong
+	add_trait=tall
+	add_trait=master_warrior
+	add_trait=brave
+	add_trait=diligent
+	add_trait=viking
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=750066
+
+	98.1.1 = {birth="98.1.1"}
+	136.1.1 = {death="136.1.1"}
+}
+300567 = {
+	name="Потомки Винча"
+	dynasty = 1836582
+	
+	religion="drowned_god"
+	culture="ironborn"
+	
+	occluded = yes
+	
+	father = 300167
+
+	136.1.1 = {birth="136.1.1"}
+	7821.1.1 = {death="7821.1.1"}
+}
+344067 = {
+	name="Вулфгар"	# a lord
+	dynasty=67
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=300567
+
+	7821.1.1 = {birth="7821.1.1"}
+	7837.1.1 = {add_trait=trained_warrior}
+	7867.1.1 = {death="7867.1.1"}
+}
+343067 = {
+	name="Элдред"	# a lord
+	dynasty=67
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=344067
+
+	7847.1.1 = {birth="7847.1.1"}
+	7863.1.1 = {add_trait=trained_warrior}
+	7900.1.1 = {death="7900.1.1"}
+}
+345067 = {
+	name="Вилла"
+	dynasty=67
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=343067
+
+	7869.1.1 = {birth="7869.1.1"}
+	7923.1.1 = {death="7923.1.1"}
+}
+342067 = {
+	name="Гуннар"	# a lord
+	dynasty=67
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=343067
+
+	7872.1.1 = {birth="7872.1.1"}
+	7888.1.1 = {add_trait=trained_warrior}
+	7911.1.1 = {death="7911.1.1"}
+}
+341067 = {
+	name="Эрик"	# a lord
+	dynasty=67
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=342067
+
+	7900.1.1 = {birth="7900.1.1"}
+	7916.1.1 = {add_trait=trained_warrior}
+	7954.1.1 = {death="7954.1.1"}
+}
+340067 = {
+	name="Куорен"	# a lord
+	dynasty=67
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=341067
+
+	7929.1.1 = {birth="7929.1.1"}
+	7945.1.1 = {add_trait=trained_warrior}
+	7980.1.1 = {death="7980.1.1"}
+}
+300267 = {
+	name="Алестер"	# a lord
+	dynasty=67
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=340067
+
+	7956.1.1 = {birth="7956.1.1"}
+	7980.1.1 = {add_trait=trained_warrior add_spouse=400267}
+	7996.1.1 = {death="7996.1.1"}
+}
+400267 = {
+	name="Аланнис"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7961.1.1 = {birth="7961.1.1"}
+	7996.1.1 = {death="7996.1.1"}
+}
+300067 = {
+	name="Аладейл"	# a lord
+	dynasty=67
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=300267
+	mother=400267
+
+	7981.1.1 = {birth="7981.1.1"}
+	7996.1.1 = {add_trait=skilled_warrior}
+	8030.1.1 = {death="8030.1.1"}
+}
+300367 = {
+	name="Хармунд"	# a lord
+	dynasty=67
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=300067
+
+	8004.1.1 = {birth="8004.1.1"}
+	8020.1.1 = {add_trait=trained_warrior}
+	8056.1.1 = {death="8056.1.1"}
+}
+300467 = {
+	name="Гилберт"	# a lord
+	dynasty=67
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=300367
+
+	8035.1.1 = {birth="8035.1.1"}
+	8051.1.1 = {add_trait=poor_warrior}
+	8070.1.1 = {death="8070.1.1"}
+}
+300867 = {
+	name="Аладейл"	# a lord
+	dynasty=67
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=300467
+
+	8064.1.1 = {birth="8064.1.1"}
+	8080.1.1 = {add_trait=poor_warrior}
+	8104.1.1 = {death="8104.1.1"}
+}
+301067 = {
+	name="Торвольд"	# a lord
+	dynasty=67
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=300867
+
+	8084.1.1 = {birth="8084.1.1"}
+	8100.1.1 = {add_trait=poor_warrior}
+	8129.1.1 = {death="8129.1.1"}
+}
+301167 = {
+	name="Алестер"	# Canon
+	dynasty=67
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=300867
+
+	add_trait=tough_soldier
+	add_trait=quick
+	add_trait=deceitful	
+	add_trait=lustful
+
+	8086.1.1 = {birth="8086.1.1"}
+	8102.1.1 = {add_trait=trained_warrior}
+	8134.1.1 = {
+		death = {
+			death_reason=death_murder
+			killer=88000807
+		}
+	}
+}
+301467 = {
+	name="Виктарион"	# a lord
+	dynasty=67
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=301067
+
+	8118.1.1 = {birth="8118.1.1"}
+	8134.1.1 = {add_trait=trained_warrior}
+	8167.1.1 = {death="8167.1.1"}
+}
+301667 = {
+	name="Шера"	# not a lord
+	female=yes
+	dynasty=67
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=301067
+
+	8115.1.1 = {birth="8115.1.1"}
+	8143.1.1 = {death = {death_reason = death_accident}}
+}
+301767 = {
+	name="Грен"	# a lord
+	dynasty=67
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=301467
+
+	8153.1.1 = {birth="8153.1.1"}
+	8169.1.1 = {add_trait=poor_warrior}
+	8215.1.1 = {death="8215.1.1"}
+}
+302067 = {
+	name="Эйрон"	# a lord
+	dynasty=67
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=301767
+
+	8176.1.1 = {birth="8176.1.1"}
+	8192.1.1 = {add_trait=poor_warrior}
+	8227.1.1 = {death="8227.1.1"}
+}
+302267 = {
+	name="Норн"	# a lord
+	dynasty=67
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=302067
+
+	8196.1.1 = {birth="8196.1.1"}
+	8212.1.1 = {add_trait=poor_warrior}
+	8248.1.1 = {death = {death_reason = death_murder}}
+}
+
+##################
+###House Botley###
+##################
+300364 = {
+	name="Ботли"
+	dynasty = 1836582
+
+	add_trait=brilliant_strategist
+	add_trait=strong
+	add_trait=tall
+	add_trait=master_warrior
+	add_trait=brave
+	add_trait=diligent
+	add_trait=viking
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=750066
+
+	97.1.1 = {birth="97.1.1"}
+	140.1.1 = {death="140.1.1"}
+}
+300564 = {
+	name="Потомки Ботли"
+	dynasty = 1836582
+	
+	religion="drowned_god"
+	culture="ironborn"
+	
+	occluded = yes
+	
+	father = 300364
+
+	140.1.1 = {birth="140.1.1"}
+	7813.1.1 = {death="7813.1.1"}
+}
+343064 = {
+	name="Эрл"	# a lord
+	dynasty=64
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=300564
+
+	7813.1.1 = {birth="7813.1.1"}
+	7829.1.1 = {add_trait=poor_warrior}
+	7863.1.1 = {death="7863.1.1"}
+}
+342064 = {
+	name="Боремунд"	# a lord
+	dynasty=64
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=343064
+
+	7841.1.1 = {birth="7841.1.1"}
+	7857.1.1 = {add_trait=poor_warrior}
+	7889.1.1 = {death="7889.1.1"}
+}
+341064 = {
+	name="Гинир"	# a lord
+	dynasty=64
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=342064
+
+	7870.1.1 = {birth="7870.1.1"}
+	7896.1.1 = {add_trait=poor_warrior}
+	7912.1.1 = {death="7912.1.1"}
+}
+340064 = {
+	name="Кварл"	# a lord
+	dynasty=64
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=341064
+
+	7896.1.1 = {birth="7896.1.1"}
+	7912.1.1 = {add_trait=poor_warrior}
+	7951.1.1 = {death="7951.1.1"}
+}
+
+300864 = {
+	name="Харлон"	# a lord
+	dynasty=64
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=340064
+
+	7920.1.1 = {birth="7920.1.1"}
+	7936.1.1 = {add_trait=poor_warrior add_spouse=400864}
+	7980.1.1 = {death="7980.1.1"}
+}
+400864 = {
+	name="Перра"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7920.1.1 = {birth="7920.1.1"}
+	7980.1.1 = {death="7980.1.1"}
+}
+300464 = {
+	name="Виктарион"	# a lord
+	dynasty=64
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=300864
+	mother=400864
+
+	7947.1.1 = {birth="7947.1.1"}
+	7963.1.1 = {add_trait=poor_warrior}
+	8007.1.1 = {death = {death_reason = death_accident}}
+}
+300164 = {
+	name="Бейлон"	# a lord
+	dynasty=64
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=300464
+
+	7966.1.1 = {birth="7966.1.1"}
+	7982.1.1 = {add_trait=poor_warrior}
+	8021.1.1 = {death = {death_reason = death_accident}}
+}
+300064 = {
+	name="Беннарион"	# a lord
+	dynasty=64
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=300464
+
+	7986.1.1 = {birth="7986.1.1"}
+	8002.1.1 = {add_trait=skilled_warrior}
+	8030.1.1 = {death="8030.1.1"}
+}
+300264 = {
+	name="Харрен"	# a lord
+	dynasty=64
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=300064
+
+	8009.1.1 = {birth="8009.1.1"}
+	8025.1.1 = {add_trait=trained_warrior}
+	8065.1.1 = {death="8065.1.1"}
+}
+300664 = {
+	name="Амброд"	# a lord
+	dynasty=64
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=300264
+
+	8030.1.1 = {birth="8030.1.1"}
+	8046.1.1 = {add_trait=trained_warrior}
+	8073.1.1 = {death="8073.1.1"}
+}
+300764 = {
+	name="Зигфрид"	# a lord
+	dynasty=64
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=300664
+
+	8048.1.1 = {birth="8048.1.1"}
+	8064.1.1 = {add_trait=poor_warrior}
+	8096.1.1 = {death="8096.1.1"}
+}
+300964 = {
+	name="Харрен"	# a lord
+	dynasty=64
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=300764
+
+	8076.1.1 = {birth="8076.1.1"}
+	8092.1.1 = {add_trait=skilled_warrior}
+	8134.5.1 = {
+		death = {
+			death_reason=death_execution
+			killer=23199
+		}
+	}
+}
+301364 = {
+	name="Харраг"	# a lord
+	dynasty=64
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=300964
+
+	8110.1.1 = {birth="8110.1.1"}
+	8126.1.1 = {add_trait=skilled_warrior}
+	8130.1.1 = {add_spouse=3014109}
+	8145.1.1 = {death="8145.1.1"}
+}
+301564 = {
+	name="Белона"	# not a lord
+	female=yes
+	dynasty=64
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=301364
+	mother=3014109
+
+	8134.1.1 = {birth="8134.1.1"}
+	8196.1.1 = {death="8196.1.1"}
+}
+301664 = {
+	name="Раф"	# a lord
+	dynasty=64
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=301364
+	mother=3014109
+
+	8138.1.1 = {birth="8138.1.1"}
+	8154.1.1 = {add_trait=poor_warrior}
+	8165.1.1 = {add_spouse=401664}
+	8183.1.1 = {death="8183.1.1"}
+}
+401664 = {
+	name="Изилла"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8147.1.1 = {birth="8147.1.1"}
+	8183.1.1 = {death="8183.1.1"}
+}
+301164 = {
+	name="Элла"	# not a lord
+	female=yes
+	dynasty=64
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=301664
+
+	add_trait=bastard
+	give_nickname=nick_pyke
+
+	8155.1.1 = {birth="8155.1.1"}
+	8179.1.1 = {death="8179.1.1"}
+}
+301464 = {
+	name="Мера"	# not a lord
+	female=yes
+	dynasty=64
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=301364
+	mother=3014109
+
+	8140.1.1 = {birth="8140.1.1"}
+	8200.1.1 = {death="8200.1.1"}
+}
+301764 = {
+	name="Харрен"	# not a lord
+	dynasty=64
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=301364
+	mother=3014109
+
+	8143.1.1 = {birth="8143.1.1"}
+	8154.1.1 = {death = {death_reason = death_accident}}
+}
+301864 = {
+	name="Урригон"	# a lord
+	dynasty=64
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=301664
+	mother=401664
+
+	8166.1.1 = {birth="8166.1.1"}
+	8182.1.1 = {add_trait=trained_warrior}
+	8195.1.1 = {death="8195.1.1"}
+}
+302364 = {
+	name="Эйрон"	# a lord
+	dynasty=64
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=301864
+
+	8187.1.1 = {birth="8187.1.1"}
+	8203.1.1 = {add_trait=skilled_warrior}
+	8205.1.1 = {death="8205.1.1"}
+}
+302664 = {
+	name="Саргон"	# a lord
+	dynasty=64
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=302364
+
+	8204.1.1 = {birth="8204.1.1"}
+	8220.1.1 = {add_trait=skilled_warrior}
+	8256.1.1 = {death="8256.1.1"}
+}
+
+######################
+###House Saltcliffe###
+######################
+3005109 = {
+	name="Солтклифф"
+	dynasty = 1836582
+
+	add_trait=brilliant_strategist
+	add_trait=strong
+	add_trait=tall
+	add_trait=master_warrior
+	add_trait=brave
+	add_trait=diligent
+	add_trait=viking
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=750066
+
+	100.1.1 = {birth="100.1.1"}
+	146.1.1 = {death="146.1.1"}
+}
+3025109 = {
+	name="Потомки Солтклиффа"
+	dynasty = 1836582
+	
+	religion="drowned_god"
+	culture="ironborn"
+	
+	occluded = yes
+	
+	father = 3005109
+
+	146.1.1 = {birth="146.1.1"}
+	7844.1.1 = {death="7844.1.1"}
+}
+342109 = {
+	name="Сигрин"	# a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3025109
+
+	7844.1.1 = {birth="7844.1.1"}
+	7883.1.1 = {death="7883.1.1"}
+}
+341109 = {
+	name="Стигг"	# a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=342109
+
+	7869.1.1 = {birth="7869.1.1"}
+	7922.1.1 = {death="7922.1.1"}
+}
+340109 = {
+	name="Лодос"	# a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=341109
+
+	7891.1.1 = {birth="7891.1.1"}
+	7947.1.1 = {death="7947.1.1"}
+}
+3026109 = {
+	name="Доннел"	# a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=340109
+
+	7920.1.1 = {birth="7920.1.1"}
+	7936.1.1 = {add_spouse=4026109}
+	7994.1.1 = {death="7994.1.1"}
+}
+4026109 = {
+	name="Эсгред"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7920.1.1 = {birth="7920.1.1"}
+	7994.1.1 = {death="7994.1.1"}
+}
+3001109 = {
+	name="Саргон"	# a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3026109
+	mother=4026109
+
+	7943.1.1 = {birth="7943.1.1"}
+	8012.1.1 = {death="8012.1.1"}
+}
+3002109 = {
+	name="Савейн"	# a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3001109
+
+	7964.1.1 = {birth="7964.1.1"}
+	8028.1.1 = {death="8028.1.1"}
+}
+3000109 = {
+	name="Стеффарион"	# a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3002109
+
+	7986.1.1 = {birth="7986.1.1"}
+	8002.1.1 = {add_trait=trained_warrior}
+	8046.1.1 = {death="8046.1.1"}
+}
+3003109 = {
+	name="Ральф"	# a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3000109
+
+	8007.1.1 = {birth="8007.1.1"}
+	8023.1.1 = {add_trait=skilled_warrior}
+	8057.1.1 = {death="8057.1.1"}
+}
+3006109 = {
+	name="Виллам"	# a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3003109
+
+	8033.1.1 = {birth="8033.1.1"}
+	8049.1.1 = {add_trait=skilled_warrior}
+	8097.1.1 = {death="8097.1.1"}
+}
+3008109 = {
+	name="Гелмарр"	# a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3006109
+
+	8062.1.1 = {birth="8062.1.1"}
+	8078.1.1 = {add_trait=poor_warrior}
+	8124.1.1 = {death="8124.1.1"}
+}
+3011109 = {
+	name="Викон"	# a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3008109
+
+	8084.1.1 = {birth="8084.1.1"}
+	8100.1.1 = {add_trait=poor_warrior}
+	8112.1.1 = {add_spouse=4011109}
+	8135.1.1 = {death="8135.1.1"}
+}
+4011109 = {
+	name="Алрия"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8096.1.1 = {birth="8096.1.1"}
+	8135.1.1 = {death="8135.1.1"}
+}
+3014109 = {
+	name="Гизелла"	# not a lord
+	female=yes
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3011109
+	mother=4011109
+
+	8114.1.1 = {birth="8114.1.1"}
+	8143.1.1 = {death = {death_reason = death_childbirth}}
+}
+3016109= {
+	name="Ральф"	# a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3011109
+	mother=4011109
+
+	add_trait=tough_soldier
+	add_trait=cruel
+	add_trait=arbitrary
+	add_trait=zealous
+	add_trait=brave
+
+	8118.1.1 = {birth="8118.1.1"}
+	8134.1.1 = {add_trait=trained_warrior}
+	8135.1.1 = {add_spouse=4016109}
+	8178.1.1 = {death="8178.1.1"}
+}
+3015109 = {
+	name="Ставрин"	# not a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3011109
+	mother=4011109
+
+	8120.1.1 = {birth="8120.1.1"}
+	8130.1.1 = {add_trait=trained_warrior add_trait=wroth}
+	8140.1.1 = {death = {death_reason = death_battle}}
+}
+3022109 = {
+	name="Альвин"	# not a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3011109
+	mother=4011109
+
+	8121.1.1 = {birth="8121.1.1"}
+	8137.1.1 = {add_trait=brave add_trait=skilled_warrior}
+	8138.1.1 = {add_spouse=3017119}
+	8184.1.1 = {death = {death_reason = death_battle}}
+}
+3009109 = {
+	name="Ромни"	# not a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3022109
+	mother=3017119
+
+	add_trait=lustful
+
+	8138.1.1 = {birth="8138.1.1"}
+	8154.1.1 = {add_trait=trained_warrior}
+	8176.1.1 = {death="8176.1.1"}
+}
+3004109 = {
+	name="Рас"	# not a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3009109
+
+	add_trait=bastard
+	give_nickname=nick_pyke
+
+	8157.1.1 = {birth="8157.1.1"}
+	8194.1.1 = {death="8194.1.1"}
+}
+3013109 = {
+	name="Гуннар"	# not a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3022109
+	mother=3017119
+
+	add_trait=zealous
+
+	8140.1.1 = {birth="8140.1.1"}
+	8160.1.1 = {add_trait=drowned}
+	8198.1.1 = {death="8198.1.1"}
+}
+3010109 = {
+	name="Лукан"	# not a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3011109
+	mother=4011109
+
+	add_trait=zealous
+
+	8124.1.1 = {birth="8124.1.1"}
+	8144.1.1 = {add_trait=drowned}
+	8190.1.1 = {death = {death_reason = death_accident}}
+}
+3007109 = {
+	name="Танда"	# not a lord
+	female=yes
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3016109
+	mother=4016109
+
+	8138.1.1 = {birth="8138.1.1"}
+	8180.1.1 = {death="8180.1.1"}
+}
+2016109 = {
+	name="Дагур"	# not a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3016109
+	mother=4016109
+
+	add_trait=brilliant_strategist
+	add_trait=cynical
+	add_trait=brave
+	add_trait=lustful
+	add_trait=deceitful
+
+	8140.1.1 = {birth="8140.1.1"}
+	8156.1.1 = {add_trait=skilled_warrior}
+	8157.1.1 = {add_trait=disinherited add_trait=knight religion=the_seven}
+	8159.1.1 = {add_spouse=27253}
+	8188.1.1 = {death="8188.1.1"}
+}
+3017109 = {
+	name="Рорин"	# a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3016109
+	mother=4016109
+
+	8142.1.1 = {birth="8142.1.1"}
+	8156.1.1 = {add_trait=trained_warrior}
+	8210.1.1 = {death="8210.1.1"}
+}
+3012109 = {
+	name="Грен"	# not a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3016109
+	mother=4016109
+
+	8143.4.21 = {birth="8143.4.21" add_trait=has_greyscale}
+	8143.8.1 = {death = {death_reason = death_trait}}
+}
+3018109 = {
+	name="Савейн"	# not a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3016109
+	mother=4016109
+
+	8145.1.1 = {birth="8145.1.1"}
+	8155.1.1 = {add_trait=poor_warrior}
+	8157.1.1 = {death = {death_reason = death_accident}}
+}
+3020109 = {
+	name="Перра"	# not a lord
+	female=yes
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3016109
+	mother=4016109
+
+	8150.1.1 = {birth="8150.1.1"}
+	8205.1.1 = {death="8205.1.1"}
+}
+3021109 = {
+	name="Родмар"	# not a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3016109
+	mother=4016109
+
+	8152.1.1 = {birth="8152.1.1"}
+	8168.1.1 = {add_trait=trained_warrior}
+	8217.1.1 = {death="8217.1.1"}
+}
+2116109 = {
+	name="Торин"	# not a lord
+	dynasty=109
+
+	religion="the_seven"
+	culture="ironborn"
+
+	father=2016109 #Дагур Saltcliffe
+	mother=27253 #Reyna Tyrell
+
+	8159.1.1 = {birth="8159.1.1" add_trait=disinherited}
+        8177.1.1 = {add_trait=knight}
+	8203.1.1 = {death="8203.1.1"}
+}
+2216109 = {
+	name="Рианнин"	# not a lord
+	dynasty=109
+        female=yes
+
+	religion="the_seven"
+	culture="ironborn"
+
+	father=2016109 #Дагур Saltcliffe
+	mother=27253 #Reyna Tyrell
+
+	8160.1.1 = {birth="8160.1.1" add_trait=disinherited}
+	8203.1.1 = {death="8203.1.1"}
+}
+2316109 = {
+	name="Эйрон"	# not a lord
+	dynasty=109
+
+	religion="the_seven"
+	culture="ironborn"
+
+	father=2016109 #Дагур Saltcliffe
+	mother=27253 #Reyna Tyrell
+
+	8163.1.1 = {birth="8163.1.1" add_trait=disinherited}
+        8181.1.1 = {add_trait=knight}
+        8196.6.1 = {death={death_reason=death_battle}}
+}
+2416109 = {
+	name="Кэрис"	# not a lord
+        female=yes
+	dynasty=109
+
+	religion="the_seven"
+	culture="ironborn"
+
+	father=2016109 #Дагур Saltcliffe
+	mother=27253 #Reyna Tyrell
+
+	8169.1.1 = {birth="8169.1.1" add_trait=disinherited}
+        8229.1.1 = {death="8229.1.1"}
+}
+2516109 = {
+	name="Астрид"	# not a lord
+        female=yes
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=2016109 #Дагур Saltcliffe
+
+        add_trait=bastard
+
+	8156.1.1 = {birth="8156.1.1" give_nickname=nick_pyke}
+        8157.1.1 = {religion=the_seven}
+        8172.1.1 = {add_trait=septa}
+        8220.1.1 = {death="8220.1.1"}
+}
+3019109 = {
+	name="Харлан"	# a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3017109
+
+	8176.1.1 = {birth="8176.1.1"}
+	8192.1.1 = {add_trait=trained_warrior}
+	8229.1.1 = {death="8229.1.1"}
+}
+3023109 = {
+	name="Теон"	# a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3019109
+
+	8199.1.1 = {birth="8199.1.1"}
+	8215.1.1 = {add_trait=trained_warrior}
+	8241.1.1 = {death="8241.1.1"}
+}
+3024109 = {
+	name="Элдисс"	# a lord
+	dynasty=109
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3023109
+
+	8220.1.1 = {birth="8220.1.1"}
+	8239.1.1 = {add_trait=poor_warrior}
+	8241.1.1 = {add_spouse=4024109}
+	8282.1.1 = {death="8282.1.1"}
+}
+4024109 = {
+	name="Гретчель"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8220.1.1 = {birth="8220.1.1"}
+	8282.1.1 = {death="8282.1.1"}
+}
+
+####################
+###House Sunderly###
+####################
+324117 = {
+	name="Гевин"	# a lord
+	dynasty=117
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7840.1.1 = {birth=yes}
+	7890.1.1 = {death=yes}
+}
+323117 = {
+	name="Хармунд"	# a lord
+	dynasty=117
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=324117
+
+	7865.1.1 = {birth=yes}
+	7915.1.1 = {death=yes}
+}
+322117 = {
+	name="Кемметт"	# a lord
+	dynasty=117
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=323117
+
+	7890.1.1 = {birth=yes}
+	7940.1.1 = {death=yes}
+}
+321117 = {
+	name="Ленвуд"	# a lord
+	dynasty=117
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=322117
+
+	7915.1.1 = {birth=yes}
+	7965.1.1 = {death=yes}
+}
+320117 = {
+	name="Лоррен"	# a lord
+	dynasty=117
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=321117
+
+	7940.1.1 = {birth=yes}
+	7990.1.1 = {death=yes}
+}
+300117 = {
+	name="Виктарион"	# a lord
+	dynasty=117
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=320117
+
+	7967.1.1 = {birth="7967.1.1"}
+	7998.2.1 = {
+		death = {
+			death_reason = death_battle #killed in chaos after Харрен's death
+		}
+	}
+}
+301117 = {
+	name="Стигг"	# a lord
+	dynasty=117
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=300117
+
+	7989.1.1 = {birth="7989.1.1"}
+	8005.1.1 = {add_trait=poor_warrior}
+	8036.1.1 = {death="8036.1.1"}
+}
+304117 = {
+	name="Теомор"	# a lord
+	dynasty=117
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=301117
+
+	8024.1.1 = {birth="8024.1.1"}
+	8040.1.1 = {add_trait=skilled_warrior}
+	8080.1.1 = {death="8080.1.1"}
+}
+305117 = {
+	name="Кадвил"	# not a lord
+	dynasty=117
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=301117
+
+	8026.1.1 = {birth="8026.1.1"}
+	8042.1.1 = {add_trait=poor_warrior}
+	8084.1.1 = {death="8084.1.1"}
+}
+308117 = {
+	name="Манфрид"	# a lord
+	dynasty=117
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=304117
+
+	8045.1.1 = {birth="8045.1.1"}
+	8061.1.1 = {add_trait=trained_warrior}
+	8101.1.1 = {death="8101.1.1"}
+}
+311117 = {
+	name="Кеннед"	# a lord
+	dynasty=117
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=308117
+
+	8064.1.1 = {birth="8064.1.1"}
+	8080.1.1 = {add_trait=poor_warrior}
+	8119.1.1 = {death="8119.1.1"}
+}
+313117 = {
+	name="Денис"	# a lord
+	dynasty=117
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=311117
+
+	8087.1.1 = {birth="8087.1.1"}
+	8103.1.1 = {add_trait=trained_warrior}
+	8143.1.1 = {death="8143.1.1"}
+}
+314117 = {
+	name="Норн"	# a lord
+	dynasty=117
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=313117
+
+	8121.1.1 = {birth="8121.1.1"}
+	8137.1.1 = {add_trait=poor_warrior}
+	8160.1.1 = {death="8160.1.1"}
+}
+315117 = {
+	name="Торвольд"	# a lord
+	dynasty=117
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=314117
+
+	8158.1.1 = {birth="8158.1.1"}
+	8174.1.1 = {add_trait=skilled_warrior}
+	8211.1.1 = {death="8211.1.1"}
+}
+317117 = {
+	name="Харрас"	# a lord
+	dynasty=117
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=315117
+
+	8193.1.1 = {birth="8193.1.1"}
+	8209.1.1 = {add_trait=poor_warrior}
+	8241.1.1 = {death="8241.1.1"}
+}
+
+################
+###House Myre###
+################
+6002111 = {
+	name="Майр"
+	dynasty = 1836582
+
+	add_trait=brilliant_strategist
+	add_trait=strong
+	add_trait=tall
+	add_trait=master_warrior
+	add_trait=brave
+	add_trait=diligent
+	add_trait=viking
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=750066
+
+	96.1.1 = {birth="96.1.1"}
+	150.1.1 = {death="150.1.1"}
+}
+6003111 = {
+	name="Потомки Майра"
+	dynasty = 1836582
+	
+	religion="drowned_god"
+	culture="ironborn"
+	
+	occluded = yes
+	
+	father = 6002111
+
+	150.1.1 = {birth="150.1.1"}
+	7835.1.1 = {death="7835.1.1"}
+}
+6033111 = {
+	name="Норн"	# a lord
+	dynasty=111
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6003111
+
+	7835.1.1 = {birth="7835.1.1"}
+	7885.1.1 = {death="7885.1.1"}
+}
+6032111 = {
+	name="Ральф"	# a lord
+	dynasty=111
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6033111
+
+	7860.1.1 = {birth="7860.1.1"}
+	7910.1.1 = {death="7910.1.1"}
+}
+6031111 = {
+	name="Кварл"	# a lord
+	dynasty=111
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6032111
+
+	7885.1.1 = {birth="7885.1.1"}
+	7935.1.1 = {death="7935.1.1"}
+}
+6030111 = {
+	name="Манфрид"	# a lord
+	dynasty=111
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6031111
+
+	7910.1.1 = {birth="7910.1.1"}
+	7960.1.1 = {death="7960.1.1"}
+}
+6004111 = {
+	name="Мелдред"	# a lord
+	dynasty=111
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6030111
+
+	7935.1.1 = {birth="7935.1.1"}
+	7951.1.1 = {add_trait=poor_warrior}
+	7986.1.1 = {death="7986.1.1"}
+}
+6006111 = {
+	name="Марон"	# a lord
+	dynasty=111
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6004111
+
+	7960.1.1 = {birth="7960.1.1"}
+	7976.1.1 = {add_trait=poor_warrior}
+	8010.1.1 = {death="8010.1.1"}
+}
+6000111 = {
+	name="Люцимор"	# a lord
+	dynasty=111
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6006111
+
+	7982.1.1 = {birth="7982.1.1"}
+	7998.1.1 = {add_trait=poor_warrior}
+	8027.1.1 = {death="8027.1.1"}
+}
+6001111 = {
+	name="Стеффарион"	# a lord
+	dynasty=111
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6000111
+
+	8010.1.1 = {birth="8010.1.1"}
+	8026.1.1 = {add_trait=skilled_warrior}
+	8045.1.1 = {death="8045.1.1"}
+}
+6005111 = {
+	name="Джайлс"	# a lord
+	dynasty=111
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6001111
+
+	8038.1.1 = {birth="8038.1.1"}
+	8054.1.1 = {add_trait=trained_warrior}
+	8076.1.1 = {death = {death_reason = death_accident}}
+}
+6007111 = {
+	name="Робин"	# a lord
+	dynasty=111
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6005111
+
+	8064.1.1 = {birth="8064.1.1"}
+	8080.1.1 = {add_trait=poor_warrior}
+	8112.1.1 = {death="8112.1.1"}
+}
+6011111 = {
+	name="Ленвуд"	# a lord
+	dynasty=111
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6007111
+
+	8096.1.1 = {birth="8096.1.1"}
+	8112.1.1 = {add_trait=poor_warrior}
+	8133.1.1 = {death="8133.1.1"}
+}
+6014111 = {
+	name="Адрак"	# a lord
+	dynasty=111
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6011111
+
+	8119.1.1 = {birth="8119.1.1"}
+	8135.1.1 = {add_trait=poor_warrior}
+	8157.1.1 = {death = {death_reason = death_execution}}
+}
+6016111 = {
+	name="Урек"	# a lord
+	dynasty=111
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6014111
+
+	8140.1.1 = {birth="8140.1.1"}
+	8156.1.1 = {add_trait=trained_warrior}
+	8200.1.1 = {death="8200.1.1"}
+}
+6017111 = {
+	name="Бейлон"	# a lord
+	dynasty=111
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6016111
+
+	8164.1.1 = {birth="8164.1.1"}
+	8180.1.1 = {add_trait=poor_warrior}
+	8220.1.1 = {death="8220.1.1"}
+}
+6022111 = {
+	name="Тристифер"	# a lord
+	dynasty=111
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6017111
+
+	8185.1.1 = {birth="8185.1.1"}
+	8201.1.1 = {add_trait=trained_warrior}
+	8252.1.1 = {death="8252.1.1"}
+}
+6026111 = {
+	name="Виктарион"	# a lord
+	dynasty=111
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6022111
+
+	8216.1.1 = {birth="8216.1.1"}
+	8234.1.1 = {add_spouse=5026111}
+	8272.1.1 = {death="8272.1.1"}
+}
+5026111 = {
+	name="Виктария"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8216.1.1 = {birth="8216.1.1"}
+	8272.1.1 = {death="8272.1.1"}
+}
+
+###################
+###House Kenning###
+###################
+6002115 = {
+	name="Кеннинг"
+	dynasty = 1836582
+
+	add_trait=brilliant_strategist
+	add_trait=strong
+	add_trait=tall
+	add_trait=master_warrior
+	add_trait=brave
+	add_trait=diligent
+	add_trait=viking
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=750066
+
+	95.1.1 = {birth="95.1.1"}
+	153.1.1 = {death="153.1.1"}
+}
+6003115 = {
+	name="Потомки Киннинга"
+	dynasty = 1836582
+	
+	religion="drowned_god"
+	culture="ironborn"
+	
+	occluded = yes
+	
+	father = 6002115
+
+	153.1.1 = {birth="153.1.1"}
+	5270.1.1 = {death="5270.1.1"}
+}
+150115 = {
+	name="Харрен"	# Random Link for Herrock Cadet Branch
+	dynasty=115
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6003115
+
+	5270.1.1 = {birth="5270.1.1"}
+	5286.1.1 = {add_trait=trained_warrior}
+	5330.1.1 = {death="5330.1.1"}
+}
+151115 = {
+	name="Потомки Харрена"
+	dynasty=115
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	occluded = yes
+	father = 150115
+
+	5330.1.1 = {birth="5330.1.1"}
+	7830.1.1 = {death="7830.1.1"}
+}
+6027115 = {
+	name="Эурон"	# a lord
+	dynasty=115
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father = 151115
+
+	7830.1.1 = {birth="7830.1.1"}
+	7880.1.1 = {death = {death_reason = death_battle}}
+}
+6028115 = {
+	name="Коттер"	# a lord
+	dynasty=115
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6027115
+
+	7863.1.1 = {birth="7863.1.1"}
+	7879.1.1 = {add_trait=trained_warrior}
+	7928.1.1 = {death="7928.1.1"}
+}
+6031115 = {
+	name="Фралегг"	# a lord
+	dynasty=115
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6028115
+
+	7885.1.1 = {birth="7885.1.1"}
+	7901.1.1 = {add_trait=knight add_trait=poor_warrior}
+	7903.1.1 = {add_spouse=5031115}
+	7934.1.1 = {death="7934.1.1"}
+}
+5031115 = {
+	name="Аланнис"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7885.1.1 = {birth="7885.1.1"}
+	7934.1.1 = {death="7934.1.1"}
+}
+6033115 = {
+	name="Дукк"	# a lord
+	dynasty=115
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6031115
+	mother=5031115
+
+	7908.1.1 = {birth="7908.1.1"}
+	7924.1.1 = {add_trait=skilled_warrior}
+	7951.1.1 = {death="7951.1.1"}
+}
+6026115 = {
+	name="Родрик"	# a lord
+	dynasty=115
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=6033115
+
+	7922.1.1 = {birth="7922.1.1"}
+	7938.1.1 = {add_trait=trained_warrior}
+	7940.1.1 = {add_spouse=5026115}
+	7976.1.1 = {death="7976.1.1"}
+}
+5026115 = {
+	name="Джианна"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7920.1.1 = {birth="7920.1.1"}
+	7987.1.1 = {death="7987.1.1"}
+}
+6025115 = {
+	name="Торгон"	# a lord
+	dynasty=115
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=6026115
+
+	7942.1.1 = {birth="7942.1.1"}
+	7988.1.1 = {add_trait=trained_warrior}
+	7990.1.1 = {add_spouse=5025115}
+	7995.1.1 = {death="7995.1.1"}
+}
+5025115 = {
+	name="Яра"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7940.1.1 = {birth="7940.1.1"}
+	8006.1.1 = {death="8006.1.1"}
+}
+6000115 = {
+	name="Силас"	# a lord
+	dynasty=115
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=6025115
+	mother=5025115
+
+	7972.1.1 = {birth="7972.1.1"}
+	7988.1.1 = {add_trait=poor_warrior}
+	7990.1.1 = {add_spouse=5000115}
+	8016.1.1 = {death="8016.1.1"}
+}
+5000115 = {
+	name="Талла"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7972.1.1 = {birth="7972.1.1"}
+	8016.1.1 = {death="8016.1.1"}
+}
+6001115 = {
+	name="Векс"	# a lord
+	dynasty=115
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6000115
+	mother=5000115
+
+	7995.1.1 = {birth="7995.1.1"}
+	8011.1.1 = {add_trait=skilled_warrior}
+	8013.1.1 = {add_spouse=5001115}
+	8043.1.1 = {death="8043.1.1"}
+}
+5001115 = {
+	name="Джорель"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7995.1.1 = {birth="7995.1.1"}
+	8043.1.1 = {death="8043.1.1"}
+}
+6004115 = {
+	name="Дагмер"	# a lord
+	dynasty=115
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6001115
+	mother=5001115
+
+	8022.1.1 = {birth="8022.1.1"}
+	8038.1.1 = {add_trait=skilled_warrior}
+	8040.1.1 = {add_spouse=5004115}
+	8050.1.1 = {death="8050.1.1"}
+}
+5004115 = {
+	name="Гризелла"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8022.1.1 = {birth="8022.1.1"}
+	8050.1.1 = {death="8050.1.1"}
+}
+6007115 = {
+	name="Игон"	# a lord
+	dynasty=115
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6004115
+	mother=5004115
+
+	8042.1.1 = {birth="8042.1.1"}
+	8058.1.1 = {add_trait=poor_warrior}
+	8060.1.1 = {add_spouse=5007115}
+	8102.1.1 = {death="8102.1.1"}
+}
+5007115 = {
+	name="Мэйген"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8042.1.1 = {birth="8042.1.1"}
+	8102.1.1 = {death="8102.1.1"}
+}
+6010115 = {
+	name="Ленвуд"	# a lord
+	dynasty=115
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6007115
+	mother=5007115
+
+	8068.1.1 = {birth="8068.1.1"}
+	8084.1.1 = {add_trait=poor_warrior}
+	8086.1.1 = {add_spouse=5010115}
+	8121.1.1 = {death="8121.1.1"}
+}
+5010115 = {
+	name="Джоннела"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8068.1.1 = {birth="8068.1.1"}
+	8121.1.1 = {death="8121.1.1"}
+}
+6013115 = {
+	name="Харраг"	# a lord
+	dynasty=115
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6010115
+	mother=5010115
+
+	8099.1.1 = {birth="8099.1.1"}
+	8115.1.1 = {add_trait=trained_warrior}
+	8117.1.1 = {add_spouse=5013115}
+	8146.1.1 = {death="8146.1.1"}
+}
+5013115 = {
+	name="Мегга"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8099.1.1 = {birth="8099.1.1"}
+	8146.1.1 = {death="8146.1.1"}
+}
+6014115 = {
+	name="Уррагон"	# a lord
+	dynasty=115
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6013115
+	mother=5013115
+
+	8119.1.1 = {birth="8119.1.1"}
+	8135.1.1 = {add_trait=poor_warrior}
+	8137.1.1 = {add_spouse=5014115}
+	8186.1.1 = {death="8186.1.1"}
+}
+5014115 = {
+	name="Селиса"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8119.1.1 = {birth="8119.1.1"}
+	8186.1.1 = {death="8186.1.1"}
+}
+6017115 = {
+	name="Лоррен"	# a lord
+	dynasty=115
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6014115
+	mother=5014115
+
+	8148.1.1 = {birth="8148.1.1"}
+	8164.1.1 = {add_trait=poor_warrior}
+	8166.1.1 = {add_spouse=5017115}
+	8202.1.1 = {death="8202.1.1"}
+}
+5017115 = {
+	name="Роэлла"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8148.1.1 = {birth="8148.1.1"}
+	8202.1.1 = {death="8202.1.1"}
+}
+6019115 = {
+	name="Хаген"	# a lord
+	dynasty=115
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6017115
+	mother=5017115
+
+	8176.1.1 = {birth="8176.1.1"}
+	8192.1.1 = {add_trait=poor_warrior}
+	8194.1.1 = {add_spouse=5019115}
+	8230.1.1 = {death="8230.1.1"}
+}
+5019115 = {
+	name="Изилла"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8176.1.1 = {birth="8176.1.1"}
+	8230.1.1 = {death="8230.1.1"}
+}
+6020115 = {
+	name="Ромни"	# a lord
+	dynasty=115
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6019115
+	mother=5019115
+
+	8197.1.1 = {birth="8197.1.1"}
+	8213.1.1 = {add_trait=poor_warrior}
+	8215.1.1 = {add_spouse=5020115}
+	8249.1.1 = {death="8249.1.1"}
+}
+5020115 = {
+	name="Джоннела"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8197.1.1 = {birth="8197.1.1"}
+	8249.1.1 = {death="8249.1.1"}
+}
+6024115 = {
+	name="Элдред"	# not a lord
+	dynasty=115
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6020115
+	mother=5020115
+
+	8215.1.1 = {birth="8215.1.1"}
+	8231.1.1 = {add_trait=trained_warrior}
+	8232.1.1 = {add_spouse=5024115}
+	8244.1.1 = {death = {death_reason = death_battle}}
+}
+5024115 = {
+	name="Аланнис"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8214.1.1 = {birth="8214.1.1"}
+	8244.1.1 = {death="8244.1.1"}
+}
+
+#####################
+###House Stonetree###
+#####################
+6005120 = {
+	name="Стоунтри"
+	dynasty = 1836582
+
+	add_trait=brilliant_strategist
+	add_trait=strong
+	add_trait=tall
+	add_trait=master_warrior
+	add_trait=brave
+	add_trait=diligent
+	add_trait=viking
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=750066
+
+	94.1.1 = {birth="94.1.1"}
+	148.1.1 = {death="148.1.1"}
+}
+6006120 = {
+	name="Потомки Стоунтри"
+	dynasty = 1836582
+	
+	religion="drowned_god"
+	culture="ironborn"
+	
+	occluded = yes
+	
+	father = 6005120
+
+	148.1.1 = {birth="148.1.1"}
+	7839.1.1 = {death="7839.1.1"}
+}
+342120 = {
+	name="Лорон"	# a lord
+	dynasty=120
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6006120
+
+	7839.1.1 = {birth="7839.1.1"}
+	7855.1.1 = {add_trait=trained_warrior}
+	7885.1.1 = {death="7885.1.1"}
+}
+341120 = {
+	name="Сэм"	# a lord
+	dynasty=120
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=342120
+
+	7862.1.1 = {birth="7862.1.1"}
+	7878.1.1 = {add_trait=trained_warrior}
+	7911.1.1 = {death="7911.1.1"}
+}
+340120 = {
+	name="Гинир"	# a lord
+	dynasty=120
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=341120
+
+	7887.1.1 = {birth="7887.1.1"}
+	7903.1.1 = {add_trait=trained_warrior}
+	7935.1.1 = {death="7935.1.1"}
+}
+
+6008120 = {
+	name="Саргон"	# a lord
+	dynasty=120
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=340120
+
+	7915.1.1 = {birth="7915.1.1"}
+	7931.1.1 = {add_trait=trained_warrior add_spouse=4008120}
+	7976.1.1 = {death="7976.1.1"}
+}
+4008120 = {
+	name="Гвинесса"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7915.1.1 = {birth="7915.1.1"}
+	7976.1.1 = {death="7976.1.1"}
+}
+6002120 = {
+	name="Саймонд"	# a lord
+	dynasty=120
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6008120
+	mother=4008120
+
+	7939.1.1 = {birth="7939.1.1"}
+	7955.1.1 = {add_trait=trained_warrior}
+	8010.1.1 = {death="8010.1.1"}
+}
+6003120 = {
+	name="Зигфри"	# a lord
+	dynasty=120
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6002120
+
+	7961.1.1 = {birth="7961.1.1"}
+	7977.1.1 = {add_trait=poor_warrior}
+	8021.1.1 = {death="8021.1.1"}
+}
+6000120 = {
+	name="Силас"	# a lord
+	dynasty=120
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6003120
+
+	7986.1.1 = {birth="7986.1.1"}
+	8008.1.1 = {add_trait=poor_warrior}
+	8040.1.1 = {death="8040.1.1"}
+}
+6001120 = {
+	name="Доннел"	# a lord
+	dynasty=120
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6000120
+
+	8008.1.1 = {birth="8008.1.1"}
+	8024.1.1 = {add_trait=poor_warrior}
+	8044.1.1 = {death="8044.1.1"}
+}
+6004120 = {
+	name="Эйрон"	# a lord
+	dynasty=120
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6001120
+
+	8029.1.1 = {birth="8029.1.1"}
+	8086.1.1 = {death="8086.1.1"}
+}
+6007120 = {
+	name="Гевин"	# a lord
+	dynasty=120
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6004120
+
+	8063.1.1 = {birth="8063.1.1"}
+	8079.1.1 = {add_trait=poor_warrior}
+	8109.1.1 = {death="8109.1.1"}
+}
+6011120 = {
+	name="Квентон"	# a lord
+	dynasty=120
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6007120
+
+	8085.1.1 = {birth="8085.1.1"}
+	8101.1.1 = {add_trait=trained_warrior}
+	8129.1.1 = {death="8129.1.1"}
+}
+6017120 = {
+	name="Хармунд"	# a lord
+	dynasty=120
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6011120
+
+	8110.1.1 = {birth="8110.1.1"}
+	8129.1.1 = {add_trait=trained_warrior}
+	8159.1.1 = {death="8159.1.1"}
+}
+6016120 = {
+	name="Тормунд"
+	dynasty=120
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6011120
+
+	8115.1.1 = {birth="8115.1.1"}
+	8131.1.1 = {add_trait=tough_soldier add_trait=skilled_warrior add_trait=lustful add_trait=brave give_nickname=nick_bloodaxe}
+	8136.1.1 = {employer=3014118}
+	8150.1.1 = {employer=36107 add_spouse=37107}
+	8166.1.1 = {death="8166.1.1"}
+}
+6014120 = {
+	name="Зигмунд"
+	dynasty=120
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6016120
+	mother=37107
+
+	8152.1.1 = {birth="8152.1.1"}
+	8168.1.1 = {add_trait=trained_warrior}
+	8205.1.1 = {death="8205.1.1"}
+}
+6015120 = {
+	name="Донел"
+	dynasty=120
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6016120
+	mother=37107
+
+	8155.1.1 = {birth="8155.1.1"}
+	8171.1.1 = {add_trait=poor_warrior}
+	8171.1.1 = {death="8171.1.1"}
+}
+6019120 = {
+	name="Уррас"	# a lord
+	dynasty=120
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6017120
+
+	8151.1.1 = {birth="8151.1.1"}
+	8167.1.1 = {add_trait=poor_warrior}
+	8205.1.1 = {death="8205.1.1"}
+}
+6021120 = {
+	name="Рагнор"	# a lord
+	dynasty=120
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6019120
+
+	8169.1.1 = {birth="8169.1.1"}
+	8185.1.1 = {add_trait=poor_warrior}
+	8249.1.1 = {death="8249.1.1"}
+}
+
+##################
+###House Tawney###
+##################
+344123 = {
+	name="Уолдон"	# a lord
+	dynasty=123
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7822.1.1 = {birth="7822.1.1"}
+	7838.1.1 = {add_trait=trained_warrior}
+	7867.1.1 = {death="7867.1.1"}
+}
+343123 = {
+	name="Гелмарр"	# a lord
+	dynasty=123
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=344123
+
+	7849.1.1 = {birth="7849.1.1"}
+	7865.1.1 = {add_trait=trained_warrior}
+	7901.1.1 = {death="7901.1.1"}
+}
+342123 = {
+	name="Грейдон"	# a lord
+	dynasty=123
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=343123
+
+	7874.1.1 = {birth="7874.1.1"}
+	7890.1.1 = {add_trait=trained_warrior}
+	7912.1.1 = {death="7912.1.1"}
+}
+341123 = {
+	name="Торгон"	# a lord
+	dynasty=123
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=342123
+
+	7897.1.1 = {birth="7897.1.1"}
+	7913.1.1 = {add_trait=trained_warrior}
+	7948.1.1 = {death="7948.1.1"}
+}
+340123 = {
+	name="Торвольд"	# a lord
+	dynasty=123
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=341123
+
+	7921.1.1 = {birth="7921.1.1"}
+	7937.1.1 = {add_trait=trained_warrior}
+	7973.1.1 = {death="7973.1.1"}
+}
+6005123 = {
+	name="Торон"	# a lord
+	dynasty=123
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=340123
+
+	7948.1.1 = {birth="7948.1.1"}
+	7964.1.1 = {add_trait=trained_warrior}
+	8006.1.1 = {death="8006.1.1"}
+}
+6000123 = {
+	name="Урригон"	# a lord
+	dynasty=123
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6005123
+
+	7973.1.1 = {birth="7973.1.1"}
+	7989.1.1 = {add_trait=trained_warrior}
+	8020.1.1 = {death="8020.1.1"}
+}
+6002123 = {
+	name="Тристон"	# a lord
+	dynasty=123
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6000123
+
+	7996.1.1 = {birth="7996.1.1"}
+	8012.1.1 = {add_trait=poor_warrior}
+	8035.1.1 = {death = {death_reason = death_battle}}
+}
+6007123 = {
+	name="Джайлс"	# a lord
+	dynasty=123
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6002123
+
+	8031.1.1 = {birth="8031.1.1"}
+	8047.1.1 = {add_trait=trained_warrior}
+	8080.1.1 = {death="8080.1.1"}
+}
+6009123 = {
+	name="Крегорн"	# a lord
+	dynasty=123
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6007123
+
+	8062.1.1 = {birth="8062.1.1"}
+	8078.1.1 = {add_trait=poor_warrior}
+	8121.1.1 = {death="8121.1.1"}
+}
+6011123 = {
+	name="Харрас"	# a lord
+	dynasty=123
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6009123
+
+	8085.1.1 = {birth="8085.1.1"}
+	8101.1.1 = {add_trait=poor_warrior}
+	8137.1.1 = {death="8137.1.1"}
+}
+6016123 = {
+	name="Харрен"	# a lord
+	dynasty=123
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6011123
+
+	8116.1.1 = {birth="8116.1.1"}
+	8132.1.1 = {add_trait=trained_warrior}
+	8149.1.1 = {death = {death_reason = death_murder}}
+}
+6020123 = {
+	name="Гевин"	# a lord
+	dynasty=123
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6016123
+
+	8141.1.1 = {birth="8141.1.1"}
+	8157.1.1 = {add_trait=trained_warrior}
+	8194.1.1 = {death = {death_reason = death_murder}}
+}
+6021123 = {
+	name="Теомор"	# a lord
+	dynasty=123
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6020123
+
+	8165.1.1 = {birth="8165.1.1"}
+	8181.1.1 = {add_trait=skilled_warrior}
+	8207.1.1 = {death="8207.1.1"}
+}
+6027123 = {
+	name="Гинир"	# a lord
+	dynasty=123
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6021123
+
+	8194.1.1 = {birth="8194.1.1"}
+	8210.1.1 = {add_trait=poor_warrior}
+	8236.1.1 = {death="8236.1.1"}
+}
+
+#####################
+###House Blacktyde###
+#####################
+502118 = {
+	name="Бейлон Черношкурый" #Бейлон Blackskin
+	dynasty = 1836582
+
+	add_trait=brilliant_strategist
+	add_trait=strong
+	add_trait=tall
+	add_trait=master_warrior
+	add_trait=ambitious
+	add_trait=envious
+	add_trait=ruthless
+	add_trait=cruel
+	add_trait=viking
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=750066
+
+	89.1.1 = {birth="89.1.1"}
+	140.1.1 = {death="140.1.1"}
+}
+503118 = {
+	name="Потомки Бейлона Черношкурого"
+	dynasty = 1836582
+	
+	religion="drowned_god"
+	culture="ironborn"
+	
+	occluded = yes
+	
+	father = 502118
+
+	140.1.1 = {birth="140.1.1"}
+	4371.1.1 = {death="4371.1.1"}
+}
+500118 = {
+	name = Джорон #King Джорон I
+	dynasty = 118 #Blacktyde
+	
+	martial=5
+	diplomacy=8
+	intrigue=3
+	learning=1
+	stewardship=3
+
+	religion=drowned_god
+	culture=ironborn
+
+	father=503118
+
+	add_trait=impaler
+	add_trait=cruel
+	add_trait=ruthless
+	add_trait=ambitious
+	add_trait=zealous
+	add_trait=lustful
+	add_trait=authoritative
+	add_trait=tough_soldier
+
+	4371.1.1 = {
+		birth=4371.1.1
+	}
+	4393.1.1 = {
+		add_trait=master_warrior
+		give_nickname=nick_maidensbane
+	}
+	4449.1.1 = {
+		death=4449.1.1
+	}
+}
+501118 = {
+	name = "Потомки Джорона"
+	dynasty = 118 #Blacktyde
+	
+	religion=drowned_god
+	culture=ironborn
+
+	father = 500118
+	
+	occluded = yes
+
+	4449.1.1 = {
+		birth=yes
+		give_nickname=nick_maidensbane
+	}
+	7851.1.1 = {
+		death=yes
+	}
+}
+340118 = {
+	name="Горен"	# a lord
+	dynasty=118
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=501118
+
+	7851.1.1 = {birth="7851.1.1"}
+	7867.1.1 = {add_trait=skilled_warrior}
+	7886.1.1 = {death="7886.1.1"}
+}
+3100118 = {
+	name="Викон"	# a lord
+	dynasty=118
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=340118
+
+	7878.1.1 = {birth="7878.1.1"}
+	7894.1.1 = {add_trait=skilled_warrior}
+	7940.1.1 = {death="7940.1.1"}
+}
+3201118 = {
+	name="Эммонд"	# a lord
+	dynasty=118
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3100118
+
+	7906.1.1 = {birth="7906.1.1"}
+	7922.1.1 = {add_trait=skilled_warrior}
+	7924.1.1 = {add_spouse=4201118}
+	7996.1.1 = {death="7996.1.1"}
+}
+4201118 = {
+	name="Фалиса"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7906.1.1 = {birth="7906.1.1"}
+	7996.1.1 = {death="7996.1.1"}
+}
+3000118 = {
+	name="Крегорн"	# a lord
+	dynasty=118
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father = 3201118
+	mother = 4201118
+
+	7972.1.1 = {birth="7972.1.1"}
+	7988.1.1 = {add_trait=trained_warrior}
+	7990.1.1 = {add_spouse=5000118}
+	7998.2.1 = {
+		death = {
+			death_reason = death_battle #maybe killed in chaos after Харрен's death
+		}
+	}
+}
+5000118 = {
+	name="Равелла"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7972.1.1 = {birth="7972.1.1"}
+	8015.1.1 = {death="8015.1.1"}
+}
+3001118 = {
+	name="Скайт"	# a lord
+	dynasty=118
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3000118
+	mother=5000118
+
+	7996.1.1 = {birth="7996.1.1"}
+	8015.1.1 = {add_trait=poor_warrior}
+	8047.1.1 = {death="8047.1.1"}
+}
+3003118 = {
+	name="Зигфрид"	# a lord
+	dynasty=118
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3001118
+
+	8027.1.1 = {birth="8027.1.1"}
+	8043.1.1 = {add_trait=poor_warrior}
+	8068.1.1 = {death="8068.1.1"}
+}
+3005118 = {
+	name="Римолф"	# a lord
+	dynasty=118
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3003118
+
+	8054.1.1 = {birth="8054.1.1"}
+	8070.1.1 = {add_trait=poor_warrior}
+	8100.1.1 = {death="8100.1.1"}
+}
+3008118 = {
+	name="Тристон"	# a lord
+	dynasty=118
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3005118
+
+	8088.1.1 = {birth="8088.1.1"}
+	8104.1.1 = {add_trait=skilled_warrior}
+	8136.1.1 = {death="8136.1.1"}
+}
+3014118 = {
+	name="Гармон"	# a lord
+	dynasty=118
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3008118
+
+	8118.1.1 = {birth="8118.1.1"}
+	8139.1.1 = {add_trait=poor_warrior}
+	8140.1.1 = {add_spouse=37107}
+	8150.1.1 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+3017118 = {
+	name="Андрик"	# a lord
+	dynasty=118
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3014118
+	mother=37107
+
+	8140.1.1 = {birth="8140.1.1"}
+	8163.1.1 = {add_trait=poor_warrior}
+	8189.1.1 = {death="8189.1.1"}
+}
+5007118 = {
+	name="Эсгред"
+	female=yes
+	dynasty=118
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3014118
+	mother=37107
+
+	8150.1.1 = {birth="8150.1.1"}
+	8204.1.1 = {death="8204.1.1"}
+}
+3018118 = {
+	name="Норн"	# a lord
+	dynasty=118
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3017118
+
+	8170.1.1 = {birth="8170.1.1"}
+	8186.1.1 = {add_trait=skilled_warrior}
+	8212.1.1 = {death="8212.1.1"}
+}
+3021118 = {
+	name="Бейлон"	# a lord
+	dynasty=118
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3018118
+
+	8196.1.1 = {birth="8196.1.1"}
+	8212.1.1 = {add_trait=poor_warrior}
+	8234.1.1 = {death="8234.1.1"}
+}
+3026118 = {
+	name="Беннарион"	# a lord
+	dynasty=118
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3021118
+
+	8217.1.1 = {birth="8217.1.1"}
+	8233.1.1 = {add_trait=poor_warrior}
+	8260.1.1 = {death="8260.1.1"}
+}
+3029118 = {
+	name="Марон"	# a lord
+	dynasty=118
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3026118
+
+	8239.1.1 = {birth="8239.1.1"}
+	8255.1.1 = {add_trait=poor_warrior}
+	8280.1.1 = {death="8280.1.1"}
+}
+
+#################
+###House Drumm###
+#################
+5001121 = {
+	name = Дагон #
+	dynasty = 121 #Drumm
+	
+	martial=7
+
+	religion=drowned_god
+	culture=ironborn
+	
+	add_trait=strong
+	add_trait=tall
+	add_trait=tough_soldier
+	add_trait="brave"
+	add_trait=mystic
+
+	father=750066
+
+	88.1.1 = {
+		birth=88.1.1
+	}
+	104.1.1 = {
+		add_trait=master_warrior
+		give_nickname=nick_the_necromancer
+	}
+	148.1.1 = {
+		death=148.1.1
+	}
+}
+5021121 = {
+	name = "Потомки Дагона"
+	dynasty = 121 #Drumm
+
+	religion=drowned_god
+	culture=ironborn
+	
+	occluded = yes
+	
+	father=5001121
+
+	148.1.1 = {
+		birth=148.1.1
+	}
+	2912.1.1 = {
+		death=2912.1.1
+	}
+}
+5011121 = {
+	name = Регнар #King Регнар 
+	dynasty = 121 #Drumm
+	
+	martial=7
+	learning=1
+	diplomacy=10
+	intrigue=4
+	stewardship=2
+
+	religion=drowned_god
+	culture=ironborn
+
+	father = 5021121
+	
+	add_trait=quick
+	add_trait=tough_soldier
+	add_trait="gregarious"
+	add_trait="brave"
+	add_trait="diligent"
+
+	2912.1.1 = {
+		birth=2912.1.1
+	}
+	2928.1.1 = {
+		add_trait=master_warrior
+		give_nickname=nick_raven_feeder
+	}
+	2956.1.1 = {
+		death=2956.1.1
+	}
+}
+5031121 = {
+	name = "Потомки Регнара"
+	dynasty = 121 #Drumm
+
+	religion=drowned_god
+	culture=ironborn
+	
+	occluded = yes
+	
+	father=5011121
+
+	2956.1.1 = {
+		birth=yes
+	}
+	7749.1.1 = {
+		death=7749.1.1
+	}
+}
+6008121 = {
+	name="Дейл"	# Дейл the Dread
+	dynasty=121
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=5031121
+
+	add_trait=tough_soldier
+	add_trait=strong
+	add_trait=impaler
+	add_trait=cruel
+	add_trait=ruthless
+	add_trait=ambitious
+	add_trait=brave
+
+	7749.1.1 = {birth="7749.1.1"}
+	7765.1.1 = {add_trait=master_warrior}
+	7769.1.1 = {give_nickname=nick_the_dread}
+	7819.1.1 = {death="7819.1.1"}
+}
+6010121 = {
+	name="Дагон"	# not a lord
+	dynasty=121
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6008121
+
+	7773.1.1 = {birth="7773.1.1"}
+	7789.1.1 = {add_trait=trained_warrior}
+	7817.1.1 = {death="7817.1.1"}
+}
+6007121 = {
+	name="Регнар"	# a lord
+	dynasty=121
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6010121
+
+	7796.1.1 = {birth="7796.1.1"}
+	7812.1.1 = {add_trait=trained_warrior}
+	7841.1.1 = {death="7841.1.1"}
+}
+6006121 = {
+	name="Рорин"	# Рорин the Reaver
+	dynasty=121
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6007121
+
+	add_trait=brilliant_strategist
+	add_trait=viking
+	add_trait=proud
+	add_trait=ambitious
+	add_trait=cruel
+	add_trait=brave
+
+	7824.1.1 = {birth="7824.1.1"}
+	7840.1.1 = {add_trait=master_warrior}
+	7844.1.1 = {give_nickname=nick_the_reaver}
+	7879.1.1 = {death="7879.1.1"}
+}
+6005121 = {
+	name="Квентон"	# a lord
+	dynasty=121
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6006121
+
+	7846.1.1 = {birth="7846.1.1"}
+	7862.1.1 = {add_trait=trained_warrior}
+	7886.1.1 = {death="7886.1.1"}
+}
+3202121 = {
+	name="Горольд"	# a lord
+	dynasty=121
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6005121
+
+	7869.1.1 = {birth="7869.1.1"}
+	7885.1.1 = {add_trait=skilled_warrior}
+	7902.1.1 = {death="7902.1.1"}
+}
+3203121 = {
+	name="Гормонд"	# Гормонд the Oldfather
+	dynasty=121
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3202121
+
+	add_trait=amateurish_plotter
+	add_trait=hedonist
+	add_trait=lustful
+
+	7891.1.1 = {
+		birth="7891.1.1"
+		effect = { 
+			health = 6
+			fertility = 2
+		}
+	}
+	7907.1.1 = {add_trait=poor_warrior}
+	7941.1.1 = {give_nickname=nick_the_oldfather} # can't be bothered to add all his sons
+	7985.1.1 = {death="7985.1.1"}
+}
+3100121 = {
+	name="Доннор"	# not a lord
+	dynasty=121
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3203121
+
+	7908.1.1 = {birth="7908.1.1"}
+	7924.1.1 = {add_trait=skilled_warrior}
+	7926.1.1 = {add_spouse=4200121}
+	7964.1.1 = {death="7964.1.1"}
+}
+4200121 = {
+	name="Марго"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7908.1.1 = {birth="7908.1.1"}
+	7964.1.1 = {death="7964.1.1"}
+}
+3201121 = {
+	name="Теон"	# a lord
+	dynasty=121
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=3100121
+	mother=4200121
+
+	7936.1.1 = {birth="7936.1.1"}
+	7952.1.1 = {add_trait=skilled_warrior}
+	7954.1.1 = {add_spouse=4201121}
+	7996.1.1 = {death="7996.1.1"}
+}
+4201121 = {
+	name="Барбри"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7936.1.1 = {birth="7936.1.1"}
+	7996.1.1 = {death="7996.1.1"}
+}
+6000121 = {
+	name="Хильмар"	# the Cunning, took Red Rain from an armored knight using his wits and a club. Probably from House Reyne
+	dynasty=121
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father = 3201121
+	mother = 4201121
+	
+	add_trait="quick"
+	add_trait="brave"
+	add_trait="deceitful"
+	add_trait="arbitrary"
+	add_trait="greedy"
+	add_trait=flamboyant_schemer
+
+	7964.1.1 = {birth="7964.1.1"}
+	7980.1.1 = {add_trait=skilled_warrior}
+	7990.1.1 = {
+		add_trait="redrain"
+		give_nickname=nick_the_cunning		
+	}
+	8018.1.1 = {death="8018.1.1"}
+}
+6002121 = {
+	name="Денис"	# a lord
+	dynasty=121
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6000121
+
+	7987.1.1 = {birth="7987.1.1"}
+	8003.1.1 = {add_trait=poor_warrior}
+	8018.1.1 = {
+		add_trait="redrain"
+	}
+	8037.1.1 = {death="8037.1.1"}
+}
+6003121 = {
+	name="Ленвуд"	# a lord
+	dynasty=121
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6002121
+
+	8015.1.1 = {birth="8015.1.1"}
+	8031.1.1 = {add_trait=poor_warrior}
+	8037.1.1 = {
+		add_trait="redrain"
+	}
+	8053.1.1 = {death="8053.1.1"}
+}
+6004121 = {
+	name="Мелдред"	# a lord
+	dynasty=121
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6003121
+
+	8033.1.1 = {birth="8033.1.1"}
+	8049.1.1 = {add_trait=poor_warrior}
+	8053.1.1 = {
+		add_trait="redrain"
+	}
+	8087.1.1 = {death="8087.1.1"}
+}
+6009121 = {
+	name="Регнар"	# a lord
+	dynasty=121
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6004121
+
+	8061.1.1 = {birth="8061.1.1"}
+	8077.1.1 = {add_trait=skilled_warrior}
+	8087.1.1 = {
+		add_trait="redrain"
+	}
+	8134.5.1 = {
+		death = {
+			death_reason=death_execution
+			killer=23199
+		}
+	}
+}
+6012121 = {
+	name="Амброд"	# not a lord
+	dynasty=121
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6009121
+
+	8085.1.1 = {birth="8085.1.1"}
+	8101.1.1 = {add_trait=poor_warrior}
+	8128.1.1 = {death="8128.1.1"}
+}
+6013121 = {
+	name="Дагон"
+	dynasty=121
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6012121
+
+	8111.1.1 = {birth="8111.1.1"}
+	8127.1.1 = {add_trait=trained_warrior}
+	8134.5.1 = {
+		add_trait="redrain"
+	}
+	8154.1.1 = {death="8154.1.1"}
+}
+6017121 = {
+	name="Гинир"	# a lord
+	dynasty=121
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6013121
+
+	8145.1.1 = {birth="8145.1.1" }
+	8154.1.1 = {add_trait="redrain"}
+	8161.1.1 = {add_trait=trained_warrior}
+	8210.1.1 = {death="8210.1.1"}
+}
+6019121 = {
+	name="Дунстан"	# a lord
+	dynasty=121
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6017121
+
+	8167.1.1 = {birth="8167.1.1" }
+	8183.1.1 = {add_trait=poor_warrior}
+	8210.1.1 = {add_trait="redrain"}
+	8213.1.1 = {death="8213.1.1"}
+}
+6024121 = {
+	name="Дальтон"	# a lord
+	dynasty=121
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6019121
+
+	8203.1.1 = {birth="8203.1.1" }
+	8213.1.1 = {add_trait="redrain"}
+	8219.1.1 = {add_trait=poor_warrior}
+	8247.1.1 = {death="8247.1.1"}
+}
+
+######################
+###House Stonehouse###
+######################
+6008108 = {
+	name="Рыжий Ральф" #Ragged Ральф of Old Wyk
+	dynasty = 1836582
+
+	add_trait=brilliant_strategist
+	add_trait=master_warrior
+	add_trait=brave
+	add_trait=ruthless
+	add_trait=viking
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=750066
+
+	91.1.1 = {birth="91.1.1"}
+	146.1.1 = {death="146.1.1"}
+}
+6007108 = {
+	name="Потомки Рыжего Ральфа"
+	dynasty = 1836582
+	
+	religion="drowned_god"
+	culture="ironborn"
+	
+	occluded = yes
+	
+	father = 6008108
+
+	146.1.1 = {birth="146.1.1"}
+	7820.1.1 = {death="7820.1.1"}
+}
+6026108 = {
+	name="Рагнор"	# a lord
+	dynasty=108
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6007108
+
+	7820.1.1 = {birth="7820.1.1"}
+	7836.1.1 = {add_trait=trained_warrior}
+	7870.1.1 = {death="7870.1.1"}
+}
+6025108 = {
+	name="Рогин"	# a lord
+	dynasty=108
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6026108
+
+	7845.1.1 = {birth="7845.1.1"}
+	7861.1.1 = {add_trait=trained_warrior}
+	7895.1.1 = {death="7895.1.1"}
+}
+6024108 = {
+	name="Терон"	# a lord
+	dynasty=108
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6025108
+
+	7870.1.1 = {birth="7870.1.1"}
+	7886.1.1 = {add_trait=trained_warrior}
+	7920.1.1 = {death="7920.1.1"}
+}
+6023108 = {
+	name="Торвольд"	# a lord
+	dynasty=108
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6024108
+
+	7895.1.1 = {birth="7895.1.1"}
+	7911.1.1 = {add_trait=trained_warrior}
+	7945.1.1 = {death="7945.1.1"}
+}
+6005108 = {
+	name="Бейлон"	# a lord
+	dynasty=108
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6023108
+
+	7918.1.1 = {birth="7918.1.1"}
+	7934.1.1 = {add_trait=trained_warrior}
+	7980.1.1 = {death="7980.1.1"}
+}
+6004108 = {
+	name="Дагон"	# a lord
+	dynasty=108
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6005108
+
+	7940.1.1 = {birth="7940.1.1"}
+	7956.1.1 = {add_trait=trained_warrior}
+	8000.1.1 = {death="8000.1.1"}
+}
+6002108 = {
+	name="Ральф"	# a lord
+	dynasty=108
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6004108
+
+	7960.1.1 = {birth="7960.1.1"}
+	7976.1.1 = {add_trait=trained_warrior}
+	8023.1.1 = {death="8023.1.1"}
+}
+6000108 = {
+	name="Ленвуд"	# a lord
+	dynasty=108
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6002108
+
+	7980.1.1 = {birth="7980.1.1"}
+	7996.1.1 = {add_trait=trained_warrior}
+	8054.1.1 = {death="8054.1.1"}
+}
+6001108 = {
+	name="Тристифер"	# a lord
+	dynasty=108
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6000108
+
+	8014.1.1 = {birth="8014.1.1"}
+	8030.1.1 = {add_trait=poor_warrior}
+	8058.1.1 = {death="8058.1.1"}
+}
+6003108 = {
+	name="Денис"	# a lord
+	dynasty=108
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6001108
+
+	8042.1.1 = {birth="8042.1.1"}
+	8058.1.1 = {add_trait=poor_warrior}
+	8087.1.1 = {death="8087.1.1"}
+}
+6006108 = {
+	name="Горольд"	# a lord
+	dynasty=108
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6003108
+
+	8070.1.1 = {birth="8070.1.1"}
+	8086.1.1 = {add_trait=poor_warrior}
+	8111.1.1 = {death="8111.1.1"}
+}
+6011108 = {
+	name="Люцимор"	# a lord
+	dynasty=108
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6006108
+
+	8102.1.1 = {birth="8102.1.1"}
+	8118.1.1 = {add_trait=poor_warrior}
+	8134.5.1 = {
+		death = {
+			death_reason=death_execution
+			killer=23199
+		}
+	}
+}
+6012108 = {
+	name="Гермунд"	# a lord
+	dynasty=108
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6011108
+
+	8122.1.1 = {birth="8122.1.1"}
+	8138.1.1 = {add_trait=poor_warrior}
+	8172.1.1 = {death="8172.1.1"}
+}
+6014108 = {
+	name="Сона"	# not a lord
+	female=yes
+	dynasty=108
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6011108
+
+	8124.1.1 = {birth="8124.1.1"}
+	8177.1.1 = {death="8177.1.1"}
+}
+6015108 = {
+	name="Урригон"	# a lord
+	dynasty=108
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6012108
+
+	8142.1.1 = {birth="8142.1.1"}
+	8158.1.1 = {add_trait=poor_warrior}
+	8179.1.1 = {death = {death_reason = death_battle}}
+}
+6019108 = {
+	name="Эурон"	# a lord
+	dynasty=108
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6015108
+
+	8175.1.1 = {birth="8175.1.1"}
+	8191.1.1 = {add_trait=skilled_warrior}
+	8222.1.1 = {death="8222.1.1"}
+}
+6022108 = {
+	name="Сигрин"	# a lord
+	dynasty=108
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6019108
+
+	8197.1.1 = {birth="8197.1.1"}
+	8213.1.1 = {add_trait=poor_warrior}
+	8215.1.1 = {add_spouse=5022108}
+	8240.1.1 = {death = {death_reason = death_battle}}
+}
+5022108 = {
+	name="Юнелла"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8197.1.1 = {birth="8197.1.1"}
+	8229.1.1 = {death="8229.1.1"}
+}
+
+#################
+###House Sparr###
+#################
+6024113 = {
+	name="Бейлон"	# a lord
+	dynasty=113
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7845.1.1 = {birth=yes}
+	7895.1.1 = {death=yes}
+}
+6023113 = {
+	name="Силас"	# a lord
+	dynasty=113
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6024113
+
+	7870.1.1 = {birth=yes}
+	7920.1.1 = {death=yes}
+}
+6022113 = {
+	name="Зигфрид"	# a lord
+	dynasty=113
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6023113
+
+	7895.1.1 = {birth=yes}
+	7945.1.1 = {death=yes}
+}
+6021113 = {
+	name="Саурон"	# a lord
+	dynasty=113
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6022113
+
+	7920.1.1 = {birth=yes}
+	7970.1.1 = {death=yes}
+}
+6020113 = {
+	name="Саргон"	# a lord
+	dynasty=113
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6021113
+
+	7945.1.1 = {birth=yes}
+	7995.1.1 = {death=yes}
+}
+6000113 = {
+	name="Стеффарион"	# a lord
+	dynasty=113
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6020113
+
+	7967.1.1 = {birth="7967.1.1"}
+	7983.1.1 = {add_trait=skilled_warrior}
+	8017.1.1 = {death="8017.1.1"}
+}
+6002113 = {
+	name="Робин"	# a lord
+	dynasty=113
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6000113
+
+	7992.1.1 = {birth="7992.1.1"}
+	8008.1.1 = {add_trait=poor_warrior}
+	8029.1.1 = {death = {death_reason = death_battle}}
+}
+6005113 = {
+	name="Доннел"	# a lord
+	dynasty=113
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6002113
+
+	8016.1.1 = {birth="8016.1.1"}
+	8032.1.1 = {add_trait=poor_warrior}
+	8050.1.1 = {death="8050.1.1"}
+}
+6006113 = {
+	name="Коттер"	# a lord
+	dynasty=113
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6005113
+
+	8048.1.1 = {birth="8048.1.1"}
+	8064.1.1 = {add_trait=poor_warrior}
+	8087.1.1 = {death="8087.1.1"}
+}
+6007113 = {
+	name="Кадвил"	# a lord
+	dynasty=113
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6006113
+
+	8070.1.1 = {birth="8070.1.1"}
+	8086.1.1 = {add_trait=trained_warrior}
+	8134.1.1 = {death="8134.1.1"}
+}
+6008113 = {
+	name="Уллер"	# a lord
+	dynasty=113
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6007113
+
+	8090.1.1 = {birth="8090.1.1"}
+	8106.1.1 = {add_trait=poor_warrior}
+	8143.1.1 = {death="8143.1.1"}
+}
+6010113 = {
+	name="Римолф"	# a lord
+	dynasty=113
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6008113
+
+	8118.1.1 = {birth="8118.1.1"}
+	8134.1.1 = {add_trait=poor_warrior}
+	8155.1.1 = {death="8155.1.1"}
+}
+6012113 = {
+	name="Куоред"	# a lord
+	dynasty=113
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6010113
+
+	8143.1.1 = {birth="8143.1.1"}
+	8159.1.1 = {add_trait=poor_warrior}
+	8210.1.1 = {death="8210.1.1"}
+}
+6015113 = {
+	name="Рук"	# a lord
+	dynasty=113
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6012113
+
+	8171.1.1 = {birth="8171.1.1"}
+	8187.1.1 = {add_trait=skilled_warrior}
+	8213.1.1 = {death="8213.1.1"}
+}
+6017113 = {
+	name="Стигг"	# a lord
+	dynasty=113
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6015113
+
+	8206.1.1 = {birth="8206.1.1"}
+	8222.1.1 = {add_trait=skilled_warrior}
+	8224.1.1 = {add_spouse=5017113}
+	8263.1.1 = {death="8263.1.1"}
+}
+5017113 = {
+	name="Винафрея"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8206.1.1 = {birth="8206.1.1"}
+	8263.1.1 = {death="8263.1.1"}
+}
+
+##################
+###House Merlyn###
+##################
+6005110 = {
+	name="Мерлин"
+	dynasty = 1836582
+
+	add_trait=brilliant_strategist
+	add_trait=strong
+	add_trait=tall
+	add_trait=master_warrior
+	add_trait=brave
+	add_trait=diligent
+	add_trait=viking
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=750066
+
+	99.1.1 = {birth="99.1.1"}
+	132.1.1 = {death="132.1.1"}
+}
+6006110 = {
+	name="Потомки Мерлина"
+	dynasty = 1836582
+	
+	religion="drowned_god"
+	culture="ironborn"
+	
+	occluded = yes
+	
+	father = 6005110
+
+	132.1.1 = {birth="132.1.1"}
+	7811.1.1 = {death="7811.1.1"}
+}
+345110 = {
+	name="Манфрид"	# a lord
+	dynasty=110
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=6006110
+	
+	7811.1.1 = {birth="7811.1.1"}
+	7860.1.1 = {death="7860.1.1"}
+}
+344110 = {
+	name="Рагнор"	# a lord
+	dynasty=110
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=345110
+	
+	7832.1.1 = {birth="7832.1.1"}
+	7881.1.1 = {death="7881.1.1"}
+}
+343110 = {
+	name="Рогин"	# a lord
+	dynasty=110
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=344110
+	
+	7854.1.1 = {birth="7854.1.1"}
+	7908.1.1 = {death="7908.1.1"}
+}
+342110 = {
+	name="Вулфгар"	# a lord
+	dynasty=110
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=343110
+	
+	7878.1.1 = {birth="7878.1.1"}
+	7931.1.1 = {death="7931.1.1"}
+}
+341110 = {
+	name="Гелмарр"	# a lord
+	dynasty=110
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=342110
+	
+	7898.1.1 = {birth="7898.1.1"}
+	7945.1.1 = {death="7945.1.1"}
+}
+340110 = {
+	name="Хаген"	# a lord
+	dynasty=110
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=341110
+	
+	7924.1.1 = {birth="7924.1.1"}
+	7977.1.1 = {death="7977.1.1"}
+}
+6007110 = {
+	name="Бейлон"	# a lord
+	dynasty=110
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=340110
+
+	7950.1.1 = {birth="7950.1.1"}
+	7966.1.1 = {add_trait=trained_warrior add_spouse=5007110}
+	7988.1.1 = {death="7988.1.1"}
+}
+5007110 = {
+	name="Джейн"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7950.1.1 = {birth="7950.1.1"}
+	7988.1.1 = {death="7988.1.1"}
+}
+6000110 = {
+	name="Мелдред"	# a lord
+	dynasty=110
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6007110
+	mother=5007110
+
+	7975.1.1 = {birth="7975.1.1"}
+	7991.1.1 = {add_trait=trained_warrior}
+	7993.1.1 = {add_spouse=5000110}
+	7998.2.1 = {
+		death = {
+			death_reason = death_battle #maybe killed in chaos after Харрен's death
+		}
+	}
+}
+5000110 = {
+	name="Моэлла"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7975.1.1 = {birth="7975.1.1"}
+	8017.1.1 = {death="8017.1.1"}
+}
+6002110 = {
+	name="Тимор"	# a lord
+	dynasty=110
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6000110
+	mother=5000110
+
+	7994.1.1 = {birth="7994.1.1"}
+	8010.1.1 = {add_trait=skilled_warrior}
+	8046.1.1 = {death="8046.1.1"}
+}
+6001110 = {
+	name="Хото"	# a lord
+	dynasty=110
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6002110
+
+	8021.1.1 = {birth="8021.1.1"}
+	8037.1.1 = {add_trait=trained_warrior}
+	8055.1.1 = {death="8055.1.1"}
+}
+6003110 = {
+	name="Гинир"	# a lord
+	dynasty=110
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6001110
+
+	8046.1.1 = {birth="8046.1.1"}
+	8062.1.1 = {add_trait=trained_warrior}
+	8083.1.1 = {death="8083.1.1"}
+}
+6004110 = {
+	name="Рорин"	# a lord
+	dynasty=110
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6003110
+
+	8067.1.1 = {birth="8067.1.1"}
+	8083.1.1 = {add_trait=skilled_warrior}
+	8115.1.1 = {death="8115.1.1"}
+}
+6008110 = {
+	name="Уррон"	# a lord
+	dynasty=110
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6004110
+
+	8093.1.1 = {birth="8093.1.1"}
+	8109.1.1 = {add_trait=poor_warrior}
+	8124.1.1 = {death="8124.1.1"}
+}
+6011110 = {
+	name="Грейдон"	# a lord
+	dynasty=110
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6008110
+
+	8117.1.1 = {birth="8117.1.1"}
+	8133.1.1 = {add_trait=trained_warrior}
+	8152.1.1 = {death="8152.1.1"}
+}
+4016109 = {
+	name="Рина"
+	female=yes
+	dynasty=110
+
+	religion="the_seven"
+	culture="ironborn"
+
+	father=6008110
+
+	add_trait=zealous
+
+	8120.1.1 = {birth="8120.1.1"}
+	8173.1.1 = {death="8173.1.1"}
+}
+6012110 = {
+	name="Марон"	# a lord
+	dynasty=110
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6011110
+
+	8135.1.1 = {birth="8135.1.1"}
+	8151.1.1 = {add_trait=poor_warrior}
+	8196.1.1 = {death="8196.1.1"}
+}
+6017110 = {
+	name="Урзен"	# not a lord
+	dynasty=110
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6012110
+
+	8161.1.1 = {birth="8161.1.1"}
+	8177.1.1 = {add_trait=trained_warrior}
+	8178.1.1 = {death="8178.1.1"}
+}
+6018110 = {
+	name="Хаген"	# a lord
+	dynasty=110
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6017110
+
+	8177.1.1 = {birth="8177.1.1"}
+	8193.1.1 = {add_trait=poor_warrior}
+	8253.1.1 = {death="8253.1.1"}
+}
+6019110 = {
+	name="Бейлон"	# not a lord
+	dynasty=110
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6018110
+
+	8199.1.1 = {birth="8199.1.1"}
+	8215.1.1 = {add_trait=trained_warrior}
+	8241.1.1 = {death="8241.1.1"}
+}
+6025110 = {
+	name="Рольф"	# a lord
+	dynasty=110
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6019110
+
+	8219.1.1 = {birth="8219.1.1"}
+	8235.1.1 = {add_trait=poor_warrior}
+	8253.1.1 = {death = {death_reason = death_murder}}
+}
+6026110 = {
+	name="Уолдон"	# a lord
+	dynasty=110
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=6025110
+
+	8243.1.1 = {birth="8243.1.1"}
+	8259.1.1 = {add_trait=trained_warrior}
+	8261.1.1 = {add_spouse=5026110}
+	8288.1.1 = {death="8288.1.1"}
+}
+5026110 = {
+	name="Арвин"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8243.1.1 = {birth="8243.1.1"}
+	8288.1.1 = {death="8288.1.1"}
+}
+
+###################
+###House Orkwood###
+###################
+102116 = {
+	name="Орквуд"
+	dynasty = 1836582
+
+	add_trait=brilliant_strategist
+	add_trait=strong
+	add_trait=tall
+	add_trait=master_warrior
+	add_trait=brave
+	add_trait=diligent
+	add_trait=viking
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=750066
+
+	93.1.1 = {birth="93.1.1"}
+	145.1.1 = {death="145.1.1"}
+}
+104116 = {
+	name="Потомки Орквуда"
+	dynasty = 1836582
+	
+	religion="drowned_god"
+	culture="ironborn"
+	
+	occluded = yes
+	
+	father = 102116
+
+	145.1.1 = {birth="145.1.1"}
+	7827.1.1 = {death="7827.1.1"}
+}
+343116 = {
+	name="Уррон"	# a lord
+	dynasty=116
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=104116
+
+	7827.1.1 = {birth="7827.1.1"}
+	7843.1.1 = {add_trait=trained_warrior}
+	7883.1.1 = {death="7883.1.1"}
+}
+342116 = {
+	name="Андрик"	# a lord
+	dynasty=116
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=343116
+
+	7854.1.1 = {birth="7854.1.1"}
+	7870.1.1 = {add_trait=trained_warrior}
+	7906.1.1 = {death="7906.1.1"}
+}
+341116 = {
+	name="Боремунд"	# a lord
+	dynasty=116
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=342116
+
+	7878.1.1 = {birth="7878.1.1"}
+	7894.1.1 = {add_trait=trained_warrior}
+	7932.1.1 = {death="7932.1.1"}
+}
+340116 = {
+	name="Бартон"	# a lord
+	dynasty=116
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=341116
+
+	7902.1.1 = {birth="7902.1.1"}
+	7918.1.1 = {add_trait=trained_warrior}
+	7947.1.1 = {death="7947.1.1"}
+}
+105116 = {
+	name="Квентон"	# a lord
+	dynasty=116
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=340116
+
+	7930.1.1 = {birth="7930.1.1"}
+	7946.1.1 = {add_trait=trained_warrior add_spouse=405116}
+	7994.1.1 = {death="7994.1.1"}
+}
+405116 = {
+	name="Аланнис"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7930.1.1 = {birth="7930.1.1"}
+	7994.1.1 = {death="7994.1.1"}
+}
+100116 = {
+	name="Эурон"	# a lord
+	dynasty=116
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=105116
+	mother=405116
+
+	7951.1.1 = {birth="7951.1.1"}
+	7967.1.1 = {add_trait=trained_warrior}
+	8013.1.1 = {death="8013.1.1"}
+}
+101116 = {
+	name="Ральф"	# a lord
+	dynasty=116
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=100116
+
+	7978.1.1 = {birth="7978.1.1"}
+	7994.1.1 = {add_trait=trained_warrior}
+	8024.1.1 = {death="8024.1.1"}
+}
+103116 = {
+	name="Зигфрид"	# a lord
+	dynasty=116
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=101116
+
+	7996.1.1 = {birth="7996.1.1"}
+	8012.1.1 = {add_trait=skilled_warrior}
+	8061.1.1 = {death="8061.1.1"}
+}
+106116 = {
+	name="Ральф"	# not a lord
+	dynasty=116
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=103116
+
+	8014.1.1 = {birth="8014.1.1"}
+	8030.1.1 = {add_trait=poor_warrior}
+	8060.1.1 = {death="8060.1.1"}
+}
+111116 = {
+	name="Бартон"	# a lord
+	dynasty=116
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=106116
+
+	8051.1.1 = {birth="8051.1.1"}
+	8067.1.1 = {add_trait=trained_warrior}
+	8090.1.1 = {death="8090.1.1"}
+}
+114116 = {
+	name="Дреннан"	# a lord
+	dynasty=116
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=111116
+
+	8073.1.1 = {birth="8073.1.1"}
+	8089.1.1 = {add_trait=skilled_warrior}
+	8148.1.1 = {death="8148.1.1"}
+}
+115116 = {
+	name="Лоррен"	# not a lord
+	dynasty=116
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=111116
+
+	8075.1.1 = {birth="8075.1.1"}
+	8091.1.1 = {add_trait=skilled_warrior}
+	8132.1.1 = {death="8132.1.1"}
+}
+117116 = {
+	name="Норфрид"	# not a lord, from MUSH
+	dynasty=116
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=114116
+
+	add_trait=bastard
+	give_nickname=nick_pyke
+
+	8114.1.1 = {birth="8114.1.1"}
+	8130.1.1 = {add_trait=skilled_warrior}
+	8180.1.1 = {death="8180.1.1"}
+}
+121116 = {
+	name="Дагон"	# a lord
+	dynasty=116
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=115116
+
+	8100.1.1 = {birth="8100.1.1"}
+	8116.1.1 = {add_trait=skilled_warrior}
+	8156.1.1 = {death = {death_reason = death_murder}}
+}
+123116 = {
+	name="Харраг"	# a lord
+	dynasty=116
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=121116
+
+	8127.1.1 = {birth="8127.1.1"}
+	8143.1.1 = {add_trait=poor_warrior}
+	8161.1.1 = {death="8161.1.1"}
+}
+124116 = {
+	name="Ральф"	# a lord
+	dynasty=116
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=121116
+
+	8130.1.1 = {birth="8130.1.1"}
+	8146.1.1 = {add_trait=poor_warrior}
+	8180.1.1 = {death="8180.1.1"}
+}
+128116 = {
+	name="Верлаг"	# a lord
+	dynasty=116
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=124116
+
+	8159.1.1 = {birth="8159.1.1"}
+	8175.1.1 = {add_trait=trained_warrior}
+	8209.1.1 = {death="8209.1.1"}
+}
+129116 = {
+	name="Эйрон"	# a lord
+	dynasty=116
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=128116
+
+	8184.1.1 = {birth="8184.1.1"}
+	8200.1.1 = {add_trait=poor_warrior}
+	8214.1.1 = {death="8214.1.1"}
+}
+130116 = {
+	name="Яра"	
+	dynasty=116
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=128116
+
+	8185.1.1 = {birth="8185.1.1"}
+	8244.1.1 = {death="8244.1.1"}
+}
+135116 = {
+	name="Лоррен"	# a lord
+	dynasty=116
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=129116
+
+	8207.1.1 = {birth="8207.1.1"}
+	8223.1.1 = {add_trait=trained_warrior}
+	8249.1.1 = {death="8249.1.1"}
+}
+138116 = {
+	name="Урек"	# a lord
+	dynasty=116
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=135116
+
+	8233.1.1 = {birth="8233.1.1"}
+	8249.1.1 = {add_trait=poor_warrior}
+	8251.1.1 = {add_spouse=438116}
+	8285.1.1 = {death="8285.1.1"}
+}
+438116 = {
+	name="Беони"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8233.1.1 = {birth="8233.1.1"}
+	8285.1.1 = {death="8285.1.1"}
+}
+
+################
+###House Codd###
+################
+1511507 = {
+	name="Кадрон"	# not a lord
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	7760.1.1 = {birth="7760.1.1"}
+	7776.1.1 = {add_trait=skilled_warrior}
+	7803.1.1 = {
+		death= {
+			death_reason = death_murder
+			killer=616174430 
+		}
+	}
+}
+4381507 = {
+	name="Меланта"
+	female=yes
+
+	religion="old_gods"
+	culture="northman"
+	
+	add_trait=salt_wife
+
+	7762.1.1 = {birth="7762.1.1"}
+	7836.1.1 = {death="7836.1.1"}
+}
+1361507 = {
+	name="Харлон"	# a lord
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=1511507
+	mother=4381507
+
+	7800.1.1 = {birth="7800.1.1"}
+	7816.1.1 = {add_trait=skilled_warrior}
+	7818.1.1 = {add_spouse=4361507}
+	7860.1.1 = {death="7860.1.1"}
+}
+4361507 = {
+	name="Мэйген"
+	female=yes
+	dynasty=1507
+	
+	give_nickname=nick_pyke
+	add_trait=bastard
+	add_trait=salt_wife
+	
+	father=1511507
+	mother=616174430
+
+	religion="the_seven"
+	culture="riverlander"
+
+	7800.1.1 = {birth="7800.1.1"}
+	7870.1.1 = {death="7870.1.1"}
+}
+1371507 = {
+	name="Игон"	# a lord
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1361507
+	mother=4361507
+	
+	add_trait=ugly
+	add_trait=inbred
+	add_trait=genius
+
+	7822.1.1 = {birth="7822.1.1"}
+	7838.1.1 = {add_trait=trained_warrior}
+	7840.1.1 = {add_spouse=4371507}
+	7876.1.1 = {death="7876.1.1"}
+}
+4371507 = {
+	name="Джейн"
+	female=yes
+	
+	religion="the_seven"
+	culture="westerman"
+	
+	add_trait=salt_wife
+
+	7822.1.1 = {birth="7822.1.1"}
+	7876.1.1 = {death="7876.1.1"}
+}
+1381507 = {
+	name="Хильмар"	# a lord
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1371507
+	mother=4371507
+
+	7849.1.1 = {birth="7849.1.1"}
+	7865.1.1 = {add_trait=poor_warrior}
+	7919.1.1 = {death = {death_reason = death_accident}}
+}
+1391507 = {
+	name="Брелла"	# not a lord
+	female=yes
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1371507
+	mother=4371507
+
+	7852.1.1 = {birth="7852.1.1"}
+	7870.1.1 = {add_spouse=1381507}
+	7900.1.1 = {death="7900.1.1"}
+}
+1401507 = {
+	name="Юнелла"	# not a lord
+	female=yes
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1371507
+	mother=4371507
+	
+	7855.1.1 = {birth="7855.1.1"}
+	7915.1.1 = {death="7915.1.1"}
+}
+1411507 = {
+	name="Уррон"	# not a lord
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1371507
+	mother=4371507
+	
+	add_trait=inbred
+	
+	7857.1.1 = {birth="7857.1.1"}
+	7873.1.1 = {add_trait=poor_warrior}
+	7875.1.1 = {add_spouse=1401507}
+	7903.1.1 = {death="7903.1.1"}
+}
+1421507 = {
+	name="Изилла"	# not a lord
+	female=yes
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1381507
+	mother=1391507
+
+	7882.1.1 = {birth="7882.1.1"}
+	7950.1.1 = {death = {death_reason = death_accident}}
+}
+1431507 = {
+	name="Дагмер"	# a lord
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1381507
+	mother=1391507
+
+	7883.1.1 = {birth="7883.1.1"}
+	7899.1.1 = {add_trait=trained_warrior}
+	7901.1.1 = {add_spouse=1471507}
+	7948.1.1 = {death="7948.1.1"}
+}
+1441507 = {
+	name="Мередит"	# not a lord
+	female=yes
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1381507
+	mother=1391507
+
+	7886.1.1 = {birth="7886.1.1"}
+	7935.1.1 = {death="7935.1.1"}
+}
+1471507 = {
+	name="Инис"	# not a lord
+	female=yes
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1411507
+	mother=1401507
+
+	7882.1.1 = {birth="7882.1.1"}
+	7923.1.1 = {death="7923.1.1"}
+}
+1481507 = {
+	name="Моэлла"	# not a lord
+	female=yes
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1431507
+	mother=1471507
+
+	7917.1.1 = {birth="7917.1.1"}
+	7935.1.1 = {add_spouse=1491507}
+	7976.1.1 = {death="7976.1.1"}
+}
+1491507 = {
+	name="Тодрик"	# a lord
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1431507
+	mother=1471507
+
+	7918.1.1 = {birth="7918.1.1"}
+	7934.1.1 = {add_trait=poor_warrior}
+	7970.1.1 = {death="7970.1.1"}
+}
+1501507 = {
+	name="Кадрон"	# a lord
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1491507
+	mother=1481507
+	
+	add_trait=ugly
+
+	7940.1.1 = {birth="7940.1.1"}
+	7956.1.1 = {add_trait=poor_warrior}
+	7958.1.1 = {add_spouse=4501507}
+	7995.1.1 = {death="7995.1.1"}
+}
+4501507 = {
+	name="Рослин"
+	female=yes
+	
+	add_trait=salt_wife
+
+	religion="the_seven"
+	culture="riverlander"
+
+	7940.1.1 = {birth="7940.1.1"}
+	8020.1.1 = {death="8020.1.1"}
+}
+1001507 = {
+	name="Кадвил"	# not a lord
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=1501507
+	mother=4501507
+
+	7960.1.1 = {birth="7960.1.1"}
+	7976.1.1 = {add_trait=trained_warrior}
+	8018.1.1 = {death="8018.1.1"}
+}
+1011507 = {
+	name="Верлаг"	# a lord
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1001507
+
+	7978.1.1 = {birth="7978.1.1"}
+	7994.1.1 = {add_trait=poor_warrior}
+	7996.1.1 = {employer=11566}
+	7998.2.1 = {
+		death = {
+			death_reason = death_battle #maybe killed in chaos after Харрен's death
+		}
+	}
+}
+1041507 = {
+	name="Хаген"	# a lord
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1011507
+
+	7996.1.1 = {birth="7996.1.1"}
+	8012.1.1 = {add_trait=poor_warrior}
+	8019.1.1 = {add_spouse=1051507}
+	8061.1.1 = {death="8061.1.1"}
+}
+1051507 = {
+	name="Яра"	# not a lord
+	dynasty=1507
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1011507
+
+	7998.1.1 = {birth="7998.1.1"}
+	8014.1.1 = {add_trait=poor_warrior}
+	8056.1.1 = {death="8056.1.1"}
+}
+1061507 = {
+	name="Манфрид"	# a lord
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1041507
+	mother=1051507
+
+	8028.1.1 = {birth="8028.1.1"}
+	8044.1.1 = {add_trait=trained_warrior}
+	8079.1.1 = {death="8079.1.1"}
+}
+1081507 = {
+	name="Ромни"	# a lord
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1061507
+
+	8056.1.1 = {birth="8056.1.1"}
+	8072.1.1 = {add_trait=skilled_warrior}
+	8096.1.1 = {death="8096.1.1"}
+}
+1101507 = {
+	name="Джайлс"	# a lord
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1081507
+
+	8084.1.1 = {birth="8084.1.1"}
+	8100.1.1 = {add_trait=trained_warrior}
+	8151.1.1 = {death="8151.1.1"}
+}
+1121507 = {
+	name="Джоннела"	# not a lord
+	female=yes
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1101507
+
+	8103.1.1 = {birth="8103.1.1"}
+	8151.1.1 = {death="8151.1.1"}
+}
+1521507 = {
+	name="Квеллон"	# not a lord
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1131507
+	mother=1121507
+	
+	add_trait=bastard
+	give_nickname=nick_pyke
+
+	8120.1.1 = {birth="8120.1.1"}
+	8136.1.1 = {add_trait=trained_warrior}
+	8161.1.1 = {death="8161.1.1"}
+}
+1531507 = {
+	name="Аланнис"	# not a lord
+	dynasty=1507
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1521507
+	mother=1121507
+	
+	add_trait=bastard
+	give_nickname=nick_pyke
+
+	8141.1.1 = {birth="8141.1.1"}
+	8188.1.1 = {death="8188.1.1"}
+}
+1131507 = {
+	name="Саргон"	# a lord
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1101507
+
+	8104.1.1 = {birth="8104.1.1"}
+	8120.1.1 = {add_trait=trained_warrior}
+	8161.1.1 = {death="8161.1.1"}
+}
+1141507 = {
+	name="Харлон"	# a lord
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1101507
+
+	8106.1.1 = {birth="8106.1.1"}
+	8122.1.1 = {add_trait=skilled_warrior}
+	8124.1.1 = {add_spouse=4141507}
+	8182.1.1 = {
+		death= {
+			death_reason = death_murder
+			killer=4141507
+		}
+	}
+}
+4141507 = {
+	name="Morra"
+	female=yes
+	
+	add_trait=salt_wife
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	8106.1.1 = {birth="8106.1.1"}
+	8182.1.1 = {death="8182.1.1"}
+}
+1151507 = {
+	name="Эрик"	# a lord
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1141507
+	mother=4141507
+
+	8129.1.1 = {birth="8129.1.1"}
+	8145.1.1 = {add_trait=trained_warrior}
+	8147.1.1 = {add_spouse=4151507}
+	8194.1.1 = {death="8194.1.1"}
+}
+4151507 = {
+	name="Рейлис"
+	female=yes
+	
+	add_trait=salt_wife
+
+	religion = valyrian_rel
+	culture="eastern_valyrian"
+
+	8129.1.1 = {birth="8129.1.1"}
+	8194.1.1 = {death="8194.1.1"}
+}
+1161507 = {
+	name="Савейн"	# a lord
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1151507
+	mother=4151507
+
+	8150.1.1 = {birth="8150.1.1"}
+	8166.1.1 = {add_trait=poor_warrior add_spouse=1531507}
+	8220.1.1 = {death="8220.1.1"}
+}
+1181507 = {
+	name="Грейдон"	# not a lord
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1161507
+	mother=1531507
+
+	8168.1.1 = {birth="8168.1.1"}
+	8184.1.1 = {add_trait=trained_warrior}
+	8219.1.1 = {death="8219.1.1"}
+}
+1201507 = {
+	name="Алин"	# a lord
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1181507
+
+	8190.1.1 = {birth="8190.1.1"}
+	8206.1.1 = {add_trait=trained_warrior}
+	8266.1.1 = {death="8266.1.1"}
+}
+1241507 = {
+	name="Урек"	# not a lord
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1201507
+
+	8214.1.1 = {birth="8214.1.1"}
+	8230.1.1 = {add_trait=skilled_warrior}
+	8248.1.1 = {death="8248.1.1"}
+}
+1251507 = {
+	name="Эурон"	# not a lord
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1201507
+
+	8216.1.1 = {birth="8216.1.1"}
+	8232.1.1 = {add_trait=poor_warrior}
+	8257.1.1 = {death="8257.1.1"}
+}
+1261507 = {
+	name="Андрик"	# a lord
+	dynasty=1507
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1241507
+
+	8243.1.1 = {birth="8243.1.1"}
+	8259.1.1 = {add_trait=trained_warrior}
+	8261.1.1 = {add_spouse=4261507}
+	8274.1.1 = {death="8274.1.1"}
+}
+4261507 = {
+	name="Барбри"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8243.1.1 = {birth="8243.1.1"}
+	8274.1.1 = {death="8274.1.1"}
+}
+
+##################
+###House Humble###
+##################
+1211506 = {
+	name="Бартон"	# not a lord
+	dynasty=1506
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8208.1.1 = {birth="8208.1.1"}
+	8224.1.1 = {add_trait=trained_warrior}
+	8253.1.1 = {death="8253.1.1"}
+}
+1241506 = {
+	name="Марон"	# not a lord
+	dynasty=1506
+
+	religion="drowned_god"
+	culture="ironborn"
+	
+	father=1211506
+
+	8230.1.1 = {birth="8230.1.1"}
+	8246.1.1 = {add_trait=trained_warrior}
+	8248.1.1 = {add_spouse=4241506}
+	8284.1.1 = {death="8284.1.1"}
+}
+4241506 = {
+	name="Брелла"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8230.1.1 = {birth="8230.1.1"}
+	8284.1.1 = {death="8284.1.1"}
+}
+1251506 = {
+	name="Гормонд"	# not a lord
+	dynasty=1506
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	father=1211506
+
+	8231.1.1 = {birth="8231.1.1"}
+	8247.1.1 = {add_trait=trained_warrior}
+	8249.1.1 = {add_spouse=4251506}
+	8277.1.1 = {death="8277.1.1"}
+}
+4251506 = {
+	name="Джоннела"
+	female=yes
+
+	religion="drowned_god"
+	culture="ironborn"
+
+	8231.1.1 = {birth="8231.1.1"}
+	8277.1.1 = {death="8277.1.1"}
+}
+
+####################
+###House Shepherd###
+####################
+12124 = {
+	name="Харлон"		# non-canon
+	dynasty=124
+	
+	religion="drowned_god"
+	culture="ironborn"
+		
+	employer=17107 #Торвин
+	
+	8235.1.1 = {birth="8235.1.1"}
+	8250.1.1 = { employer=107 } #Квеллон
+	8251.1.1 = {
+		add_trait=poor_warrior
+	}
+	8283.1.1 = {death="8283.1.1"}
+}
+
+
+################
+###House Salt###
+################
+1490 = {
+	name="Сэм" #who claimed to be descended of the black line
+	dynasty=1490
+
+	religion="the_seven"
+	culture="ironborn"
+
+	add_trait=strong
+	add_trait=envious
+	add_trait=ambitious
+	add_trait=cruel
+	add_trait=deceitful
+	
+	8101.1.1 = {
+		birth="8101.1.1"
+		effect = {
+			d_great_wyk = {
+				holder_scope = { ROOT = { move_character = PREV } }
+			}
+		}
+	}
+	8117.1.1 = {
+		add_trait=tough_soldier
+		add_trait=skilled_warrior
+	}
+	8133.12.1 = {
+		effect = {
+			k_iron_isles = { add_claim = ROOT }
+			if = { 
+				limit = { NOT = { start_date = 8134.5.1 } }
+				d_great_wyk = {
+					holder_scope = { 
+						start_faction = {
+							faction = faction_claimant 
+							title = k_iron_isles
+							thirdparty = ROOT
+						}
+						faction_claimant = { # The target (title) of the faction
+							reverse_unsafe_war = {
+								target = PREV
+								casus_belli = other_claim_on_liege
+								faction = faction_claimant
+							}
+						}
+					}
+				}		
+			}
+		}
+	}
+	8134.5.1 = {
+		death = {
+			death_reason=death_battle
+		}
+	}
+}

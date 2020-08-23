@@ -1,0 +1,289 @@
+dothraki_group = {
+	graphical_cultures = { mongolgfx  }# portraits, units
+
+	dothraki = {
+		graphical_cultures = { dothrakigfx } # buildings, portraits
+		#horde = yes
+		
+		color = { 0.775 0.5 0.15 }
+		
+		nomadic_in_alt_start = yes
+		alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+		
+		male_names = {
+			# Canon Names		 
+			Агго Бхарбо Кохолло Дрого Дхако Фого 
+			Харро Хорро Харо Хагго Игго
+			Чхакво Чхого Джоммо Коварро Лосо
+			Маго Моро Мото Менго
+			Ого Онко Поно Квото Кваро Квано
+			Ракхаро Рхогоро Роммо Рого Скоро
+			Теммо Зекко Золло Зхако Зегго
+			
+			# DAMOC - MORE MALE NAMES
+			
+			Сикко Каффо Вилло Крозоззо Квоззо Карро Схигго Лачатто Емматто Ариссо Акчакко Кроммо Рхоззо Ково Квракко Ракко
+			Козатхо Дазхо Кхаззо Горро Брабо Лачо Аддро Матто Богго Козаммо Колло Кого Магго Кхоббо Дарро Рарро Зоммо
+			Боммо Кхако Дхако Кхако Бхако Зхако Лхако Мхако Чхако Ахако Нхако Схако Моно Роно Мого Зоно Зого Молло
+			Болло Долло Лолло Нолло Колло Солло Доно Дригго Доззо Догго Дхоко Бхоко Зхоко Мхоко Рхоко
+			
+			# Non-canon
+			Азхо Аракхо 
+			Фоно Фесхо
+			Хеззо
+			Чарбо Чассо
+			Каттаро
+			Ланно
+			Малакхо Марро Моско
+			Начахо
+			Рово Ремекко
+			Тиххо Токко
+			Вирсалло
+			Зеркволло Зирко
+		}
+		
+		female_names = {
+			# Canon Names
+			Доши Ирри Чхику
+			
+			# There aren't exactly a lot, so the following are feminine versions of male Dothraki names
+			Аии Агги Кохолли Кхакки 
+			Далли Дриги Дхаки
+			Эсинни Фитти
+			Хирри Хари Хавви Игги Иззи
+			Чхиги Чхоги Джолинни Коварри Кендри
+			Лоси Лекси Лавакхи
+			Мири Моти Малакхи Менги Накки
+			Окветти Онки
+			Квоти Квири Квоватти
+			Ракхири Рхогири Римми Роги Скори
+			Темми Тхирри
+			Ворсакхи
+			Зикки Золли Зхаки Зикхи Зиганни
+			
+			Исили Тезхими Тхикви Сихи Лихезхи Зирри Алайи Зичоми Лекси Филки Лайи Верри Мави Эшини Тхирли Фелди Даври Ракки Валеки Ашини
+			Квизханни Квиссаби Квосси Оваби Шаси Визи Кесси Чеши Чедди Акхри Нишави Далфи Филли Зиганни Зирки Иззатти Римеси Есси Иммисси Ахени Теххи Зхавви
+		}
+		
+		character_modifier = {
+			#demesne_size = 6
+		}
+		
+		male_patronym = ", Сын "
+		female_patronym = ", Дочь"
+		prefix = yes
+		
+		#dynasty_title_names = yes
+		founder_named_dynasties = yes
+		dukes_called_kings = yes
+		
+		#from_dynasty_prefix = "из "
+		
+		pat_grf_name_chance = 25
+		mat_grf_name_chance = 25
+		father_name_chance = 25
+		
+		pat_grm_name_chance = 25
+		mat_grm_name_chance = 25
+		mother_name_chance = 25
+		
+		modifier = default_culture_modifier
+	}
+
+	lhazareen = {
+		graphical_cultures = { lhazareengfx } # buildings, portraits
+		#horde = yes
+		
+		color = { 0.675 0.675 0 }
+		
+		alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+		
+		male_names = {
+			# Canon Names
+			
+			#NON-CANON NAMES
+			Келгил Аба баитзас Балгор Батан Батас Батор Байка Бикили Бизел Бога Бору Бота Була Чалис Гиазис Илдей Ипа Ипаос Ипоч Кабуксин Качдан Карака Кайдум Казар Кеген Конел  
+			Коркутан Кортан Костас Куркутай Кучук Куерчи Кугел Куре Метигай Осул Кворкутай Сагай Сетлав Сол Сору Татус Тебер Темир Тирак Тзегул Явди Язи Йеке
+			Алп Араслан Арслан Бага Багатур Балгики Барчик Барсбек Батсу Баштва Бихор бори Буга Булан Будкан Бусир Бузер Катан Корпан Илик Илтаббр Итак Камач Карадах Кайгалах Хатир Хутеркин
+			Кибар Киса Кундакик Кундак Манар Манас Менумарит Отемис Папакиз Самсам Сартак Симсам Табар Табгак Таркан Тармк Тузник Вакрим Табгу Явантей Йенкепи Йернеслу Йектирек Йилиг
+			Белет Езра Ханукка Хезениах Манассех Ниси Зебулун	
+		}			
+		
+		female_names = {
+			#Canon
+			Ероих
+			
+			#NON-CANON NAMES
+			Кика Кеке Кекки Кектилет Килена Анесе Зигги Оззи Акгул Асли Айасун Айтен Бозкин Дилеки Эсини Гулка Галайа Гундоэ Гунде Гунеса Икалайя Илкайя Ипека Ипеке Иргехи 
+			Каракиха Катайаррика Кеенисса Келайамал Хатун Ларрка Лайука Мала Матуррка Мутла Накоэ Парсбити Патиера Паякелти Пексен Пайантай Самуре Сарантай Саре Сарика Сарикели
+			Сати Саваееа Савки Савтилек Савилайи Савинтики Шуркка Сибела Сирини Сирме Сонгул Тахтани Текке Тура Кмай Унунбике Ясар Йелдем Йилдизе Яртилек Ксатти 
+			Кике Килен Килта Озгула Озлем Дилек Есин Гулкикек Гулайи Карое Пексени Самури Севилайи Севиндики Сибели 
+			Сирми Сонгула Теке Умайа Усунбики Ясари Йилдизи			
+		}
+		
+		from_dynasty_prefix = "из "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 10
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+}
+sarnor_group = {
+	graphical_cultures = { indiangfx } # buildings
+	
+	sarnorian = { 
+		graphical_cultures = { sarnorigfx } # portraits
+		
+		color = { 0.72 0.8 0.2 }
+		
+		alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+		
+		male_names = { #Gujarati influence
+			#canon
+			Хужор:400 Мазор:400
+			
+			
+			Амритал Авилаш Атарван
+			Белавант Бурхан Багеш
+			Читреш Чанак
+			Динеш Даршан Дахак
+			Эташ Экавир
+			Фаниш
+			Ганеш Гайан Гиривар
+			Харшил Харит Харихар
+			Ишан Ишвар
+			Джаш Джаафар
+			Кушал Калпеш Кедаар
+			Локеш Лакшан
+			Маниш Манаар Мукеш
+			Нитиш Найан Нишад
+			Онкар
+			Палаш Паарт Парвеш
+			Ритеш Ратин Ранак
+			Сагар Сахат Шайам Сахасрад
+			Таракеш Тареш
+			Уттамеш Уткарш
+			Виомеш Вишрут
+			Йогеш Ятаван
+		}
+		female_names = {
+			Ашна Анхити Амина Ариана
+			Бидиша Барша
+			Чандира Чарита
+			Данашри Даршита Дийя
+			Эиша
+			Фаина
+			Гомати Гириша Гайатри
+			Ханша Хавья Хиира
+			Ишанья Икша
+			Джалбала Джитья Джиша
+			Киртана Каниша Каира
+			Лаласа Лекиша
+			Малашри Мониша Миса Махия
+			Нития Ниши Налика
+			Олийараси
+			Плакша Прийя
+			Рушада Рутвика Рашми
+			Савита Саира Ситара Шаши
+			Танниста Трейя Таниша
+			Уршилла Уша
+			Вишва Вихана
+			Яшика Ясвита
+			Заара
+		}
+		
+		from_dynasty_prefix = "из "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+	
+	omberi = { 
+		graphical_cultures = { sarnorigfx } # portraits
+		
+		color = { 0.5 0.9 0.35 }
+		
+		alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+		
+		male_names = { #Gujarati influence		
+			Амритал Авилаш Атарван
+			Белавант Бурхан Багеш
+			Читреш Чанак
+			Динеш Даршан Дахак
+			Эташ Экавир
+			Фаниш
+			Ганеш Гайан Гиривар
+			Харшил Харит Харихар
+			Ишан Ишвар
+			Джаш Джаафар
+			Кушал Калпеш Кедаар
+			Локеш Лакшан
+			Маниш Манаар Мукеш
+			Нитиш Найан Нишад
+			Онкар
+			Палаш Паарт Парвеш
+			Ритеш Ратин Ранак
+			Сагар Сахат Шайам Сахасрад
+			Таракеш Тареш
+			Уттамеш Уткарш
+			Виомеш Вишрут
+			Йогеш Ятаван
+		}
+		female_names = {
+			Ашна Анхити Амина Ариана
+			Бидиша Барша
+			Чандира Чарита
+			Данашри Даршита Дийя
+			Эиша
+			Фаина
+			Гомати Гириша Гайатри
+			Ханша Хавья Хиира
+			Ишанья Икша
+			Джалбала Джитья Джиша
+			Киртана Каниша Каира
+			Лаласа Лекиша
+			Малашри Мониша Миса Махия
+			Нития Ниши Налика
+			Олийараси
+			Плакша Прийя
+			Рушада Рутвика Рашми
+			Савита Саира Ситара Шаши
+			Танниста Трейя Таниша
+			Уршилла Уша
+			Вишва Вихана
+			Яшика Ясвита
+			Заара
+		}
+		
+		from_dynasty_prefix = "из "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+}

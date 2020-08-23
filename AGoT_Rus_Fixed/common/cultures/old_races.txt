@@ -1,0 +1,75 @@
+old_races = {
+	graphical_cultures = { westerngfx }
+
+	giant = {
+		graphical_cultures = { giantgfx }
+		
+		used_for_random = no
+		allow_in_ruler_designer = no
+		alternate_start = { 
+			OR = {
+				has_alternate_start_parameter = { key = special_culture value = mythological } 
+				has_alternate_start_parameter = { key = special_culture value = all } 
+			}	
+		}
+		
+		color = { 0.8 0.8 0.8 }
+		
+		male_names = {
+				Мег Мар Вун Вег Вур Мур Бар Бур Дур Дар Нег Ног 
+		 }
+		female_names = {
+			Мег Мар Вун Вег Вур Мур Бар Бур Дур Дар Нег Ног
+		}
+		
+		from_dynasty_prefix = "из "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 25
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 5
+		mat_grm_name_chance = 20
+		mother_name_chance = 0
+
+		modifier = backward_culture_modifier
+	}
+
+	children_forest = {
+		graphical_cultures = { cotfgfx}
+		
+		used_for_random = no
+		allow_in_ruler_designer = no
+		alternate_start = { 
+			OR = {
+				has_alternate_start_parameter = { key = special_culture value = mythological } 
+				has_alternate_start_parameter = { key = special_culture value = all } 
+			}	
+		}
+		
+		color = { 0.8 0.8 0.8 }
+		
+		male_names = {
+			Листочек Ясень Весы Угольки Прутик Ветвь Кора Шерстка Березка Дуб Корешок Ствол 
+		}
+		female_names = {
+			Листочек Ясень Весы Угольки Прутик Ветвь Кора Шерстка Березка Дуб Корешок Ствол 
+		}
+		
+		from_dynasty_prefix = "из "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 25
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 5
+		mat_grm_name_chance = 20
+		mother_name_chance = 0
+
+		modifier = backward_culture_modifier
+	}
+}

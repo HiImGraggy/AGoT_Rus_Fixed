@@ -1,0 +1,23 @@
+name = "Война Трех Дочерей с Волантисом"
+
+casus_belli={
+	casus_belli=embargo_cb
+	actor=103300700 # Myr
+	recipient=115174371 # Volantis
+	landed_title=k_volantis
+	date=8096.1.1
+}
+
+8096.1.1 = {
+	add_defender = 115174371 # Volantis
+	add_attacker = 103300700 # Myr
+	add_attacker = 103300543 # Tyrosh
+	add_attacker = 107300540 # Lys
+}
+
+8096.6.1 = {
+	rem_defender = 115174371 # Volantis
+	rem_attacker = 103300700 # Myr
+	rem_attacker = 103300543 # Tyrosh
+	rem_attacker = 107300540 # Lys
+}

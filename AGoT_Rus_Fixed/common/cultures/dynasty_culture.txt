@@ -1,0 +1,511 @@
+Dynasty = {
+	graphical_cultures = { westerngfx } # buildings, portraits, units
+	
+	Baratheon_dyn = {
+		graphical_cultures = { baratheongfx } # portraits
+		
+		used_for_random = no
+		alternate_start = { always = no }
+		color = { 0.15 0.15 0.15 }
+		allow_in_ruler_designer = no
+		male_names = {
+			Эйрис:400 Эйгон:1100 Эйгор Эйликс Эймон:400 Эймонд Эйнар Эйнис:200 Эйрион:300 Эйрин Эйлор
+			Бейлор:200 Бейлон:300
+			Дейгар:50 Деймон:400 Дейрон:600 Деймион
+			Геймон:200 Хейгон Хейрис:50
+			Джейкар:50 Джейхейрис:400 Джекейрис
+			Люцерис Лейнор
+			Мейлис Мейгон Мейгор:200 Мейкар Мейрис:50 Матарис Мейлор
+			Орис:50 Отерис:50
+			Квохерис:50
+			Рейгар Рейгель Рейкар:50
+			Валарр Визерис:400 Вейрон Вейкар:50 Вейрмон Веймонд:50 Вейгон Валерион
+		}
+		female_names = {
+			Аллирия:50 Алейрис:50 Эйлинор Алисанна Эйрея Алисса Эйлора
+			Бейла
+			Сайена Симелла:50 Калла		
+			Дейла:200 Дейна Дейорил Дейнерис:200 Дейнис Дейнейра Дейнора
+			Элейна:200
+			Гейль
+			Хелейна Хейра 
+			Джейхейра
+			Лейса:50 Лейна 
+			Мейра:50 Мейга:50 Мейгель
+			Нейрис Рей Рейль Рейна:300 Рейис:50 Рейнира Рейлинор:50 Рейнис:300 Ралла
+			Сейнрис:50 Сайелла:50 Шейра Сейра Шейна
+			Висенья:200 Вейра:50 Вейла:200 Визерра
+		}
+		
+		from_dynasty_prefix = "из "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 15
+		mat_grf_name_chance = 5
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 15
+		mat_grm_name_chance = 5
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+    Lannister_dyn = {
+		graphical_cultures = { lannistergfx } # portraits
+		
+		used_for_random = no
+		allow_in_ruler_designer = no
+		alternate_start = { always = no }
+		color = { 0.15 0.15 0.15 }
+		
+		male_names = {
+			Эйрис:400 Эйгон:1100 Эйгор Эйликс Эймон:400 Эймонд Эйнар Эйнис:200 Эйрион:300 Эйрин Эйлор
+			Бейлор:200 Бейлон:300
+			Дейгар:50 Деймон:400 Дейрон:600 Деймион
+			Геймон:200 Хейгон Хейрис:50
+			Джейкар:50 Джейхейрис:400 Джекейрис
+			Люцерис Лейнор
+			Мейлис Мейгон Мейгор:200 Мейкар Мейрис:50 Матарис Мейлор
+			Орис:50 Отерис:50
+			Квохерис:50
+			Рейгар Рейгель Рейкар:50
+			Валарр Визерис:400 Вейрон Вейкар:50 Вейрмон Веймонд:50 Вейгон Валерион
+		}
+		female_names = {
+			Аллирия:50 Алейрис:50 Эйлинор Алисанна Эйрея Алисса Эйлора
+			Бейла
+			Сайена Симелла:50 Калла		
+			Дейла:200 Дейна Дейорил Дейнерис:200 Дейнис Дейнейра Дейнора
+			Элейна:200
+			Гейль
+			Хелейна Хейра 
+			Джейхейра
+			Лейса:50 Лейна 
+			Мейра:50 Мейга:50 Мейгель
+			Нейрис Рей Рейль Рейна:300 Рейис:50 Рейнира Рейлинор:50 Рейнис:300 Ралла
+			Сейнрис:50 Сайелла:50 Шейра Сейра Шейна
+			Висенья:200 Вейра:50 Вейла:200 Визерра
+		}
+		
+		from_dynasty_prefix = "из "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 15
+		mat_grf_name_chance = 5
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 15
+		mat_grm_name_chance = 5
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+    Reyne_dyn = {
+		graphical_cultures = { reynegfx } # portraits
+		
+		used_for_random = no
+		alternate_start = { always = no }
+		color = { 0.15 0.15 0.15 }
+		allow_in_ruler_designer = no
+		male_names = {
+			Эйрис:400 Эйгон:1100 Эйгор Эйликс Эймон:400 Эймонд Эйнар Эйнис:200 Эйрион:300 Эйрин Эйлор
+			Бейлор:200 Бейлон:300
+			Дейгар:50 Деймон:400 Дейрон:600 Деймион
+			Геймон:200 Хейгон Хейрис:50
+			Джейкар:50 Джейхейрис:400 Джекейрис
+			Люцерис Лейнор
+			Мейлис Мейгон Мейгор:200 Мейкар Мейрис:50 Матарис Мейлор
+			Орис:50 Отерис:50
+			Квохерис:50
+			Рейгар Рейгель Рейкар:50
+			Валарр Визерис:400 Вейрон Вейкар:50 Вейрмон Веймонд:50 Вейгон Валерион
+		}
+		female_names = {
+			Аллирия:50 Алейрис:50 Эйлинор Алисанна Эйрея Алисса Эйлора
+			Бейла
+			Сайена Симелла:50 Калла		
+			Дейла:200 Дейна Дейорил Дейнерис:200 Дейнис Дейнейра Дейнора
+			Элейна:200
+			Гейль
+			Хелейна Хейра 
+			Джейхейра
+			Лейса:50 Лейна 
+			Мейра:50 Мейга:50 Мейгель
+			Нейрис Рей Рейль Рейна:300 Рейис:50 Рейнира Рейлинор:50 Рейнис:300 Ралла
+			Сейнрис:50 Сайелла:50 Шейра Сейра Шейна
+			Висенья:200 Вейра:50 Вейла:200 Визерра
+		}
+		
+		from_dynasty_prefix = "из "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 15
+		mat_grf_name_chance = 5
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 15
+		mat_grm_name_chance = 5
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+    Tully_dyn = {
+		graphical_cultures = { tullygfx } # portraits
+		
+		used_for_random = no
+		alternate_start = { always = no }
+		color = { 0.15 0.15 0.15 }
+		allow_in_ruler_designer = no
+		male_names = {
+			Эйрис:400 Эйгон:1100 Эйгор Эйликс Эймон:400 Эймонд Эйнар Эйнис:200 Эйрион:300 Эйрин Эйлор
+			Бейлор:200 Бейлон:300
+			Дейгар:50 Деймон:400 Дейрон:600 Деймион
+			Геймон:200 Хейгон Хейрис:50
+			Джейкар:50 Джейхейрис:400 Джекейрис
+			Люцерис Лейнор
+			Мейлис Мейгон Мейгор:200 Мейкар Мейрис:50 Матарис Мейлор
+			Орис:50 Отерис:50
+			Квохерис:50
+			Рейгар Рейгель Рейкар:50
+			Валарр Визерис:400 Вейрон Вейкар:50 Вейрмон Веймонд:50 Вейгон Валерион
+		}
+		female_names = {
+			Аллирия:50 Алейрис:50 Эйлинор Алисанна Эйрея Алисса Эйлора
+			Бейла
+			Сайена Симелла:50 Калла		
+			Дейла:200 Дейна Дейорил Дейнерис:200 Дейнис Дейнейра Дейнора
+			Элейна:200
+			Гейль
+			Хелейна Хейра 
+			Джейхейра
+			Лейса:50 Лейна 
+			Мейра:50 Мейга:50 Мейгель
+			Нейрис Рей Рейль Рейна:300 Рейис:50 Рейнира Рейлинор:50 Рейнис:300 Ралла
+			Сейнрис:50 Сайелла:50 Шейра Сейра Шейна
+			Висенья:200 Вейра:50 Вейла:200 Визерра
+		}
+		
+		from_dynasty_prefix = "из "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 15
+		mat_grf_name_chance = 5
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 15
+		mat_grm_name_chance = 5
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+    Stark_dyn = {
+		graphical_cultures = { starkgfx } # portraits
+		
+		used_for_random = no
+		allow_in_ruler_designer = no
+		alternate_start = { always = no }
+		color = { 0.15 0.15 0.15 }
+		
+		male_names = {
+			Эйрис:400 Эйгон:1100 Эйгор Эйликс Эймон:400 Эймонд Эйнар Эйнис:200 Эйрион:300 Эйрин Эйлор
+			Бейлор:200 Бейлон:300
+			Дейгар:50 Деймон:400 Дейрон:600 Деймион
+			Геймон:200 Хейгон Хейрис:50
+			Джейкар:50 Джейхейрис:400 Джекейрис
+			Люцерис Лейнор
+			Мейлис Мейгон Мейгор:200 Мейкар Мейрис:50 Матарис Мейлор
+			Орис:50 Отерис:50
+			Квохерис:50
+			Рейгар Рейгель Рейкар:50
+			Валарр Визерис:400 Вейрон Вейкар:50 Вейрмон Веймонд:50 Вейгон Валерион
+		}
+		female_names = {
+			Аллирия:50 Алейрис:50 Эйлинор Алисанна Эйрея Алисса Эйлора
+			Бейла
+			Сайена Симелла:50 Калла		
+			Дейла:200 Дейна Дейорил Дейнерис:200 Дейнис Дейнейра Дейнора
+			Элейна:200
+			Гейль
+			Хелейна Хейра 
+			Джейхейра
+			Лейса:50 Лейна 
+			Мейра:50 Мейга:50 Мейгель
+			Нейрис Рей Рейль Рейна:300 Рейис:50 Рейнира Рейлинор:50 Рейнис:300 Ралла
+			Сейнрис:50 Сайелла:50 Шейра Сейра Шейна
+			Висенья:200 Вейра:50 Вейла:200 Визерра
+		}
+		
+		from_dynasty_prefix = "из "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 15
+		mat_grf_name_chance = 5
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 15
+		mat_grm_name_chance = 5
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+    Greyjoy_dyn = {
+		graphical_cultures = { greyjoygfx } # portraits
+		
+		used_for_random = no
+		allow_in_ruler_designer = no
+		alternate_start = { always = no }
+		color = { 0.15 0.15 0.15 }
+		
+		male_names = {
+			Эйрис:400 Эйгон:1100 Эйгор Эйликс Эймон:400 Эймонд Эйнар Эйнис:200 Эйрион:300 Эйрин Эйлор
+			Бейлор:200 Бейлон:300
+			Дейгар:50 Деймон:400 Дейрон:600 Деймион
+			Геймон:200 Хейгон Хейрис:50
+			Джейкар:50 Джейхейрис:400 Джекейрис
+			Люцерис Лейнор
+			Мейлис Мейгон Мейгор:200 Мейкар Мейрис:50 Матарис Мейлор
+			Орис:50 Отерис:50
+			Квохерис:50
+			Рейгар Рейгель Рейкар:50
+			Валарр Визерис:400 Вейрон Вейкар:50 Вейрмон Веймонд:50 Вейгон Валерион
+		}
+		female_names = {
+			Аллирия:50 Алейрис:50 Эйлинор Алисанна Эйрея Алисса Эйлора
+			Бейла
+			Сайена Симелла:50 Калла		
+			Дейла:200 Дейна Дейорил Дейнерис:200 Дейнис Дейнейра Дейнора
+			Элейна:200
+			Гейль
+			Хелейна Хейра 
+			Джейхейра
+			Лейса:50 Лейна 
+			Мейра:50 Мейга:50 Мейгель
+			Нейрис Рей Рейль Рейна:300 Рейис:50 Рейнира Рейлинор:50 Рейнис:300 Ралла
+			Сейнрис:50 Сайелла:50 Шейра Сейра Шейна
+			Висенья:200 Вейра:50 Вейла:200 Визерра
+		}
+		
+		from_dynasty_prefix = "из "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 15
+		mat_grf_name_chance = 5
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 15
+		mat_grm_name_chance = 5
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+    Martell_dyn = {
+		graphical_cultures = { martellgfx } # portraits
+		
+		used_for_random = no
+		allow_in_ruler_designer = no
+		alternate_start = { always = no }
+		color = { 0.15 0.15 0.15 }
+		
+		male_names = {
+			Эйрис:400 Эйгон:1100 Эйгор Эйликс Эймон:400 Эймонд Эйнар Эйнис:200 Эйрион:300 Эйрин Эйлор
+			Бейлор:200 Бейлон:300
+			Дейгар:50 Деймон:400 Дейрон:600 Деймион
+			Геймон:200 Хейгон Хейрис:50
+			Джейкар:50 Джейхейрис:400 Джекейрис
+			Люцерис Лейнор
+			Мейлис Мейгон Мейгор:200 Мейкар Мейрис:50 Матарис Мейлор
+			Орис:50 Отерис:50
+			Квохерис:50
+			Рейгар Рейгель Рейкар:50
+			Валарр Визерис:400 Вейрон Вейкар:50 Вейрмон Веймонд:50 Вейгон Валерион
+		}
+		female_names = {
+			Аллирия:50 Алейрис:50 Эйлинор Алисанна Эйрея Алисса Эйлора
+			Бейла
+			Сайена Симелла:50 Калла		
+			Дейла:200 Дейна Дейорил Дейнерис:200 Дейнис Дейнейра Дейнора
+			Элейна:200
+			Гейль
+			Хелейна Хейра 
+			Джейхейра
+			Лейса:50 Лейна 
+			Мейра:50 Мейга:50 Мейгель
+			Нейрис Рей Рейль Рейна:300 Рейис:50 Рейнира Рейлинор:50 Рейнис:300 Ралла
+			Сейнрис:50 Сайелла:50 Шейра Сейра Шейна
+			Висенья:200 Вейра:50 Вейла:200 Визерра
+		}
+		
+		from_dynasty_prefix = "из "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 15
+		mat_grf_name_chance = 5
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 15
+		mat_grm_name_chance = 5
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+    Tyrell_dyn = {
+		graphical_cultures = { tyrellgfx } # portraits
+		
+		used_for_random = no
+		allow_in_ruler_designer = no
+		alternate_start = { always = no }
+		color = { 0.15 0.15 0.15 }
+		
+		male_names = {
+			Эйрис:400 Эйгон:1100 Эйгор Эйликс Эймон:400 Эймонд Эйнар Эйнис:200 Эйрион:300 Эйрин Эйлор
+			Бейлор:200 Бейлон:300
+			Дейгар:50 Деймон:400 Дейрон:600 Деймион
+			Геймон:200 Хейгон Хейрис:50
+			Джейкар:50 Джейхейрис:400 Джекейрис
+			Люцерис Лейнор
+			Мейлис Мейгон Мейгор:200 Мейкар Мейрис:50 Матарис Мейлор
+			Орис:50 Отерис:50
+			Квохерис:50
+			Рейгар Рейгель Рейкар:50
+			Валарр Визерис:400 Вейрон Вейкар:50 Вейрмон Веймонд:50 Вейгон Валерион
+		}
+		female_names = {
+			Аллирия:50 Алейрис:50 Эйлинор Алисанна Эйрея Алисса Эйлора
+			Бейла
+			Сайена Симелла:50 Калла		
+			Дейла:200 Дейна Дейорил Дейнерис:200 Дейнис Дейнейра Дейнора
+			Элейна:200
+			Гейль
+			Хелейна Хейра 
+			Джейхейра
+			Лейса:50 Лейна 
+			Мейра:50 Мейга:50 Мейгель
+			Нейрис Рей Рейль Рейна:300 Рейис:50 Рейнира Рейлинор:50 Рейнис:300 Ралла
+			Сейнрис:50 Сайелла:50 Шейра Сейра Шейна
+			Висенья:200 Вейра:50 Вейла:200 Визерра
+		}
+		
+		from_dynasty_prefix = "из "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 15
+		mat_grf_name_chance = 5
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 15
+		mat_grm_name_chance = 5
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+    Hoare_dyn = {
+		graphical_cultures = { hoaregfx } # portraits
+		
+		used_for_random = no
+		allow_in_ruler_designer = no
+		alternate_start = { always = no }
+		color = { 0.15 0.15 0.15 }
+		
+		male_names = {
+			Эйрис:400 Эйгон:1100 Эйгор Эйликс Эймон:400 Эймонд Эйнар Эйнис:200 Эйрион:300 Эйрин Эйлор
+			Бейлор:200 Бейлон:300
+			Дейгар:50 Деймон:400 Дейрон:600 Деймион
+			Геймон:200 Хейгон Хейрис:50
+			Джейкар:50 Джейхейрис:400 Джекейрис
+			Люцерис Лейнор
+			Мейлис Мейгон Мейгор:200 Мейкар Мейрис:50 Матарис Мейлор
+			Орис:50 Отерис:50
+			Квохерис:50
+			Рейгар Рейгель Рейкар:50
+			Валарр Визерис:400 Вейрон Вейкар:50 Вейрмон Веймонд:50 Вейгон Валерион
+		}
+		female_names = {
+			Аллирия:50 Алейрис:50 Эйлинор Алисанна Эйрея Алисса Эйлора
+			Бейла
+			Сайена Симелла:50 Калла		
+			Дейла:200 Дейна Дейорил Дейнерис:200 Дейнис Дейнейра Дейнора
+			Элейна:200
+			Гейль
+			Хелейна Хейра 
+			Джейхейра
+			Лейса:50 Лейна 
+			Мейра:50 Мейга:50 Мейгель
+			Нейрис Рей Рейль Рейна:300 Рейис:50 Рейнира Рейлинор:50 Рейнис:300 Ралла
+			Сейнрис:50 Сайелла:50 Шейра Сейра Шейна
+			Висенья:200 Вейра:50 Вейла:200 Визерра
+		}
+		
+		from_dynasty_prefix = "из "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 15
+		mat_grf_name_chance = 5
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 15
+		mat_grm_name_chance = 5
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+    Arryn_dyn = {
+		graphical_cultures = { arryngfx } # portraits
+		
+		used_for_random = no
+		allow_in_ruler_designer = no
+		alternate_start = { always = no }
+		color = { 0.15 0.15 0.15 }
+		
+		male_names = {
+			Эйрис:400 Эйгон:1100 Эйгор Эйликс Эймон:400 Эймонд Эйнар Эйнис:200 Эйрион:300 Эйрин Эйлор
+			Бейлор:200 Бейлон:300
+			Дейгар:50 Деймон:400 Дейрон:600 Деймион
+			Геймон:200 Хейгон Хейрис:50
+			Джейкар:50 Джейхейрис:400 Джекейрис
+			Люцерис Лейнор
+			Мейлис Мейгон Мейгор:200 Мейкар Мейрис:50 Матарис Мейлор
+			Орис:50 Отерис:50
+			Квохерис:50
+			Рейгар Рейгель Рейкар:50
+			Валарр Визерис:400 Вейрон Вейкар:50 Вейрмон Веймонд:50 Вейгон Валерион
+		}
+		female_names = {
+			Аллирия:50 Алейрис:50 Эйлинор Алисанна Эйрея Алисса Эйлора
+			Бейла
+			Сайена Симелла:50 Калла		
+			Дейла:200 Дейна Дейорил Дейнерис:200 Дейнис Дейнейра Дейнора
+			Элейна:200
+			Гейль
+			Хелейна Хейра 
+			Джейхейра
+			Лейса:50 Лейна 
+			Мейра:50 Мейга:50 Мейгель
+			Нейрис Рей Рейль Рейна:300 Рейис:50 Рейнира Рейлинор:50 Рейнис:300 Ралла
+			Сейнрис:50 Сайелла:50 Шейра Сейра Шейна
+			Висенья:200 Вейра:50 Вейла:200 Визерра
+		}
+		
+		from_dynasty_prefix = "из "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 15
+		mat_grf_name_chance = 5
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 15
+		mat_grm_name_chance = 5
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+}

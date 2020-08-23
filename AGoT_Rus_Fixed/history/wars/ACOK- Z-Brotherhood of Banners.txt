@@ -1,0 +1,28 @@
+name = "Восстание Братства"
+
+casus_belli={
+	casus_belli=depose_liege
+	actor=1303
+	recipient=9316
+	#landed_title = e_iron_throne
+	date=8298.10.29
+}
+
+8298.10.29 = {
+	add_defender = 9316 #Joffrey Baratheon
+	add_defender = 190 #Tywin Lannister
+	add_attacker = 1303	# Beric
+}
+8299.3.3 = {
+	add_defender = 1253 	# Mace Tyrell
+}
+8299.11.5 = {
+	rem_attacker = 1303 #Beric
+	add_attacker = 250159	# Stoneheart
+}
+8300.1.1 = {
+	rem_defender = 1253 	# Mace Tyrell
+	rem_defender = 190 #Tywin Lannister
+	rem_defender = 9316 #Joffrey Baratheon
+	rem_attacker = 250159	# Stoneheart
+}

@@ -1,0 +1,1907 @@
+100607399 = {
+	name="Гхарак"	# Legendary Jhattar
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+	
+	give_nickname = nick_squint_eye
+	
+	add_trait="brilliant_strategist"
+	add_trait="ambitious"
+	add_trait="brave"
+	add_trait="authoritative"
+
+	7274.1.1 = {birth=yes}
+	7290.1.1 = {add_trait=master_warrior}
+	7328.1.1 = {death="7328.1.1"}
+}
+101607399 = {
+	name="Жия"	# Jhattar, Repelled Yi Ti Invasion
+	female=yes
+	
+	martial=8
+	stewardship=3
+	diplomacy=6
+	intrigue=5
+	learning=2
+	
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+	
+	give_nickname = nick_the_cruel
+	
+	add_trait="brilliant_strategist"
+	add_trait="quick"
+	add_trait="ambitious"
+	add_trait="cruel"
+	add_trait="authoritative"
+	add_trait="deceitful"
+	
+	add_trait=trickster
+	add_trait=cavalry_leader
+	add_trait=organizer
+	add_trait=defensive_leader
+	disallow_random_traits = yes
+	
+	6678.1.1 = {birth="6678.1.1"}
+	6695.1.1 = {add_trait=trained_warrior}
+	6723.1.1 = {death="6723.1.1"}
+}
+
+### Jhats of Jhogwin
+344607300 = {
+	name="Улсин"	# a lord
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+	
+	7827.1.1 = {birth="7827.1.1"}
+	7883.1.1 = {death="7883.1.1"}
+}
+343607300 = {
+	name="Нарсин"	# a lord
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=344607300
+	
+	7852.1.1 = {birth="7852.1.1"}
+	7903.1.1 = {death="7903.1.1"}
+}
+342607300 = {
+	name="Кхитан"	# a lord
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=343607300
+	
+	7874.1.1 = {birth="7874.1.1"}
+	7929.1.1 = {death="7929.1.1"}
+}
+341607300 = {
+	name="Жавак"	# a lord
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=342607300
+	
+	7899.1.1 = {birth="7899.1.1"}
+	7946.1.1 = {death="7946.1.1"}
+}
+340607300 = {
+	name="Кхаман"	# a lord
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=341607300
+	
+	7925.1.1 = {birth="7925.1.1"}
+	7978.1.1 = {death="7978.1.1"}
+}
+100607300 = {
+	name="Фардин"	# a lord
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+	
+	father=340607300
+
+	7957.1.1 = {birth="7957.1.1"}
+	7973.1.1 = {add_trait=trained_warrior}
+	8012.1.1 = {death="8012.1.1"}
+}
+101607300 = {
+	name="Исак"	# a lord
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=100607300
+
+	7984.1.1 = {birth="7984.1.1"}
+	8000.1.1 = {add_trait=trained_warrior}
+	8047.1.1 = {death="8047.1.1"}
+}
+103607300 = {
+	name="Махвак"	# a lord
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=101607300
+
+	8004.1.1 = {birth="8004.1.1"}
+	8020.1.1 = {add_trait=skilled_warrior}
+	8071.1.1 = {death="8071.1.1"}
+}
+106607300 = {
+	name="Жакар"	# a lord
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=103607300
+
+	8026.1.1 = {birth="8026.1.1"}
+	8042.1.1 = {add_trait=trained_warrior}
+	8082.1.1 = {death="8082.1.1"}
+}
+109607300 = {
+	name="Вафа"	# a lord
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=106607300
+
+	8049.1.1 = {birth="8049.1.1"}
+	8065.1.1 = {add_trait=poor_warrior}
+	8097.1.1 = {death="8097.1.1"}
+}
+110607300 = {
+	name="Вида"	# a lord
+	female=yes
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=109607300
+
+	8070.1.1 = {birth="8070.1.1"}
+	8126.1.1 = {death="8126.1.1"}
+}
+410607300 = {
+	name="Кахказан"
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	8070.1.1 = {birth="8070.1.1"}
+	8086.1.1 = {add_trait=poor_warrior}
+	8088.1.1 = {add_spouse=110607300}
+	8126.1.1 = {death="8126.1.1"}
+}
+111607300 = {
+	name="Тахиб"	# a lord
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=410607300
+	mother=110607300
+
+	8088.1.1 = {birth="8088.1.1"}
+	8104.1.1 = {add_trait=trained_warrior}
+	8142.1.1 = {death="8142.1.1"}
+}
+113607300 = {
+	name="Лемар"	# a lord
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=111607300
+
+	8125.1.1 = {birth="8125.1.1"}
+	8141.1.1 = {add_trait=trained_warrior}
+	8173.1.1 = {death="8173.1.1"}
+}
+116607300 = {
+	name="Барьяли"	# a lord
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=113607300
+
+	8143.1.1 = {birth="8143.1.1"}
+	8159.1.1 = {add_trait=skilled_warrior}
+	8180.1.1 = {death="8180.1.1"}
+}
+118607300 = {
+	name="Сабри"	# a lord
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=116607300
+
+	8176.1.1 = {birth="8176.1.1"}
+	8192.1.1 = {add_trait=trained_warrior}
+	8255.1.1 = {death="8255.1.1"}
+}
+121607300 = {
+	name="Лида"	# a lord
+	female=yes
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=118607300
+
+	8200.1.1 = {birth="8200.1.1"}
+	8265.1.1 = {death="8265.1.1"}
+}
+421607300 = {
+	name="Темур"
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	8200.1.1 = {birth="8200.1.1"}
+	8216.1.1 = {add_trait=poor_warrior}
+	8218.1.1 = {add_spouse=121607300}
+	8265.1.1 = {death="8265.1.1"}
+}
+123607300 = {
+	name="Аарак"	# a lord
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=421607300
+	mother=121607300
+
+	8226.1.1 = {birth="8226.1.1"}
+	8242.1.1 = {add_trait=trained_warrior}
+	8244.1.1 = {add_spouse=423607300}
+}
+423607300 = {
+	name="Дарья"
+	female=yes
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	8226.1.1 = {birth="8226.1.1"}
+}
+124607300 = {
+	name="Гуллу"	# not a lord
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=123607300
+	mother=423607300
+
+	8259.1.1 = {birth="8259.1.1"}
+	8275.1.1 = {add_trait=poor_warrior}
+	8277.1.1 = {add_spouse=424607300}
+}
+424607300 = {
+	name="Геети"
+	female=yes
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	8259.1.1 = {birth="8259.1.1"}
+}
+125607300 = {
+	name="Лемар"	# not a lord
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=123607300
+	mother=423607300
+
+	8262.1.1 = {birth="8262.1.1"}
+	8278.1.1 = {add_trait=trained_warrior}
+	8280.1.1 = {add_spouse=425607300}
+}
+425607300 = {
+	name="Забия"
+	female=yes
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	8262.1.1 = {birth="8262.1.1"}
+}
+126607300 = {
+	name="Гуллу"	# not a lord
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=124607300
+	mother=424607300
+
+	8286.1.1 = {birth="8286.1.1"}
+}
+127607300 = {
+	name="Зеба"	# not a lord
+	female=yes
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=124607300
+	mother=424607300
+
+	8288.1.1 = {birth="8288.1.1"}
+}
+128607300 = {
+	name="Инаара"	# not a lord
+	female=yes
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=124607300
+	mother=424607300
+
+	8290.1.1 = {birth="8290.1.1"}
+}
+129607300 = {
+	name="Пари"	# not a lord
+	female=yes
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=124607300
+	mother=424607300
+
+	8292.1.1 = {birth="8292.1.1"}
+}
+130607300 = {
+	name="Исак"	# not a lord
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=124607300
+	mother=424607300
+
+	8295.1.1 = {birth="8295.1.1"}
+}
+131607300 = {
+	name="Курбан"	# not a lord
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=125607300
+	mother=425607300
+
+	8290.1.1 = {birth="8290.1.1"}
+}
+132607300 = {
+	name="Диба"	# not a lord
+	female=yes
+	dynasty=607300
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=125607300
+	mother=425607300
+
+	8293.1.1 = {birth="8293.1.1"}
+}
+
+### Jhats of West Plains
+345607301 = {
+	name="Янг"	# a lord
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+	
+	7816.1.1 = {birth="7816.1.1"}
+	7873.1.1 = {death="7873.1.1"}
+}
+344607301 = {
+	name="Пейен"	# a lord
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=345607301
+	
+	7840.1.1 = {birth="7840.1.1"}
+	7887.1.1 = {death="7887.1.1"}
+}
+343607301 = {
+	name="Угул"	# a lord
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=344607301
+	
+	7864.1.1 = {birth="7864.1.1"}
+	7907.1.1 = {death="7907.1.1"}
+}
+342607301 = {
+	name="Сабо"	# a lord
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=343607301
+	
+	7888.1.1 = {birth="7888.1.1"}
+	7940.1.1 = {death="7940.1.1"}
+}
+341607301 = {
+	name="Ниомог"	# a lord
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=342607301
+	
+	7919.1.1 = {birth="7919.1.1"}
+	7967.1.1 = {death="7967.1.1"}
+}
+340607301 = {
+	name="Мошан"	# a lord
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=341607301
+	
+	7944.1.1 = {birth="7944.1.1"}
+	7988.1.1 = {death="7988.1.1"}
+}
+100607301 = {
+	name="Барьяли"	# a lord
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+	
+	father=340607301
+
+	7966.1.1 = {birth="7966.1.1"}
+	7982.1.1 = {add_trait=trained_warrior}
+	8028.1.1 = {death="8028.1.1"}
+}
+101607301 = {
+	name="Кахказан"	# a lord
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=100607301
+
+	7995.1.1 = {birth="7995.1.1"}
+	8011.1.1 = {add_trait=skilled_warrior}
+	8034.1.1 = {death = {death_reason = death_murder}}
+}
+103607301 = {
+	name="Лайма"	# a lord
+	female=yes
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=101607301
+
+	8023.1.1 = {birth="8023.1.1"}
+	8088.1.1 = {death = {death_reason = death_accident}}
+}
+403607301 = {
+	name="Аамир"
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	8023.1.1 = {birth="8023.1.1"}
+	8039.1.1 = {add_trait=poor_warrior}
+	8041.1.1 = {add_spouse=103607301}
+	8088.1.1 = {death="8088.1.1"}
+}
+106607301 = {
+	name="Садаф"	# a lord
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=403607301
+	mother=103607301
+
+	8046.1.1 = {birth="8046.1.1"}
+	8062.1.1 = {add_trait=trained_warrior}
+	8100.1.1 = {death="8100.1.1"}
+}
+107607301 = {
+	name="Заид"	# a lord
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=106607301
+
+	8066.1.1 = {birth="8066.1.1"}
+	8082.1.1 = {add_trait=master_warrior}
+	8111.1.1 = {death="8111.1.1"}
+}
+111607301 = {
+	name="Наим"	# a lord
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=107607301
+
+	8084.1.1 = {birth="8084.1.1"}
+	8100.1.1 = {add_trait=poor_warrior}
+	8127.1.1 = {death="8127.1.1"}
+}
+115607301 = {
+	name="Жакар"	# a lord
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=111607301
+
+	8116.1.1 = {birth="8116.1.1"}
+	8132.1.1 = {add_trait=skilled_warrior}
+	8163.1.1 = {death="8163.1.1"}
+}
+117607301 = {
+	name="Абакулл"	# a lord
+	female=yes
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=115607301
+
+	8144.1.1 = {birth="8144.1.1"}
+	8223.1.1 = {death="8223.1.1"}
+}
+417607301 = {
+	name="Узрак"
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	8144.1.1 = {birth="8144.1.1"}
+	8160.1.1 = {add_trait=poor_warrior}
+	8162.1.1 = {add_spouse=117607301}
+	8223.1.1 = {death="8223.1.1"}
+}
+118607301 = {
+	name="Инзир"	# a lord
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=417607301
+	mother=117607301
+
+	8171.1.1 = {birth="8171.1.1"}
+	8187.1.1 = {add_trait=trained_warrior}
+	8230.1.1 = {death="8230.1.1"}
+}
+122607301 = {
+	name="Малия"	# a lord
+	female=yes
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=118607301
+
+	8196.1.1 = {birth="8196.1.1"}
+	8258.1.1 = {death = {death_reason = death_accident}}
+}
+422607301 = {
+	name="Вафа"
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	8196.1.1 = {birth="8196.1.1"}
+	8212.1.1 = {add_trait=poor_warrior}
+	8214.1.1 = {add_spouse=122607301}
+	8258.1.1 = {death="8258.1.1"}
+}
+123607301 = {
+	name="Гхулак"	# a lord
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=422607301
+	mother=122607301
+
+	8219.1.1 = {birth="8219.1.1"}
+	8235.1.1 = {add_trait=skilled_warrior}
+	8237.1.1 = {add_spouse=423607301}
+	8262.1.1 = {death="8262.1.1"}
+}
+423607301 = {
+	name="Макай"
+	female=yes
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	8219.1.1 = {birth="8219.1.1"}
+	8262.1.1 = {death="8262.1.1"}
+}
+124607301 = {
+	name="Забия"	# not a lord
+	female=yes
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=422607301
+	mother=122607301
+
+	8228.1.1 = {birth="8228.1.1"}
+	8264.1.1 = {death="8264.1.1"}
+}
+125607301 = {
+	name="Ялдак"	# a lord
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=123607301
+	mother=423607301
+
+	8240.1.1 = {birth="8240.1.1"}
+	8256.1.1 = {add_trait=poor_warrior}
+	8258.1.1 = {add_spouse=425607301}
+	8282.1.1 = {death="8282.1.1"}
+}
+425607301 = {
+	name="Орзала"
+	female=yes
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	8240.1.1 = {birth="8240.1.1"}
+	8282.1.1 = {death="8282.1.1"}
+}
+126607301 = {
+	name="Махвак"	# not a lord
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=123607301
+	mother=423607301
+
+	8243.1.1 = {birth="8243.1.1"}
+	8259.1.1 = {add_trait=poor_warrior}
+	8261.1.1 = {add_spouse=426607301}
+}
+426607301 = {
+	name="Дайва"
+	female=yes
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	8243.1.1 = {birth="8243.1.1"}
+}
+127607301 = {
+	name="Фардин"	# a lord
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=125607301
+	mother=425607301
+
+	8272.1.1 = {birth="8272.1.1"}
+	8288.1.1 = {add_trait=trained_warrior}
+}
+128607301 = {
+	name="Гхезал"	# not a lord
+	female=yes
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=125607301
+	mother=425607301
+
+	8275.1.1 = {birth="8275.1.1"}
+}
+129607301 = {
+	name="Элсасх"	# not a lord
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=125607301
+	mother=425607301
+
+	8277.1.1 = {birth="8277.1.1"}
+	8293.1.1 = {add_trait=skilled_warrior}
+}
+130607301 = {
+	name="Karima"	# not a lord
+	female=yes
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=125607301
+	mother=425607301
+
+	8278.1.1 = {birth="8278.1.1"}
+}
+131607301 = {
+	name="Тадж"	# not a lord
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=126607301
+	mother=426607301
+
+	8278.1.1 = {birth="8278.1.1"}
+	8294.1.1 = {add_trait=poor_warrior}
+}
+132607301 = {
+	name="Узрак"	# not a lord
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=126607301
+	mother=426607301
+
+	8280.1.1 = {birth="8280.1.1"}
+	8296.1.1 = {add_trait=trained_warrior}
+}
+133607301 = {
+	name="Хайдер"	# not a lord
+	dynasty=607301
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=126607301
+	mother=426607301
+
+	8281.1.1 = {birth="8281.1.1"}
+	8297.1.1 = {add_trait=skilled_warrior}
+}
+
+### Jhats of North Plains
+343607302 = {
+	name="Басир"	# a lord
+	dynasty=607302
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+	
+	7837.1.1 = {birth="7837.1.1"}
+	7884.1.1 = {death="7884.1.1"}
+}
+342607302 = {
+	name="Латик"	# a lord
+	dynasty=607302
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=343607302
+	
+	7862.1.1 = {birth="7862.1.1"}
+	7921.1.1 = {death="7921.1.1"}
+}
+341607302 = {
+	name="Парвиз"	# a lord
+	dynasty=607302
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=342607302
+	
+	7885.1.1 = {birth="7885.1.1"}
+	7946.1.1 = {death="7946.1.1"}
+}
+340607302 = {
+	name="Темур"	# a lord
+	dynasty=607302
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=341607302
+	
+	7913.1.1 = {birth="7913.1.1"}
+	7968.1.1 = {death="7968.1.1"}
+}
+100607302 = {
+	name="Жавак"	# a lord
+	dynasty=607302
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+	
+	father=340607302
+
+	7935.1.1 = {birth="7935.1.1"}
+	7951.1.1 = {add_trait=trained_warrior}
+	8001.1.1 = {death="8001.1.1"}
+}
+101607302 = {
+	name="Факар"	# a lord
+	dynasty=607302
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=100607302
+
+	7958.1.1 = {birth="7958.1.1"}
+	7974.1.1 = {add_trait=poor_warrior}
+	8030.1.1 = {death="8030.1.1"}
+}
+105607302 = {
+	name="Кахказан"	# a lord
+	dynasty=607302
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=101607302
+
+	7990.1.1 = {birth="7990.1.1"}
+	8006.1.1 = {add_trait=skilled_warrior}
+	8046.1.1 = {death="8046.1.1"}
+}
+110607302 = {
+	name="Зеба"	# a lord
+	female=yes
+	dynasty=607302
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=105607302
+
+	8016.1.1 = {birth="8016.1.1"}
+	8059.1.1 = {death="8059.1.1"}
+}
+410607302 = {
+	name="Кхангаз"
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	8016.1.1 = {birth="8016.1.1"}
+	8032.1.1 = {add_trait=poor_warrior}
+	8034.1.1 = {add_spouse=110607302}
+	8059.1.1 = {death="8059.1.1"}
+}
+113607302 = {
+	name="Басир"	# a lord
+	dynasty=607302
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=410607302
+	mother=110607302
+
+	8045.1.1 = {birth="8045.1.1"}
+	8061.1.1 = {add_trait=poor_warrior}
+	8103.1.1 = {death="8103.1.1"}
+}
+114607302 = {
+	name="Жаан"	# a lord
+	dynasty=607302
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=113607302
+
+	8079.1.1 = {birth="8079.1.1"}
+	8095.1.1 = {add_trait=poor_warrior}
+	8147.1.1 = {death="8147.1.1"}
+}
+115607302 = {
+	name="Ясен"	# a lord
+	dynasty=607302
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=114607302
+
+	8102.1.1 = {birth="8102.1.1"}
+	8118.1.1 = {add_trait=master_warrior}
+	8163.1.1 = {death="8163.1.1"}
+}
+116607302 = {
+	name="Сабейр"	# a lord
+	dynasty=607302
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=114607302
+
+	8103.1.1 = {birth="8103.1.1"}
+	8119.1.1 = {add_trait=master_warrior}
+	8172.1.1 = {death="8172.1.1"}
+}
+118607302 = {
+	name="Рамазан"	# a lord
+	dynasty=607302
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=116607302
+
+	8136.1.1 = {birth="8136.1.1"}
+	8152.1.1 = {add_trait=trained_warrior}
+	8191.1.1 = {death="8191.1.1"}
+}
+120607302 = {
+	name="Тамим"	# a lord
+	dynasty=607302
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=118607302
+
+	8160.1.1 = {birth="8160.1.1"}
+	8176.1.1 = {add_trait=trained_warrior}
+	8217.1.1 = {death="8217.1.1"}
+}
+125607302 = {
+	name="Обиад"	# a lord
+	dynasty=607302
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=120607302
+
+	8181.1.1 = {birth="8181.1.1"}
+	8197.1.1 = {add_trait=master_warrior}
+	8221.1.1 = {death="8221.1.1"}
+}
+128607302 = {
+	name="Заби"	# a lord
+	dynasty=607302
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=125607302
+
+	8205.1.1 = {birth="8205.1.1"}
+	8221.1.1 = {add_trait=poor_warrior}
+	8258.1.1 = {death="8258.1.1"}
+}
+129607302 = {
+	name="Вахида"	# a lord
+	female=yes
+	dynasty=607302
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=128607302
+
+	8229.1.1 = {birth="8229.1.1"}
+	8274.1.1 = {death="8274.1.1"}
+}
+429607302 = {
+	name="Кхангаз"
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	8229.1.1 = {birth="8229.1.1"}
+	8245.1.1 = {add_trait=poor_warrior}
+	8247.1.1 = {add_spouse=129607302}
+	8274.1.1 = {death="8274.1.1"}
+}
+130607302 = {
+	name="Расул"	# a lord
+	dynasty=607302
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=429607302
+	mother=129607302
+
+	8251.1.1 = {birth="8251.1.1"}
+	8267.1.1 = {add_trait=trained_warrior}
+	8269.1.1 = {add_spouse=430607302}
+}
+430607302 = {
+	name="Илааха"
+	female=yes
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	8251.1.1 = {birth="8251.1.1"}
+}
+131607302 = {
+	name="Аасиф"	# not a lord
+	dynasty=607302
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=130607302
+	mother=430607302
+
+	8274.1.1 = {birth="8274.1.1"}
+	8290.1.1 = {add_trait=trained_warrior}
+}
+132607302 = {
+	name="Фархад"	# not a lord
+	dynasty=607302
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=130607302
+	mother=430607302
+
+	8277.1.1 = {birth="8277.1.1"}
+	8293.1.1 = {add_trait=skilled_warrior}
+}
+
+### Jhats of Central Plains
+345607303 = {
+	name="Гхарак"	# a lord
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+	
+	7811.1.1 = {birth="7811.1.1"}
+	7875.1.1 = {death="7875.1.1"}
+}
+344607303 = {
+	name="Комол"	# a lord
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=345607303
+	
+	7832.1.1 = {birth="7832.1.1"}
+	7887.1.1 = {death="7887.1.1"}
+}
+343607303 = {
+	name="Видак"	# a lord
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=344607303
+	
+	7855.1.1 = {birth="7855.1.1"}
+	7912.1.1 = {death="7912.1.1"}
+}
+342607303 = {
+	name="Элсасх"	# a lord
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=343607303
+	
+	7878.1.1 = {birth="7878.1.1"}
+	7930.1.1 = {death="7930.1.1"}
+}
+341607303 = {
+	name="Схилор"	# a lord
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=342607303
+	
+	7908.1.1 = {birth="7908.1.1"}
+	7959.1.1 = {death="7959.1.1"}
+}
+340607303 = {
+	name="Эсенин"	# a lord
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=341607303
+	
+	7935.1.1 = {birth="7935.1.1"}
+	7980.1.1 = {death="7980.1.1"}
+}
+100607303 = {
+	name="Заид"	# a lord
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+	
+	father=340607303
+
+	7960.1.1 = {birth="7960.1.1"}
+	7976.1.1 = {add_trait=trained_warrior}
+	8019.1.1 = {death="8019.1.1"}
+}
+101607303 = {
+	name="Эдресс"	# a lord
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=100607303
+
+	7983.1.1 = {birth="7983.1.1"}
+	7999.1.1 = {add_trait=trained_warrior}
+	8035.1.1 = {death="8035.1.1"}
+}
+106607303 = {
+	name="Кадер"	# a lord
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=101607303
+
+	8006.1.1 = {birth="8006.1.1"}
+	8022.1.1 = {add_trait=trained_warrior}
+	8048.1.1 = {death="8048.1.1"}
+}
+107607303 = {
+	name="Сабейр"	# a lord
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=106607303
+
+	8030.1.1 = {birth="8030.1.1"}
+	8046.1.1 = {add_trait=master_warrior}
+	8079.1.1 = {death="8079.1.1"}
+}
+109607303 = {
+	name="Тадж"	# a lord
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=107607303
+
+	8059.1.1 = {birth="8059.1.1"}
+	8075.1.1 = {add_trait=trained_warrior}
+	8099.1.1 = {death="8099.1.1"}
+}
+110607303 = {
+	name="Кахказан"	# a lord
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=109607303
+
+	8087.1.1 = {birth="8087.1.1"}
+	8103.1.1 = {add_trait=trained_warrior}
+	8155.1.1 = {death="8155.1.1"}
+}
+113607303 = {
+	name="Усма"	# a lord
+	female=yes
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=110607303
+
+	8108.1.1 = {birth="8108.1.1"}
+	8176.1.1 = {death="8176.1.1"}
+}
+413607303 = {
+	name="Тахиб"
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	8108.1.1 = {birth="8108.1.1"}
+	8124.1.1 = {add_trait=poor_warrior}
+	8126.1.1 = {add_spouse=113607303}
+	8176.1.1 = {death="8176.1.1"}
+}
+114607303 = {
+	name="Наим"	# a lord
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=413607303
+	mother=113607303
+
+	8137.1.1 = {birth="8137.1.1"}
+	8153.1.1 = {add_trait=skilled_warrior}
+	8178.1.1 = {death="8178.1.1"}
+}
+115607303 = {
+	name="Факар"	# a lord
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=413607303
+	mother=113607303
+
+	8139.1.1 = {birth="8139.1.1"}
+	8155.1.1 = {add_trait=trained_warrior}
+	8195.1.1 = {death="8195.1.1"}
+}
+117607303 = {
+	name="Аарак"	# a lord
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=114607303
+
+	8174.1.1 = {birth="8174.1.1"}
+	8190.1.1 = {add_trait=poor_warrior}
+	8192.1.1 = {add_spouse=417607303}
+	8226.1.1 = {death = {death_reason = death_murder}}
+}
+417607303 = {
+	name="Кхехра"
+	female=yes
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	8174.1.1 = {birth="8174.1.1"}
+	8226.1.1 = {death="8226.1.1"}
+}
+119607303 = {
+	name="Эхсан"	# a lord
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=117607303
+	mother=417607303
+
+	8199.1.1 = {birth="8199.1.1"}
+	8215.1.1 = {add_trait=trained_warrior}
+	8217.1.1 = {add_spouse=419607303}
+	8252.1.1 = {death="8252.1.1"}
+}
+419607303 = {
+	name="Обиада"
+	female=yes
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	8199.1.1 = {birth="8199.1.1"}
+	8252.1.1 = {death="8252.1.1"}
+}
+120607303 = {
+	name="Липа"	# not a lord
+	female=yes
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=117607303
+	mother=417607303
+
+	8201.1.1 = {birth="8201.1.1"}
+	8280.1.1 = {death="8280.1.1"}
+}
+121607303 = {
+	name="Орзала"	# not a lord
+	female=yes
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=117607303
+	mother=417607303
+
+	8203.1.1 = {birth="8203.1.1"}
+	8244.1.1 = {death="8244.1.1"}
+}
+122607303 = {
+	name="Парвиз"	# a lord
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=119607303
+	mother=419607303
+
+	8226.1.1 = {birth="8226.1.1"}
+	8242.1.1 = {add_trait=trained_warrior}
+	8244.1.1 = {add_spouse=422607303}
+	8293.1.1 = {death="8293.1.1"}
+}
+422607303 = {
+	name="Патра"
+	female=yes
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	8226.1.1 = {birth="8226.1.1"}
+	8293.1.1 = {death="8293.1.1"}
+}
+123607303 = {
+	name="Важия"	# not a lord
+	female=yes
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=119607303
+	mother=419607303
+
+	8227.1.1 = {birth="8227.1.1"}
+	8274.1.1 = {death="8274.1.1"}
+}
+124607303 = {
+	name="Ясаман"	# not a lord
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=119607303
+	mother=419607303
+
+	8230.1.1 = {birth="8230.1.1"}
+	8246.1.1 = {add_trait=poor_warrior}
+	8248.1.1 = {add_spouse=424607303}
+	8295.1.1 = {death="8295.1.1"}
+}
+424607303 = {
+	name="Лайма"
+	female=yes
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	8230.1.1 = {birth="8230.1.1"}
+	8295.1.1 = {death="8295.1.1"}
+}
+125607303 = {
+	name="Сабейр"	# not a lord
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=119607303
+	mother=419607303
+
+	8233.1.1 = {birth="8233.1.1"}
+	8249.1.1 = {add_trait=poor_warrior}
+	8284.1.1 = {death="8284.1.1"}
+}
+126607303 = {
+	name="Рамазан"	# a lord
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=122607303
+	mother=422607303
+
+	8261.1.1 = {birth="8261.1.1"}
+	8277.1.1 = {add_trait=trained_warrior}
+	8279.1.1 = {add_spouse=426607303}
+}
+426607303 = {
+	name="Обиада"
+	female=yes
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	8261.1.1 = {birth="8261.1.1"}
+}
+127607303 = {
+	name="Захра"	# not a lord
+	female=yes
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=126607303
+	mother=426607303
+
+	8284.1.1 = {birth="8284.1.1"}
+}
+128607303 = {
+	name="Сабру"	# not a lord
+	female=yes
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=124607303
+	mother=424607303
+
+	8253.1.1 = {birth="8253.1.1"}
+}
+129607303 = {
+	name="Кадер"	# a lord
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=124607303
+	mother=424607303
+
+	8255.1.1 = {birth="8255.1.1"}
+	8271.1.1 = {add_trait=trained_warrior}
+	8273.1.1 = {add_spouse=429607303}
+}
+429607303 = {
+	name="Дарья"
+	female=yes
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	8255.1.1 = {birth="8255.1.1"}
+}
+132607303 = {
+	name="Майванд"	# not a lord
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=124607303
+	mother=424607303
+
+	8258.1.1 = {birth="8258.1.1"}
+	8274.1.1 = {add_trait=trained_warrior}
+}
+133607303 = {
+	name="Фатех"	# not a lord
+	dynasty=607303
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=129607303
+	mother=429607303
+
+	8277.1.1 = {birth="8277.1.1"}
+	8293.1.1 = {add_trait=master_warrior}
+}
+
+### Jhats of East Plains
+345607304 = {
+	name="Тудин"	# a lord
+	dynasty=607304
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+	
+	7828.1.1 = {birth="7828.1.1"}
+	7886.1.1 = {death="7886.1.1"}
+}
+344607304 = {
+	name="Дзоболин"	# a lord
+	dynasty=607304
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=345607304
+	
+	7849.1.1 = {birth="7849.1.1"}
+	7901.1.1 = {death="7901.1.1"}
+}
+343607304 = {
+	name="Нойер"	# a lord
+	dynasty=607304
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=344607304
+	
+	7873.1.1 = {birth="7873.1.1"}
+	7929.1.1 = {death="7929.1.1"}
+}
+342607304 = {
+	name="Темер"	# a lord
+	dynasty=607304
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=343607304
+	
+	7896.1.1 = {birth="7896.1.1"}
+	7951.1.1 = {death="7951.1.1"}
+}
+341607304 = {
+	name="Кайл"	# a lord
+	dynasty=607304
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=342607304
+	
+	7915.1.1 = {birth="7915.1.1"}
+	7963.1.1 = {death="7963.1.1"}
+}
+340607304 = {
+	name="Аулуон"	# a lord
+	dynasty=607304
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=341607304
+	
+	7936.1.1 = {birth="7936.1.1"}
+	7974.1.1 = {death="7974.1.1"}
+}
+100607304 = {
+	name="Эхсан"	# a lord
+	dynasty=607304
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+	
+	father=340607304
+
+	7954.1.1 = {birth="7954.1.1"}
+	7970.1.1 = {add_trait=skilled_warrior}
+	8005.1.1 = {death="8005.1.1"}
+}
+101607304 = {
+	name="Кадер"	# a lord
+	dynasty=607304
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=100607304
+
+	7977.1.1 = {birth="7977.1.1"}
+	7993.1.1 = {add_trait=trained_warrior}
+	8027.1.1 = {death="8027.1.1"}
+}
+103607304 = {
+	name="Квадруту"	# a lord
+	female=yes
+	dynasty=607304
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=101607304
+
+	8004.1.1 = {birth="8004.1.1"}
+	8039.1.1 = {death="8039.1.1"}
+}
+403607304 = {
+	name="Вакел"
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	8004.1.1 = {birth="8004.1.1"}
+	8020.1.1 = {add_trait=poor_warrior}
+	8022.1.1 = {add_spouse=103607304}
+	8039.1.1 = {death="8039.1.1"}
+}
+106607304 = {
+	name="Якан"	# a lord
+	dynasty=607304
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=403607304
+	mother=103607304
+
+	8024.1.1 = {birth="8024.1.1"}
+	8040.1.1 = {add_trait=trained_warrior}
+	8083.1.1 = {death="8083.1.1"}
+}
+109607304 = {
+	name="Расул"	# a lord
+	dynasty=607304
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=106607304
+
+	8050.1.1 = {birth="8050.1.1"}
+	8066.1.1 = {add_trait=skilled_warrior}
+	8109.1.1 = {death="8109.1.1"}
+}
+112607304 = {
+	name="Таракай"	# a lord
+	dynasty=607304
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=109607304
+
+	8082.1.1 = {birth="8082.1.1"}
+	8098.1.1 = {add_trait=skilled_warrior}
+	8149.1.1 = {death="8149.1.1"}
+}
+115607304 = {
+	name="Рамез"	# a lord
+	dynasty=607304
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=112607304
+
+	8107.1.1 = {birth="8107.1.1"}
+	8123.1.1 = {add_trait=trained_warrior}
+	8177.1.1 = {death="8177.1.1"}
+}
+118607304 = {
+	name="Аарак"	# a lord
+	dynasty=607304
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=115607304
+
+	8135.1.1 = {birth="8135.1.1"}
+	8151.1.1 = {add_trait=poor_warrior}
+	8179.1.1 = {death="8179.1.1"}
+}
+120607304 = {
+	name="Таракай"	# a lord
+	dynasty=607304
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=118607304
+
+	8158.1.1 = {birth="8158.1.1"}
+	8174.1.1 = {add_trait=poor_warrior}
+	8224.1.1 = {death="8224.1.1"}
+}
+122607304 = {
+	name="Инзир"	# a lord
+	dynasty=607304
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=120607304
+
+	8183.1.1 = {birth="8183.1.1"}
+	8199.1.1 = {add_trait=skilled_warrior}
+	8250.1.1 = {death="8250.1.1"}
+}
+123607304 = {
+	name="Якан"	# a lord
+	dynasty=607304
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=122607304
+
+	8217.1.1 = {birth="8217.1.1"}
+	8233.1.1 = {add_trait=trained_warrior}
+	8235.1.1 = {add_spouse=423607304}
+	8275.1.1 = {death="8275.1.1"}
+}
+423607304 = {
+	name="Камила"
+	female=yes
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	8217.1.1 = {birth="8217.1.1"}
+	8275.1.1 = {death="8275.1.1"}
+}
+124607304 = {
+	name="Садаф"	# a lord
+	dynasty=607304
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=123607304
+	mother=423607304
+
+	8249.1.1 = {birth="8249.1.1"}
+	8265.1.1 = {add_trait=trained_warrior}
+	8267.1.1 = {add_spouse=424607304}
+	8291.1.1 = {death="8291.1.1"}
+}
+424607304 = {
+	name="Липа"
+	female=yes
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	8249.1.1 = {birth="8249.1.1"}
+	8291.1.1 = {death="8291.1.1"}
+}
+125607304 = {
+	name="Илааха"	# not a lord
+	female=yes
+	dynasty=607304
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=123607304
+	mother=423607304
+
+	8250.1.1 = {birth="8250.1.1"}
+	8297.1.1 = {death="8297.1.1"}
+}
+126607304 = {
+	name="Янан"	# a lord
+	dynasty=607304
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=124607304
+	mother=424607304
+
+	8272.1.1 = {birth="8272.1.1"}
+	8288.1.1 = {add_trait=poor_warrior}
+}
+127607304 = {
+	name="Зеба"	# not a lord
+	female=yes
+	dynasty=607304
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=124607304
+	mother=424607304
+
+	8273.1.1 = {birth="8273.1.1"}
+}
+128607304 = {
+	name="Темур"	# not a lord
+	dynasty=607304
+
+	religion="jogos_pagan"
+	culture="jogos_nhai"
+
+	father=124607304
+	mother=424607304
+
+	8274.1.1 = {birth="8274.1.1"}
+	8290.1.1 = {add_trait=poor_warrior}
+}

@@ -1,0 +1,1115 @@
+#### Titular Kingdoms - Free Cities ####
+k_upper_rhoyne = {
+	color={ 70 110 212 }
+	color2={ 255 255 255 }
+	
+	old_andal="Река Семерых"
+	rhoynar="Гойан Дроэ"
+	pentosi="Бархатные холмы"
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = { 
+			OR = {
+				title = d_velvet_hills
+				title = d_upper_rhoyne
+			}	
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	#culture=
+}
+k_flatlands = {
+	color = { 203 183 18 }
+	color2 = { 255 255 255 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = { 
+			OR = {
+				title = d_pentoshi_flatlands
+				title = d_myrish_flatlands
+				title = d_nontelos
+			}	
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	#culture=
+}
+k_disputed_lands = {
+	color = { 224 199 199 }
+	color2 = { 255 255 255 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = { 
+			OR = {
+				title = d_lysene_disputed_lands
+				title = d_myrish_disputed_lands
+				title = d_volantene_disputed_lands
+				title = d_tyroshi_lands
+			}	
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	#culture=
+}
+k_forest_qohor = {
+	color={ 158 82 235 }
+	color2={ 128 0 255 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = { 
+			OR = {
+				title = d_northern_forest_qohor
+				title = d_southern_forest_qohor
+			}	
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	culture = qohorik
+}
+k_the_axe = {
+	color={ 107 233 107 }
+	color2={ 255 255 255 }
+	
+	qohorik = "Darkwater"
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = { 
+			OR = {
+				title = d_darkwater
+				title = d_the_axe
+			}	
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	#culture =
+}
+k_hills_of_norvos = {
+	color={ 86 30 0 }
+	color2={ 200 124 55 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = { 
+			OR = {
+				title = d_hills_of_norvos
+				title = d_the_west_road
+			}	
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	culture = norvosi	
+}
+k_the_marches = {
+	color={ 69 74 27 }
+	color2={ 47 170 40 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = { 
+			OR = {
+				title = d_myrish_hinterlands
+				title = d_valonsar
+			}	
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	#culture =
+}
+k_orange_shore = {
+	color={ 102 113 35 }
+	color2={ 255 255 0 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = { 
+			title = d_orange_shore
+		}
+		NOT = { culture = rhoynar }
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	culture = volantene 
+}
+k_volontherys = {
+	color={ 227 229 74 }
+	color2={ 255 255 0 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = { 
+			title = d_volontherys
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital =  420
+	creation_requires_capital = no
+	
+	culture = volantene 
+}
+k_valysar = {
+	color={ 117 108 0 }
+	color2={ 255 255 0 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = { 
+			title = d_valysar
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital =  422
+	creation_requires_capital = no
+	
+	culture = volantene 
+}
+k_selhorys = {
+	color={ 171 173 27 }
+	color2={ 255 255 0 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = { 
+			title = d_selhorys
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	culture = volantene 
+}
+k_chroyane = {
+	color = { 145 145 213 }
+	color2 = { 255 255 255 }
+	
+	allow = {
+		num_of_duke_titles = 3
+		primary_title = { 
+			OR = {
+				title = d_golden_fields
+				title = d_lower_rhoyne
+			}	
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+	}
+	
+	capital = 413
+	creation_requires_capital = no
+	
+	culture = rhoynar
+}
+k_sarhoy = {
+	color={ 100 101 35 }
+	color2={ 255 255 0 }
+	
+	allow = {
+		num_of_duke_titles = 3
+		primary_title = { 
+			title = d_orange_shore
+		}
+		culture = rhoynar
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+	}
+	
+	capital = 762
+	creation_requires_capital = no
+	
+	culture = rhoynar
+}
+k_the_bay = {
+	color={ 25 57 0 }
+	color2={ 255 255 255 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = { 
+			OR = {
+				title = d_lorath_bay
+				title = d_east_braavosiancoastlands
+			}	
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	#culture =
+}
+k_mantarys = {
+	color={ 90 0 0 }
+	color2={ 255 255 255 }
+	
+	allow = {
+		num_of_duke_titles = 3
+		primary_title = { 
+			title = d_mantarys
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital = 599 #Mantarys
+	creation_requires_capital = no
+	
+	culture = mantaryan
+}
+k_tolos = {
+	color={ 212 111 84 }
+	color2={ 255 255 255 }
+	
+	allow = {
+		num_of_duke_titles = 3
+		primary_title = { 
+			title = d_tolos
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital = 601 #Tolos
+	creation_requires_capital = no
+	
+	culture = tolosi
+}
+k_elyria = {
+	color = { 145 145 213 }
+	color2 = { 255 255 255 }
+	
+	allow = {
+		num_of_duke_titles = 3
+		primary_title = { 
+			title = d_elyria
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital = 602 #Elyria
+	creation_requires_capital = no
+	
+	culture = elyrian
+}
+k_coastlands = {
+	color={ 146 49 97 }
+	color2={ 128 0 64 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = { 
+			OR = {
+				title = d_andal_coast
+				title = d_braavosiancoastlands
+			}	
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+	}
+	
+	capital = 1 #to make the title creatable 
+	creation_requires_capital = no
+	
+	#culture = 
+}
+k_ny_sar = {
+	color={ 201 26 0 }
+	color2={ 255 255 255 }
+	
+	allow = {
+		num_of_duke_titles = 3
+		primary_title = { 
+			title = d_ny_sar
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital = 414 # Ny Sar
+	creation_requires_capital = no
+	
+	culture = rhoynar
+}
+k_ar_noy = {
+	color={ 235 16 0 }
+	color2={ 255 255 255 }
+	
+	allow = {
+		num_of_duke_titles = 3
+		primary_title = { 
+			title = d_ar_noy
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital = 429
+	creation_requires_capital = no
+	
+	culture = rhoynar
+}
+k_sweetwater = {
+	color = { 145 145 213 }
+	color2 = { 255 255 255 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = { 
+			title = d_sweetwater
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	culture = braavosi
+}
+#### Titular Kingdoms - Slaver's Bay ####
+k_copper_hills = {
+	color={ 223 154 87 }
+	color2={ 255 128 0 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = { 
+			title = d_yunkishhills
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	culture = yunkaii
+}
+k_worm_river = {
+	color={ 211 83 66 }
+	color2={ 232 50 23 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = { 
+			title = d_worm_river
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	culture = astapori
+}
+k_khyzai = {
+	color={ 11 58 45 }
+	color2={ 0 128 92 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = { 
+			title = d_khyzaipass
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	culture = meereenese
+}
+k_old_ghis = {
+	color={ 53 24 0 }
+	color2={ 128 64 0 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = { 
+			OR = {
+				title = d_old_ghis
+				title = d_ghiscari_hills
+			}	
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+	}
+	
+	capital = 619 #Old Ghis
+	creation_requires_capital = no
+	
+	culture = ghiscari	
+}
+k_isle_of_cedars = {
+	color={ 229 150 73 }
+	color2={ 255 128 0 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = { 
+			title = d_isle_of_cedars
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	culture = ghiscari	
+}
+#### Titular Kingdoms - Ibben ####
+k_ib = {
+	color={ 96 99 119 }
+	color2={ 116 119 139 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = { 
+			OR = {
+				title = d_portofibben
+				title = d_iboss
+				title = d_ibnor
+			}
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	culture = ibbenese	
+}
+k_bayofwhales = {
+	color={ 24 36 111 }
+	color2={ 116 119 139 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = { 
+			OR = {
+				title = d_bayofwhales
+				title = d_farib
+			}
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	culture = ibbenese	
+}
+k_ibbish = {
+	color={ 62 63 68 }
+	color2={ 116 119 139 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = { 
+			title = d_ibbish
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	culture = ibbenese	
+}
+#### Titular Kingdoms - Qarth ####
+k_red_roads = { #The Jade Gate
+	color={ 156 28 161 }
+	color2={ 6 128 0 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = { 
+			OR = {
+				title = d_jade_gate
+				title = d_qal
+			}	
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	culture = qartheen
+}
+k_qarkash = {
+	color={ 209 0 217 }
+	color2={ 6 128 0 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = { 
+			title = d_qarkash
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital = 654
+	creation_requires_capital = no
+	
+	culture = qartheen
+}
+k_port_yhos = {
+	color={ 84 32 86 }
+	color2={ 6 128 0 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = {
+			title = d_port_yhos
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital = 642
+	creation_requires_capital = no
+	
+	culture = qartheen
+}
+#### Titular Kingdoms - Jade Sea ####
+k_shadowlands = {
+	color={ 44 0 0 }
+	color2={ 6 128 0 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = {
+			OR = {
+				title = d_shadowlands
+				title = d_stygai
+			}	
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	culture = shadowlander
+}
+k_hidden_city = {
+	color={ 178 204 89 }
+	color2={ 6 128 0 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = {
+			title = d_hidden_city
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	culture = yi_ti
+}
+k_fenqui = {
+	color={ 65 84 0 }
+	color2={ 6 128 0 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = {
+			title = d_yiti_delta
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	culture = yi_ti
+}
+k_nanqi = {
+	color={ 166 213 7 }
+	color2={ 6 128 0 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = {
+			title = d_hills_tiqui
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	culture = yi_ti
+}
+k_wan_ti = {
+	color={ 105 124 28 }
+	color2={ 6 128 0 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = {
+			title = d_linqi_jungle
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	culture = yi_ti
+}
+k_hezyin = {
+	color={ 129 142 84 }
+	color2={ 6 128 0 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = {
+			title = d_piqui_jungle
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	culture = yi_ti
+}
+k_fujin = {
+	color={ 65 84 0 }
+	color2={ 6 128 0 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		primary_title = {
+			title = d_north_xin
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	culture = yi_ti
+}
+#### Titular Kingdoms - Summer Islands ####
+k_walano = {
+	color={ 62 219 65 }
+	color2={ 255 255 255 }
+	
+	allow = {
+		num_of_duke_titles = 3
+		primary_title = {
+			OR = {
+				title = d_walano
+				title = d_last_lament
+				title = d_tall_trees_valley
+			}	
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	culture = summer_islander
+}
+k_jhala = {
+	color={ 118 195 120 }
+	color2={ 255 255 255 }
+	
+	allow = {
+		num_of_duke_titles = 3
+		primary_title = {
+			OR = {
+				title = d_sweet_lotus_vale
+				title = d_west_jhala
+				title = d_parrot_bay
+				title = d_indigo_straits
+				title = d_red_flower_vale
+				title = d_golden_head
+			}	
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	culture = summer_islander
+}
+k_west_summer_isles = {
+	color={ 38 89 39 }
+	color2={ 255 255 255 }
+	
+	allow = {
+		num_of_duke_titles = 3
+		primary_title = {
+			OR = {
+				title = d_the_three_exiles
+				title = d_moluu
+			}	
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	culture = summer_islander
+}
+k_omburu = {
+	color={ 72 209 66 }
+	color2={ 255 255 255 }
+	
+	allow = {
+		num_of_duke_titles = 3
+		primary_title = {
+			title = d_omburu
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital = 1 #to make the title creatable
+	creation_requires_capital = no
+	
+	culture = summer_islander
+}
+k_naath = {
+	color = { 56 74 20 }
+	color2 = { 255 255 255 }
+	
+	allow = {
+		num_of_duke_titles = 3
+		primary_title = {
+			title = d_naath
+		}
+		custom_tooltip = {
+			text = TOOLTIPINDEPENDENTCONDITION
+			hidden_tooltip = {
+				independent = yes
+				primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+			}
+		}
+		NOT = { has_dlc = "Charlemagne" }
+	}
+	
+	capital = 626 #Naath
+	creation_requires_capital = no
+	
+	culture = naathi
+}

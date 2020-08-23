@@ -1,0 +1,22 @@
+name = "Танец Драконов"
+
+casus_belli={
+	casus_belli=claim_iron_throne_ACOK
+	actor=77012
+	recipient=77013
+	landed_title=e_iron_throne
+	date=8129.4.1
+}
+
+8129.4.1 = {
+	add_defender = 77013 #Aegon
+	#add_defender = 113300544 #Three Daughters
+	add_attacker = 77012 #Rhaenyra	
+	
+}
+
+8130.10.22 = {
+	rem_defender = 77013 #Aegon
+	#rem_defender = 113300544 #Three Daughters
+	rem_attacker = 77012 #Rhaenyra
+}                                                                                                                                                                                                                                                                                                               

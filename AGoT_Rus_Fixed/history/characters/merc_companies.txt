@@ -1,0 +1,2344 @@
+##Merc Companies
+##ids 125000-129999
+
+###Golden Company
+125999 = { #dummy holder so history can be sorted
+	name=" " 
+	martial = 8
+	religion=ruin_rel
+	culture=ruin		
+	
+	add_trait="tough_soldier"
+	
+	8100.1.1 = {
+		birth="8100.1.1"
+	}
+}
+
+125000 = {
+	name="Балак" 
+	martial = 8
+	culture = summer_islander
+	religion = summer_rel 		
+	
+	add_trait="tough_soldier"
+	give_nickname=nick_black_walder
+	
+	8263.1.1 = {
+		birth="8263.1.1"
+		effect = {
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8282.1.1={
+		employer = 307 #Майлс Toyne
+		add_trait="trained_warrior"
+	}
+	8297.1.1={
+		employer = 88241 #Harry Strickland
+	}
+}
+125001 = {
+	name="Бриндел" 
+	dynasty=1515 #Byrne
+	religion="the_seven"	
+	culture="crownlander"	
+	
+	martial = 7
+	
+	add_trait="tough_soldier"
+	add_trait="patient"
+	
+	8260.1.1 = {
+		birth="8260.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8276.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}
+	8282.1.1={
+		employer = 307 #Майлс Toyne
+	}
+	8297.1.1={
+		employer = 88241 #Harry Strickland
+	}
+}
+125002 = {
+	name="Дик" 
+	dynasty=1007 #Cole
+	religion="the_seven"	
+	culture = stormlander	
+	
+	add_trait="tough_soldier"
+	
+	father=60281007
+	mother=50281007
+	
+	8267.1.1 = {
+		birth="8267.1.1"
+	}
+	8282.1.1={
+		employer = 307 #Майлс Toyne
+	}
+	8283.1.1 = {
+		add_trait="poor_warrior"
+	}
+	8297.1.1={
+		employer = 88241 #Harry Strickland
+	}
+}
+125003 = {
+	name="Уилл" 
+	dynasty=1007 #Cole
+	religion="the_seven"	
+	culture = stormlander	
+	
+	add_trait="tough_soldier"
+	
+	father=60281007
+	mother=50281007
+	
+	8268.1.1 = {
+		birth="8268.1.1"
+	}
+	8282.1.1={
+		employer = 307 #Майлс Toyne
+	}
+	8284.1.1 = {
+		add_trait="poor_warrior"
+	}
+	8297.1.1={
+		employer = 88241 #Harry Strickland
+	}
+}
+125004 = {
+	name="Горис" 
+	dynasty=300538 #Edoryen
+	
+	stewardship=13
+	
+	culture = volantene
+	religion = rhllor 		
+	
+	add_trait="thrifty_clerk"
+	
+	8258.1.1 = {
+		birth="8258.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8282.1.1={
+		employer = 307 #Майлс Toyne
+	}
+	8297.1.1={
+		employer = 88241 #Harry Strickland
+	}
+	8300.3.1 = { 
+		employer = 125009 #Young Griff
+	}
+}
+125005 = {
+	name="Франклин" 
+	dynasty=261 #Fossoway 
+	
+	religion="the_seven"	
+	culture="reachman"	
+	
+	add_trait = "skilled_tactician"
+	add_trait = "proud"
+	add_trait = "wroth"
+	add_trait = "ruthless"
+	add_trait = "bastard"
+	give_nickname = nick_flowers
+
+	father=262
+	
+	8261.1.1 = {
+		birth="8261.1.1"
+	}
+	8276.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8282.1.1={
+		employer = 307 #Myles Toyne
+		add_trait = knight
+		add_trait = scarred
+	}
+	8297.1.1={
+		employer = 88241 #Harry Strickland
+	}
+}
+125006 = {
+	name="Лисоно" 
+	dynasty=300539 #Marr
+	
+	intrigue = 8
+	diplomacy = 7
+	martial = 1
+	stewardship = 4
+	learning = 8
+	
+	culture = lysene
+	religion = rhllor 		
+	
+	add_trait = intricate_webweaver
+	add_trait = groomed
+	add_trait = gregarious
+	add_trait = deceitful
+	add_trait = diligent
+	
+	8255.1.1 = {
+		birth="8255.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8282.1.1={
+		employer = 307 #Майлс Toyne
+	}
+	8297.1.1={
+		employer = 88241 #Harry Strickland
+	}
+}
+125007 = {
+	name="Марк" 
+	dynasty=178451 #Mandrake
+	religion="the_seven"	
+	culture="riverlander"	
+	
+	add_trait="tough_soldier"
+	add_trait=ambitious
+	
+	8264.1.1 = {
+		birth="8264.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8280.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+		add_trait=former_slave
+	}
+	8282.1.1={
+		employer = 307 #Майлс Toyne
+	}
+	8297.1.1={
+		employer = 88241 #Harry Strickland
+	}
+	8300.3.1 = { 
+		employer = 125009 #Young Griff
+	}
+}
+125008 = {
+	name="Тристан" 
+	religion="the_seven"	
+	culture="riverlander"	
+	
+	add_trait="tough_soldier"
+	add_trait="bastard"
+	add_trait="ambitious"
+	add_trait="authoritative"
+	give_nickname = nick_rivers
+	
+	8251.1.1 = {
+		birth="8251.1.1"
+		effect = {
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8267.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}
+	8282.1.1={
+		employer = 307 #Майлс Toyne
+	}
+	8297.1.1={
+		employer = 88241 #Harry Strickland
+	}
+	8300.3.1 = { 
+		employer = 125009 #Young Griff
+	}
+}
+1250010 = {
+	name="Хамфри"
+	martial = 1
+	culture = valeman
+	religion = the_seven		
+	
+	add_trait="bastard"
+	give_nickname = nick_stone
+	
+	8265.1.1 = {
+		birth="8265.1.1"
+		effect = {
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8281.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8282.1.1={
+		employer = 307 #Майлс Toyne
+	}
+	8297.1.1={
+		employer = 88241 #Harry Strickland
+	}
+}
+1250011 = {
+	name="Каспор"
+	martial = 1
+	culture = westerman
+	religion = the_seven		
+	
+	add_trait="bastard"
+	give_nickname = nick_hill
+	
+	8265.1.1 = {
+		birth="8265.1.1"
+		effect = {
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8281.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8282.1.1={
+		employer = 307 #Майлс Toyne
+	}
+	8297.1.1={
+		employer = 88241 #Harry Strickland
+	}
+}
+1250019 = {
+	name="Дункан"
+	dynasty = 356 # Strong
+	martial = 1
+	culture = riverlander
+	religion = the_seven		
+	
+	father=5580356
+	mother=4560356
+	
+	8260.1.1 = {
+		birth="8260.1.1"
+	}
+	8276.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8282.1.1={
+		employer = 307 #Майлс Toyne
+	}
+	8297.1.1={
+		employer = 88241 #Harry Strickland
+	}
+}
+1250012 = {
+	name="Денис"
+	dynasty = 356 # Strong
+	martial = 1
+	culture = riverlander
+	religion = the_seven		
+	
+	father=5580356
+	mother=4560356
+	
+	8262.1.1 = {
+		birth="8262.1.1"
+	}
+	8278.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8282.1.1={
+		employer = 307 #Майлс Toyne
+	}
+	8297.1.1={
+		employer = 88241 #Harry Strickland
+	}
+}
+1250013 = {
+	name="Джон" 
+	dynasty=355 # Lothston
+	religion="the_seven"	
+	culture="riverlander"	
+	
+	add_trait="tough_soldier"
+	
+	father=16355 # Лукас Lothston
+	
+	8259.7.6 = {
+		birth="8259.7.6"
+	}
+	8275.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8282.1.1={
+		employer = 307 #Майлс Toyne
+	}
+	8297.1.1={
+		employer = 88241 #Harry Strickland
+	}
+}
+1250014 = {
+	name="Лаймонд"
+	dynasty=174398 # Pease
+	martial = 1
+	culture = stormlander
+	religion = the_seven		
+	
+	8265.1.1 = {
+		birth="8265.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8281.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8282.1.1={
+		employer = 307 #Майлс Toyne
+	}
+	8297.1.1={
+		employer = 88241 #Harry Strickland
+	}
+}
+1250015 = {
+	name="Лоримас"
+	dynasty=174399 # Mudd
+	
+	martial = 5
+	
+	culture = riverlander
+	religion = old_gods		
+	
+	father=159174399
+	
+	8265.1.1 = {
+		birth="8265.1.1"
+	}
+	8281.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8282.1.1={
+		employer = 307 #Майлс Toyne
+	}
+	8297.1.1={
+		employer = 88241 #Harry Strickland
+	}
+}
+1250016 = {
+	name="Джон"
+	dynasty=174399 # Mudd
+	
+	martial = 6
+	diplomacy = 2
+	intrigue = 3
+	stewardship = 2
+	learning = 1
+	
+	culture = riverlander
+	religion = old_gods	
+
+	father=156174399
+		
+	add_trait="rude"
+	add_trait="cruel"
+	add_trait="proud"
+	
+	8261.1.1 = {
+		birth="8261.1.1"
+	}
+	8277.1.1={
+		add_trait="trained_warrior"
+		add_trait="tough_soldier"
+		add_trait="scarred"
+	}
+	8282.1.1={
+		employer = 307 #Myles Toyne
+		give_nickname = nick_the_young
+	}
+	8297.1.1={
+		employer = 88241 #Harry Strickland
+	}
+	8300.3.1 = { 
+		employer = 125009 #Young Griff
+	}
+}
+1250017 = {
+	name="Мало"
+	dynasty=174400
+	martial = 1
+	culture = tyroshi
+	religion = trios		
+	
+	8265.1.1 = {
+		birth="8265.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8281.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8282.1.1={
+		employer = 307 #Майлс Toyne
+	}
+	8297.1.1={
+		employer = 88241 #Harry Strickland
+	}
+}
+1250018 = {
+	name="Чэйнс"
+	
+	martial = 5
+	diplomacy = 4
+	intrigue = 3
+	stewardship = 2
+	learning = 2
+	
+	culture = reachman
+	religion = the_seven
+
+	add_trait = bastard
+	add_trait = tough_soldier
+	add_trait = authoritative
+	add_trait = rude
+	add_trait = tall
+	
+	8267.1.1 = {
+		birth="8267.1.1"
+		effect = {
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8282.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8282.1.1={
+		employer = 307 #Myles Toyne
+	}
+	8297.1.1={
+		employer = 88241 #Harry Strickland
+	}
+}
+1250022 = {
+	name="Маленькая Киска"
+	
+	martial = 5
+	diplomacy = 5
+	
+	culture = reachman
+	religion = the_seven
+
+	8270.1.1 = {
+		birth="8270.1.1"
+		effect = {
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8286.1.1 = {
+		add_trait="trained_warrior"
+		add_trait = tough_soldier
+		employer = 307 #Myles Toyne
+		effect = {
+			add_character_modifier = {	# and his lucky cat!
+				name = pet_cat
+				duration = -1
+			}
+			hidden_tooltip = { 
+				character_event = { id = 77802 days = 3000 random = 2000 } # Cat dies
+				character_event = { id = 77861 days = 30 random = 100 } # Cat & dog todo days
+				#Get name
+				e_rebels = {
+					create_random_steward = {
+						name = "Lucky Cat"
+						random_traits = yes
+						dynasty = none
+						female = random
+						culture = cat
+						religion = ROOT
+					}
+					new_character = {
+						ROOT = { save_persistent_event_target = { name = cat_name scope = PREV } }
+						death = yes
+					}
+				} 			
+			}
+		}
+	}
+	8297.1.1={
+		employer = 88241 #Harry Strickland
+	}
+}
+1250023 = {
+	name="Два Меча"
+	
+	martial = 5
+	
+	culture = crownlander
+	religion = the_seven
+
+	8270.1.1 = {
+		birth="8270.1.1"
+		effect = {
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8288.1.1 = {
+		employer = 307 #Myles Toyne
+		add_trait="trained_warrior"
+		add_trait="lustful"
+		add_trait = tough_soldier
+	}
+	8297.1.1={
+		employer = 88241 #Harry Strickland
+	}
+}
+1250020 = {
+	name="Лемора"	#Maybe Эшара, maybe someone else. Placeholder character until GRRM reveals anything.
+	female=yes
+	diplomacy = 12
+	culture = crownlander
+	religion = the_seven
+	
+	add_trait = fair
+	add_trait = proud
+	add_trait = elusive_shadow
+	
+	8258.1.1 = {
+		birth="8258.1.1"
+		effect = {
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8283.12.30 = {add_trait=depressed}
+	8284.1.1 = {
+		add_trait=septa
+		employer = 307 #Майлс Toyne
+	}
+	8297.1.1={
+		employer = 88241 #Harry Strickland
+	}
+	8300.3.1={
+		employer = 125009 #Young Griff
+	}
+}
+1250021 = {
+	name="Халдон"	#
+	learning = 8
+	culture = crownlander
+	religion = the_seven
+	trait = martial_cleric
+	8255.1.1 = {
+		birth="8255.1.1"
+		effect = {
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8270.1.1 = {
+		add_trait = scholar
+		effect = {
+			if = {
+				limit = { NOT = { year = 8284 } }
+				c_the_citadel = { holder_scope = { ROOT = { move_character = PREV } } }
+				add_character_modifier = {
+					name = maester_education
+					duration = -1
+				}
+			}
+		}	
+	}
+	8284.1.1 = {
+		employer = 307 #Майлс Toyne
+		give_nickname = nick_halfmaester
+	}
+	8297.1.1={
+		employer = 88241 #Harry Strickland
+	}
+	8300.3.1={
+		employer = 125009 #Young Griff
+		add_trait = maester
+	}
+}
+###Young Griff###
+125009 = {
+	name="Эйгон" 
+	dna="alafkzgfaav"
+	properties="0f0eo"
+	
+	martial = 5
+	diplomacy = 7
+	intrigue = 4
+	stewardship = 7
+	learning = 7
+	
+	religion="the_seven"	
+	culture="high_valyrian"	
+	
+	add_trait=fair
+	add_trait=quick
+	
+	disallow_random_traits = yes
+	
+	#mother=125099
+	
+	8282.1.1 = {
+		birth="8282.1.1"
+		effect = {	
+			if = {
+				limit = { NOT = { year = 8283 } }
+				remove_trait=fair
+				remove_trait=quick
+				death = yes
+			}
+			dynasty = none
+		}
+	}
+	8283.1.1={
+		#employer = 307 #Майлс Toyne
+		effect = {
+			set_immune_to_pruning = yes
+			set_character_flag = high_valyrian
+			set_graphical_culture = high_valyrian
+			culture = high_valyrian
+			health = 2 
+			if = {
+				limit = { is_ruler = no }
+				k_golden_company = {
+					holder_scope = {
+						ROOT = { move_character = PREV }
+					}
+				}
+			}
+		}
+	}
+	8288.8.1={
+		add_trait=humble
+	}
+	8290.8.1={
+		add_trait=temperate
+	}
+	8292.1.1={
+		add_trait=squire
+		effect = {
+			if = {
+				limit = { NOT = { age = 16 } }
+				random_courtier = {
+					limit = { character = 316 }
+					ROOT = { set_guardian = PREV }
+				}
+			}	
+		}
+	}
+	8292.8.1={
+		add_trait=brave
+	}
+	8297.1.1={
+		add_trait=scholar
+		add_trait=trained_warrior
+		add_trait=ambitious
+		effect = {
+			add_friend = 316 #JC
+			add_friend = 88149 #Rolly
+			add_friend = 600000040 #Illyrio
+		}
+	}
+	8298.1.1={
+		add_trait=tough_soldier
+		add_trait=inspiring_leader
+	}
+	8299.1.1={
+		effect = {
+			random_friend = {
+				limit = { character = 316 }
+				character_event = { id = knight.19 days = 365 } #knighhood event
+			}
+		}
+	}
+	8300.2.28 = { 
+		dynasty = 497
+		add_trait = forbid_marriage
+		effect={
+			#Make room for canon flank commanders
+			remove_all_commanders = yes
+		}
+	}
+	8300.3.1={	
+		effect = { 
+			dynasty = 497
+			if = { #Landless workaround, give title back to rain house
+				limit = { has_landed_title = b_maelstrom_watch }
+				b_maelstrom_watch = { c_rain_house = { holder_scope = { gain_title = PREVPREV } } }
+			}
+			if = {
+				limit = { has_game_rule = { name = shattered_realms value = off } }
+				if = {
+					limit = { ai = no }
+					remove_trait = forbid_marriage
+				}
+				# set_character_flag = rebel_leader
+				# add_trait = rebel_leader
+				set_defacto_liege = ROOT
+				e_iron_throne = {
+					add_pressed_claim = ROOT
+				}
+				add_weak_claim = k_stormlands 
+				304 = {
+					add_province_modifier = {
+						name = utterly_defeated
+						duration = 1800
+					}
+				}
+				set_character_flag = claimant_adventurer
+				set_character_flag = young_griff_claimant		
+				
+				c_316 = { give_minor_title = title_commander } #Jon Connington
+				c_6298 = { give_minor_title = title_commander } #Laswell Peake
+				c_125008 = { give_minor_title = title_commander } #Tristan Rivers
+				c_125004 = { give_minor_title = title_commander } #Gorys Edoryen
+				c_125007 = { give_minor_title = title_commander } #Marq Mandrake
+				c_1250016 = { give_minor_title = title_commander } #John Mudd
+				spawn_unit = {
+					province = 323 #Rainhouse
+					owner = ROOT
+					leader = 6298 #Laswell peake
+					troops = {
+						archers = { 50 50 }
+						heavy_infantry = { 150 150 }
+						pikemen = { 150 150 }
+						light_infantry = { 50 50 }	
+						light_cavalry = { 40 40 }		
+						knights = { 50 50 }				
+					}
+					earmark = golden_company
+				}
+				c_6298 = { character_event = { id = feast_for_crows.160 } } #end siege in rainhouse
+				
+				spawn_unit = {
+					province = 314 #Crow's Nest
+					owner = ROOT
+					leader = 125008 #Tristan Rivers
+					troops = {
+						archers = { 50 50 }
+						heavy_infantry = { 150 150 }
+						pikemen = { 150 150 }
+						light_infantry = { 50 50 }	
+						light_cavalry = { 40 40 }		
+						knights = { 50 50 }				
+					}
+					earmark = golden_company
+				}
+				c_125008 = { character_event = { id = feast_for_crows.160 } } #end siege in Crow's Nest
+
+				spawn_unit = {
+					province = 303 #Griffins Roost
+					owner = ROOT
+					leader = 316 #Jon Connington
+					troops = {
+						archers = { 334 334 }
+						heavy_infantry = { 1000 1000 }
+						pikemen = { 1000 1000 }
+						light_infantry = { 334 334 }	
+						light_cavalry = { 233 233 }		
+						knights = { 334 334 }
+						war_elephants = { 10 10 }					
+					}
+					earmark = golden_company
+				}
+				spawn_unit = {
+					province = 303 #Griffins Roost
+					owner = ROOT
+					leader = 88241 #Harry Strickland
+					troops = {
+						archers = { 334 334 }
+						heavy_infantry = { 1000 1000 }
+						pikemen = { 1000 1000 }
+						light_infantry = { 334 334 }	
+						light_cavalry = { 233 233 }		
+						knights = { 334 334 }
+						war_elephants = { 10 10 }					
+					}
+					earmark = golden_company
+				}
+				spawn_unit = {
+					province = 303 #Griffins Roost
+					owner = ROOT
+					leader = ROOT
+					troops = {
+						archers = { 334 334 }
+						heavy_infantry = { 1000 1000 }
+						pikemen = { 1000 1000 }
+						light_infantry = { 334 334 }	
+						light_cavalry = { 233 233 }		
+						knights = { 334 334 }
+						war_elephants = { 10 10 }					
+					}
+					earmark = golden_company
+				}
+			}	
+			else = {
+				remove_trait = forbid_marriage
+				if = {
+					limit = { has_landed_title = k_young_griffs_host }
+					activate_title = { status = no title = k_young_griffs_host }
+					k_young_griffs_host = { destroy_landed_title = THIS }
+				}
+			}
+			set_character_flag = has_dynasty_loyalist
+			k_dorne = {
+				holder_scope = {
+					opinion = {
+						modifier = opinion_dynasty_loyalist
+						who = ROOT
+					}				
+					reverse_opinion = {
+						modifier = opinion_my_loyalist
+						who = ROOT
+					}
+					any_dynasty_member = {
+						opinion = {
+							modifier = opinion_dynasty_loyalist
+							who = ROOT
+						}				
+						reverse_opinion = {
+							modifier = opinion_my_loyalist
+							who = ROOT
+						}
+					}						
+				}
+			}
+			e_iron_throne = {
+				holder_scope = {
+					reverse_opinion = {
+						modifier = opinion_usurped_title
+						who = ROOT
+					}			
+				}
+			}
+			d_dragonstone = {
+				holder_scope = {
+					reverse_opinion = {
+						modifier = opinion_usurped_title
+						who = ROOT
+					}			
+				}
+			}
+			k_westerlands = {
+				holder_scope = {
+					random_sibling = {
+						limit = { character = 3190 } #Jaime
+						reverse_opinion = {
+							modifier = opinion_vengeance
+							who = ROOT
+						}
+					}
+				}
+			}
+			c_696969101 = { #Varys
+				remove_all_job_titles = yes
+				give_job_title = job_spymaster		
+			}
+		}
+	}
+}
+1300016 = {
+	name="Уоткин"
+	
+	martial = 3
+	diplomacy = 3
+	intrigue = 3
+	stewardship = 2
+	learning = 1
+	
+	culture = riverlander
+	religion = the_seven
+	
+	add_trait="tough_soldier"
+
+	8280.1.1 = {
+		birth="8280.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8282.1.1={
+		employer = 307 #Майлс Toyne
+		add_trait="squire"
+	}
+	8296.1.1={
+		add_trait="trained_warrior"
+	}
+	8297.1.1={
+		employer = 88241 #Harry Strickland	
+	}
+}
+###Brave Companions
+80012560 = {
+	name="Варго"
+	dynasty = 174354 
+	dna="bljkejkagau"
+	properties="cj0dcd0000"
+	martial = 8
+	culture = qohorik
+	religion = black_goat 		
+	 
+   	add_trait="tough_soldier"
+   	add_trait="lisp"
+   	add_trait="impaler"
+   	add_trait="wroth"
+   	add_trait="cruel"
+   	add_trait="authoritative"
+   	add_trait="rude"
+	add_trait="ruthless"
+	add_trait="lustful"
+	
+   	give_nickname = nick_the_goat
+	
+	8263.1.1 = {
+		birth="8263.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8279.1.1 = {
+		add_trait="skilled_warrior"
+	}
+	8299.9.24 = { #mutilated Jaime
+		effect = {
+			c_190 = {
+				opinion = {
+					modifier = opinion_mutilated_close_kin  
+					who = ROOT
+				}
+			}
+			c_4190 = {
+				opinion = {
+					modifier = opinion_mutilated_close_kin  
+					who = ROOT
+				}
+			}
+		}
+	}
+	8299.10.22 = {
+		effect = {
+			add_trait = wounded		#Brienne bit off his ear
+			if = {
+				limit = { has_dlc = "Reapers" }
+				add_trait = infection 
+			}
+		}
+	}
+	8299.10.30 = {	#Captured by Gregor Clegane
+		effect = {
+			c_fang_tower = {
+				holder_scope = {
+					ROOT = { 
+						imprison = PREV 
+						set_character_flag = captured_in_battle
+					}
+					reverse_opinion = {
+						modifier = opinion_mutilated_me 
+						who = ROOT
+					}
+					reverse_opinion = {
+						modifier = opinion_tortured_me  
+						who = ROOT
+					}
+				}
+			}
+			if = {
+				limit = { has_dlc = "Reapers" }
+				add_trait = one_handed
+				add_trait = one_legged
+				add_trait = mangled
+			}
+			else = {
+				add_trait = "disfigured_AGOT"
+			}
+		}
+	}
+	8300.1.14 = {		#Tortured to death by Mountain
+		death = {
+			death_reason = death_execution_torture 
+			killer=1230
+		}
+	}
+}
+80012561 = {
+	name="Урсвик" 
+	martial = 6
+	culture = qohorik
+	religion = black_goat 	
+	
+	add_trait="tough_soldier"
+	give_nickname = nick_the_faithfull
+	
+	8260.1.1 = {
+		birth="8260.1.1"
+		effect = {	
+			dynasty = none
+			 set_immune_to_pruning = yes
+		}
+	}
+	8276.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8282.1.1={
+		employer = 80012560 #Vargo Hoat
+	}
+	8285.1.1 = { add_spouse = 40012561 }
+}
+40012561 = {
+	name="Оливия"
+	female=yes
+	culture = qohorik
+	religion = black_goat 
+	
+	8265.1.1 = { birth="8265.1.1" }
+	8285.1.1 = { add_spouse = 80012561 }
+	8290.1.1 = {
+		death = {
+			death_reason = death_murder
+			killer=80012561
+		}
+	}
+}
+80012562 = {
+	name="Утт"
+	martial = 2
+	culture = crownlander
+	religion = the_seven		
+	
+	add_trait="cruel"
+	add_trait="homosexual"
+	add_trait="deceitful"
+	
+	8263.1.1 = {
+		birth="8263.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8279.1.1 = {
+		add_trait = septon
+		add_trait="trained_warrior"
+	}
+	8282.1.1={
+		employer = 80012560 #Варго Hoat
+	}
+	8299.10.14 = {
+		death = {
+			death_reason = death_execution
+			killer = 1303 #Beric Dondarrion
+		}
+	}
+}
+80012563 = {
+	name="Шагвелл" 
+	martial = 2
+	culture = qohorik
+	religion = black_goat  		
+	
+	add_trait="cruel"
+	add_trait="deceitful"
+	add_trait="lunatic"
+	
+	8263.1.1 = {
+		birth="8263.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8282.1.1={
+		employer = 80012560 #Vargo Hoat
+	}
+	8300.3.25 = {
+		death = { 
+			death_reason = death_duel 
+			killer = 206054 # Brienne
+		}
+	}
+}
+80012564 = {
+	name="Золло"
+	martial = 5
+	culture = dothraki
+	religion = dothraki_pagan 		
+	
+	add_trait="tough_soldier"
+	give_nickname = nick_the_fat
+	
+	8263.1.1 = {
+		birth="8263.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8279.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8282.1.1={
+		employer = 80012560 #Варго Hoat
+		add_trait = is_fat
+		effect = {
+			set_variable = { which = physique_variable value = 25 }		
+		}
+	}
+}
+80012565 = {
+	name="Тимеон" 
+	martial = 6
+	culture = salt_dornish
+	religion = the_seven		
+	
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="deceitful"
+	
+	8263.1.1 = {
+		birth="8263.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8279.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8282.1.1={
+		employer = 80012560 #Vargo Hoat
+	}
+	8300.3.25 = {
+		death = { 
+			death_reason = death_duel 
+			killer = 206054 # Brienne
+		}
+	}
+}
+80012566 = {
+	name="Пиг" 
+	martial = 4
+	culture = qohorik
+	religion = black_goat  		
+	
+	add_trait="cruel"
+	add_trait="deceitful"
+	
+	8263.1.1 = {
+		birth="8263.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8279.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8282.1.1={
+		employer = 80012560 #Vargo Hoat
+	}
+	8300.3.25 = {
+		death = { 
+			death_reason = death_duel 
+			killer = 206054 # Brienne
+		}
+	}
+}
+80012567 = {
+	name="Игго"
+	martial = 8
+	culture = dothraki
+	religion = dothraki_pagan 		
+	
+	add_trait="tough_soldier"
+	
+	8263.1.1 = {
+		birth="8263.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8279.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8282.1.1={
+		employer = 80012560 #Варго Hoat
+	}
+	8299.8.23 = {
+		death = {
+			death_reason = death_execution_direwolf # Mauled by Nymeria when searched for Arya
+		}
+	}
+}
+80012568 = {
+	name="Три Пальца"
+	martial = 3
+	culture = tyroshi
+	religion = trios 		
+	
+	8263.1.1 = {
+		birth="8263.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8279.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8282.1.1={
+		employer = 80012560 #Варго Hoat
+	}
+}
+80012570 = {
+	name="Тогг Йот"
+	dna="bmfkjqbbgag"
+	properties="ce0dbk0000"
+	martial = 1
+	culture = ibbenese
+	religion = gods_ibben 		
+	
+	8263.1.1 = {
+		birth="8263.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8279.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8282.1.1={
+		employer = 80012560 #Vargo Hoat
+	}
+}
+80012571 = {
+	name="Рорж"
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	add_trait=strong
+	add_trait=rude 
+	add_trait=cruel
+	add_trait=ruthless
+	add_trait=ugly
+	
+	8269.1.1 = {
+		birth="8269.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+			if = {
+				limit = { NOT = { year = 8299 } }
+				b_warriors_sons = { #Flea bottom
+					holder_scope = {
+						ROOT = { move_character = PREV }
+					}
+				}
+			}
+		}
+	}
+	8285.1.1 = {
+		add_trait = trained_warrior
+		add_trait = misguided_warrior
+	}
+	8289.1.1 = {
+		effect = {
+			add_friend = 80012571 #Biter
+		}
+	}
+	8290.1.1 = {
+		effect = {
+			if = { # Lost his nose
+				limit = { has_dlc = "Reapers" }
+				add_trait = disfigured
+			}
+			else = {
+				add_trait = "scarred"
+			}
+		}
+	}
+	8298.1.1 = {
+		effect = {
+			e_iron_throne = {
+				holder_scope = {
+					ROOT = { imprison = PREV }
+				}
+			}
+		}
+	}
+	8299.2.3 = {
+		effect = { prisoner = no }
+		employer = 207 #Amory Lorch
+	}
+	8299.6.1={
+		employer = 80012560 #Vargo Hoat
+	}
+	8300.1.8 = {
+		effect = { add_artifact = hound_helm }		
+	}
+	8300.5.3 = {
+		death = {
+			death_reason = death_duel
+			killer = 206054	#Brienne of Tarth
+		}
+	}
+}
+80012572 = {
+	name="Кусака"
+	properties="a0000a" #Borrowed from Varys
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	add_trait=strong
+	add_trait=lisp
+	add_trait=cruel
+	add_trait=imbecile
+	add_trait=ruthless
+	add_trait=ugly
+	
+	8277.1.1 = {
+		birth="8277.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+			if = {
+				limit = { NOT = { year = 8299 } }
+				b_warriors_sons = { #Flea bottom
+					holder_scope = {
+						ROOT = { move_character = PREV }
+					}
+				}
+			}
+		}
+	}
+	8289.1.1 = {
+		add_trait = is_fat
+		effect = {
+			add_friend = 80012571
+			set_variable = { which = physique_variable value = 20 }		
+		}		
+	}
+	8293.1.1 = {
+		add_trait = poor_warrior
+		add_trait = misguided_warrior
+	}
+	8298.1.1 = {
+		effect = {
+			e_iron_throne = {
+				holder_scope = {
+					ROOT = { imprison = PREV }
+				}
+			}
+		}
+	}
+	8299.2.3 = {
+		effect = { prisoner = no }
+		employer = 207 #Amory Lorch
+	}
+	8299.6.1={
+		employer = 80012560 #Vargo Hoat
+	}
+	8300.5.3 = {
+		death = {
+			death_reason = death_duel
+			killer = 5316	#Gendry
+		}
+	}
+}
+
+###Company of the Cat
+8876350 = {
+	name="Кровавая Борода" 
+	dna="ddkfdlghddg"
+	properties="ah0bbb0000"
+	martial = 8
+	culture = pentosi
+	religion = rhllor 		
+	
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"	
+	add_trait="deceitful"
+	add_trait="lustful"
+	add_trait="gluttonous"
+	add_trait="robust"
+	
+	8254.1.1 = {
+		birth="8254.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8270.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8274.1.1 = {
+		effect = {
+			add_rival = 1684230 #Принц-Оборванец
+		}
+	}
+}
+
+###Long Lances
+8876351 = {
+	name="Гило"
+	dynasty = 174355 
+	martial = 8
+	culture = myrman
+	religion = rhllor 		
+	
+	father=130174355
+	mother=230174355
+	
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="deceitful"
+	
+	8258.1.1 = {
+		birth="8258.1.1"
+	}
+	8274.1.1 = {
+		add_trait="trained_warrior"
+	}
+}
+
+##Second Sons
+
+1660000 = {
+	name="Меро" 
+	dynasty=174370
+	martial = 8
+	culture = braavosi
+	religion = moonsingers 		
+	
+	add_trait="cruel"
+	add_trait="tough_soldier"
+	add_trait="deceitful"
+	add_trait="wroth"
+	add_trait="ruthless"
+	add_trait="rude"
+	give_nickname = nick_the_titan
+	
+	8256.1.1 = {
+		birth="8256.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8272.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8299.12.1 = {
+		death = {
+			death_reason = death_rabble
+		}
+	}
+}
+1660002 = {
+	name="Каспорио" 
+	martial = 4
+	culture = braavosi
+	religion = moonsingers 		
+	
+	add_trait="tough_soldier"
+	give_nickname = nick_the_cunning
+	
+	8266.1.1 = {
+		birth="8266.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8282.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8282.1.1 = {
+		employer = 1660000 #Меро
+	}
+	8300.1.1 = {
+		employer = 602226 #Brown Ben Plumm
+	}
+}
+1660003 = {
+	name="Ухват" 
+
+	culture = myrman
+	religion = rhllor 		
+	
+	add_trait="tough_soldier"
+	add_trait="scarred" # Not life-threatening
+	
+	8262.1.1 = {
+		birth="8262.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8278.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8282.1.1 = {
+		employer = 1660000 #Меро
+	}
+	8300.1.1 = {
+		employer = 602226 #Brown Ben Plumm
+	}
+}
+1660004 = {
+	name="Улан" 
+
+	culture = myrman
+	religion = rhllor 		
+	
+	add_trait="tough_soldier"
+	
+	8262.1.1 = {
+		birth="8262.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8278.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8282.1.1 = {
+		employer = 1660000 #Меро
+	}
+	8300.1.1 = {
+		employer = 602226 #Brown Ben Plumm
+	}
+}
+1660005 = {
+	name="Боккоко" 
+	martial = 2
+	culture = summer_islander
+	religion = summer_rel 		
+	
+	add_trait="tough_soldier"
+	add_trait=homosexual
+	
+	8262.1.1 = {
+		birth="8262.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8278.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8282.1.1 = {
+		employer = 1660000 #Меро
+	}
+	8300.1.1 = {
+		employer = 602226 #Brown Ben Plumm
+	}
+}
+1660006 = {
+	name="Тиберо" 
+	dynasty=174360
+	dna="cblckdaggaq"
+	properties="cn0eik0000"
+	martial = 2
+	stewardship = 9
+	culture = pentosi
+	religion = rhllor 		
+	
+	add_trait="tough_soldier"
+	give_nickname = nick_inkpots
+	
+	8262.1.1 = {
+		birth="8262.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8282.1.1 = {
+		employer = 1660000 #Меро
+	}
+	8300.1.1 = {
+		employer = 602226 #Brown Ben Plumm
+	}
+}
+
+##Stormcrows
+
+1689230 = {
+	name="Прендаль" 
+	dynasty = 174361
+	martial = 8
+	culture = ghiscari
+	religion = harpy 		
+	
+	add_trait="tough_soldier"
+	
+	8260.1.1 = {
+		birth="8260.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8276.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8300.1.1={
+		death = {
+			death_reason = death_battle
+			killer=16892322 # Даарио
+		}
+	}
+}
+1689231 = {
+	name="Саллор" 
+	martial = 8
+	culture = qartheen
+	religion = qarth_warlocks 		
+	
+	add_trait="tough_soldier"
+	give_nickname = nick_the_bald
+	
+	8263.1.1 = {
+		birth="8263.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8279.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8282.1.1 = {
+		employer = 1689230
+	}
+	8300.1.1={
+		death = {
+			death_reason = death_battle
+			killer=16892322 # Даарио
+		}
+	}
+}
+16892322 = {
+	name="Даарио"
+	dynasty = 300521 
+	dna="bhagnhpnalj"
+	properties="cd0ddk"
+	martial = 8
+	culture = tyroshi
+	religion = trios 		
+	
+	add_trait="tough_soldier"
+	add_trait=ruthless
+	add_trait=wroth
+	add_trait=groomed
+	add_trait=ambitious
+	add_trait=brave
+	add_trait=fair
+	
+	8263.1.1 = {
+		birth="8263.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8279.1.1 = {
+		add_trait=skilled_warrior
+		effect = { add_artifact = daarios_ladies }
+	}		
+	8282.1.1 = {
+		employer = 1689230
+	}
+	8300.4.2 = {
+		effect = {
+			k_meereen = {
+				holder_scope = { add_lover = ROOT } #Дейнерис
+			}
+		}
+	}
+}
+
+##Windblown
+
+1684230 = {
+	name="Принц-Оборванец"
+	dynasty = 300508 
+	dna="chbfh0b0fe0" 
+	properties="0d00b0"
+	martial = 8
+	diplomacy = 6	
+	intrigue = 6	
+	stewardship = 6	
+	learning = 5
+	culture = pentosi
+	religion = rhllor 		
+	
+	add_trait="diligent"
+	add_trait="ambitious"
+	add_trait="quick"
+	add_trait="cynical"
+	add_trait="patient"
+	add_trait="authoritative"
+	add_trait="tough_soldier"
+	
+	8239.1.1 = {
+		birth="8239.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8255.1.1 = {
+		add_trait = trained_warrior
+	}
+	8262.1.1={
+		add_claim=d_prince_pentos
+	}
+}
+1684231 = {
+	name="Кагго" 
+	martial = 7
+	
+	religion="dothraki_pagan"	
+	culture="dothraki"	
+	
+	add_trait="proud"
+	add_trait="wroth"
+	add_trait=ruthless
+	add_trait="tall"
+	add_trait="tough_soldier"
+	
+	8266.1.1 = {
+		birth="8266.1.1"
+		effect = { 
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8282.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="scarred"
+		effect = {
+			add_artifact = valyrian_steel_arakh
+		}
+	}
+	8282.1.1={
+		employer = 1684230 #Принц-Оборванец
+	}
+}
+1684232 = {
+	name="Дензо" 
+	dynasty = 174356
+	stewardship = 6	
+	learning = 5
+	
+	religion="rhllor"	
+	culture = pentosi
+	
+	father=130174356
+	mother=430174356
+	
+	add_trait="gregarious"
+	add_trait="poet"
+	
+	8256.1.1 = {
+		birth="8256.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8272.1.1 = {
+		add_trait = trained_warrior
+	}
+	8282.1.1={
+		employer = 1684230 #Принц-Оборванец
+	}
+}
+1684233 = {
+	name="Меррис"
+	female=yes
+	dna="clcjktjefcl"
+	properties="cg0ded0000"
+
+	martial = 7	
+	diplomacy = 5	
+	intrigue = 5	
+	
+	religion="the_seven"
+	culture="stormlander"
+	
+	add_trait="ugly"
+	#add_trait="strong" #too much maybe?
+	add_trait="deceitful"
+	add_trait="brave"
+	add_trait=cruel
+	add_trait="tall"
+	add_trait="scarred"
+	
+	8265.1.1 = {
+		birth="8265.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8281.1.1 = { 
+		add_trait="tough_soldier"
+		add_trait="trained_warrior"
+	}
+	8282.1.1={
+		employer = 1684230 #Tattered Prince
+		add_trait="impaler" #serves as company's torturer
+	}
+}
+1684234 = {
+	name="Орсон" 
+	religion="the_seven"	
+	culture="valeman"	
+	
+	add_trait="tough_soldier"
+	add_trait="bastard"
+	give_nickname = nick_stone
+	
+	8264.1.1 = {
+		birth="8264.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8280.1.1 = {
+		add_trait = trained_warrior
+	}
+	8280.1.1 = {
+		add_trait="knight"
+	}
+	8282.1.1={
+		employer = 1684230 #Принц-Оборванец
+	}
+}
+1684235 = {
+	name="Люсифер" 
+	dynasty = 174357
+	religion="the_seven"	
+	culture="riverlander"	
+	
+	add_trait="tough_soldier"
+	
+	8264.1.1 = {
+		birth="8264.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8280.1.1 = {
+		add_trait = trained_warrior
+	}
+	8280.1.1 = {
+		add_trait="knight"
+	}
+	8282.1.1={
+		employer = 1684230 #Принц-Оборванец
+	}
+}
+1684236 = {
+	name="Books" 
+	religion="rhllor"	
+	culture="volantene"	
+	
+	add_trait="diligent"
+	add_trait="scholar"
+	
+	8264.1.1 = {
+		birth="8264.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8280.1.1 = {
+		add_trait = trained_warrior
+	}
+	8282.1.1={
+		employer = 1684230 #Принц-Оборванец
+	}
+}
+1684237 = {
+	name="Бакк" 
+	religion="rhllor"	
+	culture="myrman"	
+	
+	8263.1.1 = {
+		birth="8263.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8279.1.1 = {
+		add_trait = trained_warrior
+	}
+	8282.1.1={
+		employer = 1684230 #Принц-Оборванец
+	}
+}
+1684238 = {
+	name="Льюис" # Their best archer
+	dynasty=174358
+	dna="chaf00b0fe0" 
+	properties="0e0000"
+	
+	religion="the_seven"	
+	culture="westerman"	
+
+	add_trait="tough_soldier"
+	add_trait=homosexual
+	
+	8266.1.1 = {
+		birth="8266.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8282.1.1 = {
+		add_trait = skilled_warrior
+	}
+	8282.1.1={
+		employer = 1684230 #Принц-Оборванец
+	}
+}
+1684239 = {
+	name="Уилл" 
+	dynasty = 174369
+	religion="the_seven"	
+	culture="riverlander"	
+	
+	add_trait="tough_soldier"
+	add_trait=cynical
+	add_trait=lustful
+	
+	8266.1.1 = {
+		birth="8266.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8282.1.1 = {
+		add_trait = trained_warrior
+	}
+	8282.1.1={
+		employer = 1684230 #Принц-Оборванец
+	}
+}
+1684240 = {
+	name="Мирио" 
+	dynasty=174366
+	
+	religion="rhllor"	
+	culture="pentosi"	
+
+	add_trait="tough_soldier"
+
+	father=130174366
+	mother=430174366
+	
+	8262.1.1 = {
+		birth="8262.1.1"
+		effect = { set_immune_to_pruning = yes }	
+	}
+	8278.1.1 = {
+		add_trait = skilled_warrior
+	}
+	8282.1.1={
+		employer = 1684230 #Принц-Оборванец
+	}
+}
+1684241 = {
+	name="Билл" 
+	#dynasty=174365
+	martial = 2
+	culture = "summer_islander"
+	religion = "summer_rel" 		
+	
+	add_trait="tough_soldier"
+	
+	8234.1.1 = {
+		birth="8234.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8282.1.1={
+		employer = 1684230 #Принц-Оборванец
+	}
+}
+1684242 = {
+	name="Веббер" 
+	dynasty = 238
+	religion="the_seven"	
+	culture="reachman"	
+	
+	add_trait="tough_soldier"
+	
+	father=60100238
+	
+	add_trait=bastard
+	
+	8261.1.1 = {
+		birth="8261.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8277.1.1 = {
+		add_trait = trained_warrior
+	}
+	8282.1.1={
+		employer = 1684230 #Принц-Оборванец
+	}
+}
+1684243 = {
+	name="Хью" 
+	dynasty = 174359
+	religion="the_seven"	
+	culture="riverlander"
+
+	diplomacy = 6	
+	intrigue = 6	
+	stewardship = 3	
+	learning = 5	
+	
+	add_trait=thrifty_clerk
+	add_trait=greedy
+	add_trait="groomed"
+	
+	8258.1.1 = {
+		birth="8258.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8274.1.1 = {
+		add_trait = trained_warrior
+	}
+	8282.1.1={
+		employer = 1684230 #Tattered Prince
+	}
+	8294.1.1={
+		add_trait="scarred"
+	}
+}
+1684244 = {
+	name="Джек" 
+	dna="dmffglbhdgp"
+	properties="0h00c"
+	religion="the_seven"	
+	culture="riverlander"	
+	
+	give_nickname=nick_ginger
+	
+	8266.1.1 = {
+		birth="8266.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8282.1.1 = {
+		add_trait = trained_warrior
+		employer = 1684230 #Tattered Prince
+		add_trait=lisp #lost half of his tongue
+	}
+}
+1684245 = {
+	name="Герольд" 
+	religion="the_seven"	
+	culture="stormlander"	
+	
+	give_nickname=nick_black_walder
+	
+	8260.1.1 = {
+		birth="8260.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8276.1.1 = {
+		add_trait = trained_warrior
+	}
+	8282.1.1={
+		employer = 1684230 #Принц-Оборванец
+	}
+}
+1684246 = {
+	name="Герольд" 
+	religion="the_seven"	
+	culture="stormlander"	
+	
+	add_trait="scarred"
+	give_nickname=nick_redback
+	
+	8263.1.1 = {
+		birth="8263.1.1"
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8279.1.1 = {
+		add_trait = trained_warrior
+	}
+	8282.1.1={
+		employer = 1684230 #Принц-Оборванец
+	}
+}
+1684247 = {
+	name="Дик" 
+	dynasty = 1525
+	religion="the_seven"	
+	culture="crownlander"
+			
+	#add_trait="deceitful"
+	
+	8251.1.1 = {
+		birth="8251.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8267.1.1 = {
+		add_trait = trained_warrior
+	}
+	8282.1.1={
+		employer = 1684230 #Tattered Prince
+		add_trait="scarred"
+	}
+}
+###
+1684248 = {
+	name="Бешка" 
+	female = yes
+	
+	religion="harpy"	
+	culture="meereenese"
+			
+	add_trait = scarred
+	add_trait = rude
+	add_trait = brave
+	add_trait = wroth
+	add_trait = authoritative
+	
+	8280.1.1 = {
+		birth="8280.1.1"
+		add_trait = slave
+		effect = {	
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8290.1.1={
+		employer = 1684230 #Принц-Оборванец
+		add_trait = trained_warrior
+		remove_trait = slave
+		add_trait = former_slave
+	}
+	8296.1.1 = {
+		add_trait = tough_soldier
+	}
+	8297.1.1 = {
+		effect = { add_friend = 331443 } # Asher Forrester
+	}
+}
+
+###Lost legion
+
+1684250 = {
+	name="Тазал" 
+	
+	diplomacy = 6
+	martial = 4
+	stewardship = 5
+	intrigue = 2
+	learning = 2
+	
+	religion = valyrian_rel	
+	culture = volantene
+			
+	add_trait = tough_soldier
+	
+	disallow_random_traits = yes
+	
+	8265.1.1 = {
+		birth="8265.1.1"
+	}
+	8271.8.1 = {
+		add_trait = deceitful
+	}
+	8273.8.1 = {
+		add_trait = proud
+	}
+	8275.8.1 = {
+		add_trait = ruthless
+	}
+	8281.1.1 = {
+		add_trait = trained_warrior
+		effect = {
+			d_lost_legion = { holder_scope = { ROOT = { move_character = PREV } } }
+		}
+	}
+	8297.1.1 = {
+		effect = { add_rival = 331443 } # Asher Forrester
+	}
+	8300.1.1 = {
+		add_trait = one_handed
+		death = {
+			death_reason = death_murder_slayed
+			killer = 331443
+		}
+	}
+}
+
+### Placeholder Merc to stop Tully, Flint and Nine-Eyes dynasties from spawning
+
+1684254 = {
+	name="Родрик"
+	dynasty=800848 #Random
+	
+	religion=old_gods
+	culture=northman
+	
+	8120.1.1 = {
+		birth="8120.1.1"
+	}
+	8136.1.1 = {
+		add_trait = trained_warrior
+		add_trait = tough_soldier
+	}
+	8180.1.1 = {
+		death="8180.1.1"
+	}
+}
+1684255 = {
+	name="Годри"
+	dynasty=805005 #Random
+	
+	religion=the_seven
+	culture=stormlander
+	
+	8122.1.1 = {
+		birth="8122.1.1"
+	}
+	8138.1.1 = {
+		add_trait = trained_warrior
+		add_trait = tough_soldier
+	}
+	8181.1.1 = {
+		death="8181.1.1"
+	}
+}
+1684253 = {
+	name="Дензо"
+	dynasty=300262 #Random
+	
+	religion=trios
+	culture=tyroshi
+	
+	8240.1.1 = {
+		birth="8240.1.1"
+	}
+	8256.1.1 = {
+		add_trait = trained_warrior
+		add_trait = tough_soldier
+	}
+	8290.1.1 = {
+		death="8290.1.1"
+	}
+}

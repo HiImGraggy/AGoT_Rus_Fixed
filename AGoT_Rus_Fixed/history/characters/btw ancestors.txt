@@ -1,0 +1,6091 @@
+#### Beyond the Wall Ancestors ####
+20359 = {
+	name="Баэль" #  the Bard, King beyond the Wall. Had a child with Bran the daughterless' daughter.
+	dynasty = 559131
+	
+	martial=6
+	diplomacy=15
+	intrigue=14
+	stewardship=8
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="ambitious"
+	add_trait="proud"
+	add_trait="patient"
+	add_trait="brave"
+	add_trait="poet"
+	add_trait="elusive_shadow"
+	add_trait="lustful"
+	
+	give_nickname = the_bard
+	
+	7212.1.1 = {birth="7212.1.1"}
+	7228.1.1 = {
+		add_trait = trained_warrior
+	}
+	7274.1.1={
+		#Killed by his own son!
+		death = {
+			death_reason = death_battle #killed in Battle against Jon Stark @ Frozen Ford, changed from execution
+			killer = 1120459
+		}
+	}
+}
+# #random family
+# 100559131 = {
+	# name="Жойен" 
+	# dynasty = 559131
+	
+	# religion="beyond_wall_old_gods"
+	# culture="wildling"
+	
+	# father=20359
+	
+	# 8045.1.1 = {birth="8045.1.1"}
+	# 8061.1.1 = {
+		# add_trait = trained_warrior
+	# }
+	# 8068.1.1={
+		# death = {
+			# death_reason = death_battle
+		# }
+	# }
+# }
+# 101559131 = {
+	# name="Миккен" 
+	# dynasty = 559131
+	
+	# religion="beyond_wall_old_gods"
+	# culture="wildling"
+	
+	# father=20359
+	
+	# 8047.1.1 = {birth="8047.1.1"}
+	# 8063.1.1 = {
+		# add_trait = trained_warrior
+	# }
+	# 8068.1.1={
+		# death = {
+			# death_reason = death_battle
+		# }
+	# }
+# }
+# 102559131 = {
+	# name="Дайвен" 
+	# dynasty = 559131
+	
+	# religion="beyond_wall_old_gods"
+	# culture="wildling"
+	
+	# father=20359
+	
+	# 8051.1.1 = {birth="8051.1.1"}
+	# 8067.1.1 = {
+		# add_trait = trained_warrior
+	# }
+	# 8068.1.1={
+		# death = {
+			# death_reason = death_battle
+		# }
+	# }
+# }
+# 103559131 = {
+	# name="Рован" 
+	# dynasty = 559131
+	# female = yes
+	
+	# religion="beyond_wall_old_gods"
+	# culture="wildling"
+	
+	# father=20359
+	
+	# 8052.1.1 = {birth="8052.1.1"}
+	# 8097.1.1={death="8097.1.1"}
+# }
+# 104559131 = {
+	# name="Тормунд" 
+	# dynasty = 559131
+	
+	# religion="beyond_wall_old_gods"
+	# culture="wildling"
+	
+	# father=20359
+	
+	# 8054.1.1 = {birth="8054.1.1"}
+	# 8070.1.1 = {
+		# add_trait = trained_warrior
+	# }
+	# 8086.1.1={death="8086.1.1"}
+# }
+
+###########################
+### Redbeard/Kingsblood ###
+###########################
+345174353 = {
+	name="Меджер"	# a lord
+	dynasty=174353
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	7832.1.1 = {birth="7832.1.1"}
+	7880.1.1 = {death="7880.1.1"}
+}
+344174353 = {
+	name="Бернарр"	# a lord
+	dynasty=174353
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=345174353
+	
+	7855.1.1 = {birth="7855.1.1"}
+	7904.1.1 = {death="7904.1.1"}
+}
+343174353 = {
+	name="Уолтон"	# a lord
+	dynasty=174353
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=344174353
+	
+	7878.1.1 = {birth="7878.1.1"}
+	7925.1.1 = {death="7925.1.1"}
+}
+342174353 = {
+	name="Торген"	# a lord
+	dynasty=174353
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=343174353
+	
+	7901.1.1 = {birth="7901.1.1"}
+	7946.1.1 = {death="7946.1.1"}
+}
+341174353 = {
+	name="Ленал"	# a lord
+	dynasty=174353
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=342174353
+	
+	7924.1.1 = {birth="7924.1.1"}
+	7967.1.1 = {death="7967.1.1"}
+}
+340174353 = {
+	name="Оуэн"	# a lord
+	dynasty=174353
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=341174353
+	
+	7941.1.1 = {birth="7941.1.1"}
+	7988.1.1 = {death="7988.1.1"}
+}
+10174353 = {
+	name="Сигорн"	# a lord
+	dynasty=174353
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=340174353
+
+	7962.1.1 = {birth="7962.1.1"}
+	7978.1.1 = {add_trait=trained_warrior}
+	8016.1.1 = {death="8016.1.1"}
+}
+11174353 = {
+	name="Боррок"	# a lord
+	dynasty=174353
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=10174353
+
+	7985.1.1 = {birth="7985.1.1"}
+	8001.1.1 = {add_trait=trained_warrior}
+	8037.1.1 = {death="8037.1.1"}
+}
+13174353 = {
+	name="Вейон"	# a lord
+	dynasty=174353
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=11174353
+
+	8016.1.1 = {birth="8016.1.1"}
+	8032.1.1 = {add_trait=trained_warrior}
+	8084.1.1 = {death="8084.1.1"}
+}
+14174353 = {
+	name="Ленал"	# a lord
+	dynasty=174353
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=13174353
+
+	8050.1.1 = {birth="8050.1.1"}
+	8066.1.1 = {add_trait=poor_warrior}
+	8113.1.1 = {death="8113.1.1"}
+}
+17174353 = {
+	name="Харль"	# a lord
+	dynasty=174353
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=14174353
+
+	8073.1.1 = {birth="8073.1.1"}
+	8089.1.1 = {add_trait=trained_warrior}
+	8115.1.1 = {death="8115.1.1"}
+}
+18174353 = {
+	name="Хоуд"	# a lord
+	dynasty=174353
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=17174353
+
+	8095.1.1 = {birth="8095.1.1"}
+	8111.1.1 = {add_trait=trained_warrior}
+	8153.1.1 = {death="8153.1.1"}
+}
+21174353 = {
+	name="Сорен"	# a lord
+	dynasty=174353
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=18174353
+
+	8118.1.1 = {birth="8118.1.1"}
+	8134.1.1 = {add_trait=skilled_warrior}
+	8175.1.1 = {death="8175.1.1"}
+}
+1021359 = {
+	name="Сигорн" # Father of Реймунд Redbeard
+	dynasty=174353 # Forester
+	
+	martial=4
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father = 21174353
+	
+	add_trait="brave"
+	add_trait="just"
+    add_trait= "honest"
+	add_trait="skilled_tactician"
+		
+	8136.1.1 = {birth="8136.1.1"}
+	8197.1.1 = {death="8197.1.1"}
+}
+21359 = {
+	name="Реймунд" # Реймунд Redbeard
+	dynasty=174353 # Forester
+	dna="cakefzeedaz"
+	properties="ce0dbk0000"
+	
+	martial=7
+	diplomacy=6
+	intrigue=5
+	stewardship=6
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="brave"
+	add_trait="wroth"
+	add_trait="just"
+    add_trait= "honest"
+	add_trait="skilled_tactician"
+
+	father=1021359
+	
+	give_nickname="nick_redbeard"
+		
+	8188.1.1 = {birth="8188.1.1"}
+	8226.1.1 = {
+		effect = {
+			capital_scope = {
+				ROOT = {
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						troops =
+						{
+							archers = { 2000 2000 }
+							light_cavalry = { 1334 1334 }
+							light_infantry = { 2334 2334 }
+							heavy_infantry = { 1000 1000 }
+						}
+						attrition = 0.25
+						earmark = wildling_horde
+					}
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						troops =
+						{
+							archers = { 2000 2000 }
+							light_cavalry = { 1333 1333 }
+							light_infantry = { 2333 2333 }
+							heavy_infantry = { 1000 1000 }
+						}
+						attrition = 0.25
+						earmark = wildling_horde
+					}
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						troops =
+						{
+							archers = { 2000 2000 }
+							light_cavalry = { 1333 1333 }
+							light_infantry = { 2333 2333 }
+							heavy_infantry = { 1000 1000 }
+						}
+						attrition = 0.25
+						earmark = wildling_horde
+					}
+				}	
+			}
+		}
+	}
+	8226.9.9 ={
+		# Killed by Артос Stark
+		death = {
+			death_reason = death_battle
+			killer = 21459
+		}
+	}
+}
+221359 = {
+	name="Горн" # Son of Реймунд Redbeard
+	dynasty=174353 # Forester
+	
+	martial=4
+	intrigue=3
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	
+	add_trait="wroth"
+	add_trait="skilled_tactician"
+	
+	father=21359
+		
+	8204.1.1 = {birth="8204.1.1"}
+	8226.9.9 ={
+		# Killed by Артос Stark
+		death = {
+			death_reason = death_battle
+			killer = 21459
+		}
+	}
+}
+321359 = {
+	name="Оррелл" # Son of Реймунд Redbeard
+	dynasty=174353 # Forester
+	
+	martial=4
+	intrigue=3
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	
+	add_trait="wroth"
+	add_trait="skilled_tactician"
+	
+	father=21359
+		
+	8206.1.1 = {birth="8206.1.1"}
+	8226.9.9 ={
+		# Killed by Артос Stark
+		death = {
+			death_reason = death_battle
+			killer = 21459
+		}
+	}
+}
+121359 = {
+	name="Рэймонд" # Red Raven
+	dynasty=174353 # Forester
+	dna="cakefzeedaz"
+	properties="ce0d0k0000"
+	
+	martial=2
+	diplomacy=2
+	intrigue=1
+	stewardship=2
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	
+	add_trait="wroth"
+	add_trait="craven"
+	add_trait="skilled_tactician"
+	
+	father=1021359
+		
+	8192.1.1 = {birth="8192.1.1"}
+	8227.6.1 = {
+		give_nickname="nick_redraven"
+		dynasty=174348 # Kingsblood
+	}
+	8230.1.1 = {death="8230.1.1"}
+}
+421359 = {
+	name="Боррок" # Son of Red Raven
+	dynasty=174348 # Kingsblood
+	
+	martial=4
+	intrigue=3
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	
+	add_trait="wroth"
+	add_trait="skilled_tactician"
+	
+	father=121359
+		
+	8215.1.1 = {birth="8215.1.1"}
+	8252.1.1 = {death="8252.1.1"}
+}
+521359 = {
+	name="Халгор" # Son of Боррок, father of Геррик Kingsblood.
+	dynasty=174348 # Kingsblood
+	
+	martial=4
+	intrigue=3
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	
+	add_trait="wroth"
+	add_trait="skilled_tactician"
+	
+	father=421359
+		
+	8231.1.1 = {birth="8231.1.1"}
+	8278.1.1 = {death="8278.1.1"}
+}
+
+#########################
+### Magnar's of Thenn ###
+#########################
+345174344 = {
+	name="Горн"	# a lord
+	dynasty=174344
+
+	religion="thenn_rel"
+	culture="thenn"
+	
+	7839.1.1 = {birth="7839.1.1"}
+	7892.1.1 = {death="7892.1.1"}
+}
+344174344 = {
+	name="Торегг"	# a lord
+	dynasty=174344
+
+	religion="thenn_rel"
+	culture="thenn"
+
+	father=345174344
+	
+	7865.1.1 = {birth="7865.1.1"}
+	7916.1.1 = {death="7916.1.1"}
+}
+343174344 = {
+	name="Сигорн"	# a lord
+	dynasty=174344
+
+	religion="thenn_rel"
+	culture="thenn"
+
+	father=344174344
+	
+	7881.1.1 = {birth="7881.1.1"}
+	7927.1.1 = {death="7927.1.1"}
+}
+342174344 = {
+	name="Криган"	# a lord
+	dynasty=174344
+
+	religion="thenn_rel"
+	culture="thenn"
+
+	father=343174344
+	
+	7912.1.1 = {birth="7912.1.1"}
+	7955.1.1 = {death="7955.1.1"}
+}
+341174344 = {
+	name="Гендел"	# a lord
+	dynasty=174344
+
+	religion="thenn_rel"
+	culture="thenn"
+
+	father=342174344
+	
+	7932.1.1 = {birth="7932.1.1"}
+	7979.1.1 = {death="7979.1.1"}
+}
+340174344 = {
+	name="Гавин"	# a lord
+	dynasty=174344
+
+	religion="thenn_rel"
+	culture="thenn"
+
+	father=341174344
+	
+	7955.1.1 = {birth="7955.1.1"}
+	7999.1.1 = {death="7999.1.1"}
+}
+100344 = {
+	name="Сигерт"
+	dynasty=174344
+	
+	religion="thenn_rel"
+	culture="thenn"
+	
+	father=340174344
+	
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="trained_warrior"
+	
+	7978.1.1 = {birth="7978.1.1"}
+	8009.1.1 = {death="8009.1.1"}
+}
+102344 = {
+	name="Халгор"
+	dynasty=174344
+	
+	religion="thenn_rel"
+	culture="thenn"
+	
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="trained_warrior"
+	
+	father=100344
+	
+	7996.1.1 = {birth="7996.1.1"}
+	8037.1.1 = {death="8037.1.1"}
+}
+103344 = {
+	name="Гендел"
+	dynasty=174344
+	
+	religion="thenn_rel"
+	culture="thenn"
+	
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="trained_warrior"
+	
+	father=102344
+	
+	8019.1.1 = {birth="8019.1.1"}
+	8052.1.1 = {death="8052.1.1"}
+}
+104344 = {
+	name="Тормунд"
+	dynasty=174344
+	
+	religion="thenn_rel"
+	culture="thenn"
+	
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="trained_warrior"
+	
+	father=103344
+	
+	8033.1.1 = {birth="8033.1.1"}
+	8086.1.1 = {death="8086.1.1"}
+}
+105344 = {
+	name="Стигетт"
+	dynasty=174344
+	
+	religion="thenn_rel"
+	culture="thenn"
+	
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="trained_warrior"
+	
+	father=104344
+	
+	8054.1.1 = {birth="8054.1.1"}
+	8107.1.1 = {death="8107.1.1"}
+}
+106344 = {
+	name="Стив"
+	dynasty=174344
+	
+	religion="thenn_rel"
+	culture="thenn"
+	
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="trained_warrior"
+	
+	father=105344
+	
+	8092.1.1 = {birth="8092.1.1"}
+	8141.1.1 = {death="8141.1.1"}
+}
+107344 = {
+	name="Халис"
+	dynasty=174344
+	
+	religion="thenn_rel"
+	culture="thenn"
+	
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="trained_warrior"
+	
+	father=106344
+	
+	8116.1.1 = {birth="8116.1.1"}
+	8162.1.1 = {death="8162.1.1"}
+}
+108344 = {
+	name="Харлон"
+	dynasty=174344
+	
+	religion="thenn_rel"
+	culture="thenn"
+	
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="trained_warrior"
+	
+	father=107344
+	
+	8142.1.1 = {birth="8142.1.1"}
+	8168.1.1 = {death="8168.1.1"}
+}
+109344 = {
+	name="Уэйн"
+	dynasty=174344
+	
+	religion="thenn_rel"
+	culture="thenn"
+	
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="trained_warrior"
+	
+	father=108344
+	
+	8159.1.1 = {birth="8159.1.1"}
+	8208.1.1 = {death="8208.1.1"}
+}
+110344 = {
+	name="Дрин"
+	dynasty=174344
+	
+	religion="thenn_rel"
+	culture="thenn"
+	
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="trained_warrior"
+	
+	father=109344
+	
+	8187.1.1 = {birth="8187.1.1"}
+	8228.1.1 = {death="8228.1.1"}
+}
+111344 = {
+	name="Эррок"
+	dynasty=174344
+	
+	religion="thenn_rel"
+	culture="thenn"
+	
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="trained_warrior"
+	
+	father=110344
+	
+	8210.1.1 = {birth="8210.1.1"}
+	8255.1.1 = {death="8255.1.1"}
+}
+112344 = {
+	name="Хеллек"
+	dynasty=174344
+	
+	religion="thenn_rel"
+	culture="thenn"
+	
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="trained_warrior"
+	
+	father=111344
+	
+	8235.1.1 = {birth="8235.1.1"}
+	8276.1.1 = {death="8276.1.1"}
+}
+
+#####################################
+### Ancient Kings Beyond the Wall ###
+#####################################
+900347 = {
+	name="Ярл"	#non-canon, a father to make Горн and Гендел brothers
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="trained_warrior"
+	
+	4952.1.1 = {birth="4952.1.1"}
+	4993.1.1 = {death="4993.1.1"}
+}
+
+901347 = {
+	name="Горн"
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=900347	
+
+	add_trait="ambitious"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="skilled_warrior"
+	
+	4978.1.1 = {birth="4978.1.1"}
+	5024.6.1 ={ 
+		#Killed in battle against the Starks
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+902347 = {
+	name="Гендел"
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=900347	
+	
+	add_trait="ambitious"
+	add_trait="stubborn"
+	add_trait="skilled_tactician"
+	add_trait="trained_warrior"
+	
+	4980.1.1 = {birth="4980.1.1"}
+	5025.1.1 = {
+		#Either lost forever or killed in battle against the Starks
+		death = {
+			death_reason = death_missing 
+		}
+	}
+}
+
+903347 = {
+	name="Рогатый Лорд"		#Рогатый Лорд
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	#give_nickname="nick_the_horned_king"
+
+	add_trait="ambitious"
+	add_trait="hunter"
+	add_trait="tough_soldier"
+	add_trait="trained_warrior"
+	add_trait="mystic"
+	
+	3950.1.1 = {birth="3950.1.1"}
+	4025.1.1 = {death="4025.1.1"}
+}
+
+904347 = {
+	name="Джорамун"
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="mystic"
+	add_trait="honorable"
+	add_trait="brilliant_strategist"
+	add_trait="skilled_warrior"
+	
+	950.1.1 = {birth="950.1.1"}
+	1025.1.1 = {death="1025.1.1"}
+}
+
+########################################
+### Placeholder historical Wildlings ###
+########################################
+### Thankskull of Northern Frostfangs
+345559112 = {
+	name="Stiv"	# a lord
+	dynasty=559112
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	7822.1.1 = {birth="7822.1.1"}
+	7879.1.1 = {death="7879.1.1"}
+}
+344559112 = {
+	name="Халгор"	# a lord
+	dynasty=559112
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=345559112
+	
+	7846.1.1 = {birth="7846.1.1"}
+	7902.1.1 = {death="7902.1.1"}
+}
+343559112 = {
+	name="Йорен"	# a lord
+	dynasty=559112
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=344559112
+	
+	7870.1.1 = {birth="7870.1.1"}
+	7919.1.1 = {death="7919.1.1"}
+}
+342559112 = {
+	name="Игон"	# a lord
+	dynasty=559112
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=343559112
+	
+	7893.1.1 = {birth="7893.1.1"}
+	7945.1.1 = {death="7945.1.1"}
+}
+341559112 = {
+	name="Кейн"	# a lord
+	dynasty=559112
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=342559112
+	
+	7914.1.1 = {birth="7914.1.1"}
+	7962.1.1 = {death="7962.1.1"}
+}
+340559112 = {
+	name="Уоллен"	# a lord
+	dynasty=559112
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=341559112
+	
+	7931.1.1 = {birth="7931.1.1"}
+	7981.1.1 = {death="7981.1.1"}
+}
+101559112 = {
+	name="Ленн"	# a lord
+	dynasty=559112
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=340559112
+
+	7955.1.1 = {birth="7955.1.1"}
+	7971.1.1 = {add_trait=trained_warrior}
+	8008.1.1 = {death="8008.1.1"}
+}
+102559112 = {
+	name="Орелл"	# a lord
+	dynasty=559112
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=101559112
+
+	7984.1.1 = {birth="7984.1.1"}
+	8000.1.1 = {add_trait=skilled_warrior}
+	8041.1.1 = {death="8041.1.1"}
+}
+103559112 = {
+	name="Торвинд"	# a lord
+	dynasty=559112
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=102559112
+
+	8009.1.1 = {birth="8009.1.1"}
+	8025.1.1 = {add_trait=trained_warrior}
+	8073.1.1 = {death="8073.1.1"}
+}
+106559112 = {
+	name="Арнольф"	# a lord
+	dynasty=559112
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=103559112
+
+	8045.1.1 = {birth="8045.1.1"}
+	8061.1.1 = {add_trait=trained_warrior}
+	8091.1.1 = {death="8091.1.1"}
+}
+107559112 = {
+	name="Берон"	# a lord
+	dynasty=559112
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=106559112
+
+	8074.1.1 = {birth="8074.1.1"}
+	8090.1.1 = {add_trait=master_warrior}
+	8144.1.1 = {death="8144.1.1"}
+}
+109559112 = {
+	name="Хеллек"	# a lord
+	dynasty=559112
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=107559112
+
+	8096.1.1 = {birth="8096.1.1"}
+	8112.1.1 = {add_trait=trained_warrior}
+	8176.1.1 = {death="8176.1.1"}
+}
+112559112 = {
+	name="Хенк"	# not a lord
+	dynasty=559112
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=109559112
+
+	8124.1.1 = {birth="8124.1.1"}
+	8140.1.1 = {add_trait=trained_warrior}
+	8172.1.1 = {death="8172.1.1"}
+}
+114559112 = {
+	name="Ленн"	# a lord
+	dynasty=559112
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=112559112
+
+	8147.1.1 = {birth="8147.1.1"}
+	8163.1.1 = {add_trait=skilled_warrior}
+	8199.1.1 = {death="8199.1.1"}
+}
+117559112 = {
+	name="Сорен"	# a lord
+	dynasty=559112
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=114559112
+
+	8168.1.1 = {birth="8168.1.1"}
+	8184.1.1 = {add_trait=poor_warrior}
+	8211.1.1 = {death="8211.1.1"}
+}
+118559112 = {
+	name="Дрин"	# a lord
+	dynasty=559112
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=117559112
+
+	8189.1.1 = {birth="8189.1.1"}
+	8205.1.1 = {add_trait=trained_warrior}
+	8247.1.1 = {death="8247.1.1"}
+}
+119559112 = {
+	name="Ондри"	# a lord
+	dynasty=559112
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=118559112
+
+	8210.1.1 = {birth="8210.1.1"}
+	8226.1.1 = {add_trait=poor_warrior}
+	8262.1.1 = {death="8262.1.1"}
+}
+121559112 = {
+	name="Боррок"	# a lord
+	dynasty=559112
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=119559112
+
+	8233.1.1 = {birth="8233.1.1"}
+	8249.1.1 = {add_trait=trained_warrior}
+	8278.1.1 = {death="8278.1.1"}
+}
+122559112 = {
+	name="Артор"	# not a lord
+	dynasty=559112
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=119559112
+
+	8236.1.1 = {birth="8236.1.1"}
+	8252.1.1 = {add_trait=trained_warrior}
+	8272.1.1 = {death = {death_reason = death_battle}}
+}
+123559112 = {
+	name="Варамир"	# not a lord
+	dynasty=559112
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=121559112
+
+	8252.1.1 = {birth="8252.1.1"}
+	8268.1.1 = {add_trait=trained_warrior}
+}
+124559112 = {
+	name="Дан"	# not a lord
+	dynasty=559112
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=121559112
+
+	8254.1.1 = {birth="8254.1.1"}
+	8270.1.1 = {add_trait=trained_warrior}
+}
+
+### Crowhunters of Skirling Pass
+345559122 = {
+	name="Морс"	# a lord
+	dynasty=559122
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	7822.1.1 = {birth="7822.1.1"}
+	7886.1.1 = {death="7886.1.1"}
+}
+344559122 = {
+	name="Кайлиг"	# a lord
+	dynasty=559122
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=345559122
+	
+	7845.1.1 = {birth="7845.1.1"}
+	7896.1.1 = {death="7896.1.1"}
+}
+343559122 = {
+	name="Рик"	# a lord
+	dynasty=559122
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=344559122
+	
+	7864.1.1 = {birth="7864.1.1"}
+	7915.1.1 = {death="7915.1.1"}
+}
+342559122 = {
+	name="Артос"	# a lord
+	dynasty=559122
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=343559122
+	
+	7888.1.1 = {birth="7888.1.1"}
+	7935.1.1 = {death="7935.1.1"}
+}
+341559122 = {
+	name="Альфин"	# a lord
+	dynasty=559122
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=342559122
+	
+	7914.1.1 = {birth="7914.1.1"}
+	7966.1.1 = {death="7966.1.1"}
+}
+340559122 = {
+	name="Геррик"	# a lord
+	dynasty=559122
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=341559122
+	
+	7940.1.1 = {birth="7940.1.1"}
+	7982.1.1 = {death="7982.1.1"}
+}
+101559122 = {
+	name="Гарет"	# a lord
+	dynasty=559122
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=340559122
+
+	7962.1.1 = {birth="7962.1.1"}
+	7978.1.1 = {add_trait=skilled_warrior}
+	8013.1.1 = {death="8013.1.1"}
+}
+103559122 = {
+	name="Дайвен"	# a lord
+	dynasty=559122
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=101559122
+
+	7992.1.1 = {birth="7992.1.1"}
+	8008.1.1 = {add_trait=poor_warrior}
+	8051.1.1 = {death="8051.1.1"}
+}
+105559122 = {
+	name="Дормунд"	# a lord
+	dynasty=559122
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=103559122
+
+	8017.1.1 = {birth="8017.1.1"}
+	8033.1.1 = {add_trait=trained_warrior}
+	8065.1.1 = {death="8065.1.1"}
+}
+107559122 = {
+	name="Ленн"	# a lord
+	dynasty=559122
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=105559122
+
+	8048.1.1 = {birth="8048.1.1"}
+	8064.1.1 = {add_trait=trained_warrior}
+	8093.1.1 = {death="8093.1.1"}
+}
+109559122 = {
+	name="Рик"	# a lord
+	dynasty=559122
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=107559122
+
+	8066.1.1 = {birth="8066.1.1"}
+	8082.1.1 = {add_trait=skilled_warrior}
+	8135.1.1 = {death = {death_reason = death_accident}}
+}
+111559122 = {
+	name="Ондри"	# not a lord
+	dynasty=559122
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=109559122
+
+	8089.1.1 = {birth="8089.1.1"}
+	8105.1.1 = {add_trait=poor_warrior}
+	8130.1.1 = {death="8130.1.1"}
+}
+112559122 = {
+	name="Миккен"	# a lord
+	dynasty=559122
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=111559122
+
+	8123.1.1 = {birth="8123.1.1"}
+	8139.1.1 = {add_trait=skilled_warrior}
+	8191.1.1 = {death="8191.1.1"}
+}
+113559122 = {
+	name="Джорамун"	# not a lord
+	dynasty=559122
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=112559122
+
+	8155.1.1 = {birth="8155.1.1"}
+	8171.1.1 = {add_trait=trained_warrior}
+	8184.1.1 = {death="8184.1.1"}
+}
+114559122 = {
+	name="Торвинд"	# a lord
+	dynasty=559122
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=113559122
+
+	8180.1.1 = {birth="8180.1.1"}
+	8196.1.1 = {add_trait=skilled_warrior}
+	8230.1.1 = {death="8230.1.1"}
+}
+116559122 = {
+	name="Геррик"	# a lord
+	dynasty=559122
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=114559122
+
+	8203.1.1 = {birth="8203.1.1"}
+	8219.1.1 = {add_trait=trained_warrior}
+	8253.1.1 = {death="8253.1.1"}
+}
+117559122 = {
+	name="Оуэн"	# not a lord
+	dynasty=559122
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=114559122
+
+	8206.1.1 = {birth="8206.1.1"}
+	8222.1.1 = {add_trait=trained_warrior}
+	8263.1.1 = {death = {death_reason = death_accident}}
+}
+118559122 = {
+	name="Миккен"	# not a lord
+	dynasty=559122
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=116559122
+
+	8225.1.1 = {birth="8225.1.1"}
+	8241.1.1 = {add_trait=skilled_warrior}
+	8251.1.1 = {death="8251.1.1"}
+}
+119559122 = {
+	name="Артор"	# a lord
+	dynasty=559122
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=116559122
+
+	8227.1.1 = {birth="8227.1.1"}
+	8243.1.1 = {add_trait=trained_warrior}
+	8280.1.1 = {death="8280.1.1"}
+}
+120559122 = {
+	name="Манс"	# not a lord
+	dynasty=559122
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=119559122
+
+	8259.1.1 = {birth="8259.1.1"}
+	8275.1.1 = {add_trait=poor_warrior}
+}
+121559122 = {
+	name="Халлис"	# not a lord
+	dynasty=559122
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=119559122
+
+	8262.1.1 = {birth="8262.1.1"}
+	8278.1.1 = {add_trait=skilled_warrior}
+}
+
+### The Gorge
+345559121 = {
+	name="Досс"	# a lord
+	dynasty=559121
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	7832.1.1 = {birth="7832.1.1"}
+	7884.1.1 = {death="7884.1.1"}
+}
+344559121 = {
+	name="Дрин"	# a lord
+	dynasty=559121
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=345559121
+	
+	7851.1.1 = {birth="7851.1.1"}
+	7908.1.1 = {death="7908.1.1"}
+}
+343559121 = {
+	name="Брогг"	# a lord
+	dynasty=559121
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=344559121
+	
+	7869.1.1 = {birth="7869.1.1"}
+	7913.1.1 = {death="7913.1.1"}
+}
+342559121 = {
+	name="Боррок"	# a lord
+	dynasty=559121
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=343559121
+	
+	7895.1.1 = {birth="7895.1.1"}
+	7944.1.1 = {death="7944.1.1"}
+}
+341559121 = {
+	name="Дормунд"	# a lord
+	dynasty=559121
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=342559121
+	
+	7914.1.1 = {birth="7914.1.1"}
+	7961.1.1 = {death="7961.1.1"}
+}
+340559121 = {
+	name="Стир"	# a lord
+	dynasty=559121
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=341559121
+	
+	7939.1.1 = {birth="7939.1.1"}
+	7986.1.1 = {death="7986.1.1"}
+}
+10559121 = {
+	name="Йорен"	# a lord
+	dynasty=559121
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=340559121
+
+	7966.1.1 = {birth="7966.1.1"}
+	7982.1.1 = {add_trait=trained_warrior}
+	8024.1.1 = {death="8024.1.1"}
+}
+12559121 = {
+	name="Уаллен"	# a lord
+	dynasty=559121
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=10559121
+
+	8000.1.1 = {birth="8000.1.1"}
+	8016.1.1 = {add_trait=trained_warrior}
+	8052.1.1 = {death="8052.1.1"}
+}
+13559121 = {
+	name="Дормунд"	# a lord
+	dynasty=559121
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=12559121
+
+	8035.1.1 = {birth="8035.1.1"}
+	8051.1.1 = {add_trait=trained_warrior}
+	8096.1.1 = {death="8096.1.1"}
+}
+14559121 = {
+	name="Криган"	# a lord
+	dynasty=559121
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=13559121
+
+	8069.1.1 = {birth="8069.1.1"}
+	8085.1.1 = {add_trait=trained_warrior}
+	8137.1.1 = {death="8137.1.1"}
+}
+15559121 = {
+	name="Хенк"	# a lord
+	dynasty=559121
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=14559121
+
+	8095.1.1 = {birth="8095.1.1"}
+	8111.1.1 = {add_trait=skilled_warrior}
+	8148.1.1 = {death="8148.1.1"}
+}
+17559121 = {
+	name="Вереск"	# a lord
+	dynasty=559121
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=15559121
+
+	8118.1.1 = {birth="8118.1.1"}
+	8134.1.1 = {add_trait=poor_warrior}
+	8184.1.1 = {death="8184.1.1"}
+}
+18559121 = {
+	name="Джорамун"	# a lord
+	dynasty=559121
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=17559121
+
+	8146.1.1 = {birth="8146.1.1"}
+	8162.1.1 = {add_trait=skilled_warrior}
+	8206.1.1 = {death="8206.1.1"}
+}
+19559121 = {
+	name="Хеллек"	# a lord
+	dynasty=559121
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=17559121
+
+	8147.1.1 = {birth="8147.1.1"}
+	8163.1.1 = {add_trait=skilled_warrior}
+	8210.1.1 = {death="8210.1.1"}
+}
+22559121 = {
+	name="Гендел"	# a lord
+	dynasty=559121
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=19559121
+
+	8171.1.1 = {birth="8171.1.1"}
+	8187.1.1 = {add_trait=trained_warrior}
+	8235.1.1 = {death="8235.1.1"}
+}
+23559121 = {
+	name="Ондри"	# a lord
+	dynasty=559121
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=22559121
+
+	8198.1.1 = {birth="8198.1.1"}
+	8214.1.1 = {add_trait=poor_warrior}
+	8239.1.1 = {death="8239.1.1"}
+}
+25559121 = {
+	name="Дан"	# a lord
+	dynasty=559121
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=23559121
+
+	8219.1.1 = {birth="8219.1.1"}
+	8235.1.1 = {add_trait=poor_warrior}
+	8270.1.1 = {death="8270.1.1"}
+}
+26559121 = {
+	name="Ленн"	# a lord
+	dynasty=559121
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=25559121
+
+	8237.1.1 = {birth="8237.1.1"}
+	8253.1.1 = {add_trait=trained_warrior}
+	8294.1.1 = {death="8294.1.1"}
+}
+28559121 = {
+	name="Уолтон"	# a lord
+	dynasty=559121
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=26559121
+
+	8259.1.1 = {birth="8259.1.1"}
+	8275.1.1 = {add_trait=trained_warrior}
+}
+
+### Fist of the First Men
+354500017 = {
+	name="Сигорн"	# a lord
+	dynasty=4500017
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	7829.1.1 = {birth="7829.1.1"}
+	7876.1.1 = {death="7876.1.1"}
+}
+344500017 = {
+	name="Карлон"	# a lord
+	dynasty=4500017
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=354500017
+	
+	7854.1.1 = {birth="7854.1.1"}
+	7900.1.1 = {death="7900.1.1"}
+}
+334500017 = {
+	name="Манс"	# a lord
+	dynasty=4500017
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=344500017
+	
+	7878.1.1 = {birth="7878.1.1"}
+	7924.1.1 = {death="7924.1.1"}
+}
+324500017 = {
+	name="Эйрон"	# a lord
+	dynasty=4500017
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=334500017
+	
+	7901.1.1 = {birth="7901.1.1"}
+	7948.1.1 = {death="7948.1.1"}
+}
+314500017 = {
+	name="Реймунд"	# a lord
+	dynasty=4500017
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=324500017
+	
+	7928.1.1 = {birth="7928.1.1"}
+	7986.1.1 = {death="7986.1.1"}
+}
+304500017 = {
+	name="Берон"	# a lord
+	dynasty=4500017
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=314500017
+	
+	7952.1.1 = {birth="7952.1.1"}
+	7991.1.1 = {death="7991.1.1"}
+}
+104500017 = {
+	name="Торген"	# a lord
+	dynasty=4500017
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=304500017
+
+	7971.1.1 = {birth="7971.1.1"}
+	7987.1.1 = {add_trait=skilled_warrior}
+	8046.1.1 = {death="8046.1.1"}
+}
+114500017 = {
+	name="Куорт"	# not a lord
+	dynasty=4500017
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=104500017
+
+	7989.1.1 = {birth="7989.1.1"}
+	8005.1.1 = {add_trait=skilled_warrior}
+	8024.1.1 = {death="8024.1.1"}
+}
+134500017 = {
+	name="Галбарт"	# a lord
+	dynasty=4500017
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=114500017
+
+	8015.1.1 = {birth="8015.1.1"}
+	8031.1.1 = {add_trait=trained_warrior}
+	8082.1.1 = {death="8082.1.1"}
+}
+144500017 = {
+	name="Торген"	# a lord
+	dynasty=4500017
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=134500017
+
+	8033.1.1 = {birth="8033.1.1"}
+	8049.1.1 = {add_trait=poor_warrior}
+	8089.1.1 = {death="8089.1.1"}
+}
+154500017 = {
+	name="Варамир"	# a lord
+	dynasty=4500017
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=144500017
+
+	8052.1.1 = {birth="8052.1.1"}
+	8068.1.1 = {add_trait=skilled_warrior}
+	8106.1.1 = {death="8106.1.1"}
+}
+164500017 = {
+	name="Уэйн"	# a lord
+	dynasty=4500017
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=154500017
+
+	8074.1.1 = {birth="8074.1.1"}
+	8090.1.1 = {add_trait=poor_warrior}
+	8131.1.1 = {death="8131.1.1"}
+}
+174500017 = {
+	name="Кайлиг"	# a lord
+	dynasty=4500017
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=164500017
+
+	8098.1.1 = {birth="8098.1.1"}
+	8114.1.1 = {add_trait=trained_warrior}
+	8149.1.1 = {death = {death_reason = death_murder}}
+}
+184500017 = {
+	name="Харлон"	# a lord
+	dynasty=4500017
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=174500017
+
+	8125.1.1 = {birth="8125.1.1"}
+	8141.1.1 = {add_trait=trained_warrior}
+	8188.1.1 = {death="8188.1.1"}
+}
+214500017 = {
+	name="Горн"	# a lord
+	dynasty=4500017
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=184500017
+
+	8150.1.1 = {birth="8150.1.1"}
+	8166.1.1 = {add_trait=poor_warrior}
+	8196.1.1 = {death="8196.1.1"}
+}
+224500017 = {
+	name="Джорамун"	# a lord
+	dynasty=4500017
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=214500017
+
+	8178.1.1 = {birth="8178.1.1"}
+	8194.1.1 = {add_trait=trained_warrior}
+	8250.1.1 = {death="8250.1.1"}
+}
+234500017 = {
+	name="Миккен"	# a lord
+	dynasty=4500017
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=224500017
+
+	8201.1.1 = {birth="8201.1.1"}
+	8217.1.1 = {add_trait=poor_warrior}
+	8251.1.1 = {death="8251.1.1"}
+}
+244500017 = {
+	name="Боджер"	# a lord
+	dynasty=4500017
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=234500017
+
+	8233.1.1 = {birth="8233.1.1"}
+	8249.1.1 = {add_trait=skilled_warrior}
+	8298.1.1 = {death="8298.1.1"}
+}
+254500017 = {
+	name="Горн"	# a lord
+	dynasty=4500017
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=244500017
+
+	8264.1.1 = {birth="8264.1.1"}
+	8280.1.1 = {add_trait=skilled_warrior}
+}
+
+### Winter Keep/Crasters Keep
+345559133 = {
+	name="Сорен"	# a lord
+	dynasty=559133
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	7820.1.1 = {birth="7820.1.1"}
+	7868.1.1 = {death="7868.1.1"}
+}
+344559133 = {
+	name="Джиор"	# a lord
+	dynasty=559133
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=345559133
+	
+	7844.1.1 = {birth="7844.1.1"}
+	7891.1.1 = {death="7891.1.1"}
+}
+343559133 = {
+	name="Ярл"	# a lord
+	dynasty=559133
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=344559133
+	
+	7867.1.1 = {birth="7867.1.1"}
+	7922.1.1 = {death="7922.1.1"}
+}
+342559133 = {
+	name="Торвинд"	# a lord
+	dynasty=559133
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=343559133
+	
+	7890.1.1 = {birth="7890.1.1"}
+	7941.1.1 = {death="7941.1.1"}
+}
+341559133 = {
+	name="Миккен"	# a lord
+	dynasty=559133
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=342559133
+	
+	7908.1.1 = {birth="7908.1.1"}
+	7959.1.1 = {death="7959.1.1"}
+}
+340559133 = {
+	name="Досс"	# a lord
+	dynasty=559133
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=341559133
+	
+	7932.1.1 = {birth="7932.1.1"}
+	7998.1.1 = {death="7998.1.1"}
+}
+10559133 = {
+	name="Миккен"	# a lord
+	dynasty=559133
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=340559133
+
+	7955.1.1 = {birth="7955.1.1"}
+	7971.1.1 = {add_trait=trained_warrior}
+	8007.1.1 = {death="8007.1.1"}
+}
+11559133 = {
+	name="Орелл"	# a lord
+	dynasty=559133
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=10559133
+
+	7975.1.1 = {birth="7975.1.1"}
+	7991.1.1 = {add_trait=trained_warrior}
+	8020.1.1 = {death="8020.1.1"}
+}
+12559133 = {
+	name="Реймунд"	# not a lord
+	dynasty=559133
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=10559133
+
+	7976.1.1 = {birth="7976.1.1"}
+	7992.1.1 = {add_trait=skilled_warrior}
+	8014.1.1 = {death = {death_reason = death_battle}}
+}
+14559133 = {
+	name="Гарет"	# a lord
+	dynasty=559133
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=12559133
+
+	8002.1.1 = {birth="8002.1.1"}
+	8018.1.1 = {add_trait=trained_warrior}
+	8067.1.1 = {death="8067.1.1"}
+}
+15559133 = {
+	name="Ленн"	# not a lord
+	dynasty=559133
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=14559133
+
+	8020.1.1 = {birth="8020.1.1"}
+	8036.1.1 = {add_trait=trained_warrior}
+	8054.1.1 = {death="8054.1.1"}
+}
+17559133 = {
+	name="Хенк"	# a lord
+	dynasty=559133
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=14559133
+
+	8023.1.1 = {birth="8023.1.1"}
+	8039.1.1 = {add_trait=trained_warrior}
+	8079.1.1 = {death="8079.1.1"}
+}
+20559133 = {
+	name="Альфин"	# a lord
+	dynasty=559133
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=15559133
+
+	8051.1.1 = {birth="8051.1.1"}
+	8067.1.1 = {add_trait=trained_warrior}
+	8127.1.1 = {death="8127.1.1"}
+}
+21559133 = {
+	name="Гарисс"	# a lord
+	dynasty=559133
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=20559133
+
+	8078.1.1 = {birth="8078.1.1"}
+	8094.1.1 = {add_trait=trained_warrior}
+	8146.1.1 = {death="8146.1.1"}
+}
+23559133 = {
+	name="Халлис"	# a lord
+	dynasty=559133
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=21559133
+
+	8104.1.1 = {birth="8104.1.1"}
+	8120.1.1 = {add_trait=poor_warrior}
+	8147.1.1 = {death = {death_reason = death_accident}}
+}
+24559133 = {
+	name="Келон"	# a lord
+	dynasty=559133
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=23559133
+
+	8125.1.1 = {birth="8125.1.1"}
+	8141.1.1 = {add_trait=trained_warrior}
+	8184.1.1 = {death="8184.1.1"}
+}
+25559133 = {
+	name="Гендел"	# not a lord
+	dynasty=559133
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=24559133
+
+	8148.1.1 = {birth="8148.1.1"}
+	8164.1.1 = {add_trait=skilled_warrior}
+	8182.1.1 = {death = {death_reason = death_battle}}
+}
+26559133 = {
+	name="Бернарр"	# a lord
+	dynasty=559133
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=25559133
+
+	8168.1.1 = {birth="8168.1.1"}
+	8184.1.1 = {add_trait=skilled_warrior}
+	8239.1.1 = {death="8239.1.1"}
+}
+29559133 = {
+	name="Торвинд"	# a lord
+	dynasty=559133
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=26559133
+
+	8208.1.1 = {birth="8208.1.1"}
+	8224.1.1 = {add_trait=trained_warrior}
+	8256.1.1 = {death="8256.1.1"}
+}
+31559133 = {
+	name="Геррик"	# a lord
+	dynasty=559133
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=29559133
+
+	8228.1.1 = {birth="8228.1.1"}
+	8244.1.1 = {add_trait=poor_warrior}
+	8263.1.1 = {death="8263.1.1"}
+}
+32559133 = {
+	name="Девин"	# a lord
+	dynasty=559133
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=31559133
+
+	8248.1.1 = {birth="8248.1.1"}
+	8264.1.1 = {add_trait=trained_warrior}
+}
+33559133 = {
+	name="Манс"	# not a lord
+	dynasty=559133
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=32559133
+
+	8274.1.1 = {birth="8274.1.1"}
+	8290.1.1 = {add_trait=skilled_warrior}
+}
+34559133 = {
+	name="Мира"	# not a lord
+	female=yes
+	dynasty=559133
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=32559133
+
+	8275.1.1 = {birth="8275.1.1"}
+}
+35559133 = {
+	name="Оша"	# not a lord
+	female=yes
+	dynasty=559133
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=32559133
+
+	8278.1.1 = {birth="8278.1.1"}
+}
+
+### Whitetree
+344559134 = {
+	name="Арнольф"	# a lord
+	dynasty=559134
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	7828.1.1 = {birth="7828.1.1"}
+	7844.1.1 = {add_trait=trained_warrior}
+	7875.1.1 = {death="7875.1.1"}
+}
+343559134 = {
+	name="Бриар"	# a lord
+	dynasty=559134
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=344559134
+
+	7853.1.1 = {birth="7853.1.1"}
+	7869.1.1 = {add_trait=trained_warrior}
+	7890.1.1 = {death="7890.1.1"}
+}
+342559134 = {
+	name="Джорель"	# a lord
+	female=yes
+	dynasty=559134
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=343559134
+
+	7874.1.1 = {birth="7874.1.1"}
+	7942.1.1 = {death="7942.1.1"}
+}
+341559134 = {
+	name="Артор"	# a lord
+	dynasty=559134
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	mother=342559134
+
+	7895.1.1 = {birth="7895.1.1"}
+	7911.1.1 = {add_trait=trained_warrior}
+	7962.1.1 = {death="7962.1.1"}
+}
+340559134 = {
+	name="Келон"	# a lord
+	dynasty=559134
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=341559134
+
+	7918.1.1 = {birth="7918.1.1"}
+	7934.1.1 = {add_trait=poor_warrior}
+	7977.1.1 = {death="7977.1.1"}
+}
+339559134 = {
+	name="Морс"	# a lord
+	dynasty=559134
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=340559134
+
+	7943.1.1 = {birth="7943.1.1"}
+	7959.1.1 = {add_trait=poor_warrior}
+	7995.1.1 = {death="7995.1.1"}
+}
+100559134 = {
+	name="Ленн"	# a lord
+	dynasty=559134
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=339559134
+
+	7970.1.1 = {birth="7970.1.1"}
+	7986.1.1 = {add_trait=skilled_warrior}
+	8012.1.1 = {death="8012.1.1"}
+}
+103559134 = {
+	name="Торегг"	# a lord
+	dynasty=559134
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=100559134
+
+	7996.1.1 = {birth="7996.1.1"}
+	8012.1.1 = {add_trait=skilled_warrior}
+	8058.1.1 = {death="8058.1.1"}
+}
+104559134 = {
+	name="Артос"	# not a lord
+	dynasty=559134
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=100559134
+
+	7998.1.1 = {birth="7998.1.1"}
+	8014.1.1 = {add_trait=skilled_warrior}
+	8043.1.1 = {death="8043.1.1"}
+}
+106559134 = {
+	name="Санса"	# not a lord
+	female=yes
+	dynasty=559134
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=104559134
+
+	8033.1.1 = {birth="8033.1.1"}
+	8094.1.1 = {death="8094.1.1"}
+}
+107559134 = {
+	name="Бриар"	# a lord
+	dynasty=559134
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=104559134
+
+	8035.1.1 = {birth="8035.1.1"}
+	8051.1.1 = {add_trait=trained_warrior}
+	8091.1.1 = {death="8091.1.1"}
+}
+111559134 = {
+	name="Тормунд"	# a lord
+	dynasty=559134
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=107559134
+
+	8070.1.1 = {birth="8070.1.1"}
+	8086.1.1 = {add_trait=trained_warrior}
+	8117.1.1 = {death="8117.1.1"}
+}
+112559134 = {
+	name="Халис"	# a lord
+	dynasty=559134
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=111559134
+
+	8098.1.1 = {birth="8098.1.1"}
+	8114.1.1 = {add_trait=trained_warrior}
+	8149.1.1 = {death="8149.1.1"}
+}
+113559134 = {
+	name="Рик"	# a lord
+	dynasty=559134
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=112559134
+
+	8122.1.1 = {birth="8122.1.1"}
+	8138.1.1 = {add_trait=trained_warrior}
+	8162.1.1 = {death="8162.1.1"}
+}
+114559134 = {
+	name="Орелл"	# a lord
+	dynasty=559134
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=113559134
+
+	8141.1.1 = {birth="8141.1.1"}
+	8157.1.1 = {add_trait=trained_warrior}
+	8200.1.1 = {death="8200.1.1"}
+}
+115559134 = {
+	name="Хоуд"	# a lord
+	dynasty=559134
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=114559134
+
+	8168.1.1 = {birth="8168.1.1"}
+	8184.1.1 = {add_trait=poor_warrior}
+	8234.1.1 = {death="8234.1.1"}
+}
+116559134 = {
+	name="Криган"	# not a lord
+	dynasty=559134
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=114559134
+
+	8170.1.1 = {birth="8170.1.1"}
+	8186.1.1 = {add_trait=poor_warrior}
+	8206.1.1 = {death="8206.1.1"}
+}
+120559134 = {
+	name="Кайлиг"	# a lord
+	dynasty=559134
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=116559134
+
+	8194.1.1 = {birth="8194.1.1"}
+	8210.1.1 = {add_trait=trained_warrior}
+	8250.1.1 = {death="8250.1.1"}
+}
+121559134 = {
+	name="Жойен"	# a lord
+	dynasty=559134
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=120559134
+
+	8220.1.1 = {birth="8220.1.1"}
+	8236.1.1 = {add_trait=skilled_warrior}
+	8266.1.1 = {death="8266.1.1"}
+}
+123559134 = {
+	name="Торегг"	# a lord
+	dynasty=559134
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=121559134
+
+	8243.1.1 = {birth="8243.1.1"}
+	8259.1.1 = {add_trait=trained_warrior}
+}
+124559134 = {
+	name="Халлис"	# not a lord
+	dynasty=559134
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=123559134
+
+	8270.1.1 = {birth="8270.1.1"}
+	8286.1.1 = {add_trait=poor_warrior}
+}
+125559134 = {
+	name="Ленн"	# not a lord
+	dynasty=559134
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=123559134
+
+	8271.1.1 = {birth="8271.1.1"}
+	8287.1.1 = {add_trait=trained_warrior}
+}
+
+### Hardhome
+340559139 = {
+	name="Крастер"	# a lord
+	dynasty=559139
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	7820.1.1 = {birth="7820.1.1"}
+	7836.1.1 = {add_trait=trained_warrior}
+	7869.1.1 = {death="7869.1.1"}
+}
+341559139 = {
+	name="Йорен"	# a lord
+	dynasty=559139
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=340559139
+
+	7854.1.1 = {birth="7854.1.1"}
+	7870.1.1 = {add_trait=trained_warrior}
+	7899.1.1 = {death="7899.1.1"}
+}
+344559139 = {
+	name="Джиор"	# a lord
+	dynasty=559139
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=341559139
+
+	7892.1.1 = {birth="7892.1.1"}
+	7908.1.1 = {add_trait=poor_warrior}
+	7954.1.1 = {death="7954.1.1"}
+}
+345559139 = {
+	name="Харра"	# a lord
+	female=yes
+	dynasty=559139
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=344559139
+
+	7926.1.1 = {birth="7926.1.1"}
+	7961.1.1 = {death="7961.1.1"}
+}
+10559139 = {
+	name="Торген"	# a lord
+	dynasty=559139
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	mother=345559139
+	
+	7944.1.1 = {birth="7944.1.1"}
+	7960.1.1 = {add_trait=trained_warrior}
+	8003.1.1 = {death="8003.1.1"}
+}
+11559139 = {
+	name="Карлон"	# a lord
+	dynasty=559139
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=10559139
+
+	7973.1.1 = {birth="7973.1.1"}
+	7989.1.1 = {add_trait=trained_warrior}
+	8033.1.1 = {death="8033.1.1"}
+}
+13559139 = {
+	name="Дрин"	# a lord
+	dynasty=559139
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=10559139
+
+	7979.1.1 = {birth="7979.1.1"}
+	7995.1.1 = {add_trait=trained_warrior}
+	8035.1.1 = {death="8035.1.1"}
+}
+17559139 = {
+	name="Геррик"	# a lord
+	dynasty=559139
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=13559139
+
+	8004.1.1 = {birth="8004.1.1"}
+	8020.1.1 = {add_trait=trained_warrior}
+	8062.1.1 = {death="8062.1.1"}
+}
+18559139 = {
+	name="Уолтон"	# not a lord
+	dynasty=559139
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=13559139
+
+	8005.1.1 = {birth="8005.1.1"}
+	8021.1.1 = {add_trait=poor_warrior}
+	8048.1.1 = {death="8048.1.1"}
+}
+22559139 = {
+	name="Харлон"	# a lord
+	dynasty=559139
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=18559139
+
+	8040.1.1 = {birth="8040.1.1"}
+	8056.1.1 = {add_trait=trained_warrior}
+	8085.1.1 = {death="8085.1.1"}
+}
+23559139 = {
+	name="Морс"	# a lord
+	dynasty=559139
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=22559139
+
+	8071.1.1 = {birth="8071.1.1"}
+	8087.1.1 = {add_trait=skilled_warrior}
+	8140.1.1 = {death="8140.1.1"}
+}
+24559139 = {
+	name="Кейн"	# a lord
+	dynasty=559139
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=23559139
+
+	8093.1.1 = {birth="8093.1.1"}
+	8109.1.1 = {add_trait=poor_warrior}
+	8154.1.1 = {death="8154.1.1"}
+}
+26559139 = {
+	name="Куорт"	# a lord
+	dynasty=559139
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=24559139
+
+	8115.1.1 = {birth="8115.1.1"}
+	8131.1.1 = {add_trait=trained_warrior}
+	8168.1.1 = {death="8168.1.1"}
+}
+28559139 = {
+	name="Геррик"	# a lord
+	dynasty=559139
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=26559139
+
+	8150.1.1 = {birth="8150.1.1"}
+	8166.1.1 = {add_trait=trained_warrior}
+	8210.1.1 = {death="8210.1.1"}
+}
+29559139 = {
+	name="Миккен"	# a lord
+	dynasty=559139
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=28559139
+
+	8170.1.1 = {birth="8170.1.1"}
+	8186.1.1 = {add_trait=trained_warrior}
+	8221.1.1 = {death="8221.1.1"}
+}
+30559139 = {
+	name="Байам"	# a lord
+	dynasty=559139
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=29559139
+
+	8198.1.1 = {birth="8198.1.1"}
+	8214.1.1 = {add_trait=skilled_warrior}
+	8264.1.1 = {death = {death_reason = death_accident}}
+}
+33559139 = {
+	name="Реймунд"	# a lord
+	dynasty=559139
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=30559139
+
+	8219.1.1 = {birth="8219.1.1"}
+	8235.1.1 = {add_trait=skilled_warrior}
+	8275.1.1 = {death="8275.1.1"}
+}
+34559139 = {
+	name="Альфин"	# a lord
+	dynasty=559139
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=30559139
+
+	8221.1.1 = {birth="8221.1.1"}
+	8237.1.1 = {add_trait=poor_warrior}
+	8282.1.1 = {death="8282.1.1"}
+}
+35559139 = {
+	name="Палла"	# not a lord
+	female=yes
+	dynasty=559139
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=33559139
+
+	8250.1.1 = {birth="8250.1.1"}
+}
+36559139 = {
+	name="Репейница"	# not a lord
+	female=yes
+	dynasty=559139
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=33559139
+
+	8252.1.1 = {birth="8252.1.1"}
+}
+37559139 = {
+	name="Игон"	# a lord
+	dynasty=559139
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=34559139
+
+	8246.1.1 = {birth="8246.1.1"}
+	8262.1.1 = {add_trait=poor_warrior}
+}
+38559139 = {
+	name="Уолтон"	# not a lord
+	dynasty=559139
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=34559139
+
+	8248.1.1 = {birth="8248.1.1"}
+	8264.1.1 = {add_trait=trained_warrior}
+	8297.1.1 = {death="8297.1.1"}
+}
+39559139 = {
+	name="Эрена"	# not a lord
+	female=yes
+	dynasty=559139
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=37559139
+
+	8269.1.1 = {birth="8269.1.1"}
+}
+40559139 = {
+	name="Кира"
+	female=yes
+	dynasty=559139
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=37559139
+
+	8271.1.1 = {birth="8271.1.1"}
+}
+41559139 = {
+	name="Сигорн"
+	dynasty=559139
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=37559139
+
+	8274.1.1 = {birth="8274.1.1"}
+	8290.1.1 = {add_trait=trained_warrior}
+}
+
+### First Forest
+340559141 = {
+	name="Стир"	# a lord
+	dynasty=559141
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	7840.1.1 = {birth="7840.1.1"}
+	7856.1.1 = {add_trait=trained_warrior}
+	7884.1.1 = {death="7884.1.1"}
+}
+343559141 = {
+	name="Брогг"	# a lord
+	dynasty=559141
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=340559141
+
+	7869.1.1 = {birth="7869.1.1"}
+	7885.1.1 = {add_trait=trained_warrior}
+	7911.1.1 = {death="7911.1.1"}
+}
+345559141 = {
+	name="Вейон"	# a lord
+	dynasty=559141
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=343559141
+
+	7896.1.1 = {birth="7896.1.1"}
+	7912.1.1 = {add_trait=poor_warrior}
+	7946.1.1 = {death="7946.1.1"}
+}
+346559141 = {
+	name="Горн"	# a lord
+	dynasty=559141
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=345559141
+
+	7931.1.1 = {birth="7931.1.1"}
+	7947.1.1 = {add_trait=poor_warrior}
+	7976.1.1 = {death="7976.1.1"}
+}
+349559141 = {
+	name="Куорт"	# a lord
+	dynasty=559141
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=346559141
+
+	7957.1.1 = {birth="7957.1.1"}
+	7973.1.1 = {add_trait=poor_warrior}
+	8010.1.1 = {death="8010.1.1"}
+}
+10559141 = {
+	name="Йорен"	# a lord
+	dynasty=559141
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=349559141
+
+	7975.1.1 = {birth="7975.1.1"}
+	7991.1.1 = {add_trait=trained_warrior}
+	8030.1.1 = {death="8030.1.1"}
+}
+11559141 = {
+	name="Гарисс"	# a lord
+	dynasty=559141
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=10559141
+
+	7996.1.1 = {birth="7996.1.1"}
+	8012.1.1 = {add_trait=skilled_warrior}
+	8051.1.1 = {death="8051.1.1"}
+}
+15559141 = {
+	name="Жойен"	# a lord
+	dynasty=559141
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=11559141
+
+	8023.1.1 = {birth="8023.1.1"}
+	8039.1.1 = {add_trait=trained_warrior}
+	8086.1.1 = {death="8086.1.1"}
+}
+17559141 = {
+	name="Куорт"	# not a lord
+	dynasty=559141
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=11559141
+
+	8025.1.1 = {birth="8025.1.1"}
+	8041.1.1 = {add_trait=poor_warrior}
+	8061.1.1 = {death="8061.1.1"}
+}
+20559141 = {
+	name="Ярл"	# a lord
+	dynasty=559141
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=15559141
+
+	8055.1.1 = {birth="8055.1.1"}
+	8071.1.1 = {add_trait=trained_warrior}
+	8100.1.1 = {death="8100.1.1"}
+}
+24559141 = {
+	name="Альфин"	# a lord
+	dynasty=559141
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=20559141
+
+	8087.1.1 = {birth="8087.1.1"}
+	8103.1.1 = {add_trait=skilled_warrior}
+	8126.1.1 = {death="8126.1.1"}
+}
+25559141 = {
+	name="Квент"	# a lord
+	dynasty=559141
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=20559141
+
+	8089.1.1 = {birth="8089.1.1"}
+	8105.1.1 = {add_trait=poor_warrior}
+	8152.1.1 = {death="8152.1.1"}
+}
+28559141 = {
+	name="Торегг"	# a lord
+	dynasty=559141
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=25559141
+
+	8112.1.1 = {birth="8112.1.1"}
+	8128.1.1 = {add_trait=trained_warrior}
+	8171.1.1 = {death="8171.1.1"}
+}
+29559141 = {
+	name="Альфин"	# a lord
+	dynasty=559141
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=28559141
+
+	8136.1.1 = {birth="8136.1.1"}
+	8152.1.1 = {add_trait=trained_warrior}
+	8182.1.1 = {death="8182.1.1"}
+}
+31559141 = {
+	name="Тормунд"	# a lord
+	dynasty=559141
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=29559141
+
+	8166.1.1 = {birth="8166.1.1"}
+	8182.1.1 = {add_trait=trained_warrior}
+	8224.1.1 = {death="8224.1.1"}
+}
+33559141 = {
+	name="Ленн"	# a lord
+	dynasty=559141
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=31559141
+
+	8197.1.1 = {birth="8197.1.1"}
+	8213.1.1 = {add_trait=trained_warrior}
+	8256.1.1 = {death="8256.1.1"}
+}
+34559141 = {
+	name="Артор"	# a lord
+	dynasty=559141
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=33559141
+
+	8216.1.1 = {birth="8216.1.1"}
+	8232.1.1 = {add_trait=poor_warrior}
+	8264.1.1 = {death="8264.1.1"}
+}
+35559141 = {
+	name="Джиор"	# a lord
+	dynasty=559141
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=34559141
+
+	8241.1.1 = {birth="8241.1.1"}
+	8257.1.1 = {add_trait=trained_warrior}
+	8295.1.1 = {death="8295.1.1"}
+}
+37559141 = {
+	name="Эйрон"	# not a lord
+	dynasty=559141
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=34559141
+
+	8245.1.1 = {birth="8245.1.1"}
+	8261.1.1 = {add_trait=trained_warrior}
+}
+38559141 = {
+	name="Гавин"	# a lord
+	dynasty=559141
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait=gregarious
+	add_trait=midas_touched
+
+	father=35559141
+
+	8267.1.1 = {birth="8267.1.1"}
+	8283.1.1 = {give_nickname = nick_the_trader}
+	8283.1.1 = {add_trait=poor_warrior}
+}
+40559141 = {
+	name="Куорен"
+	dynasty=559141
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=35559141
+
+	8271.1.1 = {birth="8271.1.1"}
+	8287.1.1 = {add_trait=skilled_warrior}
+}
+41559141 = {
+	name="Торегг"	# not a lord
+	dynasty=559141
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=37559141
+
+	8279.1.1 = {birth="8279.1.1"}
+	8295.1.1 = {add_trait=trained_warrior}
+}
+42559141 = {
+	name="Хали"
+	female=yes
+	dynasty=559141
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=37559141
+
+	8282.1.1 = {birth="8282.1.1"}
+}
+
+### North Frostfangs
+340559143 = {
+	name="Стив"	# a lord
+	dynasty=559143
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	7830.1.1 = {birth="7830.1.1"}
+	7846.1.1 = {add_trait=trained_warrior}
+	7877.1.1 = {death="7877.1.1"}
+}
+341559143 = {
+	name="Куорен"	# a lord
+	dynasty=559143
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=340559143
+
+	7862.1.1 = {birth="7862.1.1"}
+	7878.1.1 = {add_trait=poor_warrior}
+	7913.1.1 = {death="7913.1.1"}
+}
+343559143 = {
+	name="Уолтон"	# a lord
+	dynasty=559143
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=341559143
+
+	7891.1.1 = {birth="7891.1.1"}
+	7907.1.1 = {add_trait=poor_warrior}
+	7938.1.1 = {death="7938.1.1"}
+}
+345559143 = {
+	name="Байам"	# a lord
+	dynasty=559143
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=343559143
+
+	7914.1.1 = {birth="7914.1.1"}
+	7930.1.1 = {add_trait=skilled_warrior}
+	7979.1.1 = {death="7979.1.1"}
+}
+347559143 = {
+	name="Досс"	# a lord
+	dynasty=559143
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=345559143
+
+	7935.1.1 = {birth="7935.1.1"}
+	7951.1.1 = {add_trait=skilled_warrior}
+	7986.1.1 = {death="7986.1.1"}
+}
+10559143 = {
+	name="Кейн"	# a lord
+	dynasty=559143
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=347559143
+
+	7966.1.1 = {birth="7966.1.1"}
+	7982.1.1 = {add_trait=trained_warrior}
+	8022.1.1 = {death="8022.1.1"}
+}
+11559143 = {
+	name="Торген"	# a lord
+	dynasty=559143
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=10559143
+
+	7985.1.1 = {birth="7985.1.1"}
+	8001.1.1 = {add_trait=trained_warrior}
+	8033.1.1 = {death="8033.1.1"}
+}
+13559143 = {
+	name="Дрин"	# not a lord
+	dynasty=559143
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=10559143
+
+	7987.1.1 = {birth="7987.1.1"}
+	8003.1.1 = {add_trait=poor_warrior}
+	8052.1.1 = {death="8052.1.1"}
+}
+14559143 = {
+	name="Эйрон"	# a lord
+	dynasty=559143
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=11559143
+
+	8008.1.1 = {birth="8008.1.1"}
+	8024.1.1 = {add_trait=skilled_warrior}
+	8052.1.1 = {death="8052.1.1"}
+}
+18559143 = {
+	name="Девин"	# a lord
+	dynasty=559143
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=13559143
+
+	8008.1.1 = {birth="8008.1.1"}
+	8024.1.1 = {add_trait=trained_warrior}
+	8060.1.1 = {death="8060.1.1"}
+}
+19559143 = {
+	name="Уолтон"	# a lord
+	dynasty=559143
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=18559143
+
+	8032.1.1 = {birth="8032.1.1"}
+	8048.1.1 = {add_trait=trained_warrior}
+	8085.1.1 = {death="8085.1.1"}
+}
+22559143 = {
+	name="Жойен"	# a lord
+	dynasty=559143
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=19559143
+
+	8053.1.1 = {birth="8053.1.1"}
+	8069.1.1 = {add_trait=trained_warrior}
+	8096.1.1 = {death="8096.1.1"}
+}
+23559143 = {
+	name="Геррик"	# a lord
+	dynasty=559143
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=22559143
+
+	8078.1.1 = {birth="8078.1.1"}
+	8094.1.1 = {add_trait=skilled_warrior}
+	8127.1.1 = {death="8127.1.1"}
+}
+26559143 = {
+	name="Дайвен"	# a lord
+	dynasty=559143
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=23559143
+
+	8108.1.1 = {birth="8108.1.1"}
+	8124.1.1 = {add_trait=trained_warrior}
+	8155.1.1 = {death="8155.1.1"}
+}
+27559143 = {
+	name="Гарисс"	# a lord
+	dynasty=559143
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=26559143
+
+	8127.1.1 = {birth="8127.1.1"}
+	8143.1.1 = {add_trait=trained_warrior}
+	8175.1.1 = {death="8175.1.1"}
+}
+28559143 = {
+	name="Куорт"	# not a lord
+	dynasty=559143
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=26559143
+
+	8129.1.1 = {birth="8129.1.1"}
+	8145.1.1 = {add_trait=poor_warrior}
+	8150.1.1 = {death="8150.1.1"}
+}
+31559143 = {
+	name="Вереск"	# a lord
+	dynasty=559143
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=28559143
+
+	8150.1.1 = {birth="8150.1.1"}
+	8166.1.1 = {add_trait=skilled_warrior}
+	8215.1.1 = {death="8215.1.1"}
+}
+33559143 = {
+	name="Дормунд"	# a lord
+	dynasty=559143
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=31559143
+
+	8198.1.1 = {birth="8198.1.1"}
+	8214.1.1 = {add_trait=trained_warrior}
+	8224.1.1 = {death="8224.1.1"}
+}
+35559143 = {
+	name="Манс"	# a lord
+	dynasty=559143
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=33559143
+
+	8221.1.1 = {birth="8221.1.1"}
+	8237.1.1 = {add_trait=trained_warrior}
+	8260.1.1 = {death="8260.1.1"}
+}
+37559143 = {
+	name="Геррик"	# not a lord
+	dynasty=559143
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=33559143
+
+	8224.1.1 = {birth="8224.1.1"}
+	8240.1.1 = {add_trait=poor_warrior}
+	8280.1.1 = {death="8280.1.1"}
+}
+38559143 = {
+	name="Арнольф"	# a lord
+	dynasty=559143
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=35559143
+
+	8240.1.1 = {birth="8240.1.1"}
+	8256.1.1 = {add_trait=skilled_warrior}
+	8286.1.1 = {death="8286.1.1"}
+}
+39559143 = {
+	name="Уаллен"	# not a lord
+	dynasty=559143
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=35559143
+
+	8242.1.1 = {birth="8242.1.1"}
+	8258.1.1 = {add_trait=skilled_warrior}
+	8286.1.1 = {death="8286.1.1"}
+}
+40559143 = {
+	name="Далла"
+	female=yes
+	dynasty=559143
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=38559143
+
+	8272.1.1 = {birth="8272.1.1"}
+}
+41559143 = {
+	name="Изилла"
+	female=yes
+	dynasty=559143
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=38559143
+
+	8275.1.1 = {birth="8275.1.1"}
+}
+42559143 = {
+	name="Девин"
+	dynasty=559143
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=38559143
+
+	8278.1.1 = {birth="8278.1.1"}
+	8294.1.1 = {add_trait=trained_warrior}
+}
+43559143 = {
+	name="Джонелла"
+	female=yes
+	dynasty=559143
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=42559143
+
+	8296.1.1 = {birth="8296.1.1"}
+}
+44559143 = {
+	name="Дормунд"
+	dynasty=559143
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=42559143
+
+	8297.1.1 = {birth="8297.1.1"}
+	8313.1.1 = {add_trait=poor_warrior}
+}
+
+### Giant's Stairs
+340559144 = {
+	name="Халгор"	# a lord
+	dynasty=559144
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	7834.1.1 = {birth="7834.1.1"}
+	7850.1.1 = {add_trait=trained_warrior}
+	7878.1.1 = {death="7878.1.1"}
+}
+343559144 = {
+	name="Сигорн"	# a lord
+	dynasty=559144
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=340559144
+
+	7861.1.1 = {birth="7861.1.1"}
+	7877.1.1 = {add_trait=poor_warrior}
+	7893.1.1 = {death = {death_reason = death_battle}}
+}
+344559144 = {
+	name="Халлис"	# a lord
+	dynasty=559144
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=343559144
+
+	7881.1.1 = {birth="7881.1.1"}
+	7897.1.1 = {add_trait=trained_warrior}
+	7935.1.1 = {death="7935.1.1"}
+}
+345559144 = {
+	name="Гавен"	# a lord
+	dynasty=559144
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=344559144
+
+	7920.1.1 = {birth="7920.1.1"}
+	7936.1.1 = {add_trait=trained_warrior}
+	7965.1.1 = {death = {death_reason = death_murder}}
+}
+348559144 = {
+	name="Торвинд"	# a lord
+	dynasty=559144
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=345559144
+
+	7943.1.1 = {birth="7943.1.1"}
+	7962.1.1 = {add_trait=poor_warrior}
+	7984.1.1 = {death="7984.1.1"}
+}
+10559144 = {
+	name="Боджер"	# a lord
+	dynasty=559144
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=348559144
+
+	7960.1.1 = {birth="7960.1.1"}
+	7976.1.1 = {add_trait=trained_warrior}
+	8011.1.1 = {death="8011.1.1"}
+}
+11559144 = {
+	name="Оуэн"	# a lord
+	dynasty=559144
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=10559144
+
+	7984.1.1 = {birth="7984.1.1"}
+	8000.1.1 = {add_trait=trained_warrior}
+	8024.1.1 = {death="8024.1.1"}
+}
+12559144 = {
+	name="Харлон"	# a lord
+	dynasty=559144
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=11559144
+
+	8019.1.1 = {birth="8019.1.1"}
+	8035.1.1 = {add_trait=trained_warrior}
+	8050.1.1 = {death="8050.1.1"}
+}
+15559144 = {
+	name="Морс"	# a lord
+	dynasty=559144
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=12559144
+
+	8039.1.1 = {birth="8039.1.1"}
+	8055.1.1 = {add_trait=trained_warrior}
+	8079.1.1 = {death="8079.1.1"}
+}
+16559144 = {
+	name="Дрин"	# a lord
+	dynasty=559144
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=12559144
+
+	8041.1.1 = {birth="8041.1.1"}
+	8057.1.1 = {add_trait=skilled_warrior}
+	8101.1.1 = {death="8101.1.1"}
+}
+21559144 = {
+	name="Горн"	# a lord
+	dynasty=559144
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=16559144
+
+	8068.1.1 = {birth="8068.1.1"}
+	8084.1.1 = {add_trait=trained_warrior}
+	8123.1.1 = {death="8123.1.1"}
+}
+22559144 = {
+	name="Хармонд"	# a lord
+	dynasty=559144
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=21559144
+
+	8087.1.1 = {birth="8087.1.1"}
+	8103.1.1 = {add_trait=poor_warrior}
+	8131.1.1 = {death="8131.1.1"}
+}
+23559144 = {
+	name="Альфин"	# a lord
+	dynasty=559144
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=22559144
+
+	8106.1.1 = {birth="8106.1.1"}
+	8122.1.1 = {add_trait=skilled_warrior}
+	8148.1.1 = {death="8148.1.1"}
+}
+29559144 = {
+	name="Хенк"	# a lord
+	dynasty=559144
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=23559144
+
+	8142.1.1 = {birth="8142.1.1"}
+	8158.1.1 = {add_trait=trained_warrior}
+	8215.1.1 = {death = {death_reason = death_accident}}
+}
+30559144 = {
+	name="Арсон"	# a lord
+	dynasty=559144
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=29559144
+
+	8176.1.1 = {birth="8176.1.1"}
+	8192.1.1 = {add_trait=poor_warrior}
+	8228.1.1 = {death="8228.1.1"}
+}
+32559144 = {
+	name="Джиор"	# a lord
+	dynasty=559144
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=30559144
+
+	8204.1.1 = {birth="8204.1.1"}
+	8220.1.1 = {add_trait=trained_warrior}
+	8256.1.1 = {death="8256.1.1"}
+}
+33559144 = {
+	name="Ленал"	# a lord
+	dynasty=559144
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=32559144
+
+	8226.1.1 = {birth="8226.1.1"}
+	8242.1.1 = {add_trait=poor_warrior}
+	8267.1.1 = {death="8267.1.1"}
+}
+34559144 = {
+	name="Доррен"	# not a lord
+	dynasty=559144
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=32559144
+
+	8229.1.1 = {birth="8229.1.1"}
+	8245.1.1 = {add_trait=trained_warrior}
+	8280.1.1 = {death="8280.1.1"}
+}
+35559144 = {
+	name="Джоннела"	# not a lord
+	female=yes
+	dynasty=559144
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=33559144
+
+	8261.1.1 = {birth="8261.1.1"}
+}
+36559144 = {
+	name="Хеллек"	# a lord
+	dynasty=559144
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=33559144
+
+	8262.1.1 = {birth="8262.1.1"}
+	8278.1.1 = {add_trait=trained_warrior}
+}
+37559144 = {
+	name="Брогг"	# not a lord
+	dynasty=559144
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=36559144
+
+	8291.1.1 = {birth="8291.1.1"}
+	8307.1.1 = {add_trait=poor_warrior}
+}
+38559144 = {
+	name="Далла"	# not a lord
+	female=yes
+	dynasty=559144
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=36559144
+
+	8294.1.1 = {birth="8294.1.1"}
+}
+39559144 = {
+	name="Харра"	# not a lord
+	female=yes
+	dynasty=559144
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=36559144
+
+	8297.1.1 = {birth="8297.1.1"}
+}
+40559144 = {
+	name="Бернарр"
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=36559144
+
+	8300.1.1 = {birth="8300.1.1"}
+	8316.1.1 = {add_trait=poor_warrior}
+}
+
+### Frozen Shore
+340559255 = {
+	name="Ворон"	# a lord
+	dynasty=559255
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	7820.1.1 = {birth="7820.1.1"}
+	7836.1.1 = {add_trait=trained_warrior}
+	7867.1.1 = {death="7867.1.1"}
+}
+342559255 = {
+	name="Великий Барсук"	# a lord
+	dynasty=559255
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=340559255
+
+	7845.1.1 = {birth="7845.1.1"}
+	7861.1.1 = {add_trait=poor_warrior}
+	7889.1.1 = {death="7889.1.1"}
+}
+343559255 = {
+	name="Лиса"	# a lord
+	female=yes
+	dynasty=559255
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=342559255
+
+	7880.1.1 = {birth="7880.1.1"}
+	7944.1.1 = {death="7944.1.1"}
+}
+344559255 = {
+	name="Злой Лось"	# a lord
+	dynasty=559255
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	mother=343559255
+
+	7905.1.1 = {birth="7905.1.1"}
+	7921.1.1 = {add_trait=skilled_warrior}
+	7964.1.1 = {death = {death_reason = death_murder}}
+}
+346559255 = {
+	name="Олень"	# a lord
+	dynasty=559255
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=344559255
+
+	7938.1.1 = {birth="7938.1.1"}
+	7954.1.1 = {add_trait=trained_warrior}
+	8016.1.1 = {death="8016.1.1"}
+}
+10559255 = {
+	name="Лютоволк"	# a lord
+	dynasty=559255
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+	
+	father=346559255
+
+	7967.1.1 = {birth="7967.1.1"}
+	7983.1.1 = {add_trait=trained_warrior}
+	8023.1.1 = {death="8023.1.1"}
+}
+11559255 = {
+	name="Осёл"	# a lord
+	dynasty=559255
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=10559255
+
+	7990.1.1 = {birth="7990.1.1"}
+	8006.1.1 = {add_trait=skilled_warrior}
+	8034.1.1 = {death="8034.1.1"}
+}
+12559255 = {
+	name="Лис"	# a lord
+	dynasty=559255
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=11559255
+
+	8009.1.1 = {birth="8009.1.1"}
+	8025.1.1 = {add_trait=trained_warrior}
+	8065.1.1 = {death="8065.1.1"}
+}
+13559255 = {
+	name="Угорь"	# a lord
+	dynasty=559255
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=12559255
+
+	8036.1.1 = {birth="8036.1.1"}
+	8052.1.1 = {add_trait=skilled_warrior}
+	8081.1.1 = {death="8081.1.1"}
+}
+14559255 = {
+	name="Белый Медведь"	# a lord
+	dynasty=559255
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=13559255
+
+	8058.1.1 = {birth="8058.1.1"}
+	8074.1.1 = {add_trait=trained_warrior}
+	8117.1.1 = {death="8117.1.1"}
+}
+15559255 = {
+	name="Кит"	# a lord
+	dynasty=559255
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=14559255
+
+	8081.1.1 = {birth="8081.1.1"}
+	8097.1.1 = {add_trait=trained_warrior}
+	8130.1.1 = {death="8130.1.1"}
+}
+16559255 = {
+	name="Козёл"	# a lord
+	dynasty=559255
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=15559255
+
+	8108.1.1 = {birth="8108.1.1"}
+	8124.1.1 = {add_trait=trained_warrior}
+	8152.1.1 = {death="8152.1.1"}
+}
+17559255 = {
+	name="Гигант"	# a lord
+	dynasty=559255
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=16559255
+
+	8134.1.1 = {birth="8134.1.1"}
+	8150.1.1 = {add_trait=poor_warrior}
+	8203.1.1 = {death="8203.1.1"}
+}
+19559255 = {
+	name="Вепрь"	# not a lord
+	dynasty=559255
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=17559255
+
+	8162.1.1 = {birth="8162.1.1"}
+	8178.1.1 = {add_trait=skilled_warrior}
+	8198.1.1 = {death = {death_reason = death_battle}}
+}
+20559255 = {
+	name="Осёл"	# a lord
+	dynasty=559255
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=19559255
+
+	8188.1.1 = {birth="8188.1.1"}
+	8204.1.1 = {add_trait=trained_warrior}
+	8230.1.1 = {death="8230.1.1"}
+}
+21559255 = {
+	name="Нетопырь"	# a lord
+	dynasty=559255
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=20559255
+
+	8215.1.1 = {birth="8215.1.1"}
+	8231.1.1 = {add_trait=trained_warrior}
+	8266.1.1 = {death="8266.1.1"}
+}
+22559255 = {
+	name="Кот"	# a lord
+	dynasty=559255
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=21559255
+
+	8246.1.1 = {birth="8246.1.1"}
+	8262.1.1 = {add_trait=trained_warrior}
+	8309.1.1 = {death="8309.1.1"}
+}
+24559255 = {
+	name="Волк"	# not a lord
+	dynasty=559255
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=22559255
+
+	8274.1.1 = {birth="8274.1.1"}
+	8290.1.1 = {add_trait=poor_warrior}
+}
+
+### Ice Bay Shore
+340559257 = {
+	name="Медведь"	# a lord
+	dynasty=559257
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	7823.1.1 = {birth="7823.1.1"}
+	7839.1.1 = {add_trait=poor_warrior}
+	7878.1.1 = {death="7878.1.1"}
+}
+341559257 = {
+	name="Лягушка"	# a lord
+	dynasty=559257
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=340559257
+
+	7844.1.1 = {birth="7844.1.1"}
+	7860.1.1 = {add_trait=skilled_warrior}
+	7909.1.1 = {death="7909.1.1"}
+}
+343559257 = {
+	name="Угорь"	# a lord
+	dynasty=559257
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=341559257
+
+	7869.1.1 = {birth="7869.1.1"}
+	7885.1.1 = {add_trait=master_warrior}
+	7941.1.1 = {death="7941.1.1"}
+}
+345559257 = {
+	name="Угорь"	# a lord
+	dynasty=559257
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=343559257
+
+	7896.1.1 = {birth="7896.1.1"}
+	7912.1.1 = {add_trait=poor_warrior}
+	7951.1.1 = {death="7951.1.1"}
+}
+346559257 = {
+	name="Олень"	# a lord
+	dynasty=559257
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=345559257
+
+	7919.1.1 = {birth="7919.1.1"}
+	7935.1.1 = {add_trait=skilled_warrior}
+	7989.1.1 = {death="7989.1.1"}
+}
+10559257 = {
+	name="Лис"	# a lord
+	dynasty=559257
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+	
+	father=346559257
+
+	7942.1.1 = {birth="7942.1.1"}
+	7958.1.1 = {add_trait=trained_warrior}
+	8009.1.1 = {death="8009.1.1"}
+}
+11559257 = {
+	name="Лев"	# a lord
+	dynasty=559257
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=10559257
+
+	7960.1.1 = {birth="7960.1.1"}
+	7976.1.1 = {add_trait=trained_warrior}
+	8015.1.1 = {death="8015.1.1"}
+}
+15559257 = {
+	name="Лютоволк"	# a lord
+	dynasty=559257
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=11559257
+
+	7990.1.1 = {birth="7990.1.1"}
+	8006.1.1 = {add_trait=poor_warrior}
+	8031.1.1 = {death="8031.1.1"}
+}
+17559257 = {
+	name="Лев"	# a lord
+	dynasty=559257
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=15559257
+
+	8020.1.1 = {birth="8020.1.1"}
+	8036.1.1 = {add_trait=poor_warrior}
+	8066.1.1 = {death = {death_reason = death_accident}}
+}
+19559257 = {
+	name="Кот"	# a lord
+	dynasty=559257
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=17559257
+
+	8054.1.1 = {birth="8054.1.1"}
+	8070.1.1 = {add_trait=trained_warrior}
+	8089.1.1 = {death="8089.1.1"}
+}
+20559257 = {
+	name="Орёл"	# a lord
+	dynasty=559257
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=17559257
+
+	8055.1.1 = {birth="8055.1.1"}
+	8071.1.1 = {add_trait=trained_warrior}
+	8114.1.1 = {death="8114.1.1"}
+}
+22559257 = {
+	name="Белый Медведь"	# a lord
+	dynasty=559257
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=20559257
+
+	8073.1.1 = {birth="8073.1.1"}
+	8089.1.1 = {add_trait=poor_warrior}
+	8137.1.1 = {death = {death_reason = death_murder}}
+}
+23559257 = {
+	name="Единорог"	# not a lord
+	dynasty=559257
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=22559257
+
+	8098.1.1 = {birth="8098.1.1"}
+	8114.1.1 = {add_trait=poor_warrior}
+	8131.1.1 = {death="8131.1.1"}
+}
+24559257 = {
+	name="Муравьед"	# a lord
+	dynasty=559257
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=22559257
+
+	8099.1.1 = {birth="8099.1.1"}
+	8115.1.1 = {add_trait=trained_warrior}
+	8139.1.1 = {death="8139.1.1"}
+}
+26559257 = {
+	name="Гигант"	# a lord
+	dynasty=559257
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=23559257
+
+	8131.1.1 = {birth="8131.1.1"}
+	8137.1.1 = {add_trait=skilled_warrior}
+	8206.1.1 = {death="8206.1.1"}
+}
+27559257 = {
+	name="Мамонт"	# a lord
+	dynasty=559257
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=24559257
+
+	8125.1.1 = {birth="8125.1.1"}
+	8141.1.1 = {add_trait=trained_warrior}
+	8174.1.1 = {death="8174.1.1"}
+}
+30559257 = {
+	name="Тюлень"	# a lord
+	dynasty=559257
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=27559257
+
+	8159.1.1 = {birth="8159.1.1"}
+	8175.1.1 = {add_trait=trained_warrior}
+	8220.1.1 = {death="8220.1.1"}
+}
+34559257 = {
+	name="Лось"	# not a lord
+	dynasty=559257
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=30559257
+
+	8186.1.1 = {birth="8186.1.1"}
+	8202.1.1 = {add_trait=skilled_warrior}
+	8217.1.1 = {death="8217.1.1"}
+}
+35559257 = {
+	name="Лось"	# a lord
+	dynasty=559257
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=30559257
+
+	8189.1.1 = {birth="8189.1.1"}
+	8205.1.1 = {add_trait=trained_warrior}
+	8245.1.1 = {death="8245.1.1"}
+}
+37559257 = {
+	name="Медведь"	# a lord
+	dynasty=559257
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=34559257
+
+	8206.1.1 = {birth="8206.1.1"}
+	8222.1.1 = {add_trait=skilled_warrior}
+	8261.1.1 = {death="8261.1.1"}
+}
+41559257 = {
+	name="Козёл"
+	dynasty=559257
+	
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=35559257
+
+	8223.1.1 = {birth="8223.1.1"}
+	8239.1.1 = {add_trait=poor_warrior}
+	8272.1.1 = {death="8272.1.1"}
+}
+38559257 = {
+	name="Осёл"	# a lord
+	dynasty=559257
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=37559257
+
+	8225.1.1 = {birth="8225.1.1"}
+	8241.1.1 = {add_trait=trained_warrior}
+	8271.1.1 = {death="8271.1.1"}
+}
+39559257 = {
+	name="Медведь"	# not a lord
+	dynasty=559257
+
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=37559257
+
+	8227.1.1 = {birth="8227.1.1"}
+	8243.1.1 = {add_trait=poor_warrior}
+	8264.1.1 = {death="8264.1.1"}
+}
+40559257 = {
+	name="Жук"
+	dynasty=559257
+	
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=38559257
+
+	8243.1.1 = {birth="8243.1.1"}
+	8259.1.1 = {add_trait=poor_warrior}
+	8290.1.1 = {death = {death_reason = death_accident}}
+}
+43559257 = {
+	name="Косуля"
+	dynasty=559257
+	
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=38559257
+
+	8244.1.1 = {birth="8244.1.1"}
+	8260.1.1 = {add_trait=skilled_warrior}
+	8289.1.1 = {death="8289.1.1"}
+}
+44559257 = {
+	name="Козёл"
+	female=yes
+	dynasty=559257
+	
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=43559257
+
+	8278.1.1 = {birth="8278.1.1"}
+}
+45559257 = {
+	name="Единорог"
+	dynasty=559257
+	
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	father=43559257
+
+	8268.1.1 = {birth="8268.1.1"}
+	8284.1.1 = {add_trait=trained_warrior}
+}
+
+### Great Ice River
+340559354 = {
+	name="Досс"	# a lord
+	dynasty=559354
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	7830.1.1 = {birth="7830.1.1"}
+	7846.1.1 = {add_trait=poor_warrior}
+	7883.1.1 = {death="7883.1.1"}
+}
+341559354 = {
+	name="Миртл"	# a lord
+	female=yes
+	dynasty=559354
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=340559354
+
+	7849.1.1 = {birth="7849.1.1"}
+	7897.1.1 = {death="7897.1.1"}
+}
+342559354 = {
+	name="Кейн"	# a lord
+	dynasty=559354
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	mother=341559354
+
+	7869.1.1 = {birth="7869.1.1"}
+	7885.1.1 = {add_trait=poor_warrior}
+	7925.1.1 = {death="7925.1.1"}
+}
+345559354 = {
+	name="Хаггон"	# a lord
+	dynasty=559354
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=342559354
+
+	7905.1.1 = {birth="7905.1.1"}
+	7921.1.1 = {add_trait=skilled_warrior}
+	7971.1.1 = {death="7971.1.1"}
+}
+346559354 = {
+	name="Санса"	# a lord
+	female=yes
+	dynasty=559354
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=345559354
+
+	7929.1.1 = {birth="7929.1.1"}
+	7987.1.1 = {death="7987.1.1"}
+}
+10559354 = {
+	name="Геррик"	# a lord
+	dynasty=559354
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+	
+	mother=346559354
+
+	7963.1.1 = {birth="7963.1.1"}
+	7979.1.1 = {add_trait=skilled_warrior}
+	8019.1.1 = {death="8019.1.1"}
+}
+11559354 = {
+	name="Желвак"	# a lord
+	dynasty=559354
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=10559354
+
+	7986.1.1 = {birth="7986.1.1"}
+	8002.1.1 = {add_trait=trained_warrior}
+	8035.1.1 = {death="8035.1.1"}
+}
+13559354 = {
+	name="Берон"	# a lord
+	dynasty=559354
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=11559354
+
+	8012.1.1 = {birth="8012.1.1"}
+	8028.1.1 = {add_trait=skilled_warrior}
+	8066.1.1 = {death="8066.1.1"}
+}
+17559354 = {
+	name="Геррик"	# a lord
+	dynasty=559354
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=13559354
+
+	8036.1.1 = {birth="8036.1.1"}
+	8052.1.1 = {add_trait=skilled_warrior}
+	8101.1.1 = {death="8101.1.1"}
+}
+18559354 = {
+	name="Дан"	# a lord
+	dynasty=559354
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=17559354
+
+	8062.1.1 = {birth="8062.1.1"}
+	8078.1.1 = {add_trait=trained_warrior}
+	8120.1.1 = {death="8120.1.1"}
+}
+19559354 = {
+	name="Стив"	# a lord
+	dynasty=559354
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=18559354
+
+	8086.1.1 = {birth="8086.1.1"}
+	8102.1.1 = {add_trait=trained_warrior}
+	8141.1.1 = {death="8141.1.1"}
+}
+20559354 = {
+	name="Торген"	# a lord
+	dynasty=559354
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=19559354
+
+	8114.1.1 = {birth="8114.1.1"}
+	8130.1.1 = {add_trait=trained_warrior}
+	8174.1.1 = {death="8174.1.1"}
+}
+21559354 = {
+	name="Харлон"	# a lord
+	dynasty=559354
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=19559354
+
+	8115.1.1 = {birth="8115.1.1"}
+	8131.1.1 = {add_trait=skilled_warrior}
+	8177.1.1 = {death="8177.1.1"}
+}
+22559354 = {
+	name="Галбарт"	# not a lord
+	dynasty=559354
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=20559354
+
+	8148.1.1 = {birth="8148.1.1"}
+	8164.1.1 = {add_trait=poor_warrior}
+	8181.1.1 = {death="8181.1.1"}
+}
+25559354 = {
+	name="Куорен"	# a lord
+	dynasty=559354
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=21559354
+
+	8143.1.1 = {birth="8143.1.1"}
+	8159.1.1 = {add_trait=skilled_warrior}
+	8207.1.1 = {death = {death_reason = death_accident}}
+}
+27559354 = {
+	name="Альфин"	# a lord
+	dynasty=559354
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=22559354
+
+	8180.1.1 = {birth="8180.1.1"}
+	8196.1.1 = {add_trait=trained_warrior}
+	8231.1.1 = {death="8231.1.1"}
+}
+29559354 = {
+	name="Халис"	# a lord
+	dynasty=559354
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=27559354
+
+	8204.1.1 = {birth="8204.1.1"}
+	8220.1.1 = {add_trait=trained_warrior}
+	8267.1.1 = {death="8267.1.1"}
+}
+30559354 = {
+	name="Доррен"	# a lord
+	dynasty=559354
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=27559354
+
+	8207.1.1 = {birth="8207.1.1"}
+	8223.1.1 = {add_trait=trained_warrior}
+	8278.1.1 = {death="8278.1.1"}
+}
+31559354 = {
+	name="Морна"	# not a lord
+	female=yes
+	dynasty=559354
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=29559354
+
+	8233.1.1 = {birth="8233.1.1"}
+	8293.1.1 = {death="8293.1.1"}
+}
+32559354 = {
+	name="Реймунд"	# a lord
+	dynasty=559354
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=30559354
+
+	8234.1.1 = {birth="8234.1.1"}
+	8250.1.1 = {add_trait=poor_warrior}
+}
+34559354 = {
+	name="Халлис"	# not a lord
+	dynasty=559354
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=30559354
+
+	8236.1.1 = {birth="8236.1.1"}
+	8252.1.1 = {add_trait=skilled_warrior}
+	8274.1.1 = {death="8274.1.1"}
+}
+35559354 = {
+	name="Карлон"	# not a lord
+	dynasty=559354
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=32559354
+
+	8267.1.1 = {birth="8267.1.1"}
+	8283.1.1 = {add_trait=trained_warrior}
+}
+36559354 = {
+	name="Морна"	# not a lord
+	female=yes
+	dynasty=559354
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=32559354
+
+	8270.1.1 = {birth="8270.1.1"}
+}
+37559354 = {
+	name="Жойен"	# not a lord
+	dynasty=559354
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=32559354
+
+	8271.1.1 = {birth="8271.1.1"}
+	8287.1.1 = {add_trait=trained_warrior}
+}
+
+### The West Shelf
+340559357 = {
+	name="Гавен"	# a lord
+	dynasty=559357
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	7826.1.1 = {birth="7826.1.1"}
+	7842.1.1 = {add_trait=poor_warrior}
+	7880.1.1 = {death="7880.1.1"}
+}
+342559357 = {
+	name="Досс"	# a lord
+	dynasty=559357
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=340559357
+
+	7861.1.1 = {birth="7861.1.1"}
+	7877.1.1 = {add_trait=trained_warrior}
+	7921.1.1 = {death="7921.1.1"}
+}
+343559357 = {
+	name="Бриар"	# a lord
+	female=yes
+	dynasty=559357
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=342559357
+
+	7881.1.1 = {birth="7881.1.1"}
+	7939.1.1 = {death="7939.1.1"}
+}
+344559357 = {
+	name="Крастер"	# a lord
+	dynasty=559357
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	mother=343559357
+
+	7900.1.1 = {birth="7900.1.1"}
+	7916.1.1 = {add_trait=skilled_warrior}
+	7952.1.1 = {death="7952.1.1"}
+}
+345559357 = {
+	name="Гарисс"	# a lord
+	dynasty=559357
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=344559357
+
+	7935.1.1 = {birth="7935.1.1"}
+	7951.1.1 = {add_trait=poor_warrior}
+	7991.1.1 = {death="7991.1.1"}
+}
+10559357 = {
+	name="Квент"	# a lord
+	dynasty=559357
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+	
+	father=345559357
+
+	7974.1.1 = {birth="7974.1.1"}
+	7990.1.1 = {add_trait=trained_warrior}
+	8047.1.1 = {death="8047.1.1"}
+}
+11559357 = {
+	name="Геррик"	# a lord
+	dynasty=559357
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=10559357
+
+	7992.1.1 = {birth="7992.1.1"}
+	8008.1.1 = {add_trait=trained_warrior}
+	8069.1.1 = {death="8069.1.1"}
+}
+16559357 = {
+	name="Арсон"	# a lord
+	dynasty=559357
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=11559357
+
+	8017.1.1 = {birth="8017.1.1"}
+	8033.1.1 = {add_trait=skilled_warrior}
+	8078.1.1 = {death="8078.1.1"}
+}
+17559357 = {
+	name="Эррок"	# a lord
+	dynasty=559357
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=16559357
+
+	8039.1.1 = {birth="8039.1.1"}
+	8055.1.1 = {add_trait=trained_warrior}
+	8092.1.1 = {death="8092.1.1"}
+}
+19559357 = {
+	name="Ондри"	# a lord
+	dynasty=559357
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=17559357
+
+	8061.1.1 = {birth="8061.1.1"}
+	8077.1.1 = {add_trait=trained_warrior}
+	8097.1.1 = {death="8097.1.1"}
+}
+20559357 = {
+	name="Эйрон"	# a lord
+	dynasty=559357
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=19559357
+
+	8080.1.1 = {birth="8080.1.1"}
+	8096.1.1 = {add_trait=trained_warrior}
+	8128.1.1 = {death="8128.1.1"}
+}
+21559357 = {
+	name="Арсон"	# a lord
+	dynasty=559357
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=20559357
+
+	8106.1.1 = {birth="8106.1.1"}
+	8122.1.1 = {add_trait=trained_warrior}
+	8159.1.1 = {death="8159.1.1"}
+}
+22559357 = {
+	name="Хенк"	# a lord
+	dynasty=559357
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=21559357
+
+	8134.1.1 = {birth="8134.1.1"}
+	8150.1.1 = {add_trait=skilled_warrior}
+	8178.1.1 = {death = {death_reason = death_accident}}
+}
+23559357 = {
+	name="Горн"	# a lord
+	dynasty=559357
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=22559357
+
+	8163.1.1 = {birth="8163.1.1"}
+	8179.1.1 = {add_trait=poor_warrior}
+	8222.1.1 = {death = {death_reason = death_accident}}
+}
+25559357 = {
+	name="Баэль"	# a lord
+	dynasty=559357
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=23559357
+
+	8186.1.1 = {birth="8186.1.1"}
+	8202.1.1 = {add_trait=trained_warrior}
+	8265.1.1 = {death="8265.1.1"}
+}
+27559357 = {
+	name="Джиор"	# not a lord
+	dynasty=559357
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=23559357
+
+	8191.1.1 = {birth="8191.1.1"}
+	8207.1.1 = {add_trait=trained_warrior}
+	8226.1.1 = {death="8226.1.1"}
+}
+28559357 = {
+	name="Гавин"	# not a lord
+	dynasty=559357
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=25559357
+
+	8209.1.1 = {birth="8209.1.1"}
+	8225.1.1 = {add_trait=trained_warrior}
+	8265.1.1 = {death="8265.1.1"}
+}
+30559357 = {
+	name="Торегг"	# a lord
+	dynasty=559357
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=28559357
+
+	8234.1.1 = {birth="8234.1.1"}
+	8250.1.1 = {add_trait=trained_warrior}
+	8300.1.1 = {death="8300.1.1"}
+}
+31559357 = {
+	name="Артор"	# a lord
+	dynasty=559357
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=30559357
+
+	8253.1.1 = {birth="8253.1.1"}
+	8269.1.1 = {add_trait=trained_warrior}
+}
+32559357 = {
+	name="Галбарт"	# not a lord
+	dynasty=559357
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=30559357
+
+	8255.1.1 = {birth="8255.1.1"}
+	8271.1.1 = {add_trait=poor_warrior}
+}
+33559357 = {
+	name="Дайвен"	# not a lord
+	dynasty=559357
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=31559357
+
+	8279.1.1 = {birth="8279.1.1"}
+	8295.1.1 = {add_trait=poor_warrior}
+}
+34559357 = {
+	name="Меджер"	# not a lord
+	dynasty=559357
+
+	religion="beyond_wall_old_gods"
+	culture="cannibal_clan"
+
+	father=31559357
+
+	8282.1.1 = {birth="8282.1.1"}
+	8298.1.1 = {add_trait=trained_warrior}
+}
+
+### Shivering Forest
+340559161 = {
+	name="Дормунд"	# a lord
+	dynasty=559161
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	7835.1.1 = {birth="7835.1.1"}
+	7851.1.1 = {add_trait=poor_warrior}
+	7884.1.1 = {death="7884.1.1"}
+}
+342559161 = {
+	name="Эррок"	# a lord
+	dynasty=559161
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=340559161
+
+	7857.1.1 = {birth="7857.1.1"}
+	7873.1.1 = {add_trait=skilled_warrior}
+	7896.1.1 = {death="7896.1.1"}
+}
+345559161 = {
+	name="Торвинд"	# a lord
+	dynasty=559161
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=342559161
+
+	7881.1.1 = {birth="7881.1.1"}
+	7897.1.1 = {add_trait=poor_warrior}
+	7928.1.1 = {death="7928.1.1"}
+}
+346559161 = {
+	name="Уолтон"	# a lord
+	dynasty=559161
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=345559161
+
+	7911.1.1 = {birth="7911.1.1"}
+	7927.1.1 = {add_trait=trained_warrior}
+	7987.1.1 = {death="7987.1.1"}
+}
+347559161 = {
+	name="Сорен"	# a lord
+	dynasty=559161
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=346559161
+
+	7936.1.1 = {birth="7936.1.1"}
+	7962.1.1 = {add_trait=trained_warrior}
+	8010.1.1 = {death="8010.1.1"}
+}
+10559161 = {
+	name="Торегг"	# a lord
+	dynasty=559161
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=347559161
+
+	7958.1.1 = {birth="7958.1.1"}
+	7974.1.1 = {add_trait=skilled_warrior}
+	8015.1.1 = {death="8015.1.1"}
+}
+11559161 = {
+	name="Торвинд"	# a lord
+	dynasty=559161
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=10559161
+
+	7993.1.1 = {birth="7993.1.1"}
+	8009.1.1 = {add_trait=trained_warrior}
+	8038.1.1 = {death="8038.1.1"}
+}
+12559161 = {
+	name="Хаггон"	# not a lord
+	dynasty=559161
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=10559161
+
+	7994.1.1 = {birth="7994.1.1"}
+	8010.1.1 = {add_trait=trained_warrior}
+	8023.1.1 = {death="8023.1.1"}
+}
+13559161 = {
+	name="Джорамун"	# a lord
+	dynasty=559161
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=11559161
+
+	8018.1.1 = {birth="8018.1.1"}
+	8034.1.1 = {add_trait=trained_warrior}
+	8068.1.1 = {death="8068.1.1"}
+}
+14559161 = {
+	name="Изилла"	# not a lord
+	female=yes
+	dynasty=559161
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=13559161
+
+	8051.1.1 = {birth="8051.1.1"}
+	8085.1.1 = {death="8085.1.1"}
+}
+15559161 = {
+	name="Куорт"	# not a lord
+	dynasty=559161
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=12559161
+
+	8014.1.1 = {birth="8014.1.1"}
+	8030.1.1 = {add_trait=skilled_warrior}
+	8047.1.1 = {death="8047.1.1"}
+}
+19559161 = {
+	name="Ярл"	# a lord
+	dynasty=559161
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=15559161
+
+	8046.1.1 = {birth="8046.1.1"}
+	8062.1.1 = {add_trait=trained_warrior}
+	8081.1.1 = {death="8081.1.1"}
+}
+20559161 = {
+	name="Квент"	# a lord
+	dynasty=559161
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=19559161
+
+	8069.1.1 = {birth="8069.1.1"}
+	8085.1.1 = {add_trait=skilled_warrior}
+	8115.1.1 = {death="8115.1.1"}
+}
+23559161 = {
+	name="Оуэн"	# a lord
+	dynasty=559161
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=20559161
+
+	8096.1.1 = {birth="8096.1.1"}
+	8112.1.1 = {add_trait=poor_warrior}
+	8170.1.1 = {death="8170.1.1"}
+}
+24559161 = {
+	name="Ленал"	# a lord
+	dynasty=559161
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=23559161
+
+	8123.1.1 = {birth="8123.1.1"}
+	8139.1.1 = {add_trait=trained_warrior}
+	8183.1.1 = {death="8183.1.1"}
+}
+26559161 = {
+	name="Досс"	# a lord
+	dynasty=559161
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=24559161
+
+	8151.1.1 = {birth="8151.1.1"}
+	8167.1.1 = {add_trait=trained_warrior}
+	8192.1.1 = {death="8192.1.1"}
+}
+31559161 = {
+	name="Морс"	# a lord
+	dynasty=559161
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=26559161
+
+	8180.1.1 = {birth="8180.1.1"}
+	8196.1.1 = {add_trait=trained_warrior}
+	8228.1.1 = {death="8228.1.1"}
+}
+32559161 = {
+	name="Рик"	# a lord
+	dynasty=559161
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=31559161
+
+	8200.1.1 = {birth="8200.1.1"}
+	8216.1.1 = {add_trait=skilled_warrior}
+	8266.1.1 = {death="8266.1.1"}
+}
+33559161 = {
+	name="Сорен"	# a lord
+	dynasty=559161
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=31559161
+
+	8202.1.1 = {birth="8202.1.1"}
+	8218.1.1 = {add_trait=skilled_warrior}
+	8273.1.1 = {death="8273.1.1"}
+}
+36559161 = {
+	name="Эйрон"	# a lord
+	dynasty=559161
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=33559161
+
+	8232.1.1 = {birth="8232.1.1"}
+	8248.1.1 = {add_trait=trained_warrior}
+	8288.1.1 = {death="8288.1.1"}
+}
+38559161 = {
+	name="Морс"	# a lord
+	dynasty=559161
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=33559161
+
+	8237.1.1 = {birth="8237.1.1"}
+	8253.1.1 = {add_trait=poor_warrior}
+}
+39559161 = {
+	name="Изилла"	# not a lord
+	female=yes
+	dynasty=559161
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=36559161
+
+	8263.1.1 = {birth="8263.1.1"}
+}
+40559161 = {
+	name="Жиана"
+	female=yes
+	dynasty=559161
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=38559161
+
+	8265.1.1 = {birth="8265.1.1"}
+}
+41559161 = {
+	name="Орелл"
+	dynasty=559161
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=38559161
+
+	8268.1.1 = {birth="8268.1.1"}
+	8284.1.1 = {add_trait=trained_warrior}
+}
+42559161 = {
+	name="Стир"
+	dynasty=559161
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=38559161
+
+	8269.1.1 = {birth="8269.1.1"}
+	8285.1.1 = {add_trait=poor_warrior}
+}
+
+### Free Vale
+340559165 = {
+	name="Брогг"	# a lord
+	dynasty=559165
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	7820.1.1 = {birth="7820.1.1"}
+	7836.1.1 = {add_trait=poor_warrior}
+	7871.1.1 = {death="7871.1.1"}
+}
+342559165 = {
+	name="Хармонд"	# a lord
+	dynasty=559165
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=340559165
+
+	7857.1.1 = {birth="7857.1.1"}
+	7873.1.1 = {add_trait=trained_warrior}
+	7922.1.1 = {death="7922.1.1"}
+}
+344559165 = {
+	name="Хеллек"	# a lord
+	dynasty=559165
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=342559165
+
+	7878.1.1 = {birth="7878.1.1"}
+	7894.1.1 = {add_trait=trained_warrior}
+	7944.1.1 = {death="7944.1.1"}
+}
+345559165 = {
+	name="Торегг"	# a lord
+	dynasty=559165
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=344559165
+
+	7904.1.1 = {birth="7904.1.1"}
+	7920.1.1 = {add_trait=poor_warrior}
+	7946.1.1 = {death="7946.1.1"}
+}
+346559165 = {
+	name="Миртл"	# a lord
+	female=yes
+	dynasty=559165
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=345559165
+
+	7937.1.1 = {birth="7937.1.1"}
+	7992.1.1 = {death = {death_reason = death_accident}}
+}
+10559165 = {
+	name="Хенк"	# a lord
+	dynasty=559165
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	mother=346559165
+	
+	7971.1.1 = {birth="7971.1.1"}
+	7987.1.1 = {add_trait=trained_warrior}
+	8021.1.1 = {death="8021.1.1"}
+}
+12559165 = {
+	name="Гарет"	# a lord
+	dynasty=559165
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=10559165
+
+	7990.1.1 = {birth="7990.1.1"}
+	8006.1.1 = {add_trait=trained_warrior}
+	8024.1.1 = {death = {death_reason = death_battle}}
+}
+13559165 = {
+	name="Уолтон"	# a lord
+	dynasty=559165
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=12559165
+
+	8008.1.1 = {birth="8008.1.1"}
+	8024.1.1 = {add_trait=trained_warrior}
+	8053.1.1 = {death="8053.1.1"}
+}
+14559165 = {
+	name="Арсон"	# a lord
+	dynasty=559165
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=13559165
+
+	8036.1.1 = {birth="8036.1.1"}
+	8052.1.1 = {add_trait=poor_warrior}
+	8089.1.1 = {death="8089.1.1"}
+}
+15559165 = {
+	name="Досс"	# a lord
+	dynasty=559165
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=14559165
+
+	8062.1.1 = {birth="8062.1.1"}
+	8078.1.1 = {add_trait=poor_warrior}
+	8118.1.1 = {death="8118.1.1"}
+}
+16559165 = {
+	name="Манс"	# a lord
+	dynasty=559165
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=14559165
+
+	8065.1.1 = {birth="8065.1.1"}
+	8081.1.1 = {add_trait=skilled_warrior}
+	8134.1.1 = {death="8134.1.1"}
+}
+18559165 = {
+	name="Боджер"	# not a lord
+	dynasty=559165
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=15559165
+
+	8084.1.1 = {birth="8084.1.1"}
+	8100.1.1 = {add_trait=skilled_warrior}
+	8133.1.1 = {death = {death_reason = death_battle}}
+}
+22559165 = {
+	name="Вейон"	# a lord
+	dynasty=559165
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=18559165
+
+	8115.1.1 = {birth="8115.1.1"}
+	8131.1.1 = {add_trait=skilled_warrior}
+	8166.1.1 = {death="8166.1.1"}
+}
+23559165 = {
+	name="Эйрон"	# not a lord
+	dynasty=559165
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=22559165
+
+	8139.1.1 = {birth="8139.1.1"}
+	8155.1.1 = {add_trait=poor_warrior}
+	8176.1.1 = {death="8176.1.1"}
+}
+24559165 = {
+	name="Сигорн"	# a lord
+	dynasty=559165
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=22559165
+
+	8142.1.1 = {birth="8142.1.1"}
+	8158.1.1 = {add_trait=skilled_warrior}
+	8191.1.1 = {death="8191.1.1"}
+}
+25559165 = {
+	name="Ленал"	# a lord
+	dynasty=559165
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=23559165
+
+	8166.1.1 = {birth="8166.1.1"}
+	8182.1.1 = {add_trait=trained_warrior}
+	8213.1.1 = {death="8213.1.1"}
+}
+26559165 = {
+	name="Ондри"	# a lord
+	dynasty=559165
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=24559165
+
+	8165.1.1 = {birth="8165.1.1"}
+	8181.1.1 = {add_trait=skilled_warrior}
+	8196.1.1 = {death="8196.1.1"}
+}
+28559165 = {
+	name="Манс"	# a lord
+	dynasty=559165
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=25559165
+
+	8194.1.1 = {birth="8194.1.1"}
+	8210.1.1 = {add_trait=trained_warrior}
+	8243.1.1 = {death="8243.1.1"}
+}
+30559165 = {
+	name="Куорт"	# a lord
+	dynasty=559165
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=28559165
+
+	8221.1.1 = {birth="8221.1.1"}
+	8237.1.1 = {add_trait=trained_warrior}
+	8273.1.1 = {death="8273.1.1"}
+}
+32559165 = {
+	name="Дел"	# a lord
+	dynasty=559165
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=30559165
+
+	8242.1.1 = {birth="8242.1.1"}
+	8258.1.1 = {add_trait=poor_warrior}
+	8290.1.1 = {death="8290.1.1"}
+}
+33559165 = {
+	name="Вейон"	# a lord
+	dynasty=559165
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=32559165
+
+	8270.1.1 = {birth="8270.1.1"}
+	8286.1.1 = {add_trait=skilled_warrior}
+}
+35559165 = {
+	name="Альфин"	# not a lord
+	dynasty=559165
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	father=32559165
+
+	8274.1.1 = {birth="8274.1.1"}
+	8290.1.1 = {add_trait=poor_warrior}
+}
+
+### Antler Vale
+340559301 = {
+	name="Рик"	# a lord
+	dynasty=559301
+
+	religion="beyond_wall_old_gods"
+	culture="hornfoot"
+
+	7837.1.1 = {birth="7837.1.1"}
+	7853.1.1 = {add_trait=poor_warrior}
+	7884.1.1 = {death="7884.1.1"}
+}
+341559301 = {
+	name="Эсгред"	# a lord
+	female=yes
+	dynasty=559301
+
+	religion="beyond_wall_old_gods"
+	culture="hornfoot"
+
+	father=340559301
+
+	7863.1.1 = {birth="7863.1.1"}
+	7948.1.1 = {death="7948.1.1"}
+}
+342559301 = {
+	name="Ленал"	# a lord
+	dynasty=559301
+
+	religion="beyond_wall_old_gods"
+	culture="hornfoot"
+
+	mother=341559301
+
+	7921.1.1 = {birth="7921.1.1"}
+	7937.1.1 = {add_trait=trained_warrior}
+	7972.1.1 = {death="7972.1.1"}
+}
+10559301 = {
+	name="Дрин"	# a lord
+	dynasty=559301
+
+	religion="beyond_wall_old_gods"
+	culture="hornfoot"
+
+	father=342559301
+	
+	7955.1.1 = {birth="7955.1.1"}
+	7971.1.1 = {add_trait=trained_warrior}
+	8020.1.1 = {death="8020.1.1"}
+}
+11559301 = {
+	name="Тормунд"	# a lord
+	dynasty=559301
+
+	religion="beyond_wall_old_gods"
+	culture="hornfoot"
+
+	father=10559301
+
+	7981.1.1 = {birth="7981.1.1"}
+	7997.1.1 = {add_trait=trained_warrior}
+	8038.1.1 = {death="8038.1.1"}
+}
+13559301 = {
+	name="Жойен"	# a lord
+	dynasty=559301
+
+	religion="beyond_wall_old_gods"
+	culture="hornfoot"
+
+	father=11559301
+
+	8009.1.1 = {birth="8009.1.1"}
+	8025.1.1 = {add_trait=skilled_warrior}
+	8067.1.1 = {death="8067.1.1"}
+}
+15559301 = {
+	name="Келон"	# a lord
+	dynasty=559301
+
+	religion="beyond_wall_old_gods"
+	culture="hornfoot"
+
+	father=13559301
+
+	8046.1.1 = {birth="8046.1.1"}
+	8062.1.1 = {add_trait=trained_warrior}
+	8101.1.1 = {death="8101.1.1"}
+}
+16559301 = {
+	name="Стив"	# a lord
+	dynasty=559301
+
+	religion="beyond_wall_old_gods"
+	culture="hornfoot"
+
+	father=15559301
+
+	8075.1.1 = {birth="8075.1.1"}
+	8091.1.1 = {add_trait=poor_warrior}
+	8135.1.1 = {death="8135.1.1"}
+}
+17559301 = {
+	name="Меджер"	# a lord
+	dynasty=559301
+
+	religion="beyond_wall_old_gods"
+	culture="hornfoot"
+
+	father=15559301
+
+	8076.1.1 = {birth="8076.1.1"}
+	8092.1.1 = {add_trait=poor_warrior}
+	8156.1.1 = {death="8156.1.1"}
+}
+19559301 = {
+	name="Дел"	# a lord
+	dynasty=559301
+
+	religion="beyond_wall_old_gods"
+	culture="hornfoot"
+
+	father=17559301
+
+	8097.1.1 = {birth="8097.1.1"}
+	8113.1.1 = {add_trait=trained_warrior}
+	8166.1.1 = {death="8166.1.1"}
+}
+22559301 = {
+	name="Бернарр"	# not a lord
+	dynasty=559301
+
+	religion="beyond_wall_old_gods"
+	culture="hornfoot"
+
+	father=19559301
+
+	8116.1.1 = {birth="8116.1.1"}
+	8132.1.1 = {add_trait=skilled_warrior}
+	8140.1.1 = {death = {death_reason = death_battle}}
+}
+23559301 = {
+	name="Брогг"	# a lord
+	dynasty=559301
+
+	religion="beyond_wall_old_gods"
+	culture="hornfoot"
+
+	father=22559301
+
+	8140.1.1 = {birth="8140.1.1"}
+	8156.1.1 = {add_trait=trained_warrior}
+	8204.1.1 = {death="8204.1.1"}
+}
+25559301 = {
+	name="Арсон"	# a lord
+	dynasty=559301
+
+	religion="beyond_wall_old_gods"
+	culture="hornfoot"
+
+	father=23559301
+
+	8171.1.1 = {birth="8171.1.1"}
+	8187.1.1 = {add_trait=poor_warrior}
+	8233.1.1 = {death="8233.1.1"}
+}
+29559301 = {
+	name="Арнольф"	# not a lord
+	dynasty=559301
+
+	religion="beyond_wall_old_gods"
+	culture="hornfoot"
+
+	father=25559301
+
+	8194.1.1 = {birth="8194.1.1"}
+	8210.1.1 = {add_trait=trained_warrior}
+	8228.1.1 = {death="8228.1.1"}
+}
+30559301 = {
+	name="Хоуд"	# a lord
+	dynasty=559301
+
+	religion="beyond_wall_old_gods"
+	culture="hornfoot"
+
+	father=29559301
+
+	8216.1.1 = {birth="8216.1.1"}
+	8232.1.1 = {add_trait=trained_warrior}
+	8273.1.1 = {death="8273.1.1"}
+}
+31559301 = {
+	name="Сорен"	# a lord
+	dynasty=559301
+
+	religion="beyond_wall_old_gods"
+	culture="hornfoot"
+
+	father=30559301
+
+	8245.1.1 = {birth="8245.1.1"}
+	8261.1.1 = {add_trait=skilled_warrior}
+	8289.1.1 = {death="8289.1.1"}
+}
+32559301 = {
+	name="Уаллен"	# not a lord
+	dynasty=559301
+
+	religion="beyond_wall_old_gods"
+	culture="hornfoot"
+
+	father=30559301
+
+	8246.1.1 = {birth="8246.1.1"}
+	8262.1.1 = {add_trait=trained_warrior}
+	8294.1.1 = {death="8294.1.1"}
+}
+33559301 = {
+	name="Эррок"	# a lord
+	dynasty=559301
+
+	religion="beyond_wall_old_gods"
+	culture="hornfoot"
+
+	father=31559301
+
+	8264.1.1 = {birth="8264.1.1"}
+	8280.1.1 = {add_trait=trained_warrior}
+}
+34559301 = {
+	name="Харль"	# not a lord
+	dynasty=559301
+
+	religion="beyond_wall_old_gods"
+	culture="hornfoot"
+
+	father=31559301
+
+	8265.1.1 = {birth="8265.1.1"}
+	8281.1.1 = {add_trait=trained_warrior}
+}
+36559301 = {
+	name="Рик"	# not a lord
+	dynasty=559301
+
+	religion="beyond_wall_old_gods"
+	culture="hornfoot"
+
+	father=33559301
+
+	8295.1.1 = {birth="8295.1.1"}
+	8311.1.1 = {add_trait=trained_warrior}
+}
+
+### Night Valleys
+340560345 = {
+	name="Дормунд"	# a lord
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	7830.1.1 = {birth="7830.1.1"}
+	7846.1.1 = {add_trait=poor_warrior}
+	7877.1.1 = {death="7877.1.1"}
+}
+341560345 = {
+	name="Куорт"	# a lord
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	father=340560345
+
+	7850.1.1 = {birth="7850.1.1"}
+	7866.1.1 = {add_trait=skilled_warrior}
+	7894.1.1 = {death="7894.1.1"}
+}
+342560345 = {
+	name="Джосет"	# a lord
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	father=341560345
+
+	7879.1.1 = {birth="7879.1.1"}
+	7895.1.1 = {add_trait=poor_warrior}
+	7904.1.1 = {death = {death_reason = death_battle}}
+}
+343560345 = {
+	name="Харлон"	# a lord
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	father=342560345
+
+	7898.1.1 = {birth="7898.1.1"}
+	7914.1.1 = {add_trait=poor_warrior}
+	7963.1.1 = {death="7963.1.1"}
+}
+344560345 = {
+	name="Ция"	# a lord
+	female=yes
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	father=343560345
+
+	7924.1.1 = {birth="7924.1.1"}
+	7980.1.1 = {death="7980.1.1"}
+}
+345560345 = {
+	name="Джорамун"	# a lord
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	mother=344560345
+
+	7948.1.1 = {birth="7948.1.1"}
+	7967.1.1 = {add_trait=trained_warrior}
+	7996.1.1 = {death="7996.1.1"}
+}
+10560345 = {
+	name="Брогг"	# a lord
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	father=345560345
+	
+	7965.1.1 = {birth="7965.1.1"}
+	7991.1.1 = {add_trait=skilled_warrior}
+	8021.1.1 = {death = {death_reason = death_battle}}
+}
+11560345 = {
+	name="Торвинд"	# a lord
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	father=10560345
+
+	7994.1.1 = {birth="7994.1.1"}
+	8010.1.1 = {add_trait=skilled_warrior}
+	8049.1.1 = {death="8049.1.1"}
+}
+12560345 = {
+	name="Желвак"	# a lord
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	father=10560345
+
+	7997.1.1 = {birth="7997.1.1"}
+	8013.1.1 = {add_trait=trained_warrior}
+	8074.1.1 = {death="8074.1.1"}
+}
+14560345 = {
+	name="Йорен"	# not a lord
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	father=12560345
+
+	8019.1.1 = {birth="8019.1.1"}
+	8035.1.1 = {add_trait=trained_warrior}
+	8073.1.1 = {death="8073.1.1"}
+}
+15560345 = {
+	name="Брогг"	# a lord
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	father=12560345
+
+	8020.1.1 = {birth="8020.1.1"}
+	8036.1.1 = {add_trait=trained_warrior}
+	8077.1.1 = {death="8077.1.1"}
+}
+20560345 = {
+	name="Дормунд"	# a lord
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	father=15560345
+
+	8048.1.1 = {birth="8048.1.1"}
+	8064.1.1 = {add_trait=trained_warrior}
+	8108.1.1 = {death="8108.1.1"}
+}
+22560345 = {
+	name="Ондри"	# a lord
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	father=20560345
+
+	8069.1.1 = {birth="8069.1.1"}
+	8085.1.1 = {add_trait=poor_warrior}
+	8132.1.1 = {death="8132.1.1"}
+}
+23560345 = {
+	name="Жойен"	# a lord
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	father=22560345
+
+	8102.1.1 = {birth="8102.1.1"}
+	8118.1.1 = {add_trait=skilled_warrior}
+	8166.1.1 = {death="8166.1.1"}
+}
+24560345 = {
+	name="Желвак"	# a lord
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	father=23560345
+
+	8130.1.1 = {birth="8130.1.1"}
+	8146.1.1 = {add_trait=skilled_warrior}
+	8189.1.1 = {death="8189.1.1"}
+}
+25560345 = {
+	name="Галбарт"	# a lord
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	father=24560345
+
+	8148.1.1 = {birth="8148.1.1"}
+	8164.1.1 = {add_trait=trained_warrior}
+	8200.1.1 = {death="8200.1.1"}
+}
+28560345 = {
+	name="Дел"	# a lord
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	father=25560345
+
+	8174.1.1 = {birth="8174.1.1"}
+	8190.1.1 = {add_trait=trained_warrior}
+	8219.1.1 = {death="8219.1.1"}
+}
+29560345 = {
+	name="Желвак"	# a lord
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	father=28560345
+
+	8208.1.1 = {birth="8208.1.1"}
+	8224.1.1 = {add_trait=skilled_warrior}
+	8273.1.1 = {death="8273.1.1"}
+}
+31560345 = {
+	name="Эррок"	# a lord
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	father=29560345
+
+	8235.1.1 = {birth="8235.1.1"}
+	8251.1.1 = {add_trait=trained_warrior}
+	8286.1.1 = {death="8286.1.1"}
+}
+32560345 = {
+	name="Реймунд"	# not a lord
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	father=29560345
+
+	8236.1.1 = {birth="8236.1.1"}
+	8252.1.1 = {add_trait=poor_warrior}
+	8257.1.1 = {death = {death_reason = death_battle}}
+}
+33560345 = {
+	name="Френья"	# not a lord
+	female=yes
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	father=31560345
+
+	8268.1.1 = {birth="8268.1.1"}
+	8314.1.1 = {death="8314.1.1"}
+}
+34560345 = {
+	name="Уаллен"	# a lord
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	father=32560345
+
+	8255.1.1 = {birth="8255.1.1"}
+	8271.1.1 = {add_trait=trained_warrior}
+}
+36560345 = {
+	name="Галбарт"	# not a lord
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	father=32560345
+
+	8257.1.1 = {birth="8257.1.1"}
+	8273.1.1 = {add_trait=trained_warrior}
+}
+37560345 = {
+	name="Бернарр"	# not a lord
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	father=34560345
+
+	8282.1.1 = {birth="8282.1.1"}
+	8298.1.1 = {add_trait=trained_warrior}
+}
+40560345 = {
+	name="Сигорн"
+	dynasty=560345
+
+	religion="beyond_wall_old_gods"
+	culture="nightrunner"
+
+	father=34560345
+
+	8287.1.1 = {birth="8287.1.1"}
+	8303.1.1 = {add_trait=poor_warrior}
+}

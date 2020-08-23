@@ -1,0 +1,19 @@
+#Triggered in Lord Peake's History entry due to this not working
+
+# name = "Восстание Пика"
+
+# casus_belli={
+	# casus_belli=depose_liege
+	# actor=3027298 #Lord Peake
+	# recipient=77031 #Maekar I
+	# date=8233.1.1
+# }
+
+# 8233.1.1 = {
+	# add_defender = 77031 #Maekar I
+	# add_attacker = 3027298 #Lord Peake
+# }
+# 8233.6.1 = {
+	# rem_defender = 77031 #Maekar I
+	# rem_attacker = 3027298 #Lord Peake	
+# }

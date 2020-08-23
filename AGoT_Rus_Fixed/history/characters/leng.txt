@@ -1,0 +1,1798 @@
+### House Alhazred - Empresses of Leng
+34055963 = {
+	name="Лавиния"	# a lord
+	female=yes
+	dynasty=55963
+
+	religion="yiti_gods"
+	culture="lengi"
+	
+	add_trait = tall
+
+	7821.1.1 = {birth="7821.1.1"}
+	7841.1.1 = {add_matrilineal_spouse=44055963}
+	7885.1.1 = {death="7885.1.1"}
+}
+44055963 = {
+	name="Ван"
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	7821.1.1 = {birth="7821.1.1"}
+	7837.1.1 = {add_trait=trained_warrior}
+	7885.1.1 = {death="7885.1.1"}
+}
+15055963 = {
+	name="Киара"	# The great
+	female=yes
+	dynasty=55963
+	
+	father=44055963
+	mother=34055963
+	
+	martial = 5
+	diplomacy = 8
+	stewardship = 8
+	intrigue = 7
+	learning = 6
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	add_trait = fair
+	add_trait = tall
+	add_trait = grey_eminence
+	add_trait = just
+	add_trait = humble
+	add_trait = diligent
+	
+	7865.1.1 = {birth="7865.1.1"}
+	7887.1.1 = {give_nickname = nick_the_great}
+	7902.1.1 = {add_matrilineal_spouse=45055963}
+	7921.1.1 = {death="7921.1.1"}
+}
+45055963 = {
+	name="Ганг"
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	7865.1.1 = {birth="7865.1.1"}
+	7891.1.1 = {add_trait=trained_warrior}
+	7921.1.1 = {death="7921.1.1"}
+}
+15155963 = {
+	name="Туруа"	# a lord
+	female=yes
+	dynasty=55963
+
+	religion="yiti_gods"
+	culture="lengi"
+	
+	mother=15055963
+	father=45055963
+
+	7905.1.1 = {birth="7905.1.1"}
+	7926.1.1 = {add_matrilineal_spouse=45155963}
+	7962.1.1 = {death="7962.1.1"}
+}
+45155963 = {
+	name="Чинь"
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	7905.1.1 = {birth="7905.1.1"}
+	7921.1.1 = {add_trait=trained_warrior}
+	7962.1.1 = {death="7962.1.1"}
+}
+15255963 = {
+	name="Лавиния"	# a lord
+	female=yes
+	dynasty=55963
+
+	religion="yiti_gods"
+	culture="lengi"
+	
+	mother=15155963
+	father=45155963
+	
+	add_trait = tall
+
+	7931.1.1 = {birth="7931.1.1"}
+	7951.1.1 = {add_matrilineal_spouse=45255963}
+	7995.1.1 = {death="7995.1.1"}
+}
+45255963 = {
+	name="Ван"
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	7931.1.1 = {birth="7931.1.1"}
+	7947.1.1 = {add_trait=trained_warrior}
+	7995.1.1 = {death="7995.1.1"}
+}
+10055963 = {
+	name="Кассогта"	# a lord
+	female=yes
+	dynasty=55963
+
+	religion="yiti_gods"
+	culture="lengi"
+	
+	mother=15255963
+	father=45255963
+	
+	add_trait = tall
+
+	7965.1.1 = {birth="7965.1.1"}
+	7983.1.1 = {add_matrilineal_spouse=40055963}
+	8031.1.1 = {death="8031.1.1"}
+}
+40055963 = {
+	name="Ту"
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	7965.1.1 = {birth="7965.1.1"}
+	7981.1.1 = {add_trait=poor_warrior}
+	8031.1.1 = {death="8031.1.1"}
+}
+10255963 = {
+	name="Киара"	# a lord
+	female=yes
+	dynasty=55963
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	mother=10055963
+	father=40055963
+
+	7991.1.1 = {birth="7991.1.1"}
+	8009.1.1 = {add_matrilineal_spouse=40255963}
+	8039.1.1 = {death="8039.1.1"}
+}
+40255963 = {
+	name="Трук"
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	7991.1.1 = {birth="7991.1.1"}
+	8007.1.1 = {add_trait=poor_warrior}
+	8039.1.1 = {death="8039.1.1"}
+}
+10655963 = {
+	name="Дзева"	# a lord
+	female=yes
+	dynasty=55963
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	mother=10255963
+	father=40255963
+	
+	add_trait = tall
+
+	8016.1.1 = {birth="8016.1.1"}
+	8034.1.1 = {add_matrilineal_spouse=40655963}
+	8075.1.1 = {death="8075.1.1"}
+}
+40655963 = {
+	name="Хаи"
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	8016.1.1 = {birth="8016.1.1"}
+	8032.1.1 = {add_trait=poor_warrior}
+	8075.1.1 = {death="8075.1.1"}
+}
+10755963 = {
+	name="Лавиния"
+	female=yes
+	dynasty=55963
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	mother=10655963
+	father=40655963
+
+	8040.1.1 = {birth="8040.1.1"}
+	8056.1.1 = {add_trait=poor_warrior}
+	8058.1.1 = {add_matrilineal_spouse=40755963}
+	8096.1.1 = {death = {death_reason = death_murder}}
+}
+40755963 = {
+	name="Санг"	# a lord
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	8040.1.1 = {birth="8040.1.1"}
+	8096.1.1 = {death="8096.1.1"}
+}
+10855963 = {
+	name="Ктилла"	# a lord
+	female=yes
+	dynasty=55963
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	mother=10755963
+	father=40755963
+
+	8072.1.1 = {birth="8072.1.1"}
+	8090.1.1 = {add_matrilineal_spouse=40855963}
+	8126.1.1 = {death = {death_reason = death_murder}}
+}
+40855963 = {
+	name="Дук"
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	8072.1.1 = {birth="8072.1.1"}
+	8088.1.1 = {add_trait=poor_warrior}
+	8126.1.1 = {death="8126.1.1"}
+}
+11255963 = {
+	name="Киара"	# a lord
+	female=yes
+	dynasty=55963
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	mother=10855963
+	father=40855963
+	
+	add_trait = tall
+
+	8092.1.1 = {birth="8092.1.1"}
+	8110.1.1 = {add_matrilineal_spouse=41255963}
+	8147.1.1 = {death="8147.1.1"}
+}
+41255963 = {
+	name="Бо"
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	8092.1.1 = {birth="8092.1.1"}
+	8108.1.1 = {add_trait=poor_warrior}
+	8147.1.1 = {death="8147.1.1"}
+}
+11655963 = {
+	name="Цанту"	# a lord
+	female=yes
+	dynasty=55963
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	mother=11255963
+	father=41255963
+	
+	add_trait = tall
+
+	8114.1.1 = {birth="8114.1.1"}
+	8132.1.1 = {add_matrilineal_spouse=41655963}
+	8177.1.1 = {death="8177.1.1"}
+}
+41655963 = {
+	name="Транг"
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	8114.1.1 = {birth="8114.1.1"}
+	8130.1.1 = {add_trait=poor_warrior}
+	8177.1.1 = {death="8177.1.1"}
+}
+11855963 = {
+	name="Туруа"	# a lord
+	female=yes
+	dynasty=55963
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	mother=11655963
+	father=41655963
+	
+	add_trait = tall
+
+	8143.1.1 = {birth="8143.1.1"}
+	8161.1.1 = {add_matrilineal_spouse=41855963}
+	8197.1.1 = {death="8197.1.1"}
+}
+41855963 = {
+	name="Санг"
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	8143.1.1 = {birth="8143.1.1"}
+	8159.1.1 = {add_trait=poor_warrior}
+	8197.1.1 = {death="8197.1.1"}
+}
+12055963 = {
+	name="Танароа"	# a lord
+	female=yes
+	dynasty=55963
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	mother=11855963
+	father=41855963
+
+	8170.1.1 = {birth="8170.1.1"}
+	8188.1.1 = {add_matrilineal_spouse=42055963}
+	8221.1.1 = {death="8221.1.1"}
+}
+42055963 = {
+	name="Цонг"
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	8170.1.1 = {birth="8170.1.1"}
+	8186.1.1 = {add_trait=poor_warrior}
+	8221.1.1 = {death="8221.1.1"}
+}
+12255963 = {
+	name="Дигра"	# a lord
+	female=yes
+	dynasty=55963
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	mother=12055963
+	father=42055963
+
+	8204.1.1 = {birth="8204.1.1"}
+	8222.1.1 = {add_matrilineal_spouse=42255963}
+	8265.1.1 = {death="8265.1.1"}
+}
+42255963 = {
+	name="Хан"
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	8204.1.1 = {birth="8204.1.1"}
+	8220.1.1 = {add_trait=poor_warrior}
+	8265.1.1 = {death="8265.1.1"}
+}
+12555963 = {
+	name="Инпеска"	# a lord
+	female=yes
+	dynasty=55963
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	mother=12255963
+	father=42255963
+	
+	add_trait = tall
+
+	8237.1.1 = {birth="8237.1.1"}
+	8255.1.1 = {add_matrilineal_spouse=42555963}
+}
+42555963 = {
+	name="Трук"
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	8237.1.1 = {birth="8237.1.1"}
+	8253.1.1 = {add_trait=poor_warrior}
+}
+12855963 = {
+	name="Ксотли"	# not a lord
+	female=yes
+	dynasty=55963
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	mother=12555963
+	father=42555963
+
+	8261.1.1 = {birth="8261.1.1"}
+	8296.1.1 = {death="8296.1.1"}
+}
+42855963 = {
+	name="Трай"
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	8261.1.1 = {birth="8261.1.1"}
+	8277.1.1 = {add_trait=poor_warrior}
+	8279.1.1 = {add_matrilineal_spouse=12855963}
+	8296.1.1 = {death="8296.1.1"}
+}
+13155963 = {
+	name="Киара"	# not a lord
+	female=yes
+	dynasty=55963
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=42855963
+	mother=12855963
+	
+	add_trait = tall
+
+	8283.1.1 = {birth="8283.1.1"}
+}
+
+### House Ramesh
+34455960 = {
+	name="Ахо"	# a lord
+	dynasty=55960
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	7835.1.1 = {birth="7835.1.1"}
+	7883.1.1 = {death="7883.1.1"}
+}
+34355960 = {
+	name="Сунг"	# a lord
+	dynasty=55960
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=34455960
+	
+	7860.1.1 = {birth="7860.1.1"}
+	7921.1.1 = {death="7921.1.1"}
+}
+34255960 = {
+	name="Цонг"	# a lord
+	dynasty=55960
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=34355960
+	
+	7886.1.1 = {birth="7886.1.1"}
+	7938.1.1 = {death="7938.1.1"}
+}
+34155960 = {
+	name="Чен"	# a lord
+	dynasty=55960
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=34255960
+	
+	7909.1.1 = {birth="7909.1.1"}
+	7965.1.1 = {death="7965.1.1"}
+}
+34055960 = {
+	name="Ху"	# a lord
+	dynasty=55960
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=34155960
+	
+	7936.1.1 = {birth="7936.1.1"}
+	7992.1.1 = {death="7992.1.1"}
+}
+10055960 = {
+	name="Дань"	# a lord
+	dynasty=55960
+
+	religion="yiti_gods"
+	culture="yi_ti"
+	
+	father=34055960
+
+	7958.1.1 = {birth="7958.1.1"}
+	7974.1.1 = {add_trait=poor_warrior}
+	8031.1.1 = {death="8031.1.1"}
+}
+10255960 = {
+	name="Вьен"	# a lord
+	dynasty=55960
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=10055960
+
+	7987.1.1 = {birth="7987.1.1"}
+	8003.1.1 = {add_trait=poor_warrior}
+	8055.1.1 = {death="8055.1.1"}
+}
+10555960 = {
+	name="Ксе"	# a lord
+	dynasty=55960
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=10255960
+
+	8012.1.1 = {birth="8012.1.1"}
+	8028.1.1 = {add_trait=poor_warrior}
+	8070.1.1 = {death="8070.1.1"}
+}
+10855960 = {
+	name="Ксун"	# a lord
+	dynasty=55960
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=10555960
+
+	8044.1.1 = {birth="8044.1.1"}
+	8060.1.1 = {add_trait=poor_warrior}
+	8091.1.1 = {death = {death_reason = death_murder}}
+}
+11155960 = {
+	name="Куан"	# a lord
+	dynasty=55960
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=10855960
+
+	8072.1.1 = {birth="8072.1.1"}
+	8088.1.1 = {add_trait=trained_warrior}
+	8125.1.1 = {death="8125.1.1"}
+}
+11355960 = {
+	name="Хуан"	# a lord
+	dynasty=55960
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=11155960
+
+	8094.1.1 = {birth="8094.1.1"}
+	8110.1.1 = {add_trait=skilled_warrior}
+	8131.1.1 = {death = {death_reason = death_execution}}
+}
+11855960 = {
+	name="Чун"	# a lord
+	dynasty=55960
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=11355960
+
+	8115.1.1 = {birth="8115.1.1"}
+	8131.1.1 = {add_trait=poor_warrior}
+	8142.1.1 = {death="8142.1.1"}
+}
+12055960 = {
+	name="Дай"	# a lord
+	dynasty=55960
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=11855960
+
+	8134.1.1 = {birth="8134.1.1"}
+	8150.1.1 = {add_trait=poor_warrior}
+	8182.1.1 = {death="8182.1.1"}
+}
+12255960 = {
+	name="Хаи"	# a lord
+	dynasty=55960
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=12055960
+
+	8157.1.1 = {birth="8157.1.1"}
+	8173.1.1 = {add_trait=skilled_warrior}
+	8235.1.1 = {death="8235.1.1"}
+}
+12755960 = {
+	name="Цуанг"	# a lord
+	dynasty=55960
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=12255960
+
+	8184.1.1 = {birth="8184.1.1"}
+	8200.1.1 = {add_trait=trained_warrior}
+	8238.1.1 = {death="8238.1.1"}
+}
+12955960 = {
+	name="Трай"	# a lord
+	dynasty=55960
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=12755960
+
+	8203.1.1 = {birth="8203.1.1"}
+	8219.1.1 = {add_trait=trained_warrior}
+	8262.1.1 = {death="8262.1.1"}
+}
+13355960 = {
+	name="Бай"	# a lord
+	dynasty=55960
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=12955960
+
+	8222.1.1 = {birth="8222.1.1"}
+	8238.1.1 = {add_trait=poor_warrior}
+	8286.1.1 = {death = {death_reason = death_accident}}
+}
+13655960 = {
+	name="Бу"	# a lord
+	dynasty=55960
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=12955960
+
+	8227.1.1 = {birth="8227.1.1"}
+	8243.1.1 = {add_trait=trained_warrior}
+	8277.1.1 = {death="8277.1.1"}
+}
+13755960 = {
+	name="Бао"	# a lord
+	dynasty=55960
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=13655960
+
+	8254.1.1 = {birth="8254.1.1"}
+	8270.1.1 = {add_trait=skilled_warrior}
+}
+13955960 = {
+	name="Чо"	# a lord
+	dynasty=55960
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=13755960
+
+	8275.1.1 = {birth="8275.1.1"}
+	8291.1.1 = {add_trait=trained_warrior}
+}
+
+### House Chandesh
+34555962 = {
+	name="Цатог"	# a lord
+	dynasty=55962
+
+	religion="yiti_gods"
+	culture="lengi"
+	
+	add_trait=tall
+	
+	7805.1.1 = {birth="7805.1.1"}
+	7872.1.1 = {death="7872.1.1"}
+}
+34455962 = {
+	name="Йорит"	# a lord
+	dynasty=55962
+
+	religion="yiti_gods"
+	culture="lengi"
+	
+	add_trait=tall
+
+	father=34555962
+	
+	7833.1.1 = {birth="7833.1.1"}
+	7889.1.1 = {death="7889.1.1"}
+}
+34355962 = {
+	name="Никрама"	# a lord
+	dynasty=55962
+
+	religion="yiti_gods"
+	culture="lengi"
+	
+	add_trait=tall
+
+	father=34455962
+	
+	7858.1.1 = {birth="7858.1.1"}
+	7915.1.1 = {death="7915.1.1"}
+}
+34255962 = {
+	name="Яфет"	# a lord
+	dynasty=55962
+
+	religion="yiti_gods"
+	culture="lengi"
+	
+	add_trait=tall
+
+	father=34355962
+	
+	7883.1.1 = {birth="7883.1.1"}
+	7937.1.1 = {death="7937.1.1"}
+}
+34155962 = {
+	name="Каалут"	# a lord
+	dynasty=55962
+
+	religion="yiti_gods"
+	culture="lengi"
+	
+	add_trait=tall
+
+	father=34255962
+	
+	7907.1.1 = {birth="7907.1.1"}
+	7976.1.1 = {death="7976.1.1"}
+}
+34055962 = {
+	name="Эйхорт"	# a lord
+	dynasty=55962
+
+	religion="yiti_gods"
+	culture="lengi"
+	
+	add_trait=tall
+
+	father=34155962
+	
+	7930.1.1 = {birth="7930.1.1"}
+	7994.1.1 = {death="7994.1.1"}
+}
+100055962 = {
+	name="Юсуф"	# a lord
+	dynasty=55962
+
+	religion="yiti_gods"
+	culture="lengi"
+	
+	add_trait=tall
+	
+	father=34055962
+
+	7953.1.1 = {birth="7953.1.1"}
+	7969.1.1 = {add_trait=poor_warrior}
+	8038.1.1 = {death="8038.1.1"}
+}
+100155962 = {
+	name="Мирза"	# a lord
+	dynasty=55962
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=100055962
+	
+	add_trait=tall
+
+	7978.1.1 = {birth="7978.1.1"}
+	7994.1.1 = {add_trait=poor_warrior}
+	8053.1.1 = {death="8053.1.1"}
+}
+100655962 = {
+	name="Мухтар"	# a lord
+	dynasty=55962
+
+	religion="yiti_gods"
+	culture="lengi"
+	
+	add_trait=tall
+
+	father=100155962
+
+	8012.1.1 = {birth="8012.1.1"}
+	8028.1.1 = {add_trait=trained_warrior}
+	8076.1.1 = {death="8076.1.1"}
+}
+100955962 = {
+	name="Хусам"	# a lord
+	dynasty=55962
+
+	religion="yiti_gods"
+	culture="lengi"
+	
+	add_trait=tall
+
+	father=100655962
+
+	8047.1.1 = {birth="8047.1.1"}
+	8063.1.1 = {add_trait=skilled_warrior}
+	8117.1.1 = {death = {death_reason = death_accident}}
+}
+101255962 = {
+	name="Юсуф"	# a lord
+	dynasty=55962
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=100955962
+	
+	add_trait=tall
+
+	8073.1.1 = {birth="8073.1.1"}
+	8089.1.1 = {add_trait=poor_warrior}
+	8118.1.1 = {death="8118.1.1"}
+}
+101355962 = {
+	name="Йоукханна"	# a lord
+	dynasty=55962
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=101255962
+	
+	add_trait=tall
+
+	8097.1.1 = {birth="8097.1.1"}
+	8113.1.1 = {add_trait=poor_warrior}
+	8167.1.1 = {death="8167.1.1"}
+}
+101555962 = {
+	name="Наджиб"	# a lord
+	dynasty=55962
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=101355962
+	
+	add_trait=tall
+
+	8121.1.1 = {birth="8121.1.1"}
+	8137.1.1 = {add_trait=poor_warrior}
+	8177.1.1 = {death="8177.1.1"}
+}
+101855962 = {
+	name="Увайс"	# a lord
+	dynasty=55962
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=101555962
+	
+	add_trait=tall
+
+	8144.1.1 = {birth="8144.1.1"}
+	8160.1.1 = {add_trait=trained_warrior}
+	8179.1.1 = {death="8179.1.1"}
+}
+102155962 = {
+	name="Увайс"	# a lord
+	dynasty=55962
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=101855962
+
+	8164.1.1 = {birth="8164.1.1"}
+	8180.1.1 = {add_trait=poor_warrior}
+	8222.1.1 = {death = {death_reason = death_accident}}
+}
+102455962 = {
+	name="Сами"	# a lord
+	dynasty=55962
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=102155962
+	
+	add_trait=tall
+
+	8206.1.1 = {birth="8206.1.1"}
+	8222.1.1 = {add_trait=skilled_warrior}
+	8276.1.1 = {death="8276.1.1"}
+}
+102955962 = {
+	name="Алим"	# a lord
+	dynasty=55962
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=102455962
+	
+	add_trait=tall
+
+	8242.1.1 = {birth="8242.1.1"}
+	8258.1.1 = {add_trait=skilled_warrior}
+	8288.1.1 = {death="8288.1.1"}
+}
+103255962 = {
+	name="Джалил"	# a lord
+	dynasty=55962
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=102955962
+	
+	add_trait=tall
+
+	8268.1.1 = {birth="8268.1.1"}
+	8284.1.1 = {add_trait=poor_warrior}
+}
+103455962 = {
+	name="Кайреддин"	# not a lord
+	dynasty=55962
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=103255962
+	
+	add_trait=tall
+
+	8291.1.1 = {birth="8291.1.1"}
+}
+
+### House Xu Lo
+34465971 = {
+	name="Док"	# a lord
+	dynasty=65971
+
+	religion="yiti_gods"
+	culture="yi_ti"
+	
+	7810.1.1 = {birth="7810.1.1"}
+	7883.1.1 = {death="7883.1.1"}
+}
+34365971 = {
+	name="Цуан"	# a lord
+	dynasty=65971
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=34465971
+	
+	7833.1.1 = {birth="7833.1.1"}
+	7899.1.1 = {death="7899.1.1"}
+}
+34265971 = {
+	name="Пуен"	# a lord
+	dynasty=65971
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=34365971
+	
+	7862.1.1 = {birth="7862.1.1"}
+	7908.1.1 = {death="7908.1.1"}
+}
+34165971 = {
+	name="Кок"	# a lord
+	dynasty=65971
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=34265971
+	
+	7887.1.1 = {birth="7887.1.1"}
+	7950.1.1 = {death="7950.1.1"}
+}
+34065971 = {
+	name="Фо"	# a lord
+	dynasty=65971
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=34165971
+	
+	7912.1.1 = {birth="7912.1.1"}
+	7964.1.1 = {death="7964.1.1"}
+}
+10065971 = {
+	name="Ю"	# a lord
+	dynasty=65971
+
+	religion="yiti_gods"
+	culture="yi_ti"
+	
+	father=34065971
+
+	7944.1.1 = {birth="7944.1.1"}
+	7960.1.1 = {add_trait=trained_warrior}
+	8023.1.1 = {death="8023.1.1"}
+}
+10165971 = {
+	name="Ксуан"	# a lord
+	dynasty=65971
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=10065971
+
+	7971.1.1 = {birth="7971.1.1"}
+	7987.1.1 = {add_trait=trained_warrior}
+	8030.1.1 = {death = {death_reason = death_accident}}
+}
+10565971 = {
+	name="Бай"	# a lord
+	dynasty=65971
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=10165971
+
+	7999.1.1 = {birth="7999.1.1"}
+	8015.1.1 = {add_trait=skilled_warrior}
+	8051.1.1 = {death="8051.1.1"}
+}
+10765971 = {
+	name="Ю"	# a lord
+	dynasty=65971
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=10565971
+
+	8022.1.1 = {birth="8022.1.1"}
+	8038.1.1 = {add_trait=trained_warrior}
+	8092.1.1 = {death="8092.1.1"}
+}
+10865971 = {
+	name="Цонг"	# not a lord
+	dynasty=65971
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=10565971
+
+	8025.1.1 = {birth="8025.1.1"}
+	8041.1.1 = {add_trait=poor_warrior}
+	8085.1.1 = {death="8085.1.1"}
+}
+11165971 = {
+	name="Гай"	# a lord
+	dynasty=65971
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=10865971
+
+	8055.1.1 = {birth="8055.1.1"}
+	8071.1.1 = {add_trait=poor_warrior}
+	8100.1.1 = {death="8100.1.1"}
+}
+11565971 = {
+	name="Тинь"	# a lord
+	dynasty=65971
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=11165971
+
+	8081.1.1 = {birth="8081.1.1"}
+	8097.1.1 = {add_trait=trained_warrior}
+	8134.1.1 = {death="8134.1.1"}
+}
+11665971 = {
+	name="Бу"	# a lord
+	dynasty=65971
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=11565971
+
+	8100.1.1 = {birth="8100.1.1"}
+	8116.1.1 = {add_trait=poor_warrior}
+	8136.1.1 = {death="8136.1.1"}
+}
+11865971 = {
+	name="Ан"	# a lord
+	dynasty=65971
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=11665971
+
+	8122.1.1 = {birth="8122.1.1"}
+	8138.1.1 = {add_trait=skilled_warrior}
+	8188.1.1 = {death="8188.1.1"}
+}
+11965971 = {
+	name="Фай"	# a lord
+	dynasty=65971
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=11865971
+
+	8144.1.1 = {birth="8144.1.1"}
+	8160.1.1 = {add_trait=trained_warrior}
+	8198.1.1 = {death="8198.1.1"}
+}
+12465971 = {
+	name="Мо"	# a lord
+	dynasty=65971
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=11965971
+
+	8169.1.1 = {birth="8169.1.1"}
+	8185.1.1 = {add_trait=skilled_warrior}
+	8207.1.1 = {death = {death_reason = death_battle}}
+}
+12565971 = {
+	name="Ру"	# not a lord
+	dynasty=65971
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=11965971
+
+	8170.1.1 = {birth="8170.1.1"}
+	8186.1.1 = {add_trait=skilled_warrior}
+	8214.1.1 = {death="8214.1.1"}
+}
+12665971 = {
+	name="Нао"	# a lord
+	dynasty=65971
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=12465971
+
+	8187.1.1 = {birth="8187.1.1"}
+	8203.1.1 = {add_trait=poor_warrior}
+	8247.1.1 = {death="8247.1.1"}
+}
+12965971 = {
+	name="Хан"	# a lord
+	dynasty=65971
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=12565971
+
+	8191.1.1 = {birth="8191.1.1"}
+	8207.1.1 = {add_trait=skilled_warrior}
+	8268.1.1 = {death = {death_reason = death_battle}}
+}
+13265971 = {
+	name="Чок"	# not a lord
+	dynasty=65971
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=12965971
+
+	8228.1.1 = {birth="8228.1.1"}
+	8244.1.1 = {add_trait=poor_warrior}
+	8262.1.1 = {death="8262.1.1"}
+}
+13465971 = {
+	name="Лой"	# a lord
+	dynasty=65971
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=13265971
+
+	8249.1.1 = {birth="8249.1.1"}
+	8265.1.1 = {add_trait=poor_warrior}
+}
+13665971 = {
+	name="Чинь"	# not a lord
+	dynasty=65971
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=13465971
+
+	8267.1.1 = {birth="8267.1.1"}
+	8283.1.1 = {add_trait=poor_warrior}
+}
+
+### House Son
+34565977 = {
+	name="Пинг"	# a lord
+	dynasty=65977
+
+	religion="yiti_gods"
+	culture="yi_ti"
+	
+	7817.1.1 = {birth="7817.1.1"}
+	7875.1.1 = {death="7875.1.1"}
+}
+34465977 = {
+	name="Гуен"	# a lord
+	dynasty=65977
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=34565977
+	
+	7841.1.1 = {birth="7841.1.1"}
+	7889.1.1 = {death="7889.1.1"}
+}
+34365977 = {
+	name="То"	# a lord
+	dynasty=65977
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=34465977
+	
+	7864.1.1 = {birth="7864.1.1"}
+	7915.1.1 = {death="7915.1.1"}
+}
+34265977 = {
+	name="Чок"	# a lord
+	dynasty=65977
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=34365977
+	
+	7887.1.1 = {birth="7887.1.1"}
+	7943.1.1 = {death="7943.1.1"}
+}
+34165977 = {
+	name="Вар"	# a lord
+	dynasty=65977
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=34265977
+	
+	7910.1.1 = {birth="7910.1.1"}
+	7963.1.1 = {death="7963.1.1"}
+}
+34065977 = {
+	name="Нан"	# a lord
+	dynasty=65977
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=34165977
+	
+	7934.1.1 = {birth="7934.1.1"}
+	7985.1.1 = {death="7985.1.1"}
+}
+10065977 = {
+	name="Минь"	# a lord
+	dynasty=65977
+
+	religion="yiti_gods"
+	culture="yi_ti"
+	
+	father=34065977
+
+	7965.1.1 = {birth="7965.1.1"}
+	7981.1.1 = {add_trait=poor_warrior}
+	8040.1.1 = {death="8040.1.1"}
+}
+10265977 = {
+	name="Ксун"	# a lord
+	dynasty=65977
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=10065977
+
+	7999.1.1 = {birth="7999.1.1"}
+	8015.1.1 = {add_trait=skilled_warrior}
+	8057.1.1 = {death="8057.1.1"}
+}
+10565977 = {
+	name="Гай"	# not a lord
+	dynasty=65977
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=10265977
+
+	8019.1.1 = {birth="8019.1.1"}
+	8035.1.1 = {add_trait=skilled_warrior}
+	8057.1.1 = {death = {death_reason = death_murder}}
+}
+10665977 = {
+	name="Ксе"	# a lord
+	dynasty=65977
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=10565977
+
+	8043.1.1 = {birth="8043.1.1"}
+	8059.1.1 = {add_trait=skilled_warrior}
+	8101.1.1 = {death="8101.1.1"}
+}
+10765977 = {
+	name="Фук"	# a lord
+	dynasty=65977
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=10565977
+
+	8044.1.1 = {birth="8044.1.1"}
+	8060.1.1 = {add_trait=trained_warrior}
+	8113.1.1 = {death="8113.1.1"}
+}
+10965977 = {
+	name="Тао"	# a lord
+	dynasty=65977
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=10765977
+
+	8067.1.1 = {birth="8067.1.1"}
+	8083.1.1 = {add_trait=trained_warrior}
+	8126.1.1 = {death="8126.1.1"}
+}
+11065977 = {
+	name="Хиэу"	# a lord
+	dynasty=65977
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=10965977
+
+	8100.1.1 = {birth="8100.1.1"}
+	8116.1.1 = {add_trait=master_warrior}
+	8160.1.1 = {death="8160.1.1"}
+}
+11565977 = {
+	name="Ксуан"	# a lord
+	dynasty=65977
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=11065977
+
+	8123.1.1 = {birth="8123.1.1"}
+	8139.1.1 = {add_trait=trained_warrior}
+	8176.1.1 = {death="8176.1.1"}
+}
+12065977 = {
+	name="Куан"	# a lord
+	dynasty=65977
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=11565977
+
+	8155.1.1 = {birth="8155.1.1"}
+	8171.1.1 = {add_trait=skilled_warrior}
+	8209.1.1 = {death="8209.1.1"}
+}
+12265977 = {
+	name="Тао"	# a lord
+	dynasty=65977
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=12065977
+
+	8181.1.1 = {birth="8181.1.1"}
+	8197.1.1 = {add_trait=skilled_warrior}
+	8236.1.1 = {death="8236.1.1"}
+}
+12465977 = {
+	name="Ван"	# a lord
+	dynasty=65977
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=12265977
+
+	8210.1.1 = {birth="8210.1.1"}
+	8226.1.1 = {add_trait=poor_warrior}
+	8267.1.1 = {death="8267.1.1"}
+}
+12865977 = {
+	name="Ан"	# a lord
+	dynasty=65977
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=12465977
+
+	8242.1.1 = {birth="8242.1.1"}
+	8258.1.1 = {add_trait=trained_warrior}
+}
+13065977 = {
+	name="Минь"	# not a lord
+	dynasty=65977
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=12465977
+
+	8246.1.1 = {birth="8246.1.1"}
+	8262.1.1 = {add_trait=poor_warrior}
+	8264.1.1 = {add_spouse=43065977}
+}
+43065977 = {
+	name="Ли"
+	female=yes
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	8246.1.1 = {birth="8246.1.1"}
+}
+13165977 = {
+	name="Минь"	# not a lord
+	dynasty=65977
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=12865977
+
+	8271.1.1 = {birth="8271.1.1"}
+	8287.1.1 = {add_trait=trained_warrior}
+}
+13465977 = {
+	name="Цуанг"	# not a lord
+	dynasty=65977
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=13065977
+	mother=43065977
+
+	8267.1.1 = {birth="8267.1.1"}
+	8283.1.1 = {add_trait=trained_warrior}
+}
+13565977 = {
+	name="Дань"	# not a lord
+	dynasty=65977
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=13065977
+	mother=43065977
+
+	8268.1.1 = {birth="8268.1.1"}
+	8284.1.1 = {add_trait=skilled_warrior}
+}
+13665977 = {
+	name="Фонг"	# not a lord
+	female=yes
+	dynasty=65977
+
+	religion="yiti_gods"
+	culture="yi_ti"
+
+	father=13065977
+	mother=43065977
+
+	8270.1.1 = {birth="8270.1.1"}
+}
+
+### House Gtuhanai
+34455988 = {
+	name="Вибур"	# a lord
+	dynasty=55988
+
+	religion="yiti_gods"
+	culture="lengi"
+	
+	7818.1.1 = {birth="7818.1.1"}
+	7884.1.1 = {death="7884.1.1"}
+}
+34355988 = {
+	name="Цанту"	# a lord
+	dynasty=55988
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=34455988
+	
+	7842.1.1 = {birth="7842.1.1"}
+	7895.1.1 = {death="7895.1.1"}
+}
+34255988 = {
+	name="Хастур"	# a lord
+	dynasty=55988
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=34355988
+	
+	7870.1.1 = {birth="7870.1.1"}
+	7939.1.1 = {death="7939.1.1"}
+}
+34155988 = {
+	name="Хасталик"	# a lord
+	dynasty=55988
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=34255988
+	
+	7899.1.1 = {birth="7899.1.1"}
+	7954.1.1 = {death="7954.1.1"}
+}
+34055988 = {
+	name="Абдул"	# a lord
+	dynasty=55988
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=34155988
+	
+	7931.1.1 = {birth="7931.1.1"}
+	7979.1.1 = {death="7979.1.1"}
+}
+10055988 = {
+	name="Шатак"	# a lord
+	dynasty=55988
+
+	religion="yiti_gods"
+	culture="lengi"
+	
+	father=34055988
+
+	7959.1.1 = {birth="7959.1.1"}
+	7975.1.1 = {add_trait=trained_warrior}
+	8016.1.1 = {death="8016.1.1"}
+}
+10155988 = {
+	name="Вибур"	# a lord
+	dynasty=55988
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=10055988
+
+	7992.1.1 = {birth="7992.1.1"}
+	8008.1.1 = {add_trait=trained_warrior}
+	8022.1.1 = {death="8022.1.1"}
+}
+10255988 = {
+	name="Яктуб"	# a lord
+	dynasty=55988
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=10055988
+
+	7994.1.1 = {birth="7994.1.1"}
+	8010.1.1 = {add_trait=trained_warrior}
+	8074.1.1 = {death="8074.1.1"}
+}
+10355988 = {
+	name="Фарол"	# not a lord
+	dynasty=55988
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=10255988
+
+	8015.1.1 = {birth="8015.1.1"}
+	8031.1.1 = {add_trait=poor_warrior}
+	8065.1.1 = {death = {death_reason = death_murder}}
+}
+10555988 = {
+	name="Яфет"	# a lord
+	dynasty=55988
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=10355988
+
+	8045.1.1 = {birth="8045.1.1"}
+	8061.1.1 = {add_trait=poor_warrior}
+	8090.1.1 = {death="8090.1.1"}
+}
+11055988 = {
+	name="Фарол"	# a lord
+	dynasty=55988
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=10555988
+
+	8073.1.1 = {birth="8073.1.1"}
+	8089.1.1 = {add_trait=skilled_warrior}
+	8124.1.1 = {death="8124.1.1"}
+}
+11155988 = {
+	name="Хасталик"	# a lord
+	dynasty=55988
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=11055988
+
+	8095.1.1 = {birth="8095.1.1"}
+	8111.1.1 = {add_trait=trained_warrior}
+	8143.1.1 = {death="8143.1.1"}
+}
+11555988 = {
+	name="Самманус"	# a lord
+	dynasty=55988
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=11155988
+
+	8125.1.1 = {birth="8125.1.1"}
+	8141.1.1 = {add_trait=trained_warrior}
+	8175.1.1 = {death="8175.1.1"}
+}
+11755988 = {
+	name="Каалут"	# a lord
+	dynasty=55988
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=11555988
+
+	8157.1.1 = {birth="8157.1.1"}
+	8173.1.1 = {add_trait=trained_warrior}
+	8182.1.1 = {death="8182.1.1"}
+}
+11855988 = {
+	name="Кассогта"	# a lord
+	female=yes
+	dynasty=55988
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=11755988
+
+	8180.1.1 = {birth="8180.1.1"}
+	8237.1.1 = {death="8237.1.1"}
+}
+41855988 = {
+	name="Аммутсеба"
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	8186.1.1 = {birth="8186.1.1"}
+	8202.1.1 = {add_trait=poor_warrior}
+	8204.1.1 = {add_spouse=11855988}
+	8237.1.1 = {death="8237.1.1"}
+}
+12055988 = {
+	name="Абдул"	# a lord
+	dynasty=55988
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=41855988
+	mother=11855988
+
+	8215.1.1 = {birth="8215.1.1"}
+	8231.1.1 = {add_trait=poor_warrior}
+	8262.1.1 = {death="8262.1.1"}
+}
+12255988 = {
+	name="Чогнар"	# a lord
+	dynasty=55988
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=12055988
+
+	8247.1.1 = {birth="8247.1.1"}
+	8263.1.1 = {add_trait=poor_warrior}
+	8278.1.1 = {death = {death_reason = death_battle}}
+}
+12355988 = {
+	name="Бятис"	# a lord
+	dynasty=55988
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=12255988
+
+	8265.1.1 = {birth="8265.1.1"}
+	8281.1.1 = {add_trait=poor_warrior}
+}
+12855988 = {
+	name="Алижа"	# not a lord
+	dynasty=55988
+
+	religion="yiti_gods"
+	culture="lengi"
+
+	father=12355988
+
+	8289.1.1 = {birth="8289.1.1"}
+}

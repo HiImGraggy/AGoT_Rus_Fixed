@@ -1,0 +1,6763 @@
+###############################
+### Meereenese major houses ###
+###############################
+### House Kandaq
+344360009 = {
+	name="Гразхар"	# a lord
+	dynasty=360009
+
+	religion="harpy"
+	culture="meereenese"
+
+	7820.1.1 = {birth="7820.1.1"}
+	7869.1.1 = {death="7869.1.1"}
+}
+343360009 = {
+	name="Морхаз"	# a lord
+	dynasty=360009
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=344360009
+
+	7853.1.1 = {birth="7853.1.1"}
+	7910.1.1 = {death="7910.1.1"}
+}
+342360009 = {
+	name="Зхарак"	# a lord
+	dynasty=360009
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=343360009
+
+	7878.1.1 = {birth="7878.1.1"}
+	7941.1.1 = {death="7941.1.1"}
+}
+341360009 = {
+	name="Драказ"	# a lord
+	dynasty=360009
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=342360009
+
+	7902.1.1 = {birth="7902.1.1"}
+	7970.1.1 = {death="7970.1.1"}
+}
+340360009 = {
+	name="Кразнис"	# a lord
+	dynasty=360009
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=341360009
+
+	7927.1.1 = {birth="7927.1.1"}
+	7995.1.1 = {death="7995.1.1"}
+}
+150360009 = {
+	name="Мархаз"	# a lord
+	dynasty=360009
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=340360009
+	
+	7953.1.1 = {birth="7953.1.1"}
+	8025.1.1 = {death="8025.1.1"}
+}
+100360009 = {
+	name="Граздан"	# a lord
+	dynasty=360009
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=150360009
+
+	7989.1.1 = {birth="7989.1.1"}
+	8016.1.1 = {add_trait=poor_warrior}
+	8048.1.1 = {death="8048.1.1"}
+}
+101360009 = {
+	name="Кразнис"	# a lord
+	dynasty=360009
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=100360009
+
+	8029.1.1 = {birth="8029.1.1"}
+	8045.1.1 = {add_trait=trained_warrior}
+	8062.1.1 = {death="8062.1.1"}
+}
+106360009 = {
+	name="Мезон"	# a lord
+	dynasty=360009
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=101360009
+
+	8049.1.1 = {birth="8049.1.1"}
+	8065.1.1 = {add_trait=trained_warrior}
+	8083.1.1 = {death="8083.1.1"}
+}
+110360009 = {
+	name="Скахаз"	# a lord
+	dynasty=360009
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=106360009
+
+	8073.1.1 = {birth="8073.1.1"}
+	8089.1.1 = {add_trait=poor_warrior}
+	8125.1.1 = {death="8125.1.1"}
+}
+114360009 = {
+	name="Хиздар"	# a lord
+	dynasty=360009
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=110360009
+
+	8096.1.1 = {birth="8096.1.1"}
+	8112.1.1 = {add_trait=skilled_warrior}
+	8140.1.1 = {death="8140.1.1"}
+}
+117360009 = {
+	name="Мезон"	# a lord
+	dynasty=360009
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=114360009
+
+	8128.1.1 = {birth="8128.1.1"}
+	8144.1.1 = {add_trait=skilled_warrior}
+	8201.1.1 = {death="8201.1.1"}
+}
+120360009 = {
+	name="Горзак"	# a lord
+	dynasty=360009
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=117360009
+
+	8155.1.1 = {birth="8155.1.1"}
+	8171.1.1 = {add_trait=trained_warrior}
+	8223.1.1 = {death="8223.1.1"}
+}
+126360009 = {
+	name="Граздан"	# a lord
+	dynasty=360009
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=120360009
+
+	8182.1.1 = {birth="8182.1.1"}
+	8198.1.1 = {add_trait=skilled_warrior}
+	8245.1.1 = {death="8245.1.1"}
+}
+127360009 = {
+	name="Ксапракс"	# a lord
+	dynasty=360009
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=126360009
+
+	8208.1.1 = {birth="8208.1.1"}
+	8224.1.1 = {add_trait=poor_warrior}
+	8226.1.1 = {add_spouse=227360009}
+	8275.1.1 = {death="8275.1.1"}
+}
+227360009 = {
+	name="Эззара"
+	female=yes
+
+	religion="harpy"
+	culture="meereenese"
+
+	8208.1.1 = {birth="8208.1.1"}
+	8275.1.1 = {death="8275.1.1"}
+}
+16571011 = {
+	name="Скахаз" ## THE Shavepate
+	dynasty=360009
+	martial = 5
+	diplomacy = 6
+	intrigue = 2
+	stewardship = 9
+	learning = 4
+	culture = meereenese
+	religion = harpy 
+
+	father=127360009
+	mother=227360009		
+	
+	add_trait="elusive_shadow"
+	add_trait="quick"
+	add_trait="diligent"
+	add_trait="ruthless"
+	add_trait="deceitful"
+	add_trait="cynical"
+	add_trait="ugly"
+	
+	8254.1.1 = {
+		birth="8254.1.1"
+	}
+	8270.1.1 = {
+		add_trait = trained_warrior
+		add_trait = impaler
+	}
+	8283.1.1 = {
+		add_spouse = 46571011
+	}
+	8300.1.1 = {
+		effect = {
+			liege = {
+				reverse_opinion = {
+					modifier = opinion_loyal_servant
+					who = ROOT
+				}
+			}	
+		}
+	}
+}
+46571011 = {
+	name="Селеззка"
+	female=yes
+
+	religion="harpy"
+	culture="meereenese"
+
+	8254.1.1 = {
+		birth="8254.1.1"
+	}
+}
+16571111 = {
+	name="Хаззея" 
+	female = yes
+	dynasty=360009
+	
+	culture = meereenese
+	religion = harpy 
+
+	father=16571011
+	mother=46571011	
+	
+	8284.1.1 = {
+		birth="8284.1.1"
+	}
+}
+16571211 = {
+	name="Галацца" 
+	female = yes
+	dynasty=360009
+	
+	culture = meereenese
+	religion = harpy 
+
+	father=16571011
+	mother=46571011	
+	
+	8286.1.1 = {
+		birth="8286.1.1"
+	}
+}
+
+##House Резнак
+345360008 = {
+	name="Омдаз"	# a lord
+	dynasty=360008
+
+	religion="harpy"
+	culture="meereenese"
+
+	7805.1.1 = {birth="7805.1.1"}
+	7867.1.1 = {death="7867.1.1"}
+}
+344360008 = {
+	name="Резнак"	# a lord
+	dynasty=360008
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=345360008
+
+	7827.1.1 = {birth="7827.1.1"}
+	7889.1.1 = {death="7889.1.1"}
+}
+343360008 = {
+	name="Хразз"	# a lord
+	dynasty=360008
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=344360008
+
+	7855.1.1 = {birth="7855.1.1"}
+	7919.1.1 = {death="7919.1.1"}
+}
+342360008 = {
+	name="Резнак"	# a lord
+	dynasty=360008
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=343360008
+
+	7877.1.1 = {birth="7877.1.1"}
+	7949.1.1 = {death="7949.1.1"}
+}
+341360008 = {
+	name="Ярказ"	# a lord
+	dynasty=360008
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=342360008
+
+	7905.1.1 = {birth="7905.1.1"}
+	7966.1.1 = {death="7966.1.1"}
+}
+340360008 = {
+	name="Хазрак"	# a lord
+	dynasty=360008
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=341360008
+
+	7931.1.1 = {birth="7931.1.1"}
+	7990.1.1 = {death="7990.1.1"}
+}
+150360008 = {
+	name="Скахаз"	# a lord
+	dynasty=360008
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=340360008
+
+	7960.1.1 = {birth="7960.1.1"}
+	8027.1.1 = {death="8027.1.1"}
+}
+100360008 = {
+	name="Резнак"	# a lord
+	dynasty=360008
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=150360008
+
+	7996.1.1 = {birth="7996.1.1"}
+	8016.1.1 = {add_trait=poor_warrior}
+	8045.1.1 = {death="8045.1.1"}
+}
+101360008 = {
+	name="Горхаз"	# a lord
+	dynasty=360008
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=100360008
+
+	8029.1.1 = {birth="8029.1.1"}
+	8045.1.1 = {add_trait=master_warrior}
+	8087.1.1 = {death="8087.1.1"}
+}
+105360008 = {
+	name="Граздан"	# a lord
+	dynasty=360008
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=101360008
+
+	8062.1.1 = {birth="8062.1.1"}
+	8078.1.1 = {add_trait=poor_warrior}
+	8128.1.1 = {death="8128.1.1"}
+}
+109360008 = {
+	name="Резнак"	# a lord
+	dynasty=360008
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=105360008
+
+	8095.1.1 = {birth="8095.1.1"}
+	8111.1.1 = {add_trait=poor_warrior}
+	8145.1.1 = {death="8145.1.1"}
+}
+116360008 = {
+	name="Горзак"	# a lord
+	dynasty=360008
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=109360008
+
+	8122.1.1 = {birth="8122.1.1"}
+	8138.1.1 = {add_trait=master_warrior}
+	8171.1.1 = {death="8171.1.1"}
+}
+120360008 = {
+	name="Хазнак"	# a lord
+	dynasty=360008
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=116360008
+
+	8147.1.1 = {birth="8147.1.1"}
+	8163.1.1 = {add_trait=trained_warrior}
+	8204.1.1 = {death="8204.1.1"}
+}
+123360008 = {
+	name="Маздак"	# a lord
+	dynasty=360008
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=120360008
+
+	8167.1.1 = {birth="8167.1.1"}
+	8183.1.1 = {add_trait=poor_warrior}
+	8233.1.1 = {death="8233.1.1"}
+}
+126360008 = {
+	name="Мархаз"	# a lord
+	dynasty=360008
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=123360008
+
+	8191.1.1 = {birth="8191.1.1"}
+	8207.1.1 = {add_trait=poor_warrior}
+	8209.1.1 = {add_spouse=226360008}
+	8249.1.1 = {death="8249.1.1"}
+}
+226360008 = {
+	name="Квецца"
+	female=yes
+
+	religion="harpy"
+	culture="meereenese"
+
+	8191.1.1 = {birth="8191.1.1"}
+	8249.1.1 = {death="8249.1.1"}
+}
+129360008 = {
+	name="Граздан"	# a lord
+	dynasty=360008
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=126360008
+	mother=226360008
+
+	8226.1.1 = {birth="8226.1.1"}
+	8242.1.1 = {add_trait=poor_warrior}
+	8244.1.1 = {add_spouse=229360008}
+	8279.1.1 = {death="8279.1.1"}
+}
+229360008 = {
+	name="Реззала"
+	female=yes
+
+	religion="harpy"
+	culture="meereenese"
+
+	8226.1.1 = {birth="8226.1.1"}
+	8268.1.1 = {death="8268.1.1"}
+}
+130360008 = {
+	name="Мезар"	# not a lord
+	dynasty=360008
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=126360008
+	mother=226360008
+
+	8227.1.1 = {birth="8227.1.1"}
+	8243.1.1 = {add_spouse=230360008}
+	8268.1.1 = {death="8268.1.1"}
+}
+230360008 = {
+	name="Лаззала"
+	female=yes
+
+	religion="harpy"
+	culture="meereenese"
+
+	8227.1.1 = {birth="8227.1.1"}
+	8268.1.1 = {death="8268.1.1"}
+}
+16571012 = {
+	name="Резнак" 
+	dynasty=360008
+	diplomacy = 12
+	intrigue = 10
+	stewardship = 9
+	learning = 6
+	culture = meereenese
+	religion = harpy 
+
+	father=129360008
+	mother=229360008		
+	
+	add_trait="grey_eminence"
+	add_trait="diligent"
+	add_trait="patient"
+	add_trait="deceitful"
+	add_trait="cynical"
+	
+	8250.1.1 = {
+		birth="8250.1.1"
+	}
+}
+140360008 = {	#One of Reznaks was captain of ships besieging Meereen
+	name="Граздан"
+	dynasty=360008
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=130360008
+	mother=230360008
+	
+	add_trait=tough_soldier
+
+	8253.1.1 = {birth="8253.1.1"}
+	#Captains of the fleet fled to Yunkai
+	8300.1.1 = { employer=6571003 }
+	8300.7.3 = { employer=6571004 }
+	8300.7.14 = { employer=6571006 }
+}
+
+### House Loraq
+345360003 = {
+	name="Хиздар"	# a lord
+	dynasty=360003
+
+	religion="harpy"
+	culture="meereenese"
+
+	7820.1.1 = {birth="7820.1.1"}
+	7869.1.1 = {death="7869.1.1"}
+}
+150360003 = {
+	name="Зхарак"	# canon, famous citizen
+	dynasty=360003
+	
+	stewardship = 6
+	martial = 3
+	diplomacy = 5
+	intrigue = 4
+	learning = 4
+	
+	add_trait = grey_eminence
+	add_trait = ambitious
+	add_trait = diligent
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=345360003
+
+	7843.1.1 = {birth="7843.1.1"}
+	7898.1.1 = {
+		give_nickname = nick_the_liberator
+	}
+	7905.1.1 = {death="7905.1.1"}
+}
+344360003 = {
+	name="Корхаз"	# a lord
+	dynasty=360003
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=150360003
+
+	7866.1.1 = {birth="7866.1.1"}
+	7914.1.1 = {death="7914.1.1"}
+}
+343360003 = {
+	name="Хиздар"	# a lord
+	dynasty=360003
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=344360003
+
+	7890.1.1 = {birth="7890.1.1"}
+	7948.1.1 = {death="7948.1.1"}
+}
+342360003 = {
+	name="Ухзак"	# a lord
+	dynasty=360003
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=343360003
+
+	7911.1.1 = {birth="7911.1.1"}
+	7969.1.1 = {death="7969.1.1"}
+}
+341360003 = {
+	name="Яццак"	# a lord
+	dynasty=360003
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=342360003
+
+	7935.1.1 = {birth="7935.1.1"}
+	7992.1.1 = {death="7992.1.1"}
+}
+340360003 = {
+	name="Казак"	# a lord
+	dynasty=360003
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=341360003
+
+	7960.1.1 = {birth="7960.1.1"}
+	8016.1.1 = {death="8016.1.1"}
+}
+100360003 = {
+	name="Хиздар"	# a lord
+	dynasty=360003
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=340360003
+
+	7987.1.1 = {birth="7987.1.1"}
+	8016.1.1 = {add_trait=poor_warrior}
+	8047.1.1 = {death="8047.1.1"}
+}
+102360003 = {
+	name="Хиздар"	# a lord
+	dynasty=360003
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=100360003
+
+	8025.1.1 = {birth="8025.1.1"}
+	8041.1.1 = {add_trait=poor_warrior}
+	8090.1.1 = {death="8090.1.1"}
+}
+105360003 = {
+	name="Граздан"	# a lord
+	dynasty=360003
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=102360003
+
+	8047.1.1 = {birth="8047.1.1"}
+	8063.1.1 = {add_trait=skilled_warrior}
+	8106.1.1 = {death = {death_reason = death_accident}}
+}
+111360003 = {
+	name="Мазхан"	# famous citizen
+	dynasty=360003
+	
+	stewardship = 5
+	martial = 2
+	diplomacy = 4
+	intrigue = 3
+	learning = 5
+	
+	add_trait = fortune_builder
+	add_trait = ambitious
+	add_trait = diligent
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=105360003
+
+	8070.1.1 = {birth="8070.1.1"}
+	8086.1.1 = {add_trait=poor_warrior}
+	8124.1.1 = {death="8124.1.1"}
+}
+114360003 = {
+	name="Хазрак"	# famous citizen
+	dynasty=360003
+	
+	stewardship = 7
+	martial = 3
+	diplomacy = 6
+	intrigue = 7
+	learning = 6
+	
+	add_trait = midas_touched
+	add_trait = ambitious
+	add_trait = diligent
+	
+	religion="harpy"
+	culture="meereenese"
+
+	father=111360003
+
+	8094.1.1 = {birth="8094.1.1"}
+	8110.1.1 = {add_trait=trained_warrior}
+	8160.1.1 = {death="8160.1.1"}
+}
+118360003 = {
+	name="Кразнис"	# a lord
+	dynasty=360003
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=114360003
+
+	8123.1.1 = {birth="8123.1.1"}
+	8139.1.1 = {add_trait=poor_warrior}
+	8179.1.1 = {death="8179.1.1"}
+}
+120360003 = {
+	name="Хиздар"	# a lord
+	dynasty=360003
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=118360003
+
+	8154.1.1 = {birth="8154.1.1"}
+	8170.1.1 = {add_trait=poor_warrior}
+	8212.1.1 = {death="8212.1.1"}
+}
+122360003 = {
+	name="Хиздарио"	# a lord
+	dynasty=360003
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=120360003
+
+	8173.1.1 = {birth="8173.1.1"}
+	8189.1.1 = {add_trait=poor_warrior}
+	8238.1.1 = {death="8238.1.1"}
+}
+124360003 = {
+	name="Моредо"	# a lord
+	dynasty=360003
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=122360003
+
+	8208.1.1 = {birth="8208.1.1"}
+	8224.1.1 = {add_trait=skilled_warrior}
+	8250.1.1 = {death="8250.1.1"}
+}
+
+129360003 = {
+	name="Бархаз"	# a lord, Хиздар's father
+	dynasty=360003
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=124360003
+
+	8229.1.1 = {birth="8229.1.1"}
+	8245.1.1 = {add_trait=poor_warrior}
+	8247.1.1 = {add_spouse=229360003}
+	8286.1.1 = {death="8286.1.1"}
+}
+229360003 = {
+	name="Ецца"
+	female=yes
+
+	religion="harpy"
+	culture="meereenese"
+
+	8229.1.1 = {birth="8229.1.1"}
+}
+131360003 = {
+	name="Граздан"	# not a lord, Хиздар's uncle, Мархаз' father
+	dynasty=360003
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=124360003
+
+	8235.1.1 = {birth="8235.1.1"}
+	8251.1.1 = {add_trait=poor_warrior}
+	8253.1.1 = {add_spouse=231360003}
+	8284.1.1 = {death="8284.1.1"}
+}
+231360003 = {
+	name="Теллеза"
+	female=yes
+
+	religion="harpy"
+	culture="meereenese"
+
+	8235.1.1 = {birth="8235.1.1"}
+	8286.1.1 = {death="8286.1.1"}
+}
+
+141360003 = {
+	name="Мазхан"	# One of Loraqs was captain of the ships besieging Meereen
+	dynasty=360003
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=124360003
+
+	add_trait=tough_soldier
+	
+	8243.1.1 = {birth="8243.1.1"}
+	8251.1.1 = {add_trait=skilled_warrior}
+	#Captains of the fleet fled to Yunkai
+	8300.1.1 = { employer=6571003 }
+	8300.7.3 = { employer=6571004 }
+	8300.7.14 = { employer=6571006 }
+}
+
+16571013 = {
+	name="Хиздар"  # THE Хиздар
+	dynasty=360003
+	martial = 4
+	diplomacy = 5
+	intrigue = 2
+	stewardship = 6
+	culture = meereenese
+	religion = harpy 
+
+	father=129360003
+	mother=229360003		
+	
+	add_trait=fair
+	add_trait="ambitious"
+	add_trait="patient"
+	#add_trait="deceitful"
+	add_trait="honest"
+	add_trait="cynical"
+	add_trait="fortune_builder"
+	
+	8266.1.1 = {
+		birth="8266.1.1"
+	}
+	8298.10.10 = {  # Drogo's death
+		effect = {
+			if = {
+				limit = { ai = yes }
+				add_trait = forbid_marriage
+			}
+		}
+	}
+	8300.1.1 = { 
+		effect = {
+			b_meereen = { ROOT = { capital = PREV } }
+		}
+	}
+}
+#Хиздар children
+132360003 = { 
+	name="Граздан"
+	dynasty=360003
+	
+	father=16571013
+	
+	culture = meereenese
+	religion = harpy 
+	
+	add_trait=bastard
+	
+	8287.1.1 = { birth="8287.1.1" }
+}
+133360003 = { 
+	name="Эззара"
+	dynasty=360003
+	female=yes
+	
+	culture = meereenese
+	religion = harpy 
+	
+	father=16571013
+	
+	add_trait=bastard
+	
+	8289.1.1 = { birth="8289.1.1" }
+}
+#Хиздар Sisters
+134360003 = { 
+	name="Квецца"
+	dynasty=360003
+	female=yes
+	
+	culture = meereenese
+	religion = harpy 
+	
+	father=129360003
+	mother=229360003
+	
+	8272.1.1 = { birth="8272.1.1" }
+}
+135360003 = {
+	name="Хаззея"
+	dynasty=360003
+	female=yes
+	
+	culture = meereenese
+	religion = harpy 
+	
+	father=129360003
+	mother=229360003
+	
+	8277.1.1 = { birth="8277.1.1" }
+}
+
+#Хиздар Cousins
+16571014 = {
+	name="Мархаз"  ## Canon
+	dynasty=360003
+	martial = 6
+	intrigue = 4
+	culture = meereenese
+	religion = harpy 
+
+	father=131360003
+	mother=231360003		
+	
+	add_trait="deceitful"
+	add_trait="cynical"
+	add_trait="gluttonous"
+	add_trait="proud"
+	add_trait="ambitious"
+	add_trait=misguided_warrior
+	
+	8263.1.1 = {
+		birth="8263.1.1"
+		employer=157004
+	}
+	8282.1.1 = {
+		employer=16571013
+	}
+	8290.1.1 = {
+		add_trait = is_fat
+		effect = {
+			set_variable = { which = physique_variable value = 20 }		
+		}
+	}
+	8291.1.1 = { add_spouse=237360003 }	#Квецца Ghazeen
+}
+138360003 = { #some male cousin of Хиздар was hostage
+	name="Дазнак"
+	dynasty=360003
+	culture = meereenese
+	religion = harpy 
+	father=131360003
+	mother=231360003	
+	
+	8265.1.1 = { birth="8265.1.1" }
+}
+136360003 = { #some female cousin of Хиздар was hostage
+	name="Эззара"
+	dynasty=360003
+	female=yes
+	culture = meereenese
+	religion = harpy 
+	father=131360003
+	mother=231360003	
+	
+	8267.1.1 = { birth="8267.1.1" }
+}
+137360003 = { #canon
+	name="Бхаказ"
+	dynasty=360003
+	culture = meereenese
+	religion = harpy 
+	father=16571014 #he is too young to be son of other zo loraq
+	mother=237360003
+	8292.1.1 = { birth="8292.1.1" }
+}
+
+### House Galare
+345360004 = {
+	name="Грозлал"	# a lord
+	dynasty=360004
+
+	religion="harpy"
+	culture="meereenese"
+
+	7819.1.1 = {birth="7819.1.1"}
+	7881.1.1 = {death="7881.1.1"}
+}
+344360004 = {
+	name="Гадхаз"	# a lord
+	dynasty=360004
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=345360004
+
+	7846.1.1 = {birth="7846.1.1"}
+	7897.1.1 = {death="7897.1.1"}
+}
+343360004 = {
+	name="Горзак"	# a lord
+	dynasty=360004
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=344360004
+
+	7870.1.1 = {birth="7870.1.1"}
+	7929.1.1 = {death="7929.1.1"}
+}
+342360004 = {
+	name="Газдор"	# a lord
+	dynasty=360004
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=343360004
+
+	7893.1.1 = {birth="7893.1.1"}
+	7952.1.1 = {death="7952.1.1"}
+}
+341360004 = {
+	name="Гразхар"	# a lord
+	dynasty=360004
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=342360004
+
+	7918.1.1 = {birth="7918.1.1"}
+	7979.1.1 = {death="7979.1.1"}
+}
+340360004 = {
+	name="Фезар"	# a lord
+	dynasty=360004
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=341360004
+
+	7941.1.1 = {birth="7941.1.1"}
+	7990.1.1 = {death="7990.1.1"}
+}
+150360004 = {
+	name="Фездар"	# a lord
+	dynasty=360004
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=340360004
+
+	7964.1.1 = {birth="7964.1.1"}
+	8020.1.1 = {death="8020.1.1"}
+}
+100360004 = {
+	name="Граздан"	# a lord
+	dynasty=360004
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=150360004
+
+	7984.1.1 = {birth="7984.1.1"}
+	8016.1.1 = {add_trait=poor_warrior}
+	8053.1.1 = {death="8053.1.1"}
+}
+101360004 = {
+	name="Миклаз"	# a lord
+	dynasty=360004
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=100360004
+
+	8029.1.1 = {birth="8029.1.1"}
+	8045.1.1 = {add_trait=poor_warrior}
+	8078.1.1 = {death="8078.1.1"}
+}
+103360004 = {
+	name="Граздан"	# a lord
+	dynasty=360004
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=101360004
+
+	8050.1.1 = {birth="8050.1.1"}
+	8066.1.1 = {add_trait=poor_warrior}
+	8105.1.1 = {death="8105.1.1"}
+}
+107360004 = {
+	name="Аззак"	# a lord
+	dynasty=360004
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=103360004
+
+	8069.1.1 = {birth="8069.1.1"}
+	8085.1.1 = {add_trait=trained_warrior}
+	8118.1.1 = {death="8118.1.1"}
+}
+112360004 = {
+	name="Мархаз"	# a lord
+	dynasty=360004
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=107360004
+
+	8099.1.1 = {birth="8099.1.1"}
+	8115.1.1 = {add_trait=skilled_warrior}
+	8166.1.1 = {death="8166.1.1"}
+}
+116360004 = {
+	name="Горзак"	# a lord
+	dynasty=360004
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=112360004
+
+	8128.1.1 = {birth="8128.1.1"}
+	8144.1.1 = {add_trait=poor_warrior}
+	8179.1.1 = {death="8179.1.1"}
+}
+119360004 = {
+	name="Дхазак"	# a lord
+	dynasty=360004
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=116360004
+
+	8158.1.1 = {birth="8158.1.1"}
+	8174.1.1 = {add_trait=trained_warrior}
+	8200.1.1 = {death="8200.1.1"}
+}
+#Green Grace's Branch
+123360004 = {
+	name="Фезхар"	# a lord
+	dynasty=360004
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=119360004
+
+	8180.1.1 = {birth="8180.1.1"}
+	8209.1.1 = {add_trait=skilled_warrior}
+	8229.1.1 = {death="8229.1.1"}
+}
+128360004 = {
+	name="Горзак"	# a lord
+	dynasty=360004
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=123360004
+
+	8225.1.1 = {birth="8225.1.1"}
+	8241.1.1 = {add_trait=poor_warrior}
+	8287.1.1 = {death="8287.1.1"}
+}
+151360004 = {
+	name="Галацца"	# THE Green Grace
+	female=yes
+	dynasty=360004
+	
+	dna="dkclkolades"
+	properties="mj0eak"
+	
+	martial = 1
+	stewardship = 3
+	learning = 11
+	diplomacy = 13
+	intrigue = 13
+	
+	add_trait = scholarly_theologian
+	add_trait = honorable
+	add_trait = kind
+	add_trait = chaste
+	add_trait = patient
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=123360004
+	
+	8217.1.1 = {
+		birth="8217.1.1"
+		effect = { health = 4.5 }
+	}
+	8243.1.1 = {
+		add_trait = grace
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				b_graces = { holder_scope = { ROOT = { move_character = PREV } } }
+			}
+		}	
+	}
+}
+
+#Граздан's Branch
+124360004 = {
+	name="Резнак"	# not a lord
+	dynasty=360004
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=119360004
+
+	8195.1.1 = {birth="8195.1.1"}
+	8211.1.1 = {add_trait=trained_warrior}
+	8242.1.1 = {add_spouse=228360004}
+	8264.1.1 = {death="8264.1.1"}
+}
+228360004 = {
+	name="Беллаца"
+	female=yes
+
+	religion="harpy"
+	culture="meereenese"
+
+	8225.1.1 = {birth="8225.1.1"}
+	8287.1.1 = {death="8287.1.1"}
+}
+16571015 = {
+	name="Граздан"  ## Canon, cousin to Green Grace
+	dynasty=360004
+	
+	martial = 4
+	diplomacy = 5
+	intrigue = 2
+	stewardship = 9
+	
+	culture = meereenese
+	religion = harpy 
+
+	father=124360004
+	mother=228360004		
+	
+	add_trait="diligent"
+	add_trait="patient"
+	add_trait="deceitful"
+	add_trait="cynical"
+	add_trait="greedy" #his former slaves case
+	
+	8260.1.1 = {
+		birth="8260.1.1"
+	}
+}
+
+#Green Grace's child cousins branch
+126360004 = {
+	name="Бхарказ"	# not a lord
+	dynasty=360004
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=119360004
+
+	8197.1.1 = {birth="8197.1.1"}
+	8213.1.1 = {add_trait=trained_warrior}
+	8276.1.1 = { add_spouse = 226360004 } #Джецана Uhlez
+	8290.1.1 = { death="8290.1.1" }	
+}
+130360004 = {
+	name="Гразхар" #canon
+	dynasty=360004
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	add_trait=temperate
+	add_trait=ambitious
+	
+	father=126360004
+	mother=226360004
+	
+	8287.1.1 = { birth="8287.1.1" }
+	8300.1.1 = { employer=77041 }
+}
+131360004 = {
+	name="Квецца" #canon
+	dynasty=360004
+	female=yes
+		
+	religion="harpy"
+	culture="meereenese"
+	
+	father=126360004
+	mother=226360004
+	
+	8289.1.1 = { birth="8289.1.1" }
+	8300.1.1 = { employer=77041 }
+}
+
+### House Pahl
+345360007 = {
+	name="Скахаз"	# a lord
+	dynasty=360007
+
+	religion="harpy"
+	culture="meereenese"
+
+	7816.1.1 = {birth="7816.1.1"}
+	7874.1.1 = {death="7874.1.1"}
+}
+344360007 = {
+	name="Ознак"	# a lord
+	dynasty=360007
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=345360007
+
+	7841.1.1 = {birth="7841.1.1"}
+	7908.1.1 = {death="7908.1.1"}
+}
+343360007 = {
+	name="Аззак"	# a lord
+	dynasty=360007
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=344360007
+
+	7865.1.1 = {birth="7865.1.1"}
+	7911.1.1 = {death="7911.1.1"}
+}
+342360007 = {
+	name="Морхаз"	# a lord
+	dynasty=360007
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=343360007
+
+	7888.1.1 = {birth="7888.1.1"}
+	7940.1.1 = {death="7940.1.1"}
+}
+341360007 = {
+	name="Оззан"	# a lord
+	dynasty=360007
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=342360007
+
+	7915.1.1 = {birth="7915.1.1"}
+	7959.1.1 = {death="7959.1.1"}
+}
+340360007 = {
+	name="Мархаз"	# a lord
+	dynasty=360007
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=341360007
+
+	7942.1.1 = {birth="7942.1.1"}
+	7995.1.1 = {death="7995.1.1"}
+}
+150360007 = {
+	name="Горзак"	# a lord
+	dynasty=360007
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=340360007
+	
+	7967.1.1 = {birth="7967.1.1"}
+	8017.1.1 = {death="8017.1.1"}
+}
+100360007 = {
+	name="Мархаз"	# a lord
+	dynasty=360007
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=150360007
+
+	7994.1.1 = {birth="7994.1.1"}
+	8016.1.1 = {add_trait=poor_warrior}
+	8046.1.1 = {death="8046.1.1"}
+}
+101360007 = {
+	name="Мезон"	# a lord
+	dynasty=360007
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=100360007
+
+	8029.1.1 = {birth="8029.1.1"}
+	8045.1.1 = {add_trait=trained_warrior}
+	8079.1.1 = {death="8079.1.1"}
+}
+104360007 = {
+	name="Хиздар"	# a lord
+	dynasty=360007
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=101360007
+
+	8053.1.1 = {birth="8053.1.1"}
+	8069.1.1 = {add_trait=poor_warrior}
+	8112.1.1 = {death="8112.1.1"}
+}
+107360007 = {
+	name="Граздан"	# a lord
+	dynasty=360007
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=104360007
+
+	8086.1.1 = {birth="8086.1.1"}
+	8102.1.1 = {add_trait=poor_warrior}
+	8142.1.1 = {death="8142.1.1"}
+}
+110360007 = {
+	name="Граздан"	# a lord
+	dynasty=360007
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=107360007
+
+	8109.1.1 = {birth="8109.1.1"}
+	8125.1.1 = {add_trait=poor_warrior}
+	8186.1.1 = {death="8186.1.1"}
+}
+116360007 = {
+	name="Хазнак"	# a lord
+	dynasty=360007
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=110360007
+
+	8143.1.1 = {birth="8143.1.1"}
+	8159.1.1 = {add_trait=skilled_warrior}
+	8223.1.1 = {death="8223.1.1"}
+}
+119360007 = {
+	name="Мазхан"	# a lord
+	dynasty=360007
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=116360007
+
+	8172.1.1 = {birth="8172.1.1"}
+	8188.1.1 = {add_trait=trained_warrior}
+	8238.1.1 = {death="8238.1.1"}
+}
+121360007 = {
+	name="Газдор"	# a lord
+	dynasty=360007
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=119360007
+
+	8204.1.1 = {birth="8204.1.1"}
+	8220.1.1 = {add_trait=trained_warrior}
+	8267.1.1 = {death="8267.1.1"}
+}
+122360007 = {
+	name="Скахаз"	# a lord
+	dynasty=360007
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=121360007
+
+	8229.1.1 = {birth="8229.1.1"}
+	8245.1.1 = {add_trait=poor_warrior}
+	8247.1.1 = {add_spouse=222360007}
+	8298.1.1 = {death="8298.1.1"}
+}
+222360007 = {
+	name="Меллара"
+	female=yes
+
+	religion="harpy"
+	culture="meereenese"
+
+	8229.1.1 = {birth="8229.1.1"}
+	8298.1.1 = {death="8298.1.1"}
+}
+
+135360007 = {
+	name="Тецца"	# Old bitter women are in charge of zo Pahl now
+	dynasty=360007
+	female=yes
+	
+	religion="harpy"
+	culture="meereenese"
+
+	father=121360007
+
+	add_trait=ruthless
+	add_trait=familyperson
+	add_trait=cruel
+	add_trait=envious
+	add_trait=proud
+	add_trait=wroth 
+	
+	8234.1.1 = {birth="8234.1.1"}
+	8250.1.1 = { add_trait = intricate_webweaver }
+	8300.1.1 = { #66 years old during crucification of whole family
+		effect = {
+			c_77041 = {
+				reverse_opinion = {
+					who = ROOT
+					modifier = opinion_vengeance
+					years = 2400
+				}
+			}
+		}
+	}
+}
+#Main Branch
+125360007 = {
+	name="Миклаз"	# a lord
+	dynasty=360007
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=122360007
+	mother=222360007
+
+	add_trait=diligent
+	add_trait=ruthless
+
+	8254.1.1 = {birth="8254.1.1"}
+	8263.1.1 = {add_trait=trained_warrior }
+	8270.1.1 = { 
+		add_trait=midas_touched   #Brown Ben Plumm said that he was richest man in meereen.
+		effect = { wealth = 500 }
+	}
+	8274.1.1 = { add_spouse=225360007 }
+	8300.1.1 = {
+		death = {
+			death_reason = death_execution_crucifixion
+			killer = 77041
+		}
+	}
+}
+225360007 = {
+	name="Теллезара"
+	female=yes
+
+	religion="harpy"
+	culture="meereenese"
+
+	8260.1.1 = {birth="8260.1.1"}
+	8290.1.1 = {
+		death = { death_reason = death_accident }
+	}
+}
+
+133360007 = {
+	name="Селеззка" #random daughter of zo pahls cause its now fully female house
+	dynasty=360007
+	female=yes
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=125360007
+	mother=225360007
+	
+	8275.1.1 = {birth="8275.1.1"}
+	8300.1.1 = {
+		effect = {
+			c_77041 = {
+				reverse_opinion = {
+					who = ROOT
+					modifier = opinion_vengeance
+					years = 2400
+				}
+			}
+		}
+	}
+}
+134360007 = {
+	name="Эззара" #random daughter of zo pahls cause its now fully female house
+	dynasty=360007
+	female=yes
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=125360007
+	mother=225360007
+	
+	8278.1.1 = {birth="8278.1.1"}
+	8300.1.1 = {
+		effect = {
+			c_77041 = {
+				reverse_opinion = {
+					who = ROOT
+					modifier = opinion_vengeance
+					years = 2400
+				}
+			}
+		}
+	}
+}
+#Ознак zo Pahl's branch
+128360007 = {
+	name="Юзнак" # commander of watch, father of Ознак zo Pahl
+	dynasty=360007
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	martial=8 #so he will be master-at-arms
+	
+	father=122360007
+	mother=222360007
+	
+	8258.1.1 = {birth="8258.1.1"}
+	8274.1.1 = { 
+		add_trait = skilled_warrior
+		add_trait = skilled_tactician #skills to be commander of city watch
+	}
+	8276.1.1 = { add_spouse=228360007 }	#Сецка Меррек
+	8290.1.1 = { employer=16571013 } #master at arms in meereen
+	8300.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 77041 #Daenerys Targaryen
+		}
+	}
+}
+129360007 = {
+	name="Ознак" # champion of meereen. canon.
+	dynasty=360007
+	dna="cdbmeclcaae"
+	properties="kj0dek00000"
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=128360007	#Юзнак zo Pahl
+	mother=228360007	#Сецка Меррек
+	
+	add_trait=proud
+	add_trait=rude
+	add_trait=brave
+	add_trait=cruel
+	
+	8277.1.1 = {birth="8277.1.1"}
+	8290.1.1 = { employer=16571013 } #champion of meereen later
+	8293.1.1 = {
+		add_trait = trained_warrior
+		add_trait = misguided_warrior 
+		add_trait = duelist
+	}
+	8300.1.1 = {
+		death = {
+			death_reason = death_duel 
+			killer = 12300101 #Strong Бельвас
+		}
+	}
+}
+151360007 = {	#Suprisingly one of Pahls was captain of ships besieging Meereen
+	name="Ксапракс"
+	dynasty=360007
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=128360007	#Юзнак zo Pahl
+	mother=228360007	#Сецка Меррек
+	
+	add_trait=brilliant_strategist
+	
+	8280.1.1 = {birth="8280.1.1"}
+	8296.1.1 = { add_trait=skilled_warrior }
+	#Captains of the fleet fled to Yunkai
+	8300.1.1 = { 
+		employer=6571003 
+		effect = {
+			c_77041 = {
+				reverse_opinion = {
+					who = ROOT
+					modifier = opinion_vengeance
+					years = 2400
+				}
+			}
+		}
+	}
+	8300.7.3 = { employer=6571004 }
+	8300.7.14 = { employer=6571006 }
+}
+
+#Кезмия's Branch
+130360007 = {
+	name="Дазнак"
+	dynasty=360007
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=122360007
+	mother=222360007
+	
+	8262.1.1 = {birth="8262.1.1"}
+	8288.1.1 = {add_spouse=230360007} #Аццея Zhak
+	8300.1.1 = {
+		death = {
+			death_reason = death_execution_crucifixion 
+			killer = 77041
+		}
+	}
+}
+132360007 = {
+	name="Кезмия" #canon
+	dynasty=360007
+	female=yes
+	dna="ajbgahafaan"
+	properties="ck0cak00000"
+	religion="harpy"
+	culture="meereenese"
+	
+	add_trait = proud
+	add_trait = fair
+	add_trait = groomed
+	
+	father=130360007
+	mother=230360007 #Аццея Zhak
+	
+	8290.1.1 = {birth="8290.1.1"} 
+	8300.1.1 = {
+		employer=77041	#Dany's hostage
+	}
+}
+
+#Minor Branches
+131360007 = {
+	name="Резнак"
+	dynasty=360007
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=122360007
+	mother=222360007
+	
+	8267.1.1 = {birth="8267.1.1"}
+	8300.1.1 = {
+		death = {
+			death_reason = death_execution_crucifixion
+			killer = 77041
+		}
+	}
+}
+127360007 = {
+	name="Хаззея"	#Bitter old women are now in charge of house zo Pahl
+	female=yes
+	dynasty=360007
+
+	religion="harpy"
+	culture="meereenese"
+
+	father=122360007
+	mother=222360007
+
+	add_trait=ruthless
+	add_trait=cruel
+	add_trait=familyperson
+	add_trait=proud
+	
+	8257.1.1 = {birth="8257.1.1"} #43 years. So second in command in zo pahl familly
+	8263.1.1 = { add_trait = intricate_webweaver }
+	8300.1.1 = {
+		effect = {
+			c_77041 = {
+				reverse_opinion = {
+					who = ROOT
+					modifier = opinion_vengeance
+					years = 2400
+				}
+			}
+		}
+	}
+}
+
+###############################
+### Meereenese minor houses ###
+###############################
+### House Zhak
+354360016 = {
+	name="Драказ"	# a lord
+	dynasty=360016
+
+	religion="harpy"
+	culture="meereenese"
+	
+	7842.1.1 = {birth="7842.1.1"}
+	7885.1.1 = {death="7885.1.1"}
+}
+353360016 = {
+	name="Хазрак"	# a lord
+	dynasty=360016
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=354360016
+	
+	7866.1.1 = {birth="7866.1.1"}
+	7911.1.1 = {death="7911.1.1"}
+}
+352360016 = {
+	name="Мазхан"	# a lord
+	dynasty=360016
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=353360016
+	
+	7890.1.1 = {birth="7890.1.1"}
+	7948.1.1 = {death="7948.1.1"}
+}
+351360016 = {
+	name="Карказ"	# a lord
+	dynasty=360016
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=352360016
+	
+	7917.1.1 = {birth="7917.1.1"}
+	7969.1.1 = {death="7969.1.1"}
+}
+350360016 = {
+	name="Мархаз"	# a lord
+	dynasty=360016
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=351360016
+	
+	7940.1.1 = {birth="7940.1.1"}
+	7999.1.1 = {death="7999.1.1"}
+}
+349360016 = {
+	name="Драказ"	# a lord
+	dynasty=360016
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=350360016
+	
+	7961.1.1 = {birth="7961.1.1"}
+	8002.1.1 = {death="8002.1.1"}
+}
+348360016 = {
+	name="Бхаказ"	# a lord
+	dynasty=360016
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=349360016
+	
+	7985.1.1 = {birth="7985.1.1"}
+	8040.1.1 = {death="8040.1.1"}
+}
+347360016 = {
+	name="Ярказ"	# a lord
+	dynasty=360016
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=348360016
+	
+	8010.1.1 = {birth="8010.1.1"}
+	8088.1.1 = {death="8088.1.1"}
+}
+346360016 = {
+	name="Зхарак"	# a lord
+	dynasty=360016
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=347360016
+	
+	8038.1.1 = {birth="8038.1.1"}
+	8101.1.1 = {death="8101.1.1"}
+}
+345360016 = {
+	name="Кездар"	# a lord
+	dynasty=360016
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=346360016
+	
+	8061.1.1 = {birth="8061.1.1"}
+	8120.1.1 = {death="8120.1.1"}
+}
+344360016 = {
+	name="Аззак"	# a lord
+	dynasty=360016
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=345360016
+	
+	8084.1.1 = {birth="8084.1.1"}
+	8142.1.1 = {death="8142.1.1"}
+}
+343360016 = {
+	name="Оззак"	# a lord
+	dynasty=360016
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=344360016
+	
+	8109.1.1 = {birth="8109.1.1"}
+	8183.1.1 = {death="8183.1.1"}
+}
+342360016 = {
+	name="Хезар"	# a lord
+	dynasty=360016
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=343360016
+	
+	8135.1.1 = {birth="8135.1.1"}
+	8216.1.1 = {death="8216.1.1"}
+}
+341360016 = {
+	name="Схизар"	# a lord
+	dynasty=360016
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=342360016
+	
+	8161.1.1 = {birth="8161.1.1"}
+	8220.1.1 = {death="8220.1.1"}
+}
+340360016 = {
+	name="Ярказ"	# a lord
+	dynasty=360016
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=341360016
+	
+	8187.1.1 = {birth="8187.1.1"}
+	8244.1.1 = {death="8244.1.1"}
+}
+101360016 = {
+	name="Хиздар"	# a lord
+	dynasty=360016
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=340360016
+	
+	8210.1.1 = {birth="8210.1.1"}
+	8229.1.1 = {add_spouse=201360016}
+	8252.1.1 = {death="8252.1.1"}
+}
+201360016 = {
+	name="Меззара"
+	female=yes
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	8210.1.1 = { birth="8210.1.1"} #meereen is supposed to be filled with crones and grandpas
+}
+111360016 = {
+	name="Аццея"
+	female=yes
+	dynasty=360016
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360016
+	mother=201360016
+	
+	8225.1.1 = { birth="8225.1.1"}
+	8281.1.1 = { death="8281.1.1"}
+}
+102360016 = {
+	name="Прендаль"	# a lord
+	dynasty=360016
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360016
+	mother=201360016
+	
+	employer = 101360016
+	8232.1.1 = {birth="8232.1.1"}
+	8252.1.1 = { employer = 102360016 }
+	8254.1.1 = { add_spouse = 104360005 }
+	8300.1.1 = {
+		death = {
+			death_reason = death_execution_crucifixion 
+			killer = 77041
+		}
+	}
+}
+106360016 = {
+	name="Царак"
+	dynasty=360016
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=102360016
+	mother=104360005	
+	
+	employer = 102360016
+	8256.1.1 = {birth="8256.1.1"}
+	8280.1.1 = { add_spouse = 103360011 }
+	8300.1.1 = {
+		death = {
+			death_reason = death_execution_crucifixion 
+			killer = 77041
+		}
+	}
+}
+107360016 = {
+	name="Драказ" #hostage #1
+	dynasty=360016
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=106360016
+	mother= 103360011
+	
+	employer = 102360016
+	8288.1.1 = { birth="8288.1.1" }
+	8300.1.1 = { employer = 77041 }
+}
+109360016 = {
+	name="Хазнак"	# a lord
+	dynasty=360016
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=102360016
+	mother=104360005	
+	
+	employer = 102360016
+	8266.1.1 = {birth="8266.1.1"}
+	8296.1.1 = { add_spouse = 107360010 }
+}
+110360016 = {
+	name="Мархаз" #the one accused of rape on his bedslave
+	dynasty=360016
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=102360016
+	mother=104360005	
+	
+	add_trait = lustful 
+	
+	employer = 102360016
+	8273.1.1 = {birth="8273.1.1"}
+	8300.1.1 = { employer = 109360016 }
+}
+230360007 = {
+	name="Аццея"
+	dynasty=360016
+	female=yes
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=102360016
+	mother=104360005	
+	
+	add_trait = fair #so Кезмия may be fair after someone
+	
+	8274.1.1 = {birth="8274.1.1"}
+	8288.1.1 = {add_spouse=130360007}
+	8300.1.1 = {
+		effect = {
+			c_77041 = {
+				reverse_opinion = {
+					who = ROOT
+					modifier = opinion_vengeance
+					years = 2400
+				}
+			}
+		}
+	}
+}
+199360016 = {
+	name="Тецца"
+	female=yes
+	dynasty=360016
+	
+	father=109360016
+	mother= 107360010
+
+	religion="harpy"
+	culture="meereenese"
+	
+	8297.1.1 = { birth="8297.1.1" }
+}
+103360016 = {
+	name="Фендаль"
+	dynasty=360016
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360016
+	mother=201360016
+	
+	employer = 101360016
+	
+	8243.1.1 = {birth="8243.1.1"}
+	8252.1.1 = { employer = 102360016 }
+	8271.1.1 = { add_spouse = 203360016 }
+	8300.1.1 = {
+		death = {
+			death_reason = death_execution_crucifixion 
+			killer = 77041
+		}
+	}
+}
+203360016 = {
+	name="Сецка"
+	female=yes
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	8243.1.1 = {birth="8243.1.1"}
+}
+104360016 = { #There is supposed to be more than one alive Zhak
+	name="Фездар"
+	dynasty=360016
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360016
+	mother=201360016
+	
+	employer = 102360016 
+	
+	8252.1.1 = {birth="8252.1.1"}	
+	8280.1.1 = {add_spouse=204360016}
+	8300.1.1 = { employer = 109360016 }
+}
+
+105360016 = {
+	name="Джецана"
+	female=yes
+	dynasty=360016
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=104360016
+	mother=204360016
+	
+	8284.1.1 = {birth="8284.1.1"} 
+	8298.1.1 = { add_spouse = 106360010 }
+}
+108360016 = {
+	name="Геззелла"
+	female=yes
+	dynasty=360016
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=104360016
+	mother=204360016
+	
+	8292.1.1 = {birth="8292.1.1"} 
+	8300.1.1 = { employer = 77041 }
+}
+112360016 = { #One of Zhaks is captain of ships besieging Meereen
+	name="Ксапракс"
+	dynasty=360016
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360016
+	mother=201360016
+	
+	add_trait=tough_soldier
+	
+	employer = 102360016 
+	
+	8252.1.1 = {birth="8252.1.1"}	
+	#Captains of the fleet fled to Yunkai
+	8300.1.1 = { employer=6571003 }
+	8300.7.3 = { employer=6571004 }
+	8300.7.14 = { employer=6571006 }
+}
+
+### House Меррек
+356360005 = {
+	name="Резнак"	# a lord
+	dynasty=360005
+
+	religion="harpy"
+	culture="meereenese"
+	
+	7805.1.1 = { birth="7805.1.1"}
+	7877.1.1 = { death="7877.1.1"}
+}
+355360005 = {
+	name="Меррек"	# a lord
+	dynasty=360005
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=356360005
+	
+	7827.1.1 = { birth="7827.1.1"}
+	7898.1.1 = { death="7898.1.1"}
+}
+354360005 = {
+	name="Горзак"	# a lord
+	dynasty=360005
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=355360005
+	
+	7855.1.1 = { birth="7855.1.1"}
+	7910.1.1 = { death="7910.1.1"}
+}
+353360005 = {
+	name="Граздан"	# a lord
+	dynasty=360005
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=354360005
+	
+	7878.1.1 = { birth="7878.1.1"}
+	7933.1.1 = { death="7933.1.1"}
+}
+352360005 = {
+	name="Кразнис"	# a lord
+	dynasty=360005
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=353360005
+	
+	7902.1.1 = { birth="7902.1.1"}
+	7966.1.1 = { death="7966.1.1"}
+}
+351360005 = {
+	name="Граздан"	# a lord
+	dynasty=360005
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=352360005
+	
+	7929.1.1 = { birth="7929.1.1"}
+	7991.1.1 = { death="7991.1.1"}
+}
+350360005 = {
+	name="Дхаццар"	# a lord
+	dynasty=360005
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=351360005
+	
+	7952.1.1 = { birth="7952.1.1"}
+	8000.1.1 = { death="8000.1.1"}
+}
+349360005 = {
+	name="Бхарказ"	# a lord
+	dynasty=360005
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=350360005
+	
+	7976.1.1 = { birth="7976.1.1"}
+	8025.1.1 = { death="8025.1.1"}
+}
+348360005 = {
+	name="Ознак"	# a lord
+	dynasty=360005
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=349360005
+	
+	7999.1.1 = { birth="7999.1.1"}
+	8048.1.1 = { death="8048.1.1"}
+}
+347360005 = {
+	name="Граздан"	# a lord
+	dynasty=360005
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=348360005
+	
+	8020.1.1 = { birth="8020.1.1"}
+	8091.1.1 = { death="8091.1.1"}
+}
+346360005 = {
+	name="Меррек"	# a lord
+	dynasty=360005
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=347360005
+	
+	8044.1.1 = { birth="8044.1.1"}
+	8099.1.1 = { death="8099.1.1"}
+}
+345360005 = {
+	name="Граздан"	# a lord
+	dynasty=360005
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=346360005
+	
+	8069.1.1 = { birth="8069.1.1"}
+	8111.1.1 = { death="8111.1.1"}
+}
+344360005 = {
+	name="Граздар"	# a lord
+	dynasty=360005
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=345360005
+	
+	8092.1.1 = { birth="8092.1.1"}
+	8149.1.1 = { death="8149.1.1"}
+}
+343360005 = {
+	name="Меррек"	# a lord
+	dynasty=360005
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=344360005
+	
+	8115.1.1 = { birth="8115.1.1"}
+	8182.1.1 = { death="8182.1.1"}
+}
+342360005 = {
+	name="Граздан"	# a lord
+	dynasty=360005
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=343360005
+	
+	8141.1.1 = { birth="8141.1.1"}
+	8202.1.1 = { death="8202.1.1"}
+}
+341360005 = {
+	name="Морхаз"	# a lord
+	dynasty=360005
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=342360005
+	
+	8163.1.1 = { birth="8163.1.1"}
+	8212.1.1 = { death="8212.1.1"}
+}
+340360005 = {
+	name="Граздар"	# a lord
+	dynasty=360005
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=341360005
+	
+	8189.1.1 = { birth="8189.1.1"}
+	8240.1.1 = { death="8240.1.1"}
+}
+101360005 = {
+	name="Меррек"	# a lord
+	dynasty=360005
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=340360005
+	
+	8211.1.1 = { birth="8211.1.1"}
+	8244.1.1 = { add_spouse=111360016 }
+	8265.1.1 = { death="8265.1.1"}
+}
+104360005 = {
+	name="Джецана"
+	female=yes
+	dynasty=360005
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360005
+	mother=111360016
+	
+	8240.1.1 = { birth="8240.1.1"}
+}
+	
+102360005 = {
+	name="Кразнис"	# a lord
+	dynasty=360005
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360005
+	mother=111360016
+	
+	employer = 101360005
+	
+	8245.1.1 = { birth="8245.1.1"}
+	8259.1.1 = { add_spouse=202360005 }
+	8265.1.1 = { employer = 102360005 }
+	8300.1.1 = {
+		death = {
+			death_reason = death_execution_crucifixion 
+			killer = 77041
+		}
+	}
+}
+202360005 = {
+	name="Мелеззара"
+	female=yes
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	8243.1.1 = { birth="8243.1.1"}
+	8292.1.1 = { death="8292.1.1"}
+}
+228360007 = {
+	name="Сецка" 
+	female=yes
+	dynasty=360005
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=102360005
+	mother=202360005
+	
+	8260.1.1 = {birth="8260.1.1"}
+	8300.1.1 = {
+		effect = {
+			c_77041 = {
+				reverse_opinion = {
+					who = ROOT
+					modifier = opinion_vengeance
+					years = 2400
+				}
+			}
+		}
+	}
+}
+103360005 = {
+	name="Ярказ"
+	dynasty=360005
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=102360005
+	mother=202360005
+	
+	employer = 101360005
+	
+	8264.1.1 = { birth="8264.1.1"}
+	8265.1.1 = { employer = 102360005 }
+	8300.1.1 = {
+		death = {
+			death_reason = death_execution_crucifixion 
+			killer = 77041
+		}
+	}
+}
+105360005 = {
+	name="Юрхаз"	# a lord
+	dynasty=360005
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=102360005
+	mother=202360005
+	
+	employer = 102360005
+	
+	8274.1.1 = { birth="8274.1.1"}
+	8292.1.1 = { add_spouse=105360010 }
+	8300.1.1 = { employer = 105360005 }
+}
+106360005 = {
+	name="Меззара" #little hostage girl #canon 
+	dynasty=360005
+	female=yes
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=105360005
+	mother=105360010
+	
+	add_trait=kind
+	add_trait=shy
+
+	8293.1.1 = { birth="8293.1.1" }
+	8300.1.1 = { employer = 77041 }
+}
+107360005 = {
+	name="Газдор" #little hostage boy
+	dynasty=360005
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=105360005
+	mother=105360010
+	
+	employer = 102360005
+	
+	8294.1.1 = { birth="8294.1.1" }
+	8300.1.1 = { employer = 77041 }
+}
+
+108360005 = {	#One of Merreqs is captain of ships besieging Meereen
+	name="Хизнак"
+	dynasty=360005
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=102360005
+	mother=202360005
+	
+	add_trait=tough_soldier
+	
+	employer = 102360005
+	
+	8274.1.1 = { birth="8274.1.1"}
+	#Captains of the fleet fled to Yunkai
+	8300.1.1 = { employer=6571003 }
+	8300.7.3 = { employer=6571004 }
+	8300.7.14 = { employer=6571006 }
+}
+
+### House Кваззар
+356360010 = {
+	name="Кваззар"	# a lord
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	7799.1.1 = { birth="7799.1.1"}
+	7862.1.1 = { death="7862.1.1"}
+}
+355360010 = {
+	name="Граздан"	# a lord
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=356360010
+	
+	7821.1.1 = { birth="7821.1.1"}
+	7888.1.1 = { death="7888.1.1"}
+}
+354360010 = {
+	name="Миклаз"	# a lord
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=355360010
+	
+	7845.1.1 = { birth="7845.1.1"}
+	7901.1.1 = { death="7901.1.1"}
+}
+353360010 = {
+	name="Кваззар"	# a lord
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=354360010
+	
+	7868.1.1 = { birth="7868.1.1"}
+	7922.1.1 = { death="7922.1.1"}
+}
+352360010 = {
+	name="Граздан"	# a lord
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=353360010
+	
+	7890.1.1 = { birth="7890.1.1"}
+	7949.1.1 = { death="7949.1.1"}
+}
+351360010 = {
+	name="Кваззар"	# a lord
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=352360010
+	
+	7919.1.1 = { birth="7919.1.1"}
+	7967.1.1 = { death="7967.1.1"}
+}
+350360010 = {
+	name="Горган"	# a lord
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=351360010
+	
+	7944.1.1 = { birth="7944.1.1"}
+	7997.1.1 = { death="7997.1.1"}
+}
+349360010 = {
+	name="Хазнак"	# a lord
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=350360010
+	
+	7969.1.1 = { birth="7969.1.1"}
+	8024.1.1 = { death="8024.1.1"}
+}
+348360010 = {
+	name="Граздан"	# a lord
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=349360010
+	
+	7994.1.1 = { birth="7994.1.1"}
+	8040.1.1 = { death="8040.1.1"}
+}
+347360010 = {
+	name="Морхаз"	# a lord
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=348360010
+	
+	8020.1.1 = { birth="8020.1.1"}
+	8094.1.1 = { death="8094.1.1"}
+}
+346360010 = {
+	name="Кваззар"	# a lord
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=347360010
+	
+	8051.1.1 = { birth="8051.1.1"}
+	8110.1.1 = { death="8110.1.1"}
+}
+345360010 = {
+	name="Гадхаз"	# a lord
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=346360010
+	
+	8076.1.1 = { birth="8076.1.1"}
+	8137.1.1 = { death="8137.1.1"}
+}
+344360010 = {
+	name="Дазнак"	# a lord
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=345360010
+	
+	8101.1.1 = { birth="8101.1.1"}
+	8175.1.1 = { death="8175.1.1"}
+}
+343360010 = {
+	name="Граздан"	# a lord
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=344360010
+	
+	8123.1.1 = { birth="8123.1.1"}
+	8191.1.1 = { death="8191.1.1"}
+}
+342360010 = {
+	name="Кваззар"	# a lord
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=343360010
+	
+	8148.1.1 = { birth="8148.1.1"}
+	8209.1.1 = { death="8209.1.1"}
+}
+341360010 = {
+	name="Кваззар"	# a lord
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=342360010
+	
+	8172.1.1 = { birth="8172.1.1"}
+	8222.1.1 = { death="8222.1.1"}
+}
+340360010 = {
+	name="Морхаз"	# a lord
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=341360010
+	
+	8199.1.1 = { birth="8199.1.1"}
+	8245.1.1 = { death="8245.1.1"}
+}
+101360010 = {
+	name="Фезхар"	# a lord
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=340360010
+	
+	8220.1.1 = { birth="8220.1.1"}
+	8250.1.1 = { add_spouse=135360007 }
+	8286.1.1 = { death="8286.1.1"}
+}
+102360010 = {
+	name="Аззак"	# a lord
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360010
+	mother=135360007
+	
+	employer=101360010
+	
+	8254.1.1 = { birth="8254.1.1"}
+	8268.1.1 = { add_spouse=127360007 }	
+	8286.1.1 = { employer=102360010 }
+	8300.1.1 = {
+		death = {
+			death_reason = death_execution_crucifixion 
+			killer = 77041
+		}
+	}
+}
+103360010 = {
+	name="Юзнак"
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=102360010
+	mother=127360007
+	
+	employer=101360010
+	
+	8270.1.1 = { birth="8270.1.1"}
+	8286.1.1 = { employer=102360010 }
+	8292.1.1 = { add_spouse = 203360010 }
+	8300.1.1 = {
+		death = {
+			death_reason = death_execution_crucifixion 
+			killer = 77041
+		}
+	}
+}
+203360010 = {
+	name="Хаззея"
+	female=yes
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	8275.1.1 = { birth="8275.1.1"}
+}
+105360010 = {
+	name="Теллезара"
+	dynasty=360010
+	female = yes
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=102360010
+	mother=127360007
+
+	8273.1.1 = { birth="8273.1.1"}
+}
+106360010 = {
+	name="Бхарказ"
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=102360010
+	mother=127360007
+	
+	employer=101360010
+	
+	8277.1.1 = { birth="8277.1.1"}
+	8286.1.1 = { employer=102360010 }
+	8300.1.1 = { employer=109360010 }
+}	
+107360010 = {
+	name="Сецца"
+	female=yes
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=102360010
+	mother=127360007
+
+	8280.1.1 = { birth="8280.1.1"}
+}	
+109360010 = {
+	name="Морхаз"	# a lord
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=102360010
+	mother=127360007
+	
+	employer=101360010
+	
+	8275.1.1 = { birth="8275.1.1"}
+	8286.1.1 = { employer=102360010 }
+	8294.1.1 = { add_spouse = 133360007 }
+	8300.1.1 = { employer=109360010 }
+}
+108360010 = {
+	name="Джецена"
+	female=yes
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=102360010
+	mother=127360007
+	
+	employer=102360010
+	
+	8291.1.1 = { birth="8291.1.1"}
+	8300.1.1 = { employer = 77041 }
+}	
+110360010 = {	#One of Quazzars is captain of ships besieging Meereen
+	name="Горхаз"
+	dynasty=360010
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=102360010
+	mother=127360007
+	
+	add_trait=tough_soldier
+	
+	employer=101360010
+	
+	8277.1.1 = { birth="8277.1.1"}
+	8286.1.1 = { employer=102360010 }
+	#Captains of the fleet fled to Yunkai
+	8300.1.1 = { employer=6571003 }
+	8300.7.3 = { employer=6571004 }
+	8300.7.14 = { employer=6571006 }
+}
+
+### House Хазкар
+355360011 = {
+	name="Граздан"	# a lord
+	dynasty=360011
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	7818.1.1 = { birth="7818.1.1"}
+	7871.1.1 = { death="7871.1.1"}
+}
+354360011 = {
+	name="Миклаз"	# a lord
+	dynasty=360011
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=355360011
+	
+	7845.1.1 = { birth="7845.1.1"}
+	7901.1.1 = { death="7901.1.1"}
+}
+353360011 = {
+	name="Мезон"	# a lord
+	dynasty=360011
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=354360011
+	
+	7859.1.1 = { birth="7859.1.1"}
+	7900.1.1 = { death="7900.1.1"}
+}
+352360011 = {
+	name="Граздан"	# a lord
+	dynasty=360011
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=353360011
+	
+	7882.1.1 = { birth="7882.1.1"}
+	7941.1.1 = { death="7941.1.1"}
+}
+351360011 = {
+	name="Хазкар"	# a lord
+	dynasty=360011
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=352360011
+	
+	7906.1.1 = { birth="7906.1.1"}
+	7964.1.1 = { death="7964.1.1"}
+}
+350360011 = {
+	name="Скахаз"	# a lord
+	dynasty=360011
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=351360011
+	
+	7930.1.1 = { birth="7930.1.1"}
+	7988.1.1 = { death="7988.1.1"}
+}
+349360011 = {
+	name="Граздан"	# a lord
+	dynasty=360011
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=350360011
+	
+	7958.1.1 = { birth="7958.1.1"}
+	8024.1.1 = { death="8024.1.1"}
+}
+348360011 = {
+	name="Гарнхак"	# a lord
+	dynasty=360011
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=349360011
+	
+	7981.1.1 = { birth="7981.1.1"}
+	8034.1.1 = { death="8034.1.1"}
+}
+347360011 = {
+	name="Хазкар"	# a lord
+	dynasty=360011
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=348360011
+	
+	8005.1.1 = { birth="8005.1.1"}
+	8083.1.1 = { death="8083.1.1"}
+}
+346360011 = {
+	name="Драказ"	# a lord
+	dynasty=360011
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=347360011
+	
+	8030.1.1 = { birth="8030.1.1"}
+	8099.1.1 = { death="8099.1.1"}
+}
+345360011 = {
+	name="Лизнук"	# a lord
+	dynasty=360011
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=346360011
+	
+	8050.1.1 = { birth="8050.1.1"}
+	8103.1.1 = { death="8103.1.1"}
+}
+344360011 = {
+	name="Оззак"	# a lord
+	dynasty=360011
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=345360011
+	
+	8082.1.1 = { birth="8082.1.1"}
+	8135.1.1 = { death="8135.1.1"}
+}
+343360011 = {
+	name="Хиздар"	# a lord
+	dynasty=360011
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=344360011
+	
+	8110.1.1 = { birth="8110.1.1"}
+	8159.1.1 = { death="8159.1.1"}
+}
+342360011 = {
+	name="Ухзак"	# a lord
+	dynasty=360011
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=343360011
+	
+	8133.1.1 = { birth="8133.1.1"}
+	8189.1.1 = { death="8189.1.1"}
+}
+341360011 = {
+	name="Горзак"	# a lord
+	dynasty=360011
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=342360011
+	
+	8159.1.1 = { birth="8159.1.1"}
+	8201.1.1 = { death="8201.1.1"}
+}
+340360011 = {
+	name="Зхарак"	# a lord
+	dynasty=360011
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=341360011
+	
+	8186.1.1 = { birth="8186.1.1"}
+	8242.1.1 = { death="8242.1.1"}
+}
+101360011 = {
+	name="Хиздар"	# a lord
+	dynasty=360011 
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=340360011
+	
+	8212.1.1 = { birth="8212.1.1"}
+	8240.1.1 = { add_spouse=201360011 }
+	8300.1.1 = {
+		death = {
+			death_reason = death_execution_crucifixion 
+			killer = 77041
+		}
+	}
+}
+201360011 = {
+	name="Меззара"
+	female=yes
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	8223.1.1 = { birth="8223.1.1"}
+}
+102360011 = {
+	name="Фендаль"
+	dynasty=360011
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360011
+	mother=201360011
+	
+	employer = 101360011
+	
+	8242.1.1 = { birth="8242.1.1"}
+	8271.1.1 = { add_spouse=202360011 }
+	8300.1.1 = {
+		death = {
+			death_reason = death_execution_crucifixion 
+			killer = 77041
+		}
+	}
+}
+202360011 = {
+	name="Эззара"
+	female=yes
+	religion="harpy"
+	culture="meereenese"
+	
+	8242.1.1 = { birth="8242.1.1"}
+}
+104360011 = {
+	name="Ярказ"	# a lord
+	dynasty=360011
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=102360011
+	mother=202360011
+	
+	employer = 101360011
+	
+	8272.1.1 = { birth="8272.1.1" }
+	
+}
+105360011 = {
+	name="Прендаль"
+	dynasty=360011
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=102360011
+	mother=202360011
+	
+	employer = 101360011
+	
+	8286.1.1 = { birth="8286.1.1" }
+	8300.1.1 = { employer=77041 }
+}
+106360011 = {
+	name="Эллеззара"
+	dynasty=360011
+	female=yes
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=102360011
+	mother=202360011
+	
+	employer = 101360011
+	
+	8291.1.1 = { birth="8291.1.1" }
+	8300.1.1 = { employer=77041 }
+}
+103360011 = {
+	name="Хаззея"
+	dynasty=360011
+	female=yes
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360011
+	mother=201360011
+	
+	8259.1.1 = { birth="8259.1.1" }
+}
+204360016 = {
+	name="Галацца"
+	female=yes
+	dynasty=360011
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360011
+	mother=201360011
+	
+	8264.1.1 = {birth="8264.1.1"} 
+}
+
+107360011 = {	#One of Hazkars is captain of ships besieging Meereen
+	name="Газдор"
+	dynasty=360011
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360011
+	mother=201360011
+	
+	add_trait=tough_soldier
+	
+	employer = 101360011
+	
+	8250.1.1 = { birth="8250.1.1"}
+	#Captains of the fleet fled too Yunkai
+	8300.1.1 = { employer=6571003 }
+	8300.7.3 = { employer=6571004 }
+	8300.7.14 = { employer=6571006 }
+}
+
+### House Раздар
+357360014 = {
+	name="Граздан"	# a lord
+	dynasty=360014
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	7808.1.1 = {birth="7808.1.1"}
+	7880.1.1 = {death="7880.1.1"}
+}
+356360014 = {
+	name="Кхарак"	# a lord
+	dynasty=360014
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=357360014
+	
+	7831.1.1 = {birth="7831.1.1"}
+	7899.1.1 = {death="7899.1.1"}
+}
+355360014 = {
+	name="Граздан"	# a lord
+	dynasty=360014
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=356360014
+	
+	7855.1.1 = {birth="7855.1.1"}
+	7918.1.1 = {death="7918.1.1"}
+}
+354360014 = {
+	name="Раздар"	# a lord
+	dynasty=360014
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=355360014
+	
+	7878.1.1 = {birth="7878.1.1"}
+	7946.1.1 = {death="7946.1.1"}
+}
+353360014 = {
+	name="Морхаз"	# a lord
+	dynasty=360014
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=354360014
+	
+	7900.1.1 = {birth="7900.1.1"}
+	7962.1.1 = {death="7962.1.1"}
+}
+352360014 = {
+	name="Миклаз"	# a lord
+	dynasty=360014
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=353360014
+	
+	7922.1.1 = {birth="7922.1.1"}
+	7995.1.1 = {death="7995.1.1"}
+}
+351360014 = {
+	name="Граздан"	# a lord
+	dynasty=360014
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=352360014
+	
+	7953.1.1 = {birth="7953.1.1"}
+	8009.1.1 = {death="8009.1.1"}
+}
+350360014 = {
+	name="Резнак"	# a lord
+	dynasty=360014
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=351360014
+	
+	7979.1.1 = {birth="7979.1.1"}
+	8033.1.1 = {death="8033.1.1"}
+}
+349360014 = {
+	name="Корхаз"	# a lord
+	dynasty=360014
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=350360014
+	
+	8005.1.1 = {birth="8005.1.1"}
+	8081.1.1 = {death="8081.1.1"}
+}
+348360014 = {
+	name="Бархаз"	# a lord
+	dynasty=360014
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=349360014
+	
+	8029.1.1 = {birth="8029.1.1"}
+	8098.1.1 = {death="8098.1.1"}
+}
+347360014 = {
+	name="Оздан"	# a lord
+	dynasty=360014
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=348360014
+	
+	8055.1.1 = {birth="8055.1.1"}
+	8119.1.1 = {death="8119.1.1"}
+}
+346360014 = {
+	name="Мезар"	# a lord
+	dynasty=360014
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=347360014
+	
+	8079.1.1 = {birth="8079.1.1"}
+	8146.1.1 = {death="8146.1.1"}
+}
+345360014 = {
+	name="Драказ"	# a lord
+	dynasty=360014
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=346360014
+	
+	8105.1.1 = {birth="8105.1.1"}
+	8171.1.1 = {death="8171.1.1"}
+}
+344360014 = {
+	name="Фендаль"	# a lord
+	dynasty=360014
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=345360014
+	
+	8129.1.1 = {birth="8129.1.1"}
+	8190.1.1 = {death="8190.1.1"}
+}
+343360014 = {
+	name="Мизналь"	# a lord
+	dynasty=360014
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=344360014
+	
+	8152.1.1 = {birth="8152.1.1"}
+	8220.1.1 = {death="8220.1.1"}
+}
+342360014 = {
+	name="Граздан"	# a lord
+	dynasty=360014
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=343360014
+	
+	8175.1.1 = {birth="8175.1.1"}
+	8232.1.1 = {death="8232.1.1"}
+}
+341360014 = {
+	name="Еззан"	# a lord
+	dynasty=360014
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=342360014
+	
+	8199.1.1 = {birth="8199.1.1"}
+	8252.1.1 = {death="8252.1.1"}
+}
+340360014 = {
+	name="Раздар"	# a lord
+	dynasty=360014
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=341360014
+	
+	8223.1.1 = {birth="8223.1.1"}
+	8266.1.1 = {death="8266.1.1"}
+}
+101360014 = {
+	name="Хазнак"	# a lord
+	dynasty=360014
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=340360014
+	
+	8245.1.1 = { birth="8245.1.1" }
+	8300.1.1 = {
+		death = {
+			death_reason = death_execution_crucifixion 
+			killer = 77041
+		}
+	}
+}
+102360014 = {
+	name="Кразнис"	# a lord
+	dynasty=360014
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360014
+	mother=201360014
+	
+	employer=101360014
+	
+	8284.1.1 = { birth="8284.1.1" }
+}
+105360014 = {	#One of Rhazdars is captain of ships besieging Meereen
+	name="Ознак"
+	dynasty=360014
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360014
+	mother=201360014
+	
+	add_trait=tough_soldier
+	
+	employer=101360014
+	
+	8285.1.1 = { birth="8285.1.1" }
+	#Captains of the fleet fled to Yunkai
+	8300.1.1 = { employer=6571003 }
+	8300.7.3 = { employer=6571004 }
+	8300.7.14 = { employer=6571006 }
+}
+103360014 = {
+	name="Миклаз" #canon but not specified which family is he member
+	dynasty=360014
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360014
+	mother=201360014
+	
+	employer=101360014
+
+	add_trait=indolent
+	
+	8290.1.1 = { birth="8290.1.1" }
+	8300.1.1 = { employer=77041 }
+}
+104360014 = {
+	name="Тецца"
+	dynasty=360014
+	female=yes
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360014
+	mother=201360014
+	
+	employer=101360014
+	
+	8291.1.1 = { birth="8291.1.1" }
+	8300.1.1 = { employer=77041 }
+}
+
+### House Ghazeen
+358360030 = {
+	name="Ознак"	# a lord
+	dynasty=360030
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	7788.1.1 = {birth="7788.1.1"}
+	7839.1.1 = {death="7839.1.1"}
+}
+357360030 = {
+	name="Фендаль"	# a lord
+	dynasty=360030
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=358360030
+	
+	7810.1.1 = {birth="7810.1.1"}
+	7887.1.1 = {death="7887.1.1"}
+}
+356360030 = {
+	name="Граздан"	# not a lord
+	dynasty=360030
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=357360030
+	
+	7833.1.1 = {birth="7833.1.1"}
+	7881.1.1 = {death="7881.1.1"}
+}
+355360030 = {
+	name="Ярказ"	# a lord
+	dynasty=360030
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=356360030
+	
+	7858.1.1 = {birth="7858.1.1"}
+	7901.1.1 = {death="7901.1.1"}
+}
+354360030 = {
+	name="Цеззан"	# a lord
+	dynasty=360030
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=355360030
+	
+	7880.1.1 = {birth="7880.1.1"}
+	7933.1.1 = {death="7933.1.1"}
+}
+353360030 = {
+	name="Раздар"	# a lord
+	dynasty=360030
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=354360030
+	
+	7902.1.1 = {birth="7902.1.1"}
+	7950.1.1 = {death="7950.1.1"}
+}
+352360030 = {
+	name="Гарнхак"	# a lord
+	dynasty=360030
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=353360030
+	
+	7925.1.1 = {birth="7925.1.1"}
+	7989.1.1 = {death="7989.1.1"}
+}
+351360030 = {
+	name="Хазнак"	# a lord
+	dynasty=360030
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=352360030
+	
+	7949.1.1 = {birth="7949.1.1"}
+	8022.1.1 = {death="8022.1.1"}
+}
+350360030 = {
+	name="Аззхак"	# a lord
+	dynasty=360030
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=351360030
+	
+	7970.1.1 = {birth="7970.1.1"}
+	8027.1.1 = {death="8027.1.1"}
+}
+349360030 = {
+	name="Мизналь"	# a lord
+	dynasty=360030
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=350360030
+	
+	7996.1.1 = {birth="7996.1.1"}
+	8069.1.1 = {death="8069.1.1"}
+}
+348360030 = {
+	name="Граздан"	# a lord
+	dynasty=360030
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=349360030
+	
+	8019.1.1 = {birth="8019.1.1"}
+	8097.1.1 = {death="8097.1.1"}
+}
+347360030 = {
+	name="Ларрак"	# a lord
+	dynasty=360030
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=348360030
+	
+	8042.1.1 = {birth="8042.1.1"}
+	8101.1.1 = {death="8101.1.1"}
+}
+346360030 = {
+	name="Задрак"	# a lord
+	dynasty=360030
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=347360030
+	
+	8066.1.1 = {birth="8066.1.1"}
+	8119.1.1 = {death="8119.1.1"}
+}
+345360030 = {
+	name="Маклан"	# a lord
+	dynasty=360030
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=346360030
+	
+	8088.1.1 = {birth="8088.1.1"}
+	8142.1.1 = {death="8142.1.1"}
+}
+344360030 = {
+	name="Лесаль"	# a lord
+	dynasty=360030
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=345360030
+	
+	8119.1.1 = {birth="8119.1.1"}
+	8170.1.1 = {death="8170.1.1"}
+}
+343360030 = {
+	name="Граздан"	# a lord
+	dynasty=360030
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=344360030
+	
+	8141.1.1 = {birth="8141.1.1"}
+	8198.1.1 = {death="8198.1.1"}
+}
+342360030 = {
+	name="Омказ"	# a lord
+	dynasty=360030
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=343360030
+	
+	8165.1.1 = {birth="8165.1.1"}
+	8211.1.1 = {death="8211.1.1"}
+}
+341360030 = {
+	name="Ознак"	# a lord
+	dynasty=360030
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=342360030
+	
+	8189.1.1 = {birth="8189.1.1"}
+	8244.1.1 = {death="8244.1.1"}
+}
+340360030 = {
+	name="Горган"	# a lord
+	dynasty=360030
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=341360030
+	
+	8215.1.1 = {birth="8215.1.1"}
+	8267.1.1 = {death="8267.1.1"}
+}
+101360030 = {
+	name="Аззак"	# a lord
+	dynasty=360030
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=340360030
+	
+	8238.1.1 = { birth="8238.1.1" }
+	8260.1.1 = { add_spouse = 201360030 }
+	8300.1.1 = {
+		death = {
+			death_reason = death_execution_crucifixion 
+			killer = 77041
+		}
+	}
+}
+201360030 = {
+	name="Аццея"
+	female=yes
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	8241.1.1 = { birth="8241.1.1" }
+}
+201360014 = {
+	name="Аззара"
+	female=yes
+	dynasty=360030
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360030
+	mother=201360030
+	
+	8261.1.1 = { birth="8261.1.1" }
+	8283.1.1 = { add_spouse=101360014 }
+}
+237360003 = { #Wife to Мархаз zo Loraq
+	name="Квецца"
+	female=yes
+	dynasty=360030
+	
+	religion = harpy 
+	culture = meereenese
+	
+	father=101360030
+	mother=201360030
+	
+	8272.1.1 = {birth="8272.1.1"}
+}
+102360030 = {
+	name="Миклаз"	# a lord
+	dynasty=360030
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360030
+	mother=201360030
+	
+	employer=101360030
+	
+	8270.1.1 = { birth="8270.1.1" }
+	8291.1.1 = { add_spouse=202360030 }
+}
+103360030 = {
+	name="Аззак"
+	dynasty=360030
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=102360030
+	mother=202360030
+	
+	employer=101360030
+	
+	8292.1.1 = { birth="8292.1.1" }
+	8300.1.1 = { employer = 77041 }
+}
+
+104360030 = {	#One of Ghazeens is captain of ships besieging Meereen
+	name="Хазрак"
+	dynasty=360030
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360030
+	mother=201360030
+	
+	add_trait=tough_soldier
+	
+	employer=101360030
+	
+	8270.1.1 = { birth="8270.1.1" }
+	#Captains of the fleet fled to Yunkai
+	8300.1.1 = { employer=6571003 }
+	8300.7.3 = { employer=6571004 }
+	8300.7.14 = { employer=6571006 }
+}
+
+### house Yherizan
+356360006 = {
+	name="Яццак"	# a lord
+	dynasty=360006
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	7820.1.1 = {birth="7820.1.1"}
+	7878.1.1 = {death="7878.1.1"}
+}
+355360006 = {
+	name="Омказ"	# a lord
+	dynasty=360006
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=356360006
+	
+	7841.1.1 = {birth="7841.1.1"}
+	7900.1.1 = {death="7900.1.1"}
+}
+354360006 = {
+	name="Задрак"	# a lord
+	dynasty=360006
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=355360006
+	
+	7863.1.1 = {birth="7863.1.1"}
+	7912.1.1 = {death="7912.1.1"}
+}
+353360006 = {
+	name="Мезон"	# a lord
+	dynasty=360006
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=354360006
+	
+	7889.1.1 = {birth="7889.1.1"}
+	7936.1.1 = {death="7936.1.1"}
+}
+352360006 = {
+	name="Граздан"	# a lord
+	dynasty=360006
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=353360006
+	
+	7911.1.1 = {birth="7911.1.1"}
+	8000.1.1 = {death="8000.1.1"}
+}
+351360006 = {
+	name="Ксапракс"	# not a lord
+	dynasty=360006
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=352360006
+	
+	7932.1.1 = {birth="7932.1.1"}
+	7997.1.1 = {death="7997.1.1"}
+}
+350360006 = {
+	name="Резнак"	# a lord
+	dynasty=360006
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=351360006
+	
+	7957.1.1 = {birth="7957.1.1"}
+	8003.1.1 = {death="8003.1.1"}
+}
+349360006 = {
+	name="Меррек"	# a lord
+	dynasty=360006
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=350360006
+	
+	7980.1.1 = {birth="7980.1.1"}
+	8035.1.1 = {death="8035.1.1"}
+}
+348360006 = {
+	name="Бархаз"	# a lord
+	dynasty=360006
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=349360006
+	
+	8002.1.1 = {birth="8002.1.1"}
+	8069.1.1 = {death="8069.1.1"}
+}
+347360006 = {
+	name="Граздан"	# a lord
+	dynasty=360006
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=348360006
+	
+	8027.1.1 = {birth="8027.1.1"}
+	8094.1.1 = {death="8094.1.1"}
+}
+346360006 = {
+	name="Дхаццар"	# a lord
+	dynasty=360006
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=347360006
+	
+	8052.1.1 = {birth="8052.1.1"}
+	8106.1.1 = {death="8106.1.1"}
+}
+345360006 = {
+	name="Ознак"	# a lord
+	dynasty=360006
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=346360006
+	
+	8077.1.1 = {birth="8077.1.1"}
+	8140.1.1 = {death="8140.1.1"}
+}
+344360006 = {
+	name="Дазнак"	# a lord
+	dynasty=360006
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=345360006
+	
+	8110.1.1 = {birth="8110.1.1"}
+	8177.1.1 = {death="8177.1.1"}
+}
+343360006 = {
+	name="Ракнак"	# a lord
+	dynasty=360006
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=344360006
+	
+	8133.1.1 = {birth="8133.1.1"}
+	8185.1.1 = {death="8185.1.1"}
+}
+342360006 = {
+	name="Прендаль"	# a lord
+	dynasty=360006
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=343360006
+	
+	8158.1.1 = {birth="8158.1.1"}
+	8202.1.1 = {death="8202.1.1"}
+}
+341360006 = {
+	name="Мезон"	# a lord
+	dynasty=360006
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=342360006
+	
+	8180.1.1 = {birth="8180.1.1"}
+	8222.1.1 = {death="8222.1.1"}
+}
+340360006 = {
+	name="Карказ"	# a lord
+	dynasty=360006
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=341360006
+	
+	8208.1.1 = {birth="8208.1.1"}
+	8267.1.1 = {death="8267.1.1"}
+}
+101360006 = {
+	name="Мазхан"	# a lord
+	dynasty=360006
+
+	religion="harpy"
+	culture="meereenese"
+	
+	father=340360006
+	
+	8232.1.1 = { birth="8232.1.1" }
+	8270.1.1 = { add_spouse=201360006 }
+	8300.1.1 = {
+		death = {
+			death_reason = death_execution_crucifixion 
+			killer = 77041
+		}
+	}
+}
+202360030 = {
+	name="Меззала"
+	dynasty=360006
+	female=yes
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360006
+	mother=201360006
+	
+	employer=101360030
+	
+	8272.1.1 = { birth="8272.1.1" }
+}
+103360006 = {
+	name="Граздар"	# a lord
+	dynasty=360006
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360006
+	mother=201360006
+	
+	employer=101360006
+	
+	8275.1.1 = { birth="8275.1.1" }
+}
+104360006 = {
+	name="Бхарказ"
+	dynasty=360006
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360006
+	mother=201360006
+	
+	employer=101360006
+	
+	8277.1.1 = { birth="8277.1.1" }
+}
+105360006 = {
+	name="Хазнак"
+	dynasty=360006
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=104360006
+
+	add_trait=bastard
+	
+	employer=101360006
+	
+	8291.1.1 = { birth="8291.1.1" }
+	8300.1.1 = { employer=77041 }
+}
+106360006 = {
+	name="Хиздар"
+	dynasty=360006
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360006
+	mother=201360006
+	
+	employer=101360006
+	
+	8290.1.1 = { birth="8290.1.1" }
+	8300.1.1 = { employer=77041 }
+}
+
+### House Uhlez
+355360015 = {
+	name="Ухзак"	# a lord
+	dynasty=360015
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	7800.1.1 = {birth="7800.1.1"}
+	7866.1.1 = {death="7866.1.1"}
+}
+354360015 = {
+	name="Кваззар"	# a lord
+	dynasty=360015
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=355360015
+	
+	7823.1.1 = {birth="7823.1.1"}
+	7878.1.1 = {death="7878.1.1"}
+}
+353360015 = {
+	name="Граздан"	# a lord
+	dynasty=360015
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=354360015
+	
+	7848.1.1 = {birth="7848.1.1"}
+	7894.1.1 = {death="7894.1.1"}
+}
+352360015 = {
+	name="Мезар"	# a lord
+	dynasty=360015
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=353360015
+	
+	7880.1.1 = {birth="7880.1.1"}
+	7933.1.1 = {death="7933.1.1"}
+}
+351360015 = {
+	name="Газдор"	# a lord
+	dynasty=360015
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=352360015
+	
+	7903.1.1 = {birth="7903.1.1"}
+	7960.1.1 = {death="7960.1.1"}
+}
+350360015 = {
+	name="Задрак"	# a lord
+	dynasty=360015
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=351360015
+	
+	7926.1.1 = {birth="7926.1.1"}
+	7988.1.1 = {death="7988.1.1"}
+}
+349360015 = {
+	name="Фездар"	# a lord
+	dynasty=360015
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=350360015
+	
+	7951.1.1 = {birth="7951.1.1"}
+	8030.1.1 = {death="8030.1.1"}
+}
+348360015 = {
+	name="Лизнук"	# not a lord
+	dynasty=360015
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=349360015
+	
+	7973.1.1 = {birth="7973.1.1"}
+	8025.1.1 = {death="8025.1.1"}
+}
+347360015 = {
+	name="Юрхаз"	# a lord
+	dynasty=360015
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=348360015
+	
+	7999.1.1 = {birth="7999.1.1"}
+	8047.1.1 = {death="8047.1.1"}
+}
+346360015 = {
+	name="Граздан"	# a lord
+	dynasty=360015
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=347360015
+	
+	8031.1.1 = {birth="8031.1.1"}
+	8099.1.1 = {death="8099.1.1"}
+}
+345360015 = {
+	name="Яццак"	# a lord
+	dynasty=360015
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=346360015
+	
+	8058.1.1 = {birth="8058.1.1"}
+	8120.1.1 = {death="8120.1.1"}
+}
+344360015 = {
+	name="Тазраак"	# a lord
+	dynasty=360015
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=345360015
+	
+	8080.1.1 = {birth="8080.1.1"}
+	8143.1.1 = {death="8143.1.1"}
+}
+343360015 = {
+	name="Бархаз"	# a lord
+	dynasty=360015
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=344360015
+	
+	8105.1.1 = {birth="8105.1.1"}
+	8168.1.1 = {death="8168.1.1"}
+}
+342360015 = {
+	name="Ознак"	# a lord
+	dynasty=360015
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=343360015
+	
+	8129.1.1 = {birth="8129.1.1"}
+	8195.1.1 = {death="8195.1.1"}
+}
+341360015 = {
+	name="Граздан"	# a lord
+	dynasty=360015
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=342360015
+	
+	8157.1.1 = {birth="8157.1.1"}
+	8212.1.1 = {death="8212.1.1"}
+}
+340360015 = {
+	name="Оззак"	# a lord
+	dynasty=360015
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=341360015
+	
+	8181.1.1 = {birth="8181.1.1"}
+	8233.1.1 = {death="8233.1.1"}
+}
+101360015 = {
+	name="Миклаз"
+	dynasty=360015 
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=340360015
+	
+	8204.1.1 = { birth="8204.1.1" }
+	8232.1.1 = { add_spouse=201360015 }
+	8281.1.1 = { death="8281.1.1" }
+}
+201360015 = {
+	name="Джецана"
+	female=yes
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	8215.1.1 = { birth="8215.1.1" }
+	8272.1.1 = { death="8272.1.1" }
+}
+102360015 = {
+	name="Скахаз"
+	dynasty=360015
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360015
+	mother=201360015
+	
+	8235.1.1 = { birth="8235.1.1" }
+	8269.1.1 = { add_spouse=102360012 }
+	8300.1.1 = {
+		death = {
+			death_reason = death_execution_crucifixion 
+			killer = 77041
+		}
+	}
+}
+201360006 = {
+	name="Хаззаара"
+	female=yes
+	dynasty=360015
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360015
+	mother=201360015
+	
+	8246.1.1 = { birth="8246.1.1" }
+}
+226360004 = {
+	name="Джецана"
+	dynasty=360015
+	female=yes
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360015
+	mother=201360015
+	
+	8251.1.1 = { birth="8251.1.1" }
+}
+103360015 = {
+	name="Царак"
+	dynasty=360015
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=102360015
+	mother=102360012
+
+	8271.1.1 = { birth="8271.1.1"}
+}
+104360015 = {
+	name="Ецца"
+	dynasty=360015
+	female=yes
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=103360015
+	
+	add_trait = bastard
+	
+	8292.1.1 = { birth="8292.1.1" }
+	8300.1.1 = { employer=77041 }
+}
+
+### House Дхазак
+356360012 = {
+	name="Дхаццар"	# a lord
+	dynasty=360012
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	7815.1.1 = {birth="7815.1.1"}
+	7866.1.1 = {death="7866.1.1"}
+}
+355360012 = {
+	name="Драказ"	# a lord
+	dynasty=360012
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=356360012
+	
+	7840.1.1 = {birth="7840.1.1"}
+	7887.1.1 = {death="7887.1.1"}
+}
+354360012 = {
+	name="Граздар"	# a lord
+	dynasty=360012
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=355360012
+	
+	7859.1.1 = {birth="7859.1.1"}
+	7928.1.1 = {death="7928.1.1"}
+}
+353360012 = {
+	name="Аззак"	# a lord
+	dynasty=360012
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=354360012
+	
+	7883.1.1 = {birth="7883.1.1"}
+	7945.1.1 = {death="7945.1.1"}
+}
+352360012 = {
+	name="Граздан"	# a lord
+	dynasty=360012
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=353360012
+	
+	7910.1.1 = {birth="7910.1.1"}
+	7958.1.1 = {death="7958.1.1"}
+}
+351360012 = {
+	name="Омказ"	# a lord
+	dynasty=360012
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=352360012
+	
+	7933.1.1 = {birth="7933.1.1"}
+	7999.1.1 = {death="7999.1.1"}
+}
+350360012 = {
+	name="Оззан"	# a lord
+	dynasty=360012
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=351360012
+	
+	7951.1.1 = {birth="7951.1.1"}
+	8015.1.1 = {death="8015.1.1"}
+}
+349360012 = {
+	name="Фезхар"	# a lord
+	dynasty=360012
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=350360012
+	
+	7975.1.1 = {birth="7975.1.1"}
+	8039.1.1 = {death="8039.1.1"}
+}
+348360012 = {
+	name="Зазхан"	# a lord
+	dynasty=360012
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=349360012
+	
+	8004.1.1 = {birth="8004.1.1"}
+	8065.1.1 = {death="8065.1.1"}
+}
+347360012 = {
+	name="Раздар"	# a lord
+	dynasty=360012
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=348360012
+	
+	8022.1.1 = {birth="8022.1.1"}
+	8091.1.1 = {death="8091.1.1"}
+}
+346360012 = {
+	name="Еззан"	# a lord
+	dynasty=360012
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=347360012
+	
+	8049.1.1 = {birth="8049.1.1"}
+	8111.1.1 = {death="8111.1.1"}
+}
+345360012 = {
+	name="Ухзак"	# a lord
+	dynasty=360012
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=346360012
+	
+	8072.1.1 = {birth="8072.1.1"}
+	8140.1.1 = {death="8140.1.1"}
+}
+344360012 = {
+	name="Ознак"	# a lord
+	dynasty=360012
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=345360012
+	
+	8099.1.1 = {birth="8099.1.1"}
+	8161.1.1 = {death="8161.1.1"}
+}
+343360012 = {
+	name="Граздан"	# a lord
+	dynasty=360012
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=344360012
+	
+	8122.1.1 = {birth="8122.1.1"}
+	8184.1.1 = {death="8184.1.1"}
+}
+342360012 = {
+	name="Тазраак"	# a lord
+	dynasty=360012
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=343360012
+	
+	8149.1.1 = {birth="8149.1.1"}
+	8210.1.1 = {death="8210.1.1"}
+}
+341360012 = {
+	name="Резнак"	# a lord
+	dynasty=360012
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=342360012
+	
+	8175.1.1 = {birth="8175.1.1"}
+	8232.1.1 = {death="8232.1.1"}
+}
+340360012 = {
+	name="Ознак"	# a lord
+	dynasty=360012
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=341360012
+	
+	8199.1.1 = {birth="8199.1.1"}
+	8252.1.1 = {death="8252.1.1"}
+}
+101360012 = {
+	name="Дхазак"
+	dynasty=360012 
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=340360012
+	
+	8222.1.1 = { birth="8222.1.1" }
+	8250.1.1 = { add_spouse=201360012 }
+	8300.1.1 = {
+		death = {
+			death_reason = death_execution_crucifixion 
+			killer = 77041
+		}
+	}
+}
+201360012 = {
+	name="Мелеззара"
+	female=yes
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	8231.1.1 = { birth="8231.1.1" }
+	8291.1.1 = { death="8291.1.1" }
+}
+102360012 = {
+	name="Геззелла"
+	dynasty=360012
+	female=yes
+	
+	father=101360012
+	mother=201360012
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	8252.1.1 = { birth="8252.1.1" }
+	8294.1.1 = { death="8294.1.1" }
+}
+360360012 = {
+	name="Эззара"
+	dynasty=360012
+	female=yes
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360012
+	mother=201360012
+	
+	8272.1.1 = { birth="8272.1.1" }
+}
+103360012 = {
+	name="Мазхан"
+	dynasty=360012
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360012
+	mother=201360012
+	
+	8275.1.1 = { birth="8275.1.1" }
+}
+104360012 = {
+	name="Дхаццар" #canon
+	dynasty=360012
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=101360012
+	mother=201360012
+	
+	8291.1.1 = { birth="8291.1.1" }
+	8300.1.1 = { employer=77041 }
+}
+
+### House Naqqan
+358360013 = {
+	name="Мезар"	# a lord
+	dynasty=360013
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	7820.1.1 = {birth="7820.1.1"}
+	7882.1.1 = {death="7882.1.1"}
+}
+357360013 = {
+	name="Фездар"	# a lord
+	dynasty=360013
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=358360013
+	
+	7833.1.1 = {birth="7833.1.1"}
+	7902.1.1 = {death="7902.1.1"}
+}
+356360013 = {
+	name="Харназ"	# a lord
+	dynasty=360013
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=357360013
+	
+	7860.1.1 = {birth="7860.1.1"}
+	7926.1.1 = {death="7926.1.1"}
+}
+355360013 = {
+	name="Граздан"	# a lord
+	dynasty=360013
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=356360013
+	
+	7884.1.1 = {birth="7884.1.1"}
+	7949.1.1 = {death="7949.1.1"}
+}
+354360013 = {
+	name="Казак"	# a lord
+	dynasty=360013
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=355360013
+	
+	7911.1.1 = {birth="7911.1.1"}
+	7970.1.1 = {death="7970.1.1"}
+}
+353360013 = {
+	name="Корхаз"	# a lord
+	dynasty=360013
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=354360013
+	
+	7946.1.1 = {birth="7946.1.1"}
+	7989.1.1 = {death="7989.1.1"}
+}
+352360013 = {
+	name="Аззхак"	# a lord
+	dynasty=360013
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=353360013
+	
+	7971.1.1 = {birth="7971.1.1"}
+	8019.1.1 = {death="8019.1.1"}
+}
+351360013 = {
+	name="Граздан"	# a lord
+	dynasty=360013
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=352360013
+	
+	7997.1.1 = {birth="7997.1.1"}
+	8055.1.1 = {death="8055.1.1"}
+}
+350360013 = {
+	name="Ознак"	# a lord
+	dynasty=360013
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=351360013
+	
+	8028.1.1 = {birth="8028.1.1"}
+	8101.1.1 = {death="8101.1.1"}
+}
+349360013 = {
+	name="Прендаль"	# a lord
+	dynasty=360013
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=350360013
+	
+	8050.1.1 = {birth="8050.1.1"}
+	8108.1.1 = {death="8108.1.1"}
+}
+348360013 = {
+	name="Омказ"	# a lord
+	dynasty=360013
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=349360013
+	
+	8074.1.1 = {birth="8074.1.1"}
+	8143.1.1 = {death="8143.1.1"}
+}
+347360013 = {
+	name="Ецер"	# a lord
+	dynasty=360013
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=348360013
+	
+	8101.1.1 = {birth="8101.1.1"}
+	8163.1.1 = {death="8163.1.1"}
+}
+346360013 = {
+	name="Граздар"	# a lord
+	dynasty=360013
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=347360013
+	
+	8120.1.1 = {birth="8120.1.1"}
+	8188.1.1 = {death="8188.1.1"}
+}
+345360013 = {
+	name="Мизналь"	# a lord
+	dynasty=360013
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=346360013
+	
+	8147.1.1 = {birth="8147.1.1"}
+	8203.1.1 = {death="8203.1.1"}
+}
+344360013 = {
+	name="Оззан"	# a lord
+	dynasty=360013
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=345360013
+	
+	8175.1.1 = {birth="8175.1.1"}
+	8228.1.1 = {death="8228.1.1"}
+}
+343360013 = {
+	name="Граздан"	# a lord
+	dynasty=360013
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=344360013
+	
+	8201.1.1 = {birth="8201.1.1"}
+	8266.1.1 = {death="8266.1.1"}
+}
+342360013 = {
+	name="Кхарак"	# a lord
+	dynasty=360013
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=343360013
+	
+	8226.1.1 = {birth="8226.1.1"}
+	8288.1.1 = {death="8288.1.1"}
+}
+341360013 = {
+	name="Граздан"	# a lord
+	dynasty=360013
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=342360013
+	
+	8249.1.1 = {birth="8249.1.1"}
+	8300.1.1 = {
+		death = {
+			death_reason = death_execution_crucifixion
+			killer = 77041
+		}
+	}
+}
+340360013 = {
+	name="Оздан"	# a lord
+	dynasty=360013
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=341360013
+	
+	8270.1.1 = {birth="8270.1.1"}
+	8295.1.1 = {add_spouse=360360012} #Эззара Дхазак
+}
+100360013 = {
+	name="Раздар"	# a lord
+	dynasty=360013
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	father=340360013
+	mother=360360012
+	
+	8296.1.1 = {birth="8296.1.1"}
+}
+	
+#############################
+### Hazdahn ruling houses ###
+#############################
+### House zo Hazdahn
+34469190 = {
+	name="Хиздар"	# a lord
+	dynasty=69190
+
+	religion="harpy"
+	culture="ghiscari"
+
+	7822.1.1 = {birth="7822.1.1"}
+	7838.1.1 = {add_trait=trained_warrior}
+	7877.1.1 = {death="7877.1.1"}
+}
+34369190 = {
+	name="Миклаз"	# a lord
+	dynasty=69190
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34469190
+
+	7850.1.1 = {birth="7850.1.1"}
+	7866.1.1 = {add_trait=trained_warrior}
+	7909.1.1 = {death="7909.1.1"}
+}
+34269190 = {
+	name="Газдор"	# a lord
+	dynasty=69190
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34369190
+
+	7878.1.1 = {birth="7878.1.1"}
+	7894.1.1 = {add_trait=trained_warrior}
+	7936.1.1 = {death="7936.1.1"}
+}
+34169190 = {
+	name="Хиздар"	# a lord
+	dynasty=69190
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34269190
+
+	7904.1.1 = {birth="7904.1.1"}
+	7920.1.1 = {add_trait=trained_warrior}
+	7957.1.1 = {death="7957.1.1"}
+}
+34069190 = {
+	name="Хазрак"	# a lord
+	dynasty=69190
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34169190
+
+	7929.1.1 = {birth="7929.1.1"}
+	7945.1.1 = {add_trait=trained_warrior}
+	7975.1.1 = {death="7975.1.1"}
+}
+10069190 = {
+	name="Мезон"	# a lord
+	dynasty=69190
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=34069190
+	
+	7955.1.1 = {birth="7955.1.1"}
+	7971.1.1 = {add_trait=skilled_warrior}
+	8010.1.1 = {death = {death_reason = death_battle}}
+}
+10169190 = {
+	name="Квазелла"	# not a lord
+	female=yes
+	dynasty=69190
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=10069190
+
+	7989.1.1 = {birth="7989.1.1"}
+	8015.1.1 = {
+		add_trait = slave
+		effect = {
+			random_playable_ruler = {
+				limit = { culture = dothraki }
+				ROOT = { move_character = PREV }
+				reverse_opinion = { who = ROOT modifier = opinion_my_owner }
+				opinion = { who = ROOT modifier = opinion_my_slave }
+			}
+		}
+	}
+	8035.1.1 = {death="8035.1.1"}
+}
+10269190 = {
+	name="Скахаз"	# a lord
+	dynasty=69190
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=10069190
+
+	7990.1.1 = {birth="7990.1.1"}
+	8006.1.1 = {add_trait=trained_warrior}
+	8015.1.1 = {death = {death_reason = death_battle}}
+}
+10469190 = {
+	name="Эззара"	# not a lord
+	female=yes
+	dynasty=69190
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=10069190
+
+	7995.1.1 = {birth="7995.1.1"}
+	8015.1.1 = {
+		add_trait = slave
+		effect = {
+			random_playable_ruler = {
+				limit = { culture = dothraki }
+				ROOT = { move_character = PREV }
+				reverse_opinion = { who = ROOT modifier = opinion_my_owner }
+				opinion = { who = ROOT modifier = opinion_my_slave }
+			}
+		}
+	}
+	8037.1.1 = {death="8037.1.1"}
+}
+10569190 = {
+	name="Хаззаара"	# not a lord
+	female=yes
+	dynasty=69190
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=10269190
+
+	8010.1.1 = {birth="8010.1.1"}
+	8015.1.1 = {
+		add_trait = slave
+		effect = {
+			random_playable_ruler = {
+				limit = { culture = dothraki }
+				ROOT = { move_character = PREV }
+				reverse_opinion = { who = ROOT modifier = opinion_my_owner }
+				opinion = { who = ROOT modifier = opinion_my_slave }
+			}
+		}
+	}
+	8050.1.1 = {death="8050.1.1"}
+}
+10669190 = {
+	name="Мархаз"	# not a lord
+	dynasty=69190
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=10269190
+
+	8012.1.1 = {birth="8012.1.1"}
+	8015.1.1 = {
+		add_trait = slave
+		effect = {
+			random_playable_ruler = {
+				limit = { culture = dothraki }
+				ROOT = { move_character = PREV }
+				reverse_opinion = { who = ROOT modifier = opinion_my_owner }
+				opinion = { who = ROOT modifier = opinion_my_slave }
+			}
+		}
+	}
+	8028.1.1 = {add_trait=poor_warrior}
+	8066.1.1 = {death="8066.1.1"}
+}
+
+### House Тазраак
+35469200 = {
+	name="Лизнук"	# a lord
+	dynasty=69200
+
+	religion="harpy"
+	culture="ghiscari"
+
+	7830.1.1 = {birth="7830.1.1"}
+	7846.1.1 = {add_trait=poor_warrior}
+	7884.1.1 = {death="7884.1.1"}
+}
+35369200 = {
+	name="Фендаль"	# a lord
+	dynasty=69200
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=35469200
+
+	7859.1.1 = {birth="7859.1.1"}
+	7875.1.1 = {add_trait=poor_warrior}
+	7911.1.1 = {death="7911.1.1"}
+}
+35269200 = {
+	name="Хазрак"	# a lord
+	dynasty=69200
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=35369200
+
+	7883.1.1 = {birth="7883.1.1"}
+	7899.1.1 = {add_trait=poor_warrior}
+	7949.1.1 = {death="7949.1.1"}
+}
+35169200 = {
+	name="Мизналь"	# a lord
+	dynasty=69200
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=35269200
+
+	7907.1.1 = {birth="7907.1.1"}
+	7923.1.1 = {add_trait=poor_warrior}
+	7961.1.1 = {death="7961.1.1"}
+}
+35069200 = {
+	name="Зазхан"	# a lord
+	dynasty=69200
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=35169200
+
+	7931.1.1 = {birth="7931.1.1"}
+	7946.1.1 = {add_trait=poor_warrior}
+	7995.1.1 = {death="7995.1.1"}
+}
+10069200 = {
+	name="Граздан"	# a lord
+	dynasty=69200
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=35069200
+	
+	7964.1.1 = {birth="7964.1.1"}
+	7980.1.1 = {add_trait=poor_warrior}
+	8010.1.1 = {death="8010.1.1"}
+}
+10169200 = {
+	name="Бархаз"	# a lord
+	dynasty=69200
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=10069200
+
+	7985.1.1 = {birth="7985.1.1"}
+	8001.1.1 = {add_trait=poor_warrior}
+	8032.1.1 = {death="8032.1.1"}
+}
+
+### House Bahraz
+34569201 = {
+	name="Харназ"	# a lord
+	dynasty=69201
+
+	religion="harpy"
+	culture="ghiscari"
+
+	7822.1.1 = {birth="7822.1.1"}
+	7838.1.1 = {add_trait=poor_warrior}
+	7880.1.1 = {death="7880.1.1"}
+}
+34469201 = {
+	name="Драздар"	# a lord
+	dynasty=69201
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34569201
+
+	7845.1.1 = {birth="7845.1.1"}
+	7861.1.1 = {add_trait=poor_warrior}
+	7899.1.1 = {death="7899.1.1"}
+}
+34369201 = {
+	name="Кхарак"	# a lord
+	dynasty=69201
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34469201
+
+	7867.1.1 = {birth="7867.1.1"}
+	7883.1.1 = {add_trait=poor_warrior}
+	7921.1.1 = {death="7921.1.1"}
+}
+34269201 = {
+	name="Корган"	# a lord
+	dynasty=69201
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34369201
+
+	7890.1.1 = {birth="7890.1.1"}
+	7906.1.1 = {add_trait=poor_warrior}
+	7944.1.1 = {death="7944.1.1"}
+}
+34169201 = {
+	name="Гадхаз"	# a lord
+	dynasty=69201
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34269201
+
+	7916.1.1 = {birth="7916.1.1"}
+	7932.1.1 = {add_trait=poor_warrior}
+	7965.1.1 = {death="7965.1.1"}
+}
+34069201 = {
+	name="Сроздаз"	# a lord
+	dynasty=69201
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34169201
+
+	7941.1.1 = {birth="7941.1.1"}
+	7957.1.1 = {add_trait=poor_warrior}
+	7988.1.1 = {death="7988.1.1"}
+}
+10069201 = {
+	name="Хиздар"	# a lord
+	dynasty=69201
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34069201
+
+	7965.1.1 = {birth="7965.1.1"}
+	7981.1.1 = {add_trait=poor_warrior}
+	8015.1.1 = {death="8015.1.1"}
+}
+
+### House Larghaz
+34569120 = {
+	name="Ярхар"	# a lord
+	dynasty=69202
+
+	religion="harpy"
+	culture="ghiscari"
+
+	7816.1.1 = {birth="7816.1.1"}
+	7832.1.1 = {add_trait=poor_warrior}
+	7878.1.1 = {death="7878.1.1"}
+}
+34469120 = {
+	name="Корхаз"	# a lord
+	dynasty=69202
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34569120
+
+	7839.1.1 = {birth="7839.1.1"}
+	7851.1.1 = {add_trait=poor_warrior}
+	7900.1.1 = {death="7900.1.1"}
+}
+34369120 = {
+	name="Лизнук"	# a lord
+	dynasty=69202
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34469120
+
+	7865.1.1 = {birth="7865.1.1"}
+	7881.1.1 = {add_trait=poor_warrior}
+	7922.1.1 = {death="7922.1.1"}
+}
+34269120 = {
+	name="Корган"	# a lord
+	dynasty=69202
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34369120
+
+	7891.1.1 = {birth="7891.1.1"}
+	7907.1.1 = {add_trait=poor_warrior}
+	7970.1.1 = {death="7970.1.1"}
+}
+34169120 = {
+	name="Юрхаз"	# a lord
+	dynasty=69202
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34269120
+
+	7918.1.1 = {birth="7918.1.1"}
+	7934.1.1 = {add_trait=poor_warrior}
+	7980.1.1 = {death="7980.1.1"}
+}
+34069120 = {
+	name="Омдаз"	# a lord
+	dynasty=69202
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34169120
+
+	7943.1.1 = {birth="7943.1.1"}
+	7959.1.1 = {add_trait=poor_warrior}
+	7995.1.1 = {death="7995.1.1"}
+}
+10069120 = {
+	name="Миклаз"	# a lord
+	dynasty=69202
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34069120
+
+	7969.1.1 = {birth="7969.1.1"}
+	7985.1.1 = {add_trait=poor_warrior}
+	8015.1.1 = {death="8015.1.1"}
+}
+
+### House Хизнак
+34569205 = {
+	name="Оззак"	# a lord
+	dynasty=69205
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	7819.1.1 = {birth="7819.1.1"}
+	7835.1.1 = {add_trait=poor_warrior}
+	7882.1.1 = {death="7882.1.1"}
+}
+34469205 = {
+	name="Фезар"	# a lord
+	dynasty=69205
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=34569205
+	
+	7843.1.1 = {birth="7843.1.1"}
+	7859.1.1 = {add_trait=poor_warrior}
+	7910.1.1 = {death="7910.1.1"}
+}
+34369205 = {
+	name="Ракнак"	# a lord
+	dynasty=69205
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=34469205
+	
+	7868.1.1 = {birth="7868.1.1"}
+	7884.1.1 = {add_trait=poor_warrior}
+	7933.1.1 = {death="7933.1.1"}
+}
+34269205 = {
+	name="Хразз"	# a lord
+	dynasty=69205
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=34369205
+	
+	7892.1.1 = {birth="7892.1.1"}
+	7908.1.1 = {add_trait=poor_warrior}
+	7957.1.1 = {death="7957.1.1"}
+}
+34169205 = {
+	name="Карказ"	# a lord
+	dynasty=69205
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=34269205
+	
+	7916.1.1 = {birth="7916.1.1"}
+	7932.1.1 = {add_trait=skilled_warrior}
+	7972.1.1 = {death="7972.1.1"}
+}
+34069205 = {
+	name="Драказ"	# a lord
+	dynasty=69205
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=34169205
+	
+	7941.1.1 = {birth="7941.1.1"}
+	7957.1.1 = {add_trait=poor_warrior}
+	7993.1.1 = {death="7993.1.1"}
+}
+10069205 = {
+	name="Царак"	# a lord
+	dynasty=69205
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=34069205
+
+	7964.1.1 = {birth="7964.1.1"}
+	7980.1.1 = {add_trait=poor_warrior}
+	8015.1.1 = {death="8015.1.1"}
+}
+
+#################################
+### Skahazadhan ruling houses ###
+#################################
+### House Pazaq
+100360208 = {
+	name="Еззан"	# a lord
+	dynasty=360208
+
+	religion="harpy"
+	culture="ghiscari"
+
+	7805.1.1 = {birth="7805.1.1"}
+	7821.1.1 = {add_trait=trained_warrior}
+	7870.1.1 = {death="7870.1.1"}
+}
+101360208 = {
+	name="Ксапракс"	# a lord
+	dynasty=360208
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100360208
+
+	7832.1.1 = {birth="7832.1.1"}
+	7848.1.1 = {add_trait=poor_warrior}
+	7871.1.1 = {death="7871.1.1"}
+}
+103360208 = {
+	name="Хизхар"	# a lord
+	dynasty=360208
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100360208
+
+	7835.1.1 = {birth="7835.1.1"}
+	7851.1.1 = {add_trait=trained_warrior}
+	7903.1.1 = {death="7903.1.1"}
+}
+106360208 = {
+	name="Фездар"	# a lord
+	dynasty=360208
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=103360208
+
+	7869.1.1 = {birth="7869.1.1"}
+	7885.1.1 = {add_trait=poor_warrior}
+	7920.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 100600207 # Khal Mengo
+		}
+	}
+}
+340360208 = {
+	name="Резнак" # not a lord
+	dynasty=360208
+
+	religion="harpy"
+	culture="ghiscari"
+	
+	father=106360208
+	
+	7895.1.1 = {birth="7895.1.1"}
+	7911.1.1 = {add_trait=trained_warrior}	
+	7920.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 100600207 # Khal Mengo
+		}
+	}
+}
+
+### House Zagazn
+100360213 = {
+	name="Мазхан"	# a lord
+	dynasty=360213
+
+	religion="harpy"
+	culture="ghiscari"
+
+	7826.1.1 = {birth="7826.1.1"}
+	7842.1.1 = {add_trait=poor_warrior}
+	7873.1.1 = {death="7873.1.1"}
+}
+101360213 = {
+	name="Мазхан"	# a lord
+	dynasty=360213
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100360213
+
+	7855.1.1 = {birth="7855.1.1"}
+	7871.1.1 = {add_trait=trained_warrior}
+	7900.1.1 = {death="7900.1.1"}
+}
+340360213 = {
+	name="Бархаз"	# a lord
+	dynasty=360213
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101360213
+
+	7881.1.1 = {birth="7881.1.1"}
+	7897.1.1 = {add_trait=trained_warrior}
+	7920.1.1 = {death="7920.1.1"}
+}
+341360213 = {
+	name="Граздан"	# not a lord
+	dynasty=360213
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=340360213
+
+	7902.1.1 = {birth="7902.1.1"}
+	7918.1.1 = {add_trait=poor_warrior}
+	7920.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 100600207 # Khal Mengo
+		}
+	}
+}
+342360213 = {
+	name="Мезон"	# not a lord
+	dynasty=360213
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=341360213
+
+	7919.1.1 = {birth="7919.1.1"}
+	7920.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 100600207 # Khal Mengo
+		}
+	}
+}
+
+### House Ецер
+100360220 = {
+	name="Еззан"	# a lord
+	dynasty=360220
+
+	religion="harpy"
+	culture="ghiscari"
+
+	7813.1.1 = {birth="7813.1.1"}
+	7829.1.1 = {add_trait=poor_warrior}
+	7869.1.1 = {death="7869.1.1"}
+}
+101360220 = {
+	name="Ксапракс"	# a lord
+	dynasty=360220
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=100360220
+
+	7837.1.1 = {birth="7837.1.1"}
+	7853.1.1 = {add_trait=skilled_warrior}
+	7898.1.1 = {death="7898.1.1"}
+}
+105360220 = {
+	name="Царак"	# a lord
+	dynasty=360220
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=101360220
+
+	7868.1.1 = {birth="7868.1.1"}
+	7884.1.1 = {add_trait=poor_warrior}
+	7920.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 100600207 # Khal Mengo
+		}
+	}
+}
+340360220 = {
+	name="Хиздарио"	# not a lord
+	dynasty=360220
+
+	religion="harpy"
+	culture="ghiscari"
+
+	father=105360220
+
+	7892.1.1 = {birth="7892.1.1"}
+	7908.1.1 = {add_trait=skilled_warrior}
+	7920.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 100600207 # Khal Mengo
+		}
+	}
+}
+
+################
+### Freedmen ###
+################
+1241000 = {
+	name="Тал Торак"
+	religion="summer_rel"
+	culture="summer_islander"
+
+	add_trait="slave"
+	add_trait="brave"
+	add_trait="tough_soldier"
+
+	8280.4.21 = {
+		birth="8280.4.21"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8285.1.1 = { 
+		employer=125360007
+		add_trait=slave
+		effect = {
+			if = {
+				limit = { trait = slave }
+				liege = {
+					reverse_opinion = { who = ROOT modifier = opinion_my_owner }
+					opinion = { who = ROOT modifier = opinion_my_slave }
+				}
+			}
+		}
+	}
+	8290.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8300.1.1 = {
+		employer=77041
+		remove_trait="slave"
+		add_trait="former_slave"
+	}
+}
+
+1241001 = {
+	name="Моллоно Йос Доб"
+	religion="rhllor"
+	culture="pentosi"
+	
+	add_trait="slave"
+	add_trait="brave"
+	add_trait="tough_soldier"
+	add_trait="quick"
+	
+	8270.1.1 = {
+		birth="8270.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8285.1.1 = { 
+		employer=125360007
+		add_trait=slave
+		add_trait = is_fat
+		effect = {
+			if = {
+				limit = { trait = slave }
+				liege = {
+					reverse_opinion = { who = ROOT modifier = opinion_my_owner }
+					opinion = { who = ROOT modifier = opinion_my_slave }
+				}
+			}
+			set_variable = { which = physique_variable value = 15 }		
+		}
+	}
+	8290.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8300.1.1 = {
+		employer=77041
+		remove_trait="slave"
+		add_trait="former_slave"
+	}
+	8300.7.9 = {
+		add_trait=has_bloody_flux #Pale Mare
+	}
+	8300.7.14 = {
+		death = {
+			death_reason=death_trait
+		}
+	}
+}
+
+109360029 = {
+	name="Томмен"
+	
+	dna=bgaffuicgas
+	properties=ai0cck000000
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	add_trait=trusting 
+	add_trait=gluttonous
+	add_trait=slow
+	add_trait=proud 
+	add_trait=wroth
+	
+	8279.1.1 = { birth="8279.1.1" }
+	8295.1.1 = { add_trait=poor_warrior add_trait=indulgent_wastrel add_trait=depressed give_nickname=nick_the_new_one }
+}
+
+#Pitfighters
+101360029 = {
+	name="Кразз" #canon
+	dna="bekdjzlkaav"
+	properties="kk0ebk00000"
+	
+	religion="harpy"
+	culture="meereenese"
+			
+	add_trait=strong
+	add_trait=honorable
+	add_trait=proud
+	add_trait=honest
+	
+	8277.1.1 = {
+		birth="8277.1.1"
+		effect = { set_immune_to_pruning = yes } 
+		add_trait=slave 
+	}
+	8277.1.1 = { 
+		employer=16571013
+		add_trait=slave
+		effect = {
+			if = {
+				limit = { trait = slave }
+				b_loraq = {
+					holder_scope = {
+						ROOT = { move_character = PREV }
+						reverse_opinion = { who = ROOT modifier = opinion_my_owner }
+						reverse_opinion = { who = ROOT modifier = opinion_loyal_servant }
+						opinion = { who = ROOT modifier = opinion_my_slave }
+					}
+				}
+			}
+		}
+	}
+	8277.1.1 = { employer=16571013 } #i dont know if he was in his collection from very beggining but he was meereenese so its possible
+	8287.1.1 = { add_trait=trained_warrior add_trait=brave }
+	8290.1.1 = { 
+		remove_trait=trained_warrior 
+		add_trait=skilled_warrior 
+		add_trait=duelist 
+	}
+	8293.1.1 = { 
+		add_trait=master_warrior 
+		remove_trait=skilled_warrior 
+		add_trait=misguided_warrior 
+	}
+	8300.1.1 = { remove_trait=slave  add_trait=former_slave }
+}
+102360029 = {
+	name="Гогор" #canon
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	add_trait=strong
+	add_trait=tall
+	add_trait=proud
+	add_trait=greedy
+	
+	8273.1.1 = { 
+		birth="8273.1.1"
+		effect = { set_immune_to_pruning = yes }
+	}
+	8273.1.1 = {
+		employer=16571013
+		add_trait=slave
+		effect = {
+			if = {
+				limit = { trait = slave }
+				b_loraq = {
+					holder_scope = {
+						ROOT = { move_character = PREV }
+						reverse_opinion = { who = ROOT modifier = opinion_my_owner }
+						reverse_opinion = { who = ROOT modifier = opinion_loyal_servant }
+						opinion = { who = ROOT modifier = opinion_my_slave }
+					}
+				}
+			}
+		}
+	}
+	8276.1.1 = { add_trait=poor_warrior }
+	8279.1.1 = { remove_trait=poor_warrior add_trait=trained_warrior }
+	8289.1.1 = { 
+		remove_trait=trained_warrior 
+		add_trait=skilled_warrior 
+		add_trait=misguided_warrior 
+		give_nickname=nick_the_giant 
+		add_trait=scarred 
+	}
+	8298.1.1 = { employer=16571013 }
+	8300.1.1 = { remove_trait=slave  add_trait=former_slave }
+}
+103360029 = {
+	name="Барсена" #canon
+	female=yes
+	
+	dna="bldlgzffgfd"
+	properties="cl0chk00000"
+	
+	add_trait=strong
+	add_trait=brave
+	
+	religion="harpy"
+	culture="qohorik"
+	
+	8270.1.1 = { 
+		birth="8270.1.1"
+		effect = { set_immune_to_pruning = yes } 
+	}
+	8270.1.1 = { 
+		employer=16571013
+		add_trait = scarred
+		add_trait=slave
+		effect = {
+			culture="meereenese"
+			religion="harpy"
+			if = {
+				limit = { trait = slave }
+				b_loraq = {
+					holder_scope = {
+						ROOT = { move_character = PREV }
+						reverse_opinion = { who = ROOT modifier = opinion_my_owner }
+						reverse_opinion = { who = ROOT modifier = opinion_loyal_servant }
+						opinion = { who = ROOT modifier = opinion_my_slave }
+					}
+				}
+			}
+		}
+	}
+	8286.1.1 = { 
+		add_trait=skilled_warrior 
+		add_trait=misguided_warrior
+		give_nickname=nick_blackhair 
+	}
+	8295.1.1 = { remove_trait=skilled_warrior add_trait=master_warrior }
+	8298.1.1 = { employer=16571013 }
+	8300.1.1 = { remove_trait=slave  add_trait=former_slave }
+}
+104360029 = {
+	name="Камаррон" #canon
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	add_trait=deceitful
+	add_trait=brave
+	
+	8275.1.1 = { 
+		birth="8275.1.1"
+		employer=16571013
+		add_trait=slave
+		effect = {
+			set_immune_to_pruning = yes
+			if = {
+				limit = { trait = slave }
+				b_loraq = {
+					holder_scope = {
+						ROOT = { move_character = PREV }
+						reverse_opinion = { who = ROOT modifier = opinion_my_owner }
+						reverse_opinion = { who = ROOT modifier = opinion_loyal_servant }
+						opinion = { who = ROOT modifier = opinion_my_slave }
+					}
+				}
+			}
+		}
+	}
+	8287.1.1 = { add_trait = trained_warrior give_nickname=nick_of_the_count }
+	8291.1.1 = { 
+		remove_trait = trained_warrior 
+		add_trait = skilled_warrior 
+		add_trait = flamboyant_schemer  #he had plan to attack yunkaii from rear with stealing some boats
+	}
+	8298.1.1 = { employer=16571013 }
+	8300.1.1 = { remove_trait=slave  add_trait=former_slave }
+}
+105360029 = {
+	name="Газдор" #canon but name is uncanon
+	
+	religion="rhllor"
+	culture="volantene"
+	
+	add_trait=cruel
+	add_trait=ruthless
+	add_trait=brave
+	
+	8269.1.1 = { 
+		birth="8269.1.1"
+		effect = { set_immune_to_pruning = yes } 
+	}
+	8281.1.1 = { 
+		employer=16571013
+		add_trait = trained_warrior
+		add_trait=slave
+		effect = {
+			culture="meereenese"
+			religion="harpy"
+			if = {
+				limit = { trait = slave }
+				b_loraq = {
+					holder_scope = {
+						ROOT = { move_character = PREV }
+						reverse_opinion = { who = ROOT modifier = opinion_my_owner }
+						reverse_opinion = { who = ROOT modifier = opinion_loyal_servant }
+						opinion = { who = ROOT modifier = opinion_my_slave }
+					}
+				}
+			}
+		}
+	}
+	8285.1.1 = {
+		remove_trait = trained_warrior
+		add_trait = master_warrior
+		effect = { set_name = " " }
+		give_nickname=nick_the_spotted_cat
+	}
+	8298.1.1 = { employer=16571013 }
+	8300.1.1 = { remove_trait=slave  add_trait=former_slave }
+}
+106360029 = {
+	name="Иток" #canon
+	
+	religion="lion_night" #not canon but Иток sounds so weird that i put him here
+	culture="lengi"
+	
+	add_trait=brave
+	
+	8280.1.1 = { 
+		birth="8280.1.1"
+		effect = { set_immune_to_pruning = yes } 
+	}
+	8286.1.1 = {
+		employer=16571013
+		add_trait = trained_warrior
+		add_trait=slave
+		effect = {
+			culture="meereenese"
+			religion="harpy"
+			if = {
+				limit = { trait = slave }
+				b_loraq = {
+					holder_scope = {
+						ROOT = { move_character = PREV }
+						reverse_opinion = { who = ROOT modifier = opinion_my_owner }
+						reverse_opinion = { who = ROOT modifier = opinion_loyal_servant }
+						opinion = { who = ROOT modifier = opinion_my_slave }
+					}
+				}
+			}
+		}
+	}
+	8296.1.1 = {
+		remove_trait = trained_warrior
+		add_trait = skilled_warrior
+		give_nickname=nick_the_fearless
+	}
+	8298.1.1 = { employer=16571013 }
+	8300.1.1 = { remove_trait=slave  add_trait=former_slave }
+}
+107360029 = {
+	name="Беллакво"
+	
+	dna="bcffhykbgbg"
+	properties="cc0dik00000"
+	
+	religion="moonsingers"
+	culture="braavosi"
+	
+	add_trait=strong
+	add_trait=ruthless 
+	
+	8273.1.1 = { 
+		birth="8273.1.1" 
+		effect = { set_immune_to_pruning = yes }
+	}
+	8286.1.1 = {
+		employer=16571013
+		add_trait = trained_warrior
+		add_trait=slave
+		effect = {
+			culture="meereenese"
+			religion="harpy"
+			if = {
+				limit = { trait = slave }
+				b_loraq = {
+					holder_scope = {
+						ROOT = { move_character = PREV }
+						reverse_opinion = { who = ROOT modifier = opinion_my_owner }
+						reverse_opinion = { who = ROOT modifier = opinion_loyal_servant }
+						opinion = { who = ROOT modifier = opinion_my_slave }
+					}
+				}
+			}
+		}
+	}
+	8289.1.1 = {
+		remove_trait = trained_warrior
+		add_trait = master_warrior
+		add_trait = duelist
+		give_nickname=nick_bonebreaker
+	}
+	8298.1.1 = { employer=16571013 }
+	8300.1.1 = { remove_trait=slave  add_trait=former_slave }
+}
+108360029 = {
+	name="Варго" #canon but name is uncanon. He was known as Steelskin
+	
+	religion="bearded_priests"
+	culture="norvosi"
+	
+	add_trait=tall
+	
+	8282.1.1 = { 
+		birth="8282.1.1"
+		effect = { set_immune_to_pruning = yes } 
+	}
+	8284.1.1 = {
+		employer=16571013
+		add_trait = slave
+		effect = {
+			culture="meereenese"
+			religion="harpy"
+			if = {
+				limit = { trait = slave }
+				b_loraq = {
+					holder_scope = {
+						ROOT = { move_character = PREV }
+						reverse_opinion = { who = ROOT modifier = opinion_my_owner }
+						reverse_opinion = { who = ROOT modifier = opinion_loyal_servant }
+						opinion = { who = ROOT modifier = opinion_my_slave }
+					}
+				}
+			}
+		}
+	}
+	8288.1.1 = {
+		add_trait = trained_warrior
+		add_trait = mystic
+	}
+	8298.1.1 = {
+		remove_trait = trained_warrior
+		add_trait = skilled_warrior
+		add_trait = scarred_mid 
+		effect = { set_name = " " }
+		give_nickname=nick_the_steelskin
+	}
+	8298.1.1 = { employer=16571013 }
+	8300.1.1 = { remove_trait=slave  add_trait=former_slave }
+}
+110360029 = {
+	name = "Орлос" #canon
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	add_trait=homosexual
+	
+	8280.1.1 = { 
+		birth="8280.1.1"
+		add_trait=slave
+		employer=16571015
+		effect = { 
+			set_immune_to_pruning = yes 
+			if = {
+				limit = { trait = slave }
+				b_galare = {
+					holder_scope = {
+						ROOT = { move_character = PREV }
+						reverse_opinion = { who = ROOT modifier = opinion_my_owner }
+						opinion = { who = ROOT modifier = opinion_my_slave }
+					}
+				}
+			}
+		} 
+	}
+	8292.1.1 = { 
+		add_trait = poor_warrior 
+		give_nickname=nick_the_catamite 
+	}
+	8296.1.1 = { 
+		remove_trait = poor_warrior 
+		add_trait = trained_warrior 
+		add_trait = misguided_warrior
+	}
+	8298.1.1 = { employer=16571015 }
+	8300.1.1 = { remove_trait=slave  add_trait=former_slave }	
+}
+111360029 = {
+	name = "Тогос" #canon
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	8282.1.1 = { 
+		birth="8282.1.1"
+		add_trait=slave
+		employer=16571015
+		effect = { 
+			set_immune_to_pruning = yes 
+			if = {
+				limit = { trait = slave }
+				b_galare = {
+					holder_scope = {
+						ROOT = { move_character = PREV }
+						reverse_opinion = { who = ROOT modifier = opinion_my_owner }
+						opinion = { who = ROOT modifier = opinion_my_slave }
+					}
+				}
+			}
+		} 
+	}
+	8294.1.1 = { add_trait = poor_warrior }
+	8298.1.1 = { 
+		add_trait = misguided_warrior 
+		employer=16571015 
+	}
+	8300.1.1 = { remove_trait=slave  add_trait=former_slave }	
+}
+112360029 = {
+	name = "Марриго" #canon
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	8277.1.1 = { 
+		birth="8277.1.1"
+		add_trait=slave
+		employer=16571015
+		effect = { 
+			set_immune_to_pruning = yes 
+			if = {
+				limit = { trait = slave }
+				b_galare = {
+					holder_scope = {
+						ROOT = { move_character = PREV }
+						reverse_opinion = { who = ROOT modifier = opinion_my_owner }
+						opinion = { who = ROOT modifier = opinion_my_slave }
+					}
+				}
+			}
+		} 
+	}
+	8289.1.1 = { add_trait = poor_warrior }
+	8293.1.1 = { add_trait = misguided_warrior }
+	8298.1.1 = { employer=16571015 }
+	8300.1.1 = { remove_trait=slave  add_trait=former_slave }	
+}
+113360029 = {
+	name = "Раздар" #canon
+	
+	religion="harpy"
+	culture="meereenese"
+	
+	8279.1.1 = { 
+		birth="8279.1.1"
+		add_trait=slave
+		employer=16571015
+		effect = { 
+			set_immune_to_pruning = yes 
+			if = {
+				limit = { trait = slave }
+				b_galare = {
+					holder_scope = {
+						ROOT = { move_character = PREV }
+						reverse_opinion = { who = ROOT modifier = opinion_my_owner }
+						opinion = { who = ROOT modifier = opinion_my_slave }
+					}
+				}
+			}
+		} 
+	}
+	8291.1.1 = { add_trait = poor_warrior }
+	8295.1.1 = { 
+		add_trait = misguided_warrior 
+		remove_trait = poor_warrior
+		add_trait = trained_warrior
+		give_nickname = nick_the_brindled_butcher
+		effect = { set_name = " " }
+		
+	}
+	8298.1.1 = { employer=16571015 }
+	8300.1.1 = { remove_trait=slave  add_trait=former_slave }	
+}
+114360029 = {
+	name = "Санера" #canon
+	female=yes
+	
+	religion="weeping_lady"
+	culture="lysene"
+	
+	add_trait=brave
+	
+	8275.1.1 = { 
+		birth="8275.1.1"
+		add_trait=slave
+		employer=16571015
+		effect = { 
+			set_immune_to_pruning = yes 
+			culture="meereenese"
+			religion="harpy"
+			if = {
+				limit = { trait = slave }
+				b_galare = {
+					holder_scope = {
+						ROOT = { move_character = PREV }
+						reverse_opinion = { who = ROOT modifier = opinion_my_owner }
+						opinion = { who = ROOT modifier = opinion_my_slave }
+					}
+				}
+			}
+		} 
+	}
+	8287.1.1 = { add_trait = poor_warrior }
+	8291.1.1 = { 
+		add_trait = misguided_warrior 
+		give_nickname = nick_the_she_snake
+	}
+	8298.1.1 = { employer=16571015 }
+	8300.1.1 = { remove_trait=slave  add_trait=former_slave }	
+}
+
+12300101 = {
+	name = "Бельвас"		#Canon, Strong Бельвас
+	dna="abfhbfddaap"
+	properties="a000ia"
+	religion = "harpy"
+	culture = "meereenese" #"dothraki" #Why?
+	
+	martial = 5
+	stewardship = 0
+	diplomacy = 3
+	intrigue = 7
+	learning = 0
+	
+	add_trait="strong"
+	add_trait="tall"
+	add_trait="proud"
+	add_trait="scarred"
+	add_trait="wroth"
+	add_trait="gregarious"
+	add_trait="tough_soldier"
+	
+	8268.1.1 = { 
+		birth = "8268.1.1" 
+		effect = {  
+			dynasty = none
+			set_immune_to_pruning = yes
+		}
+	}
+	8282.1.1 = { 
+		add_trait="eunuch"
+		add_trait="skilled_warrior"
+		give_nickname = nick_the_strong
+	}
+	8295.1.1 = {
+		employer = 600000040 #Illyrio
+	}	
+	8299.6.1={ #Dany
+		employer = 77041
+	}
+}
+
+#Barristan's Squires
+12400103 = {
+	name = "Тумко"
+	dynasty = 304051
+	religion = "summer_rel"
+	culture = "summer_islander"
+
+	diplomacy=4
+	stewardship=1
+	intrigue=5
+	learning=0
+	martial=8
+	
+	add_trait = slave
+		
+	8285.1.1 = { 
+		birth = "8285.1.1"
+		effect = {		
+			set_character_flag = barristan_squire
+			set_immune_to_pruning = yes
+			if = {
+				limit = { trait = slave }
+				b_reznak = {
+					holder_scope = {
+						ROOT = { move_character = PREV }
+					}
+				}
+				liege = {
+					reverse_opinion = { who = ROOT modifier = opinion_my_owner }
+					opinion = { who = ROOT modifier = opinion_my_slave }
+				}
+			}
+		} 		
+	}
+	8289.1.1 = { 
+		add_trait = skilled_warrior #Best natural swordsman Barristan had seen since Jaime Lannister. Consider master_warrior ~Kuczaja
+		add_trait = diligent
+		add_trait = honorable
+	}
+	8300.1.1 = { 
+		employer = 77041 
+		guardian = 201302
+		remove_trait = slave
+		add_trait = former_slave
+		add_trait = squire
+		effect = {
+			liege = {
+				reverse_opinion = {
+					modifier = opinion_loyal_servant
+					who = ROOT
+				}
+			}	
+		}
+	}
+	8300.5.1 = { 
+		remove_trait = squire
+		add_trait = knight
+	}
+}
+12400104 = {
+	name = "Рыжий Ягненок"
+	religion = "great_shepherd"
+	culture = "lhazareen"
+
+	diplomacy=2
+	stewardship=0
+	intrigue=6
+	learning=2
+	martial=6
+	
+	add_trait = slave
+	
+	8285.1.1 = { 
+		birth = "8285.1.1"
+		effect = {		
+			set_character_flag = barristan_squire 
+			set_immune_to_pruning = yes
+			dynasty = none
+			if = {
+				limit = { trait = slave }
+				b_galare = {
+					holder_scope = {
+						ROOT = { move_character = PREV }
+					}
+				}
+				liege = {
+					reverse_opinion = { who = ROOT modifier = opinion_my_owner }
+					opinion = { who = ROOT modifier = opinion_my_slave }
+				}
+			}
+		} 		
+	}
+	8289.1.1 = { 
+		add_trait = trained_warrior
+		add_trait = wroth
+		add_trait = ambitious
+	}
+	8300.1.1 = { 
+		employer = 77041 
+		guardian = 201302
+		remove_trait = slave
+		add_trait = former_slave
+		add_trait = squire
+		effect = {
+			liege = {
+				reverse_opinion = {
+					modifier = opinion_loyal_servant
+					who = ROOT
+				}
+			}	
+		}
+	}
+	8300.5.1 = { 
+		remove_trait = squire
+		add_trait = knight
+	}
+}
+12400105 = {
+	name = "Ларрак"
+	religion="harpy"
+	culture="meereenese"
+
+	diplomacy=3
+	stewardship=2
+	intrigue=7
+	learning=1
+	martial=7
+	
+	add_trait = slave
+		
+	8287.1.1 = { 
+		birth = "8287.1.1"
+		effect = {		
+			dynasty = none
+			set_character_flag = barristan_squire
+			set_immune_to_pruning = yes
+			if = {
+				limit = { trait = slave }
+				b_pahl = {
+					holder_scope = {
+						ROOT = { move_character = PREV }
+					}
+				}
+				liege = {
+					reverse_opinion = { who = ROOT modifier = opinion_my_owner }
+					opinion = { who = ROOT modifier = opinion_my_slave }
+				}
+			}
+		} 		
+	}
+	8289.1.1 = { 
+		add_trait = skilled_warrior
+		add_trait = deceitful
+		add_trait = patient
+	}
+	8300.1.1 = { 
+		employer = 77041 
+		#guardian = 201302
+		remove_trait = slave
+		add_trait = former_slave
+		add_trait = squire
+		effect = {
+			liege = {
+				reverse_opinion = {
+					modifier = opinion_loyal_servant
+					who = ROOT
+				}
+			}	
+		}
+	}
+}

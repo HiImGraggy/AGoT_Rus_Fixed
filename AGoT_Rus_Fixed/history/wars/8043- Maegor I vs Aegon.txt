@@ -1,0 +1,23 @@
+name = "Война Принца Эйгона за Железный трон"
+
+casus_belli={
+	casus_belli=claim_iron_throne_ACOK
+	actor=60650496
+	recipient=77005
+	landed_title=e_iron_throne
+	date=8043.1.1
+}
+
+8043.1.1 = {
+	add_defender = 77005 #Maegor Targaryen
+	add_attacker = 60650496 # Aegon
+}
+
+8043.1.2 = {
+	rem_defender = 77005 #Maegor Targaryen
+	rem_attacker= 60650496 # Aegon
+}
+
+
+
+                                                                                                                                                                                                                                                                                                                                   

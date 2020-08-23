@@ -1,0 +1,28 @@
+name = "Война Станниса Баратеона за Железный Трон"
+
+casus_belli={
+	casus_belli=claim_iron_throne_ACOK
+	actor=4317
+	recipient=7316
+	landed_title=e_iron_throne
+	date=8300.1.4
+}
+
+8300.1.4 = {
+	add_defender = 7316 #Tommen Baratheon
+	add_defender = 4190 #Cersei Lannister
+	# add_defender = 1253 	# Mace Tyrell #causes a CTD for some reason
+	add_attacker = 4317		# Stannis Baratheon
+	add_attacker = 1281		# Alekeyne Florent
+	# add_attacker = 77152	# House Follard
+	add_attacker = 24 		# House Farring
+	add_attacker = 77153 	# House Massey
+	add_attacker = 1270		#Meadows
+	add_attacker = 2031028  #Chyttering
+	#add_attacker = 119982370 # Salladhor Saan
+	#add_attacker = 3517042 	# House Brune of Brownhollow
+	#add_attacker = 2029042 	# House Brune of Dyre Den	
+	start_war = yes
+}
+
+

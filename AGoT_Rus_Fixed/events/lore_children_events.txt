@@ -1,0 +1,299 @@
+######################
+###Written by Rodri###
+######################
+#Rewritten/Targ events by knuckey
+
+namespace = lore_children
+
+#Ned canon children
+character_event = { #Rob
+	id = lore_children.1
+	
+	only_playable = yes
+	is_triggered_only = yes
+
+	trigger = {
+		year = 8283
+		NOT = { year = 8296 }
+		character = 59
+		ai = yes
+		NOT = { num_of_children = 6 }
+		OR = {
+			NOT = { has_character_flag = robb_stark } 
+			NOT = { has_character_flag = sansa_stark }
+			NOT = { has_character_flag = arya_stark } 
+			NOT = { has_character_flag = bran_stark } 
+			NOT = { has_character_flag = rickon_stark } 
+		}	
+		spouse = {
+			dynasty = 159
+			is_alive = yes
+		}
+		NOT = { trait = eunuch }
+		NOT = { trait = celibate }
+	}
+
+	option = {
+		name = "EVTOPTA252500"
+		if = { #check a child can be had
+			limit = {
+				OR = {
+					prisoner = yes
+					NOT = { fertility = 0.1 } 
+				}
+				spouse = { 
+					OR = {
+						is_pregnant = yes 
+						NOT = { fertility = 0.1 } 
+					}	
+				}
+			}
+			character_event = { id = lore_children.1 days = 450 random = 250 }
+			break = yes
+		}
+		if = {
+			limit = {
+				NOT = { num_of_children = 1 }
+				NOT = { has_character_flag = robb_stark } 
+			}
+			set_character_flag = robb_stark
+			character_event = { id = lore_children.1 days = 450 random = 250 }
+			random = {
+				chance = 50
+				spouse = {
+					create_character = {
+						name = Робб
+						dna="dmffglbhdgp"
+						properties="0h00i"
+						female = no
+						age = 0
+					}
+					new_character = {
+						set_graphical_culture = Tully_dyn
+						set_father = PREVPREV
+						set_mother = PREV
+						dynasty = PREVPREV
+					}
+				}
+			}	
+			break = yes
+		}	
+		if = {
+			limit = {
+				NOT = { num_of_children = 2 }
+				year = 8287
+				NOT = { has_character_flag = sansa_stark }  
+			}
+			set_character_flag = sansa_stark
+			character_event = { id = lore_children.1 days = 450 random = 250 }
+			random = {
+				chance = 50
+				spouse = {
+					create_character = {
+						name = Санса
+						dna="cghhgcgbdfu"
+						properties="0a00f"
+						female = yes
+						trait = fair
+						age = 0
+					}
+					new_character = {
+						set_graphical_culture = Tully_dyn
+						set_father = PREVPREV
+						set_mother = PREV
+						dynasty = PREVPREV
+					}
+				}
+			}
+			break = yes
+		}
+		if = {
+			limit = {
+				NOT = { num_of_children = 3 }
+				year = 8289
+				NOT = { has_character_flag = arya_stark } 
+			}
+			set_character_flag = arya_stark
+			character_event = { id = lore_children.1 days = 450 random = 250 }
+			random = {
+				chance = 50
+				spouse = {
+					create_character = {
+						name = Арья
+						dna="dghgarcgech"
+						properties="0r0de"
+						female = yes
+						age = 0
+					}
+					new_character = {
+						set_father = PREVPREV
+						set_mother = PREV
+						dynasty = PREVPREV
+					}
+				}
+			}
+			break = yes
+		}
+		if = {
+			limit = {
+				NOT = { num_of_children = 4 }
+				year = 8291
+				NOT = { has_character_flag = bran_stark } 
+			}
+			set_character_flag = bran_stark
+			character_event = { id = lore_children.1 days = 450 random = 250 }
+			random = {
+				chance = 50
+				spouse = {
+					create_character = {
+						name = Брандон
+						dna="dagig0afcb0"
+						properties="gs0ebkbebcb"
+						female = no
+						age = 0
+					}
+					new_character = {
+						set_graphical_culture = Tully_dyn
+						set_father = PREVPREV
+						set_mother = PREV
+						dynasty = PREVPREV
+					}
+				}
+			}
+			break = yes
+		}
+		if = {
+			limit = {
+				NOT = { num_of_children = 5 }
+				year = 8295
+				NOT = { has_character_flag = rickon_stark } 
+			}
+			set_character_flag = rickon_stark
+			character_event = { id = lore_children.1 days = 450 random = 250 }
+			random = {
+				chance = 50
+				spouse = {
+					create_character = {
+						name = Рикон
+						dna="bcgmg0bfcb0"
+						properties="gf0jakbebcb"
+						female = no
+						age = 0
+					}
+					new_character = {
+						set_graphical_culture = Tully_dyn
+						set_father = PREVPREV
+						set_mother = PREV
+						dynasty = PREVPREV	
+					}
+				}
+			}
+			break = yes
+		}
+		character_event = { id = lore_children.1 days = 450 random = 250 }
+	}
+}
+
+character_event = { #Daenerys
+	id = lore_children.2
+	
+	is_triggered_only = yes
+
+	trigger = {
+		year = 8284
+		NOT = { year = 8285 }
+		character = 77038 #Rhaella
+		ai = yes
+		NOT = { num_of_children = 7 }
+		NOT = { has_character_flag = daenerys_targaryen } 
+		spouse = { 
+			dynasty = ROOT 
+			NOT = { trait = eunuch }
+			NOT = { trait = celibate }
+		}
+		fertility = 0.1
+		is_pregnant = no
+	}
+
+	option = {
+		name = OK
+		set_character_flag = daenerys_targaryen
+		random = {
+			chance = 50
+			spouse = {
+				create_character = {
+					name = Дейнерис
+					dna="aghgitljaac"
+					properties="0p00d"
+					female = yes
+					age = 0
+				}
+				new_character = {
+					set_father = PREV
+					set_mother = ROOT
+					dynasty = ROOT
+					add_trait = fair
+					character_event = { id = high_valyrian.3 days = 2000 }
+					add_character_modifier = {
+						name = "abomination_of_incest"
+						duration = -1
+					}
+					if = {
+						limit = { 
+							ROOT = { is_inaccessible_trigger = yes }
+						}
+						add_trait = in_hiding
+					}
+				}
+			}
+		}
+	}
+}
+
+character_event = { #Margaery
+	id = lore_children.3
+	
+	is_triggered_only = yes
+
+	trigger = {
+		year = 8283
+		NOT = { year = 8284 }
+		character = 1253 #Mace Tyrell
+		ai = yes
+		NOT = { num_of_children = 4 }
+		NOT = { has_character_flag = margaery_tyrell } 
+		spouse = { 
+			dynasty = ROOT 
+			is_pregnant = no
+			fertility = 0.1
+			is_alive = yes
+		}
+		fertility = 0.1	
+		NOT = { trait = eunuch }
+		NOT = { trait = celibate }
+	}
+
+	option = {
+		name = OK
+		set_character_flag = margaery_tyrell
+		random = {
+			chance = 50
+			spouse = {
+				create_character = {				
+					name="Маргери"
+					dna="djhgulcqjaj"	#djmbulpqjaj
+					properties="0c000b"
+					female = yes
+					age = 0
+				}
+				new_character = {
+					set_graphical_culture = Tyrell_dyn
+					set_mother = PREV
+					set_father = ROOT
+					dynasty = ROOT
+					add_trait = fair
+				}
+			}
+		}
+	}
+}

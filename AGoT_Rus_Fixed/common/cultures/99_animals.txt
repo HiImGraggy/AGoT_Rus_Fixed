@@ -1,0 +1,500 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or cultures, make sure they are unique.
+
+horse_group = {
+	graphical_cultures = { horsegfx }
+	alternate_start = { 
+		OR = {
+			has_alternate_start_parameter = { key = special_culture value = animal_kingdoms } 
+			has_alternate_start_parameter = { key = special_culture value = animal_world }
+			has_alternate_start_parameter = { key = special_culture value = all } 
+		}	
+	}
+	
+	horse = {
+		graphical_cultures = { horsegfx }
+		
+		color = { 0.3 0.1 0.1 }
+		
+		# Ю 222 ю 254 Р 208 р 240 ж
+		
+		male_names = {
+			Индрос
+			Глиттергоф Четак Буцефал Скиталец Маренго Паломон Цинциннати Команч "Умный Ганс" Вельянтиф Инцитат Рыжик Брюнте "Маленький Губбен" Лукас Красавчик Гром Флэш Альфонсо Артакс
+			Блэкджэк Ферд Фыр Огонь Гуигнгнм Уинни Мэррилегз Наполеон Пилон Громила Арод Асфалот "Пони Билл" Брегон Бампкин Толстяк Лампкин Файрфут Хасуфель Лайтфут Нахар
+			Рохерин Остроухий "Снежная Грива" Стибба Горбунок Виндфола Хитрец Семицветик Конёк Хельхест Гиппон Троян Бекахест Рыжик Виктор Соловей Штрайф Мартиник Слейпнир Боджек Глу Гвидон
+			Лукас Стуре Джим Гроль Рывок Баярд Браг Нек Некен Копиад Ярвсафакс Золотой Хорнлайн Вернер Буцефал Домино Монти Болт Окли Дейл Рион Вандербильт Ньютон Триггер Салливан
+			Барнабас Терри Гюнтер Тюке
+		}
+		female_names = {
+			Индрос
+			"Серебрянное Копытце" Каштанка "Сержант Реклесс" Баттермилк "Леди Вондер" Тень Красотка Молния Вспышка Альфонза Арта "Пиковая Дама" Ферди Фурия Заря Гуигнгнм Уинни Мэрри
+			Жозефина Сивка Громила Бурка Аредэль Сивка-Бурка Брега Деревенщина Толстушка Лампочка Файрфут Арвен Лайтфут Анайрэ Амариэ Остроухая "Снежная Грива" Стибба Вертихвостка Виндфола Хитрюга
+			Радуга Лошадка Хель Ипполита Троя Бека Руби Виктория Канарейка Тинкербелл Салли Тыквочка Спесь Холлима Гульфакси Кара Жемчужинка Магика Зарона Эпона Лазутчица Бонни Парис Шарлотта
+			Мона Хейди Мэгги
+		}
+		
+		prefix = no # The patronym is added as a suffix
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		used_for_random = no
+		allow_in_ruler_designer = no
+
+		modifier = default_culture_modifier
+		
+		character_modifier = {
+			clan_sentiment = 10 # What would a nomad horde be without their horses?
+			dothraki_opinion = 20 # Mongols love their horses!
+		}
+		
+		nomadic_in_alt_start = yes
+	}
+}
+
+cat_group = {
+	graphical_cultures = { catgfx }
+	alternate_start = { 
+		OR = {
+			has_alternate_start_parameter = { key = special_culture value = animal_kingdoms }
+			has_alternate_start_parameter = { key = special_culture value = animal_world }
+			has_alternate_start_parameter = { key = special_culture value = all } 
+		}	
+	}
+	
+	cat = {
+		graphical_cultures = { catgfx }
+		
+		color = { 0.1 0.3 0.1 }
+		
+		# Ю 222 ю 254 Р 208 р 240 ж
+		
+		male_names = {
+			Индрос
+			Мурзик Пушок Том Барсик Бегемот Зимм Сэмм Мисстофелис Дейтероном Пунсиваль Кваксо Мунгоджерри Моцарт Симба Тигр Сократ Салем Тулуз Берлиоз Томас Бёрк Паус 
+			Сапожок Король Лорд Гиркун Принц
+			"Базилевс Харлок Спупс" Базкат Клубок Энгри Снагглз Счастливчик Баттонз Снежок Каддлз Крукшэнкс "Мистер Бигглсворт" Спот Вискерз Джуни Мао Кот Коинз Пантер
+			Фрампкин Председатель Мяо Флуф Ниндзя Орион Феликс Тим Роул Листр Крокет Зебедеус Сид Бер Потрошитель Маурицио Джэйк Сильвестр Биг Говорун Атлант Серафеттин Саймон Санта
+			Маик Винцент Аид Фью Тюки Лави Пэн Тьокисен Лотос Моррис Оскар Эксиль Томми Бозе Лазе Базилио Зилин Снукер Маат Кесо
+			"Лорд Адмирал Эдвард Хоук Первый" Нимиц Кац Мило Живоглот Косолапсус Матроскин Васька
+		}
+		female_names = {
+			Пантера #cat goddess
+			Индрос
+			Мисси Китти Пуговка Джинджер Принцесса Белла Сигма Миса Миссана Виктория Румпельтиза Гризабелла Деметра Бомбалурина Сути Сьюзи Силла Луна Полночь Нала Туссана Сельма Салима
+			Герцогиня Мэри Сигна "Леди Усик" Королева Леди Нимерия 
+			Лапка Василиса Пушинка Злючка Багира Счастливица Мурашка Снежинка Матильда Вертихвостка "Мисс Биглсворт" Муизза Джуна Мяучка Кошка
+			Монетка Пантера Мурлыквочка Леди Мяуша Флаффи Пуся Юки Мимми Стина Ведьма Калина Дороти Вредина Тина Ривка Клео Ива Хлоя Бастет Мафдет Эрис Тоня Лиза Мирана Киса Дейзи
+			Сехмет Нова Бёрди Минта Молли Тюльпан Ня Суки Изида Масика Калиопа "Хуана Инес де ла Крус" Митзи Проказница Смилла Агги Кеса Мила
+		}
+		
+		prefix = no # The patronym is added as a suffix
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		used_for_random = no
+		allow_in_ruler_designer = no
+
+		modifier = default_culture_modifier
+		
+		character_modifier = {
+			murder_plot_power_modifier = 0.2 # A lack of morals makes for an efficient killer
+			vassal_opinion = -5 # But it doesn't endear them to their subjects
+			fertility = 0.25 # Big litters
+		}
+	}
+}
+
+bear_group = {
+	graphical_cultures = { beargfx }
+	alternate_start = { 
+		OR = {
+			has_alternate_start_parameter = { key = special_culture value = animal_kingdoms } 
+			has_alternate_start_parameter = { key = special_culture value = animal_world }
+			has_alternate_start_parameter = { key = special_culture value = all } 
+		}	
+	}
+	
+	bear = {
+		graphical_cultures = { beargfx }
+		
+		color = { 0.1 0.1 0.3 }
+		
+		# Ю 222 ю 254 Р 208 р 240 ж
+		
+		male_names = {
+			Бьёрн Бьорн Торбьорн Нанук Урсус Исбьёрн Грроур Грргррр Ррррр Бамсе Смоки Барни "Сэр Берингтон" Бернабус Бернард Асбьорн Стирбьорн Эсбьорн Берия Балу
+			Бу-Бу Пушистик Гризли Отсон Миша Тринкет Нотабер Близзард Секрет Сладкий Кумамон Бобо Диско Каддлз Руперт Войтек Ушастик
+			Бьярн Джон Косолапый Кода Гурр Налле
+		}
+		female_names = {
+			Грроур Грргррр Ррррр Бамсе Урсина Маруся Урсула "Леди Берингтон" Бернардина Бернадетта Пушинка Бруммелиза Налле-Мая Брумма Метель
+			Тайна Йоги Сладкая Кума Бернардина Бернадетта Маша Синди Голди Налле Мая Надя
+		}
+		
+		prefix = no # The patronym is added as a suffix
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		used_for_random = no
+		allow_in_ruler_designer = no
+
+		modifier = default_culture_modifier
+		
+		character_modifier = {
+			land_morale = 0.15 # When you're a bear, you have nothing to fear
+			combat_rating = 10 # Obvious
+		}
+	}
+}
+hedgehog_group = {
+	graphical_cultures = { hedgehoggfx }
+	alternate_start = { 
+		OR = {
+			has_alternate_start_parameter = { key = special_culture value = animal_kingdoms } 
+			has_alternate_start_parameter = { key = special_culture value = animal_world }
+			has_alternate_start_parameter = { key = special_culture value = all } 
+		}	
+	}
+	
+	hedgehog_culture = {
+		graphical_cultures = { hedgehoggfx }
+		
+		color = { 0.2 0.3 1.0 }
+		
+		# Ю 222 ю 254 Р 208 р 240 ж
+		
+		male_names = {
+			Хьюго Эхинус Эринус Киднае Микро Месьо Аурион Склатерион Рикс Спайк Поки Квиллем Квильям Квиллингтон Саник Наклис Сильвер Ланцелот Галахад Кир Пинкушион Ёж
+			Грампи Крисп Шишкин Сэм Вигглз Стиг Ксеркс "Мистер Тигги-Уинкл" Нэйлз Торн Ринго Груги Панк Хеджпиг Август Блэйн Сол  
+		}
+		female_names = {
+			Эрина Ехидна Лирикс Алжира Хеми Колли Даура Пара Вентрия Шакилла Колючка Сплинтия Нимоя Эми Никса Иголочка Булавочка Ежевичка Щетинка Тыкалка Острячка Шишечка Саманта Непоседа
+			Роза Галя Пегги Хогата Бриара Мегги Скарлет Вендела Джинджер Мена Тиша Уна Урсула Джудит Теган Солнышко
+		}
+		
+		prefix = no # The patronym is added as a suffix
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		used_for_random = no
+		allow_in_ruler_designer = no
+
+		modifier = default_culture_modifier
+		
+		character_modifier = {
+			defensive_plot_power_modifier = 0.2 # Hard to get past the quills
+			fertility = 0.25 # Big litters
+		}
+
+		allow_looting = yes
+		seafarer = yes
+	}
+}
+
+duck_group = {
+	graphical_cultures = { duckgfx }
+	alternate_start = { 
+		OR = {
+			has_alternate_start_parameter = { key = special_culture value = animal_kingdoms } 
+			has_alternate_start_parameter = { key = special_culture value = animal_world }
+			has_alternate_start_parameter = { key = special_culture value = all } 
+		}	
+	}
+	
+	duck_culture = {
+		graphical_cultures = { duckgfx }
+		
+		color = { 1.0 1.0 1.0 }
+		
+		# Ю 222 ю 254 Р 208 р 240 ж
+		
+		male_names = {
+			Даффи Квакер Хак Ваддлз Дональд Доминик "Белое Крыло" Дакус Квакмир Эггберт Говард Скрудж Вингельм Людвинг Гладстоун Кейк Бландер Дак Квакерз Пиппи Фейс Грейп Анахайм
+			Квакель Бики Ноттингтон Дрэйк Маллард Ганс "Черное Крыло" Хьюи Дьюи Луи Боливар Мертен Мартен Корнелий Хавбард Кнасе Калле Арне Дилан Эмелио Грег Пол
+		}
+		female_names = {
+			Дэйзи Айрин Нейлли Авес Вингельмина Бекряктриса Молли Веббигейл Бентина Голди Джемина Кейк Бландер Утка Кряка Пиппи Уточка Виноградинка Анахайма Пернаточка Кайса Донна Гортензия Чикади
+			Тюра Гуля Уна Умпа Гиттана Лола Петунья Дорис Матильда Люсинда Дамбелла Сельма Дора Фэнни Кики Титти Анки Гандра Гезалина Гусалина Аммония Зина
+		}
+		
+		prefix = no # The patronym is added as a suffix
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		used_for_random = no
+		allow_in_ruler_designer = no
+
+		modifier = default_culture_modifier
+		
+		character_modifier = {
+			siege_speed = 0.2 # They just fly over the walls
+			fertility = 0.25 # Lots of eggs
+		}
+		
+		allow_looting = yes
+		seafarer = yes
+	}
+}
+dog_group = {
+	graphical_cultures = { doggfx }
+	alternate_start = { 
+		OR = {
+			has_alternate_start_parameter = { key = special_culture value = animal_kingdoms } 
+			has_alternate_start_parameter = { key = special_culture value = animal_world }
+			has_alternate_start_parameter = { key = special_culture value = all } 
+		}	
+	}
+	
+	dog_culture = {
+		graphical_cultures = { doggfx }
+		
+		color = { 0.4 0.3 0.0 }
+		
+		# Ю 222 ю 254 Р 208 р 240 ж
+		
+		male_names = {
+			Фидо Альфонсо Базиль Альберт Алистер Элмер Гилберт Алвин Брэнтли Кендрик Плак Баклер Шпигот Ланс Лурхер Сторож Хранитель Бригадир Фенсер Бутчер Блэйзер Проунесс Крафтсман
+			Форестер Канцлер Спойлер Гарри Фури Гроулер Бунтарь Блумер Рома Блоссом Хебе Гиларий Джолитий Гейзер Глазастик Мач Форс Трупер Бастл Баблер Рокдов Упрямец Йелп Пеле-Меле
+			Стронгбой Скай Луч Бодкин Вистфул Гном Трэкс Дэш Блэйк Бадди Гуфи Плуто Киллер Макс Бонзо Зико Санти Котте Рафф Триггер Мини Тоби Дуглас Гуд Бэд Суджо Луис "Мистер Ваффлз"
+			Инки Заврр Баблз Дог Догго Мрак Спот Бабен Спотингтон Уэсли Рекс Тимми Эд Бенджамин Сапфир Гомер Гриф Призрак Грейвинд Саммер Шаггидог Скуби Друпи Додже Генри Кейси
+			Сэм Макс Кельвин Розз Аякс Зорро Клифорд Дали Милтон Ватсон Ладди Амундсен Геркулес Гакеншмидт Самсон Сэмми Шкипер Карузо Саб Улисс Спотти Бозон Слобберз Сплитлип Суонкер
+			Чиргвин Стимер Вульфер Шарик Тузик Мухтар Мигген Петтер Миша Микки
+			
+			#Male
+			Ярость Охота Молния Скорый Шрам Клык Косточка Игривый Странник Хряк Овчар Заноза Самец Бродяга  
+			Опасный Стрелка Ураган
+			
+			#Unisex
+			Лето Зима Весна Облачко Небо Тень Полночь Заря Луна Солнце Дождь Обсидиан
+			Знамение Ворон Ветерок Ветер туман Судьба Прелесть Проклятие Милость Призрак Эхо Дуб Пламя Прах Бросок
+			Комета Охотник Серый Сень Верный Хитрый
+		}
+		female_names = {
+			Кармен Элеанор Долли Ева Ферги Голда Гвиневра Индира Минерва Октавия Психея Плак Баклер Шпигота Ланса Лурхера Хранительница Бригада Потрошительница Блэйзерина Проунесса
+			Фурия Гроулерина Бунтарка Блумерина Рима Хеба Хилари Джолити Гейзера Сила Баблерина Упрямица Убийца
+			Скай Лучик Бодкина Вистфула Трикси Даша Энни Свикс Белла Шола Лесси Лайка Одина Инки Алиса Собака Догги Тень Бейби Твигги Никки Нова Йиппи
+			Киша Тави Невия Элис Берта Домина Блонди Лотти Данни Лира Леди Нимерия Зоя Джемма Ронья Мос Бесси Флека Тира Менхи Лили Галя Битта Мия Сэди Сью Салли Сонгстер Ульферина Жучка Мэйби
+
+			
+			#Female
+			Леди Нимерия Королева Плющ Принцесса Драгоценность Янтарная Ива Индиго Мелодия Пар Папоротник Грация Коралл Кристалл
+			Фиалка Сапфир Бархотка Красавица Стерва
+			
+			#Unisex
+			Лето Зима Весна Облачко Небо Тень Полночь Заря Луна Солнце Дождь Обсидиан
+			Знамение Ворон Ветерок Ветер туман Судьба Прелесть Проклятие Милость Призрак Эхо Дуб Пламя Прах Бросок
+			Комета Охотница Серый Сень Верная Хитрая
+		}
+		
+		prefix = no # The patronym is added as a suffix
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		used_for_random = no
+		allow_in_ruler_designer = no
+
+		modifier = default_culture_modifier
+
+		character_modifier = {
+			general_opinion = 5 # They are good boys
+			fertility = 0.25 # Big litters
+		}
+	}
+	
+	direwolf_culture = {
+		graphical_cultures = { direwolfgfx }
+		
+		color = { 0.1 0.3 0.1 }
+		
+		# Ю 222 ю 254 Р 208 р 240 ж
+		
+		male_names = {
+			#Male
+			"Серый Ветер" Ярость Охота Молния Скорый Шрам Клык Косточка Игривый Странник Хряк Овчар Заноза Самец Бродяга  
+			Опасный Стрелка Ураган
+			
+			#Unisex
+			Лето Зима Весна Облачко Небо Тень Полночь Заря Луна Солнце Дождь Обсидиан
+			Знамение Ворон Ветерок Ветер туман Судьба Прелесть Проклятие Милость Призрак Эхо Дуб Пламя Прах Бросок
+			Комета Охотник Серый Сень Верный Хитрый
+		}
+		female_names = {
+			#Female
+			Леди Нимерия Королева Плющ Принцесса Драгоценность Янтарная Ива Индиго Мелодия Пар Папоротник Грация Коралл Кристалл
+			Фиалка Сапфир Бархотка Красавица Стерва
+			
+			#Unisex
+			Лето Зима Весна Облачко Небо Тень Полночь Заря Луна Солнце Дождь Обсидиан
+			Знамение Ворон Ветерок Ветер туман Судьба Прелесть Проклятие Милость Призрак Эхо Дуб Пламя Прах Бросок
+			Комета Охотница Серый Сень Верная Хитрая
+		}
+		
+		prefix = no # The patronym is added as a suffix
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		used_for_random = no
+		allow_in_ruler_designer = no
+		
+		modifier = default_culture_modifier
+
+		character_modifier = {
+			fertility = 0.25 # Big litters
+		}
+	}
+}
+elephant_group = {
+	graphical_cultures = { elephantgfx }
+	alternate_start = { 
+		OR = {
+			has_alternate_start_parameter = { key = special_culture value = animal_kingdoms } 
+			has_alternate_start_parameter = { key = special_culture value = all } 
+			has_alternate_start_parameter = { key = special_culture value = animal_world }
+		}	
+	}
+	
+	elephant_culture = {
+		graphical_cultures = { elephantgfx }
+		
+		color = { 0.8 0.8 0.8 }
+		
+		# Ю 222 ю 254 Р 208 р 240 ж
+		
+		male_names = {
+			Дут Трампо Снут Пир Кандула Джамбо Элефант Сету Дрити Бхаану Бхадра Заин Барбар Помпадур Бупер Домбо Абул Аббас Ханно Заим Ганнибал Баал Гасдрубал Бадур
+			Батыр Поллух Кастор "Мистер Бивень" Гадж Брант Камбодж Гастин Гаджендра Аирават Тедж Тоти Ятхра Гаази Чоту Баахи Бахш Бехру Заки Корнелий Сур
+		}
+		female_names = {
+			Дута Трампа Снута Пира Кандула Джамба Элефантина Сету Дрити Бхаану Бхадра Заин Барбара Помпадура Бупера Домба Селестина Ханскен Руби Мираана Мокша Друти
+			Захара Яша Джайна Фрия Ааши Хрути Сия Дакша Зия Зара Зива Окки
+		}
+		
+		prefix = no # The patronym is added as a suffix
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		used_for_random = no
+		allow_in_ruler_designer = no
+
+		modifier = default_culture_modifier
+	}
+}
+panda_group = {
+	graphical_cultures = { redpandagfx }
+	alternate_start = { 
+		OR = {
+			has_alternate_start_parameter = { key = special_culture value = animal_kingdoms } 
+			has_alternate_start_parameter = { key = special_culture value = animal_world }
+			has_alternate_start_parameter = { key = special_culture value = all } 
+		}	
+	}
+	
+	red_panda = {
+		graphical_cultures = { redpandagfx }
+		
+		color = { 1.0 0.3 0.0 }
+		
+		# Ю 222 ю 254 Р 208 р 240 ж
+				
+		male_names = {
+			Пандольф Пандульф Шифу Панда Вазил Спарк Нинг Бенджамин Сойер Чеба Пабу Понга Бамбу Каала Паффбол Улунг
+			Чай Семпер Вира Сонг Масала Ила Зея Карсон Гарольд Стеллар Лхоце Васаби Саби Кхуси Сундар Манаса Бо Мохини
+			Кевин Феникс Ави Катар Берри Барри Пумори Амбрус Альберт Фенг Чонк Джеки Натмег Сабал Пейтон Эли Ред Бабу
+		}
+		female_names = {
+			Джозефина Пандольфина Шифу Панда Сусана Лилунг Бетси Скарлетт Чеба Пабу Понга Бамбу Каала Паффбол Улунг
+			Чай Семпер Вира Сонг Соня Мико Нава Чини Масала Панна Пия Сатья Соника Ила Зея Юрико Хазель Мод Джая
+			Васаби Саби Кхуси Сундар Манаса Лифа Феникс Беатрикс Рут Ави Катар Берри Симона Чота Мали Аврора Эриель
+			Чонк Мамбо Натмег Сабаль
+		}
+		
+		prefix = no # The patronym is added as a suffix
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		used_for_random = no
+		allow_in_ruler_designer = no
+
+		modifier = default_culture_modifier
+		
+		character_modifier = {
+			vassal_opinion = 5
+			land_morale = 0.05 # Territorial
+			fertility = -0.15 # Small litters
+		}
+		
+	}
+}

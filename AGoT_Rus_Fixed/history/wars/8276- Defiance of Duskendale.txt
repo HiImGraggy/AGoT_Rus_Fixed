@@ -1,0 +1,22 @@
+name = "Восстание Сумеречного Дола"
+
+casus_belli={
+	casus_belli=lower_crown_authority_law #lower taxes and a new town charter.
+	actor=6049364
+	recipient=77037
+	landed_title=e_iron_throne
+	date=8276.1.1
+}
+
+8277.1.1 = {
+	add_defender = 77037 #Aerys II the Mad
+	add_attacker = 6049364 # Denys Darklyn
+}
+
+8277.10.1 = {
+	rem_defender = 77037 #Aerys II the Mad
+	rem_attacker= 6049364 # Denys Darklyn
+}
+
+
+                                                                                                                                                                                                                                                                                                                                   

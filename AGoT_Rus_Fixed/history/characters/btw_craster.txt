@@ -1,0 +1,308 @@
+574350 = {
+	name="Крастер"
+	dynasty=559240
+
+  	dna="ahiji0gaa00"
+ 	properties="cj0cak0000"
+	
+	religion="cold_gods"
+	#religion="beyond_wall_old_gods" # So he is selectable, changed to cold_gods below
+	culture="wildling"
+	
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="greedy"
+	add_trait="lustful"
+	
+	8240.1.1 = {
+		birth="8240.1.1"
+		#effect = { religion=cold_gods }
+	}
+	8299.7.8 = {
+		# Killed in the mutiny at Craster's Keep
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+574351 = {
+	name="Ферни"
+	female=yes
+
+	religion="cold_gods"
+	culture="wildling"
+	
+	8241.1.1 = {
+		birth="8241.1.1"
+		effect = {  
+			dynasty = none
+		}
+	}
+	8280.1.1 = { add_spouse = 574350} 
+}
+574352 = {
+	name="Далла"
+	female=yes
+
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	8249.1.1 = {
+		birth="8249.1.1"
+		effect = {  
+			dynasty = none
+		}
+	}
+	8280.1.1 = { add_spouse = 574350} 
+}
+574353 = {
+	name="Эсгред"
+	female=yes
+
+	religion="cold_gods"
+	culture="wildling"
+	
+	8251.1.1 = {
+		birth="8251.1.1"
+		effect = {  
+			dynasty = none
+		}
+	}
+	8280.1.1 = { add_spouse = 574350} 
+}
+574354 = {
+	name="Игрис"
+	female=yes
+
+	religion="cold_gods"
+	culture="wildling"
+	
+	8254.1.1 = {
+		birth="8254.1.1"
+		effect = {  
+			dynasty = none
+		}
+	}
+	8280.1.1 = { add_spouse = 574350} 
+}
+574355 = {
+	name="Вильви"
+	female=yes
+
+	religion="cold_gods"
+	culture="wildling"
+	
+	8255.1.1 = {
+		birth="8255.1.1"
+		effect = {  
+			dynasty = none
+		}
+	}
+	8280.1.1 = { add_spouse = 574350} 
+}
+574356 = {
+	name="Джонелла"
+	female=yes
+
+	religion="cold_gods"
+	culture="wildling"
+	
+	8257.1.1 = {
+		birth="8257.1.1"
+		effect = {  
+			dynasty = none
+		}
+	}
+	8280.1.1 = { add_spouse = 574350} 
+}
+574357 = {
+	name="Ринни"
+	dynasty=559240
+	female=yes
+
+	religion="cold_gods"
+	culture="wildling"
+	father=574350
+	mother=574351
+	
+	8258.1.1 = {birth="8258.1.1"}
+	8280.1.1 = { add_spouse = 574350} 
+}
+574358 = {
+	name="Кира"
+	dynasty=559240
+	female=yes
+
+	religion="cold_gods"
+	culture="wildling"
+	father=574350
+	mother=574351
+	
+	8259.1.1 = {birth="8259.1.1"}
+	8280.1.1 = { add_spouse = 574350} 
+}
+574359 = {
+	name="Ларра"
+	dynasty=559240
+	female=yes
+
+	religion="cold_gods"
+	culture="wildling"
+	father=574350
+	mother=574351
+	
+	8260.1.1 = {birth="8260.1.1"}
+	8280.1.1 = { add_spouse = 574350} 
+}
+574360 = {
+	name="Мейрида"
+	dynasty=559240
+	female=yes
+
+	religion="cold_gods"
+	culture="wildling"
+	father=574350
+	mother=574351
+	
+	8261.1.1 = {birth="8261.1.1"}
+	8280.1.1 = { add_spouse = 574350} 
+}
+574361 = {
+	name="Лайайелла"
+	dynasty=559240
+	female=yes
+
+	religion="cold_gods"
+	culture="wildling"
+	father=574350
+	mother=574351
+	
+	8269.1.1 = {birth="8269.1.1"}
+	8280.1.1 = { add_spouse = 574350} 
+}
+574362 = {
+	name="Морра"
+	dynasty=559240
+	female=yes
+
+	religion="cold_gods"
+	culture="wildling"
+	father=574350
+	mother=574352
+	
+	8270.1.1 = {birth="8270.1.1"}
+	8280.1.1 = { add_spouse = 574350} 
+}
+574363 = {
+	name="Нелла"
+	dynasty=559240
+	female=yes
+
+	religion="cold_gods"
+	culture="wildling"
+	father=574350
+	mother=574353
+	
+	8271.1.1 = {birth="8271.1.1"}
+	8280.1.1 = { add_spouse = 574350} 
+}
+574364 = {
+	name="Дия"
+	dynasty=559240
+	female=yes
+
+	religion="cold_gods"
+	culture="wildling"
+	father=574350
+	mother=574354
+	
+	8275.1.1 = {birth="8275.1.1"}
+	8280.1.1 = { add_spouse = 574350} 
+}
+574365 = {
+	name="Вельвила"
+	dynasty=559240
+	female=yes
+
+	religion="cold_gods"
+	culture="wildling"
+	father=574350
+	mother=574355
+	
+	8276.1.1 = {birth="8276.1.1"}
+	8280.1.1 = { add_spouse = 574350} 
+}
+574366 = {
+	name="Сноуиль"
+	dynasty=559240
+	female=yes
+
+	religion="cold_gods"
+	culture="wildling"
+	father=574350
+	mother=574359
+	
+	8277.1.1 = {birth="8277.1.1"}
+	8280.1.1 = { add_spouse = 574350} 
+}
+574367 = {
+	name="Изилла"
+	dynasty=559240
+	female=yes
+
+	religion="cold_gods"
+	culture="wildling"
+	father=574350
+	mother=574360
+	
+	8278.1.1 = {birth="8278.1.1"}
+	8280.1.1 = { add_spouse = 574350} 
+}
+574368 = {
+	name="Лилли"
+	dynasty=559240
+	female=yes
+	
+	learning=0
+	stewardship=0
+	martial=0
+	diplomacy=3
+	intrigue=4
+
+	religion="cold_gods"
+	culture="wildling"
+	
+	add_trait=wildling
+	add_trait=kind
+	add_trait=brave
+	add_trait=familyperson
+	add_trait=shy
+	
+	father=574350
+	mother=574360
+	
+	8280.1.1 = {birth="8280.1.1"}
+	8282.1.1 = { add_spouse = 574350} #Yes, early but W.A.D
+	8300.1.1 = {
+		employer=1002059
+	}
+}
+574369 = {
+	name="Оуэн"
+	dynasty=559240
+
+	religion="cold_gods"
+	culture="wildling"
+	
+	father=574350
+	mother=574368
+	
+	add_trait=wildling
+	
+	8300.1.1 = {
+		birth="8300.1.1"
+		employer=1002059
+	}
+}
+
+

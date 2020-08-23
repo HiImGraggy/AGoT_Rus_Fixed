@@ -1,0 +1,1297 @@
+e_summer_sea = {
+	color={ 36 135 38 }
+	color2={ 255 255 255 }
+	
+	dignity = 25
+
+	k_summer_islands = {
+		color={ 14 177 18 }
+		color2={ 255 255 255 }
+		
+		capital = 496
+		
+		culture = summer_islander	
+		
+		allow = { hidden_tooltip = { NOT = { culture_group = winter_group } } }
+		
+		d_walano = {
+			color={ 82 239 85 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_lotus_port = {
+				color={ 14 177 18 }
+				color2={ 255 255 255 }
+				
+				holy_site = summer_rel
+				holy_site = summer_rel_reformed
+				
+				b_summer_palace = {
+				}
+				b_lotus_port = {
+				}
+				b_the_summer_temple = {
+				}
+				b_lotus_hill = {
+				}
+				b_summervale = {
+				}
+			}
+			
+			c_ambershore = {
+				color={ 82 239 85 }
+				color2={ 255 255 255 }
+				
+				b_summervine = {
+				}
+				b_sweet_harbour = {
+				}
+				b_shorerise = {
+				}
+				b_belunon = {
+				}
+			}
+			
+			c_jalabuxon = {
+				color={ 58 109 59 }
+				color2={ 255 255 255 }
+				
+				b_redfletcher = {
+				}
+				b_jala_cave = {
+				}
+				b_orxon = {
+				}
+			}
+			
+			c_isle_of_women = {
+				color={ 138 215 140 }
+				color2={ 255 255 255 }
+				
+				name_tier = duke
+				
+				b_fair_hill = {
+				}
+				b_whorestown = {
+				}
+				b_prerunon = {
+				}
+				b_isle_of_women4 = {
+				}
+			}
+		}	
+		
+		d_last_lament = {
+			color={ 58 109 59 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_last_lament = {
+				color={ 14 177 18 }
+				color2={ 255 255 255 }
+				
+				b_last_keep = {
+				}
+				b_last_lament = {
+				}
+				b_ardor = {
+				}
+				b_jerunon = {
+				}
+				b_kyxon = {
+				}
+			}
+			
+			c_lotus_valley = {
+				color={ 82 239 85 }
+				color2={ 255 255 255 }
+				
+				b_lilac_hill = {
+				}
+				b_xhon_orchard = {
+				}
+				b_lotusbridge = {
+				}
+				b_lotus_valley4 = {
+				}
+			}
+			
+			c_stonehead = {
+				color={ 58 109 59 }
+				color2={ 255 255 255 }
+				
+				b_stonehead = {
+				}
+				b_stonecliff = {
+				}
+				b_stonehead3 = {
+				}
+			}
+			
+			c_mantisleaf = {
+				color={ 58 109 59 }
+				color2={ 255 255 255 }
+				
+				b_lumbersloft = {
+				}
+				b_mantistone = {
+				}
+				b_mantisleaf = {
+				}
+			}
+		}	
+		
+		d_tall_trees_valley  = {
+			color={ 138 215 140 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_tall_trees_town = {
+				color={ 14 177 18 }
+				color2={ 255 255 255 }
+				
+				holy_site = corsair
+				
+				b_tall_tree_hall = {
+				}
+				b_tall_trees_town = {
+				}
+				b_the_trees = {
+				}
+				b_wydoj = {
+				}
+				b_etujon = {
+				}
+			}	
+			c_the_citrus_coves = {
+				color={ 82 239 85 }
+				color2={ 255 255 255 }
+				
+				b_noj = {
+				}
+				b_treecross = {
+				}
+				b_lime_cove = {
+				}
+				b_the_citrus_coves4 = {
+				}
+			}
+			c_kone_forest = {
+				color={ 138 215 140 }
+				color2={ 255 255 255 }
+				
+				b_kone_keep = {
+				}
+				b_jolkunon = {
+				}
+				b_crosstree = {
+				}
+			}
+		}
+		
+		c_koj = {
+			color={ 53 234 57 }
+			color2={ 255 255 255 }
+			
+			name_tier = duke
+			
+			b_pearl_palace = {
+			}
+			b_koj_harbour = {
+			}
+			b_the_arrows = {
+			}
+			b_prurunon = {
+			}
+			b_agraxon = {
+			}
+			b_kojalu = {
+			}
+		}
+		
+		c_isle_of_birds = {
+			color={ 94 191 97 }
+			color2={ 255 255 255 }
+			
+			name_tier = duke
+			
+			b_tucano = {
+			}
+			b_blackfletcher = {
+			}
+			b_the_birds = {
+			}
+			b_flock_hill = {
+			}
+			b_horizon_point = {
+			}
+		}
+		
+		d_sweet_lotus_vale  = {
+			color={ 138 215 140 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_ebonhead = {
+				color={ 14 177 18 }
+				color2={ 255 255 255 }
+				
+				holy_site = summer_rel
+				holy_site = summer_rel_reformed
+				
+				b_ebon_rock = {
+				}
+				b_ebonhead = {
+				}
+				b_the_vales = {
+				}
+				b_arrowgate = {
+				}
+				b_ulon = {
+				}
+			}	
+			c_sweetwater = {
+				color={ 82 239 85 }
+				color2={ 255 255 255 }
+				
+				b_sweet_keep = {
+				}
+				b_lemonfield = {
+				}
+				b_taqhalo = {
+				}
+				b_rerranu = {
+				}
+				b_sweetwater5 = {
+				}
+			}
+			c_lotus_hills = {
+				color={ 138 215 140 }
+				color2={ 255 255 255 }
+				
+				b_valeswatch = {
+				}
+				b_kojhanu = {
+				}
+				b_wethill = {
+				}
+				b_lotus_hills4 = {
+				}
+			}
+			
+			c_doquu = {
+				color={ 148 215 100 }
+				color2={ 255 255 255 }
+				
+				b_doqunon = {
+				}
+				b_far_harbour = {
+				}
+				b_misanu = {
+				}
+				b_dwijuu = {
+				}
+			}
+		}
+		d_west_jhala = {
+			color={ 53 234 57 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_bloodwood = {
+				color={ 14 177 18 }
+				color2={ 255 255 255 }
+			
+				b_blood_keep = {
+				}
+				b_kilipulo = {
+				}
+				b_the_sea = {
+				}
+				b_bowsmouth = {
+				}
+				b_bloodwood5 = {
+				}
+			}
+
+			c_golden_mountains = {
+				color={ 138 215 140 }
+				color2={ 255 255 255 }
+			
+				b_featherbush = {
+				}
+				b_isle_of_quivers = {
+				}
+				b_mount_lejabu = {
+				}
+				b_golden_mountains4 = {
+				}
+			}		
+		}
+		
+		d_parrot_bay = {
+			color={ 82 239 85 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_parrotshore = {
+				color={ 14 177 18 }
+				color2={ 255 255 255 }
+				
+				b_moparulu = {
+				}
+				b_parrotport = {
+				}
+				b_the_parrots = {
+				}
+				b_jeranulu = {
+				}
+			}
+			
+			c_the_bones = {
+				color={ 82 239 85 }
+				color2={ 255 255 255 }
+				
+				name_tier = duke
+				
+				b_great_bone = {
+				}
+				b_green_bone = {
+				}
+				b_summer_bone = {
+				}
+				b_red_bone = {
+				}
+				b_south_bone = {
+				}
+			}
+			
+			c_xon = {
+				color={ 58 109 59 }
+				color2={ 255 255 255 }
+				
+				name_tier = duke
+				
+				b_tower_of_xon = {
+				}
+				b_azurulon = {
+				}
+				b_monkey_harbour = {
+				}
+				b_pevulon = {
+				}
+			}
+			
+			c_ebonhills = {
+				color={ 138 215 140 }
+				color2={ 255 255 255 }
+				
+				b_ebonwatch = {
+				}
+				b_ebontown = {
+				}
+				b_ebonhills3 = {
+				}
+			}
+		}	
+		
+		d_indigo_straits  = {
+			color={ 138 215 140 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_indigoshore = {
+				color={ 14 177 18 }
+				color2={ 255 255 255 }
+				
+				b_shorestower = {
+				}
+				b_inhula_bay = {
+				}
+				b_ajarulo = {
+				}
+				b_the_straits = {
+				}
+				b_indigoshore5 = {
+				}
+			}	
+			c_kalalula = {
+				color={ 82 239 85 }
+				color2={ 255 255 255 }
+				
+				b_kalapool = {
+				}
+				b_kalabridge = {
+				}
+				b_kalalula3 = {
+				}
+			}
+			c_scarlethead = {
+				color={ 138 215 140 }
+				color2={ 255 255 255 }
+				
+				b_scarletcave = {
+				}
+				b_scarlet_fort = {
+				}
+				b_scarlethead3 = {
+				}
+			}
+		}
+		
+		d_red_flower_vale = {
+			color={ 58 109 59 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_red_flower_bay = {
+				color={ 14 177 18 }
+				color2={ 255 255 255 }
+				
+				holy_site = summer_rel
+				holy_site = summer_rel_reformed
+				holy_site = nath_pagan			
+				holy_site = nath_pagan_reformed
+				
+				b_red_palace = {
+				}
+				b_summercove = {
+				}
+				b_the_flowers = {
+				}
+				b_nudelnon = {
+				}
+				b_sevigulu = {
+				}
+			}
+			
+			c_jhalavale = {
+				color={ 82 239 85 }
+				color2={ 255 255 255 }
+				
+				b_petal_hill = {
+				}
+				b_sunshadow = {
+				}
+				b_frenaxu = {
+				}
+			}
+			
+			c_highgrove = {
+				color={ 58 109 59 }
+				color2={ 255 255 255 }
+				
+				b_grovesfort = {
+				}
+				b_haljuno = {
+				}
+				b_ambercross = {
+				}
+				b_miriralu = {
+				}
+			}
+		}	
+		
+		d_golden_head  = {
+			color={ 94 191 97 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_goldenheart = {
+				color={ 14 177 18 }
+				color2={ 255 255 255 }
+				
+				b_golden_lodge = {
+				}
+				b_hearthaven = {
+				}
+				b_the_goldenhearts = {
+				}
+				b_umunon = {
+				}
+				b_goldenheart5 = {
+				}
+			}	
+			c_tamarinu = {
+				color={ 82 239 85 }
+				color2={ 255 255 255 }
+				
+				b_bownulu = {
+				}
+				b_golden_nest = {
+				}
+				b_iguanulo = {
+				}
+				b_lizardhole = {
+				}
+				b_elders_house = {
+				}
+			}
+			c_rotu_forest = {
+				color={ 58 109 59 }
+				color2={ 255 255 255 }
+				
+				b_rotuxon = {
+				}
+				b_lumberscross = {
+				}
+				b_kedulo = {
+				}
+			}
+			# c_lizard_head = { #REMOVED
+				# color={ 138 215 140 }
+				# color2={ 255 255 255 }
+				
+				
+			# }
+		}
+		
+		d_the_three_exiles = {
+			color={ 58 109 59 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_the_singing_stones = {
+				color={ 14 177 18 }
+				color2={ 255 255 255 }
+				
+				name_tier = duke
+				
+				b_singstone = {
+				}
+				b_passioncove = {
+				}
+				b_bountystone = {
+				}
+				b_drumstone = {
+				}
+			}
+			
+			c_golden_exile = {
+				color={ 82 239 85 }
+				color2={ 255 255 255 }
+				
+				b_hall_of_exiles = {
+				}
+				b_capybaral = {
+				}
+				b_the_islands = {
+				}
+				b_goldtree = {
+				}
+			}
+			
+			c_little_exile = {
+				color={ 58 109 59 }
+				color2={ 255 255 255 }
+				
+				b_feathersrock = {
+				}
+				b_little_bay = {
+				}
+				b_abiliru = {
+				}
+			}
+			
+			c_orange_exile = {
+				color={ 58 109 59 }
+				color2={ 255 255 255 }
+				
+				b_westwake = {
+				}
+				b_nyrolu_grove = {
+				}
+				b_zivudo = {
+				}
+			}
+		}
+		
+		d_moluu  = {
+			color={ 94 191 97 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_moluu = {
+				color={ 14 177 18 }
+				color2={ 255 255 255 }
+				
+				b_monyuxon = {
+				}
+				b_port_moluu = {
+				}
+				b_coupling = {
+				}
+				b_passion_bay = {
+				}
+				b_paranulon = {
+				}
+			}	
+			c_isle_of_love = {
+				color={ 82 239 85 }
+				color2={ 255 255 255 }
+				
+				name_tier = duke
+				
+				holy_site = summer_rel
+				holy_site = summer_rel_reformed
+				
+				b_lovers_den = {
+				}
+				b_loroxhal = {
+				}
+				b_ecstasy = {
+				}
+				b_hidden_beach = {
+				}
+			}
+			c_fragrant_isle = {
+				color={ 138 215 140 }
+				color2={ 255 255 255 }
+				
+				b_fragrant_house = {
+				}
+				b_golden_nose = {
+				}
+			}
+		}
+		
+		d_omburu = {
+			color={ 92 229 86 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_qetzalu = {
+				color={ 14 177 18 }
+				color2={ 255 255 255 }
+				
+				b_qetzalu_hill = {
+				}
+				b_green_gorge = {
+				}
+			}
+			
+			c_heartvale = {
+				color={ 82 239 85 }
+				color2={ 255 255 255 }
+				
+				holy_site = summer_rel
+				holy_site = summer_rel_reformed
+		
+				b_heart_hall = {
+				}
+				b_ombunu = {
+				}
+				b_plenty = {
+				}
+				b_alejuno = {
+				}
+			}
+			
+			c_naked_forest = {
+				color={ 58 109 59 }
+				color2={ 255 255 255 }
+		
+				b_naked_den = {
+				}
+				b_jalloxhu = {
+				}
+			}
+			
+			c_smiling_cliffs = {
+				color={ 138 215 140 }
+				color2={ 255 255 255 }
+				
+				b_agbeluxon = {
+				}
+				b_smiling_watch = {
+				}
+			}
+			
+			c_xhala = {
+				color={ 38 109 79 }
+				color2={ 255 255 255 }
+		
+				b_xhalalu = {
+				}
+				b_turakuno = {
+				}
+				b_monkeys_den = {
+				}
+			}
+			
+			c_cape_omburu = {
+				color={ 34 157 18 }
+				color2={ 255 255 255 }
+				
+				b_quiversbush = {
+				}
+				b_lovershead = {
+				}
+			}
+		}	
+	}
+	
+	k_basilisk_isles = {
+		color = { 54 186 144 }
+		color2 = { 255 255 255}
+		
+		#culture = basilisk_islander
+		
+		astapori = "Горгай"
+		yunkaii = "Горгай"
+		meereenese = "Горгай"
+		ghiscari = "Горгай"
+		gogossosi = "Гогоссос"
+		
+		capital = 747
+		
+		allow = { hidden_tooltip = { NOT = { culture_group = winter_group } } }
+		
+		d_gogossos = {
+			color={ 155 203 63 }
+			color2={ 255 255 255 }
+			
+			astapori = "Горгай"
+			yunkaii = "Горгай"
+			meereenese = "Горгай"
+			ghiscari = "Горгай"
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+				hidden_tooltip = { NOT = { culture_group = unoccupied_group } }
+			}
+			
+			capital = 747
+							
+			c_gogossos = {
+				color={ 155 203 63 }
+				color2={ 255 255 255 }
+				
+				holy_site = nath_pagan
+				holy_site = nath_pagan_reformed
+				holy_site = corsair
+				holy_site = sothoryos_rel
+				
+				ruin = "Остров Слез"
+				astapori = "Горгай"
+				yunkaii = "Горгай"
+				meereenese = "Горгай"
+				ghiscari = "Горгай"
+				
+				b_gogossos = {
+					astapori = "Горгай"
+					yunkaii = "Горгай"
+					meereenese = "Горгай"
+					ghiscari = "Горгай"
+				}	
+				b_gogossos_castle = {
+					astapori = "Горгай"
+					yunkaii = "Горгай"
+					meereenese = "Горгай"
+					ghiscari = "Горгай"
+				}	
+				b_gogossos_temple = {
+					
+					astapori = "Горгай"
+					yunkaii = "Горгай"
+					meereenese = "Горгай"
+					ghiscari = "Горгай"
+				}
+				b_gogossos_4 = {
+				}
+				b_gogossos_5 = {
+				}
+				b_gogossos_6 = {
+				}
+				b_gogossos_7 = {
+				}
+			}
+		}	
+		
+		d_western_isles = {
+			color={ 22 239 170 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+										
+			c_isleserpents = {
+				color={ 22 239 170 }
+				color2={ 255 255 255 }
+									
+				b_isleserpents = {
+				}
+				b_isleserpentstown = {
+				}
+			}
+
+			c_qoprak = {
+				color={ 7 99 70 }
+				color2={ 255 255 255 }
+						
+				b_qoprak = {
+				}
+				b_qopraktown = {
+				}
+			}
+
+			c_deathisle = {
+				color={ 126 243 206 }
+				color2={ 255 255 255 }
+						
+				b_deathisle = {
+				}
+				b_deathisletown = {
+				}
+			}
+		}	
+		
+		d_three_snakes = {
+			color={ 54 106 89 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+
+			c_taressyar = {
+				color={ 54 106 89 }
+				color2={ 255 255 255 }
+						
+				b_taressyar = {
+				}
+				b_taressyartown = {
+				}
+			}
+
+			c_islemonkeys = {
+				color = { 54 186 144 }
+				color2={ 255 255 255 }			
+						
+				b_islemonkeys = {
+				}
+				b_islemonkeystown = {
+				}
+			}
+			
+			c_isleoftoads = {
+				color={ 126 243 206 }
+				color2={ 255 255 255 }
+						
+				b_isleoftoads = {
+				}
+				b_isleoftoadstown = {
+				}
+			}
+		}	
+		
+		d_eastern_isles = {
+			color={ 108 166 148 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_isleofvines = {
+				color={ 108 166 148 }
+				color2={ 255 255 255 }
+										
+				b_isleofvines = {
+				}
+				b_isleofvinestown = {
+				}
+			}
+
+		
+			c_skullisland = {
+				color={ 7 99 70 }
+				color2={ 255 255 255 }
+						
+				b_skullisland = {
+				}
+				b_skullislandtown = {
+				}
+			}
+
+			c_axisle = {
+				color={ 22 239 170 }
+				color2={ 255 255 255 }
+						
+				b_axisle = {
+				}
+				b_axisletown = {
+				}
+			}
+		}
+		
+		c_isle_of_lice = {
+			color={ 7 99 70 }
+			color2={ 255 255 255 }
+					
+			b_isle_of_lice = {
+			}
+			b_isle_of_licetown = {
+			}
+		}
+	}
+
+	k_sothoryos = {
+		color = { 139 186 50 }
+		color2 = { 255 255 255}
+		
+		culture = brindlemen
+		
+		allow = { hidden_tooltip = { NOT = { culture_group = winter_group } } }
+		
+		d_naath = {
+			color = { 76 94 40 }
+			color2 = { 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+				hidden_tooltip = { NOT = { culture_group = unoccupied_group } }
+			}
+			
+			culture = naathi
+
+			c_naath = {
+				color = { 76 94 40 }
+				color2={ 255 255 255 }
+				
+				holy_site = corsair
+				holy_site = nath_pagan
+				holy_site = nath_pagan_reformed
+						
+				b_naath = {
+				}
+				b_naath_town = {
+				}
+				b_naath_temple = {
+				}
+			}
+		}
+		
+		c_basiliskpoint = {
+			color={ 60 88 5 }
+			color2={ 255 255 255 }
+			
+			holy_site = nath_pagan
+			holy_site = nath_pagan_reformed
+			holy_site = sothoryos_rel
+			
+			b_basiliskpoint = {
+			}
+			b_basiliskpoint_castle = {
+			}
+			b_basiliskpoint_temple = {
+			}
+		}
+		
+		d_zamettar  = {
+			color={ 189 236 99 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+							
+			c_zamettar = {
+				color={ 189 236 99 }
+				color2={ 255 255 255 }
+				
+				holy_site = nath_pagan
+				holy_site = nath_pagan_reformed
+				holy_site = sothoryos_rel
+				
+				b_zamettar = {
+				}	
+				b_zamettar_castle = {
+				}	
+				b_zamettar_temple = {
+				}
+			}
+			
+			c_vyarash = {
+				color={ 155 229 13 }
+				color2={ 255 255 255 }
+				
+				b_vyarash = {
+				}
+				b_vyarash_castle = {
+				}
+				b_vyarash_temple = {
+				}
+			}
+		}	
+		
+		d_yeen  = {
+			color={ 60 88 5 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+							
+			c_yeen = {
+				color={ 60 88 5 }
+				color2={ 255 255 255 }
+				
+				holy_site = sothoryos_rel
+				holy_site = aztec_reformed
+				holy_site = aztec
+				
+				b_yeen = {
+				}	
+				b_yeen_castle = {
+				}	
+				b_yeen_temple = {
+				}
+			}
+			
+			c_gomorosh = {
+				color={ 139 186 50 }
+				color2={ 255 255 255 }
+				
+				b_gomorosh = {
+				}
+				b_gomorosh_castle = {
+				}
+				b_gomorosh_temple = {
+				}
+			}
+		}	
+		
+		d_gorosh  = {
+			color={ 155 229 13 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+							
+			c_gorosh = {
+				color={ 155 229 13 }
+				color2={ 255 255 255 }
+				
+				b_gorosh = {
+				}	
+				b_gorosh_castle = {
+				}	
+				b_gorosh_temple = {
+				}
+			}	
+
+			c_wyvernpoint = {
+				color={ 60 88 5 }
+				color2={ 255 255 255 }
+				
+				holy_site = sothoryos_rel
+				
+				b_wyvernpoint = {
+				}
+				b_wyvernpoint_castle = {
+				}
+				b_wyvernpoint_temple = {
+				}
+			}	
+		}
+	}
+}	
+
+d_brindleman_invaders = {
+	color={ 50 50 50 }
+	color2={ 255 255 255 }
+	
+	culture = brindlemen
+	religion = summer_rel
+	
+	# Always exists
+	landless = yes
+	
+}
+
+#Tall Trees Town
+b_onuxho = {
+	religion = summer_rel
+	culture = summer_islander	
+}
+
+#Goggosos
+b_paenohrin = {
+	culture = gogossosi
+	religion = valyrian_rel
+}
+b_brenaris = {
+	culture = gogossosi
+	religion = valyrian_rel
+}
+b_nahion = {
+	culture = gogossosi
+	religion = valyrian_rel
+}
+b_vhassorlan = {
+	culture = gogossosi
+	religion = valyrian_rel
+}
+b_ennyrion = {
+	culture = gogossosi
+	religion = valyrian_rel
+}

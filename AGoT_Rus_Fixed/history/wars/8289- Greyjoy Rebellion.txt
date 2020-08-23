@@ -1,0 +1,29 @@
+name = "Восстание Бейлона Грейджоя"
+
+casus_belli={
+	casus_belli=bid_for_independence
+	actor=1107
+	recipient=317
+	#landed_title=e_iron_throne
+	date=8289.1.1
+}
+
+# casus_belli={
+	# casus_belli=dejure_kingdom_claim_EMP
+	# actor=317
+	# recipient=1107
+	# landed_title=e_iron_isles
+	# date=8289.1.1
+# }
+
+8289.1.1 = {
+	add_defender = 317 #Robert Baratheon
+	add_attacker = 1107 # Balon Greyjoy
+	
+}
+
+8289.6.1 = {
+	rem_defender = 317 #Robert Baratheon
+	rem_attacker= 1107 # Balon Greyjoy
+}
+

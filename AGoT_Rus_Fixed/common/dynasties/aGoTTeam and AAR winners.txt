@@ -1,0 +1,345 @@
+##AGOT
+450000 = {
+	name="Мартин"
+	culture = crownlander
+}
+450001 = {
+	name="Наки"
+	culture = reachman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 7
+			texture_internal = 85
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	used_for_random=no
+	can_appear=no
+}
+450002 = {
+	name="Миллер"
+	culture = westerman
+}
+450004 = {
+	name="Тревельян"
+	culture = salt_dornish
+	coat_of_arms = {	# I gave him one of prettiest Rand's CoAs so he would have round shield like the rest of the Dorne. If he'll write to me i'll be happy to give him the one of his choice  ~Kuczaja
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 72
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+450005 = {
+   name="Миншелл"
+	culture = stormlander	
+	used_for_random=no
+	can_appear=no
+}
+450006 = {
+   name="Гослинг"
+   culture = riverlander
+}
+450008 = {
+	name = "Хамилтон"
+	culture = northman
+}
+450010 = {
+	name = "Албанес"
+	culture = riverlander
+	used_for_random=no
+	can_appear=no
+}
+4500015 = {
+	name = "Трент"
+	culture = northman
+}
+45000150 = {
+	name = "Ноян"
+	culture = riverlander
+}
+45000156 = {
+	name="Греймарч"
+    culture = westerman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 13
+			texture_internal = 45
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+45000170 = {
+	name="Пандред"
+   	culture = reachman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 7
+			texture_internal = 71
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	used_for_random=no
+	can_appear=no
+}
+4500001 = {
+	name="Клохесси"
+   	culture = reachman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 7
+			texture_internal = 78
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+4500002 = {	
+	name="Пурпурносердечный"
+	culture = reachman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 7
+			texture_internal = 79
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}	
+982383 = {
+	name = "Лоч"
+	culture = reachman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 7
+			texture_internal = 84
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+###AAR Winners###
+10000 = { #EtzelHoveri
+	name="Бадикс"
+	culture=valeman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 32
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	used_for_random=no
+	can_appear=no
+}
+10001 = { #Nicholias
+	name="Саул"
+	culture=valeman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 33
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+10002 = { #Andarias
+	name="Бак"
+	culture=valeman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 31
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+#2nd Winners#
+10003 = { #Jimthepocket
+	name="Валкин"
+	culture = hedge
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 19
+			texture_internal = 43
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+10004 = { #Deaghaidh
+	name="Дея"
+	culture = hedge
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 19
+			texture_internal = 41
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+10008 = { #Kingslayer 
+	name="Даркхолм" #A yellow tiger on a green and red background
+	culture = hedge
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 19
+			texture_internal = 42
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+10009 = { #Pande 
+	name="Грамматон"
+	culture = hedge
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 19
+			texture_internal = 40
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+#NW
+10005 = { #Blackbishop (NW)
+	name="Блэк"
+	culture = hedge
+}
+10006 = { #cyrileom (NW)
+	name="Кёнигт"
+	culture = hedge
+}
+10007 = { #xoatl (NW)
+	name="Даемхрус"
+	culture = hedge
+}
+10010 = { #Gogkti  (NW)
+	name="Дроувелл"
+	culture=sand_dornish
+}
+10011 = { #KaiserBenjamin (NW)
+	name="Дюрант"
+	culture = hedge
+}
+
+### 3rd AAR Competition
+# 1st place
+982375 = { #AlfredtheLion 
+	name="Вунатис"
+	culture = lysene
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 7
+			texture_internal = 81
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+
+982376 = {
+	name="Бэггинс"
+	culture = reachman
+}
+982377 = {
+	name="Желязны"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 19
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	used_for_random=no
+	can_appear=no
+}
+982380 = {
+	name="Фахрейус"
+	culture = ironborn
+	used_for_random=no
+	can_appear=no
+}
+982381 = {
+	name="Андерссон"
+	culture = ironborn
+	used_for_random=no
+	can_appear=no
+}
+982382 = {
+	name="Гроан"
+	culture = reachman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 7
+			texture_internal = 49
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	can_appear=no
+}

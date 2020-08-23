@@ -1,0 +1,20 @@
+name = "Восстание Скагоса"
+
+casus_belli={
+	casus_belli=bid_for_independence
+	actor=5104
+	recipient=24059
+	#landed_title=k_north
+	date=8195.1.1
+}
+
+8195.1.1 = {
+	add_defender = 24059
+	add_attacker = 5104 # Lord Magnar
+}
+
+8195.6.1 = {
+	rem_defender = 24059
+	rem_attacker= 5104 # Lord Magnar
+}
+                                                                                                                                                                                                                                                                                                                   

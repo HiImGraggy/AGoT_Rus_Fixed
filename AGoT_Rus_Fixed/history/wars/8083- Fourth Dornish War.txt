@@ -1,0 +1,21 @@
+#war triggered in Morion Martell's history entry (dorne_ancestors.txt, ID:36001)
+
+# name = "Четвертая Дорнийская война"
+
+# casus_belli={
+	# casus_belli=invasion_ambition
+	# actor=36001
+	# recipient=77006
+	# landed_title=d_cape_wrath
+	# date=8083.5.29
+# }
+
+# 8083.5.29 = {
+	# add_defender = 77006 #Jaehaerys I
+	# add_attacker = 36001 #Morion Martell
+# }
+
+# 8083.6.1 = {
+	# rem_defender = 77006 #Jaehaerys I
+	# rem_attacker= 36001 #Morion Martell
+# }

@@ -1,0 +1,4312 @@
+#############################
+### Major Merchant Houses ###
+#############################
+### House Rhegan
+344174355 = {
+	name="Паранис"	# a lord
+	dynasty=174355
+
+	religion="rhllor"
+	culture="myrman"
+
+	7821.1.1 = {birth="7821.1.1"}
+	7879.1.1 = {death="7879.1.1"}
+}
+343174355 = {
+	name="Хорио"	# a lord
+	dynasty=174355
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=344174355
+
+	7845.1.1 = {birth="7845.1.1"}
+	7902.1.1 = {death="7902.1.1"}
+}
+342174355 = {
+	name="Тормо"	# a lord
+	dynasty=174355
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=343174355
+
+	7871.1.1 = {birth="7871.1.1"}
+	7925.1.1 = {death="7925.1.1"}
+}
+341174355 = {
+	name="Мирмелло"	# a lord
+	dynasty=174355
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=342174355
+
+	7894.1.1 = {birth="7894.1.1"}
+	7949.1.1 = {death="7949.1.1"}
+}
+340174355 = {
+	name="Салассор"	# a lord
+	dynasty=174355
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=341174355
+
+	7918.1.1 = {birth="7918.1.1"}
+	7970.1.1 = {death="7970.1.1"}
+}
+150174355 = {
+	name="Тагганаро"	# a lord
+	dynasty=174355
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=340174355
+
+	7943.1.1 = {birth="7943.1.1"}
+	8021.1.1 = {death="8021.1.1"}
+}
+100174355 = {
+	name="Торос"	# a lord
+	dynasty=174355
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=150174355
+
+	7984.1.1 = {birth="7984.1.1"}
+	8027.1.1 = {add_trait=poor_warrior}
+	8056.1.1 = {death="8056.1.1"}
+}
+101174355 = {
+	name="Тагганаро"	# a lord
+	dynasty=174355
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=100174355
+
+	8039.1.1 = {birth="8039.1.1"}
+	8055.1.1 = {add_trait=poor_warrior}
+	8082.1.1 = {death="8082.1.1"}
+}
+102174355 = {
+	name="Гилено"	# a lord
+	dynasty=174355
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=101174355
+
+	8062.1.1 = {birth="8062.1.1"}
+	8078.1.1 = {add_trait=poor_warrior}
+	8104.1.1 = {death="8104.1.1"}
+}
+106174355 = {
+	name="Терро"	# a lord
+	dynasty=174355
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=102174355
+
+	8092.1.1 = {birth="8092.1.1"}
+	8108.1.1 = {add_trait=trained_warrior}
+	8135.1.1 = {death = {death_reason = death_accident}}
+}
+109174355 = {
+	name="Денио"	# a lord
+	dynasty=174355
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=106174355
+
+	8120.1.1 = {birth="8120.1.1"}
+	8136.1.1 = {add_trait=poor_warrior}
+	8177.1.1 = {death = {death_reason = death_murder}}
+}
+115174355 = {
+	name="Меро"	# a lord
+	dynasty=174355
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=109174355
+
+	8149.1.1 = {birth="8149.1.1"}
+	8165.1.1 = {add_trait=poor_warrior}
+	8228.1.1 = {death="8228.1.1"}
+}
+119174355 = {
+	name="Торос"	# a lord
+	dynasty=174355
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=115174355
+
+	8174.1.1 = {birth="8174.1.1"}
+	8190.1.1 = {add_trait=poor_warrior}
+	8233.1.1 = {death="8233.1.1"}
+}
+120174355 = {
+	name="Мералин"	# not a lord
+	dynasty=174355
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=115174355
+
+	8176.1.1 = {birth="8176.1.1"}
+	8192.1.1 = {add_trait=trained_warrior}
+	8230.1.1 = {death="8230.1.1"}
+}
+121174355 = {
+	name="Бегго"	# a lord
+	dynasty=174355
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=119174355
+
+	8199.1.1 = {birth="8199.1.1"}
+	8215.1.1 = {add_trait=poor_warrior}
+	8217.1.1 = {add_spouse=221174355}
+	8258.1.1 = {death="8258.1.1"}
+}
+221174355 = {
+	name="Терриос"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8199.1.1 = {birth="8199.1.1"}
+	8258.1.1 = {death="8258.1.1"}
+}
+126174355 = {
+	name="Якея"	# not a lord
+	female=yes
+	dynasty=174355
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=120174355
+
+	8197.1.1 = {birth="8197.1.1"}
+	8277.1.1 = {death="8277.1.1"}
+}
+127174355 = {
+	name="Фэй"	# not a lord
+	female=yes
+	dynasty=174355
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=120174355
+
+	8198.1.1 = {birth="8198.1.1"}
+	8271.1.1 = {death="8271.1.1"}
+}
+130174355 = {
+	name="Даарио"	# a lord
+	dynasty=174355
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=121174355
+	mother=221174355
+
+	8224.1.1 = {birth="8224.1.1"}
+	8240.1.1 = {add_trait=skilled_warrior}
+	8242.1.1 = {add_spouse=230174355}
+	8288.1.1 = {death="8288.1.1"}
+}
+# Гило Rhegan is in Merc_Companies.txt
+# Set up to be son of Даарио Rhegan
+
+230174355 = {
+	name="Нарба"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8224.1.1 = {birth="8224.1.1"}
+	8288.1.1 = {death="8288.1.1"}
+}
+131174355 = {
+	name="Терриос"	# not a lord
+	female=yes
+	dynasty=174355
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=121174355
+	mother=221174355
+
+	8226.1.1 = {birth="8226.1.1"}
+	8257.1.1 = {death="8257.1.1"}
+}
+134174355 = {
+	name="Гролео"	# a lord
+	dynasty=174355
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=130174355
+	mother=230174355
+
+	8245.1.1 = {birth="8245.1.1"}
+	8261.1.1 = {add_trait=poor_warrior}
+}
+135174355 = {
+	name="Изембаро"	# not a lord
+	dynasty=174355
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=130174355
+	mother=230174355
+
+	8248.1.1 = {birth="8248.1.1"}
+	8264.1.1 = {add_trait=poor_warrior}
+	8288.1.1 = {death="8288.1.1"}
+}
+136174355 = {
+	name="Варис"	# not a lord
+	dynasty=174355
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=130174355
+	mother=230174355
+
+	8250.1.1 = {birth="8250.1.1"}
+	8266.1.1 = {add_trait=skilled_warrior}
+	8267.1.1 = {death="8267.1.1"}
+}
+
+### House Trellos
+344300525 = {
+	name="Йорео"	# a lord
+	dynasty=300525
+
+	religion="rhllor"
+	culture="myrman"
+
+	7836.1.1 = {birth="7836.1.1"}
+	7898.1.1 = {death="7898.1.1"} #dov
+}
+343300525 = {
+	name="Вирано"	# a lord
+	dynasty=300525
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=344300525
+
+	7861.1.1 = {birth="7861.1.1"}
+	7919.1.1 = {death="7919.1.1"}
+}
+342300525 = {
+	name="Яран"	# a lord
+	dynasty=300525
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=343300525
+
+	7888.1.1 = {birth="7888.1.1"}
+	7944.1.1 = {death="7944.1.1"}
+}
+341300525 = {
+	name="Билан"	# a lord
+	dynasty=300525
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=342300525
+
+	7912.1.1 = {birth="7912.1.1"}
+	7966.1.1 = {death="7966.1.1"}
+}
+340300525 = {
+	name="Гилло"	# a lord
+	dynasty=300525
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=341300525
+
+	7940.1.1 = {birth="7940.1.1"}
+	7970.1.1 = {death="7970.1.1"}
+}
+150300525 = {
+	name="Моредо"	# a lord
+	dynasty=300525
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=340300525
+
+	7962.1.1 = {birth="7962.1.1"}
+	8023.1.1 = {death="8023.1.1"}
+}
+100300525 = {
+	name="Гилоно"	# a lord
+	dynasty=300525
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=150300525
+
+	7992.1.1 = {birth="7992.1.1"}
+	8019.1.1 = {add_trait=poor_warrior}
+	8042.1.1 = {death="8042.1.1"}
+}
+101300525 = {
+	name="Пинто"	# a lord
+	dynasty=300525
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=100300525
+
+	8021.1.1 = {birth="8021.1.1"}
+	8047.1.1 = {add_trait=poor_warrior}
+	8082.1.1 = {death = {death_reason = death_accident}}
+}
+102300525 = {
+	name="Пинто"	# a lord
+	dynasty=300525
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=101300525
+
+	8049.1.1 = {birth="8049.1.1"}
+	8065.1.1 = {add_trait=poor_warrior}
+	8087.1.1 = {death="8087.1.1"}
+}
+103300525 = {
+	name="Сирио"	# not a lord
+	dynasty=300525
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=101300525
+
+	8050.1.1 = {birth="8050.1.1"}
+	8066.1.1 = {add_trait=trained_warrior}
+	8109.1.1 = {death="8109.1.1"}
+}
+104300525 = {
+	name="Рогга"	# a lord
+	female=yes
+	dynasty=300525
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=103300525
+
+	8083.1.1 = {birth="8083.1.1"}
+	8133.1.1 = {death="8133.1.1"}
+}
+105300525 = {
+	name="Мирмелло"	# not a lord
+	dynasty=300525
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=103300525
+
+	8084.1.1 = {birth="8084.1.1"}
+	8113.1.1 = {death = {death_reason = death_murder}}
+}
+108300525 = {
+	name="Сирио"	# a lord
+	dynasty=300525
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=105300525
+
+	8111.1.1 = {birth="8111.1.1"}
+	8127.1.1 = {add_trait=trained_warrior}
+	8153.1.1 = {death="8153.1.1"}
+}
+110300525 = {
+	name="Орделло"	# a lord
+	dynasty=300525
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=108300525
+
+	8144.1.1 = {birth="8144.1.1"}
+	8160.1.1 = {add_trait=skilled_warrior}
+	8196.1.1 = {death="8196.1.1"}
+}
+115300525 = {
+	name="Ланна"	# a lord
+	female=yes
+	dynasty=300525
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=110300525
+
+	8167.1.1 = {birth="8167.1.1"}
+	8211.1.1 = {death="8211.1.1"}
+}
+215300525 = {
+	name="Бруско"
+
+	religion="rhllor"
+	culture="myrman"
+
+	8167.1.1 = {birth="8167.1.1"}
+	8183.1.1 = {add_trait=poor_warrior}
+	8185.1.1 = {add_spouse=115300525}
+	8211.1.1 = {death="8211.1.1"}
+}
+117300525 = {
+	name="Меро"	# a lord
+	dynasty=300525
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=215300525
+	mother=115300525
+
+	8202.1.1 = {birth="8202.1.1"}
+	8218.1.1 = {add_trait=poor_warrior}
+	8220.1.1 = {add_spouse=217300525}
+	8251.1.1 = {death="8251.1.1"}
+}
+217300525 = {
+	name="Мирмеллиос"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8202.1.1 = {birth="8202.1.1"}
+	8251.1.1 = {death="8251.1.1"}
+}
+118300525 = {
+	name="Дорея"	# not a lord
+	female=yes
+	dynasty=300525
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=117300525
+	mother=217300525
+
+	8226.1.1 = {birth="8226.1.1"}
+	8269.1.1 = {death="8269.1.1"}
+}
+119300525 = {
+	name="Брея"	# not a lord
+	female=yes
+	dynasty=300525
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=117300525
+	mother=217300525
+
+	8229.1.1 = {birth="8229.1.1"}
+	8280.1.1 = {death="8280.1.1"}
+}
+120300525 = {
+	name="Гилоро"	# a lord
+	dynasty=300525
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=117300525
+	mother=217300525
+
+	8230.1.1 = {birth="8230.1.1"}
+	8246.1.1 = {add_trait=trained_warrior}
+	8248.1.1 = {add_spouse=220300525}
+	8285.1.1 = {death="8285.1.1"}
+}
+220300525 = {
+	name="Феррега"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8230.1.1 = {birth="8230.1.1"}
+	8285.1.1 = {death="8285.1.1"}
+}
+121300525 = {
+	name="Терро"	# a lord
+	dynasty=300525
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=120300525
+	mother=220300525
+
+	8253.1.1 = {birth="8253.1.1"}
+	8269.1.1 = {add_trait=poor_warrior}
+}
+122300525 = {
+	name="Лото"	# not a lord
+	dynasty=300525
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=120300525
+	mother=220300525
+
+	8254.1.1 = {birth="8254.1.1"}
+	8270.1.1 = {add_trait=trained_warrior}
+}
+123300525 = {
+	name="Феррега"	# not a lord
+	female=yes
+	dynasty=300525
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=120300525
+	mother=220300525
+
+	8256.1.1 = {birth="8256.1.1"}
+}
+124300525 = {
+	name="Рогга"	# not a lord
+	female=yes
+	dynasty=300525
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=120300525
+	mother=220300525
+
+	8259.1.1 = {birth="8259.1.1"}
+	8290.1.1 = {death="8290.1.1"}
+}
+125300525 = {
+	name="Феррего"	# not a lord
+	dynasty=300525
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=120300525
+	mother=220300525
+
+	8262.1.1 = {birth="8262.1.1"}
+	8278.1.1 = {add_trait=poor_warrior}
+}
+
+### House Lornel
+344300516 = {
+	name="Заарио"	# a lord
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+
+	7825.1.1 = {birth="7825.1.1"}
+	7882.1.1 = {death="7882.1.1"}
+}
+343300516 = {
+	name="Баллош"	# a lord
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=344300516
+
+	7848.1.1 = {birth="7848.1.1"}
+	7912.1.1 = {death="7912.1.1"}
+}
+342300516 = {
+	name="Ирричо"	# a lord
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=343300516
+
+	7876.1.1 = {birth="7876.1.1"}
+	7928.1.1 = {death="7928.1.1"}
+}
+341300516 = {
+	name="Трегис"	# a lord
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=342300516
+
+	7900.1.1 = {birth="7900.1.1"}
+	7953.1.1 = {death="7953.1.1"}
+}
+340300516 = {
+	name="Тиссано"	# a lord
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=341300516
+
+	7924.1.1 = {birth="7924.1.1"}
+	7976.1.1 = {death="7976.1.1"}
+}
+150300516 = {
+	name="Белекво"	# a lord
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=340300516
+
+	7957.1.1 = {birth="7957.1.1"}
+	8023.1.1 = {death="8023.1.1"}
+}
+100300516 = {
+	name="Вогарро"	# a lord
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=150300516
+
+	7981.1.1 = {birth="7981.1.1"}
+	8017.1.1 = {add_trait=poor_warrior}
+	8062.1.1 = {death="8062.1.1"}
+}
+103300516 = {
+	name="Арео"	# a lord
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=100300516
+
+	8026.1.1 = {birth="8026.1.1"}
+	8042.1.1 = {add_trait=trained_warrior}
+	8081.1.1 = {death="8081.1.1"}
+}
+104300516 = {
+	name="Орделло"	# not a lord
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=100300516
+
+	8028.1.1 = {birth="8028.1.1"}
+	8044.1.1 = {add_trait=poor_warrior}
+	8069.1.1 = {death="8069.1.1"}
+}
+109300516 = {
+	name="Терро"	# a lord
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=104300516
+
+	8055.1.1 = {birth="8055.1.1"}
+	8071.1.1 = {add_trait=skilled_warrior}
+	8075.1.1 = {death="8075.1.1"}
+}
+111300516 = {
+	name="Меро"	# a lord
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=104300516
+
+	8057.1.1 = {birth="8057.1.1"}
+	8073.1.1 = {add_trait=trained_warrior}
+	8105.1.1 = {death="8105.1.1"}
+}
+112300516 = {
+	name="Меро"	# Leader of Three Daughters
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=104300516
+
+	8060.1.1 = {birth="8060.1.1"}
+	8114.1.1 = {death="8114.1.1"}
+}
+113300516 = {
+	name="Коссомо"	# a lord
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=111300516
+
+	8076.1.1 = {birth="8076.1.1"}
+	8092.1.1 = {add_trait=poor_warrior}
+	8133.1.1 = {death="8133.1.1"}
+}
+115300516 = {
+	name="Тормо"	# a lord
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=113300516
+
+	8103.1.1 = {birth="8103.1.1"}
+	8119.1.1 = {add_trait=poor_warrior}
+	8144.1.1 = {death="8144.1.1"}
+}
+118300516 = {
+	name="Нарбо"	# a lord
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=115300516
+
+	8138.1.1 = {birth="8138.1.1"}
+	8154.1.1 = {add_trait=skilled_warrior}
+	8182.1.1 = {death="8182.1.1"}
+}
+121300516 = {
+	name="Морео"	# a lord
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=118300516
+
+	8159.1.1 = {birth="8159.1.1"}
+	8175.1.1 = {add_trait=trained_warrior}
+	8217.1.1 = {death="8217.1.1"}
+}
+126300516 = {
+	name="Коссомо"	# a lord
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=121300516
+
+	8179.1.1 = {birth="8179.1.1"}
+	8195.1.1 = {add_trait=poor_warrior}
+	8229.1.1 = {death="8229.1.1"}
+}
+127300516 = {
+	name="Кварро"	# not a lord
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=121300516
+
+	8182.1.1 = {birth="8182.1.1"}
+	8198.1.1 = {add_trait=poor_warrior}
+	8200.1.1 = {add_spouse=227300516}
+	8236.1.1 = {death="8236.1.1"}
+}
+227300516 = {
+	name="Талея"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8182.1.1 = {birth="8182.1.1"}
+	8236.1.1 = {death="8236.1.1"}
+}
+132300516 = {
+	name="Серенея"	# not a lord
+	female=yes
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=127300516
+	mother=227300516
+
+	8215.1.1 = {birth="8215.1.1"}
+	8269.1.1 = {death="8269.1.1"}
+}
+133300516 = {
+	name="Терро"	# a lord
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=127300516
+	mother=227300516
+
+	8216.1.1 = {birth="8216.1.1"}
+	8232.1.1 = {add_trait=skilled_warrior}
+	8234.1.1 = {add_spouse=233300516}
+	8269.1.1 = {death="8269.1.1"}
+}
+233300516 = {
+	name="Беллегера"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8216.1.1 = {birth="8216.1.1"}
+	8269.1.1 = {death="8269.1.1"}
+}
+134300516 = {
+	name="Трегар"	# not a lord
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=127300516
+	mother=227300516
+
+	8217.1.1 = {birth="8217.1.1"}
+	8233.1.1 = {add_trait=skilled_warrior}
+	8235.1.1 = {add_spouse=234300516}
+	8265.1.1 = {death="8265.1.1"}
+}
+234300516 = {
+	name="Мералия"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8217.1.1 = {birth="8217.1.1"}
+	8265.1.1 = {death="8265.1.1"}
+}
+135300516 = {
+	name="Гролео"	# a lord
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=133300516
+	mother=233300516
+
+	8240.1.1 = {birth="8240.1.1"}
+	8256.1.1 = {add_trait=poor_warrior}
+	8258.1.1 = {add_spouse=235300516}
+	8290.1.1 = {death="8290.1.1"}
+}
+235300516 = {
+	name="Дорея"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8240.1.1 = {birth="8240.1.1"}
+	8290.1.1 = {death="8290.1.1"}
+}
+136300516 = {
+	name="Ланна"	# not a lord
+	female=yes
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=133300516
+	mother=233300516
+
+	8243.1.1 = {birth="8243.1.1"}
+}
+137300516 = {
+	name="Варис"	# not a lord
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=133300516
+	mother=233300516
+
+	8245.1.1 = {birth="8245.1.1"}
+	8261.1.1 = {add_trait=trained_warrior}
+}
+138300516 = {
+	name="Рогго"	# a lord
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=135300516
+	mother=235300516
+
+	8264.1.1 = {birth="8264.1.1"}
+	8280.1.1 = {add_trait=trained_warrior}
+}
+139300516 = {
+	name="Серенея"	# not a lord
+	female=yes
+	dynasty=300516
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=135300516
+	mother=235300516
+
+	8266.1.1 = {birth="8266.1.1"}
+}
+
+### House Uteuran
+344300534 = {
+	name="Гарос"	# a lord
+	dynasty=300534
+
+	religion="rhllor"
+	culture="myrman"
+
+	7820.1.1 = {birth="7820.1.1"}
+	7878.1.1 = {death="7878.1.1"}
+}
+343300534 = {
+	name="Адарос"	# a lord
+	dynasty=300534
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=344300534
+
+	7852.1.1 = {birth="7852.1.1"}
+	7911.1.1 = {death="7911.1.1"}
+}
+342300534 = {
+	name="Ариос"	# a lord
+	dynasty=300534
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=343300534
+
+	7876.1.1 = {birth="7876.1.1"}
+	7931.1.1 = {death="7931.1.1"}
+}
+341300534 = {
+	name="Ларис"	# a lord
+	dynasty=300534
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=342300534
+
+	7902.1.1 = {birth="7902.1.1"}
+	7953.1.1 = {death="7953.1.1"}
+}
+340300534 = {
+	name="Борос"	# a lord
+	dynasty=300534
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=341300534
+
+	7924.1.1 = {birth="7924.1.1"}
+	7966.1.1 = {death="7966.1.1"}
+}
+150300534 = {
+	name="Тихо"	# a lord
+	dynasty=300534
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=340300534
+	
+	7952.1.1 = {birth="7952.1.1"}
+	8020.1.1 = {death="8020.1.1"}
+}
+100300534 = {
+	name="Моллок"	# a lord
+	dynasty=300534
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=150300534
+
+	7985.1.1 = {birth="7985.1.1"}
+	8020.1.1 = {add_trait=poor_warrior}
+	8053.1.1 = {death="8053.1.1"}
+}
+103300534 = {
+	name="Изембаро"	# a lord
+	dynasty=300534
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=100300534
+
+	8035.1.1 = {birth="8035.1.1"}
+	8051.1.1 = {add_trait=skilled_warrior}
+	8091.1.1 = {death="8091.1.1"}
+}
+105300534 = {
+	name="Моредо"	# a lord
+	dynasty=300534
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=103300534
+
+	8056.1.1 = {birth="8056.1.1"}
+	8072.1.1 = {add_trait=trained_warrior}
+	8130.1.1 = {death="8130.1.1"}
+}
+111300534 = {
+	name="Орделло"	# a lord
+	dynasty=300534
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=105300534
+
+	8088.1.1 = {birth="8088.1.1"}
+	8104.1.1 = {add_trait=trained_warrior}
+	8140.1.1 = {death="8140.1.1"}
+}
+113300534 = {
+	name="Даарио"	# a lord
+	dynasty=300534
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=111300534
+
+	8109.1.1 = {birth="8109.1.1"}
+	8125.1.1 = {add_trait=poor_warrior}
+	8147.1.1 = {death = {death_reason = death_murder}}
+}
+117300534 = {
+	name="Феррего"	# a lord
+	dynasty=300534
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=113300534
+
+	8137.1.1 = {birth="8137.1.1"}
+	8153.1.1 = {add_trait=poor_warrior}
+	8207.1.1 = {death="8207.1.1"}
+}
+121300534 = {
+	name="Пинто"	# a lord
+	dynasty=300534
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=117300534
+
+	8164.1.1 = {birth="8164.1.1"}
+	8180.1.1 = {add_trait=master_warrior}
+	8235.1.1 = {death="8235.1.1"}
+}
+123300534 = {
+	name="Баян"	# a lord
+	dynasty=300534
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=121300534
+
+	8193.1.1 = {birth="8193.1.1"}
+	8209.1.1 = {add_trait=poor_warrior}
+	8211.1.1 = {add_spouse=223300534}
+	8253.1.1 = {death="8253.1.1"}
+}
+223300534 = {
+	name="Серра"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8193.1.1 = {birth="8193.1.1"}
+	8253.1.1 = {death="8253.1.1"}
+}
+126300534 = {
+	name="Коллио"	# a lord
+	dynasty=300534
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=123300534
+	mother=223300534
+
+	8219.1.1 = {birth="8219.1.1"}
+	8235.1.1 = {add_trait=trained_warrior}
+	8237.1.1 = {add_spouse=226300534}
+	8262.1.1 = {death="8262.1.1"}
+}
+226300534 = {
+	name="Алия"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8219.1.1 = {birth="8219.1.1"}
+	8262.1.1 = {death="8262.1.1"}
+}
+127300534 = {
+	name="Джосс"	# not a lord
+	dynasty=300534
+
+	religion="rhllor"
+	culture="myrman"
+	
+	add_trait = ambitious
+
+	father=123300534
+	mother=223300534
+
+	8220.1.1 = {birth="8220.1.1"}
+	8236.1.1 = {add_trait=poor_warrior}
+	8274.1.1 = {death="8274.1.1"}
+}
+128300534 = {
+	name="Орбела"	# not a lord
+	female=yes
+	dynasty=300534
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=123300534
+	mother=223300534
+
+	8221.1.1 = {birth="8221.1.1"}
+	8282.1.1 = {death="8282.1.1"}
+}
+129300534 = {
+	name="Коссома"	# not a lord
+	female=yes
+	dynasty=300534
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=126300534
+	mother=226300534
+
+	8252.1.1 = {birth="8252.1.1"}
+	8294.1.1 = {death = {death_reason = death_murder}}
+}
+130300534 = {
+	name="Феррего"	# a lord
+	dynasty=300534
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=126300534
+	mother=226300534
+
+	8255.1.1 = {birth="8255.1.1"}
+	8271.1.1 = {add_trait=poor_warrior}
+}
+131300534 = {
+	name="Серра"	# not a lord
+	female=yes
+	dynasty=300534
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=126300534
+	mother=226300534
+
+	8258.1.1 = {birth="8258.1.1"}
+}
+132300534 = {
+	name="Гилено"	# not a lord
+	dynasty=300534
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=126300534
+	mother=226300534
+
+	8259.1.1 = {birth="8259.1.1"}
+	8275.1.1 = {death="8275.1.1"}
+}
+
+### House Drahar
+345300700 = {
+	name="Деметио"	# a lord
+	dynasty=300700
+
+	religion="rhllor"
+	culture="myrman"
+
+	7799.1.1 = {birth="7799.1.1"}
+	7860.1.1 = {death="7860.1.1"}
+}
+344300700 = {
+	name="Гарридос"	# a lord
+	dynasty=300700
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=345300700
+
+	7829.1.1 = {birth="7829.1.1"}
+	7902.1.1 = {death="7902.1.1"}
+}
+343300700 = {
+	name="Саллос"	# a lord
+	dynasty=300700
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=344300700
+
+	7851.1.1 = {birth="7851.1.1"}
+	7905.1.1 = {death="7905.1.1"}
+}
+342300700 = {
+	name="Каспорио"	# a lord
+	dynasty=300700
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=343300700
+
+	7877.1.1 = {birth="7877.1.1"}
+	7932.1.1 = {death="7932.1.1"}
+}
+341300700 = {
+	name="Даариус"	# a lord
+	dynasty=300700
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=342300700
+
+	7903.1.1 = {birth="7903.1.1"}
+	7950.1.1 = {death="7950.1.1"}
+}
+340300700 = {
+	name="Дракорос"	# a lord
+	dynasty=300700
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=341300700
+
+	7926.1.1 = {birth="7926.1.1"}
+	7977.1.1 = {death="7977.1.1"}
+}
+150300700 = {
+	name="Лазаарио"	# a lord
+	dynasty=300700
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=340300700
+
+	7958.1.1 = {birth="7958.1.1"}
+	8023.1.1 = {death="8023.1.1"}
+}
+100300700 = {
+	name="Изенбаро"	# a lord
+	dynasty=300700
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=150300700
+
+	7990.1.1 = {birth="7990.1.1"}
+	8022.1.1 = {add_trait=poor_warrior}
+	8075.1.1 = {death="8075.1.1"}
+}
+102300700 = {
+	name="Нохо"	# a lord
+	dynasty=300700
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=100300700
+
+	8027.1.1 = {birth="8027.1.1"}
+	8043.1.1 = {add_trait=trained_warrior}
+	8084.1.1 = {death="8084.1.1"}
+}
+103300700 = {
+	name="Крагас"	# a lord  ## Canon Craghaz Crabfeeder, ruler of the Triarchy
+	dynasty=300700
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=102300700
+	
+	add_trait = skilled_tactician
+	add_trait = ruthless
+	add_trait = greedy
+	add_trait = brave
+	
+	8060.1.1 = {birth="8060.1.1"}
+	8076.1.1 = {add_trait=master_warrior}
+	8097.1.1 = {give_nickname = nick_crabfeeder}
+	8108.11.11 = {
+		death = {
+			death_reason = death_duel
+			killer = 779496 # Daemon Targaryen
+		}
+	}
+}
+104300700 = {
+	name="Роро"	# a lord
+	dynasty=300700
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=103300700
+
+	8085.1.1 = {birth="8085.1.1"}
+	8101.1.1 = {add_trait=master_warrior}
+	8145.1.1 = {death="8145.1.1"}
+}
+108300700 = {
+	name="Эззелино"	# a lord
+	dynasty=300700
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=104300700
+
+	8106.1.1 = {birth="8106.1.1"}
+	8122.1.1 = {add_trait=trained_warrior}
+	8164.1.1 = {death="8164.1.1"}
+}
+109300700 = {
+	name="Тормо"	# not a lord
+	dynasty=300700
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=104300700
+
+	8109.1.1 = {birth="8109.1.1"}
+	8125.1.1 = {add_trait=trained_warrior}
+	8166.1.1 = {death="8166.1.1"}
+}
+111300700 = {
+	name="Оро"	# a lord
+	dynasty=300700
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=109300700
+
+	8137.1.1 = {birth="8137.1.1"}
+	8153.1.1 = {add_trait=poor_warrior}
+	8203.1.1 = {death="8203.1.1"}
+}
+115300700 = {
+	name="Коллио"	# a lord
+	dynasty=300700
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=111300700
+
+	8166.1.1 = {birth="8166.1.1"}
+	8182.1.1 = {add_trait=poor_warrior}
+	8224.1.1 = {death="8224.1.1"}
+}
+118300700 = {
+	name="Бегго"	# a lord
+	dynasty=300700
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=115300700
+
+	8188.1.1 = {birth="8188.1.1"}
+	8204.1.1 = {add_trait=trained_warrior}
+	8206.1.1 = {add_spouse=218300700}
+	8250.1.1 = {death="8250.1.1"}
+}
+218300700 = {
+	name="Талея"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8188.1.1 = {birth="8188.1.1"}
+	8250.1.1 = {death="8250.1.1"}
+}
+220300700 = {
+	name="Талея"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8194.1.1 = {birth="8194.1.1"}
+	8248.1.1 = {death="8248.1.1"}
+}
+122300700 = {
+	name="Мера"	# not a lord
+	female=yes
+	dynasty=300700
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=118300700
+	mother=218300700
+
+	8215.1.1 = {birth="8215.1.1"}
+	8281.1.1 = {death="8281.1.1"}
+}
+123300700 = {
+	name="Гролео"	# a lord
+	dynasty=300700
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=118300700
+	mother=218300700
+
+	8217.1.1 = {birth="8217.1.1"}
+	8233.1.1 = {add_trait=poor_warrior}
+	8235.1.1 = {add_spouse=223300700}
+	8280.1.1 = {death="8280.1.1"}
+}
+223300700 = {
+	name="Ланна"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8217.1.1 = {birth="8217.1.1"}
+	8280.1.1 = {death="8280.1.1"}
+}
+124300700 = {
+	name="Тейна"	# not a lord
+	female=yes
+	dynasty=300700
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=118300700
+	mother=218300700
+
+	8219.1.1 = {birth="8219.1.1"}
+	8261.1.1 = {death="8261.1.1"}
+}
+125300700 = {
+	name="Роро"	# a lord
+	dynasty=300700
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=123300700
+	mother=223300700
+
+	8248.1.1 = {birth="8248.1.1"}
+	8264.1.1 = {add_trait=poor_warrior}
+	8293.1.1 = {death = {death_reason = death_execution}}
+}
+126300700 = {
+	name="Торос"	# not a lord
+	dynasty=300700
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=123300700
+	mother=223300700
+
+	8251.1.1 = {birth="8251.1.1"}
+	8267.1.1 = {add_trait=skilled_warrior}
+	8269.1.1 = {add_spouse=226300700}
+	8293.1.1 = {death="8293.1.1"}
+}
+226300700 = {
+	name="Тиха"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8251.1.1 = {birth="8251.1.1"}
+	8293.1.1 = {death="8293.1.1"}
+}
+127300700 = {
+	name="Серенея"	# not a lord
+	female=yes
+	dynasty=300700
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=123300700
+	mother=223300700
+
+	8254.1.1 = {birth="8254.1.1"}
+	8272.1.1 = {death="8272.1.1"}
+}
+128300700 = {
+	name="Нарбо"	# a lord
+	dynasty=300700
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=126300700
+	mother=226300700
+
+	8277.1.1 = {birth="8277.1.1"}
+	8293.1.1 = {add_trait=poor_warrior}
+}
+129300700 = {
+	name="Коссомо"	# not a lord
+	dynasty=300700
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=126300700
+	mother=226300700
+
+	8280.1.1 = {birth="8280.1.1"}
+	8296.1.1 = {add_trait=poor_warrior}
+}
+
+###########################
+### Noble Feudal Houses ###
+########################### 
+### House Sordios
+345300702 = {
+	name="Роро"	# a lord
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+
+	7805.1.1 = {birth="7805.1.1"}
+	7859.1.1 = {death="7859.1.1"}
+}
+344300702 = {
+	name="Рогго"	# a lord
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=345300702
+
+	7832.1.1 = {birth="7832.1.1"}
+	7889.1.1 = {death="7889.1.1"}
+}
+343300702 = {
+	name="Салассор"	# a lord
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=344300702
+
+	7857.1.1 = {birth="7857.1.1"}
+	7910.1.1 = {death="7910.1.1"}
+}
+342300702 = {
+	name="Вирано"	# a lord
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=343300702
+
+	7881.1.1 = {birth="7881.1.1"}
+	7933.1.1 = {death="7933.1.1"}
+}
+341300702 = {
+	name="Тернесио"	# a lord
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=342300702
+
+	7905.1.1 = {birth="7905.1.1"}
+	7961.1.1 = {death="7961.1.1"}
+}
+340300702 = {
+	name="Каспорио"	# a lord
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=341300702
+
+	7931.1.1 = {birth="7931.1.1"}
+	7995.1.1 = {death="7995.1.1"}
+}
+
+100300702 = {
+	name="Йорко"	# a lord
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=340300702
+
+	7958.1.1 = {birth="7958.1.1"}
+	7974.1.1 = {add_trait=poor_warrior}
+	8036.1.1 = {death="8036.1.1"}
+}
+102300702 = {
+	name="Эззелино"	# a lord
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=100300702
+
+	7980.1.1 = {birth="7980.1.1"}
+	7996.1.1 = {add_trait=poor_warrior}
+	8043.1.1 = {death="8043.1.1"}
+}
+106300702 = {
+	name="Тормо"	# a lord
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=102300702
+
+	7999.1.1 = {birth="7999.1.1"}
+	8015.1.1 = {add_trait=poor_warrior}
+	8062.1.1 = {death="8062.1.1"}
+}
+110300702 = {
+	name="Бруско"	# a lord
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=106300702
+
+	8030.1.1 = {birth="8030.1.1"}
+	8046.1.1 = {add_trait=skilled_warrior}
+	8071.1.1 = {death="8071.1.1"}
+}
+114300702 = {
+	name="Тормо"	# a lord
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=110300702
+
+	8049.1.1 = {birth="8049.1.1"}
+	8065.1.1 = {add_trait=poor_warrior}
+	8110.1.1 = {death="8110.1.1"}
+}
+118300702 = {
+	name="Кварро"	# a lord
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=114300702
+
+	8075.1.1 = {birth="8075.1.1"}
+	8091.1.1 = {add_trait=master_warrior}
+	8133.1.1 = {death="8133.1.1"}
+}
+120300702 = {
+	name="Изембаро"	# a lord
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=118300702
+
+	8095.1.1 = {birth="8095.1.1"}
+	8111.1.1 = {add_trait=trained_warrior}
+	8146.1.1 = {death="8146.1.1"}
+}
+123300702 = {
+	name="Оро"	# a lord
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=120300702
+
+	8124.1.1 = {birth="8124.1.1"}
+	8140.1.1 = {add_trait=skilled_warrior}
+	8198.1.1 = {death="8198.1.1"}
+}
+126300702 = {
+	name="Эззелино"	# a lord
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=123300702
+
+	8156.1.1 = {birth="8156.1.1"}
+	8172.1.1 = {add_trait=skilled_warrior}
+	8216.1.1 = {death = {death_reason = death_accident}}
+}
+132300702 = {
+	name="Арео"	# a lord
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=126300702
+
+	8186.1.1 = {birth="8186.1.1"}
+	8202.1.1 = {add_trait=poor_warrior}
+	8238.1.1 = {death="8238.1.1"}
+}
+134300702 = {
+	name="Роро"	# a lord
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=132300702
+
+	8211.1.1 = {birth="8211.1.1"}
+	8227.1.1 = {add_trait=poor_warrior}
+	8229.1.1 = {add_spouse=234300702}
+	8257.1.1 = {death="8257.1.1"}
+}
+234300702 = {
+	name="Беллегера"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8211.1.1 = {birth="8211.1.1"}
+	8257.1.1 = {death="8257.1.1"}
+}
+135300702 = {
+	name="Нохо"	# a lord
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=134300702
+	mother=234300702
+
+	8240.1.1 = {birth="8240.1.1"}
+	8256.1.1 = {add_trait=poor_warrior}
+	8258.1.1 = {add_spouse=235300702}
+	8271.1.1 = {death="8271.1.1"}
+}
+235300702 = {
+	name="Мирмеллиос"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8240.1.1 = {birth="8240.1.1"}
+	8271.1.1 = {death="8271.1.1"}
+}
+136300702 = {
+	name="Серала"	# not a lord
+	female=yes
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=134300702
+	mother=234300702
+
+	8241.1.1 = {birth="8241.1.1"}
+	8290.1.1 = {death="8290.1.1"}
+}
+137300702 = {
+	name="Брея"	# not a lord
+	female=yes
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=134300702
+	mother=234300702
+
+	8242.1.1 = {birth="8242.1.1"}
+	8264.1.1 = {death="8264.1.1"}
+}
+138300702 = {
+	name="Гилоро"	# not a lord
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=134300702
+	mother=234300702
+
+	8244.1.1 = {birth="8244.1.1"}
+	8260.1.1 = {add_trait=poor_warrior}
+	8297.1.1 = {death="8297.1.1"}
+}
+139300702 = {
+	name="Лото"	# a lord
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=135300702
+	mother=235300702
+
+	8268.1.1 = {birth="8268.1.1"}
+	8284.1.1 = {add_trait=poor_warrior}
+	8286.1.1 = {add_spouse=239300702}
+}
+239300702 = {
+	name="Тернесия"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8268.1.1 = {birth="8268.1.1"}
+}
+140300702 = {
+	name="Моредея"	# not a lord
+	female=yes
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=135300702
+	mother=235300702
+
+	8270.1.1 = {birth="8270.1.1"}
+}
+141300702 = {
+	name="Арео"	# not a lord
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=139300702
+	mother=239300702
+
+	8294.1.1 = {birth="8294.1.1"}
+}
+142300702 = {
+	name="Моредо"	# not a lord
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=139300702
+	mother=239300702
+
+	8295.1.1 = {birth="8295.1.1"}
+}
+143300702 = {
+	name="Нарбо"	# not a lord
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=139300702
+	mother=239300702
+
+	8297.1.1 = {birth="8297.1.1"}
+}
+144300702 = {
+	name="Оро"	# not a lord
+	dynasty=300702
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=139300702
+	mother=239300702
+
+	8299.1.1 = {birth="8299.1.1"}
+}
+
+### House Albersan
+344300703 = {
+	name="Феррего"	# a lord
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+	
+	7828.1.1 = {birth="7828.1.1"}
+	7898.1.1 = {death="7898.1.1"} #dov
+}
+343300703 = {
+	name="Пинто"	# a lord
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=344300703
+	
+	7859.1.1 = {birth="7859.1.1"}
+	7921.1.1 = {death="7921.1.1"}
+}
+342300703 = {
+	name="Лазаарио"	# a lord
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=343300703
+	
+	7882.1.1 = {birth="7882.1.1"}
+	7945.1.1 = {death="7945.1.1"}
+}
+341300703 = {
+	name="Сирио"	# a lord
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=342300703
+	
+	7909.1.1 = {birth="7909.1.1"}
+	7966.1.1 = {death="7966.1.1"}
+}
+340300703 = {
+	name="Ариос"	# a lord
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=341300703
+	
+	7936.1.1 = {birth="7936.1.1"}
+	7995.1.1 = {death="7995.1.1"}
+}
+
+100300703 = {
+	name="Гилено"	# a lord
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=340300703
+
+	7960.1.1 = {birth="7960.1.1"}
+	7976.1.1 = {add_trait=poor_warrior}
+	8034.1.1 = {death="8034.1.1"}
+}
+110300703 = {
+	name="Изембаро"	# a lord
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=100300703
+
+	7980.1.1 = {birth="7980.1.1"}
+	7996.1.1 = {add_trait=skilled_warrior}
+	8040.1.1 = {death="8040.1.1"}
+}
+120300703 = {
+	name="Торос"	# a lord
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=110300703
+
+	8004.1.1 = {birth="8004.1.1"}
+	8020.1.1 = {add_trait=poor_warrior}
+	8078.1.1 = {death="8078.1.1"}
+}
+107300703 = {
+	name="Торос"	# a lord
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=120300703
+
+	8032.1.1 = {birth="8032.1.1"}
+	8048.1.1 = {add_trait=skilled_warrior}
+	8089.1.1 = {death="8089.1.1"}
+}
+111300703 = {
+	name="Эззелино"	# a lord
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=107300703
+
+	8050.1.1 = {birth="8050.1.1"}
+	8066.1.1 = {add_trait=trained_warrior}
+	8100.1.1 = {death="8100.1.1"}
+}
+112300703 = {
+	name="Морео"	# a lord
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=111300703
+
+	8075.1.1 = {birth="8075.1.1"}
+	8091.1.1 = {add_trait=poor_warrior}
+	8128.1.1 = {death="8128.1.1"}
+}
+113300703 = {
+	name="Морош"	# a lord
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=112300703
+
+	8109.1.1 = {birth="8109.1.1"}
+	8125.1.1 = {add_trait=poor_warrior}
+	8168.1.1 = {death="8168.1.1"}
+}
+115300703 = {
+	name="Меро"	# a lord
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=113300703
+
+	8138.1.1 = {birth="8138.1.1"}
+	8154.1.1 = {add_trait=trained_warrior}
+	8205.1.1 = {death="8205.1.1"}
+}
+156300703 = {
+	name="Арео"	# a lord
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=115300703
+
+	8176.1.1 = {birth="8176.1.1"}
+	8192.1.1 = {add_trait=trained_warrior}
+	8232.1.1 = {death="8232.1.1"}
+}
+121300703 = {
+	name="Джосс"	# a lord
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=156300703
+
+	8194.1.1 = {birth="8194.1.1"}
+	8210.1.1 = {add_trait=trained_warrior}
+	8212.1.1 = {add_spouse=221300703}
+	8268.1.1 = {death="8268.1.1"}
+}
+221300703 = {
+	name="Нохия"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8194.1.1 = {birth="8194.1.1"}
+	8268.1.1 = {death="8268.1.1"}
+}
+125300703 = {
+	name="Мирмелло"	# a lord
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=121300703
+	mother=221300703
+
+	8227.1.1 = {birth="8227.1.1"}
+	8243.1.1 = {add_trait=poor_warrior}
+	8245.1.1 = {add_spouse=225300703}
+	8273.1.1 = {death="8273.1.1"}
+}
+225300703 = {
+	name="Моредея"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8227.1.1 = {birth="8227.1.1"}
+	8273.1.1 = {death="8273.1.1"}
+}
+126300703 = {
+	name="Торос"	# not a lord
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=121300703
+	mother=221300703
+
+	8230.1.1 = {birth="8230.1.1"}
+	8246.1.1 = {add_trait=skilled_warrior}
+	8271.1.1 = {death="8271.1.1"}
+}
+127300703 = {
+	name="Феррега"	# not a lord
+	female=yes
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=121300703
+	mother=221300703
+
+	8232.1.1 = {birth="8232.1.1"}
+	8288.1.1 = {death="8288.1.1"}
+}
+128300703 = {
+	name="Талея"	# not a lord
+	female=yes
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=121300703
+	mother=221300703
+
+	8234.1.1 = {birth="8234.1.1"}
+	8286.1.1 = {death="8286.1.1"}
+}
+129300703 = {
+	name="Йорка"	# not a lord
+	female=yes
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=125300703
+	mother=225300703
+
+	8250.1.1 = {birth="8250.1.1"}
+}
+130300703 = {
+	name="Кварро"	# a lord
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=125300703
+	mother=225300703
+
+	8251.1.1 = {birth="8251.1.1"}
+	8267.1.1 = {add_trait=poor_warrior}
+	8269.1.1 = {add_spouse=230300703}
+	8292.1.1 = {death="8292.1.1"}
+}
+230300703 = {
+	name="Якея"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8251.1.1 = {birth="8251.1.1"}
+	8292.1.1 = {death="8292.1.1"}
+}
+131300703 = {
+	name="Аллакво"	# a lord
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=130300703
+	mother=230300703
+
+	8274.1.1 = {birth="8274.1.1"}
+	8290.1.1 = {add_trait=skilled_warrior}
+	8292.1.1 = {add_spouse=231300703}
+}
+231300703 = {
+	name="Торма"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8274.1.1 = {birth="8274.1.1"}
+}
+132300703 = {
+	name="Рогга"	# not a lord
+	female=yes
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=130300703
+	mother=230300703
+
+	8277.1.1 = {birth="8277.1.1"}
+}
+133300703 = {
+	name="Серала"	# not a lord
+	female=yes
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=130300703
+	mother=230300703
+
+	8278.1.1 = {birth="8278.1.1"}
+}
+134300703 = {
+	name="Иллирио"	# not a lord
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=130300703
+	mother=230300703
+
+	8279.1.1 = {birth="8279.1.1"}
+	8295.1.1 = {add_trait=poor_warrior}
+}
+135300703 = {
+	name="Мералин"	# not a lord
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=131300703
+	mother=231300703
+
+	8298.1.1 = {birth="8298.1.1"}
+}
+136300703 = {
+	name="Беллонара"	# not a lord
+	female=yes
+	dynasty=300703
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=131300703
+	mother=231300703
+
+	8299.1.1 = {birth="8299.1.1"}
+}
+
+### House Lavelos
+345300708 = {
+	name="Гило"	# a lord
+	dynasty=300708
+
+	religion="rhllor"
+	culture="myrman"
+	
+	7801.1.1 = {birth="7801.1.1"}
+	7865.1.1 = {death="7865.1.1"}
+}
+344300708 = {
+	name="Изембаро"	# a lord
+	dynasty=300708
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=345300708
+	
+	7825.1.1 = {birth="7825.1.1"}
+	7894.1.1 = {death="7894.1.1"}
+}
+343300708 = {
+	name="Иллирио"	# a lord
+	dynasty=300708
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=344300708
+	
+	7853.1.1 = {birth="7853.1.1"}
+	7930.1.1 = {death="7930.1.1"}
+}
+342300708 = {
+	name="Торос"	# a lord
+	dynasty=300708
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=343300708
+	
+	7878.1.1 = {birth="7878.1.1"}
+	7942.1.1 = {death="7942.1.1"}
+}
+341300708 = {
+	name="Заарио"	# a lord
+	dynasty=300708
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=342300708
+	
+	7911.1.1 = {birth="7911.1.1"}
+	7970.1.1 = {death="7970.1.1"}
+}
+340300708 = {
+	name="Лото"	# a lord
+	dynasty=300708
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=341300708
+	
+	7942.1.1 = {birth="7942.1.1"}
+	7995.1.1 = {death="7995.1.1"}
+}
+100300708 = {
+	name="Тернесио"	# a lord
+	dynasty=300708
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=340300708
+
+	7968.1.1 = {birth="7968.1.1"}
+	7984.1.1 = {add_trait=poor_warrior}
+	8043.1.1 = {death="8043.1.1"}
+}
+101300708 = {
+	name="Нарбо"	# a lord
+	dynasty=300708
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=100300708
+
+	7999.1.1 = {birth="7999.1.1"}
+	8015.1.1 = {add_trait=skilled_warrior}
+	8059.1.1 = {death="8059.1.1"}
+}
+104300708 = {
+	name="Трегар"	# a lord
+	dynasty=300708
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=101300708
+
+	8023.1.1 = {birth="8023.1.1"}
+	8039.1.1 = {add_trait=poor_warrior}
+	8081.1.1 = {death="8081.1.1"}
+}
+105300708 = {
+	name="Морош"	# a lord
+	dynasty=300708
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=104300708
+
+	8048.1.1 = {birth="8048.1.1"}
+	8064.1.1 = {add_trait=poor_warrior}
+	8091.1.1 = {death="8091.1.1"}
+}
+107300708 = {
+	name="Гролео"	# a lord
+	dynasty=300708
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=105300708
+
+	8076.1.1 = {birth="8076.1.1"}
+	8092.1.1 = {add_trait=skilled_warrior}
+	8119.1.1 = {death="8119.1.1"}
+}
+110300708 = {
+	name="Коллио"	# a lord
+	dynasty=300708
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=107300708
+
+	8096.1.1 = {birth="8096.1.1"}
+	8112.1.1 = {add_trait=trained_warrior}
+	8153.1.1 = {death="8153.1.1"}
+}
+112300708 = {
+	name="Феррего"	# a lord
+	dynasty=300708
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=110300708
+
+	8121.1.1 = {birth="8121.1.1"}
+	8137.1.1 = {add_trait=poor_warrior}
+	8164.1.1 = {death="8164.1.1"}
+}
+116300708 = {
+	name="Феррего"	# a lord
+	dynasty=300708
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=112300708
+
+	8156.1.1 = {birth="8156.1.1"}
+	8172.1.1 = {add_trait=poor_warrior}
+	8214.1.1 = {death="8214.1.1"}
+}
+121300708 = {
+	name="Феррего"	# a lord
+	dynasty=300708
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=116300708
+
+	8193.1.1 = {birth="8193.1.1"}
+	8209.1.1 = {add_trait=poor_warrior}
+	8211.1.1 = {add_spouse=221300708}
+	8248.1.1 = {death="8248.1.1"}
+}
+221300708 = {
+	name="Серенея"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8193.1.1 = {birth="8193.1.1"}
+	8248.1.1 = {death="8248.1.1"}
+}
+124300708 = {
+	name="Тернесио"	# a lord
+	dynasty=300708
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=121300708
+	mother=221300708
+
+	8220.1.1 = {birth="8220.1.1"}
+	8236.1.1 = {add_trait=skilled_warrior}
+	8238.1.1 = {add_spouse=224300708}
+	8266.1.1 = {death="8266.1.1"}
+}
+224300708 = {
+	name="Ланна"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8220.1.1 = {birth="8220.1.1"}
+	8266.1.1 = {death="8266.1.1"}
+}
+125300708 = {
+	name="Дорея"	# not a lord
+	female=yes
+	dynasty=300708
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=121300708
+	mother=221300708
+
+	8223.1.1 = {birth="8223.1.1"}
+	8278.1.1 = {death="8278.1.1"}
+}
+126300708 = {
+	name="Арео"	# not a lord
+	dynasty=300708
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=121300708
+	mother=221300708
+
+	8226.1.1 = {birth="8226.1.1"}
+	8242.1.1 = {add_trait=poor_warrior}
+}
+127300708 = {
+	name="Сфрона"	# not a lord
+	female=yes
+	dynasty=300708
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=121300708
+	mother=221300708
+
+	8229.1.1 = {birth="8229.1.1"}
+	8289.1.1 = {death="8289.1.1"}
+}
+128300708 = {
+	name="Йорко"	# a lord
+	dynasty=300708
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=124300708
+	mother=224300708
+
+	8246.1.1 = {birth="8246.1.1"}
+	8262.1.1 = {add_trait=skilled_warrior}
+	8267.1.1 = {death="8267.1.1"}
+}
+129300708 = {
+	name="Нарбо"	# a lord
+	dynasty=300708
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=124300708
+	mother=224300708
+
+	8247.1.1 = {birth="8247.1.1"}
+	8263.1.1 = {add_trait=trained_warrior}
+	8265.1.1 = {add_spouse=229300708}
+}
+229300708 = {
+	name="Алия"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8247.1.1 = {birth="8247.1.1"}
+}
+130300708 = {
+	name="Лото"	# not a lord
+	dynasty=300708
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=124300708
+	mother=224300708
+
+	8250.1.1 = {birth="8250.1.1"}
+	8266.1.1 = {add_trait=trained_warrior}
+}
+131300708 = {
+	name="Лото"	# not a lord
+	dynasty=300708
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=129300708
+	mother=229300708
+
+	8280.1.1 = {birth="8280.1.1"}
+	8296.1.1 = {add_trait=trained_warrior}
+}
+132300708 = {
+	name="Тиха"	# not a lord
+	female=yes
+	dynasty=300708
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=129300708
+	mother=229300708
+
+	8281.1.1 = {birth="8281.1.1"}
+}
+
+### House Saldorys
+344300706 = {
+	name="Йорео"	# a lord
+	dynasty=300706
+
+	religion="rhllor"
+	culture="myrman"
+
+	7827.1.1 = {birth="7827.1.1"}
+	7898.1.1 = {death="7898.1.1"} #dov
+}
+343300706 = {
+	name="Даариус"	# a lord
+	dynasty=300706
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=344300706
+
+	7851.1.1 = {birth="7851.1.1"}
+	7900.1.1 = {death="7900.1.1"}
+}
+342300706 = {
+	name="Коссомо"	# a lord
+	dynasty=300706
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=343300706
+
+	7878.1.1 = {birth="7878.1.1"}
+	7925.1.1 = {death="7925.1.1"}
+}
+341300706 = {
+	name="Деметио"	# a lord
+	dynasty=300706
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=342300706
+
+	7907.1.1 = {birth="7907.1.1"}
+	7954.1.1 = {death="7954.1.1"}
+}
+340300706 = {
+	name="Коссомо"	# a lord
+	dynasty=300706
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=341300706
+
+	7932.1.1 = {birth="7932.1.1"}
+	7990.1.1 = {death="7990.1.1"}
+}
+100300706 = {
+	name="Нохо"	# a lord
+	dynasty=300706
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=340300706
+
+	7957.1.1 = {birth="7957.1.1"}
+	7973.1.1 = {add_trait=poor_warrior}
+	8032.1.1 = {death="8032.1.1"}
+}
+104300706 = {
+	name="Изембаро"	# a lord
+	dynasty=300706
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=100300706
+
+	7980.1.1 = {birth="7980.1.1"}
+	7996.1.1 = {add_trait=poor_warrior}
+	8059.1.1 = {death="8059.1.1"}
+}
+106300706 = {
+	name="Тернесио"	# a lord
+	dynasty=300706
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=104300706
+
+	8009.1.1 = {birth="8009.1.1"}
+	8025.1.1 = {add_trait=poor_warrior}
+	8065.1.1 = {death="8065.1.1"}
+}
+107300706 = {
+	name="Бегго"	# a lord
+	dynasty=300706
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=106300706
+
+	8027.1.1 = {birth="8027.1.1"}
+	8043.1.1 = {add_trait=poor_warrior}
+	8101.1.1 = {death="8101.1.1"}
+}
+110300706 = {
+	name="Баян"	# a lord
+	dynasty=300706
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=107300706
+
+	8061.1.1 = {birth="8061.1.1"}
+	8077.1.1 = {add_trait=trained_warrior}
+	8109.1.1 = {death="8109.1.1"}
+}
+111300706 = {
+	name="Луко"	# a lord
+	dynasty=300706
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=110300706
+
+	8079.1.1 = {birth="8079.1.1"}
+	8095.1.1 = {add_trait=poor_warrior}
+	8138.1.1 = {death = {death_reason = death_accident}}
+}
+114300706 = {
+	name="Феррего"	# a lord
+	dynasty=300706
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=111300706
+
+	8101.1.1 = {birth="8101.1.1"}
+	8117.1.1 = {add_trait=skilled_warrior}
+	8146.1.1 = {death="8146.1.1"}
+}
+118300706 = {
+	name="Коллио"	# a lord
+	dynasty=300706
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=114300706
+
+	8135.1.1 = {birth="8135.1.1"}
+	8151.1.1 = {add_trait=skilled_warrior}
+	8170.1.1 = {death="8170.1.1"}
+}
+122300706 = {
+	name="Моредо"	# a lord
+	dynasty=300706
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=118300706
+
+	8162.1.1 = {birth="8162.1.1"}
+	8178.1.1 = {add_trait=poor_warrior}
+	8231.1.1 = {death="8231.1.1"}
+}
+125300706 = {
+	name="Нарбо"	# a lord
+	dynasty=300706
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=122300706
+
+	8188.1.1 = {birth="8188.1.1"}
+	8204.1.1 = {add_trait=poor_warrior}
+	8236.1.1 = {death="8236.1.1"}
+}
+126300706 = {
+	name="Оро"	# a lord
+	dynasty=300706
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=125300706
+
+	8212.1.1 = {birth="8212.1.1"}
+	8228.1.1 = {add_trait=poor_warrior}
+	8230.1.1 = {add_spouse=226300706}
+	8248.1.1 = {death="8248.1.1"}
+}
+226300706 = {
+	name="Лотея"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8212.1.1 = {birth="8212.1.1"}
+	8248.1.1 = {death="8248.1.1"}
+}
+127300706 = {
+	name="Нарбо"	# a lord
+	dynasty=300706
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=126300706
+	mother=226300706
+
+	8243.1.1 = {birth="8243.1.1"}
+	8259.1.1 = {add_trait=skilled_warrior}
+	8261.1.1 = {add_spouse=227300706}
+}
+227300706 = {
+	name="Серра"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8243.1.1 = {birth="8243.1.1"}
+}
+128300706 = {
+	name="Морео"	# not a lord
+	dynasty=300706
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=126300706
+	mother=226300706
+
+	8246.1.1 = {birth="8246.1.1"}
+	8262.1.1 = {add_trait=skilled_warrior}
+	8284.1.1 = {death="8284.1.1"}
+}
+129300706 = {
+	name="Тагганаро"	# not a lord
+	dynasty=300706
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=126300706
+	mother=226300706
+
+	8247.1.1 = {birth="8247.1.1"}
+	8263.1.1 = {add_trait=trained_warrior}
+	8287.1.1 = {death="8287.1.1"}
+}
+130300706 = {
+	name="Пинта"	# not a lord
+	female=yes
+	dynasty=300706
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=127300706
+	mother=227300706
+
+	8266.1.1 = {birth="8266.1.1"}
+}
+131300706 = {
+	name="Коссомо"	# not a lord
+	dynasty=300706
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=127300706
+	mother=227300706
+
+	8271.1.1 = {birth="8271.1.1"}
+	8287.1.1 = {add_trait=poor_warrior}
+}
+132300706 = {
+	name="Талея"	# not a lord
+	female=yes
+	dynasty=300706
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=127300706
+	mother=227300706
+
+	8273.1.1 = {birth="8273.1.1"}
+}
+133300706 = {
+	name="Роро"	# not a lord
+	dynasty=300706
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=127300706
+	mother=227300706
+
+	8274.1.1 = {birth="8274.1.1"}
+	8290.1.1 = {add_trait=poor_warrior}
+}
+134300706 = {
+	name="Мералия"	# not a lord
+	female=yes
+	dynasty=300706
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=127300706
+	mother=227300706
+
+	8276.1.1 = {birth="8276.1.1"}
+}
+
+### House Mercor
+345300707 = {
+	name="Хорио"	# a lord
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+
+	7799.1.1 = {birth="7799.1.1"}
+	7860.1.1 = {death="7860.1.1"}
+}
+344300707 = {
+	name="Гролео"	# a lord
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=345300707
+
+	7823.1.1 = {birth="7823.1.1"}
+	7892.1.1 = {death="7892.1.1"}
+}
+343300707 = {
+	name="Варис"	# a lord
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=344300707
+
+	7847.1.1 = {birth="7847.1.1"}
+	7915.1.1 = {death="7915.1.1"}
+}
+342300707 = {
+	name="Йорко"	# a lord
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=343300707
+
+	7874.1.1 = {birth="7874.1.1"}
+	7931.1.1 = {death="7931.1.1"}
+}
+341300707 = {
+	name="Арео"	# a lord
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=342300707
+
+	7903.1.1 = {birth="7903.1.1"}
+	7960.1.1 = {death="7960.1.1"}
+}
+340300707 = {
+	name="Хорио"	# a lord
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=341300707
+
+	7929.1.1 = {birth="7929.1.1"}
+	7989.1.1 = {death="7989.1.1"}
+}
+100300707 = {
+	name="Бегго"	# a lord
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=340300707
+
+	7955.1.1 = {birth="7955.1.1"}
+	7971.1.1 = {add_trait=poor_warrior}
+	8032.1.1 = {death="8032.1.1"}
+}
+101300707 = {
+	name="Коллио"	# a lord
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=100300707
+
+	7983.1.1 = {birth="7983.1.1"}
+	7999.1.1 = {add_trait=poor_warrior}
+	8039.1.1 = {death="8039.1.1"}
+}
+103300707 = {
+	name="Орбело"	# a lord
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=101300707
+
+	8003.1.1 = {birth="8003.1.1"}
+	8019.1.1 = {add_trait=trained_warrior}
+	8041.1.1 = {death="8041.1.1"}
+}
+105300707 = {
+	name="Пинто"	# a lord
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=103300707
+
+	8036.1.1 = {birth="8036.1.1"}
+	8052.1.1 = {add_trait=poor_warrior}
+	8077.1.1 = {death="8077.1.1"}
+}
+109300707 = {
+	name="Мералин"	# a lord
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=105300707
+
+	8064.1.1 = {birth="8064.1.1"}
+	8080.1.1 = {add_trait=trained_warrior}
+	8132.1.1 = {death="8132.1.1"}
+}
+114300707 = {
+	name="Тернесио"	# a lord
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=109300707
+
+	8084.1.1 = {birth="8084.1.1"}
+	8100.1.1 = {add_trait=poor_warrior}
+	8157.1.1 = {death="8157.1.1"}
+}
+115300707 = {
+	name="Джосс"	# a lord
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=114300707
+
+	8102.1.1 = {birth="8102.1.1"}
+	8118.1.1 = {add_trait=master_warrior}
+	8158.1.1 = {death="8158.1.1"}
+}
+118300707 = {
+	name="Гролео"	# a lord
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=115300707
+
+	8126.1.1 = {birth="8126.1.1"}
+	8142.1.1 = {add_trait=poor_warrior}
+	8171.1.1 = {death="8171.1.1"}
+}
+120300707 = {
+	name="Нарбо"	# a lord
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=118300707
+
+	8148.1.1 = {birth="8148.1.1"}
+	8164.1.1 = {add_trait=poor_warrior}
+	8183.1.1 = {death="8183.1.1"}
+}
+124300707 = {
+	name="Олло"	# a lord
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=120300707
+
+	8175.1.1 = {birth="8175.1.1"}
+	8191.1.1 = {add_trait=skilled_warrior}
+	8239.1.1 = {death="8239.1.1"}
+}
+125300707 = {
+	name="Арео"	# a lord
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=124300707
+
+	8194.1.1 = {birth="8194.1.1"}
+	8210.1.1 = {add_trait=poor_warrior}
+	8212.1.1 = {add_spouse=225300707}
+	8242.1.1 = {death="8242.1.1"}
+}
+225300707 = {
+	name="Ориос"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8194.1.1 = {birth="8194.1.1"}
+	8242.1.1 = {death="8242.1.1"}
+}
+126300707 = {
+	name="Люсерра"	# not a lord
+	female=yes
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=124300707
+
+	8197.1.1 = {birth="8197.1.1"}
+	8265.1.1 = {death="8265.1.1"}
+}
+128300707 = {
+	name="Моредея"	# not a lord
+	female=yes
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=125300707
+	mother=225300707
+
+	8228.1.1 = {birth="8228.1.1"}
+	8272.1.1 = {death="8272.1.1"}
+}
+129300707 = {
+	name="Моредея"	# not a lord
+	female=yes
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=125300707
+	mother=225300707
+
+	8231.1.1 = {birth="8231.1.1"}
+	8288.1.1 = {death="8288.1.1"}
+}
+130300707 = {
+	name="Йорка"	# not a lord
+	female=yes
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=125300707
+	mother=225300707
+
+	8232.1.1 = {birth="8232.1.1"}
+}
+131300707 = {
+	name="Гилора"	# not a lord
+	female=yes
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=125300707
+	mother=225300707
+
+	8233.1.1 = {birth="8233.1.1"}
+}
+132300707 = {
+	name="Коссомо"	# a lord
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=125300707
+	mother=225300707
+
+	8235.1.1 = {birth="8235.1.1"}
+	8251.1.1 = {add_trait=trained_warrior}
+	8253.1.1 = {add_spouse=232300707}
+	8265.1.1 = {death = {death_reason = death_murder}}
+}
+232300707 = {
+	name="Нохия"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8235.1.1 = {birth="8235.1.1"}
+	8285.1.1 = {death="8285.1.1"}
+}
+133300707 = {
+	name="Иллирио"	# a lord
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=132300707
+	mother=232300707
+
+	8261.1.1 = {birth="8261.1.1"}
+	8277.1.1 = {add_trait=trained_warrior}
+	8279.1.1 = {add_spouse=233300707}
+}
+233300707 = {
+	name="Дения"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8261.1.1 = {birth="8261.1.1"}
+}
+134300707 = {
+	name="Трегар"	# not a lord
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=132300707
+	mother=232300707
+
+	8263.1.1 = {birth="8263.1.1"}
+	8279.1.1 = {add_trait=trained_warrior}
+}
+135300707 = {
+	name="Рогга"	# not a lord
+	female=yes
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=132300707
+	mother=232300707
+
+	8264.1.1 = {birth="8264.1.1"}
+}
+136300707 = {
+	name="Серала"	# not a lord
+	female=yes
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=133300707
+	mother=233300707
+
+	8294.1.1 = {birth="8294.1.1"}
+}
+137300707 = {
+	name="Коссомо"	# not a lord
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=133300707
+	mother=233300707
+
+	8295.1.1 = {birth="8295.1.1"}
+}
+138300707 = {
+	name="Мирмеллиос"	# not a lord
+	female=yes
+	dynasty=300707
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=133300707
+	mother=233300707
+
+	8296.1.1 = {birth="8296.1.1"}
+}
+
+### House Allegel
+345300704 = {
+	name="Белекво"	# a lord
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+
+	7819.1.1 = {birth="7819.1.1"}
+	7880.1.1 = {death="7880.1.1"}
+}
+344300704 = {
+	name="Крагас"	# a lord
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=345300704
+
+	7842.1.1 = {birth="7842.1.1"}
+	7905.1.1 = {death="7905.1.1"}
+}
+343300704 = {
+	name="Нохо"	# a lord
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=344300704
+
+	7870.1.1 = {birth="7870.1.1"}
+	7924.1.1 = {death="7924.1.1"}
+}
+342300704 = {
+	name="Крагас"	# a lord
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=343300704
+
+	7893.1.1 = {birth="7893.1.1"}
+	7940.1.1 = {death="7940.1.1"}
+}
+341300704 = {
+	name="Гилоро"	# a lord
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=342300704
+
+	7915.1.1 = {birth="7915.1.1"}
+	7963.1.1 = {death="7963.1.1"}
+}
+340300704 = {
+	name="Феррего"	# a lord
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=341300704
+
+	7934.1.1 = {birth="7934.1.1"}
+	7999.1.1 = {death="7999.1.1"}
+}
+100300704 = {
+	name="Баян"	# a lord
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=340300704
+
+	7958.1.1 = {birth="7958.1.1"}
+	7974.1.1 = {add_trait=poor_warrior}
+	8037.1.1 = {death="8037.1.1"}
+}
+102300704 = {
+	name="Тормо"	# a lord
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=100300704
+
+	7988.1.1 = {birth="7988.1.1"}
+	8004.1.1 = {add_trait=skilled_warrior}
+	8061.1.1 = {death="8061.1.1"}
+}
+109300704 = {
+	name="Бруско"	# a lord
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=102300704
+
+	8022.1.1 = {birth="8022.1.1"}
+	8038.1.1 = {add_trait=poor_warrior}
+	8062.1.1 = {death = {death_reason = death_murder}}
+}
+111300704 = {
+	name="Луко"	# a lord
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=109300704
+
+	8042.1.1 = {birth="8042.1.1"}
+	8058.1.1 = {add_trait=poor_warrior}
+	8092.1.1 = {death="8092.1.1"}
+}
+113300704 = {
+	name="Бегго"	# a lord
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=111300704
+
+	8073.1.1 = {birth="8073.1.1"}
+	8089.1.1 = {add_trait=master_warrior}
+	8119.1.1 = {death="8119.1.1"}
+}
+115300704 = {
+	name="Трегар"	# a lord
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=113300704
+
+	8091.1.1 = {birth="8091.1.1"}
+	8107.1.1 = {add_trait=poor_warrior}
+	8166.1.1 = {death="8166.1.1"}
+}
+116300704 = {
+	name="Изембаро"	# a lord
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=115300704
+
+	8126.1.1 = {birth="8126.1.1"}
+	8142.1.1 = {add_trait=skilled_warrior}
+	8184.1.1 = {death="8184.1.1"}
+}
+118300704 = {
+	name="Орделло"	# a lord
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=116300704
+
+	8147.1.1 = {birth="8147.1.1"}
+	8163.1.1 = {add_trait=skilled_warrior}
+	8191.1.1 = {death="8191.1.1"}
+}
+120300704 = {
+	name="Луко"	# a lord
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=118300704
+
+	8171.1.1 = {birth="8171.1.1"}
+	8187.1.1 = {add_trait=poor_warrior}
+	8233.1.1 = {death = {death_reason = death_murder}}
+}
+123300704 = {
+	name="Морео"	# a lord
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=120300704
+
+	8190.1.1 = {birth="8190.1.1"}
+	8206.1.1 = {add_trait=poor_warrior}
+	8208.1.1 = {add_spouse=223300704}
+	8238.1.1 = {death="8238.1.1"}
+}
+223300704 = {
+	name="Мирмеллиос"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8190.1.1 = {birth="8190.1.1"}
+	8238.1.1 = {death="8238.1.1"}
+}
+124300704 = {
+	name="Торма"	# not a lord
+	female=yes
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=123300704
+	mother=223300704
+
+	8217.1.1 = {birth="8217.1.1"}
+	8277.1.1 = {death="8277.1.1"}
+}
+127300704 = {
+	name="Тиха"	# not a lord
+	female=yes
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=123300704
+	mother=223300704
+
+	8224.1.1 = {birth="8224.1.1"}
+	8298.1.1 = {death="8298.1.1"}
+}
+128300704 = {
+	name="Иллирио"	# a lord
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=123300704
+	mother=223300704
+
+	8226.1.1 = {birth="8226.1.1"}
+	8242.1.1 = {add_trait=skilled_warrior}
+	8244.1.1 = {add_spouse=228300704}
+	8262.1.1 = {death="8262.1.1"}
+}
+228300704 = {
+	name="Талея"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8226.1.1 = {birth="8226.1.1"}
+	8262.1.1 = {death="8262.1.1"}
+}
+129300704 = {
+	name="Эззера"	# not a lord
+	female=yes
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=128300704
+	mother=228300704
+
+	8253.1.1 = {birth="8253.1.1"}
+	8296.1.1 = {death="8296.1.1"}
+}
+130300704 = {
+	name="Рогго"	# a lord
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=128300704
+	mother=228300704
+
+	8254.1.1 = {birth="8254.1.1"}
+	8270.1.1 = {add_trait=master_warrior}
+	8272.1.1 = {add_spouse=230300704}
+}
+230300704 = {
+	name="Ориос"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8254.1.1 = {birth="8254.1.1"}
+}
+131300704 = {
+	name="Изембара"	# not a lord
+	female=yes
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=128300704
+	mother=228300704
+
+	8256.1.1 = {birth="8256.1.1"}
+}
+132300704 = {
+	name="Гилениос"	# not a lord
+	female=yes
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=130300704
+	mother=230300704
+
+	8272.1.1 = {birth="8272.1.1"}
+}
+133300704 = {
+	name="Иллирио"	# not a lord
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=130300704
+	mother=230300704
+
+	8273.1.1 = {birth="8273.1.1"}
+	8289.1.1 = {add_trait=skilled_warrior}
+}
+134300704 = {
+	name="Мералия"	# not a lord
+	female=yes
+	dynasty=300704
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=130300704
+	mother=230300704
+
+	8274.1.1 = {birth="8274.1.1"}
+}
+
+### House Varghan
+344300705 = {
+	name="Луко"	# a lord
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+
+	7839.1.1 = {birth="7839.1.1"}
+	7898.1.1 = {death="7898.1.1"} #dov
+}
+343300705 = {
+	name="Коллио"	# a lord
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=344300705
+
+	7866.1.1 = {birth="7866.1.1"}
+	7903.1.1 = {death="7903.1.1"}
+}
+342300705 = {
+	name="Кварро"	# a lord
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=343300705
+
+	7883.1.1 = {birth="7883.1.1"}
+	7935.1.1 = {death="7935.1.1"}
+}
+341300705 = {
+	name="Баллош"	# a lord
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=342300705
+
+	7908.1.1 = {birth="7908.1.1"}
+	7959.1.1 = {death="7959.1.1"}
+}
+340300705 = {
+	name="Вирано"	# a lord
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=341300705
+
+	7931.1.1 = {birth="7931.1.1"}
+	7985.1.1 = {death="7985.1.1"}
+}
+100300705 = {
+	name="Мералин"	# a lord
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+	
+	father=340300705
+
+	7960.1.1 = {birth="7960.1.1"}
+	7976.1.1 = {add_trait=poor_warrior}
+	8037.1.1 = {death="8037.1.1"}
+}
+104300705 = {
+	name="Терро"	# a lord
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=100300705
+
+	7985.1.1 = {birth="7985.1.1"}
+	8001.1.1 = {add_trait=poor_warrior}
+	8044.1.1 = {death="8044.1.1"}
+}
+107300705 = {
+	name="Тихо"	# a lord
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=104300705
+	
+	8015.1.1 = {birth="8015.1.1"}
+	8031.1.1 = {add_trait=poor_warrior}
+	8061.1.1 = {death="8061.1.1"}
+}
+110300705 = {
+	name="Рогго"	# a lord
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=107300705
+
+	8041.1.1 = {birth="8041.1.1"}
+	8057.1.1 = {add_trait=poor_warrior}
+	8093.1.1 = {death="8093.1.1"}
+}
+115300705 = {
+	name="Тернесио"	# a lord
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=110300705
+
+	8065.1.1 = {birth="8065.1.1"}
+	8081.1.1 = {add_trait=trained_warrior}
+	8115.1.1 = {death="8115.1.1"}
+}
+117300705 = {
+	name="Роро"	# a lord
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=115300705
+
+	8086.1.1 = {birth="8086.1.1"}
+	8102.1.1 = {add_trait=poor_warrior}
+	8141.1.1 = {death="8141.1.1"}
+}
+119300705 = {
+	name="Моредо"	# a lord
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=117300705
+
+	8110.1.1 = {birth="8110.1.1"}
+	8126.1.1 = {add_trait=poor_warrior}
+	8172.1.1 = {death="8172.1.1"}
+}
+123300705 = {
+	name="Тагганаро"	# a lord
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=119300705
+
+	8136.1.1 = {birth="8136.1.1"}
+	8152.1.1 = {add_trait=trained_warrior}
+	8203.1.1 = {death = {death_reason = death_murder}}
+}
+126300705 = {
+	name="Нохо"	# a lord
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=123300705
+
+	8164.1.1 = {birth="8164.1.1"}
+	8180.1.1 = {add_trait=poor_warrior}
+	8222.1.1 = {death="8222.1.1"}
+}
+127300705 = {
+	name="Гролео"	# a lord
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=126300705
+
+	8198.1.1 = {birth="8198.1.1"}
+	8214.1.1 = {add_trait=poor_warrior}
+	8216.1.1 = {add_spouse=227300705}
+	8269.1.1 = {death="8269.1.1"}
+}
+227300705 = {
+	name="Терриос"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8198.1.1 = {birth="8198.1.1"}
+	8269.1.1 = {death="8269.1.1"}
+}
+128300705 = {
+	name="Гилора"	# not a lord
+	female=yes
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=127300705
+	mother=227300705
+
+	8224.1.1 = {birth="8224.1.1"}
+	8269.1.1 = {death="8269.1.1"}
+}
+129300705 = {
+	name="Баян"	# a lord
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=127300705
+	mother=227300705
+
+	8225.1.1 = {birth="8225.1.1"}
+	8241.1.1 = {add_trait=trained_warrior}
+	8243.1.1 = {add_spouse=229300705}
+	8297.1.1 = {death="8297.1.1"}
+}
+229300705 = {
+	name="Дорея"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8225.1.1 = {birth="8225.1.1"}
+	8297.1.1 = {death="8297.1.1"}
+}
+130300705 = {
+	name="Пинто"	# not a lord
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=127300705
+	mother=227300705
+
+	8227.1.1 = {birth="8227.1.1"}
+	8243.1.1 = {add_trait=trained_warrior}
+	8265.1.1 = {death="8265.1.1"}
+}
+131300705 = {
+	name="Дорея"	# not a lord
+	female=yes
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=127300705
+	mother=227300705
+
+	8228.1.1 = {birth="8228.1.1"}
+	8267.1.1 = {death="8267.1.1"}
+}
+132300705 = {
+	name="Орделло"	# a lord
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=129300705
+	mother=229300705
+
+	8257.1.1 = {birth="8257.1.1"}
+	8273.1.1 = {add_trait=trained_warrior}
+	8275.1.1 = {add_spouse=232300705}
+}
+232300705 = {
+	name="Ланна"
+	female=yes
+
+	religion="rhllor"
+	culture="myrman"
+
+	8257.1.1 = {birth="8257.1.1"}
+}
+133300705 = {
+	name="Пинто"	# not a lord
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=129300705
+	mother=229300705
+
+	8258.1.1 = {birth="8258.1.1"}
+	8274.1.1 = {add_trait=skilled_warrior}
+}
+134300705 = {
+	name="Ланна"	# not a lord
+	female=yes
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=129300705
+	mother=229300705
+
+	8260.1.1 = {birth="8260.1.1"}
+}
+135300705 = {
+	name="Бетариос"	# not a lord
+	female=yes
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=132300705
+	mother=232300705
+
+	8278.1.1 = {birth="8278.1.1"}
+}
+136300705 = {
+	name="Орделло"	# not a lord
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=132300705
+	mother=232300705
+
+	8281.1.1 = {birth="8281.1.1"}
+	8297.1.1 = {add_trait=master_warrior}
+}
+137300705 = {
+	name="Беллегера"	# not a lord
+	female=yes
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=132300705
+	mother=232300705
+
+	8283.1.1 = {birth="8283.1.1"}
+}
+
+
+###############
+### Lowborn ###
+###############
+
+88005 = {
+	name="Тромбо"	# Canon, Black Тромбо, killed
+	dynasty=300705
+
+	religion="rhllor"
+	culture="myrman"
+
+	father=115300705
+
+	add_trait=gregarious
+	add_trait=brave
+
+	8087.1.1 = {birth="8087.1.1"}
+	8103.1.1 = {
+		add_trait=skilled_tactician 
+		add_trait=skilled_warrior 
+		give_nickname = nick_the_black_prefix
+	}
+	8120.1.1 = {
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				d_wayfarersrest = { holder_scope = { ROOT = { move_character = PREV } } }
+			}
+		}
+	}
+	8137.1.1 = {death="8137.1.1"}
+}
+
+88007 = {
+	name="Морош"	# Canon, Морош the Myrman, one of Stannis' mercenaries
+
+	religion="rhllor"
+	culture="myrman"
+	
+	8265.1.1 = {birth="8265.1.1"}
+	8281.1.1 = {
+		add_trait = trained_warrior
+		add_trait = tough_soldier
+	}
+	8298.6.1 = {
+		employer = 4317 #Stannis had been gathering forces sometime between AGOT and ACOK
+	}
+	8299.7.2 = {
+		death = {
+			death_reason = death_battle		#Myrish contingent was in the battle on the river. Propably destroyed by wildfire
+			killer = 5190 #Tyrion
+		}
+	}
+}

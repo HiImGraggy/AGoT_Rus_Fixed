@@ -1,0 +1,93 @@
+unoccupied_group = {
+	graphical_cultures = { westerngfx } # buildings, portraits, units
+	
+	ruin = {
+		graphical_cultures = { ruingfx } # portraits
+		
+		used_for_random = no
+		allow_in_ruler_designer = no
+		alternate_start = { always = no }
+		
+		color = { 1 1 1 }
+		
+		character_modifier = {
+			fertility = -1000
+		}
+		
+		male_names = {
+			" "
+		}
+		female_names = {
+			" "
+		}
+		from_dynasty_prefix = "из "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+	
+	# dothraki_domain_culture = {
+		# graphical_cultures = { dothrakidomaingfx } # portraits
+		
+		# used_for_random = no
+		
+		# color = { 0 0 0 }
+		
+		# male_names = {
+			# " "
+		# }
+		# female_names = {
+			# " "
+		# }
+		# from_dynasty_prefix = "из "
+		
+		# # Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		# pat_grf_name_chance = 40
+		# mat_grf_name_chance = 0
+		# father_name_chance = 0
+		
+		# # Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		# pat_grm_name_chance = 10
+		# mat_grm_name_chance = 30
+		# mother_name_chance = 0
+		
+		# modifier = default_culture_modifier
+	# }
+
+	# jogos_domain_culture = {
+		# graphical_cultures = { dothrakidomaingfx } # portraits
+		
+		# used_for_random = no
+		
+		# color = { 0 0 0 }
+		
+		# male_names = {
+			# " "
+		# }
+		# female_names = {
+			# " "
+		# }
+		# from_dynasty_prefix = "из "
+		
+		# # Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		# pat_grf_name_chance = 40
+		# mat_grf_name_chance = 0
+		# father_name_chance = 0
+		
+		# # Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		# pat_grm_name_chance = 10
+		# mat_grm_name_chance = 30
+		# mother_name_chance = 0
+		
+		# modifier = default_culture_modifier
+	# }
+}

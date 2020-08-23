@@ -1,0 +1,39 @@
+
+name = "Война Станниса Баратеона за Штормовые земли"
+
+casus_belli={
+	casus_belli=claim_stormlands_ACOK
+	actor=4317
+	recipient=5317
+	landed_title=k_stormlands
+	date=8299.1.4
+}
+
+8299.1.4 = {
+	add_defender = 5317		# Renly Baratheon
+	#add_defender = 1253		# Mace Tyrell
+	add_attacker = 4317		# Stannis Baratheon
+	# add_attacker = 281		# Alester Florent
+	# add_attacker = 2030028	# House Chyterring
+	# add_attacker = 77152	# House Follard
+	# add_attacker = 24 		# House Farring
+	# add_attacker = 77153 	# House Massey
+	# add_attacker = 119982370 # Salladhor Saan
+	# #add_attacker = 3517042 	# House Brune of Brownhollow
+	# #add_attacker = 2029042 	# House Brune of Dyre Den
+	
+}
+
+8299.3.3 = {
+	#rem_defender = 1253		# Mace Tyrell
+	rem_defender = 5317		# Renly Baratheon
+	# #rem_attacker = 2029042 	# House Brune of Dyre Den
+	# #rem_attacker = 3517042 	# House Brune of Brownhollow
+	# rem_attacker = 119982370 # Salladhor Saan
+	# rem_attacker = 77153	# House Massey
+	# rem_attacker = 24		# House Farring
+	# rem_attacker = 77152	# House Follard
+	# rem_attacker = 2030028	# House Chyterring
+	# rem_attacker = 281		# Alester Florent
+	rem_attacker = 4317		# Stannis Baratheon
+}

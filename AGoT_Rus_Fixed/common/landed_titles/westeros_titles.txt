@@ -1,0 +1,7781 @@
+k_nightswatch = {
+	color={ 40 40 40 }
+	color2={ 100 100 100 }	
+	
+	title = "NIGHTS_KING"
+	title_female = "NIGHTS_KING_female"
+	foa = "NIGHTS_KING_FOA"
+		
+	capital = 17 #Castle Black
+	
+	allow = { always = no }
+	
+	d_the_wall = {
+		color={ 40 40 40 }
+		color2={ 100 100 100 }	
+
+		c_castle_black = {
+			color={ 50 50 50 }
+			color2={ 100 100 100 }	
+			
+			holy_site = beyond_wall_old_gods
+			holy_site = beyond_wall_old_gods_reformed
+			holy_site = cold_gods
+			holy_site = thenn_rel
+			holy_site = mountain_old_gods
+			holy_site = pagan
+			holy_site = aztec_reformed
+			holy_site = aztec
+			holy_site = ruin_rel
+
+			b_castle_black = {
+			}
+
+			b_ironmark = {
+			}
+
+			b_the_nightfort = {
+			}
+
+			b_deep_lake = {
+			}
+
+			b_queensgate = {
+			}
+
+			b_oakenshield = {
+			}
+
+			b_woodswatch = {
+			}
+		}
+		c_shadow_tower = {
+			color={ 20 20 20 }
+			color2={ 100 100 100 }
+		
+			b_shadow_tower = {
+			}
+			b_westwatch = {
+			}
+			b_sentinel_stand = {
+			}
+			b_greyguard = {
+			}
+			b_stonedoor = {
+			}
+			b_hoarfrost_hill = {
+			}
+		}
+		c_eastwatch = {
+			color={ 70 70 70 }
+			color2={ 100 100 100 }	
+		
+			b_eastwatch = {
+			}
+			b_sable_hall = {
+			}
+			b_rimegate = {
+			}
+			b_the_long_barrow = {
+			}
+			b_the_torches = {
+			}
+			b_greenguard = {
+			}
+
+		}
+		c_brandons_gift = {
+			color={ 35 35 35 }
+			color2={ 100 100 100 }	
+		
+			b_moles_town = {
+			}
+			b_brandoncastle = {
+			}
+			b_north_town = {
+			}
+		}
+		c_new_gift = {
+			color={ 40 40 40 }
+			color2={ 100 100 100 }	
+		
+			b_queenscrown = {
+			}
+			b_roads_end = {
+			}
+			b_whitecross= {
+			}
+		}
+	}
+}	
+k_dragonstone = {
+	color = { 153 20 120 }
+	color2 = { 255 255 255 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		independent = yes
+		primary_title = { title = d_dragonstone }
+		primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+		hidden_tooltip = { NOT = { culture_group = winter_group } }
+	}
+	
+	capital = 221 # Dragonstone
+	creation_requires_capital = no
+	
+	# title = "dragonking_male" #now added by event
+	# title_female = "dragonking_female"	
+	
+	d_dragonstone = {
+		color={ 153 20 120 }
+		color2={ 255 255 255 }
+
+		allow = {
+			OR = {				
+				custom_tooltip = {
+					text = TOOLTIPhl_creation_requirement
+					hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+				}	
+				has_game_rule = { name = hl_creation_requirement value = off }
+			}	
+		}
+		
+		c_dragonstone = {
+			color={ 175 65 113 }
+			color2={ 255 255 255 }
+			
+			holy_site = rhllor
+			holy_site = valyrian_rel
+			holy_site = valyrian_rel_reformed
+			holy_site = dragon_rel
+		
+			b_stone_drum = {
+			}
+			b_derlyn = {
+			}
+			b_dragonstone_sept = {
+			}
+			b_windwyrm = {
+				coat_of_arms = {	#House Scales
+					template = 0
+					layer = {
+						texture = 10
+						texture_internal = 81
+						emblem = 0
+						color = 0
+						color = 0
+						color = 0
+					}
+					religion=the_seven
+				}
+			}
+			b_sea_dragon_tower = {
+			}
+		}
+		c_driftmark = {
+			color={ 245 71 173 }
+			color2={ 255 255 255 }
+		
+			b_driftmark = {
+			}
+			b_spicetown = {
+			}
+			b_driftmark_sept = {
+			}
+			b_high_tide = {
+			}
+			b_hull = {
+			}
+			b_nimmark = {
+			}
+			b_minomark = {
+			}
+			b_boatmark = {
+			}		
+		}
+		c_claw_isle = {
+			color={ 157 46 109 }
+			color2={ 255 255 255 }
+			
+			crackclawmen = "Êנאבמגûי מסענמג"
+			
+			b_claw_isle = {
+			}
+			b_celtina = {
+			}
+			b_aprochon = {
+			}
+			b_leporon = {
+			}
+			b_claw_isle_sept = {
+			}
+		}	
+		c_sharp_point = {
+			color={ 245 71 173 }
+			color2={ 255 255 255 }
+		
+			b_sharp_point = {
+			}
+			b_west_point = {
+			}
+			b_waycastle = {
+			}
+			b_valcrest = {
+			}
+			b_sharp_point_sept = {
+			}
+		}
+		c_sweetport_sound = {
+			color={ 203 33 129 }
+			color2={ 255 255 255 }
+		
+			b_sweetport_sound = {
+			}
+			b_rambton = {
+				coat_of_arms = {	#House Rambton
+					template = 0
+					layer = {
+						texture = 12
+						texture_internal = 27
+						emblem = 0
+						color = 0
+						color = 0
+						color = 0
+					}
+					religion = the_seven
+				}
+			}
+			b_sweetport_harbour = {
+			}
+		}		
+	}
+}
+k_crackclaw_point = {
+	color = { 205 171 1 }
+	color2 = { 255 255 255 }
+	
+	allow = {
+		num_of_duke_titles = 2
+		independent = yes
+		primary_title = { title = d_crackclaw_point }
+		primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+		hidden_tooltip = { NOT = { culture_group = winter_group } }
+	}
+	
+	capital = 1 #To make title creatable
+	creation_requires_capital = no
+
+	d_crackclaw_point = {
+		color={ 243 102 182 }
+		color2={ 255 255 255 }
+
+		allow = {
+			OR = {				
+				custom_tooltip = {
+					text = TOOLTIPhl_creation_requirement
+					hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+				}	
+				has_game_rule = { name = hl_creation_requirement value = off }
+			}	
+		}
+		
+		c_rooks_rest = {		
+			color={ 203 33 129 }
+			color2={ 255 255 255 }
+		
+			b_rooks_rest = {
+			}
+			b_muret = {
+			}
+			b_castelnaudary = {
+				coat_of_arms = { #House Manning
+					template = 0
+					layer = {
+						texture = 10
+						texture_internal = 26
+						emblem = 0
+						color = 0
+						color = 0
+						color = 0
+					}
+					religion = the_seven
+				}
+			}
+			b_drauban = {
+			}
+		}
+		c_southern_crackclaw_point = {
+			color={ 157 46 109 }
+			color2={ 255 255 255 }
+			
+			b_erimount = {
+			}
+			b_cahors = {
+			}
+			b_strongcliff = {
+				coat_of_arms = {	#House Cave
+					template = 0
+					layer = {
+						texture = 10
+						texture_internal = 42
+						emblem = 0
+						color = 0
+						color = 0
+						color = 0
+					}
+					religion=the_seven
+				}
+			}
+			b_claw_castle = {
+			}
+			b_penne = {
+			}
+		}
+		c_dyre_den = {
+			color={ 245 71 173 }
+			color2={ 255 255 255 }
+		
+			b_dyre_den = {
+			}			
+			b_brownhollow = {
+			}
+			b_kegworth = {
+			}
+			b_butterwall_forest = {
+			}
+			b_biron = {
+			}
+			b_dyre_den_sept = {
+			}
+		}
+		c_northern_crackclaw_point = {	
+			color={ 175 65 113 }
+			color2={ 255 255 255 }
+		
+			b_estaring = {		
+			}
+			b_millaun = {
+			}
+			b_caylus = {
+				coat_of_arms = {	#House Pyne
+					template = 0
+					layer = {
+						texture = 10
+						texture_internal = 44
+						emblem = 0
+						color = 0
+						color = 0
+						color = 0
+					}
+					religion=the_seven
+				}
+			}
+			b_staffrick = {
+			}
+			b_claw_tower = {
+			}
+		}
+		c_the_whispers = {
+			color={ 203 33 129 }
+			color2={ 255 255 255 }
+		
+			b_the_whispers = {
+			}
+			b_brizond_port = {
+			}
+			b_clery = {
+			}
+			b_domeyraten = {
+			}
+			b_the_whispers_sept = {
+			}
+		}
+	}
+}	
+# EMPIRES
+#titular
+e_first_men = {
+	color={ 230 230 230 }
+	color2={ 200 200 200 }
+
+	allow = {
+		always = no
+	}
+	
+	name_tier = king
+
+	dignity=20
+	
+	capital = 46 #Barrowton
+	culture = northman
+}
+e_north = {
+	color={ 230 230 230 }
+	color2={ 200 200 200 }
+
+	allow = {
+		e_north = { has_holder = yes }
+	}
+	
+	name_tier = king
+	
+	dignity=20
+	
+	capital	= 47 # Winterfell
+	culture = northman
+}
+e_iron_isles = {
+	color={ 65 65 65 }
+	color2={ 255 255 255 }
+
+	allow = {
+		e_iron_isles = { has_holder = yes }
+	}
+
+	#capital	= 162 # Pyke
+	culture = ironborn
+	
+	name_tier = king
+	
+	dignity=20
+
+	title = "Iking"
+	#foa = "Iking_FOA"
+	title_female = "Iking_female"
+}
+e_vale = {
+	color={ 22 191 255 }
+	color2={ 255 255 20 }
+	
+	allow = {
+		e_vale = { has_holder = yes }
+	}
+	
+	name_tier = king
+	
+	dignity=20
+	
+	capital = 136 # The Eyrie
+	culture = valeman
+}	
+e_westerlands = {
+ 
+	color={ 175 0 0 }
+	color2={ 210 190 30 }
+
+	allow = {
+		e_westerlands = { has_holder = yes }
+	}
+	
+	name_tier = king
+	
+	dignity=20
+	
+	capital = 182 # Casterly Rock
+	culture = westerman
+}		
+e_reach = {
+ 
+	color={ 13 96 0 }
+	color2={ 248 203 48 }
+			
+	allow = {
+		e_reach = { has_holder = yes }
+	}
+	
+	name_tier = king
+	
+	dignity=20
+	
+	capital = 267 # Highgarden
+	culture = reachman
+}	
+e_stormlands = {
+ 
+	color={ 208 157 0 }
+	color2={ 255 255 255 }
+					
+	allow = {
+		e_stormlands = { has_holder = yes }
+	}
+	capital = 304 # Storm's End - House Baratheon
+	culture = stormlander
+	
+	name_tier = king
+	
+	dignity=20
+
+	title = "Sking"
+	foa = "Sking_FOA"
+	title_female = "Sking_female"
+}	
+e_dorne = {
+ 
+	color={ 215 115 0 }
+	color2={ 200 0 0 }
+						
+	allow = {
+		e_dorne = { has_holder = yes }
+	}
+	
+	capital = 352 # Sunspear
+	culture = stone_dornish
+	
+	name_tier = king
+	
+	dignity=20
+
+	title = "DORNEPRINCE"
+	title_female = "DORNEPRINCE_female"
+	foa = "DORNEPRINCE_FOA"		
+}	
+e_riverlands = {
+	color = { 0 0 200 }
+	color2 = { 0 130 255 }
+	#culture = riverlander
+	
+	ironborn = "׀וך"
+	old_ironborn = "׀וך"
+	
+	northman = "׀וך ט ױמכלמג"
+	hill_clansman = "׀וך ט ױמכלמג"
+	crannogman = "׀וך ט ױמכלמג"
+	crackclawmen = "׀וך ט ױמכלמג"
+	moon_clansman = "׀וך ט ױמכלמג"
+	skagosi = "׀וך ט ױמכלמג"
+	thenn = "׀וך ט ױמכלמג"
+	old_first_man = "׀וך ט ױמכלמג"
+	wildling = "׀וך ט ױמכלמג"
+	frozen_shore = "׀וך ט ױמכלמג"
+	hornfoot = "׀וך ט ױמכלמג"
+	cannibal_clan = "׀וך ט ױמכלמג"
+	
+	allow = {
+		e_riverlands = { has_holder = yes }
+	}
+	
+	name_tier = king
+	
+	dignity=15
+	
+	#capital = 101 #Riverrun
+	culture = riverlander
+
+}
+e_iron_throne = {
+
+	color={ 130 100 100 }
+	color2={ 220 220 20 }
+	
+	#capital = 226 # Kings Landing
+	
+	name_tier = king
+	title_prefix = "SEVEN_KINGDOMS_OF"
+	# title = "KING_TITLE"
+	# title_female = "QUEEN_TITLE"
+	# foa = "YOUR_GRACE_TITLE"
+		
+	dignity = 30
+	
+	k_crownlands = {
+		color={ 190 30 120 }				#edit
+		color2={ 248 203 48 }				#edit
+			
+		#capital = 226 # Kings Landing		
+		
+		culture = crownlander
+		
+		# name_tier = duke
+		# title = "LORDPARAMOUNT"
+		# title_female = "LORDPARAMOUNT_female"
+		# foa = "LORDPARAMOUNT_FOA"
+
+		#short_name = yes
+		
+		allow = {			
+			k_crownlands = { is_titular = no }
+			NOT = { has_landed_title = e_iron_throne }
+			NOT = { has_landed_title = e_new_valyria }
+			custom_tooltip = {
+				text = TOOLTIPCROWNLANDSaegons_conquest
+				hidden_tooltip = { NOT = { has_global_flag = aegons_conquest } }
+			}	
+			hidden_tooltip = { NOT = { culture_group = winter_group } }
+		}
+		
+		d_kings_landing = {
+			color={ 203 33 129 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_kings_landing = {
+				color={ 153 20 120 }
+				color2={ 255 255 255 }
+			
+				b_red_keep = {
+				}
+				b_kings_landing = {
+				}
+				b_great_sept_of_baelor = {
+				}
+				b_dragon_gate = {
+				}
+				b_white_sword_tower = {
+				}
+				b_warriors_sons = {
+				}
+				b_kings_gate = {
+				}
+			}
+			c_bramsfort = {
+				color={ 203 33 129 }
+				color2={ 255 255 255 }
+			
+				b_bramsfort = {
+				}
+				b_carpenter_town = {
+				}
+				b_cavaillon = {
+				}
+				b_venatfort = {
+				}
+			}
+			c_farring_cross = {
+				color={ 157 46 109 }
+				color2={ 255 255 255 }
+				
+				name_tier=baron
+
+				b_farring_cross = {
+				}
+				b_largetree = {
+				}
+				b_lecheylard = {
+				}
+				b_primfort = {
+				}
+			}
+			c_dalston_keep = {
+				color={ 190 30 120 }
+				color2={ 255 255 255 }
+			
+				b_dalston_keep = {
+				}
+				b_dalston_town = {
+				}
+				b_farreach = {
+				}
+				b_lionsbane  = {
+				}
+			}
+			c_langward_hall = {
+				color={ 195 70 120 }
+				color2={ 255 255 255 }
+				
+				b_langward_hall = {
+				}
+				b_mormead  = {
+				}
+				b_corcourt = {
+				}
+			}
+		}
+		
+		d_blackwater_rush = {
+			color={ 157 46 109 }
+			color2={ 255 255 255 }
+			
+			#capital = 201 # Mosborough
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_mosborough = {
+				color={ 203 33 129 }
+				color2={ 255 255 255 }
+			
+				b_mosborough = {
+				}
+				b_yore = {
+				}
+				b_faybank = {
+				}
+				b_glassley = {
+				}
+				b_silverfall = {
+				}
+				b_janview = {
+				}
+			}
+
+			c_byford = {
+				color={ 157 46 109 }
+				color2={ 255 255 255 }
+				
+				b_byford = {
+				}
+				b_alagon = {
+				}
+				b_eridell = {
+				}
+				b_middleton ={
+				}
+				b_janacre = {
+				}
+				b_byford_sept = {
+				}
+			}
+			
+			c_great_fork = {
+				color={ 203 33 129 }
+				color2={ 255 255 255 }
+			
+				b_riverhold = {
+				}
+				b_ferrykeep = {
+					coat_of_arms = {	#House Corne
+						template = 0
+						layer = {
+							texture = 10
+							texture_internal = 66
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion = the_seven
+					}
+				}
+				b_mallowhall = {
+				}
+				b_agramunt = {
+				}
+				b_orley = {
+				}
+			}
+		}
+		d_rosby = {
+			color={ 245 71 173 }
+			color2={ 255 255 255 }
+			
+			capital = 211 #Rosby
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_rosby = {
+				color={ 175 65 113 }
+				color2={ 255 255 255 }
+			
+				b_rosby = {
+				}
+				b_courtdell = {
+				}
+				b_drakecastle = {
+					coat_of_arms = { #House Cargyll
+						template = 0
+						layer = {
+							texture = 10
+							texture_internal = 41
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion = the_seven
+					}
+				}
+				b_strongmead = {
+				}
+				b_prada = {
+				}
+				b_rosby_sept = {
+				}
+				b_belgrave_hall = {
+					name_tier = count
+					coat_of_arms = { #House Belgrave
+						template = 0
+						layer = {
+							texture = 10
+							texture_internal = 77
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion = the_seven
+					}
+				}
+			}
+			c_edgerton = {
+				color={ 175 65 113 }
+				color2={ 255 255 255 }
+			
+				b_edgerton = {
+				}
+				b_clinton = {
+				}
+				b_davaye = {
+				}
+				b_fuisse  = {
+				}
+			}		
+		}
+		d_hayford = {
+			color={ 209 107 164 }
+			color2={ 255 255 255 }
+			
+			capital = 224 #Hayford
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			c_hayford = {
+				color={ 245 71 173 }
+				color2={ 255 255 255 }
+			
+				b_hayford = {
+				}
+				b_starrydell = {
+				}
+				b_dragongur = {
+				}
+				b_summermeadow = {
+				}
+				b_goldfield = {
+				}
+			}
+
+			c_rayonet = {
+				color={ 175 65 113 }
+				color2={ 255 255 255 }
+				
+				b_rayonet = {
+				}
+				b_barrowbridge = {
+				}
+				b_swynbank = {
+				}
+				b_faykeep = {
+				}
+			}
+			c_sows_horn = {
+				color={ 203 33 129 }
+				color2={ 255 255 255 }
+				
+				name_tier=baron
+			
+				b_sows_horn = {
+				}
+				b_dorhill = {
+				}
+				b_westice = {
+				}
+				b_morwyn = {
+				}
+			}
+
+		}
+		d_stokeworth = {
+			color={ 163 48 114 }
+			color2={ 255 255 255 }
+			
+			capital = 225 #Stokeworth
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			c_stokeworth = {
+				color={ 174 51 122 }
+				color2={ 255 255 255 }
+				
+				b_stokeworth  = {
+				}
+				b_shadebush = {
+				}
+				b_lorness = {
+				}
+				b_valbridge = {
+				}
+				b_stokeworth_sept = {
+				}
+			}
+			c_byrch_hall = {
+				color={ 203 33 129 }
+				color2={ 255 255 255 }
+				
+				b_byrch_hall = {
+				}
+				b_pallars = {
+				}
+				b_whitemoor = {
+				}
+				b_tremp = {
+				}
+			}
+
+		}
+		d_duskendale = {
+			color={ 203 89 153 }
+			color2={ 255 255 255 }
+			
+			capital = 212 #Duskendale
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_duskendale = {
+				color={ 175 65 113 }
+				color2={ 255 255 255 }
+				
+				b_dun_fort = {
+				}
+				b_duskendale = {
+				}
+				b_dusk_sept = {
+				}
+				b_newedge = {
+				}
+				b_highley = {
+				}
+				b_woodhollow = {
+					coat_of_arms = { #House Darke
+						template = 0
+						layer = {
+							texture = 10
+							texture_internal = 59
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion = the_seven
+					}
+				}
+				b_hammerhold = {
+					coat_of_arms = { #House Rykker
+						template = 0
+						layer = {
+							texture = 10
+							texture_internal = 15
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion = the_seven
+					}
+				}
+			}
+			c_antlers = {
+				color={ 157 46 109 }
+				color2={ 255 255 255 }
+				
+				b_antlers = {
+				}
+				b_byfield = {
+				}
+				b_loarre = {
+					coat_of_arms = {	#House Branfield
+						template = 0
+						layer = {
+							texture = 7
+							texture_internal = 80
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion=the_seven
+					}
+				}
+				b_witchville = {
+				}
+				b_moorham = {
+				}
+			}
+			c_brindlewood = {
+				color={ 245 71 173 }
+				color2={ 255 255 255 }
+				
+				b_brindlewood = {
+				}
+				b_pauzin = {
+				}
+				b_estershade = {
+				}
+				b_violetbarrow = {
+				}
+			}
+			c_rollingford = {
+				color={ 245 71 173 }
+				color2={ 255 255 255 }
+			
+				b_rollingford = {
+				}
+				b_dragonmarsh = {
+				}
+				b_montroll = {
+				}
+				b_stoneroll = {
+				}
+			}
+			c_hollard_hall = {
+				color={ 153 20 120 }
+				color2={ 255 255 255 }
+				
+				b_hollard_hall = {
+				}
+				b_saissac = {
+				}
+				b_bluedell = {
+				}
+				b_seamill = {
+				}
+			}
+		}
+		d_kingswood = {
+			color={ 225 94 168 }
+			color2={ 255 255 255 }
+		
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_greensward = {
+				color={ 203 33 129 }
+				color2={ 255 255 255 }
+			
+				b_greensward = {
+				}
+				b_belhedge = {
+				}
+			}
+			c_attadale = {
+				color={ 157 46 109 }
+				color2={ 255 255 255 }
+				
+				b_attadale = {
+				}
+				b_apt = {
+				}
+				b_opaldell = {
+				}
+				b_violetley = {
+				}
+			}
+			
+			c_bywater = {
+				color={ 175 65 113 }
+				color2={ 255 255 255 }
+			
+				b_bywater = {
+				}
+				b_drakebridge = {
+				}
+				b_belmount = {
+				}
+				b_lochmont = {
+				}
+				b_kingswood_sept = {
+				}
+			}
+
+			c_chyttering_brook = {
+				color={ 245 71 173 }
+				color2={ 255 255 255 }
+				
+				b_chyttering_brook = {
+					coat_of_arms = { #House Chyttering
+						template = 0
+						layer = {
+							texture = 10
+							texture_internal = 7
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion = the_seven
+					}
+				}
+				b_wendwater = {
+					coat_of_arms = { #House Wendwater
+						template = 0
+						layer = {
+							texture = 10
+							texture_internal = 22
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion = the_seven
+					}
+				}
+				b_wendbridge = {
+				}
+				b_aelwick = {
+				}
+				b_lowercliff = {
+				}
+			}
+			
+		}
+		d_masseys_hook = {
+			color={ 175 65 113 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_stonedance = {
+				color={ 157 46 109 }
+				color2={ 255 255 255 }
+				
+				b_stonedance = {
+				}
+				b_luna = {
+				}
+				b_glasswater_hall = {
+					name_tier = count #Lord Sweet seat
+				}
+				b_fayham = {
+				}
+				b_saneldell = {
+				}
+				b_stonedance_sept = {
+				}
+			}
+			c_woodmere = {
+				color={ 245 71 173 }
+				color2={ 255 255 255 }
+			
+				b_woodmere = {
+				}
+				b_crystalmere = {
+				}
+				b_rockley = {
+				}
+				b_esterhill = {
+				}
+			}				
+		}
+	}
+
+	k_north = {
+
+		color={ 250 250 250 }
+		color2={ 220 220 220 }
+		
+		capital = 47 #Winterfell
+		
+		# name_tier = duke
+		
+		# title = "LORDPARAMOUNT"
+		# title_female = "LORDPARAMOUNT_female"
+		# foa = "LORDPARAMOUNT_FOA"
+
+		#short_name = yes
+		
+		allow = {
+			e_north = { has_holder = no }
+			hidden_tooltip = { NOT = { culture_group = winter_group } }
+		}
+		
+		culture = northman
+		
+		d_winterfell = {
+			color={ 149 147 147 }
+			color2={ 255 255 255 }
+			
+			capital = 47 #Winterfell
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_winterfell = {
+				color={ 159 159 159 }
+				color2={ 255 255 255 }
+				
+				holy_site = old_gods
+				holy_site = old_gods_reformed
+				holy_site = beyond_wall_old_gods
+				holy_site = beyond_wall_old_gods_reformed
+				holy_site = thenn_rel
+				holy_site = mountain_old_gods
+			
+				b_winterfell = {
+				}
+				b_wintertown = {
+				}
+				b_winterwood = {
+				}
+				b_whitegate = {
+				}
+				b_brandonburgh = {
+				}
+				b_coldstream = {
+				}
+			}
+			c_castlecerwyn = {
+				color={ 168 168 168 }
+				color2={ 255 255 255 }
+			
+				b_castlecerwyn = {
+				}
+				b_theeagletower = {
+				}
+				b_thorpe = {
+				}
+			}
+			c_dawnforest = {
+				color={ 162 162 162 }
+				color2={ 255 255 255 }
+				
+				name_tier = baron
+			
+				b_glencastle = {
+				}
+				b_childrenscopse = {
+				}
+			}
+			c_kingscourse = {
+				color={ 165 165 165 }
+				color2={ 255 255 255 }
+				
+				name_tier = baron
+			
+				b_wayfarerswatch = {
+				}
+				b_travelton = {
+				}
+				b_southerway = {
+				}
+			}
+			c_torrhenssquare = {
+				color={ 156 156 156 }
+				color2={ 255 255 255 }
+				
+				name_tier = baron
+			
+				b_torrhenssquare = {
+				}
+				b_henslaketon = {
+				}
+				b_eastedgebarrens = {
+				}
+			}
+		}
+		d_lasthearth = {
+			color={ 184 182 182 }
+			color2={ 255 255 255 }
+			
+			capital = 25 #Last Hearth
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_lasthearth = {
+				color={ 184 184 184 }
+				color2={ 255 255 255 }
+				
+				b_lasthearth = {
+				}
+				b_woodhaven = {
+				}
+				b_fellber = {
+				}
+				b_northwold = {
+				}
+			}
+			c_lonelyhills = {
+				color={ 187 187 187 }
+				color2={ 255 255 255 }
+				
+				b_loftyfort = {
+				}
+				b_longlaketown = {
+				}
+				b_umberleigh = {
+				}
+			}
+			c_lastriver = {
+				color={ 183 183 183 }
+				color2={ 255 255 255 }
+				
+				b_ashkeep = {
+				}
+				b_northpost = {
+				}
+				b_snowmelthall = {
+				}
+			}
+			c_sealshore = {
+				color={ 204 204 204 }
+				color2={ 255 255 255 }
+				
+				b_fisherhall = {
+				}
+				b_wintrackpost = {
+				}
+			}
+		}
+		d_karhold = {
+			color={ 182 180 130 }
+			color2={ 255 255 255 }
+			
+			capital = 29 #Karhold
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_karhold = {
+				color={ 207 207 207 }
+				color2={ 255 255 255 }
+				
+				b_karhold = {
+				}
+				b_barbleton = {
+				}
+				b_eastharbor = {
+				}
+				b_snowdell = {
+				}
+				b_greyclifftower = {
+				}
+			}
+			c_eastmelt = {
+				color={ 202 202 202 }
+				color2={ 255 255 255 }
+				
+				b_karlspost = {
+				}
+				b_eastmelt = {
+				}
+			}
+			c_weepingbay = {
+				color={ 151 152 153 }
+				color2={ 255 255 255 }
+			
+				b_rangersrefuge = {
+				}
+				b_gancliff = {
+				}
+			}
+		}
+		d_dreadfort = {
+			color={ 200 176 176 }
+			color2={ 255 255 255 }
+			
+			capital = 53 #The Dreadfort
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+		
+			c_dreadfort = {
+				color={ 153 153 153 }
+				color2={ 255 255 255 }
+			
+				b_dreadfort = {
+				}
+				b_weeping = {
+				}
+				b_windygrove = {
+				}
+				b_fleischerskeep = {
+				}
+				b_boltongate = {
+				}
+			}
+			c_aylesvale = { # Highpoint
+				color={ 180 180 180 }
+				color2={ 255 255 255 }
+				
+				b_aylestor = {
+				}
+				b_lakehold = {
+				}
+				b_deepcroft = {
+				}
+			}
+			c_ethering = {
+				color={ 212 212 212 }
+				color2={ 255 255 255 }
+				
+				b_ethersfort = {
+				}
+				b_etherington = {
+				}
+				b_ethersgrove = {
+				}
+			}
+			c_overton = {
+				color={ 156 156 156 }
+				color2={ 255 255 255 }
+			
+				b_thenarrowseerstower = {
+				}
+				b_overton = {
+				}
+				b_weeperford = {
+				}
+			}
+		}
+		d_whiteharbor = {
+			color={ 213 216 212 }
+			color2={ 255 255 255 }
+			
+			capital = 62 #White Harbor
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_whiteharbor = {
+				color={ 141 141 141 }
+				color2={ 255 255 255 }
+				
+				holy_site = lady_of_the_waves
+				holy_site = lady_of_the_waves_reformed
+			
+				b_newcastle = {
+				}
+				b_whiteharbor = {
+				}
+				b_wolfsden = {
+				}
+				b_septofsnow = {
+				}
+				b_hardmead = {
+				}
+				b_alethorp = {
+				}
+				b_sallybrook = {
+				}
+			}
+			c_whiteknife = {
+				color={ 147 146 140 }
+				color2={ 255 255 255 }
+			
+				b_whitecreekcastle = {
+				}
+				b_chalkchildsseat = {
+				}
+				b_brokersbrook = {
+				}
+			}
+			c_whitford = {
+				color={ 138 138 138 }
+				color2={ 255 255 255 }
+			
+				b_fordswatch = {
+				}
+				b_whitfordtown = {
+				}
+				b_waterley = {
+				}
+			}
+		}
+		d_oldcastle = {
+			color={ 113 116 112 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}		
+		
+			c_oldcastle = {
+				color={ 132 132 132 }
+				color2={ 255 255 255 }
+		
+				b_oldcastle = {
+				}
+				b_bitesmouthtown = {
+				}
+				b_thetooth = {
+				}
+			}
+			c_blackpool = {
+				color={ 200 200 200 }
+				color2={ 255 255 255 }
+				
+				b_blackpool = {
+				}
+				b_blacktown = {
+				}
+				b_waterford2 = {
+				}
+				b_longhouse = {
+				}
+				b_shoreguard = {
+				}
+				b_southsnow = {
+				}
+				b_oldcliff = {
+				}
+			}
+		}	
+		d_northclans = {
+			color={ 172 132 132 }
+			color2={ 255 255 255 }
+		
+			#capital = 22 #Arrendell
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			culture = hill_clansman
+		
+			c_crowsedge = {
+				color={ 225 225 225 }
+				color2={ 255 255 255 }
+			
+				b_wullseat = {
+				}
+				b_bucketon = {
+				}
+				b_coldcove = {
+				}
+				b_burley = {
+				}
+			}
+			c_arrendell = {
+				color={ 211 211 211 }
+				color2={ 255 255 255 }
+				
+				b_wolfscroft = {
+				}
+				b_arwoodtower = {
+				}
+				b_knottheartglen = {
+				}
+			}
+			c_pinesend = {
+				color={ 219 219 219 }
+				color2={ 255 255 255 }
+				
+				b_firmont = {
+				}
+				b_harclay = {
+				}
+				b_treesedge = {
+				}
+				b_highwoodhall = {
+				}
+			}
+			c_shadowmoor = {
+				color={ 216 216 216 }
+				color2={ 255 255 255 }
+				
+				b_moorhold = {
+				}
+				b_darkwood = {
+				}
+				b_highheath = {
+				}
+			}
+			c_flintkeep = {
+				color={ 202 202 202 }
+				color2={ 255 255 255 }
+				
+				b_flintkeep = {
+				}
+				b_brinmore = {
+				}
+				b_woodend = {
+				}
+			}
+		}
+		
+		c_bearisland =  {
+			color={ 172 185 172 }
+			color2={ 255 255 255 }
+			
+			b_bearislandhall = {
+			}
+			b_woodfootwatch = {
+			}
+			b_bearstone = {
+			}
+			b_bearwood = {
+			}
+		}
+		c_moatcailin = {
+			color={ 126 126 126 }
+			color2={ 255 255 255 }
+				
+			b_childrenstower = {
+			}
+			b_gatehousetower = {
+			}
+			b_drunkardstower = {
+			}
+			b_elkstone = {
+			}
+		}
+		d_skagos = {
+			color={ 183 172 172 }
+			color2={ 255 255 255 }
+		
+			#capital = 31 #Kingshouse
+			culture = skagosi
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			 
+			c_kingshouse = {
+				color={ 198 198 198 }
+				color2={ 255 255 255 }
+				
+				b_kingshouse = {
+				}
+				b_snowrow = {
+				}
+			}
+			c_deepdown = {
+				color={ 195 195 195 }
+				color2={ 255 255 255 }
+				
+				b_deepdown = {
+				}
+				b_weirrocks = {
+				}
+			}
+			c_driftwoodhall = {
+				color={ 192 192 192 }
+				color2={ 255 255 255 }
+				
+				b_driftwoodhall = {
+				}
+				b_blizzardbarrow = {
+				}
+			}
+			c_skane = {
+				color={ 188 188 188 }
+				color2={ 255 255 255 }
+				
+				b_skane = {
+				}
+				b_lonely_hall = {
+				}
+			}
+		}
+		d_rills = {
+			color={ 202 208 201 }
+			color2={ 255 255 255 }
+			
+			capital = 41 #The Rills
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+		
+			c_rills = {
+				color={ 177 177 177 }
+				color2={ 255 255 255 }
+				
+				b_highbrooktower = {
+				}
+				b_coldbrooke = {
+				}
+				b_runletfort = {
+				}
+				b_manehall = {
+				}
+			}
+			c_witheredheath = {
+				color={ 183 183 183 }
+				color2={ 255 255 255 }
+				
+				b_skysmeet = {
+				}
+				b_red_barrow = {
+				}
+				b_wetrocks = {
+				}
+			}
+			c_blazewatercoast = { # Rillwater Crossing
+				color={ 186 186 186 }
+				color2={ 255 255 255 }
+				
+				b_saltspearkeep = {
+				}
+				b_brightrill = {
+				}
+				b_thesalt = {
+				}
+			}
+		}
+		d_stonyshore = {
+			color={ 192 170 140 }
+			color2={ 255 255 255 }
+				
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_stonyshore = {
+				color={ 180 180 180 }
+				color2={ 255 255 255 }
+				
+				b_reaverswatch = {
+				}
+				b_anglerage = {
+				}
+			}
+			c_bluehills = {
+				color={ 171 171 171 }
+				color2={ 255 255 255 }
+				
+				b_firsenfort = {
+				}
+				b_bluetower = {
+				}
+			}
+			c_seadragonpoint = {
+				color={ 174 174 174 }
+				color2={ 255 255 255 }
+				
+				b_seadragonwatch = {
+				}
+				b_dragonport = {
+				}
+			}
+		}	
+		d_wolfswood = {
+			color={ 217 216 236 }
+			color2={ 255 255 255 }
+		
+			capital = 35 #Deepwood
+
+			name_tier=baron
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_deepwood = {
+				color={ 42 42 42 }
+				color2={ 255 255 255 }
+				
+				name_tier=baron
+			
+				b_deepwoodmotte = {
+				}
+				b_frostypoint = {
+				}
+				b_shadythicket = {
+				}
+				b_wulfhall = {
+				}
+			}
+			c_blackgrove = { # Ironrath
+				color={ 171 171 171 }
+				color2={ 255 255 255 }
+			
+				b_blackgrove = {
+				}
+				b_copsetor = {
+				}
+			}
+			c_kingsgrove = {
+				color={ 175 175 175 }
+				color2={ 255 255 255 }
+				
+				b_tumbledown_tower = {
+				}
+				b_brierscroft = {
+				}
+				b_harclayhall = {
+				}
+			}
+			c_wolfswood = {
+				color={ 178 178 178 }
+				color2={ 255 255 255 }
+			
+				b_forestrefuge = {
+				}
+				b_croftersclearing = {
+				}
+				b_wolfwoodhide = {
+				}
+			}
+			c_acorngrove = {
+				color={ 181 181 181 }
+				color2={ 255 255 255 }
+			
+				b_grovefort = {
+				}
+				b_weirskags = {
+				}
+			}
+		}
+		d_barrowlands = {
+			color={ 163 155 155 }
+			color2={ 255 255 255 }
+		
+			capital = 46 #Barrowton
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+					
+			c_barrowton = {
+				color={ 168 168 168 }
+				color2={ 255 255 255 }
+				
+				holy_site = old_gods
+				holy_site = old_gods_reformed
+			
+				b_highbarrow = {
+				}
+				b_barrowton = {
+				}
+				b_brownbarrow = {
+				}
+				b_godshill = {
+				}
+				b_harwoodshold = {
+				}
+			}
+			c_spearmouth = {
+				color={ 40 40 40 }
+				color2={ 255 255 255 }
+			
+				b_lowbarrow = {
+				}
+				b_spearmouth = {
+				}
+				b_bentbarrow = {
+				}
+			}
+			c_fever = {
+				color={ 123 123 123 }
+				color2={ 255 255 255 }
+			
+				b_dunfort = {
+				}
+				b_feverreef = {
+				}
+			}
+		}
+		d_hornwood = { #Broken Branch
+			color={ 122 117 117 }
+			color2={ 255 255 255 }
+			
+			#capital = 60 #Hornwood
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_hornwood = {
+				color={ 147 147 147 }
+				color2={ 255 255 255 }
+			
+				b_castlehornwood = {
+				}
+				b_hunterslodge = {
+				}
+				b_hightree = {
+				}
+				b_manvers = {
+				}
+				b_bullstone = {
+				}
+			}
+			c_ramsgate = {
+				color={ 144 144 144 }
+				color2={ 255 255 255 }
+			
+				b_ramsgate = {
+				}
+				b_fleecemarket = {
+				}
+				b_thebrokenbranchsmouth = {
+				}
+			}
+			c_widowswatch = {
+				color={ 141 141 141 }
+				color2={ 255 255 255 }
+			
+				b_widowswatch = {
+				}
+				b_westraton = {
+				}
+				b_isfield = {
+				}
+				b_jaw_hill = {
+				}
+			}
+			c_sheepsheadhills = {
+				color={ 150 150 150 }
+				color2={ 255 255 255 }
+			
+				b_shepherdshearth = {
+				}
+				b_brokenbranchhead = {
+				}
+			}
+		}
+		d_theneck = {
+			color={ 100 99 100 }
+			color2={ 255 255 255 }
+			
+			capital = 71 #Greywater Watch
+			culture = crannogman
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+		
+			c_greywaterwatch = {
+				color={ 129 129 129 }
+				color2={ 255 255 255 }
+			
+				b_greywaterwatch = {
+				}
+				b_thegreydun = {
+				}
+				b_thesunkgrove = {
+				}
+				b_reedhall = {
+				}
+				b_cray = {
+				}
+			}
+			c_greycrann = {
+				color={ 120 120 120 }
+				color2={ 255 255 255 }
+			
+				b_tammscrannog = {
+				}
+				b_floathold = {
+				}
+			}
+			c_churwell = {
+				color={ 117 117 117 }
+				color2={ 255 255 255 }
+			
+				b_churwellcrannog = {
+				}
+				b_churwellford = {
+				}
+			}
+			c_silvereed = {
+				color={ 114 114 114 }
+				color2={ 255 255 255 }
+			
+				b_fendun = {
+				}
+				b_toirnsbog = {
+				}
+			}
+		}
+		d_flintsfinger = {
+			color={ 166 157 157 }
+			color2={ 255 255 255 }
+			
+			capital = 73 # Flint's Finger
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_flintsfinger = {
+				color={ 117 117 117 }
+				color2={ 255 255 255 }
+			
+				b_flintsfinger = {
+				}
+				b_flintsthumb = {
+				}
+			}
+			c_capekraken = {
+				color={ 135 135 135 }
+				color2={ 255 255 255 }
+			
+				b_greencliffe = {
+				}
+				b_ringrock = {
+				}
+			}
+			c_flintcliffs = {	
+				color={ 114 114 114 }
+				color2={ 255 255 255 }
+			
+				b_clifftower = {
+				}
+				b_arrowgrassroad = {
+				}
+			}
+		}
+	}
+
+	k_riverlands = {
+		#capital = 101 #Riverrun
+		color = { 0 0 255 }
+		color2 = { 0 130 255 }
+		culture = riverlander
+		
+		# name_tier = duke
+		# title = "LORDPARAMOUNT"
+		# title_female = "LORDPARAMOUNT_female"
+		# foa = "LORDPARAMOUNT_FOA"
+
+		#short_name = yes
+		
+		allow = {
+			e_riverlands = { has_holder = no }
+			hidden_tooltip = { NOT = { culture_group = winter_group } }
+		}
+		
+		d_harrenhal = {
+			capital = 107 #Harrenhall
+			color = { 26 26 124 }
+			color2 = { 255 255 0 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			dignity = 10
+			
+			c_harrenhal = {
+				color = { 105 105 246 }
+				color2 = { 255 255 0 }
+				
+				dignity = 10
+				
+				holy_site = old_gods
+				holy_site = old_gods_reformed
+				holy_site = beyond_wall_old_gods
+				holy_site = beyond_wall_old_gods_reformed
+				holy_site = drowned_god
+				holy_site = drowned_god_reformed
+				holy_site = storm_god
+				holy_site = thenn_rel
+				holy_site = mountain_old_gods
+				holy_site = aztec_reformed
+				holy_site = aztec
+				
+				b_harrenhal = {
+				}
+				b_harrentown = {
+				}
+				b_upstream = {
+				}
+				b_harrenhal_sept = {
+				}
+				b_kingharren1 = {
+				}
+				b_kingharren2 = {
+				}
+				b_kingharren3 = {
+				}
+			}		
+			c_atranta = {
+				color = { 137 137 193 }
+				color2 = { 255 255 0 }
+				b_atranta = {
+				}
+				b_knightwick = {
+				}
+				b_rastrick = {
+				}
+				b_tumblersfalls = {
+				}
+			}
+			c_lolliston = {
+				color = { 10 50 235 }
+				color2 = { 255 255 0 }
+				b_lollistonkeep = {
+				}
+				b_lolliston = {
+				}
+				b_brightbridge = {
+				}
+				b_notton = {
+				}
+			}		
+		}
+		d_esgaroth = {
+			color = { 0 0 200 }
+			color2 = { 130 0 50 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			c_esgaroth = { #Butterwell
+				color = { 26 26 124 }
+				color2 = { 255 255 0 }
+				b_butter_hall = {
+				}
+				b_salmonby = {
+				}
+				b_lofthouse = {
+				}
+				b_esgaroth_sept = {
+				}
+				b_whitewalls = {
+				}
+				b_cowstone = {
+				}
+			}
+			c_shoreham = {
+				color = { 63 63 255 }
+				color2 = { 255 255 0 }
+				
+				name_tier=baron
+				
+				b_shoreham = {
+				}
+				b_frogpool = {
+				}
+				b_oakworth = {
+				}
+				b_lakehall = {
+				}
+			}
+		}
+		d_riverrun = {
+			capital = 101 #Riverrun
+			color = { 0 0 255 }
+			color2 = { 130 0 50 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			dignity = 10
+			
+			c_riverrun = {
+				color = { 0 0 255 }
+				color2 = { 130 0 50 }
+				b_riverrun = {
+				}
+				b_riverruntown = {
+				}
+				b_riverrunsept = {
+				}
+				b_whentbridge = {
+				}
+				b_havercroft = {
+				}
+				b_greetland = {
+				}
+			}
+			c_turnbridge = {
+				color = { 105 105 246 }
+				color2 = { 130 0 50 }
+				b_sarwyckkeep = {
+				}
+				b_riverturn = {
+				}
+				b_turnbridge = {
+				}
+				b_brakenhill = {
+				}
+			}			
+			c_branstone = {
+				color = { 0 0 100 }
+				color2 = { 130 0 50 }
+				b_branstoneholdfast = {
+				}
+				b_branstone = {
+				}
+				b_stonemill = {	#Moved from Red Fork to place where Edmure fought battle near Stone Mill -Kuczaja
+				}
+			}
+			c_deddington = { #Deddington
+				color = { 34 34 207 }
+				color2 = { 50 180 255 }
+				b_deddington = {
+				}
+				b_molescroft = {
+				}				
+			}
+		}
+		d_thecrossing = {
+			capital = 77 # The Twins
+			color = { 0 0 100 }
+			color2 = { 100 100 150 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_thetwins = {
+				color = { 0 0 100 }
+				color2 = { 100 100 150 }
+				b_thetwins = {
+				}
+				b_sevenstreams = {
+				}
+				b_mistlewatch = {
+				}
+				b_greysept = {
+				}
+				b_hagsmire = {
+					coat_of_arms = {	#House Nayland
+						template = 0
+						layer = {
+							texture = 8
+							texture_internal = 45
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion = the_seven
+					}
+				}
+				b_hampole = {
+				}
+				
+			}
+			c_freylands = {
+				color = { 137 137 193 }
+				color2 = { 100 100 150 }
+				
+				name_tier = baron
+				
+				b_fairstead = {
+				}
+				b_carcroft = {
+				}
+				b_riverinn = {
+				}
+				b_firbeck = {
+				}
+			}
+			c_mistlewood = {
+				color = { 34 34 207 }
+				color2 = { 100 100 150 }
+				b_charlscastle = {
+				}
+				b_charlton = {
+				}
+				b_hood_green = {
+				}
+			}
+			c_erenford = {
+				color = { 63 63 255 }
+				color2 = { 220 180 255 }
+				
+				name_tier = baron
+				
+				b_erenfordhall = {
+				}
+				b_erenfordtown = {
+				}
+				b_broadstream = {
+				}
+				b_micklebring = {
+				}
+			}
+		}
+		d_oldstones = {
+			#capital = 79 # Seagard
+			color = { 105 105 246 }
+			color2 = { 220 180 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_seagard = {
+				color = { 34 34 207 }
+				color2 = { 220 180 255 }
+				b_seagardcastle = {
+				}
+				b_seagard = {
+				}
+				b_fishville = {
+				}
+				b_seawatch = {
+				}
+				b_seagard_sept = {
+				}
+				b_rawmarsh = {
+				}
+			}
+			c_oldstones = {
+				color = { 0 0 100 }
+				color2 = { 220 180 255 }
+				b_oldstones = {
+				}
+				b_pitford = {
+				}
+				b_silkstone = {
+				}
+				b_letwell = {
+				}
+				b_hunshelf = {
+				}
+			}
+			c_rushmoor = {
+				color = { 105 105 246 }
+				color2 = { 100 100 150 }
+				b_moorkeep = {
+				}
+				b_moorville = {
+				}
+				b_rushmoor = {
+				}
+				b_elsecar = {
+				}
+			}	
+			c_martletbay = {
+				color = { 137 137 193 }
+				color2 = { 220 180 255 }
+
+				name_tier=baron
+				
+				b_martletnest = {
+				}
+				b_martlethill = {
+				}
+				b_silversprings = {
+				}
+				b_braithwell = {
+				}
+			}
+			c_gravesham = {
+				color = { 63 63 255 }
+				color2 = { 220 180 255 }
+				b_graveshamkeep = {
+				}
+				b_gravesham = {
+				}
+				b_cragg_vale = {
+				}
+			}
+			c_capeofeagles = {
+				color = { 105 105 246 }
+				color2 = { 100 100 150 }
+				
+				name_tier = baron
+				
+				b_eagleseyrie = {
+				}
+				b_eaglestown = {
+				}
+				b_kine_moor_2 = {
+				}
+			}
+		}
+		d_blackwood = {
+			capital = 90 #Blackwood Vale
+			color = { 137 137 193 }
+			color2 = { 0 0 0 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_blackwoodvale = {
+				color = { 137 137 193 }
+				color2 = { 0 0 0 }
+				b_raventreehall = {
+				}
+				b_lushton = {
+				}
+				b_oldgodshill = {
+				}
+				b_woodford = {
+				}
+				b_woodhedge = {
+				}
+				b_battle_valley = {
+				}
+				b_crossbow_ridge = {
+				}
+				b_claypool = {
+				}
+				b_raventreehall_temple = {
+				}
+			}
+			c_maidstone = {
+				color = { 34 34 207 }
+				color2 = { 0 0 0 }
+				b_maidstone = {
+				}
+				b_maidtown = {
+				}
+				b_maidfalls = {
+				}
+				b_oxenhope = {
+				}
+			}
+			c_blackrush = {
+				color = { 105 105 246 }
+				color2 = { 0 0 0 }
+				b_halterfalls = {
+				}
+				b_shawneytown = {
+				}
+				b_riverhalt = {
+				}
+				b_liversedge = {
+				}
+			}
+			c_fairmarket = {
+				color = { 0 0 100 }
+				color2 = { 0 0 0 }
+				
+				name_tier=baron
+				
+				b_fairmarketcastle = {
+				}
+				b_fairmarket = {
+				}
+				b_ramsford = {
+				}
+				b_fairmarket_sept = {
+				}
+				b_crossflatts = {
+				}
+			}
+		}
+		d_southstone = {
+			capital = 91 #Stone Hedge
+			color = { 63 63 255 }
+			color2 = { 100 70 0 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_stonehedge = {
+				color = { 34 34 207 }
+				color2 = { 100 70 0 }
+				b_stonehedge = {
+				}
+				b_lambswold = {
+				}
+				b_halfway = {
+				}
+				b_mudford = {
+				}
+				b_stonehedge_sept = {
+				}
+				b_waspwood = {
+				}
+				b_rutting_meadow = {
+				}
+			}
+			c_medway = {
+				color = { 0 0 100 }
+				color2 = { 100 70 0 }
+				b_castlelynchester = {
+				}
+				b_medway = {
+				}
+				b_sallydance = {
+				}
+				b_crigglestone = {
+				}
+			}
+			c_goodbrook = {
+				color = { 34 34 207 }
+				color2 = { 255 255 0 }
+				b_goodbrook = {
+				}
+				b_goodbrooktown = {
+				}
+				b_goodbrooktown2 = {
+				}
+				b_lightcliffe = {
+				}
+			}
+		}
+		d_acornsridge = {
+			color = { 120 120 239 }
+			color2 = { 255 150 0 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_pinkmaiden = {
+				color = { 34 34 207 }
+				color2 = { 255 150 0 }
+				b_pinkmaidencastle = {
+				}
+				b_broadfield = {
+				}
+				b_brockhall = {
+				}
+				b_pinkmaidensept = {
+				}
+				b_muddleshaw = {
+				}
+				b_mummersford = {
+				}
+			}
+			c_stoneysept = {
+				color = { 0 0 100 }
+				color2 = { 255 150 0 }
+				
+				name_tier = baron
+				
+				holy_site = the_seven
+				
+				b_greystoneholdfast = {
+				}
+				b_stoneysept = {
+				}
+				b_stoneysept_sept = {
+				}
+				b_belltower = {
+				}
+			}
+			c_castlewood = {
+				color = { 112 112 223 }
+				color2 = { 255 150 0 }
+				
+				b_castlewood = {
+				}
+				b_old_beehive = {
+				}
+				b_three_stones = {
+				}
+				b_winfield = {
+				}
+			}
+		}
+		d_wayfarersrest = {
+			color = { 0 0 100 }
+			color2 = { 100 100 150 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_wayfarersrest = {
+				color = { 137 137 193 }
+				color2 = { 100 70 0 }
+				b_wayfarersrest = {
+				}
+				b_wayfarersrest2 = {
+				}
+				b_wayfarersrest3 = {
+				}
+				b_brookfoot = {
+				}
+				b_peasedale = {
+				}
+				b_sherrer = {
+				}
+			}
+			c_acornhall = {
+				color = { 105 105 246 }
+				color2 = { 255 150 0 }
+				b_acornhall = {
+				}
+				b_greenfield_a = {
+				}
+				b_acornkeep = {
+				}
+				b_acornhall_sept = {
+				}
+				b_fulneck = {
+				}
+			}
+			c_highheart = {
+				color = { 105 105 246 }
+				color2 = { 100 70 0 }
+				
+				name_tier=baron
+				
+				b_highheart = {
+				}
+				b_scrafield = {
+				}
+				b_scrafstone = {
+				}
+				b_ryhill = {
+				}
+			}
+		}	
+		d_bayofclaws = {
+			capital = 94 #Darry
+			color = { 95 95 255 }
+			color2 = { 130 80 110 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			c_darry = { #Darry
+				color = { 34 34 207 }
+				color2 = { 50 180 255 }
+				b_castledarry = {
+				}
+				b_nutten = {		
+				}
+				b_riverbend = {
+				}
+				b_wendishtown = {
+				}
+				b_darry_sept = {
+				}
+				b_fangfoss = {
+				}
+				b_rosemallowpond = {
+				}				
+			}
+			c_harrowaystown = {
+				color = { 34 34 207 }
+				color2 = { 130 80 110 }
+				b_harroway = {
+				}
+				b_lordharrowaystown = {
+				}
+				b_harroway_sept = {
+				}
+				
+				b_gowdall = {
+				}
+				b_innatthecrossroads = {
+				}
+			}
+			c_saltpans = {
+				color = { 105 105 246 }
+				color2 = { 130 80 110 }
+				
+				name_tier=baron
+				
+				b_saltpansholdfast = {
+				}
+				b_saltpans = {
+				}
+				b_quietisle = {
+				}
+				b_cowden = {
+				}
+				b_hawick = {
+				}
+			}		
+			c_maidenpool = {
+				color = { 137 137 193 }
+				color2 = { 130 80 110 }
+				b_maidenpoolcastle = { }
+				b_maidenpool = {
+				}
+				b_maidenpool_sept = {
+				}
+				b_huggate = {
+				}
+				b_marblelake = {
+				}
+			}
+		}
+		d_willowwood = {
+			capital = 108 #Willowwood
+			color = { 20 20 255 }
+			color2 = { 130 0 50 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			c_willowwood = {
+				color = { 137 137 193 }
+				color2 = { 130 0 50 }
+				b_willowhill = {
+				}
+				b_crossways = {
+				}
+				b_smallwood = {
+				}
+				b_scarcroft = {
+				}
+				b_ferrybridge = {
+				}
+			}
+			c_wycombe = {
+				color = { 137 137 193 }
+				color2 = { 50 180 255 }
+
+				name_tier=baron
+
+				b_wycombe = {
+				}
+				b_wycombetown = {
+				}
+				b_wycombetown2 = {
+				}
+				b_lelley = {
+				}
+				b_wycombe_sept = {
+				}
+			}
+			c_chiltern = {
+				color = { 63 63 255 }
+				color2 = { 50 180 255 }
+				b_chilterncastle = {
+				}
+				b_fairmill = {
+				}
+				b_lakehaven  = {
+				}
+				b_fiftyford  = {
+				}
+				b_reedness = {
+				}
+			}
+		}	
+		d_trident = {
+			#capital = 94 #Green Fork - arbitrarily chosen. not many important settlements in duchy
+			color = { 34 34 207 }
+			color2 = { 50 180 255 }	
+
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}			
+			
+			
+			c_bluefork = {
+				color = { 105 105 246 }
+				color2 = { 50 180 255 }
+				b_sevenbridges = {
+				}
+				b_brokerstream = {
+				}
+				b_bybushmill = {
+				}
+				b_harswell = {
+				}
+			}
+			c_redfork = {
+				color = { 0 0 100 }
+				color2 = { 50 180 255 }
+
+				name_tier=baron
+
+				b_swamplake = {
+				}
+				b_waterford = {
+				}
+				b_kilpin = {
+				}
+				b_hartshead = {
+				}
+			}
+			c_stillfen = {
+				color = { 26 26 124 }
+				color2 = { 100 100 150 }
+				b_stillfen = {
+				}
+				b_redwoodmeadow = {
+				}
+				b_elmbridge  = {
+				}	
+				b_warter = {
+				}				
+			}
+		}
+	}
+
+	k_vale = {
+		color={ 22 191 255 }
+		color2={ 255 255 20 }
+		capital = 136 # The Eyrie
+		
+		culture = valeman
+		
+		# name_tier = duke
+		# title = "LORDPARAMOUNT"
+		# title_female = "LORDPARAMOUNT_female"
+		# foa = "LORDPARAMOUNT_FOA"
+		
+		#short_name = yes
+		
+		allow = {
+			e_vale = { has_holder = no }
+			hidden_tooltip = { NOT = { culture_group = winter_group } }
+		}
+		
+		d_the_giants_lance = {
+			color={ 116 218 248 }
+			color2={ 255 255 255 }
+			
+			capital = 136 # The Eyrie
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_the_eyrie = {
+				color={ 116 218 248 }
+				color2={ 255 255 255 }
+				
+				holy_site = the_seven
+				holy_site = mountain_old_gods
+				
+				b_the_eyrie = {
+				}
+				b_stone = {
+				}
+				b_snow = {
+				}
+				b_sky = {
+				}
+				b_the_gates_of_the_moon = {
+					name_tier=count
+				}
+				b_the_eyrie_sept = {
+				}
+			}
+			c_hearts_home = {
+				color={ 53 139 164 }
+				color2={ 255 255 255 }
+				
+				b_hearts_home = {
+				}
+				b_creek_castle = {
+				}
+				b_wingpass = {
+				}
+				b_hearts_home_sept = {
+				}
+			}
+			c_bloody_gate = {
+				color={ 38 170 208 }
+				color2={ 255 255 255 }
+				
+				holy_site = mountain_old_gods
+							
+				b_bloody_gate = {
+				}
+				b_godsroost = {
+				}
+				b_eaglethorpe = {
+				}
+			}
+		}
+		
+		d_gulltown = {
+			color={ 53 139 164 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+				hidden_tooltip = { NOT = { culture_group = unoccupied_group } }
+			}
+			
+			c_gulltown = {
+				color={ 63 149 174 }
+				color2={ 255 255 255 }
+				
+				holy_site = lady_of_the_waves
+				holy_site = lady_of_the_waves_reformed
+				
+				b_grafton_keep = {
+				}
+				b_gulltown = {
+				}
+				b_gull_tower = {
+				}
+				b_valeresk = {
+				}
+				b_titans_town = {
+				}
+				b_faithcliff = {
+				}
+				b_gulltown_sept = {
+				}
+				b_swallowcliffe = {
+				}
+			}
+		}	
+
+		d_the_sisters = {
+			color={ 38 203 251 }
+			color2={ 255 255 255 }
+			
+			culture = sisterman
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_sunderland = {
+				color={ 38 203 203 }
+				color2={ 255 255 255 }
+				
+				holy_site = lady_of_the_waves
+				holy_site = lady_of_the_waves_reformed
+				
+				b_sunderland_hall = {
+				}
+				b_crably = {
+				}	
+				b_skerry = {
+				}
+			}
+			
+			c_sweetsister = {
+				color={ 116 218 248 }
+				color2={ 255 255 255 }
+				
+				holy_site = lady_of_the_waves
+				holy_site = lady_of_the_waves_reformed
+				
+				b_sisterton = {
+				}
+				b_breakwater = {
+				}
+				b_sweetsister_sept = {
+				}
+				b_dordon = {
+				}
+			}
+			c_longsister = {
+				color={ 53 139 164 }
+				color2={ 255 255 255 }
+				
+				b_starsea_beacon = {
+				}
+				b_gimbleton = {
+				}
+				b_birchmoor = {
+				}
+			}
+			c_littlesister = {
+				color={ 38 170 208 }
+				color2={ 255 255 255 }
+				
+				b_havenry = {
+				} 
+				b_blackhaven_a = {
+				} 
+				b_polesworth = {
+				}
+			}
+		}
+		
+		d_northweald = {
+			color={ 65 204 244 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_coldwater_burn = {
+				color={ 116 218 248 }
+				color2={ 255 255 255 }
+				
+				b_coldwater_burn = {
+				}
+				b_rosesk = {
+				}
+				b_rosvale = {
+				}
+				b_coldwater_burn_sept = {
+				}
+			}
+			c_newkeep = {
+				color={ 53 139 164 }
+				color2={ 255 255 255 }
+				
+				b_newkeep = {
+				}
+				b_wiskyme = {
+				}
+				#b_moonlight = {
+				#}
+				b_wickby = {
+				}
+			}
+			c_snakewood = {
+				color={ 38 170 208 }
+				color2={ 255 255 255 }
+				
+				b_snakewood_seat = {
+				}
+				b_bycopse = {
+				}
+				b_woodvale = {
+				}
+				b_snakewood_sept = {
+				}
+			}
+		}
+		d_strongsong = {
+			color={ 26 137 169 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_strongsong = {
+				color={ 116 218 248 }
+				color2={ 255 255 255 }
+				
+				b_strongsong = {
+				}
+				b_belham = {
+				}
+				b_blackford = {
+				}
+				b_strongsong_sept = {
+				}
+				b_clifthaven = {
+				}
+				b_falkenham = {
+				}
+			}
+			c_crown_crag = {
+				color={ 53 139 164 }
+				color2={ 255 255 255 }
+				
+				b_the_crown = {
+				}
+				b_egenford = {
+				}
+				b_highcliff_watch = {
+				}
+			}
+			c_moonsgrey = {
+				color={ 38 170 208 }
+				color2={ 255 255 255 }
+				
+				b_renwick = {
+				}
+				b_menaskham = {
+				}
+				b_horcrag = {
+				}
+			}
+		}
+		d_eastweald = {
+			color={ 60 142 165 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_longbow_hall = {
+				color={ 53 139 164 }
+				color2={ 255 255 255 }
+				
+				b_longbow_hall = {
+				}
+				b_fletcham = {
+				}
+				b_hunters_point = {
+				}
+			}
+			
+			c_old_anchor = {
+				color={ 38 203 203 }
+				color2={ 255 255 255 }
+				
+				b_old_anchor = {
+				}
+				b_melford = {
+				}
+				b_grellport = {
+				}
+				b_old_anchor_sept = {
+				}
+			}
+			
+			c_upcliff = {
+				color={ 116 218 248 }
+				color2={ 255 255 255 }
+				
+				b_the_seas_watcher = {
+				}
+				b_grinport = {
+				}
+				b_crestwalk = {
+				}
+			}		
+		}
+		d_ironoaks = {
+			color={ 100 228 220 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_ironoaks = {
+				color={ 38 170 208 }
+				color2={ 255 255 255 }
+				
+				b_ironoaks_castle = {
+				}
+				b_wayncroft = {
+				}
+				b_timberton = {
+				}
+				b_waynford_watch = {
+				}
+				b_ironoaks_sept = {
+				}
+			}
+			c_bite_coast = {
+				color={ 38 170 208 }
+				color2={ 255 255 255 }
+				
+				name_tier = baron
+				
+				b_blackmund_tower = { } 
+				b_biteport = { }
+				b_sunnyvale = { }
+				b_biteport_sept = { }
+			}
+		}	
+		d_runestone = {
+			color={ 38 170 208 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_runestone = {
+				color={ 116 218 248 }
+				color2={ 255 255 255 }
+				
+				b_runestone = {
+				}
+				b_yohnston = {
+				}
+				b_falcon_tower = {
+				}
+				b_andleton = {
+				}
+				b_runestone_sept = {
+				}
+				b_bronzeguard = {
+				}
+			}	
+			c_narrowshade = {
+				color={ 96 188 248 }
+				color2={ 255 255 255 }
+				
+				b_dutton = {
+				}
+				b_stonewatch = {
+				}
+				b_rocky_hill = {
+				}
+			}
+			c_grey_glen = {
+				color={ 38 203 203 }
+				color2={ 255 255 255 }
+				
+				b_grey_glen = {
+				}
+				b_greypool = {
+				}
+				b_greymund = {
+				}
+				b_easenhall = {
+				}
+			}
+		}
+		d_redfort = {
+			color={ 58 180 255 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+				
+			c_redfort = {
+				color={ 38 203 203 }
+				color2={ 255 255 255 }
+				
+				b_redfort = {
+				}
+				b_horton = {
+				}
+				b_daynsquarry = {
+				}
+				b_daynsfort = {
+				}
+				b_redfort_sept = {
+				}
+			}	
+			c_ruthermont = {
+				color={ 116 218 248 }
+				color2={ 255 255 255 }
+				b_starfish_spire = {
+				}
+				b_traddleton = {
+				}
+				b_lambury = {
+				}
+				b_hethleham = {
+				}
+			}
+		}	
+		d_wickenden = {
+			color={ 18 115 143 }
+			color2={ 255 255 255 }
+		
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_wickenden = {
+				color={ 116 218 248 }
+				color2={ 255 255 255 }
+				
+				b_wickenden = {
+				}
+				b_candleton = {
+				}
+				b_beesbury = {
+				}
+				b_wickenden_sept = {
+				}
+			}
+			c_crabs_shore = {
+				color={ 53 139 164 }
+				color2={ 255 255 255 }
+				
+				b_artysfort = {
+				}
+				b_shorston = {
+				}
+				b_shelton = {
+				}
+			}
+			c_ninestars = {
+				color={ 38 170 208 }
+				color2={ 255 255 255 }
+				
+				name_tier=baron
+				
+				b_ninestars = {
+				}
+				b_barlebury = {
+				}
+				b_barleford = {
+				}
+			}
+			c_darkmoor = {
+				color={ 100 228 220 }
+				color2={ 255 255 255 }
+				
+				b_burning_heath = {
+				}
+				b_darkmoor = {
+				}
+				b_timmeton = {
+				}
+			}
+		}
+		###
+		d_the_bite = {
+			color={ 100 228 220 }
+			color2={ 255 255 255 }
+
+			culture = moon_clansman
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_scorched_vale = {
+				color={ 53 139 164 }
+				color2={ 255 255 255 }
+				b_blackholm = { }
+				b_alchebarge = { }
+				b_darkcroft = { }
+			}
+			c_crows_barrens = {
+				color={ 38 170 208 }
+				color2={ 255 255 255 }
+				b_stonekyme = { }
+				b_potterby = { }
+				b_rockle = { }
+			}
+		}
+		###
+		
+		d_the_fingers = {
+			color={ 53 139 164 }
+			color2={ 255 255 255 }
+		
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_wycliffe = {
+				color={ 116 218 248 }
+				color2={ 255 255 255 }
+				
+				b_scarle_keep = {
+				}
+				b_wycliffe = {
+				}
+			}
+			c_midlor_point = {
+				color={ 53 139 164 }
+				color2={ 255 255 255 }
+				
+				b_baelskeep = {
+				}
+				b_midlor_town = {
+				}
+			}
+			c_sunset_keep = {
+				color={ 38 170 208 }
+				color2={ 255 255 255 }
+				
+				b_sunset_keep = {
+				}
+				b_moor_green = {
+				}
+				b_sunset_keep_sept = {
+				}
+				b_clifston = {
+				}
+			}
+			c_pebble = {
+				color={ 38 203 203 }
+				color2={ 255 255 255 }
+				
+				b_pebb = {
+				}
+			}
+			c_the_paps = {
+				color={ 100 228 220 }
+				color2={ 255 255 255 }
+				
+				b_elseham = {
+				}
+				b_twostone = {
+				}
+				b_woodhull = {
+				}
+			}
+		}
+		
+		c_witch_isle = {
+			color={ 116 218 248 }
+			color2={ 255 255 255 }
+			
+			b_witch_isle = {
+			}
+			b_merlin_town = {
+			}
+			b_arwens_point = {
+			}
+		}
+	}
+	
+	k_iron_isles = {
+		color={ 65 65 65 }
+		color2={ 255 255 255 }
+		
+		#capital = 162 # Pyke
+		
+		culture = ironborn
+		
+		# name_tier = duke
+		# title = "LORDPARAMOUNT"
+		# title_female = "LORDPARAMOUNT_female"
+		# foa = "LORDPARAMOUNT_FOA"
+
+		#short_name = yes
+		
+		allow = {
+			e_iron_isles = { has_holder = no }
+			hidden_tooltip = { NOT = { culture_group = winter_group } }
+		}
+	
+		d_pyke = {
+			color={ 133 99 0 }
+			color2={ 255 255 255 }
+			
+			capital = 162 # Pyke
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_pyke = {
+				color={ 133 99 0 }
+				color2={ 255 255 255 }
+				
+				holy_site = drowned_god
+				holy_site = drowned_god_reformed
+				holy_site = storm_god
+			
+				b_pyke = {
+				}
+				b_seagrave = {
+				}			
+				b_brodsworth = {
+				}	
+				b_krakenrock = {
+				}		
+			}
+			c_iron_holt = {
+				color={ 175 135 0 }
+				color2={ 255 255 255 }
+				
+				b_iron_acton = {
+				}	
+				b_codd_hall = {
+					coat_of_arms = {	#House Codd
+						template = 0
+						layer = {
+							texture = 11
+							texture_internal = 20
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion = drowned_god
+					}
+				}		
+				b_moonport = {
+				}	
+			}
+			c_lordsport = {
+				color={ 158 116 0 }
+				color2={ 255 255 255 }
+				
+				b_lordsport_keep = {
+				}
+				b_lordsport = {
+				}
+				b_axfirth = {
+				}
+				b_silver_cove = {
+				}
+				
+			}
+			c_saltcliffe = {
+				color={ 184 135 0 }
+				color2={ 255 255 255 }
+				
+				b_salt_end = {
+				}
+				b_saltford = {
+					name_tier=count
+					coat_of_arms = {	#House Sunderly
+						template = 0
+						layer = {
+							texture = 11
+							texture_internal = 13
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion = drowned_god
+					}
+				}
+				b_serpents_mouth = {
+				}
+
+			}
+		}
+		
+		d_great_wyk = {
+			color={ 128 64 0 }
+			color2={ 255 255 255 }
+			
+			#capital = 152 # Hammerhorn
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+		
+			c_hammerhorn = {
+				color={ 107 79 0 }
+				color2={ 255 255 255 }
+			
+				b_hammerhorn = {
+				}
+				b_hardstone_hill = {
+					name_tier=count
+					coat_of_arms = {	#House Sparr
+						template = 0
+						layer = {
+							texture = 11
+							texture_internal = 14
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion = drowned_god
+					}
+				}
+				b_galleywood = {
+				}
+				b_hornhaven = {
+				}
+			}
+			c_pebbleton = {
+				color={ 168 123 0 }
+				color2={ 255 255 255 }
+			
+				b_pebbleton = {
+				}
+				b_fishbourne = {
+				}
+				b_herringby = {
+				}		
+				b_sproutside = {
+				}				
+			}
+			c_sealskin_point = {
+				color={ 153 77 0 }
+				color2={ 255 255 255 }
+			
+				b_sealskin_point = {
+				}
+				b_faroar = {
+				}
+				b_wynd_point = {
+				}			
+			}
+			
+		}
+		d_seastone_isles = { 
+			color={ 153 102 0 }
+			color2={ 255 255 255 }
+			
+			#capital = 154 # Old Wyk
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_old_wyk = {
+				color={ 128 85 0 }
+				color2={ 255 255 255 }
+				
+				holy_site = drowned_god
+				holy_site = drowned_god_reformed
+				holy_site = storm_god
+				
+				b_drumm_tower = {	
+					name_tier=count
+				}			
+				b_naggas_hill = {
+				}
+				b_stoneton = {
+					name_tier=count
+				}		
+				b_seastone_point = {
+				}	
+				b_portbone = {
+				}	
+				b_stonehouse = {
+					name_tier=count
+					coat_of_arms = {
+						template = 0
+						layer = {
+							texture = 11
+							texture_internal = 17
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion = drowned_god
+					}
+				}				
+			}
+
+			c_orkmont = {
+				color={ 179 119 2 }
+				color2={ 255 255 255 }
+			
+				b_orkwatch = {
+				}
+				b_pinehole = {
+				}	
+				b_ironkeep = {
+				}		
+				b_oldwood = {
+				}				
+			}
+			
+			c_nettlemont = {
+				color={ 200 131 2 }
+				color2={ 255 255 255 }
+				
+				b_nettlebank = {
+				}	
+				b_blackblood = {
+				}	
+				b_oaken_shore = {
+				}
+			}
+			
+			c_blacktyde = {
+				color={ 179 119 2 }
+				color2={ 255 255 255 }
+			
+				b_littleport = {
+				}
+				b_blackcove = {
+				}
+			
+			}		
+		}
+		
+		d_harlaw = {
+			color={ 151 101 0 }
+			color2={ 255 255 255 }
+			
+			#capital = 158 # Ten Towers
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+		
+			c_ten_towers = {
+				color={ 151 101 0 }
+				color2={ 255 255 255 }
+			
+				b_ten_towers = {
+				}
+				b_harlaw_hill = {
+				}
+				b_kinscythe = {
+				}
+				b_hangmyre = {
+					name_tier=count
+					coat_of_arms = { #House Myre
+						template = 0
+						layer = {
+							texture = 11
+							texture_internal = 16
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion = drowned_god
+					}
+				}
+				b_grey_garden = {
+				}
+				b_tower_of_glimmering = {
+				}
+				b_harridan_hill = {
+				}
+			}
+			
+			c_stonetree = {
+				color={ 178 119 0 }
+				color2={ 255 255 255 }
+			
+				b_stonetree = {
+				}
+				b_grey_cove = {
+				}
+			}
+			
+			c_volmark = {
+				color={ 151 101 0 }
+				color2={ 255 255 255 }
+			
+				b_volmark = {
+				}
+				b_shield_row = {
+					name_tier=count
+					coat_of_arms = {	#House Kenning
+						template = 0
+						layer = {
+							texture = 11
+							texture_internal = 15
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion = drowned_god
+					}
+				}
+				b_great_harbour = {
+				}
+			}
+		}
+		c_lonely_light = {
+			color={ 151 101 0 }
+			color2={ 255 255 255 }
+			
+			holy_site = drowned_god
+			holy_site = drowned_god_reformed
+			holy_site = storm_god
+				
+			b_lonely_light = {
+			}
+			b_lonely_harbour = {
+			}
+		}	
+	}
+	
+	k_reach = {
+		color={ 13 96 00 }
+		color2={ 248 203 48 }
+			
+		capital = 267 # Highgarden
+		
+		culture = reachman
+		
+		# name_tier = duke
+		# title = "LORDPARAMOUNT"
+		# title_female = "LORDPARAMOUNT_female"
+		# foa = "LORDPARAMOUNT_FOA"
+		
+		#short_name = yes
+		
+		allow = {
+			e_reach = { has_holder = no }
+			hidden_tooltip = { NOT = { culture_group = winter_group } }
+		}
+		
+		d_highgarden = { 
+			color={ 63 150 53 }
+			color2={ 255 255 255 }
+			
+			capital = 267 # Highgarden
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+		
+			c_highgarden= {
+				color={ 100 160 105 }
+				color2={ 255 255 255 }
+			
+				b_highgarden = {
+				}
+				b_hazelton= {
+				}
+				b_rosebury = {
+				}
+				b_thornton_hall= {
+				}
+				b_rose_sept = {
+				}
+				b_honeydon= {
+				}
+
+			}
+			c_westbrook = {
+				color={ 49 181 44 }
+				color2={ 255 255 255 }
+			
+				b_westbrook = {
+				}
+				b_greenbarr = {
+				}
+				b_smithshill = {
+				}
+				b_faircove = {
+				}
+			}
+			c_smallwood = {
+				color={ 127 231 137 }
+				color2={ 255 255 255 }
+			
+				b_lordsmane = {
+				}
+				b_dunecross = {
+				}
+				b_pondersbridge = {
+				}
+			}
+			c_manderford = {
+
+				color={ 21 152 36 }
+				color2={ 255 255 255 }
+
+				b_poolbrook = {
+				}
+				b_nettleton = {
+				}
+				b_trimpley = {
+				}
+				b_bournheath = {
+				}
+			}
+			c_bardshome = {
+				color={ 11 193 28 }
+				color2={ 255 255 255 }
+				b_congrove_hall= {
+				}
+				b_hangleton = {
+				}
+				b_brightling= {
+				}
+			}
+		}
+		d_oldtown = { 
+			color={ 101 198 96 }
+			color2={ 255 255 255 }
+			
+			capital = 286 # Oldtown
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_oldtown = {
+				color={ 127 231 137 }
+				color2={ 255 255 255 }
+				
+				holy_site = the_seven
+				holy_site = many_faced_god
+				holy_site = starry_wisdom
+				holy_site = pagan
+				holy_site = aztec_reformed
+				holy_site = aztec
+				holy_site = ruin_rel
+
+				b_the_hightower = {
+					name_tier = count
+				}
+				b_oldtown = {
+				}
+				b_starry_sept = {
+				}
+				b_the_citadel = {
+				}
+				b_lords_sept = {
+				}
+				b_sailors_sept = {
+				}
+				b_hapsford = {
+				}
+				b_oakmere = {
+				}
+			}
+		
+			c_bandallon= {
+				color={ 49 181 44 }
+				color2={ 255 255 255 }
+			
+				b_bandallon = {
+				}
+				b_blackholt = {
+				}
+				b_maple_end = {
+				}
+				b_steeple = {
+				}
+				b_perrygate = {
+				}
+			}
+			c_honeyholt = {
+				color={ 100 160 105 }
+				color2={ 255 255 255 }
+			
+				b_honeyholt = {
+				}
+				b_farrhive = {
+				}
+				b_honeybridge = {
+				}
+				b_wineleaf = {
+				}
+				b_cheddar = {
+				}
+				b_roseworth = {
+				}
+				b_honeyholt_sept = {
+				}
+			}
+			c_blackcrown = {
+				color={ 21 152 36 }
+				color2={ 255 255 255 }
+
+				b_blackcrown = {
+				}
+				b_bullshead = {
+				}
+				b_seamer = {
+				}
+				b_sandybed = {
+				}
+				b_seaborough = {
+				}
+				b_blackcrown_sept = {
+				}
+			}
+			c_uplands = {
+				color={ 88 191 98 }
+				color2={ 255 255 255 }
+
+				b_uplands = {
+				}
+				b_mullhill = {
+				}
+				b_cobblestone = {
+					coat_of_arms = {	#House Cobb
+						template = 0
+						layer = {
+							texture = 7
+							texture_internal = 82
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion = the_seven
+					}
+				}
+				b_orangeford = {
+				}
+				b_ladyhall = {
+				}
+				b_daresbury = {
+				}
+			}
+			c_threetowers = {
+				color={ 11 193 28 }
+				color2={ 255 255 255 }
+
+				b_three_towers = {
+				}
+				b_whisper_point = {
+				}
+				b_hammerton = {
+					coat_of_arms = {	#House Woodwright
+						template = 0
+						layer = {
+							texture = 7
+							texture_internal = 40
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion = the_seven
+					}
+				}
+				b_cosscliff = {
+				}
+				b_oak_house = {
+				}
+				b_poxwell = {
+				}
+				b_winewall = {
+				}
+				b_three_towers_sept = {
+				}
+			}
+			c_sunhouse = {
+				color={ 81 155 88 }
+				color2={ 255 255 255 }
+
+				b_sunflower_hall = {
+				}
+				b_sunhouse = {
+				}
+				b_high_goblet = {
+				}
+				b_fairlight = {
+				}
+				b_sotherton = {
+				}
+				b_summerseat = {
+				}
+			}
+			c_the_ring = {
+				color={ 22 118 31 }
+				color2={ 255 255 255 }
+				b_the_ring = {
+				}
+				b_roxbridge = {
+				}
+				b_barleycross = {
+				}
+				b_roddenkeep = {
+					coat_of_arms = {	#House Rodden
+						template = 0
+						layer = {
+							texture = 7
+							texture_internal = 83
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion = the_seven
+					}
+				}
+				b_sharoning_springs = {
+				}
+				b_the_ring_sept = {
+				}
+			}
+		}
+		d_the_arbor = { 
+			color={ 18 111 14 }
+			color2={ 255 255 255 }
+			
+			capital = 292 # The Arbor
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+				hidden_tooltip = { NOT = { culture_group = unoccupied_group } }
+			}
+		
+			c_the_arbor = {
+				color={ 18 111 14 }
+				color2={ 255 255 255 }
+			
+				b_the_arbor= {
+				}
+				b_the_arbor_sept = {
+				}
+				b_ryamsport = {
+				}
+				b_vinetown = {
+				}
+				b_starfish_harbour = {
+				}
+				b_mermaids_palace = {
+					coat_of_arms = {	#House Goldwyne
+						template = 0
+						layer = {
+							texture = 7
+							texture_internal = 60
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion=the_seven
+					}
+				}
+				b_stonecrab_cay = {
+					coat_of_arms = {	#House Stonecrab
+						template = 0
+						layer = {
+							texture = 14
+							texture_internal = 5
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion=the_seven
+					}
+				}
+				# b_tisbury = {
+				# }
+				# b_east_orchard = {
+				# }
+			}
+		}
+		d_ocean_road = {
+			color={ 49 181 44 }
+			color2={ 255 255 255 }
+			
+			capital = 235 # Old Oak
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_old_oak = {
+				color={ 49 181 44 }
+				color2={ 255 255 255 }
+			
+				b_old_oak = {
+				}
+				b_goldenleaf = {
+				}
+				b_flordon = {
+				}
+				b_hemblington = {
+				}
+				b_nordelph = {
+				}
+				b_blackbird = {
+				}
+				b_old_oak_sept = {
+				}
+			}
+
+			c_catswold = {
+				color={ 100 160 105 }
+				color2={ 255 255 255 }
+				
+				b_the_brandyhouse = {
+				}
+				b_cantsfield = {
+				}
+				b_chicklade = {
+				}
+			}
+		}
+		d_red_lake = {
+			color={ 11 193 28 }
+			color2={ 255 255 255 }
+			
+			capital = 236 # Red Water Keep
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+
+			c_redwater = {
+				color={ 100 160 105 }
+				color2={ 255 255 255 }
+				
+				b_redwater_keep = {
+				}
+				b_red_lake = {
+				}
+				b_harvestpool = {
+				}
+				b_idbury = {
+				}
+				b_redding = {
+					coat_of_arms = {	#House Redding
+						template = 0
+						layer = {
+							texture = 7
+							texture_internal = 36
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion=the_seven
+					}
+				}
+				b_clearmeadow = {
+				}
+				b_red_lake_sept = {
+				}
+			}
+			c_risley_glade = {
+				color={ 49 181 44 }
+				color2={ 255 255 255 }
+			
+				b_risley_glade = {
+				}
+				b_lockeridge = {
+				}
+				b_old_catton = {
+				}
+			}
+
+		}
+		d_goldengrove = {
+			color={ 100 160 105 }
+			color2={ 255 255 255 }
+			
+			capital = 243 # Goldengrove
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+		
+			c_goldengrove = {
+				color={ 49 181 44 }
+				color2={ 255 255 255 }
+			
+				b_goldengrove = {
+				}
+				b_sparkleford = {
+				}
+				b_balmer_mill = {
+				}
+				b_mapplepress = {
+				}
+				b_mundford = {
+				}
+				b_summerdale = {
+				}
+				b_goldengrove_sept = {
+				}
+			}
+			c_smithyton = {
+				color={ 100 160 105 }
+				color2={ 255 255 255 }
+			
+				b_smithyton = {
+				}
+				b_coppercross = {
+				}
+				b_lupinstone = {
+				}
+				b_stairfoot = {
+				}
+			}
+			c_ivy_hall = {
+				color={ 21 152 36 }
+				color2={ 255 255 255 }
+			
+				b_ivy_hall = {
+				}
+				b_mallow_end = {
+				}
+				b_gatcombe = {
+				}
+				b_stoford = {
+				}
+			}
+		}
+		d_northmarch = {
+			color={ 127 231 137 }
+			color2={ 255 255 255 }
+			
+			capital = 238 # Coldmoat
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+		
+
+			c_coldmoat = {
+				color={ 49 181 44 }
+				color2={ 255 255 255 }
+			
+				b_coldmoat = {
+				}
+				b_webberton = {
+				}
+				b_horseshoe_hill = {
+				}
+				b_coldmoat_sept = {
+				}
+				b_leafy_lake = {
+				}
+			}
+			c_dosk = {
+				color={ 100 160 105 }
+				color2={ 255 255 255 }
+			
+				b_dosk = {
+				}
+				b_bulls_keep = {
+				}
+				b_brandybottom = {
+				} 
+				b_nunny = {
+				}
+			}
+			c_standfast = {
+				color={ 21 152 36 }
+				color2={ 255 255 255 }
+				
+				name_tier=baron
+			
+				b_standfast = {
+				}
+				b_wats_wood = {
+				}  
+				b_barndale = {
+				}
+			}
+			c_derring_downs = {
+				color={ 127 231 137 }
+				color2={ 255 255 255 }
+			
+				b_lonely_cave = {
+				}
+				b_hells_mouth = {
+				} 
+				b_cobble_cover = {
+				}
+				b_little_dosk = {
+				} 
+			}
+		}
+		d_torrentpeak= { 
+			color={ 88 191 98 }
+			color2={ 255 255 255 }
+			
+			capital = 250 # Torrentpeak
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+		
+			c_wythers = {
+				color={ 21 152 36 }
+				color2={ 255 255 255 }
+			
+				b_bushy_hall = {
+				}
+				b_knutston = {
+				}
+				b_nateby = {
+					coat_of_arms = {	#House Graves
+						template = 0
+						layer = {
+							texture = 7
+							texture_internal = 70
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion=the_seven
+					}
+				}
+			}
+			c_alden_keep = {
+				color={ 100 160 105 }
+				color2={ 255 255 255 }
+			
+				b_alden_keep = {
+				}
+				b_greenlanes = {
+				}
+				b_dunsdown = {
+				}
+			}
+			c_torrentpeak = {
+				color={ 127 231 137 }
+				color2={ 255 255 255 }
+				b_torrentpeak = {
+				}
+				b_coltishall = {
+				}
+				b_melplash = {
+				}
+				b_burstock = {
+				}
+				b_todber = {
+				}
+
+			}
+		}
+		d_tumbleton = {
+			color={ 24 152 36 }
+			color2={ 255 255 255 }
+			
+			capital = 249 # Tumbleton
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+		
+			c_tumbleton = {
+				color={ 100 160 105 }
+				color2={ 255 255 255 }
+			
+				b_footly_hall = {
+				}
+				b_tumbleton = {
+				}
+				b_caltrop_hill = {
+					coat_of_arms = {	#House Lyberr
+						template = 0
+						layer = {
+							texture = 7
+							texture_internal = 63
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion=the_seven
+					}
+				}
+				b_littleton = {
+				}
+				b_brockdish = {
+				}
+				b_cornhill = {
+				}
+				b_tumbleton_sept = {
+				}
+			}
+			c_harpshire = {
+				color={ 49 181 44 }
+				color2={ 255 255 255 }
+			
+				b_harp_hall = {
+				}
+				b_goldlanes = {
+				}
+				b_turweston = {
+				}
+				b_ashendon = {
+				}
+			}
+			c_hammerhal = {
+				color={ 21 152 36 }
+				color2={ 255 255 255 }
+			
+				b_hammerhal = {
+				}
+				b_goldenrod = {
+				} 
+				b_bootbridge = {
+				}
+				b_wharfemeadows = {
+				}
+			}
+		}
+		d_roseroad = { 
+			color={ 108 203 117 }
+			color2={ 255 255 255 }
+			
+			#capital = 253 # Bitterbridge
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+		
+
+			c_bitterbridge = {
+				color={ 11 193 28 }
+				color2={ 255 255 255 }
+			
+				b_caswell_castle = {
+				}
+				b_bitterbridge = {
+				}
+				b_gedgrave = {
+				}
+				b_knettishall = {
+					coat_of_arms = {	#House Bridges
+						template = 0
+						layer = {
+							texture = 7
+							texture_internal = 34
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion=the_seven
+					}
+				}
+				b_bittering = {
+				}
+				b_mallowcastle = {
+				}
+				b_bitterbridge_sept = {
+				}
+			}
+			c_leygood_keep = {
+				color={ 100 160 105 }
+				color2={ 255 255 255 }
+			
+				b_leygood_keep = {
+				}
+				b_bellcross_hill = {
+				}
+				b_ambleton = {
+				}
+				b_harvestway = {
+				}
+				b_wellflower = {
+				}
+			}
+			
+			c_roseford = {
+				color={ 127 231 137 }
+				color2={ 255 255 255 }
+			
+				b_rosewatch = {
+				}
+				b_blackbridge = {
+				}
+				b_boningale = {
+				}
+				b_lilyhurst = {
+				}
+				b_rose_edge_field = {
+				}
+			}
+		}
+		d_mandervale = { 
+			color={ 60 140 60 }
+			color2={ 255 255 255 }
+			
+			#capital = 268 # Cider Hall
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+		
+			c_cider_hall = {
+				color={ 21 152 36 }
+				color2={ 255 255 255 }
+			
+				b_cider_hall = {
+				}
+				b_redgrove = {
+				}
+				b_pearford = {
+				}
+				b_waypress = {
+					coat_of_arms = {	#House Rhysling
+						template = 0
+						layer = {
+							texture = 7
+							texture_internal = 66
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion=the_seven
+					}
+				}
+				b_eldersfield = {
+				}
+				b_blooming_rose = {
+				}
+				b_cider_hall_sept = {
+				}
+			}
+			c_new_barrel= { #dunstonbury
+				color={ 49 181 44 }
+				color2={ 255 255 255 }
+				
+				name_tier=baron
+			
+				b_new_barrel = {
+				}
+				b_applesford= {
+				}
+				b_fossberry = {
+				}
+				b_chalgrove= {
+				}
+				b_bushley= {
+				}
+				b_nettleden= {
+				}
+				b_new_barrel_sept = {
+				}
+				b_dunstonbury = {
+				}
+			}
+			c_darkdell= {
+				color={ 49 181 44 }
+				color2={ 255 255 255 }
+			
+				b_darkdell = {
+				}
+				b_wyvernston = {
+				}
+				b_lilycreek = {
+				}
+				b_winkfield = {
+				}
+				b_summerfield = {
+				}
+			}
+		}
+		d_blueburn = { 
+			color={ 71 143 77 }
+			color2={ 255 255 255 }
+			
+			capital = 259 # Grassy Vale
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_longtable = {
+				color={ 49 181 44 }
+				color2={ 255 255 255 }
+			
+				b_longtable = {
+				}
+				b_hornbridge = {
+				}
+				b_bounty_hall = {
+					coat_of_arms = {	#House Hutcheson
+						template = 0
+						layer = {
+							texture = 7
+							texture_internal = 50
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion = the_seven
+					}
+				}
+				b_leakton = {
+				}
+				b_felbrigg = {
+				}
+				b_fallmarsh = {
+				}
+				b_longtable_sept = {
+				}
+			}
+			c_grassy_vale = {
+				color={ 100 160 105 }
+				color2={ 255 255 255 }
+			
+				b_grassy_vale = {
+				}
+				b_bluebridge = {
+				}
+				b_threeflowers = {
+				}
+				b_apperly = {
+				}
+				b_springmill = {
+				}
+				b_grassy_vale_sept = {
+				}
+			}
+			c_appleton = {
+				color={ 49 181 44 }
+				color2={ 255 255 255 }
+			
+				b_the_greygate = {
+				}
+				b_appleton= {
+				}
+				b_flatford = {
+				}
+				b_landwade = {
+				}
+				b_appleacre = {
+				}
+				b_appleton_keep = {
+				}
+			}		
+			c_hastwyck = {
+				color={ 21 152 36 }
+				color2={ 255 255 255 }
+			
+				b_olivepike = {
+				}
+				b_hastwyck = {
+				}
+				b_earnley = {
+				}
+				b_nyewood = {
+				}
+				b_arborfield = {
+				}
+			}
+		}
+		d_the_shield_isles = { 
+			color={ 48 116 44 }
+			color2={ 255 255 255 }
+			
+			#capital = 263 # Oak Castle
+			
+			ironborn = "The Misty Islands"
+			old_ironborn = "The Misty Islands"
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+		
+			c_greenshield= {
+				color={ 49 181 44 }
+				color2={ 255 255 255 }
+			
+				b_chesterfield = {
+				}
+				b_greenwatch = {
+				}
+				b_hurl_harbour = {
+				}
+				b_shipton = {
+				}
+				b_cowlam = {
+				}
+			}
+			c_greyshield = {
+				color={ 120 131 119 }
+				color2={ 255 255 255 }
+			
+				b_grimstone = {
+				}
+				b_greywatch = {
+				}
+				b_shieldport = {
+				}
+				b_sailbrook = {
+				}
+				b_gardeners_green = {
+				}
+			}
+			c_oakenshield = {
+				color={ 131 119 126 }
+				color2={ 255 255 255 }
+			
+				b_oak_castle = {
+				}
+				b_lord_hewetts_town = {
+				}
+				b_oakenhaven = {
+				}
+				b_brighstone = {
+				}
+				b_greenfield_b = {
+				}
+			}
+			c_southshield = {
+				color={ 69 249 86 }
+				color2={ 255 255 255 }
+			
+				b_south_castle = {
+				}
+				b_longwatch = {
+				}
+				b_south_harbour = {
+				}
+				b_whiterose = {
+				}
+				b_haselbury = {
+				}
+			}
+		}
+		d_cockleswhent = { 
+			color={ 112 201 107 }
+			color2={ 255 255 255 }
+			
+			#capital = 270 # Ashford
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+		
+			c_ashford = {
+				color={ 100 160 105 }
+				color2={ 255 255 255 }
+			
+				b_ashford_castle = {
+				}
+				b_ashford = {
+				}
+				b_whitecrest = {
+				}
+				b_bannisters_wood = {
+				}
+				b_fernhill_heath = {
+				}
+				b_orchard = {
+				}
+				b_ashford_sept = {
+				}
+			}			
+			c_starpike = {
+				color={ 127 231 137 }
+				color2={ 255 255 255 }
+				
+				dignity = 10
+
+				b_starpike = {
+				}
+				b_knarsdale = {
+					coat_of_arms = { #House Pommingham
+						template = 0
+						layer = {
+							texture = 7
+							texture_internal = 65
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion=the_seven
+					}
+				}
+				b_bingfield = {
+				}
+				b_plenmeller_2 = {
+				}
+				b_starpike_sept = {
+				}
+			}
+			c_yelshire = {
+				color={ 21 152 36 }
+				color2={ 255 255 255 }
+				b_kine_moor = {
+				}
+				b_cawthorne = {
+				}
+				b_wickersley = {
+				}
+			}
+			c_holyhall = {
+				color={ 127 231 137 }
+				color2={ 255 255 255 }
+			
+				b_holyhall = {
+				}
+				b_mothersford = {
+				}
+				b_browntoft = {
+				}
+				b_cowford = {
+				}
+				b_point_farms = {
+				}
+				b_holyhall_sept = {
+				}
+			}
+		}
+		d_brightwater = { 
+			color={ 77 123 75 }
+			color2={ 255 255 255 }
+			
+			capital = 274 # Brightwater
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_brightwater = {
+				color={ 21 152 36 }
+				color2={ 255 255 255 }
+			
+				b_brightwater_keep = {
+				}
+				b_brightwater = {
+				}
+				b_bluerose = {
+				}
+				b_foxleyhead = {
+				}
+				b_east_boldre = {
+				}
+				b_ravenfield = {
+				}
+				b_brightwater_sept = {
+				}
+			}
+		
+			c_norcross= {
+				color={ 49 181 44 }
+				color2={ 255 255 255 }
+
+				name_tier=baron
+			
+				b_rush_hall = {
+				}
+				b_norcross= {
+				}
+				b_paston = {
+				}
+				b_watch_hill= {
+				}
+			}
+			c_dunnsbridge = {
+				color={ 100 160 105 }
+				color2={ 255 255 255 }
+			
+				b_mouthswatch = {
+				}
+				b_dunnsbridge = {
+				}
+				b_rosemill = {
+				}
+				b_mandercross = {
+				}
+			}
+			
+
+		}
+		d_west_marches = { 
+			color={ 28 160 22 }
+			color2={ 255 255 255 }
+			
+			capital = 280 # Horn Hill
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_horn_hill = {
+				color={ 21 152 36 }
+				color2={ 255 255 255 }
+
+				b_horn_hill = {
+				}
+				b_redmonton = {
+				}
+				b_highwood = {
+				}
+				b_stridergrove = {
+				}
+				b_chishill = {
+				}
+				b_horn_hill_sept = {
+				}
+			}
+			c_inchfield = {
+				color={ 100 160 105 }
+				color2={ 255 255 255 }
+			
+				b_inchbrook = {
+				}
+				b_pitchford = {
+				}
+				b_the_harebell = {
+				}
+				b_sheriffhales = {
+				}
+			}
+			c_middlebury = {
+				color={ 100 160 105 }
+				color2={ 255 255 255 }
+			
+				b_windflower_keep = {
+				}
+				b_middlebury = {
+				}
+				b_mayford = {
+				}
+				b_oldlands = {
+				}
+			}
+			c_fawn_crag = {
+				color={ 127 231 137 }
+				color2={ 255 255 255 }
+				b_fawn_crag = {
+				}
+				b_prickwillow = {
+					coat_of_arms = { #House Uffering
+						template = 0
+						layer = {
+							texture = 7
+							texture_internal = 68
+							emblem = 0
+							color = 0
+							color = 0
+							color = 0
+						}
+						religion=the_seven
+					}
+				}
+				b_stuntney = {
+				}
+			}
+			c_sommerset = {
+				color={ 11 193 28 }
+				color2={ 255 255 255 }
+				b_sommerset = {
+				}
+				b_butcombe = {
+				}
+				b_roadwater = {
+				}
+			}
+			c_hunt_hills = {
+				color={ 88 191 98 }
+				color2={ 255 255 255 }
+				b_lugwardine = {
+				}
+				b_clehonger = {
+				}
+				b_bartestree = {
+				}
+			}
+		}
+	}
+
+	
+	k_dorne = {
+		color={ 215 115 0 }
+		color2={ 200 0 0 }
+		
+		capital = 352 # Sunspear
+		
+		culture = salt_dornish
+		
+		short_name = yes
+		
+		title = "DORNEPRINCE"
+		title_female = "DORNEPRINCE_female"
+		foa = "DORNEPRINCE_FOA"
+		
+		name_tier = duke
+		
+		allow = {
+			e_dorne = { has_holder = no }
+			hidden_tooltip = { NOT = { culture_group = winter_group } }
+		}
+
+		d_brokenarm = {
+			color={ 242 121 0 }
+			color2={ 255 255 255 }
+			
+			capital = 352 # Sunspear
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_sunspear = {
+				color={ 232 111 0 }
+				color2={ 255 255 255 }
+			
+				b_speartower = {
+				}
+				b_theshadowtown = {
+				}
+				b_watergardens = {
+				}
+				b_towerofthesun = {
+				}
+				b_sunspear_sept = {
+				}
+				b_threefoldgate = {
+				}
+				b_oldpalace = {
+				}
+				
+			}
+			c_lemonwood = {
+				color={ 240 119 0 }
+				color2={ 255 255 255 }
+				
+				name_tier=baron
+				
+				b_lemonwood = {
+				}
+				b_sourton = {
+				}
+				b_oldlordsmanor = {
+				}
+				b_millerstown = {
+				}		
+				b_stinkwater = {
+				}		
+			}
+			c_plankytown = {
+				color={ 236 107 0 }
+				color2={ 255 255 255 }
+	
+				culture = rhoynar
+				religion = rhoynar_pagan
+
+				b_plankytown = {
+				}
+				b_vipersnest = {
+				}
+				b_longdike = {
+				}
+				b_tribunal = {
+				}
+				b_plankytown_sept = {
+				}
+				b_deadglade = {
+				}
+			}
+			c_spotswood = {
+				color={ 232 121 0 }
+				color2={ 255 255 255 }
+				
+				name_tier=baron
+				
+				b_spotswood = {
+				}
+				b_olivegrove = {
+				}
+				b_greystoke = {
+				}
+				b_thornford = {
+				}
+				b_whitecliff = {
+				}
+				
+			}
+		}
+		
+		d_vaith = {
+			color={ 205 155 0 }
+			color2={ 255 255 255 }
+			
+			#capital = 349 # Godsgrace
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+		
+			c_godsgrace = {
+				color={ 220 170 0 }
+				color2={ 255 255 255 }
+			
+				b_godsgrace = {
+				}
+				b_rhoynestear = {
+				}
+				b_santon = {
+				}
+				b_dunstables = {
+				}
+				b_waterfoot = {
+				}
+				b_orangewood = {
+				}
+				b_godsgrace_sept = {
+				}
+				
+			}
+			c_saltshore = {
+				color={ 215 165 0 }
+				color2={ 255 255 255 }
+			
+				b_saltshore = {
+				}
+				b_seacourt = {
+				}
+				b_bayswater = {
+				}
+				b_seashellshall = {
+				}
+				b_saltmarket = {
+				}
+				b_saltshore_sept = {
+				}
+			}
+			c_reddunes = {
+				color={ 225 175 0  }
+				color2={ 255 255 255 }
+			
+				b_reddunes = {
+				}
+				b_vaith = {
+				}
+				b_holdbytheriver = {
+				}
+				b_whiskerville = {
+				}
+				b_ferry = {
+				}
+			}
+			c_scorchedrock = {
+				color={ 220 190 0  }
+				color2={ 255 255 255 }
+			
+				b_deserthearth = {
+				}
+				b_lastoasis = {
+				}
+				b_sandwall = {
+				}
+				b_oldglory = {
+				}
+				
+			}
+			
+		}
+		c_blackmont = {
+			color={ 150 40 0 }
+			color2={ 255 255 255 }
+		
+			b_blackmont = {
+			}
+			b_oakwood = {
+			}
+			b_gravesend = {
+			}
+			b_dusthall = {
+			}
+			b_allendale = {
+			}
+			b_blackwell = {
+			}
+			b_blackmont_sept = {
+			}
+		}
+		c_ghastongrey = {
+			color={ 200 150 80 }
+			color2={ 255 255 255 }
+		
+			b_ghastongrey = {
+			}
+			b_greyport = {
+			}			
+		}
+		d_ghosthills = { 
+			color={ 210 130 0 }
+			color2={ 255 255 255 }
+			
+			#capital = 343 # The Tor
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_thetor = {
+				color={ 210 110 0 }
+				color2={ 255 255 255 }
+			
+				b_thetor = {
+				}
+				b_thetor_sept = {
+				}
+				b_sandgate = {
+				}
+				b_amber = {
+				}
+				b_bushmills = {
+				}
+				b_sharkshore = {
+				}
+				
+				
+			}
+			c_ghosthills = {
+				color={ 190 110 0 }
+				color2={ 255 255 255 }
+			
+				b_ghosthill = {
+				}
+				b_barrows = {
+				}
+				b_sevengraces = {
+				}
+				b_nymercairn = {
+				}
+				b_hallsofthedead = {
+				}
+				b_ghosthill_sept = {
+				}
+			}
+			c_thescourge = {
+				color={ 190 110 30 }
+				color2={ 255 255 255 }
+			
+				b_sunburst = {
+				}
+				b_cronetower = {
+				}
+				b_scourgeford = {
+				}
+				b_maidentower = {
+				}
+				b_mothertower = {
+				}
+				
+			}		
+		}
+		d_brimstone = {
+			color={ 240 70 0 }
+			color2={ 255 255 255 }
+			
+			#capital = 338 # Hellholt
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_hellholt = {
+				color={ 220 70 0 }
+				color2={ 255 255 255 }
+			
+				b_hellholt = {
+				}
+				b_brimstone = {
+				} 
+				b_fiendshand = {
+				}
+				b_tidmarsh = {
+				}
+				b_bloodbridge = {
+				}
+				b_jackalsden = {
+				}
+				b_hellholt_sept = {
+				}
+			}
+			c_greatdesert = {
+				color={ 240 50 0 }
+				color2={ 255 255 255 }
+			
+				b_scimitar = {
+				}
+				b_sandford = {
+				}
+				b_drywell = {
+				}
+			}
+			
+			c_sandstone = {
+				color={ 220 100 0 }
+				color2={ 255 255 255 }
+			
+				b_sandstone = {
+				}
+				b_shadysands = {
+				}
+				b_vart = {
+				}
+				b_goodsprings = {
+				}
+				b_thefallen = {
+				}
+				b_sandstone_sept = {
+				}
+			}
+		}
+		d_redmountains = { #the Torrentine
+			color={ 210 90 0 }
+			color2={ 255 255 255 }
+			
+			#capital = 335 # Starfall
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+		
+			c_starfall = {
+				color={ 200 80 0 }
+				color2={ 255 255 255 }
+			
+				b_starfall = {
+				}
+				b_palestonesword = {
+				}
+				b_wythmail = {
+				}
+				b_nightfall = {
+				}
+				b_longlake_2 = {
+				}
+				b_battlehill = {
+				}
+				b_starfall_sept = {
+				}				
+			}
+			c_highhermitage = {
+				color={ 200 80 30 }
+				color2={ 255 255 255 }
+				
+				name_tier=baron
+			
+				b_highhermitage = {
+				}
+				b_sixhills = {
+				}
+				b_blackadder = {
+				}
+				b_highridge = {
+				}
+				b_woolfair = {
+				}
+			}
+			c_theelbow = {
+				color={ 210 80 0 }
+				color2={ 255 255 255 }
+			
+				b_thelantern = {
+				}
+				b_southpoint = {
+				}
+				b_crossroads = {
+				}
+				b_brightkeep = {
+				}
+				b_lastsept = {
+				}
+			}
+		}
+		d_stoneway = { 
+			color={ 200 120 30 }
+			color2={ 255 255 255 }
+			
+			capital = 334 # Yronwood
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+		
+			c_yronwood = {
+				color={ 220 120 30 }
+				color2={ 255 255 255 }
+			
+				b_yronwood = {
+				}
+				b_wateresmeet = {
+				}
+				b_stonegate = {
+				}
+				b_yronwood_sept = {
+				}
+				b_bushelfair = {
+				}
+				b_waywatcher = {
+				}
+				b_beerhall = {
+				}			
+			}
+			c_wyl = {
+				color={ 200 140 30 }
+				color2={ 255 255 255 }
+			
+				b_bonewaycastle = {
+				}
+				b_summerfair = {
+				}
+				b_southmere = {
+				}
+				b_burntwoods = {
+				}
+				b_dusktower = {
+				}
+				b_boneway_sept = {
+				}
+			}
+		
+			c_vulturesroost = {
+				color={ 180 100 30 }
+				color2={ 255 255 255 }
+
+				name_tier=baron
+			
+				b_vulturesroost = {
+				}
+				b_stonebarrow = {
+				}
+				b_dedworth = {
+				}
+				b_hogfort = {
+				}
+				b_dufftown = {
+				}
+			}
+			c_nymerwell = {
+				color={ 220 60 30 }
+				color2={ 255 255 255 }
+			
+				b_silentwatcher = {
+				}
+				b_wellofnymeria = {
+				}
+				b_saltmines = {
+				}
+				b_dustyrock = {
+				}
+			}
+		}
+		d_princespass = {
+			color={ 240 100 40 }
+			color2={ 255 255 255 }
+			
+			#capital = 333 # Skyreach
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+		
+			c_skyreach = {
+				color={ 190 80 60 }
+				color2={ 255 255 255 }
+			
+				b_skyreach = {
+				}
+				b_redmile = {
+				}
+				b_princessept = {
+				}
+				b_strawmarket = {
+				}
+				b_falconhand = {
+				}
+				b_princespass_sept = {
+				}
+			}
+
+			c_princespass = {
+				color={ 240 80 30 }
+				color2={ 255 255 255 }
+				
+				b_towerofjoy = {
+				}
+				b_reachgate = {
+				}
+				b_ortench = {
+				}
+				b_tattershall = {
+				}
+				b_broadarch = {
+				}
+			}
+			c_kingsgrave = {
+				color={ 160 100 40 }
+				color2={ 255 255 255 }
+			
+				b_kingsgrave = {
+				}
+				b_littlemill = {
+				}
+				b_candlekeep = {
+				}
+				b_deepcaves = {
+				}
+				b_whitefalls = {
+				}
+			}
+		}
+	}
+	
+	k_stormlands = {
+		color={ 208 157 0 }
+		color2={ 255 255 255 }
+			
+		capital = 304 # Storm's End - House Baratheon		
+		
+		culture = stormlander
+		
+		# name_tier = duke
+		# title = "LORDPARAMOUNT"
+		# title_female = "LORDPARAMOUNT_female"
+		# foa = "LORDPARAMOUNT_FOA"
+
+		#short_name = yes
+		
+		allow = {
+			e_stormlands = { has_holder = no }
+			hidden_tooltip = { NOT = { culture_group = winter_group } }
+		}
+		
+		d_shipbreaker = {
+			color={ 205 205 0 }
+			color2={ 255 255 255 }
+			
+			capital = 304 # Storm's End - House Baratheon
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+
+			c_storms_end = {
+				color={ 225 205 0 }
+				color2={ 255 255 255 }
+				
+				holy_site = old_gods
+				holy_site = old_gods_reformed
+				holy_site = drowned_god
+				holy_site = drowned_god_reformed
+				holy_site = storm_god
+				
+				b_storms_end = {
+				}
+				b_storms_drum = {
+				}
+				b_stagsden = {
+				}
+				b_childrens_fist = {
+				}
+				b_storms_end_sept = {
+				}
+				b_storms_call = {
+				}
+				b_childrens_of_storms = {
+				}
+			}
+			c_galemont = {
+				color={ 185 205 0 }
+				color2={ 255 255 255 }
+				
+				b_galemont_fort = {
+				}
+				b_galemont_sept = {
+				}
+				b_farlam = {
+				}
+			}
+			c_parchments = {
+				color={ 220 255 75 }
+				color2={ 255 255 255 }
+			
+				b_parchments = {
+				}
+				b_oakenfield = {
+				}
+				b_gilsland = {
+				}
+			}
+			c_gallowsgrey = {
+				color={ 255 245 120 }
+				color2={ 255 255 255 }
+				
+				b_gallowsgrey = {
+				}
+				b_foes_end = {
+				}
+				b_saltwood = {
+				}
+			}			
+			c_drakesgrave = {
+				color={ 255 235 0 }
+				color2={ 255 255 255 }
+				
+				b_drakesgrave = {
+				}
+				b_silversword = {
+				}
+				b_tebay = {
+				}
+			}	
+		}
+		d_griffins_roost = {
+			color={ 225 225 10 }
+			color2={ 255 255 255 }
+			
+			capital=303 #Griffin's Roost
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_griffins_roost = {
+				color={ 205 225 0 }
+				color2={ 255 255 255 }
+
+				name_tier=baron
+							
+				b_griffins_roost = {
+				}
+				b_conningtower = {
+				}
+				b_griffins_roost_sept = {
+				}
+				b_blencow = {
+				}
+				b_middleshaw = {
+				}
+			}
+			c_adderdell = {
+				color={ 205 185 0 }
+				color2={ 255 255 255 }
+				
+				b_adderhall = {
+				}
+				b_antlercliff = {
+				}
+				b_smardale = {
+				}
+			}
+			c_crows_nest = {
+				color={ 205 205 20 }
+				color2={ 255 255 255 }
+				
+				b_crows_nest = {
+				}
+				b_warfield = {
+				}
+				b_greenflight = {
+				}
+				b_crows_nest_sept = {
+				}
+			}
+		}
+		
+		d_wendwater= {
+			color={ 255 226 60 }
+			color2={ 255 255 255 }
+			
+			#capital = 296 # Bronzegate - House Buckler
+		
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_bronzegate = {
+				color={ 235 226 60 }
+				color2={ 255 255 255 }
+			
+				b_bronzegate = {
+				}
+				b_bucklerforge = {
+				}
+				b_bronze_sept = {
+				}
+				b_furnace_end = {
+				}
+				b_warkworth = {
+				}
+			}
+
+			c_felwood = {
+				color={ 255 246 60 }
+				color2={ 255 255 255 }
+				
+				b_felwood = {
+				}
+				b_brickendon = {
+				}
+				b_felwood_sept = {
+				}
+				b_gaydon = {
+				}
+			}
+			c_broad_arch = {
+				color={ 255 206 60 }
+				color2={ 255 255 255 }
+			
+				b_broad_arch = {
+				}
+				b_overstone = {
+				}
+				b_warcop = {
+				}
+			}
+			c_haystack_hall = {
+				color={ 200 245 75 }
+				color2={ 255 255 255 }
+				
+				b_haystack_hall  = {
+				}
+				b_reapers_rest = {
+				}
+				b_bayfield = {
+				}
+				b_haystack_sept = {
+				}
+				b_croglin = {
+				}
+				b_kings_mountain = {
+				}
+			}
+		}
+		d_red_watch= {
+			color={ 255 210 60 }
+			color2={ 255 255 255 }
+			
+			#capital = 316 # Stonehelm? House Swann?
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_stonehelm = {
+				color={ 255 230 60 }
+				color2={ 255 255 255 }
+				
+				b_stonehelm = {
+				}
+				b_swanport = {
+				}
+				b_stonehelm_sept = {
+				}
+				b_twinflight = {
+				}
+				b_redwatch = {
+				}		
+			}
+			c_lonmouth = {
+				color={ 245 210 60 }
+				color2={ 255 255 255 }
+			
+				b_lonmouth = {
+				}
+				b_exhall = {
+				}
+			}
+
+			
+
+			c_lockport = {
+				color={ 255 190 60 }
+				color2={ 255 255 255 }
+				
+				b_herston_hall = {
+				}
+				b_lockport= {
+				}
+				b_merevale= {
+				}
+			}
+
+		}
+
+		d_tarth = {
+			color={ 220 245 75 }
+			color2={ 255 255 255 }
+			
+			capital = 305 # Tarth
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+		
+			c_tarth = {
+				color={ 240 245 75 }
+				color2={ 255 255 255 }
+			
+				b_evenfall = {
+				}
+				b_manning_hall = {
+				}
+				b_tarth_sept = {
+				}
+				b_sapphire_point = {
+				}
+				b_lapworth = {
+				}
+				b_oldberrow = {
+				}
+				b_morne = {
+				}
+			}
+		}
+
+		d_summerhall = {
+			color={ 245 245 120 }
+			color2={ 255 255 255 }
+		
+			#capital =
+		
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_summerhall = {
+				color={ 225 245 120 }
+				color2={ 255 255 255 }
+			
+				b_summerhall = {
+				}
+				b_ravenglass = {
+				}
+			}
+			c_grandview = {
+				color={ 245 225 120 }
+				color2={ 255 255 255 }
+			
+				b_grandview = {
+				}
+				b_lions_rest = {
+				}
+				b_slumberhall = {
+				}
+				b_hightop = {
+				}
+				b_grandview_sept = {
+				}
+			}
+			c_fawnton = {
+				color={ 245 205 120 }
+				color2={ 255 255 255 }
+			
+				b_fawnton = {
+				}
+				b_fawnton_sept = {
+				}
+				b_antlerden = {
+				}
+			}
+			c_hadlow_keep = {
+				color={ 255 226 80 }
+				color2={ 255 255 255 }
+
+				name_tier=baron
+				
+				b_hadlow_keep = {
+				}
+				b_foul_end = {
+				}
+			}
+		}
+		d_dornish_marches = {
+			color={ 255 255 0 }
+			color2={ 255 255 255 }
+
+			#capital = 307 # Nightsong - House Caron
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+		
+			c_nightsong = {
+				color={ 235 255 0 }
+				color2={ 255 255 255 }
+			
+				b_nightsong = {
+				}
+				b_nightingale = {
+				}
+				b_dusk_melody = {
+				}
+				b_nailstone = {
+				}
+				b_nightsong_sept = {
+				}
+			}
+			c_harvest_hall = {
+				color={ 220 225 75 }
+				color2={ 255 255 255 }
+					
+				b_harvest_hall = {
+				}
+				b_harvest_town = {
+				}
+				b_bold_warrior = {
+				}
+				b_blindcrake = {
+				}
+			}
+			c_poddingfield = {
+				color={ 255 235 20 }
+				color2={ 255 255 255 }
+			
+				b_poddingfield = {
+				}
+				b_peapod = {
+				}
+				b_skirwith = {
+				}
+			}
+			c_blackhaven = {
+				color={ 255 255 20 }
+				color2={ 255 255 255 }
+			
+				b_blackhaven = {
+				}
+				b_purple_fields = {
+				}
+				b_bonewatch = {
+				}
+				b_blackhaven_sept = {
+				}
+				b_longcroft = {
+				}
+			}
+		}
+		d_rainwood = {
+			color={ 205 190 30 }
+			color2={ 255 255 255 }
+			
+			#capital = 320 # Rainwood - House Baratheon
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_rain_house = {
+				color={ 205 170 30 }
+				color2={ 255 255 255 }
+			
+				b_rain_house = {
+				}
+				b_maelstrom_watch = {
+				}
+				b_mallowbeach = {
+				}
+				b_rain_house_sept = {
+				}
+				b_underbarrow = {
+				}
+			}		
+			c_rainwood = {
+				color={ 225 190 30 }
+				color2={ 255 255 255 }
+				
+				name_tier=baron
+			
+				b_rainwood = {
+				}
+				b_oak_heights = {
+				}
+				# b_rainwood_sept = {
+				# }
+				b_stagsfield = {
+				}
+				b_grinsdale = {
+				}
+			}
+			c_blue_grove = {
+				color={ 185 190 30 }
+				color2={ 255 255 255 }
+				
+				b_kellington_hall = {
+				}
+				b_brown_hill = {
+				}
+				b_haverigg = {
+				}
+			}
+			c_amberly = {
+				color={ 205 210 30 }
+				color2={ 255 255 255 }
+				
+				b_amberly = {
+				}
+				b_fairhunt= {
+				}
+				b_budbrooke = {
+				}
+			}
+			
+		}
+		d_cape_wrath = {
+			color={ 200 200 80 }
+			color2={ 255 255 255 }
+			
+			#capital = 326 # Estermont - House Estermont
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_estermont = {
+				color={ 220 200 80 }
+				color2={ 255 255 255 }
+			
+				b_greenstone = {
+				}
+				b_estermont_sept = {
+				}
+				b_turtlemont = {
+				}
+				b_greenodd = {
+				}
+			}
+			c_tudbury_hall = {
+				color={ 180 200 80 }
+				color2={ 255 255 255 }
+				
+				b_tudbury_hall = {
+				}
+				b_burleigh = {
+				}
+				b_cark = {
+				}
+			}
+			c_mistwood = {
+				color={ 200 220 80 }
+				color2={ 255 255 255 }
+			
+				b_mistwood = {
+				}
+				b_blackpath = {
+				}
+				b_mistwood_sept = {
+				}
+				b_beckfoot = {
+				}
+			}
+			c_weeping_tower = {
+				color={ 200 180 80 }
+				color2={ 255 255 255 }
+			
+				b_weeping_tower = {
+				}
+				b_weeping_town = {
+				}
+				b_wailing_keep = {
+				}
+				b_glenridding = {
+				}
+				b_weeping_sept = {
+				}
+			}
+			c_wrathrock = {
+				color={ 220 220 80 }
+				color2={ 255 255 255 }
+			
+				b_wrathrock = {
+				}
+				b_sunshore = {
+				}
+			}
+		}
+	}
+	
+	k_westerlands = {
+ 
+		color={ 175 0 0 }
+		color2={ 217 174 02 }
+		capital = 182 # Casterly Rock
+		
+		culture = westerman
+		
+		# name_tier = duke
+		# title = "LORDPARAMOUNT"
+		# title_female = "LORDPARAMOUNT_female"
+		# foa = "LORDPARAMOUNT_FOA"
+
+		#short_name = yes
+		
+		allow = {
+			e_westerlands = { has_holder = no }
+			hidden_tooltip = { NOT = { culture_group = winter_group } }
+		}
+	
+		d_casterly_rock = {
+			color={ 255 48 0 }
+			color2={ 255 255 255 }
+		
+			capital = 182 #Casterly Rock
+		
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+		
+			c_casterly_rock = {
+				color={ 255 48 0 }
+				color2={ 255 255 255 }
+				
+				b_casterly_rock = {}
+				b_casterly_rocktown = {}
+				b_casterly_rocksept = {}
+				b_heather_field = {}
+			}
+			
+			c_lannisport = {
+				color={ 255 48 0 }
+				color2={ 255 255 255 }
+				
+				holy_site = the_seven
+			
+				b_lannisport = {
+				}
+				b_lannisportone = {
+				}
+				b_lannisporttwo = {}
+				b_lannisportthree = {}
+				b_lannisportsept = {
+				}
+				b_shawforth = {}
+				b_horncliffe = { }
+			}
+			
+			c_fang_tower = {
+				color={ 255 60 20 }
+				color2={ 255 255 255 }
+				
+				name_tier=baron
+				
+				b_fangtower = {}
+				b_fangtowertown = {}
+				b_fangtowertowntwo = {}
+				b_fangtowersept = {}
+			}
+			
+			c_oxcross = {
+				color={ 241 57 15 }
+				color2={ 255 255 255 }
+				
+				b_oxcross = {}
+				b_oxcrosscastletwo = {}
+				b_new_downs = {}
+				b_tendringtowntwo = {}
+				b_tendringsepttwo = {}
+			}
+			
+		}
+		
+		d_crakehall = {
+			color={ 255 90 20 }
+			color2={ 255 255 255 }
+			
+			capital = 197 #crakehall
+				
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_crakehall = {
+				color={ 255 90 20 }
+				color2={ 255 255 255 }
+				
+				b_crakehall = {}
+				b_crakehalltown = {}
+				b_crakehallsept = {}
+				b_crakehalltowntwo = {}
+				b_crakehalltownthree = {}
+				b_brinscall = {}
+			}
+			
+			c_falwell = {
+				color={ 255 80 20 }
+				color2={ 255 255 255 }
+			
+				b_falwell = {}
+				b_falwelltown = {}
+				b_falwellsept = {}
+				b_falwelltowntwo = {}
+				b_cloughfold = {}
+			}
+			
+			c_hawthorn = {
+				color={ 241 25 63 }
+				color2={ 255 255 255 }
+				
+				b_hawthorn = {}
+				b_hawthorntown = {}
+				b_hawthorntowntwo = {}
+				b_hawthornsept ={}
+				b_bowgreave ={}
+			}
+			
+			c_greenmont = {
+				color={ 255 58 0 }
+				color2={ 255 255 255 }
+				
+				name_tier=baron
+				
+				b_greenmont = {}
+				b_greenmontcastletwo = {}
+				b_greenmontcastletown = {}
+			}
+		}
+		
+		d_kayce = {
+			color={ 255 90 20 }
+			color2={ 255 255 255 }
+			
+			capital = 169 #kayce
+
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}		
+			
+			c_kayce = {
+				color={ 255 90 20 }
+				color2={ 255 255 255 }
+				
+				b_kayce = {}
+				b_kaycetown = {}
+				b_kaycesept = {}
+				b_kaycetowntwo = {}
+				b_parbold = {}
+			}
+			
+			c_feastfires = {
+				color={ 255 80 20 }
+				color2={ 255 255 255 }
+			
+				b_feastfires = {}
+				b_lostock_hall = {}
+			}
+			
+			c_maunhill = {
+				color={ 255 70 20 }
+				color2={ 255 255 255 }
+				
+				b_maunhill = {}
+				b_maunhilltown = {}
+				b_maunhillsept = {}
+				b_maunhilltowntwo = {}
+				b_maunhilltownthree = {}
+			}
+		}
+		
+		d_ashemark = {
+			color={ 255 90 15 }
+			color2={ 255 255 255 }
+			
+			capital = 173
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_ashemark = {
+				color={ 255 90 15 }
+				color2={ 255 255 255 }
+				
+				b_ashemark = {}
+				b_ashemarktown = {}
+				b_ashemarksept = {}
+				b_ashemarktowntwo = {}
+				b_broxfield = {}
+			}
+			
+			c_thurrock = {
+				color={ 255 100 15 }
+				color2={ 255 255 255 }
+				
+				name_tier=baron
+
+				b_thurrock = {}
+				b_thurrocktown = {}
+				b_thurrocktowntwo = {}
+				b_blanchland = {}
+			}
+			
+			c_glitterdale = {
+				color={ 255 110 15 }
+				color2={ 255 255 255 }
+				
+				name_tier=baron
+				
+				b_glitterdale = {}
+				b_glitterdaletown = {}
+				b_glitterdaletowntwo = {}
+				b_glitterdaletownthree = {}
+				b_pegswood = {}
+			}
+			
+			c_brent_brook = {
+				color={ 241 45 63 }
+				color2={ 255 255 255 }
+				
+				b_brent_brook = {}
+				b_brent_brooktown = {}
+				b_retallack = {}
+			}
+		}
+		d_golden_tooth = {
+			color={ 255 108 0 }
+			color2={ 255 255 255 }
+			
+			capital = 174
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_golden_tooth = {
+				color={ 255 118 0 }
+				color2={ 255 255 255 }
+				
+				b_golden_tooth = {}
+				b_golden_toothcastle = {}
+				b_golden_toothtown = {}
+				b_golden_toothsept = {}
+				b_tranwell = {}
+			}
+			
+			c_nunns_deep = {
+				color={ 255 128 0 }
+				color2={ 255 255 255 }
+			
+				b_nunns_deep = {}
+				b_simonburn = {}
+			}
+			
+			c_pendrick_hills = {
+				color={ 255 138 0 }
+				color2={ 255 255 255 }
+				
+				name_tier=baron
+			
+				b_pendrick_hills = {}
+				b_pendrick_hillstown = {}
+				b_pendrick_hillstowntwo = {}
+				b_pendrick_hillssept = {}
+				b_cinderhope = {}
+			}
+		}
+		
+		d_the_crag = {
+			color={ 241 15 15 }
+			color2={ 255 255 255 }
+			
+			capital = 164
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_the_crag = {
+				color={ 241 25 15 }
+				color2={ 255 255 255 }
+				
+				b_the_crag = {}
+				b_the_cragsept = {}
+				b_the_cragtown = {}
+				b_plenmeller = {}
+				b_fearby = { }
+				b_rain_fort = { }
+			}
+			c_banefort = {
+				color={ 241 35 15 }
+				color2={ 255 255 255 }
+				
+				b_banefort = {}
+				b_baneforttown = {}
+				b_slaley = {}
+			}		
+			c_kanet = {
+				color = { 34 34 207 }
+				color2 = { 130 0 50 }
+				b_underhillcastle = {
+				}
+				b_underhilltown = {
+				}
+				b_birdsedge = {
+				}
+			}
+		}
+		
+		d_castamere = {
+			color={ 135 25 3 }
+			color2={ 255 255 255 }
+			
+			capital = 187
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_castamere = {
+				color={ 241 79 15 }
+				color2={ 255 255 255 }
+				
+				b_castamere = {}
+				b_castameretown = {}
+				b_castameresept = {}
+				b_castameretowntwo = {}
+				b_pickhill = {}
+				b_cubeck = {}
+			}
+			
+			c_tarbeck_hall = {
+				color={ 241 45 15 }
+				color2={ 255 255 255 }
+				
+				b_tarbeck_hall = {}
+				b_tarbeck_halltown = {}
+				b_painshawfield = {}
+				b_bramhope = {}
+			}
+			c_goldshire = {
+				color={ 241 47 15 }
+				color2={ 255 255 255 }
+				
+				b_goldshire = {}
+				b_goldshiretown = {}
+				b_goldshiretowntwo = { }
+				b_goldshiresept = {}
+				b_phillack = {}
+			}
+			
+			c_tendring = {
+				color={ 255 68 0 }
+				color2={ 255 255 255 }
+				
+				b_tendring = {}
+				b_tendringsept = {}
+				b_tendringtownone = {}
+			}
+			
+			c_sarsfield = {
+				color={ 241 67 15 }
+				color2={ 255 255 255 }
+				
+				b_sarsfield = {}
+				b_sarsfieldtown = {}
+				b_sarsfieldsept = {}
+				b_sarsfieldtowntwo = {}
+				b_longdowns = {}
+			}
+		}	
+		
+		d_hornvale = {
+			color={ 196 22 22 }
+			color2={ 255 255 255 }
+			
+			#capital = 187
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_hornvale = {
+				color={ 241 89 15 }
+				color2={ 255 255 255 }
+				
+				b_hornvale = {}
+				b_hornvaletown = {}
+				b_hornvaletowntwo = {}
+				b_hornvale_sept = {}
+				b_helstone = {}
+			}
+						
+			c_wyndhall = {
+				color={ 255 120 15 }
+				color2={ 255 255 255 }
+				
+				b_wyndhall = {}
+				b_wyndhalltown = {}
+				b_westford = {}
+				b_wyndhallsept = {}
+				b_chollerford = {}
+			}
+			c_moreland = {
+				color={ 241 79 15 }
+				color2={ 255 255 255 }
+				
+				b_moreland_keep = {}
+				b_moreland = {}
+				b_ryehill = {}
+				b_kexby = {}
+			}			
+		}
+		
+		d_silverhill ={
+			color={ 241 47 15 }
+			color2={ 255 255 255 }
+			
+			#capital = 195
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_silverhill = {
+				color={ 241 47 15 }
+				color2={ 255 255 255 }
+				
+				b_silverhill = {}
+				b_silverhillcastletwo = {}
+				b_silverhilltown = {}
+				b_silverhillsept = {}
+				b_malpas = {}
+			}
+			
+			c_myatt = {
+				color={ 241 57 15 }
+				color2={ 255 255 255 }
+				
+				b_myatt = {}
+				b_myatttown = {}
+				b_myattsept = {}
+				b_myatttowntwo = {}
+			}
+			
+			c_redbramble = {
+				color={ 241 67 15 }
+				color2={ 255 255 255 }
+				
+				b_redbramble = {}
+				b_redbrambletown = {}
+				b_redbramblesept = {}
+				b_lanlivery = {}
+			}
+		}
+		
+		d_goldroad = {
+			color={ 255 93 66 }
+			color2={ 255 255 255 }
+			
+			#capital = 194
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_deep_den = {
+				color={ 241 99 15 }
+				color2={ 255 255 255 }
+				
+				b_deep_den = {}
+				b_deep_dencastletwo ={}
+				b_deep_dentown = {}
+				b_deep_den_sept = {}
+				b_long_rock = {}
+			}
+			
+			c_peckledon = {
+				color={ 241 15 63 }
+				color2={ 255 255 255 }
+			
+				b_peckledon = {}
+				b_peckledontown = {}
+				b_peckledontowntwo = {}
+				b_peckledonsept = {}
+				b_peckledon_sept = {}
+				b_silverwell = {}
+			}
+			
+			c_payne_hall = {
+				color={ 255 70 20 }
+				color2={ 255 255 255 }
+				
+				b_payne_hall = {}
+				b_payne_halltown = {}
+				b_payne_halltowntwo = {}
+				b_payne_hallsept ={}
+				b_summercourt = {}
+			}
+			
+			c_drox_castle = {
+				color={ 241 35 63 }
+				color2={ 255 255 255 }
+				
+				b_drox_castle = {}
+				b_drox_castletwo = {}
+				b_drox_castletown = {}
+				b_drox_castlesept = {}
+			}
+			
+			c_riverspring = {
+				color={ 241 55 63 }
+				color2={ 255 255 255 }
+				
+				b_riverspring = {}
+				b_halton = {}
+				b_sowerby = {}
+				b_underwood = {}
+				b_riverspring_sept = {}
+			}
+		}
+		
+		d_cornfield = {
+			color={ 135 25 3 }
+			color2={ 255 255 255 }
+			
+			#capital = 199
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_greenfield = {
+				color={ 135 35 3 }
+				color2={ 255 255 255 }
+				
+				name_tier=baron
+				
+				b_greenfield = {}
+				b_greenfieldtown = {}
+				b_greenfieldtowntwo = {}
+				b_greenfieldsept = {}
+				b_threemilestone = {}
+			}
+			
+			c_cornfield = {
+				color={ 135 45 3 }
+				color2={ 255 255 255 }
+				
+				name_tier=baron
+				
+				b_cornfield = {}
+				b_cornfieldtown = {}
+				b_cornfieldtowntwo = {}
+				b_cornfieldsept = {}
+				b_slaughterbridge = {}
+			}
+			
+			c_lonmont = {
+				color={ 135 55 3 }
+				color2={ 255 255 255 }
+			
+				b_lonmont = {}
+				b_lonmonttown = {}
+				b_lonmontsept = {}
+			}
+		}
+		
+		d_fair_isle = {
+			color={ 255 60 20 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_fair_isle = {
+				color={ 255 60 20 }
+				color2={ 255 255 255 }
+				
+				b_fair_isle = {}
+				b_fair_isletown = {}
+				b_fair_keep = {}
+				b_fair_isle_sept = {}
+				b_gisburn = {}
+			}
+		}
+	}
+	
+}
+###Mountain Clans###
+k_mountain_clans = {
+	color={ 154 135 126 }
+	color2={ 255 255 255 }
+	
+	culture = moon_clansman
+	religion = mountain_old_gods
+	
+	dignity = 20
+	capital = 133
+	
+	# Always exists
+	landless = yes
+
+	allow = {
+		always = no
+	}
+	
+	d_black_ears = {
+		color={ 85 71 64 }
+		color2={ 255 255 255 }
+		
+		culture = moon_clansman
+		religion = mountain_old_gods
+		
+		capital = 133
+		
+		# Always exists
+		landless = yes
+		
+		tribe = yes
+	}
+	d_burned_men = {
+		color={ 197 97 49 }
+		color2={ 255 255 255 }
+		
+		culture = moon_clansman
+		religion = mountain_old_gods
+		
+		capital = 135
+		
+		title = "RED_HAND"
+		title_female = "RED_HAND"
+		
+		# Always exists
+		landless = yes
+		
+		tribe = yes
+	}
+	d_milk_snakes = {
+		color={ 70 67 65 }
+		color2={ 255 255 255 }
+		
+		culture = moon_clansman
+		religion = mountain_old_gods
+		
+		capital = 136
+		
+		# Always exists
+		landless = yes
+		
+		tribe = yes
+	}
+	d_moon_brothers = {
+		color={ 189 152 133 }
+		color2={ 255 255 255 }
+		
+		culture = moon_clansman
+		religion = mountain_old_gods
+		
+		capital = 140
+		
+		# Always exists
+		landless = yes
+		
+		tribe = yes
+	}
+	d_painted_dogs = {
+		color={ 217 167 143 }
+		color2={ 255 255 255 }
+		
+		culture = moon_clansman
+		religion = mountain_old_gods
+		
+		capital = 145
+		
+		# Always exists
+		landless = yes
+		
+		tribe = yes
+	}
+	d_sons_of_the_mist = {
+		color={ 171 162 157 }
+		color2={ 255 255 255 }
+		
+		culture = moon_clansman
+		religion = mountain_old_gods
+		
+		capital = 129
+		
+		# Always exists
+		landless = yes
+		
+		tribe = yes
+	}
+	d_stone_crows = {
+		color={ 78 50 36 }
+		color2={ 255 255 255 }
+		
+		culture = moon_clansman
+		religion = mountain_old_gods
+		
+		capital = 134
+		
+		# Always exists
+		landless = yes
+		
+		tribe = yes
+	}
+}
+
+
+###
+c_thenn_rel = {
+	color={ 81 61 255 }
+	color2={ 255 255 255 }
+	
+	capital = 2 #Thenn
+	
+	title = "MAGNAR"
+	foa = "MAGNAR_FOA"
+	#short_name = yes
+	location_ruler_title = yes
+	
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = thenn_rel
+	culture = thenn
+	
+	# # Cannot be held as a secondary title
+	# primary = yes
+	
+	dignity = 100
+}
+k_beyond_wall = {
+	color={ 155 155 155 }
+	color2={ 220 220 20 }
+	
+	#capital = 14 # Hardhome
+	
+	allow = {
+		NOT = { trait = wildling }
+		hidden_tooltip = { NOT = { culture_group = winter_group } }
+	}
+	
+	culture = wildling
+	religion = beyond_wall_old_gods
+	
+	d_lower_frostfangs = {
+		color={ 122 175 255 }
+		color2={ 255 255 255 }
+		
+		#capital = 9 # Fist of the First Men
+		allow = {
+			OR = {				
+				custom_tooltip = {
+					text = TOOLTIPhl_creation_requirement
+					hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+				}	
+				has_game_rule = { name = hl_creation_requirement value = off }
+			}	
+		}
+		
+		c_c_frostfangs = {
+			color={ 122 175 255 }
+			color2={ 255 255 255 }
+		
+			b_giants_stair = {
+			}
+			b_forktop_rest = {
+			}
+		}
+		c_the_gorge = {
+			color={ 122 175 255 }
+			color2={ 255 255 255 }
+		
+			b_ruddy_hall = {
+			}
+		
+			b_bearview = {
+			}			
+		}
+		c_skirling_pass = {
+			color={ 81 61 255 }
+			color2={ 255 255 255 }
+			
+			b_skirling_watch = {
+			}
+			b_keening_arch = {
+			}
+			b_deepvalley = {
+			}
+		}		
+	}
+	
+	d_milkwater = {
+		color={ 92 145 210 }
+		color2={ 255 255 255 }
+		
+		allow = {
+			OR = {				
+				custom_tooltip = {
+					text = TOOLTIPhl_creation_requirement
+					hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+				}	
+				has_game_rule = { name = hl_creation_requirement value = off }
+			}	
+		}
+	
+		c_fot_first_men = {
+			color={ 122 175 255 }
+			color2={ 255 255 255 }
+			
+			holy_site = old_gods
+			holy_site = old_gods_reformed
+			holy_site = beyond_wall_old_gods
+			holy_site = beyond_wall_old_gods_reformed
+			holy_site = cold_gods
+			holy_site = thenn_rel
+		
+			b_the_fist = {
+			}
+			b_the_fist_temple = {
+			}
+		}
+		c_crasters_keep = {
+			color={ 153 0 255 }
+			color2={ 255 255 255 }
+			
+			holy_site = cold_gods
+		
+			b_crasters_keep = {
+			}
+		}
+		c_whitetree = {
+			color={ 153 0 255 }
+			color2={ 255 255 255 }
+			
+			holy_site = cold_gods
+		
+			b_whitewatch = {
+			}
+			b_whitetree = {
+			}
+			b_first_hearth = {
+			}			
+			
+		}
+	}
+	
+	d_hardhome = {
+		color={ 133 0 200 }
+		color2={ 255 255 255 }
+		
+		allow = {
+			OR = {				
+				custom_tooltip = {
+					text = TOOLTIPhl_creation_requirement
+					hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+				}	
+				has_game_rule = { name = hl_creation_requirement value = off }
+			}	
+		}
+			
+		c_hardhome = {
+			color={ 153 0 255 }
+			color2={ 255 255 255 }
+			
+			holy_site = beyond_wall_old_gods
+			holy_site = beyond_wall_old_gods_reformed
+		
+			b_storrolds_point = {
+			}
+			b_hardhome = {
+			}
+			b_wightward = {
+			}
+			b_storrolds_keep = {
+			}		
+			b_hardhome_city = {
+			}
+		}
+		c_first_forest = {
+			color={ 113 0 215 }
+			color2={ 255 255 255 }
+			
+			b_firsthill = {
+			}
+			b_firsthome = {
+			}
+		}
+	}
+		
+	d_upper_frostfangs = {
+		color={ 81 61 255 }
+		color2={ 255 255 255 }
+		
+		allow = {
+			OR = {				
+				custom_tooltip = {
+					text = TOOLTIPhl_creation_requirement
+					hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+				}	
+				has_game_rule = { name = hl_creation_requirement value = off }
+			}	
+		}
+			
+		
+		c_n_frostfangs = {
+			color={ 81 61 255 }
+			color2={ 255 255 255 }
+			
+			holy_site = cold_gods
+			
+			b_forktop_point = {
+			}
+		}
+		c_the_giants_stairs = {
+			color={ 111 97 255 }
+			color2={ 255 255 255 }
+					
+			b_gianthold = {
+			}
+		}		
+	}
+	
+	
+	d_frozen_shore = { 
+		color={ 136 122 255 }
+		color2={ 255 255 255 }
+		
+		#capital = 4 # The Frozen Shore
+		allow = {
+			OR = {				
+				custom_tooltip = {
+					text = TOOLTIPhl_creation_requirement
+					hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+				}	
+				has_game_rule = { name = hl_creation_requirement value = off }
+			}	
+		}
+			
+		c_frozen_shore = {
+			color={ 136 122 255 }
+			color2={ 255 255 255 }
+		
+			b_icehome = {
+			}
+			
+		}
+
+		c_ice_bay_shore = {
+			color={ 136 122 255 }
+			color2={ 255 255 255 }
+		
+			b_iceguard = {
+			}
+			b_baypoint = {
+			}			
+		}
+		
+	}
+	
+	d_ice_rivers = { 
+		color={ 176 162 255 }
+		color2={ 255 255 255 }
+		
+		allow = {
+			OR = {				
+				custom_tooltip = {
+					text = TOOLTIPhl_creation_requirement
+					hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+				}	
+				has_game_rule = { name = hl_creation_requirement value = off }
+			}	
+		}
+		
+		c_great_ice_river = {
+			color={ 176 162 255 }
+			color2={ 255 255 255 }
+		
+			b_ice_camp = {
+			}
+			b_icecross = {
+			}	
+		}
+		c_the_west_shelf = {
+			color={ 101 41 255 }
+			color2={ 255 255 255 }
+		
+			b_west_camp = {
+			}
+		}
+	}
+
+	
+	d_shivering_shore = {
+		color={ 202 122 255 }
+		color2={ 255 255 255 }
+		
+		#capital = 6 # Shivering Forest
+		allow = {
+			OR = {				
+				custom_tooltip = {
+					text = TOOLTIPhl_creation_requirement
+					hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+				}	
+				has_game_rule = { name = hl_creation_requirement value = off }
+			}	
+		}
+		c_thenn = {
+			color={ 81 61 255 }
+			color2={ 255 255 255 }
+			
+			holy_site = thenn_rel
+	
+			b_thenn = {
+			}
+			b_northdown = {
+			}					
+		}
+		c_shivering_forest = {
+			color={ 202 122 255 }
+			color2={ 255 255 255 }
+		
+			b_shivering_grove = {
+			}
+			b_shivering_thatch = {
+			}
+		}
+		c_free_vale = {
+			color={ 152 72 205 }
+			color2={ 255 255 255 }
+		
+			b_free_grove = {
+			}
+			b_borderhold = {
+			}
+		}
+	}
+	d_haunted_forest = { 
+		color={ 153 0 255 }
+		color2={ 255 255 255 }
+		
+		#capital = 14 # Hardhome
+		allow = {
+			OR = {				
+				custom_tooltip = {
+					text = TOOLTIPhl_creation_requirement
+					hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+				}	
+				has_game_rule = { name = hl_creation_requirement value = off }
+			}	
+		}
+
+		
+		c_haunted_forest = {
+			color={ 153 0 255 }
+			color2={ 255 255 255 }
+		
+			b_haunted_keep = {
+			}
+			b_old_weirgrove = {
+			}		
+		}
+		c_antler_vale = {
+			color={ 202 122 255 }
+			color2={ 255 255 255 }
+		
+			b_antler_fork = {
+			}
+			b_wightgrove = {
+			}
+		}
+		c_night_valleys = {
+			color={ 100 0 200 }
+			color2={ 255 255 255 }
+		
+			b_nighthold = {
+			}
+			b_nightwatch = {
+			}		
+		}
+	}
+}
+
+
+

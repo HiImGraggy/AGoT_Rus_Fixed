@@ -1,0 +1,21 @@
+name = "Вторжение Принца Деймона на Ступени"
+
+casus_belli={
+	casus_belli=duchy_adventure
+	actor=779496 # Daemon Targaryen
+	recipient=112300516 #The Three Daughters
+	landed_title=k_stepstones
+	date=8106.1.1
+}
+
+8106.1.1 = {
+	add_defender = 112300516 #The Three Daughters
+	add_attacker = 779496 # Daemon Targaryen
+	add_attacker = 26052 #Corlys Velaryon
+}
+
+8109.1.1 = {
+	rem_defender = 112300516 #The Three Daughters
+	rem_attacker = 779496 # Daemon Targaryen
+	rem_attacker = 26052 #Corlys Velaryon
+}                                                                                                                                                                                                                                                                                                                

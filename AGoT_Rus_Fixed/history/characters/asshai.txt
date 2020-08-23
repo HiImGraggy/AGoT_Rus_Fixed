@@ -1,0 +1,1252 @@
+#####################
+### Asshai Houses ###
+#####################
+### House Adiur
+34532901 = {
+	name="Бунут"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+	
+	7802.1.1 = {birth="7802.1.1"}
+	7869.1.1 = {death="7869.1.1"}
+}
+34432901 = {
+	name="Аргант"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=34532901
+	
+	7821.1.1 = {birth="7821.1.1"}
+	7892.1.1 = {death="7892.1.1"}
+}
+34332901 = {
+	name="Техут"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=34432901
+	
+	7848.1.1 = {birth="7848.1.1"}
+	7905.1.1 = {death="7905.1.1"}
+}
+34232901 = {
+	name="Шамаш"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=34332901
+	
+	7872.1.1 = {birth="7872.1.1"}
+	7934.1.1 = {death="7934.1.1"}
+}
+34132901 = {
+	name="Гудит"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=34232901
+	
+	7899.1.1 = {birth="7899.1.1"}
+	7962.1.1 = {death="7962.1.1"}
+}
+34032901 = {
+	name="Палусум"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=34132901
+	
+	7922.1.1 = {birth="7922.1.1"}
+	7990.1.1 = {death="7990.1.1"}
+}
+10032901 = {
+	name="Сумалика"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+	
+	father=34032901
+
+	7955.1.1 = {birth="7955.1.1"}
+	7971.1.1 = {add_trait=trained_warrior}
+	8028.1.1 = {death="8028.1.1"}
+}
+10132901 = {
+	name="Урнамму"	# not a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=10032901
+
+	7976.1.1 = {birth="7976.1.1"}
+	7992.1.1 = {add_trait=trained_warrior}
+	8017.1.1 = {death="8017.1.1"}
+}
+10532901 = {
+	name="Авил"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=10132901
+
+	7997.1.1 = {birth="7997.1.1"}
+	8013.1.1 = {add_trait=poor_warrior}
+	8043.1.1 = {death="8043.1.1"}
+}
+10732901 = {
+	name="Даданум"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=10532901
+
+	8021.1.1 = {birth="8021.1.1"}
+	8037.1.1 = {add_trait=trained_warrior}
+	8054.1.1 = {death = {death_reason = death_murder}}
+}
+11132901 = {
+	name="Мамагал"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=10732901
+
+	8048.1.1 = {birth="8048.1.1"}
+	8064.1.1 = {add_trait=poor_warrior}
+	8114.1.1 = {death="8114.1.1"}
+}
+11532901 = {
+	name="Дамузи"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=11132901
+
+	8079.1.1 = {birth="8079.1.1"}
+	8095.1.1 = {add_trait=trained_warrior}
+	8133.1.1 = {death="8133.1.1"}
+}
+11932901 = {
+	name="Касмат"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=11532901
+
+	8104.1.1 = {birth="8104.1.1"}
+	8120.1.1 = {add_trait=skilled_warrior}
+	8147.1.1 = {death="8147.1.1"}
+}
+12032901 = {
+	name="Шепсин"	# not a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=11532901
+
+	8107.1.1 = {birth="8107.1.1"}
+	8123.1.1 = {add_trait=trained_warrior}
+	8148.1.1 = {death="8148.1.1"}
+}
+12132901 = {
+	name="Самукан"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=11932901
+
+	8131.1.1 = {birth="8131.1.1"}
+	8147.1.1 = {add_trait=poor_warrior}
+	8176.1.1 = {death="8176.1.1"}
+}
+12532901 = {
+	name="Уту"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=12032901
+
+	8139.1.1 = {birth="8139.1.1"}
+	8155.1.1 = {add_trait=poor_warrior}
+	8215.1.1 = {death = {death_reason = death_accident}}
+}
+12732901 = {
+	name="Хумбаб"	# not a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=12532901
+
+	8164.1.1 = {birth="8164.1.1"}
+	8180.1.1 = {add_trait=skilled_warrior}
+	8205.1.1 = {death = {death_reason = death_accident}}
+}
+12932901 = {
+	name="Ибнатум"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=12732901
+
+	8184.1.1 = {birth="8184.1.1"}
+	8200.1.1 = {add_trait=trained_warrior}
+	8240.1.1 = {death="8240.1.1"}
+}
+13332901 = {
+	name="Касмат"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=12932901
+
+	8212.1.1 = {birth="8212.1.1"}
+	8228.1.1 = {add_trait=poor_warrior}
+	8273.1.1 = {death="8273.1.1"}
+}
+13632901 = {
+	name="Бунут"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=13332901
+
+	8233.1.1 = {birth="8233.1.1"}
+	8249.1.1 = {add_trait=skilled_warrior}
+	8274.1.1 = {death="8274.1.1"}
+}
+13932901 = {
+	name="Ятум"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=13632901
+
+	8258.1.1 = {birth="8258.1.1"}
+	8274.1.1 = {add_trait=poor_warrior}
+}
+14032901 = {
+	name="Куэйта"	# Canon, not a lord
+	female=yes
+	dynasty=32901
+	
+	martial = 2
+	stewardship = 3
+	intrigue = 7
+	learning = 8
+	diplomacy = 7
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=13632901
+	
+	add_trait = elusive_shadow
+	
+	8259.1.1 = {birth="8259.1.1"}
+	8279.1.1 = {
+		add_trait = shadowbinder
+		add_trait = mystic
+		effect = {
+			k_asshai = { holder_scope = { ROOT = { move_character = PREV } } }
+		}
+	}
+}
+14132901 = {
+	name="Бунут"	# not a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=13632901
+
+	8262.1.1 = {birth="8262.1.1"}
+	8278.1.1 = {add_trait=trained_warrior}
+	8280.1.1 = {add_spouse=44132901}
+}
+44132901 = {
+	name="Намму"
+	female=yes
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	8262.1.1 = {birth="8262.1.1"}
+}
+14232901 = {
+	name="Муштал"	# not a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=13932901
+
+	8279.1.1 = {birth="8279.1.1"}
+	8295.1.1 = {add_trait=trained_warrior}
+}
+14332901 = {
+	name="Геметега"	# not a lord
+	female=yes
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=14132901
+	mother=44132901
+
+	8294.1.1 = {birth="8294.1.1"}
+}
+14432901 = {
+	name="Нинтуда"	# not a lord
+	female=yes
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=14132901
+	mother=44132901
+
+	8296.1.1 = {birth="8296.1.1"}
+}
+14532901 = {
+	name="Мунавиртум"	# not a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=14132901
+	mother=44132901
+
+	8299.1.1 = {birth="8299.1.1"}
+	8315.1.1 = {add_trait=trained_warrior}
+}
+
+###########################
+### Shadowlander Houses ###
+###########################
+### House Ahasunnu
+34533911 = {
+	name="Аммит"	# a lord
+	dynasty=33911
+
+	religion="shadowbinders"
+	culture="shadowlander"
+	
+	7822.1.1 = {birth="7822.1.1"}
+	7883.1.1 = {death="7883.1.1"}
+}
+34433911 = {
+	name="Муштал"	# a lord
+	dynasty=33911
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=34533911
+	
+	7846.1.1 = {birth="7846.1.1"}
+	7903.1.1 = {death="7903.1.1"}
+}
+34333911 = {
+	name="Навирум"	# a lord
+	dynasty=33911
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=34433911
+	
+	7873.1.1 = {birth="7873.1.1"}
+	7925.1.1 = {death="7925.1.1"}
+}
+34233911 = {
+	name="Палусум"	# a lord
+	dynasty=33911
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=34333911
+	
+	7896.1.1 = {birth="7896.1.1"}
+	7945.1.1 = {death="7945.1.1"}
+}
+34133911 = {
+	name="Шепсин"	# a lord
+	dynasty=33911
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=34233911
+	
+	7921.1.1 = {birth="7921.1.1"}
+	7977.1.1 = {death="7977.1.1"}
+}
+34033911 = {
+	name="Липит"	# a lord
+	dynasty=33911
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=34133911
+	
+	7945.1.1 = {birth="7945.1.1"}
+	7992.1.1 = {death="7992.1.1"}
+}
+10033911 = {
+	name="Курум"	# a lord
+	dynasty=33911
+
+	religion="shadowbinders"
+	culture="shadowlander"
+	
+	father=34033911
+
+	7972.1.1 = {birth="7972.1.1"}
+	7988.1.1 = {add_trait=trained_warrior}
+	8034.1.1 = {death="8034.1.1"}
+}
+10233911 = {
+	name="Ясмат"	# a lord
+	dynasty=33911
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=10033911
+
+	7994.1.1 = {birth="7994.1.1"}
+	8010.1.1 = {add_trait=poor_warrior}
+	8043.1.1 = {death="8043.1.1"}
+}
+10533911 = {
+	name="Муштал"	# a lord
+	dynasty=33911
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=10233911
+
+	8017.1.1 = {birth="8017.1.1"}
+	8033.1.1 = {add_trait=poor_warrior}
+	8072.1.1 = {death="8072.1.1"}
+}
+11033911 = {
+	name="Аргант"	# a lord
+	dynasty=33911
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=10533911
+
+	8043.1.1 = {birth="8043.1.1"}
+	8059.1.1 = {add_trait=trained_warrior}
+	8090.1.1 = {death="8090.1.1"}
+}
+11333911 = {
+	name="Белшун"	# a lord
+	dynasty=33911
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=11033911
+
+	8081.1.1 = {birth="8081.1.1"}
+	8097.1.1 = {add_trait=trained_warrior}
+	8154.1.1 = {death="8154.1.1"}
+}
+11533911 = {
+	name="Шуллат"	# not a lord
+	dynasty=33911
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=11033911
+
+	8085.1.1 = {birth="8085.1.1"}
+	8101.1.1 = {add_trait=trained_warrior}
+	8139.1.1 = {death="8139.1.1"}
+}
+11933911 = {
+	name="Лугатум"	# a lord
+	dynasty=33911
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=11333911
+
+	8122.1.1 = {birth="8122.1.1"}
+	8138.1.1 = {add_trait=poor_warrior}
+	8164.1.1 = {death="8164.1.1"}
+}
+12233911 = {
+	name="Кубо"	# a lord
+	dynasty=33911
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=11533911
+
+	8111.1.1 = {birth="8111.1.1"}
+	8127.1.1 = {add_trait=poor_warrior}
+	8188.1.1 = {death="8188.1.1"}
+}
+12333911 = {
+	name="Иррара"	# not a lord
+	dynasty=33911
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=11533911
+
+	8113.1.1 = {birth="8113.1.1"}
+	8129.1.1 = {add_trait=trained_warrior}
+	8155.1.1 = {death="8155.1.1"}
+}
+12633911 = {
+	name="Мунавиртум"	# a lord
+	dynasty=33911
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=12333911
+
+	8137.1.1 = {birth="8137.1.1"}
+	8153.1.1 = {add_trait=trained_warrior}
+	8200.1.1 = {death="8200.1.1"}
+}
+12833911 = {
+	name="Ибнатум"	# a lord
+	dynasty=33911
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=12633911
+
+	8159.1.1 = {birth="8159.1.1"}
+	8175.1.1 = {add_trait=skilled_warrior}
+	8215.1.1 = {death="8215.1.1"}
+}
+13033911 = {
+	name="Сумалика"	# a lord
+	dynasty=33911
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=12633911
+
+	8165.1.1 = {birth="8165.1.1"}
+	8181.1.1 = {add_trait=trained_warrior}
+	8223.1.1 = {death="8223.1.1"}
+}
+13233911 = {
+	name="Илуат"	# a lord
+	dynasty=33911
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=13033911
+
+	8197.1.1 = {birth="8197.1.1"}
+	8213.1.1 = {add_trait=poor_warrior}
+	8272.1.1 = {death="8272.1.1"}
+}
+13733911 = {
+	name="Шепсин"	# a lord
+	dynasty=33911
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=13233911
+
+	8217.1.1 = {birth="8217.1.1"}
+	8233.1.1 = {add_trait=skilled_warrior}
+	8297.1.1 = {death="8297.1.1"}
+}
+14233911 = {
+	name="Шусен"	# a lord
+	dynasty=33911
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=13733911
+
+	8244.1.1 = {birth="8244.1.1"}
+	8260.1.1 = {add_trait=trained_warrior}
+}
+14333911 = {
+	name="Липит"	# not a lord
+	dynasty=33911
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=13733911
+
+	8245.1.1 = {birth="8245.1.1"}
+	8261.1.1 = {add_trait=trained_warrior}
+	8263.1.1 = {add_spouse=44333911}
+	8295.1.1 = {death="8295.1.1"}
+}
+44333911 = {
+	name="Ахассут"
+	female=yes
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	8245.1.1 = {birth="8245.1.1"}
+	8295.1.1 = {death="8295.1.1"}
+}
+14433911 = {
+	name="Лугатум"	# not a lord
+	dynasty=33911
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=14233911
+
+	8269.1.1 = {birth="8269.1.1"}
+	8285.1.1 = {add_trait=trained_warrior}
+}
+14533911 = {
+	name="Уту"	# not a lord
+	dynasty=33911
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=14333911
+	mother=44333911
+
+	8273.1.1 = {birth="8273.1.1"}
+	8289.1.1 = {add_trait=trained_warrior}
+}
+
+### House Zirratbanit
+34433914 = {
+	name="Ибнатум"	# a lord
+	dynasty=33914
+
+	religion="shadowbinders"
+	culture="shadowlander"
+	
+	7814.1.1 = {birth="7814.1.1"}
+	7871.1.1 = {death="7871.1.1"}
+}
+34333914 = {
+	name="Самукан"	# a lord
+	dynasty=33914
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=34433914
+	
+	7837.1.1 = {birth="7837.1.1"}
+	7888.1.1 = {death="7888.1.1"}
+}
+34233914 = {
+	name="Нергал"	# a lord
+	dynasty=33914
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=34333914
+	
+	7862.1.1 = {birth="7862.1.1"}
+	7919.1.1 = {death="7919.1.1"}
+}
+34133914 = {
+	name="Вусум"	# a lord
+	dynasty=33914
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=34233914
+	
+	7889.1.1 = {birth="7889.1.1"}
+	7944.1.1 = {death="7944.1.1"}
+}
+34033914 = {
+	name="Дадазиг"	# a lord
+	dynasty=33914
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=34133914
+	
+	7915.1.1 = {birth="7915.1.1"}
+	7964.1.1 = {death="7964.1.1"}
+}
+10033914 = {
+	name="Самукан"	# a lord
+	dynasty=33914
+
+	religion="shadowbinders"
+	culture="shadowlander"
+	
+	father=34033914
+
+	7944.1.1 = {birth="7944.1.1"}
+	7960.1.1 = {add_trait=trained_warrior}
+	8009.1.1 = {death="8009.1.1"}
+}
+10133914 = {
+	name="Лаум"	# a lord
+	dynasty=33914
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=10033914
+
+	7976.1.1 = {birth="7976.1.1"}
+	7992.1.1 = {add_trait=trained_warrior}
+	8036.1.1 = {death="8036.1.1"}
+}
+10333914 = {
+	name="Хумбаб"	# a lord
+	dynasty=33914
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=10033914
+
+	7981.1.1 = {birth="7981.1.1"}
+	7997.1.1 = {add_trait=trained_warrior}
+	8054.1.1 = {death="8054.1.1"}
+}
+10833914 = {
+	name="Аммит"	# not a lord
+	dynasty=33914
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=10333914
+
+	8007.1.1 = {birth="8007.1.1"}
+	8023.1.1 = {add_trait=trained_warrior}
+	8042.1.1 = {death="8042.1.1"}
+}
+11333914 = {
+	name="Накир"	# a lord
+	dynasty=33914
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=10833914
+
+	8037.1.1 = {birth="8037.1.1"}
+	8053.1.1 = {add_trait=trained_warrior}
+	8113.1.1 = {death="8113.1.1"}
+}
+11633914 = {
+	name="Куда"	# not a lord
+	dynasty=33914
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=11333914
+
+	8056.1.1 = {birth="8056.1.1"}
+	8072.1.1 = {add_trait=skilled_warrior}
+	8108.1.1 = {death="8108.1.1"}
+}
+11733914 = {
+	name="Шулпей"	# a lord
+	dynasty=33914
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=11633914
+
+	8074.1.1 = {birth="8074.1.1"}
+	8090.1.1 = {add_trait=trained_warrior}
+	8132.1.1 = {death="8132.1.1"}
+}
+12133914 = {
+	name="Сиду"	# a lord
+	dynasty=33914
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=11733914
+
+	8103.1.1 = {birth="8103.1.1"}
+	8119.1.1 = {add_trait=trained_warrior}
+	8139.1.1 = {death="8139.1.1"}
+}
+12333914 = {
+	name="Варад"	# a lord
+	dynasty=33914
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=12133914
+
+	8135.1.1 = {birth="8135.1.1"}
+	8151.1.1 = {add_trait=trained_warrior}
+	8171.1.1 = {death="8171.1.1"}
+}
+12533914 = {
+	name="Палусум"	# a lord
+	dynasty=33914
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=12333914
+
+	8168.1.1 = {birth="8168.1.1"}
+	8184.1.1 = {add_trait=skilled_warrior}
+	8216.1.1 = {death="8216.1.1"}
+}
+12633914 = {
+	name="Энлил"	# a lord
+	dynasty=33914
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=12333914
+
+	8169.1.1 = {birth="8169.1.1"}
+	8185.1.1 = {add_trait=trained_warrior}
+	8227.1.1 = {death="8227.1.1"}
+}
+12933914 = {
+	name="Дамузи"	# a lord
+	dynasty=33914
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=12633914
+
+	8194.1.1 = {birth="8194.1.1"}
+	8210.1.1 = {add_trait=trained_warrior}
+	8261.1.1 = {death="8261.1.1"}
+}
+13133914 = {
+	name="Даданум"	# a lord
+	dynasty=33914
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=12933914
+
+	8228.1.1 = {birth="8228.1.1"}
+	8244.1.1 = {add_trait=trained_warrior}
+	8262.1.1 = {death="8262.1.1"}
+}
+13233914 = {
+	name="Лимер"	# a lord
+	dynasty=33914
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=13133914
+
+	8247.1.1 = {birth="8247.1.1"}
+	8263.1.1 = {add_trait=trained_warrior}
+}
+13333914 = {
+	name="Накир"	# not a lord
+	dynasty=33914
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=13133914
+
+	8250.1.1 = {birth="8250.1.1"}
+	8266.1.1 = {add_trait=skilled_warrior}
+	8268.1.1 = {add_spouse=43333914}
+}
+43333914 = {
+	name="Шубад"
+	female=yes
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	8250.1.1 = {birth="8250.1.1"}
+}
+14033914 = {
+	name="Нин"	# not a lord
+	female=yes
+	dynasty=33914
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=13333914
+	mother=43333914
+
+	8278.1.1 = {birth="8278.1.1"}
+}
+14133914 = {
+	name="Касмат"	# not a lord
+	dynasty=33914
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=13333914
+	mother=43333914
+
+	8280.1.1 = {birth="8280.1.1"}
+	8296.1.1 = {add_trait=skilled_warrior}
+}
+14233914 = {
+	name="Гудит"	# not a lord
+	dynasty=33914
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=13333914
+	mother=43333914
+
+	8283.1.1 = {birth="8283.1.1"}
+	8299.1.1 = {add_trait=skilled_warrior}
+}
+
+### House Нин-marki
+34533901 = {
+	name="Белшун"	# a lord
+	dynasty=33901
+
+	religion="shadowbinders"
+	culture="shadowlander"
+	
+	7816.1.1 = {birth="7816.1.1"}
+	7881.1.1 = {death="7881.1.1"}
+}
+34433901 = {
+	name="Эррат"	# a lord
+	dynasty=33901
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=34533901
+	
+	7839.1.1 = {birth="7839.1.1"}
+	7903.1.1 = {death="7903.1.1"}
+}
+34333901 = {
+	name="Иддин"	# a lord
+	dynasty=33901
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=34433901
+	
+	7865.1.1 = {birth="7865.1.1"}
+	7931.1.1 = {death="7931.1.1"}
+}
+34233901 = {
+	name="Нинурта"	# a lord
+	dynasty=33901
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=34333901
+	
+	7887.1.1 = {birth="7887.1.1"}
+	7940.1.1 = {death="7940.1.1"}
+}
+34133901 = {
+	name="Шулги"	# a lord
+	dynasty=33901
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=34233901
+	
+	7910.1.1 = {birth="7910.1.1"}
+	7967.1.1 = {death="7967.1.1"}
+}
+34033901 = {
+	name="Лимер"	# a lord
+	dynasty=33901
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=34133901
+	
+	7932.1.1 = {birth="7932.1.1"}
+	7985.1.1 = {death="7985.1.1"}
+}
+10033901 = {
+	name="Мунавиртум"	# a lord
+	dynasty=33901
+
+	religion="shadowbinders"
+	culture="shadowlander"
+	
+	father=34033901
+
+	7965.1.1 = {birth="7965.1.1"}
+	7981.1.1 = {add_trait=skilled_warrior}
+	8037.1.1 = {death="8037.1.1"}
+}
+10333901 = {
+	name="Иштуп"	# a lord
+	dynasty=33901
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=10033901
+
+	7995.1.1 = {birth="7995.1.1"}
+	8011.1.1 = {add_trait=poor_warrior}
+	8064.1.1 = {death="8064.1.1"}
+}
+10533901 = {
+	name="Пузур"	# a lord
+	dynasty=33901
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=10333901
+
+	8013.1.1 = {birth="8013.1.1"}
+	8029.1.1 = {add_trait=poor_warrior}
+	8080.1.1 = {death="8080.1.1"}
+}
+11233901 = {
+	name="Хунхал"	# a lord
+	dynasty=33901
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=10533901
+
+	8034.1.1 = {birth="8034.1.1"}
+	8050.1.1 = {add_trait=trained_warrior}
+	8090.1.1 = {death="8090.1.1"}
+}
+11533901 = {
+	name="Даданум"	# a lord
+	dynasty=33901
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=11233901
+
+	8055.1.1 = {birth="8055.1.1"}
+	8071.1.1 = {add_trait=trained_warrior}
+	8131.1.1 = {death="8131.1.1"}
+}
+11633901 = {
+	name="Лугатум"	# a lord
+	dynasty=33901
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=11533901
+
+	8086.1.1 = {birth="8086.1.1"}
+	8102.1.1 = {add_trait=skilled_warrior}
+	8153.1.1 = {death="8153.1.1"}
+}
+11833901 = {
+	name="Ясмат"	# a lord
+	dynasty=33901
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=11633901
+
+	8115.1.1 = {birth="8115.1.1"}
+	8131.1.1 = {add_trait=poor_warrior}
+	8167.1.1 = {death="8167.1.1"}
+}
+12033901 = {
+	name="Авил"	# a lord
+	dynasty=33901
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=11633901
+
+	8119.1.1 = {birth="8119.1.1"}
+	8135.1.1 = {add_trait=trained_warrior}
+	8177.1.1 = {death = {death_reason = death_murder}}
+}
+12233901 = {
+	name="Навирум"	# a lord
+	dynasty=33901
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=12033901
+
+	8151.1.1 = {birth="8151.1.1"}
+	8167.1.1 = {add_trait=poor_warrior}
+	8183.1.1 = {death="8183.1.1"}
+}
+12533901 = {
+	name="Бунут"	# a lord
+	dynasty=33901
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=12233901
+
+	8170.1.1 = {birth="8170.1.1"}
+	8186.1.1 = {add_trait=skilled_warrior}
+	8203.1.1 = {death="8203.1.1"}
+}
+12833901 = {
+	name="Вусум"	# a lord
+	dynasty=33901
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=12533901
+
+	8201.1.1 = {birth="8201.1.1"}
+	8217.1.1 = {add_trait=poor_warrior}
+	8268.1.1 = {death="8268.1.1"}
+}
+13033901 = {
+	name="Угазум"	# a lord
+	dynasty=33901
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=12833901
+
+	8235.1.1 = {birth="8235.1.1"}
+	8251.1.1 = {add_trait=trained_warrior}
+	8281.1.1 = {death="8281.1.1"}
+}
+13133901 = {
+	name="Энлил"	# a lord
+	dynasty=33901
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=12833901
+
+	8236.1.1 = {birth="8236.1.1"}
+	8252.1.1 = {add_trait=poor_warrior}
+	8290.1.1 = {death="8290.1.1"}
+}
+13433901 = {
+	name="Сиду"	# a lord
+	dynasty=33901
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=13133901
+
+	8269.1.1 = {birth="8269.1.1"}
+	8285.1.1 = {add_trait=trained_warrior}
+}
+13633901 = {
+	name="Амурри"	# not a lord
+	dynasty=33901
+
+	religion="shadowbinders"
+	culture="shadowlander"
+
+	father=13433901
+
+	8292.1.1 = {birth="8292.1.1"}
+}

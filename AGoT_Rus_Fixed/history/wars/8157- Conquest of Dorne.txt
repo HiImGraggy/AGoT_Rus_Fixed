@@ -1,0 +1,19 @@
+name = "Завоевание Дорна"
+
+casus_belli={
+	casus_belli=dejure_kingdom_claim_EMP
+	actor=77016
+	recipient=13001
+	landed_title=e_dorne
+	date=8157.1.1
+}
+
+8157.1.1 = {
+	add_defender = 13001 #Prince Marence of Dorne
+	add_attacker = 77016 #Daeron the Young Dragon	
+}
+
+8157.8.7 = {
+	rem_defender = 13001 #Prince Marence of Dorne
+	rem_attacker = 77016 #Daeron the Young Dragon
+}                                                                                                                                                                                                                                                                                                                

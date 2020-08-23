@@ -1,0 +1,279 @@
+#CODE;ENGLISH;;;;;;;;;;;;;x
+wedding_0;Организовать Свадебный пир;;;;;;;;;;;;;x
+wedding_0_desc;Приглашаю всех вассалов на пир по случаю Свадьбы;;;;;;;;;;;;;x
+wedding_0_named;[Root.GetTitledFirstNameWithDynasty] и [Root.Spouse.GetTitledFirstName] [Root.Spouse.GetOnlyDynastyName] - провести свадьбу;;;;;;;;;;;;;x
+EVTDESC180523;Самое приятное в свадьбе - это организация всего мероприятия.;;;;;;;;;;;;;x
+EVTDESC180523DOTHRAKI;Мои служанки и управляющие желают знать насколько крупной будет свадьба…;;;;;;;;;;;;;x
+EVTOPTA180523;Дабы показать величие нашего Дома, мы устроим самую роскошную свадьбу;;;;;;;;;;;;;x
+EVTOPTB180523;Я устрою большое торжество;;;;;;;;;;;;;x
+EVTOPTC180523;Свадьба — это лишь традиция;;;;;;;;;;;;;x
+EVTOPTA180523DOTHRAKI;Сделайте ее экстравагантной, чтобы показать мою влиятельность;;;;;;;;;;;;;x
+EVTDESC180524;Приготовления к свадьбе почти окончены, но нужно разослать приглашения!;;;;;;;;;;;;;x
+EVTDESC180524DOTHRAKI;Большая часть приготовлений к свадьбе сделана, осталось только разослать приглашения моим вассалам.;;;;;;;;;;;;;x
+EVTOPTA180524;Я приглашаю вас...';;;;;;;;;;;;;x
+EVTTOOLTIP180525;[This.GetTitledFirstNameWithDynasty] приглашается;;;;;;;;;;;;;x
+EVTDESC180525;Уважаем[Root.GetAyaYy] [Root.GetTitledName], я приглашаю вас на свадьбу в город [From.Capital.GetName], где вступят в брак [FromFrom.GetTitledFirstNameWithDynasty] и [FromFrom.Spouse.GetTitledFirstName] [FromFrom.Spouse.GetOnlyDynastyName]. С нетерпением ждём вашего приезда.\n\n[From.GetTitledFirstNameWithDynasty];;;;;;;;;;;;;x
+EVTDESC180525DOTHRAKI;[Root.GetTitledName], вы приглашены на свадьбу в город [From.Capital.GetName], где вступят в брак [FromFrom.GetTitledFirstNameWithDynasty] и [FromFrom.Spouse.GetTitledFirstName] [FromFrom.Spouse.GetOnlyDynastyName]. Ваше присутствие покажет, что вы благочестив[From.GetAyaYy] [From.GetTitle].\n\n[From.GetTitledFirstName];;;;;;;;;;;;;x
+EVTOPTA180525;Я поеду на свадьбу;;;;;;;;;;;;;x
+EVTOPTB180525;Я не хочу танцевать!;;;;;;;;;;;;;x
+EVTTOOLTIP180526;[From.GetTitledFirstName] сильно разочаровался, узнав, что [Root.GetTitledFirstName] отказывается приехать на свадьбу;;;;;;;;;;;;;x
+EVTDESC180526;[GetFromRootInsult] [Root.GetTitledFirstName], я благодарю Вас за приглашение, но не смогу побывать на свадьбе. Если честно, встретиться с вами - это последнее, что мне хочется в этой жизни!\n\nС уважением,\n\n[From.GetTitledFirstName];;;;;;;;;;;;;x
+EVTDESC180526B;[GetFromRootCompliment] [Root.GetTitledFirstName], я благодарю вас за приглашение, но я не смогу присутствовать на свадьбе. Передайте привет новоиспеченной невесте.\n\nС уважением,\n\n[From.GetTitledFirstName];;;;;;;;;;;;;x
+EVTDESC180526DOTHRAKI;[From.GetTitledFirstName] не ответил[From.GetEndA] на ваше приглашение на свадьбу и, по-видимому, избегает вашего присутствия и обесчестивает вашу власть.;;;;;;;;;;;;;x
+EVTOPTA180526;Да и ты мне не слишком нравишься!;;;;;;;;;;;;;x
+EVTDESC180527;Я отдаю приказ организовать торжественную церемонию и пир в городе [Root.Capital.GetName] в честь свадьбы, где вступят в брак [From.GetTitledFirstNameWithDynasty] и [From.Spouse.GetTitledFirstName] [From.Spouse.GetOnlyDynastyName]. Пусть начинаются приготовления...;;;;;;;;;;;;;x
+EVTDESC180527DOTHRAKI;Я отдаю приказ о проведении в городе [Root.Capital.GetName] дня бесконечного питья, пиршества и драк в честь свадьбы, где вступят в брак [From.GetTitledFirstNameWithDynasty] и [From.Spouse.GetTitledFirstName] [From.Spouse.GetOnlyDynastyName]. Пусть начнутся приготовления...;;;;;;;;;;;;;x
+EVTOPTA180527;Все мои вассалы будут там...;;;;;;;;;;;;;x
+EVTDESC180528;Гости наконец прибыли! Слуги работали день и ночь, чтобы украсить танцевальный зал, замок никогда не выглядел так торжественно.;;;;;;;;;;;;;x
+EVTDESC180528DOTHRAKI;Наступил рассвет свадебного дня. Все ваши гости прибыли, рабы и служанки работали день и ночь, чтобы подготовиться к пиршеству. [From.Spouse.GetTitledFirstName] готовится к открытию свадьбы и все таборы полны энергии.;;;;;;;;;;;;;x
+EVTOPTA180528;Добро пожаловать!;;;;;;;;;;;;;x
+EVTTOOLTIP180529;Приветствую, [This.GetTitledFirstNameWithDynasty];;;;;;;;;;;;;x
+EVTDESC180529;[From.GetTitledFirstName] очень тепло приветствует нас на свадьбе, да и само торжество было просто великолепным.;;;;;;;;;;;;;x
+EVTDESC180529DOTHRAKI;[From.GetTitledFirstName] приветствует нас, когда мы приехали на свадьбу, и предагает перебродившее молоко кобылы, а также обильное количество мяса. На рассвете начинается церемония бракосочетания, равно как и питье, пирование и драка.;;;;;;;;;;;;;x
+EVTOPTA180529;Спасибо вам за то, что вы есть!;;;;;;;;;;;;;x
+EVTDESC180530;Супруги обменялись клятвами, и время свадьбы подошло к концу. Все гости согласились, что это было самое лучшее в мире торжество!;;;;;;;;;;;;;x
+EVTDESC180530DOTHRAKI;На следующее утро после свадебного пира все Ко и всадники наконец вернулись на свои земли. Многие благодарят вас за приглашения и желают новобрачным много сильных детей.;;;;;;;;;;;;;x
+EVTOPTA180530;Мне тоже было весело;;;;;;;;;;;;;x
+EVTTOOLTIP180531;[This.GetTitledFirstNameWithDynasty] покидает свадьбу\n;;;;;;;;;;;;;x
+EVTDESC180531;Свадьба закончилась и теперь нам предстоит долгий путь домой. После торжества реальный мир кажется холодным и неприветливым.;;;;;;;;;;;;;x
+EVTDESC180531DOTHRAKI;Свадьба закончилась, и настало время вернуться обратно в мои собственные земли. Дотракийцы насладились возможностью много пировать, пить и драться.;;;;;;;;;;;;;x
+EVTOPTA180531;Будут ли ещё свадьбы?;;;;;;;;;;;;;x
+EVTDESC180532;Необходимо отменить свадьбу из-за предстоящей войны, но, возможно, после победы я снова смогу закатить пир.;;;;;;;;;;;;;x
+EVTOPTA180532;Будем надеяться;;;;;;;;;;;;;x
+EVTTOOLTIP180533;Всем приглашённым будет отправлено письмо об отмене свадьбы;;;;;;;;;;;;;x
+EVTDESC180533;Уважаем[Root.GetAyaYy] [Root.GetTitledFirstName], прошу меня простить, но в связи с войной свадьба будет отменена. Но вы будете приглашены на пир по поводу сокрушительного разгрома моего врага.;;;;;;;;;;;;;x
+EVTOPTA180533;Дайте мне знать, когда надо будет выезжать;;;;;;;;;;;;;x
+EVTDESC180534;Странствующий бард начал играть для нас мелодию, я не удерживаюсь и пускаюсь в пляс, увлекая за собой всех своих гостей. Я танцую пока не начинаю задыхаться, а моё лицо не стало совсем красным. Затем я сажусь отдыхать и начинаю наблюдать за танцорами, которые веселились ещё долгое время...;;;;;;;;;;;;;x
+EVTOPTA180534;Мне хотелось бы нанять этого барда!;;;;;;;;;;;;;x
+EVTOPTB180534;Очень весело, но я и мои гости слишком стары для этого;;;;;;;;;;;;;x
+EVTDESC180535;Пока я занимаюсь подготовкой к свадьбе, в замок прибыла группа странствующих трубадуров. Они выглядели немного бедно, но их мастерство восхитило нас. Возможно, стоит оказать им покровительство.;;;;;;;;;;;;;x
+EVTOPTA180535;Они будут идеальным развлечением для свадьбы!;;;;;;;;;;;;;x
+EVTOPTB180535;Нет, я так не думаю...;;;;;;;;;;;;;x
+EVTDESC180536;Мой вечер закончился с человеком, с которым раньше даже не общались. Засев в саду, мы опустошили пару бутылок дорнийского вина из запасов радушного хозяина.;;;;;;;;;;;;;x
+EVTOPTA180536;Друзья навсегда;;;;;;;;;;;;;x
+EVTTOOLTIP180537;[This.GetTitledFirstName] и [Root.GetTitledFirstName] теперь друзья;;;;;;;;;;;;;x
+EVTDESC180537;Я и [From.GetTitledFirstName] приятно провели время в саду на протяжении нескольких часов, пока мы не уснули. Возможно, в этом виноваты несколько выпитых бутылок дорнийского вина...;;;;;;;;;;;;;x
+EVTOPTA180537;[From.GetTitledFirstName] - мой лучший друг!;;;;;;;;;;;;;x
+EVTDESC180538;Свадьба была отличной, но [FromFrom.GetTitledFirstName] просто вывел[FromFrom.GetEndA] меня из себя своим раздражающим голосом. Ближе к концу мероприятия я, прихватив несколько бутылок вина, прячусь в укромном уголке. Но что удивительно, я оказываюсь не в одиночестве, и вместе мы долго обсуждали, как мерзк[FromFrom.GetAyaIy] [FromFrom.GetTitledFirstName] нас злит.;;;;;;;;;;;;;x
+EVTOPTA180538;Наша взаимная неприязнь сделала нас друзьями!;;;;;;;;;;;;;x
+EVTTOOLTIP180539;[This.GetTitledFirstName] и [Root.GetTitledFirstName] стали друзьями из-за взаимной неприязни к человеку, известному как [FromFrom.GetTitledFirstName];;;;;;;;;;;;;x
+EVTDESC180539;Когда мы сбежали со свадьбы, я и [From.GetTitledFirstName] наконец поговорили, о том, что [FromFromFrom.GetTitledFirstName] нам обоим нерият[FromFromFrom.GetNaEn];;;;;;;;;;;;;x
+EVTOPTA180539;Враг моего врага - мой друг, не так ли?;;;;;;;;;;;;;x
+EVTDESC180540;Мне удалось найти прекрасного партнёра по танцам, пускай мы и были немного пьяны, мы испытали взаимное притяжение друг к другу.;;;;;;;;;;;;;x
+EVTDESC180540DOTHRAKI;Во время свадебного пиршества я начинаю танцевать с кем-то, и после солидного количества выпивки мы оба были немного пьяны и, если я правильно понимаю ситуацию, больше привлекали друг друга.;;;;;;;;;;;;;x
+EVTOPTA180540;Но мы оба в браке...;;;;;;;;;;;;;x
+EVTOPTB180540;Может, найдём более уединённое место?;;;;;;;;;;;;;x
+EVTOPTAwedding.21DOTHRAKI;Я не хочу спать с тобой;;;;;;;;;;;;;x
+EVTOPTB180540DOTHRAKI;Я хочу тебя здесь, прямо под открытым небом!;;;;;;;;;;;;;x
+EVTTOOLTIP180541;[This.GetTitledFirstName] и [Root.GetTitledFirstName] вместе незаметно ускользнули со свадьбы;;;;;;;;;;;;;x
+EVTDESC180541;[From.GetTitledFirstName] и я оказались в большой комнате с кроватью в центре. Несмотря на вино и взаимное притяжение, мы чувствовали себя немного неловко.;;;;;;;;;;;;;x
+EVTDESC180541DOTHRAKI;Во время свадебного пира, [From.GetTitledFirstName] и я оказались танцующими вместе, танцы становились все более непристойными и наводящими на размышления...;;;;;;;;;;;;;x
+EVTOPTA180541;[From.GetFirstName] целует меня и мы падаем на кровать...;;;;;;;;;;;;;x
+EVTOPTB180541;Я и [From.GetFirstName] целуемся и падаем на кровать...;;;;;;;;;;;;;x
+EVTOPTA180541DOTHRAKI;[From.GetFirstName] берёт меня прямо перед кхалассаром...;;;;;;;;;;;;;x
+EVTOPTB180541DOTHRAKI;Я и [From.GetFirstName] занимаемся прямо перед кхалассаром...;;;;;;;;;;;;;x
+EVTTOOLTIP180542;[This.GetTitledFirstName] узнает про небольшой сюрприз...;;;;;;;;;;;;;x
+EVTOPTC180541;Неловкость ситуации заставила меня выйти из комнаты;;;;;;;;;;;;;x
+EVTOPTC180541DOTHRAKI;Я прекращаю танец, я не хочу спать с этим человеком;;;;;;;;;;;;;x
+EVTDESC180542;[From.GetTitledFirstName] и я оказалась в комнате с большой кроватью в центре. [FromFromFrom.GetAlcoholicDrink] и очевидная симпатия между нами привели к приятному вечеру...;;;;;;;;;;;;;x
+EVTOPTA180542;Мы хорошо покувыркались!;;;;;;;;;;;;;x
+EVTOPTAwedding.181;...Я надеюсь, что [Root.Spouse.GetFirstName] не узнает;;;;;;;;;;;;;x
+EVTDESCwedding.180;[From.GetTitledFirstName] и я оказались в большой комнате с кроватью в центре, кажется, [From.GetSheHe] вдруг чувствует себя немного неловко, что заставило [From.GetHerHis] выйти из комнаты;;;;;;;;;;;;;x
+EVTOPTAwedding.180;Всегда будет и другая ночь!;;;;;;;;;;;;;x
+EVTDESC180543;Во время свадьбы слуга пролил [From.GetAlcoholicDrink] и загубил мою великолепную одежду. Я перерезаю горло этому растяпе и возвращаюсь к празднику.;;;;;;;;;;;;;x
+EVTDESC180543DOTHRAKI;Во время свадьбы слуга разлил напиток на весь мой прекрасный окрашенный кожаный жилет, полностью испортив его. Я схватил свой арах и перерезал ему горло, затем вернулся на свое место и продолжил есть.;;;;;;;;;;;;;x
+EVTOPTA180543;Он должен был заплатить за одежду, я убиваю его слишком рано;;;;;;;;;;;;;x
+EVTTOOLTIP180544;[This.GetTitledFirstName] реагирует на убийство своего слуги;;;;;;;;;;;;;x
+EVTDESC180544;[From.GetTitledFirstName] перерезал[From.GetEndA] горло одному из моих слуг, когда тот пролил вино на [From.GetHerHis] одежду!;;;;;;;;;;;;;x
+EVTDESC72056;На празднике [From.GetTitledFirstName] перерезет горло одному из слуг, когда неуклюжий мужчина пролил [Root.GetAlcoholicDrink] поверх [From.GetHerHis] одежды!;;;;;;;;;;;;;x
+EVTDESC180544DOTHRAKI;[From.GetTitledFirstName] перерезет горло одного из моих слуг своим аракхом, когда глупец разлил свой напиток на [From.GetHerHis] окрашенный жилет.;;;;;;;;;;;;;x
+EVTOPTA180544;[From.GetTitledFirstName] отправится в темницу!;;;;;;;;;;;;;x
+EVTOPTB180544;[From.GetSheHeCap] правильно поступает;;;;;;;;;;;;;x
+EVTOPTC180544;Подкупить слуг, дабы те держали рот на замке;;;;;;;;;;;;;x
+EVTOPTD180544;Чья смерть следующей будет на свадьбе?;;;;;;;;;;;;;x
+EVTDESC180545;Мой сюзерен садит меня в тюрьму за убийство слуги...;;;;;;;;;;;;;x
+EVTOPTA180545;Они заплатят за это!;;;;;;;;;;;;;x
+EVTDESC180546;Шут заходит в своём балагурстве слишком далеко, ещё чуть-чуть и я не знаю что с ним сделаю...;;;;;;;;;;;;;x
+EVTOPTA180546;В темницу его!;;;;;;;;;;;;;x
+EVTTOOLTIP180547;реагирует, что [Root.GetTitledFirstName] заключает в темницу своего собственного шута;;;;;;;;;;;;;x
+EVTOPTB180546;Не нужно позволять ему играть на моих нервах;;;;;;;;;;;;;x
+EVTTOOLTIP180548;реагирует на то, как [Root.GetTitledFirstName] мирится со своим личным шутом;;;;;;;;;;;;;x
+EVTDESC180547;Меня не удивило, что [From.GetTitledFirstName] теряет самообладание от злой шутки о себе. [From.GetTitledFirstName] приказывает стражникам отвести остряка в темницу.;;;;;;;;;;;;;x
+EVTOPTA180547;Ну это же его работа, зачем так сурово?;;;;;;;;;;;;;x
+EVTDESC180548;[Root.GetTitledFirstName] терпит шутки своего шута о себе, это достойно уважения!;;;;;;;;;;;;;x
+EVTOPTA180548;[Root.GetTitledFirstName], я восхищаюсь вами;;;;;;;;;;;;;x
+EVTDESC180549;Я убеждаюсь, что самая красивая леди на празднике будет сидеть рядом со мной и наполняю наши бокалы вином, она ничего не смогла сделать против моей улыбки и моего обаяния. Не пройдёт много времени, как она пожелает более тесного знакомства...;;;;;;;;;;;;;x
+EVTOPTA180549;Флирт это конечно хорошо, но более близкое знакомство мне не нужно;;;;;;;;;;;;;x
+EVTOPTB180549;Я хочу показать вам замок, особенно мою спальню...;;;;;;;;;;;;;x
+EVTTOOLTIP180550;[Root.GetTitledFirstName] проводит экскурсию для человека, известного как [This.GetTitledFirstName] по замку, а также в своей спальне...;;;;;;;;;;;;;x
+EVTDESC180550;[From.GetTitledFirstName] взял меня на экскурсию по замку, и закончилась она в его спальне...;;;;;;;;;;;;;x
+EVTOPTA180550;[From.GetFirstName] целует меня, и вскоре мы падаем на кровать...;;;;;;;;;;;;;x
+EVTTOOLTIP180551;После страстной ночи меня ждёт сюрприз...;;;;;;;;;;;;;x
+EVTOPTB180550;Нужно вернуться на торжество...;;;;;;;;;;;;;x
+EVTDESC180551;[From.GetTitledFirstName] устроил вам ночь страсти, которая привела к нежелательно беременности, [From.GetHerHis] муж, [From.Spouse.GetTitledFirstName], не в восторге от этого...;;;;;;;;;;;;;x
+EVTOPTA180551;Я не жалею о той ночи...;;;;;;;;;;;;;x
+EVTDESC180552;Я решил очаровать самую красивую девушку на празднике, и она ответила мне взаимностью! Что мне делать дальше?;;;;;;;;;;;;;x
+EVTOPTA180552;Флиртовать;;;;;;;;;;;;;x
+EVTTOOLTIP180553;[This.GetTitledFirstName] одобряет, что [Root.GetTitledFirstName] флиртует с [This.GetHerHis] дочерью.;;;;;;;;;;;;;x
+EVTOPTB180552;Я соблазню её!;;;;;;;;;;;;;x
+EVTTOOLTIP180554;[This.GetTitledFirstName] не одобряет, что [Root.GetTitledFirstName] соблазняет [This.GetHerHis] дочь;;;;;;;;;;;;;x
+EVTDESC180553;Я вижу, что [From.GetTitledFirstName] постоянно находится в обществе моей дочери и пристально за ними слежу. Казалось бы это безобидный флирт, но я чувствую облегчение, когда [From.GetTitledFirstName] оставил в покое мою дочь.;;;;;;;;;;;;;x
+EVTOPTA180553;Моя дочь вызывает гордость!;;;;;;;;;;;;;x
+EVTDESC180554;Я вижу, как моя дочь и [From.GetTitledFirstName] флиртовали друг с другом. Когда они вышли из зала, нужно было проследить за ними, но я слишком увлекаюсь пиром. На следующий день мои опасения подтвердились, этот мерзавец соблазнил мою дочь!;;;;;;;;;;;;;x
+EVTOPTA180554;Я расскажу всё отцу этого мерзавца!;;;;;;;;;;;;;x
+EVTTOOLTIP180555;[This.GetTitledFirstName] узнает о том, что его сын соблазнил дочь человека, известного как [Root.GetTitledFirstName];;;;;;;;;;;;;x
+EVTOPTB180554;[From.GetTitledFirstName], как ты мог?;;;;;;;;;;;;;x
+EVTTOOLTIP180556;[Root.GetTitledFirstName] и [This.GetTitledFirstName] в конфликте, от того что один переспал с дочерью другого;;;;;;;;;;;;;x
+EVTOPTC180554;Склониться перед отцом;;;;;;;;;;;;;x
+EVTTOOLTIP180557;[Root.GetTitledFirstName] просит помощи человека, известного как [This.GetTitledFirstName] в этом вопросе;;;;;;;;;;;;;x
+EVTOPTD180554;Склониться перед человеком, известным как [From.GetTitledFirstName];;;;;;;;;;;;;x
+EVTTOOLTIP180558;[Root.GetTitledFirstName] смиренно просит, чтобы [This.GetTitledFirstName] помог[This.GetNoneE];;;;;;;;;;;;;x
+EVTDESC180555;Мой сын соблазнил дочь человека, известного как [From.GetTitledFirstName] у меня на пире! И теперь тот очень зол!;;;;;;;;;;;;;x
+EVTOPTA180555;Ну, что я могу сделать? Ничего!;;;;;;;;;;;;;x
+EVTDESC180556;Я не знал, что [From.GetTitledFirstName] - [From.GetMotherFather] молодой, красивой леди, которую я соблазнил на пире! [From.GetSheHeCap] разрывается от гнева...;;;;;;;;;;;;;x
+EVTOPTA180556;Я ничего не могу сделать;;;;;;;;;;;;;x
+EVTDESC180557;[From.GetTitledFirstName] смиренно пришёл ко мне и рассказал как мой сын соблазнил его молодую, невинную девочку. Он ничего от меня не потребовал, но выглядел очень расстроенным. Я так и не понял, чего же он хотел.;;;;;;;;;;;;;x
+EVTOPTA180557;Есть ли что-нибудь, что я могу сделать?;;;;;;;;;;;;;x
+EVTDESC180558;Молодая, красивая леди, которую я соблазнил на празднике, была ни кем иной, как дочерью человека, известного как [From.GetTitledFirstName]! И хотя [From.GetTitledFirstName] имеет полное право разозлиться на меня, [From.GetSheHe] так ничего и не сделал[From.GetEndA].;;;;;;;;;;;;;x
+EVTOPTA180558;Давайте забудем это?;;;;;;;;;;;;;x
+EVTDESC180559;Вскоре после праздника моя дочь начала себя плохо чувствовать и показывать прочие симптомы беременности. Похоже, её маленький флирт на празднике одарил её ребёнком!;;;;;;;;;;;;;x
+EVTOPTA180559;[Root.Liege.GetTitledFirstName] должен жениться на моей дочери!;;;;;;;;;;;;;x
+EVTTOOLTIP180560;[Root.GetTitledFirstName] требует, чтобы [This.GetTitledFirstName] женился на его беременной дочери ([Root.GetTitledFirstName]);;;;;;;;;;;;;x
+EVTOPTB180559;Сын человека, известного как [Root.Liege.GetTitledFirstName] должен жениться на моей дочери!;;;;;;;;;;;;;x
+EVTTOOLTIP72099;[Root.GetTitledFirstName] требует, чтобы [This.GetTitledFirstName] поженился на беременной дочери ([Root.GetTitledFirstName]);;;;;;;;;;;;;x
+EVTOPTC180559;Я едва сдерживаю свой гнев;;;;;;;;;;;;;x
+EVTDESC180560;Дочь человека, известного как [From.GetTitledFirstName] беременна, и [From.GetSheHe] требует, чтобы я женился на ней!;;;;;;;;;;;;;x
+EVTOPTA180560;Я соглашаюсь;;;;;;;;;;;;;x
+EVTOPTB180560;Конечно, нет!;;;;;;;;;;;;;x
+EVTDESC180561;Мой сын флиртовал с дочерью человека, известного как [From.GetTitledFirstName], что привело к её нежелательной беременности, и теперь [From.GetTitledFirstName] требует, чтобы мой сын женился на ней!;;;;;;;;;;;;;x
+EVTOPTA180561;Мой сын должен учиться на своих ошибках;;;;;;;;;;;;;x
+EVTTOOLTIP180562;[This.GetTitledFirstName] вынужден жениться на беременной дочери вассала;;;;;;;;;;;;;x
+EVTOPTB180561;Мой сын никогда не женится на вашей дочери!;;;;;;;;;;;;;x
+EVTDESC180562;Я никогда бы не подумал, что м[From.GetOyaOy] [GetFromRelation] заставит бы меня жениться на девушке, которую я соблазню на пире! Она беременна, и ее отец требует, чтобы я женился на ней.;;;;;;;;;;;;;x
+EVTOPTA180562;Похоже, у меня нет другого выбора...;;;;;;;;;;;;;x
+EVTDESC3726;Моя жена, кажется, не довольна своей жизнью, она хочет больше одежды, красивой обуви и изящных платьев.;;;;;;;;;;;;;x
+EVTOPTA3726;Моя дорогая, я не могу вам ни в чём отказать;;;;;;;;;;;;;x
+EVTOPTB3726;Хочешь одежду — шей её сама!;;;;;;;;;;;;;x
+EVTDESC500;[FromFromFrom.GetTitledFirstNameWithDynasty] и [FromFromFrom.Spouse.GetTitledFirstName] [FromFromFrom.Spouse.GetOnlyDynastyName] поженились, и это обычное дело, когда дому жениха выплачивается приданое...;;;;;;;;;;;;;x
+TOOLTIPwedding.1;[This.GetTitledFirstNameWithDynasty] получит приданое;;;;;;;;;;;;;x
+EVTOPTC500;Никто не платит;;;;;;;;;;;;;x
+EVTDESC50099;[Root.PrimaryTitle.GetFOA], я изменяю свое решение касательно планируемой свадьбы. Это связано с тем, что следуя нашим обычаям, женщины могут унаследовать мои титулы, и я желаю, чтобы уже бывшая невеста продолжила род Дома [From.GetOnlyDynastyName].\n\nВаш[From.GetEndA] смиренн[From.GetAyaYy], [From.GetTitledFirstName];;;;;;;;;;;;;x
+EVTDESC50099B;[Root.PrimaryTitle.GetFOA], я изменяю свое решение касательно планируемой свадьбы. Это потому, что она является наследником титула [From.PrimaryTitle.GetFullName] и других моих титулов, и поэтому я хочу, чтобы невеста продолжала род Дома [From.GetOnlyDynastyName].\n\nВаш[From.GetEndA] смиренн[From.GetAyaYy], [From.GetTitledFirstName];;;;;;;;;;;;;x
+EVTDESC50099C;[Root.PrimaryTitle.GetFOA], я изменяю свое мнение о нашем предложенном браке. Это потому, что я управляю землёй [From.PrimaryTitle.GetFullName] самостоятельно, и поэтому я хочу, чтобы мои наследники продолжали род Дома [From.GetOnlyDynastyName].\n\nВаш[From.GetEndA] смиренн[From.GetAyaYy], [From.GetTitledFirstName];;;;;;;;;;;;;x
+EVTDESC50097;[Root.PrimaryTitle.GetFOA], я изменяю свое решение касательно планируемой свадьбы. Это потому, что по нашим традициям, определенные члены моего Дома женского пола могут унаследовать мои титулы, и поэтому я хочу, чтобы невеста продолжала род Дома [FromFrom.GetOnlyDynastyName].\n\nВаш[From.GetEndA] смиренн[From.GetAyaYy], [FromFrom. GetTitledFirstName];;;;;;;;;;;;;x
+EVTDESC50097B;[Root.PrimaryTitle.GetFOA], я изменяю свое решение касательно планируемой свадьбы. Это связано с тем, что невеста должна унаследовать титул [FromFrom.PrimaryTitle.GetFullName] и другие мои титулы, и поэтому я хочу, чтобы она продолжала род Дома [FromFrom.GetOnlyDynastyName].\n\ nВаш[From.GetEndA] смиренн[From.GetAyaYy], [FromFrom.GetTitledFirstName];;;;;;;;;;;;;x
+EVTDESC50097C;[Root.PrimaryTitle.GetFOA], я изменяю свое решение касательно планируемой свадьбы. Это связано с тем, что я управляю землёй [FromFrom.PrimaryTitle.GetFullName] самостоятельно, и поэтому я хочу, чтобы мои наследники продолжали род Дома [FromFrom.GetOnlyDynastyName].\n\ nВаш[From.GetEndA] смиренн[From.GetAyaYy], [FromFrom.GetTitledFirstName];;;;;;;;;;;;;x
+EVTDESCwedding.1;Вы и [From.GetTitledFirstName] достигли договорённости, дабы увидеть как [From.GetTitledFirstNameWithDynasty] и [From.Spouse.GetTitledFirstName] [From.Spouse.GetOnlyDynastyName] женятся, и теперь дело за приданным для дома жениха....;;;;;;;;;;;;;x
+EVTDESCwedding.1B;Чтобы обеспечить божественную чистоту своей родословной, [From.GetTitledFirstNameWithDynasty] и [From.Spouse.GetTitledFirstName] [From.Spouse.GetOnlyDynastyName] заключили брак, обеспечивая заполненность и порядок, и [From.Religion.GetHighGodName] был этому свидетелем. Теперь о приданом...;;;;;;;;;;;;;x
+EVTOPTAwedding.1;Я дам им много золота и серебра!;;;;;;;;;;;;;x
+EVTOPTBwedding.1;Предложить обычное приданое;;;;;;;;;;;;;x
+EVTOPTCwedding.1;Обычного подарка достаточно;;;;;;;;;;;;;x
+EVTDESCwedding.2;[Root.PrimaryTitle.GetFOA], [From.GetTitledFirstName] посылает вам щедрое приданое! Было предложено много золота и серебра, вероятно, даже больше, чем ценность самой невесты.;;;;;;;;;;;;;x
+EVTOPTAwedding.2;Как щедро;;;;;;;;;;;;;x
+EVTDESCwedding.3;[Root.PrimaryTitle.GetFOA], [From.GetTitledFirstName] посылает вам обычное количество золота и серебра в качестве приданого невесты, и теперь церемония вполне может начинаться.;;;;;;;;;;;;;x
+EVTDESCwedding.4;[Root.PrimaryTitle.GetFOA], [From.GetTitledFirstName] посылает приданое, но оно невелико. Минимальные суммы золота и серебра... Не оскорбительно ли это?.;;;;;;;;;;;;;x
+EVTOPTAwedding.4;Жадный ублюдок;;;;;;;;;;;;;x
+EVTOPTBwedding.4;Жадная сучка;;;;;;;;;;;;;x
+opinion_large_dowry;Щедрое приданое;;;;;;;;;;;;;x
+opinion_small_dowry;Скудное приданое;;;;;;;;;;;;;x
+TOOLTIPWEDDING_0;[This.GetTitledFirstNameWithDynasty] и [This.Spouse.GetTitledFirstName] [This.Spouse.GetOnlyDynastyName] вступают в брак. Проводятся свадебная церемония и пир.\n;;;;;;;;;;;;;x
+EVTDESCwedding.5;[Root.PrimaryTitle.GetFOA], ваш[From.GetEndA] обрученн[From.GetAyaYy] [From.GetTitledFirstNameWithDynasty] постановил[From.GetEndA], что пышная свадебная церемония и щедрое застолье проводятся в честь вашей свадьбы. Надо пригласить всех лордов гочударства [From.PrimaryTitle.GetName];;;;;;;;;;;;;x
+EVTDESCwedding.5DOTHRAKI;[Root.PrimaryTitle.GetFOA], ваш[From.GetEndA] обрученн[From.GetAyaYy] [From.GetTitledFirstName] объявляет день питья, пиршества и драк в честь вашей предстоящей свадьбы. Все Ко и вассалы [From.PrimaryTitle.GetName] должны быть приглашены.;;;;;;;;;;;;;x
+EVTDESCwedding.6;[Root.PrimaryTitle.GetFOA], [FromFrom.GetTitledFirstName] постановил[FromFrom.GetEndA], что пышная свадебная церемония и щедрое застолье проводятся в честь вашей свадьбы. Все лорды государства [From.PrimaryTitle.GetName] должны быть приглашены.;;;;;;;;;;;;;x
+EVTDESCwedding.6DOTHRAKI;[Root.PrimaryTitle.GetFOA], [FromFrom.GetTitledFirstName] объявили день питья, пиршества и драк в честь вашей предстоящей свадьбы. Все Ко и вассалы государства [FromFrom.PrimaryTitle.GetName] должны быть приглашены.;;;;;;;;;;;;;x
+EVTOPTAwedding.6;Это будет прекрасно!;;;;;;;;;;;;;x
+EVTDESCwedding.7;День свадьбы близок, я принесу клятвы на виду у всех лордов государства [From.PrimaryTitle.GetName]...;;;;;;;;;;;;;x
+EVTDESCwedding.7DOTHRAKI;Наступил рассвет свадебного дня, скоро я и [Root.Spouse.GetTitledFirstName] вступим в брак перед всеми Ко и вассалами...;;;;;;;;;;;;;x
+TOOLTIPwedding.8;[From.GetTitledFirstName] и все члены Дома [Root.GetOnlyDynastyName] должны приветствовать гостей;;;;;;;;;;;;;x
+EVTDESCwedding.8;День свадьбы близок, я принесу клятвы на виду у всех лордов государства [FromFrom.PrimaryTitle.GetName]...;;;;;;;;;;;;;x
+EVTDESCwedding.8DOTHRAKI;Наступил рассвет свадебного дня, скоро я и [Root.Spouse.GetTitledFirstName] вступим в брак перед всеми Ко и вассалами...;;;;;;;;;;;;;x
+EVTOPTAwedding.7;Церемония должна быть славной;;;;;;;;;;;;;x
+EVTDESCwedding.9;И вот, [Root.Religion.GetRandomGodName] - свидетель, я и [Root.Spouse.GetFirstName] [Root.Spouse.GetOnlyDynastyName] готовы принять торжественный обет брака. Лорды и Леди земли [FromFrom.PrimaryTitle.GetName] смотрят как я накидываю плащ с цветами моего Дома [Root.GetOnlyDynastyName] на плечи невесты, чтобы закрепить наш брак.;;;;;;;;;;;;;x
+EVTDESCwedding.9DOTHRAKI;И вот, [Root.Religion.GetHighGodName] - свидетель, я и [Root.Spouse.GetTitledFirstName] готовы принять обет брака. Ко и вассалы земли [FromFrom.PrimaryTitle.GetName] являются свидетелями того, как я клянусь защищать её честь как моей жены.;;;;;;;;;;;;;x
+EVTDESCwedding.9OLDGODS;Вот я стою перед сердце-древом Старых Богов, я и [Root.Spouse.GetFirstName] [Root.Spouse.GetOnlyDynastyName] готовы принять торжественный обет брака. Великие Лорды и Леди земли [FromFrom.PrimaryTitle.GetName] являются свидетелями того, как я накидываю плащ с цветами Дома [Root.GetOnlyDynastyName] на плечи невесты, чтобы окончательно утвердить наш брак.;;;;;;;;;;;;;x
+EVTOPTAwedding.9;А теперь к празднику!;;;;;;;;;;;;;x
+EVTDESCwedding.10;И вот, [Root.Religion.GetRandomGodName] - свидетель, я и [Root.Spouse.GetFirstName] [Root.Spouse.GetOnlyDynastyName] готовы принять торжественный обет брака. Лорды и Леди земли [FromFrom.PrimaryTitle.GetName] смотрят, как он накидывает плащ с цветами своего Дома [Root.Spouse.GetOnlyDynastyName] на мои плечи, чтобы закрепить наш брак.;;;;;;;;;;;;;x
+EVTDESCwedding.10DOTHRAKI;И вот, [Root.Religion.GetHighGodName] - свидетель, я и [Root.Spouse.GetTitledFirstName] готовы принять обет брака. Ко и вассалы земли [FromFrom.PrimaryTitle.GetName] являются свидетелями того, как он обещает защищать мою честь как его жены.;;;;;;;;;;;;;x
+EVTDESCwedding.10OLDGODS;Вот я стою перед сердце-древом Старых Богов, я и [Root.Spouse.GetFirstName] [Root.Spouse.GetOnlyDynastyName] готовы принять торжественный обет брака. Великие Лорды и Леди земли [FromFrom.PrimaryTitle.GetName] смотрят, как он накидывает плащ с цветами своего Дома [Root.Spouse.GetOnlyDynastyName] на мои плечи, чтобы закрепить наш брак;;;;;;;;;;;;;x
+EVTOPTAwedding.10;Теперь к празднику!;;;;;;;;;;;;;x
+EVTDESCwedding.11;Теперь [From.Spouse.GetFirstName] [From.Spouse.GetOnlyDynastyName] и [From.GetFirstNameWithDynasty] стоят, дабы дать святой обет брака. Лорды и Леди земли [FromFrom.PrimaryTitle.GetName] смотрят, как он накидывает плащ с цветами своего Дома [From.GetOnlyDynastyName] на плечи невесты, чтобы окончательно закрепить их брак.;;;;;;;;;;;;;x
+EVTDESCwedding.11DOTHRAKI;Теперь [From.Spouse.GetFirstName] [From.Spouse.GetOnlyDynastyName] и [From.GetFirstNameWithDynasty] стоят и дают обет брака. Ко и вассалы земли [FromFrom.PrimaryTitle.GetName] смотрят, как жених обещает защищать честь своей жены.;;;;;;;;;;;;;x
+EVTDESCwedding.11OLDGODS;Теперь [From.Spouse.GetFirstName] [From.Spouse.GetOnlyDynastyName] и [From.GetFirstNameWithDynasty] стоят перед сердце-древом Старых Богов, чтобы принять торжественный обет брака. Великие Лорды и Леди земли [FromFrom.PrimaryTitle.GetName] смотрят, как он накидывает плащ с цветами Дома [From.GetOnlyDynastyName] на плечи невесты, чтобы заключить их брак.;;;;;;;;;;;;;x
+EVTDESCwedding.12;Праздник заканчивается, и теперь настало время 'Провожания'! [From.GetFirstName] и [From.Spouse.GetFirstName] лишены всех одежд провожающими, многие шутят по пути. Наконец, их затолкали в спальню, где оставили наедине!;;;;;;;;;;;;;x
+EVTDESCwedding.12DOTHRAKI;Все подарки подарены, солнце село, и теперь остается только завершение. [From.GetFirstName] и [From.Spouse.GetFirstName] уходят в свой шатер, где они проведут свою первую ночь вместе как муж и жена.;;;;;;;;;;;;;x
+EVTOPTAwedding.12;Хорошая традиция!;;;;;;;;;;;;;x
+TOOLTIPwedding.13;[This.GetFirstName] и [This.Spouse.GetFirstName] должны возлечь\n;;;;;;;;;;;;;x
+EVTDESCwedding.13;Праздник идёт к концу, и настало время 'Провожания'! Вы и [Root.Spouse.GetFirstName] лишены всех одежд празднующими, многие шутят по пути. Вы оба, наконец, оказались в спальне, где вас оставили наедине!;;;;;;;;;;;;;x
+EVTDESCwedding.13DOTHRAKI;Все подарки подарены, солнце село, и теперь остается только завершение. Вы и [Root.Spouse.GetFirstName] уходите в шатер, где вы проведёте вместе с ней ночь как муж и жена;;;;;;;;;;;;;x
+EVTDESCwedding.14;Праздник подходит к концу, и настало время 'Провожания'! Вы и [Root.Spouse.GetFirstName] лишены всех одежд празднующими, многие отпускают шуточки по пути. Вы оба, наконец, оказались в спальне, где вас оставили наедине!;;;;;;;;;;;;;x
+EVTDESCwedding.14DOTHRAKI;Все подарки подарены, солнце село, и теперь остается только завершение. [Root.Spouse.GetFirstName] уводит вас с праздника в свой шатер, где вы проведете свою первую ночь вместе, как муж и жена.;;;;;;;;;;;;;x
+EVTOPTAwedding.14;Как развратно;;;;;;;;;;;;;x
+EVTDESCwedding.15;Праздник подходит к концу, и настаёт время для 'Провожания'! [FromFrom.GetFirstName] и [FromFrom.Spouse.GetFirstName] лишены всех одежд празднующими, отпускающими шуточки по пути. Они, наконец, оказываются в спальне, где их оставляют наедине!;;;;;;;;;;;;;x
+EVTDESCwedding.15DOTHRAKI;Все подарки подарены, солнце село, и теперь остается только завершение. [From.GetFirstName] и [From.Spouse.GetFirstName] уходят в [From.GetHerHis] шатер, где они проведут свою первую ночь вместе как муж и жена.;;;;;;;;;;;;;x
+EVTOPTAwedding.21;Это неправильно;;;;;;;;;;;;;x
+EVTTOOLTIPwedding.22;[This.GetTitledFirstName] и [Root.GetTitledFirstName] ускользнули в более уединённое место;;;;;;;;;;;;;x
+EVTDESCwedding.23;Свадебный пир вступает в фазу кульминации, вино течёт рекой и гости танцуют. [FromFrom.GetTitledFirstName] и [From.GetTitledFirstName] кажутся особо влюблёнными и вместе уходят, предположительно в более уединённое место...;;;;;;;;;;;;;x
+EVTDESCwedding.23DOTHRAKI;Свадебные празднования становились шумными, текли реки из выпивки, а гости вставали и танцевали. [FromFrom.GetTitledFirstName] и [From.GetTitledFirstName] танцевали соблазнительный танец и скоро были замечены всем Кхалассаром;;;;;;;;;;;;;x
+EVTOPTAwedding.23;Хорошо им;;;;;;;;;;;;;x
+EVTOPTAwedding.23DOTHRAKI;Дотракийцы не стыдятся, когда дело доходит до интимной связи;;;;;;;;;;;;;x
+EVTDESCwedding.16;Много усилий было приложено для организации свадьбы. Сотни гостей в самых шикарных нарядах, музыканты и артисты со всего мира, и щедрая еда, от которой устал бы даже обжора.;;;;;;;;;;;;;x
+EVTOPTAwedding.16;Это было великолепно!;;;;;;;;;;;;;x
+EVTOPTCwedding.16;Я промолчу об излишней помпезности;;;;;;;;;;;;;x
+EVTDESCwedding.17;Свадьба была приятной, но, думаю, что [From.GetTitledFirstName] сам[From.GetEndA] захотел[From.GetEndA] такую скромную. Список гостей был скромных размеров, и на паре были не слишком изысканные одежды. Развлечений на празднике было мало, хотя приемлемо. Нам предложили оленину, какую-то птицу, пару сыров и десерт.;;;;;;;;;;;;;x
+EVTOPTAwedding.17;Еда великолепна, [Root.Liege.PrimaryTitle.GetFOA]!;;;;;;;;;;;;;x
+EVTOPTBwedding.17;Эту свадьбу организовывал скряга!;;;;;;;;;;;;;x
+EVTOPTCwedding.17;Это было достаточно приятно;;;;;;;;;;;;;x
+EVTDESCwedding.18;Я думаю, [From.GetTitledFirstName] мог[From.GetNoneE] бы организовать всё более интересно. Там не было изысканных платьев или интересного шоу, [From.job_spiritual.GetTitledFirstName] был[From.job_spiritual.GetEndA] похож[From.job_spiritual.GetEndA] на нищего. Этот праздник был мрачным делом: ни еды, ни музыки, ни развлечений.;;;;;;;;;;;;;x
+EVTOPTAwedding.18;Ваша сдержанность показывает ваше воздержание, молодец!;;;;;;;;;;;;;x
+EVTOPTBwedding.18;Это так вы обслуживаете своих гостей?!;;;;;;;;;;;;;x
+EVTOPTCwedding.18;Это не мой дом, чтобы критиковать;;;;;;;;;;;;;x
+EVTDESCwedding.19;[From.GetTitledFirstName] прилюдно хвалит еду и развлечения на свадьбе. Мне радостно, что кто-то оказался достаточно любезен, чтобы похвалить всё это, ведь я так много трудов было влито, чтобы всё организовать.;;;;;;;;;;;;;x
+EVTDESCwedding.20;Некоторые из моих гостей казались недовольными свадьбой, но я и подумать не могу, что кто-то решится заявить об этом вслух! [From.GetTitledFirstName] сказал[From.GetEndA] много неприятных вещей о еде и развлечениях, и я чувствую себя в раздражении из-за этого.;;;;;;;;;;;;;x
+EVTOPTCANCELWEDDING;Из-за смерти свадьбу приходится отменить;;;;;;;;;;;;;x
+EVTDESCwedding.25;[From.GetTitledFirstName] преждевременно сконча[From.GetLasLsya], свадьба будет отменена.;;;;;;;;;;;;;x
+EVTOPTAwedding.25;Какая трагедия;;;;;;;;;;;;;x
+EVTDESCwedding.26;[Root.PrimaryTitle.GetFOA], [From.GetTitledFirstName] прислал[From.GetEndA] ворона из города [From.Capital.GetName]. [From.GetSheHeCap] объявляет о свадьбе, где вступят в брак [FromFrom.GetTitledFirstNameWithDynasty] и [FromFrom.Spouse.GetTitledFirstName] [FromFrom.Spouse.GetOnlyDynastyName]. Осталась одна формальность - ваше согласие.;;;;;;;;;;;;;x
+EVTOPTAwedding.26;Они получат мое согласие;;;;;;;;;;;;;x
+EVTOPTBwedding.26;Только если я получу невесту в первую ночь!;;;;;;;;;;;;;x
+EVTOPTCwedding.26;Я не буду унижать моих подданных правом первой ночи;;;;;;;;;;;;;x
+TOOLTIPwedding.26;Вы без предупреждения посетили свадьбу и [FromFrom.Spouse.GetTitledFirstName] досталась вам в первую брачную ночь. Вы сильно оскорбили ваших подданных.;;;;;;;;;;;;;x
+EVTDESCwedding.27;Во время веселья, [Root.TopLiege.GetTitledFirstName] поднялся, чтобы что-то провозгласить. Его визит был неожиданным, но теперь мы узнали зачем он пожаловал. Он заявил свои права на невесту в первую брачную ночь. Гости были ошеломлены, и вы с ужасом смотрите как он выводит невесту из зала и отправляется в покои.;;;;;;;;;;;;;x
+EVTOPTAwedding.27;Этот позор недопустим!;;;;;;;;;;;;;x
+TOOLTIPwedding.29;[Root.TopLiege.GetTitledFirstName] и [From.Spouse.GetTitledFirstName] возлягут;;;;;;;;;;;;;x
+EVTDESCwedding.28;Во время веселья, [Root.TopLiege.GetTitledFirstName] поднялся, чтобы что-то провозгласить. Его визит был неожиданным, но теперь мы узнали зачем он пожаловал. Он заявил свои права на невесту в первую брачную ночь. Гости были ошеломлены, и вы с ужасом смотрите как он ведет невесту в ваши покои.;;;;;;;;;;;;;x
+EVTDESCwedding.29;Во время веселья, [Root.TopLiege.GetTitledFirstName] поднялся, чтобы что-то провозгласить. Его визит был неожиданным, но теперь мы узнали зачем он пожаловал. Он заявил свои права на невесту в первую брачную ночь. Гости были ошеломлены, и вы с ужасом смотрите как он ведет невесту в свои покои.;;;;;;;;;;;;;x
+EVTDESCwedding.30;Во время веселья, [Root.TopLiege.GetTitledFirstName] поднялся, чтобы что-то провозгласить. Его визит был неожиданным, но теперь мы узнали зачем он пожаловал. Он заявил свои права на невесту в первую брачную ночь. Гости были ошеломлены, и [FromFrom.GetTitledFirstName] с ужасом наблюдает, как они удаляются из зала и идут в его покои.;;;;;;;;;;;;;x
+EVTOPTAwedding.30;Как он посмел их так обесчестить?;;;;;;;;;;;;;x
+EVTDESCwedding.31;Во время веселья, вы объявили свои права на первую брачную ночь с невестой. [FromFrom.GetTitledFirstName] может только, с ужасом на лице, наблюдать, как вы ведете невесту в его покои.;;;;;;;;;;;;;x
+EVTOPTAwedding.31;Законы должны соблюдаться;;;;;;;;;;;;;x
+opinion_took_first_night_guest;Воспользовался Первой ночью;;;;;;;;;;;;;x
+opinion_took_first_night_host;Воспользовался Первой ночью;;;;;;;;;;;;;x
+opinion_took_first_night_groom;Взял мою невесту в Первую ночь;;;;;;;;;;;;;x
+opinion_took_first_night_bride;Взял меня в Первую ночь;;;;;;;;;;;;;x
+EVTDESCwedding.32;Ошеломляющая новость из города [FromFrom.Capital.GetName], [Root.PrimaryTitle.GetFOA], на свадьбе, где вступили в брак [FromFrom.GetTitledFirstName] и [From.Spouse.GetTitledFirstName], их сюзерен [FromFrom.TopLiege.GetTitledFirstName] воспользовался правом Первой ночи! Излишне говорить о том, что Дом [FromFrom.GetOnlyDynastyName] был оскорблен и опозорен.;;;;;;;;;;;;;x
+EVTOPTD500;Невеста уже получила своё наследство;;;;;;;;;;;;;x
+lavish_wedding;Состоялось пышное бракосочетание;;;;;;;;;;;;;x
+medium_wedding;Состоялась свадьба;;;;;;;;;;;;;x
+EVTOPTCwedding.23;Нет, я не позволю, чтобы моя [FromFrom.GetRootRelation] вела себя как шлюха!;;;;;;;;;;;;;x
+EVTOPTBwedding.23;Нет, я не позволю, чтобы моя [From.GetRootRelation] вела себя как шлюха!;;;;;;;;;;;;;x
+EVTDESCwedding.238;Ваш[From.GetEndA] [GetFromRelation] [From.GetTitledFirstName] был[From.GetEndA] в ярости, когда вы попытались уйти со свадьбы с вашим новым другом, [From.GetSheHe] запрещает вам уходить, говоря, что [From.GetSheHe] не позволит вам вести себя как шлюха!;;;;;;;;;;;;;x
+EVTOPTAwedding.238;Я хочу свободы!;;;;;;;;;;;;;x
+EVTDESCwedding.239;[From.GetTitledFirstNameWithDynasty] был[From.GetEndA] рассержен[From.GetEndA], когда вы попытались уйти со свадьбы с [From.GetHerHis] родственником, и запрещает вам уходить вместе, сказав что члены дома [From.GetOnlyDynastyName] не ведут себя, как шлюхи!;;;;;;;;;;;;;x
+EVTOPTAwedding.239;Ну, она мне и не особо была интересна;;;;;;;;;;;;;x
+EVTDESCwedding.40;Обеты были даны, и теперь [From.Spouse.GetTitledFirstName] получает три традиционных подарка от авторитетных ко: кнут, лук и аракх. Она отказывается от них традиционными словами, а затем [From.GetTitledFirstName] берет их.;;;;;;;;;;;;;x
+EVTOPTAwedding.40;Очень хорошо;;;;;;;;;;;;;x
+EVTDESCwedding.41;Обеты были даны, и теперь [From.Spouse.GetTitledFirstName] получает три традиционных подарка от авторитетных ко: кнут, лук и арах. Она отказывается от них традиционными словами, а затем вы берете их.;;;;;;;;;;;;;x
+EVTDESCwedding.42;Обеты были даны, и теперь вы получаете три традиционных подарка от авторитетных ко: кнут, лук и арах. Вы отказываетесь от них традиционным словами, и затем [Root.Spouse.GetTitledFirstName] берет их.;;;;;;;;;;;;;x
+EVTDESCwedding.43;Обеты были даны, и теперь [From.Spouse.GetTitledFirstName] получает три традиционных подарка от авторитетных ко: кнут, лук и арах. Она отказывается от них традиционными словами, и затем [From.GetTitledFirstName] берет их.;;;;;;;;;;;;;x
+EVTOPTAwedding.43B;Странный обычай;;;;;;;;;;;;;x
+EVTDESCwedding.44;Как обычно, прекрасные женщины с вуалью малинового, желтого и оранжевого цветов начинают танцевать под удары барабанов, любой воин может взять их свободно перед наблюдающим кхаласаром.;;;;;;;;;;;;;x
+EVTOPTAwedding.44;Прольется ли кровь?;;;;;;;;;;;;;x
+EVTOPTAwedding.45;Я возьму одну!;;;;;;;;;;;;;x
+EVTOPTBwedding.45;Нет, я не буду рисковать стычкой;;;;;;;;;;;;;x
+EVTDESCwedding.47;[From.GetTitledFirstName] взял ту же женщину, что и вы, и теперь по традиции вы должны сражаться до смерти за право иметь ее!;;;;;;;;;;;;;x
+EVTOPTAwedding.47;Я одержу победу;;;;;;;;;;;;;x
+TOOLTIPwedding.48;Дуэль до смерти…;;;;;;;;;;;;;x
+EVTDESCwedding.49;[FromFrom.GetTitledFirstName] лежит поверженный и безжизненный в луже собственной крови. Вы подходите к танцовщице, чтобы взять ее, ту за которую вы кровожадно бились на виду у наблюдающего кхаласара.;;;;;;;;;;;;;x
+EVTOPTAwedding.49;Никто не должен стоять у меня на пути!;;;;;;;;;;;;;x
+EVTDESCwedding.50;[From.GetTitledFirstName] и [FromFromFrom.GetTitledFirstName] выбрали одну и ту же танцовщицу, и поэтому бились до смерти за право поиметь её. [From.GetTitledFirstName] одержал верх, а [FromFromFrom.GetTitledFirstName] был убит, и в кровожадной ярости отправился к танцовщице, чтобы взять ее на виду у наблюдающего кхаласара.;;;;;;;;;;;;;x
+EVTOPTAwedding.50;Свадьба без, как минимум, трех смертей - скучное дело;;;;;;;;;;;;;x

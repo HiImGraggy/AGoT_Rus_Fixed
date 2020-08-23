@@ -1,0 +1,190 @@
+#CODE;ENGLISH;;;;;;;;;;;;;x
+poor_defence;Слабая защита;;;;;;;;;;;;;x
+average_defence;Средняя защита;;;;;;;;;;;;;x
+strong_defence;Сильная защита;;;;;;;;;;;;;x
+poor_defence_desc;Это слабая защита;;;;;;;;;;;;;x
+average_defence_desc;Это достаточная защита.;;;;;;;;;;;;;x
+strong_defence_desc;Это сильная защита.;;;;;;;;;;;;;x
+poor_case;Слабые доводы;;;;;;;;;;;;;x
+average_case;Средние доводы;;;;;;;;;;;;;x
+strong_case;Веские доводы;;;;;;;;;;;;;x
+poor_case_desc;Я привожу слабые аргументы.;;;;;;;;;;;;;x
+average_case_desc;Я привожу достаточно аргументов.;;;;;;;;;;;;;x
+strong_case_desc;Я привожу веские аргументы.;;;;;;;;;;;;;x
+giving_justice;Истец;;;;;;;;;;;;;x
+getting_justice;Ответчик;;;;;;;;;;;;;x
+giving_justice_desc;В настоящее время этот персонаж участвует в судебном процессе.;;;;;;;;;;;;;x
+getting_justice_desc;Я предстану перед судом в качестве обвиняемого.;;;;;;;;;;;;;x
+publicly_shamed;Публичное посмешище;;;;;;;;;;;;;x
+publicly_shamed_desc;Каждый видел меня без одежды;;;;;;;;;;;;;x
+give_justice;Вызвать на суд;;;;;;;;;;;;;x
+give_justice_desc;Дать человеку, известному как [Root.GetTitledFirstNameWithDynastyNoRegnal] возможность защитить себя, после чего один из ваших советников допросит [Root.GetHerHis] перед судом.\n\nПорядок старшинства, по которому придворный председательствует на судебном процессе:\n-Триарх\n-Высший судья\n-Лунный певец Джогос Нхай\n-Почтенный Старейшина\n-Регент\n-Страж Форрестеров\n-Кастелян\n-[From.GetChancellorName]\n-Случайный советник (не раб)\n-случайный придворный;;;;;;;;;;;;;x
+give_justice_named;[Root.GetTitledFirstNameWithDynasty] вызывается на суд;;;;;;;;;;;;;x
+TOOLTIPgive_justiceTRIARCH;[From.GetTitledFirstNameWithDynastyNoRegnal] является младшим Триархом И подчиненным персонажа [Root.GetTitledFirstNameWithDynastyNoRegnal] в Триархии\n;;;;;;;;;;;;;x
+TOOLTIPgive_justiceBATTLE;[Root.GetTitledFirstNameWithDynastyNoRegnal] НЕ в плену после боя\n;;;;;;;;;;;;;x
+TOOLTIPgive_justicetLOSTTRIAL;[Root.GetTitledFirstNameWithDynastyNoRegnal] еще НЕ проиграл[Root.GetEndA] судебное разбирательство\n;;;;;;;;;;;;;x
+TOOLTIPgive_justicetCHAMPION;[Root.GetTitledFirstNameWithDynastyNoRegnal]] НЕ просит суда поединком\n;;;;;;;;;;;;;x
+TOOLTIPgive_justicetJUSTEXECUTE;[From.GetTitledFirstNameWithDynastyNoRegnal] не был[From.GetEndA] казнен ранее персонажем [Root.GetTitledFirstNameWithDynastyNoRegnal]\n;;;;;;;;;;;;;x
+EVTDESCtrial.0;[Root.Host.GetTitledFirstNameWithDynastyNoRegnal] приближается к вашей темнице и требует, чтобы вы немедленно предстали перед судом.;;;;;;;;;;;;;x
+EVTDESCtrial.0B;За месяц вы так и не нашли защитника, который представлял бы вас на поединке в суде. Настало время вам предстать перед судом [Root.Host.GetTitledFirstName] [Root.Host.GetOnlyDynastyName].;;;;;;;;;;;;;x
+EVTOPTAtrial.0;Я требую испытания поединком;;;;;;;;;;;;;x
+EVTOPTBtrial.0;Я сам буду защищать себя перед судом;;;;;;;;;;;;;x
+EVTDESCtrial.1;[From.GetTitledFirstNameWithDynastyNoRegnal] потребовал[From.GetEndA] испытания поединком и вызвал[From.GetEndA] своего защитника в город [Root.Capital.GetName].;;;;;;;;;;;;;x
+EVTOPTAtrial.1;[From.GetSheHeCap] останется в темнице.;;;;;;;;;;;;;x
+EVTDESCtrial.2;Заключенный правителя [Root.Liege.GetTitledFirstNameNoRegnal], [From.GetTitledFirstNameWithDynastyNoRegnal] потребовал[From.GetEndA] судебного процесса, чтобы попытаться доказать свою невиновность. Как самому старшему члену совета, мне было приказано следить за судом и обеспечить торжество правосудия. [From.GetSheHeCap] начинает предоставлять свои аргументы;;;;;;;;;;;;;x
+EVTOPTAtrial.2;[From.GetSheHeCap] привел[From.GetEndA] скверные аргументы;;;;;;;;;;;;;x
+EVTOPTBtrial.2;[From.GetSheHeCap] предоставил[From.GetEndA] неплохие аргументы;;;;;;;;;;;;;x
+EVTOPTCtrial.2;[From.GetSheHeCap] привел[From.GetEndA] убедительные аргументы;;;;;;;;;;;;;x
+EVTDESCtrial.3;Вам было представлено обвинение [Root.GetTrialCharge], которое выдвинул[accuser.GetEndA] [accuser.GetTitledFirstNameWithDynastyNoRegnal]. [From.GetTitledFirstNameWithDynastyNoRegnal] будет курировать судебный процесс, чтобы обеспечить закон и правосудие. Вы, запинаясь и заикаясь, пытаетесь убедить суд. К сожалению, ваши аргументы настолько скучны, что некоторые придворные уснули.;;;;;;;;;;;;;x
+EVTOPTAtrial.3;Я привел[GetEndA] плохие аргументы;;;;;;;;;;;;;x
+EVTDESCtrial.4;Вам было представлено обвинение [Root.GetTrialCharge], которое выдвинул[accuser.GetEndA] [accuser.GetTitledFirstNameWithDynastyNoRegnal]. [From.GetTitledFirstNameWithDynastyNoRegnal] будет курировать судебный процесс, чтобы обеспечить закон и правосудие. Вы стоите перед судом, объясняя свою невиновность.;;;;;;;;;;;;;x
+EVTOPTAtrial.4;Я привел[GetEndA] правильные аргументы;;;;;;;;;;;;;x
+EVTDESCtrial.5;Вам было представлено обвинение [Root.GetTrialCharge], которое выдвинул[accuser.GetEndA] [accuser.GetTitledFirstNameWithDynastyNoRegnal]. [From.GetTitledFirstNameWithDynastyNoRegnal] будет курировать судебный процесс, чтобы обеспечить закон и правосудие. Вы мастерски выстраиваете защиту и красноречиво склоняете суд на свою сторону.;;;;;;;;;;;;;x
+EVTOPTAtrial.5;Мои аргументы блестящи;;;;;;;;;;;;;x
+EVTDESCtrial.6;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] потребовал[FromFrom.GetEndA] судебного процесса, в котором [From.GetTitledFirstNameWithDynastyNoRegnal] будет обеспечивать закон и правосудие. В начале разбирательства выдвигается обвинение [FromFrom.GetTrialCharge], которое приводит [accuser.GetTitledFirstNameWithDynastyNoRegnal].\n\n[FromFrom.GetTitledFirstNameNoRegnal] начинает представлять свою защиту, но суд не впечатлен аргументами. [FromFrom.GetSheHeCap] очень нервничет и выглядит неубедительно.;;;;;;;;;;;;;x
+EVTOPTAtrial.6;[From.GetTitledFirstNameNoRegnal] теперь долж[From.GetNaEn] допросить [FromFrom.GetHerHis]...;;;;;;;;;;;;;x
+EVTDESCtrial.7;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] потребовал[FromFrom.GetEndA] судебного процесса, в котором [From.GetTitledFirstNameWithDynastyNoRegnal] будет обеспечивать закон и правосудие. В начале разбирательства выдвигается обвинение [FromFrom.GetTrialCharge], которое приводит [accuser.GetTitledFirstNameWithDynastyNoRegnal].\n\n[FromFrom.GetTitledFirstNameNoRegnal] приводит достойные аргументы в свою защиту, и многие в суде, кажется, убеждены. Большинство судей сочувствует [FromFrom.GetHerHim].;;;;;;;;;;;;;x
+EVTOPTAtrial.7;[From.GetTitledFirstNameNoRegnal] теперь долж[From.GetNaEn] допросить [FromFrom.GetHerHis]...;;;;;;;;;;;;;x
+EVTDESCtrial.8;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] потребовал[FromFrom.GetEndA] судебного процесса, в котором [From.GetTitledFirstNameWithDynastyNoRegnal] будет обеспечивать закон и правосудие. В начале разбирательства выдвигается обвинение [FromFrom.GetTrialCharge], которое приводит [accuser.GetTitledFirstNameWithDynastyNoRegnal].\n\n[FromFrom.GetTitledFirstNameNoRegnal] начинает представлять аргументы в свою защиту, и, кажется, суд пленен [FromFrom.GetHerHis] обаянием. Даже я практически убежден[Root.GetEndA].;;;;;;;;;;;;;x
+EVTOPTAtrial.8;[From.GetTitledFirstNameNoRegnal] теперь долж[From.GetNaEn] допросить [FromFrom.GetHerHis]...;;;;;;;;;;;;;x
+EVTDESCtrial.12;Заключенный сказал свое слово в суде и теперь все должны наблюдать, когда я начну допрос, как прикажет [From.GetTitledFirstName]…;;;;;;;;;;;;;x
+EVTOPTAtrial.12;Мои обвинения недостаточно убедительные;;;;;;;;;;;;;x
+EVTOPTBtrial.12;Мои обвинения достаточно убедительные;;;;;;;;;;;;;x
+EVTOPTCtrial.12;Мои обвинения очень убедительные;;;;;;;;;;;;;x
+EVTDESCtrial.13;[From.GetTitledFirstNameNoRegnal], заикаясь и запинаясь, бродил перед обвиняемым и задавал нелепые вопросы. Обвиняемый с легкостью отбивался от обвинения, которое было настолько скучным, что некоторые из присутствующих чуть не уснули.;;;;;;;;;;;;;x
+EVTOPTAtrial.13;[From.GetSheHeCap] произвел[From.GetEndA] слабое впечатление;;;;;;;;;;;;;x
+EVTDESCtrial.14;[From.GetTitledFirstNameNoRegnal] агрессивно вел[From.GetEndA] обвинение. [From.GetHerHis] аргументы произвели впечатление на суд.;;;;;;;;;;;;;x
+EVTOPTAtrial.14;[From.GetSheHeCap] производит умеренное впечатление;;;;;;;;;;;;;x
+EVTDESCtrial.15;Шагая туда и сюда, [From.GetTitledFirstNameNoRegnal] мастерски допросил[From.GetEndA] обвиняемого. Использовав все аргументы, которые только возможны, [From.GetSheHe] покорил[From.GetEndA] двор, уничтожил[From.GetEndA] защиту обвиняемого, доказав его ложь.;;;;;;;;;;;;;x
+EVTOPTAtrial.15;[From.GetSheHeCap] производит сильное впечатление;;;;;;;;;;;;;x
+EVTDESCtrial.16;[FromFrom.GetTitledFirstNameNoRegnal] очень неумело выступает против вас. [FromFrom.GetSheHeCap] медленно и монотонно выдвигает обвинения, которые вы с легкостью разбиваете. [From.GetTitledFirstNameNoRegnal] долж[From.GetNaEn] обеспокоиться.;;;;;;;;;;;;;x
+EVTOPTAtrial.16;Все выглядит хорошо. Я ожидаю вердикта.;;;;;;;;;;;;;x
+EVTDESCtrial.17;[FromFrom.GetTitledFirstNameNoRegnal] допрашивает вас достаточно энергично. [FromFrom.GetSheHeCap] ясно выражает свои мысли, но вы смогли защитить себя от н[FromFrom.GetHerHis] достаточно умело. Мнение суда разделилось.;;;;;;;;;;;;;x
+EVTOPTAtrial.17;Вердикт может быть каким угодно!;;;;;;;;;;;;;x
+EVTDESCtrial.18;Шагая туда и сюда, [From.GetTitledFirstNameNoRegnal] мастерски допросил[From.GetEndA] обвиняемого. Использовав все аргументы, которые только возможны, [From.GetSheHe] привлек[From.GetNoneE] внимание суда своим красноречием и заставляет вас и вашу защиту выглядеть глупо.;;;;;;;;;;;;;x
+EVTOPTAtrial.18;Это не к добру.;;;;;;;;;;;;;x
+EVTDESCtrial.19;Судебный процесс подходит к концу, [From.GetTitledFirstNameNoRegnal] защищал[From.GetEndA] себя перед всем двором и я, в свою очередь, тоже задавал[Root.GetEndA] свои вопросы [From.GetHerHim]. Теперь весь двор и [FromFrom.GetTitledFirstName], а также все, у кого есть глаза и уши, собираются внимать моему вердикту.;;;;;;;;;;;;;x
+EVTOPTAtrial.19;Я нахожу [From.GetHerHis] виновным во всех преступлениях!;;;;;;;;;;;;;x
+EVTOPTBtrial.19;Я нахожу [From.GetHerHis] невиновным!;;;;;;;;;;;;;x
+EVTDESCtrial.21;Вердикт был озвучен.\n\n[From.GetTitledFirstNameNoRegnal] оглашает: 'За преступление [FromFrom.GetTrialCharge], Я объявляю, что [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] винов[FromFrom.GetNaEn]!';;;;;;;;;;;;;x
+EVTOPTAtrial.21;Я насажу [FromFrom.GetHerHis] голову на пику.;;;;;;;;;;;;;x
+EVTOPTBtrial.21;Я отправлю [FromFrom.GetHerHis] на Стену.;;;;;;;;;;;;;x
+EVTOPTCtrial.21;[FromFrom.GetSheHeCap] пройдет голышом по улицам, затем вернется в свою камеру.;;;;;;;;;;;;;x
+EVTOPTDtrial.21;Я проявлю милосердие и освобожу [FromFrom.GetHerHis].;;;;;;;;;;;;;x
+EVTDESCtrial.22;Приговор был вынесен и [FromFrom.GetTitledFirstName] находит вас винов[Root.GetOyYm] в преступлении [Root.GetTrialCharge]. \n\n[From.GetTitledFirstNameWithDynastyNoRegnal] указывает на вас и провозглашает: 'Я приговариваю вас к смерти'.;;;;;;;;;;;;;x
+EVTOPTAtrial.22;НЕТ! НЕЕЕТ! ЭТОГО НЕ МОЖЕТ БЫТЬ!;;;;;;;;;;;;;x
+EVTDESCtrial.23;Вердикт был оглашен и [FromFrom.GetTitledFirstName] находит вас винов[Root.GetOyYm] в преступлении [Root.GetTrialCharge]. \n\n[From.GetTitledFirstNameWithDynastyNoRegnal] указывает на вас и говорит: 'Отправить [Root.HerHis] на Стену.';;;;;;;;;;;;;x
+EVTOPTAtrial.23;Я скажу нужные слова и проведу остаток своих дней на Стене.;;;;;;;;;;;;;x
+EVTDESCtrial.24;Вердикт был оглашен и [FromFrom.GetTitledFirstName] находит вас винов[Root.GetOyYm] в преступлении [Root.GetTrialCharge].\n\n[From.GetTitledFirstNameWithDynastyNoRegnal] указывает на вас и говорит: '[Root.SheHe] долж[Root.GetNaEn] вернуться в свою темницу для покаяния.';;;;;;;;;;;;;x
+EVTOPTAtrial.24;Когда-нибудь я оправлюсь от такого позора;;;;;;;;;;;;;x
+EVTDESCtrial.25;Вердикт был оглашен и [FromFrom.GetTitledFirstName] находит вас винов[Root.GetOyYm] в преступлении [Root.GetTrialCharge]. \n\n[From.GetTitledFirstNameWithDynastyNoRegnal] указывает на вас и говорит: 'Преклоните колени и вы будете помилованы.';;;;;;;;;;;;;x
+EVTOPTAtrial.25;Вот это да! После всего, что я натворил[Root.GetEndA]?;;;;;;;;;;;;;x
+EVTDESCtrial.26;Вердикт был оглашен и [FromFrom.GetTitledFirstName] находит вас невинов[Root.GetOyYm] в преступлении [Root.GetTrialCharge]. Вы свободны.;;;;;;;;;;;;;x
+EVTOPTAtrial.26;Справедливость!;;;;;;;;;;;;;x
+EVTDESCtrial.27;Вердикт был оглашен.\n\n[From.GetTitledFirstName] провозглашает: 'Я нахожу, что [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] невинов[FromFrom.GetNaEn]! [FromFrom.GetTrialCharge] не доказано';;;;;;;;;;;;;x
+EVTOPTAtrial.27;У меня нет выбора, придется выпустить [FromFrom.GetHerHis];;;;;;;;;;;;;x
+EVTOPTBtrial.27;Не доказано?! Я против, я хочу [FromFrom.GetHerHis] голову!;;;;;;;;;;;;;x
+EVTOPTCtrial.27;Это явная ошибка, отправьте [FromFrom.GetHerHis] обратно в темницу!;;;;;;;;;;;;;x
+TOOLTIPTYRANNYUP2;Ваша §Rтирания§! увеличивается на 15;;;;;;;;;;;;;x
+EVTDESCtrial.28;Вердикт был оглашен и [FromFrom.GetTitledFirstName] признал[FromFrom.GetEndA] вас невинов[Root.GetOyYm] в преступлении [Root.GetTrialCharge]. Однако [From.GetTitledFirstName], невзирая на законы, не соглашается и приказывает казнить вас.;;;;;;;;;;;;;x
+EVTOPTAtrial.28;Но, но… Я был[Root.GetEndA] признанRoot.[GetEndA] невиновн[Root.GetOyYm]!;;;;;;;;;;;;;x
+EVTDESCtrial.29;Вердикт был оглашен и [FromFrom.GetTitledFirstName] признал[FromFrom.GetEndA] вас невинов[Root.GetOyYm] в преступлении [Root.GetTrialCharge]. Однако [From.GetTitledFirstName] посчитал[From.GetEndA] это несправедливым и отправил[From.GetEndA] вас обратно в темницу в ожидании приговора.;;;;;;;;;;;;;x
+EVTOPTAtrial.29;Возмутительно! По закону и обычаям я невинов[GetNaEn]!;;;;;;;;;;;;;x
+opinion_unjust;Нечестный приговор;;;;;;;;;;;;;x
+opinion_found_me_innocent;Признание моей невиновности;;;;;;;;;;;;;x
+opinion_found_me_guilty;Признание монй вины;;;;;;;;;;;;;x
+opinion_ignored_my_verdict;Игнорирование моего приговора;;;;;;;;;;;;;x
+EVTDESCtrial.220;Ваш приговор был оглашен, [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] указывает на заключенного и говорит: 'Вы приговариваетесь к смерти'.;;;;;;;;;;;;;x
+EVTOPTAtrial.220;Справедливое наказание;;;;;;;;;;;;;x
+EVTDESCtrial.230;Ваш приговор был оглашен, [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] указывает на заключенного и говорит: 'Отправить [From.GetHerHis] на Стену'.;;;;;;;;;;;;;x
+EVTDESCtrial.240;Ваш приговор был оглашен, [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] указывает на заключенного и говорит: '[From.GetSheHeCap] будет возвращен в свою темницу через покаяние.';;;;;;;;;;;;;x
+EVTDESCtrial.250;Ваш приговор был оглашен, [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] указывает на заключенного и говорит: 'Если вы преклоните колено, ваши преступления будут прощены'.;;;;;;;;;;;;;x
+EVTOPTAtrial.250;Неужели это так сложно?;;;;;;;;;;;;;x
+EVTDESCtrial.280;Ваш приговор был оглашен, и большинство считает его справедливым. Однако, [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] своего мнения - указывает на заключенного и произносит: 'Я никогда не признаю твоей невиновности, казнить!'.;;;;;;;;;;;;;x
+EVTDESCtrial.290;Ваш приговор был оглашен, и большинство считает его справедливым. Однако, [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] своего мнения - указывает на заключенного и произносит: 'Я никогда не признаю твоей невиновности, отправить [From.GetHerHis] обратно в темницу!';;;;;;;;;;;;;x
+EVTOPTEtrial.21;[FromFrom.GetSheHeCap] будет служить религии до конца своих дней;;;;;;;;;;;;;x
+EVTDESCtrial.235;Был внесен вердикт, и [FromFrom.GetTitledFirstName] находит вас виновн[GetOyYm].\n\n[From.GetTitledFirstNameWithDynastyNoRegnal] указывает на вас и говорит: 'Отправить [Root.GetHerHis] к жрецам, там [Root.GetSheHe] и закончит свои дни.';;;;;;;;;;;;;x
+EVTOPTAtrial.235;Оставшаяся часть моей жизни будет посвящена служению религии;;;;;;;;;;;;;x
+EVTDESCtrial.236;Ваш приговор был оглашен и теперь [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] указывает на вас и говорит: 'Отправить [From.GetHerHis] к жрецам, там [From.GetSheHe] никому не навредит.';;;;;;;;;;;;;x
+TOOLTIPtrial.24;[This.GetTitledFirstName] - отправить в тюрьму;;;;;;;;;;;;;x
+TOOLTIPtrial.25;[This.GetTitledFirstName] - освободить;;;;;;;;;;;;;x
+opinion_found_guilty;Суд признал вашу вину;;;;;;;;;;;;;x
+EVTDESCtrial.50;Прошел месяц, и [From.GetTitledFirstName] не смог найти защитника для своего поединка. Теперь [From.GetSheHe] предстанет перед судом.;;;;;;;;;;;;;x
+EVTOPTFtrial.21;Я изгоняю вас из земли [Root.PrimaryTitle.GetFullName];;;;;;;;;;;;;x
+EVTDESCtrial.237;Вердикт был вынесен и [FromFrom.GetTitledFirstName] находит вас виновн[Root.GetOyYm] в преступлении [Root.GetTrialCharge]. \n\n[From.GetTitledFirstNameWithDynastyNoRegnal] указывает на вас и говорит: 'Я изгоняю вас из земли [FromFrom.PrimaryTitle.GetFullName] под страхом смерти';;;;;;;;;;;;;x
+EVTOPTAtrial.237;Мне, хотя бы, сохранят жизнь;;;;;;;;;;;;;x
+EVTDESCtrial.238;Ваш вердикт был вынесен, и теперь [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] с отвращением указывает на заключенного и объявляет: 'Я изгоняю вас из земли [FromFrom.PrimaryTitle.GetFullName] под страхом смерти'.;;;;;;;;;;;;;x
+EVTOPTGtrial.21;Совет законно примет меру наказания;;;;;;;;;;;;;x
+TOOLTIPtrial.239;Поскольку совет имеет право принимать решения по всем вопросам правосудия, [This.GetTitledFirstName] будет находиться под арестом, пока совет не вынесет подходящую меру наказания;;;;;;;;;;;;;x
+EVTDESCtrial.239;Вердикт был вынесен и [FromFrom.GetTitledFirstName] решает, что вы ВИНОВНЫ в пресиуплении [Root.GetTrialCharge]. \n\n[From.GetTitledFirstNameWithDynastyNoRegnal] указывает на вас и говорит: 'Вы будете возвращены в свою камеру, пока совет не определится с мерой наказания'.;;;;;;;;;;;;;x
+EVTOPTAtrial.239;Они наверняка проявят милосердие?;;;;;;;;;;;;;x
+EVTDESCtrial.251;Ваш вердикт был вынесен, и теперь [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] с отвращением указывает на заключенного и объявляет: 'Вы будете возвращены в свою камеру, пока совет не определится со справедливой  мерой наказания';;;;;;;;;;;;;x
+EVTOPTAtrial.251;Мы наверняка придем к решению;;;;;;;;;;;;;x
+opinion_ignored_my_judgement;Игнорирование моего решения;;;;;;;;;;;;;x
+GetTrialCharge_Sedition;подстрекательство и заговор против государства;;;;;;;;;;;;;x
+GetTrialCharge_Mutilation;противоправное лишение свободы и нанесение увечий персонажу [accuser.GetTitledFirstNameWithDynastyNoRegnal];;;;;;;;;;;;;x
+GetTrialCharge_MutilatedRelativeA;противоправное лишение свободы и нанесение увечий персонажу [third_party_abuse_victim.GetTitledFirstNameWithDynastyNoRegnal];;;;;;;;;;;;;x
+GetTrialCharge_MutilatedRelativeB;противоправное лишение свободы и нанесение увечий родственнику персонажа [accuser.GetTitledFirstNameWithDynastyNoRegnal];;;;;;;;;;;;;x
+GetTrialCharge_Torture;жестокое обращение и пытки над персонажем [accuser.GetTitledFirstNameWithDynastyNoRegnal];;;;;;;;;;;;;x
+GetTrialCharge_TortureB;незаконное насилие и пытки;;;;;;;;;;;;;x
+GetTrialCharge_TorturedRelativeA;незаконное насилие и пытки персонажа [third_party_abuse_victim.GetTitledFirstNameWithDynastyNoRegnal];;;;;;;;;;;;;x
+GetTrialCharge_TorturedRelativeB;незаконное насилие и пытки родственника персонажа [accuser.GetTitledFirstNameWithDynastyNoRegnal];;;;;;;;;;;;;
+GetTrialCharge_Rape;похищение и изнасилование персонажа [accuser.GetTitledFirstNameWithDynastyNoRegnal];;;;;;;;;;;;;x
+GetTrialCharge_RapeB;насилие;;;;;;;;;;;;;
+GetTrialCharge_RapedRelativeA;похищение и изнасилование персонажа [third_party_abuse_victim.GetTitledFirstNameWithDynastyNoRegnal];;;;;;;;;;;;;x
+GetTrialCharge_RapedRelativeB;похищение и изнасилование родственника персонажа [accuser.GetTitledFirstNameWithDynastyNoRegnal];;;;;;;;;;;;;x
+GetTrialCharge_Abused;противоправное лишение свободы и незаконное жестокое обращение персонажа [accuser.GetTitledFirstNameWithDynastyNoRegnal];;;;;;;;;;;;;x
+GetTrialCharge_AbusedRelativeA;противоправное лишение свободы и незаконное жестокое обращение над персонажем [third_party_abuse_victim.GetTitledFirstNameWithDynastyNoRegnal];;;;;;;;;;;;;x
+GetTrialCharge_AbusedRelativeB;противоправное лишение свободы и незаконное жестокое обращение над родственником персонажа [accuser.GetTitledFirstNameWithDynastyNoRegnal];;;;;;;;;;;;;x
+GetTrialCharge_MurderA;убийство персонажа [third_party_murder_victim.GetTitledFirstNameWithDynastyNoRegnal];;;;;;;;;;;;;x
+GetTrialCharge_MurderB;убийство;;;;;;;;;;;;;x
+GetTrialCharge_MurderC;убийство;;;;;;;;;;;;;x
+GetTrialCharge_AttemptedMurderA;покушение на убийство персонажа [third_party_murder_attempt_victim.GetTitledFirstNameWithDynastyNoRegnal];;;;;;;;;;;;;x
+GetTrialCharge_AttemptedMurderB;покушение на убийство;;;;;;;;;;;;;x
+GetTrialCharge_Treason;измена;;;;;;;;;;;;;x
+GetTrialCharge_Adultery;прелюбодеяние;;;;;;;;;;;;;x
+GetTrialCharge_Looting;незаконное рейдерство и грабеж земли [accuser.PrimaryTitle.GetName];;;;;;;;;;;;;x
+GetTrialCharge_Slaving;незаконное рейдерство и грабеж;;;;;;;;;;;;;x
+GetTrialCharge_Theft;воровство;;;;;;;;;;;;;x
+GetTrialCharge_War;незаконная вооруженная агрессия против земли [accuser.PrimaryTitle.GetName];;;;;;;;;;;;;x
+GetTrialCharge_Corruption;коррупция и злоупотребление властью;;;;;;;;;;;;;x
+GetTrialCharge_Blackmail;шантаж;;;;;;;;;;;;;x
+GetTrialCharge_Witchcraft;колдовство;;;;;;;;;;;;;x
+GetTrialCharge_Blasphemy;богохульство;;;;;;;;;;;;;x
+GetTrialCharge_Incest;инцест;;;;;;;;;;;;;x
+GetTrialCharge_Sodomy;мужеложство;;;;;;;;;;;;;x
+GetTrialCharge_Cannabalism;каннибализм;;;;;;;;;;;;;x
+GetTrialCharge_Desertion;дезертирство;;;;;;;;;;;;;x
+GetTrialCharge_Piracy;пиратство;;;;;;;;;;;;;x
+GetTrialCharge_Drunkenness;пьянство;;;;;;;;;;;;;x
+GetTrialCharge_DebtDefault;долг;;;;;;;;;;;;;x
+EVTDESCtrial.300;[Root.PrimaryTitle.GetFOA], новости из города [From.Capital.GetName] с большого судебного разбирательства. [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] был[FromFromFrom.GetEndA] заключен[FromFromFrom.GetEndA] в тюрьму, как велит [From.GetTitledFirstNameWithDynastyNoRegnal] и обвинен[FromFromFrom.GetEndA] в преступлении [FromFromFrom.GetTrialCharge]. [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] председательствовал[FromFrom.GetEndA] на судебном процессе, в ходе которого заключенный был, в конечном итоге, признан виновным. Как следствие, [FromFromFrom.GetTrialPunishment].;;;;;;;;;;;;;x
+EVTDESCtrial.301;[Root.PrimaryTitle.GetFOA], новости из города [From.Capital.GetName] с большого судебного разбирательства. [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] был[FromFromFrom.GetEndA] заключен[FromFromFrom.GetEndA] в тюрьму, как велит [From.GetTitledFirstNameWithDynastyNoRegnal] и был[FromFromFrom.GetEndA] обвинен[FromFromFrom.GetEndA] в преступлении [FromFromFrom.GetTrialCharge]. [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] председательствовал[FromFrom.GetEndA] на судебном процессе, в ходе которого заключенный был, в конечном счете, признан невиновным по всем обвинениям, а затем освобождён.;;;;;;;;;;;;;x
+EVTDESCtrial.301B;[Root.PrimaryTitle.GetFOA], новости из города [From.Capital.GetName] с большого судебного разбирательства. [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] был[FromFromFrom.GetEndA] заключен[FromFromFrom.GetEndA] в тюрьму, как велит [From.GetTitledFirstNameWithDynastyNoRegnal] и был[FromFromFrom.GetEndA] обвинен[FromFromFrom.GetEndA] в преступлении [FromFromFrom.GetTrialCharge]. [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] председательствовал на судебном процессе, в ходе которого заключенный был, в конечном счете, признан невиновным по всем обвинениям. В спорном решении [From.GetTitledFirstNameNoRegnal] проигнорировал[From.GetEndA] этот вердикт, [FromFromFrom.GetTitledFirstNameNoRegnal] [FromFromFrom.GetTrialPunishment].;;;;;;;;;;;;;x
+OPTNOINFORMTRIALCOURT;Не сообщайте мне о судебных разбирательствах при дворах;;;;;;;;;;;;;x
+offer_to_take_black;Предложение облачиться в  черное;;;;;;;;;;;;;x
+offer_to_take_black_desc;Вы в настоящее время заключены в тюрьму, и можете облачиться в чёрное и отречься от трона в пользу вашего наследника для обеспечения освобождения.;;;;;;;;;;;;;x
+TOOLTIPoffer_to_take_black;Вы просите освобождения у своего тюремщика, известного как [Root.Host.GetTitledFirstNameWithDynastyNoRegnal], чтобы вы могли переодеться черное и присоединиться к Ночному Дозору;;;;;;;;;;;;;x
+EVTDESCtrial.310;Ваш заключенный, [From.GetTitledFirstNameWithDynastyNoRegnal], просит об аудиенции. [From.GetSheHeCap] просит Вас освободить [From.GetHerHis] в обмен на [From.GetHerHis] присоединение к Ночному Дозору и отказ от всех титулов и прочих прав.;;;;;;;;;;;;;x
+EVTOPTAtrial.310;Соглашусь, так даже проще;;;;;;;;;;;;;x
+EVTOPTBtrial.310;Нет, ты будешь под моим присмотром.;;;;;;;;;;;;;x
+opinion_rejected_NW_plea;Отклонена просьба присоединиться к Ночному Дозору;;;;;;;;;;;;;x
+EVTDESCtrial.311;[From.GetTitledFirstNameWithDynastyNoRegnal] слышит вышу просьбу и любезно согласился позволить вам присоединиться к Ночному Дозору.;;;;;;;;;;;;;x
+EVTOPTAtrial.311;Благодарю Вас, [From.PrimaryTitle.GetFOA];;;;;;;;;;;;;x
+predecessor_took_black;Предшественник надел черное;;;;;;;;;;;;;x
+EVTDESCtrial.312;[From.GetTitledFirstNameWithDynastyNoRegnal] слышит вышу просьбу, но отклоняет её. Вы были отправлены обратно в свою камеру с позором.;;;;;;;;;;;;;x
+EVTOPTAtrial.312;Я волнуюсь, что [From.GetSheHe] сделает со мной?;;;;;;;;;;;;;x
+GetTrialCharge_Trespass;злоупотребление;;;;;;;;;;;;;x
+GetTrialCharge_Assault;нападение;;;;;;;;;;;;;x
+GetTrialCharge_Arson;поджог;;;;;;;;;;;;;x
+GetTrialCharge_OathBreaking;клятвопреступление;;;;;;;;;;;;;x
+EVTOPTBtrial.3;Я воспользуюсь этой услугой, чтобы получить свободу;;;;;;;;;;;;;x
+TOOLTIPtrial.399;[From.GetTitledFirstNameWithDynastyNoRegnal] намекает вам об услуге. [From.GetSheHeCap] найдет вас невиновн[Root.GetOyYm] в обмен на это.;;;;;;;;;;;;;x
+EVTDESCtrial.399;Во время перерыва в судебном процессе [From.GetTitledFirstNameWithDynastyNoRegnal] удалось отправить сообщение через своих собственных шпионов. [From.GetSheHeCap] взывает об услуге, которую вы должны [From.GetHerHim], так что вы объявите [From.GetHerHis] невиновным по всем обвинениям.;;;;;;;;;;;;;x
+EVTOPTAtrial.399;У меня нет выбора, кто знает, что [From.GetSheHe] может сделать;;;;;;;;;;;;;x
+TOOLTIPtrial.399;Вы будете обязаны найти [From.GetHerHis] невиновн[From.GetOyYm];;;;;;;;;;;;;x
+EVTOPTBtrial.21B;Кастрировать [FromFrom.GetHerHis] и выслать на Стену!;;;;;;;;;;;;;x
+EVTDESCtrial.23B;Был вынесен вердикт, и [FromFrom.GetTitledFirstName] признал[FromFrom.GetEndA] вас виновн[Root.GetOyYm] в [Root.GetTrialCharge]. \n\n[From.GetTitledFirstNameWithDynastyNoRegnal] указывает на вас и произносит: 'Кастрировать [Root.HerHis] и отправить на Стену.';;;;;;;;;;;;;x
+EVTOPTFtrial.21B;[FromFrom.GetSheHeCap] должен быть кастрирован, а затем изгнан из государства [Root.PrimaryTitle.GetName];;;;;;;;;;;;;
+EVTDESCtrial.237;Был вынесен вердикт, и [FromFrom.GetTitledFirstName] признал[FromFrom.GetEndA] вас виновн[Root.GetOyYm] в [Root.GetTrialCharge].\n\n[From.GetTitledFirstNameWithDynastyNoRegnal] указывает на вас и говорит: 'Настоящим я приказываю кастировать вас и выслать из земли [FromFrom.PrimaryTitle.GetFullName] под страхом смерти';;;;;;;;;;;;;x
+TOOLTIPgive_justiceTRIARCH;[From.GetTitledFirstNameWithDynastyNoRegnal] - религиозный глава\n;;;;;;;;;;;;;x

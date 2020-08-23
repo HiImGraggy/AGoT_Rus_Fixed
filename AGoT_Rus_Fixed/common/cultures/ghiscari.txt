@@ -1,0 +1,390 @@
+ghiscari_group = {
+	graphical_cultures = { ghiscarigfx } # buildings
+	
+	astapori = {
+		graphical_cultures = { ghiscarigfx } # buildings
+		
+		color = { 0.9 0.4 0.3 } #cream
+		
+		alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+		
+		male_names = {			
+			Аззак
+			Бхарказ Бархаз Баргаз Бхаказ Барказ
+			Чездар
+			Дхаццар Драказ
+			Фецар Фендаль Фэзар
+			Граздан:1500 Гозрак Газдор Граздар Горхан Горган Гразхар
+			Хиздар Хазнак Харгаз Хазкар
+			Кразнис	Кразз	
+			Ларрак
+			Маздан Мархаз Миклаз Мезон Морхаз
+			Ознак			
+			Прендаль Пецар	 		
+			Резнак 
+			Скахаз  
+			Еззан Юрхаз Ярхаз        
+			Зхарак  
+
+			#semi-canon 
+ 			Беззак Дезхор Краздан Раздал    
+			
+			#non-canon
+			Экназ
+			Гарнхак Гадхаз
+			Кацак
+			Лесхаль Лицнак
+			Мизналь
+			Сроздаз
+			
+			#DAMOC
+			Грацдар Разлар Маклан Хагдон Ракнак Газхак Резмол Схернар Омдаз Гигхак Харназ Грозлал Зеццан Фхарак Каргаз Кхарак Кендаль Хездар Озрак
+			Раздар Омхаз Озхан Оццан Оззак Оргхаз Урхаз Мецар Хецар Гхразз Аззхак Задрак Схакар Схакдан Ярдар Ярказ Яццак Казнак Казон Корхаз Корган
+			Кархаз Кхарказ
+			
+		}
+		female_names = {
+			#Canon/based on male name
+			Аззея Аззара
+			Бхарказа
+			Чеззара
+			Дхаззара 
+			Эзарра Эллеззара Элца
+			Феззара
+			Галацца Геззелла Граздарра
+			Хаззея Хаззаара
+			Джецана Джезена
+			Кезмия
+			Меззара Меллезарра Меззала Меззала Моргазза
+			Пецара
+			Квецца Квазелла          
+			Сецка Сецца Селеззка Скахаза
+			Телеззара Тецца
+			Ецца
+			Зеллазара Захрина
+
+			#Non-canon names
+			Даззага
+			Коррака
+			Лахезна
+			Прандакха Пецаца
+			Разликха
+			Сассазла Силакна
+			Зханаса Зазхезза
+			
+			#DAMOC
+			
+			Бхеззара Кеказа Дхаказза Азена Азхара Деццара Белца Безара Базелла Казелла Хаццара Хелца Хеззела Дезелла Хелацца Балацца
+			Фалацца Мезара Квецара Сацара Бецца Хецца Бецка Талацца Таззара Тецена Бецена Хецена Ецена Тезарра Таццея Телза Гаццея Газзара
+			Горгацца Галацца Зелацца
+		}
+		from_dynasty_prefix = "из "
+		# male_patronym = "мо "
+		# prefix = yes
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+		
+		disinherit_from_blinding = yes
+	}
+	
+	yunkaii = {
+		graphical_cultures = { ghiscarigfx } # buildings
+		
+		color = { 0.6 0.3 0 } #cream
+		
+		alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+		
+		male_names = {			
+			Аззак
+			Бхарказ Бархаз Баргаз Бхаказ Барказ
+			Чездар
+			Дхаццар Драказ
+			Фецар Фендаль Фэзар
+			Граздан:800 Гозрак Газдор Граздар Горхан Горган Гразхар
+			Хиздар Хазнак Харгаз Хазкар
+			Кразнис	Кразз	
+			Ларрак
+			Маздан Мархаз Миклаз Мезон Морхаз
+			Ознак			
+			Прендаль Пецар	 		
+			Резнак 
+			Скахаз  
+			Еззан Юрхаз Ярхаз        
+			Зхарак  
+
+			#semi-canon 
+ 			Беззак Дезхор Краздан Раздал    
+			
+			#non-canon
+			Экназ
+			Гарнхак Гадхаз
+			Кацак
+			Лесхаль Лицнак
+			Мизналь
+			Сроздаз
+			
+			#DAMOC
+			Грацдар Разлар Маклан Хагдон Ракнак Газхак Резмол Схернар Омдаз Гигхак Харназ Грозлал Зеццан Фхарак Каргаз Кхарак Кендаль Хездар Озрак
+			Раздар Омхаз Озхан Оццан Оззак Оргхаз Урхаз Мецар Хецар Гхразз Аззхак Задрак Схакар Схакдан Ярдар Ярказ Яццак Казнак Казон Корхаз Корган
+			Кархаз Кхарказ
+			
+		}
+		female_names = {
+			#Canon/based on male name
+			Аззея Аззара
+			Бхарказа
+			Чеззара
+			Дхаззара 
+			Эзарра Эллеззара Элца
+			Феззара
+			Галацца Геззелла Граздарра
+			Хаззея Хаззаара
+			Джецана Джезена
+			Кезмия
+			Меззара Меллезарра Меззала Меззала Моргазза
+			Пецара
+			Квецца Квазелла          
+			Сецка Сецца Селеццка Скахаза
+			Теллезарра Тецца
+			Ецца
+			Зеллазара Захрина
+
+			#Non-canon names
+			Даззага
+			Коррака
+			Лахезна
+			Прандакха Пецаца
+			Разликха
+			Сассазла Силакна
+			Зханаса Зазхезза
+			
+			#DAMOC
+			
+			Бхеззара Кеказа Дхаказза Азена Азхара Деццара Белца Безара Базелла Казелла Хаццара Хелца Хеззела Дезелла Хелацца Балацца
+			Фалацца Мезара Квецара Сацара Бецца Хецца Бецка Талацца Таззара Тецена Бецена Хецена Ецена Тезарра Таццея Телза Гаццея Газзара
+			Горгацца Галацца Зелацца
+			
+		}
+		from_dynasty_prefix = "из "
+		# male_patronym = "зо "
+		# prefix = yes
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+		
+		disinherit_from_blinding = yes
+	}
+	
+	meereenese = {
+		graphical_cultures = { ghiscarigfx } # buildings
+		
+		color = { 0.7 0.4 0.1 } #cream
+		
+		alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+		
+		male_names = {			
+			Аззак
+			Бхарказ Бархаз Баргаз Бхаказ
+			Чездар
+			Дхаццар Драказ
+			Фецар Фендаль Фэзар
+			Граздан:800 Гозрак Газдор Граздан Граздар Горхан Гразхар
+			Хиздар Хазнак Харгаз Хазкар
+			Кразнис	Кразз	
+			Ларрак
+			Маздан Мархаз Миклаз Мезон Морхаз
+			Ознак			
+			Прендаль Пецар	 		
+			Резнак 
+			Скахаз  
+			Еззан Юрхаз Ярхаз        
+			Зхарак  
+
+			#semi-canon 
+ 			Беззак Дезхор Краздан Раздал    
+			
+			#non-canon
+			Экназ
+			Гарнхак Гадхаз
+			Кацак
+			Лесхаль Лицнак
+			Мизналь
+			Сроздаз
+			
+			#DAMOC
+			Грацдар Разлар Маклан Хагдон Ракнак Газхак Резмол Схернар Омдаз Гигхак Харназ Грозлал Зеццан Фхарак Каргаз Кхарак Кендаль Хездар Озрак
+			Раздар Омхаз Озхан Оццан Оззак Оргхаз Урхаз Мецар Хецар Гхразз Аззхак Задрак Схакар Схакдан Ярдар Ярказ Яццак Казнак Казон Корхаз Корган
+			Кархаз Кхарказ
+			
+		}
+		female_names = {
+			#Canon/based on male name
+			Аззея Аззара
+			Бхарказа
+			Чеззара
+			Дхаззара 
+			Эзарра Эллеззара Элца
+			Феззара
+			Галацца Геззелла Граздарра
+			Хаззея Хаззаара
+			Джецана Джезена
+			Кезмия
+			Меззара Меллезарра Меззала Меззала Моргазза
+			Пецара
+			Квецца Квазелла          
+			Сецка Сецца Селеццка Скахаза
+			Теллезарра Тецца
+			Ецца
+			Зеллазара Захрина
+
+			#Non-canon names
+			Даззага
+			Коррака
+			Лахезна
+			Прандакха Пецаца
+			Разликха
+			Сассазла Силакна
+			Цанаса Зацезза
+			
+			#DAMOC
+			
+			Бхеззара Кеказа Дхаказза Азена Азхара Деццара Белца Безара Базелла Казелла Хаццара Хелца Хеззела Дезелла Хелацца Балацца
+			Фалацца Мезара Квецара Сацара Бецца Хецца Бецка Талацца Таззара Тецена Бецена Хецена Ецена Тезарра Таццея Телза Гаццея Газзара
+			Горгацца Галацца Зелацца
+			
+		}
+		from_dynasty_prefix = "из "
+		# male_patronym = "зо "
+		# prefix = yes
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+		
+		disinherit_from_blinding = yes
+	}
+	
+	ghiscari = {
+		graphical_cultures = { ghiscarigfx } # buildings
+		
+		color = { 0.8 0.5 0.2 } #cream
+		
+		alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+		
+		male_names = {			
+			Аззак
+			Бхарказ Бархаз Баргаз Бхаказ
+			Чездар
+			Дхаццар Драказ
+			Фецар Фендаль Фэзар
+			Граздан:800 Гозрак Газдор Граздан Граздар Горхан Гразхар
+			Хиздар Хазнак Харгаз Хазкар
+			Кразнис	Кразз	
+			Ларрак
+			Маздан Мархаз Миклаз Мезон Морхаз
+			Ознак			
+			Прендаль Пецар	 		
+			Резнак 
+			Скахаз  
+			Еззан Юрхаз Ярхаз        
+			Зхарак      
+			
+			#non-canon
+			Экназ
+			Гарнхак Гадхаз
+			Кацак
+			Лесхаль Лицнак
+			Мизналь
+			Раднек
+			Сроздаз Схизхар
+			Ухзак
+			Зазхан
+			
+			#DAMOC
+			Грацдар Разлар Маклан Хагдон Ракнак Газхак Резмол Схернар Омдаз Гигхак Харназ Грозлал Зеццан Фхарак Каргаз Кхарак Кендаль Хездар Озрак
+			Раздар Омхаз Озхан Оццан Оззак Оргхаз Урхаз Мецар Хецар Гхразз Аззхак Задрак Схакар Схакдан Ярдар Ярказ Яццак Казнак Казон Корхаз Корган
+			Кархаз Кхарказ
+			
+		}
+		female_names = {
+			#Canon/based on male name
+			Аззея Аззара
+			Бхарказа
+			Чеззара
+			Дхаззара 
+			Эзарра Эллеззара Элца
+			Феззара
+			Галацца Геззелла Граздарра
+			Хаззея Хаззаара
+			Джецана Джезена
+			Кезмия
+			Меззара Меллезарра Меззала Меззала Моргазза
+			Пецара
+			Квецца Квазелла          
+			Сецка Сецца Селеццка Скахаза
+			Теллезарра Тецца
+			Ецца
+			Зеллазара Захрина
+
+			#Non-canon names
+			Даззага
+			Коррака
+			Лахезна
+			Прандакха Пецаца
+			Разликха
+			Сассазла Силакна
+			Зханаса Зазхезза
+			
+			#DAMOC
+			
+			Бхеззара Кеказа Дхаказза Азена Азхара Деццара Белца Безара Базелла Казелла Хаццара Хелца Хеззела Дезелла Хелацца Балацца
+			Фалацца Мезара Квецара Сацара Бецца Хецца Бецка Талацца Таззара Тецена Бецена Хецена Ецена Тезарра Таццея Телза Гаццея Газзара
+			Горгацца Галацца Зелацца
+			
+		}
+		from_dynasty_prefix = "из "
+		# male_patronym = "зо "
+		# prefix = yes
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+		
+		disinherit_from_blinding = yes
+	}
+}

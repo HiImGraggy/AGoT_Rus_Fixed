@@ -1,0 +1,401 @@
+### House Pahryris
+340662900 = {
+	name="Матарис"	# a lord
+	dynasty=662900
+
+	religion="rhllor"
+	culture="essarian"
+
+	7830.1.1 = {birth="7830.1.1"}
+	7846.1.1 = {add_trait=poor_warrior}
+	7885.1.1 = {death="7885.1.1"}
+}
+10002900 = {
+	name="Беличо"	# a lord
+	dynasty=662900
+
+	religion="rhllor"
+	culture="essarian"
+	
+	father=340662900
+
+	7856.1.1 = {birth="7856.1.1"}
+	7872.1.1 = {add_trait=poor_warrior}
+	7926.1.1 = {death="7926.1.1"}
+}
+10012900 = {
+	name="Метисо"	# a lord
+	dynasty=662900
+
+	religion="rhllor"
+	culture="essarian"
+
+	father=10002900
+
+	7878.1.1 = {birth="7878.1.1"}
+	7894.1.1 = {add_trait=poor_warrior}
+	7953.1.1 = {death="7953.1.1"}
+}
+10032900 = {
+	name="Коллокво"	# a lord
+	dynasty=662900
+
+	religion="rhllor"
+	culture="essarian"
+
+	father=10012900
+
+	7911.1.1 = {birth="7911.1.1"}
+	7927.1.1 = {add_trait=trained_warrior}
+	7969.1.1 = {death="7969.1.1"}
+}
+10062900 = {
+	name="Беличо"	# a lord
+	dynasty=662900
+
+	religion="rhllor"
+	culture="essarian"
+
+	father=10032900
+
+	7931.1.1 = {birth="7931.1.1"}
+	7947.1.1 = {add_trait=poor_warrior}
+	7980.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+10122900 = {
+	name="Вейкар"	# not a lord
+	dynasty=662900
+
+	religion="rhllor"
+	culture="essarian"
+
+	father=10062900
+
+	7960.1.1 = {birth="7960.1.1"}
+	7976.1.1 = {add_trait=poor_warrior}
+	8019.1.1 = {death="8019.1.1"}
+}
+
+### House Naeyor
+340662901 = {
+	name="Паркелло"	# a lord
+	dynasty=662901
+
+	religion="rhllor"
+	culture="essarian"
+
+	7829.1.1 = {birth="7829.1.1"}
+	7845.1.1 = {add_trait=poor_warrior}
+	7886.1.1 = {death="7886.1.1"}
+}
+100062901 = {
+	name="Коллокво"	# a lord
+	dynasty=662901
+
+	religion="rhllor"
+	culture="essarian"
+	
+	father=340662901
+
+	7854.1.1 = {birth="7854.1.1"}
+	7870.1.1 = {add_trait=poor_warrior}
+	7922.1.1 = {death="7922.1.1"}
+}
+100262901 = {
+	name="Эйликс"	# a lord
+	dynasty=662901
+
+	religion="rhllor"
+	culture="essarian"
+
+	father=100062901
+
+	7889.1.1 = {birth="7889.1.1"}
+	7905.1.1 = {add_trait=poor_warrior}
+	7925.1.1 = {death="7925.1.1"}
+}
+100462901 = {
+	name="Мокорро"	# a lord
+	dynasty=662901
+
+	religion="rhllor"
+	culture="essarian"
+
+	father=100262901
+
+	7917.1.1 = {birth="7917.1.1"}
+	7933.1.1 = {add_trait=trained_warrior}
+	7980.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+100962901 = {
+	name="Вейкар"	# not a lord
+	dynasty=662901
+
+	religion="rhllor"
+	culture="essarian"
+
+	father=100462901
+
+	7942.1.1 = {birth="7942.1.1"}
+	7958.1.1 = {add_trait=master_warrior}
+	8001.1.1 = {death="8001.1.1"}
+}
+101362901 = {
+	name="Джейкар"	# not a lord
+	dynasty=662901
+
+	religion="rhllor"
+	culture="essarian"
+
+	father=100962901
+
+	7962.1.1 = {birth="7962.1.1"}
+	7978.1.1 = {add_trait=poor_warrior}
+	8022.1.1 = {death="8022.1.1"}
+}
+
+### House Iranoran
+340662902 = {
+	name="Джейкар"	# a lord
+	dynasty=662902
+
+	religion="rhllor"
+	culture="essarian"
+
+	7840.1.1 = {birth="7840.1.1"}
+	7856.1.1 = {add_trait=poor_warrior}
+	7880.1.1 = {death="7880.1.1"}
+}
+10002902 = {
+	name="Вейрмон"	# a lord
+	dynasty=662902
+
+	religion="rhllor"
+	culture="essarian"
+
+	father=340662902
+	
+	7866.1.1 = {birth="7866.1.1"}
+	7882.1.1 = {add_trait=poor_warrior}
+	7929.1.1 = {death="7929.1.1"}
+}
+10012902 = {
+	name="Каво"	# a lord
+	dynasty=662902
+
+	religion="rhllor"
+	culture="essarian"
+
+	father=10002902
+
+	7900.1.1 = {birth="7900.1.1"}
+	7916.1.1 = {add_trait=trained_warrior}
+	7955.1.1 = {death="7955.1.1"}
+}
+10022902 = {
+	name="Паркелло"	# a lord
+	dynasty=662902
+
+	religion="rhllor"
+	culture="essarian"
+
+	father=10012902
+
+	7929.1.1 = {birth="7929.1.1"}
+	7945.1.1 = {add_trait=knight add_trait=skilled_warrior}
+	8003.1.1 = {death="8003.1.1"}
+}
+10042902 = {
+	name="Малакво"	# not a lord
+	dynasty=662902
+
+	religion="rhllor"
+	culture="essarian"
+
+	father=10022902
+
+	7958.1.1 = {birth="7958.1.1"}
+	7974.1.1 = {add_trait=trained_warrior}
+	8006.1.1 = {death="8006.1.1"}
+}
+10082902 = {
+	name="Метисо"	# not a lord
+	dynasty=662902
+
+	religion="rhllor"
+	culture="essarian"
+
+	father=10042902
+
+	7978.1.1 = {birth="7978.1.1"}
+	7994.1.1 = {add_trait=poor_warrior}
+	8032.1.1 = {death="8032.1.1"}
+}
+
+### House Hestyrion
+340662903 = {
+	name="Эйликс"	# a lord
+	dynasty=662903
+
+	religion="rhllor"
+	culture="essarian"
+
+	7832.1.1 = {birth="7832.1.1"}
+	7848.1.1 = {add_trait=poor_warrior}
+	7889.1.1 = {death="7889.1.1"}
+}
+10002903 = {
+	name="Эйнар"	# a lord
+	dynasty=662903
+
+	religion="rhllor"
+	culture="essarian"
+	
+	father=340662903
+
+	7860.1.1 = {birth="7860.1.1"}
+	7876.1.1 = {add_trait=poor_warrior}
+	7917.1.1 = {death="7917.1.1"}
+}
+10032903 = {
+	name="Малакво"	# a lord
+	dynasty=662903
+
+	religion="rhllor"
+	culture="essarian"
+
+	father=10002903
+
+	7889.1.1 = {birth="7889.1.1"}
+	7905.1.1 = {add_trait=knight add_trait=poor_warrior}
+	7924.1.1 = {death="7924.1.1"}
+}
+10052903 = {
+	name="Вейрон"	# a lord
+	dynasty=662903
+
+	religion="rhllor"
+	culture="essarian"
+
+	father=10032903
+
+	7916.1.1 = {birth="7916.1.1"}
+	7932.1.1 = {add_trait=trained_warrior}
+	7946.1.1 = {death="7946.1.1"}
+}
+10072903 = {
+	name="Вейкар"	# a lord
+	dynasty=662903
+
+	religion="rhllor"
+	culture="essarian"
+
+	father=10052903
+
+	7941.1.1 = {birth="7941.1.1"}
+	7957.1.1 = {add_trait=poor_warrior}
+	7980.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+10092903 = {
+	name="Джейкар"	# not a lord
+	dynasty=662903
+
+	religion="rhllor"
+	culture="essarian"
+
+	father=10072903
+
+	7963.1.1 = {birth="7963.1.1"}
+	7979.1.1 = {add_trait=poor_warrior}
+	8022.1.1 = {death="8022.1.1"}
+}
+
+### House Sorrerion
+340662906 = {
+	name="Каво"	# a lord
+	dynasty=662906
+
+	religion="rhllor"
+	culture="essarian"
+
+	7832.1.1 = {birth="7832.1.1"}
+	7849.1.1 = {add_trait=poor_warrior}
+	7878.1.1 = {death="7878.1.1"}
+}
+10002906 = {
+	name="Матарис"	# a lord
+	dynasty=662906
+
+	religion="rhllor"
+	culture="essarian"
+	
+	father=340662906
+
+	7856.1.1 = {birth="7856.1.1"}
+	7872.1.1 = {add_trait=poor_warrior}
+	7918.1.1 = {death="7918.1.1"}
+}
+10032906 = {
+	name="Донифос"	# a lord
+	dynasty=662906
+
+	religion="rhllor"
+	culture="essarian"
+
+	father=10002906
+
+	7882.1.1 = {birth="7882.1.1"}
+	7898.1.1 = {add_trait=master_warrior}
+	7935.1.1 = {death="7935.1.1"}
+}
+10062906 = {
+	name="Квохерис"	# a lord
+	dynasty=662906
+
+	religion="rhllor"
+	culture="essarian"
+
+	father=10032906
+
+	7907.1.1 = {birth="7907.1.1"}
+	7923.1.1 = {add_trait=trained_warrior}
+	7978.1.1 = {death="7978.1.1"}
+}
+10102906 = {
+	name="Алиос"	# a lord
+	dynasty=662906
+
+	religion="rhllor"
+	culture="essarian"
+
+	father=10062906
+
+	7936.1.1 = {birth="7936.1.1"}
+	7952.1.1 = {add_trait=poor_warrior}
+	7996.1.1 = {death="7996.1.1"}
+}
+10132906 = {
+	name="Горис"	# not a lord
+	dynasty=662906
+
+	religion="rhllor"
+	culture="essarian"
+
+	father=10102906
+
+	7970.1.1 = {birth="7970.1.1"}
+	7986.1.1 = {add_trait=skilled_warrior}
+	8023.1.1 = {death="8023.1.1"}
+}

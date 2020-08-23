@@ -1,0 +1,19 @@
+name = "Вторжение Простора в Марки"
+
+casus_belli={
+	casus_belli=invasion_ambition
+	actor=88174 # Garse VII Gardener
+	recipient=1544 # Argilac Durrandon
+	landed_title=d_dornish_marches
+	date=7980.1.1
+}
+
+7980.1.1 = {
+	add_defender = 1544 # Argilac Durrandon
+	add_attacker = 88174 # Garse VII Gardener
+}
+
+7980.5.8 = {
+	rem_defender = 1544 # Argilac Durrandon 
+	rem_attacker = 88174 # Garse VII Gardener
+}                                                                                                                                                                                                                                                                                                                

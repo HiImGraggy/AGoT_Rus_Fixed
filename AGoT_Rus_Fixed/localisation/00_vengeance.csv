@@ -1,0 +1,187 @@
+#CODE;ENGLISH;;;;;;;;;;;;;x
+CB_NAME_BLOODY_VENGEANCE;Кровная месть;;;;;;;;;;;;;x
+CB_NAME_BLOODY_VENGEANCE_COURTIER;Кровная месть против придворного;;;;;;;;;;;;;x
+WAR_NAME_BLOODY_VENGEANCE;$CLAIMANT$ $ORDER$ Кровная месть против $DEFENDER$;;;;;;;;;;;;;x
+bloody_vengeance_desc;$CLAIMANT$ находится в смертельной вражде с $TARGET$ и может использовать этот повод к войне, чтобы отомстить.;;;;;;;;;;;;;x
+opinion_vengeance;Требование Мести;;;;;;;;;;;;;x
+saved_my_sorry_ass;Спасти меня от тюрьмы;;;;;;;;;;;;;x
+EVTDESCvengeance.1;За мою смерть должны отомстить мои потомки;;;;;;;;;;;;;x
+EVTDESCvengeance.2;Мое горло сжимается... Видения кинжалов в темноте... Но я знаю кто это...;;;;;;;;;;;;;x
+EVTOPTAvengeance.2;Это было... это было...;;;;;;;;;;;;;x
+opinion_killed_me;Убей меня;;;;;;;;;;;;;x
+opinion_killed_you;Этот человек умирает от моей руки;;;;;;;;;;;;;x
+EVTDESCvengeance.3;Воздух холодеет. Осень скоро начнется, но мне больше не о чем волноваться и беспокоиться.;;;;;;;;;;;;;x
+EVTOPTAvengeance.3;Ну, палач, делай свое дело;;;;;;;;;;;;;x
+opinion_blood_feud;Кровная месть;;;;;;;;;;;;;x
+opinion_blood_feud_truce;Последняя кровная месть;;;;;;;;;;;;;x
+opinion_showed_restraint;Проявление сдержанности;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.1;М[Root.Liege.GetOyaOy] [Root.Liege.GetLordLady], [Root.Liege.GetTitle] [Root.Liege.GetFirstName], собрал[Root.Liege.GetEndA] лордов королевства, для обсуждения вопросов празднования и питья. Обсуждения стали довольно напряженными, когда один из лордов, с которым у меня есть крайняя взаимная неприязнь, слушает мои речи с презрением и позорит меня своими завуалированными оскорблениями...;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.1;Я не буду стоять и слушать твои мерзкие речи, порождение шлюхи!;;;;;;;;;;;;;x
+TOOLTIPdynastic_rivalry.3;нужно ответить;;;;;;;;;;;;;x
+EVTOPTBdynastic_rivalry.1;Я не буду опускаться до такого уровня;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.2;Меня не волнует, что обо мне думают;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.2;Я посещаю собрание лордов, которое организовал[Root.Liege.GetEndA] [From.Liege.GetTitle] [From.Liege.GetFirstName], когда [From.GetFirstNameWithDynasty] выдвигает некоторые явно глупые идеи. Я довольно умело ставлю [From.GetHerHis] на место, оставив [From.GetHerHis] без ответа. Интересно, добавит ли [From.GetSheHe] это к своим обидам?;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.3;Я посещаю собрание лордов, которое организовал[Root.Liege.GetEndA] [From.Liege.GetTitle] [From.Liege.GetFirstName], когда [From.GetFirstNameWithDynasty] выдвигает некоторые явно глупые идеи. Я довольно умело ставлю [From.GetHerHis] на место, что взбесило [From.GetHerHis] так, что прилюдно обозывает меня - порождением шлюхи!;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.3;Оскорбление не останется без ответа!;;;;;;;;;;;;;x
+TOOLTIPdynastic_rivalry.4;Это очень некрасиво...;;;;;;;;;;;;;x
+EVTOPTBdynastic_rivalry.3;Я не желаю ничего плохого, честное слово!;;;;;;;;;;;;;x
+TOOLTIPdynastic_rivalry.6;заработаете уважение со стороны лордов;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.4;В ответ на ваши выпады [From.GetFirstNameWithDynasty] приходит в ярость. [From.GetSheHeCap] вытаскивает свой меч, что побудило к тому же действию вас, ваших и его людей. Ситуация быстро переросла в массовую драку, что привело к тому, что в итоге [Root.GetOnlyDynastyName] теперь в крови...;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.4;Дом [Root.GetOnlyDynastyName] не забудет об этом!;;;;;;;;;;;;;x
+TOOLTIPNEWBLOODFEUD;Дом [Root.GetOnlyDynastyName] отомстит дому [This.GetOnlyDynastyName]\n;;;;;;;;;;;;;x
+opinion_disrepected_hospitality;Неуважение Гостеприимства;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.5;В ответ на ваши выпады [FromFrom.GetFirstNameWithDynasty] приходит в ярость. [From.GetSheHeCap] вытаскивает свой меч, что побудило к тому же действию вас, ваших и его людей. Ситуация быстро переросла в массовую драку, что привело к тому, что в итоге [Root.GetOnlyDynastyName] теперь в крови...;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.6;В ответ на ваши выпады [From.GetFirstNameWithDynasty] отступает, показывая свою трусость. Это всегда было очевидно. Однако, Я не забуду свои обиды нанесенные мне ранее.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.6;Я знаю, что я лучший человек;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.7;На собрании лордов королевства, [From.GetTitle] [From.GetFirstName] и его люди из Дома [From.GetOnlyDynastyName] вступил в конфликт с одним из моих родственников, в результате приведшее к большому кровопролитию среди людей Дома [Root.GetOnlyDynastyName]. Наши дома теперь заклятые враги.;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.8;Это событие рождения вражды династий, пожалуйста, сообщите про ошибку, если вы видите это.;;;;;;;;;;;;;x
+VENGEANCEIMPRISONDYNASTY;Весь Дом [From.GetOnlyDynastyName] в городе [From.Capital.GetName] должен быть арестован\n;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.71;Новая кровная вражда между домом [From.GetOnlyDynastyName] и домом [FromFrom.GetOnlyDynastyName]. Начинают [From.GetTitledFirstName] и [FromFrom.GetTitledFirstName].;;;;;;;;;;;;;x
+blood_feud;В кровной вражде;;;;;;;;;;;;;x
+blood_feud_desc;Династия этого персонажа состоит в кровной вражде с другой династией;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.107;Отношения между моим Домом и Домом [From.GetOnlyDynastyName] из земли [From.PrimaryTitle.GetName] пребывают в напряжении многие годы. И теперь, как мне стало известно, [From.GetFirstNameWithDynasty] забредает мои земли...;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.107;Захватите в плен!;;;;;;;;;;;;;x
+TOOLTIPdynastic_rivalry.101;узнает о похищении;;;;;;;;;;;;;x
+EVTOPTBdynastic_rivalry.107;Оставить в покое, пусть идет куда хочет.;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.101;[From.GetTitle] [From.GetFirstNameWithDynasty] из земли [From.PrimaryTitle.GetName] давно считает меня своим врагом, из-за каких-то обид, которые мой Дом нанес [From.GetHerHis] Дому. Теперь этот дурак взял в плен представителя моего Дома, оказавшегося в [From.GetHerHis] землях!;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.101;Это возмутительно! Я требую их немедленного освобождения!;;;;;;;;;;;;;x
+TOOLTIPdynastic_rivalry.102;Отправить посланника с требованием освобождения пленника, угрожая местью в случае отказа;;;;;;;;;;;;;x
+EVTOPTBdynastic_rivalry.101;Мы не должны нагнетать ситуацию;;;;;;;;;;;;;x
+TOOLTIPdynastic_rivalry.104;Отправить ворона с посланием, чтобы [FromFrom.GetOnlyDynastyName] успокои[FromFrom.GetLasLsya] и просьбой относиться к пленному с достоинством;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.102;После того, как мы взяли в плен [From.GetHerHis] родственника, [From.GetTitle] [From.GetFirstName] оправил[From.GetEndA] возмутительного содержания послание. [From.GetSheHeCap] потребовал[From.GetEndA] освобождения пленного, угрожая местью. Я не могу просто выслушивать эти угрозы, и отправлю обратно в [From.Capital.GetName] голову посланника.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.102;Безусловно теперь будет война;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.103;Мой посланник вернулся из города [FromFrom.Capital.GetName]... правда, уже без головы. [FromFrom.GetTitle] [FromFrom.GetFirstNameWithDynasty] казнит моего родственника, грубо проигнорировав мое требование освободить другого родственника, тем самым заслужив гнев Дома [Root.GetOnlyDynastyName].;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.103;Эти выходки не останутся без ответа!;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.104;[Root.GetTitle] [Root.GetFirstName], до меня дошло известие, что вы взяли в плен одного из моих родственников. Я могу заверить вас, что это случилось ненамеренно, и задержание лишь может начать никому не нужное кровопролитие. Я хочу разрешить данную ситуацию мирным путем и прошу вас относиться к моему родственнику соответственно его статусу.\nВаш[From.GetEndA],\n[From.GetTitledFirstName] из Дома [From.GetOnlyDynastyName], [From.GetTitle] земли [From.PrimaryTitle.GetName];;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.104;Хорошо, я пока не причиню пленному никакого вреда;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.105;Вражда между вашим Домом и Домом [From.GetOnlyDynastyName] усилилась в результате захвата пленника и убийства посла. Как результат, армии обоих сторон готовы начать кровопролитие.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.105;[From.GetOnlyDynastyName] потерпит поражение;;;;;;;;;;;;;x
+show_me_blood_feuds;Кровная месть;;;;;;;;;;;;;x
+show_me_blood_feuds_desc;Попросить, чтобы [Root.GetMySpymasterName] показал[Root.GetEndA] вам список ваших кровных распрей, а также всех кровных распрей, происходящих в мире;;;;;;;;;;;;;x
+EVTDESCynastic_rivalry.999;[Root.GetMySpymasterName] приносит вам список всех ваших кровных врагов и всех кровных распрей в мире…;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.999;Дом не имеет кровной мести с Домом [Root.GetOnlyDynastyName];;;;;;;;;;;;;x
+EVTOPTBdynastic_rivalry.999;Эти дома являются злейшими врагами Дома [Root.GetOnlyDynastyName];;;;;;;;;;;;;x
+TOOLTIPLISTBLOODFEUD;Дом [This.GetOnlyDynastyName]\n;;;;;;;;;;;;;x
+EVTOPTCdynastic_rivalry.999;Эти дома враждуют;;;;;;;;;;;;;x
+TOOLTIPLISTBLOODFEUDWORLD;Дома [This.GetOnlyDynastyName] и [Prev.GetOnlyDynastyName]\n;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.9;[feud_reconcile_target.GetOnlyDynastyName] и [Root.GetOnlyDynastyName] - это черное пятно в истории нашего дома - вражда, в которой каждая сторона понесла потери. Давно пора сесть за стол переговоров и положить этому конец.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.9;Да, мы должны положить конец вражде. Я пошлю им подарок золотом;;;;;;;;;;;;;x
+TOOLTIPAdynastic_rivalry.9;[feud_reconcile_target.GetTitledFirstName] рассмотрит ваше предложение.\n;;;;;;;;;;;;;x
+EVTOPTBdynastic_rivalry.9;Мы заключим мир и скрепим его браком между Домами;;;;;;;;;;;;;x
+TOOLTIPBdynastic_rivalry.9;[feud_reconcile_target.GetTitledFirstName] будет рассматривать брак своего сына и [feud_reconcile_target.GetHerHis] дочери.\n;;;;;;;;;;;;;x
+EVTOPTCdynastic_rivalry.9;Никогда! Эти грязные [feud_reconcile_target.GetOnlyDynastyName] всегда будут нашим врагом!;;;;;;;;;;;;;x
+EVTDESCAdynastic_rivalry.10;[From.GetTitledFirstNameWithDynastyNoRegnal] отправляет посланника в город [Root.Capital.GetName] с золотом и просьбой прекратить кровавую вражду между нашими двумя Домами. Оба наших Дома за это время потеряли многое, но хотим ли мы их прощать?;;;;;;;;;;;;;x
+EVTDESCBdynastic_rivalry.10;[From.GetTitledFirstNameWithDynastyNoRegnal] отправляет посланника в город [Root.Capital.GetName] вместе со своим сыном. [From.GetTitledFirstNameNoRegnal] желает положить конец кровавой вражде между нашими двумя Домами, предлагая женитьбу его сына, это [feud_reconcile_starter_child.GetTitledFirstName], и моей дочери - [reconcile_target_child.GetTitledFirstName]. Оба наших Дома за это время потеряли многое, но хотим ли мы их прощать?;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.10;Никогда! Этот грязный [From.GetOnlyDynastyName] всегда будут нашим врагаом!;;;;;;;;;;;;;x
+EVTOPTBdynastic_rivalry.10;Убейте посланника и заберите золото!;;;;;;;;;;;;;x
+TOOLTIPAdynastic_rivalry.10;[From.GetOnlyDynastyName] будут разгневаны этим.\n;;;;;;;;;;;;;x
+EVTOPTCdynastic_rivalry.10;Пришла пора заключить мир, я соглашаюсь с условиями;;;;;;;;;;;;;x
+EVTOPTDdynastic_rivalry.10;Убейте посланника и возьмите сына в качестве заложника!;;;;;;;;;;;;;x
+EVTOPTEdynastic_rivalry.10;Пришла пора заключить мир, мы объединим наши дома браком;;;;;;;;;;;;;x
+TOOLTIP_blood_feud_end;Кровавая вражда между Домами [From.GetOnlyDynastyName] и [Root.GetOnlyDynastyName] завершилась.\n;;;;;;;;;;;;;x
+EVTDESCAdynastic_rivalry.11;Посланник, которого вы отправили, был убит, а деньги были украдены!;;;;;;;;;;;;;x
+EVTDESCBdynastic_rivalry.11;Посланник, которого вы послали, был бесчестно убит, а ваш сын был взят в заложники!;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.11;Эти мерзкие отбросы!;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.12;Посланник, которого вы отправили вернулся с хорошими вестями! [From.GetOnlyDynastyName] решили принять предложения мира.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.12;Наконец-то мы заживем мирно!;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.13;Кровавая вражда между Домами [FromFrom.GetGetOnlyDynastyName] и [Root.GetOnlyDynastyName] наконец подошла к концу! Теперь мы можем мирно сосуществовать друг с другом.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.13;Наконец она закончилась!;;;;;;;;;;;;;x
+TOOLTIPfeud_reconcile_reject;Дом [From.GetOnlyDynastyName] будет осведомлён о вашем отказе\n;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.14;Дом [From.GetOnlyDynastyName] отверг ваше предложение о мире между двумя вашими Домами и прекращении этой идущей войны… Хотят ли они продолжать ее? Нужно ли им время? Нужен ли им лучше указать ваше стремление к миру? Что бы это ни было, вас они решили не осведомлять.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.14;Им нужно время, старые раны долго заживают;;;;;;;;;;;;;x
+EVTOPTBdynastic_rivalry.14;Эти ублюдки хотят вражды? Я дам им такую, о которой они пожалеют.;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.1B;Похоже, что [blood_feud_target.GetTitledFirstNameNoRegnal] [blood_feud_target.GetOnlyDynastyName] собирается проехать мимо области [Root.Location.GetName] только с небольшим отрядом охраны, защищающим [blood_feud_target.GetHerHis]. Это дает прекрасную возможность для засады на н[blood_feud_target.GetHerHis] и заставить [blood_feud_target.GetHerHis] ответить за преступления [blood_feud_target.GetHerHis] дома!;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.1B;Да, я брошу всех свои людей в атаку на н[blood_feud_target.GetHerHis]!;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.3B;Я проезжаю через землю [Root.Location.GetName], думая о том, что этой охраны было достаточно для моей защиты, когда я попадаю в засаду человека, известного как [From.GetFirstNameWithDynasty]! [From.GetSheHeCap] говорит, что хочет отного - ответа за мои предполагаемые преступления, а [From.GetHerHis] люди намного превосходят нас. [From.GetSheHeCap] движется на меня и достает свой меч, требуя, чтобы я показал на что способен.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.3B;Я перебью вас всех!;;;;;;;;;;;;;x
+EVTOPTBdynastic_rivalry.3B;Я прошу у вас своего прощения, пожалуйста не трогайте меня!;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.4B;Вам удалось выследить персонажа [From.GetFirstNameWithDynasty] в земле [Root.Location.GetName] и встретиться. Вы достаете свой меч и призываете [From.GetHerHis] ответить за [From.GetHerHis] преступления против Дома [Root.GetOnlyDynastyName]. Несмотря на то, что вы превосходите численностью [From.GetHerHis] охрану, [From.GetSheHe] не желает сдаваться просто так. Все это приводит к кровавому столкновению, в котором вы убиваете или раните большую часть [From.GetHerHis] эскорта.;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.5B;Началась кровавая схватка, в которой [FromFrom.GetFirstNameWithDynasty] и [FromFrom.GetHerHis] люди сокрушают вашу охрану, убивая или раня их всех. Вы тоже ранены, но остаетесь в живых. Много крови Дома [Root.GetOnlyDynastyName] было пролито, и вражда с Домом [FromFrom.GetOnlyDynastyName] на долгие годы гарантирована.;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.6B;Вам удалось выследить [From.GetFirstNameWithDynasty] в [Root.Location.GetName] и встретиться. Вы достаете свой меч и призываете [From.GetHerHis] ответить за [From.GetHerHis] преступления против Дома [Root.GetOnlyDynastyName]. В ответ [From.GetSheHe] просит прощения и молит о пощаде, обещая ответить за преступления.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.6B;Хорошо,я не причиню вреда, пока…;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.200;Дома Блэквудов и Бракенов погрязли в жестокой вражде с Века Героев, когда оба дома правили как короли. Вражда продолжалась на протяжении многих лет, чему также поспособствовал переход Дома Бракенов в веру Семерых.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.200;Мы покажем эти Бракенам!;;;;;;;;;;;;;x
+EVTOPTBdynastic_rivalry.200;Блэквуды падут!;;;;;;;;;;;;;x
+EVTDESC_dynastic_rivalry.201;Дома Форрестеров и Уайтхиллов погрязли в жестокой вражде, вечно соперничая за рощи драгоценного Железноствола. Вражда продолжалась на протяжении многих лет, чему способствовал переход Дома Уайтхиллов в Веру Семерых.;;;;;;;;;;;;;x
+EVTOPTA_dynastic_rivalry.201;Мы покажем этим Форрестерам!;;;;;;;;;;;;;x
+EVTOPTB_dynastic_rivalry.201;Уайтхиллы никогда не получат наш Железноствол!;;;;;;;;;;;;;x
+EVTDESC_dynastic_rivalry.202;Тысячу лет назад, во время Войны Нимерии, после поражения короля Гаррисона Фаулера от Нимерии, Фаулеры присоединились к Мартеллам против Айронвудов. С тех пор два дома Каменного Пути и Принцева Перевала стали жестокими соперниками, погрязшими в жестокой вражде.;;;;;;;;;;;;;x
+EVTOPTA_dynastic_rivalry.202;Мы храним путь;;;;;;;;;;;;;x
+EVTOPTB_dynastic_rivalry.202;Воспарим!;;;;;;;;;;;;;x
+TOOLTIPbloody_vengeance_REALMSIZE_CLAIMS;[Root.GetTitledFirstNameWithDynastyNoRegnal] необходимо иметь права на земли персонажа [From.GetTitledFirstNameWithDynastyNoRegnal] (Поскольку в более чем 2 раза сильнее, чем  [From.GetTitledFirstNameNoRegnal]);;;;;;;;;;;;;x
+TOOLTIPbloody_vengeanceLIFETIME;[Root.GetTitledFirstNameWithDynastyNoRegnal] НЕ выбрал[Root.GetEndA] Дом [From.GetOnlyDynastyName] для отмщения войной в качестве цели в [Root.GetHerHis] жизни;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.203;В Веке Героев дома Мандерли и Пиков противостояли друг другу. Короли Хайгардена, Гарденеры, смогли остановить прямую войну, но старые обиды все еще тлеют.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.203;Мы покажем этим Пикам!;;;;;;;;;;;;;x
+EVTOPTBdynastic_rivalry.203;Мандерли падут!;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.20;По прибытии в замок персонажа [blood_feud_brawl_host.GetTitledFirstNameNoRegnal] мне было противно видеть, что присутствует свита Дома [blood_feud_brawl_target.GetOnlyDynastyName] во главе с человеком, известным как [blood_feud_brawl_target.GetTitledFirstNameWithDynastyNoRegnal]. Напряженность высока, и насилие угрожает произойти между нашими двумя группами.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.20;Оскорбить проклятый Дом [blood_feud_brawl_target.GetOnlyDynastyName]!;;;;;;;;;;;;;x
+TOOLTIPdynastic_rivalry.22;Вы оскорбляете персонажа [blood_feud_brawl_target.GetTitledFirstNameWithDynastyNoRegnal] и приказываете своим людям атаковать вражескую сторону.;;;;;;;;;;;;;x
+EVTOPTBdynastic_rivalry.20;Не подходите к ним;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.21;По прибытии в замок персонажа [blood_feud_brawl_host.GetTitledFirstNameNoRegnal] мне было противно видеть, что также присутствует свита Дома [From.GetOnlyDynastyName] во главе с персонажем [From.GetTitledFirstNameWithDynastyNoRegnal]. Напряжение высоко, но [From.GetTitledFirstNameNoRegnal] пытается избежать конфронтации.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.21;[From.GetHerHisCap] простое присутствие меня оскорбляет!;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.22;По прибытии в замок персонажа [blood_feud_brawl_host.GetTitledFirstNameNoRegnal] мне было противно видеть, что также присутствует свита Дома [From.GetOnlyDynastyName] во главе с персонажем [From.GetTitledFirstNameWithDynastyNoRegnal]. Напряженность высока, и [From.GetTitledFirstNameNoRegnal] начинает гонять ваших людей и оскорблять вашу честь.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.22;Вот и все, мы покажем Дому [From.GetOnlyDynastyName] свою силу!;;;;;;;;;;;;;x
+TOOLTIPdynastic_rivalry.23;Вспыхивает насилие...;;;;;;;;;;;;;x
+EVTOPTBdynastic_rivalry.22;Я выше этих оскорблений;;;;;;;;;;;;;x
+TOOLTIPdynastic_rivalry.25;Вы приказываете своим людям проявлять сдержанность и воздерживаться от насилия;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.23;[From.GetTitledFirstNameWithDynastyNoRegnal] отвечает на оскорбления, начинается драка между людьми Домов [From.GetOnlyDynastyName] и [Root.GetOnlyDynastyName]!;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.23;Возьми это, [GetRootFromInsult] [From.GetOnlyDynastyName]!;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.24;Вы ответили на оскорбления персонажа [From.GetTitledFirstNameWithDynastyNoRegnal], начав драку между людьми Домов [From.GetOnlyDynastyName] и [Root.GetOnlyDynastyName]!;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.24;Взбейте их! Моя честь требует этого!;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.25;Несмотря на провокации вас и ваших людей, [From.GetTitledFirstNameWithDynastyNoRegnal] демонстрирует сдержанность, а люди [From.GetHerHis] не поднимаются до угроз насилия.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.25;[GetRootFromInsult] [From.GetOnlyDynastyName] явно демонстрирует слабость!;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.26;Во время участия в мероприятии между группой Домов [From.GetOnlyDynastyName] и [FromFrom.GetOnlyDynastyName] произошло насилие! Ссора, в которой [From.GetRootRelation] [From.GetTitledFirstNameNoRegnal] оказывается одним из зачинщиков, потрясла всех присутствующих.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.26;[FromFrom.GetOnlyDynastyName], сволочь!;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.27;Будучи там и принимая гостей, между группой Домов [From.GetOnlyDynastyName] и [FromFrom.GetOnlyDynastyName] произошло насилие! Эта драка потрясла всех присутствующих и серьезно оскорбила мое гостеприимство.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.27;Это неприемлемо!;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.30;Армия в настоящее время находится в лагере в области [Root.Location.GetName], и, несмотря на номинальное союзничество, между людьми, которых возглавляет [enemy_vassal.GetTitledFirstNameWithDynastyNoRegnal] и моими людьми из Дома [Root.GetOnlyDynastyName] существует напряженность. Кровь между домами грозит разразиться насилием!;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.30;Мы не можем проявить слабость! Ободряйте их!;;;;;;;;;;;;;x
+opinion_undisciplined;Недисциплинированность;;;;;;;;;;;;;x
+EVTOPTBdynastic_rivalry.30;Приказать людям проявить сдержанность;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.31;Армия в настоящее время находится в лагере в области [Root.Location.GetName], и, несмотря на номинальное союзничество, между людьми, которых возглавляет [From.GetTitledFirstNameWithDynastyNoRegnal] и моими людьми из Дома [Root.GetOnlyDynastyName] существует напряженность. Кровь между домами грозит разразиться насилием, а [From.GetTitledFirstNameNoRegnal] ничего не делает, чтобы всё остановить!;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.31;Если они хотят драки, то получат её!;;;;;;;;;;;;;x
+EVTOPTBdynastic_rivalry.31;Прикажите людям сохранить мир;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.32;Когда бои начинают вспыхивать между людьми Домов [Root.GetOnlyDynastyName] и [From.GetOnlyDynastyName], ни вы, ни [From.GetTitledFirstNameWithDynastyNoRegnal] ничего не сделали, чтобы остановить их. Насилие вскоре вышло из-под контроля.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.32;Быть по сему;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.33;Армия в настоящее время находится в лагере в земле [Root.Location.GetName], и, несмотря на номинальное союзничество, между людьми, которых возглавляют [From.GetTitledFirstNameWithDynastyNoRegnal] и [FromFrom.GetTitledFirstNameWithDynastyNoRegnal], существует напряженность. Кровь между домами разразилась в прямом насилии в лагере!;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.33;Это позор, ты не можешь соблюдать дисциплину?!;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.34;Кажется, [From.GetTitledFirstNameWithDynastyNoRegnal] активно отговаривает своих людей от конфронтации с вашими людьми. Сравнительно плохая дисциплина ваших собственных людей плохо отразилась на вас.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.34;Типичное двуличие Дома [From.GetOnlyDynastyName]!;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.35;Армия в настоящее время находится в лагере в земле [Root.Location.GetName], и, несмотря на номинальное союзничество, между людьми, которых возглавляют [From.GetTitledFirstNameWithDynastyNoRegnal] и [FromFrom.GetTitledFirstNameWithDynastyNoRegnal], существует напряженность. К счастью, кровь между домами не разразилась насилием, [From.GetTitledFirstNameWithDynastyNoRegnal] сдерживается.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.35;Почему [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] не показывает подобную дисциплину?;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.40;Дом [enemy_councillor.GetOnlyDynastyName] представлен вместе со мной в совете нашего господина, известного как [Root.Liege.GetTitledFirstNameNoRegnal], и часто мы горячо спорим на собраниях. [enemy_councillor.GetTitledFirstNameWithDynastyNoRegnal] раздражает меня больше, чем обычно, на сегодняшней встрече, и я не думаю, что смогу сдержать себя ...;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.40;Высказать сердитую тираду!;;;;;;;;;;;;;x
+EVTOPTBdynastic_rivalry.40;Сохранять спокойствие;;;;;;;;;;;;;x
+EVTOPTCdynastic_rivalry.40;Умело опровергнуть и приуменьшить [enemy_councillor.GetHerHis] аргументы;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.41;На собрании совета, который собрал [Root.Liege.GetTitledFirstNameNoRegnal], я говорю много обоснованных аргументов, которые задевают Дом [From.GetOnlyDynastyName] и [From.GetHerHis] место. Я явно метко [From.GetHerHis] задел, потому что [From.GetTitledFirstNameNoRegnal] выпускает яростную тираду!;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.41;Я не буду стоять и позволять оскорблять меня!;;;;;;;;;;;;;x
+EVTOPTBdynastic_rivalry.41;Сдержать ярость, я не обесчещу себя перед господином;;;;;;;;;;;;;x
+EVTOPTCdynastic_rivalry.41;Я знаю остроумный ответ;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.42;[From.GetTitledFirstNameWithDynastyNoRegnal] не пытался защитить себя и просто сидит невозмутимо.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.42;Хорошо, молчи, [GetRootFromInsult] [From.GetOnlyDynastyName]!;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.43;Пока заседание Совета продолжалось, [From.GetTitledFirstNameWithDynastyNoRegnal] просто ухмыляется, когда вы кричали и бушевали на н[FromGetHerHis]. Когда вы, наконец, остановились, [From.GetSheHe] делает досадно умное замечание, которое заставило вас выглядеть глупо.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.43;Я не забуду это, [From.GetOnlyDynastyName]!;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.44;[From.GetTitledFirstNameWithDynastyNoRegnal] и [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] попадают в горячие споры на заседаниях Совета, основной причиной которых является кровная вражда между их домами. Сегодня их конфликт более ожесточён, чем обычно, они яростно кричат друг на друга и выглядят так, как будто они могут перейте к драке!;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.44;Вздох. Что я могу сделать?;;;;;;;;;;;;;x
+EVTOPTBdynastic_rivalry.44;Покиньте комнату Совета, вы оба!;;;;;;;;;;;;;x
+EVTOPTCdynastic_rivalry.41;Успокоить их обоих словами;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.45;В ярости от ваших злостных доводов, [Root.Liege.GetTitledFirstNameNoRegnal] выгоняет вас и вашего коллегу-советника из собрания совета!;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.45;Как унизительно;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.46;[From.GetTitledFirstNameWithDynastyNoRegnal] и [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] попадают в горячие споры на заседаниях Совета, основной причиной которых является кровная вражда между их домами. Сегодня [FromFrom.GetTitledFirstNameNoRegnal] выскаывает сердитую тираду, но [From.GetTitledFirstNameNoRegnal] просто сидит пассивно и молчит.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.46;Какая сдержанность;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.47;[From.GetTitledFirstNameWithDynastyNoRegnal] и [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] попадают в горячие споры на заседаниях Совета, основной причиной которых является кровная вражда между их домами. Сегодня [From.GetTitledFirstNameNoRegnal] высказывает сердитую тираду, в конце которой [FromFrom.GetTitledFirstNameNoRegnal] спокойно и остроумно вставляет реплику, которая рассмешила Совет.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.47;К[From.GetTitledFirstNameNoRegnal] снова унижается;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.48;Вы были на грани драки, когда [Root.Liege.GetTitledFirstNameNoRegnal] вмешивается и успокаивает вас словами.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.48;Извиняюсь, [Root.Liege.PrimaryTitle.GetFOA];;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.50;Эти коварные из Дома [enemy_feud_target.GetOnlyDynastyName] ничтожны, а их земли [enemy_feud_province.GetName] уязвимы. Возможно, мы могли бы отправить туда группу наемных бандитов, чтобы преследовать крестьян и сжечь их поля?;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.50;Да, они узнают справедливость Дома [Root.GetOnlyDynastyName]!;;;;;;;;;;;;;x
+harrassed_peasants;Преследуемые крестьяне;;;;;;;;;;;;;x
+EVTOPTBdynastic_rivalry.50;Нет, наша вражда не вина простолюдинов;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.51;[GetRootFromInsult] [From.GetOnlyDynastyName], [From.GetTitledFirstNameNoRegnal], отправляет вооруженных бандитов на мою землю [enemy_feud_province.GetName]! Там они сожгли урожай, разрушили здания и преследовали крестьян!;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.51;Дом [Root.GetOnlyDynastyName] ответит за это!;;;;;;;;;;;;;x
+EVTOPTBdynastic_rivalry.51;Это возмутительно!;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.52;В ответ на ваши притеснения, [From.GetTitledFirstNameWithDynastyNoRegnal] отправляет вооруженных бандитов в землю [enemy_feud_province_B.GetName], чтобы сжечь и разграбить наши земли!;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.52;Не думайте, что это остановится здесь [GetRootFromInsult] [From.GetOnlyDynastyName]!;;;;;;;;;;;;;x
+EVTDESCdynastic_rivalry.204;Во время Дорнийских войн лорд Виль победил войска Ориса Баратеона, когда они попытались атаковать Костяной путь. Лорд Баратеон и его люди были выкуплены. Однако они были освобождены только после того, как им отсекли правую руку, дабы они не могли снова поднять меч против Дорна. Орис поклялся отомстить дому Вилей, и все ещё помнят печально известные деяния Вилей во время этой войны в Фонтоне и Старом Дубе, а также в Штормовой Пределе. Дом Вилей ведет вражду с Домом Баратеонов, начиная с того момента, когда Орис отсёк руку Уолтеру Вилю в отместку, затем другую руку и обе ноги, которые он назвал наценкой.;;;;;;;;;;;;;x
+EVTOPTAdynastic_rivalry.204;То, что мы сделали, было в защиту Дорна!;;;;;;;;;;;;;x
+EVTOPTBdynastic_rivalry.204;Мы не забудем, что сделали Вили!;;;;;;;;;;;;;x

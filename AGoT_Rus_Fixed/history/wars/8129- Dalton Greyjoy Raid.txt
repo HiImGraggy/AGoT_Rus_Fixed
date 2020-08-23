@@ -1,0 +1,20 @@
+name = "Рейд Красного Кракена"
+
+casus_belli={
+	casus_belli=invasion
+	actor=20107
+	recipient=89190
+	landed_title=k_westerlands
+	date=8129.6.8
+}
+
+8129.6.8 = {
+	add_defender = 89190 #Loreon Lannister
+	add_attacker = 20107 #Dalton Greyjoy	
+	
+}
+
+8133.12.1 = {
+	rem_defender = 89190 #Loreon Lannister
+	rem_attacker = 20107 #Dalton Greyjoy	
+}                                                                                                                                                                                                                                                                                                               

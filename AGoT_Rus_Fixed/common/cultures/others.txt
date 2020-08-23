@@ -1,0 +1,69 @@
+winter_group = {
+	graphical_cultures = { whitewalkergfx }
+
+	white_walker = {
+		graphical_cultures = { whitewalkergfx }
+		
+		used_for_random = no
+		allow_in_ruler_designer = no
+		alternate_start = { 
+			OR = {
+				has_alternate_start_parameter = { key = special_culture value = mythological } 
+				has_alternate_start_parameter = { key = special_culture value = all } 
+			}	
+		}
+		
+		color = { 0.8 0.8 0.8 }
+		
+      male_names = {
+         »ные 
+      }
+      female_names = {
+         »ные
+      }
+		
+		from_dynasty_prefix = "из "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 25
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 5
+		mat_grm_name_chance = 20
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+
+	winter_wasteland = {
+		graphical_cultures = { wintergfx } # portraits
+		
+		used_for_random = no
+		allow_in_ruler_designer = no
+		alternate_start = { always = no }
+		
+		color = { 1 1 1 }
+		
+		male_names = {
+			" "
+		}
+		female_names = {
+			" "
+		}
+		from_dynasty_prefix = "из "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+}

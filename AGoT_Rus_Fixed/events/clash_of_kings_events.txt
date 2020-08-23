@@ -1,0 +1,8279 @@
+# Clash of Kings Events
+
+namespace = clash_of_kings
+
+###Dany Quest clash_of_kings.5099
+
+####Initialisation
+#Robb Stark
+long_character_event = {
+	id = clash_of_kings.500
+	desc = "EVTDESCclash_of_kings.500"
+	
+	hide_from = yes
+
+	is_triggered_only = yes
+	
+	trigger = { has_game_rule = { name = shattered_realms value = off } }
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.500" # I made a promise to the Freys	
+		spouse = { 
+			tooltip = { show_portrait = yes } 
+			ROOT = {
+				if = {
+					limit = { ai = no }
+					chronicle = {
+						entry = CHRONICLE_ACOK_ROBB_FREY_MARRIAGE
+						portrait = [Prev.GetID]
+					}	
+				}
+			}
+		}
+		d_thecrossing = { holder_scope = { tooltip = { show_portrait = yes } } }
+		prestige = 50
+		c_3130 = { #Olyvar frey
+			move_character = ROOT
+			give_minor_title = title_bodyguard
+			add_friend = ROOT 
+		}
+		c_8787878 = { #Elmar Frey
+			set_character_flag=promised_arya
+		}
+		custom_tooltip = {
+			text = arya_elmar
+		}
+	}
+	option = {
+		name = "EVTOPTBclash_of_kings.500" # I must preserve Jeyne's honour
+		remove_spouse = spouse
+		d_the_crag = {
+			holder_scope = {
+				random_child = {
+					limit = { character = 2199 }
+					ROOT = { 
+						add_spouse = PREV 
+						add_lover = PREV
+						if = {
+							limit = { ai = no }
+							chronicle = {
+								entry = CHRONICLE_ACOK_ROBB_JEYNE_MARRIAGE
+								portrait = [Prev.GetID]
+							}	
+						}
+					}
+				}
+				prisoner = no
+				hidden_tooltip = {
+					set_character_flag = neutral
+					clr_character_flag = supporting_king
+					clr_character_flag = captured_in_battle
+					set_defacto_liege = THIS
+					any_demesne_title = {
+						limit = { 
+							OR = {
+								tier = COUNT
+								tier = DUKE
+							}
+						}				
+						set_variable = { which = "de_facto_kingdom" value = 9 } #westerlands
+					}	
+				}
+				opinion = { who = ROOT modifier = opinion_loyal_servant }
+			}
+		}
+		prestige = -50
+		piety = 30
+		d_thecrossing = { 
+			holder_scope = {
+				custom_tooltip = { 
+					text = TOOLTIPFREYSANGRY
+					hidden_tooltip = {
+						opinion = {
+							who = ROOT
+							modifier = opinion_betrothal_broken
+							multiplier = 3
+						}
+						liege = {
+							reverse_opinion = {
+								who = PREV
+								modifier = opinion_angry
+								years = 5
+							}
+							reverse_opinion = {
+								who = PREV
+								modifier = opinion_angry
+								years = 2
+							}
+						}
+						set_defacto_liege = THIS
+						set_character_flag = neutral
+						any_demesne_title = {
+							limit = { 
+								OR = {
+									tier = COUNT
+									tier = DUKE
+								}
+							}				
+							set_variable = { which = "de_facto_kingdom" value = 3 } 
+						}
+						clr_character_flag = against_king
+					}
+				}	
+			}
+		}
+		c_4199 = { #Raynald Westerling
+			move_character = ROOT
+			give_minor_title = title_bodyguard
+			add_friend = ROOT 
+		}
+	}
+	option = {
+		name = "EVTOPTCclash_of_kings.500" # As a King I need strong alliances (a.k.a player choice)
+		remove_spouse = spouse
+		prestige = -50
+		d_thecrossing = { 
+			holder_scope = {
+				custom_tooltip = { 
+					text = TOOLTIPFREYSANGRY
+					hidden_tooltip = {
+						opinion = {
+							who = ROOT
+							modifier = opinion_betrothal_broken
+							multiplier = 3
+						}
+						liege = {
+							reverse_opinion = {
+								who = PREV
+								modifier = opinion_angry
+								years = 5
+							}
+							reverse_opinion = {
+								who = PREV
+								modifier = opinion_angry
+								years = 2
+							}
+						}
+						set_defacto_liege = THIS
+						set_character_flag = neutral
+						any_demesne_title = {
+							limit = { 
+								OR = {
+									tier = COUNT
+									tier = DUKE
+								}
+							}				
+							set_variable = { which = "de_facto_kingdom" value = 3 } 
+						}
+						clr_character_flag = against_king 
+						ROOT = {
+							if = {
+								limit = { ai = no }
+								chronicle = {
+									entry = CHRONICLE_ACOK_ROBB_BREAK_BETROTHAL
+									portrait = [Prev.GetID]
+								}	
+							}
+						}
+					}
+				}	
+			}
+		}
+	}
+
+}
+#King Joffrey/Tommen
+character_event = {
+	id = clash_of_kings.501
+	
+	desc = {
+		text = "EVTDESCclash_of_kings.501"
+		trigger = { c_9316 = { character = ROOT } }
+	}	
+	desc = {
+		text = "EVTDESCclash_of_kings.501B"
+		trigger = { c_7316 = { character = ROOT } }
+	}
+	
+	hide_from = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.501" #Yes
+		trigger = { c_9316 = { character = ROOT } }
+		if = {
+			limit = { ai = no }
+			c_winterfell = { 
+				holder_scope = {
+					father_even_if_dead = {
+						ROOT = {
+							chronicle = {
+								entry = CHRONICLE_ACOK_JOFFREY
+								portrait = [Prev.GetID]
+							}
+						}
+					}	
+				}
+			}	
+		}
+		e_rebels = {
+			persistent_event_target:chronicle_player = {
+				if = {
+					limit = { 
+						NOT = { character = ROOT }
+						NOT = { higher_tier_than = DUKE }
+						OR = {
+							any_claim = { title = e_iron_throne }
+							capital_scope = { region = world_westeros }
+						}	
+						NOT = { trait = wildling }
+					}
+					chronicle = {
+						entry = CHRONICLE_ACOK
+						portrait = [Root.GetID]
+					}	
+				}
+			}
+		}	
+	}
+	option = {
+		name = "EVTOPTBclash_of_kings.501" #Yes
+		trigger = { c_7316 = { character = ROOT } }
+		dynasty = 190
+		any_sibling_even_if_dead = {
+			limit = { dynasty = 190 }
+			dynasty = 190
+		}
+	}
+	option = {
+		name = "EVTOPTCclash_of_kings.501" #Baratheon
+		trigger = { ai = no }
+		dynasty = 317
+		any_sibling_even_if_dead = {
+			limit = { dynasty = 190 }
+			dynasty = 317
+		}
+	}
+	option = {
+		name = "EVTOPTDclash_of_kings.501" #Baratheon-Lannister
+		trigger = { 
+			ai = no 
+			k_westerlands = { holder_scope = { ai = yes } }
+			mother_even_if_dead = { NOT = { ai = no } }
+		}
+		dynasty = 1575
+		any_sibling_even_if_dead = {
+			limit = { dynasty = 190 }
+			dynasty = 1575
+		}
+		set_dynasty_flag = has_dynamic_coa
+		character_event = { id = dynamic_coa.1 }
+		mother_even_if_dead = { #needs common ancestor 
+			dynasty = 1575 
+			character_event = { id = dynamic_coa.1 }
+		} 
+	}
+}
+
+#Arryns
+character_event = {
+	id = clash_of_kings.502
+	desc = "EVTDESCclash_of_kings.502"
+	
+	hide_from = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.502" #Yes
+		if = {
+			limit = { ai = no }
+			father_even_if_dead = {
+				ROOT = {
+					chronicle = {
+						entry = CHRONICLE_ACOK_ARRYN
+						portrait = [Prev.GetID]
+					}
+				}
+			}		
+		}
+	}
+
+}
+#Tywin's opinions
+character_event = {
+	id = clash_of_kings.503
+	desc = "EVTDESCclash_of_kings.503"
+	
+	hide_from = yes
+
+	is_triggered_only = yes
+	
+	trigger = { has_game_rule = { name = shattered_realms value = off } }
+	
+	immediate = {
+		set_defacto_liege = ROOT
+	}
+
+	option = {
+		name = "EVTOPTAclash_of_kings.503" #Yes
+		if = {
+			limit = { ai = no }
+			e_iron_throne = { 
+				holder_scope = {
+					ROOT = {
+						chronicle = {
+							entry = CHRONICLE_ACOK_TYWIN
+							portrait = [Prev.GetID]
+						}
+					}
+				}
+			}	
+		}
+	}
+}
+#Doran's opinions
+character_event = {
+	id = clash_of_kings.504
+	desc = "EVTDESCclash_of_kings.504"
+	
+	hide_from = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_defacto_liege = ROOT
+	}
+
+	option = {
+		name = "EVTOPTAclash_of_kings.504" #Yes	
+		if = {
+			limit = { ai = no }
+			e_iron_throne = { 
+				holder_scope = {
+					ROOT = {
+						chronicle = {
+							entry = CHRONICLE_ACOK_DORAN
+							portrait = [Prev.GetID]
+						}
+					}
+				}
+			}	
+		}
+	}
+
+}
+#Balon greyjoy message
+character_event = {
+	id = clash_of_kings.505
+	desc = "EVTDESCclash_of_kings.505"
+	
+	hide_from = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_landed_title = e_iron_isles }
+		has_game_rule = { name = shattered_realms value = off }
+	}
+	
+	immediate = {
+		if = {
+			limit = { ai = no }
+			c_winterfell = { 
+				holder_scope = {
+					ROOT = {
+						chronicle = {
+							entry = CHRONICLE_ACOK_BALON
+							portrait = [Prev.GetID]
+						}
+					}
+				}
+			}	
+		}
+		c_2107 = { narrative_event = { id = clash_of_kings.90 days = 280 } }
+	}
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.505" #I shall pay the Iron price for my crown !
+		ai_chance = { factor = 90 }
+		set_character_flag = changing_westerosi_kingdom_tier #to stop other maintenance triggering
+		e_iron_isles = {
+			gain_title = ROOT
+			hidden_tooltip = { 
+				copy_title_laws = k_iron_isles
+				add_law = succ_kingsmoot_elective
+			}
+		}
+		recalc_succession = yes
+		#set_character_flag = primo_on_death
+		custom_tooltip = { text = TOOLTIPcreate_e_iron_isles }
+		hidden_tooltip = {
+			k_iron_isles = {
+				destroy_landed_title = THIS
+				de_jure_liege = e_iron_isles
+			}	
+			clr_character_flag = changing_westerosi_kingdom_tier
+			any_demesne_title = { 
+				limit = { 
+					NOT = { tier = BARON } 
+					NOT = { tier = EMPEROR }
+				}
+				set_variable = { which = "de_facto_empire" value = 3 } 
+			}
+			any_realm_lord = { 
+				any_demesne_title = { 
+					limit = { 
+						NOT = { tier = BARON } 
+						NOT = { tier = EMPEROR }
+					}
+					set_variable = { which = "de_facto_empire" value = 3 } 
+				}
+			}
+		}	
+		e_north = {
+			reverse_unsafe_war = {
+				target = ROOT
+				casus_belli = invasion_ambition
+			}
+		}
+		any_child = {
+			limit = { is_female = no }
+			tooltip = { show_portrait = yes }
+			hidden_tooltip = { 
+				set_character_flag = theon_greyjoy
+				ROOT = {
+					reverse_banish = PREV
+				}	
+				character_event = { id = clash_of_kings.10 }
+			}
+		}
+		hidden_tooltip = {
+			any_vassal = {
+				opinion = {
+					who = ROOT
+					modifier = opinion_impressed
+					years = 4
+				}
+				opinion = {
+					who = ROOT
+					modifier = opinion_impressed
+					years = 8
+				}
+			}
+			e_iron_throne = {
+				holder_scope = {
+					opinion = {
+						who = ROOT
+						modifier = opinion_traitor
+					}
+				}
+			}
+			clr_character_flag = ironborn_war_vs_north
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTBclash_of_kings.505" #Seems like a fair offer
+		ai_chance = { factor = 10 }
+		set_character_flag = changing_westerosi_kingdom_tier #to stop other maintenance triggering
+		e_iron_isles = {
+			gain_title = ROOT
+			hidden_tooltip = { 
+				copy_title_laws = k_iron_isles
+				add_law = succ_kingsmoot_elective
+			}
+		}
+		recalc_succession = yes
+		#set_character_flag = primo_on_death
+		custom_tooltip = { text = TOOLTIPcreate_e_iron_isles }
+		hidden_tooltip = {
+			k_iron_isles = {
+				destroy_landed_title = THIS
+				de_jure_liege = e_iron_isles
+			}	
+			clr_character_flag = changing_westerosi_kingdom_tier
+			any_demesne_title = { 
+				limit = { 
+					NOT = { tier = BARON } 
+					NOT = { tier = EMPEROR }
+				}
+				set_variable = { which = "de_facto_empire" value = 3 } 
+			}
+			any_realm_lord = { 
+				any_demesne_title = { 
+					limit = { 
+						NOT = { tier = BARON } 
+						NOT = { tier = EMPEROR }
+					}
+					set_variable = { which = "de_facto_empire" value = 3 } 
+				}
+			}
+		}	
+		#set_character_flag = against_king
+		clr_character_flag = neutral
+		clr_character_flag = ironborn_war_vs_north
+		k_westerlands = {
+			reverse_unsafe_war = {
+				target = ROOT
+				casus_belli = invasion_ambition
+			}
+		}
+		e_north = {
+			holder_scope = {
+				# ROOT = {
+					# join_attacker_wars = PREV
+				# }
+				opinion = {
+					who = ROOT
+					modifier = opinion_joined_cause
+				}
+			}
+		}
+		e_iron_throne = {
+			holder_scope = { 
+				opinion = {
+					modifier = opinion_joined_rebellion
+					who = ROOT
+					years = 5
+				}
+				hidden_tooltip = { character_event = { id = mega_wars.32 } }
+			}
+		}
+		hidden_tooltip = {
+			# e_north = {
+				# holder_scope = { 
+					# reverse_opinion = {
+						# modifier = opinion_with_rebel_leader
+						# who = ROOT
+						# years = 100
+					# }
+					# letter_event = { id = clash_of_kings.14 } 
+				# }
+			# }
+			any_child = {
+				limit = { is_female = no }
+				character_event = { id = clash_of_kings.9 }
+			}
+		}
+	}
+
+}
+#Mace Tyrell message
+character_event = {
+	id = clash_of_kings.506
+	desc = "EVTDESCclash_of_kings.506"
+	
+	hide_from = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_defacto_liege = ROOT
+	}
+
+	option = {
+		name = "EVTOPTAclash_of_kings.506" #Yes	
+		set_character_flag = ACOK_2_11_start	#Event starts only if 2.11 starting date chosen
+		if = {
+			limit = { ai = no }
+			k_stormlands = { 
+				holder_scope = {
+					ROOT = {
+						chronicle = {
+							entry = CHRONICLE_ACOK_MACE
+							portrait = [Prev.GetID]
+						}
+					}
+				}
+			}	
+		}
+	}
+
+}
+
+#Hoster Tully
+character_event = {
+	id = clash_of_kings.507
+	desc = "EVTDESCclash_of_kings.507"
+	
+	hide_from = yes
+
+	is_triggered_only = yes
+	
+	# immediate = {
+		# set_defacto_liege = ROOT
+	# }
+
+	option = {
+		name = "EVTOPTAclash_of_kings.507" #Yes	
+		if = {
+			limit = { ai = no }
+			c_winterfell = { 
+				holder_scope = {
+					ROOT = {
+						chronicle = {
+							entry = CHRONICLE_ACOK_TULLY
+							portrait = [Prev.GetID]
+						}
+					}
+				}
+			}	
+		}
+	}
+}
+
+#Renly
+character_event = {
+	id = clash_of_kings.508
+	desc = "EVTDESCclash_of_kings.508"
+	
+	hide_from = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_defacto_liege = ROOT
+	}
+
+	option = {
+		name = "EVTOPTAclash_of_kings.508" #Yes	
+		if = {
+			limit = { ai = no }
+			e_iron_throne = { 
+				holder_scope = {
+					ROOT = {
+						chronicle = {
+							entry = CHRONICLE_ACOK_RENLY
+							portrait = [Prev.GetID]
+						}
+					}
+				}
+			}	
+		}		
+	}
+}
+###Scenario Events###
+# #Stannis-renly War vanilla bug workaround
+# character_event = {
+	# id = clash_of_kings.199
+
+	# is_triggered_only = yes
+	# hide_window = yes
+	
+	# trigger = {
+		# character = 4317
+	# }
+	
+	# immediate = {
+		# set_character_flag = war_for_the_stormlands
+		# prestige = 50		
+	# }
+	
+	# option = {
+		# name = "OK"
+		# k_stormlands = {
+			# reverse_war = {
+				# target = ROOT
+				# casus_belli = claim_stormlands_ACOK
+			# }
+		# }
+		# #stannis' allies
+		# c_brightwater = { holder_scope = { character_event = { id = clash_of_kings.198 } } } #Florent
+		# c_chyttering_brook = { holder_scope = { character_event = { id = clash_of_kings.198 } } } #Chyttering
+		# c_woodmere = { holder_scope = { character_event = { id = clash_of_kings.198 } } } #Follard
+		# c_farring_cross = { holder_scope = { character_event = { id = clash_of_kings.198 } } } #Farring
+		# c_stonedance = { holder_scope = { character_event = { id = clash_of_kings.198 } } } #Massey
+		# c_darkden = { holder_scope = { character_event = { id = clash_of_kings.198 } } } # Salladhor Saan
+		
+		# #renly's allies
+		# k_reach = { holder_scope = { character_event = { id = clash_of_kings.197 } } } #Tyrell
+	# }
+# }
+# character_event = { #stannis' allies
+	# id = clash_of_kings.198
+
+	# is_triggered_only = yes
+	# hide_window = yes
+	
+	# trigger = {
+		# FROM = { character = 4317 }
+	# }
+	
+	# immediate = {
+		# set_defacto_liege = THIS
+		# join_attacker_wars = FROM
+	# }
+	
+	# option = {
+		# name = "OK"
+	# }
+# }
+# character_event = { #renly's allies
+	# id = clash_of_kings.197
+
+	# is_triggered_only = yes
+	# hide_window = yes
+	
+	# trigger = {
+		# FROM = { character = 4317 }
+	# }
+	
+	# immediate = {
+		# k_stormlands = { holder_scope = { ROOT = { join_defender_wars = PREV } } }	
+	# }
+	
+	# option = {
+		# name = "OK"
+	# }
+# }
+#Stannis parleys with Renly
+narrative_event = {
+	id = clash_of_kings.1
+	desc = "EVTDESCclash_of_kings.1"
+	title = "EVTTITLEclash_of_kings.1"
+	picture = GFX_evt_parley_storms_end
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_sibling = {
+			character = 5317
+			war_with = ROOT
+		}
+		has_game_rule = { name = shattered_realms value = off }
+	}
+	
+	immediate = {
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_ACOK_STANNIS
+				portrait = [Root.GetID]
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.1" #Follow Renly
+		ai_chance = { factor = 2 }
+		set_character_flag = ACOK_helped_brother
+		c_5317 = { #Renly
+			any_war = {
+				limit = { 
+					attacker = { character = 4317 }
+				}
+				end_war = invalid
+			}
+			character_event = { id = clash_of_kings.2 tooltip = "EVTTOOLTIPclash_of_kings.2" }
+			ROOT = {
+				if = {
+					limit = { ai = no }
+					chronicle = {
+						entry = CHRONICLE_ACOK_STANNIS_FOLLOWS_RENLY
+						portrait = [Prev.GetID]
+					}	
+				}
+			}
+			e_rebels = {
+				persistent_event_target:chronicle_player = {
+					if = {
+						limit = { 
+							NOT = { character = PREVPREV }
+							NOT = { character = ROOT }
+							OR = {		
+								dynasty = ROOT
+								is_liege_or_above = ROOT
+								any_claim = { title = e_iron_throne }
+								capital_scope = { region = world_westeros }								
+							}
+							NOT = { trait = wildling }
+						}
+						chronicle = {
+							entry = CHRONICLE_ACOK_STANNIS_FOLLOWS_RENLY
+							portrait = [Root.GetID]
+						}	
+					}
+				}
+			}	
+		}
+		e_iron_throne = { remove_claim = ROOT }
+		hidden_tooltip = {
+			d_kings_landing = { remove_claim = ROOT }
+			c_kings_landing = { remove_claim = ROOT }
+		}		
+	}
+	
+	option = {
+		name = "EVTOPTBclash_of_kings.1" #I am the rightful king !
+		ai_chance = { factor = 98 }
+		c_5317 = {
+			narrative_event = { id = clash_of_kings.3 tooltip = "EVTTOOLTIPclash_of_kings.3" }
+			opinion = { who = ROOT modifier = declared_war }
+		}
+	}
+}
+#Renly responds
+character_event = {
+	id = clash_of_kings.2
+	desc = "EVTDESCclash_of_kings.2"
+	title = "EVTTITLEclash_of_kings.1"
+	picture = GFX_evt_parley_storms_end
+	
+	is_triggered_only = yes
+		
+	immediate = { set_character_flag = war_for_iron_throne }
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.2" #Good
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_ACOK_STANNIS_FOLLOWS_ME_RENLY
+				portrait = [From.GetID]
+			}	
+		}
+		e_iron_throne = {
+			reverse_war = {
+				target = ROOT
+				casus_belli = claim_iron_throne_ACOK
+			}
+			holder_scope = {	
+				hidden_tooltip = { 
+					letter_event = { id = clash_of_kings.13 } 
+				}	
+			}
+		}
+		FROM = {
+			join_attacker_wars = ROOT
+			clr_character_flag = neutral
+			set_character_flag = against_king
+			hidden_tooltip = {
+				e_iron_throne = {
+					holder_scope = { 
+						opinion = {
+							modifier = opinion_joined_rebellion
+							who = PREVPREV
+							years = 20
+						}
+					}
+				}
+			}	
+		}
+		hidden_tooltip = {
+			clr_character_flag = neutral
+			set_character_flag = rebel_leader
+			add_trait = rebel_leader
+			any_vassal = { 
+				clr_character_flag = neutral
+				set_character_flag = against_king 
+			}
+			k_reach = {
+				holder_scope = {
+					join_attacker_wars = ROOT
+					clr_character_flag = neutral
+					set_character_flag = against_king
+					any_vassal = { 
+						clr_character_flag = neutral
+						set_character_flag = against_king 
+					}
+					opinion = {
+						modifier = opinion_with_rebel_leader
+						who = ROOT
+						years = 100
+					}
+					e_iron_throne = {
+						holder_scope = { 
+							opinion = {
+								modifier = opinion_joined_rebellion
+								who = PREVPREV
+								years = 20
+							}
+						}
+					}
+				}	
+			}
+		}
+	}
+}
+
+narrative_event = {
+	id = clash_of_kings.3
+	desc = "EVTDESCclash_of_kings.3"
+	title = "EVTTITLEclash_of_kings.1"
+	picture = GFX_evt_parley_storms_end
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.3" #The rightful king is the one with the bigger army
+		ai_chance = { factor = 98 }
+		FROM = {
+			character_event = { id = clash_of_kings.4 tooltip = "EVTTOOLTIPclash_of_kings.4" }
+			opinion = { who = ROOT modifier = opinion_traitor }
+		}
+	}
+	option = {
+		name = "EVTOPTBclash_of_kings.3" #He has a point
+		ai_chance = { factor = 2 }
+		set_character_flag = ACOK_helped_brother
+		FROM = {
+			any_war = {
+				limit = { 
+					defender = { character = 5317}
+				}
+				end_war = invalid
+			}	
+			character_event = { id = clash_of_kings.5 tooltip = "EVTTOOLTIPclash_of_kings.2" }
+		}
+		e_iron_throne = { remove_claim = ROOT }
+		hidden_tooltip = {
+			d_kings_landing = { remove_claim = ROOT }
+			c_kings_landing = { remove_claim = ROOT }
+		}	
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_ACOK_RENLY_FOLLOWS_STANNIS
+				portrait = [From.GetID]
+			}	
+		}
+		e_rebels = {
+			persistent_event_target:chronicle_player = {
+				if = {
+					limit = { 
+						NOT = { character = PREVPREV }
+						NOT = { character = FROM }
+						OR = {		
+							dynasty = ROOT
+							is_liege_or_above = ROOT
+							any_claim = { title = e_iron_throne }
+							capital_scope = { region = world_westeros }								
+						}
+						NOT = { trait = wildling }
+					}
+					chronicle = {
+						entry = CHRONICLE_ACOK_RENLY_FOLLOWS_STANNIS
+						portrait = [Root.GetID]
+					}	
+				}
+			}
+		}	
+	}
+}
+
+#inform stannis
+#Renly stands ground
+character_event = {
+	id = clash_of_kings.4
+	desc = "EVTDESCclash_of_kings.4"
+	picture = GFX_evt_parley_storms_end
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.4" #battle
+		hidden_tooltip = {
+			if = {
+				limit = {
+					c_5317 = { is_alive = yes }
+					OR = {
+						NOT = { has_plot = plot_kill_character }
+						plot_target_char = { character = 5317 }
+					}
+				}
+				set_character_flag = shadow_baby_ftw
+				c_5317 = { save_event_target_as = shadow_baby_target } 
+				character_event = { id = red_priest.6 days = 4 }
+			}	
+		}
+	}
+
+}
+#Renly stands down
+character_event  = {
+	id = clash_of_kings.5
+	desc = "EVTDESCclash_of_kings.5"
+	picture = GFX_evt_parley_storms_end
+	
+	is_triggered_only = yes
+	
+	immediate = { set_character_flag = war_for_iron_throne }
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.5" #Good
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_ACOK_RENLY_FOLLOWS_ME_STANNIS
+				portrait = [From.GetID]
+			}	
+		}
+		e_iron_throne = {
+			reverse_war = {
+				target = ROOT
+				casus_belli = claim_iron_throne_ACOK
+			}
+			holder_scope = {
+				hidden_tooltip = { 
+					letter_event = { id = clash_of_kings.13 } 
+				}	
+			}
+		}
+		FROM = {
+			join_attacker_wars = ROOT
+			clr_character_flag = neutral
+			set_character_flag = against_king
+			any_vassal = { 
+				clr_character_flag = neutral
+				set_character_flag = against_king 
+			}
+			hidden_tooltip = {
+				e_iron_throne = {
+					holder_scope = { 
+						opinion = {
+							modifier = opinion_joined_rebellion
+							who = PREVPREV
+							years = 20
+						}
+					}
+				}
+			}	
+		}
+		hidden_tooltip = {
+			clr_character_flag = neutral
+			set_character_flag = rebel_leader
+			add_trait = rebel_leader
+			k_reach = {
+				holder_scope = {
+					any_vassal = {
+						limit = { has_landed_title = d_brightwater }
+						religion="rhllor"						
+					}
+					join_attacker_wars = ROOT
+					clr_character_flag = neutral
+					set_character_flag = against_king
+					set_character_flag = against_loyal_liege
+					opinion = {
+						modifier = opinion_with_rebel_leader
+						who = ROOT
+						years = 100
+					}
+					e_iron_throne = {
+						holder_scope = { 
+							opinion = {
+								modifier = opinion_joined_rebellion
+								who = PREVPREV
+								years = 20
+							}
+						}
+					}
+				}	
+			}
+			c_chyttering_brook = {
+				holder_scope = {
+					join_attacker_wars = ROOT
+					clr_character_flag = neutral
+					set_character_flag = against_king
+					set_character_flag = against_loyal_liege
+					opinion = {
+						modifier = opinion_with_rebel_leader
+						who = ROOT
+						years = 100
+					}
+					e_iron_throne = {
+						holder_scope = { 
+							opinion = {
+								modifier = opinion_joined_rebellion
+								who = PREVPREV
+								years = 20
+							}
+						}
+					}
+				}	
+			}
+			c_farring_cross = {
+				holder_scope = {
+					join_attacker_wars = ROOT
+					clr_character_flag = neutral
+					set_character_flag = against_king
+					set_character_flag = against_loyal_liege
+					opinion = {
+						modifier = opinion_with_rebel_leader
+						who = ROOT
+						years = 100
+					}
+					e_iron_throne = {
+						holder_scope = { 
+							opinion = {
+								modifier = opinion_joined_rebellion
+								who = PREVPREV
+								years = 20
+							}
+						}
+					}
+				}	
+			}
+			d_masseys_hook = {
+				holder_scope = {
+					join_attacker_wars = ROOT
+					clr_character_flag = neutral
+					set_character_flag = against_king
+					set_character_flag = against_loyal_liege
+					opinion = {
+						modifier = opinion_with_rebel_leader
+						who = ROOT
+						years = 100
+					}
+					e_iron_throne = {
+						holder_scope = { 
+							opinion = {
+								modifier = opinion_joined_rebellion
+								who = PREVPREV
+								years = 20
+							}
+						}
+					}
+				}	
+			}
+		}
+	}
+
+}
+#Renly /Stannis dies before first war ends
+character_event  = {
+	id = clash_of_kings.6
+	desc = "EVTDESCclash_of_kings.6"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_character_flag = iron_throne_war_started }
+		NOT = { has_character_flag = ACOK_helped_brother }
+		e_iron_throne = {
+			holder_scope = {
+				NOT = { character = ROOT }
+				OR = {
+					has_character_flag = joffrey_baratheon
+					has_character_flag = lannister_scum 
+				}
+			}
+		}
+		has_game_rule = { name = shattered_realms value = off }
+	}
+	
+	immediate = { 
+		set_character_flag = war_for_iron_throne 
+		# k_stormlands = {
+			# holder_scope = {
+				# any_demesne_title = {
+					# limit = { location = { region = world_stormlands } }
+					# gain_title = ROOT	
+				# }
+			# }
+			# gain_title = ROOT	
+		# }
+	}
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.6" #Good
+		e_iron_throne = {
+			reverse_war = {
+				target = ROOT
+				casus_belli = claim_iron_throne_ACOK
+			}
+			holder_scope = {	
+				hidden_tooltip = { 
+					letter_event = { id = clash_of_kings.13 } 
+				}	
+			}
+		}
+		hidden_tooltip = {
+			primary_title = { succession = primogeniture } 
+			# clr_character_flag = neutral
+			# set_character_flag = rebel_leader
+			any_vassal = { 
+				clr_character_flag = neutral
+				set_character_flag = against_king 
+			}
+			# add_trait = rebel_leader
+			if = {
+				limit = { character = 4317 }
+				any_courtier = {
+					limit = {
+						OR = {
+							dynasty = 253
+							character = 6253
+							character = 7253
+						}	
+					}
+					k_reach = {
+						holder_scope = {
+							reverse_banish = PREVPREV
+						}
+					}
+				}
+				k_reach = {
+					holder_scope = {
+						any_vassal = {
+							limit = {
+								higher_tier_than = BARON
+							}
+							long_character_event = { id = clash_of_kings.67 days = 1 }	#Lords of Reach can decide if they back Stannis or go back with Tyrells
+						}
+					}
+				}
+				c_chyttering_brook = {
+					holder_scope = {
+						join_attacker_wars = ROOT
+						clr_character_flag = neutral
+						set_character_flag = against_king
+						set_character_flag = against_loyal_liege
+						opinion = {
+							modifier = opinion_with_rebel_leader
+							who = ROOT
+							years = 100
+						}
+						e_iron_throne = {
+							holder_scope = { 
+								opinion = {
+									modifier = opinion_joined_rebellion
+									who = PREVPREV
+									years = 20
+								}
+							}
+						}
+					}	
+				}
+				c_farring_cross = {
+					holder_scope = {
+						join_attacker_wars = ROOT
+						clr_character_flag = neutral
+						set_character_flag = against_king
+						set_character_flag = against_loyal_liege
+						opinion = {
+							modifier = opinion_with_rebel_leader
+							who = ROOT
+							years = 100
+						}
+						e_iron_throne = {
+							holder_scope = { 
+								opinion = {
+									modifier = opinion_joined_rebellion
+									who = PREVPREV
+									years = 20
+								}
+							}
+						}
+					}	
+				}
+				d_masseys_hook = {
+					holder_scope = {
+						join_attacker_wars = ROOT
+						clr_character_flag = neutral
+						set_character_flag = against_king
+						set_character_flag = against_loyal_liege
+						opinion = {
+							modifier = opinion_with_rebel_leader
+							who = ROOT
+							years = 100
+						}
+						e_iron_throne = {
+							holder_scope = { 
+								opinion = {
+									modifier = opinion_joined_rebellion
+									who = PREVPREV
+									years = 20
+								}
+							}
+						}
+					}	
+				}
+			}	
+			if = {
+				limit = { character = 5317}
+				k_reach = {
+					holder_scope = {
+						join_attacker_wars = ROOT
+						clr_character_flag = neutral
+						set_character_flag = against_king
+						any_vassal = { 
+							clr_character_flag = neutral
+							set_character_flag = against_king 
+						}
+						opinion = {
+							modifier = opinion_with_rebel_leader
+							who = ROOT
+							years = 100
+						}
+						e_iron_throne = {
+							holder_scope = { 
+								opinion = {
+									modifier = opinion_joined_rebellion
+									who = PREVPREV
+									years = 20
+								}
+							}
+						}
+					}	
+				}
+			}	
+		}	
+	}
+}
+#Backers of winner joins war for iron throne
+character_event  = {
+	id = clash_of_kings.7
+	desc = "EVTDESCclash_of_kings.7"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.7" #Good
+		hidden_tooltip = {
+			if = {
+				limit = { tier = KING }
+				any_vassal = { 
+					clr_character_flag = neutral
+					set_character_flag = against_king 
+				}
+			}
+		}
+		if = {
+			limit = { NOT = { has_character_flag = join_young_griff } }
+			k_stormlands = {
+				holder_scope = {
+					ROOT = {
+						join_attacker_wars = PREV
+					}	
+				}	
+			}	
+		}	
+		if = {
+			limit = { has_character_flag = join_young_griff } 
+			FROM = {
+				ROOT = {
+					join_attacker_wars = PREV
+				}	
+			}	
+			clr_character_flag = join_young_griff
+		}	
+		e_iron_throne = {
+			holder_scope = {
+				if = {
+					limit = { NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_joined_rebellion } } }
+					opinion = {
+						who = ROOT
+						modifier = opinion_joined_rebellion
+					}
+				}	
+			}
+		}
+	}
+
+}
+
+#Promised crown given to ironborn
+character_event  = {
+	id = clash_of_kings.8
+	desc = "EVTDESCclash_of_kings.8"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.8" #Good
+		e_iron_isles = {
+			gain_title = ROOT
+			hidden_tooltip = { copy_title_laws = k_iron_isles }
+		}
+		custom_tooltip = { text = TOOLTIPcreate_e_iron_isles }
+		hidden_tooltip = {
+			k_iron_isles = {
+				destroy_landed_title = THIS
+				de_jure_liege = e_iron_isles
+			}	
+		}	
+	}
+
+}
+#Set theon's relations with Robb
+character_event  = {
+	id = clash_of_kings.9
+	desc = "EVTDESCclash_of_kings.9"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.9" #Good
+		FROM = {
+			opinion = {
+				who = ROOT
+				modifier = opinion_disapprove
+				years = 5
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_disapprove
+				years = 10
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_disapprove
+				years = 15
+			}
+		}
+	}
+
+}
+character_event  = {
+	id = clash_of_kings.10
+	desc = "EVTDESCclash_of_kings.10"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.10" #Good
+		e_north = {
+			holder_scope = {
+				opinion = {
+					who = ROOT
+					modifier = opinion_betrayed
+					years = 20
+				}
+				remove_friend = ROOT
+			}
+		}
+		FROM = {
+			opinion = {
+				who = ROOT
+				modifier = opinion_disapprove
+				years = 5
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_disapprove
+				years = 10
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_disapprove
+				years = 15
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_disapprove
+				years = 20
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_disapprove
+				years = 25
+			}
+		}
+		random = {
+			chance = 30
+			character_event = { id = clash_of_kings.100 days = 50 } # Theon attacks winterfell
+		}
+	}
+
+}
+# Theon sacks winterfell
+character_event = {
+	id = clash_of_kings.100
+	desc = EVTDESCclash_of_kings.100
+	picture = GFX_GREYJOY
+	
+	is_triggered_only = yes
+	prisoner = no
+	capable_only = no
+	
+	trigger = {
+		is_ruler = no
+		NOT = { in_battle = yes }
+		OR = {
+			in_command = no
+			location = { 
+				OR = {
+					any_neighbor_province = { 
+						OR = {
+							any_neighbor_province = { 
+								region = world_north 
+							}
+							region = world_north 
+						}							
+					}
+					region = world_north 
+				}	
+			}
+		}
+		e_north = { 
+			holder_scope = {
+				character = 2059 #Robb
+				any_current_enemy = { 
+					has_landed_title = e_iron_isles
+					is_liege_of = ROOT 
+				}
+			}
+		}
+		has_game_rule = { name = shattered_realms value = off }
+	}
+	
+	option = {
+		name = EVTOPTAclash_of_kings.100
+		spawn_unit = {
+			province = 47
+			home = 162 #Pyke
+			leader = ROOT
+			troops = {
+				heavy_infantry = { 30 30 }						
+			}
+			attrition = 1.0
+		}
+		character_event = { id = feast_for_crows.160 days = 1 } #end siege
+		prestige = 100
+		c_8059 = {
+			if = {
+				limit = {
+					is_alive = yes
+					location = { province_id = 47 }
+				}
+				create_character = { #Create hidden character
+					name = Брандон
+					dna="dagig0afcb0"
+					culture = THIS
+					religion = THIS
+					female = no
+					dynasty = none
+					age = 8
+					trait = direwolf
+					trait = crippled
+					trait = greensight
+					historical = yes
+				}
+				new_character = { 
+					set_graphical_culture = Tully_dyn
+					set_character_flag = brandon_stark 
+					c_shivering_forest = {
+						holder_scope = {
+							reverse_banish = PREVPREV
+						}
+					}
+					set_character_flag = missing_stark_child
+					copy_random_personality_trait = PREV
+					copy_random_personality_trait = PREV
+					copy_random_personality_trait = PREV
+					copy_random_personality_trait = PREV
+					copy_random_personality_trait = PREV
+					set_immune_to_pruning = yes
+				}
+				mother = {
+					opinion = {
+						modifier = opinion_vengeance
+						who = ROOT
+						years = 100
+					}
+				}
+				any_sibling = {
+					limit = { NOT = { character = PREV } }
+					opinion = {
+						modifier = opinion_vengeance
+						who = ROOT
+						years = 100
+					}
+				}
+				any_dynasty_member = {
+					limit = {
+						NOT = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = opinion_vengeance
+							}						
+						}
+					}
+					opinion = {
+						who = ROOT
+						modifier = opinion_vengeance
+					}				
+				}
+				any_friend = {
+					limit = {
+						NOT = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = opinion_vengeance
+							}						
+						}
+					}
+					opinion = {
+						who = ROOT
+						modifier = opinion_vengeance
+					}
+				}
+				add_trait = has_missing
+				death = { death_reason = death_murder killer = ROOT }
+				c_10174 = { #Hodor
+					if = {
+						limit = {
+							is_alive = yes
+							is_ruler = no
+							is_married = no
+							prisoner = no
+						}
+						add_trait="has_missing"
+						c_lasthearth = { holder_scope = { reverse_banish = PREVPREV } }
+						add_friend = PREV
+						character_event = { id = clash_of_kings.47 days = 3650 }
+					}
+				}
+				c_1126 = { #Meera
+					if = {
+						limit = {
+							is_alive = yes
+							is_ruler = no
+							is_married = no
+							prisoner = no
+						}
+						add_trait="has_missing"
+						add_friend = PREV
+						character_event = { id = clash_of_kings.47 days = 3650 }
+					}
+				}
+				c_2126 = { #Jojen
+					if = {
+						limit = {
+							is_alive = yes
+							is_ruler = no
+							is_married = no
+							prisoner = no
+						}
+						add_trait="has_missing"
+						add_friend = PREV
+						character_event = { id = clash_of_kings.47 days = 3650 }
+					}
+				}
+			}
+		}
+		c_9059 = {
+			if = {
+				limit = {
+					is_alive = yes
+					location = { province_id = 47 }
+				}
+				create_character = { #Create hidden character
+					name = Рикон
+					dna="bcgmg0bfcb0"
+					culture = THIS
+					religion = THIS
+					female = no
+					dynasty = none
+					age = 4
+					trait = direwolf
+					historical = yes
+				}
+				new_character = { 
+					set_graphical_culture = Tully_dyn
+					set_character_flag = rickon_stark 
+					c_kingshouse = {
+						holder_scope = {
+							reverse_banish = PREVPREV
+						}
+					}
+					set_character_flag = missing_stark_child
+					copy_random_personality_trait = PREV
+					copy_random_personality_trait = PREV
+					copy_random_personality_trait = PREV
+					copy_random_personality_trait = PREV
+					copy_random_personality_trait = PREV
+					set_immune_to_pruning = yes
+				}
+				mother = {
+					opinion = {
+						modifier = opinion_vengeance
+						who = ROOT
+						years = 100
+					}
+				}
+				any_sibling = {
+					limit = { NOT = { character = PREV } }
+					opinion = {
+						modifier = opinion_vengeance
+						who = ROOT
+						years = 100
+					}
+				}
+				any_dynasty_member = {
+					limit = {
+						NOT = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = opinion_vengeance
+							}						
+						}
+					}
+					opinion = {
+						who = ROOT
+						modifier = opinion_vengeance
+					}				
+				}
+				any_friend = {
+					limit = {
+						NOT = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = opinion_vengeance
+							}						
+						}
+					}
+					opinion = {
+						who = ROOT
+						modifier = opinion_vengeance
+					}
+				}
+				add_trait = has_missing
+				death = { death_reason = death_murder killer = ROOT }
+				c_10274 = { #Osha
+					if = {
+						limit = {
+							is_alive = yes
+							is_ruler = no
+							is_married = no
+							prisoner = no
+						}
+						add_friend = PREV
+						c_kingshouse = {
+							holder_scope = {
+								reverse_banish = PREVPREV
+							}
+						}
+					}
+				}
+			}
+		}	
+		e_north = {
+			holder_scope = {				
+				long_character_event = { id = clash_of_kings.40 days = 2 }
+			}
+		}
+	}
+}
+#Find missing Stark child
+character_event  = {
+	id = clash_of_kings.11
+	desc = "EVTDESCclash_of_kings.11"
+	
+	has_character_flag = missing_stark_child
+	
+	trigger = {
+		# OR = {
+			# character = 9267059 #Arya
+			# #character = 9268059 #Bran
+			# has_character_flag = brandon_stark
+			# #character = 9269059 #Rickon
+			# has_character_flag = rickon_stark
+			# character = 9266059 #Sansa
+		# }	
+		#NOT = { has_character_flag = stark_child_found }
+		NOT = { dynasty = 59 }
+		NOT = { liege = { character = 94043 } } #Sansa-littlefinger
+		OR = {
+			is_ruler = yes
+			any_playable_ruler = {
+				dynasty = 59
+				at_location = ROOT
+			}
+			AND = {
+				age = 18
+				liege = {
+					capital_scope = { region = world_westeros }
+					NOT = { trait = wildling }
+					war = no
+					NOT = { any_liege = { war = yes } }
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = { days = 25 }
+	
+	immediate = { 
+		set_character_flag = stark_child_found 
+		clr_character_flag = missing_stark_child
+	}
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.11" #Yay!
+		dynasty = 59
+		c_59 = { #Ned
+			ROOT = { set_father = PREV } 
+			any_owned_bloodline = {
+				add_bloodline_member = ROOT				
+			}
+		} 
+		c_1059 = { ROOT = { set_mother = PREV } } #Kat
+		recalc_succession = yes
+		if = {
+			limit = { c_9266059 = { character = PREV } } #Sansa
+			set_name = Санса
+			remove_nickname = nick_stone		
+			c_6059 = { #the 'dead' sansa
+				dynasty = none
+				set_father = 0
+				set_mother = 0
+			}
+		}
+		if = {
+			limit = { c_9267059 = { character = PREV } } #Arya
+			c_7059 = { #the 'dead' arya
+				dynasty = none
+				set_father = 0
+				set_mother = 0
+			}
+			c_1002059 = { #Re friend jon snow
+				if = {
+					limit = {
+						is_alive = yes
+						opinion = { who = ROOT value = -30 }
+						reverse_opinion = { who = ROOT value = -30 }
+					}
+					add_friend = ROOT
+				}
+			}
+			c_8787878 = { #Elmar Frey
+				if = { 
+					limit={
+						has_character_flag=promised_arya
+						can_marry_trigger = yes
+					}
+					add_spouse = ROOT
+					if = {
+						limit = {NOT = { age = 14 }}
+						child_fertility_debuff = yes
+					}
+				}
+			}
+		}	
+		if = {
+			limit = { has_character_flag = brandon_stark } #Bran
+			c_8059 = { #the 'dead' bran
+				dynasty = none
+				set_father = 0
+				set_mother = 0
+			}
+			#Reveal Jojen and Meera as well
+			c_2126 = { 
+				if = {
+					limit = { is_alive = yes }
+					remove_trait = has_missing
+				}	
+			}
+			c_1126 = { 
+				if = {
+					limit = { is_alive = yes }
+					remove_trait = has_missing
+				}	
+			}
+			c_10174 = { 
+				if = {
+					limit = { is_alive = yes }
+					remove_trait = has_missing
+					if = {
+						limit = { 
+							is_ruler = no
+							ROOT = { is_ruler = yes } 
+						}
+						move_character = ROOT
+					}
+				}	
+			}
+			if = {
+				limit = { religion = cold_gods }
+				religion = old_gods
+			}
+		}	
+		if = {
+			limit = { has_character_flag = rickon_stark } #Rickon
+			c_9059 = { #the 'dead' rickon
+				dynasty = none
+				set_father = 0
+				set_mother = 0
+			}
+		}	
+		character_event = { id = dynastic_rivalry.8 days = 1 }
+		if = {
+			limit = { is_female = no }
+			e_north = { 
+				if = {
+					limit = { has_holder = yes }
+					add_pressed_claim = ROOT 
+				}
+			}
+			k_north = { 
+				if = {
+					limit = { 
+						OR = {
+							has_holder = yes 
+							e_north = { has_holder = no }
+						}	
+					}
+					add_pressed_claim = ROOT 
+				}
+			}	
+			d_winterfell = { add_pressed_claim = ROOT }
+			c_winterfell = { add_pressed_claim = ROOT }
+		}	
+		if = {
+			limit = { is_female = yes }
+			e_north = { 
+				if = {
+					limit = { holder_scope = { NOT = { dynasty = 59 } } }
+					add_pressed_claim = ROOT 
+				}
+				if = {
+					limit = { holder_scope = { dynasty = 59 } } 
+					add_weak_pressed_claim = ROOT 
+				}
+			}
+			k_north = { 
+				if = {
+					limit = { holder_scope = { NOT = { dynasty = 59 } } }
+					add_pressed_claim = ROOT 
+				}
+				if = {
+					limit = { holder_scope = { dynasty = 59 } } 
+					add_weak_pressed_claim = ROOT 
+				}
+			}	
+			d_winterfell = { 
+				if = {
+					limit = { holder_scope = { NOT = { dynasty = 59 } } }
+					add_pressed_claim = ROOT 
+				}
+				if = {
+					limit = { holder_scope = { dynasty = 59 } } 
+					add_weak_pressed_claim = ROOT 
+				}
+			}
+			c_winterfell = { 
+				if = {
+					limit = { holder_scope = { NOT = { dynasty = 59 } } }
+					add_pressed_claim = ROOT 
+				}
+				if = {
+					limit = { holder_scope = { dynasty = 59 } } 
+					add_weak_pressed_claim = ROOT 
+				}
+			}
+		}	
+		if = {
+			limit = { trait = bastard }
+			remove_trait = bastard	
+		}
+		if = {
+			limit = { trait = forbid_marriage }
+			remove_trait = forbid_marriage
+		}
+		if = {
+			limit = { NOT = { mother = { is_alive = yes } } }
+			add_weak_claim = k_riverlands
+		}
+		recalc_succession = yes
+		if = {
+			limit = { is_ruler = yes }
+			character_event = { id = clash_of_kings.12 }
+			break = yes
+		}	
+		if = {
+			limit = { is_ruler = no }
+			random_playable_ruler = {
+				limit = {
+					dynasty = 59
+					at_location = ROOT
+					NOT = { trait = nightswatch }
+				}
+				character_event = { id = clash_of_kings.12 }
+				ROOT = { move_character = PREV }
+				break = yes
+			}
+			if = {
+				limit = {
+					liege = {
+						OR = {
+							NOT = { NOT_mythical_creature_trigger = yes }
+							trait = nightswatch
+							AND = {
+								NOT = { dynasty = 59 }
+								OR = {
+									has_landed_title = e_north
+									has_landed_title = k_north
+									has_landed_title = d_winterfell
+									has_landed_title = c_winterfell
+								}
+							}
+						}
+					}
+				}
+				random_playable_ruler = {
+					limit = { 
+						dynasty = 59 
+						NOT = { trait = nightswatch }
+					}
+					character_event = { id = clash_of_kings.12 }
+					ROOT = { move_character = PREV }
+					break = yes
+				}
+				random_playable_ruler = {
+					limit = { 
+						culture = northman
+						opinion = { who = ROOT value = 0 }
+						reverse_opinion = { who = ROOT value = -19 }
+						NOR = {
+							has_landed_title = e_north
+							has_landed_title = k_north
+							has_landed_title = d_winterfell
+							has_landed_title = c_winterfell
+						}
+						NOT = { trait = nightswatch }
+					}
+					character_event = { id = clash_of_kings.12 }
+					ROOT = { move_character = PREV }
+					break = yes
+				}
+				random_playable_ruler = {
+					limit = { 
+						culture = northman
+						NOR = {
+							has_landed_title = e_north
+							has_landed_title = k_north
+							has_landed_title = d_winterfell
+							has_landed_title = c_winterfell
+						}
+						NOT = { trait = nightswatch }
+					}
+					character_event = { id = clash_of_kings.912 }
+					ROOT = { move_character = PREV }
+					break = yes
+				}
+			}
+			liege = { character_event = { id = clash_of_kings.912 } }
+		}
+		recalc_succession = yes
+	}
+}
+#Stark child has been found!
+character_event  = {
+	id = clash_of_kings.12
+	desc = "EVTDESCclash_of_kings.12"
+	
+	is_triggered_only = yes
+	
+	trigger = { FROM = { has_character_flag = stark_child_found } }
+	
+	immediate = {
+		if = {
+			limit = { FROM = { has_character_flag = brandon_stark } }
+			c_10174 = { #Hodor
+				if = {
+					limit = { 
+						is_alive = yes
+						is_ruler = no
+					}
+					move_character = ROOT
+				}
+			}
+		}
+		recalc_succession = yes	
+	}
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.12" #Yay!
+		e_rebels = {
+			persistent_event_target:chronicle_player = {
+				if = {
+					limit = { 
+						OR = {	
+							character = ROOT
+							dynasty = ROOT
+							is_liege_or_above = ROOT
+							capital_scope = { region = world_westeros }
+						}
+					}
+					chronicle = {
+						entry = CHRONICLE_FOUND_STARK_CHILD
+						portrait = [From.GetID]
+					}	
+				}
+			}
+		}	
+	}
+}
+#Stark child has been found! version 2
+character_event  = {
+	id = clash_of_kings.912
+	desc = "EVTDESCclash_of_kings.912"
+	
+	is_triggered_only = yes
+	
+	trigger = { FROM = { has_character_flag = stark_child_found } }
+	
+	immediate = {
+		if = {
+			limit = { FROM = { has_character_flag = brandon_stark } }
+			c_10174 = { #Hodor
+				if = {
+					limit = { 
+						is_alive = yes
+						is_ruler = no
+					}
+					move_character = ROOT
+				}
+			}
+		}
+		recalc_succession = yes	
+	}
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.912"
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = { 
+					ai = no	
+					NOT = { trait = wildling }
+					NOT = { character = ROOT }
+					OR = {
+						culture_group = andal
+						culture = ironborn
+						culture_group = dornish
+						culture = western_valyrian
+						culture_group = first_men
+						culture = skagosi
+						capital_scope = { region = world_westeros }
+					}
+				}
+				character_event = { id = clash_of_kings.913 }
+			}
+		}
+		e_rebels = {
+			persistent_event_target:chronicle_player = {
+				if = {
+					limit = { 
+						OR = {	
+							character = ROOT
+							dynasty = ROOT
+							is_liege_or_above = ROOT
+							capital_scope = { region = world_westeros }
+						}
+					}
+					chronicle = {
+						entry = CHRONICLE_STARK_CHILD_REVEALED
+						portrait = [From.GetID]
+					}	
+				}
+			}
+		}	
+	}
+}
+character_event  = {
+	id = clash_of_kings.913
+	desc = "EVTDESCclash_of_kings.913"
+	
+	is_triggered_only = yes
+	show_from_from = yes
+	
+	trigger = { FROM = { FROM = { has_character_flag = stark_child_found } } }
+	
+	option = {
+		name = EVTOPTAclash_of_kings.913
+		if = {
+			limit = {
+				culture_group = first_men
+				NOT = { has_landed_title = k_north }
+				NOT = { k_north = { holder_scope = { dynasty = ROOT } } }
+				NOT = { k_north = { holder_scope = { dynasty = 59 } } }
+			}
+			opinion = {
+				who = FROMFROM
+				modifier = opinion_restored_stark
+				years = 15
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBclash_of_kings.913
+	}
+}	
+##Inform King renly/Stannis declare war
+letter_event  = {
+	id = clash_of_kings.13
+	desc = "EVTDESCclash_of_kings.13"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.13" 
+		hidden_tooltip = {
+			k_reach = {
+				holder_scope = {
+					any_child = {
+						limit = { is_female = yes }
+						remove_trait = widowed
+					}
+					if = {
+						limit = {
+							war = no
+							FROM = { character = 4317 }
+						}
+						narrative_event = { id = clash_of_kings.20 days = 45 }
+					}
+				}
+			}
+		}	
+	}
+
+}
+##Inform King renly declare war (from cb_types)
+letter_event  = {
+	id = clash_of_kings.19
+	desc = "EVTDESCclash_of_kings.19"
+	
+	show_from_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.19" 	
+	}
+
+}
+##Inform Robb, balon joins in
+# letter_event  = {
+	# id = clash_of_kings.14
+	# desc = "EVTDESCclash_of_kings.14"
+	
+	# is_triggered_only = yes
+	
+	# option = {
+		# name = "EVTOPTAclash_of_kings.14" 
+	# }
+
+# }
+#Robb offers white peace to non lannisters
+character_event  = {
+	id = clash_of_kings.15
+	desc = "EVTDESCclash_of_kings.15"
+		
+	only_independent = yes
+	war = yes
+	
+	trigger = {		
+		year = 8299
+		has_landed_title = e_north
+		any_war = {
+			using_cb = bid_for_independence_ACOK
+			attacker = { character = ROOT }
+			defender = {
+				NOR = {
+					dynasty = 190
+					dynasty = 1575
+					has_character_flag = lannister_baratheon
+				}
+				NOT = { 
+					any_close_relative = {
+						character = 4190 #cersei
+						OR = {
+							is_parent_of = PREV
+							is_grandparent_of = PREV
+						}
+					}
+				}
+				has_landed_title = e_iron_throne
+			}
+		}
+		OR = {
+			NOT = { has_character_flag = stark_offer_peace }
+			had_character_flag = { flag = stark_offer_peace days = 365 }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 35
+	}
+	option = {
+		name = "EVTOPTAclash_of_kings.15" #offer peace
+		ai_chance = {
+			factor = 45
+		}
+		set_character_flag = stark_offer_peace
+		e_iron_throne = {
+			holder_scope = {
+				letter_event = { id = clash_of_kings.16 days = 5 tooltip = "EVTTOOLTIPclash_of_kings.16" }
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTCclash_of_kings.15" #Demand kingship as well
+		ai_chance = {
+			factor = 90
+			modifier = { #Stannis wont accept
+				factor = 0
+				e_iron_throne = { holder_scope = { character = 4317 } }
+				NOT = { trait = proud }
+				NOT = { trait = stubborn }
+			}
+			modifier = { 
+				factor = 2
+				trait = wroth
+			}
+			modifier = { 
+				factor = 2
+				trait = proud
+			}
+			modifier = { 
+				factor = 2
+				trait = stubborn
+			}
+			modifier = { 
+				factor = 0.5
+				trait = patient
+			}
+			modifier = { 
+				factor = 0.5
+				trait = humble
+			}
+		}
+		set_character_flag = stark_offer_peace
+		set_character_flag = stark_demand_kingship
+		e_iron_throne = {
+			holder_scope = {
+				letter_event = { id = clash_of_kings.16 days = 5 tooltip = "EVTTOOLTIPclash_of_kings.16B" }
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBclash_of_kings.15" #we shall fight on!
+		ai_chance = {
+			factor = 90
+			
+			modifier = {
+				factor = 0.66
+				year = 8301
+			}
+			modifier = {
+				factor = 0.66
+				year = 8303
+			}
+			modifier = {
+				factor = 0.66
+				year = 8305
+			}
+			modifier = { 
+				factor = 0
+				any_war = {
+					attacker = { character = ROOT }
+					defender = {
+						NOR = {
+							dynasty = 190
+							dynasty = 1575
+							has_character_flag = lannister_baratheon
+						}
+						has_landed_title = e_iron_throne
+					}
+					
+					NOT = { war_score = 15 }
+				}
+				e_iron_throne = { holder_scope = { reverse_opinion = { who = ROOT value = -34 } } }
+				NOT = { trait = proud }
+				NOT = { trait = ambitious }
+			}
+			modifier = { 
+				factor = 1.5
+				any_war = {
+					attacker = { character = ROOT }
+					defender = {
+						NOR = {
+							dynasty = 190
+							dynasty = 1575
+							has_character_flag = lannister_baratheon
+						}
+						has_landed_title = e_iron_throne
+					}
+					
+					war_score = 35
+				}
+			}
+			modifier = { 
+				factor = 2
+				any_war = {
+					attacker = { character = ROOT }
+					defender = {
+						NOR = {
+							dynasty = 190
+							dynasty = 1575
+							has_character_flag = lannister_baratheon
+						}
+						has_landed_title = e_iron_throne
+					}
+
+					war_score = 70
+				}
+			}
+			modifier = { 
+				factor = 0.66
+				e_iron_throne = { holder_scope = { reverse_opinion = { who = ROOT value = 15 } } }
+			}
+			modifier = { 
+				factor = 0.66
+				e_iron_throne = { holder_scope = { reverse_opinion = { who = ROOT value = 40 } } }
+			}
+			modifier = { 
+				factor = 0.66
+				e_iron_throne = { holder_scope = { reverse_opinion = { who = ROOT value = 65 } } }
+			}
+			modifier = { 
+				factor = 1.5
+				NOT = { e_iron_throne = { holder_scope = { reverse_opinion = { who = ROOT value = -20 } } } }
+			}
+			modifier = { 
+				factor = 1.5
+				NOT = { e_iron_throne = { holder_scope = { reverse_opinion = { who = ROOT value = -45 } } } }
+			}
+			modifier = { 
+				factor = 1.5
+				NOT = { e_iron_throne = { holder_scope = { reverse_opinion = { who = ROOT value = -70 } } } }
+			}
+			modifier = { 
+				factor = 0.5
+				trait = content
+			}
+			modifier = { 
+				factor = 2
+				trait = ambitious
+			}
+			modifier = { 
+				factor = 0.75
+				trait = honorable
+			}
+			modifier = { 
+				factor = 1.33
+				trait = ruthless
+			}
+		}
+		set_character_flag = stark_offer_peace
+	}
+}
+
+##Inform north offers peace
+letter_event  = {
+	id = clash_of_kings.16	
+	border = "GFX_event_letter_frame_diplomacy"
+	
+	is_triggered_only = yes
+	
+	desc = {
+		text = "EVTDESCclash_of_kings.16"
+		trigger = { FROM = { NOT = { has_character_flag = stark_demand_kingship } } }
+	}
+	desc = {
+		text = "EVTDESCclash_of_kings.16B"
+		trigger = { FROM = { has_character_flag = stark_demand_kingship } }
+	}
+	
+	trigger = {
+		FROM = { has_landed_title = e_north }
+	}
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.16"  #accept
+		ai_chance = {
+			factor = 40
+			
+			modifier = { 
+				factor = 0.75
+				NOT = { character = 5317 } #Renly doesnt mind another king
+				FROM = { has_character_flag = stark_demand_kingship }
+			}
+			modifier = { #Stannis will never accept another king
+				factor = 0
+				character = 4317
+				FROM = { has_character_flag = stark_demand_kingship }
+			}
+			modifier = { 
+				factor = 1.5
+				any_war = {
+					attacker = { character = FROM }
+					defender = { character = ROOT }
+					
+					war_score = 35
+				}
+			}
+			modifier = { 
+				factor = 2
+				any_war = {
+					attacker = { character = FROM }
+					defender = { character = ROOT }
+					
+					war_score = 70
+				}
+			}
+			modifier = {
+				factor = 1.5
+				year = 8301
+			}
+			modifier = {
+				factor = 1.5
+				year = 8303
+			}
+			modifier = {
+				factor = 1.5
+				year = 8305
+			}
+			modifier = {
+				factor = 1.5
+				year = 8306
+			}
+			modifier = {
+				factor = 1.5
+				year = 8307
+			}
+			modifier = { 
+				factor = 1.5
+				opinion = { who = FROM value = 0 }
+			}
+			modifier = { 
+				factor = 2
+				opinion = { who = FROM value = 25 }
+			}
+			modifier = { 
+				factor = 2
+				opinion = { who = FROM value = 50 }
+			}
+			modifier = { 
+				factor = 1.5
+				trait = patient
+			}
+			modifier = { 
+				factor = 1.5
+				trait = humble
+			}
+			modifier = { 
+				factor = 1.5
+				trait = honorable
+			}
+			modifier = { 
+				factor = 1.5
+				trait = kind
+			}
+			modifier = { 
+				factor = 1.5
+				trait = trusting
+			}
+		}
+		any_war = {
+			limit = { 
+				defender = { character = ROOT }
+				using_cb = bid_for_independence_ACOK
+			}
+			end_war = invalid
+		}
+		if = {
+			limit = {
+				any_character = {
+					has_artifact = ice
+					NOR = {
+						character = 2059
+						father_even_if_dead = { character = 2059 }
+						father_even_if_dead = { character = 59 }
+					}
+				}
+			}
+			random_character = {
+				limit = { 
+					has_artifact = ice
+					NOR = {
+						character = 2059
+						father_even_if_dead = { character = 2059 }
+						father_even_if_dead = { character = 59 }
+					}
+				}
+				random_artifact = {
+					limit = { artifact_type = ice }
+					transfer_artifact = { from = PREV to = FROM }			
+				}
+			}			
+		}
+		hidden_tooltip = {
+			any_courtier = {
+				limit = { 
+					dynasty = 59
+				}
+				FROM = { reverse_banish = PREV }
+				prisoner = no
+				remove_spouse = spouse
+			}
+			FROM = { 
+				letter_event = { id = clash_of_kings.17 }
+				any_vassal = {
+					limit = { 
+						tier = KING 
+					}
+					primary_title = { de_jure_liege = e_iron_throne }
+					if = {
+						limit = { ROOT = { trait = civil_war } }
+						set_character_flag = neutral
+						custom_tooltip = { text = TOOLTIPdejure_kingdom_EMP_vassal }
+						hidden_tooltip = { character_event = { id = maintenance.36 } }
+					}
+					if = {
+						limit = { ROOT = { NOT = { trait = civil_war } } }
+						character_event = { id = maintenance.36 tooltip = EVTTOOLTIPmaintenance.36 }
+					}	
+					remove_trait = rebel_leader
+					any_demesne_title = { 
+						limit = { 
+							NOT = { tier = BARON } 
+							NOT = { tier = EMPEROR }
+						}
+						set_variable = { which = "de_facto_empire" value = 1 } 
+					}
+					any_vassal = { 
+						limit = { NOT = { tier = BARON } }
+						any_demesne_title = { set_variable = { which = "de_facto_empire" value = 1 } } 
+					} 
+				}
+				k_north = { grant_title = PREV  }
+				any_demesne_title = {
+					limit = { tier = EMPEROR }
+					destroy_landed_title = THIS
+				}		
+				if = { 	
+					limit = {
+						NOT = { ROOT = { trait = civil_war } }
+					}
+					set_defacto_liege = FROM
+				}	
+				if = { 	
+					limit = { ROOT = { trait = civil_war } }
+					set_character_flag = neutral
+				}		
+				clr_character_flag = opportunist_independence
+				clr_character_flag = indep_war
+				clr_character_flag = inherit_war
+				any_demesne_title = { 
+					limit = { 
+						NOT = { tier = BARON } 
+						NOT = { tier = EMPEROR }
+					}
+					set_variable = { which = "de_facto_empire" value = 1 } 
+				}
+				any_vassal = { 
+					limit = { NOT = { tier = BARON } }
+					any_demesne_title = { set_variable = { which = "de_facto_empire" value = 1 } } 
+				}
+				prestige = -100
+			}
+			primary_title = {
+				k_north = {
+					de_jure_liege = PREV
+				}	
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTBclash_of_kings.16"  #no
+		ai_chance = {
+			factor = 90
+			
+			modifier = { 
+				factor = 1.25
+				any_war = {
+					attacker = { character = FROM }
+					defender = { character = ROOT }
+					
+					NOT = { war_score = -35 }
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				any_war = {
+					attacker = { character = FROM }
+					defender = { character = ROOT }
+					
+					NOT = { war_score = -70 }
+				}
+			}
+			modifier = { 
+				factor = 1.25
+				NOT = { opinion = { who = FROM value = -25 } }
+			}
+			modifier = { 
+				factor = 1.25
+				NOT = { opinion = { who = FROM value = -50 } }
+			}
+			modifier = { 
+				factor = 1.25
+				NOT = { opinion = { who = FROM value = -75 } }
+			}
+			modifier = { 
+				factor = 1.25
+				trait = wroth
+			}
+			modifier = { 
+				factor = 1.25
+				trait = proud
+			}
+			modifier = { 
+				factor = 1.25
+				trait = ruthless
+			}
+			modifier = { 
+				factor = 1.25
+				trait = cruel
+			}
+			modifier = { 
+				factor = 1.25
+				trait = paranoid
+			}
+		}
+		FROM = {
+			letter_event = { id = clash_of_kings.18 tooltip = "EVTTOOLTIPclash_of_kings.18" }
+		}
+		
+	}
+}
+##Inform north accept
+letter_event  = {
+	id = clash_of_kings.17
+	desc = "EVTDESCclash_of_kings.17"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.17" 
+		clr_character_flag = stark_offer_peace
+		if = {
+			limit = { has_character_flag = stark_demand_kingship }			
+			any_demesne_title = {
+				limit = {
+					tier = KING
+					controls_religion = no
+					is_landless_type_title = no
+					NOT = { has_law = privilege_vassal_king }
+				}
+				hidden_tooltip = { set_variable = { which = "lord_paramount_status" value = 0 } } #1 = lord paramount, 2 = interregnum
+				add_law = privilege_vassal_king				
+			}	
+			if = {
+				limit = {
+					NOT = { has_character_modifier = granted_royal_privilege_modifier }
+				}
+				add_character_modifier = {
+					name = granted_royal_privilege_modifier
+					duration = -1
+				}
+			}
+			hidden_tooltip = { set_government_type = feudal_government }
+			clr_character_flag = stark_demand_kingship
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_ACOK_NORTHERN_PEACE
+				portrait = [From.GetID]
+			}
+		}
+		e_rebels = {
+			persistent_event_target:chronicle_player = {
+				if = {
+					limit = { 
+						NOT = { character = ROOT }
+						OR = {
+							any_claim = { title = e_iron_throne }
+							character = FROM
+							capital_scope = { region = world_westeros }
+						}	
+						NOT = { trait = wildling }
+					}
+					chronicle = {
+						entry = CHRONICLE_ACOK_NORTHERN_PEACE
+						portrait = [Root.GetID]
+					}	
+				}
+			}
+		}	
+	}
+
+}
+##Inform north reject
+letter_event  = {
+	id = clash_of_kings.18
+	desc = "EVTDESCclash_of_kings.18"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.18" 
+		clr_character_flag = stark_demand_kingship
+	}
+
+}
+
+##Tyrell-Lannister Alliance
+narrative_event  = {
+	id = clash_of_kings.20
+	desc = "EVTDESCclash_of_kings.20"
+	title = "EVTTITLEclash_of_kings.20"
+	
+	picture = GFX_evt_margaery
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	trigger = {
+		OR = {
+			has_character_flag = rose_and_the_lion #ACOK start override
+			AND = {
+				war = no
+				any_courtier = {
+					dynasty = ROOT
+					character = 7253 #margaery
+					is_married = no
+					is_betrothed = no
+					is_pregnant = no
+					NOT = { trait = incapable }
+				}
+				e_iron_throne = {
+					holder_scope = {
+						OR = {
+							dynasty = 190
+							dynasty = 1575
+							has_character_flag = lannister_baratheon
+						}
+						is_female = no
+						OR = {
+							AND = {
+								is_married = no
+								is_betrothed = no
+							}
+							spouse = { dynasty = 59 }	
+						}
+					}
+				}
+			}
+		}	
+		has_game_rule = { name = shattered_realms value = off }
+	}
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.20"  #Make the Offer
+		ai_chance = { factor = 80 }
+			
+		random_dynasty_member = {
+			limit = { character = 7253 } #margaery
+			e_iron_throne = {
+				holder_scope = {
+					custom_tooltip = { text = TOOLTIPclash_of_kings.20A }
+				}
+			}	
+			#custom_tooltip = TOOLTIPclash_of_kings.20D
+		}
+		random_courtier = {
+			limit = { 
+				character = 6253 
+				can_press_claims_trigger = yes
+				is_married = no
+				is_betrothed = no
+				is_primary_heir = no
+				NOT = { demesne_size = 1 }
+			}
+			custom_tooltip = { text = TOOLTIPclash_of_kings.20E }
+		}
+		random_courtier = {
+			limit = { 
+				dynasty = ROOT
+				OR = {
+					father = { character = ROOT }
+					sibling = ROOT
+				}
+				can_inherit_titles_trigger = yes
+				NOT = { demesne_size = 1 }
+				is_female = no
+				is_primary_heir = no
+				NOT = { character = 6253 }
+			}
+			custom_tooltip = { text = TOOLTIPclash_of_kings.20F }
+			set_character_flag = brightwater_keep_promised
+		}
+		e_iron_throne = { 
+			holder_scope = {
+				hidden_tooltip = { narrative_event = { id = clash_of_kings.21 days = 1 } }
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTBclash_of_kings.20"  #Neutrality is good
+		ai_chance = { factor = 15 }
+		clr_character_flag = against_king
+		set_character_flag = neutral
+		clr_character_flag = supporting_king
+		clr_character_flag = inherit_war
+		hidden_tooltip = {
+			if = {
+				limit = { has_character_flag = rose_and_the_lion }
+				random_dynasty_member = {
+					limit = { character = 7253 } #margaery
+					spouse = {
+						remove_spouse = PREV
+						random_courtier = {
+							limit = { character = 6059 }
+							add_spouse = PREV
+						}
+					}
+					move_character = ROOT
+				}
+				clr_character_flag = rose_and_the_lion
+				e_iron_throne = { 
+					holder_scope = {
+						ROOT = { set_defacto_liege = PREV }
+					}
+				}
+				set_defacto_liege = ROOT
+			}			
+		}
+	}
+	
+	option = {
+		name = "EVTOPTCclash_of_kings.20"  #Any Baratheon is better
+		trigger = { rebel_leader = { character = 4317 war = yes } }
+		ai_chance = { factor = 5 }
+		hidden_tooltip = {
+			if = {
+				limit = { has_character_flag = rose_and_the_lion }
+				random_dynasty_member = {
+					limit = { character = 7253 } #margaery
+					spouse = {
+						remove_spouse = PREV
+						random_courtier = {
+							limit = { character = 6059 }
+							add_spouse = PREV
+						}
+					}
+					move_character = ROOT
+				}
+				clr_character_flag = rose_and_the_lion
+				e_iron_throne = { 
+					holder_scope = {
+						ROOT = { set_defacto_liege = PREV }
+					}
+				}
+				set_defacto_liege = ROOT
+			}			
+		}
+		set_character_flag = against_king
+		clr_character_flag = neutral
+		clr_character_flag = supporting_king
+		clr_character_flag = inherit_war
+		rebel_leader = {
+			limit = { character = 4317 }
+			ROOT = {
+				join_attacker_wars = PREV
+			}
+			opinion = {
+				modifier = opinion_joined_cause
+				who = ROOT
+				years = 2
+			}
+			hidden_tooltip = {
+				letter_event = { id = mega_wars.30 }
+				reverse_opinion = {
+					modifier = opinion_with_rebel_leader
+					who = ROOT
+					years = 100
+				}
+			}
+			ROOT = {
+				if = {
+					limit = { ai = no }
+					chronicle = {
+						entry = CHRONICLE_ACOK_MACE_JOINS_STANNIS
+						portrait = [Prev.GetID]
+					}
+				}
+			}	
+			e_rebels = {
+				persistent_event_target:chronicle_player = {
+					if = {
+						limit = { 
+							NOT = { character = ROOT }
+							OR = {
+								has_landed_title = e_iron_throne
+								character = PREVPREV
+								is_liege_or_above = ROOT
+								has_opinion_modifier = { who = ROOT modifier = opinion_de_facto_liege }	
+							}	
+							NOT = { trait = wildling }
+						}
+						chronicle = {
+							entry = CHRONICLE_ACOK_MACE_JOINS_STANNIS
+							portrait = [Root.GetID]
+						}	
+					}
+				}	
+			}	
+		}	
+		e_iron_throne = {
+			holder_scope = {
+				opinion = {
+					modifier = opinion_joined_rebellion
+					who = ROOT
+					years = 10
+				}
+				hidden_tooltip = {
+					character_event = { id = mega_wars.32 }
+				}
+			}
+		}
+	}
+	
+	# option = {
+		# name = "EVTOPTDclash_of_kings.20"  # There is another King
+		# trigger = { rebel_leader = { character = 2059 war = yes } }
+		# ai_chance = { factor = 5 }
+		# clr_character_flag = against_king
+		# set_character_flag = neutral
+		# clr_character_flag = supporting_king
+		# clr_character_flag = inherit_war
+		# hidden_tooltip = {
+			# if = {
+				# limit = { has_character_flag = rose_and_the_lion }
+				# random_dynasty_member = {
+					# limit = { character = 7253 } #margaery
+					# spouse = {
+						# remove_spouse = PREV
+						# random_courtier = {
+							# limit = { character = 6059 }
+							# add_spouse = PREV
+						# }
+					# }
+					# move_character = ROOT
+				# }
+				# clr_character_flag = rose_and_the_lion
+				# e_iron_throne = { 
+					# holder_scope = {
+						# ROOT = { set_defacto_liege = PREV }
+					# }
+				# }
+				# set_defacto_liege = ROOT
+			# }			
+		# }
+		# set_character_flag = against_king
+		# clr_character_flag = neutral
+		# clr_character_flag = supporting_king
+		# clr_character_flag = inherit_war
+		# rebel_leader = {
+			# limit = { character = 2059 }
+			# narrative_event = { id = clash_of_kings.46 days = 1 }
+		# }
+	# }
+	
+}
+##Iron Throne responds
+narrative_event  = {
+	id = clash_of_kings.21
+	desc = "EVTDESCclash_of_kings.21"
+	title = "EVTTITLEclash_of_kings.20"
+	
+	picture = GFX_evt_margaery
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			FROM = { has_character_flag = rose_and_the_lion }#ACOK start override
+			AND = {
+				OR = {
+					dynasty = 190
+					dynasty = 1575
+					has_character_flag = lannister_baratheon
+				}
+				is_female = no
+				OR = {
+					AND = {
+						is_married = no
+						is_betrothed = no
+					}
+					spouse = { dynasty = 59 }	
+				}
+				FROM = {
+					any_courtier = {
+						character = 7253 #margaery
+						is_married = no
+						is_betrothed = no
+						is_pregnant = no
+						NOT = { trait = incapable }
+					}
+				}
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.21"  #Accept
+		ai_chance = { factor = 95 }
+		hidden_tooltip = { 
+			any_spouse = {
+				limit = { NOT = { character = 7253 } }
+				remove_spouse = ROOT
+				move_character = ROOT
+			}
+			betrothed = { break_betrothal = ROOT }			
+			opinion = { who = FROM modifier = opinion_recent_marriage months = 1 }
+			reverse_opinion = { who = FROM modifier = opinion_recent_marriage months = 1 }
+		}
+		FROM = {
+			random_dynasty_member = {
+				limit = { character = 7253 } #margaery
+				hidden_tooltip = { remove_trait = widowed remove_trait = depressed add_spouse = ROOT }
+				e_iron_throne = {
+					holder_scope = {
+						custom_tooltip = { text = TOOLTIPclash_of_kings.20A }
+					}
+				}		
+			}
+			if = {
+				limit = {
+					ROOT = { any_spouse = { NOT = { character = 7253 } } }
+				}
+				custom_tooltip = { text = TOOLTIPclash_of_kings.20D }
+			}
+			random_courtier = {
+				limit = { 
+					character = 6253 
+					can_press_claims_trigger = yes
+					is_married = no
+					is_betrothed = no
+					is_primary_heir = no
+					NOT = { demesne_size = 1 }
+				}
+				custom_tooltip = { text = TOOLTIPclash_of_kings.20E }
+				if = {
+					limit = {
+						kingsguard = {
+							is_alive = yes
+							count = 7
+						}
+					}	
+					d_kingsguard = {
+						holder_scope = {
+							#change_variable = { which = "kingsguard_count" value = -1 }
+							random_courtier = {
+								limit = { 
+									trait = kingsguard 
+									trait = trained_warrior
+								}
+								custom_tooltip = { text = TOOLTIPclash_of_kings.20C }
+								hidden_tooltip = {
+									remove_trait = kingsguard
+									clr_character_flag = no_court_invites
+									#remove_trait = bastard
+									recalc_succession = yes
+								}	
+							}
+						}
+					}
+				}	
+				hidden_tooltip = {
+					add_trait = kingsguard
+					set_character_flag = no_court_invites
+					#add_trait = bastard
+					recalc_succession = yes
+					d_kingsguard = {
+						holder_scope = {
+							reverse_banish = PREVPREV
+							#change_variable = { which = "kingsguard_count" value = 1 }
+						}
+					}
+				}
+			}
+			random_courtier = {
+				limit = { 
+					has_character_flag = brightwater_keep_promised
+				}
+				custom_tooltip = { text = TOOLTIPclash_of_kings.20F }
+				hidden_tooltip = {
+					character_event = { id = clash_of_kings.23 days = 1 }
+				}
+				ROOT = { set_character_flag = brightwater_keep_promised }
+			}
+			ROOT = {
+				random_courtier = {
+					limit = { character = 94043 } #Littlefinger
+					custom_tooltip = { text = TOOLTIPclash_of_kings.20B }
+					set_character_flag = harrenhal_promised
+				}
+			}
+			hidden_tooltip = { 
+				character_event = { id = clash_of_kings.22 days = 1 } 
+				spouse = { #Clear current Tyrell plots to give them a chance to plots against Joffrey
+					set_character_flag = abort_plot
+					any_dynasty_member = {
+						limit = { is_close_relative = PREV }
+						set_character_flag = abort_plot
+					}
+					father_even_if_dead = { mother = { set_character_flag = abort_plot } } #Olenna
+				}
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTBclash_of_kings.21"  #But my spouse is my love!
+		trigger = { 
+			OR = {
+				spouse = { 
+					is_alive = yes
+					NOT = { character = 7253 }
+				}	
+				betrothed = { NOT = { character = 7253 } }
+			}	
+			FROM = { NOT = { has_character_flag = rose_and_the_lion } }
+		}
+		ai_chance = { factor = 5 }
+		FROM = { 	
+			character_event = { id = clash_of_kings.23 days = 1 tooltip = "TOOLTIPclash_of_kings.23" } 
+		}
+	}
+	
+	option = {
+		name = "EVTOPTCclash_of_kings.21"  #But sansa is my love!
+		trigger = { 
+			FROM = { has_character_flag = rose_and_the_lion }
+		}
+		ai_chance = { factor = 5 }
+		FROM = { 
+			hidden_tooltip = {
+				if = {
+					limit = { has_character_flag = rose_and_the_lion }
+					random_dynasty_member = {
+						limit = { character = 7253 } #margaery
+						ROOT = {
+							remove_spouse = PREV
+							random_courtier = {
+								limit = { character = 6059 }
+								add_spouse = PREV
+							}
+						}
+						move_character = FROM
+					}
+					clr_character_flag = rose_and_the_lion
+					set_defacto_liege = ROOT
+					set_defacto_liege = THIS
+				}
+			}	
+			character_event = { id = clash_of_kings.23 days = 1 tooltip = "TOOLTIPclash_of_kings.23" } 
+		}
+	}
+}	
+
+##offer accepted
+character_event  = {
+	id = clash_of_kings.22
+	desc = "EVTDESCclash_of_kings.22"
+	
+	picture = GFX_evt_margaery
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.22"  
+		clr_character_flag = rose_and_the_lion
+		
+		set_character_flag = supporting_king
+		clr_character_flag = neutral 
+		clr_character_flag = against_king 
+		clr_character_flag = inherit_war
+		any_vassal = {
+			limit = { has_character_flag = neutral }
+			set_character_flag = supporting_king
+			clr_character_flag = neutral 
+		}
+		e_iron_throne = {
+			holder_scope = {
+				if = { 
+					limit = { ROOT = { has_character_flag = ACOK_2_11_start } }			#2.11 Start, Joff asks day later for help in all of his wars
+					add_alliance = { who = ROOT years = 10 }
+				}
+				if = {
+					limit = { ROOT = { NOT = { has_character_flag = ACOK_2_11_start } } }	#3.3 Start, Mace wars history-wars-scripted
+					if = {
+						limit = {
+							is_primary_war_defender = yes
+						}
+						ROOT = {
+							join_defender_wars = PREV
+						}
+					}
+					if = {
+						limit = {
+							is_primary_war_attacker = yes
+						}
+						ROOT = {
+							join_attacker_wars = PREV
+						}
+					}					
+				}
+				ROOT = { clr_character_flag = ACOK_2_11_start }	
+				opinion = {
+					modifier = opinion_loyal_to_crown
+					who = ROOT
+					years = 10
+				}
+				hidden_tooltip = {
+					reverse_opinion = {
+						modifier = opinion_with_king
+						who = ROOT
+						years = 100
+					}
+				}
+			}	
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_ACOK_MACE_JOINS_IRON_THRONE
+				portrait = [From.GetID]
+			}
+		}
+		e_rebels = {
+			persistent_event_target:chronicle_player = {
+				if = {
+					limit = { 
+						NOT = { character = ROOT }
+						OR = {
+							has_landed_title = e_iron_throne
+							character = PREVPREV
+							is_liege_or_above = ROOT
+							has_opinion_modifier = { who = ROOT modifier = opinion_de_facto_liege }	
+						}	
+						NOT = { trait = wildling }
+					}
+					chronicle = {
+						entry = CHRONICLE_ACOK_MACE_JOINS_IRON_THRONE
+						portrait = [Root.GetID]
+					}	
+				}
+			}
+		}	
+	}
+}	
+##offer rejected
+character_event  = {
+	id = clash_of_kings.23
+	desc = "EVTDESCclash_of_kings.23"
+	
+	picture = GFX_evt_margaery
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.23"  
+		hidden_tooltip = {
+			random_courtier = {
+				limit = { 
+					has_character_flag = brightwater_keep_promised
+				}
+				clr_character_flag = brightwater_keep_promised
+			}
+		}	
+		if = {
+			limit = { has_character_flag = brightwater_keep_promised }
+			d_brightwater = { add_claim = ROOT }
+			c_brightwater = { add_claim = ROOT }
+		}
+	}
+}	
+##Renly changes to primo
+character_event  = {
+	id = clash_of_kings.240
+	desc = "EVTDESCclash_of_kings.24"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { trait = bastard }	
+		father = {
+			character = 5317 #Renly
+			is_alive = yes
+			has_landed_title = k_stormlands
+			k_stormlands = { has_law = succ_seniority }
+			spouse = {
+				is_parent_of = ROOT
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.24"  
+		father = { character_event = { id = clash_of_kings.24 } }
+	}
+}	
+character_event  = {
+	id = clash_of_kings.24
+	desc = "EVTDESCclash_of_kings.24"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		character = 5317 #Renly
+		FROM = {
+			is_alive = yes
+			NOT = { trait = bastard }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.24"  
+		k_stormlands = {
+			succession = primogeniture
+		}
+		recalc_succession = yes 
+	}
+}	
+##Starks win, decides Iron throne's fate
+character_event  = {
+	id = clash_of_kings.25
+	desc = "EVTDESCclash_of_kings.25"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.25"  #Stannis is the true heir
+		trigger = {
+			k_stormlands = {
+				holder_scope = {
+					OR = {
+						character = 4317
+						has_character_flag = shireen_baratheon
+						any_dynasty_member = { 
+							OR = {
+								character = 4317
+								has_character_flag = shireen_baratheon
+							}	
+						}
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 25
+		}
+		hidden_tooltip = {
+			e_iron_throne = {
+				holder_scope = {
+					any_war = { 				
+						if = {
+							limit = {
+								attacker = {
+									e_iron_throne = { claimed_by = PREV }
+									NOT = { character = 4317 }
+									NOT = { has_character_flag = shireen_baratheon }
+									NOT = { any_sibling = { has_character_flag = shireen_baratheon } }
+									NOT = { character = ROOT }
+								}	
+							}	
+							attacker = {
+								set_character_flag = pretender
+								character_event = { id = clash_of_kings.27 days = 1 }
+							}	
+						}	
+					}
+				}	
+			}	
+		}
+		k_stormlands = {
+			holder_scope = {
+				random_dynasty_member = {
+					limit = { 
+						OR = {
+							character = 4317 
+							AND = {
+								father_even_if_dead = { is_alive = no }
+								is_female = no
+								NOT = { trait = bastard }
+								any_sibling = { has_character_flag = shireen_baratheon }
+							}
+							AND = {
+								father_even_if_dead = { is_alive = no }
+								NOT = { any_sibling = { is_female = no NOT = { trait = bastard } } }
+								has_character_flag = shireen_baratheon
+							}
+						}
+					}
+					e_iron_throne = {
+						holder_scope = {
+							any_artifact = { #transfer crown jewells					
+								limit = {	
+									has_artifact_flag = crown_jewel
+									NOT = { has_artifact_flag = no_usurp_transfer }
+								}
+								transfer_artifact = {				
+									from = PREV			
+									to = PREVPREVPREV
+								}
+							}
+							any_demesne_title = { 
+								limit = { tier = EMPEROR } 
+								usurp_title = { target = PREVPREVPREV type = claim }
+							}
+							hidden_tooltip = {
+								any_demesne_title = { 
+									limit = { NOT = { tier = EMPEROR } }
+									usurp_title = { target = PREVPREVPREV type = claim }
+								}
+							}	
+						}
+					}
+					hidden_tooltip = { character_event = { id = clash_of_kings.26 } }
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTBclash_of_kings.25"  #Renly is the strongest
+		trigger = {
+			k_stormlands = {
+				holder_scope = {
+					has_character_flag = renly_baratheon
+				}
+			}
+		}
+		ai_chance = {
+			factor = 25
+		}
+		hidden_tooltip = {
+			e_iron_throne = {
+				holder_scope = {
+					any_war = { 
+						attacker = {
+							if = {
+								limit = {
+									e_iron_throne = { claimed_by = PREV }
+									NOT = { character = 5317}
+									NOT = { character = ROOT }
+								}
+								set_character_flag = pretender
+								character_event = { id = clash_of_kings.27 }
+							}	
+						}
+					}
+				}	
+			}	
+		}
+		k_stormlands = {
+			holder_scope = {
+				e_iron_throne = {
+					holder_scope = {
+						any_artifact = { #transfer crown jewells					
+							limit = {	
+								has_artifact_flag = crown_jewel
+								NOT = { has_artifact_flag = no_usurp_transfer }
+							}
+							transfer_artifact = {				
+								from = PREV	
+								to = PREVPREVPREV
+							}
+						}
+						any_demesne_title = { 
+							limit = { tier = EMPEROR } 
+							usurp_title = { target = PREVPREVPREV type = claim }
+						}
+						hidden_tooltip = {
+							any_demesne_title = { 
+								limit = { NOT = { tier = EMPEROR } }
+								usurp_title = { target = PREVPREVPREV type = claim }
+							}
+						}	
+					}
+				}
+				hidden_tooltip = { character_event = { id = clash_of_kings.26 } }
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTCclash_of_kings.25"  #I care not for the Iron throne
+		ai_chance = {
+			factor = 25
+		}
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					NOT = { trait = wildling }
+					OR = {
+						culture_group = andal
+						culture = ironborn
+						culture_group = dornish
+						culture = western_valyrian
+						culture_group = first_men
+						culture = skagosi
+						capital_scope = { region = world_westeros }
+					}
+				}
+				character_event = { id = clash_of_kings.30 }
+			}	
+		}
+		set_global_flag = race_to_kings_landing
+		custom_tooltip = { text = TOOLTIPEVTOPTCclash_of_kings.25 }
+	}
+	option = {
+		name = "EVTOPTDclash_of_kings.25"  #I claim the Throne by right of conquest
+		trigger = {
+			trait = ambitious
+		}	
+		ai_chance = {
+			factor = 15
+		}
+		tooltip_info = ambitious
+		hidden_tooltip = {
+			e_iron_throne = {
+				holder_scope = {
+					any_war = { 
+						attacker = {
+							if = {
+								limit = {
+									e_iron_throne = { claimed_by = PREV }
+									NOT = { character = ROOT }
+								}
+								set_character_flag = pretender
+								character_event = { id = clash_of_kings.27 }
+							}	
+						}
+					}
+				}	
+			}	
+		}
+		e_iron_throne = {
+			holder_scope = {
+				any_artifact = { #transfer crown jewells					
+					limit = {	
+						has_artifact_flag = crown_jewel
+						NOT = { has_artifact_flag = no_usurp_transfer }
+					}
+					transfer_artifact = {				
+						from = PREV			
+						to = ROOT
+					}
+				}
+				ROOT = {
+					if = {
+						limit = { ai = no }
+						chronicle = {
+							entry = CHRONICLE_ACOK_ROBB_CLAIMS_IRON_THRONE
+							picture = GFX_evt_ironthrone
+						}
+					}
+				}	
+				e_rebels = {
+					persistent_event_target:chronicle_player = {
+						if = {
+							limit = { 
+								NOT = { character = ROOT }
+								OR = {
+									any_claim = { title = e_iron_throne }
+									character = PREVPREV
+									capital_scope = { region = world_westeros }
+								}	
+								NOT = { trait = wildling }
+							}
+							chronicle = {
+								entry = CHRONICLE_ACOK_ROBB_CLAIMS_IRON_THRONE
+								portrait = [Root.GetID]
+							}	
+						}
+					}
+				}	
+				any_demesne_title = { 
+					limit = { tier = EMPEROR } 
+					usurp_title = { target = ROOT type = invasion }
+				}
+				hidden_tooltip = {
+					any_demesne_title = { 
+						limit = { NOT = { tier = EMPEROR } }
+						usurp_title = { target = ROOT type = invasion } 
+					}
+					any_playable_ruler = { 
+						limit = {
+							NOT = { character = ROOT }
+							NOT = { has_character_flag = pretender }
+						}
+						character_event = { id = clash_of_kings.29 } 
+					}
+				}	
+			}
+		}
+		
+	}
+}	
+##Inform Robb named you king
+character_event  = {
+	id = clash_of_kings.26
+	desc = "EVTDESCclash_of_kings.26"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.26"  
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = { 
+					NOT = { character = FROM }
+					NOT = { character = ROOT }
+					NOT = { has_character_flag = pretender }
+				}
+				character_event = { id = clash_of_kings.28 }
+			}
+		}	
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_ACOK_ROBB_GAVE_IRON_THRONE
+				portrait = [From.GetID]
+			}
+		}
+		e_rebels = {
+			persistent_event_target:chronicle_player = {
+				if = {
+					limit = { 
+						NOT = { character = ROOT }
+						OR = {
+							any_claim = { title = e_iron_throne }
+							character = FROM
+							capital_scope = { region = world_westeros }
+						}	
+						NOT = { trait = wildling }
+					}
+					chronicle = {
+						entry = CHRONICLE_ACOK_ROBB_GAVE_IRON_THRONE
+						portrait = [Root.GetID]
+					}	
+				}
+			}
+		}	
+	}
+}	
+##Inform Robb didnt name you king
+character_event  = {
+	id = clash_of_kings.27
+	desc = "EVTDESCclash_of_kings.27"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.27"  
+		clr_character_flag = pretender
+		if = {
+			limit = {
+				e_iron_throne = {
+					holder_scope = {
+						NOT = { war_with = ROOT }
+					}
+				}
+				NAND = { 
+					character = 77041 
+					has_character_flag = danys_eastern_quest
+				}
+			}
+			e_iron_throne = {
+				reverse_war = {
+					target = ROOT
+					casus_belli = claim
+				}
+			}
+			hidden_tooltip = {
+				any_playable_ruler = {
+					limit = { 
+						has_character_flag = against_king 
+						has_opinion_modifier = { who = ROOT modifier = opinion_with_rebel_leader }
+					}
+					join_attacker_wars = ROOT
+				}
+				if = {
+					limit = { character = 125009 }
+					d_golden_company = {
+						holder_scope = {
+							join_attacker_wars = ROOT
+						}
+					}
+				}
+			}	
+		}	
+	}
+}	
+##Inform others of Robb's new king
+character_event  = {
+	id = clash_of_kings.28
+	desc = "EVTDESCclash_of_kings.28"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.28"  	
+	}
+}	
+##Inform others Robb takes throne
+character_event  = {
+	id = clash_of_kings.29
+	desc = "EVTDESCclash_of_kings.29"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.29"  	
+	}
+}	
+#Inform others Robb leaves power vacuum
+character_event  = {
+	id = clash_of_kings.30
+	desc = "EVTDESCclash_of_kings.30"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.30"  
+		ai_chance = {
+			factor = 99
+		}	
+		if = {
+			limit = {
+				e_iron_throne = { claimed_by = PREV }
+				OR = {
+					tier = KING
+					independent = yes
+					liege = { has_landed_title = e_iron_throne }
+				}
+				NOT = { has_landed_title = k_westerlands }
+			}
+			e_iron_throne = {
+				reverse_war = {
+					target = ROOT
+					casus_belli = claim
+				}
+			}
+		}		
+	}
+	option = {
+		name = "EVTOPTBclash_of_kings.30"  
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2.5
+				tier = KING
+				NOT = { has_landed_title = k_the_most_devout }
+			}
+			modifier = {
+				factor = 5
+				trait = ambitious
+			}
+			modifier = {
+				factor = 2
+				trait = brave
+			}
+			modifier = {
+				factor = 0.5
+				trait = craven
+			}
+			modifier = {
+				factor = 2
+				trait = proud
+			}
+			modifier = {
+				factor = 0.5
+				trait = humble
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					trait = content
+					trait = incapable
+					is_ill = yes
+					is_female = yes
+					NOT = { age = 16 }
+				}	
+			}
+		}	
+		trigger = {
+			NOT = { e_iron_throne = { claimed_by = PREV } }
+			can_press_claims_trigger = yes
+			OR = {
+				tier = KING
+				liege = { has_landed_title = e_iron_throne }
+			}
+			NOT = { has_landed_title = k_westerlands }
+			primary_title = { is_variable_equal = { which = "de_facto_empire" value = 1 } }
+		}	
+		e_iron_throne = { add_weak_claim = ROOT }
+		set_character_flag = claimed_iron_throne	
+		e_iron_throne = {
+			reverse_war = {
+				target = ROOT
+				casus_belli = claim
+			}
+		}
+	}
+}
+#I win the race!
+character_event  = {
+	id = clash_of_kings.31
+	desc = "EVTDESCclash_of_kings.31"
+	
+	only_playable = yes
+	has_global_flag = race_to_kings_landing
+	
+	trigger = {	
+		location = { province_id = 226 }
+		e_iron_throne = {
+			claimed_by = ROOT 
+			holder_scope = { 
+				prisoner = yes 
+				any_war = { 
+					attacker = {
+						character = ROOT
+					}
+				}
+			}		
+		}
+	}
+	
+	immediate = { clr_global_flag = race_to_kings_landing }
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.31"  
+		hidden_tooltip = {
+			e_iron_throne = {
+				any_war = { 
+					attacker = {
+						if = {
+							limit = {
+								NOT = { character = ROOT }
+							}
+							set_character_flag = pretender
+							character_event = { id = clash_of_kings.32 }
+						}	
+					}
+				}
+			}	
+		}
+		e_iron_throne = {
+			holder_scope = {
+				ROOT = {
+					if = {
+						limit = { ai = no }
+						chronicle = {
+							entry = CHRONICLE_ACOK_CLAIMS_IRON_THRONE
+							picture = GFX_evt_ironthrone
+						}
+					}
+				}	
+				e_rebels = {
+					persistent_event_target:chronicle_player = {
+						if = {
+							limit = { 
+								NOT = { character = ROOT }
+								OR = {
+									any_claim = { title = e_iron_throne }
+									character = PREVPREV
+									capital_scope = { region = world_westeros }
+								}	
+								NOT = { trait = wildling }
+							}
+							chronicle = {
+								entry = CHRONICLE_ACOK_CLAIMS_IRON_THRONE
+								portrait = [Root.GetID]
+							}	
+						}
+					}
+				}
+				any_artifact = { #transfer crown jewells					
+					limit = {	
+						has_artifact_flag = crown_jewel
+						NOT = { has_artifact_flag = no_usurp_transfer }
+					}
+					transfer_artifact = {				
+						from = PREV			
+						to = ROOT
+					}
+				}	
+				any_demesne_title = { 
+					limit = { tier = EMPEROR } 
+					gain_title = ROOT
+				}
+				hidden_tooltip = {
+					any_demesne_title = { 
+						limit = { NOT = { tier = EMPEROR } }
+						gain_title = ROOT 
+					}
+					any_playable_ruler = { 
+						limit = {
+							NOT = { character = ROOT }
+							NOT = { has_character_flag = pretender }
+						}
+						character_event = { id = clash_of_kings.33 } 
+					}
+				}	
+			}
+		}	
+		hidden_tooltip = {
+			if = {
+				limit = { has_character_flag = claimed_iron_throne } 
+				clr_character_flag = claimed_iron_throne
+				any_realm_lord = {
+					opinion = {
+						who = ROOT
+						modifier = opinion_usurped_throne
+						years = 10
+					}
+				}
+				any_playable_ruler = {
+					limit = {
+						independent = yes
+						primary_title = { is_variable_equal = { which = "de_facto_empire" value = 1 } }
+					}
+					opinion = {
+						who = ROOT
+						modifier = opinion_usurped_throne
+						years = 10
+					}
+				}
+			}
+		}	
+	}
+}
+#Inform someone fills vacuum
+character_event  = {
+	id = clash_of_kings.32
+	desc = "EVTDESCclash_of_kings.32"
+	
+	only_rulers = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.32"  
+		clr_character_flag = pretender
+		if = {
+			limit = {
+				e_iron_throne = {
+					holder_scope = {
+						NOT = { war_with = ROOT }
+					}
+				}
+			}
+			e_iron_throne = {
+				reverse_war = {
+					target = ROOT
+					casus_belli = claim
+				}
+			}
+			hidden_tooltip = {
+				any_playable_ruler = {
+					limit = { 
+						has_character_flag = against_king 
+						has_opinion_modifier = { who = ROOT modifier = opinion_with_rebel_leader }
+					}
+					join_attacker_wars = ROOT
+				}
+				if = {
+					limit = { character = 125009 }
+					d_golden_company = {
+						holder_scope = {
+							join_attacker_wars = ROOT
+						}
+					}
+				}
+			}	
+		}	
+	}
+}
+character_event  = {
+	id = clash_of_kings.33
+	desc = "EVTDESCclash_of_kings.33"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.29"  	
+	}
+}
+##Lannister supporter secures Kings Landing
+character_event  = {
+	id = clash_of_kings.34
+	desc = "EVTDESCclash_of_kings.34"
+	
+	only_playable = yes
+	has_global_flag = race_to_kings_landing
+	
+	trigger = {	
+		OR = {
+			AND = {
+				has_landed_title = e_iron_throne
+				war = no
+				prisoner = no
+			}
+			AND = {
+				in_command = yes
+				has_character_flag = supporting_king
+				NOT = { has_character_flag = claimed_iron_throne }
+				NOT = { tier = COUNT }	
+				location = { province_id = 226 }
+			}
+		}
+	}
+	
+	immediate = { clr_global_flag = race_to_kings_landing }
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.34" 
+		hidden_tooltip = {	
+			any_playable_ruler = { 
+				limit = {
+					NOT = { character = ROOT }
+				}
+				character_event = { id = clash_of_kings.35 } 
+			}
+		}	
+	}
+}
+character_event  = {
+	id = clash_of_kings.35
+	desc = "EVTDESCclash_of_kings.35"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.35"  	
+	}
+}
+###Stannis' letter
+letter_event = { #event for stannis
+	id = clash_of_kings.3699
+	desc = "EVTDESCclash_of_kings.3699"
+	
+	is_triggered_only = yes
+	
+	trigger = { has_game_rule = { name = shattered_realms value = off } }
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.3699"
+		e_iron_throne = {
+			holder_scope = { 
+				opinion = {
+					modifier = opinion_claimed_my_title
+					who = ROOT
+				}
+				opinion = {
+					modifier = opinion_traitor
+					who = ROOT
+				}
+				mother = {
+					if = {
+						limit = { is_alive = yes }
+						opinion = { who = ROOT modifier = opinion_conspired_against_child }
+					}
+				}
+			}
+		}
+		k_westerlands = {
+			holder_scope = { 
+				opinion = {
+					modifier = opinion_traitor
+					who = ROOT
+				}
+			}
+		}
+		hidden_tooltip = {
+			job_spiritual = {
+				remove_title = job_spiritual		
+			}
+			random_courtier = {
+				limit = { c_2002994 = { character = PREV } } #Mel
+				remove_title = job_chancellor	
+				remove_title = job_treasurer
+				remove_title = job_marshal	
+				remove_title = job_spymaster
+				remove_title = job_castellan
+				remove_title = job_spiritual
+				give_job_title = job_spiritual
+			}
+			any_independent_ruler = {
+				limit = {
+					NOT = { trait = wildling }
+					NOT = { has_landed_title = e_iron_throne }
+					capital_scope = { region = world_westeros }		
+				}
+				letter_event = { id = clash_of_kings.36 } #Bastard letter
+				any_realm_lord = { 
+					limit = { 
+						NOR = {
+							dynasty = 190
+							dynasty = 1575
+							has_character_flag = lannister_baratheon
+						}
+					}
+					letter_event = { id = clash_of_kings.36 } 
+				}
+			}	
+			e_iron_throne = {
+				holder_scope = {
+					any_realm_lord = {
+						limit = { NOT = { dynasty = PREV } }
+						letter_event = { id = clash_of_kings.36 } #Bastard letter
+					}
+					any_dynasty_member = {
+						letter_event = { id = clash_of_kings.36 } #Bastard letter
+					}				
+				}	
+			}
+		}
+	}
+}	
+# Receive letter accusing plot target of bastardy
+letter_event = {
+	id = clash_of_kings.36
+	desc = "EVTDESCclash_of_kings.36"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { character = 4190 } 
+		NOT = { character = 3190 }
+		NOT = { character = FROM }
+		NOT = { has_landed_title = e_iron_throne }
+		NOT = { any_sibling = { has_landed_title = e_iron_throne } }		
+	}
+	
+	option = {
+		name = "EVTOPTAPIL112"
+		e_iron_throne = { 
+			holder_scope = { 
+				reverse_opinion = { who = ROOT modifier = opinion_suspected_bastard }
+				any_sibling = {
+					limit = { dynasty = PREV }
+					reverse_opinion = { who = ROOT modifier = opinion_suspected_bastard }
+				}				
+			} 
+		}
+		FROM = {
+			custom_tooltip = { text = "EVTTOOLTIPPIL102" }
+			custom_tooltip = { text = TOOLTIPclash_of_kings.36 }
+		}
+		ai_chance = {
+			factor = 40
+			
+			# Personality of Claimer
+			modifier = {
+				factor = 0.5
+				FROM = { trait = paranoid }
+			}
+			modifier = {
+				factor = 2
+				FROM = { trait = honest }
+			}
+			modifier = {
+				factor = 0.5
+				FROM = { trait = deceitful }
+			}
+			modifier = {
+				factor = 0.1
+				FROM = { trait = lunatic }
+			}
+			modifier = {
+				factor = 0.1
+				FROM = { trait = possessed }
+			}
+			
+			# Evidence
+			modifier = {
+				factor = 0.5
+				NOT = { religion = rhllor }
+				NOT = { trait = cynical }
+			}
+			modifier = {
+				factor = 2
+				religion = rhllor
+				NOT = { trait = cynical }
+			}
+			modifier = {
+				factor = 2
+				religion = rhllor
+				trait = zealous
+			}		
+			# Personal Opinion of Claimer
+			modifier = {
+				factor = 1.25
+				opinion = { who = FROM value = 100 }
+				NOT = { trait = just }
+			}
+			modifier = {
+				factor = 1.25
+				opinion = { who = FROM value = 90 }
+				NOT = { trait = just }
+			}
+			modifier = {
+				factor = 1.25
+				opinion = { who = FROM value = 80 }
+				NOT = { trait = just }
+			}
+			modifier = {
+				factor = 1.25
+				opinion = { who = FROM value = 70 }
+				NOT = { trait = just }
+			}
+			modifier = {
+				factor = 1.25
+				opinion = { who = FROM value = 60 }
+				NOT = { trait = just }
+			}
+			modifier = {
+				factor = 1.25
+				opinion = { who = FROM value = 50 }
+				NOT = { trait = just }
+			}
+			modifier = {
+				factor = 1.25
+				opinion = { who = FROM value = 40 }
+				NOT = { trait = just }
+			}
+			modifier = {
+				factor = 1.25
+				opinion = { who = FROM value = 30 }
+				NOT = { trait = just }
+			}
+			modifier = {
+				factor = 1.25
+				opinion = { who = FROM value = 20 }
+				NOT = { trait = just }
+			}
+			modifier = {
+				factor = 1.25
+				opinion = { who = FROM value = 10 }
+				NOT = { trait = just }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { opinion = { who = FROM value = -9 } }
+				NOT = { trait = just }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { opinion = { who = FROM value = -19 } }
+				NOT = { trait = just }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { opinion = { who = FROM value = -29 } }
+				NOT = { trait = just }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { opinion = { who = FROM value = -39 } }
+				NOT = { trait = just }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { opinion = { who = FROM value = -49 } }
+				NOT = { trait = just }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { opinion = { who = FROM value = -59 } }
+				NOT = { trait = just }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { opinion = { who = FROM value = -69 } }
+				NOT = { trait = just }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { opinion = { who = FROM value = -79 } }
+				NOT = { trait = just }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { opinion = { who = FROM value = -89 } }
+				NOT = { trait = just }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { opinion = { who = FROM value = -99 } }
+				NOT = { trait = just }
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBPIL112"
+		ai_chance = { factor = 90 }
+	}
+}
+
+#Robb legitimises Jon
+long_character_event = {
+	id = clash_of_kings.40
+	desc = EVTDESCclash_of_kings.40
+	picture = GFX_STARK
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_landed_title = e_north	
+	}
+	
+	option = { # I will legitimise my brother
+		name = EVTOPTAclash_of_kings.40
+		trigger = {
+			NOT = {
+				current_heir = {
+					is_female = no
+					dynasty = 59
+				}
+			}
+			any_sibling = {
+				has_character_flag = jon_snow
+				is_alive = yes
+				NOT = { trait = incapable }
+			}
+		}
+		ai_chance = {
+			factor = 65
+		}
+		random_sibling = {
+			limit = { has_character_flag = jon_snow }
+			letter_event = { id = clash_of_kings.41 days = 50 tooltip = TOOLTIPjon_clash_of_kings.40 }
+			remove_trait = bastard
+			add_trait = legit_bastard
+			if = {
+				limit = {
+					has_nickname = nick_snow
+				}
+				remove_nickname = yes
+			}
+			dynasty = 59
+			hidden_tooltip = {
+				random_bloodline = {
+					limit = { has_bloodline_flag = stark }
+					add_bloodline_member = PREV
+				}
+			}	
+		}
+		mother = {
+			opinion = {
+				modifier = legitimized_bastard
+				who = ROOT
+				years = 5
+			}
+		}
+		piety = -50
+		prestige = -100
+		custom_tooltip = {
+			text = TOOLTIPvassals_clash_of_kings.40
+			hidden_tooltip = {
+				any_vassal = {
+					letter_event = { id = clash_of_kings.42 }
+				}
+			}
+		}
+	}
+	option = { # My mother is right
+		name = EVTOPTBclash_of_kings.40
+		ai_chance = {
+			factor = 35
+		}
+		mother = {
+			opinion = {
+				modifier = opinion_happy
+				who = ROOT
+				years = 5
+			}
+		}
+		piety = 100
+		prestige = 25
+	}
+}
+# Jon informed of being legitimised
+letter_event = {
+	id = clash_of_kings.41
+	desc = EVTDESCclash_of_kings.41
+	
+	is_triggered_only = yes
+	
+	option = { # I will head south at once!
+		name = EVTOPTAclash_of_kings.41
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 0.7
+				primary_title = { title = d_nightswatch }
+			}
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_ACOK_JON_LEGITMISED_A
+				portrait = [From.GetID]
+			}
+		}
+		e_rebels = {
+			persistent_event_target:chronicle_player = {
+				if = {
+					limit = { 
+						NOT = { character = ROOT }
+						OR = {
+							is_liege_or_above = FROM
+							character = FROM
+							has_landed_title = e_iron_throne
+							has_opinion_modifier = { who = FROM modifier = opinion_de_facto_liege }	
+						}	
+						NOT = { trait = wildling }
+					}
+					chronicle = {
+						entry = CHRONICLE_ACOK_JON_LEGITMISED_A
+						portrait = [Root.GetID]
+					}	
+				}
+			}
+		}	
+		remove_trait = nightswatch
+		clr_character_flag = no_court_invites
+		hidden_tooltip = {
+			remove_character_modifier = nw_ranger
+			remove_character_modifier = nw_steward
+			remove_character_modifier = nw_builder
+		}
+		if = {
+			limit = { primary_title = { title = d_nightswatch } }
+			current_heir = {
+				d_nightswatch = { gain_title = PREV }
+				hidden_tooltip = { 
+					d_the_wall = { gain_title = PREV }
+					c_castle_black = { gain_title = PREV } 			
+					c_new_gift = { gain_title = PREV }
+					c_brandons_gift = { gain_title = PREV }	
+					b_castle_black = { PREV = { capital = PREV } }
+				}
+			}
+			hidden_tooltip = {
+				any_courtier = {
+					limit = { 
+						trait = nightswatch 
+						NOT = { character = ROOT }
+						NOT = { demesne_size = 1 }
+					}
+					d_nightswatch = {
+						holder_scope = { reverse_banish = PREVPREV }
+					}
+				}
+			}
+		}
+		set_defacto_liege = FROM
+		hidden_tooltip = { FROM = { recalc_succession = yes } }
+		FROM = { letter_event = { id = clash_of_kings.43  } }
+	}
+	option = { # My duty is to the Night's Watch, he will be fine without me
+		name = EVTOPTBclash_of_kings.41
+		ai_chance = { 
+			factor = 90
+			modifier = {
+				factor = 5
+				primary_title = { title = d_nightswatch }
+			}
+		}
+		FROM = { letter_event = { id = clash_of_kings.43 days = 10 } }
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_ACOK_JON_LEGITMISED_B
+				portrait = [From.GetID]
+			}
+		}
+		e_rebels = {
+			persistent_event_target:chronicle_player = {
+				if = {
+					limit = { 
+						NOT = { character = ROOT }
+						OR = {
+							is_liege_or_above = FROM
+							character = FROM
+							has_landed_title = e_iron_throne
+							has_opinion_modifier = { who = FROM modifier = opinion_de_facto_liege }	
+						}	
+						NOT = { trait = wildling }
+					}
+					chronicle = {
+						entry = CHRONICLE_ACOK_JON_LEGITMISED_B
+						portrait = [Root.GetID]
+					}	
+				}
+			}
+		}	
+	}
+}
+#Robb's vassals informed of Jon's legitimacy
+letter_event = {
+	id = clash_of_kings.42
+	desc = EVTDESCclash_of_kings.42
+	
+	is_triggered_only = yes
+	
+	option = { # The succession is secure
+		name = EVTOPTAclash_of_kings.42
+		ai_chance = {
+			factor = 10
+		}
+		opinion = {
+			modifier = opinion_relieved
+			who = FROM
+			years = 3
+		}
+	}
+	option = { # A bastard cannot inherit
+		name = EVTOPTBclash_of_kings.42
+		ai_chance = {
+			factor = 30
+		}
+		opinion = {
+			modifier = opinion_unhappy
+			who = FROM
+			years = 3
+		}
+	}
+}
+#Robb informed of Jon's answer
+letter_event = {
+	id = clash_of_kings.43
+	
+	is_triggered_only = yes
+	
+	desc = {
+		text = EVTDESCAclash_of_kings.43
+		trigger = {
+			FROM = { NOT = { trait = nightswatch } }
+		}
+	}
+	desc = { # Rejection
+		text = EVTDESCBclash_of_kings.43
+		trigger = {
+			FROM = { trait = nightswatch }
+		}
+	}
+	
+	option = { # Noice!
+		name = EVTOPTAclash_of_kings.43
+		trigger = {	FROM = { NOT = { trait = nightswatch } } }
+	}
+	option = { # When the time comes he will do what he must
+		name = EVTOPTBclash_of_kings.43
+		trigger = {	FROM = { trait = nightswatch } }
+	}
+}
+#Robb dies inform Jon of chance to inherit
+character_event = {
+	id = clash_of_kings.44
+	desc = EVTDESCclash_of_kings.44
+	picture = GFX_STARK
+	
+	is_triggered_only = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = { trait = nightswatch }
+	
+	option = { # I will honour my brother's last request
+		name = EVTOPTAclash_of_kings.44
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 0.7
+				primary_title = { title = d_nightswatch }
+			}
+			modifier = {
+				factor = 5
+				e_north = { holder_scope = { is_female = yes } }
+			}
+			modifier = {
+				factor = 0.6
+				e_north = { # An able son of age
+					holder_scope = {
+						dynasty = 59 
+						is_female = no 
+						age = 16
+					} 
+				}
+			}
+		}
+		remove_trait = nightswatch
+		clr_character_flag = no_court_invites
+		hidden_tooltip = {
+			remove_character_modifier = nw_ranger
+			remove_character_modifier = nw_steward
+			remove_character_modifier = nw_builder
+		}
+		if = {
+			limit = { primary_title = { title = d_nightswatch } }
+			current_heir = {
+				d_nightswatch = { gain_title = PREV }
+				hidden_tooltip = { 
+					d_the_wall = { gain_title = PREV }
+					c_castle_black = { gain_title = PREV } 			
+					c_new_gift = { gain_title = PREV }
+					c_brandons_gift = { gain_title = PREV }	
+					b_castle_black = { PREV = { capital = PREV } }
+				}
+			}
+			hidden_tooltip = {
+				any_courtier = {
+					limit = { 
+						trait = nightswatch 
+						NOT = { character = ROOT }
+						NOT = { demesne_size = 1 }
+					}
+					d_nightswatch = {
+						holder_scope = { reverse_banish = PREVPREV }
+					}
+				}
+			}
+		}
+		hidden_tooltip = { # Fix history and mark courtiers for liege transfer
+			e_north = { copy_title_history = e_north_dummy }
+			d_winterfell = { copy_title_history = e_north_dummy }
+			c_winterfell = { copy_title_history = e_north_dummy }
+			c_moatcailin = { copy_title_history = e_north_dummy }
+		}
+		e_north = { 
+			holder_scope = { 
+				save_event_target_as = previous_north_holder
+				abdicate_to = ROOT
+			}
+		}
+		hidden_tooltip = { # Remove previous holder's claims
+			event_target:previous_north_holder = {
+				any_claim = {
+					limit = { NOT = { title = e_north } }
+					remove_claim = PREV
+				}
+				move_character = ROOT
+			}
+		}
+		narrative_event = { id = clash_of_kings.45 days = 1 } # Inform realm
+	}
+	option = { # I cannot break my vows
+		name = EVTOPTBclash_of_kings.44
+		ai_chance = { 
+			factor = 80
+			modifier = {
+				factor = 5
+				primary_title = { title = d_nightswatch }
+			}
+		}
+		piety = 100
+	}
+}
+# Infrom realm Jon is the new King in the North
+narrative_event = {
+	id = clash_of_kings.45
+	title = EVTTITLEclash_of_kings.45
+	desc = EVTDESCclash_of_kings.45
+	picture = GFX_STARK
+	
+	is_triggered_only = yes
+	major = yes
+	
+	major_trigger = {
+		capital_scope = { region = world_westeros }
+		OR = {
+			independent = yes
+			top_liege = { has_landed_title = e_north }
+		}
+	}
+	
+	option = { # The King in the North!
+		name = EVTOPTAclash_of_kings.45
+		trigger = { top_liege = { has_landed_title = e_north } }
+	}
+	option = { # The bastard will die as well
+		name = EVTOPTBclash_of_kings.45
+		trigger = { has_landed_title = e_iron_throne }
+	}
+	option = { # A bastard as a King? It is strange times we live in...
+		name = EVTOPTCclash_of_kings.45
+		trigger = { 
+			NOR = {
+				has_landed_title = e_iron_throne 
+				top_liege = { has_landed_title = e_north }
+			}
+		}
+	}
+}
+
+# ###Rose and the Wolf
+# narrative_event = {
+	# id = clash_of_kings.46
+	# title = EVTTITLEclash_of_kings.46
+	# desc = EVTDESCclash_of_kings.46
+	# picture = GFX_evt_margaery
+	
+	# is_triggered_only = yes
+	
+	# option = {
+		# name = EVTOPTAclash_of_kings.46
+		# FROM = {
+			# set_character_flag = against_king
+			# clr_character_flag = neutral
+			# clr_character_flag = supporting_king
+			# clr_character_flag = inherit_war
+			# rebel_leader = {
+				# limit = { character = 2059 }
+				# FROM = {
+					# join_attacker_wars = PREV
+					# set_defacto_liege = PREV
+				# }
+				# opinion = {
+					# modifier = opinion_joined_cause
+					# who = FROM
+					# years = 2
+				# }
+				# hidden_tooltip = {
+					# letter_event = { id = mega_wars.30 }
+					# reverse_opinion = {
+						# modifier = opinion_with_rebel_leader
+						# who = FROM
+						# years = 100
+					# }
+				# }	
+			# }	
+			# e_iron_throne = {
+				# holder_scope = {
+					# opinion = {
+						# modifier = opinion_joined_rebellion
+						# who = FROM
+						# years = 10
+					# }
+					# hidden_tooltip = {
+						# character_event = { id = mega_wars.32 }
+					# }
+				# }
+			# }
+		# }
+		# if = {
+			# limit = { is_married = yes }
+			# if = { 
+				# limit = {
+					# d_thecrossing = {
+						# holder_scope = {
+							# ROOT = { 
+								# spouse = { dynasty = PREVPREV }
+							# }
+						# }
+					# }
+				# }
+				# d_thecrossing = {
+					# holder_scope = {
+						# custom_tooltip = { text = TOOLTIPFREYSANGRY }
+						# hidden_tooltip = {
+							# opinion = {
+								# who = ROOT
+								# modifier = opinion_betrothal_broken
+								# multiplier = 3
+							# }
+							# liege = {
+								# reverse_opinion = {
+									# who = PREV
+									# modifier = opinion_angry
+									# years = 5
+								# }
+								# reverse_opinion = {
+									# who = PREV
+									# modifier = opinion_angry
+									# years = 2
+								# }
+							# }
+							# set_defacto_liege = THIS
+							# set_character_flag = neutral
+							# any_demesne_title = {
+								# limit = { 
+									# OR = {
+										# tier = COUNT
+										# tier = DUKE
+									# }
+								# }				
+								# set_variable = { which = "de_facto_kingdom" value = 3 } 
+							# }
+							# clr_character_flag = against_king 
+							# character_event = { id = clash_of_kings.70 }
+						# }
+					# }
+				# }
+			# }
+			# remove_spouse = spouse
+		# }
+		# FROM = {
+			# random_dynasty_member = {
+				# limit = { character = 7253 } #margaery
+				# ROOT = { add_spouse = PREV }
+			# }
+		# }
+	# }
+	# option = { # Nope - Not Married
+		# name = EVTOPBclash_of_kings.46
+		# trigger = {
+			# is_married = no
+		# }
+	# }
+	# option = { # Nope - Married
+		# name = EVTOPCclash_of_kings.46
+		# trigger = {
+			# is_married = yes
+		# }
+	# }
+# }
+#Jojen/Meera missing failsafe
+character_event = {
+	id = clash_of_kings.47
+
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		trait = has_missing
+	}
+	
+	immediate = {
+		remove_trait = has_missing
+	}
+	
+	option = {
+		name = OK
+	}
+}	
+###Dany Quest###
+#Quest Maintenance
+character_event = {
+	id = clash_of_kings.5099
+
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = { 
+		character = 77041 
+		has_character_flag = danys_eastern_quest
+		has_game_rule = { name = shattered_realms value = off }
+	}
+	
+	immediate = { 
+		if = {
+			limit = { had_character_flag = { flag = dany_in_qarth days = 130 } }
+			character_event = { id = clash_of_kings.5200 }
+			break = yes
+		}
+		if = {
+			limit = { 
+				has_character_flag = emancipation_of_yunkai
+				war = no
+			}
+			if = {
+				limit = { k_yunkai = { has_law = slavery_2 } }
+				k_yunkai = {
+					reverse_unsafe_war = {
+						target = ROOT
+						casus_belli = war_of_emancipation
+					}
+				}
+				if = {
+					limit = { war = no }
+					narrative_event = { id = clash_of_kings.57 }
+				}
+				break = yes
+			}
+			else = {
+				narrative_event = { id = clash_of_kings.57 }
+				break = yes
+			}
+		}
+		if = {
+			limit = { 
+				has_character_flag = liberation_of_meereen
+				war = no
+			}
+			k_meereen = {
+				if = {
+					limit = { 
+						NOT = { has_law = slavery_2 } 
+						NOT = { has_game_rule = { name = slavery value = off } }
+					}
+					holder_scope = { set_character_flag = passive_slave_law_change }
+					add_law = slavery_2
+				}
+				reverse_unsafe_war = {
+					target = ROOT
+					casus_belli = war_of_liberation
+				}
+			}
+			break = yes
+		}	
+		if = {
+			limit = { 
+				has_global_flag = enslavement_of_astapor
+				k_yunkai = { holder_scope = { war = no } }
+			}
+			k_yunkai = { 
+				holder_scope = {
+					if = {
+						limit = { NOT = { character = ROOT } }
+						k_yunkai = { 
+							if = {
+								limit = { 
+									NOT = { has_law = slavery_2 } 
+									NOT = { has_game_rule = { name = slavery value = off } }
+								}
+								holder_scope = { set_character_flag = passive_slave_law_change }
+								add_law = slavery_2
+							}
+						}	
+						if = {
+							limit = { NOT = { has_landed_title = k_astapor } }
+							prestige = 200
+							if = {
+								limit = { NOT = { has_game_rule = { name = slavery value = off } } }
+								character_event = { id = slavery.1000 tooltip = "EVTTOOLTIPSLAVERY1000" } # The attacker gains a slave camp level
+							}
+							k_astapor = {
+								holder_scope = {
+									prestige = -400	
+								}
+							}	
+							k_astapor = {
+								usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
+								add_law = slavery_2
+							}
+						}
+						ROOT = {
+							set_character_flag = enslavement_of_meereen
+							narrative_event = { id = feast_for_crows.53 days = 10 }
+						}
+						k_meereen = {								
+							reverse_unsafe_war = {
+								target = PREV
+								casus_belli = war_of_enslavement
+							}
+						}
+						clr_global_flag = enslavement_of_astapor
+						any_war = {
+							if = {
+								limit = { 
+									OR = {
+										AND = {
+											attacker = { character = ROOT }
+											using_cb = slave_raid 
+										}	
+										defender = { character = ROOT } 
+									}	
+								}	
+								end_war = invalid
+							}	
+						}
+					}
+					if = {
+						limit = { character = ROOT }
+						clr_global_flag = enslavement_of_astapor
+						set_character_flag = dany_liberation_quest
+						narrative_event = { id = feast_for_crows.57 } 
+					}	
+				}
+			}			
+			break = yes
+		}
+		if = {
+			limit = { 
+				has_character_flag = enslavement_of_meereen
+				war = no
+			}
+			if = {
+				limit = { 
+					k_yunkai = { has_law = slavery_2 } 
+					NOT = { has_game_rule = { name = slavery value = off } }
+				}
+				k_yunkai = { 
+					holder_scope = {
+						k_meereen = {								
+							reverse_unsafe_war = {
+								target = PREV
+								casus_belli = war_of_enslavement
+							}
+						}
+					}
+				}
+				if = {
+					limit = { war = no }
+					set_character_flag = dany_liberation_quest
+					narrative_event = { id = feast_for_crows.57 } 
+				}
+				break = yes
+			}
+			else = {
+				set_character_flag = dany_liberation_quest
+				narrative_event = { id = feast_for_crows.57 } 
+				break = yes
+			}
+		}	
+	} 
+	
+	option = {
+		name = OK
+	}
+	
+	after = {
+		character_event = { id = clash_of_kings.5099 days = 50 } #check every 50 days
+	}
+}	
+#Arrival in Qarth
+narrative_event = {
+	id = clash_of_kings.50
+	desc = "EVTDESCclash_of_kings.50"
+	title = "EVTTITLEclash_of_kings.50"
+	picture = "GFX_evt_dany_mother_of_dragons"
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	trigger = { 
+		character = 77041 
+		has_game_rule = { name = shattered_realms value = off }
+	}
+	
+	immediate = { 
+		activate_title = { status = yes title = d_great_grass_sea }
+		d_great_grass_sea = { gain_title = ROOT }
+		activate_title = { status = no title = k_great_grass_sea }
+		k_great_grass_sea = { destroy_landed_title = THIS }	
+		set_character_flag = dany_in_qarth
+	} 
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.50" 
+		prestige = 500
+		add_artifact = daenerys_crown
+		k_qarth = {
+			holder_scope = { 
+				ROOT = { set_defacto_liege = PREV } 
+			}
+		}	
+		hidden_tooltip = { 
+			narrative_event = { id = clash_of_kings.51 days = 40 random = 15 } 
+			c_toqolarth = { copy_title_history = d_kingsmoot } # Remove Dany from the history
+			create_character = { #make Vaes Tolorro a ruin again
+				name = ""
+				religion="ruin_rel"
+				culture="ruin"	
+				dynasty=none
+				attributes = {
+					martial = 0
+					diplomacy = 0
+					intrigue = 0
+					stewardship = 0
+					learning = 0
+				}
+				trait = ruin
+			}
+			new_character = {
+				c_toqolarth = { 
+					gain_title = PREV 
+					location = { set_province_flag = ca_colony_4 }
+				}
+				set_defacto_liege = THIS
+				character_event = { id = unoccupied.101 }	
+			}
+			create_character = {
+				name = ""
+				religion="ruin_rel"
+				culture="ruin"	
+				dynasty=none
+				attributes = {
+					martial = 0
+					diplomacy = 0
+					intrigue = 0
+					stewardship = 0
+					learning = 0
+				}
+				trait = ruin
+			}
+			new_character = {
+				b_toqolarth_city = { gain_title = PREV }
+			}
+			create_character = {
+				name = ""
+				religion="ruin_rel"
+				culture="ruin"	
+				dynasty=none
+				attributes = {
+					martial = 0
+					diplomacy = 0
+					intrigue = 0
+					stewardship = 0
+					learning = 0
+				}
+				trait = ruin
+			}
+			new_character = {
+				b_toqolarth_temple = { gain_title = PREV }
+			}
+		}	
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_DANY_QUEST_ACOK
+				picture = GFX_evt_dany_mother_of_dragons
+			}
+		}
+	}
+}
+#House of the Undying
+#Event 1
+narrative_event = {
+	id = clash_of_kings.51
+	desc = "EVTDESCclash_of_kings.51"
+	title = "EVTTITLEclash_of_kings.51"
+	picture = "GFX_evt_house_of_the_undying"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.51" 
+		hidden_tooltip = { narrative_event = { id = clash_of_kings.5100 days = 1 } }	
+	}
+}
+#Event 2- 'Take the Door on the right'
+narrative_event = {
+	id = clash_of_kings.5100
+	desc = "EVTDESCclash_of_kings.5100"
+	title = "EVTTITLEclash_of_kings.5100"
+	picture = "GFX_evt_dany_pyat_pree"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.5100" 
+		hidden_tooltip = { character_event = { id = clash_of_kings.5101 days = 1 } }	
+	}
+}
+#Hall Way Choice 1
+character_event = {
+	id = clash_of_kings.5101
+	desc = "EVTDESCclash_of_kings.5101"
+	picture = "GFX_evt_dany_corridor"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.5101" 
+		hidden_tooltip = { narrative_event = { id = clash_of_kings.5102 days = 1 } }	
+	}
+	option = {
+		name = "EVTOPTBclash_of_kings.5101" 
+		hidden_tooltip = { narrative_event = { id = clash_of_kings.5103 days = 1 } }	
+	}
+	option = {
+		name = "EVTOPTCclash_of_kings.5101" 
+		hidden_tooltip = { narrative_event = { id = clash_of_kings.5104 days = 1 } }	
+	}
+	# option = {
+		# name = "EVTOPTDclash_of_kings.5101" 
+		# trigger = { random = 10 } 
+		# hidden_tooltip = { narrative_event = { id = clash_of_kings.5104 days = 1 } }	
+	# }
+}
+#Left Door 1
+narrative_event = {
+	id = clash_of_kings.5102
+	desc = "EVTDESCclash_of_kings.5102"
+	title = "EVTTITLEclash_of_kings.5102"
+	picture = "GFX_evt_dany_corridor"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.5102" 
+		add_character_modifier = {
+			name = false_visions_1
+			duration = 2190
+		}
+		hidden_tooltip = { character_event = { id = clash_of_kings.5105 days = 2 } }	
+	}
+}
+#Middle Door 1
+narrative_event = {
+	id = clash_of_kings.5103
+	desc = "EVTDESCclash_of_kings.5103"
+	title = "EVTTITLEclash_of_kings.5103"
+	picture = "GFX_evt_dany_corridor"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.5102" 
+		add_character_modifier = {
+			name = insight_into_the_past_1
+			duration = 2190
+		}
+		hidden_tooltip = { character_event = { id = clash_of_kings.5105 days = 2 } }	
+	}
+}
+#Right Door 1
+narrative_event = {
+	id = clash_of_kings.5104
+	desc = "EVTDESCclash_of_kings.5104"
+	title = "EVTTITLEclash_of_kings.5104"
+	picture = "GFX_evt_dany_corridor"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.5102" 
+		add_character_modifier = {
+			name = prophesied_future_1
+			duration = 2190
+		}
+		hidden_tooltip = { character_event = { id = clash_of_kings.5105 days = 2 } }	
+	}
+}
+#Hall Way Choice 2
+character_event = {
+	id = clash_of_kings.5105
+	desc = "EVTDESCclash_of_kings.5105"
+	picture = "GFX_evt_dany_corridor"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.5101" 
+		hidden_tooltip = { narrative_event = { id = clash_of_kings.5106 days = 1 } }	
+	}
+	option = {
+		name = "EVTOPTBclash_of_kings.5101" 
+		hidden_tooltip = { narrative_event = { id = clash_of_kings.5107 days = 1 } }	
+	}
+	option = {
+		name = "EVTOPTCclash_of_kings.5101" 
+		hidden_tooltip = { narrative_event = { id = clash_of_kings.5108 days = 1 } }	
+	}
+	option = {
+		name = "EVTOPTDclash_of_kings.5101" 
+		trigger = { random = 10 } 
+		hidden_tooltip = { narrative_event = { id = clash_of_kings.5108 days = 1 } }	
+	}
+}
+#Left Door 2
+narrative_event = {
+	id = clash_of_kings.5106
+	desc = "EVTDESCclash_of_kings.5106"
+	title = "EVTTITLEclash_of_kings.5106"
+	picture = "GFX_evt_dany_corridor"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.5102" 
+		if = {
+			limit = { has_character_modifier = false_visions_1 }
+			hidden_tooltip = { remove_character_modifier = false_visions_1 }
+			add_character_modifier = {
+				name = false_visions_2
+				duration = 2190
+			}
+		}
+		if = {
+			limit = { 
+				NOT = { has_character_modifier = false_visions_1 }
+				NOT = { has_character_modifier = false_visions_2 }
+			}
+			add_character_modifier = {
+				name = false_visions_1
+				duration = 2190
+			}
+		}		
+		hidden_tooltip = { character_event = { id = clash_of_kings.5109 days = 2 } }	
+	}
+}
+#Middle Door 2
+narrative_event = {
+	id = clash_of_kings.5107
+	desc = "EVTDESCclash_of_kings.5107"
+	title = "EVTTITLEclash_of_kings.5107"
+	picture = "GFX_evt_dany_corridor"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.5102" 
+		if = {
+			limit = { has_character_modifier = insight_into_the_past_1 }
+			hidden_tooltip = { remove_character_modifier = insight_into_the_past_1 }
+			add_character_modifier = {
+				name = insight_into_the_past_2
+				duration = 2190
+			}
+		}
+		if = {
+			limit = { 
+				NOT = { has_character_modifier = insight_into_the_past_1 }
+				NOT = { has_character_modifier = insight_into_the_past_2 }
+			}
+			add_character_modifier = {
+				name = insight_into_the_past_1
+				duration = 2190
+			}
+		}	
+		hidden_tooltip = { character_event = { id = clash_of_kings.5109 days = 2 } }	
+	}
+}
+#Right Door 2
+narrative_event = {
+	id = clash_of_kings.5108
+	desc = "EVTDESCclash_of_kings.5108"
+	title = "EVTTITLEclash_of_kings.5108"
+	picture = "GFX_evt_dany_corridor"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.5102" 
+		if = {
+			limit = { has_character_modifier = prophesied_future_1 }
+			hidden_tooltip = { remove_character_modifier = prophesied_future_1 }
+			add_character_modifier = {
+				name = prophesied_future_2
+				duration = 2190
+			}
+		}
+		if = {
+			limit = { 
+				NOT = { has_character_modifier = prophesied_future_1 }
+				NOT = { has_character_modifier = prophesied_future_2 }
+			}
+			add_character_modifier = {
+				name = prophesied_future_1
+				duration = 2190
+			}
+		}	
+		hidden_tooltip = { character_event = { id = clash_of_kings.5109 days = 2 } }	
+	}
+}
+#Hall Way Choice 3
+character_event = {
+	id = clash_of_kings.5109
+	desc = "EVTDESCclash_of_kings.5109"
+	picture = "GFX_evt_dany_corridor"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.5101" 
+		hidden_tooltip = { narrative_event = { id = clash_of_kings.5110 days = 1 } }	
+	}
+	option = {
+		name = "EVTOPTBclash_of_kings.5101" 
+		hidden_tooltip = { narrative_event = { id = clash_of_kings.5111 days = 1 } }	
+	}
+	option = {
+		name = "EVTOPTCclash_of_kings.5101" 
+		hidden_tooltip = { narrative_event = { id = clash_of_kings.5112 days = 1 } }	
+	}
+	# option = {
+		# name = "EVTOPTDclash_of_kings.5101" 
+		# trigger = { random = 10 } 
+		# hidden_tooltip = { narrative_event = { id = clash_of_kings.5112 days = 1 } }	
+	# }
+}
+#Left Door 3
+narrative_event = {
+	id = clash_of_kings.5110
+	desc = "EVTDESCclash_of_kings.5110"
+	title = "EVTTITLEclash_of_kings.5110"
+	picture = "GFX_evt_dany_corridor"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.5110" 
+		if = {
+			limit = { has_character_modifier = false_visions_2 }
+			hidden_tooltip = { remove_character_modifier = false_visions_2 }
+			add_character_modifier = {
+				name = false_visions_3
+				duration = 2190
+			}
+		}
+		if = {
+			limit = { has_character_modifier = false_visions_1 }
+			hidden_tooltip = { remove_character_modifier = false_visions_1 }
+			add_character_modifier = {
+				name = false_visions_2
+				duration = 2190
+			}
+		}
+		if = {
+			limit = { 
+				NOT = { has_character_modifier = false_visions_1 }
+				NOT = { has_character_modifier = false_visions_2 }
+				NOT = { has_character_modifier = false_visions_3 }
+			}
+			add_character_modifier = {
+				name = false_visions_1
+				duration = 2190
+			}
+		}	
+		hidden_tooltip = { character_event = { id = clash_of_kings.5113 days = 2 } }	
+	}
+}
+#Middle Door 3
+narrative_event = {
+	id = clash_of_kings.5111
+	desc = "EVTDESCclash_of_kings.5111"
+	title = "EVTTITLEclash_of_kings.5111"
+	picture = "GFX_evt_dany_corridor"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.5110" 
+		if = {
+			limit = { has_character_modifier = insight_into_the_past_2 }
+			hidden_tooltip = { remove_character_modifier = insight_into_the_past_2 }
+			add_character_modifier = {
+				name = insight_into_the_past_3
+				duration = 2190
+			}
+		}
+		if = {
+			limit = { has_character_modifier = insight_into_the_past_1 }
+			hidden_tooltip = { remove_character_modifier = insight_into_the_past_1 }
+			add_character_modifier = {
+				name = insight_into_the_past_2
+				duration = 2190
+			}
+		}
+		if = {
+			limit = { 
+				NOT = { has_character_modifier = insight_into_the_past_1 }
+				NOT = { has_character_modifier = insight_into_the_past_2 }
+				NOT = { has_character_modifier = insight_into_the_past_3 }
+			}
+			add_character_modifier = {
+				name = insight_into_the_past_1
+				duration = 2190
+			}
+		}	
+		hidden_tooltip = { character_event = { id = clash_of_kings.5113 days = 2 } }	
+	}
+}
+#Right Door 3
+narrative_event = {
+	id = clash_of_kings.5112
+	desc = "EVTDESCclash_of_kings.5112"
+	title = "EVTTITLEclash_of_kings.5112"
+	picture = "GFX_evt_dany_corridor"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.5110" 
+		if = {
+			limit = { has_character_modifier = prophesied_future_2 }
+			hidden_tooltip = { remove_character_modifier = prophesied_future_2 }
+			add_character_modifier = {
+				name = prophesied_future_3
+				duration = 2190
+			}
+		}
+		if = {
+			limit = { has_character_modifier = prophesied_future_1 }
+			hidden_tooltip = { remove_character_modifier = prophesied_future_1 }
+			add_character_modifier = {
+				name = prophesied_future_2
+				duration = 2190
+			}
+		}
+		if = {
+			limit = { 
+				NOT = { has_character_modifier = prophesied_future_1 }
+				NOT = { has_character_modifier = prophesied_future_2 }
+				NOT = { has_character_modifier = prophesied_future_3 }
+			}
+			add_character_modifier = {
+				name = prophesied_future_1
+				duration = 2190
+			}
+		}	
+		hidden_tooltip = { character_event = { id = clash_of_kings.5113 days = 2 } }	
+	}
+}
+#Conclusion 1
+character_event = {
+	id = clash_of_kings.5113
+	desc = "EVTDESCclash_of_kings.5113"
+	picture = "GFX_evt_dany_warlocks"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.5113" 
+		hidden_tooltip = { narrative_event = { id = clash_of_kings.5114 days = 1 } }	
+	}
+}
+#Conclusion 2
+narrative_event = {
+	id = clash_of_kings.5114
+	desc = "EVTDESCclash_of_kings.5114"
+	title = "EVTTITLEclash_of_kings.5114"
+	picture = "GFX_evt_dany_warlocks"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.5114" 
+		hidden_tooltip = { narrative_event = { id = clash_of_kings.5115 days = 1 } }	
+	}
+}
+#Conclusion 3
+narrative_event = {
+	id = clash_of_kings.5115
+	desc = "EVTDESCclash_of_kings.5115"
+	title = "EVTTITLEclash_of_kings.5115"
+	picture = "GFX_evt_dany_warlocks"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.5115" 
+		hidden_tooltip = { narrative_event = { id = clash_of_kings.5116 days = 1 } }	
+	}
+}
+#Conclusion 4
+narrative_event = {
+	id = clash_of_kings.5116
+	desc = "EVTDESCclash_of_kings.5116"
+	title = "EVTTITLEclash_of_kings.5116"
+	picture = "GFX_evt_dany_hotu_warlocks2"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.5116" 
+		hidden_tooltip = { narrative_event = { id = clash_of_kings.5117 days = 1 } }	
+	}
+}
+#Conclusion 5
+narrative_event = {
+	id = clash_of_kings.5117
+	desc = "EVTDESCclash_of_kings.5117"
+	title = "EVTTITLEclash_of_kings.5117"
+	picture = "GFX_evt_dany_hotu_dracarys"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.5117" 
+		hidden_tooltip = { narrative_event = { id = clash_of_kings.5200 days = 10 random = 5 } }	
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_DANY_QUEST_HOTU
+				picture = GFX_evt_dany_hotu_dracarys
+			}
+		}
+	}
+}
+#Must leave Qarth, Strong belwas arrives
+narrative_event = {
+	id = clash_of_kings.5200
+	desc = "EVTDESCclash_of_kings.5200"
+	title = "EVTTITLEclash_of_kings.5200"
+	picture = "GFX_evt_qarth"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_character_flag = dany_in_qarth
+	}
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.5200" 
+		hidden_tooltip = { narrative_event = { id = clash_of_kings.52 days = 30 random = 10 } }			
+	}
+	
+	option = {
+		name = "EVTOPTBclash_of_kings.5200" #Marry Xaro
+		trigger = {
+			ai = no
+			is_married = no
+			c_13635000 = {
+				is_alive = yes
+				is_ruler = yes
+				prisoner = no
+				ai = yes
+			}
+		}
+		wealth = 400
+		c_13635000 = {
+			add_spouse_matrilineal = ROOT 
+			hidden_tooltip = {
+				add_character_modifier = {
+					name = "wedding"
+					duration = 60
+				}
+			}
+			ROOT = {
+				random_child = {
+					limit = {
+						NOT = { any_friend = { is_alive = yes NOT = { character = ROOT } } }
+						NOT = { any_friend = { character = ROOT } } 
+						trait = dragon
+						is_alive = yes
+					}
+					add_friend = PREVPREV
+					#hidden_tooltip = { set_mother = 0 }
+					clr_character_flag = shadow_lands_dragon
+				}
+			}		
+		}
+		hidden_tooltip = {
+			remove_trait = widowed 
+			fertility = 0.05
+			clr_character_flag = dany_no_tame_dragon
+			character_event = { id = clash_of_kings.60 days = 30 }
+		}
+	}
+	after = {
+		c_12300101 = { #Strong Belwas
+			if = {
+				limit = {
+					is_alive = yes
+					is_ruler = no
+				}
+				move_character = ROOT
+			}
+		}
+		c_12400101 = { #Groleo
+			if = {
+				limit = {
+					is_alive = yes
+					is_ruler = no
+				}
+				move_character = ROOT
+			}
+		}
+	}
+}
+#Leave Qarth for Pentos, maybe go to Astapor?
+narrative_event = {
+	id = clash_of_kings.52
+	desc = "EVTDESCclash_of_kings.52"
+	title = "EVTTITLEclash_of_kings.52"
+	picture = "GFX_evt_dany_ship"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.52" #To Astapor!
+		ai_chance = { factor = 90 }
+		k_astapor = {
+			holder_scope = { ROOT = { set_defacto_liege = PREV } }
+		}	
+		if = { #Add random female lover
+			limit = { has_lover = no }
+			random_courtier = {
+				limit = {
+					is_female = yes
+					age = 15
+					NOT = { age = 26 }
+					NOT = { trait = dragon }
+				}
+				add_lover = ROOT
+			}
+		}	
+		hidden_tooltip = { narrative_event = { id = clash_of_kings.53 days = 30 random = 10 } }
+		clr_global_flag = aegon_invasion
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_DANY_QUEST_ASTAPOR
+				picture = GFX_evt_dany_ship
+			}
+		}		
+	}
+	option = {
+		name = "EVTOPTBclash_of_kings.52" #To Pentos!
+		ai_chance = { factor = 10 }
+		b_mopatis = {
+			holder_scope = { ROOT = { set_defacto_liege = PREV } }
+		}		
+		hidden_tooltip = { narrative_event = { id = clash_of_kings.59 days = 40 random = 15 } }	
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_DANY_QUEST_PENTOS
+				picture = GFX_evt_dany_ship
+			}
+		}	
+	}
+}
+#Dany decides to trick Astapor
+narrative_event = {
+	id = clash_of_kings.53
+	desc = "EVTDESCclash_of_kings.53"
+	title = "EVTTITLEclash_of_kings.53"
+	picture = "GFX_evt_dany_astapor"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.53"
+		add_trait = liberator
+		c_12400102 = { #Missandei
+			if = {
+				limit = {
+					is_alive = yes
+					is_ruler = no
+					OR = {
+						trait = slave
+						has_game_rule = { name = slavery value = off }
+					}	
+				}
+				move_character = ROOT
+				remove_trait = slave
+				add_trait = former_slave
+				opinion = {
+					modifier = opinion_loyal_servant
+					who = ROOT
+				}
+			}
+		}
+		hidden_tooltip = { narrative_event = { id = clash_of_kings.54 days = 15 random = 5 } }	
+	}
+}
+#Sack of Astapor 1
+narrative_event = {
+	id = clash_of_kings.54
+	desc = "EVTDESCclash_of_kings.54"
+	title = "EVTTITLEclash_of_kings.54"
+	picture = "GFX_evt_dany_astapor_drogon"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.54" 
+		set_defacto_liege = THIS
+		k_astapor = {
+			holder_scope = {
+				hidden_tooltip = { character_event = { id = clash_of_kings.55 } }				
+				any_vassal = {
+					limit = { is_patrician = yes }	
+					hidden_tooltip = { character_event = { id = clash_of_kings.55 } }
+					tooltip = {
+						death = {
+							death_reason = death_murder_butchered
+							killer = ROOT
+						}
+					}	
+				}	
+				tooltip = {
+					death = {
+						death_reason = death_murder_butchered
+						killer = ROOT
+					}
+				}	
+			}
+		}
+		hidden_tooltip = { narrative_event = { id = clash_of_kings.5400 } }	
+	}
+}
+#Sack of Astapor 2
+narrative_event = {
+	id = clash_of_kings.5400
+	desc = "EVTDESCclash_of_kings.5400"
+	title = "EVTTITLEclash_of_kings.5400"
+	picture = "GFX_evt_dany_astapor_sack"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = { #If canon unsullied aren't available create some
+				NOR = {
+					c_600496 = {
+						is_alive = yes
+						OR = {
+							trait = slave
+							has_game_rule = { name = slavery value = off }
+						}
+					}
+					c_601496 = {
+						is_alive = yes
+						OR = {
+							trait = slave
+							has_game_rule = { name = slavery value = off }
+						}
+					}
+				}
+			}
+			set_character_flag = create_unsullied
+		}
+		hidden_tooltip = {
+			k_astapor = { 
+				holder_scope = {	
+					save_event_target_as = astapor_leader	
+					create_character = {
+						random_traits = yes
+						dynasty = none
+						female = no
+						age = 55
+						attributes = {
+							learning = 15
+							diplomacy = 3
+							stewardship = 3
+							martial = 0
+							intrigue = 3
+						}
+						trait = temperate
+						trait = just
+						trait = scholarly_theologian
+						historical = yes
+					}
+					new_character = {
+						move_character = ROOT
+						save_event_target_as = new_council
+					}
+				}
+			}	
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.5400" #Leave council in charge and move on
+		ai_chance = {
+			factor = 95
+		}
+		prestige = 200
+		wealth = 400	
+		event_target:astapor_leader = {							
+			tooltip = { abdicate_to = event_target:new_council }
+			hidden_tooltip = { 
+				family_palace = { destroy_settlement = THIS }							
+				any_demesne_title = {
+					limit = {
+						OR = {
+							higher_tier_than = COUNT
+							location = { province_id = 613 }
+						}	
+					}
+					usurp_title = event_target:new_council
+				}
+				set_government_type = feudal_government	
+				any_demesne_title = { succession = primogeniture }
+				recalc_succession = yes				
+			}
+			death = {
+				death_reason = death_murder_butchered
+				killer = ROOT
+			}
+		}
+		event_target:new_council = {
+			hidden_tooltip = { 
+				any_realm_lord = {
+					limit = { 
+						is_patrician = yes
+						culture = astapori
+					}
+					hidden_tooltip = {				
+						family_palace = { destroy_settlement = THIS }							
+						any_demesne_title = {
+							limit = {
+								OR = {
+									higher_tier_than = COUNT
+									location = { province_id = 613 }
+								}	
+							}
+							usurp_title = event_target:new_council
+						}
+						set_government_type = feudal_government	
+						any_demesne_title = { succession = primogeniture }
+						recalc_succession = yes	
+					}	
+					death = {
+						death_reason = death_murder_butchered
+						killer = ROOT
+					}
+				}
+				
+				set_defacto_liege = THIS 			
+				family_palace = { destroy_settlement = THIS }
+				set_government_type = feudal_government
+				b_greatpyramidastapor = {
+					gain_title = PREV
+					province_capital = yes
+				}
+				set_government_type = feudal_government
+				set_government_type = feudal_government_LP
+			}
+		}
+			
+		
+		hidden_tooltip = { #Up Dany to King Tier
+			activate_title = { status = yes title = k_great_grass_sea }
+			#b_worm_pyramid = { gain_title = ROOT }
+			set_character_flag = passive_slave_law_change
+			k_great_grass_sea = { 
+				gain_title = ROOT 
+				add_law = centralization_1
+				if = {
+					limit = { NOT = { has_game_rule = { name = slavery value = off } } }
+					add_law = slavery_0
+				}	
+			}
+			activate_title = { status = no title = d_great_grass_sea }
+			d_great_grass_sea = { destroy_landed_title = THIS }
+			if = {
+				limit = { ai = no }
+				chronicle = {
+					entry = CHRONICLE_DANY_QUEST_SACK_ASTAPOR
+					picture = GFX_evt_dany_astapor_drogon
+				}
+			}
+		}	
+		hidden_tooltip = { narrative_event = { id = clash_of_kings.56 days = 10 } }		
+	}
+	
+	option = {
+		name = "EVTOPTBclash_of_kings.5400" #Stay and become Queen of Astapor
+		ai_chance = {
+			factor = 5
+		}
+		prestige = 200
+		wealth = 400	
+
+		event_target:astapor_leader = {							
+			tooltip = { abdicate_to = ROOT }
+			hidden_tooltip = { 		
+				family_palace = { destroy_settlement = THIS }							
+				any_demesne_title = {
+					limit = {
+						OR = {
+							higher_tier_than = COUNT
+							location = { province_id = 613 }
+						}	
+					}
+					usurp_title = ROOT
+				}
+				set_government_type = feudal_government	
+				any_demesne_title = { succession = primogeniture }
+				recalc_succession = yes	
+			}
+			death = {
+				death_reason = death_murder_butchered
+				killer = ROOT
+			}
+		}	
+		hidden_tooltip = { 
+			any_realm_lord = {
+				limit = { 
+					is_patrician = yes
+					culture = astapori
+				}
+				hidden_tooltip = {				
+					family_palace = { destroy_settlement = THIS }							
+					any_demesne_title = {
+						limit = {
+							OR = {
+								higher_tier_than = COUNT
+								location = { province_id = 613 }
+							}	
+						}
+						usurp_title = ROOT
+					}
+					set_government_type = feudal_government	
+					any_demesne_title = { succession = primogeniture }
+					recalc_succession = yes
+				}	
+				death = {
+					death_reason = death_murder_butchered
+					killer = ROOT
+				}
+			}
+			
+			set_defacto_liege = THIS 
+			family_palace = { destroy_settlement = THIS }
+			set_government_type = feudal_government
+			b_greatpyramidastapor = { 
+				gain_title = ROOT 
+				province_capital = yes
+				ROOT = { capital = PREV }
+			}		
+			set_government_type = feudal_government			
+			activate_title = { status = no title = d_great_grass_sea }
+			d_great_grass_sea = { destroy_landed_title = THIS }
+			if = {
+				limit = { ai = no }
+				chronicle = {
+					entry = CHRONICLE_DANY_QUEST_SACK_ASTAPOR
+					picture = GFX_evt_dany_astapor_drogon
+				}
+			}
+		}	
+		#end quest
+		clr_character_flag = dany_no_tame_dragon
+		clr_character_flag = danys_eastern_quest
+		clr_global_flag = no_enslave_astapor	
+		hidden_tooltip = {		
+			c_5001 = {
+				remove_trait = wikid
+				remove_trait = forbid_marriage
+			}
+			c_2012 = {
+				remove_trait = wikid
+			}
+			c_1003 = {
+				remove_trait = wikid
+			}	
+			d_meereen = {
+				holder_scope = {
+					if = {
+						limit = { trait = forbid_marriage }
+						remove_trait = forbid_marriage
+					}	
+					any_realm_lord = {
+						if = {
+							limit = { trait = forbid_marriage }
+							remove_trait = forbid_marriage
+						}	
+					}
+				}
+			}	
+			fertility = 0.05
+		}
+	}
+	
+	after = {
+		custom_tooltip = {
+			text = DANYUNSULLIED
+			hidden_tooltip = {
+				613 = {
+					ROOT = {
+						spawn_unit = {
+							province = PREV
+							home = PREV
+							owner = ROOT
+							troops = {
+								unsullied = { 3334 3334 }
+							}
+							attrition = 0.5
+							earmark = dummy #needs or else it will CTD for some reason
+						}
+						spawn_unit = {
+							province = PREV
+							home = PREV
+							owner = ROOT
+							troops = {
+								unsullied = { 3333 3333 }
+							}
+							attrition = 0.5
+							earmark = dummy #needs or else it will CTD for some reason
+						}
+						spawn_unit = {
+							province = PREV
+							home = PREV
+							owner = ROOT
+							troops = {
+								unsullied = { 3333 3333 }
+							}
+							attrition = 0.5
+							earmark = dummy #needs or else it will CTD for some reason
+						}
+					}
+				}
+			}
+		}	
+		c_600496  = {
+			if = {
+				limit = {
+					is_alive = yes
+					is_ruler = no
+					OR = {
+						trait = slave
+						has_game_rule = { name = slavery value = off }
+					}	
+				}
+				move_character = ROOT 
+				hidden_tooltip = { remove_trait = slave }
+				add_trait = former_slave
+				opinion = { who = ROOT modifier = opinion_abolished_slavery_former_slave months = 2400 }
+			}
+		}
+		c_601496  = {
+			if = {
+				limit = {
+					is_alive = yes
+					is_ruler = no
+					OR = {
+						trait = slave
+						has_game_rule = { name = slavery value = off }
+					}	
+				}
+				move_character = ROOT 
+				hidden_tooltip = { remove_trait = slave }
+				add_trait = former_slave
+				opinion = { who = ROOT modifier = opinion_abolished_slavery_former_slave months = 2400 }
+			}
+		}
+		if = {
+			limit = { has_character_flag = create_unsullied }
+			clr_character_flag = create_unsullied
+			create_random_soldier = {
+				random_traits = yes
+				dynasty = none
+				female = no
+				culture = random
+				religion = lady_of_spears
+				trait = eunuch
+				trait = former_slave
+				age = 20
+				historical = yes
+			}
+			new_character = { 
+				check_for_defunct_culture_effect = yes
+				opinion = { who = ROOT modifier = opinion_abolished_slavery_former_slave months = 2400 }
+				change_diplomacy = -3
+				change_stewardship = -5
+				change_learning = -5
+				change_intrigue = -3
+				remove_trait = weak
+				remove_trait = imbecile
+				remove_trait = inbred
+				remove_trait = slow
+				remove_trait = craven
+				remove_trait = ambitious
+				remove_trait = lustful
+				remove_trait = rude
+				random_list = {
+					25 = { add_trait = trained_warrior }
+					60 = { add_trait = skilled_warrior }
+					15 = { add_trait = master_warrior }
+				}
+			}
+		}
+		k_astapor = {
+			if = {
+				limit = { NOT = { has_game_rule = { name = slavery value = off } } }
+				add_law_w_cooldown = slavery_0
+				hidden_tooltip = { add_law = treaty_breach_1 }
+			}	
+			set_global_flag = no_enslave_astapor
+		}
+		613 = {
+			add_province_modifier = {
+				name = sacked
+				duration = 3650
+			}
+			ROOT = {
+				spawn_unit = {
+					province = PREV
+					home = PREV
+					owner = ROOT
+					troops = {
+						light_infantry = { 2500 2500 }
+						archers = { 400 400 }
+						heavy_infantry = { 100 100 }
+						light_cavalry = { 50 50 }
+						horse_archers = { 33 33 }
+					}
+					attrition = 1.0
+					earmark = dummy #needs or else it will CTD for some reason
+				}					
+			}	
+		}
+	}
+}
+
+character_event  = { #Usurp wise masters
+	id = clash_of_kings.55
+	desc = "EVTDESCclash_of_kings.55"
+	picture = "GFX_evt_dany_astapor_drogon"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.55"  
+		tooltip = {
+			death = {
+				death_reason = death_murder_butchered
+				killer = FROM
+			}
+		}
+	}
+}	
+#Emacipate Yunkai
+narrative_event = {
+	id = clash_of_kings.56
+	desc = "EVTDESCclash_of_kings.56"
+	title = "EVTTITLEclash_of_kings.56"
+	picture = "GFX_evt_yunkai"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		k_yunkai = {
+			if = {
+				limit = { 
+					NOT = { has_law = slavery_2 } 
+					NOT = { has_game_rule = { name = slavery value = off } }
+				}
+				holder_scope = { set_character_flag = passive_slave_law_change }
+				add_law = slavery_2
+			}
+		}
+		#Find King Usurper
+		c_600000060 = { #Cleon the Butcher
+			if = {
+				limit = {
+					is_alive = yes
+					NOT = { trait = slave }
+					prisoner = no
+					is_incapable = no
+				}
+				save_event_target_as = astapor_king
+				
+				give_nickname = nick_butcher_king
+				dynasty = 360028
+				
+				remove_trait = slave
+				add_trait = former_slave
+				slave_owner = {
+					limit = { has_opinion_modifier = { who = PREV modifier = opinion_my_slave } }
+					remove_opinion = { who = PREV modifier = opinion_my_slave }
+					reverse_remove_opinion = { who = PREV modifier = opinion_my_owner }
+					character_event = { id = slavery.1 }
+				}
+				any_spouse = {
+					limit = { trait = slave }
+					character_event = { id = slavery.0 }
+					add_spouse = PREV
+				}
+				any_child = {
+					limit = { trait = slave }
+					character_event = { id = slavery.0 }
+				}
+				any_child_even_if_dead = {
+					limit = { dynasty = 0 }
+					dynasty = 360028
+				}
+				break = yes				
+			}	
+		}
+		k_astapor = { #else create a random one
+			holder_scope = {				
+				create_character = {
+					random_traits = yes
+					dynasty = actually_culture
+					female = no
+					trait = former_slave
+					trait = ambitious
+					trait = underhanded_rogue
+					trait = cruel		
+					historical = yes
+				}
+				new_character = {
+					save_event_target_as = astapor_king
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.56" 
+		set_character_flag = emancipation_of_yunkai
+		k_yunkai = {
+			reverse_unsafe_war = {
+				target = ROOT
+				casus_belli = war_of_emancipation
+			}
+		}
+		k_astapor = {
+			holder_scope = {
+				abdicate_to = event_target:astapor_king
+				death = {
+					death_reason = death_murder
+				}
+			}
+		}
+		event_target:astapor_king = {
+			hidden_tooltip = {
+				family_palace = { destroy_settlement = THIS }
+				set_government_type = feudal_government 
+				any_spouse = {
+					limit = { is_ruler = no }
+					move_character = PREV
+				}
+				any_child = {
+					limit = { is_ruler = no }
+					move_character = PREV
+				}
+			}	
+		}
+		k_astapor = {
+			hidden_tooltip = { 
+				if = {
+					limit = { NOT = { has_game_rule = { name = slavery value = off } } }
+					add_law_w_cooldown = slavery_0
+					add_law = treaty_breach_1
+				}	
+				holder_scope = {	
+					any_realm_lord = {
+						remove_opinion = { who = PREV modifier = opinion_abolished_slavery_bad }
+						remove_opinion = { who = PREV modifier = opinion_abolished_slavery_good }
+					}
+					any_realm_character = {
+						limit = {
+							culture = astapori
+							is_female = no
+							is_ruler = no
+							NOT = { age = 25 }
+							father_even_if_dead = { is_ruler = yes }
+							NOT = { dynasty = 0 }
+							NOT = { dynasty = event_target:astapor_king }
+						}
+						add_trait = eunuch
+						any_spouse = { remove_spouse = PREV }
+						move_character = event_target:astapor_king						
+						opinion = { who = event_target:astapor_king modifier = opinion_castrated_me }
+					}
+					any_realm_character = {
+						limit = {
+							NOT = { has_opinion_modifier = { who = event_target:astapor_king modifier = opinion_castrated_me } }
+							any_close_relative = { has_opinion_modifier = { who = event_target:astapor_king modifier = opinion_castrated_me } }
+						}
+						opinion = { who = event_target:astapor_king modifier = opinion_castrated_kin }
+					}
+					random_realm_character = {
+						limit = {
+							culture = astapori
+							is_female = yes
+							is_ruler = no
+							age = 14
+							NOT = { age = 25 }
+							father_even_if_dead = { is_ruler = yes }
+							NOT = { dynasty = 0 }
+							NOT = { dynasty = event_target:astapor_king }
+							is_married = no
+							is_consort = no
+							is_senior_consort_party = no
+						}
+						move_character = event_target:astapor_king
+						event_target:astapor_king = { add_consort = PREV }
+						opinion = {
+							who = event_target:astapor_king
+							modifier = opinion_forced_consort
+						}
+					}
+					random_realm_character = {
+						limit = {
+							culture = astapori
+							is_female = yes
+							is_ruler = no
+							age = 14
+							NOT = { age = 25 }
+							father_even_if_dead = { is_ruler = yes }
+							NOT = { dynasty = 0 }
+							NOT = { dynasty = event_target:astapor_king }
+							is_married = no
+							is_consort = no
+							is_senior_consort_party = no
+						}
+						move_character = event_target:astapor_king
+						event_target:astapor_king = { add_consort = PREV }
+						opinion = {
+							who = event_target:astapor_king
+							modifier = opinion_forced_consort
+						}
+					}
+				}	
+			}
+		}
+		hidden_tooltip = { narrative_event = { id = clash_of_kings.5600 days = 2 } }	
+	}
+}
+#Daario
+narrative_event = {
+	id = clash_of_kings.5600
+	desc = "EVTDESCclash_of_kings.5600"
+	title = "EVTTITLEclash_of_kings.5600"
+	picture = "GFX_evt_yunkai"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.5600" 
+		c_601496  = {
+			if = {
+				limit = {
+					is_alive = yes
+					is_ruler = no
+					OR = {
+						trait = slave
+						has_game_rule = { name = slavery value = off }
+					}	
+				}
+				move_character = ROOT 
+				hidden_tooltip = { remove_trait = slave }
+				add_trait = former_slave
+				opinion = { who = ROOT modifier = opinion_abolished_slavery_former_slave months = 2400 }
+			}
+		}
+		c_602226 = { #Brown ben Plumm
+			if = {
+				limit = {
+					is_alive = yes
+					is_ruler = no
+					liege = { has_landed_title = d_second_sons }
+				}
+				liege = {
+					abdicate_to = PREV
+					death = {
+						death_reason = death_murder
+						killer = PREV
+					}
+				}
+				join_attacker_wars = ROOT 
+			}	
+		}
+		c_16892322 = {
+			if = {
+				limit = {
+					is_alive = yes
+					is_ruler = no
+					liege = { has_landed_title = d_stormcrows }
+				}
+				liege = {
+					abdicate_to = PREV
+					death = {
+						death_reason = death_murder
+						killer = PREV
+					}
+				}
+				join_attacker_wars = ROOT 
+			}	
+		}
+	}
+}
+#Jorah betrayal- War against Meereen (Triggered from emancipation CB)
+narrative_event = {
+	id = clash_of_kings.57
+	desc = "EVTDESCclash_of_kings.57"
+	title = "EVTTITLEclash_of_kings.57"
+	picture = "GFX_evt_dany_meereen_1"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_character_flag = emancipation_of_yunkai
+		k_meereen = {
+			if = {
+				limit = { 
+					NOT = { has_law = slavery_2 } 
+					NOT = { has_game_rule = { name = slavery value = off } }
+				}				
+				holder_scope = { set_character_flag = passive_slave_law_change }
+				add_law = slavery_2
+			}
+		}
+		hidden_tooltip = {
+			c_5001 = {
+				if = {
+					limit = {  
+						character = 5001 
+						is_alive = yes
+						is_married = no
+					}
+					add_trait = wikid
+					add_trait = forbid_marriage
+					character_event = { id = feast_for_crows.65 days = 1000 } #Failsafe
+					c_2012 = {
+						if = {
+							limit = { 
+								is_alive = yes
+								is_ruler = no
+							}
+							add_trait = wikid
+							character_event = { id = feast_for_crows.65 days = 1000 } #Failsafe
+						}	
+					}
+					c_1003 = {
+						if = {
+							limit = { 
+								is_alive = yes
+								is_ruler = no
+							}
+							add_trait = wikid
+							character_event = { id = feast_for_crows.65 days = 1000 } #Failsafe
+						}	
+					}
+				}	
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.57"
+		c_201302 = { #Barristan
+			if = {
+				limit = {  
+					is_alive = yes
+					is_ruler = no
+				}
+				move_character = ROOT
+			}
+		}		
+		c_102 = {
+			if = {
+				limit = {  
+					is_alive = yes
+					is_ruler = no
+					liege = { character = ROOT }
+				}
+				reverse_opinion = {
+					who = ROOT
+					modifier = opinion_betrayed
+					years = 5
+				}
+				if = {
+					limit = { ROOT = { ai = no } }
+					chronicle = {
+						entry = CHRONICLE_DANY_QUEST_JORAH_BETRAYAL
+						portrait = [Prev.GetID]
+					}
+				}
+			}
+		}	
+		set_character_flag = liberation_of_meereen
+		k_meereen = {
+			reverse_unsafe_war = {
+				target = ROOT
+				casus_belli = war_of_liberation
+			}
+		}
+		610 = {
+			ROOT = {
+				spawn_unit = {
+					province = PREV
+					home = PREV
+					owner = ROOT
+					troops = {
+						light_infantry = { 1900 1900 }
+						archers = { 333 333 }
+						heavy_infantry = { 100 100 }
+					}
+					attrition = 1.0
+					earmark = dummy #needs or else it will CTD for some reason
+				}
+				spawn_unit = {
+					province = PREV
+					home = PREV
+					owner = ROOT
+					troops = {
+						light_infantry = { 1900 1900 }
+						archers = { 333 333 }
+						heavy_infantry = { 100 100 }
+					}
+					attrition = 1.0
+					earmark = dummy #needs or else it will CTD for some reason
+				}
+				spawn_unit = {
+					province = PREV
+					home = PREV
+					owner = ROOT
+					troops = {
+						light_infantry = { 1900 1900 }
+						archers = { 333 333 }
+						heavy_infantry = { 100 100 }
+					}
+					attrition = 1.0
+					earmark = dummy #needs or else it will CTD for some reason
+				}
+			}	
+		}	
+		d_stormcrows = { holder_scope = { join_attacker_wars = ROOT } }
+		d_second_sons = { holder_scope = { join_attacker_wars = ROOT } }
+	}
+}
+#####Chain continues in A Feast for Crows events####
+# Dany has failed
+character_event = {
+	id = clash_of_kings.58
+	desc = "EVTDESCclash_of_kings.58"
+	picture = "GFX_tamingdragon"
+		
+	is_triggered_only = yes
+	
+	trigger = { character = 77041 }
+	
+	immediate = {
+		clr_character_flag = dany_no_tame_dragon
+		clr_character_flag = liberation_of_meereen
+		clr_character_flag = emancipation_of_yunkai
+		clr_character_flag = danys_eastern_quest
+		clr_character_flag = affc_scenario
+		clr_character_flag = dany_liberation_quest
+		clr_global_flag = no_enslave_astapor
+		if = { #give back landless title if not present
+			limit = { 
+				ai = no 
+				NOT = { has_landed_title = d_great_grass_sea }
+			}
+			activate_title = { status = yes title = d_great_grass_sea }
+			d_great_grass_sea = { gain_title = ROOT }
+		}
+		#If Dany somehow holds all yunkai and another city, create replacement characters
+		if = {
+			limit = { has_landed_title = c_yunkai }
+			create_character = {
+				random_traits = yes
+				dynasty = actually_culture
+				female = no
+				trait = ambitious
+				trait = underhanded_rogue
+				trait = cruel		
+				culture = yunkaii
+				religion = harpy
+				historical = yes
+			}
+			new_character = {
+				save_event_target_as = king_yunkai
+			}
+			if = {
+				limit = { has_landed_title = c_meereen }
+				create_character = {
+					random_traits = yes
+					dynasty = actually_culture
+					female = no
+					trait = ambitious
+					trait = underhanded_rogue
+					trait = cruel		
+					culture = meereenese
+					religion = harpy
+					historical = yes
+				}
+				new_character = {
+					save_event_target_as = king_meereen
+				}
+			}
+			if = {
+				limit = { has_landed_title = c_astapor }
+				create_character = {
+					random_traits = yes
+					dynasty = actually_culture
+					female = no
+					trait = ambitious
+					trait = underhanded_rogue
+					trait = cruel		
+					culture = astapori
+					religion = harpy
+					historical = yes
+				}
+				new_character = {
+					save_event_target_as = king_astapor
+				}
+			}
+		}		
+		any_demesne_title = {
+			limit = { 
+				OR = {
+					title = k_meereen
+					kingdom = { title = k_meereen } 
+				}	
+			}
+			c_meereen = {
+				holder_scope = {
+					if = {
+						limit = { NOT = { character = ROOT } }
+						usurp_title = { target = PREVPREV type = claim }
+					}	
+				}
+			}
+			if = {
+				limit = { ROOT = { has_landed_title = c_meereen } }
+				c_yunkai = {
+					holder_scope = {
+						if = {
+							limit = { NOT = { character = ROOT } }
+							usurp_title = { target = PREVPREV type = claim }
+						}	
+					}
+				}	
+				if = {
+					limit = { ROOT = { has_landed_title = c_yunkai } }
+					event_target:king_meereen = { usurp_title = { target = PREV type = claim } }	
+				}
+			}			
+		}
+		any_demesne_title = {
+			limit = { 
+				OR = {
+					title = k_astapor
+					kingdom = { title = k_astapor } 
+				}	
+			}
+			c_astapor = {
+				holder_scope = {
+					if = {
+						limit = { NOT = { character = ROOT } }
+						usurp_title = { target = PREVPREV type = claim }
+					}	
+				}
+			}
+			if = {
+				limit = { ROOT = { has_landed_title = c_astapor } }
+				c_yunkai = {
+					holder_scope = {
+						if = {
+							limit = { NOT = { character = ROOT } }
+							usurp_title = { target = PREVPREV type = claim }
+						}	
+					}
+				}	
+				if = {
+					limit = { ROOT = { has_landed_title = c_yunkai } }
+					event_target:king_astapor = { usurp_title = { target = PREV type = claim } }	
+				}
+			}
+		}
+		any_demesne_title = {
+			limit = { 
+				OR = {
+					title = k_yunkai
+					kingdom = { title = k_yunkai } 
+				}	
+			}
+			c_yunkai = {
+				holder_scope = {
+					if = {
+						limit = { NOT = { character = ROOT } }
+						usurp_title = PREVPREV
+					}	
+				}
+			}
+			if = {
+				limit = { ROOT = { has_landed_title = c_yunkai } }
+				event_target:king_yunkai = { usurp_title = PREV }	
+			}
+		}
+		hidden_tooltip = {
+			c_5001 = {
+				remove_trait = wikid
+				remove_trait = forbid_marriage
+			}
+			c_2012 = {
+				remove_trait = wikid
+			}
+			c_1003 = {
+				remove_trait = wikid
+			}			
+			d_meereen = {
+				holder_scope = {
+					if = {
+						limit = { trait = forbid_marriage }
+						remove_trait = forbid_marriage
+					}	
+					any_realm_lord = {
+						if = {
+							limit = { trait = forbid_marriage }
+							remove_trait = forbid_marriage
+						}	
+					}
+				}
+			}	
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.57"
+		prestige = -200
+		if = {
+			limit = { ai = no }
+			b_sunrisegate = { gain_title = ROOT }
+		}	
+		hidden_tooltip = {
+			fertility = 0.05
+			activate_title = { status = no title = k_great_grass_sea }
+			k_great_grass_sea = { destroy_landed_title = THIS }
+			if = {
+				limit = { ai = yes }
+				activate_title = { status = no title = d_great_grass_sea }
+				d_great_grass_sea = { destroy_landed_title = THIS }
+			}	
+			#c_astapor = { holder_scope = { b_worm_pyramid = { gain_title = PREV } } } 
+		}
+		k_pentos = {
+			holder_scope = {
+				ROOT = {
+					if = {
+						limit = { is_ruler = no }
+						move_character = PREV
+					}	
+					if = {
+						limit = { 
+							OR = {
+								ai = no 
+								primary_title = { title = d_great_grass_sea }
+							}	
+						}
+						set_defacto_liege = PREV
+					}
+				}	
+			}
+		}
+	}
+}
+#Qarth to Pentos Tangent- Alliance with Young Griff/Pentos
+narrative_event = {
+	id = clash_of_kings.59
+	desc = "EVTDESCclash_of_kings.59"
+	title = "EVTTITLEclash_of_kings.59"
+	picture = "GFX_evt_young_griff"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_character_flag = dany_no_tame_dragon
+		clr_character_flag = danys_eastern_quest
+		b_sunrisegate = { gain_title = ROOT }
+		character_event = { id = clash_of_kings.61 days = 20 random = 10 } #Barristan
+		character_event = { id = feast_for_crows.59 days = 300 random = 100 } #Victarion
+	}
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.59" #Accept
+		hidden_tooltip = { 
+			remove_trait = widowed 
+			set_defacto_liege = ROOT
+			fertility = 0.05
+		}
+		c_125009 = {
+			if = {
+				limit = {  
+					is_alive = yes
+					is_ruler = no
+					liege = { has_landed_title = d_golden_company }
+				}
+				add_spouse_matrilineal = ROOT
+				custom_tooltip = { text = TOOLTIPAEGONSHERITAGE }
+				hidden_tooltip = {
+					character_event = { id = invasions.105 } #Set young griff's targaryen ancestry
+					random = {
+						chance = 35
+						character_event = { id = invasions.3 } #gains blackfyre
+					}
+				}
+			}
+		}
+		hidden_tooltip = {
+			c_316 = {
+				if = {
+					limit = {  
+						is_alive = yes
+						is_ruler = no
+						liege = { has_landed_title = d_golden_company }
+					}
+					move_character = ROOT
+				}
+			}
+			c_1250020 = {
+				if = {
+					limit = {  
+						is_alive = yes
+						is_ruler = no
+						liege = { has_landed_title = d_golden_company }
+					}
+					move_character = ROOT
+				}
+			}
+			c_88149 = {
+				if = {
+					limit = {  
+						is_alive = yes
+						is_ruler = no
+						liege = { has_landed_title = d_golden_company }
+					}
+					move_character = ROOT
+				}
+			}	
+		}
+		set_character_flag = war_for_iron_throne
+		e_iron_throne = {
+			reverse_war = {
+				target = ROOT
+				casus_belli = claim_iron_throne_ACOK
+			}
+		}
+		d_golden_company = { 
+			holder_scope = { 
+				join_attacker_wars = ROOT 
+				hidden_tooltip = {
+					spawn_fleet = {
+						province = 967 #Bay of Pentos
+						#home = 967
+						owner = THIS
+						troops =
+						{
+							galleys = { 200 200 }
+						}
+						disband_on_peace = yes
+					}
+				}
+			} 
+		}
+		406 = { #spawn golden company units
+			ROOT = {
+				set_global_flag = golden_company_in_invasion
+				spawn_unit = {
+					province = PREV
+					owner = ROOT
+					troops = {
+						archers = { 334 334 }
+						heavy_infantry = { 1000 1000 }
+						pikemen = { 1000 1000 }
+						light_infantry = { 334 334 }	
+						light_cavalry = { 233 233 }		
+						knights = { 334 334 }
+						war_elephants = { 10 10 }					
+					}
+					attrition = 1.0
+					disband_on_peace = yes
+					earmark = golden_company	
+				}
+				spawn_unit = {
+					province = PREV
+					owner = ROOT
+					troops = {
+						archers = { 334 334 }
+						heavy_infantry = { 1000 1000 }
+						pikemen = { 1000 1000 }
+						light_infantry = { 334 334 }	
+						light_cavalry = { 233 233 }		
+						knights = { 334 334 }
+						war_elephants = { 10 10 }					
+					}
+					attrition = 1.0
+					disband_on_peace = yes
+					earmark = golden_company	
+				}
+				spawn_unit = {
+					province = PREV
+					owner = ROOT
+					troops = {
+						archers = { 334 334 }
+						heavy_infantry = { 1000 1000 }
+						pikemen = { 1000 1000 }
+						light_infantry = { 334 334 }	
+						light_cavalry = { 233 233 }		
+						knights = { 334 334 }
+						war_elephants = { 10 10 }					
+					}
+					attrition = 1.0
+					disband_on_peace = yes
+					earmark = golden_company	
+				}
+			}
+		}
+		b_mopatis = { holder_scope = { join_attacker_wars = ROOT } }
+		406 = {
+			ROOT = {
+				spawn_unit = {
+					province = PREV
+					home = PREV
+					owner = ROOT
+					leader = ROOT
+					troops = {
+						light_infantry = { 800 800 }
+						archers = { 150 150 }
+						heavy_infantry = { 50 50 }
+					}
+					attrition = 1.0
+					earmark = dummy #needs or else it will CTD for some reason
+				}
+				spawn_unit = {
+					province = PREV
+					home = PREV
+					owner = ROOT
+					troops = {
+						light_infantry = { 800 800 }
+						archers = { 150 150 }
+						heavy_infantry = { 50 50 }
+					}
+					attrition = 1.0
+					earmark = dummy #needs or else it will CTD for some reason
+				}
+				spawn_unit = {
+					province = PREV
+					home = PREV
+					owner = ROOT
+					troops = {
+						light_infantry = { 800 800 }
+						archers = { 150 150 }
+						heavy_infantry = { 50 50 }
+					}
+					attrition = 1.0
+					earmark = dummy #needs or else it will CTD for some reason
+				}
+				# spawn_unit = {
+					# province = PREV
+					# home = PREV
+					# owner = ROOT
+					# leader = 88241
+					# disband_on_peace = yes
+					# troops = {
+						# archers = { 333 333 }
+						# heavy_infantry = { 666 666 }
+						# light_infantry = { 1500 1500 }	
+						# light_cavalry = { 666 666 }		
+						# knights = { 166 166 }						
+					# }
+				# }
+				# spawn_unit = {
+					# province = PREV
+					# home = PREV
+					# owner = ROOT
+					# disband_on_peace = yes
+					# troops = {
+						# archers = { 333 333 }
+						# heavy_infantry = { 666 666 }
+						# light_infantry = { 1500 1500 }	
+						# light_cavalry = { 666 666 }		
+						# knights = { 166 166 }						
+					# }
+				# }
+				# spawn_unit = {
+					# province = PREV
+					# home = PREV
+					# owner = ROOT
+					# disband_on_peace = yes
+					# troops = {
+						# archers = { 333 333 }
+						# heavy_infantry = { 666 666 }
+						# light_infantry = { 1500 1500 }	
+						# light_cavalry = { 666 666 }		
+						# knights = { 166 166 }						
+					# }
+				# }
+			}	
+		}
+		spawn_fleet = {
+			province = closest # closest sea zone
+			owner = ROOT
+			troops =
+			{
+				galleys = { 150 150 }
+			}
+			earmark = danys_fleet
+		}
+	}	
+}
+#Xaro Tangent, acquired personal slaves
+narrative_event = {
+	id = clash_of_kings.60
+	desc = "EVTDESCclash_of_kings.60"
+	title = "EVTTITLEclash_of_kings.60"
+	picture = "GFX_evt_dany_ship"
+	
+	trigger = { character = 77041 }
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		character_event = { id = clash_of_kings.61 days = 20 random = 10 } #Barristan
+		character_event = { id = feast_for_crows.59 days = 300 random = 100 } #Victarion
+		clr_character_flag = danys_eastern_quest
+		create_random_soldier = {
+			random_traits = yes
+			religion = summer_rel
+			culture = summer_islander
+			dynasty = none
+			trait = slave
+			trait = skilled_warrior
+			historical = yes
+		}
+		create_random_diplomat = {
+			random_traits = yes
+			religion = nath_pagan
+			culture = naathi
+			dynasty = none
+			trait = slave
+			trait = quick
+			female = yes
+			age = 16
+			historical = yes
+		}
+		new_character = {
+			remove_trait = genius
+		}
+		create_random_intriguer = {
+			random_traits = yes
+			religion = old_ones
+			culture = lengi
+			dynasty = none			
+			trait = slave
+			trait = fair
+			age = 20
+			historical = yes
+		}
+		create_random_intriguer = {
+			random_traits = yes
+			religion = stone_cow
+			culture = zabhadi
+			dynasty = none			
+			trait = slave
+			trait = fair
+			age = 17
+			female = yes
+			historical = yes
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.60" #Free them
+		add_trait = liberator
+		any_courtier = {
+			limit = {
+				liege = { character = ROOT }
+				trait = slave
+			}
+			hidden_tooltip = { remove_trait = slave }
+			add_trait = former_slave
+			opinion = { who = ROOT modifier = opinion_abolished_slavery_former_slave months = 2400 }
+		}
+		piety = 200
+		663 = {
+			ROOT = {
+				spawn_unit = {
+					province = PREV
+					home = PREV
+					owner = ROOT
+					leader = ROOT
+					troops = {
+						light_infantry = { 800 800 }
+						archers = { 150 150 }
+						heavy_infantry = { 50 50 }
+					}
+					attrition = 1.0
+					earmark = dummy #needs or else it will CTD for some reason
+				}
+				spawn_unit = {
+					province = PREV
+					home = PREV
+					owner = ROOT
+					troops = {
+						light_infantry = { 800 800 }
+						archers = { 150 150 }
+						heavy_infantry = { 50 50 }
+					}
+					attrition = 1.0
+					earmark = dummy #needs or else it will CTD for some reason
+				}
+				spawn_unit = {
+					province = PREV
+					home = PREV
+					owner = ROOT
+					troops = {
+						light_infantry = { 800 800 }
+						archers = { 150 150 }
+						heavy_infantry = { 50 50 }
+					}
+					attrition = 1.0
+					earmark = dummy #needs or else it will CTD for some reason
+				}
+			}	
+		}
+		spawn_fleet = {
+			province = closest # closest sea zone
+			owner = ROOT
+			troops =
+			{
+				galleys = { 75 75 }
+			}
+			earmark = danys_fleet
+		}
+	}	
+	
+	option = {
+		name = "EVTOPTBclash_of_kings.60" #Keep them
+		trigger = { NOT = { has_game_rule = { name = slavery value = off } } }
+		add_trait = slave_owner
+		hidden_tooltip = { 
+			any_courtier = {
+				limit = {
+					liege = { character = ROOT }
+					trait = slave
+				}			
+				opinion = { who = ROOT modifier = opinion_my_owner }
+				reverse_opinion = { who = ROOT modifier = opinion_my_slave }
+			}
+		}	
+		prestige = 200
+		if = {
+			limit = {
+				trait = stressed
+				NOT = { trait = depressed }
+				NOT = { trait = cruel }
+			}
+			random = {
+				chance = 15
+				add_trait = depressed
+				hidden_tooltip = { character_event = { id = 38288 } }
+			}
+		}
+		if = {
+			limit = {
+				NOT = { trait = stressed }
+				NOT = { trait = depressed }
+				NOT = { trait = cruel }
+			}
+			random = {
+				chance = 25
+				add_trait = stressed
+				hidden_tooltip = { character_event = { id = 38282 } }
+			}
+		}	
+		663 = {
+			ROOT = {
+				spawn_unit = {
+					province = PREV
+					home = PREV
+					owner = ROOT
+					leader = ROOT
+					troops = {
+						light_infantry = { 800 800 }
+						archers = { 150 150 }
+						heavy_infantry = { 50 50 }
+					}
+					attrition = 1.0
+					earmark = dummy #needs or else it will CTD for some reason
+				}
+				spawn_unit = {
+					province = PREV
+					home = PREV
+					owner = ROOT
+					troops = {
+						light_infantry = { 800 800 }
+						archers = { 150 150 }
+						heavy_infantry = { 50 50 }
+					}
+					attrition = 1.0
+					earmark = dummy #needs or else it will CTD for some reason
+				}
+				spawn_unit = {
+					province = PREV
+					home = PREV
+					owner = ROOT
+					troops = {
+						light_infantry = { 800 800 }
+						archers = { 150 150 }
+						heavy_infantry = { 50 50 }
+					}
+					attrition = 1.0
+					earmark = dummy #needs or else it will CTD for some reason
+				}
+			}	
+		}
+		spawn_fleet = {
+			province = closest # closest sea zone
+			owner = ROOT
+			troops =
+			{
+				galleys = { 75 75 }
+			}
+			earmark = danys_fleet
+		}
+	}
+}
+#Barristan appears (Tangents)
+character_event = {
+	id = clash_of_kings.61
+	desc = "EVTDESCclash_of_kings.61"
+	picture = "GFX_evt_dany_ship"
+	
+	only_playable = yes
+	
+	trigger = { 
+		character = 77041 		
+		c_201302 = {
+			is_alive = yes
+			is_ruler = no
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { liege = { character = ROOT } }
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.61"
+		c_201302 = {
+			move_character = ROOT
+			give_minor_title = title_bodyguard
+		}	
+	}
+	option = {
+		name = "EVTOPTBclash_of_kings.61" #No
+		ai_chance = { factor = 0 }	
+	}
+}	
+
+#Renly Escape Chain Event 
+narrative_event = {
+	id = clash_of_kings.62
+	desc = "EVTDESCclash_of_kings.62"
+	title = "EVTTITLEclash_of_kings.62"
+	picture = "GFX_evt_parley_storms_end"
+	
+	is_triggered_only = yes
+	
+	trigger = { has_game_rule = { name = shattered_realms value = off } }
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.62"
+		narrative_event = { id = clash_of_kings.63 }
+	}	
+}
+#Shadow appears
+narrative_event = {
+	id = clash_of_kings.63
+	desc = "EVTDESCclash_of_kings.63"
+	title = "EVTTITLEclash_of_kings.62"
+	picture = "GFX_evt_parley_storms_end"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.63" #Scream for help
+		narrative_event = { id = clash_of_kings.64 }
+		hidden_tooltip = {
+			c_4317 = {
+				ROOT = {
+					any_courtier = {
+						limit = { character = 206054 } #Brienne
+						random_list = {
+							25 = { 
+								death = {
+									death_reason = death_murder_unknown_shadow
+									killer = PREVPREV
+								}
+							}
+							25 = { add_maimed_trait_effect = yes }
+							25 = { add_trait_silently_wounded_effect = yes }
+							25 = { add_crippled_trait_effect = yes }
+						}
+					}
+				}
+			}	
+		}
+		ai_chance = { factor = 0 }	
+	}	
+	option = {
+		name = "EVTOPTBclash_of_kings.63" #Dont move 
+		hidden_tooltip = {
+			random_list = {
+				85 = { }
+				15 = { 
+					save_event_target_as = target_victim
+					FROMFROM = { 
+						set_character_flag = murder_event_override
+						character_event = { id = 10 } # Consequences of discovery
+						character_event = { id = red_priest.9 } 
+					} 
+					clear_event_target = target_victim
+				}	
+			}
+		}
+		c_5253 = {	#Garlan gets the armor
+			ROOT = {
+				random_artifact = {
+					limit = { artifact_type = renly_armor }
+					transfer_artifact = { from = ROOT to = PREVPREV }			
+				}
+			}
+		}
+		c_4317 = {
+			ROOT = {
+				death = {
+					death_reason = death_murder_unknown_shadow
+					killer = PREV
+				}
+			}
+		}	
+		any_courtier = {								#Brienne fled to North
+			limit = { character = 206054 }
+			e_north = {
+				holder_scope = {
+					reverse_banish = PREVPREV
+				}
+			}
+		}
+		c_6253  = { #Robar Royce, Emmon Cuy killed by Knight of Flowers
+			ROOT = {
+				any_courtier = {
+					limit = {
+						OR = {
+							character = 94070
+							character = 1289
+						}	
+					}
+					death = {
+						death_reason = death_murder_slayed
+						killer = PREVPREV
+					}
+				}	
+			}
+		}
+	}
+}
+#Brienne notified, tries to defend
+narrative_event = {
+	id = clash_of_kings.64
+	desc = "EVTDESCclash_of_kings.64"
+	title = "EVTTITLEclash_of_kings.62"
+	picture = "GFX_evt_parley_storms_end"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.64" #Hide under table (stupid decision)
+		narrative_event = { id = clash_of_kings.65 }	
+		any_courtier = {
+			limit = { character = 206054 }
+			reverse_opinion = {
+				modifier = saved_him_on_battlefield 
+				who = ROOT 
+				months = 120
+			}	
+		}
+	}	
+	
+	option = {
+		name = "EVTOPTBclash_of_kings.64" #Try to get out of tent (wise decision)
+		narrative_event = { id = clash_of_kings.66 }	
+		any_courtier = {
+			limit = { character = 206054 }
+			reverse_opinion = {
+				modifier = saved_him_on_battlefield 
+				who = ROOT 
+				months = 120
+			}	
+		}
+	}	
+}
+#Renly dies
+narrative_event = {
+	id = clash_of_kings.65
+	desc = "EVTDESCclash_of_kings.65"
+	title = "EVTTITLEclash_of_kings.62"
+	picture = "GFX_evt_parley_storms_end"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAclash_of_kings.65" #Night is dark and full of terrors
+		hidden_tooltip = {
+			random_list = {
+				85 = { }
+				15 = { 
+					save_event_target_as = target_victim
+					FROMFROMFROMFROM = { 
+						set_character_flag = murder_event_override
+						character_event = { id = 10 } # Consequences of discovery
+						character_event = { id = red_priest.9 } 
+					} 
+					clear_event_target = target_victim
+				}	
+			}
+		}
+		c_5253 = {	#Garlan gets the armor
+			ROOT = {
+				random_artifact = {
+					limit = { artifact_type = renly_armor }
+					transfer_artifact = { from = ROOT to = PREVPREV }			
+				}
+			}
+		}
+		c_4317 = {
+			ROOT = {
+				death = {
+					death_reason = death_murder_unknown_shadow
+					killer = PREV
+				}
+			}
+		}	
+		c_1289  = { #Brienne is unable to defend from Emmon Cuy 
+			ROOT = {
+				random_courtier = {
+					limit = { character = 206054 }
+					death = {
+						death_reason = death_murder_unknown_shadow
+						killer = PREVPREV
+					}
+				}	
+			}
+		}	
+		c_6253  = { #Robar Royce, Emmon Cuy killed by Knight of Flowers
+			ROOT = {
+				any_courtier = {
+					limit = {
+						OR = {
+							character = 94070
+							character = 1289
+						}	
+					}
+					death = {
+						death_reason = death_murder_slayed
+						killer = PREVPREV
+					}
+				}	
+			}
+		}
+	}
+}
+#Sunlight destroys shadowbaby
+narrative_event = {
+	id = clash_of_kings.66
+	desc = "EVTDESCclash_of_kings.66"
+	title = "EVTTITLEclash_of_kings.62"
+	picture = "GFX_evt_parley_storms_end"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAclash_of_kings.66" #The terrors of night die in the daylight
+		save_event_target_as = target_victim
+		FROMFROMFROMFROM = { 								#Stannis accused
+			set_character_flag = murder_event_override
+			character_event = { id = 10 } # Consequences of discovery
+			character_event = { id = red_priest.9 } 
+		} 
+		clear_event_target = target_victim
+		
+	}
+}
+
+#Renly is dead, important reach lords can side with Stannis or with Loras
+long_character_event = {
+	id = clash_of_kings.67
+	desc = "EVTDESCclash_of_kings.67"
+	title = "EVTTITLEclash_of_kings.1"
+	picture = GFX_evt_parley_storms_end
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { year = 8300 }
+		NOT = { month = 3 }			#So not after Stannis and Renly abandon parley
+	}
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.67" #Follow Stannis
+		hidden_tooltip = {
+			any_demesne_title = {
+				limit = { 
+					OR = {
+						tier = COUNT
+						tier = DUKE
+					}
+				}				
+				set_variable = { which = "de_facto_kingdom" value = 6 } #reach
+			}
+			set_defacto_liege = THIS
+		}
+		join_attacker_wars = FROM
+		clr_character_flag = neutral
+		set_character_flag = against_king
+		set_character_flag = against_loyal_liege
+		opinion = {
+			modifier = opinion_with_rebel_leader
+			who = FROM
+			years = 100
+		}
+		e_iron_throne = {
+			holder_scope = { 
+				opinion = {
+					modifier = opinion_joined_rebellion
+					who = PREVPREV
+					years = 20
+				}
+			}
+		}
+		if = {
+			limit = { character = 281 }	#Alester Florent converts to red god
+			religion="rhllor"
+		}
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				OR = {
+					character = 1270 #Meadows
+					character = 261	#Fossoway
+					character = 262	#Fossoway
+					character = 272 #Willum
+					character = 1258 #Varner
+				}	
+			}
+			modifier = {
+				factor = 25
+				FROM = {
+					spouse = {
+						dynasty = ROOT	#Florent
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTBclash_of_kings.67" #Follow Loras
+		
+		prestige = 50
+		liege = {
+			opinion = {
+				modifier = opinion_loyal
+				who = ROOT
+				years = 5
+			}
+		}
+		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 25
+				OR = {
+					character = 88033 #Rowan
+					character = 296 #Tarly
+				}	
+			}
+			modifier = {
+				factor = 25
+				liege = {
+					spouse = {
+						dynasty = ROOT	#Hightower
+					}
+				}
+			}
+			modifier = {
+				factor = 25
+				any_child = {
+					trait = kingsguard	#Oakheart
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTCclash_of_kings.67" #Ive had enough! Close the gates!
+		
+		prestige = -50
+		set_defacto_liege = THIS
+		set_character_flag = neutral
+		clr_character_flag = supporting_king
+		clr_character_flag = against_king
+		hidden_tooltip = {
+			any_demesne_title = {
+				limit = { 
+					OR = {
+						tier = COUNT
+						tier = DUKE
+					}
+				}				
+				set_variable = { which = "de_facto_kingdom" value = 6 } #reach
+			}
+		}
+		e_iron_throne = {
+			holder_scope = { 
+				opinion = {
+					modifier = opinion_dithered
+					who = ROOT
+					years = 5
+				}
+			}
+		}
+		k_reach = {
+			holder_scope = { 
+				opinion = {
+					modifier = opinion_dithered
+					who = ROOT
+					years = 5
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 25
+				trait = craven
+			}
+			modifier = {
+				factor = 10
+				trait = patient
+			}
+		}
+	}
+}
+
+###KRAKEN AND THE CROW
+
+
+narrative_event = {							#Euron choice - help Balon or kill him
+	id = clash_of_kings.90
+	desc = "EVTDESCclash_of_kings.90"
+	title = "EVTTITLEclash_of_kings.90"
+	picture = GFX_evt_euron_greyjoy
+	
+	is_triggered_only = yes
+	
+	trigger = {								#Balon is still king/lord of Isles and Euron can send assassin or join him
+		c_1107 = { 
+			is_alive = yes 
+			OR = {
+				has_landed_title = e_iron_isles
+				has_landed_title = k_iron_isles
+			}
+		}
+		NOT = { demesne_size = 1 }
+		prisoner = no
+		is_incapable = no
+		has_game_rule = { name = shattered_realms value = off }
+	}
+	immediate = {
+		c_2107 = { remove_trait = refusing_marriage }
+	}
+	option = {
+		name = "EVTOPTAclash_of_kings.90"	#I'll kill him and we shall feast before night begins!
+	
+		c_1107 = { narrative_event = { id = clash_of_kings.92  } }
+	
+		ai_chance = { factor = 33 }
+	}
+	
+	option = {
+		name = "EVTOPTBclash_of_kings.90"	#I shall have my share in rebirth of kingdom of Iron Isles!
+		
+		c_1107 = { character_event = { id = clash_of_kings.91 } }
+	
+		ai_chance = { factor = 33 }
+	}
+	
+	option = {
+		name = "EVTOPTCclash_of_kings.90"	#Stay adventuring
+		
+		ai_chance = { factor = 33 }
+	}
+}
+
+character_event = {						#Balon responds to his brother offer
+	id = clash_of_kings.91
+	desc = "EVTDESCclash_of_kings.91"
+	title = "EVTTITLEclash_of_kings.90"
+	picture = GFX_evt_euron_greyjoy
+	
+	is_triggered_only = yes
+	
+	option = {			#Good! Welcome brother!
+		name = "EVTOPTAclash_of_kings.91"
+	
+		FROM = { move_character = ROOT }
+		any_sibling = {
+			limit = { character = 3107 }
+			opinion = {
+				modifier = opinion_angry
+				who = ROOT
+				multiplier = 2
+				years = 10
+			}
+		}
+		spawn_unit = {
+			province = closest_to_capital
+			leader = FROM
+			owner = ROOT 
+			home = ROOT
+			troops = {
+				heavy_infantry = { 2000 2000 }
+				light_infantry = { 2000 2000 }
+			}
+			disband_on_peace = yes
+		}
+		spawn_fleet = {
+			province = closest
+			owner = ROOT 
+			troops = {
+				galleys = { 120 120 }
+			}
+			attrition = 1.0
+			disband_on_peace = yes
+		}
+		FROM = { wealth = -500 }
+		ROOT = { wealth = 500 }
+	
+		ai_chance = { factor = 50 }
+	}
+	option = {			#You were banished. Arrest him.
+		name = "EVTOPTBclash_of_kings.91"
+		
+		FROM = { 
+			move_character = ROOT
+			transfer_scaled_wealth = { to = ROOT value = all }		
+			imprison = ROOT
+			opinion = {
+				modifier = opinion_angry
+				who = ROOT
+				multiplier = 2
+				years = 10
+			} 
+			reverse_opinion = {
+				modifier = opinion_found_guilty
+				who = ROOT
+				years = 10
+			} 		
+		}
+		any_sibling = {
+			limit = { character = 3107 }
+			opinion = {
+				modifier = opinion_happy
+				who = ROOT
+				multiplier = 2
+				years = 10
+			}
+		}
+		
+		ai_chance = { factor = 50 }
+	}
+}
+narrative_event = {						#Balon walks trough bridge and sees someone behind him
+	id = clash_of_kings.92
+	desc = "EVTDESCclash_of_kings.92"
+	title = "EVTTITLEclash_of_kings.90"
+	picture = GFX_evt_euron_greyjoy
+	
+	is_triggered_only = yes
+
+	option = {			#Im in no mood to company
+		name = "EVTOPTAclash_of_kings.92"
+		
+		FROM = {
+			set_character_flag = kingsmoot_candidate
+			move_character = ROOT
+			character_event = { id = clash_of_kings.96 days = 1 }
+			c_3107 = {
+				opinion = {
+					modifier = opinion_found_guilty	#Arrest reason for Victarion
+					who = PREV
+					years = 10
+				} 	
+			}
+		}
+		custom_tooltip = {
+			text = "TOOLTIPclash_of_kings.92"
+			hidden_tooltip = {
+				if = {								#Kills Sawane Botley and gives his lands to his brother
+					limit = { 
+						c_64 = {
+							OR = { 
+								at_location = 161 
+								at_location = 162
+							}
+							is_alive = yes
+							has_landed_title = c_lordsport
+							ai = yes	#so no player is killed in this event
+						}
+					}
+					c_64 = {
+						c_lordsport = { succession = seniority }
+						death = {
+							death_reason = death_sacrificed_drowned
+							killer = FROM
+						}
+						c_7064 = {
+							opinion = {
+								modifier = opinion_granted_county 
+								multiplier = 2
+								who = FROM
+								years = 5
+							}
+						}
+					}
+				}
+			}
+		}
+		FROM_murder_red_god_resurrect_effect = yes #check for rhllor resurrection
+		death = { 
+			death_reason = death_murder_unknown
+			killer = FROM
+		}
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "EVTOPTBclash_of_kings.92"	#Hit him with your elbow!
+		
+		narrative_event = { id = clash_of_kings.93 }
+		
+		ai_chance = { factor = 0 }
+	}
+}
+narrative_event = {						#Balon struggles with assassin!
+	id = clash_of_kings.93
+	desc = "EVTDESCclash_of_kings.93"
+	title = "EVTTITLEclash_of_kings.90"
+	picture = GFX_evt_euron_greyjoy
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAclash_of_kings.93"	#Try to push him out of the bridge!
+		narrative_event = { id = clash_of_kings.94 }
+	}
+	option = {
+		name = "EVTOPTBclash_of_kings.93"	#Try to strangle him!
+		narrative_event = { id = clash_of_kings.95 }
+	}
+}
+narrative_event = {						#Balon lost fight!
+	id = clash_of_kings.94
+	desc = "EVTDESCclash_of_kings.94"
+	title = "EVTTITLEclash_of_kings.90"
+	picture = GFX_evt_euron_greyjoy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.94"	#ARGH!
+		FROMFROMFROM = {
+			set_character_flag = kingsmoot_candidate
+			move_character = ROOT
+			character_event = { id = clash_of_kings.96 days = 1 }
+			c_3107 = {
+				opinion = {
+					modifier = opinion_found_guilty	#Arrest reason for Victarion
+					who = FROMFROMFROM
+					years = 10
+				} 	
+			}
+		}
+		custom_tooltip = {
+			text = "TOOLTIPclash_of_kings.92" #Euron seizes Pyke and Lordsport
+			hidden_tooltip = {
+				if = {								#Kills Sawane Botley and gives his lands to his brother
+					limit = { 
+						c_64 = {
+							OR = { 
+								at_location = 161 
+								at_location = 162
+							}
+							is_alive = yes
+							has_landed_title = c_lordsport
+							ai = yes	#so no player is killed in this event
+						}
+					}
+					c_64 = {
+						c_lordsport = { succession = seniority }
+						death = {
+							death_reason = death_sacrificed_drowned
+							killer = FROMFROMFROM
+						}
+						c_7064 = {
+							opinion = {
+								modifier = opinion_granted_county 
+								multiplier = 2
+								who = FROMFROMFROM
+								years = 5
+							}
+						}
+					}
+				}
+			}
+		}
+		FROM_murder_red_god_resurrect_effect = yes #check for rhllor resurrection
+		death = { 
+			death_reason = death_murder_unknown
+			killer = FROMFROMFROM
+		}
+	}
+}
+narrative_event = {						#Balon wins
+	id = clash_of_kings.95
+	desc = "EVTDESCclash_of_kings.95"
+	title = "EVTTITLEclash_of_kings.90"
+	picture = GFX_evt_euron_greyjoy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAclash_of_kings.95"	#WHAT IS DEAD MAY NEVER DIE!
+		random_list = {
+			30 = { add_trait = wounded }
+			10 = { add_maimed_trait_effect = yes }
+			60 = { }
+		}
+	}
+}
+character_event = {					#Proxy for Euron's letters
+	id = clash_of_kings.96
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = { 
+		c_lordsport = { succession = primogeniture }
+		liege = {
+			any_realm_character = {
+				limit = { 
+					OR = {
+						demesne_size = 1
+						dynasty = 107
+					}
+					NOT = { character = 2107 }
+				}
+				letter_event = { id = clash_of_kings.97 }		#Euron calls captains to bend the knee
+			}
+		}
+	}	
+}
+letter_event = {
+	id = clash_of_kings.97					#Euron demands you to bend your knee to him as king
+	desc = "EVTDESCclash_of_kings.97"
+	
+	is_triggered_only = yes
+			
+	option = {
+		name = "EVTOPTAclash_of_kings.97"	#No godless man can sit upon seastone chair
+		opinion = {
+			modifier = opinion_dislike 
+			who = FROM
+			years = 5
+		}
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 5
+				OR = {
+					dynasty = 107	#Greyjoy
+					dynasty = 119	#Volmark
+					dynasty = 122	#Harlaw
+					dynasty = 120	#Stonetree
+					dynasty = 121	#Drumm
+					dynasty = 110	#Merlyn
+					dynasty = 112	#Goodbrother
+					dynasty = 114	#Farwynd
+					dynasty = 118	#Blacktyde
+					dynasty = 115	#Kenning
+					dynasty = 108	#Stonehouse
+					dynasty = 123	#Tawney
+					
+				}
+			}
+		}
+	}	
+	option = {
+		name = "EVTOPTBclash_of_kings.97"	#Actually godless man sitting upon seastone chair would be fine
+		opinion = {
+			modifier = opinion_impressed  
+			who = FROM
+			multiplier = 6
+			years = 5
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 5
+				OR = {
+					dynasty = 109	#Saltcliffe
+					dynasty = 116	#Orkwood
+					dynasty = 67	#Wynch
+					dynasty = 111	#Myre
+					dynasty = 64	#Botley (at this moment its his brother)
+					dynasty = 1507	#Codd
+					dynasty = 1506	#Humble
+				}
+			}
+			modifier = {
+				factor = 0
+				dynasty = 107
+			}
+		}
+	}
+}

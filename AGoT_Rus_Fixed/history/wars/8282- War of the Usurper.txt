@@ -1,0 +1,54 @@
+name = "Война узурпатора"
+
+casus_belli={
+	casus_belli=claim_all_RB
+	actor=317
+	recipient=77037
+	landed_title=e_iron_throne
+	date=8282.9.14
+}
+
+8282.9.14 = {
+	add_defender = 77037 #Aerys Taragryen
+	#add_defender = 77039 #Rhaegar Targaryen
+	#add_defender = 1
+	#add_defender = 1253
+	#add_defender = 316 #Jon Connington
+	#add_defender = 94064 #Lord Grafton of Gullton
+	#add_defender = 152 #Lord Ryger of Willow Wood
+	#add_defender = 100137 #Lord Darry of Darry
+	#add_defender = 1138 #Lord Mooton of Maidenpool
+	#add_defender = 2160 #Lord Andrey of Castlewood
+	#add_defender = 310 #Cafferen
+	#add_defender = 313 #Fell
+	#add_defender = 308 #Grandison
+	add_attacker = 317 #Robert Baratheon
+	#add_attacker = 59
+	#add_attacker = 159
+	#add_attacker = 94002
+	
+
+}
+
+8283.6.1 = {
+	#rem_defender = 308 #Grandison
+	#rem_defender = 313 #Fell
+	#rem_defender = 310 #Cafferen
+	#rem_defender = 2160 #Lord Andrey of Castlewood
+	#rem_defender = 1138 #Lord Mooton of Maidenpool
+	#rem_defender = 137 #Lord Darry of Darry
+	#rem_defender = 152 #Lord Ryger of Willow Wood
+	#rem_defender = 94064 #Lord Grafton of Gullton
+	#rem_defender = 316
+	#rem_defender = 1253
+	#rem_defender = 1
+	#rem_defender = 77039
+	rem_defender = 77037
+	#rem_attacker = 94002
+	#rem_attacker = 159
+	#rem_attacker = 59
+	rem_attacker = 317
+}
+
+
+                                                                                                                                                                                                                                                                                                                                   

@@ -1,0 +1,227 @@
+#CODE;ENGLISH;x
+EVTOPTBred_priest.3;Меня это не беспокоит;x
+EVTDESCred_priest.12;[From.GetFirstNameWithDynasty] благословил[From.GetEndA] меня и даровал[From.GetEndA] защиту в битве. Быть может, Владыка Света реален?;x
+EVTDESCred_priest.13;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] приближается ко мне и спрашивает, не хочу ли я вылечить мои недуги. Все, что мне нужно сделать - поверить в Красного Бога.;x
+EVTDESCred_priest.13B;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] приближается ко мне и спрашивает, не хочу ли я вылечить мои недуги. Все, что мне нужно сделать - принять путь Колдунов;x
+EVTDESCred_priest.13C;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] приближается ко мне и спрашивает, не хочу ли я вылечить мои недуги магией крови. Все, что мне нужно сделать - принять божество [FromFrom.Religion.GetHighGodName] религии [FromFrom.Religion.GetName].;x
+EVTOPTAred_priest.13;Да, я верую во Владыку Света;x
+EVTOPTAred_priest.13B;Да, я испытаю силу этих колдунов;x
+EVTOPTAred_priest.13C;Да, я проверю силу этой магии крови;x
+EVTOPTBred_priest.13;Нет, я не стану подвергать себя этому. Уйди.;x
+EVTDESCred_priest.14;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] приближается ко мне и спрашивает, не хочу ли я вылечить свои болезни и уродства. Все, что мне нужно сделать - поверить в Красного Бога.;x
+EVTDESCred_priest.14B;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] приближается ко мне и спрашивает, не хочу ли я вылечить свои болезни и уродства. Все, что мне нужно сделать - принять путь колдунов;x
+EVTDESCred_priest.14C;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] приближается ко мне и спрашивает, не хочу ли я вылечить свои болезни и уродства магией крови. Все, что мне нужно сделать - принять божество [FromFrom.Religion.GetHighGodName] религии [FromFrom.Religion.GetName].;x
+EVTDESCred_priest.15;Одинокими мы рождаемся, одинокими умираем, но идя через эту темную долину, черпаем мы силы друг от друга.;x
+EVTOPTAred_priest.15;[From.GetFirstNameWithDynasty] был[From.GetEndA] исцелен[From.GetEndA] Владыкой Света.;x
+EVTDESCred_priest.16;Все мы должны сделать выбор. Мужчина или женщина, юнец или старик, лорд или крестьянин. Мы выбираем свет или выбираем тьму. [From.GetTitledFirstNameWithDynastyNoRegnal] отказа[From.GetLasLsya] от Владыки Света и не был[From.GetEndA] исцелен[From.GetEndA];x
+EVTDESCred_priest.16B;Не у всех есть готовность или открытость, чтобы принять силу колдунов. [From.GetTitledFirstNameWithDynastyNoRegnal] - од[From.GetNaIn] из таких недальновидных,  [FromGetSheHe] отказа[From.GetLasLsya] от моего предложения и не был[From.GetEndA] исцелен[From.GetEndA].;x
+EVTDESCred_priest.16C;Не у всех есть желание или непредвзятость, чтобы принять силу колдунов. [From.GetTitledFirstNameWithDynastyNoRegnal] - од[From.GetNaIn] из таких недальновидных, ибо [FromGetSheHe] отказа[From.GetLasLsya] от моего предложения и не был[From.GetEndA] исцелен[From.GetEndA].;x
+EVTOPTAred_priest.16;Глупцы. Их выбор;x
+CUSTOMTOOLTIPrhllor_saved_me;[This.GetTitledFirstNameNoRegnal] дарует Вам Последний поцелуй...\n;x
+redgod_protection_plot;Защитить себя от заговоров.;x
+redgod_protection_plot_desc;Вы можете использовать жертвоприношение Р'глору, чтобы защитить свою жизнь от заговоров,;x
+redgod_protection_battle;Защитить себя в битве.;x
+redgod_protection_battle_desc;Вы можете использовать жертвоприношение Р'Глору, чтобы защитить себя в битве.;x
+redgod_heal_basic;Исцелиться от недугов.;x
+redgod_heal_basic_desc;Ваша жертва Р'глору поможет исцелить ваши травмы и болезни.;x
+redgod_healing_timer;Попытка исцеления Р'глором;x
+TOOLTIPredgod_heal_basicSUCCESS;[Root.GetTitledFirstNameNoRegnal] успешно исцелен[From.GetEndA] персонажем, известным как [This.GetTitledFirstName]\n;x
+TOOLTIPredgod_heal_basicFAIL;Исцеление провалилось\n;x
+TOOLTIPREDGODHEALCONVERT;[Root.GetTitledFirstNameNoRegnal] решит, принять ли ваше предложение исцеления. В случае успеха [Root.GetSheHe] обратится в религию Р'глора;x
+redgod_heal_chosen;Исцелить уродство;x
+redgod_heal_chosen_desc;Ваша жертва  Р'Глору поможет исцелить увечья этого человека.;x
+redgod_protection_plot_self;Защитить себя от заговоров.;x
+redgod_protection_plot_self_desc;Вы можете использовать жертвоприношение Р'Глору, чтобы защитить свою жизнь от заговоров,;x
+redgod_protection_battle_self;Защитить себя в битве.;x
+redgod_protection_battle_self_desc;Вы можете использовать жертвоприношение Р'Глору, чтобы  защитить себя в битве.;x
+redgod_heal_basic_self;Исцелиться от недугов.;x
+redgod_heal_basic_self_desc;Ваша жертва Р'Глору поможет исцелить ваши травмы и болезни.;x
+redgod_heal_basic_self_named;Попробовать исцелить свои травмы и болезни, принеся жертву Р'Глору;x
+redgod_heal_chosen_self;Исцелить Ваше уродство;x
+redgod_heal_chosen_self_desc;Ваша жертва Р'глору поможет исцелить ваши уродства.;x
+redgod_heal_chosen_self_named;Попробовать исцелить свои травмы и болезни, принеся жертву Р'Глору;x
+CUSTOMTOOLTIPdiseasecureallow;Вы любимы Р'глором и должны совершать жертвоприношение\n;x
+CUSTOMTOOLTIPdeformedcureallow;Вы избраны Р'глором и должны совершать жертвоприношение\n;x
+CUSTOMTOOLTIPredgod_nosacrafice;Р'Глор не принял этой жертвы\n;x
+show_redgod;Показать список действий Р'Глора;x
+show_redgod_desc;Открыть список опций.;x
+hide_redgod;Скрыть список действий Р'Глора;x
+hide_redgod_desc;Скрыть список опций.;x
+EVTDESCred_priest.17;Мой господин — возрожденный Азор Ахай, избранный Р'Глором. Пора показать всем силу Владыки Света!;x
+EVTOPTAred_priest.17;Ок;x
+EVTDESCred_priest.18;Под руководством персонажа, известного как [rhllor_priest.GetTitledFirstName] вы можете попытаться примерить звание Азор Ахая, вонзив меч в горящую святыню религии [rhllor_pries.Location.Religion.GetName] и обратить людей в земле [rhllor_pries.Location.GetName].;x
+EVTOPTAred_priest.18;Я - возрожденный Азор Ахай;x
+EVTOPTBred_priest.18;Нет, благодарю.;x
+EVTDESCred_priest.19;Вы стали свидетелем, как [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] вытащил[From.GetEndA] меч из пламени. Действительно ли [From.GetSheHe] возрожденный Азор Ахай?;x
+EVTOPTAred_priest.19;Да, я последую за светом Р'глора;x
+EVTOPTBred_priest.19;Теперь я верю.;x
+EVTOPTCred_priest.19;Это безумие, даже ребенок может разжечь костер и вынуть из него меч;x
+EVTOPTDred_priest.19;Нет, благодарю.;x
+CUSTOMTOOLTIPmassrhllorconversion;Все в этом месте станут радикальными и ревностными последователи Р'Глора, и все, кроме самых набожных иноверцев, будут обращены.;x
+EVTDESCred_priest.20;Выберете из списка доступные действия.;x
+EVTOPTAred_priest.20;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] получит защиту от заговоров.;x
+EVTOPTBred_priest.20;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] получит защиту в битве.;x
+EVTOPTCred_priest.20;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] вылечится от болезней;x
+EVTOPTDred_priest.20;Вылечить [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] вылечится от уродств и увечий.;x
+EVTOPTEred_priest.20;Ничего;x
+EVTOPTFred_priest.20;Обращение к Р'Глору;x
+EVTDESCred_priest.21;Слабое сияние окутывает ваше тело.;x
+EVTOPTAred_priest.21;…;x
+CUSTOMTOOLTIPviolentdeath_rhllor;Ваши раны очень глубоки и защита Р'Глора иссякла. Вы должны принести новую жертву, чтобы исцелиться.;x
+EVTOPTZred_priest.22;Р'ГЛОР, ДАЙ МНЕ СИЛ!!;x
+EVTDESCred_priest.22;Вы и [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] бились в поединке, и вот - всё закончилось, [From.GetHerHis] безжизненное тело лежит в луже собственной крови. Вы разворачиваетесь, чтобы уйти и, вдруг слышите голос: 'До следующего раза, [Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal]!';x
+EVTOPTAred_priest.22;Не могу в это поверить!;x
+red_god_magic;Жертвоприношения Р'Глору;x
+redgod_reveal_plots;Посмотреть в огонь;x
+redgod_reveal_plots_desc;Попросите вашего Красного Жреца помочь вам взглянуть в огонь, чтобы попытаться обнаружить заговоры против вас и вашей семьи.;x
+TOOLTIPredgod_reveal_plots;Заговор неизвестного против семьи персонажа [Root.GetTitledFirstNameNoRegnal]\n;x
+TOOLTIPredgod_reveal_plotsSUCCESS;Заговор успешно показан персонажу [This.GetTitledFirstName]\n;x
+TOOLTIPredgod_reveal_plotsFAIL;Ничего не понятно\n;x
+redgod_reveal_plots_timer;Взгяд в Пламя;x
+EVTDESCred_priest.23;Вы и [red_priest.GetTitledFirstName] провели много часов вместе, глядя в огонь. Ваши глаза слезятся, но, наконец, вы видите контур фигуры и понимаете, что это [red_priest_plotter_reveal.GetTitledFirstNameNoRegnal] [red_priest_plotter_reveal.GetOnlyDynastyName]! [red_priest_plotter_reveal.GetSheHeCap] явно замышляет [red_priest_plotter_reveal.GetPlot].;x
+EVTDESCred_priest.23B;Вы и [red_priest.GetTitledFirstName] пили Веченюю Тень, пока ваши губы не посинели. Вы чувствуете головокружение, когда видения начинают формироваться перед вами, наконец, вы видите контур фигуры и понимаете, что это  [red_priest_plotter_reveal.GetTitledFirstNameNoRegnal] [red_priest_plotter_reveal.GetOnlyDynastyName]! [red_priest_plotter_reveal.GetSheHeCap] явно замышляет [red_priest_plotter_reveal.GetPlot].;x
+EVTDESCred_priest.23C;Вы пили в Вечернюю тень, пока ваши губы не посинели. Вы чувствуете головокружение, когда видения начинают формироваться перед вами, и, наконец, Вы видите контур фигуры и понимаете, что это [red_priest_plotter_reveal.GetTitledFirstNameNoRegnal] [red_priest_plotter_reveal.GetOnlyDynastyName]! [red_priest_plotter_reveal.GetSheHeCap] явно замышляет [red_priest_plotter_reveal.GetPlot].;x
+EVTDESCred_priest.23D;Вы и [red_priest.GetTitledFirstName] провели ночь, выполняя магические обряды, омывая себя кровью. Вы выпили полученную смесь и начали получать видения, и, наконец, вы видите контур фигуры и понимаете, что это [red_priest_plotter_reveal.GetTitledFirstNameNoRegnal] [red_priest_plotter_reveal.GetOnlyDynastyName]! [red_priest_plotter_reveal.GetSheHeCap] явно замышляет [red_priest_plotter_reveal.GetPlot].;x
+EVTOPTAred_priest.23;[Root.Religion.GetRandomGodName] показал [red_priest_plotter_reveal.GetHerHis] предательство;x
+EVTDESCred_priest.24;Вы и [red_priest.GetTitledFirstName] провели много часов вместе, глядя в огонь, но безуспешно. Вам удалось увидеть неясные тени, которые ничего не показали об угрозах для вашей семьи.;x
+EVTDESCred_priest.24B;Вы и [red_priest.GetTitledFirstName] пили Вечернюю Тень, пока ваши губы не посинели, но безуспешно. Вам только удалось увидеть смутные видения, которые ничего не показали об угрозах для вашей семьи.;x
+EVTDESCred_priest.24C;Вы и [red_priest.GetTitledFirstName] провели ночь, выполняя магические обряды, омывая себя кровью. Вы выпили полученную смесь и начали получать видения, но, увы, они были бесполезны. Вам удалось увидеть только смутные видения, которые ничего не выявили об угрозах вашей семье.;x
+EVTOPTAred_priest.24;Надо отдохнуть от этого;x
+EVTDESCred_priest.25;Вы не совсем понимаете как, но [From.GetTitledFirstNameNoRegnal] узнал[From.GetEndA] о вашем заговоре [Root.GetPlot]!;x
+EVTOPTAred_priest.25;Это должно быть связано с персонажем [From.job_spiritual.GetTitledFirstName];x
+EVTDESCred_priest.26;[red_priest.GetTitledFirstName] стоит рядом с вами и призывает Владыку Света прогнать тьму и исцелить вас от вашей болезни. [red_priest.GetSheHeCap] использует огонь для лечения пораженных областей, и вы сразу почувствуете облегчение.;x
+EVTDESCred_priest.26B;[red_priest.GetTitledFirstName] купает вас в горячей крови, прежде чем начать бормотать непонятные заклинания. Следом, [red_priest.GetSheHeCap] разрезает горло ягненка, проливая кровь на рану. Сразу же чувствуется облегчение.;x
+EVTDESCred_priest.26C;[red_priest.GetTitledFirstName] купает вас в горячей крови, прежде чем начать бормотать непонятные заклинания. Следом, [red_priest.GetSheHeCap] разрезает горло ягненка, проливая кровь на рану. Сразу же чувствуется облегчение.;x
+EVTOPTAred_priest.26;[Root.Religion.GetRandomGodName] мне благоволит;x
+EVTDESCred_priest.27;[red_priest.GetTitledFirstName] пытался призвать Р'глора, чтобы излечить вас от вашего недуга, повторяя его имя и окуная пострадавшую часть тела в огонь. Однако ничего не произошло, только легкое жжение.;x
+EVTDESCred_priest.27B;[red_priest.GetTitledFirstName] попыта[red_priest.GetLasLsya] призвать всю свою силу, чтобы исцелить вас от вашего недуга, проливая кровь убитого ягненка на вашу рану и произнося непонятные заклинания. Однако ничего не произошло, кроме умиротворяющих видений из-за вечерней тени, которую [red_priest.GetSheHe] заставил[red_priest.GetEndA] выпить.;x
+EVTDESCred_priest.27C;[red_priest.GetTitledFirstName] пыта[red_priest.GetLasLsya] призвать все свои силы, чтобы исцелить вас от вашего недуга, проливая кровь убитого ягненка на вашу рану и произнося непонятные заклинания. Однако, ничего не произошло, кроме умиротворяющих видений из-за смеси крови, которую [red_priest.GetSheHe] заставил[red_priest.GetEndA] вас пить.;x
+EVTOPTAred_priest.27;Почему [Root.Religion.GetRandomGodName] оставил меня?;x
+EVTDESCred_priest.28;Уродство, от которого вы страдаете, велико, но [red_priest.GetTitledFirstName] уверен[red_priest.GetEndA], что Владыка Света сможет излечить его избранного. Красный жрец возводит большой костер и предлагает вам войти в него. Как только вы это делаете, жар перестает наносить вам вред, а вместо этого освобождает вас от вашего несчастья!;x
+EVTDESCred_priest.28B;Уродство, от которого вы страдаете, велико, но [red_priest.GetTitledFirstName] уверен[red_priest.GetEndA], что вы можете вылечиться, если [red_priest.GetSheHe] использует самую мощную магию. Колдун опаивает вас вечерней тенью, вызвавая глубокие видения, перед этим забив целого быка, и начинает читать заклинания. Когда вы просыпаетесь из своего транса, вы обнаруживате, что исцелились!;x
+EVTDESCred_priest.28C;Уродство, от которого вы страдаете, велико, но [red_priest.GetTitledFirstName] уверен[red_priest.GetEndA], что вы можете вылечиться, если [red_priest.GetSheHe] использует самую мощную магию. [Root.Religion.GetPriestTitle] дает вам выпить отвратительные отвары, чтобы вызвать глубокие видения, перед этим забив несколько зубров, чтобы начать заклинание. Когда вы просыпаетесь из своего транса, вы обнаруживате, что исцелились!;x
+EVTOPTAred_priest.28;Это чудо!;x
+EVTDESCred_priest.29;Стремясь освободить вас от вашего обременительного недуга, [red_priest.GetTitledFirstName] призвал[red_priest.GetEndA] вас вступить в большой костер, который [red_priest.GetSheHe] развел[red_priest.GetEndA]. Однако, способ не работает. Вы пытаетесь противостоять нестерпимому жару, и пусть пламя исцеляет вас, но оно сжигает вас очень сильно...;x
+EVTDESCred_priest.29B;Стремясь освободить вас от вашего обременительного недуга, [red_priest.GetTitledFirstName] призвал[red_priest.GetEndA] вас выпить очень много вечерней тени для вызова мощного заклинания. Несмотря на то что [red_priest.GetSheHe] жертвует множество животных для усиления магии, вы не исцеляетесь. Видения, которые вы видите, настолько интенсивны, что заставляют вас страдать в сто раз хуже,  ваша голова уже готовва взорваться...;x
+EVTDESCred_priest.29C;В попытке освободить вас от вашего обременительного недуга, [red_priest.GetTitledFirstName] призывает вас выпить зелье с отвратительным вкусом, чтобы вызвать мощное заклинание. Несмотря на то, что [red_priest.GetSheHe] жертвует многих животных ради магии крови, вы не исцелены. Видения, которые вы видите, настолько интенсивны, что заставляют вас страдать в сто раз хуже,  ваша голова уже готовва взорваться...;x
+EVTOPTAred_priest.29;Арргх! Вытащи меня отсюда!;x
+EVTDESCred_priest.30;[red_priest.GetTitledFirstName] стоит рядом с персонажем [From.GetTitledFirstNameNoRegnal] и призывает Владыку Света снять тьму с н[From.GetHerHis] и исцелить [From.GetHerHis] от болезни. [red_priest.GetSheHeCap] использует огонь для лечения пораженных областей, и [From.GetTitledFirstNameNoRegnal] сразу говорит, что [From.GetSheHe] чувствует облегчение.;x
+EVTDESCred_priest.30B;[From.GetTitledFirstNameNoRegnal] позволил[From.GetEndA] персонажу [red_priest.GetTitledFirstName] попробовать исцелить [From.GetHerHis], и поэтому Красный Жрец призывает Владыку Света прогнать тьму с н[From.GetHerHis] и исцелить [From.GetHerHis] от болезни. [red_priest.GetSheHeCap] использует огонь для лечения пораженных областей, и сразу же [From.GetTitledFirstNameNoRegnal] говорит, что [From.GetSheHe] чувствует облегчение, и примет Р'глора как единственного истинного Бога.;x
+EVTDESCred_priest.30C;[red_priest.GetTitledFirstName] призвал[red_priest.GetEndA] персонажа [From.GetTitledFirstNameNoRegnal] выкупаться в горячей крови, прежде чем начать бормотать заклинания. [red_priest.GetSheHeCap] затем перерезал[red_priest.GetEndA] горло ягненка, пролив кровь на рану. Сразу же [From.GetTitledFirstNameNoRegnal] сказал[red_priest.GetEndA], что [From.GetSheHe] чувствует облегчение.;x
+EVTDESCred_priest.30D;[From.GetTitledFirstNameNoRegnal] попросил[From.GetEndA], чтобы [red_priest.GetTitledFirstName] попробовал[red_priest.GetEndA] исцелить [From.GetHerHis], и поэтому колдун искупал[red_priest.GetEndA] [From.GetHerHis] в горячей крови, перед тем как начать бормотать заклинания. Затем, [red_priest.GetSheHeCap] перерезал[red_priest.GetEndA] горло ягненку, пролив кровь на рану. Сразу же [From.GetTitledFirstNameNoRegnal] говорит, что [From.GetSheHe] чувствует облегчение, и поэтому примет пути колдунов.;x
+EVTDESCred_priest.30E;[red_priest.GetTitledFirstName] призвал[red_priest.GetEndA] персонажа [From.GetTitledFirstNameNoRegnal] выкупаться в горячей крови, прежде чем начать бормотать заклинания. [red_priest.GetSheHeCap] затем перерезал[red_priest.GetEndA] горло ягненка, пролив кровь на рану. Сразу же [From.GetTitledFirstNameNoRegnal] сказал[red_priest.GetEndA], что [From.GetSheHe] чувствует облегчение.;x
+EVTDESCred_priest.30F;[From.GetTitledFirstNameNoRegnal] попросил[From.GetEndA], чтобы [red_priest.GetTitledFirstName] попробовал[red_priest.GetEndA] исцелить [From.GetHerHis], и поэтому [Root.Religion.GetPriestTitle] искупал[Root.Religion.GetEndA] [From.GetHerHis] в горячей крови, перед тем как начать бормотать заклинания. Затем, [red_priest.GetSheHeCap] перерезал[red_priest.GetEndA] горло ягненку, пролив кровь на рану. Сразу же [From.GetTitledFirstNameNoRegnal] говорит, что [From.GetSheHe] чувствует облегчение, и поэтому примет путь религии [Root.Religion.GetName].;x
+EVTOPTAred_priest.30;[Root.Religion.GetRandomGodName] покровительствует [From.GetHerHim];x
+EVTDESCred_priest.31;[red_priest.GetTitledFirstName] попыта[red_priest.GetLasLsya] призвать Р'глора, чтобы исцелить персонажа [From.GetTitledFirstNameNoRegnal] от [From.GetHerHis] болезни, повторяя его имя и обдавая пораженную часть тела огнем. Однако ничего не произошло, только легкое жжение.;x
+EVTDESCred_priest.31B;[From.GetTitledFirstNameNoRegnal] позволил[From.GetLasLsya] персонажу [red_priest.GetTitledFirstName] попробовать исцелить [From.GetHerHis], и поэтому Красный Жрец пытался призвать Р'глора исцелить [From.GetHerHis] от [From.GetHerHis] болезни, повторяя его имя и обдавая пораженную часть тела огнем. Однако ничего не произошло, только легкое жжение.;x
+EVTDESCred_priest.31C;[red_priest.GetTitledFirstName] попыта[red_priest.GetLasLsya] призвать всю свою силу для исцеления персонажа [From.GetTitledFirstNameNoRegnal] от [From.GetHerHis] болезни, проливая кровь убитого ягненка на рану и произнося неясные заклинания. Однако ничего не произошло, кроме легких видений из-за Вечерней Тени, выпитой по [From.GetHerHis] наставлению.;x
+EVTDESCred_priest.31D;[From.GetTitledFirstNameNoRegnal] позволил[From.GetEndA] персонажу [red_priest.GetTitledFirstName] попробовать исцелить [From.GetHerHis], и поэтому колдун попыта[red_priest.GetLasLsya] вызвать всю свою силу для лечения [From.GetHerHis] от [From.GetHerHis] болезни, проливая кровь убитого ягненка на рану и произнося неясные заклинания. Однако ничего не произошло, кроме легких видений из-за Вечерней Тени, выпитой по [From.GetHerHis] наставлению.;x
+EVTDESCred_priest.31E;[red_priest.GetTitledFirstName] попыта[red_priest.GetLasLsya] призвать всю свою силу крови для исцеления персонажа [From.GetTitledFirstNameNoRegnal] от [From.GetHerHis] болезни, проливая кровь убитого ягненка на рану и произнося неясные заклинания. Однако ничего не произошло, кроме отвратительных видений из-за зелья, которое [Root.Religion.GetPriestTitle] вынудил[Root.Religion.GetEndA] выпить.;x
+EVTDESCred_priest.31F;[From.GetTitledFirstNameNoRegnal] позволил[From.GetEndA] персонажу [red_priest.GetTitledFirstName] попробовать исцелить [From.GetHerHis], и поэтому [Root.Religion.GetPriestTitle] попыта[Root.Religion.GetLasLsya] вызвать всю свою силу магии крови для лечения [From.GetHerHis] от [From.GetHerHis] болезни, проливая кровь убитого ягненка на рану и произнося неясные заклинания. Однако ничего не произошло, кроме отвратительных видений из-за зелья, которое [Root.Religion.GetPriestTitle] вынудил[Root.Religion.GetEndA] выпить..;x
+EVTOPTAred_priest.31;[Root.Religion.GetRandomGodName] оставил [From.GetHerHis];x
+EVTDESCred_priest.32;[From.GetTitledFirstNameNoRegnal] попросил[From.GetEndA], чтобы [From.job_spiritual.GetTitledFirstName] попытата[job_spiritual.GetLasLsya] исцелить ваш недуг, и поэтому Красный Жрец стоит рядом с вами и призывает Владыку Света прогнать тьму и исцелить вас от вашей болезни. [From.job_spiritual.GetSheHeCap] использует огонь для лечения пораженных областей, и вы сразу чувствуете облегчение.;x
+EVTDESCred_priest.32B;Вы попросили Красного Жреца, известного как [From.GetTitledFirstNameNoRegnal] исцелить свое недомогание, и поэтому [From.job_spiritual.GetTitledFirstName] стоит рядом с вами и призывает Владыку Света прогнать тьму и вылечить вас от вашей болезни. [From.job_spiritual.GetSheHeCap] использует огонь для лечения пораженных областей, и вы сразу чувствуете облегчение.;x
+EVTDESCred_priest.32C;[From.GetTitledFirstNameNoRegnal] попросил[From.GetEndA], чтобы [From.job_spiritual.GetTitledFirstName] исцелил[From.job_spiritual.GetEndA] ваше недомогание, и поэтому, по приказу колдуна, вы купаетесь в горячей крови, прежде чем он начнет бормотать непонятные заклинания. Затем, [From.job_spiritual.GetSheHeCap] перерезает горло ягненка, проливая его кровь на вашу рану. Сразу же чувствуется облегчение.;x
+EVTDESCred_priest.32D;Вы согласились разрешить колдуну, известному как[From.GetTitledFirstNameNoRegnal] попробовать исцелить свое недомогание, и поэтому [From.job_spiritual.GetTitledFirstName] заставил[From.job_spiritual.GetEndA] вас выкупаться в горячей крови, прежде чем начать бормотать непонятные заклинания. Затем, [From.job_spiritual.GetSheHeCap] разрезает горло ягненка, проливая его кровь на вашу рану. Сразу же чувствуется облегчение.;x
+EVTDESCred_priest.32E;[From.GetTitledFirstNameNoRegnal] попросил[From.GetEndA], чтобы [From.job_spiritual.GetTitledFirstName] исцелил[From.job_spiritual.GetEndA] ваше недомогание, и поэтому, как приказал[From.Religion.GetEndA] [From.Religion.GetPriestTitle], вы купаетесь в горячей крови, прежде чем начинается обряд. Затем [From.job_spiritual.GetSheHeCap] перерезает горло ягненка, проливая его кровь на вашу рану. Сразу же чувствуется облегчение.;x
+EVTDESCred_priest.32F;[From.GetTitledFirstNameNoRegnal] позволил[From.GetEndA] персонажу [red_priest.GetTitledFirstName] попробовать исцелить ваше недомогание магией крови, и поэтому [From.job_spiritual.GetTitledFirstName] заставил[From.job_spiritual.GetEndA] вас выкупаться в горячей крови, прежде чем начать бормотать непонятные заклинания. [From.job_spiritual.GetSheHeCap] разрезает горло ягненка, проливая его кровь на вашу рану. Сразу же чувствуется облегчение.;x
+EVTDESCred_priest.33;[From.GetTitledFirstNameNoRegnal] попросил[From.GetEndA], чтобы [From.job_spiritual.GetTitledFirstName] исцелил[From.job_spiritual.GetEndA] ваше недомогание, и поэтому Красный Жрец попытался призвать Р'глора, чтобы исцелить вас от вашего недуга, повторяя его имя и обдавая пострадавшую область в огне. Однако ничего не произошло, только легкое жжение.;x
+EVTDESCred_priest.33B;Вы позволили Красному Жрецу, известному как[From.GetTitledFirstNameNoRegnal] исцелить свое недомогание, и поэтому [From.job_spiritual.GetTitledFirstName] попыта[From.job_spiritual.GetLasLsya] призвать Р'глора исцелить вас от вашего недуга, повторяя его имя и обдавая больную часть огнем. Однако ничего не произошло, только легкое жжение.;x
+EVTDESCred_priest.33C;[From.GetTitledFirstNameNoRegnal] попросил[From.GetEndA], чтобы [From.job_spiritual.GetTitledFirstName] исцелил[From.job_spiritual.GetEndA] ваш недуг, и поэтому колдун попыта[From.job_spiritual.GetLasLsya] призвать всю свою силу для исцеления вас от недуга, пролив кровь убитого ягненка на вашу рану и произнося смутные заклинания. Однако ничего не случилось, кроме легких ведений из-за вечерней тени, которую колдун заставил выпить.;x
+EVTDESCred_priest.33D;Вы позволили колдуну, известному как [From.GetTitledFirstNameNoRegnal] исцелить свое недуг, и поэтому колдун попытался призвать всю свою силу для исцеления вас от недуга, проливая кровь убитого ягненка на вашу рану и произнося смутные заклинания. Однако ничего не случилось,  кроме легких ведений из-за вечерней тени, которую колдун заставил выпить.;x
+EVTDESCred_priest.33E;[From.GetTitledFirstNameNoRegnal] попросил[From.GetEndA], чтобы [From.job_spiritual.GetTitledFirstName] исцелил[From.job_spiritual.GetEndA] ваш недуг магией крови, и поэтому [From.Religion.GetPriestTitle] попыта[From.job_spiritual.GetLasLsya] призвать всю свою силу для исцеления вас от недуга, пролив кровь убитого ягненка на вашу рану и произнося смутные заклинания. Однако ничего не произошло, кроме отвратительных видений от зелья, которое [From.Religion.GetPriestTitle] заставил[From.Religion.GetEndA] вас выпить.;x
+EVTDESCred_priest.33F;[From.GetTitledFirstNameNoRegnal] позволил[From.GetEndA] персонажу [red_priest.GetTitledFirstName] попробовать исцелить ваше недомогание магией крови, и поэтому [From.Religion.GetPriestTitle] патается призвать всю свою силу для исцеления вас от недуга, проливая кровь убитого ягненка на вашу рану и произнося смутные заклинания. Однако ничего не произошло, кроме отвратительных видений от зелья, которое [From.Religion.GetPriestTitle] заставил[From.Religion.GetEndA] вас выпить.;x
+EVTOPTAred_priest.33;Это была глупая идея;x
+EVTDESCred_priest.34;[From.GetTitledFirstNameNoRegnal] страдает от уродства, но [red_priest.GetTitledFirstName] уверен[red_priest.GetEndA], что Владыка Света сможет излечить это от имени своего избранного. Красный Жрец возводит большой костер, и говорит, чтобы [From.GetTitledFirstNameNoRegnal] вош[From.GetLaYol] в него. [From.GetSheHe] делает это, но жар не наносит вреда, а вместо этого освобождает [From.GetHerHis] от [From.GetHerHis] беды!;x
+EVTDESCred_priest.34B;[From.GetTitledFirstNameNoRegnal] позволил[From.GetEndA] персонажу [red_priest.GetTitledFirstName] попробовать исцелить [From.GetHerHis], Красный Жрец развел[red_priest.GetEndA] большой костер, и предложил[red_priest.GetEndA] персонажу [From.GetTitledFirstNameNoRegnal] войти в него. [From.GetSheHe] сделал[From.GetEndA] это, но жар не навредил [From.GetHerHim], а вместо этого освободил [From.GetHerHis] от [From.GetHerHis] беды!;x
+EVTDESCred_priest.34C;Уродство персонажа [From.GetTitledFirstNameNoRegnal] велико, но [red_priest.GetTitledFirstName] уверен[red_priest.GetEndA], что [From.GetSheHe] может быть исцелен[From.GetEndA] с использованием самой мощной магии, которой [red_priest.GetSheHe] обладает. Колдун заставляет [From.GetHerHis] выпить много вечерней тени для вызова глубоких видений, и в это же время зарезает целого быка. Когда [From.GetTitledFirstNameNoRegnal] просыпается из своего транса, вы видите, что [From.GetSheHe] исцелен[From.GetEndA]!;x
+EVTDESCred_priest.34D;[From.GetTitledFirstNameNoRegnal] позволил[From.GetEndA] персонажу [red_priest.GetTitledFirstName] попытаться исцелить [From.GetHerHis], и поэтому колдун заставляет [From.GetHerHis] выпить большое количество вечерней тени для вызова глубоких видений, и в то же время, перерезает горло целому быку. Когда [From.GetTitledFirstNameNoRegnal] просыпается из своего транса, вы находите, что [From.GetSheHe] исцелен[From.GetEndA]!;x
+EVTDESCred_priest.34E;Уродство персонажа [From.GetTitledFirstNameNoRegnal] велико, но [red_priest.GetTitledFirstName] уверен[red_priest.GetEndA], что [From.GetSheHe] может быть исцелен[From.GetEndA] с использованием самой мощной магии крови, которой [red_priest.GetSheHe] обладает. [Root.Religion.GetPriestTitle] заставляет [From.GetHerHis] выпить обильное количество зелий, чтобы вызвать глубокие видения, и в это же время зарезает целого зубра. Когда [From.GetTitledFirstNameNoRegnal] просыпается из своего транса, вы видите, что [From.GetSheHe] исцелен[From.GetEndA]!;x
+EVTDESCred_priest.34F;[From.GetTitledFirstNameNoRegnal] позволил[From.GetEndA] персонажу [red_priest.GetTitledFirstName] попытаться исцелить [From.GetHerHis], и поэтому [Root.Religion.GetPriestTitle] заставляет [From.GetHerHis] выпить большое количество зелья для вызова глубоких видений, и в то же время, перерезает горло целому быку. Когда [From.GetTitledFirstNameNoRegnal] просыпается из своего транса, вы находите, что [From.GetSheHe] исцелен[From.GetEndA]!;x
+EVTDESCred_priest.35;В попытке освободить персонажа [From.GetTitledFirstNameNoRegnal] от [From.GetHerHis] обременительного недуга, [red_priest.GetTitledFirstName] сказал[red_priest.GetEndA] [From.GetHerHim] войти в большой костер, который [red_priest.GetSheHe] развел[red_priest.GetEndA]. Однако, способ не сработал. [From.GetTitledFirstNameNoRegnal] пытается противостоять жгущему жару, пламя исцеляет [From.GetHerHis], но, и в тоже время, сильно обжигает...;x
+EVTDESCred_priest.35B;[From.GetTitledFirstNameNoRegnal] позволил[From.GetEndA] персонажу [red_priest.GetTitledFirstName] попробовать исцелить [From.GetHerHis], и поэтому Красный Жрец сказал[red_priest.GetEndA] [From.GetHerHim] войти в большой костер, который [red_priest.GetSheHe] развел[red_priest.GetEndA]. Однако, способ не сработал. [From.GetTitledFirstNameNoRegnal] пытается противостоять жгущему жару, пламя исцеляет [From.GetHerHis], но, и в тоже время, сильно обжигает...;x
+EVTDESCred_priest.35C;В попытке освободить персонажа [From.GetTitledFirstNameNoRegnal] от [From.GetHerHis] обременительного недуга, [red_priest.GetTitledFirstName] сказал[red_priest.GetEndA] [From.GetHerHim] выпить большое количесво вечерней тени для более сильного заклинания. Несмотря на большое количество животных, которых [red_priest.GetSheHe] пожертвовал[red_priest.GetEndA] для усиления магии, [From.GetSheHe] не излечи[From.GetLasLsya]. [From.GetTitledFirstNameNoRegnal] сначала впадает в глубокий сон, но вскоре кричит в агонии...;x
+EVTDESCred_priest.35D;[From.GetTitledFirstNameNoRegnal] позволил[From.GetEndA] персонажу [red_priest.GetTitledFirstName] попробовать исцелить [From.GetHerHis], поэтому колдун сказал[red_priest.GetEndA] [From.GetHerHim] выпить большое количесво вечерней тени для более сильного заклинания. Несмотря на большое количество животных, которых [red_priest.GetSheHe] пожертвовал[red_priest.GetEndA] для усиления магии, [From.GetSheHe] не излечи[From.GetLasLsya]. [From.GetTitledFirstNameNoRegnal] сначала впадает в глубокий сон, но вскоре кричит в агонии...;x
+EVTDESCred_priest.35E;В попытке освободить персонажа [From.GetTitledFirstNameNoRegnal] от [From.GetHerHis] обременительного недуга, [red_priest.GetTitledFirstName] сказал[red_priest.GetEndA] [From.GetHerHim] выпить большое количесво зелья для более сильного заклинания. Несмотря на большое количество животных, которых [red_priest.GetSheHe] пожертвовал[red_priest.GetEndA] для усиления кровной магии, [From.GetSheHe] не излечи[From.GetLasLsya]. [From.GetTitledFirstNameNoRegnal] сначала впадает в глубокий сон, но вскоре кричит в агонии...;x
+EVTDESCred_priest.35F;[From.GetTitledFirstNameNoRegnal] позволил[From.GetEndA] персонажу [red_priest.GetTitledFirstName] попробовать исцелить [From.GetHerHis], поэтому [Root.Religion.GetPriestTitle] сказал[Root.Religion.GetEndA] [From.GetHerHim] выпить большое количесво зелья для более сильного заклинания. Несмотря на большое количество животных, которых [red_priest.GetSheHe] пожертвовал[red_priest.GetEndA] для усиления кровной магии, [From.GetSheHe] не излечи[From.GetLasLsya]. [From.GetTitledFirstNameNoRegnal] сначала впадает в глубокий сон, но вскоре кричит в агонии...;x
+EVTOPTAred_priest.35;Остановите это безумие! Скажите [From.GetHerHim] уйти!;x
+EVTDESCred_priest.36;[From.GetTitledFirstNameNoRegnal] попросил[From.GetEndA], чтобы [From.job_spiritual.GetTitledFirstName] исцелил[From.job_spiritual.GetEndA] ваше уродство. Красный Жрец возводит большой костер и предлагает вам войти в него. Когда вы это делаете, то чувствуете, что жар не причиняет вам вреда, а вместо этого освобождает вас от вашего несчастья!;x
+EVTDESCred_priest.36B;Вы согласились, чтобы Красный Жрец персонажа [From.GetTitledFirstNameNoRegnal] излечил[From.job_spiritual.GetEndA] вас от вашего уродства. [From.job_spiritual.GetTitledFirstName] возводит большой костер и предлагает вам войти в него. Когда вы это делаете, то чувствуете, что жар не причиняет вам вреда, а вместо этого освобождает вас от вашего несчастья!;x
+EVTDESCred_priest.36C;[From.GetTitledFirstNameNoRegnal] попросил[From.GetEndA], чтобы [From.job_spiritual.GetTitledFirstName] исцелил[From.job_spiritual.GetEndA] ваше уродство. Колдун приказал[From.job_spiritual.GetEndA] вам выпить много вечерней тени для вызова глубоких видений, и зарезал[From.job_spiritual.GetEndA] целого быка, чтобы призвать мощное заклинание. Когда вы просыпаетесь из своего транса, то обнаруживаете, что исцелились!;x
+EVTDESCred_priest.36D;Вы позволили колдуну персонажа [From.GetTitledFirstNameNoRegnal] исцелить ваше уродство. [From.job_spiritual.GetTitledFirstName] приказал[From.job_spiritual.GetEndA] вам выпить много вечерней тени для вызова глубоких видений, и зарезал[From.job_spiritual.GetEndA] целого быка, чтобы призвать мощное заклинание. Когда вы просыпаетесь из своего транса, то обнаруживаете, что исцелились!;x
+EVTDESCred_priest.36E;[From.GetTitledFirstNameNoRegnal] опросил[From.GetEndA], чтобы [From.job_spiritual.GetTitledFirstName] исцелил[From.job_spiritual.GetEndA] ваше уродство. [From.Religion.GetPriestTitle] приказал[From.Religion.GetEndA] вам выпить много зелья для вызова глубоких видений, и зарезал[From.Religion.GetEndA] целого быка, чтобы призвать мощное заклинание магии крови. Когда вы просыпаетесь из своего транса, то обнаруживаете, что исцелились!;x
+EVTDESCred_priest.36F;Вы позволили, чтобы [From.Religion.GetPriestTitle] персонажа [From.GetTitledFirstNameNoRegnal] исцелил[From.Religion.GetEndA] ваше уродство. [From.job_spiritual.GetTitledFirstName] приказал[From.job_spiritual.GetEndA] вам выпить много зелья для вызова глубоких видений, и зарезал[From.job_spiritual.GetEndA] целого быка, чтобы призвать мощное заклинание магии крови. Когда вы просыпаетесь из своего транса, то обнаруживаете, что исцелились!;x
+EVTDESCred_priest.37;[From.GetTitledFirstNameNoRegnal] попросил[From.GetEndA], чтобы [From.job_spiritual.GetTitledFirstName] исцелил[From.job_spiritual.GetEndA] ваше уродство. Красный жрец призывает вас войти большой костер, который [red_priest.GetSheHe] развел[red_priest.GetEndA]. Однако, способ не помогает. Вы пытаетесь противостоять нестерпимому жару, и хоть пламя исцеляет вас, оно обжигает вас слишком сильно...;x
+EVTDESCred_priest.37B;Вы позволили Красному Жрецу персонажа [From.GetTitledFirstNameNoRegnal] исцелить ваше уродство. [From.job_spiritual.GetTitledFirstName] призывает вас войти в большой костер, который [red_priest.GetSheHe] развел[From.job_spiritual.GetEndA]. Однако, способ не помогает. Вы пытаетесь противостоять нестерпимому жару, и хоть пламя исцеляет вас, оно обжигает вас слишком сильно...;x
+EVTDESCred_priest.37C;[From.GetTitledFirstNameNoRegnal] попросил[From.GetEndA], чтобы [From.job_spiritual.GetTitledFirstName] исцелил[From.job_spiritual.GetEndA] ваше уродство. Колдун призывает вас выпить большое количество вечерней тени для вызова мощного заклинания. Несмотря на то, что [red_priest.GetSheHe] принес[red_priest.GetNoneE] много животных в жертву магии, вы не исцеляетесь. Видения, которые вы видите, только усиливают ваши страдания, вы чувствуете себя в сто раз хуже, кажется голова уже готова взорваться...;x
+EVTDESCred_priest.37D;Вы позволили колдуну персонажа [From.GetTitledFirstNameNoRegnal] исцелить ваше уродство. [From.job_spiritual.GetTitledFirstName] призывает вас выпить большое количество вечерней тени для вызова мощного заклинания. Несмотря на то, что [red_priest.GetSheHe] принес[red_priest.GetNoneE] много животных в жертву магии, вы не исцеляетесь. Видения, которые вы видите  только усиливают ваши страдания, вы чувствуете себя в сто раз хуже, кажется голова уже готова взорваться...;x
+EVTDESCred_priest.37E;[From.GetTitledFirstNameNoRegnal] попросил[From.GetEndA], чтобы [From.job_spiritual.GetTitledFirstName] исцелил[From.job_spiritual.GetEndA] ваше уродство. [From.Religion.GetPriestTitle] призывает вас выпить большое количество зелья для вызова мощного заклинания. Несмотря на то, что [red_priest.GetSheHe] принес[red_priest.GetNoneE] много животных в жертву магии крови, вы не исцеляетесь. Видения, которые вы видите, только усиливают ваши страдания, вы чувствуете себя в сто раз хуже, кажется голова уже готова взорваться...;x
+EVTDESCred_priest.37F;Вы позволили, чтобы [From.Religion.GetPriestTitle] персонажа [From.GetTitledFirstNameNoRegnal] исцелил[From.Religion.GetEndA] ваше уродство. [From.job_spiritual.GetTitledFirstName] призывает вас выпить большое количество зелья для вызова мощного заклинания. Несмотря на то, что [red_priest.GetSheHe] принес[red_priest.GetNoneE] много животных в жертву магии крови, вы не исцеляетесь. Видения, которые вы видите, только усиливают ваши страдания, вы чувствуете себя в сто раз хуже, кажется голова уже готова взорваться...;x
+EVTDESCred_priest.38B;Когда вы чувствуете, что ваша жизнь покидает вас, [red_priest.GetTitledFirstName] выполняет последний поцелуй. [red_priest.GetSheHeCap] наполняет свой рот огнем и дышит пламенем в вас, чтобы очистить вашу душу. Однако огонь оживляет! Вы были воскрешены Р'глором!;x
+EVTDESCred_priest.38;Когда вы снова умираете, [red_priest.GetTitledFirstName] выполняет последний поцелуй. [red_priest.GetSheHeCap] наполняет свой рот огнем и дышит пламенем в вас, чтобы очистить вашу душу. Огонь снова оживляет!;x
+EVTOPTAred_priest.38;Я чувствую себя иначе совсем иначе...;x
+resurrected_by_rhllor;Воскрешение;x
+resurrected_by_rhllor_desc;Этот персонаж ранее умирал, но был воскрешен силой Красного Бога.;x
+EVTDESCred_priest.39;Старость настигла вас, вы в очередной раз умираете...;x
+EVTOPTAred_priest.39;Мне пора покинуть этот мир...;x
+EVTOPTBred_priest.39;[red_priest.GetTitledFirstName] выполняет последний поцелуй...;x
+EVTDESCred_priest.40;Несмотря на то, что умер[From.GetNoneE] у вас на руках, [From.GetTitledFirstNameNoRegnal] удесным образом выжил[From.GetEndA], похоже, был[From.GetEndA] воскрешен[From.GetEndA]!;x
+EVTOPTAred_priest.40;Что это за колдовство!;x
+opinion_healed_me;Удалось исцелить меня;x
+opinion_failed_to_heal_me;Исцеление не удалось;x
+EVTDESCred_priest.1;Странный Красный Жрец из Эссоса появился при моем дворе. Он говорит о Р'глоре, Боге света, тепла и жизни и его противоположности, имя которого нельзя произносить, Боге льда и смерти.;x
+EVTOPTAred_priest.1;Принять эту новую религию!;x
+EVTOPTBred_priest.1;Пусть этот еретик будет заключен в тюрьму!;x
+EVTOPTCred_priest.1;Как скучно...;x
+EVTDESCred_priest.2;Каждую ночь я пою молитвы у огня, разведенного Красным Жрецом, глядя в пламя и пытаясь получить видения будущего. Жрецы сообщают мне, что Владыка Света благоволит мне.;x
+EVTOPTAred_priest.2;Ночь темна и полна ужасов;x
+EVTTITLEred_priest.3;Избрание Р'глором;x
+EVTDESCred_priest.3;Два Божества ведут вечную борьбу за судьбу мира, борьбу, которая согласно древнему пророчеству из книг Асшая, закончится только тогда, когда Азор Ахай, легендарный герой вернется, держа в  руках пылающий меч -  Светозарный, Меч Героев и воскресит драконов из камня. Красный Жрец говорит, что я возрожденный Азор Ахай, достойный владеть Светозорным и которому по силам прогнать тьму из мира.;x
+EVTOPTAred_priest.3;Я принесу Свет;x
+EVTDESCreligious.1.2;Вы отвернулись от веры, в которую верили в течение многих лет, и теперь примите истинный путь - [Root.Religion.GetName].;x
+EVTOPTAreligious.1.2;Так называемый 'Владыка Света' оказался ложным;x
+EVTOPTBreligious.1.2;Я не верю в 'Семерых';x
+EVTOPTCreligious.1.2;Утонувший Бог - это дикость;x
+EVTDESCred_priest.5;Жертвенный костер, как подношение Владыке Света, принесет мне большую пользу, по словам Красного Жреца. Тем не менее, неверующим, которыми я правлю, это не понравятся.;x
+EVTOPTAred_priest.5;Принести в жертву изменника - [burning_target.GetTitledFirstName] [burning_target.GetOnlyDynastyName];x
+EVTOPTAred_priest.5B;Принести в жертву неверного - [burning_target.GetTitledFirstName] [burning_target.GetOnlyDynastyName];x
+EVTOPTAred_priest.5C;Принести в жертву персонажа [burning_target.GetTitledFirstName] [burning_target.GetOnlyDynastyName], [burning_target.GetSheHe] королевской крови;x
+EVTOPTBred_priest.5;Принести в жертву простолюдина из темницы;x
+EVTOPTCred_priest.5;Я бросаю вызов жестокости Владыки Света;x
+EVTOPTDred_priest.5;Сжечь Богорощу в земле [burn_godswood.County.GetName]!;x
+opinion_burned_godswood;Сожжение Богорощи;x
+EVTOPTEred_priest.5;[burn_temple.GetFullName] сгорел дотла!;x
+burned_for_rhllor;Сожжено во имя Р'глора;x
+opinion_burned_temple;Сожжено место поклонения;x
+TOOLTIPred_priest.5CRUEL;Не последователи Р'глора при вашем дворе и среди ваших вассалов уменьшат свое мнение о вас на §R-15§! В течение 12 месяцев\n;x
+opinion_burned_a_prisoner;Сожжение пленного живьем;x
+TOOLTIPred_priest.5BURNEDGODSWOOD;Последователи Старых Богов при вашем дворе и среди ваших вассалов уменьшат свое мнение о вас на §R-15§! в течение 36 месяцев\n;x
+TOOLTIPred_priest.5BURNEDTEMPLE;Последователи веры [burn_temple.Holder.Religion.GetName] при вашем дворе и среди ваших вассалов уменьшат свое мнение о вас §R-15§! в течение 36 месяцев\n;x
+TOOLTIPred_priest.5UNZEALOUS;Последователи Р'глора при вашем дворе и среди ваших вассалов уменьшат свое мнение о вас на §R-10§! в течение 12 месяцев\n;x
+burned_for_rhllor;Сожжено во имя Р'глора;x
+burned_for_rhllor_desc;Этот храм был сожжен как подношение Владыке Света;x
+EVTDESCred_priest.6;[shadowbinder_target.GetTitledFirstName] подошла ко мне со смелым предложением. Она говорит, что может помочь мне в моем желании увидеть противника по имени [shadow_baby_target.GetTitledFirstNameNoRegnal] мертвым. Она утверждает, что знает магию Асшая и говорит, что наш союз высвободит мою силу и ударит в нашего врага.;x
+EVTOPTAred_priest.6;Да, мы соединимся и убьем [shadow_baby_target.GetHerHis]!;x
+EVTTOOLTIPred_priest.7;будет убит колдовством придворного;x
+EVTOPTBred_priest.6;Я не поддамся искушению;x
+favored_by_rhllor;Под покровительством Р'глора;x
+favored_by_rhllor_desc;Этому человеку покровительствует Р'глор;x
+chosen_by_rhllor;Избрание Р'глором;x
+chosen_by_rhllor_desc;Этот человек - якобы возрожденный Азор Ахай;x
+EVTTOOLTIPred_priest.8;будет убит колдовством моего придворного, но был обнаружен;x
+EVTDESCred_priest.7;Мерзкое колдовство! Я занимался своим делом, когда злобная тень напала на меня!;x
+EVTOPTAred_priest.7;Боль!;x
+EVTOPTBred_priest.7;Встретить с мечом [Root.GetValyrianSwordOwned] в руках!;x
+TOOLTIPred_priest.10;Вы убили тень;x
+EVTDESCred_priest.8;Мерзкое колдовство! Я занимался своим делом, когда злобная тень напала на меня! Только [From.GetFirstNameWithDynasty] способен на подобное вероломство, и тень напоминает [From.GetherHis] форму!;x
+EVTOPTAred_priest.8;Злодейство!;x
+EVTDESCred_priest.9;Колдовство было обнаружено! Тень, которую создал[shadowbinder_target.GetEndA] [shadowbinder_target.GetTitledFirstName], успешно убила персонажа [From.GetTitledFirstName], но многие свидетели видели, что она была похожа на вас!;x
+EVTDESCred_priest.9B;Колдовство было обнаружено! Тень, которую создал[shadowbinder_target.GetEndA] [shadowbinder_target.GetTitledFirstName] не смогла убить персонажа [From.GetTitledFirstName], который убил ее с помощью клинка [From.GetValyrianSwordHerHis]. [From.GetSheHeCap] и другие свидетели видели, что тень имеет ваше подобие!;x
+EVTOPTAred_priest.9;Позор...;x
+red_priest;Красный Жрец;x
+red_priest_desc;Духовенство религии Р'глора именуется 'Красные Жрецы' из-за свободных багровых одежд, которые они носят.;x
+TOOLTIPCONVERTTORHLLOR;[Root.GetFirstNameWithDynasty] будет тайно верить в Р'глора;x
+EVTDESCred_priest.10;Почти не задумываясь, вы быстро схватили [Root.GetValyrianSwordOwned] и погрузили его в тень. Она кричит жутким криком и растворяется в воздухе.;x
+EVTOPTAred_priest.10;Да славится [Root.Religion.GetHighGodName]!;x
+EVTDESCred_priest.11;Тень, которую создал[shadowbinder_target.GetEndA] [shadowbinder_target.GetTitledFirstName], не смогла убить персонажа [From.GetTitledFirstName], который убил ее с помощью клинка [From.GetValyrianSwordHerHis]. К счастью, [From.GetSheHe] не имеет понятия, кто послал убийцу.;x
+EVTOPTAred_priest.11;[From.GetValyrianSword] может противостоять колдовству персонажа [shadowbinder_target.GetTitledFirstName]!;x

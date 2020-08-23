@@ -1,0 +1,382 @@
+#CODE;ENGLISH;;;;;;;;;;;;;x
+EVTDESCmega_wars.3;[Root.PrimaryTitle.GetName] находится в состоянии войны, мы должны отправить воронов великим лордам, созвав их для защиты короны.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.3;Они, конечно, выполнят свои обязательства;;;;;;;;;;;;;x
+EVTTOOLTIPmega_wars.7;будет отправлен ворон\n;;;;;;;;;;;;;x
+EVTDESCmega_wars.7;[Root.GetTitle] [Root.GetFirstName], королевство находится в состоянии войны, и я, как ваш[From.GetEndA] [From.GetTitle], приказываю собрать мужчин, способных держать оружие, для поддержки моей армии.\n\nС уважением,\n[From.GetFirstName] из Дома [From.GetOnlyDynastyName], [From.GetTitle] земли [From.PrimaryTitle.GetName];;;;;;;;;;;;;x
+EVTOPTAmega_wars.7;Мы должны защитить нашего сюзерена;;;;;;;;;;;;;x
+EVTOPTBmega_wars.7;Сейчас меня это не заботит;;;;;;;;;;;;;x
+EVTOPTCmega_wars.7;Дело восставших — правое;;;;;;;;;;;;;x
+EVTDESCmega_wars.30;[Root.GetTitle] [Root.GetFirstNameWithDynasty], я вижу истинные причины вашей борьбы с врагом. Я возьму в руки оружие и встану рядом с вами.\n\nПодпись,\n[From.GetTitle] [From.GetFirstNameWithDynasty];;;;;;;;;;;;;x
+EVTOPTAmega_wars.30;Превосходно!;;;;;;;;;;;;;x
+EVTDESCmega_wars.32;Презренн[From.GetAyaYy] [From.GetTitle] [From.GetFirstNameWithDynasty] не ответил[From.GetEndA] на мой призыв к оружию и принял[From.GetEndA] сторону мятежников.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.32;[From.GetSheHeCap] ответит за последствия;;;;;;;;;;;;;x
+opinion_loyal_to_crown;На стороне Короны;;;;;;;;;;;;;x
+opinion_dithered;Колеблется;;;;;;;;;;;;;x
+opinion_joined_cause;Поддерживает;;;;;;;;;;;;;x
+opinion_joined_rebellion;На стороне восстания;;;;;;;;;;;;;x
+EVTDESCmega_wars.8;Война между великими домами в государстве [Root.PrimaryTitle.GetName] утихла. По крайней мере пока.;;;;;;;;;;;;;x
+EVTDESCmega_wars.9;Война между областями королевства утихает.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.8;До следующего раза;;;;;;;;;;;;;x
+EVTDESCmega_wars.33;Малодушн[From.GetAyaYy] [From.GetFirstNameWithDynasty] не ответил[From.GetEndA] на мой призыв к оружию.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.33;Они ответят!;;;;;;;;;;;;;x
+EVTDESCmega_wars.34;[Root.PrimaryTitle.GetFOA], Я буду чтить мою верность и возьмусь за оружие, чтобы защитить государство против восставших. [From.PrimaryTitle.GetName] поможет вам, и войска догонят вас, как только возможно.\n\nПодпись,\n[From.GetTitle] [From.GetFirstNameWithDynasty];;;;;;;;;;;;;x
+EVTOPTAmega_wars.34;Превосходно!;;;;;;;;;;;;;x
+EVTDESC999900908;Мое время прошло, но мой наследник будет биться с честью в войнах?;;;;;;;;;;;;;x
+EVTOPTA999900908;Будем надеяться;;;;;;;;;;;;;x
+EVTOPTDmega_wars.7;Настало время освободиться;;;;;;;;;;;;;x
+bid_for_independence_CW_desc;Королевство находится в тисках гражданской войны, так §Y$CLAIMANT$§! может попробовать провозгласить независимость от §Y$TARGET$§!;;;;;;;;;;;;;x
+EVTTOOLTIPmega_wars.51;Необходимо выбрать - присягнуть на верность отечеству или нет;;;;;;;;;;;;;x
+EVTOPTBmega_wars.8;Наша война продолжается;;;;;;;;;;;;;x
+EVTDESCmega_wars.12;Наш конфликт исчерпан.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.12;До следующего раза;;;;;;;;;;;;;x
+EVTDESCmega_wars.51;Мы завоевали независимость! Над нами теперь нет сюзерена!;;;;;;;;;;;;;x
+EVTOPTAmega_wars.51;Мы не должны гневить короля;;;;;;;;;;;;;x
+EVTOPTBmega_wars.51;Меня не интересуют Железный Трон;;;;;;;;;;;;;x
+EVTDESCmega_wars.35;[Root.GetFirstNameWithDynasty], мы уже достаточно терпели владычество вашего Дома над государством [From.PrimaryTitle.GetName], и поэтому отныне я буду властвовать независимо. Мы сразимся за это на поле битвы, если это необходимо.\n\nПодпись,\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];;;;;;;;;;;;;x
+EVTOPTAmega_wars.35;Они будут сожалеть об этом;;;;;;;;;;;;;x
+EVTOPTCmega_wars.8;Король все еще борется против меня!;;;;;;;;;;;;;x
+EVTDESC999900913;Мы взяли верх в нашей борьбе и свергли сюзерена.;;;;;;;;;;;;;x
+EVTOPTA999900913;[Root.Liege.PrimaryTitle.GetName] будет сильнее;;;;;;;;;;;;;x
+EVTTOOLTIPmega_wars.52;присягнет на верность после наступления мира;;;;;;;;;;;;;x
+EVTDESCmega_wars.52;[Root.Liege.GetTitledFirstNameWithDynastyNoRegnal] одерживает победу нас и требует верности.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.52;[Root.Liege.GetSheHe] получит нашу верность;;;;;;;;;;;;;x
+EVTDESCmega_wars.50;Мы завоевали независимость и право на титул [Root.GetTitle] земли [Root.PrimaryTitle.GetName] !;;;;;;;;;;;;;x
+EVTDESCmega_wars.53;[From.GetTitledFirstName] побеждает в своей борьбе за независимость!;;;;;;;;;;;;;x
+EVTOPTAmega_wars.53;Мы готовы немедленно присягнуть на верность [From.GetHerHim].;;;;;;;;;;;;;x
+EVTOPTBmega_wars.53;Мы присягнем на верность [From.GetHerHim] сразу после наступления мира;;;;;;;;;;;;;x
+EVTOPTCmega_wars.53;Мы сами будем управлять собственной судьбой!;;;;;;;;;;;;;x
+join_indep_war;Присоединиться к войне за независимость;;;;;;;;;;;;;x
+join_indep_war_desc;Присоединиться к восставшему лорду в борьбе за трон;;;;;;;;;;;;;x
+EVTDESCmega_wars.54;Соседний лорд присоединился к восставшему лорду в борьбе за независимость. Должны ли мы присоединится?;;;;;;;;;;;;;x
+dejure_kingdom_claim_EMP_desc;§Y$TITLE$§! это де-юре вассал §Y$CLAIMANT$§!, что может служить поводом для войны.;;;;;;;;;;;;;x
+create_e_north;Объявить себя Королем Севера!;;;;;;;;;;;;;x
+create_e_north_desc;Восстановить титул Короля Севера!;;;;;;;;;;;;;x
+create_e_riverlands;Объявить себя Королем Речных Земель;;;;;;;;;;;;;x
+create_e_riverlands_desc;Восстановить титул Короля Речных Земель!;;;;;;;;;;;;;x
+create_e_vale;Объявить себя королем Долины Аррен;;;;;;;;;;;;;x
+create_e_vale_desc;Восстановить титул Короля Долины Аррен!;;;;;;;;;;;;;x
+create_e_westerlands;Объявить себя Королем Западных Земель;;;;;;;;;;;;;x
+create_e_westerlands_desc;Восстановить титул Короля Западных Земель!;;;;;;;;;;;;;x
+create_e_stormlands;Объявить себя Королем Штормовых Земель;;;;;;;;;;;;;x
+create_e_stormlands_desc;Восстановить титул Короля Штормовых Земель!;;;;;;;;;;;;;x
+create_e_reach;Объявить себя Королем Простора;;;;;;;;;;;;;x
+create_e_reach_desc;Восстановить титул Короля Простора!;;;;;;;;;;;;;x
+create_e_dorne;Провозгласить независимое королевство Дорн;;;;;;;;;;;;;x
+create_e_dorne_desc;Восстановить титул независимого Принца Дорна;;;;;;;;;;;;;x
+create_e_iron_isles;Объявить себя Королем Железных Островов;;;;;;;;;;;;;x
+create_e_iron_isles_desc;Восстановить титул Короля Железных Островов!;;;;;;;;;;;;;x
+EVTDESCdiplomatic.50;Как [Root.GetTitle] земли [Root.PrimaryTitle.GetName], мы имеем титулы, которые больше нет необходимости держать.;;;;;;;;;;;;;x
+EVTDESCdiplomatic.50B;Как законн[Root.GetAyaYy] [Root.GetTitle] всех Семи Королевств, я владею титулами, которые больше не нужно удерживать.;;;;;;;;;;;;;x
+EVTOPTAdiplomatic.50;Они действительно лишние;;;;;;;;;;;;;x
+EVTDESCmega_wars.13;Я поддерживаю моего лорда, однако мои войска ещё не вступали в войну. Мы должны присоединиться к борьбе!;;;;;;;;;;;;;x
+EVTOPTAmega_wars.13;Мы победим;;;;;;;;;;;;;x
+EVTDESCmega_wars.15;Вашему знаменосцу, известному как [From.GetTitle] [From.GetFirstNameWithDynasty], угрожают внешние враги. Должны ли мы исполнить наш долг как сюзерена и помочь ему?;;;;;;;;;;;;;x
+EVTOPTAmega_wars.15;Это мой долг;;;;;;;;;;;;;x
+EVTOPTBmega_wars.15;[From.GetSheHeCap] справится;;;;;;;;;;;;;x
+EVTDESCmega_wars.16;[Root.GetTitle] [Root.GetFirstNameWithDynasty], видя как вы подверглись нападению со стороны внешних врагов, я почту мой долг перед вами как моего знаменосца и поддержу вас в этой войне.\n\nПодпись, [From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];;;;;;;;;;;;;x
+EVTOPTAmega_wars.16;Это хорошо;;;;;;;;;;;;;x
+EVTDESCmega_wars.17;[Root.GetFirstNameWithDynasty], несмотря на то, что вы мой знаменосец, я не могу сейчас помочь вам в вашей борьбе.\n\nПодпись, [From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];;;;;;;;;;;;;x
+EVTOPTAmega_wars.17;Это позорно;;;;;;;;;;;;;x
+opinion_failed_to_protect_me;Не может защитить меня;;;;;;;;;;;;;x
+opinion_failed_to_protect_bannerman;Не может защитить знаменосца;;;;;;;;;;;;;x
+EVTTOOLTIP999900922;Будут призваны к оружию;;;;;;;;;;;;;x
+EVTDESC110141;Мы, наконец-то, вернули контроль над восставшим Королевством.;;;;;;;;;;;;;x
+EVTOPTA110141;Да, они должны были;;;;;;;;;;;;;x
+EVTDESCdynasty.100;В настоящее время я претендую на несуществующий титул, мне нужны подходящие претензии...;;;;;;;;;;;;;x
+EVTOPTAdynasty.100;Вот оно!;;;;;;;;;;;;;x
+EVTDESCmega_wars.24;[From.PrimaryTitle.GetName] находится в состоянии войны, [From.GetFirstNameWithDynasty] и [FromFrom.GetFirstNameWithDynasty] воюют, и [From.GetFirstNameWithDynasty] ожидает, что мы пополним [From.GetHerHis] армию своими людьми. Что мы будем делать?;;;;;;;;;;;;;x
+EVTDESC999900929;Мои войска взяли осажденную столицу Короля! Это принесло нашей стороне большое преимущество.;;;;;;;;;;;;;x
+EVTOPTA999900929;Победа близко!;;;;;;;;;;;;;x
+EVTDESC999900930;[Root.Capital.GetName] освобождён, надеюсь, это переломный момент.;;;;;;;;;;;;;x
+EVTOPTA999900930;Будем надеяться;;;;;;;;;;;;;x
+EVTDESC999900931;Королевская столица взята! Теперь-то мы сможем победить?;;;;;;;;;;;;;x
+EVTDESC999900932;Мои войска взяли осажденную столицу Короля! Это даст нам большое преимущество.;;;;;;;;;;;;;x
+EVTDESC999900933;Столица мятежников взята! Теперь-то мы сможем победить?;;;;;;;;;;;;;x
+EVTDESC999900934;Мы освободили город [Root.Capital.GetName], надеюсь, это поворотный момент в войне.;;;;;;;;;;;;;x
+EVTDESCmega_wars.25;[Root.GetTitle] [Root.GetFirstName], область находится в состоянии войны, и так как я ваш[From.GetEndA] [From.GetTitle], я требую, чтобы вы предоставили мужчин для поддержки армии.\n\nПодпись,\n[From.GetFirstName] из Дома [From.GetOnlyDynastyName], [From.GetTitle] земли [From.PrimaryTitle.GetName];;;;;;;;;;;;;x
+EVTOPTAmega_wars.25;Поддержать Трон;;;;;;;;;;;;;x
+EVTOPTBmega_wars.26;Мы должны подождать и посмотреть;;;;;;;;;;;;;x
+EVTOPTC999900937;Дело восставших — правое;;;;;;;;;;;;;x
+opinion_loyal_to_liege;Поддержать сюзерена;;;;;;;;;;;;;x
+EVTDESCmega_wars.36;Презренн[From.GetAyaYy] [From.GetFirstNameWithDynasty] не ответил[From.GetEndA] на мой призыв к оружию и принял[From.GetEndA] сторону противников.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.36;Подлые предатели!;;;;;;;;;;;;;x
+TOOLTIPcreate_e_north;Титул Лорда Протектора Севера будет упразднен, и Север станет де-юре независимым\n;;;;;;;;;;;;;x
+TOOLTIPcreate_e_riverlands;Титул Лорда Протектора Речных Земель будет упразднен, и Речные Земли станут де-юре независимыми\n;;;;;;;;;;;;;x
+TOOLTIPcreate_e_vale;Титул Лорда Протектора Долины Аррен будет упразднен, и Долина станет де-юре независимой\n;;;;;;;;;;;;;x
+TOOLTIPcreate_e_westerlands;Титул Лорда Протектора Западных Земель будет упразднен, и Западные Земли станут де-юре независимыми\n;;;;;;;;;;;;;x
+TOOLTIPcreate_e_reach;Титул Лорда Протектора Простора будет упразднен, и Простор станет де-юре независимым\n;;;;;;;;;;;;;x
+TOOLTIPcreate_e_stormlands;Титул Лорда Протектора Штормовых Земель будет упразднен, и Штормовые Земли станут де-юре независимыми\n;;;;;;;;;;;;;x
+TOOLTIPcreate_e_dorne;Титул Лорда Протектора Дорна будет упразднен, и Дорн станет де-юре независимым\n;;;;;;;;;;;;;x
+TOOLTIPcreate_e_iron_isles;Титул Лорда Протектора Железных Островов будет упразднен, и Железные Острова станут де-юре независимыми\n;;;;;;;;;;;;;x
+TOOLTIPbid_for_indep_fail;[Root.GetFirstNameWithDynasty] потеряет свою корону и станет именоваться как Верховный Лорд земли [This.GetName], став де-юре частью государства [From.PrimaryTitle.GetName]\n;;;;;;;;;;;;;x
+TOOLTIPdejure_kingdom_EMP_vassal;станет частью государства [Root.PrimaryTitle.GetName]\n;;;;;;;;;;;;;x
+join_rebel_leader_1;Выбрать сторону в гражданской войне;;;;;;;;;;;;;x
+join_rebel_leader_1_desc;Решить к какой стороне присоединиться в гражданской войне;;;;;;;;;;;;;x
+TOOLTIP_join_rebel_leader_A;[This.PrimaryTitle.GetName] НЕ воюет в чужих владениях\n;;;;;;;;;;;;;x
+TOOLTIP_join_rebel_leader; или, если [This.GetFirstNameWithDynasty] позволит, присоединиться к ним в гражданской войне\n;;;;;;;;;;;;;x
+TOOLTIP_join_emperor;Вам будет представлена возможность поддержать своего господина - [This.GetTitle] [This.GetFirstName];;;;;;;;;;;;;x
+join_rebel_leader_2;Выбрать сторону в гражданской войне;;;;;;;;;;;;;x
+join_rebel_leader_2_desc;Решить к какой стороне присоединиться в гражданской войне;;;;;;;;;;;;;x
+join_rebel_leader_3;Выбрать сторону в гражданской войне;;;;;;;;;;;;;x
+join_rebel_leader_3_desc;Решить к какой стороне присоединиться в гражданской войне;;;;;;;;;;;;;x
+join_rebel_leader_4;Выбрать сторону в гражданской войне;;;;;;;;;;;;;x
+join_rebel_leader_4_desc;Решить к какой стороне присоединиться в гражданской войне;;;;;;;;;;;;;x
+join_rebel_leader_5;Выбрать сторону в гражданской войне;;;;;;;;;;;;;x
+join_rebel_leader_5_desc;Решить к какой стороне присоединиться в гражданской войне;;;;;;;;;;;;;x
+join_rebel_leader_6;Выбрать сторону в гражданской войне;;;;;;;;;;;;;x
+join_rebel_leader_6_desc;Решить к какой стороне присоединиться в гражданской войне;;;;;;;;;;;;;x
+TOOLTIP_liege_supporting_king;Ваш сюзерен, [Root.Liege.GetTitledFirstNameWithDynastyNoRegnal], §YПОДДЕРЖИВАЕТ§! Трон\n;;;;;;;;;;;;;x
+TOOLTIP_liege_neutral;Ваш сюзерен, [Root.Liege.GetTitledFirstNameWithDynastyNoRegnal], §YНЕЙТРАЛЕН§!\n;;;;;;;;;;;;;x
+TOOLTIP_liege_against_king;Ваш сюзерен, [Root.Liege.GetTitledFirstNameWithDynastyNoRegnal], §YПРОТИВОСТОИТ§! Трону\n;;;;;;;;;;;;;x
+WAR_NAME_claim_iron_throne_ACOK;$ATTACKER$ $ORDER$ Война за Железный Трон;;;;;;;;;;;;;x
+CB_NAME_claim_iron_throne_ACOK;Претендовать на Железный Трон;;;;;;;;;;;;;x
+EVTDESCmega_wars.31;[Root.GetFirstNameWithDynasty], я считаю справедливой вашу борьбу против Железного Трона. Я желаю встать с оружием в руках рядом с вами.\n\nС уважением,\n[From.GetFirstNameWithDynasty];;;;;;;;;;;;;x
+TOOLTIPdejure_kingdom_claim_EMP_success;[Prev.GetFirstNameWithDynasty] потеряет свою корону и будет именоваться Верховным Лордом земли [This.GetName], принеся клятву верности правителю государства [Root.PrimaryTitle.GetName]\n;;;;;;;;;;;;;x
+TOOLTIPother_claim_iron_throne_kingdom_SUCCESS;[Root.GetTitledFirstNameWithDynastyNoRegnal] потеряет свою корону и будет именоваться Верховным Лордом земли [This.GetName], принеся клятву верности правителю государства [Root.PrimaryTitle.GetName]\n;;;;;;;;;;;;;x
+EVTDESCmega_wars.60;Несмотря на то, что я нахожусь в милости правителя [Root.Host.GetTitledFirstName], мой близкий родственник находится в состоянии войны. А это значит, что [Root.Host.GetSheHe] может сделать со мной всё, что захочет.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.60;Будем надеяться, [Root.Host.GetSheHe] милосерд[Root.Host.GetNaEn];;;;;;;;;;;;;x
+EVTTOOLTIPmega_wars.61;будет решать, что же делать с вами;;;;;;;;;;;;;x
+EVTDESCmega_wars.61;[From.GetFirstNameWithDynasty] находится в моих руках, и к тому же [From.GetSheHe] - близкий родственник наших врагов. Мы по праву можем казнить или оставить [From.GetHerHis] в заложниках как предупреждение нашим противникам.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.61;Это не [From.GetHerHis] вина ;;;;;;;;;;;;;x
+EVTOPTBmega_wars.61;Посадить в тюрьму;;;;;;;;;;;;;x
+EVTOPTCmega_wars.61;Принеси мне [From.GetHerHis] голову!;;;;;;;;;;;;;x
+EVTOPTDmega_wars.61;Допросите [From.GetHerHis], пытайте [From.GetHerHis], если необходимо;;;;;;;;;;;;;x
+EVTDESCmega_wars.62;[From.GetTitledFirstName], к счастью, не стал[From.GetEndA] меня наказывать за преступления моих родственников;;;;;;;;;;;;;x
+EVTOPTAmega_wars.62;Какое облегчение;;;;;;;;;;;;;x
+EVTDESCmega_wars.67;[From.GetTitledFirstName] постановил[From.GetEndA], что меня заключат в тюрьму за преступления моих родственников.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.67;Это не моя вина!;;;;;;;;;;;;;x
+EVTDESCmega_wars.68;[From.GetTitledFirstName] постановил[From.GetEndA], что меня казнят за преступления мои родственников.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.68;Я надеюсь, что это того стоит;;;;;;;;;;;;;x
+EVTDESCmega_wars.71;[From.GetTitledFirstName] заключает вас в подземелье и решает кое-что выяснить. Они допрашивают вас уже в течение нескольких дней, подвергая ужасным пыткам.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.71;Но это не моя вина!;;;;;;;;;;;;;x
+EVTDESCmega_wars.69;[FromFrom.GetTitledFirstName] взял[From.GetEndA] в заложники человека, известного как [GetFromRelation] [From.GetFirstName] из-за того, что я выступаю против н[FromFrom.GetHerHis] в войне;;;;;;;;;;;;;x
+EVTOPTAmega_wars.69;Как жаль;;;;;;;;;;;;;x
+EVTDESCmega_wars.70;[FromFrom.GetTitledFirstName] казнил[From.GetEndA] человека, известного как [GetFromRelation] [From.GetFirstName] за то, что я выступаю против н[FromFrom.GetHerHis] в войне;;;;;;;;;;;;;x
+EVTOPTAmega_wars.70;Было ли это нужно?;;;;;;;;;;;;;x
+EVTDESCmega_wars.72;Ваш[From.GetEndA] [GetFromRelation] [From.GetFirstName] сильно пострадал[From.GetEndA] за борьбу против человека, известного как [FromFrom.GetTitledFirstName]. Мы получили известие, что [From.GetSheHe] был[From.GetEndA] заперт[From.GetEndA] в подземельях города [FromFrom.Capital.GetName], и там был[From.GetEndA] подвергнут[From.GetEndA] мучительным пыткам и допросам.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.72;[FromFrom.GetSheHeCap] пожалеет об этом!;;;;;;;;;;;;;x
+EVTDESCmega_wars.73;[From.GetFirstName] [From.GetOnlyDynastyName] был[From.GetEndA] допрошен[From.GetEndA] в подземелье как приказано, с применением всех доступных методов пыток. Крики слышались по всему замку, и через несколько дней [From.GetSheHe] умер[From.GetNoneE] от допроса.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.73;[From.GetSheHeCap] и [From.GetHerHis] родственники не должны были выступать против меня!;;;;;;;;;;;;;x
+TOOLTIP_liege_emperor;Ваш сюзерен, [Root.Liege.GetTitledFirstNameWithDynastyNoRegnal] - §Y[Root.Liege.GetTitle]§!\n;;;;;;;;;;;;;x
+TOOLTIP_liege_rebel_leader;Ваш сюзерен, [Root.Liege.GetTitledFirstNameWithDynastyNoRegnal], - §YЛИДЕР МЯТЕЖНИКОВ§!\n;;;;;;;;;;;;;x
+dejure_duchy_claim_desc;§Y$TITLE$§! является де-юре вассалом §Y$CLAIMANT$§!, что может служить достаточным поводом для войны.;;;;;;;;;;;;;x
+other_dejure_duchy_claim_desc;§Y$TITLE$§! является де-юре вассалом §Y$CLAIMANT$§!, что может послужить поводом для войны.;;;;;;;;;;;;;x
+EVTDESCmega_wars.74;Мы проиграли войну, наши войска были уничтожены, наши замки сожжены. Теперь [FromFrom.GetTitledFirstName] возвышается надо мной и говорит приговор...;;;;;;;;;;;;;x
+EVTOPTAmega_wars.74;Будем надеяться, [FromFrom.GetSheHe] милосерд[FromFrom.GetNaEn];;;;;;;;;;;;;x
+EVTDESCmega_wars.75;Война выиграна, войска мятежников разгромлены нашими храбрыми сторонниками. [From.GetTitle] [From.GetFirstNameWithDynasty], один из предателей, предстал перед вами, чтобы услышать ваш приговор...;;;;;;;;;;;;;x
+EVTOPTAmega_wars.75;Позволить [From.GetHerHim] преклонить колено;;;;;;;;;;;;;x
+TOOLTTIPmega_wars.76;[This.GetTitle] [This.GetFirstName] публично признает свою вину и передаст заложников\n;;;;;;;;;;;;;x
+TOOLTTIPmega_wars.76KG ;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] публично признает свою вину\n;;;;;;;;;;;;;x
+EVTOPTBmega_wars.75;Отправить [From.GetHerHis] в темницу;;;;;;;;;;;;;x
+TOOLTIPmega_wars.77LIEGE;[This.GetTitle] [This.GetFirstName] окажется в тюрьме\n;;;;;;;;;;;;;x
+TOOLTIPmega_wars.77LIEGEREBEL;[This.GetTitle] [This.GetFirstName] окажется в тюрьме\nТак как [This.GetSheHe] в настоящее время не ваш пленник, [This.GetSheHe] может взбунтоваться\n;;;;;;;;;;;;;x
+TOOLTIPmega_wars.77LIEGEFLEE;[This.GetTitle] [This.GetFirstName] окажется в тюрьме\nТак как [This.GetSheHe] в настоящее время не ваш пленник, [This.GetSheHe] может бежать\n;;;;;;;;;;;;;x
+EVTOPTCmega_wars.75;[From.GetSheHeCap] лигится титула [From.PrimaryTitle.GetName];;;;;;;;;;;;;x
+TOOLTIPmega_wars.78LIEGE;[This.GetTitle] [This.GetFirstName] сдаст титул [This.PrimaryTitle.GetName] короне и станет пленни[This.GetTseyKom]\nЭто, вероятно, §Yразочарует§! [This.GetHerHis] ранее лояльных §Yзнаменосцев§!\n;;;;;;;;;;;;;x
+TOOLTIPmega_wars.78NONLIEGE;[This.GetTitle] [This.GetFirstName] передаст титул [This.PrimaryTitle.GetName] человеку, известному как [This.Liege.GetTitle] [This.Liege.GetFirstName] [This.Liege.GetOnlyDynastyName] и сдатся в плен\n Это, вероятно, §Yразочарует§! [This.GetHerHis] ранее лояльных §Yзнаменосцев§!\n;;;;;;;;;;;;;x
+TOOLTIPmega_wars.78LIEGEREBEL;[This.GetTitle] [This.GetFirstName] прикажет передать титул [This.PrimaryTitle.GetName] Короне и сдатся в плен\nТак как [This.GetSheHe] - не ваш пленник, [This.GetSheHe] может восстать\nЕсли будет принято, это, вероятно, §Yразочарует§! [This.GetHerHis] ранее лояльных §Yзнаменосцев§!\n;;;;;;;;;;;;;x
+TOOLTIPmega_wars.78NONLIEGEREBEL;[This.GetTitle] [This.GetFirstName] прикажет передать титул [This.PrimaryTitle.GetName] во власть человека, известного как [This.Liege.GetTitle] [This.Liege.GetFirstName] [This.Liege.GetOnlyDynastyName] и сдатся в плен\nТак как [This.GetSheHe] - не ваш пленник, [This.GetSheHe] может восстать\nЕсли будет принято, это, вероятно, §Yразочарует§! [This.GetHerHis] ранее лояльных §Yзнаменосцев§!\n;;;;;;;;;;;;;x
+EVTOPTDmega_wars.75;Я требую [From.GetHerHis] голову, а также все земли Дома [From.GetOnlyDynastyName]!;;;;;;;;;;;;;x
+TOOLTIPmega_wars.79LIEGE;[This.GetTitle] [This.GetFirstName] передаст все земли и титулы Короне и лишится головы. Также будут взяты заложники из Дома [This.GetOnlyDynastyName]\nЭто, вероятно, §Yразозлит§! [This.GetHerHis] ранее лояльных §Yзнаменосцев§!\n;;;;;;;;;;;;;x
+TOOLTIPmega_wars.79NONLIEGE;[This.GetTitle] [This.GetFirstName] передаст все земли и титулы во власть человека, известного как [This.Liege.GetTitle] [This.Liege.GetFirstName] [This.Liege.GetOnlyDynastyName] и лишиься головы. Также будут взяты заложники из Дома [This.GetOnlyDynastyName]\nЭто, вероятно, §Yразозлит§! [This.GetHerHis] ранее лояльных §Yзнаменосцев§!\n;;;;;;;;;;;;;x
+TOOLTIPmega_wars.79LIEGEREBEL;[This.GetTitle] [This.GetFirstName] передаст все земли и титулы во власть человека, известного как [This.Liege.GetTitle] [This.Liege.GetFirstName] [This.Liege.GetOnlyDynastyName] и лишится головы. Также будут взяты заложники из Дома [This.GetOnlyDynastyName]\nТак как [This.GetSheHe] не является вашим пленником, [This.GetSheHe] может взбунтоваться или сбежать\n В случае успеха, это решение §Yразозлит§! [This.GetHerHis] ранее лояльных §Yзнаменосцев§!\n;;;;;;;;;;;;;x
+TOOLTIPmega_wars.79NONLIEGEREBEL;[This.GetTitle] [This.GetFirstName] передаст все земли и титулы во власть человека, известного как [This.Liege.GetTitle] [This.Liege.GetFirstName] [This.Liege.GetOnlyDynastyName] и лишится головы. Также будут взяты заложники из Дома [This.GetOnlyDynastyName]\nТак как [This.GetSheHe] не является вашим пленником, [This.GetSheHe] может взбунтоваться или сбежать\nВ случае успеха, это решение §Yразозлит§! [This.GetHerHis] ранее лояльных §Yзнаменосцев§!\n;;;;;;;;;;;;;x
+EVTDESCmega_wars.76;[Root.GetFirstNameWithDynasty], [From.GetTitle] решает проявить млосердие, несмотря на ваши предательские действия. Вам было позволено вернуться домой и сохранить за собой титулы. Ваш дом передаст заложников в качестве гарантий мира.\n\nТак решает [From.GetFirstNameoftheHouse], [From.GetRegnalOrdinal] своего имени, [From.GetTitle] земли [From.PrimaryTitle.GetName] и владыка города [From.Capital.GetName], Защитник Государства;;;;;;;;;;;;;x
+EVTOPTAmega_wars.76;Милосердие;;;;;;;;;;;;;x
+NOSUITABLEHOSTAGE;Поскольку у вас нет родственников, которые могли бы стать заложниками, вы останетесь в заключении;;;;;;;;;;;;;x
+EVTDESCmega_wars.77;[Root.GetFirstNameWithDynasty], [From.GetTitle] постановляет, что вы отправитесь в темницу в качестве наказания за вашу измену и останетесь там столько, сколько [From.GetSheHe] пожелает.\n\nТак решает [From.GetFirstNameoftheHouse], [From.GetRegnalOrdinal] своего имени, [From.GetTitle] земли [From.PrimaryTitle.GetName] и владыка города [From.Capital.GetName], Защитник Государства;;;;;;;;;;;;;x
+EVTOPTAmega_wars.77;Приговор недоверия;;;;;;;;;;;;;x
+EVTDESCmega_wars.78;[Root.GetFirstNameWithDynasty], [From.GetTitle] решает, что вам нельзя доверять хранить мир, вы лишаетесь титуоа [Root.PrimaryTitle.GetName]. Также вы будете содержаться под стражей, пока [From.GetHisHer] Светлость не решит вашу дальнейшую судьбу.\n\nТак решает [From.GetFirstNameoftheHouse], [From.GetRegnalOrdinal] своего имени, [From.GetTitle] земли [From.PrimaryTitle.GetName] и владыка города [From.Capital.GetName], Защитник Государства;;;;;;;;;;;;;x
+EVTOPTAmega_wars.78;По крайней мере, Дом [Root.GetOnlyDynastyName] не будет уничтожен;;;;;;;;;;;;;x
+EVTDESCmega_wars.79;[Root.GetFirstNameWithDynasty], [From.GetTitle] заявляет, что измена не может остаться безнаказанной. Вы будете лишены всех титулов и земель и казнены. Кроме того, заложники из вашей семьи станут гарантом лояльности вашего Дома в будущем.\n\nТак решает [From.GetFirstNameoftheHouse], [From.GetRegnalOrdinal] своего имени, [From.GetTitle] земли [From.PrimaryTitle.GetName] и владыка города, Защитник Государства;;;;;;;;;;;;;x
+EVTOPTAmega_wars.79;Дом [Root.GetOnlyDynastyName] возродится;;;;;;;;;;;;;x
+opinion_usurped_my_liege;Захватили моего господина;;;;;;;;;;;;;x
+opinion_wiped_out_my_liege;Уничтожили моего господина;;;;;;;;;;;;;x
+opinion_wiped_out_my_family;Уничтожили мою семью;;;;;;;;;;;;;x
+TOOLTIPmega_wars.75;Решает вашу судьбу;;;;;;;;;;;;;x
+TOOLTIPVASSALTYRANYKING;Ваши §YВерховные Лорды§! воспримут это как тиранию, и отношения с ними уменьшатся на §Y20§!\n;;;;;;;;;;;;;x
+TOOLTIPVASSALTYRANYDUKE;Ваши §YГрандлорды§! воспримут это как тиранию, и отношения с ними уменьшатся на §Y10§!\n;;;;;;;;;;;;;x
+EVTOPTCmega_wars.79;Возмутительно! Я скорее умру, чем склонюсь!;;;;;;;;;;;;;x
+EVTOPTBmega_wars.79;Нужно попытаться бежать;;;;;;;;;;;;;x
+TOOLTIPmega_wars.79RUNAWAY;Вы попытаетесь бежать до того как приговор будет исполнен;;;;;;;;;;;;;x
+EVTDESCmega_wars.81;Мне и моей семье удалось избежать ареста;;;;;;;;;;;;;x
+EVTOPTAmega_wars.81;В Вольные Города;;;;;;;;;;;;;x
+EVTOPTBmega_wars.81;К Золотым Мечам;;;;;;;;;;;;;x
+EVTOPTCmega_wars.81;В новое Королевство;;;;;;;;;;;;;x
+EVTDESCmega_wars.82;Мне не удалось избежать ареста, и теперь приговор будет исполнен...;;;;;;;;;;;;;x
+EVTOPTAmega_wars.82;Ах, мой бог;;;;;;;;;;;;;x
+EVTDESCmega_wars.83;[Root.PrimaryTitle.GetFOA], [FromFrom.GetFirstNameWithDynasty] смог[FromFrom.GetNoneE] избежать ареста и Вашего праведного суда. [FromFrom.GetSheHe] теперь вне нашей досягаемости.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.83;Недоумки, неужели так сложно арестовать!;;;;;;;;;;;;;x
+EVTDESCmega_wars.830;[Root.PrimaryTitle.GetFOA], вместо того, чтобы с достоинством и честью предстать перед вашим лицом и принять приговор, [FromFrom.GetFirstNameWithDynasty] попыта[FromFrom.GetLasLsya] покинуть регион. Тем не менее, мы схватили [FromFrom.GetHerHis] и доставим обратно в цепях...;;;;;;;;;;;;;x
+EVTOPTAmega_wars.830;Справедливость восторжествует;;;;;;;;;;;;;x
+EVTDESCmega_wars.84;[Root.GetFirstNameWithDynasty], я считаю, что вас суд слишком жесток, поэтому я и мои знаменосцы больше не признаем вашей власти над землёй [From.PrimaryTitle.GetName]. Это объявление войны!\n\nС уважением,\n[From.GetFirstNameWithDynasty];;;;;;;;;;;;;x
+EVTOPTAmega_wars.84;Я раздавлю [From.GetHerHis];;;;;;;;;;;;;x
+TOOLTTIPmega_wars.76KG;[This.GetTitle] [This.GetFirstName] публично признает свою вину\n;;;;;;;;;;;;;x
+EVTOPTEmega_wars.75;[FromFrom.GetSheHeCap] не пригод[FromFrom.GetNaEn] для службы в Королевской Гвардии;;;;;;;;;;;;;x
+EVTOPTEmega_wars.87;[From.GetSheHeCap] не подходит для службы в Королевской гвардии;;;;;;;;;;;;;x
+EVTOPTFmega_wars.75;Я лишу его поста Верховного Септона;;;;;;;;;;;;;x
+TOOLTIPmega_wars.78HS;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] должен быть отстранен от должности. Мы должны выбрать нового Верховного Септона\n;;;;;;;;;;;;;x
+TOOLTIPmega_wars.78HSREBEL;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] должен уйти в отставку. Мы должны выбрать нового Верховного Септона\nТак как он не является вашим пленником, он может восстать\n;;;;;;;;;;;;;x
+EVTOPTGmega_wars.75;Принесите мне [From.GetHerHis] голову!;;;;;;;;;;;;;x
+TOOLTIPmega_wars.79HSKG;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] долж[This.GetNaEn] быть отстранен[This.GetEndA] от должности и понести заслуженное наказание\n;;;;;;;;;;;;;x
+TOOLTIPmega_wars.79HSKGREBEL;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] долж[This.GetNaEn] быть отстранен[This.GetEndA] от должности и понести заслуженное наказание\nТак как [This.GetSheHe] не является вашим пленником, [This.GetSheHe] может восстать\n;;;;;;;;;;;;;x
+EVTDESCmega_wars.85;[Root.GetFirstNameWithDynasty], [From.GetTitle] решает проявить милосердие, несмотря на ваши предательские действия. Вы будете пленником в качестве залога мира.\n\nТак решает [From.GetFirstNameoftheHouse], [From.GetRegnalOrdinal] своего имени, [From.GetTitle] земли [From.PrimaryTitle.GetName] и владыка города [From.Capital.GetName], Защитник Государства;;;;;;;;;;;;;x
+EVTOPTD999900937;Я предпочитаю этого мятежника;;;;;;;;;;;;;x
+opinion_traitor_AGOT;Предатель;;;;;;;;;;;;;x
+EVTOPTAMEGAWARIDONTCARE;Не морочь мне голову сделками мелких лордов;;;;;;;;;;;;;x
+indep_war;Война за независимость;;;;;;;;;;;;;x
+indep_faction_won;Независимые группировки побеждены;;;;;;;;;;;;;x
+EVTDESCmega_wars.43;Государство втянуто в войну, [Root.Religion.GetRandomGodName] - свидетель мы больше не являемся объектом претензий!;;;;;;;;;;;;;x
+EVTOPTAmega_wars.43;Мы должны идти своим путем!;;;;;;;;;;;;;x
+EVTDESCmega_wars.19;Королевство находится в состоянии войны. [FromFrom.PrimaryTitle.GetName] в серьезном конфликте. [From.GetTitle] [From.GetFirstName] получит нашу всяческую поддержку во имя нашей чести.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.19;Мой долг - защитить королевство;;;;;;;;;;;;;x
+EVTDESCmega_wars.20;Королевство находится в состоянии войны. [FromFrom.PrimaryTitle.GetName] в серьезном конфликте. Я поддерживаю своего господина, известного как [Root.Liege.GetTitledFirstNameWithDynastyNoRegnal], и честь обязывает меня оказать всяческую поддержку.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.20;Мы победим!;;;;;;;;;;;;;x
+EVTDESC999900967;Мы потеряли Железный Трон, и нов[Root.Liege.GetAyaYy] [Root.Liege.GetTitle] требует господства над землями Короны в качестве условия нашего поражения.;;;;;;;;;;;;;x
+EVTOPTA999900967;Я буду мстить;;;;;;;;;;;;;x
+TOOLTIPmaintenance.38;Все ваши знаменосцы в королевских землях должны присягнуть на верность человеку, известному как [Root.Liege.GetTitle] [Root.Liege.GetFirstName];;;;;;;;;;;;;x
+EVTDESCmaintenance.38;Я получаю Железный Трон, который по праву принадлежит мне, но свергнут[From.GetAyaYy] [From.GetFirstNameWithDynasty] по-прежнему удерживает власть над королевскими землями. Это должно быть исправлено.;;;;;;;;;;;;;x
+EVTOPTAmaintenance.38;Я - их законный сюзерен;;;;;;;;;;;;;x
+rebel_leader;Лидер повстанцев;;;;;;;;;;;;;x
+rebel_leader_desc;Этот человек был лидером восстания против Железного Трона;;;;;;;;;;;;;x
+new_rebel_leader;Мобилизация поддержки;;;;;;;;;;;;;x
+EVTDESCmega_wars.86;[FromFrom.GetFirstNameWithDynasty] проигрывает, и [From.GetFirstNameWithDynasty] восседает на Железном Троне в качестве нового правителя. Я ожидаю [From.GetHerHis] приговора...;;;;;;;;;;;;;x
+EVTOPTAmega_wars.86;Будем надеяться, [From.GetSheHe] милостив[From.GetEndA];;;;;;;;;;;;;x
+EVTDESCmega_wars.87;Война выиграна, войска были нашего противника разгромлены, и лорды, лояльные Железному Трону, потерпели поражение. [From.GetTitle] [From.GetFirstNameWithDynasty], один из ваших врагов, предстаёт перед вами, чтобы услышать ваш приговор...;;;;;;;;;;;;;x
+EVTOPTAmega_wars.87;Я буду судить [From.GetHerHis] семью по справедливости;;;;;;;;;;;;;x
+TOOLTIPmega_wars.88;[This.GetFirstNameWithDynasty] предстанет перед вам, чтобы услышать приговор;;;;;;;;;;;;;x
+EVTOPTBmega_wars.87;Я хочу, чтобы их головы были насажены на пики!;;;;;;;;;;;;;x
+TOOLTIPmega_wars.93;[This.GetFirstNameWithDynasty] будет казн[This.GetNaEn];;;;;;;;;;;;;x
+999900967WARNING;§RВнимание:§! Ваша §Rтирания§! будет повышена за каждого несправедливо осужденного человека\n;;;;;;;;;;;;;x
+TOOLTIPmega_wars.78TYRANNY;Это будет рассматриваться как акт §Rтирании§!;;;;;;;;;;;;;x
+EVTDESCmega_wars.88;[From.GetTitle] [From.GetFirstName] решает, что вы и ваша семья должны рассматриваться индивидуально по вашим заслугам и действиям.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.88;Я молю о пощаде;;;;;;;;;;;;;x
+EVTDESCmega_wars.89;[From.GetFirstName] из королевской семьи [From.GetOnlyDynastyName] предстёт перед вами. Так что мы будем делать?;;;;;;;;;;;;;x
+EVTOPTAmega_wars.89;Отпустите [From.GetHerHis], [From.GetSheHe] не сделал[From.GetEndA] ничего плохого.;;;;;;;;;;;;;x
+EVTOPTBmega_wars.89;Бросьте [From.GetHerHis] в темницу!;;;;;;;;;;;;;x
+EVTOPTCmega_wars.89;Я возьму [From.GetHerHis] в качестве заложника;;;;;;;;;;;;;x
+EVTOPTDmega_wars.89;Я хочу [From.GetHerHis] голову!;;;;;;;;;;;;;x
+TOOLTIPmega_wars.93;приговор должен быть исполнен;;;;;;;;;;;;;x
+EVTDESCmega_wars.90;[Root.GetFirstNameWithDynasty], [From.GetTitle] решает проявить милосердие, несмотря на действия вашей семьи. Вы будете отпущены, но вы будете обязаны поддерживать мир.\n\nТак решает [From.GetFirstNameoftheHouse],  [From.GetRegnalOrdinal] своего имени, [From.GetTitle] земли [From.PrimaryTitle.GetName] и владыка города [From.Capital.GetName], Защитник Государства;;;;;;;;;;;;;x
+EVTOPTAmega_wars.90;Благодарю, [Root.Religion.GetRandomGodName];;;;;;;;;;;;;x
+EVTDESCmega_wars.91;[Root.GetFirstNameWithDynasty], [From.GetTitle] издёт указ о вашем аресте, как справедливом наказании за измену вашей семьи. Вы должны быть незамедлительно посажены в темницу [From.GetHerHis] светлости.\n\nТак решает [From.GetFirstNameoftheHouse],  [From.GetRegnalOrdinal] своего имени, [From.GetTitle] земли [From.PrimaryTitle.GetName] и владыка города [From.Capital.GetName], Защитник Государства;;;;;;;;;;;;;x
+EVTOPTAmega_wars.91;Чем я заслуживаю это?;;;;;;;;;;;;;x
+EVTDESCmega_wars.92;[Root.GetFirstNameWithDynasty], [From.GetTitle] предписывает вам стать заложником [From.GetHerHis] светлости, в качестве гарантии верности и лояльного отношения вашей семьи.\n\nТак решает [From.GetFirstNameoftheHouse], [From.GetRegnalOrdinal] своего имени, [From.GetTitle] земли [From.PrimaryTitle.GetName] и владыка города [From.Capital.GetName], Защитник Государства;;;;;;;;;;;;;x
+EVTOPTAmega_wars.92;Могло быть хуже;;;;;;;;;;;;;x
+EVTDESCmega_wars.93;[Root.GetFirstNameWithDynasty], [From.GetTitle] решает, что предательство вашей семьи не может остаться безнаказанным, поэтому ваш приговор будет немедленно приведен в исполнение.\n\nТак решает [From.GetFirstNameoftheHouse],  [From.GetRegnalOrdinal] своего имени, [From.GetTitle] земли [From.PrimaryTitle.GetName] и владыка города [From.Capital.GetName], Защитник Государства;;;;;;;;;;;;;x
+EVTOPTAmega_wars.93;Мы будем мстить;;;;;;;;;;;;;x
+EVTOPTFmega_wars.87;Оставьте [From.GetHerHis];;;;;;;;;;;;;x
+opinion_gave_me_up;Меня сдали;;;;;;;;;;;;;x
+opinion_demanded_exile;Затребованное Изгнание;;;;;;;;;;;;;x
+TOOLTIPmega_wars.94;Вы будете решать судьбу семьи человека, известного как [From.GetFirstNameWithDynasty], находящейся в изгнании;;;;;;;;;;;;;x
+CTOOLTIPmega_wars.94;Все родственники человека, известного как [From.GetFirstNameWithDynasty], находящиеся в изгнании, должны быть объявлены врагами Короны.\n;;;;;;;;;;;;;x
+EVTDESCmega_wars.94;Многие из родственников человека, известного как [FromFrom.GetFirstNameWithDynasty] находятся в изгнании. Должны ли мы издать указ, объявив их врагами Короны? Возможно, это предотвратит попытки использования ваших знаменосцев против вас.;;;;;;;;;;;;;x
+EVTDESCmega_wars.94B;Многие из родственников человека, известного как [FromFrom.GetFirstNameWithDynasty] не находятся в изгнании. Должны ли мы издать указ, объявив их врагами Короны? Возможно, это предотвратит попытки использования ваших знаменосцев против вас.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.94;Оставить их в покое;;;;;;;;;;;;;x
+EVTOPTBmega_wars.94;Я объявляю их врагами Короны!;;;;;;;;;;;;;x
+opinion_exiled_pretender;Изгнанный самозванец;;;;;;;;;;;;;x
+EVTDESCmega_wars.95;[Root.GetTitle] [Root.GetFirstName], [From.GetHerHis] светлость издал указ о том, что все родственники человека, известного как [FromFromFrom.GetFirstNameWithDynasty] отныне будут считаться врагами Короны. Любое лицо, оказывающее помощь указанным лицам, будет придано королевскому суду\n\nТак решает [From.GetFirstNameoftheHouse], [From.GetRegnalOrdinal] своего имени, [From.GetTitle] земли [From.PrimaryTitle.GetName] и владыка города [From.Capital.GetName], Защитник Государства;;;;;;;;;;;;;x
+EVTDESCmega_wars.96;Root.PrimaryTitle.GetFOA], обращаем внимание на то, что [exiled_target.Liege.GetTitledFirstName] [exiled_target.Liege.GetOnlyDynastyName], ваш вассал, укрывает человека, известного как [exiled_target.GetFirstName] [exiled_target.GetOnlyDynastyName], изгнанника и врага государства!;;;;;;;;;;;;;x
+EVTOPTAmega_wars.96;Я требую, чтобы [exiled_target.GetSheHe] был[exiled_target.GetEndA] выдан[exiled_target.GetEndA]!;;;;;;;;;;;;;x
+TOOLTIPmega_wars.96;[This.Liege.GetTitledFirstName] требует выдать человека, известного как [This.GetFirstNameWithDynasty], Короне\n;;;;;;;;;;;;;x
+EVTOPTBmega_wars.96;[exiled_target.GetSheHeCap] не опас[exiled_target.GetNaEn];;;;;;;;;;;;;x
+EVTDESCmega_wars.97;[Root.GetTitle] [Root.GetFirstName], обращаем внимание Совета на то, что вы укрываете человека, известного как [exiled_target.GetFirstName] [exiled_target.GetOnlyDynastyName], изгнанника и врага государства. Вам приказано передать [exiled_target.GetHerHis] для суда или столкнетесь с последствиями.\n\nТак решает [From.GetFirstNameoftheHouse], [From.GetRegnalOrdinal] своего имени, [From.GetTitle] земли [From.PrimaryTitle.GetName] и владыка города [From.Capital.GetName], Защитник Государства;;;;;;;;;;;;;x
+EVTOPTAmega_wars.97;У меня нет выбора;;;;;;;;;;;;;x
+EVTOPTBmega_wars.97;Никогда!;;;;;;;;;;;;;x
+TOOLTIPmega_wars.100;Вы объявите войну человеку, известному как [From.GetTitledFirstName] под предлогом того, что [This.GetFirstNameWithDynasty] претендует на титул [From.PrimaryTitle.GetName]\n;;;;;;;;;;;;;x
+EVTDESCmega_wars.98;[Root.PrimaryTitle.GetFOA], я внял[From.GetEndA] вашим справедливым просьбам и передаю в ваши руки врагов Короны, которые скрываются в городе [From.Capital.GetName].\n\nПодпись,\n[From.GetTitledFirstNameWithDynasty];;;;;;;;;;;;;x
+EVTDESCmega_wars.99;[Root.GetFirstNameWithDynasty], я никогда не встану против человека, известного как истинный [From.GetTitle] [From.PrimaryTitle.GetName] ради такого, как вы. Настоящим я больше не признаю вас своим сюзереном и объявляю вам войну.\n\n Подпись,\n[From.GetTitledFirstNameWithDynasty];;;;;;;;;;;;;x
+EVTOPTAmega_wars.99;Измена!;;;;;;;;;;;;;x
+CTOOLTIPmega_wars.94A;Все родственники человека, известного как [FromFrom.GetFirstNameWithDynasty], находящиеся в изгнании, должны быть объявлены врагами Короны.\n;;;;;;;;;;;;;x
+civil_war;Королевство Нестабильно;;;;;;;;;;;;;x
+civil_war_desc;Этот субъект королевства находится в состоянии войны;;;;;;;;;;;;;x
+de_facto_empire;Де-факто империя;;;;;;;;;;;;;x
+empire_none;Нет;;;;;;;;;;;;;x
+empire_e_iron_throne;Железный Трон;;;;;;;;;;;;;x
+empire_e_new_valyria;Новая Валирия;;;;;;;;;;;;;x
+empire_e_ghiscar;Гискар;;;;;;;;;;;;;x
+empire_e_summer_sea;Летнее море;;;;;;;;;;;;;x
+empire_e_north;Север;;;;;;;;;;;;;x
+empire_e_riverlands;Трезубец;;;;;;;;;;;;;x
+empire_e_vale;Долина;;;;;;;;;;;;;x
+empire_e_westerlands;Утёс;;;;;;;;;;;;;x
+empire_e_reach;Простор;;;;;;;;;;;;;x
+empire_e_dorne;Дорн;;;;;;;;;;;;;x
+empire_e_stormlands;Штормовые Земли;;;;;;;;;;;;;x
+empire_e_iron_isles;Железные Острова;;;;;;;;;;;;;x
+empire_none_desc;Нет;;;;;;;;;;;;;x
+empire_e_braavos;Браавос;;;;;;;;;;;;;x
+empire_e_jade_sea;Нефритовое море;;;;;;;;;;;;;x
+empire_e_qarth;Кварт;;;;;;;;;;;;;x
+empire_e_yi_ti;И-Ти;;;;;;;;;;;;;x
+empire_e_iron_throne_desc;Железный Трон;;;;;;;;;;;;;x
+empire_e_new_valyria_desc;Новая Валирия;;;;;;;;;;;;;x
+empire_e_ghiscar_desc;Гискар;;;;;;;;;;;;;x
+empire_e_summer_sea_desc;Летнее море;;;;;;;;;;;;;x
+empire_e_north_desc;Север;;;;;;;;;;;;;x
+empire_e_riverlands_desc;Трезубец;;;;;;;;;;;;;x
+empire_e_vale_desc;Долина;;;;;;;;;;;;;x
+empire_e_westerlands_desc;Утёс;;;;;;;;;;;;;x
+empire_e_reach_desc;Долина;;;;;;;;;;;;;x
+empire_e_dorne_desc;Дорн;;;;;;;;;;;;;x
+empire_e_stormlands_desc;Штормовые Земли;;;;;;;;;;;;;x
+empire_e_iron_isles_desc;Железные Острова;;;;;;;;;;;;;x
+empire_e_braavos_desc;Браавос;;;;;;;;;;;;;x
+empire_e_jade_sea_desc;Нефритовое море;;;;;;;;;;;;;x
+empire_e_qarth_desc;Кварт;;;;;;;;;;;;;x
+empire_e_yi_ti_desc;И-Ти;;;;;;;;;;;;;x
+de_facto_empire_desc;Эти законы сохраняют де-факто империю во время гражданских войн;;;;;;;;;;;;;x
+EVTOPTEmega_wars.89;Принесите мне [From.GetHerHis] голову и головы всего Дома [From.GetOnlyDynastyName]!;;;;;;;;;;;;;x
+TOOLTIPWARDENMEGAWARWARNING;Как §YХранитель§! вы обязаны защищать королевство в этой войне. Отказ будет рассматриваться по всему королевству как бесчестнейший поступок.\n;;;;;;;;;;;;;x
+opinion_bad_warden;Хранитель не защитил королевство;;;;;;;;;;;;;x
+opinion_warden_no_defend;Хранитель не защитил королевство;;;;;;;;;;;;;x
+EVTOPTDmega_wars.8;Мне законно предоставили независимость;;;;;;;;;;;;;x
+liege_call_to_arms;Отправить призыв к оружию вашему господину;;;;;;;;;;;;;x
+liege_call_to_arms_desc;В случае внешней угрозы, вы можете отправить призыв к оружию вашему господину.;;;;;;;;;;;;;x
+opinion_gave_refuge;Предоставляет убежище;;;;;;;;;;;;;x
+EVTDESCmega_wars.6;[Root.PrimaryTitle.GetFOA], Верховный Септон прибыл в город [Root.Capital.GetName] в поисках убежища от нашего общего врага.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.6;Хорошо, мы не хотим, чтобы он попал в плен;;;;;;;;;;;;;x
+EVTDESCmega_wars.42;Событие Мега-Войны. Пожалуйста сообщайте нам об этом спаме/повторении. (будет скрыто из публичного просмотра);;;;;;;;;;;;;x
+TOOLTIPINDEPENDENTCONDITION;Независимый правитель (за исключением времени гражданской войны)\n;;;;;;;;;;;;;x
+mega_war_join_liege;[Root.GetTitle] - поддержать;;;;;;;;;;;;;x
+mega_war_join_liege_desc;[Root.GetTitledFirstNameNoRegnal] - официально включиться в войну на их стороне;;;;;;;;;;;;;x
+EVTOPTEmega_wars.7;Как [Root.GetLordLady]-Регент, я выделяю все свои войска;;;;;;;;;;;;;x
+TOOLTIPEVTOPTEmega_wars.7;Титул [Root.PrimaryTitle.GetName] не отделим от государства [From.PrimaryTitle.GetName], [From.GetTitledFirstName] получит все воёска в своё распоряжение\n;;;;;;;;;;;;;x
+EVTDESCmega_wars.101;Война закончилась, желаете ли вы вновь назначить старых членов совета на свои места?;;;;;;;;;;;;;x
+EVTOPTAmega_wars.101;Да, я верну свой старый совет;;;;;;;;;;;;;x
+TOOLTIPmega_wars.101;Желает ли [This.GetTitledFirstName] вернуться в совет?;;;;;;;;;;;;;x
+EVTOPBmega_wars.101;Нет, я сохраню свой нынешний совет;;;;;;;;;;;;;x
+EVTOPCmega_wars.101;Я создам новый совет;;;;;;;;;;;;;x
+EVTDESCmega_wars.102;[Root.GetTitledFirstName],\nТеперь, когда  война окончена, желаете ли вы еще раз вернуться на свое старое место в совете? Подпись,\n[From.GetTitledFirstNameoftheHouseNoRegnal], [From.GetRegnalOrdinal] своего имени;;;;;;;;;;;;;x
+EVTOPTAmega_wars.102;Конечно же я хочу вернуться на свое старое место;;;;;;;;;;;;;x
+TOOLTIPmega_wars.102;[From.GetTitledFirstName] узнает о принятии вами [From.GetHerHis] предложения.;;;;;;;;;;;;;x
+EVTOPTBmega_wars.102;Я откажусь;;;;;;;;;;;;;x
+TOOLTIPBmega_wars.102;[From.GetTitledFirstName] узнает о вашем отказе.;;;;;;;;;;;;;x
+EVTDESACmega_wars.103;[Root.GetTitledFirstName],\nЯ очень благодарю за это предложение и буду очень признател[From.GetSoftNaEn] за повторное назначение в совете.\nПодпись,\n[From.GetTitledFirstNameWithDynasty];;;;;;;;;;;;;x
+EVTDESBCmega_wars.103;[Root.GetTitledFirstName],\nЯ очень благодарю за предложение, но я не хочу повторного назначения в совете.\nПодпись,\n[From.GetTitledFirstNameWithDynasty];;;;;;;;;;;;;x
+EVTOPTAmega_wars.103;Отлично!;;;;;;;;;;;;;x
+EVTOPTBmega_wars.103;Совет справится и так;;;;;;;;;;;;;x
+EVTDESACmega_wars.105;[Root.PrimaryTitle.GetFOA], вы заявили [disgruntled_ally.GetTitledFirstName] [disgruntled_ally.GetOnlyDynastyName] будет вами поддержан[disgruntled_ally.GetEndA], но вы долго не присылали ваши войска на помощь. Это привело к тому, что [disgruntled_ally.GetSheHe] и [disgruntled_ally.GetHerHis] союзники теперь плохого мнения о вас.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.105;Я выжидаю подходящего момента!;;;;;;;;;;;;;x
+EVTOPTmega_warsTOOLTIP;Расскажи мне как работают гражданские войны?;;;;;;;;;;;;;x
+EVTTOOLTIPmega_warsTOOLTIP;Войны касающиеся 'Имперских' титулов, вроде Железного Трона, больше не работают так же, как в ванильной Crusader Kings II. Когда император начинает войну, государство разделяется, позволяя великим домам принять свое решение. На время войны все Верховные Лорды/Короли считаются /де-факто/ независимыми.\n\nВсе детали:\n1. Когда начинается война (это включает в себя все войны - наступательные, оборонительные или гражданские), каждый Верховный Лорд/Король, приведенный к присяге Империи, становится /де факто/ независимым и ему предоставляются следующие варианты:\n   - Поддержка Империи\n   - Поддержка Восставших. Это возможно только в определенных ситуациях\n   - Оставаться нейтральным.\n   - Использовать возможность и объявить независимость\nПравители во фракции 'Лояльны Короне' всегда будут поддерживать императора. Аналогично, правители в фракции 'Лояльны Сюзерену' всегда будут поддерживать своего непосредственного руководителя.\n\n2. Кроме того, в этой системе могут участвовать младшие лорды (графы и герцоги). Такие лорды, которые являются прямыми вассалами Верховного Лорда или Императора, могут пойти против выбора их Сюзерена. Так, например, они могут хранить верность Империи, если их Господин восстанет.\n\n3. Лорды, уже находящиеся в войне, когда начинается война, должны оставаться нейтральными до тех пор, пока не будет окончен их текущий конфликт.\n\n4. Когда война закончится, все Правители, находящиеся в мире и являющиеся /де-юре/ вассалами Империи, снова станут /де-факто/ вассалами.\n\n5. Любой лорд, который до сих пор сражается в собственной войне, по окончанию имперской войны должен закончить свою войну, прежде чем снова становиться вассалом.\n\n6. Нейтральный Правитель может либо выбрать сторону, либо объявить независимость в любое время. Это делается путем дипломатического взаимодействия с выбранным императором или лидером повстанцев.;;;;;;;;;;;;;x
+TOOLTIP_join_rebel_leader_B;[Root.GetTitledFirstName] и [This.GetTitledFirstName] - не личные враги\n;;;;;;;;;;;;;x
+EVTDESCmega_wars.37;Ваш[From.GetEndA] [From.GetRootRelation] [From.GetTitledFirstNameWithDynasty] напоследок оставил[From.GetEndA] в городе [Root.Capital.GetName] своего дракона по имени [FROMs_dragon.GetName]! [From.GetSheHeCap], по-видимому, вылетел[From.GetEndA] в город [From.Liege.Capital.GetName], чтобы помочь человеку, известному как [From.Liege.GetTitledFirstNameWithDynastyNoRegnal] в продолжающейся войне.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.37;[From.GetSheHeCap] на драконе, что я могу сделать?;;;;;;;;;;;;;x
+EVTOPTFmega_wars.7;[current_rebel_leader.GetFirstNameWithDynasty] - мой сюзерен;;;;;;;;;;;;;x
+EVTDESCmega_wars.26;[From.PrimaryTitle.GetName] еще в состоянии войны, [From.GetFirstNameWithDynasty] находится в конфликте с человеком, известным как [FromFrom.GetFirstNameWithDynasty] и ожидает, что мы предоставим людей для [From.GetHerHis] армий. Что нам следует сделать?;;;;;;;;;;;;;x
+TOOLTIPMEGAWARLOANCANELLED;Все §Yдолги§!, которые [Root.PrimaryTitle.GetName] задолжал[Root.GetEndA] Дому [This.GetOnlyDynastyName], §Yаннулированы§!;;;;;;;;;;;;;x
+TOOLTIPmega_wars.12A;[Root.GetTitledFirstName] может выбрать одну из сторон конфликта в земле [This.PrimaryTitle.GetName];;;;;;;;;;;;;x
+opinion_civil_war_enemy;Враг войны;;;;;;;;;;;;;x
+EVTDESCmega_wars.111;Это не для меня, чтобы просить о поддержке моих лордов, как нищий, просящий милостыню. Я - законн[Root.GetAyaYy] [Root.GetTitle] земли [Root.PrimaryTitle.GetName], и те, кто это отрицает, являются предателями. [From.GetTitledFirstNameWithDynasty] - один из таких непокорных вассалов, которые отказываются преклонять колено.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.111;[From.GetSheHeCap] долж[From.GetNaEn] преклонить колено или же лишиться головы;;;;;;;;;;;;;x
+TOOLTIPmega_wars.112;[This.GetTitledFirstNameWithDynasty] получит выбор - поклясться в верности или умереть;;;;;;;;;;;;;x
+EVTOPTBmega_wars.111;[From.GetSheHeCap] цен[From.GetNaEn], если держать в плену;;;;;;;;;;;;;x
+EVTDESCmega_wars.112;[From.GetTitledFirstNameWithDynasty] держит меня в темницах, но теперь меня притащили в замкок, где нас ждал палач с топором в руке. Мне дали окончательный выбор - поклясться в верности, иначе я потеряю голову.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.112;Я согну колено;;;;;;;;;;;;;x
+TOOLTIPmega_wars.113;Вы преклоняете колено и обещаете, что [This.GetTitledFirstNameWithDynasty] - отныне ваш сюзерен;;;;;;;;;;;;;x
+EVTOPTBmega_wars.112;Я ценю свое слово больше, чем свою жизнь;;;;;;;;;;;;;x
+EVTDESCmega_wars.113;[From.GetTitledFirstNameWithDynasty] был[From.GetEndA] притащен[From.GetEndA] в город [From.Capital.Capital.GetName], где нас ждал палач с топором в руках. [From.GetSheHeCap] получил[From.GetEndA] окончательный выбор - поклясться в верности или потерять голову. [From.GetSheHeCap] выбрал[From.GetEndA] преклонить колено.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.113;Мудрый выбор;;;;;;;;;;;;;x
+EVTDESCmega_wars.114;[From.GetTitledFirstNameWithDynasty] был[From.GetEndA] притащен[From.GetEndA] в город [From.Capital.Capital.GetName], где нас ждал палач с топором в руках. [From.GetSheHeCap] получил[From.GetEndA] окончательный выбор - поклясться в верности или потерять голову. [From.GetSheHeCap] ценит свою клятву сильнее, чем жизнь, и выбрал[From.GetEndA] топор.;;;;;;;;;;;;;x
+EVTOPTAmega_wars.114;Так тому и быть;;;;;;;;;;;;;x
