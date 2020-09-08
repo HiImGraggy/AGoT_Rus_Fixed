@@ -1,0 +1,5595 @@
+# Aegon's Landing Events
+
+namespace = aegons_landing
+
+#Aegon decides his first action, Westeros or Free Cities
+narrative_event = {
+	id = aegons_landing.1
+	desc = "EVTDESCaegons_landing.1"
+	title = "EVTTITLEaegons_landing.1"
+	picture = "GFX_targaryen_balerion"
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOR = {
+			has_landed_title = e_iron_throne
+			has_landed_title = e_new_valyria
+		}
+		has_game_rule = { name = shattered_realms value = off }
+		NOT = { has_game_rule = { name = dragon_hatching_taming value = off } }
+	}
+	
+	option = {
+		name = "EVTOPTAaegons_landing.110" #Westeros!
+		ai_chance = { factor = 80 }
+		set_global_flag = e_iron_throne_created
+		set_character_flag = iron_throne_crown_event
+		e_iron_throne = { gain_title = ROOT }
+		d_kings_landing = { gain_title = ROOT }
+		c_kings_landing = { gain_title = ROOT }
+		b_red_keep = {		
+			hidden_tooltip = { add_building = ca_asoiaf_crown_basevalue_1 }
+			add_building = ca_asoiaf_crown_basevalue_2
+			set_name = B_AEGONFORT
+		}
+		add_artifact = aegons_crown
+		e_iron_throne = { set_title_flag = aegons_crown }
+		hidden_tooltip = { 
+			any_demesne_title = {
+				succession = primogeniture
+				gender_succ = cognatic
+			}
+			recalc_succession = yes
+			k_crownlands = { 
+				#d_crackclaw_point = { de_jure_liege = PREV } 
+				d_dragonstone = { de_jure_liege = PREV } 
+				d_rosby = { de_jure_liege = PREV } 
+				d_duskendale = { de_jure_liege = PREV } 
+				d_blackwater_rush = { de_jure_liege = PREV } 
+				d_kings_landing = { de_jure_liege = PREV } 
+				d_kingswood = { de_jure_liege = PREV } 
+				d_masseys_hook = { de_jure_liege = PREV } 
+				d_hayford = { de_jure_liege = PREV } 
+				d_stokeworth = { de_jure_liege = PREV } 
+			}
+			character_event = { id = aegons_landing.110 } 	
+			if = {
+				limit = { ai = no }
+				chronicle = {
+					entry = CHRONICLE_AEGONS_CONQUEST
+					picture = GFX_targaryen_balerion
+				}	
+			}
+			e_rebels = {
+				persistent_event_target:chronicle_player = {
+					if = {
+						limit = { 
+							NOT = { character = ROOT }
+							OR = {		
+								dynasty = ROOT
+								is_liege_or_above = ROOT
+								capital_scope = { region = world_westeros }
+								capital_scope = { region = world_free_cities }
+							}
+						}
+						chronicle = {
+							entry = CHRONICLE_AEGONS_CONQUEST
+							portrait = [Root.GetID]
+						}	
+					}
+				}	
+			}	
+			if = {
+				limit = { NOT = { has_game_rule = { name = slavery value = off } } }
+				set_character_flag = passive_slave_law_change
+				primary_title = { 
+					add_law = slavery_0
+				}	
+			}	
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTBaegons_landing.110" #Free Cities!
+		ai_chance = { factor = 20 }
+		e_new_valyria = { 
+			gain_title = ROOT 
+			# hidden_tooltip = { 
+				# k_crownlands = {
+					# de_jure_liege = PREV
+					# d_dragonstone = { de_jure_liege = PREV } 
+					# d_crackclaw_point = { de_jure_liege = PREV } 
+				# }	
+			# }
+		}
+		set_global_flag = aegons_conquest_essos
+		add_artifact = aegons_crown
+		e_iron_throne = { set_title_flag = aegons_crown }
+		hidden_tooltip = { 
+			character_event = { id = aegons_landing.111 } 
+			any_demesne_title = {
+				succession = primogeniture
+				gender_succ = cognatic
+			}		
+			e_new_valyria = { 
+				succession = primogeniture
+				gender_succ = cognatic
+				if = {
+					limit = { NOT = { has_game_rule = { name = slavery value = off } } }
+					ROOT = { set_character_flag = passive_slave_law_change }
+					add_law = slavery_0
+				}	
+			}
+			recalc_succession = yes
+			if = {
+				limit = { ai = no }
+				chronicle = {
+					entry = CHRONICLE_AEGONS_CONQUEST_FREE_CITIES
+					picture = GFX_targaryen_balerion
+				}	
+			}
+			e_rebels = {
+				persistent_event_target:chronicle_player = {
+					if = {
+						limit = { 
+							NOT = { character = ROOT }
+							OR = {		
+								dynasty = ROOT
+								is_liege_or_above = ROOT
+								capital_scope = { region = world_westeros }
+								capital_scope = { region = world_free_cities }
+							}
+						}
+						chronicle = {
+							entry = CHRONICLE_AEGONS_CONQUEST_FREE_CITIES
+							portrait = [Root.GetID]
+						}	
+					}
+				}
+			}	
+		}
+	}
+	
+	option = {
+		name = "EVTOPTCaegons_landing.110" #Actually I'll take the offer
+		trigger = {
+			c_11544 = { #argella
+				is_alive = yes
+				is_married = no
+			}
+		}
+		ai_chance = { factor = 1 }
+		clr_global_flag = aegons_conquest
+		e_stormlands = {
+			holder_scope = {
+				add_alliance = { who = ROOT years = 20 }
+				hidden_tooltip = {
+					character_event = { id = aegons_landing.17 }
+				}
+			}
+		}
+		tooltip = {
+			c_11544 = {
+				hidden_tooltip = { remove_trait = forbid_marriage }
+				add_spouse_matrilineal = ROOT
+			}
+			d_kings_landing = { 
+				gain_title = ROOT 
+				any_direct_de_jure_vassal_title = {
+					if = {
+						limit = { holder_scope = { has_landed_title = e_stormlands } }
+						gain_title = ROOT
+					}
+					if = {
+						limit = { 
+							holder_scope = { 
+								liege = { has_landed_title = e_stormlands } 
+								lower_tier_than = ROOT
+							} 
+						}
+						holder_scope = { set_defacto_liege = ROOT }
+					}
+				}
+			}
+			d_rosby = { add_claim = ROOT }
+			d_blackwater_rush = { add_claim = ROOT }
+			d_hayford = { add_claim = ROOT }
+			d_stokeworth = { add_claim = ROOT }
+			hidden_tooltip = {
+				b_red_keep = {		
+					hidden_tooltip = { add_building = ca_asoiaf_crown_basevalue_1 }
+					add_building = ca_asoiaf_crown_basevalue_2
+					set_name = B_AEGONFORT
+				}
+				c_kings_landing = { 
+					location = {
+						build_holding = {
+						   title = b_kings_landing
+						   type = city
+						   holder = ROOT
+						}	
+						hidden_tooltip = {
+							b_kings_landing = {
+								add_building = ct_asoiaf_crown_basevalue_1
+								add_building = ct_asoiaf_crown_basevalue_2
+							}
+						}
+						build_holding = {
+						   title = b_great_sept_of_baelor
+						   type = temple
+						   holder = ROOT
+						}					
+					}
+				}	
+			}	
+		}	
+	}
+	after = {
+		if = {
+			limit = {
+				OR = {
+					has_global_flag = aegons_conquest
+					has_global_flag = aegons_conquest_essos
+				}
+			}
+			any_vassal = { set_character_flag = supporting_king }
+			hidden_tooltip = { #Make Storm King AI marry Argella matrilinally
+				c_11544 = { remove_trait = forbid_marriage }
+				e_stormlands = {
+					holder_scope = {
+						if = {
+							limit = { 
+								ai = yes 
+								c_11544 = { #Argella
+									is_alive = yes
+									is_child_of = PREV
+									can_marry_trigger = yes
+								}
+							}
+							random_realm_character = {
+								limit = {
+									age = 16
+									NOT = { age = 30 }
+									is_female = no
+									is_ruler = no
+									liege = { ai = yes }						
+									is_married = no
+									is_betrothed = no
+									can_marry_trigger = yes
+									NOT = { is_close_relative = PREV }
+									NOT = { dynasty = 0 }
+									father_even_if_dead = { always = yes }
+									NOT = { any_heir_title = { always = yes } }
+									NOT = { liege = { is_close_relative = PREV } }							
+									is_primary_heir = no
+									NOT = { father = { is_primary_heir = yes } }
+									NOT = { mother = { is_primary_heir = yes } }
+									NOT = { trait = celibate }
+									NOT = { trait = incapable }
+									NOT = { trait = inbred }
+								}
+								c_11544 = {								
+									add_spouse_matrilineal = PREV
+								}	
+							}
+						}	
+					}
+				}
+			}
+		}	
+	}
+}
+#Westeros- decide first action
+character_event = {
+	id = aegons_landing.110
+	desc = "EVTDESCaegons_landing.110"
+	picture = "GFX_targaryen_balerion"
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAaegons_landing.1" #Strike North!
+		trigger = {
+			e_iron_isles = { holder_scope = { NOT = { war_with = ROOT } } }
+		}
+		ai_chance = { factor = 70 }
+		e_iron_isles = {		
+			holder_scope = {
+				custom_tooltip = { text = TOOLTIPEVTOPTAaegons_landing.1 }
+				hidden_tooltip = {
+					any_vassal = {
+						limit = {
+							capital_scope = {
+								region = world_crownlands
+							}
+						}
+						character_event = { id = aegons_landing.2 }
+					}
+				}	
+			}
+			reverse_unsafe_war = {
+				target = ROOT
+				casus_belli = dragon_conquest
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTBaegons_landing.1" #Strike South!
+		trigger = {
+			e_stormlands = { holder_scope = { NOT = { war_with = ROOT } } }
+		}
+		ai_chance = { factor = 20 }
+		e_stormlands = {		
+			holder_scope = {
+				custom_tooltip = { text = TOOLTIPEVTOPTAaegons_landing.1 }
+				hidden_tooltip = {
+					any_vassal = {
+						limit = {
+							capital_scope = {
+								region = world_crownlands
+							}
+						}
+						character_event = { id = aegons_landing.2 }
+					}
+				}	
+			}
+			reverse_unsafe_war = {
+				target = ROOT
+				casus_belli = dragon_conquest
+			}
+		}	
+	}
+	option = {
+		name = "EVTOPTGaegons_landing.1" #The lands of the reach
+		trigger = {
+			e_reach = { holder_scope = { NOT = { war_with = ROOT } } }
+		}
+		ai_chance = { factor = 0 }	
+		e_reach = {		
+			holder_scope = {
+				custom_tooltip = { text = TOOLTIPEVTOPTAaegons_landing.1 }
+				hidden_tooltip = {
+					any_vassal = {
+						limit = {
+							capital_scope = {
+								region = world_crownlands
+							}
+						}
+						character_event = { id = aegons_landing.2 }
+					}
+				}	
+			}
+			reverse_unsafe_war = {
+				target = ROOT
+				casus_belli = dragon_conquest
+			}
+		}
+	}
+}
+#Free Cities- decide first action
+character_event = {
+	id = aegons_landing.111
+	desc = "EVTDESCaegons_landing.111"
+	picture = "GFX_targaryen_balerion"
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAaegons_landing.111" #Pentos
+		trigger = {
+			k_pentos = { holder_scope = { NOT = { war_with = ROOT } } }
+		}
+		ai_chance = { factor = 55 }
+		k_pentos = {		
+			reverse_unsafe_war = {
+				target = ROOT
+				casus_belli = dragon_conquest
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTBaegons_landing.111" #Myr
+		trigger = {
+			k_myr = { holder_scope = { NOT = { war_with = ROOT } } }
+		}
+		ai_chance = { factor = 25 }
+		k_myr = {		
+			reverse_unsafe_war = {
+				target = ROOT
+				casus_belli = dragon_conquest
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTCaegons_landing.111" #Tyrosh
+		trigger = {
+			k_tyrosh = { holder_scope = { NOT = { war_with = ROOT } } }
+		}
+		ai_chance = { factor = 15 }
+		k_tyrosh = {		
+			reverse_unsafe_war = {
+				target = ROOT
+				casus_belli = dragon_conquest
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTDaegons_landing.111" #Braavos
+		trigger = {
+			k_braavos = { holder_scope = { NOT = { war_with = ROOT } } }
+		}
+		ai_chance = { factor = 5 }
+		k_braavos = {		
+			reverse_unsafe_war = {
+				target = ROOT
+				casus_belli = dragon_conquest
+			}
+		}	
+	}
+}
+#Crownlander subdued
+character_event = {
+	id = aegons_landing.2
+	desc = "EVTDESCaegons_landing.2"
+	picture = "GFX_targaryen_balerion"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_defacto_liege = ROOT
+	}
+	
+	option = {
+		name = "EVTOPTAdragon.67" #Give up
+		ai_chance = { factor = 150 }
+		set_defacto_liege = FROM
+		hidden_tooltip = {
+			opinion = {
+				modifier = opinion_subjugated_AGOT
+				who = FROM
+				years = 10
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBdragon.67" #Fight!
+		ai_chance = { 
+			factor = 20 
+			modifier = {
+				factor = 2
+				tier = DUKE
+			}
+			modifier = {
+				factor = 2
+				trait = brave
+			}
+			modifier = {
+				factor = 0.5
+				trait = craven
+			}
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.5
+				trait = patient
+			}
+			modifier = {
+				factor = 2
+				trait = proud
+			}
+			modifier = {
+				factor = 0.5
+				trait = humble
+			}
+			modifier = {
+				factor = 2
+				trait = stubborn
+			}
+			modifier = {
+				factor = 1.5
+				FROM = {
+					NOT = { check_variable = { which = "kingdoms_conquered" value = 0 } }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				FROM = {
+					NOT = { check_variable = { which = "kingdoms_conquered" value = 1 } }
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					check_variable = { which = "kingdoms_conquered" value = 2 } 
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					check_variable = { which = "kingdoms_conquered" value = 3 } 
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					check_variable = { which = "kingdoms_conquered" value = 4 } 
+				}
+			}
+		}
+		FROM = {
+			character_event = { id = aegons_landing.3 days = 1 tooltip = TOOLTIPaegons_landing.3 }
+		}
+	}
+}
+#Crownlander fights
+character_event = {
+	id = aegons_landing.3
+	desc = "EVTDESCaegons_landing.3"
+	picture = "GFX_evt_battle"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = { set_character_flag = crownlander_resists }
+	}
+	
+	option = {
+		name = "EVTOPTAaegons_landing.2" #OK
+		FROM = {
+			primary_title = {
+				reverse_war = {
+					target = ROOT
+					casus_belli = dragon_conquest
+				}
+			}	
+		}	
+	}
+}	
+#Aegon decides his next action- Westeros
+character_event = {
+	id = aegons_landing.4
+	desc = "EVTDESCaegons_landing.4"
+	picture = "GFX_targaryen_balerion"
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	prisoner = no
+	
+	trigger = {
+		has_landed_title = e_iron_throne
+		has_global_flag = aegons_conquest
+		NOT = { has_global_flag = aegons_conquest_essos }
+		NOT = {
+			any_war = {
+				attacker = { character = ROOT }
+				using_cb = dragon_conquest
+				defender = { tier = EMPEROR }	
+			}
+		}
+		any_independent_ruler = {
+			OR = {
+				has_landed_title = e_iron_isles
+				has_landed_title = e_stormlands
+				has_landed_title = e_reach
+				AND = {
+					OR = {
+						has_landed_title = e_north
+						has_landed_title = e_vale
+					}
+					e_iron_isles = { NOT = { has_holder = yes } }
+						
+				}	
+				AND = {
+					has_landed_title = e_westerlands
+					OR = {
+						e_iron_isles = { NOT = { has_holder = yes } }
+						e_reach = { NOT = { has_holder = yes } }
+					}	
+				}	
+				AND = {
+					has_landed_title = e_dorne
+					e_stormlands = { NOT = { has_holder = yes } }	
+				}	
+			}
+			OR = {
+				NOT = { has_character_flag = defended_conquest }
+				had_character_flag = { flag = defended_conquest days = 3650 }
+			}
+		}
+	}
+	
+	immediate = {
+		any_vassal = { set_character_flag = supporting_king }
+		clr_global_flag = war_cooldown_period
+		if = { #Manage Riverlands
+			limit = {
+				e_iron_isles = { has_holder = no }
+				NOT = { has_character_flag = aegons_conquered_riverlands }		
+			}
+			e_iron_throne = { 
+				k_riverlands = { de_jure_liege = PREV }
+			}
+			c_harrenhal = { #House Hoare 
+				holder_scope = {
+					if = {
+						limit = { dynasty = 66 } #Hoare
+						k_riverlands = { add_pressed_claim = PREV }
+						k_iron_isles = { add_pressed_claim = PREV }
+						c_orkmont = { #Give Hoare Orkmont
+							holder_scope = { 
+								if = {
+									limit = { tier = COUNT }
+									b_nettlebank = { gain_title = PREV }
+								}	
+							} 
+							gain_title = PREV 
+						}
+						if = { #Ai gives Hoare control over the Iron isles
+							limit = { 
+								ROOT = { 
+									ai = yes 
+									has_landed_title = k_iron_isles
+								} 		
+							}
+							k_iron_isles = { gain_title = PREV }
+							set_defacto_liege = ROOT
+						}	
+						if = { #Player gains Harrenhal
+							limit = { 
+								ROOT = { 
+									OR = {
+										ai = no 
+										NOT = { any_courtier = { character = 359 } } #Qoherys
+									}	
+								} 
+							}
+							c_harrenhal = { gain_title = ROOT }	
+							d_harrenhal = { gain_title = ROOT }	
+						}
+						if = { #Ai may give Harrenhal to Qoherys
+							limit = { 
+								ROOT = { 
+									ai = yes 
+									any_courtier = { character = 359 }
+								} 		
+							}
+							random_list = {
+								25 = {
+									c_harrenhal = { gain_title = ROOT }	
+									d_harrenhal = { gain_title = ROOT }
+								}
+								75 = {
+									ROOT = {
+										random_courtier = {
+											limit = { character = 359 }
+											c_harrenhal = { gain_title = PREV }	
+											d_harrenhal = { gain_title = PREV }
+											set_defacto_liege = ROOT
+											ROOT = {
+												any_vassal = {
+													limit = {
+														primary_title = {
+															dejure_liege_title = {
+																OR = {
+																	title = c_harrenhal
+																	title = d_harrenhal
+																}
+															}
+														}
+													}
+													set_defacto_liege = PREVPREV
+												}
+											}
+										}	
+									}
+								}							
+							}	
+						}
+						c_harrenhal = { add_pressed_claim = PREV }	
+						d_harrenhal = { add_pressed_claim = PREV }
+					}
+				}
+			}
+			set_character_flag = aegons_conquered_riverlands			
+		}	
+		if = { #Orys-Argella Event
+			limit = {
+				OR = {
+					AND = {
+						e_stormlands = { has_holder = no }
+						k_stormlands = { has_holder = no }
+					}
+					has_landed_title = k_stormlands
+				}	
+				has_landed_title = c_storms_end
+				any_courtier = { character = 11544 } #Argella
+				any_courtier = { 
+					character = 1317
+					NOT = { has_character_flag = no_to_stormlands }
+					NOT = { trait = kingsguard }					
+				}
+			}
+			character_event = { id = aegons_landing.13 days = 5 } 			
+		}
+		if = { #Sharp Point Becomes Sworn to Dragonstone
+			limit = {
+				c_sharp_point = { 
+					NOT = { dejure_liege_title = { title = d_dragonstone } }
+					holder_scope = { is_liege_or_above = ROOT } 
+				}
+			}
+			d_dragonstone = { 
+				c_sharp_point = { 
+					de_jure_liege = PREV 
+					holder_scope = { set_defacto_liege = ROOT }
+				}
+			}		
+		}
+		if = { #Sweetport Sound Becomes Sworn to Dragonstone
+			limit = {
+				c_sweetport_sound = { 
+					NOT = { dejure_liege_title = { title = d_dragonstone } }
+					holder_scope = { is_liege_or_above = ROOT } 
+				}
+			}
+			d_dragonstone = { 
+				c_sweetport_sound = { 
+					de_jure_liege = PREV 
+					holder_scope = { set_defacto_liege = ROOT }
+				}
+			}		
+		}
+		narrative_event = { id = aegons_landing.6 days = 1 } #Faith decision
+	}
+	
+	option = {
+		name = "EVTOPTAaegons_landing.1" #Strike North!
+		trigger = {
+			trait = dragon_rider
+			e_iron_isles = {
+				holder_scope = {
+					independent = yes
+					NOT = { war_with = ROOT }
+					OR = {
+						NOT = { has_character_flag = defended_conquest }
+						had_character_flag = { flag = defended_conquest days = 3650 }
+					}	
+				}
+			}
+		}
+		ai_chance = { factor = 10000 }
+		e_iron_isles = {		
+			holder_scope = {
+				custom_tooltip = { text = TOOLTIPEVTOPTAaegons_landing.1 }
+				hidden_tooltip = {
+					any_vassal = {
+						limit = {
+							capital_scope = {
+								region = world_crownlands
+							}
+						}
+						character_event = { id = aegons_landing.2 }
+					}
+				}	
+			}
+			reverse_war = {
+				target = ROOT
+				casus_belli = dragon_conquest
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTBaegons_landing.1" #Strike South!
+		trigger = {
+			trait = dragon_rider
+			e_stormlands = {
+				holder_scope = {
+					independent = yes
+					NOT = { war_with = ROOT }
+					OR = {
+						NOT = { has_character_flag = defended_conquest }
+						had_character_flag = { flag = defended_conquest days = 3650 }
+					}	
+				}
+			}
+		}
+		ai_chance = { factor = 7500 }
+		e_stormlands = {		
+			holder_scope = {
+				custom_tooltip = { text = TOOLTIPEVTOPTAaegons_landing.1 }
+				hidden_tooltip = {
+					any_vassal = {
+						limit = {
+							capital_scope = {
+								region = world_crownlands
+							}
+						}
+						character_event = { id = aegons_landing.2 }
+					}
+				}	
+			}
+			reverse_war = {
+				target = ROOT
+				casus_belli = dragon_conquest
+			}
+		}	
+	}
+	option = {
+		name = "EVTOPTCaegons_landing.1" #Strike West!
+		trigger = {
+			trait = dragon_rider
+			e_westerlands = {
+				holder_scope = {
+					independent = yes
+					NOT = { war_with = ROOT }
+					OR = {
+						NOT = { has_character_flag = defended_conquest }
+						had_character_flag = { flag = defended_conquest days = 3650 }
+					}	
+				}
+			}
+			OR = {
+				e_iron_isles = { NOT = { has_holder = yes } }
+				e_reach = { NOT = { has_holder = yes } }
+			}	
+		}
+		ai_chance = { factor = 50 }
+		e_westerlands = {		
+			holder_scope = {
+				custom_tooltip = { text = TOOLTIPEVTOPTAaegons_landing.1 }
+				hidden_tooltip = {
+					any_vassal = {
+						limit = {
+							capital_scope = {
+								region = world_crownlands
+							}
+						}
+						character_event = { id = aegons_landing.2 }
+					}
+				}	
+			}
+			reverse_war = {
+				target = ROOT
+				casus_belli = dragon_conquest
+			}
+		}	
+	}
+	option = {
+		name = "EVTOPTGaegons_landing.1" #The lands of the reach
+		trigger = {
+			trait = dragon_rider
+			e_reach = {
+				holder_scope = {
+					independent = yes
+					NOT = { war_with = ROOT }
+					OR = {
+						NOT = { has_character_flag = defended_conquest }
+						had_character_flag = { flag = defended_conquest days = 3650 }
+					}	
+				}
+			}
+		}
+		ai_chance = { factor = 50 }	
+		e_reach = {		
+			holder_scope = {
+				custom_tooltip = { text = TOOLTIPEVTOPTAaegons_landing.1 }
+				hidden_tooltip = {
+					any_vassal = {
+						limit = {
+							capital_scope = {
+								region = world_crownlands
+							}
+						}
+						character_event = { id = aegons_landing.2 }
+					}
+				}	
+			}
+			reverse_war = {
+				target = ROOT
+				casus_belli = dragon_conquest
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTDaegons_landing.1" #The Vale
+		trigger = {
+			trait = dragon_rider
+			e_vale = {
+				holder_scope = {
+					independent = yes
+					NOT = { war_with = ROOT }
+					OR = {
+						NOT = { has_character_flag = defended_conquest }
+						had_character_flag = { flag = defended_conquest days = 3650 }
+					}	
+				}
+			}
+			e_iron_isles = { NOT = { has_holder = yes } }	
+		}
+		ai_chance = { factor = 300 }
+		e_vale = {		
+			reverse_war = {
+				target = ROOT
+				casus_belli = dragon_conquest
+			}
+		}	
+	}
+	option = {
+		name = "EVTOPTEaegons_landing.1" #The North
+		trigger = {
+			trait = dragon_rider
+			e_north = {
+				holder_scope = {
+					independent = yes
+					NOT = { war_with = ROOT }
+					OR = {
+						NOT = { has_character_flag = defended_conquest }
+						had_character_flag = { flag = defended_conquest days = 3650 }
+					}	
+				}
+			}
+			e_iron_isles = { NOT = { has_holder = yes } }		
+		}
+		ai_chance = { factor = 50 }
+		e_north = {		
+			reverse_war = {
+				target = ROOT
+				casus_belli = dragon_conquest
+			}
+		}	
+	}
+	option = {
+		name = "EVTOPTFaegons_landing.1" #Dorne
+		trigger = {
+			trait = dragon_rider
+			e_dorne = {
+				holder_scope = {
+					independent = yes
+					NOT = { war_with = ROOT }
+					OR = {
+						NOT = { has_character_flag = defended_conquest }
+						had_character_flag = { flag = defended_conquest days = 3650 }
+					}	
+				}
+			}
+			e_stormlands = { NOT = { has_holder = yes } }		
+		}
+		ai_chance = { factor = 10 }
+		e_dorne = {		
+			reverse_war = {
+				target = ROOT
+				casus_belli = dragon_conquest
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTHaegons_landing.1" #My Conquest must stop
+		ai_chance = { 
+			factor = 1 
+			modifier = {
+				factor = 0.01
+				ai = yes
+			}
+		}
+		if = { #capital choice can happen depending on number of kingdoms conquered
+			limit = {
+				calc_true_if = {
+					amount = 3
+					trait = dragon_rider #dragon riders require one less kingdom
+					k_north = { dejure_liege_title = { title = e_iron_throne } }
+					k_riverlands = { dejure_liege_title = { title = e_iron_throne } }
+					k_vale = { dejure_liege_title = { title = e_iron_throne } }
+					k_westerlands = { dejure_liege_title = { title = e_iron_throne } }
+					k_reach = { dejure_liege_title = { title = e_iron_throne } }
+					k_stormlands = { dejure_liege_title = { title = e_iron_throne } }
+					k_dorne = { dejure_liege_title = { title = e_iron_throne } }
+					#k_iron_isles = { dejure_liege_title = { title = e_iron_throne } } #riverlands and irons isles are same kingdom
+				}
+			}
+			set_character_flag = conquest_force_ending
+			narrative_event = { id = aegons_landing.9 days = 4 tooltip = TOOLTIPEVTOPTHaegons_landing.1 } 
+		}	
+		else = { #Conquest FAILED
+			custom_tooltip = {
+				text = TOOLTIPaegons_conquest_failed				
+				clr_global_flag = aegons_conquest 
+				clr_character_flag = aegons_conquered_riverlands			
+				clr_global_flag = e_iron_throne_created
+				clr_character_flag = iron_throne_crown_event
+				k_dragonstone = { 
+					gain_title = ROOT 
+					copy_title_laws = e_iron_throne
+				}
+				e_iron_throne = { destroy_landed_title = THIS }
+				b_stone_drum = { ROOT = { capital = PREV } }
+				k_crownlands = { 
+					any_direct_de_jure_vassal_title = {
+						de_jure_liege = k_dragonstone
+					}
+				}
+			}
+		}		
+	}
+}
+#Aegon decides his next action- Free Cities
+character_event = {
+	id = aegons_landing.410
+	desc = "EVTDESCaegons_landing.410"
+	picture = "GFX_targaryen_balerion"
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	prisoner = no
+	
+	trigger = {
+		has_landed_title = e_new_valyria
+		has_global_flag = aegons_conquest
+		has_global_flag = aegons_conquest_essos
+		NOT = {
+			any_war = {
+				attacker = { character = ROOT }
+				using_cb = dragon_conquest
+				defender = { tier = KING }	
+			}
+		}
+		any_independent_ruler = {
+			NOT = { primary_title = { is_variable_equal = { which = "de_facto_empire" value = 11 } } } #not new valyria
+			OR = {
+				has_landed_title = k_pentos
+				has_landed_title = k_braavos
+				has_landed_title = k_myr
+				has_landed_title = k_tyrosh
+				has_landed_title = k_lys
+				AND = {
+					has_landed_title = k_qohor
+					OR = {
+						k_pentos = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+						k_lorath = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+						k_volantis = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+						k_norvos = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+					}	
+				}
+				AND = {
+					has_landed_title = k_norvos
+					OR = {
+						k_pentos = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+						k_lorath = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+						k_qohor = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+						k_volantis = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+					}	
+				}	
+				AND = {
+					has_landed_title = k_lorath
+					OR = {
+						k_norvos = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+						k_braavos= {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+					} 
+				}
+				AND = {
+					has_landed_title = k_volantis
+					OR = {
+						k_pentos = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+						k_myr = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+						k_norvos = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+					}	
+				}					
+			}
+			OR = {
+				NOT = { has_character_flag = defended_conquest }
+				had_character_flag = { flag = defended_conquest days = 3650 }
+			}
+		}
+	}
+	
+	immediate = {
+		any_vassal = { set_character_flag = supporting_king }	
+		narrative_event = { id = aegons_landing.61 days = 1 }	#Faith decision
+		clr_global_flag = war_cooldown_period
+		if = {
+			limit = { k_pentos = { holder_scope = { liege = { character = ROOT } } } }
+			k_pentos = { set_variable = { which = "de_facto_empire" value = 11 } }
+		}
+		if = {
+			limit = { k_lorath = { holder_scope = { liege = { character = ROOT } } } }
+			k_lorath = { set_variable = { which = "de_facto_empire" value = 11 } }
+		}
+		if = {
+			limit = { k_qohor = { holder_scope = { liege = { character = ROOT } } } }
+			k_qohor = { set_variable = { which = "de_facto_empire" value = 11 } }
+		}
+		if = {
+			limit = { k_volantis = { holder_scope = { liege = { character = ROOT } } } }
+			k_volantis = { set_variable = { which = "de_facto_empire" value = 11 } }
+		}
+		if = {
+			limit = { k_norvos = { holder_scope = { liege = { character = ROOT } } } }
+			k_norvos = { set_variable = { which = "de_facto_empire" value = 11 } }
+		}
+		if = {
+			limit = { k_braavos= { holder_scope = { liege = { character = ROOT } } } }
+			k_braavos= { set_variable = { which = "de_facto_empire" value = 11 } }
+		}
+		if = {
+			limit = { k_myr = { holder_scope = { liege = { character = ROOT } } } }
+			k_myr = { set_variable = { which = "de_facto_empire" value = 11 } }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAaegons_landing.111" #Pentos
+		trigger = {
+			trait = dragon_rider
+			k_pentos = {
+				NOT = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+				holder_scope = {
+					independent = yes
+					NOT = { war_with = ROOT }
+					OR = {
+						NOT = { has_character_flag = defended_conquest }
+						had_character_flag = { flag = defended_conquest days = 3650 }
+					}	
+				}
+			}
+		}
+		ai_chance = { factor = 55 }
+		k_pentos = {		
+			reverse_war = {
+				target = ROOT
+				casus_belli = dragon_conquest
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTBaegons_landing.111" #Myr
+		trigger = {
+			trait = dragon_rider
+			k_myr = {
+				NOT = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+				holder_scope = {
+					independent = yes
+					NOT = { war_with = ROOT }
+					OR = {
+						NOT = { has_character_flag = defended_conquest }
+						had_character_flag = { flag = defended_conquest days = 3650 }
+					}	
+				}
+			}
+		}
+		ai_chance = { factor = 25 }
+		k_myr = {		
+			reverse_war = {
+				target = ROOT
+				casus_belli = dragon_conquest
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTCaegons_landing.111" #Tyrosh
+		trigger = {
+			trait = dragon_rider
+			k_tyrosh = {
+				NOT = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+				holder_scope = {
+					independent = yes
+					NOT = { war_with = ROOT }
+					OR = {
+						NOT = { has_character_flag = defended_conquest }
+						had_character_flag = { flag = defended_conquest days = 3650 }
+					}	
+				}
+			}
+		}
+		ai_chance = { factor = 15 }
+		k_tyrosh = {		
+			reverse_war = {
+				target = ROOT
+				casus_belli = dragon_conquest
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTDaegons_landing.111" #Braavos
+		trigger = {
+			trait = dragon_rider
+			k_braavos = {
+				NOT = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+				holder_scope = {
+					independent = yes
+					NOT = { war_with = ROOT }
+					OR = {
+						NOT = { has_character_flag = defended_conquest }
+						had_character_flag = { flag = defended_conquest days = 3650 }
+					}	
+				}
+			}
+		}
+		ai_chance = { factor = 5 }
+		k_braavos = {		
+			reverse_war = {
+				target = ROOT
+				casus_belli = dragon_conquest
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTEaegons_landing.111" #Lys
+		trigger = {
+			trait = dragon_rider
+			k_lys = {
+				NOT = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+				holder_scope = {
+					independent = yes
+					NOT = { war_with = ROOT }
+					OR = {
+						NOT = { has_character_flag = defended_conquest }
+						had_character_flag = { flag = defended_conquest days = 3650 }
+					}	
+				}
+			}
+		}
+		ai_chance = { factor = 5 }
+		k_lys = {		
+			reverse_war = {
+				target = ROOT
+				casus_belli = dragon_conquest
+			}
+		}		
+	}
+	
+	option = {
+		name = "EVTOPTHaegons_landing.111" #Lorath
+		trigger = {
+			trait = dragon_rider
+			k_lorath = {
+				NOT = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+				holder_scope = {
+					independent = yes
+					NOT = { war_with = ROOT }
+					OR = {
+						NOT = { has_character_flag = defended_conquest }
+						had_character_flag = { flag = defended_conquest days = 3650 }
+					}	
+				}
+			}
+			OR = {
+				k_norvos = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+				k_braavos= {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+			}
+		}
+		ai_chance = { factor = 5 }
+		k_lorath = {		
+			reverse_war = {
+				target = ROOT
+				casus_belli = dragon_conquest
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTGaegons_landing.111" #Norvos
+		trigger = {
+			trait = dragon_rider
+			k_norvos = {
+				NOT = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+				holder_scope = {
+					independent = yes
+					NOT = { war_with = ROOT }
+					OR = {
+						NOT = { has_character_flag = defended_conquest }
+						had_character_flag = { flag = defended_conquest days = 3650 }
+					}	
+				}
+			}
+			OR = {
+				k_pentos = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+				k_lorath = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+				k_qohor = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+				k_volantis = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+			}
+		}
+		ai_chance = { factor = 5 }
+		k_norvos = {		
+			reverse_war = {
+				target = ROOT
+				casus_belli = dragon_conquest
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTFaegons_landing.111" #Qohor
+		trigger = {
+			trait = dragon_rider
+			k_qohor = {
+				NOT = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+				holder_scope = {
+					independent = yes
+					NOT = { war_with = ROOT }
+					OR = {
+						NOT = { has_character_flag = defended_conquest }
+						had_character_flag = { flag = defended_conquest days = 3650 }
+					}	
+				}
+			}
+			OR = {
+				k_pentos = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+				k_lorath = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+				k_volantis = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+				k_norvos = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+			}			
+		}
+		ai_chance = { factor = 5 }
+		k_qohor = {		
+			reverse_war = {
+				target = ROOT
+				casus_belli = dragon_conquest
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTIaegons_landing.111" #Volantis
+		trigger = {
+			trait = dragon_rider
+			k_volantis = {
+				NOT = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+				holder_scope = {
+					independent = yes
+					NOT = { war_with = ROOT }
+					OR = {
+						NOT = { has_character_flag = defended_conquest }
+						had_character_flag = { flag = defended_conquest days = 3650 }
+					}	
+				}
+			}
+			OR = {
+				k_pentos = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+				k_myr = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+				k_norvos = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+			}
+		}
+		ai_chance = { factor = 5 }
+		k_volantis = {		
+			reverse_war = {
+				target = ROOT
+				casus_belli = dragon_conquest
+			}
+		}	
+	}
+	
+	
+	option = {
+		name = "EVTOPTHaegons_landing.1" #My Conquest must stop
+		ai_chance = { 
+			factor = 1 
+			modifier = {
+				factor = 0.01
+				ai = yes
+			}
+		}
+		if = { #capital choice can happen depending on number of kingdoms conquered
+			limit = {
+				calc_true_if = {
+					amount = 4
+					trait = dragon_rider #dragon riders require one less kingdom
+					k_pentos = { dejure_liege_title = { title = e_new_valyria } }
+					k_myr = { dejure_liege_title = { title = e_new_valyria } }
+					k_tyrosh = { dejure_liege_title = { title = e_new_valyria } }
+					k_braavos = { dejure_liege_title = { title = e_new_valyria } }
+					k_lys = { dejure_liege_title = { title = e_new_valyria } }
+					k_lorath = { dejure_liege_title = { title = e_new_valyria } }
+					k_norvos = { dejure_liege_title = { title = e_new_valyria } }
+					k_qohor = { dejure_liege_title = { title = e_new_valyria } }
+					k_volantis = { dejure_liege_title = { title = e_new_valyria } }
+				}
+			}
+			set_character_flag = conquest_force_ending
+			narrative_event = { id = aegons_landing.90 days = 4  tooltip = TOOLTIPEVTOPTHaegons_landing.1 } 
+		}	
+		else = { #Conquest FAILED
+			custom_tooltip = {
+				text = TOOLTIPaegons_conquest_failed	
+				clr_global_flag = aegons_conquest
+				clr_global_flag = aegons_conquest_essos	
+				clr_character_flag = conquest_force_ending
+				clr_character_flag = pentos
+				clr_character_flag = lorath
+				clr_character_flag = volantis
+				clr_character_flag = norvos
+				clr_character_flag = braavos
+				clr_character_flag = qohor
+				clr_character_flag = myr
+				clr_character_flag = tyrosh
+				clr_character_flag = lys
+								
+				k_dragonstone = { 
+					gain_title = ROOT 
+					copy_title_laws = e_new_valyria
+				}
+				e_new_valyria = { destroy_landed_title = THIS }
+				b_stone_drum = { ROOT = { capital = PREV } }
+			}
+		}		
+	}
+}
+#subdues Cracklaw point
+character_event = {
+	id = aegons_landing.5
+	desc = "EVTDESCaegons_landing.5"
+	picture = "GFX_targaryen_balerion"
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	prisoner = no
+	
+	trigger = {
+		has_landed_title = e_iron_throne
+		NOT = { has_global_flag = aegons_conquest_essos }
+		trait = dragon_rider
+		NOT = { has_character_flag = cracklaw_point_subdued }
+		NOT = {
+			e_iron_isles = {
+				holder_scope = {
+					independent = yes
+				}
+			}
+		}	
+		any_independent_ruler = {
+			capital_scope = {
+				duchy = { title = d_crackclaw_point }
+			}
+			NOT = {
+				any_war = { 
+					defender = { character = PREVPREV }
+					using_cb = dragon_conquest 
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAaegons_landing.5" 
+		set_character_flag = cracklaw_point_subdued	
+		k_crackclaw_point = { de_jure_liege = e_iron_throne }
+		d_crackclaw_point = { de_jure_liege = k_crownlands } 
+		any_independent_ruler = {
+			limit = {
+				capital_scope = {
+					duchy = { title = d_crackclaw_point }
+				}
+				NOT = {
+					any_war = { 
+						defender = { character = PREVPREV }
+						using_cb = dragon_conquest 
+					}
+				}
+			}
+			character_event = { id = aegons_landing.2 tooltip = "TOOLTIPaegons_landing.5" }
+		}
+	}
+}
+#Convert to the Faith?
+narrative_event = {
+	id = aegons_landing.6
+	desc = "EVTDESCaegons_landing.6"
+	title = "EVTTITLEaegons_landing.6"
+	picture = "GFX_targaryen_balerion"
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_landed_title = e_iron_throne
+		religion = valyrian_rel
+		NOT = { has_character_flag = faith_decision }
+		c_oldtown = {
+			holder_scope = {
+				OR = {
+					character = ROOT
+					any_liege = { character = ROOT }
+					primary_title = { is_variable_equal = { which = "de_facto_empire" value = 1 } }
+					any_liege = { primary_title = { is_variable_equal = { which = "de_facto_empire" value = 1 } } }
+				}
+			}
+		}
+	}
+	
+	immediate = { set_character_flag = faith_decision }
+	
+	option = {
+		name = "EVTOPTAaegons_landing.6" #Convert
+		ai_chance = { factor = 90 }
+		hidden_tooltip = {
+			set_character_flag = has_high_valyrian_polygamy_wife
+			random_spouse = {
+				limit = { character = 77002 }
+				make_primary_spouse = yes
+				set_character_flag = high_valyrian_polygamy_wife
+			}
+			random_spouse = {
+				limit = { character = 77003 }
+				make_primary_spouse = yes
+				set_character_flag = high_valyrian_polygamy_wife
+			}
+		}
+		religion = the_seven
+		add_trait = knight
+		set_character_flag = crowned_by_high_septon
+		k_the_most_devout = {
+			holder_scope = {
+				set_defacto_liege = ROOT			
+				opinion = {
+					who = ROOT
+					modifier = zealous_pos
+				}
+			}
+			hidden_tooltip = { set_variable = { which = "de_facto_empire" value = 1 }  }
+		}
+		hidden_tooltip = {
+			221 = { religion = the_seven }
+			219 = { religion = the_seven }
+			220 = { religion = the_seven }
+			any_playable_ruler = {
+				limit = { 
+					religion = valyrian_rel 
+					primary_title = { is_variable_equal = { which = "de_facto_empire" value = 1 } }
+					NOT = { character = ROOT }
+					NOT = { any_liege = { character = ROOT } }
+				}
+				religion = the_seven
+				if = {
+					limit = {
+						is_female = no
+						age = 16
+						NOT = { trait = maester }
+					}
+					knight_character_effect = yes
+				}
+				any_realm_character = {
+					limit = { religion = valyrian_rel }
+					religion = the_seven
+					if = {
+						limit = {
+							is_female = no
+							age = 16
+							NOT = { trait = maester }
+						}
+						knight_character_effect = yes
+					}
+				}
+			}
+			any_realm_character = {
+				limit = { religion = valyrian_rel }
+				religion = the_seven
+				if = {
+					limit = {
+						is_female = no
+						age = 16
+						NOT = { trait = maester }
+					}
+					knight_character_effect = yes
+				}
+			}
+			any_realm_lord = {
+				limit = { NOT = { character = ROOT } }
+				character_event = { id = royal_proclamations.26 }
+			}
+			if = {
+				limit = { ai = no }
+				chronicle = {
+					entry = CHRONICLE_AEGONS_CONQUEST_CONVERT_SEVEN
+					picture = GFX_evt_coronation
+				}	
+			}
+			e_rebels = {
+				persistent_event_target:chronicle_player = {
+					if = {
+						limit = { 
+							NOT = { character = ROOT }
+							OR = {		
+								dynasty = ROOT
+								is_liege_or_above = ROOT
+								capital_scope = { region = world_westeros }
+							}
+						}
+						chronicle = {
+							entry = CHRONICLE_AEGONS_CONQUEST_CONVERT_SEVEN
+							portrait = [Root.GetID]
+						}	
+					}
+				}
+			}	
+		}
+	}
+	option = {
+		name = "EVTOPTBaegons_landing.6" #No
+		ai_chance = { factor = 10 }
+		k_the_most_devout = {
+			holder_scope = {
+				set_defacto_liege = ROOT			
+				opinion = {
+					who = ROOT
+					modifier = zealous_neg
+				}
+			}
+			hidden_tooltip = { set_variable = { which = "de_facto_empire" value = 1 }  }
+		}
+	}
+}
+#Convert to the Rhllor?
+narrative_event = {
+	id = aegons_landing.61
+	desc = "EVTDESCaegons_landing.61"
+	title = "EVTTITLEaegons_landing.61"
+	picture = "GFX_targaryen_balerion"
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_landed_title = e_new_valyria
+		religion = valyrian_rel
+		NOT = { has_character_flag = faith_decision }
+		c_oldvolantis = {
+			holder_scope = {
+				OR = {
+					character = ROOT
+					any_liege = { character = ROOT }
+					primary_title = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+					any_liege = { primary_title = {  is_variable_equal = { which = "de_facto_empire" value = 11 } } } 
+				}
+			}
+		}
+	}
+	
+	immediate = { set_character_flag = faith_decision }
+	
+	option = {
+		name = "EVTOPTAaegons_landing.6" #Convert
+		ai_chance = { factor = 50 }
+		hidden_tooltip = {
+			random_spouse = {
+				limit = { character = 77002 }
+				if = {
+					limit = { is_main_spouse = no }
+					make_primary_spouse = yes				
+				}	
+				set_character_flag = high_valyrian_polygamy_wife
+			}			
+			random_spouse = {
+				limit = { character = 77003 }	
+				if = {
+					limit = { 
+						is_main_spouse = no 
+						NOT = {
+							ROOT = {
+								any_spouse = {
+									character = 77002
+									is_alive = yes
+									is_main_spouse = yes
+								}
+							}
+						}
+					}
+					make_primary_spouse = yes				
+				}
+				set_character_flag = high_valyrian_polygamy_wife
+			}			
+		}
+		religion = rhllor
+		add_trait = favored_by_rhllor
+		d_rhllor = {
+			holder_scope = {
+				set_defacto_liege = ROOT
+				opinion = {
+					who = ROOT
+					modifier = zealous_pos
+				}
+			}
+		}
+		hidden_tooltip = {
+			221 = { religion = rhllor }
+			219 = { religion = rhllor }
+			220 = { religion = rhllor }
+			any_playable_ruler = {
+				limit = { 
+					religion = valyrian_rel 
+					NOT = { culture = eastern_valyrian }
+					primary_title = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+					NOT = { character = ROOT }
+					NOT = { any_liege = { character = ROOT } }
+				}
+				religion = rhllor
+				any_realm_character = {
+					limit = { 
+						religion = valyrian_rel 
+						NOT = { culture = eastern_valyrian }
+					}
+					religion = rhllor
+				}
+			}
+			any_realm_character = {
+				limit = { 
+					religion = valyrian_rel 
+					NOT = { culture = eastern_valyrian }
+				}
+				religion = rhllor
+			}
+			if = {
+				limit = { ai = no }
+				chronicle = {
+					entry = CHRONICLE_AEGONS_CONQUEST_CONVERT_RHLLOR
+					picture = GFX_evt_coronation
+				}	
+			}
+			e_rebels = {
+				persistent_event_target:chronicle_player = {
+					if = {
+						limit = { 
+							NOT = { character = ROOT }
+							OR = {		
+								dynasty = ROOT
+								is_liege_or_above = ROOT
+								capital_scope = { region = world_free_cities }
+							}
+						}
+						chronicle = {
+							entry = CHRONICLE_AEGONS_CONQUEST_CONVERT_RHLLOR
+							portrait = [Root.GetID]
+						}	
+					}
+				}
+			}	
+		}
+	}
+	option = {
+		name = "EVTOPTBaegons_landing.6" #No
+		ai_chance = { factor = 50 }
+		d_rhllor = {
+			holder_scope = {
+				set_defacto_liege = ROOT
+				opinion = {
+					who = ROOT
+					modifier = zealous_neg
+				}
+			}
+		}
+	}
+}
+#Build a Great Sept for the Faith
+character_event = {
+	id = aegons_landing.7
+	desc = "EVTDESCaegons_landing.7"
+	picture = "GFX_evt_greatsept"
+	
+	only_independent = yes
+	religion = the_seven
+	
+	trigger = {
+		has_landed_title = e_iron_throne	
+		capital_scope = {
+			province_id = 226 
+			has_province_flag = kings_landing_established
+			b_great_sept_of_baelor = {
+				holder_scope = {
+					NOT = { has_landed_title = k_the_most_devout }
+				}				
+			}
+		}
+		NOT = { has_character_flag = great_sept_decision }
+		NOT = { has_global_flag = great_sept_built }
+		OR = {
+			trait = septon
+			AND = {
+				trait = zealous
+				OR = {
+					piety = 250
+					trait = celibate
+					trait = lunatic
+				}
+			}
+		}
+		treasury = 350
+	}
+	
+	immediate = { set_character_flag = great_sept_decision }
+	
+	mean_time_to_happen = {
+		years = 5
+	}
+	
+	option = {
+		name = "EVTOPTAaegons_landing.7" #Yes!
+		ai_chance = { factor = 85 }
+		treasury = -500
+		piety = 500
+		prestige = 400
+		set_global_flag = great_sept_built
+		# hidden_tooltip = {
+			# capital_scope = {
+				# build_holding = {
+				   # title = b_great_sept_of_baelor
+				   # type = temple
+				   # holder = ROOT
+				# }			
+			# }
+		# }	
+		k_the_most_devout = {			
+			holder_scope = {
+				character_event = { id = aegons_landing.8 tooltip = TOOLTIPaegons_landing.8 }
+				b_great_sept_of_baelor = { 
+					set_name = [This.Holder.TopLiege.GetFirstName]
+					grant_title = PREV 
+					if = {
+						limit = { NOT = { has_building = tp_monastery_2 } }
+						add_building = tp_monastery_2
+						hidden_tooltip = { add_building = tp_monastery_1 }
+					}
+				}
+				opinion = {
+					who = ROOT
+					modifier = opinion_very_grateful
+					years = 20
+				}
+			}
+			set_preferred_capital = 226
+		}
+		hidden_tooltip = {
+			d_warriors_sons = { set_preferred_capital = 226 }
+			d_poor_fellows = { set_preferred_capital = 226 }
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_BUILT_GREAT_SEPT
+				picture = GFX_evt_greatsept
+			}	
+		}
+	}
+	option = {
+		name = "EVTOPTBaegons_landing.7" #No
+		ai_chance = { factor = 15 }
+		piety = -50
+	}
+}
+character_event = {
+	id = aegons_landing.8
+	desc = "EVTDESCaegons_landing.8"
+	picture = "GFX_evt_greatsept"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAaegons_landing.8" 
+		b_great_sept_of_baelor = {
+			ROOT = { capital = PREV }
+		}
+		c_oldtown = {
+			holder_scope = {
+				b_starry_sept = {
+					grant_title = PREV
+				}
+			}	
+		}
+	}
+}	
+#Establish Capital- Westeros
+narrative_event = {
+	id = aegons_landing.9 #Fixed
+	desc = "EVTDESCaegons_landing.9"
+	title = "EVTTITLEaegons_landing.9"
+	picture = GFX_evt_ironthrone
+
+	hide_from = yes
+
+	only_independent = yes
+	has_global_flag = aegons_conquest
+
+	trigger = {
+		has_landed_title = e_iron_throne
+		NOT = { has_global_flag = aegons_conquest_essos }
+		NOT = {
+			any_war = {
+				AND = {
+					attacker = { character = ROOT }
+					using_cb = dragon_conquest
+					defender = { tier = EMPEROR }
+				}
+			}
+		}
+		OR = {
+			has_character_flag = conquest_force_ending
+			NOT = {
+				any_independent_ruler = {
+					OR = {
+						has_landed_title = e_iron_isles
+						has_landed_title = e_stormlands
+						has_landed_title = e_reach
+						AND = {
+							OR = {
+								has_landed_title = e_north
+								has_landed_title = e_vale
+							}
+							e_iron_isles = { NOT = { has_holder = yes } }
+						}
+						AND = {
+							has_landed_title = e_westerlands
+							OR = {
+								e_iron_isles = { NOT = { has_holder = yes } }
+								e_reach = { NOT = { has_holder = yes } }
+							}
+						}
+						AND = {
+							has_landed_title = e_dorne
+							e_stormlands = { NOT = { has_holder = yes } }
+						}
+					}
+					OR = {
+						NOT = { has_character_flag = defended_conquest }
+						had_character_flag = { flag = defended_conquest days = 3650 }
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		clr_global_flag = aegons_conquest
+		clr_character_flag = aegons_conquered_riverlands
+		clr_character_flag = conquest_force_ending
+		hidden_tooltip = {
+			any_vassal = {
+				limit = { tier = KING }
+				primary_title = { de_jure_liege = e_iron_throne }
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAaegons_landing.9" #King's landing
+		ai_chance = { factor = 100 }
+		prestige = 300
+		treasury = -300
+		set_global_flag = red_keep_established
+		set_global_flag = KL_established
+		set_global_flag = KL_navy_established
+		hidden_tooltip = { d_kings_landing = { set_name = ""  } }		
+		c_kings_landing = {
+			set_name = PROV226
+			location = {
+				set_province_flag = kings_landing_established
+				hidden_tooltip = { set_name = c_kings_landing }
+				build_holding = {
+				   title = b_dragon_gate
+				   type = castle
+				   holder = ROOT
+				}
+				hidden_tooltip = {
+					b_dragon_gate = {
+						set_title_flag = military_command
+						set_name = ""
+					}
+				}
+				build_holding = {
+				   title = b_kings_gate
+				   type = castle
+				   holder = ROOT
+				}
+				hidden_tooltip = {
+					b_kings_gate = {
+						set_title_flag = military_command
+						set_name = ""
+					}
+				}
+				build_holding = {
+				   title = b_kings_landing
+				   type = city
+				   holder = ROOT
+				}
+				hidden_tooltip = {
+					b_kings_landing = {
+						set_name = ""
+						add_building = ct_asoiaf_crown_basevalue_1
+						add_building = ct_asoiaf_crown_basevalue_2
+						set_title_flag = military_command
+					}
+				}
+				build_holding = {
+				   title = b_great_sept_of_baelor
+				   type = temple
+				   holder = ROOT
+				}
+				build_holding = {
+				   title = b_white_sword_tower
+				   type = castle
+				   holder = ROOT
+				}
+				hidden_tooltip = {
+					b_white_sword_tower = {
+						set_name = ""
+					}
+				}
+				if = {
+					limit = { is_title_active = d_kingsguard }
+					d_kingsguard = {
+						holder_scope = {
+							b_white_sword_tower = { grant_title = PREV }
+						}
+					}
+				}
+				build_holding = {
+				   title = b_warriors_sons
+				   type = city
+				   holder = ROOT
+				}
+				hidden_tooltip = {
+					b_warriors_sons = {
+						set_name = ""
+					}
+				}
+			}
+		}
+		b_red_keep = {
+			ROOT = { capital = PREV }
+		}
+		b_great_sept_of_baelor = {
+			hidden_tooltip = { set_name = B_SEPT_OF_REMEMBRANCE }
+		}
+		custom_tooltip = { text = TOOLTIPNORMALCROWNLANDS } # Dragonstone
+		d_crackclaw_point = { # Cracklaw
+			if = {
+				limit = {		
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_crackclaw_point
+				}
+			}
+			clr_title_flag = k_crownlands
+		}
+		d_rosby = { # Rosby
+			if = {
+				limit = {	
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_riverlands
+				}
+			}
+			clr_title_flag = k_crownlands
+		}
+		d_stokeworth = { # Stokeworth
+			if = {
+				limit = {		
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_riverlands
+				}
+			}
+			clr_title_flag = k_crownlands
+		}
+		d_hayford = { # Hayford
+			if = {
+				limit = {		
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_riverlands
+				}
+			}
+			clr_title_flag = k_crownlands
+		}
+		d_duskendale = { # Duskendale
+			if = {
+				limit = {	
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_riverlands
+				}
+			}
+			clr_title_flag = k_crownlands
+		}
+		d_blackwater_rush = { # Blackwater Rush
+			if = {
+				limit = {	
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_riverlands
+				}
+			}
+			clr_title_flag = k_crownlands 
+		}
+		d_kingswood = { # Kingswood
+			if = {
+				limit = {		
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands 
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_stormlands
+				}
+			}
+			clr_title_flag = k_crownlands
+		}
+		d_masseys_hook = { # Massey's Hook
+			if = {
+				limit = {		
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_stormlands
+				}
+			}
+			clr_title_flag = k_crownlands
+		}
+		custom_tooltip = {
+			text = TOOLTIPNORMALCROWNLANDSEND # King's Landing
+			hidden_tooltip = { d_kings_landing = { de_jure_liege = k_crownlands } }
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_AEGONS_CONQUEST_CAPITAL_KL
+				picture = GFX_evt_ironthrone
+			}
+		}
+		e_rebels = {
+			persistent_event_target:chronicle_player = {
+				if = {
+					limit = {
+						NOT = { character = ROOT }
+						OR = {
+							dynasty = ROOT
+							is_liege_or_above = ROOT
+							capital_scope = { region = world_westeros }
+						}
+					}
+					chronicle = {
+						entry = CHRONICLE_AEGONS_CONQUEST_CAPITAL_KL
+						portrait = [Root.GetID]
+					}
+				}
+			}
+		}
+		e_iron_throne = {
+			set_name = empire_e_iron_throne
+			hidden_tooltip = { set_name = "" }
+			set_preferred_capital = 226
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBaegons_landing.9" #Dragonstone is more comfortable
+		ai_chance = { factor = 5 }
+		set_global_flag = KL_not_capital
+		treasury = -150
+		if = {
+			limit = { ai = yes }		
+			random_courtier = {
+				limit = {
+					age = 16
+					is_female = no
+					NOT = { dynasty = ROOT }
+					can_press_claims_trigger = yes
+				}
+				c_kings_landing = { grant_title = PREV }
+				d_kings_landing = { grant_title = PREV }
+				hidden_tooltip = { set_defacto_liege = ROOT }
+				c_rollingford = { holder_scope = { set_defacto_liege = PREVPREV } }
+				c_edgerton = { holder_scope = { set_defacto_liege = PREVPREV } }
+				c_bramsfort = { holder_scope = { set_defacto_liege = PREVPREV } }
+				c_farring_cross = { holder_scope = { set_defacto_liege = PREVPREV } }
+				c_dalston_keep = { holder_scope = { set_defacto_liege = PREVPREV } }
+			}
+		}
+		b_stone_drum = {
+			add_building = ca_asoiaf_crown_basevalue_5
+			ROOT = { capital = PREV }
+		}
+		custom_tooltip = { text = TOOLTIPNORMALCROWNLANDS } # Dragonstone
+		d_crackclaw_point = { # Cracklaw
+			if = {
+				limit = {			
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_crackclaw_point
+				}
+			}
+			clr_title_flag = k_crownlands
+		}
+		d_rosby = { # Rosby
+			if = {
+				limit = {	
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_riverlands
+				}
+			}
+			clr_title_flag = k_crownlands
+		}
+		d_hayford = { # Hayford
+			if = {
+				limit = {		
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_riverlands
+				}
+			}
+			clr_title_flag = k_crownlands
+		}
+		d_stokeworth = { # Stokeworth
+			if = {
+				limit = {
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands 
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_riverlands
+				}
+			}
+			clr_title_flag = k_crownlands
+		}
+		d_duskendale = { # Duskendale
+			if = {
+				limit = {		
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_riverlands
+				}
+			}
+			clr_title_flag = k_crownlands
+		}
+		d_blackwater_rush = { # Blackwater Rush
+			if = {
+				limit = {		
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_riverlands
+				}
+			}
+			clr_title_flag = k_crownlands
+		}
+		d_kingswood = { # Kingswood
+			if = {
+				limit = {		
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_stormlands
+				}
+			}
+			clr_title_flag = k_crownlands
+		}
+		d_masseys_hook = { # Massey's Hook
+			if = {
+				limit = {
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_stormlands
+				}
+			}
+			clr_title_flag = k_crownlands
+		}
+		custom_tooltip = {
+			text = TOOLTIPNORMALCROWNLANDSENDB # King's Landing
+			hidden_tooltip = { d_kings_landing = { de_jure_liege = k_crownlands } }
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_AEGONS_CONQUEST_CAPITAL_DRAGONSTONE
+				picture = GFX_evt_ironthrone
+			}
+		}
+		e_rebels = {
+			persistent_event_target:chronicle_player = {
+				if = {
+					limit = {
+						NOT = { character = ROOT }
+						OR = {
+							dynasty = ROOT
+							is_liege_or_above = ROOT
+							capital_scope = { region = world_westeros }
+						}
+					}
+					chronicle = {
+						entry = CHRONICLE_AEGONS_CONQUEST_CAPITAL_DRAGONSTONE
+						portrait = [Root.GetID]
+					}
+				}
+			}
+		}
+		e_iron_throne = {
+			set_name = empire_e_iron_throne
+			hidden_tooltip = { set_name = "" }
+			set_preferred_capital = 221
+		}
+	}
+	
+	option = {
+		name = "EVTOPTCaegons_landing.9" #Oldtown
+		trigger = {
+			c_oldtown = {
+				holder_scope = {
+					OR = {
+						character = ROOT
+						any_liege = { character = ROOT }
+						AND = {
+							primary_title = { is_variable_equal = { which = "de_facto_empire" value = 1 } }
+							NOT = { war_with = ROOT }
+							NOT = { any_liege = { war_with = ROOT } }
+						}
+					}
+				}
+			}
+		}
+		ai_chance = { factor = 5 }
+		prestige = 150
+		treasury = -200
+		set_global_flag = KL_not_capital
+		if = {
+			limit = { ai = yes }
+			random_courtier = {
+				limit = {
+					age = 16
+					is_female = no
+					NOT = { dynasty = ROOT }
+					can_press_claims_trigger = yes
+				}
+				c_kings_landing = { grant_title = PREV }
+				d_kings_landing = { grant_title = PREV }
+				c_rollingford = { holder_scope = { set_defacto_liege = PREVPREV } }
+				c_edgerton = { holder_scope = { set_defacto_liege = PREVPREV } }
+				hidden_tooltip = { set_defacto_liege = ROOT }
+			}
+		}
+		hidden_tooltip = {
+			c_oldtown = {
+				holder_scope = {
+					b_oakmere = {
+						usurp_title = PREV
+						province_capital = yes
+					}
+					add_trait = assign_mission_target
+				}
+			}
+		}
+		b_oakmere = {
+			set_name = b_red_keep_A
+			gain_title = ROOT
+			ROOT = { capital = PREV }
+			hidden_tooltip = { add_building = ca_asoiaf_reach_basevalue_3 }
+			add_building = ca_asoiaf_reach_basevalue_4
+		}
+		if = {
+			limit = { NOT = { has_landed_title = d_oldtown } }
+			d_oldtown = { usurp_title = { target = ROOT type = invasion } }
+		}
+		if = {
+			limit = { NOT = { has_landed_title = c_oldtown } }
+			c_oldtown = { gain_title = { target = ROOT type = invasion } }
+		}
+		custom_tooltip = {
+			text = TOOLTIPOLDTOWNCROWNLANDS
+			hidden_tooltip = { d_oldtown = { de_jure_liege = k_crownlands } }
+		}
+		d_crackclaw_point = { # Cracklaw
+			if = {
+				limit = {
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_crackclaw_point
+				}
+			}
+			clr_title_flag = k_crownlands
+		}
+		d_brightwater = {
+			if = {
+				limit = {
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						holder_scope = { set_defacto_liege = ROOT }
+					}
+				}
+			}
+		}
+		d_west_marches = {
+			if = {
+				limit = {
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						holder_scope = { set_defacto_liege = ROOT }
+					}
+				}
+			}
+		}
+		d_the_arbor = {
+			if = {
+				limit = {		
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						holder_scope = { set_defacto_liege = ROOT }
+					}
+				}
+			}
+		}
+		custom_tooltip = { text = TOOLTIPOLDTOWNCROWNLANDSEND } # Dragonstone
+		hidden_tooltip = {
+			k_riverlands = {
+				d_rosby = { de_jure_liege = PREV }
+				d_duskendale = { de_jure_liege = PREV }
+				d_blackwater_rush = { de_jure_liege = PREV }
+				d_hayford = { de_jure_liege = PREV }
+				d_stokeworth = { de_jure_liege = PREV }
+			}
+			k_westerlands = {
+				holder_scope = {
+					c_byford = {
+						holder_scope = { set_defacto_liege = PREVPREV }
+					}
+				}
+			}
+			k_reach = {
+				holder_scope = {
+					c_bramsfort = {
+						holder_scope = { set_defacto_liege = PREVPREV }
+					}
+					c_farring_cross = {
+						holder_scope = { set_defacto_liege = PREVPREV }
+					}
+				}
+			}
+			k_stormlands = {
+				d_kings_landing = { de_jure_liege = PREV }
+				d_kingswood = { de_jure_liege = PREV }
+				d_masseys_hook = { de_jure_liege = PREV }
+				holder_scope = {
+					c_dalston_keep = {
+						holder_scope = { set_defacto_liege = PREVPREV }
+					}
+					c_greensward = {
+						holder_scope = { set_defacto_liege = PREVPREV }
+					}
+					c_attadale = {
+						holder_scope = { set_defacto_liege = PREVPREV }
+					}
+					c_woodmere = {
+						holder_scope = { set_defacto_liege = PREVPREV }
+					}
+					c_bywater = {
+						holder_scope = { set_defacto_liege = PREVPREV }
+					}
+					c_wendwater = {
+						holder_scope = { set_defacto_liege = PREVPREV }
+					}
+					d_masseys_hook = { 
+						holder_scope = { set_defacto_liege = PREVPREV }
+					}
+				}
+			}
+			b_the_hightower = {
+				assign_mission_target = {
+					limit = {
+						is_alive = yes
+						has_claim = PREV
+					}
+					b_the_hightower = { gain_title = PREV }
+					set_defacto_liege = ROOT
+					remove_trait = assign_mission_target
+					c_oldtown = { add_claim = PREV }
+				}
+				assign_mission_target = {
+					limit = { is_alive = yes }
+					remove_trait = assign_mission_target
+				}
+			}
+			c_the_citadel = {
+				holder_scope = {
+					set_defacto_liege = ROOT
+				}
+			}
+			if = {
+				limit = { ai = no }
+				chronicle = {
+					entry = CHRONICLE_AEGONS_CONQUEST_CAPITAL_OLDTOWN
+					picture = GFX_evt_ironthrone
+				}
+			}
+			e_rebels = {
+				persistent_event_target:chronicle_player = {
+					if = {
+						limit = {
+							NOT = { character = ROOT }
+							OR = {
+								dynasty = ROOT
+								is_liege_or_above = ROOT
+								capital_scope = { region = world_westeros }
+							}
+						}
+						chronicle = {
+							entry = CHRONICLE_AEGONS_CONQUEST_CAPITAL_OLDTOWN
+							portrait = [Root.GetID]
+						}
+					}
+				}
+			}
+		}
+		e_iron_throne = {
+			set_name = empire_e_iron_throne
+			hidden_tooltip = { set_name = "" }
+			set_preferred_capital = 286
+		}
+	}
+
+	option = {
+		name = "EVTOPTDaegons_landing.9" #Harrenhal
+		trigger = {
+			c_harrenhal = {
+				location = { has_province_modifier = completeharren3 }
+				holder_scope = { character = ROOT }
+			}
+		}
+		ai_chance = { factor = 5 }
+		prestige = 150
+		treasury = -200
+		set_global_flag = KL_not_capital
+		if = {
+			limit = { ai = yes }
+			random_courtier = {
+				limit = {
+					age = 16
+					is_female = no
+					NOT = { dynasty = ROOT }
+					can_press_claims_trigger = yes
+				}
+				c_kings_landing = { grant_title = PREV }
+				d_kings_landing = { grant_title = PREV }
+				c_rollingford = { holder_scope = { set_defacto_liege = PREVPREV } }
+				c_edgerton = { holder_scope = { set_defacto_liege = PREVPREV } }
+				hidden_tooltip = { set_defacto_liege = ROOT }
+			}
+		}
+		if = {
+			limit = { NOT = { has_landed_title = d_harrenhal } }
+			d_harrenhal = { usurp_title = { target = ROOT type = invasion } }
+		}
+		b_harrenhal = {
+			ROOT = { capital = PREV }
+		}
+		custom_tooltip = {
+			text = TOOLTIPHARRENHALCROWNLANDS
+			hidden_tooltip = { d_harrenhal = { de_jure_liege = k_crownlands } }
+		}
+		d_bayofclaws = {  # Bay of Claws
+			if = {
+				limit = {		
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_riverlands
+				}
+			}
+			clr_title_flag = k_crownlands
+		}
+		d_crackclaw_point = { # Cracklaw
+			if = {
+				limit = {	
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_crackclaw_point
+				}
+			}
+			clr_title_flag = k_crownlands
+		}
+		d_rosby = { # Rosby
+			if = {
+				limit = {	
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_riverlands
+				}
+			}
+			clr_title_flag = k_crownlands
+		}
+		d_hayford = { # Hayford
+			if = {
+				limit = {
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_riverlands
+				}
+			}
+			clr_title_flag = k_crownlands
+		}
+		d_stokeworth = { # Stokeworth
+			if = {
+				limit = {	
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_riverlands
+				}
+			}
+			clr_title_flag = k_crownlands
+		}
+		d_duskendale = { # Duskendale
+			if = {
+				limit = { 			
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands 
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_riverlands
+				}
+			}
+			clr_title_flag = k_crownlands
+		}
+		d_blackwater_rush = { # Blackwater Rush
+			if = {
+				limit = {	
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_riverlands
+				}
+			}
+			clr_title_flag = k_crownlands
+		}
+		d_esgaroth = {
+			if = {
+				limit = {
+					OR = {
+						is_variable_equal = { which = "de_facto_empire" value = 1 }
+						holder_scope = { is_liege_or_above = ROOT }
+						AND = {
+							has_holder = no
+							any_de_jure_vassal_title = {
+								OR = {
+									is_variable_equal = { which = "de_facto_empire" value = 1 }
+									holder_scope = { is_liege_or_above = ROOT }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					text = TOOLTIPlordship_in_crownlands
+					hidden_tooltip = {
+						de_jure_liege = k_crownlands
+						set_title_flag = k_crownlands
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_title_flag = k_crownlands } }
+					de_jure_liege = k_riverlands
+				}
+			}
+			clr_title_flag = k_crownlands
+		}
+		custom_tooltip = {
+			text = TOOLTIPHARRENHALCROWNLANDSEND # King's Landing
+			hidden_tooltip = { d_kings_landing = { de_jure_liege = k_crownlands } }
+		}
+		hidden_tooltip = {
+			k_stormlands = {
+				d_kingswood = { de_jure_liege = PREV }
+				d_masseys_hook = { de_jure_liege = PREV }
+				holder_scope = {
+					d_kingswood = {
+						holder_scope = { set_defacto_liege = PREVPREV }
+					}
+					d_masseys_hook = {
+						holder_scope = { set_defacto_liege = PREVPREV }
+					}
+				}
+			}
+			if = {
+				limit = { ai = no }
+				chronicle = {
+					entry = CHRONICLE_AEGONS_CONQUEST_CAPITAL_HARRENHAL
+					picture = GFX_evt_ironthrone
+				}
+			}
+			e_rebels = {
+				persistent_event_target:chronicle_player = {
+					if = {
+						limit = {
+							NOT = { character = ROOT }
+							OR = {
+								dynasty = ROOT
+								is_liege_or_above = ROOT
+								capital_scope = { region = world_westeros }
+							}
+						}
+						chronicle = {
+							entry = CHRONICLE_AEGONS_CONQUEST_CAPITAL_HARRENHAL
+							portrait = [Root.GetID]
+						}
+					}
+				}
+			}
+		}
+		e_iron_throne = {
+			set_name = empire_e_iron_throne
+			hidden_tooltip = { set_name = "" }
+			set_preferred_capital = 107
+		}
+	}
+	
+	after = {
+		#check for bloodline
+		primary_title = { save_event_target_as = bloodline_title }
+		set_character_flag = conquest_special_bloodline
+		character_event = { id = traditional_claims.201 }
+	}
+}
+#Establish Capital- Free Cities
+narrative_event = {
+	id = aegons_landing.90
+	desc = "EVTDESCaegons_landing.90"
+	title = "EVTTITLEaegons_landing.90"
+	picture = GFX_evt_ironthrone
+	
+	hide_from = yes
+	
+	only_independent = yes
+	has_global_flag = aegons_conquest
+	
+	trigger = {	
+		has_landed_title = e_new_valyria
+		has_global_flag = aegons_conquest_essos
+		NOT = {
+			any_war = {
+				AND = {
+					attacker = { character = ROOT }
+					using_cb = dragon_conquest
+					defender = { tier = KING }
+				}	
+			}
+		}
+		OR = {
+			has_character_flag = conquest_force_ending
+			NOT = {
+				any_independent_ruler = {
+					NOT = { primary_title = {  is_variable_equal = { which = "de_facto_empire" value = 11 } } }
+					OR = {
+						has_landed_title = k_pentos
+						has_landed_title = k_braavos
+						has_landed_title = k_myr
+						has_landed_title = k_tyrosh
+						has_landed_title = k_lys
+						AND = {
+							has_landed_title = k_qohor
+							OR = {
+								k_pentos = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+								k_lorath = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+								k_volantis = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+								k_norvos = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+							}	
+						}
+						AND = {
+							has_landed_title = k_norvos
+							OR = {
+								k_pentos = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+								k_lorath = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+								k_qohor = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+								k_volantis = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+							}	
+						}	
+						AND = {
+							has_landed_title = k_lorath
+							OR = {
+								k_norvos = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+								k_braavos= {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+							} 
+						}
+						AND = {
+							has_landed_title = k_volantis
+							OR = {
+								k_pentos = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+								k_myr = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+								k_norvos = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+							}	
+						}					
+					}
+					OR = {
+						NOT = { has_character_flag = defended_conquest }
+						had_character_flag = { flag = defended_conquest days = 3650 }
+					}
+				}
+			}
+		}	
+	}
+	
+	immediate = { 
+		clr_global_flag = aegons_conquest
+		clr_global_flag = aegons_conquest_essos	
+		clr_character_flag = conquest_force_ending
+		clr_character_flag = pentos
+		clr_character_flag = lorath
+		clr_character_flag = volantis
+		clr_character_flag = norvos
+		clr_character_flag = braavos
+		clr_character_flag = qohor
+		clr_character_flag = myr
+		clr_character_flag = tyrosh
+		clr_character_flag = lys
+		random = {
+			chance = 25
+			give_nickname = nick_the_restorer
+		}
+		character_event = { id = mega_wars.8 } #mega war ending event
+		character_event = { id = aegons_landing.9000 days = 5 }
+
+		#check for bloodline
+		primary_title = { save_event_target_as = bloodline_title }
+		set_character_flag = conquest_special_bloodline
+		character_event = { id = traditional_claims.201 days = 7 } #after freehold choice
+
+		if = {
+			limit = { k_volantis = {  is_variable_equal = { which = "de_facto_empire" value = 11 } } }		
+			k_volantis = { holder_scope = { set_defacto_liege = ROOT } }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAaegons_landing.90" #Pentos
+		trigger = {
+			c_pentos = {
+				holder_scope = {
+					OR = {
+						character = ROOT
+						any_liege = { character = ROOT }
+						AND = {
+							primary_title = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+							NOT = { war_with = ROOT }
+							NOT = { any_liege = { war_with = ROOT } }
+						}
+					}
+				}
+			}
+		}
+		ai_chance = { factor = 25 }
+		prestige = 300
+		treasury = -300 	
+		c_pentos = { 
+			hidden_tooltip = { 
+				holder_scope = { 
+					b_sunrisegate = { gain_title = PREV } 
+					add_trait = assign_mission_target 
+					if = {
+						limit = { has_landed_title = d_pentos }
+						set_character_flag = has_duchy
+					}
+				}	
+			}
+			b_sunrisegate = {
+				hidden_tooltip = {
+					province_capital = yes
+					add_building = ca_asoiaf_essos_basevalue_5
+				}
+				add_building = ca_asoiaf_essos_basevalue_6
+				set_name = b_red_keep_A
+			}
+		}
+		k_pentos = { 
+			usurp_title = { target = ROOT type = invasion }
+			hidden_tooltip = { 
+				copy_title_laws = e_new_valyria 
+				succession = primogeniture
+			}
+		}
+		c_pentos = { usurp_title = { target = ROOT type = invasion } }
+		hidden_tooltip = {
+			b_sunrisegate = { 			
+				ROOT = { capital = PREV }	
+			}	
+			b_pentos = {
+				assign_mission_target = {
+					limit = {
+						is_alive = yes
+						has_claim = PREV
+					}
+					b_pentos = { gain_title = PREV }
+					if = {
+						limit = { has_character_flag = has_duchy }
+						d_pentos = { gain_title = PREV }
+						clr_character_flag = has_duchy
+					}
+					set_defacto_liege = ROOT
+					if = {
+						limit = { tier = DUKE }
+						any_vassal = { 
+							limit = {
+								tier = BARON
+								is_patrician = yes						
+							}
+							set_character_flag = kill_new_patrician 
+						}
+						ROOT = {
+							any_vassal = {
+								limit = {
+									tier = BARON
+									is_patrician = yes
+								}
+								set_defacto_liege = PREVPREV
+							}
+						}
+						any_vassal = {
+							limit = { has_character_flag = kill_new_patrician }
+							death = yes
+						}
+						any_vassal = {
+							limit = {
+								is_patrician = no
+								tier = COUNT
+							}
+							set_defacto_liege = ROOT
+						}
+					}	
+					remove_trait = assign_mission_target		
+				}
+			}	
+			if = {
+				limit = { ai = no }
+				chronicle = {
+					entry = CHRONICLE_AEGONS_CONQUEST_CAPITAL_PENTOS
+					picture = GFX_evt_ironthrone
+				}	
+			}
+			e_rebels = {
+				persistent_event_target:chronicle_player = {
+					if = {
+						limit = { 
+							NOT = { character = ROOT }
+							OR = {		
+								dynasty = ROOT
+								is_liege_or_above = ROOT
+								capital_scope = { region = world_free_cities }
+							}
+						}
+						chronicle = {
+							entry = CHRONICLE_AEGONS_CONQUEST_CAPITAL_PENTOS
+							portrait = [Root.GetID]
+						}	
+					}
+				}
+			}	
+		}			
+	}	
+	
+	option = {
+		name = "EVTOPTBaegons_landing.9" #Dragonstone is more comfortable
+		ai_chance = { factor = 25 }
+		treasury = -150
+		b_stone_drum = {
+			add_building = ca_asoiaf_crown_basevalue_5
+			ROOT = { capital = PREV }
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_AEGONS_CONQUEST_CAPITAL_DRAGONSTONE_ESSOS
+				picture = GFX_evt_ironthrone
+			}	
+		}
+		e_rebels = {
+			persistent_event_target:chronicle_player = {
+				if = {
+					limit = { 
+						NOT = { character = ROOT }
+						OR = {		
+							dynasty = ROOT
+							is_liege_or_above = ROOT
+							capital_scope = { region = world_free_cities }
+						}
+					}
+					chronicle = {
+						entry = CHRONICLE_AEGONS_CONQUEST_CAPITAL_DRAGONSTONE_ESSOS
+						portrait = [Root.GetID]
+					}	
+				}
+			}
+		}	
+	}	
+	
+	option = {
+		name = "EVTOPTCaegons_landing.90" #Volantis
+		trigger = {
+			c_oldvolantis = {
+				holder_scope = {
+					OR = {
+						character = ROOT
+						any_liege = { character = ROOT }
+						AND = {
+							primary_title = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+							NOT = { war_with = ROOT }
+							NOT = { any_liege = { war_with = ROOT } }
+						}
+					}
+				}
+			}
+		}
+		ai_chance = { factor = 25 }
+		prestige = 300
+		treasury = -500
+		c_oldvolantis = { 
+			# location = { 
+				# build_holding = {
+				   # title = b_dragon_hill
+				   # type = castle
+				   # holder = ROOT
+				# }	
+			# }
+			hidden_tooltip = { 
+				holder_scope = { 
+					b_blood_palace = { gain_title = PREV } 
+					add_trait = assign_mission_target 
+					if = {
+						limit = { has_landed_title = d_volantis }
+						set_character_flag = has_duchy
+					}
+				}	
+			}
+			b_blood_palace = {
+				hidden_tooltip = {
+					province_capital = yes
+					add_building = ca_asoiaf_essos_basevalue_1
+					add_building = ca_asoiaf_essos_basevalue_2
+					add_building = ca_asoiaf_essos_basevalue_3
+				}
+				add_building = ca_asoiaf_essos_basevalue_4
+				set_name = b_red_keep_A
+			}
+		}
+		k_volantis = {
+			hidden_tooltip = { #clear junior triarch immunity
+				holder_scope = {
+					any_realm_character = {
+						limit = { has_character_flag = triarch }
+						diplomatic_immunity = no
+					}
+				}	
+			}
+			usurp_title = { target = ROOT type = invasion }
+			hidden_tooltip = { 
+				copy_title_laws = e_new_valyria 
+				succession = primogeniture
+			}
+		}
+		c_oldvolantis = { usurp_title = { target = ROOT type = invasion } }
+		hidden_tooltip = {
+			b_blood_palace = {			
+				ROOT = { capital = PREV }	
+			}	
+			b_oldvolantis = {
+				assign_mission_target = {
+					limit = {
+						is_alive = yes
+						has_claim = PREV
+					}
+					b_oldvolantis = { gain_title = PREV }
+					if = {
+						limit = { has_character_flag = has_duchy }
+						d_volantis = { gain_title = PREV }
+						clr_character_flag = has_duchy
+					}
+					set_defacto_liege = ROOT
+					if = {
+						limit = { tier = DUKE }
+						any_vassal = { 
+							limit = {
+								tier = BARON
+								is_patrician = yes						
+							}
+							set_character_flag = kill_new_patrician 
+						}
+						ROOT = {
+							any_vassal = {
+								limit = {
+									tier = BARON
+									is_patrician = yes
+								}
+								set_defacto_liege = PREVPREV
+							}
+						}
+						any_vassal = {
+							limit = { has_character_flag = kill_new_patrician }
+							death = yes
+						}
+						any_vassal = {
+							limit = {
+								is_patrician = no
+								tier = COUNT
+							}
+							set_defacto_liege = ROOT
+						}
+					}	
+					remove_trait = assign_mission_target		
+				}
+			}	
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_AEGONS_CONQUEST_CAPITAL_VOLANTIS
+				picture = GFX_evt_ironthrone
+			}	
+		}
+		e_rebels = {
+			persistent_event_target:chronicle_player = {
+				if = {
+					limit = { 
+						NOT = { character = ROOT }
+						OR = {		
+							dynasty = ROOT
+							is_liege_or_above = ROOT
+							capital_scope = { region = world_free_cities }
+						}
+					}
+					chronicle = {
+						entry = CHRONICLE_AEGONS_CONQUEST_CAPITAL_VOLANTIS
+						portrait = [Root.GetID]
+					}	
+				}
+			}	
+		}
+	}
+	
+	option = {
+		name = "EVTOPTDaegons_landing.90" #Myr
+		trigger = {
+			c_myr = {
+				holder_scope = {
+					OR = {
+						character = ROOT
+						any_liege = { character = ROOT }
+						AND = {
+							primary_title = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+							NOT = { war_with = ROOT }
+							NOT = { any_liege = { war_with = ROOT } }
+						}
+					}
+				}
+			}
+		}
+		ai_chance = { factor = 25 }
+		prestige = 300
+		treasury = -500
+		c_myr = { 
+			# location = { 
+				# build_holding = {
+				   # title = b_vyrelos
+				   # type = castle
+				   # holder = ROOT
+				# }	
+			# }
+			hidden_tooltip = { 
+				holder_scope = { 
+					b_vyrelos = { gain_title = PREV } 
+					add_trait = assign_mission_target 
+					if = {
+						limit = { has_landed_title = d_myr }
+						set_character_flag = has_duchy
+					}
+				}	
+			}
+			b_vyrelos = {
+				hidden_tooltip = {
+					province_capital = yes
+					add_building = ca_asoiaf_essos_basevalue_1
+					add_building = ca_asoiaf_essos_basevalue_2
+					add_building = ca_asoiaf_essos_basevalue_3
+				}
+				add_building = ca_asoiaf_essos_basevalue_4
+				set_name = b_red_keep_A 
+			}
+		}
+		k_myr = { 
+			usurp_title = { target = ROOT type = invasion }
+			hidden_tooltip = { 
+				copy_title_laws = e_new_valyria 
+				succession = primogeniture
+			}
+		}
+		c_myr = { usurp_title = { target = ROOT type = invasion } }
+		hidden_tooltip = {
+			b_vyrelos = { 			
+				ROOT = { capital = PREV }	
+			}	
+			b_myr = {
+				assign_mission_target = {
+					limit = {
+						is_alive = yes
+						has_claim = PREV
+					}
+					b_myr = { gain_title = PREV }
+					if = {
+						limit = { has_character_flag = has_duchy }
+						d_myr = { gain_title = PREV }
+						clr_character_flag = has_duchy
+					}
+					set_defacto_liege = ROOT
+					if = {
+						limit = { tier = DUKE }
+						any_vassal = { 
+							limit = {
+								tier = BARON
+								is_patrician = yes						
+							}
+							set_character_flag = kill_new_patrician 
+						}
+						ROOT = {
+							any_vassal = {
+								limit = {
+									tier = BARON
+									is_patrician = yes
+								}
+								set_defacto_liege = PREVPREV
+							}
+						}
+						any_vassal = {
+							limit = { has_character_flag = kill_new_patrician }
+							death = yes
+						}
+						any_vassal = {
+							limit = {
+								is_patrician = no
+								tier = COUNT
+							}
+							set_defacto_liege = ROOT
+						}
+					}	
+					remove_trait = assign_mission_target		
+				}
+			}	
+		}	
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_AEGONS_CONQUEST_CAPITAL_MYR
+				picture = GFX_evt_ironthrone
+			}	
+		}
+		e_rebels = {
+			persistent_event_target:chronicle_player = {
+				if = {
+					limit = { 
+						NOT = { character = ROOT }
+						OR = {		
+							dynasty = ROOT
+							is_liege_or_above = ROOT
+							capital_scope = { region = world_free_cities }
+						}
+					}
+					chronicle = {
+						entry = CHRONICLE_AEGONS_CONQUEST_CAPITAL_MYR
+						portrait = [Root.GetID]
+					}	
+				}
+			}	
+		}	
+	}
+}	
+#Make New Valyria a Freehold?
+character_event = {
+	id = aegons_landing.9000
+	desc = "EVTDESCaegons_landing.9000"
+	picture = GFX_evt_ironthrone
+	
+	is_triggered_only = yes
+	
+	trigger = { 
+		capital_scope = { port = yes } 
+		OR = {
+			ai = yes
+			has_dlc = "The Republic"
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAaegons_landing.9000" #Yes
+		ai_chance = { factor = 20 }
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_AEGONS_CONQUEST_FREEHOLD
+			}	
+		}
+		e_rebels = {
+			persistent_event_target:chronicle_player = {
+				if = {
+					limit = { 
+						NOT = { character = ROOT }
+						OR = {		
+							dynasty = ROOT
+							is_liege_or_above = ROOT
+							capital_scope = { region = world_free_cities }
+						}
+					}
+					chronicle = {
+						entry = CHRONICLE_AEGONS_CONQUEST_FREEHOLD
+						portrait = [Root.GetID]
+					}	
+				}
+			}
+		}	
+		set_character_flag = revived_valyrian_freehold
+		set_global_flag = revived_valyrian_freehold
+		custom_tooltip = {
+			text = TOOLTIPaegons_landing.9000
+			hidden_tooltip = {
+				any_realm_lord = {
+					limit = {
+						OR = {
+							is_patrician = yes
+							higher_tier_than = BARON
+							capital_scope = { province_id = 419 }
+							capital_scope = { province_id = 221 }
+						}	
+						culture_group = valyrian
+					}
+					opinion = {
+						who = ROOT
+						modifier = opinion_revived_freehold
+					}
+				}
+				#remove family palaces of free cities
+				any_vassal = {
+					limit = { 
+						is_merchant_republic = yes 
+						NOT = { has_landed_title = d_volantis }
+					}
+					character_event = { id = aegons_landing.9001 }
+				}
+				any_independent_ruler = {
+					limit = { 
+						is_merchant_republic = yes 
+						primary_title = {  is_variable_equal = { which = "de_facto_empire" value = 11 } }
+						NOT = { has_landed_title = d_volantis }
+					}
+					character_event = { id = aegons_landing.9001 }
+				}			
+				if = {
+					limit = { capital_scope = { county = { title = c_pentos } } }
+					b_pentos = {
+						usurp_title = ROOT
+						province_capital = yes
+						ROOT = { capital = PREV }
+					}
+				}
+				if = {
+					limit = { capital_scope = { county = { title = c_myr } } }
+					b_myr = {
+						usurp_title = ROOT
+						province_capital = yes
+						ROOT = { capital = PREV }
+					}
+				}
+				if = {
+					limit = { capital_scope = { county = { title = c_oldvolantis } } }
+					b_oldvolantis = {
+						usurp_title = ROOT
+						province_capital = yes
+						ROOT = { capital = PREV }
+					}
+				}
+				if = {
+					limit = { capital_scope = { county = { title = c_dragonstone } } }
+					b_derlyn = {
+						usurp_title = ROOT
+						province_capital = yes
+						ROOT = { capital = PREV }
+					}
+				}			
+				# random_realm_lord = {
+					# limit = {
+						# any_demesne_title = {
+							# tier = BARON
+							# holding_type = city
+							# location = {
+								# is_capital = yes
+								# owner = { character = ROOT }
+							# }
+						# }
+					# }
+					# random_demesne_title = {
+						# limit = {
+							# tier = BARON
+							# holding_type = city
+							# location = {
+								# is_capital = yes
+								# owner = { character = ROOT }
+							# }
+						# }
+						# usurp_title = ROOT
+						# province_capital = yes
+						# ROOT = { capital = PREV }
+					# }
+				# }
+				#Create new patricians
+				create_family_palace = yes	
+				primary_title = {
+					add_law = succ_patrician_elective
+				}				
+				#Velaryon
+				random_realm_lord = {
+					limit = { dynasty = 52 }
+					set_defacto_liege = ROOT
+					create_family_palace = yes					
+					set_character_flag = new_patrician
+					ROOT = { set_character_flag = velaryon_found }
+				}
+				if = {
+					limit = { NOT = { has_character_flag = velaryon_found } }
+					random_realm_character = {
+						limit = { dynasty = 52 is_female = no }
+						set_defacto_liege = ROOT
+						create_family_palace = yes
+						set_character_flag = new_patrician
+						ROOT = { set_character_flag = velaryon_found }
+						opinion = {
+							who = ROOT
+							modifier = opinion_revived_freehold
+						}
+					}
+				}
+				
+				#Qoherys
+				random_realm_character = {
+					limit = { character = 359 }
+					set_defacto_liege = ROOT
+					create_family_palace = yes
+					set_character_flag = new_patrician
+					ROOT = { set_character_flag = qoherys_found }
+					opinion = {
+						who = ROOT
+						modifier = opinion_revived_freehold
+					}
+				}
+				if = {
+					limit = { NOT = { has_character_flag = qoherys_found } }
+					random_realm_character = {
+						limit = { dynasty = 359 is_female = no }
+						set_defacto_liege = ROOT
+						create_family_palace = yes
+						set_character_flag = new_patrician
+						ROOT = { set_character_flag = qoherys_found }
+						opinion = {
+							who = ROOT
+							modifier = opinion_revived_freehold
+						}
+					}
+				}
+				
+				#Celtigar
+				random_realm_lord = {
+					limit = { dynasty = 50 }
+					set_defacto_liege = ROOT
+					create_family_palace = yes
+					set_character_flag = new_patrician
+					ROOT = { set_character_flag = celtigar_found }
+				}
+				if = {
+					limit = { NOT = { has_character_flag = celtigar_found } }
+					random_realm_character = {
+						limit = { dynasty = 50 is_female = no }
+						set_defacto_liege = ROOT
+						create_family_palace = yes
+						set_character_flag = new_patrician
+						ROOT = { set_character_flag = celtigar_found }
+						opinion = {
+							who = ROOT
+							modifier = opinion_revived_freehold
+						}
+					}
+				}
+				
+				#Baratheon
+				random_realm_lord = {
+					limit = { dynasty = 498 }
+					set_defacto_liege = ROOT
+					create_family_palace = yes
+					set_character_flag = new_patrician
+					if = {
+						limit = { trait = legit_bastard }
+						remove_trait = bastard
+						add_trait = legit_bastard
+					}
+					ROOT = { set_character_flag = baratheon_found }
+				}
+				if = {
+					limit = { NOT = { has_character_flag = baratheon_found } }
+					random_realm_character = {
+						limit = { dynasty = 498 is_female = no }
+						set_defacto_liege = ROOT
+						create_family_palace = yes
+						set_character_flag = new_patrician
+						if = {
+							limit = { trait = legit_bastard }
+							remove_trait = bastard
+							add_trait = legit_bastard
+						}
+						ROOT = { set_character_flag = baratheon_found }
+						opinion = {
+							who = ROOT
+							modifier = opinion_revived_freehold
+						}
+					}
+				}
+				
+				# #Sunglass, if one of above 4 not found
+				# if = {
+					# limit = {
+						# NOT = {
+							# any_vassal = {
+								# count = 4
+								# has_character_flag = new_patrician
+							# }
+						# }
+					# }
+					# random_realm_lord = {
+						# limit = { dynasty = 51 }
+						# set_defacto_liege = ROOT
+						# create_family_palace = yes
+						# set_character_flag = new_patrician
+						# ROOT = { set_character_flag = sunglass_found }
+					# }
+					# if = {
+						# limit = { NOT = { has_character_flag = sunglass_found } }
+						# random_realm_character = {
+							# limit = { dynasty = 51 is_female = no }
+							# set_defacto_liege = ROOT
+							# create_family_palace = yes
+							# set_character_flag = new_patrician
+							# opinion = {
+								# who = ROOT
+								# modifier = opinion_revived_freehold
+							# }
+						# }
+					# }
+				# }	
+				#Eastern Valyrians
+				if = {
+					limit = {
+						NOT = {
+							any_vassal = {
+								count = 4
+								has_character_flag = new_patrician
+							}
+						}
+						k_volantis = {  is_variable_equal = { which = "de_facto_empire" value = 11 } } #volantis was conquered
+					}	
+					any_realm_character = {
+						limit = { has_character_flag = triarch }
+						diplomatic_immunity = no
+					}
+					if = {
+						limit = { has_landed_title = k_volantis }
+						d_volantis = { 
+							holder_scope = {
+								set_defacto_liege = ROOT
+								if = {
+									limit = { is_patrician = no }
+									create_family_palace = yes
+								}
+								set_character_flag = new_patrician
+							}
+							gain_title = ROOT 
+						}
+					}	
+					# any_realm_lord = {
+						# limit = { 
+							# culture = eastern_valyrian 
+							# NOT = { dynasty = 0 } 
+							# NOT = { tier = BARON }
+							# NOT = { has_character_flag = new_patrician }
+							# liege = {
+								# OR = {
+									# character = ROOT
+									# NOT = { has_landed_title = k_volantis }
+								# }	
+							# }
+							# NOT = { has_landed_title = d_volantis }
+						# }
+						# set_defacto_liege = ROOT
+						# if = {
+							# limit = { is_patrician = no }
+							# create_family_palace = yes
+						# }
+						# set_character_flag = new_patrician
+					# }
+					# d_volantis = {
+						# holder_scope = {
+							# if = {
+								# limit = { 
+									# culture_group = valyrian 
+									# NOT = { character = ROOT }
+									# NOT = { has_character_flag = new_patrician }
+								# }
+								# set_defacto_liege = ROOT
+								# if = {
+									# limit = { is_patrician = no }
+									# create_family_palace = yes
+								# }	
+								# set_character_flag = new_patrician
+							# }
+						# }	
+					# }			
+					if = {
+						limit = {
+							NOT = {
+								any_vassal = {
+									count = 4
+									has_character_flag = new_patrician
+								}
+							}
+						}
+						random_realm_lord = {
+							limit = { 
+								culture = eastern_valyrian 
+								NOT = { dynasty = 0 } 
+								NOT = { tier = BARON }
+								NOT = { has_character_flag = new_patrician }
+								liege = {
+									OR = {
+										character = ROOT
+										NOT = { has_landed_title = k_volantis }
+									}	
+								}
+								NOT = { has_landed_title = d_volantis }
+							}
+							set_defacto_liege = ROOT
+							if = {
+								limit = { is_patrician = no }
+								create_family_palace = yes
+							}
+							set_character_flag = new_patrician
+						}		
+					}
+					if = {
+						limit = {
+							NOT = {
+								any_vassal = {
+									count = 4
+									has_character_flag = new_patrician
+								}
+							}
+						}
+						random_realm_lord = {
+							limit = { 
+								culture = eastern_valyrian 
+								NOT = { dynasty = 0 } 
+								NOT = { tier = BARON }
+								NOT = { has_character_flag = new_patrician }
+								liege = {
+									OR = {
+										character = ROOT
+										NOT = { has_landed_title = k_volantis }
+									}	
+								}
+								NOT = { has_landed_title = d_volantis }
+							}
+							set_defacto_liege = ROOT
+							if = {
+								limit = { is_patrician = no }
+								create_family_palace = yes
+							}
+							set_character_flag = new_patrician
+						}			
+					}
+					if = {
+						limit = {
+							NOT = {
+								any_vassal = {
+									count = 4
+									has_character_flag = new_patrician
+								}
+							}
+						}
+						random_realm_lord = {
+							limit = { 
+								culture = eastern_valyrian 
+								NOT = { dynasty = 0 } 
+								NOT = { tier = BARON }
+								NOT = { has_character_flag = new_patrician }
+								liege = {
+									OR = {
+										character = ROOT
+										NOT = { has_landed_title = k_volantis }
+									}	
+								}
+								NOT = { has_landed_title = d_volantis }
+							}
+							set_defacto_liege = ROOT
+							if = {
+								limit = { is_patrician = no }
+								create_family_palace = yes
+							}
+							set_character_flag = new_patrician
+						}			
+					}
+					if = {
+						limit = {
+							NOT = {
+								any_vassal = {
+									count = 4
+									has_character_flag = new_patrician
+								}
+							}
+						}
+						random_realm_lord = {
+							limit = { 
+								culture = eastern_valyrian 
+								NOT = { dynasty = 0 } 
+								NOT = { tier = BARON }
+								NOT = { has_character_flag = new_patrician }
+								liege = {
+									OR = {
+										character = ROOT
+										NOT = { has_landed_title = k_volantis }
+									}	
+								}
+								NOT = { has_landed_title = d_volantis }
+							}
+							set_defacto_liege = ROOT
+							if = {
+								limit = { is_patrician = no }
+								create_family_palace = yes
+							}
+							set_character_flag = new_patrician
+						}			
+					}
+				}	
+				#Remove non-selected patricians
+				any_realm_lord = { 
+					limit = {
+						OR = {
+							is_patrician = yes
+							AND = {
+								culture = eastern_valyrian 
+								is_republic = yes
+								NOT = { dynasty = 0 } 
+								NOT = { tier = BARON }
+							}
+						}	
+						NOT = { has_character_flag = new_patrician }
+					}	
+					family_palace = { destroy_settlement = THIS }
+					if = {
+						limit = { higher_tier_than = COUNT }
+						random_list = {
+							50 = {
+								trigger = { 
+									ai = yes 
+									NOT = { any_vassal = { ai = no } }
+								}
+								set_government_type = republic_government
+								primary_title = { succession = open_elective }
+							}
+							50 = {
+								modifier = {
+									factor = 0.01
+									NOT = { higher_tier_than = DUKE }
+								}
+								primary_title = { 
+									add_law = republic_law_oligarchy
+									if = {
+										limit = { has_dlc = "Zeus" }
+										add_law = law_voting_power_1
+										add_law = diplomacy_voting_power_1
+										add_law = titles_voting_power_1
+										add_law = justice_voting_power_1
+									}
+									add_law_w_cooldown = noble_oligarchy_elective
+								}
+								set_government_type = noble_oligarchy				
+							}
+						}	
+					}
+					if = {
+						limit = { NOT = { higher_tier_than = COUNT } }
+						if = {
+							limit = { NOT = { capital_holding = { holding_type = castle } } }
+							random_demesne_title = {
+								limit = { 
+									tier = BARON
+									holding_type = castle
+									location = { is_capital = yes }
+								}
+								province_capital = yes
+							}
+							if = {
+								limit = { NOT = { capital_holding = { holding_type = castle } } }
+								random_vassal = {
+									limit = { 
+										tier = BARON
+										capital_holding = {
+											holding_type = castle
+											location = { is_capital = yes }
+										}	
+									}
+									capital_holding = { 
+										gain_title = PREVPREV
+										province_capital = yes
+									}	
+								}
+							}
+						}
+						set_government_type = feudal_government
+						primary_title = { succession = seniority }					
+					}					
+				}
+				clr_character_flag = baratheon_found
+				clr_character_flag = celtigar_found
+				clr_character_flag = qoherys_found
+				clr_character_flag = velaryon_found
+				clr_character_flag = sunglass_found
+				any_vassal = { clr_character_flag = new_patrician }
+				set_government_type = merchant_republic_government
+				primary_title = {
+					add_law = republic_triarch_for_life
+				}	
+			}
+		}
+		tooltip = {
+			any_realm_lord = {
+				limit = {
+					OR = {
+						is_patrician = yes
+						higher_tier_than = BARON
+						capital_scope = { province_id = 419 }
+						capital_scope = { province_id = 221 }
+					}	
+					culture_group = valyrian
+				}
+				opinion = {
+					who = ROOT
+					modifier = opinion_revived_freehold
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTBaegons_landing.90" #No
+		ai_chance = { factor = 80 }
+	}	
+}	
+character_event = { #remove family palaces of free cities
+	id = aegons_landing.9001
+	
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {#temporarily make them independent and a republic
+		set_defacto_liege = THIS
+		character_event = { id = aegons_landing.9002 days = 3 }
+	}
+	option = {
+		name = OK
+	}
+}	
+character_event = { #re-vassalise free cities
+	id = aegons_landing.9002
+	
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		any_vassal = {
+			limit = { is_patrician = yes }
+			family_palace = { destroy_settlement = THIS }
+			if = {
+				limit = { NOT = { capital_holding = { holding_type = castle } } }
+				random_demesne_title = {
+					limit = { 
+						tier = BARON
+						holding_type = castle
+						location = { is_capital = yes }
+					}
+					province_capital = yes
+				}
+				if = {
+					limit = { NOT = { capital_holding = { holding_type = castle } } }
+					random_vassal = {
+						limit = { 
+							tier = BARON
+							capital_holding = {
+								holding_type = castle
+								location = { is_capital = yes }
+							}	
+						}
+						capital_holding = { 
+							gain_title = PREVPREV
+							province_capital = yes
+						}	
+					}
+				}
+			}	
+			set_government_type = feudal_government
+			primary_title = { succession = seniority }
+		}
+		family_palace = { destroy_settlement = THIS }	
+		random_list = {
+			50 = {
+				trigger = { 
+					ai = yes 
+					NOT = { any_vassal = { ai = no } }
+				}
+				set_government_type = republic_government
+				primary_title = { succession = open_elective }
+			}
+			50 = {
+				modifier = {
+					factor = 0.01
+					NOT = { higher_tier_than = DUKE }
+				}
+				primary_title = { 
+					add_law = republic_law_oligarchy
+					if = {
+						limit = { has_dlc = "Zeus" }
+						add_law = law_voting_power_1
+						add_law = diplomacy_voting_power_1
+						add_law = titles_voting_power_1
+						add_law = justice_voting_power_1
+					}
+					add_law_w_cooldown = noble_oligarchy_elective
+				}
+				set_government_type = noble_oligarchy				
+			}
+		}	
+		set_defacto_liege = FROMFROM
+		FROMFROM = {
+			any_claim = {
+				limit = { holder_scope = { character = ROOT } }
+				remove_claim = PREV
+			}
+		}	
+	}
+	
+	option = {
+		name = OK
+	}
+}	
+#King's landing red Keep expansion
+character_event = {
+	id = aegons_landing.10
+	desc = "EVTDESCaegons_landing.10"
+	picture = GFX_KINGS_LANDING
+	
+	only_independent = yes
+	
+	trigger = {
+		has_landed_title = e_iron_throne
+		has_landed_title = c_kings_landing
+		OR = {
+			has_global_flag = KL_red_keep_1
+			has_global_flag = KL_red_keep_2
+			has_global_flag = KL_red_keep_3
+			has_global_flag = KL_red_keep_4
+		}	
+	}
+	
+	mean_time_to_happen = {
+		years = 15
+		
+		modifier = {
+			factor = 0.15
+			OR = {
+				had_global_flag = { flag = KL_red_keep_1 days = 10000 }
+				had_global_flag = { flag = KL_red_keep_2 days = 10000 }
+				had_global_flag = { flag = KL_red_keep_3 days = 10000 }
+				had_global_flag = { flag = KL_red_keep_4 days = 10000 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				had_global_flag = { flag = KL_red_keep_1 days = 6500 }
+				had_global_flag = { flag = KL_red_keep_2 days = 6500 }
+				had_global_flag = { flag = KL_red_keep_3 days = 6500 }
+				had_global_flag = { flag = KL_red_keep_4 days = 6500 }
+			}
+		}
+		modifier = {
+			factor = 0.75
+			OR = {
+				had_global_flag = { flag = KL_red_keep_1 days = 5475 }
+				had_global_flag = { flag = KL_red_keep_2 days = 5475 }
+				had_global_flag = { flag = KL_red_keep_3 days = 5475 }
+				had_global_flag = { flag = KL_red_keep_4 days = 5475 }
+			}
+		}
+		modifier = {
+			factor = 0.8
+			trait = dragon_rider
+		}	
+		modifier = {
+			factor = 1.1
+			NOT = { stewardship = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { stewardship = 7 }
+		}
+		modifier = {
+			factor = 0.9
+			stewardship = 12
+		}
+		modifier = {
+			factor = 0.9
+			stewardship = 15
+		}
+		modifier = {
+			factor = 0.9
+			stewardship = 18
+		}
+		modifier = {
+			factor = 0.9
+			stewardship = 21
+		}
+		modifier = {
+			factor = 1.1
+			job_treasurer = { NOT = { stewardship = 9 } }
+		}
+		modifier = {
+			factor = 1.1
+			job_treasurer = { NOT = { stewardship = 12 } }
+		}
+		modifier = {
+			factor = 0.9
+			job_treasurer = { stewardship = 16 }
+		}
+		modifier = {
+			factor = 0.9
+			job_treasurer = { stewardship = 18 }
+		}
+		modifier = {
+			factor = 0.9
+			job_treasurer = { stewardship = 20 }
+		}
+		modifier = {
+			factor = 0.9
+			job_treasurer = { stewardship = 22 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAaegons_landing.10" #Build
+		job_treasurer = { 
+			prestige = 30
+			hidden_tooltip = {
+				change_variable = { which = "services_rendered" value = 1 } 
+				reverse_opinion = {
+					modifier = opinion_service_rendered
+					who = ROOT
+					years = 3
+				}
+			}	
+		}
+		if = {
+			limit = {
+				has_global_flag = KL_red_keep_1
+			}	
+			b_red_keep = { add_building = ca_asoiaf_crown_basevalue_3 }
+			b_white_sword_tower = { add_building = ca_asoiaf_crown_basevalue_1 }
+			clr_global_flag = KL_red_keep_1
+			set_global_flag = KL_red_keep_1_done
+		}	
+		if = {
+			limit = {
+				has_global_flag = KL_red_keep_2
+			}	
+			b_red_keep = { add_building = ca_asoiaf_crown_basevalue_4 }
+			b_white_sword_tower = { add_building = ca_asoiaf_crown_basevalue_2 }
+			clr_global_flag = KL_red_keep_2
+			set_global_flag = KL_red_keep_2_done
+		}
+		if = {
+			limit = {
+				has_global_flag = KL_red_keep_3
+			}	
+			b_red_keep = { add_building = ca_asoiaf_crown_basevalue_5 }
+			clr_global_flag = KL_red_keep_3
+			set_global_flag = KL_red_keep_3_done
+		}
+		if = {
+			limit = {
+				has_global_flag = KL_red_keep_4
+			}	
+			b_red_keep = { 
+				add_building = ca_asoiaf_crown_basevalue_6 
+				set_name = "" 
+			}
+			clr_global_flag = KL_red_keep_4
+			if = {
+				limit = { ai = no }
+				chronicle = {
+					entry = CHRONICLE_RED_KEEP_COMPLETE
+					picture = GFX_KINGS_LANDING
+				}	
+			}
+		}
+	}	
+}	
+#King's landing fortification expansion
+character_event = {
+	id = aegons_landing.11
+	desc = "EVTDESCaegons_landing.11"
+	picture = GFX_KINGS_LANDING
+	
+	only_independent = yes
+	
+	trigger = {
+		has_landed_title = e_iron_throne
+		has_landed_title = c_kings_landing
+		OR = {
+			has_global_flag = KL_fortifications_1
+			has_global_flag = KL_fortifications_2
+			has_global_flag = KL_fortifications_3
+			has_global_flag = KL_fortifications_4
+		}	
+	}
+	
+	mean_time_to_happen = {
+		years = 15
+		
+		modifier = {
+			factor = 0.15
+			OR = {
+				had_global_flag = { flag = KL_fortifications_1 days = 10000 }
+				had_global_flag = { flag = KL_fortifications_2 days = 10000 }
+				had_global_flag = { flag = KL_fortifications_3 days = 10000 }
+				had_global_flag = { flag = KL_fortifications_4 days = 10000 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				had_global_flag = { flag = KL_fortifications_1 days = 6500 }
+				had_global_flag = { flag = KL_fortifications_2 days = 6500 }
+				had_global_flag = { flag = KL_fortifications_3 days = 6500 }
+				had_global_flag = { flag = KL_fortifications_4 days = 6500 }
+			}
+		}
+		modifier = {
+			factor = 0.75
+			OR = {
+				had_global_flag = { flag = KL_fortifications_1 days = 5475 }
+				had_global_flag = { flag = KL_fortifications_2 days = 5475 }
+				had_global_flag = { flag = KL_fortifications_3 days = 5475 }
+				had_global_flag = { flag = KL_fortifications_4 days = 5475 }
+			}
+		}
+		modifier = {
+			factor = 0.8
+			trait = dragon_rider
+		}	
+		modifier = {
+			factor = 1.1
+			NOT = { stewardship = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { stewardship = 7 }
+		}
+		modifier = {
+			factor = 0.9
+			stewardship = 12
+		}
+		modifier = {
+			factor = 0.9
+			stewardship = 15
+		}
+		modifier = {
+			factor = 0.9
+			stewardship = 18
+		}
+		modifier = {
+			factor = 0.9
+			stewardship = 21
+		}
+		modifier = {
+			factor = 1.1
+			job_treasurer = { NOT = { stewardship = 9 } }
+		}
+		modifier = {
+			factor = 1.1
+			job_treasurer = { NOT = { stewardship = 12 } }
+		}
+		modifier = {
+			factor = 0.9
+			job_treasurer = { stewardship = 16 }
+		}
+		modifier = {
+			factor = 0.9
+			job_treasurer = { stewardship = 18 }
+		}
+		modifier = {
+			factor = 0.9
+			job_treasurer = { stewardship = 20 }
+		}
+		modifier = {
+			factor = 0.9
+			job_treasurer = { stewardship = 22 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAaegons_landing.10" #Build
+		job_treasurer = { 
+			prestige = 30
+			hidden_tooltip = {
+				change_variable = { which = "services_rendered" value = 1 } 
+				reverse_opinion = {
+					modifier = opinion_service_rendered
+					who = ROOT
+					years = 3
+				}
+			}	
+		}
+		if = {
+			limit = {
+				has_global_flag = KL_fortifications_1
+			}	
+			b_dragon_gate = { add_building = ca_asoiaf_crown_basevalue_1 }
+			b_kings_gate = { add_building = ca_asoiaf_crown_basevalue_1 }
+			b_warriors_sons = { add_building = ct_asoiaf_crown_basevalue_1 }
+			b_kings_landing = { add_building = ct_asoiaf_crown_basevalue_3 }
+			clr_global_flag = KL_fortifications_1
+			set_global_flag = KL_fortifications_1_done
+		}	
+		if = {
+			limit = {
+				has_global_flag = KL_fortifications_2
+			}	
+			b_kings_gate = { add_building = ca_asoiaf_crown_basevalue_2 }
+			b_warriors_sons = { add_building = ct_asoiaf_crown_basevalue_2 }
+			b_kings_landing = { add_building = ct_asoiaf_crown_basevalue_4 }
+			226 = { culture = crownlander }
+			crownlander = { 
+				if = {
+					limit = { check_variable = { which = defunct value = 1 } }
+					set_variable = { which = defunct value = 0 } 
+				}
+			}
+			clr_global_flag = KL_fortifications_2
+			set_global_flag = KL_fortifications_2_done
+		}
+		if = {
+			limit = {
+				has_global_flag = KL_fortifications_3
+			}	
+			b_dragon_gate = { add_building = ca_asoiaf_crown_basevalue_2 }
+			b_warriors_sons = { add_building = ct_asoiaf_crown_basevalue_3 }
+			b_kings_landing = { add_building = ct_asoiaf_crown_basevalue_5 }
+			226 = { 
+				any_neighbor_province = {
+					limit = {
+						OR = {
+							province_id = 211
+							duchy = { title = d_kings_landing }
+						}
+					}
+					culture = crownlander
+				} 
+			}
+			clr_global_flag = KL_fortifications_3
+			set_global_flag = KL_fortifications_3_done
+		}	
+		if = {
+			limit = {
+				has_global_flag = KL_fortifications_4
+			}	
+			b_kings_landing = { 
+				add_building = ct_asoiaf_crown_basevalue_6
+				add_building = ct_gold_cloaks				
+			}
+			clr_global_flag = KL_fortifications_4
+		}
+		if = {
+			limit = { b_duskendale = { has_building = ct_asoiaf_crown_basevalue_5 } }
+			c_duskendale = {
+				holder_scope = { character_event = { id = aegons_landing.1199 tooltip = TOOLTIPaegons_landing.1199 } }
+			}
+		}
+	}	
+}	
+#Duskendale decline
+character_event = {
+	id = aegons_landing.1199
+	desc = "EVTDESCaegons_landing.1199"
+	picture = GFX_KINGS_LANDING
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAaegons_landing.1199"
+		b_duskendale = {
+			if = {
+				limit = { has_building = ct_asoiaf_crown_basevalue_6 }
+				remove_building = ct_asoiaf_crown_basevalue_6
+				break = yes
+			}
+			if = {
+				limit = { NOT = { has_building = ct_asoiaf_crown_basevalue_6 } }
+				b_highley = {
+					if = {
+						limit = { has_building = ct_asoiaf_crown_basevalue_3 }
+						remove_building = ct_asoiaf_crown_basevalue_3
+						break = yes
+					}
+					if = {
+						limit = { NOT = { has_building = ct_asoiaf_crown_basevalue_3 } }
+						if = {
+							limit = { has_building = ct_asoiaf_crown_basevalue_2 }
+							remove_building = ct_asoiaf_crown_basevalue_2
+							hidden_tooltip = { remove_building = ct_asoiaf_crown_basevalue_1 }
+							break = yes
+						}
+						b_duskendale = { remove_building = ct_asoiaf_crown_basevalue_5 }
+						destroy_settlement = THIS						
+					}
+				}				
+			}	
+		}
+	}	
+}	
+#King's landing navy expansion
+character_event = {
+	id = aegons_landing.12
+	desc = "EVTDESCaegons_landing.12"
+	picture = GFX_KINGS_LANDING
+	
+	only_independent = yes
+	
+	trigger = {
+		has_landed_title = e_iron_throne
+		has_landed_title = c_kings_landing
+		OR = {
+			has_global_flag = KL_expand_navy_1
+			has_global_flag = KL_expand_navy_2
+			has_global_flag = KL_expand_navy_3
+		}	
+	}
+	
+	mean_time_to_happen = {
+		years = 15
+		
+		modifier = {
+			factor = 0.15
+			OR = {
+				had_global_flag = { flag = KL_expand_navy_1 days = 10000 }
+				had_global_flag = { flag = KL_expand_navy_2 days = 10000 }
+				had_global_flag = { flag = KL_expand_navy_3 days = 10000 }
+				had_global_flag = { flag = KL_expand_navy_4 days = 10000 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				had_global_flag = { flag = KL_expand_navy_1 days = 6500 }
+				had_global_flag = { flag = KL_expand_navy_2 days = 6500 }
+				had_global_flag = { flag = KL_expand_navy_3 days = 6500 }
+				had_global_flag = { flag = KL_expand_navy_4 days = 6500 }
+			}
+		}
+		modifier = {
+			factor = 0.75
+			OR = {
+				had_global_flag = { flag = KL_expand_navy_1 days = 5475 }
+				had_global_flag = { flag = KL_expand_navy_2 days = 5475 }
+				had_global_flag = { flag = KL_expand_navy_3 days = 5475 }
+				had_global_flag = { flag = KL_expand_navy_4 days = 5475 }
+			}
+		}
+		modifier = {
+			factor = 0.8
+			trait = dragon_rider
+		}	
+		modifier = {
+			factor = 1.1
+			NOT = { stewardship = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { stewardship = 7 }
+		}
+		modifier = {
+			factor = 0.9
+			stewardship = 12
+		}
+		modifier = {
+			factor = 0.9
+			stewardship = 15
+		}
+		modifier = {
+			factor = 0.9
+			stewardship = 18
+		}
+		modifier = {
+			factor = 0.9
+			stewardship = 21
+		}
+		modifier = {
+			factor = 1.1
+			any_courtier_or_vassal = { 
+				OR = {
+					has_minor_title = title_high_admiral
+					has_minor_title = title_high_admiral_B
+				}	
+				NOT = { martial = 6 } 
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_courtier_or_vassal = { 
+				OR = {
+					has_minor_title = title_high_admiral
+					has_minor_title = title_high_admiral_B
+				}
+				NOT = { martial = 9 } 
+			}
+		}
+		modifier = {
+			factor = 0.9
+			any_courtier_or_vassal = { 
+				OR = {
+					has_minor_title = title_high_admiral
+					has_minor_title = title_high_admiral_B
+				}
+				martial = 12 
+			}
+		}
+		modifier = {
+			factor = 0.9
+			any_courtier_or_vassal = { 
+				OR = {
+					has_minor_title = title_high_admiral
+					has_minor_title = title_high_admiral_B
+				}
+				martial = 14 
+			}
+		}
+		modifier = {
+			factor = 0.9
+			any_courtier_or_vassal = { 
+				OR = {
+					has_minor_title = title_high_admiral
+					has_minor_title = title_high_admiral_B
+				}
+				martial = 16
+			}
+		}
+		modifier = {
+			factor = 0.9
+			any_courtier_or_vassal = { 
+				OR = {
+					has_minor_title = title_high_admiral
+					has_minor_title = title_high_admiral_B
+				}
+				martial = 18 
+			}
+		}
+	}
+	
+	immediate = {
+		random_courtier_or_vassal = { 
+			limit = { 
+				OR = {
+					has_minor_title = title_high_admiral
+					has_minor_title = title_high_admiral_B
+				}
+			}
+			save_event_target_as = master_of_ships	
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAaegons_landing.12" #Build
+		event_target:master_of_ships = {
+			prestige = 30
+			hidden_tooltip = {
+				change_variable = { which = "services_rendered" value = 1 } 
+				reverse_opinion = {
+					modifier = opinion_service_rendered
+					who = ROOT
+					years = 3
+				}
+			}	
+		}
+		if = {
+			limit = {
+				has_global_flag = KL_expand_navy_1
+			}	
+			b_red_keep = { set_title_flag = targshipyard_complete add_building = ca_asoiaf_targshipyard }
+			clr_global_flag = KL_expand_navy_1
+			set_global_flag = KL_expand_navy_1_done
+		}	
+		if = {
+			limit = {
+				has_global_flag = KL_expand_navy_2
+			}	
+			b_kings_landing = { set_title_flag = targshipyard_complete add_building = ct_asoiaf_targshipyard }
+			clr_global_flag = KL_expand_navy_2
+			set_global_flag = KL_expand_navy_2_done
+		}	
+		if = {
+			limit = {
+				has_global_flag = KL_expand_navy_3
+			}	
+			b_warriors_sons = { set_title_flag = targshipyard_complete add_building = ct_asoiaf_targshipyard }
+			clr_global_flag = KL_expand_navy_3
+		}			
+	}	
+}	
+#Orys-Durrandon Marriage
+character_event = {
+	id = aegons_landing.13
+	desc = "EVTDESCaegons_landing.13"
+	picture = "GFX_evt_marriage"
+
+	is_triggered_only = yes
+	
+	immediate = {
+		random_courtier = {
+			limit = { character = 1317 }
+			save_event_target_as = orys_baratheon
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTAaegons_landing.13" #Yes
+		ai_chance = {
+			factor = 95
+		}
+		event_target:orys_baratheon = {
+			set_character_flag = no_wedding_event
+			ROOT = {
+				random_courtier = {
+					limit = { character = 11544 } #Argella
+					any_spouse = { remove_spouse = PREV }
+					set_character_flag = no_wedding_event
+					add_spouse = event_target:orys_baratheon
+					hidden_tooltip = {
+						make_primary_spouse = yes
+						k_stormlands = { add_claim = PREV }
+					}
+					clr_character_flag = no_wedding_event
+				}	
+			}
+			clr_character_flag = no_wedding_event
+			hidden_tooltip = {
+				add_character_modifier = {
+					name = "wedding"
+					duration = 60
+				}
+				remove_trait=assign_mission_target #no longer cadet house
+				clr_dynasty_flag = is_cadet_house
+				c_77064 = { #targaryen father
+					clr_dynasty_flag = owned_cadet_house_@PREV
+					event_target:orys_baratheon = { clr_dynasty_flag = cadet_house_@PREV }						
+					if = { #check if any cadet houses remain
+						limit = {
+							NOT = {
+								assign_mission_target = { #'Father' of cadet house
+									dynasty = ROOT
+									any_character = { has_dynasty_flag = cadet_house_@PREV }
+								}
+							}	
+						}
+						ROOT = { clr_dynasty_flag = has_cadet_house }
+					}	
+				}
+			}
+			any_child = {
+				limit = { dynasty = event_target:orys_baratheon }
+				dynasty = 317
+			}
+			dynasty = 317	
+			set_dynasty_flag = has_traditional_names
+			set_dynasty_flag = has_dynamic_coa #THESE HOUSES USE DYNAMIC COA SYSTEM			
+			#remove_trait = bastard
+			#add_trait = legit_bastard
+			c_storms_end = { grant_title = event_target:orys_baratheon }
+			k_stormlands = { 
+				grant_title = event_target:orys_baratheon 
+				hidden_tooltip = { copy_title_laws = e_stormlands }
+			}
+			letter_event = { id = 63078 tooltip = "EVTTOOLTIP63078" days = 1 } 
+			hidden_tooltip = { 
+				if = {
+					limit = { NOT = { liege = { character = ROOT } } }
+					set_defacto_liege = ROOT
+				}
+				any_realm_lord = {
+					limit = { NOT = { character = event_target:orys_baratheon } }
+					character_event = { id = 63181 } 
+				}
+				any_demesne_title = { 
+					limit = { 
+						NOT = { tier = EMPEROR }
+						NOT = { tier = BARON } 
+					}
+					set_variable = { which = "de_facto_empire" value = 1 }  
+				}
+				ROOT = {
+					any_vassal = { 
+						limit = {
+							lower_tier_than = event_target:orys_baratheon
+							event_target:orys_baratheon = { de_jure_vassal_or_below = PREV }
+							is_patrician = no
+							NOT = { 
+								primary_title = {
+									tier = COUNT 
+									location = { has_province_flag = colony_province } 
+								}	
+							}
+						}
+						set_defacto_liege = event_target:orys_baratheon
+					}
+				}
+				d_dragonstone = { remove_claim = event_target:orys_baratheon }
+				c_dragonstone = { remove_claim = event_target:orys_baratheon }
+				set_government_type = feudal_government #to prevent him being called Archon for some reason
+				set_government_type = feudal_government_LP
+				e_rebels = {
+					persistent_event_target:chronicle_player = {
+						if = {
+							limit = { 
+								OR = {		
+									character = ROOT
+									dynasty = ROOT
+									is_liege_or_above = PREVPREV
+									capital_scope = { region = world_stormlands }
+								}
+							}
+							chronicle = {
+								entry = CHRONICLE_ORYS_BARATHEON
+								portrait = [PrevPrev.GetID]
+							}	
+						}
+					}
+				}	
+			}
+		}
+		#Sort bloodlines, remove from targaryen and start baratheon
+		hidden_tooltip = {
+			random_owned_bloodline = {
+				limit = { has_bloodline_flag = targaryen }
+				event_target:orys_baratheon = {
+					remove_from_bloodline = PREV
+					any_dynasty_member_even_if_dead = {
+						remove_from_bloodline = PREVPREV
+					}
+					create_bloodline = {
+						type = baratheon
+					}
+					random_owned_bloodline = { 
+						limit = { has_bloodline_flag = stormlander }
+						event_target:orys_baratheon = {
+							any_dynasty_member_even_if_dead = { add_to_bloodline = PREVPREV }
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTBaegons_landing.13" #No
+		ai_chance = {
+			factor = 5
+		}
+		event_target:orys_baratheon = {
+			set_character_flag = no_to_stormlands
+		}
+	}
+}	
+#Lodos
+character_event = {
+	id = aegons_landing.14
+	
+	hide_from = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_character_flag = nationalist_rebel
+		create_title = {
+			tier = DUKE
+			landless = yes
+			temporary = yes
+			rebel = yes
+			culture = ROOT
+			name = "CLAIMANT_ADVENTURE"
+			holder = THIS
+		}
+		154 = { #Old Wyk
+			ROOT = {
+				spawn_unit = {
+					province = PREV
+					home = PREV
+					owner = THIS
+					leader = THIS
+					scaled_by_biggest_garrison = 0.8
+					troops = {
+						light_cavalry = { 1 1 }
+						archers = { 2 2 }
+						heavy_infantry = { 4 4 }
+						pikemen = { 4 4 }
+						light_infantry = { 9 9 }
+					}
+					attrition = 1.0
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = none
+					religion = THIS
+					culture = THIS
+					female = no
+					age = 30
+					trait = drowned
+					trait = tough_soldier
+					trait = zealous
+				}
+				new_character = {
+					random_list = {
+						10 = { add_trait = skilled_warrior }
+						30 = { add_trait = trained_warrior }
+						60 = { add_trait = poor_warrior }
+					}
+					spawn_unit = {
+						province = PREVPREV
+						home = PREVPREV
+						owner = PREV
+						scaled_by_biggest_garrison = 0.8
+						troops = {
+							light_cavalry = { 1 1 }
+							archers = { 2 2 }
+							heavy_infantry = { 4 4 }
+							pikemen = { 4 4 }
+							light_infantry = { 9 9 }
+						}
+						attrition = 1.0
+						disband_on_peace = yes
+					}
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = none
+					religion = THIS
+					culture = THIS
+					female = no
+					age = 31
+					trait = drowned
+					trait = tough_soldier
+					trait = zealous
+				}
+				new_character = {
+					random_list = {
+						10 = { add_trait = skilled_warrior }
+						30 = { add_trait = trained_warrior }
+						60 = { add_trait = poor_warrior }
+					}
+					spawn_unit = {
+						province = PREVPREV
+						home = PREVPREV
+						owner = PREV
+						scaled_by_biggest_garrison = 0.8
+						troops = {
+							light_cavalry = { 1 1 }
+							archers = { 2 2 }
+							heavy_infantry = { 4 4 }
+							pikemen = { 4 4 }
+							light_infantry = { 9 9 }
+						}
+						attrition = 1.0
+						disband_on_peace = yes
+					}
+				}
+				k_iron_isles = {
+					reverse_war = {
+						target = ROOT
+						casus_belli = liberation_revolt
+					}
+				}
+			}		
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+}
+
+#Qhorin Volmark
+character_event = {
+	id = aegons_landing.15
+	desc = "EVTDESCaegons_landing.15"
+	picture = "GFX_drowned"
+	
+	hide_from = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		any_demesne_title = {
+			limit = { 
+				OR = {
+					tier = COUNT
+					tier = DUKE
+				}
+			}				
+			set_variable = { which = "de_facto_kingdom" value = 5 }
+		}
+		k_iron_isles = { add_pressed_claim = ROOT }
+	}
+	
+	option = {
+		name = "EVTOPTAaegons_landing.15"
+		ai_chance = { factor = 1 }
+		k_iron_isles = { 		
+			reverse_war = {
+				target = ROOT
+				casus_belli = claim_on_liege
+			}
+		} 
+		d_great_wyk = { 
+			holder_scope = {
+				hidden_tooltip = { set_defacto_liege = THIS }
+				join_attacker_wars = ROOT
+				hidden_tooltip = {
+					any_demesne_title = {
+						limit = { 
+							OR = {
+								tier = COUNT
+								tier = DUKE
+							}
+						}				
+						set_variable = { which = "de_facto_kingdom" value = 5 }
+					}
+				}	
+			}	
+		}
+		c_orkmont = { 
+			holder_scope = {
+				hidden_tooltip = { set_defacto_liege = THIS }
+				join_attacker_wars = ROOT
+				hidden_tooltip = {
+					any_demesne_title = {
+						limit = { 
+							OR = {
+								tier = COUNT
+								tier = DUKE
+							}
+						}				
+						set_variable = { which = "de_facto_kingdom" value = 5 }
+					}
+				}	
+			}	
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBaegons_landing.15"
+		ai_chance = { factor = 0 }
+	}	
+}
+
+#Marla Sunderland
+character_event = {
+	id = aegons_landing.16
+	desc = "EVTDESCaegons_landing.16"
+	
+	hide_from = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAaegons_landing.16"
+		ai_chance = { factor = 1 }
+		e_iron_throne = { 
+			holder_scope = {
+				hidden_tooltip = { ROOT = { set_defacto_liege = PREV } }
+				reverse_war = {
+					target = ROOT
+					casus_belli = bid_for_independence
+				}
+			}	
+		} 
+	}
+	
+	option = {
+		name = "EVTOPTBaegons_landing.16"
+		ai_chance = { factor = 0 }
+	}	
+}
+
+#Inform Storm King Aegon alliance accepted
+character_event = {
+	id = aegons_landing.17
+	desc = "EVTDESCaegons_landing.17"
+	
+	hide_from = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAaegons_landing.17"		
+		c_11544 = {
+			hidden_tooltip = { remove_trait = forbid_marriage }
+			add_spouse_matrilineal = FROM
+		}
+		FROM = {
+			add_alliance = { who = ROOT years = 20 }
+		}
+		d_kings_landing = { 
+			gain_title = FROM 
+			any_direct_de_jure_vassal_title = {
+				if = {
+					limit = { holder_scope = { has_landed_title = e_stormlands } }
+					gain_title = FROM
+				}
+				if = {
+					limit = { 
+						holder_scope = { 
+							liege = { has_landed_title = e_stormlands } 
+							lower_tier_than = FROM
+						} 
+					}
+					holder_scope = { set_defacto_liege = FROM }
+				}
+			}
+		}
+		d_rosby = { add_claim = FROM }
+		d_blackwater_rush = { add_claim = FROM }
+		d_hayford = { add_claim = FROM }
+		d_stokeworth = { add_claim = FROM }
+		hidden_tooltip = {
+			b_red_keep = {		
+				hidden_tooltip = { add_building = ca_asoiaf_crown_basevalue_1 }
+				add_building = ca_asoiaf_crown_basevalue_2
+				set_name = B_AEGONFORT
+			}
+			c_kings_landing = { 
+				location = {
+					build_holding = {
+					   title = b_kings_landing
+					   type = city
+					   holder = FROM
+					}	
+					hidden_tooltip = {
+						b_kings_landing = {
+							add_building = ct_asoiaf_crown_basevalue_1
+							add_building = ct_asoiaf_crown_basevalue_2
+						}
+					}
+					build_holding = {
+					   title = b_great_sept_of_baelor
+					   type = temple
+					   holder = FROM
+					}					
+				}
+			}	
+		}
+		hidden_tooltip = { 
+			FROM = {
+				any_demesne_title = {
+					succession = primogeniture
+					gender_succ = cognatic
+				}
+				recalc_succession = yes
+			}	
+		}	
+	}
+}
