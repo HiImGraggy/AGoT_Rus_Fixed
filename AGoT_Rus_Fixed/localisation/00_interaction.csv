@@ -157,7 +157,7 @@ EVTOPTBinteraction.21;[FromFrom.GetTitle] [FromFrom.GetFirstName] смел[FromFrom.
 EVTDESCSENDINSULT;У вас есть письмо для персоны [From.GetFirstName], написанное и подписанное:\n' ...я вас презираю. Вы [GetRootFromInsult], и ваш [GetRootFromInsult] вид отвратителен.\nПодпись,\n[Root.GetTitle] [Root.GetFirstName] из Дома [Root.GetOnlyDynastyName]';x;;;;;;;;;;;;;;;
 EVTOPTASENDINSULT;Это научит, что [GetRootFromInsult];x;;;;;;;;;;;;;;;
 make_noble;Повысить до знати;x;;;;;;;;;;;;;;;
-make_noble_desc;Сделать подданного по имени [Root.GetTitledFirstName] дворянином, дав [Root.GetHerHim] [Root.GetHerHis] собственный дом и герб, а также доходы, чтобы начать [Root.GetHerHis] хозяйство;x;;;;;;;;;;;;;;;
+make_noble_desc;Сделать подданного по имени [Root.GetTitledFirstName] дворянином, дав [Root.GetHerHim] [Root.GetHerHis] собственный дом и герб, а также доходы, чтобы начать [Root.GetHerHis] хозяйство.;x;;;;;;;;;;;;;;;
 TOOLTIPmake_noble;[Root.GetTitledFirstName] получает новое имя дома и герб\n;x;;;;;;;;;;;;;;;
 voted_on_stand_down;Проголосовали за приказ остановиться;x;;;;;;;;;;;;;;;
 EVTDESCcouncillor.1;Совет был созван для голосования по спору, который возник между двумя вассалами персонажа [FromFrom.GetTitledFirstNameNoRegnal]. [From.GetTitledFirstNameWithDynastyNoRegnal] обвиняется во вторжении в земли персонажа [stand_down_defender.GetTitledFirstNameNoRegnal] [stand_down_defender.GetOnlyDynastyName] и нарушении мира. Теперь Совет должен проголосовать за то, чтобы [From.GetTitledFirstNameNoRegnal] получил[From.GetEndA] приказ остановить свою агрессию, [FromFrom.GetTitledFirstNameNoRegnal] проголосовал[FromFrom.GetEndA] ЗА.;x;;;;;;;;;;;;;;;

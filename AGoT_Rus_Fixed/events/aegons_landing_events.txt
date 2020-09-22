@@ -1978,7 +1978,7 @@ narrative_event = {
 		set_global_flag = red_keep_established
 		set_global_flag = KL_established
 		set_global_flag = KL_navy_established
-		hidden_tooltip = { d_kings_landing = { set_name = ""  } }		
+		hidden_tooltip = { d_kings_landing = { set_name = ""  } }
 		c_kings_landing = {
 			set_name = PROV226
 			location = {
@@ -2063,7 +2063,7 @@ narrative_event = {
 		custom_tooltip = { text = TOOLTIPNORMALCROWNLANDS } # Dragonstone
 		d_crackclaw_point = { # Cracklaw
 			if = {
-				limit = {		
+				limit = {
 					OR = {
 						is_variable_equal = { which = "de_facto_empire" value = 1 }
 						holder_scope = { is_liege_or_above = ROOT }
@@ -2096,7 +2096,7 @@ narrative_event = {
 		}
 		d_rosby = { # Rosby
 			if = {
-				limit = {	
+				limit = {
 					OR = {
 						is_variable_equal = { which = "de_facto_empire" value = 1 }
 						holder_scope = { is_liege_or_above = ROOT }
@@ -2129,7 +2129,7 @@ narrative_event = {
 		}
 		d_stokeworth = { # Stokeworth
 			if = {
-				limit = {		
+				limit = {
 					OR = {
 						is_variable_equal = { which = "de_facto_empire" value = 1 }
 						holder_scope = { is_liege_or_above = ROOT }
@@ -2162,7 +2162,7 @@ narrative_event = {
 		}
 		d_hayford = { # Hayford
 			if = {
-				limit = {		
+				limit = {
 					OR = {
 						is_variable_equal = { which = "de_facto_empire" value = 1 }
 						holder_scope = { is_liege_or_above = ROOT }
@@ -2195,7 +2195,7 @@ narrative_event = {
 		}
 		d_duskendale = { # Duskendale
 			if = {
-				limit = {	
+				limit = {
 					OR = {
 						is_variable_equal = { which = "de_facto_empire" value = 1 }
 						holder_scope = { is_liege_or_above = ROOT }
@@ -2228,7 +2228,7 @@ narrative_event = {
 		}
 		d_blackwater_rush = { # Blackwater Rush
 			if = {
-				limit = {	
+				limit = {
 					OR = {
 						is_variable_equal = { which = "de_facto_empire" value = 1 }
 						holder_scope = { is_liege_or_above = ROOT }
@@ -2261,7 +2261,7 @@ narrative_event = {
 		}
 		d_kingswood = { # Kingswood
 			if = {
-				limit = {		
+				limit = {
 					OR = {
 						is_variable_equal = { which = "de_facto_empire" value = 1 }
 						holder_scope = { is_liege_or_above = ROOT }
@@ -2294,7 +2294,7 @@ narrative_event = {
 		}
 		d_masseys_hook = { # Massey's Hook
 			if = {
-				limit = {		
+				limit = {
 					OR = {
 						is_variable_equal = { which = "de_facto_empire" value = 1 }
 						holder_scope = { is_liege_or_above = ROOT }
@@ -2392,7 +2392,7 @@ narrative_event = {
 		custom_tooltip = { text = TOOLTIPNORMALCROWNLANDS } # Dragonstone
 		d_crackclaw_point = { # Cracklaw
 			if = {
-				limit = {			
+				limit = {
 					OR = {
 						is_variable_equal = { which = "de_facto_empire" value = 1 }
 						holder_scope = { is_liege_or_above = ROOT }
@@ -2425,7 +2425,7 @@ narrative_event = {
 		}
 		d_rosby = { # Rosby
 			if = {
-				limit = {	
+				limit = {
 					OR = {
 						is_variable_equal = { which = "de_facto_empire" value = 1 }
 						holder_scope = { is_liege_or_above = ROOT }
@@ -2458,7 +2458,7 @@ narrative_event = {
 		}
 		d_hayford = { # Hayford
 			if = {
-				limit = {		
+				limit = {
 					OR = {
 						is_variable_equal = { which = "de_facto_empire" value = 1 }
 						holder_scope = { is_liege_or_above = ROOT }
@@ -2524,7 +2524,7 @@ narrative_event = {
 		}
 		d_duskendale = { # Duskendale
 			if = {
-				limit = {		
+				limit = {
 					OR = {
 						is_variable_equal = { which = "de_facto_empire" value = 1 }
 						holder_scope = { is_liege_or_above = ROOT }
@@ -2557,7 +2557,7 @@ narrative_event = {
 		}
 		d_blackwater_rush = { # Blackwater Rush
 			if = {
-				limit = {		
+				limit = {
 					OR = {
 						is_variable_equal = { which = "de_facto_empire" value = 1 }
 						holder_scope = { is_liege_or_above = ROOT }
@@ -2590,7 +2590,7 @@ narrative_event = {
 		}
 		d_kingswood = { # Kingswood
 			if = {
-				limit = {		
+				limit = {
 					OR = {
 						is_variable_equal = { which = "de_facto_empire" value = 1 }
 						holder_scope = { is_liege_or_above = ROOT }
@@ -2844,7 +2844,7 @@ narrative_event = {
 		}
 		d_the_arbor = {
 			if = {
-				limit = {		
+				limit = {
 					OR = {
 						is_variable_equal = { which = "de_facto_empire" value = 1 }
 						holder_scope = { is_liege_or_above = ROOT }
@@ -3017,7 +3017,7 @@ narrative_event = {
 		}
 		d_bayofclaws = {  # Bay of Claws
 			if = {
-				limit = {		
+				limit = {
 					OR = {
 						is_variable_equal = { which = "de_facto_empire" value = 1 }
 						holder_scope = { is_liege_or_above = ROOT }
@@ -3050,7 +3050,7 @@ narrative_event = {
 		}
 		d_crackclaw_point = { # Cracklaw
 			if = {
-				limit = {	
+				limit = {
 					OR = {
 						is_variable_equal = { which = "de_facto_empire" value = 1 }
 						holder_scope = { is_liege_or_above = ROOT }
@@ -3083,7 +3083,7 @@ narrative_event = {
 		}
 		d_rosby = { # Rosby
 			if = {
-				limit = {	
+				limit = {
 					OR = {
 						is_variable_equal = { which = "de_facto_empire" value = 1 }
 						holder_scope = { is_liege_or_above = ROOT }
@@ -3149,7 +3149,7 @@ narrative_event = {
 		}
 		d_stokeworth = { # Stokeworth
 			if = {
-				limit = {	
+				limit = {
 					OR = {
 						is_variable_equal = { which = "de_facto_empire" value = 1 }
 						holder_scope = { is_liege_or_above = ROOT }
@@ -3215,7 +3215,7 @@ narrative_event = {
 		}
 		d_blackwater_rush = { # Blackwater Rush
 			if = {
-				limit = {	
+				limit = {
 					OR = {
 						is_variable_equal = { which = "de_facto_empire" value = 1 }
 						holder_scope = { is_liege_or_above = ROOT }
