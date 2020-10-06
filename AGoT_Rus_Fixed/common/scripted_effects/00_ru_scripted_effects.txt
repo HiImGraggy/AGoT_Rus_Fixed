@@ -1,7 +1,7 @@
-reformation_god_names_root_post_effect = { #Reforming religion with certain Doctrines might result in gods being added/removed/changed.
-	ROOT = { #The Reformer scope
+reformation_female_god_king_head_post_effect = { # Reforming religion with "God King Head" feature where reformer is female
+	ROOT = { # The Reformer scope
 		if = {
-			limit = { #Reformer becomes the High God.
+			limit = { # Reformer becomes the High God
 				has_dlc = "Holy Fury"
 				has_religion_feature = religion_god_king_head
 			}
@@ -12,6 +12,615 @@ reformation_god_names_root_post_effect = { #Reforming religion with certain Doct
 			else = {
 				religion_scope = { clr_flag = reformer_is_female }
 			}
+		}
+	}
+}
+
+yi_ti_emperor_god_name_effect = { # Yi Ti God Emperor name refresh
+	e_yi_ti = { persistent_event_target:yi_ti_emperor_god_name = { save_event_target_as = yi_ti_emperor_god_name } }
+	yiti_gods = {
+		remove_god_names = yes
+		add_god_name = GOD_THE_GODS
+		add_god_name = GOD_MAIDEN_LIGHT
+		add_god_name = GOD_THE_EMPEROR
+	}
+	if = { # Yi-Ti was reformed
+		limit = {
+			has_dlc = "Holy Fury"
+			has_global_flag = yiti_gods_reformation
+		}
+		yiti_gods_reformed = {
+			remove_god_names = yes
+			add_god_name = GOD_THE_GODS
+			add_god_name = GOD_MAIDEN_LIGHT
+			if = { # With "The Seven" feature
+				limit = { has_religion_feature = religion_feature_the_seven }
+				remove_evil_god_names = yes
+				add_god_name = GOD_FATHER
+				add_god_name = GOD_MOTHER
+				add_god_name = GOD_WARRIOR
+				add_god_name = GOD_MAIDEN
+				add_god_name = GOD_SMITH
+				add_god_name = GOD_CRONE
+				add_god_name = GOD_SEVEN
+				add_evil_god_name = GOD_LION_NIGHT
+				add_evil_god_name = GOD_THE_STRANGER
+			}
+			if = { # With "God King Head" feature
+				limit = { has_religion_feature = religion_god_king_head }
+				set_high_god_name = GOD_THE_EMPEROR
+			}
+			add_god_name = GOD_THE_EMPEROR # set emperor the last one in the list
+		}
+	}
+}
+
+reformation_god_names_post_effect = { # Reforming religion where gods being added/removed/changed
+	hidden_effect = {
+		if = { # old gods
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = old_gods_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_THE_GODS
+			add_god_name = GOD_THE_OLD_GODS
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_THE_OTHERS
+			add_evil_god_name = GOD_THE_STRANGER
+		}	
+		if = { # beyond wall old gods
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = beyond_wall_old_gods_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_THE_GODS
+			add_god_name = GOD_THE_OLD_GODS
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_THE_OTHERS
+			add_evil_god_name = GOD_THE_STRANGER
+		}
+		if = { # drowned god
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = drowned_god_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_THE_DROWNED_GOD
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_STORM_GOD
+			add_evil_god_name = GOD_THE_OTHERS
+			add_evil_god_name = GOD_THE_STRANGER
+		}
+		if = { # black goat
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = black_goat_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_THE_BLACK_GOAT
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_THE_OTHERS
+			add_evil_god_name = GOD_THE_STRANGER
+		}
+		if = { # gods lorath
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = gods_lorath_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_LORATH
+			add_god_name = GOD_AQUAN
+			add_god_name = GOD_MERLIN_KING
+			add_god_name = GOD_MOONPALE_MAIDEN
+			add_god_name = GOD_SILENT_GOD
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_THE_OTHERS
+			add_evil_god_name = GOD_THE_DEMONS
+			add_evil_god_name = GOD_DARK_SPIRITS
+			add_evil_god_name = GOD_THE_STRANGER
+		}
+		if = { # moonsingers
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = moonsingers_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_THE_GODS
+			add_god_name = GOD_AQUAN
+			add_god_name = GOD_HOODED_WAYFARER
+			add_god_name = GOD_MERLIN_KING
+			add_god_name = GOD_MOONPALE_MAIDEN
+			add_god_name = GOD_SEMOSH
+			add_god_name = GOD_SELLOSO
+			add_god_name = GOD_SILENT_GOD
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_THE_OTHERS
+			add_evil_god_name = GOD_THE_DEMONS
+			add_evil_god_name = GOD_DARK_SPIRITS
+			add_evil_god_name = GOD_THE_STRANGER
+		}
+		if = { # trios
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = trios_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_TRIOS
+			add_god_name = GOD_THE_DRUNKEN_GOD
+			add_god_name = GOD_MERLIN_KING
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_THE_OTHERS
+			add_evil_god_name = GOD_THE_DEMONS
+			add_evil_god_name = GOD_DARK_SPIRITS
+			add_evil_god_name = GOD_THE_STRANGER
+		}
+		if = { # father of waters
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = father_of_waters_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_FATHER_OF_WATERS
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_THE_OTHERS
+			add_evil_god_name = GOD_THE_DEMONS
+			add_evil_god_name = GOD_DARK_SPIRITS
+			add_evil_god_name = GOD_THE_STRANGER
+		}
+		if = { # rhoynar pagan
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = rhoynar_pagan_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_MOTHER_RHOYNE
+			add_god_name = GOD_OLD_MAN_RIVER
+			add_god_name = GOD_CRAB_KING
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_THE_OTHERS
+			add_evil_god_name = GOD_THE_DEMONS
+			add_evil_god_name = GOD_DARK_SPIRITS
+			add_evil_god_name = GOD_THE_STRANGER
+		}
+		if = { # boash
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = boash_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_BOASH
+			add_god_name = GOD_THE_BLIND_GOD
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_THE_OTHERS
+			add_evil_god_name = GOD_THE_DEMONS
+			add_evil_god_name = GOD_DARK_SPIRITS
+			add_evil_god_name = GOD_THE_STRANGER
+		}
+		if = { # weeping lady
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = weeping_lady_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_THE_WEEPING_LADY
+			add_god_name = GOD_THE_LOVE_GODDESS
+			add_god_name = GOD_BAKKALON
+			add_god_name = GOD_THE_PALE_CHILD
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_THE_OTHERS
+			add_evil_god_name = GOD_THE_DEMONS
+			add_evil_god_name = GOD_DARK_SPIRITS
+			add_evil_god_name = GOD_THE_STRANGER
+		}
+		if = { # valyrian rel
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = valyrian_rel_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_BALERION
+			add_god_name = GOD_MERAXES
+			add_god_name = GOD_VHAGAR
+			add_god_name = GOD_URRAX
+			add_god_name = GOD_SYRAX
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_THE_OTHERS
+			add_evil_god_name = GOD_THE_DEMONS
+			add_evil_god_name = GOD_DARK_SPIRITS
+			add_evil_god_name = GOD_THE_STRANGER
+		}
+		if = { # gods sarnor
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = gods_sarnor_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_THE_GODS
+			add_god_name = GOD_SARNOR
+			add_god_name = GOD_MOONPALE_MAIDEN
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_THE_OTHERS
+			add_evil_god_name = GOD_THE_DEMONS
+			add_evil_god_name = GOD_DARK_SPIRITS
+			add_evil_god_name = GOD_THE_STRANGER
+		}
+		if = { # harpy
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = harpy_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_THE_GODS
+			add_god_name = GOD_HARPY
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_THE_DEMONS
+			add_evil_god_name = GOD_DARK_SPIRITS
+			add_evil_god_name = GOD_THE_STRANGER
+		}
+		#if = { # yiti gods (moved to yi_ti_emperor_god_name_effect)
+		#	limit = {
+		#		has_dlc = "Holy Fury"
+		#		religion = yiti_gods_reformed
+		#		has_religion_feature = religion_feature_the_seven
+		#	}
+		#	remove_god_names = yes
+		#	remove_evil_god_names = yes
+		#	add_god_name = GOD_THE_GODS
+		#	add_god_name = GOD_MAIDEN_LIGHT
+		#	add_god_name = GOD_FATHER
+		#	add_god_name = GOD_MOTHER
+		#	add_god_name = GOD_WARRIOR
+		#	add_god_name = GOD_MAIDEN
+		#	add_god_name = GOD_SMITH
+		#	add_god_name = GOD_CRONE
+		#	add_god_name = GOD_SEVEN
+		#	add_god_name = GOD_THE_EMPEROR # set emperor the last one in the list
+		#	add_evil_god_name = GOD_LION_NIGHT
+		#	add_evil_god_name = GOD_THE_STRANGER
+		#}
+		if = { # lion night
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = lion_night_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_LION_NIGHT
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_MAIDEN_LIGHT
+			add_evil_god_name = GOD_THE_STRANGER
+		}
+		if = { # shadowbinders
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = shadowbinders_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_THE_GODS
+			add_god_name = GOD_SHADOW
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_THE_DEMONS
+			add_evil_god_name = GOD_DARK_SPIRITS
+			add_evil_god_name = GOD_THE_STRANGER
+		}
+		if = { # gods bone mountains
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = gods_bone_mountains_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_THE_GODS
+			add_god_name = GOD_BONE_MOUNTAINS
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_THE_DEMONS
+			add_evil_god_name = GOD_DARK_SPIRITS
+			add_evil_god_name = GOD_THE_STRANGER
+		}
+		if = { # gods nghai
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = gods_nghai_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_THE_GODS
+			add_god_name = GOD_NGHAI
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_THE_DEMONS
+			add_evil_god_name = GOD_DARK_SPIRITS
+			add_evil_god_name = GOD_THE_STRANGER
+		}
+		if = { # stone cow
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = stone_cow_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_STONE_COW
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_THE_DEMONS
+			add_evil_god_name = GOD_DARK_SPIRITS
+			add_evil_god_name = GOD_THE_STRANGER
+		}
+		if = { # jogos pagan
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = jogos_pagan_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_THE_GODS
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_THE_DEMONS
+			add_evil_god_name = GOD_DARK_SPIRITS
+			add_evil_god_name = GOD_THE_STRANGER
+		}
+		if = { # great shepherd
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = great_shepherd_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_GREAT_SHEPHERD
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_THE_DEMONS
+			add_evil_god_name = GOD_DARK_SPIRITS
+			add_evil_god_name = GOD_THE_STRANGER
+		}
+		if = { # aztec
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = aztec_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_HUITZILOPOCHTLI
+			add_god_name = GOD_XIPE_TOTEC
+			add_god_name = GOD_TEZCATLIPOCA
+			add_god_name = GOD_QUETZALCOATL
+			add_god_name = GOD_MICTLANTECUHTLI
+			add_god_name = GOD_TLALOC
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_THE_DEMONS
+			add_evil_god_name = GOD_DARK_SPIRITS
+			add_evil_god_name = GOD_THE_STRANGER
+		}
+		if = { # summer rel
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = summer_rel_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_THE_GODS
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_THE_DEMONS
+			add_evil_god_name = GOD_DARK_SPIRITS
+			add_evil_god_name = GOD_THE_STRANGER
+		}
+		if = { # nath pagan
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = nath_pagan_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_LORD_HARMONY
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_THE_DEMONS
+			add_evil_god_name = GOD_DARK_SPIRITS
+			add_evil_god_name = GOD_THE_STRANGER
+		}
+		if = { # lady of the waves
+			limit = {
+				has_dlc = "Holy Fury"
+				religion = lady_of_the_waves_reformed
+				has_religion_feature = religion_feature_the_seven
+			}
+			remove_god_names = yes
+			remove_evil_god_names = yes
+			add_god_name = GOD_LADY_OF_THE_WAVES
+			add_god_name = GOD_LORD_OF_THE_SKIES
+			add_god_name = GOD_THE_GODS
+			add_god_name = GOD_MERLIN_KING
+			add_god_name = GOD_MOONPALE_MAIDEN
+			add_god_name = GOD_FATHER
+			add_god_name = GOD_MOTHER
+			add_god_name = GOD_WARRIOR
+			add_god_name = GOD_MAIDEN
+			add_god_name = GOD_SMITH
+			add_god_name = GOD_CRONE
+			add_god_name = GOD_SEVEN
+			add_evil_god_name = GOD_THE_OTHERS
+			add_evil_god_name = GOD_THE_STRANGER
 		}
 	}
 }

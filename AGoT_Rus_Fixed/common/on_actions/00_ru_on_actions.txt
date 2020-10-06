@@ -1,0 +1,8 @@
+#character
+on_startup = {
+	events = {
+		russianloc.1  # Set Yi Ti God Emperor name at game start
+		russianloc.2  # Yi Ti God Emperor name refresh (saved games)
+		russianloc.10 # Reformed religion gods names refresh (saved games)
+	}
+}

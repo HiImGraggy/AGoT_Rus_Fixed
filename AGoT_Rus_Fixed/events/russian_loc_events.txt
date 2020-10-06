@@ -1,0 +1,105 @@
+namespace = russianloc
+
+character_event = { # Set Yi Ti God Emperor name at game start
+	id = russianloc.1
+
+	hide_window = yes
+	is_triggered_only = yes
+	only_rulers = yes
+
+	trigger = {
+		NOT = { is_save_game = yes } # actual only for first game launch
+		has_landed_title = e_yi_ti
+		NOT = { has_character_flag = kingsmoot }
+		NOT = { government = feudal_government_LP }
+	}
+
+	immediate = {
+		e_yi_ti = { save_persistent_event_target = { name = yi_ti_emperor_god_name scope = PREV } }
+		yi_ti_emperor_god_name_effect = yes
+	}
+}
+
+character_event = { # Yi Ti God Emperor name refresh
+	id = russianloc.2
+
+	hide_window = yes
+	is_triggered_only = yes
+	only_rulers = yes
+
+	trigger = {
+		is_save_game = yes
+		has_landed_title = e_yi_ti
+	}
+
+	immediate = { yi_ti_emperor_god_name_effect = yes }
+}
+
+character_event = { # Gods names reset for reformed religion where gods being added/removed/changed
+	id = russianloc.10
+
+	hide_window = yes
+	is_triggered_only = yes
+	only_rulers = yes
+
+	trigger = {
+		is_save_game = yes
+		OR = {
+			has_global_flag = old_gods_reformation
+			has_global_flag = beyond_wall_old_gods_reformation
+			has_global_flag = drowned_god_reformation
+			has_global_flag = black_goat_reformation
+			has_global_flag = gods_lorath_reformation
+			has_global_flag = moonsingers_reformation
+			has_global_flag = trios_reformation
+			has_global_flag = father_reformation
+			has_global_flag = rhoynar_pagan_reformation
+			has_global_flag = boash_reformation
+			has_global_flag = weeping_lady_reformation
+			has_global_flag = valyrian_rel_reformation
+			has_global_flag = gods_sarnor_reformation
+			has_global_flag = harpy_reformation
+			#has_global_flag = yiti_gods_reformation # moved to russianloc.1
+			has_global_flag = lion_night_reformation
+			has_global_flag = shadowbinders_reformation
+			has_global_flag = gods_bone_mountains_reformation
+			has_global_flag = gods_nghai_reformation
+			has_global_flag = stone_cow_reformation
+			has_global_flag = jogos_pagan_reformation
+			has_global_flag = great_shepherd_reformation
+			has_global_flag = aztec_reformation
+			has_global_flag = summer_rel_reformation
+			has_global_flag = nath_pagan_reformation
+			has_global_flag = lady_of_the_waves_reformation
+		}
+	}
+
+	immediate = {
+		old_gods_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven } reformation_god_names_post_effect = yes } }
+		beyond_wall_old_gods_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven } reformation_god_names_post_effect = yes } }
+		drowned_god_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven } reformation_god_names_post_effect = yes } }
+		black_goat_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven } reformation_god_names_post_effect = yes } }
+		gods_lorath_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven } reformation_god_names_post_effect = yes } }
+		moonsingers_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven } reformation_god_names_post_effect = yes } }
+		trios_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven }	reformation_god_names_post_effect = yes	} }
+		father_of_waters_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven } reformation_god_names_post_effect = yes } }
+		rhoynar_pagan_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven }	reformation_god_names_post_effect = yes	} }
+		boash_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven }	reformation_god_names_post_effect = yes	} }
+		weeping_lady_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven } reformation_god_names_post_effect = yes } }
+		valyrian_rel_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven } reformation_god_names_post_effect = yes } }
+		gods_sarnor_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven } reformation_god_names_post_effect = yes } }
+		harpy_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven }	reformation_god_names_post_effect = yes	} }
+		#yiti_gods_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven } reformation_god_names_post_effect = yes } } # moved to russianloc.1
+		lion_night_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven } reformation_god_names_post_effect = yes } }
+		shadowbinders_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven }	reformation_god_names_post_effect = yes } }
+		gods_bone_mountains_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven } reformation_god_names_post_effect = yes } }
+		gods_nghai_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven } reformation_god_names_post_effect = yes } }
+		stone_cow_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven }	reformation_god_names_post_effect = yes	} }
+		jogos_pagan_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven } reformation_god_names_post_effect = yes } }
+		great_shepherd_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven } reformation_god_names_post_effect = yes } }
+		aztec_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven }	reformation_god_names_post_effect = yes	} }
+		summer_rel_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven } reformation_god_names_post_effect = yes } }
+		nath_pagan_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven } reformation_god_names_post_effect = yes } }
+		lady_of_the_waves_reformed = { if = { limit = { has_religion_feature = religion_feature_the_seven }	reformation_god_names_post_effect = yes	} }
+	}
+}
