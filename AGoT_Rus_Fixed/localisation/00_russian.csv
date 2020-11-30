@@ -1,4 +1,88 @@
 #CODE;ENGLISH;x;;;
+# fix for GetSwordName
+GetOverwriteSwordName;[This.GetSwordNameGander];x
+MaleSwordName;[This.GetMaleSwordName];x
+FamaleSwordName;[This.GetFamaleSwordName];x
+NeuterSwordName;[This.GetNeuterSwordName];x
+MaleSwordNameEnding_Yy;[This.Get_Male_SwordName_Prefix_Yy]ый [This.Get_Male_SwordName_Suffix];x
+MaleBasedSwordNameEnding_Iy;[This.Get_Male_SwordName_Prefix_Iy]ий [This.Get_Male_SwordName_Suffix];x
+MaleSwordNameEnding_Oy;[This.Get_Male_SwordName_Prefix_Oy]ой [This.Get_Male_SwordName_Suffix];x
+FamaleSwordNameEnding_Aya;[This.Get_Famale_SwordName_Prefix_Aya]ая [This.Get_Famale_SwordName_Suffix];x
+FamaleSwordNameEnding_SoftYa;[This.Get_Famale_SwordName_Prefix_SoftYa]ья [This.Get_Famale_SwordName_Suffixx];x
+FamaleSwordNameEnding_Yaya;[This.Get_Famale_SwordName_Prefix_Yaya]яя [This.Get_Famale_SwordName_Suffix];x
+NeuterSwordNameEnding_Oe;[This.Get_Neuter_SwordName_Prefix_Oe]ое [This.Get_Neuter_SwordName_Suffix];x
+NeuterSwordNameEnding_SoftE;[This.Get_Neuter_SwordName_Prefix_SoftE]ье [This.Get_Neuter_SwordName_Suffix];x
+NeuterSwordNameEnding_Ee;[This.Get_Neuter_SwordName_Prefix_Ee]ее [This.Get_Neuter_SwordName_Suffix];x
+# cutted version of SwordName_Prefix for GetSwordName
+GetCutSwordName_Black;Чёрн;;;;;;;;;;;;;x
+GetCutSwordName_White;Бел;;;;;;;;;;;;;x
+GetCutSwordName_Red;Красн;;;;;;;;;;;;;x
+GetCutSwordName_Blue;Син;;;;;;;;;;;;;x
+GetCutSwordName_Golden;Золот;;;;;;;;;;;;;x
+GetCutSwordName_Silver;Серебрян;;;;;;;;;;;;;x
+GetCutSwordName_Bright;Сияющ;;;;;;;;;;;;;x
+GetCutSwordName_Dark;Тёмн;;;;;;;;;;;;;x
+GetCutSwordName_Long;Длинн;;;;;;;;;;;;;x
+GetCutSwordName_Short;Коротк;;;;;;;;;;;;;x
+GetCutSwordName_Good;Добр;;;;;;;;;;;;;x
+GetCutSwordName_Bronze;Бронзов;;;;;;;;;;;;;x
+GetCutSwordName_Iron;Железн;;;;;;;;;;;;;x
+GetCutSwordName_Great;Велик;;;;;;;;;;;;;x
+GetCutSwordName_Blood;Кровав;;;;;;;;;;;;;x
+GetCutSwordName_Frozen;Ледян;;;;;;;;;;;;;x
+GetCutSwordName_Cruel;Жесток;;;;;;;;;;;;;x
+GetCutSwordName_Swift;Быстр;;;;;;;;;;;;;x
+GetCutSwordName_Solar;Солнечн;;;;;;;;;;;;;x
+GetCutSwordName_Earth;Земн;;;;;;;;;;;;;x
+GetCutSwordName_Town;Городск;;;;;;;;;;;;;x
+GetCutSwordName_Ring;Звонк;;;;;;;;;;;;;x
+GetCutSwordName_Green;Зелен;;;;;;;;;;;;;x
+GetCutSwordName_Grey;Сер;;;;;;;;;;;;;x
+GetCutSwordName_Pink;Румян;;;;;;;;;;;;;x
+GetCutSwordName_Crow;Ворон;;;;;;;;;;;;;x
+GetCutSwordName_Old;Стар;;;;;;;;;;;;;x
+GetCutSwordName_Pure;Непорочн;;;;;;;;;;;;;x
+GetCutSwordName_Gods;Божественн;;;;;;;;;;;;;x
+GetCutSwordName_Lion;Львин;;;;;;;;;;;;;x
+GetCutSwordName_Dragon;Дракон;;;;;;;;;;;;;x
+GetCutSwordName_Wolf;Волч;;;;;;;;;;;;;x
+GetCutSwordName_Stag;Олен;;;;;;;;;;;;;x
+GetCutSwordName_Falcon;Соколин;;;;;;;;;;;;;x
+GetCutSwordName_Far;Дальн;;;;;;;;;;;;;x
+GetCutSwordName_Brave;Отважн;;;;;;;;;;;;;x
+GetCutSwordName_Tall;Длинн;;;;;;;;;;;;;x
+GetCutSwordName_Just;Справедлив;;;;;;;;;;;;;x
+GetCutSwordName_Fair;Честн;;;;;;;;;;;;;x
+GetCutSwordName_Quick;Скор;;;;;;;;;;;;;x
+GetCutSwordName_Slow;Медленн;;;;;;;;;;;;;x
+GetCutSwordName_Strong;Сильн;;;;;;;;;;;;;x
+GetCutSwordName_Dull;Туп;;;;;;;;;;;;;x
+GetCutSwordName_Giant;Гигантск;;;;;;;;;;;;;x
+GetCutSwordName_Salt;Солён;;;;;;;;;;;;;x
+GetCutSwordName_Rude;Груб;;;;;;;;;;;;;x
+GetCutSwordName_Drown;Утонувш;;;;;;;;;;;;;x
+GetCutSwordName_Grace;Изящн;;;;;;;;;;;;;x
+GetCutSwordName_Love;Влюблённ;;;;;;;;;;;;;x
+GetCutSwordName_Dire;Ужасн;;;;;;;;;;;;;x
+GetCutSwordName_Wake;Пробужденн;;;;;;;;;;;;;x
+GetCutSwordName_Silent;Тих;;;;;;;;;;;;;x
+GetCutSwordName_Mad;Безумн;;;;;;;;;;;;;x
+GetCutSwordName_Bold;Смел;;;;;;;;;;;;;x
+GetCutSwordName_Jade;Нефритов;;;;;;;;;;;;;x
+GetCutSwordName_Open;Открыт;;;;;;;;;;;;;x
+GetCutSwordName_Sand;Песчан;;;;;;;;;;;;;x
+GetCutSwordName_Dusk;Сумеречн;;;;;;;;;;;;;x
+GetCutSwordName_Bitter;Яростн;;;;;;;;;;;;;x
+GetCutSwordName_Oaken;Дубов;;;;;;;;;;;;;x
+GetCutSwordName_Sharp;Остр;;;;;;;;;;;;;x
+GetCutSwordName_Pale;Бледн;;;;;;;;;;;;;x
+GetCutSwordName_Even;Четн;;;;;;;;;;;;;x
+GetCutSwordName_Hard;Крепк;;;;;;;;;;;;;x
+GetCutSwordName_Sweet;Сладк;;;;;;;;;;;;;x
+GetCutSwordName_Ebon;Эбонитов;;;;;;;;;;;;;x
+GetCutSwordName_Wild;Дик;;;;;;;;;;;;;x
+GetCutSwordName_Grim;Мрачн;;;;;;;;;;;;;x
+GetCutSwordName_Ever;Вечн;;;;;;;;;;;;;x
 # engraving for forged weapon
 string_engraving_title_weapon;[Root.GetWeaponType] с гравировкой "[Root.PrimaryTitle.GetName]";x;;;
 # Yi Ti God Emperor name

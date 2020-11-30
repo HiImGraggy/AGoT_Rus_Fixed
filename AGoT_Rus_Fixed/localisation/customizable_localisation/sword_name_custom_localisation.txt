@@ -1,0 +1,2623 @@
+
+defined_text = { # fixed
+	name = GetSwordName
+	
+#	text = {
+#		localisation_key = GetSwordName_A #One word, "prefix-suffix" e.g. "Blackfyre"
+#		weight_multiplier = {
+#			factor = 100
+#		}
+#	}
+#	text = {
+#		localisation_key = GetSwordName_B #Two Word, "prefix suffix" e.g. "Black Sister"
+#		weight_multiplier = {
+#			factor = 100
+#		}
+#	}
+	text = {
+		localisation_key = GetOverwriteSwordName #New Two Word, "prefix suffix" e.g. "Black Sister" (from ru_custom_localisation)
+		weight_multiplier = {
+			factor = 200
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_C #One Word, e.g. "Compassion"
+		weight_multiplier = {
+			factor = 30
+		}
+	}
+}
+
+defined_text = { #used for GetSwordName_C, so two word suffixes and one word specials can be used
+	name = GetSwordName_OneWord
+	
+	text = {
+		localisation_key = GetSwordName_OneWord_A #GetSwordName_TwoWord_Suffix
+	}
+	
+	text = {
+		localisation_key = GetSwordName_OneWord_B #GetSwordName_OneWord_Special
+	}
+}
+defined_text = {
+	name = GetSwordName_OneWord_Prefix
+	
+	text = {
+		localisation_key = GetSwordName_Black
+	}
+	text = {
+		localisation_key = GetSwordName_White
+	}
+	text = {
+		localisation_key = GetSwordName_Red
+	}
+	text = {
+		localisation_key = GetSwordName_Blue
+	}
+	text = {
+		localisation_key = GetSwordName_Gold
+	}
+	text = {
+		localisation_key = GetSwordName_Golden
+	}
+	text = {
+		localisation_key = GetSwordName_Silver
+	}
+	text = {
+		localisation_key = GetSwordName_Bright
+	}
+	text = {
+		localisation_key = GetSwordName_Dark
+	}
+	text = {
+		localisation_key = GetSwordName_Heart
+	}
+	text = {
+		localisation_key = GetSwordName_Hearts
+	}
+	text = {
+		localisation_key = GetSwordName_Light
+	}
+	text = {
+		localisation_key = GetSwordName_Long
+	}
+	text = {
+		localisation_key = GetSwordName_Night
+	}
+	text = {
+		localisation_key = GetSwordName_Short
+	}
+	text = {
+		localisation_key = GetSwordName_Good
+	}
+	text = {
+		localisation_key = GetSwordName_This.GetTitles
+		trigger = {
+			owner = { 
+				higher_tier_than = BARON
+				NAND = {
+					tier = KING
+					government = feudal_government_LP
+				}
+			}	
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_This.Spouse.GetTitles
+		trigger = {
+			owner = { 
+				higher_tier_than = BARON
+				is_married = yes
+				spouse = { reverse_opinion = { who = PREV value = 20 } }
+				NAND = {
+					tier = KING
+					government = feudal_government_LP
+				}
+			}	
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_This.TopLiege.GetTitles
+		trigger = {
+			owner = { 
+				top_liege = {
+					reverse_opinion = { who = PREV value = 40 }
+					NAND = {
+						tier = KING
+						government = feudal_government_LP
+					}
+				}	
+			}	
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_This.TopLiege.Spouse.GetTitles
+		trigger = {
+			owner = { 
+				top_liege = {
+					is_married = yes
+					spouse = { reverse_opinion = { who = PREVPREV value = 40 } }
+					NAND = {
+						tier = KING
+						government = feudal_government_LP
+					}
+				}	
+			}	
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Mourn
+	}
+	text = {
+		localisation_key = GetSwordName_Death
+	}
+	text = {
+		localisation_key = GetSwordName_Shadow
+	}
+	text = {
+		localisation_key = GetSwordName_Storm
+		weight_multiplier = {
+			factor = 1
+			modifier = {
+				factor = 10
+				culture = stormlander
+			}
+		}	
+	}
+	text = {
+		localisation_key = GetSwordName_Bronze
+	}
+	text = {
+		localisation_key = GetSwordName_Fire
+	}
+	text = {
+		localisation_key = GetSwordName_Iron
+		weight_multiplier = {
+			factor = 1
+			modifier = {
+				factor = 10
+				culture_group = iron_isles_culture
+			}
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Great
+	}
+	text = {
+		localisation_key = GetSwordName_Blood
+	}
+	text = {
+		localisation_key = GetSwordName_Frozen
+	}
+	text = {
+		localisation_key = GetSwordName_Ice
+		trigger = {
+			owner = { 
+				OR = {
+					culture_group = first_men
+					culture_group = free_folk
+					capital_scope = { region = world_westeros_north }
+					dynasty = 59
+				}
+			}	
+		}
+		weight_multiplier = {
+			factor = 10
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Hells
+	}
+	text = {
+		localisation_key = GetSwordName_Will
+	}
+	text = {
+		localisation_key = GetSwordName_Blaze
+	}
+	text = {
+		localisation_key = GetSwordName_Sun
+	}
+	text = {
+		localisation_key = GetSwordName_Cruel
+	}
+	text = {
+		localisation_key = GetSwordName_Oath
+	}
+	text = {
+		localisation_key = GetSwordName_Wither
+	}
+	text = {
+		localisation_key = GetSwordName_Draught
+	}
+	text = {
+		localisation_key = GetSwordName_Wind
+	}
+	text = {
+		localisation_key = GetSwordName_Swift
+	}
+	text = {
+		localisation_key = GetSwordName_Snow
+		trigger = {
+			owner = { 
+				OR = {
+					culture_group = first_men
+					culture_group = free_folk
+					capital_scope = { region = world_westeros_north }
+					dynasty = 59
+				}
+			}	
+		}
+		weight_multiplier = {
+			factor = 10
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Blight
+	}
+	text = {
+		localisation_key = GetSwordName_Solar
+	}
+	text = {
+		localisation_key = GetSwordName_Earth
+	}
+	text = {
+		localisation_key = GetSwordName_Life
+	}
+	text = {
+		localisation_key = GetSwordName_Herons
+	}
+	text = {
+		localisation_key = GetSwordName_Way
+	}
+	text = {
+		localisation_key = GetSwordName_Wound
+	}
+	text = {
+		localisation_key = GetSwordName_Town
+	}
+	text = {
+		localisation_key = GetSwordName_Ring
+	}
+	text = {
+		localisation_key = GetSwordName_Green
+	}
+	text = {
+		localisation_key = GetSwordName_Grey
+	}
+	text = {
+		localisation_key = GetSwordName_Pink
+	}
+	text = {
+		localisation_key = GetSwordName_Crow
+	}
+	text = {
+		localisation_key = GetSwordName_Spring
+	}
+	text = {
+		localisation_key = GetSwordName_Winter
+		weight_multiplier = {
+			factor = 1
+			modifier = {
+				factor = 10
+				OR = {
+					culture_group = first_men
+					culture_group = free_folk
+					capital_scope = { region = world_westeros_north }
+					dynasty = 59
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Summer
+	}
+	text = {
+		localisation_key = GetSwordName_Old
+	}
+	text = {
+		localisation_key = GetSwordName_Pure
+	}
+	text = {
+		localisation_key = GetSwordName_Gods
+	}
+	text = {
+		localisation_key = GetSwordName_Lion
+		trigger = {
+			owner = { 
+				OR = {
+					dynasty = 190
+					dynasty = 197
+					dynasty = 235
+				}
+			}	
+		}
+		weight_multiplier = {
+			factor = 10
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Dragon
+		trigger = {
+			owner = { 
+				OR = {
+					trait = dragon_rider
+					
+					dynasty = 496 #Targaryen
+					dynasty = 57 #Blackfyre
+					#Targ Cadets
+					dynasty = 450204
+					dynasty = 450205
+					dynasty = 450206
+					dynasty = 450207
+				}
+			}	
+		}
+		weight_multiplier = {
+			factor = 10
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Wolf
+		trigger = {
+			owner = { dynasty = 59 }
+		}
+		weight_multiplier = {
+			factor = 10
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Stag
+		trigger = {
+			owner = { 
+				OR = {
+					dynasty = 317
+					dynasty = 1544
+				}	
+			}	
+		}
+		weight_multiplier = {
+			factor = 10
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Rose
+		trigger = {
+			owner = { dynasty = 253 }
+		}
+		weight_multiplier = {
+			factor = 10
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Falcon
+		trigger = {
+			owner = { 
+				OR = {
+					dynasty = 178
+					trait = falconer
+				}
+			}	
+		}
+		weight_multiplier = {
+			factor = 10
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Kraken
+		trigger = {
+			owner = { dynasty = 107 }
+		}
+		weight_multiplier = {
+			factor = 10
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Rebel
+	}
+	text = {
+		localisation_key = GetSwordName_Foes
+	}
+	text = {
+		localisation_key = GetSwordName_Glow
+	}
+	text = {
+		localisation_key = GetSwordName_Torments
+	}
+	text = {
+		localisation_key = GetSwordName_Raven
+	}
+	text = {
+		localisation_key = GetSwordName_Coin
+	}
+	text = {
+		localisation_key = GetSwordName_Doom
+	}
+	text = {
+		localisation_key = GetSwordName_Far
+	}
+	text = {
+		localisation_key = GetSwordName_Mind
+	}
+	text = {
+		localisation_key = GetSwordName_Shield
+	}
+	text = {
+		localisation_key = GetSwordName_Sight
+	}
+	text = {
+		localisation_key = GetSwordName_Rain
+	}
+	text = {
+		localisation_key = GetSwordName_Sage
+	}
+	text = {
+		localisation_key = GetSwordName_Brave
+	}
+	text = {
+		localisation_key = GetSwordName_Chaos
+	}
+	text = {
+		localisation_key = GetSwordName_Key
+	}
+	text = {
+		localisation_key = GetSwordName_Tall
+	}
+	text = {
+		localisation_key = GetSwordName_Just
+	}
+	text = {
+		localisation_key = GetSwordName_Pan
+	}
+	text = {
+		localisation_key = GetSwordName_Bastard
+		trigger = {
+			owner = { 
+				OR = {
+					trait = bastard
+					trait = legit_bastard
+				}
+			}	
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Twin
+	}
+	text = {
+		localisation_key = GetSwordName_Fair
+	}
+	text = {
+		localisation_key = GetSwordName_Quick
+	}
+	text = {
+		localisation_key = GetSwordName_Slow
+	}
+	text = {
+		localisation_key = GetSwordName_Strong
+	}
+	text = {
+		localisation_key = GetSwordName_Duel
+	}
+	text = {
+		localisation_key = GetSwordName_Sloth
+	}
+	text = {
+		localisation_key = GetSwordName_Zeal
+	}
+	text = {
+		localisation_key = GetSwordName_Trust
+	}
+	text = {
+		localisation_key = GetSwordName_Brood
+	}
+	text = {
+		localisation_key = GetSwordName_Dull
+	}
+	text = {
+		localisation_key = GetSwordName_Giant
+	}
+	text = {
+		localisation_key = GetSwordName_Salt
+		weight_multiplier = {
+			factor = 1
+			modifier = {
+				factor = 10
+				culture_group = iron_isles_culture
+			}
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Rude
+	}
+	text = {
+		localisation_key = GetSwordName_Drown
+		weight_multiplier = {
+			factor = 1
+			modifier = {
+				factor = 10
+				culture_group = iron_isles_culture
+			}
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Grace
+	}
+	text = {
+		localisation_key = GetSwordName_Love
+	}
+	text = {
+		localisation_key = GetSwordName_Eagle
+	}
+	text = {
+		localisation_key = GetSwordName_Dire
+	}
+	text = {
+		localisation_key = GetSwordName_Wake
+	}
+	text = {
+		localisation_key = GetSwordName_Silent
+	}
+	text = {
+		localisation_key = GetSwordName_Half
+	}
+	text = {
+		localisation_key = GetSwordName_Mad
+	}
+	text = {
+		localisation_key = GetSwordName_Bold
+	}
+	text = {
+		localisation_key = GetSwordName_Truth
+	}
+	text = {
+		localisation_key = GetSwordName_Jade
+	}
+	text = {
+		localisation_key = GetSwordName_Open
+	}
+	text = {
+		localisation_key = GetSwordName_World
+	}
+	text = {
+		localisation_key = GetSwordName_Sand
+	}
+	text = {
+		localisation_key = GetSwordName_Dusk
+	}
+	text = {
+		localisation_key = GetSwordName_Bitter
+	}
+	text = {
+		localisation_key = GetSwordName_Break
+	}
+	text = {
+		localisation_key = GetSwordName_Oaken
+	}
+	text = {
+		localisation_key = GetSwordName_Sharp
+	}
+	text = {
+		localisation_key = GetSwordName_Pale
+	}
+	text = {
+		localisation_key = GetSwordName_Even
+	}
+	text = {
+		localisation_key = GetSwordName_Hard
+	}
+	text = {
+		localisation_key = GetSwordName_Sweet
+	}
+	text = {
+		localisation_key = GetSwordName_Ebon
+	}
+	text = {
+		localisation_key = GetSwordName_Sea
+		trigger = { owner = { location = { port = yes } } }
+	}
+	text = {
+		localisation_key = GetSwordName_Wild
+	}
+	text = {
+		localisation_key = GetSwordName_Grim
+	}
+	text = {
+		localisation_key = GetSwordName_Woe
+	}
+	text = {
+		localisation_key = GetSwordName_Ever
+	}
+	text = {
+		localisation_key = GetSwordName_Battle
+	}
+	text = {
+		localisation_key = GetSwordName_Widow
+	}
+	text = {
+		localisation_key = GetSwordName_Frost
+	}
+}
+defined_text = {
+	name = GetSwordName_OneWord_Suffix
+	
+		text = {
+		localisation_key = GetSwordName_fyre
+		trigger = {
+			owner = { culture = high_valyrian }
+		}
+		weight_multiplier = {
+			factor = 10
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_roar
+	}
+	text = {
+		localisation_key = GetSwordName_bane
+	}
+	text = {
+		localisation_key = GetSwordName_claw
+	}
+	text = {
+		localisation_key = GetSwordName_GetWeaponType
+	}
+	text = {
+		localisation_key = GetSwordName_fall
+	}
+	text = {
+		localisation_key = GetSwordName_death
+	}
+	text = {
+		localisation_key = GetSwordName_rage
+	}
+	text = {
+		localisation_key = GetSwordName_raze
+	}
+	text = {
+		localisation_key = GetSwordName_fury
+	}
+	text = {
+		localisation_key = GetSwordName_soul
+	}
+	text = {
+		localisation_key = GetSwordName_reaver
+		trigger = { owner = { culture_group = iron_isles_culture } }
+		weight_multiplier = {
+			factor = 10
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_ghost
+	}
+	text = {
+		localisation_key = GetSwordName_whisper
+	}
+	text = {
+		localisation_key = GetSwordName_breaker
+	}
+	text = {
+		localisation_key = GetSwordName_slaughter
+	}
+	text = {
+		localisation_key = GetSwordName_weep
+	}
+	text = {
+		localisation_key = GetSwordName_slayer
+	}
+	text = {
+		localisation_key = GetSwordName_moon
+	}
+	text = {
+		localisation_key = GetSwordName_breath
+	}
+	text = {
+		localisation_key = GetSwordName_blade
+	}
+	text = {
+		localisation_key = GetSwordName_steel
+	}
+	text = {
+		localisation_key = GetSwordName_stalker
+	}
+	text = {
+		localisation_key = GetSwordName_brand
+	}
+	text = {
+		localisation_key = GetSwordName_lust
+	}
+	text = {
+		localisation_key = GetSwordName_thunder
+	}
+	text = {
+		localisation_key = GetSwordName_scar
+	}
+	text = {
+		localisation_key = GetSwordName_song
+	}
+	text = {
+		localisation_key = GetSwordName_guard
+	}
+	text = {
+		localisation_key = GetSwordName_fear
+	}
+	text = {
+		localisation_key = GetSwordName_peril
+	}
+	text = {
+		localisation_key = GetSwordName_crusher
+	}
+	text = {
+		localisation_key = GetSwordName_spore
+	}
+	text = {
+		localisation_key = GetSwordName_shadow
+	}
+	text = {
+		localisation_key = GetSwordName_heart
+	}
+	text = {
+		localisation_key = GetSwordName_wand
+	}
+	text = {
+		localisation_key = GetSwordName_spinner
+	}
+	text = {
+		localisation_key = GetSwordName_finder
+	}
+	text = {
+		localisation_key = GetSwordName_wine
+	}
+	text = {
+		localisation_key = GetSwordName_burn
+	}
+	text = {
+		localisation_key = GetSwordName_lord
+	}
+	text = {
+		localisation_key = GetSwordName_flower
+	}
+	text = {
+		localisation_key = GetSwordName_flayer
+		trigger = {
+			owner = { dynasty = 87 } #Bolton
+		}
+		weight_multiplier = {
+			factor = 10
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_dream
+	}
+	text = {
+		localisation_key = GetSwordName_knight
+		trigger = { owner = { trait = knight } }
+	}
+	text = {
+		localisation_key = GetSwordName_skin
+	}
+	text = {
+		localisation_key = GetSwordName_river
+	}
+	text = {
+		localisation_key = GetSwordName_caller
+	}
+	text = {
+		localisation_key = GetSwordName_shaper
+	}
+	text = {
+		localisation_key = GetSwordName_bearer
+	}
+	text = {
+		localisation_key = GetSwordName_pact
+	}
+	text = {
+		localisation_key = GetSwordName_wand
+	}
+	text = {
+		localisation_key = GetSwordName_bringer
+	}
+	text = {
+		localisation_key = GetSwordName_power
+	}
+	text = {
+		localisation_key = GetSwordName_giver
+	}
+	text = {
+		localisation_key = GetSwordName_slicer
+		trigger = { 
+			owner = { 
+				OR = {
+					trait = lunatic
+					trait = cruel
+					trait = impaler
+				}
+				NOT = { trait = kind }
+			}	
+		}
+		weight_multiplier = { factor = 5 }
+	}
+	text = {
+		localisation_key = GetSwordName_blinder
+		trigger = { 
+			owner = { 
+				OR = {
+					trait = lunatic
+					trait = cruel
+					trait = impaler
+				}
+				NOT = { trait = kind }
+			}	
+		}
+		weight_multiplier = { factor = 5 }
+	}
+	text = {
+		localisation_key = GetSwordName_stone
+	}
+	text = {
+		localisation_key = GetSwordName_saver
+	}
+	text = {
+		localisation_key = GetSwordName_kind
+	}
+	text = {
+		localisation_key = GetSwordName_guilt
+	}
+	text = {
+		localisation_key = GetSwordName_maim
+		trigger = { 
+			owner = { 
+				OR = {
+					trait = lunatic
+					trait = cruel
+					trait = impaler
+				}
+				NOT = { trait = kind }
+			}	
+		}
+		weight_multiplier = { factor = 5 }
+	}
+	text = {
+		localisation_key = GetSwordName_hunt
+	}
+	text = {
+		localisation_key = GetSwordName_scheme
+	}
+	text = {
+		localisation_key = GetSwordName_watch
+	}
+	text = {
+		localisation_key = GetSwordName_cloak
+	}
+	text = {
+		localisation_key = GetSwordName_ruin
+	}
+	text = {
+		localisation_key = GetSwordName_walker
+	}
+	text = {
+		localisation_key = GetSwordName_warrior
+	}
+	text = {
+		localisation_key = GetSwordName_master
+	}
+	text = {
+		localisation_key = GetSwordName_hand
+	}
+	text = {
+		localisation_key = GetSwordName_mark
+	}
+	text = {
+		localisation_key = GetSwordName_binder
+	}
+	text = {
+		localisation_key = GetSwordName_slave
+	}
+	text = {
+		localisation_key = GetSwordName_flame
+	}
+	text = {
+		localisation_key = GetSwordName_tooth
+	}
+	text = {
+		localisation_key = GetSwordName_legend
+	}
+	text = {
+		localisation_key = GetSwordName_wind
+	}
+	text = {
+		localisation_key = GetSwordName_whirl
+	}
+	text = {
+		localisation_key = GetSwordName_side
+	}
+	text = {
+		localisation_key = GetSwordName_cast
+	}
+	text = {
+		localisation_key = GetSwordName_gazer
+	}
+	text = {
+		localisation_key = GetSwordName_viper
+	}
+	text = {
+		localisation_key = GetSwordName_hawk
+	}
+	text = {
+		localisation_key = GetSwordName_born
+	}
+	text = {
+		localisation_key = GetSwordName_eye
+	}
+	text = {
+		localisation_key = GetSwordName_maker
+	}
+	text = {
+		localisation_key = GetSwordName_raider
+		trigger = { owner = { is_allowed_to_loot = yes } }
+	}
+	text = {
+		localisation_key = GetSwordName_mask
+	}
+	text = {
+		localisation_key = GetSwordName_killer
+	}
+	text = {
+		localisation_key = GetSwordName_grief
+	}
+	text = {
+		localisation_key = GetSwordName_son
+	}
+}
+defined_text = {
+	name = GetSwordName_TwoWord_Prefix
+	
+	text = {
+		localisation_key = GetSwordName_MyDragons
+		trigger = { event_target:owners_dragon = { always = yes } }
+		weight_multiplier = { factor = 5 }
+	}
+	text = {
+		localisation_key = GetSwordName_Black
+	}
+	text = {
+		localisation_key = GetSwordName_White
+	}
+	text = {
+		localisation_key = GetSwordName_Red
+	}
+	text = {
+		localisation_key = GetSwordName_Blue
+	}
+	text = {
+		localisation_key = GetSwordName_Purple
+	}
+	text = {
+		localisation_key = GetSwordName_Silver
+	}
+	text = {
+		localisation_key = GetSwordName_Gold
+	}
+	text = {
+		localisation_key = GetSwordName_Golden
+	}
+	text = {
+		localisation_key = GetSwordName_Dark
+	}
+	text = {
+		localisation_key = GetSwordName_Lady's
+	}
+	text = {
+		localisation_key = GetSwordName_Long
+	}
+	text = {
+		localisation_key = GetSwordName_Night
+	}
+	text = {
+		localisation_key = GetSwordName_Titan's
+		trigger = {
+			owner = { 
+				OR = {
+					culture = braavosi
+					capital_scope = { region = world_braavos }
+				}
+			}	
+		}
+		weight_multiplier = {
+			factor = 10
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Hatred's
+	}
+	text = {
+		localisation_key = GetSwordName_Fortune's
+	}
+	text = {
+		localisation_key = GetSwordName_Shadow's
+	}
+	text = {
+		localisation_key = GetSwordName_Storm's
+		weight_multiplier = {
+			factor = 1
+			modifier = {
+				factor = 10
+				culture = stormlander
+			}
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Bronze
+	}
+	text = {
+		localisation_key = GetSwordName_Iron
+		weight_multiplier = {
+			factor = 1
+			modifier = {
+				factor = 10
+				culture_group = iron_isles_culture
+			}
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Faith's
+	}
+	text = {
+		localisation_key = GetSwordName_Whisper's
+	}
+	text = {
+		localisation_key = GetSwordName_Frozen
+	}
+	text = {
+		localisation_key = GetSwordName_Moon
+	}
+	text = {
+		localisation_key = GetSwordName_Sun's
+	}
+	text = {
+		localisation_key = GetSwordName_Son's
+	}
+	text = {
+		localisation_key = GetSwordName_Eternal
+	}
+	text = {
+		localisation_key = GetSwordName_Doom's
+	}
+	text = {
+		localisation_key = GetSwordName_Hope's
+	}
+	text = {
+		localisation_key = GetSwordName_Butcher's
+	}
+	text = {
+		localisation_key = GetSwordName_Destiny's
+	}
+	text = {
+		localisation_key = GetSwordName_Frail
+	}
+	text = {
+		localisation_key = GetSwordName_Misty
+	}
+	text = {
+		localisation_key = GetSwordName_Unending
+	}
+	text = {
+		localisation_key = GetSwordName_Life's
+	}
+	text = {
+		localisation_key = GetSwordName_Sailor's
+		trigger = { owner = { location = { port = yes } } }
+	}
+	text = {
+		localisation_key = GetSwordName_Blessed
+	}
+	text = {
+		localisation_key = GetSwordName_Misfortune's
+	}
+	text = {
+		localisation_key = GetSwordName_Dire
+	}
+	text = {
+		localisation_key = GetSwordName_Pain's
+	}
+	text = {
+		localisation_key = GetSwordName_Truth's
+	}
+	text = {
+		localisation_key = GetSwordName_Snow's
+		trigger = {
+			owner = { 
+				OR = {
+					culture_group = first_men
+					culture_group = free_folk
+					capital_scope = { region = world_westeros_north }
+					dynasty = 59
+				}
+			}	
+		}
+		weight_multiplier = {
+			factor = 10
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Hero's
+	}
+	text = {
+		localisation_key = GetSwordName_Crystal
+	}
+	text = {
+		localisation_key = GetSwordName_Grey
+	}
+	text = {
+		localisation_key = GetSwordName_GetNobleName's
+	}
+	text = {
+		localisation_key = GetSwordName_This.GetTitles
+		trigger = {
+			owner = { 
+				higher_tier_than = BARON
+				NAND = {
+					tier = KING
+					government = feudal_government_LP
+				}
+			}	
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_This.Spouse.GetTitle's
+		trigger = {
+			owner = { 
+				higher_tier_than = BARON
+				is_married = yes
+				spouse = { reverse_opinion = { who = PREV value = 20 } }
+				NAND = {
+					tier = KING
+					government = feudal_government_LP
+				}
+			}	
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_This.TopLiege.GetTitle's
+		trigger = {
+			owner = { 
+				top_liege = {
+					reverse_opinion = { who = PREV value = 40 }
+					NAND = {
+						tier = KING
+						government = feudal_government_LP
+					}
+				}	
+			}	
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_This.TopLiege.Spouse.GetTitle's
+		trigger = {
+			owner = { 
+				top_liege = {
+					is_married = yes
+					spouse = { reverse_opinion = { who = PREVPREV value = 40 } }
+					NAND = {
+						tier = KING
+						government = feudal_government_LP
+					}
+				}	
+			}	
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Crow's
+	}
+	text = {
+		localisation_key = GetSwordName_Winter's
+		weight_multiplier = {
+			factor = 1
+			modifier = {
+				factor = 10
+				OR = {
+					culture_group = first_men
+					culture_group = free_folk
+					capital_scope = { region = world_westeros_north }
+					dynasty = 59
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Summer's
+	}
+	text = {
+		localisation_key = GetSwordName_Spring's
+	}
+	text = {
+		localisation_key = GetSwordName_River's
+	}
+	text = {
+		localisation_key = GetSwordName_Gods
+	}
+	text = {
+		localisation_key = GetSwordName_Seven's
+		trigger = { owner = { religion = the_seven } }
+	}
+	text = {
+		localisation_key = GetSwordName_RandomGodName
+		trigger = {
+			owner = { religion = the_seven } 
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_FirstName
+	}
+	text = {
+		localisation_key = GetSwordName_CultureGroup
+		trigger = { 
+			owner = { 
+				NOT = { culture = rhoynar }
+				NOT = { culture_group = first_men }
+				NOT = { culture_group = free_folk }
+				NOT = { culture_group = free_cities }
+				NOT = { culture = lhazareen }
+				NOT = { culture = omberi }
+				NOT = { culture_group = yi_ti_group }
+				NOT = { culture_group = jade_islands_group }
+				NOT = { culture_group = asshai_group }
+				NOT = { culture_group = summer_islands }
+				NOT = { culture_group = sothoryos_islands }
+			}	
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Cultures
+		trigger = { 
+			owner = { 
+				NOR = { 
+					culture_group = andal
+					AND = {
+						culture_group = first_men
+						NOT = { culture = skagosi }
+					}
+					culture = myrman
+					culture = sarnorian
+					culture = shadowlander
+					culture = brindlemen
+					
+					culture = half_southron 
+					culture = frozen_shore
+					culture = cannibal_clan
+					AND = {
+						culture_group = dornish
+						NOT = { culture = rhoynar }
+					}
+					culture = high_valyrian
+					culture = western_valyrian
+					culture = eastern_valyrian
+				}	
+			}	
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Culture
+		trigger = { 
+			owner = { 
+				OR = {
+					culture_group = andal
+					AND = {
+						culture_group = first_men
+						NOT = { culture = skagosi }
+					}
+					culture = myrman
+					culture = sarnorian
+					culture = shadowlander
+					culture = brindlemen
+				}	
+			}	
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Lion's
+		trigger = {
+			owner = { 
+				OR = {
+					dynasty = 190
+					dynasty = 197
+					dynasty = 235
+				}
+			}	
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Dragon's
+		trigger = {
+			owner = { 
+				OR = {
+					trait = dragon_rider
+					
+					dynasty = 496 #Targaryen
+					dynasty = 57 #Blackfyre
+					#Targ Cadets
+					dynasty = 450204
+					dynasty = 450205
+					dynasty = 450206
+					dynasty = 450207
+				}
+			}	
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Wolf's
+		trigger = {
+			owner = { dynasty = 59 }
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Stag's
+		trigger = {
+			owner = { 
+				OR = {
+					dynasty = 317
+					dynasty = 1544
+				}	
+			}	
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Rose's
+		trigger = {
+			owner = { dynasty = 253 }
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Falcon's
+		trigger = {
+			owner = { 
+				OR = {
+					dynasty = 178
+					trait = falconer
+				}	
+			}	
+		}	
+	}
+	text = {
+		localisation_key = GetSwordName_Kraken's
+		trigger = {
+			owner = { dynasty = 107 }
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Dawn's
+	}
+	text = {
+		localisation_key = GetSwordName_Stone
+	}
+	text = {
+		localisation_key = GetSwordName_Singing
+	}
+	text = {
+		localisation_key = GetSwordName_Fierce
+	}
+	text = {
+		localisation_key = GetSwordName_Brave
+		trigger = { owner = { trait = brave } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Humble
+		trigger = { owner = { trait = humble } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Kind
+		trigger = { owner = { trait = kind } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Brutal
+		trigger = { owner = { trait = ruthless } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Elusive
+	}
+	text = {
+		localisation_key = GetSwordName_Brilliant
+	}
+	text = {
+		localisation_key = GetSwordName_Quick
+	}
+	text = {
+		localisation_key = GetSwordName_Duelist's
+		trigger = { owner = { trait = duelist } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Hunter's
+		trigger = { owner = { trait = hunter } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Falconer's
+		trigger = { owner = { trait = falconer } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Pride's
+		trigger = { owner = { trait = proud } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Honest
+		trigger = { owner = { trait = honest } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Shy
+		trigger = { owner = { trait = shy } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Zealot's
+		trigger = { owner = { trait = zealous } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Seducer's
+		trigger = { owner = { trait = seducer } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Schemer's
+		trigger = { owner = { trait = schemer } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Willful
+	}
+	text = {
+		localisation_key = GetSwordName_Ruin's
+	}
+	text = {
+		localisation_key = GetSwordName_Walker's
+	}
+	text = {
+		localisation_key = GetSwordName_Widow's
+	}
+	text = {
+		localisation_key = GetSwordName_Warrior's
+	}
+	text = {
+		localisation_key = GetSwordName_Tiger's
+		trigger = { owner = { trait = tiger } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Elephant's
+		trigger = { owner = { trait = elephant } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Pirate's
+		trigger = { owner = { trait = pirate } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Holy
+		trigger = { owner = { trait = zealous } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Unyielding
+	}
+	text = {
+		localisation_key = GetSwordName_Stubborn
+		trigger = { owner = { trait = stubborn } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Ruthless
+		trigger = { owner = { trait = ruthless } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Silent
+	}
+	text = {
+		localisation_key = GetSwordName_Drowned
+		trigger = { owner = { is_drowned_god_religion_trigger = yes } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Eagle's
+	}
+	text = {
+		localisation_key = GetSwordName_Slave's
+	}
+	text = {
+		localisation_key = GetSwordName_Strange
+	}
+	text = {
+		localisation_key = GetSwordName_Cleansing
+	}
+	text = {
+		localisation_key = GetSwordName_Exalted
+	}
+	text = {
+		localisation_key = GetSwordName_Whirling
+	}
+	text = {
+		localisation_key = GetSwordName_Hollow
+	}
+	text = {
+		localisation_key = GetSwordName_Accursed
+	}
+	text = {
+		localisation_key = GetSwordName_Undying
+	}
+	text = {
+		localisation_key = GetSwordName_Benign
+	}
+	text = {
+		localisation_key = GetSwordName_Righteous
+	}
+	text = {
+		localisation_key = GetSwordName_Jade
+	}
+	text = {
+		localisation_key = GetSwordName_Winged
+	}
+	text = {
+		localisation_key = GetSwordName_Viper's
+	}
+	text = {
+		localisation_key = GetSwordName_Gallant
+	}
+	text = {
+		localisation_key = GetSwordName_World's
+	}
+	text = {
+		localisation_key = GetSwordName_GetEarthName's
+	}
+	text = {
+		localisation_key = GetSwordName_GetMoonName's
+	}
+	text = {
+		localisation_key = GetSwordName_GetRegionalBigAnimalCap's
+	}
+	text = {
+		localisation_key = GetSwordName_Unlikely
+	}
+	text = {
+		localisation_key = GetSwordName_Bright
+	}
+	text = {
+		localisation_key = GetSwordName_Morning's
+	}
+	text = {
+		localisation_key = GetSwordName_Dusk's
+	}
+	text = {
+		localisation_key = GetSwordName_Pale
+	}
+	text = {
+		localisation_key = GetSwordName_Raider's
+		trigger = { owner = { is_allowed_to_loot = yes } }
+	}
+	text = {
+		localisation_key = GetSwordName_Faithful
+	}
+	text = {
+		localisation_key = GetSwordName_Mighty
+	}
+	text = {
+		localisation_key = GetSwordName_Daring
+	}
+	text = {
+		localisation_key = GetSwordName_Vieled
+	}
+	text = {
+		localisation_key = GetSwordName_Last
+	}
+	text = {
+		localisation_key = GetSwordName_Mummer's
+	}
+	text = {
+		localisation_key = GetSwordName_Grim
+	}
+	text = {
+		localisation_key = GetSwordName_Savage
+	}
+	text = {
+		localisation_key = GetSwordName_Devout
+	}
+	text = {
+		localisation_key = GetSwordName_Evening's
+	}
+	text = {
+		localisation_key = GetSwordName_Nimble
+	}
+	text = {
+		localisation_key = GetSwordName_Bard's
+	}
+}	
+defined_text = {
+	name = GetSwordName_TwoWord_Suffix
+	
+		text = {
+		localisation_key = GetSwordName_Sister
+	}
+	text = {
+		localisation_key = GetSwordName_Bane
+	}
+	text = {
+		localisation_key = GetSwordName_Maid
+	}
+	text = {
+		localisation_key = GetSwordName_Tooth
+	}
+	text = {
+		localisation_key = GetSwordName_Rain
+	}
+	text = {
+		localisation_key = GetSwordName_Grief
+	}
+	text = {
+		localisation_key = GetSwordName_Anger
+	}
+	text = {
+		localisation_key = GetSwordName_Death
+	}
+	text = {
+		localisation_key = GetSwordName_Glory
+	}
+	text = {
+		localisation_key = GetSwordName_Kiss
+	}
+	text = {
+		localisation_key = GetSwordName_Fury
+	}
+	text = {
+		localisation_key = GetSwordName_Talon
+	}
+	text = {
+		localisation_key = GetSwordName_Justice
+	}
+	text = {
+		localisation_key = GetSwordName_Passion
+	}
+	text = {
+		localisation_key = GetSwordName_Rage
+	}
+	text = {
+		localisation_key = GetSwordName_Touch
+	}
+	text = {
+		localisation_key = GetSwordName_Mourning
+	}
+	text = {
+		localisation_key = GetSwordName_Bite
+	}
+	text = {
+		localisation_key = GetSwordName_Guardian
+	}
+	text = {
+		localisation_key = GetSwordName_Might
+	}
+	text = {
+		localisation_key = GetSwordName_Fury
+	}
+	text = {
+		localisation_key = GetSwordName_Reaver
+		trigger = { owner = { culture_group = iron_isles_culture } }
+		weight_multiplier = {
+			factor = 10
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Hubris
+	}
+	text = {
+		localisation_key = GetSwordName_Maid
+	}
+	text = {
+		localisation_key = GetSwordName_Weaver
+	}
+	text = {
+		localisation_key = GetSwordName_Blood
+	}
+	text = {
+		localisation_key = GetSwordName_Chaos
+	}
+	text = {
+		localisation_key = GetSwordName_Tyranny
+	}
+	text = {
+		localisation_key = GetSwordName_Defender
+	}
+	text = {
+		localisation_key = GetSwordName_Slaughter
+	}
+	text = {
+		localisation_key = GetSwordName_Daughter
+	}
+	text = {
+		localisation_key = GetSwordName_Brother
+	}
+	text = {
+		localisation_key = GetSwordName_Father
+	}
+	text = {
+		localisation_key = GetSwordName_Sapphire
+	}
+	text = {
+		localisation_key = GetSwordName_Sorrow
+	}
+	text = {
+		localisation_key = GetSwordName_Cruelty
+	}
+	text = {
+		localisation_key = GetSwordName_Oath
+	}
+	text = {
+		localisation_key = GetSwordName_Promise
+	}
+	text = {
+		localisation_key = GetSwordName_Venom
+	}
+	text = {
+		localisation_key = GetSwordName_Vengeance
+	}
+	text = {
+		localisation_key = GetSwordName_Honour
+	}
+	text = {
+		localisation_key = GetSwordName_Pledge
+	}
+	text = {
+		localisation_key = GetSwordName_End
+	}
+	text = {
+		localisation_key = GetSwordName_Thunder
+	}
+	text = {
+		localisation_key = GetSwordName_Scar
+	}
+	text = {
+		localisation_key = GetSwordName_Song
+	}
+	text = {
+		localisation_key = GetSwordName_Denial
+	}
+	text = {
+		localisation_key = GetSwordName_Legacy
+	}
+	text = {
+		localisation_key = GetSwordName_Bitch
+	}
+	text = {
+		localisation_key = GetSwordName_Fear
+	}
+	text = {
+		localisation_key = GetSwordName_Bond
+	}
+	text = {
+		localisation_key = GetSwordName_Silence
+	}
+	text = {
+		localisation_key = GetSwordName_Vow
+	}
+	text = {
+		localisation_key = GetSwordName_Chance
+	}
+	text = {
+		localisation_key = GetSwordName_Scourge
+	}
+	text = {
+		localisation_key = GetSwordName_Eye
+	}
+	text = {
+		localisation_key = GetSwordName_Might
+	}
+	text = {
+		localisation_key = GetSwordName_Mercy
+	}
+	text = {
+		localisation_key = GetSwordName_Traitor
+	}
+	text = {
+		localisation_key = GetSwordName_Sting
+	}
+	text = {
+		localisation_key = GetSwordName_Forest
+	}
+	text = {
+		localisation_key = GetSwordName_Omen
+	}
+	text = {
+		localisation_key = GetSwordName_Throne
+	}
+	text = {
+		localisation_key = GetSwordName_Knight
+		trigger = { owner = { trait = knight } }
+	}
+	text = {
+		localisation_key = GetSwordName_Rogue
+	}
+	text = {
+		localisation_key = GetSwordName_Prince
+	}
+	text = {
+		localisation_key = GetSwordName_Law
+	}
+	text = {
+		localisation_key = GetSwordName_Rainbow
+	}
+	text = {
+		localisation_key = GetSwordName_Warden
+	}
+	text = {
+		localisation_key = GetSwordName_Luck
+	}
+	text = {
+		localisation_key = GetSwordName_Fall
+	}
+	text = {
+		localisation_key = GetSwordName_Rebel
+	}
+	text = {
+		localisation_key = GetSwordName_Foe
+	}
+	text = {
+		localisation_key = GetSwordName_Glow
+	}
+	text = {
+		localisation_key = GetSwordName_Air
+	}
+	text = {
+		localisation_key = GetSwordName_Torment
+		trigger = { 
+			owner = { 
+				OR = {
+					trait = lunatic
+					trait = cruel
+					trait = impaler
+				}
+				NOT = { trait = kind }
+			}	
+		}
+		weight_multiplier = { factor = 5 }
+	}
+	text = {
+		localisation_key = GetSwordName_Day
+	}
+	text = {
+		localisation_key = GetSwordName_Scalpel
+	}
+	text = {
+		localisation_key = GetSwordName_Blade
+	}
+	text = {
+		localisation_key = GetSwordName_Power
+	}
+	text = {
+		localisation_key = GetSwordName_Shield
+	}
+	text = {
+		localisation_key = GetSwordName_Soul
+	}
+	text = {
+		localisation_key = GetSwordName_Wound
+	}
+	text = {
+		localisation_key = GetSwordName_Memory
+	}
+	text = {
+		localisation_key = GetSwordName_Claw
+	}
+	text = {
+		localisation_key = GetSwordName_Child
+	}
+	text = {
+		localisation_key = GetSwordName_Master
+	}
+	text = {
+		localisation_key = GetSwordName_Key
+	}
+	text = {
+		localisation_key = GetSwordName_Wroth
+	}
+	text = {
+		localisation_key = GetSwordName_Protector
+	}
+	text = {
+		localisation_key = GetSwordName_Sentinel
+	}
+	text = {
+		localisation_key = GetSwordName_Poem
+	}
+	text = {
+		localisation_key = GetSwordName_Eminence
+	}
+	text = {
+		localisation_key = GetSwordName_Lunacy
+	}
+	text = {
+		localisation_key = GetSwordName_Bastard
+	}
+	text = {
+		localisation_key = GetSwordName_Scholar
+		trigger = { owner = { trait = scholar } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Impaler
+		trigger = { owner = { trait = impaler } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Chastity
+		trigger = { owner = { trait = chaste } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Greed
+	}
+	text = {
+		localisation_key = GetSwordName_Charity
+		trigger = { owner = { trait = charitable } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Envy
+		trigger = { owner = { trait = envious } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Deceit
+		trigger = { owner = { trait = deceitful } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Ambition
+		trigger = { owner = { trait = ambitious } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Cynic
+		trigger = { owner = { trait = cynical } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Trick
+	}
+	text = {
+		localisation_key = GetSwordName_Game
+	}
+	text = {
+		localisation_key = GetSwordName_Idol
+	}
+	text = {
+		localisation_key = GetSwordName_Immortality
+	}
+	text = {
+		localisation_key = GetSwordName_Cannibal
+		trigger = { owner = { trait = cannibal } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Master
+	}
+	text = {
+		localisation_key = GetSwordName_Dishonour
+	}
+	text = {
+		localisation_key = GetSwordName_Poison
+	}
+	text = {
+		localisation_key = GetSwordName_Mark
+	}
+	text = {
+		localisation_key = GetSwordName_Favour
+	}
+	text = {
+		localisation_key = GetSwordName_Grace
+	}
+	text = {
+		localisation_key = GetSwordName_Love
+	}
+	text = {
+		localisation_key = GetSwordName_Avenger
+	}
+	text = {
+		localisation_key = GetSwordName_Flame
+	}
+	text = {
+		localisation_key = GetSwordName_Usurper
+	}
+	text = {
+		localisation_key = GetSwordName_Martyr
+	}
+	text = {
+		localisation_key = GetSwordName_Legend
+	}
+	text = {
+		localisation_key = GetSwordName_Terror
+	}
+	text = {
+		localisation_key = GetSwordName_Butcher
+	}
+	text = {
+		localisation_key = GetSwordName_Wind
+	}
+	text = {
+		localisation_key = GetSwordName_Monster
+	}
+	text = {
+		localisation_key = GetSwordName_Purifier
+	}
+	text = {
+		localisation_key = GetSwordName_Confession
+	}
+	text = {
+		localisation_key = GetSwordName_Cunning
+	}
+	text = {
+		localisation_key = GetSwordName_Truth
+	}
+	text = {
+		localisation_key = GetSwordName_Peace
+	}
+	text = {
+		localisation_key = GetSwordName_Steel
+	}
+	text = {
+		localisation_key = GetSwordName_Weeper
+	}
+	text = {
+		localisation_key = GetSwordName_Woe
+	}
+	text = {
+		localisation_key = GetSwordName_Battle
+	}
+	text = {
+		localisation_key = GetSwordName_Triumph
+	}
+}	
+defined_text = {
+	name = GetSwordName_OneWord_Special
+	
+	text = {
+		localisation_key = GetSwordName_MyDragon
+		trigger = { event_target:owners_dragon = { always = yes } }
+		weight_multiplier = { factor = 5 }
+	}
+	text = {
+		localisation_key = GetSwordName_Compassion
+	}
+	text = {
+		localisation_key = GetSwordName_Concession
+	}
+	text = {
+		localisation_key = GetSwordName_Jade
+	}
+	text = {
+		localisation_key = GetSwordName_Kingmaker
+	}
+	text = {
+		localisation_key = GetSwordName_Extinction
+	}
+	text = {
+		localisation_key = GetSwordName_Redemption
+	}
+	text = {
+		localisation_key = GetSwordName_Cunning
+	}
+	text = {
+		localisation_key = GetSwordName_Betrayer
+	}
+	text = {
+		localisation_key = GetSwordName_Champion
+	}
+	text = {
+		localisation_key = GetSwordName_Desecration
+	}
+	text = {
+		localisation_key = GetSwordName_Peacekeeper
+	}
+	text = {
+		localisation_key = GetSwordName_Betrayal
+	}
+	text = {
+		localisation_key = GetSwordName_Summoner
+	}
+	text = {
+		localisation_key = GetSwordName_Incarnation
+	}
+	text = {
+		localisation_key = GetSwordName_Savagery
+	}
+	text = {
+		localisation_key = GetSwordName_Deflector
+	}
+	text = {
+		localisation_key = GetSwordName_Cometfell
+	}
+	text = {
+		localisation_key = GetSwordName_Phoenix
+	}
+	text = {
+		localisation_key = GetSwordName_Malignant
+	}
+	text = {
+		localisation_key = GetSwordName_Eternal
+	}
+	text = {
+		localisation_key = GetSwordName_Damnation
+	}
+	text = {
+		localisation_key = GetSwordName_Mangler
+	}
+	text = {
+		localisation_key = GetSwordName_Reckoning
+	}
+	text = {
+		localisation_key = GetSwordName_Delusion
+	}
+	text = {
+		localisation_key = GetSwordName_Visage
+	}
+	text = {
+		localisation_key = GetSwordName_Amnesia
+	}
+	text = {
+		localisation_key = GetSwordName_Harmony
+	}
+	text = {
+		localisation_key = GetSwordName_Souleater
+	}
+	text = {
+		localisation_key = GetSwordName_Phantom
+	}
+	text = {
+		localisation_key = GetSwordName_Malificent
+	}
+	text = {
+		localisation_key = GetSwordName_Nightmare
+	}
+	text = {
+		localisation_key = GetSwordName_Insanity
+	}
+	text = {
+		localisation_key = GetSwordName_Massacre
+	}
+	text = {
+		localisation_key = GetSwordName_Mirage
+	}
+	text = {
+		localisation_key = GetSwordName_Glorious
+	}
+	text = {
+		localisation_key = GetSwordName_Backbite
+	}
+	text = {
+		localisation_key = GetSwordName_Hywelbane
+	}
+	text = {
+		localisation_key = GetSwordName_The_Sword_of_capitalname
+		trigger = { 
+			owner = {
+				higher_tier_than = BARON 
+				capital_scope = { NOT = { has_province_flag = prohibited_nickname_location } }
+			}	
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_The_Sword_of_title
+		trigger = {
+			owner = {
+				higher_tier_than = COUNT 
+				is_nomadic = no
+			}	
+		}
+	}
+	text = {
+		localisation_key = GetSwordName_Dragnipur
+	}
+	text = {
+		localisation_key = GetSwordName_Callandor
+	}
+	text = {
+		localisation_key = GetSwordName_Scalpel
+	}
+	text = {
+		localisation_key = GetSwordName_Naegling
+	}
+	text = {
+		localisation_key = GetSwordName_Tamerlein
+	}
+	text = {
+		localisation_key = GetSwordName_Backbiter
+	}
+	text = {
+		localisation_key = GetSwordName_Gryffin
+	}
+	text = {
+		localisation_key = GetSwordName_Wayfinder
+	}
+	text = {
+		localisation_key = GetSwordName_Vanguard
+	}
+	text = {
+		localisation_key = GetSwordName_Glamdring
+	}
+	text = {
+		localisation_key = GetSwordName_Narsil
+	}
+	text = {
+		localisation_key = GetSwordName_Werewindle
+	}
+	text = {
+		localisation_key = GetSwordName_Clamorer
+	}
+	text = {
+		localisation_key = GetSwordName_Zirael
+	}
+	text = {
+		localisation_key = GetSwordName_Sihill
+	}
+	text = {
+		localisation_key = GetSwordName_Balaraw
+	}
+	text = {
+		localisation_key = GetSwordName_Hina
+	}
+	text = {
+		localisation_key = GetSwordName_Singing_Sword
+	}
+	text = {
+		localisation_key = GetSwordName_Master_Sword
+	}
+	text = {
+		localisation_key = GetSwordName_Humility
+	}
+	text = {
+		localisation_key = GetSwordName_Excelsior
+	}
+	text = {
+		localisation_key = GetSwordName_Guilty
+	}
+	text = {
+		localisation_key = GetSwordName_Caliburn
+	}
+	text = {
+		localisation_key = GetSwordName_Arondight
+	}
+	text = {
+		localisation_key = GetSwordName_Harp
+	}
+	text = {
+		localisation_key = GetSwordName_Possession
+	}
+	text = {
+		localisation_key = GetSwordName_Impregnation
+	}
+	text = {
+		localisation_key = GetSwordName_Kinslayer
+		trigger = { owner = { is_any_kinslayer_trigger = yes } }
+	}
+	text = {
+		localisation_key = GetSwordName_Celibacy
+		trigger = { owner = { trait = celibate } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Hedonist
+		trigger = { owner = { trait = hedonist } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Gardener
+		trigger = { owner = { trait = gardener } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Myticism
+		trigger = { owner = { trait = mystic } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Temperance
+		trigger = { owner = { trait = temeperate } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Diligence
+		trigger = { owner = { trait = diligent } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Patience
+		trigger = { owner = { trait = patient } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Contentment
+		trigger = { owner = { trait = content } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Inspiration
+	}
+	text = {
+		localisation_key = GetSwordName_Affection
+	}
+	text = {
+		localisation_key = GetSwordName_Timidity
+	}
+	text = {
+		localisation_key = GetSwordName_Indolence
+	}
+	text = {
+		localisation_key = GetSwordName_Conscience
+	}
+	text = {
+		localisation_key = GetSwordName_Curiousity
+	}
+	text = {
+		localisation_key = GetSwordName_Desertion
+	}
+	text = {
+		localisation_key = GetSwordName_Obedience
+	}
+	text = {
+		localisation_key = GetSwordName_Berserker
+		trigger = { owner = {  trait = berserker } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Ravager
+		trigger = { 
+			owner = { 
+				OR = {
+					trait = lunatic
+					trait = cruel
+					trait = impaler
+				}
+				NOT = { trait = kind }
+			}	
+		}
+		weight_multiplier = { factor = 5 }
+	}
+	text = {
+		localisation_key = GetSwordName_Adventure
+	}
+	text = {
+		localisation_key = GetSwordName_Authority
+		trigger = { owner = { trait = authoritative } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Obsession
+	}
+	text = {
+		localisation_key = GetSwordName_Resurrection
+	}
+	text = {
+		localisation_key = GetSwordName_Sympathy
+		trigger = { owner = { has_any_sympathy_trait_trigger = yes } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Empathy
+	}
+	text = {
+		localisation_key = GetSwordName_Apathy
+	}
+	text = {
+		localisation_key = GetSwordName_Liberator
+		trigger = { owner = { trait = liberator } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Freedom
+		trigger = { owner = { trait = liberator } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Dynasty
+	}
+	text = {
+		localisation_key = GetSwordName_Lawgiver
+	}
+	text = {
+		localisation_key = GetSwordName_Conqueror
+	}
+	text = {
+		localisation_key = GetSwordName_Restorer
+	}
+	text = {
+		localisation_key = GetSwordName_Whisper
+	}
+	text = {
+		localisation_key = GetSwordName_Beheader
+		trigger = { 
+			owner = { 
+				OR = {
+					trait = lunatic
+					trait = cruel
+					trait = impaler
+				}
+				NOT = { trait = kind }
+			}	
+		}
+		weight_multiplier = { factor = 5 }
+	}
+	text = {
+		localisation_key = GetSwordName_Survivor
+	}
+	text = {
+		localisation_key = GetSwordName_Destroyer
+	}
+	text = {
+		localisation_key = GetSwordName_Vengeful
+	}
+	text = {
+		localisation_key = GetSwordName_Tormentor
+		trigger = { 
+			owner = { 
+				OR = {
+					trait = lunatic
+					trait = cruel
+					trait = impaler
+				}
+				NOT = { trait = kind }
+			}	
+		}
+		weight_multiplier = { factor = 5 }
+	}
+	text = {
+		localisation_key = GetSwordName_Mutilation
+		trigger = { 
+			owner = { 
+				OR = {
+					trait = lunatic
+					trait = cruel
+					trait = impaler
+				}
+				NOT = { trait = kind }
+			}	
+		}
+		weight_multiplier = { factor = 5 }
+	}
+	text = {
+		localisation_key = GetSwordName_Despoiler
+		trigger = { 
+			owner = { 
+				OR = {
+					trait = lunatic
+					trait = cruel
+					trait = impaler
+				}
+				NOT = { trait = kind }
+			}	
+		}
+		weight_multiplier = { factor = 5 }
+	}
+	text = {
+		localisation_key = GetSwordName_Abomination
+		trigger = { 
+			owner = { 
+				OR = {
+					trait = lunatic
+					trait = cruel
+					trait = impaler
+				}
+				NOT = { trait = kind }
+			}	
+		}
+		weight_multiplier = { factor = 5 }
+	}
+	text = {
+		localisation_key = GetSwordName_Kingslayer
+		trigger = { owner = { has_nickname = nick_the_kingslayer } }
+		weight_multiplier = { factor = 20 }
+	}
+	text = {
+		localisation_key = GetSwordName_Submission
+	}
+	text = {
+		localisation_key = GetSwordName_Deliverence
+	}
+	text = {
+		localisation_key = GetSwordName_Illumination
+	}
+	text = {
+		localisation_key = GetSwordName_Exaltation
+	}
+	text = {
+		localisation_key = GetSwordName_Awakening
+	}
+	text = {
+		localisation_key = GetSwordName_Enlightenment
+	}
+	text = {
+		localisation_key = GetSwordName_Arrogance
+	}
+	text = {
+		localisation_key = GetSwordName_Resiliance
+	}
+	text = {
+		localisation_key = GetSwordName_Oppression
+	}
+	text = {
+		localisation_key = GetSwordName_Magnificence
+	}
+	text = {
+		localisation_key = GetSwordName_Prudence
+	}
+	text = {
+		localisation_key = GetSwordName_Brilliance
+	}
+	text = {
+		localisation_key = GetSwordName_Prodigy
+	}
+	text = {
+		localisation_key = GetSwordName_Elegance
+	}
+	text = {
+		localisation_key = GetSwordName_Evenstar
+	}
+	text = {
+		localisation_key = GetSwordName_GetSunName
+	}
+	text = {
+		localisation_key = GetSwordName_GetRandomPlanetName
+	}
+	text = {
+		localisation_key = GetSwordName_GetAlcoholicDrink
+		trigger = { owner = { trait = drunkard } }
+		weight_multiplier = { factor = 10 }
+	}
+	text = {
+		localisation_key = GetSwordName_Conciliator
+	}
+	text = {
+		localisation_key = GetSwordName_Implacable
+	}
+	text = {
+		localisation_key = GetSwordName_Breaker
+	}
+	text = {
+		localisation_key = GetSwordName_Burner
+	}
+	text = {
+		localisation_key = GetSwordName_Anvilbreaker
+	}
+	text = {
+		localisation_key = GetSwordName_Latecomer
+	}
+	text = {
+		localisation_key = GetSwordName_Badbrother
+	}
+	text = {
+		localisation_key = GetSwordName_Thunderbolt
+	}
+	text = {
+		localisation_key = GetSwordName_Boarkiller
+	}
+	text = {
+		localisation_key = GetSwordName_Nightingale
+	}
+	text = {
+		localisation_key = GetSwordName_Widowmaker
+	}
+	text = {
+		localisation_key = GetSwordName_Necromancer
+	}
+	text = {
+		localisation_key = GetSwordName_Stoneheart
+	}
+	text = {
+		localisation_key = GetSwordName_Enchantment
+	}
+	text = {
+		localisation_key = GetSwordName_Captivation
+	}
+}	
