@@ -412,7 +412,7 @@ claim_dawn;Претендует на Рассвет;;;;;;;;;;;;;x
 claim_dawn_desc;Этот человек будет претендовать на Рассвет и титул Меч Зари;;;;;;;;;;;;;x
 seize_sword;Отобрать валирийский клинок;;;;;;;;;;;;;x
 seize_sword_desc;Отобрать валирийский клинок у вашего заключенного;;;;;;;;;;;;;x
-TOOLTIPseize_swordCLAIM;[This.GetTitledFirstNameWithDynasty] имеет родовые претензии на [This.GetName];;;;;;;;;;;;;x
+TOOLTIPseize_swordCLAIM;[This.GetTitledFirstNameWithDynasty] имеет родовые претензии на [FromFrom.GetName];;;;;;;;;;;;;x
 TOOLTIPseize_swordSTOLEN;[FromFrom.GetName] был украден у персонажа [This.GetTitledFirstNameWithDynasty];;;;;;;;;;;;;x
 TOOLTIPseize_swordCLAIMTITLE;[FromFrom.GetName] является наследием земли [This.GetTitledFirstNameWithDynasty];;;;;;;;;;;;;x
 EVTDESCvalyrian_steel.160;Ваш тюремщик, [FromFrom.GetTitledFirstNameWithDynasty], отобрал [FromFromFrom.GetName] у вас!;;;;;;;;;;;;;x
