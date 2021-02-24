@@ -374,7 +374,7 @@ TOOLTIPwar_of_liberationWESTEROS;[Root.GetTitledFirstName] и столица [From.GetTi
 TOOLTIPwar_of_liberationNEIGHBOUR;[Root.GetTitledFirstName] и государство [From.GetTitledFirstName] §Yсоседствуют§! друг с другом\n;x;;;
 TOOLTIPslavery_0CULTURE;Культура/религия персонажа [This.GetTitledFirstName] традиционно выступает против рабства (вестеросские/браавосийские/одичалые/летнеостровные/ройнары/Великий Пастырь/Лунные Певцы/Владыка Гармонии)\n;x;;;
 TOOLTIPslavery_0VASSAL;Культура/религия кого-то из вассалов персонажа [This.GetTitledFirstName] традиционно выступает против рабства\n;x;;;
-TOOLTIPslavery_2CULTURE;[This.GetTitledFirstName] либо занимается работорговлей, либо [This.GetHerHis] культура/религия традиционно одобряет рабство (гискарская/валирийская/Вольных городов/пиратская/дотракийская/квартийская/и-тийская)\n;x;;;
+TOOLTIPslavery_2CULTURE;[This.GetTitledFirstName] либо занимается работорговлей, либо [This.GetHerHis] культура/религия традиционно одобряет рабство (Гискарская/Валирийская/Вольных Городов/Пиратская/Дотракийская/Квартийская/Итийская)\n;x;;;
 TOOLTIPslavery_2VASSAL;Культура/религия кого-то из вассалов персонажа [This.GetTitledFirstName] либо занимается работорговлей, либо одобряет рабство\n;x;;;
 TOOLTIPslavery_2EMANCIPATED;[This.GetFullName] НЕ был навязан договор об освобождении за последние 10 лет\n;x;;;
 TOOLTIPslavery_0DYNASTY;Дом [This.GetOnlyDynastyName] основан бывшим рабом, который уничтожил рабство в стране\n;x;;;
@@ -550,7 +550,7 @@ EVTOPTASLAVERY3004;Я с радостью принимаю вашу клятву;x;;;
 TOOLTIPslavery.3004;Все Безупречные освобождены;x;;;
 has_antislavery_religion_trigger;Религия [This.GetTitledFirstName] традиционна против рабства (Вестеросская/Летние Боги/Лунные Певцы/Отец Вод/Великий Пастырь/Владыка Гармонии)\n;x;;;
 has_antislavery_culture_trigger;Культура [This.GetTitledFirstName] традиционно выступает против рабства (Вестеросская/Браавосийская)\n;x;;;
-has_slavery_culture_trigger;Культура [This.GetTitledFirstName] традиционно практикует рабство (Гискарская/Валирийская/Вольные Города/Дотракийская/Квартийская/И-Тийская. Исключая Браавосийскую и Лоратийскую)\n;x;;;
+has_slavery_culture_trigger;Культура [This.GetTitledFirstName] традиционно практикует рабство (Гискарская/Валирийская/Вольных Городов/Дотракийская/Квартийская/Итийская. Исключая Браавосийскую и Лоратийскую)\n;x;;;
 has_slavery_religion_trigger;Религия [This.GetTitledFirstName] традиционно практикует рабство (Пиратская/Леди Волн)\n;x;;;
 buy_slave_offer;Сделать предложение по покупке;x;;;
 buy_slave_offer_desc;[Root.GetFirstNameWithDynasty] - раб, и вы можете сделать предложение по [Root.GetHerHis] покупке.;x;;;

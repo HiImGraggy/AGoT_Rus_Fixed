@@ -1,0 +1,1031 @@
+spriteTypes = {
+#HARDCODED ACTIONS
+	spriteType = {
+		name = "GFX_SEND_GIFT_INTERACTION_icon"
+		texturefile = "gfx\\interface\\decision_icon_wealth.dds"
+	}
+	spriteType = {
+		name = "GFX_IMPRISON_CHARACTER_INTERACTION_icon"
+		texturefile = "gfx\\interface\\decision_icon_imprison.dds"
+	}
+	spriteType = {
+		name = "GFX_EXILE_IMPRISONED_INTERACTION_icon"
+		texturefile = "gfx\\interface\\decision_icon_banish.dds"
+	}
+	spriteType = {
+		name = "GFX_RANSOM_CHARACTER_INTERACTION_icon"
+		texturefile = "gfx\\interface\\decision_icon_ransom.dds"
+	}
+	spriteType = {
+		name = "GFX_ASK_TO_RANSOM_CHARACTER_INTERACTION_icon"
+		texturefile = "gfx\\interface\\decision_icon_ransom.dds"
+	}
+	spriteType = {
+		name = "GFX_RELEASE_FROM_PRISON_INTERACTION_icon"
+		texturefile = "gfx\\interface\\decision_icon_release.dds"
+	}
+	spriteType = {
+		name = "GFX_INVITE_TO_COURT_INTERACTION_icon"
+		texturefile = "gfx\\interface\\decision_icon_invite.dds"
+	}
+	spriteType = {
+		name = "GFX_ASK_FOR_EXCOMMUNICATION_INTERACTION_icon"
+		texturefile = "gfx\\traits\\excommunicated.dds"
+	}
+	spriteType = {
+		name = "GFX_ASK_TO_LIFT_EXCOMMUNICATION_INTERACTION_icon"
+		texturefile = "gfx\\traits\\excommunicated.dds"
+	}
+	spriteType = {
+		name = "GFX_FORM_ALLIANCE_INTERACTION_icon"
+		texturefile = "gfx\\interface\\decision_icon_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_DISSOLVE_ALLIANCE_INTERACTION_icon"
+		texturefile = "gfx\\interface\\decision_icon_dissolve_alliance.dds"
+	}	
+	spriteType = {
+		name = "GFX_FORM_NON_AGGRESSION_PACT_INTERACTION_icon"
+		texturefile = "gfx\\interface\\decision_icon_pact.dds"
+	}	
+	spriteType = {
+		name = "GFX_MAKE_CONSORT_INTERACTION_icon"
+		texturefile = "gfx\\interface\\decision_icon_concubine.dds"
+	}
+	spriteType = {
+		name = "GFX_DISMISS_CONSORT_INTERACTION_icon"
+		texturefile = "gfx\\interface\\decision_icon_concubine.dds"
+	}
+	spriteType = {
+		name = "GFX_OFFER_CONSORT_INTERACTION_icon"
+		texturefile = "gfx\\interface\\decision_icon_concubine.dds"
+	}
+	spriteType = {
+		name = "GFX_BUY_FAVOR_INTERACTION_icon"
+		texturefile = "gfx\\interface\\decision_icon_favor.dds"
+	}
+	spriteType = {
+		name = "GFX_CALL_IN_FAVOR_INTERACTION_icon"
+		texturefile = "gfx\\interface\\decision_icon_favor.dds"
+	}
+	spriteType = {
+		name = "GFX_CALL_IN_FAVOR_SUCCESSION_VOTE_INTERACTION_icon"
+		texturefile = "gfx\\interface\\decision_icon_favor.dds"
+	}	
+#andal_decisions
+	spriteType = {
+		name = "GFX_expel_andals"
+		texturefile = "gfx\\interface\\decision_icon_expel_jews.dds"		
+	}
+	spriteType = {
+		name = "GFX_start_andal_adventure"
+		texturefile = "gfx\\interface\\decision_icon_go_on_quest.dds"
+	}
+	spriteType = {
+		name = "GFX_expand_the_eyrie"
+		texturefile = "gfx\\interface\\decision_icon_eyrie.dds"
+	}
+	spriteType = {
+		name = "GFX_subdue_andals"
+		texturefile = "gfx\\interface\\decision_icon_massacre_foreigners.dds"
+	}
+#cold_winds
+	spriteType = {
+		name = "GFX_call_for_aid_WW"
+		texturefile = "gfx\\interface\\decision_icon_white_walkers.dds"
+	}
+	spriteType = {
+		name = "GFX_call_for_aid_essos"
+		texturefile = "gfx\\interface\\decision_icon_white_walkers.dds"
+	}
+	spriteType = {
+		name = "GFX_nightswatch_calls_for_aid_WW"
+		texturefile = "gfx\\interface\\decision_icon_white_walkers.dds"
+	}
+#conversion_decisions
+	##VANILLA##
+#councillor
+	##VANILLA##
+#diplomatic
+	spriteType = {
+		name = "GFX_request_LP_title"
+		texturefile = "gfx\\interface\\decision_icon_liegetitle.dds"
+	}
+	spriteType = {
+		name = "GFX_ask_liege_help"
+		texturefile = "gfx\\interface\\decision_icon_raven.dds"
+	}
+	# spriteType = {
+		# name = "GFX_request_important_prisoners"
+		# texturefile = "gfx\\interface\\decision_icon_request_prisoners.dds"
+	# }
+	spriteType = {
+		name = "GFX_grant_royal_privilege"
+		texturefile = "gfx\\traits\\crowned_by_myself.dds"
+	}
+	spriteType = {
+		name = "GFX_revoke_royal_privilege"
+		texturefile = "gfx\\traits\\disinherited.dds"
+	}
+	spriteType = {
+		name = "GFX_offer_annexation"
+		texturefile = "gfx\\interface\\decision_icon_annexation.dds"
+	}
+	spriteType = {
+		name = "GFX_seek_raiding_redress"
+		texturefile = "gfx\\traits\\viking.dds"
+	}
+	spriteType = {
+		name = "GFX_demand_religious_conversion"
+		texturefile = "gfx\\traits\\theologian.dds"
+	}
+#dothraki
+	spriteType = {
+		name = "GFX_send_tribute_to_dosh_kaleen"
+		texturefile = "gfx\\interface\\decision_icon_donate_to_liege.dds"
+	}
+	spriteType = {
+		name = "GFX_ask_bloodrider"
+		texturefile = "gfx\\traits\\dothraki.dds"
+	}
+#dragon_decisions 
+	spriteType = {
+		name = "GFX_field_of_fire_dec"
+		texturefile = "gfx\\interface\\decision_icon_dragon_fire_field.dds"
+	}
+	spriteType = {
+		name = "GFX_siege_of_fire_dec"
+		texturefile = "gfx\\interface\\decision_icon_dragon_fire_siege.dds"
+	}
+	spriteType = {
+		name = "GFX_tame_dragon_dec"
+		texturefile = "gfx\\interface\\decision_icon_dragon.dds"
+	}
+	spriteType = {
+		name = "GFX_face_dragon_dec"
+		texturefile = "gfx\\interface\\decision_icon_dragon.dds"
+	}
+	spriteType = {
+		name = "GFX_hatch_dragon_dec"
+		texturefile = "gfx\\interface\\decision_icon_dragon_egg.dds"
+	}
+	spriteType = {
+		name = "GFX_bestow_dragon_egg"
+		texturefile = "gfx\\interface\\decision_icon_dragon_egg.dds"
+	}
+	spriteType = {
+		name = "GFX_dany_give_child_dragon"
+		texturefile = "gfx\\interface\\decision_icon_dragon.dds"
+	}
+	spriteType = {
+		name = "GFX_dany_give_spouse_dragon"
+		texturefile = "gfx\\interface\\decision_icon_dragon.dds"
+	}
+	spriteType = {
+		name = "GFX_call_for_dragon_riders"
+		texturefile = "gfx\\interface\\decision_icon_dragon.dds"
+	}
+	spriteType = {
+		name = "GFX_face_the_dragon_pi"
+		texturefile = "gfx\\traits\\dragon.dds"
+	}
+	spriteType = {
+		name = "GFX_bestow_dragon_egg"
+		texturefile = "gfx\\traits\\dragon_egg.dds"
+	}
+#employment_decisions
+	spriteType = {
+		name = "GFX_employ_golden_company"
+		texturefile = "gfx\\interface\\decision_icon_golden_company.dds"
+	}
+	spriteType = {
+		name = "GFX_employ_maester"
+		texturefile = "gfx\\traits\\maester.dds"
+	}
+	spriteType = {
+		name = "GFX_employ_character"
+		texturefile = "gfx\\interface\\decision_icon_employ_steward.dds"
+	}
+	spriteType = {
+		name = "GFX_employ_giants"
+		texturefile = "gfx\\interface\\decision_icon_giants.dds"
+	}
+#execution_decisons
+	spriteType = {
+		name = "GFX_execute_decision"
+		texturefile = "gfx\\interface\\decision_icon_execute_decision.dds"
+	}
+#faction_decisions
+	spriteType = {
+		name = "GFX_faction_claimant_regent_coup"
+		texturefile = "gfx\\interface\\decision_icon_faction_claimant_ultimatum.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_invite_claimant"
+		texturefile = "gfx\\interface\\decision_icon_faction_claimant_ultimatum.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_kidnap_claimant"
+		texturefile = "gfx\\interface\\decision_icon_faction_claimant_ultimatum.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_depose_liege_ultimatum"
+		texturefile = "gfx\\interface\\decision_icon_faction_overthrow_ultimatum.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_republic_ultimatum"
+		texturefile = "gfx\\interface\\decision_icon_faction_republic_ultimatum.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_increase_council_power_ultimatum"
+		texturefile = "gfx\\interface\\decision_icon_faction_increase_council_power_ultimatum.dds"
+	}
+#hiding
+	spriteType = {
+		name = "GFX_bring_out_of_hiding"
+		texturefile = "gfx\\interface\\decision_icon_bring_out_of_hiding.dds"
+	}
+	spriteType = {
+		name = "GFX_go_into_hiding"
+		texturefile = "gfx\\traits\\in_hiding.dds"
+	}
+#High Valyrian
+	spriteType = {
+		name = "GFX_dragon_dreams_reveal_plots"
+		texturefile = "gfx\\interface\\decision_icon_dragon_dreams.dds"
+	}
+	spriteType = {
+		name = "GFX_glass_candle_reveal_plots"
+		texturefile = "gfx\\interface\\decision_icon_dragon_dreams.dds"
+	}
+	spriteType = {
+		name = "GFX_glass_candle_visions"
+		texturefile = "gfx\\traits\\dragon_dreams.dds"
+	}
+#hf_warrior_lodge
+	##VANILLA##
+	spriteType = {
+		name = "GFX_wear_battle_mask"
+		texturefile = "gfx\\interface\\decision_icon_ancestor_worship.dds"
+	}	
+	spriteType = {
+		name = "GFX_stop_wearing_battle_mask"
+		texturefile = "gfx\\interface\\decision_icon_ancestor_worship.dds"
+	}
+#HL
+	##VANILLA##
+
+#holy_order
+	##VANILLA##	
+#household_guard_decisions
+	spriteType = {
+		name = "GFX_cityguard_menu"
+		texturefile = "gfx\\interface\\decision_icon_city_guard.dds"
+	}	
+	spriteType = {
+		name = "GFX_disband_cityguard"
+		texturefile = "gfx\\interface\\decision_icon_city_guard.dds"
+	}
+	spriteType = {
+		name = "GFX_employ_cityguard"
+		texturefile = "gfx\\interface\\decision_icon_city_guard.dds"
+	}
+#interaction_decisions
+	spriteType = {
+		name = "GFX_visit_chambers"
+		texturefile = "gfx\\traits\\lustful.dds"
+	}
+	spriteType = {
+		name = "GFX_appoint_to_kingsguard"
+		texturefile = "gfx\\traits\\kingsguard.dds"
+	}
+#iron_throne_decisions
+	spriteType = {
+		name = "GFX_create_e_iron_throne"
+		texturefile = "gfx\\interface\\decision_icon_iron_throne.dds"
+	}
+	spriteType = {
+		name = "GFX_establish_kingsguard"
+		texturefile = "gfx\\interface\\decision_icon_kingsguard.dds"
+	}
+	spriteType = {
+		name = "GFX_expand_red_keep"
+		texturefile = "gfx\\interface\\decision_icon_red_keep.dds"
+	}
+	spriteType = {
+		name = "GFX_expand_fortifications"
+		texturefile = "gfx\\interface\\decision_icon_red_keep.dds"
+	}
+	spriteType = {
+		name = "GFX_expand_navy"
+		texturefile = "gfx\\interface\\decision_icon_usurp_tp.dds"
+	}	
+	spriteType = {
+		name = "GFX_legitimise_orys_baratheon"
+		texturefile = "gfx\\interface\\decision_icon_legitimize_adult.dds"
+	}	
+	spriteType = {
+		name = "GFX_coronation"
+		texturefile = "gfx\\interface\\decision_icon_buy_indulgence_for_sins.dds"
+	}	
+	spriteType = {
+		name = "GFX_demand_kings_landing"
+		texturefile = "gfx\\interface\\decision_icon_red_keep.dds"
+	}
+	spriteType = {
+		name = "GFX_move_capital_to_kings_landing"
+		texturefile = "gfx\\interface\\decision_icon_red_keep.dds"
+	}
+	spriteType = {
+		name = "GFX_build_road_network"
+		texturefile = "gfx\\interface\\decision_icon_build_road_network.dds"
+	}
+	spriteType = {
+		name = "GFX_build_summerhall"
+		texturefile = "gfx\\interface\\decision_icon_liegetitle.dds"
+	}
+#jogos_nhai
+	spriteType = {
+		name = "GFX_become_jhattar"
+		texturefile = "gfx\\interface\\decision_icon_become_genghis_khan.dds"
+	}
+#kingship_decisions
+	spriteType = {
+		name = "GFX_create_e_dorne"
+		texturefile = "gfx\\interface\\decision_icon_form_new_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_create_e_iron_isles"
+		texturefile = "gfx\\interface\\decision_icon_form_new_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_create_e_north"
+		texturefile = "gfx\\interface\\decision_icon_form_new_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_create_e_reach"
+		texturefile = "gfx\\interface\\decision_icon_form_new_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_create_e_riverlands"
+		texturefile = "gfx\\interface\\decision_icon_form_new_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_create_e_stormlands"
+		texturefile = "gfx\\interface\\decision_icon_form_new_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_create_e_vale"
+		texturefile = "gfx\\interface\\decision_icon_form_new_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_create_e_westerlands"
+		texturefile = "gfx\\interface\\decision_icon_form_new_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_create_k_beyond_wall"
+		texturefile = "gfx\\interface\\decision_icon_form_new_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_create_k_stepstones"
+		texturefile = "gfx\\interface\\decision_icon_form_new_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_create_k_basilisk_isles"
+		texturefile = "gfx\\interface\\decision_icon_form_new_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_adopt_royal_style"
+		texturefile = "gfx\\interface\\decision_icon_form_new_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_sisterman_lady_of_the_waves"
+		texturefile = "gfx\\traits\\reaving.dds"
+	}
+#knight_des
+	# spriteType = {
+		# name = "GFX_knight_son_bribe_septon"
+		# texturefile = "gfx\\traits\\knight.dds"
+	# }
+	# spriteType = {
+		# name = "GFX_knight_son"
+		# texturefile = "gfx\\traits\\knight.dds"
+	# }
+	# spriteType = {
+		# name = "GFX_knight_daughter"
+		# texturefile = "gfx\\traits\\knight.dds"
+	# }
+	spriteType = {
+		name = "GFX_buy_knighthood"
+		texturefile = "gfx\\interface\\decision_icon_knighthood.dds"
+	}
+	spriteType = {
+		name = "GFX_take_ward_squire"
+		texturefile = "gfx\\traits\\squire.dds"
+	}	
+	spriteType = {
+		name = "GFX_knight_character"
+		texturefile = "gfx\\traits\\knight.dds"
+	}
+#minor_decisions
+	spriteType = {
+		name = "GFX_feast_0"
+		texturefile = "gfx\\interface\\decision_icon_feast.dds"
+	}
+	spriteType = {
+		name = "GFX_summer_fair_0"
+		texturefile = "gfx\\interface\\decision_icon_summerfair.dds"
+	}
+	spriteType = {
+		name = "GFX_hold_grand_hunt_0"
+		texturefile = "gfx\\interface\\decision_icon_hunting.dds"
+	}
+	spriteType = {
+		name = "GFX_commit_suicide"
+		texturefile = "gfx\\interface\\decision_icon_commit_suicide.dds"
+	}	
+	spriteType = {
+		name = "GFX_legitimize_self"
+		texturefile = "gfx\\interface\\decision_icon_legitimize_adult.dds"
+	}
+	spriteType = {
+		name = "GFX_ask_liege_for_legitimisation"
+		texturefile = "gfx\\interface\\decision_icon_legitimize_adult.dds"
+	}
+	spriteType = {
+		name = "GFX_adopt_matrilineal_lineage"
+		texturefile = "gfx\\interface\\decision_icon_wedding.dds"
+	}	
+	spriteType = {
+		name = "GFX_hold_a_northern_melee"
+		texturefile = "gfx\\interface\\decision_icon_duel.dds"
+	}
+	spriteType = {
+		name = "GFX_rebuild_harrenhal"
+		texturefile = "gfx\\interface\\decision_icon_liegetitle.dds"
+	}
+	spriteType = {
+		name = "GFX_kingsmoot_tribute"
+		texturefile = "gfx\\interface\\decision_icon_drown.dds"
+	}
+#new_loan_decisions
+	spriteType = {
+		name = "GFX_take_loan"
+		texturefile = "gfx\\interface\\decision_icon_loan.dds"
+	}
+	spriteType = {
+		name = "GFX_repay_loan"
+		texturefile = "gfx\\interface\\decision_icon_loan.dds"
+	}
+	spriteType = {
+		name = "GFX_take_loan_from_vassal"
+		texturefile = "gfx\\interface\\decision_icon_loan.dds"
+	}
+	spriteType = {
+		name = "GFX_establish_bank"
+		texturefile = "gfx\\interface\\decision_icon_loan.dds"
+	}
+	spriteType = {
+		name = "GFX_reduce_loan_interest"
+		texturefile = "gfx\\interface\\decision_icon_loan.dds"
+	}
+	spriteType = {
+		name = "GFX_hire_banker"
+		texturefile = "gfx\\interface\\decision_icon_loan.dds"
+	}
+	spriteType = {
+		name = "GFX_build_fortification"
+		texturefile = "gfx\\interface\\decision_icon_loan.dds"
+	}
+	spriteType = {
+		name = "GFX_view_accounts"
+		texturefile = "gfx\\interface\\decision_icon_loan.dds"
+	}
+	spriteType = {
+		name = "GFX_set_interest_strategy"
+		texturefile = "gfx\\interface\\decision_icon_loan.dds"
+	}
+#nightswatch
+	spriteType = {
+		name = "GFX_nightswatch_calls_for_aid"
+		texturefile = "gfx\\interface\\decision_icon_raven.dds"
+	}
+	spriteType = {
+		name = "GFX_reactivate_castle_black"
+		texturefile = "gfx\\interface\\decision_icon_nightswatch.dds"
+	}
+	spriteType = {
+		name = "GFX_reactivate_shadow_tower"
+		texturefile = "gfx\\interface\\decision_icon_nightswatch.dds"
+	}
+	spriteType = {
+		name = "GFX_reactivate_eastwatch"
+		texturefile = "gfx\\interface\\decision_icon_nightswatch.dds"
+	}
+	spriteType = {
+		name = "GFX_blow_winterhorn"
+		texturefile = "gfx\\interface\\decision_icon_winterhorn.dds"
+	}
+	spriteType = {
+		name = "GFX_destroy_winterhorn"
+		texturefile = "gfx\\interface\\decision_icon_winterhorn.dds"
+	}
+	spriteType = {
+		name = "GFX_destroy_winterhorn"
+		texturefile = "gfx\\interface\\decision_icon_winterhorn.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_nightswatch"
+		texturefile = "gfx\\traits\\nightswatch.dds"
+	}
+#priesthood
+	spriteType = {
+		name = "GFX_decision_rhllor"
+		texturefile = "gfx\\traits\\redpriest.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_bearded_priests"
+		texturefile = "gfx\\traits\\bearded_priest.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_silent_sister"
+		texturefile = "gfx\\traits\\silent_sister.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_grace"
+		texturefile = "gfx\\traits\\grace.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_rhllor"
+		texturefile = "gfx\\traits\\redpriest.dds"
+	}
+#R+L=J	
+	spriteType = {
+		name = "GFX_R+L_J_legalise_parentage"
+		texturefile = "gfx\\interface\\decision_icon_raven.dds"
+	}
+	spriteType = {
+		name = "GFX_R+L_J_claim_iron_throne"
+		texturefile = "gfx\\interface\\decision_icon_iron_throne.dds"
+	}
+#raid_decisions
+	spriteType = {
+		name = "GFX_ironborn_reaving"
+		texturefile = "gfx\\traits\\reaving.dds"
+	}
+	spriteType = {
+		name = "GFX_steal_spearwife"
+		texturefile = "gfx\\interface\\decision_icon_wildling.dds"
+	}	
+#ransom_all_decisions
+	# spriteType = {
+		# name = "GFX_ransom_all"
+		# texturefile = "gfx\\interface\\decision_icon_request_prisoners.dds"
+	# }
+#realm_decision
+	spriteType = {
+		name = "GFX_call_a_grand_council"
+		texturefile = "gfx\\interface\\decision_icon_raven.dds"
+	}
+	spriteType = {
+		name = "GFX_call_a_triarch_council"
+		texturefile = "gfx\\interface\\decision_icon_crown.dds"
+	}
+	spriteType = {
+		name = "GFX_form_new_empire"
+		texturefile = "gfx\\interface\\decision_icon_form_new_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_form_new_kingdom"
+		texturefile = "gfx\\interface\\decision_icon_form_new_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_call_a_great_council"
+		texturefile = "gfx\\interface\\decision_icon_crown.dds"
+	}
+	spriteType = {
+		name = "GFX_call_a_great_council_interregnum"
+		texturefile = "gfx\\interface\\decision_icon_crown.dds"
+	}
+	spriteType = {
+		name = "GFX_construct_a_flagship"
+		texturefile = "gfx\\interface\\decision_icon_conscript_merchant_ships.dds"
+	}
+	spriteType = {
+		name = "GFX_hold_an_archery_tournament"
+		texturefile = "gfx\\interface\\decision_icon_hold_an_archery_tournament.dds"
+	}
+	spriteType = {
+		name = "GFX_go_on_quest"
+		texturefile = "gfx\\interface\\decision_icon_go_on_quest.dds"
+	}
+	spriteType = {
+		name = "GFX_abdicate_decision"
+		texturefile = "gfx\\interface\\decision_icon_abdicate_decision.dds"
+	}
+
+#red_priest_decisions
+	spriteType = {
+		name = "GFX_redgod_reveal_plots"
+		texturefile = "gfx\\interface\\decision_icon_redgod_protection.dds"
+	}
+#regency
+	spriteType = {
+		name = "GFX_ambition_nominate_regent_decision"
+		texturefile = "gfx\\ambitions\\obj_become_castelan.dds"
+	}
+#religious
+	spriteType = {
+		name = "GFX_restore_high_priest_in_volantis"
+		texturefile = "gfx\\interface\\decision_icon_red_priest.dds"
+	}
+	spriteType = {
+		name = "GFX_restore_faith_militant"
+		texturefile = "gfx\\interface\\decision_icon_faith_seven.dds"
+	}
+	spriteType = {
+		name = "GFX_renounce_piracy"
+		texturefile = "gfx\\interface\\decision_icon_renounce_piracy.dds"
+	}
+	spriteType = {
+		name = "GFX_claim_religion_head_title"
+		texturefile = "gfx\\interface\\decision_icon_convert_to_attacker_religion.dds"
+	}
+	spriteType = {
+		name = "GFX_close_the_labyrinths"
+		texturefile = "gfx\\interface\\decision_icon_pick_main_deity.dds"
+	}
+	spriteType = {
+		name = "GFX_massacre_foreigners"
+		texturefile = "gfx\\interface\\decision_icon_massacre_foreigners.dds"
+	}
+	spriteType = {
+		name = "GFX_choose_syncretic_faith"
+		texturefile = "gfx\\interface\\decision_icon_pick_main_deity.dds"
+	}
+	spriteType = {
+		name = "GFX_bearded_priest_flagellate"
+		texturefile = "gfx\\interface\\decision_icon_crabspincer.dds"
+	}
+	spriteType = {
+		name = "GFX_craft_a_weirwood_weapon"
+		texturefile = "gfx\\interface\\decision_icon_employ_a_smith.dds"
+	}
+#rip_torture
+	spriteType = {
+		name = "GFX_decision_torture"
+		texturefile = "gfx\\traits\\flayed.dds"
+	}	
+	spriteType = {
+		name = "GFX_prisoner_mutilate"
+		texturefile = "gfx\\traits\\disfigured.dds"
+	}		
+	spriteType = {
+		name = "GFX_prisoner_read_poetry"
+		texturefile = "gfx\\traits\\poet.dds"
+	}	
+#rip_various	
+	spriteType = {
+		name = "GFX_break_non_aggression_pact"
+		texturefile = "gfx\\interface\\decision_icon_dissolve_pact.dds"
+	}
+	spriteType = {
+		name = "GFX_buy_mask"
+		texturefile = "gfx\\interface\\decision_icon_buy_mask.dds"
+	}
+#scenario
+	spriteType = {
+		name = "GFX_decision_icon_iron_throne"
+		texturefile = "gfx\\interface\\decision_icon_seek_treatment.dds"
+	}
+	spriteType = {
+		name = "GFX_legitimise_daeron_the_good"
+		texturefile = "gfx\\interface\\decision_icon_legitimize_adult.dds"
+	}
+	spriteType = {
+		name = "GFX_bastardise_daeron_the_good"
+		texturefile = "gfx\\interface\\decision_icon_legitimise_cadet.dds"
+	}
+	spriteType = {
+		name = "GFX_skagosi_rebuild_ships"
+		texturefile = "gfx\\interface\\decision_icon_conscript_merchant_ships.dds"
+	}
+	spriteType = {
+		name = "GFX_destroy_skagosi_ships"
+		texturefile = "gfx\\interface\\decision_icon_conscript_merchant_ships.dds"
+	}
+	spriteType = {
+		name = "GFX_reveal_sansa"
+		texturefile = "gfx\\interface\\decision_icon_raven.dds"
+	}
+	spriteType = {
+		name = "GFX_enforce_victory_AFFC"
+		texturefile = "gfx\\interface\\decision_icon_employmarshal.dds"
+	}
+	spriteType = {
+		name = "GFX_declare_dornish_rebellion"
+		texturefile = "gfx\\interface\\decision_icon_employmarshal.dds"
+	}
+	spriteType = {
+		name = "GFX_discredit_arya_stark"
+		texturefile = "gfx\\interface\\decision_icon_raven.dds"
+	}
+#slavery_decisions
+	spriteType = {
+		name = "GFX_enter_slave_trade"
+		texturefile = "gfx\\interface\\decision_icon_slave.dds"
+	}
+	spriteType = {
+		name = "GFX_leave_slave_trade"
+		texturefile = "gfx\\interface\\decision_icon_slave.dds"
+	}	
+	spriteType = {
+		name = "GFX_buy_bulk_slaves"
+		texturefile = "gfx\\interface\\decision_icon_buy_bulk_slaves.dds"
+	}
+	spriteType = {
+		name = "GFX_sell_bulk_slaves"
+		texturefile = "gfx\\interface\\decision_icon_sell_bulk_slaves.dds"
+	}
+	spriteType = {
+		name = "GFX_free_bulk_slaves"
+		texturefile = "gfx\\interface\\decision_icon_free_bulk_slaves.dds"
+	}
+	spriteType = {
+		name = "GFX_demand_relatives_freed"
+		texturefile = "gfx\\interface\\decision_icon_request_prisoners.dds"
+	}
+	spriteType = {
+		name = "GFX_train_unsullied"
+		texturefile = "gfx\\interface\\decision_icon_unsullied.dds"
+	}
+	spriteType = {
+		name = "GFX_buy_unsullied"
+		texturefile = "gfx\\interface\\decision_icon_unsullied.dds"
+	}
+	spriteType = {
+		name = "GFX_mobilise_unsullied"
+		texturefile = "gfx\\interface\\decision_icon_unsullied.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_slave"
+		texturefile = "gfx\\traits\\slavef.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_concubine"
+		texturefile = "gfx\\interface\\decision_icon_concubine.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_castrate"
+		texturefile = "gfx\\traits\\eunuch.dds"
+	}
+	spriteType = {
+		name = "GFX_free_slave"
+		texturefile = "gfx\\traits\\formerslave.dds"
+	}
+#targetted
+	spriteType = {
+		name = "GFX_decision_legit_bastard"
+		texturefile = "gfx\\traits\\legit_bastard.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_blind"
+		texturefile = "gfx\\traits\\blinded.dds"
+	}
+	spriteType = {
+		name = "GFX_adopt_character"
+		texturefile = "gfx\\traits\\adopted.dds"
+	}
+	spriteType = {
+		name = "GFX_make_noble"
+		texturefile = "gfx\\traits\\house_customizer.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_wikid"
+		texturefile = "gfx\\traits\\wikid.dds"
+	}
+	spriteType = {
+		name = "GFX_disinherit_child"
+		texturefile = "gfx\\traits\\disinherited.dds"
+	}
+	spriteType = {
+		name = "GFX_send_to_the_citadel"
+		texturefile = "gfx\\traits\\maester.dds"
+	}
+	
+	
+	# spriteType = {
+		# name = "GFX_vassal_blinding_decision_AGOT"
+		# texturefile = "gfx\\interface\\decision_icon_vassal_blinding_decision.dds"
+	# }
+	# spriteType = {
+		# name = "GFX_vassal_castrate_decision"
+		# texturefile = "gfx\\interface\\decision_icon_vassal_castrate_decision.dds"
+	# }
+	spriteType = {
+		name = "GFX_make_salt_wife"
+		texturefile = "gfx\\traits\\salt_wife.dds"
+	}
+	# spriteType = {
+		# name = "GFX_banish_prisoner"
+		# texturefile = "gfx\\traits\\nightswatch.dds"
+	# }
+#training_des
+	# spriteType = {
+		# name = "GFX_force_train_son_1"
+		# texturefile = "gfx\\interface\\decision_icon_force_train_son.dds"
+	# }
+#trial
+	spriteType = {
+		name = "GFX_demand_trial_by_combat"
+		texturefile = "gfx\\interface\\decision_icon_trial_by_combat.dds"
+	}
+	spriteType = {
+		name = "GFX_tbc_fight_personally"
+		texturefile = "gfx\\interface\\decision_icon_trial_by_combat.dds"
+	}
+	spriteType = {
+		name = "GFX_offer_to_take_black"
+		texturefile = "gfx\\interface\\decision_icon_nightswatch.dds"
+	}
+	
+	# spriteType = {
+		# name = "GFX_give_justice"
+		# texturefile = "gfx\\interface\\decision_icon_give_justice.dds"
+	# }
+#unit
+	spriteType = {
+		name = "GFX_conscript_merchant_ships"
+		texturefile = "gfx\\interface\\decision_icon_conscript_merchant_ships.dds"
+	}
+#valyrian_steel (reforged swords currently don't have icons
+	spriteType = {
+		name = "GFX_decision_valyrian_steel"
+		texturefile = "gfx\\traits\\valyrian_steel.dds"
+	}
+	spriteType = {
+		name = "GFX_reforge_valyrian_steel"
+		texturefile = "gfx\\interface\\decision_icon_reforge_sword.dds"
+	}
+	spriteType = {
+		name = "GFX_claim_dawn"
+		texturefile = "gfx\\interface\\decision_icon_dawn.dds"
+	}
+	spriteType = {
+		name = "GFX_forge_valyrian_steel"
+		texturefile = "gfx\\interface\\decision_icon_reforge_sword.dds"
+	}
+	spriteType = {
+		name = "GFX_reforge_ice"
+		texturefile = "gfx\\interface\\decision_icon_ice.dds"
+	}
+#volantis
+	spriteType = {
+		name = "GFX_commission_triarch_statue"
+		texturefile = "gfx\\interface\\decision_icon_triarch.dds"
+	}
+	spriteType = {
+		name = "GFX_volantis_switch_party"
+		texturefile = "gfx\\interface\\decision_volantis_switch_party.dds"
+	}
+#warlock
+	spriteType = {
+		name = "GFX_decision_warlock"
+		texturefile = "gfx\\traits\\warlock.dds"
+	}
+	spriteType = {
+		name = "GFX_warlock_shade_evening"
+		texturefile = "gfx\\interface\\decision_icon_warlock_shade_evening.dds"
+	}
+	spriteType = {
+		name = "GFX_donate_money_to_warlocks"
+		texturefile = "gfx\\traits\\warlock.dds"
+	}
+#way_of_life
+	spriteType = {
+		name = "GFX_seduce_decision"
+		texturefile = "gfx\\traits\\seducer.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_spy_on"
+		texturefile = "gfx\\traits\\schemer.dds"
+	}
+	spriteType = {
+		name = "GFX_invite_to_party"
+		texturefile = "gfx\\traits\\socializer.dds"
+	}
+	spriteType = {
+		name = "GFX_duel_decision"
+		texturefile = "gfx\\traits\\duelist.dds"
+	}
+	spriteType = {
+		name = "GFX_mass_invite_to_party"
+		texturefile = "gfx\\interface\\decision_icon_feast.dds"
+	}
+	
+#westeros_civi_war_decisions
+	spriteType = {
+		name = "GFX_join_rebel_leader_1"
+		texturefile = "gfx\\traits\\rebel_leader.dds"
+	}
+	spriteType = {
+		name = "GFX_mega_war_join_liege"
+		texturefile = "gfx\\traits\\crown_loyalist.dds"
+	}
+	spriteType = {
+		name = "GFX_join_rebel_leader_1"
+		texturefile = "gfx\\traits\\rebel_leader.dds"
+	}
+	spriteType = {
+		name = "GFX_liege_call_to_arms"
+		texturefile = "gfx\\interface\\decision_icon_raven.dds"
+	}
+#wildfire_decisions
+	spriteType = {
+		name = "GFX_build_alchemist_guild"
+		texturefile = "gfx\\interface\\decision_icon_alchemists_guild.dds"
+	}
+	spriteType = {
+		name = "GFX_donate_to_alchemist_guild"
+		texturefile = "gfx\\interface\\decision_icon_alchemists_guild.dds"
+	}
+	spriteType = {
+		name = "GFX_hire_alchemist"
+		texturefile = "gfx\\interface\\decision_icon_alchemists_guild.dds"
+	}
+	spriteType = {
+		name = "GFX_make_wildfire"
+		texturefile = "gfx\\interface\\decision_icon_wildfire.dds"
+	}
+	spriteType = {
+		name = "GFX_destroy_wildfire"
+		texturefile = "gfx\\interface\\decision_icon_wildfire.dds"
+	}
+	spriteType = {
+		name = "GFX_create_fake_valuables"
+		texturefile = "gfx\\interface\\decision_icon_alchemists_guild.dds"
+	}
+	spriteType = {
+		name = "GFX_transmutate_metals"
+		texturefile = "gfx\\interface\\decision_icon_wildfire.dds"
+	}
+	spriteType = {
+		name = "GFX_elixir_of_immortaility"
+		texturefile = "gfx\\interface\\decision_icon_wildfire.dds"
+	}
+	spriteType = {
+		name = "GFX_use_wildfire_siege_offensive"
+		texturefile = "gfx\\interface\\decision_icon_wildfire.dds"
+	}
+#ze_war_chest
+	##VANILLA##	
+#zz_info_decisions
+	spriteType = {
+		name = "GFX_auto_assign_minor_titles"
+		texturefile = "gfx\\interface\\decision_icon_auto_assign_minor_titles.dds"
+	}
+	spriteType = {
+		name = "GFX_auto_assign_minor_titles_STOP"
+		texturefile = "gfx\\interface\\decision_icon_auto_assign_minor_titles.dds"
+	}
+	spriteType = {
+		name = "GFX_great_houses_scoreboard"
+		texturefile = "gfx\\interface\\decision_icon_crown.dds"
+	}
+	spriteType = {
+		name = "GFX_the_white_book"
+		texturefile = "gfx\\interface\\decision_icon_kingsguard.dds"
+	}
+	spriteType = {
+		name = "GFX_show_me_the_medal_winners"
+		texturefile = "gfx\\interface\\decision_icon_tournament.dds"
+	}
+	spriteType = {
+		name = "GFX_show_me_the_dragons"
+		texturefile = "gfx\\interface\\decision_icon_dragon.dds"
+	}	
+	spriteType = {
+		name = "GFX_show_me_val_swords"
+		texturefile = "gfx\\interface\\decision_icon_valyrian_steel.dds"
+	}
+	spriteType = {
+		name = "GFX_show_me_triarchs"
+		texturefile = "gfx\\interface\\decision_icon_triarch.dds"
+	}
+	spriteType = {
+		name = "GFX_show_me_blood_feuds"
+		texturefile = "gfx\\interface\\decision_icon_force_train_son.dds"
+	}
+	spriteType = {
+		name = "GFX_show_me_small_council"
+		texturefile = "gfx\\interface\\decision_icon_show_me_small_council.dds"
+	}
+	# fixed
+	# spriteType = {
+		# name = "GFX_craft_a_weirwood_weapon"
+		# texturefile = "gfx\\interface\\decision_icon_craft_a_weirwood_weapon.tga"
+	# }
+}
+
+
+
