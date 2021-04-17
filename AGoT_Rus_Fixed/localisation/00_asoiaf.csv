@@ -956,23 +956,23 @@ stakeholder;Хранитель ключей;;;;;;;;;;;;;x
 disfigured_AGOT;Изувеченн[_ый];;;;;;;;;;;;;x
 disfigured_AGOT_desc;Из-за болезни, несчатного случая или сражения этот человек получил травму. Травма зажила, но оставила уродливое увечье.;;;;;;;;;;;;;x
 disfigured_AGOT_death;от тяжкого увечья;;;;;;;;;;;;;x
-INSULT_POX_RIDDEN;страдающ[_ий] оспой;;;;;;;;;;;;;x
+INSULT_POX_RIDDEN;страдающ[This.GetAyaYy] оспой;;;;;;;;;;;;;x
 INSULT_TURNCLOAK;перевертыш;;;;;;;;;;;;;x
-INSULT_BETRAYER;предатель[____];;;;;;;;;;;;;x
+INSULT_BETRAYER;предатель[This.GetEndNitsa];;;;;;;;;;;;;x
 INSULT_DESERTER;дезертир;;;;;;;;;;;;;x
 INSULT_PYROMANIAC;пиромант;;;;;;;;;;;;;x
-INSULT_WILDLING;одичал[_ый];;;;;;;;;;;;;x
+INSULT_WILDLING;одичал[This.GetAyaYy];;;;;;;;;;;;;x
 INSULT_SEA_RAT;морская крыса;;;;;;;;;;;;;x
 INSULT_PIRATE;пират;;;;;;;;;;;;;x
-INSULT_KNAVE;негодяй[__];;;;;;;;;;;;;x
-INSULT_VILLAIN;злодей[__];;;;;;;;;;;;;x
-INSULT_contemptible;презренн[_ый];;;;;;;;;;;;;x
-INSULT_shameful;позорн[_ый];;;;;;;;;;;;;x
-INSULT_TAINTED;испорченн[_ый];;;;;;;;;;;;;x
-INSULT_BESMIRCHED;запятнанн[_ый];;;;;;;;;;;;;x
+INSULT_KNAVE;негодяй[This.GetEndKa];;;;;;;;;;;;;x
+INSULT_VILLAIN;злодей[This.GetEndKa];;;;;;;;;;;;;x
+INSULT_contemptible;презренн[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_shameful;позорн[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_TAINTED;испорченн[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_BESMIRCHED;запятнанн[This.GetAyaYy];;;;;;;;;;;;;x
 INSULT_TYRANT;тиран;;;;;;;;;;;;;x
-INSULT_OVERBEARING;властн[_ый];;;;;;;;;;;;;x
-INSULT_BRUTAL;жесток[_ий];;;;;;;;;;;;;x
+INSULT_OVERBEARING;властн[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_BRUTAL;жесток[This.GetAyaYy];;;;;;;;;;;;;x
 INSULT_SAVAGE;дикарь;;;;;;;;;;;;;x
 COMPL_DRAGONLORD;повелитель драконов;;;;;;;;;;;;;x
 COMPL_DRAGONLADY;повелительница драконов;;;;;;;;;;;;;x
@@ -980,51 +980,51 @@ COMPL_DRAGONBANE;драконья погибель;;;;;;;;;;;;;x
 COMPL_CHIVALROUS;рыцарский;;;;;;;;;;;;;x
 INSULT_FALSE_KNIGHT;лже-рыцарь;;;;;;;;;;;;;x
 INSULT_SHE_KNIGHT;рыцарская;;;;;;;;;;;;;x
-COMPL_STYLISH;стильн[_ый];;;;;;;;;;;;;x
-COMPL_ELEGANT;элегантн[_ый];;;;;;;;;;;;;x
+COMPL_STYLISH;стильн[This.GetAyaYy];;;;;;;;;;;;;x
+COMPL_ELEGANT;элегантн[This.GetAyaYy];;;;;;;;;;;;;x
 COMPL_GIANT;гигант;;;;;;;;;;;;;x
-COMPL_IMPOSING;внушительн[_ый];;;;;;;;;;;;;x
+COMPL_IMPOSING;внушительн[This.GetAyaYy];;;;;;;;;;;;;x
 INSULT_HULK;громила;;;;;;;;;;;;;x
-INSULT_HULKING;громадн[_ый];;;;;;;;;;;;;x
-COMPL_COMMANDING;командующ[_ий];;;;;;;;;;;;;x
-COMPL_CONFIDENT;уверенн[_ый];;;;;;;;;;;;;x
-INSULT_authoritarian;авторитарн[_ый];;;;;;;;;;;;;x
-INSULT_OVERBEARING;властн[_ый];;;;;;;;;;;;;x
-INSULT_HIGH_HANDED;своевольн[_ый];;;;;;;;;;;;;x
-INSULT_LAME;хром[__ой];;;;;;;;;;;;;x
-INSULT_IMPUDENT;нагл[_ый];;;;;;;;;;;;;x
-INSULT_GRACELESS;некрасив[_ый];;;;;;;;;;;;;x
-INSULT_NEPOTISTIC;семейн[_ый];;;;;;;;;;;;;x
-INSULT_NARCISSIST;самовлюбленн[_ый];;;;;;;;;;;;;x
-INSULT_EGOTIST;эгоистичн[_ый];;;;;;;;;;;;;x
-INSULT_SELF_SERVING;корыстн[_ый];;;;;;;;;;;;;x
-INSULT_SELF_CENTRED;эгоцентричн[_ый];;;;;;;;;;;;;x
+INSULT_HULKING;громадн[This.GetAyaYy];;;;;;;;;;;;;x
+COMPL_COMMANDING;командующ[This.GetAyaYy];;;;;;;;;;;;;x
+COMPL_CONFIDENT;уверенн[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_authoritarian;авторитарн[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_OVERBEARING;властн[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_HIGH_HANDED;своевольн[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_LAME;хром[This.GetAyaOy];;;;;;;;;;;;;x
+INSULT_IMPUDENT;нагл[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_GRACELESS;некрасив[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_NEPOTISTIC;семейн[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_NARCISSIST;самовлюбленн[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_EGOTIST;эгоистичн[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_SELF_SERVING;корыстн[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_SELF_CENTRED;эгоцентричн[This.GetAyaYy];;;;;;;;;;;;;x
 INSULT_MULE;мул;;;;;;;;;;;;;x
-INSULT_BLOODY_MINDED;кровав[_ый];;;;;;;;;;;;;x
-INSULT_OBSTINATE;упрям[_ый];;;;;;;;;;;;;x
-COMPL_RESOLUTE;решительн[_ый];;;;;;;;;;;;;x
-COMPL_WILFUL;своевольн[_ый];;;;;;;;;;;;;x
-INSULT_BRUTE;груб[_ый];;;;;;;;;;;;;x
-INSULT_HARSH;суров[_ый];;;;;;;;;;;;;x
-INSULT_CALLOUS;черств[_ый];;;;;;;;;;;;;x
-COMPL_UNBENDING;непреклонн[_ый];;;;;;;;;;;;;x
-COMPL_STEELY;стальн[__ой];;;;;;;;;;;;;x
-COMPL_NOBLE;благородн[_ый];;;;;;;;;;;;;x
-COMPL_HONOURABLE;почетн[_ый];;;;;;;;;;;;;x
-COMPL_WORTHY;достойн[_ый];;;;;;;;;;;;;x
-INSULT_NAIVE;наивн[_ый];;;;;;;;;;;;;x
-INSULT_IGNORANT;невежественн[_ый];;;;;;;;;;;;;x
-INSULT_NASTY;неприятн[_ый];;;;;;;;;;;;;x
-INSULT_CUT_THROAT;ожесточенн[_ый];;;;;;;;;;;;;x
-COMPL_DEVOUT;набожн[_ый];;;;;;;;;;;;;x
+INSULT_BLOODY_MINDED;кровав[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_OBSTINATE;упрям[This.GetAyaYy];;;;;;;;;;;;;x
+COMPL_RESOLUTE;решительн[This.GetAyaYy];;;;;;;;;;;;;x
+COMPL_WILFUL;своевольн[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_BRUTE;груб[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_HARSH;суров[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_CALLOUS;черств[This.GetAyaYy];;;;;;;;;;;;;x
+COMPL_UNBENDING;непреклонн[This.GetAyaYy];;;;;;;;;;;;;x
+COMPL_STEELY;стальн[This.GetAyaOy];;;;;;;;;;;;;x
+COMPL_NOBLE;благородн[This.GetAyaYy];;;;;;;;;;;;;x
+COMPL_HONOURABLE;почетн[This.GetAyaYy];;;;;;;;;;;;;x
+COMPL_WORTHY;достойн[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_NAIVE;наивн[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_IGNORANT;невежественн[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_NASTY;неприятн[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_CUT_THROAT;ожесточенн[This.GetAyaYy];;;;;;;;;;;;;x
+COMPL_DEVOUT;набожн[This.GetAyaYy];;;;;;;;;;;;;x
 INSULT_RED_BITCH;красная стерва;;;;;;;;;;;;;x
-COMPL_HOLY;свят[__ой_;;;;;;;;;;;;;x
-COMPL_DIVINE;божественн[_ый];;;;;;;;;;;;;x
-COMPL_REAVER;разбойни[_к];;;;;;;;;;;;;x
-INSULT_DEFORMITY;уродлив[_ый];;;;;;;;;;;;;x
-INSULT_REPULSIVE;отталкивающ[_ий];;;;;;;;;;;;;x
-INSULT_BLIND;слеп[__ой];;;;;;;;;;;;;x
-INSULT_DISFIGURED;изуродованн[_ый];;;;;;;;;;;;;x
+COMPL_HOLY;свят[This.GetAyaOy];;;;;;;;;;;;;x
+COMPL_DIVINE;божественн[This.GetAyaYy];;;;;;;;;;;;;x
+COMPL_REAVER;разбойни[This.GetTsaK];;;;;;;;;;;;;x
+INSULT_DEFORMITY;уродлив[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_REPULSIVE;отталкивающ[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_BLIND;слеп[This.GetAyaOy];;;;;;;;;;;;;x
+INSULT_DISFIGURED;изуродованн[This.GetAyaYy];;;;;;;;;;;;;x
 Ok;OK;;;;;;;;;;;;;x
 OK;OK;;;;;;;;;;;;;x
 MORE;Больше;;;;;;;;;;;;;x
@@ -1686,22 +1686,22 @@ pattern_interaction_slavery_illegal_custom_tooltip;Рабство незаконно\n;;;;;;;;;;
 pattern_interaction_oppose_slavery_custom_tooltip;Я против рабства\n;;;;;;;;;;;;;x
 EVTDESCmaintenance.2;ТЕСТ: сокращение тирании на 5 лет;;;;;;;;;;;;;x
 EVTDESCmaintenance.4;ТЕСТ: сокращение бесчестья на 10 лет;;;;;;;;;;;;;x
-COMPL_FORMIDABLE;грозн[_ый];;;;;;;;;;;;;x
+COMPL_FORMIDABLE;грозн[This.GetAyaYy];;;;;;;;;;;;;x
 COMPL_WARRIOR;воин;;;;;;;;;;;;;x
 COMPL_HERO;герой;;;;;;;;;;;;;x
-INSULT_BAD;дурн[__ой];;;;;;;;;;;;;x
+INSULT_BAD;дурн[This.GetAyaOy];;;;;;;;;;;;;x
 COMPL_DRAGON;дракон;;;;;;;;;;;;;x
 COMPL_KNIGHT;рыцарь;;;;;;;;;;;;;x
-COMPL_SMART;хитроумн[_ый];;;;;;;;;;;;;x
-COMPL_BIG;больш[__ой];;;;;;;;;;;;;x
-INSULT_SCARY;ужасн[_ый];;;;;;;;;;;;;x
-INSULT_BROKEN;сломленн[_ый];;;;;;;;;;;;;x
-INSULT_RUDE;груб[_ый];;;;;;;;;;;;;x
-INSULT_MEAN;подл[_ый];;;;;;;;;;;;;x
-COMPL_NICE;добр[_ый];;;;;;;;;;;;;x
-INSULT_WIERD;странн[_ый];;;;;;;;;;;;;x
-COMPL_HEROIC;доблестн[_ый];;;;;;;;;;;;;x
-INSULT_WIMP;слаба[__к];;;;;;;;;;;;;x
+COMPL_SMART;хитроумн[This.GetAyaYy];;;;;;;;;;;;;x
+COMPL_BIG;больш[This.GetAyaOy];;;;;;;;;;;;;x
+INSULT_SCARY;ужасн[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_BROKEN;сломленн[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_RUDE;груб[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_MEAN;подл[This.GetAyaYy];;;;;;;;;;;;;x
+COMPL_NICE;добр[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_WIERD;странн[This.GetAyaYy];;;;;;;;;;;;;x
+COMPL_HEROIC;доблестн[This.GetAyaYy];;;;;;;;;;;;;x
+INSULT_WIMP;слаба[This.GetChkaK];;;;;;;;;;;;;x
 get_title_id;[Root.GetID];;;;;;;;;;;;;x
 get_title_id_desc;[Root.GetName] ID: [Root.GetID];;;;;;;;;;;;;x
 TOOLTIPget_title_id;ID провинции [This.GetName]: [This.GetID];;;;;;;;;;;;;x
