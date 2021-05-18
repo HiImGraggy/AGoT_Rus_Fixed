@@ -1256,8 +1256,8 @@ privilege_vassal_king_desc; ороль оставл€ет право за собой право определенных ре
 EVTDESCdiplomatic.51;¬ насто€щее врем€ € обладаю титулом [titular_kingdom.GetRulerTitle] [titular_kingdom.GetName]. ќднако, не имею никакого юридического права обладать им, будучи вассалом персонажа [Root.Liege.GetTitledFirstName]. ѕоэтому [Root.Liege.GetSheHe] долж[Root.Liege.GetNaEn] решить, отозвать титул или даровать королевские привилегии.;;;;;;;;;;;;;x
 EVTOPTAdiplomatic.51;я по праву [Root.GetTitle];;;;;;;;;;;;;x
 TOOLTIPdiplomatic.51KINGDOM;[Root.Liege.GetTitledFirstName] решит, владеть ли ¬ам титулом [titular_kingdom.GetFullName]\n;;;;;;;;;;;;;x
-EVTDESCdiplomatic.52;[From.GetFirstNameWithDynasty] обладает титулом [titular_kingdom.GetRulerTitle] [titular_kingdom.GetName]. ќднако, [From.GetSheHe] не имеет на него права, пока €вл€етс€ моим вассалом. ѕоэтому € долж[GetNaEn] решить, отозвать [From.GetHerHis] титул или даровать королевские привилегии. ;;;;;;;;;;;;;x
-EVTOPTAdiplomatic.52;я не пострадаю от потери титула [From.GetTitle];;;;;;;;;;;;;x
+EVTDESCdiplomatic.52;[From.GetFirstNameWithDynasty] обладает титулом [titular_kingdom.GetRulerTitle] [titular_kingdom.GetName]. ќднако, [From.GetSheHe] не имеет на него права, пока €вл€етс€ моим вассалом. ѕоэтому € долж[GetNaEn] решить, отозвать [From.GetHerHis] титул или даровать королевские привилегии.;;;;;;;;;;;;;x
+EVTOPTAdiplomatic.52;[From.GetFirstName] решил[From.GetEndA], что [From.GetSheHe] теперь [From.GetTitle]? я этого не потерплю;;;;;;;;;;;;;x
 EVTOPTAdiplomatic.52B;ћожет быть только один король;;;;;;;;;;;;;x
 TOOLTIPrevoked_royal_privilege;[This.Holder.GetFirstName] [This.Holder.GetOnlyDynastyName] потер€л[This.Holder.GetEndA] право владеть титулом [This.GetRulerTitle] в земле [This.GetFullName].\n;;;;;;;;;;;;;x
 opinion_revoked_titular_kingdom;ќтозвал[_] мой титул€рный королевский титул;;;;;;;;;;;;;x

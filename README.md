@@ -3,7 +3,7 @@
 # Установка
 Мод рассчитан на использование в паре с русификатором CK II от e479. Самую свежую версию можно найти на [Yandex Disk](https://yadi.sk/d/_53z7PyCchlEWQ).
 ## Вариант 1 (правильный)
-1) Разместите папку "AGoT_Rus_Fixed" и файл-дискрипшн с аналогичным названием по адресу: C:\Users\\***ВАШЕ_ИМЯ_ПОЛЬЗОВАТЕЛЯ***\\Documents\Paradox Interactive\Crusader Kings II\mod
+1) Разместите папку "AGoT_Rus_Fixed" и файл-дискрипшн с аналогичным названием по адресу: C:\Users\\%username%\\Documents\Paradox Interactive\Crusader Kings II\mod
 2) В лаунчере поставьте галочку напротив "AGoT - Russian Localisation (Fixed)".
 3) Мод будет работать как с англоязычным AGoT, так и с уже русифицированным Деймоном Блэкфайром.
 ## Вариант 2 (нежелательный)
@@ -18,7 +18,7 @@
 4) Исправлено отображение списка богов после загрузки сохранения, если при реформации религии была выбрана доктрина "Поклонение Семерым". Также реализована динамическая смена имени правителя Империи И-Ти в списке божеств религии И-Ти. Более подробно [ТУТ](https://www.strategium.ru/forum/topic/32987-rusifikatsiya-moda-%C2%ABa-game-of-thrones%C2%BB/?do=findComment&comment=3125204).
 5) Реализована зависимость окончаний от пола и количества верховных богов. Т.е. вместо Боги пообещал/Бог пообещал/Богиня пообещал -> Боги пообещали/Бог пообещал/Богиня пообещала и т.п. Более подробно в "P.S." [ТУТ](https://www.strategium.ru/forum/topic/32987-rusifikatsiya-moda-%C2%ABa-game-of-thrones%C2%BB/?do=findComment&comment=3079411).
 6) Правки файлов русификации: неверные/поломанные переменные, опечатки, неточности перевода, стилистические ошибки. Большинство описано начиная с [этого комментария](https://www.strategium.ru/forum/topic/32987-rusifikatsiya-moda-%C2%ABa-game-of-thrones%C2%BB/?do=findComment&comment=3056447).
-7) Исправления нескольких косяков самого мода: добавлены потерянные переменные, исправлен косяк в GUI, Макхрош во времена Века Крови снова становится руинами Ваэс Орвик (более подробно в "2" [ТУТ](https://www.strategium.ru/forum/topic/32987-rusifikatsiya-moda-%C2%ABa-game-of-thrones%C2%BB/?do=findComment&comment=3133064)), решение о восстановлении Харренхолла более недоступно на стартовых датах до рождения Харрена (более подробно [ТУТ](https://www.strategium.ru/forum/topic/32987-rusifikatsiya-moda-«a-game-of-thrones»/page/127/?tab=comments#comment-3181648)) .
+7) Исправления нескольких косяков самого мода: добавлены потерянные переменные, исправлен косяк в GUI, Макхрош во времена Века Крови снова становится руинами Ваэс Орвик (более подробно в "2" [ТУТ](https://www.strategium.ru/forum/topic/32987-rusifikatsiya-moda-%C2%ABa-game-of-thrones%C2%BB/?do=findComment&comment=3133064)), решение о восстановлении Харренхолла более недоступно на стартовых датах до рождения Харрена (более подробно [ТУТ](https://www.strategium.ru/forum/topic/32987-rusifikatsiya-moda-«a-game-of-thrones»/page/127/?tab=comments#comment-3181648)), Морс Мартелл и его предки на последней дате саб-мода "Ройнарские войны" больше не приобретают "арабскую" внешность (более подробно в "1" [ТУТ](https://www.strategium.ru/forum/topic/32987-rusifikatsiya-moda-%C2%ABa-game-of-thrones%C2%BB/?do=findComment&comment=3282678)).
 # Если нашли ошибку
 Если вы обнаружили ошибку, можете сообщить в соответствующей ветке на [Strategium](https://www.strategium.ru/forum/topic/32987-rusifikatsiya-moda-«a-game-of-thrones»/). Добавьте к комментарию @Labes, что бы я получил уведомление. Приятной игры =)
 # P.S.
