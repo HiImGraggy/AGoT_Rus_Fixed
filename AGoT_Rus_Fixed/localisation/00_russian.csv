@@ -1,4 +1,11 @@
 #CODE;ENGLISH;x;;;
+### fix missing ck2plus opinion modifiers localisation keys
+attempted_kidnapping;Попытка похищения;;;;;;;;;;;;;x
+attempted_kidnapping_of_kin;Попытка похищения родственников;;;;;;;;;;;;;x
+attempted_kidnapping_of_vassal;Попытка похищения вассала;;;;;;;;;;;;;x
+opinion_recent_plot;Заговор против меня;;;;;;;;;;;;;x
+### fix dummy culture for random dynasties
+bearded_priest_culture;Бородатые жрецы;x;;;
 ### fix for id = 63001 (overwritten vassal transfer requests)
 EVTDESC63001;Вассал [From.GetTitledName] обращается ко мне с просьбой о том, чтобы вассал низшего ранга служил [FromFrom.GetObjectPronoun], а не непосредственно мне...;x
 ### fix for id = HF.304 (overwritten bloodline description for child of destiny)
@@ -169,7 +176,7 @@ cadj_meereenese;Миэринск;x;;;
 cadj_ghiscari;Гискарск;x;;;
 cadj_dothraki;Дотракийск;x;;;
 cadj_lhazareen;Лхазарянск;x;;;
-cadj_sarnorian;Высок;x;;;
+cadj_sarnorian;Сарнорск;x;;;
 cadj_omberi;Омберийск;x;;;
 cadj_hyrkooni;Гиркунск;x;;;
 cadj_kayakayanayan;Кайакайанайанск;x;;;
@@ -194,7 +201,7 @@ cadj_giant;Гигантск;x;;;
 cadj_children_forest;Дети-Лесн;x;;;
 cadj_white_walker;Бело-Ходоков;x;;;
 cadj_winter_wasteland;Зимне-Пустошев;x;;;
-cadj_summer_islander;Летнеостровск;x;;;
+cadj_summer_islander;Летнийск;x;;;
 cadj_basilisk_islander;Василискоостровн;x;;;
 cadj_brindlemen;Пятнист;x;;;
 cadj_naathi;Наатийск;x;;;
@@ -253,7 +260,7 @@ cadjs_meereenese;Миэринск;x;;;
 cadjs_ghiscari;Гискарск;x;;;
 cadjs_dothraki;Дотракийск;x;;;
 cadjs_lhazareen;Лхазарянск;x;;;
-cadjs_sarnorian;Высок;x;;;
+cadjs_sarnorian;Сарнорск;x;;;
 cadjs_omberi;Омберийск;x;;;
 cadjs_hyrkooni;Гиркунск;x;;;
 cadjs_kayakayanayan;Кайакайанайанск;x;;;
@@ -278,7 +285,7 @@ cadjs_giant;Гигантск;x;;;
 cadjs_children_forest;Дети-Лесн;x;;;
 cadjs_white_walker;Бело-Ходоков;x;;;
 cadjs_winter_wasteland;Зимне-Пустошев;x;;;
-cadjs_summer_islander;Летнеостровск;x;;;
+cadjs_summer_islander;Летнийск;x;;;
 cadjs_basilisk_islander;Василискоостровн;x;;;
 cadjs_brindlemen;Пятнист;x;;;
 cadjs_naathi;Наатийск;x;;;
@@ -338,7 +345,7 @@ plu_meereenese;Миэринск;x;;;
 plu_ghiscari;Гискарск;x;;;
 plu_dothraki;Дотракийск;x;;;
 plu_lhazareen;Лхазарянск;x;;;
-plu_sarnorian;Высок;x;;;
+plu_sarnorian;Сарнорск;x;;;
 plu_omberi;Омберийск;x;;;
 plu_hyrkooni;Гиркунск;x;;;
 plu_kayakayanayan;Кайакайанайанск;x;;;
@@ -363,7 +370,7 @@ plu_giant;Гигантск;x;;;
 plu_children_forest;Дети-Лесн;x;;;
 plu_white_walker;Бело-Ходоков;x;;;
 plu_winter_wasteland;Зимне-Пустошев;x;;;
-plu_summer_islander;Летнеостровск;x;;;
+plu_summer_islander;Летнийск;x;;;
 plu_basilisk_islander;Василискоостровн;x;;;
 plu_brindlemen;Пятнист;x;;;
 plu_naathi;Наатийск;x;;;
@@ -423,7 +430,7 @@ plu_meereeneseGEN;Миэринск;x;;;
 plu_ghiscariGEN;Гискарск;x;;;
 plu_dothrakiGEN;Дотракийск;x;;;
 plu_lhazareenGEN;Лхазарянск;x;;;
-plu_sarnorianGEN;Высок;x;;;
+plu_sarnorianGEN;Сарнорск;x;;;
 plu_omberiGEN;Омберийск;x;;;
 plu_hyrkooniGEN;Гиркунск;x;;;
 plu_kayakayanayanGEN;Кайакайанайанск;x;;;
@@ -448,7 +455,7 @@ plu_giantGEN;Гигантск;x;;;
 plu_children_forestGEN;Дети-Лесн;x;;;
 plu_white_walkerGEN;Бело-Ходоков;x;;;
 plu_winter_wastelandGEN;Зимне-Пустошев;x;;;
-plu_summer_islanderGEN;Летнеостровск;x;;;
+plu_summer_islanderGEN;Летнийск;x;;;
 plu_basilisk_islanderGEN;Василискоостровн;x;;;
 plu_brindlemenGEN;Пятнист;x;;;
 plu_naathiGEN;Наатийск;x;;;
@@ -508,7 +515,7 @@ String_GetLangAdjective_meereenese;Миэринск;x;;;
 String_GetLangAdjective_ghiscari;Гискарск;x;;;
 String_GetLangAdjective_dothraki;Дотракийск;x;;;
 String_GetLangAdjective_lhazareen;Лхазарянск;x;;;
-String_GetLangAdjective_sarnorian;Высок;x;;;
+String_GetLangAdjective_sarnorian;Сарнорск;x;;;
 String_GetLangAdjective_omberi;Омберийск;x;;;
 String_GetLangAdjective_hyrkooni;Гиркунск;x;;;
 String_GetLangAdjective_kayakayanayan;Кайакайанайанск;x;;;
@@ -533,7 +540,7 @@ String_GetLangAdjective_giant;Гигантск;x;;;
 String_GetLangAdjective_children_forest;Дете-Лесн;x;;;
 String_GetLangAdjective_white_walker;Бело-Ходоков;x;;;
 String_GetLangAdjective_winter_wasteland;Зимне-Пустошев;x;;;
-String_GetLangAdjective_summer_islander;Летнеостровск;x;;;
+String_GetLangAdjective_summer_islander;Летнийск;x;;;
 String_GetLangAdjective_basilisk_islander;Василискоостровн;x;;;
 String_GetLangAdjective_brindlemen;Пятнист;x;;;
 String_GetLangAdjective_naathi;Наатийск;x;;;

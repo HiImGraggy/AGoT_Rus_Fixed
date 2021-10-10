@@ -2181,6 +2181,72 @@
 ###
 ### Giants
 ###
+# fixed to prevent 'noculture' persons spawn from c_giants county title
+# dummy persons added to concentrate c_giants and d_giants titles in one hands
+457006 = {
+	name="Map"
+
+	religion="beyond_wall_old_gods"
+	culture="giant"
+
+	7878.1.1 = { birth="7878.1.1" }
+	7950.1.1 = { death="7950.1.1" }
+}
+457007 = {
+	name="Тун"
+
+	religion="beyond_wall_old_gods"
+	culture="giant"
+
+	7930.1.1 = { birth="7930.1.1" }
+	8005.1.1 = { death="8005.1.1" }
+}
+457008 = {
+	name="Доб"
+
+	religion="beyond_wall_old_gods"
+	culture="giant"
+
+	7985.1.1 = { birth="7985.1.1" }
+	8060.1.1 = { death="8060.1.1" }
+}
+457009 = {
+	name="Вег"
+
+	religion="beyond_wall_old_gods"
+	culture="giant"
+
+	8040.1.1 = { birth="8040.1.1" }
+	8115.1.1 = { death="8115.1.1" }
+}
+457010 = {
+	name="Вег"
+
+	religion="beyond_wall_old_gods"
+	culture="giant"
+
+	8095.1.1 = { birth="8095.1.1" }
+	8170.1.1 = { death="8170.1.1" }
+}
+457011 = {
+	name="Ван"
+
+	religion="beyond_wall_old_gods"
+	culture="giant"
+
+	8150.1.1 = { birth="8150.1.1" }
+	8225.1.1 = { death="8225.1.1" }
+}
+457012 = {
+	name="Дар"
+
+	religion="beyond_wall_old_gods"
+	culture="giant"
+
+	8205.1.1 = { birth="8205.1.1" }
+	8280.1.1 = { death="8280.1.1" }
+}
+# fixed
 157013 = {
 	name="Мег"
 	dynasty=6660010
