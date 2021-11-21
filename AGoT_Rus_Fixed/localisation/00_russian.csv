@@ -122,6 +122,7 @@ MALE_YO;ё;x;;;
 GetRelation_GreatUncle;двоюродный дедушка;x;;;
 GetRelation_GreatAunt;двоюродная бабушка;x;;;
 ### GetCultureAdj
+CULTURE_ADJ_FALLBACK;[This.Culture.GetName]ск;x #§z§x
 cadj_riverlander;Речн;x;;;
 cadj_westerman;Западн;x;;;
 cadj_valeman;Долинн;x;;;
@@ -206,6 +207,8 @@ cadj_basilisk_islander;Василискоостровн;x;;;
 cadj_brindlemen;Пятнист;x;;;
 cadj_naathi;Наатийск;x;;;
 cadj_ruin;Руинн;x;;;
+### GetCultureShortAdj
+CULTURE_SHORT_ADJ_FALLBACK;[This.Culture.GetName];x #§z§x
 cadjs_riverlander;Речн;x;;;
 cadjs_westerman;Западн;x;;;
 cadjs_valeman;Долинн;x;;;
@@ -291,6 +294,7 @@ cadjs_brindlemen;Пятнист;x;;;
 cadjs_naathi;Наатийск;x;;;
 cadjs_ruin;Руинн;x;;;
 ### GetCulturePlural
+CULTURE_PLU_FALLBACK;[This.Culture.GetName]нцы;x
 plu_riverlander;Речн;x;;;
 plu_westerman;Западн;x;;;
 plu_valeman;Долинн;x;;;
@@ -376,6 +380,7 @@ plu_brindlemen;Пятнист;x;;;
 plu_naathi;Наатийск;x;;;
 plu_ruin;Руинн;x;;;
 ### GetCulturePluralGEN
+CULTURE_PLU_FALLBACK_GEN;[This.Culture.GetName]цев;x
 plu_riverlanderGEN;Речн;x;;;
 plu_westermanGEN;Западн;x;;;
 plu_valemanGEN;Долинн;x;;;
@@ -461,6 +466,7 @@ plu_brindlemenGEN;Пятнист;x;;;
 plu_naathiGEN;Наатийск;x;;;
 plu_ruinGEN;Руинн;x;;;
 ### GetLangAdjective
+String_GetLangAdjective_Fallback;[This.GetCultureAdj];x
 String_GetLangAdjective_riverlander;Речн;x;;;
 String_GetLangAdjective_westerman;Западн;x;;;
 String_GetLangAdjective_valeman;Долинн;x;;;

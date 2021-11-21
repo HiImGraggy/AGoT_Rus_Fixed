@@ -1,0 +1,15 @@
+is_renamed_culture_trigger = {
+	custom_tooltip = {
+		text = is_renamed_culture_tt
+		AND = {
+			has_alternate_start_parameter = { key = culture_names value = random }
+			OR = {
+				AND = {
+					NOT = { culture_scope = { always = yes } }
+					has_flag = is_name_randomized_flag
+				}
+				culture_scope = { has_flag = is_name_randomized_flag }
+			}
+		}
+	}
+}

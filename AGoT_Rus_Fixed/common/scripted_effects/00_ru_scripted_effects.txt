@@ -1,3 +1,21 @@
+add_randomized_culture_flags_effect = { Alternate start feature 
+	hidden_effect = {
+		generate_tooltip = no
+		if = {
+			limit = { NOT = { has_global_flag = alt_culture_names_flag } }
+			set_global_flag = alt_culture_names_flag
+			any_province = {
+				culture_scope = {
+					if = {
+						limit = { NOT = { has_flag = is_name_randomized_flag } }
+						set_flag = is_name_randomized_flag
+					}
+				}
+			}
+		}
+	}
+}
+
 reformation_female_god_king_head_post_effect = { # Reforming religion with "God King Head" feature where reformer is female
 	ROOT = { # The Reformer scope
 		if = {
