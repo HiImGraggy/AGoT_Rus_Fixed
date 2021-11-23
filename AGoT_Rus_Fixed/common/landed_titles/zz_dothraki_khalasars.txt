@@ -1,0 +1,738 @@
+c_dosh_khaleen = {
+	color={ 255 0 0 } #red
+	color2={ 220 220 0 }
+	
+	capital = 709
+	
+	title = "CRONE"
+	title_female = "CRONE"
+	foa = "CRONE_FOA"
+	
+	dignity = 25
+	
+	# Controls a religion
+	controls_religion = dothraki_pagan
+	
+	religion = dothraki_pagan
+	culture = dothraki
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Always exists
+	landless = yes
+	
+	can_be_claimed = no
+	can_be_usurped = no
+}	
+# d_dothraki_domain = {
+	# color = { 243 180 17 }
+	# landless = yes
+	# capital = 709
+# }
+e_khalasar = {
+	color = { 255 186 0 }
+
+	#capital = 709
+	
+	culture = dothraki
+	
+	allow = { 
+		always = no #gained via decision
+	}
+	
+	k_dothraki = {
+		color = { 243 180 17 }
+		
+		culture = dothraki
+		
+		#capital = 709
+		
+		allow = { hidden_tooltip = { NOT = { culture_group = winter_group } } }
+		
+		d_vaes_dothrak = {
+			color = { 255 186 0 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_vaes_dothrak = {
+				color = { 255 186 0 }
+				
+				holy_site = dothraki_pagan
+				#holy_site = dothraki_pagan_reformed
+				
+				b_vaes_dothrak = {
+				}
+				b_vaes_dothrak2 = {
+				}
+				b_vaes_dothrak3 = {
+				}
+				b_vaes_dothrak4 = {
+				}
+				b_vaes_dothrak5 = {
+				}
+				b_vaes_dothrak6 = {
+				}
+			}
+			c_rhaesh_karlinat = {
+				color = { 160 117 0 }
+				
+				b_rhaesh_karlinat = {
+				}
+				b_rhaesh_karlinat2 = {
+				}
+				b_rhaesh_karlinat3 = {
+				}
+				b_rhaesh_karlinat4 = {
+				}
+			}
+			c_rhaesh_tehin = {
+				color = { 114 84 5 }
+				
+				b_rhaesh_tehin = {
+				}
+				b_rhaesh_tehin2 = {
+				}
+				b_rhaesh_tehin3 = {
+				}
+				b_rhaesh_tehin4 = {
+				}
+			}
+		}
+		
+		d_northern_steppe = {
+			color = { 114 84 5 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_vaes_lotar = {
+				color = { 234 195 90 }
+				
+				b_vaes_lotar = {
+				}
+				b_vaes_lotar2 = {
+				}
+				b_vaes_lotar3 = {
+				}
+			}
+			c_rhaesh_eveth = {
+				color = { 150 124 53 }
+				
+				b_rhaesh_eveth = {
+				}
+				b_rhaesh_eveth2 = {
+				}
+				b_rhaesh_eveth3 = {
+				}
+				b_rhaesh_eveth4 = {
+				}
+			}
+			c_rhaesh_negwin = {
+				color = { 243 180 17 }
+				
+				b_rhaesh_negwin = {
+				}
+				b_rhaesh_negwin2 = {
+				}
+				b_rhaesh_negwin3 = {
+				}
+				b_rhaesh_negwin4 = {
+				}
+			}
+		}
+		
+		d_krazaaj_zasque = {
+			color = { 234 195 90 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_vaes_krazaaj = {
+				color = { 75 61 22 }
+				
+				holy_site = dothraki_pagan
+				#holy_site = dothraki_pagan_reformed
+				
+				b_vaes_krazaaj = {
+				}
+				b_vaes_krazaaj2 = {
+				}
+				b_vaes_krazaaj3 = {
+				}
+			}
+			
+			c_vaes_tawakof = {
+				color = { 171 152 100 }
+				
+				b_vaes_tawakof = {
+				}
+				b_vaes_tawakof2 = {
+				}
+				b_vaes_tawakof3 = {
+				}
+			}
+		}
+		
+		d_krazaaj_niqe = {
+			color = { 150 124 53 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_krazaaj_niqe = {
+				color = { 255 186 0 }
+				
+				b_krazaaj_niqe = {
+				}
+				b_krazaaj_niqe2 = {
+				}
+				b_krazaaj_niqe3 = {
+				}
+			}
+			c_olta_vizhadi = {
+				color = { 160 117 0 }
+				
+				hyrkooni = "Визяна"
+				samyrianan = "Визяна"
+				kayakayanayan = "Визяна"
+				bayasabhadi = "Визяна"
+				
+				b_olta_vizhadi = {
+					hyrkooni = "Визяна"
+					samyrianan = "Визяна"
+					kayakayanayan = "Визяна"
+					bayasabhadi = "Визяна"
+				}
+				b_olta_vizhadi2 = {
+					hyrkooni = "Визяна"
+					samyrianan = "Визяна"
+					kayakayanayan = "Визяна"
+					bayasabhadi = "Визяна"
+				}
+				b_olta_vizhadi3 = {
+					hyrkooni = "Визяна"
+					samyrianan = "Визяна"
+					kayakayanayan = "Визяна"
+					bayasabhadi = "Визяна"
+				}
+			}
+		}
+		d_southern_steppe = {
+			color = { 75 61 22 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_rhaesh_najaheya = {
+				color = { 114 84 5 }
+				
+				b_rhaesh_najaheya = {
+				}
+				b_rhaesh_najaheya2 = {
+				}
+				b_rhaesh_najaheya3 = {
+				}
+			}
+			c_rhaesh_cheyao = {
+				color = { 234 195 90 }
+				
+				b_rhaesh_cheyao = {
+				}
+				b_rhaesh_cheyao2 = {
+				}
+				b_rhaesh_cheyao3 = {
+				}
+			}
+			c_rhaesh_lame = {
+				color = { 150 124 53 }
+				
+				b_rhaesh_lame = {
+				}
+				b_rhaesh_lame2 = {
+				}
+				b_rhaesh_lame3 = {
+				}
+			}
+		}
+		d_rhaesh_jim = {
+			color = { 243 180 17 }		
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_rhaesh_jano = {
+				color = { 243 180 17 }
+				
+				ghiscari = "Йатдхан"
+				astapori = "Йатдхан"
+				yunkaii = "Йатдхан"
+				meereenese = "Йатдхан"
+				
+				b_rhaesh_jano = {
+					ghiscari = "Йатдхан"
+					astapori = "Йатдхан"
+					yunkaii = "Йатдхан"
+					meereenese = "Йатдхан"
+				}
+				b_rhaesh_jano2 = {
+					ghiscari = "Йатдхан"
+					astapori = "Йатдхан"
+					yunkaii = "Йатдхан"
+					meereenese = "Йатдхан"
+				}
+				b_rhaesh_jano3 = {
+					ghiscari = "Йатдхан"
+					astapori = "Йатдхан"
+					yunkaii = "Йатдхан"
+					meereenese = "Йатдхан"
+				}
+				b_rhaesh_jano4 = {
+				}
+			}
+			c_rhaesh_dalfe = {
+				color = { 255 186 0 }
+							
+				b_rhaesh_dalfe = {
+				}
+				b_rhaesh_dalfe2 = {
+				}
+				b_rhaesh_dalfe3 = {
+				}
+				b_rhaesh_dalfe4 = {
+				}
+			}
+			c_rhaesh_jim = {
+				color = { 171 152 100 }
+				
+				sarnorian = "Матхак"
+				
+				b_rhaesh_jim = {
+					sarnorian = "Матхак"
+				}
+				b_rhaesh_jim2 = {
+					sarnorian = "Матхак"
+				}
+				b_rhaesh_jim3 = {
+					sarnorian = "Матхак"
+				}
+			}
+		}
+		d_rhaesh_evronee = {
+			color = { 171 152 100 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_rhaesh_os = {
+				color = { 160 117 0 }
+
+				sarnorian = "Билхатх"
+					
+				b_rhaesh_os = {
+					sarnorian = "Билхатх"
+				}
+				b_rhaesh_os2 = {
+					sarnorian = "Билхатх"
+				}
+				b_rhaesh_os3 = {
+					sarnorian = "Билхатх"
+				}
+			}
+			c_rhaesh_hranna = {
+				color = { 75 61 22 }
+				
+				b_rhaesh_hranna = {
+				}
+				b_rhaesh_hranna2 = {
+				}
+				b_rhaesh_hranna3 = {
+				}
+			}
+			c_vaes_evronee = {
+				color = { 114 84 5 }
+				
+				b_vaes_evronee = {
+				}
+				b_vaes_evronee2 = {
+				}
+				b_vaes_evronee3 = {
+				}
+				b_vaes_evronee4 = {
+				}
+			}
+		}
+	}
+
+	k_ifeqevron = {
+		color = { 108 140 53 }
+		color2 = { 255 198 0  }
+
+		#capital = 571 #Vaes Leisi
+		allow = { hidden_tooltip = { NOT = { culture_group = winter_group } } }
+			
+		d_vaes_leisi = {
+			color = { 60 95 0 }
+			color2 = { 250 159 69 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_vaes_leisi = {
+				color = { 108 140 53 }
+				color2={ 255 255 255 }
+				
+				holy_site = gods_ibben
+					
+				b_vaes_leisi = {
+				}
+				b_vaes_leisi1 = {
+				}
+				b_vaes_leisi2 = {
+				}
+				b_vaes_leisi3 = {
+				}
+				b_vaes_leisi4 = {
+				}
+			}
+			c_dofahkar = {
+				color = { 60 95 0 }
+				color2={ 255 255 255 }
+								
+				b_dofahkar = {
+				}
+				b_dofahkar1 = {
+				}
+				b_dofahkar2 = {
+				}
+			}
+			c_arfahkar = {
+				color = { 151 191 80 }
+				color2={ 255 255 255 }
+							
+				b_arfahkar = {
+				}
+				b_arfahkar1 = {
+				}
+				b_arfahkar2 = {
+				}
+			}
+		}
+		d_west_ifeqevron = {
+			color = { 151 191 80 }
+			color2 = { 250 159 69 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+				
+			c_chevrak = {
+				color = { 78 99 43 }
+				color2={ 255 255 255 }
+			
+				b_chevrak = {
+				}
+				b_chevrak1 = {
+				}
+				b_chevrak2 = {
+				}
+			}
+			c_walrus_point = {
+				color = { 131 183 40 }
+				color2={ 255 255 255 }
+				
+				b_walrus_point = {
+				}
+				b_walrus_point1 = {
+				}
+				b_walrus_point2 = {
+				}
+			}
+		}
+		d_east_ifeqevron = {
+			color = { 78 99 43 }
+			color2 = { 250 159 69 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_qevrak = {
+				color = { 108 140 53 }
+				color2={ 255 255 255 }
+							
+				b_qevrak = {
+				}
+				b_qevrak1 = {
+				}
+				b_qevrak2 = {
+				}
+			}
+			c_vaerakar = {
+				color = { 60 95 0 }
+				color2={ 255 255 255 }
+					
+				b_vaerakar = {
+				}
+				b_vaerakar1 = {
+				}
+				b_vaerakar2 = {
+				}
+			}
+		}
+		d_south_ifeqevron = {
+			color = { 151 191 80 }
+			color2 = { 250 159 69 }
+			
+			allow = {
+				OR = {				
+					custom_tooltip = {
+						text = TOOLTIPhl_creation_requirement
+						hidden_tooltip = { any_demesne_province = { duchy = { title = FROM } } }
+					}	
+					has_game_rule = { name = hl_creation_requirement value = off }
+				}	
+			}
+			
+			c_maerakar = {
+				color = { 108 140 53 }
+				color2={ 255 255 255 }
+							
+				b_maerakar = {
+				}
+				b_maerakar1 = {
+				}
+				b_maerakar2 = {
+				}
+			}
+			c_qerr = {
+				color = { 78 99 43 }
+				color2={ 255 255 255 }
+							
+				b_qerr = {
+				}
+				b_qerr1 = {
+				}
+				b_qerr2 = {
+				}
+			}
+		}
+	}	
+}
+# k_khalasar_1 = {
+	# color = { 255 150 0 }
+	# color2 = { 255 215 0 }
+# }
+# k_khalasar_2 = {
+	# color = { 195 120 60 }
+	# color2 = { 255 215 0 }
+# }
+# k_khalasar_3 = {
+	# color = { 225 110 30 }
+	# color2 = { 255 215 0 }
+# }
+# k_khalasar_4 = {
+	# color = { 165 80 90 }
+	# color2 = { 255 215 0 }
+# }
+# k_khalasar_5 = {
+	# color = { 105 50 150 }
+	# color2 = { 255 215 0 }
+# }
+# k_khalasar_6 = {
+	# color = { 135 20 120 }
+	# color2 = { 255 215 0 }
+# }
+# k_khalasar_7 = {
+	# color = { 75 240 180 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_1 = {
+	# color = { 77 188 169 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_2 = {
+	# color = { 53 71 140 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_3 = {
+	# color = { 128 166 86 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_4 = {
+	# color = { 218 110 71 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_5 = {
+	# color = { 36 179 216 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_6 = {
+	# color = { 43 97 226 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_7 = {
+	# color = { 18 195 170 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_8 = {
+	# color = { 149 67 169 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_9 = {
+	# color = { 214 43 34 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_10 = {
+	# color = { 213 123 21 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_11 = {
+	# color = { 146 53 130 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_12 = {
+	# color = { 46 163 172 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_13 = {
+	# color = { 102 46 13 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_14 = {
+	# color = { 93 34 232 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_15 = {
+	# color = { 17 126 62 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_16 = {
+	# color = { 131 67 13 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_17 = {
+	# color = { 95 50 150 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_18 = {
+	# color = { 85 0 0 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_19 = {
+	# color = { 75 25 100 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_20 = {
+	# color = { 65 188 200 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_21 = {
+	# color = { 55 222 150 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_22 = {
+	# color = { 45 132 175 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_23 = {
+	# color = { 35 66 44 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_24 = {
+	# color = { 25 0 88 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_25 = {
+	# color = { 15 177 201 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_26 = {
+	# color = { 5 98 150 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_27 = {
+	# color = { 255 240 25 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_28 = {
+	# color = { 30 133 150 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_29 = {
+	# color = { 30 167 36 }
+	# color2 = { 255 215 0 }
+# }
+# d_kha_30 = {
+	# color = { 30 201 150 }
+	# color2 = { 255 215 0 }
+# }
