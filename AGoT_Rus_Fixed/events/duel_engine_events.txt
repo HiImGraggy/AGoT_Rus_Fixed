@@ -1,0 +1,6665 @@
+namespace = duel
+
+#####################
+# Duel Engine Mk II #
+#####################
+# Galle (Gregory Hayes)
+# May 28 2012
+#####################
+# Updated by blackninja9939 and knuckey
+#####################
+# MAIN LOOP
+# duel.0	Duel Start
+# duel.1	Round Start # Was 5555000
+# duel.2	Duelist One Round
+# duel.3	Duelist Two Round
+# duel.4	Round Resolution
+# duel.5	Winner Exploits Hole in Defense
+# duel.6	Loser Is Hit
+# duel.7	Determine Outcome
+######################
+# WOUND OUTCOMES (NYI)
+######################
+# duel.101	Opponent Wounded!
+# duel.102	Wounded!
+######################
+# YIELD OUTCOMES (NYI)
+######################
+# duel.105	Opponent At Your Mercy!
+# duel.106	Subdued! Yield Y/N?
+# duel.107	Opponent Yields! Accept Y/N?
+# duel.108	Opponent Accepts Your Yield!
+# duel.109	Opponent Refuses Your Yield!
+# duel.110	You Roll Aside, But Are Wounded!
+# duel.111	Your Opponent Rolls Aside, But Is Wounded!
+######################
+# DEATH OUTCOMES
+######################
+# duel.201	The final blow!
+# duel.202	Slain!
+# duel.203	Opponent Slain!
+######################
+# How to include a duel in an event chain:
+# 1. Call an event for the first duelist, that gives them
+#    a unique flag for the context of your duel.
+# 2. From the first event, call an event for the second duelist,
+#    giving THEM a unique flag for the context of your duel.
+# 3. Put the following in the second event:
+#    e_rebels = { holder_scope = { character_event = { id = duel.0 } } }
+# 4. In option A of event duel_output.1, in duel_engine_output_events.txt,
+#    and a new if statement checking ROOT for either of your context flags.
+#	 Remove all context flags from both ROOT and FROM and call the next
+#	 event of your chain. For the next event, FROM will be the winner, and
+#	 FROMFROM will be the loser. Unless the draw ended in a draw, in which case ROOT 
+#	 will have the duel_ended_in_draw flag
+#########################
+# SPECIAL CONTEXT FLAGS
+# Put these on a characters before the duel begins in order to
+# alter the duel in specific ways.
+# They do not need to be removed in your output block.
+#########################
+# flag_duel_friendly		This character is not trying to kill their opponent.
+# flag_duel_to_the_death	This character intends to fight to their death. Overriden by flag_duel_friendly
+# mock_duel					This duel does not involve the use of real weapons
+# finger_dance_duel			This duel is a finger dance (changes event localisation)
+# duel_can_be_draw			This duel can end in a draw
+#########################
+
+# DUEL START
+# Starts up the duel, saves event targets, checks for things being broken and sets up duel_rounds counter. Called only once
+character_event = { 
+	id = duel.0
+	is_triggered_only = yes
+	
+	# Nobody but the actual referee should ever get this
+	trigger = { has_landed_title = e_rebels }
+	
+	option = {
+		name = "DUEL_START"
+		clear_event_target = combatant_1
+		clear_event_target = combatant_2
+		FROM = { 
+			save_event_target_as = combatant_1 
+		}
+		FROMFROM = { 
+			save_event_target_as = combatant_2 
+		}
+		commence_duel_engine_effect = yes
+	}
+}
+
+# ROUND START
+# This event starts a new round of combat after resolving the previous one
+character_event = {
+	id = duel.1
+	is_triggered_only = yes
+	
+	# Nobody but the actual referee should ever get this
+	trigger = { 
+		has_landed_title = e_rebels 
+		event_target:combatant_2 = { is_alive = yes }
+		event_target:combatant_1 = { is_alive = yes }
+	}
+	
+	option = {
+		name = "BEGIN!"		
+		event_target:duel_round_winner = { clear_event_target = duel_round_winner }
+		event_target:duel_round_loser = { clear_event_target = duel_round_loser }
+		event_target:combatant_2 = { character_event = { id = duel.2 } }
+	}
+}
+
+# MAIN LOOP
+# Duel tactics Speed > Force > Defense
+character_event = {
+	id = duel.2
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	show_from_from = yes
+	
+	trigger = { event_target:combatant_1 = { is_alive = yes } }
+	
+	#SELECT PICTURE
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			NOR = {
+				culture = dothraki
+				trait = wildling
+				event_target:combatant_1 = {
+					OR = {
+						culture = dothraki
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_evt_the_trident
+	}
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+				has_character_flag = stealing_spearwife
+				has_character_flag = dothraki_wedding_duel_death
+			}
+		}
+		picture = GFX_evt_battle
+	}
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			NOR = {
+				culture = dothraki
+				trait = wildling
+				event_target:combatant_1 = {
+					OR = {
+						culture = dothraki
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_evt_melee
+	}
+	picture = {
+		trigger = { 
+			has_character_flag = in_melee
+		}
+		picture = GFX_evt_melee
+	}
+	picture = {
+		trigger = { 
+			has_character_flag = in_melee
+		}
+		picture = GFX_evt_battle
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			is_adult = no
+			event_target:combatant_1 = { is_adult = no }
+		}
+		picture = GFX_evt_child_sword
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				has_character_flag = elected_champion
+				has_character_flag = demmanded_trial_by_combat
+				has_character_flag = champion_of_relative
+				has_character_flag = lunatic_trial
+				has_character_flag = duelist_regent
+				has_character_flag = duelist_courtier
+				has_character_flag = wikid_friendly_duel_player
+				has_character_flag = kingsmoot_duel
+				has_character_flag = tourney_duel_challenger
+				has_character_flag = tourney_duel_target
+				has_character_flag = WOL_focus_duel
+				has_character_flag = wol_lover_duel_accuser
+				has_character_flag = wol_lover_duel_lover
+				has_character_flag = friends_rivals_duel
+				has_character_flag = trial_by_seven_duel
+				has_character_flag = gbc_duel
+				has_character_flag = gbc_duel_rival
+			}
+		}
+		picture = GFX_evt_family_feud_republic
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				culture = dothraki
+				event_target:combatant_1 = { culture = dothraki }
+			}
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_evt_dothraki_struggling
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				culture_group = iron_isles_culture
+				trait = wildling
+				has_character_flag = finger_dance_duel
+				event_target:combatant_1 = { 
+					OR = {
+						culture_group = iron_isles_culture 
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_fingerdance
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = wildling
+				event_target:combatant_1 = { 
+					trait = wildling
+				}
+			}
+		}
+		picture = GFX_evt_wildlings
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = knight
+				event_target:combatant_1 = { trait = knight }
+			}
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_FLORENT
+	}
+	picture = {
+		trigger = { 
+			trait = knight
+			event_target:combatant_1 = { trait = knight }
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_knights
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = giant
+				event_target:combatant_1 = { trait = giant }
+			}
+		}
+		picture = GFX_evt_giants
+	}
+	
+	#SELECT DESC
+	desc = { #default
+		text = EVTDESCDUEL2
+		trigger = {
+		}
+	}
+	
+	#Contexts
+	desc = {
+		text = EVTDESCDUEL2BATTLE
+		trigger = { 
+			OR = {
+				has_character_flag = reaving_duel
+				has_character_flag = flag_battlefield_duel
+			}	
+		}
+	}
+	desc = {
+		text = EVTDESCDUEL2TRIALBYCOMBAT
+		trigger = { 
+			OR = {
+				has_character_flag = elected_champion
+				has_character_flag = demmanded_trial_by_combat
+				has_character_flag = champion_of_relative
+			}	
+		}
+	}
+	desc = {
+		text = EVTDESCDUEL2FINGERDANCE
+		trigger = { 
+			has_character_flag = finger_dance_duel	
+		}
+	}
+	
+	#My Traits
+	desc = {
+		text = EVTDESCDUEL2WOUNDED
+		trigger = { trait = wounded }
+	}
+	desc = {
+		text = EVTDESCDUEL2MAIMED
+		trigger = { is_maimed_trigger = yes }
+	}
+	desc = {
+		text = EVTDESCDUEL2ILL
+		trigger = {
+			OR = {
+				is_ill = yes
+				has_epidemic = yes
+			}	
+		}
+	}
+	desc = {
+		text = EVTDESCDUEL2YOUNG
+		trigger = { 
+			NOT = { age = 15 }
+			NOT = { trait = tall }
+			NOT = { is_strong_trigger = yes }
+		}
+	}
+	
+	#Opponent Traits
+	desc = {
+		text = EVTDESCDUEL2WOUNDEDOPP
+		trigger = { event_target:combatant_1 = { trait = wounded } }
+	}
+	desc = {
+		text = EVTDESCDUEL2MAIMEDOPP
+		trigger = { event_target:combatant_1 = { is_maimed_trigger = yes } }
+	}
+	desc = {
+		text = EVTDESCDUEL2ILLOPP
+		trigger = {
+			event_target:combatant_1 = {
+				OR = {
+					is_ill = yes
+					has_epidemic = yes
+				}	
+			}	
+		}
+	}
+	desc = {
+		text = EVTDESCDUEL2YOUNGOPP
+		trigger = { 
+			event_target:combatant_1 = {
+				NOT = { age = 15 }
+				NOT = { trait = tall }
+				NOT = { is_strong_trigger = yes }
+			}	
+		}
+	}
+	
+	immediate = {
+		clr_character_flag = duel_tactic_speed
+		clr_character_flag = duel_tactic_force
+		clr_character_flag = duel_tactic_defense
+		#clr_character_flag = duel_tactic_animal
+	}
+	
+	option = { # Speed
+		name = {
+			text = "EVTOPTADUEL2" #default
+			trigger = {
+			}
+		}
+		name = {
+			text = "EVTOPTADUEL2B" 
+			trigger = {
+			}
+		}
+		name = {
+			text = "EVTOPTADUEL2TRIALBYCOMBAT"
+			trigger = { 
+				OR = {
+					trait = zealous
+					has_character_flag = elected_champion
+					has_character_flag = demmanded_trial_by_combat
+					has_character_flag = champion_of_relative
+				}	
+			}
+		}	
+		name = {
+			text = "EVTOPTADUEL2WOUNDED"
+			trigger = { 
+				trait = wounded	
+			}
+		}	
+		name = {
+			text = "EVTOPTADUEL2MAIMED"
+			trigger = { 
+				is_maimed_trigger = yes	
+			}
+		}
+		name = {
+			text = "EVTOPTADUEL2WOUNDEDOPP"
+			trigger = { event_target:combatant_1 = { trait = wounded } }
+		}
+		name = {
+			text = "EVTOPTADUEL2YOUNGOPP"
+			trigger = { 
+				event_target:combatant_1 = { 
+					NOT = { age = 15 }
+					NOT = { trait = tall }
+					NOT = { is_strong_trigger = yes }
+				} 
+			}
+		}
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 1.66
+				OR = {
+					trait = skilled_warrior
+					trait = master_warrior
+				}
+			}
+			modifier = {
+				factor = 1.66
+				is_smart_incl_genius_trigger = yes
+			}
+		}
+		set_character_flag = duel_tactic_speed
+		custom_tooltip = { text = TOOLTIPduel_tactic_speed }
+	}
+	option = { # Force
+		name = {
+			text = "EVTOPTBDUEL2" #default
+			trigger = {
+			}
+		}
+		name = {
+			text = "EVTOPTBDUEL2TRIALBYCOMBAT"
+			trigger = { 
+				OR = {
+					trait = zealous
+					has_character_flag = elected_champion
+					has_character_flag = demmanded_trial_by_combat
+					has_character_flag = champion_of_relative
+				}	
+			}
+		}	
+		name = {
+			text = "EVTOPTBDUEL2WOUNDED"
+			trigger = { 
+				trait = wounded	
+			}
+		}	
+		name = {
+			text = "EVTOPTBDUEL2MAIMED"
+			trigger = { 
+				is_maimed_trigger = yes	
+			}
+		}
+		name = {
+			text = "EVTOPTBDUEL2WOUNDEDOPP"
+			trigger = { event_target:combatant_1 = { trait = wounded } }
+		}
+		name = {
+			text = "EVTOPTBDUEL2YOUNGOPP"
+			trigger = { 
+				event_target:combatant_1 = { 
+					NOT = { age = 15 }
+					NOT = { trait = tall }
+					NOT = { is_strong_trigger = yes }
+				} 
+			}
+		}
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 2
+				trait = lunatic
+			}
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.5
+				trait = patient
+			}
+			modifier = {
+				factor = 1.66
+				trait = brave
+			}
+		}
+		set_character_flag = duel_tactic_force
+		custom_tooltip = { text = TOOLTIPduel_tactic_force }
+	}
+	option = { # Defense
+		name = {
+			text = "EVTOPTCDUEL2" #default
+			trigger = {
+			}
+		}
+		name = {
+			text = "EVTOPTCDUEL2TRIALBYCOMBAT"
+			trigger = { 
+				OR = {
+					trait = zealous
+					has_character_flag = elected_champion
+					has_character_flag = demmanded_trial_by_combat
+					has_character_flag = champion_of_relative
+				}	
+			}
+		}	
+		name = {
+			text = "EVTOPTCDUEL2WOUNDED"
+			trigger = { 
+				trait = wounded	
+			}
+		}	
+		name = {
+			text = "EVTOPTCDUEL2MAIMED"
+			trigger = { 
+				is_maimed_trigger = yes	
+			}
+		}
+		name = {
+			text = "EVTOPTCDUEL2WOUNDEDOPP"
+			trigger = { event_target:combatant_1 = { trait = wounded } }
+		}
+		name = {
+			text = "EVTOPTCDUEL2YOUNGOPP"
+			trigger = { 
+				event_target:combatant_1 = { 
+					NOT = { age = 15 }
+					NOT = { trait = tall }
+					NOT = { is_strong_trigger = yes }
+				} 
+			}
+		}
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 2
+				trait = patient
+			}
+			modifier = {
+				factor = 1.66
+				trait = craven
+			}
+		}
+		set_character_flag = duel_tactic_defense
+		custom_tooltip = { text = TOOLTIPduel_tactic_defense }
+	}
+	option = { # Send in animal companion!
+		name = EVTOPTDDUEL2
+		trigger = {
+			has_pet_animal_trigger = yes
+			NOR = {
+				has_character_modifier = formidable_animal_companion
+				has_character_modifier = animal_companion
+			}
+			NOR = { #Not in some types of duel
+				has_character_flag = mock_duel
+				has_character_flag = elected_champion
+				has_character_flag = demmanded_trial_by_combat
+				has_character_flag = champion_of_relative
+				has_character_flag = lunatic_trial
+				has_character_flag = duelist_regent
+				has_character_flag = duelist_courtier
+				has_character_flag = stealing_spearwife
+				has_character_flag = tourney_duel_challenger
+				has_character_flag = tourney_duel_target
+				has_character_flag = WOL_focus_duel
+				has_character_flag = wol_lover_duel_accuser
+				has_character_flag = wol_lover_duel_lover
+				has_character_flag = friends_rivals_duel
+				has_character_flag = trial_by_seven_duel
+				has_character_flag = in_melee
+				has_character_flag = finger_dance_duel	
+			}
+			
+		}
+		ai_chance = {
+			factor = 66
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.5
+				trait = patient
+			}
+		}
+		tooltip_info = yes
+		if = { #Formidable animal gives +10 combat
+			limit = {
+				OR = {
+					trait = wolf
+					trait = eagle
+					trait = shadowcat
+					trait = snowbear
+					trait = direwolf
+					trait = brownbear
+				}
+			}
+			add_character_modifier = {
+				name = formidable_animal_companion
+				duration = 2
+			}
+		}
+		else = { #others give +5
+			add_character_modifier = {
+				name = animal_companion
+				duration = 2
+			}
+		}
+		set_character_flag = duel_tactic_animal
+		custom_tooltip = { text = TOOLTIPduel_tactic_animal }		
+	}
+	option = { # Poison!
+		name = EVTOPTEDUEL2
+		trigger = {
+			intrigue = 12
+			NOT = { trait = honest }
+			NOT = { trait = honorable }
+			OR = {
+				trait = ruthless
+				trait = cruel
+				trait = deceitful
+				trait = lunatic
+				culture_group = dornish
+			}
+			NOT = { has_character_flag = duel_tactic_poison }
+			NOR = { #Not in some types of duel
+				has_character_flag = mock_duel
+				has_character_flag = finger_dance_duel
+				
+				has_character_flag = flag_battlefield_duel
+				has_character_flag = flag_battlefield_duel_vs_kingsguard
+				has_character_flag = reaving_duel
+				has_character_flag = reaving_duel_target
+				has_character_flag = KG_vs_rogue_kg
+				has_character_flag = KING_vs_rogue_kg
+				has_character_flag = stealing_spearwife
+				has_character_flag = reaving_sword_fight
+				has_character_flag = clansmen_hunt_duel
+				has_character_flag = white_walker_duel
+			}
+			event_target:combatant_1 = { is_ill = no }
+		}
+		ai_chance = {
+			factor = 5
+			
+			modifier = {
+				factor = 0
+				opinion = { who = event_target:combatant_1 value = 25 }
+			}
+			modifier = {
+				factor = 0
+				opinion = { who = event_target:combatant_1 value = 0 }
+				OR = {
+					NOT = { trait = ruthless }
+					has_character_flag = flag_duel_friendly
+				}	
+			}
+			modifier = {
+				factor = 0
+				is_close_relative = event_target:combatant_1
+				NOT = { trait = ruthless }
+				NOT = { trait = selfish }
+			}
+			modifier = {
+				factor = 2
+				trait = ruthless
+			}
+			modifier = {
+				factor = 2
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = deceitful
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 0.33
+				trait = kind
+			}
+			modifier = {
+				factor = 0.33
+				trait = just
+			}
+		}
+		tooltip_info = intrigue
+		set_character_flag = duel_tactic_poison
+		custom_tooltip = { text = TOOLTIPduel_tactic_poison }	
+		if = { #There is a chance the poison fails...
+            limit = {
+                OR = {
+                    event_target:combatant_1 = {
+                        job_spymaster = {
+                            opinion = { who = PREV value = 15 } #if they like their employer
+                            intrigue = 18
+                        }
+                    }
+                    event_target:combatant_1 = { intrigue = ROOT } #they alone can match your intrigue
+                }
+            }
+            set_character_flag = poison_can_fail
+        }
+	}
+	after = {
+		hidden_tooltip = { event_target:combatant_1 = { character_event = { id = duel.3 } } }
+	}
+}
+character_event = {
+	id = duel.3
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	#SELECT PICTURE
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			NOR = {
+				culture = dothraki
+				trait = wildling
+				FROM = {
+					OR = {
+						culture = dothraki
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_evt_the_trident
+	}
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+				has_character_flag = stealing_spearwife
+				has_character_flag = dothraki_wedding_duel_death
+			}
+		}
+		picture = GFX_evt_battle
+	}
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			NOR = {
+				culture = dothraki
+				trait = wildling
+				FROM = {
+					OR = {
+						culture = dothraki
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_evt_melee
+	}
+	picture = {
+		trigger = { 
+			has_character_flag = in_melee
+		}
+		picture = GFX_evt_melee
+	}
+	picture = {
+		trigger = { 
+			has_character_flag = in_melee
+		}
+		picture = GFX_evt_battle
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			is_adult = no
+			FROM = { is_adult = no }
+		}
+		picture = GFX_evt_child_sword
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				has_character_flag = elected_champion
+				has_character_flag = demmanded_trial_by_combat
+				has_character_flag = champion_of_relative
+				has_character_flag = lunatic_trial
+				has_character_flag = duelist_regent
+				has_character_flag = duelist_courtier
+				has_character_flag = wikid_friendly_duel_player
+				has_character_flag = kingsmoot_duel
+				has_character_flag = tourney_duel_challenger
+				has_character_flag = tourney_duel_target
+				has_character_flag = WOL_focus_duel
+				has_character_flag = wol_lover_duel_accuser
+				has_character_flag = wol_lover_duel_lover
+				has_character_flag = friends_rivals_duel
+				has_character_flag = trial_by_seven_duel
+				has_character_flag = gbc_duel
+				has_character_flag = gbc_duel_rival
+			}
+		}
+		picture = GFX_evt_family_feud_republic
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				culture = dothraki
+				FROM = { culture = dothraki }
+			}
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_evt_dothraki_struggling
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				culture_group = iron_isles_culture
+				trait = wildling
+				has_character_flag = finger_dance_duel
+				FROM = { 
+					OR = {
+						culture_group = iron_isles_culture 
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_fingerdance
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = wildling
+				FROM = { 
+					trait = wildling
+				}
+			}
+		}
+		picture = GFX_evt_wildlings
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = knight
+				FROM = { trait = knight }
+			}
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_FLORENT
+	}
+	picture = {
+		trigger = { 
+			trait = knight
+			FROM = { trait = knight }
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_knights
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = giant
+				FROM = { trait = giant }
+			}
+		}
+		picture = GFX_evt_giants
+	}
+	
+	immediate = {
+		clr_character_flag = duel_tactic_speed
+		clr_character_flag = duel_tactic_force
+		clr_character_flag = duel_tactic_defense
+		#clr_character_flag = duel_tactic_animal
+	}
+	
+	desc = { #default
+		text = EVTDESCDUEL3
+		trigger = {
+		}
+	}
+	
+	#Contexts
+	desc = {
+		text = EVTDESCDUEL3BATTLE
+		trigger = { 
+			OR = {
+				has_character_flag = reaving_duel
+				has_character_flag = flag_battlefield_duel
+			}	
+		}
+	}
+	desc = {
+		text = EVTDESCDUEL3TRIALBYCOMBAT
+		trigger = { 
+			OR = {
+				has_character_flag = elected_champion
+				has_character_flag = demmanded_trial_by_combat
+				has_character_flag = champion_of_relative
+			}	
+		}
+	}
+	desc = {
+		text = EVTDESCDUEL3FINGERDANCE
+		trigger = { 
+			has_character_flag = finger_dance_duel	
+		}
+	}
+	
+	#My Traits
+	desc = {
+		text = EVTDESCDUEL3WOUNDED
+		trigger = { trait = wounded }
+	}
+	desc = {
+		text = EVTDESCDUEL3MAIMED
+		trigger = { is_maimed_trigger = yes }
+	}
+	desc = {
+		text = EVTDESCDUEL3ILL
+		trigger = {
+			OR = {
+				is_ill = yes
+				has_epidemic = yes
+			}	
+		}
+	}
+	desc = {
+		text = EVTDESCDUEL3YOUNG
+		trigger = { 
+			NOT = { age = 15 }
+			NOT = { trait = tall }
+			NOT = { is_strong_trigger = yes }
+		}
+	}
+	
+	#Opponent Traits
+	desc = {
+		text = EVTDESCDUEL3WOUNDEDOPP
+		trigger = { event_target:combatant_2 = { trait = wounded } }
+	}
+	desc = {
+		text = EVTDESCDUEL3MAIMEDOPP
+		trigger = { event_target:combatant_2 = { is_maimed_trigger = yes } }
+	}
+	desc = {
+		text = EVTDESCDUEL3ILLOPP
+		trigger = {
+			event_target:combatant_2 = {
+				OR = {
+					is_ill = yes
+					has_epidemic = yes
+				}	
+			}	
+		}
+	}
+	desc = {
+		text = EVTDESCDUEL3YOUNGOPP
+		trigger = { 
+			event_target:combatant_2 = {
+				NOT = { age = 15 }
+				NOT = { trait = tall }
+				NOT = { is_strong_trigger = yes }
+			}	
+		}
+	}
+	
+	option = { # Speed
+		name = {
+			text = "EVTOPTADUEL3" #default
+			trigger = {
+			}
+		}
+		name = {
+			text = "EVTOPTADUEL3TRIALBYCOMBAT"
+			trigger = { 
+				OR = {
+					trait = zealous
+					has_character_flag = elected_champion
+					has_character_flag = demmanded_trial_by_combat
+					has_character_flag = champion_of_relative
+				}	
+			}
+		}	
+		name = {
+			text = "EVTOPTADUEL3WOUNDED"
+			trigger = { 
+				trait = wounded	
+			}
+		}	
+		name = {
+			text = "EVTOPTADUEL3MAIMED"
+			trigger = { 
+				is_maimed_trigger = yes	
+			}
+		}
+		name = {
+			text = "EVTOPTADUEL3WOUNDEDOPP"
+			trigger = { event_target:combatant_2 = { trait = wounded } }
+		}
+		name = {
+			text = "EVTOPTADUEL3YOUNGOPP"
+			trigger = { 
+				event_target:combatant_2 = { 
+					NOT = { age = 15 }
+					NOT = { trait = tall }
+					NOT = { is_strong_trigger = yes }
+				} 
+			}
+		}
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 1.66
+				OR = {
+					trait = skilled_warrior
+					trait = master_warrior
+				}
+			}
+			modifier = {
+				factor = 1.66
+				is_smart_incl_genius_trigger = yes
+			}
+		}
+		set_character_flag = duel_tactic_speed
+		custom_tooltip = { text = TOOLTIPduel_tactic_speed }
+	}
+	option = { # Force
+		name = {
+			text = "EVTOPTBDUEL3" #default
+			trigger = {
+			}
+		}
+		name = {
+			text = "EVTOPTBDUEL3TRIALBYCOMBAT"
+			trigger = { 
+				OR = {
+					trait = zealous
+					has_character_flag = elected_champion
+					has_character_flag = demmanded_trial_by_combat
+					has_character_flag = champion_of_relative
+				}	
+			}
+		}	
+		name = {
+			text = "EVTOPTBDUEL3WOUNDED"
+			trigger = { 
+				trait = wounded	
+			}
+		}	
+		name = {
+			text = "EVTOPTBDUEL3MAIMED"
+			trigger = { 
+				is_maimed_trigger = yes	
+			}
+		}
+		name = {
+			text = "EVTOPTBDUEL3WOUNDEDOPP"
+			trigger = { event_target:combatant_2 = { trait = wounded } }
+		}
+		name = {
+			text = "EVTOPTBDUEL3YOUNGOPP"
+			trigger = { 
+				event_target:combatant_2 = { 
+					NOT = { age = 15 }
+					NOT = { trait = tall }
+					NOT = { is_strong_trigger = yes }
+				} 
+			}
+		}
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 2
+				trait = lunatic
+			}
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.5
+				trait = patient
+			}
+			modifier = {
+				factor = 1.66
+				trait = brave
+			}
+		}
+		set_character_flag = duel_tactic_force
+		custom_tooltip = { text = TOOLTIPduel_tactic_force }
+	}
+	option = { # Defense
+		name = {
+			text = "EVTOPTCDUEL3" #default
+			trigger = {
+			}
+		}
+		name = {
+			text = "EVTOPTCDUEL3TRIALBYCOMBAT"
+			trigger = { 
+				OR = {
+					trait = zealous
+					has_character_flag = elected_champion
+					has_character_flag = demmanded_trial_by_combat
+					has_character_flag = champion_of_relative
+				}	
+			}
+		}	
+		name = {
+			text = "EVTOPTCDUEL3WOUNDED"
+			trigger = { 
+				trait = wounded	
+			}
+		}	
+		name = {
+			text = "EVTOPTCDUEL3MAIMED"
+			trigger = { 
+				is_maimed_trigger = yes	
+			}
+		}
+		name = {
+			text = "EVTOPTCDUEL3WOUNDEDOPP"
+			trigger = { event_target:combatant_2 = { trait = wounded } }
+		}
+		name = {
+			text = "EVTOPTCDUEL3YOUNGOPP"
+			trigger = { 
+				event_target:combatant_2 = { 
+					NOT = { age = 15 }
+					NOT = { trait = tall }
+					NOT = { is_strong_trigger = yes }
+				} 
+			}
+		}
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 2
+				trait = patient
+			}
+			modifier = {
+				factor = 1.66
+				trait = craven
+			}
+		}
+		set_character_flag = duel_tactic_defense
+		custom_tooltip = { text = TOOLTIPduel_tactic_defense }
+	}
+	option = { # Send in animal companion!
+		name = EVTOPTDDUEL2
+		trigger = {
+			has_pet_animal_trigger = yes
+			NOR = {
+				has_character_modifier = formidable_animal_companion
+				has_character_modifier = animal_companion
+			}
+			NOR = { #Not in some types of duel
+				has_character_flag = mock_duel
+				has_character_flag = elected_champion
+				has_character_flag = demmanded_trial_by_combat
+				has_character_flag = champion_of_relative
+				has_character_flag = lunatic_trial
+				has_character_flag = duelist_regent
+				has_character_flag = duelist_courtier
+				has_character_flag = stealing_spearwife
+				has_character_flag = tourney_duel_challenger
+				has_character_flag = tourney_duel_target
+				has_character_flag = WOL_focus_duel
+				has_character_flag = wol_lover_duel_accuser
+				has_character_flag = wol_lover_duel_lover
+				has_character_flag = friends_rivals_duel
+				has_character_flag = trial_by_seven_duel
+				has_character_flag = in_melee
+				has_character_flag = finger_dance_duel	
+			}
+		}
+		ai_chance = {
+			factor = 66
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.5
+				trait = patient
+			}
+		}
+		tooltip_info = yes
+		if = { #Formidable animal gives +10 combat
+			limit = {
+				OR = {
+					trait = wolf
+					trait = eagle
+					trait = shadowcat
+					trait = snowbear
+					trait = direwolf
+					trait = brownbear
+				}
+			}
+			add_character_modifier = {
+				name = formidable_animal_companion
+				duration = 2
+			}
+		}
+		else = { #others give +5
+			add_character_modifier = {
+				name = animal_companion
+				duration = 2
+			}
+		}
+		set_character_flag = duel_tactic_animal
+		custom_tooltip = { text = TOOLTIPduel_tactic_animal }
+	}
+	option = { # Poison!
+		name = EVTOPTEDUEL2
+		trigger = {
+			intrigue = 12
+			NOT = { trait = honest }
+			NOT = { trait = honorable }
+			OR = {
+				trait = ruthless
+				trait = cruel
+				trait = deceitful
+				trait = lunatic
+				culture_group = dornish
+			}
+			NOT = { has_character_flag = duel_tactic_poison }
+			NOR = { #Not in some types of duel
+				has_character_flag = mock_duel
+				has_character_flag = finger_dance_duel
+				
+				has_character_flag = flag_battlefield_duel
+				has_character_flag = flag_battlefield_duel_vs_kingsguard
+				has_character_flag = reaving_duel
+				has_character_flag = reaving_duel_target
+				has_character_flag = KG_vs_rogue_kg
+				has_character_flag = KING_vs_rogue_kg
+				has_character_flag = stealing_spearwife
+				has_character_flag = reaving_sword_fight
+				has_character_flag = clansmen_hunt_duel
+				has_character_flag = white_walker_duel
+			}
+			FROM = { is_ill = no }
+		}
+		ai_chance = {
+			factor = 5
+			
+			modifier = {
+				factor = 0
+				opinion = { who = FROM value = 25 }
+			}
+			modifier = {
+				factor = 0
+				opinion = { who = FROM value = 0 }
+				OR = {
+					NOT = { trait = ruthless }
+					has_character_flag = flag_duel_friendly
+				}	
+			}
+			modifier = {
+				factor = 0
+				is_close_relative = FROM
+				NOT = { trait = ruthless }
+				NOT = { trait = selfish }
+			}
+			modifier = {
+				factor = 2
+				trait = ruthless
+			}
+			modifier = {
+				factor = 2
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = deceitful
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 0.33
+				trait = kind
+			}
+			modifier = {
+				factor = 0.33
+				trait = just
+			}
+		}
+		tooltip_info = intrigue
+		set_character_flag = duel_tactic_poison
+		custom_tooltip = { text = TOOLTIPduel_tactic_poison }		
+		if = { #There is a chance the poison fails...
+            limit = {
+                OR = {
+                    event_target:combatant_2 = {
+                        job_spymaster = {
+                            opinion = { who = PREV value = 15 } #if they like their employer
+                            intrigue = 18
+                        }
+                    }
+                    event_target:combatant_2 = { intrigue = ROOT } #they alone can match your intrigue
+                }
+            }
+            set_character_flag = poison_can_fail
+        }
+	}
+	after = {
+		hidden_tooltip = { e_rebels = { holder_scope = { character_event = { id = duel.4 } } } }
+	}
+}
+
+# RESOLVE ROUND - WINNER
+# Determine who "won" the round by weighting stats
+character_event = {
+	id = duel.4
+	is_triggered_only = yes
+	
+	# Nobody but the actual referee should ever get this
+	trigger = { has_landed_title = e_rebels }
+	
+	# Increase duel_rounds counter
+	immediate = {
+		event_target:combatant_1 = { 
+			change_variable = { which = duel_rounds value = 1 } 
+			export_to_variable = {
+			   which = current_combat_rating
+			   value = combat_rating
+			   who = THIS
+			}
+			if = {
+				limit = { has_character_flag = duel_tactic_poison }
+				change_variable = { which = current_combat_rating value = 10 }
+				if = {
+					limit = { has_character_flag = poison_can_fail }
+					random = {
+						chance = 15
+						set_character_flag = poison_discovered
+						clr_character_flag = poison_can_fail
+					}
+				}
+			}
+		}
+		event_target:combatant_2 = {
+			change_variable = { which = duel_rounds value = 1 } 
+			export_to_variable = {
+			   which = current_combat_rating
+			   value = combat_rating
+			   who = THIS
+			}
+			if = {
+				limit = { has_character_flag = duel_tactic_poison }
+				change_variable = { which = current_combat_rating value = 10 }
+				if = {
+					limit = { has_character_flag = poison_can_fail }
+					random = {
+						chance = 15
+						set_character_flag = poison_discovered
+						clr_character_flag = poison_can_fail
+					}
+				}
+			}
+		}
+	}
+	
+	##The modifiers below are calculated by taking the inverse logarithm (base sqrt(2)) of the combat rating/10. This ensures continiuty from the previous system
+	##Any combat_rating trait/modifier entry must be a multiple of 5
+	
+	# combatant_2 wins the round
+	option = {
+		name = combatant_2_wins
+		ai_chance = {
+			factor = 1
+			
+			# Random factor Rule Effects
+			# if these factors are changed the game rule localisation must be changed
+			modifier = { #high
+				factor = 2
+				event_target:combatant_1 = { combat_rating_diff = { who = event_target:combatant_2 value = 30 } }
+				has_game_rule = { name = duel_outcome_randomness value = high } 
+			}
+			modifier = { #low
+				factor = 1.75
+				event_target:combatant_2 = { combat_rating_diff = { who = event_target:combatant_1 value = 25 } }
+				has_game_rule = { name = duel_outcome_randomness value = low }
+			}
+			modifier = {
+				factor = 1.286
+				event_target:combatant_2 = { combat_rating_diff = { who = event_target:combatant_1 value = 40 } }
+				has_game_rule = { name = duel_outcome_randomness value = low }
+			}
+			modifier = { #very low
+				factor = 4.5
+				event_target:combatant_2 = { combat_rating_diff = { who = event_target:combatant_1 value = 25 } }
+				has_game_rule = { name = duel_outcome_randomness value = very_low }
+			}
+			modifier = {
+				factor = 2.667
+				event_target:combatant_2 = { combat_rating_diff = { who = event_target:combatant_1 value = 40 } }
+				has_game_rule = { name = duel_outcome_randomness value = very_low }
+			}
+			
+			# Duel tactic
+			modifier = {
+				factor = 2
+				OR = {
+					AND = {
+						event_target:combatant_2 = { has_character_flag = duel_tactic_speed }
+						event_target:combatant_1 = { has_character_flag = duel_tactic_force }
+					}
+					AND = {
+						event_target:combatant_2 = { has_character_flag = duel_tactic_force }
+						event_target:combatant_1 = { has_character_flag = duel_tactic_defense }
+					}
+					AND = {
+						event_target:combatant_2 = { has_character_flag = duel_tactic_defense }
+						event_target:combatant_1 = { has_character_flag = duel_tactic_speed }
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				event_target:combatant_2 = { 
+					OR = {
+						trait = incapable 
+						trait = crippled	
+						trait = sick_incapable
+						trait = mangled
+					}	
+				}
+				event_target:combatant_1 = { 
+					NOR = {
+						trait = incapable 
+						trait = crippled
+						trait = sick_incapable
+						trait = mangled						
+					}	
+				}
+			}
+			
+			# Combat Rating
+			modifier = {
+				factor = 0.026
+				event_target:combatant_2 = { NOT = { check_variable = { which = current_combat_rating value = -95 } } }
+			}
+			modifier = {
+				factor = 0.037
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = -95 } }
+			}
+			modifier = {
+				factor = 0.044
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = -90 } }
+			}
+			modifier = {
+				factor = 0.052
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = -85 } }
+			}
+			modifier = {
+				factor = 0.062
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = -80 } }
+			}
+			modifier = {
+				factor = 0.074
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = -75 } }
+			}
+			modifier = {
+				factor = 0.088
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = -70 } }
+			}
+			modifier = {
+				factor = 0.105
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = -65 } }
+			}
+			modifier = {
+				factor = 0.125
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = -60 } }
+			}
+			modifier = {
+				factor = 0.148
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = -55 } }
+			}
+			modifier = {
+				factor = 0.177
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = -50 } }
+			}
+			modifier = {
+				factor = 0.21
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = -45 } }
+			}
+			modifier = {
+				factor = 0.25
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = -40 } }
+			}
+			modifier = {
+				factor = 0.297
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = -35 } }
+			}
+			modifier = {
+				factor = 0.354
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = -30 } }
+			}
+			modifier = {
+				factor = 0.42
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = -25 } }
+			}
+			modifier = {
+				factor = 0.5
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = -20 } }
+			}
+			modifier = {
+				factor = 0.595
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = -15 } }
+			}
+			modifier = {
+				factor = 0.707
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = -10 } }
+			}
+			modifier = {
+				factor = 0.841
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = -5 } }
+			}
+			modifier = {
+				factor = 1.189
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 5 } }
+			}
+			modifier = {
+				factor = 1.414
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 10 } }
+			}
+			modifier = {
+				factor = 1.682
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 15 } }
+			}
+			modifier = {
+				factor = 2
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 20 } }
+			}
+			modifier = {
+				factor = 2.378
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 25 } }
+			}
+			modifier = {
+				factor = 2.828
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 30 } }
+			}
+			modifier = {
+				factor = 3.364
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 35 } }
+			}
+			modifier = {
+				factor = 4
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 40 } }
+			}
+			modifier = {
+				factor = 4.757
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 45 } }
+			}
+			modifier = {
+				factor = 5.657
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 50 } }
+			}
+			modifier = {
+				factor = 6.727
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 55 } }
+			}
+			modifier = {
+				factor = 8
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 60 } }
+			}
+			modifier = {
+				factor = 9.514
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 65 } }
+			}
+			modifier = {
+				factor = 11.314
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 70 } }
+			}
+			modifier = {
+				factor = 13.454
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 75 } }
+			}
+			modifier = {
+				factor = 16
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 80 } }
+			}
+			modifier = {
+				factor = 19.027
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 85 } }
+			}
+			modifier = {
+				factor = 22.627
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 90 } }
+			}
+			modifier = {
+				factor = 26.909
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 95 } }
+			}
+			modifier = {
+				factor = 32
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 100 } }
+			}
+			modifier = {
+				factor = 38.055
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 105 } }
+			}
+			modifier = {
+				factor = 45.255
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 110 } }
+			}
+			modifier = {
+				factor = 53.817
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 115 } }
+			}
+			modifier = {
+				factor = 64
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 120 } }
+			}
+			modifier = {
+				factor = 76.109
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 125 } }
+			}
+			modifier = {
+				factor = 90.51
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 130 } }
+			}
+			modifier = {
+				factor = 107.635
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 135 } }
+			}
+			modifier = {
+				factor = 128
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 140 } }
+			}
+			modifier = {
+				factor = 152.219
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 145 } }
+			}
+			modifier = {
+				factor = 181.019
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 150 } }
+			}
+			modifier = {
+				factor = 215.269
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 155 } }
+			}
+			modifier = {
+				factor = 256
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 160 } }
+			}
+			modifier = {
+				factor = 304.437
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 165 } }
+			}
+			modifier = {
+				factor = 362.039
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 170 } }
+			}
+			modifier = {
+				factor = 430.539
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 175 } }
+			}
+			modifier = {
+				factor = 512
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 180 } }
+			}
+			modifier = {
+				factor = 608.874
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 185 } }
+			}
+			modifier = {
+				factor = 724.077
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 190 } }
+			}
+			modifier = {
+				factor = 861.078
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 195 } }
+			}
+			modifier = {
+				factor = 1024
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 200 } }
+			}
+			modifier = {
+				factor = 1217.748
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 205 } }
+			}
+			modifier = {
+				factor = 1448.155
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 210 } }
+			}
+			modifier = {
+				factor = 1722.155
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 215 } }
+			}
+			modifier = {
+				factor = 2048
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 220 } }
+			}
+			modifier = {
+				factor = 2435.496
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 225 } }
+			}
+			modifier = {
+				factor = 2896.309
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 230 } }
+			}
+			modifier = {
+				factor = 3444.311
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 235 } }
+			}
+			modifier = {
+				factor = 4096
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 240 } }
+			}
+			modifier = {
+				factor = 4870.922
+				event_target:combatant_2 = { is_variable_equal = { which = current_combat_rating value = 245 } }
+			}
+			modifier = {
+				factor = 5792.619
+				event_target:combatant_2 = { check_variable = { which = current_combat_rating value = 250 } }
+			}
+		}	
+		event_target:combatant_1 = {
+			save_event_target_as = duel_round_loser
+			clr_character_flag = duel_random_boost
+		}
+		event_target:combatant_2 = { 
+			save_event_target_as = duel_round_winner
+			clr_character_flag = duel_random_boost
+			character_event = { id = duel.5 }
+		}
+	}
+	
+	# combatant_1 wins the round
+	option = {
+		name = combatant_1_wins
+		ai_chance = {
+			factor = 1
+			
+			# Random factor Rule Effects
+			modifier = { #high
+				factor = 2
+				event_target:combatant_2 = { combat_rating_diff = { who = event_target:combatant_1 value = 30 } }
+				has_game_rule = { name = duel_outcome_randomness value = high } 
+			}
+			modifier = { #low
+				factor = 1.75
+				event_target:combatant_1 = { combat_rating_diff = { who = event_target:combatant_2 value = 25 } }
+				has_game_rule = { name = duel_outcome_randomness value = low }
+			}
+			modifier = {
+				factor = 1.286
+				event_target:combatant_1 = { combat_rating_diff = { who = event_target:combatant_2 value = 40 } }
+				has_game_rule = { name = duel_outcome_randomness value = low }
+			}
+			modifier = { #very low
+				factor = 4.5
+				event_target:combatant_1 = { combat_rating_diff = { who = event_target:combatant_2 value = 25 } }
+				has_game_rule = { name = duel_outcome_randomness value = very_low }
+			}
+			modifier = {
+				factor = 2.667
+				event_target:combatant_1 = { combat_rating_diff = { who = event_target:combatant_2 value = 40 } }
+				has_game_rule = { name = duel_outcome_randomness value = very_low }
+			}
+			# Duel tactic
+			modifier = {
+				factor = 2
+				OR = {
+					AND = {
+						event_target:combatant_1 = { has_character_flag = duel_tactic_speed }
+						event_target:combatant_2 = { has_character_flag = duel_tactic_force }
+					}
+					AND = {
+						event_target:combatant_1 = { has_character_flag = duel_tactic_force }
+						event_target:combatant_2 = { has_character_flag = duel_tactic_defense }
+					}
+					AND = {
+						event_target:combatant_1 = { has_character_flag = duel_tactic_defense }
+						event_target:combatant_2 = { has_character_flag = duel_tactic_speed }
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				event_target:combatant_1 = { 
+					OR = {
+						trait = incapable 
+						trait = crippled	
+						trait = sick_incapable
+					}	
+				}
+				event_target:combatant_2 = { 
+					NOR = {
+						trait = incapable 
+						trait = crippled
+						trait = sick_incapable						
+					}	
+				}
+			}
+			
+			# Combat Rating
+			modifier = {
+				factor = 0.026
+				event_target:combatant_1 = { NOT = { check_variable = { which = current_combat_rating value = -95 } } }
+			}
+			modifier = {
+				factor = 0.037
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = -95 } }
+			}
+			modifier = {
+				factor = 0.044
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = -90 } }
+			}
+			modifier = {
+				factor = 0.052
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = -85 } }
+			}
+			modifier = {
+				factor = 0.062
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = -80 } }
+			}
+			modifier = {
+				factor = 0.074
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = -75 } }
+			}
+			modifier = {
+				factor = 0.088
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = -70 } }
+			}
+			modifier = {
+				factor = 0.105
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = -65 } }
+			}
+			modifier = {
+				factor = 0.125
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = -60 } }
+			}
+			modifier = {
+				factor = 0.148
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = -55 } }
+			}
+			modifier = {
+				factor = 0.177
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = -50 } }
+			}
+			modifier = {
+				factor = 0.21
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = -45 } }
+			}
+			modifier = {
+				factor = 0.25
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = -40 } }
+			}
+			modifier = {
+				factor = 0.297
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = -35 } }
+			}
+			modifier = {
+				factor = 0.354
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = -30 } }
+			}
+			modifier = {
+				factor = 0.42
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = -25 } }
+			}
+			modifier = {
+				factor = 0.5
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = -20 } }
+			}
+			modifier = {
+				factor = 0.595
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = -15 } }
+			}
+			modifier = {
+				factor = 0.707
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = -10 } }
+			}
+			modifier = {
+				factor = 0.841
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = -5 } }
+			}
+			modifier = {
+				factor = 1.189
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 5 } }
+			}
+			modifier = {
+				factor = 1.414
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 10 } }
+			}
+			modifier = {
+				factor = 1.682
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 15 } }
+			}
+			modifier = {
+				factor = 2
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 20 } }
+			}
+			modifier = {
+				factor = 2.378
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 25 } }
+			}
+			modifier = {
+				factor = 2.828
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 30 } }
+			}
+			modifier = {
+				factor = 3.364
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 35 } }
+			}
+			modifier = {
+				factor = 4
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 40 } }
+			}
+			modifier = {
+				factor = 4.757
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 45 } }
+			}
+			modifier = {
+				factor = 5.657
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 50 } }
+			}
+			modifier = {
+				factor = 6.727
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 55 } }
+			}
+			modifier = {
+				factor = 8
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 60 } }
+			}
+			modifier = {
+				factor = 9.514
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 65 } }
+			}
+			modifier = {
+				factor = 11.314
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 70 } }
+			}
+			modifier = {
+				factor = 13.454
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 75 } }
+			}
+			modifier = {
+				factor = 16
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 80 } }
+			}
+			modifier = {
+				factor = 19.027
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 85 } }
+			}
+			modifier = {
+				factor = 22.627
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 90 } }
+			}
+			modifier = {
+				factor = 26.909
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 95 } }
+			}
+			modifier = {
+				factor = 32
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 100 } }
+			}
+			modifier = {
+				factor = 38.055
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 105 } }
+			}
+			modifier = {
+				factor = 45.255
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 110 } }
+			}
+			modifier = {
+				factor = 53.817
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 115 } }
+			}
+			modifier = {
+				factor = 64
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 120 } }
+			}
+			modifier = {
+				factor = 76.109
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 125 } }
+			}
+			modifier = {
+				factor = 90.51
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 130 } }
+			}
+			modifier = {
+				factor = 107.635
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 135 } }
+			}
+			modifier = {
+				factor = 128
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 140 } }
+			}
+			modifier = {
+				factor = 152.219
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 145 } }
+			}
+			modifier = {
+				factor = 181.019
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 150 } }
+			}
+			modifier = {
+				factor = 215.269
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 155 } }
+			}
+			modifier = {
+				factor = 256
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 160 } }
+			}
+			modifier = {
+				factor = 304.437
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 165 } }
+			}
+			modifier = {
+				factor = 362.039
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 170 } }
+			}
+			modifier = {
+				factor = 430.539
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 175 } }
+			}
+			modifier = {
+				factor = 512
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 180 } }
+			}
+			modifier = {
+				factor = 608.874
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 185 } }
+			}
+			modifier = {
+				factor = 724.077
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 190 } }
+			}
+			modifier = {
+				factor = 861.078
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 195 } }
+			}
+			modifier = {
+				factor = 1024
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 200 } }
+			}
+			modifier = {
+				factor = 1217.748
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 205 } }
+			}
+			modifier = {
+				factor = 1448.155
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 210 } }
+			}
+			modifier = {
+				factor = 1722.155
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 215 } }
+			}
+			modifier = {
+				factor = 2048
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 220 } }
+			}
+			modifier = {
+				factor = 2435.496
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 225 } }
+			}
+			modifier = {
+				factor = 2896.309
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 230 } }
+			}
+			modifier = {
+				factor = 3444.311
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 235 } }
+			}
+			modifier = {
+				factor = 4096
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 240 } }
+			}
+			modifier = {
+				factor = 4870.922
+				event_target:combatant_1 = { is_variable_equal = { which = current_combat_rating value = 245 } }
+			}
+			modifier = {
+				factor = 5792.619
+				event_target:combatant_1 = { check_variable = { which = current_combat_rating value = 250 } }
+			}
+		}	
+		event_target:combatant_2 = {
+			save_event_target_as = duel_round_loser
+			clr_character_flag = duel_random_boost
+		}
+		event_target:combatant_1 = { 
+			save_event_target_as = duel_round_winner
+			clr_character_flag = duel_random_boost
+			character_event = { id = duel.5 }
+		}
+	}
+}
+
+# Winner attacks!
+character_event = {
+	id = duel.5
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	show_from_from = yes
+	
+	#SELECT PICTURE
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			NOR = {
+				culture = dothraki
+				trait = wildling
+				event_target:duel_round_loser = {
+					OR = {
+						culture = dothraki
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_evt_the_trident
+	}
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+				has_character_flag = stealing_spearwife
+				has_character_flag = dothraki_wedding_duel_death
+			}
+		}
+		picture = GFX_evt_battle
+	}
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			NOR = {
+				culture = dothraki
+				trait = wildling
+				event_target:duel_round_loser = {
+					OR = {
+						culture = dothraki
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_evt_melee
+	}
+	picture = {
+		trigger = { 
+			has_character_flag = in_melee
+		}
+		picture = GFX_evt_melee
+	}
+	picture = {
+		trigger = { 
+			has_character_flag = in_melee
+		}
+		picture = GFX_evt_battle
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			is_adult = no
+			event_target:duel_round_loser = { is_adult = no }
+		}
+		picture = GFX_evt_child_sword
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				has_character_flag = elected_champion
+				has_character_flag = demmanded_trial_by_combat
+				has_character_flag = champion_of_relative
+				has_character_flag = lunatic_trial
+				has_character_flag = duelist_regent
+				has_character_flag = duelist_courtier
+				has_character_flag = wikid_friendly_duel_player
+				has_character_flag = kingsmoot_duel
+				has_character_flag = tourney_duel_challenger
+				has_character_flag = tourney_duel_target
+				has_character_flag = WOL_focus_duel
+				has_character_flag = wol_lover_duel_accuser
+				has_character_flag = wol_lover_duel_lover
+				has_character_flag = friends_rivals_duel
+				has_character_flag = trial_by_seven_duel
+				has_character_flag = gbc_duel
+				has_character_flag = gbc_duel_rival
+			}
+		}
+		picture = GFX_evt_family_feud_republic
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				culture = dothraki
+				event_target:duel_round_loser = { culture = dothraki }
+			}
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_evt_dothraki_struggling
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				culture_group = iron_isles_culture
+				trait = wildling
+				has_character_flag = finger_dance_duel
+				event_target:duel_round_loser = { 
+					OR = {
+						culture_group = iron_isles_culture 
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_fingerdance
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = wildling
+				event_target:duel_round_loser = { 
+					trait = wildling
+				}
+			}
+		}
+		picture = GFX_evt_wildlings
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = knight
+				event_target:duel_round_loser = { trait = knight }
+			}
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_FLORENT
+	}
+	picture = {
+		trigger = { 
+			trait = knight
+			event_target:duel_round_loser = { trait = knight }
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_knights
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = giant
+				event_target:duel_round_loser = { trait = giant }
+			}
+		}
+		picture = GFX_evt_giants
+	}
+	
+	#Default
+	desc = {
+		text = EVTDESCDUEL5
+		trigger = {  
+			NAND = { 
+				has_character_flag = duel_tactic_poison
+				NOT = { has_character_flag = poison_discovered }
+				event_target:duel_round_loser = { NOT = { has_character_flag = duel_poisoned } }
+			}
+			NAND = { 
+				has_character_flag = duel_tactic_poison
+				has_character_flag = poison_discovered
+				event_target:duel_round_loser = { NOT = { has_character_flag = duel_opponent_poison_discovered } }
+			}
+		}
+	}	
+	desc = {
+		text = EVTDESCDUEL5FINGERDANCEA
+		trigger = { 
+			has_character_flag = finger_dance_duel	
+		}
+	}
+	desc = {
+		text = EVTDESCDUEL5FINGERDANCEB
+		trigger = { 
+			combat_rating = 50
+			has_character_flag = finger_dance_duel	
+		}
+	}
+	
+	desc = {
+		text = EVTDESCDUEL5SKILL
+		trigger = { 
+			OR = {
+				trait = skilled_warrior
+				trait = master_warrior
+			}
+		}
+	}	
+	desc = {
+		text = EVTDESCDUEL5SWORD
+		trigger = { 
+			OR = {
+				event_target:dueling_weapon_1 = {
+					artifact_owner = { character = PREVPREV } #Checks that you own the FIRST saved artifact weapon (means you are combatant_1)
+					OR = {
+						has_artifact_flag = named_sword
+						has_artifact_flag = canon_sword
+					}
+				}
+				event_target:dueling_weapon_2 = {
+					artifact_owner = { character = PREVPREV } #Checks that you own the FIRST saved artifact weapon (means you are combatant_1)
+					OR = {
+						has_artifact_flag = named_sword
+						has_artifact_flag = canon_sword
+					}
+				}
+			}
+			NOT = { has_character_flag = finger_dance_duel}
+		}
+	}	
+	desc = {
+		text = EVTDESCDUEL5STRONG
+		trigger = { 
+			is_strong_trigger = yes
+			NOT = { has_character_flag = duel_tactic_speed }
+			NOT = { has_character_flag = finger_dance_duel}
+		}
+	}	
+	desc = {
+		text = EVTDESCDUEL5QUICK
+		trigger = { 
+			is_smart_incl_genius_trigger = yes	
+			NOT = { has_character_flag = duel_tactic_force }
+		}
+	}	
+	desc = {
+		text = EVTDESCDUEL5WROTH
+		trigger = { 
+			trait = wroth	
+			NOT = { has_character_flag = duel_tactic_defense }
+			NOT = { has_character_flag = finger_dance_duel}
+		}
+	}	
+	desc = {
+		text = EVTDESCDUEL5PATIENT
+		trigger = { 
+			trait = patient
+			NOT = { has_character_flag = duel_tactic_force }
+			NOT = { has_character_flag = finger_dance_duel}
+		}
+	}	
+	desc = {
+		text = EVTDESCDUEL5DECEITFUL
+		trigger = { 
+			trait = deceitful
+			NOT = { has_character_flag = finger_dance_duel}
+		}
+	}	
+	desc = {
+		text = EVTDESCDUEL5TALL
+		trigger = { 
+			trait = tall
+			NOT = { has_character_flag = finger_dance_duel}
+		}
+	}	
+	desc = {
+		text = EVTDESCDUEL5RHLLOR
+		trigger = { 
+			OR = {
+				trait = chosen_by_rhllor
+				trait = favored_by_rhllor
+			}	
+		}
+	}
+	desc = {
+		text = EVTDESCDUEL5ANIMAL
+		trigger = { 
+			has_character_flag = duel_tactic_animal	
+		}
+	}
+	desc = {
+		text = EVTDESCDUEL5POISON
+		trigger = { 
+			has_character_flag = duel_tactic_poison
+			NOT = { has_character_flag = poison_discovered }
+			event_target:duel_round_loser = { NOT = { has_character_flag = duel_poisoned } }
+		}
+	}
+	desc = {
+		text = EVTDESCDUEL5POISON_DISCOVERED
+		trigger = { 
+			has_character_flag = duel_tactic_poison
+			has_character_flag = poison_discovered
+			event_target:duel_round_loser = { NOT = { has_character_flag = duel_opponent_poison_discovered } }
+		}
+	}
+	
+	option = {
+		name = {
+			text = "EVTOPTADUEL5"
+			trigger = {
+				NOR = {
+					AND = {
+						has_character_flag = duel_tactic_speed
+						event_target:duel_round_loser = { has_character_flag = duel_tactic_force }
+					}
+					AND = {
+						has_character_flag = duel_tactic_force
+						event_target:duel_round_loser = { has_character_flag = duel_tactic_defense }
+					}
+					AND = {
+						has_character_flag = duel_tactic_defense
+						event_target:duel_round_loser = { has_character_flag = duel_tactic_speed }
+					}
+					AND = {
+						has_character_flag = duel_tactic_poison
+						NOT = { has_character_flag = poison_discovered }
+						event_target:duel_round_loser = { NOT = { has_character_flag = duel_poisoned } }
+					}
+				}
+			}
+		}	
+		name = {
+			text = "EVTOPTADUEL5A" #Speed
+			trigger = {
+				AND = {
+					has_character_flag = duel_tactic_speed
+					event_target:duel_round_loser = { has_character_flag = duel_tactic_force }
+				}
+			}
+		}	
+		name = {
+			text = "EVTOPTADUEL5B" #Force
+			trigger = {
+				AND = {
+					has_character_flag = duel_tactic_force
+					event_target:duel_round_loser = { has_character_flag = duel_tactic_defense }
+				}
+			}
+		}	
+		name = {
+			text = "EVTOPTADUEL5C" #Defense
+			trigger = {
+				AND = {
+					has_character_flag = duel_tactic_defense
+					event_target:duel_round_loser = { has_character_flag = duel_tactic_speed }
+				}
+			}
+		}	
+		name = {
+			text = "EVTOPTADUEL5D" #Poison
+			trigger = {
+				has_character_flag = duel_tactic_poison
+				NOT = { has_character_flag = poison_discovered }
+				event_target:duel_round_loser = { NOT = { has_character_flag = duel_poisoned } }
+			}
+		}	
+		#Opponent is either FROMFROM or FROMFROMFROM
+		hidden_tooltip = { set_variable = { which = current_combat_rating value = 0 } }
+		event_target:duel_round_loser = {
+			hidden_tooltip = { set_variable = { which = current_combat_rating value = 0 } }
+			character_event = { id = duel.6 tooltip = "EVTTOOLTIPDUEL6" }
+		}
+		if = { #poison success
+			limit = {
+				has_character_flag = duel_tactic_poison
+				event_target:duel_round_loser = { 
+					NOT = { has_character_flag = duel_poisoned } 
+					is_ill = no
+				}
+			}
+			custom_tooltip = {
+				text = TOOLTIPDUELPOISONSUCCESS
+			}
+		}
+		if = { #poison DISCOVERED
+			limit = {
+				has_character_flag = duel_tactic_poison
+				has_character_flag = poison_discovered
+				event_target:duel_round_loser = { NOT = { has_character_flag = duel_opponent_poison_discovered } }
+			}
+			custom_tooltip = {
+				text = TOOLTIPDUELPOISONDISCOVERED
+			}
+			tiered_prestige_negative_effect = yes
+			piety = -100
+			event_target:duel_round_loser = { opinion = { who = ROOT modifier = scheming_bastard years = 10 } }
+		}
+	}
+}
+
+# Loser is attacked!
+character_event = {
+	id = duel.6
+	border = "GFX_event_normal_frame_war"	
+	
+	is_triggered_only = yes
+	
+	#SELECT PICTURE
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			NOR = {
+				culture = dothraki
+				trait = wildling
+				FROM = {
+					OR = {
+						culture = dothraki
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_evt_the_trident
+	}
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+				has_character_flag = stealing_spearwife
+				has_character_flag = dothraki_wedding_duel_death
+			}
+		}
+		picture = GFX_evt_battle
+	}
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			NOR = {
+				culture = dothraki
+				trait = wildling
+				FROM = {
+					OR = {
+						culture = dothraki
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_evt_melee
+	}
+	picture = {
+		trigger = { 
+			has_character_flag = in_melee
+		}
+		picture = GFX_evt_melee
+	}
+	picture = {
+		trigger = { 
+			has_character_flag = in_melee
+		}
+		picture = GFX_evt_battle
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			is_adult = no
+			FROM = { is_adult = no }
+		}
+		picture = GFX_evt_child_sword
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				has_character_flag = elected_champion
+				has_character_flag = demmanded_trial_by_combat
+				has_character_flag = champion_of_relative
+				has_character_flag = lunatic_trial
+				has_character_flag = duelist_regent
+				has_character_flag = duelist_courtier
+				has_character_flag = wikid_friendly_duel_player
+				has_character_flag = kingsmoot_duel
+				has_character_flag = tourney_duel_challenger
+				has_character_flag = tourney_duel_target
+				has_character_flag = WOL_focus_duel
+				has_character_flag = wol_lover_duel_accuser
+				has_character_flag = wol_lover_duel_lover
+				has_character_flag = friends_rivals_duel
+				has_character_flag = trial_by_seven_duel
+				has_character_flag = gbc_duel
+				has_character_flag = gbc_duel_rival
+			}
+		}
+		picture = GFX_evt_family_feud_republic
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				culture = dothraki
+				FROM = { culture = dothraki }
+			}
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_evt_dothraki_struggling
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				culture_group = iron_isles_culture
+				trait = wildling
+				has_character_flag = finger_dance_duel
+				FROM = { 
+					OR = {
+						culture_group = iron_isles_culture 
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_fingerdance
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = wildling
+				FROM = { 
+					trait = wildling
+				}
+			}
+		}
+		picture = GFX_evt_wildlings
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = knight
+				FROM = { trait = knight }
+			}
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_FLORENT
+	}
+	picture = {
+		trigger = { 
+			trait = knight
+			FROM = { trait = knight }
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_knights
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = giant
+				FROM = { trait = giant }
+			}
+		}
+		picture = GFX_evt_giants
+	}
+	
+	#Default
+	desc = {
+		text = EVTDESCDUEL6
+		trigger = {  
+			NOT = { 
+				FROM = {
+					has_character_flag = duel_tactic_poison
+					has_character_flag = poison_discovered
+					ROOT = { NOT = { has_character_flag = duel_opponent_poison_discovered } }
+				}	
+			}
+		}
+	}	
+	desc = {
+		text = EVTDESCDUEL6FINGERDANCEA
+		trigger = { 
+			has_character_flag = finger_dance_duel	
+		}
+	}
+	desc = {
+		text = EVTDESCDUEL6FINGERDANCEB
+		trigger = { 
+			FROM = { combat_rating = 50 }
+			has_character_flag = finger_dance_duel	
+		}
+	}
+	
+	desc = {
+		text = EVTDESCDUEL6SKILL
+		trigger = { 
+			FROM = {
+				OR = {
+					trait = skilled_warrior
+					trait = master_warrior
+				}
+			}	
+		}
+	}	
+	
+	desc = {
+		text = EVTDESCDUEL6SWORD
+		trigger = { 
+			FROM = {
+				OR = {
+					event_target:dueling_weapon_1 = {
+						artifact_owner = { character = PREVPREV } #Checks that you own the FIRST saved artifact weapon (means you are combatant_1)
+						OR = {
+							has_artifact_flag = named_sword
+							has_artifact_flag = canon_sword
+						}
+					}
+					event_target:dueling_weapon_2 = {
+						artifact_owner = { character = PREVPREV } #Checks that you own the FIRST saved artifact weapon (means you are combatant_1)
+						OR = {
+							has_artifact_flag = named_sword
+							has_artifact_flag = canon_sword
+						}
+					}
+				}
+			}	
+			NOT = { has_character_flag = finger_dance_duel }
+		}
+	}	
+	
+	desc = {
+		text = EVTDESCDUEL6STRONG
+		trigger = { 
+			FROM = { 
+				is_strong_trigger = yes 
+				NOT = { has_character_flag = duel_tactic_speed }
+			}
+			NOT = { has_character_flag = finger_dance_duel }
+		}
+	}	
+
+	desc = {
+		text = EVTDESCDUEL6QUICK
+		trigger = { 
+			FROM = { 
+				is_smart_incl_genius_trigger = yes
+				NOT = { has_character_flag = duel_tactic_force }
+			}	
+		}
+	}	
+	desc = {
+		text = EVTDESCDUEL6WROTH
+		trigger = {  
+			FROM = { 
+				trait = wroth 
+				NOT = { has_character_flag = duel_tactic_defense }
+			}			
+		}
+	}	
+
+	desc = {
+		text = EVTDESCDUEL6PATIENT
+		trigger = { 
+			FROM = { 
+				trait = patient 
+				NOT = { has_character_flag = duel_tactic_force }
+			}
+		}
+	}	
+	
+	desc = {
+		text = EVTDESCDUEL6DECEITFUL
+		trigger = { 
+			FROM = { trait = deceitful }
+			NOT = { has_character_flag = finger_dance_duel }
+		}
+	}	
+	
+	desc = {
+		text = EVTDESCDUEL6TALL
+		trigger = { 
+			FROM = { trait = tall }
+			NOT = { has_character_flag = finger_dance_duel }
+		}
+	}	
+	
+	desc = {
+		text = EVTDESCDUEL6RHLLOR
+		trigger = { 
+			FROM = { 
+				OR = {
+					trait = chosen_by_rhllor
+					trait = favored_by_rhllor
+				}	
+			}	
+		}
+	}	
+	desc = {
+		text = EVTDESCDUEL6ANIMAL
+		trigger = { 
+			has_character_flag = duel_tactic_animal	
+		}
+	}
+	desc = {
+		text = EVTDESCDUEL6POISON_DISCOVERED
+		trigger = { 
+			FROM = {
+				has_character_flag = duel_tactic_poison
+				has_character_flag = poison_discovered
+				ROOT = { NOT = { has_character_flag = duel_opponent_poison_discovered } }
+			}	
+		}
+	}
+	
+	option = {
+		name = {
+			text = "EVTOPTADUEL6"
+			trigger = {
+				NOR = {
+					AND = {
+						FROM = { has_character_flag = duel_tactic_speed }
+						has_character_flag = duel_tactic_force
+					}
+					AND = {
+						FROM = { has_character_flag = duel_tactic_force }
+						has_character_flag = duel_tactic_defense
+					}
+					AND = {
+						FROM = { has_character_flag = duel_tactic_defense }
+						has_character_flag = duel_tactic_speed
+					}
+					FROM = {
+						has_character_flag = duel_tactic_poison
+						has_character_flag = poison_discovered
+						ROOT = { NOT = { has_character_flag = duel_opponent_poison_discovered } }
+					}	
+				}
+			}
+		}	
+		name = {
+			text = "EVTOPTADUEL6A" #Speed
+			trigger = {
+				AND = {
+					FROM = { has_character_flag = duel_tactic_speed }
+					has_character_flag = duel_tactic_force
+				}
+			}
+		}	
+		name = {
+			text = "EVTOPTADUEL6B" #Force
+			trigger = {
+				AND = {
+					FROM = { has_character_flag = duel_tactic_force }
+					has_character_flag = duel_tactic_defense
+				}
+			}
+		}	
+		name = {
+			text = "EVTOPTADUEL6C" #Defense
+			trigger = {
+				AND = {
+					FROM = { has_character_flag = duel_tactic_defense }
+					has_character_flag = duel_tactic_speed
+				}
+			}
+		}	
+		name = {
+			text = "EVTOPTADUEL6D" #Poison
+			trigger = {
+				FROM = {
+					has_character_flag = duel_tactic_poison
+					has_character_flag = poison_discovered
+					ROOT = { NOT = { has_character_flag = duel_opponent_poison_discovered } }
+				}	
+			}
+		}
+		FROM = {
+			if = { #poison success (HIDDEN)
+				limit = {
+					has_character_flag = duel_tactic_poison
+					ROOT = { 
+						NOT = { has_character_flag = duel_poisoned } 
+						is_ill = no
+					}
+				}
+				hidden_tooltip = {
+					ROOT = { 
+						set_character_flag = duel_poisoned 				
+						if = {
+							limit = {
+								NOT = {
+									has_dlc = "Reapers"
+								}
+							}
+							random_list = {
+								48 = { character_event = { id = 6060 } } #ill
+								49 = { add_trait = ill character_event = { id = 6070 } } #Pneumonic
+								1 = { character_event = { id = 6100 } } #Infirm
+							}	
+						}
+						if = {
+							limit = {
+								has_dlc = "Reapers"
+							}
+							add_symptom_effect = yes
+						}
+					}
+				}	
+			}
+			if = { #poison DISCOVERED
+				limit = {
+					has_character_flag = duel_tactic_poison
+					has_character_flag = poison_discovered
+					ROOT = { NOT = { has_character_flag = duel_opponent_poison_discovered } }
+				}
+				ROOT = {
+					set_character_flag = duel_opponent_poison_discovered
+					
+					set_character_flag = poisoned_in_duel #so they can be targetted in event of death
+					save_persistent_event_target = { name = poisoner scope = PREV }
+						
+					custom_tooltip = {
+						text = TOOLTIPDUELPOISONDISCOVEREDB
+					}			
+				}
+			}
+		}	
+		hidden_tooltip = { e_rebels = { holder_scope = { character_event = { id = duel.7 } } } }
+	}
+}
+
+# Determine attack outcome
+character_event = {
+	id = duel.7
+	is_triggered_only = yes
+	
+	# Nobody but the actual referee should ever get this
+	trigger = { has_landed_title = e_rebels }
+	
+	immediate = {
+		event_target:duel_round_loser = {
+			set_potential_injury_flag_effect = yes
+		}	
+	}
+	
+	option = { # Killing Blow
+		name = KILL
+		event_target:duel_round_loser = { 
+			set_character_flag = injury_kills 
+			set_character_flag = actually_injured
+			clr_character_flag = mildly_injured
+		}
+		event_target:duel_round_winner = { character_event = { id = duel.201 } }
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.01
+				event_target:duel_round_winner = { 
+					has_character_flag = flag_duel_friendly 
+					NOT = { has_character_flag = trial_by_seven_duel }
+				}
+			}
+			modifier = {
+				factor = 0.15
+				event_target:duel_round_winner = { 
+					has_character_flag = flag_duel_friendly 
+					has_character_flag = trial_by_seven_duel
+				}
+			}
+			modifier = {
+				factor = 0.66
+				event_target:duel_round_winner = { 
+					OR = {
+						has_character_flag = elected_champion
+						has_character_flag = self_elected_champion
+						has_character_flag = self_elected_champion_b
+						has_character_flag = demmanded_trial_by_combat
+						has_character_flag = champion_of_relative
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 1.5
+				event_target:duel_round_winner = { trait = cruel }
+			}
+			modifier = {
+				factor = 1.25
+				event_target:duel_round_winner = { trait = wroth }
+			}
+			modifier = {
+				factor = 1.25
+				event_target:duel_round_loser = { trait = brave }
+			}
+			modifier = {
+				factor = 1.25
+				event_target:duel_round_loser = { trait = stubborn }
+			}
+			modifier = {
+				factor = 0.8
+				event_target:duel_round_winner = { trait = patient }
+			}
+			modifier = {
+				factor = 0.5
+				event_target:duel_round_winner = { trait = kind }
+			}
+		}
+	}
+	
+	option = { # Subdued Opponent
+		name = SUBDUE
+		trigger = { #Never use between AI in fight to the death (no point)
+			OR = {
+				event_target:duel_round_loser = { ai = no }
+				event_target:duel_round_winner = { ai = no }
+				event_target:duel_round_loser = { NOT = { has_character_flag = flag_duel_to_the_death } }
+			}
+		}
+		event_target:duel_round_loser = {
+			random_list = { #determine if opponent should end up with a serious injury, or only a mild one
+				5 = {
+					set_character_flag = actually_injured
+					additive_modifier = {
+						event_target:duel_round_winner = { combat_rating_diff = { who = PREV value = 50 } }
+						value = 35 #increased chance if attacker did well
+					}
+					modifier = {
+						factor = 5
+						trait = wounded
+					}
+					modifier = {
+						factor = 2
+						is_rival = event_target:duel_round_winner
+					}
+					modifier = {
+						factor = 0.01
+						has_character_flag = flag_duel_friendly
+						NOT = { has_character_flag = finger_dance_duel }
+					}
+					modifier = {
+						factor = 0.5
+						has_character_flag = flag_duel_friendly
+						has_character_flag = finger_dance_duel
+					}
+					modifier = {
+						factor = 2
+						has_character_flag = flag_duel_to_the_death
+					}
+				}
+				100 = {
+					set_character_flag = mildly_injured
+					additive_modifier = {
+						combat_rating_diff = { who = event_target:duel_round_winner value = 40 }
+						value = 40 #increased chance if attacker did poorly
+					}
+				}
+			}
+			#Chance of animal death
+			if = {
+				limit = { has_character_flag = duel_tactic_animal }
+				random = {
+					chance = 15
+					set_character_flag = duel_tactic_animal_DEATH
+				}
+			}
+		}	
+		event_target:duel_round_winner = { character_event = { id = duel.105 } }
+		ai_chance = {
+			factor = 100
+			# Needs Opponent Taken Alive
+			modifier = {
+				factor = 10
+				OR = {
+					any_current_enemy = { character = event_target:duel_round_loser } # Enemy
+					any_current_enemy = { any_close_relative = { character = event_target:duel_round_loser } } # Enemy's close relatives
+					any_current_enemy = { current_heir = { character = event_target:duel_round_loser } } # Enemy's heir
+				}
+				NOR = {
+					trait = lunatic
+					trait = possessed
+				}
+				NOR = {
+					trait = wroth
+					trait = cruel
+					trait = paranoid
+				}
+			}			
+			
+			# Personal Opinion Modifiers
+			modifier = {
+				factor = 1.25
+				event_target:duel_round_winner = { opinion = { who = event_target:duel_round_loser value = 20 } }
+			}
+			modifier = {
+				factor = 1.25
+				event_target:duel_round_winner = { opinion = { who = event_target:duel_round_loser value = 40 } }
+			}
+			modifier = {
+				factor = 1.25
+				event_target:duel_round_winner = { opinion = { who = event_target:duel_round_loser value = 60 } }
+			}
+			modifier = {
+				factor = 1.25
+				event_target:duel_round_winner = { opinion = { who = event_target:duel_round_loser value = 80 } }
+			}
+			modifier = {
+				factor = 1.25
+				event_target:duel_round_winner = { opinion = { who = event_target:duel_round_loser value = 100 } }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { event_target:duel_round_winner = { opinion = { who = event_target:duel_round_loser value = -19 } } }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { event_target:duel_round_winner = { opinion = { who = event_target:duel_round_loser value = -39 } } }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { event_target:duel_round_winner = { opinion = { who = event_target:duel_round_loser value = -59 } } }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { event_target:duel_round_winner = { opinion = { who = event_target:duel_round_loser value = -79 } } }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { event_target:duel_round_winner = { opinion = { who = event_target:duel_round_loser value = -99 } } }
+			}
+			
+			modifier = {
+				factor = 3
+				event_target:duel_round_winner = { trait = honorable }
+			}
+		}
+	}
+	option = { # Duel ends in a draw
+		name = DRAW
+		trigger = { 
+			event_target:duel_round_winner = { #Only possible in some contexts
+				has_character_flag = duel_can_be_draw
+			}	
+		}
+		set_character_flag = mildly_injured
+		event_target:duel_round_winner = { character_event = { id = duel.115 } }
+		ai_chance = {
+			factor = 20
+			
+			modifier = {
+				factor = 2
+				check_variable = { which = duel_rounds value = 2 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { which = duel_rounds value = 3 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { which = duel_rounds value = 4 }
+			}
+		}
+	}
+}
+
+### YIELD OUTCOMES
+character_event = {
+	id = duel.105
+	border = "GFX_event_normal_frame_war"
+	
+	#SELECT PICTURE
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			NOR = {
+				culture = dothraki
+				trait = wildling
+				event_target:duel_round_loser = {
+					OR = {
+						culture = dothraki
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_evt_the_trident
+	}
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+				has_character_flag = stealing_spearwife
+				has_character_flag = dothraki_wedding_duel_death
+			}
+		}
+		picture = GFX_evt_battle
+	}
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			NOR = {
+				culture = dothraki
+				trait = wildling
+				event_target:duel_round_loser = {
+					OR = {
+						culture = dothraki
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_evt_melee
+	}
+	picture = {
+		trigger = { 
+			has_character_flag = in_melee
+		}
+		picture = GFX_evt_melee
+	}
+	picture = {
+		trigger = { 
+			has_character_flag = in_melee
+		}
+		picture = GFX_evt_battle
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			is_adult = no
+			event_target:duel_round_loser = { is_adult = no }
+		}
+		picture = GFX_evt_child_sword
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				has_character_flag = elected_champion
+				has_character_flag = demmanded_trial_by_combat
+				has_character_flag = champion_of_relative
+				has_character_flag = lunatic_trial
+				has_character_flag = duelist_regent
+				has_character_flag = duelist_courtier
+				has_character_flag = wikid_friendly_duel_player
+				has_character_flag = kingsmoot_duel
+				has_character_flag = tourney_duel_challenger
+				has_character_flag = tourney_duel_target
+				has_character_flag = WOL_focus_duel
+				has_character_flag = wol_lover_duel_accuser
+				has_character_flag = wol_lover_duel_lover
+				has_character_flag = friends_rivals_duel
+				has_character_flag = trial_by_seven_duel
+				has_character_flag = gbc_duel
+				has_character_flag = gbc_duel_rival
+			}
+		}
+		picture = GFX_evt_family_feud_republic
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				culture = dothraki
+				event_target:duel_round_loser = { culture = dothraki }
+			}
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_evt_dothraki_struggling
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				culture_group = iron_isles_culture
+				trait = wildling
+				has_character_flag = finger_dance_duel
+				event_target:duel_round_loser = { 
+					OR = {
+						culture_group = iron_isles_culture 
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_fingerdance
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = wildling
+				event_target:duel_round_loser = { 
+					trait = wildling
+				}
+			}
+		}
+		picture = GFX_evt_wildlings
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = knight
+				event_target:duel_round_loser = { trait = knight }
+			}
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_FLORENT
+	}
+	picture = {
+		trigger = { 
+			trait = knight
+			event_target:duel_round_loser = { trait = knight }
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_knights
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = giant
+				event_target:duel_round_loser = { trait = giant }
+			}
+		}
+		picture = GFX_evt_giants
+	}
+	
+	desc = {
+		text = "EVTDESCDUEL105"
+		trigger = { 
+			NOT = { event_target:duel_round_loser = { has_character_flag = duel_tactic_animal_DEATH } } 
+			NOT = { has_character_flag = finger_dance_duel }
+		}
+	}	
+	desc = {
+		text = "EVTDESCDUEL105B" #Animal companion was killed
+		trigger = { event_target:duel_round_loser = { has_character_flag = duel_tactic_animal_DEATH } }
+	}	
+	desc = {
+		text = EVTDESCDUEL105C
+		trigger = { 
+			has_character_flag = finger_dance_duel	
+		}
+	}
+	
+	is_triggered_only = yes
+	show_from_from = yes
+	
+	immediate = {
+		event_target:duel_round_loser = { save_event_target_as = other_combatant }
+	}
+	
+	option = {
+		name = "EVTOPTADUEL105"
+		event_target:duel_round_loser = { character_event = { id = duel.106 tooltip = "EVTTOOLTIPDUEL106" } }
+	}
+}
+
+character_event = {
+	id = duel.106
+	desc = "EVTDESCDUEL106"
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	#SELECT PICTURE
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			NOR = {
+				culture = dothraki
+				trait = wildling
+				FROM = {
+					OR = {
+						culture = dothraki
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_evt_the_trident
+	}
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+				has_character_flag = stealing_spearwife
+				has_character_flag = dothraki_wedding_duel_death
+			}
+		}
+		picture = GFX_evt_battle
+	}
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			NOR = {
+				culture = dothraki
+				trait = wildling
+				FROM = {
+					OR = {
+						culture = dothraki
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_evt_melee
+	}
+	picture = {
+		trigger = { 
+			has_character_flag = in_melee
+		}
+		picture = GFX_evt_melee
+	}
+	picture = {
+		trigger = { 
+			has_character_flag = in_melee
+		}
+		picture = GFX_evt_battle
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			is_adult = no
+			FROM = { is_adult = no }
+		}
+		picture = GFX_evt_child_sword
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				has_character_flag = elected_champion
+				has_character_flag = demmanded_trial_by_combat
+				has_character_flag = champion_of_relative
+				has_character_flag = lunatic_trial
+				has_character_flag = duelist_regent
+				has_character_flag = duelist_courtier
+				has_character_flag = wikid_friendly_duel_player
+				has_character_flag = kingsmoot_duel
+				has_character_flag = tourney_duel_challenger
+				has_character_flag = tourney_duel_target
+				has_character_flag = WOL_focus_duel
+				has_character_flag = wol_lover_duel_accuser
+				has_character_flag = wol_lover_duel_lover
+				has_character_flag = friends_rivals_duel
+				has_character_flag = trial_by_seven_duel
+				has_character_flag = gbc_duel
+				has_character_flag = gbc_duel_rival
+			}
+		}
+		picture = GFX_evt_family_feud_republic
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				culture = dothraki
+				FROM = { culture = dothraki }
+			}
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_evt_dothraki_struggling
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				culture_group = iron_isles_culture
+				trait = wildling
+				has_character_flag = finger_dance_duel
+				FROM = {
+					OR = {
+						culture_group = iron_isles_culture 
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_fingerdance
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = wildling
+				FROM = { 
+					trait = wildling
+				}
+			}
+		}
+		picture = GFX_evt_wildlings
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = knight
+				FROM = { trait = knight }
+			}
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_FLORENT
+	}
+	picture = {
+		trigger = { 
+			trait = knight
+			FROM = { trait = knight }
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_knights
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = giant
+				FROM = { trait = giant }
+			}
+		}
+		picture = GFX_evt_giants
+	}
+	
+	desc = {
+		text = "EVTDESCDUEL106"
+		trigger = { 
+			NOT = { has_character_flag = duel_tactic_animal_DEATH } 
+			NOT = { has_character_flag = finger_dance_duel }
+		}
+	}	
+	desc = {
+		text = "EVTDESCDUEL106B" #Animal companion was killed
+		trigger = { has_character_flag = duel_tactic_animal_DEATH }
+	}
+	desc = {
+		text = EVTDESCDUEL106C
+		trigger = { 
+			has_character_flag = finger_dance_duel	
+		}
+	}
+	
+	immediate = {
+		FROM = { save_event_target_as = other_combatant }
+		clr_character_flag = must_yield
+		if = {
+			limit = {			
+				has_character_flag = actually_injured
+				OR = {
+					has_character_flag = injury_both_eyes
+					has_character_flag = injury_leg
+					has_character_flag = injury_face
+				}
+			}
+			set_character_flag = must_yield
+			break = yes
+		}
+		if = {
+			limit = { 
+				NOT = { has_character_flag = flag_duel_to_the_death } 
+				NOT = { trait = white_walker }
+			}
+			random = {
+				chance = 25
+				modifier = {
+					factor = 0.5
+					has_character_flag = finger_dance_duel 
+				}
+				# Duel Fatigue - adjust values if neccessary				
+				modifier = {
+					factor = 1.5
+					check_variable = { which = duel_rounds value = 2 }
+				}
+				modifier = {
+					factor = 1.5
+					check_variable = { which = duel_rounds value = 4 }
+				}
+				modifier = {
+					factor = 1.5
+					check_variable = { which = duel_rounds value = 6 }
+				}
+				set_character_flag = must_yield
+			}
+		}	
+	}
+	
+	option = {
+		trigger = {
+			NOT = { has_character_flag = flag_duel_to_the_death }
+			NOT = { trait = white_walker }
+		}
+		name = "EVTOPTADUEL106"
+		apply_selected_duel_injury_effect = yes
+		clr_character_flag = must_yield
+		event_target:duel_round_winner = { character_event = { id = duel.107 tooltip = "EVTTOOLTIPDUEL107" } }
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NAND = { 
+					has_character_flag = flag_duel_friendly 
+					NOT = { has_character_flag = trial_by_seven_duel }
+					NOT = { has_character_flag = finger_dance_duel }
+				}
+				NOT = { trait = wounded }
+				NOT = { has_severe_disability_trigger = yes }
+				NOT = { trait = craven }
+				NOT = { event_target:duel_round_winner = { combat_rating_diff = { who = ROOT value = 25 } } }
+			}
+			modifier = {
+				factor = 2
+				has_character_flag = flag_duel_friendly
+				NOT = { has_character_flag = trial_by_seven_duel }
+			}
+			modifier = {
+				factor = 2
+				event_target:duel_round_winner = { combat_rating_diff = { who = ROOT value = 20 } }
+			}
+			# Nearly Beaten!
+			modifier = {
+				factor = 4
+				is_maimed_trigger = yes
+				NOT = { trait = lunatic }
+			}
+			modifier = {
+				factor = 2
+				trait = wounded
+				NOT = { trait = lunatic }
+			}
+			# Opponent Nearly Beaten!
+			modifier = {
+				factor = 0.25
+				NOT = { is_maimed_trigger = yes }
+				event_target:duel_round_winner = { is_maimed_trigger = yes }
+				NOT = { trait = lunatic }
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { is_maimed_trigger = yes }
+				NOT = { trait = wounded }
+				event_target:duel_round_winner = { trait = wounded }
+				NOT = { trait = lunatic }
+			}
+			# Personality Effects
+			modifier = {
+				factor = 5
+				trait = craven
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 1.25
+				trait = humble
+			}
+			modifier = {
+				factor = 0.5
+				trait = brave
+			}
+			modifier = {
+				factor = 0.5
+				trait = stubborn
+			}
+			modifier = {
+				factor = 0.75
+				trait = proud
+			}
+			modifier = {
+				factor = 0.33
+				trait = wroth
+			}
+		}
+	}
+	
+	option = {	
+		trigger = {
+			NOT = { has_character_flag = must_yield }
+		}
+		name = {
+			text = "EVTOPTBDUEL106"
+			trigger = {
+				NOR = { 
+					is_drowned_god_religion_trigger = yes
+					has_house_words_trigger = yes
+				}
+			}
+		}	
+		name = {
+			text = "EVTOPTCDUEL106"
+			trigger = {
+				is_drowned_god_religion_trigger = yes
+			}
+		}
+		name = {
+			text = "EVTOPTGETHOUSEWORDS"
+			trigger = {
+				has_house_words_trigger = yes
+			}
+		}
+		if = {
+			limit = { 
+				has_character_flag = mildly_injured
+				NOT = { trait = wounded } 
+			}
+			random = {
+				chance = 50
+				add_trait_silently_wounded_effect = yes
+				hidden_tooltip = { change_variable = { which = scarred_variable value = 2 } }  #While the variable stacks, actual scars are added only after the wound heals.
+				character_event = { id = 38280 }
+			}
+		}
+		apply_selected_duel_injury_effect = yes
+		character_event = { id = duel.110 tooltip = "EVTTOOLTIPDUEL110" }
+		ai_chance = { factor = 100 }
+	}
+}
+
+character_event = {
+	id = duel.107
+	desc = "EVTDESCDUEL107"
+	border = "GFX_event_normal_frame_war"
+	
+	#SELECT PICTURE
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			NOR = {
+				culture = dothraki
+				trait = wildling
+				event_target:duel_round_loser = {
+					OR = {
+						culture = dothraki
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_evt_the_trident
+	}
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+				has_character_flag = stealing_spearwife
+				has_character_flag = dothraki_wedding_duel_death
+			}
+		}
+		picture = GFX_evt_battle
+	}
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			NOR = {
+				culture = dothraki
+				trait = wildling
+				event_target:duel_round_loser = {
+					OR = {
+						culture = dothraki
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_evt_melee
+	}
+	picture = {
+		trigger = { 
+			has_character_flag = in_melee
+		}
+		picture = GFX_evt_melee
+	}
+	picture = {
+		trigger = { 
+			has_character_flag = in_melee
+		}
+		picture = GFX_evt_battle
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			is_adult = no
+			event_target:duel_round_loser = { is_adult = no }
+		}
+		picture = GFX_evt_child_sword
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				has_character_flag = elected_champion
+				has_character_flag = demmanded_trial_by_combat
+				has_character_flag = champion_of_relative
+				has_character_flag = lunatic_trial
+				has_character_flag = duelist_regent
+				has_character_flag = duelist_courtier
+				has_character_flag = wikid_friendly_duel_player
+				has_character_flag = kingsmoot_duel
+				has_character_flag = tourney_duel_challenger
+				has_character_flag = tourney_duel_target
+				has_character_flag = WOL_focus_duel
+				has_character_flag = wol_lover_duel_accuser
+				has_character_flag = wol_lover_duel_lover
+				has_character_flag = friends_rivals_duel
+				has_character_flag = trial_by_seven_duel
+				has_character_flag = gbc_duel
+				has_character_flag = gbc_duel_rival
+			}
+		}
+		picture = GFX_evt_family_feud_republic
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				culture = dothraki
+				event_target:duel_round_loser = { culture = dothraki }
+			}
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_evt_dothraki_struggling
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				culture_group = iron_isles_culture
+				trait = wildling
+				has_character_flag = finger_dance_duel
+				event_target:duel_round_loser = { 
+					OR = {
+						culture_group = iron_isles_culture 
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_fingerdance
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = wildling
+				event_target:duel_round_loser = { 
+					trait = wildling
+				}
+			}
+		}
+		picture = GFX_evt_wildlings
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = knight
+				event_target:duel_round_loser = { trait = knight }
+			}
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_FLORENT
+	}
+	picture = {
+		trigger = { 
+			trait = knight
+			event_target:duel_round_loser = { trait = knight }
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_knights
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = giant
+				event_target:duel_round_loser = { trait = giant }
+			}
+		}
+		picture = GFX_evt_giants
+	}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTADUEL107"
+		set_character_flag = flag_spared_opponent
+		event_target:duel_round_loser = { character_event = { id = duel.108 tooltip = "EVTTOOLTIPDUEL108" } }
+		ai_chance = {
+			factor = 100
+			# Need Opponent Taken Alive
+			modifier = {
+				factor = 10
+				any_current_enemy = { character = event_target:duel_round_loser }
+				NOR = {
+					trait = lunatic
+					trait = possessed
+				}
+				NOR = {
+					trait = wroth
+					trait = cruel
+					trait = paranoid
+				}
+			}
+			# Nearly Beaten!
+			modifier = {
+				factor = 4
+				is_maimed_trigger = yes
+				NOT = { trait = lunatic }
+			}
+			modifier = {
+				factor = 2
+				trait = wounded
+				NOT = { trait = lunatic }
+			}
+			# Opponent Nearly Beaten!
+			modifier = {
+				factor = 0.25
+				event_target:duel_round_loser = { is_maimed_trigger = yes }
+				NOT = { trait = lunatic }
+				NOT = { has_character_flag = flag_duel_friendly }
+			}
+			modifier = {
+				factor = 0.5
+				event_target:duel_round_loser = { trait = wounded }
+				NOT = { trait = lunatic }
+				NOT = { has_character_flag = flag_duel_friendly }
+			}
+			# Personal Opinion Modifiers
+			modifier = {
+				factor = 1.25
+				opinion = { who = event_target:duel_round_loser value = 20 }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { opinion = { who = event_target:duel_round_loser value = -19 } }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { opinion = { who = event_target:duel_round_loser value = -39 } }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { opinion = { who = event_target:duel_round_loser value = -59 } }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { opinion = { who = event_target:duel_round_loser value = -79 } }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { opinion = { who = event_target:duel_round_loser value = -99 } }
+			}
+			
+			# Would Be Kinslaying
+			modifier = {
+				factor = 10
+				OR = {
+					dynasty = event_target:duel_round_loser
+					is_close_relative = event_target:duel_round_loser
+				}	
+				NOT = { trait = arbitrary }
+			}
+			modifier = {
+				factor = 20
+				OR = {
+					dynasty = event_target:duel_round_loser
+					is_close_relative = event_target:duel_round_loser
+				}
+				trait = just
+			}
+			
+			# Personality Modifiers
+			modifier = {
+				factor = 10
+				trait = honorable
+			}
+			modifier = {
+				factor = 10
+				trait = honest
+			}
+			modifier = {
+				factor = 5
+				trait = kind
+			}
+			modifier = {
+				factor = 3
+				trait = just
+			}
+			modifier = {
+				factor = 2
+				trait = gregarious
+			}
+			modifier = {
+				factor = 1.25
+				trait = humble
+			}
+			modifier = {
+				factor = 1.25
+				trait = trusting
+			}
+			modifier = {
+				factor = 0.8
+				trait = paranoid
+			}
+			modifier = {
+				factor = 0.8
+				trait = proud
+			}
+			modifier = {
+				factor = 0.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.5
+				trait = ruthless
+			}
+			modifier = {
+				factor = 0.5
+				trait = deceitful
+			}
+			modifier = {
+				factor = 0.5
+				trait = cruel
+			}
+			modifier = {
+				factor = 0.5
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 1000
+				has_character_flag = flag_duel_friendly
+				trait = wikid
+			}
+			modifier = {
+				factor = 10
+				has_character_flag = flag_duel_friendly
+				NOT = { has_character_flag = trial_by_seven_duel }
+				NOT = {
+					OR = {
+						trait = lunatic
+						trait = possessed
+						trait = cruel
+						trait = wroth
+					}
+				}
+			}
+			modifier = {
+				factor = 5
+				has_character_flag = flag_duel_friendly
+				NOT = { has_character_flag = trial_by_seven_duel }
+			}
+		}
+	}
+	
+	option = {		
+		name = {
+			text = "EVTOPTBDUEL107"
+			trigger = {
+				NOT = { dynasty = 190 }
+			}
+		}
+		name = {
+			text = "EVTOPTCDUEL107"
+			trigger = {
+				dynasty = 190
+			}
+		}	
+		name = {
+			text = "EVTOPTBDUEL107B"
+			trigger = {
+				NOT = { opinion = { who = event_target:duel_round_loser value = -33 } }
+			}
+		}
+		ai_chance = { 
+			factor = 100 
+			modifier = {
+				factor = 0
+				opinion = { who = event_target:duel_round_loser value = 40 }
+				NOT = { trait = lunatic }
+			}
+			# Friendly Duels, must have motive to be dishonorable
+			modifier = {
+				factor = 0
+				has_character_flag = flag_duel_friendly
+				NOT = {
+					OR = {
+						#has ongoing murder plot
+						AND = {
+							OR = {
+								has_plot = plot_kill_character
+								has_plot = plot_kill_spouse
+							}
+							plot_target_char = { character = event_target:duel_round_loser }
+						}
+						AND = {
+							any_backed_character = {
+								OR = {
+									has_plot = plot_kill_character
+									has_plot = plot_kill_spouse
+								}
+								plot_target_char = { character = event_target:duel_round_loser }
+							}
+						}
+						# Titles
+						OR = {
+							any_pretender_title = { # Get rid of the current ruler or heir if I'm a pretender
+								OR = {
+									current_heir = { character = event_target:duel_round_loser }
+									holder_scope = { character = event_target:duel_round_loser }
+								}
+							}
+							any_heir_title = { # Kill a ruler if I'm the heir
+								holder_scope = { character = event_target:duel_round_loser }
+								NOT = { has_law = succ_appointment }
+							}
+						}	
+
+						# Family concerns
+						any_child = { # Gets rid of obstacles in the way of a child's succession
+							OR = {
+								any_pretender_title = {
+									current_heir = { character = event_target:duel_round_loser }
+								}
+								any_heir_title = {
+									holder_scope = { character = event_target:duel_round_loser }
+								}
+							}
+						}
+						any_spouse = {	# Get rid of the current heir to a title the character's spouse is a pretender to
+							any_pretender_title = {
+								current_heir = { character = event_target:duel_round_loser }
+							}
+						}
+						any_spouse = { # Get rid of a ruler the spouse is heir to
+							any_heir_title = {
+								holder_scope = { character = event_target:duel_round_loser }
+							}
+						}
+						
+						# A lover of spouse...
+						any_spouse = { is_lover = event_target:duel_round_loser }	
+						
+						# Rivals/enemies
+						is_foe = event_target:duel_round_loser
+						event_target:duel_round_loser = { has_opinion_modifier = { who = ROOT modifier = opinion_claimant_adventure_target } }
+						
+						# Go nuts...
+						trait = lunatic
+						trait = possessed					
+					}
+				}
+			}
+		}		
+		set_character_flag = flag_killed_opponent
+		custom_tooltip = { text = EVTTOOLTIPDUEL109 }
+		
+		if = {
+			limit = { has_character_flag = flag_duel_friendly }
+			if = {
+				limit = {
+					has_nickname = no
+					OR = {
+						trait = dishonorable1
+						trait = dishonorable2
+						trait = dishonorable3
+						trait = dishonorable4
+						trait = dishonorable5
+						trait = dishonorable6
+						trait = dishonorable7
+						trait = dishonorable8
+						trait = dishonorable9
+						trait = dishonorable10
+					}
+				}
+				give_nickname = nick_the_ruthless
+			}
+			change_variable = { which = "dishonorable" value = 10 } 
+			hidden_tooltip = { character_event = { id = maintenance.3 } } #dishonour trait
+			
+			event_target:duel_round_loser = { save_event_target_as = kinslayer_target } #check for kinslayer
+			add_kinslayer_trait_effect = yes		
+		}
+		event_target:duel_round_loser = {
+			#Wolfgang Pauli's vengeance CB modifiers knuckey: changed to something less drastic
+			father = {
+				if = {
+					limit = {
+						is_alive = yes			
+					}
+					opinion = {
+						who = ROOT
+						modifier = opinion_slayed_kinsman
+					}
+				}	
+			}
+			mother = {
+				if = {
+					limit = {
+						is_alive = yes			
+					}
+					opinion = {
+						who = ROOT
+						modifier = opinion_slayed_kinsman
+					}
+				}	
+			}
+			any_child = {
+				limit = {
+					is_alive = yes
+					OR = {
+						NOT = { is_close_relative = ROOT }
+						opinion = { who = PREV value = 50 }
+					}			
+				}
+				opinion = {
+					who = ROOT
+					modifier = opinion_slayed_kinsman
+				}
+			}
+			any_spouse = {
+				limit = { 
+					opinion = { who = PREV value = -25 } 
+					OR = {
+						NOT = { is_close_relative = ROOT }
+						opinion = { who = PREV value = 50 }
+					}
+					NOT = { is_child_of = PREV }
+					NOT = { any_child = { character = PREVPREV } }
+				}
+				opinion = {
+					who = ROOT
+					modifier = opinion_slayed_kinsman
+				}
+			}
+			any_dynasty_member = {
+				limit = {
+					is_alive = yes
+					is_close_relative = PREV
+					OR = {
+						NOT = { is_close_relative = ROOT }
+						opinion = { who = PREV value = 50 }
+					}	
+					NOT = { is_child_of = PREV }
+					NOT = { any_child = { character = PREVPREV } }
+					NOT = { is_married = PREV }				
+				}
+				opinion = {
+					who = ROOT
+					modifier = opinion_slayed_kinsman
+				}
+			}
+			
+			any_friend = {
+				limit = { 
+					NOT = { is_married = PREV }	
+					OR = {
+						NOT = { dynasty = PREV }
+						NOT = { is_close_relative = PREV }
+					}
+					NOT = { is_child_of = PREV }
+					NOT = { any_child = { character = PREVPREV } }
+					NOT = { is_married = PREV }	
+				}
+				opinion = {
+					who = ROOT
+					modifier = opinion_slayed_kinsman
+				}
+			}
+			hidden_tooltip = { character_event = { id = duel.109 tooltip = "EVTTOOLTIPDUEL109" } }
+		}
+	}
+}
+
+character_event = {
+	id = duel.108
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	desc = {
+		text = "EVTDESCDUEL108"
+		trigger = { 
+			NOT = { has_character_flag = finger_dance_duel }
+		}
+	}	
+	desc = {
+		text = "EVTDESCraid_events.52"
+		trigger = { 
+			has_character_flag = finger_dance_duel
+		}
+	}	
+	
+	#SELECT PICTURE
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			NOR = {
+				culture = dothraki
+				trait = wildling
+				FROM = {
+					OR = {
+						culture = dothraki
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_evt_the_trident
+	}
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+				has_character_flag = stealing_spearwife
+				has_character_flag = dothraki_wedding_duel_death
+			}
+		}
+		picture = GFX_evt_battle
+	}
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			NOR = {
+				culture = dothraki
+				trait = wildling
+				FROM = {
+					OR = {
+						culture = dothraki
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_evt_melee
+	}
+	picture = {
+		trigger = { 
+			has_character_flag = in_melee
+		}
+		picture = GFX_evt_melee
+	}
+	picture = {
+		trigger = { 
+			has_character_flag = in_melee
+		}
+		picture = GFX_evt_battle
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			is_adult = no
+			FROM = { is_adult = no }
+		}
+		picture = GFX_evt_child_sword
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				has_character_flag = elected_champion
+				has_character_flag = demmanded_trial_by_combat
+				has_character_flag = champion_of_relative
+				has_character_flag = lunatic_trial
+				has_character_flag = duelist_regent
+				has_character_flag = duelist_courtier
+				has_character_flag = wikid_friendly_duel_player
+				has_character_flag = kingsmoot_duel
+				has_character_flag = tourney_duel_challenger
+				has_character_flag = tourney_duel_target
+				has_character_flag = WOL_focus_duel
+				has_character_flag = wol_lover_duel_accuser
+				has_character_flag = wol_lover_duel_lover
+				has_character_flag = friends_rivals_duel
+				has_character_flag = trial_by_seven_duel
+				has_character_flag = gbc_duel
+				has_character_flag = gbc_duel_rival
+			}
+		}
+		picture = GFX_evt_family_feud_republic
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				culture = dothraki
+				FROM = { culture = dothraki }
+			}
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_evt_dothraki_struggling
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				culture_group = iron_isles_culture
+				trait = wildling
+				has_character_flag = finger_dance_duel
+				FROM = { 
+					OR = {
+						culture_group = iron_isles_culture 
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_fingerdance
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = wildling
+				FROM = { 
+					trait = wildling
+				}
+			}
+		}
+		picture = GFX_evt_wildlings
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = knight
+				FROM = { trait = knight }
+			}
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_FLORENT
+	}
+	picture = {
+		trigger = { 
+			trait = knight
+			FROM = { trait = knight }
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_knights
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = giant
+				FROM = { trait = giant }
+			}
+		}
+		picture = GFX_evt_giants
+	}
+	
+	option = {
+		name = {
+			text = "EVTOPTADUEL108"
+		}	
+		name = {
+			text = "EVTOPTAraid_events.52"
+			trigger = { has_character_flag = finger_dance_duel }
+		}
+		if = {
+			limit = { has_character_flag = warrior_lodge_duel }
+			detract_society_currency_minor_effect = yes
+		}	
+		if = {
+			limit = { #these apply own prestige after
+				NOT = { has_character_flag = in_melee }
+			}
+			if = {
+				limit = {
+					OR = {
+						tier = EMPEROR
+						combat_rating_diff = { who = FROM value = 80 }	
+					}
+				}				
+				if = {
+					limit = { has_character_flag = flag_duel_friendly }
+					prestige = -40
+				}	
+				else = {
+					prestige = -200
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						tier = KING
+						trait = kingsguard
+						combat_rating_diff = { who = FROM value = 60 }					
+					}
+				}
+				if = {
+					limit = { has_character_flag = flag_duel_friendly }
+					prestige = -25
+				}	
+				else = {
+					prestige = -100
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						tier = DUKE
+						combat_rating_diff = { who = FROM value = 40 }					
+					}
+				}
+				if = {
+					limit = { has_character_flag = flag_duel_friendly }
+					prestige = -15
+				}	
+				else = {
+					prestige = -50
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						tier = COUNT
+						combat_rating_diff = { who = FROM value = 20 }					
+					}
+				}
+				if = {
+					limit = { has_character_flag = flag_duel_friendly }
+					prestige = -10
+				}	
+				else = {
+					prestige = -25
+				}
+			}
+			else = {
+				prestige = -10
+			}
+		}	
+		event_target:duel_round_winner = { character_event = { id = duel_output.1 tooltip = "EVTTOOLTIPDUELOUTPUT1" } }
+	}
+}
+
+#Inform liege enemy captured after duel
+character_event = {
+	id = duel.10700
+	desc = "EVTDESCDUEL10700"
+	picture = GFX_evt_the_trident
+	border = "GFX_event_normal_frame_war"
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		tooltip = { FROMFROM = { imprison = ROOT } }
+	}
+}
+
+character_event = {
+	id = duel.109
+	desc = "EVTDESCDUEL109"
+	picture = GFX_evt_death
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		#Check if Rhllor saves character
+		if = {
+			limit = { 
+				religion = rhllor 
+				OR = {
+					trait = resurrected_by_rhllor
+					AND = {
+						OR = { 	
+							trait = favored_by_rhllor
+							trait = chosen_by_rhllor				
+						}
+						OR = {
+							check_variable = { which = "red_god_magic" value = 10 }
+							magic_returned_trigger = yes
+						}
+					}
+				}	
+			}
+			random = {
+				chance = 10
+				modifier = {
+					factor = 2
+					trait = resurrected_by_rhllor
+				}
+				modifier = {
+					factor = 2
+					trait = chosen_by_rhllor
+				}
+				modifier = {
+					factor = 2
+					magic_returned_trigger = yes
+				}
+				modifier = {
+					factor = 1.33
+					check_variable = { which = "red_god_magic" value = 1 }
+				}
+				modifier = {
+					factor = 1.5
+					check_variable = { which = "red_god_magic" value = 5 }
+				}
+				set_character_flag = rhllor_resurrected
+			}
+		}
+		#Check if maester saves character
+		if = {
+			limit = {
+				has_character_flag = necromancy_target
+				magic_returned_trigger = yes
+				NOT = { has_character_flag = rhllor_resurrected }
+				persistent_event_target:necromancer = {
+					has_character_modifier = necromancer_maester
+					is_alive = yes
+					prisoner = no
+					is_incapable = no
+					OR = {
+						at_location = PREV
+						NOT = { is_inaccessible_trigger = yes }
+					}
+				}
+			}
+			set_character_flag = maester_resurrected
+		}
+	}
+	
+	option = {
+		name = "EVTOPTADUEL109"
+		trigger = {
+			NOT = { has_character_flag = rhllor_resurrected }
+			NOT = { has_character_flag = maester_resurrected }			
+		}
+		tooltip = {
+			death = {
+				death_reason = death_duel
+				killer = event_target:duel_round_winner
+			}
+		}	
+		hidden_tooltip = {
+			if = {
+				limit = { 
+					has_character_flag = trial_by_seven_duel
+				}
+				death = {
+					death_reason = death_duel_trial_by_seven
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			if = {
+				limit = { 
+					OR = {
+						has_character_flag = flag_battlefield_duel
+						event_target:duel_round_winner = { has_character_flag = bloodrider_revenge_duel }
+						has_character_flag = clansmen_hunt_duel
+						has_character_flag = wikid_player_vs_pirate
+						has_character_flag = wikid_pirate_vs_player	
+						has_character_flag = wikid_pirate_vs_companion
+						has_character_flag = wikid_companion_vs_pirate
+						has_character_flag = reaving_sword_fight_target
+					}	
+				}
+				hidden_tooltip = { #Inform relevent player
+					any_player = {
+						limit = {
+							OR = {
+								any_current_enemy = { character = ROOT }
+								is_liege_or_above = ROOT
+								is_liege_of = ROOT
+								dynasty = ROOT
+								is_close_relative = ROOT
+								is_married = ROOT
+								is_friend = ROOT
+								is_rival = ROOT
+								is_lover = ROOT
+								is_allied_with = ROOT
+								has_opinion_modifier = { who = ROOT modifier = opinion_de_facto_liege }	
+								has_opinion_modifier = { who = ROOT modifier = opinion_with_rebel_leader }
+							}
+							NOT = { character = ROOT }
+							NOT = { character = event_target:duel_round_winner }
+						}
+						character_event = { id = battle.12 }
+					}
+				}
+				death = {
+					death_reason = death_duel_battle
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			if = {
+				limit = { 
+					OR = {
+						has_character_flag = elected_champion
+						has_character_flag = self_elected_champion
+						has_character_flag = self_elected_champion_b
+						has_character_flag = demmanded_trial_by_combat
+						has_character_flag = champion_of_relative
+					}
+				}
+				death = {
+					death_reason = death_duel_trial_by_combat
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			if = {
+				limit = { 
+					OR = {
+						has_character_flag = reaving_duel
+						has_character_flag = reaving_sword_fight
+						has_character_flag = clansmen_hunt_duel_target
+						has_character_flag = stealing_spearwife
+					}	
+				}
+				death = {
+					death_reason = death_battle_raiding
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			if = {
+				limit = { 
+					OR = {
+						has_character_flag = wikid_betrayal_companion
+						has_character_flag = wikid_betrayal_player
+						has_character_flag = tourney_duel_challenger
+						has_character_flag = tourney_duel_target
+						has_character_flag = WOL_focus_duel
+						has_character_flag = wol_lover_duel_accuser
+						has_character_flag = wol_lover_duel_lover
+						has_character_flag = friends_rivals_duel
+						has_character_flag = laughing_storm_duel
+					}	
+				}
+				death = {
+					death_reason = death_duel_honour
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			
+			if = {
+				limit = { 
+					OR = {
+						has_character_flag = duelist_regent
+						has_character_flag = duelist_courtier
+					}	
+				}
+				death = {
+					death_reason = death_duel_regency
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			if = {
+				limit = { 
+					OR = {
+						has_character_flag = rogue_kg_vs_KG
+						has_character_flag = rogue_kg_vs_KING
+					}	
+				}
+				death = {
+					death_reason = death_duel_rogue_kg
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			if = {
+				limit = { 
+					OR = {
+						has_character_flag = KG_vs_rogue_kg
+						has_character_flag = KING_vs_rogue_kg
+					}	
+				}
+				death = {
+					death_reason = death_duel_vs_rogue_kg
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			if = {
+				limit = { 
+					has_character_flag = kingsmoot_duel
+				}
+				death = {
+					death_reason = death_duel_kingsmoot
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			if = {
+				limit = { 
+					has_character_flag = bloodrider_revenge_duel
+				}
+				death = {
+					death_reason = death_battle_bloodrider
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			if = {
+				limit = { 
+					has_character_flag = in_melee
+				}
+				death = {
+					death_reason = death_duel_melee
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			if = {
+				limit = { 
+					has_character_flag = is_legendary_duel
+				}
+				death = {
+					death_reason = death_legendary_fail_duel #you died trying...
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			if = {
+				limit = { 
+					event_target:duel_round_winner = { has_character_flag = is_legendary_duel }
+				}
+				death = {
+					death_reason = death_legendary_win_duel #you successfully killed someone on your hunt for glory!
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			death = {
+				death_reason = death_duel
+				killer = event_target:duel_round_winner
+			}
+		}		
+		event_target:duel_round_winner = { 
+			custom_tooltip = {
+				text = "EVTTOOLTIPDUELOUTPUT1"
+			}
+		}		
+	}
+	
+	option = {
+		name = "EVTOPTBred_priest.10"
+		trigger = {
+			has_character_flag = rhllor_resurrected
+		}
+		character_event = { id = red_priest.38 tooltip = CUSTOMTOOLTIPrhllor_saved_me }
+		clr_character_flag = rhllor_resurrected
+		
+		event_target:duel_round_winner = { 
+			custom_tooltip = {
+				text = "EVTTOOLTIPDUELOUTPUT1"
+				hidden_tooltip = { 
+					character_event = { id = duel.204 days = 1 }
+				}
+			}
+		}
+	}	
+	option = {
+		name = "EVTOPTmaester_resurrected"
+		trigger = {
+			has_character_flag = maester_resurrected
+		}
+		character_event = { id = maester.105 tooltip = CUSTOMTOOLTIPmaester_saved_me }
+		clr_character_flag = maester_resurrected
+		
+		event_target:duel_round_winner = { 
+			custom_tooltip = {
+				text = "EVTTOOLTIPDUELOUTPUT1"
+				hidden_tooltip = { 
+					character_event = { id = duel.204 days = 1 }
+				}
+			}
+		}
+	}
+	after = {
+		hidden_tooltip = {
+			event_target:duel_round_winner = { 
+				character_event = { id = duel_output.1 tooltip = "EVTTOOLTIPDUELOUTPUT1" }
+			}				
+		}
+	}
+}
+
+character_event = {
+	id = duel.110
+	desc = "EVTDESCDUEL110"
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	#SELECT PICTURE
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			NOR = {
+				culture = dothraki
+				trait = wildling
+				event_target:duel_round_winner = {
+					OR = {
+						culture = dothraki
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_evt_the_trident
+	}
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+				has_character_flag = stealing_spearwife
+				has_character_flag = dothraki_wedding_duel_death
+			}
+		}
+		picture = GFX_evt_battle
+	}
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			NOR = {
+				culture = dothraki
+				trait = wildling
+				event_target:duel_round_winner = {
+					OR = {
+						culture = dothraki
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_evt_melee
+	}
+	picture = {
+		trigger = { 
+			has_character_flag = in_melee
+		}
+		picture = GFX_evt_melee
+	}
+	picture = {
+		trigger = { 
+			has_character_flag = in_melee
+		}
+		picture = GFX_evt_battle
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			is_adult = no
+			event_target:duel_round_winner = { is_adult = no }
+		}
+		picture = GFX_evt_child_sword
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				has_character_flag = elected_champion
+				has_character_flag = demmanded_trial_by_combat
+				has_character_flag = champion_of_relative
+				has_character_flag = lunatic_trial
+				has_character_flag = duelist_regent
+				has_character_flag = duelist_courtier
+				has_character_flag = wikid_friendly_duel_player
+				has_character_flag = kingsmoot_duel
+				has_character_flag = tourney_duel_challenger
+				has_character_flag = tourney_duel_target
+				has_character_flag = WOL_focus_duel
+				has_character_flag = wol_lover_duel_accuser
+				has_character_flag = wol_lover_duel_lover
+				has_character_flag = friends_rivals_duel
+				has_character_flag = trial_by_seven_duel
+				has_character_flag = gbc_duel
+				has_character_flag = gbc_duel_rival
+			}
+		}
+		picture = GFX_evt_family_feud_republic
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				culture = dothraki
+				event_target:duel_round_winner = { culture = dothraki }
+			}
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_evt_dothraki_struggling
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				culture_group = iron_isles_culture
+				trait = wildling
+				has_character_flag = finger_dance_duel
+				event_target:duel_round_winner = { 
+					OR = {
+						culture_group = iron_isles_culture 
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_fingerdance
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = wildling
+				event_target:duel_round_winner = { 
+					trait = wildling
+				}
+			}
+		}
+		picture = GFX_evt_wildlings
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = knight
+				event_target:duel_round_winner = { trait = knight }
+			}
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_FLORENT
+	}
+	picture = {
+		trigger = { 
+			trait = knight
+			event_target:duel_round_winner = { trait = knight }
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_knights
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = giant
+				event_target:duel_round_winner = { trait = giant }
+			}
+		}
+		picture = GFX_evt_giants
+	}
+	
+	option = {
+		name = "EVTOPTADUEL110"
+		event_target:duel_round_winner = { character_event = { id = duel.111 tooltip = "EVTTOOLTIPDUEL111" } }
+	}
+}
+
+character_event = {
+	id = duel.111
+	desc = "EVTDESCDUEL111"
+	border = "GFX_event_normal_frame_war"
+	
+	#SELECT PICTURE
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			NOR = {
+				culture = dothraki
+				trait = wildling
+				FROM = {
+					OR = {
+						culture = dothraki
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_evt_the_trident
+	}
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+				has_character_flag = stealing_spearwife
+				has_character_flag = dothraki_wedding_duel_death
+			}
+		}
+		picture = GFX_evt_battle
+	}
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			NOR = {
+				culture = dothraki
+				trait = wildling
+				FROM = {
+					OR = {
+						culture = dothraki
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_evt_melee
+	}
+	picture = {
+		trigger = { 
+			has_character_flag = in_melee
+		}
+		picture = GFX_evt_melee
+	}
+	picture = {
+		trigger = { 
+			has_character_flag = in_melee
+		}
+		picture = GFX_evt_battle
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			is_adult = no
+			FROM = { is_adult = no }
+		}
+		picture = GFX_evt_child_sword
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				has_character_flag = elected_champion
+				has_character_flag = demmanded_trial_by_combat
+				has_character_flag = champion_of_relative
+				has_character_flag = lunatic_trial
+				has_character_flag = duelist_regent
+				has_character_flag = duelist_courtier
+				has_character_flag = wikid_friendly_duel_player
+				has_character_flag = kingsmoot_duel
+				has_character_flag = tourney_duel_challenger
+				has_character_flag = tourney_duel_target
+				has_character_flag = WOL_focus_duel
+				has_character_flag = wol_lover_duel_accuser
+				has_character_flag = wol_lover_duel_lover
+				has_character_flag = friends_rivals_duel
+				has_character_flag = trial_by_seven_duel
+				has_character_flag = gbc_duel
+				has_character_flag = gbc_duel_rival
+			}
+		}
+		picture = GFX_evt_family_feud_republic
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				culture = dothraki
+				FROM = { culture = dothraki }
+			}
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_evt_dothraki_struggling
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				culture_group = iron_isles_culture
+				trait = wildling
+				has_character_flag = finger_dance_duel
+				FROM = { 
+					OR = {
+						culture_group = iron_isles_culture 
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_fingerdance
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = wildling
+				FROM = { 
+					trait = wildling
+				}
+			}
+		}
+		picture = GFX_evt_wildlings
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = knight
+				FROM = { trait = knight }
+			}
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_FLORENT
+	}
+	picture = {
+		trigger = { 
+			trait = knight
+			FROM = { trait = knight }
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_knights
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = giant
+				FROM = { trait = giant }
+			}
+		}
+		picture = GFX_evt_giants
+	}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = {
+			text = "EVTOPTADUEL111"
+			trigger = { NOT = { has_character_flag = flag_duel_friendly } }
+		}	
+		name = {
+			text = "EVTOPTADUEL111B"
+			trigger = { has_character_flag = flag_duel_friendly }
+		}
+		hidden_tooltip = { e_rebels = { holder_scope = { character_event = { id = duel.1 } } } }
+	}
+}
+
+### DRAW OUTCOMES
+character_event = {
+	id = duel.115
+	border = "GFX_event_normal_frame_war"
+	desc = "EVTDESCDUEL115"	
+	
+	#SELECT PICTURE
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			NOR = {
+				culture = dothraki
+				trait = wildling
+				event_target:duel_round_loser = {
+					OR = {
+						culture = dothraki
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_evt_the_trident
+	}
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+				has_character_flag = stealing_spearwife
+				has_character_flag = dothraki_wedding_duel_death
+			}
+		}
+		picture = GFX_evt_battle
+	}
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			NOR = {
+				culture = dothraki
+				trait = wildling
+				event_target:duel_round_loser = {
+					OR = {
+						culture = dothraki
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_evt_melee
+	}
+	picture = {
+		trigger = { 
+			has_character_flag = in_melee
+		}
+		picture = GFX_evt_melee
+	}
+	picture = {
+		trigger = { 
+			has_character_flag = in_melee
+		}
+		picture = GFX_evt_battle
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			is_adult = no
+			event_target:duel_round_loser = { is_adult = no }
+		}
+		picture = GFX_evt_child_sword
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				has_character_flag = elected_champion
+				has_character_flag = demmanded_trial_by_combat
+				has_character_flag = champion_of_relative
+				has_character_flag = lunatic_trial
+				has_character_flag = duelist_regent
+				has_character_flag = duelist_courtier
+				has_character_flag = wikid_friendly_duel_player
+				has_character_flag = kingsmoot_duel
+				has_character_flag = tourney_duel_challenger
+				has_character_flag = tourney_duel_target
+				has_character_flag = WOL_focus_duel
+				has_character_flag = wol_lover_duel_accuser
+				has_character_flag = wol_lover_duel_lover
+				has_character_flag = friends_rivals_duel
+				has_character_flag = trial_by_seven_duel
+				has_character_flag = gbc_duel
+				has_character_flag = gbc_duel_rival
+			}
+		}
+		picture = GFX_evt_family_feud_republic
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				culture = dothraki
+				event_target:duel_round_loser = { culture = dothraki }
+			}
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_evt_dothraki_struggling
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				culture_group = iron_isles_culture
+				trait = wildling
+				has_character_flag = finger_dance_duel
+				event_target:duel_round_loser = { 
+					OR = {
+						culture_group = iron_isles_culture 
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_fingerdance
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = wildling
+				event_target:duel_round_loser = { 
+					trait = wildling
+				}
+			}
+		}
+		picture = GFX_evt_wildlings
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = knight
+				event_target:duel_round_loser = { trait = knight }
+			}
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_FLORENT
+	}
+	picture = {
+		trigger = { 
+			trait = knight
+			event_target:duel_round_loser = { trait = knight }
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_knights
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = giant
+				event_target:duel_round_loser = { trait = giant }
+			}
+		}
+		picture = GFX_evt_giants
+	}
+	
+	is_triggered_only = yes
+	show_from_from = yes
+	
+	immediate = {
+		event_target:duel_round_loser = { save_event_target_as = other_combatant }
+	}
+	
+	option = {
+		name = "EVTOPTADUEL115"
+		event_target:duel_round_loser = { 
+			character_event = { id = duel.116 } 
+		}
+	}
+}
+character_event = {
+	id = duel.116
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	desc = {
+		text = EVTDESCDUEL116
+		trigger = { 
+			NOT = { has_character_flag = finger_dance_duel }
+		}
+	}	
+	desc = {
+		text = EVTDESCraid_events.53
+		trigger = { 
+			has_character_flag = finger_dance_duel	
+		}
+	}
+	
+	#SELECT PICTURE
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			NOR = {
+				culture = dothraki
+				trait = wildling
+				FROM = {
+					OR = {
+						culture = dothraki
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_evt_the_trident
+	}
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+				has_character_flag = stealing_spearwife
+				has_character_flag = dothraki_wedding_duel_death
+			}
+		}
+		picture = GFX_evt_battle
+	}
+	picture = {
+		trigger = { 
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			NOR = {
+				culture = dothraki
+				trait = wildling
+				FROM = {
+					OR = {
+						culture = dothraki
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_evt_melee
+	}
+	picture = {
+		trigger = { 
+			has_character_flag = in_melee
+		}
+		picture = GFX_evt_melee
+	}
+	picture = {
+		trigger = { 
+			has_character_flag = in_melee
+		}
+		picture = GFX_evt_battle
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+			is_adult = no
+			FROM = { is_adult = no }
+		}
+		picture = GFX_evt_child_sword
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				has_character_flag = elected_champion
+				has_character_flag = demmanded_trial_by_combat
+				has_character_flag = champion_of_relative
+				has_character_flag = lunatic_trial
+				has_character_flag = duelist_regent
+				has_character_flag = duelist_courtier
+				has_character_flag = wikid_friendly_duel_player
+				has_character_flag = kingsmoot_duel
+				has_character_flag = tourney_duel_challenger
+				has_character_flag = tourney_duel_target
+				has_character_flag = WOL_focus_duel
+				has_character_flag = wol_lover_duel_accuser
+				has_character_flag = wol_lover_duel_lover
+				has_character_flag = friends_rivals_duel
+				has_character_flag = trial_by_seven_duel
+				has_character_flag = gbc_duel
+				has_character_flag = gbc_duel_rival
+			}
+		}
+		picture = GFX_evt_family_feud_republic
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				culture = dothraki
+				FROM = { culture = dothraki }
+			}
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_evt_dothraki_struggling
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				culture_group = iron_isles_culture
+				trait = wildling
+				has_character_flag = finger_dance_duel
+				FROM = {
+					OR = {
+						culture_group = iron_isles_culture 
+						trait = wildling
+					}	
+				}
+			}
+		}
+		picture = GFX_fingerdance
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = wildling
+				FROM = { 
+					trait = wildling
+				}
+			}
+		}
+		picture = GFX_evt_wildlings
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = knight
+				FROM = { trait = knight }
+			}
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_FLORENT
+	}
+	picture = {
+		trigger = { 
+			trait = knight
+			FROM = { trait = knight }
+			NOR = {
+				has_character_flag = mock_duel
+				has_character_flag = flag_duel_friendly
+			}
+		}
+		picture = GFX_knights
+	}
+	picture = {
+		trigger = { 
+			OR = {
+				trait = giant
+				FROM = { trait = giant }
+			}
+		}
+		picture = GFX_evt_giants
+	}
+	# fixed (duplicate with not defined EVTDESCDUEL116B)
+	#desc = {
+	#	text = "EVTDESCDUEL116"
+	#	trigger = { 
+	#		NOT = { has_character_flag = finger_dance_duel }
+	#	}
+	#}	
+	#desc = {
+	#	text = EVTDESCDUEL116B
+	#	trigger = { 
+	#		has_character_flag = finger_dance_duel	
+	#	}
+	#}
+	
+	immediate = {
+		FROM = { save_event_target_as = other_combatant }	
+		random = { #chance of evading injury
+			chance = 66
+			set_character_flag = evaded_injury
+		}	
+	}
+	
+	option = {
+		name = {
+			text = "EVTOPTADUEL116"
+		}	
+		name = {
+			text = "EVTOPTAraid_events.53"
+			trigger = { has_character_flag = finger_dance_duel }
+		}
+		if = {
+			limit = { has_character_flag = finger_dance }
+			prestige = 30
+		}
+		if = {
+			limit = { NOT = { has_character_flag = evaded_injury } }
+			apply_selected_duel_injury_effect = yes
+		}	
+		else = {
+			clr_character_flag = evaded_injury
+		}
+		event_target:duel_round_winner = { 
+			set_character_flag = duel_ended_in_draw
+			show_scope_change = no
+			character_event = { id = duel_output.1 tooltip = "EVTTOOLTIPDUEL116B" } 
+		}
+	}
+}
+
+### DEATH OUTCOMES
+character_event = {
+	id = duel.201
+	picture = GFX_evt_the_trident
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	show_from_from = yes
+	
+	desc = {
+		text = EVTDESCDUEL201
+		trigger = { 
+			NAND = { 
+				has_character_flag = flag_duel_friendly 
+				NOT = { has_character_flag = trial_by_seven_duel }
+			} 
+		}
+	}
+	
+	desc = {
+		text = EVTDESCDUEL201B
+		trigger = { 
+			has_character_flag = flag_duel_friendly 
+			NOT = { has_character_flag = trial_by_seven_duel }
+		}
+	}
+	
+	immediate = {
+		event_target:duel_round_loser = { save_event_target_as = other_combatant }
+		if = {
+			limit = {
+				has_nickname = no
+			}
+			if = {
+				limit = {
+					event_target:duel_round_loser = {
+						is_female = no
+						is_feudal_monarch_trigger = yes
+						NOT = { culture = dothraki }
+						NOT = { culture = jogos_nhai }
+						NOT = { culture_group = hyrkoon_group }
+						NOT = { culture_group = yi_ti_group }
+						NOT = { culture = qartheen }
+						NOT = { #Not eastern emperors
+							AND = {
+								tier = EMPEROR
+								NOT = {
+									OR = {
+										culture_group = andal
+										culture_group = dornish
+										culture_group = first_men
+										culture_group = free_folk
+										culture = summer_islander
+										primary_title = {
+											OR = {
+												capital_scope = { region = world_westeros }
+												title = e_iron_isles #These titles dont have capitals
+												title = e_riverlands
+												title = e_iron_throne
+											}
+										}
+									}
+								}	
+							}			
+						}						
+					}	
+					lower_tier_than = KING
+				}
+				random = {
+					chance = 50
+					set_character_flag = nick_the_kingslayer
+					break = yes
+				}
+			}
+			if = {
+				limit = {
+					event_target:duel_round_loser = {
+						dynasty = 190
+						OR = {
+							trait = master_warrior
+							higher_tier_than = DUKE
+						}
+					}	
+					NOT = { dynasty = 190 }
+				}
+				random = {
+					chance = 25
+					set_character_flag = nick_the_lionslayer
+					break = yes
+				}
+			}
+			if = {
+				limit = {
+					event_target:duel_round_loser = {
+						dynasty = 496
+						OR = {
+							trait = master_warrior
+							higher_tier_than = DUKE
+						}
+					}	
+					NOT = { dynasty = 496 }
+				}
+				random = {
+					chance = 25
+					FROM = { set_character_flag = nick_the_dragonslayer }
+					break = yes
+				}
+			}
+			if = {
+				limit = {
+					event_target:duel_round_loser = {
+						dynasty = 59
+						OR = {
+							trait = master_warrior
+							higher_tier_than = DUKE
+						}
+					}	
+					NOT = { dynasty = 59 }
+				}
+				random = {
+					chance = 25
+					FROM = { set_character_flag = nick_wolfsbane }
+					break = yes
+				}
+			}
+			if = {
+				limit = {
+					event_target:duel_round_loser = {
+						dynasty = 107
+						OR = {
+							trait = master_warrior
+							higher_tier_than = DUKE
+						}
+					}	
+					NOT = { dynasty = 107 }
+				}
+				random = {
+					chance = 25
+					FROM = { set_character_flag = nick_the_krakenslayer }
+					break = yes
+				}
+			}
+			if = {
+				limit = {
+					event_target:duel_round_loser = {
+						trait = giant
+					}	
+					NOT = { trait = giant }
+				}
+				random = {
+					chance = 50
+					FROM = { set_character_flag = nick_the_giantsslayer }
+					break = yes
+				}
+			}
+			if = {
+				limit = {
+					culture_group = dornish
+					intrigue = 14
+					trait = deceitful
+					NOT = { trait = honorable }
+					OR = {
+						trait = skilled_warrior
+						trait = master_warrior
+					}
+				}
+				random = {
+					chance = 2
+					FROM = { set_character_flag = nick_the_viper }
+					break = yes
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = {
+			text = "EVTOPTADUEL201"
+			trigger = {
+				NOT = { has_house_words_trigger = yes }
+				NAND = { 
+					has_character_flag = flag_duel_friendly 
+					NOT = { has_character_flag = trial_by_seven_duel }
+				}
+			}
+		}	
+		name = {
+			text = "EVTOPTGETHOUSEWORDS"
+			trigger = {
+				has_house_words_trigger = yes
+				NAND = { 
+					has_character_flag = flag_duel_friendly 
+					NOT = { has_character_flag = trial_by_seven_duel }
+				}
+			}
+		}
+		name = {
+			text = "EVTOPTADUEL201B"
+			trigger = {
+				has_character_flag = flag_duel_friendly
+				NOT = { has_character_flag = trial_by_seven_duel }
+			}
+		}	
+		if = {
+			limit = {
+				has_character_flag = nick_the_kingslayer
+			}
+			give_nickname = nick_the_kingslayer
+			clr_character_flag = nick_the_kingslayer
+		}
+		if = {
+			limit = {
+				 has_character_flag = nick_the_lionslayer
+			}
+			give_nickname = nick_the_lionslayer
+			clr_character_flag = nick_the_lionslayer
+		}
+		if = {
+			limit = {
+				 has_character_flag = nick_the_dragonslayer
+			}
+			give_nickname = nick_the_dragonslayer
+			clr_character_flag = nick_the_dragonslayer
+		}
+		if = {
+			limit = {
+				 has_character_flag = nick_wolfsbane
+			}
+			give_nickname = nick_wolfsbane
+			clr_character_flag = nick_wolfsbane
+		}
+		if = {
+			limit = {
+				 has_character_flag = nick_the_krakenslayer
+			}
+			give_nickname = nick_the_krakenslayer
+			clr_character_flag = nick_the_krakenslayer
+		}
+		if = {
+			limit = {
+				 has_character_flag = nick_the_giantsslayer
+			}
+			give_nickname = nick_the_giantsslayer
+			clr_character_flag = nick_the_giantsslayer
+		}
+		if = {
+			limit = {
+				 has_character_flag = nick_the_viper
+			}
+			give_nickname = nick_the_viper
+			clr_character_flag = nick_the_viper
+		}
+		event_target:duel_round_loser = { 
+			custom_tooltip = { text = EVTTOOLTIPDUEL202 }
+			#Wolfgang Pauli's vengeance CB modifiers knuckey: changed to something less drastic
+			if = {
+				limit = {
+					is_blood_relative_of_root_trigger = yes
+					ROOT = { 
+						is_any_kinslayer_trigger = no 
+						NOT = { trait = suspected_kinslayer }
+						NOT = { has_cutthroat_religion_trigger = yes }
+					}					
+				}
+				ROOT = { add_trait = suspected_kinslayer }
+			}
+			father = {
+				if = {
+					limit = {
+						is_alive = yes			
+					}
+					opinion = {
+						who = ROOT
+						modifier = opinion_slayed_kinsman
+					}
+				}	
+			}
+			mother = {
+				if = {
+					limit = {
+						is_alive = yes			
+					}
+					opinion = {
+						who = ROOT
+						modifier = opinion_slayed_kinsman
+					}
+				}	
+			}
+			any_child = {
+				limit = {
+					is_alive = yes
+					OR = {
+						NOT = { is_close_relative = ROOT }
+						opinion = { who = PREV value = 50 }
+					}			
+				}
+				opinion = {
+					who = ROOT
+					modifier = opinion_slayed_kinsman
+				}
+			}
+			any_spouse = {
+				limit = { 
+					opinion = { who = PREV value = -25 } 
+					OR = {
+						NOT = { is_close_relative = ROOT }
+						opinion = { who = PREV value = 50 }
+					}
+					NOT = { is_child_of = PREV }
+					NOT = { any_child = { character = PREVPREV } }
+				}
+				opinion = {
+					who = ROOT
+					modifier = opinion_slayed_kinsman
+				}
+			}
+			any_dynasty_member = {
+				limit = {
+					is_alive = yes
+					is_close_relative = PREV
+					OR = {
+						NOT = { is_close_relative = ROOT }
+						opinion = { who = PREV value = 50 }
+					}	
+					NOT = { is_child_of = PREV }
+					NOT = { any_child = { character = PREVPREV } }
+					NOT = { is_married = PREV }				
+				}
+				opinion = {
+					who = ROOT
+					modifier = opinion_slayed_kinsman
+				}
+			}
+			
+			any_friend = {
+				limit = { 
+					NOT = { is_married = PREV }	
+					OR = {
+						NOT = { dynasty = PREV }
+						NOT = { is_close_relative = PREV }
+					}
+					NOT = { is_child_of = PREV }
+					NOT = { any_child = { character = PREVPREV } }
+					NOT = { is_married = PREV }	
+				}
+				opinion = {
+					who = ROOT
+					modifier = opinion_slayed_kinsman
+				}
+			}
+			hidden_tooltip = { character_event = { id = duel.202 tooltip = "EVTTOOLTIPDUEL202" } } 
+		}
+	}
+}
+
+character_event = {
+	id = duel.202
+	picture = GFX_evt_death
+	
+	is_triggered_only = yes
+	
+	desc = {
+		text = EVTDESCDUEL202
+		trigger = { 
+			NAND = { 
+				has_character_flag = flag_duel_friendly 
+				NOT = { has_character_flag = trial_by_seven_duel }
+			}
+		}
+	}
+	desc = {
+		text = EVTDESCDUEL202B
+		trigger = { 
+			has_character_flag = flag_duel_friendly 
+			NOT = { has_character_flag = trial_by_seven_duel }
+		}
+	}
+	
+	immediate = {
+		FROM = { save_event_target_as = other_combatant }
+		#Check if Rhllor saves character
+		if = {
+			limit = { 
+				religion = rhllor 
+				OR = {
+					trait = resurrected_by_rhllor
+					AND = {
+						OR = { 	
+							trait = favored_by_rhllor
+							trait = chosen_by_rhllor				
+						}
+						OR = {
+							check_variable = { which = "red_god_magic" value = 10 }
+							magic_returned_trigger = yes
+						}
+					}
+				}	
+			}
+			random = {
+				chance = 10
+				modifier = {
+					factor = 2
+					trait = resurrected_by_rhllor
+				}
+				modifier = {
+					factor = 2
+					trait = chosen_by_rhllor
+				}
+				modifier = {
+					factor = 2
+					magic_returned_trigger = yes
+				}
+				modifier = {
+					factor = 1.33
+					check_variable = { which = "red_god_magic" value = 1 }
+				}
+				modifier = {
+					factor = 1.5
+					check_variable = { which = "red_god_magic" value = 5 }
+				}
+				set_character_flag = rhllor_resurrected
+			}
+		}
+		#Check if maester saves character
+		if = {
+			limit = {
+				has_character_flag = necromancy_target
+				magic_returned_trigger = yes
+				NOT = { has_character_flag = rhllor_resurrected }
+				persistent_event_target:necromancer = {
+					has_character_modifier = necromancer_maester
+					is_alive = yes
+					prisoner = no
+					is_incapable = no
+					OR = {
+						at_location = PREV
+						NOT = { is_inaccessible_trigger = yes }
+					}
+				}
+			}
+			set_character_flag = maester_resurrected
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = { has_character_flag = rhllor_resurrected }
+			NOT = { has_character_flag = maester_resurrected }
+		}
+		name = {
+			text = "EVTOPTADUEL202"
+			trigger = {
+				NAND = { 
+					has_character_flag = flag_duel_friendly 
+					NOT = { has_character_flag = trial_by_seven_duel }
+				}
+			}
+		}
+		name = {
+			text = "EVTOPTADUEL202B"
+			trigger = {
+				has_character_flag = flag_duel_friendly 
+				NOT = { has_character_flag = trial_by_seven_duel }
+			}
+		}
+		apply_selected_duel_injury_effect = yes
+		tooltip = {
+			death = {
+				death_reason = death_duel
+				killer = event_target:duel_round_winner
+			}
+		}	
+		hidden_tooltip = {
+			if = {
+				limit = { 
+					has_character_flag = trial_by_seven_duel
+				}
+				death = {
+					death_reason = death_duel_trial_by_seven
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			if = {
+				limit = { 
+					OR = {
+						has_character_flag = flag_battlefield_duel
+						event_target:duel_round_winner = { has_character_flag = bloodrider_revenge_duel }
+						has_character_flag = clansmen_hunt_duel
+						has_character_flag = wikid_player_vs_pirate
+						has_character_flag = wikid_pirate_vs_player	
+						has_character_flag = wikid_pirate_vs_companion
+						has_character_flag = wikid_companion_vs_pirate
+						has_character_flag = reaving_sword_fight_target
+					}	
+				}
+				hidden_tooltip = { #Inform relevent player
+					any_player = {
+						limit = {
+							OR = {
+								any_current_enemy = { character = ROOT }
+								is_liege_or_above = ROOT
+								is_liege_of = ROOT
+								dynasty = ROOT
+								is_close_relative = ROOT
+								is_married = ROOT
+								is_friend = ROOT
+								is_rival = ROOT
+								is_lover = ROOT
+								is_allied_with = ROOT
+								has_opinion_modifier = { who = ROOT modifier = opinion_de_facto_liege }	
+								has_opinion_modifier = { who = ROOT modifier = opinion_with_rebel_leader }
+							}
+							NOT = { character = ROOT }
+							NOT = { character = event_target:duel_round_winner }
+						}
+						character_event = { id = battle.12 }
+					}
+				}
+				death = {
+					death_reason = death_duel_battle
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			if = {
+				limit = { 
+					OR = {
+						has_character_flag = elected_champion
+						has_character_flag = self_elected_champion
+						has_character_flag = self_elected_champion_b
+						has_character_flag = demmanded_trial_by_combat
+						has_character_flag = champion_of_relative
+					}
+				}
+				death = {
+					death_reason = death_duel_trial_by_combat
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			if = {
+				limit = { 
+					OR = {
+						has_character_flag = reaving_duel
+						has_character_flag = reaving_sword_fight
+						has_character_flag = clansmen_hunt_duel_target
+						has_character_flag = stealing_spearwife
+					}	
+				}
+				death = {
+					death_reason = death_battle_raiding
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			if = {
+				limit = { 
+					OR = {
+						has_character_flag = wikid_betrayal_companion
+						has_character_flag = wikid_betrayal_player
+						has_character_flag = tourney_duel_challenger
+						has_character_flag = tourney_duel_target
+						has_character_flag = WOL_focus_duel
+						has_character_flag = wol_lover_duel_accuser
+						has_character_flag = wol_lover_duel_lover
+						has_character_flag = friends_rivals_duel
+						has_character_flag = laughing_storm_duel
+					}	
+				}
+				death = {
+					death_reason = death_duel_honour
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			
+			if = {
+				limit = { 
+					OR = {
+						has_character_flag = duelist_regent
+						has_character_flag = duelist_courtier
+					}	
+				}
+				death = {
+					death_reason = death_duel_regency
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			if = {
+				limit = { 
+					OR = {
+						has_character_flag = rogue_kg_vs_KG
+						has_character_flag = rogue_kg_vs_KING
+					}	
+				}
+				death = {
+					death_reason = death_duel_rogue_kg
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			if = {
+				limit = { 
+					OR = {
+						has_character_flag = KG_vs_rogue_kg
+						has_character_flag = KING_vs_rogue_kg
+					}	
+				}
+				death = {
+					death_reason = death_duel_vs_rogue_kg
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			if = {
+				limit = { 
+					has_character_flag = kingsmoot_duel
+				}
+				death = {
+					death_reason = death_duel_kingsmoot
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			if = {
+				limit = { 
+					has_character_flag = bloodrider_revenge_duel
+				}
+				death = {
+					death_reason = death_battle_bloodrider
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			if = {
+				limit = { 
+					has_character_flag = in_melee
+				}
+				death = {
+					death_reason = death_duel_melee
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			if = {
+				limit = { 
+					has_character_flag = is_legendary_duel
+				}
+				death = {
+					death_reason = death_legendary_fail_duel #you died trying...
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			if = {
+				limit = { 
+					event_target:duel_round_winner = { has_character_flag = is_legendary_duel }
+				}
+				death = {
+					death_reason = death_legendary_win_duel #you successfully killed someone on your hunt for glory!
+					killer = event_target:duel_round_winner
+				}
+				break = yes
+			}
+			death = {
+				death_reason = death_duel
+				killer = event_target:duel_round_winner
+			}
+		}		
+		event_target:duel_round_winner = { 
+			custom_tooltip = {
+				text = "EVTTOOLTIPDUELOUTPUT1"
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTBred_priest.10"
+		trigger = {
+			has_character_flag = rhllor_resurrected
+		}
+		character_event = { id = red_priest.38 tooltip = CUSTOMTOOLTIPrhllor_saved_me }
+		clr_character_flag = rhllor_resurrected
+		
+		event_target:duel_round_winner = { 
+			custom_tooltip = {
+				text = "EVTTOOLTIPDUELOUTPUT1"
+				hidden_tooltip = { 
+					character_event = { id = duel.204 days = 1 }
+				}
+			}
+		}		
+	}
+	option = {
+		name = "EVTOPTmaester_resurrected"
+		trigger = {
+			has_character_flag = maester_resurrected
+		}
+		character_event = { id = maester.105 tooltip = CUSTOMTOOLTIPmaester_saved_me }
+		clr_character_flag = maester_resurrected
+		
+		event_target:duel_round_winner = { 
+			custom_tooltip = {
+				text = "EVTTOOLTIPDUELOUTPUT1"
+				hidden_tooltip = { 
+					character_event = { id = duel.204 days = 1 }
+				}
+			}
+		}	
+	}	
+	after = {
+		hidden_tooltip = {
+			event_target:duel_round_winner = { 
+				character_event = { id = duel_output.1 tooltip = "EVTTOOLTIPDUELOUTPUT1" }
+			}				
+		}
+	}
+}
+
+# character_event = {
+	# id = duel.203
+	# desc = "EVTDESCDUEL203"
+	# picture = GFX_evt_kingslayer
+	# border = "GFX_event_normal_frame_war"
+	
+	# is_triggered_only = yes
+	
+	
+	
+	# option = {
+		# name = "EVTOPTADUEL203"
+			
+	# }
+# }
+#Inform opponnent of rhllor protection
+character_event = {
+	id = duel.204
+	desc = "EVTDESCDUEL204"
+	picture = GFX_evt_the_trident
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTADUEL204
+	}
+}
+#Opponent subsequently died from discovered poison
+character_event = {
+	id = duel.210
+	desc = "EVTDESCDUEL210"
+	picture = GFX_evt_scandal
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = {
+			is_alive = no
+			death_reason = death_trait
+			is_ill = yes
+		}
+	}
+	
+	immediate = { 
+		FROM = { 
+			save_event_target_as = kinslayer_target
+		} 		
+	}
+	
+	option = {
+		name = EVTOPTADUEL210
+		tooltip = {
+			if = {
+				limit = { NOT = { has_cutthroat_religion_trigger = yes } }
+				change_variable = { which = "dishonorable" value = 10 } 
+			}	
+			add_kinslayer_trait_effect = yes
+		}
+		FROM = { 
+			death = { death_reason = death_duel_poison killer = ROOT } #change death reason
+			save_event_target_as = target_victim 
+			ROOT = {				
+				set_character_flag = murder_event_override
+				if = { #doesnt grant this modifier
+					limit = { NOT = { has_character_modifier = known_murderer } }
+					set_character_flag = remove_known_murderer
+				}
+				character_event = { id = 10 } #murder consequences
+				if = { #doesnt grant this modifier
+					limit = { has_character_flag = remove_known_murderer }
+					remove_character_modifier = known_murderer
+					clr_character_flag = remove_known_murderer
+				}
+			}
+			clear_event_target = target_victim 
+		}	
+		hidden_tooltip = { #Inform others
+			any_player = {
+				limit = {
+					NOT = { character = ROOT }
+					OR = {
+						is_close_relative = ROOT
+						dynasty = ROOT
+						is_married = ROOT
+						is_liege_or_above = ROOT
+						same_liege = ROOT
+						is_liege_of = ROOT
+						is_rival = ROOT
+						is_friend = ROOT
+						is_lover = ROOT
+						
+						is_close_relative = FROM
+						dynasty = FROM
+						is_married = FROM
+						is_liege_or_above = FROM
+						same_liege = FROM
+						is_liege_of = FROM
+						is_rival = FROM
+						is_friend = FROM
+						is_lover = FROM
+					}
+				}
+				character_event = { id = duel.211 }
+			}
+		}
+	}
+}
+character_event = {
+	id = duel.211
+	desc = "EVTDESCDUEL211"
+	picture = GFX_evt_scandal
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTADUEL211
+		show_portrait = FROMFROM
+		FROM = {
+			tooltip = {
+				change_variable = { which = "dishonorable" value = 10 } 
+			}
+		}	
+	}
+}	
