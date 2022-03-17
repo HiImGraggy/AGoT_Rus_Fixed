@@ -4443,10 +4443,11 @@
 
 	father=300197
 
-	add_trait="redrain"
+	#add_trait="redrain" # fixed
 
 	7831.1.1 = {birth="7831.1.1"}
 	7847.1.1 = {add_trait=knight add_trait=trained_warrior}
+	7852.1.1 = {add_trait="redrain"} # fixed
 	7903.1.1 = {death="7903.1.1"}
 }
 309197 = {
@@ -4528,10 +4529,11 @@
 
 	father=301197
 
-	add_trait="redrain"
+	#add_trait="redrain" # fixed
 
 	7863.1.1 = {birth="7863.1.1"}
 	7879.1.1 = {add_trait=knight add_trait=trained_warrior}
+	7903.1.1 = {add_trait="redrain"} # fixed
 	7907.1.1 = {death = {death_reason = death_accident}}
 }
 307197 = {
@@ -4543,10 +4545,11 @@
 
 	father=305197
 
-	add_trait="redrain"
+	#add_trait="redrain" # fixed
 
 	7889.1.1 = {birth="7889.1.1"}
 	7905.1.1 = {add_trait=knight add_trait=poor_warrior}
+	7907.1.1 = {add_trait="redrain"} # fixed
 	7956.1.1 = {death="7956.1.1"}
 }
 302197 = {		
@@ -4576,10 +4579,11 @@
 
 	father=307197
 
-	add_trait="redrain"
+	#add_trait="redrain" # fixed
 
 	7927.1.1 = {birth="7927.1.1"}
 	7943.1.1 = {add_trait=knight add_trait=skilled_warrior}
+	7956.1.1 = {add_trait="redrain"} # fixed
 	7960.1.1 = {add_spouse=312197}
 	7981.1.1 = {death="7981.1.1"}
 }
@@ -4597,10 +4601,11 @@
 
     	add_trait="proud"
 	add_trait="patient"
-	add_trait="redrain"
+	#add_trait="redrain" # fixed
 
 	7963.1.1 = {birth="7963.1.1"}
 	7979.1.1 = {add_trait="tough_soldier" add_trait=knight add_trait=skilled_warrior}
+	7981.1.1 = {add_trait="redrain"} # fixed
 	7990.1.1 = {death = {death_reason = death_battle killer=6000121}} #Hilmar Drumm
 }
 150197 = {		
