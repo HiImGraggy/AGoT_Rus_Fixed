@@ -3795,3 +3795,141 @@ defined_text = {
 		localisation_key = GetSwordName_Woe
 	}
 }
+
+#######################################################
+
+#Родительный (или винительный) падеж названия тайного общества
+defined_text = {
+	name = GetSocietyNameGEN # Returns the name of target's society
+	use_first_valid = yes
+# Vanilla overridden societies
+	text = {
+		localisation_key = hermeticsGEN
+		trigger = { society_member_of = hermetics }
+	}
+	text = {
+		localisation_key = the_satanistsGEN
+		trigger = { society_member_of = the_satanists }
+	}
+	text = {
+		localisation_key = the_trollcraftersGEN
+		trigger = { society_member_of = the_trollcrafters }
+	}
+	text = {
+		localisation_key = the_cult_of_kaliGEN
+		trigger = { society_member_of = the_cult_of_kali }
+	}
+	text = {
+		localisation_key = the_cold_onesGEN
+		trigger = { society_member_of = the_cold_ones }
+	}
+	text = {
+		localisation_key = the_plaguebringersGEN
+		trigger = { society_member_of = the_plaguebringers }
+	}
+	text = {
+		localisation_key = warrior_lodge_norseGEN
+		trigger = { society_member_of = warrior_lodge_norse }
+	}
+	text = {
+		localisation_key = warrior_lodge_tengriGEN
+		trigger = { society_member_of = warrior_lodge_tengri }
+	}
+	text = {
+		localisation_key = warrior_lodge_finnishGEN
+		trigger = { society_member_of = warrior_lodge_finnish }
+	}
+	text = {
+		localisation_key = warrior_lodge_bonGEN
+		trigger = { society_member_of = warrior_lodge_bon }
+	}
+# AGoT societies
+	text = {
+		localisation_key = alchemists_guildGEN
+		trigger = { society_member_of = alchemists_guild }
+	}
+	text = {
+		localisation_key = iron_bankGEN
+		trigger = { society_member_of = iron_bank }
+	}
+	text = {
+		localisation_key = rogare_bankGEN
+		trigger = { society_member_of = rogare_bank }
+	}
+	text = {
+		localisation_key = qarth_bankGEN
+		trigger = { society_member_of = qarth_bank }
+	}
+	text = {
+		localisation_key = valyria_bankGEN
+		trigger = { society_member_of = valyria_bank }
+	}
+}
+
+#Дательный падеж названия тайного общества
+defined_text = {
+	name = GetSocietyNameDAT # Returns the name of target's society
+	use_first_valid = yes
+# Vanilla overridden societies
+	text = {
+		localisation_key = hermeticsDAT
+		trigger = { society_member_of = hermetics }
+	}
+	text = {
+		localisation_key = the_satanistsDAT
+		trigger = { society_member_of = the_satanists }
+	}
+	text = {
+		localisation_key = the_trollcraftersDAT
+		trigger = { society_member_of = the_trollcrafters }
+	}
+	text = {
+		localisation_key = the_cult_of_kaliDAT
+		trigger = { society_member_of = the_cult_of_kali }
+	}
+	text = {
+		localisation_key = the_cold_onesDAT
+		trigger = { society_member_of = the_cold_ones }
+	}
+	text = {
+		localisation_key = the_plaguebringersDAT
+		trigger = { society_member_of = the_plaguebringers }
+	}
+	text = {
+		localisation_key = warrior_lodge_norseDAT
+		trigger = { society_member_of = warrior_lodge_norse }
+	}
+	text = {
+		localisation_key = warrior_lodge_tengriDAT
+		trigger = { society_member_of = warrior_lodge_tengri }
+	}
+	text = {
+		localisation_key = warrior_lodge_finnishDAT
+		trigger = { society_member_of = warrior_lodge_finnish }
+	}
+	text = {
+		localisation_key = warrior_lodge_bonDAT
+		trigger = { society_member_of = warrior_lodge_bon }
+	}
+# AGoT societies
+	text = {
+		localisation_key = alchemists_guildDAT
+		trigger = { society_member_of = alchemists_guild }
+	}
+	text = {
+		localisation_key = iron_bankDAT
+		trigger = { society_member_of = iron_bank }
+	}
+	text = {
+		localisation_key = rogare_bankDAT
+		trigger = { society_member_of = rogare_bank }
+	}
+	text = {
+		localisation_key = qarth_bankDAT
+		trigger = { society_member_of = qarth_bank }
+	}
+	text = {
+		localisation_key = valyria_bankDAT
+		trigger = { society_member_of = valyria_bank }
+	}
+}
