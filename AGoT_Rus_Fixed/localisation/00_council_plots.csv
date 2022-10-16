@@ -1,84 +1,84 @@
-#CODE;ENGLISH;x;;;
-plot_replace_castellan_title;[Root.GetTitledFirstNameWithDynasty] долж[Root.GetNaEn] уйти с поста [From.Liege.GetMyCastellanName];x;;;
-plot_replace_castellan_desc;[From.GetTitledFirstNameWithDynasty] считает, что [From.GetSheHe] будет лучше служить как [Root.GetJobTitle], чем [Root.GetTitledFirstNameWithDynasty];x;;;
-plot_replace_chancellor_title;[Root.GetTitledFirstNameWithDynasty] долж[Root.GetNaEn] уйти с поста [From.Liege.GetMyChancellorName];x;;;
-plot_replace_chancellor_desc;[From.GetTitledFirstNameWithDynasty] считает, что [From.GetSheHe] будет лучше служить как [Root.GetJobTitle], чем [Root.GetTitledFirstNameWithDynasty];x;;;
-plot_replace_marshal_title;[Root.GetTitledFirstNameWithDynasty] долж[Root.GetNaEn] уйти с поста [From.Liege.GetMyMarshalName];x;;;
-plot_replace_marshal_desc;[From.GetTitledFirstNameWithDynasty] считает, что [From.GetSheHe] будет лучше служить как [Root.GetJobTitle], чем [Root.GetTitledFirstNameWithDynasty];x;;;
-plot_replace_treasurer_title;[Root.GetTitledFirstNameWithDynasty] долж[Root.GetNaEn] уйти с поста [From.Liege.GetMyTreasurerName];x;;;
-plot_replace_treasurer_desc;[From.GetTitledFirstNameWithDynasty] считает, что [From.GetSheHe] будет лучше служить как [Root.GetJobTitle], чем [Root.GetTitledFirstNameWithDynasty];x;;;
-plot_replace_spymaster_title;[Root.GetTitledFirstNameWithDynasty] долж[Root.GetNaEn] уйти с поста [From.Liege.GetMySpymasterName];x;;;
-plot_replace_spymaster_desc;[From.GetTitledFirstNameWithDynasty] считает, что [From.GetSheHe] будет лучше служить как [Root.GetJobTitle], чем [Root.GetTitledFirstNameWithDynasty];x;;;
-plot_replace_councillor_title;[Root.GetTitledFirstNameWithDynasty] долж[Root.GetNaEn] уйти с поста Советника;x;;;
-plot_replace_councillor_desc;[From.GetTitledFirstNameWithDynasty] считает, что [From.GetSheHe] будет лучшим Советником, чем [Root.GetTitledFirstNameWithDynasty];x;;;
-opinion_council_sponsor;Поддерживает мое членство в Совете;x;;;
-opinion_former_council_sponsor;Поддерживал[_] мое членство в Совете;x;;;
-opinion_rival_council_candidate;Претендует на моё место в Совете;x;;;
-opinion_rival_council_sponsor;Поддерживал[_] конкурента на мое место в Совете;x;;;
-opinion_rejected_council_candidate;Отказал[_] моему кандидату в месте на Совете;x;;;
-opinion_approved_council_candidate;Принял[_] моего кандидата в Совет;x;;;
-opinion_replaced_council_candidate;Несправедливо уволил[_] члена Совета;x;;;
-opinion_rejected_rival_council_candidate;Поддержал[_] моего кандидата в Совет;x;;;
-opinion_sponsor_betrayed_me;Не поддержал[_] моего кандидата в Совет;x;;;
-REGENT_DEMAND;Ваш регент заставил вас принять это решение.\n;x;;;
-CONFIRM_PLOT;Вы уже согласились принять это решение.\n;x;;;
-plot_replace_councillor_decision;Требовать должность [Root.PlotTarget.GetJobTitle] в Совете;x;;;
-plot_replace_councillor_decision_desc;Настало время потребовать, чтобы [Root.Liege.GetTitle] [Root.Liege.GetFirstName] назначил[Root.Liege.GetEndA] вас своим советником на должность [Root.PlotTarget.GetJobTitle].;x;;;
-plot_replace_castellan_decision;Потребовать должность [Root.PlotTarget.GetJobTitle];x;;;
-plot_replace_castellan_decision_desc;Настало время потребовать, чтобы [Root.Liege.GetTitle] [Root.Liege.GetFirstName] назначил[Root.Liege.GetEndA] вас своим советником на должность [Root.PlotTarget.GetJobTitle].;x;;;
-plot_replace_chancellor_decision;Потребовать должность [Root.PlotTarget.GetJobTitle];x;;;
-plot_replace_chancellor_decision_desc;Настало время потребовать, чтобы [Root.Liege.GetTitle] [Root.Liege.GetFirstName] назначил[Root.Liege.GetEndA] вас своим советником на должность [Root.PlotTarget.GetJobTitle].;x;;;
-plot_replace_marshal_decision;Потребовать должность [Root.PlotTarget.GetJobTitle];x;;;
-plot_replace_marshal_decision_desc;Настало время потребовать, чтобы [Root.Liege.GetTitle] [Root.Liege.GetFirstName] назначил[Root.Liege.GetEndA] вас своим советником на должность [Root.PlotTarget.GetJobTitle].;x;;;
-plot_replace_treasurer_decision;Потребовать должность [Root.PlotTarget.GetJobTitle];x;;;
-plot_replace_treasurer_decision_desc;Настало время потребовать, чтобы [Root.Liege.GetTitle] [Root.Liege.GetFirstName] назначил[Root.Liege.GetEndA] вас своим советником на должность [Root.PlotTarget.GetJobTitle].;x;;;
-plot_replace_spymaster_decision;Потребовать должность [Root.PlotTarget.GetJobTitle];x;;;
-plot_replace_spymaster_decision_desc;Настало время потребовать, чтобы [Root.Liege.GetTitle] [Root.Liege.GetFirstName] назначил[Root.Liege.GetEndA] вас своим советником на должность [Root.PlotTarget.GetJobTitle].;x;;;
-EVTTOOLTIPCOUNCILPLOT1;[This.GetTitledFirstName] рассмотрит ваше требование;x;;;
-EVTTOOLTIPCOUNCILPLOT1B;[This.GetLordLady]-Регент, [This.GetTitledFirstNameWithDynastyNoRegnal], рассмотрит ваше требование;x;;;
-EVTDESCCOUNCILPLOT1;[Root.PrimaryTitle.GetFOA],\nЯ уже достаточно долго наблюдаю как бездарно работает [FromFrom.PlotTarget.GetJobTitle], [FromFrom.PlotTarget.GetTitledFirstName], котор[FromFrom.PlotTarget.GetAyaYy] позорит своими выходками всё наше королевство. Я и мои сторонники просим, чтобы вы уволили [FromFrom.PlotTarget.GetHerHis] из Совета и назначили меня на освободившееся место.\nПодпись,\n[[FromFrom.GetTitledFirstNameoftheHouse];x;;;
-EVTOPTACOUNCILPLOT1;Согласиться;x;;;
-EVTOPTBCOUNCILPLOT1;Отказать;x;;;
-EVTDESCCOUNCILPLOT2;[Root.GetTitledFirstName],\nВаши требования справедливы. Вы получите пост [Root.GetJobTitle] в Совете земли [FromFrom.PrimaryTitle.GetName].\nПодпись,\n[From.GetTitledFirstNameoftheHouse];x;;;
-EVTOPTACOUNCILPLOT2;Я знал[GetEndA], что [From.GetSheHe] согласится!;x;;;
-EVTDESCCOUNCILPLOT3;С вашей помощью, [FromFromFrom.GetTitledFirstNameWithDynasty] убедил[FromFromFrom.GetEndA] персонажа  [From.GetTitledFirstName] назначить [FromFromFrom.GetHerHis] в совет земли [FromFrom.PrimaryTitle.GetName] на должность [FromFromFrom.GetJobTitle].;x;;;
-EVTOPTACOUNCILPLOT3;Отличный выбор.;x;;;
-EVTDESCCOUNCILPLOT4;[Root.GetTitledFirstName],\nБлагодарю вас за годы верной службы, но, боюсь, настало время вам сложить свои полномочия. Сим оглашаю, что [FromFromFrom.GetTitledFirstNameWithDynasty] отныне займёт должность [FromFromFrom.GetJobTitle].\nПодпись,\n[From.GetTitledFirstNameoftheHouse];x;;;
-EVTOPTACOUNCILPLOT4;Как [From.GetSheHe] смеет!;x;;;
-EVTDESCCOUNCILPLOT5;Благодаря заговору, которые возглавляет [FromFromFrom.GetTitledFirstNameWithDynasty], [From.GetTitledFirstName] предал ваше доверие и уволил советника, известного как [FromFromFrom.PlotTarget.GetTitledFirstName] [FromFromFrom.PlotTarget.GetOnlyDynastyName] со своего совета и должности [FromFromFrom.PlotTarget.GetJobTitle]!;x;;;
-EVTOPTACOUNCILPLOT5;Это возмутительно!;x;;;
-EVTDESCCOUNCILPLOT6;[Root.GetTitledFirstName],\nБоюсь, я долж[From.GetNaEn] отказать вашему требованию. [Root.PlotTarget.GetTitledFirstName] [FromFromFrom.PlotTarget.GetOnlyDynastyName] служил[FromFromFrom.PlotTarget.GetEndA] мне верой и правдой и будет служить далее. Не просите меня об этом снова.\nПодпись,\n[From.GetTitledFirstNameoftheHouse];x;;;
-EVTOPTACOUNCILPLOT6;Упрям[_ый] кретин[__]!;x;;;
-EVTDESCCOUNCILPLOT7;Несмотря на ваш совет, [From.GetTitledFirstName] отказа[From.GetLasLsya] внять гласу разума. [FromFromFrom.GetTitledFirstNameWithDynasty] не будет назначен[FromFromFrom.GetEndA] как [From.GetHerHis] [FromFromFrom.PlotTarget.GetJobTitle]!;x;;;
-EVTOPTACOUNCILPLOT7;Упрям[_ый] кретин[__]!;x;;;
-EVTDESCCOUNCILPLOT8;[Root.GetTitledFirstName],\nКак вы несомненно слышали, [FromFromFrom.GetTitledFirstNameWithDynasty] пыта[FromFromFrom.GetLasLsya] организовать заговор, дабы сместить вас с должности [Root.GetJobTitle]. Я, разумеется, отверг[From.GetNoneE] [FromFromFrom.GetHerHis] абсурдные требования.\nПодпись,\n[From.GetTitledFirstNameoftheHouse];x;;;
-EVTOPTACOUNCILPLOT8;Мудрое решение, [From.PrimaryTitle.GetFOA];x;;;
-EVTDESCCOUNCILPLOT9;Измена! Гнусные заговорщики, которых возглавлял[FromFromFrom.GetEndA] [FromFromFrom.GetTitledFirstNameWithDynasty] пытались сместить советника, известного как [FromFromFrom.PlotTarget.GetTitledFirstName] [FromFromFrom.PlotTarget.GetOnlyDynastyName] с [From.GetHerHis] поста [FromFromFrom.PlotTarget.GetJobTitle]. К счастью, [From.GetTitledFirstName] был[From.GetEndA] достаточно мудр[From.GetEndA], чтобы не поддаться их уговорам и [FromFromFrom.PlotTarget.GetSheHe] останется в Совете.;x;;;
-EVTOPTACOUNCILPLOT9;Отлично, [From.PrimaryTitle.GetFOA].;x;;;
-EVTDESCCOUNCILPLOT10;[From.GetLordLady]-Регент [From.GetTitledFirstNameWithDynastyNoRegnal] назначил[From.GetEndA] нового человека в совет. [From.GetSheHeCap] ознакоми[From.GetLasLsya] с просьбой и согласи[From.GetLasLsya], чтобы [FromFromFrom.GetTitledFirstName] вош[FromFromFrom.GetLaYol] в [FromFromFrom.GetHerHis] совет как [FromFromFrom.PlotTarget.GetJobTitle]. А [FromFromFrom.PlotTarget.GetTitledFirstName] будет смещен[FromFromFrom.PlotTarget.GetEndA].;x;;;
-EVTOPTACOUNCILPLOT10;Я уверен[GetEndA], [From.GetSheHe] знает, что делает;x;;;
-EVTTOOLTIPCOUNCILPLOT11;рассматривает ваше требование;x;;;
-EVTDESCCOUNCILPLOT50;Вы изменили мнение о том, кто лучше всего подходит на данное место в Совете.;x;;;
-EVTOPTACOUNCILPLOT50;На место старых придут новые.;x;;;
-EVTDESCCOUNCILPLOT51;Слухи при дворе повествуют о том, что [From.GetTitledFirstName] предал[From.GetEndA] вас. Говорят, [From.GetSheHe] возглавляет заговор, дабы отнять ваш пост при Совете!;x;;;
-EVTOPTACOUNCILPLOT51;Предатели!;x;;;
-EVTDESCCOUNCILPLOT52;Ваш близкий друг [councillor_friend.GetTitledFirstNameNoRegnal] [councillor_friend.GetOnlyDynastyName] служит в Совете у правителя [Root.Liege.GetTitledFirstName]. Это замечательный пост для н[councillor_friend.GetHerHis].;x;;;
-EVTOPTACOUNCILPLOT52;Действительно, никто не справится лучше!;x;;;
-EVTDESCCOUNCILPLOT53;Ваш друг [From.GetTitledFirstName] восхищался вашей верной службой у правителя [Root.Liege.GetTitledFirstName].;x;;;
-EVTOPTACOUNCILPLOT53;Приятно, что кто-то меня ценит.;x;;;
-EVTDESCCOUNCILPLOT54;[From.GetTitledFirstNameWithDynasty] покинул[From.GetEndA] Совет, и это увольнение возмутило тех, кто поддерживал [From.GetHerHis] членство.;x;;;
-EVTOPTACOUNCILPLOT54;Меня не волнует, что они думают;x;;;
-EVTDESCCOUNCILPLOT55;[FromFrom.GetTitledFirstNameWithDynasty], [FromFrom.GetManWoman]а котор[FromFrom.GetUyuOgo] вы поддерживали, был[FromFrom.GetEndA] уволен[FromFrom.GetEndA] из совета персонажа [From.GetTitledFirstNameNoRegnal]!;x;;;
-EVTOPTACOUNCILPLOT55;Я недовол[GetSoftNaEn] этим решением;x;;;
-EVTOPTBCOUNCILPLOT4;[GetRootFromFromFromInsult] заплатит за это!;x;;;
-EVTOPTBCOUNCILPLOT6;Я не забуду участие персонажа [Root.PlotTarget.GetTitledFirstNameWithDynasty] в этом!;x;;;
-EVTDESCCOUNCILPLOT11;[From.GetTitledFirstNameWithDynasty] был[From.GetEndA] крайне недовол[From.GetSoftNaEn] и расстроен[From.GetEndA] увольнением из совета и заменой [From.GetHerHis] мною, и открыто сказал[From.GetEndA] мне, что [From.GetSheHe] отплатит мне за подобное оскорбление.;x;;;
-EVTOPTACOUNCILPLOT11;Нужно не забывать про бдительность;x;;;
-EVTDESCCOUNCILPLOT12;[From.GetTitledFirstNameWithDynasty] был[From.GetEndA] заслуженно смещен[From.GetEndA] с должности в пользу меня, и [From.GetSheHe] принял это как личное оскорбление. [From.GetSheHeCap] открыто выражает недовольство мною, и я готов[GetEndA] ему ответить.;x;;;
-EVTOPTACOUNCILPLOT12;[GetRootFromInsult] заставляет меня смеяться;x;;;
-failed_council_petition;Петиция отклонена;x;;;
-EVTDESCCOUNCILPLOT60;Ваш [Root.GetMySpymasterName] [Root.job_spymaster.GetTitledFirstNameNoRegnal] попросил[Root.job_spymaster.GetEndA] встречи. '[Root.PrimaryTitle.GetFOA], - начал[Root.job_spymaster.GetEndA] [Root.job_spymaster.GetSheHe], - Я понимаю ваши амбиции. Может быть, разумно будет Вам начать интригу против персонажа [target_councillor.GetTitledFirstNameWithDynastyNoRegnal], так Вы сможете исполнить желание.';x;;;
-EVTOPTACOUNCILPLOT60;Спасибо за ваши советы, можете оставить меня;x;;;
-plot_replace_councillor_decisionA;Любой сторонник заговора находится при дворе правителя [Root.Liege.GetBestName];x;;;
-plot_replace_councillor_decisionB;;x;;;
-plot_replace_councillor_decisionC;Входит в тройку самых мощных вассалов правителя [Root.Liege.GetBestName];x;;;
+#CODE;ENGLISH;x
+plot_replace_castellan_title;[Root.GetTitledFirstNameWithDynasty] долж[Root.GetNaEn] уйти с поста [From.Liege.GetMyCastellanName];x
+plot_replace_castellan_desc;[From.GetTitledFirstNameWithDynasty] считает, что [From.GetSheHe] будет лучше служить как [Root.GetJobTitle], чем [Root.GetTitledFirstNameWithDynasty];x
+plot_replace_chancellor_title;[Root.GetTitledFirstNameWithDynasty] долж[Root.GetNaEn] уйти с поста [From.Liege.GetMyChancellorName];x
+plot_replace_chancellor_desc;[From.GetTitledFirstNameWithDynasty] считает, что [From.GetSheHe] будет лучше служить как [Root.GetJobTitle], чем [Root.GetTitledFirstNameWithDynasty];x
+plot_replace_marshal_title;[Root.GetTitledFirstNameWithDynasty] долж[Root.GetNaEn] уйти с поста [From.Liege.GetMyMarshalName];x
+plot_replace_marshal_desc;[From.GetTitledFirstNameWithDynasty] считает, что [From.GetSheHe] будет лучше служить как [Root.GetJobTitle], чем [Root.GetTitledFirstNameWithDynasty];x
+plot_replace_treasurer_title;[Root.GetTitledFirstNameWithDynasty] долж[Root.GetNaEn] уйти с поста [From.Liege.GetMyTreasurerName];x
+plot_replace_treasurer_desc;[From.GetTitledFirstNameWithDynasty] считает, что [From.GetSheHe] будет лучше служить как [Root.GetJobTitle], чем [Root.GetTitledFirstNameWithDynasty];x
+plot_replace_spymaster_title;[Root.GetTitledFirstNameWithDynasty] долж[Root.GetNaEn] уйти с поста [From.Liege.GetMySpymasterName];x
+plot_replace_spymaster_desc;[From.GetTitledFirstNameWithDynasty] считает, что [From.GetSheHe] будет лучше служить как [Root.GetJobTitle], чем [Root.GetTitledFirstNameWithDynasty];x
+plot_replace_councillor_title;[Root.GetTitledFirstNameWithDynasty] долж[Root.GetNaEn] уйти с поста Советника;x
+plot_replace_councillor_desc;[From.GetTitledFirstNameWithDynasty] считает, что [From.GetSheHe] будет лучшим Советником, чем [Root.GetTitledFirstNameWithDynasty];x
+opinion_council_sponsor;Поддерживает мое членство в Совете;x
+opinion_former_council_sponsor;Поддерживал[_] мое членство в Совете;x
+opinion_rival_council_candidate;Претендует на моё место в Совете;x
+opinion_rival_council_sponsor;Поддерживал[_] конкурента на мое место в Совете;x
+opinion_rejected_council_candidate;Отказал[_] моему кандидату в месте на Совете;x
+opinion_approved_council_candidate;Принял[_] моего кандидата в Совет;x
+opinion_replaced_council_candidate;Несправедливо уволил[_] члена Совета;x
+opinion_rejected_rival_council_candidate;Поддержал[_] моего кандидата в Совет;x
+opinion_sponsor_betrayed_me;Не поддержал[_] моего кандидата в Совет;x
+REGENT_DEMAND;Ваш регент заставил вас принять это решение.\n;x
+CONFIRM_PLOT;Вы уже согласились принять это решение.\n;x
+plot_replace_councillor_decision;Требовать должность [Root.PlotTarget.GetJobTitle] в Совете;x
+plot_replace_councillor_decision_desc;Настало время потребовать, чтобы [Root.Liege.GetTitle] [Root.Liege.GetFirstName] назначил[Root.Liege.GetEndA] вас своим советником на должность [Root.PlotTarget.GetJobTitle].;x
+plot_replace_castellan_decision;Потребовать должность [Root.PlotTarget.GetJobTitle];x
+plot_replace_castellan_decision_desc;Настало время потребовать, чтобы [Root.Liege.GetTitle] [Root.Liege.GetFirstName] назначил[Root.Liege.GetEndA] вас своим советником на должность [Root.PlotTarget.GetJobTitle].;x
+plot_replace_chancellor_decision;Потребовать должность [Root.PlotTarget.GetJobTitle];x
+plot_replace_chancellor_decision_desc;Настало время потребовать, чтобы [Root.Liege.GetTitle] [Root.Liege.GetFirstName] назначил[Root.Liege.GetEndA] вас своим советником на должность [Root.PlotTarget.GetJobTitle].;x
+plot_replace_marshal_decision;Потребовать должность [Root.PlotTarget.GetJobTitle];x
+plot_replace_marshal_decision_desc;Настало время потребовать, чтобы [Root.Liege.GetTitle] [Root.Liege.GetFirstName] назначил[Root.Liege.GetEndA] вас своим советником на должность [Root.PlotTarget.GetJobTitle].;x
+plot_replace_treasurer_decision;Потребовать должность [Root.PlotTarget.GetJobTitle];x
+plot_replace_treasurer_decision_desc;Настало время потребовать, чтобы [Root.Liege.GetTitle] [Root.Liege.GetFirstName] назначил[Root.Liege.GetEndA] вас своим советником на должность [Root.PlotTarget.GetJobTitle].;x
+plot_replace_spymaster_decision;Потребовать должность [Root.PlotTarget.GetJobTitle];x
+plot_replace_spymaster_decision_desc;Настало время потребовать, чтобы [Root.Liege.GetTitle] [Root.Liege.GetFirstName] назначил[Root.Liege.GetEndA] вас своим советником на должность [Root.PlotTarget.GetJobTitle].;x
+EVTTOOLTIPCOUNCILPLOT1;[This.GetTitledFirstName] рассмотрит ваше требование;x
+EVTTOOLTIPCOUNCILPLOT1B;[This.GetLordLady]-Регент, [This.GetTitledFirstNameWithDynastyNoRegnal], рассмотрит ваше требование;x
+EVTDESCCOUNCILPLOT1;[Root.PrimaryTitle.GetFOA],\nЯ уже достаточно долго наблюдаю как бездарно работает [FromFrom.PlotTarget.GetJobTitle], [FromFrom.PlotTarget.GetTitledFirstName], котор[FromFrom.PlotTarget.GetAyaYy] позорит своими выходками всё наше королевство. Я и мои сторонники просим, чтобы вы уволили [FromFrom.PlotTarget.GetHerHis] из Совета и назначили меня на освободившееся место.\nПодпись,\n[[FromFrom.GetTitledFirstNameoftheHouse];x
+EVTOPTACOUNCILPLOT1;Согласиться;x
+EVTOPTBCOUNCILPLOT1;Отказать;x
+EVTDESCCOUNCILPLOT2;[Root.GetTitledFirstName],\nВаши требования справедливы. Вы получите пост [Root.GetJobTitle] в Совете земли [FromFrom.PrimaryTitle.GetName].\nПодпись,\n[From.GetTitledFirstNameoftheHouse];x
+EVTOPTACOUNCILPLOT2;Я знал[GetEndA], что [From.GetSheHe] согласится!;x
+EVTDESCCOUNCILPLOT3;С вашей помощью, [FromFromFrom.GetTitledFirstNameWithDynasty] убедил[FromFromFrom.GetEndA] персонажа  [From.GetTitledFirstName] назначить [FromFromFrom.GetHerHis] в совет земли [FromFrom.PrimaryTitle.GetName] на должность [FromFromFrom.GetJobTitle].;x
+EVTOPTACOUNCILPLOT3;Отличный выбор.;x
+EVTDESCCOUNCILPLOT4;[Root.GetTitledFirstName],\nБлагодарю вас за годы верной службы, но, боюсь, настало время вам сложить свои полномочия. Сим оглашаю, что [FromFromFrom.GetTitledFirstNameWithDynasty] отныне займёт должность [FromFromFrom.GetJobTitle].\nПодпись,\n[From.GetTitledFirstNameoftheHouse];x
+EVTOPTACOUNCILPLOT4;Как [From.GetSheHe] смеет!;x
+EVTDESCCOUNCILPLOT5;Благодаря заговору, которые возглавляет [FromFromFrom.GetTitledFirstNameWithDynasty], [From.GetTitledFirstName] предал ваше доверие и уволил советника, известного как [FromFromFrom.PlotTarget.GetTitledFirstName] [FromFromFrom.PlotTarget.GetOnlyDynastyName] со своего совета и должности [FromFromFrom.PlotTarget.GetJobTitle]!;x
+EVTOPTACOUNCILPLOT5;Это возмутительно!;x
+EVTDESCCOUNCILPLOT6;[Root.GetTitledFirstName],\nБоюсь, я долж[From.GetNaEn] отказать вашему требованию. [Root.PlotTarget.GetTitledFirstName] [FromFromFrom.PlotTarget.GetOnlyDynastyName] служил[FromFromFrom.PlotTarget.GetEndA] мне верой и правдой и будет служить далее. Не просите меня об этом снова.\nПодпись,\n[From.GetTitledFirstNameoftheHouse];x
+EVTOPTACOUNCILPLOT6;Упрям[_ый] кретин[__]!;x
+EVTDESCCOUNCILPLOT7;Несмотря на ваш совет, [From.GetTitledFirstName] отказа[From.GetLasLsya] внять гласу разума. [FromFromFrom.GetTitledFirstNameWithDynasty] не будет назначен[FromFromFrom.GetEndA] как [From.GetHerHis] [FromFromFrom.PlotTarget.GetJobTitle]!;x
+EVTOPTACOUNCILPLOT7;Упрям[_ый] кретин[__]!;x
+EVTDESCCOUNCILPLOT8;[Root.GetTitledFirstName],\nКак вы несомненно слышали, [FromFromFrom.GetTitledFirstNameWithDynasty] пыта[FromFromFrom.GetLasLsya] организовать заговор, дабы сместить вас с должности [Root.GetJobTitle]. Я, разумеется, отверг[From.GetNoneE] [FromFromFrom.GetHerHis] абсурдные требования.\nПодпись,\n[From.GetTitledFirstNameoftheHouse];x
+EVTOPTACOUNCILPLOT8;Мудрое решение, [From.PrimaryTitle.GetFOA];x
+EVTDESCCOUNCILPLOT9;Измена! Гнусные заговорщики, которых возглавлял[FromFromFrom.GetEndA] [FromFromFrom.GetTitledFirstNameWithDynasty] пытались сместить советника, известного как [FromFromFrom.PlotTarget.GetTitledFirstName] [FromFromFrom.PlotTarget.GetOnlyDynastyName] с [From.GetHerHis] поста [FromFromFrom.PlotTarget.GetJobTitle]. К счастью, [From.GetTitledFirstName] был[From.GetEndA] достаточно мудр[From.GetEndA], чтобы не поддаться их уговорам и [FromFromFrom.PlotTarget.GetSheHe] останется в Совете.;x
+EVTOPTACOUNCILPLOT9;Отлично, [From.PrimaryTitle.GetFOA].;x
+EVTDESCCOUNCILPLOT10;[From.GetLordLady]-Регент [From.GetTitledFirstNameWithDynastyNoRegnal] назначил[From.GetEndA] нового человека в совет. [From.GetSheHeCap] ознакоми[From.GetLasLsya] с просьбой и согласи[From.GetLasLsya], чтобы [FromFromFrom.GetTitledFirstName] вош[FromFromFrom.GetLaYol] в [FromFromFrom.GetHerHis] совет как [FromFromFrom.PlotTarget.GetJobTitle]. А [FromFromFrom.PlotTarget.GetTitledFirstName] будет смещен[FromFromFrom.PlotTarget.GetEndA].;x
+EVTOPTACOUNCILPLOT10;Я уверен[GetEndA], [From.GetSheHe] знает, что делает;x
+EVTTOOLTIPCOUNCILPLOT11;рассматривает ваше требование;x
+EVTDESCCOUNCILPLOT50;Вы изменили мнение о том, кто лучше всего подходит на данное место в Совете.;x
+EVTOPTACOUNCILPLOT50;На место старых придут новые.;x
+EVTDESCCOUNCILPLOT51;Слухи при дворе повествуют о том, что [From.GetTitledFirstName] предал[From.GetEndA] вас. Говорят, [From.GetSheHe] возглавляет заговор, дабы отнять ваш пост при Совете!;x
+EVTOPTACOUNCILPLOT51;Предатели!;x
+EVTDESCCOUNCILPLOT52;Ваш близкий друг [councillor_friend.GetTitledFirstNameNoRegnal] [councillor_friend.GetOnlyDynastyName] служит в Совете у правителя [Root.Liege.GetTitledFirstName]. Это замечательный пост для н[councillor_friend.GetHerHis].;x
+EVTOPTACOUNCILPLOT52;Действительно, никто не справится лучше!;x
+EVTDESCCOUNCILPLOT53;Ваш друг [From.GetTitledFirstName] восхищался вашей верной службой у правителя [Root.Liege.GetTitledFirstName].;x
+EVTOPTACOUNCILPLOT53;Приятно, что кто-то меня ценит.;x
+EVTDESCCOUNCILPLOT54;[From.GetTitledFirstNameWithDynasty] покинул[From.GetEndA] Совет, и это увольнение возмутило тех, кто поддерживал [From.GetHerHis] членство.;x
+EVTOPTACOUNCILPLOT54;Меня не волнует, что они думают;x
+EVTDESCCOUNCILPLOT55;[FromFrom.GetTitledFirstNameWithDynasty], [FromFrom.GetManWoman]а котор[FromFrom.GetUyuOgo] вы поддерживали, был[FromFrom.GetEndA] уволен[FromFrom.GetEndA] из совета персонажа [From.GetTitledFirstNameNoRegnal]!;x
+EVTOPTACOUNCILPLOT55;Я недовол[GetSoftNaEn] этим решением;x
+EVTOPTBCOUNCILPLOT4;[GetRootFromFromFromInsult] заплатит за это!;x
+EVTOPTBCOUNCILPLOT6;Я не забуду участие персонажа [Root.PlotTarget.GetTitledFirstNameWithDynasty] в этом!;x
+EVTDESCCOUNCILPLOT11;[From.GetTitledFirstNameWithDynasty] был[From.GetEndA] крайне недовол[From.GetSoftNaEn] и расстроен[From.GetEndA] увольнением из совета и заменой [From.GetHerHis] мною, и открыто сказал[From.GetEndA] мне, что [From.GetSheHe] отплатит мне за подобное оскорбление.;x
+EVTOPTACOUNCILPLOT11;Нужно не забывать про бдительность;x
+EVTDESCCOUNCILPLOT12;[From.GetTitledFirstNameWithDynasty] был[From.GetEndA] заслуженно смещен[From.GetEndA] с должности в пользу меня, и [From.GetSheHe] принял это как личное оскорбление. [From.GetSheHeCap] открыто выражает недовольство мною, и я готов[GetEndA] ему ответить.;x
+EVTOPTACOUNCILPLOT12;[GetRootFromInsult] заставляет меня смеяться;x
+failed_council_petition;Петиция отклонена;x
+EVTDESCCOUNCILPLOT60;Ваш [Root.GetMySpymasterName] [Root.job_spymaster.GetTitledFirstNameNoRegnal] попросил[Root.job_spymaster.GetEndA] встречи. '[Root.PrimaryTitle.GetFOA], - начал[Root.job_spymaster.GetEndA] [Root.job_spymaster.GetSheHe], - Я понимаю ваши амбиции. Может быть, разумно будет Вам начать интригу против персонажа [target_councillor.GetTitledFirstNameWithDynastyNoRegnal], так Вы сможете исполнить желание.';x
+EVTOPTACOUNCILPLOT60;Спасибо за ваши советы, можете оставить меня;x
+plot_replace_councillor_decisionA;Любой сторонник заговора находится при дворе правителя [Root.Liege.GetBestName];x
+plot_replace_councillor_decisionB;;x
+plot_replace_councillor_decisionC;Входит в тройку самых мощных вассалов правителя [Root.Liege.GetBestName];x

@@ -1,70 +1,70 @@
-#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-hold_an_archery_tournament;Провести турнир лучников;x;;;;;;;;;;;;
-hold_an_archery_tournament_desc;Провести турнир лучников;x;;;;;;;;;;;;
-TOOLTIParchery.500;Все способные дворяне и стрельцы из вашей вотчины должны быть приглашены\n;x;;;;;;;;;;;;
-EVTDESCarchery.500;Сообщения дворянам и лучникам государства [Root.PrimaryTitle.GetName] были разосланы и уведомлены о турнире в городе [Root.Capital.GetName]. Все участники соберутся в течении месяца и будут соревноваться за право считаться лучшим.;x;;;;;;;;;;;;
-EVTDESCarchery.1;[Root.GetTitledFirstName], я приглашаю вас в город [From.Capital.GetName], где состоится турнир лучников и у вас будет шанс доказать, что вы лучший лучник во всей стране [From.PrimaryTitle.GetName].\n\nС уважением\n[From.GetTitledFirstNameWithDynasty];x;;;;;;;;;;;;
-EVTOPTDarchery.1;Хватит мне сообщать о детских забавах;x;;;;;;;;;;;;
-EVTDESCarchery.2;Наконец, турнир начался. Каждый лучник начинает с горсткой стрел и набирает баллы. Участники с самыми высокими баллами попадут в финальные раунды по стрельбе.;x;;;;;;;;;;;;
-EVTOPTAarchery.2;Удачи всем вам;x;;;;;;;;;;;;
-EVTOPTBarchery.2;Я хочу знать о каждом раунде;x;;;;;;;;;;;;
-TOOLTIPEVTOPTBarchery.2;Вы будете проинформированы о всех финальных раундах.;x;;;;;;;;;;;;
-EVTDESCarchery.3;К сожалению, из-за войны, [From.GetTitledFirstName] [From.GetDynastyOnlyName] вынужден[From.GetEndA] отменить турнир.;x;;;;;;;;;;;;
-EVTDESCarchery.8;Стрельбы начались, и у вас есть шанс попасть в финальные раунды. Вы поразили некоторые цели, но не смогли набрать достаточно очков.;x;;;;;;;;;;;;
-EVTOPTAarchery.8;Я буду лучш[GetEyIm] в следующий раз;x;;;;;;;;;;;;
-EVTDESCarchery.9;Первый раунд окончен. Теперь у нас есть список лучников, которые сойдутся в трех стрелковых матчах и определят победителя.;x;;;;;;;;;;;;
-EVTOPTAarchery.9;Все они способные стрелки;x;;;;;;;;;;;;
-TOOLTIParchery.10;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] прош[This.GetNoneE] в финальные раунды;x;;;;;;;;;;;;
-EVTDESCarchery.10;Турнир начался, и у вас есть шанс попасть в финальные раунды. Вы уверенно поражали цели и набрали достаточное количество очков. Вы будете соревноваться в финальных матчах.;x;;;;;;;;;;;;
-EVTOPTAarchery.10;Я в хорошей форме;x;;;;;;;;;;;;
-EVTDESCarchery.13;В следующем раунде вы и [From.GetTitledFirstNameWithDynasty] выступаете вместе. Стоя рядом, вы оба прицелились и готовы сделать первый выстрел...;x;;;;;;;;;;;;
-EVTOPTAarchery.13;Внимание...;x;;;;;;;;;;;;
-TOOLTIParchery.14;Первый раунд был начат;x;;;;;;;;;;;;
-EVTDESCarchery.14;В следующем раунде вы и [From.GetTitledFirstNameWithDynasty] выступаете вместе. Стоя рядом, вы оба прицелились и готовы сделать первый выстрел...;x;;;;;;;;;;;;
-EVTOPTAarchery.14;Внимание...;x;;;;;;;;;;;;
-EVTDESCarchery.16;Ваша стрела поразила цель ближе к центру, нежели стрела вашего оппонента. Раунд отдан вам.;x;;;;;;;;;;;;
-EVTOPTAarchery.16;Хороший выстрел;x;;;;;;;;;;;;
-EVTDESCarchery.17;Ваш оппонент поразил цель ближе к центру, нежели вы. Раунд отдан ему.;x;;;;;;;;;;;;
-EVTOPTAarchery.17;Виноват порыв ветра, клянусь;x;;;;;;;;;;;;
-EVTDESCarchery.18;Ваш оппонент не в состоянии продолжать участие и вы автоматически побеждаете в этом раунде.;x;;;;;;;;;;;;
-EVTOPTAarchery.18;Победа есть победа;x;;;;;;;;;;;;
-EVTDESCarchery.20;Цель упала на землю, вы и [From.GetTitledFirstName] пускаете еще по одной стреле...;x;;;;;;;;;;;;
-EVTOPTAarchery.20;Внимание...;x;;;;;;;;;;;;
-TOOLTIParchery.21;Начинается следующий раунд;x;;;;;;;;;;;;
-EVTDESCarchery.21;Цель упала на землю, вы и [From.GetTitledFirstName] пускаете еще по одной стреле...;x;;;;;;;;;;;;
-EVTOPTAarchery.21;Внимание...;x;;;;;;;;;;;;
-EVTDESCarchery.23;Вы выиграли второй раунд против персонажа [From.GetTitledFirstNameWithDynasty] и взяли верх! ;x;;;;;;;;;;;;
-EVTOPTAarchery.23;Моя стрельба великолепна;x;;;;;;;;;;;;
-EVTDESCarchery.24;Последней стрелой [From.GetTitledFirstNameWithDynasty] выиграл[From.GetEndA] во втором раунде и победил[From.GetEndA] вас. Вы выбываете из турнира.;x;;;;;;;;;;;;
-EVTOPTAarchery.24;Я выиграю в следующий раз;x;;;;;;;;;;;;
-EVTDESCarchery.25;В последних раундах финальных матчей вашего турнира [From.GetTitledFirstNameWithDynasty] победил[From.GetEndA] персонажа [FromFrom.GetTitledFirstNameWithDynasty], заработав больше очков своей стрельбой.;x;;;;;;;;;;;;
-EVTOPTAarchery.25;Молодец!;x;;;;;;;;;;;;
-EVTDESCarchery.26;Начат финальный матч между персонажами [From.GetTitledFirstNameWithDynasty] и [FromFrom.GetTitledFirstNameWithDynasty]. В итоге, [From.GetTitledFirstName] стрелял[From.GetEndA] более меткко, и он стал победителем турнира!;x;;;;;;;;;;;;
-EVTOPTAarchery.26;Поздравляю!;x;;;;;;;;;;;;
-EVTDESCarchery.27;В последнем раунде финального матча [From.GetTitledFirstNameWithDynasty] победил персонажа [FromFrom.GetTitledFirstNameWithDynasty], заработав больше очков.;x;;;;;;;;;;;;
-EVTOPTAarchery.27;Прекрасный турнир;x;;;;;;;;;;;;
-EVTDESCarchery.28;Начат финальный матч между персонажами [From.GetTitledFirstNameWithDynasty] и [FromFrom.GetTitledFirstNameWithDynasty]. В итоге, [From.GetTitledFirstName] оказался более метким и победил в турнире!;x;;;;;;;;;;;;
-EVTOPTAarchery.28;Достойный победитель;x;;;;;;;;;;;;
-EVTDESCarchery.29;Турнир лучников в государстве [Root.PrimaryTitle.GetName] наконец-то завершился и все возвращаются домой. Участники и зрители считают, что зрелище было превосходным.;x;;;;;;;;;;;;
-EVTOPTAarchery.29;Прекрасное зрелище;x;;;;;;;;;;;;
-EVTDESCarchery.30;После соревнований и шумных празднований турнир завершился, и настало время отправляться домой.;x;;;;;;;;;;;;
-EVTOPTAarchery.30;Было чертовски весело;x;;;;;;;;;;;;
-EVTDESCarchery.31;Вы одержали победу в финальном раунде. Ваши выстрелы метки, ваши цели поражены, вы были объявлены победителем турнира и получили приз.;x;;;;;;;;;;;;
-EVTOPTAarchery.31;Слава мне!;x;;;;;;;;;;;;
-EVTDESCarchery.32;Ваши выстрелы были точными, но недостаточно, чтобы победить. Однако, вашего мастерства хватило, чтобы завоевать второе место.;x;;;;;;;;;;;;
-EVTOPTAarchery.32;Достойно;x;;;;;;;;;;;;
-EVTDESCarchery.33;Вы вошли в четверку лучших лучников турнира, и вам был пожалован приз.;x;;;;;;;;;;;;
-EVTOPTAarchery.33;Я стану победителем в следующий раз;x;;;;;;;;;;;;
-#good_bow;Обладает хорошим луком;x;;;;;;;;;;;;
-#golden_bow;Обладает луком из Златосердца;x;;;;;;;;;;;;
-EVTDESCarchery.34;Я принимаю участие в турнире и, возможно, следует купить достойный лук, чтобы увеличить шансы на победу?;x;;;;;;;;;;;;
-EVTOPTAarchery.34;Пустая трата денег;x;;;;;;;;;;;;
-EVTOPTBarchery.34;Я куплю хороший лук;x;;;;;;;;;;;;
-EVTOPTCarchery.34;Принесите мне лучший лук, изготовленный из Златосердца Летних островов!;x;;;;;;;;;;;;
-EVTDESCarchery.36;После сегодняшнего раунда участники и зрители пируют и веселятся. На Летних островах любовные утехи почитаются и уважаются, и [From.GetTitledFirstName] кажется интересным вариантом...;x;;;;;;;;;;;;
-EVTOPTAarchery.36;Я не должен;x;;;;;;;;;;;;
-EVTOPTBarchery.36;не могу удержаться;x;;;;;;;;;;;;
-EVTTOOLTIPwedding.37;даст вам хорошо покувыркаться на празднике;x;;;;;;;;;;;;
-EVTDESCarchery.37;После сегодняшних соревнований по стрельбе, многие пируют и предаются плотским утехам у всех на глазах, как это заведено на Летних островах. Не желая быть исключением, вы и [From.GetTitledFirstName] присоединяетесь к оргии и хорошо проводите время!;x;;;;;;;;;;;;
-EVTOPTAarchery.37;Это священное занятие;x;;;;;;;;;;;;
-TOOLTIParchery.29;Конец турнира;x;;;;;;;;;;;;
+#CODE;ENGLISH;x
+hold_an_archery_tournament;Провести турнир лучников;x
+hold_an_archery_tournament_desc;Провести турнир лучников;x
+TOOLTIParchery.500;Все способные дворяне и стрельцы из вашей вотчины должны быть приглашены\n;x
+EVTDESCarchery.500;Сообщения дворянам и лучникам государства [Root.PrimaryTitle.GetName] были разосланы и уведомлены о турнире в городе [Root.Capital.GetName]. Все участники соберутся в течении месяца и будут соревноваться за право считаться лучшим.;x
+EVTDESCarchery.1;[Root.GetTitledFirstName], я приглашаю вас в город [From.Capital.GetName], где состоится турнир лучников и у вас будет шанс доказать, что вы лучший лучник во всей стране [From.PrimaryTitle.GetName].\n\nС уважением\n[From.GetTitledFirstNameWithDynasty];x
+EVTOPTDarchery.1;Хватит мне сообщать о детских забавах;x
+EVTDESCarchery.2;Наконец, турнир начался. Каждый лучник начинает с горсткой стрел и набирает баллы. Участники с самыми высокими баллами попадут в финальные раунды по стрельбе.;x
+EVTOPTAarchery.2;Удачи всем вам;x
+EVTOPTBarchery.2;Я хочу знать о каждом раунде;x
+TOOLTIPEVTOPTBarchery.2;Вы будете проинформированы о всех финальных раундах.;x
+EVTDESCarchery.3;К сожалению, из-за войны, [From.GetTitledFirstName] [From.GetDynastyOnlyName] вынужден[From.GetEndA] отменить турнир.;x
+EVTDESCarchery.8;Стрельбы начались, и у вас есть шанс попасть в финальные раунды. Вы поразили некоторые цели, но не смогли набрать достаточно очков.;x
+EVTOPTAarchery.8;Я буду лучш[GetEyIm] в следующий раз;x
+EVTDESCarchery.9;Первый раунд окончен. Теперь у нас есть список лучников, которые сойдутся в трех стрелковых матчах и определят победителя.;x
+EVTOPTAarchery.9;Все они способные стрелки;x
+TOOLTIParchery.10;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] прош[This.GetNoneE] в финальные раунды;x
+EVTDESCarchery.10;Турнир начался, и у вас есть шанс попасть в финальные раунды. Вы уверенно поражали цели и набрали достаточное количество очков. Вы будете соревноваться в финальных матчах.;x
+EVTOPTAarchery.10;Я в хорошей форме;x
+EVTDESCarchery.13;В следующем раунде вы и [From.GetTitledFirstNameWithDynasty] выступаете вместе. Стоя рядом, вы оба прицелились и готовы сделать первый выстрел...;x
+EVTOPTAarchery.13;Внимание...;x
+TOOLTIParchery.14;Первый раунд был начат;x
+EVTDESCarchery.14;В следующем раунде вы и [From.GetTitledFirstNameWithDynasty] выступаете вместе. Стоя рядом, вы оба прицелились и готовы сделать первый выстрел...;x
+EVTOPTAarchery.14;Внимание...;x
+EVTDESCarchery.16;Ваша стрела поразила цель ближе к центру, нежели стрела вашего оппонента. Раунд отдан вам.;x
+EVTOPTAarchery.16;Хороший выстрел;x
+EVTDESCarchery.17;Ваш оппонент поразил цель ближе к центру, нежели вы. Раунд отдан ему.;x
+EVTOPTAarchery.17;Виноват порыв ветра, клянусь;x
+EVTDESCarchery.18;Ваш оппонент не в состоянии продолжать участие и вы автоматически побеждаете в этом раунде.;x
+EVTOPTAarchery.18;Победа есть победа;x
+EVTDESCarchery.20;Цель упала на землю, вы и [From.GetTitledFirstName] пускаете еще по одной стреле...;x
+EVTOPTAarchery.20;Внимание...;x
+TOOLTIParchery.21;Начинается следующий раунд;x
+EVTDESCarchery.21;Цель упала на землю, вы и [From.GetTitledFirstName] пускаете еще по одной стреле...;x
+EVTOPTAarchery.21;Внимание...;x
+EVTDESCarchery.23;Вы выиграли второй раунд против персонажа [From.GetTitledFirstNameWithDynasty] и взяли верх! ;x
+EVTOPTAarchery.23;Моя стрельба великолепна;x
+EVTDESCarchery.24;Последней стрелой [From.GetTitledFirstNameWithDynasty] выиграл[From.GetEndA] во втором раунде и победил[From.GetEndA] вас. Вы выбываете из турнира.;x
+EVTOPTAarchery.24;Я выиграю в следующий раз;x
+EVTDESCarchery.25;В последних раундах финальных матчей вашего турнира [From.GetTitledFirstNameWithDynasty] победил[From.GetEndA] персонажа [FromFrom.GetTitledFirstNameWithDynasty], заработав больше очков своей стрельбой.;x
+EVTOPTAarchery.25;Молодец!;x
+EVTDESCarchery.26;Начат финальный матч между персонажами [From.GetTitledFirstNameWithDynasty] и [FromFrom.GetTitledFirstNameWithDynasty]. В итоге, [From.GetTitledFirstName] стрелял[From.GetEndA] более меткко, и он стал победителем турнира!;x
+EVTOPTAarchery.26;Поздравляю!;x
+EVTDESCarchery.27;В последнем раунде финального матча [From.GetTitledFirstNameWithDynasty] победил персонажа [FromFrom.GetTitledFirstNameWithDynasty], заработав больше очков.;x
+EVTOPTAarchery.27;Прекрасный турнир;x
+EVTDESCarchery.28;Начат финальный матч между персонажами [From.GetTitledFirstNameWithDynasty] и [FromFrom.GetTitledFirstNameWithDynasty]. В итоге, [From.GetTitledFirstName] оказался более метким и победил в турнире!;x
+EVTOPTAarchery.28;Достойный победитель;x
+EVTDESCarchery.29;Турнир лучников в государстве [Root.PrimaryTitle.GetName] наконец-то завершился и все возвращаются домой. Участники и зрители считают, что зрелище было превосходным.;x
+EVTOPTAarchery.29;Прекрасное зрелище;x
+EVTDESCarchery.30;После соревнований и шумных празднований турнир завершился, и настало время отправляться домой.;x
+EVTOPTAarchery.30;Было чертовски весело;x
+EVTDESCarchery.31;Вы одержали победу в финальном раунде. Ваши выстрелы метки, ваши цели поражены, вы были объявлены победителем турнира и получили приз.;x
+EVTOPTAarchery.31;Слава мне!;x
+EVTDESCarchery.32;Ваши выстрелы были точными, но недостаточно, чтобы победить. Однако, вашего мастерства хватило, чтобы завоевать второе место.;x
+EVTOPTAarchery.32;Достойно;x
+EVTDESCarchery.33;Вы вошли в четверку лучших лучников турнира, и вам был пожалован приз.;x
+EVTOPTAarchery.33;Я стану победителем в следующий раз;x
+#good_bow;Обладает хорошим луком;x
+#golden_bow;Обладает луком из Златосердца;x
+EVTDESCarchery.34;Я принимаю участие в турнире и, возможно, следует купить достойный лук, чтобы увеличить шансы на победу?;x
+EVTOPTAarchery.34;Пустая трата денег;x
+EVTOPTBarchery.34;Я куплю хороший лук;x
+EVTOPTCarchery.34;Принесите мне лучший лук, изготовленный из Златосердца Летних островов!;x
+EVTDESCarchery.36;После сегодняшнего раунда участники и зрители пируют и веселятся. На Летних островах любовные утехи почитаются и уважаются, и [From.GetTitledFirstName] кажется интересным вариантом...;x
+EVTOPTAarchery.36;Я не должен;x
+EVTOPTBarchery.36;не могу удержаться;x
+EVTTOOLTIPwedding.37;даст вам хорошо покувыркаться на празднике;x
+EVTDESCarchery.37;После сегодняшних соревнований по стрельбе, многие пируют и предаются плотским утехам у всех на глазах, как это заведено на Летних островах. Не желая быть исключением, вы и [From.GetTitledFirstName] присоединяетесь к оргии и хорошо проводите время!;x
+EVTOPTAarchery.37;Это священное занятие;x
+TOOLTIParchery.29;Конец турнира;x

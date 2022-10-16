@@ -1,226 +1,226 @@
-#CODE;ENGLISH;x;;;;;;;;;;;;;;;
-real_insult;Оскорблённ[_ый];x;;;;;;;;;;;;;;;
-real_gift;Отправленный подарок;x;;;;;;;;;;;;;;;
-opinion_protected_me;Защищал[_] меня от врага;x;;;;;;;;;;;;;;;
-interaction_lover;Любовни[_к__];x;;;;;;;;;;;;;;;
-EVTDESC70034;[From.GetTitle] [From.GetFirstNameWithDynasty] был[From.GetEndA] коронован[From.GetEndA] как победитель[From.GetEndNitsa] моего турнира.;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.2;Взаимодействие с основной целью (проигнорировать и нажать ок);x;;;;;;;;;;;;;;;
-EVTDESCinteraction.3;Меню взаимодействия. Выберите категорию.;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.4;Персональное меню;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.6;Меню действий;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.23;[From.GetTitle] [From.GetFirstNameWithDynasty] отправил[From.GetEndA] вам подарок;x;;;;;;;;;;;;;;;
-EVTDESCINSULT;[Root.GetTitle] [Root.GetFirstName], я презираю вас. Вы [GetFromRootInsult] идиот[Root.GetEndKa], и один ваш вид отталкивает меня.\n\nПодпись,\n[FromFrom.GetTitle] [FromFrom.GetFirstName] из Дома [FromFrom.GetOnlyDynastyName];x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.2;Ok;x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.3;Персональное;x;;;;;;;;;;;;;;;
-EVTOPTDinteraction.3;Действие;x;;;;;;;;;;;;;;;
-NEVERMIND;Не берите в голову;x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.4;Отправить подарок;x;;;;;;;;;;;;;;;
-insult_character;Оскорбить;x;;;;;;;;;;;;;;;
-insult_character_desc;Отправить оскорбительное письмо персонажу [Root.GetTitle] [Root.GetFirstNameWithDynasty] - это понизит [Root.GetHerHis] отношение к вам.;x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.23;Спасибо!;x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.24;Как [GetRootFromInsult] смеет так обращаться ко мне?;x;;;;;;;;;;;;;;;
-EVTOPTB453;Это благородный поступок?;x;;;;;;;;;;;;;;;
-visit_chambers;Посетить камеру;x;;;;;;;;;;;;;;;
-visit_chambers_desc;Посетить камеру, где сидит [Root.GetTitledFirstNameWithDynasty]...;x;;;;;;;;;;;;;;;
-TOOLTIPVISITCHAMBERCHILD;[Root.GetFirstName] НЕ является дедом, родителем, ребенком или внуком персонажа [From.GetTitle] [From.GetFirstName]\n;x;;;;;;;;;;;;;;;
-TOOLTIPVISITCHAMBERDIVINEBLOOD;Династия [From.GetOnlyDynastyName] практикует кровосмешение\n;x;;;;;;;;;;;;;;;
-TOOLTIPSEDUCELOCATION;[Root.GetFirstName] находится в области [From.Location.GetName], И [From.Location.GetName] владеет титулом [From.GetFirstName] или [Root.GetFirstName] ИЛИ [From.GetFirstName] НЕ командует\n;x;;;;;;;;;;;;;;;
-TOOLTIPVISITCOMMANDLOCATION;[From.Location.GetName] владеет титулом [From.GetFirstName] или [Root.GetFirstName]\n;x;;;;;;;;;;;;;;;
-TOOLTIPVISITCHAMBERORIENTATION;[Root.GetFirstName] желателен для сексуальной ориентации персонажа [From.GetFirstName]\n;x;;;;;;;;;;;;;;;
-TOOLTIPVISITCHAMBERPRISONER;Если [Root.GetFirstName] является заключенн[Root.GetOyYm] персонажа [From.GetFirstName], [From.GetFirstName] НЕ долж[From.GetNaEn] быть добр[From.GetOyYm] или благородн[From.GetOyYm]\n;x;;;;;;;;;;;;;;;
-TOOLTIPinteraction.26;[Root.GetTitledFirstNameNoRegnal] ответит на ваши попытки соблазнения;x;;;;;;;;;;;;;;;
-TOOLTIPinteraction.26B;Вы прокладываете себе путь в комнату персонажа [Root.GetTitledFirstNameNoRegnal]...;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.26;Я просыпаюсь под звуки скрипа моей двери... это [visiting_chambers.GetTitledFirstNameNoRegnal]!;x;;;;;;;;;;;;;;;
-knight_character;Даровать рыцарство;x;;;;;;;;;;;;;;;
-knight_character_desc;Как помазанный рыцарь, вы имеете право предоставить персонажу [Root.GetTitle] [Root.GetFirstNameWithDynasty] рыцарство;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.22;Вас посвятил в рыцари [FromFrom.GetTitle] [FromFrom.GetFirstNameWithDynasty];x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.22;Спасибо!;x;;;;;;;;;;;;;;;
-stand_down;Приказать закончить войну;x;;;;;;;;;;;;;;;
-stand_down_desc;Отправить письмо персонажу [Root.GetTitle] [Root.GetFirstNameWithDynasty], приказав прекратить агрессивную войну против другого вашего знаменосца.;x;;;;;;;;;;;;;;;
-TOOLTIPstand_downVOTEONGOING;Совет еще НЕ голосовал за приказ отступить;;;;;;;;;;;;;;;;x
-TOOLTIPstand_downCOUNCIL;Совет персонажа [From.GetTitledFirstName] НЕ имеет права голоса в дипломатических вопросах\n;x;;;;;;;;;;;;;;;
-TOOLTIPstand_downCOUNCILCOOLDOWN;Совет недавно НЕ голосовал за выдачу приказа персонажу [Root.GetTitledFirstName]\n;x;;;;;;;;;;;;;;;
-TOOLTIPstand_downASKED;[Root.GetTitledFirstName] НЕ приказывал[Root.GetEndA] недавно\n;x;;;;;;;;;;;;;;;
-TOOLTIPstand_downPRISONER;[Root.GetTitledFirstName] - пленни[Root.GetTsaK] персонажа [From.GetTitledFirstName]\n;x;;;;;;;;;;;;;;;
-TOOLTIPstand_downVOTE;§YСовет§! будет голосовать за отдачу приказа персонажу [This.GetTitle] [This.GetFirstName]\n;x;;;;;;;;;;;;;;;
-TOOLTIPPIinteraction.10;Из-за уровня власти государства [From.PrimaryTitle.GetName], этот приказ будет обязателен и законен. Это означает, что у вас будет возможность объявить персонажа [Root.GetTitle] [Root.GetFirstNameWithDynasty] врагом государства, если откажется.\n\n;x;;;;;;;;;;;;;;;
-TOOLTIPPIinteraction.11;Из-за уровня власти государства [From.PrimaryTitle.GetName], эта команда НЕ обязательна и незаконна. Это означает, что [Root.GetTitle] [Root.GetFirstNameWithDynasty] может проигнорировать ваш приказ без каких-либо последствий.\n\n;x;;;;;;;;;;;;;;;
-appoint_to_kingsguard;Назначить в Королевскую гвардию;x;;;;;;;;;;;;;;;
-appoint_to_kingsguard_desc;Королевской гвардии требуется семь членов. Предложить освободившееся место человеку, известному как [Root.GetTitle] [Root.GetFirstNameWithDynasty].;x;;;;;;;;;;;;;;;
-TOOLTIPkingsguardNEEDED;Место в Королевской гвардии вакантно\n;x;;;;;;;;;;;;;;;
-TOOLTIPinteraction.7;ответит на ваше предложение;x;;;;;;;;;;;;;;;
-grant_lp;Даровать [Root.PrimaryTitle.Kingdom.GetFullName];x;;;;;;;;;;;;;;;
-grant_lp_desc;[Root.PrimaryTitle.Kingdom.GetFullName] в настоящее время отделено от Короны. [Root.GetTitledFirstNameWithDynasty] получит этот титул и станет повелителем региона.;x;;;;;;;;;;;;;;;
-grant_lp_landless;Даровать Королевство;x;;;;;;;;;;;;;;;
-grant_lp_landless_desc;[FromFrom.PrimaryTitle.Kingdom.GetFullName] в настоящее время не отделено от Короны. [Root.GetTitledFirstNameWithDynasty] получит этот титул и станет повелителем региона.;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.5;Меню дипломатии;x;;;;;;;;;;;;;;;
-EVTOPTBinteraction.3;Дипломатия;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.10;[Root.GetTitle] [Root.GetFirstName], я приказываю вам сложить оружие и прекратить свои агрессивные войны. Если вы проигнорируете этот приказ от своего законного господина, у меня не останется выбора, кроме как объявить вас предателем и врагом государства.\n\nПодпись,\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x;;;;;;;;;;;;;;;
-EVTDESCinteraction.10B;[Root.GetTitle] [Root.GetFirstName], от имени правителя [FromFrom.GetTitledFirstNameWithDynastyAndTitleNoRegnal], регентский совет настоящим приказывает вам сложить оружие и прекратить агрессивные войны. Если вы проигнорируете этот приказ, у нас не будет выбора, кроме как объявить вас предателем и врагом королевства.\n\nПодпись,\n[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], [From.GetLordLady]-регент [FromFrom.PrimaryTitle.GetName];x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.10;[From.PrimaryTitle.GetFOA], я сделаю что приказано;x;;;;;;;;;;;;;;;
-EVTOPTBinteraction.10;Нет;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.14;[Root.PrimaryTitle.GetFOA], боюсь, я не могу закончить эту войну. Мое дело правое, и поэтому вы не имеете права приказывать мне остановиться. \n\nПодпись,\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.14;[From.GetSheHeCap] будет заклеймен[From.GetEndA] как изменни[From.GetTsaK];x;;;;;;;;;;;;;;;
-EVTOPTBinteraction.14;Я арестую [From.GetHerHis] за измену;x;;;;;;;;;;;;;;;
-EVTOPTDinteraction.14;Тогда право на [From.PrimaryTitle.GetName] получит кто-то ещё;x;;;;;;;;;;;;;;;
-EVTTOOLTIPinteraction.14;Вы выбрали того, кому даруете право претендовать на эти земли;x;;;;;;;;;;;;;;;
-EVTOPTCinteraction.14;Может быть, я позволю... только в этот раз.;x;;;;;;;;;;;;;;;
-EVTDESC20800303;Ваш лорд, [From.GetTitle] [From.GetFirstNameWithDynasty], приказывает вам найти предателя среди вассалов. [From.GetHerHis] отказ будет рассматриваться как измена.;x;;;;;;;;;;;;;;;
-EVTOPTA20800303;Справедливость восторжествует.;x;;;;;;;;;;;;;;;
-EVTOPTB20800303;Я не подниму оружия против своих подданных!;x;;;;;;;;;;;;;;;
-EVTDESC20800304;Ваш сюзерен, [From.GetTitle] [From.GetFirstNameWithDynasty], вмешивается, чтобы защитить вас от агрессии со стороны врага [FromFrom.GetTitle] [FromFrom.GetFirstNameWithDynasty].;x;;;;;;;;;;;;;;;
-EVTDESC20800305;Ваш сюзерен, [From.GetTitle] [From.GetFirstNameWithDynasty], отказался выступить против вас, игнорируя приказ от правителя, известного как [FromFrom.GetTitle] [FromFrom.GetFirstNameWithDynasty].;x;;;;;;;;;;;;;;;
-EVTDESC20800306;Ваш вассал [From.GetTitle] [From.GetFirstNameWithDynasty] отказался выполнить ваш приказ и выследить предателя.;x;;;;;;;;;;;;;;;
-EVTOPTA20800306;Измена! Я раздавлю [From.GetHerHis] сам и сожгу город [From.Capital.GetName].;x;;;;;;;;;;;;;;;
-EVTOPTA20800304;Спасибо вам, мой [From.GetTitle].;x;;;;;;;;;;;;;;;
-TOOLTIPCBENFORCEDTRUCE;[Root.GetTitledFirstName] недавно НЕ объявлял[Root.GetEndA] перемирие с персонажем [From.GetTitledFirstName], своим сюзереном\n;x;;;;;;;;;;;;;;;
-TOOLTIPCBENFORCEDTRUCEB;[Root.GetTitledFirstName] НЕ был[Root.GetEndA] вынужден[Root.GetEndA] объявить перемирие с персонажем [Root.Liege.GetTitledFirstName]\n;x;;;;;;;;;;;;;;;
-EVTDESC20800307;Ваш сюзерен [From.GetTitle] [From.GetFirstNameWithDynasty] назвал[From.GetEndA] ваши действия изменой и требует вашей головы.;x;;;;;;;;;;;;;;;
-EVTOPTA20800307;Созвать знамёна. Мы выступаем на город [From.Capital.GetName].;x;;;;;;;;;;;;;;;
-CB_NAME_TRAITOR;Принести предателя правосудию;x;;;;;;;;;;;;;;;
-WAR_NAME_TRAITOR;$ORDER$ $FIRST_ADJ$ наказать изменника против $SECOND$;x;;;;;;;;;;;;;;;
-EVTOPTA20800999;Ok.;x;;;;;;;;;;;;;;;
-EVTDESC20800999;[FromFrom.GetTitle] [FromFrom.GetFirstNameWithDynasty] вмешивается против персонажа [From.GetTitle] [From.GetFirstNameWithDynasty].;x;;;;;;;;;;;;;;;
-EVTDESC20800998;[FromFrom.GetTitle] [FromFrom.GetFirstNameWithDynasty] пыта[FromFrom.GetLasLsya] вмешаться против персонажа [From.GetTitle] [From.GetFirstNameWithDynasty], но [From.GetTitle] [From.GetFirstNameWithDynasty] отказал[From.GetEndA].;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.15;Кто же должен иметь право претендовать на город [FromFrom.Capital.GetName], результат предательства персонажа [FromFrom.GetTitle] [FromFrom.GetFirstNameWithDynasty];x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.15;Подтвердить притязания на [FromFrom.PrimaryTitle.GetName] для соперника предателя;x;;;;;;;;;;;;;;;
-EVTOPTBinteraction.15;Подтвердить притязания на [FromFrom.PrimaryTitle.GetName] для сюзерена предателя;x;;;;;;;;;;;;;;;
-EVTOPTCinteraction.15;Подтвердить притязания на [FromFrom.PrimaryTitle.GetName] для себя;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.8;[Root.PrimaryTitle.GetFOA], я смиренно прошу вас вмешаться от моего имени против агрессии персонажа [stand_down_aggressor.GetTitledFirstNameNoRegnal] [stand_down_aggressor.GetOnlyDynastyName], котор[stand_down_aggressor.GetAyaYy] вторгается в мои земли, явно нарушая мир в государстве. Я был[From.GetEndA] бы бесконечно благодар[From.GetNaEn] за вашу поддержку в этом вопросе.\n\nВаш[From.GetEndA],\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.8;Я прикажу, чтобы [stand_down_aggressor.GetTitledFirstNameNoRegnal] прекратил[stand_down_aggressor.GetEndA];x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.8B;Совет голосует, я буду голосовать в пользу персонажа [From.GetTitle] [From.GetFirstName].;x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.8C;Регентский совет принимает решение по этому вопросу;x;;;;;;;;;;;;;;;
-EVTOPTBinteraction.8;Какое мне дело?;x;;;;;;;;;;;;;;;
-EVTOPTBinteraction.8B;Я буду голосовать против приказа персонажу [stand_down_aggressor.GetTitledFirstNameNoRegnal];x;;;;;;;;;;;;;;;
-EVTDESCinteraction.12;[Root.GetTitle] [Root.GetFirstName], хоть я и сочувствую вашему положению, я решил[From.GetEndA], что не могу вмешиваться в эту войну. Я надеюсь, обе стороны урегулируют свои разногласия полюбовно.\n\nПодпись,\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.12;Полюбовно?! Бессмысленный ответ!;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.13;[Root.PrimaryTitle.GetFOA], я, конечно, повинуюсь вышей воле и закончу войну, как велено. Пожалуйста, возьмите это как знак моей вечной верности.\n\nПодпись,\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x;;;;;;;;;;;;;;;
-EVTDESC20800452;Тёмные вести пришли со Стены, милорд: член вашей династии погиб в результате несчастного случая.;x;;;;;;;;;;;;;;;
-EVTOPTA20800452;Да покоится он с миром.;x;;;;;;;;;;;;;;;
-banish_prisoner;Отправить в Ночной Дозор;x;;;;;;;;;;;;;;;
-banish_prisoner_desc;Заставить персонажа [Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal] надеть чёрное и отправить на Стену.;x;;;;;;;;;;;;;;;
-banish_prisoner_named;Изгнать персонажа [Root.GetTitledFirstNameWithDynasty] в Ночной Дозор;x;;;;;;;;;;;;;;;
-ask_liege_help;Попросить помощи сюзерена;x;;;;;;;;;;;;;;;
-ask_liege_help_desc;Попросить вашего сюзерена о защите в оборонительной войне.;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.16;[Root.GetFirstNameWithDynasty], [From.GetFirstNameWithDynasty] был[From.GetEndA] заклеймен[From.GetEndA] как предатель[From.GetEndNitsa] за игнорирование моего приказа прекратить свои агрессивные войны. Как следствие, я предоставляю вам право на титул [From.PrimaryTitle.GetName].\n\n Подпись,\n[FromFrom.GetTitle] [FromFrom.GetFirstName] из Дома [FromFrom.GetOnlyDynastyName];x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.16;Это будет полезно!;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.17;[Root.PrimaryTitle.GetFOA], [From.GetTitle] [From.GetFirstName] заклеймил[From.GetEndA] вас как предателя за игнорирование приказа остановиться. Как следствие, вашему врагу была предоставлена претензия на титул [Root.PrimaryTitle.GetName].;x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.17;Прокльтье на твою голову!;x;;;;;;;;;;;;;;;
-EVTTOOLTIPinteraction.10;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] получит приказ закончить свою войну;x;;;;;;;;;;;;;;;
-EVTOPTBinteraction.6;Удалить с должности командующего;x;;;;;;;;;;;;;;;
-EVTTOOLTIPinteraction.17;[This.GetTitledName] получит право на титул [Root.PrimaryTitle.GetName];x;;;;;;;;;;;;;;;
-TOOLTIPinteraction.15A;предоставляется право на титул [Prev.PrimaryTitle.GetName]\n;x;;;;;;;;;;;;;;;
-TOOLTIPEVTOPTCinteraction.5;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] назначается следующим Лордом-Командующим Королевской гвардиии\n;x;;;;;;;;;;;;;;;
-EVTOPTCinteraction.5;Назначит в качестве следующего Лорда-Командующего;x;;;;;;;;;;;;;;;
-TOOLTIPINTERACTIONPERSONAL;Возможны следующие действия:\n-Отправить дар\n-Отправить оскорбление\n-Посетить\n-Пожаловать рыцарство\n;x;;;;;;;;;;;;;;;
-TOOLTIPINTERACTIONDIPLOMATIC;Возможны следующие действия:\n-Приказать знаменосцу прекратить\n-Назначить рыцаря в Королевскую гвардию\n-Назначить следующего Великого Септона\n-Пожаловать титул Верховного Лорда\n;x;;;;;;;;;;;;;;;
-TOOLTIPINTERACTIONACTION;Возможны следующие действия:\n-Защита и Исцеление Р'глора\n-Подкупить советника на миссии\n-Сделать предложение о покупке раба\n-Столкнуться с драконом\n-Подаритьмеч\n;x;;;;;;;;;;;;;;;
-scorch_the_land;Сожжённая Земля;x;;;;;;;;;;;;;;;
-scorch_the_land_desc;Сжечь всё и изнасиловать женщин;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.18;[FromFrom.GetTitle] [FromFrom.GetFirstName] является справедливым и способным сюзереном, [FromFrom.GetSheHe] смог[FromFrom.GetNoneE] заставить персонажа [From.GetFirstNameWithDynasty] остановить свою войну и агрессию против нас.;x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.18;Я благодар[GetNaEn];x;;;;;;;;;;;;;;;
-rhllor_action;Р'Глор: Список действий;x;;;;;;;;;;;;;;;
-rhllor_action_desc;Вы принесли жертву Красному Богу, и поэтому можете принять меры против персонажа [Root.GetTitle] [Root.GetFirstNameWithDynasty].;x;;;;;;;;;;;;;;;
-TOOLTIPinteraction.14;получит сведения;x;;;;;;;;;;;;;;;
-EVTOPTBinteraction.10;Я не буду выполнять это;x;;;;;;;;;;;;;;;
-EVTOPTDinteraction.10;[From.GetTitledFirstNameNoRegnal] не имеет права требовать это;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.11;[Root.GetTitle] [Root.GetFirstName], я пишу вам это письмо, чтобы выразить мое неодобрение вашей агрессии. Я призываю вас прекратить боевые действия или же вы почувствуете на себе гнев государства.\n\nПодпись,\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x;;;;;;;;;;;;;;;
-EVTDESCinteraction.11B;[Root.GetTitle] [Root.GetFirstName], я пишу вам это письмо, чтобы выразить неодобрение регентским советом ваших агрессивных войн. [FromFrom.GetTitledFirstNameWithDynastyAndTitleNoRegnal] посредством Совета призывает Вас заключить мир и прекратить боевые действия, или же вы почувствуете на себе гнев государства.\n\nПодпись,\n[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], [From.GetLordLady]-регент [FromFrom.PrimaryTitle.GetName];x;;;;;;;;;;;;;;;
-opinion_did_not_stand_down;Не отступлюсь;x;;;;;;;;;;;;;;;
-EVTOPTEinteraction.14;Я ничего не могу поделать;x;;;;;;;;;;;;;;;
-EVTOPTD452;Что [From.GetSheHe] сделает мне?;x;;;;;;;;;;;;;;;
-EVTTOOLTIPinteraction.26;[This.GetTitledFirstName] устроит вам хороший беспорядок;x;;;;;;;;;;;;;;;
-EVTOPTCinteraction.27;Я здесь [Root.GetTitle] и мы возляжем;x;;;;;;;;;;;;;;;
-opinion_forced_upon_me;Принуждение меня;x;;;;;;;;;;;;;;;
-opinion_forced_upon_kin;Принуждение моего родственника;x;;;;;;;;;;;;;;;
-opinion_forced_upon_spouse;Принуждение моего супруга;x;;;;;;;;;;;;;;;
-opinion_forced_upon_lover;Вынудил[_] мо[_его] любовни[_ка];x;;;;;;;;;;;;;;;
-opinion_forced_upon_friend;Вынудил[_] моего друга;x;;;;;;;;;;;;;;;
-TOOLTIPinteraction.27;Семья и друзья персонажа [This.GetTitledFirstName] возмущены\n;x;;;;;;;;;;;;;;;
-EVTDESC455;[From.GetTitledFirstName] кричал[From.GetEndA] и поднял[From.GetEndA] суету перед стражей!;x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.28;[From.GetSheHeCap] отказывает мне?!;x;;;;;;;;;;;;;;;
-opinion_scandalised_me;Возмутил[_]меня;x;;;;;;;;;;;;;;;
-TOOLTIPinteraction.28;Семья персонажа [This.GetTitledFirstName] возмущена\n;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.29;[From.GetTitledFirstNameWithDynastyNoRegnal] опозорил[From.GetEndA] Дом [Root.GetOnlyDynastyName]. Мы получили сообщение из области [From.Location.GetName], что [From.GetSheHe] захватил[From.GetEndA] [From.GetHerHis], заключив в темницу персонажа [FromFrom.GetRootRelation] [FromFrom.GetFirstName] и пытаясь принудить [FromFrom.GetHerHis]. [From.GetTitledFirstNameNoRegnal] провалил[From.GetEndA] свой планн, когда крики привлекли внимание стражи.;x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.29;Это возмутительное поведение!;x;;;;;;;;;;;;;;;
-opinion_scandalised_kin;Возмутил[_] моего родственника;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.30;Ваш[FromFrom.GetEndA] [FromFrom.GetRootRelation] [FromFrom.GetTitledFirstNameNoRegnal] страдает под стражей своих захватчиков, мы получили сообщение, что [FromFrom.GetHerHis] камеры чвсто посещаются персонажем [From.GetTitledFirstNameWithDynastyNoRegnal]. При этом [FromFrom.GetRootRelation] может ожидать что угодно, что только [From.GetTitledFirstNameNoRegnal] не придумает.;x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.30;Я отомщу за это!;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.19;[Root.GetTitle] [Root.GetFirstName], я могу заверить вас, что вы имеете мою полную поддержку против агрессии персонажа [FromFrom.GetFirstNameWithDynasty]. Негодяй[FromFrom.GetEndKa] проигнорировал[FromFrom.GetEndA] мой приказ прекратить войну, и поэтому я назвал[From.GetEndA] [FromFrom.GetHerHis] изменником и врагом государства.\n\nТеперь вы можете победить [FromFrom.GetHerHis],\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.19;[Root.PrimaryTitle.GetFOA], я благодарю Вас за поддержку;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.20;[Root.GetTitle] [Root.GetFirstName], хоть я уверяю, что вы получите мою поддержку против агрессии персонажа [From.GetFirstNameWithDynasty], я боюсь, что не в силах остановить [From.GetHerHis]. [From.GetSheHeCap] проигнорировал[From.GetEndA] мои просьбы о прекращении боевых действий, и поэтому вы теперь сами по себе.\n\nС уважением,\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.20;Бессильн[_ый];x;;;;;;;;;;;;;;;
-TOOLTIPinteraction.8;[This.GetTitle] [This.GetFirstName] получит письмо с просьбой о вмешательстве в войну;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.21;Всем моим подданным,\nЗа преступление отказа сохранить мир и не подчиннение явному приказу прекратить боевые действия, я настоящим называю, что [FromFrom.GetTitle] [FromFrom.GetFirstNameWithDynasty] - изменни[FromFrom.GetTsaK] и враг государства.\n\nПодпись,\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.21;[From.GetSheHeCap] пожалеет об этом решении;x;;;;;;;;;;;;;;;
-EVTOPTBinteraction.21;[FromFrom.GetTitle] [FromFrom.GetFirstName] смел[FromFrom.GetEndA];x;;;;;;;;;;;;;;;
-EVTDESCSENDINSULT;У вас есть письмо для персоны [From.GetFirstName], написанное и подписанное:\n' ...я вас презираю. Вы [GetRootFromInsult], и ваш [GetRootFromInsult] вид отвратителен.\nПодпись,\n[Root.GetTitle] [Root.GetFirstName] из Дома [Root.GetOnlyDynastyName]';x;;;;;;;;;;;;;;;
-EVTOPTASENDINSULT;Это научит, что [GetRootFromInsult];x;;;;;;;;;;;;;;;
-make_noble;Повысить до знати;x;;;;;;;;;;;;;;;
-make_noble_desc;Сделать подданного по имени [Root.GetTitledFirstName] дворянином, дав [Root.GetHerHim] [Root.GetHerHis] собственный дом и герб, а также доходы, чтобы начать [Root.GetHerHis] хозяйство.;x;;;;;;;;;;;;;;;
-TOOLTIPmake_noble;[Root.GetTitledFirstName] получает новое имя дома и герб\n;x;;;;;;;;;;;;;;;
-voted_on_stand_down;Проголосовали за приказ остановиться;x;;;;;;;;;;;;;;;
-EVTDESCcouncillor.1;Совет был созван для голосования по спору, который возник между двумя вассалами персонажа [FromFrom.GetTitledFirstNameNoRegnal]. [From.GetTitledFirstNameWithDynastyNoRegnal] обвиняется во вторжении в земли персонажа [stand_down_defender.GetTitledFirstNameNoRegnal] [stand_down_defender.GetOnlyDynastyName] и нарушении мира. Теперь Совет должен проголосовать за то, чтобы [From.GetTitledFirstNameNoRegnal] получил[From.GetEndA] приказ остановить свою агрессию, [FromFrom.GetTitledFirstNameNoRegnal] проголосовал[FromFrom.GetEndA] ЗА.;x;;;;;;;;;;;;;;;
-EVTDESCcouncillor.1B;Совет был созван для голосования по спору, который возник между двумя вассалами персонажа [FromFrom.GetTitledFirstNameNoRegnal]. [From.GetTitledFirstNameWithDynastyNoRegnal] обвиняется во вторжении в земли персонажа [stand_down_defender.GetTitledFirstNameNoRegnal] [stand_down_defender.GetOnlyDynastyName] и нарушении мира. Теперь Совет должен проголосовать за то, чтобы, чтобы [From.GetTitledFirstNameNoRegnal] получил[From.GetEndA] приказ остановить свою агрессию,  [FromFrom.GetTitledFirstNameNoRegnal] проголосовал[FromFrom.GetEndA] ПРОТИВ.;x;;;;;;;;;;;;;;;
-EVTDESCcouncillor.1C;Регентский совет был созван для голосования по спору, который возник между двумя вассалами персонажа [FromFrom.GetTitledFirstNameNoRegnal]. [From.GetTitledFirstNameWithDynastyNoRegnal] обвиняется во вторжении в земли персонажа [stand_down_defender.GetTitledFirstNameNoRegnal] [stand_down_defender.GetOnlyDynastyName] и нарушении мира. Совет должен проголосовать за то, чтобы получил[From.GetEndA] приказ остановить свою агрессию.;x;;;;;;;;;;;;;;;
-EVTOPTAcouncillor.1;Да, [From.GetTitledFirstNameNoRegnal] будет вынужден[From.GetEndA] остановиться;x;;;;;;;;;;;;;;;
-EVTOPTBcouncillor.1;Я голосую против этого действия;x;;;;;;;;;;;;;;;
-EVTDESCcouncillor.2;Голосование о том, чтобы [From.GetTitledFirstNameWithDynastyNoRegnal] закончил[From.GetEndA] свою войну против персонажа [stand_down_defender.GetTitledFirstNameNoRegnal] [stand_down_defender.GetOnlyDynastyName] было проведено...;x;;;;;;;;;;;;;;;
-EVTOPTAcouncillor.2;Совет проголосовал ЗА;x;;;;;;;;;;;;;;;
-EVTOPTAcouncillor.2B;Я накладываю вето на этот приказ!;x;;;;;;;;;;;;;;;
-EVTOPTAcouncillor.2C;Голосование ничего не решило, поэтому я выбираю приказать;x;;;;;;;;;;;;;;;
-EVTOPTAcouncillor.2D;Голоса разделились поровну, [FromFrom.GetTitledFirstNameNoRegnal] и [FromFrom.GetHerHis] голос решит;x;;;;;;;;;;;;;;;
-EVTOPTAcouncillor.2E;Голоса разделились поровну, [FromFrom.Regent.GetTitledFirstNameNoRegnal] и [FromFrom.GetHerHis] голос решит;x;;;;;;;;;;;;;;;
-TOOLTIPcouncil_vote_approve_end_war;[This.GetTitledFirstNameWithDynastyNoRegnal] проголосовал[This.GetEndA] §GЗА§!\n;x;;;;;;;;;;;;;;;
-TOOLTIPcouncil_vote_against_end_war;[This.GetTitledFirstNameWithDynastyNoRegnal] проголосовал[This.GetEndA] §RПРОТИВ§!\n;x;;;;;;;;;;;;;;;
-EVTOPTBcouncillor.2;Совет проголосовал ПРОТИВ;x;;;;;;;;;;;;;;;
-EVTOPTBcouncillor.2B;Я использую вето!;x;;;;;;;;;;;;;;;
-EVTOPTBcouncillor.2C;Голоса разделились поровну, приказ не будет отдан;x;;;;;;;;;;;;;;;
-EVTDESCcouncillor.3;[From.GetTitledFirstNameNoRegnal] пош[From.GetLaYol] против воли совета, несмотря на его решающее право голоса по дипломатическим вопросам. Совет решил проголосовать за приказ персонажу [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] остановить войну против своего врага, известного как [stand_down_defender.GetTitledFirstNameNoRegnal] [stand_down_defender.GetOnlyDynastyName], но [From.GetTitledFirstNameNoRegnal] заблокировал[From.GetEndA] предложение.;x;;;;;;;;;;;;;;;
-EVTOPTAcouncillor.3;Это посягательство на права Совета!;x;;;;;;;;;;;;;;;
-EVTDESCcouncillor.4;[From.GetTitledFirstNameNoRegnal] пош[From.GetLaYol] против воли совета, несмотря на его право голоса по дипломатическим вопросам. Совет решил не выдавать приказ персонажу [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] остановить [FromFrom.GetHerHis] войну против своего врага, известного как [stand_down_defender.GetTitledFirstNameNoRegnal] [stand_down_defender.GetOnlyDynastyName], но [From.GetTitledFirstNameNoRegnal] заблокировал[From.GetEndA] предложение, и все-равно отдал[From.GetEndA] приказ.;x;;;;;;;;;;;;;;;
-EVTOPTAcouncillor.4;[From.GetSheHeCap] не долж[From.GetNaEn] игнорировать свой совет;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.2099;[Root.GetTitle] [Root.GetFirstName], согласно законам государства [From.PrimaryTitle.GetName], Совет принял решение о том, следует ли приказать персонажу [From.GetFirstNameWithDynasty] остановить свою войну проти вас. Я с сожалением сообщаю вам, что Совет проголосовал против этого предложения, поэтому вы теперь сами по себе.\n\nС уважением,\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.2099;Почему Совет игнорирует мою беду?;x;;;;;;;;;;;;;;;
-disinherit_child;Лишить наследства персонажа [Root.GetTitledFirstNameNoRegnal];x;;;;;;;;;;;;;;;
-disinherit_child_desc;Лишить наследства персонажа [Root.GetTitledFirstNameNoRegnal];x;;;;;;;;;;;;;;;
-send_to_the_citadel;Отправить в Цитадель;x;;;;;;;;;;;;;;;
-send_to_the_citadel_desc;Отправить персонажа [Root.GetTitledFirstNameNoRegnal] в Цитадель учиться на мейстера;x;;;;;;;;;;;;;;;
-opinion_sent_me_to_the_citadel;Отправил[_] меня в Цитадель;x;;;;;;;;;;;;;;;
-abdicate_decision;Отречься;;;;;;;;;;;;;;;;x
-abdicate_decision_desc;Отказаться всех от земель и титулов в пользу своего наследника;x;;;;;;;;;;;;;;;
-divorce_rel_head;Расторжение брака;x;;;;;;;;;;;;;;;
-divorce_rel_head_desc;Использовать вашу власть как главы религии для развода с персонажем [Root.GetTitledFirstName];x;;;;;;;;;;;;;;;
-TOOLTIPinteraction.10TRAITOR;Из-за уровня авторитета короны, [This.GetTitledFirstNameNoRegnal] будет иметь право заклеймить вас как §Rизменника§!.\n;x;;;;;;;;;;;;;;;
-TOOLTIPinteraction.10NOTRAITOR;Из-за уровня авторитета короны, письмо персонажа [This.GetTitledFirstNameNoRegnal] имеет рекомендательный характер.\n;x;;;;;;;;;;;;;;;
-EVTOPTEinteraction.10;Я использую рычаги влияния на персонажа [From.GetTitledFirstNameNoRegnal] чтобы избежать неудобства;x;;;;;;;;;;;;;;;
-TOOLTIPinteraction.2198;Вы воспользуетесь услугой персонажа [This.GetTitledFirstNameNoRegnal], которую должны вам, чтобы аннулировать приказ;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.2198;[Root.PrimaryTitle.GetFOA], я хотел[From.GetEndA] бы напомнить вам, что я ваш[From.GetEndA] верн[FromGetAyaYy] слуга, и настоятельно призываю вас принять эту услугу во внимание и пересмотреть свою позицию по моему справедливому конфликту.\n\nПодпись,\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x;;;;;;;;;;;;;;;
-EVTDESCinteraction.2198B;[Root.PrimaryTitle.GetFOA], будьте уверены, что неприятный вопрос относительно моего незначительного спора с вашим знаменосцем был прояснен. [FromFrom.GetLordLady] [From.GetFirstName] и я его обсудили, и что у вас нет необходимости беспокоиться о такой мелочи.\n\nПодпись,\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.2198;Я не могу игнорировать давление персонажа [From.GetTitledFirstNameNoRegnal] на меня;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.2199;[Root.GetTitle] [Root.GetFirstName], хотя я и заверяю вас, что у вас есть поддержка против агрессии персонажа [From.GetFirstNameWithDynasty], я боюсь, что не могу остановить [From.GetHerHis]. [From.GetSheHeCap] уклони[From.GetLasLsya] от моих просьб о прекращении боевых действий, и поэтому вы теперь сами по себе.\n\nС уважением,\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.2199;Я подозреваю предательство...;x;;;;;;;;;;;;;;;
-gift_artifact;Подарить артефакт;x;;;;;;;;;;;;;;;
-gift_artifact_desc;Подарить персонажу [Root.GetTitledFirstName] один из ваших артефактов.;x;;;;;;;;;;;;;;;
-EVTTOOLTIPgift_artifact;Выбрать артефакт в подарок персонажу [Root.GetTitledFirstName];x;;;;;;;;;;;;;;;
-EVTDESC_gift_artifact_1;Какой артефакт вы хотите подарить персонажу [artifact_recipient.GetTitledFirstName]?;x;;;;;;;;;;;;;;;
-EVTOPTA_gift_artifact_1;Может быть, что-то другое;x;;;;;;;;;;;;;;;
-EVTOPTB_gift_artifact_1;Этот будет полезен для н[artifact_recipient.GetHerHis];x;;;;;;;;;;;;;;;
-EVTOPTC_gift_artifact_1;Думаю, этот будет лучше для н[artifact_recipient.GetHerHis];x;;;;;;;;;;;;;;;
-EVTOPTD_gift_artifact_1;Они достойны этого артефакта;x;;;;;;;;;;;;;;;
-EVTDESC_gift_artifact_3;[Root.GetTitledFirstName],\nЯ решил[From.GetEndA] подарить вам один из моих артефактов в надежде, что вы найдете для него больше пользы, чем я, он должен быть доставлен вместе с этим письмом, и я надеюсь, что вам понравится этот подарок.\n\nВаш[From.GetEndA] [From.GetRootRelation] [From.GetTitledFirstName];x;;;;;;;;;;;;;;;
-EVTOPTA_gift_artifact_3;Благодарю вас!;x;;;;;;;;;;;;;;;
-EVTDESCinteraction.899;Война, которую навязали персонажу [interaction_liege.PrimaryTitle.GetName] закончилась, но мои собственные владения все еще находятся под атакой сил противника, известного как [interaction_8_aggressor.GetTitledFirstNameWithDynastyAndTitleNoRegnal]. Возможно, я долж[GetNaEn] попросить, чтобы [interaction_liege.GetTitledFirstNameNoRegnal] вмеша[interaction_liege.GetLasLsya] от моего имени?;x;;;;;;;;;;;;;;;
-EVTOPTAinteraction.899;Да, это разумно;x;;;;;;;;;;;;;;;
-EVTOPTBinteraction.899;Нет, я справлюсь;x;;;;;;;;;;;;;;;
-demand_religious_conversion;Требование религиозного обращения;x;;;;;;;;;;;;;;;
-demand_religious_conversion_desc;Требовать, чтобы [From.GetTitledFirstName] принял[From.GetEndA] [Root.Religion.GetName];x;;;;;;;;;;;;;;;
-TOOLTIPdemand_religious_conversionA;Уже НЕ требуется обращения;x;;;;;;;;;;;;;;;
-EVTDESCdiplomatic.230;[Root.GetTitledFirstNameNoRegnal], настоящим я требую, чтобы вы отказались от своих языческих и диких обычаев и обратились к истинной вере, [FromFrom.Religion.GetName].\n\nПодgись,\n[FromFrom.GetTitledFirstNameNoRegnal] из Дома [FromFrom.GetOnlyDynastyName];x;;;;;;;;;;;;;;;
-EVTOPTAdiplomatic.230;[FromFrom.PrimaryTitle.GetFOA], я принимаю это требование;x;;;;;;;;;;;;;;;
-EVTOPTCdiplomatic.230;Я никогда не откажусь от своей веры!;x;;;;;;;;;;;;;;;
-EVTDESCdiplomatic.231;[Root.PrimaryTitle.GetFOA], я подчинюсь вашей воле и перейду в [Root.Religion.GetName]. Впредь считайте меня истинным верующим и верным знаменосцем.\n\nПисано пред взором Владыки,\n[From.GetTitledFirstNameWithDynastyNoRegnal];x;;;;;;;;;;;;;;;
-EVTDESCdiplomatic.232;[Root.PrimaryTitle.GetFOA], я отказываюсь от этого возмутительного требования. Я не буду отказываться от своей исконной веры в пользу каких-то ложных богов.\n\nПодпись,\n[From.GetTitledFirstNameWithDynastyNoRegnal];x;;;;;;;;;;;;;;;
-EVTOPTAdiplomatic.232;[From.GetSheHeCap] пожалеет об этом!;x;;;;;;;;;;;;;;;
-EVTOPTFinteraction.14;Что может сделать мой регентский совет?;x;;;;;;;;;;;;;;;
-opinion_visited_chamber;Посещение камеры;x;;;;;;;;;;;;;;;
+#CODE;ENGLISH;x
+real_insult;Оскорблённ[_ый];x
+real_gift;Отправленный подарок;x
+opinion_protected_me;Защищал[_] меня от врага;x
+interaction_lover;Любовни[_к__];x
+EVTDESC70034;[From.GetTitle] [From.GetFirstNameWithDynasty] был[From.GetEndA] коронован[From.GetEndA] как победитель[From.GetEndNitsa] моего турнира.;x
+EVTDESCinteraction.2;Взаимодействие с основной целью (проигнорировать и нажать ок);x
+EVTDESCinteraction.3;Меню взаимодействия. Выберите категорию.;x
+EVTDESCinteraction.4;Персональное меню;x
+EVTDESCinteraction.6;Меню действий;x
+EVTDESCinteraction.23;[From.GetTitle] [From.GetFirstNameWithDynasty] отправил[From.GetEndA] вам подарок;x
+EVTDESCINSULT;[Root.GetTitle] [Root.GetFirstName], я презираю вас. Вы [GetFromRootInsult] идиот[Root.GetEndKa], и один ваш вид отталкивает меня.\n\nПодпись,\n[FromFrom.GetTitle] [FromFrom.GetFirstName] из Дома [FromFrom.GetOnlyDynastyName];x
+EVTOPTAinteraction.2;Ok;x
+EVTOPTAinteraction.3;Персональное;x
+EVTOPTDinteraction.3;Действие;x
+NEVERMIND;Не берите в голову;x
+EVTOPTAinteraction.4;Отправить подарок;x
+insult_character;Оскорбить;x
+insult_character_desc;Отправить оскорбительное письмо персонажу [Root.GetTitle] [Root.GetFirstNameWithDynasty] - это понизит [Root.GetHerHis] отношение к вам.;x
+EVTOPTAinteraction.23;Спасибо!;x
+EVTOPTAinteraction.24;Как [GetRootFromInsult] смеет так обращаться ко мне?;x
+EVTOPTB453;Это благородный поступок?;x
+visit_chambers;Посетить камеру;x
+visit_chambers_desc;Посетить камеру, где сидит [Root.GetTitledFirstNameWithDynasty]...;x
+TOOLTIPVISITCHAMBERCHILD;[Root.GetFirstName] НЕ является дедом, родителем, ребенком или внуком персонажа [From.GetTitle] [From.GetFirstName]\n;x
+TOOLTIPVISITCHAMBERDIVINEBLOOD;Династия [From.GetOnlyDynastyName] практикует кровосмешение\n;x
+TOOLTIPSEDUCELOCATION;[Root.GetFirstName] находится в области [From.Location.GetName], И [From.Location.GetName] владеет титулом [From.GetFirstName] или [Root.GetFirstName] ИЛИ [From.GetFirstName] НЕ командует\n;x
+TOOLTIPVISITCOMMANDLOCATION;[From.Location.GetName] владеет титулом [From.GetFirstName] или [Root.GetFirstName]\n;x
+TOOLTIPVISITCHAMBERORIENTATION;[Root.GetFirstName] желателен для сексуальной ориентации персонажа [From.GetFirstName]\n;x
+TOOLTIPVISITCHAMBERPRISONER;Если [Root.GetFirstName] является заключенн[Root.GetOyYm] персонажа [From.GetFirstName], [From.GetFirstName] НЕ долж[From.GetNaEn] быть добр[From.GetOyYm] или благородн[From.GetOyYm]\n;x
+TOOLTIPinteraction.26;[Root.GetTitledFirstNameNoRegnal] ответит на ваши попытки соблазнения;x
+TOOLTIPinteraction.26B;Вы прокладываете себе путь в комнату персонажа [Root.GetTitledFirstNameNoRegnal]...;x
+EVTDESCinteraction.26;Я просыпаюсь под звуки скрипа моей двери... это [visiting_chambers.GetTitledFirstNameNoRegnal]!;x
+knight_character;Даровать рыцарство;x
+knight_character_desc;Как помазанный рыцарь, вы имеете право предоставить персонажу [Root.GetTitle] [Root.GetFirstNameWithDynasty] рыцарство;x
+EVTDESCinteraction.22;Вас посвятил в рыцари [FromFrom.GetTitle] [FromFrom.GetFirstNameWithDynasty];x
+EVTOPTAinteraction.22;Спасибо!;x
+stand_down;Приказать закончить войну;x
+stand_down_desc;Отправить письмо персонажу [Root.GetTitle] [Root.GetFirstNameWithDynasty], приказав прекратить агрессивную войну против другого вашего знаменосца.;x
+TOOLTIPstand_downVOTEONGOING;Совет еще НЕ голосовал за приказ отступить;x
+TOOLTIPstand_downCOUNCIL;Совет персонажа [From.GetTitledFirstName] НЕ имеет права голоса в дипломатических вопросах\n;x
+TOOLTIPstand_downCOUNCILCOOLDOWN;Совет недавно НЕ голосовал за выдачу приказа персонажу [Root.GetTitledFirstName]\n;x
+TOOLTIPstand_downASKED;[Root.GetTitledFirstName] НЕ приказывал[Root.GetEndA] недавно\n;x
+TOOLTIPstand_downPRISONER;[Root.GetTitledFirstName] - пленни[Root.GetTsaK] персонажа [From.GetTitledFirstName]\n;x
+TOOLTIPstand_downVOTE;§YСовет§! будет голосовать за отдачу приказа персонажу [This.GetTitle] [This.GetFirstName]\n;x
+TOOLTIPPIinteraction.10;Из-за уровня власти государства [From.PrimaryTitle.GetName], этот приказ будет обязателен и законен. Это означает, что у вас будет возможность объявить персонажа [Root.GetTitle] [Root.GetFirstNameWithDynasty] врагом государства, если откажется.\n\n;x
+TOOLTIPPIinteraction.11;Из-за уровня власти государства [From.PrimaryTitle.GetName], эта команда НЕ обязательна и незаконна. Это означает, что [Root.GetTitle] [Root.GetFirstNameWithDynasty] может проигнорировать ваш приказ без каких-либо последствий.\n\n;x
+appoint_to_kingsguard;Назначить в Королевскую гвардию;x
+appoint_to_kingsguard_desc;Королевской гвардии требуется семь членов. Предложить освободившееся место человеку, известному как [Root.GetTitle] [Root.GetFirstNameWithDynasty].;x
+TOOLTIPkingsguardNEEDED;Место в Королевской гвардии вакантно\n;x
+TOOLTIPinteraction.7;ответит на ваше предложение;x
+grant_lp;Даровать [Root.PrimaryTitle.Kingdom.GetFullName];x
+grant_lp_desc;[Root.PrimaryTitle.Kingdom.GetFullName] в настоящее время отделено от Короны. [Root.GetTitledFirstNameWithDynasty] получит этот титул и станет повелителем региона.;x
+grant_lp_landless;Даровать Королевство;x
+grant_lp_landless_desc;[FromFrom.PrimaryTitle.Kingdom.GetFullName] в настоящее время не отделено от Короны. [Root.GetTitledFirstNameWithDynasty] получит этот титул и станет повелителем региона.;x
+EVTDESCinteraction.5;Меню дипломатии;x
+EVTOPTBinteraction.3;Дипломатия;x
+EVTDESCinteraction.10;[Root.GetTitle] [Root.GetFirstName], я приказываю вам сложить оружие и прекратить свои агрессивные войны. Если вы проигнорируете этот приказ от своего законного господина, у меня не останется выбора, кроме как объявить вас предателем и врагом государства.\n\nПодпись,\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x
+EVTDESCinteraction.10B;[Root.GetTitle] [Root.GetFirstName], от имени правителя [FromFrom.GetTitledFirstNameWithDynastyAndTitleNoRegnal], регентский совет настоящим приказывает вам сложить оружие и прекратить агрессивные войны. Если вы проигнорируете этот приказ, у нас не будет выбора, кроме как объявить вас предателем и врагом королевства.\n\nПодпись,\n[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], [From.GetLordLady]-регент [FromFrom.PrimaryTitle.GetName];x
+EVTOPTAinteraction.10;[From.PrimaryTitle.GetFOA], я сделаю что приказано;x
+EVTOPTBinteraction.10;Нет;x
+EVTDESCinteraction.14;[Root.PrimaryTitle.GetFOA], боюсь, я не могу закончить эту войну. Мое дело правое, и поэтому вы не имеете права приказывать мне остановиться. \n\nПодпись,\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x
+EVTOPTAinteraction.14;[From.GetSheHeCap] будет заклеймен[From.GetEndA] как изменни[From.GetTsaK];x
+EVTOPTBinteraction.14;Я арестую [From.GetHerHis] за измену;x
+EVTOPTDinteraction.14;Тогда право на [From.PrimaryTitle.GetName] получит кто-то ещё;x
+EVTTOOLTIPinteraction.14;Вы выбрали того, кому даруете право претендовать на эти земли;x
+EVTOPTCinteraction.14;Может быть, я позволю... только в этот раз.;x
+EVTDESC20800303;Ваш лорд, [From.GetTitle] [From.GetFirstNameWithDynasty], приказывает вам найти предателя среди вассалов. [From.GetHerHis] отказ будет рассматриваться как измена.;x
+EVTOPTA20800303;Справедливость восторжествует.;x
+EVTOPTB20800303;Я не подниму оружия против своих подданных!;x
+EVTDESC20800304;Ваш сюзерен, [From.GetTitle] [From.GetFirstNameWithDynasty], вмешивается, чтобы защитить вас от агрессии со стороны врага [FromFrom.GetTitle] [FromFrom.GetFirstNameWithDynasty].;x
+EVTDESC20800305;Ваш сюзерен, [From.GetTitle] [From.GetFirstNameWithDynasty], отказался выступить против вас, игнорируя приказ от правителя, известного как [FromFrom.GetTitle] [FromFrom.GetFirstNameWithDynasty].;x
+EVTDESC20800306;Ваш вассал [From.GetTitle] [From.GetFirstNameWithDynasty] отказался выполнить ваш приказ и выследить предателя.;x
+EVTOPTA20800306;Измена! Я раздавлю [From.GetHerHis] сам и сожгу город [From.Capital.GetName].;x
+EVTOPTA20800304;Спасибо вам, мой [From.GetTitle].;x
+TOOLTIPCBENFORCEDTRUCE;[Root.GetTitledFirstName] недавно НЕ объявлял[Root.GetEndA] перемирие с персонажем [From.GetTitledFirstName], своим сюзереном\n;x
+TOOLTIPCBENFORCEDTRUCEB;[Root.GetTitledFirstName] НЕ был[Root.GetEndA] вынужден[Root.GetEndA] объявить перемирие с персонажем [Root.Liege.GetTitledFirstName]\n;x
+EVTDESC20800307;Ваш сюзерен [From.GetTitle] [From.GetFirstNameWithDynasty] назвал[From.GetEndA] ваши действия изменой и требует вашей головы.;x
+EVTOPTA20800307;Созвать знамёна. Мы выступаем на город [From.Capital.GetName].;x
+CB_NAME_TRAITOR;Принести предателя правосудию;x
+WAR_NAME_TRAITOR;$ORDER$ $FIRST_ADJ$ наказать изменника против $SECOND$;x
+EVTOPTA20800999;Ok.;x
+EVTDESC20800999;[FromFrom.GetTitle] [FromFrom.GetFirstNameWithDynasty] вмешивается против персонажа [From.GetTitle] [From.GetFirstNameWithDynasty].;x
+EVTDESC20800998;[FromFrom.GetTitle] [FromFrom.GetFirstNameWithDynasty] пыта[FromFrom.GetLasLsya] вмешаться против персонажа [From.GetTitle] [From.GetFirstNameWithDynasty], но [From.GetTitle] [From.GetFirstNameWithDynasty] отказал[From.GetEndA].;x
+EVTDESCinteraction.15;Кто же должен иметь право претендовать на город [FromFrom.Capital.GetName], результат предательства персонажа [FromFrom.GetTitle] [FromFrom.GetFirstNameWithDynasty];x
+EVTOPTAinteraction.15;Подтвердить притязания на [FromFrom.PrimaryTitle.GetName] для соперника предателя;x
+EVTOPTBinteraction.15;Подтвердить притязания на [FromFrom.PrimaryTitle.GetName] для сюзерена предателя;x
+EVTOPTCinteraction.15;Подтвердить притязания на [FromFrom.PrimaryTitle.GetName] для себя;x
+EVTDESCinteraction.8;[Root.PrimaryTitle.GetFOA], я смиренно прошу вас вмешаться от моего имени против агрессии персонажа [stand_down_aggressor.GetTitledFirstNameNoRegnal] [stand_down_aggressor.GetOnlyDynastyName], котор[stand_down_aggressor.GetAyaYy] вторгается в мои земли, явно нарушая мир в государстве. Я был[From.GetEndA] бы бесконечно благодар[From.GetNaEn] за вашу поддержку в этом вопросе.\n\nВаш[From.GetEndA],\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x
+EVTOPTAinteraction.8;Я прикажу, чтобы [stand_down_aggressor.GetTitledFirstNameNoRegnal] прекратил[stand_down_aggressor.GetEndA];x
+EVTOPTAinteraction.8B;Совет голосует, я буду голосовать в пользу персонажа [From.GetTitle] [From.GetFirstName].;x
+EVTOPTAinteraction.8C;Регентский совет принимает решение по этому вопросу;x
+EVTOPTBinteraction.8;Какое мне дело?;x
+EVTOPTBinteraction.8B;Я буду голосовать против приказа персонажу [stand_down_aggressor.GetTitledFirstNameNoRegnal];x
+EVTDESCinteraction.12;[Root.GetTitle] [Root.GetFirstName], хоть я и сочувствую вашему положению, я решил[From.GetEndA], что не могу вмешиваться в эту войну. Я надеюсь, обе стороны урегулируют свои разногласия полюбовно.\n\nПодпись,\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x
+EVTOPTAinteraction.12;Полюбовно?! Бессмысленный ответ!;x
+EVTDESCinteraction.13;[Root.PrimaryTitle.GetFOA], я, конечно, повинуюсь вышей воле и закончу войну, как велено. Пожалуйста, возьмите это как знак моей вечной верности.\n\nПодпись,\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x
+EVTDESC20800452;Тёмные вести пришли со Стены, милорд: член вашей династии погиб в результате несчастного случая.;x
+EVTOPTA20800452;Да покоится он с миром.;x
+banish_prisoner;Отправить в Ночной Дозор;x
+banish_prisoner_desc;Заставить персонажа [Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal] надеть чёрное и отправить на Стену.;x
+banish_prisoner_named;Изгнать персонажа [Root.GetTitledFirstNameWithDynasty] в Ночной Дозор;x
+ask_liege_help;Попросить помощи сюзерена;x
+ask_liege_help_desc;Попросить вашего сюзерена о защите в оборонительной войне.;x
+EVTDESCinteraction.16;[Root.GetFirstNameWithDynasty], [From.GetFirstNameWithDynasty] был[From.GetEndA] заклеймен[From.GetEndA] как предатель[From.GetEndNitsa] за игнорирование моего приказа прекратить свои агрессивные войны. Как следствие, я предоставляю вам право на титул [From.PrimaryTitle.GetName].\n\n Подпись,\n[FromFrom.GetTitle] [FromFrom.GetFirstName] из Дома [FromFrom.GetOnlyDynastyName];x
+EVTOPTAinteraction.16;Это будет полезно!;x
+EVTDESCinteraction.17;[Root.PrimaryTitle.GetFOA], [From.GetTitle] [From.GetFirstName] заклеймил[From.GetEndA] вас как предателя за игнорирование приказа остановиться. Как следствие, вашему врагу была предоставлена претензия на титул [Root.PrimaryTitle.GetName].;x
+EVTOPTAinteraction.17;Прокльтье на твою голову!;x
+EVTTOOLTIPinteraction.10;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] получит приказ закончить свою войну;x
+EVTOPTBinteraction.6;Удалить с должности командующего;x
+EVTTOOLTIPinteraction.17;[This.GetTitledName] получит право на титул [Root.PrimaryTitle.GetName];x
+TOOLTIPinteraction.15A;предоставляется право на титул [Prev.PrimaryTitle.GetName]\n;x
+TOOLTIPEVTOPTCinteraction.5;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] назначается следующим Лордом-Командующим Королевской гвардиии\n;x
+EVTOPTCinteraction.5;Назначит в качестве следующего Лорда-Командующего;x
+TOOLTIPINTERACTIONPERSONAL;Возможны следующие действия:\n-Отправить дар\n-Отправить оскорбление\n-Посетить\n-Пожаловать рыцарство\n;x
+TOOLTIPINTERACTIONDIPLOMATIC;Возможны следующие действия:\n-Приказать знаменосцу прекратить\n-Назначить рыцаря в Королевскую гвардию\n-Назначить следующего Великого Септона\n-Пожаловать титул Верховного Лорда\n;x
+TOOLTIPINTERACTIONACTION;Возможны следующие действия:\n-Защита и Исцеление Р'глора\n-Подкупить советника на миссии\n-Сделать предложение о покупке раба\n-Столкнуться с драконом\n-Подаритьмеч\n;x
+scorch_the_land;Сожжённая Земля;x
+scorch_the_land_desc;Сжечь всё и изнасиловать женщин;x
+EVTDESCinteraction.18;[FromFrom.GetTitle] [FromFrom.GetFirstName] является справедливым и способным сюзереном, [FromFrom.GetSheHe] смог[FromFrom.GetNoneE] заставить персонажа [From.GetFirstNameWithDynasty] остановить свою войну и агрессию против нас.;x
+EVTOPTAinteraction.18;Я благодар[GetNaEn];x
+rhllor_action;Р'Глор: Список действий;x
+rhllor_action_desc;Вы принесли жертву Красному Богу, и поэтому можете принять меры против персонажа [Root.GetTitle] [Root.GetFirstNameWithDynasty].;x
+TOOLTIPinteraction.14;получит сведения;x
+EVTOPTBinteraction.10;Я не буду выполнять это;x
+EVTOPTDinteraction.10;[From.GetTitledFirstNameNoRegnal] не имеет права требовать это;x
+EVTDESCinteraction.11;[Root.GetTitle] [Root.GetFirstName], я пишу вам это письмо, чтобы выразить мое неодобрение вашей агрессии. Я призываю вас прекратить боевые действия или же вы почувствуете на себе гнев государства.\n\nПодпись,\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x
+EVTDESCinteraction.11B;[Root.GetTitle] [Root.GetFirstName], я пишу вам это письмо, чтобы выразить неодобрение регентским советом ваших агрессивных войн. [FromFrom.GetTitledFirstNameWithDynastyAndTitleNoRegnal] посредством Совета призывает Вас заключить мир и прекратить боевые действия, или же вы почувствуете на себе гнев государства.\n\nПодпись,\n[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], [From.GetLordLady]-регент [FromFrom.PrimaryTitle.GetName];x
+opinion_did_not_stand_down;Не отступлюсь;x
+EVTOPTEinteraction.14;Я ничего не могу поделать;x
+EVTOPTD452;Что [From.GetSheHe] сделает мне?;x
+EVTTOOLTIPinteraction.26;[This.GetTitledFirstName] устроит вам хороший беспорядок;x
+EVTOPTCinteraction.27;Я здесь [Root.GetTitle] и мы возляжем;x
+opinion_forced_upon_me;Принуждение меня;x
+opinion_forced_upon_kin;Принуждение моего родственника;x
+opinion_forced_upon_spouse;Принуждение моего супруга;x
+opinion_forced_upon_lover;Вынудил[_] мо[_его] любовни[_ка];x
+opinion_forced_upon_friend;Вынудил[_] моего друга;x
+TOOLTIPinteraction.27;Семья и друзья персонажа [This.GetTitledFirstName] возмущены\n;x
+EVTDESC455;[From.GetTitledFirstName] кричал[From.GetEndA] и поднял[From.GetEndA] суету перед стражей!;x
+EVTOPTAinteraction.28;[From.GetSheHeCap] отказывает мне?!;x
+opinion_scandalised_me;Возмутил[_]меня;x
+TOOLTIPinteraction.28;Семья персонажа [This.GetTitledFirstName] возмущена\n;x
+EVTDESCinteraction.29;[From.GetTitledFirstNameWithDynastyNoRegnal] опозорил[From.GetEndA] Дом [Root.GetOnlyDynastyName]. Мы получили сообщение из области [From.Location.GetName], что [From.GetSheHe] захватил[From.GetEndA] [From.GetHerHis], заключив в темницу персонажа [FromFrom.GetRootRelation] [FromFrom.GetFirstName] и пытаясь принудить [FromFrom.GetHerHis]. [From.GetTitledFirstNameNoRegnal] провалил[From.GetEndA] свой планн, когда крики привлекли внимание стражи.;x
+EVTOPTAinteraction.29;Это возмутительное поведение!;x
+opinion_scandalised_kin;Возмутил[_] моего родственника;x
+EVTDESCinteraction.30;Ваш[FromFrom.GetEndA] [FromFrom.GetRootRelation] [FromFrom.GetTitledFirstNameNoRegnal] страдает под стражей своих захватчиков, мы получили сообщение, что [FromFrom.GetHerHis] камеры чвсто посещаются персонажем [From.GetTitledFirstNameWithDynastyNoRegnal]. При этом [FromFrom.GetRootRelation] может ожидать что угодно, что только [From.GetTitledFirstNameNoRegnal] не придумает.;x
+EVTOPTAinteraction.30;Я отомщу за это!;x
+EVTDESCinteraction.19;[Root.GetTitle] [Root.GetFirstName], я могу заверить вас, что вы имеете мою полную поддержку против агрессии персонажа [FromFrom.GetFirstNameWithDynasty]. Негодяй[FromFrom.GetEndKa] проигнорировал[FromFrom.GetEndA] мой приказ прекратить войну, и поэтому я назвал[From.GetEndA] [FromFrom.GetHerHis] изменником и врагом государства.\n\nТеперь вы можете победить [FromFrom.GetHerHis],\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x
+EVTOPTAinteraction.19;[Root.PrimaryTitle.GetFOA], я благодарю Вас за поддержку;x
+EVTDESCinteraction.20;[Root.GetTitle] [Root.GetFirstName], хоть я уверяю, что вы получите мою поддержку против агрессии персонажа [From.GetFirstNameWithDynasty], я боюсь, что не в силах остановить [From.GetHerHis]. [From.GetSheHeCap] проигнорировал[From.GetEndA] мои просьбы о прекращении боевых действий, и поэтому вы теперь сами по себе.\n\nС уважением,\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x
+EVTOPTAinteraction.20;Бессильн[_ый];x
+TOOLTIPinteraction.8;[This.GetTitle] [This.GetFirstName] получит письмо с просьбой о вмешательстве в войну;x
+EVTDESCinteraction.21;Всем моим подданным,\nЗа преступление отказа сохранить мир и не подчиннение явному приказу прекратить боевые действия, я настоящим называю, что [FromFrom.GetTitle] [FromFrom.GetFirstNameWithDynasty] - изменни[FromFrom.GetTsaK] и враг государства.\n\nПодпись,\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x
+EVTOPTAinteraction.21;[From.GetSheHeCap] пожалеет об этом решении;x
+EVTOPTBinteraction.21;[FromFrom.GetTitle] [FromFrom.GetFirstName] смел[FromFrom.GetEndA];x
+EVTDESCSENDINSULT;У вас есть письмо для персоны [From.GetFirstName], написанное и подписанное:\n' ...я вас презираю. Вы [GetRootFromInsult], и ваш [GetRootFromInsult] вид отвратителен.\nПодпись,\n[Root.GetTitle] [Root.GetFirstName] из Дома [Root.GetOnlyDynastyName]';x
+EVTOPTASENDINSULT;Это научит, что [GetRootFromInsult];x
+make_noble;Повысить до знати;x
+make_noble_desc;Сделать подданного по имени [Root.GetTitledFirstName] дворянином, дав [Root.GetHerHim] [Root.GetHerHis] собственный дом и герб, а также доходы, чтобы начать [Root.GetHerHis] хозяйство.;x
+TOOLTIPmake_noble;[Root.GetTitledFirstName] получает новое имя дома и герб\n;x
+voted_on_stand_down;Проголосовали за приказ остановиться;x
+EVTDESCcouncillor.1;Совет был созван для голосования по спору, который возник между двумя вассалами персонажа [FromFrom.GetTitledFirstNameNoRegnal]. [From.GetTitledFirstNameWithDynastyNoRegnal] обвиняется во вторжении в земли персонажа [stand_down_defender.GetTitledFirstNameNoRegnal] [stand_down_defender.GetOnlyDynastyName] и нарушении мира. Теперь Совет должен проголосовать за то, чтобы [From.GetTitledFirstNameNoRegnal] получил[From.GetEndA] приказ остановить свою агрессию, [FromFrom.GetTitledFirstNameNoRegnal] проголосовал[FromFrom.GetEndA] ЗА.;x
+EVTDESCcouncillor.1B;Совет был созван для голосования по спору, который возник между двумя вассалами персонажа [FromFrom.GetTitledFirstNameNoRegnal]. [From.GetTitledFirstNameWithDynastyNoRegnal] обвиняется во вторжении в земли персонажа [stand_down_defender.GetTitledFirstNameNoRegnal] [stand_down_defender.GetOnlyDynastyName] и нарушении мира. Теперь Совет должен проголосовать за то, чтобы, чтобы [From.GetTitledFirstNameNoRegnal] получил[From.GetEndA] приказ остановить свою агрессию,  [FromFrom.GetTitledFirstNameNoRegnal] проголосовал[FromFrom.GetEndA] ПРОТИВ.;x
+EVTDESCcouncillor.1C;Регентский совет был созван для голосования по спору, который возник между двумя вассалами персонажа [FromFrom.GetTitledFirstNameNoRegnal]. [From.GetTitledFirstNameWithDynastyNoRegnal] обвиняется во вторжении в земли персонажа [stand_down_defender.GetTitledFirstNameNoRegnal] [stand_down_defender.GetOnlyDynastyName] и нарушении мира. Совет должен проголосовать за то, чтобы получил[From.GetEndA] приказ остановить свою агрессию.;x
+EVTOPTAcouncillor.1;Да, [From.GetTitledFirstNameNoRegnal] будет вынужден[From.GetEndA] остановиться;x
+EVTOPTBcouncillor.1;Я голосую против этого действия;x
+EVTDESCcouncillor.2;Голосование о том, чтобы [From.GetTitledFirstNameWithDynastyNoRegnal] закончил[From.GetEndA] свою войну против персонажа [stand_down_defender.GetTitledFirstNameNoRegnal] [stand_down_defender.GetOnlyDynastyName] было проведено...;x
+EVTOPTAcouncillor.2;Совет проголосовал ЗА;x
+EVTOPTAcouncillor.2B;Я накладываю вето на этот приказ!;x
+EVTOPTAcouncillor.2C;Голосование ничего не решило, поэтому я выбираю приказать;x
+EVTOPTAcouncillor.2D;Голоса разделились поровну, [FromFrom.GetTitledFirstNameNoRegnal] и [FromFrom.GetHerHis] голос решит;x
+EVTOPTAcouncillor.2E;Голоса разделились поровну, [FromFrom.Regent.GetTitledFirstNameNoRegnal] и [FromFrom.GetHerHis] голос решит;x
+TOOLTIPcouncil_vote_approve_end_war;[This.GetTitledFirstNameWithDynastyNoRegnal] проголосовал[This.GetEndA] §GЗА§!\n;x
+TOOLTIPcouncil_vote_against_end_war;[This.GetTitledFirstNameWithDynastyNoRegnal] проголосовал[This.GetEndA] §RПРОТИВ§!\n;x
+EVTOPTBcouncillor.2;Совет проголосовал ПРОТИВ;x
+EVTOPTBcouncillor.2B;Я использую вето!;x
+EVTOPTBcouncillor.2C;Голоса разделились поровну, приказ не будет отдан;x
+EVTDESCcouncillor.3;[From.GetTitledFirstNameNoRegnal] пош[From.GetLaYol] против воли совета, несмотря на его решающее право голоса по дипломатическим вопросам. Совет решил проголосовать за приказ персонажу [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] остановить войну против своего врага, известного как [stand_down_defender.GetTitledFirstNameNoRegnal] [stand_down_defender.GetOnlyDynastyName], но [From.GetTitledFirstNameNoRegnal] заблокировал[From.GetEndA] предложение.;x
+EVTOPTAcouncillor.3;Это посягательство на права Совета!;x
+EVTDESCcouncillor.4;[From.GetTitledFirstNameNoRegnal] пош[From.GetLaYol] против воли совета, несмотря на его право голоса по дипломатическим вопросам. Совет решил не выдавать приказ персонажу [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] остановить [FromFrom.GetHerHis] войну против своего врага, известного как [stand_down_defender.GetTitledFirstNameNoRegnal] [stand_down_defender.GetOnlyDynastyName], но [From.GetTitledFirstNameNoRegnal] заблокировал[From.GetEndA] предложение, и все-равно отдал[From.GetEndA] приказ.;x
+EVTOPTAcouncillor.4;[From.GetSheHeCap] не долж[From.GetNaEn] игнорировать свой совет;x
+EVTDESCinteraction.2099;[Root.GetTitle] [Root.GetFirstName], согласно законам государства [From.PrimaryTitle.GetName], Совет принял решение о том, следует ли приказать персонажу [From.GetFirstNameWithDynasty] остановить свою войну проти вас. Я с сожалением сообщаю вам, что Совет проголосовал против этого предложения, поэтому вы теперь сами по себе.\n\nС уважением,\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x
+EVTOPTAinteraction.2099;Почему Совет игнорирует мою беду?;x
+disinherit_child;Лишить наследства персонажа [Root.GetTitledFirstNameNoRegnal];x
+disinherit_child_desc;Лишить наследства персонажа [Root.GetTitledFirstNameNoRegnal];x
+send_to_the_citadel;Отправить в Цитадель;x
+send_to_the_citadel_desc;Отправить персонажа [Root.GetTitledFirstNameNoRegnal] в Цитадель учиться на мейстера;x
+opinion_sent_me_to_the_citadel;Отправил[_] меня в Цитадель;x
+abdicate_decision;Отречься;x
+abdicate_decision_desc;Отказаться всех от земель и титулов в пользу своего наследника;x
+divorce_rel_head;Расторжение брака;x
+divorce_rel_head_desc;Использовать вашу власть как главы религии для развода с персонажем [Root.GetTitledFirstName];x
+TOOLTIPinteraction.10TRAITOR;Из-за уровня авторитета короны, [This.GetTitledFirstNameNoRegnal] будет иметь право заклеймить вас как §Rизменника§!.\n;x
+TOOLTIPinteraction.10NOTRAITOR;Из-за уровня авторитета короны, письмо персонажа [This.GetTitledFirstNameNoRegnal] имеет рекомендательный характер.\n;x
+EVTOPTEinteraction.10;Я использую рычаги влияния на персонажа [From.GetTitledFirstNameNoRegnal] чтобы избежать неудобства;x
+TOOLTIPinteraction.2198;Вы воспользуетесь услугой персонажа [This.GetTitledFirstNameNoRegnal], которую должны вам, чтобы аннулировать приказ;x
+EVTDESCinteraction.2198;[Root.PrimaryTitle.GetFOA], я хотел[From.GetEndA] бы напомнить вам, что я ваш[From.GetEndA] верн[FromGetAyaYy] слуга, и настоятельно призываю вас принять эту услугу во внимание и пересмотреть свою позицию по моему справедливому конфликту.\n\nПодпись,\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x
+EVTDESCinteraction.2198B;[Root.PrimaryTitle.GetFOA], будьте уверены, что неприятный вопрос относительно моего незначительного спора с вашим знаменосцем был прояснен. [FromFrom.GetLordLady] [From.GetFirstName] и я его обсудили, и что у вас нет необходимости беспокоиться о такой мелочи.\n\nПодпись,\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x
+EVTOPTAinteraction.2198;Я не могу игнорировать давление персонажа [From.GetTitledFirstNameNoRegnal] на меня;x
+EVTDESCinteraction.2199;[Root.GetTitle] [Root.GetFirstName], хотя я и заверяю вас, что у вас есть поддержка против агрессии персонажа [From.GetFirstNameWithDynasty], я боюсь, что не могу остановить [From.GetHerHis]. [From.GetSheHeCap] уклони[From.GetLasLsya] от моих просьб о прекращении боевых действий, и поэтому вы теперь сами по себе.\n\nС уважением,\n[From.GetTitle] [From.GetFirstName] из Дома [From.GetOnlyDynastyName];x
+EVTOPTAinteraction.2199;Я подозреваю предательство...;x
+gift_artifact;Подарить артефакт;x
+gift_artifact_desc;Подарить персонажу [Root.GetTitledFirstName] один из ваших артефактов.;x
+EVTTOOLTIPgift_artifact;Выбрать артефакт в подарок персонажу [Root.GetTitledFirstName];x
+EVTDESC_gift_artifact_1;Какой артефакт вы хотите подарить персонажу [artifact_recipient.GetTitledFirstName]?;x
+EVTOPTA_gift_artifact_1;Может быть, что-то другое;x
+EVTOPTB_gift_artifact_1;Этот будет полезен для н[artifact_recipient.GetHerHis];x
+EVTOPTC_gift_artifact_1;Думаю, этот будет лучше для н[artifact_recipient.GetHerHis];x
+EVTOPTD_gift_artifact_1;Они достойны этого артефакта;x
+EVTDESC_gift_artifact_3;[Root.GetTitledFirstName],\nЯ решил[From.GetEndA] подарить вам один из моих артефактов в надежде, что вы найдете для него больше пользы, чем я, он должен быть доставлен вместе с этим письмом, и я надеюсь, что вам понравится этот подарок.\n\nВаш[From.GetEndA] [From.GetRootRelation] [From.GetTitledFirstName];x
+EVTOPTA_gift_artifact_3;Благодарю вас!;x
+EVTDESCinteraction.899;Война, которую навязали персонажу [interaction_liege.PrimaryTitle.GetName] закончилась, но мои собственные владения все еще находятся под атакой сил противника, известного как [interaction_8_aggressor.GetTitledFirstNameWithDynastyAndTitleNoRegnal]. Возможно, я долж[GetNaEn] попросить, чтобы [interaction_liege.GetTitledFirstNameNoRegnal] вмеша[interaction_liege.GetLasLsya] от моего имени?;x
+EVTOPTAinteraction.899;Да, это разумно;x
+EVTOPTBinteraction.899;Нет, я справлюсь;x
+demand_religious_conversion;Требование религиозного обращения;x
+demand_religious_conversion_desc;Требовать, чтобы [From.GetTitledFirstName] принял[From.GetEndA] [Root.Religion.GetName];x
+TOOLTIPdemand_religious_conversionA;Уже НЕ требуется обращения;x
+EVTDESCdiplomatic.230;[Root.GetTitledFirstNameNoRegnal], настоящим я требую, чтобы вы отказались от своих языческих и диких обычаев и обратились к истинной вере, [FromFrom.Religion.GetName].\n\nПодgись,\n[FromFrom.GetTitledFirstNameNoRegnal] из Дома [FromFrom.GetOnlyDynastyName];x
+EVTOPTAdiplomatic.230;[FromFrom.PrimaryTitle.GetFOA], я принимаю это требование;x
+EVTOPTCdiplomatic.230;Я никогда не откажусь от своей веры!;x
+EVTDESCdiplomatic.231;[Root.PrimaryTitle.GetFOA], я подчинюсь вашей воле и перейду в [Root.Religion.GetName]. Впредь считайте меня истинным верующим и верным знаменосцем.\n\nПисано пред взором Владыки,\n[From.GetTitledFirstNameWithDynastyNoRegnal];x
+EVTDESCdiplomatic.232;[Root.PrimaryTitle.GetFOA], я отказываюсь от этого возмутительного требования. Я не буду отказываться от своей исконной веры в пользу каких-то ложных богов.\n\nПодпись,\n[From.GetTitledFirstNameWithDynastyNoRegnal];x
+EVTOPTAdiplomatic.232;[From.GetSheHeCap] пожалеет об этом!;x
+EVTOPTFinteraction.14;Что может сделать мой регентский совет?;x
+opinion_visited_chamber;Посещение камеры;x

@@ -1,253 +1,254 @@
-EVTDESCDUEL2;Вы и [combatant_1.GetTitledFirstName] медленно обходите друг друга по кругу, напряженно и сосредоточенно. Вы оцениваете [combatant_1.GetHerHis], выявляя любую слабость, любую щель в защите, которой вы могли бы воспользоваться.;x;;;
-EVTDESCDUEL2BATTLE;В разгаре битвы вы и [combatant_1.GetTitledFirstName] кружите друг с другом, напряженно и сосредоточенно. Все сражение вокруг вас, кажется, замедлилось, пока вы оцениваете [combatant_1.GetHerHis] для выявления слабостей, и щелей в обороне, которые вы могли бы использовать.;x;;;
-EVTDESCDUEL2FINGERDANCE;Вы и [combatant_1.GetTitledFirstName] сталкиваетесь в поединке с топориками в руках, готовые бросить оружие друг в друга. Вы целитесь и готовите бросок...;x;;;
-EVTDESCDUEL2TRIALBYCOMBAT;Двор внимательно смотрит, как вы и [combatant_1.GetTitledFirstName] сходитесь в поединке. Вы оцениваете [combatant_1.GetHerHis], выявляя любую слабость, любую щель в защите, которой вы могли бы воспользоваться.;x;;;
-EVTDESCDUEL2WOUNDED;[combatant_1.GetTitledFirstName] перед вами, и [combatant_1.GetSheHe] понимает, что вы страдаете от раны. [combatant_1.GetSheHeCap] смотрит на вас, отыскивая любой признак слабости, но вы твердо стоите, готовясь встретить [combatant_1.GetHerHis].;x;;;
-EVTDESCDUEL2MAIMED;Серьезная рана сильно мешает вам, поэтому вы меняете дуэльную позу. [combatant_1.GetTitledFirstName], кажется, уверен[combatant_1.GetEndA] в себе, но вы крепко стоите, независимо от этого, и готовы воспользоваться любой [combatant_1.GetHerHis] брешью в обороне, какую только увидите.;x;;;
-EVTDESCDUEL2ILL;Вы не в лучшем состоянии, чтобы сражаться, и [combatant_1.GetTitledFirstName], похоже, радуется вашему недугу. Вы смело встаете в позицию и готовы встретить [combatant_1.GetHerHis], независимо от своего самочувствия, и проверить [combatant_1.GetHerHis] защиту.;x;;;
-EVTDESCDUEL2YOUNG;Ваше оружие тяжело для ваших молодых рук, ваша броня громоздка. Однако, Вы и [combatant_1.GetTitledFirstName] готовы сойтись в бою. Медленно кружась вокруг н[combatant_1.GetHerHis], Вы ищите возможность нанести удар.;x;;;
-EVTDESCDUEL2WOUNDEDOPP;Когда [combatant_1.GetTitledFirstName] предстал[combatant_1.GetEndA] перед вами, вы понимаете, что [combatant_1.GetSheHe] борется с раной. Вы оцениваете [combatant_1.GetHerHis], отыскивая любые признаки слабости, но [combatant_1.GetSheHe] твердо стоит и готов[combatant_1.GetEndA] вас встретить.;x;;;
-EVTDESCDUEL2MAIMEDOPP;[combatant_1.GetTitledFirstName] страдает от тяжелой раны, которая затрудняет [combatant_1.GetHerHis] движения, вы перехватываете инициативу в дуэли. Вы чувствуете себя более уверенно, но [combatant_1.GetSheHe] твердо стоит на земле и готов[combatant_1.GetEndA] воспользоваться любой щелью в вашей защите, которую [combatant_1.GetSheHe] только сможет отыскать.;x;;;
-EVTDESCDUEL2ILLOPP;[combatant_1.GetTitledFirstName] находится не в лучшем состоянии, чтобы сражаться, и поэтому вы радуетесь [combatant_1.GetHerHis] болезни. [combatant_1.GetSheHeCap] храбро встает в позицию, независимо от состояния, и вы готовитесь проверить [combatant_1.GetHerHis] защиту.;x;;;
-EVTDESCDUEL2YOUNGOPP;[combatant_1.GetTitledFirstName] явно ощущает тяжесть оружия в своих молодых руках, [combatant_1.GetHerHis] броня также громоздка и велика для тела. Тем не менее, [combatant_1.GetSheHe] готов встретиться с вами в поединке, медленно кружась и оценивая возможность для удара.;x;;;
-EVTOPTADUEL2;Одна ошибка и [combatant_1.GetSheHe] получит...;x;;;
-EVTOPTADUEL2B;Это не закончится, пока [Root.GetDuelWinningConditions]...;x;;;
-EVTOPTADUEL2TRIALBYCOMBAT;[Root.Religion.GetHighGodNameCap] поможет мне...;x;;;
-EVTOPTADUEL2WOUNDED;Эта рана не остановит меня...;x;;;
-EVTOPTADUEL2MAIMED;Даже с моей раной удар будет резким...;x;;;
-EVTOPTADUEL2WOUNDEDOPP;Я буду стремиться попасть по [combatant_1.GetHerHis] ране...;x;;;
-EVTOPTADUEL2YOUNGOPP;Я не могу не пропустить удар этого юнца...;x;;;
-EVTOPTBDUEL2;[combatant_1.GetSheHeCap] не соответствует моей силе...;x;;;
-EVTOPTBDUEL2TRIALBYCOMBAT;Моя вера в [Root.Religion.GetHighGodNameCap] придает мне сил...;x;;;
-EVTOPTBDUEL2WOUNDED;Жалкая царапина не остановит меня...;x;;;
-EVTOPTBDUEL2MAIMED;Я сильнее, чем эта рана! [combatant_1.GetTitledFirstName] будет страдать...;x;;;
-EVTOPTBDUEL2WOUNDEDOPP;[combatant_1.GetHerHisCap] раны делают его немощным и жалким...;x;;;
-EVTOPTBDUEL2YOUNGOPP;Этот тщедушный сопляк мне не ровня...;x;;;
-EVTOPTCDUEL2;[combatant_1.GetSheHeCap] даже прикоснуться ко мне не успеет...;x;;;
-EVTOPTCDUEL2TRIALBYCOMBAT;Моя воля сильна и [Root.Religion.GetHighGodNameCap] защищает меня...;x;;;
-EVTOPTCDUEL2WOUNDED;Хоть я и ранен[combatant_1.GetEndA], [combatant_1.GetSheHe] не достанет меня снова...;x;;;
-EVTOPTCDUEL2MAIMED;Моя рана не остановит удара...;x;;;
-EVTOPTCDUEL2WOUNDEDOPP;С [combatant_1.GetHerHis] раной [combatant_1.GetSheHe] не ровня мне...;x;;;
-EVTOPTCDUEL2YOUNGOPP;Едва ли эт[combatant_1.GetEtaEtot] [combatant_1.GetLadLass] сможет меня поцарапать...;x;;;
-TOOLTIPduel_tactic_speed;Вы нападаете в быстром порыве\n;x;;;
-TOOLTIPduel_tactic_force;Вы берете силой\n;x;;;
-TOOLTIPduel_tactic_defense;Вы обороняетесь\n;x;;;
-EVTDESCDUEL3;Вы и [combatant_2.GetTitledFirstName] медленно обходите друг друга по кругу, напряженно и сосредоточенно. Вы оцениваете [combatant_2.GetHerHis], выявляя любую слабость, любую щель в защите, которой вы могли бы воспользоваться.;x;;;
-EVTDESCDUEL3FINGERDANCE;Вы и [combatant_2.GetTitledFirstName] сталкиваетесь в поединке с топориками в руках, готовые бросить оружие друг в друга. Вы целитесь и готовите бросок.;x;;;
-EVTDESCDUEL3BATTLE;В разгаре битвы вы и [combatant_2.GetTitledFirstName] кружите друг с другом, напряженно и сосредоточенно. Все сражение вокруг вас, кажется, замедлилось, пока вы оцениваете [combatant_2.GetHerHis] для выявления слабостей и щелей в обороне, которые вы могли бы использовать.;x;;;
-EVTDESCDUEL3TRIALBYCOMBAT;Двор внимательно смотрит как вы и [combatant_2.GetTitledFirstName] сходитесь в поединке. Вы оцениваете [combatant_2.GetHerHis], выявляя любую слабость, любую щель в [combatant_2.GetHerHis] защите, которой вы могли бы воспользоваться.;x;;;
-EVTDESCDUEL3WOUNDED;[combatant_2.GetTitledFirstName] перед вами, и [combatant_2.GetSheHe] понимает, что вы страдаете от раны. [combatant_2.GetSheHeCap] смотрит на вас, отыскивая любой признак слабости, но вы твердо стоите, готовясь встретить [combatant_2.GetHerHis].;x;;;
-EVTDESCDUEL3MAIMED;Серьезная рана сильно затрудняет вас, поэтому вы меняете дуэльную позу. [combatant_2.GetTitledFirstName], кажется, уверен в себе, но вы крепко стоите, независимо от этого, и готовы воспользоваться любой [combatant_2.GetHerHis] брешью в обороне, какую только увидите.;x;;;
-EVTDESCDUEL3ILL;Вы не в лучшем состоянии, чтобы сражаться и [combatant_2.GetTitledFirstName], похоже, радуется вашему недугу. Вы смело встаете в позицию и готовы встретить [combatant_2.GetHerHis] независимо от своего самочувствия, и проверить [combatant_2.GetHerHis] защиту.;x;;;
-EVTDESCDUEL3YOUNG;Ваше оружие тяжело для ваших молодых рук, ваша броня громоздка. Однако, Вы и [combatant_2.GetTitledFirstName] готовы сойтись в бою. Медленно кружась вокруг н[combatant_2.GetHerHis], вы ищите возможность нанести удар.;x;;;
-EVTDESCDUEL3WOUNDEDOPP;Поскольку [combatant_2.GetTitledFirstName] стоит перед вами, вы понимаете, что [combatant_2.GetSheHe] борется с раной. Вы оцениваете [combatant_2.GetHerHis], отыскивая любые признаки слабости, но [combatant_2.GetSheHe] твердо стоит, готовясь вас встретить.;x;;;
-EVTDESCDUEL3MAIMEDOPP;[combatant_2.GetTitledFirstName] страдает от тяжелой раны, которая затрудняет [combatant_2.GetHerHis] движения, вы перехватываете инициативу в дуэли с ним. Вы чувствуете себя более уверенно, но [combatant_2.GetSheHe] твердо стоит на земле и готов воспользоваться любой щелью в вашей защите, которую [combatant_2.GetSheHe] только сможет отыскать.;x;;;
-EVTDESCDUEL3ILLOPP;[combatant_2.GetTitledFirstName] находится не в лучшем состоянии, чтобы сражаться, и поэтому вы радуетесь [combatant_2.GetHerHis] болезни. [combatant_2.GetSheHeCap] храбро встает в позицию, независимо от состояния, и вы готовитесь проверить [combatant_2.GetHerHis] защиту.;x;;;
-EVTDESCDUEL3YOUNGOPP;[combatant_2.GetTitledFirstName] явно ощущает тяжесть оружия в [combatant_2.GetHerHis] молодых руках, [combatant_2.GetHerHis] броня также громоздка и велика для [combatant_2.GetHerHis] тела. Тем не менее, [combatant_2.GetSheHe] готов встретиться с вами в поединке, медленно кружась, и оценивая возможность для удара.;x;;;
-EVTOPTADUEL3;Одна ошибка и [combatant_1.GetSheHe] получит...;x;;;
-EVTOPTADUEL3TRIALBYCOMBAT;[Root.Religion.GetHighGodNameCap] поможет мне...;x;;;
-EVTOPTADUEL3WOUNDED;Эта рана не остановит меня...;x;;;
-EVTOPTADUEL3MAIMED;Даже с моей раной мой удар будет резким...;x;;;
-EVTOPTADUEL3WOUNDEDOPP;Я буду стремиться к [combatant_1.GetHerHis] ране...;x;;;
-EVTOPTADUEL3YOUNGOPP;Я не могу не пропустить удар этого юнца...;x;;;
-EVTOPTBDUEL3;[combatant_1.GetSheHeCap] не соответствует моей силе...;x;;;
-EVTOPTBDUEL3TRIALBYCOMBAT;Моя вера в [Root.Religion.GetHighGodNameCap] придает мне сил...;x;;;
-EVTOPTBDUEL3WOUNDED;Жалкая царапина не остановит меня...;x;;;
-EVTOPTBDUEL3MAIMED;Я сильнее, чем эта рана! [combatant_1.GetTitledFirstName] будет страдать...;x;;;
-EVTOPTBDUEL3WOUNDEDOPP;[combatant_1.GetHerHisCap] раны делают его немощным и жалким...;x;;;
-EVTOPTBDUEL3YOUNGOPP;Этот тщедушный сопляк мне не ровня...;x;;;
-EVTOPTCDUEL3;[combatant_1.GetSheHeCap] даже не успел прикоснуться ко мне...;x;;;
-EVTOPTCDUEL3TRIALBYCOMBAT;Моя воля сильна и [Root.Religion.GetHighGodNameCap] защищает меня...;x;;;
-EVTOPTCDUEL3WOUNDED;Даже ранив меня, [combatant_1.GetSheHe] не сможет этого повторить...;x;;;
-EVTOPTCDUEL3MAIMED;Моя рана не остановит удара...;x;;;
-EVTOPTCDUEL3WOUNDEDOPP;С [combatant_1.GetHerHis] раной [combatant_1.GetSheHe] не ровня мне...;x;;;
-EVTOPTCDUEL3YOUNGOPP;Я едва поцарапал этого молодого сопляка...;x;;;
-EVTDESCDUEL5;Хоть [duel_round_loser.GetTitledFirstName] и хорош в бою, Вы видите слабое место, уязвимость в защите. Это немного, но это все, что вам нужно.;x;;;
-EVTDESCDUEL5FINGERDANCEA;Вам удается [Root.GetClumsilyElegantly] перепрыгнуть через топорик персонажа [duel_round_loser.GetTitledFirstName], что делает [duel_round_loser.GetHerHis] уязвимым для вашего собственного броска...;x;;;
-EVTDESCDUEL5FINGERDANCEB;Толпа гулом удобряет, когда вы [Root.GetClumsilyElegantly] ловите топорик персонажа [duel_round_loser.GetTitledFirstName] оставляя [duel_round_loser.GetHerHis] уязвимым для вашего броска...;x;;;
-EVTDESCDUEL5SKILL;Ваш опыт в бою и мастерство позволяют обнаружить брешь в защите персонажа [duel_round_loser.GetTitledFirstName]. Это немного, но это все, что вам нужно.;x;;;
-EVTDESCDUEL5SWORD;Удар, который нанёс [duel_round_loser.GetTitledFirstName] Вы парировали рукоятью своего меча, уводя вниз меч [Root.GetValyrianSwordOwned] и позволяя вскрыть [duel_round_loser.GetHerHis] защиту.;x;;;
-EVTDESCDUEL5STRONG;[duel_round_loser.GetTitledFirstName] ошеломлен необычайно сильным ударом, направленным по [duel_round_loser.GetHerHis] телу. [duel_round_loser.GetSheHeCap] пошатывается, что дает вам возможность нанести удар.;x;;;
-EVTDESCDUEL5QUICK;Кажется, что движения поединка замедляются для вас, но ваш ум обрабатывает все в ускоренном режиме, позволяя предугадывать движения персонажа [duel_round_loser.GetTitledFirstName]. После ловкого парирования вы увидели возможность нанести удар.;x;;;
-EVTDESCDUEL5WROTH;Вы проводите бешеную и яростную атаку на пепсонажа [duel_round_loser.GetTitledFirstName], сразу заставив [duel_round_loser.GetHerHis] пятиться. [duel_round_loser.GetSheHeCap] в панике отбивается, что позволяет вам вскрыть защиту.;x;;;
-EVTDESCDUEL5PATIENT;[duel_round_loser.GetTitledFirstName] берёт инициативу, как Вы и задумывали, терпеливо парируя [duel_round_loser.GetHerHis] выпады. Вы ждете, пока [duel_round_loser.GetSheHe] не выдохнется и не устанет, неизменно проявив брешь в своей обороне.;x;;;
-EVTDESCDUEL5DECEITFUL;[duel_round_loser.GetTitledFirstName] сражается честно, но вы используете подлые уловки в желании получить преимущество. Хитрыми и коварными действиями вы пытаетесь заставить ошибиться и нанести удар.;x;;;
-EVTDESCDUEL5TALL;Вы используете длинный меч для удержания противника на расстоянии, [duel_round_loser.GetTitledFirstName] не может даже подойти к вам, чтобы сделать выпад. В конце концов, вы замечаете [duel_round_loser.GetHerHis] слабое место и замахиваетесь своим оружием с большой высоты.;x;;;
-EVTDESCDUEL5RHLLOR;Вы и [duel_round_loser.GetTitledFirstName] срадаетесь, Вам приходиться обороняться, и Вы чувствуете, будто сам Владыка Света направляет ваши движения. [duel_round_loser.GetSheHeCap], похоже, не закрывается, и в конце концов вы обнаруживаете слабые места в [duel_round_loser.GetHerHis] защите.;x;;;
-EVTOPTADUEL5;Удар!;x;;;
-EVTOPTADUEL5A;Я быстро уклоняюсь от [duel_round_loser.GetHerHis] силовой атаки!;x;;;
-EVTOPTADUEL5B;Я медленно, но верно сокрушаю [duel_round_loser.GetHerHis] оборону!;x;;;
-EVTOPTADUEL5C;Я уворачиваюсь от [duel_round_loser.GetHerHis] быстрых ударов!;x;;;
-EVTTOOLTIPDUEL6;пытается защитить себя!;x;;;
-EVTDESCDUEL6;Когда вы и [duel_round_winner.GetTitledFirstName] расходитесь, то вы приоткрываете свою оборону. [duel_round_winner.GetTitledFirstName] пытается использовать это преимущество.;x;;;
-EVTDESCDUEL6FINGERDANCEA;[duel_round_winner.GetTitledFirstName] умудряется [duel_round_winner.GetClumsilyElegantly] перепрыгнуть через ваш летящий топор и приземляется, готовый бросить свой в вас...;x;;;
-EVTDESCDUEL6FINGERDANCEB;Толпа загудела в знак одобрения, когда [duel_round_winner.GetTitledFirstName] [Root.GetClumsilyElegantly] ловит топор, который вы бросаете в н[duel_round_winner.GetHerHis], очередь метать перешла к н[duel_round_winner.GetHerHim]...;x;;;
-EVTDESCDUEL6SKILL;Когда вы и [duel_round_winner.GetTitledFirstName] сходитесь, вы оступаетесь и приоткрываете защиту. Опытный воин, такой как [duel_round_winner.GetTitledFirstName], конечно же это увидит.;x;;;
-EVTDESCDUEL6SWORD;[duel_round_winner.GetTitledFirstName] парирует один из ваших ударов рукоятью своего меча, позволив [duel_round_winner.GetHerHim] ударить снизу по просвету в вашей защите.;x;;;
-EVTDESCDUEL6STRONG;[duel_round_winner.GetTitledFirstName] ужасающе силён, Вы ошеломлены. Когда [duel_round_winner.GetSheHe] нанес сильный удар. Вы пошатываетесь, открываясь для его выпадов.;x;;;
-EVTDESCDUEL6QUICK;[duel_round_winner.GetTitledFirstName], кажется, предвидит каждое ваше движение, ловко парируя каждый выпад. [duel_round_winner.GetSheHeCap] быстро замечает слабое место в вашей защите и направляет туда удар.;x;;;
-EVTDESCDUEL6WROTH;Перед тем как у вас появился шанс обнаружить слабое место, [duel_round_winner.GetTitledFirstName] начинает яростную и неистовую атаку! Вы паникуете и начинаете отступать под градом ударов.;x;;;
-EVTDESCDUEL6PATIENT;[duel_round_winner.GetTitledFirstName] позволяет вам проявить инициативу, терпеливо отбивая удары и сохраняя свою стойку. Вы устаете, оставляя щели в защите. Тогда [duel_round_winner.GetSheHe] наносит удар.;x;;;
-EVTDESCDUEL6DECEITFUL;Вы честно сражаетесь, но [duel_round_winner.GetTitledFirstName] использует свой арсенал грязных приёмчиков. [duel_round_winner.GetSheHeCap] будет атаковать ударами исподтишка и хитрыми выпадами, пока не увидит возможность нанести удар.;x;;;
-EVTDESCDUEL6TALL;[duel_round_winner.GetTitledFirstName] использует большой радиус действия своего меча, а вы не можете даже подобраться поближе, чтобы ударить. В конце концов, [duel_round_winner.GetSheHe] видит слабое место и обрушивает оружие вниз на вас.;x;;;
-EVTDESCDUEL6RHLLOR;Вы и [duel_round_winner.GetTitledFirstName] в бою, и Вам приходится обороняться, Вы чувствуете, будто [Root.Religion.GetHighGodName] защищает его. Вы не можете даже приблизиться, [duel_round_winner.GetSheHe] блокирует каждый ваш выпад до тех пор, пока [duel_round_winner.GetSheHe] не пробивается сквозь защиту.;x;;;
-EVTOPTADUEL6;Защитить себя!;x;;;
-EVTOPTADUEL6A;[duel_round_winner.GetSheHeCap] противостоит моей силовой атаке!;x;;;
-EVTOPTADUEL6B;[duel_round_winner.GetSheHeCap] сильно нагружает мою оборону!;x;;;
-EVTOPTADUEL6C;[duel_round_winner.GetSheHeCap] увернулся от моих быстрых атак!;x;;;
-EVTDESCDUEL105;[duel_round_loser.GetTitledFirstName] ошибается в своей защите, Вы проламываете её и швыряете [duel_round_loser.GetHerHis] на землю. [duel_round_loser.GetSheHeCap] лежит у ваших ног, уповая на вашу милость.;x;;;
-EVTDESCDUEL105B;В попытке защитить своего хозяина, [duel_round_loser.GetAnimalCompanion] прсонажа по имени [duel_round_loser.GetTitledFirstNameNoRegnal] атакует меня. Однако, одним быстрым движением я убиваю зверя и теперь [duel_round_loser.GetWeaponInjuringBlow] - моя цель. [duel_round_loser.GetSheHeCap] лежит у моих ног, полностью в моей власти.;x;;;
-EVTDESCDUEL105C;Своим броском я [duel_round_loser.GetWeaponInjuringBlow]. [duel_round_loser.GetSheHeCap] кажется ошеломленным и смиряется с поражением.;x;;;
-EVTOPTADUEL105;Все кончено!;x;;;
-EVTTOOLTIPDUEL106;реагирует;x;;;
-EVTDESCDUEL106;[duel_round_winner.GetTitledFirstName] сносит вашу защиту и завершающий выпад отправляет вас кубарем катиться по земле. Вы смотрите снизу на него, возвышающегося над вами, готового нанести последний удар...;x;;;
-EVTDESCDUEL106B;Мой [Root.GetAnimalCompanion] пытается защитить меня, но был безжалостно убит персонажем [duel_round_winner.GetTitledFirstNameNoRegnal]. [duel_round_winner.GetSheHeCap] затем переключается на меня и одним [duel_round_winner.GetClumsilyElegantly] движением наносит [Root.GetWeaponInjuringBlowOnMe]! Я смотрю на н[duel_round_winner.GetHerHis] стоящего надо мной, и готового нанести последний удар...;x;;;
-EVTDESCDUEL106C;[duel_round_winner.GetTitledFirstName] бросает хорошо и [duel_round_winner.GetClumsilyElegantly] [Root.GetWeaponInjuringBlowOnMe]! Я побежден...;x;;;
-EVTOPTADUEL106;Сдаюсь! Сдаюсь!;x;;;
-EVTOPTBDUEL106;Я еще не закончил!;x;;;
-EVTOPTCDUEL106;То, что мертво, умереть не может!;x;;;
-EVTOPTDDUEL106;Непокорные! Несгибаемые! НЕСЛОМЛЕННЫЕ!;x;;;
-EVTTOOLTIPDUEL107;обдумывает вашу сдачу;x;;;
-EVTDESCDUEL107;[duel_round_loser.GetTitledFirstName] бросает своё оружие и поднимает руки. 'Сдаюсь! Я сдаюсь!';x;;;
-EVTOPTADUEL107;Я принимаю. Поднимайся на ноги..;x;;;
-EVTOPTBDUEL107;Нет.;x;;;
-EVTOPTCDUEL107;Ланнистеры всегда платят свои долги.;x;;;
-EVTOPTBDUEL107B;Нет, [GetRootFromInsult]!;x;;;
-EVTTOOLTIPDUEL108;терпит поражение.;x;;;
-EVTDESCDUEL108;[duel_round_winner.GetFirstName] опускает своё оружие и протягивает руку. 'Я принимаю, - говорит [duel_round_winner.GetSheHe], - вставайте.';x;;;
-EVTOPTADUEL108;Вы честно победили в схватке.;x;;;
-EVTTOOLTIPDUEL109;[duel_round_loser.GetTitledFirstName] убит!\n;x;;;
-EVTDESCDUEL109;[duel_round_winner.GetFirstName] смотрит на вас без тени эмоций на своём лице.\n'Нет.'\nИ всё вокруг потемнело...;x;;;
-EVTOPTADUEL109;Аааргх…;x;;;
-EVTTOOLTIPDUEL110;Вы откатываетесь, чтобы увернуться от последнего удара;x;;;
-EVTDESCDUEL110;[duel_round_winner.GetTitledFirstName] наносит удар, но вы откатываетесь, и как раз вовремя, получив лишь небольшое ранение вскользь. Вы заставляете себя встать и держать оружие наготове.;x;;;
-EVTOPTADUEL110;Ты не получишь еще один шанс!;x;;;
-TOOLTIPLOSEEYE;Вы потеряли глаз!;x;;;
-EVTTOOLTIPDUEL111;реагирует;x;;;
-EVTDESCDUEL111;Вы ударяете, но [duel_round_loser.GetTitledFirstName] откатывается в сторону, раненый, но все еще очень живой. [duel_round_loser.GetSheHeCap] поднимается на ноги и снова берет своё оружие в руки.;x;;;
-EVTOPTADUEL111;Почему бы тебе просто не УМЕРЕТЬ?!;x;;;
-EVTOPTADUEL111B;Почему бы тебе просто не сдаться?!;x;;;
-EVTDESCDUEL201;[duel_round_loser.GetTitledFirstName] пытается сопротивляться, но вы бросаетесь вперед, легко подавляя [duel_round_loser.GetHerHis] жалкую защиту. Вы бьете в [duel_round_loser.GetHerHis] сердце изо всех сил!;x;;;
-EVTDESCDUEL201B;[duel_round_loser.GetTitledFirstName] пытается сопротивляться, но вы бросаетесь вперед, легко подавляя [duel_round_loser.GetHerHis] жалкую защиту. Вы наносите удар [duel_round_loser.GetHerHim] изо всех сил, и, несмотря на дружественный характер поединка, вы слишком сильны и смертельно раните его.;x;;;
-EVTOPTADUEL201;УМРИ!;x;;;
-EVTOPTBDUEL201;НАМ ЯРОСТЬ!;x;;;
-EVTOPTCDUEL201;ОГОНЬ И КРОВЬ!;x;;;
-EVTOPTADUEL201B;[duel_round_loser.GetSheHeCap] знал о рисках;x;;;
-EVTTOOLTIPDUEL202;[duel_round_loser.GetTitledFirstName] убит!\n;x;;;
-EVTDESCDUEL202;Вы пытаетесь удержать соперника на расстоянии, но [duel_round_winner.GetTitledFirstName] неудержим! Вы ошибаетесь только один раз, но это то единственное, чего [duel_round_winner.GetSheHe] желал...;x;;;
-EVTDESCDUEL202B;Вы пытаетесь удержать соперника на расстоянии, но [duel_round_winner.GetTitledFirstName] неудержим! Вы ошибаетесь только один раз, но это то единственное, чего [duel_round_winner.GetSheHe] желал. [duel_round_winner.GetSheHeCap] наносит слишком сильный удар и случайно наносит вам смертельную рану.;x;;;
-EVTOPTADUEL202;Аааааргх!;x;;;
-EVTOPTADUEL202B;Мы договаривались не до смерти!;x;;;
-EVTOPTBDUEL202;Владыка Света наблюдает за мной!;x;;;
-EVTTOOLTIPDUEL204;Дуэль возобновляется\n;x;;;
-EVTDESCDUEL203;[duel_round_loser.GetTitledFirstName] падает замертво. Вы вытираете [duel_round_loser.GetHerHis] кровь со своего оружия. Дело сделано. [duel_round_loser.GetSheHeCap] мертв.;x;;;
-EVTOPTADUEL203;Valar morghulis.;x;;;
-EVTDESCDUEL204;[duel_round_loser.GetTitledFirstName] падает замертво. Вы вытираете [duel_round_loser.GetHerHis] кровь со своего оружия. [duel_round_loser.GetSheHeCap] мертв, но затем [duel_round_loser.GetSheHe] делает глубоких вдох и поднимается с земли, несмотря на смертельныйе раны. [duel_round_loser.GetSheHeCap] говорит, что Владыка Света защищает [duel_round_loser.GetHerHis].;x;;;
-EVTOPTADUEL204;Это невозможно!;x;;;
-EVTTOOLTIPDUELOUTPUT1;победил!;x;;;
-EVTDESCDUELOUTPUT1;Бой окончен. [From.GetTitledFirstName] проиграл. Вы победили!;x;;;
-EVTOPTADUELOUTPUT1;Победа за мной!;x;;;
-EVTDESCbattle.1;Сражаясь на поле, вы видите вражеского бойца, отрезанного от остальных. Хотя вы не можете сказать, кто это, Но и так ясно, что он из знати.;x;;;
-EVTOPTAbattle.1;В бой!;x;;;
-EVTDESCbattle.2;Вы отдалились от своих людей в хаосе битвы, и только что пришли в себя и огляделись. Вы оценили обстановку вокруг, и только решили пройти к своим, как увидели, что [From.GetTitledFirstName] прорвался через ряды врагов и набросился на вас!;x;;;
-EVTOPTAbattle.2;Готовься к смерти, мерзавец [From.GetOnlyDynastyName]!;x;;;
-EVTOPTBbattle.2;Мне нужно выбраться отсюда!;x;;;
-EVTOPTCbattle.2;Бегите, [Root.PrimaryTitle.GetFOA]! Я разберусь тут!;x;;;
-EVTTOOLTIPbattle.3;реагирует;x;;;
-EVTDESCbattle.3;Сражаясь на поле, вы видите вражеского бойца, отрезанного от остальных. Когда вы приблизились, то узнаете его, это [From.GetTitledFirstNameWithDynasty].;x;;;
-EVTOPTAbattle.3;Готовься к смерти, мерзавец [From.GetOnlyDynastyName]!;x;;;
-EVTOPTBbattle.3;Мне нужно выбраться отсюда!;x;;;
-EVTOPTCbattle.3;Бегите, [Root.PrimaryTitle.GetFOA]! Я разберусь тут!;x;;;
-EVTDESCbattle.4;Сражаясь на поле, вы видите вражеского бойца, отрезанного от остальных. Когда вы приблизились, то узнаете его, это [From.GetTitledFirstNameWithDynasty]. Видя, что вы направляетесь в его сторону, [From.GetSheHe] поворачивается и убегает. Вы пытаетесь преследовать, но теряете его в хаосе битвы.;x;;;
-EVTOPTAbattle.4;Правильно, трус, беги в меня!;x;;;
-EVTDESCbattle.5;Вы поворачиваетесь лицом... и [From.GetTitle] [From.GetFirstName] прерывает свой удар и убегает. Вы пытаетесь преследовать, но теряете его в хаосе битвы.;x;;;
-EVTOPTAbattle.5;Правильно, трус, беги от меня!;x;;;
-EVTTOOLTIPbattle.6;будет сражаться с персонажем [From.GetTitledFirstName];x;;;
-EVTDESCbattle.7;Сражаясь на поле, вы видите вражеского бойца, отрезанного от остальных. Когда вы приблизились, то узнаете его, это [FromFrom.GetTitle] [FromFrom.GetFirstName] собственной персоной! Однако, прежде чем вы приблизились, [From.GetTitledFirstName] выпрыгивает перед вами, держа меч наготове, '[FromFrom.PrimaryTitle.GetFOA]! - кричит [From.GetSheHe] - Я разберусь с ним!';x;;;
-EVTOPTAbattle.7;Ты думаешь, твой белый плащ тебя спасет?;x;;;
-EVTOPTBbattle.7;Появление в бою телохранителя не было частью плана.;x;;;
-EVTOPTCbattle.7;Хорошо, ты тоже умрешь!;x;;;
-EVTOPTDbattle.7;Так и быть, [GetRootFromInsult] умрёт!;x;;;
-EVTDESCbattle.8;Одного взгляда на персонажа [FromFrom.GetTitledFirstName] достаточно, чтобы [From.GetTitle] [From.GetFirstName] повернулся и убежал.;x;;;
-EVTOPTAbattle.8;Правильно, трус, беги от меня!;x;;;
-EVTTOOLTIPbattle.9;сразится с персонажем [From.GetTitledFirstName];x;;;
-EVTDESCbattle.10;[FromFrom.GetTitle] [FromFrom.GetFirstName] внезапно останавливает свой удар, вы задаетесь вопросом, почему, но только лишь на миг, когда [From.GetTitledFirstName] схватывает [FromFrom.GetHerHis] сзади. 'Бегите за наши ряды, [FromFrom.PrimaryTitle.GetFOA]!' - кричит [From.GetSheHe], - Я разберусь!';x;;;
-EVTOPTAbattle.10;Ты думаешь, твой белый плащ тебя спасет?;x;;;
-EVTOPTBbattle.10;Поединок с Королевской гвардией не был частью плана.;x;;;
-EVTTOOLTIPbattle.11;[From.GetTitledFirstName] пал, это деморализует противника!;x;;;
-EVTDESCbattle.11;[FromFrom.GetTitledFirstName] падает перед вами, [FromFrom.GetHerHis] солдаты смотрят на вас и теряют надежду.;x;;;
-EVTOPTAbattle.11;Теперь это наш шанс!;x;;;
-EVTTOOLTIPbattle.12;[From.GetTitledFirstName] берётся Вами в плен.;x;;;
-EVTDESCbattle.12;[FromFrom.GetTitledFirstName] беспомощно лежит у ваших ног, [FromFrom.GetHerHis] оружие отброшено в сторону, а ваше у [FromFrom.GetHerHis] шеи.;x;;;
-EVTOPTAbattle.12;Отправишься со мной в город [Root.Capital.GetName].;x;;;
-EVTDESCbattle.13;Вы потерпели поражение. [From.GetTitledFirstName] взял вас в плен.;x;;;
-EVTOPTAbattle.13;Я запомню это, [From.GetOnlyDynastyName].;x;;;
-EVTDESCbattle.1399;Тревожные новости из битвы в земле [FromFrom.Location.GetName]. [Root.PrimaryTitle.GetFOA], ваш [From.GetRootRelation] [From.GetTitledFirstNameWithDynastyNoRegnal] попал в плен! [From.GetSheHeCap] был побежден в прямом единоборстве командиром противника по имени [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] и доставлен в провинцию [From.Location.GetName] в качестве заключенного.;x;;;
-EVTOPTAbattle.1399;Это неудача;x;;;
-EVTTOOLTIPbattle.14;теперь не уйдет!;x;;;
-EVTDESCbattle.14;Вы с ужасом смотрите как [FromFrom.GetTitledFirstName], которого сразил [From.GetTitledFirstName], падает на землю, [FromFrom.GetHerHis] плащ весь в крови. [From.GetTitle] [From.GetFirstName] неторопливо выходит вперед. 'Все кончено, [Root.PrimaryTitle.GetFOA],' - говорит [From.GetSheHe], 'все закончится здесь.';x;;;
-EVTOPTAbattle.14;У меня нет времени убегать!;x;;;
-EVTTOOLTIPbattle.15;В бой!;x;;;
-EVTDESCbattle.15;Вы снимаете окровавленный плащ, освобождая ваши ноги и медленно подходите к персонажу [From.GetTitledFirstName]. Вы выдернули [From.GetHerHis] из под охраны [From.GetHerHis] армии и убили тем мечом, которым присягали.;x;;;
-EVTOPTAbattle.15;Все кончено, [From.PrimaryTitle.GetFOA]. Все закончится здесь.;x;;;
-EVTDESCbattle.16;Битва закончилась менее чем за минуту. [FromFrom.GetTitledFirstName] падает на землю, и [From.GetTitledFirstName] стирает кровь со своего меча. 'Дело сделано, [Root.PrimaryTitle.GetFOA],' - сказал [From.GetSheHe], - '[FromFrom.GetSheHe] более не будет беспокоить вас.';x;;;
-EVTOPTAbattle.16;Молодец, [From.GetTitledFirstName].;x;;;
-EVTDESCbattle.17;Битва закончилась менее чем за минуту. [From.GetTitledFirstName] сносит правителя, известного как [FromFrom.GetTitledFirstName] на землю и отбрасывает [FromFrom.GetHerHis] оружие, оставляя [FromFrom.GetHerHis] беззащитным. 'Я сдаюсь! Я сдаюсь!';x;;;
-EVTOPTAbattle.17;Свяжите его, [From.GetOnlyDynastyName]. Мы заберем [FromFrom.GetHerHis] домой с собой.;x;;;
-battlefield_fight;Вызов на дуэль;x;;;
-EVTDESCDUEL10700;У нас есть новости из земли [From.Location.GetName], где [From.GetTitledFirstName] и [FromFrom.GetTitledFirstName] встретились в поединке. Они отчаянно сражались друг с другом, но, в итоге, победу одержал [From.GetTitledFirstName]. [FromFrom.GetTitledFirstName] теперь пленник.;x;;;
-String_my_artifact_weapon_1_type;[dueling_weapon_1.GetWeaponType];x;;;
-String_my_artifact_weapon_2_type;[dueling_weapon_2.GetWeaponType];x;;;
-String_GetYourDuelWeapon;ваше [This.GetDuelWeapon];x;;;
-String_GetHerHisDuelWeapon;[This.GetHerHis] [This.GetDuelWeapon];x;;;
-String_arakh;аракх;x;;;
-String_stiletto;стилет;x;;;
-formidable_animal_companion;Грозное животное-компаньон;x;;;
-animal_companion;Животное-компаньон;x;;;
-EVTOPTDDUEL2;Мой [Root.GetAnimalCompanion] поможет мне!;x;;;
-TOOLTIPduel_tactic_animal;Ваш [Root.GetAnimalCompanion] атакует;x;;;
-EVTDESCDUEL5ANIMAL;Ваш [Root.GetAnimalCompanion] злобно атакует персонажа [duel_round_loser.GetTitledFirstName], заставляя [duel_round_loser.GetHerHis] защищать себя. [duel_round_loser.GetSheHeCap] отвлекается и открывается, [Root.GetYourDuelWeapon] в ваших руках наносит удар.;x;;;
-EVTDESCDUEL6ANIMAL;В бесчестном движении [duel_round_winner.GetAnimalCompanion] персонажа [duel_round_winner.GetTitledFirstNameNoRegnal] злобно атакует вас, заставляя вас защищаться. Пока вы отвлекаетесь на этого зверя, [duel_round_winner.GetTitledFirstNameNoRegnal] наносит удар оружием [duel_round_winner.GetHerHisDuelWeapon];x;;;
-String_forcefully;мощно;x;;;
-String_brutally;жестоко;x;;;
-String_effortlessly;без особых усилий;x;;;
-String_gracefully;изящно;x;;;
-String_extravagantly;экстравагантно;x;;;
-String_quickly;быстро;x;;;
-String_ruthlessly;беспощадно;x;;;
-String_savagely;свирепо;x;;;
-String_sloppily;небрежно;x;;;
-String_awkwardly;неулюже;x;;;
-bruised_groin;Ушиб паха;x;;;
-String_groin;пах;x;;;
-cut_hand;Порезы на руке;x;;;
-lost_fingers;Потерянные Пальцы;x;;;
-String_fingers;пальцы;x;;;
-String_cut_their_limb;использовать моё [Root.GetDuelWeapon] чтобы отрезать [other_combatant.GetHerHis] часть тела - [other_combatant.GetBodyPartInjured];x;;;
-String_cut_my_limb;использовать [other_combatant.GetHerHis] [other_combatant.GetDuelWeapon], чтобы отрезать часть тела - [Root.GetBodyPartInjured];x;;;
-EVTDESCDUEL115;Несмотря на получение превосходства и [Root.GetClumsilyElegantly] [duel_round_loser.GetWeaponInjuringBlow], я не смог нанести завершающий удар по противнику, известному как [duel_round_loser.GetTitledFirstName]. Мы оба отступаем, довольствуясь отсутствием явного победителя..;x;;;
-EVTOPTADUEL115;Я почти достал [duel_round_loser.GetHerHis]!;x;;;
-EVTDESCDUEL116;[duel_round_winner.GetTitledFirstName] смог получить краткое преимущество и [duel_round_winner.GetClumsilyElegantly] [Root.GetWeaponInjuringBlowOnMe], но не смог нанести завершающий удар. Мы оба отступаем, довольствуясь отсутствием явного победителя.;x;;;
-EVTOPTADUEL116;Мне повезло и с этим результатом;x;;;
-EVTTOOLTIPDUEL116B;Дуэль заканчивается ничьей;x;;;
-EVTDESCDUELOUTPUT1B;Поединок окончен, никто не может претендовать на победу.;x;;;
-EVTOPTADUELOUTPUT1B;Честная битва;x;;;
-EVTDESCbattle.1799;[battlefield_duel_bodyguard.GetTitledFirstName] и [battlefield_duel_opponent.GetTitledFirstName] участвуют в жестоком бою, но ни один из них не смог одолеть другого. [battlefield_duel_opponent.GetTitledFirstName] был вынужден отступить.;x;;;
-EVTOPTAbattle.1799;Благодарю, что защищаешь меня.;x;;;
-String_throw_at_my_head;бросил свой [other_combatant.GetDuelWeapon] в мою голову;x;;;
-String_finger_dance;танец пальцев;x;;;
-String_throw_at_their_head;бросить моё [Root.GetDuelWeapon] в [other_combatant.GetHerHis] голову;x;;;
-EVTOPTEDUEL2;Я хочу нанести яд на [Root.GetDuelWeapon]!;x;;;
-TOOLTIPduel_tactic_poison;Вы травляете [Root.GetDuelWeapon] ядом, пытаясь помешать противнику. Это может быть обнаружено.;x;;;
-EVTDESCDUEL5POISON;Ваше оружие [Root.GetDuelWeapon] отравлено, и после обмена скользящими ударами [duel_round_less.GetTitledFirstName], наконец, получает порезы. Вы улыбаетесь себе, зная, что яд будет иметь дурной эффект, независимо от исхода поединка.;x;;;
-EVTDESCDUEL5POISON_DISCOVERED;Вскоре после того, как вам удалось пустить кровь своим оружием [Root.GetDuelWeapon], [duel_round_loser.GetTitledFirstName] начинает царапать рану. [duel_round_loser.GetSheHeCap] вскоре замечает грязную жидкость как на ране, так и на вашем оружии и понимает вашу попытку отравить [duel_round_loser.GetHerHis]!;x;;;
-TOOLTIPDUELPOISONSUCCESS;§Y[duel_round_loser.GetTitledFirstName] успешно отравлен[duel_round_loser.GetEndA]§!;x;;;
-TOOLTIPDUELPOISONDISCOVERED;§YВаша попытка отравления обнаружена§!;x;;;
-EVTDESCDUEL6POISON_DISCOVERED;После обмена ударами [duel_round_winner.GetTitledFirstName] нансит вам порез. Рана невероятно зудит, и в итоге вы замечаете грязную субстанцию, вытекающую как из раны, так и разводы на оружии [duel_round_winner.GetDuelWeapon]. Это конечно яд!;x;;;
-EVTOPTADUEL6D;Трусливая тактика!;x;;;
-TOOLTIPDUELPOISONDISCOVEREDB;§Y[duel_round_loser.GetTitledFirstName] отравил[duel_round_loser.GetEndA] вас§!;x;;;
-EVTOPTADUEL5D;Теперь яд сделает свою работу;x;;;
-EVTDESCDUEL210;[From.GetTitledFirstNameWithDynasty] [From.GetDeathReason], и это широко известно из-за вашего яда в недавнем поединке!;x;;;
-EVTOPTADUEL210;Ну, это было очень эффективно;x;;;
-EVTDESCDUEL211;Ваш[FromFrom.GetEndA] [FromFrom.GetRootRelation] [FromFrom.GetTitledFirstNameWithDynasty] - [FromFrom.GetDeathReason], и, как известно потому, что [From.GetTitledFirstNameWithDynasty] отравил[From.GetEndA] своё оружие в недавней дуэли;x;;;
-EVTOPTADUEL211;Это хитрая тактика;x;;;
+#CODE;ENGLISH;x
+EVTDESCDUEL2;Вы и [combatant_1.GetTitledFirstName] медленно обходите друг друга по кругу, напряженно и сосредоточенно. Вы оцениваете [combatant_1.GetHerHis], выявляя любую слабость, любую щель в защите, которой вы могли бы воспользоваться.;x
+EVTDESCDUEL2BATTLE;В разгаре битвы вы и [combatant_1.GetTitledFirstName] кружите друг с другом, напряженно и сосредоточенно. Все сражение вокруг вас, кажется, замедлилось, пока вы оцениваете [combatant_1.GetHerHis] для выявления слабостей, и щелей в обороне, которые вы могли бы использовать.;x
+EVTDESCDUEL2FINGERDANCE;Вы и [combatant_1.GetTitledFirstName] сталкиваетесь в поединке с топориками в руках, готовые бросить оружие друг в друга. Вы целитесь и готовите бросок...;x
+EVTDESCDUEL2TRIALBYCOMBAT;Двор внимательно смотрит, как вы и [combatant_1.GetTitledFirstName] сходитесь в поединке. Вы оцениваете [combatant_1.GetHerHis], выявляя любую слабость, любую щель в защите, которой вы могли бы воспользоваться.;x
+EVTDESCDUEL2WOUNDED;[combatant_1.GetTitledFirstName] перед вами, и [combatant_1.GetSheHe] понимает, что вы страдаете от раны. [combatant_1.GetSheHeCap] смотрит на вас, отыскивая любой признак слабости, но вы твердо стоите, готовясь встретить [combatant_1.GetHerHis].;x
+EVTDESCDUEL2MAIMED;Серьезная рана сильно мешает вам, поэтому вы меняете дуэльную позу. [combatant_1.GetTitledFirstName], кажется, уверен[combatant_1.GetEndA] в себе, но вы крепко стоите, независимо от этого, и готовы воспользоваться любой [combatant_1.GetHerHis] брешью в обороне, какую только увидите.;x
+EVTDESCDUEL2ILL;Вы не в лучшем состоянии, чтобы сражаться, и [combatant_1.GetTitledFirstName], похоже, радуется вашему недугу. Вы смело встаете в позицию и готовы встретить [combatant_1.GetHerHis], независимо от своего самочувствия, и проверить [combatant_1.GetHerHis] защиту.;x
+EVTDESCDUEL2YOUNG;Ваше оружие тяжело для ваших молодых рук, ваша броня громоздка. Однако, Вы и [combatant_1.GetTitledFirstName] готовы сойтись в бою. Медленно кружась вокруг н[combatant_1.GetHerHis], Вы ищите возможность нанести удар.;x
+EVTDESCDUEL2WOUNDEDOPP;Когда [combatant_1.GetTitledFirstName] предстал[combatant_1.GetEndA] перед вами, вы понимаете, что [combatant_1.GetSheHe] борется с раной. Вы оцениваете [combatant_1.GetHerHis], отыскивая любые признаки слабости, но [combatant_1.GetSheHe] твердо стоит и готов[combatant_1.GetEndA] вас встретить.;x
+EVTDESCDUEL2MAIMEDOPP;[combatant_1.GetTitledFirstName] страдает от тяжелой раны, которая затрудняет [combatant_1.GetHerHis] движения, вы перехватываете инициативу в дуэли. Вы чувствуете себя более уверенно, но [combatant_1.GetSheHe] твердо стоит на земле и готов[combatant_1.GetEndA] воспользоваться любой щелью в вашей защите, которую [combatant_1.GetSheHe] только сможет отыскать.;x
+EVTDESCDUEL2ILLOPP;[combatant_1.GetTitledFirstName] находится не в лучшем состоянии, чтобы сражаться, и поэтому вы радуетесь [combatant_1.GetHerHis] болезни. [combatant_1.GetSheHeCap] храбро встает в позицию, независимо от состояния, и вы готовитесь проверить [combatant_1.GetHerHis] защиту.;x
+EVTDESCDUEL2YOUNGOPP;[combatant_1.GetTitledFirstName] явно ощущает тяжесть оружия в своих молодых руках, [combatant_1.GetHerHis] броня также громоздка и велика для тела. Тем не менее, [combatant_1.GetSheHe] готов встретиться с вами в поединке, медленно кружась и оценивая возможность для удара.;x
+EVTOPTADUEL2;Одна ошибка и [combatant_1.GetSheHe] получит...;x
+EVTOPTADUEL2B;Это не закончится, пока [Root.GetDuelWinningConditions]...;x
+EVTOPTADUEL2TRIALBYCOMBAT;[Root.Religion.GetHighGodNameCap] поможет мне...;x
+EVTOPTADUEL2WOUNDED;Эта рана не остановит меня...;x
+EVTOPTADUEL2MAIMED;Даже с моей раной удар будет резким...;x
+EVTOPTADUEL2WOUNDEDOPP;Я буду стремиться попасть по [combatant_1.GetHerHis] ране...;x
+EVTOPTADUEL2YOUNGOPP;Я не могу не пропустить удар этого юнца...;x
+EVTOPTBDUEL2;[combatant_1.GetSheHeCap] не соответствует моей силе...;x
+EVTOPTBDUEL2TRIALBYCOMBAT;Моя вера в [Root.Religion.GetHighGodNameCap] придает мне сил...;x
+EVTOPTBDUEL2WOUNDED;Жалкая царапина не остановит меня...;x
+EVTOPTBDUEL2MAIMED;Я сильнее, чем эта рана! [combatant_1.GetTitledFirstName] будет страдать...;x
+EVTOPTBDUEL2WOUNDEDOPP;[combatant_1.GetHerHisCap] раны делают его немощным и жалким...;x
+EVTOPTBDUEL2YOUNGOPP;Этот тщедушный сопляк мне не ровня...;x
+EVTOPTCDUEL2;[combatant_1.GetSheHeCap] даже прикоснуться ко мне не успеет...;x
+EVTOPTCDUEL2TRIALBYCOMBAT;Моя воля сильна и [Root.Religion.GetHighGodNameCap] защищает меня...;x
+EVTOPTCDUEL2WOUNDED;Хоть я и ранен[combatant_1.GetEndA], [combatant_1.GetSheHe] не достанет меня снова...;x
+EVTOPTCDUEL2MAIMED;Моя рана не остановит удара...;x
+EVTOPTCDUEL2WOUNDEDOPP;С [combatant_1.GetHerHis] раной [combatant_1.GetSheHe] не ровня мне...;x
+EVTOPTCDUEL2YOUNGOPP;Едва ли эт[combatant_1.GetEtaEtot] [combatant_1.GetLadLass] сможет меня поцарапать...;x
+TOOLTIPduel_tactic_speed;Вы нападаете в быстром порыве\n;x
+TOOLTIPduel_tactic_force;Вы берете силой\n;x
+TOOLTIPduel_tactic_defense;Вы обороняетесь\n;x
+EVTDESCDUEL3;Вы и [combatant_2.GetTitledFirstName] медленно обходите друг друга по кругу, напряженно и сосредоточенно. Вы оцениваете [combatant_2.GetHerHis], выявляя любую слабость, любую щель в защите, которой вы могли бы воспользоваться.;x
+EVTDESCDUEL3FINGERDANCE;Вы и [combatant_2.GetTitledFirstName] сталкиваетесь в поединке с топориками в руках, готовые бросить оружие друг в друга. Вы целитесь и готовите бросок.;x
+EVTDESCDUEL3BATTLE;В разгаре битвы вы и [combatant_2.GetTitledFirstName] кружите друг с другом, напряженно и сосредоточенно. Все сражение вокруг вас, кажется, замедлилось, пока вы оцениваете [combatant_2.GetHerHis] для выявления слабостей и щелей в обороне, которые вы могли бы использовать.;x
+EVTDESCDUEL3TRIALBYCOMBAT;Двор внимательно смотрит как вы и [combatant_2.GetTitledFirstName] сходитесь в поединке. Вы оцениваете [combatant_2.GetHerHis], выявляя любую слабость, любую щель в [combatant_2.GetHerHis] защите, которой вы могли бы воспользоваться.;x
+EVTDESCDUEL3WOUNDED;[combatant_2.GetTitledFirstName] перед вами, и [combatant_2.GetSheHe] понимает, что вы страдаете от раны. [combatant_2.GetSheHeCap] смотрит на вас, отыскивая любой признак слабости, но вы твердо стоите, готовясь встретить [combatant_2.GetHerHis].;x
+EVTDESCDUEL3MAIMED;Серьезная рана сильно затрудняет вас, поэтому вы меняете дуэльную позу. [combatant_2.GetTitledFirstName], кажется, уверен в себе, но вы крепко стоите, независимо от этого, и готовы воспользоваться любой [combatant_2.GetHerHis] брешью в обороне, какую только увидите.;x
+EVTDESCDUEL3ILL;Вы не в лучшем состоянии, чтобы сражаться и [combatant_2.GetTitledFirstName], похоже, радуется вашему недугу. Вы смело встаете в позицию и готовы встретить [combatant_2.GetHerHis] независимо от своего самочувствия, и проверить [combatant_2.GetHerHis] защиту.;x
+EVTDESCDUEL3YOUNG;Ваше оружие тяжело для ваших молодых рук, ваша броня громоздка. Однако, Вы и [combatant_2.GetTitledFirstName] готовы сойтись в бою. Медленно кружась вокруг н[combatant_2.GetHerHis], вы ищите возможность нанести удар.;x
+EVTDESCDUEL3WOUNDEDOPP;Поскольку [combatant_2.GetTitledFirstName] стоит перед вами, вы понимаете, что [combatant_2.GetSheHe] борется с раной. Вы оцениваете [combatant_2.GetHerHis], отыскивая любые признаки слабости, но [combatant_2.GetSheHe] твердо стоит, готовясь вас встретить.;x
+EVTDESCDUEL3MAIMEDOPP;[combatant_2.GetTitledFirstName] страдает от тяжелой раны, которая затрудняет [combatant_2.GetHerHis] движения, вы перехватываете инициативу в дуэли с ним. Вы чувствуете себя более уверенно, но [combatant_2.GetSheHe] твердо стоит на земле и готов воспользоваться любой щелью в вашей защите, которую [combatant_2.GetSheHe] только сможет отыскать.;x
+EVTDESCDUEL3ILLOPP;[combatant_2.GetTitledFirstName] находится не в лучшем состоянии, чтобы сражаться, и поэтому вы радуетесь [combatant_2.GetHerHis] болезни. [combatant_2.GetSheHeCap] храбро встает в позицию, независимо от состояния, и вы готовитесь проверить [combatant_2.GetHerHis] защиту.;x
+EVTDESCDUEL3YOUNGOPP;[combatant_2.GetTitledFirstName] явно ощущает тяжесть оружия в [combatant_2.GetHerHis] молодых руках, [combatant_2.GetHerHis] броня также громоздка и велика для [combatant_2.GetHerHis] тела. Тем не менее, [combatant_2.GetSheHe] готов встретиться с вами в поединке, медленно кружась, и оценивая возможность для удара.;x
+EVTOPTADUEL3;Одна ошибка и [combatant_1.GetSheHe] получит...;x
+EVTOPTADUEL3TRIALBYCOMBAT;[Root.Religion.GetHighGodNameCap] поможет мне...;x
+EVTOPTADUEL3WOUNDED;Эта рана не остановит меня...;x
+EVTOPTADUEL3MAIMED;Даже с моей раной мой удар будет резким...;x
+EVTOPTADUEL3WOUNDEDOPP;Я буду стремиться к [combatant_1.GetHerHis] ране...;x
+EVTOPTADUEL3YOUNGOPP;Я не могу не пропустить удар этого юнца...;x
+EVTOPTBDUEL3;[combatant_1.GetSheHeCap] не соответствует моей силе...;x
+EVTOPTBDUEL3TRIALBYCOMBAT;Моя вера в [Root.Religion.GetHighGodNameCap] придает мне сил...;x
+EVTOPTBDUEL3WOUNDED;Жалкая царапина не остановит меня...;x
+EVTOPTBDUEL3MAIMED;Я сильнее, чем эта рана! [combatant_1.GetTitledFirstName] будет страдать...;x
+EVTOPTBDUEL3WOUNDEDOPP;[combatant_1.GetHerHisCap] раны делают его немощным и жалким...;x
+EVTOPTBDUEL3YOUNGOPP;Этот тщедушный сопляк мне не ровня...;x
+EVTOPTCDUEL3;[combatant_1.GetSheHeCap] даже не успел прикоснуться ко мне...;x
+EVTOPTCDUEL3TRIALBYCOMBAT;Моя воля сильна и [Root.Religion.GetHighGodNameCap] защищает меня...;x
+EVTOPTCDUEL3WOUNDED;Даже ранив меня, [combatant_1.GetSheHe] не сможет этого повторить...;x
+EVTOPTCDUEL3MAIMED;Моя рана не остановит удара...;x
+EVTOPTCDUEL3WOUNDEDOPP;С [combatant_1.GetHerHis] раной [combatant_1.GetSheHe] не ровня мне...;x
+EVTOPTCDUEL3YOUNGOPP;Я едва поцарапал этого молодого сопляка...;x
+EVTDESCDUEL5;Хоть [duel_round_loser.GetTitledFirstName] и хорош в бою, Вы видите слабое место, уязвимость в защите. Это немного, но это все, что вам нужно.;x
+EVTDESCDUEL5FINGERDANCEA;Вам удается [Root.GetClumsilyElegantly] перепрыгнуть через топорик персонажа [duel_round_loser.GetTitledFirstName], что делает [duel_round_loser.GetHerHis] уязвимым для вашего собственного броска...;x
+EVTDESCDUEL5FINGERDANCEB;Толпа гулом удобряет, когда вы [Root.GetClumsilyElegantly] ловите топорик персонажа [duel_round_loser.GetTitledFirstName] оставляя [duel_round_loser.GetHerHis] уязвимым для вашего броска...;x
+EVTDESCDUEL5SKILL;Ваш опыт в бою и мастерство позволяют обнаружить брешь в защите персонажа [duel_round_loser.GetTitledFirstName]. Это немного, но это все, что вам нужно.;x
+EVTDESCDUEL5SWORD;Удар, который нанёс [duel_round_loser.GetTitledFirstName] Вы парировали рукоятью своего меча, уводя вниз меч [Root.GetValyrianSwordOwned] и позволяя вскрыть [duel_round_loser.GetHerHis] защиту.;x
+EVTDESCDUEL5STRONG;[duel_round_loser.GetTitledFirstName] ошеломлен необычайно сильным ударом, направленным по [duel_round_loser.GetHerHis] телу. [duel_round_loser.GetSheHeCap] пошатывается, что дает вам возможность нанести удар.;x
+EVTDESCDUEL5QUICK;Кажется, что движения поединка замедляются для вас, но ваш ум обрабатывает все в ускоренном режиме, позволяя предугадывать движения персонажа [duel_round_loser.GetTitledFirstName]. После ловкого парирования вы увидели возможность нанести удар.;x
+EVTDESCDUEL5WROTH;Вы проводите бешеную и яростную атаку на пепсонажа [duel_round_loser.GetTitledFirstName], сразу заставив [duel_round_loser.GetHerHis] пятиться. [duel_round_loser.GetSheHeCap] в панике отбивается, что позволяет вам вскрыть защиту.;x
+EVTDESCDUEL5PATIENT;[duel_round_loser.GetTitledFirstName] берёт инициативу, как Вы и задумывали, терпеливо парируя [duel_round_loser.GetHerHis] выпады. Вы ждете, пока [duel_round_loser.GetSheHe] не выдохнется и не устанет, неизменно проявив брешь в своей обороне.;x
+EVTDESCDUEL5DECEITFUL;[duel_round_loser.GetTitledFirstName] сражается честно, но вы используете подлые уловки в желании получить преимущество. Хитрыми и коварными действиями вы пытаетесь заставить ошибиться и нанести удар.;x
+EVTDESCDUEL5TALL;Вы используете длинный меч для удержания противника на расстоянии, [duel_round_loser.GetTitledFirstName] не может даже подойти к вам, чтобы сделать выпад. В конце концов, вы замечаете [duel_round_loser.GetHerHis] слабое место и замахиваетесь своим оружием с большой высоты.;x
+EVTDESCDUEL5RHLLOR;Вы и [duel_round_loser.GetTitledFirstName] срадаетесь, Вам приходиться обороняться, и Вы чувствуете, будто сам Владыка Света направляет ваши движения. [duel_round_loser.GetSheHeCap], похоже, не закрывается, и в конце концов вы обнаруживаете слабые места в [duel_round_loser.GetHerHis] защите.;x
+EVTOPTADUEL5;Удар!;x
+EVTOPTADUEL5A;Я быстро уклоняюсь от [duel_round_loser.GetHerHis] силовой атаки!;x
+EVTOPTADUEL5B;Я медленно, но верно сокрушаю [duel_round_loser.GetHerHis] оборону!;x
+EVTOPTADUEL5C;Я уворачиваюсь от [duel_round_loser.GetHerHis] быстрых ударов!;x
+EVTTOOLTIPDUEL6;пытается защитить себя!;x
+EVTDESCDUEL6;Когда вы и [duel_round_winner.GetTitledFirstName] расходитесь, то вы приоткрываете свою оборону. [duel_round_winner.GetTitledFirstName] пытается использовать это преимущество.;x
+EVTDESCDUEL6FINGERDANCEA;[duel_round_winner.GetTitledFirstName] умудряется [duel_round_winner.GetClumsilyElegantly] перепрыгнуть через ваш летящий топор и приземляется, готовый бросить свой в вас...;x
+EVTDESCDUEL6FINGERDANCEB;Толпа загудела в знак одобрения, когда [duel_round_winner.GetTitledFirstName] [Root.GetClumsilyElegantly] ловит топор, который вы бросаете в н[duel_round_winner.GetHerHis], очередь метать перешла к н[duel_round_winner.GetHerHim]...;x
+EVTDESCDUEL6SKILL;Когда вы и [duel_round_winner.GetTitledFirstName] сходитесь, вы оступаетесь и приоткрываете защиту. Опытный воин, такой как [duel_round_winner.GetTitledFirstName], конечно же это увидит.;x
+EVTDESCDUEL6SWORD;[duel_round_winner.GetTitledFirstName] парирует один из ваших ударов рукоятью своего меча, позволив [duel_round_winner.GetHerHim] ударить снизу по просвету в вашей защите.;x
+EVTDESCDUEL6STRONG;[duel_round_winner.GetTitledFirstName] ужасающе силён, Вы ошеломлены. Когда [duel_round_winner.GetSheHe] нанес сильный удар. Вы пошатываетесь, открываясь для его выпадов.;x
+EVTDESCDUEL6QUICK;[duel_round_winner.GetTitledFirstName], кажется, предвидит каждое ваше движение, ловко парируя каждый выпад. [duel_round_winner.GetSheHeCap] быстро замечает слабое место в вашей защите и направляет туда удар.;x
+EVTDESCDUEL6WROTH;Перед тем как у вас появился шанс обнаружить слабое место, [duel_round_winner.GetTitledFirstName] начинает яростную и неистовую атаку! Вы паникуете и начинаете отступать под градом ударов.;x
+EVTDESCDUEL6PATIENT;[duel_round_winner.GetTitledFirstName] позволяет вам проявить инициативу, терпеливо отбивая удары и сохраняя свою стойку. Вы устаете, оставляя щели в защите. Тогда [duel_round_winner.GetSheHe] наносит удар.;x
+EVTDESCDUEL6DECEITFUL;Вы честно сражаетесь, но [duel_round_winner.GetTitledFirstName] использует свой арсенал грязных приёмчиков. [duel_round_winner.GetSheHeCap] будет атаковать ударами исподтишка и хитрыми выпадами, пока не увидит возможность нанести удар.;x
+EVTDESCDUEL6TALL;[duel_round_winner.GetTitledFirstName] использует большой радиус действия своего меча, а вы не можете даже подобраться поближе, чтобы ударить. В конце концов, [duel_round_winner.GetSheHe] видит слабое место и обрушивает оружие вниз на вас.;x
+EVTDESCDUEL6RHLLOR;Вы и [duel_round_winner.GetTitledFirstName] в бою, и Вам приходится обороняться, Вы чувствуете, будто [Root.Religion.GetHighGodName] защищает его. Вы не можете даже приблизиться, [duel_round_winner.GetSheHe] блокирует каждый ваш выпад до тех пор, пока [duel_round_winner.GetSheHe] не пробивается сквозь защиту.;x
+EVTOPTADUEL6;Защитить себя!;x
+EVTOPTADUEL6A;[duel_round_winner.GetSheHeCap] противостоит моей силовой атаке!;x
+EVTOPTADUEL6B;[duel_round_winner.GetSheHeCap] сильно нагружает мою оборону!;x
+EVTOPTADUEL6C;[duel_round_winner.GetSheHeCap] увернулся от моих быстрых атак!;x
+EVTDESCDUEL105;[duel_round_loser.GetTitledFirstName] ошибается в своей защите, Вы проламываете её и швыряете [duel_round_loser.GetHerHis] на землю. [duel_round_loser.GetSheHeCap] лежит у ваших ног, уповая на вашу милость.;x
+EVTDESCDUEL105B;В попытке защитить своего хозяина, [duel_round_loser.GetAnimalCompanion] прсонажа по имени [duel_round_loser.GetTitledFirstNameNoRegnal] атакует меня. Однако, одним быстрым движением я убиваю зверя и теперь [duel_round_loser.GetWeaponInjuringBlow] - моя цель. [duel_round_loser.GetSheHeCap] лежит у моих ног, полностью в моей власти.;x
+EVTDESCDUEL105C;Своим броском я [duel_round_loser.GetWeaponInjuringBlow]. [duel_round_loser.GetSheHeCap] кажется ошеломленным и смиряется с поражением.;x
+EVTOPTADUEL105;Все кончено!;x
+EVTTOOLTIPDUEL106;реагирует;x
+EVTDESCDUEL106;[duel_round_winner.GetTitledFirstName] сносит вашу защиту и завершающий выпад отправляет вас кубарем катиться по земле. Вы смотрите снизу на него, возвышающегося над вами, готового нанести последний удар...;x
+EVTDESCDUEL106B;Мой [Root.GetAnimalCompanion] пытается защитить меня, но был безжалостно убит персонажем [duel_round_winner.GetTitledFirstNameNoRegnal]. [duel_round_winner.GetSheHeCap] затем переключается на меня и одним [duel_round_winner.GetClumsilyElegantly] движением наносит [Root.GetWeaponInjuringBlowOnMe]! Я смотрю на н[duel_round_winner.GetHerHis] стоящего надо мной, и готового нанести последний удар...;x
+EVTDESCDUEL106C;[duel_round_winner.GetTitledFirstName] бросает хорошо и [duel_round_winner.GetClumsilyElegantly] [Root.GetWeaponInjuringBlowOnMe]! Я побежден...;x
+EVTOPTADUEL106;Сдаюсь! Сдаюсь!;x
+EVTOPTBDUEL106;Я еще не закончил!;x
+EVTOPTCDUEL106;То, что мертво, умереть не может!;x
+EVTOPTDDUEL106;Непокорные! Несгибаемые! НЕСЛОМЛЕННЫЕ!;x
+EVTTOOLTIPDUEL107;обдумывает вашу сдачу;x
+EVTDESCDUEL107;[duel_round_loser.GetTitledFirstName] бросает своё оружие и поднимает руки. 'Сдаюсь! Я сдаюсь!';x
+EVTOPTADUEL107;Я принимаю. Поднимайся на ноги..;x
+EVTOPTBDUEL107;Нет.;x
+EVTOPTCDUEL107;Ланнистеры всегда платят свои долги.;x
+EVTOPTBDUEL107B;Нет, [GetRootFromInsult]!;x
+EVTTOOLTIPDUEL108;терпит поражение.;x
+EVTDESCDUEL108;[duel_round_winner.GetFirstName] опускает своё оружие и протягивает руку. 'Я принимаю, - говорит [duel_round_winner.GetSheHe], - вставайте.';x
+EVTOPTADUEL108;Вы честно победили в схватке.;x
+EVTTOOLTIPDUEL109;[duel_round_loser.GetTitledFirstName] убит!\n;x
+EVTDESCDUEL109;[duel_round_winner.GetFirstName] смотрит на вас без тени эмоций на своём лице.\n'Нет.'\nИ всё вокруг потемнело...;x
+EVTOPTADUEL109;Аааргх…;x
+EVTTOOLTIPDUEL110;Вы откатываетесь, чтобы увернуться от последнего удара;x
+EVTDESCDUEL110;[duel_round_winner.GetTitledFirstName] наносит удар, но вы откатываетесь, и как раз вовремя, получив лишь небольшое ранение вскользь. Вы заставляете себя встать и держать оружие наготове.;x
+EVTOPTADUEL110;Ты не получишь еще один шанс!;x
+TOOLTIPLOSEEYE;Вы потеряли глаз!;x
+EVTTOOLTIPDUEL111;реагирует;x
+EVTDESCDUEL111;Вы ударяете, но [duel_round_loser.GetTitledFirstName] откатывается в сторону, раненый, но все еще очень живой. [duel_round_loser.GetSheHeCap] поднимается на ноги и снова берет своё оружие в руки.;x
+EVTOPTADUEL111;Почему бы тебе просто не УМЕРЕТЬ?!;x
+EVTOPTADUEL111B;Почему бы тебе просто не сдаться?!;x
+EVTDESCDUEL201;[duel_round_loser.GetTitledFirstName] пытается сопротивляться, но вы бросаетесь вперед, легко подавляя [duel_round_loser.GetHerHis] жалкую защиту. Вы бьете в [duel_round_loser.GetHerHis] сердце изо всех сил!;x
+EVTDESCDUEL201B;[duel_round_loser.GetTitledFirstName] пытается сопротивляться, но вы бросаетесь вперед, легко подавляя [duel_round_loser.GetHerHis] жалкую защиту. Вы наносите удар [duel_round_loser.GetHerHim] изо всех сил, и, несмотря на дружественный характер поединка, вы слишком сильны и смертельно раните его.;x
+EVTOPTADUEL201;УМРИ!;x
+EVTOPTBDUEL201;НАМ ЯРОСТЬ!;x
+EVTOPTCDUEL201;ОГОНЬ И КРОВЬ!;x
+EVTOPTADUEL201B;[duel_round_loser.GetSheHeCap] знал о рисках;x
+EVTTOOLTIPDUEL202;[duel_round_loser.GetTitledFirstName] убит!\n;x
+EVTDESCDUEL202;Вы пытаетесь удержать соперника на расстоянии, но [duel_round_winner.GetTitledFirstName] неудержим! Вы ошибаетесь только один раз, но это то единственное, чего [duel_round_winner.GetSheHe] желал...;x
+EVTDESCDUEL202B;Вы пытаетесь удержать соперника на расстоянии, но [duel_round_winner.GetTitledFirstName] неудержим! Вы ошибаетесь только один раз, но это то единственное, чего [duel_round_winner.GetSheHe] желал. [duel_round_winner.GetSheHeCap] наносит слишком сильный удар и случайно наносит вам смертельную рану.;x
+EVTOPTADUEL202;Аааааргх!;x
+EVTOPTADUEL202B;Мы договаривались не до смерти!;x
+EVTOPTBDUEL202;Владыка Света наблюдает за мной!;x
+EVTTOOLTIPDUEL204;Дуэль возобновляется\n;x
+EVTDESCDUEL203;[duel_round_loser.GetTitledFirstName] падает замертво. Вы вытираете [duel_round_loser.GetHerHis] кровь со своего оружия. Дело сделано. [duel_round_loser.GetSheHeCap] мертв.;x
+EVTOPTADUEL203;Valar morghulis.;x
+EVTDESCDUEL204;[duel_round_loser.GetTitledFirstName] падает замертво. Вы вытираете [duel_round_loser.GetHerHis] кровь со своего оружия. [duel_round_loser.GetSheHeCap] мертв, но затем [duel_round_loser.GetSheHe] делает глубоких вдох и поднимается с земли, несмотря на смертельныйе раны. [duel_round_loser.GetSheHeCap] говорит, что Владыка Света защищает [duel_round_loser.GetHerHis].;x
+EVTOPTADUEL204;Это невозможно!;x
+EVTTOOLTIPDUELOUTPUT1;победил!;x
+EVTDESCDUELOUTPUT1;Бой окончен. [From.GetTitledFirstName] проиграл. Вы победили!;x
+EVTOPTADUELOUTPUT1;Победа за мной!;x
+EVTDESCbattle.1;Сражаясь на поле, вы видите вражеского бойца, отрезанного от остальных. Хотя вы не можете сказать, кто это, Но и так ясно, что он из знати.;x
+EVTOPTAbattle.1;В бой!;x
+EVTDESCbattle.2;Вы отдалились от своих людей в хаосе битвы, и только что пришли в себя и огляделись. Вы оценили обстановку вокруг, и только решили пройти к своим, как увидели, что [From.GetTitledFirstName] прорвался через ряды врагов и набросился на вас!;x
+EVTOPTAbattle.2;Готовься к смерти, мерзавец [From.GetOnlyDynastyName]!;x
+EVTOPTBbattle.2;Мне нужно выбраться отсюда!;x
+EVTOPTCbattle.2;Бегите, [Root.PrimaryTitle.GetFOA]! Я разберусь тут!;x
+EVTTOOLTIPbattle.3;реагирует;x
+EVTDESCbattle.3;Сражаясь на поле, вы видите вражеского бойца, отрезанного от остальных. Когда вы приблизились, то узнаете его, это [From.GetTitledFirstNameWithDynasty].;x
+EVTOPTAbattle.3;Готовься к смерти, мерзавец [From.GetOnlyDynastyName]!;x
+EVTOPTBbattle.3;Мне нужно выбраться отсюда!;x
+EVTOPTCbattle.3;Бегите, [Root.PrimaryTitle.GetFOA]! Я разберусь тут!;x
+EVTDESCbattle.4;Сражаясь на поле, вы видите вражеского бойца, отрезанного от остальных. Когда вы приблизились, то узнаете его, это [From.GetTitledFirstNameWithDynasty]. Видя, что вы направляетесь в его сторону, [From.GetSheHe] поворачивается и убегает. Вы пытаетесь преследовать, но теряете его в хаосе битвы.;x
+EVTOPTAbattle.4;Правильно, трус, беги в меня!;x
+EVTDESCbattle.5;Вы поворачиваетесь лицом... и [From.GetTitle] [From.GetFirstName] прерывает свой удар и убегает. Вы пытаетесь преследовать, но теряете его в хаосе битвы.;x
+EVTOPTAbattle.5;Правильно, трус, беги от меня!;x
+EVTTOOLTIPbattle.6;будет сражаться с персонажем [From.GetTitledFirstName];x
+EVTDESCbattle.7;Сражаясь на поле, вы видите вражеского бойца, отрезанного от остальных. Когда вы приблизились, то узнаете его, это [FromFrom.GetTitle] [FromFrom.GetFirstName] собственной персоной! Однако, прежде чем вы приблизились, [From.GetTitledFirstName] выпрыгивает перед вами, держа меч наготове, '[FromFrom.PrimaryTitle.GetFOA]! - кричит [From.GetSheHe] - Я разберусь с ним!';x
+EVTOPTAbattle.7;Ты думаешь, твой белый плащ тебя спасет?;x
+EVTOPTBbattle.7;Появление в бою телохранителя не было частью плана.;x
+EVTOPTCbattle.7;Хорошо, ты тоже умрешь!;x
+EVTOPTDbattle.7;Так и быть, [GetRootFromInsult] умрёт!;x
+EVTDESCbattle.8;Одного взгляда на персонажа [FromFrom.GetTitledFirstName] достаточно, чтобы [From.GetTitle] [From.GetFirstName] повернулся и убежал.;x
+EVTOPTAbattle.8;Правильно, трус, беги от меня!;x
+EVTTOOLTIPbattle.9;сразится с персонажем [From.GetTitledFirstName];x
+EVTDESCbattle.10;[FromFrom.GetTitle] [FromFrom.GetFirstName] внезапно останавливает свой удар, вы задаетесь вопросом, почему, но только лишь на миг, когда [From.GetTitledFirstName] схватывает [FromFrom.GetHerHis] сзади. 'Бегите за наши ряды, [FromFrom.PrimaryTitle.GetFOA]!' - кричит [From.GetSheHe], - Я разберусь!';x
+EVTOPTAbattle.10;Ты думаешь, твой белый плащ тебя спасет?;x
+EVTOPTBbattle.10;Поединок с Королевской гвардией не был частью плана.;x
+EVTTOOLTIPbattle.11;[From.GetTitledFirstName] пал, это деморализует противника!;x
+EVTDESCbattle.11;[FromFrom.GetTitledFirstName] падает перед вами, [FromFrom.GetHerHis] солдаты смотрят на вас и теряют надежду.;x
+EVTOPTAbattle.11;Теперь это наш шанс!;x
+EVTTOOLTIPbattle.12;[From.GetTitledFirstName] берётся Вами в плен.;x
+EVTDESCbattle.12;[FromFrom.GetTitledFirstName] беспомощно лежит у ваших ног, [FromFrom.GetHerHis] оружие отброшено в сторону, а ваше у [FromFrom.GetHerHis] шеи.;x
+EVTOPTAbattle.12;Отправишься со мной в город [Root.Capital.GetName].;x
+EVTDESCbattle.13;Вы потерпели поражение. [From.GetTitledFirstName] взял вас в плен.;x
+EVTOPTAbattle.13;Я запомню это, [From.GetOnlyDynastyName].;x
+EVTDESCbattle.1399;Тревожные новости из битвы в земле [FromFrom.Location.GetName]. [Root.PrimaryTitle.GetFOA], ваш [From.GetRootRelation] [From.GetTitledFirstNameWithDynastyNoRegnal] попал в плен! [From.GetSheHeCap] был побежден в прямом единоборстве командиром противника по имени [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] и доставлен в провинцию [From.Location.GetName] в качестве заключенного.;x
+EVTOPTAbattle.1399;Это неудача;x
+EVTTOOLTIPbattle.14;теперь не уйдет!;x
+EVTDESCbattle.14;Вы с ужасом смотрите как [FromFrom.GetTitledFirstName], которого сразил [From.GetTitledFirstName], падает на землю, [FromFrom.GetHerHis] плащ весь в крови. [From.GetTitle] [From.GetFirstName] неторопливо выходит вперед. 'Все кончено, [Root.PrimaryTitle.GetFOA],' - говорит [From.GetSheHe], 'все закончится здесь.';x
+EVTOPTAbattle.14;У меня нет времени убегать!;x
+EVTTOOLTIPbattle.15;В бой!;x
+EVTDESCbattle.15;Вы снимаете окровавленный плащ, освобождая ваши ноги и медленно подходите к персонажу [From.GetTitledFirstName]. Вы выдернули [From.GetHerHis] из под охраны [From.GetHerHis] армии и убили тем мечом, которым присягали.;x
+EVTOPTAbattle.15;Все кончено, [From.PrimaryTitle.GetFOA]. Все закончится здесь.;x
+EVTDESCbattle.16;Битва закончилась менее чем за минуту. [FromFrom.GetTitledFirstName] падает на землю, и [From.GetTitledFirstName] стирает кровь со своего меча. 'Дело сделано, [Root.PrimaryTitle.GetFOA],' - сказал [From.GetSheHe], - '[FromFrom.GetSheHe] более не будет беспокоить вас.';x
+EVTOPTAbattle.16;Молодец, [From.GetTitledFirstName].;x
+EVTDESCbattle.17;Битва закончилась менее чем за минуту. [From.GetTitledFirstName] сносит правителя, известного как [FromFrom.GetTitledFirstName] на землю и отбрасывает [FromFrom.GetHerHis] оружие, оставляя [FromFrom.GetHerHis] беззащитным. 'Я сдаюсь! Я сдаюсь!';x
+EVTOPTAbattle.17;Свяжите его, [From.GetOnlyDynastyName]. Мы заберем [FromFrom.GetHerHis] домой с собой.;x
+battlefield_fight;Вызов на дуэль;x
+EVTDESCDUEL10700;У нас есть новости из земли [From.Location.GetName], где [From.GetTitledFirstName] и [FromFrom.GetTitledFirstName] встретились в поединке. Они отчаянно сражались друг с другом, но, в итоге, победу одержал [From.GetTitledFirstName]. [FromFrom.GetTitledFirstName] теперь пленник.;x
+String_my_artifact_weapon_1_type;[dueling_weapon_1.GetWeaponType];x
+String_my_artifact_weapon_2_type;[dueling_weapon_2.GetWeaponType];x
+String_GetYourDuelWeapon;ваше [This.GetDuelWeapon];x
+String_GetHerHisDuelWeapon;[This.GetHerHis] [This.GetDuelWeapon];x
+String_arakh;аракх;x
+String_stiletto;стилет;x
+formidable_animal_companion;Грозное животное-компаньон;x
+animal_companion;Животное-компаньон;x
+EVTOPTDDUEL2;Мой [Root.GetAnimalCompanion] поможет мне!;x
+TOOLTIPduel_tactic_animal;Ваш [Root.GetAnimalCompanion] атакует;x
+EVTDESCDUEL5ANIMAL;Ваш [Root.GetAnimalCompanion] злобно атакует персонажа [duel_round_loser.GetTitledFirstName], заставляя [duel_round_loser.GetHerHis] защищать себя. [duel_round_loser.GetSheHeCap] отвлекается и открывается, [Root.GetYourDuelWeapon] в ваших руках наносит удар.;x
+EVTDESCDUEL6ANIMAL;В бесчестном движении [duel_round_winner.GetAnimalCompanion] персонажа [duel_round_winner.GetTitledFirstNameNoRegnal] злобно атакует вас, заставляя вас защищаться. Пока вы отвлекаетесь на этого зверя, [duel_round_winner.GetTitledFirstNameNoRegnal] наносит удар оружием [duel_round_winner.GetHerHisDuelWeapon];x
+String_forcefully;мощно;x
+String_brutally;жестоко;x
+String_effortlessly;без особых усилий;x
+String_gracefully;изящно;x
+String_extravagantly;экстравагантно;x
+String_quickly;быстро;x
+String_ruthlessly;беспощадно;x
+String_savagely;свирепо;x
+String_sloppily;небрежно;x
+String_awkwardly;неулюже;x
+bruised_groin;Ушиб паха;x
+String_groin;пах;x
+cut_hand;Порезы на руке;x
+lost_fingers;Потерянные Пальцы;x
+String_fingers;пальцы;x
+String_cut_their_limb;использовать моё [Root.GetDuelWeapon] чтобы отрезать [other_combatant.GetHerHis] часть тела - [other_combatant.GetBodyPartInjured];x
+String_cut_my_limb;использовать [other_combatant.GetHerHis] [other_combatant.GetDuelWeapon], чтобы отрезать часть тела - [Root.GetBodyPartInjured];x
+EVTDESCDUEL115;Несмотря на получение превосходства и [Root.GetClumsilyElegantly] [duel_round_loser.GetWeaponInjuringBlow], я не смог нанести завершающий удар по противнику, известному как [duel_round_loser.GetTitledFirstName]. Мы оба отступаем, довольствуясь отсутствием явного победителя..;x
+EVTOPTADUEL115;Я почти достал [duel_round_loser.GetHerHis]!;x
+EVTDESCDUEL116;[duel_round_winner.GetTitledFirstName] смог получить краткое преимущество и [duel_round_winner.GetClumsilyElegantly] [Root.GetWeaponInjuringBlowOnMe], но не смог нанести завершающий удар. Мы оба отступаем, довольствуясь отсутствием явного победителя.;x
+EVTOPTADUEL116;Мне повезло и с этим результатом;x
+EVTTOOLTIPDUEL116B;Дуэль заканчивается ничьей;x
+EVTDESCDUELOUTPUT1B;Поединок окончен, никто не может претендовать на победу.;x
+EVTOPTADUELOUTPUT1B;Честная битва;x
+EVTDESCbattle.1799;[battlefield_duel_bodyguard.GetTitledFirstName] и [battlefield_duel_opponent.GetTitledFirstName] участвуют в жестоком бою, но ни один из них не смог одолеть другого. [battlefield_duel_opponent.GetTitledFirstName] был вынужден отступить.;x
+EVTOPTAbattle.1799;Благодарю, что защищаешь меня.;x
+String_throw_at_my_head;бросил свой [other_combatant.GetDuelWeapon] в мою голову;x
+String_finger_dance;танец пальцев;x
+String_throw_at_their_head;бросить моё [Root.GetDuelWeapon] в [other_combatant.GetHerHis] голову;x
+EVTOPTEDUEL2;Я хочу нанести яд на [Root.GetDuelWeapon]!;x
+TOOLTIPduel_tactic_poison;Вы травляете [Root.GetDuelWeapon] ядом, пытаясь помешать противнику. Это может быть обнаружено.;x
+EVTDESCDUEL5POISON;Ваше оружие [Root.GetDuelWeapon] отравлено, и после обмена скользящими ударами [duel_round_less.GetTitledFirstName], наконец, получает порезы. Вы улыбаетесь себе, зная, что яд будет иметь дурной эффект, независимо от исхода поединка.;x
+EVTDESCDUEL5POISON_DISCOVERED;Вскоре после того, как вам удалось пустить кровь своим оружием [Root.GetDuelWeapon], [duel_round_loser.GetTitledFirstName] начинает царапать рану. [duel_round_loser.GetSheHeCap] вскоре замечает грязную жидкость как на ране, так и на вашем оружии и понимает вашу попытку отравить [duel_round_loser.GetHerHis]!;x
+TOOLTIPDUELPOISONSUCCESS;§Y[duel_round_loser.GetTitledFirstName] успешно отравлен[duel_round_loser.GetEndA]§!;x
+TOOLTIPDUELPOISONDISCOVERED;§YВаша попытка отравления обнаружена§!;x
+EVTDESCDUEL6POISON_DISCOVERED;После обмена ударами [duel_round_winner.GetTitledFirstName] нансит вам порез. Рана невероятно зудит, и в итоге вы замечаете грязную субстанцию, вытекающую как из раны, так и разводы на оружии [duel_round_winner.GetDuelWeapon]. Это конечно яд!;x
+EVTOPTADUEL6D;Трусливая тактика!;x
+TOOLTIPDUELPOISONDISCOVEREDB;§Y[duel_round_loser.GetTitledFirstName] отравил[duel_round_loser.GetEndA] вас§!;x
+EVTOPTADUEL5D;Теперь яд сделает свою работу;x
+EVTDESCDUEL210;[From.GetTitledFirstNameWithDynasty] [From.GetDeathReason], и это широко известно из-за вашего яда в недавнем поединке!;x
+EVTOPTADUEL210;Ну, это было очень эффективно;x
+EVTDESCDUEL211;Ваш[FromFrom.GetEndA] [FromFrom.GetRootRelation] [FromFrom.GetTitledFirstNameWithDynasty] - [FromFrom.GetDeathReason], и, как известно потому, что [From.GetTitledFirstNameWithDynasty] отравил[From.GetEndA] своё оружие в недавней дуэли;x
+EVTOPTADUEL211;Это хитрая тактика;x

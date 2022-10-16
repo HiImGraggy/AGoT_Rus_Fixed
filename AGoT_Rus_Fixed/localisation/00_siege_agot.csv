@@ -1,104 +1,105 @@
-escaped_siege;Побег из осады;x;;;
-left_at_siege;Укрытие в замке;x;;;
-left_to_rot;Оставить гнить в тюрьме;x;;;
-death_escape;Убили при попытке побега;x;;;
-left_behind;Оставили на осаде;x;;;
-stalwart_defender;Стойкий защитник;x;;;
-modifier_hidden;Скрытие в сельской местности;x;;;
-joined_war_against_me;Присоединение к войне против меня;x;;;
-stolen_banner;Захвачено знамя;x;;;
-liberated;Освобождены от оккупации;x;;;
-EVTDESCSIEGECAPTURE;[Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal] попал[Root.GetEndA] в плен при попытке бежать из замка! Это сделал[From.GetEndA] [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] ;x;;;
-EVTDESCCAPTUREENEMYSIEGE;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], осада закончена, и теперь Вы мой пленник!;x;;;
-EVTDESCbattlewin001;Добавьте это в список моих подвигов.;x;;;
-EVTDESCsiegewin001;Добавьте это в список моих подвигов.;x;;;
-EVTDESCsiegeescape01;[Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal]! Замок может пасть в любой день, мы готовы...;x;;;
-EVTOPTAsiegeescape1;Бегите из замка через тайный подземный туннель...;x;;;
-EVTOPTAsiegeescape2;место;x;;;
-EVTDESCsiege_agot.2A;[Root.PrimaryTitle.GetFOA], мы схватили всех, кого смогли найти, что с ними делать?;x;;;
-EVTDESCsiege_agot.2B;[Root.PrimaryTitle.GetFOA], [FromFrom.GetName] попал[FromFrom.GetEndA] в плен, но [siege_location_owner.GetTitledFirstNameWithDynastyNoRegnal] бежал[siege_location_owner.GetEndA]...;x;;;
-EVTDESCsiege_agot.2C;[Root.PrimaryTitle.GetFOA], я рад[From.GetEndA] сообщить, что я захватил[From.GetEndA] некоторых высокопоставленных заключенных после нашей успешной осады поселения [FromFrom.GetName]. Я передаю их вам для вашего решения..\n\nВаш[From.GetEndA] Смиренн[From.GetAyaYy]\n[From.GetTitledFirstNameNoRegnal];x;;;
-EVTDESCsiege_agot.2D;[Root.PrimaryTitle.GetFOA], я рад[From.GetEndA] сообщить о взятии поселения [FromFrom.GetName]. Но [siege_location_owner.GetTitledFirstNameWithDynastyNoRegnal] успел[siege_location_owner.GetEndA] уйти.\n\nВаш[From.GetEndA] смиренн[From.GetAyaYy]\n[From.GetTitledFirstNameNoRegnal];x;;;
-EVTOPTAsiege_agot.2;Закуйте лидера в кандалы, остальных отпустить.;x;;;
-EVTOPTBsiege_agot.2;Посадить в тюрьму всю семью.;x;;;
-EVTOPTBsiege_agot.2B;Тогда вся [siege_location_owner.GetHerHis] семья сядет в подземелье!;x;;;
-EVTOPTBsiege_agot.2C;Хорошая работа, [From.PrimaryTitle.GetFOA], Отправить их в мои подземелья!;x;;;
-EVTOPTCsiege_agot.2A;Посадить их всех под домашний арест;x;;;
-EVTOPTCsiege_agot.2B;Взять [siege_location_owner.GetHerHis] семью под домашний арест;x;;;
-EVTOPTCsiege_agot.2C;Отправить их под домашний арест к персонажу [From.PrimaryTitle.GetFOA];x;;;
-TOOLTIPsiege_agot.2HOUSEARREST;Все захваченные пленные находятся под§Yдомашним арестом§!, что увеличивает их мнение о вас на §G10§!;x;;;
-EVTOPTDsiege_agot.2;Отпустите их, я сегодня добр[GetAyaYy].;x;;;
-EVTOPTDsiege_agot.2B;[siege_location_owner.GetHerHisCap] семья должна быть оставлена в покое;x;;;
-EVTOPTDsiege_agot.2C;Отпустить их;x;;;
-TOOLTIPsiege_agot.2LEAVEBE;Все захваченные пленники §Yосвобождены§!, что увеличивает их мнение о вас на §G10§!;x;;;
-EVTOPTEsiege_agot.2;Здесь нет никакой ценности;x;;;
-EVTOPTFsiege_agot.2;На свободе!;x;;;
-EVTOPTAsiegewin4;Мы не можем найти их лидера, [Root.PrimaryTitle.GetFOA], может захватим вражескую семью?;x;;;
-EVTOPTAsiegewin5;Отпустите их, я сегодня добр[GetAyaYy].;x;;;
-EVTDESCsiegeprestige;[Root.PrimaryTitle.GetFOA], Милорд! Крепость пала!;x;;;
-EVTTOOLTIPenemynothere;Если враг не защищает её, она ничего не стоит.;x;;;
-EVTOPTAsiegewinprestige;Моё имя будет жить в веках!;x;;;
-EVTOPTAsiegewinbanner;Повесьте их знамя в моём зале.;x;;;
-EVTDESCWAYsearchdungeons; Да, [Root.PrimaryTitle.GetFOA], мы будем искать в подземелье!;x;;;
-EVTOPWAYprisonrelease01;Освободить всех заключенных.;x;;;
-EVTOPWAYprisonrelease02;Отпустите тех кто поддерживает нас.;x;;;
-EVTOPWAYprisonrelease03;Освободите только моих родственников, остальные, похоже, здесь сидят не просто так...;x;;;
-EVTOPWAYprisonrelease04;Кто бы они не были, им тут самое место...;x;;;
-EVTDESCWAYsiegepulseflee;Милорд, вражеская армия собирается окружить наш замок, что делать?;x;;;
-EVTNAMEWAYsiegepulseflee;Бороться или бежать?;x;;;
-EVTOPTWAYsiegepulseflee01;Этот замок неприступен, нам здесь будет безопасней.;x;;;
-EVTOPTWAYsiegepulseflee02;Отправьте мою семью в укрытие, я не могу ими рисковать.;x;;;
-EVTOPTWAYsiegepulseflee03;Я и моя семья скроемся, пока тут не станет безопасно, ты останешься здесь держать оборону...;x;;;
-EVTNAMEWAYsiegeescape;Представилась такая возможность!;x;;;
-EVTDESCWAYsiegeescape;[Root.PrimaryTitle.GetFOA], ситуация ухудшается с каждым часом. Боюсь, без подкреплений мы попадём в руки врага... Надо было бежать сразу!;x;;;
-EVTOPTWAYsiegesescapeattempt01;Бегите ночью через ворота.;x;;;
-EVTOPTWAYsiegesescapeattempt02;Выйти из замка по канализации..;x;;;
-EVTOPTWAYsiegesescapeattempt03;Просто дайте мне веревку...;x;;;
-EVTOPTWAYsiegesescapeattempt04;Я думаю стоит подождать... Возможно у нас будет ещё шанс.;x;;;
-EVTDESCRWAYnotifyofcapture1;Когда я думал[GetEndA], что уже смог[GetNoneE] бежать, передо мной появилась группа воинов со знаменем моего врага. Единственное, что я смог[GetNoneE] сделать, так это прошептать 'сдаюсь'.;x;;;
-EVTDESCRWAYnotifyofcapture2;[Root.PrimaryTitle.GetFOA], мы поймали убегающего из замка вражеского командира!;x;;;
-EVTNAMEWAYnotifyofoutcome;Попытка к бегству;x;;;
-EVTTOOLTIPsiegecapturedenemy;[Root.GetTitledName] заключен[Root.GetEndA] в тюрьму врага.;x;;;
-EVTTOOLTIPsiegeescaped;[Root.GetTitledName] убежал[Root.GetEndA] в деревню!;x;;;
-EVTOPWAYsiegecapture01;Немедленно отведите его в подземелье моего замка!;x;;;
-EVTOPWAYsiegecapture02;Отправляйся в седьмую преисподнюю!;x;;;
-EVTDESCRWAYnotifyofescape01;В глухую ночь, пока на земле лежит низкий туман, вы осторожно пробираетесь через боковую дверь замка и плывёте по рву до лесочка неподалёку от замка. Некомпетентность врага спасла вас от смерти и теперь можно благодарить богов за спасение... только вот ваша семья ненавидит вас за то, что вы их оставили...;x;;;
-EVTDESCRWAYnotifyofescape02;Ваш слуга ведёт вас к кладовым, о существовании которых вы даже и не знали, за ней вы увидели тёмный тоннель, от которого идёт запах смерти и тления. Вы надеетесь, что больше никогда не совершите такое путешествие... и только сейчас вам пришло в голову, что вы оставили свою семью врагу.;x;;;
-EVTDESCRWAYnotifyofescape03;Они сказали, что только дурак попытался бы перелезть через южную стену!  И в результате под ней не было ни одного солдата врага. И уже сматывая верёвку вы вспомнили о своей семье, оставшейся в замке...;x;;;
-EVTTOOLWAYfamilyhatesyou;Во вражеской тюрьме, и все члены семьи, оставшиеся в замке, не слишком довольны этим.;x;;;
-EVTDESCswapletterenemy;[FROM.GetTitledName] хотел[FROM.GetEndA] бы организовать обмен пленными.;x;;;
-EVTDESCswapletterroot;[Root.PrimaryTitle.GetFOA], мы отправим ворона с предложением обменять наших пленных?;x;;;
-EVTDESCswapletteraccept;Обмен пленными был принят!;x;;;
-EVTNAMEWAYprisonerswap;Обмен пленными;x;;;
-arrange_prisoner_swap;Организовать обмен заложниками;x;;;
-arrange_prisoner_swap_desc;Организовать обмен заложниками;x;;;
-EVTDESCswapletterprisoner;Ваш тюремщик сказал, что скоро вас могут обменять на другого пленника...;x;;;
-EVTOPWAYswap3op1;Обменять знатных пленников.;x;;;
-bring_out_of_hiding;Заберите семью из укрытия;x;;;
-bring_out_of_hiding_desc;Война закончилась и теперь можно забрать семью из укрытия.;x;;;
-request_important_prisoners;Отправить важных заключённых в подземелья;x;;;
-request_important_prisoners_named;Потребовать у персонажа [Root.GetTitledFirstName] важных заключенных;x;;;
-request_important_prisoners_desc;Потребовать, чтобы заключенные противника были переведены из замка [Root.Capital.GetName] под ваше заточение в замок [From.Capital.GetName].;x;;;
-TOOLTIPdiplomatic.200;Вы отправляете сообщение персонажу [Root.GetTitledFirstName] с требованием передать вам следующих заключенных:;x;;;
-TOOLTIPrequest_important_prisoners;[This.GetTitledFirstName] [This.GetDynName]\n;x;;;
-EVTDESCdiplomatic.200;[Root.GetTitledFirstName], у вас есть некоторые высокородные заключенные в городе [Root.Capital.GetName]. Эти люди являются врагами государства [FromFrom.PrimaryTitle.GetName], и поэтому я приказываю, чтобы вы передали их мне под стражу в город [FromFrom.Capital.GetName].\n\nПодпись\n[FromFrom.GetTitledFirstNameoftheHouse];x;;;
-EVTOPTAdiplomatic.200;Как прикажете, [FromFrom.PrimaryTitle.GetFOA];x;;;
-EVTTOOLTIPprisreq;[This.GetTitledFirstName] [This.GetDynName] перемещен[This.GetEndA] в город [FromFrom.Capital.GetName]\n;x;;;
-EVTOPTCdiplomatic.200;Нет, они останутся здесь!;x;;;
-EVTDESCdiplomatic.201;[Root.PrimaryTitle.GetFOA], я повинуюсь вашему приказу и отправлю этих заключенных вам в город [Root.Capital.GetName] немедленно.\n\nВаш[From.GetEndA]\n[From.GetTitledFirstNameoftheHouse];x;;;
-EVTDESCdiplomatic.202;[Root.PrimaryTitle.GetFOA], боюсь, я не могу согласиться на это, эти заключенные были захвачены мной и должны оставаться здесь в городе [From.Capital.GetName].\n\nПодпись\n[From.GetTitledFirstNameoftheHouse];x;;;
-EVTOPTAdiplomatic.202;Это возмутительно!;x;;;
-opinion_refused_prisoner_transfer;Отказ от передачи заключенного;x;;;
-EVTDESCsiege_agot.29;Я отправил[GetEndA] посланника, увидим сдадут ли они замок;x;;;
-EVTDESCsiege_agot.30;Вы обречены, сдайте замок и сможете покинуть его беспрепятственно;x;;;
-EVTDESCsiege_agot.31;Мы принимаем ваше предложение и сдаём замок;x;;;
-EVTDESCsiege_agot.32;Даже и не рассчитывайте, трусы;x;;;
-EVTDESCsiege_agot.9;[Root.PrimaryTitle.GetFOA], я долж[Root.GetNaEn] вам сообщить, что войска персонажа [From.GetTitledFirstName] серьёзно повредили замок и деревни во время осады замка [FromFrom.GetName].;x;;;
-EVTOPsiege_agot.9;Плохие вести;x;;;
-EVTDESCsiege_agot.6;После беспощадной осады поселения [FromFrom.GetName], [From.GetTitledFirstName] взял[From.GetEndA] меня в плен!;x;;;
-EVTOPsiege_agot.6;Ох;x;;;
-EVTDESCsiege_agot.7;После героической осады поселения [FromFrom.GetName], [From.GetTitledFirstName] выпустил[From.GetEndA] вас из тюрьмы.;x;;;
-EVTOPsiege_agot.7;Сладкая свобода!;x;;;
-TOOLTIPmodifier_hidden;[This.GetFirstName] долж[This.GetNaEn] быть скрыт[This.GetEndA]\n;x;;;
-EVTOPTWAYsiegepulseDRAGON;Я просто улетаю. Я просто улечу подальше;x;;;
-TOOLTIPsiegepulseDRAGON;[Root.GetTitledFirstName] улетел[Root.GetEndA] на своём Драконе по имени [This.GetName]\n;x;;;
+#CODE;ENGLISH;x
+escaped_siege;Побег из осады;x
+left_at_siege;Укрытие в замке;x
+left_to_rot;Оставить гнить в тюрьме;x
+death_escape;Убили при попытке побега;x
+left_behind;Оставили на осаде;x
+stalwart_defender;Стойкий защитник;x
+modifier_hidden;Скрытие в сельской местности;x
+joined_war_against_me;Присоединение к войне против меня;x
+stolen_banner;Захвачено знамя;x
+liberated;Освобождены от оккупации;x
+EVTDESCSIEGECAPTURE;[Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal] попал[Root.GetEndA] в плен при попытке бежать из замка! Это сделал[From.GetEndA] [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] ;x
+EVTDESCCAPTUREENEMYSIEGE;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], осада закончена, и теперь Вы мой пленник!;x
+EVTDESCbattlewin001;Добавьте это в список моих подвигов.;x
+EVTDESCsiegewin001;Добавьте это в список моих подвигов.;x
+EVTDESCsiegeescape01;[Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal]! Замок может пасть в любой день, мы готовы...;x
+EVTOPTAsiegeescape1;Бегите из замка через тайный подземный туннель...;x
+EVTOPTAsiegeescape2;место;x
+EVTDESCsiege_agot.2A;[Root.PrimaryTitle.GetFOA], мы схватили всех, кого смогли найти, что с ними делать?;x
+EVTDESCsiege_agot.2B;[Root.PrimaryTitle.GetFOA], [FromFrom.GetName] попал[FromFrom.GetEndA] в плен, но [siege_location_owner.GetTitledFirstNameWithDynastyNoRegnal] бежал[siege_location_owner.GetEndA]...;x
+EVTDESCsiege_agot.2C;[Root.PrimaryTitle.GetFOA], я рад[From.GetEndA] сообщить, что я захватил[From.GetEndA] некоторых высокопоставленных заключенных после нашей успешной осады поселения [FromFrom.GetName]. Я передаю их вам для вашего решения..\n\nВаш[From.GetEndA] Смиренн[From.GetAyaYy]\n[From.GetTitledFirstNameNoRegnal];x
+EVTDESCsiege_agot.2D;[Root.PrimaryTitle.GetFOA], я рад[From.GetEndA] сообщить о взятии поселения [FromFrom.GetName]. Но [siege_location_owner.GetTitledFirstNameWithDynastyNoRegnal] успел[siege_location_owner.GetEndA] уйти.\n\nВаш[From.GetEndA] смиренн[From.GetAyaYy]\n[From.GetTitledFirstNameNoRegnal];x
+EVTOPTAsiege_agot.2;Закуйте лидера в кандалы, остальных отпустить.;x
+EVTOPTBsiege_agot.2;Посадить в тюрьму всю семью.;x
+EVTOPTBsiege_agot.2B;Тогда вся [siege_location_owner.GetHerHis] семья сядет в подземелье!;x
+EVTOPTBsiege_agot.2C;Хорошая работа, [From.PrimaryTitle.GetFOA], Отправить их в мои подземелья!;x
+EVTOPTCsiege_agot.2A;Посадить их всех под домашний арест;x
+EVTOPTCsiege_agot.2B;Взять [siege_location_owner.GetHerHis] семью под домашний арест;x
+EVTOPTCsiege_agot.2C;Отправить их под домашний арест к персонажу [From.PrimaryTitle.GetFOA];x
+TOOLTIPsiege_agot.2HOUSEARREST;Все захваченные пленные находятся под§Yдомашним арестом§!, что увеличивает их мнение о вас на §G10§!;x
+EVTOPTDsiege_agot.2;Отпустите их, я сегодня добр[GetAyaYy].;x
+EVTOPTDsiege_agot.2B;[siege_location_owner.GetHerHisCap] семья должна быть оставлена в покое;x
+EVTOPTDsiege_agot.2C;Отпустить их;x
+TOOLTIPsiege_agot.2LEAVEBE;Все захваченные пленники §Yосвобождены§!, что увеличивает их мнение о вас на §G10§!;x
+EVTOPTEsiege_agot.2;Здесь нет никакой ценности;x
+EVTOPTFsiege_agot.2;На свободе!;x
+EVTOPTAsiegewin4;Мы не можем найти их лидера, [Root.PrimaryTitle.GetFOA], может захватим вражескую семью?;x
+EVTOPTAsiegewin5;Отпустите их, я сегодня добр[GetAyaYy].;x
+EVTDESCsiegeprestige;[Root.PrimaryTitle.GetFOA], Милорд! Крепость пала!;x
+EVTTOOLTIPenemynothere;Если враг не защищает её, она ничего не стоит.;x
+EVTOPTAsiegewinprestige;Моё имя будет жить в веках!;x
+EVTOPTAsiegewinbanner;Повесьте их знамя в моём зале.;x
+EVTDESCWAYsearchdungeons; Да, [Root.PrimaryTitle.GetFOA], мы будем искать в подземелье!;x
+EVTOPWAYprisonrelease01;Освободить всех заключенных.;x
+EVTOPWAYprisonrelease02;Отпустите тех кто поддерживает нас.;x
+EVTOPWAYprisonrelease03;Освободите только моих родственников, остальные, похоже, здесь сидят не просто так...;x
+EVTOPWAYprisonrelease04;Кто бы они не были, им тут самое место...;x
+EVTDESCWAYsiegepulseflee;Милорд, вражеская армия собирается окружить наш замок, что делать?;x
+EVTNAMEWAYsiegepulseflee;Бороться или бежать?;x
+EVTOPTWAYsiegepulseflee01;Этот замок неприступен, нам здесь будет безопасней.;x
+EVTOPTWAYsiegepulseflee02;Отправьте мою семью в укрытие, я не могу ими рисковать.;x
+EVTOPTWAYsiegepulseflee03;Я и моя семья скроемся, пока тут не станет безопасно, ты останешься здесь держать оборону...;x
+EVTNAMEWAYsiegeescape;Представилась такая возможность!;x
+EVTDESCWAYsiegeescape;[Root.PrimaryTitle.GetFOA], ситуация ухудшается с каждым часом. Боюсь, без подкреплений мы попадём в руки врага... Надо было бежать сразу!;x
+EVTOPTWAYsiegesescapeattempt01;Бегите ночью через ворота.;x
+EVTOPTWAYsiegesescapeattempt02;Выйти из замка по канализации..;x
+EVTOPTWAYsiegesescapeattempt03;Просто дайте мне веревку...;x
+EVTOPTWAYsiegesescapeattempt04;Я думаю стоит подождать... Возможно у нас будет ещё шанс.;x
+EVTDESCRWAYnotifyofcapture1;Когда я думал[GetEndA], что уже смог[GetNoneE] бежать, передо мной появилась группа воинов со знаменем моего врага. Единственное, что я смог[GetNoneE] сделать, так это прошептать 'сдаюсь'.;x
+EVTDESCRWAYnotifyofcapture2;[Root.PrimaryTitle.GetFOA], мы поймали убегающего из замка вражеского командира!;x
+EVTNAMEWAYnotifyofoutcome;Попытка к бегству;x
+EVTTOOLTIPsiegecapturedenemy;[Root.GetTitledName] заключен[Root.GetEndA] в тюрьму врага.;x
+EVTTOOLTIPsiegeescaped;[Root.GetTitledName] убежал[Root.GetEndA] в деревню!;x
+EVTOPWAYsiegecapture01;Немедленно отведите его в подземелье моего замка!;x
+EVTOPWAYsiegecapture02;Отправляйся в седьмую преисподнюю!;x
+EVTDESCRWAYnotifyofescape01;В глухую ночь, пока на земле лежит низкий туман, вы осторожно пробираетесь через боковую дверь замка и плывёте по рву до лесочка неподалёку от замка. Некомпетентность врага спасла вас от смерти и теперь можно благодарить богов за спасение... только вот ваша семья ненавидит вас за то, что вы их оставили...;x
+EVTDESCRWAYnotifyofescape02;Ваш слуга ведёт вас к кладовым, о существовании которых вы даже и не знали, за ней вы увидели тёмный тоннель, от которого идёт запах смерти и тления. Вы надеетесь, что больше никогда не совершите такое путешествие... и только сейчас вам пришло в голову, что вы оставили свою семью врагу.;x
+EVTDESCRWAYnotifyofescape03;Они сказали, что только дурак попытался бы перелезть через южную стену!  И в результате под ней не было ни одного солдата врага. И уже сматывая верёвку вы вспомнили о своей семье, оставшейся в замке...;x
+EVTTOOLWAYfamilyhatesyou;Во вражеской тюрьме, и все члены семьи, оставшиеся в замке, не слишком довольны этим.;x
+EVTDESCswapletterenemy;[FROM.GetTitledName] хотел[FROM.GetEndA] бы организовать обмен пленными.;x
+EVTDESCswapletterroot;[Root.PrimaryTitle.GetFOA], мы отправим ворона с предложением обменять наших пленных?;x
+EVTDESCswapletteraccept;Обмен пленными был принят!;x
+EVTNAMEWAYprisonerswap;Обмен пленными;x
+arrange_prisoner_swap;Организовать обмен заложниками;x
+arrange_prisoner_swap_desc;Организовать обмен заложниками;x
+EVTDESCswapletterprisoner;Ваш тюремщик сказал, что скоро вас могут обменять на другого пленника...;x
+EVTOPWAYswap3op1;Обменять знатных пленников.;x
+bring_out_of_hiding;Заберите семью из укрытия;x
+bring_out_of_hiding_desc;Война закончилась и теперь можно забрать семью из укрытия.;x
+request_important_prisoners;Отправить важных заключённых в подземелья;x
+request_important_prisoners_named;Потребовать у персонажа [Root.GetTitledFirstName] важных заключенных;x
+request_important_prisoners_desc;Потребовать, чтобы заключенные противника были переведены из замка [Root.Capital.GetName] под ваше заточение в замок [From.Capital.GetName].;x
+TOOLTIPdiplomatic.200;Вы отправляете сообщение персонажу [Root.GetTitledFirstName] с требованием передать вам следующих заключенных:;x
+TOOLTIPrequest_important_prisoners;[This.GetTitledFirstName] [This.GetDynName]\n;x
+EVTDESCdiplomatic.200;[Root.GetTitledFirstName], у вас есть некоторые высокородные заключенные в городе [Root.Capital.GetName]. Эти люди являются врагами государства [FromFrom.PrimaryTitle.GetName], и поэтому я приказываю, чтобы вы передали их мне под стражу в город [FromFrom.Capital.GetName].\n\nПодпись\n[FromFrom.GetTitledFirstNameoftheHouse];x
+EVTOPTAdiplomatic.200;Как прикажете, [FromFrom.PrimaryTitle.GetFOA];x
+EVTTOOLTIPprisreq;[This.GetTitledFirstName] [This.GetDynName] перемещен[This.GetEndA] в город [FromFrom.Capital.GetName]\n;x
+EVTOPTCdiplomatic.200;Нет, они останутся здесь!;x
+EVTDESCdiplomatic.201;[Root.PrimaryTitle.GetFOA], я повинуюсь вашему приказу и отправлю этих заключенных вам в город [Root.Capital.GetName] немедленно.\n\nВаш[From.GetEndA]\n[From.GetTitledFirstNameoftheHouse];x
+EVTDESCdiplomatic.202;[Root.PrimaryTitle.GetFOA], боюсь, я не могу согласиться на это, эти заключенные были захвачены мной и должны оставаться здесь в городе [From.Capital.GetName].\n\nПодпись\n[From.GetTitledFirstNameoftheHouse];x
+EVTOPTAdiplomatic.202;Это возмутительно!;x
+opinion_refused_prisoner_transfer;Отказ от передачи заключенного;x
+EVTDESCsiege_agot.29;Я отправил[GetEndA] посланника, увидим сдадут ли они замок;x
+EVTDESCsiege_agot.30;Вы обречены, сдайте замок и сможете покинуть его беспрепятственно;x
+EVTDESCsiege_agot.31;Мы принимаем ваше предложение и сдаём замок;x
+EVTDESCsiege_agot.32;Даже и не рассчитывайте, трусы;x
+EVTDESCsiege_agot.9;[Root.PrimaryTitle.GetFOA], я долж[Root.GetNaEn] вам сообщить, что войска персонажа [From.GetTitledFirstName] серьёзно повредили замок и деревни во время осады замка [FromFrom.GetName].;x
+EVTOPsiege_agot.9;Плохие вести;x
+EVTDESCsiege_agot.6;После беспощадной осады поселения [FromFrom.GetName], [From.GetTitledFirstName] взял[From.GetEndA] меня в плен!;x
+EVTOPsiege_agot.6;Ох;x
+EVTDESCsiege_agot.7;После героической осады поселения [FromFrom.GetName], [From.GetTitledFirstName] выпустил[From.GetEndA] вас из тюрьмы.;x
+EVTOPsiege_agot.7;Сладкая свобода!;x
+TOOLTIPmodifier_hidden;[This.GetFirstName] долж[This.GetNaEn] быть скрыт[This.GetEndA]\n;x
+EVTOPTWAYsiegepulseDRAGON;Я просто улетаю. Я просто улечу подальше;x
+TOOLTIPsiegepulseDRAGON;[Root.GetTitledFirstName] улетел[Root.GetEndA] на своём Драконе по имени [This.GetName]\n;x

@@ -1,1134 +1,1134 @@
-#CODE;ENGLISH;;;;;;;;;;;;;x
-valyrian_steel;Меч из валирийской стали;;;;;;;;;;;;;x
-valyrian_steel_desc;Валирийская сталь — сплав особого рода, отличающийся прочностью, создавать который умели только мастера древней Валирии.;;;;;;;;;;;;;x
-dawn;Рассвет;;;;;;;;;;;;;x
-dawn_desc;Родовой меч Дома Дейнов, по легенде, выкованный из сердца упавшей звезды. Рассвет - гордость Дома Дейнов. Его происхождение теряется в веках, но вполне вероятно, что Дейны владели им протяжении тысяч лет. Лезвие бледное, как молочное стекло, похоже на валирийское и обладает такими же свойствами. В отличие от других Домов, у которых есть свои родовые мечи, Дом Дейнов не передает меч от лорда к лорду. Только достойнейший рыцарь Дома Дейнов может владеть им, причем этот владелец традиционно принимает титул Меч Зари.;;;;;;;;;;;;;x
-TOOLTIPclaim_dawn_dishonorable;У вас не должно быть ни одного уровня бесчестья\n;;;;;;;;;;;;;x
-EVTDESC250277;Ваш[From.GetEndA] [From.GetRootRelation] [From.GetTitledFirstName] мертв[From.GetEndA]. По законам наследования вы получите [From.GetValyrianSwordHerHis], используйте его с достоинством;;;;;;;;;;;;;x
-EVTDESC250277B;[From.GetTitledFirstName], подлый кузнечный мастер, умер. Это значит, что [Root.GetValyrianSwordOwned] будет возвращен вам, вырванный из рук вора. Используйте его с достоинством.;;;;;;;;;;;;;x
-EVTOPTA250277;Это должно быть сделано;;;;;;;;;;;;;x
-EVTDESC250278;Вражеская армия покинула поле боя. Блуждая по окрестностям в поисках раненных, вы заметили блестящую черную вещь, наполовину похороненную в грязи. Как только вы наклонились и стали откапывать предмет из грязи, тут же порезали пальцы. Вы продолжаете копать и в конечном итоге достаете меч из валирийской стали!;;;;;;;;;;;;;x
-EVTOPTA250278;Трофей победителя!;;;;;;;;;;;;;x
-EVTDESC250279;Битва бушует вокруг вас, крики боли и гнева слышны со всех сторон. Вы сходитесь с очередным противником, чувствуете в груди свинцовую тяжесть удара и падаете без чувств. Только после окончания битвы вы понимаете, что фамильный меч, который вы так неумело использовали, был утерян в хаосе боя.;;;;;;;;;;;;;x
-EVTOPTA250279;Проклятье!;;;;;;;;;;;;;x
-EVTDESC251400;Ваш Мастер-над-оружием приносит вам список всех известных владельцев валирийских клинков.;;;;;;;;;;;;;x
-EVTOPTA251400;К ним относятся: (смотреть подсказку).;;;;;;;;;;;;;x
-show_me_val_swords;Показать владельцев валирийских клинков.;;;;;;;;;;;;;x
-show_me_val_swords_desc;Поручить Мастеру-оружейнику составить список всех известных владельцев валирийских клинков.;;;;;;;;;;;;;x
-opinion_gave_sword_to_me;Мне передали наш фамильный клинок;;;;;;;;;;;;;x
-opinion_didnt_give_sword_to_me;Мне отказано в получении меча;;;;;;;;;;;;;x
-give_valyrian_sword_to_son;Даровать валирийский меч;;;;;;;;;;;;;x
-give_valyrian_sword_to_son_desc;Я уступлю свой меч персонажу, известному как [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;;;;;;;;;;;;;x
-blackfyre;Чёрное Пламя;;;;;;;;;;;;;x
-blackfyre_desc;Чёрное Пламя - один из двух Валирийских мечей, привезенных с Драконьего Камня Таргариенами после Рока. Это делает его одной из самых ценных вещей дома Таргариенов.;;;;;;;;;;;;;x
-darksister;Тёмная Сестра;;;;;;;;;;;;;x
-darksister_desc;Тёмная Сестра - один из двух Валирийских мечей, привезенных с Драконьего Камня Таргариенами после Рока. Это делает его одной из самых ценных вещей дома Таргариенов. Кровавый Ворон был последним известным владельцем клинка.\n\n-Если владелец Темной Сестры - Таргариен, тогда наследовать меч будет глава Дома Таргариен после смерти владельца.;;;;;;;;;;;;;x
-ice;Лёд;;;;;;;;;;;;;x
-ice_desc;Лёд - двуручный меч из валирийской стали Дома Старк, выкованный из Валирийской стали за четыре сотни лет до завоевания Эйгона.;;;;;;;;;;;;;x
-ice_desc_REFORGED;Лёд - это перекованный родовой валирийский двуручный меч Дома Старков, заколдованный в Валирии за столетия до Завоевания Эйгона. [Root.GetTitledFirstName] вернул[Root.GetEndA] украденные клинки Вдовий плач и Верный Клятве и перековал их в этот меч.;;;;;;;;;;;;;x
-ice_desc_REMNANT;Лёд - это перекованный родовой валирийский двуручный меч Дома Старков, заколдованный в Валирии за столетия до Завоевания Эйгона. [This.Owner.GetTitledFirstName] обнаружил[Root.GetEndA] этот остаток Льда, изначально украденный Ланнистерами и перекованный во Вдовий Плач и Верный Клятве..;;;;;;;;;;;;;x
-longclaw;Длинный Коготь;;;;;;;;;;;;;x
-longclaw_desc;Длинный Коготь - фамильный меч из валирийской стали дома Мормонтов, находящийся сотни лет в руках Мормонтов.;;;;;;;;;;;;;x
-longclaw_snow;Длинный Коготь;;;;;;;;;;;;;x
-longclaw_snow_desc;Длинный Коготь - фамильный Валирийский меч дома Мормонтов, перешедший Джону Сноу, после того как он со своим лютоволком спас жизнь Джиору Мормонту в Чёрном Замке.;;;;;;;;;;;;;x
-brightroar;Светлый Рев;;;;;;;;;;;;;x
-brightroar_desc;Светлый Рев - пропавший фамильный меч Ланнистеров. После Рока Валирии король Томмен II Ланнистер предпринял экспедицию на руины Валирии, где и сгинул со своим мечом.;;;;;;;;;;;;;x
-lightbringer;Светозарный;;;;;;;;;;;;;x
-lightbringer_desc;Светозарный - предположительно, является мечом Азора Ахая, легендарного героя, которому было предсказано сражаться с Великим Иным. Светозарный считается мечом из живого огня. Он также известен как Красный Меч Героев.;;;;;;;;;;;;;x
-heartsbane;Губитель Сердец;;;;;;;;;;;;;x
-heartsbane_desc;Губитель Сердец - фамильный валирийский меч дома Тарли. Это двуручный меч, который принадлежит семье Тарли уже пять сотен лет.;;;;;;;;;;;;;x
-crabspincer;Крабовая Клешня;;;;;;;;;;;;;x
-crabspincer_desc;Крабовая Клешня - валирийский топор, принадлежащий дому Селтигар.;;;;;;;;;;;;;x
-ladyforlorn;Леди Отчаяние;;;;;;;;;;;;;x
-ladyforlorn_desc;Леди Отчаяние - валирийский меч дома Корбрей. Инкрустирован рубином в форме сердца.\n\n-Если владелец Леди Отчаяния - Корбрей, тогда глава Дома Корбреев будет наследовать этот меч после смерти владельца.;;;;;;;;;;;;;x
-redrain;Багряный Дождь;;;;;;;;;;;;;x
-redrain_desc;Багряный Дождь - валирийский меч, по слухам, принадлежал дому Рейн. Согласно преданию, Хильмар Драмм отобрал его у некоего рыцаря с помощью смекалки и увесистой палицы.;;;;;;;;;;;;;x
-widowswail;Вдовий Плач;;;;;;;;;;;;;x
-widowswail_desc;Вдовий Плач - новый валирийский меч, выкованных изо Льда Старков. Красный с черной рябью. Его ножны из вишневого дерева и промасленной красной кожи, усажены, как заклепками, золотыми львиными головами.;;;;;;;;;;;;;x
-widowswail_descB;[This.GetName] - это новый меч из валирийской стали, выкованный из старого клинка Лёд по приказу Тайвина Ланнистера. Клинок переливается красной и чёрной рябью, а ножны изумительно украшены золотом, вишневым деревом, красной кожей и золотыми головами льва с рубиновыми глазами..;;;;;;;;;;;;;x
-oathkeeper;Верный Клятве;;;;;;;;;;;;;x
-oathkeeper_desc;Верный Клятве - новый валирийский меч, выкованных изо Льда Старков. Через красный цвет стали проступает черная рябь.;;;;;;;;;;;;;x
-oathkeeper_descB;[This.GetName] - это новый меч из валирийской стали, выкованный из старого клинка Лёд по приказу Тайвина Ланнистера. Клинок переливается красной и чёрной рябью.;;;;;;;;;;;;;x
-strangers_mercy;Милость Неведомого;;;;;;;;;;;;;x
-strangers_mercy_desc;Милость Неведомого - полуторный меч из валирийской стали, украшенный драконьим стеклом.;;;;;;;;;;;;;x
-truth;Истина;;;;;;;;;;;;;x
-truth_desc;Истина - это меч из валирийской стали, принадлежащий дому Рогаре, дворянской семье древнего рода Лис.;;;;;;;;;;;;;x
-lamentation;Плач;;;;;;;;;;;;;x
-lamentation_desc;Плач - меч из Валирийской стали Дома Ройсов, старого и могущественного дома Долины. Они могут проследить свою кровь до времен Первых Людей, которые когда-то населяли Долину и их правления как Бронзовых Королей Рунного Камня до Завоевания Андалов, в котором они были побеждены Артисом Арреном, Королем Горы и Долины.;;;;;;;;;;;;;x
-poison;Яд;;;;;;;;;;;;;x
-poison_desc;Яд - валирийский меч Дома Вунатисов, полуторный меч из валирийской стали, изначально предназначенный для продажи за Узким Морем, но корабль, на котором он перевозился, был захвачен пиратскими лордами Кровавого камня. Рукоятка выполнена из кости дракона, вырезанная в виде спирального узора.;;;;;;;;;;;;;x
-TOOLTIPVALYRIANSWORDWIELDER;[Prev.GetTitledFirstNameWithDynastyAndTitle] владеет клинком §Y[This.GetName]§!\n;;;;;;;;;;;;;x
-seafoam;Морская пена;;;;;;;;;;;;;x
-seafoam_desc;Морская пена - это меч из валирийской стали, который, согласно легенде, принадлежал Дому Велариону до Рока. Навершие в форме морского конька.;;;;;;;;;;;;;x
-TOOLTIPICEWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YЛёд§!\n;;;;;;;;;;;;;x
-TOOLTIPDAWNWIELDER;[This.GetFirstNameWithDynasty] - Меч Зари, владеет клинком §YРассвет§!\n;;;;;;;;;;;;;x
-TOOLTIPLONGCLAWWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YДлинный Когоит§!\n;;;;;;;;;;;;;x
-TOOLTIPBLACKFYREWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YЧёрное Пламя§!\n;;;;;;;;;;;;;x
-TOOLTIPBRIGHTROARWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YСветлый Рёв§!\n;;;;;;;;;;;;;x
-TOOLTIPHEARTSBANEWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YГубитель Сердец§!\n;;;;;;;;;;;;;x
-TOOLTIPSTRANGERSMERCYWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YМилость Неведомого§!\n;;;;;;;;;;;;;x
-CB_NAME_RECLAIM_SWORD;Возвращение фамильного меча;;;;;;;;;;;;;x
-WAR_NAME_RECLAIM_SWORD;$CLAIMANT$ $ORDER$ Война за возвращение фамильного меча $DEFENDER$;;;;;;;;;;;;;x
-reclaim_ancestral_sword_desc;§Y$CLAIMANT$§! может объявить войну, чтобы вернуть фамильный меч из рук персонажа §Y$TARGET$§!;;;;;;;;;;;;;x
-TOOLTIPRECLAIMVALYRIANSTEELWAR;[This.GetFirstNameWithDynasty] отказывается от §YВалирийского клинка§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;;;;;;;;;;;;;x
-TOOLTIPRECLAIMICEWAR;[This.GetFirstNameWithDynasty] отказывается от §YЛьда§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;;;;;;;;;;;;;x
-TOOLTIPRECLAIMLONGCLAWWAR;[This.GetFirstNameWithDynasty] отказывается от §YДлинного Когтя§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;;;;;;;;;;;;;x
-TOOLTIPRECLAIMBLACKFYREWAR;[This.GetFirstNameWithDynasty] отказывается от §YЧёрного Пламени§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;;;;;;;;;;;;;x
-TOOLTIPRECLAIMBRIGHTROARWAR;[This.GetFirstNameWithDynasty] отказывается от §YСветлого Рёва§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;;;;;;;;;;;;;x
-TOOLTIPRECLAIMHEARTSBANEWAR;[This.GetFirstNameWithDynasty] отказывается от §YГубителя Сердец§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;;;;;;;;;;;;;x
-TOOLTIPRECLAIMDARKSISTERWAR;[This.GetFirstNameWithDynasty] отказывается от §YТёмной Сестры§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;;;;;;;;;;;;;x
-TOOLTIPRECLAIMstrangers_mercyWAR;[This.GetFirstNameWithDynasty] отказывается от §YМилости Неведомого§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;;;;;;;;;;;;;x
-nightfall;Сумерки;;;;;;;;;;;;;x
-nightfall_desc;Сумерки - фамильный Валирийский меч дома Харлоу. Украшен лунным камнем.;;;;;;;;;;;;;x
-TOOLTIPNIGHTFALLWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YСумерки§!\n;;;;;;;;;;;;;x
-TOOLTIPRECLAIMNIGHTFALLWAR;[This.GetFirstNameWithDynasty] отказывается от §YСумерек§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;;;;;;;;;;;;;x
-TOOLTIPDARKSISTERWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YТёмная Сестра§!\n;;;;;;;;;;;;;x
-give_ice_to_son;Передать Лёд;;;;;;;;;;;;;x
-give_ice_to_son_desc;Я уступлю Лед персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;;;;;;;;;;;;;x
-give_longclaw_to_son;Передать Длинный Коготь;;;;;;;;;;;;;x
-give_longclaw_to_son_desc;Я уступлю Длинный Коготь персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;;;;;;;;;;;;;x
-give_longclaw_snow_to_son;Передать Длинный Коготь;;;;;;;;;;;;;x
-give_longclaw_snow_to_son_desc;Я уступлю Длинный Коготь персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;;;;;;;;;;;;;x
-give_blackfyre_to_son;Передать Чёрное Пламя;;;;;;;;;;;;;x
-give_blackfyre_to_son_desc;Я уступлю Чёрное Пламя персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;;;;;;;;;;;;;x
-give_brightroar_to_son;Передать Светлый Рёв;;;;;;;;;;;;;x
-give_brightroar_to_son_desc;Я уступлю Светлый Рев персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;;;;;;;;;;;;;x
-give_heartsbane_to_son;Передать Губитель Сердец;;;;;;;;;;;;;x
-give_heartsbane_to_son_desc;Я уступлю Губитель Сердец персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;;;;;;;;;;;;;x
-give_nightfall_to_son;Передать Сумерки;;;;;;;;;;;;;x
-give_nightfall_to_son_desc;Я уступлю Сумерки персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;;;;;;;;;;;;;x
-give_darksister_to_son;Передать Тёмную Сестру;;;;;;;;;;;;;x
-give_darksister_to_son_desc;Я уступлю Тёмную Сестру персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;;;;;;;;;;;;;x
-give_strangers_mercy_to_son;Передать Милость Неведомого;;;;;;;;;;;;;x
-give_strangers_mercy_to_son_desc;Я уступлю Милость Неведомого персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;;;;;;;;;;;;;x
-TOOLTIPLADYFORLORNWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YЛеди Отчаяние§!\n;;;;;;;;;;;;;x
-TOOLTIPRECLAIMLADYFORLORNWAR;[This.GetFirstNameWithDynasty] отказывается от §YЛеди Отчаяния§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;;;;;;;;;;;;;x
-TOOLTIPREDRAINWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YБагряный Дождь§!\n;;;;;;;;;;;;;x
-TOOLTIPRECLAIMREDRAINWAR;[This.GetFirstNameWithDynasty] отказывается от §YБагряного Дождя§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;;;;;;;;;;;;;x
-TOOLTIPCRABSPINCERWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YКрабовая Клешня§!\n;;;;;;;;;;;;;x
-TOOLTIPRECLAIMCRABSPINCERWAR;[This.GetFirstNameWithDynasty] отказывается от §YКрабовой Клешни§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;;;;;;;;;;;;;x
-give_ladyforlorn_to_son;Передать Леди Отчаяние;;;;;;;;;;;;;x
-give_ladyforlorn_to_son_desc;Я уступлю Леди Отчаяние персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;;;;;;;;;;;;;x
-give_redrain_to_son;Передать Багряный дождь;;;;;;;;;;;;;x
-give_redrain_to_son_desc;Я уступлю Багряный Дождь персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;;;;;;;;;;;;;x
-give_crabspincer_to_son;Передать Крабовую Клешню;;;;;;;;;;;;;x
-give_crabspincer_to_son_desc;Я уступлю Крабову Клешню персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;;;;;;;;;;;;;x
-TOOLTIPWIDOWSWAILWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YВдовий Плач§!\n;;;;;;;;;;;;;x
-TOOLTIPRECLAIMWIDOWSWAILWAR;[This.GetFirstNameWithDynasty] отказывается от §YВдовьего Плача§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;;;;;;;;;;;;;x
-TOOLTIPOATHKEEPERWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YВерный Клятве§!\n;;;;;;;;;;;;;x
-TOOLTIPRECLAIMOATHKEEPERWAR;[This.GetFirstNameWithDynasty] отказывается от §YВерного Клятве§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;;;;;;;;;;;;;x
-TOOLTIPREREFORGEWIDOWSWAILWAR;[This.GetFirstNameWithDynasty] отказывается от §YВдовьего Плача§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!, котор[Root.GetAyaYy] перекует его в §YЛёд§!\n;;;;;;;;;;;;;x
-TOOLTIPREREFORGEOATHKEEPERWAR;[This.GetFirstNameWithDynasty] отказывается от §YВерного Клятве§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!, котор[Root.GetAyaYy] перекует его в §YЛёд§!\n;;;;;;;;;;;;;x
-give_widowswail_to_son;Передать Вдовий Плач;;;;;;;;;;;;;x
-give_widowswail_to_son_desc;Я уступлю Вдовий Плач персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше, чем я.;;;;;;;;;;;;;x
-give_oathkeeper_to_son;Передать Верный Клятве;;;;;;;;;;;;;x
-give_oatkeeper_to_son_desc;Я уступлю Верный Клятве персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;;;;;;;;;;;;;x
-plot_steal_valyrian_sword_short;Украсть Валирийский меч;;;;;;;;;;;;;x
-plot_steal_valyrian_sword_title;Украсть Валирийский меч у персонажу [This.GetTitledFirstNameWithDynastyAndTitleNoRegnal];;;;;;;;;;;;;x
-plot_steal_valyrian_sword_desc;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] хочет получить валирийский клинок [This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] любой ценой.;;;;;;;;;;;;;x
-EVTDESC250280;Предатель Эддард Старк казнен, его фамильный Валирийский меч 'Лед' в нашем распоряжении. Это прекрасная возможность для создания новых фамильных клинков дома Ланнистеров, так как наш меч 'Светлый Рев' был утерян в руинах Древней Валирии. Победителям достаются трофеи!;;;;;;;;;;;;;x
-EVTOPTA250280;Перекрасить сталь в цвета дома Ланнистеров!;;;;;;;;;;;;;x
-EVTOPTB250280;Оставить меч как есть.;;;;;;;;;;;;;x
-TOOLTIPEVTOPTB250280;Никакого эффекта.;;;;;;;;;;;;;x
-EVTDESC250281;Сомнительный купец из-за Узкого моря приближается к вам и предлагает купить настоящий клинок из валирийской стали за поистине королевскую сумму золотых драконов.;;;;;;;;;;;;;x
-EVTOPTA250281;Настоящая валирийская сталь?! Ты пытаешься обмануть меня, торгаш?!;;;;;;;;;;;;;x
-TOOLTIP250281B;Подозревая обман, Вы платите, чтобы эксперт проверил валирийскую сталь перед покупкой. Если она реальная, вы заплатите за это 750¤.;;;;;;;;;;;;;x
-EVTOPTB250281;Купить!;;;;;;;;;;;;;x
-TOOLTIP250281;Вы доверяете купцу и платите за валирийскую сталь, в надежде, что она реальна...;;;;;;;;;;;;;x
-EVTOPTC250281;Мы не можем себе этого позволить.;;;;;;;;;;;;;x
-EVTDESC250282;При более детальном рассмотрении клинка вы замечаете ряд недостатков и изъянов стали. Купец обманул вас!;;;;;;;;;;;;;x
-EVTOPTA250282;Стража, схватить его и бросить в темницу!;;;;;;;;;;;;;x
-EVTOPTB250282;Прогнать купца с моих земель.;;;;;;;;;;;;;x
-EVTDESC250283;Как ваши охранники не искали недобросовестного купца, нигде не смогли его найти.;;;;;;;;;;;;;x
-EVTOPT250283;Проклятье!;;;;;;;;;;;;;x
-EVTDESC250284;Купец передал валирийскую сталь в обмен на золото, и это, кажется, настоящая вещь!;;;;;;;;;;;;;x
-EVTOPT250284;Прекрасная реликвия для дома [Root.GetOnlyDynastyName]!;;;;;;;;;;;;;x
-TOOLTIPEVTOPTA250282;Купец заключён в тюрьму.;;;;;;;;;;;;;x
-TOOLTIPEVTOPTB250282;Купец выбросился с замка.;;;;;;;;;;;;;x
-TOOLTIP250282C;Купец убегает с золотом;;;;;;;;;;;;;x
-TOOLTIPANGERWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YГоре Матери§!\n;;;;;;;;;;;;;x
-TOOLTIPBLACK_DEATHWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YЧерная Смерть§!\n;;;;;;;;;;;;;x
-TOOLTIPCOMPASSIONWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YВеличие§!\n;;;;;;;;;;;;;x
-TOOLTIPCONCESSIONWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YКожесрезатель§!\n;;;;;;;;;;;;;x
-TOOLTIPDEL_PINOWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YСосновый Клинок§!\n;;;;;;;;;;;;;x
-TOOLTIPEL_SWORDOWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YБлаго§!\n;;;;;;;;;;;;;x
-TOOLTIPGOLD_SWORDWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YДорнийский Поцелуй§!\n;;;;;;;;;;;;;x
-TOOLTIPHAPPYNESSWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YЯрость Отца§!\n;;;;;;;;;;;;;x
-TOOLTIPHUBRISWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YКоготь§!\n;;;;;;;;;;;;;x
-TOOLTIPJUSTICEWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YСправедливость§!\n;;;;;;;;;;;;;x
-TOOLTIPKINGMAKERWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YТворец Королей§!\n;;;;;;;;;;;;;x
-TOOLTIPPASSIONWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YСтрасть§!\n;;;;;;;;;;;;;x
-TOOLTIPRAGEWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YКасание Неведомого§!\n;;;;;;;;;;;;;x
-TOOLTIPSIGHTBLINDERWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YБулава Скорби§!\n;;;;;;;;;;;;;x
-TOOLTIPTHE_MONARCHISTWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YУкус Титана§!\n;;;;;;;;;;;;;x
-TOOLTIPTHE_USURPERWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YДраконий Бич§!\n;;;;;;;;;;;;;x
-TOOLTIPWORLDEATERWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YПожиратель Пальцев§!\n;;;;;;;;;;;;;x
-TOOLTIPWORLDS_ENVYWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YРакх Аракх§!\n;;;;;;;;;;;;;x
-anger;Горе Матери;;;;;;;;;;;;;x
-anger_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Это прекрасный валирийский меч, благословленный самим Верховным Септоном.;;;;;;;;;;;;;x
-black_death;Чёрная Смерть;;;;;;;;;;;;;x
-black_death_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle];;;;;;;;;;;;;x
-compassion;Величие;;;;;;;;;;;;;x
-compassion_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Замечательно сбалансированный меч из валирийской стали, с рукоятью, украшенной золотом.;;;;;;;;;;;;;x
-concession;Кожесрезатель;;;;;;;;;;;;;x
-concession_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Изогнутый палаш, на удивление хорошо сбалансирован.;;;;;;;;;;;;;x
-del_pino;Сосновый клинок;;;;;;;;;;;;;x
-del_pino_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Гибрид булавы и копья с наконечником из валирийской стали;;;;;;;;;;;;;x
-el_swordo;Благо;;;;;;;;;;;;;x
-el_swordo_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle].;;;;;;;;;;;;;x
-gold_sword;Дорнийский Поцелуй;;;;;;;;;;;;;x
-gold_sword_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. ;;;;;;;;;;;;;x
-happyness;Ярость Отца;;;;;;;;;;;;;x
-happyness_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Гигантский двуручный меч из валирийской стали;;;;;;;;;;;;;x
-hubris;Коготь;;;;;;;;;;;;;x
-hubris_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Навершие этого прекрасного меча из валирийской стали изображено в виде хищной птицы;;;;;;;;;;;;;x
-justice;Справедливость;;;;;;;;;;;;;x
-justice_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Рукоять этого валирийского меча отделана нефритом;;;;;;;;;;;;;x
-kingmaker;Творец королей;;;;;;;;;;;;;x
-kingmaker_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. ;;;;;;;;;;;;;x
-passion;Страсть;;;;;;;;;;;;;x
-passion_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. ;;;;;;;;;;;;;x
-rage;Касание Неведомого;;;;;;;;;;;;;x
-rage_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Навершие этого прекрасного валирийского двуручного клинка имеет форму человеческого черепа с рубиновыми глазами.;;;;;;;;;;;;;x
-sightblinder;Булава Скорби;;;;;;;;;;;;;x
-sightblinder_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Булава из валирийской стали;;;;;;;;;;;;;x
-the_monarchist;Укус Титана;;;;;;;;;;;;;x
-the_monarchist_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Двуручный меч из валирийской стали с синими драгоценными камнями в рукояти и навершии, от которых веет холодом.;;;;;;;;;;;;;x
-the_usurper;Драконий Бич;;;;;;;;;;;;;x
-the_usurper_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Ножны этого прекрасного меча из валирийской стали имеют форму крыла.;;;;;;;;;;;;;x
-worldeater;Пожиратель Пальцев;;;;;;;;;;;;;x
-worldeater_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Топор из валирийской стали;;;;;;;;;;;;;x
-worlds_envy;Ракх Аракх;;;;;;;;;;;;;x
-worlds_envy_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Этот аракх сделан из валирийской стали;;;;;;;;;;;;;x
-give_anger_to_son;Передать Горе Матери;;;;;;;;;;;;;x
-give_anger_to_son_desc;Я передаю Горе Матери персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;;;;;;;;;;;;;x
-give_black_death_to_son;Передать Черную смерть;;;;;;;;;;;;;x
-give_black_death_to_son_desc;Я передаю Черную Смерть персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;;;;;;;;;;;;;x
-give_compassion_to_son;Передать Величие;;;;;;;;;;;;;x
-give_compassion_to_son_desc;Я передаю Величие персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;;;;;;;;;;;;;x
-give_concession_to_son;Передать Кожесрезатель;;;;;;;;;;;;;x
-give_concession_to_son_desc;Я передаю Кожесрезатель персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;;;;;;;;;;;;;x
-give_del_pino_to_son;Передать Сосновый клинок;;;;;;;;;;;;;x
-give_del_pino_to_son_desc;Я передаю Сосновый клинок персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;;;;;;;;;;;;;x
-give_el_swordo_to_son;Передать Благо;;;;;;;;;;;;;x
-give_el_swordo_to_son_desc;Я передаю Благо персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;;;;;;;;;;;;;x
-give_gold_sword_to_son;Передать Дорнийский Поцелуй;;;;;;;;;;;;;x
-give_gold_sword_to_son_desc;Я передаю Дорнийский Поцелуй персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;;;;;;;;;;;;;x
-give_happyness_to_son;Передать Ярость Отца;;;;;;;;;;;;;x
-give_happyness_to_son_desc;Я передаю Ярость Отца персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;;;;;;;;;;;;;x
-give_hubris_to_son;Передать Коготь;;;;;;;;;;;;;x
-give_hubris_to_son_desc;Я передаю Коготь персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;;;;;;;;;;;;;x
-give_justice_to_son;передать Справедливость;;;;;;;;;;;;;x
-give_justice_to_son_desc;Я передаю Справедливость персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;;;;;;;;;;;;;x
-give_kingmaker_to_son;Передать Творца Королей;;;;;;;;;;;;;x
-give_kingmaker_to_son_desc;Я передаю Творей Королей персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;;;;;;;;;;;;;x
-give_passion_to_son;Передать Страсть;;;;;;;;;;;;;x
-give_passion_to_son_desc;Я передаю Страсть персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;;;;;;;;;;;;;x
-give_rage_to_son;Передать Касание Неведомого;;;;;;;;;;;;;x
-give_rage_to_son_desc;Я передаю Касание Неведомого персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;;;;;;;;;;;;;x
-give_sightblinder_to_son;передать Булаву Скорби;;;;;;;;;;;;;x
-give_sightblinder_to_son_desc;Я передаю Булаву Скорби персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;;;;;;;;;;;;;x
-give_the_monarchist_to_son;Передать Укус Титана;;;;;;;;;;;;;x
-give_the_monarchist_to_son_desc;Я передаю Укус Титана персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;;;;;;;;;;;;;x
-give_the_usurper_to_son;Передать Драконий бич;;;;;;;;;;;;;x
-give_the_usurper_to_son_desc;Я передаю Драконий бич персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;;;;;;;;;;;;;x
-give_worldeater_to_son;Передать Пожиратель Пальцев;;;;;;;;;;;;;x
-give_worldeater_to_son_desc;Я передаю Пожиратель Пальцев персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;;;;;;;;;;;;;x
-give_worlds_envy_to_son;Передать Ракх Аракх;;;;;;;;;;;;;x
-give_worlds_envy_to_son_desc;Я передаю Ракх Аракх персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;;;;;;;;;;;;;x
-reforge_valyrian_steel;Перековать меч из Валирийской стали;;;;;;;;;;;;;x
-reforge_valyrian_steel_desc;Найти подходящего кузнеца, дабы он превратил ваш простой меч из валирийской стали в гордость вашей династии!;;;;;;;;;;;;;x
-CUSTOMTOOLTIPthissword;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] вернётся, когда меч будет завершён.;;;;;;;;;;;;;x
-EVTDESC250285;Два кузнеца предлагают вам свои услуги.;;;;;;;;;;;;;x
-EVTOPTA250285;Я выбираю тебя!;;;;;;;;;;;;;x
-EVTOPTB250285;Эти двое бесполезны, приведите мне других.;;;;;;;;;;;;;x
-EVTOPTC250285;Я никогда не буду перековывать этот меч.;;;;;;;;;;;;;x
-EVTDESC250286;Какой дизайн будет использоваться?;;;;;;;;;;;;;x
-EVTOPT250286;Я хочу этот!;;;;;;;;;;;;;x
-EVTOPT250286_1;Горе матери;;;;;;;;;;;;;x
-EVTOPT250286_2;Чёрная смерть;;;;;;;;;;;;;x
-EVTOPT250286_3;Величие;;;;;;;;;;;;;x
-EVTOPT250286_4;Кожесрезатель;;;;;;;;;;;;;x
-EVTOPT250286_5;Сосновый клинок;;;;;;;;;;;;;x
-EVTOPT250286_6;Благо;;;;;;;;;;;;;x
-EVTOPT250286_7;Дорнийский Поцелуй;;;;;;;;;;;;;x
-EVTOPT250286_8;Ярость Отца;;;;;;;;;;;;;x
-EVTOPT250286_9;Коготь;;;;;;;;;;;;;x
-EVTOPT250286_10;Справедливость;;;;;;;;;;;;;x
-EVTOPT250286_11;Творец Королей;;;;;;;;;;;;;x
-EVTOPT250286_12;Страсть;;;;;;;;;;;;;x
-EVTOPT250286_13;Касание Неведомого;;;;;;;;;;;;;x
-EVTOPT250286_14;Булава Скорби;;;;;;;;;;;;;x
-EVTOPT250286_15;Укус Титана;;;;;;;;;;;;;x
-EVTOPT250286_16;Драконий бич;;;;;;;;;;;;;x
-EVTOPT250286_17;Пожиратель Пальцев;;;;;;;;;;;;;x
-EVTOPT250286_18;Ракх Аракх;;;;;;;;;;;;;x
-EVTOPTB250286;Покажи мне другие!;;;;;;;;;;;;;x
-EVTDESC250292;Я ИИ кузнец по этому решению;;;;;;;;;;;;;x
-EVTOPTA250292;Я украду;;;;;;;;;;;;;x
-EVTOPTB250292;Я не буду воровать;;;;;;;;;;;;;x
-EVTOPTB250292;Я случайно растворил его до состояния пара.;;;;;;;;;;;;;x
-EVTDESC250293;Кузнец [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] обесчестил договор и украл клинок [From.GetValyrianSwordOwned]. Он взял его и бежал в город [Root.Capital.GetName]!\n\nУ вас есть три года, чтобы убить [From.GetHerHis], пока ваше право на меч не забыли.;;;;;;;;;;;;;x
-EVTOPTA250293;Я буду искать тебя, я найду тебя, и я убью тебя;;;;;;;;;;;;;x
-EVTDESC250294;Кузнец [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] завершил свою работу и представляет вам вновь перекованный меч из валирийской стали!;;;;;;;;;;;;;x
-EVTOPTA250294;Хорошо. Я назову его [From.GetValyrianSwordOwned];;;;;;;;;;;;;x
-EVTDESC250295;Кузнец [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], нанятый вами, оказался некомпетентен. Он приносит вам маленький шарик валирийской стали размером с монету и объясняет, что во время перековки большая часть стали испарилась.;;;;;;;;;;;;;x
-EVTOPTA250295;ВЫ НЕКОМПЕТЕНТНЫЙ НЕГОДЯЙ!;;;;;;;;;;;;;x
-opinion_stole_longclaw;Длинный Коготь украли;;;;;;;;;;;;;x
-opinion_stole_blackfyre;Черное Пламя украли;;;;;;;;;;;;;x
-opinion_stole_brightroar;Светлый Рев украли;;;;;;;;;;;;;x
-opinion_stole_heartsbane;Губитель Сердец украли;;;;;;;;;;;;;x
-opinion_stole_ice;Лёд украли;;;;;;;;;;;;;x
-opinion_stole_nightfall;Сумерки украли;;;;;;;;;;;;;x
-opinion_stole_darksister;Тёмную Сестру украли;;;;;;;;;;;;;x
-opinion_stole_ladyforlorn;Леди Отчаяние украли;;;;;;;;;;;;;x
-opinion_stole_redrain;Багряный Дождь украли;;;;;;;;;;;;;x
-opinion_stole_widowswail;Вдовий Плач украли;;;;;;;;;;;;;x
-opinion_stole_oathkeeper;Верного Клятве украли;;;;;;;;;;;;;x
-opinion_stole_crabspincer;Крабовую Клешню украли;;;;;;;;;;;;;x
-opinion_stole_strangers_mercy;Милосердие Неведомого украли;;;;;;;;;;;;;x
-opinion_stole_anger;Мой меч украли;;;;;;;;;;;;;x
-opinion_stole_black_death;Мой меч украли;;;;;;;;;;;;;x
-opinion_stole_compassion;Мой меч украли;;;;;;;;;;;;;x
-opinion_stole_concession;Мой меч украли;;;;;;;;;;;;;x
-opinion_stole_del_pino;Мой меч украли;;;;;;;;;;;;;x
-opinion_stole_el_swordo;Мой меч украли;;;;;;;;;;;;;x
-opinion_stole_gold_sword;Мой меч украли;;;;;;;;;;;;;x
-opinion_stole_happyness;Мой меч украли;;;;;;;;;;;;;x
-opinion_stole_hubris;Мой меч украли;;;;;;;;;;;;;x
-opinion_stole_justice;Мой меч украли;;;;;;;;;;;;;x
-opinion_stole_kingmaker;Мой меч украли;;;;;;;;;;;;;x
-opinion_stole_passion;Мой меч украли;;;;;;;;;;;;;x
-opinion_stole_rage;Мой меч украли;;;;;;;;;;;;;x
-opinion_stole_sightblinder;Мой меч украли;;;;;;;;;;;;;x
-opinion_stole_the_monarchist;Мой меч украли;;;;;;;;;;;;;x
-opinion_stole_the_usurper;Мой меч украли;;;;;;;;;;;;;x
-opinion_stole_worldeater;Мой меч украли;;;;;;;;;;;;;x
-opinion_stole_worlds_envy;Мой меч украли;;;;;;;;;;;;;x
-vigilance;Бдительность;;;;;;;;;;;;;x
-vigilance_desc;Бдительность - фамильный меч из валирийской стали Дома Хайтауэр.;;;;;;;;;;;;;x
-orphan_maker;Делатель Сирот;;;;;;;;;;;;;x
-orphan_maker_desc;Фамильный меч из валирийской стали Дома Рокстон.;;;;;;;;;;;;;x
-TOOLTIPRECLAIMVIGILANCEWAR;[This.GetFirstNameWithDynasty] откажется от клинка §YБдительность§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;;;;;;;;;;;;;x
-TOOLTIPRECLAIMORPHANMAKERWAR;[This.GetFirstNameWithDynasty] откажется от клинка §YДелател Сирот§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;;;;;;;;;;;;;x
-TOOLTIPVIGILANCEWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YБдительность§!\n;;;;;;;;;;;;;x
-TOOLTIPORPHANMAKERWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YДелатель Сирот§!\n;;;;;;;;;;;;;x
-give_vigilance_to_son;Передать Бдительность;;;;;;;;;;;;;x
-give_vigilance_to_son_desc;Я передам Бдительность персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;;;;;;;;;;;;;x
-give_orphan_maker_to_son;Передать Делатель Сирот;;;;;;;;;;;;;x
-give_orphan_maker_to_son_desc;Я передам Делатель Сирот персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;;;;;;;;;;;;;x
-opinion_stole_vigilance;Бдительность украли;;;;;;;;;;;;;x
-opinion_stole_orphan_maker;Делатель Сирот украли;;;;;;;;;;;;;x
-EVTOPTB251400;Каковы правила наследования валирийского меча?;;;;;;;;;;;;;x
-TOOLTIPVALYRIANSTEELINHERITANCE;После смерти владельца валирийского клинка, его наследование происходит по различным приоритетам:\n1- Непосредственный наследник владельца, если он той же династии\n2- Ребенок из той же династии\n3- Брат/сестра покойного владельца из той же династии\n4- Любой член династии\n5- Текущий наследник\n6- Любой ребенок\n7- Жена/муж\n8- Сюзерен\n9 -Любой вассал\n\nМеч Рассвет - является исключением, только великие представители дома Дейн могу претендовать на него.\n\nУ домов Таргариен и Корбрей такие клинки, соответственно, Тёмная Сестра и Леди Отчаяние. Эти клинки наследуют исключительно великие воины этих домов.;;;;;;;;;;;;;x
-EVTDESC250276;[Root.GetTitledFirstName], я хочу предложить вам и вашему дому великолепный дар. Настоящим, я дарую вам валирийский клинок, который будет передаваться вашим наследникам и наследникам их наследников в вечном пользовании. Используйте его с достоинством.\n\n Ваш[FromFrom.GetEndA],\n[FromFrom.GetTitledFirstNameWithDynastyAndTitleNoRegnal];;;;;;;;;;;;;x
-EVTOPTA250276;Спасибо!;;;;;;;;;;;;;x
-TOOLTIPRECLAIMTRUTHWAR;[This.GetFirstNameWithDynasty] откажется от клинка §YИстина§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;;;;;;;;;;;;;x
-TOOLTIPTRUTHWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YИстина§!\n;;;;;;;;;;;;;x
-give_truth_to_son;Передать Истину;;;;;;;;;;;;;x
-give_truth_to_son_desc;Я передам Истину персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;;;;;;;;;;;;;x
-opinion_stole_truth;Истину Украли;;;;;;;;;;;;;x
-TOOLTIP_claim_dawn_calc;Имеет две черты из: справедливый, добрый, храбрый, усердный, честный, терпеливый или ревностный\n;;;;;;;;;;;;;x
-TOOLTIPRECLAIMLAMENTATIONWAR;[This.GetFirstNameWithDynasty] откажется от клинка §YПлач§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;;;;;;;;;;;;;x
-TOOLTIPLAMENTATIONWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YПлач§!\n;;;;;;;;;;;;;x
-give_lamentation_to_son;Передать Плач;;;;;;;;;;;;;x
-give_lamentation_to_son_desc;Я передам Плач персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;;;;;;;;;;;;;x
-opinion_stole_lamentaion;Плач украли;;;;;;;;;;;;;x
-TOOLTIPRECLAIMPOISONWAR;[This.GetFirstNameWithDynasty] откажется от клинка §YЯд§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;;;;;;;;;;;;;x
-TOOLTIPPOISONWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YЯд§!\n;;;;;;;;;;;;;x
-give_poison_to_son;Передать Яд;;;;;;;;;;;;;x
-give_poison_to_son_desc;Я передам Яд персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;;;;;;;;;;;;;x
-opinion_stole_poison;Яд украли;;;;;;;;;;;;;x
-TOOLTIPSEAFOAMWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YМорская пена§!\n;;;;;;;;;;;;;x
-has_valyrian_steel_sword_trigger;[This.GetTitledFirstName] владеет клинком из валирийской стали\n;;;;;;;;;;;;;x
-owns_valyrian_steel_sword;Владеет оружием из валирийской стали;;;;;;;;;;;;;x
-EVTDESCvalyrian_steel.100;Этот проклятый кузнец все еще обладает моим валирийским мечом, что выше моего понимания. Мой [Root.GetMySpymasterName] [Root.job_spymaster.GetTitledFirstName] отследил [valyrian_steel_blacksmith.GetHerHis] где-то в земле [valyrian_steel_blacksmith.Location.GetName], и говорит, что если вы обеспечите его средствами, [Root.job_spymaster.GetSheHe] сможет вернуть клинок [valyrian_steel_blacksmith.GetValyrianSwordOwned].;;;;;;;;;;;;;x
-EVTOPTAvalyrian_steel.100;Сделаю все, что угодно!;;;;;;;;;;;;;x
-TOOLTIPvalyrian_steel.101;[valyrian_steel_blacksmith.GetValyrianSwordOwned] возвращается;;;;;;;;;;;;;x
-TOOLTIPvalyrian_steel.102;[valyrian_steel_blacksmith.GetValyrianSwordOwned] НЕ возвращается;;;;;;;;;;;;;x
-EVTOPTBvalyrian_steel.100;Это за пределами моего понимания;;;;;;;;;;;;;x
-EVTDESCvalyrian_steel.101A;Ваш [Root.GetMySpymasterName] [Root.job_spymaster.GetTitledFirstName] приносит хорошие новости о своей миссии в поиске клинка [valyrian_steel_blacksmith.GetValyrianSwordOwned]! [Root.job_spymaster.GetSheHeCap] говорит, что [Root.job_spymaster.GetHerHis] шпионы приметили кузнеца, который спьяну хвастался мечом в таверне в земле [valyrian_steel_blacksmith.Location.GetName], и поэтому он нанял несколько людей, чтобы отследить его и убить. Меч теперь снова в вашем распоряжении.;;;;;;;;;;;;;x
-EVTDESCvalyrian_steel.101B;[Root.job_spymaster.GetTitledFirstName] нашел кузнеца-мошенника! [Root.job_spymaster.GetSheHeCap] нанял множество шпионов, чтобы бродить по улицам города [valyrian_steel_blacksmith.Location.GetName], высматривая и слушая слухи о мече. Кузнец был похищен, его привезли вместе с клинком [valyrian_steel_blacksmith.GetValyrianSwordOwned] в столицу [Root.Capital.GetName].;;;;;;;;;;;;;x
-EVTDESCvalyrian_steel.101C;Меч, который был украден, найден! [Root.job_spymaster.GetTitledFirstName] пообещал награду за клинок [valyrian_steel_blacksmith.GetValyrianSwordOwned] и голову кузнеца, и, в конце концов, его принес наемник из земли [valyrian_steel_blacksmith.Location.GetName]. Он говорит, что получил меч от кузнеца, но вскоре узнал личность истинного владельца и пришел в город [Root.Capital.GetName] за наградой.;;;;;;;;;;;;;x
-EVTOPTAvalyrian_steel.101;Отлично, [Root.GetMySpymasterName] молодец!;;;;;;;;;;;;;x
-EVTDESCvalyrian_steel.102;Несмотря на то, что многих шпионов отправили в землю [valyrian_steel_blacksmith.Location.GetName] на поиски кузнеца, а также объявили большую награду, [Root.GetMySpymasterName] [Root.job_spymaster.GetTitledFirstName] не смог отыскать клинок [valyrian_steel_blacksmith.GetValyrianSwordOwned]. [Root.job_spymaster.GetSheHeCap] говорит, что нужно больше времени и золота, чтобы меч вернулся в ваше владение.;;;;;;;;;;;;;x
-EVTOPTAvalyrian_steel.102;Да, продолжайте поиски!;;;;;;;;;;;;;x
-EVTOPTBvalyrian_steel.102;Я больше не стану тратить золото на ваши неумелые интриги;;;;;;;;;;;;;x
-valyrian_armour;Доспех из валирийской стали;;;;;;;;;;;;;x
-valyrian_armour_desc;Валирийская сталь — сплав особого рода, отличающийся прочностью, создавать который умели только мастера древней Валирии. Доспех из такого материала стоит целое королевство;;;;;;;;;;;;;x
-opinion_stole_valyrian_armour;Валирийский доспех украден;;;;;;;;;;;;;x
-TOOLTIPRECLAIMvalyrian_armourWAR;[This.GetFirstNameWithDynasty] откажется от своего §YВалирийского доспеха§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;;;;;;;;;;;;;x
-give_valyrian_armour_to_son;Передать валирийский доспех;;;;;;;;;;;;;x
-give_valyrian_armour_to_son_desc;Я передам мой валирийский доспех персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;;;;;;;;;;;;;x
-TOOLTIPVALYRIANARMOURWIELDER;[This.GetFirstNameWithDynasty] владеет §YДоспехом из валирийской стали§!\n;;;;;;;;;;;;;x
-ValyrianSword;меч из Валирийской стали;;;;;;;;;;;;;x
-ValyrianSwordYours;ваш валирийский меч;;;;;;;;;;;;;x
-ValyrianSwordHis;его валирийский меч;;;;;;;;;;;;;x
-ValyrianSwordHer;её валирийский меч;;;;;;;;;;;;;x
-ValyrianSworddawn;Рассвет;;;;;;;;;;;;;x
-ValyrianSwordblackfyre;Чёрное Пламя;;;;;;;;;;;;;x
-ValyrianSworddarksister;Тёмная Сестра;;;;;;;;;;;;;x
-ValyrianSwordice;Лед;;;;;;;;;;;;;x
-ValyrianSwordlongclaw;Длинный Коготь;;;;;;;;;;;;;x
-ValyrianSwordbrightroar;Светлый рев;;;;;;;;;;;;;x
-ValyrianSwordlightbringer;Светозарный;;;;;;;;;;;;;x
-ValyrianSwordheartsbane;Губитель Сердец;;;;;;;;;;;;;x
-ValyrianSwordcrabspincer;Крабовая Клешня;;;;;;;;;;;;;x
-ValyrianSwordladyforlorn;Леди Отчаяние ;;;;;;;;;;;;;x
-ValyrianSwordredrain;Багряный Дождь;;;;;;;;;;;;;x
-ValyrianSwordwidowswail;Вдовий Плач;;;;;;;;;;;;;x
-ValyrianSwordoathkeeper;Верный Клятве;;;;;;;;;;;;;x
-ValyrianSwordstrangers_mercy;Милость Неведомого;;;;;;;;;;;;;x
-ValyrianSwordtruth;Истина;;;;;;;;;;;;;x
-ValyrianSwordlamentation;Плач;;;;;;;;;;;;;x
-ValyrianSwordpoison;Яд;;;;;;;;;;;;;x
-ValyrianSwordseafoam;Морская пена;;;;;;;;;;;;;x
-ValyrianSwordnightfall;Сумерки;;;;;;;;;;;;;x
-ValyrianSwordanger;Горе Матери;;;;;;;;;;;;;x
-ValyrianSwordblack_death;Чёрная Смерть;;;;;;;;;;;;;x
-ValyrianSwordcompassion;Величие;;;;;;;;;;;;;x
-ValyrianSwordconcession;Кожесрезатель;;;;;;;;;;;;;x
-ValyrianSworddel_pino;Сосновый клинок;;;;;;;;;;;;;x
-ValyrianSwordel_swordo;Благо;;;;;;;;;;;;;x
-ValyrianSwordgold_sword;Дорнийский Поцелуй;;;;;;;;;;;;;x
-ValyrianSwordhappyness;Ярость Отца;;;;;;;;;;;;;x
-ValyrianSwordhubris;Коготь;;;;;;;;;;;;;x
-ValyrianSwordjustice;Справедливость;;;;;;;;;;;;;x
-ValyrianSwordkingmaker;Делатель Королей;;;;;;;;;;;;;x
-ValyrianSwordpassion;Страсть;;;;;;;;;;;;;x
-ValyrianSwordrage;Касание Неведомого;;;;;;;;;;;;;x
-ValyrianSwordsightblinder;Булава Скорби;;;;;;;;;;;;;x
-ValyrianSwordthe_monarchist;Укус Титана;;;;;;;;;;;;;x
-ValyrianSwordthe_usurper;Драконий Бич;;;;;;;;;;;;;x
-ValyrianSwordworldeater;Пожиратель Пальцев;;;;;;;;;;;;;x
-ValyrianSwordworlds_envy;Ракх Аракх;;;;;;;;;;;;;x
-ValyrianSwordvigilance;Бдительность;;;;;;;;;;;;;x
-ValyrianSwordorphan_maker;Делатель Сирот;;;;;;;;;;;;;x
-EVTDESCvalyrian_steel.150;Только истинные рыцари Дома Дейнов могут владеть фамильным двуручным мечом Рассвет, выкованным из сердца упавшей звезды. Из всех членов Дома Дейнов, только вы показали себя достойным этой чести.;;;;;;;;;;;;;x
-EVTOPTAvalyrian_steel.150;Вставать вместе с солнцем, ибо твой меч - Рассвет;;;;;;;;;;;;;x
-EVTDESCvalyrian_steel.151;Только истинные рыцари Дома Дейнов могут владеть фамильным двуручным мечом Рассвет, выкованным из сердца упавшей звезды. Из всех членов Дома Дейнов, только [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] показал, что достоин этой чести.;;;;;;;;;;;;;x
-EVTOPTAvalyrian_steel.151;Хорошо [From.GetHerHim];;;;;;;;;;;;;x
-claim_dawn;Претендует на Рассвет;;;;;;;;;;;;;x
-claim_dawn_desc;Этот человек будет претендовать на Рассвет и титул Меч Зари;;;;;;;;;;;;;x
-seize_sword;Отобрать валирийский клинок;;;;;;;;;;;;;x
-seize_sword_desc;Отобрать валирийский клинок у вашего заключенного;;;;;;;;;;;;;x
-TOOLTIPseize_swordCLAIM;[This.GetTitledFirstNameWithDynasty] имеет родовые претензии на [FromFrom.GetName];;;;;;;;;;;;;x
-TOOLTIPseize_swordSTOLEN;[FromFrom.GetName] был украден у персонажа [This.GetTitledFirstNameWithDynasty];;;;;;;;;;;;;x
-TOOLTIPseize_swordCLAIMTITLE;[FromFrom.GetName] является наследием земли [This.GetTitledFirstNameWithDynasty];;;;;;;;;;;;;x
-EVTDESCvalyrian_steel.160;Ваш тюремщик, [FromFrom.GetTitledFirstNameWithDynasty], отобрал [FromFromFrom.GetName] у вас!;;;;;;;;;;;;;x
-EVTOPTAvalyrian_steel.160;Это произвол!;;;;;;;;;;;;;x
-ValyrianSwordartifact;[valyrian_steel_sword.GetName];;;;;;;;;;;;;x
-demand_return_of_valyrian_steel;Требовать возврата валирийского клинка;;;;;;;;;;;;;x
-demand_return_of_valyrian_steel_desc;Валирийский клинок который по праву является собственностью Дома [From.GetOnlyDynastyName] в настоящее время находится в земле [Root.PrimaryTitle.GetName]. Требовать возврата под угрозой войны.;;;;;;;;;;;;;x
-opinion_demanded_valyrian_steel;Требует вернуть валирийский клинок;;;;;;;;;;;;;x
-TOOLTIPvalyrian_steel.170;Сообщение отправлено персонажу [Root.GetTitledFirstNameWithDynasty], требуя возврата валирийского клинка под угрозой войны.;;;;;;;;;;;;;x
-TOOLTIPdemand_return_of_valyrian_steel;[This.GetName] удерживает [This.Owner.GetTitledFirstNameWithDynasty] и получает требование;;;;;;;;;;;;;x
-EVTDESCvalyrian_steel.170;[Root.GetTitledFirstName], валирийский клинок, который по праву является собственностью Дома [FromFrom.GetOnlyDynastyName], в настоящее время несправедливо хранится в земле [Root.PrimaryTitle.GetName]. Я требую, чтобы он был возвращен нетронутым в город [FromFrom.Capital.GetName], иначе мы можем прибегнуть к другим средствам для его получения.\n\n Подпись,\n[FromFrom.GetTitledFirstNameWithDynastyAndTitle];;;;;;;;;;;;;x
-EVTOPTAvalyrian_steel.170;Да, это было бы мудро;;;;;;;;;;;;;x
-opinion_returned_valyrian_steel;Возвращение валирийского клинка;;;;;;;;;;;;;x
-TOOLTIPvalyrian_steel.173;Вы приказываете персонажу [This.GetTitledFirstNameWithDynastyAndTitle] вернуть [Prev.GetName] настоящему хозяину, известному как [FromFrom.GetTitledFirstName];;;;;;;;;;;;;x
-EVTOPTBraid_events.151;[GetRootFromInsult], я не уструплю угрозам!;;;;;;;;;;;;;x
-opinion_refused_valyrian_steel_demand;Отказывается вернуть валирийскую сталь;;;;;;;;;;;;;x
-TOOLTIPvalyrian_steel.171;[This.GetTitledFirstNameWithDynastyAndTitle] будет иметь повод объявить войну;;;;;;;;;;;;;x
-EVTDESCvalyrian_steel.171;[GetFromRootInsult] [Root.GetTitledFirstName], нам не страшны угрозы. Валирийский клинок, который вы хотите, останется в земле [From.PrimaryTitle.GetName].\n\n Подпись,\n[From.GetTitledFirstNameWithDynastyAndTitle];;;;;;;;;;;;;x
-EVTOPTAvalyrian_steel.171;Хорошо, созвать знамена!;;;;;;;;;;;;;x
-EVTOPTBvalyrian_steel.171;Это не стоит войны;;;;;;;;;;;;;x
-EVTDESCvalyrian_steel.1711;Угрозы персонажа [From.GetTitledFirstNameNoRegnal] были пусты, кажется, что [From.GetSheHe] отступает и не решается на войну после получения нашего ответа на [From.GetHerHis] требование.;;;;;;;;;;;;;x
-EVTOPTAvalyrian_steel.1711;Трус;;;;;;;;;;;;;x
-EVTDESCvalyrian_steel.172;[GetFromRootCompliment] [Root.GetTitledFirstName], я нахожу ваше требование справедливым, валирийский клинок, который вы требуете, должен быть немедленно отправлен в город [Root.Capital.GetName]. Я надеюсь, что это удовлетворит вас, и мир будет сохранен.\n\n Подпись,\n[From.GetTitledFirstNameWithDynastyAndTitle];;;;;;;;;;;;;x
-EVTOPTAvalyrian_steel.172;Мудрый выбор, [From.PrimaryTitle.GetFOA];;;;;;;;;;;;;x
-EVTDESCvalyrian_steel.173;[Root.GetTitledFirstName], валирийский клинок, который по праву является собственностью человека, известного как [FromFromFrom.GetTitledFirstNameWithDynastyAndTitle], в настоящее время находится в вашем распоряжении. Я приказываю, чтобы он был возвращен в город [FromFromFrom.Capital.GetName], или же будете заклеймены предателем.\n\n Подпись,\n[From.GetTitledFirstNameWithDynastyAndTitle];;;;;;;;;;;;;x
-EVTOPTAvalyrian_steel.173;Как прикажет [From.PrimaryTitle.GetFOA];;;;;;;;;;;;;x
-EVTOPTBvalyrian_steel.173;[From.GetSheHeCap] может угрожать, но я не подчинюсь!;;;;;;;;;;;;;x
-EVTOPTCvalyrian_steel.173;Бегство в изгнание;;;;;;;;;;;;;x
-EVTDESCvalyrian_steel.174;[GetFromRootCompliment] [Root.GetTitledFirstName] я нахожу ваше требование справедливым, валирийский клинок, находящийся во владении [From.GetTitledFirstNameWithDynastyAndTitle], должен быть отправлен из [Root.Capital.GetName] немедленно. Я надеюсь, что это удовлетворит вас, и мир будет сохранен.\n\n Подпись,\n[FromFrom.GetTitledFirstNameWithDynastyAndTitle];;;;;;;;;;;;;x
-EVTOPTAvalyrian_steel.174;Хорошо;;;;;;;;;;;;;x
-EVTDESCvalyrian_steel.175;[Root.PrimaryTitle.GetFOA], я, конечно, повинуюсь вашему приказу, валирийская сталь должна быть немедленно отправлена в город [FromFromFrom.Capital.GetName].\n\n Подпись,\n[From.GetTitledFirstNameWithDynastyAndTitle];;;;;;;;;;;;;x
-EVTDESCvalyrian_steel.176;[GetFromRootCompliment] [Root.GetTitledFirstName], я соглашусь, что валирийский клинок, находящийся во владении персонажа [From.GetTitledFirstNameWithDynastyAndTitle], должен быть возвращен вам, но [From.GetSheHe] отклоняет мой приказ об этом, и созывает свои знамена. Будьте уверены, что этот предатель понесет наказание.\n\n Подпись,\n[FromFrom.GetTitledFirstNameWithDynastyAndTitle];;;;;;;;;;;;;x
-EVTDESCvalyrian_steel.176B;[GetFromRootCompliment] [Root.GetTitledFirstName], я соглашусь с тем, что валирийский клинок, находящийся во владении персонажа [From.GetTitledFirstNameWithDynastyAndTitle], должен быть возвращен вам, но [From.GetSheHe] отклоняет мой приказ об этом и бежит в изгнание. Будьте уверены, что этот предатель будет наказан.\n\n Подпись,\n[FromFrom.GetTitledFirstNameWithDynastyAndTitle];;;;;;;;;;;;;x
-EVTOPTAvalyrian_steel.176;Я надеюсь на это!;;;;;;;;;;;;;x
-EVTDESCvalyrian_steel.177;[Root.PrimaryTitle.GetFOA], я не откажусь от того, что по праву принадлежит мне, и пока вы будете слать угрозы, ничего не изменится. Вам придется самому прибыть в город [From.Capital.GetName] и вырвать клинок из моих рук.\n\n Подпись,\n[From.GetTitledFirstNameWithDynastyAndTitle];;;;;;;;;;;;;x
-EVTOPTAvalyrian_steel.177;Это измена!;;;;;;;;;;;;;x
-opinion_failed_return_valyrian_steel;Не удалось вернуть валирийский клинок;;;;;;;;;;;;;x
-opinion_returned_vassal_valyrian_steel;Вассал вернул валирийский клинок;;;;;;;;;;;;;x
-GetSwordName_A;[This.GetSwordName_OneWord_Prefix][This.GetSwordName_OneWord_Suffix];;;;;;;;;;;;;x
-GetSwordName_B;[This.GetSwordName_TwoWord_Prefix] [This.GetSwordName_TwoWord_Suffix];;;;;;;;;;;;;x
-GetSwordName_C;[This.GetSwordName_OneWord];;;;;;;;;;;;;x
-GetSwordName_OneWord_A;[This.GetSwordName_TwoWord_Suffix];;;;;;;;;;;;;x
-GetSwordName_OneWord_B;[This.GetSwordName_OneWord_Special];;;;;;;;;;;;;x
-GetSwordName_Black;Чёрный;;;;;;;;;;;;;x
-GetSwordName_White;Белый;;;;;;;;;;;;;x
-GetSwordName_Red;Красный;;;;;;;;;;;;;x
-GetSwordName_Blue;Синий;;;;;;;;;;;;;x
-GetSwordName_Gold;Золото;;;;;;;;;;;;;x
-GetSwordName_Golden;Золотой;;;;;;;;;;;;;x
-GetSwordName_Silver;Серебряный;;;;;;;;;;;;;x
-GetSwordName_Bright;Сияющий;;;;;;;;;;;;;x
-GetSwordName_Dark;Тёмный;;;;;;;;;;;;;x
-GetSwordName_Heart;Сердце;;;;;;;;;;;;;x
-GetSwordName_Hearts;Сердца;;;;;;;;;;;;;x
-GetSwordName_Light;Свет;;;;;;;;;;;;;x
-GetSwordName_Long;Длинный;;;;;;;;;;;;;x
-GetSwordName_Night;Ночь;;;;;;;;;;;;;x
-GetSwordName_Short;Короткий;;;;;;;;;;;;;x
-GetSwordName_Good;Добрый;;;;;;;;;;;;;x
-GetSwordName_This.GetTitles;[This.Owner.GetTitle];;;;;;;;;;;;;x
-GetSwordName_This.Spouse.GetTitles;[This.Owner.Spouse.GetTitle];;;;;;;;;;;;;x
-GetSwordName_This.TopLiege.GetTitles;[This.Owner.TopLiege.GetTitle];;;;;;;;;;;;;x
-GetSwordName_This.TopLiege.Spouse.GetTitles;[This.Owner.TopLiege.Spouse.GetTitle];;;;;;;;;;;;;x
-GetSwordName_Mourn;Траур;;;;;;;;;;;;;x
-GetSwordName_Death;Смерть;;;;;;;;;;;;;x
-GetSwordName_Shadow;Тень;;;;;;;;;;;;;x
-GetSwordName_Storm;Шторм;;;;;;;;;;;;;x
-GetSwordName_Bronze;Бронзовый;;;;;;;;;;;;;x
-GetSwordName_Fire;Пламя;;;;;;;;;;;;;x
-GetSwordName_Iron;Железный;;;;;;;;;;;;;x
-GetSwordName_Great;Великий;;;;;;;;;;;;;x
-GetSwordName_Blood;Кровавый;;;;;;;;;;;;;x
-GetSwordName_Frozen;Ледяной;;;;;;;;;;;;;x
-GetSwordName_Ice;Лед;;;;;;;;;;;;;x
-GetSwordName_Hells;Пекло;;;;;;;;;;;;;x
-GetSwordName_Will;Воля;;;;;;;;;;;;;x
-GetSwordName_Blaze;Зарево;;;;;;;;;;;;;x
-GetSwordName_Sun;Солнце;;;;;;;;;;;;;x
-GetSwordName_Cruel;Жестокий;;;;;;;;;;;;;x
-GetSwordName_Oath;Клятва;;;;;;;;;;;;;x
-GetSwordName_Wither;Увядание;;;;;;;;;;;;;x
-GetSwordName_Draught;Засуха;;;;;;;;;;;;;x
-GetSwordName_Wind;Ветер;;;;;;;;;;;;;x
-GetSwordName_Swift;Быстрый;;;;;;;;;;;;;x
-GetSwordName_Snow;Снег;;;;;;;;;;;;;x
-GetSwordName_Blight;Погибель;;;;;;;;;;;;;x
-GetSwordName_Solar;Солнечный;;;;;;;;;;;;;x
-GetSwordName_Earth;Земной;;;;;;;;;;;;;x
-GetSwordName_Life;Жизнь;;;;;;;;;;;;;x
-GetSwordName_Herons;Цапля;;;;;;;;;;;;;x
-GetSwordName_Way;Способ;;;;;;;;;;;;;x
-GetSwordName_Wound;Рана;;;;;;;;;;;;;x
-GetSwordName_Town;Городской;;;;;;;;;;;;;x
-GetSwordName_Ring;Звонкий;;;;;;;;;;;;;x
-GetSwordName_Green;Зеленый;;;;;;;;;;;;;x
-GetSwordName_Grey;Серый;;;;;;;;;;;;;x
-GetSwordName_Pink;Румяный;;;;;;;;;;;;;x
-GetSwordName_Crow;Вороний;;;;;;;;;;;;;x
-GetSwordName_Spring;Весна;;;;;;;;;;;;;x
-GetSwordName_Winter;Зима;;;;;;;;;;;;;x
-GetSwordName_Summer;Лето;;;;;;;;;;;;;x
-GetSwordName_Old;Старый;;;;;;;;;;;;;x
-GetSwordName_Pure;Непорочный;;;;;;;;;;;;;x
-GetSwordName_Gods;Божественный;;;;;;;;;;;;;x
-GetSwordName_Lion;Львиный;;;;;;;;;;;;;x
-GetSwordName_Dragon;Драконий;;;;;;;;;;;;;x
-GetSwordName_Wolf;Волчий;;;;;;;;;;;;;x
-GetSwordName_Stag;Олений;;;;;;;;;;;;;x
-GetSwordName_Rose;Роза;;;;;;;;;;;;;x
-GetSwordName_Falcon;Соколиный;;;;;;;;;;;;;x
-GetSwordName_Kraken;Кракен;;;;;;;;;;;;;x
-GetSwordName_Rebel;Мятежник;;;;;;;;;;;;;x
-GetSwordName_Foes;Недруг;;;;;;;;;;;;;x
-GetSwordName_Glow;Блеск;;;;;;;;;;;;;x
-GetSwordName_Torments;Мучение;;;;;;;;;;;;;x
-GetSwordName_Raven;Ворон;;;;;;;;;;;;;x
-GetSwordName_Coin;Монета;;;;;;;;;;;;;x
-GetSwordName_Doom;Судьба;;;;;;;;;;;;;x
-GetSwordName_Far;Дальний;;;;;;;;;;;;;x
-GetSwordName_Mind;Разум;;;;;;;;;;;;;x
-GetSwordName_Shield;Щит;;;;;;;;;;;;;x
-GetSwordName_Sight;Видение;;;;;;;;;;;;;x
-GetSwordName_Rain;Дождь;;;;;;;;;;;;;x
-GetSwordName_Sage;Мудрец;;;;;;;;;;;;;x
-GetSwordName_Brave;Отважный;;;;;;;;;;;;;x
-GetSwordName_Chaos;Хаос;;;;;;;;;;;;;x
-GetSwordName_Key;Ключ;;;;;;;;;;;;;x
-GetSwordName_Tall;Длинный;;;;;;;;;;;;;x
-GetSwordName_Just;Справедливый;;;;;;;;;;;;;x
-GetSwordName_Pan;Чаша;;;;;;;;;;;;;x
-GetSwordName_Bastard;Бастард;;;;;;;;;;;;;x
-GetSwordName_Twin;Близнец;;;;;;;;;;;;;x
-GetSwordName_Fair;Честный;;;;;;;;;;;;;x
-GetSwordName_Quick;Скорый;;;;;;;;;;;;;x
-GetSwordName_Slow;Медленный;;;;;;;;;;;;;x
-GetSwordName_Strong;Сильный;;;;;;;;;;;;;x
-GetSwordName_Duel;Дуэль;;;;;;;;;;;;;x
-GetSwordName_Sloth;Лень;;;;;;;;;;;;;x
-GetSwordName_Zeal;Рвение;;;;;;;;;;;;;x
-GetSwordName_Trust;Вера;;;;;;;;;;;;;x
-GetSwordName_Brood;Порождение;;;;;;;;;;;;;x
-GetSwordName_Dull;Тупой;;;;;;;;;;;;;x
-GetSwordName_Giant;Гигантский;;;;;;;;;;;;;x
-GetSwordName_Salt;Солёный;;;;;;;;;;;;;x
-GetSwordName_Rude;Грубый;;;;;;;;;;;;;x
-GetSwordName_Drown;Утонувший;;;;;;;;;;;;;x
-GetSwordName_Grace;Изящный;;;;;;;;;;;;;x
-GetSwordName_Love;Влюблённый;;;;;;;;;;;;;x
-GetSwordName_Eagle;Орёл;;;;;;;;;;;;;x
-GetSwordName_Dire;Ужасный;;;;;;;;;;;;;x
-GetSwordName_Wake;Очнувшийся;;;;;;;;;;;;;x
-GetSwordName_Silent;Тихий;;;;;;;;;;;;;x
-GetSwordName_Half;Половина;;;;;;;;;;;;;x
-GetSwordName_Mad;Безумный;;;;;;;;;;;;;x
-GetSwordName_Bold;Смелый;;;;;;;;;;;;;x
-GetSwordName_Truth;Правда;;;;;;;;;;;;;x
-GetSwordName_Jade;Нефритовый;;;;;;;;;;;;;x
-GetSwordName_Open;Открытый;;;;;;;;;;;;;x
-GetSwordName_World;Мир;;;;;;;;;;;;;x
-GetSwordName_Sand;Песчаный;;;;;;;;;;;;;x
-GetSwordName_Dusk;Сумеречный;;;;;;;;;;;;;x
-GetSwordName_Bitter;Яростный;;;;;;;;;;;;;x
-GetSwordName_Break;Разлом;;;;;;;;;;;;;x
-GetSwordName_Oaken;Дубовый;;;;;;;;;;;;;x
-GetSwordName_Sharp;Острый;;;;;;;;;;;;;x
-GetSwordName_Pale;Бледный;;;;;;;;;;;;;x
-GetSwordName_Even;Ровный;;;;;;;;;;;;;x
-GetSwordName_Hard;Крепкий;;;;;;;;;;;;;x
-GetSwordName_Sweet;Сладкий;;;;;;;;;;;;;x
-GetSwordName_Ebon;Чёрный;;;;;;;;;;;;;x
-GetSwordName_Sea;Море;;;;;;;;;;;;;x
-GetSwordName_Wild;Дикий;;;;;;;;;;;;;x
-GetSwordName_Grim;Мрачный;;;;;;;;;;;;;x
-GetSwordName_Woe;Горе;;;;;;;;;;;;;x
-GetSwordName_Ever;Вечный;;;;;;;;;;;;;x
-GetSwordName_Battle;Бой;;;;;;;;;;;;;x
-GetSwordName_Widow;Вдова;;;;;;;;;;;;;x
-GetSwordName_Frost;Мороз;;;;;;;;;;;;;x
-GetSwordName_fyre;пламя;;;;;;;;;;;;;x
-GetSwordName_roar;рев;;;;;;;;;;;;;x
-GetSwordName_bane;бич;;;;;;;;;;;;;x
-GetSwordName_claw;коготь;;;;;;;;;;;;;x
-GetSwordName_GetWeaponType;[This.GetWeaponType];;;;;;;;;;;;;x
-GetSwordName_fall;падение;;;;;;;;;;;;;x
-GetSwordName_death;смерть;;;;;;;;;;;;;x
-GetSwordName_rage;злоба;;;;;;;;;;;;;x
-GetSwordName_raze;разрушение;;;;;;;;;;;;;x
-GetSwordName_fury;ярость;;;;;;;;;;;;;x
-GetSwordName_soul;дух;;;;;;;;;;;;;x
-GetSwordName_reaver;грабитель;;;;;;;;;;;;;x
-GetSwordName_ghost;призрак;;;;;;;;;;;;;x
-GetSwordName_whisper;шепот;;;;;;;;;;;;;x
-GetSwordName_breaker;разрушитель;;;;;;;;;;;;;x
-GetSwordName_slaughter;убой;;;;;;;;;;;;;x
-GetSwordName_weep;рыдание;;;;;;;;;;;;;x
-GetSwordName_slayer;убийца;;;;;;;;;;;;;x
-GetSwordName_moon;луна;;;;;;;;;;;;;x
-GetSwordName_breath;вздох;;;;;;;;;;;;;x
-GetSwordName_blade;лезвие;;;;;;;;;;;;;x
-GetSwordName_steel;сталь;;;;;;;;;;;;;x
-GetSwordName_stalker;охотник;;;;;;;;;;;;;x
-GetSwordName_brand;клеймо;;;;;;;;;;;;;x
-GetSwordName_lust;страсть;;;;;;;;;;;;;x
-GetSwordName_thunder;гром;;;;;;;;;;;;;x
-GetSwordName_scar;рубец;;;;;;;;;;;;;x
-GetSwordName_song;песнь;;;;;;;;;;;;;x
-GetSwordName_guard;страж;;;;;;;;;;;;;x
-GetSwordName_fear;ужас;;;;;;;;;;;;;x
-GetSwordName_peril;угроза;;;;;;;;;;;;;x
-GetSwordName_crusher;дробитель;;;;;;;;;;;;;x
-GetSwordName_spore;спор;;;;;;;;;;;;;x
-GetSwordName_shadow;тень;;;;;;;;;;;;;x
-GetSwordName_heart;сердце;;;;;;;;;;;;;x
-GetSwordName_wand;жезл;;;;;;;;;;;;;x
-GetSwordName_spinner;паук;;;;;;;;;;;;;x
-GetSwordName_finder;искатель;;;;;;;;;;;;;x
-GetSwordName_wine;вино;;;;;;;;;;;;;x
-GetSwordName_burn;ожог;;;;;;;;;;;;;x
-GetSwordName_lord;лорд;;;;;;;;;;;;;x
-GetSwordName_flower;цветок;;;;;;;;;;;;;x
-GetSwordName_flayer;живодер;;;;;;;;;;;;;x
-GetSwordName_dream;мечта;;;;;;;;;;;;;x
-GetSwordName_knight;рыцарь;;;;;;;;;;;;;x
-GetSwordName_skin;шкура;;;;;;;;;;;;;x
-GetSwordName_river;река;;;;;;;;;;;;;x
-GetSwordName_caller;гость;;;;;;;;;;;;;x
-GetSwordName_shaper;создатель;;;;;;;;;;;;;x
-GetSwordName_bearer;податель;;;;;;;;;;;;;x
-GetSwordName_pact;договор;;;;;;;;;;;;;x
-GetSwordName_wand;скипетр;;;;;;;;;;;;;x
-GetSwordName_bringer;вестник;;;;;;;;;;;;;x
-GetSwordName_power;сила;;;;;;;;;;;;;x
-GetSwordName_giver;даритель;;;;;;;;;;;;;x
-GetSwordName_slicer;нож;;;;;;;;;;;;;x
-GetSwordName_blinder;слепой;;;;;;;;;;;;;x
-GetSwordName_stone;камень;;;;;;;;;;;;;x
-GetSwordName_saver;хранитель;;;;;;;;;;;;;x
-GetSwordName_kind;род;;;;;;;;;;;;;x
-GetSwordName_guilt;вина;;;;;;;;;;;;;x
-GetSwordName_maim;изувер;;;;;;;;;;;;;x
-GetSwordName_hunt;охота;;;;;;;;;;;;;x
-GetSwordName_scheme;замысел;;;;;;;;;;;;;x
-GetSwordName_watch;дозор;;;;;;;;;;;;;x
-GetSwordName_cloak;покров;;;;;;;;;;;;;x
-GetSwordName_ruin;губление;;;;;;;;;;;;;x
-GetSwordName_walker;ходок;;;;;;;;;;;;;x
-GetSwordName_warrior;воин;;;;;;;;;;;;;x
-GetSwordName_master;мастер;;;;;;;;;;;;;x
-GetSwordName_hand;рука;;;;;;;;;;;;;x
-GetSwordName_mark;метка;;;;;;;;;;;;;x
-GetSwordName_binder;связь;;;;;;;;;;;;;x
-GetSwordName_slave;раб;;;;;;;;;;;;;x
-GetSwordName_flame;пламя;;;;;;;;;;;;;x
-GetSwordName_tooth;зуб;;;;;;;;;;;;;x
-GetSwordName_legend;легенда;;;;;;;;;;;;;x
-GetSwordName_wind;ветер;;;;;;;;;;;;;x
-GetSwordName_whirl;вихрь;;;;;;;;;;;;;x
-GetSwordName_side;грань;;;;;;;;;;;;;x
-GetSwordName_cast;бросок;;;;;;;;;;;;;x
-GetSwordName_gazer;созерцатель;;;;;;;;;;;;;x
-GetSwordName_viper;змея;;;;;;;;;;;;;x
-GetSwordName_hawk;ястреб;;;;;;;;;;;;;x
-GetSwordName_born;порождение;;;;;;;;;;;;;x
-GetSwordName_eye;око;;;;;;;;;;;;;x
-GetSwordName_maker;творец;;;;;;;;;;;;;x
-GetSwordName_raider;налётчик;;;;;;;;;;;;;x
-GetSwordName_mask;личина;;;;;;;;;;;;;x
-GetSwordName_killer;убийца;;;;;;;;;;;;;x
-GetSwordName_grief;печаль;;;;;;;;;;;;;x
-GetSwordName_son;сын;;;;;;;;;;;;;x
-GetSwordName_Black;Черный;;;;;;;;;;;;;x
-GetSwordName_White;Белый;;;;;;;;;;;;;x
-GetSwordName_Red;Красный;;;;;;;;;;;;;x
-GetSwordName_Blue;Синий;;;;;;;;;;;;;x
-GetSwordName_Purple;Пурпурный;;;;;;;;;;;;;x
-GetSwordName_Silver;Серебряный;;;;;;;;;;;;;x
-GetSwordName_Gold;Золото;;;;;;;;;;;;;x
-GetSwordName_Golden;Золотой;;;;;;;;;;;;;x
-GetSwordName_Dark;Темный;;;;;;;;;;;;;x
-GetSwordName_Lady's;Леди;;;;;;;;;;;;;x
-GetSwordName_Long;Длинный;;;;;;;;;;;;;x
-GetSwordName_Night;Ночь;;;;;;;;;;;;;x
-GetSwordName_Titan's;Титанов;;;;;;;;;;;;;x
-GetSwordName_Hatred's;Ненавистный;;;;;;;;;;;;;x
-GetSwordName_Fortune's;Удачливый;;;;;;;;;;;;;x
-GetSwordName_Shadow's;Теневой;;;;;;;;;;;;;x
-GetSwordName_Storm's;Штормовой;;;;;;;;;;;;;x
-GetSwordName_Bronze;Бронзовый;;;;;;;;;;;;;x
-GetSwordName_Iron;Железный;;;;;;;;;;;;;x
-GetSwordName_Faith's;Вера;;;;;;;;;;;;;x
-GetSwordName_Whisper's;Шепот;;;;;;;;;;;;;x
-GetSwordName_Frozen;Ледяной;;;;;;;;;;;;;x
-GetSwordName_Moon;Лунный;;;;;;;;;;;;;x
-GetSwordName_Sun's;Солнечный;;;;;;;;;;;;;x
-GetSwordName_Son's;Сыновий;;;;;;;;;;;;;x
-GetSwordName_Eternal;Извечный;;;;;;;;;;;;;x
-GetSwordName_Doom's;Роковой;;;;;;;;;;;;;x
-GetSwordName_Hope's;Надежда;;;;;;;;;;;;;x
-GetSwordName_Butcher's;Палач;;;;;;;;;;;;;x
-GetSwordName_Destiny's;Судьба;;;;;;;;;;;;;x
-GetSwordName_Frail;Немощный;;;;;;;;;;;;;x
-GetSwordName_Misty;Смутный;;;;;;;;;;;;;x
-GetSwordName_Unending;Бесконечный;;;;;;;;;;;;;x
-GetSwordName_Life's;Жизнь;;;;;;;;;;;;;x
-GetSwordName_Sailor's;Моряк;;;;;;;;;;;;;x
-GetSwordName_Blessed;Благословенный;;;;;;;;;;;;;x
-GetSwordName_Misfortune's;Бедствие;;;;;;;;;;;;;x
-GetSwordName_Dire;Страх;;;;;;;;;;;;;x
-GetSwordName_Pain's;Страдание;;;;;;;;;;;;;x
-GetSwordName_Truth's;Правдивый;;;;;;;;;;;;;x
-GetSwordName_Snow's;Снежный;;;;;;;;;;;;;x
-GetSwordName_Hero's;Геройский;;;;;;;;;;;;;x
-GetSwordName_Crystal;Кристалл;;;;;;;;;;;;;x
-GetSwordName_Grey;Серый;;;;;;;;;;;;;x
-GetSwordName_GetNobleName's;[This.Owner.GetNobleName];;;;;;;;;;;;;x
-GetSwordName_This.GetTitle's;[This.Owner.GetTitle];;;;;;;;;;;;;x
-GetSwordName_This.Spouse.GetTitle's;[This.Owner.Spouse.GetTitle];;;;;;;;;;;;;x
-GetSwordName_This.TopLiege.GetTitle's;[This.Owner.TopLiege.GetTitle];;;;;;;;;;;;;x
-GetSwordName_This.TopLiege.Spouse.GetTitle's;[This.Owner.TopLiege.Spouse.GetTitle];;;;;;;;;;;;;x
-GetSwordName_Crow's;Вороний;;;;;;;;;;;;;x
-GetSwordName_Winter's;Зимний;;;;;;;;;;;;;x
-GetSwordName_Summer's;Летний;;;;;;;;;;;;;x
-GetSwordName_Spring's;Весенний;;;;;;;;;;;;;x
-GetSwordName_River's;Речной;;;;;;;;;;;;;x
-GetSwordName_Gods;Божий;;;;;;;;;;;;;x
-GetSwordName_Seven's;Семерых;;;;;;;;;;;;;x
-GetSwordName_RandomGodName;[This.Religion.GetRandomGodName];;;;;;;;;;;;;x
-GetSwordName_FirstName;[This.GetFirstName];;;;;;;;;;;;;x
-GetSwordName_CultureGroup;[This.Culture.GetGroupName];;;;;;;;;;;;;x
-GetSwordName_Cultures;[This.Culture.GetName];;;;;;;;;;;;;x
-GetSwordName_Culture;[This.Culture.GetName];;;;;;;;;;;;;x
-GetSwordName_Lion's;Львиный;;;;;;;;;;;;;x
-GetSwordName_Dragon's;Драконий;;;;;;;;;;;;;x
-GetSwordName_Wolf's;Волчий;;;;;;;;;;;;;x
-GetSwordName_Stag's;Олений;;;;;;;;;;;;;x
-GetSwordName_Rose's;Розы;;;;;;;;;;;;;x
-GetSwordName_Falcon's;Соколиеый;;;;;;;;;;;;;x
-GetSwordName_Kraken's;Кракена;;;;;;;;;;;;;x
-GetSwordName_Dawn's;Рассветный;;;;;;;;;;;;;x
-GetSwordName_Stone;Камень;;;;;;;;;;;;;x
-GetSwordName_Singing;Пение;;;;;;;;;;;;;x
-GetSwordName_Fierce;Свирепый;;;;;;;;;;;;;x
-GetSwordName_Brave;Храбрый;;;;;;;;;;;;;x
-GetSwordName_Humble;Скромный;;;;;;;;;;;;;x
-GetSwordName_Kind;Добрый;;;;;;;;;;;;;x
-GetSwordName_Brutal;Животный;;;;;;;;;;;;;x
-GetSwordName_Elusive;Неуловимый;;;;;;;;;;;;;x
-GetSwordName_Brilliant;Блестящий;;;;;;;;;;;;;x
-GetSwordName_Quick;Быстрый;;;;;;;;;;;;;x
-GetSwordName_Duelist's;Дуэльный;;;;;;;;;;;;;x
-GetSwordName_Hunter's;Охотничий;;;;;;;;;;;;;x
-GetSwordName_Falconer's;Сокольничий;;;;;;;;;;;;;x
-GetSwordName_Pride's;Гордый;;;;;;;;;;;;;x
-GetSwordName_Honest;Честный;;;;;;;;;;;;;x
-GetSwordName_Shy;Робкий;;;;;;;;;;;;;x
-GetSwordName_Zealot's;Ревнивый;;;;;;;;;;;;;x
-GetSwordName_Seducer's;Соблазнитель;;;;;;;;;;;;;x
-GetSwordName_Schemer's;Интриганский;;;;;;;;;;;;;x
-GetSwordName_Willful;Своенравный;;;;;;;;;;;;;x
-GetSwordName_Ruin's;Разорённый;;;;;;;;;;;;;x
-GetSwordName_Walker's;Ходячий;;;;;;;;;;;;;x
-GetSwordName_Widow's;Вдовий;;;;;;;;;;;;;x
-GetSwordName_Warrior's;Воинский;;;;;;;;;;;;;x
-GetSwordName_Tiger's;Тигровый;;;;;;;;;;;;;x
-GetSwordName_Elephant's;Слоновий;;;;;;;;;;;;;x
-GetSwordName_Pirate's;Пиратский;;;;;;;;;;;;;x
-GetSwordName_Holy;Святой;;;;;;;;;;;;;x
-GetSwordName_Unyielding;Упорный;;;;;;;;;;;;;x
-GetSwordName_Stubborn;Упрямый;;;;;;;;;;;;;x
-GetSwordName_Ruthless;Безжалостный;;;;;;;;;;;;;x
-GetSwordName_Silent;Бесшумный;;;;;;;;;;;;;x
-GetSwordName_Drowned;Утонувший;;;;;;;;;;;;;x
-GetSwordName_Eagle's;Орлиный;;;;;;;;;;;;;x
-GetSwordName_Slave's;Рабский;;;;;;;;;;;;;x
-GetSwordName_Strange;Странный;;;;;;;;;;;;;x
-GetSwordName_Cleansing;Очищающий;;;;;;;;;;;;;x
-GetSwordName_Exalted;Достойный;;;;;;;;;;;;;x
-GetSwordName_Whirling;Вихревой;;;;;;;;;;;;;x
-GetSwordName_Hollow;Полый;;;;;;;;;;;;;x
-GetSwordName_Accursed;Проклятый;;;;;;;;;;;;;x
-GetSwordName_Undying;Вечный;;;;;;;;;;;;;x
-GetSwordName_Benign;Безобидный;;;;;;;;;;;;;x
-GetSwordName_Righteous;Праведный;;;;;;;;;;;;;x
-GetSwordName_Jade;Нефритовый;;;;;;;;;;;;;x
-GetSwordName_Winged;Крылатый;;;;;;;;;;;;;x
-GetSwordName_Viper's;Змеиный;;;;;;;;;;;;;x
-GetSwordName_Gallant;Галантный;;;;;;;;;;;;;x
-GetSwordName_World's;Мировой;;;;;;;;;;;;;x
-GetSwordName_GetEarthName's;[This.Owner.GetEarthName];;;;;;;;;;;;;x
-GetSwordName_GetMoonName's;[This.Owner.GetMoonName];;;;;;;;;;;;;x
-GetSwordName_GetRegionalBigAnimalCap's;[This.Owner.GetRegionalBigAnimalCap];;;;;;;;;;;;;x
-GetSwordName_Unlikely;Невероятный;;;;;;;;;;;;;x
-GetSwordName_Bright;Яркий;;;;;;;;;;;;;x
-GetSwordName_Morning's;Утренний;;;;;;;;;;;;;x
-GetSwordName_Dusk's;Сумрачный;;;;;;;;;;;;;x
-GetSwordName_Pale;Блеклый;;;;;;;;;;;;;x
-GetSwordName_Raider's;Пиратский;;;;;;;;;;;;;x
-GetSwordName_Faithful;Верный;;;;;;;;;;;;;x
-GetSwordName_Mighty;Могучий;;;;;;;;;;;;;x
-GetSwordName_Daring;Отважный;;;;;;;;;;;;;x
-GetSwordName_Vieled;Скрытый;;;;;;;;;;;;;x
-GetSwordName_Last;Последний;;;;;;;;;;;;;x
-GetSwordName_Mummer's;Ряженый;;;;;;;;;;;;;x
-GetSwordName_Grim;Мрачный;;;;;;;;;;;;;x
-GetSwordName_Savage;Варварский;;;;;;;;;;;;;x
-GetSwordName_Devout;Истовый;;;;;;;;;;;;;x
-GetSwordName_Evening's;Вечерний;;;;;;;;;;;;;x
-GetSwordName_Nimble;Шустрый;;;;;;;;;;;;;x
-GetSwordName_Bard's;Певчий;;;;;;;;;;;;;x
-GetSwordName_Sister;Сестры;;;;;;;;;;;;;x
-GetSwordName_Bane;Отрава;;;;;;;;;;;;;x
-GetSwordName_Maid;Дева;;;;;;;;;;;;;x
-GetSwordName_Tooth;Клык;;;;;;;;;;;;;x
-GetSwordName_Rain;Дождь;;;;;;;;;;;;;x
-GetSwordName_Grief;Горе;;;;;;;;;;;;;x
-GetSwordName_Anger;Гнев;;;;;;;;;;;;;x
-GetSwordName_Death;Смерть;;;;;;;;;;;;;x
-GetSwordName_Glory;Слава;;;;;;;;;;;;;x
-GetSwordName_Kiss;Поцелуй;;;;;;;;;;;;;x
-GetSwordName_Fury;Ярость;;;;;;;;;;;;;x
-GetSwordName_Talon;Коготь;;;;;;;;;;;;;x
-GetSwordName_Justice;Правосудие;;;;;;;;;;;;;x
-GetSwordName_Passion;Страсть;;;;;;;;;;;;;x
-GetSwordName_Rage;Бешенство;;;;;;;;;;;;;x
-GetSwordName_Touch;Касание;;;;;;;;;;;;;x
-GetSwordName_Mourning;Плач;;;;;;;;;;;;;x
-GetSwordName_Bite;Укус;;;;;;;;;;;;;x
-GetSwordName_Guardian;Гвардеец;;;;;;;;;;;;;x
-GetSwordName_Might;Мощь;;;;;;;;;;;;;x
-GetSwordName_Fury;Ярость;;;;;;;;;;;;;x
-GetSwordName_Reaver;Грабитель;;;;;;;;;;;;;x
-GetSwordName_Hubris;Гордыня;;;;;;;;;;;;;x
-GetSwordName_Maid;Дева;;;;;;;;;;;;;x
-GetSwordName_Weaver;Ткач;;;;;;;;;;;;;x
-GetSwordName_Blood;Кровавый;;;;;;;;;;;;;x
-GetSwordName_Chaos;Хаос;;;;;;;;;;;;;x
-GetSwordName_Tyranny;Тирания;;;;;;;;;;;;;x
-GetSwordName_Defender;Защитник;;;;;;;;;;;;;x
-GetSwordName_Slaughter;Убой;;;;;;;;;;;;;x
-GetSwordName_Daughter;Дочь;;;;;;;;;;;;;x
-GetSwordName_Brother;Брат;;;;;;;;;;;;;x
-GetSwordName_Father;Отец;;;;;;;;;;;;;x
-GetSwordName_Sapphire;Сапфировый;;;;;;;;;;;;;x
-GetSwordName_Sorrow;Скорбь;;;;;;;;;;;;;x
-GetSwordName_Cruelty;Зверство;;;;;;;;;;;;;x
-GetSwordName_Oath;Клятва;;;;;;;;;;;;;x
-GetSwordName_Promise;Обещание;;;;;;;;;;;;;x
-GetSwordName_Venom;Яд;;;;;;;;;;;;;x
-GetSwordName_Vengeance;Отмщение;;;;;;;;;;;;;x
-GetSwordName_Honour;Честь;;;;;;;;;;;;;x
-GetSwordName_Pledge;Обет;;;;;;;;;;;;;x
-GetSwordName_End;Конец;;;;;;;;;;;;;x
-GetSwordName_Thunder;Гром;;;;;;;;;;;;;x
-GetSwordName_Scar;Рубец;;;;;;;;;;;;;x
-GetSwordName_Song;Песнь;;;;;;;;;;;;;x
-GetSwordName_Denial;Отречение;;;;;;;;;;;;;x
-GetSwordName_Legacy;Наследие;;;;;;;;;;;;;x
-GetSwordName_Bitch;Стерва;;;;;;;;;;;;;x
-GetSwordName_Fear;Трепет;;;;;;;;;;;;;x
-GetSwordName_Bond;Залог;;;;;;;;;;;;;x
-GetSwordName_Silence;Безмолвие;;;;;;;;;;;;;x
-GetSwordName_Vow;Обет;;;;;;;;;;;;;x
-GetSwordName_Chance;Случай;;;;;;;;;;;;;x
-GetSwordName_Scourge;Плеть;;;;;;;;;;;;;x
-GetSwordName_Eye;Взор;;;;;;;;;;;;;x
-GetSwordName_Might;Могущество;;;;;;;;;;;;;x
-GetSwordName_Mercy;Милость;;;;;;;;;;;;;x
-GetSwordName_Traitor;Изменник;;;;;;;;;;;;;x
-GetSwordName_Sting;Жало;;;;;;;;;;;;;x
-GetSwordName_Forest;Лесной;;;;;;;;;;;;;x
-GetSwordName_Omen;Зманение;;;;;;;;;;;;;x
-GetSwordName_Throne;Трон;;;;;;;;;;;;;x
-GetSwordName_Knight;Рыцарь;;;;;;;;;;;;;x
-GetSwordName_Rogue;Негодяй;;;;;;;;;;;;;x
-GetSwordName_Prince;Принц;;;;;;;;;;;;;x
-GetSwordName_Law;Закон;;;;;;;;;;;;;x
-GetSwordName_Rainbow;Радужный;;;;;;;;;;;;;x
-GetSwordName_Warden;Страж;;;;;;;;;;;;;x
-GetSwordName_Luck;Удача;;;;;;;;;;;;;x
-GetSwordName_Fall;Падение;;;;;;;;;;;;;x
-GetSwordName_Rebel;Бунтарь;;;;;;;;;;;;;x
-GetSwordName_Foe;Враг;;;;;;;;;;;;;x
-GetSwordName_Glow;Сияние;;;;;;;;;;;;;x
-GetSwordName_Air;Воздушный;;;;;;;;;;;;;x
-GetSwordName_Torment;Пытка;;;;;;;;;;;;;x
-GetSwordName_Day;День;;;;;;;;;;;;;x
-GetSwordName_Scalpel;Скальпель;;;;;;;;;;;;;x
-GetSwordName_Blade;Лезвие;;;;;;;;;;;;;x
-GetSwordName_Power;Мощь;;;;;;;;;;;;;x
-GetSwordName_Shield;Щит;;;;;;;;;;;;;x
-GetSwordName_Soul;Душа;;;;;;;;;;;;;x
-GetSwordName_Wound;Рана;;;;;;;;;;;;;x
-GetSwordName_Memory;Память;;;;;;;;;;;;;x
-GetSwordName_Claw;Клешня;;;;;;;;;;;;;x
-GetSwordName_Child;Дитя;;;;;;;;;;;;;x
-GetSwordName_Master;Мастер;;;;;;;;;;;;;x
-GetSwordName_Key;Ключ;;;;;;;;;;;;;x
-GetSwordName_Wroth;Разгневанный;;;;;;;;;;;;;x
-GetSwordName_Protector;Защитник;;;;;;;;;;;;;x
-GetSwordName_Sentinel;Часовой;;;;;;;;;;;;;x
-GetSwordName_Poem;Поэма;;;;;;;;;;;;;x
-GetSwordName_Eminence;Возвышение;;;;;;;;;;;;;x
-GetSwordName_Lunacy;Безумие;;;;;;;;;;;;;x
-GetSwordName_Bastard;Бастард;;;;;;;;;;;;;x
-GetSwordName_Scholar;Ученый;;;;;;;;;;;;;x
-GetSwordName_Impaler;Пронзатель;;;;;;;;;;;;;x
-GetSwordName_Chastity;Чистый;;;;;;;;;;;;;x
-GetSwordName_Greed;Жадность;;;;;;;;;;;;;x
-GetSwordName_Charity;Милосердие;;;;;;;;;;;;;x
-GetSwordName_Envy;Зависть;;;;;;;;;;;;;x
-GetSwordName_Deceit;Обман;;;;;;;;;;;;;x
-GetSwordName_Ambition;Честолюбие;;;;;;;;;;;;;x
-GetSwordName_Cynic;Циничный;;;;;;;;;;;;;x
-GetSwordName_Trick;Трюк;;;;;;;;;;;;;x
-GetSwordName_Game;Игра;;;;;;;;;;;;;x
-GetSwordName_Idol;Идол;;;;;;;;;;;;;x
-GetSwordName_Immortality;Бессмертие;;;;;;;;;;;;;x
-GetSwordName_Cannibal;Каннибал;;;;;;;;;;;;;x
-GetSwordName_Master;Мастер;;;;;;;;;;;;;x
-GetSwordName_Dishonour;Позор;;;;;;;;;;;;;x
-GetSwordName_Poison;Яд;;;;;;;;;;;;;x
-GetSwordName_Seafoam;Морская пена;;;;;;;;;;;;;x
-GetSwordName_Mark;Метка;;;;;;;;;;;;;x
-GetSwordName_Favour;Милость;;;;;;;;;;;;;x
-GetSwordName_Grace;Изящество;;;;;;;;;;;;;x
-GetSwordName_Love;Любовь;;;;;;;;;;;;;x
-GetSwordName_Avenger;Мститель;;;;;;;;;;;;;x
-GetSwordName_Flame;Пламя;;;;;;;;;;;;;x
-GetSwordName_Usurper;Узурпатор;;;;;;;;;;;;;x
-GetSwordName_Martyr;Мученик;;;;;;;;;;;;;x
-GetSwordName_Legend;Легенда;;;;;;;;;;;;;x
-GetSwordName_Terror;Террор;;;;;;;;;;;;;x
-GetSwordName_Butcher;Мясник;;;;;;;;;;;;;x
-GetSwordName_Wind;Ветер;;;;;;;;;;;;;x
-GetSwordName_Monster;Чудовище;;;;;;;;;;;;;x
-GetSwordName_Purifier;Очиститель;;;;;;;;;;;;;x
-GetSwordName_Confession;Покаяние;;;;;;;;;;;;;x
-GetSwordName_Cunning;Хитрый;;;;;;;;;;;;;x
-GetSwordName_Truth;Истинный;;;;;;;;;;;;;x
-GetSwordName_Peace;Мир;;;;;;;;;;;;;x
-GetSwordName_Steel;Сталь;;;;;;;;;;;;;x
-GetSwordName_Weeper;Уборщик;;;;;;;;;;;;;x
-GetSwordName_Woe;Скорбь;;;;;;;;;;;;;x
-GetSwordName_Battle;Битва;;;;;;;;;;;;;x
-GetSwordName_Triumph;Триумф;;;;;;;;;;;;;x
-GetSwordName_Compassion;Сострадание;;;;;;;;;;;;;x
-GetSwordName_Concession;Уступка;;;;;;;;;;;;;x
-GetSwordName_Jade;Нефритовый;;;;;;;;;;;;;x
-GetSwordName_Kingmaker;Властный;;;;;;;;;;;;;x
-GetSwordName_Extinction;Угасание;;;;;;;;;;;;;x
-GetSwordName_Redemption;Избавление;;;;;;;;;;;;;x
-GetSwordName_Cunning;Коварный;;;;;;;;;;;;;x
-GetSwordName_Betrayer;Предатель;;;;;;;;;;;;;x
-GetSwordName_Champion;Поборник;;;;;;;;;;;;;x
-GetSwordName_Desecration;Осквернение;;;;;;;;;;;;;x
-GetSwordName_Peacekeeper;Миротворец;;;;;;;;;;;;;x
-GetSwordName_Betrayal;Измена;;;;;;;;;;;;;x
-GetSwordName_Summoner;Призыватель;;;;;;;;;;;;;x
-GetSwordName_Incarnation;Вопрощение;;;;;;;;;;;;;x
-GetSwordName_Savagery;Свирепость;;;;;;;;;;;;;x
-GetSwordName_Deflector;Отразитель;;;;;;;;;;;;;x
-GetSwordName_Cometfell;Кометопад;;;;;;;;;;;;;x
-GetSwordName_Phoenix;Феникс;;;;;;;;;;;;;x
-GetSwordName_Malignant;Злобный;;;;;;;;;;;;;x
-GetSwordName_Eternal;Вековечный;;;;;;;;;;;;;x
-GetSwordName_Damnation;Проклятие;;;;;;;;;;;;;x
-GetSwordName_Mangler;Давитель;;;;;;;;;;;;;x
-GetSwordName_Reckoning;Расплата;;;;;;;;;;;;;x
-GetSwordName_Delusion;Наваждение;;;;;;;;;;;;;x
-GetSwordName_Visage;Облик;;;;;;;;;;;;;x
-GetSwordName_Amnesia;Беспамятство;;;;;;;;;;;;;x
-GetSwordName_Harmony;Гармония;;;;;;;;;;;;;x
-GetSwordName_Souleater;Пожиратель душ;;;;;;;;;;;;;x
-GetSwordName_Phantom;Фантом;;;;;;;;;;;;;x
-GetSwordName_Malificent;Вредный;;;;;;;;;;;;;x
-GetSwordName_Nightmare;Кошмар;;;;;;;;;;;;;x
-GetSwordName_Insanity;Безумие;;;;;;;;;;;;;x
-GetSwordName_Massacre;Резня;;;;;;;;;;;;;x
-GetSwordName_Mirage;Марево;;;;;;;;;;;;;x
-GetSwordName_Glorious;Славный;;;;;;;;;;;;;x
-GetSwordName_Backbite;Злословие;;;;;;;;;;;;;x
-GetSwordName_RandomEvilGodName;[This.Religion.GetRandomEvilGodName];;;;;;;;;;;;;x
-GetSwordName_Hywelbane;Бич;;;;;;;;;;;;;x
-GetSwordName_The_Sword_of_capitalname;[This.GetWeaponType] [This.Owner.Capital.GetName];;;;;;;;;;;;;x
-GetSwordName_The_Sword_of_title;[This.GetWeaponType] [This.Owner.PrimaryTItle.GetName];;;;;;;;;;;;;x
-GetSwordName_Dragnipur;Драгнипур;;;;;;;;;;;;;x
-GetSwordName_Callandor;Калландор;;;;;;;;;;;;;x
-GetSwordName_Scalpel;Скальпель;;;;;;;;;;;;;x
-GetSwordName_Naegling;Неглинг;;;;;;;;;;;;;x
-GetSwordName_Tamerlein;Тамерлейн;;;;;;;;;;;;;x
-GetSwordName_Backbiter;Клеветник;;;;;;;;;;;;;x
-GetSwordName_Gryffin;Гриффин;;;;;;;;;;;;;x
-GetSwordName_Wayfinder;Вейвиндер;;;;;;;;;;;;;x
-GetSwordName_Vanguard;Вангвард;;;;;;;;;;;;;x
-GetSwordName_Glamdring;Гламдринг;;;;;;;;;;;;;x
-GetSwordName_Narsil;Нарсил;;;;;;;;;;;;;x
-GetSwordName_Werewindle;Веревиндл;;;;;;;;;;;;;x
-GetSwordName_Clamorer;Кламорер;;;;;;;;;;;;;x
-GetSwordName_Zirael;Зираэль;;;;;;;;;;;;;x
-GetSwordName_Sihill;Сигилл;;;;;;;;;;;;;x
-GetSwordName_Balaraw;Баралоу;;;;;;;;;;;;;x
-GetSwordName_Hina;Хина;;;;;;;;;;;;;x
-GetSwordName_Singing_Sword;Певчий [This.GetWeaponType];;;;;;;;;;;;;x
-GetSwordName_Master_Sword;Владыка [This.GetWeaponType];;;;;;;;;;;;;x
-GetSwordName_Humility;Смирение;;;;;;;;;;;;;x
-GetSwordName_Excelsior;Эксельсиор;;;;;;;;;;;;;x
-GetSwordName_Guilty;Виновный;;;;;;;;;;;;;x
-GetSwordName_Caliburn;Экскалибур;;;;;;;;;;;;;x
-GetSwordName_Arondight;Арондит;;;;;;;;;;;;;x
-GetSwordName_Harp;Харп;;;;;;;;;;;;;x
-GetSwordName_Possession;Владетель;;;;;;;;;;;;;x
-GetSwordName_Impregnation;Насыщение;;;;;;;;;;;;;x
-GetSwordName_Kinslayer;Отцеубийца;;;;;;;;;;;;;x
-GetSwordName_Celibacy;Безбрачие;;;;;;;;;;;;;x
-GetSwordName_Hedonist;Гедонист;;;;;;;;;;;;;x
-GetSwordName_Gardener;Садовник;;;;;;;;;;;;;x
-GetSwordName_Myticism;Мистицизм;;;;;;;;;;;;;x
-GetSwordName_Temperance;Воздержание;;;;;;;;;;;;;x
-GetSwordName_Diligence;Усердие;;;;;;;;;;;;;x
-GetSwordName_Patience;Терпение;;;;;;;;;;;;;x
-GetSwordName_Contentment;Удовлетворенность;;;;;;;;;;;;;x
-GetSwordName_Inspiration;Вдохновение;;;;;;;;;;;;;x
-GetSwordName_Affection;Привязанность;;;;;;;;;;;;;x
-GetSwordName_Timidity;Робость;;;;;;;;;;;;;x
-GetSwordName_Indolence;Праздность;;;;;;;;;;;;;x
-GetSwordName_Conscience;Совесть;;;;;;;;;;;;;x
-GetSwordName_Curiousity;Любопытство;;;;;;;;;;;;;x
-GetSwordName_Desertion;Бегство;;;;;;;;;;;;;x
-GetSwordName_Obedience;Послушание;;;;;;;;;;;;;x
-GetSwordName_Berserker;Бешеный;;;;;;;;;;;;;x
-GetSwordName_Ravager;Разрушитель;;;;;;;;;;;;;x
-GetSwordName_Adventure;Приключение;;;;;;;;;;;;;x
-GetSwordName_Authority;Авторитетный;;;;;;;;;;;;;x
-GetSwordName_Obsession;Одержимость;;;;;;;;;;;;;x
-GetSwordName_Resurrection;Воскрешение;;;;;;;;;;;;;x
-GetSwordName_Sympathy;Симпатия;;;;;;;;;;;;;x
-GetSwordName_Empathy;Сочувствие;;;;;;;;;;;;;x
-GetSwordName_Apathy;Апатия;;;;;;;;;;;;;x
-GetSwordName_Liberator;Освободитель;;;;;;;;;;;;;x
-GetSwordName_Freedom;Свобода;;;;;;;;;;;;;x
-GetSwordName_Dynasty;Династия;;;;;;;;;;;;;x
-GetSwordName_Lawgiver;Законодатель;;;;;;;;;;;;;x
-GetSwordName_Conqueror;Завоеватель;;;;;;;;;;;;;x
-GetSwordName_Restorer;Восстановитель;;;;;;;;;;;;;x
-GetSwordName_Whisper;Шепоток;;;;;;;;;;;;;x
-GetSwordName_Beheader;Обезглавленный;;;;;;;;;;;;;x
-GetSwordName_Survivor;Уцелевший;;;;;;;;;;;;;x
-GetSwordName_Destroyer;Разрушитель;;;;;;;;;;;;;x
-GetSwordName_Vengeful;Мстительный;;;;;;;;;;;;;x
-GetSwordName_Tormentor;Мучитель;;;;;;;;;;;;;x
-GetSwordName_Mutilation;Увечье;;;;;;;;;;;;;x
-GetSwordName_Despoiler;Расхититель;;;;;;;;;;;;;x
-GetSwordName_Abomination;Мерзость;;;;;;;;;;;;;x
-GetSwordName_Kingslayer;Цареубийца;;;;;;;;;;;;;x
-GetSwordName_Submission;Подчинение;;;;;;;;;;;;;x
-GetSwordName_Deliverence;Спасение;;;;;;;;;;;;;x
-GetSwordName_Illumination;Озарение;;;;;;;;;;;;;x
-GetSwordName_Exaltation;Возвышение;;;;;;;;;;;;;x
-GetSwordName_Awakening;Пробуждение;;;;;;;;;;;;;x
-GetSwordName_Enlightenment;Просвещение;;;;;;;;;;;;;x
-GetSwordName_Arrogance;Высокомерие;;;;;;;;;;;;;x
-GetSwordName_Resiliance;Стойкость;;;;;;;;;;;;;x
-GetSwordName_Oppression;Угнетение;;;;;;;;;;;;;x
-GetSwordName_Magnificence;Великолепие;;;;;;;;;;;;;x
-GetSwordName_Prudence;Благоразумие;;;;;;;;;;;;;x
-GetSwordName_Brilliance;Блеск;;;;;;;;;;;;;x
-GetSwordName_Prodigy;Чудо;;;;;;;;;;;;;x
-GetSwordName_Elegance;Изящество;;;;;;;;;;;;;x
-GetSwordName_Evenstar;Вечерняя звезда;;;;;;;;;;;;;x
-GetSwordName_GetSunName;[This.Owner.GetSunName];;;;;;;;;;;;;x
-GetSwordName_GetRandomPlanetName;[This.Owner.GetRandomPlanetName];;;;;;;;;;;;;x
-GetSwordName_GetAlcoholicDrink;[This.Owner.GetAlcoholicDrink];;;;;;;;;;;;;x
-GetSwordName_Conciliator;Посредник;;;;;;;;;;;;;x
-GetSwordName_Implacable;Неумолимый;;;;;;;;;;;;;x
-GetSwordName_Breaker;Нарушитель;;;;;;;;;;;;;x
-GetSwordName_Burner;Топка;;;;;;;;;;;;;x
-GetSwordName_Anvilbreaker;Дробитель;;;;;;;;;;;;;x
-GetSwordName_Latecomer;Опоздавший;;;;;;;;;;;;;x
-GetSwordName_Badbrother;Плохой брат;;;;;;;;;;;;;x
-GetSwordName_Thunderbolt;Удар молнии;;;;;;;;;;;;;x
-GetSwordName_Boarkiller;Кабаноубийца;;;;;;;;;;;;;x
-GetSwordName_Nightingale;Соловей;;;;;;;;;;;;;x
-GetSwordName_Widowmaker;Вдоводел;;;;;;;;;;;;;x
-GetSwordName_Necromancer;Некромант;;;;;;;;;;;;;x
-GetSwordName_Stoneheart;Бессердечная;;;;;;;;;;;;;x
-GetSwordName_Enchantment;Зачарование;;;;;;;;;;;;;x
-GetSwordName_Captivation;Очарование;;;;;;;;;;;;;x
-GetSwordName_MyDragon;[owners_dragon.GetFirstName];;;;;;;;;;;;;x
-GetSwordName_MyDragons;[owners_dragon.GetFirstName];;;;;;;;;;;;;x
-forge_valyrian_steel;Ковать валирийскую сталь;;;;;;;;;;;;;x
-forge_valyrian_steel_desc;Валирийская сталь, возможно, выкованная при помощи драконов, производится в Валирийском Фригольде. Штормовой певец может помочь вам выковать кое-что вмнсте с вашим драконом.;;;;;;;;;;;;;x
-TOOLTIPforge_valyrian_steel_STORMSINGER;Могущественный Штормовой певец доступен при вашем дворе (персонаж с не менее 15 образования и валирийской религией);;;;;;;;;;;;;x
-TOOLTIPforge_valyrian_steel_VALYRIA;Любое владение находится в регионе Валирийских центральных земель;;;;;;;;;;;;;x
-TOOLTIPforge_valyrian_steel_FORGING;УЖЕ не кует валирийскую сталь;;;;;;;;;;;;;x
-EVTDESCvalyrian_steel.190;[stormsinger_forger.GetTitledFirstNameWithDynasty] может сфокусировать драконье пламя дракона [dragon_forger.GetFirstName] в своей кузнице. Затем [stormsinger_forger.GetSheHe] будет использовать заклинания для создания валирийской стали.;;;;;;;;;;;;;x
-EVTOPTAvalyrian_steel.190;Приступить;;;;;;;;;;;;;x
-TOOLTIPvalyrian_steel.190A;Ковка валирийского  меча займет несколько месяцев;;;;;;;;;;;;;x
-EVTOPTBvalyrian_steel.190;Мне нужен доспех!;;;;;;;;;;;;;x
-TOOLTIPvalyrian_steel.190B;Учитывая мастерство Штормового певца и силу дракона, вы можете заплатить дополнительную плату за валирийский доспех;;;;;;;;;;;;;x
-EVTOPTCvalyrian_steel.190;Используйте ваши навыки, чтобы создать мне драконий рог;;;;;;;;;;;;;x
-TOOLTIPvalyrian_steel.190C;Учитывая мастерство Штормового певца и силу дракона, вы можете заплатить дополнительную плату за драконий рог;;;;;;;;;;;;;x
-EVTDESCvalyrian_steel.191;После многих месяцев использования мощного драконьего пламени от дракона [dragon_forger.GetFirstName], [stormsinger_forger.GetTitledFirstNameWithDynasty] завершает ковку валирийского клинка!;;;;;;;;;;;;;x
-EVTOPTAvalyrian_steel.191;Я благодарю за вашу хорошую работу;;;;;;;;;;;;;x
-EVTDESCvalyrian_steel.192;После многих месяцев сосредоточения мощного драконьего пламени от дракона [dragon_forger.GetFirstName], и выполнения сложных заклинаний, [stormsinger_forger.GetTitledFirstNameWithDynasty] завершает доспех из валирийской стали!;;;;;;;;;;;;;x
-EVTOPTAvalyrian_steel.192;Это великолепно!;;;;;;;;;;;;;x
-EVTDESCvalyrian_steel.193;[stormsinger_forger.GetTitledFirstNameWithDynasty] проводит много месяцев, выполняя заклинания и используя дракона [dragon_forger.GetFirstName], чтобы проверить свою работу, и теперь, наконец, заканчивает Драконий рог!;;;;;;;;;;;;;x
-EVTOPTAvalyrian_steel.193;Это кажется наиболее полезным;;;;;;;;;;;;;x
-TOOLTIP250286;§YПРИМЕЧАНИЕ:§! Изображения различных вариантов меча можно просмотреть, щелкнув ссылку wiki символа 'валирийский меч', показанного в этой подсказке;;;;;;;;;;;;;x
-TOOLTIPnick_the_sword_of_the_morning;Этот меч - Рассвет;;;;;;;;;;;;;x
-TOOLTIPseize_swordTRAITOR;[Root.GetTitledFirstNameWithDynasty] - предатель;;;;;;;;;;;;;x
-reforge_ice;Перековать Лёд;;;;;;;;;;;;;x
-reforge_ice_desc;Нед Старк был несправедливо обезглавлен своим собственным мечом Лёд, клинок впоследствии был украден и запятнан Ланнистерами. Получить остатки и перековывать его в то, чем он когда-то был!;;;;;;;;;;;;;x
-TOOLTIPreforge_iceA;[Root.GetTitledFirstNameWithDynasty] владеет обоими остатками Льда;;;;;;;;;;;;;x
-TOOLTIPreforge_iceB;[This.GetName] и другой клинок перековываются в Лёд;;;;;;;;;;;;;x
-valyrian_steel_arakh;Аракх из валирийской стали;;;;;;;;;;;;;x
-valyrian_steel_arakh_desc;Клинок этого аракха сделан из валирийской стали. Арах - это меч, обычно используемый дотракийцами. Он наполовину меч, наполовину - коса.;;;;;;;;;;;;;x
-EVTOPTC251400;Доспех;;;;;;;;;;;;;x
-EVTOPTD251400;Кинжалы;;;;;;;;;;;;;x
-EVTDESCvalyrian_steel.99;Кузнец больше недоступен, перековывание меча отменено.;;;;;;;;;;;;;
+#CODE;ENGLISH;x
+valyrian_steel;Меч из валирийской стали;x
+valyrian_steel_desc;Валирийская сталь — сплав особого рода, отличающийся прочностью, создавать который умели только мастера древней Валирии.;x
+dawn;Рассвет;x
+dawn_desc;Родовой меч Дома Дейнов, по легенде, выкованный из сердца упавшей звезды. Рассвет - гордость Дома Дейнов. Его происхождение теряется в веках, но вполне вероятно, что Дейны владели им протяжении тысяч лет. Лезвие бледное, как молочное стекло, похоже на валирийское и обладает такими же свойствами. В отличие от других Домов, у которых есть свои родовые мечи, Дом Дейнов не передает меч от лорда к лорду. Только достойнейший рыцарь Дома Дейнов может владеть им, причем этот владелец традиционно принимает титул Меч Зари.;x
+TOOLTIPclaim_dawn_dishonorable;У вас не должно быть ни одного уровня бесчестья\n;x
+EVTDESC250277;Ваш[From.GetEndA] [From.GetRootRelation] [From.GetTitledFirstName] мертв[From.GetEndA]. По законам наследования вы получите [From.GetValyrianSwordHerHis], используйте его с достоинством;x
+EVTDESC250277B;[From.GetTitledFirstName], подлый кузнечный мастер, умер. Это значит, что [Root.GetValyrianSwordOwned] будет возвращен вам, вырванный из рук вора. Используйте его с достоинством.;x
+EVTOPTA250277;Это должно быть сделано;x
+EVTDESC250278;Вражеская армия покинула поле боя. Блуждая по окрестностям в поисках раненных, вы заметили блестящую черную вещь, наполовину похороненную в грязи. Как только вы наклонились и стали откапывать предмет из грязи, тут же порезали пальцы. Вы продолжаете копать и в конечном итоге достаете меч из валирийской стали!;x
+EVTOPTA250278;Трофей победителя!;x
+EVTDESC250279;Битва бушует вокруг вас, крики боли и гнева слышны со всех сторон. Вы сходитесь с очередным противником, чувствуете в груди свинцовую тяжесть удара и падаете без чувств. Только после окончания битвы вы понимаете, что фамильный меч, который вы так неумело использовали, был утерян в хаосе боя.;x
+EVTOPTA250279;Проклятье!;x
+EVTDESC251400;Ваш Мастер-над-оружием приносит вам список всех известных владельцев валирийских клинков.;x
+EVTOPTA251400;К ним относятся: (смотреть подсказку).;x
+show_me_val_swords;Показать владельцев валирийских клинков.;x
+show_me_val_swords_desc;Поручить Мастеру-оружейнику составить список всех известных владельцев валирийских клинков.;x
+opinion_gave_sword_to_me;Мне передали наш фамильный клинок;x
+opinion_didnt_give_sword_to_me;Мне отказано в получении меча;x
+give_valyrian_sword_to_son;Даровать валирийский меч;x
+give_valyrian_sword_to_son_desc;Я уступлю свой меч персонажу, известному как [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;x
+blackfyre;Чёрное Пламя;x
+blackfyre_desc;Чёрное Пламя - один из двух Валирийских мечей, привезенных с Драконьего Камня Таргариенами после Рока. Это делает его одной из самых ценных вещей дома Таргариенов.;x
+darksister;Тёмная Сестра;x
+darksister_desc;Тёмная Сестра - один из двух Валирийских мечей, привезенных с Драконьего Камня Таргариенами после Рока. Это делает его одной из самых ценных вещей дома Таргариенов. Кровавый Ворон был последним известным владельцем клинка.\n\n-Если владелец Темной Сестры - Таргариен, тогда наследовать меч будет глава Дома Таргариен после смерти владельца.;x
+ice;Лёд;x
+ice_desc;Лёд - двуручный меч из валирийской стали Дома Старк, выкованный из Валирийской стали за четыре сотни лет до завоевания Эйгона.;x
+ice_desc_REFORGED;Лёд - это перекованный родовой валирийский двуручный меч Дома Старков, заколдованный в Валирии за столетия до Завоевания Эйгона. [Root.GetTitledFirstName] вернул[Root.GetEndA] украденные клинки Вдовий плач и Верный Клятве и перековал их в этот меч.;x
+ice_desc_REMNANT;Лёд - это перекованный родовой валирийский двуручный меч Дома Старков, заколдованный в Валирии за столетия до Завоевания Эйгона. [This.Owner.GetTitledFirstName] обнаружил[Root.GetEndA] этот остаток Льда, изначально украденный Ланнистерами и перекованный во Вдовий Плач и Верный Клятве..;x
+longclaw;Длинный Коготь;x
+longclaw_desc;Длинный Коготь - фамильный меч из валирийской стали дома Мормонтов, находящийся сотни лет в руках Мормонтов.;x
+longclaw_snow;Длинный Коготь;x
+longclaw_snow_desc;Длинный Коготь - фамильный Валирийский меч дома Мормонтов, перешедший Джону Сноу, после того как он со своим лютоволком спас жизнь Джиору Мормонту в Чёрном Замке.;x
+brightroar;Светлый Рев;x
+brightroar_desc;Светлый Рев - пропавший фамильный меч Ланнистеров. После Рока Валирии король Томмен II Ланнистер предпринял экспедицию на руины Валирии, где и сгинул со своим мечом.;x
+lightbringer;Светозарный;x
+lightbringer_desc;Светозарный - предположительно, является мечом Азора Ахая, легендарного героя, которому было предсказано сражаться с Великим Иным. Светозарный считается мечом из живого огня. Он также известен как Красный Меч Героев.;x
+heartsbane;Губитель Сердец;x
+heartsbane_desc;Губитель Сердец - фамильный валирийский меч дома Тарли. Это двуручный меч, который принадлежит семье Тарли уже пять сотен лет.;x
+crabspincer;Крабовая Клешня;x
+crabspincer_desc;Крабовая Клешня - валирийский топор, принадлежащий дому Селтигар.;x
+ladyforlorn;Леди Отчаяние;x
+ladyforlorn_desc;Леди Отчаяние - валирийский меч дома Корбрей. Инкрустирован рубином в форме сердца.\n\n-Если владелец Леди Отчаяния - Корбрей, тогда глава Дома Корбреев будет наследовать этот меч после смерти владельца.;x
+redrain;Багряный Дождь;x
+redrain_desc;Багряный Дождь - валирийский меч, по слухам, принадлежал дому Рейн. Согласно преданию, Хильмар Драмм отобрал его у некоего рыцаря с помощью смекалки и увесистой палицы.;x
+widowswail;Вдовий Плач;x
+widowswail_desc;Вдовий Плач - новый валирийский меч, выкованных изо Льда Старков. Красный с черной рябью. Его ножны из вишневого дерева и промасленной красной кожи, усажены, как заклепками, золотыми львиными головами.;x
+widowswail_descB;[This.GetName] - это новый меч из валирийской стали, выкованный из старого клинка Лёд по приказу Тайвина Ланнистера. Клинок переливается красной и чёрной рябью, а ножны изумительно украшены золотом, вишневым деревом, красной кожей и золотыми головами льва с рубиновыми глазами..;x
+oathkeeper;Верный Клятве;x
+oathkeeper_desc;Верный Клятве - новый валирийский меч, выкованных изо Льда Старков. Через красный цвет стали проступает черная рябь.;x
+oathkeeper_descB;[This.GetName] - это новый меч из валирийской стали, выкованный из старого клинка Лёд по приказу Тайвина Ланнистера. Клинок переливается красной и чёрной рябью.;x
+strangers_mercy;Милость Неведомого;x
+strangers_mercy_desc;Милость Неведомого - полуторный меч из валирийской стали, украшенный драконьим стеклом.;x
+truth;Истина;x
+truth_desc;Истина - это меч из валирийской стали, принадлежащий дому Рогаре, дворянской семье древнего рода Лис.;x
+lamentation;Плач;x
+lamentation_desc;Плач - меч из Валирийской стали Дома Ройсов, старого и могущественного дома Долины. Они могут проследить свою кровь до времен Первых Людей, которые когда-то населяли Долину и их правления как Бронзовых Королей Рунного Камня до Завоевания Андалов, в котором они были побеждены Артисом Арреном, Королем Горы и Долины.;x
+poison;Яд;x
+poison_desc;Яд - валирийский меч Дома Вунатисов, полуторный меч из валирийской стали, изначально предназначенный для продажи за Узким Морем, но корабль, на котором он перевозился, был захвачен пиратскими лордами Кровавого камня. Рукоятка выполнена из кости дракона, вырезанная в виде спирального узора.;x
+TOOLTIPVALYRIANSWORDWIELDER;[Prev.GetTitledFirstNameWithDynastyAndTitle] владеет клинком §Y[This.GetName]§!\n;x
+seafoam;Морская пена;x
+seafoam_desc;Морская пена - это меч из валирийской стали, который, согласно легенде, принадлежал Дому Велариону до Рока. Навершие в форме морского конька.;x
+TOOLTIPICEWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YЛёд§!\n;x
+TOOLTIPDAWNWIELDER;[This.GetFirstNameWithDynasty] - Меч Зари, владеет клинком §YРассвет§!\n;x
+TOOLTIPLONGCLAWWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YДлинный Когоит§!\n;x
+TOOLTIPBLACKFYREWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YЧёрное Пламя§!\n;x
+TOOLTIPBRIGHTROARWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YСветлый Рёв§!\n;x
+TOOLTIPHEARTSBANEWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YГубитель Сердец§!\n;x
+TOOLTIPSTRANGERSMERCYWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YМилость Неведомого§!\n;x
+CB_NAME_RECLAIM_SWORD;Возвращение фамильного меча;x
+WAR_NAME_RECLAIM_SWORD;$CLAIMANT$ $ORDER$ Война за возвращение фамильного меча $DEFENDER$;x
+reclaim_ancestral_sword_desc;§Y$CLAIMANT$§! может объявить войну, чтобы вернуть фамильный меч из рук персонажа §Y$TARGET$§!;x
+TOOLTIPRECLAIMVALYRIANSTEELWAR;[This.GetFirstNameWithDynasty] отказывается от §YВалирийского клинка§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;x
+TOOLTIPRECLAIMICEWAR;[This.GetFirstNameWithDynasty] отказывается от §YЛьда§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;x
+TOOLTIPRECLAIMLONGCLAWWAR;[This.GetFirstNameWithDynasty] отказывается от §YДлинного Когтя§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;x
+TOOLTIPRECLAIMBLACKFYREWAR;[This.GetFirstNameWithDynasty] отказывается от §YЧёрного Пламени§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;x
+TOOLTIPRECLAIMBRIGHTROARWAR;[This.GetFirstNameWithDynasty] отказывается от §YСветлого Рёва§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;x
+TOOLTIPRECLAIMHEARTSBANEWAR;[This.GetFirstNameWithDynasty] отказывается от §YГубителя Сердец§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;x
+TOOLTIPRECLAIMDARKSISTERWAR;[This.GetFirstNameWithDynasty] отказывается от §YТёмной Сестры§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;x
+TOOLTIPRECLAIMstrangers_mercyWAR;[This.GetFirstNameWithDynasty] отказывается от §YМилости Неведомого§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;x
+nightfall;Сумерки;x
+nightfall_desc;Сумерки - фамильный Валирийский меч дома Харлоу. Украшен лунным камнем.;x
+TOOLTIPNIGHTFALLWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YСумерки§!\n;x
+TOOLTIPRECLAIMNIGHTFALLWAR;[This.GetFirstNameWithDynasty] отказывается от §YСумерек§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;x
+TOOLTIPDARKSISTERWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YТёмная Сестра§!\n;x
+give_ice_to_son;Передать Лёд;x
+give_ice_to_son_desc;Я уступлю Лед персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;x
+give_longclaw_to_son;Передать Длинный Коготь;x
+give_longclaw_to_son_desc;Я уступлю Длинный Коготь персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;x
+give_longclaw_snow_to_son;Передать Длинный Коготь;x
+give_longclaw_snow_to_son_desc;Я уступлю Длинный Коготь персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;x
+give_blackfyre_to_son;Передать Чёрное Пламя;x
+give_blackfyre_to_son_desc;Я уступлю Чёрное Пламя персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;x
+give_brightroar_to_son;Передать Светлый Рёв;x
+give_brightroar_to_son_desc;Я уступлю Светлый Рев персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;x
+give_heartsbane_to_son;Передать Губитель Сердец;x
+give_heartsbane_to_son_desc;Я уступлю Губитель Сердец персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;x
+give_nightfall_to_son;Передать Сумерки;x
+give_nightfall_to_son_desc;Я уступлю Сумерки персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;x
+give_darksister_to_son;Передать Тёмную Сестру;x
+give_darksister_to_son_desc;Я уступлю Тёмную Сестру персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;x
+give_strangers_mercy_to_son;Передать Милость Неведомого;x
+give_strangers_mercy_to_son_desc;Я уступлю Милость Неведомого персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;x
+TOOLTIPLADYFORLORNWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YЛеди Отчаяние§!\n;x
+TOOLTIPRECLAIMLADYFORLORNWAR;[This.GetFirstNameWithDynasty] отказывается от §YЛеди Отчаяния§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;x
+TOOLTIPREDRAINWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YБагряный Дождь§!\n;x
+TOOLTIPRECLAIMREDRAINWAR;[This.GetFirstNameWithDynasty] отказывается от §YБагряного Дождя§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;x
+TOOLTIPCRABSPINCERWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YКрабовая Клешня§!\n;x
+TOOLTIPRECLAIMCRABSPINCERWAR;[This.GetFirstNameWithDynasty] отказывается от §YКрабовой Клешни§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;x
+give_ladyforlorn_to_son;Передать Леди Отчаяние;x
+give_ladyforlorn_to_son_desc;Я уступлю Леди Отчаяние персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;x
+give_redrain_to_son;Передать Багряный дождь;x
+give_redrain_to_son_desc;Я уступлю Багряный Дождь персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;x
+give_crabspincer_to_son;Передать Крабовую Клешню;x
+give_crabspincer_to_son_desc;Я уступлю Крабову Клешню персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;x
+TOOLTIPWIDOWSWAILWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YВдовий Плач§!\n;x
+TOOLTIPRECLAIMWIDOWSWAILWAR;[This.GetFirstNameWithDynasty] отказывается от §YВдовьего Плача§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;x
+TOOLTIPOATHKEEPERWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YВерный Клятве§!\n;x
+TOOLTIPRECLAIMOATHKEEPERWAR;[This.GetFirstNameWithDynasty] отказывается от §YВерного Клятве§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;x
+TOOLTIPREREFORGEWIDOWSWAILWAR;[This.GetFirstNameWithDynasty] отказывается от §YВдовьего Плача§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!, котор[Root.GetAyaYy] перекует его в §YЛёд§!\n;x
+TOOLTIPREREFORGEOATHKEEPERWAR;[This.GetFirstNameWithDynasty] отказывается от §YВерного Клятве§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!, котор[Root.GetAyaYy] перекует его в §YЛёд§!\n;x
+give_widowswail_to_son;Передать Вдовий Плач;x
+give_widowswail_to_son_desc;Я уступлю Вдовий Плач персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше, чем я.;x
+give_oathkeeper_to_son;Передать Верный Клятве;x
+give_oatkeeper_to_son_desc;Я уступлю Верный Клятве персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;x
+plot_steal_valyrian_sword_short;Украсть Валирийский меч;x
+plot_steal_valyrian_sword_title;Украсть Валирийский меч у персонажу [This.GetTitledFirstNameWithDynastyAndTitleNoRegnal];x
+plot_steal_valyrian_sword_desc;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] хочет получить валирийский клинок [This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] любой ценой.;x
+EVTDESC250280;Предатель Эддард Старк казнен, его фамильный Валирийский меч 'Лед' в нашем распоряжении. Это прекрасная возможность для создания новых фамильных клинков дома Ланнистеров, так как наш меч 'Светлый Рев' был утерян в руинах Древней Валирии. Победителям достаются трофеи!;x
+EVTOPTA250280;Перекрасить сталь в цвета дома Ланнистеров!;x
+EVTOPTB250280;Оставить меч как есть.;x
+TOOLTIPEVTOPTB250280;Никакого эффекта.;x
+EVTDESC250281;Сомнительный купец из-за Узкого моря приближается к вам и предлагает купить настоящий клинок из валирийской стали за поистине королевскую сумму золотых драконов.;x
+EVTOPTA250281;Настоящая валирийская сталь?! Ты пытаешься обмануть меня, торгаш?!;x
+TOOLTIP250281B;Подозревая обман, Вы платите, чтобы эксперт проверил валирийскую сталь перед покупкой. Если она реальная, вы заплатите за это 750¤.;x
+EVTOPTB250281;Купить!;x
+TOOLTIP250281;Вы доверяете купцу и платите за валирийскую сталь, в надежде, что она реальна...;x
+EVTOPTC250281;Мы не можем себе этого позволить.;x
+EVTDESC250282;При более детальном рассмотрении клинка вы замечаете ряд недостатков и изъянов стали. Купец обманул вас!;x
+EVTOPTA250282;Стража, схватить его и бросить в темницу!;x
+EVTOPTB250282;Прогнать купца с моих земель.;x
+EVTDESC250283;Как ваши охранники не искали недобросовестного купца, нигде не смогли его найти.;x
+EVTOPT250283;Проклятье!;x
+EVTDESC250284;Купец передал валирийскую сталь в обмен на золото, и это, кажется, настоящая вещь!;x
+EVTOPT250284;Прекрасная реликвия для дома [Root.GetOnlyDynastyName]!;x
+TOOLTIPEVTOPTA250282;Купец заключён в тюрьму.;x
+TOOLTIPEVTOPTB250282;Купец выбросился с замка.;x
+TOOLTIP250282C;Купец убегает с золотом;x
+TOOLTIPANGERWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YГоре Матери§!\n;x
+TOOLTIPBLACK_DEATHWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YЧерная Смерть§!\n;x
+TOOLTIPCOMPASSIONWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YВеличие§!\n;x
+TOOLTIPCONCESSIONWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YКожесрезатель§!\n;x
+TOOLTIPDEL_PINOWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YСосновый Клинок§!\n;x
+TOOLTIPEL_SWORDOWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YБлаго§!\n;x
+TOOLTIPGOLD_SWORDWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YДорнийский Поцелуй§!\n;x
+TOOLTIPHAPPYNESSWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YЯрость Отца§!\n;x
+TOOLTIPHUBRISWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YКоготь§!\n;x
+TOOLTIPJUSTICEWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YСправедливость§!\n;x
+TOOLTIPKINGMAKERWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YТворец Королей§!\n;x
+TOOLTIPPASSIONWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YСтрасть§!\n;x
+TOOLTIPRAGEWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YКасание Неведомого§!\n;x
+TOOLTIPSIGHTBLINDERWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YБулава Скорби§!\n;x
+TOOLTIPTHE_MONARCHISTWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YУкус Титана§!\n;x
+TOOLTIPTHE_USURPERWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YДраконий Бич§!\n;x
+TOOLTIPWORLDEATERWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YПожиратель Пальцев§!\n;x
+TOOLTIPWORLDS_ENVYWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YРакх Аракх§!\n;x
+anger;Горе Матери;x
+anger_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Это прекрасный валирийский меч, благословленный самим Верховным Септоном.;x
+black_death;Чёрная Смерть;x
+black_death_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle];x
+compassion;Величие;x
+compassion_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Замечательно сбалансированный меч из валирийской стали, с рукоятью, украшенной золотом.;x
+concession;Кожесрезатель;x
+concession_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Изогнутый палаш, на удивление хорошо сбалансирован.;x
+del_pino;Сосновый клинок;x
+del_pino_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Гибрид булавы и копья с наконечником из валирийской стали;x
+el_swordo;Благо;x
+el_swordo_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle].;x
+gold_sword;Дорнийский Поцелуй;x
+gold_sword_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. ;x
+happyness;Ярость Отца;x
+happyness_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Гигантский двуручный меч из валирийской стали;x
+hubris;Коготь;x
+hubris_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Навершие этого прекрасного меча из валирийской стали изображено в виде хищной птицы;x
+justice;Справедливость;x
+justice_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Рукоять этого валирийского меча отделана нефритом;x
+kingmaker;Творец королей;x
+kingmaker_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. ;x
+passion;Страсть;x
+passion_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. ;x
+rage;Касание Неведомого;x
+rage_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Навершие этого прекрасного валирийского двуручного клинка имеет форму человеческого черепа с рубиновыми глазами.;x
+sightblinder;Булава Скорби;x
+sightblinder_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Булава из валирийской стали;x
+the_monarchist;Укус Титана;x
+the_monarchist_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Двуручный меч из валирийской стали с синими драгоценными камнями в рукояти и навершии, от которых веет холодом.;x
+the_usurper;Драконий Бич;x
+the_usurper_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Ножны этого прекрасного меча из валирийской стали имеют форму крыла.;x
+worldeater;Пожиратель Пальцев;x
+worldeater_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Топор из валирийской стали;x
+worlds_envy;Ракх Аракх;x
+worlds_envy_desc;Перекован из клинка [This.GetName], как приказазывает [This.Owner.GetTitledFirstNameWithDynastyAndTitle]. Этот аракх сделан из валирийской стали;x
+give_anger_to_son;Передать Горе Матери;x
+give_anger_to_son_desc;Я передаю Горе Матери персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;x
+give_black_death_to_son;Передать Черную смерть;x
+give_black_death_to_son_desc;Я передаю Черную Смерть персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;x
+give_compassion_to_son;Передать Величие;x
+give_compassion_to_son_desc;Я передаю Величие персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;x
+give_concession_to_son;Передать Кожесрезатель;x
+give_concession_to_son_desc;Я передаю Кожесрезатель персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;x
+give_del_pino_to_son;Передать Сосновый клинок;x
+give_del_pino_to_son_desc;Я передаю Сосновый клинок персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;x
+give_el_swordo_to_son;Передать Благо;x
+give_el_swordo_to_son_desc;Я передаю Благо персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;x
+give_gold_sword_to_son;Передать Дорнийский Поцелуй;x
+give_gold_sword_to_son_desc;Я передаю Дорнийский Поцелуй персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;x
+give_happyness_to_son;Передать Ярость Отца;x
+give_happyness_to_son_desc;Я передаю Ярость Отца персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;x
+give_hubris_to_son;Передать Коготь;x
+give_hubris_to_son_desc;Я передаю Коготь персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;x
+give_justice_to_son;передать Справедливость;x
+give_justice_to_son_desc;Я передаю Справедливость персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;x
+give_kingmaker_to_son;Передать Творца Королей;x
+give_kingmaker_to_son_desc;Я передаю Творей Королей персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;x
+give_passion_to_son;Передать Страсть;x
+give_passion_to_son_desc;Я передаю Страсть персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;x
+give_rage_to_son;Передать Касание Неведомого;x
+give_rage_to_son_desc;Я передаю Касание Неведомого персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;x
+give_sightblinder_to_son;передать Булаву Скорби;x
+give_sightblinder_to_son_desc;Я передаю Булаву Скорби персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;x
+give_the_monarchist_to_son;Передать Укус Титана;x
+give_the_monarchist_to_son_desc;Я передаю Укус Титана персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;x
+give_the_usurper_to_son;Передать Драконий бич;x
+give_the_usurper_to_son_desc;Я передаю Драконий бич персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;x
+give_worldeater_to_son;Передать Пожиратель Пальцев;x
+give_worldeater_to_son_desc;Я передаю Пожиратель Пальцев персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;x
+give_worlds_envy_to_son;Передать Ракх Аракх;x
+give_worlds_envy_to_son_desc;Я передаю Ракх Аракх персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нём больше меня.;x
+reforge_valyrian_steel;Перековать меч из Валирийской стали;x
+reforge_valyrian_steel_desc;Найти подходящего кузнеца, дабы он превратил ваш простой меч из валирийской стали в гордость вашей династии!;x
+CUSTOMTOOLTIPthissword;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] вернётся, когда меч будет завершён.;x
+EVTDESC250285;Два кузнеца предлагают вам свои услуги.;x
+EVTOPTA250285;Я выбираю тебя!;x
+EVTOPTB250285;Эти двое бесполезны, приведите мне других.;x
+EVTOPTC250285;Я никогда не буду перековывать этот меч.;x
+EVTDESC250286;Какой дизайн будет использоваться?;x
+EVTOPT250286;Я хочу этот!;x
+EVTOPT250286_1;Горе матери;x
+EVTOPT250286_2;Чёрная смерть;x
+EVTOPT250286_3;Величие;x
+EVTOPT250286_4;Кожесрезатель;x
+EVTOPT250286_5;Сосновый клинок;x
+EVTOPT250286_6;Благо;x
+EVTOPT250286_7;Дорнийский Поцелуй;x
+EVTOPT250286_8;Ярость Отца;x
+EVTOPT250286_9;Коготь;x
+EVTOPT250286_10;Справедливость;x
+EVTOPT250286_11;Творец Королей;x
+EVTOPT250286_12;Страсть;x
+EVTOPT250286_13;Касание Неведомого;x
+EVTOPT250286_14;Булава Скорби;x
+EVTOPT250286_15;Укус Титана;x
+EVTOPT250286_16;Драконий бич;x
+EVTOPT250286_17;Пожиратель Пальцев;x
+EVTOPT250286_18;Ракх Аракх;x
+EVTOPTB250286;Покажи мне другие!;x
+EVTDESC250292;Я ИИ кузнец по этому решению;x
+EVTOPTA250292;Я украду;x
+EVTOPTB250292;Я не буду воровать;x
+EVTOPTB250292;Я случайно растворил его до состояния пара.;x
+EVTDESC250293;Кузнец [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] обесчестил договор и украл клинок [From.GetValyrianSwordOwned]. Он взял его и бежал в город [Root.Capital.GetName]!\n\nУ вас есть три года, чтобы убить [From.GetHerHis], пока ваше право на меч не забыли.;x
+EVTOPTA250293;Я буду искать тебя, я найду тебя, и я убью тебя;x
+EVTDESC250294;Кузнец [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] завершил свою работу и представляет вам вновь перекованный меч из валирийской стали!;x
+EVTOPTA250294;Хорошо. Я назову его [From.GetValyrianSwordOwned];x
+EVTDESC250295;Кузнец [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], нанятый вами, оказался некомпетентен. Он приносит вам маленький шарик валирийской стали размером с монету и объясняет, что во время перековки большая часть стали испарилась.;x
+EVTOPTA250295;ВЫ НЕКОМПЕТЕНТНЫЙ НЕГОДЯЙ!;x
+opinion_stole_longclaw;Длинный Коготь украли;x
+opinion_stole_blackfyre;Черное Пламя украли;x
+opinion_stole_brightroar;Светлый Рев украли;x
+opinion_stole_heartsbane;Губитель Сердец украли;x
+opinion_stole_ice;Лёд украли;x
+opinion_stole_nightfall;Сумерки украли;x
+opinion_stole_darksister;Тёмную Сестру украли;x
+opinion_stole_ladyforlorn;Леди Отчаяние украли;x
+opinion_stole_redrain;Багряный Дождь украли;x
+opinion_stole_widowswail;Вдовий Плач украли;x
+opinion_stole_oathkeeper;Верного Клятве украли;x
+opinion_stole_crabspincer;Крабовую Клешню украли;x
+opinion_stole_strangers_mercy;Милосердие Неведомого украли;x
+opinion_stole_anger;Мой меч украли;x
+opinion_stole_black_death;Мой меч украли;x
+opinion_stole_compassion;Мой меч украли;x
+opinion_stole_concession;Мой меч украли;x
+opinion_stole_del_pino;Мой меч украли;x
+opinion_stole_el_swordo;Мой меч украли;x
+opinion_stole_gold_sword;Мой меч украли;x
+opinion_stole_happyness;Мой меч украли;x
+opinion_stole_hubris;Мой меч украли;x
+opinion_stole_justice;Мой меч украли;x
+opinion_stole_kingmaker;Мой меч украли;x
+opinion_stole_passion;Мой меч украли;x
+opinion_stole_rage;Мой меч украли;x
+opinion_stole_sightblinder;Мой меч украли;x
+opinion_stole_the_monarchist;Мой меч украли;x
+opinion_stole_the_usurper;Мой меч украли;x
+opinion_stole_worldeater;Мой меч украли;x
+opinion_stole_worlds_envy;Мой меч украли;x
+vigilance;Бдительность;x
+vigilance_desc;Бдительность - фамильный меч из валирийской стали Дома Хайтауэр.;x
+orphan_maker;Делатель Сирот;x
+orphan_maker_desc;Фамильный меч из валирийской стали Дома Рокстон.;x
+TOOLTIPRECLAIMVIGILANCEWAR;[This.GetFirstNameWithDynasty] откажется от клинка §YБдительность§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;x
+TOOLTIPRECLAIMORPHANMAKERWAR;[This.GetFirstNameWithDynasty] откажется от клинка §YДелател Сирот§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;x
+TOOLTIPVIGILANCEWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YБдительность§!\n;x
+TOOLTIPORPHANMAKERWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YДелатель Сирот§!\n;x
+give_vigilance_to_son;Передать Бдительность;x
+give_vigilance_to_son_desc;Я передам Бдительность персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;x
+give_orphan_maker_to_son;Передать Делатель Сирот;x
+give_orphan_maker_to_son_desc;Я передам Делатель Сирот персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;x
+opinion_stole_vigilance;Бдительность украли;x
+opinion_stole_orphan_maker;Делатель Сирот украли;x
+EVTOPTB251400;Каковы правила наследования валирийского меча?;x
+TOOLTIPVALYRIANSTEELINHERITANCE;После смерти владельца валирийского клинка, его наследование происходит по различным приоритетам:\n1- Непосредственный наследник владельца, если он той же династии\n2- Ребенок из той же династии\n3- Брат/сестра покойного владельца из той же династии\n4- Любой член династии\n5- Текущий наследник\n6- Любой ребенок\n7- Жена/муж\n8- Сюзерен\n9 -Любой вассал\n\nМеч Рассвет - является исключением, только великие представители дома Дейн могу претендовать на него.\n\nУ домов Таргариен и Корбрей такие клинки, соответственно, Тёмная Сестра и Леди Отчаяние. Эти клинки наследуют исключительно великие воины этих домов.;x
+EVTDESC250276;[Root.GetTitledFirstName], я хочу предложить вам и вашему дому великолепный дар. Настоящим, я дарую вам валирийский клинок, который будет передаваться вашим наследникам и наследникам их наследников в вечном пользовании. Используйте его с достоинством.\n\n Ваш[FromFrom.GetEndA],\n[FromFrom.GetTitledFirstNameWithDynastyAndTitleNoRegnal];x
+EVTOPTA250276;Спасибо!;x
+TOOLTIPRECLAIMTRUTHWAR;[This.GetFirstNameWithDynasty] откажется от клинка §YИстина§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;x
+TOOLTIPTRUTHWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YИстина§!\n;x
+give_truth_to_son;Передать Истину;x
+give_truth_to_son_desc;Я передам Истину персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;x
+opinion_stole_truth;Истину Украли;x
+TOOLTIP_claim_dawn_calc;Имеет две черты из: справедливый, добрый, храбрый, усердный, честный, терпеливый или ревностный\n;x
+TOOLTIPRECLAIMLAMENTATIONWAR;[This.GetFirstNameWithDynasty] откажется от клинка §YПлач§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;x
+TOOLTIPLAMENTATIONWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YПлач§!\n;x
+give_lamentation_to_son;Передать Плач;x
+give_lamentation_to_son_desc;Я передам Плач персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;x
+opinion_stole_lamentaion;Плач украли;x
+TOOLTIPRECLAIMPOISONWAR;[This.GetFirstNameWithDynasty] откажется от клинка §YЯд§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;x
+TOOLTIPPOISONWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YЯд§!\n;x
+give_poison_to_son;Передать Яд;x
+give_poison_to_son_desc;Я передам Яд персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;x
+opinion_stole_poison;Яд украли;x
+TOOLTIPSEAFOAMWIELDER;[This.GetFirstNameWithDynasty] владеет клинком §YМорская пена§!\n;x
+has_valyrian_steel_sword_trigger;[This.GetTitledFirstName] владеет клинком из валирийской стали\n;x
+owns_valyrian_steel_sword;Владеет оружием из валирийской стали;x
+EVTDESCvalyrian_steel.100;Этот проклятый кузнец все еще обладает моим валирийским мечом, что выше моего понимания. Мой [Root.GetMySpymasterName] [Root.job_spymaster.GetTitledFirstName] отследил [valyrian_steel_blacksmith.GetHerHis] где-то в земле [valyrian_steel_blacksmith.Location.GetName], и говорит, что если вы обеспечите его средствами, [Root.job_spymaster.GetSheHe] сможет вернуть клинок [valyrian_steel_blacksmith.GetValyrianSwordOwned].;x
+EVTOPTAvalyrian_steel.100;Сделаю все, что угодно!;x
+TOOLTIPvalyrian_steel.101;[valyrian_steel_blacksmith.GetValyrianSwordOwned] возвращается;x
+TOOLTIPvalyrian_steel.102;[valyrian_steel_blacksmith.GetValyrianSwordOwned] НЕ возвращается;x
+EVTOPTBvalyrian_steel.100;Это за пределами моего понимания;x
+EVTDESCvalyrian_steel.101A;Ваш [Root.GetMySpymasterName] [Root.job_spymaster.GetTitledFirstName] приносит хорошие новости о своей миссии в поиске клинка [valyrian_steel_blacksmith.GetValyrianSwordOwned]! [Root.job_spymaster.GetSheHeCap] говорит, что [Root.job_spymaster.GetHerHis] шпионы приметили кузнеца, который спьяну хвастался мечом в таверне в земле [valyrian_steel_blacksmith.Location.GetName], и поэтому он нанял несколько людей, чтобы отследить его и убить. Меч теперь снова в вашем распоряжении.;x
+EVTDESCvalyrian_steel.101B;[Root.job_spymaster.GetTitledFirstName] нашел кузнеца-мошенника! [Root.job_spymaster.GetSheHeCap] нанял множество шпионов, чтобы бродить по улицам города [valyrian_steel_blacksmith.Location.GetName], высматривая и слушая слухи о мече. Кузнец был похищен, его привезли вместе с клинком [valyrian_steel_blacksmith.GetValyrianSwordOwned] в столицу [Root.Capital.GetName].;x
+EVTDESCvalyrian_steel.101C;Меч, который был украден, найден! [Root.job_spymaster.GetTitledFirstName] пообещал награду за клинок [valyrian_steel_blacksmith.GetValyrianSwordOwned] и голову кузнеца, и, в конце концов, его принес наемник из земли [valyrian_steel_blacksmith.Location.GetName]. Он говорит, что получил меч от кузнеца, но вскоре узнал личность истинного владельца и пришел в город [Root.Capital.GetName] за наградой.;x
+EVTOPTAvalyrian_steel.101;Отлично, [Root.GetMySpymasterName] молодец!;x
+EVTDESCvalyrian_steel.102;Несмотря на то, что многих шпионов отправили в землю [valyrian_steel_blacksmith.Location.GetName] на поиски кузнеца, а также объявили большую награду, [Root.GetMySpymasterName] [Root.job_spymaster.GetTitledFirstName] не смог отыскать клинок [valyrian_steel_blacksmith.GetValyrianSwordOwned]. [Root.job_spymaster.GetSheHeCap] говорит, что нужно больше времени и золота, чтобы меч вернулся в ваше владение.;x
+EVTOPTAvalyrian_steel.102;Да, продолжайте поиски!;x
+EVTOPTBvalyrian_steel.102;Я больше не стану тратить золото на ваши неумелые интриги;x
+valyrian_armour;Доспех из валирийской стали;x
+valyrian_armour_desc;Валирийская сталь — сплав особого рода, отличающийся прочностью, создавать который умели только мастера древней Валирии. Доспех из такого материала стоит целое королевство;x
+opinion_stole_valyrian_armour;Валирийский доспех украден;x
+TOOLTIPRECLAIMvalyrian_armourWAR;[This.GetFirstNameWithDynasty] откажется от своего §YВалирийского доспеха§! в пользу персонажа §Y[Root.GetFirstNameWithDynasty]§!\n;x
+give_valyrian_armour_to_son;Передать валирийский доспех;x
+give_valyrian_armour_to_son_desc;Я передам мой валирийский доспех персонажу [Root.GetFirstName], [Root.GetSheHe] нуждается в нем больше, чем я.;x
+TOOLTIPVALYRIANARMOURWIELDER;[This.GetFirstNameWithDynasty] владеет §YДоспехом из валирийской стали§!\n;x
+ValyrianSword;меч из Валирийской стали;x
+ValyrianSwordYours;ваш валирийский меч;x
+ValyrianSwordHis;его валирийский меч;x
+ValyrianSwordHer;её валирийский меч;x
+ValyrianSworddawn;Рассвет;x
+ValyrianSwordblackfyre;Чёрное Пламя;x
+ValyrianSworddarksister;Тёмная Сестра;x
+ValyrianSwordice;Лед;x
+ValyrianSwordlongclaw;Длинный Коготь;x
+ValyrianSwordbrightroar;Светлый рев;x
+ValyrianSwordlightbringer;Светозарный;x
+ValyrianSwordheartsbane;Губитель Сердец;x
+ValyrianSwordcrabspincer;Крабовая Клешня;x
+ValyrianSwordladyforlorn;Леди Отчаяние ;x
+ValyrianSwordredrain;Багряный Дождь;x
+ValyrianSwordwidowswail;Вдовий Плач;x
+ValyrianSwordoathkeeper;Верный Клятве;x
+ValyrianSwordstrangers_mercy;Милость Неведомого;x
+ValyrianSwordtruth;Истина;x
+ValyrianSwordlamentation;Плач;x
+ValyrianSwordpoison;Яд;x
+ValyrianSwordseafoam;Морская пена;x
+ValyrianSwordnightfall;Сумерки;x
+ValyrianSwordanger;Горе Матери;x
+ValyrianSwordblack_death;Чёрная Смерть;x
+ValyrianSwordcompassion;Величие;x
+ValyrianSwordconcession;Кожесрезатель;x
+ValyrianSworddel_pino;Сосновый клинок;x
+ValyrianSwordel_swordo;Благо;x
+ValyrianSwordgold_sword;Дорнийский Поцелуй;x
+ValyrianSwordhappyness;Ярость Отца;x
+ValyrianSwordhubris;Коготь;x
+ValyrianSwordjustice;Справедливость;x
+ValyrianSwordkingmaker;Делатель Королей;x
+ValyrianSwordpassion;Страсть;x
+ValyrianSwordrage;Касание Неведомого;x
+ValyrianSwordsightblinder;Булава Скорби;x
+ValyrianSwordthe_monarchist;Укус Титана;x
+ValyrianSwordthe_usurper;Драконий Бич;x
+ValyrianSwordworldeater;Пожиратель Пальцев;x
+ValyrianSwordworlds_envy;Ракх Аракх;x
+ValyrianSwordvigilance;Бдительность;x
+ValyrianSwordorphan_maker;Делатель Сирот;x
+EVTDESCvalyrian_steel.150;Только истинные рыцари Дома Дейнов могут владеть фамильным двуручным мечом Рассвет, выкованным из сердца упавшей звезды. Из всех членов Дома Дейнов, только вы показали себя достойным этой чести.;x
+EVTOPTAvalyrian_steel.150;Вставать вместе с солнцем, ибо твой меч - Рассвет;x
+EVTDESCvalyrian_steel.151;Только истинные рыцари Дома Дейнов могут владеть фамильным двуручным мечом Рассвет, выкованным из сердца упавшей звезды. Из всех членов Дома Дейнов, только [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] показал, что достоин этой чести.;x
+EVTOPTAvalyrian_steel.151;Хорошо [From.GetHerHim];x
+claim_dawn;Претендует на Рассвет;x
+claim_dawn_desc;Этот человек будет претендовать на Рассвет и титул Меч Зари;x
+seize_sword;Отобрать валирийский клинок;x
+seize_sword_desc;Отобрать валирийский клинок у вашего заключенного;x
+TOOLTIPseize_swordCLAIM;[This.GetTitledFirstNameWithDynasty] имеет родовые претензии на [FromFrom.GetName];x
+TOOLTIPseize_swordSTOLEN;[FromFrom.GetName] был украден у персонажа [This.GetTitledFirstNameWithDynasty];x
+TOOLTIPseize_swordCLAIMTITLE;[FromFrom.GetName] является наследием земли [This.GetTitledFirstNameWithDynasty];x
+EVTDESCvalyrian_steel.160;Ваш тюремщик, [FromFrom.GetTitledFirstNameWithDynasty], отобрал [FromFromFrom.GetName] у вас!;x
+EVTOPTAvalyrian_steel.160;Это произвол!;x
+ValyrianSwordartifact;[valyrian_steel_sword.GetName];x
+demand_return_of_valyrian_steel;Требовать возврата валирийского клинка;x
+demand_return_of_valyrian_steel_desc;Валирийский клинок который по праву является собственностью Дома [From.GetOnlyDynastyName] в настоящее время находится в земле [Root.PrimaryTitle.GetName]. Требовать возврата под угрозой войны.;x
+opinion_demanded_valyrian_steel;Требует вернуть валирийский клинок;x
+TOOLTIPvalyrian_steel.170;Сообщение отправлено персонажу [Root.GetTitledFirstNameWithDynasty], требуя возврата валирийского клинка под угрозой войны.;x
+TOOLTIPdemand_return_of_valyrian_steel;[This.GetName] удерживает [This.Owner.GetTitledFirstNameWithDynasty] и получает требование;x
+EVTDESCvalyrian_steel.170;[Root.GetTitledFirstName], валирийский клинок, который по праву является собственностью Дома [FromFrom.GetOnlyDynastyName], в настоящее время несправедливо хранится в земле [Root.PrimaryTitle.GetName]. Я требую, чтобы он был возвращен нетронутым в город [FromFrom.Capital.GetName], иначе мы можем прибегнуть к другим средствам для его получения.\n\n Подпись,\n[FromFrom.GetTitledFirstNameWithDynastyAndTitle];x
+EVTOPTAvalyrian_steel.170;Да, это было бы мудро;x
+opinion_returned_valyrian_steel;Возвращение валирийского клинка;x
+TOOLTIPvalyrian_steel.173;Вы приказываете персонажу [This.GetTitledFirstNameWithDynastyAndTitle] вернуть [Prev.GetName] настоящему хозяину, известному как [FromFrom.GetTitledFirstName];x
+EVTOPTBraid_events.151;[GetRootFromInsult], я не уструплю угрозам!;x
+opinion_refused_valyrian_steel_demand;Отказывается вернуть валирийскую сталь;x
+TOOLTIPvalyrian_steel.171;[This.GetTitledFirstNameWithDynastyAndTitle] будет иметь повод объявить войну;x
+EVTDESCvalyrian_steel.171;[GetFromRootInsult] [Root.GetTitledFirstName], нам не страшны угрозы. Валирийский клинок, который вы хотите, останется в земле [From.PrimaryTitle.GetName].\n\n Подпись,\n[From.GetTitledFirstNameWithDynastyAndTitle];x
+EVTOPTAvalyrian_steel.171;Хорошо, созвать знамена!;x
+EVTOPTBvalyrian_steel.171;Это не стоит войны;x
+EVTDESCvalyrian_steel.1711;Угрозы персонажа [From.GetTitledFirstNameNoRegnal] были пусты, кажется, что [From.GetSheHe] отступает и не решается на войну после получения нашего ответа на [From.GetHerHis] требование.;x
+EVTOPTAvalyrian_steel.1711;Трус;x
+EVTDESCvalyrian_steel.172;[GetFromRootCompliment] [Root.GetTitledFirstName], я нахожу ваше требование справедливым, валирийский клинок, который вы требуете, должен быть немедленно отправлен в город [Root.Capital.GetName]. Я надеюсь, что это удовлетворит вас, и мир будет сохранен.\n\n Подпись,\n[From.GetTitledFirstNameWithDynastyAndTitle];x
+EVTOPTAvalyrian_steel.172;Мудрый выбор, [From.PrimaryTitle.GetFOA];x
+EVTDESCvalyrian_steel.173;[Root.GetTitledFirstName], валирийский клинок, который по праву является собственностью человека, известного как [FromFromFrom.GetTitledFirstNameWithDynastyAndTitle], в настоящее время находится в вашем распоряжении. Я приказываю, чтобы он был возвращен в город [FromFromFrom.Capital.GetName], или же будете заклеймены предателем.\n\n Подпись,\n[From.GetTitledFirstNameWithDynastyAndTitle];x
+EVTOPTAvalyrian_steel.173;Как прикажет [From.PrimaryTitle.GetFOA];x
+EVTOPTBvalyrian_steel.173;[From.GetSheHeCap] может угрожать, но я не подчинюсь!;x
+EVTOPTCvalyrian_steel.173;Бегство в изгнание;x
+EVTDESCvalyrian_steel.174;[GetFromRootCompliment] [Root.GetTitledFirstName] я нахожу ваше требование справедливым, валирийский клинок, находящийся во владении [From.GetTitledFirstNameWithDynastyAndTitle], должен быть отправлен из [Root.Capital.GetName] немедленно. Я надеюсь, что это удовлетворит вас, и мир будет сохранен.\n\n Подпись,\n[FromFrom.GetTitledFirstNameWithDynastyAndTitle];x
+EVTOPTAvalyrian_steel.174;Хорошо;x
+EVTDESCvalyrian_steel.175;[Root.PrimaryTitle.GetFOA], я, конечно, повинуюсь вашему приказу, валирийская сталь должна быть немедленно отправлена в город [FromFromFrom.Capital.GetName].\n\n Подпись,\n[From.GetTitledFirstNameWithDynastyAndTitle];x
+EVTDESCvalyrian_steel.176;[GetFromRootCompliment] [Root.GetTitledFirstName], я соглашусь, что валирийский клинок, находящийся во владении персонажа [From.GetTitledFirstNameWithDynastyAndTitle], должен быть возвращен вам, но [From.GetSheHe] отклоняет мой приказ об этом, и созывает свои знамена. Будьте уверены, что этот предатель понесет наказание.\n\n Подпись,\n[FromFrom.GetTitledFirstNameWithDynastyAndTitle];x
+EVTDESCvalyrian_steel.176B;[GetFromRootCompliment] [Root.GetTitledFirstName], я соглашусь с тем, что валирийский клинок, находящийся во владении персонажа [From.GetTitledFirstNameWithDynastyAndTitle], должен быть возвращен вам, но [From.GetSheHe] отклоняет мой приказ об этом и бежит в изгнание. Будьте уверены, что этот предатель будет наказан.\n\n Подпись,\n[FromFrom.GetTitledFirstNameWithDynastyAndTitle];x
+EVTOPTAvalyrian_steel.176;Я надеюсь на это!;x
+EVTDESCvalyrian_steel.177;[Root.PrimaryTitle.GetFOA], я не откажусь от того, что по праву принадлежит мне, и пока вы будете слать угрозы, ничего не изменится. Вам придется самому прибыть в город [From.Capital.GetName] и вырвать клинок из моих рук.\n\n Подпись,\n[From.GetTitledFirstNameWithDynastyAndTitle];x
+EVTOPTAvalyrian_steel.177;Это измена!;x
+opinion_failed_return_valyrian_steel;Не удалось вернуть валирийский клинок;x
+opinion_returned_vassal_valyrian_steel;Вассал вернул валирийский клинок;x
+GetSwordName_A;[This.GetSwordName_OneWord_Prefix][This.GetSwordName_OneWord_Suffix];x
+GetSwordName_B;[This.GetSwordName_TwoWord_Prefix] [This.GetSwordName_TwoWord_Suffix];x
+GetSwordName_C;[This.GetSwordName_OneWord];x
+GetSwordName_OneWord_A;[This.GetSwordName_TwoWord_Suffix];x
+GetSwordName_OneWord_B;[This.GetSwordName_OneWord_Special];x
+GetSwordName_Black;Чёрный;x
+GetSwordName_White;Белый;x
+GetSwordName_Red;Красный;x
+GetSwordName_Blue;Синий;x
+GetSwordName_Gold;Золото;x
+GetSwordName_Golden;Золотой;x
+GetSwordName_Silver;Серебряный;x
+GetSwordName_Bright;Сияющий;x
+GetSwordName_Dark;Тёмный;x
+GetSwordName_Heart;Сердце;x
+GetSwordName_Hearts;Сердца;x
+GetSwordName_Light;Свет;x
+GetSwordName_Long;Длинный;x
+GetSwordName_Night;Ночь;x
+GetSwordName_Short;Короткий;x
+GetSwordName_Good;Добрый;x
+GetSwordName_This.GetTitles;[This.Owner.GetTitle];x
+GetSwordName_This.Spouse.GetTitles;[This.Owner.Spouse.GetTitle];x
+GetSwordName_This.TopLiege.GetTitles;[This.Owner.TopLiege.GetTitle];x
+GetSwordName_This.TopLiege.Spouse.GetTitles;[This.Owner.TopLiege.Spouse.GetTitle];x
+GetSwordName_Mourn;Траур;x
+GetSwordName_Death;Смерть;x
+GetSwordName_Shadow;Тень;x
+GetSwordName_Storm;Шторм;x
+GetSwordName_Bronze;Бронзовый;x
+GetSwordName_Fire;Пламя;x
+GetSwordName_Iron;Железный;x
+GetSwordName_Great;Великий;x
+GetSwordName_Blood;Кровавый;x
+GetSwordName_Frozen;Ледяной;x
+GetSwordName_Ice;Лед;x
+GetSwordName_Hells;Пекло;x
+GetSwordName_Will;Воля;x
+GetSwordName_Blaze;Зарево;x
+GetSwordName_Sun;Солнце;x
+GetSwordName_Cruel;Жестокий;x
+GetSwordName_Oath;Клятва;x
+GetSwordName_Wither;Увядание;x
+GetSwordName_Draught;Засуха;x
+GetSwordName_Wind;Ветер;x
+GetSwordName_Swift;Быстрый;x
+GetSwordName_Snow;Снег;x
+GetSwordName_Blight;Погибель;x
+GetSwordName_Solar;Солнечный;x
+GetSwordName_Earth;Земной;x
+GetSwordName_Life;Жизнь;x
+GetSwordName_Herons;Цапля;x
+GetSwordName_Way;Способ;x
+GetSwordName_Wound;Рана;x
+GetSwordName_Town;Городской;x
+GetSwordName_Ring;Звонкий;x
+GetSwordName_Green;Зеленый;x
+GetSwordName_Grey;Серый;x
+GetSwordName_Pink;Румяный;x
+GetSwordName_Crow;Вороний;x
+GetSwordName_Spring;Весна;x
+GetSwordName_Winter;Зима;x
+GetSwordName_Summer;Лето;x
+GetSwordName_Old;Старый;x
+GetSwordName_Pure;Непорочный;x
+GetSwordName_Gods;Божественный;x
+GetSwordName_Lion;Львиный;x
+GetSwordName_Dragon;Драконий;x
+GetSwordName_Wolf;Волчий;x
+GetSwordName_Stag;Олений;x
+GetSwordName_Rose;Роза;x
+GetSwordName_Falcon;Соколиный;x
+GetSwordName_Kraken;Кракен;x
+GetSwordName_Rebel;Мятежник;x
+GetSwordName_Foes;Недруг;x
+GetSwordName_Glow;Блеск;x
+GetSwordName_Torments;Мучение;x
+GetSwordName_Raven;Ворон;x
+GetSwordName_Coin;Монета;x
+GetSwordName_Doom;Судьба;x
+GetSwordName_Far;Дальний;x
+GetSwordName_Mind;Разум;x
+GetSwordName_Shield;Щит;x
+GetSwordName_Sight;Видение;x
+GetSwordName_Rain;Дождь;x
+GetSwordName_Sage;Мудрец;x
+GetSwordName_Brave;Отважный;x
+GetSwordName_Chaos;Хаос;x
+GetSwordName_Key;Ключ;x
+GetSwordName_Tall;Длинный;x
+GetSwordName_Just;Справедливый;x
+GetSwordName_Pan;Чаша;x
+GetSwordName_Bastard;Бастард;x
+GetSwordName_Twin;Близнец;x
+GetSwordName_Fair;Честный;x
+GetSwordName_Quick;Скорый;x
+GetSwordName_Slow;Медленный;x
+GetSwordName_Strong;Сильный;x
+GetSwordName_Duel;Дуэль;x
+GetSwordName_Sloth;Лень;x
+GetSwordName_Zeal;Рвение;x
+GetSwordName_Trust;Вера;x
+GetSwordName_Brood;Порождение;x
+GetSwordName_Dull;Тупой;x
+GetSwordName_Giant;Гигантский;x
+GetSwordName_Salt;Солёный;x
+GetSwordName_Rude;Грубый;x
+GetSwordName_Drown;Утонувший;x
+GetSwordName_Grace;Изящный;x
+GetSwordName_Love;Влюблённый;x
+GetSwordName_Eagle;Орёл;x
+GetSwordName_Dire;Ужасный;x
+GetSwordName_Wake;Очнувшийся;x
+GetSwordName_Silent;Тихий;x
+GetSwordName_Half;Половина;x
+GetSwordName_Mad;Безумный;x
+GetSwordName_Bold;Смелый;x
+GetSwordName_Truth;Правда;x
+GetSwordName_Jade;Нефритовый;x
+GetSwordName_Open;Открытый;x
+GetSwordName_World;Мир;x
+GetSwordName_Sand;Песчаный;x
+GetSwordName_Dusk;Сумеречный;x
+GetSwordName_Bitter;Яростный;x
+GetSwordName_Break;Разлом;x
+GetSwordName_Oaken;Дубовый;x
+GetSwordName_Sharp;Острый;x
+GetSwordName_Pale;Бледный;x
+GetSwordName_Even;Ровный;x
+GetSwordName_Hard;Крепкий;x
+GetSwordName_Sweet;Сладкий;x
+GetSwordName_Ebon;Чёрный;x
+GetSwordName_Sea;Море;x
+GetSwordName_Wild;Дикий;x
+GetSwordName_Grim;Мрачный;x
+GetSwordName_Woe;Горе;x
+GetSwordName_Ever;Вечный;x
+GetSwordName_Battle;Бой;x
+GetSwordName_Widow;Вдова;x
+GetSwordName_Frost;Мороз;x
+GetSwordName_fyre;пламя;x
+GetSwordName_roar;рев;x
+GetSwordName_bane;бич;x
+GetSwordName_claw;коготь;x
+GetSwordName_GetWeaponType;[This.GetWeaponType];x
+GetSwordName_fall;падение;x
+GetSwordName_death;смерть;x
+GetSwordName_rage;злоба;x
+GetSwordName_raze;разрушение;x
+GetSwordName_fury;ярость;x
+GetSwordName_soul;дух;x
+GetSwordName_reaver;грабитель;x
+GetSwordName_ghost;призрак;x
+GetSwordName_whisper;шепот;x
+GetSwordName_breaker;разрушитель;x
+GetSwordName_slaughter;убой;x
+GetSwordName_weep;рыдание;x
+GetSwordName_slayer;убийца;x
+GetSwordName_moon;луна;x
+GetSwordName_breath;вздох;x
+GetSwordName_blade;лезвие;x
+GetSwordName_steel;сталь;x
+GetSwordName_stalker;охотник;x
+GetSwordName_brand;клеймо;x
+GetSwordName_lust;страсть;x
+GetSwordName_thunder;гром;x
+GetSwordName_scar;рубец;x
+GetSwordName_song;песнь;x
+GetSwordName_guard;страж;x
+GetSwordName_fear;ужас;x
+GetSwordName_peril;угроза;x
+GetSwordName_crusher;дробитель;x
+GetSwordName_spore;спор;x
+GetSwordName_shadow;тень;x
+GetSwordName_heart;сердце;x
+GetSwordName_wand;жезл;x
+GetSwordName_spinner;паук;x
+GetSwordName_finder;искатель;x
+GetSwordName_wine;вино;x
+GetSwordName_burn;ожог;x
+GetSwordName_lord;лорд;x
+GetSwordName_flower;цветок;x
+GetSwordName_flayer;живодер;x
+GetSwordName_dream;мечта;x
+GetSwordName_knight;рыцарь;x
+GetSwordName_skin;шкура;x
+GetSwordName_river;река;x
+GetSwordName_caller;гость;x
+GetSwordName_shaper;создатель;x
+GetSwordName_bearer;податель;x
+GetSwordName_pact;договор;x
+GetSwordName_wand;скипетр;x
+GetSwordName_bringer;вестник;x
+GetSwordName_power;сила;x
+GetSwordName_giver;даритель;x
+GetSwordName_slicer;нож;x
+GetSwordName_blinder;слепой;x
+GetSwordName_stone;камень;x
+GetSwordName_saver;хранитель;x
+GetSwordName_kind;род;x
+GetSwordName_guilt;вина;x
+GetSwordName_maim;изувер;x
+GetSwordName_hunt;охота;x
+GetSwordName_scheme;замысел;x
+GetSwordName_watch;дозор;x
+GetSwordName_cloak;покров;x
+GetSwordName_ruin;губление;x
+GetSwordName_walker;ходок;x
+GetSwordName_warrior;воин;x
+GetSwordName_master;мастер;x
+GetSwordName_hand;рука;x
+GetSwordName_mark;метка;x
+GetSwordName_binder;связь;x
+GetSwordName_slave;раб;x
+GetSwordName_flame;пламя;x
+GetSwordName_tooth;зуб;x
+GetSwordName_legend;легенда;x
+GetSwordName_wind;ветер;x
+GetSwordName_whirl;вихрь;x
+GetSwordName_side;грань;x
+GetSwordName_cast;бросок;x
+GetSwordName_gazer;созерцатель;x
+GetSwordName_viper;змея;x
+GetSwordName_hawk;ястреб;x
+GetSwordName_born;порождение;x
+GetSwordName_eye;око;x
+GetSwordName_maker;творец;x
+GetSwordName_raider;налётчик;x
+GetSwordName_mask;личина;x
+GetSwordName_killer;убийца;x
+GetSwordName_grief;печаль;x
+GetSwordName_son;сын;x
+GetSwordName_Black;Черный;x
+GetSwordName_White;Белый;x
+GetSwordName_Red;Красный;x
+GetSwordName_Blue;Синий;x
+GetSwordName_Purple;Пурпурный;x
+GetSwordName_Silver;Серебряный;x
+GetSwordName_Gold;Золото;x
+GetSwordName_Golden;Золотой;x
+GetSwordName_Dark;Темный;x
+GetSwordName_Lady's;Леди;x
+GetSwordName_Long;Длинный;x
+GetSwordName_Night;Ночь;x
+GetSwordName_Titan's;Титанов;x
+GetSwordName_Hatred's;Ненавистный;x
+GetSwordName_Fortune's;Удачливый;x
+GetSwordName_Shadow's;Теневой;x
+GetSwordName_Storm's;Штормовой;x
+GetSwordName_Bronze;Бронзовый;x
+GetSwordName_Iron;Железный;x
+GetSwordName_Faith's;Вера;x
+GetSwordName_Whisper's;Шепот;x
+GetSwordName_Frozen;Ледяной;x
+GetSwordName_Moon;Лунный;x
+GetSwordName_Sun's;Солнечный;x
+GetSwordName_Son's;Сыновий;x
+GetSwordName_Eternal;Извечный;x
+GetSwordName_Doom's;Роковой;x
+GetSwordName_Hope's;Надежда;x
+GetSwordName_Butcher's;Палач;x
+GetSwordName_Destiny's;Судьба;x
+GetSwordName_Frail;Немощный;x
+GetSwordName_Misty;Смутный;x
+GetSwordName_Unending;Бесконечный;x
+GetSwordName_Life's;Жизнь;x
+GetSwordName_Sailor's;Моряк;x
+GetSwordName_Blessed;Благословенный;x
+GetSwordName_Misfortune's;Бедствие;x
+GetSwordName_Dire;Страх;x
+GetSwordName_Pain's;Страдание;x
+GetSwordName_Truth's;Правдивый;x
+GetSwordName_Snow's;Снежный;x
+GetSwordName_Hero's;Геройский;x
+GetSwordName_Crystal;Кристалл;x
+GetSwordName_Grey;Серый;x
+GetSwordName_GetNobleName's;[This.Owner.GetNobleName];x
+GetSwordName_This.GetTitle's;[This.Owner.GetTitle];x
+GetSwordName_This.Spouse.GetTitle's;[This.Owner.Spouse.GetTitle];x
+GetSwordName_This.TopLiege.GetTitle's;[This.Owner.TopLiege.GetTitle];x
+GetSwordName_This.TopLiege.Spouse.GetTitle's;[This.Owner.TopLiege.Spouse.GetTitle];x
+GetSwordName_Crow's;Вороний;x
+GetSwordName_Winter's;Зимний;x
+GetSwordName_Summer's;Летний;x
+GetSwordName_Spring's;Весенний;x
+GetSwordName_River's;Речной;x
+GetSwordName_Gods;Божий;x
+GetSwordName_Seven's;Семерых;x
+GetSwordName_RandomGodName;[This.Religion.GetRandomGodName];x
+GetSwordName_FirstName;[This.GetFirstName];x
+GetSwordName_CultureGroup;[This.Culture.GetGroupName];x
+GetSwordName_Cultures;[This.Culture.GetName];x
+GetSwordName_Culture;[This.Culture.GetName];x
+GetSwordName_Lion's;Львиный;x
+GetSwordName_Dragon's;Драконий;x
+GetSwordName_Wolf's;Волчий;x
+GetSwordName_Stag's;Олений;x
+GetSwordName_Rose's;Розы;x
+GetSwordName_Falcon's;Соколиеый;x
+GetSwordName_Kraken's;Кракена;x
+GetSwordName_Dawn's;Рассветный;x
+GetSwordName_Stone;Камень;x
+GetSwordName_Singing;Пение;x
+GetSwordName_Fierce;Свирепый;x
+GetSwordName_Brave;Храбрый;x
+GetSwordName_Humble;Скромный;x
+GetSwordName_Kind;Добрый;x
+GetSwordName_Brutal;Животный;x
+GetSwordName_Elusive;Неуловимый;x
+GetSwordName_Brilliant;Блестящий;x
+GetSwordName_Quick;Быстрый;x
+GetSwordName_Duelist's;Дуэльный;x
+GetSwordName_Hunter's;Охотничий;x
+GetSwordName_Falconer's;Сокольничий;x
+GetSwordName_Pride's;Гордый;x
+GetSwordName_Honest;Честный;x
+GetSwordName_Shy;Робкий;x
+GetSwordName_Zealot's;Ревнивый;x
+GetSwordName_Seducer's;Соблазнитель;x
+GetSwordName_Schemer's;Интриганский;x
+GetSwordName_Willful;Своенравный;x
+GetSwordName_Ruin's;Разорённый;x
+GetSwordName_Walker's;Ходячий;x
+GetSwordName_Widow's;Вдовий;x
+GetSwordName_Warrior's;Воинский;x
+GetSwordName_Tiger's;Тигровый;x
+GetSwordName_Elephant's;Слоновий;x
+GetSwordName_Pirate's;Пиратский;x
+GetSwordName_Holy;Святой;x
+GetSwordName_Unyielding;Упорный;x
+GetSwordName_Stubborn;Упрямый;x
+GetSwordName_Ruthless;Безжалостный;x
+GetSwordName_Silent;Бесшумный;x
+GetSwordName_Drowned;Утонувший;x
+GetSwordName_Eagle's;Орлиный;x
+GetSwordName_Slave's;Рабский;x
+GetSwordName_Strange;Странный;x
+GetSwordName_Cleansing;Очищающий;x
+GetSwordName_Exalted;Достойный;x
+GetSwordName_Whirling;Вихревой;x
+GetSwordName_Hollow;Полый;x
+GetSwordName_Accursed;Проклятый;x
+GetSwordName_Undying;Вечный;x
+GetSwordName_Benign;Безобидный;x
+GetSwordName_Righteous;Праведный;x
+GetSwordName_Jade;Нефритовый;x
+GetSwordName_Winged;Крылатый;x
+GetSwordName_Viper's;Змеиный;x
+GetSwordName_Gallant;Галантный;x
+GetSwordName_World's;Мировой;x
+GetSwordName_GetEarthName's;[This.Owner.GetEarthName];x
+GetSwordName_GetMoonName's;[This.Owner.GetMoonName];x
+GetSwordName_GetRegionalBigAnimalCap's;[This.Owner.GetRegionalBigAnimalCap];x
+GetSwordName_Unlikely;Невероятный;x
+GetSwordName_Bright;Яркий;x
+GetSwordName_Morning's;Утренний;x
+GetSwordName_Dusk's;Сумрачный;x
+GetSwordName_Pale;Блеклый;x
+GetSwordName_Raider's;Пиратский;x
+GetSwordName_Faithful;Верный;x
+GetSwordName_Mighty;Могучий;x
+GetSwordName_Daring;Отважный;x
+GetSwordName_Vieled;Скрытый;x
+GetSwordName_Last;Последний;x
+GetSwordName_Mummer's;Ряженый;x
+GetSwordName_Grim;Мрачный;x
+GetSwordName_Savage;Варварский;x
+GetSwordName_Devout;Истовый;x
+GetSwordName_Evening's;Вечерний;x
+GetSwordName_Nimble;Шустрый;x
+GetSwordName_Bard's;Певчий;x
+GetSwordName_Sister;Сестры;x
+GetSwordName_Bane;Отрава;x
+GetSwordName_Maid;Дева;x
+GetSwordName_Tooth;Клык;x
+GetSwordName_Rain;Дождь;x
+GetSwordName_Grief;Горе;x
+GetSwordName_Anger;Гнев;x
+GetSwordName_Death;Смерть;x
+GetSwordName_Glory;Слава;x
+GetSwordName_Kiss;Поцелуй;x
+GetSwordName_Fury;Ярость;x
+GetSwordName_Talon;Коготь;x
+GetSwordName_Justice;Правосудие;x
+GetSwordName_Passion;Страсть;x
+GetSwordName_Rage;Бешенство;x
+GetSwordName_Touch;Касание;x
+GetSwordName_Mourning;Плач;x
+GetSwordName_Bite;Укус;x
+GetSwordName_Guardian;Гвардеец;x
+GetSwordName_Might;Мощь;x
+GetSwordName_Fury;Ярость;x
+GetSwordName_Reaver;Грабитель;x
+GetSwordName_Hubris;Гордыня;x
+GetSwordName_Maid;Дева;x
+GetSwordName_Weaver;Ткач;x
+GetSwordName_Blood;Кровавый;x
+GetSwordName_Chaos;Хаос;x
+GetSwordName_Tyranny;Тирания;x
+GetSwordName_Defender;Защитник;x
+GetSwordName_Slaughter;Убой;x
+GetSwordName_Daughter;Дочь;x
+GetSwordName_Brother;Брат;x
+GetSwordName_Father;Отец;x
+GetSwordName_Sapphire;Сапфировый;x
+GetSwordName_Sorrow;Скорбь;x
+GetSwordName_Cruelty;Зверство;x
+GetSwordName_Oath;Клятва;x
+GetSwordName_Promise;Обещание;x
+GetSwordName_Venom;Яд;x
+GetSwordName_Vengeance;Отмщение;x
+GetSwordName_Honour;Честь;x
+GetSwordName_Pledge;Обет;x
+GetSwordName_End;Конец;x
+GetSwordName_Thunder;Гром;x
+GetSwordName_Scar;Рубец;x
+GetSwordName_Song;Песнь;x
+GetSwordName_Denial;Отречение;x
+GetSwordName_Legacy;Наследие;x
+GetSwordName_Bitch;Стерва;x
+GetSwordName_Fear;Трепет;x
+GetSwordName_Bond;Залог;x
+GetSwordName_Silence;Безмолвие;x
+GetSwordName_Vow;Обет;x
+GetSwordName_Chance;Случай;x
+GetSwordName_Scourge;Плеть;x
+GetSwordName_Eye;Взор;x
+GetSwordName_Might;Могущество;x
+GetSwordName_Mercy;Милость;x
+GetSwordName_Traitor;Изменник;x
+GetSwordName_Sting;Жало;x
+GetSwordName_Forest;Лесной;x
+GetSwordName_Omen;Зманение;x
+GetSwordName_Throne;Трон;x
+GetSwordName_Knight;Рыцарь;x
+GetSwordName_Rogue;Негодяй;x
+GetSwordName_Prince;Принц;x
+GetSwordName_Law;Закон;x
+GetSwordName_Rainbow;Радужный;x
+GetSwordName_Warden;Страж;x
+GetSwordName_Luck;Удача;x
+GetSwordName_Fall;Падение;x
+GetSwordName_Rebel;Бунтарь;x
+GetSwordName_Foe;Враг;x
+GetSwordName_Glow;Сияние;x
+GetSwordName_Air;Воздушный;x
+GetSwordName_Torment;Пытка;x
+GetSwordName_Day;День;x
+GetSwordName_Scalpel;Скальпель;x
+GetSwordName_Blade;Лезвие;x
+GetSwordName_Power;Мощь;x
+GetSwordName_Shield;Щит;x
+GetSwordName_Soul;Душа;x
+GetSwordName_Wound;Рана;x
+GetSwordName_Memory;Память;x
+GetSwordName_Claw;Клешня;x
+GetSwordName_Child;Дитя;x
+GetSwordName_Master;Мастер;x
+GetSwordName_Key;Ключ;x
+GetSwordName_Wroth;Разгневанный;x
+GetSwordName_Protector;Защитник;x
+GetSwordName_Sentinel;Часовой;x
+GetSwordName_Poem;Поэма;x
+GetSwordName_Eminence;Возвышение;x
+GetSwordName_Lunacy;Безумие;x
+GetSwordName_Bastard;Бастард;x
+GetSwordName_Scholar;Ученый;x
+GetSwordName_Impaler;Пронзатель;x
+GetSwordName_Chastity;Чистый;x
+GetSwordName_Greed;Жадность;x
+GetSwordName_Charity;Милосердие;x
+GetSwordName_Envy;Зависть;x
+GetSwordName_Deceit;Обман;x
+GetSwordName_Ambition;Честолюбие;x
+GetSwordName_Cynic;Циничный;x
+GetSwordName_Trick;Трюк;x
+GetSwordName_Game;Игра;x
+GetSwordName_Idol;Идол;x
+GetSwordName_Immortality;Бессмертие;x
+GetSwordName_Cannibal;Каннибал;x
+GetSwordName_Master;Мастер;x
+GetSwordName_Dishonour;Позор;x
+GetSwordName_Poison;Яд;x
+GetSwordName_Seafoam;Морская пена;x
+GetSwordName_Mark;Метка;x
+GetSwordName_Favour;Милость;x
+GetSwordName_Grace;Изящество;x
+GetSwordName_Love;Любовь;x
+GetSwordName_Avenger;Мститель;x
+GetSwordName_Flame;Пламя;x
+GetSwordName_Usurper;Узурпатор;x
+GetSwordName_Martyr;Мученик;x
+GetSwordName_Legend;Легенда;x
+GetSwordName_Terror;Террор;x
+GetSwordName_Butcher;Мясник;x
+GetSwordName_Wind;Ветер;x
+GetSwordName_Monster;Чудовище;x
+GetSwordName_Purifier;Очиститель;x
+GetSwordName_Confession;Покаяние;x
+GetSwordName_Cunning;Хитрый;x
+GetSwordName_Truth;Истинный;x
+GetSwordName_Peace;Мир;x
+GetSwordName_Steel;Сталь;x
+GetSwordName_Weeper;Уборщик;x
+GetSwordName_Woe;Скорбь;x
+GetSwordName_Battle;Битва;x
+GetSwordName_Triumph;Триумф;x
+GetSwordName_Compassion;Сострадание;x
+GetSwordName_Concession;Уступка;x
+GetSwordName_Jade;Нефритовый;x
+GetSwordName_Kingmaker;Властный;x
+GetSwordName_Extinction;Угасание;x
+GetSwordName_Redemption;Избавление;x
+GetSwordName_Cunning;Коварный;x
+GetSwordName_Betrayer;Предатель;x
+GetSwordName_Champion;Поборник;x
+GetSwordName_Desecration;Осквернение;x
+GetSwordName_Peacekeeper;Миротворец;x
+GetSwordName_Betrayal;Измена;x
+GetSwordName_Summoner;Призыватель;x
+GetSwordName_Incarnation;Вопрощение;x
+GetSwordName_Savagery;Свирепость;x
+GetSwordName_Deflector;Отразитель;x
+GetSwordName_Cometfell;Кометопад;x
+GetSwordName_Phoenix;Феникс;x
+GetSwordName_Malignant;Злобный;x
+GetSwordName_Eternal;Вековечный;x
+GetSwordName_Damnation;Проклятие;x
+GetSwordName_Mangler;Давитель;x
+GetSwordName_Reckoning;Расплата;x
+GetSwordName_Delusion;Наваждение;x
+GetSwordName_Visage;Облик;x
+GetSwordName_Amnesia;Беспамятство;x
+GetSwordName_Harmony;Гармония;x
+GetSwordName_Souleater;Пожиратель душ;x
+GetSwordName_Phantom;Фантом;x
+GetSwordName_Malificent;Вредный;x
+GetSwordName_Nightmare;Кошмар;x
+GetSwordName_Insanity;Безумие;x
+GetSwordName_Massacre;Резня;x
+GetSwordName_Mirage;Марево;x
+GetSwordName_Glorious;Славный;x
+GetSwordName_Backbite;Злословие;x
+GetSwordName_RandomEvilGodName;[This.Religion.GetRandomEvilGodName];x
+GetSwordName_Hywelbane;Бич;x
+GetSwordName_The_Sword_of_capitalname;[This.GetWeaponType] [This.Owner.Capital.GetName];x
+GetSwordName_The_Sword_of_title;[This.GetWeaponType] [This.Owner.PrimaryTItle.GetName];x
+GetSwordName_Dragnipur;Драгнипур;x
+GetSwordName_Callandor;Калландор;x
+GetSwordName_Scalpel;Скальпель;x
+GetSwordName_Naegling;Неглинг;x
+GetSwordName_Tamerlein;Тамерлейн;x
+GetSwordName_Backbiter;Клеветник;x
+GetSwordName_Gryffin;Гриффин;x
+GetSwordName_Wayfinder;Вейвиндер;x
+GetSwordName_Vanguard;Вангвард;x
+GetSwordName_Glamdring;Гламдринг;x
+GetSwordName_Narsil;Нарсил;x
+GetSwordName_Werewindle;Веревиндл;x
+GetSwordName_Clamorer;Кламорер;x
+GetSwordName_Zirael;Зираэль;x
+GetSwordName_Sihill;Сигилл;x
+GetSwordName_Balaraw;Баралоу;x
+GetSwordName_Hina;Хина;x
+GetSwordName_Singing_Sword;Певчий [This.GetWeaponType];x
+GetSwordName_Master_Sword;Владыка [This.GetWeaponType];x
+GetSwordName_Humility;Смирение;x
+GetSwordName_Excelsior;Эксельсиор;x
+GetSwordName_Guilty;Виновный;x
+GetSwordName_Caliburn;Экскалибур;x
+GetSwordName_Arondight;Арондит;x
+GetSwordName_Harp;Харп;x
+GetSwordName_Possession;Владетель;x
+GetSwordName_Impregnation;Насыщение;x
+GetSwordName_Kinslayer;Отцеубийца;x
+GetSwordName_Celibacy;Безбрачие;x
+GetSwordName_Hedonist;Гедонист;x
+GetSwordName_Gardener;Садовник;x
+GetSwordName_Myticism;Мистицизм;x
+GetSwordName_Temperance;Воздержание;x
+GetSwordName_Diligence;Усердие;x
+GetSwordName_Patience;Терпение;x
+GetSwordName_Contentment;Удовлетворенность;x
+GetSwordName_Inspiration;Вдохновение;x
+GetSwordName_Affection;Привязанность;x
+GetSwordName_Timidity;Робость;x
+GetSwordName_Indolence;Праздность;x
+GetSwordName_Conscience;Совесть;x
+GetSwordName_Curiousity;Любопытство;x
+GetSwordName_Desertion;Бегство;x
+GetSwordName_Obedience;Послушание;x
+GetSwordName_Berserker;Бешеный;x
+GetSwordName_Ravager;Разрушитель;x
+GetSwordName_Adventure;Приключение;x
+GetSwordName_Authority;Авторитетный;x
+GetSwordName_Obsession;Одержимость;x
+GetSwordName_Resurrection;Воскрешение;x
+GetSwordName_Sympathy;Симпатия;x
+GetSwordName_Empathy;Сочувствие;x
+GetSwordName_Apathy;Апатия;x
+GetSwordName_Liberator;Освободитель;x
+GetSwordName_Freedom;Свобода;x
+GetSwordName_Dynasty;Династия;x
+GetSwordName_Lawgiver;Законодатель;x
+GetSwordName_Conqueror;Завоеватель;x
+GetSwordName_Restorer;Восстановитель;x
+GetSwordName_Whisper;Шепоток;x
+GetSwordName_Beheader;Обезглавленный;x
+GetSwordName_Survivor;Уцелевший;x
+GetSwordName_Destroyer;Разрушитель;x
+GetSwordName_Vengeful;Мстительный;x
+GetSwordName_Tormentor;Мучитель;x
+GetSwordName_Mutilation;Увечье;x
+GetSwordName_Despoiler;Расхититель;x
+GetSwordName_Abomination;Мерзость;x
+GetSwordName_Kingslayer;Цареубийца;x
+GetSwordName_Submission;Подчинение;x
+GetSwordName_Deliverence;Спасение;x
+GetSwordName_Illumination;Озарение;x
+GetSwordName_Exaltation;Возвышение;x
+GetSwordName_Awakening;Пробуждение;x
+GetSwordName_Enlightenment;Просвещение;x
+GetSwordName_Arrogance;Высокомерие;x
+GetSwordName_Resiliance;Стойкость;x
+GetSwordName_Oppression;Угнетение;x
+GetSwordName_Magnificence;Великолепие;x
+GetSwordName_Prudence;Благоразумие;x
+GetSwordName_Brilliance;Блеск;x
+GetSwordName_Prodigy;Чудо;x
+GetSwordName_Elegance;Изящество;x
+GetSwordName_Evenstar;Вечерняя звезда;x
+GetSwordName_GetSunName;[This.Owner.GetSunName];x
+GetSwordName_GetRandomPlanetName;[This.Owner.GetRandomPlanetName];x
+GetSwordName_GetAlcoholicDrink;[This.Owner.GetAlcoholicDrink];x
+GetSwordName_Conciliator;Посредник;x
+GetSwordName_Implacable;Неумолимый;x
+GetSwordName_Breaker;Нарушитель;x
+GetSwordName_Burner;Топка;x
+GetSwordName_Anvilbreaker;Дробитель;x
+GetSwordName_Latecomer;Опоздавший;x
+GetSwordName_Badbrother;Плохой брат;x
+GetSwordName_Thunderbolt;Удар молнии;x
+GetSwordName_Boarkiller;Кабаноубийца;x
+GetSwordName_Nightingale;Соловей;x
+GetSwordName_Widowmaker;Вдоводел;x
+GetSwordName_Necromancer;Некромант;x
+GetSwordName_Stoneheart;Бессердечная;x
+GetSwordName_Enchantment;Зачарование;x
+GetSwordName_Captivation;Очарование;x
+GetSwordName_MyDragon;[owners_dragon.GetFirstName];x
+GetSwordName_MyDragons;[owners_dragon.GetFirstName];x
+forge_valyrian_steel;Ковать валирийскую сталь;x
+forge_valyrian_steel_desc;Валирийская сталь, возможно, выкованная при помощи драконов, производится в Валирийском Фригольде. Штормовой певец может помочь вам выковать кое-что вмнсте с вашим драконом.;x
+TOOLTIPforge_valyrian_steel_STORMSINGER;Могущественный Штормовой певец доступен при вашем дворе (персонаж с не менее 15 образования и валирийской религией);x
+TOOLTIPforge_valyrian_steel_VALYRIA;Любое владение находится в регионе Валирийских центральных земель;x
+TOOLTIPforge_valyrian_steel_FORGING;УЖЕ не кует валирийскую сталь;x
+EVTDESCvalyrian_steel.190;[stormsinger_forger.GetTitledFirstNameWithDynasty] может сфокусировать драконье пламя дракона [dragon_forger.GetFirstName] в своей кузнице. Затем [stormsinger_forger.GetSheHe] будет использовать заклинания для создания валирийской стали.;x
+EVTOPTAvalyrian_steel.190;Приступить;x
+TOOLTIPvalyrian_steel.190A;Ковка валирийского  меча займет несколько месяцев;x
+EVTOPTBvalyrian_steel.190;Мне нужен доспех!;x
+TOOLTIPvalyrian_steel.190B;Учитывая мастерство Штормового певца и силу дракона, вы можете заплатить дополнительную плату за валирийский доспех;x
+EVTOPTCvalyrian_steel.190;Используйте ваши навыки, чтобы создать мне драконий рог;x
+TOOLTIPvalyrian_steel.190C;Учитывая мастерство Штормового певца и силу дракона, вы можете заплатить дополнительную плату за драконий рог;x
+EVTDESCvalyrian_steel.191;После многих месяцев использования мощного драконьего пламени от дракона [dragon_forger.GetFirstName], [stormsinger_forger.GetTitledFirstNameWithDynasty] завершает ковку валирийского клинка!;x
+EVTOPTAvalyrian_steel.191;Я благодарю за вашу хорошую работу;x
+EVTDESCvalyrian_steel.192;После многих месяцев сосредоточения мощного драконьего пламени от дракона [dragon_forger.GetFirstName], и выполнения сложных заклинаний, [stormsinger_forger.GetTitledFirstNameWithDynasty] завершает доспех из валирийской стали!;x
+EVTOPTAvalyrian_steel.192;Это великолепно!;x
+EVTDESCvalyrian_steel.193;[stormsinger_forger.GetTitledFirstNameWithDynasty] проводит много месяцев, выполняя заклинания и используя дракона [dragon_forger.GetFirstName], чтобы проверить свою работу, и теперь, наконец, заканчивает Драконий рог!;x
+EVTOPTAvalyrian_steel.193;Это кажется наиболее полезным;x
+TOOLTIP250286;§YПРИМЕЧАНИЕ:§! Изображения различных вариантов меча можно просмотреть, щелкнув ссылку wiki символа 'валирийский меч', показанного в этой подсказке;x
+TOOLTIPnick_the_sword_of_the_morning;Этот меч - Рассвет;x
+TOOLTIPseize_swordTRAITOR;[Root.GetTitledFirstNameWithDynasty] - предатель;x
+reforge_ice;Перековать Лёд;x
+reforge_ice_desc;Нед Старк был несправедливо обезглавлен своим собственным мечом Лёд, клинок впоследствии был украден и запятнан Ланнистерами. Получить остатки и перековывать его в то, чем он когда-то был!;x
+TOOLTIPreforge_iceA;[Root.GetTitledFirstNameWithDynasty] владеет обоими остатками Льда;x
+TOOLTIPreforge_iceB;[This.GetName] и другой клинок перековываются в Лёд;x
+valyrian_steel_arakh;Аракх из валирийской стали;x
+valyrian_steel_arakh_desc;Клинок этого аракха сделан из валирийской стали. Арах - это меч, обычно используемый дотракийцами. Он наполовину меч, наполовину - коса.;x
+EVTOPTC251400;Доспех;x
+EVTOPTD251400;Кинжалы;x
+EVTDESCvalyrian_steel.99;Кузнец больше недоступен, перековывание меча отменено.;x

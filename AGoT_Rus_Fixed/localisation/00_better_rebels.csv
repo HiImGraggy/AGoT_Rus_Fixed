@@ -1,44 +1,44 @@
-#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-brm_revolt;Крестьянское восстание;;;;;;;;;;;;;x
-brm_reduced_tax;Сокращение налогов;;;;;;;;;;;;;x
-brm_rebel_offer_rejected;Требования мятежников отклонены;;;;;;;;;;;;;x
-brm_isolated_province;Изолированная провинция;;;;;;;;;;;;;x
-EVTDESCbetter_rebels.1;Мятеж вспыхнул в регионе [Root.GetName]! Возмущенные моим 'репрессивным' правлением, крестьяне взялись за оружие.;;;;;;;;;;;;;x
-EVTOPTAbetter_rebels.1;Как они посмели восстать против меня!;;;;;;;;;;;;;x
-EVTDESCbetter_rebels.2;Мятеж вспыхнул в регионе [From.GetName]! Возмущенные гнётом правителя, известн[From.GetOyOgo] как [From.County.Holder.GetTitledName], крестьяне взялись за оружие. Их восстание несёт разрушения в этих землях.;;;;;;;;;;;;;x
-EVTOPTAbetter_rebels.2;Если лорд ничего не предпринимает, я лучше...;;;;;;;;;;;;;x
-EVTDESCbetter_rebels.3;Восставшие крестьяне в провинции [Root.GetName] разрушают постройки!;;;;;;;;;;;;;x
-EVTOPTAbetter_rebels.3;Есть ли что-то, что они не разрушат?;;;;;;;;;;;;;x
-EVTOPTBbetter_rebels.3;Плохие новости. Хорошо, что это происходит не в моих землях...;;;;;;;;;;;;;x
-EVTDESCbetter_rebels.4;Восставшие крестьяне в провинции [From.GetName] разрушают мои постройки;;;;;;;;;;;;;x
-EVTDESCbetter_rebels.5;Я был атакован взбунтовавшимися крестьянами в регионе [Root.Location.GetName]!;;;;;;;;;;;;;x
-EVTOPTAbetter_rebels.5;Они убили меня?!;;;;;;;;;;;;;x
-EVTOPTBbetter_rebels.5;Черт бы побрал этих бунтовщиков!;;;;;;;;;;;;;x
-EVTOPTCbetter_rebels.5;Мне повезло выбраться живым...;;;;;;;;;;;;;x
-EVTDESCbetter_rebels.9;[From.GetTitledName] был[From.GetEndA] захвачен[From.GetEndA] в плен и убит[From.GetEndA] восставшими!;;;;;;;;;;;;;x
-EVTOPTAbetter_rebels.9;Да как они смеют казнить моего подданного?!;;;;;;;;;;;;;x
-EVTDESCbetter_rebels.10;Мой господин,\nЯ попал[From.GetEndA] в засаду повстанцев и едва оста[From.GetLasLsya] жив[From.GetEndA]. Нападавшие нанесли мне серьёзные увечья, и я боюсь за свою жизнь и жизнь своих близких в земле [From.Location.GetName]. Мятежников необходимо остановить.\n\nПодпись,\n[From.GetTitledName];;;;;;;;;;;;;x
-EVTOPTAbetter_rebels.10;Да, неплохо бы…;;;;;;;;;;;;;x
-EVTDESCbetter_rebels.11;Мой господин,\nХоть мне удалось бежать и спасти свою жизнь от взбунтовавшихся крестьян, они меня ранили. Я боюсь, что количество таких нападений будет увеличиваться, если восстание в земле [From.Location.GetName] не подавить.\nПодпись,\n[From.GetTitledName];;;;;;;;;;;;;x
-EVTOPTAbetter_rebels.11;Этот сброд нужно остановить!;;;;;;;;;;;;;x
-EVTDESC1000025012;Устав от своего прошлого правителя, восставшие крестьяне из регионе [Root.GetName] присягнули мне!;;;;;;;;;;;;;x
-EVTOPTA1000025012;Отлично! Или...?;;;;;;;;;;;;;x
-EVTOPTA1000025014;Черт бы побрал этих крестьян!;;;;;;;;;;;;;x
-EVTOPTA1000025015;Преступники!;;;;;;;;;;;;;x
-EVTDESCbetter_rebels.12;Армия восставших крестьян подняла мятеж в регионе [Root.GetName].;;;;;;;;;;;;;x
-EVTOPTAbetter_rebels.12;Аргх!;;;;;;;;;;;;;x
-EVTDESCbetter_rebels.13;Армия восставших крестьян подняла мятеж в регионе [From.Location.GetName].;;;;;;;;;;;;;x
-EVTOPTAbetter_rebels.13;Аргх!;;;;;;;;;;;;;x
-EVTDESCbetter_rebels.14;Восставшие в регионе [Root.GetName] сложат оружие, если вы согласитесь уменьшить налоги.;;;;;;;;;;;;;x
-EVTOPTAbetter_rebels.14;Очень хорошо;;;;;;;;;;;;;x
-EVTOPTBbetter_rebels.14;Даже не хочу слышать!;;;;;;;;;;;;;x
-EVTNAMEbetter_rebels.15;Восстание подавлено;;;;;;;;;;;;;x
-EVTDESCbetter_rebels.15;Я прибыл[GetEndA] в регион [Root.Location.GetName] и смог[GetNoneE] арестовать лидеров восстания. Без своих лидеров повстанцы больше не смогут перечить моему господину.;;;;;;;;;;;;;x
-EVTOPTAbetter_rebels.15;Они извлекли урок!;;;;;;;;;;;;;x
-EVTTOOLTIPbetter_rebels.16;Отправить послание моему господину;;;;;;;;;;;;;x
-EVTDESCbetter_rebels.16;Мой господин, мне удалось найти и арестовать лидеров восстания в регионе [From.Location.GetName]. Без них крестьяне не посмеют более выступить против вас.;;;;;;;;;;;;;x
-EVTOPTAbetter_rebels.16;Отличные новости!;;;;;;;;;;;;;x
-EVTDESCbetter_rebels.18;Наследование вами земли [Root.PrimaryTitle.GetName] после смерти человека, известного как [FromFromFrom.GetTitledFirstName] вызвало волнения по всей области. Многие замышляют просить вызов власти, как и многие крестьяне и другие бандиты и преступники.;;;;;;;;;;;;;x
-EVTOPTAbetter_rebels.18;Моё правление должно стабилизировать ситуацию;;;;;;;;;;;;;x
-general_unrest;Повсюду беспорядки;;;;;;;;;;;;;x
-general_unrest_desc;Недавнее наследование этого персонажа вызвало волнения по всей области;;;;;;;;;;;;;x
+#CODE;ENGLISH;x
+brm_revolt;Крестьянское восстание;x
+brm_reduced_tax;Сокращение налогов;x
+brm_rebel_offer_rejected;Требования мятежников отклонены;x
+brm_isolated_province;Изолированная провинция;x
+EVTDESCbetter_rebels.1;Мятеж вспыхнул в регионе [Root.GetName]! Возмущенные моим 'репрессивным' правлением, крестьяне взялись за оружие.;x
+EVTOPTAbetter_rebels.1;Как они посмели восстать против меня!;x
+EVTDESCbetter_rebels.2;Мятеж вспыхнул в регионе [From.GetName]! Возмущенные гнётом правителя, известн[From.GetOyOgo] как [From.County.Holder.GetTitledName], крестьяне взялись за оружие. Их восстание несёт разрушения в этих землях.;x
+EVTOPTAbetter_rebels.2;Если лорд ничего не предпринимает, я лучше...;x
+EVTDESCbetter_rebels.3;Восставшие крестьяне в провинции [Root.GetName] разрушают постройки!;x
+EVTOPTAbetter_rebels.3;Есть ли что-то, что они не разрушат?;x
+EVTOPTBbetter_rebels.3;Плохие новости. Хорошо, что это происходит не в моих землях...;x
+EVTDESCbetter_rebels.4;Восставшие крестьяне в провинции [From.GetName] разрушают мои постройки;x
+EVTDESCbetter_rebels.5;Я был атакован взбунтовавшимися крестьянами в регионе [Root.Location.GetName]!;x
+EVTOPTAbetter_rebels.5;Они убили меня?!;x
+EVTOPTBbetter_rebels.5;Черт бы побрал этих бунтовщиков!;x
+EVTOPTCbetter_rebels.5;Мне повезло выбраться живым...;x
+EVTDESCbetter_rebels.9;[From.GetTitledName] был[From.GetEndA] захвачен[From.GetEndA] в плен и убит[From.GetEndA] восставшими!;x
+EVTOPTAbetter_rebels.9;Да как они смеют казнить моего подданного?!;x
+EVTDESCbetter_rebels.10;Мой господин,\nЯ попал[From.GetEndA] в засаду повстанцев и едва оста[From.GetLasLsya] жив[From.GetEndA]. Нападавшие нанесли мне серьёзные увечья, и я боюсь за свою жизнь и жизнь своих близких в земле [From.Location.GetName]. Мятежников необходимо остановить.\n\nПодпись,\n[From.GetTitledName];x
+EVTOPTAbetter_rebels.10;Да, неплохо бы...;x
+EVTDESCbetter_rebels.11;Мой господин,\nХоть мне удалось бежать и спасти свою жизнь от взбунтовавшихся крестьян, они меня ранили. Я боюсь, что количество таких нападений будет увеличиваться, если восстание в земле [From.Location.GetName] не подавить.\nПодпись,\n[From.GetTitledName];x
+EVTOPTAbetter_rebels.11;Этот сброд нужно остановить!;x
+EVTDESC1000025012;Устав от своего прошлого правителя, восставшие крестьяне из регионе [Root.GetName] присягнули мне!;x
+EVTOPTA1000025012;Отлично! Или...?;x
+EVTOPTA1000025014;Черт бы побрал этих крестьян!;x
+EVTOPTA1000025015;Преступники!;x
+EVTDESCbetter_rebels.12;Армия восставших крестьян подняла мятеж в регионе [Root.GetName].;x
+EVTOPTAbetter_rebels.12;Аргх!;x
+EVTDESCbetter_rebels.13;Армия восставших крестьян подняла мятеж в регионе [From.Location.GetName].;x
+EVTOPTAbetter_rebels.13;Аргх!;x
+EVTDESCbetter_rebels.14;Восставшие в регионе [Root.GetName] сложат оружие, если вы согласитесь уменьшить налоги.;x
+EVTOPTAbetter_rebels.14;Очень хорошо;x
+EVTOPTBbetter_rebels.14;Даже не хочу слышать!;x
+EVTNAMEbetter_rebels.15;Восстание подавлено;x
+EVTDESCbetter_rebels.15;Я прибыл[GetEndA] в регион [Root.Location.GetName] и смог[GetNoneE] арестовать лидеров восстания. Без своих лидеров повстанцы больше не смогут перечить моему господину.;x
+EVTOPTAbetter_rebels.15;Они извлекли урок!;x
+EVTTOOLTIPbetter_rebels.16;Отправить послание моему господину;x
+EVTDESCbetter_rebels.16;Мой господин, мне удалось найти и арестовать лидеров восстания в регионе [From.Location.GetName]. Без них крестьяне не посмеют более выступить против вас.;x
+EVTOPTAbetter_rebels.16;Отличные новости!;x
+EVTDESCbetter_rebels.18;Наследование вами земли [Root.PrimaryTitle.GetName] после смерти человека, известного как [FromFromFrom.GetTitledFirstName] вызвало волнения по всей области. Многие замышляют просить вызов власти, как и многие крестьяне и другие бандиты и преступники.;x
+EVTOPTAbetter_rebels.18;Моё правление должно стабилизировать ситуацию;x
+general_unrest;Повсюду беспорядки;x
+general_unrest_desc;Недавнее наследование этого персонажа вызвало волнения по всей области;x

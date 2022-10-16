@@ -1,73 +1,74 @@
-poor_warrior;Плохой воин;x;;;
-trained_warrior;Обученный воин;x;;;
-skilled_warrior;Опытный воин;x;;;
-master_warrior;Грозный воин;x;;;
-poor_warrior_desc;Этот персонаж постиг азы боевых искусств, но неаккуратно, самоуверенно и нехотя;x;;;
-trained_warrior_desc;Этот персонаж прошел обучение искусству боя. Хоть он далек от вершин, но, в принципе, не так плох в бою.;x;;;
-skilled_warrior_desc;Этот персонаж обладает определенным талантом к бою и фехтовани..;x;;;
-master_warrior_desc;Этот персонаж является одним из величайших воинов в мире, ему благоволят Боги, прекрасен и ужасен на поле боя.;x;;;
-EVTDESCcombat_trait.1;Вы попросили, чтобы [Root.Educator.GetTitledFirstName] научил вас обращаться с мечом.;x;;;
-EVTOPTAcombat_trait.1;Палка с заостренным концом!;x;;;
-#EVTDESC550101;Вы попросили, чтобы [Root.Educator.GetTitledFirstName] научил вас еще лучше обращаться с мечом.;x;;;
-#EVTDESC550103;Вы просите, чтобы [Root.Educator.GetTitledFirstName] помог вам овладеть искусством фехтования!;x;;;
-EVTDESCcombat_trait.2;Под моим руководством м[From.GetOyaOy] молод[From.GetAyaOy] [From.GetRootRelation], [From.GetFirstName], постепенно осваивает искусство фехтования.;x;;;
-EVTDESCcombat_trait.3;М[From.GetOyaOy] [From.GetRootRelation] не улучшил свои навыки фехтования за время тренировок...;x;;;
-EVT_OPT_combat_trait.3_ambitious;[From.GetSheHeCap], несмотря на это, показывает обилие амбиций;x;;;
-EVT_OPT_combat_trait.3_slothful;По н[From.GetHerHim] даже не видно, что [From.GetSheHe] пытается;x;;;
-EVT_OPT_combat_trait.3_brave;Однако [From.GetSheHe] мужествен[From.GetNaEn];x;;;
-EVT_OPT_combat_trait.3_ruthless;Тем не менее, [From.GetSheHe] готов[From.GetEndA] стремиться улучшать навыки;x;;;
-EVT_OPT_combat_trait.3_intrigue;Однако, [From.GetSheHe] кажется хитрым бойцом.;x;;;
-EVT_OPT_combat_trait.3_maimed;Хуже того, [From.GetSheHe] упал[From.GetEndA] с коня и сильно пострадал[From.GetEndA];x;;;
-EVT_OPT_combat_trait.3_wounded;Ещё хуже, вы были слишком увлечены и [From.GetRootRelation] был[From.GetEndA] ранен[From.GetEndA];x;;;
-EVT_OPT_combat_trait.3_diligent;Даже если [From.GetHerHis] навыки не улучшились, [From.GetSheHe] показывает много решимости;x;;;
-EVT_OPT_combat_trait.3_no_progress;Может быть, в следующий раз [From.GetSheHe] станет лучше;x;;;
-EVT_OPT_combat_trait.3_homosexual;[From.GetSheHeCap], кажется, как-то слишком сильно наслаждется тренировками...;x;;;
-EVT_OPT_combat_trait.3_stewardship;Вместо этого [From.GetSheHe] больше интересуется стоимостью брони.;x;;;
-EVTDESCcombat_trait.4;Мне не удалось улучшить навыки фехтовальщика!;x;;;
-EVT_OPT_combat_trait.4;Может, повезет в другой раз!;x;;;
-EVTDESCcombat_trait.5;Заставляя моего [GetFromRelation]а сражаться, я сделал[GetEndA] [From.GetHerHis] лучше!;x;;;
-EVT_OPT_combat_trait.5_ruthless;Тем не менее [From.GetSheHe] готов[From.GetEndA] на все ради победы;x;;;
-EVT_OPT_combat_trait.5_brave;И [From.GetSheHe] показывает проявления храбрости;x;;;
-EVT_OPT_combat_trait.5_wroth;Однако, [From.GetSheHe] возмущается и настаивает на усиленном обучении;x;;;
-EVT_OPT_combat_trait.5_martial;И [From.GetHerHis] теоретические знания о войне улучшились;x;;;
-EVT_OPT_combat_trait.5_cruel;Тем не менее, [From.GetHerHim] часто приходится сражаться с более слабыми противниками;x;;;
-EVT_OPT_combat_trait.5_nothing;Мое обучение дает свои плоды;x;;;
-EVT_OPT_combat_trait.5_lustful_man;Многие из служанок обращают свое внимание на него;x;;;
-EVT_OPT_combat_trait.5_lustful_woman;Многие из юнцов вокруг ристалища обращают свое внимание на нее;x;;;
-EVTDESCcombat_trait.6;Мой отец заставил меня тренироваться с ним... Я не хотел[GetEndA], но может я чему-то научусь. Надеюсь это не больно!;x;;;
-EVTOPTAcombat_trait.6;Я рад[GetEndA] своему обучению;x;;;
-force_train_son_1;Заставить тренироваться;x;;;
-force_train_son_2;Заставить персонажа [This.GetTitledFirstName] тренироваться.;x;;;
-force_train_son_3;Заставить персонажа [This.GetTitledFirstName] тренироваться.;x;;;
-force_train_son_4;Заставить персонажа [This.GetTitledFirstName] тренироваться.;x;;;
-force_train_son_1_desc;Как [Root.GetHerHis] [GetFromRelation], вы можете настоять, чтобы [Root.GetTitledFirstName] обуча[Root.GetLasLsya] бою под вашим контролем.;x;;;
-force_train_son_2_desc;Заставить персонажа [This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] продолжить обучение бою, тренируя его лично.;x;;;
-force_train_son_3_desc;Заставить персонажа [This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] продолжить обучение бою, тренируя его лично.;x;;;
-force_train_son_4_desc;Заставить персонажа [This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] продолжить обучение бою, тренируя его лично.;x;;;
-TOOLTIPforce_train_son;Обладает большим мастерством в бою, чем [Root.GetFirstName]\n;x;;;
-EVTDESCcombat_trait.7;Меч в руке кажется тяжелее и тяжелее с каждым годом...;x;;;
-#EVTDESC5550113;Под руководством Мастера над Оружием мой юный [GetFromRelation] [From.GetFirstName] постепенно обучается искусству владения мечом.;x;;;
-#EVTOPTA5550113;Хорошо;x;;;
-EVTTITLEob_martial_event.1;Боевая доблесть ребенка улучшается;x;;;
-EVTDESCjob_martial_event.1;Я обучаю детей моего господина искусству фехтования;x;;;
-EVTOPTAjob_martial_event.1;Прекрасно;x;;;
-TOOLTIPjob_martial_event.2;[Root.Liege.GetTitledFirstName] сообщает о прогрессе персонажа [This.GetFirstName];x;;;
-EVTDESCjob_martial_event.2;Последние несколько недель [From.GetTitledFirstName] обучал меня владению мечом и копьем. Обучение было трудным и суровым, но мое мастерство повысилось!;x;;;
-EVTOPTAjob_martial_event.2;[From.GetSheHeCap] - прекрасный учитель;x;;;
-EVTDESCjob_martial_event.3;[Root.PrimaryTitle.GetFOA], [From.GetFirstName] обучался мною владению мечом и копьем. Я рад сообщить, что [From.GetSheHe] существенно повысил свое мастерство.\n\nВаш Мастер над оружием,\n[FromFrom.GetTitledName];x;;;
-EVTOPTAjob_martial_event.3;[From.GetFirstName] должен стать прекрасным воином;x;;;
-EVTTITLEjob_martial_event.4;Ребенок ненавидит обучение;x;;;
-EVTDESCjob_martial_event.4;Дети моего господина не были рады моим урокам владения мечами и копьями...;x;;;
-EVTOPTAjob_martial_event.4;Как они могут не радоваться этому?;x;;;
-TOOLTIPjob_martial_event.5;[Root.Liege.GetTitledFirstName] сообщает о прогрессе персонажа [This.GetFirstName];x;;;
-EVTDESCjob_martial_event.5;Последние несколько недель [From.GetTitledFirstName] обучал меня владению мечами и копьями, и это было ужасно.. Это уж слишком тяжело, я бы с большим удовольствием изучал свитки с мейстером.;x;;;
-EVTOPTAjob_martial_event.5;Я ненавижу рыцарство!;x;;;
-EVTDESCjob_martial_event.6;[Root.PrimaryTitle.GetFOA], [From.GetFirstName] обучался мною искусству владения мечом и копьем, но [From.GetSheHe] не поддается. Все, что [From.GetSheHe] делает, так это падает и стонет от пары порезов, [From.GetHerHim] более прельщает чтение бумаг, чем бои на рыцарских турнирах.\n\nВаш Мастер над оружием,\n[FromFrom.GetTitledName];x;;;
-EVTOPTAjob_martial_event.6;[From.GetFirstName] слишком мягок.;x;;;
-TOOLTIPforce_train_sonSUCCESS;Обучение прошло успешно\n;x;;;
-TOOLTIPforce_train_sonFAIL;Обучение не удалось\n;x;;;
-force_trained;Принужденно обучен;x;;;
-training_son;Принужденно обучаемый ребёнок;x;;;
-EVTOPTBcombat_trait.7;Владыка Света, одари меня своим огнем!;x;;;
-TOOLTIPcombat_trait.7RHLLOR;[This.GetTitledFirstName] использует огонь для сохранения своих сил\n;x;;;
-EVTOPTAcombat_trait.7;Я чувствую себя старым;x;;;
+#CODE;ENGLISH;x
+poor_warrior;Плохой воин;x
+trained_warrior;Обученный воин;x
+skilled_warrior;Опытный воин;x
+master_warrior;Грозный воин;x
+poor_warrior_desc;Этот персонаж постиг азы боевых искусств, но неаккуратно, самоуверенно и нехотя;x
+trained_warrior_desc;Этот персонаж прошел обучение искусству боя. Хоть он далек от вершин, но, в принципе, не так плох в бою.;x
+skilled_warrior_desc;Этот персонаж обладает определенным талантом к бою и фехтовани..;x
+master_warrior_desc;Этот персонаж является одним из величайших воинов в мире, ему благоволят Боги, прекрасен и ужасен на поле боя.;x
+EVTDESCcombat_trait.1;Вы попросили, чтобы [Root.Educator.GetTitledFirstName] научил вас обращаться с мечом.;x
+EVTOPTAcombat_trait.1;Палка с заостренным концом!;x
+#EVTDESC550101;Вы попросили, чтобы [Root.Educator.GetTitledFirstName] научил вас еще лучше обращаться с мечом.;x
+#EVTDESC550103;Вы просите, чтобы [Root.Educator.GetTitledFirstName] помог вам овладеть искусством фехтования!;x
+EVTDESCcombat_trait.2;Под моим руководством м[From.GetOyaOy] молод[From.GetAyaOy] [From.GetRootRelation], [From.GetFirstName], постепенно осваивает искусство фехтования.;x
+EVTDESCcombat_trait.3;М[From.GetOyaOy] [From.GetRootRelation] не улучшил свои навыки фехтования за время тренировок...;x
+EVT_OPT_combat_trait.3_ambitious;[From.GetSheHeCap], несмотря на это, показывает обилие амбиций;x
+EVT_OPT_combat_trait.3_slothful;По н[From.GetHerHim] даже не видно, что [From.GetSheHe] пытается;x
+EVT_OPT_combat_trait.3_brave;Однако [From.GetSheHe] мужествен[From.GetNaEn];x
+EVT_OPT_combat_trait.3_ruthless;Тем не менее, [From.GetSheHe] готов[From.GetEndA] стремиться улучшать навыки;x
+EVT_OPT_combat_trait.3_intrigue;Однако, [From.GetSheHe] кажется хитрым бойцом.;x
+EVT_OPT_combat_trait.3_maimed;Хуже того, [From.GetSheHe] упал[From.GetEndA] с коня и сильно пострадал[From.GetEndA];x
+EVT_OPT_combat_trait.3_wounded;Ещё хуже, вы были слишком увлечены и [From.GetRootRelation] был[From.GetEndA] ранен[From.GetEndA];x
+EVT_OPT_combat_trait.3_diligent;Даже если [From.GetHerHis] навыки не улучшились, [From.GetSheHe] показывает много решимости;x
+EVT_OPT_combat_trait.3_no_progress;Может быть, в следующий раз [From.GetSheHe] станет лучше;x
+EVT_OPT_combat_trait.3_homosexual;[From.GetSheHeCap], кажется, как-то слишком сильно наслаждется тренировками...;x
+EVT_OPT_combat_trait.3_stewardship;Вместо этого [From.GetSheHe] больше интересуется стоимостью брони.;x
+EVTDESCcombat_trait.4;Мне не удалось улучшить навыки фехтовальщика!;x
+EVT_OPT_combat_trait.4;Может, повезет в другой раз!;x
+EVTDESCcombat_trait.5;Заставляя моего [GetFromRelation]а сражаться, я сделал[GetEndA] [From.GetHerHis] лучше!;x
+EVT_OPT_combat_trait.5_ruthless;Тем не менее [From.GetSheHe] готов[From.GetEndA] на все ради победы;x
+EVT_OPT_combat_trait.5_brave;И [From.GetSheHe] показывает проявления храбрости;x
+EVT_OPT_combat_trait.5_wroth;Однако, [From.GetSheHe] возмущается и настаивает на усиленном обучении;x
+EVT_OPT_combat_trait.5_martial;И [From.GetHerHis] теоретические знания о войне улучшились;x
+EVT_OPT_combat_trait.5_cruel;Тем не менее, [From.GetHerHim] часто приходится сражаться с более слабыми противниками;x
+EVT_OPT_combat_trait.5_nothing;Мое обучение дает свои плоды;x
+EVT_OPT_combat_trait.5_lustful_man;Многие из служанок обращают свое внимание на него;x
+EVT_OPT_combat_trait.5_lustful_woman;Многие из юнцов вокруг ристалища обращают свое внимание на нее;x
+EVTDESCcombat_trait.6;Мой отец заставил меня тренироваться с ним... Я не хотел[GetEndA], но может я чему-то научусь. Надеюсь это не больно!;x
+EVTOPTAcombat_trait.6;Я рад[GetEndA] своему обучению;x
+force_train_son_1;Заставить тренироваться;x
+force_train_son_2;Заставить персонажа [This.GetTitledFirstName] тренироваться.;x
+force_train_son_3;Заставить персонажа [This.GetTitledFirstName] тренироваться.;x
+force_train_son_4;Заставить персонажа [This.GetTitledFirstName] тренироваться.;x
+force_train_son_1_desc;Как [Root.GetHerHis] [GetFromRelation], вы можете настоять, чтобы [Root.GetTitledFirstName] обуча[Root.GetLasLsya] бою под вашим контролем.;x
+force_train_son_2_desc;Заставить персонажа [This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] продолжить обучение бою, тренируя его лично.;x
+force_train_son_3_desc;Заставить персонажа [This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] продолжить обучение бою, тренируя его лично.;x
+force_train_son_4_desc;Заставить персонажа [This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] продолжить обучение бою, тренируя его лично.;x
+TOOLTIPforce_train_son;Обладает большим мастерством в бою, чем [Root.GetFirstName]\n;x
+EVTDESCcombat_trait.7;Меч в руке кажется тяжелее и тяжелее с каждым годом...;x
+#EVTDESC5550113;Под руководством Мастера над Оружием мой юный [GetFromRelation] [From.GetFirstName] постепенно обучается искусству владения мечом.;x
+#EVTOPTA5550113;Хорошо;x
+EVTTITLEob_martial_event.1;Боевая доблесть ребенка улучшается;x
+EVTDESCjob_martial_event.1;Я обучаю детей моего господина искусству фехтования;x
+EVTOPTAjob_martial_event.1;Прекрасно;x
+TOOLTIPjob_martial_event.2;[Root.Liege.GetTitledFirstName] сообщает о прогрессе персонажа [This.GetFirstName];x
+EVTDESCjob_martial_event.2;Последние несколько недель [From.GetTitledFirstName] обучал меня владению мечом и копьем. Обучение было трудным и суровым, но мое мастерство повысилось!;x
+EVTOPTAjob_martial_event.2;[From.GetSheHeCap] - прекрасный учитель;x
+EVTDESCjob_martial_event.3;[Root.PrimaryTitle.GetFOA], [From.GetFirstName] обучался мною владению мечом и копьем. Я рад сообщить, что [From.GetSheHe] существенно повысил свое мастерство.\n\nВаш Мастер над оружием,\n[FromFrom.GetTitledName];x
+EVTOPTAjob_martial_event.3;[From.GetFirstName] должен стать прекрасным воином;x
+EVTTITLEjob_martial_event.4;Ребенок ненавидит обучение;x
+EVTDESCjob_martial_event.4;Дети моего господина не были рады моим урокам владения мечами и копьями...;x
+EVTOPTAjob_martial_event.4;Как они могут не радоваться этому?;x
+TOOLTIPjob_martial_event.5;[Root.Liege.GetTitledFirstName] сообщает о прогрессе персонажа [This.GetFirstName];x
+EVTDESCjob_martial_event.5;Последние несколько недель [From.GetTitledFirstName] обучал меня владению мечами и копьями, и это было ужасно.. Это уж слишком тяжело, я бы с большим удовольствием изучал свитки с мейстером.;x
+EVTOPTAjob_martial_event.5;Я ненавижу рыцарство!;x
+EVTDESCjob_martial_event.6;[Root.PrimaryTitle.GetFOA], [From.GetFirstName] обучался мною искусству владения мечом и копьем, но [From.GetSheHe] не поддается. Все, что [From.GetSheHe] делает, так это падает и стонет от пары порезов, [From.GetHerHim] более прельщает чтение бумаг, чем бои на рыцарских турнирах.\n\nВаш Мастер над оружием,\n[FromFrom.GetTitledName];x
+EVTOPTAjob_martial_event.6;[From.GetFirstName] слишком мягок.;x
+TOOLTIPforce_train_sonSUCCESS;Обучение прошло успешно\n;x
+TOOLTIPforce_train_sonFAIL;Обучение не удалось\n;x
+force_trained;Принужденно обучен;x
+training_son;Принужденно обучаемый ребёнок;x
+EVTOPTBcombat_trait.7;Владыка Света, одари меня своим огнем!;x
+TOOLTIPcombat_trait.7RHLLOR;[This.GetTitledFirstName] использует огонь для сохранения своих сил\n;x
+EVTOPTAcombat_trait.7;Я чувствую себя старым;x

@@ -1,64 +1,64 @@
-#CODE;ENGLISH;;;;;;;;;;;;;x;
-EVTDESCwarlock.0;Ко мне подходит худой и бледный колдун с синими губами и рассказывает о силе, которой владеют колдуны из Кварта.;;;;;;;;;;;;;x;x
-EVTOPTAwarlock.0;Я приму эту новую религию!;;;;;;;;;;;;;x;
-EVTOPTBwarlock.0;Посадить этого еретика в тюрьму!;;;;;;;;;;;;;x;
-EVTOPTCwarlock.0;Как скучно;;;;;;;;;;;;;x;
-EVTDESCwarlock.1;Принесение жертвы колдунам в Доме Бессмертных поможет завоевать их благосклонность и может быть весьма полезным;;;;;;;;;;;;;x;
-EVTOPTAwarlock.1;Дайте им золота.;;;;;;;;;;;;;x;
-EVTOPTBwarlock.1;Думаю, нет;;;;;;;;;;;;;x;
-EVTDESCwarlock.2;Ваш заговор [Root.GetPlot] был осуществлен, но не принес никакого эффекта. Шпионы докладывают, что [From.GetHeShe] был[From.GetEndA] спасен[From.GetEndA] магией колдунов, как и пожелал[From.GetEndA].;;;;;;;;;;;;;x;
-EVTOPTAwarlock.2;Что за чушь!;;;;;;;;;;;;;x;
-EVTOPTBwarlock.2;С громким вздохом вы восстаете из мертвых. Вам удалось избежать смерти!;;;;;;;;;;;;;x;
-EVTDESCwarlock.3;Как просит [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], я выпиваю Вечернюю Тень и вижу множество вещей, в том числе и замыслы моих врагов.;;;;;;;;;;;;;x;
-EVTOPTAwarlock.3;Колдуны действительно могущественны;;;;;;;;;;;;;x;
-EVTOPTBwarlock.3;Спасибо, но я не верю в это;;;;;;;;;;;;;x;
-EVTDESCwarlock.4;[From.GetFirstNameWithDynasty] платит колдунам, чтобы те наложили заклинание для моей защиты в битве;;;;;;;;;;;;;x;
-EVTDESCwarlock.5;[From.GetFirstNameWithDynasty] подходит ко мне и спрашивает, не хочу ли я вылечить свои недуги;;;;;;;;;;;;;x;
-EVTOPTAwarlock.5;Если колдуны могут это сделать, то они действительно могущественны;;;;;;;;;;;;;x;
-EVTOPTBwarlock.5;Нет, это лицемерный фарс. Проваливай;;;;;;;;;;;;;x;
-EVTDESCwarlock.6;[From.GetFirstNameWithDynasty] подходит ко мне и спрашивает, не хочу ли я излечить свои болезни и уродства.;;;;;;;;;;;;;x;
-EVTDESCwarlock.7;Худой бледный колдун привел большого быка и пролил его кровь на пол, все время повторяя странные слова своего темного заклинания.;;;;;;;;;;;;;x;
-EVTOPTAwarlock.7;[From.GetFirstNameWithDynasty] исцеляется магией колдунов;;;;;;;;;;;;;x;
-EVTDESCwarlock.8;Во времена давно минувших дней колдунов из Кварта боялись и уважали за их силу во всем известном мире. Однако эта сила и страх в последние годы приносят всё больше неприятностей. Для многих людей теперь Вечерняя Тень не более, чем фокус и лицемерие.;;;;;;;;;;;;;x;
-EVTOPTAwarlock.8;[From.GetFirstNameWithDynasty] отказывается от помощи колдунов и не исцеляется.;;;;;;;;;;;;;x;
-CUSTOMTOOLTIPwarlock_saved_me;Эта возможность доступна для вас, потому что была принесена жертва для вашей защиты.;;;;;;;;;;;;;x;
-warlock_protection_plot;[Root.GetFirstNameWithDynasty] - защитить от заговоров.;;;;;;;;;;;;;x;
-warlock_protection_plot_desc;Вы можете повелеть колдунам защитить этого человека от заговора с целью его убийства.;;;;;;;;;;;;;x;
-warlock_protection_battle;[Root.GetFirstNameWithDynasty] - защитить в битве.;;;;;;;;;;;;;x;
-warlock_protection_battle_desc;Вы можете повелеть колдунам защитить этого человека в битве.;;;;;;;;;;;;;x;
-warlock_heal_basic;Лечение заболеваний;;;;;;;;;;;;;x;
-warlock_heal_basic_desc;Колдуны исцелят этого человека от травм и болезней.;;;;;;;;;;;;;x;
-warlock_heal_chosen;Вылечить уродства.;;;;;;;;;;;;;x;
-warlock_heal_chosen_desc;Колдуны избавят человека от его уродств.;;;;;;;;;;;;;x;
-warlock_protection_plot_self;Защитить себя от заговоров;;;;;;;;;;;;;x;
-warlock_protection_plot_self_desc;Вы можете использовать колдунов, чтобы защитить себя от заговора с целью убийства.;;;;;;;;;;;;;x;
-warlock_protection_battle_self;Защитить себя в битве;;;;;;;;;;;;;x;
-warlock_protection_battle_self_desc;Прикажите колдунам защитить себя в битве;;;;;;;;;;;;;x;
-warlock_heal_basic_self;Излечить себя от болезней.;;;;;;;;;;;;;x;
-warlock_heal_basic_self_desc;Служители излечат ваши травмы и болезни;;;;;;;;;;;;;x;
-warlock_heal_chosen_self;Излечить свои уродства;;;;;;;;;;;;;x;
-warlock_heal_chosen_self_desc;Служители избавят вас от уродств;;;;;;;;;;;;;x;
-warlock_shade_evening;[Root.GetMagicPlotRevealLoc];;;;;;;;;;;;;x;
-GetMagicPlotRevealLoc_Warlock;Выпить Вечернюю Тень;;;;;;;;;;;;;x;
-GetMagicPlotRevealLoc_Gen;Тёмное гадание;;;;;;;;;;;;;x;
-warlock_shade_evening_desc;Выполните это действие, чтобы попытаться получить видения опасностей для вас или ваших родственников. ;;;;;;;;;;;;;x;
-CUSTOMTOOLTIPdiseasecureallow;Вы заплатили колдунам и совершили жертвоприношение;;;;;;;;;;;;;x;
-CUSTOMTOOLTIPdeformedcureallow;Вы заплатили колдунам и совершили жертвоприношение.;;;;;;;;;;;;;x;
-CUSTOMTOOLTIPwarlock_nosacrafice;Это не считается жертвой Р'Глору;;;;;;;;;;;;;x;
-show_warlock;Показать список действий Колдуна;;;;;;;;;;;;;x;
-show_warlock_desc;Открывает список действий.;;;;;;;;;;;;;x;
-hide_warlock;Скрыть список действий Колдуна;;;;;;;;;;;;;x;
-hide_warlock_desc;Закрывает список действий.;;;;;;;;;;;;;x;
-EVTDESCwarlock.9;Выберите из списка доступных взаимодействий.;;;;;;;;;;;;;x;
-EVTOPTAwarlock.9;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] - защитить от заговоров.;;;;;;;;;;;;;x;
-EVTOPTBwarlock.9;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] - защитить в битве.;;;;;;;;;;;;;x;
-EVTOPTCwarlock.9;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] - исцелить болезни.;;;;;;;;;;;;;x;
-EVTOPTDwarlock.9;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] - исцелить уродства.;;;;;;;;;;;;;x;
-EVTOPTEwarlock.9;Не берите в голову;;;;;;;;;;;;;x;
-EVTOPTFwarlock.9;Взаимодействия колдуна;;;;;;;;;;;;;x;
-warlock_action;Список действий колдуна;;;;;;;;;;;;;x;
-warlock_action_desc;Вы сделали пожертвование Колдуну, и поэтому можете принять меры против человека, известного как [Root.GetTitle] [Root.GetFirstNameWithDynasty].;;;;;;;;;;;;;x;
-warlock_magic;Подарки Колдунам;;;;;;;;;;;;;x;
-donate_money_to_warlocks;Сделать пожертвование Колдунам;;;;;;;;;;;;;x;
-donate_money_to_warlocks_desc;Вы можете сделать пожертвование Колдунам, чтобы получить благосклонность к ним и попытаться использовать их магию.;;;;;;;;;;;;;x;
-donation_to_warlocks;Жертвует Колдунам;;;;;;;;;;;;;x;
+#CODE;ENGLISH;x
+EVTDESCwarlock.0;Ко мне подходит худой и бледный колдун с синими губами и рассказывает о силе, которой владеют колдуны из Кварта.;xx
+EVTOPTAwarlock.0;Я приму эту новую религию!;x
+EVTOPTBwarlock.0;Посадить этого еретика в тюрьму!;x
+EVTOPTCwarlock.0;Как скучно;x
+EVTDESCwarlock.1;Принесение жертвы колдунам в Доме Бессмертных поможет завоевать их благосклонность и может быть весьма полезным;x
+EVTOPTAwarlock.1;Дайте им золота.;x
+EVTOPTBwarlock.1;Думаю, нет;x
+EVTDESCwarlock.2;Ваш заговор [Root.GetPlot] был осуществлен, но не принес никакого эффекта. Шпионы докладывают, что [From.GetHeShe] был[From.GetEndA] спасен[From.GetEndA] магией колдунов, как и пожелал[From.GetEndA].;x
+EVTOPTAwarlock.2;Что за чушь!;x
+EVTOPTBwarlock.2;С громким вздохом вы восстаете из мертвых. Вам удалось избежать смерти!;x
+EVTDESCwarlock.3;Как просит [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], я выпиваю Вечернюю Тень и вижу множество вещей, в том числе и замыслы моих врагов.;x
+EVTOPTAwarlock.3;Колдуны действительно могущественны;x
+EVTOPTBwarlock.3;Спасибо, но я не верю в это;x
+EVTDESCwarlock.4;[From.GetFirstNameWithDynasty] платит колдунам, чтобы те наложили заклинание для моей защиты в битве;x
+EVTDESCwarlock.5;[From.GetFirstNameWithDynasty] подходит ко мне и спрашивает, не хочу ли я вылечить свои недуги;x
+EVTOPTAwarlock.5;Если колдуны могут это сделать, то они действительно могущественны;x
+EVTOPTBwarlock.5;Нет, это лицемерный фарс. Проваливай;x
+EVTDESCwarlock.6;[From.GetFirstNameWithDynasty] подходит ко мне и спрашивает, не хочу ли я излечить свои болезни и уродства.;x
+EVTDESCwarlock.7;Худой бледный колдун привел большого быка и пролил его кровь на пол, все время повторяя странные слова своего темного заклинания.;x
+EVTOPTAwarlock.7;[From.GetFirstNameWithDynasty] исцеляется магией колдунов;x
+EVTDESCwarlock.8;Во времена давно минувших дней колдунов из Кварта боялись и уважали за их силу во всем известном мире. Однако эта сила и страх в последние годы приносят всё больше неприятностей. Для многих людей теперь Вечерняя Тень не более, чем фокус и лицемерие.;x
+EVTOPTAwarlock.8;[From.GetFirstNameWithDynasty] отказывается от помощи колдунов и не исцеляется.;x
+CUSTOMTOOLTIPwarlock_saved_me;Эта возможность доступна для вас, потому что была принесена жертва для вашей защиты.;x
+warlock_protection_plot;[Root.GetFirstNameWithDynasty] - защитить от заговоров.;x
+warlock_protection_plot_desc;Вы можете повелеть колдунам защитить этого человека от заговора с целью его убийства.;x
+warlock_protection_battle;[Root.GetFirstNameWithDynasty] - защитить в битве.;x
+warlock_protection_battle_desc;Вы можете повелеть колдунам защитить этого человека в битве.;x
+warlock_heal_basic;Лечение заболеваний;x
+warlock_heal_basic_desc;Колдуны исцелят этого человека от травм и болезней.;x
+warlock_heal_chosen;Вылечить уродства.;x
+warlock_heal_chosen_desc;Колдуны избавят человека от его уродств.;x
+warlock_protection_plot_self;Защитить себя от заговоров;x
+warlock_protection_plot_self_desc;Вы можете использовать колдунов, чтобы защитить себя от заговора с целью убийства.;x
+warlock_protection_battle_self;Защитить себя в битве;x
+warlock_protection_battle_self_desc;Прикажите колдунам защитить себя в битве;x
+warlock_heal_basic_self;Излечить себя от болезней.;x
+warlock_heal_basic_self_desc;Служители излечат ваши травмы и болезни;x
+warlock_heal_chosen_self;Излечить свои уродства;x
+warlock_heal_chosen_self_desc;Служители избавят вас от уродств;x
+warlock_shade_evening;[Root.GetMagicPlotRevealLoc];x
+GetMagicPlotRevealLoc_Warlock;Выпить Вечернюю Тень;x
+GetMagicPlotRevealLoc_Gen;Тёмное гадание;x
+warlock_shade_evening_desc;Выполните это действие, чтобы попытаться получить видения опасностей для вас или ваших родственников. ;x
+CUSTOMTOOLTIPdiseasecureallow;Вы заплатили колдунам и совершили жертвоприношение;x
+CUSTOMTOOLTIPdeformedcureallow;Вы заплатили колдунам и совершили жертвоприношение.;x
+CUSTOMTOOLTIPwarlock_nosacrafice;Это не считается жертвой Р'Глору;x
+show_warlock;Показать список действий Колдуна;x
+show_warlock_desc;Открывает список действий.;x
+hide_warlock;Скрыть список действий Колдуна;x
+hide_warlock_desc;Закрывает список действий.;x
+EVTDESCwarlock.9;Выберите из списка доступных взаимодействий.;x
+EVTOPTAwarlock.9;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] - защитить от заговоров.;x
+EVTOPTBwarlock.9;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] - защитить в битве.;x
+EVTOPTCwarlock.9;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] - исцелить болезни.;x
+EVTOPTDwarlock.9;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] - исцелить уродства.;x
+EVTOPTEwarlock.9;Не берите в голову;x
+EVTOPTFwarlock.9;Взаимодействия колдуна;x
+warlock_action;Список действий колдуна;x
+warlock_action_desc;Вы сделали пожертвование Колдуну, и поэтому можете принять меры против человека, известного как [Root.GetTitle] [Root.GetFirstNameWithDynasty].;x
+warlock_magic;Подарки Колдунам;x
+donate_money_to_warlocks;Сделать пожертвование Колдунам;x
+donate_money_to_warlocks_desc;Вы можете сделать пожертвование Колдунам, чтобы получить благосклонность к ним и попытаться использовать их магию.;x
+donation_to_warlocks;Жертвует Колдунам;x

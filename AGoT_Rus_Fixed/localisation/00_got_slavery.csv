@@ -1,610 +1,610 @@
-#CODE;ENGLISH;x;;;
-ca_asoiaf_slavepit_1;Небольшой лагерь рабов;x;;;
-ca_asoiaf_slavepit_2;Средний лагерь рабов;x;;;
-ca_asoiaf_slavepit_3;Большой лагерь рабов;x;;;
-ca_asoiaf_slavepit_4;Крупный лагерь рабов;x;;;
-ca_asoiaf_slavepit_5;Огромный лагерь рабов;x;;;
-ct_asoiaf_slavepit_1;Небольшой лагерь рабов;x;;;
-ct_asoiaf_slavepit_2;Средний лагерь рабов;x;;;
-ct_asoiaf_slavepit_3;Большой лагерь рабов;x;;;
-ct_asoiaf_slavepit_4;Крупный лагерь рабов;x;;;
-ct_asoiaf_slavepit_5;Огромный лагерь рабов;x;;;
-tp_asoiaf_slavepit_1;Небольшой лагерь рабов;x;;;
-tp_asoiaf_slavepit_2;Средний лагерь рабов;x;;;
-tp_asoiaf_slavepit_3;Большой лагерь рабов;x;;;
-tp_asoiaf_slavepit_4;Крупный лагерь рабов;x;;;
-tp_asoiaf_slavepit_5;Огромный лагерь рабов;x;;;
-fp_asoiaf_slavepit_1;Небольшой лагерь рабов;x;;;
-fp_asoiaf_slavepit_2;Средний лагерь рабов;x;;;
-fp_asoiaf_slavepit_3;Большой лагерь рабов;x;;;
-fp_asoiaf_slavepit_4;Крупный лагерь рабов;x;;;
-fp_asoiaf_slavepit_5;Огромный лагерь рабов;x;;;
-no_asoiaf_slavepit_1;Небольшой лагерь рабов;x;;;
-no_asoiaf_slavepit_2;Средний лагерь рабов;x;;;
-no_asoiaf_slavepit_3;Большой лагерь рабов;x;;;
-no_asoiaf_slavepit_4;Крупный лагерь рабов;x;;;
-no_asoiaf_slavepit_5;Огромный лагерь рабов;x;;;
-slave_modifier_1;Маргинальный рабский труд;x;;;
-slave_modifier_1_desc;Небольшое количество рабов дополняют труд рабочих этой провинции.;x;;;
-slave_modifier_2;Ограниченное применение рабов;x;;;
-slave_modifier_2_desc;Рабов по-прежнему значительно меньше, нежели свободных рабочих.;x;;;
-slave_modifier_3;Умеренный рабский труд;x;;;
-slave_modifier_3_desc;Эта провинция имеет достаточно рабов, чтобы обеспечить замену свободным рабочим.;x;;;
-slave_modifier_4;Обширный рабский труд;x;;;
-slave_modifier_4_desc;Эта провинция имеет большое количество невольничьих лагерей и практически полностью обеспечивается рабами.;x;;;
-slave_modifier_5;Рабовладельческая экономика;x;;;
-slave_modifier_5_desc;Десятки тысяч рабов проживают в лагерях этой провинции, заменяя труд свободных рабочих и крестьян.;x;;;
-slave_modifier_1_fp;Несущественный рабский труд;x;;;
-slave_modifier_1_fp_desc;В этой провинции всего несколько рабов, но достаточно, чтобы дополнить усилия свободных рабочих.;x;;;
-slave_modifier_2_fp;Ограниченный рабский труд;x;;;
-slave_modifier_2_fp_desc;Хотя их еще намного меньше, чем свободных работников, рабы обеспечивают заметную часть труда этой провинции.;x;;;
-slave_modifier_3_fp;Умеренный рабский труд;x;;;
-slave_modifier_3_fp_desc;В этой провинции есть много рабовладельческих лагерей, которые обеспечивают достаточно большую рабочую силу для создания жизнеспособной альтернативы свободным слугам.;x;;;
-slave_modifier_4_fp;Обширный рабский труд;x;;;
-slave_modifier_4_fp_desc;В этой провинции есть огромное количество рабовладельческих лагерей, и большая часть труда выполняется рабами.;x;;;
-slave_modifier_5_fp;Экономика рабов;x;;;
-slave_modifier_5_fp_desc;Десятки тысяч рабов живут в этой провинции и обеспечивают основу ее экономики. Почти все важные работы выполняются рабами.;x;;;
-CB_NAME_SLAVE_RAID;Захват рабов;x;;;
-WAR_NAME_SLAVE_RAID;$ORDER$ $FIRST_ADJ$ захватывает рабов в $SECOND$;x;;;
-slave_raid;Захват рабов;x;;;
-slave_raid_desc;Напасть на §Y$TARGET$§!, ограбить города и увести жителей в рабство.;x;;;
-CB_NAME_SLAVE_REVOLT;Восстание рабов в [Title.GetBaseName];x;;;
-WAR_NAME_SLAVE_REVOLT;$ORDER$ [Title.GetAdjective] восстание рабов;x;;;
-slave_revolt;Восстание рабов;x;;;
-slave_revolt_desc;Разорвали ваши цепи и восстали против жестоких хозяев земли [Title.GetName].;x;;;
-SLAVE_REVOLT;[Root.Kingdom.GetAdjective] восстание рабов;x;;;
-CB_NAME_EMANCIPATION;Освобождение [Title.GetBaseName];x;;;
-WAR_NAME_EMANCIPATION;$ORDER$ $FIRST_ADJ$-$SECOND_ADJ$ война за освобождение;x;;;
-war_of_emancipation;Война за освобождение;x;;;
-war_of_emancipation_desc;Властители §Y$TITLE$§! практикуют варварские рабовладельческие обычаи. Мы должны освободить их рабов!;x;;;
-CB_NAME_LIBERATION;Освобождение [Title.GetBaseName];x;;;
-WAR_NAME_LIBERATION;$CLAIMANT$ $ORDER$ освобождение $OTHER_TITLE$;x;;;
-war_of_liberation;Война за освобождение;x;;;
-war_of_liberation_desc;Властители §Y$TITLE$§! практикуют варварские рабовладельческие обычаи. Мы должны завоевать их земли и освободить каждого раба мечом!;x;;;
-CB_NAME_ENSLAVEMENT;Поработить [Title.GetBaseName];x;;;
-WAR_NAME_ENSLAVEMENT;$ORDER$ $FIRST_ADJ$ война за порабощение $OTHER_TITLE$;x;;;
-war_of_enslavement;Война за порабощение;x;;;
-war_of_enslavement_desc;Недавнее вторжение §Y$TITLE$§! поставило под угрозу нашу экономику и процветание. Мы должны атаковать их и восстановить наш образ жизни и рабовладение!;x;;;
-ADVENTURE_LIBERATOR;Освободительная армия [Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal];x;;;
-TOOLTIPPOW;[Root.GetFirstName] является пленником.;x;;;
-LOSESLAVEFROM;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] больше не будет вашим рабом\n;x;;;
-EVTTOOLTIPPUTUPFORSALE;будет выставлен[_] на продажу\n;x;;;
-title_slave;Раб;x;;;
-opinion_my_owner;Мой хозяин;x;;;
-opinion_my_slave;Мой раб;x;;;
-opinion_enslaved_me;Поработил[_] меня;x;;;
-opinion_beat_slaves_intimidation;Боится наказания;x;;;
-opinion_beat_slaves_resentment;Жестокое обращение;x;;;
-slave;Раб;x;;;
-slave_desc;Этот персонаж - раб, собственность, принадлежащая своему хозяину.;x;;;
-former_slave;Бывший раб;x;;;
-former_slave_desc;Этот персонаж когда-то был рабом, но, либо силой оружия, либо милостью хозяина был освобожден.;x;;;
-slave_owner;Рабовладелец;x;;;
-slave_owner_desc;Этот персонаж владеет рабами.;x;;;
-slave_trader;Работорговец;x;;;
-slave_trader_desc;Этот персонаж не только владеет рабами, но и осуществляет торговлю живым товаром.;x;;;
-liberator;Освободитель[____];x;;;
-liberator_desc;Этот персонаж является фанатичным противником рабства, пытаясь искоренить его любой ценой.;x;;;
-plot_escape_slavery;Организовать побег;x;;;
-plot_escape_slavery_title;Организовать побег;x;;;
-plot_escape_slavery_desc;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] организует побег, чтобы сбежать из своих оков и стать свободн[From.GetOyYm].;x;;;
-slavery;Рабство;x;;;
-slavery_desc;Рабство может иметь различные формы  и широко распостранено в мире, однако запрещено религией Вестероса.;x;;;
-slavery_0;Рабство отменено;x;;;
-slavery_0_option;Незаконно;x;;;
-slavery_0_desc;Рабство строго наказуемо во всех его формах.;x;;;
-slavery_1;Долговая кабала;x;;;
-slavery_1_option;Де-факто;x;;;
-slavery_1_desc;Рабство технически запрещено, однако некоторые 'слуги' являются невольниками.;x;;;
-slavery_2;Рабский труд;x;;;
-slavery_2_option;Легально;x;;;
-slavery_2_desc;Рабство полностью узаконено и рабами свободно торгуют на рынках.;x;;;
-slavery_3;Рабство;x;;;
-slavery_3_option;Рабство;x;;;
-slavery_3_desc;Пленники могут быть обращены в рабов, однако запрещено их покупать и продавать, а так же их дети рождаются свободными.;x;;;
-treaty_breach;Нарушено мирное соглашение;x;;;
-treaty_breach_desc;Этот народ принебрег мирным договором и уязвим для специального casus belli.;x;;;
-treaty_breach_0;Нарушен анти-рабовладельческий договор;x;;;
-treaty_breach_0_option;Борьба с рабством;x;;;
-treaty_breach_0_desc;[This.GetName] нарушил условия договора и незаконно возобновил рабство. Это дает повод для освободительной войны. Нарушение исечет, если если война за освобождение будет выиграна.;x;;;
-treaty_breach_1;Вынужден отменить рабство;x;;;
-treaty_breach_1_option;Освобожден;x;;;
-treaty_breach_1_desc;[This.GetName] недавно был освобождён другим государством от рабства. Это делает его целью для войны. Повод пропадет, если рабовладельцы победят.;x;;;
-enter_slave_trade;Заняться работорговлей;x;;;
-enter_slave_trade_desc;В настоящее время, ваша семья занимается только традиционными товарами, но в работорговле можно заработать хорошие деньги. Возможно, ваши корабли смогут найти хорошее применение на этом рынке.;x;;;
-leave_slave_trade;Покинуть работорговлю;x;;;
-leave_slave_trade_desc;Ваши корабли бороздят моря, нагруженные живим товаром и приносят вам значительный доход. Однако, это не даётся вам легко.;x;;;
-buy_slave;Купить раба;x;;;
-buy_slave_desc;Купить нового раба у работорговца.;x;;;
-buy_bulk_slaves;Купить рабов для вашего лагеря;x;;;
-buy_bulk_slaves_desc;Купить один уровень вашего лагеря у работорговца за 400¤.;x;;;
-sell_bulk_slaves;Продать рабов из вашего лагеря;x;;;
-sell_bulk_slaves_desc;Продать один уровень вашего лагеря за 400¤.;x;;;
-free_bulk_slaves;Освободить рабов из вашего лагеря.;x;;;
-free_bulk_slaves_desc;Освободить один уровень рабов из вашего лагеря.;x;;;
-open_slave_management_menu;Открыть меню управления рабами;x;;;
-open_slave_management_menu_desc;Отобразить решения, связанные с рабами.;x;;;
-close_slave_management_menu;Закрыть меню управления рабами;x;;;
-close_slave_management_menu_desc;Скрыть решения, связанные с рабами.;x;;;
-enslave_prisoner;Поработить Заключённого;x;;;
-enslave_prisoner_desc;Пока [Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal] лишен[Root.GetEndA] свободы, [Root.GetSheHe] может быть примен[Root.GetEYo]н[Root.GetEndA] более практично, чем просто гнить в камере.;x;;;
-sell_prisoner;Продать работорговцу;x;;;
-sell_prisoner_desc;Од[Root.GetNaIn] из ваших заключённых, [Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal], гниёт в подземельях и никто не заметит, если [Root.GetSheHe] исчезнет. Возможно, вы могли бы получить немного быстрых денег для своих проблем?;x;;;
-sell_slave;Продать;x;;;
-sell_slave_desc;Если [Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal] [Root.GetOnlyDynastyName] не удовлетворяет вашим потребностям, вы можете продать [Root.GetHerHis];x;;;
-TOOLTIPSELLSLAVEUNSULLIED;[Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal] НЕ Безупречный\n;x;;;
-TOOLTIPSELLSLAVETRADER;Один работорговец готов продать\n;x;;;
-TOOLTIPSELLSLAVENOCROWNLAW;[This.GetTitledFirstName] не имеет права на корону\n;x;;;
-TOOLTIPSELLSLAVENOTSELLING;[This.GetTitledFirstName] не готов[This.GetEndA] продать\n;x;;;
-lash_slave;Бить плетью;x;;;
-lash_slave_desc;[Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal] [Root.GetOnlyDynastyName] выводится стражей из темницы и Вы даёте приказ бить [Root.GetHerHis] плетьми. Вы не будете выглядеть справедлив[GetOyYm], зато многие усвоят урок.;x;;;
-breed_slave;Скрестить с другим рабом;x;;;
-breed_slave_desc;Хороших рабов тяжело найти. К счастью, рабы размножаются и [Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal] [Root.GetOnlyDynastyName] по Вашему приказу может скреститься с рабом противоположного пола.;x;;;
-TOOLTIPBREEDSLAVEAVAILABLE;[From.GetTitledFirstName] владеет по крайней мере одним рабом, которого можно свести с персонажем [Root.GetFirstName]\n;x;;;
-stop_breeding_slave;Прекратить совокупление рабов;x;;;
-stop_breeding_slave_desc;Прекратить совокупление между рабами [Root.GetFirstName] и [Root.Spouse.GetFirstName].;x;;;
-EVTTOOLTIPSLAVERY0;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] будет освобождён[This.GetEndA].;x;;;
-EVTDESCSLAVERY1;Ваш бывший раб, [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], сумел[From.GetEndA] оставить службу и, в настоящее время, является свободн[From.GetOyYm].;x;;;
-EVTOPTASLAVERY1;Так и быть;x;;;
-EVTDESCSLAVERY100;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] договори[From.GetLasLsya] о встрече в надежде продать вам нового раба. Это урожден[FromFrom.GetKaEts] [FromFrom.GetCultureAdj]ой земли по имени [FromFrom.GetFirstName]. [From.GetFirstName] приводит [FromFrom.GetHerHis] к вам в цепях и позволяет осмотреть товар.;x;;;
-EVTOPTASLAVERY100;Это животное не стоит даже времени, которое я потратил.;x;;;
-EVTOPTBSLAVERY100;Я куплю [FromFrom.GetHerHis] за 15 золотых.;x;;;
-EVTOPTCSLAVERY100;Я куплю [FromFrom.GetHerHis] за 40 золотых.;x;;;
-EVTOPTDSLAVERY100;Я куплю [FromFrom.GetHerHis], и предложу [FromFrom.GetHerHim] лучшую сделку ;x;;;
-EVTOPTESLAVERY100;Я куплю [FromFrom.GetHerHis] за 75 золотых.;x;;;
-EVTOPTESLAVERY100B;Я куплю раба за 75 золотых.;x;;;
-EVTOPTFSLAVERY100;Я куплю раба за 115 золотых.;x;;;
-EVTOPTGSLAVERY100;Я куплю раба за 150 золотых.;x;;;
-EVTOPTHSLAVERY100;Я куплю раба за 225 золотых.;x;;;
-EVTDESCSLAVERY102;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] приводится Вами в цепях на встречу с [FromFrom.GetManWoman]ой по имени [FromFrom.GetFirstNameWithDynasty], состоятельн[FromFrom.GetOyYm] работоргов[FromFrom.GetKoyTsem] из города [FromFrom.Capital.GetName]. [FromFrom.GetSheHeCap] тщательно осматривает раба и бросает вам в лицо обвинение. 'Вы пытаетесь обмануть меня?' [FromFrom.GetSheHe] в ярости, 'Это животное не стоит даже потраченного времени, я не могу купить [From.GetHerHis].';x;;;
-EVTOPTASLAVERY102;Тогда, полагаю, мне придётся искать того, кто сможет.;x;;;
-EVTOPTBSLAVERY102;Возможно, я долж[GetNaEn] бросить эту затею.;x;;;
-EVTDESCSLAVERY10399;Вы решили что необходимо сделать предложение за раба, сколько монет вы готовы дать?;x;;;
-EVTDESCSLAVERY104;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] приводится Вами в цепях на встречу с [FromFrom.GetManWoman]ой по имени [FromFrom.GetFirstNameWithDynasty], состоятельн[FromFrom.GetOyYm] работоргов[FromFrom.GetKoyTsem] из города [FromFrom.Capital.GetName]. [FromFrom.GetSheHeCap] внимательно осматривает раба и обращается к вам, называя свою цену.;x;;;
-EVTOPTASLAVERY104;Готово. Приятно иметь дело с вами.;x;;;
-EVTOPTBSLAVERY104;Смешно! Возможно, другой работорговец предложит мне более выгодную цену.;x;;;
-EVTOPTCSLAVERY104;Возможно, я долж[GetNaEn] просто бросить эту затею.;x;;;
-EVTDESCSLAVERY105;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] вручает один конец цепи вам и говорит: "Готово, [FromFrom.GetSheHe] теперь принадлежит Вам. Приятно иметь с Вами дело.";x;;;
-EVTOPTASLAVERY105;Прекрасное новое приобретение!;x;;;
-EVTDESCSLAVERY106;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] готов[From.GetEndA] ударить вас по лицу. 'Вы с ума сошли? [FromFrom.GetSheHeCap] стоит в десять раз дороже! Возможно, другой торговец предложит мне лучшую цену.';x;;;
-EVTOPTASLAVERY106;Полагаю, вы не сможете столько выручить.;x;;;
-EVTDESCSLAVERY107;До вас дошла ужасная новость. Од[From.GetNaIn] из ваших вассалов, [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], продал[From.GetEndA] человека в рабство!;x;;;
-EVTOPTASLAVERY107;Законы богов и людей запрещают такое злодеяние.;x;;;
-EVTDESCSLAVERY108;Кажется, ваши последние действия не остались незамеченными. Ваш сюзерен, [From.GetTitledFirstName], узнал[From.GetEndA] о ваших сделках с работорговцами.;x;;;
-EVTOPTASLAVERY108;Может [Root.Religion.GetRandomGodName] защитит меня.;x;;;
-EVTDESCSLAVERY110;Вам доложили ужасную новость! [FromFrom.GetTitledFirstNameWithDynasty] продал[From.GetEndA] ваш[From.GetUEgo] [From.GetRootRelation][From.GetEndAOpp], известного как [From.GetTitledFirstName] в рабство!;x;;;
-EVTOPTASLAVERY110;Как [FromFrom.GetSheHe] посмел[FromFrom.GetEndA]!;x;;;
-EVTTOOLTIPSLAVERY152;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] попадает на невольничий рынок;x;;;
-EVTDESCSLAVERY153;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] приведен[From.GetEndA] вашими стражниками из [From.GetHerHis] лагеря, слуги моют и готовят товар для работорговца;x;;;
-EVTOPTASLAVERY153;Время делать деньги.;x;;;
-EVTOPTBSLAVERY153;С другой стороны, возможно, мне всё ещё нужны [From.GetHerHis] руки.;x;;;
-EVTDESCSLAVERY154;[From.GetName] приводится Вашими стражниками из [From.GetHerHis] камеры, чистят, купают, и готовят отвести на рынок. Однако, вы можете вызвать интерес только у мелких покупателей из-за ограниченного [From.GetHerHis] использования . Это означает, что предложений довольно мало.;x;;;
-EVTOPTASLAVERY154;Я потребую столько, сколько смогу;x;;;
-EVTOPTBSLAVERY154;Нет, я отвергаю это предложение;x;;;
-EVTDESCSLAVERY200;Вы решили приобрести раба и договорились о встрече с работорговцем;x;;;
-EVTOPTASLAVERY200;Встретиться с работорговцем;x;;;
-EVTOPTBSLAVERY200;Я передумал[GetEndA].;x;;;
-EVTTOOLTIPSLAVERY201;показывает вам свой товар;x;;;
-EVTDESCSLAVERY201;Вы договорились о встрече с состоятельн[From.GetOyYm] [From.GetManWoman]ой по имени [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] из города [From.Capital.GetName], котор[From.GetAyaYy] хочет купить одного из ваших рабов.;x;;;
-EVTOPTASLAVERY201;Пожалуйста, выбирайте любого понравившегося!;x;;;
-EVTDESCSLAVERY202;Вы посещаете невольничий рынок и встречаетесь с персонажем [From.GetFirstNameWithDynasty], богат[From.GetOyYm] работоргов[From.GetKoyTsem] из города [From.Capital.GetName]. [From.GetSheHeCap] показывает вам свой товар и интересуется, какого раба вы желаете приобрести.;x;;;
-EVTOPTASLAVERY202;Новую постельную рабыню для моего гарема.;x;;;
-EVTOPTBSLAVERY202;Телохранителя, опытного с хорошими навыками.;x;;;
-EVTOPTCSLAVERY202;Нового советника для моего двора.;x;;;
-EVTOPTESLAVERY202;Подходит для обучения в духовенство;x;;;
-EVTOPTDSLAVERY202;Я передумал[GetEndA].;x;;;
-EVTDESCSLAVERY203;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] говорит вам, что [From.GetSheHe] находится на рынке для покупки нового постельного раба. Вы выбираете несколько самых привлекательных, чтобы удовлетворить [From.GetHerHis];x;;;
-EVTOPTASLAVERY203;Скажите мне, кого бы вы предпочли?;x;;;
-EVTTOOLTIPSLAVERY204;выбирает раба для покупки;x;;;
-EVTDESCSLAVERY204;[From.GetTitle] [From.GetFirstName] приводит своих лучших постельных рабов. 'Скажите мне, - говорит [From.GetSheHe], - кого бы Вы предпочли?';x;;;
-EVTOPTASLAVERY204;Думаю, этого;x;;;
-EVTDESCSLAVERY205;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] говорит вам, что ищет нового телохранителя. Вы вызываете лучших бойцов из ваших ям, чтобы [From.GetSheHe] мог[From.GetNoneE] выбрать..;x;;;
-EVTOPTASLAVERY205;Скажите, кого Вы предпочли?;x;;;
-EVTTOOLTIPSLAVERY206;выбирает раба для покупки;x;;;
-EVTDESCSLAVERY206;[From.GetTitle] [From.GetFirstName] приводит своих лучших бойцов. 'Скажите мне, - говорит [From.GetSheHe], - кого Вы предпочли?';x;;;
-EVTDESCSLAVERY207;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] говорит вам, что [From.GetSheHe] ищет верного помощника для работы в Совете. Вы выбираете самых опытных своих рабов, чтобы представить для выбора.;x;;;
-EVTOPTASLAVERY207;Скажите, кого Вы предпочли?;x;;;
-EVTTOOLTIPSLAVERY208;выбирает раба для покупки;x;;;
-EVTDESCSLAVERY209;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] сообщает вам, что [From.GetSheHe] ищет юного раба для обучения в качестве жреца веры [From.Religion.GetName]. У вас есть несколько детей-рабов, которые предстали перед [From.GetHerHis] взглядом для выбора.;x;;;
-EVTDESCSLAVERY208;[From.GetTitle] [From.GetFirstName] приводит своих самых опытных советников. 'Скажите мне, - говорит [From.GetSheHe], - Слугу какого рода деятельности вы хотите?';x;;;
-EVTOPTASLAVERY208;Харизматичный дипломат.;x;;;
-EVTOPTBSLAVERY208;Проницательный служащий.;x;;;
-EVTOPTCSLAVERY208;Мудрый ученый;x;;;
-EVTOPTDSLAVERY208;Хитрый шпион.;x;;;
-EVTDESCSLAVERY210;[From.GetTitle] [From.GetFirstName] приводит своих детей-рабов к вам. 'Скажите мне, - говорит [From.GetSheHe], - какого из них вы хотите взять в ваш храм и обучать?';x;;;
-EVTOPTASLAVERY210;Этот;x;;;
-EVTDESCSLAVERY251;Вы договорились встретиться с состоятельн[FromFrom.GetOyYm] [FromFrom.GetManWoman]ой по имени [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] из города [FromFrom.Capital.GetName], котор[FromFrom.GetAyaYy] хочет купить одного из ваших рабов. [FromFrom.GetSheHeCap] наконец делает выбор, кладя одну руку на плечо персонажа [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal]. - 'Вот, я думаю. Сколько [From.GetSheHe] стоит?';x;;;
-EVTOPTASLAVERY251;Гораздо больше, чем вы можете себе позволить! Прочь!;x;;;
-EVTOPTBSLAVERY251;15 золотых.;x;;;
-EVTOPTCSLAVERY251;40 золотых.;x;;;
-EVTOPTDSLAVERY251;Больше…;x;;;
-EVTOPTESLAVERY251;75 золотых.;x;;;
-EVTOPTFSLAVERY251;115 золотых.;x;;;
-EVTOPTGSLAVERY251;150 золотых.;x;;;
-EVTOPTHSLAVERY251;225 золотых.;x;;;
-EVTDESCSLAVERY25399;[FromFrom.GetTitledFirstNameWithDynastyAndTitleNoRegnal] - очень ценный раб, за него нужно заплатить высокую цену…;x;;;
-EVTDESCSLAVERY252;[From.GetTitle] [From.GetFirstName] возмущен[From.GetEndA] вашим выбором. 'Этот!? -бормочет [From.GetSheHe], - этот не продается ни при каких условиях!'.;x;;;
-EVTOPTASLAVERY252;В таком случае, я просто найду другого работорговца.;x;;;
-EVTOPTBSLAVERY252;Может быть, мне не нужен новый раб.;x;;;
-EVTDESCSLAVERY253;'Ах, [FromFrom.GetFirstName], - говорит [From.GetTitle] [From.GetFirstName], - Мудрый выбор.' - [From.GetSheHeCap] на момент задумывается, чтоб назвать окончательную стоимость .;x;;;
-EVTOPTASLAVERY253;Готово. Деньги за вами.;x;;;
-EVTOPTCSLAVERY253;Ни один раб не стоит таких денег! С меня хватит.;x;;;
-EVTDESCSLAVERY254;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] соглас[GetNaEnGetNaEn] на вашу цену и обмен состоится. [From.GetSheHeCap] передает вам золото, а вы - кнут.;x;;;
-EVTOPTASLAVERY254;Дело сделано.;x;;;
-EVTDESCSLAVERY255;'Эта цена возмутительна! - бормочет [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], - я буду делать дела в другом месте.';x;;;
-EVTOPTASLAVERY255;Ну, вы не можете угодить каждому.;x;;;
-EVTDESCSLAVERY301;Пока стражники отправляются в рабские кварталы, чтобы найти персонажа по имени [From.GetFirstName],  [slave_to_breed_with.GetFirstName] предстаёт перед Вами.;x;;;
-EVTOPTASLAVERY301;Этот, что ли?;x;;;
-EVTOPTBSLAVERY301;Ба, никто из них не подходит!;x;;;
-EVTOPTCSLAVERY301;[From.GetFirstName] и ты станете партнёрами - я приказываю;x;;;
-EVTDESCSLAVERY303;Вы говорите, чтобы [From.GetFirstName] приступил[From.GetEndA], но [From.GetSheHe] стоит и вызывающе смотрит вам в глаза. 'Никогда! Вам придется приказать страже избить меня до смерти и трахнуть мой труп!';x;;;
-EVTOPTASLAVERY303;С удовольствием. Стража, кнут!;x;;;
-EVTOPTBSLAVERY303;Возможно, мне стоит отказаться.;x;;;
-EVTDESCSLAVERY304;[From.GetFirstName] выглядит неуверенно и слушает ваши убедительные доводы. 'Д-да... да, хозяин, - [From.GetSheHe] говорит, - сделаю это.';x;;;
-EVTOPTASLAVERY304;Великолепно! Где второй?;x;;;
-EVTDESCSLAVERY307;[From.GetFirstName] неуверенно слушает ваш приказ, но все-таки подчиняется. Они остаются в комнате вдвоем, чтобы произвести для вас третьего.;x;;;
-EVTOPTASLAVERY307;День удался!;x;;;
-EVTTOOLTIPSLAVERY500;[This.GetFirstName] будет избит[This.GetEndA];x;;;
-EVTDESCSLAVERY501;[From.GetFirstName] был[From.GetEndA] подвешен[From.GetEndA] вашими стражниками, которые начали избивать [From.GetHerHis] кнутами, вы насчитали тридцать девять ударов. Когда стража снимает раба, [From.GetFirstName] еле стоит на своих ногах и воет от боли, но, к счастью, ваша собственность не получила увечий.;x;;;
-EVTOPTASLAVERY501;Пусть это послужит примером для остальных.;x;;;
-EVTOPTBSLAVERY501;Кровать или кнут, раб. Выбор за тобой.;x;;;
-EVTDESCSLAVERY502;Ваши стражники подвесили [From.GetFirstName] и начали избивать [From.GetHerHis] кнутами, вы насчитали тридцать девять ударов. Когда стража снимает раба, [From.GetFirstName] сгибается и падает на [From.GetHerHis] колени. Некоторые удары впились слишком глубоко и могут оставить шрамы.;x;;;
-EVTDESCSLAVERY503;[From.GetFirstName] был[From.GetEndA] подвешен[From.GetEndA] вашими стражниками, которые начали избивать [From.GetHerHis] кнутами, вы насчитали тридцать девять ударов. Когда стража снимает раба, [From.GetFirstName] валится на землю и лежит без чувств. Кнут впивался глубоко, возможно, слишком глубоко. [From.GetSheHe] получил[From.GetEndA] слишком тяжелых ударов и может остаться калекой на всю жизнь.;x;;;
-EVTDESCSLAVERY504;From.GetFirstName] был[From.GetEndA] подвешен[From.GetEndA] вашими стражниками, которые начали избивать [From.GetHerHis] кнутами, вы насчитали тридцать девять ударов. После того, как дело сделано, [From.GetFirstName] падает на землю без чувств. [From.GetSheHeCap] мертв[From.GetEndA].;x;;;
-EVTOPTASLAVERY504;Повестьте тело в невольничьем лагере, как назидание остальным.;x;;;
-EVTOPTBSLAVERY504;...хорошо, но многовато.;x;;;
-EVTDESCSLAVERY601;Ваши стражники пробудили вас посреди ночи с ужастной новостью - [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], один из ваших рабов, убежал[From.GetEndA]!;x;;;
-EVTOPTASLAVERY601;Проклятие!;x;;;
-EVTDESCSLAVERY603;Человек по имени [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] прибывает ко двору. [From.GetSheHeCap] утверждает, что бежал[From.GetEndA] из рабства из города [FromFrom.Capital.GetName].;x;;;
-EVTDESCSLAVERY604;Ваш[From.GetEndA] [From.GetRootRelation], [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], сбежал[From.GetEndA] из рабства!;x;;;
-EVTDESCSLAVERY605;Вы проснулись поздно вечером от ужасных воплей. К вам в покои врываются стражники, волоча раба по имени [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], несмотря на то, что [From.GetSheHe] упирается и кричит. 'Мы поймали это животное при попытке убежать, - Объясняет стражник, - что вы прикажете сделать с ним?';x;;;
-EVTOPTASLAVERY605;Отпустите [From.GetHerHis] с предупреждением.;x;;;
-EVTOPTBSLAVERY605;Избить [From.GetHerHis]!;x;;;
-EVTOPTCSLAVERY605;Избить [From.GetHerHis], найдите того, кто помогал ему и избейте [From.GetHerHis] так же!;x;;;
-EVTTOOLTIPSLAVERY1000;[This.GetTitledFirstName] получает один уровень рабского лагеря в своейстолице.;x;;;
-EVTTOOLTIPSLAVERY1001;[This.GetTitledFirstName] теряет один уровень рабского лагеря в своей столице.;x;;;
-EVTDESCSLAVERY1010;У вас есть рабы за пределами вашей столицы. Они будут присланы в ваши лагеря в город [Root.Capital.GetName].;x;;;
-EVTDESCSLAVERY1100;Од[new_slave.GetNaIn] из рабов в ваших лагерях отличи[new_slave.GetLasLsya], и вы полагаете, что [new_slave.GetSheHe] может стать хорош[new_slave.GetEyIm] домашн[new_slave.GetEyIm] слугой. Привести [new_slave.GetHerHis] ко двору?;x;;;
-EVTDESCSLAVERY1100B;Од[new_slave.GetNaIn] из рабов в ваших домах удовольствий отличи[new_slave.GetLasLsya] в ремесле любовных утех. [new_slave.GetSheHeCap] хорош[new_slave.GetEndA] собой, пользуется популярностью у покровителей и умел[new_slave.GetEndA] в искусстве любви. На рынке за н[new_slave.GetHerHis] могли бы дать хорошую цену, или быть может стоит оставить [new_slave.GetHerHis] для себя.;x;;;
-EVTOPTASLAVERY1100;Да, нечего таланту пропадать.;x;;;
-EVTOPTBSLAVERY1100;Нет, я не нуждаюсь в этом животном.;x;;;
-EVTTOOLTIPSLAVERY1200;Купть рабов для поднятие уровня лагеря за 400 золотых.;x;;;
-EVTDESCSLAVERY1200;Вы накопили значительную сумму и готовы приобрести рабов для лагерей. Вы договариваетесь о встрече с работорговцем, способным поставить необходимое количество рабов.;x;;;
-EVTOPTASLAVERY1200;Встретиться с работорговцем.;x;;;
-EVTTOOLTIPSLAVERY1201;рассматривает ваше предложение.;x;;;
-EVTDESCSLAVERY1201;Богатый человек из города [From.Capital.GetName] прибыл к вам на встречу. [From.GetSheHeCap] утверждает, что [From.GetSheHe] желает купить не одного, а несколько тысяч рабов с ваших лагерей за 400 золотых.;x;;;
-EVTOPTASLAVERY1201;Согласиться;x;;;
-EVTOPTBSLAVERY1201;Отказаться;x;;;
-EVTTOOLTIPSLAVERY1202;предложение будет принято.;x;;;
-EVTDESCSLAVERY1202;Работорговец, человек из города [From.Capital.GetName] по имени [From.GetFirstNameWithDynasty], вкратце рассмаривает ваше предложение. Деньги и кнут поменялись местами и вы можете возвращаться к себе в город [Root.Capital.GetName] с новыми рабами для лагерей.;x;;;
-EVTOPTASLAVERY1202;Это была выгодная инвестиция.;x;;;
-EVTTOOLTIPSLAVERY1203;предложение отвертнуто.;x;;;
-EVTDESCSLAVERY1203;Работорговец, человек из города [From.Capital.GetName] по имени [From.GetFirstNameWithDynasty], вкратце рассматривает ваше предложение и отказывает. [From.GetSheHeCap] утверждает, что [From.GetSheHe] не может себе сейчас позволить продать столько рабов.;x;;;
-EVTOPTASLAVERY1203;Куплю у другого работорговца.;x;;;
-EVTOPTBSLAVERY1203;Брошу эту затею.;x;;;
-EVTTOOLTIPSLAVERY1300;Организовать продажу одного уровня лагерных рабов за 400¤.;x;;;
-EVTDESCSLAVERY1300;Вам кажется, что вы располагаете слишком большим количеством рабов и получаете с них слишком мало прибыли. Вы договариваетесь о встрече с работорговцем, который заинтересован в покупке большого количества рабов.;x;;;
-EVTOPTASLAVERY1300;Встреча с работорговцем.;x;;;
-EVTTOOLTIPSLAVERY1301;рассматривает ваше предложение.;x;;;
-EVTDESCSLAVERY1301;Работорговец, [From.GetManWoman]а из города [From.Capital.GetName] устроил[From.GetEndA] с вами встречу. [From.GetSheHeCap] утверждает, что может продать достаточно рабов для ваших лагерей за тысячу золотых..;x;;;
-EVTOPTASLAVERY1301;Согласиться;x;;;
-EVTOPTBSLAVERY1301;Отказаться;x;;;
-EVTTOOLTIPSLAVERY1302;принимает предложение.;x;;;
-EVTDESCSLAVERY1302;Работорговец, [From.GetManWoman]а из города [From.Capital.GetName] по имени [From.GetFirstNameWithDynasty], вкратце рассматривает ваше предложение. Деньги и кнут поменялись местами, и вы можете возвращаться к себе в город [Root.Capital.GetName] с мешком золота.;x;;;
-EVTOPTASLAVERY1302;Выгодная сделка.;x;;;
-EVTTOOLTIPSLAVERY1303;предложение отвергнуто.;x;;;
-EVTDESCSLAVERY1303;Работорговец, [From.GetManWoman]а из города [From.Capital.GetName] по имени [From.GetFirstNameWithDynasty], вкратце рассматривает ваше предложение. [From.GetSheHeCap] утверждает, что не нуждается в таком количестве рабов.;x;;;
-EVTOPTASLAVERY1303;Продам другому работорговцу.;x;;;
-EVTOPTBSLAVERY1303;Брошу эту затею.;x;;;
-EVTTOOLTIPSLAVERY1400;Освободить один уровень рабов из лагерей.;x;;;
-EVTDESCSLAVERY1400;Ваши рабы шокированы появлением столь помпезной особы в лагере. Вы, в ваших лучших шелках, окружены охраной. Люди выглядят голодными и усталыми, их одежды порваны, а лица мрачны. Вы быстро привлекаете их внимание, объявив о своем решении, освободить их. Рабы проявляют недоверие, но спустя мгновение депрессивная лагеная обстановка сменается на взрыв радостных воплей и благословений в ваш адрес.;x;;;
-EVTOPTASLAVERY1400;Помахать им рукой, пусть идут.;x;;;
-TOOLTIPslave_raid_new_slaves;Три лучших раба из захваченных у персонажа [This.GetName], должны быть доставлены к вам в город [Root.GetTitle] для личной коллекции персонажа [Root.GetFirstName].\n;x;;;
-EVTDESCslavery.4000;[FromFrom.GetName] был[FromFrom.GetEndA] сам[FromFrom.GetOyYm] жесток[FromFrom.GetOyIm], многие заключенные поднимаются. На самом деле, у вас так много заключенных, что вы можете отправить часть из них в город [Root.Capital.GetName] в качестве рабов...;x;;;
-OPTAslavery.4000;Да, отправить их в лагеря!;x;;;
-OPTBslavery.4000;Я не нуждаюсь в них;x;;;
-EVTDESCSLAVERY3000;Во время посещения крупного рабовладельческого города с моим опекуном по имени [Root.Guardian.GetTitledName], я был[GetEndA] шокирован[GetEndA] их ужасными условиями существования. Рабство отвратительно и я постараюсь положить ему конец.;x;;;
-EVTDESCSLAVERY3000B;Во время посещения крупного рабовладельческого города, я стал[GetEndA] свидетел[GetSoftNitseyEm] жалкого существования рабов и понял[GetEndA] их страдания. Рабство - это отвратительное действие, которое меня шокирует и огорчает, я постараюсь положить ему конец.;x;;;
-EVTOPTASLAVERY3000;В один прекрасный день, они будут освобождены...;x;;;
-EVTOPTBSLAVERY3000;Боюсь, так устроен мир;x;;;
-EVTDESCSLAVERY3001;После того, как вы взяли [From.GetHerHis] с собой в город работорговцев, ваш[From.GetEndA] молод[From.GetAyaOy] воспитанни[From.GetTsaK] [From.GetTitledName] приобрел[From.GetEndA] откровенное отвращение к рабству. [From.GetSheHeCap] считает, что ни один человек не заслуживает такого и [From.GetSheHeCap] покля[From.GetLasLsya], что когда-нибудь [From.GetSheHe] освободит рабов...;x;;;
-EVTOPTASLAVERY3001;Похвалить благородные побуждения;x;;;
-EVTOPTBSLAVERY3001;Таков мир, рабство необходимо;x;;;
-EVTDESCSLAVERY3002;[From.GetTitledName] сурово отреагировал[From.GetEndA] на мои новые взгялы. [From.GetSheHeCap] утверждает, что рабство необходимо и мне нужно сосредоточится на более важных делах.;x;;;
-EVTDESCSLAVERY2000;Вы игнорировали договор с другими государствами, запретившими рабство в государстве [Root.PrimaryTitle.GetName], легализовав его. Это будет воспринято как провокация государствами, в которых рабство вне закона и может привести к вторжению для освобождения рабов.;x;;;
-EVTTOOLTIPSLAVERY2001;[This.PrimaryTitle.GetName] может получить повод для вторжения в ваше государство;x;;;
-EVTDESCSLAVERY2001;[Root.PrimaryTitle.GetFOA], ваш совет обращает внимание на то, что [From.GetTitledFirstName] вновь легализировал[From.GetEndA] рабство, несмотря на договор об отмене рабовладения. По всем правам и законам, мы имеем право вторгнуться в [From.GetHerHis] земли и освободить рабов.;x;;;
-EVTDESCSLAVERY403;[Root.PrimaryTitle.GetFOA], ваша рабыня [From.Mother.GetFirstName] родила ребёнка, которого назвали [From.GetFirstName]. Малыш очень похож на вас. Видимо, вы спали с его матерью...;x;;;
-EVTDESCSLAVERY403B;[Root.PrimaryTitle.GetFOA], ваша рабыня [From.Mother.GetFirstName] родила ребёнка, но малыш не пережил родов. Мертвый младенец очень похож на вас. Видимо, вы спали с его матерью...;x;;;
-EVTOPTASLAVERY403;Просто ещё один раб для моей коллекции;x;;;
-EVTOPTASLAVERY403B;Обидно, был бы хороший раб;x;;;
-EVTOPTBSLAVERY403;Ребёнок может жить как м[From.GetOyaOy] незаконнорожденн[From.GetAyaYy] [From.GetRootRelation];x;;;
-EVTOPTBSLAVERY403B;Я объявляю ребёнка своим бастардом;x;;;
-EVTOPTCSLAVERY404;Я объявляю, что ребёнок - м[From.GetOyaOy] истин[From.GetAyaYy] [From.GetRootRelation], а [From.Mother.GetFirstName] - свободноя женщина;x;;;
-EVTOPTDSLAVERY404;[From.GetSheHeCap] - м[From.GetOyaOy] [From.GetRootRelation];x;;;
-EVTDESCSLAVERY401;[Root.PrimaryTitle.GetFOA], ваша рабыня [From.Mother.GetFirstName] родила ребенка. Она назвала [From.GetHerHis] [From.GetFirstName], и [From.GetSheHe] роди[From.GetLasLsya] вашей собственностью.;x;;;
-EVTDESCSLAVERY401B;[Root.PrimaryTitle.GetFOA], ваша рабыня [From.Mother.GetFirstName] родила ребенка, который, к сожалению, не пережил рождения. Она называет [From.GetHerHis] [From.GetFirstName].;x;;;
-EVTOPTASLAVERY401;Я надеюсь, [From.GetSheHe] станет ценным рабом;x;;;
-EVTOPTASLAVERY401B;Другой раб был бы полезен, ну да ладно;x;;;
-EVTTOOLTIPSLAVERY302;велено возлечь с персонажем [From.GetFirstName];x;;;
-EVTDESCSLAVERY15;Работорговля вне закона в земле [Root.TopLiege.PrimaryTitle.GetName], поэтому вы вынуждены оставить это занятие.;x;;;
-EVTOPTASLAVERY15;Но это было так прибыльно!;x;;;
-EVTOPTBSLAVERY253;Я так не думаю, я найду другого раба в другом месте;x;;;
-EVTTOOLTIPSLAVERY255;узнает о вашем отказе;x;;;
-EVTTOOLTIPSLAVERY253;рассматривает цену за раба [From.GetFirstName]...;x;;;
-EVTOPTESLAVERY208;Здесь нет рабов для покупки;x;;;
-EVTTOOLTIPSLAVERY250;[From.GetTitledFirstName] рассмотрел[From.GetEndA] ваше предложение о покупке раба [This.GetFirstName];x;;;
-EVTTOOLTIP204;рассматривает ваших постельных рабынь;x;;;
-EVTTOOLTIPSLAVERY203;предоставит вам подходящую постельную рабыню;x;;;
-EVTTOOLTIPSLAVERY205;предоставит вам подходящего телохранителя;x;;;
-EVTTOOLTIPSLAVERY207;предоставит вам подходящего советника;x;;;
-EVTTOOLTIPSLAVERY209;предоставит вам подходящего молодого раба.;x;;;
-EVTTOOLTIPSLAVERY202;встречается с вами, чтобы обсудить свои требования;x;;;
-EVTDESCSLAVERY151;Вы решили продать ваш[From.GetUEgo] пленни[From.GetTsuKa] по имени [From.GetTitledFirstName] в рабство. Теперь нужно найти работорговца, согласного купить [From.GetHerHis]...;x;;;
-EVTOPTASLAVERY151;Я уверен[GetEndA], что они будут заинтересованы;x;;;
-EVTOPTBSLAVERY151;Вряд-ли кто-то захочет купить [From.GetHerHis];x;;;
-EVTDESCSLAVERY155;Вы решили, что ваш[From.GetEndA] заключённ[From.GetAyaYy] [From.GetTitledFirstName] будет продан[From.GetEndA] в рабство. Поскольку [From.GetSheHe] не так много стоит как раб, вы можете заинтересовать только мелких торговцев на рынке, куда отведете [From.GetHerHis].;x;;;
-TOOLTIPslavery.154;[From.GetTitledFirstName] продан[From.GetEndA] в небольшой срок и снимается с рынка\n;x;;;
-EVTOPTASLAVERY155;Я полагаю, это лучше, чем ничего;x;;;
-EVTOPTBSLAVERY155;Я передумал[GetEndA];x;;;
-EVTTOOLTIPSLAVERY100;рассмотрит стоимость для вашего раба;x;;;
-EVENTTOOLTIPSLAVERY1300;Вы займётесь поиском работорговцев, которые купят кучу ваших рабов;x;;;
-EVTTOOLTIPSLAVERY300;Вы приказываете, чтобы [Root.GetFirstName] и [FromFrom.GetFirstName] спарились;x;;;
-mark_for_sale;Выставить на продажу;x;;;
-mark_for_sale_desc;Пусть на невольничьих рынках узнают, что [Root.GetFirstNameWithDynasty] выставлен[Root.GetEndA] на продажу;x;;;
-FORSALETOOLTIP;[This.GetFirstName] будет выставлен[This.GetEndA] на продажу повторно;x;;;
-mark_not_for_sale;Список не для продажи;x;;;
-mark_not_for_sale_desc;Пусть на невольничьем рынке узнают, что [Root.GetFirstNameWithDynasty] не продается и вы не будете рассматривать предложения о [Root.GetHerHis] покупке;x;;;
-NOTFORSALETOOLTIP;[This.GetFirstName] не будет выставлятся на торги;x;;;
-EVTTOOLTIPSLAVERY150;Вы ищете работорговца, готового купить раба [Root.GetTitledFirstName];x;;;
-EVTDESC_TOG_10699;Разъяренные рабы подняли восстание в земле [Root.GetName]! Их ведет один из них, раб, который хочет положить конец рабству в этих землях.;x;;;
-EVTOPTA_TOG_10699;Мы раздавим этих муравьев;x;;;
-EVTDESC_TOG_10700;Разъяренные рабы подняли восстание в земле [From.GetName]! Их ведет один из них, раб, который хочет положить конец рабству в этих землях.;x;;;
-EVTDESCTOG10702;[From.GetName] держал множество рабов, пока вы и ваша армия не освбодили их. Работорговцы в ужасе наблюдают, как все рабы до последнего получают свободу.;x;;;
-EVTTOOLTIPTOG10703;Все невольничьи лагеря в земле [From.GetName] будут уничтожены, все рабы получат свободу.;x;;;
-EVTTOOLTIPTOG10705;Группа бывших рабов присоединяется к вашему делу;x;;;
-EVTDESC_TOG_10703;Мрачные новости, [From.GetTitledFirstName] освободил[From.GetEndA] всех рабов, удерживаемых в лагерях земли [FromFrom.GetName]. Мы были бессильны противостоять. [From.GetSheHe] был[From.GetEndA] во главе победоносной армии и объявил[From.GetEndA] о предоставлении всем рабам свободы;x;;;
-LOSEALLSLAVES;Все рабы, содержащиеся в лагерях земли [FromFrom.GetName], освобождены нападавшими;x;;;
-EVTOPTATOG10703;[From.GetSheHeCap] не имеет права делать это!;x;;;
-EVTDESC_TOG_10706;Почувствовав возможность, рабы в земле [Root.GetName] восстали! Их лидеры поклялись в верности продолжающемуся восстанию рабов и деле создания нового государства, свободного от рабства.;x;;;
-EVTOPTA_TOG_10706;Больше рабов для мясника;x;;;
-EVTDESCTOG10707;Рабы земли [From.GetName] подняли восстание и присоединились к вам!;x;;;
-EVTDESC_TOG_10708;Почувствовав возможность, рабы земли [From.GetName] восстали! Их лидеры поклялись в верности продолжающемуся восстанию рабов и делу создания нового государства, свободного от рабства.;x;;;
-TOOLTIPwar_of_liberationWESTEROS;[Root.GetTitledFirstName] и столица [From.GetTitledFirstName] находятся в §YВестеросе§!\n;x;;;
-TOOLTIPwar_of_liberationNEIGHBOUR;[Root.GetTitledFirstName] и государство [From.GetTitledFirstName] §Yсоседствуют§! друг с другом\n;x;;;
-TOOLTIPslavery_0CULTURE;Культура/религия персонажа [This.GetTitledFirstName] традиционно выступает против рабства (вестеросские/браавосийские/одичалые/летнеостровные/ройнары/Великий Пастырь/Лунные Певцы/Владыка Гармонии)\n;x;;;
-TOOLTIPslavery_0VASSAL;Культура/религия кого-то из вассалов персонажа [This.GetTitledFirstName] традиционно выступает против рабства\n;x;;;
-TOOLTIPslavery_2CULTURE;[This.GetTitledFirstName] либо занимается работорговлей, либо [This.GetHerHis] культура/религия традиционно одобряет рабство (Гискарская/Валирийская/Вольных Городов/Пиратская/Дотракийская/Квартийская/Итийская)\n;x;;;
-TOOLTIPslavery_2VASSAL;Культура/религия кого-то из вассалов персонажа [This.GetTitledFirstName] либо занимается работорговлей, либо одобряет рабство\n;x;;;
-TOOLTIPslavery_2EMANCIPATED;[This.GetFullName] НЕ был навязан договор об освобождении за последние 10 лет\n;x;;;
-TOOLTIPslavery_0DYNASTY;Дом [This.GetOnlyDynastyName] основан бывшим рабом, который уничтожил рабство в стране\n;x;;;
-demand_relatives_freed;Приказать вассалу освободить родственников;x;;;
-demand_relatives_freed_desc;Один из ваших вассалов держит вашу родню в качестве рабов. Как законный сюзерен, вы имеете право приказать вассалу освободить ваших родственников.;x;;;
-EVTTOOLTIPSLAVERY4001;будет приказано освободить ваших родственников;x;;;
-TOOLTIPdemand_relatives_freedSLAVE;[This.GetTitledFirstName] является одним из рабов\n;x;;;
-EVTDESCslavery.4001;[Root.GetTitle] [Root.GetFirstName], мне доложили, что один из ваших рабов является моим родственником. Как сюзерен, я приказываю вам освободить их и немедленно доставить ко мне.\n\n Подпись,\n[From.GetFirstName] из Дома [From.GetOnlyDynastyName], [From.GetTitle] земли [From.PrimaryTitle.GetName];x;;;
-EVTDESCslavery.4002;[Root.PrimaryTitle.GetFOA], хоть это и большой убыток для меня, я выполню ваше поручение и освобожу ваших родственников. Я немедленно отправлю их в город [Root.Capital.GetName].\n\n С уважением,\n[From.GetTitledFirstNameWithDynasty];x;;;
-EVTDESCslavery.4003;[Root.PrimaryTitle.GetFOA], несмотря на то, что они ваши родственникик, по закону я их полноправный хозяин. Я должен отказать вам.\n\n С уважением,\n[From.GetTitledFirstNameWithDynasty];x;;;
-OPTAslavery.4003;Предатель! Я освобожу их так или иначе;x;;;
-OPTAslavery.4001;Отказ означает измену;x;;;
-OPTBslavery.4001;Нет, они по праву принадлежат мне;x;;;
-free_slave;Даровать свободу;x;;;
-free_slave_desc;Освободить персонажа [Root.GetFirstNameWithDynasty] от рабства и даровать свободу.;x;;;
-opinion_abolished_slavery_bad;Отменил[_] рабство;x;;;
-opinion_abolished_slavery_good;Отменил[_] рабство;x;;;
-opinion_abolished_slavery_former_slave;Отменил[_] рабство;x;;;
-opinion_chattel_slavery_bad;Легалезировал[_] рабство;x;;;
-opinion_chattel_slavery_good;Легалезировал[_] рабство;x;;;
-opinion_thralldom_bad;Узаконил[_] рабство;x;;;
-opinion_thralldom_good;Узаконил[_] рабство;x;;;
-TOOLTIPbuy_bulk_slaves;Любой работорговец может продать свой лагерь\n;x;;;
-TOOLTIPsell_bulk_slaves;Кто-либо из работорговцев далжен иметь 400¤\n;x;;;
-slave_revolt_modifier;Восстание рабов в вотчине;x;;;
-crushed_slave_revolt_1;Восстание рабов разгромлено;x;;;
-thwarted_war_of_emancipation_1;Поражение в войне за освобождение;x;;;
-thwarted_war_of_liberation_1;Поражение в войне за освобождение;x;;;
-concubine_slave;Взять в наложницы;x;;;
-concubine_slave_desc;Работорговцы издревле держали гаремы с женщинами, чтобы предаваться плотским утехам. Дети, рожденные рабынями-наложницами являются рабами.;x;;;
-sacked;Разграблена;x;;;
-TOOLTIPslave_raidBORDER;Или целевая провинция §Yприграничная§! персонажу [Root.GetTitledFirstName] ИЛИ [Root.GetTitledFirstName] - §Y'торговец рабами'§! и цель - §Yпобережье§!\n;x;;;
-TOOLTIPslave_raidCULTURE;Целевая провинция НЕ является той же §Yкультурной группой§! как и [Root.GetTitledFirstName]\n;x;;;
-TOOLTIPslave_raidSACKED;Целевая провинция НЕ подвергалась §Yграбежам§! в налетах за рабами\n;x;;;
-TOOLTIPslave_raidCENTRALIZATION;Если цель в §Yтой же области§! где и [Root.GetTitledFirstName], §Yвласть короны§! страны НЕ должна быть средней или выше\n;x;;;
-TOOLTIPslave_raidPIRATE;Если целью является §Yпират§!, они могут быть атакованы только с §Yкоролевским§! уровнем или выше\n;x;;;
-manage_slave;Управлять персонажем [Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal];x;;;
-manage_slave_desc;Ваши стражники приведут персонажа [Root.GetFirstName] [Root.GetOnlyDynastyName], вашего раба, к вам, чтобы вы решили, что хотите сделать;x;;;
-EVTDESCSLAVERY2;[Root.PrimaryTitle.GetFOA], ваш раб, [From.GetFirstName], доставлен[From.GetEndA] по вашему указанию. Что вы прикажете сделать?;x;;;
-EVTOPTASLAVERY2;Продать [From.GetHerHis], выручим сколько сможем;x;;;
-EVTOPTBSLAVERY2;Проинформировать работорговцев, что [From.GetSheHe] не продаётся;x;;;
-EVTOPTCSLAVERY2;Проинформировать работорговцев, что [From.GetSheHe] выставлен[From.GetEndA] на продажу;x;;;
-EVTOPTDSLAVERY2;Скрестить [From.GetHerHis] с другим рабом, мне нужны новые слуги;x;;;
-EVTOPTESLAVERY2;Ещё....;x;;;
-EVTOPTFSLAVERY2;[From.GetSheHeCap] нуждается в хорошей порке;x;;;
-EVTOPTGSLAVERY2;Я возьму её себе в наложницы;x;;;
-EVTOPTHSLAVERY2;Приказать сделать его евнухом;x;;;
-EVTOPTISLAVERY2;Отпустить [From.GetHerHis] на свободу;x;;;
-EVTOPTJSLAVERY2;Ничего, я передумал;x;;;
-TOOLTIPSLAVEREVOLTX;Восставшие рабы были пойманы и отправлены обратно - в лагеря\n;x;;;
-EVTDESCSLAVERY607;Ваш раб [From.GetFirstNameWithDynasty] был[From.GetEndA] наездни[From.GetTseyKom] на драконе, преждем, чем [From.GetSheHe] был[From.GetEndA] захвачен[From.GetEndA], и [From.GetSheHe] никогда не расскажет, что случилось. Сегодня над городом [Root.Capital.GetName] показался дракон!! Чудовище убило многих стражников и никто не мог его остановить, пока [From.GetFirstName] не забра[From.GetLasLsya] на него верхом и не улетел.;x;;;
-EVTOPTASLAVERY607;[From.GetSheHeCap] пожалеет об этом!;x;;;
-EVTDESCSLAVERY608;Вы были во дворе со своими людьми, как, вдруг, увидели в небе крылатую тварь, приближающуюся к вам. Это может быть только дракон. Чудище приземляется перед вами и никто ин[From.GetAyaOy], как [From.GetTitledFirstNameWithDynasty] спрыгивает с него. Видимо, [From.GetSheHe] бежал[From.GetEndA] из рабства из земли [FromFrom.PrimaryTitle.GetName], и теперь ищет убежище здесь.;x;;;
-realm_emancipated;Освобожденные земли;x;;;
-EVTOPTBSLAVERY201;Нет, в этом году я не буду проводить торги;x;;;
-train_unsullied;Тренировать Безупречных;x;;;
-train_unsullied_desc;Астапор является всемирно известным местом продажи Безупречных. Маленьких мальчиков кастрируют в детстве и делают из них сильных и верных воинов. Вы можете использовать рабов из лагеря, чтобы тренировать их, для последующей продажи.;x;;;
-EVTTOOLTIPSLAVERY700;Тысячи Безупречных начнут тренировки;x;;;
-buy_unsullied;Купить Безупречных;x;;;
-buy_unsullied_desc;Астапор является всемирно известным местом продажи Безупречных. Маленьких мальчиков кастрируют в детстве и делают из них сильных и верных воинов. Вы можете купить их и они будут исполнять любую вашу волю.;x;;;
-EVTTOOLTIPSLAVERY705;В Астапор прибудет работорговец.;x;;;
-ca_asoiaf_unsullied_1;Лагерь Безупречных (1000);x;;;
-ca_asoiaf_unsullied_2;Лагерь Безупречных (2000);x;;;
-ca_asoiaf_unsullied_3;Лагерь Безупречных (3000);x;;;
-ca_asoiaf_unsullied_4;Лагерь Безупречных (4000);x;;;
-ct_asoiaf_unsullied_1;Лагерь Безупречных (1000);x;;;
-ct_asoiaf_unsullied_2;Лагерь Безупречных (2000);x;;;
-ct_asoiaf_unsullied_3;Лагерь Безупречных (3000);x;;;
-ct_asoiaf_unsullied_4;Лагерь Безупречных (4000);x;;;
-fp_asoiaf_unsullied_1;Лагерь Безупречных (1000);x;;;
-fp_asoiaf_unsullied_2;Лагерь Безупречных (2000);x;;;
-fp_asoiaf_unsullied_3;Лагерь Безупречных (3000);x;;;
-fp_asoiaf_unsullied_4;Лагерь Безупречных (4000);x;;;
-ca_asoiaf_unsullied_cent_1;Лагерь Безупречных (100);x;;;
-ca_asoiaf_unsullied_cent_2;Лагерь Безупречных (200);x;;;
-ca_asoiaf_unsullied_cent_3;Лагерь Безупречных (300);x;;;
-ca_asoiaf_unsullied_cent_4;Лагерь Безупречных (400);x;;;
-ca_asoiaf_unsullied_cent_5;Лагерь Безупречных (500);x;;;
-ca_asoiaf_unsullied_cent_6;Лагерь Безупречных (600);x;;;
-ca_asoiaf_unsullied_cent_7;Лагерь Безупречных (700);x;;;
-ca_asoiaf_unsullied_cent_8;Лагерь Безупречных (800);x;;;
-ca_asoiaf_unsullied_cent_9;Лагерь Безупречных (900);x;;;
-ct_asoiaf_unsullied_cent_1;Лагерь Безупречных (100);x;;;
-ct_asoiaf_unsullied_cent_2;Лагерь Безупречных (200);x;;;
-ct_asoiaf_unsullied_cent_3;Лагерь Безупречных (300);x;;;
-ct_asoiaf_unsullied_cent_4;Лагерь Безупречных (400);x;;;
-ct_asoiaf_unsullied_cent_5;Лагерь Безупречных (500);x;;;
-ct_asoiaf_unsullied_cent_6;Лагерь Безупречных (600);x;;;
-ct_asoiaf_unsullied_cent_7;Лагерь Безупречных (700);x;;;
-ct_asoiaf_unsullied_cent_8;Лагерь Безупречных (800);x;;;
-ct_asoiaf_unsullied_cent_9;Лагерь Безупречных (900);x;;;
-fp_asoiaf_unsullied_cent_1;Лагерь Безупречных (100);x;;;
-fp_asoiaf_unsullied_cent_2;Лагерь Безупречных (200);x;;;
-fp_asoiaf_unsullied_cent_3;Лагерь Безупречных (300);x;;;
-fp_asoiaf_unsullied_cent_4;Лагерь Безупречных (400);x;;;
-fp_asoiaf_unsullied_cent_5;Лагерь Безупречных (500);x;;;
-fp_asoiaf_unsullied_cent_6;Лагерь Безупречных (600);x;;;
-fp_asoiaf_unsullied_cent_7;Лагерь Безупречных (700);x;;;
-fp_asoiaf_unsullied_cent_8;Лагерь Безупречных (800);x;;;
-fp_asoiaf_unsullied_cent_9;Лагерь Безупречных (900);x;;;
-EVTDESCSLAVERY700;Тысячи мальчиков, за стойкость и свой рост, были выбраны для обучения, чтобы стать Безупречными. После того, как их кастрируют, начнется долгий и жестокий процесс обучения, который сделает из них настоящих воинов и лишит индивидуальности. Большинство из них умрет, но те, кто выживут, станут обладать беспрекословной верностью;x;;;
-EVTOPTASLAVERY700;Они будут обладать ценностью;x;;;
-training_unsullied;Обучение Безупречных;x;;;
-EVTDESCSLAVERY701;Последняя партия Безупречных завершила свое обучение. За многие года обучений, они превратились в солдат с жесткой дисциплиной. Прежде чем получить пику и шлем, каждый Безупречный обязан купить рабыню с грудным ребенком и убить его на глаза матери.;x;;;
-EVTOPTASLAVERY701;Теперь я могу их продать;x;;;
-TOOLTIPslavery.702;1000 Безупречных пополнят ваши лагеря;x;;;
-EVTDESCSLAVERY705;Безупречные как правило продаются сотнями, либо тысячами. Сколько вы хотите купить?;x;;;
-EVTOPTASLAVERY705;Мне нужна тысяча;x;;;
-EVTTOOLTIPSLAVERY706A;Вы предлагаете купить §Y1000§! Безупречных за 750¤;x;;;
-EVTOPTBSLAVERY705;Мне нужна сотня;x;;;
-EVTTOOLTIPSLAVERY706B;Вы предлагаете купить §Y100§! Безупречных за 80¤;x;;;
-EVTOPTCSLAVERY705;В данный моент Безупречных нету;x;;;
-EVTOPTESLAVERY705;Сообщите мне когда появится новая партия Безупречных;x;;;
-TOOLTIPEVTOPTESLAVERY705;Вы должны быть в курсе, когда появится новая партия Безупречных;x;;;
-EVTOPTDSLAVERY705;Нет, я не передумал;x;;;
-EVTDESCSLAVERY706;[From.GetFirstNameWithDynasty] прибыл[From.GetEndA] в город [Root.Capital.GetName] чтобы встретиться с вами и обсудить Безупречных. Вы демонстрируете их, объясняя как их кастрировали в молодом возрасте, а затем обучали. [From.GetSheHeCap] впечатлен[From.GetEndA] и готов[From.GetEndA] сделать предложение…;x;;;
-EVTOPTASLAVERY706;Хорошая сделка;x;;;
-EVTTOOLTIPSLAVERY706;[From.GetTitledFirstName] покупает Безупречных;x;;;
-EVTTOOLTIPSLAVERY704;100 Безупречных покидают ваш лагерь;x;;;
-EVTTOOLTIPSLAVERY703;1000 Безупречных покидают ваш лагерь;x;;;
-EVTOPTBSLAVERY706;Нет, я не буду продавать их вам;x;;;
-EVTOPTCSLAVERY706;Нет, я не буду рассматривать никаких предложений;x;;;
-EVTDESCSLAVERY707;Вы посетили город [From.Capital.GetName] чтобы познакомиться с персонажем [From.GetFirstNameWithDynasty] и обсудить [From.GetHerHis] Безупречных. [From.GetSheHeCap] рассказывает вам о их культуре, о том как они обучались. В конце концов вы готовы сделать предложение…;x;;;
-EVTOPTASLAVERY707;Приятно иметь дело;x;;;
-EVTOPTBSLAVERY707;Хорошо, я должен также пополнить Личную гвардию;x;;;
-EVTDESCSLAVERY708;Вы посетили город [From.Capital.GetName] чтобы познакомиться с персонажем [From.GetFirstNameWithDynasty] и обсудить [From.GetHerHis] Безупречных. [From.GetSheHeCap] рассказывает вам об их культуре, о том как они обучались. Вы уверены что это оскорбляет вас. Сделка не заключена, [From.GetTitle] [From.GetFirstName] просит вас уйти.;x;;;
-EVTOPTBSLAVERY708;Мне они все равно не нужны;x;;;
-EVTDESCSLAVERY709;Подготовка Безупречных проходит неудачно. В конце первого года, мальчики должны были убить своих собак, которых приручили в начале обучения, однако многие не смогли этого сделать, за что были убиты.;x;;;
-EVTOPTASLAVERY709;Да, убейте их;x;;;
-TOOLTIPslavery.709CANCEL;Обучение 1000 Безупречных должно быть прекращено, а мальчики убиты за их провал\n;x;;;
-EVTOPTBSLAVERY709;Нанять эксперта для обучения Безупречных;x;;;
-rejected_unsullied;Предложение Безупречных отклонено;x;;;
-unsullied;Безупречные;x;;;
-unsullied_offensive;Безупречные атакуют;x;;;
-unsullied_defensive;Безупречные обороняются;x;;;
-unsullied_morale;Мораль Безупречных;x;;;
-unsullied_modifier;Боевой модификатор Безупречного войска: $PERC$;x;;;
-mobilise_unsullied;Мобилизовать Безупречных;x;;;
-mobilise_unsullied_desc;Выполнить мобилизацию Безупречных для готовности к битве. После мобилизации их нельзя будет уже продать.;x;;;
-TOOLTIPmobilise_unsullied;Все Безупречные в ваших лагерях должны быть мобилизованы\n;x;;;
-EVTOPTKSLAVERY2;[From.GetSheHeCap] долж[From.GetNaEn] прекратить размножение с персонажем [From.Spouse.GetFirstName];x;;;
-TOOLTIPslavery.107;[This.GetTitledFirstName] обнаруживает вашу незаконную работорговлю;x;;;
-TOOLTIPslavery.157;Ваша незаконная работорговля обнаружена, в результате чего вас будут рассматривать как тирана\n;x;;;
-EVTDESCSLAVERY157;Продажа персонажа [From.GetTitledFirstNameWithDynasty] была сомнительным делом, и вы пытались действовать как можно более острожно. Однако, вскорее появились слухи, что [From.GetFirstName] был[From.GetEndA] замечен[From.GetEndA] на корабле, плывущим в город [From.Liege.Capital.GetName], и что вы были ответственны за это. Ваши подданные считают это незаконным и неприятным.;x;;;
-EVTOPTASLAVERY157;Мне плевать, что они думают;x;;;
-EVTDESCSLAVERY158;[Root.PrimaryTitle.GetFOA], произошёл большой скандал, [From.GetTitledFirstNameWithDynasty] замешан[From.GetEndA] в этом. Появилось доказательство того, что [From.GetSheHe] продал[From.GetEndA] персонажа [FromFrom.GetTitledFirstNameWithDynasty] в рабство, [FromFrom.GetHerHis] обнаружили на судне работорговца, связанного с городом [FromFrom.Liege.Capital.GetName]. [From.GetHerHisCap] подданые готовы взятся за оружие из-за такого серьёзного нарушения законов государства [From.PrimaryTitle.GetName].;x;;;
-EVTOPTASLAVERY158;Это, безусловно, взбесит многих людей;x;;;
-EVTDESCSLAVERY910;Ваш[From.GetEndA] [From.GetRootRelation] [From.GetTitledFirstName] долж[From.GetNaEn] находиться под опекой персонажа [FromFrom.GetTitledFirstNameWithDynasty], однако, сообщения из города [FromFrom.Capital.GetName] указывают, что [From.GetHerHis] не было видно там уже много дней. [FromFrom.GetTitledFirstName] утверждает, что не знает, что случилось.;x;;;
-EVTOPTASLAVERY910;Это кажется слишком удобным;x;;;
-opinion_relative_suspicious_disappearance;Подозрительное исчезновение родственника;x;;;
-opinion_enslaved_close_relative;Близкий родственник порабощён;x;;;
-EVTDESCSLAVERY2601;Небольшая группа работорговцев прибыла в область [Root.Location.GetName], и, по-видимому, у них есть особо большая группа пленников. Они ищут покупателя и просят вас купить их как своих рабов за хорошую цену, по их словам.;x;;;
-EVTOPTASLAVERY2601;Да, это дело, отправьте рабов в мои лагеря;x;;;
-EVTOPTBSLAVERY2601;К сожалению, это не стоит моего золота;x;;;
-EVTOPTKSLAVERY2;Он[From.GetEndA] станет хорош[From.GetEyIm] морск[From.GetOyIm] [From.GetHusbandWifeINS];x;;;
-TOOLTIPSLAVEILEGALSLAVERYWARNING;Продажа рабов §RНЕ ЗАКОННА§! в земле [This.PrimaryTitle.GetName], и если вас поймают, это будет иметь последствия.\n;x;;;
-EVTOPTAslavery.1010;Рабство является незаконным, освободить их всех;x;;;
-EVTDESCSLAVERY711;[Root.PrimaryTitle.GetFOA], мы получили сообщения из Астапора, что новая партия Безупречных завершила обучение и готова к продаже. ;x;;;
-EVTOPTASLAVERY711;Я куплю их;x;;;
-EVTOPTBSLAVERY711;Отменить покупку, но держите меня в курсе;x;;;
-EVTOPTCSLAVERY711;Я больше не заинтересован[GetEndA] в покупке Безупречных;x;;;
-eunuch_slave;Кастрировать раба;x;;;
-eunuch_slave_desc;Ваш раб [Root.GetFirstName] кастрирован и теперь евнух;x;;;
-EVTDESC40399;Ваш раб [From.GetFirstName] - ребёнок, и [From.GetSheHe] говорит, что вы его отец.;x;;;
-TOOLTIPSLAVEACTION;[This.GetTitledFirstName] в настоящее время НЕ совершает рабскую деятельность\n;x;;;
-TOOLTIPSELLINGPRISONER;[This.GetTitledFirstName] НЕ в процессе продажи узника в рабство\n;x;;;
-EVTDESCSLAVERY3003;Я все еще легально владею рабами, эта несправедливость должна закончиться!;x;;;
-EVTOPTASLAVERY3003;Освободить их всех!;x;;;
-TOOLTIPslavery.3003BULKSLAVES;Все рабские лагеря освобождены\n;x;;;
-TOOLTIPslavery.3003;Все владельцы рабов рассматривают...;x;;;
-EVTDESCSLAVERY3004;Вы провозгласили, что все ваши рабы будут освобождены, в том числе ваши Безупречные. Безупречные верны до последнего, и они добровольно заявили о своей преданности вам, пообещав следовать за вами, куда бы вы ни отправились.;x;;;
-EVTOPTASLAVERY3004;Я с радостью принимаю вашу клятву;x;;;
-TOOLTIPslavery.3004;Все Безупречные освобождены;x;;;
-has_antislavery_religion_trigger;Религия [This.GetTitledFirstName] традиционна против рабства (Вестеросская/Летние Боги/Лунные Певцы/Отец Вод/Великий Пастырь/Владыка Гармонии)\n;x;;;
-has_antislavery_culture_trigger;Культура [This.GetTitledFirstName] традиционно выступает против рабства (Вестеросская/Браавосийская)\n;x;;;
-has_slavery_culture_trigger;Культура [This.GetTitledFirstName] традиционно практикует рабство (Гискарская/Валирийская/Вольных Городов/Дотракийская/Квартийская/Итийская. Исключая Браавосийскую и Лоратийскую)\n;x;;;
-has_slavery_religion_trigger;Религия [This.GetTitledFirstName] традиционно практикует рабство (Пиратская/Леди Волн)\n;x;;;
-buy_slave_offer;Сделать предложение по покупке;x;;;
-buy_slave_offer_desc;[Root.GetFirstNameWithDynasty] - раб, и вы можете сделать предложение по [Root.GetHerHis] покупке.;x;;;
-TOOLTIPbuy_slave_offerRANGE;Хозяин, [Root.Liege.GetTitledFirstName] [Root.Liege.GetOnlyDynastyName], в пределах дипломатического радиуса\n ;x;;;
-TOOLTIPbuy_slave_offerFORSALE;НЕ помечен как недоступный для продажи\n;x;;;
-TOOLTIPEVTOPTEinteraction.3;[This.GetTitledFirstName] рассмотрит выше предложение по покупке персонажа [FromFrom.GetFirstName];x;;;
-opinion_stole_slave;Украл[_] моего раба;x;;;
-opinion_granted_freedom;Даровал[_] мне свободу;x;;;
-EVTDESCSLAVERY2700;Ваш раб, [From.GetTitledFirstName], попросил[From.GetEndA] поговорить с вами. Стража доставляет [From.GetHerHis] к вам, и вы узнаёте, что [From.GetSheHe] желает выкупить собственную свободу.;x;;;
-EVTOPTASLAVERY2700;Это кажется справедливым;x;;;
-EVTOPTBSLAVERY2700;Ха, думаю нет!;x;;;
-opinion_lashed_me;Хлестал[_] меня;x;;;
-abolish_slavery;Отмена рабства;x;;;
-abolish_slavery_named;Отмена рабства в земле [Root.GetName];x;;;
-abolish_slavery_desc;Издать указ об отмене рабства в земле [Root.GetFullName];x;;;
-TOOLTIPabolish_slaveryVASSALS;Все вассалы персонажа [From.GetTitledFirstName] в земле [Root.GetName] уровня 'лорд' или выше традиционно выступают против рабства\n;x;;;
-TOOLTIPabolish_slaveryPOWERFULVASSAL;Ни один правитель земли [Root.GetName] уровня 'Верховный Лорд' или выше традиционно не поддерживает рабство\n;x;;;
-legalise_slavery;Легализовать Рабство;x;;;
-legalise_slavery_named;Легализовать Рабство в земле [Root.GetName];x;;;
-legalise_slavery_desc;Издать указ о легализации рабства в земле [Root.GetFullName];x;;;
-TOOLTIPlegalise_slaveryVASSALS;Все вассалы персонажа [From.GetTitledFirstName] в земле [Root.GetName] уровне 'лорд' или выше традиционно выступают за рабство \n;x;;;
-TOOLTIPlegalise_slaveryPOWERFULVASSAL;Ни один правитель в земле [Root.GetName] уровня 'Верховный Лорд'  или выше традиционно не против рабства\n;x;;;
-TOOLTIPslavery.760;Все вассалы и соседи персонажа [Root.GetTitledFirstName], которые выступают против рабства, будут возмущены подобными налётами.\n;x;;;
-EVTDESCSLAVERY760;Рабство может быть узаконено в государстве [Root.TopLiege.PrimaryTitle.GetName], что делает ваш рейд в землю [FromFrom.PrimaryTitle.GetName] законным, но это не означает, что ваши вассалы и соседи, кто выступает против рабства, довольны этими действиями. Многие злятся, что вы будете использовать легальный повод для разграбления чужих земель.;x;;;
-EVTOPTASLAVERY760;Я в своём праве сделать это!;x;;;
-opinion_launched_slave_raid;Начать рейд по захвату рабов;x;;;
-enslave_natives;Порабощение уроженцев;x;;;
-enslave_natives_named;Порабощение туземцев в земле [Root.GetName];x;;;
-enslave_natives_desc;Отправить вооруженные силы насильно поработить коренных жителей земли [Root.GetName].;x;;;
-natives_enslaved;Туземцы порабощены;x;;;
-EVTTOOLTIPslavery.770;[From.GetTitledFirstName] получает лагерь рабов и несколько личных рабов из земли [Root.GetName]. Это увеличит время, необходимое для завершения колонии.;x;;;
-EVTDESCSLAVERY770;После того, что было названо ужасной зачисткой области, ваши люди вернулись из земли [From.GetName] с сотнями [enslaved_natives_province.Culture.GetName]ских рабов. Вы их всех отправили в лагеря, а некоторые избранные стали вашими личными рабами.;x;;;
-EVTOPTASLAVERY770;Это досадная необходимость!;x;;;
-EVTDESCSLAVERY780;[Root.PrimaryTitle.GetFOA], группа рабов , которые были захвачены в земле [slave_raid_province.GetName] и выбраны для присоединения к вашей личной коллекции, были доставлены в город [Root.Capital.GetName].;x;;;
-EVTDESCSLAVERY17;[From.GetTitledFirstNameWithDynasty] недавно потерял[From.GetEndA] свои земли и титулы, это означает, что вы наследуете [From.GetHerHis] личную коллекцию рабов.;x;;;
-slave_lashed;Стегать;x;;;
-opinion_illegal_slave_trader;Нелегальный работорговец;x;;;
-EVTDESCSLAVERY750;[From.Holder.GetTitledFirstName] [From.Holder.GetOnlyDynastyName] отменил[From.Holder.GetEndA] и запретил[From.Holder.GetEndA] рабство во всей земле [From.GetFullName]. Это означает, что мы больше не можем владеть или торговать рабами, как мы это делали раньше.;x;;;
-EVTOPTASLAVERY750;Это кажется справедливым;x;;;
-EVTOPTBSLAVERY750;Я не стану за это!;x;;;
-TOOLTIPSLAVERY750;Любые сотоварищи по борьбе с рабством вступят в войну\n;x;;;
-EVTDESCSLAVERY751;Разозленная на ваше решение объявить вне закона работорговлю, группа вассалов во главе с персонажем [pro_slavery_rebel.GetTitledFirstName] [pro_slavery_rebel.GetOnlyDynastyName] подняла восстание против вас!;x;;;
-EVTOPTASLAVERY751;Это восстание необходимо подавить;x;;;
-EVTDESCSLAVERY752;[Root.GetTitledFirstName], после долгих консультаций с моим советом я решил[From.GetEndA] принять ряд законов, отменяющих рабство во всей земле [slavery_title.GetFullName]. Владение или торговля любым мужчиной, женщиной или ребенком в земле [slavery_title.GetName] считается незаконной и наказуемой под контролем короны.\nПодпись\n[From.GetTitle] [From.GetTitledFirstNameoftheHouseNoRegnal], [From.GetRegnalOrdinal] [From.GetHerHis] имени;x;;;
-EVTDESCSLAVERY753;[Root.GetTitledFirstName], после долгих консультаций с моим советом я решил[From.GetEndA] принять ряд законов, легализующих рабство во всей земле [slavery_title.GetFullName]. Отныне, владение или торговля любым мужчиной, женщиной или ребенком в земле [slavery_title.GetName] является законной и справедливой.\nПодпись\n[From.GetTitle] [From.GetTitledFirstNameoftheHouseNoRegnal], [From.GetRegnalOrdinal] [From.GetHerHis] имени;x;;;
-EVTDESCSLAVERY753B;[Root.GetTitledFirstName], после долгих консультаций с моим советом я решил[From.GetEndA] принять ряд законов, утверждающих традиции железнорожденных по рабству во всей земле [slavery_title.GetFullName]. Отныне владение любым пленным мужчиной, женщиной или ребенком в земле [slavery_title.GetName] являются законным и справедливым.\nПодпись\n[From.GetTitle] [From.GetTitledFirstNameoftheHouseNoRegnal], [From.GetRegnalOrdinal] [From.GetHerHis] имени;x;;;
-TOOLTIPslave_raidSACKTOOLTIP;Случайная провинция [This.PrimaryTitle.GetName], которую занял[Root.GetEndA] [Root.PrimaryTitle.GetName], будет источником рабов.;x;;;
-TOOLTIPslavery.790;[This.GetTitledFirstName] получит предложение сдаться;x;;;
-EVTDESCslavery.790;[Root.GetTitledFirstNameNoRegnal], практика рабства отвратительна и оскорбляет права человека. Я требую, чтобы рабство было объявлено вне закона на всей земле [Root.PrimaryTitle.GetFullName]. Несогласие приведет к вооружённому конфликту.\n\nПодпись,\n[From.GetTitledFirstNameWithDynastyAndTitle];x;;;
-EVTOPTCslavery.790;Эта война больше не действительна;x;;;
-EVTOPTAslavery.790;Было бы лучше, если бы мы согласились с их требованиями;x;;;
-EVTOPTBslavery.790;Нет, практиковать рабство - это наше право!;x;;;
-EVTDESCslavery.791;[Root.GetTitledFirstNameNoRegnal], рассмотрев ваши требования, мы обнаружили, что у вас нет выбора. Настоящим рабство объявлено вне закона в земле [From.PrimaryTitle.GetFullName]. Мы надеемся, что это удовлетворит вас и что вы оставите наши земли без изменений.\n\nПодпись,\n[From.GetTitledFirstNameWithDynastyAndTitle];x;;;
-EVTOPTAslavery.791;Разумный выбор;x;;;
-EVTDESCslavery.792;После того как [FromFrom.GetTitledFirstNameWithDynastyAndTitle] выслал[FromFrom.GetEndA] ультиматум, [From.GetTitledFirstNameWithDynastyNoRegnal] отменил[From.GetEndA] рабство в государстве [From.PrimaryTitle.GetFullName].;x;;;
-recent_sale_attempt;Недавно предпринятая попытка продажи;x;;;
-opinion_rejected_slave;Отклоненный раб;;;;;;;;;;;;;x
+#CODE;ENGLISH;x
+ca_asoiaf_slavepit_1;Небольшой лагерь рабов;x
+ca_asoiaf_slavepit_2;Средний лагерь рабов;x
+ca_asoiaf_slavepit_3;Большой лагерь рабов;x
+ca_asoiaf_slavepit_4;Крупный лагерь рабов;x
+ca_asoiaf_slavepit_5;Огромный лагерь рабов;x
+ct_asoiaf_slavepit_1;Небольшой лагерь рабов;x
+ct_asoiaf_slavepit_2;Средний лагерь рабов;x
+ct_asoiaf_slavepit_3;Большой лагерь рабов;x
+ct_asoiaf_slavepit_4;Крупный лагерь рабов;x
+ct_asoiaf_slavepit_5;Огромный лагерь рабов;x
+tp_asoiaf_slavepit_1;Небольшой лагерь рабов;x
+tp_asoiaf_slavepit_2;Средний лагерь рабов;x
+tp_asoiaf_slavepit_3;Большой лагерь рабов;x
+tp_asoiaf_slavepit_4;Крупный лагерь рабов;x
+tp_asoiaf_slavepit_5;Огромный лагерь рабов;x
+fp_asoiaf_slavepit_1;Небольшой лагерь рабов;x
+fp_asoiaf_slavepit_2;Средний лагерь рабов;x
+fp_asoiaf_slavepit_3;Большой лагерь рабов;x
+fp_asoiaf_slavepit_4;Крупный лагерь рабов;x
+fp_asoiaf_slavepit_5;Огромный лагерь рабов;x
+no_asoiaf_slavepit_1;Небольшой лагерь рабов;x
+no_asoiaf_slavepit_2;Средний лагерь рабов;x
+no_asoiaf_slavepit_3;Большой лагерь рабов;x
+no_asoiaf_slavepit_4;Крупный лагерь рабов;x
+no_asoiaf_slavepit_5;Огромный лагерь рабов;x
+slave_modifier_1;Маргинальный рабский труд;x
+slave_modifier_1_desc;Небольшое количество рабов дополняют труд рабочих этой провинции.;x
+slave_modifier_2;Ограниченное применение рабов;x
+slave_modifier_2_desc;Рабов по-прежнему значительно меньше, нежели свободных рабочих.;x
+slave_modifier_3;Умеренный рабский труд;x
+slave_modifier_3_desc;Эта провинция имеет достаточно рабов, чтобы обеспечить замену свободным рабочим.;x
+slave_modifier_4;Обширный рабский труд;x
+slave_modifier_4_desc;Эта провинция имеет большое количество невольничьих лагерей и практически полностью обеспечивается рабами.;x
+slave_modifier_5;Рабовладельческая экономика;x
+slave_modifier_5_desc;Десятки тысяч рабов проживают в лагерях этой провинции, заменяя труд свободных рабочих и крестьян.;x
+slave_modifier_1_fp;Несущественный рабский труд;x
+slave_modifier_1_fp_desc;В этой провинции всего несколько рабов, но достаточно, чтобы дополнить усилия свободных рабочих.;x
+slave_modifier_2_fp;Ограниченный рабский труд;x
+slave_modifier_2_fp_desc;Хотя их еще намного меньше, чем свободных работников, рабы обеспечивают заметную часть труда этой провинции.;x
+slave_modifier_3_fp;Умеренный рабский труд;x
+slave_modifier_3_fp_desc;В этой провинции есть много рабовладельческих лагерей, которые обеспечивают достаточно большую рабочую силу для создания жизнеспособной альтернативы свободным слугам.;x
+slave_modifier_4_fp;Обширный рабский труд;x
+slave_modifier_4_fp_desc;В этой провинции есть огромное количество рабовладельческих лагерей, и большая часть труда выполняется рабами.;x
+slave_modifier_5_fp;Экономика рабов;x
+slave_modifier_5_fp_desc;Десятки тысяч рабов живут в этой провинции и обеспечивают основу ее экономики. Почти все важные работы выполняются рабами.;x
+CB_NAME_SLAVE_RAID;Захват рабов;x
+WAR_NAME_SLAVE_RAID;$ORDER$ $FIRST_ADJ$ захватывает рабов в $SECOND$;x
+slave_raid;Захват рабов;x
+slave_raid_desc;Напасть на §Y$TARGET$§!, ограбить города и увести жителей в рабство.;x
+CB_NAME_SLAVE_REVOLT;Восстание рабов в [Title.GetBaseName];x
+WAR_NAME_SLAVE_REVOLT;$ORDER$ [Title.GetAdjective] восстание рабов;x
+slave_revolt;Восстание рабов;x
+slave_revolt_desc;Разорвали ваши цепи и восстали против жестоких хозяев земли [Title.GetName].;x
+SLAVE_REVOLT;[Root.Kingdom.GetAdjective] восстание рабов;x
+CB_NAME_EMANCIPATION;Освобождение [Title.GetBaseName];x
+WAR_NAME_EMANCIPATION;$ORDER$ $FIRST_ADJ$-$SECOND_ADJ$ война за освобождение;x
+war_of_emancipation;Война за освобождение;x
+war_of_emancipation_desc;Властители §Y$TITLE$§! практикуют варварские рабовладельческие обычаи. Мы должны освободить их рабов!;x
+CB_NAME_LIBERATION;Освобождение [Title.GetBaseName];x
+WAR_NAME_LIBERATION;$CLAIMANT$ $ORDER$ освобождение $OTHER_TITLE$;x
+war_of_liberation;Война за освобождение;x
+war_of_liberation_desc;Властители §Y$TITLE$§! практикуют варварские рабовладельческие обычаи. Мы должны завоевать их земли и освободить каждого раба мечом!;x
+CB_NAME_ENSLAVEMENT;Поработить [Title.GetBaseName];x
+WAR_NAME_ENSLAVEMENT;$ORDER$ $FIRST_ADJ$ война за порабощение $OTHER_TITLE$;x
+war_of_enslavement;Война за порабощение;x
+war_of_enslavement_desc;Недавнее вторжение §Y$TITLE$§! поставило под угрозу нашу экономику и процветание. Мы должны атаковать их и восстановить наш образ жизни и рабовладение!;x
+ADVENTURE_LIBERATOR;Освободительная армия [Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal];x
+TOOLTIPPOW;[Root.GetFirstName] является пленником.;x
+LOSESLAVEFROM;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] больше не будет вашим рабом\n;x
+EVTTOOLTIPPUTUPFORSALE;будет выставлен[_] на продажу\n;x
+title_slave;Раб;x
+opinion_my_owner;Мой хозяин;x
+opinion_my_slave;Мой раб;x
+opinion_enslaved_me;Поработил[_] меня;x
+opinion_beat_slaves_intimidation;Боится наказания;x
+opinion_beat_slaves_resentment;Жестокое обращение;x
+slave;Раб;x
+slave_desc;Этот персонаж - раб, собственность, принадлежащая своему хозяину.;x
+former_slave;Бывший раб;x
+former_slave_desc;Этот персонаж когда-то был рабом, но, либо силой оружия, либо милостью хозяина был освобожден.;x
+slave_owner;Рабовладелец;x
+slave_owner_desc;Этот персонаж владеет рабами.;x
+slave_trader;Работорговец;x
+slave_trader_desc;Этот персонаж не только владеет рабами, но и осуществляет торговлю живым товаром.;x
+liberator;Освободитель[____];x
+liberator_desc;Этот персонаж является фанатичным противником рабства, пытаясь искоренить его любой ценой.;x
+plot_escape_slavery;Организовать побег;x
+plot_escape_slavery_title;Организовать побег;x
+plot_escape_slavery_desc;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] организует побег, чтобы сбежать из своих оков и стать свободн[From.GetOyYm].;x
+slavery;Рабство;x
+slavery_desc;Рабство может иметь различные формы  и широко распостранено в мире, однако запрещено религией Вестероса.;x
+slavery_0;Рабство отменено;x
+slavery_0_option;Незаконно;x
+slavery_0_desc;Рабство строго наказуемо во всех его формах.;x
+slavery_1;Долговая кабала;x
+slavery_1_option;Де-факто;x
+slavery_1_desc;Рабство технически запрещено, однако некоторые 'слуги' являются невольниками.;x
+slavery_2;Рабский труд;x
+slavery_2_option;Легально;x
+slavery_2_desc;Рабство полностью узаконено и рабами свободно торгуют на рынках.;x
+slavery_3;Рабство;x
+slavery_3_option;Рабство;x
+slavery_3_desc;Пленники могут быть обращены в рабов, однако запрещено их покупать и продавать, а так же их дети рождаются свободными.;x
+treaty_breach;Нарушено мирное соглашение;x
+treaty_breach_desc;Этот народ принебрег мирным договором и уязвим для специального casus belli.;x
+treaty_breach_0;Нарушен анти-рабовладельческий договор;x
+treaty_breach_0_option;Борьба с рабством;x
+treaty_breach_0_desc;[This.GetName] нарушил условия договора и незаконно возобновил рабство. Это дает повод для освободительной войны. Нарушение исечет, если если война за освобождение будет выиграна.;x
+treaty_breach_1;Вынужден отменить рабство;x
+treaty_breach_1_option;Освобожден;x
+treaty_breach_1_desc;[This.GetName] недавно был освобождён другим государством от рабства. Это делает его целью для войны. Повод пропадет, если рабовладельцы победят.;x
+enter_slave_trade;Заняться работорговлей;x
+enter_slave_trade_desc;В настоящее время, ваша семья занимается только традиционными товарами, но в работорговле можно заработать хорошие деньги. Возможно, ваши корабли смогут найти хорошее применение на этом рынке.;x
+leave_slave_trade;Покинуть работорговлю;x
+leave_slave_trade_desc;Ваши корабли бороздят моря, нагруженные живим товаром и приносят вам значительный доход. Однако, это не даётся вам легко.;x
+buy_slave;Купить раба;x
+buy_slave_desc;Купить нового раба у работорговца.;x
+buy_bulk_slaves;Купить рабов для вашего лагеря;x
+buy_bulk_slaves_desc;Купить один уровень вашего лагеря у работорговца за 400¤.;x
+sell_bulk_slaves;Продать рабов из вашего лагеря;x
+sell_bulk_slaves_desc;Продать один уровень вашего лагеря за 400¤.;x
+free_bulk_slaves;Освободить рабов из вашего лагеря.;x
+free_bulk_slaves_desc;Освободить один уровень рабов из вашего лагеря.;x
+open_slave_management_menu;Открыть меню управления рабами;x
+open_slave_management_menu_desc;Отобразить решения, связанные с рабами.;x
+close_slave_management_menu;Закрыть меню управления рабами;x
+close_slave_management_menu_desc;Скрыть решения, связанные с рабами.;x
+enslave_prisoner;Поработить Заключённого;x
+enslave_prisoner_desc;Пока [Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal] лишен[Root.GetEndA] свободы, [Root.GetSheHe] может быть примен[Root.GetEYo]н[Root.GetEndA] более практично, чем просто гнить в камере.;x
+sell_prisoner;Продать работорговцу;x
+sell_prisoner_desc;Од[Root.GetNaIn] из ваших заключённых, [Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal], гниёт в подземельях и никто не заметит, если [Root.GetSheHe] исчезнет. Возможно, вы могли бы получить немного быстрых денег для своих проблем?;x
+sell_slave;Продать;x
+sell_slave_desc;Если [Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal] [Root.GetOnlyDynastyName] не удовлетворяет вашим потребностям, вы можете продать [Root.GetHerHis];x
+TOOLTIPSELLSLAVEUNSULLIED;[Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal] НЕ Безупречный\n;x
+TOOLTIPSELLSLAVETRADER;Один работорговец готов продать\n;x
+TOOLTIPSELLSLAVENOCROWNLAW;[This.GetTitledFirstName] не имеет права на корону\n;x
+TOOLTIPSELLSLAVENOTSELLING;[This.GetTitledFirstName] не готов[This.GetEndA] продать\n;x
+lash_slave;Бить плетью;x
+lash_slave_desc;[Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal] [Root.GetOnlyDynastyName] выводится стражей из темницы и Вы даёте приказ бить [Root.GetHerHis] плетьми. Вы не будете выглядеть справедлив[GetOyYm], зато многие усвоят урок.;x
+breed_slave;Скрестить с другим рабом;x
+breed_slave_desc;Хороших рабов тяжело найти. К счастью, рабы размножаются и [Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal] [Root.GetOnlyDynastyName] по Вашему приказу может скреститься с рабом противоположного пола.;x
+TOOLTIPBREEDSLAVEAVAILABLE;[From.GetTitledFirstName] владеет по крайней мере одним рабом, которого можно свести с персонажем [Root.GetFirstName]\n;x
+stop_breeding_slave;Прекратить совокупление рабов;x
+stop_breeding_slave_desc;Прекратить совокупление между рабами [Root.GetFirstName] и [Root.Spouse.GetFirstName].;x
+EVTTOOLTIPSLAVERY0;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] будет освобождён[This.GetEndA].;x
+EVTDESCSLAVERY1;Ваш бывший раб, [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], сумел[From.GetEndA] оставить службу и, в настоящее время, является свободн[From.GetOyYm].;x
+EVTOPTASLAVERY1;Так и быть;x
+EVTDESCSLAVERY100;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] договори[From.GetLasLsya] о встрече в надежде продать вам нового раба. Это урожден[FromFrom.GetKaEts] [FromFrom.GetCultureAdj]ой земли по имени [FromFrom.GetFirstName]. [From.GetFirstName] приводит [FromFrom.GetHerHis] к вам в цепях и позволяет осмотреть товар.;x
+EVTOPTASLAVERY100;Это животное не стоит даже времени, которое я потратил.;x
+EVTOPTBSLAVERY100;Я куплю [FromFrom.GetHerHis] за 15 золотых.;x
+EVTOPTCSLAVERY100;Я куплю [FromFrom.GetHerHis] за 40 золотых.;x
+EVTOPTDSLAVERY100;Я куплю [FromFrom.GetHerHis], и предложу [FromFrom.GetHerHim] лучшую сделку;x
+EVTOPTESLAVERY100;Я куплю [FromFrom.GetHerHis] за 75 золотых.;x
+EVTOPTESLAVERY100B;Я куплю раба за 75 золотых.;x
+EVTOPTFSLAVERY100;Я куплю раба за 115 золотых.;x
+EVTOPTGSLAVERY100;Я куплю раба за 150 золотых.;x
+EVTOPTHSLAVERY100;Я куплю раба за 225 золотых.;x
+EVTDESCSLAVERY102;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] приводится Вами в цепях на встречу с [FromFrom.GetManWoman]ой по имени [FromFrom.GetFirstNameWithDynasty], состоятельн[FromFrom.GetOyYm] работоргов[FromFrom.GetKoyTsem] из города [FromFrom.Capital.GetName]. [FromFrom.GetSheHeCap] тщательно осматривает раба и бросает вам в лицо обвинение. 'Вы пытаетесь обмануть меня?' [FromFrom.GetSheHe] в ярости, 'Это животное не стоит даже потраченного времени, я не могу купить [From.GetHerHis].';x
+EVTOPTASLAVERY102;Тогда, полагаю, мне придётся искать того, кто сможет.;x
+EVTOPTBSLAVERY102;Возможно, я долж[GetNaEn] бросить эту затею.;x
+EVTDESCSLAVERY10399;Вы решили что необходимо сделать предложение за раба, сколько монет вы готовы дать?;x
+EVTDESCSLAVERY104;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] приводится Вами в цепях на встречу с [FromFrom.GetManWoman]ой по имени [FromFrom.GetFirstNameWithDynasty], состоятельн[FromFrom.GetOyYm] работоргов[FromFrom.GetKoyTsem] из города [FromFrom.Capital.GetName]. [FromFrom.GetSheHeCap] внимательно осматривает раба и обращается к вам, называя свою цену.;x
+EVTOPTASLAVERY104;Готово. Приятно иметь дело с вами.;x
+EVTOPTBSLAVERY104;Смешно! Возможно, другой работорговец предложит мне более выгодную цену.;x
+EVTOPTCSLAVERY104;Возможно, я долж[GetNaEn] просто бросить эту затею.;x
+EVTDESCSLAVERY105;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] вручает один конец цепи вам и говорит: "Готово, [FromFrom.GetSheHe] теперь принадлежит Вам. Приятно иметь с Вами дело.";x
+EVTOPTASLAVERY105;Прекрасное новое приобретение!;x
+EVTDESCSLAVERY106;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] готов[From.GetEndA] ударить вас по лицу. 'Вы с ума сошли? [FromFrom.GetSheHeCap] стоит в десять раз дороже! Возможно, другой торговец предложит мне лучшую цену.';x
+EVTOPTASLAVERY106;Полагаю, вы не сможете столько выручить.;x
+EVTDESCSLAVERY107;До вас дошла ужасная новость. Од[From.GetNaIn] из ваших вассалов, [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], продал[From.GetEndA] человека в рабство!;x
+EVTOPTASLAVERY107;Законы богов и людей запрещают такое злодеяние.;x
+EVTDESCSLAVERY108;Кажется, ваши последние действия не остались незамеченными. Ваш сюзерен, [From.GetTitledFirstName], узнал[From.GetEndA] о ваших сделках с работорговцами.;x
+EVTOPTASLAVERY108;Может [Root.Religion.GetRandomGodName] защитит меня.;x
+EVTDESCSLAVERY110;Вам доложили ужасную новость! [FromFrom.GetTitledFirstNameWithDynasty] продал[From.GetEndA] ваш[From.GetUEgo] [From.GetRootRelation][From.GetEndAOpp], известного как [From.GetTitledFirstName] в рабство!;x
+EVTOPTASLAVERY110;Как [FromFrom.GetSheHe] посмел[FromFrom.GetEndA]!;x
+EVTTOOLTIPSLAVERY152;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] попадает на невольничий рынок;x
+EVTDESCSLAVERY153;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] приведен[From.GetEndA] вашими стражниками из [From.GetHerHis] лагеря, слуги моют и готовят товар для работорговца;x
+EVTOPTASLAVERY153;Время делать деньги.;x
+EVTOPTBSLAVERY153;С другой стороны, возможно, мне всё ещё нужны [From.GetHerHis] руки.;x
+EVTDESCSLAVERY154;[From.GetName] приводится Вашими стражниками из [From.GetHerHis] камеры, чистят, купают, и готовят отвести на рынок. Однако, вы можете вызвать интерес только у мелких покупателей из-за ограниченного [From.GetHerHis] использования . Это означает, что предложений довольно мало.;x
+EVTOPTASLAVERY154;Я потребую столько, сколько смогу;x
+EVTOPTBSLAVERY154;Нет, я отвергаю это предложение;x
+EVTDESCSLAVERY200;Вы решили приобрести раба и договорились о встрече с работорговцем;x
+EVTOPTASLAVERY200;Встретиться с работорговцем;x
+EVTOPTBSLAVERY200;Я передумал[GetEndA].;x
+EVTTOOLTIPSLAVERY201;показывает вам свой товар;x
+EVTDESCSLAVERY201;Вы договорились о встрече с состоятельн[From.GetOyYm] [From.GetManWoman]ой по имени [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] из города [From.Capital.GetName], котор[From.GetAyaYy] хочет купить одного из ваших рабов.;x
+EVTOPTASLAVERY201;Пожалуйста, выбирайте любого понравившегося!;x
+EVTDESCSLAVERY202;Вы посещаете невольничий рынок и встречаетесь с персонажем [From.GetFirstNameWithDynasty], богат[From.GetOyYm] работоргов[From.GetKoyTsem] из города [From.Capital.GetName]. [From.GetSheHeCap] показывает вам свой товар и интересуется, какого раба вы желаете приобрести.;x
+EVTOPTASLAVERY202;Новую постельную рабыню для моего гарема.;x
+EVTOPTBSLAVERY202;Телохранителя, опытного с хорошими навыками.;x
+EVTOPTCSLAVERY202;Нового советника для моего двора.;x
+EVTOPTESLAVERY202;Подходит для обучения в духовенство;x
+EVTOPTDSLAVERY202;Я передумал[GetEndA].;x
+EVTDESCSLAVERY203;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] говорит вам, что [From.GetSheHe] находится на рынке для покупки нового постельного раба. Вы выбираете несколько самых привлекательных, чтобы удовлетворить [From.GetHerHis];x
+EVTOPTASLAVERY203;Скажите мне, кого бы вы предпочли?;x
+EVTTOOLTIPSLAVERY204;выбирает раба для покупки;x
+EVTDESCSLAVERY204;[From.GetTitle] [From.GetFirstName] приводит своих лучших постельных рабов. 'Скажите мне, - говорит [From.GetSheHe], - кого бы Вы предпочли?';x
+EVTOPTASLAVERY204;Думаю, этого;x
+EVTDESCSLAVERY205;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] говорит вам, что ищет нового телохранителя. Вы вызываете лучших бойцов из ваших ям, чтобы [From.GetSheHe] мог[From.GetNoneE] выбрать..;x
+EVTOPTASLAVERY205;Скажите, кого Вы предпочли?;x
+EVTTOOLTIPSLAVERY206;выбирает раба для покупки;x
+EVTDESCSLAVERY206;[From.GetTitle] [From.GetFirstName] приводит своих лучших бойцов. 'Скажите мне, - говорит [From.GetSheHe], - кого Вы предпочли?';x
+EVTDESCSLAVERY207;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] говорит вам, что [From.GetSheHe] ищет верного помощника для работы в Совете. Вы выбираете самых опытных своих рабов, чтобы представить для выбора.;x
+EVTOPTASLAVERY207;Скажите, кого Вы предпочли?;x
+EVTTOOLTIPSLAVERY208;выбирает раба для покупки;x
+EVTDESCSLAVERY209;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] сообщает вам, что [From.GetSheHe] ищет юного раба для обучения в качестве жреца веры [From.Religion.GetName]. У вас есть несколько детей-рабов, которые предстали перед [From.GetHerHis] взглядом для выбора.;x
+EVTDESCSLAVERY208;[From.GetTitle] [From.GetFirstName] приводит своих самых опытных советников. 'Скажите мне, - говорит [From.GetSheHe], - Слугу какого рода деятельности вы хотите?';x
+EVTOPTASLAVERY208;Харизматичный дипломат.;x
+EVTOPTBSLAVERY208;Проницательный служащий.;x
+EVTOPTCSLAVERY208;Мудрый ученый;x
+EVTOPTDSLAVERY208;Хитрый шпион.;x
+EVTDESCSLAVERY210;[From.GetTitle] [From.GetFirstName] приводит своих детей-рабов к вам. 'Скажите мне, - говорит [From.GetSheHe], - какого из них вы хотите взять в ваш храм и обучать?';x
+EVTOPTASLAVERY210;Этот;x
+EVTDESCSLAVERY251;Вы договорились встретиться с состоятельн[FromFrom.GetOyYm] [FromFrom.GetManWoman]ой по имени [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] из города [FromFrom.Capital.GetName], котор[FromFrom.GetAyaYy] хочет купить одного из ваших рабов. [FromFrom.GetSheHeCap] наконец делает выбор, кладя одну руку на плечо персонажа [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal]. - 'Вот, я думаю. Сколько [From.GetSheHe] стоит?';x
+EVTOPTASLAVERY251;Гораздо больше, чем вы можете себе позволить! Прочь!;x
+EVTOPTBSLAVERY251;15 золотых.;x
+EVTOPTCSLAVERY251;40 золотых.;x
+EVTOPTDSLAVERY251;Больше...;x
+EVTOPTESLAVERY251;75 золотых.;x
+EVTOPTFSLAVERY251;115 золотых.;x
+EVTOPTGSLAVERY251;150 золотых.;x
+EVTOPTHSLAVERY251;225 золотых.;x
+EVTDESCSLAVERY25399;[FromFrom.GetTitledFirstNameWithDynastyAndTitleNoRegnal] - очень ценный раб, за него нужно заплатить высокую цену…;x
+EVTDESCSLAVERY252;[From.GetTitle] [From.GetFirstName] возмущен[From.GetEndA] вашим выбором. 'Этот!? -бормочет [From.GetSheHe], - этот не продается ни при каких условиях!'.;x
+EVTOPTASLAVERY252;В таком случае, я просто найду другого работорговца.;x
+EVTOPTBSLAVERY252;Может быть, мне не нужен новый раб.;x
+EVTDESCSLAVERY253;'Ах, [FromFrom.GetFirstName], - говорит [From.GetTitle] [From.GetFirstName], - Мудрый выбор.' - [From.GetSheHeCap] на момент задумывается, чтоб назвать окончательную стоимость.;x
+EVTOPTASLAVERY253;Готово. Деньги за вами.;x
+EVTOPTCSLAVERY253;Ни один раб не стоит таких денег! С меня хватит.;x
+EVTDESCSLAVERY254;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] соглас[GetNaEnGetNaEn] на вашу цену и обмен состоится. [From.GetSheHeCap] передает вам золото, а вы - кнут.;x
+EVTOPTASLAVERY254;Дело сделано.;x
+EVTDESCSLAVERY255;'Эта цена возмутительна! - бормочет [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], - я буду делать дела в другом месте.';x
+EVTOPTASLAVERY255;Ну, вы не можете угодить каждому.;x
+EVTDESCSLAVERY301;Пока стражники отправляются в рабские кварталы, чтобы найти персонажа по имени [From.GetFirstName],  [slave_to_breed_with.GetFirstName] предстаёт перед Вами.;x
+EVTOPTASLAVERY301;Этот, что ли?;x
+EVTOPTBSLAVERY301;Ба, никто из них не подходит!;x
+EVTOPTCSLAVERY301;[From.GetFirstName] и ты станете партнёрами - я приказываю;x
+EVTDESCSLAVERY303;Вы говорите, чтобы [From.GetFirstName] приступил[From.GetEndA], но [From.GetSheHe] стоит и вызывающе смотрит вам в глаза. 'Никогда! Вам придется приказать страже избить меня до смерти и трахнуть мой труп!';x
+EVTOPTASLAVERY303;С удовольствием. Стража, кнут!;x
+EVTOPTBSLAVERY303;Возможно, мне стоит отказаться.;x
+EVTDESCSLAVERY304;[From.GetFirstName] выглядит неуверенно и слушает ваши убедительные доводы. 'Д-да... да, хозяин, - [From.GetSheHe] говорит, - сделаю это.';x
+EVTOPTASLAVERY304;Великолепно! Где второй?;x
+EVTDESCSLAVERY307;[From.GetFirstName] неуверенно слушает ваш приказ, но все-таки подчиняется. Они остаются в комнате вдвоем, чтобы произвести для вас третьего.;x
+EVTOPTASLAVERY307;День удался!;x
+EVTTOOLTIPSLAVERY500;[This.GetFirstName] будет избит[This.GetEndA];x
+EVTDESCSLAVERY501;[From.GetFirstName] был[From.GetEndA] подвешен[From.GetEndA] вашими стражниками, которые начали избивать [From.GetHerHis] кнутами, вы насчитали тридцать девять ударов. Когда стража снимает раба, [From.GetFirstName] еле стоит на своих ногах и воет от боли, но, к счастью, ваша собственность не получила увечий.;x
+EVTOPTASLAVERY501;Пусть это послужит примером для остальных.;x
+EVTOPTBSLAVERY501;Кровать или кнут, раб. Выбор за тобой.;x
+EVTDESCSLAVERY502;Ваши стражники подвесили [From.GetFirstName] и начали избивать [From.GetHerHis] кнутами, вы насчитали тридцать девять ударов. Когда стража снимает раба, [From.GetFirstName] сгибается и падает на [From.GetHerHis] колени. Некоторые удары впились слишком глубоко и могут оставить шрамы.;x
+EVTDESCSLAVERY503;[From.GetFirstName] был[From.GetEndA] подвешен[From.GetEndA] вашими стражниками, которые начали избивать [From.GetHerHis] кнутами, вы насчитали тридцать девять ударов. Когда стража снимает раба, [From.GetFirstName] валится на землю и лежит без чувств. Кнут впивался глубоко, возможно, слишком глубоко. [From.GetSheHe] получил[From.GetEndA] слишком тяжелых ударов и может остаться калекой на всю жизнь.;x
+EVTDESCSLAVERY504;From.GetFirstName] был[From.GetEndA] подвешен[From.GetEndA] вашими стражниками, которые начали избивать [From.GetHerHis] кнутами, вы насчитали тридцать девять ударов. После того, как дело сделано, [From.GetFirstName] падает на землю без чувств. [From.GetSheHeCap] мертв[From.GetEndA].;x
+EVTOPTASLAVERY504;Повестьте тело в невольничьем лагере, как назидание остальным.;x
+EVTOPTBSLAVERY504;...хорошо, но многовато.;x
+EVTDESCSLAVERY601;Ваши стражники пробудили вас посреди ночи с ужастной новостью - [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], один из ваших рабов, убежал[From.GetEndA]!;x
+EVTOPTASLAVERY601;Проклятие!;x
+EVTDESCSLAVERY603;Человек по имени [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] прибывает ко двору. [From.GetSheHeCap] утверждает, что бежал[From.GetEndA] из рабства из города [FromFrom.Capital.GetName].;x
+EVTDESCSLAVERY604;Ваш[From.GetEndA] [From.GetRootRelation], [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], сбежал[From.GetEndA] из рабства!;x
+EVTDESCSLAVERY605;Вы проснулись поздно вечером от ужасных воплей. К вам в покои врываются стражники, волоча раба по имени [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], несмотря на то, что [From.GetSheHe] упирается и кричит. 'Мы поймали это животное при попытке убежать, - Объясняет стражник, - что вы прикажете сделать с ним?';x
+EVTOPTASLAVERY605;Отпустите [From.GetHerHis] с предупреждением.;x
+EVTOPTBSLAVERY605;Избить [From.GetHerHis]!;x
+EVTOPTCSLAVERY605;Избить [From.GetHerHis], найдите того, кто помогал ему и избейте [From.GetHerHis] так же!;x
+EVTTOOLTIPSLAVERY1000;[This.GetTitledFirstName] получает один уровень рабского лагеря в своейстолице.;x
+EVTTOOLTIPSLAVERY1001;[This.GetTitledFirstName] теряет один уровень рабского лагеря в своей столице.;x
+EVTDESCSLAVERY1010;У вас есть рабы за пределами вашей столицы. Они будут присланы в ваши лагеря в город [Root.Capital.GetName].;x
+EVTDESCSLAVERY1100;Од[new_slave.GetNaIn] из рабов в ваших лагерях отличи[new_slave.GetLasLsya], и вы полагаете, что [new_slave.GetSheHe] может стать хорош[new_slave.GetEyIm] домашн[new_slave.GetEyIm] слугой. Привести [new_slave.GetHerHis] ко двору?;x
+EVTDESCSLAVERY1100B;Од[new_slave.GetNaIn] из рабов в ваших домах удовольствий отличи[new_slave.GetLasLsya] в ремесле любовных утех. [new_slave.GetSheHeCap] хорош[new_slave.GetEndA] собой, пользуется популярностью у покровителей и умел[new_slave.GetEndA] в искусстве любви. На рынке за н[new_slave.GetHerHis] могли бы дать хорошую цену, или быть может стоит оставить [new_slave.GetHerHis] для себя.;x
+EVTOPTASLAVERY1100;Да, нечего таланту пропадать.;x
+EVTOPTBSLAVERY1100;Нет, я не нуждаюсь в этом животном.;x
+EVTTOOLTIPSLAVERY1200;Купть рабов для поднятие уровня лагеря за 400 золотых.;x
+EVTDESCSLAVERY1200;Вы накопили значительную сумму и готовы приобрести рабов для лагерей. Вы договариваетесь о встрече с работорговцем, способным поставить необходимое количество рабов.;x
+EVTOPTASLAVERY1200;Встретиться с работорговцем.;x
+EVTTOOLTIPSLAVERY1201;рассматривает ваше предложение.;x
+EVTDESCSLAVERY1201;Богатый человек из города [From.Capital.GetName] прибыл к вам на встречу. [From.GetSheHeCap] утверждает, что [From.GetSheHe] желает купить не одного, а несколько тысяч рабов с ваших лагерей за 400 золотых.;x
+EVTOPTASLAVERY1201;Согласиться;x
+EVTOPTBSLAVERY1201;Отказаться;x
+EVTTOOLTIPSLAVERY1202;предложение будет принято.;x
+EVTDESCSLAVERY1202;Работорговец, человек из города [From.Capital.GetName] по имени [From.GetFirstNameWithDynasty], вкратце рассмаривает ваше предложение. Деньги и кнут поменялись местами и вы можете возвращаться к себе в город [Root.Capital.GetName] с новыми рабами для лагерей.;x
+EVTOPTASLAVERY1202;Это была выгодная инвестиция.;x
+EVTTOOLTIPSLAVERY1203;предложение отвертнуто.;x
+EVTDESCSLAVERY1203;Работорговец, человек из города [From.Capital.GetName] по имени [From.GetFirstNameWithDynasty], вкратце рассматривает ваше предложение и отказывает. [From.GetSheHeCap] утверждает, что [From.GetSheHe] не может себе сейчас позволить продать столько рабов.;x
+EVTOPTASLAVERY1203;Куплю у другого работорговца.;x
+EVTOPTBSLAVERY1203;Брошу эту затею.;x
+EVTTOOLTIPSLAVERY1300;Организовать продажу одного уровня лагерных рабов за 400¤.;x
+EVTDESCSLAVERY1300;Вам кажется, что вы располагаете слишком большим количеством рабов и получаете с них слишком мало прибыли. Вы договариваетесь о встрече с работорговцем, который заинтересован в покупке большого количества рабов.;x
+EVTOPTASLAVERY1300;Встреча с работорговцем.;x
+EVTTOOLTIPSLAVERY1301;рассматривает ваше предложение.;x
+EVTDESCSLAVERY1301;Работорговец, [From.GetManWoman]а из города [From.Capital.GetName] устроил[From.GetEndA] с вами встречу. [From.GetSheHeCap] утверждает, что может продать достаточно рабов для ваших лагерей за тысячу золотых..;x
+EVTOPTASLAVERY1301;Согласиться;x
+EVTOPTBSLAVERY1301;Отказаться;x
+EVTTOOLTIPSLAVERY1302;принимает предложение.;x
+EVTDESCSLAVERY1302;Работорговец, [From.GetManWoman]а из города [From.Capital.GetName] по имени [From.GetFirstNameWithDynasty], вкратце рассматривает ваше предложение. Деньги и кнут поменялись местами, и вы можете возвращаться к себе в город [Root.Capital.GetName] с мешком золота.;x
+EVTOPTASLAVERY1302;Выгодная сделка.;x
+EVTTOOLTIPSLAVERY1303;предложение отвергнуто.;x
+EVTDESCSLAVERY1303;Работорговец, [From.GetManWoman]а из города [From.Capital.GetName] по имени [From.GetFirstNameWithDynasty], вкратце рассматривает ваше предложение. [From.GetSheHeCap] утверждает, что не нуждается в таком количестве рабов.;x
+EVTOPTASLAVERY1303;Продам другому работорговцу.;x
+EVTOPTBSLAVERY1303;Брошу эту затею.;x
+EVTTOOLTIPSLAVERY1400;Освободить один уровень рабов из лагерей.;x
+EVTDESCSLAVERY1400;Ваши рабы шокированы появлением столь помпезной особы в лагере. Вы, в ваших лучших шелках, окружены охраной. Люди выглядят голодными и усталыми, их одежды порваны, а лица мрачны. Вы быстро привлекаете их внимание, объявив о своем решении, освободить их. Рабы проявляют недоверие, но спустя мгновение депрессивная лагеная обстановка сменается на взрыв радостных воплей и благословений в ваш адрес.;x
+EVTOPTASLAVERY1400;Помахать им рукой, пусть идут.;x
+TOOLTIPslave_raid_new_slaves;Три лучших раба из захваченных у персонажа [This.GetName], должны быть доставлены к вам в город [Root.GetTitle] для личной коллекции персонажа [Root.GetFirstName].\n;x
+EVTDESCslavery.4000;[FromFrom.GetName] был[FromFrom.GetEndA] сам[FromFrom.GetOyYm] жесток[FromFrom.GetOyIm], многие заключенные поднимаются. На самом деле, у вас так много заключенных, что вы можете отправить часть из них в город [Root.Capital.GetName] в качестве рабов...;x
+OPTAslavery.4000;Да, отправить их в лагеря!;x
+OPTBslavery.4000;Я не нуждаюсь в них;x
+EVTDESCSLAVERY3000;Во время посещения крупного рабовладельческого города с моим опекуном по имени [Root.Guardian.GetTitledName], я был[GetEndA] шокирован[GetEndA] их ужасными условиями существования. Рабство отвратительно и я постараюсь положить ему конец.;x
+EVTDESCSLAVERY3000B;Во время посещения крупного рабовладельческого города, я стал[GetEndA] свидетел[GetSoftNitseyEm] жалкого существования рабов и понял[GetEndA] их страдания. Рабство - это отвратительное действие, которое меня шокирует и огорчает, я постараюсь положить ему конец.;x
+EVTOPTASLAVERY3000;В один прекрасный день, они будут освобождены...;x
+EVTOPTBSLAVERY3000;Боюсь, так устроен мир;x
+EVTDESCSLAVERY3001;После того, как вы взяли [From.GetHerHis] с собой в город работорговцев, ваш[From.GetEndA] молод[From.GetAyaOy] воспитанни[From.GetTsaK] [From.GetTitledName] приобрел[From.GetEndA] откровенное отвращение к рабству. [From.GetSheHeCap] считает, что ни один человек не заслуживает такого и [From.GetSheHeCap] покля[From.GetLasLsya], что когда-нибудь [From.GetSheHe] освободит рабов...;x
+EVTOPTASLAVERY3001;Похвалить благородные побуждения;x
+EVTOPTBSLAVERY3001;Таков мир, рабство необходимо;x
+EVTDESCSLAVERY3002;[From.GetTitledName] сурово отреагировал[From.GetEndA] на мои новые взгялы. [From.GetSheHeCap] утверждает, что рабство необходимо и мне нужно сосредоточится на более важных делах.;x
+EVTDESCSLAVERY2000;Вы игнорировали договор с другими государствами, запретившими рабство в государстве [Root.PrimaryTitle.GetName], легализовав его. Это будет воспринято как провокация государствами, в которых рабство вне закона и может привести к вторжению для освобождения рабов.;x
+EVTTOOLTIPSLAVERY2001;[This.PrimaryTitle.GetName] может получить повод для вторжения в ваше государство;x
+EVTDESCSLAVERY2001;[Root.PrimaryTitle.GetFOA], ваш совет обращает внимание на то, что [From.GetTitledFirstName] вновь легализировал[From.GetEndA] рабство, несмотря на договор об отмене рабовладения. По всем правам и законам, мы имеем право вторгнуться в [From.GetHerHis] земли и освободить рабов.;x
+EVTDESCSLAVERY403;[Root.PrimaryTitle.GetFOA], ваша рабыня [From.Mother.GetFirstName] родила ребёнка, которого назвали [From.GetFirstName]. Малыш очень похож на вас. Видимо, вы спали с его матерью...;x
+EVTDESCSLAVERY403B;[Root.PrimaryTitle.GetFOA], ваша рабыня [From.Mother.GetFirstName] родила ребёнка, но малыш не пережил родов. Мертвый младенец очень похож на вас. Видимо, вы спали с его матерью...;x
+EVTOPTASLAVERY403;Просто ещё один раб для моей коллекции;x
+EVTOPTASLAVERY403B;Обидно, был бы хороший раб;x
+EVTOPTBSLAVERY403;Ребёнок может жить как м[From.GetOyaOy] незаконнорожденн[From.GetAyaYy] [From.GetRootRelation];x
+EVTOPTBSLAVERY403B;Я объявляю ребёнка своим бастардом;x
+EVTOPTCSLAVERY404;Я объявляю, что ребёнок - м[From.GetOyaOy] истин[From.GetAyaYy] [From.GetRootRelation], а [From.Mother.GetFirstName] - свободноя женщина;x
+EVTOPTDSLAVERY404;[From.GetSheHeCap] - м[From.GetOyaOy] [From.GetRootRelation];x
+EVTDESCSLAVERY401;[Root.PrimaryTitle.GetFOA], ваша рабыня [From.Mother.GetFirstName] родила ребенка. Она назвала [From.GetHerHis] [From.GetFirstName], и [From.GetSheHe] роди[From.GetLasLsya] вашей собственностью.;x
+EVTDESCSLAVERY401B;[Root.PrimaryTitle.GetFOA], ваша рабыня [From.Mother.GetFirstName] родила ребенка, который, к сожалению, не пережил рождения. Она называет [From.GetHerHis] [From.GetFirstName].;x
+EVTOPTASLAVERY401;Я надеюсь, [From.GetSheHe] станет ценным рабом;x
+EVTOPTASLAVERY401B;Другой раб был бы полезен, ну да ладно;x
+EVTTOOLTIPSLAVERY302;велено возлечь с персонажем [From.GetFirstName];x
+EVTDESCSLAVERY15;Работорговля вне закона в земле [Root.TopLiege.PrimaryTitle.GetName], поэтому вы вынуждены оставить это занятие.;x
+EVTOPTASLAVERY15;Но это было так прибыльно!;x
+EVTOPTBSLAVERY253;Я так не думаю, я найду другого раба в другом месте;x
+EVTTOOLTIPSLAVERY255;узнает о вашем отказе;x
+EVTTOOLTIPSLAVERY253;рассматривает цену за раба [From.GetFirstName]...;x
+EVTOPTESLAVERY208;Здесь нет рабов для покупки;x
+EVTTOOLTIPSLAVERY250;[From.GetTitledFirstName] рассмотрел[From.GetEndA] ваше предложение о покупке раба [This.GetFirstName];x
+EVTTOOLTIP204;рассматривает ваших постельных рабынь;x
+EVTTOOLTIPSLAVERY203;предоставит вам подходящую постельную рабыню;x
+EVTTOOLTIPSLAVERY205;предоставит вам подходящего телохранителя;x
+EVTTOOLTIPSLAVERY207;предоставит вам подходящего советника;x
+EVTTOOLTIPSLAVERY209;предоставит вам подходящего молодого раба.;x
+EVTTOOLTIPSLAVERY202;встречается с вами, чтобы обсудить свои требования;x
+EVTDESCSLAVERY151;Вы решили продать ваш[From.GetUEgo] пленни[From.GetTsuKa] по имени [From.GetTitledFirstName] в рабство. Теперь нужно найти работорговца, согласного купить [From.GetHerHis]...;x
+EVTOPTASLAVERY151;Я уверен[GetEndA], что они будут заинтересованы;x
+EVTOPTBSLAVERY151;Вряд-ли кто-то захочет купить [From.GetHerHis];x
+EVTDESCSLAVERY155;Вы решили, что ваш[From.GetEndA] заключённ[From.GetAyaYy] [From.GetTitledFirstName] будет продан[From.GetEndA] в рабство. Поскольку [From.GetSheHe] не так много стоит как раб, вы можете заинтересовать только мелких торговцев на рынке, куда отведете [From.GetHerHis].;x
+TOOLTIPslavery.154;[From.GetTitledFirstName] продан[From.GetEndA] в небольшой срок и снимается с рынка\n;x
+EVTOPTASLAVERY155;Я полагаю, это лучше, чем ничего;x
+EVTOPTBSLAVERY155;Я передумал[GetEndA];x
+EVTTOOLTIPSLAVERY100;рассмотрит стоимость для вашего раба;x
+EVENTTOOLTIPSLAVERY1300;Вы займётесь поиском работорговцев, которые купят кучу ваших рабов;x
+EVTTOOLTIPSLAVERY300;Вы приказываете, чтобы [Root.GetFirstName] и [FromFrom.GetFirstName] спарились;x
+mark_for_sale;Выставить на продажу;x
+mark_for_sale_desc;Пусть на невольничьих рынках узнают, что [Root.GetFirstNameWithDynasty] выставлен[Root.GetEndA] на продажу;x
+FORSALETOOLTIP;[This.GetFirstName] будет выставлен[This.GetEndA] на продажу повторно;x
+mark_not_for_sale;Список не для продажи;x
+mark_not_for_sale_desc;Пусть на невольничьем рынке узнают, что [Root.GetFirstNameWithDynasty] не продается и вы не будете рассматривать предложения о [Root.GetHerHis] покупке;x
+NOTFORSALETOOLTIP;[This.GetFirstName] не будет выставлятся на торги;x
+EVTTOOLTIPSLAVERY150;Вы ищете работорговца, готового купить раба [Root.GetTitledFirstName];x
+EVTDESC_TOG_10699;Разъяренные рабы подняли восстание в земле [Root.GetName]! Их ведет один из них, раб, который хочет положить конец рабству в этих землях.;x
+EVTOPTA_TOG_10699;Мы раздавим этих муравьев;x
+EVTDESC_TOG_10700;Разъяренные рабы подняли восстание в земле [From.GetName]! Их ведет один из них, раб, который хочет положить конец рабству в этих землях.;x
+EVTDESCTOG10702;[From.GetName] держал множество рабов, пока вы и ваша армия не освбодили их. Работорговцы в ужасе наблюдают, как все рабы до последнего получают свободу.;x
+EVTTOOLTIPTOG10703;Все невольничьи лагеря в земле [From.GetName] будут уничтожены, все рабы получат свободу.;x
+EVTTOOLTIPTOG10705;Группа бывших рабов присоединяется к вашему делу;x
+EVTDESC_TOG_10703;Мрачные новости, [From.GetTitledFirstName] освободил[From.GetEndA] всех рабов, удерживаемых в лагерях земли [FromFrom.GetName]. Мы были бессильны противостоять. [From.GetSheHe] был[From.GetEndA] во главе победоносной армии и объявил[From.GetEndA] о предоставлении всем рабам свободы;x
+LOSEALLSLAVES;Все рабы, содержащиеся в лагерях земли [FromFrom.GetName], освобождены нападавшими;x
+EVTOPTATOG10703;[From.GetSheHeCap] не имеет права делать это!;x
+EVTDESC_TOG_10706;Почувствовав возможность, рабы в земле [Root.GetName] восстали! Их лидеры поклялись в верности продолжающемуся восстанию рабов и деле создания нового государства, свободного от рабства.;x
+EVTOPTA_TOG_10706;Больше рабов для мясника;x
+EVTDESCTOG10707;Рабы земли [From.GetName] подняли восстание и присоединились к вам!;x
+EVTDESC_TOG_10708;Почувствовав возможность, рабы земли [From.GetName] восстали! Их лидеры поклялись в верности продолжающемуся восстанию рабов и делу создания нового государства, свободного от рабства.;x
+TOOLTIPwar_of_liberationWESTEROS;[Root.GetTitledFirstName] и столица [From.GetTitledFirstName] находятся в §YВестеросе§!\n;x
+TOOLTIPwar_of_liberationNEIGHBOUR;[Root.GetTitledFirstName] и государство [From.GetTitledFirstName] §Yсоседствуют§! друг с другом\n;x
+TOOLTIPslavery_0CULTURE;Культура/религия персонажа [This.GetTitledFirstName] традиционно выступает против рабства (вестеросские/браавосийские/одичалые/летнеостровные/ройнары/Великий Пастырь/Лунные Певцы/Владыка Гармонии)\n;x
+TOOLTIPslavery_0VASSAL;Культура/религия кого-то из вассалов персонажа [This.GetTitledFirstName] традиционно выступает против рабства\n;x
+TOOLTIPslavery_2CULTURE;[This.GetTitledFirstName] либо занимается работорговлей, либо [This.GetHerHis] культура/религия традиционно одобряет рабство (Гискарская/Валирийская/Вольных Городов/Пиратская/Дотракийская/Квартийская/Итийская)\n;x
+TOOLTIPslavery_2VASSAL;Культура/религия кого-то из вассалов персонажа [This.GetTitledFirstName] либо занимается работорговлей, либо одобряет рабство\n;x
+TOOLTIPslavery_2EMANCIPATED;[This.GetFullName] НЕ был навязан договор об освобождении за последние 10 лет\n;x
+TOOLTIPslavery_0DYNASTY;Дом [This.GetOnlyDynastyName] основан бывшим рабом, который уничтожил рабство в стране\n;x
+demand_relatives_freed;Приказать вассалу освободить родственников;x
+demand_relatives_freed_desc;Один из ваших вассалов держит вашу родню в качестве рабов. Как законный сюзерен, вы имеете право приказать вассалу освободить ваших родственников.;x
+EVTTOOLTIPSLAVERY4001;будет приказано освободить ваших родственников;x
+TOOLTIPdemand_relatives_freedSLAVE;[This.GetTitledFirstName] является одним из рабов\n;x
+EVTDESCslavery.4001;[Root.GetTitle] [Root.GetFirstName], мне доложили, что один из ваших рабов является моим родственником. Как сюзерен, я приказываю вам освободить их и немедленно доставить ко мне.\n\n Подпись,\n[From.GetFirstName] из Дома [From.GetOnlyDynastyName], [From.GetTitle] земли [From.PrimaryTitle.GetName];x
+EVTDESCslavery.4002;[Root.PrimaryTitle.GetFOA], хоть это и большой убыток для меня, я выполню ваше поручение и освобожу ваших родственников. Я немедленно отправлю их в город [Root.Capital.GetName].\n\n С уважением,\n[From.GetTitledFirstNameWithDynasty];x
+EVTDESCslavery.4003;[Root.PrimaryTitle.GetFOA], несмотря на то, что они ваши родственникик, по закону я их полноправный хозяин. Я должен отказать вам.\n\n С уважением,\n[From.GetTitledFirstNameWithDynasty];x
+OPTAslavery.4003;Предатель! Я освобожу их так или иначе;x
+OPTAslavery.4001;Отказ означает измену;x
+OPTBslavery.4001;Нет, они по праву принадлежат мне;x
+free_slave;Даровать свободу;x
+free_slave_desc;Освободить персонажа [Root.GetFirstNameWithDynasty] от рабства и даровать свободу.;x
+opinion_abolished_slavery_bad;Отменил[_] рабство;x
+opinion_abolished_slavery_good;Отменил[_] рабство;x
+opinion_abolished_slavery_former_slave;Отменил[_] рабство;x
+opinion_chattel_slavery_bad;Легалезировал[_] рабство;x
+opinion_chattel_slavery_good;Легалезировал[_] рабство;x
+opinion_thralldom_bad;Узаконил[_] рабство;x
+opinion_thralldom_good;Узаконил[_] рабство;x
+TOOLTIPbuy_bulk_slaves;Любой работорговец может продать свой лагерь\n;x
+TOOLTIPsell_bulk_slaves;Кто-либо из работорговцев далжен иметь 400¤\n;x
+slave_revolt_modifier;Восстание рабов в вотчине;x
+crushed_slave_revolt_1;Восстание рабов разгромлено;x
+thwarted_war_of_emancipation_1;Поражение в войне за освобождение;x
+thwarted_war_of_liberation_1;Поражение в войне за освобождение;x
+concubine_slave;Взять в наложницы;x
+concubine_slave_desc;Работорговцы издревле держали гаремы с женщинами, чтобы предаваться плотским утехам. Дети, рожденные рабынями-наложницами являются рабами.;x
+sacked;Разграблена;x
+TOOLTIPslave_raidBORDER;Или целевая провинция §Yприграничная§! персонажу [Root.GetTitledFirstName] ИЛИ [Root.GetTitledFirstName] - §Y'торговец рабами'§! и цель - §Yпобережье§!\n;x
+TOOLTIPslave_raidCULTURE;Целевая провинция НЕ является той же §Yкультурной группой§! как и [Root.GetTitledFirstName]\n;x
+TOOLTIPslave_raidSACKED;Целевая провинция НЕ подвергалась §Yграбежам§! в налетах за рабами\n;x
+TOOLTIPslave_raidCENTRALIZATION;Если цель в §Yтой же области§! где и [Root.GetTitledFirstName], §Yвласть короны§! страны НЕ должна быть средней или выше\n;x
+TOOLTIPslave_raidPIRATE;Если целью является §Yпират§!, они могут быть атакованы только с §Yкоролевским§! уровнем или выше\n;x
+manage_slave;Управлять персонажем [Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal];x
+manage_slave_desc;Ваши стражники приведут персонажа [Root.GetFirstName] [Root.GetOnlyDynastyName], вашего раба, к вам, чтобы вы решили, что хотите сделать;x
+EVTDESCSLAVERY2;[Root.PrimaryTitle.GetFOA], ваш раб, [From.GetFirstName], доставлен[From.GetEndA] по вашему указанию. Что вы прикажете сделать?;x
+EVTOPTASLAVERY2;Продать [From.GetHerHis], выручим сколько сможем;x
+EVTOPTBSLAVERY2;Проинформировать работорговцев, что [From.GetSheHe] не продаётся;x
+EVTOPTCSLAVERY2;Проинформировать работорговцев, что [From.GetSheHe] выставлен[From.GetEndA] на продажу;x
+EVTOPTDSLAVERY2;Скрестить [From.GetHerHis] с другим рабом, мне нужны новые слуги;x
+EVTOPTESLAVERY2;Ещё...;x
+EVTOPTFSLAVERY2;[From.GetSheHeCap] нуждается в хорошей порке;x
+EVTOPTGSLAVERY2;Я возьму её себе в наложницы;x
+EVTOPTHSLAVERY2;Приказать сделать его евнухом;x
+EVTOPTISLAVERY2;Отпустить [From.GetHerHis] на свободу;x
+EVTOPTJSLAVERY2;Ничего, я передумал;x
+TOOLTIPSLAVEREVOLTX;Восставшие рабы были пойманы и отправлены обратно - в лагеря\n;x
+EVTDESCSLAVERY607;Ваш раб [From.GetFirstNameWithDynasty] был[From.GetEndA] наездни[From.GetTseyKom] на драконе, преждем, чем [From.GetSheHe] был[From.GetEndA] захвачен[From.GetEndA], и [From.GetSheHe] никогда не расскажет, что случилось. Сегодня над городом [Root.Capital.GetName] показался дракон!! Чудовище убило многих стражников и никто не мог его остановить, пока [From.GetFirstName] не забра[From.GetLasLsya] на него верхом и не улетел.;x
+EVTOPTASLAVERY607;[From.GetSheHeCap] пожалеет об этом!;x
+EVTDESCSLAVERY608;Вы были во дворе со своими людьми, как, вдруг, увидели в небе крылатую тварь, приближающуюся к вам. Это может быть только дракон. Чудище приземляется перед вами и никто ин[From.GetAyaOy], как [From.GetTitledFirstNameWithDynasty] спрыгивает с него. Видимо, [From.GetSheHe] бежал[From.GetEndA] из рабства из земли [FromFrom.PrimaryTitle.GetName], и теперь ищет убежище здесь.;x
+realm_emancipated;Освобожденные земли;x
+EVTOPTBSLAVERY201;Нет, в этом году я не буду проводить торги;x
+train_unsullied;Тренировать Безупречных;x
+train_unsullied_desc;Астапор является всемирно известным местом продажи Безупречных. Маленьких мальчиков кастрируют в детстве и делают из них сильных и верных воинов. Вы можете использовать рабов из лагеря, чтобы тренировать их, для последующей продажи.;x
+EVTTOOLTIPSLAVERY700;Тысячи Безупречных начнут тренировки;x
+buy_unsullied;Купить Безупречных;x
+buy_unsullied_desc;Астапор является всемирно известным местом продажи Безупречных. Маленьких мальчиков кастрируют в детстве и делают из них сильных и верных воинов. Вы можете купить их и они будут исполнять любую вашу волю.;x
+EVTTOOLTIPSLAVERY705;В Астапор прибудет работорговец.;x
+ca_asoiaf_unsullied_1;Лагерь Безупречных (1000);x
+ca_asoiaf_unsullied_2;Лагерь Безупречных (2000);x
+ca_asoiaf_unsullied_3;Лагерь Безупречных (3000);x
+ca_asoiaf_unsullied_4;Лагерь Безупречных (4000);x
+ct_asoiaf_unsullied_1;Лагерь Безупречных (1000);x
+ct_asoiaf_unsullied_2;Лагерь Безупречных (2000);x
+ct_asoiaf_unsullied_3;Лагерь Безупречных (3000);x
+ct_asoiaf_unsullied_4;Лагерь Безупречных (4000);x
+fp_asoiaf_unsullied_1;Лагерь Безупречных (1000);x
+fp_asoiaf_unsullied_2;Лагерь Безупречных (2000);x
+fp_asoiaf_unsullied_3;Лагерь Безупречных (3000);x
+fp_asoiaf_unsullied_4;Лагерь Безупречных (4000);x
+ca_asoiaf_unsullied_cent_1;Лагерь Безупречных (100);x
+ca_asoiaf_unsullied_cent_2;Лагерь Безупречных (200);x
+ca_asoiaf_unsullied_cent_3;Лагерь Безупречных (300);x
+ca_asoiaf_unsullied_cent_4;Лагерь Безупречных (400);x
+ca_asoiaf_unsullied_cent_5;Лагерь Безупречных (500);x
+ca_asoiaf_unsullied_cent_6;Лагерь Безупречных (600);x
+ca_asoiaf_unsullied_cent_7;Лагерь Безупречных (700);x
+ca_asoiaf_unsullied_cent_8;Лагерь Безупречных (800);x
+ca_asoiaf_unsullied_cent_9;Лагерь Безупречных (900);x
+ct_asoiaf_unsullied_cent_1;Лагерь Безупречных (100);x
+ct_asoiaf_unsullied_cent_2;Лагерь Безупречных (200);x
+ct_asoiaf_unsullied_cent_3;Лагерь Безупречных (300);x
+ct_asoiaf_unsullied_cent_4;Лагерь Безупречных (400);x
+ct_asoiaf_unsullied_cent_5;Лагерь Безупречных (500);x
+ct_asoiaf_unsullied_cent_6;Лагерь Безупречных (600);x
+ct_asoiaf_unsullied_cent_7;Лагерь Безупречных (700);x
+ct_asoiaf_unsullied_cent_8;Лагерь Безупречных (800);x
+ct_asoiaf_unsullied_cent_9;Лагерь Безупречных (900);x
+fp_asoiaf_unsullied_cent_1;Лагерь Безупречных (100);x
+fp_asoiaf_unsullied_cent_2;Лагерь Безупречных (200);x
+fp_asoiaf_unsullied_cent_3;Лагерь Безупречных (300);x
+fp_asoiaf_unsullied_cent_4;Лагерь Безупречных (400);x
+fp_asoiaf_unsullied_cent_5;Лагерь Безупречных (500);x
+fp_asoiaf_unsullied_cent_6;Лагерь Безупречных (600);x
+fp_asoiaf_unsullied_cent_7;Лагерь Безупречных (700);x
+fp_asoiaf_unsullied_cent_8;Лагерь Безупречных (800);x
+fp_asoiaf_unsullied_cent_9;Лагерь Безупречных (900);x
+EVTDESCSLAVERY700;Тысячи мальчиков, за стойкость и свой рост, были выбраны для обучения, чтобы стать Безупречными. После того, как их кастрируют, начнется долгий и жестокий процесс обучения, который сделает из них настоящих воинов и лишит индивидуальности. Большинство из них умрет, но те, кто выживут, станут обладать беспрекословной верностью;x
+EVTOPTASLAVERY700;Они будут обладать ценностью;x
+training_unsullied;Обучение Безупречных;x
+EVTDESCSLAVERY701;Последняя партия Безупречных завершила свое обучение. За многие года обучений, они превратились в солдат с жесткой дисциплиной. Прежде чем получить пику и шлем, каждый Безупречный обязан купить рабыню с грудным ребенком и убить его на глаза матери.;x
+EVTOPTASLAVERY701;Теперь я могу их продать;x
+TOOLTIPslavery.702;1000 Безупречных пополнят ваши лагеря;x
+EVTDESCSLAVERY705;Безупречные как правило продаются сотнями, либо тысячами. Сколько вы хотите купить?;x
+EVTOPTASLAVERY705;Мне нужна тысяча;x
+EVTTOOLTIPSLAVERY706A;Вы предлагаете купить §Y1000§! Безупречных за 750¤;x
+EVTOPTBSLAVERY705;Мне нужна сотня;x
+EVTTOOLTIPSLAVERY706B;Вы предлагаете купить §Y100§! Безупречных за 80¤;x
+EVTOPTCSLAVERY705;В данный моент Безупречных нету;x
+EVTOPTESLAVERY705;Сообщите мне когда появится новая партия Безупречных;x
+TOOLTIPEVTOPTESLAVERY705;Вы должны быть в курсе, когда появится новая партия Безупречных;x
+EVTOPTDSLAVERY705;Нет, я не передумал;x
+EVTDESCSLAVERY706;[From.GetFirstNameWithDynasty] прибыл[From.GetEndA] в город [Root.Capital.GetName] чтобы встретиться с вами и обсудить Безупречных. Вы демонстрируете их, объясняя как их кастрировали в молодом возрасте, а затем обучали. [From.GetSheHeCap] впечатлен[From.GetEndA] и готов[From.GetEndA] сделать предложение…;x
+EVTOPTASLAVERY706;Хорошая сделка;x
+EVTTOOLTIPSLAVERY706;[From.GetTitledFirstName] покупает Безупречных;x
+EVTTOOLTIPSLAVERY704;100 Безупречных покидают ваш лагерь;x
+EVTTOOLTIPSLAVERY703;1000 Безупречных покидают ваш лагерь;x
+EVTOPTBSLAVERY706;Нет, я не буду продавать их вам;x
+EVTOPTCSLAVERY706;Нет, я не буду рассматривать никаких предложений;x
+EVTDESCSLAVERY707;Вы посетили город [From.Capital.GetName] чтобы познакомиться с персонажем [From.GetFirstNameWithDynasty] и обсудить [From.GetHerHis] Безупречных. [From.GetSheHeCap] рассказывает вам о их культуре, о том как они обучались. В конце концов вы готовы сделать предложение…;x
+EVTOPTASLAVERY707;Приятно иметь дело;x
+EVTOPTBSLAVERY707;Хорошо, я должен также пополнить Личную гвардию;x
+EVTDESCSLAVERY708;Вы посетили город [From.Capital.GetName] чтобы познакомиться с персонажем [From.GetFirstNameWithDynasty] и обсудить [From.GetHerHis] Безупречных. [From.GetSheHeCap] рассказывает вам об их культуре, о том как они обучались. Вы уверены что это оскорбляет вас. Сделка не заключена, [From.GetTitle] [From.GetFirstName] просит вас уйти.;x
+EVTOPTBSLAVERY708;Мне они все равно не нужны;x
+EVTDESCSLAVERY709;Подготовка Безупречных проходит неудачно. В конце первого года, мальчики должны были убить своих собак, которых приручили в начале обучения, однако многие не смогли этого сделать, за что были убиты.;x
+EVTOPTASLAVERY709;Да, убейте их;x
+TOOLTIPslavery.709CANCEL;Обучение 1000 Безупречных должно быть прекращено, а мальчики убиты за их провал\n;x
+EVTOPTBSLAVERY709;Нанять эксперта для обучения Безупречных;x
+rejected_unsullied;Предложение Безупречных отклонено;x
+unsullied;Безупречные;x
+unsullied_offensive;Безупречные атакуют;x
+unsullied_defensive;Безупречные обороняются;x
+unsullied_morale;Мораль Безупречных;x
+unsullied_modifier;Боевой модификатор Безупречного войска: $PERC$;x
+mobilise_unsullied;Мобилизовать Безупречных;x
+mobilise_unsullied_desc;Выполнить мобилизацию Безупречных для готовности к битве. После мобилизации их нельзя будет уже продать.;x
+TOOLTIPmobilise_unsullied;Все Безупречные в ваших лагерях должны быть мобилизованы\n;x
+EVTOPTKSLAVERY2;[From.GetSheHeCap] долж[From.GetNaEn] прекратить размножение с персонажем [From.Spouse.GetFirstName];x
+TOOLTIPslavery.107;[This.GetTitledFirstName] обнаруживает вашу незаконную работорговлю;x
+TOOLTIPslavery.157;Ваша незаконная работорговля обнаружена, в результате чего вас будут рассматривать как тирана\n;x
+EVTDESCSLAVERY157;Продажа персонажа [From.GetTitledFirstNameWithDynasty] была сомнительным делом, и вы пытались действовать как можно более острожно. Однако, вскорее появились слухи, что [From.GetFirstName] был[From.GetEndA] замечен[From.GetEndA] на корабле, плывущим в город [From.Liege.Capital.GetName], и что вы были ответственны за это. Ваши подданные считают это незаконным и неприятным.;x
+EVTOPTASLAVERY157;Мне плевать, что они думают;x
+EVTDESCSLAVERY158;[Root.PrimaryTitle.GetFOA], произошёл большой скандал, [From.GetTitledFirstNameWithDynasty] замешан[From.GetEndA] в этом. Появилось доказательство того, что [From.GetSheHe] продал[From.GetEndA] персонажа [FromFrom.GetTitledFirstNameWithDynasty] в рабство, [FromFrom.GetHerHis] обнаружили на судне работорговца, связанного с городом [FromFrom.Liege.Capital.GetName]. [From.GetHerHisCap] подданые готовы взятся за оружие из-за такого серьёзного нарушения законов государства [From.PrimaryTitle.GetName].;x
+EVTOPTASLAVERY158;Это, безусловно, взбесит многих людей;x
+EVTDESCSLAVERY910;Ваш[From.GetEndA] [From.GetRootRelation] [From.GetTitledFirstName] долж[From.GetNaEn] находиться под опекой персонажа [FromFrom.GetTitledFirstNameWithDynasty], однако, сообщения из города [FromFrom.Capital.GetName] указывают, что [From.GetHerHis] не было видно там уже много дней. [FromFrom.GetTitledFirstName] утверждает, что не знает, что случилось.;x
+EVTOPTASLAVERY910;Это кажется слишком удобным;x
+opinion_relative_suspicious_disappearance;Подозрительное исчезновение родственника;x
+opinion_enslaved_close_relative;Близкий родственник порабощён;x
+EVTDESCSLAVERY2601;Небольшая группа работорговцев прибыла в область [Root.Location.GetName], и, по-видимому, у них есть особо большая группа пленников. Они ищут покупателя и просят вас купить их как своих рабов за хорошую цену, по их словам.;x
+EVTOPTASLAVERY2601;Да, это дело, отправьте рабов в мои лагеря;x
+EVTOPTBSLAVERY2601;К сожалению, это не стоит моего золота;x
+EVTOPTKSLAVERY2;Он[From.GetEndA] станет хорош[From.GetEyIm] морск[From.GetOyIm] [From.GetHusbandWifeINS];x
+TOOLTIPSLAVEILEGALSLAVERYWARNING;Продажа рабов §RНЕ ЗАКОННА§! в земле [This.PrimaryTitle.GetName], и если вас поймают, это будет иметь последствия.\n;x
+EVTOPTAslavery.1010;Рабство является незаконным, освободить их всех;x
+EVTDESCSLAVERY711;[Root.PrimaryTitle.GetFOA], мы получили сообщения из Астапора, что новая партия Безупречных завершила обучение и готова к продаже.;x
+EVTOPTASLAVERY711;Я куплю их;x
+EVTOPTBSLAVERY711;Отменить покупку, но держите меня в курсе;x
+EVTOPTCSLAVERY711;Я больше не заинтересован[GetEndA] в покупке Безупречных;x
+eunuch_slave;Кастрировать раба;x
+eunuch_slave_desc;Ваш раб [Root.GetFirstName] кастрирован и теперь евнух;x
+EVTDESC40399;Ваш раб [From.GetFirstName] - ребёнок, и [From.GetSheHe] говорит, что вы его отец.;x
+TOOLTIPSLAVEACTION;[This.GetTitledFirstName] в настоящее время НЕ совершает рабскую деятельность\n;x
+TOOLTIPSELLINGPRISONER;[This.GetTitledFirstName] НЕ в процессе продажи узника в рабство\n;x
+EVTDESCSLAVERY3003;Я все еще легально владею рабами, эта несправедливость должна закончиться!;x
+EVTOPTASLAVERY3003;Освободить их всех!;x
+TOOLTIPslavery.3003BULKSLAVES;Все рабские лагеря освобождены\n;x
+TOOLTIPslavery.3003;Все владельцы рабов рассматривают...;x
+EVTDESCSLAVERY3004;Вы провозгласили, что все ваши рабы будут освобождены, в том числе ваши Безупречные. Безупречные верны до последнего, и они добровольно заявили о своей преданности вам, пообещав следовать за вами, куда бы вы ни отправились.;x
+EVTOPTASLAVERY3004;Я с радостью принимаю вашу клятву;x
+TOOLTIPslavery.3004;Все Безупречные освобождены;x
+has_antislavery_religion_trigger;Религия [This.GetTitledFirstName] традиционна против рабства (Вестеросская/Летние Боги/Лунные Певцы/Отец Вод/Великий Пастырь/Владыка Гармонии)\n;x
+has_antislavery_culture_trigger;Культура [This.GetTitledFirstName] традиционно выступает против рабства (Вестеросская/Браавосийская)\n;x
+has_slavery_culture_trigger;Культура [This.GetTitledFirstName] традиционно практикует рабство (Гискарская/Валирийская/Вольных Городов/Дотракийская/Квартийская/Итийская. Исключая Браавосийскую и Лоратийскую)\n;x
+has_slavery_religion_trigger;Религия [This.GetTitledFirstName] традиционно практикует рабство (Пиратская/Леди Волн)\n;x
+buy_slave_offer;Сделать предложение по покупке;x
+buy_slave_offer_desc;[Root.GetFirstNameWithDynasty] - раб, и вы можете сделать предложение по [Root.GetHerHis] покупке.;x
+TOOLTIPbuy_slave_offerRANGE;Хозяин, [Root.Liege.GetTitledFirstName] [Root.Liege.GetOnlyDynastyName], в пределах дипломатического радиуса\n;x
+TOOLTIPbuy_slave_offerFORSALE;НЕ помечен как недоступный для продажи\n;x
+TOOLTIPEVTOPTEinteraction.3;[This.GetTitledFirstName] рассмотрит выше предложение по покупке персонажа [FromFrom.GetFirstName];x
+opinion_stole_slave;Украл[_] моего раба;x
+opinion_granted_freedom;Даровал[_] мне свободу;x
+EVTDESCSLAVERY2700;Ваш раб, [From.GetTitledFirstName], попросил[From.GetEndA] поговорить с вами. Стража доставляет [From.GetHerHis] к вам, и вы узнаёте, что [From.GetSheHe] желает выкупить собственную свободу.;x
+EVTOPTASLAVERY2700;Это кажется справедливым;x
+EVTOPTBSLAVERY2700;Ха, думаю нет!;x
+opinion_lashed_me;Хлестал[_] меня;x
+abolish_slavery;Отмена рабства;x
+abolish_slavery_named;Отмена рабства в земле [Root.GetName];x
+abolish_slavery_desc;Издать указ об отмене рабства в земле [Root.GetFullName];x
+TOOLTIPabolish_slaveryVASSALS;Все вассалы персонажа [From.GetTitledFirstName] в земле [Root.GetName] уровня 'лорд' или выше традиционно выступают против рабства\n;x
+TOOLTIPabolish_slaveryPOWERFULVASSAL;Ни один правитель земли [Root.GetName] уровня 'Верховный Лорд' или выше традиционно не поддерживает рабство\n;x
+legalise_slavery;Легализовать Рабство;x
+legalise_slavery_named;Легализовать Рабство в земле [Root.GetName];x
+legalise_slavery_desc;Издать указ о легализации рабства в земле [Root.GetFullName];x
+TOOLTIPlegalise_slaveryVASSALS;Все вассалы персонажа [From.GetTitledFirstName] в земле [Root.GetName] уровне 'лорд' или выше традиционно выступают за рабство \n;x
+TOOLTIPlegalise_slaveryPOWERFULVASSAL;Ни один правитель в земле [Root.GetName] уровня 'Верховный Лорд'  или выше традиционно не против рабства\n;x
+TOOLTIPslavery.760;Все вассалы и соседи персонажа [Root.GetTitledFirstName], которые выступают против рабства, будут возмущены подобными налётами.\n;x
+EVTDESCSLAVERY760;Рабство может быть узаконено в государстве [Root.TopLiege.PrimaryTitle.GetName], что делает ваш рейд в землю [FromFrom.PrimaryTitle.GetName] законным, но это не означает, что ваши вассалы и соседи, кто выступает против рабства, довольны этими действиями. Многие злятся, что вы будете использовать легальный повод для разграбления чужих земель.;x
+EVTOPTASLAVERY760;Я в своём праве сделать это!;x
+opinion_launched_slave_raid;Начать рейд по захвату рабов;x
+enslave_natives;Порабощение уроженцев;x
+enslave_natives_named;Порабощение туземцев в земле [Root.GetName];x
+enslave_natives_desc;Отправить вооруженные силы насильно поработить коренных жителей земли [Root.GetName].;x
+natives_enslaved;Туземцы порабощены;x
+EVTTOOLTIPslavery.770;[From.GetTitledFirstName] получает лагерь рабов и несколько личных рабов из земли [Root.GetName]. Это увеличит время, необходимое для завершения колонии.;x
+EVTDESCSLAVERY770;После того, что было названо ужасной зачисткой области, ваши люди вернулись из земли [From.GetName] с сотнями [enslaved_natives_province.Culture.GetName]ских рабов. Вы их всех отправили в лагеря, а некоторые избранные стали вашими личными рабами.;x
+EVTOPTASLAVERY770;Это досадная необходимость!;x
+EVTDESCSLAVERY780;[Root.PrimaryTitle.GetFOA], группа рабов , которые были захвачены в земле [slave_raid_province.GetName] и выбраны для присоединения к вашей личной коллекции, были доставлены в город [Root.Capital.GetName].;x
+EVTDESCSLAVERY17;[From.GetTitledFirstNameWithDynasty] недавно потерял[From.GetEndA] свои земли и титулы, это означает, что вы наследуете [From.GetHerHis] личную коллекцию рабов.;x
+slave_lashed;Стегать;x
+opinion_illegal_slave_trader;Нелегальный работорговец;x
+EVTDESCSLAVERY750;[From.Holder.GetTitledFirstName] [From.Holder.GetOnlyDynastyName] отменил[From.Holder.GetEndA] и запретил[From.Holder.GetEndA] рабство во всей земле [From.GetFullName]. Это означает, что мы больше не можем владеть или торговать рабами, как мы это делали раньше.;x
+EVTOPTASLAVERY750;Это кажется справедливым;x
+EVTOPTBSLAVERY750;Я не стану за это!;x
+TOOLTIPSLAVERY750;Любые сотоварищи по борьбе с рабством вступят в войну\n;x
+EVTDESCSLAVERY751;Разозленная на ваше решение объявить вне закона работорговлю, группа вассалов во главе с персонажем [pro_slavery_rebel.GetTitledFirstName] [pro_slavery_rebel.GetOnlyDynastyName] подняла восстание против вас!;x
+EVTOPTASLAVERY751;Это восстание необходимо подавить;x
+EVTDESCSLAVERY752;[Root.GetTitledFirstName], после долгих консультаций с моим советом я решил[From.GetEndA] принять ряд законов, отменяющих рабство во всей земле [slavery_title.GetFullName]. Владение или торговля любым мужчиной, женщиной или ребенком в земле [slavery_title.GetName] считается незаконной и наказуемой под контролем короны.\nПодпись\n[From.GetTitle] [From.GetTitledFirstNameoftheHouseNoRegnal], [From.GetRegnalOrdinal] [From.GetHerHis] имени;x
+EVTDESCSLAVERY753;[Root.GetTitledFirstName], после долгих консультаций с моим советом я решил[From.GetEndA] принять ряд законов, легализующих рабство во всей земле [slavery_title.GetFullName]. Отныне, владение или торговля любым мужчиной, женщиной или ребенком в земле [slavery_title.GetName] является законной и справедливой.\nПодпись\n[From.GetTitle] [From.GetTitledFirstNameoftheHouseNoRegnal], [From.GetRegnalOrdinal] [From.GetHerHis] имени;x
+EVTDESCSLAVERY753B;[Root.GetTitledFirstName], после долгих консультаций с моим советом я решил[From.GetEndA] принять ряд законов, утверждающих традиции железнорожденных по рабству во всей земле [slavery_title.GetFullName]. Отныне владение любым пленным мужчиной, женщиной или ребенком в земле [slavery_title.GetName] являются законным и справедливым.\nПодпись\n[From.GetTitle] [From.GetTitledFirstNameoftheHouseNoRegnal], [From.GetRegnalOrdinal] [From.GetHerHis] имени;x
+TOOLTIPslave_raidSACKTOOLTIP;Случайная провинция [This.PrimaryTitle.GetName], которую занял[Root.GetEndA] [Root.PrimaryTitle.GetName], будет источником рабов.;x
+TOOLTIPslavery.790;[This.GetTitledFirstName] получит предложение сдаться;x
+EVTDESCslavery.790;[Root.GetTitledFirstNameNoRegnal], практика рабства отвратительна и оскорбляет права человека. Я требую, чтобы рабство было объявлено вне закона на всей земле [Root.PrimaryTitle.GetFullName]. Несогласие приведет к вооружённому конфликту.\n\nПодпись,\n[From.GetTitledFirstNameWithDynastyAndTitle];x
+EVTOPTCslavery.790;Эта война больше не действительна;x
+EVTOPTAslavery.790;Было бы лучше, если бы мы согласились с их требованиями;x
+EVTOPTBslavery.790;Нет, практиковать рабство - это наше право!;x
+EVTDESCslavery.791;[Root.GetTitledFirstNameNoRegnal], рассмотрев ваши требования, мы обнаружили, что у вас нет выбора. Настоящим рабство объявлено вне закона в земле [From.PrimaryTitle.GetFullName]. Мы надеемся, что это удовлетворит вас и что вы оставите наши земли без изменений.\n\nПодпись,\n[From.GetTitledFirstNameWithDynastyAndTitle];x
+EVTOPTAslavery.791;Разумный выбор;x
+EVTDESCslavery.792;После того как [FromFrom.GetTitledFirstNameWithDynastyAndTitle] выслал[FromFrom.GetEndA] ультиматум, [From.GetTitledFirstNameWithDynastyNoRegnal] отменил[From.GetEndA] рабство в государстве [From.PrimaryTitle.GetFullName].;x
+recent_sale_attempt;Недавно предпринятая попытка продажи;x
+opinion_rejected_slave;Отклоненный раб;x

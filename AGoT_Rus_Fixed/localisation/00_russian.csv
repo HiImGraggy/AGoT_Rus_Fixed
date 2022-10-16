@@ -1,5 +1,5 @@
 #CODE;ENGLISH;x
-### GetSocietyNameGEN
+### GetSocietyNameGEN;;x
 hermeticsGEN;Цитадели;x
 the_satanistsGEN;Храма Великого Иного;x
 the_trollcraftersGEN;Культа Звездной Премудрости;x
@@ -15,7 +15,7 @@ iron_bankGEN;Железного Банка Браавоса;x
 rogare_bankGEN;Банка Рогаре;x
 qarth_bankGEN;Старейшего банка Кварта;x
 valyria_bankGEN;Банка Валирии;x
-### GetSocietyNameDAT
+### GetSocietyNameDAT;;x
 hermeticsDAT;Цитадели;x
 the_satanistsDAT;Храму Великого Иного;x
 the_trollcraftersDAT;Культу Звездной Премудрости;x
@@ -31,25 +31,26 @@ iron_bankDAT;Железному Банку Браавоса;x
 rogare_bankDAT;Банку Рогаре;x
 qarth_bankDAT;Старейшему банку Кварта;x
 valyria_bankDAT;Банку Валирии;x
-### fix missing ck2plus opinion modifiers localisation keys
+### fix missing ck2plus opinion modifiers localisation keys;;x
 attempted_kidnapping;Попытка похищения;x
 attempted_kidnapping_of_kin;Попытка похищения родственников;x
 attempted_kidnapping_of_vassal;Попытка похищения вассала;x
 opinion_recent_plot;Заговор против меня;x
-### fix dummy culture for random dynasties
+### fix dummy culture for random dynasties;;x
 bearded_priest_culture;Бородатые жрецы;x
-### fix for id = 63001 (overwritten vassal transfer requests)
+### fix for id = 63001 (overwritten vassal transfer requests);;x
 EVTDESC63001;Вассал [From.GetTitledName] обращается ко мне с просьбой о том, чтобы вассал низшего ранга служил [FromFrom.GetObjectPronoun], а не непосредственно мне...;x
-### fix for id = HF.304 (overwritten bloodline description for child of destiny)
+### fix for id = HF.304 (overwritten bloodline description for child of destiny);;x
 bloodline_desc_child_of_destiny;Эт[child_of_destiny.GetEtaEtot] [child_of_destiny.GetAgedPerson] - настоящая легенда. [child_of_destiny.GetHersHisCap] подвиги напоминают деяния самого Эйгона Завоевателя!;x
 bloodline_desc_child_of_destiny_B;Эт[child_of_destiny.GetEtaEtot] [child_of_destiny.GetAgedPerson] - настоящая легенда. [child_of_destiny.GetHersHisCap] подвиги напоминают деяния самого Серого Короля!;x
-### dragon focus title
+### dragon focus title;;x
 focus_ch_dragon_title;Дракон;x
 focus_ed_dragon_title;Дракон;x
-### for main menu subscription banner
+### for main menu subscription banner and select character screen DLC subscription button;;x
 MAIN_MENU_BANNER_SUBSCRIPTION;ПОДПИСАТЬСЯ!\nПолучите доступ ко всем DLC\nза месячную плату.;x
 MAIN_MENU_BANNER_SUBSCRIPTION_ACTIVE;Подписка активна!\nНажмите для управления ей в Steam.;x
-### fix for GetSwordName
+DLC_LANDING_PAGE_SUBSCRIBE_TEXT;Подписаться;x
+### fix for GetSwordName;;x
 GetOverwriteSwordName;[This.GetSwordNameGander];x
 MaleSwordName;[This.GetMaleSwordName];x
 FamaleSwordName;[This.GetFamaleSwordName];x
@@ -63,7 +64,7 @@ FamaleSwordNameEnding_Yaya;[This.Get_Famale_SwordName_Prefix_Yaya]яя [This.Get_F
 NeuterSwordNameEnding_Oe;[This.Get_Neuter_SwordName_Prefix_Oe]ое [This.Get_Neuter_SwordName_Suffix];x
 NeuterSwordNameEnding_SoftE;[This.Get_Neuter_SwordName_Prefix_SoftE]ье [This.Get_Neuter_SwordName_Suffix];x
 NeuterSwordNameEnding_Ee;[This.Get_Neuter_SwordName_Prefix_Ee]ее [This.Get_Neuter_SwordName_Suffix];x
-### cutted version of SwordName_Prefix for GetSwordName
+### cutted version of SwordName_Prefix for GetSwordName;;x
 GetCutSwordName_Black;Чёрн;x
 GetCutSwordName_White;Бел;x
 GetCutSwordName_Red;Красн;x
@@ -133,16 +134,16 @@ GetCutSwordName_Ebon;Эбонитов;x
 GetCutSwordName_Wild;Дик;x
 GetCutSwordName_Grim;Мрачн;x
 GetCutSwordName_Ever;Вечн;x
-### engraving for forged weapon
+### engraving for forged weapon;;x
 string_engraving_title_weapon;[Root.GetWeaponType] с гравировкой "[Root.PrimaryTitle.GetName]";x
-### Yi Ti God Emperor name
+### Yi Ti God Emperor name;;x
 GOD_THE_EMPEROR;[yi_ti_emperor_god_name.GetTitledFirstNameWithDynasty];x
-### fix for id = aegons_landing.9
+### fix for id = aegons_landing.9;;x
 TOOLTIPNORMALCROWNLANDSENDB;Залив Черноводной и Драконий Камень.\n;x
-### fix for id = MNM.9118
+### fix for id = MNM.9118;;x
 EVTOPTU_MNM_9118;Дотракийский Аракх;x
 EVTOPTU_MNM_9118_TT;Заказать Дотракийский Аракх. Это оружие даст вам §G+0.3§! §YПрестижа в месяц§! и §G+0.87§! §YЛичного военного навыка§!.\n;x
-### endings / letters dependent on the gender
+### endings / letters dependent on the gender;;x
 END_LI;ли;x
 EV_THEY;они;x
 END_NI;ны;x
@@ -150,10 +151,10 @@ END_LIS;лись;x
 GOD_GODS_DAT;Богам;x
 GOD_FEMALE_DAT;Богине;x
 MALE_YO;ё;x
-### fix for GetRootRelation
+### fix for GetRootRelation;;x
 GetRelation_GreatUncle;двоюродный дедушка;x
 GetRelation_GreatAunt;двоюродная бабушка;x
-### GetCultureAdj
+### GetCultureAdj;;x
 CULTURE_ADJ_FALLBACK;[This.Culture.GetName]ск;x #§z§x
 cadj_riverlander;Речн;x
 cadj_westerman;Западн;x
@@ -239,7 +240,7 @@ cadj_basilisk_islander;Василискоостровн;x
 cadj_brindlemen;Пятнист;x
 cadj_naathi;Наатийск;x
 cadj_ruin;Руинн;x
-### GetCultureShortAdj
+### GetCultureShortAdj;;x
 CULTURE_SHORT_ADJ_FALLBACK;[This.Culture.GetName];x #§z§x
 cadjs_riverlander;Речн;x
 cadjs_westerman;Западн;x
@@ -325,7 +326,7 @@ cadjs_basilisk_islander;Василискоостровн;x
 cadjs_brindlemen;Пятнист;x
 cadjs_naathi;Наатийск;x
 cadjs_ruin;Руинн;x
-### GetCulturePlural
+### GetCulturePlural;;x
 CULTURE_PLU_FALLBACK;[This.Culture.GetName]нцы;x
 plu_riverlander;Речн;x
 plu_westerman;Западн;x
@@ -411,7 +412,7 @@ plu_basilisk_islander;Василискоостровн;x
 plu_brindlemen;Пятнист;x
 plu_naathi;Наатийск;x
 plu_ruin;Руинн;x
-### GetCulturePluralGEN
+### GetCulturePluralGEN;;x
 CULTURE_PLU_FALLBACK_GEN;[This.Culture.GetName]цев;x
 plu_riverlanderGEN;Речн;x
 plu_westermanGEN;Западн;x
@@ -497,7 +498,7 @@ plu_basilisk_islanderGEN;Василискоостровн;x
 plu_brindlemenGEN;Пятнист;x
 plu_naathiGEN;Наатийск;x
 plu_ruinGEN;Руинн;x
-### GetLangAdjective
+### GetLangAdjective;;x
 String_GetLangAdjective_Fallback;[This.GetCultureAdj];x
 String_GetLangAdjective_riverlander;Речн;x
 String_GetLangAdjective_westerman;Западн;x
@@ -583,7 +584,7 @@ String_GetLangAdjective_basilisk_islander;Василискоостровн;x
 String_GetLangAdjective_brindlemen;Пятнист;x
 String_GetLangAdjective_naathi;Наатийск;x
 String_GetLangAdjective_ruin;Руинн;x
-### short version of months for artifacts
+### short version of months for artifacts;;x
 Jan; 1 луны;x
 Feb; 2 луны;x
 Mar; 3 луны;x

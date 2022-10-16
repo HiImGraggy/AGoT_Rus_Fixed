@@ -1,269 +1,270 @@
-kingsguard;Королевский гвардеец;;x;;;;;;;;;;;;
-kingsguard_desc;Этот персонаж дал клятву охранять королевскую семью ценой своей собственной жизни.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.2;Увы, один из рыцарей Королевской гвардии умер. [Root.GetTitle] охраняется исключительно Семью Мечами – вам нужно подобрать замену.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.2B;Увы, один из рыцарей Королевской гвардии умер. [From.GetTitle] охраняется исключительно Семью Мечами - как Регент, вы должны выбрать замену;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.2;Привести ко мне самых лучших и доблестных рыцарей королевства!;;x;;;;;;;;;;;;
-EVTOPTBkingsguard.2;Привести ко мне рыцарей, которым я могу доверять больше всех!;;x;;;;;;;;;;;;
-EVTOPTCkingsguard.2;Привести ко мне рыцарей из величайших домов!;;x;;;;;;;;;;;;
-EVTOPTDkingsguard.2;Привести ко мне сыновей Верховных Лордов!;;x;;;;;;;;;;;;
-EVTOPTEkingsguard.2;Я не могу выбрать сейчас.;;x;;;;;;;;;;;;
-EVTOPTFkingsguard.2;Есть несколько достойных рыцарей, но нужно выбрать одного из них;;x;;;;;;;;;;;;
-EVTDESCkingsguard.3;Лучшие рыцари королевства собрались по вашему зову в землю [Root.Location.GetName]. Вы должны выбрать самого достойного в Королевскую Гвардию.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.3B;Лучшие рыцари королевства собрались по вашему зову в землю [Root.Location.GetName]. [FromFrom.GetTitledFirstNameNoRegnal] долж[FromFrom.GetNaEn] получить самого достойного в Королевскую Гвардию .;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.3;[KG_1.GetTitledFirstNameWithDynasty], шаг вперед!;;x;;;;;;;;;;;;
-EVTOPTBkingsguard.3;[KG_2.GetTitledFirstNameWithDynasty], шаг вперед!;;x;;;;;;;;;;;;
-EVTOPTCkingsguard.3;[KG_3.GetTitledFirstNameWithDynasty], шаг вперед!;;x;;;;;;;;;;;;
-EVTDESCkingsguard.4;Лучшие рыцари королевства прибыли по вашему зову в землю [Root.Location.GetName]. Вы тщательно отсеивали всех кого посчитали коварными и ненадежными. Все те, кто остался не вызывают ничего кроме доверия. Теперь Вы должны выбрать самого достойного для службы в Королевской гвардии;;x;;;;;;;;;;;;
-EVTDESCkingsguard.4B;Лучшие рыцари королевства прибыли по вашему зову в землю [Root.Location.GetName]. Вы тщательно отсеивали всех кого посчитали коварными и ненадежными. Все те, кто остался не вызывают землю кроме доверия. Теперь [FromFrom.GetTitledFirstNameNoRegnal] долж[FromFrom.GetNaEn] получить самого достойного для службы в Королевской гвардии .;;x;;;;;;;;;;;;
-EVTDESCkingsguard.5;Много сыновей величайших домов собрались по вашему зову в землю [Root.Location.GetName]. После изучения всех, вы считаете, что нашли лучшего кандидата для Королевской гвардии.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.5B;Много сыновей величайших домов собрались по вашему зову в землю [Root.Location.GetName]. После изучения всех, вы считаете, что [FromFrom.GetTitledFirstNameNoRegnal] получит лучшего кандидата для Королевской гвардии.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.6;Величайшие Лорды и Леди Вестероса отправили своих сыновей и братьев в землю [Root.Location.GetName] искать чести вступить в Вашу Королевскую гвардию. Через некоторое время Вы считаете, что определили лучших воинов среди них.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.7;Величайшие Лорды и Леди Вестероса отправили своих сыновей и братьев в землю [Root.Location.GetName], чтобы те смогли снискать честь войти в Королевскую гвардию. Немало нашлось достойных рыцарей в королевстве, но Королевских стражей должно быть семь.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.7B;Величайшие Лорды и Леди Вестероса отправили своих сыновей и братьев в землю [Root.Location.GetName], чтобы [FromFrom.GetTitledFirstNameNoRegnal] предоставил[FromFrom.GetEndA] кому-то честь войти в Королевскую гвардию. Немало нашлось достойных рыцарей в королевстве, но Королевских стражей должно быть семь.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.9;[From.GetTitledFirstNameWithDynasty] преклонил[From.GetEndA] колено. '[Root.PrimaryTitle.GetFOA], - произносит [From.GetSheHe], - Нет большей чести, чем служба вам в Королевской гвардии.';;x;;;;;;;;;;;;
-EVTDESCkingsguard.9B;Увы, один из рыцарей Королевской гвардии умер. [Root.GetTitle] охраняется Семью Мечами - и поэтому Регент, [FromFromFrom.GetFirstNameWithDynasty], выбрал[FromFromFrom.GetEndA] замену, это [From.GetTitledFirstNameWithDynasty], который преклонил колено и клянется в верности.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.9C;[From.GetTitledFirstNameWithDynasty] преклоняет колени и становится возле трона. '[Root.PrimaryTitle.GetFOA],- произносит [From.GetSheHe], - Это великая честь служить в Королевской гвардии. [Root.TopLiege.GetTitle] будет гордиться мной';;x;;;;;;;;;;;;
-EVTDESCkingsguard.9D;[From.GetTitledFirstNameWithDynasty] преклоняет колени и становится возле трона. 'Как приказывает [Root.TopLiegePrimaryTitle.GetFOA],' произносит [From.GetSheHe], - 'Я отрекаюсь от своего наследства, чтобы служить в Королевской гвардии.';;x;;;;;;;;;;;;
-EVTTOOLTIPkingsguard.11;отреагировать на известие...;;x;;;;;;;;;;;;
-EVTDESCkingsguard.10;[From.GetTitledFirstNameWithDynasty] преклонил колено. 'Примите мои извинения, [Root.PrimaryTitle.GetFOA], -говорит [From.GetSheHe], - я ценю ваше предложение, но я никогда не видел ничего хорошего в белых одеяниях.';;x;;;;;;;;;;;;
-EVTDESCkingsguard.11;Когда стюард сообщил вам, что [From.GetRootRelation] [From.GetFirstName] искал вас, вы не знали чего ожидать. Конечно, вы не думали найти [From.GetHerHis] одетым в белый плащ! '[From.TopLiege.GetTitledFirstNameNoRegnal] выбрал[From.TopLiege.GetEndA] меня для службы в Королевской гвардии!' - говорит [FromFrom.GetSheHe] радостно.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.11B;Когда стюард сообщил вам, что [From.GetRootRelation] [From.GetFirstName] искал вас, вы не знали чего ожидать. Конечно, вы не думали найти [From.GetHerHis] одетым в белый плащ! '[From.TopLiege.GetTitledFirstNameNoRegnal] назвал[From.TopLiege.GetEndA] меня Рыцарем Королевской гвардии. Так распорядился Регент [FromFromFrom.GetFirstNameWithDynasty]!' - говорит [FromFrom.GetSheHe] счастливо.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.11C;[From.GetTitledFirstNameWithDynasty] был назначен в Королевскую гвардию. Так распорядился [From.TopLiege.GetTitledFirstNameNoRegnal].;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.11;Дом [Root.GetOnlyDynastyName] гордится, [From.GetTitledFirstName].;;x;;;;;;;;;;;;
-EVTOPTBkingsguard.11;ЧТО?! Почему мне не сообщили об этом?;;x;;;;;;;;;;;;
-EVTOPTCkingsguard.11;Будем надеяться, что это мудрый выбор;;x;;;;;;;;;;;;
-EVTDESCkingsguard.12;[From.GetTitledFirstNameWithDynastyNoRegnal], [GetFromFromVsFromRelation] новоиспечённого Белого рыцаря по имени [FromFrom.GetTitledFirstName], смотрел[From.GetEndA] с гордостью на то, как новый рыцарь вашей Королевской гвардии приносил клятву верности своим мечом;;x;;;;;;;;;;;;
-EVTDESCkingsguard.13;[From.GetTitledFirstNameWithDynastyNoRegnal], [GetFromFromVsFromRelation] новоиспечённого Белого рыцаря по имени [FromFrom.GetTitledFirstName], возмущен[From.GetEndA] тем, что [From.GetHerHis] [GetFromVsFromFromRelation] присоединился к Королевской гвардии.;;x;;;;;;;;;;;;
-EVTNAMEkingsguard.23;Белая Книга;;x;;;;;;;;;;;;
-EVTDESCkingsguard.23;В тронном зале [From.GetTitledFirstNameWithDynasty] становится на колени перед вами, чтобы занять свой новый пост Лорда-Командующего Королевской гвардии.;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.23;Я уверен[GetEndA], [From.GetSheHe] будет верно служить.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.24;Когда вы собираете свои войска на войну, вы не можете помочь, но думаете, что будет с вашим родственником. [kingsguard_kin_while_at_war.GetTitledFirstNameNoRegnal] будет разрываться между семьей и долгом.;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.24;Может [Root.Religion.GetRandomGodName] спасет нас всех.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.25;[From.GetTitledFirstNameWithDynastyNoRegnal], измена – это одно, но этот [From.GetOnlyDynastyName] стоит подле Железного Трона и клялся защищать вашу жизнь... может [kingsguard_kin_while_at_war.GetTitledFirstNameNoRegnal] поставить свои обеты выше своей семьи?;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.25;[kingsguard_kin_while_at_war.GetSheHeCap] - рыцарь Королевской гвардии. [kingsguard_kin_while_at_war.GetSheHeCap] будет исполнять свой долг.;;x;;;;;;;;;;;;
-EVTOPTBkingsguard.25;Отвести [kingsguard_kin_while_at_war.GetHerHis] в темницу! я не желаю, чтобы [From.GetOnlyDynastyName] был возле меня, покуда предатель еще жив!;;x;;;;;;;;;;;;
-EVTOPTCkingsguard.25;Отрубить [kingsguard_kin_while_at_war.GetHerHim] голову!;;x;;;;;;;;;;;;
-EVTDESCkingsguard.26;Вы получили сообщение, что ваш родственник из Королевской Гвардии выбрал честь служить персонажу, известному как [From.GetTitle] [From.GetFirstName]!;;x;;;;;;;;;;;;
-EVTDESCkingsguard.27;Вы получили известие о том, что [From.GetTitledFirstNameNoRegnal] бросил[From.GetEndA] вашего родственника из Королевской Гвардии в темницу.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.28;Тварь [From.GetTitledFirstNameWithDynastyNoRegnal] приказал[From.GetEndA] казнить вашего родственника, состоявшего в Королевской гвардии, в отместку за ваше предательство!;;x;;;;;;;;;;;;
-EVTDESCkingsguard.33;Когда [From.GetHerHis] братья по службе предали [From.GetHerHis], ваш [From.GetRootRelation] [From.GetTitledFirstName] доблестно сражался, чтобы сбежать. Увы, [From.GetSheHe] погиб.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.34;На рассвете [From.GetRootRelation] [From.GetTitledFirstName] прибыл в землю [Root.Location.GetName] верхом на белом коне. [From.GetSheHeCap] говорит, что [From.GetHerHis] побратимы пытались убить его по приказу короля, но [From.GetSheHe] смог уйти живым.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.47;Ваш [FromFrom.GetRootRelation], [FromFrom.GetTitledFirstNameNoRegnal] мертв. Говорят, [FromFrom.GetSheHe] был настигнут карой богов за нарушение собственных клятв и попытку убить того, кого защишал. Но правдивы ли эти слухи?;;x;;;;;;;;;;;;
-EVTDESCkingsguard.48;До нас дошли слухи из области [Root.TopLiege.Location.GetName]. В них говорится, что [From.GetTitledFirstNameWithDynasty] нарушил свои клятвы и [FromFrom.GetTitle] был[FromFrom.GetEndA] убит[FromFrom.GetEndA] от [From.GetHerHis] руки! Что могло довести [From.GetHerHis] до такого бесчестия и безумия!;;x;;;;;;;;;;;;
-EVTDESCkingsguard.43;Вы поднялись на рассвете, чтобы увидеть как ваш [From.GetRootRelation], [From.GetTitledFirstName], прибыл в землю [Root.Location.GetName]. [From.GetSheHeCap] рассказал вам, что [FromFrom.GetTitle] предал [From.GetHerHis], и [From.GetSheHe] был вынужден нарушить свои клятвы и оказать сопротивление. 'Мое единственное сожаление,- сказал [From.GetSheHe], - что я не справился.';;x;;;;;;;;;;;;
-EVTDESCkingsguard.46;Когда солнце село, и полил дождь, вас позвал один из стражников. Ваш [From.GetRootRelation], [From.GetFirstName] только что приехал в землю [Root.Location.GetName], [From.GetHerHis] прекрасный белый плащ обагрен кровью. Когда вы начали расспрашивать [From.GetHerHis] почему, [From.GetSheHe] ответил,- 'У меня не было выбора.';;x;;;;;;;;;;;;
-EVTDESCkingsguard.50;Ваш [GetFromRelation], [From.GetTitledFirstNameNoRegnal] мертв. Говорят, что [From.GetSheHe] был убит своими побратимами, при попытке похитить детей того, кого поклялся защищать.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.51;Ваш [GetFromRelation] [From.GetTitledFirstName] прибыл в землю [Root.Location.GetName], из его ран еще сочится кровь. [From.GetSheHeCap] пытался бежать с одним из детей того, кого поклялся защищать, но затея потерпела неудачу.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.52;Ваш [GetFromRelation] [From.GetTitledFirstName] прибыл в землю [Root.Location.GetName], приведя с собой пленника. Мало того что [From.GetSheHe] смог сбежать из столицы, [From.GetSheHe] смог захватить ребенка того, кого поклялся защищать!;;x;;;;;;;;;;;;
-EVTTOOLTIPkingsguard.26;[From.GetTitledFirstNameNoRegnal] не будет этому рад[From.GetEndA]…;;x;;;;;;;;;;;;
-EVTDESCkingsguard.31;Кто-то напортачил. [From.GetTitledFirstNameWithDynastyNoRegnal] узнал о ваших планах и попытался сбежать. К счастью, остальные королевские гвардейцы перехватили [From.GetHerHis] раньше чем [From.GetSheHe] успел скрыться. Предатель мертв.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.32;Когда ваши верные королевские гвардейцы прибыли чтобы арестовать персонажа, известного как [From.GetTitledFirstNameWithDynastyNoRegnal], они обнаружили, что [From.GetSheHe] уже успел сбежать в область [From.Location.GetName]!;;x;;;;;;;;;;;;
-EVTDESCkingsguard.39;[From.GetTitledFirstName] и [FromFrom.GetTitledFirstName] оказались втянуты в яростный поединок, не давая друг другу пощады. Однако [FromFrom.GetTitledFirstName] уступил гневу персонажа [From.GetTitledFirstName], который поворачивает [From.GetHerHis] меч на тебя...;;x;;;;;;;;;;;;
-EVTDESCkingsguard.40;[From.GetTitledFirstName] и [FromFrom.GetTitledFirstName] оказались втянуты в яростный поединок, не давая друг другу пощады. К счастью [From.GetTitledFirstName] доказал свою доблесть, победив противника.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.42;[From.GetTitledFirstNameWithDynastyNoRegnal] был избит и ранен, но, тем не менее, у него еще остались силы, чтобы прорваться через мою охрану. В последний раз его видели скачущего галопом из города.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.45;Ночью, выскользнув из тьмы, к вам явился [From.GetTitledFirstNameWithDynastyNoRegnal]. Вы попытались позвать стражу, но ваш крик превратился в крик боли и отчаяния, когда [From.GetSheHe] ткнул свой меч вам в грудь. Вы упали на колени, ваша корона упала на пол. [From.GetTitledFirstName] вложил меч в ножны и предоставляет вас вашей судьбе.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.53;Посреди ночи вас разбудил один из ваших гвардейцев. Он бросает к вашим ногам голову персонажа, известного как  [From.GetTitledFirstNameWithDynastyNoRegnal]. Этот дурак пытался похитить одного из ваших детей и в результате был убит.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.54;Посреди ночи вас разбудил один из ваших гвардейцев. 'Мне очень жаль, [Root.PrimaryTitle.GetFOA}' - ,говорит он, - Он объясняет, что [From.GetTitledFirstNameWithDynastyNoRegnal] попытался выкрасть вашего ребенка, но ему помешали ваши верные гвардейцы. [From.GetSheHeCap] был ранен, но сумел сбежать.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.55;Посреди ночи вас разбудил один из ваших гвардейцев. 'Мне очень жаль, [Root.PrimaryTitle.GetFOA],' - говорит он. Вы ужасаетесь, когда он объясняет, что [From.GetTitledFirstNameWithDynastyNoRegnal] бежал в область [From.Location.GetName], забрав с собой вашего ребенка.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.57;Вы впервые услышали о том, что [FromFromFrom.GetTitledFirstNameWithDynastyAndTitleNoRegnal] попросил, чтобы ваш [From.GetRootRelation] присоединиться к Королевской гвардии, когда [From.GetSheHe] сказал вам, что [From.GetSheHe] отказался.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.58;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] преклонил колено. 'Я прошу прощения, [Root.PrimaryTitle.GetFOA],' - говорит [From.GetSheHe], - 'Но когда-нибудь я стану повелителем земель моего дома. Мой дом нуждается во мне больше, чем королевство.';;x;;;;;;;;;;;;
-EVTDESCkingsguard.59;Когда стюард сообщил вам, что [From.GetFirstName] искал вас, вы не знали чего ожидать. Конечно, вы не думали найти [From.GetHerHis] одетым в белый плащ! 'Отец, - сказал [From.GetSheHe] вам, сияя от гордости, - [FromFrom.GetTitledFirstName] выбрал[FromFrom.GetEndA] меня для службы в Королевской гвардии!';;x;;;;;;;;;;;;
-EVTDESCkingsguard.60;[From.GetTitledFirstNameWithDynasty] преклонил преклонил перед вами колени. 'Как приказывает [Root.PrimaryTitle.GetFOA],' - произносит [From.GetSheHe], - 'Настоящей клятвой я отказываюсь от моего наследства, вступая в ряды рыцарей Королевской гвардии.';;x;;;;;;;;;;;;
-EVTDESCkingsguard.61;Вы видите, как предавшего вас королевского гвардейца заковывают в кандалы. Вы в безопасности.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.62;Вы видите, как предавшего вас королевского гвардейца тащат к плахе. Одним быстрым ударом все закончено.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.1;Моя служба в Королевской гвардии закончилась, будем надеяться, что мой преемник будет бдительным.;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.1;Будем надеяться;;x;;;;;;;;;;;;
-EVTDESCkingsguard.22;Этот рыцарь Королевской гвардии умер.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.22B;[From.GetTitledFirstNameWithDynasty] был удален из Королевской гвардии. Необходимо выбрать замену.;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.22;Ок;;x;;;;;;;;;;;;
-the_white_book;Белая Книга;;x;;;;;;;;;;;;
-the_white_book_desc;Читать фолиант, в котором записаны деяния каждого члена, которые когда-либо служили Королевской Гвардии;;x;;;;;;;;;;;;
-EVTDESCkingsguard.65;Здесь перечислены все нынешние и бывшие королевские гвардейцы;;x;;;;;;;;;;;;
-OPTAkingsguard.65;Текущий Состав;;x;;;;;;;;;;;;
-TOOLTIPKGCOMMANDER;Лорд-Командующий Королевской гвардии [This.Liege.GetTitledFirstName]: [This.GetTitledFirstNameWithNickAndDynasty];;x;;;;;;;;;;;;
-TOOLTIPKGCURRENT;[This.GetTitledFirstNameWithNickAndDynasty];;x;;;;;;;;;;;;
-TOOLTIPKGDYNASTY; [This.GetOnlyDynastyName];;x;;;;;;;;;;;;
-OPTBkingsguard.65;Лорды-Командующие в прошлом;;x;;;;;;;;;;;;
-OPTCkingsguard.65;Королевские гвардейцы в прошлом;;x;;;;;;;;;;;;
-TOOLTIPKGNOTABLEPASTCOMMANDER;[This.GetTitledFirstNameWithNickAndDynasty] [This.GetKGWhiteBookWasLC][This.GetKGWhiteBookTrait1][This.GetKGWhiteBookTrait2].[This.GetKGWhiteBookIntellect][This.GetKGWhiteBookCombatTrait].[This.GetKGWhiteBookValyrianSteel][This.GetKGWhiteBookDragonRider][This.GetKGWhiteBookAnimalCompanion]\n[This.GetKGWhiteBookTrait3];;x;;;;;;;;;;;;
-TOOLTIPKGPASTMEMBER;[This.GetTitledFirstNameWithDynasty][This.GetKGWhiteBookNickname][This.GetKGWhiteBookWasKG][This.GetKGWhiteBookTrait1][This.GetKGWhiteBookTrait2].[This.GetKGWhiteBookIntellect][This.GetKGWhiteBookCombatTrait].[This.GetKGWhiteBookValyrianSteel][This.GetKGWhiteBookDragonRider][This.GetKGWhiteBookAnimalCompanion]\n[This.GetKGWhiteBookTrait3];;x;;;;;;;;;;;;
-TOOLTIPKGOFTHEHOUSE;\nСир [This.GetFirstNameWithDynasty];;x;;;;;;;;;;;;
-TOOLTIPKGKNOWNNICK;, также известный как [This.GetFirstNameWithNick], ;;x;;;;;;;;;;;;
-TOOLTIPKGWASLC;был Лордом-Командующим Королевской гвардии.;;x;;;;;;;;;;;;
-TOOLTIPKGGENIUS;Был рыцарем обладающим острым умом.;;x;;;;;;;;;;;;
-TOOLTIPKGMASTERWARRIOR; [This.GetTitledFirstNameNoRegnal] был одним из величайших воинов своего времени, [This.GetHerHis] воинское мастерство славилось по всему королевству.;;x;;;;;;;;;;;;
-TOOLTIPKGGENIUSDESPITE;Несмотря на то что он был остер умом,;;x;;;;;;;;;;;;
-TOOLTIPKGSKILLEDWARRIOR; [This.GetTitledFirstNameNoRegnal] был уважаемым фехтовальщиком, являясь одним из более способных королевских гвардейцев в истории.;;x;;;;;;;;;;;;
-TOOLTIPKGPOORWARRIOR; [This.GetTitledFirstNameNoRegnal] был очень посредственным рыцарем, получившим положение с помощью своей влиятельности, а не воинского мастерства.;;x;;;;;;;;;;;;
-TOOLTIPKGDRAGON; Великолепный [This.GetTitledFirstNameNoRegnal] был драконьим всадником.;;x;;;;;;;;;;;;
-TOOLTIPKGANIMALaswellas;, а также [This.GetHerHis] всегда сопровождал [This.GetAnimalCompanion];;x;;;;;;;;;;;;
-TOOLTIPKGVALYRIANSTEEL;[This.GetTitledFirstNameNoRegnal] владел мечом [This.GetValyrianSword], что существенно помогало [This.GetHerHim] выполнять свой долг по защите господина.;;x;;;;;;;;;;;;
-TOOLTIPKGDAWN;[This.GetTitledFirstNameNoRegnal] владел валирийским мечом Рассвет, родовым мечом Дома Дейн;;x;;;;;;;;;;;;
-TOOLTIPKGICE;[This.GetTitledFirstNameNoRegnal] владел валирийским мечом Лед, родовым мечом Дома Старк;;x;;;;;;;;;;;;
-TOOLTIPKGLONGCLAW;[This.GetTitledFirstNameNoRegnal] владел валирийским мечом Длинный Коготь, родовым мечом Дома Мормонт;;x;;;;;;;;;;;;
-TOOLTIPKGBLACKFYRE;[This.GetTitledFirstNameNoRegnal] владел валирийским мечом Черное Пламя, когда-то принадлежавшим Эйгону Завоевателю.;;x;;;;;;;;;;;;
-TOOLTIPKGDRAGONAND;, и широко известным Драконьим Всадником;;x;;;;;;;;;;;;
-TOOLTIPKGANIMALAND; , и широко известным владельцем спутника [This.GetAnimalCompanion];;x;;;;;;;;;;;;
-TOOLTIPKGANIMAL; [This.GetTitledFirstNameNoRegnal] был известен как владелец спутника [This.GetAnimalCompanion];;x;;;;;;;;;;;;
-TOOLTIPKGKINSLAYER;[This.GetSheHeCap] запомнился в истории, как убийца короля, самый проклятый из всех людей.;;x;;;;;;;;;;;;
-TOOLTIPKGDWARF;Величайшая глупость в [This.GetHerHis] истории. [This.GetSheHeCap] был карликом..;;x;;;;;;;;;;;;
-TOOLTIPKGDURINGKING;был Лордом-Командующим Королевской гвардии когда правил[This.Liege.GetEndA] [This.Liege.Liege.GetTitledFirstNameoftheHouse];;x;;;;;;;;;;;;
-TOOLTIPKGENDLINE;.\n;;x;;;;;;;;;;;;
-TOOLTIPKGWASMEM;состоял в Королевской гвардии;;x;;;;;;;;;;;;
-TOOLTIPKGMEMDURINGKING;состоял в Королевской гвардии во когда правил[This.Liege.Liege.GetEndA] [This.Liege.Liege.GetTitledFirstNameoftheHouse];;x;;;;;;;;;;;;
-TOOLTIPKGHONOURABLE; и был достойнейшим из рыцарей;;x;;;;;;;;;;;;
-TOOLTIPKGRUTHLESS; которому никто не мог преградить [This.GetHerHis] путь;;x;;;;;;;;;;;;
-TOOLTIPKGBRAVE; который был известен как самый смелый из людей;;x;;;;;;;;;;;;
-TOOLTIPKGDILIGENT; и был непреклонен в своей клятве;;x;;;;;;;;;;;;
-TOOLTIPKGKIND; который был известен своим состраданием к горю других;;x;;;;;;;;;;;;
-TOOLTIPKGLUNATIC; здравомыслие которого регулярно ставилось под сомнение;;x;;;;;;;;;;;;
-TOOLTIPKGDRUNKARD; который запомнился любителем вина и пива;;x;;;;;;;;;;;;
-TOOLTIPKGLUSTFUL; который был известен своими любовными похождениями, несмотря на обеты;;x;;;;;;;;;;;;
-TOOLTIPKGLUTTONOUS; который был чрезвычайно толстым;;x;;;;;;;;;;;;
-TOOLTIPKwroth; который был известен своими мрачными помыслами;;x;;;;;;;;;;;;
-TOOLTIPKhumble; который запомнился своей скромностью;;x;;;;;;;;;;;;
-TOOLTIPKGfair; а также являлся одним из красивейших мужчин;;x;;;;;;;;;;;;
-TOOLTIPKGstrong; а также обладал не дюжей силой;;x;;;;;;;;;;;;
-TOOLTIPKGtall; а также обладал выдающимся ростом;;x;;;;;;;;;;;;
-TOOLTIPKGweak; а также был довольно слабым;;x;;;;;;;;;;;;
-TOOLTIPKGugly; а также считался довольно скверным;;x;;;;;;;;;;;;
-TOOLTIPKGTRAINEDWARRIOR; [This.GetTitledFirstNameNoRegnal] был довольно хорошим фехтовальщиком, хотя песен о нем не складывали.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.66; [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] оставлен в Королевской гвардии, несмотря на то, что его семья находиться в состоянии войны с короной.;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.66;Мой долг - служить моему Дому.;;x;;;;;;;;;;;;
-EVTOPTBkingsguard.66;Мой долг - служить Короне.;;x;;;;;;;;;;;;
-TOOLTIPKGBRIGHTROAR;Сир [This.GetFirstName] владел валирийским мечом Светлый Рев, позже утерянным Домом Ланнистер;;x;;;;;;;;;;;;
-TOOLTIPKGHEARTSBANE;Сир [This.GetFirstName] владел валирийским мечом Губитель Сердец, родовым мечом Дома Тарли;;x;;;;;;;;;;;;
-TOOLTIPKGNIGHTFALL;Сир [This.GetFirstName]  владел валирийским мечом Сумрак, родовым мечом Дома Харлоу;;x;;;;;;;;;;;;
-EVTDESCkingsguard.16;Королевская Гвардия, также известная как 'Белые Мечи' или 'Белые Плащи', состоящая из семи рыцарей, являющихся телохранителями королей на Железном Троне. Предположительно это лучшие рыцари в Семи Королевствах, они поклялись защищать своего короля и его семью ценой собственной жизни, выполнять его приказы, и хранить его тайны. Они дают клятву на всю жизнь, им запрещено владеть землей, брать жен, или заводить детей.;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.16;Я буду прекрасным Лордом-Командующим;;x;;;;;;;;;;;;
-EVTDESCkingsguard.18;Лорд-Командующий Королевской Гвардии, звание получаемое самым лучшим из Королевских Гвардейцев.;;x;;;;;;;;;;;;
-TOOLTIPKGLADYFORLORN;Сир [This.GetFirstName] владел валирийским мечом Леди Отчаянье, родовым мечом Дома Корбрей;;x;;;;;;;;;;;;
-TOOLTIPKGREDRAIN;Сир [This.GetFirstName] владел валирийским мечом Багряный Дождь, родовым мечом Дома Драмм;;x;;;;;;;;;;;;
-TOOLTIPKGCRABSPINCER;Сир [This.GetFirstName] владел валирийским топором Крабовая Клешня, родовым топором Дома Селтигар;;x;;;;;;;;;;;;
-TOOLTIPEVTOPTC20800002;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] назначается новым Лордом-Командующим Королевской гвардии\n;;x;;;;;;;;;;;;
-EVTOPTC20800002;Назначить в качестве нового Лорда-Командующего;;x;;;;;;;;;;;;
-EVTDESCkingsguard.67;Защита короля может быть трудной и довольно утомительной работой, возможно, я должен завести любовницу?;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.67;Да, желание слишком велико!;;x;;;;;;;;;;;;
-EVTOPTBkingsguard.67;Я дал обет, я должен сопротивляться таким побуждениям;;x;;;;;;;;;;;;
-EVTDESCkingsguard.68;Скандал! Я искал одного из моих побратимов по имени [KG_has_the_lover.GetTitledFirstName,] когда я нашел [KG_has_the_lover.GetHerHis] в постели одной из придворных дам. Несомненно, его действия – явное предательство, [TopLiege.GetTitle] будет проинформирован[TopLiege.GetEndA]? ;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.68;Да, [TopLiege.GetTitle] узнает об этом!;;x;;;;;;;;;;;;
-EVTOPTBkingsguard.68;Это не вредно;;x;;;;;;;;;;;;
-EVTDESCkingsguard.69;[Root.PrimaryTitle.GetFOA], обращаю внимание, что [KG_has_the_lover.GetHerHis] нарушение  клятвы в том, что [KG_has_the_lover.GetTitledFirstName] состоял в порочной связи с одной из ваших придворных дам. Я надеюсь, [KG_has_the_lover.GetSheHe] понесет наказание, соответствующее его вине.\n\nВаш, [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal];;x;;;;;;;;;;;;
-EVTDESCkingsguard.69B;[Root.PrimaryTitle.GetFOA], обращаю внимание Малого Совета на прямое нарушение [KG_has_the_lover.GetHerHis] обетов по вашей защите, [KG_has_the_lover.GetTitledFirstName] состоял в любовной связи с одним из придворных.;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.69;Только смерть искупит его вину!;;x;;;;;;;;;;;;
-EVTOPTDkingsguard.69;Заключить под стражу и удалить из Королевкой гвардии;;x;;;;;;;;;;;;
-TOOLTIPkingsguard.75;[Root.GetHusbandWifeOpp] будет рассматривать это дело.;;x;;;;;;;;;;;;
-EVTOPTBkingsguard.69;Кастрировать его и выслать на Стену;;x;;;;;;;;;;;;
-EVTDESCkingsguard.70;[Root.GetFirstNameWithDynasty], [From.GetTitle] постановил[From.GetEndA], что ваше нарушение клятвы не останется безнаказанным. Ваши действия являются грубым нарушение вашей клятвы защищать государя. Следовательно [From.GetTitle] вынес[From.GetNoneE] решение лишить вас головы.\n\nТак решил[From.GetEndA] [From.GetTitledFirstName], [From.GetTitle] Андалов, Ройнаров и Первых Людей, Правитель[From.GetEndNitsa] Семи Королевств и Защитни[From.GetTsaK] Государства;;x;;;;;;;;;;;;
-EVTDESCkingsguard.71;[From.GetTitle] был[From.GetEndA] потрясен[From.GetEndA] вашим рассказом о клятвопреступлении вашего побратима, и согласи[From.GetLasLsya], что это тяжкое преступление. Предатель [KG_has_the_lover.GetTitledFirstName] немедленно казнён.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.72;[Root.GetFirstNameWithDynasty], [From.GetTitle] постановил[From.GetEndA], что ваше нарушение клятвы не останется безнаказанным. Ваши действия являются грубым нарушение вашей клятвы защищать государя. Следовательно, From.GetTitle] вынес[From.GetNoneE] решение кастрировать вас и сослать на Стену.\n\nТак решил[From.GetNoneE] [From.GetTitledFirstName], [From.GetTitle] Андалов, Ройнаров и Первых Людей, Правитель[From.GetEndNitsa] Семи Королевств и Защитни[From.GetTsaK] Государства;;x;;;;;;;;;;;;
-EVTDESCkingsguard.73;[From.GetTitle] был[From.GetEndA] потрясен[From.GetEndA] вашим рассказом о клятвопреступлении вашего побратима, и согласи[From.GetLasLsya], что это тяжкое преступление. [From.GetSheHeCap] приказал[From.GetEndA] кастрировать и выслать на Стену предателя.;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.71;Справедливое наказание;;x;;;;;;;;;;;;
-EVTDESCkingsguard.74;[From.GetHerHisCap] Светлость не волнуют ваши доказательства отвратительных дел гвардейца, известного как [KG_has_the_lover.GetTitledFirstName]. [From.GetSheHeCap] постановил не наказывать провинившегося гвардейца.;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.74;Но он нарушил клятву!;;x;;;;;;;;;;;;
-EVTDESCkingsguard.75;Ваша [Root.GetHusbandWifeOpp] [Root.Spouse.GetFirstName] была уличена в измене с одним из ваших гвардейцев. Вы покарали его, но что теперь делать с вашей неверной женой?;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.75;[Root.Spouse.GetSheHeCap] должна быть казнена!;;x;;;;;;;;;;;;
-EVTOPTBkingsguard.75;Заключить в темницу!;;x;;;;;;;;;;;;
-EVTOPTCkingsguard.75;Я прощаю;;x;;;;;;;;;;;;
-EVTDESCkingsguard.7299;[Root.GetFirstNameWithDynasty], [From.GetTitle] постановил[From.GetEndA], что ваши грязные дела не могут остаться безнаказанным. Ваши действия являются грубым нарушением клятв защищать государя. Таким образом, [From.GetTitle] решил[From.GetEndA] удалить вас из Королевской гвардии и заключить в тюрьму.\n\nТак решил[From.GetEndA] [From.GetTitledFirstName], [From.GetTitle] Андалов, Ройнаров и Первых Людей, Правитель[From.GetEndNitsa] Семи Королевств и Защитни[From.GetTsaK] Государства;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.7299;По крайней мере, я еще жив;;x;;;;;;;;;;;;
-EVTDESCkingsguard.7399;[From.GetTitle] был[From.GetEndA] потрясен[From.GetEndA] известиями, и согласи[From.GetLasLsya], что это деяние требует наказания. [From.GetSheHeCap] приказал[From.GetEndA], чтобы брат по оружию был удален из Королевской гвардии и заключен в тюрьму.;;x;;;;;;;;;;;;
-TOOLTIPkingsguard.69;узнает об этот и решит, что делать;;x;;;;;;;;;;;;
-TOOLTIPkingsguard.70;будет обезглавлен;;x;;;;;;;;;;;;
-opinion_executed_lover;Казнил[_] моего Любовника;;x;;;;;;;;;;;;
-opinion_gelded_lover;Кастрировал[_] моего Любовника;;x;;;;;;;;;;;;
-TOOLTIPKGDARKSISTER;Сир [This.GetFirstName] владел валирийским мечом Темная Сестра, родовым мечом Дома Таргариен;;x;;;;;;;;;;;;
-TOOLTIPKGWIDOWSWAIL;Сир [This.GetFirstName] владел длинным валирийским мечом Вдовий Плач, выкованным по приказу Тайвина Ланнистера из лезвия Льда;;x;;;;;;;;;;;;
-TOOLTIPKGOATHKEEPER;Сир [This.GetFirstName] владел длинным валирийским мечом Верный Клятве, выкованным по приказу Тайвина Ланнистера из лезвия Льда;;x;;;;;;;;;;;;
-EVTOPTDkingsguard.3;Ни один из этих людей не должен охранять меня;;x;;;;;;;;;;;;
-TOOLTIPKGSTRANGERSMERCY;Сир [This.GetFirstName] владел валирийским мечом Милость Неведомого;;x;;;;;;;;;;;;
-EVTDESCkingsguard.37;Ночью [FromFrom.GetTitledFirstNameWithDynastyAndTitleNoRegnal] выскользнул из тьмы. На мгновение вы думаете, что все потеряно, пока не появился [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], чтобы защитить вас от этого клятвопреступника...;;x;;;;;;;;;;;;
-EVTDESCkingsguard.38;Ночью [FromFrom.GetTitledFirstNameWithDynastyAndTitleNoRegnal] выскользнул из тьмы. Вы зовете стражу, но никто не приходит. Вы должны защитить себя от этого клятвопреступника…;;x;;;;;;;;;;;;
-EVTDESCkingsguard.44;Вы боролись за свою жизнь с персонажем [FromFrom.GetTitledFirstName] и вам удалось справиться;;x;;;;;;;;;;;;
-TOOLTIPkingsguard.41;Уклониться от захвата;;x;;;;;;;;;;;;
-EVTDESCkingsguard.77;Ваш[From.GetEndA] [From.GetRootRelation] [From.GetFirstName], как член королевской семьи, долж[From.GetNaEn] быть под защитой рыцаря Королевской Гвардии. Кого же нам отправить в замок [From.Capital.GetName] для исполнения своего долга?;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.77;[loan_candidate_1.GetTitledFirstName] [loan_candidate_1.GetOnlyDynastyName] отправится;;x;;;;;;;;;;;;
-EVTOPTBkingsguard.77;[loan_candidate_2.GetTitledFirstName] [loan_candidate_2.GetOnlyDynastyName] защитит;;x;;;;;;;;;;;;
-EVTOPTCkingsguard.77;[loan_candidate_3.GetTitledFirstName] [loan_candidate_3.GetOnlyDynastyName] будет служить;;x;;;;;;;;;;;;
-EVTOPTDkingsguard.77;Королевская гвардия защищает своего господина;;x;;;;;;;;;;;;
-opinion_withheld_kingsguard;Под охраной Королевской Гвардии;;x;;;;;;;;;;;;
-EVTOPTEkingsguard.77;У меня вообще есть королевская гвардия?;;x;;;;;;;;;;;;
-EVTDESCkingsguard.78;[Root.GetTitle] [Root.GetFirstName], как член Королевской семьи [From.GetOnlyDynastyName], вы имеете право на защиту Королейской Гвардии. Таким образом, гвардеец будет отправлен в замок [Root.Capital.GetName] для вашей охраны.\n\n Так приказал[From.GetEndA] [From.GetFirstName] из Дома [From.GetOnlyDynastyName], [From.GetTitle] земли [From.PrimaryTitle.GetName];;x;;;;;;;;;;;;
-EVTDESCkingsguard.79;Как член Королевской семьи [From.GetOnlyDynastyName], вы имеете традиционное право на защиту Королевской Гвардии. [From.GetTitle] [From.GetFirstName], несмотря на традиции, решил[From.GetEndA] оставить Белых Плащей около себя, оставив вас без защиты.;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.79;Я возмущен[GetEndA]!;;x;;;;;;;;;;;;
-TOOLTIPKGVIGILANCE;[This.GetTitledFirstNameNoRegnal] владел валирийским мечом Бдительность, семейной реликвией Дома Хайтауэр;;x;;;;;;;;;;;;
-TOOLTIPKGORPHANMAKER;[This.GetTitledFirstNameNoRegnal] владел валирийским мечом Делатель Сирот, семейной реликвией Дома Рокстон;;x;;;;;;;;;;;;
-EVTOPTkingsguard.19MORE;Показать больше;;x;;;;;;;;;;;;
-d_kingsguard_dummy;Королевская гвардия;;x;;;;;;;;;;;;
-EVTDESCkingsguard.19;Нужен новый Лорд-Командующий Королевской гвардии. Как правило это самый старший и способный из семи белых плащей. Кто именно будет командовать?;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.19;[kg_lc_candidate_1.GetTitledFirstNameWithDynastyNoRegnal], шаг вперед!;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.19B;[kg_lc_candidate_1.GetTitledFirstNameWithNick], шаг вперед!;;x;;;;;;;;;;;;
-EVTOPTBkingsguard.19;[kg_lc_candidate_2.GetTitledFirstNameWithDynastyNoRegnal], шаг вперед!;;x;;;;;;;;;;;;
-EVTOPTBkingsguard.19B;[kg_lc_candidate_2.GetTitledFirstNameWithNick], шаг вперед!;;x;;;;;;;;;;;;
-EVTOPTCkingsguard.19;[kg_lc_candidate_3.GetTitledFirstNameWithDynastyNoRegnal],  шаг вперед!;;x;;;;;;;;;;;;
-EVTOPTCkingsguard.19B;[kg_lc_candidate_3.GetTitledFirstNameWithNick], шаг вперед!;;x;;;;;;;;;;;;
-EVTOPTDkingsguard.19;[kg_lc_candidate_4.GetTitledFirstNameWithDynastyNoRegnal],  шаг вперед!;;x;;;;;;;;;;;;
-EVTOPTDkingsguard.19B;[kg_lc_candidate_4.GetTitledFirstNameWithNick], шаг вперед!;;x;;;;;;;;;;;;
-EVTOPTEkingsguard.19;[kg_lc_candidate_5.GetTitledFirstNameWithDynastyNoRegnal], шаг вперед!;;x;;;;;;;;;;;;
-EVTOPTEkingsguard.19B;[kg_lc_candidate_5.GetTitledFirstNameWithNick], шаг вперед!;;x;;;;;;;;;;;;
-EVTOPTFkingsguard.19;[kg_lc_candidate_6.GetTitledFirstNameWithDynastyNoRegnal], шаг вперед!;;x;;;;;;;;;;;;
-EVTOPTFkingsguard.19B;[kg_lc_candidate_6.GetTitledFirstNameWithNick], шаг вперед!;;x;;;;;;;;;;;;
-EVTOPTGkingsguard.19;[kg_lc_candidate_7.GetTitledFirstNameWithDynastyNoRegnal], шаг вперед!;;x;;;;;;;;;;;;
-EVTOPTGkingsguard.19B;[kg_lc_candidate_7.GetTitledFirstNameWithNick], шаг вперед!;;x;;;;;;;;;;;;
-appointed_female_kingsguard;Назначена женщина в Королевскую гвардию!;;x;;;;;;;;;;;;
-EVTDESCkingsguard.10B;[From.GetTitledFirstNameWithDynasty] смотрит на вас с презрением. 'Вы должно быть шутите, - говорит [From.GetSheHe], - Мне никогда не нравились такие как ты.';;x;;;;;;;;;;;;
-EVTDESCkingsguard.10BREGENT;[From.GetTitledFirstNameWithDynasty] смотрит на вас с презрением. '[Root.TopLiege.GetTitle], Вы должно быть шутите, - говорит [From.GetSheHe], - Я никогда не стану охранять Вас, пока держите власть в своих руках.';;x;;;;;;;;;;;;
-EVTDESCkingsguard.10C;[From.GetTitledFirstNameWithDynasty] выглядит жалко. 'Прошу прощения, [Root.PrimaryTitle.GetFOA], - говорит [From.GetSheHe], - на мое место вы найдете кого-то более достойного.';;x;;;;;;;;;;;;
-EVTDESCkingsguard.10D;[From.GetTitledFirstNameWithDynasty] на коленях. '[Root.PrimaryTitle.GetFOA], я ценю ваше предложение, - говорит [From.GetSheHe], - однако, для леди неприлично состоять в Королевской Гвардии.';;x;;;;;;;;;;;;
-EVTDESCkingsguard.10E;[From.GetTitledFirstNameWithDynasty] выглядит так, словно [From.GetSheHe] скоро засмеется. - "Я уверен, состоять в Вестеросской гвардии - большая честь для любого вашего рода, - говорит [From.GetSheHe], - но я представитель [From.GetCultureAdj]ой культуры, и для таких как я в ней нет места.";;x;;;;;;;;;;;;
-VTDESCkingsguard.10EREGENT;[From.GetTitledFirstNameWithDynasty] выглядит так, словно [From.GetSheHe] скоро засмеется. - "Я уверен, что состоять в Вестеросской гвардии - большая честь для любого вашего рода, - говорит [From.GetSheHe], - но я представитель [From.GetCultureAdj]ой культуры, и в охране правителя нет места для таких как я.";;x;;;;;;;;;;;;
-EVTDESCkingsguard.10F;[From.GetTitledFirstNameWithDynasty] осторожно подходит к вам. 'Прошу прощения, [Root.PrimaryTitle.GetFOA], - говорит [From.GetSheHe] , - Из за болезни я с трудом передвигаюсь, не говоря уже о вашей защите.';;x;;;;;;;;;;;;
-EVTDESCkingsguard.10FREGENT;[From.GetTitledFirstNameWithDynasty] осторожно подходит к вам. 'Прошу прощения, [Root.PrimaryTitle.GetFOA], - говорит [From.GetSheHe] , - Из за болезни я с трудом передвигаюсь, не говоря уже о защите правителя.';;x;;;;;;;;;;;;
-EVTDESCkingsguard.10G;[From.GetTitledFirstNameWithDynasty] обеспокоен когда получает сообщение. 'Спасибо за оказанную честь, [Root.PrimaryTitle.GetFOA], - говорит [From.GetSheHe], - однако не смогу отказаться от женщин на всю жизнь.';;x;;;;;;;;;;;;
-TOOLTIPKGDRAGONSLAYER;[This.GetFirstName] совершил самый героический поступок - убил дракона, заслужив этим широкую известность во всем королевстве;;x;;;;;;;;;;;;
-TOOLTIPKGTRUTH;Сир [This.GetFirstName] владел валирийским мечом Истина, семейной реликвией Дома Рогаров.;;x;;;;;;;;;;;;
-TOOLTIPKGLAMENTATION;Сир [This.GetFirstName] владел валирийским мечом Плач, семейной реликвией Дома Ройсов.;;x;;;;;;;;;;;;
-TOOLTIPKGPOISON;Сир [This.GetFirstName] владел валирийским мечом Яд, семейной реликвией Дома Вунатисов.;;x;;;;;;;;;;;;
-opinion_refused_kingsguard;Отказался быть Королевским Гвардейцем;;x;;;;;;;;;;;;
-KG_duke;Лорд-Командующий;;x;;;;;;;;;;;;
-KG_duke_foa;Милорд;;x;;;;;;;;;;;;
-KG_duke_female;Леди-Командующая;;x;;;;;;;;;;;;
-KG_duke_foa_female;Миледи;;x;;;;;;;;;;;;
-EVTDESCkingsguard.63;Башня Белый Меч Красного Замка содержит покои Королевской гвардии. Это стройное сооружение из четырех этажей, встроенных в угол стены замка с видом на залив. Круглая белая комната, известная как Круглый Зал, состоит из побеленных каменных стен, на котрых развешены белые шерстяные гобелены, на первом этаже стоит большой белый стол с семью стульями, за которым собираются собрания. Самый верхний этаж отдан под палаты Лорда-Командующего.;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.63;Лорд-Командующий должен занимать эту башню;;x;;;;;;;;;;;;
-EVTOPTBkingsguard.63;Королевская Гвардия дает присягу Железному Трону;;x;;;;;;;;;;;;
-EVTDESCkingsguard.64;Королевская Гвардия не должна иметь земель;;x;;;;;;;;;;;;
-EVTDESCkingsguard.10H;[From.GetTitledFirstNameWithDynasty] встает на колени. '[Root.PrimaryTitle.GetFOA], я очень ценю предложение, - говорит [From.GetSheHe], - но я не смогу исполнить своих амбиций, если принесу присягу и буду служить как рыцарь Королевской гвардии'.;;x;;;;;;;;;;;;
-opinion_added_kin_to_kingsguard_pos;Принял[_] моего родственника в Королевскую гвардию;;x;;;;;;;;;;;;
-opinion_added_kin_to_kingsguard_neg;Принял[_] моего родственника в Королевскую гвардию;;x;;;;;;;;;;;;
-appointed_non_faith_kingsguard;Назначил[_] неверного в Королевскую гвардию;;;;;;;;;;;;;;x
-appointed_foreign_kingsguard;Назначил[_] чужестранца в Королевскую гвардию;;x;;;;;;;;;;;;
-appointed_lowborn_kingsguard;Назначил[_] низкородного в Королевскую гвардию;;x;;;;;;;;;;;;
-TOOLTIPappointed_non_faith_kingsguard;Ваши вассалы §YВеры Семерых§! будут огорчены, узнав что §Y[From.Religion.GetName]§! назначен в Королевскую Гвардию\n;;x;;;;;;;;;;;;
-TOOLTIPappointed_foreign_kingsguard;Ваши §Yродные и андальские§! вассалы будут огорчены, если в Королевскую Гвардию будет принят кто-то §Y[From.GetCultureAdj]ой§! крови\n;;x;;;;;;;;;;;;
-TOOLTIPappointed_lowborn_kingsguard;Ваши вассалы могут огорчиться, узнав что §Yнизкородный§! назначен в Королевскую Гвардию\n;;x;;;;;;;;;;;;
-EVTDESCkingsguard.10I;[From.GetTitledFirstNameWithDynasty] выглядит оскорбленным. 'Вы, должно быть, шутите, [Root.PrimaryTitle.GetFOA], - говорит [From.GetSheHe], - [From.GetOnlyDynastyName] никогда не будет приведен к присяге для защиты!';;x;;;;;;;;;;;;
-TOOLTIPKGBLANK; ;;x;;;;;;;;;;;;
-TOOLTIPKGDEATHREASON;[This.GetSheHeCap] [This.GetDeathReason] в возрасте [This.GetAgeYears].;;x;;;;;;;;;;;;
-TOOLTIPestablish_kingsguardCHARACTER;Есть действующий кандидат в королевскую гвардию в государстве;;x;;;;;;;;;;;;
-TOOLTIPestablish_kingsguardCIVILWAR;НЕ в состоянии войны;;x;;;;;;;;;;;;
-TOOLTIPinteraction.85;[Root.GetTitledFirstNameWithDynasty] рекомендуется советом в качестве королевского гвардейца;;x;;;;;;;;;;;;
-EVTDESCkingsguard.86;На собрании малого совета, [FromFromFrom.GetTitledFirstNameWithDynasty] рекомендовал[FromFromFrom.GetEndA], чтобы [FromFrom.GetTitledFirstNameWithDynasty] был принят в ряды Королевской гвардии.;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.86;Прекрасная идея, отправить приглашение;;x;;;;;;;;;;;;
-EVTOPTBkingsguard.86;Я так не думаю.;;x;;;;;;;;;;;;
-EVTDESCkingsguard.87;На собрании малого совета вы рекомендовали, чтобы [FromFromFrom.GetTitledFirstNameWithDynasty] был назначен в ряды Королевской гвардии. [From.GetTitledFirstNameNoRegnal] отклонил[From.GetEndA] ваше предложение.;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.87;Мое мнение должно быть более ценным!;;x;;;;;;;;;;;;
-EVTDESCkingsguard.88;[FromFrom.GetTitledFirstNameNoRegnal] провел небольшое заседание совета для обсуждения вашего предложения, и было решено, что [From.GetTitledFirstNameWithDynasty] будет приглашен в Королевскую гвардию. [From.GetSheHeCap] должным образом принят и был приведен к присяге в качестве вашего нового телохранителя.;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.88;[From.GetSheHeCap] сделает прекрасное дополнение;;x;;;;;;;;;;;;
-EVTDESCkingsguard.89;[FromFrom.GetTitledFirstNameNoRegnal] провел небольшое заседание совета для обсуждения вашего предложения, и было решено, что [From.GetTitledFirstNameWithDynasty] будет приглашен в Королевскую гвардию. Однако, [From.GetTitledFirstNameNoRegnal] отклонил[From.GetEndA] эту возможность.;;x;;;;;;;;;;;;
-EVTOPTAkingsguard.89;Безрассудство!;;x;;;;;;;;;;;;
-opinion_accepted_kingsguard_recommendation;Согласи[__лся] с рекомендацией в Королевскую гвардию;;x;;;;;;;;;;;;
-opinion_rejected_kingsguard_recommendation;Отклонил[_] рекомендацию в Королевскую гвардию;;x;;;;;;;;;;;;
-TOOLTIPKGSEAFOAM;Сир [This.GetFirstName] обладал валирийским мечом Морская пена, родовым клинком Дома Веларион;;;;;;;;;;;;;x
-EVTDESCkingsguard.95;Ваш [From.GetRootRelation], [From.GetTitledFirstNameWithDynasty], объявил о своем намерении добиваться чести получить место в Королевской гвардии. [From.GetSheHeCap] желает отказаться от брака, чтобы выполнить эту амбицию, и ищет вашего одобрения.;;;;;;;;;;;;;x;
-EVTOPTAkingsguard.95;У вас есть мое согласие;;;;;;;;;;;;;x;
-opinion_backed_KG_ambition;Поддержка амбиции Королевской гвардии;;;;;;;;;;;;;x;
-EVTOPTBflavour_events.41;Нет, нет и нет, вы вступите в брак!;;;;;;;;;;;;;x;
-opinion_rejected_KG_ambition;Отвергнуты амбиции Королевской гвардии;;;;;;;;;;;;;x;
-EVTDESCkingsguard.96;Посланник прибыл в город [Root.Capital.GetName], по слову персонажа [From.GetTitledFirstNameWithDynastyNoRegnal]. [From.GetSheHeCap] сообщает, что помолвка между людьми, известными как [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] и [FROMs_betrothed.GetRootRelation] [FROMs_betrothed.GetTitledFirstNameWithDynastyNoRegnal] будет разорвана из-за того, что [FromFrom.GetTitledFirstNameNoRegnal] собирается вступать в Королевскую гвардию.;;;;;;;;;;;;;x;
-EVTOPTAkingsguard.96;Это бесчестно!;;;;;;;;;;;;;x;
+#CODE;ENGLISH;x
+kingsguard;Королевский гвардеец;x
+kingsguard_desc;Этот персонаж дал клятву охранять королевскую семью ценой своей собственной жизни.;x
+EVTDESCkingsguard.2;Увы, один из рыцарей Королевской гвардии умер. [Root.GetTitle] охраняется исключительно Семью Мечами – вам нужно подобрать замену.;x
+EVTDESCkingsguard.2B;Увы, один из рыцарей Королевской гвардии умер. [From.GetTitle] охраняется исключительно Семью Мечами - как Регент, вы должны выбрать замену;x
+EVTOPTAkingsguard.2;Привести ко мне самых лучших и доблестных рыцарей королевства!;x
+EVTOPTBkingsguard.2;Привести ко мне рыцарей, которым я могу доверять больше всех!;x
+EVTOPTCkingsguard.2;Привести ко мне рыцарей из величайших домов!;x
+EVTOPTDkingsguard.2;Привести ко мне сыновей Верховных Лордов!;x
+EVTOPTEkingsguard.2;Я не могу выбрать сейчас.;x
+EVTOPTFkingsguard.2;Есть несколько достойных рыцарей, но нужно выбрать одного из них;x
+EVTDESCkingsguard.3;Лучшие рыцари королевства собрались по вашему зову в землю [Root.Location.GetName]. Вы должны выбрать самого достойного в Королевскую Гвардию.;x
+EVTDESCkingsguard.3B;Лучшие рыцари королевства собрались по вашему зову в землю [Root.Location.GetName]. [FromFrom.GetTitledFirstNameNoRegnal] долж[FromFrom.GetNaEn] получить самого достойного в Королевскую Гвардию .;x
+EVTOPTAkingsguard.3;[KG_1.GetTitledFirstNameWithDynasty], шаг вперед!;x
+EVTOPTBkingsguard.3;[KG_2.GetTitledFirstNameWithDynasty], шаг вперед!;x
+EVTOPTCkingsguard.3;[KG_3.GetTitledFirstNameWithDynasty], шаг вперед!;x
+EVTDESCkingsguard.4;Лучшие рыцари королевства прибыли по вашему зову в землю [Root.Location.GetName]. Вы тщательно отсеивали всех кого посчитали коварными и ненадежными. Все те, кто остался не вызывают ничего кроме доверия. Теперь Вы должны выбрать самого достойного для службы в Королевской гвардии;x
+EVTDESCkingsguard.4B;Лучшие рыцари королевства прибыли по вашему зову в землю [Root.Location.GetName]. Вы тщательно отсеивали всех кого посчитали коварными и ненадежными. Все те, кто остался не вызывают землю кроме доверия. Теперь [FromFrom.GetTitledFirstNameNoRegnal] долж[FromFrom.GetNaEn] получить самого достойного для службы в Королевской гвардии .;x
+EVTDESCkingsguard.5;Много сыновей величайших домов собрались по вашему зову в землю [Root.Location.GetName]. После изучения всех, вы считаете, что нашли лучшего кандидата для Королевской гвардии.;x
+EVTDESCkingsguard.5B;Много сыновей величайших домов собрались по вашему зову в землю [Root.Location.GetName]. После изучения всех, вы считаете, что [FromFrom.GetTitledFirstNameNoRegnal] получит лучшего кандидата для Королевской гвардии.;x
+EVTDESCkingsguard.6;Величайшие Лорды и Леди Вестероса отправили своих сыновей и братьев в землю [Root.Location.GetName] искать чести вступить в Вашу Королевскую гвардию. Через некоторое время Вы считаете, что определили лучших воинов среди них.;x
+EVTDESCkingsguard.7;Величайшие Лорды и Леди Вестероса отправили своих сыновей и братьев в землю [Root.Location.GetName], чтобы те смогли снискать честь войти в Королевскую гвардию. Немало нашлось достойных рыцарей в королевстве, но Королевских стражей должно быть семь.;x
+EVTDESCkingsguard.7B;Величайшие Лорды и Леди Вестероса отправили своих сыновей и братьев в землю [Root.Location.GetName], чтобы [FromFrom.GetTitledFirstNameNoRegnal] предоставил[FromFrom.GetEndA] кому-то честь войти в Королевскую гвардию. Немало нашлось достойных рыцарей в королевстве, но Королевских стражей должно быть семь.;x
+EVTDESCkingsguard.9;[From.GetTitledFirstNameWithDynasty] преклонил[From.GetEndA] колено. '[Root.PrimaryTitle.GetFOA], - произносит [From.GetSheHe], - Нет большей чести, чем служба вам в Королевской гвардии.';x
+EVTDESCkingsguard.9B;Увы, один из рыцарей Королевской гвардии умер. [Root.GetTitle] охраняется Семью Мечами - и поэтому Регент, [FromFromFrom.GetFirstNameWithDynasty], выбрал[FromFromFrom.GetEndA] замену, это [From.GetTitledFirstNameWithDynasty], который преклонил колено и клянется в верности.;x
+EVTDESCkingsguard.9C;[From.GetTitledFirstNameWithDynasty] преклоняет колени и становится возле трона. '[Root.PrimaryTitle.GetFOA],- произносит [From.GetSheHe], - Это великая честь служить в Королевской гвардии. [Root.TopLiege.GetTitle] будет гордиться мной';x
+EVTDESCkingsguard.9D;[From.GetTitledFirstNameWithDynasty] преклоняет колени и становится возле трона. 'Как приказывает [Root.TopLiegePrimaryTitle.GetFOA],' произносит [From.GetSheHe], - 'Я отрекаюсь от своего наследства, чтобы служить в Королевской гвардии.';x
+EVTTOOLTIPkingsguard.11;отреагировать на известие...;x
+EVTDESCkingsguard.10;[From.GetTitledFirstNameWithDynasty] преклонил колено. 'Примите мои извинения, [Root.PrimaryTitle.GetFOA], -говорит [From.GetSheHe], - я ценю ваше предложение, но я никогда не видел ничего хорошего в белых одеяниях.';x
+EVTDESCkingsguard.11;Когда стюард сообщил вам, что [From.GetRootRelation] [From.GetFirstName] искал вас, вы не знали чего ожидать. Конечно, вы не думали найти [From.GetHerHis] одетым в белый плащ! '[From.TopLiege.GetTitledFirstNameNoRegnal] выбрал[From.TopLiege.GetEndA] меня для службы в Королевской гвардии!' - говорит [FromFrom.GetSheHe] радостно.;x
+EVTDESCkingsguard.11B;Когда стюард сообщил вам, что [From.GetRootRelation] [From.GetFirstName] искал вас, вы не знали чего ожидать. Конечно, вы не думали найти [From.GetHerHis] одетым в белый плащ! '[From.TopLiege.GetTitledFirstNameNoRegnal] назвал[From.TopLiege.GetEndA] меня Рыцарем Королевской гвардии. Так распорядился Регент [FromFromFrom.GetFirstNameWithDynasty]!' - говорит [FromFrom.GetSheHe] счастливо.;x
+EVTDESCkingsguard.11C;[From.GetTitledFirstNameWithDynasty] был назначен в Королевскую гвардию. Так распорядился [From.TopLiege.GetTitledFirstNameNoRegnal].;x
+EVTOPTAkingsguard.11;Дом [Root.GetOnlyDynastyName] гордится, [From.GetTitledFirstName].;x
+EVTOPTBkingsguard.11;ЧТО?! Почему мне не сообщили об этом?;x
+EVTOPTCkingsguard.11;Будем надеяться, что это мудрый выбор;x
+EVTDESCkingsguard.12;[From.GetTitledFirstNameWithDynastyNoRegnal], [GetFromFromVsFromRelation] новоиспечённого Белого рыцаря по имени [FromFrom.GetTitledFirstName], смотрел[From.GetEndA] с гордостью на то, как новый рыцарь вашей Королевской гвардии приносил клятву верности своим мечом;x
+EVTDESCkingsguard.13;[From.GetTitledFirstNameWithDynastyNoRegnal], [GetFromFromVsFromRelation] новоиспечённого Белого рыцаря по имени [FromFrom.GetTitledFirstName], возмущен[From.GetEndA] тем, что [From.GetHerHis] [GetFromVsFromFromRelation] присоединился к Королевской гвардии.;x
+EVTNAMEkingsguard.23;Белая Книга;x
+EVTDESCkingsguard.23;В тронном зале [From.GetTitledFirstNameWithDynasty] становится на колени перед вами, чтобы занять свой новый пост Лорда-Командующего Королевской гвардии.;x
+EVTOPTAkingsguard.23;Я уверен[GetEndA], [From.GetSheHe] будет верно служить.;x
+EVTDESCkingsguard.24;Когда вы собираете свои войска на войну, вы не можете помочь, но думаете, что будет с вашим родственником. [kingsguard_kin_while_at_war.GetTitledFirstNameNoRegnal] будет разрываться между семьей и долгом.;x
+EVTOPTAkingsguard.24;Может [Root.Religion.GetRandomGodName] спасет нас всех.;x
+EVTDESCkingsguard.25;[From.GetTitledFirstNameWithDynastyNoRegnal], измена – это одно, но этот [From.GetOnlyDynastyName] стоит подле Железного Трона и клялся защищать вашу жизнь... может [kingsguard_kin_while_at_war.GetTitledFirstNameNoRegnal] поставить свои обеты выше своей семьи?;x
+EVTOPTAkingsguard.25;[kingsguard_kin_while_at_war.GetSheHeCap] - рыцарь Королевской гвардии. [kingsguard_kin_while_at_war.GetSheHeCap] будет исполнять свой долг.;x
+EVTOPTBkingsguard.25;Отвести [kingsguard_kin_while_at_war.GetHerHis] в темницу! я не желаю, чтобы [From.GetOnlyDynastyName] был возле меня, покуда предатель еще жив!;x
+EVTOPTCkingsguard.25;Отрубить [kingsguard_kin_while_at_war.GetHerHim] голову!;x
+EVTDESCkingsguard.26;Вы получили сообщение, что ваш родственник из Королевской Гвардии выбрал честь служить персонажу, известному как [From.GetTitle] [From.GetFirstName]!;x
+EVTDESCkingsguard.27;Вы получили известие о том, что [From.GetTitledFirstNameNoRegnal] бросил[From.GetEndA] вашего родственника из Королевской Гвардии в темницу.;x
+EVTDESCkingsguard.28;Тварь [From.GetTitledFirstNameWithDynastyNoRegnal] приказал[From.GetEndA] казнить вашего родственника, состоявшего в Королевской гвардии, в отместку за ваше предательство!;x
+EVTDESCkingsguard.33;Когда [From.GetHerHis] братья по службе предали [From.GetHerHis], ваш [From.GetRootRelation] [From.GetTitledFirstName] доблестно сражался, чтобы сбежать. Увы, [From.GetSheHe] погиб.;x
+EVTDESCkingsguard.34;На рассвете [From.GetRootRelation] [From.GetTitledFirstName] прибыл в землю [Root.Location.GetName] верхом на белом коне. [From.GetSheHeCap] говорит, что [From.GetHerHis] побратимы пытались убить его по приказу короля, но [From.GetSheHe] смог уйти живым.;x
+EVTDESCkingsguard.47;Ваш [FromFrom.GetRootRelation], [FromFrom.GetTitledFirstNameNoRegnal] мертв. Говорят, [FromFrom.GetSheHe] был настигнут карой богов за нарушение собственных клятв и попытку убить того, кого защишал. Но правдивы ли эти слухи?;x
+EVTDESCkingsguard.48;До нас дошли слухи из области [Root.TopLiege.Location.GetName]. В них говорится, что [From.GetTitledFirstNameWithDynasty] нарушил свои клятвы и [FromFrom.GetTitle] был[FromFrom.GetEndA] убит[FromFrom.GetEndA] от [From.GetHerHis] руки! Что могло довести [From.GetHerHis] до такого бесчестия и безумия!;x
+EVTDESCkingsguard.43;Вы поднялись на рассвете, чтобы увидеть как ваш [From.GetRootRelation], [From.GetTitledFirstName], прибыл в землю [Root.Location.GetName]. [From.GetSheHeCap] рассказал вам, что [FromFrom.GetTitle] предал [From.GetHerHis], и [From.GetSheHe] был вынужден нарушить свои клятвы и оказать сопротивление. 'Мое единственное сожаление,- сказал [From.GetSheHe], - что я не справился.';x
+EVTDESCkingsguard.46;Когда солнце село, и полил дождь, вас позвал один из стражников. Ваш [From.GetRootRelation], [From.GetFirstName] только что приехал в землю [Root.Location.GetName], [From.GetHerHis] прекрасный белый плащ обагрен кровью. Когда вы начали расспрашивать [From.GetHerHis] почему, [From.GetSheHe] ответил,- 'У меня не было выбора.';x
+EVTDESCkingsguard.50;Ваш [GetFromRelation], [From.GetTitledFirstNameNoRegnal] мертв. Говорят, что [From.GetSheHe] был убит своими побратимами, при попытке похитить детей того, кого поклялся защищать.;x
+EVTDESCkingsguard.51;Ваш [GetFromRelation] [From.GetTitledFirstName] прибыл в землю [Root.Location.GetName], из его ран еще сочится кровь. [From.GetSheHeCap] пытался бежать с одним из детей того, кого поклялся защищать, но затея потерпела неудачу.;x
+EVTDESCkingsguard.52;Ваш [GetFromRelation] [From.GetTitledFirstName] прибыл в землю [Root.Location.GetName], приведя с собой пленника. Мало того что [From.GetSheHe] смог сбежать из столицы, [From.GetSheHe] смог захватить ребенка того, кого поклялся защищать!;x
+EVTTOOLTIPkingsguard.26;[From.GetTitledFirstNameNoRegnal] не будет этому рад[From.GetEndA]…;x
+EVTDESCkingsguard.31;Кто-то напортачил. [From.GetTitledFirstNameWithDynastyNoRegnal] узнал о ваших планах и попытался сбежать. К счастью, остальные королевские гвардейцы перехватили [From.GetHerHis] раньше чем [From.GetSheHe] успел скрыться. Предатель мертв.;x
+EVTDESCkingsguard.32;Когда ваши верные королевские гвардейцы прибыли чтобы арестовать персонажа, известного как [From.GetTitledFirstNameWithDynastyNoRegnal], они обнаружили, что [From.GetSheHe] уже успел сбежать в область [From.Location.GetName]!;x
+EVTDESCkingsguard.39;[From.GetTitledFirstName] и [FromFrom.GetTitledFirstName] оказались втянуты в яростный поединок, не давая друг другу пощады. Однако [FromFrom.GetTitledFirstName] уступил гневу персонажа [From.GetTitledFirstName], который поворачивает [From.GetHerHis] меч на тебя...;x
+EVTDESCkingsguard.40;[From.GetTitledFirstName] и [FromFrom.GetTitledFirstName] оказались втянуты в яростный поединок, не давая друг другу пощады. К счастью [From.GetTitledFirstName] доказал свою доблесть, победив противника.;x
+EVTDESCkingsguard.42;[From.GetTitledFirstNameWithDynastyNoRegnal] был избит и ранен, но, тем не менее, у него еще остались силы, чтобы прорваться через мою охрану. В последний раз его видели скачущего галопом из города.;x
+EVTDESCkingsguard.45;Ночью, выскользнув из тьмы, к вам явился [From.GetTitledFirstNameWithDynastyNoRegnal]. Вы попытались позвать стражу, но ваш крик превратился в крик боли и отчаяния, когда [From.GetSheHe] ткнул свой меч вам в грудь. Вы упали на колени, ваша корона упала на пол. [From.GetTitledFirstName] вложил меч в ножны и предоставляет вас вашей судьбе.;x
+EVTDESCkingsguard.53;Посреди ночи вас разбудил один из ваших гвардейцев. Он бросает к вашим ногам голову персонажа, известного как  [From.GetTitledFirstNameWithDynastyNoRegnal]. Этот дурак пытался похитить одного из ваших детей и в результате был убит.;x
+EVTDESCkingsguard.54;Посреди ночи вас разбудил один из ваших гвардейцев. 'Мне очень жаль, [Root.PrimaryTitle.GetFOA}' - ,говорит он, - Он объясняет, что [From.GetTitledFirstNameWithDynastyNoRegnal] попытался выкрасть вашего ребенка, но ему помешали ваши верные гвардейцы. [From.GetSheHeCap] был ранен, но сумел сбежать.;x
+EVTDESCkingsguard.55;Посреди ночи вас разбудил один из ваших гвардейцев. 'Мне очень жаль, [Root.PrimaryTitle.GetFOA],' - говорит он. Вы ужасаетесь, когда он объясняет, что [From.GetTitledFirstNameWithDynastyNoRegnal] бежал в область [From.Location.GetName], забрав с собой вашего ребенка.;x
+EVTDESCkingsguard.57;Вы впервые услышали о том, что [FromFromFrom.GetTitledFirstNameWithDynastyAndTitleNoRegnal] попросил, чтобы ваш [From.GetRootRelation] присоединиться к Королевской гвардии, когда [From.GetSheHe] сказал вам, что [From.GetSheHe] отказался.;x
+EVTDESCkingsguard.58;[From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] преклонил колено. 'Я прошу прощения, [Root.PrimaryTitle.GetFOA],' - говорит [From.GetSheHe], - 'Но когда-нибудь я стану повелителем земель моего дома. Мой дом нуждается во мне больше, чем королевство.';x
+EVTDESCkingsguard.59;Когда стюард сообщил вам, что [From.GetFirstName] искал вас, вы не знали чего ожидать. Конечно, вы не думали найти [From.GetHerHis] одетым в белый плащ! 'Отец, - сказал [From.GetSheHe] вам, сияя от гордости, - [FromFrom.GetTitledFirstName] выбрал[FromFrom.GetEndA] меня для службы в Королевской гвардии!';x
+EVTDESCkingsguard.60;[From.GetTitledFirstNameWithDynasty] преклонил преклонил перед вами колени. 'Как приказывает [Root.PrimaryTitle.GetFOA],' - произносит [From.GetSheHe], - 'Настоящей клятвой я отказываюсь от моего наследства, вступая в ряды рыцарей Королевской гвардии.';x
+EVTDESCkingsguard.61;Вы видите, как предавшего вас королевского гвардейца заковывают в кандалы. Вы в безопасности.;x
+EVTDESCkingsguard.62;Вы видите, как предавшего вас королевского гвардейца тащат к плахе. Одним быстрым ударом все закончено.;x
+EVTDESCkingsguard.1;Моя служба в Королевской гвардии закончилась, будем надеяться, что мой преемник будет бдительным.;x
+EVTOPTAkingsguard.1;Будем надеяться;x
+EVTDESCkingsguard.22;Этот рыцарь Королевской гвардии умер.;x
+EVTDESCkingsguard.22B;[From.GetTitledFirstNameWithDynasty] был удален из Королевской гвардии. Необходимо выбрать замену.;x
+EVTOPTAkingsguard.22;Ок;x
+the_white_book;Белая Книга;x
+the_white_book_desc;Читать фолиант, в котором записаны деяния каждого члена, которые когда-либо служили Королевской Гвардии;x
+EVTDESCkingsguard.65;Здесь перечислены все нынешние и бывшие королевские гвардейцы;x
+OPTAkingsguard.65;Текущий Состав;x
+TOOLTIPKGCOMMANDER;Лорд-Командующий Королевской гвардии [This.Liege.GetTitledFirstName]: [This.GetTitledFirstNameWithNickAndDynasty];x
+TOOLTIPKGCURRENT;[This.GetTitledFirstNameWithNickAndDynasty];x
+TOOLTIPKGDYNASTY; [This.GetOnlyDynastyName];x
+OPTBkingsguard.65;Лорды-Командующие в прошлом;x
+OPTCkingsguard.65;Королевские гвардейцы в прошлом;x
+TOOLTIPKGNOTABLEPASTCOMMANDER;[This.GetTitledFirstNameWithNickAndDynasty] [This.GetKGWhiteBookWasLC][This.GetKGWhiteBookTrait1][This.GetKGWhiteBookTrait2].[This.GetKGWhiteBookIntellect][This.GetKGWhiteBookCombatTrait].[This.GetKGWhiteBookValyrianSteel][This.GetKGWhiteBookDragonRider][This.GetKGWhiteBookAnimalCompanion]\n[This.GetKGWhiteBookTrait3];x
+TOOLTIPKGPASTMEMBER;[This.GetTitledFirstNameWithDynasty][This.GetKGWhiteBookNickname][This.GetKGWhiteBookWasKG][This.GetKGWhiteBookTrait1][This.GetKGWhiteBookTrait2].[This.GetKGWhiteBookIntellect][This.GetKGWhiteBookCombatTrait].[This.GetKGWhiteBookValyrianSteel][This.GetKGWhiteBookDragonRider][This.GetKGWhiteBookAnimalCompanion]\n[This.GetKGWhiteBookTrait3];x
+TOOLTIPKGOFTHEHOUSE;\nСир [This.GetFirstNameWithDynasty];x
+TOOLTIPKGKNOWNNICK;, также известный как [This.GetFirstNameWithNick], ;x
+TOOLTIPKGWASLC;был Лордом-Командующим Королевской гвардии.;x
+TOOLTIPKGGENIUS;Был рыцарем обладающим острым умом.;x
+TOOLTIPKGMASTERWARRIOR; [This.GetTitledFirstNameNoRegnal] был одним из величайших воинов своего времени, [This.GetHerHis] воинское мастерство славилось по всему королевству.;x
+TOOLTIPKGGENIUSDESPITE;Несмотря на то что он был остер умом,;x
+TOOLTIPKGSKILLEDWARRIOR; [This.GetTitledFirstNameNoRegnal] был уважаемым фехтовальщиком, являясь одним из более способных королевских гвардейцев в истории.;x
+TOOLTIPKGPOORWARRIOR; [This.GetTitledFirstNameNoRegnal] был очень посредственным рыцарем, получившим положение с помощью своей влиятельности, а не воинского мастерства.;x
+TOOLTIPKGDRAGON; Великолепный [This.GetTitledFirstNameNoRegnal] был драконьим всадником.;x
+TOOLTIPKGANIMALaswellas;, а также [This.GetHerHis] всегда сопровождал [This.GetAnimalCompanion];x
+TOOLTIPKGVALYRIANSTEEL;[This.GetTitledFirstNameNoRegnal] владел мечом [This.GetValyrianSword], что существенно помогало [This.GetHerHim] выполнять свой долг по защите господина.;x
+TOOLTIPKGDAWN;[This.GetTitledFirstNameNoRegnal] владел валирийским мечом Рассвет, родовым мечом Дома Дейн;x
+TOOLTIPKGICE;[This.GetTitledFirstNameNoRegnal] владел валирийским мечом Лед, родовым мечом Дома Старк;x
+TOOLTIPKGLONGCLAW;[This.GetTitledFirstNameNoRegnal] владел валирийским мечом Длинный Коготь, родовым мечом Дома Мормонт;x
+TOOLTIPKGBLACKFYRE;[This.GetTitledFirstNameNoRegnal] владел валирийским мечом Черное Пламя, когда-то принадлежавшим Эйгону Завоевателю.;x
+TOOLTIPKGDRAGONAND; , и широко известным Драконьим Всадником;x
+TOOLTIPKGANIMALAND; , и широко известным владельцем спутника [This.GetAnimalCompanion];x
+TOOLTIPKGANIMAL; [This.GetTitledFirstNameNoRegnal] был известен как владелец спутника [This.GetAnimalCompanion];x
+TOOLTIPKGKINSLAYER;[This.GetSheHeCap] запомнился в истории, как убийца короля, самый проклятый из всех людей.;x
+TOOLTIPKGDWARF;Величайшая глупость в [This.GetHerHis] истории. [This.GetSheHeCap] был карликом.;x
+TOOLTIPKGDURINGKING;был Лордом-Командующим Королевской гвардии когда правил[This.Liege.GetEndA] [This.Liege.Liege.GetTitledFirstNameoftheHouse];x
+TOOLTIPKGENDLINE;.\n;x
+TOOLTIPKGWASMEM;состоял в Королевской гвардии;x
+TOOLTIPKGMEMDURINGKING;состоял в Королевской гвардии во когда правил[This.Liege.Liege.GetEndA] [This.Liege.Liege.GetTitledFirstNameoftheHouse];x
+TOOLTIPKGHONOURABLE; и был достойнейшим из рыцарей;x
+TOOLTIPKGRUTHLESS; которому никто не мог преградить [This.GetHerHis] путь;x
+TOOLTIPKGBRAVE; который был известен как самый смелый из людей;x
+TOOLTIPKGDILIGENT; и был непреклонен в своей клятве;x
+TOOLTIPKGKIND; который был известен своим состраданием к горю других;x
+TOOLTIPKGLUNATIC; здравомыслие которого регулярно ставилось под сомнение;x
+TOOLTIPKGDRUNKARD; который запомнился любителем вина и пива;x
+TOOLTIPKGLUSTFUL; который был известен своими любовными похождениями, несмотря на обеты;x
+TOOLTIPKGLUTTONOUS; который был чрезвычайно толстым;x
+TOOLTIPKwroth; который был известен своими мрачными помыслами;x
+TOOLTIPKhumble; который запомнился своей скромностью;x
+TOOLTIPKGfair; а также являлся одним из красивейших мужчин;x
+TOOLTIPKGstrong; а также обладал не дюжей силой;x
+TOOLTIPKGtall; а также обладал выдающимся ростом;x
+TOOLTIPKGweak; а также был довольно слабым;x
+TOOLTIPKGugly; а также считался довольно скверным;x
+TOOLTIPKGTRAINEDWARRIOR; [This.GetTitledFirstNameNoRegnal] был довольно хорошим фехтовальщиком, хотя песен о нем не складывали.;x
+EVTDESCkingsguard.66; [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal] оставлен в Королевской гвардии, несмотря на то, что его семья находиться в состоянии войны с короной.;x
+EVTOPTAkingsguard.66;Мой долг - служить моему Дому.;x
+EVTOPTBkingsguard.66;Мой долг - служить Короне.;x
+TOOLTIPKGBRIGHTROAR;Сир [This.GetFirstName] владел валирийским мечом Светлый Рев, позже утерянным Домом Ланнистер;x
+TOOLTIPKGHEARTSBANE;Сир [This.GetFirstName] владел валирийским мечом Губитель Сердец, родовым мечом Дома Тарли;x
+TOOLTIPKGNIGHTFALL;Сир [This.GetFirstName]  владел валирийским мечом Сумрак, родовым мечом Дома Харлоу;x
+EVTDESCkingsguard.16;Королевская Гвардия, также известная как 'Белые Мечи' или 'Белые Плащи', состоящая из семи рыцарей, являющихся телохранителями королей на Железном Троне. Предположительно это лучшие рыцари в Семи Королевствах, они поклялись защищать своего короля и его семью ценой собственной жизни, выполнять его приказы, и хранить его тайны. Они дают клятву на всю жизнь, им запрещено владеть землей, брать жен, или заводить детей.;x
+EVTOPTAkingsguard.16;Я буду прекрасным Лордом-Командующим;x
+EVTDESCkingsguard.18;Лорд-Командующий Королевской Гвардии, звание получаемое самым лучшим из Королевских Гвардейцев.;x
+TOOLTIPKGLADYFORLORN;Сир [This.GetFirstName] владел валирийским мечом Леди Отчаянье, родовым мечом Дома Корбрей;x
+TOOLTIPKGREDRAIN;Сир [This.GetFirstName] владел валирийским мечом Багряный Дождь, родовым мечом Дома Драмм;x
+TOOLTIPKGCRABSPINCER;Сир [This.GetFirstName] владел валирийским топором Крабовая Клешня, родовым топором Дома Селтигар;x
+TOOLTIPEVTOPTC20800002;[This.GetTitledFirstNameWithDynastyAndTitleNoRegnal] назначается новым Лордом-Командующим Королевской гвардии\n;x
+EVTOPTC20800002;Назначить в качестве нового Лорда-Командующего;x
+EVTDESCkingsguard.67;Защита короля может быть трудной и довольно утомительной работой, возможно, я должен завести любовницу?;x
+EVTOPTAkingsguard.67;Да, желание слишком велико!;x
+EVTOPTBkingsguard.67;Я дал обет, я должен сопротивляться таким побуждениям;x
+EVTDESCkingsguard.68;Скандал! Я искал одного из моих побратимов по имени [KG_has_the_lover.GetTitledFirstName,] когда я нашел [KG_has_the_lover.GetHerHis] в постели одной из придворных дам. Несомненно, его действия – явное предательство, [TopLiege.GetTitle] будет проинформирован[TopLiege.GetEndA]?;x
+EVTOPTAkingsguard.68;Да, [TopLiege.GetTitle] узнает об этом!;x
+EVTOPTBkingsguard.68;Это не вредно;x
+EVTDESCkingsguard.69;[Root.PrimaryTitle.GetFOA], обращаю внимание, что [KG_has_the_lover.GetHerHis] нарушение  клятвы в том, что [KG_has_the_lover.GetTitledFirstName] состоял в порочной связи с одной из ваших придворных дам. Я надеюсь, [KG_has_the_lover.GetSheHe] понесет наказание, соответствующее его вине.\n\nВаш, [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal];x
+EVTDESCkingsguard.69B;[Root.PrimaryTitle.GetFOA], обращаю внимание Малого Совета на прямое нарушение [KG_has_the_lover.GetHerHis] обетов по вашей защите, [KG_has_the_lover.GetTitledFirstName] состоял в любовной связи с одним из придворных.;x
+EVTOPTAkingsguard.69;Только смерть искупит его вину!;x
+EVTOPTDkingsguard.69;Заключить под стражу и удалить из Королевкой гвардии;x
+TOOLTIPkingsguard.75;[Root.GetHusbandWifeOpp] будет рассматривать это дело.;x
+EVTOPTBkingsguard.69;Кастрировать его и выслать на Стену;x
+EVTDESCkingsguard.70;[Root.GetFirstNameWithDynasty], [From.GetTitle] постановил[From.GetEndA], что ваше нарушение клятвы не останется безнаказанным. Ваши действия являются грубым нарушение вашей клятвы защищать государя. Следовательно [From.GetTitle] вынес[From.GetNoneE] решение лишить вас головы.\n\nТак решил[From.GetEndA] [From.GetTitledFirstName], [From.GetTitle] Андалов, Ройнаров и Первых Людей, Правитель[From.GetEndNitsa] Семи Королевств и Защитни[From.GetTsaK] Государства;x
+EVTDESCkingsguard.71;[From.GetTitle] был[From.GetEndA] потрясен[From.GetEndA] вашим рассказом о клятвопреступлении вашего побратима, и согласи[From.GetLasLsya], что это тяжкое преступление. Предатель [KG_has_the_lover.GetTitledFirstName] немедленно казнён.;x
+EVTDESCkingsguard.72;[Root.GetFirstNameWithDynasty], [From.GetTitle] постановил[From.GetEndA], что ваше нарушение клятвы не останется безнаказанным. Ваши действия являются грубым нарушение вашей клятвы защищать государя. Следовательно, From.GetTitle] вынес[From.GetNoneE] решение кастрировать вас и сослать на Стену.\n\nТак решил[From.GetNoneE] [From.GetTitledFirstName], [From.GetTitle] Андалов, Ройнаров и Первых Людей, Правитель[From.GetEndNitsa] Семи Королевств и Защитни[From.GetTsaK] Государства;x
+EVTDESCkingsguard.73;[From.GetTitle] был[From.GetEndA] потрясен[From.GetEndA] вашим рассказом о клятвопреступлении вашего побратима, и согласи[From.GetLasLsya], что это тяжкое преступление. [From.GetSheHeCap] приказал[From.GetEndA] кастрировать и выслать на Стену предателя.;x
+EVTOPTAkingsguard.71;Справедливое наказание;x
+EVTDESCkingsguard.74;[From.GetHerHisCap] Светлость не волнуют ваши доказательства отвратительных дел гвардейца, известного как [KG_has_the_lover.GetTitledFirstName]. [From.GetSheHeCap] постановил не наказывать провинившегося гвардейца.;x
+EVTOPTAkingsguard.74;Но он нарушил клятву!;x
+EVTDESCkingsguard.75;Ваша [Root.GetHusbandWifeOpp] [Root.Spouse.GetFirstName] была уличена в измене с одним из ваших гвардейцев. Вы покарали его, но что теперь делать с вашей неверной женой?;x
+EVTOPTAkingsguard.75;[Root.Spouse.GetSheHeCap] должна быть казнена!;x
+EVTOPTBkingsguard.75;Заключить в темницу!;x
+EVTOPTCkingsguard.75;Я прощаю;x
+EVTDESCkingsguard.7299;[Root.GetFirstNameWithDynasty], [From.GetTitle] постановил[From.GetEndA], что ваши грязные дела не могут остаться безнаказанным. Ваши действия являются грубым нарушением клятв защищать государя. Таким образом, [From.GetTitle] решил[From.GetEndA] удалить вас из Королевской гвардии и заключить в тюрьму.\n\nТак решил[From.GetEndA] [From.GetTitledFirstName], [From.GetTitle] Андалов, Ройнаров и Первых Людей, Правитель[From.GetEndNitsa] Семи Королевств и Защитни[From.GetTsaK] Государства;x
+EVTOPTAkingsguard.7299;По крайней мере, я еще жив;x
+EVTDESCkingsguard.7399;[From.GetTitle] был[From.GetEndA] потрясен[From.GetEndA] известиями, и согласи[From.GetLasLsya], что это деяние требует наказания. [From.GetSheHeCap] приказал[From.GetEndA], чтобы брат по оружию был удален из Королевской гвардии и заключен в тюрьму.;x
+TOOLTIPkingsguard.69;узнает об этот и решит, что делать;x
+TOOLTIPkingsguard.70;будет обезглавлен;x
+opinion_executed_lover;Казнил[_] моего Любовника;x
+opinion_gelded_lover;Кастрировал[_] моего Любовника;x
+TOOLTIPKGDARKSISTER;Сир [This.GetFirstName] владел валирийским мечом Темная Сестра, родовым мечом Дома Таргариен;x
+TOOLTIPKGWIDOWSWAIL;Сир [This.GetFirstName] владел длинным валирийским мечом Вдовий Плач, выкованным по приказу Тайвина Ланнистера из лезвия Льда;x
+TOOLTIPKGOATHKEEPER;Сир [This.GetFirstName] владел длинным валирийским мечом Верный Клятве, выкованным по приказу Тайвина Ланнистера из лезвия Льда;x
+EVTOPTDkingsguard.3;Ни один из этих людей не должен охранять меня;x
+TOOLTIPKGSTRANGERSMERCY;Сир [This.GetFirstName] владел валирийским мечом Милость Неведомого;x
+EVTDESCkingsguard.37;Ночью [FromFrom.GetTitledFirstNameWithDynastyAndTitleNoRegnal] выскользнул из тьмы. На мгновение вы думаете, что все потеряно, пока не появился [From.GetTitledFirstNameWithDynastyAndTitleNoRegnal], чтобы защитить вас от этого клятвопреступника...;x
+EVTDESCkingsguard.38;Ночью [FromFrom.GetTitledFirstNameWithDynastyAndTitleNoRegnal] выскользнул из тьмы. Вы зовете стражу, но никто не приходит. Вы должны защитить себя от этого клятвопреступника...;x
+EVTDESCkingsguard.44;Вы боролись за свою жизнь с персонажем [FromFrom.GetTitledFirstName] и вам удалось справиться;x
+TOOLTIPkingsguard.41;Уклониться от захвата;x
+EVTDESCkingsguard.77;Ваш[From.GetEndA] [From.GetRootRelation] [From.GetFirstName], как член королевской семьи, долж[From.GetNaEn] быть под защитой рыцаря Королевской Гвардии. Кого же нам отправить в замок [From.Capital.GetName] для исполнения своего долга?;x
+EVTOPTAkingsguard.77;[loan_candidate_1.GetTitledFirstName] [loan_candidate_1.GetOnlyDynastyName] отправится;x
+EVTOPTBkingsguard.77;[loan_candidate_2.GetTitledFirstName] [loan_candidate_2.GetOnlyDynastyName] защитит;x
+EVTOPTCkingsguard.77;[loan_candidate_3.GetTitledFirstName] [loan_candidate_3.GetOnlyDynastyName] будет служить;x
+EVTOPTDkingsguard.77;Королевская гвардия защищает своего господина;x
+opinion_withheld_kingsguard;Под охраной Королевской Гвардии;x
+EVTOPTEkingsguard.77;У меня вообще есть королевская гвардия?;x
+EVTDESCkingsguard.78;[Root.GetTitle] [Root.GetFirstName], как член Королевской семьи [From.GetOnlyDynastyName], вы имеете право на защиту Королейской Гвардии. Таким образом, гвардеец будет отправлен в замок [Root.Capital.GetName] для вашей охраны.\n\n Так приказал[From.GetEndA] [From.GetFirstName] из Дома [From.GetOnlyDynastyName], [From.GetTitle] земли [From.PrimaryTitle.GetName];x
+EVTDESCkingsguard.79;Как член Королевской семьи [From.GetOnlyDynastyName], вы имеете традиционное право на защиту Королевской Гвардии. [From.GetTitle] [From.GetFirstName], несмотря на традиции, решил[From.GetEndA] оставить Белых Плащей около себя, оставив вас без защиты.;x
+EVTOPTAkingsguard.79;Я возмущен[GetEndA]!;x
+TOOLTIPKGVIGILANCE;[This.GetTitledFirstNameNoRegnal] владел валирийским мечом Бдительность, семейной реликвией Дома Хайтауэр;x
+TOOLTIPKGORPHANMAKER;[This.GetTitledFirstNameNoRegnal] владел валирийским мечом Делатель Сирот, семейной реликвией Дома Рокстон;x
+EVTOPTkingsguard.19MORE;Показать больше;x
+d_kingsguard_dummy;Королевская гвардия;x
+EVTDESCkingsguard.19;Нужен новый Лорд-Командующий Королевской гвардии. Как правило это самый старший и способный из семи белых плащей. Кто именно будет командовать?;x
+EVTOPTAkingsguard.19;[kg_lc_candidate_1.GetTitledFirstNameWithDynastyNoRegnal], шаг вперед!;x
+EVTOPTAkingsguard.19B;[kg_lc_candidate_1.GetTitledFirstNameWithNick], шаг вперед!;x
+EVTOPTBkingsguard.19;[kg_lc_candidate_2.GetTitledFirstNameWithDynastyNoRegnal], шаг вперед!;x
+EVTOPTBkingsguard.19B;[kg_lc_candidate_2.GetTitledFirstNameWithNick], шаг вперед!;x
+EVTOPTCkingsguard.19;[kg_lc_candidate_3.GetTitledFirstNameWithDynastyNoRegnal],  шаг вперед!;x
+EVTOPTCkingsguard.19B;[kg_lc_candidate_3.GetTitledFirstNameWithNick], шаг вперед!;x
+EVTOPTDkingsguard.19;[kg_lc_candidate_4.GetTitledFirstNameWithDynastyNoRegnal],  шаг вперед!;x
+EVTOPTDkingsguard.19B;[kg_lc_candidate_4.GetTitledFirstNameWithNick], шаг вперед!;x
+EVTOPTEkingsguard.19;[kg_lc_candidate_5.GetTitledFirstNameWithDynastyNoRegnal], шаг вперед!;x
+EVTOPTEkingsguard.19B;[kg_lc_candidate_5.GetTitledFirstNameWithNick], шаг вперед!;x
+EVTOPTFkingsguard.19;[kg_lc_candidate_6.GetTitledFirstNameWithDynastyNoRegnal], шаг вперед!;x
+EVTOPTFkingsguard.19B;[kg_lc_candidate_6.GetTitledFirstNameWithNick], шаг вперед!;x
+EVTOPTGkingsguard.19;[kg_lc_candidate_7.GetTitledFirstNameWithDynastyNoRegnal], шаг вперед!;x
+EVTOPTGkingsguard.19B;[kg_lc_candidate_7.GetTitledFirstNameWithNick], шаг вперед!;x
+appointed_female_kingsguard;Назначена женщина в Королевскую гвардию!;x
+EVTDESCkingsguard.10B;[From.GetTitledFirstNameWithDynasty] смотрит на вас с презрением. 'Вы должно быть шутите, - говорит [From.GetSheHe], - Мне никогда не нравились такие как ты.';x
+EVTDESCkingsguard.10BREGENT;[From.GetTitledFirstNameWithDynasty] смотрит на вас с презрением. '[Root.TopLiege.GetTitle], Вы должно быть шутите, - говорит [From.GetSheHe], - Я никогда не стану охранять Вас, пока держите власть в своих руках.';x
+EVTDESCkingsguard.10C;[From.GetTitledFirstNameWithDynasty] выглядит жалко. 'Прошу прощения, [Root.PrimaryTitle.GetFOA], - говорит [From.GetSheHe], - на мое место вы найдете кого-то более достойного.';x
+EVTDESCkingsguard.10D;[From.GetTitledFirstNameWithDynasty] на коленях. '[Root.PrimaryTitle.GetFOA], я ценю ваше предложение, - говорит [From.GetSheHe], - однако, для леди неприлично состоять в Королевской Гвардии.';x
+EVTDESCkingsguard.10E;[From.GetTitledFirstNameWithDynasty] выглядит так, словно [From.GetSheHe] скоро засмеется. - "Я уверен, состоять в Вестеросской гвардии - большая честь для любого вашего рода, - говорит [From.GetSheHe], - но я представитель [From.GetCultureAdj]ой культуры, и для таких как я в ней нет места.";x
+VTDESCkingsguard.10EREGENT;[From.GetTitledFirstNameWithDynasty] выглядит так, словно [From.GetSheHe] скоро засмеется. - "Я уверен, что состоять в Вестеросской гвардии - большая честь для любого вашего рода, - говорит [From.GetSheHe], - но я представитель [From.GetCultureAdj]ой культуры, и в охране правителя нет места для таких как я.";x
+EVTDESCkingsguard.10F;[From.GetTitledFirstNameWithDynasty] осторожно подходит к вам. 'Прошу прощения, [Root.PrimaryTitle.GetFOA], - говорит [From.GetSheHe] , - Из за болезни я с трудом передвигаюсь, не говоря уже о вашей защите.';x
+EVTDESCkingsguard.10FREGENT;[From.GetTitledFirstNameWithDynasty] осторожно подходит к вам. 'Прошу прощения, [Root.PrimaryTitle.GetFOA], - говорит [From.GetSheHe] , - Из за болезни я с трудом передвигаюсь, не говоря уже о защите правителя.';x
+EVTDESCkingsguard.10G;[From.GetTitledFirstNameWithDynasty] обеспокоен когда получает сообщение. 'Спасибо за оказанную честь, [Root.PrimaryTitle.GetFOA], - говорит [From.GetSheHe], - однако не смогу отказаться от женщин на всю жизнь.';x
+TOOLTIPKGDRAGONSLAYER;[This.GetFirstName] совершил самый героический поступок - убил дракона, заслужив этим широкую известность во всем королевстве;x
+TOOLTIPKGTRUTH;Сир [This.GetFirstName] владел валирийским мечом Истина, семейной реликвией Дома Рогаров.;x
+TOOLTIPKGLAMENTATION;Сир [This.GetFirstName] владел валирийским мечом Плач, семейной реликвией Дома Ройсов.;x
+TOOLTIPKGPOISON;Сир [This.GetFirstName] владел валирийским мечом Яд, семейной реликвией Дома Вунатисов.;x
+opinion_refused_kingsguard;Отказался быть Королевским Гвардейцем;x
+KG_duke;Лорд-Командующий;x
+KG_duke_foa;Милорд;x
+KG_duke_female;Леди-Командующая;x
+KG_duke_foa_female;Миледи;x
+EVTDESCkingsguard.63;Башня Белый Меч Красного Замка содержит покои Королевской гвардии. Это стройное сооружение из четырех этажей, встроенных в угол стены замка с видом на залив. Круглая белая комната, известная как Круглый Зал, состоит из побеленных каменных стен, на котрых развешены белые шерстяные гобелены, на первом этаже стоит большой белый стол с семью стульями, за которым собираются собрания. Самый верхний этаж отдан под палаты Лорда-Командующего.;x
+EVTOPTAkingsguard.63;Лорд-Командующий должен занимать эту башню;x
+EVTOPTBkingsguard.63;Королевская Гвардия дает присягу Железному Трону;x
+EVTDESCkingsguard.64;Королевская Гвардия не должна иметь земель;x
+EVTDESCkingsguard.10H;[From.GetTitledFirstNameWithDynasty] встает на колени. '[Root.PrimaryTitle.GetFOA], я очень ценю предложение, - говорит [From.GetSheHe], - но я не смогу исполнить своих амбиций, если принесу присягу и буду служить как рыцарь Королевской гвардии'.;x
+opinion_added_kin_to_kingsguard_pos;Принял[_] моего родственника в Королевскую гвардию;x
+opinion_added_kin_to_kingsguard_neg;Принял[_] моего родственника в Королевскую гвардию;x
+appointed_non_faith_kingsguard;Назначил[_] неверного в Королевскую гвардию;x
+appointed_foreign_kingsguard;Назначил[_] чужестранца в Королевскую гвардию;x
+appointed_lowborn_kingsguard;Назначил[_] низкородного в Королевскую гвардию;x
+TOOLTIPappointed_non_faith_kingsguard;Ваши вассалы §YВеры Семерых§! будут огорчены, узнав что §Y[From.Religion.GetName]§! назначен в Королевскую Гвардию\n;x
+TOOLTIPappointed_foreign_kingsguard;Ваши §Yродные и андальские§! вассалы будут огорчены, если в Королевскую Гвардию будет принят кто-то §Y[From.GetCultureAdj]ой§! крови\n;x
+TOOLTIPappointed_lowborn_kingsguard;Ваши вассалы могут огорчиться, узнав что §Yнизкородный§! назначен в Королевскую Гвардию\n;x
+EVTDESCkingsguard.10I;[From.GetTitledFirstNameWithDynasty] выглядит оскорбленным. 'Вы, должно быть, шутите, [Root.PrimaryTitle.GetFOA], - говорит [From.GetSheHe], - [From.GetOnlyDynastyName] никогда не будет приведен к присяге для защиты!';x
+TOOLTIPKGBLANK; ;x
+TOOLTIPKGDEATHREASON;[This.GetSheHeCap] [This.GetDeathReason] в возрасте [This.GetAgeYears].;x
+TOOLTIPestablish_kingsguardCHARACTER;Есть действующий кандидат в королевскую гвардию в государстве;x
+TOOLTIPestablish_kingsguardCIVILWAR;НЕ в состоянии войны;x
+TOOLTIPinteraction.85;[Root.GetTitledFirstNameWithDynasty] рекомендуется советом в качестве королевского гвардейца;x
+EVTDESCkingsguard.86;На собрании малого совета, [FromFromFrom.GetTitledFirstNameWithDynasty] рекомендовал[FromFromFrom.GetEndA], чтобы [FromFrom.GetTitledFirstNameWithDynasty] был принят в ряды Королевской гвардии.;x
+EVTOPTAkingsguard.86;Прекрасная идея, отправить приглашение;x
+EVTOPTBkingsguard.86;Я так не думаю.;x
+EVTDESCkingsguard.87;На собрании малого совета вы рекомендовали, чтобы [FromFromFrom.GetTitledFirstNameWithDynasty] был назначен в ряды Королевской гвардии. [From.GetTitledFirstNameNoRegnal] отклонил[From.GetEndA] ваше предложение.;x
+EVTOPTAkingsguard.87;Мое мнение должно быть более ценным!;x
+EVTDESCkingsguard.88;[FromFrom.GetTitledFirstNameNoRegnal] провел небольшое заседание совета для обсуждения вашего предложения, и было решено, что [From.GetTitledFirstNameWithDynasty] будет приглашен в Королевскую гвардию. [From.GetSheHeCap] должным образом принят и был приведен к присяге в качестве вашего нового телохранителя.;x
+EVTOPTAkingsguard.88;[From.GetSheHeCap] сделает прекрасное дополнение;x
+EVTDESCkingsguard.89;[FromFrom.GetTitledFirstNameNoRegnal] провел небольшое заседание совета для обсуждения вашего предложения, и было решено, что [From.GetTitledFirstNameWithDynasty] будет приглашен в Королевскую гвардию. Однако, [From.GetTitledFirstNameNoRegnal] отклонил[From.GetEndA] эту возможность.;x
+EVTOPTAkingsguard.89;Безрассудство!;x
+opinion_accepted_kingsguard_recommendation;Согласи[__лся] с рекомендацией в Королевскую гвардию;x
+opinion_rejected_kingsguard_recommendation;Отклонил[_] рекомендацию в Королевскую гвардию;x
+TOOLTIPKGSEAFOAM;Сир [This.GetFirstName] обладал валирийским мечом Морская пена, родовым клинком Дома Веларион;x
+EVTDESCkingsguard.95;Ваш [From.GetRootRelation], [From.GetTitledFirstNameWithDynasty], объявил о своем намерении добиваться чести получить место в Королевской гвардии. [From.GetSheHeCap] желает отказаться от брака, чтобы выполнить эту амбицию, и ищет вашего одобрения.;x
+EVTOPTAkingsguard.95;У вас есть мое согласие;x
+opinion_backed_KG_ambition;Поддержка амбиции Королевской гвардии;x
+EVTOPTBflavour_events.41;Нет, нет и нет, вы вступите в брак!;x
+opinion_rejected_KG_ambition;Отвергнуты амбиции Королевской гвардии;x
+EVTDESCkingsguard.96;Посланник прибыл в город [Root.Capital.GetName], по слову персонажа [From.GetTitledFirstNameWithDynastyNoRegnal]. [From.GetSheHeCap] сообщает, что помолвка между людьми, известными как [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] и [FROMs_betrothed.GetRootRelation] [FROMs_betrothed.GetTitledFirstNameWithDynastyNoRegnal] будет разорвана из-за того, что [FromFrom.GetTitledFirstNameNoRegnal] собирается вступать в Королевскую гвардию.;x
+EVTOPTAkingsguard.96;Это бесчестно!;x

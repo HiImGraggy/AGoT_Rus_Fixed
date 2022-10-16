@@ -1,1578 +1,1578 @@
-#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x;
-EVTDESCcadet.1;Как вы назовёте новый младший дом?;;;;;;;;;;;;;x;
-EVTOPTAcadet.1;Дом Уайтвульф;;;;;;;;;;;;;x;
-EVTOPTBcadet.1;Дом Голдфанг;;;;;;;;;;;;;x;
-EVTOPTCcadet.1;Дом Дрэдвульф;;;;;;;;;;;;;x;
-EVTOPTDcadet.1;Дом Винтерхолд;;;;;;;;;;;;;x;
-EVTOPTAcadet.2;Дом Редвирм;;;;;;;;;;;;;x;
-EVTOPTBcadet.2;Дом Трудрэйк;;;;;;;;;;;;;x;
-EVTOPTCcadet.2;Дом Файрблад;;;;;;;;;;;;;x;
-EVTOPTDcadet.2;Дом Голдфайр;;;;;;;;;;;;;x;
-EVTOPTAcadet.3;Дом Сильвермейн;;;;;;;;;;;;;x;
-EVTOPTBcadet.3;Дом Редклау;;;;;;;;;;;;;x;
-EVTOPTCcadet.3;Дом Роаринг;;;;;;;;;;;;;x;
-EVTOPTDcadet.3;Дом Лайонфорд;;;;;;;;;;;;;x;
-EVTOPTAcadet.4;Дом Дарксан;;;;;;;;;;;;;x;
-EVTOPTBcadet.4;Дом Санвайпер;;;;;;;;;;;;;x;
-EVTOPTCcadet.4;Дом Блэкеддер;;;;;;;;;;;;;x;
-EVTOPTDcadet.4;Дом Снейкспир;;;;;;;;;;;;;x;
-EVTOPTAcadet.5;Дом Санвайпер;;;;;;;;;;;;;x;
-EVTOPTBcadet.5;Дом Блэкеддер;;;;;;;;;;;;;x;
-EVTOPTCcadet.5;Дом Снейкспир;;;;;;;;;;;;;x;
-EVTOPTDcadet.5;Дом Стилтраут;;;;;;;;;;;;;x;
-EVTOPTAcadet.6;Дом Редвинг;;;;;;;;;;;;;x;
-EVTOPTBcadet.6;Дом Кестрел;;;;;;;;;;;;;x;
-EVTOPTCcadet.6;Дом Блюберд;;;;;;;;;;;;;x;
-EVTOPTDcadet.6;Дом Скайварден;;;;;;;;;;;;;x;
-EVTOPTAcadet.7;Дом Стегбёрн;;;;;;;;;;;;;x;
-EVTOPTBcadet.7;Дом Стормхарт;;;;;;;;;;;;;x;
-EVTOPTCcadet.7;Дом Дюрренд;;;;;;;;;;;;;x;
-EVTOPTDcadet.7;Дом Дир;;;;;;;;;;;;;x;
-EVTOPTAcadet.8;Дом Бладроуз;;;;;;;;;;;;;x;
-EVTOPTBcadet.8;Дом Блэкроуз;;;;;;;;;;;;;x;
-EVTOPTCcadet.8;Дом Смолроуз;;;;;;;;;;;;;x;
-EVTOPTDcadet.8;Дом Гринроуз;;;;;;;;;;;;;x;
-EVTOPTAcadet.9;Дом Сильверинк;;;;;;;;;;;;;x;
-EVTOPTBcadet.9;Дом Редджой;;;;;;;;;;;;;x;
-EVTOPTCcadet.9;Дом Айронкракен;;;;;;;;;;;;;x;
-EVTOPTDcadet.9;Дом Хардман;;;;;;;;;;;;;x;
-EVTOPTAcadet.13;Дом Твинчайлд;;;;;;;;;;;;;x;
-EVTOPTBcadet.13;Дом Голдкросс;;;;;;;;;;;;;x;
-EVTOPTCcadet.13;Дом Толбридж;;;;;;;;;;;;;x;
-EVTOPTDcadet.13;Дом Нортгейт;;;;;;;;;;;;;x;
-EVTDESCcadet.10;Связь вашей младшей ветви дома со старшей - крепка. Кровь людская - не водица.;;;;;;;;;;;;;;
-EVTOPTAcadet.10;Oк;;;;;;;;;;;;;x;
-cadet_bastard;Дать начало младшей ветви дома;;;;;;;;;;;;;x;
-cadet_bastard_desc;[Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal] станет главой новой династии.;;;;;;;;;;;;;x;
-EVTOPTAcadet.11;Дом с Севера;;;;;;;;;;;;;x;
-EVTOPTBcadet.11;Дом с Юга;;;;;;;;;;;;;x;
-EVTOPTCcadet.11;Дом с Запада;;;;;;;;;;;;;x;
-EVTOPTDcadet.11;Дом с Востока;;;;;;;;;;;;;x;
-legitimise_not_bastard_cadet;Признать младшую ветвь;;;;;;;;;;;;;x;
-legitimise_not_bastard_cadet;Одному из ваших родственников была дарована земля и право основать младшую ветвь вашего дома и править от своего имени. А если вдруг дому [From.GetOnlyDynastyName]  понадобится наследник - они будут первыми в очереди.;;;;;;;;;;;;;x;
-EVT_DESC_cadet_15;[Root.GetTitledFirstName], настоящим я дарую Вам честь, признав Ваш младший Дом [Root.GetOnlyDynastyName] полноправными и легитимными членами Дома [From.GetOnlyDynastyName]. При этом вы и ваша семья отныне признаны законными наследниками моего дома.\n\nВаш\n[From.GetTitledFirstNameoftheHouse],;;;;;;;;;;;;;x;
-EVT_OPTA_cadet_15;Мы едины!;;;;;;;;;;;;;x;
-TOOLTIPlegitimise_cadet;Все члены младшего Дома [Root.GetOnlyDynastyName] будут узаконены и станут полноправными членами Дома [From.GetOnlyDynastyName]\n;;;;;;;;;;;;;x;
-TOOLTIPlegitimise_cadetB;Все члены младшего Дома [Root.GetOnlyDynastyName] будут узаконены и станут полноправными членами Дома [This.GetOnlyDynastyName]\n;;;;;;;;;;;;;x;
-legitimise_cadet;Признать младший Дом;;;;;;;;;;;;;x;
-legitimise_cadet_desc; ;;;;;;;;;;;;;x;
-legitimise_cadet_named;Признать Дом [Root.GetOnlyDynastyName];;;;;;;;;;;;;x;
-TOOLTIPlegitimise_cadetA;[From.GetTitledFirstName] - последний живой член Дома [From.GetOnlyDynastyName], который может наследовать титулы\n;;;;;;;;;;;;;x;
-EVT_DESC_cadet_17;Всем добрым лордам королевства, настоящим я дарую своим родственникам честь, признав младший Дом [legitmised_cadet.GetOnlyDynastyName] полноправными и легитимными членами Дома [cadet_legitimiser.GetOnlyDynastyName]. При этом, [legitmised_cadet.GetSheHe] и [legitmised_cadet.GetHerHis] родственники признаны законными наследниками моего Дома .\n\nПодпись\n[cadet_legitimiser.GetTitledFirstNameoftheHouse];;;;;;;;;;;;;x;
-EVTOPTAcadet.20;Дом Стейн;;;;;;;;;;;;;x;
-EVTOPTBcadet.20;Дом Брэдшоу;;;;;;;;;;;;;x;
-EVTOPTCcadet.20;Дом Уилков;;;;;;;;;;;;;x;
-EVTOPTAcadet.21;Дом Телволл;;;;;;;;;;;;;x;
-EVTOPTBcadet.21;Дом Стопфорд;;;;;;;;;;;;;x;
-EVTOPTCcadet.21;Дом Баиль;;;;;;;;;;;;;x;
-EVTOPTAcadet.22;Дом Сейбл;;;;;;;;;;;;;x;
-EVTOPTBcadet.22;Дом Бринкдейл;;;;;;;;;;;;;x;
-EVTOPTCcadet.22;Дом Моргенстер;;;;;;;;;;;;;x;
-EVTOPTAcadet.23;Дом Эллестон;;;;;;;;;;;;;x;
-EVTOPTBcadet.23;Дом Линдби;;;;;;;;;;;;;x;
-EVTOPTCcadet.23;Дом Шейу;;;;;;;;;;;;;x;
-EVTOPTAcadet.24;Дом Дромгар;;;;;;;;;;;;;x;
-EVTOPTBcadet.24;Ком Келидрион;;;;;;;;;;;;;x;
-EVTOPTCcadet.24;Дом Эмбартис;;;;;;;;;;;;;x;
-EVTOPTAcadet.25;Дом Синдориен;;;;;;;;;;;;;x;
-EVTOPTBcadet.25;Дом хардшелл;;;;;;;;;;;;;x;
-EVTOPTCcadet.25;Дом Анготис;;;;;;;;;;;;;x;
-EVTOPTAcadet.26;Дом Элдрикпорт;;;;;;;;;;;;;x;
-EVTOPTBcadet.26;Дом Итон;;;;;;;;;;;;;x;
-EVTOPTCcadet.26;Дом Гойшам;;;;;;;;;;;;;x;
-EVTOPTAcadet.27;Дом Уайтстафф;;;;;;;;;;;;;x;
-EVTOPTBcadet.27;Дом Рейвенскар;;;;;;;;;;;;;x;
-EVTOPTCcadet.27;Дом Брикбоу;;;;;;;;;;;;;x;
-EVTOPTAcadet.28;Дом Рендл;;;;;;;;;;;;;x;
-EVTOPTBcadet.28;Дом Кнолл;;;;;;;;;;;;;x;
-EVTOPTCcadet.28;Дом Хенстон;;;;;;;;;;;;;x;
-EVTOPTAcadet.29;Дом Хедкастл;;;;;;;;;;;;;x;
-EVTOPTBcadet.29;Дом Эрневолд;;;;;;;;;;;;;x;
-EVTOPTCcadet.29;Дом Алгармонт;;;;;;;;;;;;;x;
-EVTOPTAcadet.30;Дом Юнг;;;;;;;;;;;;;;x
-EVTOPTBcadet.30;Дом Беннерс;;;;;;;;;;;;;x;
-EVTOPTCcadet.30;Дом Майденфилд;;;;;;;;;;;;;x;
-EVTOPTAcadet.31;Дом Лумбард;;;;;;;;;;;;;x;
-EVTOPTBcadet.31;Дом Горленд;;;;;;;;;;;;;x;
-EVTOPTCcadet.31;Дом Веаль;;;;;;;;;;;;;x;
-EVTOPTAcadet.32;Дом Стоунхелм;;;;;;;;;;;;;x;
-EVTOPTBcadet.32;Дом Олортон;;;;;;;;;;;;;x;
-EVTOPTCcadet.32;Дом Мечерсфорд;;;;;;;;;;;;;x;
-EVTOPTAcadet.33;Дом Мербури;;;;;;;;;;;;;x;
-EVTOPTBcadet.33;Дом Гейтс;;;;;;;;;;;;;x;
-EVTOPTCcadet.33;Дом Паллатер;;;;;;;;;;;;;x;
-EVTOPTAcadet.34;Дом Тезерстоун;;;;;;;;;;;;;x;
-EVTOPTBcadet.34;Дом Рамбольд;;;;;;;;;;;;;x;
-EVTOPTCcadet.34;Дом Дампорт;;;;;;;;;;;;;x;
-EVTOPTAcadet.35;Дом Буллен;;;;;;;;;;;;;x;
-EVTOPTBcadet.35;Дом Вэйерр;;;;;;;;;;;;;x;
-EVTOPTCcadet.35;Дом Кемберлинг;;;;;;;;;;;;;x;
-EVTOPTAcadet.36;Дом Эестинг;;;;;;;;;;;;;x;
-EVTOPTBcadet.36;Дом Коррунд;;;;;;;;;;;;;x;
-EVTOPTCcadet.36;Дом Гарриот;;;;;;;;;;;;;x;
-EVTOPTAcadet.37;Дом Мотелл;;;;;;;;;;;;;x;
-EVTOPTBcadet.37;Дом Вейетон;;;;;;;;;;;;;x;
-EVTOPTCcadet.37;Дом Салбая;;;;;;;;;;;;;x;
-EVTOPTAcadet.38;Дом Касанмар;;;;;;;;;;;;;x;
-EVTOPTBcadet.38;Дом Гарглесс;;;;;;;;;;;;;x;
-EVTOPTCcadet.38;Дом Анвил;;;;;;;;;;;;;x;
-EVTOPTAcadet.39;Дом Серенмонт;;;;;;;;;;;;;x;
-EVTOPTBcadet.39;Дом Торендейн;;;;;;;;;;;;;x;
-EVTOPTCcadet.39;Дом Пельстоун;;;;;;;;;;;;;x;
-EVTOPTAcadet.40;Дом Лисленд;;;;;;;;;;;;;x;
-EVTOPTBcadet.40;Дом Боуйер;;;;;;;;;;;;;x;
-EVTOPTCcadet.40;Дом Спайрес;;;;;;;;;;;;;x;
-EVTOPTAcadet.41;Дом Карсон;;;;;;;;;;;;;x;
-EVTOPTBcadet.41;Дом Медлар;;;;;;;;;;;;;x;
-EVTOPTCcadet.41;Дом Айронквилл;;;;;;;;;;;;;x;
-EVTOPTAcadet.42;Дом Аломар;;;;;;;;;;;;;x;
-EVTOPTBcadet.42;Дом Сантарион;;;;;;;;;;;;;x;
-EVTOPTCcadet.42;Дом Бримстоун;;;;;;;;;;;;;x;
-EVTOPTAcadet.43;Дом Глендор;;;;;;;;;;;;;x;
-EVTOPTBcadet.43;Дом Аркерт;;;;;;;;;;;;;x;
-EVTOPTCcadet.43;Дом Блэкгейт;;;;;;;;;;;;;x;
-EVTOPTAcadet.44;Дом Рейсейл;;;;;;;;;;;;;x;
-EVTOPTBcadet.44;Дом Хакленд;;;;;;;;;;;;;x;
-EVTOPTCcadet.44;Дом Фримен;;;;;;;;;;;;;x;
-EVTOPTAcadet.45;Дом Ширклифф;;;;;;;;;;;;;x;
-EVTOPTBcadet.45;Дом Ардвей;;;;;;;;;;;;;x;
-EVTOPTCcadet.45;Дом Селтир;;;;;;;;;;;;;x;
-EVTOPTAcadet.46;Дом Стронгроу;;;;;;;;;;;;;x;
-EVTOPTBcadet.46;Дом Бейлкип;;;;;;;;;;;;;x;
-EVTOPTCcadet.46;Дом Тирск;;;;;;;;;;;;;x;
-EVTOPTAcadet.47;Дом Айссвинд;;;;;;;;;;;;;x;
-EVTOPTBcadet.47;Дом Крульси;;;;;;;;;;;;;x;
-EVTOPTCcadet.47;Дом Вейлнр;;;;;;;;;;;;;x;
-EVTOPTAcadet.48;Дом Делвинг;;;;;;;;;;;;;x;
-EVTOPTBcadet.48;Дом Остервик;;;;;;;;;;;;;x;
-EVTOPTCcadet.48;Дом Тендейл;;;;;;;;;;;;;x;
-EVTOPTAcadet.49;Дом Нейрест;;;;;;;;;;;;;x;
-EVTOPTBcadet.49;Дом Нетермур;;;;;;;;;;;;;x;
-EVTOPTCcadet.49;Дом Фастольф;;;;;;;;;;;;;x;
-EVTOPTAcadet.50;Дом Тенкред;;;;;;;;;;;;;x;
-EVTOPTBcadet.50;Дом Кадмонт;;;;;;;;;;;;;x;
-EVTOPTCcadet.50;Дом Гуль;;;;;;;;;;;;;x;
-EVTOPTAcadet.51;Дом Хоуквуд;;;;;;;;;;;;;x;
-EVTOPTBcadet.51;Дом Лейн;;;;;;;;;;;;;x;
-EVTOPTCcadet.51;Дом Рутленд;;;;;;;;;;;;;x;
-EVTOPTAcadet.52;Дом Вейрстоун;;;;;;;;;;;;;;
-EVTOPTBcadet.52;Дом Кескельд;;;;;;;;;;;;;x;
-EVTOPTCcadet.52;Дом Брейсс;;;;;;;;;;;;;x;
-EVTOPTAcadet.53;Дом Фартинг;;;;;;;;;;;;;x;
-EVTOPTBcadet.53;Дом Катрайт;;;;;;;;;;;;;x;
-EVTOPTCcadet.53;Дом Редброук;;;;;;;;;;;;;x;
-EVTOPTAcadet.54;Дом Кендлстон;;;;;;;;;;;;;x;
-EVTOPTBcadet.54;Дом Кеннок;;;;;;;;;;;;;x;
-EVTOPTCcadet.54;Дом Таллер;;;;;;;;;;;;;x;
-EVTOPTAcadet.55;Дом Изли;;;;;;;;;;;;;x;
-EVTOPTBcadet.55;Дом Челк;;;;;;;;;;;;;x;
-EVTOPTCcadet.55;Дом Лайлбен;;;;;;;;;;;;;x;
-EVTOPTAcadet.56;Дом Галвейн;;;;;;;;;;;;;x;
-EVTOPTBcadet.56;Дом Бругс;;;;;;;;;;;;;x;
-EVTOPTCcadet.56;Дом Монггейвин;;;;;;;;;;;;;x;
-EVTOPTAcadet.57;Дом Скиннер;;;;;;;;;;;;;x;
-EVTOPTBcadet.57;Дом Куллинг;;;;;;;;;;;;;x;
-EVTOPTCcadet.57;Дом Уэйлбек;;;;;;;;;;;;;x;
-EVTOPTAcadet.58;Дом Барроус;;;;;;;;;;;;;x;
-EVTOPTBcadet.58;Дом Танетт;;;;;;;;;;;;;x;
-EVTOPTCcadet.58;Дом Кроунес;;;;;;;;;;;;;x;
-EVTOPTAcadet.59;Дом Глен;;;;;;;;;;;;;x;
-EVTOPTBcadet.59;Дом Свод;;;;;;;;;;;;;x;
-EVTOPTCcadet.59;Дом Шейл;;;;;;;;;;;;;x;
-EVTOPTAcadet.60;Дом Карслби;;;;;;;;;;;;;x;
-EVTOPTBcadet.60;Дом Бенвуд;;;;;;;;;;;;;x;
-EVTOPTCcadet.60;Дом Грейклифф;;;;;;;;;;;;;x;
-EVTOPTAcadet.61;Дом Роунтон;;;;;;;;;;;;;x;
-EVTOPTBcadet.61;Дом Уайз;;;;;;;;;;;;;x;
-EVTOPTCcadet.61;Дом Хейл;;;;;;;;;;;;;x;
-EVTOPTAcadet.62;Дом Хьюм;;;;;;;;;;;;;x;
-EVTOPTBcadet.62;Дом Флегг;;;;;;;;;;;;;x;
-EVTOPTCcadet.62;Дом Барлоу;;;;;;;;;;;;;x;
-EVTOPTAcadet.63;Дом Фит;;;;;;;;;;;;;x;
-EVTOPTBcadet.63;Дом Уэтт;;;;;;;;;;;;;x;
-EVTOPTCcadet.63;Дом Дроунленд;;;;;;;;;;;;;x;
-EVTOPTAcadet.64;Дом Ринн;;;;;;;;;;;;;x;
-EVTOPTBcadet.64;Дом Тротт;;;;;;;;;;;;;x;
-EVTOPTCcadet.64;Дом Марсфорд;;;;;;;;;;;;;x;
-EVTOPTAcadet.65;Дом Беллоус;;;;;;;;;;;;;x;
-EVTOPTBcadet.65;Дом Хон;;;;;;;;;;;;;x;
-EVTOPTCcadet.65;Дом Эйск;;;;;;;;;;;;;x;
-EVTOPTAcadet.66;Дом Брейсвелл;;;;;;;;;;;;;x;
-EVTOPTBcadet.66;Дом Холт;;;;;;;;;;;;;x;
-EVTOPTCcadet.66;Дом Вард;;;;;;;;;;;;;x;
-EVTOPTAcadet.67;Дом Эркин;;;;;;;;;;;;;x;
-EVTOPTBcadet.67;Дом Джетт;;;;;;;;;;;;;x;
-EVTOPTCcadet.67;Дом Мейолл;;;;;;;;;;;;;x;
-EVTOPTAcadet.68;Дом Амблтон;;;;;;;;;;;;;x;
-EVTOPTBcadet.68;Дом Тенфилд;;;;;;;;;;;;;x;
-EVTOPTCcadet.68;Дом Рэби;;;;;;;;;;;;;x;
-EVTOPTAcadet.69;Дом Уэйк;;;;;;;;;;;;;x;
-EVTOPTBcadet.69;Дом Стоунвелл;;;;;;;;;;;;;x;
-EVTOPTCcadet.69;Дом Фламбард;;;;;;;;;;;;;x;
-EVTOPTAcadet.70;Дом Сламбетон;;;;;;;;;;;;;x;
-EVTOPTBcadet.70;Дом Наттефилд;;;;;;;;;;;;;x;
-EVTOPTCcadet.70;Дом Гринэйс;;;;;;;;;;;;;x;
-EVTOPTAcadet.71;Дом Уоринхам;;;;;;;;;;;;;x;
-EVTOPTBcadet.71;Дом Эктон;;;;;;;;;;;;;x;
-EVTOPTCcadet.71;Дом Бротмот;;;;;;;;;;;;;x;
-EVTOPTAcadet.72;Дом Грон;;;;;;;;;;;;;x;
-EVTOPTBcadet.72;Дом Гормонт;;;;;;;;;;;;;x;
-EVTOPTCcadet.72;Дом Старпайк;;;;;;;;;;;;;x;
-EVTOPTAcadet.73;Дом Стронвайн;;;;;;;;;;;;;x;
-EVTOPTBcadet.73;Дом Винтнер;;;;;;;;;;;;;x;
-EVTOPTCcadet.73;Дом Райпвелл;;;;;;;;;;;;;x;
-EVTOPTAcadet.74;Дом Тэдбюри;;;;;;;;;;;;;x;
-EVTOPTBcadet.74;Дом Корри;;;;;;;;;;;;;x;
-EVTOPTCcadet.74;Дом Пойнтон;;;;;;;;;;;;;x;
-EVTOPTAcadet.75;Дом Хонби;;;;;;;;;;;;;x;
-EVTOPTBcadet.75;Дом Иллвик;;;;;;;;;;;;;x;
-EVTOPTCcadet.75;Дом Редхет;;;;;;;;;;;;;x;
-EVTOPTAcadet.76;Дом Бримсли;;;;;;;;;;;;;x;
-EVTOPTBcadet.76;Дом Кетерби;;;;;;;;;;;;;x;
-EVTOPTCcadet.76;Дом Трепп;;;;;;;;;;;;;x;
-EVTOPTAcadet.77;Дом Бри;;;;;;;;;;;;;x;
-EVTOPTBcadet.77;Дом Олдуотер;;;;;;;;;;;;;x;
-EVTOPTCcadet.77;Дом Нокфорд;;;;;;;;;;;;;x;
-EVTOPTAcadet.78;Дом Сильверкот;;;;;;;;;;;;;x;
-EVTOPTBcadet.78;Дом Андервуд;;;;;;;;;;;;;x;
-EVTOPTCcadet.78;Дом Вернон;;;;;;;;;;;;;x;
-EVTOPTAcadet.79;Дом Бердсли;;;;;;;;;;;;;x;
-EVTOPTBcadet.79;Дом Эрдхилл;;;;;;;;;;;;;x;
-EVTOPTCcadet.79;Дом Холгрив;;;;;;;;;;;;;x;
-EVTOPTAcadet.80;Дом Флетчфилд;;;;;;;;;;;;;x;
-EVTOPTBcadet.80;Дом Ньюхолл;;;;;;;;;;;;;x;
-EVTOPTCcadet.80;Дом Доубридж;;;;;;;;;;;;;x;
-EVTOPTAcadet.81;Дом Виверли;;;;;;;;;;;;;x;
-EVTOPTBcadet.81;Дом Хоув;;;;;;;;;;;;;x;
-EVTOPTCcadet.81;Дом Лонгфелл;;;;;;;;;;;;;x;
-EVTOPTAcadet.82;Дом Глейвстон;;;;;;;;;;;;;x;
-EVTOPTBcadet.82;Дом Мойл;;;;;;;;;;;;;x;
-EVTOPTCcadet.82;Дом Одеррик;;;;;;;;;;;;;x;
-EVTOPTAcadet.83;Дом Девентри;;;;;;;;;;;;;x;
-EVTOPTBcadet.83;Дом Нордвик;;;;;;;;;;;;;x;
-EVTOPTCcadet.83;Дом Рив;;;;;;;;;;;;;x;
-EVTOPTAcadet.84;Дом Баджер;;;;;;;;;;;;;x;
-EVTOPTBcadet.84;Дом Лайринхем;;;;;;;;;;;;;x;
-EVTOPTCcadet.84;Дом Урс;;;;;;;;;;;;;x;
-EVTOPTAcadet.85;Дом Орресби;;;;;;;;;;;;;x;
-EVTOPTBcadet.85;Дом Грейнор;;;;;;;;;;;;;x;
-EVTOPTCcadet.85;Дом Руссард;;;;;;;;;;;;;x;
-EVTOPTAcadet.86;Дом Питт;;;;;;;;;;;;;x;
-EVTOPTBcadet.86;Дом Квинсмарк;;;;;;;;;;;;;x;
-EVTOPTCcadet.86;Дом Сплинтервуд;;;;;;;;;;;;;x;
-EVTOPTAcadet.87;Дом Аргенмонт;;;;;;;;;;;;;x;
-EVTOPTBcadet.87;Дом Роч;;;;;;;;;;;;;x;
-EVTOPTCcadet.87;Дом Пиквилд;;;;;;;;;;;;;x;
-EVTOPTAcadet.88;Дом Коур;;;;;;;;;;;;;x;
-EVTOPTBcadet.88;Дом Эстли;;;;;;;;;;;;;x;
-EVTOPTCcadet.88;Дом Поллард;;;;;;;;;;;;;x;
-EVTOPTAcadet.89;Дом Эмбертон;;;;;;;;;;;;;x;
-EVTOPTBcadet.89;Дом Хоармонт;;;;;;;;;;;;;x;
-EVTOPTCcadet.89;Дом Ашенспур;;;;;;;;;;;;;x;
-EVTOPTAcadet.90;Дом Нелсби;;;;;;;;;;;;;x;
-EVTOPTBcadet.90;Дом Аудли;;;;;;;;;;;;;x;
-EVTOPTCcadet.90;Дом Идмер;;;;;;;;;;;;;x;
-EVTOPTAcadet.91;Дом Алтон;;;;;;;;;;;;;x;
-EVTOPTBcadet.91;Дом Кесселриг;;;;;;;;;;;;;x;
-EVTOPTCcadet.91;Дом Лонншид;;;;;;;;;;;;;x;
-EVTOPTAcadet.92;Дом Майденхем;;;;;;;;;;;;;x;
-EVTOPTBcadet.92;Дом Холхем;;;;;;;;;;;;;x;
-EVTOPTCcadet.92;Дом Йелд;;;;;;;;;;;;;x;
-EVTOPTAcadet.93;Дом Алеструм;;;;;;;;;;;;;x;
-EVTOPTBcadet.93;Дом Данмилл;;;;;;;;;;;;;x;
-EVTOPTCcadet.93;Дом Монткарр;;;;;;;;;;;;;x;
-EVTOPTAcadet.94;Дом Нестле;;;;;;;;;;;;;x;
-EVTOPTBcadet.94;Дом Стил;;;;;;;;;;;;;x;
-EVTOPTCcadet.94;Дом Дересби;;;;;;;;;;;;;x;
-EVTOPTAcadet.95;Дом Брюстон;;;;;;;;;;;;;x;
-EVTOPTBcadet.95;Дом Файн;;;;;;;;;;;;;x;
-EVTOPTCcadet.95;Дом Меллор;;;;;;;;;;;;;x;
-GetCadetHouseName_A;[This.GetCadetToken_Prefix][This.GetCadetToken_Suffix];;;;;;;;;;;;;x
-GetCadetHouseName_B;[This.GetCadetToken_Prefix][cadet_parent.GetHouseSymbol];;;;;;;;;;;;;x
-GetHouseSymbol_Acorn;экон;;;;;;;;;;;;;x
-GetHouseSymbol_Adder;аддер;;;;;;;;;;;;;x
-GetHouseSymbol_Anchor;энхор;;;;;;;;;;;;;x
-GetHouseSymbol_Ant;энт;;;;;;;;;;;;;x
-GetHouseSymbol_Antler;антлер;;;;;;;;;;;;;x
-GetHouseSymbol_Apple;эппл;;;;;;;;;;;;;x
-GetHouseSymbol_Arrow;эрроу;;;;;;;;;;;;;x
-GetHouseSymbol_Axe;экс;;;;;;;;;;;;;x
-GetHouseSymbol_Badger;баджер;;;;;;;;;;;;;x
-GetHouseSymbol_Barrel;баррель;;;;;;;;;;;;;x
-GetHouseSymbol_Bat;бэт;;;;;;;;;;;;;x
-GetHouseSymbol_Bear;бир;;;;;;;;;;;;;x
-GetHouseSymbol_Bee;би;;;;;;;;;;;;;x
-GetHouseSymbol_Beetle;битл;;;;;;;;;;;;;x
-GetHouseSymbol_Bell;белл;;;;;;;;;;;;;x
-GetHouseSymbol_Berry;берри;;;;;;;;;;;;;x
-GetHouseSymbol_Bird;бёд;;;;;;;;;;;;;x
-GetHouseSymbol_Boar;боар;;;;;;;;;;;;;x
-GetHouseSymbol_Bolt;болт;;;;;;;;;;;;;x
-GetHouseSymbol_Bone;боун;;;;;;;;;;;;;x
-GetHouseSymbol_Book;бук;;;;;;;;;;;;;x
-GetHouseSymbol_Boot;буи;;;;;;;;;;;;;x
-GetHouseSymbol_Bow;боу;;;;;;;;;;;;;x
-GetHouseSymbol_Bridge;бридж;;;;;;;;;;;;;x
-GetHouseSymbol_Bronze;бронз;;;;;;;;;;;;;x
-GetHouseSymbol_Brook;брук;;;;;;;;;;;;;x
-GetHouseSymbol_Bucket;букет;;;;;;;;;;;;;x
-GetHouseSymbol_Buckle;бакл;;;;;;;;;;;;;x
-GetHouseSymbol_Bull;булл;;;;;;;;;;;;;x
-GetHouseSymbol_Burn;бён;;;;;;;;;;;;;x
-GetHouseSymbol_Bush;буш;;;;;;;;;;;;;x
-GetHouseSymbol_Butterfly;баттерфлай;;;;;;;;;;;;;x
-GetHouseSymbol_Candle;кэндл;;;;;;;;;;;;;x
-GetHouseSymbol_Castle;кастл;;;;;;;;;;;;;x
-GetHouseSymbol_Cat;кэт;;;;;;;;;;;;;x
-GetHouseSymbol_Centaur;кентавр;;;;;;;;;;;;;x
-GetHouseSymbol_Codd;кодд;;;;;;;;;;;;;x
-GetHouseSymbol_Coin;койн;;;;;;;;;;;;;x
-GetHouseSymbol_Crab;крэб;;;;;;;;;;;;;x
-GetHouseSymbol_Crane;крейн;;;;;;;;;;;;;x
-GetHouseSymbol_Cross;кросс;;;;;;;;;;;;;x
-GetHouseSymbol_Crow;кроу;;;;;;;;;;;;;x
-GetHouseSymbol_Crown;кроун;;;;;;;;;;;;;x
-GetHouseSymbol_Dagger;даггер;;;;;;;;;;;;;x
-GetHouseSymbol_Deer;дир;;;;;;;;;;;;;x
-GetHouseSymbol_Dolphin;дольфин;;;;;;;;;;;;;x
-GetHouseSymbol_Dragon;дрэгон;;;;;;;;;;;;;x
-GetHouseSymbol_Drift;дрифт;;;;;;;;;;;;;x
-GetHouseSymbol_Eagle;игл;;;;;;;;;;;;;x
-GetHouseSymbol_Falcon;фалкон;;;;;;;;;;;;;x
-GetHouseSymbol_Fawn;фавн;;;;;;;;;;;;;x
-GetHouseSymbol_Feather;фезер;;;;;;;;;;;;;x
-GetHouseSymbol_Ferret;феррет;;;;;;;;;;;;;x
-GetHouseSymbol_Fish;фиш;;;;;;;;;;;;;x
-GetHouseSymbol_Fist;фист;;;;;;;;;;;;;x
-GetHouseSymbol_Flagon;флэгон;;;;;;;;;;;;;x
-GetHouseSymbol_Flail;флейль;;;;;;;;;;;;;x
-GetHouseSymbol_Flame;флейм;;;;;;;;;;;;;x
-GetHouseSymbol_Flower;флауэр;;;;;;;;;;;;;x
-GetHouseSymbol_Fool;фул;;;;;;;;;;;;;x
-GetHouseSymbol_Foot;фут;;;;;;;;;;;;;x
-GetHouseSymbol_Fork;фок;;;;;;;;;;;;;x
-GetHouseSymbol_Fort;форт;;;;;;;;;;;;;x
-GetHouseSymbol_Fox;фокс;;;;;;;;;;;;;x
-GetHouseSymbol_Frog;фрог;;;;;;;;;;;;;x
-GetHouseSymbol_Giant;гиант;;;;;;;;;;;;;x
-GetHouseSymbol_Good;гуд;;;;;;;;;;;;;x
-GetHouseSymbol_Goose;гус;;;;;;;;;;;;;x
-GetHouseSymbol_Griffin;гриффин;;;;;;;;;;;;;x
-GetHouseSymbol_Hammer;хаммер;;;;;;;;;;;;;x
-GetHouseSymbol_Hand;хэнд;;;;;;;;;;;;;x
-GetHouseSymbol_Harp;харп;;;;;;;;;;;;;x
-GetHouseSymbol_Hawk;хоук;;;;;;;;;;;;;x
-GetHouseSymbol_Hay;хэй;;;;;;;;;;;;;x
-GetHouseSymbol_Heart;хэрт;;;;;;;;;;;;;x
-GetHouseSymbol_Helm;хелм;;;;;;;;;;;;;x
-GetHouseSymbol_Heron;хэрон;;;;;;;;;;;;;x
-GetHouseSymbol_Horn;хорн;;;;;;;;;;;;;x
-GetHouseSymbol_Horse;хорс;;;;;;;;;;;;;x
-GetHouseSymbol_Hound;хаунд;;;;;;;;;;;;;x
-GetHouseSymbol_House;хаус;;;;;;;;;;;;;x
-GetHouseSymbol_Hunter;хантер;;;;;;;;;;;;;x
-GetHouseSymbol_Ivy;иви;;;;;;;;;;;;;x
-GetHouseSymbol_Kettle;кеттл;;;;;;;;;;;;;x
-GetHouseSymbol_Key;кей;;;;;;;;;;;;;x
-GetHouseSymbol_King;кинг;;;;;;;;;;;;;x
-GetHouseSymbol_Knife;найф;;;;;;;;;;;;;x
-GetHouseSymbol_Knight;найт;;;;;;;;;;;;;x
-GetHouseSymbol_Kraken;кракен;;;;;;;;;;;;;x
-GetHouseSymbol_Lamb;лэмб;;;;;;;;;;;;;x
-GetHouseSymbol_Lance;ланс;;;;;;;;;;;;;x
-GetHouseSymbol_Lemon;лаймон;;;;;;;;;;;;;x
-GetHouseSymbol_Leopard;леопард;;;;;;;;;;;;;x
-GetHouseSymbol_Leviathan;левиафан;;;;;;;;;;;;;x
-GetHouseSymbol_Lion;лайон;;;;;;;;;;;;;x
-GetHouseSymbol_Lizard;лизард;;;;;;;;;;;;;x
-GetHouseSymbol_Lobster;лобстер;;;;;;;;;;;;;x
-GetHouseSymbol_Maiden;майден;;;;;;;;;;;;;x
-GetHouseSymbol_Man;мэн;;;;;;;;;;;;;x
-GetHouseSymbol_Maple;мэпл;;;;;;;;;;;;;x
-GetHouseSymbol_Merman;мирмэн;;;;;;;;;;;;;x
-GetHouseSymbol_Moon;мун;;;;;;;;;;;;;x
-GetHouseSymbol_Moose;мус;;;;;;;;;;;;;x
-GetHouseSymbol_Nail;нейл;;;;;;;;;;;;;x
-GetHouseSymbol_Nettle;нэттл;;;;;;;;;;;;;x
-GetHouseSymbol_Noose;нус;;;;;;;;;;;;;x
-GetHouseSymbol_Oak;оак;;;;;;;;;;;;;x
-GetHouseSymbol_Oar;оар;;;;;;;;;;;;;x
-GetHouseSymbol_Onion;онион;;;;;;;;;;;;;x
-GetHouseSymbol_Owl;оул;;;;;;;;;;;;;x
-GetHouseSymbol_Ox;окс;;;;;;;;;;;;;x
-GetHouseSymbol_Pall;палл;;;;;;;;;;;;;x
-GetHouseSymbol_Paw;поу;;;;;;;;;;;;;x
-GetHouseSymbol_Pea;пи;;;;;;;;;;;;;x
-GetHouseSymbol_Peacock;пикок;;;;;;;;;;;;;x
-GetHouseSymbol_Pepper;пеппе;;;;;;;;;;;;;x
-GetHouseSymbol_Pine;пайн;;;;;;;;;;;;;x
-GetHouseSymbol_Plowman;плоумэн;;;;;;;;;;;;;x
-GetHouseSymbol_Quill;квилл;;;;;;;;;;;;;x
-GetHouseSymbol_Ram;рэм;;;;;;;;;;;;;x
-GetHouseSymbol_Raven;рэйвен;;;;;;;;;;;;;x
-GetHouseSymbol_Ring;ринг;;;;;;;;;;;;;x
-GetHouseSymbol_Rooster;рустер;;;;;;;;;;;;;x
-GetHouseSymbol_Rose;роуз;;;;;;;;;;;;;x
-GetHouseSymbol_Salmon;салмон;;;;;;;;;;;;;x
-GetHouseSymbol_Scales;скейлс;;;;;;;;;;;;;x
-GetHouseSymbol_Scorpion;скорпион;;;;;;;;;;;;;x
-GetHouseSymbol_Scythe;скит;;;;;;;;;;;;;x
-GetHouseSymbol_Seahorse;сихорс;;;;;;;;;;;;;x
-GetHouseSymbol_Sealion;силайон;;;;;;;;;;;;;x
-GetHouseSymbol_Serpent;серпент;;;;;;;;;;;;;x
-GetHouseSymbol_Shell;шелл;;;;;;;;;;;;;x
-GetHouseSymbol_Ship;шип;;;;;;;;;;;;;x
-GetHouseSymbol_Shoal;шоал;;;;;;;;;;;;;x
-GetHouseSymbol_Sister;систер;;;;;;;;;;;;;x
-GetHouseSymbol_Skull;скалл;;;;;;;;;;;;;x
-GetHouseSymbol_Snake;снейк;;;;;;;;;;;;;x
-GetHouseSymbol_Spear;спир;;;;;;;;;;;;;x
-GetHouseSymbol_Spider;спайдер;;;;;;;;;;;;;x
-GetHouseSymbol_Spoon;спун;;;;;;;;;;;;;x
-GetHouseSymbol_Spout;спут;;;;;;;;;;;;;x
-GetHouseSymbol_Squirrel;сквиррел;;;;;;;;;;;;;x
-GetHouseSymbol_Staff;стафф;;;;;;;;;;;;;x
-GetHouseSymbol_Stag;стэг;;;;;;;;;;;;;x
-GetHouseSymbol_Stallion;сталлион;;;;;;;;;;;;;x
-GetHouseSymbol_Star;стар;;;;;;;;;;;;;x
-GetHouseSymbol_Starfish;старфиш;;;;;;;;;;;;;x
-GetHouseSymbol_Storm;шторм;;;;;;;;;;;;;x
-GetHouseSymbol_Sun;сан;;;;;;;;;;;;;x
-GetHouseSymbol_Swan;соон;;;;;;;;;;;;;x
-GetHouseSymbol_Sword;сворд;;;;;;;;;;;;;x
-GetHouseSymbol_Swordfish;свордфиш;;;;;;;;;;;;;x
-GetHouseSymbol_Thistle;тистл;;;;;;;;;;;;;x
-GetHouseSymbol_Thorn;торн;;;;;;;;;;;;;x
-GetHouseSymbol_Tooth;туч;;;;;;;;;;;;;x
-GetHouseSymbol_Tower;тауэр;;;;;;;;;;;;;x
-GetHouseSymbol_Tree;три;;;;;;;;;;;;;x
-GetHouseSymbol_Trident;трайдент;;;;;;;;;;;;;x
-GetHouseSymbol_Turtle;тёртл;;;;;;;;;;;;;x
-GetHouseSymbol_Unicorn;аникорн;;;;;;;;;;;;;x
-GetHouseSymbol_Vulture;вултюр;;;;;;;;;;;;;x
-GetHouseSymbol_Wave;вэйв;;;;;;;;;;;;;x
-GetHouseSymbol_Weasel;висел;;;;;;;;;;;;;x
-GetHouseSymbol_Wheat;виэт;;;;;;;;;;;;;x
-GetHouseSymbol_Wheel;велл;;;;;;;;;;;;;x
-GetHouseSymbol_Willow;иллоу;;;;;;;;;;;;;x
-GetHouseSymbol_Wing;винг;;;;;;;;;;;;;x
-GetHouseSymbol_Wolf;вулф;;;;;;;;;;;;;x
-GetHouseSymbol_Wool;вул;;;;;;;;;;;;;x
-GetHouseSymbol_Wreath;рит;;;;;;;;;;;;;x
-GetHouseSymbol_Wright;райт;;;;;;;;;;;;;x
-GetHouseSymbol_Wyvern;уиверн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_2;Тенн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_3;Фрост;;;;;;;;;;;;;x
-GetCadetToken_Prefix_4;Айс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_5;Скёл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_6;Шивер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_7;Айс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_8;Фок;;;;;;;;;;;;;x
-GetCadetToken_Prefix_9;Фист;;;;;;;;;;;;;x
-GetCadetToken_Prefix_10;Антлер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_11;Винтер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_12;Уайт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_13;Хонт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_14;Хард;;;;;;;;;;;;;x
-GetCadetToken_Prefix_21;Кроу;;;;;;;;;;;;;x
-GetCadetToken_Prefix_22;Аррен;;;;;;;;;;;;;x
-GetCadetToken_Prefix_23;Пайн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_24;Мур;;;;;;;;;;;;;x
-GetCadetToken_Prefix_25;Хэт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_26;Сил;;;;;;;;;;;;;x
-GetCadetToken_Prefix_27;Хай;;;;;;;;;;;;;x
-GetCadetToken_Prefix_28;Ласт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_29;Кар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_30;Дип;;;;;;;;;;;;;x
-GetCadetToken_Prefix_32;Дрифт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_33;Бир;;;;;;;;;;;;;x
-GetCadetToken_Prefix_34;Си;;;;;;;;;;;;;x
-GetCadetToken_Prefix_36;Блу;;;;;;;;;;;;;x
-GetCadetToken_Prefix_37;Айрон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_38;Гроув;;;;;;;;;;;;;x
-GetCadetToken_Prefix_39;Вулфс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_40;Стоун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_41;Рилл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_44;Торр;;;;;;;;;;;;;x
-GetCadetToken_Prefix_45;Голд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_46;Барр;;;;;;;;;;;;;x
-GetCadetToken_Prefix_47;Винтер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_49;Кер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_51;Ист;;;;;;;;;;;;;x
-GetCadetToken_Prefix_52;Вип;;;;;;;;;;;;;x
-GetCadetToken_Prefix_53;Дред;;;;;;;;;;;;;x
-GetCadetToken_Prefix_54;Даун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_55;Шип;;;;;;;;;;;;;x
-GetCadetToken_Prefix_56;Овер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_58;Найф;;;;;;;;;;;;;x
-GetCadetToken_Prefix_59;Этер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_60;Хорп;;;;;;;;;;;;;x
-GetCadetToken_Prefix_61;Уит;;;;;;;;;;;;;x
-GetCadetToken_Prefix_62;Уайт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_63;Рэм;;;;;;;;;;;;;x
-GetCadetToken_Prefix_64;Ватч;;;;;;;;;;;;;x
-GetCadetToken_Prefix_65;Олд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_66;Мот;;;;;;;;;;;;;x
-GetCadetToken_Prefix_68;Грей;;;;;;;;;;;;;x
-GetCadetToken_Prefix_69;Чур;;;;;;;;;;;;;x
-GetCadetToken_Prefix_70;Сильвер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_71;Грей;;;;;;;;;;;;;x
-GetCadetToken_Prefix_72;Кейп;;;;;;;;;;;;;x
-GetCadetToken_Prefix_73;Флинт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_74;Флинт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_76;Кейп;;;;;;;;;;;;;x
-GetCadetToken_Prefix_77;Твин;;;;;;;;;;;;;x
-GetCadetToken_Prefix_79;Гард;;;;;;;;;;;;;x
-GetCadetToken_Prefix_80;Раш;;;;;;;;;;;;;x
-GetCadetToken_Prefix_81;Олд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_82;Стил;;;;;;;;;;;;;x
-GetCadetToken_Prefix_83;Эрен;;;;;;;;;;;;;x
-GetCadetToken_Prefix_86;Грейв;;;;;;;;;;;;;x
-GetCadetToken_Prefix_87;Мейд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_88;Блэк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_89;Фэйр;;;;;;;;;;;;;x
-GetCadetToken_Prefix_90;Блэк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_91;Стоун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_92;Блу;;;;;;;;;;;;;x
-GetCadetToken_Prefix_93;Фиелд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_94;Дар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_95;Чил;;;;;;;;;;;;;x
-GetCadetToken_Prefix_97;Хар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_98;Сальт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_100;Тён;;;;;;;;;;;;;x
-GetCadetToken_Prefix_101;Рив;;;;;;;;;;;;;x
-GetCadetToken_Prefix_102;Бран;;;;;;;;;;;;;x
-GetCadetToken_Prefix_104;Херт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_105;Вей;;;;;;;;;;;;;x
-GetCadetToken_Prefix_106;Гуд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_107;Харрен;;;;;;;;;;;;;x
-GetCadetToken_Prefix_108;Вилл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_109;Мейд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_110;Пинк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_111;Халл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_112;Септ;;;;;;;;;;;;;x
-GetCadetToken_Prefix_113;Дед;;;;;;;;;;;;;x
-GetCadetToken_Prefix_115;Шор;;;;;;;;;;;;;x
-GetCadetToken_Prefix_118;Лонг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_119;Свит;;;;;;;;;;;;;x
-GetCadetToken_Prefix_121;Пеб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_122;Пэп;;;;;;;;;;;;;x
-GetCadetToken_Prefix_123;Кроу;;;;;;;;;;;;;x
-GetCadetToken_Prefix_124;Скоч;;;;;;;;;;;;;x
-GetCadetToken_Prefix_125;Рут;;;;;;;;;;;;;x
-GetCadetToken_Prefix_126;Колд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_127;Вик;;;;;;;;;;;;;x
-GetCadetToken_Prefix_128;Мид;;;;;;;;;;;;;x
-GetCadetToken_Prefix_129;Мун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_130;Нью;;;;;;;;;;;;;x
-GetCadetToken_Prefix_131;Снейк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_132;Сан;;;;;;;;;;;;;x
-GetCadetToken_Prefix_133;Стронг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_134;Стоун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_135;Крэг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_136;Ланс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_137;Херт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_138;Брик;;;;;;;;;;;;;x
-GetCadetToken_Prefix_139;Лонг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_140;Гейт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_141;Глен;;;;;;;;;;;;;x
-GetCadetToken_Prefix_142;Оак;;;;;;;;;;;;;x
-GetCadetToken_Prefix_143;Анч;;;;;;;;;;;;;x
-GetCadetToken_Prefix_144;Ред;;;;;;;;;;;;;x
-GetCadetToken_Prefix_145;Найн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_146;Крэб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_147;Вик;;;;;;;;;;;;;x
-GetCadetToken_Prefix_148;Хард;;;;;;;;;;;;;x
-GetCadetToken_Prefix_149;Гулл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_150;Рун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_151;Сил;;;;;;;;;;;;;x
-GetCadetToken_Prefix_152;Хорн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_153;Пеб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_154;Вик;;;;;;;;;;;;;x
-GetCadetToken_Prefix_155;Тайд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_156;Орк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_157;Вол;;;;;;;;;;;;;x
-GetCadetToken_Prefix_158;Хар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_159;Стоун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_160;Сальт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_161;Лорд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_162;Пайк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_163;Бейн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_164;Крэг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_165;Делл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_166;Брук;;;;;;;;;;;;;x
-GetCadetToken_Prefix_167;Фэйр;;;;;;;;;;;;;x
-GetCadetToken_Prefix_168;Фист;;;;;;;;;;;;;x
-GetCadetToken_Prefix_169;Кей;;;;;;;;;;;;;x
-GetCadetToken_Prefix_170;Мон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_171;Тэрб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_172;Тур;;;;;;;;;;;;;x
-GetCadetToken_Prefix_173;Эш;;;;;;;;;;;;;x
-GetCadetToken_Prefix_174;Голд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_175;Нанн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_176;Тенд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_177;Пенд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_178;Сарс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_179;Голд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_180;Хорн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_181;Винд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_182;Рок;;;;;;;;;;;;;x
-GetCadetToken_Prefix_183;Ланн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_184;Окс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_185;Хоу;;;;;;;;;;;;;x
-GetCadetToken_Prefix_186;Грин;;;;;;;;;;;;;x
-GetCadetToken_Prefix_187;Каст;;;;;;;;;;;;;x
-GetCadetToken_Prefix_188;Фэнг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_190;Лон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_191;Ден;;;;;;;;;;;;;x
-GetCadetToken_Prefix_192;Дрокс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_193;Пик;;;;;;;;;;;;;x
-GetCadetToken_Prefix_194;Пейн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_196;Ред;;;;;;;;;;;;;x
-GetCadetToken_Prefix_197;Крейк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_198;Фэл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_199;Корн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_200;Грин;;;;;;;;;;;;;x
-GetCadetToken_Prefix_201;Мос;;;;;;;;;;;;;x
-GetCadetToken_Prefix_202;Бай;;;;;;;;;;;;;x
-GetCadetToken_Prefix_203;Фок;;;;;;;;;;;;;x
-GetCadetToken_Prefix_204;Рэй;;;;;;;;;;;;;x
-GetCadetToken_Prefix_205;Соу;;;;;;;;;;;;;x
-GetCadetToken_Prefix_206;Бёч;;;;;;;;;;;;;x
-GetCadetToken_Prefix_207;Ант;;;;;;;;;;;;;x
-GetCadetToken_Prefix_208;Брин;;;;;;;;;;;;;x
-GetCadetToken_Prefix_209;Эдж;;;;;;;;;;;;;x
-GetCadetToken_Prefix_210;Рол;;;;;;;;;;;;;x
-GetCadetToken_Prefix_211;Росб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_212;Даск;;;;;;;;;;;;;x
-GetCadetToken_Prefix_213;Хол;;;;;;;;;;;;;x
-GetCadetToken_Prefix_214;Рук;;;;;;;;;;;;;x
-GetCadetToken_Prefix_215;Крэк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_216;Дайр;;;;;;;;;;;;;x
-GetCadetToken_Prefix_217;Висп;;;;;;;;;;;;;x
-GetCadetToken_Prefix_218;Крэу;;;;;;;;;;;;;x
-GetCadetToken_Prefix_219;Клоу;;;;;;;;;;;;;x
-GetCadetToken_Prefix_220;Дрифт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_221;Стоун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_222;Брэм;;;;;;;;;;;;;x
-GetCadetToken_Prefix_223;Фарр;;;;;;;;;;;;;x
-GetCadetToken_Prefix_224;Хэй;;;;;;;;;;;;;x
-GetCadetToken_Prefix_225;Стоук;;;;;;;;;;;;;x
-GetCadetToken_Prefix_226;Кингс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_227;Дэл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_228;Грин;;;;;;;;;;;;;x
-GetCadetToken_Prefix_229;Атт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_230;Вуд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_231;Бай;;;;;;;;;;;;;x
-GetCadetToken_Prefix_232;Чит;;;;;;;;;;;;;x
-GetCadetToken_Prefix_233;Стоун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_234;Шарп;;;;;;;;;;;;;x
-GetCadetToken_Prefix_235;Оак;;;;;;;;;;;;;x
-GetCadetToken_Prefix_236;Лейк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_237;Глейдй;;;;;;;;;;;;;x
-GetCadetToken_Prefix_238;Моат;;;;;;;;;;;;;x
-GetCadetToken_Prefix_239;Доск;;;;;;;;;;;;;x
-GetCadetToken_Prefix_240;Кэт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_241;Стенд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_242;Дер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_243;Гроув;;;;;;;;;;;;;x
-GetCadetToken_Prefix_244;Вит;;;;;;;;;;;;;x
-GetCadetToken_Prefix_246;Иви;;;;;;;;;;;;;x
-GetCadetToken_Prefix_247;Алд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_248;Харп;;;;;;;;;;;;;x
-GetCadetToken_Prefix_249;Тум;;;;;;;;;;;;;x
-GetCadetToken_Prefix_250;Торр;;;;;;;;;;;;;x
-GetCadetToken_Prefix_251;Лей;;;;;;;;;;;;;x
-GetCadetToken_Prefix_252;Хэм;;;;;;;;;;;;;x
-GetCadetToken_Prefix_253;Бридж;;;;;;;;;;;;;x
-GetCadetToken_Prefix_254;Лонг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_255;Роуз;;;;;;;;;;;;;x
-GetCadetToken_Prefix_256;Дарк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_257;Холи;;;;;;;;;;;;;x
-GetCadetToken_Prefix_259;Грасс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_260;Хаст;;;;;;;;;;;;;x
-GetCadetToken_Prefix_261;Оак;;;;;;;;;;;;;x
-GetCadetToken_Prefix_262;Грей;;;;;;;;;;;;;x
-GetCadetToken_Prefix_263;Грин;;;;;;;;;;;;;x
-GetCadetToken_Prefix_264;Соут;;;;;;;;;;;;;x
-GetCadetToken_Prefix_265;Вест;;;;;;;;;;;;;x
-GetCadetToken_Prefix_266;Смолл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_267;Хай;;;;;;;;;;;;;x
-GetCadetToken_Prefix_270;Форд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_271;Мэнд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_272;Нор;;;;;;;;;;;;;x
-GetCadetToken_Prefix_273;Данн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_274;Брайт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_275;Делл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_276;Миддл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_277;Бард;;;;;;;;;;;;;x
-GetCadetToken_Prefix_278;Йел;;;;;;;;;;;;;x
-GetCadetToken_Prefix_279;Стар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_280;Хорн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_281;Фоун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_282;Бэнд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_283;Хоней;;;;;;;;;;;;;x
-GetCadetToken_Prefix_284;Соммер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_285;Блэк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_286;Олд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_287;Ап;;;;;;;;;;;;;x
-GetCadetToken_Prefix_288;Хант;;;;;;;;;;;;;x
-GetCadetToken_Prefix_289;Тауэрс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_290;Сан;;;;;;;;;;;;;x
-GetCadetToken_Prefix_291;Ринг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_292;Уэйн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_293;Брод;;;;;;;;;;;;;x
-GetCadetToken_Prefix_294;Фел;;;;;;;;;;;;;x
-GetCadetToken_Prefix_295;Ланг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_296;Бронз;;;;;;;;;;;;;x
-GetCadetToken_Prefix_297;Хэд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_298;Хэй;;;;;;;;;;;;;x
-GetCadetToken_Prefix_299;Пач;;;;;;;;;;;;;x
-GetCadetToken_Prefix_300;Дрейк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_301;Гейл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_302;Гранд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_303;Гриффин;;;;;;;;;;;;;x
-GetCadetToken_Prefix_304;Сторм;;;;;;;;;;;;;x
-GetCadetToken_Prefix_305;Тарт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_306;Саммер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_307;Найт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_308;Харвест;;;;;;;;;;;;;x
-GetCadetToken_Prefix_309;Подд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_310;Галлоу;;;;;;;;;;;;;x
-GetCadetToken_Prefix_311;Блэк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_312;Фоун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_313;Адд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_314;Кроу;;;;;;;;;;;;;x
-GetCadetToken_Prefix_315;Лон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_316;Стоун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_317;Лок;;;;;;;;;;;;;x
-GetCadetToken_Prefix_318;Амб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_319;Тад;;;;;;;;;;;;;x
-GetCadetToken_Prefix_320;Рейн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_321;Блу;;;;;;;;;;;;;x
-GetCadetToken_Prefix_322;Мист;;;;;;;;;;;;;x
-GetCadetToken_Prefix_323;Рейн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_324;Уот;;;;;;;;;;;;;x
-GetCadetToken_Prefix_325;Уот;;;;;;;;;;;;;x
-GetCadetToken_Prefix_326;Эстер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_327;Блэк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_328;Принц;;;;;;;;;;;;;x
-GetCadetToken_Prefix_329;Вултур;;;;;;;;;;;;;x
-GetCadetToken_Prefix_330;Вил;;;;;;;;;;;;;x
-GetCadetToken_Prefix_331;Грейв;;;;;;;;;;;;;x
-GetCadetToken_Prefix_332;Хай;;;;;;;;;;;;;x
-GetCadetToken_Prefix_333;Скай;;;;;;;;;;;;;x
-GetCadetToken_Prefix_334;Айрон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_335;Стар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_336;Элбоу;;;;;;;;;;;;;x
-GetCadetToken_Prefix_337;Сэнд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_338;Хелл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_340;Ним;;;;;;;;;;;;;x
-GetCadetToken_Prefix_341;Скоч;;;;;;;;;;;;;x
-GetCadetToken_Prefix_342;Гэс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_343;Тор;;;;;;;;;;;;;x
-GetCadetToken_Prefix_344;Скорж;;;;;;;;;;;;;x
-GetCadetToken_Prefix_345;Дюн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_346;Сольт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_347;Гхост;;;;;;;;;;;;;x
-GetCadetToken_Prefix_348;Спотт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_349;Грейс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_350;Плэнки;;;;;;;;;;;;;x
-GetCadetToken_Prefix_351;Лемон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_352;Сан;;;;;;;;;;;;;x
-GetCadetToken_Prefix_353;Стоун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_354;Ривер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_355;Вуд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_356;Брик;;;;;;;;;;;;;x
-GetCadetToken_Prefix_357;Лайт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_358;Блуд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_359;Галлоу;;;;;;;;;;;;;x
-GetCadetToken_Prefix_360;Ден;;;;;;;;;;;;;x
-GetCadetToken_Prefix_361;Скулл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_364;Шейм;;;;;;;;;;;;;x
-GetCadetToken_Prefix_365;Урек;;;;;;;;;;;;;x
-GetCadetToken_Prefix_367;Тир;;;;;;;;;;;;;x
-GetCadetToken_Prefix_368;Лис;;;;;;;;;;;;;x
-GetCadetToken_Prefix_378;Мир;;;;;;;;;;;;;x
-GetCadetToken_Prefix_379;Ринлос;;;;;;;;;;;;;x
-GetCadetToken_Prefix_389;Ам;;;;;;;;;;;;;x
-GetCadetToken_Prefix_406;Пент;;;;;;;;;;;;;x
-GetCadetToken_Prefix_413;Чроу;;;;;;;;;;;;;x
-GetCadetToken_Prefix_414;Най;;;;;;;;;;;;;x
-GetCadetToken_Prefix_417;Волан;;;;;;;;;;;;;x
-GetCadetToken_Prefix_419;Волан;;;;;;;;;;;;;x
-GetCadetToken_Prefix_420;Волон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_421;Сар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_422;Вал;;;;;;;;;;;;;x
-GetCadetToken_Prefix_423;Сел;;;;;;;;;;;;;x
-GetCadetToken_Prefix_425;Валон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_426;Ройн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_428;Лейк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_429;Ар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_431;Койн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_432;Нойн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_433;Норв;;;;;;;;;;;;;x
-GetCadetToken_Prefix_435;Нум;;;;;;;;;;;;;x
-GetCadetToken_Prefix_436;Дарк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_437;Дип;;;;;;;;;;;;;x
-GetCadetToken_Prefix_441;Бир;;;;;;;;;;;;;x
-GetCadetToken_Prefix_442;Пасс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_443;Нарр;;;;;;;;;;;;;x
-GetCadetToken_Prefix_444;Маунт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_450;Гоян;;;;;;;;;;;;;x
-GetCadetToken_Prefix_451;Вельвет;;;;;;;;;;;;;x
-GetCadetToken_Prefix_452;Вельвет;;;;;;;;;;;;;x
-GetCadetToken_Prefix_453;Ройн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_454;Севен;;;;;;;;;;;;;x
-GetCadetToken_Prefix_455;Хугор;;;;;;;;;;;;;x
-GetCadetToken_Prefix_456;Анд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_457;Хилл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_467;Порт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_468;Мун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_469;Марш;;;;;;;;;;;;;x
-GetCadetToken_Prefix_470;Браав;;;;;;;;;;;;;x
-GetCadetToken_Prefix_471;Лор;;;;;;;;;;;;;x
-GetCadetToken_Prefix_474;Акс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_475;Акс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_478;Гот;;;;;;;;;;;;;x
-GetCadetToken_Prefix_479;Хобрет;;;;;;;;;;;;;x
-GetCadetToken_Prefix_490;Пайнт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_491;Стон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_493;Ласт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_494;Тотус;;;;;;;;;;;;;x
-GetCadetToken_Prefix_496;Тотус;;;;;;;;;;;;;x
-GetCadetToken_Prefix_497;Амбер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_500;Талл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_501;Циртус;;;;;;;;;;;;;x
-GetCadetToken_Prefix_502;Кодж;;;;;;;;;;;;;x
-GetCadetToken_Prefix_503;Бёд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_505;Херт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_508;Ксал;;;;;;;;;;;;;x
-GetCadetToken_Prefix_509;Кейп;;;;;;;;;;;;;x
-GetCadetToken_Prefix_510;Сонг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_511;Голд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_512;Литтл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_514;Лав;;;;;;;;;;;;;x
-GetCadetToken_Prefix_517;Эбон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_518;Свит;;;;;;;;;;;;;x
-GetCadetToken_Prefix_519;Голд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_520;Тотус;;;;;;;;;;;;;x
-GetCadetToken_Prefix_521;Эбон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_522;Блуд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_525;Хай;;;;;;;;;;;;;x
-GetCadetToken_Prefix_526;Ред;;;;;;;;;;;;;x
-GetCadetToken_Prefix_527;Индиго;;;;;;;;;;;;;x
-GetCadetToken_Prefix_531;Херт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_533;Хед;;;;;;;;;;;;;x
-GetCadetToken_Prefix_534;Ксон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_535;Боун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_536;Док;;;;;;;;;;;;;x
-GetCadetToken_Prefix_542;Эсс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_544;Саат;;;;;;;;;;;;;x
-GetCadetToken_Prefix_545;Мор;;;;;;;;;;;;;x
-GetCadetToken_Prefix_546;Сар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_549;Рэт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_550;Кит;;;;;;;;;;;;;x
-GetCadetToken_Prefix_551;Мард;;;;;;;;;;;;;x
-GetCadetToken_Prefix_552;Норн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_553;Сарн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_555;Кэс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_556;Дэт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_557;Барк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_558;Фаат;;;;;;;;;;;;;x
-GetCadetToken_Prefix_559;Барт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_560;Таск;;;;;;;;;;;;;x
-GetCadetToken_Prefix_561;Салл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_562;Мэл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_563;Бекк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_564;Горн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_565;Сат;;;;;;;;;;;;;x
-GetCadetToken_Prefix_567;Чев;;;;;;;;;;;;;x
-GetCadetToken_Prefix_568;Доф;;;;;;;;;;;;;x
-GetCadetToken_Prefix_569;Мейр;;;;;;;;;;;;;x
-GetCadetToken_Prefix_576;Ибб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_577;Ибб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_580;Осс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_582;Нор;;;;;;;;;;;;;x
-GetCadetToken_Prefix_583;Таск;;;;;;;;;;;;;x
-GetCadetToken_Prefix_584;Эсс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_585;Ибб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_586;Спир;;;;;;;;;;;;;x
-GetCadetToken_Prefix_587;Иб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_588;Херс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_589;Мелт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_590;Трэк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_591;Дол;;;;;;;;;;;;;x
-GetCadetToken_Prefix_592;Цок;;;;;;;;;;;;;x
-GetCadetToken_Prefix_593;Хран;;;;;;;;;;;;;x
-GetCadetToken_Prefix_594;Фар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_595;Сар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_598;Драк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_599;Мант;;;;;;;;;;;;;x
-GetCadetToken_Prefix_600;Пасс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_601;Тол;;;;;;;;;;;;;x
-GetCadetToken_Prefix_602;Элай;;;;;;;;;;;;;x
-GetCadetToken_Prefix_603;Блэк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_605;Демон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_606;Ми;;;;;;;;;;;;;x
-GetCadetToken_Prefix_607;Хайз;;;;;;;;;;;;;x
-GetCadetToken_Prefix_610;Юнк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_611;Мейлк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_613;Аст;;;;;;;;;;;;;x
-GetCadetToken_Prefix_619;Гис;;;;;;;;;;;;;x
-GetCadetToken_Prefix_621;Гхоз;;;;;;;;;;;;;x
-GetCadetToken_Prefix_622;Вел;;;;;;;;;;;;;x
-GetCadetToken_Prefix_624;Ген;;;;;;;;;;;;;x
-GetCadetToken_Prefix_625;Гис;;;;;;;;;;;;;x
-GetCadetToken_Prefix_626;Наат;;;;;;;;;;;;;x
-GetCadetToken_Prefix_638;Неш;;;;;;;;;;;;;x
-GetCadetToken_Prefix_639;Лхаз;;;;;;;;;;;;;x
-GetCadetToken_Prefix_640;Хош;;;;;;;;;;;;;x
-GetCadetToken_Prefix_641;Макх;;;;;;;;;;;;;x
-GetCadetToken_Prefix_642;Ихос;;;;;;;;;;;;;x
-GetCadetToken_Prefix_643;Гард;;;;;;;;;;;;;x
-GetCadetToken_Prefix_648;Кос;;;;;;;;;;;;;x
-GetCadetToken_Prefix_649;Вирз;;;;;;;;;;;;;x
-GetCadetToken_Prefix_653;Ток;;;;;;;;;;;;;x
-GetCadetToken_Prefix_654;Квар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_660;Йин;;;;;;;;;;;;;x
-GetCadetToken_Prefix_661;Стоун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_663;Квар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_664;Мат;;;;;;;;;;;;;x
-GetCadetToken_Prefix_666;Джейд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_667;Квал;;;;;;;;;;;;;x
-GetCadetToken_Prefix_673;Гир;;;;;;;;;;;;;x
-GetCadetToken_Prefix_674;Бай;;;;;;;;;;;;;x
-GetCadetToken_Prefix_678;Сэм;;;;;;;;;;;;;x
-GetCadetToken_Prefix_679;Цар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_680;Кай;;;;;;;;;;;;;x
-GetCadetToken_Prefix_682;Стил;;;;;;;;;;;;;x
-GetCadetToken_Prefix_689;Зоб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_692;Вез;;;;;;;;;;;;;x
-GetCadetToken_Prefix_694;Кэл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_695;Тар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_696;Пор;;;;;;;;;;;;;x
-GetCadetToken_Prefix_697;Кеш;;;;;;;;;;;;;x
-GetCadetToken_Prefix_698;Янг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_699;Гон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_700;Хаз;;;;;;;;;;;;;x
-GetCadetToken_Prefix_701;Кхай;;;;;;;;;;;;;x
-GetCadetToken_Prefix_720;Джейд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_727;Порт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_735;Вив;;;;;;;;;;;;;x
-GetCadetToken_Prefix_736;Гор;;;;;;;;;;;;;x
-GetCadetToken_Prefix_739;Вай;;;;;;;;;;;;;x
-GetCadetToken_Prefix_740;Йин;;;;;;;;;;;;;x
-GetCadetToken_Prefix_741;Цам;;;;;;;;;;;;;x
-GetCadetToken_Prefix_742;Акс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_743;Скулл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_744;Тод;;;;;;;;;;;;;x
-GetCadetToken_Prefix_746;Поинт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_747;Гог;;;;;;;;;;;;;x
-GetCadetToken_Prefix_748;Лайс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_749;Дит;;;;;;;;;;;;;x
-GetCadetToken_Prefix_750;Флай;;;;;;;;;;;;;x
-GetCadetToken_Prefix_752;Хоул;;;;;;;;;;;;;x
-GetCadetToken_Prefix_753;Талон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_754;Вайн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_755;Гел;;;;;;;;;;;;;x
-GetCadetToken_Prefix_756;Тай;;;;;;;;;;;;;x
-GetCadetToken_Prefix_758;Фейр;;;;;;;;;;;;;x
-GetCadetToken_Prefix_759;Ор;;;;;;;;;;;;;x
-GetCadetToken_Prefix_760;Рай;;;;;;;;;;;;;x
-GetCadetToken_Prefix_761;Тел;;;;;;;;;;;;;x
-GetCadetToken_Prefix_762;Сар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_763;Джейд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_765;Йин;;;;;;;;;;;;;x
-GetCadetToken_Prefix_767;Сиань;;;;;;;;;;;;;x
-GetCadetToken_Prefix_768;Квиц;;;;;;;;;;;;;x
-GetCadetToken_Prefix_769;Фэн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_770;Цзин;;;;;;;;;;;;;x
-GetCadetToken_Prefix_771;Сар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_772;Квин;;;;;;;;;;;;;x
-GetCadetToken_Prefix_773;Зом;;;;;;;;;;;;;x
-GetCadetToken_Prefix_776;Хенг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_777;Линк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_778;Тайч;;;;;;;;;;;;;x
-GetCadetToken_Prefix_779;Цзинк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_780;Тик;;;;;;;;;;;;;x
-GetCadetToken_Prefix_783;Нанк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_784;Уон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_785;Фанг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_786;Ксинз;;;;;;;;;;;;;x
-GetCadetToken_Prefix_787;Уип;;;;;;;;;;;;;x
-GetCadetToken_Prefix_788;Мар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_790;Тарр;;;;;;;;;;;;;x
-GetCadetToken_Prefix_793;Витч;;;;;;;;;;;;;x
-GetCadetToken_Prefix_795;Асш;;;;;;;;;;;;;x
-GetCadetToken_Prefix_796;Стиг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_800;Улос;;;;;;;;;;;;;x
-GetCadetToken_Prefix_801;Тейг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_802;Манп;;;;;;;;;;;;;x
-GetCadetToken_Prefix_803;Кам;;;;;;;;;;;;;x
-GetCadetToken_Prefix_820;Форт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_835;Нефер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_847;Трэдер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_875;Ксин;;;;;;;;;;;;;x
-GetCadetToken_Prefix_1196;Шейд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_1197;Айрон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_1198;Нетт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_1199;Скейн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_beyond_wall;Вилд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_upper_frostfangs;Фэнг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_shivering_shore;Озер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_lower_frostfangs;Фрост;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_haunted_forest;Хонт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_frozen_shore;Фриз;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_milkwater;Милк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_crownlands;Кроун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_blackwater_rush;Уотерс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_crackclaw_point;Клоу;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_dragonstone;Дрэгон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_duskendale;Даск;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_kings_landing;Кингс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_kingswood;Вуд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_masseys_hook;Хук;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_rosby;Росб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_crackclaw_point;Клоу;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_dragonstone;Дрэгон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_brimstone;Брим;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_brokenarm;Арм;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_ghosthills;Гхост;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_princespass;Принц;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_redmountains;Торрен;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_stoneway;Вэй;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_vaith;Вайт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_wide_way;Вайд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_e_dorne;Дорн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_dorne;Дорн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_ar_noy;Эр;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_braavos;Титан;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_dalos;Драко;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_darkwater;Дарк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_east_braavosiancoastlands;Морр;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_golden_fields;Голд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_gornath;Горн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_lower_rhoyne;Ройн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_lys;Лис;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_mantarys;Мант;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_mardosh;Мард;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_morosh;Мор;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_myr;Мир;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_myrish_flatlands;Флэт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_myrish_hinterlands;Марч;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_nontelos;Нонт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_northern_forest_qohor;Форест;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_norvos;Норв;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_ny_sar;Най;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_omber;Омб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_orange_shore;Оренж;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_painted_mountains;Паинт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_pentos;Пент;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_pentoshi_flatlands;Флэт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_rathylar;Рэт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_saath;Саат;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_sallosh;Салл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_sarnath;Сарн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_sarys;Сар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_sathar;Сат;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_selhorys;Сел;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_sweetwater;Свит;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_the_axe;Акс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_the_west_road;Роад;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_tolos;Тол;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_upper_rhoyne;Ройн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_valonsar;Валон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_valysar;Вали;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_velvet_hills;Вельвет;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_volantis;Волан;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_volontherys;Волон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_e_andalos;Андал;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_andalos;Андал;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_lys;Лис;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_myr;Мир;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_norvos;Норв;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_pentos;Пент;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_rhoynar;Ройн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_sarnor;Сарн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_stepstones;Степ;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_volantis;Волан;;;;;;;;;;;;;x
-GetCadetToken_Prefix_e_iron_isles;Айрон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_iron_isles;Айрон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_pyke;Пайк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_great_wyk;Вик;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_seastone_isles;Исл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_harlaw;Хар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_asshai;Асш;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_bayasabhad;Бэй;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_bayofwhales;Бэй;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_eastern_isles;Ист;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_farib;Фар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_faros;Фар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_hesh;Хеш;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_hills_tiqui;Нан;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_ibbish;Ибб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_ibnor;Нор;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_iboss;Осс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_jade_gate;Джейд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_jinqi;Цзинг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_kayakayanaya;Кай;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_kosrak;Кос;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_lehqron;Лек;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_lhazosh;Лхаз;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_linqi;Линк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_linqi_jungle;Уон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_matsar;Мэт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_nefer;Неф;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_north_xin;Фудж;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_piqui;Пикуи;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_piqui_jungle;Хез;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_port_yhos;Ихос;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_portofibben;Ибб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_qal;Квал;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_qarkash;Кварк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_qarth;Квар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_saffron_straits;Сафф;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_samyriana;Самириана;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_south_leng;Турр;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_stygai;Стиг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_the_five_forts;Форт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_tiqui;Тик;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_toqolarth;Ток;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_trader_town;Таун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_western_isles;Вест;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_xin;Ксин;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_yin;Йин;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_yiti_delta;Фэнг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_zabhad;Заб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_e_yi_ti;Год;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_asabhad;Асаб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_hyrkoon;Гир;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_ibben;Ибб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_ifeqevron;Ифек;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_jinqi;Цзинг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_leng;Лэнг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_lhazar;Пхаз;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_linqi;Линк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_moraq;Мор;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_piqui;Пик;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_the_five_forts;Форт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_tiqui;Тик;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_trader_town;Таун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_xin;Ксин;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_yin;Йин;;;;;;;;;;;;;x
-GetCadetToken_Prefix_e_north;Норт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_north;Норт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_barrowlands;Барроу;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_dreadfort;Дрид;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_flintsfinger;Флинт';;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_grey_gliffs;Грей;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_hornwood;Бранч;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_karhold;Кар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_lasthearth;Ласт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_northclans;Клан;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_rills;Рилл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_skagos;Скаг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_stonyshore;Стон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_theneck;Нек;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_whiteharbor;Харбор;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_winterfell;Винтер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_wolfswood;Вуд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_e_reach;Рич;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_reach;Рич;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_blueburn;Блу;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_brightwater;Брайт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_cockleswhent;Уэнт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_goldengrove;Гроув;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_highgarden;Хай;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_mandervale;Мэнд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_northmarch;Марч;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_ocean_road;Роад;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_oldtown;Олд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_red_lake;Лейк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_roseroad;Роуз;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_the_arbor;Вайн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_the_ring;Ринг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_the_shield_isles;Шилд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_tumbleton;Тамб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_west_marches;Марч;;;;;;;;;;;;;x
-GetCadetToken_Prefix_e_riverlands;Ривер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_riverlands;Ривер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_acornsridge;Экон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_bayofclaws;Крэб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_blackwood;Блэк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_darry;Дар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_esgaroth;Эск;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_harrenhal;Харрен;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_oldstones;Си;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_riverrun;Ривер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_southstone;Соут;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_thecrossing;Кросс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_trident;Форк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_tumblestone;Тумб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_wayfarersrest;Уэй;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_ghardaq;Гхар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_hazdahn;Хаз;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_isle_of_cedars;Кедар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_khyzaipass;Хиз;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_meereen;Миэр;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_new_ghis;Гис;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_old_ghis;Гис;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_worm_river;Ворм;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_yunkai;Юнк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_e_ghiscar;Гис;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_hazdahn;Хаз;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_meereen;Миэр;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_new_ghis;Гис;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_yunkai;Юнк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_e_stormlands;Сторм;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_stormlands;Сторм;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_cape_wrath;Уот;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_dornish_marches;Марч;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_parchments;Пач;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_rainwood;Рейн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_red_watch;Ватч;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_shipbreaker;Брик;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_summerhall;Саммер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_summerhall_adj;Саммер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_tarth;Тарт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_wendwater;Венд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_e_vale;Вейл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_vale;Вейл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_eastweald;Ист;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_gulltown;Гулл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_ironoaks;Айрон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_northweald;Вилд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_redfort;Форт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_runestone;Рун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_strongsong;Стронг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_the_bite;Байт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_the_fingers;Фингер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_the_giants_lance;Ланс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_the_sisters;Систер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_wickenden;Вик;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_westerlands;Вест;;;;;;;;;;;;;x
-GetCadetToken_Prefix_e_westerlands;Рок;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_the_crag;Крэг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_silverhill;Сильвер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_sarsfield;Сарс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_hornvale;Хорн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_goldroad;Голд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_golden_tooth;Тут;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_crakehall;Крейк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_cornfield;Корн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_casterly_rock;Рок;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_castamere;Каст;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_ashemark;Эш;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_summer_islands;Саммер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_sothoryos;Сот;;;;;;;;;;;;;x
-GetCadetToken_Prefix_e_summer_sea;Саммер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_zamettar;Зам;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_yeen;Йин;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_walano;Вал;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_tall_trees_valley;Талл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_sweet_lotus_vale;Лотус;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_red_flower_vale;Ред;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_parrot_bay;Паррот;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_omburu;Омб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_naath;Наат;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_moluu;Мол;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_last_lament;Ламент;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_gorosh;Гор;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_golden_head;Хед;;;;;;;;;;;;;x
-GetCadetToken_Prefix_d_gogossos;Гог;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_winterfellTK;Винтер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_skagosTK;Скаг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_karholdTK;Кар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_lasthearthTK;Херт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_northclansTK;Клан;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_wolfswoodTK;Вулфс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_rillsTK;Риллс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_barrowlandsTK;Барроу;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_flintsfingerTK;Флинт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_theneckTK;Нек;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_whiteharborTK;Харбор;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_hornwoodTK;Хорн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_dreadfortTK;Дред;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_thecrossingTK;Кросс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_oldstonesTK;Стоун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_tridentTK;Фок;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_blackwoodTK;Блэк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_riverrunTK;Ривер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_southstoneTK;Соут;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_acornsridgeTK;Асорн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_harrenhalTK;Харрен;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_bayofclawsTK;Клоу;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_the_biteTK;Байт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_the_sistersTK;Систер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_northwealdTK;Вилд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_the_fingersTK;Фингер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_strongsongTK;Сонг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_the_giants_lanceTK;Вейл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_eastwealdTK;Ист;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_runestoneTK;Рун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_wickendenTK;Вик;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_pykeTK;Пайк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_great_wykTK;Вик;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_harlawTK;Хар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_seastone_islesTK;Си;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_casterly_rockTK;Рок;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_crakehallTK;Срейк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_cornfieldTK;Корн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_silverhillTK;Сильвер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_goldroadTK;Голд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_castamereTK;Каст;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_sarsfieldTK;Сарс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_golden_toothTK;Тут;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_ashemarkTK;Эш;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_the_cragTK;Крэг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_duskendaleTK;Даск;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_rosbyTK;Росб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_crackclaw_pointTK;Клоу;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_dragonstoneTK;Дрэгон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_kings_landingTK;Уотерс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_blackwater_rushTK;Раш;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_kingswoodTK;Вуд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_masseys_hookTK;Хук;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_highgardenTK;Гарден;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_northmarchTK;Марч;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_oldtownTK;Тауэрс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_the_arborTK;Арбор;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_brightwaterTK;Брайт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_west_marchesTK;Вест;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_cockleswhentTK;Кок;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_blueburnTK;Блу;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_roseroadTK;Роуз;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_tumbletonTK;Там;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_the_ringTK;Ринг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_goldengroveTK;Гроув;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_red_lakeTK;Ред;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_ocean_roadTK;Ошн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_the_shield_islesTK;Шилд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_mandervaleTK;Мандер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_shipbreakerTK;Сторм;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_tarthTK;Тарт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_wendwaterTK;Венд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_summerhallTK;Холл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_dornish_marchesTK;Марч;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_red_watchTK;Ватч;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_cape_wrathTK;Ватч;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_rainwoodTK;Рейн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_brokenarmTK;Арм;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_ghosthillsTK;гхост;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_vaithTK;Вайт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_brimstoneTK;Брим;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_redmountainsTK;Ред;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_princespassTK;Скай;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_stonewayTK;Ред;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_upper_rhoyne;Ройн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_flatlands;Флэт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_the_axe;Акс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_hills_of_norvos;Хилл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_the_marches;Марч;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_volontherys;Волон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_valysar;Вал;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_selhorys;Сел;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_chroyane;Крой;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_the_bay;Бэй;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_mantarys;Мант;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_tolos;Тол;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_coastlands;Кост;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_ny_sar;Сар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_ar_noy;Ной;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_sweetwater;Свит;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_copper_hills;Коппер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_worm_river;Ворм;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_khyzai;Кхиз;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_old_ghis;Гис;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_isle_of_cedars;Кедпр;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_ib;Иб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_bayofwhales;Бэй;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_ibbish;Ибб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_red_roads;Джейд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_qarkash;Кварк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_port_yhos;Ихос;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_fenqui;Фэнк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_nanqi;Нанк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_wan_ti;Ван;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_hezyin;Хез;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_fujin;Фудж;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_walano;Вал;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_west_summer_isles;Вест;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_omburu;Омб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_naath;Наат;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_hornvaleTK;Хорн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_ironoaksTK;Айрон;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_gulltownTK;Гулл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_fair_isleTK;Файр;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_blackmontTK;Блэк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_torrentineTK;Стар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_banefortTK;Бейн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_wayfarersrestTK;Вэй;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_darryTK;Дар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_stonyshoreTK;Стоун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_sarhoy;Сар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_k_redfortTK;Ред;;;;;;;;;;;;;x
-GetCadetToken_Prefix_lunatic;Крейз;;;;;;;;;;;;;x
-GetCadetToken_Prefix_twin;Твин;;;;;;;;;;;;;x
-GetCadetToken_Prefix_kinslayer;Кинс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_clubfooted;Клаб;;;;;;;;;;;;;x
-GetCadetToken_Prefix_harelip;Лип;;;;;;;;;;;;;x
-GetCadetToken_Prefix_hunchback;Ханч;;;;;;;;;;;;;x
-GetCadetToken_Prefix_fair;Файр;;;;;;;;;;;;;x
-GetCadetToken_Prefix_dwarf;Смолл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_genius;Вайс;;;;;;;;;;;;;x
-GetCadetToken_Prefix_quick;Квик;;;;;;;;;;;;;x
-GetCadetToken_Prefix_slow;Слоу;;;;;;;;;;;;;x
-GetCadetToken_Prefix_strong;Стронг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_scholar;Минд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_gardener;лиф;;;;;;;;;;;;;x
-GetCadetToken_Prefix_mystic;Мист;;;;;;;;;;;;;x
-GetCadetToken_Prefix_impaler;Пайн;;;;;;;;;;;;;x
-GetCadetToken_Prefix_duelist;Дуэл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_hunter;Хант;;;;;;;;;;;;;x
-GetCadetToken_Prefix_poet;Сонг;;;;;;;;;;;;;x
-GetCadetToken_Prefix_falconer;Сор;;;;;;;;;;;;;x
-GetCadetToken_Prefix_lustful;Ласт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_chaste;Майд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_Greedy;Коин;;;;;;;;;;;;;x
-GetCadetToken_Prefix_slothful;Рест;;;;;;;;;;;;;x
-GetCadetToken_Prefix_diligent;Хед;;;;;;;;;;;;;x
-GetCadetToken_Prefix_kind;Кинд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_wroth;Уот;;;;;;;;;;;;;x
-GetCadetToken_Prefix_proud;Прод;;;;;;;;;;;;;x
-GetCadetToken_Prefix_humble;Серв;;;;;;;;;;;;;x
-GetCadetToken_Prefix_honest;Трут;;;;;;;;;;;;;x
-GetCadetToken_Prefix_brave;Болд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_gregarious;Варм;;;;;;;;;;;;;x
-GetCadetToken_Prefix_arbitrary;Вим;;;;;;;;;;;;;x
-GetCadetToken_Prefix_just;Джаст;;;;;;;;;;;;;x
-GetCadetToken_Prefix_zealous;Зел;;;;;;;;;;;;;x
-GetCadetToken_Prefix_trusting;Траст;;;;;;;;;;;;;x
-GetCadetToken_Prefix_inspiring_leader;Стир;;;;;;;;;;;;;x
-GetCadetToken_Prefix_trickster;Трик;;;;;;;;;;;;;x
-GetCadetToken_Prefix_blinded;Блинд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_seducer;Чарм;;;;;;;;;;;;;x
-GetCadetToken_Prefix_seductress;Темпт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_architect;Билд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_strategist;Вар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_shrewd;Шреуд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_dull;Далл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_robust;Браун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_immortal;Дет;;;;;;;;;;;;;x
-GetCadetToken_Prefix_cannibal_trait;Мит;;;;;;;;;;;;;x
-GetCadetToken_Prefix_knight;Найт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_wildling;Вилж;;;;;;;;;;;;;x
-GetCadetToken_Prefix_giant;Гиант;;;;;;;;;;;;;x
-GetCadetToken_Prefix_widowed;Грейв;;;;;;;;;;;;;x
-GetCadetToken_Prefix_undead;Дед;;;;;;;;;;;;;x
-GetCadetToken_Prefix_master_warrior;Сворд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_dragon_slayer;Слей;;;;;;;;;;;;;x
-GetCadetToken_Prefix_dragon_dreams;Дрим;;;;;;;;;;;;;x
-GetCadetToken_Prefix_scarred_high;Скар;;;;;;;;;;;;;x
-GetCadetToken_Prefix_one_eyed;Иэ;;;;;;;;;;;;;x
-GetCadetToken_Prefix_one_handed;Хэнд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_one_legged;Лек;;;;;;;;;;;;;x
-GetCadetToken_Prefix_crippled ;Валк;;;;;;;;;;;;;x
-GetCadetToken_Prefix_greyscale_scarred;Грей;;;;;;;;;;;;;x
-GetCadetToken_Prefix_blinded_age;Блинд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_viking;Рив;;;;;;;;;;;;;x
-GetCadetToken_Prefix_ravager;Рейд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_seaking;Си;;;;;;;;;;;;;x
-GetCadetToken_Prefix_sea_queen;Си;;;;;;;;;;;;;x
-GetCadetToken_Prefix_fashionable;Клот;;;;;;;;;;;;;x
-GetCadetToken_Prefix_tall;Талл;;;;;;;;;;;;;x
-GetCadetToken_Prefix_authoritative;Ворд;;;;;;;;;;;;;x
-GetCadetToken_Prefix_familyperson;Кин;;;;;;;;;;;;;x
-GetCadetToken_Prefix_stubborn;Вил;;;;;;;;;;;;;x
-GetCadetToken_Prefix_ruthless;Хард;;;;;;;;;;;;;x
-GetCadetToken_Prefix_honorable;Райт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_fire_obsessed;Файр;;;;;;;;;;;;;x
-GetCadetToken_Prefix_red_priest;Ред;;;;;;;;;;;;;x
-GetCadetToken_Prefix_chosen_by_rhllor;Азор;;;;;;;;;;;;;x
-GetCadetToken_Prefix_resurrected_by_rhllor;Лайт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_drowned;Дроун;;;;;;;;;;;;;x
-GetCadetToken_Prefix_greensight;Сир;;;;;;;;;;;;;x
-GetCadetToken_Prefix_SKINCHANGER;Скин;;;;;;;;;;;;;x
-GetCadetToken_Prefix_favored_by_rhoyne;Уотер;;;;;;;;;;;;;x
-GetCadetToken_Prefix_burned;Бён;;;;;;;;;;;;;x
-GetCadetToken_Prefix_is_fat;Фэт;;;;;;;;;;;;;x
-GetCadetToken_Prefix_is_malnourished;Тин;;;;;;;;;;;;;x
-GetCadetToken_Prefix_DynastyName;[cadet_parent.GetLastWordInDynastyName];;;;;;;;;;;;;x
-GetCadetToken_Suffix_fyre;файр;;;;;;;;;;;;;x
-GetCadetToken_Suffix_wyne;вайн;;;;;;;;;;;;;x
-GetCadetToken_Suffix_joy;джой;;;;;;;;;;;;;x
-GetCadetToken_Suffix_tower;тауэр;;;;;;;;;;;;;x
-GetCadetToken_Suffix_ly;лай;;;;;;;;;;;;;x
-GetCadetToken_Suffix_mont;монт;;;;;;;;;;;;;x
-GetCadetToken_Suffix_er;эр;;;;;;;;;;;;;x
-GetCadetToken_Suffix_ent;энт;;;;;;;;;;;;;x
-GetCadetToken_Suffix_ton;тон;;;;;;;;;;;;;x
-GetCadetToken_Suffix_heart;херт;;;;;;;;;;;;;x
-GetCadetToken_Suffix_way;вай;;;;;;;;;;;;;x
-GetCadetToken_Suffix_hall;холл;;;;;;;;;;;;;x
-GetCadetToken_Suffix_wyn;вин;;;;;;;;;;;;;x
-GetCadetToken_Suffix_brother;бразер;;;;;;;;;;;;;x
-GetCadetToken_Suffix_sister;систер;;;;;;;;;;;;;x
-GetCadetToken_Suffix_law;лоу;;;;;;;;;;;;;x
-GetCadetToken_Suffix_cliffe;клифф;;;;;;;;;;;;;x
-GetCadetToken_Suffix_ren;рен;;;;;;;;;;;;;x
-GetCadetToken_Suffix_more;мор;;;;;;;;;;;;;x
-GetCadetToken_Suffix_field;филд;;;;;;;;;;;;;x
-GetCadetToken_Suffix_worth;ворт;;;;;;;;;;;;;x
-GetCadetToken_Suffix_den;ден;;;;;;;;;;;;;x
-GetCadetToken_Suffix_ling;линк;;;;;;;;;;;;;x
-GetCadetToken_Suffix_well;велл;;;;;;;;;;;;;x
-GetCadetToken_Suffix_bury;бёри;;;;;;;;;;;;;x
-GetCadetToken_Suffix_dore;дор;;;;;;;;;;;;;x
-GetCadetToken_Suffix_ster;стер;;;;;;;;;;;;;x
-GetCadetToken_Suffix_ings;ингс;;;;;;;;;;;;;x
-GetCadetToken_Suffix_glass;гласс;;;;;;;;;;;;;x
-GetCadetToken_Suffix_don;дон;;;;;;;;;;;;;x
-GetCadetToken_Suffix_beck;бек;;;;;;;;;;;;;x
-GetCadetToken_Suffix_wood;вуд;;;;;;;;;;;;;x
-GetCadetToken_Suffix_bray;брэй;;;;;;;;;;;;;x
-GetCadetToken_Suffix_man;мэн;;;;;;;;;;;;;x
-GetCadetToken_Suffix_mark;марк;;;;;;;;;;;;;x
-GetCadetToken_Suffix_weather;везе;;;;;;;;;;;;;x
-GetCadetToken_Suffix_ler;лер;;;;;;;;;;;;;x
-GetCadetToken_Suffix_rose;роуз;;;;;;;;;;;;;x
-GetCadetToken_Suffix_ayne;эйн;;;;;;;;;;;;;x
-GetCadetToken_Suffix_water;уотер;;;;;;;;;;;;;x
-GetCadetToken_Suffix_ing;инг;;;;;;;;;;;;;x
-GetCadetToken_Suffix_lard;лард;;;;;;;;;;;;;x
-GetCadetToken_Suffix_black;блэк;;;;;;;;;;;;;x
-GetCadetToken_Suffix_ward;вард;;;;;;;;;;;;;x
-GetCadetToken_Suffix_hart;харт;;;;;;;;;;;;;x
-GetCadetToken_Suffix_wynd;винд;;;;;;;;;;;;;x
-GetCadetToken_Suffix_iron;айрон;;;;;;;;;;;;;x
-GetCadetToken_Suffix_lyn;лин;;;;;;;;;;;;;x
-GetCadetToken_Suffix_tree;три;;;;;;;;;;;;;x
-GetCadetToken_Suffix_ney;ней;;;;;;;;;;;;;x
-GetCadetToken_Suffix_ford;форд;;;;;;;;;;;;;x
-GetCadetToken_Suffix_wick;вик;;;;;;;;;;;;;x
-GetCadetToken_Suffix_s;с;;;;;;;;;;;;;x
-GetCadetToken_Suffix_fort;форт;;;;;;;;;;;;;x
-GetCadetToken_Suffix_land;лэнд;;;;;;;;;;;;;x
-GetCadetToken_Suffix_cliff;клифф;;;;;;;;;;;;;x
-GetCadetToken_Suffix_good;гуд;;;;;;;;;;;;;x
-GetCadetToken_Suffix_thorne;торн;;;;;;;;;;;;;x
-GetCadetToken_Suffix_spoon;спун;;;;;;;;;;;;;x
-GetCadetToken_Suffix_brand;бренд;;;;;;;;;;;;;x
-GetCadetToken_Suffix_spear;спир;;;;;;;;;;;;;x
-GetCadetToken_Suffix_berry;берри;;;;;;;;;;;;;x
-GetCadetToken_Suffix_shaw;шоу;;;;;;;;;;;;;x
-GetCadetToken_Suffix_wayner;уэйнер;;;;;;;;;;;;;x
-GetCadetToken_Suffix_cross;кросс;;;;;;;;;;;;;x
-GetCadetToken_Suffix_ridge;ридж;;;;;;;;;;;;;x
-GetCadetToken_Suffix_house;хаус;;;;;;;;;;;;;x
-GetCadetToken_Suffix_brook;брук;;;;;;;;;;;;;x
-GetCadetToken_Suffix_wright;райт;;;;;;;;;;;;;x
-GetCadetToken_Suffix_shire;шир;;;;;;;;;;;;;x
-GetCadetToken_Suffix_mouth;мот;;;;;;;;;;;;;x
-GetCadetToken_Suffix_mon;мон;;;;;;;;;;;;;x
-GetCadetToken_Suffix_gurt;гурт;;;;;;;;;;;;;x
-GetCadetToken_Suffix_staff;стафф;;;;;;;;;;;;;x
-GetCadetToken_Suffix_rion;рион;;;;;;;;;;;;;x
-GetCadetToken_Suffix_woody;вуди;;;;;;;;;;;;;x
-GetCadetToken_GetHouseSymbol_Fallback;[This.GetCadetToken_Suffix];;;;;;;;;;;;;x
+#CODE;ENGLISH;x
+EVTDESCcadet.1;Как вы назовёте новый младший дом?;x
+EVTOPTAcadet.1;Дом Уайтвульф;x
+EVTOPTBcadet.1;Дом Голдфанг;x
+EVTOPTCcadet.1;Дом Дрэдвульф;x
+EVTOPTDcadet.1;Дом Винтерхолд;x
+EVTOPTAcadet.2;Дом Редвирм;x
+EVTOPTBcadet.2;Дом Трудрэйк;x
+EVTOPTCcadet.2;Дом Файрблад;x
+EVTOPTDcadet.2;Дом Голдфайр;x
+EVTOPTAcadet.3;Дом Сильвермейн;x
+EVTOPTBcadet.3;Дом Редклау;x
+EVTOPTCcadet.3;Дом Роаринг;x
+EVTOPTDcadet.3;Дом Лайонфорд;x
+EVTOPTAcadet.4;Дом Дарксан;x
+EVTOPTBcadet.4;Дом Санвайпер;x
+EVTOPTCcadet.4;Дом Блэкеддер;x
+EVTOPTDcadet.4;Дом Снейкспир;x
+EVTOPTAcadet.5;Дом Санвайпер;x
+EVTOPTBcadet.5;Дом Блэкеддер;x
+EVTOPTCcadet.5;Дом Снейкспир;x
+EVTOPTDcadet.5;Дом Стилтраут;x
+EVTOPTAcadet.6;Дом Редвинг;x
+EVTOPTBcadet.6;Дом Кестрел;x
+EVTOPTCcadet.6;Дом Блюберд;x
+EVTOPTDcadet.6;Дом Скайварден;x
+EVTOPTAcadet.7;Дом Стегбёрн;x
+EVTOPTBcadet.7;Дом Стормхарт;x
+EVTOPTCcadet.7;Дом Дюрренд;x
+EVTOPTDcadet.7;Дом Дир;x
+EVTOPTAcadet.8;Дом Бладроуз;x
+EVTOPTBcadet.8;Дом Блэкроуз;x
+EVTOPTCcadet.8;Дом Смолроуз;x
+EVTOPTDcadet.8;Дом Гринроуз;x
+EVTOPTAcadet.9;Дом Сильверинк;x
+EVTOPTBcadet.9;Дом Редджой;x
+EVTOPTCcadet.9;Дом Айронкракен;x
+EVTOPTDcadet.9;Дом Хардман;x
+EVTOPTAcadet.13;Дом Твинчайлд;x
+EVTOPTBcadet.13;Дом Голдкросс;x
+EVTOPTCcadet.13;Дом Толбридж;x
+EVTOPTDcadet.13;Дом Нортгейт;x
+EVTDESCcadet.10;Связь вашей младшей ветви дома со старшей - крепка. Кровь людская - не водица.;x
+EVTOPTAcadet.10;Oк;x
+cadet_bastard;Дать начало младшей ветви дома;x
+cadet_bastard_desc;[Root.GetTitledFirstNameWithDynastyAndTitleNoRegnal] станет главой новой династии.;x
+EVTOPTAcadet.11;Дом с Севера;x
+EVTOPTBcadet.11;Дом с Юга;x
+EVTOPTCcadet.11;Дом с Запада;x
+EVTOPTDcadet.11;Дом с Востока;x
+legitimise_not_bastard_cadet;Признать младшую ветвь;x
+legitimise_not_bastard_cadet;Одному из ваших родственников была дарована земля и право основать младшую ветвь вашего дома и править от своего имени. А если вдруг дому [From.GetOnlyDynastyName]  понадобится наследник - они будут первыми в очереди.;x
+EVT_DESC_cadet_15;[Root.GetTitledFirstName], настоящим я дарую Вам честь, признав Ваш младший Дом [Root.GetOnlyDynastyName] полноправными и легитимными членами Дома [From.GetOnlyDynastyName]. При этом вы и ваша семья отныне признаны законными наследниками моего дома.\n\nВаш\n[From.GetTitledFirstNameoftheHouse],;x
+EVT_OPTA_cadet_15;Мы едины!;x
+TOOLTIPlegitimise_cadet;Все члены младшего Дома [Root.GetOnlyDynastyName] будут узаконены и станут полноправными членами Дома [From.GetOnlyDynastyName]\n;x
+TOOLTIPlegitimise_cadetB;Все члены младшего Дома [Root.GetOnlyDynastyName] будут узаконены и станут полноправными членами Дома [This.GetOnlyDynastyName]\n;x
+legitimise_cadet;Признать младший Дом;x
+legitimise_cadet_desc; ;x
+legitimise_cadet_named;Признать Дом [Root.GetOnlyDynastyName];x
+TOOLTIPlegitimise_cadetA;[From.GetTitledFirstName] - последний живой член Дома [From.GetOnlyDynastyName], который может наследовать титулы\n;x
+EVT_DESC_cadet_17;Всем добрым лордам королевства, настоящим я дарую своим родственникам честь, признав младший Дом [legitmised_cadet.GetOnlyDynastyName] полноправными и легитимными членами Дома [cadet_legitimiser.GetOnlyDynastyName]. При этом, [legitmised_cadet.GetSheHe] и [legitmised_cadet.GetHerHis] родственники признаны законными наследниками моего Дома .\n\nПодпись\n[cadet_legitimiser.GetTitledFirstNameoftheHouse];x
+EVTOPTAcadet.20;Дом Стейн;x
+EVTOPTBcadet.20;Дом Брэдшоу;x
+EVTOPTCcadet.20;Дом Уилков;x
+EVTOPTAcadet.21;Дом Телволл;x
+EVTOPTBcadet.21;Дом Стопфорд;x
+EVTOPTCcadet.21;Дом Баиль;x
+EVTOPTAcadet.22;Дом Сейбл;x
+EVTOPTBcadet.22;Дом Бринкдейл;x
+EVTOPTCcadet.22;Дом Моргенстер;x
+EVTOPTAcadet.23;Дом Эллестон;x
+EVTOPTBcadet.23;Дом Линдби;x
+EVTOPTCcadet.23;Дом Шейу;x
+EVTOPTAcadet.24;Дом Дромгар;x
+EVTOPTBcadet.24;Ком Келидрион;x
+EVTOPTCcadet.24;Дом Эмбартис;x
+EVTOPTAcadet.25;Дом Синдориен;x
+EVTOPTBcadet.25;Дом хардшелл;x
+EVTOPTCcadet.25;Дом Анготис;x
+EVTOPTAcadet.26;Дом Элдрикпорт;x
+EVTOPTBcadet.26;Дом Итон;x
+EVTOPTCcadet.26;Дом Гойшам;x
+EVTOPTAcadet.27;Дом Уайтстафф;x
+EVTOPTBcadet.27;Дом Рейвенскар;x
+EVTOPTCcadet.27;Дом Брикбоу;x
+EVTOPTAcadet.28;Дом Рендл;x
+EVTOPTBcadet.28;Дом Кнолл;x
+EVTOPTCcadet.28;Дом Хенстон;x
+EVTOPTAcadet.29;Дом Хедкастл;x
+EVTOPTBcadet.29;Дом Эрневолд;x
+EVTOPTCcadet.29;Дом Алгармонт;x
+EVTOPTAcadet.30;Дом Юнг;x
+EVTOPTBcadet.30;Дом Беннерс;x
+EVTOPTCcadet.30;Дом Майденфилд;x
+EVTOPTAcadet.31;Дом Лумбард;x
+EVTOPTBcadet.31;Дом Горленд;x
+EVTOPTCcadet.31;Дом Веаль;x
+EVTOPTAcadet.32;Дом Стоунхелм;x
+EVTOPTBcadet.32;Дом Олортон;x
+EVTOPTCcadet.32;Дом Мечерсфорд;x
+EVTOPTAcadet.33;Дом Мербури;x
+EVTOPTBcadet.33;Дом Гейтс;x
+EVTOPTCcadet.33;Дом Паллатер;x
+EVTOPTAcadet.34;Дом Тезерстоун;x
+EVTOPTBcadet.34;Дом Рамбольд;x
+EVTOPTCcadet.34;Дом Дампорт;x
+EVTOPTAcadet.35;Дом Буллен;x
+EVTOPTBcadet.35;Дом Вэйерр;x
+EVTOPTCcadet.35;Дом Кемберлинг;x
+EVTOPTAcadet.36;Дом Эестинг;x
+EVTOPTBcadet.36;Дом Коррунд;x
+EVTOPTCcadet.36;Дом Гарриот;x
+EVTOPTAcadet.37;Дом Мотелл;x
+EVTOPTBcadet.37;Дом Вейетон;x
+EVTOPTCcadet.37;Дом Салбая;x
+EVTOPTAcadet.38;Дом Касанмар;x
+EVTOPTBcadet.38;Дом Гарглесс;x
+EVTOPTCcadet.38;Дом Анвил;x
+EVTOPTAcadet.39;Дом Серенмонт;x
+EVTOPTBcadet.39;Дом Торендейн;x
+EVTOPTCcadet.39;Дом Пельстоун;x
+EVTOPTAcadet.40;Дом Лисленд;x
+EVTOPTBcadet.40;Дом Боуйер;x
+EVTOPTCcadet.40;Дом Спайрес;x
+EVTOPTAcadet.41;Дом Карсон;x
+EVTOPTBcadet.41;Дом Медлар;x
+EVTOPTCcadet.41;Дом Айронквилл;x
+EVTOPTAcadet.42;Дом Аломар;x
+EVTOPTBcadet.42;Дом Сантарион;x
+EVTOPTCcadet.42;Дом Бримстоун;x
+EVTOPTAcadet.43;Дом Глендор;x
+EVTOPTBcadet.43;Дом Аркерт;x
+EVTOPTCcadet.43;Дом Блэкгейт;x
+EVTOPTAcadet.44;Дом Рейсейл;x
+EVTOPTBcadet.44;Дом Хакленд;x
+EVTOPTCcadet.44;Дом Фримен;x
+EVTOPTAcadet.45;Дом Ширклифф;x
+EVTOPTBcadet.45;Дом Ардвей;x
+EVTOPTCcadet.45;Дом Селтир;x
+EVTOPTAcadet.46;Дом Стронгроу;x
+EVTOPTBcadet.46;Дом Бейлкип;x
+EVTOPTCcadet.46;Дом Тирск;x
+EVTOPTAcadet.47;Дом Айссвинд;x
+EVTOPTBcadet.47;Дом Крульси;x
+EVTOPTCcadet.47;Дом Вейлнр;x
+EVTOPTAcadet.48;Дом Делвинг;x
+EVTOPTBcadet.48;Дом Остервик;x
+EVTOPTCcadet.48;Дом Тендейл;x
+EVTOPTAcadet.49;Дом Нейрест;x
+EVTOPTBcadet.49;Дом Нетермур;x
+EVTOPTCcadet.49;Дом Фастольф;x
+EVTOPTAcadet.50;Дом Тенкред;x
+EVTOPTBcadet.50;Дом Кадмонт;x
+EVTOPTCcadet.50;Дом Гуль;x
+EVTOPTAcadet.51;Дом Хоуквуд;x
+EVTOPTBcadet.51;Дом Лейн;x
+EVTOPTCcadet.51;Дом Рутленд;x
+EVTOPTAcadet.52;Дом Вейрстоун;x
+EVTOPTBcadet.52;Дом Кескельд;x
+EVTOPTCcadet.52;Дом Брейсс;x
+EVTOPTAcadet.53;Дом Фартинг;x
+EVTOPTBcadet.53;Дом Катрайт;x
+EVTOPTCcadet.53;Дом Редброук;x
+EVTOPTAcadet.54;Дом Кендлстон;x
+EVTOPTBcadet.54;Дом Кеннок;x
+EVTOPTCcadet.54;Дом Таллер;x
+EVTOPTAcadet.55;Дом Изли;x
+EVTOPTBcadet.55;Дом Челк;x
+EVTOPTCcadet.55;Дом Лайлбен;x
+EVTOPTAcadet.56;Дом Галвейн;x
+EVTOPTBcadet.56;Дом Бругс;x
+EVTOPTCcadet.56;Дом Монггейвин;x
+EVTOPTAcadet.57;Дом Скиннер;x
+EVTOPTBcadet.57;Дом Куллинг;x
+EVTOPTCcadet.57;Дом Уэйлбек;x
+EVTOPTAcadet.58;Дом Барроус;x
+EVTOPTBcadet.58;Дом Танетт;x
+EVTOPTCcadet.58;Дом Кроунес;x
+EVTOPTAcadet.59;Дом Глен;x
+EVTOPTBcadet.59;Дом Свод;x
+EVTOPTCcadet.59;Дом Шейл;x
+EVTOPTAcadet.60;Дом Карслби;x
+EVTOPTBcadet.60;Дом Бенвуд;x
+EVTOPTCcadet.60;Дом Грейклифф;x
+EVTOPTAcadet.61;Дом Роунтон;x
+EVTOPTBcadet.61;Дом Уайз;x
+EVTOPTCcadet.61;Дом Хейл;x
+EVTOPTAcadet.62;Дом Хьюм;x
+EVTOPTBcadet.62;Дом Флегг;x
+EVTOPTCcadet.62;Дом Барлоу;x
+EVTOPTAcadet.63;Дом Фит;x
+EVTOPTBcadet.63;Дом Уэтт;x
+EVTOPTCcadet.63;Дом Дроунленд;x
+EVTOPTAcadet.64;Дом Ринн;x
+EVTOPTBcadet.64;Дом Тротт;x
+EVTOPTCcadet.64;Дом Марсфорд;x
+EVTOPTAcadet.65;Дом Беллоус;x
+EVTOPTBcadet.65;Дом Хон;x
+EVTOPTCcadet.65;Дом Эйск;x
+EVTOPTAcadet.66;Дом Брейсвелл;x
+EVTOPTBcadet.66;Дом Холт;x
+EVTOPTCcadet.66;Дом Вард;x
+EVTOPTAcadet.67;Дом Эркин;x
+EVTOPTBcadet.67;Дом Джетт;x
+EVTOPTCcadet.67;Дом Мейолл;x
+EVTOPTAcadet.68;Дом Амблтон;x
+EVTOPTBcadet.68;Дом Тенфилд;x
+EVTOPTCcadet.68;Дом Рэби;x
+EVTOPTAcadet.69;Дом Уэйк;x
+EVTOPTBcadet.69;Дом Стоунвелл;x
+EVTOPTCcadet.69;Дом Фламбард;x
+EVTOPTAcadet.70;Дом Сламбетон;x
+EVTOPTBcadet.70;Дом Наттефилд;x
+EVTOPTCcadet.70;Дом Гринэйс;x
+EVTOPTAcadet.71;Дом Уоринхам;x
+EVTOPTBcadet.71;Дом Эктон;x
+EVTOPTCcadet.71;Дом Бротмот;x
+EVTOPTAcadet.72;Дом Грон;x
+EVTOPTBcadet.72;Дом Гормонт;x
+EVTOPTCcadet.72;Дом Старпайк;x
+EVTOPTAcadet.73;Дом Стронвайн;x
+EVTOPTBcadet.73;Дом Винтнер;x
+EVTOPTCcadet.73;Дом Райпвелл;x
+EVTOPTAcadet.74;Дом Тэдбюри;x
+EVTOPTBcadet.74;Дом Корри;x
+EVTOPTCcadet.74;Дом Пойнтон;x
+EVTOPTAcadet.75;Дом Хонби;x
+EVTOPTBcadet.75;Дом Иллвик;x
+EVTOPTCcadet.75;Дом Редхет;x
+EVTOPTAcadet.76;Дом Бримсли;x
+EVTOPTBcadet.76;Дом Кетерби;x
+EVTOPTCcadet.76;Дом Трепп;x
+EVTOPTAcadet.77;Дом Бри;x
+EVTOPTBcadet.77;Дом Олдуотер;x
+EVTOPTCcadet.77;Дом Нокфорд;x
+EVTOPTAcadet.78;Дом Сильверкот;x
+EVTOPTBcadet.78;Дом Андервуд;x
+EVTOPTCcadet.78;Дом Вернон;x
+EVTOPTAcadet.79;Дом Бердсли;x
+EVTOPTBcadet.79;Дом Эрдхилл;x
+EVTOPTCcadet.79;Дом Холгрив;x
+EVTOPTAcadet.80;Дом Флетчфилд;x
+EVTOPTBcadet.80;Дом Ньюхолл;x
+EVTOPTCcadet.80;Дом Доубридж;x
+EVTOPTAcadet.81;Дом Виверли;x
+EVTOPTBcadet.81;Дом Хоув;x
+EVTOPTCcadet.81;Дом Лонгфелл;x
+EVTOPTAcadet.82;Дом Глейвстон;x
+EVTOPTBcadet.82;Дом Мойл;x
+EVTOPTCcadet.82;Дом Одеррик;x
+EVTOPTAcadet.83;Дом Девентри;x
+EVTOPTBcadet.83;Дом Нордвик;x
+EVTOPTCcadet.83;Дом Рив;x
+EVTOPTAcadet.84;Дом Баджер;x
+EVTOPTBcadet.84;Дом Лайринхем;x
+EVTOPTCcadet.84;Дом Урс;x
+EVTOPTAcadet.85;Дом Орресби;x
+EVTOPTBcadet.85;Дом Грейнор;x
+EVTOPTCcadet.85;Дом Руссард;x
+EVTOPTAcadet.86;Дом Питт;x
+EVTOPTBcadet.86;Дом Квинсмарк;x
+EVTOPTCcadet.86;Дом Сплинтервуд;x
+EVTOPTAcadet.87;Дом Аргенмонт;x
+EVTOPTBcadet.87;Дом Роч;x
+EVTOPTCcadet.87;Дом Пиквилд;x
+EVTOPTAcadet.88;Дом Коур;x
+EVTOPTBcadet.88;Дом Эстли;x
+EVTOPTCcadet.88;Дом Поллард;x
+EVTOPTAcadet.89;Дом Эмбертон;x
+EVTOPTBcadet.89;Дом Хоармонт;x
+EVTOPTCcadet.89;Дом Ашенспур;x
+EVTOPTAcadet.90;Дом Нелсби;x
+EVTOPTBcadet.90;Дом Аудли;x
+EVTOPTCcadet.90;Дом Идмер;x
+EVTOPTAcadet.91;Дом Алтон;x
+EVTOPTBcadet.91;Дом Кесселриг;x
+EVTOPTCcadet.91;Дом Лонншид;x
+EVTOPTAcadet.92;Дом Майденхем;x
+EVTOPTBcadet.92;Дом Холхем;x
+EVTOPTCcadet.92;Дом Йелд;x
+EVTOPTAcadet.93;Дом Алеструм;x
+EVTOPTBcadet.93;Дом Данмилл;x
+EVTOPTCcadet.93;Дом Монткарр;x
+EVTOPTAcadet.94;Дом Нестле;x
+EVTOPTBcadet.94;Дом Стил;x
+EVTOPTCcadet.94;Дом Дересби;x
+EVTOPTAcadet.95;Дом Брюстон;x
+EVTOPTBcadet.95;Дом Файн;x
+EVTOPTCcadet.95;Дом Меллор;x
+GetCadetHouseName_A;[This.GetCadetToken_Prefix][This.GetCadetToken_Suffix];x
+GetCadetHouseName_B;[This.GetCadetToken_Prefix][cadet_parent.GetHouseSymbol];x
+GetHouseSymbol_Acorn;экон;x
+GetHouseSymbol_Adder;аддер;x
+GetHouseSymbol_Anchor;энхор;x
+GetHouseSymbol_Ant;энт;x
+GetHouseSymbol_Antler;антлер;x
+GetHouseSymbol_Apple;эппл;x
+GetHouseSymbol_Arrow;эрроу;x
+GetHouseSymbol_Axe;экс;x
+GetHouseSymbol_Badger;баджер;x
+GetHouseSymbol_Barrel;баррель;x
+GetHouseSymbol_Bat;бэт;x
+GetHouseSymbol_Bear;бир;x
+GetHouseSymbol_Bee;би;x
+GetHouseSymbol_Beetle;битл;x
+GetHouseSymbol_Bell;белл;x
+GetHouseSymbol_Berry;берри;x
+GetHouseSymbol_Bird;бёд;x
+GetHouseSymbol_Boar;боар;x
+GetHouseSymbol_Bolt;болт;x
+GetHouseSymbol_Bone;боун;x
+GetHouseSymbol_Book;бук;x
+GetHouseSymbol_Boot;буи;x
+GetHouseSymbol_Bow;боу;x
+GetHouseSymbol_Bridge;бридж;x
+GetHouseSymbol_Bronze;бронз;x
+GetHouseSymbol_Brook;брук;x
+GetHouseSymbol_Bucket;букет;x
+GetHouseSymbol_Buckle;бакл;x
+GetHouseSymbol_Bull;булл;x
+GetHouseSymbol_Burn;бён;x
+GetHouseSymbol_Bush;буш;x
+GetHouseSymbol_Butterfly;баттерфлай;x
+GetHouseSymbol_Candle;кэндл;x
+GetHouseSymbol_Castle;кастл;x
+GetHouseSymbol_Cat;кэт;x
+GetHouseSymbol_Centaur;кентавр;x
+GetHouseSymbol_Codd;кодд;x
+GetHouseSymbol_Coin;койн;x
+GetHouseSymbol_Crab;крэб;x
+GetHouseSymbol_Crane;крейн;x
+GetHouseSymbol_Cross;кросс;x
+GetHouseSymbol_Crow;кроу;x
+GetHouseSymbol_Crown;кроун;x
+GetHouseSymbol_Dagger;даггер;x
+GetHouseSymbol_Deer;дир;x
+GetHouseSymbol_Dolphin;дольфин;x
+GetHouseSymbol_Dragon;дрэгон;x
+GetHouseSymbol_Drift;дрифт;x
+GetHouseSymbol_Eagle;игл;x
+GetHouseSymbol_Falcon;фалкон;x
+GetHouseSymbol_Fawn;фавн;x
+GetHouseSymbol_Feather;фезер;x
+GetHouseSymbol_Ferret;феррет;x
+GetHouseSymbol_Fish;фиш;x
+GetHouseSymbol_Fist;фист;x
+GetHouseSymbol_Flagon;флэгон;x
+GetHouseSymbol_Flail;флейль;x
+GetHouseSymbol_Flame;флейм;x
+GetHouseSymbol_Flower;флауэр;x
+GetHouseSymbol_Fool;фул;x
+GetHouseSymbol_Foot;фут;x
+GetHouseSymbol_Fork;фок;x
+GetHouseSymbol_Fort;форт;x
+GetHouseSymbol_Fox;фокс;x
+GetHouseSymbol_Frog;фрог;x
+GetHouseSymbol_Giant;гиант;x
+GetHouseSymbol_Good;гуд;x
+GetHouseSymbol_Goose;гус;x
+GetHouseSymbol_Griffin;гриффин;x
+GetHouseSymbol_Hammer;хаммер;x
+GetHouseSymbol_Hand;хэнд;x
+GetHouseSymbol_Harp;харп;x
+GetHouseSymbol_Hawk;хоук;x
+GetHouseSymbol_Hay;хэй;x
+GetHouseSymbol_Heart;хэрт;x
+GetHouseSymbol_Helm;хелм;x
+GetHouseSymbol_Heron;хэрон;x
+GetHouseSymbol_Horn;хорн;x
+GetHouseSymbol_Horse;хорс;x
+GetHouseSymbol_Hound;хаунд;x
+GetHouseSymbol_House;хаус;x
+GetHouseSymbol_Hunter;хантер;x
+GetHouseSymbol_Ivy;иви;x
+GetHouseSymbol_Kettle;кеттл;x
+GetHouseSymbol_Key;кей;x
+GetHouseSymbol_King;кинг;x
+GetHouseSymbol_Knife;найф;x
+GetHouseSymbol_Knight;найт;x
+GetHouseSymbol_Kraken;кракен;x
+GetHouseSymbol_Lamb;лэмб;x
+GetHouseSymbol_Lance;ланс;x
+GetHouseSymbol_Lemon;лаймон;x
+GetHouseSymbol_Leopard;леопард;x
+GetHouseSymbol_Leviathan;левиафан;x
+GetHouseSymbol_Lion;лайон;x
+GetHouseSymbol_Lizard;лизард;x
+GetHouseSymbol_Lobster;лобстер;x
+GetHouseSymbol_Maiden;майден;x
+GetHouseSymbol_Man;мэн;x
+GetHouseSymbol_Maple;мэпл;x
+GetHouseSymbol_Merman;мирмэн;x
+GetHouseSymbol_Moon;мун;x
+GetHouseSymbol_Moose;мус;x
+GetHouseSymbol_Nail;нейл;x
+GetHouseSymbol_Nettle;нэттл;x
+GetHouseSymbol_Noose;нус;x
+GetHouseSymbol_Oak;оак;x
+GetHouseSymbol_Oar;оар;x
+GetHouseSymbol_Onion;онион;x
+GetHouseSymbol_Owl;оул;x
+GetHouseSymbol_Ox;окс;x
+GetHouseSymbol_Pall;палл;x
+GetHouseSymbol_Paw;поу;x
+GetHouseSymbol_Pea;пи;x
+GetHouseSymbol_Peacock;пикок;x
+GetHouseSymbol_Pepper;пеппе;x
+GetHouseSymbol_Pine;пайн;x
+GetHouseSymbol_Plowman;плоумэн;x
+GetHouseSymbol_Quill;квилл;x
+GetHouseSymbol_Ram;рэм;x
+GetHouseSymbol_Raven;рэйвен;x
+GetHouseSymbol_Ring;ринг;x
+GetHouseSymbol_Rooster;рустер;x
+GetHouseSymbol_Rose;роуз;x
+GetHouseSymbol_Salmon;салмон;x
+GetHouseSymbol_Scales;скейлс;x
+GetHouseSymbol_Scorpion;скорпион;x
+GetHouseSymbol_Scythe;скит;x
+GetHouseSymbol_Seahorse;сихорс;x
+GetHouseSymbol_Sealion;силайон;x
+GetHouseSymbol_Serpent;серпент;x
+GetHouseSymbol_Shell;шелл;x
+GetHouseSymbol_Ship;шип;x
+GetHouseSymbol_Shoal;шоал;x
+GetHouseSymbol_Sister;систер;x
+GetHouseSymbol_Skull;скалл;x
+GetHouseSymbol_Snake;снейк;x
+GetHouseSymbol_Spear;спир;x
+GetHouseSymbol_Spider;спайдер;x
+GetHouseSymbol_Spoon;спун;x
+GetHouseSymbol_Spout;спут;x
+GetHouseSymbol_Squirrel;сквиррел;x
+GetHouseSymbol_Staff;стафф;x
+GetHouseSymbol_Stag;стэг;x
+GetHouseSymbol_Stallion;сталлион;x
+GetHouseSymbol_Star;стар;x
+GetHouseSymbol_Starfish;старфиш;x
+GetHouseSymbol_Storm;шторм;x
+GetHouseSymbol_Sun;сан;x
+GetHouseSymbol_Swan;соон;x
+GetHouseSymbol_Sword;сворд;x
+GetHouseSymbol_Swordfish;свордфиш;x
+GetHouseSymbol_Thistle;тистл;x
+GetHouseSymbol_Thorn;торн;x
+GetHouseSymbol_Tooth;туч;x
+GetHouseSymbol_Tower;тауэр;x
+GetHouseSymbol_Tree;три;x
+GetHouseSymbol_Trident;трайдент;x
+GetHouseSymbol_Turtle;тёртл;x
+GetHouseSymbol_Unicorn;аникорн;x
+GetHouseSymbol_Vulture;вултюр;x
+GetHouseSymbol_Wave;вэйв;x
+GetHouseSymbol_Weasel;висел;x
+GetHouseSymbol_Wheat;виэт;x
+GetHouseSymbol_Wheel;велл;x
+GetHouseSymbol_Willow;иллоу;x
+GetHouseSymbol_Wing;винг;x
+GetHouseSymbol_Wolf;вулф;x
+GetHouseSymbol_Wool;вул;x
+GetHouseSymbol_Wreath;рит;x
+GetHouseSymbol_Wright;райт;x
+GetHouseSymbol_Wyvern;уиверн;x
+GetCadetToken_Prefix_2;Тенн;x
+GetCadetToken_Prefix_3;Фрост;x
+GetCadetToken_Prefix_4;Айс;x
+GetCadetToken_Prefix_5;Скёл;x
+GetCadetToken_Prefix_6;Шивер;x
+GetCadetToken_Prefix_7;Айс;x
+GetCadetToken_Prefix_8;Фок;x
+GetCadetToken_Prefix_9;Фист;x
+GetCadetToken_Prefix_10;Антлер;x
+GetCadetToken_Prefix_11;Винтер;x
+GetCadetToken_Prefix_12;Уайт;x
+GetCadetToken_Prefix_13;Хонт;x
+GetCadetToken_Prefix_14;Хард;x
+GetCadetToken_Prefix_21;Кроу;x
+GetCadetToken_Prefix_22;Аррен;x
+GetCadetToken_Prefix_23;Пайн;x
+GetCadetToken_Prefix_24;Мур;x
+GetCadetToken_Prefix_25;Хэт;x
+GetCadetToken_Prefix_26;Сил;x
+GetCadetToken_Prefix_27;Хай;x
+GetCadetToken_Prefix_28;Ласт;x
+GetCadetToken_Prefix_29;Кар;x
+GetCadetToken_Prefix_30;Дип;x
+GetCadetToken_Prefix_32;Дрифт;x
+GetCadetToken_Prefix_33;Бир;x
+GetCadetToken_Prefix_34;Си;x
+GetCadetToken_Prefix_36;Блу;x
+GetCadetToken_Prefix_37;Айрон;x
+GetCadetToken_Prefix_38;Гроув;x
+GetCadetToken_Prefix_39;Вулфс;x
+GetCadetToken_Prefix_40;Стоун;x
+GetCadetToken_Prefix_41;Рилл;x
+GetCadetToken_Prefix_44;Торр;x
+GetCadetToken_Prefix_45;Голд;x
+GetCadetToken_Prefix_46;Барр;x
+GetCadetToken_Prefix_47;Винтер;x
+GetCadetToken_Prefix_49;Кер;x
+GetCadetToken_Prefix_51;Ист;x
+GetCadetToken_Prefix_52;Вип;x
+GetCadetToken_Prefix_53;Дред;x
+GetCadetToken_Prefix_54;Даун;x
+GetCadetToken_Prefix_55;Шип;x
+GetCadetToken_Prefix_56;Овер;x
+GetCadetToken_Prefix_58;Найф;x
+GetCadetToken_Prefix_59;Этер;x
+GetCadetToken_Prefix_60;Хорп;x
+GetCadetToken_Prefix_61;Уит;x
+GetCadetToken_Prefix_62;Уайт;x
+GetCadetToken_Prefix_63;Рэм;x
+GetCadetToken_Prefix_64;Ватч;x
+GetCadetToken_Prefix_65;Олд;x
+GetCadetToken_Prefix_66;Мот;x
+GetCadetToken_Prefix_68;Грей;x
+GetCadetToken_Prefix_69;Чур;x
+GetCadetToken_Prefix_70;Сильвер;x
+GetCadetToken_Prefix_71;Грей;x
+GetCadetToken_Prefix_72;Кейп;x
+GetCadetToken_Prefix_73;Флинт;x
+GetCadetToken_Prefix_74;Флинт;x
+GetCadetToken_Prefix_76;Кейп;x
+GetCadetToken_Prefix_77;Твин;x
+GetCadetToken_Prefix_79;Гард;x
+GetCadetToken_Prefix_80;Раш;x
+GetCadetToken_Prefix_81;Олд;x
+GetCadetToken_Prefix_82;Стил;x
+GetCadetToken_Prefix_83;Эрен;x
+GetCadetToken_Prefix_86;Грейв;x
+GetCadetToken_Prefix_87;Мейд;x
+GetCadetToken_Prefix_88;Блэк;x
+GetCadetToken_Prefix_89;Фэйр;x
+GetCadetToken_Prefix_90;Блэк;x
+GetCadetToken_Prefix_91;Стоун;x
+GetCadetToken_Prefix_92;Блу;x
+GetCadetToken_Prefix_93;Фиелд;x
+GetCadetToken_Prefix_94;Дар;x
+GetCadetToken_Prefix_95;Чил;x
+GetCadetToken_Prefix_97;Хар;x
+GetCadetToken_Prefix_98;Сальт;x
+GetCadetToken_Prefix_100;Тён;x
+GetCadetToken_Prefix_101;Рив;x
+GetCadetToken_Prefix_102;Бран;x
+GetCadetToken_Prefix_104;Херт;x
+GetCadetToken_Prefix_105;Вей;x
+GetCadetToken_Prefix_106;Гуд;x
+GetCadetToken_Prefix_107;Харрен;x
+GetCadetToken_Prefix_108;Вилл;x
+GetCadetToken_Prefix_109;Мейд;x
+GetCadetToken_Prefix_110;Пинк;x
+GetCadetToken_Prefix_111;Халл;x
+GetCadetToken_Prefix_112;Септ;x
+GetCadetToken_Prefix_113;Дед;x
+GetCadetToken_Prefix_115;Шор;x
+GetCadetToken_Prefix_118;Лонг;x
+GetCadetToken_Prefix_119;Свит;x
+GetCadetToken_Prefix_121;Пеб;x
+GetCadetToken_Prefix_122;Пэп;x
+GetCadetToken_Prefix_123;Кроу;x
+GetCadetToken_Prefix_124;Скоч;x
+GetCadetToken_Prefix_125;Рут;x
+GetCadetToken_Prefix_126;Колд;x
+GetCadetToken_Prefix_127;Вик;x
+GetCadetToken_Prefix_128;Мид;x
+GetCadetToken_Prefix_129;Мун;x
+GetCadetToken_Prefix_130;Нью;x
+GetCadetToken_Prefix_131;Снейк;x
+GetCadetToken_Prefix_132;Сан;x
+GetCadetToken_Prefix_133;Стронг;x
+GetCadetToken_Prefix_134;Стоун;x
+GetCadetToken_Prefix_135;Крэг;x
+GetCadetToken_Prefix_136;Ланс;x
+GetCadetToken_Prefix_137;Херт;x
+GetCadetToken_Prefix_138;Брик;x
+GetCadetToken_Prefix_139;Лонг;x
+GetCadetToken_Prefix_140;Гейт;x
+GetCadetToken_Prefix_141;Глен;x
+GetCadetToken_Prefix_142;Оак;x
+GetCadetToken_Prefix_143;Анч;x
+GetCadetToken_Prefix_144;Ред;x
+GetCadetToken_Prefix_145;Найн;x
+GetCadetToken_Prefix_146;Крэб;x
+GetCadetToken_Prefix_147;Вик;x
+GetCadetToken_Prefix_148;Хард;x
+GetCadetToken_Prefix_149;Гулл;x
+GetCadetToken_Prefix_150;Рун;x
+GetCadetToken_Prefix_151;Сил;x
+GetCadetToken_Prefix_152;Хорн;x
+GetCadetToken_Prefix_153;Пеб;x
+GetCadetToken_Prefix_154;Вик;x
+GetCadetToken_Prefix_155;Тайд;x
+GetCadetToken_Prefix_156;Орк;x
+GetCadetToken_Prefix_157;Вол;x
+GetCadetToken_Prefix_158;Хар;x
+GetCadetToken_Prefix_159;Стоун;x
+GetCadetToken_Prefix_160;Сальт;x
+GetCadetToken_Prefix_161;Лорд;x
+GetCadetToken_Prefix_162;Пайк;x
+GetCadetToken_Prefix_163;Бейн;x
+GetCadetToken_Prefix_164;Крэг;x
+GetCadetToken_Prefix_165;Делл;x
+GetCadetToken_Prefix_166;Брук;x
+GetCadetToken_Prefix_167;Фэйр;x
+GetCadetToken_Prefix_168;Фист;x
+GetCadetToken_Prefix_169;Кей;x
+GetCadetToken_Prefix_170;Мон;x
+GetCadetToken_Prefix_171;Тэрб;x
+GetCadetToken_Prefix_172;Тур;x
+GetCadetToken_Prefix_173;Эш;x
+GetCadetToken_Prefix_174;Голд;x
+GetCadetToken_Prefix_175;Нанн;x
+GetCadetToken_Prefix_176;Тенд;x
+GetCadetToken_Prefix_177;Пенд;x
+GetCadetToken_Prefix_178;Сарс;x
+GetCadetToken_Prefix_179;Голд;x
+GetCadetToken_Prefix_180;Хорн;x
+GetCadetToken_Prefix_181;Винд;x
+GetCadetToken_Prefix_182;Рок;x
+GetCadetToken_Prefix_183;Ланн;x
+GetCadetToken_Prefix_184;Окс;x
+GetCadetToken_Prefix_185;Хоу;x
+GetCadetToken_Prefix_186;Грин;x
+GetCadetToken_Prefix_187;Каст;x
+GetCadetToken_Prefix_188;Фэнг;x
+GetCadetToken_Prefix_190;Лон;x
+GetCadetToken_Prefix_191;Ден;x
+GetCadetToken_Prefix_192;Дрокс;x
+GetCadetToken_Prefix_193;Пик;x
+GetCadetToken_Prefix_194;Пейн;x
+GetCadetToken_Prefix_196;Ред;x
+GetCadetToken_Prefix_197;Крейк;x
+GetCadetToken_Prefix_198;Фэл;x
+GetCadetToken_Prefix_199;Корн;x
+GetCadetToken_Prefix_200;Грин;x
+GetCadetToken_Prefix_201;Мос;x
+GetCadetToken_Prefix_202;Бай;x
+GetCadetToken_Prefix_203;Фок;x
+GetCadetToken_Prefix_204;Рэй;x
+GetCadetToken_Prefix_205;Соу;x
+GetCadetToken_Prefix_206;Бёч;x
+GetCadetToken_Prefix_207;Ант;x
+GetCadetToken_Prefix_208;Брин;x
+GetCadetToken_Prefix_209;Эдж;x
+GetCadetToken_Prefix_210;Рол;x
+GetCadetToken_Prefix_211;Росб;x
+GetCadetToken_Prefix_212;Даск;x
+GetCadetToken_Prefix_213;Хол;x
+GetCadetToken_Prefix_214;Рук;x
+GetCadetToken_Prefix_215;Крэк;x
+GetCadetToken_Prefix_216;Дайр;x
+GetCadetToken_Prefix_217;Висп;x
+GetCadetToken_Prefix_218;Крэу;x
+GetCadetToken_Prefix_219;Клоу;x
+GetCadetToken_Prefix_220;Дрифт;x
+GetCadetToken_Prefix_221;Стоун;x
+GetCadetToken_Prefix_222;Брэм;x
+GetCadetToken_Prefix_223;Фарр;x
+GetCadetToken_Prefix_224;Хэй;x
+GetCadetToken_Prefix_225;Стоук;x
+GetCadetToken_Prefix_226;Кингс;x
+GetCadetToken_Prefix_227;Дэл;x
+GetCadetToken_Prefix_228;Грин;x
+GetCadetToken_Prefix_229;Атт;x
+GetCadetToken_Prefix_230;Вуд;x
+GetCadetToken_Prefix_231;Бай;x
+GetCadetToken_Prefix_232;Чит;x
+GetCadetToken_Prefix_233;Стоун;x
+GetCadetToken_Prefix_234;Шарп;x
+GetCadetToken_Prefix_235;Оак;x
+GetCadetToken_Prefix_236;Лейк;x
+GetCadetToken_Prefix_237;Глейдй;x
+GetCadetToken_Prefix_238;Моат;x
+GetCadetToken_Prefix_239;Доск;x
+GetCadetToken_Prefix_240;Кэт;x
+GetCadetToken_Prefix_241;Стенд;x
+GetCadetToken_Prefix_242;Дер;x
+GetCadetToken_Prefix_243;Гроув;x
+GetCadetToken_Prefix_244;Вит;x
+GetCadetToken_Prefix_246;Иви;x
+GetCadetToken_Prefix_247;Алд;x
+GetCadetToken_Prefix_248;Харп;x
+GetCadetToken_Prefix_249;Тум;x
+GetCadetToken_Prefix_250;Торр;x
+GetCadetToken_Prefix_251;Лей;x
+GetCadetToken_Prefix_252;Хэм;x
+GetCadetToken_Prefix_253;Бридж;x
+GetCadetToken_Prefix_254;Лонг;x
+GetCadetToken_Prefix_255;Роуз;x
+GetCadetToken_Prefix_256;Дарк;x
+GetCadetToken_Prefix_257;Холи;x
+GetCadetToken_Prefix_259;Грасс;x
+GetCadetToken_Prefix_260;Хаст;x
+GetCadetToken_Prefix_261;Оак;x
+GetCadetToken_Prefix_262;Грей;x
+GetCadetToken_Prefix_263;Грин;x
+GetCadetToken_Prefix_264;Соут;x
+GetCadetToken_Prefix_265;Вест;x
+GetCadetToken_Prefix_266;Смолл;x
+GetCadetToken_Prefix_267;Хай;x
+GetCadetToken_Prefix_270;Форд;x
+GetCadetToken_Prefix_271;Мэнд;x
+GetCadetToken_Prefix_272;Нор;x
+GetCadetToken_Prefix_273;Данн;x
+GetCadetToken_Prefix_274;Брайт;x
+GetCadetToken_Prefix_275;Делл;x
+GetCadetToken_Prefix_276;Миддл;x
+GetCadetToken_Prefix_277;Бард;x
+GetCadetToken_Prefix_278;Йел;x
+GetCadetToken_Prefix_279;Стар;x
+GetCadetToken_Prefix_280;Хорн;x
+GetCadetToken_Prefix_281;Фоун;x
+GetCadetToken_Prefix_282;Бэнд;x
+GetCadetToken_Prefix_283;Хоней;x
+GetCadetToken_Prefix_284;Соммер;x
+GetCadetToken_Prefix_285;Блэк;x
+GetCadetToken_Prefix_286;Олд;x
+GetCadetToken_Prefix_287;Ап;x
+GetCadetToken_Prefix_288;Хант;x
+GetCadetToken_Prefix_289;Тауэрс;x
+GetCadetToken_Prefix_290;Сан;x
+GetCadetToken_Prefix_291;Ринг;x
+GetCadetToken_Prefix_292;Уэйн;x
+GetCadetToken_Prefix_293;Брод;x
+GetCadetToken_Prefix_294;Фел;x
+GetCadetToken_Prefix_295;Ланг;x
+GetCadetToken_Prefix_296;Бронз;x
+GetCadetToken_Prefix_297;Хэд;x
+GetCadetToken_Prefix_298;Хэй;x
+GetCadetToken_Prefix_299;Пач;x
+GetCadetToken_Prefix_300;Дрейк;x
+GetCadetToken_Prefix_301;Гейл;x
+GetCadetToken_Prefix_302;Гранд;x
+GetCadetToken_Prefix_303;Гриффин;x
+GetCadetToken_Prefix_304;Сторм;x
+GetCadetToken_Prefix_305;Тарт;x
+GetCadetToken_Prefix_306;Саммер;x
+GetCadetToken_Prefix_307;Найт;x
+GetCadetToken_Prefix_308;Харвест;x
+GetCadetToken_Prefix_309;Подд;x
+GetCadetToken_Prefix_310;Галлоу;x
+GetCadetToken_Prefix_311;Блэк;x
+GetCadetToken_Prefix_312;Фоун;x
+GetCadetToken_Prefix_313;Адд;x
+GetCadetToken_Prefix_314;Кроу;x
+GetCadetToken_Prefix_315;Лон;x
+GetCadetToken_Prefix_316;Стоун;x
+GetCadetToken_Prefix_317;Лок;x
+GetCadetToken_Prefix_318;Амб;x
+GetCadetToken_Prefix_319;Тад;x
+GetCadetToken_Prefix_320;Рейн;x
+GetCadetToken_Prefix_321;Блу;x
+GetCadetToken_Prefix_322;Мист;x
+GetCadetToken_Prefix_323;Рейн;x
+GetCadetToken_Prefix_324;Уот;x
+GetCadetToken_Prefix_325;Уот;x
+GetCadetToken_Prefix_326;Эстер;x
+GetCadetToken_Prefix_327;Блэк;x
+GetCadetToken_Prefix_328;Принц;x
+GetCadetToken_Prefix_329;Вултур;x
+GetCadetToken_Prefix_330;Вил;x
+GetCadetToken_Prefix_331;Грейв;x
+GetCadetToken_Prefix_332;Хай;x
+GetCadetToken_Prefix_333;Скай;x
+GetCadetToken_Prefix_334;Айрон;x
+GetCadetToken_Prefix_335;Стар;x
+GetCadetToken_Prefix_336;Элбоу;x
+GetCadetToken_Prefix_337;Сэнд;x
+GetCadetToken_Prefix_338;Хелл;x
+GetCadetToken_Prefix_340;Ним;x
+GetCadetToken_Prefix_341;Скоч;x
+GetCadetToken_Prefix_342;Гэс;x
+GetCadetToken_Prefix_343;Тор;x
+GetCadetToken_Prefix_344;Скорж;x
+GetCadetToken_Prefix_345;Дюн;x
+GetCadetToken_Prefix_346;Сольт;x
+GetCadetToken_Prefix_347;Гхост;x
+GetCadetToken_Prefix_348;Спотт;x
+GetCadetToken_Prefix_349;Грейс;x
+GetCadetToken_Prefix_350;Плэнки;x
+GetCadetToken_Prefix_351;Лемон;x
+GetCadetToken_Prefix_352;Сан;x
+GetCadetToken_Prefix_353;Стоун;x
+GetCadetToken_Prefix_354;Ривер;x
+GetCadetToken_Prefix_355;Вуд;x
+GetCadetToken_Prefix_356;Брик;x
+GetCadetToken_Prefix_357;Лайт;x
+GetCadetToken_Prefix_358;Блуд;x
+GetCadetToken_Prefix_359;Галлоу;x
+GetCadetToken_Prefix_360;Ден;x
+GetCadetToken_Prefix_361;Скулл;x
+GetCadetToken_Prefix_364;Шейм;x
+GetCadetToken_Prefix_365;Урек;x
+GetCadetToken_Prefix_367;Тир;x
+GetCadetToken_Prefix_368;Лис;x
+GetCadetToken_Prefix_378;Мир;x
+GetCadetToken_Prefix_379;Ринлос;x
+GetCadetToken_Prefix_389;Ам;x
+GetCadetToken_Prefix_406;Пент;x
+GetCadetToken_Prefix_413;Чроу;x
+GetCadetToken_Prefix_414;Най;x
+GetCadetToken_Prefix_417;Волан;x
+GetCadetToken_Prefix_419;Волан;x
+GetCadetToken_Prefix_420;Волон;x
+GetCadetToken_Prefix_421;Сар;x
+GetCadetToken_Prefix_422;Вал;x
+GetCadetToken_Prefix_423;Сел;x
+GetCadetToken_Prefix_425;Валон;x
+GetCadetToken_Prefix_426;Ройн;x
+GetCadetToken_Prefix_428;Лейк;x
+GetCadetToken_Prefix_429;Ар;x
+GetCadetToken_Prefix_431;Койн;x
+GetCadetToken_Prefix_432;Нойн;x
+GetCadetToken_Prefix_433;Норв;x
+GetCadetToken_Prefix_435;Нум;x
+GetCadetToken_Prefix_436;Дарк;x
+GetCadetToken_Prefix_437;Дип;x
+GetCadetToken_Prefix_441;Бир;x
+GetCadetToken_Prefix_442;Пасс;x
+GetCadetToken_Prefix_443;Нарр;x
+GetCadetToken_Prefix_444;Маунт;x
+GetCadetToken_Prefix_450;Гоян;x
+GetCadetToken_Prefix_451;Вельвет;x
+GetCadetToken_Prefix_452;Вельвет;x
+GetCadetToken_Prefix_453;Ройн;x
+GetCadetToken_Prefix_454;Севен;x
+GetCadetToken_Prefix_455;Хугор;x
+GetCadetToken_Prefix_456;Анд;x
+GetCadetToken_Prefix_457;Хилл;x
+GetCadetToken_Prefix_467;Порт;x
+GetCadetToken_Prefix_468;Мун;x
+GetCadetToken_Prefix_469;Марш;x
+GetCadetToken_Prefix_470;Браав;x
+GetCadetToken_Prefix_471;Лор;x
+GetCadetToken_Prefix_474;Акс;x
+GetCadetToken_Prefix_475;Акс;x
+GetCadetToken_Prefix_478;Гот;x
+GetCadetToken_Prefix_479;Хобрет;x
+GetCadetToken_Prefix_490;Пайнт;x
+GetCadetToken_Prefix_491;Стон;x
+GetCadetToken_Prefix_493;Ласт;x
+GetCadetToken_Prefix_494;Тотус;x
+GetCadetToken_Prefix_496;Тотус;x
+GetCadetToken_Prefix_497;Амбер;x
+GetCadetToken_Prefix_500;Талл;x
+GetCadetToken_Prefix_501;Циртус;x
+GetCadetToken_Prefix_502;Кодж;x
+GetCadetToken_Prefix_503;Бёд;x
+GetCadetToken_Prefix_505;Херт;x
+GetCadetToken_Prefix_508;Ксал;x
+GetCadetToken_Prefix_509;Кейп;x
+GetCadetToken_Prefix_510;Сонг;x
+GetCadetToken_Prefix_511;Голд;x
+GetCadetToken_Prefix_512;Литтл;x
+GetCadetToken_Prefix_514;Лав;x
+GetCadetToken_Prefix_517;Эбон;x
+GetCadetToken_Prefix_518;Свит;x
+GetCadetToken_Prefix_519;Голд;x
+GetCadetToken_Prefix_520;Тотус;x
+GetCadetToken_Prefix_521;Эбон;x
+GetCadetToken_Prefix_522;Блуд;x
+GetCadetToken_Prefix_525;Хай;x
+GetCadetToken_Prefix_526;Ред;x
+GetCadetToken_Prefix_527;Индиго;x
+GetCadetToken_Prefix_531;Херт;x
+GetCadetToken_Prefix_533;Хед;x
+GetCadetToken_Prefix_534;Ксон;x
+GetCadetToken_Prefix_535;Боун;x
+GetCadetToken_Prefix_536;Док;x
+GetCadetToken_Prefix_542;Эсс;x
+GetCadetToken_Prefix_544;Саат;x
+GetCadetToken_Prefix_545;Мор;x
+GetCadetToken_Prefix_546;Сар;x
+GetCadetToken_Prefix_549;Рэт;x
+GetCadetToken_Prefix_550;Кит;x
+GetCadetToken_Prefix_551;Мард;x
+GetCadetToken_Prefix_552;Норн;x
+GetCadetToken_Prefix_553;Сарн;x
+GetCadetToken_Prefix_555;Кэс;x
+GetCadetToken_Prefix_556;Дэт;x
+GetCadetToken_Prefix_557;Барк;x
+GetCadetToken_Prefix_558;Фаат;x
+GetCadetToken_Prefix_559;Барт;x
+GetCadetToken_Prefix_560;Таск;x
+GetCadetToken_Prefix_561;Салл;x
+GetCadetToken_Prefix_562;Мэл;x
+GetCadetToken_Prefix_563;Бекк;x
+GetCadetToken_Prefix_564;Горн;x
+GetCadetToken_Prefix_565;Сат;x
+GetCadetToken_Prefix_567;Чев;x
+GetCadetToken_Prefix_568;Доф;x
+GetCadetToken_Prefix_569;Мейр;x
+GetCadetToken_Prefix_576;Ибб;x
+GetCadetToken_Prefix_577;Ибб;x
+GetCadetToken_Prefix_580;Осс;x
+GetCadetToken_Prefix_582;Нор;x
+GetCadetToken_Prefix_583;Таск;x
+GetCadetToken_Prefix_584;Эсс;x
+GetCadetToken_Prefix_585;Ибб;x
+GetCadetToken_Prefix_586;Спир;x
+GetCadetToken_Prefix_587;Иб;x
+GetCadetToken_Prefix_588;Херс;x
+GetCadetToken_Prefix_589;Мелт;x
+GetCadetToken_Prefix_590;Трэк;x
+GetCadetToken_Prefix_591;Дол;x
+GetCadetToken_Prefix_592;Цок;x
+GetCadetToken_Prefix_593;Хран;x
+GetCadetToken_Prefix_594;Фар;x
+GetCadetToken_Prefix_595;Сар;x
+GetCadetToken_Prefix_598;Драк;x
+GetCadetToken_Prefix_599;Мант;x
+GetCadetToken_Prefix_600;Пасс;x
+GetCadetToken_Prefix_601;Тол;x
+GetCadetToken_Prefix_602;Элай;x
+GetCadetToken_Prefix_603;Блэк;x
+GetCadetToken_Prefix_605;Демон;x
+GetCadetToken_Prefix_606;Ми;x
+GetCadetToken_Prefix_607;Хайз;x
+GetCadetToken_Prefix_610;Юнк;x
+GetCadetToken_Prefix_611;Мейлк;x
+GetCadetToken_Prefix_613;Аст;x
+GetCadetToken_Prefix_619;Гис;x
+GetCadetToken_Prefix_621;Гхоз;x
+GetCadetToken_Prefix_622;Вел;x
+GetCadetToken_Prefix_624;Ген;x
+GetCadetToken_Prefix_625;Гис;x
+GetCadetToken_Prefix_626;Наат;x
+GetCadetToken_Prefix_638;Неш;x
+GetCadetToken_Prefix_639;Лхаз;x
+GetCadetToken_Prefix_640;Хош;x
+GetCadetToken_Prefix_641;Макх;x
+GetCadetToken_Prefix_642;Ихос;x
+GetCadetToken_Prefix_643;Гард;x
+GetCadetToken_Prefix_648;Кос;x
+GetCadetToken_Prefix_649;Вирз;x
+GetCadetToken_Prefix_653;Ток;x
+GetCadetToken_Prefix_654;Квар;x
+GetCadetToken_Prefix_660;Йин;x
+GetCadetToken_Prefix_661;Стоун;x
+GetCadetToken_Prefix_663;Квар;x
+GetCadetToken_Prefix_664;Мат;x
+GetCadetToken_Prefix_666;Джейд;x
+GetCadetToken_Prefix_667;Квал;x
+GetCadetToken_Prefix_673;Гир;x
+GetCadetToken_Prefix_674;Бай;x
+GetCadetToken_Prefix_678;Сэм;x
+GetCadetToken_Prefix_679;Цар;x
+GetCadetToken_Prefix_680;Кай;x
+GetCadetToken_Prefix_682;Стил;x
+GetCadetToken_Prefix_689;Зоб;x
+GetCadetToken_Prefix_692;Вез;x
+GetCadetToken_Prefix_694;Кэл;x
+GetCadetToken_Prefix_695;Тар;x
+GetCadetToken_Prefix_696;Пор;x
+GetCadetToken_Prefix_697;Кеш;x
+GetCadetToken_Prefix_698;Янг;x
+GetCadetToken_Prefix_699;Гон;x
+GetCadetToken_Prefix_700;Хаз;x
+GetCadetToken_Prefix_701;Кхай;x
+GetCadetToken_Prefix_720;Джейд;x
+GetCadetToken_Prefix_727;Порт;x
+GetCadetToken_Prefix_735;Вив;x
+GetCadetToken_Prefix_736;Гор;x
+GetCadetToken_Prefix_739;Вай;x
+GetCadetToken_Prefix_740;Йин;x
+GetCadetToken_Prefix_741;Цам;x
+GetCadetToken_Prefix_742;Акс;x
+GetCadetToken_Prefix_743;Скулл;x
+GetCadetToken_Prefix_744;Тод;x
+GetCadetToken_Prefix_746;Поинт;x
+GetCadetToken_Prefix_747;Гог;x
+GetCadetToken_Prefix_748;Лайс;x
+GetCadetToken_Prefix_749;Дит;x
+GetCadetToken_Prefix_750;Флай;x
+GetCadetToken_Prefix_752;Хоул;x
+GetCadetToken_Prefix_753;Талон;x
+GetCadetToken_Prefix_754;Вайн;x
+GetCadetToken_Prefix_755;Гел;x
+GetCadetToken_Prefix_756;Тай;x
+GetCadetToken_Prefix_758;Фейр;x
+GetCadetToken_Prefix_759;Ор;x
+GetCadetToken_Prefix_760;Рай;x
+GetCadetToken_Prefix_761;Тел;x
+GetCadetToken_Prefix_762;Сар;x
+GetCadetToken_Prefix_763;Джейд;x
+GetCadetToken_Prefix_765;Йин;x
+GetCadetToken_Prefix_767;Сиань;x
+GetCadetToken_Prefix_768;Квиц;x
+GetCadetToken_Prefix_769;Фэн;x
+GetCadetToken_Prefix_770;Цзин;x
+GetCadetToken_Prefix_771;Сар;x
+GetCadetToken_Prefix_772;Квин;x
+GetCadetToken_Prefix_773;Зом;x
+GetCadetToken_Prefix_776;Хенг;x
+GetCadetToken_Prefix_777;Линк;x
+GetCadetToken_Prefix_778;Тайч;x
+GetCadetToken_Prefix_779;Цзинк;x
+GetCadetToken_Prefix_780;Тик;x
+GetCadetToken_Prefix_783;Нанк;x
+GetCadetToken_Prefix_784;Уон;x
+GetCadetToken_Prefix_785;Фанг;x
+GetCadetToken_Prefix_786;Ксинз;x
+GetCadetToken_Prefix_787;Уип;x
+GetCadetToken_Prefix_788;Мар;x
+GetCadetToken_Prefix_790;Тарр;x
+GetCadetToken_Prefix_793;Витч;x
+GetCadetToken_Prefix_795;Асш;x
+GetCadetToken_Prefix_796;Стиг;x
+GetCadetToken_Prefix_800;Улос;x
+GetCadetToken_Prefix_801;Тейг;x
+GetCadetToken_Prefix_802;Манп;x
+GetCadetToken_Prefix_803;Кам;x
+GetCadetToken_Prefix_820;Форт;x
+GetCadetToken_Prefix_835;Нефер;x
+GetCadetToken_Prefix_847;Трэдер;x
+GetCadetToken_Prefix_875;Ксин;x
+GetCadetToken_Prefix_1196;Шейд;x
+GetCadetToken_Prefix_1197;Айрон;x
+GetCadetToken_Prefix_1198;Нетт;x
+GetCadetToken_Prefix_1199;Скейн;x
+GetCadetToken_Prefix_k_beyond_wall;Вилд;x
+GetCadetToken_Prefix_d_upper_frostfangs;Фэнг;x
+GetCadetToken_Prefix_d_shivering_shore;Озер;x
+GetCadetToken_Prefix_d_lower_frostfangs;Фрост;x
+GetCadetToken_Prefix_d_haunted_forest;Хонт;x
+GetCadetToken_Prefix_d_frozen_shore;Фриз;x
+GetCadetToken_Prefix_d_milkwater;Милк;x
+GetCadetToken_Prefix_k_crownlands;Кроун;x
+GetCadetToken_Prefix_d_blackwater_rush;Уотерс;x
+GetCadetToken_Prefix_d_crackclaw_point;Клоу;x
+GetCadetToken_Prefix_d_dragonstone;Дрэгон;x
+GetCadetToken_Prefix_d_duskendale;Даск;x
+GetCadetToken_Prefix_d_kings_landing;Кингс;x
+GetCadetToken_Prefix_d_kingswood;Вуд;x
+GetCadetToken_Prefix_d_masseys_hook;Хук;x
+GetCadetToken_Prefix_d_rosby;Росб;x
+GetCadetToken_Prefix_k_crackclaw_point;Клоу;x
+GetCadetToken_Prefix_k_dragonstone;Дрэгон;x
+GetCadetToken_Prefix_d_brimstone;Брим;x
+GetCadetToken_Prefix_d_brokenarm;Арм;x
+GetCadetToken_Prefix_d_ghosthills;Гхост;x
+GetCadetToken_Prefix_d_princespass;Принц;x
+GetCadetToken_Prefix_d_redmountains;Торрен;x
+GetCadetToken_Prefix_d_stoneway;Вэй;x
+GetCadetToken_Prefix_d_vaith;Вайт;x
+GetCadetToken_Prefix_d_wide_way;Вайд;x
+GetCadetToken_Prefix_e_dorne;Дорн;x
+GetCadetToken_Prefix_k_dorne;Дорн;x
+GetCadetToken_Prefix_d_ar_noy;Эр;x
+GetCadetToken_Prefix_d_braavos;Титан;x
+GetCadetToken_Prefix_d_dalos;Драко;x
+GetCadetToken_Prefix_d_darkwater;Дарк;x
+GetCadetToken_Prefix_d_east_braavosiancoastlands;Морр;x
+GetCadetToken_Prefix_d_golden_fields;Голд;x
+GetCadetToken_Prefix_d_gornath;Горн;x
+GetCadetToken_Prefix_d_lower_rhoyne;Ройн;x
+GetCadetToken_Prefix_d_lys;Лис;x
+GetCadetToken_Prefix_d_mantarys;Мант;x
+GetCadetToken_Prefix_d_mardosh;Мард;x
+GetCadetToken_Prefix_d_morosh;Мор;x
+GetCadetToken_Prefix_d_myr;Мир;x
+GetCadetToken_Prefix_d_myrish_flatlands;Флэт;x
+GetCadetToken_Prefix_d_myrish_hinterlands;Марч;x
+GetCadetToken_Prefix_d_nontelos;Нонт;x
+GetCadetToken_Prefix_d_northern_forest_qohor;Форест;x
+GetCadetToken_Prefix_d_norvos;Норв;x
+GetCadetToken_Prefix_d_ny_sar;Най;x
+GetCadetToken_Prefix_d_omber;Омб;x
+GetCadetToken_Prefix_d_orange_shore;Оренж;x
+GetCadetToken_Prefix_d_painted_mountains;Паинт;x
+GetCadetToken_Prefix_d_pentos;Пент;x
+GetCadetToken_Prefix_d_pentoshi_flatlands;Флэт;x
+GetCadetToken_Prefix_d_rathylar;Рэт;x
+GetCadetToken_Prefix_d_saath;Саат;x
+GetCadetToken_Prefix_d_sallosh;Салл;x
+GetCadetToken_Prefix_d_sarnath;Сарн;x
+GetCadetToken_Prefix_d_sarys;Сар;x
+GetCadetToken_Prefix_d_sathar;Сат;x
+GetCadetToken_Prefix_d_selhorys;Сел;x
+GetCadetToken_Prefix_d_sweetwater;Свит;x
+GetCadetToken_Prefix_d_the_axe;Акс;x
+GetCadetToken_Prefix_d_the_west_road;Роад;x
+GetCadetToken_Prefix_d_tolos;Тол;x
+GetCadetToken_Prefix_d_upper_rhoyne;Ройн;x
+GetCadetToken_Prefix_d_valonsar;Валон;x
+GetCadetToken_Prefix_d_valysar;Вали;x
+GetCadetToken_Prefix_d_velvet_hills;Вельвет;x
+GetCadetToken_Prefix_d_volantis;Волан;x
+GetCadetToken_Prefix_d_volontherys;Волон;x
+GetCadetToken_Prefix_e_andalos;Андал;x
+GetCadetToken_Prefix_k_andalos;Андал;x
+GetCadetToken_Prefix_k_lys;Лис;x
+GetCadetToken_Prefix_k_myr;Мир;x
+GetCadetToken_Prefix_k_norvos;Норв;x
+GetCadetToken_Prefix_k_pentos;Пент;x
+GetCadetToken_Prefix_k_rhoynar;Ройн;x
+GetCadetToken_Prefix_k_sarnor;Сарн;x
+GetCadetToken_Prefix_k_stepstones;Степ;x
+GetCadetToken_Prefix_k_volantis;Волан;x
+GetCadetToken_Prefix_e_iron_isles;Айрон;x
+GetCadetToken_Prefix_k_iron_isles;Айрон;x
+GetCadetToken_Prefix_d_pyke;Пайк;x
+GetCadetToken_Prefix_d_great_wyk;Вик;x
+GetCadetToken_Prefix_d_seastone_isles;Исл;x
+GetCadetToken_Prefix_d_harlaw;Хар;x
+GetCadetToken_Prefix_d_asshai;Асш;x
+GetCadetToken_Prefix_d_bayasabhad;Бэй;x
+GetCadetToken_Prefix_d_bayofwhales;Бэй;x
+GetCadetToken_Prefix_d_eastern_isles;Ист;x
+GetCadetToken_Prefix_d_farib;Фар;x
+GetCadetToken_Prefix_d_faros;Фар;x
+GetCadetToken_Prefix_d_hesh;Хеш;x
+GetCadetToken_Prefix_d_hills_tiqui;Нан;x
+GetCadetToken_Prefix_d_ibbish;Ибб;x
+GetCadetToken_Prefix_d_ibnor;Нор;x
+GetCadetToken_Prefix_d_iboss;Осс;x
+GetCadetToken_Prefix_d_jade_gate;Джейд;x
+GetCadetToken_Prefix_d_jinqi;Цзинг;x
+GetCadetToken_Prefix_d_kayakayanaya;Кай;x
+GetCadetToken_Prefix_d_kosrak;Кос;x
+GetCadetToken_Prefix_d_lehqron;Лек;x
+GetCadetToken_Prefix_d_lhazosh;Лхаз;x
+GetCadetToken_Prefix_d_linqi;Линк;x
+GetCadetToken_Prefix_d_linqi_jungle;Уон;x
+GetCadetToken_Prefix_d_matsar;Мэт;x
+GetCadetToken_Prefix_d_nefer;Неф;x
+GetCadetToken_Prefix_d_north_xin;Фудж;x
+GetCadetToken_Prefix_d_piqui;Пикуи;x
+GetCadetToken_Prefix_d_piqui_jungle;Хез;x
+GetCadetToken_Prefix_d_port_yhos;Ихос;x
+GetCadetToken_Prefix_d_portofibben;Ибб;x
+GetCadetToken_Prefix_d_qal;Квал;x
+GetCadetToken_Prefix_d_qarkash;Кварк;x
+GetCadetToken_Prefix_d_qarth;Квар;x
+GetCadetToken_Prefix_d_saffron_straits;Сафф;x
+GetCadetToken_Prefix_d_samyriana;Самириана;x
+GetCadetToken_Prefix_d_south_leng;Турр;x
+GetCadetToken_Prefix_d_stygai;Стиг;x
+GetCadetToken_Prefix_d_the_five_forts;Форт;x
+GetCadetToken_Prefix_d_tiqui;Тик;x
+GetCadetToken_Prefix_d_toqolarth;Ток;x
+GetCadetToken_Prefix_d_trader_town;Таун;x
+GetCadetToken_Prefix_d_western_isles;Вест;x
+GetCadetToken_Prefix_d_xin;Ксин;x
+GetCadetToken_Prefix_d_yin;Йин;x
+GetCadetToken_Prefix_d_yiti_delta;Фэнг;x
+GetCadetToken_Prefix_d_zabhad;Заб;x
+GetCadetToken_Prefix_e_yi_ti;Год;x
+GetCadetToken_Prefix_k_asabhad;Асаб;x
+GetCadetToken_Prefix_k_hyrkoon;Гир;x
+GetCadetToken_Prefix_k_ibben;Ибб;x
+GetCadetToken_Prefix_k_ifeqevron;Ифек;x
+GetCadetToken_Prefix_k_jinqi;Цзинг;x
+GetCadetToken_Prefix_k_leng;Лэнг;x
+GetCadetToken_Prefix_k_lhazar;Пхаз;x
+GetCadetToken_Prefix_k_linqi;Линк;x
+GetCadetToken_Prefix_k_moraq;Мор;x
+GetCadetToken_Prefix_k_piqui;Пик;x
+GetCadetToken_Prefix_k_the_five_forts;Форт;x
+GetCadetToken_Prefix_k_tiqui;Тик;x
+GetCadetToken_Prefix_k_trader_town;Таун;x
+GetCadetToken_Prefix_k_xin;Ксин;x
+GetCadetToken_Prefix_k_yin;Йин;x
+GetCadetToken_Prefix_e_north;Норт;x
+GetCadetToken_Prefix_k_north;Норт;x
+GetCadetToken_Prefix_d_barrowlands;Барроу;x
+GetCadetToken_Prefix_d_dreadfort;Дрид;x
+GetCadetToken_Prefix_d_flintsfinger;Флинт';x
+GetCadetToken_Prefix_d_grey_gliffs;Грей;x
+GetCadetToken_Prefix_d_hornwood;Бранч;x
+GetCadetToken_Prefix_d_karhold;Кар;x
+GetCadetToken_Prefix_d_lasthearth;Ласт;x
+GetCadetToken_Prefix_d_northclans;Клан;x
+GetCadetToken_Prefix_d_rills;Рилл;x
+GetCadetToken_Prefix_d_skagos;Скаг;x
+GetCadetToken_Prefix_d_stonyshore;Стон;x
+GetCadetToken_Prefix_d_theneck;Нек;x
+GetCadetToken_Prefix_d_whiteharbor;Харбор;x
+GetCadetToken_Prefix_d_winterfell;Винтер;x
+GetCadetToken_Prefix_d_wolfswood;Вуд;x
+GetCadetToken_Prefix_e_reach;Рич;x
+GetCadetToken_Prefix_k_reach;Рич;x
+GetCadetToken_Prefix_d_blueburn;Блу;x
+GetCadetToken_Prefix_d_brightwater;Брайт;x
+GetCadetToken_Prefix_d_cockleswhent;Уэнт;x
+GetCadetToken_Prefix_d_goldengrove;Гроув;x
+GetCadetToken_Prefix_d_highgarden;Хай;x
+GetCadetToken_Prefix_d_mandervale;Мэнд;x
+GetCadetToken_Prefix_d_northmarch;Марч;x
+GetCadetToken_Prefix_d_ocean_road;Роад;x
+GetCadetToken_Prefix_d_oldtown;Олд;x
+GetCadetToken_Prefix_d_red_lake;Лейк;x
+GetCadetToken_Prefix_d_roseroad;Роуз;x
+GetCadetToken_Prefix_d_the_arbor;Вайн;x
+GetCadetToken_Prefix_d_the_ring;Ринг;x
+GetCadetToken_Prefix_d_the_shield_isles;Шилд;x
+GetCadetToken_Prefix_d_tumbleton;Тамб;x
+GetCadetToken_Prefix_d_west_marches;Марч;x
+GetCadetToken_Prefix_e_riverlands;Ривер;x
+GetCadetToken_Prefix_k_riverlands;Ривер;x
+GetCadetToken_Prefix_d_acornsridge;Экон;x
+GetCadetToken_Prefix_d_bayofclaws;Крэб;x
+GetCadetToken_Prefix_d_blackwood;Блэк;x
+GetCadetToken_Prefix_d_darry;Дар;x
+GetCadetToken_Prefix_d_esgaroth;Эск;x
+GetCadetToken_Prefix_d_harrenhal;Харрен;x
+GetCadetToken_Prefix_d_oldstones;Си;x
+GetCadetToken_Prefix_d_riverrun;Ривер;x
+GetCadetToken_Prefix_d_southstone;Соут;x
+GetCadetToken_Prefix_d_thecrossing;Кросс;x
+GetCadetToken_Prefix_d_trident;Форк;x
+GetCadetToken_Prefix_d_tumblestone;Тумб;x
+GetCadetToken_Prefix_d_wayfarersrest;Уэй;x
+GetCadetToken_Prefix_d_ghardaq;Гхар;x
+GetCadetToken_Prefix_d_hazdahn;Хаз;x
+GetCadetToken_Prefix_d_isle_of_cedars;Кедар;x
+GetCadetToken_Prefix_d_khyzaipass;Хиз;x
+GetCadetToken_Prefix_d_meereen;Миэр;x
+GetCadetToken_Prefix_d_new_ghis;Гис;x
+GetCadetToken_Prefix_d_old_ghis;Гис;x
+GetCadetToken_Prefix_d_worm_river;Ворм;x
+GetCadetToken_Prefix_d_yunkai;Юнк;x
+GetCadetToken_Prefix_e_ghiscar;Гис;x
+GetCadetToken_Prefix_k_hazdahn;Хаз;x
+GetCadetToken_Prefix_k_meereen;Миэр;x
+GetCadetToken_Prefix_k_new_ghis;Гис;x
+GetCadetToken_Prefix_k_yunkai;Юнк;x
+GetCadetToken_Prefix_e_stormlands;Сторм;x
+GetCadetToken_Prefix_k_stormlands;Сторм;x
+GetCadetToken_Prefix_d_cape_wrath;Уот;x
+GetCadetToken_Prefix_d_dornish_marches;Марч;x
+GetCadetToken_Prefix_d_parchments;Пач;x
+GetCadetToken_Prefix_d_rainwood;Рейн;x
+GetCadetToken_Prefix_d_red_watch;Ватч;x
+GetCadetToken_Prefix_d_shipbreaker;Брик;x
+GetCadetToken_Prefix_d_summerhall;Саммер;x
+GetCadetToken_Prefix_d_summerhall_adj;Саммер;x
+GetCadetToken_Prefix_d_tarth;Тарт;x
+GetCadetToken_Prefix_d_wendwater;Венд;x
+GetCadetToken_Prefix_e_vale;Вейл;x
+GetCadetToken_Prefix_k_vale;Вейл;x
+GetCadetToken_Prefix_d_eastweald;Ист;x
+GetCadetToken_Prefix_d_gulltown;Гулл;x
+GetCadetToken_Prefix_d_ironoaks;Айрон;x
+GetCadetToken_Prefix_d_northweald;Вилд;x
+GetCadetToken_Prefix_d_redfort;Форт;x
+GetCadetToken_Prefix_d_runestone;Рун;x
+GetCadetToken_Prefix_d_strongsong;Стронг;x
+GetCadetToken_Prefix_d_the_bite;Байт;x
+GetCadetToken_Prefix_d_the_fingers;Фингер;x
+GetCadetToken_Prefix_d_the_giants_lance;Ланс;x
+GetCadetToken_Prefix_d_the_sisters;Систер;x
+GetCadetToken_Prefix_d_wickenden;Вик;x
+GetCadetToken_Prefix_k_westerlands;Вест;x
+GetCadetToken_Prefix_e_westerlands;Рок;x
+GetCadetToken_Prefix_d_the_crag;Крэг;x
+GetCadetToken_Prefix_d_silverhill;Сильвер;x
+GetCadetToken_Prefix_d_sarsfield;Сарс;x
+GetCadetToken_Prefix_d_hornvale;Хорн;x
+GetCadetToken_Prefix_d_goldroad;Голд;x
+GetCadetToken_Prefix_d_golden_tooth;Тут;x
+GetCadetToken_Prefix_d_crakehall;Крейк;x
+GetCadetToken_Prefix_d_cornfield;Корн;x
+GetCadetToken_Prefix_d_casterly_rock;Рок;x
+GetCadetToken_Prefix_d_castamere;Каст;x
+GetCadetToken_Prefix_d_ashemark;Эш;x
+GetCadetToken_Prefix_k_summer_islands;Саммер;x
+GetCadetToken_Prefix_k_sothoryos;Сот;x
+GetCadetToken_Prefix_e_summer_sea;Саммер;x
+GetCadetToken_Prefix_d_zamettar;Зам;x
+GetCadetToken_Prefix_d_yeen;Йин;x
+GetCadetToken_Prefix_d_walano;Вал;x
+GetCadetToken_Prefix_d_tall_trees_valley;Талл;x
+GetCadetToken_Prefix_d_sweet_lotus_vale;Лотус;x
+GetCadetToken_Prefix_d_red_flower_vale;Ред;x
+GetCadetToken_Prefix_d_parrot_bay;Паррот;x
+GetCadetToken_Prefix_d_omburu;Омб;x
+GetCadetToken_Prefix_d_naath;Наат;x
+GetCadetToken_Prefix_d_moluu;Мол;x
+GetCadetToken_Prefix_d_last_lament;Ламент;x
+GetCadetToken_Prefix_d_gorosh;Гор;x
+GetCadetToken_Prefix_d_golden_head;Хед;x
+GetCadetToken_Prefix_d_gogossos;Гог;x
+GetCadetToken_Prefix_k_winterfellTK;Винтер;x
+GetCadetToken_Prefix_k_skagosTK;Скаг;x
+GetCadetToken_Prefix_k_karholdTK;Кар;x
+GetCadetToken_Prefix_k_lasthearthTK;Херт;x
+GetCadetToken_Prefix_k_northclansTK;Клан;x
+GetCadetToken_Prefix_k_wolfswoodTK;Вулфс;x
+GetCadetToken_Prefix_k_rillsTK;Риллс;x
+GetCadetToken_Prefix_k_barrowlandsTK;Барроу;x
+GetCadetToken_Prefix_k_flintsfingerTK;Флинт;x
+GetCadetToken_Prefix_k_theneckTK;Нек;x
+GetCadetToken_Prefix_k_whiteharborTK;Харбор;x
+GetCadetToken_Prefix_k_hornwoodTK;Хорн;x
+GetCadetToken_Prefix_k_dreadfortTK;Дред;x
+GetCadetToken_Prefix_k_thecrossingTK;Кросс;x
+GetCadetToken_Prefix_k_oldstonesTK;Стоун;x
+GetCadetToken_Prefix_k_tridentTK;Фок;x
+GetCadetToken_Prefix_k_blackwoodTK;Блэк;x
+GetCadetToken_Prefix_k_riverrunTK;Ривер;x
+GetCadetToken_Prefix_k_southstoneTK;Соут;x
+GetCadetToken_Prefix_k_acornsridgeTK;Асорн;x
+GetCadetToken_Prefix_k_harrenhalTK;Харрен;x
+GetCadetToken_Prefix_k_bayofclawsTK;Клоу;x
+GetCadetToken_Prefix_k_the_biteTK;Байт;x
+GetCadetToken_Prefix_k_the_sistersTK;Систер;x
+GetCadetToken_Prefix_k_northwealdTK;Вилд;x
+GetCadetToken_Prefix_k_the_fingersTK;Фингер;x
+GetCadetToken_Prefix_k_strongsongTK;Сонг;x
+GetCadetToken_Prefix_k_the_giants_lanceTK;Вейл;x
+GetCadetToken_Prefix_k_eastwealdTK;Ист;x
+GetCadetToken_Prefix_k_runestoneTK;Рун;x
+GetCadetToken_Prefix_k_wickendenTK;Вик;x
+GetCadetToken_Prefix_k_pykeTK;Пайк;x
+GetCadetToken_Prefix_k_great_wykTK;Вик;x
+GetCadetToken_Prefix_k_harlawTK;Хар;x
+GetCadetToken_Prefix_k_seastone_islesTK;Си;x
+GetCadetToken_Prefix_k_casterly_rockTK;Рок;x
+GetCadetToken_Prefix_k_crakehallTK;Срейк;x
+GetCadetToken_Prefix_k_cornfieldTK;Корн;x
+GetCadetToken_Prefix_k_silverhillTK;Сильвер;x
+GetCadetToken_Prefix_k_goldroadTK;Голд;x
+GetCadetToken_Prefix_k_castamereTK;Каст;x
+GetCadetToken_Prefix_k_sarsfieldTK;Сарс;x
+GetCadetToken_Prefix_k_golden_toothTK;Тут;x
+GetCadetToken_Prefix_k_ashemarkTK;Эш;x
+GetCadetToken_Prefix_k_the_cragTK;Крэг;x
+GetCadetToken_Prefix_k_duskendaleTK;Даск;x
+GetCadetToken_Prefix_k_rosbyTK;Росб;x
+GetCadetToken_Prefix_k_crackclaw_pointTK;Клоу;x
+GetCadetToken_Prefix_k_dragonstoneTK;Дрэгон;x
+GetCadetToken_Prefix_k_kings_landingTK;Уотерс;x
+GetCadetToken_Prefix_k_blackwater_rushTK;Раш;x
+GetCadetToken_Prefix_k_kingswoodTK;Вуд;x
+GetCadetToken_Prefix_k_masseys_hookTK;Хук;x
+GetCadetToken_Prefix_k_highgardenTK;Гарден;x
+GetCadetToken_Prefix_k_northmarchTK;Марч;x
+GetCadetToken_Prefix_k_oldtownTK;Тауэрс;x
+GetCadetToken_Prefix_k_the_arborTK;Арбор;x
+GetCadetToken_Prefix_k_brightwaterTK;Брайт;x
+GetCadetToken_Prefix_k_west_marchesTK;Вест;x
+GetCadetToken_Prefix_k_cockleswhentTK;Кок;x
+GetCadetToken_Prefix_k_blueburnTK;Блу;x
+GetCadetToken_Prefix_k_roseroadTK;Роуз;x
+GetCadetToken_Prefix_k_tumbletonTK;Там;x
+GetCadetToken_Prefix_k_the_ringTK;Ринг;x
+GetCadetToken_Prefix_k_goldengroveTK;Гроув;x
+GetCadetToken_Prefix_k_red_lakeTK;Ред;x
+GetCadetToken_Prefix_k_ocean_roadTK;Ошн;x
+GetCadetToken_Prefix_k_the_shield_islesTK;Шилд;x
+GetCadetToken_Prefix_k_mandervaleTK;Мандер;x
+GetCadetToken_Prefix_k_shipbreakerTK;Сторм;x
+GetCadetToken_Prefix_k_tarthTK;Тарт;x
+GetCadetToken_Prefix_k_wendwaterTK;Венд;x
+GetCadetToken_Prefix_k_summerhallTK;Холл;x
+GetCadetToken_Prefix_k_dornish_marchesTK;Марч;x
+GetCadetToken_Prefix_k_red_watchTK;Ватч;x
+GetCadetToken_Prefix_k_cape_wrathTK;Ватч;x
+GetCadetToken_Prefix_k_rainwoodTK;Рейн;x
+GetCadetToken_Prefix_k_brokenarmTK;Арм;x
+GetCadetToken_Prefix_k_ghosthillsTK;гхост;x
+GetCadetToken_Prefix_k_vaithTK;Вайт;x
+GetCadetToken_Prefix_k_brimstoneTK;Брим;x
+GetCadetToken_Prefix_k_redmountainsTK;Ред;x
+GetCadetToken_Prefix_k_princespassTK;Скай;x
+GetCadetToken_Prefix_k_stonewayTK;Ред;x
+GetCadetToken_Prefix_k_upper_rhoyne;Ройн;x
+GetCadetToken_Prefix_k_flatlands;Флэт;x
+GetCadetToken_Prefix_k_the_axe;Акс;x
+GetCadetToken_Prefix_k_hills_of_norvos;Хилл;x
+GetCadetToken_Prefix_k_the_marches;Марч;x
+GetCadetToken_Prefix_k_volontherys;Волон;x
+GetCadetToken_Prefix_k_valysar;Вал;x
+GetCadetToken_Prefix_k_selhorys;Сел;x
+GetCadetToken_Prefix_k_chroyane;Крой;x
+GetCadetToken_Prefix_k_the_bay;Бэй;x
+GetCadetToken_Prefix_k_mantarys;Мант;x
+GetCadetToken_Prefix_k_tolos;Тол;x
+GetCadetToken_Prefix_k_coastlands;Кост;x
+GetCadetToken_Prefix_k_ny_sar;Сар;x
+GetCadetToken_Prefix_k_ar_noy;Ной;x
+GetCadetToken_Prefix_k_sweetwater;Свит;x
+GetCadetToken_Prefix_k_copper_hills;Коппер;x
+GetCadetToken_Prefix_k_worm_river;Ворм;x
+GetCadetToken_Prefix_k_khyzai;Кхиз;x
+GetCadetToken_Prefix_k_old_ghis;Гис;x
+GetCadetToken_Prefix_k_isle_of_cedars;Кедпр;x
+GetCadetToken_Prefix_k_ib;Иб;x
+GetCadetToken_Prefix_k_bayofwhales;Бэй;x
+GetCadetToken_Prefix_k_ibbish;Ибб;x
+GetCadetToken_Prefix_k_red_roads;Джейд;x
+GetCadetToken_Prefix_k_qarkash;Кварк;x
+GetCadetToken_Prefix_k_port_yhos;Ихос;x
+GetCadetToken_Prefix_k_fenqui;Фэнк;x
+GetCadetToken_Prefix_k_nanqi;Нанк;x
+GetCadetToken_Prefix_k_wan_ti;Ван;x
+GetCadetToken_Prefix_k_hezyin;Хез;x
+GetCadetToken_Prefix_k_fujin;Фудж;x
+GetCadetToken_Prefix_k_walano;Вал;x
+GetCadetToken_Prefix_k_west_summer_isles;Вест;x
+GetCadetToken_Prefix_k_omburu;Омб;x
+GetCadetToken_Prefix_k_naath;Наат;x
+GetCadetToken_Prefix_k_hornvaleTK;Хорн;x
+GetCadetToken_Prefix_k_ironoaksTK;Айрон;x
+GetCadetToken_Prefix_k_gulltownTK;Гулл;x
+GetCadetToken_Prefix_k_fair_isleTK;Файр;x
+GetCadetToken_Prefix_k_blackmontTK;Блэк;x
+GetCadetToken_Prefix_k_torrentineTK;Стар;x
+GetCadetToken_Prefix_k_banefortTK;Бейн;x
+GetCadetToken_Prefix_k_wayfarersrestTK;Вэй;x
+GetCadetToken_Prefix_k_darryTK;Дар;x
+GetCadetToken_Prefix_k_stonyshoreTK;Стоун;x
+GetCadetToken_Prefix_k_sarhoy;Сар;x
+GetCadetToken_Prefix_k_redfortTK;Ред;x
+GetCadetToken_Prefix_lunatic;Крейз;x
+GetCadetToken_Prefix_twin;Твин;x
+GetCadetToken_Prefix_kinslayer;Кинс;x
+GetCadetToken_Prefix_clubfooted;Клаб;x
+GetCadetToken_Prefix_harelip;Лип;x
+GetCadetToken_Prefix_hunchback;Ханч;x
+GetCadetToken_Prefix_fair;Файр;x
+GetCadetToken_Prefix_dwarf;Смолл;x
+GetCadetToken_Prefix_genius;Вайс;x
+GetCadetToken_Prefix_quick;Квик;x
+GetCadetToken_Prefix_slow;Слоу;x
+GetCadetToken_Prefix_strong;Стронг;x
+GetCadetToken_Prefix_scholar;Минд;x
+GetCadetToken_Prefix_gardener;лиф;x
+GetCadetToken_Prefix_mystic;Мист;x
+GetCadetToken_Prefix_impaler;Пайн;x
+GetCadetToken_Prefix_duelist;Дуэл;x
+GetCadetToken_Prefix_hunter;Хант;x
+GetCadetToken_Prefix_poet;Сонг;x
+GetCadetToken_Prefix_falconer;Сор;x
+GetCadetToken_Prefix_lustful;Ласт;x
+GetCadetToken_Prefix_chaste;Майд;x
+GetCadetToken_Prefix_Greedy;Коин;x
+GetCadetToken_Prefix_slothful;Рест;x
+GetCadetToken_Prefix_diligent;Хед;x
+GetCadetToken_Prefix_kind;Кинд;x
+GetCadetToken_Prefix_wroth;Уот;x
+GetCadetToken_Prefix_proud;Прод;x
+GetCadetToken_Prefix_humble;Серв;x
+GetCadetToken_Prefix_honest;Трут;x
+GetCadetToken_Prefix_brave;Болд;x
+GetCadetToken_Prefix_gregarious;Варм;x
+GetCadetToken_Prefix_arbitrary;Вим;x
+GetCadetToken_Prefix_just;Джаст;x
+GetCadetToken_Prefix_zealous;Зел;x
+GetCadetToken_Prefix_trusting;Траст;x
+GetCadetToken_Prefix_inspiring_leader;Стир;x
+GetCadetToken_Prefix_trickster;Трик;x
+GetCadetToken_Prefix_blinded;Блинд;x
+GetCadetToken_Prefix_seducer;Чарм;x
+GetCadetToken_Prefix_seductress;Темпт;x
+GetCadetToken_Prefix_architect;Билд;x
+GetCadetToken_Prefix_strategist;Вар;x
+GetCadetToken_Prefix_shrewd;Шреуд;x
+GetCadetToken_Prefix_dull;Далл;x
+GetCadetToken_Prefix_robust;Браун;x
+GetCadetToken_Prefix_immortal;Дет;x
+GetCadetToken_Prefix_cannibal_trait;Мит;x
+GetCadetToken_Prefix_knight;Найт;x
+GetCadetToken_Prefix_wildling;Вилж;x
+GetCadetToken_Prefix_giant;Гиант;x
+GetCadetToken_Prefix_widowed;Грейв;x
+GetCadetToken_Prefix_undead;Дед;x
+GetCadetToken_Prefix_master_warrior;Сворд;x
+GetCadetToken_Prefix_dragon_slayer;Слей;x
+GetCadetToken_Prefix_dragon_dreams;Дрим;x
+GetCadetToken_Prefix_scarred_high;Скар;x
+GetCadetToken_Prefix_one_eyed;Иэ;x
+GetCadetToken_Prefix_one_handed;Хэнд;x
+GetCadetToken_Prefix_one_legged;Лек;x
+GetCadetToken_Prefix_crippled ;Валк;x
+GetCadetToken_Prefix_greyscale_scarred;Грей;x
+GetCadetToken_Prefix_blinded_age;Блинд;x
+GetCadetToken_Prefix_viking;Рив;x
+GetCadetToken_Prefix_ravager;Рейд;x
+GetCadetToken_Prefix_seaking;Си;x
+GetCadetToken_Prefix_sea_queen;Си;x
+GetCadetToken_Prefix_fashionable;Клот;x
+GetCadetToken_Prefix_tall;Талл;x
+GetCadetToken_Prefix_authoritative;Ворд;x
+GetCadetToken_Prefix_familyperson;Кин;x
+GetCadetToken_Prefix_stubborn;Вил;x
+GetCadetToken_Prefix_ruthless;Хард;x
+GetCadetToken_Prefix_honorable;Райт;x
+GetCadetToken_Prefix_fire_obsessed;Файр;x
+GetCadetToken_Prefix_red_priest;Ред;x
+GetCadetToken_Prefix_chosen_by_rhllor;Азор;x
+GetCadetToken_Prefix_resurrected_by_rhllor;Лайт;x
+GetCadetToken_Prefix_drowned;Дроун;x
+GetCadetToken_Prefix_greensight;Сир;x
+GetCadetToken_Prefix_SKINCHANGER;Скин;x
+GetCadetToken_Prefix_favored_by_rhoyne;Уотер;x
+GetCadetToken_Prefix_burned;Бён;x
+GetCadetToken_Prefix_is_fat;Фэт;x
+GetCadetToken_Prefix_is_malnourished;Тин;x
+GetCadetToken_Prefix_DynastyName;[cadet_parent.GetLastWordInDynastyName];x
+GetCadetToken_Suffix_fyre;файр;x
+GetCadetToken_Suffix_wyne;вайн;x
+GetCadetToken_Suffix_joy;джой;x
+GetCadetToken_Suffix_tower;тауэр;x
+GetCadetToken_Suffix_ly;лай;x
+GetCadetToken_Suffix_mont;монт;x
+GetCadetToken_Suffix_er;эр;x
+GetCadetToken_Suffix_ent;энт;x
+GetCadetToken_Suffix_ton;тон;x
+GetCadetToken_Suffix_heart;херт;x
+GetCadetToken_Suffix_way;вай;x
+GetCadetToken_Suffix_hall;холл;x
+GetCadetToken_Suffix_wyn;вин;x
+GetCadetToken_Suffix_brother;бразер;x
+GetCadetToken_Suffix_sister;систер;x
+GetCadetToken_Suffix_law;лоу;x
+GetCadetToken_Suffix_cliffe;клифф;x
+GetCadetToken_Suffix_ren;рен;x
+GetCadetToken_Suffix_more;мор;x
+GetCadetToken_Suffix_field;филд;x
+GetCadetToken_Suffix_worth;ворт;x
+GetCadetToken_Suffix_den;ден;x
+GetCadetToken_Suffix_ling;линк;x
+GetCadetToken_Suffix_well;велл;x
+GetCadetToken_Suffix_bury;бёри;x
+GetCadetToken_Suffix_dore;дор;x
+GetCadetToken_Suffix_ster;стер;x
+GetCadetToken_Suffix_ings;ингс;x
+GetCadetToken_Suffix_glass;гласс;x
+GetCadetToken_Suffix_don;дон;x
+GetCadetToken_Suffix_beck;бек;x
+GetCadetToken_Suffix_wood;вуд;x
+GetCadetToken_Suffix_bray;брэй;x
+GetCadetToken_Suffix_man;мэн;x
+GetCadetToken_Suffix_mark;марк;x
+GetCadetToken_Suffix_weather;везе;x
+GetCadetToken_Suffix_ler;лер;x
+GetCadetToken_Suffix_rose;роуз;x
+GetCadetToken_Suffix_ayne;эйн;x
+GetCadetToken_Suffix_water;уотер;x
+GetCadetToken_Suffix_ing;инг;x
+GetCadetToken_Suffix_lard;лард;x
+GetCadetToken_Suffix_black;блэк;x
+GetCadetToken_Suffix_ward;вард;x
+GetCadetToken_Suffix_hart;харт;x
+GetCadetToken_Suffix_wynd;винд;x
+GetCadetToken_Suffix_iron;айрон;x
+GetCadetToken_Suffix_lyn;лин;x
+GetCadetToken_Suffix_tree;три;x
+GetCadetToken_Suffix_ney;ней;x
+GetCadetToken_Suffix_ford;форд;x
+GetCadetToken_Suffix_wick;вик;x
+GetCadetToken_Suffix_s;с;x
+GetCadetToken_Suffix_fort;форт;x
+GetCadetToken_Suffix_land;лэнд;x
+GetCadetToken_Suffix_cliff;клифф;x
+GetCadetToken_Suffix_good;гуд;x
+GetCadetToken_Suffix_thorne;торн;x
+GetCadetToken_Suffix_spoon;спун;x
+GetCadetToken_Suffix_brand;бренд;x
+GetCadetToken_Suffix_spear;спир;x
+GetCadetToken_Suffix_berry;берри;x
+GetCadetToken_Suffix_shaw;шоу;x
+GetCadetToken_Suffix_wayner;уэйнер;x
+GetCadetToken_Suffix_cross;кросс;x
+GetCadetToken_Suffix_ridge;ридж;x
+GetCadetToken_Suffix_house;хаус;x
+GetCadetToken_Suffix_brook;брук;x
+GetCadetToken_Suffix_wright;райт;x
+GetCadetToken_Suffix_shire;шир;x
+GetCadetToken_Suffix_mouth;мот;x
+GetCadetToken_Suffix_mon;мон;x
+GetCadetToken_Suffix_gurt;гурт;x
+GetCadetToken_Suffix_staff;стафф;x
+GetCadetToken_Suffix_rion;рион;x
+GetCadetToken_Suffix_woody;вуди;x
+GetCadetToken_GetHouseSymbol_Fallback;[This.GetCadetToken_Suffix];x

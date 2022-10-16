@@ -1,231 +1,231 @@
-#CODE;ENGLISH;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.1;[Root.GetTitledFirstNameNoRegnal], меня несправедливо заключил[FromFrom.Host.GetEndA] в тюрьму [FromFrom.Host.GetTitledFirstNameNoRegnal] и, видя, что вряд ли получу справедливое правосудие от н[FromFrom.Host.GetHerHis], я потребовал[FromFrom.GetEndA] испытание поединком, чтобы доказать свою невиновность. Как ваш[FromFrom.GetEndA] [GetFromFromRelation], Я прошу вас быть моим защитником на суде и вступиться за мою честь!\n\nС уважением,\n[FromFrom.GetTitledFirstNameWithDynastyNoRegnal];;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.1;Я буду сражаться за н[FromFrom.GetHerHis];;;;;;;;;;;;;x;;;;
-EVTOPTBtrial_by_combat.1;Я так не думаю;;;;;;;;;;;;;x;;;;
-EVTTOOLTIPtrial_by_combat.2;будет в радости от согласия;;;;;;;;;;;;;x;;;;
-EVTTOOLTIPtrial_by_combat.3;будет в разочаровании от отказа;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.2;[Root.PrimaryTitle.GetFOA], я, [From.GetTitledFirstNameWithDynastyNoRegnal], докажу мою преданность вам и выступлю на вашей стороне в испытании поединком против человека, известного как [Root.Host.GetTitledFirstNameNoRegnal];;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.2;Хорошо, теперь [Root.Host.GetTitledFirstNameNoRegnal] выберет своего защитника;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.3;[Root.GetTitle] [Root.GetFirstName], боюсь, что я не могу выступить за вас в испытании поединком, это представляет слишком большой риск для меня.\n\nС уважением,\n[From.GetTitledFirstNameWithDynastyNoRegnal];;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.3;Где [From.GetHerHis] честь?;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.4;Стражники притащили пленника по именни [From.GetFirstNameWithDynasty] из [From.GetHerHis] камеры и бросили к вашим ногам. 'Я требую справедливости, – проговорил[From.GetEndA] [From.GetSheHe], – по праву рождения и крови, я требую испытания поединком'.;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.4;У вас есть это право. Я выберу кого-нибудь, кто выступит за своего правителя;;;;;;;;;;;;;x;;;;
-EVTOPTBtrial_by_combat.4;Я принимаю. Но я не позволю моим сыновьям рисковать своей жизнью, возможно, кто-то из вас готов сражаться?;;;;;;;;;;;;;x;;;;
-EVTOPTCtrial_by_combat.4;Я соглашаюсь. Нам придется тянуть жребий.;;;;;;;;;;;;;x;;;;
-EVTOPTDtrial_by_combat.4;Я лично выйду на поединок.;;;;;;;;;;;;;x;;;;
-EVTOPTEtrial_by_combat.4;Нет, я не могу себе позволить упустить [From.GetHerHis]. Верните узника в его камеру!;;;;;;;;;;;;;x;;;;
-EVTOPTFtrial_by_combat.4;Огонь является защитником дома [This.GetOnlyDynastyName].;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.5;Возмутительно нарушив древние законы и обычаи, [From.GetTitledFirstNameNoRegnal] отказал[From.GetEndA] вам в испытании поединком.;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.5;Они пожалеют об этом;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.6;Кто должен стать моим чемпионом в испытании поединком против персонажа [FromFrom.GetFirstNameWithDynasty]?;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.6;[champion_1.GetTitledFirstNameNoRegnal] [champion_1.GetOnlyDynastyName] искусен в обращении с оружием;;;;;;;;;;;;;x;;;;
-EVTOPTBtrial_by_combat.6;[champion_2.GetTitledFirstNameNoRegnal] [champion_2.GetOnlyDynastyName] будет храбро сражаться;;;;;;;;;;;;;x;;;;
-EVTOPTCtrial_by_combat.6;[champion_3.GetTitledFirstNameNoRegnal] [champion_3.GetOnlyDynastyName] защитит мою честь;;;;;;;;;;;;;x;;;;
-EVTOPTDtrial_by_combat.6;[champion_4.GetTitledFirstNameNoRegnal] [champion_4.GetOnlyDynastyName] сделает это;;;;;;;;;;;;;x;;;;
-EVTOPTEtrial_by_combat.6;Они столкнутся с моей Королевской гвардией.;;;;;;;;;;;;;x;;;;
-EVTOPTFtrial_by_combat.6;Никто в моем дворе не подходит;;;;;;;;;;;;;x;;;;
-TOOLTIPtrial_by_combat.6;Ранее неизвестный воин из города [Root.Capital.GetName] становится вашим защитником\n;;;;;;;;;;;;;x;;;;
-TOOLTIPCHOOSETHISPERSON;[This.GetTitledFirstNameNoRegnal] будет сражаться за вас.;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.7;Я был[GetEndA] выбран[GetEndA] защитником персонажа [From.GetTitledFirstNameNoRegnal] в испытании поединком против человека, известного как [FromFromFrom.GetTitledFirstNameNoRegnal];;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.7;Я буду защищать [From.GetHerHis] честь;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.8;[From.GetTitledFirstNameNoRegnal] выходит вперед: 'Я буду сражаться за вас, [Root.PrimaryTitle.GetFOA]'.;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.8;Хорошего боя, [From.GetTitledFirstNameNoRegnal].;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.9;Таким образом, [From.GetTitledFirstNameNoRegnal] принял[From.GetEndA] моё требование на испытание поединком и выбрал[From.GetEndA] своего защитника, теперь все готово к началу...;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.9;Это будет трудный бой;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.10;[FromFrom.GetTitledFirstNameNoRegnal] объявляет начало судебного разбирательства. [From.GetTitledFirstNameNoRegnal] будет сражаться до смерти в поединке...;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.10;Правосудие начинается...;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.11;[From.GetTitledFirstNameNoRegnal] сразил[From.GetEndA] человека, известного как [FromFrom.GetTitledFirstNameWithDynastyNoRegnal], [FromFrom.GetHerHis] план окончательно проваливается.;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.11B;[From.GetTitledFirstNameNoRegnal] убилчеловека, известного как человека, известного как [FromFrom.GetTitledFirstNameWithDynastyNoRegnal], [FromFrom.GetHerHis] план окончательно проваливается.;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.11C;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] проигрывает вам, [FromFrom.GetHerHis] план окончательно проваливаетя.;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.11D;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] был[FromFrom.GetEndA] убит[FromFrom.GetEndA] вами, [FromFrom.GetHerHis] план окончательно проваливается;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.11;[Root.Religion.GetHighGodName] благоволит мне;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.12;Вы с ужасом наблюдаете, как [FromFrom.GetTitledFirstNameNoRegnal] падает на пол, [From.GetFirstNameWithDynasty] тяжело ранит [FromFrom.GetHerHis]. Ваш пленник уходит с улыбкой на своём лице, пока весь двор смотрит с недоумением;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.12B;Вы с ужасом наблюдаете, как [FromFrom.GetTitledFirstNameNoRegnal] падает замертво, [From.GetFirstNameWithDynasty] убивает [FromFrom.GetHerHis]. Ваш пленник уходит с улыбкой на своём лице, пока весь двор смотрит с недоумением;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.12C;Вы потрясены, когда падаете на пол, [From.GetFirstNameWithDynasty] тяжело ранит вас и заставляет вас уступить. Заключенный уходит с улыбкой на своём лице, пока весь двор замер в недоумении.;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.12;Этого не может быть!;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.13;Стражники притащили пленника по имени [From.GetFirstNameWithDynasty] из [From.GetHerHis] камеры и бросили к вашим ногам. 'Я требую справедливости, – проговорил[From.GetEndA] [From.GetSheHe]. – По праву рождения и крови, я требую испытания поединком. [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] будет моим защитником'.;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.14;Я был выбран защитником персонажа [From.GetTitledFirstNameNoRegnal] в испытании поединком против персонажа [FromFromFrom.GetTitledFirstNameNoRegnal], защитника человека, известного как [FromFrom.GetTitledFirstNameNoRegnal].;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.15;[From.GetTitledFirstNameNoRegnal] выходит вперед: 'Я буду сражаться за вас, [Root.PrimaryTitle.GetFOA]'.;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.15;Хорошего боя, [From.GetTitledFirstNameNoRegnal].;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.16;[FromFrom.GetTitledFirstNameNoRegnal] выбрал[FromFrom.GetEndA] человека, известного как [From.GetTitledFirstNameNoRegnal] для поединка с моим защитником в испытании поединком;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.16;Будем надеяться, что [Root.Religion.GetHighGodName] с ним;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.17;Смело сделав шаг вперед, [From.GetTitledFirstNameNoRegnal] сам решил выйти на поединок против моего защитника.;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.17;[From.GetSheHeCap] рискнет своей собственной жизнью?;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.18;[From.GetFirstNameWithDynasty] готов[From.GetEndA] начать испытание поединком. Я должен храбро сражаться против чемпиона, которго выбрал[From.Host.GetEndA] [From.Host.GetTitledFirstNameNoRegnal].;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.18;Правосудие начинается...;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.19;[FromFrom.GetFirstNameWithDynasty] и [FromFrom.Host.GetTitledFirstNameNoRegnal] готовы приступить к испытанию поединком. Я должен победить человека, известного как [From.GetTitledFirstNameNoRegnal]...;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.19;Пусть дуэль начнется!;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.20;Ваш чемпион [FromFrom.GetFirstNameWithDynasty] пал от руки человека, известного как [From.GetTitledFirstNameNoRegnal]. Вас признали виновным.;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.20B;Ваш чемпион [FromFrom.GetFirstNameWithDynasty] пал от руки человека, известного как [From.GetTitledFirstNameNoRegnal] и был убит. Вас признали виновным.;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.20;И теперь вы будете осуждены...;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.21;Вы с ликованием наблюдаете как [FromFrom.GetTitledFirstNameNoRegnal] управляется со своим мечом, побеждая защитника человека, известного как [From.GetFirstNameWithDynasty], нанося град ударов. [Root.Religion.GetHighGodName] покинул их, а значит заключенный виновен.;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.21B;Вы с ликованием наблюдаете как [FromFrom.GetTitledFirstNameNoRegnal] управляется со своим мечом, убивая защитника человека, известного как [From.GetFirstNameWithDynasty]. [Root.Religion.GetHighGodName] покинул их, а значит заключенный виновен.;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.21C;Вы чувствуете триумф, когда [FromFromFrom.GetFirstNameWithDynasty] получает град ударов от вашего меча, и заставляя [FromFromFrom.GetHerHis] уступать. [Root.Religion.GetHighGodName] ясно высказались, а значит [From.GetFirstNameWithDynasty] винов[From.GetNaEn].;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.21D;Вы чувствуете триумф, безжалостно осыпая своего противника, известного как [FromFromFrom.GetFirstNameWithDynasty] градом ударов и нанося [FromFromFrom.GetHerHim] смертельный удар. [Root.Religion.GetHighGodName] ясно высказались, а значит [From.GetFirstNameWithDynasty] винов[From.GetNaEn].;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.21;[Root.Religion.GetHighGodName] покинул их;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.120;[From.GetTitledFirstNameWithDynastyNoRegnal] был[From.GetEndA] признан[From.GetEndA] виновн[From.GetOyYm], как повелел [Root.Religion.GetHighGodName], какое наказание [From.GetSheHe] получит?;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.120;Казнить [From.GetHerHis], [Root.Religion.GetHighGodName] хочет этого!;;;;;;;;;;;;;x;;;;
-EVTOPTBtrial_by_combat.120;Я буду милосердн[GetOyYm], отправьте [From.GetHerHis] на Стену;;;;;;;;;;;;;x;;;;
-EVTOPTCtrial_by_combat.120;Отправить [From.GetHerHis] гнить в темницу;;;;;;;;;;;;;x;;;;
-EVTOPTFtrial_by_combat.120;По закону, совет решит вашу судьбу;;;;;;;;;;;;;x;;;;
-EVTOPTDtrial_by_combat.120;[From.GetSheHeCap] может остаться здесь, как мой 'гость';;;;;;;;;;;;;x;;;;
-TOOLTIPtrial_by_combat.121;[This.GetTitledFirstName] отправится на §Rказнь§!;;;;;;;;;;;;;x;;;;
-TOOLTIPtrial_by_combat.122;[This.GetTitledFirstName] отправится в §RНочной Дозор§! и облачится в черное;;;;;;;;;;;;;x;;;;
-TOOLTIPtrial_by_combat.123;[This.GetTitledFirstName] будет гнить в §Rтемнице§!;;;;;;;;;;;;;x;;;;
-TOOLTIPtrial_by_combat.124;[This.GetTitledFirstName] останется под §Rдомашним арестом§!;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.121;Судебный поединок закончился, и вы проиграли. Глашатай объявляет волю правителя: '[Root.GetFirstNameWithDynasty], Вы были признаны виновными, и как [From.GetTitledFirstNameoftheHouse], [From.GetTitle] земли [From.PrimaryTitle.GetName], решает, вы будете казнены.';;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.122;Судебный поединок закончился, и вы проиграли. Глашатай объявляет волю правителя: '[Root.GetFirstNameWithDynasty], Вы были признаны виновными, но [From.GetTitledFirstNameoftheHouse], [From.GetTitle] земли [From.PrimaryTitle.GetName], решает проявить милосердие. Вы будете сосланы в Ночной Дозор, где примите присягу черных братьев. Вы будете защищать царство человека до конца ваших дней.';;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.123;Судебный поединок закончился, и вы проиграли. Глашатай объявляет волю правителя: '[Root.GetFirstNameWithDynasty], Вы были признаны виновными, и [From.GetTitledFirstNameoftheHouse], [From.GetTitle] земли [From.PrimaryTitle.GetName], решает немедленно заточить вас обратно в темницы, где вы были, до тех пор, пока не удостоверится, что вы получили достойный урок.';;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.124;Судебный поединок закончился, и вы проиграли. Глашатай объявляет волю правителя: '[Root.GetFirstNameWithDynasty], Вы были признаны виновными, и [From.GetTitledFirstNameoftheHouse], [From.GetTitle] земли [From.PrimaryTitle.GetName], решает содержать вас под арестом, Вам предоставят кров, уважая ваше положение и статус';;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.125;Судебный поединок закончился, и вы проиграли. Глашатай объявляет волю правителя: '[Root.GetFirstNameWithDynasty], Вы были признаны виновными, но [From.GetTitledFirstNameoftheHouse], [From.GetTitle] земли [From.PrimaryTitle.GetName], решает проявить милосердие. Вы должны быть изгнаны в священство, дать присягу и служить церкви оставшиеся вам дни';;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.126;Судебный поединок закончился, и вы проиграли. Глашатай объявляет волю правителя: '[Root.GetFirstNameWithDynasty], Вы были признаны виновными, но [From.GetTitledFirstNameoftheHouse], [From.GetTitle] земли [From.PrimaryTitle.GetName], решает проявить милосердие. Вы сохрание свою жизнь, но будете изгнаны из земли [From.PrimaryTitle.GetFullName]';;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.123;Я увижу свет снова?;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.124;По крайней мере, у меня все еще есть голова ;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.22;Вы наблюдаете со странным сочетанием ликования и облегчения, видя как [From.GetRootRelation] [From.GetTitledFirstNameNoRegnal] управляется со своим мечом, побеждая человека, известного как [FromFrom.GetTitledFirstNameWithDynastyNoRegnal]. [Root.Religion.GetHighGodName] на моей стороне, и теперь я оправдан..;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.22B;Вы наблюдаете со странным сочетанием ликования и облегчения, видя как [From.GetRootRelation] [From.GetTitledFirstNameNoRegnal] управляется с [From.GetHerHis] мечом, в итоге убивая [FromFrom.GetTitledFirstNameWithDynastyNoRegnal]. [Root.Religion.GetHighGodName] на моей стороне, и теперь я оправдан[GetEndA]..;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.22;Справедливый исход;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.23;Дело сделано. Ваш защитник получил множество ранений, и [FromFrom.GetTitledFirstNameNoRegnal] празднует победу. Вы трясетесь от ярости, видя как ваш бывший узник [From.GetFirstNameWithDynasty] уходит.;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.23B;Дело сделано. Ваш защитник лежит мертвый в луже собственной крови, и [FromFrom.GetTitledFirstNameNoRegnal] празднует победу. Вы трясетесь от ярости, видя как ваш бывший узник [From.GetFirstNameWithDynasty] уходит.;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.23C;Дело сделано. Вы лежите раненный в луже собственной крови, и [FromFrom.GetTitledFirstNameNoRegnal] празднует победу. Вы трясетесь от ярости, видя как ваш бывший узник [From.GetFirstNameWithDynasty] уходит.;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.23;Будь они прокляты!;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.24;[From.GetTitledFirstNameNoRegnal] широко улыбается. 'Очень хорошо, – говорит [From.GetSheHe]. – Теперь я назову своего чемпиона. Защитник дома [From.GetOnlyDynastyName] – Пламя! Стража, разожгите костер!';;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.24;Вот ублюдок!;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.25;Жесток[FromFrom.GetAyaIy] [FromFrom.GetTitledName] приговаривает мо[From.GetYuEgo] [From.GetRootRelation] [From.GetFirstName] к смерти через сожжение заживо на костре!;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.26;[From.GetTitledFirstNameNoRegnal] широко улыбается. 'Очень хорошо, – говорит [From.GetSheHe]. – Теперь я назову своего защитника. Защитник дома [From.GetOnlyDynastyName] – Пламя! Стража, разожгите костер!';;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_combat.26;Видимо, это смерть...;;;;;;;;;;;;;x;;;;
-EVTTOOLTIPtrial_by_combat.24;будет сожжен заживо.;;;;;;;;;;;;;x;;;;
-EVTTOOLTIPtrial_by_combat.26;Будет осужден;;;;;;;;;;;;;x;;;;
-TOOLTIPEVTtrial_by_combat.26;[This.GetTitledFirstNameNoRegnal] будет сожжен заживо;;;;;;;;;;;;;x;;;;
-TOOLTIPtrial_by_combat.5;будет возмущен вашим нарушением его прав;;;;;;;;;;;;;x;;;;
-TOOLTIPFIGHTTHISPERSON_HOST;Вы будете сражаться с персонажем [This.GetTitledFirstNameNoRegnal] лично.;;;;;;;;;;;;;x;;;;
-TOOLTIPFIGHTTHISPERSON;Вы будете сражаться с персонажем [This.GetTitledFirstNameNoRegnal];;;;;;;;;;;;;x;;;;
-TOOLTIPEVTOPTD250299;[This.GetTitledFirstNameNoRegnal] будет сожжен заживо;;;;;;;;;;;;;x;;;;
-TOOLTIPFIGHTTHISPERSON_HOST_CHAMP;[This.GetTitledFirstNameNoRegnal] будет сражаться с персонажем [From.GetTitledFirstNameNoRegnal];;;;;;;;;;;;;x;;;;
-TOOLTIPFIGHTTHISPERSON_CHAMP;[This.GetTitledFirstNameNoRegnal] будет сражаться с персонажем [FromFrom.GetTitledFirstNameNoRegnal];;;;;;;;;;;;;x;;;;
-host_of_prisoner;В испытании поединком;;;;;;;;;;;;;x;;;;
-trial_champion;Защитник для испытания поединком.;;;;;;;;;;;;;x;;;;
-demand_trial_by_combat;Потребовать защитника для испытания поединком.;;;;;;;;;;;;;x;;;;
-demand_trial_by_combat_desc;Как узник и человек высокого происхождения, вы имеете право на испытание поединком;;;;;;;;;;;;;x;;;;
-TOOLTIPTRIALBYCOMBAT1;Вы должны выбрать, кто будет защищать ваши права;;;;;;;;;;;;;x;;;;
-tbc_fight_personally;Лично защищать свои права в поединке.;;;;;;;;;;;;;x;;;;
-tbc_fight_personally_desc;Любой благородный Лорд имеет право на испытание поединком, сообщите персонажу [Root.Host.GetTitledFirstNameNoRegnal], что вы требуете свое право.;;;;;;;;;;;;;x;;;;
-TOOLTIPTRIALBYCOMBAT2;Ваш тюремщик, [Root.Host.GetTitledFirstNameNoRegnal], услышит ваше требование поединка.;;;;;;;;;;;;;x;;;;
-tbc_dynasty_champion;Просить, чтобы [Root.GetFirstNameWithDynasty] стал вашим защитником;;;;;;;;;;;;;x;;;;
-tbc_dynasty_champion_desc;Любой благородный Лорд имеет право назначить защитника для защиты его прав на испытании поединком, вы можете попросить, чтобы [Root.GetTitledFirstNameNoRegnal] вышел за вас.;;;;;;;;;;;;;x;;;;
-TOOLTIPTRIALBYCOMBAT3;[Root.GetTitledFirstNameNoRegnal] рассмотрит вашу просьбу быть вашим чемпионом;;;;;;;;;;;;;x;;;;
-tbc_vassal_champion;[Root.GetBestName] рассмотрит вашу просьбу быть вашим чемпионом;;;;;;;;;;;;;x;;;;
-tbc_vassal_champion_desc;Любой благородный Лорд имеет право назначить чемпиона для защиты его прав на испытании поединком, вы можете попросить, чтобы [Root.GetTitledFirstNameNoRegnal] вышел за вас.;;;;;;;;;;;;;x;;;;
-champion_of_liege;Защитник для испытания поединком.;;;;;;;;;;;;;x;;;;
-refused_championing;Отказавается быть защитником;;;;;;;;;;;;;x;;;;
-denied_trial_by_combat;Отказано в испытании поединком.;;;;;;;;;;;;;x;;;;
-champion_of_relative;Защитник для испытания поединком.;;;;;;;;;;;;;x;;;;
-TOOLTIPAtrial_by_combat.7;Отказано в испытании поединком.;;;;;;;;;;;;;x;;;;
-tbc_champion;Попросить вашего Защитника;;;;;;;;;;;;;x;;;;
-tbc_champion_desc;Любой благородный лорд может назначить Защитника отстаивать ваши интересы в поединке, вы можете назначить персонажа [Root.GetTitledFirstNameWithDynastyNoRegnal].;;;;;;;;;;;;;x;;;;
-tbc_champion_named;Назначить персонажа [Root.GetTitledFirstNameWithDynastyNoRegnal] своим Защитником.;;;;;;;;;;;;;x;;;;
-EVTOPTCtrial.0;Я взываю к Суду Семерых!;;;;;;;;;;;;;x;;;;
-TOOLTIPtrial_by_seven.1;Вы сразитесь с персонажем [FromFrom.GetTitledFirstNameNoRegnal] на Суде Семерых. С каждой стороны должно быть по семь чемпионов для начала сражения.;;;;;;;;;;;;;x;;;;
-trial_by_seven_champion;Попросить стать Защитником;;;;;;;;;;;;;x;;;;
-trial_by_seven_champion_desc;Вы решили сразиться с персонажем [From.Liege.GetTitledFirstNameNoRegnal] на Суде Семерых, и поэтому вы можете попросить, чтобы [Root.GetTitledFirstNameWithDynastyNoRegnal] стал одним из ваших семерых.;;;;;;;;;;;;;x;;;;
-trial_by_seven_champion_named;Попросить персонажа [Root.GetTitledFirstNameWithDynastyNoRegnal] стать Защитником;;;;;;;;;;;;;x;;;;
-TOOLTIPTRIALBYSEVEN2;[Root.GetTitledFirstNameNoRegnal] ответит на ваш запрос\n;;;;;;;;;;;;;x;;;;
-TOOLTIPTRIALBYSEVEN2KG;Поскольку семеро королевских гвардейцев должны по возможности защищать королевскую семью, [Root.GetTitledFirstNameNoRegnal] будет лишь заменой для поверженного королевского гвардейца\n;;;;;;;;;;;;;x;;;;
-EVTTITLEtrial_by_seven_1;Суд Семерых;;;;;;;;;;;;;x;;;;
-EVTDESCAtrial_by_seven_1;Суд Семерых - это форма суда в виде поединка, связанная с Верой в Семерых и Андальской традицией. Андалы верили в то, что если с каждой противоборствующей стороны сразится семь чемпионов, польщенные боги, таким образом, будут более склонны к проявлению справедливости. Вы решили вызвать человека, известного как [FromFromFrom.GetTitledFirstNameNoRegnal] на этот поединок, чтобы доказать вашу невиновность перед богами, и теперь вам нужно найти шесть защитников, готовых сражаться с вами бок о бок.;;;;;;;;;;;;;x;;;;
-EVTDESCBtrial_by_seven_1;Суд Семерых - это форма суда в виде поединка, связанная с Верой в Семерых и Андальской традицией. Андалы верили в то, что если с каждой противоборствующей стороны сразится семь чемпионов, польщенные боги, таким образом, будут более склонны к проявлению справедливости.\n\n[From.GetTitledFirstNameWithDynastyNoRegnal] вызвал вас на этот поединок, чтобы доказать свою невиновность перед богами, и теперь вы должны выбрать шестерых своих защитников, чтобы доказать обратное.;;;;;;;;;;;;;x;;;;
-EVTDESCAtrial_by_seven.70;Суд Семерых - это форма суда в виде поединка, связанная с Верой в Семерых и Андальской традицией. Андалы верили в то, что если с каждой противоборствующей стороны сразится семь чемпионов, польщенные боги, таким образом, будут более склонны к проявлению справедливости.\n\n[From.GetTitledFirstNameWithDynastyNoRegnal] вызвал персонажа [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] на этот поединок, чтобы попытаться доказать свою невинность перед богами, и оба они призвали шестерых защитников в город [FromFrom.Capital.GetName] для сражения за их правоту.;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_seven_1;Я покажу себя перед богами.;;;;;;;;;;;;;x;;;;
-TOOLTIPtrial_by_seven_1;У персонажа [This.GetTitledFirstNameNoRegnal] есть §Y28§! дней для поиска чемпионов, готовых сразиться за н[This.GetHerHis] на одной стороне.\n§RЗАМЕЧАНИЕ:§!Чемпионы выбираются через дипломатическое взаимодействие. Неудача в поиске шестерых чемпионов приведет к суду при дворе.;;;;;;;;;;;;;x;;;;
-EVTOPTBtrial_by_seven_1;Семеро докажут [From.GetHerHis] вину;;;;;;;;;;;;;x;;;;
-EVTOPTEtrial_by_seven_1;Семеро Королевских гвардейцев будут сражаться за меня.;;;;;;;;;;;;;x;;;;
-TOOLTIPtrial_by_seven_1B;У персонажа [This.GetTitledFirstNameNoRegnal] есть 28 дней для поиска защитников, готовых сражаться вместе с ним;;;;;;;;;;;;;x;;;;
-TOOLTIPtrial_by_seven_1C;Семеро членов королевской гвардии буду сражаться вместе с персонажем [This.GetTitledFirstNameNoRegnal], любой, кто не сможет сражаться, должен быть заменен человеком, которого назначит [This.GetTitle]\n;;;;;;;;;;;;;x;;;;
-trial_by_seven;Суд Семерых;;;;;;;;;;;;;x;;;;
-EVTOPTDtrial_by_seven_1;Я буду сражаться лично!;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_seven_70;Семеро рассудят их;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_seven_70B;Я буду яростно сражаться за человека, известного как [From.GetTitledFirstNameNoRegnal];;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_seven_70C;М[FromFrom.GetOyaOy] [FromFrom.GetTitle] долж[FromFrom.GetNaEn] быть оправдан[FromFrom.GetEndA];;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_seven.2;[Root.GetTitledFirstNameNoRegnal], я был[FromFrom.GetEndA] несправедливо заключен[FromFrom.GetEndA] в тюрьму человеком, известным как [FromFrom.Host.GetTitledFirstNameNoRegnal] и убеждаясь в том, что я могу получить справедливый суд только от богов, я потребовал[FromFrom.GetEndA] суд Семерых для доказательства моей невиновности. Как ваш[FromFrom.GetEndA] [GetFromFromRelation], я заклинаю вас стать одним из моих семи защитников, чтобы защитить мою честь!\n\n Подпись,\n[FromFrom.GetTitledFirstNameWithDynastyNoRegnal];;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_seven.2;Я буду сражаться за н[FromFrom.GetHerHis] перед богами;;;;;;;;;;;;;x;;;;
-EVTOPTBtrial_by_seven.2;Нет, я не буду одним из ваших Семерых;;;;;;;;;;;;;x;;;;
-EVTTOOLTIPtrial_by_seven.3;Вы будете сражаться за персонажа [FromFrom.GetTitledFirstNameNoRegnal] как один из [FromFrom.GetHerHis] семи защитников.;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_seven.3;[Root.PrimaryTitle.GetFOA], Я, [From.GetTitledFirstNameWithDynastyNoRegnal], почту за честь биться с вами бок о бок перед взором богов на вашем Суде Семерых против человека, известного как [Root.Host.GetTitledFirstNameNoRegnal];;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_seven.3;Да направят нас Семеро!;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_seven.4;[Root.GetTitle] [Root.GetFirstName], боюсь, я не смогу сражаться вместе с вами на Суде Семерых, так как это представляет большой риск для моей личности\n\nС уважением,\n[From.GetTitledFirstNameWithDynastyNoRegnal];;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_seven.4;Где же [From.GetHerHis] честь?;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_seven.6;Ваши защитники собрались в городе [Root.Capital.Capital.GetName], готовые к Суду Семерых. [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] и [From.GetHerHis] защитники вскоре также прибывают, обе стороны теперь в полном сборе и готовы сражаться друг с другом перед богами.;;;;;;;;;;;;;x;;;;
-EVTOPTtrial_by_seven.6;И пусть начнется Суд!;;;;;;;;;;;;;x;;;;
-TOOLTIPtrial_by_sevenSELF;Вы лично сражаетесь в поединке\n;;;;;;;;;;;;;x;;;;
-TOOLTIPtrial_by_sevenCHAMPIONS;[This.GetTitledFirstNameWithDynastyNoRegnal] - один из ваших чемпионов\n;;;;;;;;;;;;;x;;;;
-TOOLTIPtrial_by_sevenCHAMPIONS_ENEMY;[This.GetTitledFirstNameWithDynastyNoRegnal] - один из чемпионов противника\n;;;;;;;;;;;;;x;;;;
-TOOLTIPtrial_by_seven.8;Поединок начинается;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_seven.7;Ваши защитники собрались в городе [Root.Capital.Capital.GetName], готовые к Суду Семерых. [From.GetTitledFirstNameWithDynastyNoRegnal] и [From.GetHerHis] защитники вскоре также прибывают, обе стороны теперь в полном сборе и готовы сражаться друг с другом перед богами.;;;;;;;;;;;;;x;;;;
-EVTOPTtrial_by_seven.7;Пусть боги защитят меня;;;;;;;;;;;;;x;;;;
-TOOLTIPtrial_by_sevenENEMYSELF;[This.GetTitledFirstNameWithDynastyNoRegnal] сражается лично\n;;;;;;;;;;;;;x;;;;
-TOOLTIPtrial_by_sevenCHAMPIONS_OTHER;[This.GetTitledFirstNameWithDynastyNoRegnal] - один из защитников персонажа [Prev.GetTitledFirstNameNoRegnal]\n;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_seven_9;В ближнем бою вы находите вражеского защитника и сражаетесь...;;;;;;;;;;;;;x;;;;
-EVTOPTtrial_by_seven_9;Семеро приведут меня к победе!;;;;;;;;;;;;;x;;;;
-TOOLTIPtrial_by_seven_10;Вы атакуете персонажа [This.GetTitledFirstNameWithDynastyNoRegnal]…;;;;;;;;;;;;;x;;;;
-TOOLTIPtrial_by_seven_10B;Вы атакуете персонажа [From.GetTitledFirstNameWithDynastyNoRegnal]…;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_seven_11;Вы убили персонажа [FromFrom.GetTitledFirstNameWithDynastyNoRegnal], оставив для противостояния на одного защитника меньше.;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_seven_11B;Вы одержали верх над персонажем [FromFrom.GetTitledFirstNameWithDynastyNoRegnal], вынуждая [From.GetHerHis] сдаться, оставив для противостояния на одного чемпиона меньше.;;;;;;;;;;;;;x;;;;
-EVTOPTtrial_by_seven_11;Боги однозначно на моей стороне;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_seven_12;В поединке ближнего боя, [From.GetTitledFirstNameWithDynastyNoRegnal] убил чемпиона [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] в яростной дуэли.;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_seven_12B;[From.GetTitledFirstNameWithDynastyNoRegnal] сразился и одержал верх над чемпионом [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] в ближнем бою, вынуждая [FromFromFrom.GetHerHis] сдаться и покинуть поле боя.;;;;;;;;;;;;;x;;;;
-EVTOPTtrial_by_seven_12;Кто же победит?;;;;;;;;;;;;;x;;;;
-EVTOPTtrial_by_seven_12B;Мы потерпели поражение!;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_seven_13;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] и [FromFrom.GetHerHis] защитники были повержены, явно доказав свою вину перед богами. Теперь вам нужно выбрать справедливое наказание...;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_seven_13B;Посреди рукопашного боя, [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] был убит, таким образом доказав свою вину перед богами.;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_seven_13;Семеро осудили [FromFrom.GetHerHis];;;;;;;;;;;;;x;;;;
-EVTOPTBtrial_by_seven_13;Я приговариваю вас к смерти, так хотят боги;;;;;;;;;;;;;x;;;;
-EVTOPTCtrial_by_seven_13;Я проявлю милосердие и позволю вам надеть чёрное;;;;;;;;;;;;;x;;;;
-EVTOPTDtrial_by_seven_13;Я проявлю милосердие и позволю вам уйти в жрецы;;;;;;;;;;;;;x;;;;
-EVTOPTEtrial_by_seven_13;Оставить [FromFrom.GetHerHis] гнить в подземелье;;;;;;;;;;;;;x;;;;
-#EVTOPTFtrial_by_seven_13;[FromFrom.GetSheHeCap] может остаться здесь как мой 'гость';;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_seven_14;[FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] и [FromFrom.GetHerHis] защитники были повержены, явно доказав свою вину перед богами. Теперь вам нужно выбрать справедливое наказание.;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_seven_14B;Посреди рукопашного боя, [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] был убит, таким образом доказав свою вину перед богами.;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_seven_14;Боги явно благословили нас;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_seven_15;Вы и ваши защитники, защищающие персонажа [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal], были побеждены, явно доказав свою вину перед богами.;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_seven_15B;Посреди рукопашного боя, [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] был убит, явно доказав свою вину перед богами.;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_seven_15;Семеро были не на нашей стороне;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_seven.16;После изнурительного рукопашного боя, вы и ваши защитники одержали победу! Таким образом, ваша невиновность доказана перед богами, и вы освобождены от заключения персонажа  [From.GetTitledFirstNameNoRegnal].;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_seven.16;Боги посчитали, что нет моей вины;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_seven.17;После изнурительного ближнего боя, вы и ваши защитники, защищающие персонажа [From.GetTitledFirstNameNoRegnal], одержали победу! Таким образом [From.GetHerHis] невиновность доказана перед богами, и [From.GetSheHe] освобождается от заключения персонажа [FromFrom.GetTitledFirstNameNoRegnal].;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_seven.17;Боги посчитали [From.GetHerHis] невиновн[From.GetOyYm];;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_seven.18;После изнурительного ближнего боя, вы не смогли победить. [From.GetTitledFirstNameNoRegnal] и [From.GetHerHis] защитники победили вас в одном бою, таким образом [From.GetHerHis] невиновность доказана перед богами.;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_seven.18;Семеро были не на нашей стороне;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_seven.20;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal], ваш предводитель [FromFrom.PrimaryTitle.GetName], погиб сражаясь на Суде Семерых против персонажа [From.GetTitledFirstNameWithDynastyNoRegnal].  Но, так или иначе, это не значит, что поединок прекратится...;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_seven.20;Рукопашная схватка продолжается...;;;;;;;;;;;;;x;;;;
-EVTOPTGtrial_by_combat.4;Одному из моих воинов придется сражаться;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_seven_159;[FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] и [FromFromFrom.GetHerHis] защитники были побеждены, и поэтому [FromFromFrom.GetHerHis] вина доказана перед богами.;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_seven_159B;В разгаре схватки [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] был убит, явно доказав свою вину перед богами.;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_seven_159;Боги отвернулись от н[FromFromFrom.GetHerHis];;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_seven.189;После изнурительной схватки, [From.GetTitledFirstNameNoRegnal] и [From.GetHerHis] защитники победили! Таким образом, [From.GetHerHis] невиновность доказана в глазах богов, и [From.GetSheHe] будет освобожден из плена персонажа [FromFrom.GetTitledFirstNameNoRegnal].;;;;;;;;;;;;;x;;;;
-EVTOPTAtrial_by_seven.189;Боги посчитали [From.GetHerHis] невиновным;;;;;;;;;;;;;x;;;;
-EVTOPTBtrial_by_seven_70;Сообщите мне о этом подробнее;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.30;[Root.PrimaryTitle.GetFOA], новости из города [From.Capital.GetName] с испытания поединком. [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] потребовал[FromFromFrom.GetEndA] суда поединком у своего тюремщика, известного как [From.GetTitledFirstNameWithDynastyNoRegnal], но пал[FromFromFrom.GetEndA] от руки своего противника, известного как [FromFrom.GetTitledFirstNameWithDynastyNoRegnal].;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.30B;[Root.PrimaryTitle.GetFOA], новости из города [From.Capital.GetName] с испытания поединком. [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] потребовал[FromFromFrom.GetEndA] суда поединком у своего тюремщика, известного как [From.GetTitledFirstNameWithDynastyNoRegnal], но был[FromFromFrom.GetEndA] побежден[FromFromFrom.GetEndA] противником, известным как [FromFrom.GetTitledFirstNameWithDynastyNoRegnal]. Как следствие, [FromFromFrom.GetTitledFirstNameNoRegnal] испытывает наказание [FromFromFrom.GetTrialPunishment].;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.31;[Root.PrimaryTitle.GetFOA], новости из города [From.Capital.GetName] с испытания поединком. [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] потребовал[FromFrom.GetEndA] суда поединком у своего тюремщика, известного как [From.GetTitledFirstNameWithDynastyNoRegnal], и доказал[FromFrom.GetEndA] свою невиновность, убив своего протвника, известного как [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal].;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.31B;[Root.PrimaryTitle.GetFOA], новости из города [From.Capital.GetName] с испытания поединком. [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] потребовал[FromFrom.GetEndA] суда поединком у своего тюремщика, известного как [From.GetTitledFirstNameWithDynastyNoRegnal], и доказал[FromFrom.GetEndA] свою невиновность, принудив противника, известного как [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] сдаться.;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.32;[Root.PrimaryTitle.GetFOA], новости из города [From.Capital.GetName] с испытания поединком. [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] потребовал[FromFrom.GetEndA] суда поединком у своего тюремщика, известного как [From.GetTitledFirstNameWithDynastyNoRegnal], при этом [FromFromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] был защитником. [FromFromFromFrom.GetTitledFirstNameNoRegnal] был[FromFromFromFrom.GetEndA] убит [FromFromFromFrom.GetHerHis] противником , известным как [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal], что доказало вину персонажа [FromFrom.GetTitledFirstNameNoRegnal]. Как следствие, [FromFrom.GetTitledFirstNameNoRegnal] испытывает наказание [FromFrom.GetTrialPunishment].;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.32B;[Root.PrimaryTitle.GetFOA], новости из города [From.Capital.GetName] с испытания поединком. [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] потребовал[FromFrom.GetEndA] суда поединком у своего тюремщика, известного как [From.GetTitledFirstNameWithDynastyNoRegnal], при этом [FromFromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] был защитником. [FromFromFromFrom.GetTitledFirstNameNoRegnal] был[FromFromFromFrom.GetEndA] принужден[FromFromFromFrom.GetEndA] сдаться [FromFromFromFrom.GetHerHis] противником, известным как [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal], что доказало вину персонажа [FromFrom.GetTitledFirstNameNoRegnal]. Как следствие, [FromFrom.GetTitledFirstNameNoRegnal] испытывает наказание [FromFrom.GetTrialPunishment].;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.33;[Root.PrimaryTitle.GetFOA], новости из города [From.Capital.GetName] с испытания поединком. [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] потребовал[FromFrom.GetEndA] суда поединком у своего тюремщика, известного как [From.GetTitledFirstNameWithDynastyNoRegnal], при этом [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] был защитником. [FromFromFrom.GetTitledFirstNameNoRegnal] убил[FromFromFrom.GetEndA] своего противника, известного как [FromFromFromFrom.GetTitledFirstNameWithDynastyNoRegnal], доказав, что [FromFrom.GetTitledFirstNameNoRegnal] винов[FromFrom.GetNaEn].;;;;;;;;;;;;;x;;;;
-EVTDESCtrial_by_combat.33B;[Root.PrimaryTitle.GetFOA], новости из города [From.Capital.GetName] с испытания поединком. [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] потребовал[FromFrom.GetEndA] суда поединком у своего тюремщика, известного как [From.GetTitledFirstNameWithDynastyNoRegnal], при этом [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] был защитником.. [FromFromFrom.GetTitledFirstNameNoRegnal] заставил[FromFromFrom.GetEndA] сдаться своего противника, известного как [FromFromFromFrom.GetTitledFirstNameWithDynastyNoRegnal], доказав, что [FromFrom.GetTitledFirstNameNoRegnal] не винов[FromFrom.GetNaEn].;;;;;;;;;;;;;x;;;;
-GetTrialPunishmentExecution;[This.GetDeathReason];;;;;;;;;;;;;x;;;;
-GetTrialPunishmentNightswatch;был вынужден облачиться в черное как брат Ночного Дозора;;;;;;;;;;;;;;;;;x
-GetTrialPunishmentNightswatchEscaped;был вынужден облачиться в черное как брат Ночного Дозора, но избежал наказания по дороге на Стену;;;;;;;;;;;;;;;;;x
-GetTrialPunishmentSilentSister;была вынуждена принять обеты Молчаливой Сестры;;;;;;;;;;;;;;;;;x
-GetTrialPunishmentGrace;была вынуждена принять обеты Благодати;;;;;;;;;;;;;;;;;x
-GetTrialPunishmentDungeon;заключение в подземелье города [This.Location.Capital.GetName];;;;;;;;;;;;;;;;;x
-GetTrialPunishmentHouseArrest;заключение под домашний арест;;;;;;;;;;;;;;;;;x
-GetTrialPunishmentCouncil;взятие под стражу до тех пор, пока совет не вынесет решение о наказании;;;;;;;;;;;;;;;;;x
-GetTrialPunishmentExiled;изгнание из земель;;;;;;;;;;;;;;;;;x
-GetTrialPunishmentReleased;было проявлено милосердие;;;;;;;;;;;;;;;;;x
-EVTDESCtrial_by_combat.999;Суд поединком - это древний обычай, который может быть использован для разрешения обвинений или споров в бою, но который может привести к смерти. Вы объявили человеку, известному как [Root.Host.GetTitledFirstNameWithDynastyNoRegnal] о вашем праве настаивать на суде поединком, и теперь должны выбрать зашитника.;;;;;;;;;;;;;;;;;x
-EVTOPTAtrial_by_combat.999;Я докажу свою невиновность;;;;;;;;;;;;;;;;;x
-TOOLTIPtrial_by_combat.999;Вы можете, если имеете право, сражаться сами (решение в меню интриг) или выбрать защитника, который встанет за вас (щелкните правой кнопкой мыши на вассала/родственника);;;;;;;;;;;;;;;;;x
-OPTNOINFORMTRIALCOMBAT;Не сообщайте мне о испытаниях в бою;;;;;;;;;;;;;;;;;x
-TOOLTIPtrial_by_combat_KG;Если он Королевский гвардеец, то должен сражаться за Железный Трон;;;;;;;;;;;;;;;;;x
-TOOLTIPtrial_by_combat_SLAVE;НЕ раб;;;;;;;;;;;;;;;;;x
-TOOLTIPtbc_ongoing;НЕ участвует в текущем суде поединком;;;;;;;;;;;;;;;;;x
-EVTOPTFtrial_by_seven_13;Настоящим, я изгоняю вас из земли [Root.PrimaryTitle.GetFullName];;;;;;;;;;;;;;;;;x
+#CODE;ENGLISH;x
+EVTDESCtrial_by_combat.1;[Root.GetTitledFirstNameNoRegnal], меня несправедливо заключил[FromFrom.Host.GetEndA] в тюрьму [FromFrom.Host.GetTitledFirstNameNoRegnal] и, видя, что вряд ли получу справедливое правосудие от н[FromFrom.Host.GetHerHis], я потребовал[FromFrom.GetEndA] испытание поединком, чтобы доказать свою невиновность. Как ваш[FromFrom.GetEndA] [GetFromFromRelation], Я прошу вас быть моим защитником на суде и вступиться за мою честь!\n\nС уважением,\n[FromFrom.GetTitledFirstNameWithDynastyNoRegnal];x
+EVTOPTAtrial_by_combat.1;Я буду сражаться за н[FromFrom.GetHerHis];x
+EVTOPTBtrial_by_combat.1;Я так не думаю;x
+EVTTOOLTIPtrial_by_combat.2;будет в радости от согласия;x
+EVTTOOLTIPtrial_by_combat.3;будет в разочаровании от отказа;x
+EVTDESCtrial_by_combat.2;[Root.PrimaryTitle.GetFOA], я, [From.GetTitledFirstNameWithDynastyNoRegnal], докажу мою преданность вам и выступлю на вашей стороне в испытании поединком против человека, известного как [Root.Host.GetTitledFirstNameNoRegnal];x
+EVTOPTAtrial_by_combat.2;Хорошо, теперь [Root.Host.GetTitledFirstNameNoRegnal] выберет своего защитника;x
+EVTDESCtrial_by_combat.3;[Root.GetTitle] [Root.GetFirstName], боюсь, что я не могу выступить за вас в испытании поединком, это представляет слишком большой риск для меня.\n\nС уважением,\n[From.GetTitledFirstNameWithDynastyNoRegnal];x
+EVTOPTAtrial_by_combat.3;Где [From.GetHerHis] честь?;x
+EVTDESCtrial_by_combat.4;Стражники притащили пленника по именни [From.GetFirstNameWithDynasty] из [From.GetHerHis] камеры и бросили к вашим ногам. 'Я требую справедливости, – проговорил[From.GetEndA] [From.GetSheHe], – по праву рождения и крови, я требую испытания поединком'.;x
+EVTOPTAtrial_by_combat.4;У вас есть это право. Я выберу кого-нибудь, кто выступит за своего правителя;x
+EVTOPTBtrial_by_combat.4;Я принимаю. Но я не позволю моим сыновьям рисковать своей жизнью, возможно, кто-то из вас готов сражаться?;x
+EVTOPTCtrial_by_combat.4;Я соглашаюсь. Нам придется тянуть жребий.;x
+EVTOPTDtrial_by_combat.4;Я лично выйду на поединок.;x
+EVTOPTEtrial_by_combat.4;Нет, я не могу себе позволить упустить [From.GetHerHis]. Верните узника в его камеру!;x
+EVTOPTFtrial_by_combat.4;Огонь является защитником дома [This.GetOnlyDynastyName].;x
+EVTDESCtrial_by_combat.5;Возмутительно нарушив древние законы и обычаи, [From.GetTitledFirstNameNoRegnal] отказал[From.GetEndA] вам в испытании поединком.;x
+EVTOPTAtrial_by_combat.5;Они пожалеют об этом;x
+EVTDESCtrial_by_combat.6;Кто должен стать моим чемпионом в испытании поединком против персонажа [FromFrom.GetFirstNameWithDynasty]?;x
+EVTOPTAtrial_by_combat.6;[champion_1.GetTitledFirstNameNoRegnal] [champion_1.GetOnlyDynastyName] искусен в обращении с оружием;x
+EVTOPTBtrial_by_combat.6;[champion_2.GetTitledFirstNameNoRegnal] [champion_2.GetOnlyDynastyName] будет храбро сражаться;x
+EVTOPTCtrial_by_combat.6;[champion_3.GetTitledFirstNameNoRegnal] [champion_3.GetOnlyDynastyName] защитит мою честь;x
+EVTOPTDtrial_by_combat.6;[champion_4.GetTitledFirstNameNoRegnal] [champion_4.GetOnlyDynastyName] сделает это;x
+EVTOPTEtrial_by_combat.6;Они столкнутся с моей Королевской гвардией.;x
+EVTOPTFtrial_by_combat.6;Никто в моем дворе не подходит;x
+TOOLTIPtrial_by_combat.6;Ранее неизвестный воин из города [Root.Capital.GetName] становится вашим защитником\n;x
+TOOLTIPCHOOSETHISPERSON;[This.GetTitledFirstNameNoRegnal] будет сражаться за вас.;x
+EVTDESCtrial_by_combat.7;Я был[GetEndA] выбран[GetEndA] защитником персонажа [From.GetTitledFirstNameNoRegnal] в испытании поединком против человека, известного как [FromFromFrom.GetTitledFirstNameNoRegnal];x
+EVTOPTAtrial_by_combat.7;Я буду защищать [From.GetHerHis] честь;x
+EVTDESCtrial_by_combat.8;[From.GetTitledFirstNameNoRegnal] выходит вперед: 'Я буду сражаться за вас, [Root.PrimaryTitle.GetFOA]'.;x
+EVTOPTAtrial_by_combat.8;Хорошего боя, [From.GetTitledFirstNameNoRegnal].;x
+EVTDESCtrial_by_combat.9;Таким образом, [From.GetTitledFirstNameNoRegnal] принял[From.GetEndA] моё требование на испытание поединком и выбрал[From.GetEndA] своего защитника, теперь все готово к началу...;x
+EVTOPTAtrial_by_combat.9;Это будет трудный бой;x
+EVTDESCtrial_by_combat.10;[FromFrom.GetTitledFirstNameNoRegnal] объявляет начало судебного разбирательства. [From.GetTitledFirstNameNoRegnal] будет сражаться до смерти в поединке...;x
+EVTOPTAtrial_by_combat.10;Правосудие начинается...;x
+EVTDESCtrial_by_combat.11;[From.GetTitledFirstNameNoRegnal] сразил[From.GetEndA] человека, известного как [FromFrom.GetTitledFirstNameWithDynastyNoRegnal], [FromFrom.GetHerHis] план окончательно проваливается.;x
+EVTDESCtrial_by_combat.11B;[From.GetTitledFirstNameNoRegnal] убилчеловека, известного как человека, известного как [FromFrom.GetTitledFirstNameWithDynastyNoRegnal], [FromFrom.GetHerHis] план окончательно проваливается.;x
+EVTDESCtrial_by_combat.11C;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] проигрывает вам, [FromFrom.GetHerHis] план окончательно проваливаетя.;x
+EVTDESCtrial_by_combat.11D;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] был[FromFrom.GetEndA] убит[FromFrom.GetEndA] вами, [FromFrom.GetHerHis] план окончательно проваливается;x
+EVTOPTAtrial_by_combat.11;[Root.Religion.GetHighGodName] благоволит мне;x
+EVTDESCtrial_by_combat.12;Вы с ужасом наблюдаете, как [FromFrom.GetTitledFirstNameNoRegnal] падает на пол, [From.GetFirstNameWithDynasty] тяжело ранит [FromFrom.GetHerHis]. Ваш пленник уходит с улыбкой на своём лице, пока весь двор смотрит с недоумением;x
+EVTDESCtrial_by_combat.12B;Вы с ужасом наблюдаете, как [FromFrom.GetTitledFirstNameNoRegnal] падает замертво, [From.GetFirstNameWithDynasty] убивает [FromFrom.GetHerHis]. Ваш пленник уходит с улыбкой на своём лице, пока весь двор смотрит с недоумением;x
+EVTDESCtrial_by_combat.12C;Вы потрясены, когда падаете на пол, [From.GetFirstNameWithDynasty] тяжело ранит вас и заставляет вас уступить. Заключенный уходит с улыбкой на своём лице, пока весь двор замер в недоумении.;x
+EVTOPTAtrial_by_combat.12;Этого не может быть!;x
+EVTDESCtrial_by_combat.13;Стражники притащили пленника по имени [From.GetFirstNameWithDynasty] из [From.GetHerHis] камеры и бросили к вашим ногам. 'Я требую справедливости, – проговорил[From.GetEndA] [From.GetSheHe]. – По праву рождения и крови, я требую испытания поединком. [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] будет моим защитником'.;x
+EVTDESCtrial_by_combat.14;Я был выбран защитником персонажа [From.GetTitledFirstNameNoRegnal] в испытании поединком против персонажа [FromFromFrom.GetTitledFirstNameNoRegnal], защитника человека, известного как [FromFrom.GetTitledFirstNameNoRegnal].;x
+EVTDESCtrial_by_combat.15;[From.GetTitledFirstNameNoRegnal] выходит вперед: 'Я буду сражаться за вас, [Root.PrimaryTitle.GetFOA]'.;x
+EVTOPTAtrial_by_combat.15;Хорошего боя, [From.GetTitledFirstNameNoRegnal].;x
+EVTDESCtrial_by_combat.16;[FromFrom.GetTitledFirstNameNoRegnal] выбрал[FromFrom.GetEndA] человека, известного как [From.GetTitledFirstNameNoRegnal] для поединка с моим защитником в испытании поединком;x
+EVTOPTAtrial_by_combat.16;Будем надеяться, что [Root.Religion.GetHighGodName] с ним;x
+EVTDESCtrial_by_combat.17;Смело сделав шаг вперед, [From.GetTitledFirstNameNoRegnal] сам решил выйти на поединок против моего защитника.;x
+EVTOPTAtrial_by_combat.17;[From.GetSheHeCap] рискнет своей собственной жизнью?;x
+EVTDESCtrial_by_combat.18;[From.GetFirstNameWithDynasty] готов[From.GetEndA] начать испытание поединком. Я должен храбро сражаться против чемпиона, которго выбрал[From.Host.GetEndA] [From.Host.GetTitledFirstNameNoRegnal].;x
+EVTOPTAtrial_by_combat.18;Правосудие начинается...;x
+EVTDESCtrial_by_combat.19;[FromFrom.GetFirstNameWithDynasty] и [FromFrom.Host.GetTitledFirstNameNoRegnal] готовы приступить к испытанию поединком. Я должен победить человека, известного как [From.GetTitledFirstNameNoRegnal]...;x
+EVTOPTAtrial_by_combat.19;Пусть дуэль начнется!;x
+EVTDESCtrial_by_combat.20;Ваш чемпион [FromFrom.GetFirstNameWithDynasty] пал от руки человека, известного как [From.GetTitledFirstNameNoRegnal]. Вас признали виновным.;x
+EVTDESCtrial_by_combat.20B;Ваш чемпион [FromFrom.GetFirstNameWithDynasty] пал от руки человека, известного как [From.GetTitledFirstNameNoRegnal] и был убит. Вас признали виновным.;x
+EVTOPTAtrial_by_combat.20;И теперь вы будете осуждены...;x
+EVTDESCtrial_by_combat.21;Вы с ликованием наблюдаете как [FromFrom.GetTitledFirstNameNoRegnal] управляется со своим мечом, побеждая защитника человека, известного как [From.GetFirstNameWithDynasty], нанося град ударов. [Root.Religion.GetHighGodName] покинул их, а значит заключенный виновен.;x
+EVTDESCtrial_by_combat.21B;Вы с ликованием наблюдаете как [FromFrom.GetTitledFirstNameNoRegnal] управляется со своим мечом, убивая защитника человека, известного как [From.GetFirstNameWithDynasty]. [Root.Religion.GetHighGodName] покинул их, а значит заключенный виновен.;x
+EVTDESCtrial_by_combat.21C;Вы чувствуете триумф, когда [FromFromFrom.GetFirstNameWithDynasty] получает град ударов от вашего меча, и заставляя [FromFromFrom.GetHerHis] уступать. [Root.Religion.GetHighGodName] ясно высказались, а значит [From.GetFirstNameWithDynasty] винов[From.GetNaEn].;x
+EVTDESCtrial_by_combat.21D;Вы чувствуете триумф, безжалостно осыпая своего противника, известного как [FromFromFrom.GetFirstNameWithDynasty] градом ударов и нанося [FromFromFrom.GetHerHim] смертельный удар. [Root.Religion.GetHighGodName] ясно высказались, а значит [From.GetFirstNameWithDynasty] винов[From.GetNaEn].;x
+EVTOPTAtrial_by_combat.21;[Root.Religion.GetHighGodName] покинул их;x
+EVTDESCtrial_by_combat.120;[From.GetTitledFirstNameWithDynastyNoRegnal] был[From.GetEndA] признан[From.GetEndA] виновн[From.GetOyYm], как повелел [Root.Religion.GetHighGodName], какое наказание [From.GetSheHe] получит?;x
+EVTOPTAtrial_by_combat.120;Казнить [From.GetHerHis], [Root.Religion.GetHighGodName] хочет этого!;x
+EVTOPTBtrial_by_combat.120;Я буду милосердн[GetOyYm], отправьте [From.GetHerHis] на Стену;x
+EVTOPTCtrial_by_combat.120;Отправить [From.GetHerHis] гнить в темницу;x
+EVTOPTFtrial_by_combat.120;По закону, совет решит вашу судьбу;x
+EVTOPTDtrial_by_combat.120;[From.GetSheHeCap] может остаться здесь, как мой 'гость';x
+TOOLTIPtrial_by_combat.121;[This.GetTitledFirstName] отправится на §Rказнь§!;x
+TOOLTIPtrial_by_combat.122;[This.GetTitledFirstName] отправится в §RНочной Дозор§! и облачится в черное;x
+TOOLTIPtrial_by_combat.123;[This.GetTitledFirstName] будет гнить в §Rтемнице§!;x
+TOOLTIPtrial_by_combat.124;[This.GetTitledFirstName] останется под §Rдомашним арестом§!;x
+EVTDESCtrial_by_combat.121;Судебный поединок закончился, и вы проиграли. Глашатай объявляет волю правителя: '[Root.GetFirstNameWithDynasty], Вы были признаны виновными, и как [From.GetTitledFirstNameoftheHouse], [From.GetTitle] земли [From.PrimaryTitle.GetName], решает, вы будете казнены.';x
+EVTDESCtrial_by_combat.122;Судебный поединок закончился, и вы проиграли. Глашатай объявляет волю правителя: '[Root.GetFirstNameWithDynasty], Вы были признаны виновными, но [From.GetTitledFirstNameoftheHouse], [From.GetTitle] земли [From.PrimaryTitle.GetName], решает проявить милосердие. Вы будете сосланы в Ночной Дозор, где примите присягу черных братьев. Вы будете защищать царство человека до конца ваших дней.';x
+EVTDESCtrial_by_combat.123;Судебный поединок закончился, и вы проиграли. Глашатай объявляет волю правителя: '[Root.GetFirstNameWithDynasty], Вы были признаны виновными, и [From.GetTitledFirstNameoftheHouse], [From.GetTitle] земли [From.PrimaryTitle.GetName], решает немедленно заточить вас обратно в темницы, где вы были, до тех пор, пока не удостоверится, что вы получили достойный урок.';x
+EVTDESCtrial_by_combat.124;Судебный поединок закончился, и вы проиграли. Глашатай объявляет волю правителя: '[Root.GetFirstNameWithDynasty], Вы были признаны виновными, и [From.GetTitledFirstNameoftheHouse], [From.GetTitle] земли [From.PrimaryTitle.GetName], решает содержать вас под арестом, Вам предоставят кров, уважая ваше положение и статус';x
+EVTDESCtrial_by_combat.125;Судебный поединок закончился, и вы проиграли. Глашатай объявляет волю правителя: '[Root.GetFirstNameWithDynasty], Вы были признаны виновными, но [From.GetTitledFirstNameoftheHouse], [From.GetTitle] земли [From.PrimaryTitle.GetName], решает проявить милосердие. Вы должны быть изгнаны в священство, дать присягу и служить церкви оставшиеся вам дни';x
+EVTDESCtrial_by_combat.126;Судебный поединок закончился, и вы проиграли. Глашатай объявляет волю правителя: '[Root.GetFirstNameWithDynasty], Вы были признаны виновными, но [From.GetTitledFirstNameoftheHouse], [From.GetTitle] земли [From.PrimaryTitle.GetName], решает проявить милосердие. Вы сохрание свою жизнь, но будете изгнаны из земли [From.PrimaryTitle.GetFullName]';x
+EVTOPTAtrial_by_combat.123;Я увижу свет снова?;x
+EVTOPTAtrial_by_combat.124;По крайней мере, у меня все еще есть голова;x
+EVTDESCtrial_by_combat.22;Вы наблюдаете со странным сочетанием ликования и облегчения, видя как [From.GetRootRelation] [From.GetTitledFirstNameNoRegnal] управляется со своим мечом, побеждая человека, известного как [FromFrom.GetTitledFirstNameWithDynastyNoRegnal]. [Root.Religion.GetHighGodName] на моей стороне, и теперь я оправдан..;x
+EVTDESCtrial_by_combat.22B;Вы наблюдаете со странным сочетанием ликования и облегчения, видя как [From.GetRootRelation] [From.GetTitledFirstNameNoRegnal] управляется с [From.GetHerHis] мечом, в итоге убивая [FromFrom.GetTitledFirstNameWithDynastyNoRegnal]. [Root.Religion.GetHighGodName] на моей стороне, и теперь я оправдан[GetEndA]..;x
+EVTOPTAtrial_by_combat.22;Справедливый исход;x
+EVTDESCtrial_by_combat.23;Дело сделано. Ваш защитник получил множество ранений, и [FromFrom.GetTitledFirstNameNoRegnal] празднует победу. Вы трясетесь от ярости, видя как ваш бывший узник [From.GetFirstNameWithDynasty] уходит.;x
+EVTDESCtrial_by_combat.23B;Дело сделано. Ваш защитник лежит мертвый в луже собственной крови, и [FromFrom.GetTitledFirstNameNoRegnal] празднует победу. Вы трясетесь от ярости, видя как ваш бывший узник [From.GetFirstNameWithDynasty] уходит.;x
+EVTDESCtrial_by_combat.23C;Дело сделано. Вы лежите раненный в луже собственной крови, и [FromFrom.GetTitledFirstNameNoRegnal] празднует победу. Вы трясетесь от ярости, видя как ваш бывший узник [From.GetFirstNameWithDynasty] уходит.;x
+EVTOPTAtrial_by_combat.23;Будь они прокляты!;x
+EVTDESCtrial_by_combat.24;[From.GetTitledFirstNameNoRegnal] широко улыбается. 'Очень хорошо, – говорит [From.GetSheHe]. – Теперь я назову своего чемпиона. Защитник дома [From.GetOnlyDynastyName] – Пламя! Стража, разожгите костер!';x
+EVTOPTAtrial_by_combat.24;Вот ублюдок!;x
+EVTDESCtrial_by_combat.25;Жесток[FromFrom.GetAyaIy] [FromFrom.GetTitledName] приговаривает мо[From.GetYuEgo] [From.GetRootRelation] [From.GetFirstName] к смерти через сожжение заживо на костре!;x
+EVTDESCtrial_by_combat.26;[From.GetTitledFirstNameNoRegnal] широко улыбается. 'Очень хорошо, – говорит [From.GetSheHe]. – Теперь я назову своего защитника. Защитник дома [From.GetOnlyDynastyName] – Пламя! Стража, разожгите костер!';x
+EVTOPTAtrial_by_combat.26;Видимо, это смерть...;x
+EVTTOOLTIPtrial_by_combat.24;будет сожжен заживо.;x
+EVTTOOLTIPtrial_by_combat.26;Будет осужден;x
+TOOLTIPEVTtrial_by_combat.26;[This.GetTitledFirstNameNoRegnal] будет сожжен заживо;x
+TOOLTIPtrial_by_combat.5;будет возмущен вашим нарушением его прав;x
+TOOLTIPFIGHTTHISPERSON_HOST;Вы будете сражаться с персонажем [This.GetTitledFirstNameNoRegnal] лично.;x
+TOOLTIPFIGHTTHISPERSON;Вы будете сражаться с персонажем [This.GetTitledFirstNameNoRegnal];x
+TOOLTIPEVTOPTD250299;[This.GetTitledFirstNameNoRegnal] будет сожжен заживо;x
+TOOLTIPFIGHTTHISPERSON_HOST_CHAMP;[This.GetTitledFirstNameNoRegnal] будет сражаться с персонажем [From.GetTitledFirstNameNoRegnal];x
+TOOLTIPFIGHTTHISPERSON_CHAMP;[This.GetTitledFirstNameNoRegnal] будет сражаться с персонажем [FromFrom.GetTitledFirstNameNoRegnal];x
+host_of_prisoner;В испытании поединком;x
+trial_champion;Защитник для испытания поединком.;x
+demand_trial_by_combat;Потребовать защитника для испытания поединком.;x
+demand_trial_by_combat_desc;Как узник и человек высокого происхождения, вы имеете право на испытание поединком;x
+TOOLTIPTRIALBYCOMBAT1;Вы должны выбрать, кто будет защищать ваши права;x
+tbc_fight_personally;Лично защищать свои права в поединке.;x
+tbc_fight_personally_desc;Любой благородный Лорд имеет право на испытание поединком, сообщите персонажу [Root.Host.GetTitledFirstNameNoRegnal], что вы требуете свое право.;x
+TOOLTIPTRIALBYCOMBAT2;Ваш тюремщик, [Root.Host.GetTitledFirstNameNoRegnal], услышит ваше требование поединка.;x
+tbc_dynasty_champion;Просить, чтобы [Root.GetFirstNameWithDynasty] стал вашим защитником;x
+tbc_dynasty_champion_desc;Любой благородный Лорд имеет право назначить защитника для защиты его прав на испытании поединком, вы можете попросить, чтобы [Root.GetTitledFirstNameNoRegnal] вышел за вас.;x
+TOOLTIPTRIALBYCOMBAT3;[Root.GetTitledFirstNameNoRegnal] рассмотрит вашу просьбу быть вашим чемпионом;x
+tbc_vassal_champion;[Root.GetBestName] рассмотрит вашу просьбу быть вашим чемпионом;x
+tbc_vassal_champion_desc;Любой благородный Лорд имеет право назначить чемпиона для защиты его прав на испытании поединком, вы можете попросить, чтобы [Root.GetTitledFirstNameNoRegnal] вышел за вас.;x
+champion_of_liege;Защитник для испытания поединком.;x
+refused_championing;Отказавается быть защитником;x
+denied_trial_by_combat;Отказано в испытании поединком.;x
+champion_of_relative;Защитник для испытания поединком.;x
+TOOLTIPAtrial_by_combat.7;Отказано в испытании поединком.;x
+tbc_champion;Попросить вашего Защитника;x
+tbc_champion_desc;Любой благородный лорд может назначить Защитника отстаивать ваши интересы в поединке, вы можете назначить персонажа [Root.GetTitledFirstNameWithDynastyNoRegnal].;x
+tbc_champion_named;Назначить персонажа [Root.GetTitledFirstNameWithDynastyNoRegnal] своим Защитником.;x
+EVTOPTCtrial.0;Я взываю к Суду Семерых!;x
+TOOLTIPtrial_by_seven.1;Вы сразитесь с персонажем [FromFrom.GetTitledFirstNameNoRegnal] на Суде Семерых. С каждой стороны должно быть по семь чемпионов для начала сражения.;x
+trial_by_seven_champion;Попросить стать Защитником;x
+trial_by_seven_champion_desc;Вы решили сразиться с персонажем [From.Liege.GetTitledFirstNameNoRegnal] на Суде Семерых, и поэтому вы можете попросить, чтобы [Root.GetTitledFirstNameWithDynastyNoRegnal] стал одним из ваших семерых.;x
+trial_by_seven_champion_named;Попросить персонажа [Root.GetTitledFirstNameWithDynastyNoRegnal] стать Защитником;x
+TOOLTIPTRIALBYSEVEN2;[Root.GetTitledFirstNameNoRegnal] ответит на ваш запрос\n;x
+TOOLTIPTRIALBYSEVEN2KG;Поскольку семеро королевских гвардейцев должны по возможности защищать королевскую семью, [Root.GetTitledFirstNameNoRegnal] будет лишь заменой для поверженного королевского гвардейца\n;x
+EVTTITLEtrial_by_seven_1;Суд Семерых;x
+EVTDESCAtrial_by_seven_1;Суд Семерых - это форма суда в виде поединка, связанная с Верой в Семерых и Андальской традицией. Андалы верили в то, что если с каждой противоборствующей стороны сразится семь чемпионов, польщенные боги, таким образом, будут более склонны к проявлению справедливости. Вы решили вызвать человека, известного как [FromFromFrom.GetTitledFirstNameNoRegnal] на этот поединок, чтобы доказать вашу невиновность перед богами, и теперь вам нужно найти шесть защитников, готовых сражаться с вами бок о бок.;x
+EVTDESCBtrial_by_seven_1;Суд Семерых - это форма суда в виде поединка, связанная с Верой в Семерых и Андальской традицией. Андалы верили в то, что если с каждой противоборствующей стороны сразится семь чемпионов, польщенные боги, таким образом, будут более склонны к проявлению справедливости.\n\n[From.GetTitledFirstNameWithDynastyNoRegnal] вызвал вас на этот поединок, чтобы доказать свою невиновность перед богами, и теперь вы должны выбрать шестерых своих защитников, чтобы доказать обратное.;x
+EVTDESCAtrial_by_seven.70;Суд Семерых - это форма суда в виде поединка, связанная с Верой в Семерых и Андальской традицией. Андалы верили в то, что если с каждой противоборствующей стороны сразится семь чемпионов, польщенные боги, таким образом, будут более склонны к проявлению справедливости.\n\n[From.GetTitledFirstNameWithDynastyNoRegnal] вызвал персонажа [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] на этот поединок, чтобы попытаться доказать свою невинность перед богами, и оба они призвали шестерых защитников в город [FromFrom.Capital.GetName] для сражения за их правоту.;x
+EVTOPTAtrial_by_seven_1;Я покажу себя перед богами.;x
+TOOLTIPtrial_by_seven_1;У персонажа [This.GetTitledFirstNameNoRegnal] есть §Y28§! дней для поиска чемпионов, готовых сразиться за н[This.GetHerHis] на одной стороне.\n§RЗАМЕЧАНИЕ:§!Чемпионы выбираются через дипломатическое взаимодействие. Неудача в поиске шестерых чемпионов приведет к суду при дворе.;x
+EVTOPTBtrial_by_seven_1;Семеро докажут [From.GetHerHis] вину;x
+EVTOPTEtrial_by_seven_1;Семеро Королевских гвардейцев будут сражаться за меня.;x
+TOOLTIPtrial_by_seven_1B;У персонажа [This.GetTitledFirstNameNoRegnal] есть 28 дней для поиска защитников, готовых сражаться вместе с ним;x
+TOOLTIPtrial_by_seven_1C;Семеро членов королевской гвардии буду сражаться вместе с персонажем [This.GetTitledFirstNameNoRegnal], любой, кто не сможет сражаться, должен быть заменен человеком, которого назначит [This.GetTitle]\n;x
+trial_by_seven;Суд Семерых;x
+EVTOPTDtrial_by_seven_1;Я буду сражаться лично!;x
+EVTOPTAtrial_by_seven_70;Семеро рассудят их;x
+EVTOPTAtrial_by_seven_70B;Я буду яростно сражаться за человека, известного как [From.GetTitledFirstNameNoRegnal];x
+EVTOPTAtrial_by_seven_70C;М[FromFrom.GetOyaOy] [FromFrom.GetTitle] долж[FromFrom.GetNaEn] быть оправдан[FromFrom.GetEndA];x
+EVTDESCtrial_by_seven.2;[Root.GetTitledFirstNameNoRegnal], я был[FromFrom.GetEndA] несправедливо заключен[FromFrom.GetEndA] в тюрьму человеком, известным как [FromFrom.Host.GetTitledFirstNameNoRegnal] и убеждаясь в том, что я могу получить справедливый суд только от богов, я потребовал[FromFrom.GetEndA] суд Семерых для доказательства моей невиновности. Как ваш[FromFrom.GetEndA] [GetFromFromRelation], я заклинаю вас стать одним из моих семи защитников, чтобы защитить мою честь!\n\n Подпись,\n[FromFrom.GetTitledFirstNameWithDynastyNoRegnal];x
+EVTOPTAtrial_by_seven.2;Я буду сражаться за н[FromFrom.GetHerHis] перед богами;x
+EVTOPTBtrial_by_seven.2;Нет, я не буду одним из ваших Семерых;x
+EVTTOOLTIPtrial_by_seven.3;Вы будете сражаться за персонажа [FromFrom.GetTitledFirstNameNoRegnal] как один из [FromFrom.GetHerHis] семи защитников.;x
+EVTDESCtrial_by_seven.3;[Root.PrimaryTitle.GetFOA], Я, [From.GetTitledFirstNameWithDynastyNoRegnal], почту за честь биться с вами бок о бок перед взором богов на вашем Суде Семерых против человека, известного как [Root.Host.GetTitledFirstNameNoRegnal];x
+EVTOPTAtrial_by_seven.3;Да направят нас Семеро!;x
+EVTDESCtrial_by_seven.4;[Root.GetTitle] [Root.GetFirstName], боюсь, я не смогу сражаться вместе с вами на Суде Семерых, так как это представляет большой риск для моей личности\n\nС уважением,\n[From.GetTitledFirstNameWithDynastyNoRegnal];x
+EVTOPTAtrial_by_seven.4;Где же [From.GetHerHis] честь?;x
+EVTDESCtrial_by_seven.6;Ваши защитники собрались в городе [Root.Capital.Capital.GetName], готовые к Суду Семерых. [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] и [From.GetHerHis] защитники вскоре также прибывают, обе стороны теперь в полном сборе и готовы сражаться друг с другом перед богами.;x
+EVTOPTtrial_by_seven.6;И пусть начнется Суд!;x
+TOOLTIPtrial_by_sevenSELF;Вы лично сражаетесь в поединке\n;x
+TOOLTIPtrial_by_sevenCHAMPIONS;[This.GetTitledFirstNameWithDynastyNoRegnal] - один из ваших чемпионов\n;x
+TOOLTIPtrial_by_sevenCHAMPIONS_ENEMY;[This.GetTitledFirstNameWithDynastyNoRegnal] - один из чемпионов противника\n;x
+TOOLTIPtrial_by_seven.8;Поединок начинается;x
+EVTDESCtrial_by_seven.7;Ваши защитники собрались в городе [Root.Capital.Capital.GetName], готовые к Суду Семерых. [From.GetTitledFirstNameWithDynastyNoRegnal] и [From.GetHerHis] защитники вскоре также прибывают, обе стороны теперь в полном сборе и готовы сражаться друг с другом перед богами.;x
+EVTOPTtrial_by_seven.7;Пусть боги защитят меня;x
+TOOLTIPtrial_by_sevenENEMYSELF;[This.GetTitledFirstNameWithDynastyNoRegnal] сражается лично\n;x
+TOOLTIPtrial_by_sevenCHAMPIONS_OTHER;[This.GetTitledFirstNameWithDynastyNoRegnal] - один из защитников персонажа [Prev.GetTitledFirstNameNoRegnal]\n;x
+EVTDESCtrial_by_seven_9;В ближнем бою вы находите вражеского защитника и сражаетесь...;x
+EVTOPTtrial_by_seven_9;Семеро приведут меня к победе!;x
+TOOLTIPtrial_by_seven_10;Вы атакуете персонажа [This.GetTitledFirstNameWithDynastyNoRegnal]…;x
+TOOLTIPtrial_by_seven_10B;Вы атакуете персонажа [From.GetTitledFirstNameWithDynastyNoRegnal]…;x
+EVTDESCtrial_by_seven_11;Вы убили персонажа [FromFrom.GetTitledFirstNameWithDynastyNoRegnal], оставив для противостояния на одного защитника меньше.;x
+EVTDESCtrial_by_seven_11B;Вы одержали верх над персонажем [FromFrom.GetTitledFirstNameWithDynastyNoRegnal], вынуждая [From.GetHerHis] сдаться, оставив для противостояния на одного чемпиона меньше.;x
+EVTOPTtrial_by_seven_11;Боги однозначно на моей стороне;x
+EVTDESCtrial_by_seven_12;В поединке ближнего боя, [From.GetTitledFirstNameWithDynastyNoRegnal] убил чемпиона [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] в яростной дуэли.;x
+EVTDESCtrial_by_seven_12B;[From.GetTitledFirstNameWithDynastyNoRegnal] сразился и одержал верх над чемпионом [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] в ближнем бою, вынуждая [FromFromFrom.GetHerHis] сдаться и покинуть поле боя.;x
+EVTOPTtrial_by_seven_12;Кто же победит?;x
+EVTOPTtrial_by_seven_12B;Мы потерпели поражение!;x
+EVTDESCtrial_by_seven_13;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] и [FromFrom.GetHerHis] защитники были повержены, явно доказав свою вину перед богами. Теперь вам нужно выбрать справедливое наказание...;x
+EVTDESCtrial_by_seven_13B;Посреди рукопашного боя, [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] был убит, таким образом доказав свою вину перед богами.;x
+EVTOPTAtrial_by_seven_13;Семеро осудили [FromFrom.GetHerHis];x
+EVTOPTBtrial_by_seven_13;Я приговариваю вас к смерти, так хотят боги;x
+EVTOPTCtrial_by_seven_13;Я проявлю милосердие и позволю вам надеть чёрное;x
+EVTOPTDtrial_by_seven_13;Я проявлю милосердие и позволю вам уйти в жрецы;x
+EVTOPTEtrial_by_seven_13;Оставить [FromFrom.GetHerHis] гнить в подземелье;x
+#EVTOPTFtrial_by_seven_13;[FromFrom.GetSheHeCap] может остаться здесь как мой 'гость';x
+EVTDESCtrial_by_seven_14;[FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] и [FromFrom.GetHerHis] защитники были повержены, явно доказав свою вину перед богами. Теперь вам нужно выбрать справедливое наказание.;x
+EVTDESCtrial_by_seven_14B;Посреди рукопашного боя, [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] был убит, таким образом доказав свою вину перед богами.;x
+EVTOPTAtrial_by_seven_14;Боги явно благословили нас;x
+EVTDESCtrial_by_seven_15;Вы и ваши защитники, защищающие персонажа [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal], были побеждены, явно доказав свою вину перед богами.;x
+EVTDESCtrial_by_seven_15B;Посреди рукопашного боя, [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] был убит, явно доказав свою вину перед богами.;x
+EVTOPTAtrial_by_seven_15;Семеро были не на нашей стороне;x
+EVTDESCtrial_by_seven.16;После изнурительного рукопашного боя, вы и ваши защитники одержали победу! Таким образом, ваша невиновность доказана перед богами, и вы освобождены от заключения персонажа  [From.GetTitledFirstNameNoRegnal].;x
+EVTOPTAtrial_by_seven.16;Боги посчитали, что нет моей вины;x
+EVTDESCtrial_by_seven.17;После изнурительного ближнего боя, вы и ваши защитники, защищающие персонажа [From.GetTitledFirstNameNoRegnal], одержали победу! Таким образом [From.GetHerHis] невиновность доказана перед богами, и [From.GetSheHe] освобождается от заключения персонажа [FromFrom.GetTitledFirstNameNoRegnal].;x
+EVTOPTAtrial_by_seven.17;Боги посчитали [From.GetHerHis] невиновн[From.GetOyYm];x
+EVTDESCtrial_by_seven.18;После изнурительного ближнего боя, вы не смогли победить. [From.GetTitledFirstNameNoRegnal] и [From.GetHerHis] защитники победили вас в одном бою, таким образом [From.GetHerHis] невиновность доказана перед богами.;x
+EVTOPTAtrial_by_seven.18;Семеро были не на нашей стороне;x
+EVTDESCtrial_by_seven.20;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal], ваш предводитель [FromFrom.PrimaryTitle.GetName], погиб сражаясь на Суде Семерых против персонажа [From.GetTitledFirstNameWithDynastyNoRegnal].  Но, так или иначе, это не значит, что поединок прекратится...;x
+EVTOPTAtrial_by_seven.20;Рукопашная схватка продолжается...;x
+EVTOPTGtrial_by_combat.4;Одному из моих воинов придется сражаться;x
+EVTDESCtrial_by_seven_159;[FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] и [FromFromFrom.GetHerHis] защитники были побеждены, и поэтому [FromFromFrom.GetHerHis] вина доказана перед богами.;x
+EVTDESCtrial_by_seven_159B;В разгаре схватки [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] был убит, явно доказав свою вину перед богами.;x
+EVTOPTAtrial_by_seven_159;Боги отвернулись от н[FromFromFrom.GetHerHis];x
+EVTDESCtrial_by_seven.189;После изнурительной схватки, [From.GetTitledFirstNameNoRegnal] и [From.GetHerHis] защитники победили! Таким образом, [From.GetHerHis] невиновность доказана в глазах богов, и [From.GetSheHe] будет освобожден из плена персонажа [FromFrom.GetTitledFirstNameNoRegnal].;x
+EVTOPTAtrial_by_seven.189;Боги посчитали [From.GetHerHis] невиновным;x
+EVTOPTBtrial_by_seven_70;Сообщите мне о этом подробнее;x
+EVTDESCtrial_by_combat.30;[Root.PrimaryTitle.GetFOA], новости из города [From.Capital.GetName] с испытания поединком. [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] потребовал[FromFromFrom.GetEndA] суда поединком у своего тюремщика, известного как [From.GetTitledFirstNameWithDynastyNoRegnal], но пал[FromFromFrom.GetEndA] от руки своего противника, известного как [FromFrom.GetTitledFirstNameWithDynastyNoRegnal].;x
+EVTDESCtrial_by_combat.30B;[Root.PrimaryTitle.GetFOA], новости из города [From.Capital.GetName] с испытания поединком. [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] потребовал[FromFromFrom.GetEndA] суда поединком у своего тюремщика, известного как [From.GetTitledFirstNameWithDynastyNoRegnal], но был[FromFromFrom.GetEndA] побежден[FromFromFrom.GetEndA] противником, известным как [FromFrom.GetTitledFirstNameWithDynastyNoRegnal]. Как следствие, [FromFromFrom.GetTitledFirstNameNoRegnal] испытывает наказание [FromFromFrom.GetTrialPunishment].;x
+EVTDESCtrial_by_combat.31;[Root.PrimaryTitle.GetFOA], новости из города [From.Capital.GetName] с испытания поединком. [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] потребовал[FromFrom.GetEndA] суда поединком у своего тюремщика, известного как [From.GetTitledFirstNameWithDynastyNoRegnal], и доказал[FromFrom.GetEndA] свою невиновность, убив своего протвника, известного как [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal].;x
+EVTDESCtrial_by_combat.31B;[Root.PrimaryTitle.GetFOA], новости из города [From.Capital.GetName] с испытания поединком. [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] потребовал[FromFrom.GetEndA] суда поединком у своего тюремщика, известного как [From.GetTitledFirstNameWithDynastyNoRegnal], и доказал[FromFrom.GetEndA] свою невиновность, принудив противника, известного как [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] сдаться.;x
+EVTDESCtrial_by_combat.32;[Root.PrimaryTitle.GetFOA], новости из города [From.Capital.GetName] с испытания поединком. [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] потребовал[FromFrom.GetEndA] суда поединком у своего тюремщика, известного как [From.GetTitledFirstNameWithDynastyNoRegnal], при этом [FromFromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] был защитником. [FromFromFromFrom.GetTitledFirstNameNoRegnal] был[FromFromFromFrom.GetEndA] убит [FromFromFromFrom.GetHerHis] противником , известным как [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal], что доказало вину персонажа [FromFrom.GetTitledFirstNameNoRegnal]. Как следствие, [FromFrom.GetTitledFirstNameNoRegnal] испытывает наказание [FromFrom.GetTrialPunishment].;x
+EVTDESCtrial_by_combat.32B;[Root.PrimaryTitle.GetFOA], новости из города [From.Capital.GetName] с испытания поединком. [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] потребовал[FromFrom.GetEndA] суда поединком у своего тюремщика, известного как [From.GetTitledFirstNameWithDynastyNoRegnal], при этом [FromFromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] был защитником. [FromFromFromFrom.GetTitledFirstNameNoRegnal] был[FromFromFromFrom.GetEndA] принужден[FromFromFromFrom.GetEndA] сдаться [FromFromFromFrom.GetHerHis] противником, известным как [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal], что доказало вину персонажа [FromFrom.GetTitledFirstNameNoRegnal]. Как следствие, [FromFrom.GetTitledFirstNameNoRegnal] испытывает наказание [FromFrom.GetTrialPunishment].;x
+EVTDESCtrial_by_combat.33;[Root.PrimaryTitle.GetFOA], новости из города [From.Capital.GetName] с испытания поединком. [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] потребовал[FromFrom.GetEndA] суда поединком у своего тюремщика, известного как [From.GetTitledFirstNameWithDynastyNoRegnal], при этом [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] был защитником. [FromFromFrom.GetTitledFirstNameNoRegnal] убил[FromFromFrom.GetEndA] своего противника, известного как [FromFromFromFrom.GetTitledFirstNameWithDynastyNoRegnal], доказав, что [FromFrom.GetTitledFirstNameNoRegnal] винов[FromFrom.GetNaEn].;x
+EVTDESCtrial_by_combat.33B;[Root.PrimaryTitle.GetFOA], новости из города [From.Capital.GetName] с испытания поединком. [FromFrom.GetTitledFirstNameWithDynastyNoRegnal] потребовал[FromFrom.GetEndA] суда поединком у своего тюремщика, известного как [From.GetTitledFirstNameWithDynastyNoRegnal], при этом [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal] был защитником.. [FromFromFrom.GetTitledFirstNameNoRegnal] заставил[FromFromFrom.GetEndA] сдаться своего противника, известного как [FromFromFromFrom.GetTitledFirstNameWithDynastyNoRegnal], доказав, что [FromFrom.GetTitledFirstNameNoRegnal] не винов[FromFrom.GetNaEn].;x
+GetTrialPunishmentExecution;[This.GetDeathReason];x
+GetTrialPunishmentNightswatch;был вынужден облачиться в черное как брат Ночного Дозора;x
+GetTrialPunishmentNightswatchEscaped;был вынужден облачиться в черное как брат Ночного Дозора, но избежал наказания по дороге на Стену;x
+GetTrialPunishmentSilentSister;была вынуждена принять обеты Молчаливой Сестры;x
+GetTrialPunishmentGrace;была вынуждена принять обеты Благодати;x
+GetTrialPunishmentDungeon;заключение в подземелье города [This.Location.Capital.GetName];x
+GetTrialPunishmentHouseArrest;заключение под домашний арест;x
+GetTrialPunishmentCouncil;взятие под стражу до тех пор, пока совет не вынесет решение о наказании;x
+GetTrialPunishmentExiled;изгнание из земель;x
+GetTrialPunishmentReleased;было проявлено милосердие;x
+EVTDESCtrial_by_combat.999;Суд поединком - это древний обычай, который может быть использован для разрешения обвинений или споров в бою, но который может привести к смерти. Вы объявили человеку, известному как [Root.Host.GetTitledFirstNameWithDynastyNoRegnal] о вашем праве настаивать на суде поединком, и теперь должны выбрать зашитника.;x
+EVTOPTAtrial_by_combat.999;Я докажу свою невиновность;x
+TOOLTIPtrial_by_combat.999;Вы можете, если имеете право, сражаться сами (решение в меню интриг) или выбрать защитника, который встанет за вас (щелкните правой кнопкой мыши на вассала/родственника);x
+OPTNOINFORMTRIALCOMBAT;Не сообщайте мне о испытаниях в бою;x
+TOOLTIPtrial_by_combat_KG;Если он Королевский гвардеец, то должен сражаться за Железный Трон;x
+TOOLTIPtrial_by_combat_SLAVE;НЕ раб;x
+TOOLTIPtbc_ongoing;НЕ участвует в текущем суде поединком;x
+EVTOPTFtrial_by_seven_13;Настоящим, я изгоняю вас из земли [Root.PrimaryTitle.GetFullName];x

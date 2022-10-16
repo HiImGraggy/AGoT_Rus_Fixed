@@ -1,58 +1,58 @@
-#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-call_in_election_support;Призыв к поддержке на выборах;;;;;;;;;;;;;x
-call_in_election_support_desc;Используйте услугу, которую вам долж[Root.GetNaEn] [Root.GetTitledFirstNameNoRegnal], чтобы заставить [Root.GetHerHis] поддержать вас в голосовании и выборах;;;;;;;;;;;;;x
-election_support_called;Призыв к поддержке на выборах;;;;;;;;;;;;;x
-opinion_supporting_in_election;Обещана поддержка на выборах;;;;;;;;;;;;;x
-favor_improve_relations;Улучшение отношений с помощью персонажа [Root.Liege.GetTitledFirstNameNoRegnal];;;;;;;;;;;;;x
-favor_improve_relations_desc;Используйте услугу, которую вам долж[Root.GetNaEn] [Root.GetTitledFirstNameNoRegnal], чтобы заставить [Root.GetHerHis] улучшить ваши отношения с персонажем [Root.Liege.GetTitledFirstNameWithDynastyNoRegnal];;;;;;;;;;;;;x
-opinion_favored_being_called;Услуга будет использована;;;;;;;;;;;;;x
-favor_sabotage_job;Саботировать работу;;;;;;;;;;;;;x
-favor_sabotage_job_desc;Используйте услугу, которую вам долж[Root.GetNaEn] [Root.GetTitledFirstNameNoRegnal], чтобы заставить [Root.GetHerHis] саботировать собственную работу;;;;;;;;;;;;;x
-favor_embezzle_funds;Присвоить средства;;;;;;;;;;;;;x
-favor_embezzle_funds_desc;Используйте услугу, которую вам долж[Root.GetNaEn] [Root.GetTitledFirstNameNoRegnal] чтобы заставить [Root.GetHerHis] присвоить средства казны персонажа [Root.Liege.GetTitledFirstNameNoRegnal].;;;;;;;;;;;;;x
-EVTTOOLTIPplot_event.305;В случае согласия, [Root.GetTitledFirstNameNoRegnal] попытается присвоить средства из казны персонажа [Root.Liege.GetTitledFirstNameWithDynastyNoRegnal] (20% годового дохода). В случае успеха он будет разделен поровну.;;;;;;;;;;;;;x
-favor_find_plot;Искать заговоры;;;;;;;;;;;;;x
-favor_find_plot_desc;Используйте услугу, которую вам долж[Root.GetNaEn] [Root.GetTitledFirstNameNoRegnal] чтобы заставить [Root.GetHerHis] искать тайные заговоры против вашей семьи;;;;;;;;;;;;;x
-TOOLTIPfavor_find_plot;Существует тайный заговор против вашей семьи;;;;;;;;;;;;;x
-EVTTOOLTIPplot_event.310;[Root.GetTitledFirstNameNoRegnal] попытается найти враждебный заговор против вашей семьи;;;;;;;;;;;;;x
-favor_reduce_tyranny;Уменьшить тиранию;;;;;;;;;;;;;x
-favor_reduce_tyranny_desc;Используйте услугу, которую вам долж[Root.GetNaEn] [Root.GetTitledFirstNameNoRegnal] чтобы заставить [Root.GetHerHis] улучшить вашу репутацию и уменьшить вашу тиранию;;;;;;;;;;;;;x
-EVTTOOLTIPplot_event.320;[Root.GetTitledFirstNameNoRegnal] попытается уменьшить вашу тиранию;;;;;;;;;;;;;x
-EVTDESC_ZE_8165;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] напоминает вам, что Вы должны [FromFrom.GetHerHim]. [FromFrom.GetSheHeCap] желает вашей поддержки в предстоящих выборах и ожидает, что вы проголосуете за н[FromFrom.GetHerHis].;;;;;;;;;;;;;x
-EVTOPTA_ZE_8165;Должно быть сделано;;;;;;;;;;;;;x
-EVTDESCplot_event.305;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] обрати[FromFrom.GetLasLsya] к вам со схемой, которая освободит вас от одолжения, которое вы должны  [FromFrom.GetHerHim]. [FromFrom.GetSheHeCap] хочет, чтобы вы использовали свой пост как [Root.GetJobTitle] для растраты средств из казны персонажа [Root.Liege.GetTitledFirstNameNoRegnal], равномерно распределяя поступления.;;;;;;;;;;;;;x
-EVTOPTAplot_event.305;Я попробую это сделать;;;;;;;;;;;;;x
-EVTOPTBplot_event.305;Я не вор!;;;;;;;;;;;;;x
-EVTDESCplot_event.306;[From.GetTitledFirstNameWithDynastyNoRegnal] согласи[From.GetLasLsya] с предложенной вами схемой. [From.GetSheHeCap] использовал[From.GetEndA] свой пост как [From.GetJobTitle] для растраты средств из сокровищницы персонажа [From.Liege.GetTitledFirstNameNoRegnal] и отправил[From.GetEndA] вам свою долю доходов.;;;;;;;;;;;;;x
-EVTOPTAplot_event.306;Хорошая работа!;;;;;;;;;;;;;x
-EVTDESCplot_event.307;[From.GetTitledFirstNameWithDynastyNoRegnal] принял[From.GetEndA] ваше предложение, но, к сожалению, был[From.GetEndA] пойман[From.GetEndA] с поличным, пытаясь присвоить средства из казны персонажа [From.Liege.GetTitledFirstNameNoRegnal]. К счастью, вы вне подозрений.;;;;;;;;;;;;;x
-EVTOPTAplot_event.307;Вот повезло;;;;;;;;;;;;;x
-EVTDESCplot_event.308;[From.GetTitledFirstNameWithDynastyNoRegnal] не был[From.GetEndA] обнаружен[From.GetEndA] по горячим следам , но, похоже [From.Liege.GetMyTreasurerName] персонажа [From.Liege.GetTitledFirstNameNoRegnal] провёл расследование хищений и нашёл доказательства кражи!;;;;;;;;;;;;;x
-EVTOPTAplot_event.308;Нехорошо;;;;;;;;;;;;;x
-EVTDESCplot_event.310;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] обрати[FromFrom.GetLasLsya] к вам с просьбой и напомнил[FromFrom.GetEndA] о вашей услуге [FromFrom.GetHerHim]. [FromFrom.GetSheHeCap] узнал[FromFrom.GetEndA] о заговоре против   семьи, но нуждается в вашей помощи в качестве советника, чтобы найти заговорщика и узнать его намерения.;;;;;;;;;;;;;x
-EVTOPTAplot_event.310;Я посмотрю, что смогу найти;;;;;;;;;;;;;x
-TOOLTIPplot_event.310;Вы расследуете слухи о заговоре против персонажа [FromFrom.GetTitledFirstNameWithDynastyNoRegnal];;;;;;;;;;;;;x
-EVTDESCplot_event.311;Мои шпионы сообщили, что они приблизились к обнаружению цели заговора против [plot target.GetTitledFirstNameWithDynastyNoRegnal] и назовут имя ближе к ночи.;;;;;;;;;;;;;x
-EVTOPTAplot_event.311;Прекрасно;;;;;;;;;;;;;x
-TOOLTIPplot_event.311;Заговорщик вот-вот будет раскрыт...;;;;;;;;;;;;;x
-EVTDESCplot_event.312;Шпионы справились: заговорщик - [From.GetTitledFirstNameWithDynastyNoRegnal], злодеяние -  [From.GetPlot]!;;;;;;;;;;;;;x
-EVTOPTAplot_event.312;[plot_target.GetTitledFirstNameWithDynastyNoRegnal] узнает об этом;;;;;;;;;;;;;x
-EVTDESCplot_event.313;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] отправил[FromFrom.GetEndA] сообщение о том, что [FromFrom.GetSheHe] почти знает имя заговорщика и сообщит его вам на следующее утро. Однако вечером случился несчастный случай и [FromFrom.GetSheHe] погиб[FromFrom.GetNoneE].;;;;;;;;;;;;;x
-EVTOPTAplot_event.313;Похоже на случайность...;;;;;;;;;;;;;x
-EVTDESCplot_event.314;Шпионы справились: заговорщик - [From.GetTitledFirstNameWithDynastyNoRegnal], злодеяние -  [From.GetPlot]! Меня даже пытались убить, прежде чем я смог[GetNoneE] передать информацию!;;;;;;;;;;;;;x
-EVTOPTAplot_event.314;Что за [GetRootFromInsult]!;;;;;;;;;;;;;x
-EVTDESCplot_event.315;Несмотря на то, что я отправил[GetEndA] своих шпионов для расследования, я не смог[GetNoneE] найти никакой конкретной информации о заговоре против персонажа [plot_target.GetTitledFirstNameWithDynastyNoRegnal].;;;;;;;;;;;;;x
-EVTOPTAplot_event.315;Сделано всё что можно;;;;;;;;;;;;;x
-EVTDESCplot_event.316;[From.GetTitledFirstNameWithDynastyNoRegnal] сообщает, что [From.GetSheHe] отправил[From.GetEndA] своих лучших шпионов для расследования, но не смог[From.GetNoneE] найти никакой конкретной информации относительно слухов о заговорах против вас.;;;;;;;;;;;;;x
-EVTOPTAplot_event.316;Некомпетентное дурачьё;;;;;;;;;;;;;x
-EVTDESCplot_event.320;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] обрати[FromFrom.GetLasLsya] к вам с просьбой и напомнил[FromFrom.GetEndA] о вашей услуге [FromFrom.GetHerHim]. [FromFrom.GetSheHeCap] обеспокоен[FromFrom.GetEndA] своей репутацией из=за нарушений права собственных вассалов и просит вас использовать свое влияние на совет, чтобы развеять эти слухи.;;;;;;;;;;;;;x
-EVTOPTAplot_event.320;Я сделаю все возможное;;;;;;;;;;;;;x
-TOOLTIPplot_event.320;Вы используете свое влияние на совет, чтобы попытаться уменьшить тиранию персонажа [FromFrom.GetTitledFirstNameWithDynastyNoRegnal];;;;;;;;;;;;;x
-EVTDESCplot_event.321;Я отправил[GetEndA] воронов вассалам персонажа [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal], чтобы заверить их в [FromFrom.GetHerHis] добрудушии и многие согласились с этим. В результате [FromFromFrom.GetTitledFirstNameNoRegnal] смог[[FromFromFrom.GetNoneE] улучшить свою репутацию.;;;;;;;;;;;;;x
-EVTOPTAplot_event.321;Я надеюсь, [FromFromFrom.GetSheHe] теперь довол[FromFromFrom.GetSoftNaEn];;;;;;;;;;;;;x
-EVTDESCplot_event.322;[From.GetTitledFirstNameWithDynastyNoRegnal] отправил[From.GetEndA] воронов вашим вассалам, чтобы заверить их в вашем добрудушии и многие согласились с этим. В результате ваша репутация улучшилась;;;;;;;;;;;;;x
-EVTOPTAplot_event.322;Jxtym [jhjij;;;;;;;;;;;;;x
-EVTDESCplot_event.323;Несмотря на все мои усилия, мне не удалось улучшить репутацию персонажа [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal]. Мои вороны были проигнорированы, и совет с раздражением отнесся к моему предложению поддержать своего сюзерена.;;;;;;;;;;;;;x
-EVTOPTAplot_event.323;Может быть, попробовать не быть тираном?;;;;;;;;;;;;;x
-EVTDESCplot_event.324;[From.GetSheHeCap] заверяет вас, что [From.GetSheHe] приложил[From.GetEndA] все усилия, но [From.GetTitledFirstNameWithDynastyNoRegnal] не смог[From.GetNoneE] улучшить вашу репутацию. [From.GetHerHisCap] вороны были проигнорированы, а совет с разражением отнесся к [From.GetHerHis] предложению поддержать вас.;;;;;;;;;;;;;x
-EVTOPTAplot_event.324;Вы бесполезны!;;;;;;;;;;;;;x
+#CODE;ENGLISH;x
+call_in_election_support;Призыв к поддержке на выборах;x
+call_in_election_support_desc;Используйте услугу, которую вам долж[Root.GetNaEn] [Root.GetTitledFirstNameNoRegnal], чтобы заставить [Root.GetHerHis] поддержать вас в голосовании и выборах;x
+election_support_called;Призыв к поддержке на выборах;x
+opinion_supporting_in_election;Обещана поддержка на выборах;x
+favor_improve_relations;Улучшение отношений с помощью персонажа [Root.Liege.GetTitledFirstNameNoRegnal];x
+favor_improve_relations_desc;Используйте услугу, которую вам долж[Root.GetNaEn] [Root.GetTitledFirstNameNoRegnal], чтобы заставить [Root.GetHerHis] улучшить ваши отношения с персонажем [Root.Liege.GetTitledFirstNameWithDynastyNoRegnal];x
+opinion_favored_being_called;Услуга будет использована;x
+favor_sabotage_job;Саботировать работу;x
+favor_sabotage_job_desc;Используйте услугу, которую вам долж[Root.GetNaEn] [Root.GetTitledFirstNameNoRegnal], чтобы заставить [Root.GetHerHis] саботировать собственную работу;x
+favor_embezzle_funds;Присвоить средства;x
+favor_embezzle_funds_desc;Используйте услугу, которую вам долж[Root.GetNaEn] [Root.GetTitledFirstNameNoRegnal] чтобы заставить [Root.GetHerHis] присвоить средства казны персонажа [Root.Liege.GetTitledFirstNameNoRegnal].;x
+EVTTOOLTIPplot_event.305;В случае согласия, [Root.GetTitledFirstNameNoRegnal] попытается присвоить средства из казны персонажа [Root.Liege.GetTitledFirstNameWithDynastyNoRegnal] (20% годового дохода). В случае успеха он будет разделен поровну.;x
+favor_find_plot;Искать заговоры;x
+favor_find_plot_desc;Используйте услугу, которую вам долж[Root.GetNaEn] [Root.GetTitledFirstNameNoRegnal] чтобы заставить [Root.GetHerHis] искать тайные заговоры против вашей семьи;x
+TOOLTIPfavor_find_plot;Существует тайный заговор против вашей семьи;x
+EVTTOOLTIPplot_event.310;[Root.GetTitledFirstNameNoRegnal] попытается найти враждебный заговор против вашей семьи;x
+favor_reduce_tyranny;Уменьшить тиранию;x
+favor_reduce_tyranny_desc;Используйте услугу, которую вам долж[Root.GetNaEn] [Root.GetTitledFirstNameNoRegnal] чтобы заставить [Root.GetHerHis] улучшить вашу репутацию и уменьшить вашу тиранию;x
+EVTTOOLTIPplot_event.320;[Root.GetTitledFirstNameNoRegnal] попытается уменьшить вашу тиранию;x
+EVTDESC_ZE_8165;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] напоминает вам, что Вы должны [FromFrom.GetHerHim]. [FromFrom.GetSheHeCap] желает вашей поддержки в предстоящих выборах и ожидает, что вы проголосуете за н[FromFrom.GetHerHis].;x
+EVTOPTA_ZE_8165;Должно быть сделано;x
+EVTDESCplot_event.305;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] обрати[FromFrom.GetLasLsya] к вам со схемой, которая освободит вас от одолжения, которое вы должны  [FromFrom.GetHerHim]. [FromFrom.GetSheHeCap] хочет, чтобы вы использовали свой пост как [Root.GetJobTitle] для растраты средств из казны персонажа [Root.Liege.GetTitledFirstNameNoRegnal], равномерно распределяя поступления.;x
+EVTOPTAplot_event.305;Я попробую это сделать;x
+EVTOPTBplot_event.305;Я не вор!;x
+EVTDESCplot_event.306;[From.GetTitledFirstNameWithDynastyNoRegnal] согласи[From.GetLasLsya] с предложенной вами схемой. [From.GetSheHeCap] использовал[From.GetEndA] свой пост как [From.GetJobTitle] для растраты средств из сокровищницы персонажа [From.Liege.GetTitledFirstNameNoRegnal] и отправил[From.GetEndA] вам свою долю доходов.;x
+EVTOPTAplot_event.306;Хорошая работа!;x
+EVTDESCplot_event.307;[From.GetTitledFirstNameWithDynastyNoRegnal] принял[From.GetEndA] ваше предложение, но, к сожалению, был[From.GetEndA] пойман[From.GetEndA] с поличным, пытаясь присвоить средства из казны персонажа [From.Liege.GetTitledFirstNameNoRegnal]. К счастью, вы вне подозрений.;x
+EVTOPTAplot_event.307;Вот повезло;x
+EVTDESCplot_event.308;[From.GetTitledFirstNameWithDynastyNoRegnal] не был[From.GetEndA] обнаружен[From.GetEndA] по горячим следам , но, похоже [From.Liege.GetMyTreasurerName] персонажа [From.Liege.GetTitledFirstNameNoRegnal] провёл расследование хищений и нашёл доказательства кражи!;x
+EVTOPTAplot_event.308;Нехорошо;x
+EVTDESCplot_event.310;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] обрати[FromFrom.GetLasLsya] к вам с просьбой и напомнил[FromFrom.GetEndA] о вашей услуге [FromFrom.GetHerHim]. [FromFrom.GetSheHeCap] узнал[FromFrom.GetEndA] о заговоре против   семьи, но нуждается в вашей помощи в качестве советника, чтобы найти заговорщика и узнать его намерения.;x
+EVTOPTAplot_event.310;Я посмотрю, что смогу найти;x
+TOOLTIPplot_event.310;Вы расследуете слухи о заговоре против персонажа [FromFrom.GetTitledFirstNameWithDynastyNoRegnal];x
+EVTDESCplot_event.311;Мои шпионы сообщили, что они приблизились к обнаружению цели заговора против [plot target.GetTitledFirstNameWithDynastyNoRegnal] и назовут имя ближе к ночи.;x
+EVTOPTAplot_event.311;Прекрасно;x
+TOOLTIPplot_event.311;Заговорщик вот-вот будет раскрыт...;x
+EVTDESCplot_event.312;Шпионы справились: заговорщик - [From.GetTitledFirstNameWithDynastyNoRegnal], злодеяние -  [From.GetPlot]!;x
+EVTOPTAplot_event.312;[plot_target.GetTitledFirstNameWithDynastyNoRegnal] узнает об этом;x
+EVTDESCplot_event.313;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] отправил[FromFrom.GetEndA] сообщение о том, что [FromFrom.GetSheHe] почти знает имя заговорщика и сообщит его вам на следующее утро. Однако вечером случился несчастный случай и [FromFrom.GetSheHe] погиб[FromFrom.GetNoneE].;x
+EVTOPTAplot_event.313;Похоже на случайность...;x
+EVTDESCplot_event.314;Шпионы справились: заговорщик - [From.GetTitledFirstNameWithDynastyNoRegnal], злодеяние -  [From.GetPlot]! Меня даже пытались убить, прежде чем я смог[GetNoneE] передать информацию!;x
+EVTOPTAplot_event.314;Что за [GetRootFromInsult]!;x
+EVTDESCplot_event.315;Несмотря на то, что я отправил[GetEndA] своих шпионов для расследования, я не смог[GetNoneE] найти никакой конкретной информации о заговоре против персонажа [plot_target.GetTitledFirstNameWithDynastyNoRegnal].;x
+EVTOPTAplot_event.315;Сделано всё что можно;x
+EVTDESCplot_event.316;[From.GetTitledFirstNameWithDynastyNoRegnal] сообщает, что [From.GetSheHe] отправил[From.GetEndA] своих лучших шпионов для расследования, но не смог[From.GetNoneE] найти никакой конкретной информации относительно слухов о заговорах против вас.;x
+EVTOPTAplot_event.316;Некомпетентное дурачьё;x
+EVTDESCplot_event.320;[FromFrom.GetTitledFirstNameWithDynastyNoRegnal] обрати[FromFrom.GetLasLsya] к вам с просьбой и напомнил[FromFrom.GetEndA] о вашей услуге [FromFrom.GetHerHim]. [FromFrom.GetSheHeCap] обеспокоен[FromFrom.GetEndA] своей репутацией из=за нарушений права собственных вассалов и просит вас использовать свое влияние на совет, чтобы развеять эти слухи.;x
+EVTOPTAplot_event.320;Я сделаю все возможное;x
+TOOLTIPplot_event.320;Вы используете свое влияние на совет, чтобы попытаться уменьшить тиранию персонажа [FromFrom.GetTitledFirstNameWithDynastyNoRegnal];x
+EVTDESCplot_event.321;Я отправил[GetEndA] воронов вассалам персонажа [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal], чтобы заверить их в [FromFrom.GetHerHis] добрудушии и многие согласились с этим. В результате [FromFromFrom.GetTitledFirstNameNoRegnal] смог[[FromFromFrom.GetNoneE] улучшить свою репутацию.;x
+EVTOPTAplot_event.321;Я надеюсь, [FromFromFrom.GetSheHe] теперь довол[FromFromFrom.GetSoftNaEn];x
+EVTDESCplot_event.322;[From.GetTitledFirstNameWithDynastyNoRegnal] отправил[From.GetEndA] воронов вашим вассалам, чтобы заверить их в вашем добрудушии и многие согласились с этим. В результате ваша репутация улучшилась;x
+EVTOPTAplot_event.322;Очень хорошо;x
+EVTDESCplot_event.323;Несмотря на все мои усилия, мне не удалось улучшить репутацию персонажа [FromFromFrom.GetTitledFirstNameWithDynastyNoRegnal]. Мои вороны были проигнорированы, и совет с раздражением отнесся к моему предложению поддержать своего сюзерена.;x
+EVTOPTAplot_event.323;Может быть, попробовать не быть тираном?;x
+EVTDESCplot_event.324;[From.GetSheHeCap] заверяет вас, что [From.GetSheHe] приложил[From.GetEndA] все усилия, но [From.GetTitledFirstNameWithDynastyNoRegnal] не смог[From.GetNoneE] улучшить вашу репутацию. [From.GetHerHisCap] вороны были проигнорированы, а совет с разражением отнесся к [From.GetHerHis] предложению поддержать вас.;x
+EVTOPTAplot_event.324;Вы бесполезны!;x
