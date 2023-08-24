@@ -10,7 +10,7 @@ obj_five_children_desc;[This.GetTitledFirstName] желает иметь не меньше пяти дет
 obj_become_a_knight_title;Стать рыцарем.;x
 obj_become_a_knight_desc;[This.GetTitledFirstName] желает стать рыцарем.;x
 obj_improve_combat_ability_title;Улучшить навыки боя;x
-obj_improve_combat_ability_desc;[This.GetTitledFirstName] хочет  лучше сражаться;x
+obj_improve_combat_ability_desc;[This.GetTitledFirstName] хочет лучше сражаться;x
 obj_win_the_war_title;Выиграть войну.;x
 obj_win_the_war_desc;[This.GetTitledFirstName] желает победить в войне.;x
 obj_break_out_of_prison_title;Вырваться из темницы.;x
@@ -138,7 +138,7 @@ EVTOPTAambition.42;Было бы лучше, если бы я сидел[Root.GetEndA] и молчал[Root.Ge
 EVTDESCambition.43;Когда [From.GetTitledFirstName] начал[From.GetEndA] высказаться, [From.GetSheHe] прив[From.GetEYo]л[From.GetEndA] аргументы в поддержку вторжения, которое предлагает [From.TopLiege.GetTitledFirstName]. [From.GetHerHisCap] убедительная речь вызвала апплодисменты и крики одобрения. [From.GetSheHeCap] умело использовал[From.GetEndA] слова и убедил[From.GetEndA] многих в совете в своей правоте.;x
 EVTDESCambition.44;Когда [From.GetTitledFirstName] начал[From.GetEndA] высказаться, то аргументы в поддержку вторжения, которое запланировал[From.TopLiege.GetEndA] [From.TopLiege.GetTitledFirstName], не совпадали со мнением многих, но некоторые с ними согласились. Очевидно, совет не имеет единого мнения.;x
 EVTDESCambition.45;Как дворян[From.GetKaIn], [From.GetTitledFirstName] конечно имеет право говорить, но было бы лучше, если бы [From.GetSheHe] этого не делал[From.GetEndA]. Бессвязная речь в поддержку вторжения, которое запланировал[From.TopLiege.GetEndA] [From.TopLiege.GetTitledFirstName], не вызвала никакой поддержки. Некоторые из [From.GetHerHis] слов вызвали только смех. В итоге, никого не удалось привлечь на свою сторону.;x
-EVTDESCambition.46;[Root.TopLiege.GetTitledFirstName] и Вы ранее часто различались в своих мнениях, и поэтому многие в Совете смотрят на вас, как на лидера оппозиции. Вы умно и дипломатично раскритиковали предложение войны, убеждая Совет в  глупости этого. В конце многие горячо выразили своё согласие.;x
+EVTDESCambition.46;[Root.TopLiege.GetTitledFirstName] и Вы ранее часто различались в своих мнениях, и поэтому многие в Совете смотрят на вас как на лидера оппозиции. Вы остроумно, но дипломатично раскритиковали самонадеянное и высокомерное предложение, которое выдвинул[Root.TopLiege.GetEndA] [Root.TopLiege.GetTitledFirstName], убеждая Совет в его глупости. В конце многие горячо выразили своё согласие.;x
 EVTOPTAambition.46;[Root.TopLiege.GetTitledFirstName] долж[Root.TopLiege.GetNaEn] прислушаться ко мне;x
 TOOLTIPgrand_councilDISSUADE;[This.GetTitledFirstNameWithDynasty] был[This.GetEndA] убежд[This.GetEYo]н[This.GetEndA] выступить против\n;x
 EVTDESCambition.47;Предложение кажется вам тревожным, так что вы вынуждены были выступить против него в Совете. Вы спокойно изложили множество опасностей и высказали сомнительность в преимуществе такого вторжения. Многие в совете кивали в знак согласия, но крики несогласных с вами заполнили зал.;x
@@ -210,7 +210,7 @@ EVTOPTB250701;Подождать и посмотреть.;x
 obj_become_independent_title;Стать независимым.;x
 obj_become_independent_desc;[This.GetTitledFirstName] желает стать независимым от [This.GetHerHis] тиранического сюзерена.;x
 obj_bloodline_iron_throne_title;Увидеть, что наш дом будет править землёй [Root.GetIronThroneRealmName];x
-obj_bloodline_iron_throne_desc;Эти владения слишком малы для династии [This.GetOnlyDynastyName]. Династия должна расти и процветать - нет ничего достойнее, чем  [Root.GetIronThroneRealmName]. [This.GetTitledFirstName] хочется добиться, чтобы член [This.GetHerHis] дома занял трон.;x
+obj_bloodline_iron_throne_desc;Эти владения слишком малы для династии [This.GetOnlyDynastyName]. Династия должна расти и процветать - нет ничего достойнее, чем [Root.GetIronThroneRealmName]. [This.GetTitledFirstName] хочется добиться, чтобы член [This.GetHerHis] дома занял трон.;x
 TOOLTIPobj_bloodline_iron_throne_success;Член вашей династии - правитель, супруг или наследник титула [Root.GetIronThroneRealmName]\n;x
 plot_buy_loyalty_title;Купить лояльность человека по имени [This.GetTitledFirstName];x
 plot_buy_loyalty_desc;[This.GetTitledFirstNameWithDynasty] находится в Совете правителя [This.Liege.GetTitledFirstName] и [From.GetTitledFirstName] решил[From.GetEndA] попытаться купить лояльность. В случае успеха, в меню взаимодействия с персонажем появится возможность давать им задания.;x
@@ -271,7 +271,7 @@ assign_mission_desc;[Root.GetTitle] [Root.GetFirstNameWithDynasty] находится в С
 EVTDESCplot_event.15;[FromFrom.GetTitledFirstName] подкуплен[FromFrom.GetEndA], Вы можете назначить одну из этих миссий.;x
 EVTOPTAplot_event.15;Пусть [FromFrom.GetSheHe] улучшит ваши отношения с сюзереном;x
 EVTTOOLTIPplot_event.16;Попытается улучшить ваши отношения с персонажем [FromFrom.Liege.GetTitledFirstName];x
-EVTDESCplot_event.16;В рамках нашей договоренности, [From.GetTitledFirstName] попросил[From.GetEndA] меня улучшить [From.GetHerHis] отношения сюзереном. Я могу попытаться  на следующем заседании совета...;x
+EVTDESCplot_event.16;В рамках нашей договоренности, [From.GetTitledFirstName] попросил[From.GetEndA] меня улучшить [From.GetHerHis] отношения с сюзереном. Я могу попытаться на следующем заседании совета...;x
 EVTOPTAplot_event.16;Мне необходимо выполнить поручение;x
 EVTOPTBplot_event.16;Это слишком рискованно;x
 EVTTOOLTIPplot_event.17;Уговор есть уговор.;x
@@ -350,10 +350,10 @@ EVTDESCambition.65;Совет окончился, и несмотря на ваши колоссальные уговоры, Вы 
 EVTOPTAambition.65;Возможно, нам нужны новые Триархи…;x
 EVTDESCambition.66;Тигры получили полный контроль над городом, и Триарх [From.GetFirstName] созвал[From.GetEndA] специальный совет триумвирата. Все три Триарха совместно издали декларацию, которая подтверждает право государства [From.PrimaryTitle.GetName] господствовать над всеми другими Валирийскими колониями по всему миру. Сейчас идет мобилизация армии и флота города.;x
 EVTOPTAambition.66;Тигры принесли войну;x
-EVTDESCambition.60B;[Root.PrimaryTitle.GetFOA], мы получили новости из города [From.Capital.GetName] что [From.GetTitledFirstName] [From.GetOnlyDynastyName] пров[From.GetEYo]л[From.GetEndA] специальный Совет триумвирата и теперь дела контролируются тиграми.  [From.GetSheHe] убедил[From.GetEndA] их издать декларацию, утверждающую, что [From.PrimaryTitle.GetName] имеет право господствовать над всеми другими Валирийскими колониями по всему миру.;x
+EVTDESCambition.60B;[Root.PrimaryTitle.GetFOA], мы получили известие из города [From.Capital.GetName]. [From.GetTitledFirstName] [From.GetOnlyDynastyName] пров[From.GetEYo]л[From.GetEndA] специальный Совет триумвирата, ныне подконтрольный тиграм. [From.GetSheHe] убедил[From.GetEndA] их издать декларацию, утверждающую, что [From.PrimaryTitle.GetName] имеет право господствовать над всеми другими валирийскими колониями по всему миру.;x
 call_a_triarch_council;Созвать Совет Триархов;x
 call_a_triarch_council_desc;[This.GetTitledFirstName] желает расширить [This.PrimaryTitle.GetName] путем завоевания, и может созвать Совет Трирхов, чтобы попытаться достичь этого.;x
-TOOLTIPcall_a_triarch_council;Все три Триарха города являются членами партии Тигра И не наложили вето на вторжение\n;x
+TOOLTIPcall_a_triarch_council;Все три Триарха города являются членами партии Тигра и не накладывали вето на вторжение в последнее время\n;x
 TOOLTIPambition.62;Триарх [Root.PrimaryTitle.GetName] вызван[Root.GetEndA] на Совет в столицу [Root.Capital.GetName] для обсуждения запланированного вторжения;x
 EVTOPTBambition.65;Кажется, нам не хватает еще одного Триарха;x
 TOOLTIPplot_gain_liege_titleBLACKBROTHER;[From.GetTitledFirstName] - черный брат, безжалостный, честолюбивый и надменный\n;x
